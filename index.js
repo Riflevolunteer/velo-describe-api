@@ -161,18 +161,33 @@ app.get('/componentdetail', function (req, res, next) {
   }
 });
 
-app.get('/searchPrices', async function (req, res, next) { 
-  const token = await ebayAuthToken.getApplicationToken('PRODUCTION');
-  const accessToken = JSON.parse(token).access_token
-  console.log(accessToken)
-  fetch(`https://api.ebay.com/buy/browse/v1/item_summary/search?q=shimano&limit=10`, { 
-    method:'GET',
+app.get('/getSoldPrices', async function (req, res, next) { 
+  const query = req.query.query || 'shimano'
+  const token = await ebayAuthToken.getApplicationToken('PRODUCTION', `${config.ebayURL}oauth/api_scope`);
+  const accessToken = token && JSON.parse(token).access_token
+
+  fetch(`${config.ebayURL}buy/browse/v1/item_summary/search?q=${query}&limit=50`, { 
+    method: 'get',
     headers: {
-      'Authorisation': `Bearer ${accessToken}`
+      'Authorization': `Bearer ${accessToken}`
   }}).then((result) => {
-    console.log(result)
+    if (result.status === 200) {
+      result.json().then(body => {
+        const prices = body.itemSummaries && body.itemSummaries.map(itemSummary => 
+          Number(itemSummary.price.value) 
+         )
+         
+        res.send(
+          {
+            maxPrice: Math.max(...prices), 
+            minPrice: Math.min(...prices), 
+            avgPrice: Number(prices.reduce((a,b) => a+b, 0) / prices.length).toFixed(2) 
+          })
+      })
+    }
   }).catch(err => {
     console.error(err)
+    res.status(500).json({ error: error.message }) 
   })
 })
 
