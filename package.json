@@ -13,7 +13,9 @@
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
+    "ebay-oauth-nodejs-client": "^1.2.1",
     "express": "^4.17.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.6"
   }
 }

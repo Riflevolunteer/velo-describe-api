@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const config = require('./config');
+const EbayAuthToken = require('ebay-oauth-nodejs-client');
+const fetch = require('node-fetch');
 
 var crypto = require('crypto'),
     algorithm = 'aes-256-ctr',
@@ -20,6 +22,12 @@ const connection = mysql.createPool({
   user     : config.db.user,
   password : decrypt(config.db.password), // TODO encrypt
   database : config.db.name
+});
+
+const ebayAuthToken = new EbayAuthToken({
+  clientId: 'AndyCoop-velodesc-PRD-5eec8aa65-47f49e6a',
+  clientSecret: 'PRD-eec8aa65cc34-b143-4640-a5b5-7abf',
+  devid: 'ac4f698a-0123-4fba-8c37-69b84743bffb'
 });
 
 // Starting our app.
@@ -152,6 +160,21 @@ app.get('/componentdetail', function (req, res, next) {
     res.status(500).json({ error: error.message }) 
   }
 });
+
+app.get('/searchPrices', async function (req, res, next) { 
+  const token = await ebayAuthToken.getApplicationToken('PRODUCTION');
+  const accessToken = JSON.parse(token).access_token
+  console.log(accessToken)
+  fetch(`https://api.ebay.com/buy/browse/v1/item_summary/search?q=shimano&limit=10`, { 
+    method:'GET',
+    headers: {
+      'Authorisation': `Bearer ${accessToken}`
+  }}).then((result) => {
+    console.log(result)
+  }).catch(err => {
+    console.error(err)
+  })
+})
 
 // Starting our server.
 app.listen(3000, () => {
