@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
+const config = require('./config');
 
 var crypto = require('crypto'),
     algorithm = 'aes-256-ctr',
@@ -15,10 +16,10 @@ function decrypt(text){
 
 const connection = mysql.createPool({
   connectionLimit: 100,
-  host     : 'velo-components.c1jrhk9b0rum.eu-central-1.rds.amazonaws.com',
-  user     : 'admin',
-  password : decrypt('2182d8992e652a206118'), // TODO encrypt
-  database : 'velo-components'
+  host     : config.db.host,
+  user     : config.db.user,
+  password : decrypt(config.db.password), // TODO encrypt
+  database : config.db.name
 });
 
 // Starting our app.
@@ -28,10 +29,10 @@ const app = express();
  app.use(function (req, res, next) {
   
   // Website you wish to allow to connect
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:19006', 'http://expc02yl10klvch:19006', 'http://expc02yl10klvch:3000/');
+  res.setHeader('Access-Control-Allow-Origin', '*'); 
 
   // Request methods you wish to allow
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Methods', 'GET');
 
   // Request headers you wish to allow
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');

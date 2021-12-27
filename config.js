@@ -1,6 +1,10 @@
 const config = {
-    serverURL: "http://EXPC02YL10KLVCH:3000",
-    awsURL: "https://velo-describe-components.s3.eu-central-1.amazonaws.com/"
+    db: {
+        name: 'velo-components',
+        host: 'velo-components.c1jrhk9b0rum.eu-central-1.rds.amazonaws.com',
+        user: 'admin',
+        password: '2182d8992e652a206118'
+    }
 }
 
-export default config
+module.exports = config
