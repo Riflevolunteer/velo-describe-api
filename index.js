@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const config = require('./config');
 const EbayAuthToken = require('ebay-oauth-nodejs-client');
@@ -29,6 +28,22 @@ const ebayAuthToken = new EbayAuthToken({
   clientSecret: 'PRD-eec8aa65cc34-b143-4640-a5b5-7abf',
   devid: 'ac4f698a-0123-4fba-8c37-69b84743bffb'
 });
+
+let AccessToken = {}
+let TokenExpiryDate = null
+
+const isAccessTokenValid = () => TokenExpiryDate && (Date.now() < TokenExpiryDate)
+
+const getAccessToken = async () => {
+  if (AccessToken && isAccessTokenValid(AccessToken)) {
+    return AccessToken.access_token
+  }
+  
+  const rawToken = await ebayAuthToken.getApplicationToken('PRODUCTION', `${config.ebayURL}oauth/api_scope`)
+  AccessToken = JSON.parse(rawToken)
+  TokenExpiryDate = Date.now() + (Number(AccessToken.expires_in) * 1000)
+  return AccessToken.access_token
+}
 
 // Starting our app.
 const app = express();
@@ -161,10 +176,14 @@ app.get('/componentdetail', function (req, res, next) {
   }
 });
 
-app.get('/getSoldPrices', async function (req, res, next) { 
-  const query = req.query.query || 'shimano'
-  const token = await ebayAuthToken.getApplicationToken('PRODUCTION', `${config.ebayURL}oauth/api_scope`);
-  const accessToken = token && JSON.parse(token).access_token
+app.get('/getMarketPlacePrices', async function (req, res, next) { 
+  const query = req.query.query
+  if(!query) {
+    res.status(400).json({error: 'No query parameter'})
+    return 
+  }
+
+  const accessToken = await getAccessToken()
 
   fetch(`${config.ebayURL}buy/browse/v1/item_summary/search?q=${query}&limit=50`, { 
     method: 'get',
@@ -179,12 +198,14 @@ app.get('/getSoldPrices', async function (req, res, next) {
          
         res.send(
           {
-            maxPrice: Math.max(...prices), 
-            minPrice: Math.min(...prices), 
-            avgPrice: Number(prices.reduce((a,b) => a+b, 0) / prices.length).toFixed(2) 
+            maxPrice: prices ? Math.max(...prices) : 0, 
+            minPrice: prices ? Math.min(...prices) : 0, 
+            avgPrice: prices ? Number(prices.reduce((a,b) => a+b, 0) / prices.length).toFixed(2) : 0
           })
       })
+      return
     }
+    res.status(400).json({error: 'Market place falied to return data'})
   }).catch(err => {
     console.error(err)
     res.status(500).json({ error: error.message }) 
