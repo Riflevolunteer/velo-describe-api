@@ -8,5 +8,6 @@ CREATE TABLE `component_detail` (
   `image` blob,
   `category_id` int DEFAULT NULL,
   `group_id` int DEFAULT NULL,
+  `search_text` varchar(90) DEFAULT NULL,
   PRIMARY KEY (`component_id`)
 );

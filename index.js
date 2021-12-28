@@ -24,9 +24,9 @@ const connection = mysql.createPool({
 });
 
 const ebayAuthToken = new EbayAuthToken({
-  clientId: 'AndyCoop-velodesc-PRD-5eec8aa65-47f49e6a',
-  clientSecret: 'PRD-eec8aa65cc34-b143-4640-a5b5-7abf',
-  devid: 'ac4f698a-0123-4fba-8c37-69b84743bffb'
+  clientId: config.marketplace.clientId,
+  clientSecret: config.marketplace.clientSecret,
+  devid: config.marketplace.devid
 });
 
 let AccessToken = {}
@@ -39,7 +39,7 @@ const getAccessToken = async () => {
     return AccessToken.access_token
   }
   
-  const rawToken = await ebayAuthToken.getApplicationToken('PRODUCTION', `${config.ebayURL}oauth/api_scope`)
+  const rawToken = await ebayAuthToken.getApplicationToken('PRODUCTION', `${config.marketplace.url}oauth/api_scope`)
   AccessToken = JSON.parse(rawToken)
   TokenExpiryDate = Date.now() + (Number(AccessToken.expires_in) * 1000)
   return AccessToken.access_token
@@ -185,7 +185,7 @@ app.get('/getMarketPlacePrices', async function (req, res, next) {
 
   const accessToken = await getAccessToken()
 
-  fetch(`${config.ebayURL}buy/browse/v1/item_summary/search?q=${query}&limit=50`, { 
+  fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${query}&limit=50`, { 
     method: 'get',
     headers: {
       'Authorization': `Bearer ${accessToken}`
