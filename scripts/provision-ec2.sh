@@ -7,7 +7,6 @@ set -euo pipefail
 PROFILE="${AWS_PROFILE:-velo}"
 REGION="${AWS_REGION:-eu-central-1}"
 VPC_ID="vpc-f80bbf93"
-MY_IP="${MY_IP:-$(curl -s https://checkip.amazonaws.com)}/32"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 SG_NAME="velo-describe-api-ec2-sg"
@@ -25,7 +24,7 @@ SG_ID=$(aws_ ec2 describe-security-groups \
 if [ "$SG_ID" = "None" ] || [ -z "$SG_ID" ]; then
   SG_ID=$(aws_ ec2 create-security-group \
     --group-name "$SG_NAME" \
-    --description "velo-describe-api EC2 - port 3000 from admin IP only" \
+    --description "velo-describe-api EC2 - HTTPS (443) and ACME (80) from anywhere" \
     --vpc-id "$VPC_ID" \
     --query 'GroupId' --output text)
   echo "Created security group $SG_ID"
@@ -35,7 +34,10 @@ fi
 
 aws_ ec2 authorize-security-group-ingress \
   --group-id "$SG_ID" \
-  --protocol tcp --port 3000 --cidr "$MY_IP" 2>/dev/null || echo "Ingress rule already present"
+  --ip-permissions \
+    'IpProtocol=tcp,FromPort=80,ToPort=80,IpRanges=[{CidrIp=0.0.0.0/0}]' \
+    'IpProtocol=tcp,FromPort=443,ToPort=443,IpRanges=[{CidrIp=0.0.0.0/0}]' \
+    2>/dev/null || echo "Ingress rules already present"
 
 echo "==> IAM role"
 if ! aws_ iam get-role --role-name "$ROLE_NAME" >/dev/null 2>&1; then
@@ -122,9 +124,27 @@ fi
 echo "==> Waiting for instance to be running"
 aws_ ec2 wait instance-running --instance-ids "$INSTANCE_ID"
 
-PUBLIC_IP=$(aws_ ec2 describe-instances \
-  --instance-ids "$INSTANCE_ID" \
-  --query 'Reservations[0].Instances[0].PublicIpAddress' --output text)
+echo "==> Elastic IP"
+EIP_ALLOC_ID=$(aws_ ec2 describe-addresses \
+  --filters "Name=tag:Name,Values=$INSTANCE_NAME" \
+  --query 'Addresses[0].AllocationId' --output text 2>/dev/null || echo "None")
+
+if [ "$EIP_ALLOC_ID" = "None" ] || [ -z "$EIP_ALLOC_ID" ]; then
+  EIP_ALLOC_ID=$(aws_ ec2 allocate-address \
+    --domain vpc \
+    --tag-specifications "ResourceType=elastic-ip,Tags=[{Key=Name,Value=$INSTANCE_NAME}]" \
+    --query 'AllocationId' --output text)
+  echo "Allocated Elastic IP $EIP_ALLOC_ID"
+else
+  echo "Reusing Elastic IP $EIP_ALLOC_ID"
+fi
+
+aws_ ec2 associate-address --instance-id "$INSTANCE_ID" --allocation-id "$EIP_ALLOC_ID" >/dev/null
+
+PUBLIC_IP=$(aws_ ec2 describe-addresses \
+  --allocation-ids "$EIP_ALLOC_ID" \
+  --query 'Addresses[0].PublicIp' --output text)
+HOSTNAME_SSLIP="${PUBLIC_IP//./-}.sslip.io"
 
 echo "==> Waiting for SSM agent registration (this can take a couple of minutes)"
 for i in $(seq 1 30); do
@@ -140,5 +160,5 @@ done
 
 echo ""
 echo "Instance ID: $INSTANCE_ID"
-echo "Public IP:   $PUBLIC_IP"
-echo "App URL:     http://$PUBLIC_IP:3000/categories (allow a few minutes for user-data to finish)"
+echo "Public IP:   $PUBLIC_IP (Elastic IP, stable across restarts)"
+echo "HTTPS URL:   https://$HOSTNAME_SSLIP/categories (allow a few minutes for user-data + cert issuance)"
