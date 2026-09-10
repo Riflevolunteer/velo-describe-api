@@ -9,6 +9,8 @@ dnf install -y nodejs20 git amazon-ssm-agent
 systemctl enable --now amazon-ssm-agent
 
 REPO_DIR=/opt/velo-describe-api
+git config --system --add safe.directory "$REPO_DIR"
+
 if [ ! -d "$REPO_DIR" ]; then
   git clone https://github.com/Riflevolunteer/velo-describe-api.git "$REPO_DIR"
 fi
