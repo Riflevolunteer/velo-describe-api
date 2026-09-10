@@ -113,6 +113,7 @@ else
     --iam-instance-profile "Name=$PROFILE_NAME" \
     --associate-public-ip-address \
     --user-data "file://$SCRIPT_DIR/user-data.sh" \
+    --block-device-mappings "DeviceName=/dev/xvda,Ebs={VolumeSize=15,VolumeType=gp3,DeleteOnTermination=true}" \
     --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$INSTANCE_NAME}]" \
     --query 'Instances[0].InstanceId' --output text)
   echo "Launched instance $INSTANCE_ID"
