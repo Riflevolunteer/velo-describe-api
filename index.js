@@ -1,19 +1,23 @@
 const express = require('express');
 const mysql = require('mysql');
-const config = require('./config');
 const EbayAuthToken = require('ebay-oauth-nodejs-client');
 const fetch = require('node-fetch');
+const loadEnv = require('./load-env');
 
 var crypto = require('crypto'),
     algorithm = 'aes-256-ctr',
     password = 'd6F3Efeq';
- 
+
 function decrypt(text){
   var decipher = crypto.createDecipher(algorithm,password)
   var dec = decipher.update(text,'hex','utf8')
   dec += decipher.final('utf8');
   return dec;
 }
+
+async function main() {
+
+const config = require('./config');
 
 const connection = mysql.createPool({
   connectionLimit: 100,
@@ -232,3 +236,10 @@ app.get('/getMarketPlacePrices', async function (req, res, next) {
 app.listen(3000, () => {
  console.log('Go to http://localhost:3000/categories so you can see the data.');
 });
+
+}
+
+loadEnv().then(main).catch((err) => {
+  console.error('Failed to start:', err && err.message)
+  process.exit(1)
+})
