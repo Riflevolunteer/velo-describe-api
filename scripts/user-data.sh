@@ -5,7 +5,8 @@ set -euo pipefail
 # Installs Node 20 + git, clones the app, installs deps, and runs it as a
 # systemd service.
 
-dnf install -y nodejs20 git
+dnf install -y nodejs20 git amazon-ssm-agent
+systemctl enable --now amazon-ssm-agent
 
 REPO_DIR=/opt/velo-describe-api
 if [ ! -d "$REPO_DIR" ]; then
