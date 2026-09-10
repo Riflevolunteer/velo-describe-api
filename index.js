@@ -230,5 +230,5 @@ app.get('/getMarketPlacePrices', async function (req, res, next) {
 
 // Starting our server.
 app.listen(3000, () => {
- console.log('Go to http://EXPWPMQ0MPNH4:3000/categories so you can see the data.');
+ console.log('Go to http://localhost:3000/categories so you can see the data.');
 });
