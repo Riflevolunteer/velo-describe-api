@@ -1,2 +1,6 @@
 /node_modules
 .env
+velobase-components.csv
+velobase-component-details.jsonl
+velobase-component-details.failed.log
+velobase-update.sql

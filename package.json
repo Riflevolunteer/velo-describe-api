@@ -20,5 +20,8 @@
     "express": "^4.17.2",
     "mysql": "^2.18.1",
     "node-fetch": "^2.6.6"
+  },
+  "devDependencies": {
+    "cheerio": "^1.2.0"
   }
 }
