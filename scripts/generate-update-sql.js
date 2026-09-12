@@ -1,7 +1,8 @@
 // Reads velobase-component-details.jsonl (produced by crawl-component-details.js)
 // and generates velobase-update.sql: idempotent INSERT statements (each guarded
-// by WHERE NOT EXISTS) that create any missing brands/groups/categories and
-// then insert new components, skipping ones that already exist by title+brand.
+// by WHERE NOT EXISTS) that create any missing brands/groups/categories, link
+// brands to categories, and then insert new components, skipping ones that
+// already exist by title+brand.
 //
 // Run with: node scripts/generate-update-sql.js
 // No network access — safe to re-run any time, including mid-crawl.
@@ -54,12 +55,17 @@ function buildDescription(record) {
   return truncate(parts.join(', '), 45);
 }
 
+function stripParenthetical(value) {
+  if (!value) return value;
+  return value.replace(/\s*\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
+}
+
 function buildSearchText(record) {
   const brand =
     record.brand && !record.name?.toLowerCase().includes(record.brand.toLowerCase())
       ? record.brand
       : null;
-  const parts = [record.name, brand, record.category].filter(Boolean);
+  const parts = [record.name, brand, record.category].filter(Boolean).map(stripParenthetical);
   return truncate(parts.join(' '), 90);
 }
 
@@ -69,10 +75,12 @@ function main() {
   const brands = new Set();
   const groups = new Set();
   const categories = new Set();
+  const categoryBrandPairs = new Set();
   for (const r of records) {
     if (r.brand) brands.add(r.brand);
     if (r.group) groups.add(r.group);
     if (r.category) categories.add(r.category);
+    if (r.brand && r.category) categoryBrandPairs.add(JSON.stringify([r.category, r.brand]));
   }
 
   const lines = [];
@@ -91,10 +99,26 @@ function main() {
   for (const category of categories) lines.push(lookupInsert('component_category', category));
   lines.push('');
 
+  lines.push('-- Category/brand links');
+  for (const pair of categoryBrandPairs) {
+    const [category, brand] = JSON.parse(pair);
+    const categoryIdSelect = lookupSubquery('component_category', 'category_id', category);
+    const brandIdSelect = lookupSubquery('component_brand', 'brand_id', brand);
+    lines.push(
+      `INSERT INTO category_brand (category_id, brand_id)\n` +
+        `  SELECT ${categoryIdSelect}, ${brandIdSelect}\n` +
+        `  FROM DUAL\n` +
+        `  WHERE NOT EXISTS (\n` +
+        `    SELECT 1 FROM category_brand WHERE category_id = ${categoryIdSelect} AND brand_id = ${brandIdSelect}\n` +
+        `  );`
+    );
+  }
+  lines.push('');
+
   lines.push('-- Components');
   for (const r of records) {
     if (!r.name) continue;
-    const title = sqlString(r.name);
+    const title = sqlString(truncate(r.name, 45));
     const description = sqlString(buildDescription(r));
     const yearFrom = sqlString(r.yearFrom);
     const yearTo = sqlString(r.yearTo);
@@ -115,7 +139,8 @@ function main() {
 
   fs.writeFileSync(OUTPUT_SQL, lines.join('\n') + '\n', 'utf8');
   console.log(
-    `Wrote ${OUTPUT_SQL}: ${brands.size} brands, ${groups.size} groups, ${categories.size} categories, ${records.length} components`
+    `Wrote ${OUTPUT_SQL}: ${brands.size} brands, ${groups.size} groups, ${categories.size} categories, ` +
+      `${categoryBrandPairs.size} category/brand links, ${records.length} components`
   );
 }
 
