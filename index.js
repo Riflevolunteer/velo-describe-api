@@ -177,7 +177,7 @@ app.get('/componentdetail', function (req, res, next) {
       const component_id = req.query.id;
       // Executing the MySQL query (select all data from the 'users' table).
       connection.query(`SELECT compd.*, compg.title as group_title FROM component_detail compd
-                          join component_group compg on compg.group_id=compd.group_id where compd.component_id=?`, [component_id], function (error, results, fields) {
+                          left join component_group compg on compg.group_id=compd.group_id where compd.component_id=?`, [component_id], function (error, results, fields) {
         connection.release();
         // If some error occurs, we throw an error.
         if (error) {
