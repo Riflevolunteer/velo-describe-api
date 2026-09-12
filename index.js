@@ -232,6 +232,38 @@ app.get('/getMarketPlacePrices', async function (req, res, next) {
   })
 })
 
+app.get('/getTopListings', async function (req, res, next) {
+  const query = req.query.query
+  if (!query) {
+    res.status(400).json({ error: 'No query parameter' })
+    return
+  }
+
+  const accessToken = await getAccessToken()
+
+  fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${encodeURIComponent(query)}&limit=5`, {
+    method: 'get',
+    headers: {
+      'Authorization': `Bearer ${accessToken}`
+    }
+  }).then((result) => {
+    if (result.status === 200) {
+      result.json().then(body => {
+        const listings = (body.itemSummaries || []).map(itemSummary => ({
+          title: itemSummary.title,
+          url: itemSummary.itemWebUrl
+        }))
+        res.send({ listings })
+      })
+      return
+    }
+    res.status(400).json({ error: 'Market place failed to return data' })
+  }).catch(err => {
+    console.error(err)
+    res.status(500).json({ error: err.message })
+  })
+})
+
 // Starting our server.
 app.listen(3000, () => {
  console.log('Go to http://localhost:3000/categories so you can see the data.');
