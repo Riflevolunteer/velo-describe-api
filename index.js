@@ -251,7 +251,9 @@ app.get('/getTopListings', async function (req, res, next) {
       result.json().then(body => {
         const listings = (body.itemSummaries || []).map(itemSummary => ({
           title: itemSummary.title,
-          url: itemSummary.itemWebUrl
+          url: itemSummary.itemWebUrl,
+          price: itemSummary.price ? Number(itemSummary.price.value) : null,
+          currency: itemSummary.price ? itemSummary.price.currency : null
         }))
         res.send({ listings })
       })
