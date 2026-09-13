@@ -9,6 +9,6 @@ npm run start
 
 - Add Search feature
 
-- have a look at the avergae price does it really need to be from 50 listings
-
 - maybe also show max and min
+
+- apply for eBay Marketplace Insights API access (sold prices, not just asking prices) - current app creds get invalid_scope for buy.marketplace.insights
