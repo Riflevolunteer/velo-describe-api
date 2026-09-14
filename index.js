@@ -196,7 +196,46 @@ app.get('/componentdetail', function (req, res, next) {
   }
 });
 
-app.get('/getMarketPlacePrices', async function (req, res, next) { 
+// Creating a GET route that returns component suggestions matching a search term.
+app.get('/searchComponents', function (req, res, next) {
+  const q = req.query.q;
+  if (!q) {
+    res.status(400).json({ error: 'No query parameter' })
+    return
+  }
+  if (q.length < 3) {
+    res.send([])
+    return
+  }
+
+  const escapedTerm = q.replace(/[%_]/g, '\\$&');
+
+  try {
+    connection.getConnection(function (err, connection) {
+      if (err) {
+        console.error(err && err.message)
+        return res.status(500).json({ error: err.message })
+      }
+      connection.query(`SELECT compd.component_id, compd.title, compd.description, compc.title as category_title FROM component_detail compd
+                          left join component_category compc on compc.category_id=compd.category_id
+                          where compd.search_text LIKE ? order by compd.title limit 10`, [`%${escapedTerm}%`], function (error, results, fields) {
+        connection.release();
+        if (error) {
+          console.error(error && error.message)
+          res.status(500).json({ error: error.message })
+          return
+        }
+        res.send(results)
+      });
+    });
+  }
+  catch (error) {
+    console.error(error && error.message)
+    res.status(500).json({ error: error.message })
+  }
+});
+
+app.get('/getMarketPlacePrices', async function (req, res, next) {
   const query = req.query.query
   if(!query) {
     res.status(400).json({error: 'No query parameter'})
