@@ -203,12 +203,20 @@ app.get('/searchComponents', function (req, res, next) {
     res.status(400).json({ error: 'No query parameter' })
     return
   }
-  if (q.length < 3) {
+
+  const escapeLike = (s) => s.replace(/[%_]/g, '\\$&');
+
+  const words = [...new Set(
+    q.trim().split(/\s+/).filter(w => w.length > 0)
+  )].filter(w => w.length >= 3).slice(0, 8); // drop sub-3-char words; cap at 8 words
+
+  if (words.length === 0) {
     res.send([])
     return
   }
 
-  const escapedTerm = q.replace(/[%_]/g, '\\$&');
+  const whereClauses = words.map(() => 'compd.search_text LIKE ?').join(' AND ');
+  const params = words.map(w => `%${escapeLike(w)}%`);
 
   try {
     connection.getConnection(function (err, connection) {
@@ -218,7 +226,7 @@ app.get('/searchComponents', function (req, res, next) {
       }
       connection.query(`SELECT compd.component_id, compd.title, compd.description, compc.title as category_title FROM component_detail compd
                           left join component_category compc on compc.category_id=compd.category_id
-                          where compd.search_text LIKE ? order by compd.title limit 10`, [`%${escapedTerm}%`], function (error, results, fields) {
+                          where ${whereClauses} order by compd.title limit 10`, params, function (error, results, fields) {
         connection.release();
         if (error) {
           console.error(error && error.message)
