@@ -252,7 +252,7 @@ app.get('/getMarketPlacePrices', async function (req, res, next) {
 
   const accessToken = await getAccessToken()
 
-  fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${query}&limit=50`, { 
+  fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${query}&limit=10`, {
     method: 'get',
     headers: {
       'Authorization': `Bearer ${accessToken}`
@@ -291,14 +291,15 @@ app.get('/getTopListings', async function (req, res, next) {
   fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${encodeURIComponent(query)}&limit=5`, {
     method: 'get',
     headers: {
-      'Authorization': `Bearer ${accessToken}`
+      'Authorization': `Bearer ${accessToken}`,
+      'X-EBAY-C-ENDUSERCTX': 'affiliateCampaignId=5339210616'
     }
   }).then((result) => {
     if (result.status === 200) {
       result.json().then(body => {
         const listings = (body.itemSummaries || []).map(itemSummary => ({
           title: itemSummary.title,
-          url: itemSummary.itemWebUrl,
+          url: itemSummary.itemAffiliateWebUrl || itemSummary.itemWebUrl,
           price: itemSummary.price ? Number(itemSummary.price.value) : null,
           currency: itemSummary.price ? itemSummary.price.currency : null
         }))
