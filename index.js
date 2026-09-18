@@ -196,6 +196,47 @@ app.get('/componentdetail', function (req, res, next) {
   }
 });
 
+// Creating a GET route that returns a component group and its member components.
+app.get('/componentGroup', function (req, res, next) {
+  const group_id = req.query.id;
+  if (!group_id) {
+    res.status(400).json({ error: 'No id parameter' })
+    return
+  }
+  try {
+    connection.getConnection(function (err, connection) {
+      if (err) {
+        console.error(err && err.message)
+        return res.status(500).json({ error: err.message })
+      }
+      connection.query('SELECT * FROM component_group WHERE group_id=?', [group_id], function (error, groupResults) {
+        if (error) {
+          connection.release();
+          console.error(error && error.message)
+          res.status(500).json({ error: error.message })
+          return
+        }
+        connection.query(`SELECT compd.component_id, compd.title, compd.year_from, compd.year_to, compd.category_id, compc.title as category_title
+                            FROM component_detail compd
+                            left join component_category compc on compc.category_id=compd.category_id
+                            where compd.group_id=? order by compd.title`, [group_id], function (error, componentResults) {
+          connection.release();
+          if (error) {
+            console.error(error && error.message)
+            res.status(500).json({ error: error.message })
+            return
+          }
+          res.send({ group: groupResults[0] || null, components: componentResults })
+        });
+      });
+    });
+  }
+  catch (error) {
+    console.error(error && error.message)
+    res.status(500).json({ error: error.message })
+  }
+});
+
 // Creating a GET route that returns component suggestions matching a search term.
 app.get('/searchComponents', function (req, res, next) {
   const q = req.query.q;
