@@ -13,6 +13,14 @@ const path = require('path');
 const INPUT_JSONL = path.join(__dirname, '..', 'velobase-component-details.jsonl');
 const OUTPUT_SQL = path.join(__dirname, '..', 'velobase-update.sql');
 
+// component_group is scoped by brand — two brands can independently name a
+// groupset the same thing (e.g. Campagnolo "Gran Sport" vs. Zeus "Gran Sport"),
+// and without brand scoping they'd wrongly collapse into one group. These
+// titles are the exception: the same manufacturer under a different name / OEM
+// relationship, so they're intentionally shared (brand_id NULL) — add here only
+// after manually confirming the relationship.
+const SHARED_GROUP_TITLES = new Set(['Jubilee', 'Rival 7000']);
+
 function readRecords() {
   if (!fs.existsSync(INPUT_JSONL)) {
     throw new Error(`${INPUT_JSONL} not found — run scripts/crawl-component-details.js first`);
@@ -50,6 +58,33 @@ function lookupSubquery(table, idColumn, title) {
   return `(SELECT ${idColumn} FROM ${table} WHERE title = '${sqlEscape(title)}')`;
 }
 
+// Groups are scoped by (title, brand) except for SHARED_GROUP_TITLES, which are
+// matched/created with brand_id IS NULL regardless of brand.
+function groupLookupInsert(title, brand) {
+  const esc = sqlEscape(title);
+  if (SHARED_GROUP_TITLES.has(title)) {
+    return (
+      `INSERT INTO component_group (title, brand_id) SELECT '${esc}', NULL FROM DUAL ` +
+      `WHERE NOT EXISTS (SELECT 1 FROM component_group WHERE title = '${esc}' AND brand_id IS NULL);`
+    );
+  }
+  const brandIdSelect = lookupSubquery('component_brand', 'brand_id', brand);
+  return (
+    `INSERT INTO component_group (title, brand_id) SELECT '${esc}', ${brandIdSelect} FROM DUAL ` +
+    `WHERE NOT EXISTS (SELECT 1 FROM component_group WHERE title = '${esc}' AND brand_id = ${brandIdSelect});`
+  );
+}
+
+function groupLookupSubquery(title, brand) {
+  if (!title) return 'NULL';
+  const esc = sqlEscape(title);
+  if (SHARED_GROUP_TITLES.has(title)) {
+    return `(SELECT group_id FROM component_group WHERE title = '${esc}' AND brand_id IS NULL)`;
+  }
+  const brandIdSelect = lookupSubquery('component_brand', 'brand_id', brand);
+  return `(SELECT group_id FROM component_group WHERE title = '${esc}' AND brand_id = ${brandIdSelect})`;
+}
+
 function buildDescription(record) {
   const parts = [record.name, record.country, record.weight].filter(Boolean);
   return truncate(parts.join(', '), 45);
@@ -73,12 +108,17 @@ function main() {
   const records = readRecords();
 
   const brands = new Set();
-  const groups = new Set();
+  const groupBrandPairs = new Set();
   const categories = new Set();
   const categoryBrandPairs = new Set();
   for (const r of records) {
     if (r.brand) brands.add(r.brand);
-    if (r.group) groups.add(r.group);
+    if (r.group) {
+      // Shared groups aren't scoped by brand, so collapse them to a single
+      // (group, null) pair regardless of which brand's record produced them.
+      const brand = SHARED_GROUP_TITLES.has(r.group) ? null : r.brand;
+      if (brand || SHARED_GROUP_TITLES.has(r.group)) groupBrandPairs.add(JSON.stringify([r.group, brand]));
+    }
     if (r.category) categories.add(r.category);
     if (r.brand && r.category) categoryBrandPairs.add(JSON.stringify([r.category, r.brand]));
   }
@@ -92,7 +132,10 @@ function main() {
   lines.push('');
 
   lines.push('-- Groups');
-  for (const group of groups) lines.push(lookupInsert('component_group', group));
+  for (const pair of groupBrandPairs) {
+    const [group, brand] = JSON.parse(pair);
+    lines.push(groupLookupInsert(group, brand));
+  }
   lines.push('');
 
   lines.push('-- Categories');
@@ -125,7 +168,7 @@ function main() {
     const searchText = sqlString(buildSearchText(r));
     const brandIdSelect = lookupSubquery('component_brand', 'brand_id', r.brand);
     const categoryIdSelect = lookupSubquery('component_category', 'category_id', r.category);
-    const groupIdSelect = lookupSubquery('component_group', 'group_id', r.group);
+    const groupIdSelect = groupLookupSubquery(r.group, r.brand);
 
     lines.push(
       `INSERT INTO component_detail (brand_id, title, description, year_from, year_to, category_id, group_id, search_text)\n` +
@@ -139,7 +182,7 @@ function main() {
 
   fs.writeFileSync(OUTPUT_SQL, lines.join('\n') + '\n', 'utf8');
   console.log(
-    `Wrote ${OUTPUT_SQL}: ${brands.size} brands, ${groups.size} groups, ${categories.size} categories, ` +
+    `Wrote ${OUTPUT_SQL}: ${brands.size} brands, ${groupBrandPairs.size} groups, ${categories.size} categories, ` +
       `${categoryBrandPairs.size} category/brand links, ${records.length} components`
   );
 }
