@@ -204,32 +204,35 @@ app.get('/componentGroup', function (req, res, next) {
     return
   }
   try {
-    connection.getConnection(function (err, connection) {
-      if (err) {
-        console.error(err && err.message)
-        return res.status(500).json({ error: err.message })
-      }
+    let responded = false
+    const fail = (error) => {
+      if (responded) return
+      responded = true
+      console.error(error && error.message)
+      res.status(500).json({ error: error.message })
+    }
+
+    const groupPromise = new Promise((resolve, reject) => {
       connection.query('SELECT * FROM component_group WHERE group_id=?', [group_id], function (error, groupResults) {
-        if (error) {
-          connection.release();
-          console.error(error && error.message)
-          res.status(500).json({ error: error.message })
-          return
-        }
-        connection.query(`SELECT compd.component_id, compd.title, compd.year_from, compd.year_to, compd.category_id, compc.title as category_title
-                            FROM component_detail compd
-                            left join component_category compc on compc.category_id=compd.category_id
-                            where compd.group_id=? order by compd.title`, [group_id], function (error, componentResults) {
-          connection.release();
-          if (error) {
-            console.error(error && error.message)
-            res.status(500).json({ error: error.message })
-            return
-          }
-          res.send({ group: groupResults[0] || null, components: componentResults })
-        });
+        if (error) return reject(error)
+        resolve(groupResults)
       });
     });
+
+    const componentsPromise = new Promise((resolve, reject) => {
+      connection.query(`SELECT compd.component_id, compd.title, compd.year_from, compd.year_to, compd.category_id, compc.title as category_title
+                          FROM component_detail compd
+                          left join component_category compc on compc.category_id=compd.category_id
+                          where compd.group_id=? order by compd.title`, [group_id], function (error, componentResults) {
+        if (error) return reject(error)
+        resolve(componentResults)
+      });
+    });
+
+    Promise.all([groupPromise, componentsPromise]).then(([groupResults, componentResults]) => {
+      if (responded) return
+      res.send({ group: groupResults[0] || null, components: componentResults })
+    }).catch(fail)
   }
   catch (error) {
     console.error(error && error.message)
@@ -284,40 +287,47 @@ app.get('/searchComponents', function (req, res, next) {
   }
 });
 
+// Shared eBay item search used by /getMarketPlacePrices and /getTopListings so both
+// endpoints always apply the same affiliate tracking header and error handling.
+async function fetchEbayListings(query, limit, accessToken) {
+  const result = await fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${encodeURIComponent(query)}&limit=${limit}`, {
+    method: 'get',
+    headers: {
+      'Authorization': `Bearer ${accessToken}`,
+      'X-EBAY-C-ENDUSERCTX': 'affiliateCampaignId=5339210616'
+    }
+  })
+  if (result.status !== 200) {
+    const error = new Error('Market place failed to return data')
+    error.status = 400
+    throw error
+  }
+  const body = await result.json()
+  return body.itemSummaries || []
+}
+
 app.get('/getMarketPlacePrices', async function (req, res, next) {
   const query = req.query.query
   if(!query) {
     res.status(400).json({error: 'No query parameter'})
-    return 
+    return
   }
 
-  const accessToken = await getAccessToken()
+  try {
+    const accessToken = await getAccessToken()
+    const itemSummaries = await fetchEbayListings(query, 10, accessToken)
+    const prices = itemSummaries.map(itemSummary => Number(itemSummary.price.value))
 
-  fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${query}&limit=10`, {
-    method: 'get',
-    headers: {
-      'Authorization': `Bearer ${accessToken}`
-  }}).then((result) => {
-    if (result.status === 200) {
-      result.json().then(body => {
-        const prices = body.itemSummaries && body.itemSummaries.map(itemSummary => 
-          Number(itemSummary.price.value) 
-         )
-         
-        res.send(
-          {
-            maxPrice: prices ? Math.max(...prices) : 0, 
-            minPrice: prices ? Math.min(...prices) : 0, 
-            avgPrice: prices ? Number(prices.reduce((a,b) => a+b, 0) / prices.length).toFixed(2) : 0
-          })
+    res.send(
+      {
+        maxPrice: prices.length ? Math.max(...prices) : 0,
+        minPrice: prices.length ? Math.min(...prices) : 0,
+        avgPrice: prices.length ? Number(prices.reduce((a,b) => a+b, 0) / prices.length).toFixed(2) : 0
       })
-      return
-    }
-    res.status(400).json({error: 'Market place falied to return data'})
-  }).catch(err => {
+  } catch (err) {
     console.error(err)
-    res.status(500).json({ error: err.message })
-  })
+    res.status(err.status || 500).json({ error: err.message })
+  }
 })
 
 app.get('/getTopListings', async function (req, res, next) {
@@ -327,32 +337,20 @@ app.get('/getTopListings', async function (req, res, next) {
     return
   }
 
-  const accessToken = await getAccessToken()
-
-  fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${encodeURIComponent(query)}&limit=5`, {
-    method: 'get',
-    headers: {
-      'Authorization': `Bearer ${accessToken}`,
-      'X-EBAY-C-ENDUSERCTX': 'affiliateCampaignId=5339210616'
-    }
-  }).then((result) => {
-    if (result.status === 200) {
-      result.json().then(body => {
-        const listings = (body.itemSummaries || []).map(itemSummary => ({
-          title: itemSummary.title,
-          url: itemSummary.itemAffiliateWebUrl || itemSummary.itemWebUrl,
-          price: itemSummary.price ? Number(itemSummary.price.value) : null,
-          currency: itemSummary.price ? itemSummary.price.currency : null
-        }))
-        res.send({ listings })
-      })
-      return
-    }
-    res.status(400).json({ error: 'Market place failed to return data' })
-  }).catch(err => {
+  try {
+    const accessToken = await getAccessToken()
+    const itemSummaries = await fetchEbayListings(query, 5, accessToken)
+    const listings = itemSummaries.map(itemSummary => ({
+      title: itemSummary.title,
+      url: itemSummary.itemAffiliateWebUrl || itemSummary.itemWebUrl,
+      price: itemSummary.price ? Number(itemSummary.price.value) : null,
+      currency: itemSummary.price ? itemSummary.price.currency : null
+    }))
+    res.send({ listings })
+  } catch (err) {
     console.error(err)
-    res.status(500).json({ error: err.message })
-  })
+    res.status(err.status || 500).json({ error: err.message })
+  }
 })
 
 // Starting our server.
