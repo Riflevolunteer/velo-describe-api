@@ -1,6 +1,6 @@
 CREATE TABLE `component_group` (
   `group_id` int NOT NULL AUTO_INCREMENT,
-  `title` varchar(45) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
   -- NULL = shared across brands (small, curated exception list — see
   -- SHARED_GROUP_TITLES in scripts/generate-update-sql.js).
   -- Non-NULL scopes the group to a single brand.

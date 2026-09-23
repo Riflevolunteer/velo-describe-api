@@ -2,7 +2,13 @@
 // and generates velobase-update.sql: idempotent INSERT statements (each guarded
 // by WHERE NOT EXISTS) that create any missing brands/groups/categories, link
 // brands to categories, and then insert new components, skipping ones that
-// already exist by title+brand.
+// already exist by source_id (the velobase GUID).
+//
+// Components are NOT deduped on title+brand: the same name legitimately recurs
+// across categories (an "Ofmega Vantage" exists as a brakeset, crankset, hub,
+// pedal...) and as variants within a category. Keying on title+brand silently
+// dropped ~630 components. Fields are written in full — the schema columns are
+// wide enough (see scripts/component_detail.sql), so nothing is truncated.
 //
 // Run with: node scripts/generate-update-sql.js
 // No network access — safe to re-run any time, including mid-crawl.
@@ -38,11 +44,6 @@ function sqlEscape(value) {
 
 function sqlString(value) {
   return value == null || value === '' ? 'NULL' : `'${sqlEscape(value)}'`;
-}
-
-function truncate(value, maxLength) {
-  if (!value) return value;
-  return value.length > maxLength ? value.slice(0, maxLength) : value;
 }
 
 function lookupInsert(table, title) {
@@ -87,7 +88,7 @@ function groupLookupSubquery(title, brand) {
 
 function buildDescription(record) {
   const parts = [record.name, record.country, record.weight].filter(Boolean);
-  return truncate(parts.join(', '), 45);
+  return parts.join(', ');
 }
 
 function stripParenthetical(value) {
@@ -101,7 +102,19 @@ function buildSearchText(record) {
       ? record.brand
       : null;
   const parts = [record.name, brand, record.category].filter(Boolean).map(stripParenthetical);
-  return truncate(parts.join(' '), 90);
+  return parts.join(' ');
+}
+
+// Idempotency guard for a component insert. Prefer the velobase GUID; fall
+// back to name+brand+category only for records that somehow lack one.
+function componentExistsClause(record, title, brandIdSelect, categoryIdSelect) {
+  if (record.id) {
+    return `SELECT 1 FROM component_detail WHERE source_id = ${sqlString(record.id)}`;
+  }
+  return (
+    `SELECT 1 FROM component_detail WHERE title = ${title} AND brand_id = ${brandIdSelect} ` +
+    `AND category_id = ${categoryIdSelect} AND source_id IS NULL`
+  );
 }
 
 function main() {
@@ -159,31 +172,45 @@ function main() {
   lines.push('');
 
   lines.push('-- Components');
+  let componentCount = 0;
+  let missingSourceId = 0;
+  const seenSourceIds = new Set();
   for (const r of records) {
     if (!r.name) continue;
-    const title = sqlString(truncate(r.name, 45));
+    // The crawler is resumable and appends, so guard against the same page
+    // having been scraped twice into the JSONL.
+    if (r.id) {
+      if (seenSourceIds.has(r.id)) continue;
+      seenSourceIds.add(r.id);
+    } else {
+      missingSourceId++;
+    }
+    const title = sqlString(r.name);
     const description = sqlString(buildDescription(r));
     const yearFrom = sqlString(r.yearFrom);
     const yearTo = sqlString(r.yearTo);
     const searchText = sqlString(buildSearchText(r));
+    const sourceId = sqlString(r.id);
     const brandIdSelect = lookupSubquery('component_brand', 'brand_id', r.brand);
     const categoryIdSelect = lookupSubquery('component_category', 'category_id', r.category);
     const groupIdSelect = groupLookupSubquery(r.group, r.brand);
 
     lines.push(
-      `INSERT INTO component_detail (brand_id, title, description, year_from, year_to, category_id, group_id, search_text)\n` +
-        `  SELECT ${brandIdSelect}, ${title}, ${description}, ${yearFrom}, ${yearTo}, ${categoryIdSelect}, ${groupIdSelect}, ${searchText}\n` +
+      `INSERT INTO component_detail (brand_id, title, description, year_from, year_to, category_id, group_id, search_text, source_id)\n` +
+        `  SELECT ${brandIdSelect}, ${title}, ${description}, ${yearFrom}, ${yearTo}, ${categoryIdSelect}, ${groupIdSelect}, ${searchText}, ${sourceId}\n` +
         `  FROM DUAL\n` +
         `  WHERE NOT EXISTS (\n` +
-        `    SELECT 1 FROM component_detail WHERE title = ${title} AND brand_id = ${brandIdSelect}\n` +
+        `    ${componentExistsClause(r, title, brandIdSelect, categoryIdSelect)}\n` +
         `  );`
     );
+    componentCount++;
   }
 
   fs.writeFileSync(OUTPUT_SQL, lines.join('\n') + '\n', 'utf8');
   console.log(
     `Wrote ${OUTPUT_SQL}: ${brands.size} brands, ${groupBrandPairs.size} groups, ${categories.size} categories, ` +
-      `${categoryBrandPairs.size} category/brand links, ${records.length} components`
+      `${categoryBrandPairs.size} category/brand links, ${componentCount} components` +
+      (missingSourceId ? ` (${missingSourceId} without a source_id, deduped on title+brand+category)` : '')
   );
 }
 
