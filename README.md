@@ -7,6 +7,8 @@ npm run start
 
 - convert to es-2015 using babel
 
+- Fix DB data quality issues with brands with No Components 
+
 - ~~Add Search feature~~ done - `/searchComponents?q=` endpoint
 
 - maybe also show max and min
