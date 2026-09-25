@@ -5,3 +5,4 @@ velobase-component-details.jsonl
 velobase-component-details.failed.log
 velobase-update.sql
 /bike_specs
+bike-update.sql
