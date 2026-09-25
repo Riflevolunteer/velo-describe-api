@@ -216,6 +216,9 @@ const SPLIT_LABELS = {
   derailleur: ['Front Derailleur', 'Rear Derailleur'],
   derailleurs: ['Front Derailleur', 'Rear Derailleur'],
   'handlebars / stem': ['Handlebars'],
+  // 1975 Motobecane: one cell names both ("SUPER CHAMPION rims, ELVEZIA
+  // tubulars"), and the DB has rows for each, so match under both categories.
+  'wheel rims & tires': ['Rims', 'Tyres'],
 };
 
 function expandLabel(label) {
@@ -248,6 +251,13 @@ const BIKE_FIELD_LABELS = {
   'weight (lbs)': 'weight',
 };
 
+// CSV columns that are about the source document, not the bike — dropped
+// entirely (no bike column, no bike_spec row). Keyed on the lowercased header.
+const IGNORED_LABELS = new Set([
+  'catalog page reference', // 1974 Motobecane
+  'catalog page', // 1975 Motobecane
+]);
+
 async function readComponentRecords(conn) {
   const rows = await query(
     conn,
@@ -272,18 +282,22 @@ const WORD_ALIASES = {
   // reconciles both, since normalizeForMatch applies this to both the CSV
   // value and every candidate title alike.
   alvit: 'allvit',
+  // French catalogs (1974 Motobecane) spell Huret's derailleur "Jubile".
+  jubile: 'jubilee',
 };
 
-// Collapses hyphens/slashes to spaces, drops periods, normalizes
-// whitespace/case, and applies WORD_ALIASES — so "Regina-Extra" / "Regina
-// Extra" compare equal, so do "G.B. Ventoux" / "GB Ventoux" (the DB
+// Collapses hyphens/dashes/slashes/commas to spaces, drops periods,
+// normalizes whitespace/case, and applies WORD_ALIASES — so "Regina-Extra" /
+// "Regina Extra" compare equal, so do "G.B. Ventoux" / "GB Ventoux" (the DB
 // consistently drops periods from abbreviated brand initials like GB, AVA),
-// and so do "T.T.T. Record" / "3ttt Record".
+// and so do "T.T.T. Record" / "3ttt Record". Em/en dashes and commas count
+// as separators so catalog asides like "SIMPLEX PRESTIGE — stem shifter" or
+// "SUN TOUR V.G.T., stem power shifter" key cleanly in COMPONENT_OVERRIDES.
 function normalizeForMatch(value) {
   return value
     .trim()
     .toLowerCase()
-    .replace(/[-/]/g, ' ')
+    .replace(/[-–—/,]/g, ' ')
     .replace(/\./g, '')
     .replace(/\s+/g, ' ')
     .split(' ')
@@ -305,12 +319,35 @@ const COMPONENT_OVERRIDES = {
     // Catalog names the Alfa groupset by its rear derailleur ("Alfa 72");
     // the matching front is the plain Zeus Alfa.
     'alfa 72': 2682, // Zeus Alfa
+    // 1973 Raleigh. The only DB row literally titled "Nuovo Record" is the
+    // 1982-87 three-hole model; the period part is the 1052/1.
+    'campagnolo nuovo record': 2297, // Campagnolo Record 1052/1 (1973-1977)
+    'new huret jubilee': 2395, // Huret Jubilee (4 holes in outer cage plate)
+    // 1974 Motobecane (values carry shifter asides after a dash/comma).
+    'huret jubilee': 2395,
+    'simplex prestige stem shifter': 2583,
+    // 1975 Motobecane.
+    'huret jubilee wide ratio': 2395,
+    'huret challenger stem shifter': 2388, // Huret Challenger (hinged clamping band)
   },
   'Rear Derailleurs': {
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
     // DB title is `Zeus "Especial Alfa 72"` — the quotes and brand prefix
     // defeat substring matching.
     'alfa 72': 4863,
+    // 1973 Raleigh. Five 1020/A versions in the DB; v3 (spring, solid
+    // rivets) is the early-70s one.
+    'campagnolo nuovo record': 4125,
+    'new huret jubilee': 4303, // Huret Jubilee (first version)
+    // 1974 Motobecane.
+    'huret jubilee': 4303,
+    'simplex prestige stem shifter': 4583,
+    'sun tour vgt lux down tube ratchet shifter': 4704, // SunTour V-GT Luxe (version 1)
+    'sun tour vgt stem power shifter': 4695, // SunTour V-GT (type 2C or 2D)
+    // 1975 Motobecane.
+    'huret jubilee wide ratio': 4303,
+    'sun tour vgt luxe stem power shifter': 4704,
+    'sun tour vgt luxe down tube ratchet shifters': 4704,
   },
   Hubs: {
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
@@ -319,20 +356,107 @@ const COMPONENT_OVERRIDES = {
     // The catalog's track hub; the only Zeus pista hub in the DB is the
     // Gigante Pista.
     'zeus pista': 3652, // Zeus Gigante Pista
+    // 1973 Raleigh ("wide flange" = high flange).
+    'campagnolo record wide flange q r': 3260, // Campagnolo 1035, Record (high flange)
+    'campagnolo record wide flange': 3270, // Campagnolo 1036, Record Pista (high flange) — track model
+    'normandy luxe q r competition wide flange': 3388, // Normandy Luxe Competition (gold label)
+    'normandy sport q r wide flange alloy': 3390, // Normandy Sport (high flange, oblong holes)
+    'normandy sport alloy wide flange q r': 3390,
+    // 1974 Motobecane. Bare "Normandy Luxe Competition" is ambiguous between
+    // the gold- and red-label rows; the road bikes took the high-flange gold.
+    'normandy luxe competition': 3388,
+    'normandy sport with quick release': 3390,
+    'campagnolo record': 3260, // Campagnolo 1035, Record (high flange)
+    // 1975 Motobecane.
+    'campagnolo record large flange': 3260,
+    'campagnolo record low flange': 3259, // Campagnolo 1034, Record (Low Flange)
   },
   Brakes: {
     // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
     // catalog is the later, 71-era version.
     'super alfa': 1181, // Zeus Super Alfa 71
+    // 1973 Raleigh Professional; without the override the only substring
+    // hit is the 1980s Record O.R.
+    'campagnolo record': 573, // Campagnolo 2040, Record (standard reach, pre-CPSC)
+    // 1974 Motobecane.
+    'universal 61 center pull': 1081, // Universal Mod. 61
+    // 1975 Motobecane.
+    'universal mod 68 side pull racing': 1082, // Universal Super 68
+    'mafac racer center pull (1 front 2 rear)': 838, // MAFAC Racer (lettered MAFAC RACER)
+  },
+  Headsets: {
+    // 1974 Motobecane.
+    campagnolo: 2959, // Campagnolo 1039, Gran Sport / Record
+    'stronglight competition': 3124, // Stronglight V4 Competition (earlier version, two pin locknut)
+    // 1975 Motobecane. Without this the only substring hit is the Record
+    // Pista #1040 track headset.
+    'campagnolo record': 2959,
+  },
+  Cranksets: {
+    // 1974 Motobecane.
+    'campagnolo record': 1496, // Campagnolo 1049, (Nuovo) Record Strada v4 (BCD 144)
+    'stronglight 49 cotterless 42 52 alloy': 1895, // Stronglight 49D (Depose)
+    // 1975 Motobecane.
+    'campagnolo record 42 53': 1496,
+    'stronglight 49 d cotterless 42 52': 1895,
   },
   Saddles: {
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
     'zeus leather': 5708, // Zeus (black suede)
+    // 1973 Raleigh. "B17N" is the B17 Narrow.
+    'brooks b17n leather': 5310, // Brooks B17 Champion Narrow
+    'brooks b17n': 5310,
+    'brooks b17 leather': 5315, // Brooks B17 Champion Standard
+    'brooks professional': 5303, // Brooks Team Professional
+    'brooks professional team special leather': 5304, // Brooks Team Professional "Team Special"
+    // 1974 Motobecane (the seat post aside is not part of the saddle).
+    'brooks professional with alloy seat post': 5303,
+    'brooks professional with campagnolo seat post': 5303,
   },
   Handlebars: {
     // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
     // logo)"; a 1973 catalog predates the logo change.
     'cinelli pista handlebars': 2811, // Cinelli 67 Pista (old logo)
+    // 1975 Motobecane.
+    'philippe professional': 2895, // Philippe Professionnel
+    "cinelli giro d'italia": 2801, // Cinelli 64 Giro D'Italia (70's model)
+  },
+  Stems: {
+    // 1975 Motobecane: the Giro d'Italia bar was paired with the 1A stem.
+    "cinelli giro d'italia": 6489, // Cinelli 1A (winged "C" logo)
+  },
+  Pedals: {
+    // 1973 Raleigh.
+    'campagnolo strada': 3708, // Campagnolo 1037, Record Strada
+    'campagnolo super leggera strada': 3709, // Campagnolo 1037/a, Record Strada Superleggeri (SL)
+    'campagnolo super leggera pista': 3715, // Campagnolo 1038/a, Record Pista Superleggari (SL)
+    // 1974 Motobecane. Without this the only substring hit is the 1983 50th
+    // Anniversary pedal.
+    'campagnolo record': 3708, // Campagnolo 1037, Record Strada
+  },
+  'Seat Posts': {
+    'campagnolo': 5749, // Campagnolo 1044, Record — the period Campagnolo post
+  },
+  // Brand-level rows the single-word-title rule now refuses by substring,
+  // but where the DB's brand entry genuinely is the product being described.
+  Chains: {
+    'iris 1 2 x 3 32': 1369, // Iris (1973 Zeus)
+  },
+  Freewheels: {
+    'simplex 14 24t': 2225, // Simplex
+    'regina oro 13 21': 2194, // Regina Oro (6 speed) — 1975 Motobecane
+  },
+  Tyres: {
+    'clement criterium silk tubular': 6748, // Clement Criterium Seta (seta = silk)
+    // 1975 Motobecane "Wheel Rims & Tires" cells (matched under Tyres via
+    // SPLIT_LABELS); the Super Champion rim model isn't named, so no Rims
+    // override.
+    'super champion rims elvezia tubulars': 6752, // Clement Elvezia
+    'super champion rims paris roubaix tubulars': 6762, // Clement Paris - Roubaix
+  },
+  Rims: {
+    'nisi ava sprint alloy': 5123, // Nisi
+    'ava sprint alloy': 4937, // AVA
   },
 };
 
@@ -384,9 +508,15 @@ function matchComponent(valueText, componentRecords, excludeTitle, label) {
   if (byNormalizedTitle.has(normalizedValue)) return byNormalizedTitle.get(normalizedValue);
 
   const paddedValue = ` ${normalizedValue} `;
+  const valueIsMultiWord = normalizedValue.includes(' ');
   const substringMatches = [...byNormalizedTitle.entries()].filter(([norm]) => {
     if (norm.length < MIN_COMPONENT_MATCH_LENGTH) return false;
     const paddedTitle = ` ${norm} `;
+    // A single-word title found inside a multi-word value is almost always a
+    // brand-only catch-all row ("Brooks", "Simplex", "Nisi") swallowing a
+    // specific model ("Brooks B17N Leather") whose real row just isn't a
+    // substring. Those only link by exact match or COMPONENT_OVERRIDES.
+    if (!norm.includes(' ') && valueIsMultiWord && paddedValue.includes(paddedTitle)) return false;
     return paddedValue.includes(paddedTitle) || paddedTitle.includes(paddedValue);
   });
   if (substringMatches.length === 1) return substringMatches[0][1];
@@ -447,6 +577,7 @@ async function main() {
     // attributes, not component specs — they never get a bike_spec_label.
     // A "Derailleurs" column expands to two labels (see SPLIT_LABELS).
     for (const label of labels) {
+      if (IGNORED_LABELS.has(label.toLowerCase())) continue;
       if (BIKE_FIELD_LABELS[label.toLowerCase()]) continue;
       for (const expanded of expandLabel(label)) {
         if (!labelSortOrder.has(expanded)) labelSortOrder.set(expanded, labelSortOrder.size);
@@ -462,6 +593,7 @@ async function main() {
       for (let i = 0; i < labels.length; i++) {
         const valueText = (row[i + 1] || '').trim();
         if (!valueText) continue; // source had no column value for this bike — not tracked, don't store
+        if (IGNORED_LABELS.has(labels[i].toLowerCase())) continue;
         const bikeColumn = BIKE_FIELD_LABELS[labels[i].toLowerCase()];
         if (bikeColumn) {
           bikeFields[bikeColumn] = valueText;
