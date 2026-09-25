@@ -325,7 +325,7 @@ app.get('/bikesbybrand', function (req, res, next) {
         console.error(err && err.message)
         return res.status(500).json({ error: err.message })
       }
-      connection.query(`SELECT bike_id, title, category, year_from, year_to FROM bike
+      connection.query(`SELECT bike_id, title, category, year_from, year_to, created_at FROM bike
                           where brand_id=? order by year_from, title`, [brand_id], function (error, results, fields) {
         connection.release();
         if (error) {
@@ -371,7 +371,7 @@ app.get('/bikedetail', function (req, res, next) {
     });
 
     const specsPromise = new Promise((resolve, reject) => {
-      connection.query(`SELECT bs.bike_spec_id, bsl.title as label, bs.value_text, bs.component_id,
+      connection.query(`SELECT bs.bike_spec_id, bsl.title as label, bs.value_text, bs.component_id, bs.updated_at,
                                compd.title as component_title, compd.category_id, compc.title as category_title
                           FROM bike_spec bs
                           left join bike_spec_label bsl on bsl.label_id=bs.label_id

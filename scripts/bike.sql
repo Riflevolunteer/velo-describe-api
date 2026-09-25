@@ -10,6 +10,7 @@ CREATE TABLE `bike` (
   `weight` varchar(45) DEFAULT NULL,
   `image` blob,
   `search_text` varchar(90) DEFAULT NULL,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP, -- when the bike was first ingested
   PRIMARY KEY (`bike_id`),
   KEY `idx_bike_brand_id` (`brand_id`)
 );
