@@ -294,15 +294,33 @@ function normalizeForMatch(value) {
 // Manual overrides for CSV values that are genuinely ambiguous by title text
 // alone (multiple plausible DB candidates, so matchComponent would correctly
 // refuse to guess) but are known-correct from catalog/domain knowledge. Keyed
-// by [normalized label][normalizeForMatch(value)] -> component_id. Add
-// sparingly — anything the generic matcher can resolve on its own shouldn't
-// be here.
+// by [component_category title][normalizeForMatch(value)] -> component_id —
+// by DB category rather than by CSV label, so that label spelling variants
+// ("Rear Derailleur" / "Rear Derailleurs" / "Brakeset" / "Brakes") all reach
+// the same entry via LABEL_TO_CATEGORY. Add sparingly — anything the generic
+// matcher can resolve on its own shouldn't be here.
 const COMPONENT_OVERRIDES = {
-  'front derailleur': {
+  'Front Derailleurs': {
     'simplex prestige': 2583, // Simplex Prestige Criterium AV 223
   },
-  'rear derailleur': {
+  'Rear Derailleurs': {
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
+    // DB title is `Zeus "Especial Alfa 72"` — the quotes and brand prefix
+    // defeat substring matching.
+    'alfa 72': 4863,
+  },
+  Hubs: {
+    // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
+    // 1973 Zeus catalog lists bare "Zeus Gigante" only on road models.
+    'zeus gigante': 3651, // Zeus Gigante road
+    // The catalog's track hub; the only Zeus pista hub in the DB is the
+    // Gigante Pista.
+    'zeus pista': 3652, // Zeus Gigante Pista
+  },
+  Brakes: {
+    // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
+    // catalog is the later, 71-era version.
+    'super alfa': 1181, // Zeus Super Alfa 71
   },
 };
 
@@ -329,11 +347,13 @@ function matchComponent(valueText, componentRecords, excludeTitle, label) {
   const normalizedLabel = label.trim().toLowerCase();
   const normalizedValue = normalizeForMatch(valueText);
 
-  const overrideId = COMPONENT_OVERRIDES[normalizedLabel]?.[normalizedValue];
-  if (overrideId) return { component_id: overrideId };
-
   const categories = LABEL_TO_CATEGORY[normalizedLabel];
   if (!categories) return null;
+
+  for (const category of categories) {
+    const overrideId = COMPONENT_OVERRIDES[category]?.[normalizedValue];
+    if (overrideId) return { component_id: overrideId };
+  }
 
   const exclude = excludeTitle ? normalizeForMatch(excludeTitle) : null;
 
@@ -508,6 +528,16 @@ async function main() {
         `    SELECT 1 FROM bike_spec WHERE bike_id = ${bikeIdSelect} AND label_id = ${labelIdSelect} AND value_text = ${valueText}\n` +
         `  );`
     );
+    // Rows inserted by an earlier run stay put (the INSERT above is a no-op
+    // for them), so a match that only became resolvable later — a new
+    // override or alias — is applied by back-filling still-unlinked rows.
+    // Existing non-NULL links are never overwritten.
+    if (matched) {
+      lines.push(
+        `UPDATE bike_spec SET component_id = ${componentIdSelect}\n` +
+          `  WHERE bike_id = ${bikeIdSelect} AND label_id = ${labelIdSelect} AND value_text = ${valueText} AND component_id IS NULL;`
+      );
+    }
   }
 
   fs.writeFileSync(OUTPUT_SQL, lines.join('\n') + '\n', 'utf8');
