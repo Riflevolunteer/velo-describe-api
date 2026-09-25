@@ -287,6 +287,167 @@ app.get('/searchComponents', function (req, res, next) {
   }
 });
 
+// Creating a GET route that returns all bike brands.
+app.get('/bikeBrands', function (req, res, next) {
+  try {
+    connection.getConnection(function (err, connection) {
+      if (err) {
+        console.error(err && err.message)
+        return res.status(500).json({ error: err.message })
+      }
+      connection.query('SELECT * FROM bike_brand order by title', function (error, results, fields) {
+        connection.release();
+        if (error) {
+          console.error(error && error.message)
+          res.status(500).json({ error: error.message })
+          return
+        }
+        res.send(results)
+      });
+    });
+  }
+  catch (error) {
+    console.error(error && error.message)
+    res.status(500).json({ error: error.message })
+  }
+});
+
+// Creating a GET route that returns the bikes for a brand.
+app.get('/bikesbybrand', function (req, res, next) {
+  const brand_id = req.query.brand_id;
+  if (!brand_id) {
+    res.status(400).json({ error: 'No brand_id parameter' })
+    return
+  }
+  try {
+    connection.getConnection(function (err, connection) {
+      if (err) {
+        console.error(err && err.message)
+        return res.status(500).json({ error: err.message })
+      }
+      connection.query(`SELECT bike_id, title, category, year_from, year_to FROM bike
+                          where brand_id=? order by year_from, title`, [brand_id], function (error, results, fields) {
+        connection.release();
+        if (error) {
+          console.error(error && error.message)
+          res.status(500).json({ error: error.message })
+          return
+        }
+        res.send(results)
+      });
+    });
+  }
+  catch (error) {
+    console.error(error && error.message)
+    res.status(500).json({ error: error.message })
+  }
+});
+
+// Creating a GET route that returns a bike and its spec lines. Each spec carries
+// component_id/component_title when ingestion linked it to a component_detail row,
+// so the UI can render it as a link; otherwise value_text is shown as plain text.
+app.get('/bikedetail', function (req, res, next) {
+  const bike_id = req.query.id;
+  if (!bike_id) {
+    res.status(400).json({ error: 'No id parameter' })
+    return
+  }
+  try {
+    let responded = false
+    const fail = (error) => {
+      if (responded) return
+      responded = true
+      console.error(error && error.message)
+      res.status(500).json({ error: error.message })
+    }
+
+    const bikePromise = new Promise((resolve, reject) => {
+      connection.query(`SELECT b.*, bb.title as brand_title FROM bike b
+                          left join bike_brand bb on bb.brand_id=b.brand_id
+                          where b.bike_id=?`, [bike_id], function (error, bikeResults) {
+        if (error) return reject(error)
+        resolve(bikeResults)
+      });
+    });
+
+    const specsPromise = new Promise((resolve, reject) => {
+      connection.query(`SELECT bs.bike_spec_id, bsl.title as label, bs.value_text, bs.component_id,
+                               compd.title as component_title, compd.category_id, compc.title as category_title
+                          FROM bike_spec bs
+                          left join bike_spec_label bsl on bsl.label_id=bs.label_id
+                          left join component_detail compd on compd.component_id=bs.component_id
+                          left join component_category compc on compc.category_id=compd.category_id
+                          where bs.bike_id=? order by bsl.sort_order, bs.bike_spec_id`, [bike_id], function (error, specResults) {
+        if (error) return reject(error)
+        resolve(specResults)
+      });
+    });
+
+    Promise.all([bikePromise, specsPromise]).then(([bikeResults, specResults]) => {
+      if (responded) return
+      if (!bikeResults[0]) {
+        res.status(404).json({ error: 'Bike not found' })
+        return
+      }
+      res.send({ bike: bikeResults[0], specs: specResults })
+    }).catch(fail)
+  }
+  catch (error) {
+    console.error(error && error.message)
+    res.status(500).json({ error: error.message })
+  }
+});
+
+// Creating a GET route that returns bike suggestions matching a search term.
+// Same multi-word AND matching as /searchComponents, against bike.search_text.
+app.get('/searchBikes', function (req, res, next) {
+  const q = req.query.q;
+  if (!q) {
+    res.status(400).json({ error: 'No query parameter' })
+    return
+  }
+
+  const escapeLike = (s) => s.replace(/[%_]/g, '\\$&');
+
+  // Bike model names are short tokens ("Z 77", "SL 1"), so unlike
+  // /searchComponents only single-character words are dropped here.
+  const words = [...new Set(
+    q.trim().split(/\s+/).filter(w => w.length > 0)
+  )].filter(w => w.length >= 2).slice(0, 8);
+
+  if (words.length === 0) {
+    res.send([])
+    return
+  }
+
+  const whereClauses = words.map(() => 'b.search_text LIKE ?').join(' AND ');
+  const params = words.map(w => `%${escapeLike(w)}%`);
+
+  try {
+    connection.getConnection(function (err, connection) {
+      if (err) {
+        console.error(err && err.message)
+        return res.status(500).json({ error: err.message })
+      }
+      connection.query(`SELECT b.bike_id, b.title, b.category, b.year_from, b.year_to, bb.title as brand_title FROM bike b
+                          left join bike_brand bb on bb.brand_id=b.brand_id
+                          where ${whereClauses} order by b.year_from, b.title limit 10`, params, function (error, results, fields) {
+        connection.release();
+        if (error) {
+          console.error(error && error.message)
+          res.status(500).json({ error: error.message })
+          return
+        }
+        res.send(results)
+      });
+    });
+  }
+  catch (error) {
+    console.error(error && error.message)
+    res.status(500).json({ error: error.message })
+  }
+});
+
 // Shared eBay item search used by /getMarketPlacePrices and /getTopListings so both
 // endpoints always apply the same affiliate tracking header and error handling.
 async function fetchEbayListings(query, limit, accessToken) {

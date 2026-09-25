@@ -302,6 +302,9 @@ function normalizeForMatch(value) {
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
     'simplex prestige': 2583, // Simplex Prestige Criterium AV 223
+    // Catalog names the Alfa groupset by its rear derailleur ("Alfa 72");
+    // the matching front is the plain Zeus Alfa.
+    'alfa 72': 2682, // Zeus Alfa
   },
   'Rear Derailleurs': {
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
@@ -321,6 +324,15 @@ const COMPONENT_OVERRIDES = {
     // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
     // catalog is the later, 71-era version.
     'super alfa': 1181, // Zeus Super Alfa 71
+  },
+  Saddles: {
+    // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
+    'zeus leather': 5708, // Zeus (black suede)
+  },
+  Handlebars: {
+    // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
+    // logo)"; a 1973 catalog predates the logo change.
+    'cinelli pista handlebars': 2811, // Cinelli 67 Pista (old logo)
   },
 };
 
