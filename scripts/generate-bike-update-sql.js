@@ -219,6 +219,8 @@ const SPLIT_LABELS = {
   // 1975 Motobecane: one cell names both ("SUPER CHAMPION rims, ELVEZIA
   // tubulars"), and the DB has rows for each, so match under both categories.
   'wheel rims & tires': ['Rims', 'Tyres'],
+  // 1981 Kalkhoff: one groupset name covers both parts.
+  'bottom bracket and crankset': ['Bottom Bracket', 'Crankset'],
 };
 
 function expandLabel(label) {
@@ -329,6 +331,11 @@ const COMPONENT_OVERRIDES = {
     // 1975 Motobecane.
     'huret jubilee wide ratio': 2395,
     'huret challenger stem shifter': 2388, // Huret Challenger (hinged clamping band)
+    // 1981 Kalkhoff. Shimano rows are titled "Shimano FD-7200, Dura-Ace EX"
+    // (part number between brand and group), so substring never fires.
+    'campagnolo super record': 2313, // Campagnolo 1052/SR, Super Record (1979-1987)
+    'dura ace ex': 2518, // Shimano FD-7200, Dura-Ace EX (clamp)
+    'shimano 600 ax': 2476, // Shimano FD-6300, 600 AX (clamp)
   },
   'Rear Derailleurs': {
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
@@ -348,6 +355,10 @@ const COMPONENT_OVERRIDES = {
     'huret jubilee wide ratio': 4303,
     'sun tour vgt luxe stem power shifter': 4704,
     'sun tour vgt luxe down tube ratchet shifters': 4704,
+    // 1981 Kalkhoff. "600 AX" otherwise substring-matches plain "Shimano 600".
+    'campagnolo super record': 4149, // Campagnolo 4001, Super Record, PAT. 80
+    'dura ace ex': 4509, // Shimano RD-7200, Dura-Ace EX
+    'shimano 600 ax': 4465, // Shimano RD-6300, 600 AX
   },
   Hubs: {
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
@@ -370,6 +381,8 @@ const COMPONENT_OVERRIDES = {
     // 1975 Motobecane.
     'campagnolo record large flange': 3260,
     'campagnolo record low flange': 3259, // Campagnolo 1034, Record (Low Flange)
+    // 1981 Kalkhoff.
+    'shimano 600 ax': 3532, // Shimano FH-6361, 600 AX
   },
   Brakes: {
     // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
@@ -383,6 +396,11 @@ const COMPONENT_OVERRIDES = {
     // 1975 Motobecane.
     'universal mod 68 side pull racing': 1082, // Universal Super 68
     'mafac racer center pull (1 front 2 rear)': 838, // MAFAC Racer (lettered MAFAC RACER)
+    // 1981 Kalkhoff.
+    'campagnolo super record': 582, // Campagnolo 4061, Super Record (v1)
+    'dura ace ex': 997, // Shimano BR-7200, Dura-Ace EX
+    'shimano 600 ax': 965, // Shimano BR-6300, 600 AX
+    'weinmann 405': 1117, // Weinmann AG 405
   },
   Headsets: {
     // 1974 Motobecane.
@@ -391,6 +409,14 @@ const COMPONENT_OVERRIDES = {
     // 1975 Motobecane. Without this the only substring hit is the Record
     // Pista #1040 track headset.
     'campagnolo record': 2959,
+    // 1981 Kalkhoff (ambiguous with the Super Record Pista row).
+    'campagnolo super record': 2968, // Campagnolo 4041, Super Record
+  },
+  'Bottom Brackets': {
+    // 1981 Kalkhoff. Bare substring hits the titanium 1st-gen row; the
+    // period part is the second-gen 4031.
+    'campagnolo super record': 43, // Campagnolo 4031, Super Record (Second Gen)
+    'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
     // 1974 Motobecane.
@@ -399,6 +425,13 @@ const COMPONENT_OVERRIDES = {
     // 1975 Motobecane.
     'campagnolo record 42 53': 1496,
     'stronglight 49 d cotterless 42 52': 1895,
+    // 1981 Kalkhoff. Sakae is named without a model; the DB brand row is the
+    // best available (kept deliberately, like Iris).
+    'campagnolo super record': 1513, // Campagnolo 1049/A, Super Record
+    'dura ace ex 42 53': 1828, // Shimano FC-7200, Dura-Ace EX
+    'shimano 600 ax': 1787, // Shimano FC-6300, 600 AX
+    'sakae 42 52': 1732, // Sakae/Ringyo (SR)
+    'sakae 40 52': 1732,
   },
   Saddles: {
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
@@ -424,6 +457,9 @@ const COMPONENT_OVERRIDES = {
   Stems: {
     // 1975 Motobecane: the Giro d'Italia bar was paired with the 1A stem.
     "cinelli giro d'italia": 6489, // Cinelli 1A (winged "C" logo)
+    // 1981 Kalkhoff. Cinelli's "Super Record" stem is the 1R (1/Record).
+    'cinelli super record': 6491, // Cinelli 1R (1/Record)
+    'shimano 600 ax': 6674, // Shimano HS-6300, 600 AX
   },
   Pedals: {
     // 1973 Raleigh.
@@ -433,14 +469,24 @@ const COMPONENT_OVERRIDES = {
     // 1974 Motobecane. Without this the only substring hit is the 1983 50th
     // Anniversary pedal.
     'campagnolo record': 3708, // Campagnolo 1037, Record Strada
+    // 1981 Kalkhoff.
+    'campagnolo super record': 3716, // Campagnolo 4021, Super Record Strada
+    'dura ace ex': 3974, // Shimano PD-7200, Dura-Ace EX
+    'shimano 600 ax': 3957, // Shimano PD-6300, 600 AX
   },
   'Seat Posts': {
     'campagnolo': 5749, // Campagnolo 1044, Record — the period Campagnolo post
+    // 1981 Kalkhoff.
+    'campagnolo super record': 5759, // Campagnolo 4051, Super Record (Campagnolo Script)
+    'shimano 600 ax': 5886, // Shimano SP-6300, 600 AX
   },
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
     'iris 1 2 x 3 32': 1369, // Iris (1973 Zeus)
+    // 1981 Kalkhoff: no chain row is titled EX; the CN-7100 Uniglide is the
+    // Dura-Ace chain of the EX era.
+    'dura ace ex': 1411, // Shimano CN-7100, Dura-Ace (Uniglide)
   },
   Freewheels: {
     'simplex 14 24t': 2225, // Simplex
