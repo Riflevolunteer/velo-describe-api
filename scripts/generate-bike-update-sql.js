@@ -315,15 +315,25 @@ function normalizeForMatch(value) {
 // ("Rear Derailleur" / "Rear Derailleurs" / "Brakeset" / "Brakes") all reach
 // the same entry via LABEL_TO_CATEGORY. Add sparingly — anything the generic
 // matcher can resolve on its own shouldn't be here.
+//
+// An entry is either a component_id, or an array of { from, to, id } ranges
+// (inclusive catalog years, either bound optional) for parts that kept one
+// name across several versions — "Campagnolo Nuovo Record" in a 1973 and a
+// 1983 catalog are different DB rows. The catalog year picks the range; no
+// matching range means no link rather than a wrong-era one.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
     'simplex prestige': 2583, // Simplex Prestige Criterium AV 223
     // Catalog names the Alfa groupset by its rear derailleur ("Alfa 72");
     // the matching front is the plain Zeus Alfa.
     'alfa 72': 2682, // Zeus Alfa
-    // 1973 Raleigh. The only DB row literally titled "Nuovo Record" is the
-    // 1982-87 three-hole model; the period part is the 1052/1.
-    'campagnolo nuovo record': 2297, // Campagnolo Record 1052/1 (1973-1977)
+    // The 1052/1 for 70s catalogs (Raleigh/Motobecane); the 0104007 three-hole
+    // band for 80s ones (Bianchi). 1978-81 had the 1052/NT, not yet needed.
+    'campagnolo nuovo record': [
+      { to: 1977, id: 2297 }, // Campagnolo Record 1052/1 (1973-1977)
+      { from: 1978, to: 1981, id: 2299 }, // Campagnolo Record 1052/NT (1978 - 1982, 3-hole narrow band)
+      { from: 1982, id: 2300 }, // Campagnolo Nuovo Record 0104007 (1982 - 1987, 3-hole standard band)
+    ],
     'new huret jubilee': 2395, // Huret Jubilee (4 holes in outer cage plate)
     // 1974 Motobecane (values carry shifter asides after a dash/comma).
     'huret jubilee': 2395,
@@ -336,15 +346,21 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super record': 2313, // Campagnolo 1052/SR, Super Record (1979-1987)
     'dura ace ex': 2518, // Shimano FD-7200, Dura-Ace EX (clamp)
     'shimano 600 ax': 2476, // Shimano FD-6300, 600 AX (clamp)
+    // 1983 Bianchi: the 80s (Nuovo) Gran Sport is the 3600/NT.
+    'campagnolo gran sport': [{ from: 1978, id: 2276 }], // Campagnolo 3600/NT, Gran Sport
   },
   'Rear Derailleurs': {
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
     // DB title is `Zeus "Especial Alfa 72"` — the quotes and brand prefix
     // defeat substring matching.
     'alfa 72': 4863,
-    // 1973 Raleigh. Five 1020/A versions in the DB; v3 (spring, solid
-    // rivets) is the early-70s one.
-    'campagnolo nuovo record': 4125,
+    // Five 1020/A versions in the DB: v3 (spring, solid rivets) early 70s,
+    // v4 (hollow rivets) mid 70s, v5 (no spring fixing bolt) from 1978.
+    'campagnolo nuovo record': [
+      { to: 1973, id: 4125 }, // Nuovo Record v3 (w/ spring, solid rivets)
+      { from: 1974, to: 1977, id: 4126 }, // Nuovo Record v4 (w/ spring, hollow rivets)
+      { from: 1978, id: 4127 }, // Nuovo Record v5 (w/hollow rivets, w/o spring fixing bolt)
+    ],
     'new huret jubilee': 4303, // Huret Jubilee (first version)
     // 1974 Motobecane.
     'huret jubilee': 4303,
@@ -359,6 +375,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super record': 4149, // Campagnolo 4001, Super Record, PAT. 80
     'dura ace ex': 4509, // Shimano RD-7200, Dura-Ace EX
     'shimano 600 ax': 4465, // Shimano RD-6300, 600 AX
+    // 1983 Bianchi.
+    'campagnolo gran sport': [{ from: 1978, id: 4085 }], // Campagnolo 3500, Nuovo Gran Sport
   },
   Hubs: {
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
@@ -383,6 +401,12 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record low flange': 3259, // Campagnolo 1034, Record (Low Flange)
     // 1981 Kalkhoff.
     'shimano 600 ax': 3532, // Shimano FH-6361, 600 AX
+    // 1983 Bianchi. Bare "Nuovo Record" substring-hits an oddly titled
+    // "(low flange, non-drilled, disk?)" row; the NR hubs are the 1034/1035.
+    'campagnolo nuovo record': 3259, // Campagnolo 1034, Record (Low Flange)
+    'campagnolo gran sport': 3256, // Campagnolo 1006, Gran Sport
+    'campagnolo record pista (32 spoke tied soldered)': 3270, // Campagnolo 1036, Record Pista (high flange)
+    'gipiemme pista': 3351, // Gipiemme Special Pista
   },
   Brakes: {
     // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
@@ -401,6 +425,9 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex': 997, // Shimano BR-7200, Dura-Ace EX
     'shimano 600 ax': 965, // Shimano BR-6300, 600 AX
     'weinmann 405': 1117, // Weinmann AG 405
+    // 1983 Bianchi.
+    'campagnolo nuovo record': [{ from: 1978, id: 572 }], // Campagnolo 2040, Record (standard reach, post-CPSC)
+    'campagnolo gran sport brakes': 554, // Campagnolo Gran Sport (second gen)
   },
   Headsets: {
     // 1974 Motobecane.
@@ -411,6 +438,11 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record': 2959,
     // 1981 Kalkhoff (ambiguous with the Super Record Pista row).
     'campagnolo super record': 2968, // Campagnolo 4041, Super Record
+    // 1983 Bianchi. Bare "Nuovo Record" substring-hits the Alleggerita
+    // variant; the standard NR headset is the 1039.
+    'campagnolo nuovo record': 2959, // Campagnolo 1039, Gran Sport / Record
+    'campagnolo gran sport': 2951, // Campagnolo 1040/A, Gran Sport
+    'gipiemme pista': 3008, // Gipiemme Special (Pista)
   },
   'Bottom Brackets': {
     // 1981 Kalkhoff. Bare substring hits the titanium 1st-gen row; the
@@ -432,6 +464,12 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': 1787, // Shimano FC-6300, 600 AX
     'sakae 42 52': 1732, // Sakae/Ringyo (SR)
     'sakae 40 52': 1732,
+    // 1983 Bianchi. The DB has a Bianchi-labelled Competizione crank.
+    'ofmega competizione': 1687, // Ofmega Competizione BIANCHI
+    'campagnolo gran sport triple': 1475, // Campagnolo 0306, (Nuovo) Gran Sport (116 BCD Triple)
+    'campagnolo record pista gruppo': 1505, // Campagnolo 1051, Record Pista (144bcd)
+    'gipiemme pista gruppo': 1593, // Gipiemme Special 600101 (Pista)
+    'sugino supermighty': 1963, // Sugino Super Mighty Competition
   },
   Saddles: {
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
@@ -445,6 +483,8 @@ const COMPONENT_OVERRIDES = {
     // 1974 Motobecane (the seat post aside is not part of the saddle).
     'brooks professional with alloy seat post': 5303,
     'brooks professional with campagnolo seat post': 5303,
+    // 1983 Bianchi.
+    'cinelli #2': 5332, // Cinelli Unicanitor #2 suede
   },
   Handlebars: {
     // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
@@ -479,6 +519,9 @@ const COMPONENT_OVERRIDES = {
     // 1981 Kalkhoff.
     'campagnolo super record': 5759, // Campagnolo 4051, Super Record (Campagnolo Script)
     'shimano 600 ax': 5886, // Shimano SP-6300, 600 AX
+    // 1983 Bianchi. "fluted" Campagnolo post of the period is the 1044 NR.
+    'campagnolo nuovo record fluted': 5748, // Campagnolo 1044, Nuovo Record (Superlegerro)
+    'campagnolo fluted': 5748,
   },
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
@@ -524,7 +567,16 @@ const COMPONENT_OVERRIDES = {
 // only candidate is the bike's own brand name (these Italian-era catalogs
 // say things like "Sella Bianchi" — "Bianchi" alone is flavor text, not a
 // reference to a component literally titled "Bianchi").
-function matchComponent(valueText, componentRecords, excludeTitle, label) {
+// Resolves a COMPONENT_OVERRIDES entry (id or year-range array) for a catalog year.
+function resolveOverride(entry, year) {
+  if (!entry) return null;
+  if (typeof entry === 'number') return entry;
+  const y = Number(year);
+  const hit = entry.find((r) => (r.from == null || y >= r.from) && (r.to == null || y <= r.to));
+  return hit ? hit.id : null;
+}
+
+function matchComponent(valueText, componentRecords, excludeTitle, label, year) {
   if (!valueText) return null;
   const normalizedLabel = label.trim().toLowerCase();
   const normalizedValue = normalizeForMatch(valueText);
@@ -533,7 +585,7 @@ function matchComponent(valueText, componentRecords, excludeTitle, label) {
   if (!categories) return null;
 
   for (const category of categories) {
-    const overrideId = COMPONENT_OVERRIDES[category]?.[normalizedValue];
+    const overrideId = resolveOverride(COMPONENT_OVERRIDES[category]?.[normalizedValue], year);
     if (overrideId) return { component_id: overrideId };
   }
 
@@ -706,7 +758,7 @@ async function main() {
     const valueText = sqlString(spec.valueText);
     const rawLabel = sqlString(spec.rawLabel);
 
-    const matched = matchComponent(spec.valueText, componentRecords, spec.brand, spec.label);
+    const matched = matchComponent(spec.valueText, componentRecords, spec.brand, spec.label, spec.year);
     if (matched) linkedCount++;
     const componentIdSelect = matched ? String(matched.component_id) : 'NULL';
 

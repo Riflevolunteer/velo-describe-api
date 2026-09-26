@@ -115,6 +115,34 @@ Link counts are as of the last load; regenerate to confirm.
   Tange, Maillard, SunTour hubs/pedals, tyres, "SR" stems. Toe Clips has no
   component category.
 
+## 1983 Bianchi — `1983_bianchi_spec.csv` (9 bikes, 118 specs, 47 linked)
+
+- This catalog exposed that overrides were global: its "Campagnolo Nuovo
+  Record" derailleurs inherited the 1973 Raleigh picks. COMPONENT_OVERRIDES
+  now accepts year ranges; Nuovo Record front/rear and the Gran Sport and
+  Nuovo Record brakes are ranged. Side effect: Motobecane 1974/75 rears moved
+  from v3 to v4 (5 rows corrected by one-off UPDATE); Raleigh 1973 stays v3.
+- Repairs: three "&"-joined columns split in the CSV into Stem/Handlebars,
+  Saddle/Seatpost, Hubs/Headset (a bare groupset name goes in both cells, a
+  single-part value fills only its cell); "Frame Material/Tubing" → Frame
+  Material, "Tires" → Tyres, "Rims/Wheels" → Rims; "(Bianchi-)engraved"
+  dropped, "N.R." → Nuovo Record, "Super Record chainwheel" → Campagnolo
+  Super Record, "Ofmega Competition" → Competizione (DB spelling). Six cells
+  hand-fixed after the split (Selle Italia out of Seatpost, Campagnolo Tipo
+  out of Headset, spoke note kept on hubs only, "Mavic rims" → "Mavic").
+- Auto-links corrected: NR headset was hitting "Nuovo Record Alleggerita"
+  (now 1039), NR hubs an odd "(low flange, non-drilled, disk?)" row (now 1034).
+- 1983 choices: Gran Sport → 3600/NT front, 3500 rear, second-gen brakes,
+  1006 hubs, 1040/A headset, 0306 116 BCD triple; Ofmega Competizione crank →
+  the Bianchi-labelled row; Gipiemme Pista → Gipiemme Special Pista/600101;
+  Record Pista → 1051 crank, 1036 hubs, #1040 headset; fluted Campagnolo posts
+  → 1044 NR Superleggero; Cinelli #2 → Unicanitor #2 suede; Sugino
+  SuperMighty → Super Mighty Competition.
+- Left unlinked: TTT stem/bars/saddle/post (no model), Cinelli bars, San
+  Marco saddle/post, Selle Italia Aero II (no row), Campagnolo Tipo (five
+  Nuovo Tipo rows), Mavic Monthlery (three), tyres, Mafac cantilever,
+  Shifters/Levers (no category mapping).
+
 ## Outstanding across catalogs
 
 Spec labels are inconsistent singular/plural and by wording (Saddle/Saddles,
@@ -124,4 +152,4 @@ Equipment/Included Accessories). Fixing it means choosing canonical names,
 renaming CSV headers, and a one-off SQL to merge label rows. Treat as its own
 task.
 
-Not yet loaded: 1983, 1984, 1987, 1993 Bianchi.
+Not yet loaded: 1984, 1987, 1993 Bianchi.

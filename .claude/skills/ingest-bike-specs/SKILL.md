@@ -28,7 +28,13 @@ review step matters more than speed.
   normalized title. Ambiguous (>1 candidate) means no link. A single-word title
   inside a multi-word value never links (it's a brand catch-all). Anything the
   matcher can't resolve goes in `COMPONENT_OVERRIDES`, keyed by
-  `component_category` title then `normalizeForMatch(value)`.
+  `component_category` title then `normalizeForMatch(value)`. An override is
+  a component_id or a list of `{ from, to, id }` year ranges: overrides are
+  global across catalogs, so a part that kept its name through several
+  versions ("Campagnolo Nuovo Record", 1967-1987) must be ranged or a 1983
+  catalog silently inherits the 1973 choice. When you add a range that
+  changes an already-loaded catalog's pick, fix those rows with a one-off
+  UPDATE; the back-fill only fills NULLs.
 - Idempotency: bikes key on brand+title+year_from; specs on bike+label+
   value_text. Re-runs skip existing rows and only back-fill `component_id`
   where it is NULL. A changed value_text therefore creates a second row rather
