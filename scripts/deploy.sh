@@ -8,6 +8,10 @@ PROFILE="${AWS_PROFILE:-velo}"
 REGION="${AWS_REGION:-eu-central-1}"
 INSTANCE_NAME="velo-describe-api"
 
+# The remote command's stdout (npm ci log) is long enough that the AWS CLI
+# hands it to `less`, which blocks the script waiting for a keypress.
+export AWS_PAGER=""
+
 aws_() { aws --profile "$PROFILE" --region "$REGION" "$@"; }
 
 INSTANCE_ID=$(aws_ ec2 describe-instances \
