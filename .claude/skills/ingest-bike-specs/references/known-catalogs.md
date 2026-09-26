@@ -143,6 +143,27 @@ Link counts are as of the last load; regenerate to confirm.
   Nuovo Tipo rows), Mavic Monthlery (three), tyres, Mafac cantilever,
   Shifters/Levers (no category mapping).
 
+## 1984 Bianchi — `1984_bianchi_spec.csv` (6 bikes, 77 specs, 24 linked)
+
+- Looser translation than 1983. Repairs: Frame → Frame Material, "Fork
+  details" → Fork, Tires → Tyres, "Rims & Spokes" → Rims, "Saddle & Seatpost"
+  split; Campagnolo prefix restored on "Gran Sport pedals/crankset" and
+  "Super Record chainwheel"; the translator's "Super Record Pro" → Super
+  Record (four cells); the Super Leggera's "Engraved chainring" → Campagnolo
+  Super Record and "Fluted seatpost" → "Campagnolo fluted"; TTT stem → TTT;
+  Ofmega Competition → Competizione; "Rugged Gipiemme Pista Grupo" → Gipiemme
+  Pista Gruppo; trailing "rims" dropped from Mavic values.
+- "Groupset / Components" kept as a free-text label (no category); it
+  duplicates the part cells but is the only place two bikes name their group.
+- Auto-links corrected: NR pedals were hitting "Nuovo Record orthopedic" (now
+  1037 Record Strada); "Record Pista" crank was hitting the "non-fluted" row
+  (now 1051, same as 1983).
+- Picks: Modolo Flash → 1st version; Gran Sport pedals → 3700 and crank →
+  0304 Bianchi-labelled (both ranged from 1978); Mavic GP4 → plain GP 4;
+  "Mavic OR 10 (tied and soldered spokes)" → OR 10.
+- Left unlinked: fork prose, TTT stems, San Marco, plain Mavic and Super
+  Champion rims, Wolber tyres, the groupset column.
+
 ## Outstanding across catalogs
 
 Spec labels are inconsistent singular/plural and by wording (Saddle/Saddles,
@@ -152,4 +173,4 @@ Equipment/Included Accessories). Fixing it means choosing canonical names,
 renaming CSV headers, and a one-off SQL to merge label rows. Treat as its own
 task.
 
-Not yet loaded: 1984, 1987, 1993 Bianchi.
+Not yet loaded: 1987, 1993 Bianchi.

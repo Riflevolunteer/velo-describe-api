@@ -428,6 +428,8 @@ const COMPONENT_OVERRIDES = {
     // 1983 Bianchi.
     'campagnolo nuovo record': [{ from: 1978, id: 572 }], // Campagnolo 2040, Record (standard reach, post-CPSC)
     'campagnolo gran sport brakes': 554, // Campagnolo Gran Sport (second gen)
+    // 1984 Bianchi (ambiguous between two Flash versions).
+    'modolo flash (anatomic hoods)': 874, // Modolo Flash (1st version)
   },
   Headsets: {
     // 1974 Motobecane.
@@ -470,6 +472,11 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record pista gruppo': 1505, // Campagnolo 1051, Record Pista (144bcd)
     'gipiemme pista gruppo': 1593, // Gipiemme Special 600101 (Pista)
     'sugino supermighty': 1963, // Sugino Super Mighty Competition
+    // 1984 Bianchi. Bare "Record Pista" substring-hits the "non-fluted" row;
+    // align with the 1983 pick. Gran Sport crank: DB has a Bianchi-labelled row.
+    'campagnolo record pista': 1505, // Campagnolo 1051, Record Pista (144bcd)
+    'gipiemme pista': 1593,
+    'campagnolo gran sport': [{ from: 1978, id: 1473 }], // Campagnolo 0304, (Nuovo) Gran Sport (144 BCD; bianchi labeled)
   },
   Saddles: {
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
@@ -513,6 +520,10 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super record': 3716, // Campagnolo 4021, Super Record Strada
     'dura ace ex': 3974, // Shimano PD-7200, Dura-Ace EX
     'shimano 600 ax': 3957, // Shimano PD-6300, 600 AX
+    // 1984 Bianchi. Bare "Nuovo Record" substring-hits the rare orthopedic
+    // variant; the standard NR pedal is the 1037.
+    'campagnolo nuovo record': 3708, // Campagnolo 1037, Record Strada
+    'campagnolo gran sport': [{ from: 1978, id: 3688 }], // Campagnolo 3700, (Nuovo) Gran Sport
   },
   'Seat Posts': {
     'campagnolo': 5749, // Campagnolo 1044, Record — the period Campagnolo post
@@ -546,6 +557,10 @@ const COMPONENT_OVERRIDES = {
   Rims: {
     'nisi ava sprint alloy': 5123, // Nisi
     'ava sprint alloy': 4937, // AVA
+    // 1984 Bianchi. GP 4 is ambiguous with its red-label variant; the OR 10
+    // value carries a spoke aside.
+    'mavic gp4': 5069, // Mavic GP 4
+    'mavic or 10 (tied and soldered spokes)': 5103, // Mavic OR 10
   },
 };
 
