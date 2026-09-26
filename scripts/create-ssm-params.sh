@@ -7,6 +7,9 @@ set -euo pipefail
 
 PROFILE="${AWS_PROFILE:-velo}"
 REGION="${AWS_REGION:-eu-central-1}"
+
+# Keep the AWS CLI from paging long output through `less` and blocking the script.
+export AWS_PAGER=""
 ENV_FILE="$(dirname "$0")/../.env"
 PREFIX="/velo-describe-api/prod"
 
