@@ -120,8 +120,9 @@ Link counts are as of the last load; regenerate to confirm.
 - This catalog exposed that overrides were global: its "Campagnolo Nuovo
   Record" derailleurs inherited the 1973 Raleigh picks. COMPONENT_OVERRIDES
   now accepts year ranges; Nuovo Record front/rear and the Gran Sport and
-  Nuovo Record brakes are ranged. Side effect: Motobecane 1974/75 rears moved
-  from v3 to v4 (5 rows corrected by one-off UPDATE); Raleigh 1973 stays v3.
+  Nuovo Record brakes are ranged. (The rear ranges first chosen here were
+  wrong against the DB's own dating and were corrected later — see "Nuovo
+  Record rear-derailleur ranges" below.)
 - Repairs: three "&"-joined columns split in the CSV into Stem/Handlebars,
   Saddle/Seatpost, Hubs/Headset (a bare groupset name goes in both cells, a
   single-part value fills only its cell); "Frame Material/Tubing" → Frame
@@ -241,6 +242,34 @@ Link counts are as of the last load; regenerate to confirm.
   (no rows), Rapidfire Plus, Hyperglide cassettes and HG chains, Bianchi
   saddles/tyres, Ritchey, Kalloy, Selcof, Tioga, Panaracer, Maxxis, MTB Araya
   and Ukai rims, FIR rims.
+
+## 1973 Bianchi — `1973_bianchi_spec.csv` (22 bikes, 86 specs, 8 linked)
+
+- First catalog built from a scanned PDF (Bianchi1973_ital.pdf, Italian
+  market, 8 pages, no text layer): pages read visually, the CSV written by
+  hand. Model names carry the catalog code, e.g. "Rekord 74 (00.5.67)". Six
+  "derived" models have no specs of their own and are kept as bare rows with
+  a "Derived from ..." Extras note.
+- Only four bikes have component-level specs; the rest is frame tubing,
+  tyre sizes, brakes by type, fittings. New free-text label "Gearing" for
+  chainring/sprocket counts (added to LABEL_ORDER after Rear Derailleur).
+- Overrides: Universal Corsa Mod. 68 → Super 68; Universal Mod. 51 → Extra
+  Mod. 51 (DB dates it 1951-61, this catalog still fits it in 1973 — worth
+  a year_to extension); Campagnolo Valentino → 2050 front / Nuovo Valentino
+  rear; Campagnolo Gran Sport rear ranged: 1012/4 to 1977, 3500 from 1978.
+  No early-70s Gran Sport front row, so the Special's front stays unlinked.
+- Durall (Bianchi house alloy brand) brakes/bars, rod brakes and wheel
+  descriptions stay as text.
+
+## Nuovo Record rear-derailleur ranges (corrected 2026-09-27)
+
+While reading this catalog the DB's own dating for the 1020/A rows came up:
+v3 1970-1981, v4 1982-1984, v5 1985-1987. The ranges set during the 1983
+Bianchi work (v3 to 1973, v4 1974-77, v5 from 1978) contradicted that and
+had moved Motobecane 1974/75 to v4 and Bianchi 1983/84 to v5. Ranges now
+follow the DB dates; a one-off UPDATE moved 12 rows back (Motobecane → v3,
+Bianchi 1983/84 → v4). Lesson: when ranging an override, read the DB rows'
+year_from/year_to first rather than reasoning from memory.
 
 ## Label normalization (done 2026-09-27)
 

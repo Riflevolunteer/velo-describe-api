@@ -297,7 +297,7 @@ const LABEL_ALIASES = {
 // in first-seen order. bike_spec_label.sort_order is set from this.
 const LABEL_ORDER = [
   'Frame Material', 'Fork', 'Lugs', 'Headset', 'Handlebars', 'Stem', 'Shifters',
-  'Brakes', 'Front Derailleur', 'Rear Derailleur', 'Crankset', 'Bottom Bracket',
+  'Brakes', 'Front Derailleur', 'Rear Derailleur', 'Gearing', 'Crankset', 'Bottom Bracket',
   'Chain', 'Freewheel', 'Cassette', 'Pedals', 'Toe Clips', 'Saddle', 'Seatpost',
   'Hubs', 'Spokes', 'Rims', 'Tyres', 'Cable & Tape', 'Fenders', 'Chain Guard',
   'Groupset / Components', 'Other Features', 'Extras',
@@ -396,8 +396,11 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super record': 2313, // Campagnolo 1052/SR, Super Record (1979-1987)
     'dura ace ex': 2518, // Shimano FD-7200, Dura-Ace EX (clamp)
     'shimano 600 ax': 2476, // Shimano FD-6300, 600 AX (clamp)
-    // 1983 Bianchi: the 80s (Nuovo) Gran Sport is the 3600/NT.
+    // 1983 Bianchi: the 80s (Nuovo) Gran Sport is the 3600/NT. No DB row for
+    // the early-70s Gran Sport front, so 1973 stays unlinked.
     'campagnolo gran sport': [{ from: 1978, id: 2276 }], // Campagnolo 3600/NT, Gran Sport
+    // 1973 Bianchi junior Rekord ("Valentino completo di deragliatore").
+    'campagnolo valentino': 2316, // Campagnolo 2050, Valentino (1968-1980)
     // 1987 Bianchi.
     'campagnolo new victory': 2318, // Campagnolo Victory
     'shimano 105 sis': 2462, // Shimano FD-1050, 105
@@ -422,12 +425,12 @@ const COMPONENT_OVERRIDES = {
     // DB title is `Zeus "Especial Alfa 72"` — the quotes and brand prefix
     // defeat substring matching.
     'alfa 72': 4863,
-    // Five 1020/A versions in the DB: v3 (spring, solid rivets) early 70s,
-    // v4 (hollow rivets) mid 70s, v5 (no spring fixing bolt) from 1978.
+    // Five 1020/A versions in the DB; ranges follow the DB's own year_from/
+    // year_to for each row: v3 1970-1981, v4 1982-1984, v5 1985-1987.
     'campagnolo nuovo record': [
-      { to: 1973, id: 4125 }, // Nuovo Record v3 (w/ spring, solid rivets)
-      { from: 1974, to: 1977, id: 4126 }, // Nuovo Record v4 (w/ spring, hollow rivets)
-      { from: 1978, id: 4127 }, // Nuovo Record v5 (w/hollow rivets, w/o spring fixing bolt)
+      { to: 1981, id: 4125 }, // Nuovo Record v3 (w/ spring, solid rivets)
+      { from: 1982, to: 1984, id: 4126 }, // Nuovo Record v4 (w/ spring, hollow rivets)
+      { from: 1985, id: 4127 }, // Nuovo Record v5 (w/hollow rivets, w/o spring fixing bolt)
     ],
     'new huret jubilee': 4303, // Huret Jubilee (first version)
     // 1974 Motobecane.
@@ -443,8 +446,11 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super record': 4149, // Campagnolo 4001, Super Record, PAT. 80
     'dura ace ex': 4509, // Shimano RD-7200, Dura-Ace EX
     'shimano 600 ax': 4465, // Shimano RD-6300, 600 AX
-    // 1983 Bianchi.
-    'campagnolo gran sport': [{ from: 1978, id: 4085 }], // Campagnolo 3500, Nuovo Gran Sport
+    // 1983 Bianchi (3500 Nuovo Gran Sport); 1973 Bianchi Special -> the
+    // 1012/4 Gran Sport, which the DB dates to 1973.
+    'campagnolo gran sport': [{ to: 1977, id: 4118 }, { from: 1978, id: 4085 }], // 1012/4 Gran Sport / 3500 Nuovo Gran Sport
+    // 1973 Bianchi junior Rekord.
+    'campagnolo valentino': 4079, // Campagnolo Nuovo Valentino (1970)
     // 1987 Bianchi.
     'campagnolo new victory': 4169, // Campagnolo Victory S3
     'shimano 105 sis': 4449, // Shimano RD-1050, 105
@@ -545,6 +551,10 @@ const COMPONENT_OVERRIDES = {
     'campagnolo new victory': 590, // Campagnolo Victory 415/102
     'shimano 105': [{ to: 1989, id: 953 }, { from: 1990, id: 960 }], // BR-1050 / BR-1055 105SC
     'shimano dura ace': [{ to: 1983, id: 987 }, { from: 1984, to: 1989, id: 991 }, { from: 1990, id: 993 }], // centre-pull / BR-7400 / BR-7403 SLR-S
+    // 1973 Bianchi (Italian catalog). "Corsa Mod. 68" is the Super 68; the
+    // Mod. 51 is still fitted to the Rekord 74 despite the DB's 1951-61 dating.
+    'universal corsa mod 68': 1082, // Universal Super 68
+    'universal mod 51': 1080, // Universal Extra Mod. 51 (Brev 453949)
     'shimano 600': [{ to: 1983, id: 963 }, { from: 1984, id: null }], // centre-pull / no row
     // 1993 Bianchi. Bare "Chorus" substring-hits a 2000s 10-speed row.
     'campagnolo chorus': [{ from: 1990, to: 1999, id: 565 }], // Campagnolo BR-02CH, Chorus Monoplaner
