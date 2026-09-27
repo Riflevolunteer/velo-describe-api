@@ -34,7 +34,9 @@ review step matters more than speed.
   versions ("Campagnolo Nuovo Record", 1967-1987) must be ranged or a 1983
   catalog silently inherits the 1973 choice. When you add a range that
   changes an already-loaded catalog's pick, fix those rows with a one-off
-  UPDATE; the back-fill only fills NULLs.
+  UPDATE; the back-fill only fills NULLs. An explicit `null` id means "do not
+  link" — for when the only substring hit is a wrong-era row and the DB has no
+  right one (1987 "Shimano 600" brakes vs the 1970s centre-pull).
 - Idempotency: bikes key on brand+title+year_from; specs on bike+label+
   value_text. Re-runs skip existing rows and only back-fill `component_id`
   where it is NULL. A changed value_text therefore creates a second row rather

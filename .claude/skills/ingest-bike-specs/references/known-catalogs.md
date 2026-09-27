@@ -164,6 +164,48 @@ Link counts are as of the last load; regenerate to confirm.
 - Left unlinked: fork prose, TTT stems, San Marco, plain Mavic and Super
   Champion rims, Wolber tyres, the groupset column.
 
+## 1987 Bianchi — `1987_bianchi_spec.csv` (16 bikes, 320 specs, 128 linked)
+
+- Richest catalog: full parts lists with model numbers, but six columns pair
+  two components comma-separated. Split in the CSV on the first comma:
+  Handlebar and Stem, Saddle and Seatpost, Hubset and Spokes, Freewheel and
+  Chain, Tires and Rims, Derailleurs and Shift Levers (→ Derailleurs +
+  Shifters; a comma-less groupset name fills both). Brakeset keeps the
+  caliper only (lever notes dropped). Finish qualifiers stripped everywhere
+  (pantographed, anodized, laser etched, silver, aero kit, alloy).
+- Renames: Frame → Frame Material, Miscellaneous → Extras; N600/N105 →
+  Shimano 600/105 (the 6207 and 1050 groups); 3T → 3ttt; Suntour → SunTour
+  and bare Alpha-5000 prefixed; bare "C Record" chain → Regina C Record;
+  Pista "Campagnolo 16T fixed gear" → "Campagnolo 16T fixed cog".
+- Hand fixes after the split: five ITM stems kept a leading comma; Trofeo's
+  "Campagnolo Super Record/B Special 3T RSR" is derailleur + seatpost
+  spillover (→ Super Record); Super Leggera's "C Record/B Special Gipiemme
+  derailleur" → Gipiemme Special derailleur, C Record levers; "Anatomic"
+  saddle → "Anatomic saddle" (was substring-hitting Madison Anatomic);
+  Campione d'Italia's mixed SunTour cell → Cyclone 7000 with the Alpha-5000
+  front noted in Shifters.
+- Introduced the explicit-null override ("do not link"): 1987 "Shimano 600"
+  brakes substring-hit the 1970s centre-pull and the DB has no 6207 row.
+  Ranged so pre-1984 catalogs still get the centre-pull.
+- Auto-links corrected: C Record pedals (Pista → 305/501), C Record headset
+  (Century Finish → 304/104), Master Gran Premio crank (Master → Gran
+  Premio), Shimano 105 hubs (Golden Arrow → HB-1050), Dura-Ace brakes
+  (centre-pull → BR-7400, ranged from 1984).
+- Picks: New Victory → Victory rows (S3 rear, 422 low-flange hubs, 415/102
+  brakes, 0355 crank, 405/000 pedals); Dura-Ace SIS-7 → 7400 series
+  (RD-7401, FD-7400, MF-7400 7sp, FC/PD/HP-7400); Shimano 525/532 SIS →
+  Light Action RD-L525/L532; C Record shifters → Retro-Friction 2nd gen;
+  C Record seatpost → Aero 130mm; Ofmega Competizione Pista hubs → Super
+  Competizione Track; Gipiemme Cronosprint headset → Crono Sprint; 3ttt AR84
+  → Record 84; ITM 400 → 400 Racing; SR Custom → Sakae CUSTOM; Regina CX →
+  CX 6sp; Vittoria CG → Corsa CG Seta; Giro del Mondo → DB's "Mundo".
+- Brand rows kept: "Shimano" chain, "DID", "Sedisport" → Sedisport Delta,
+  "Shimano 600 SIS" → plain Shimano 600 derailleur/shifter (no 6207 rows).
+- Left unlinked: frame/fork prose, spokes, budget house-brand parts (KK-310,
+  HL, KL, TH-305, HTI-A1, CST, UCP), Regina C Record/Pista chains, Gipiemme
+  Cronosprint posts (three variants), 3ttt Competizione bars (three bends),
+  ITM Mondial bars and ITM 100-300 stems (no rows), Extras.
+
 ## Outstanding across catalogs
 
 Spec labels are inconsistent singular/plural and by wording (Saddle/Saddles,
@@ -173,4 +215,4 @@ Equipment/Included Accessories). Fixing it means choosing canonical names,
 renaming CSV headers, and a one-off SQL to merge label rows. Treat as its own
 task.
 
-Not yet loaded: 1987, 1993 Bianchi.
+Not yet loaded: 1993 Bianchi.

@@ -348,6 +348,10 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': 2476, // Shimano FD-6300, 600 AX (clamp)
     // 1983 Bianchi: the 80s (Nuovo) Gran Sport is the 3600/NT.
     'campagnolo gran sport': [{ from: 1978, id: 2276 }], // Campagnolo 3600/NT, Gran Sport
+    // 1987 Bianchi.
+    'campagnolo new victory': 2318, // Campagnolo Victory
+    'shimano 105 sis': 2462, // Shimano FD-1050, 105
+    'shimano dura ace sis 7': 2510, // Shimano FD-7400, Dura-Ace 7400
   },
   'Rear Derailleurs': {
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
@@ -377,6 +381,12 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': 4465, // Shimano RD-6300, 600 AX
     // 1983 Bianchi.
     'campagnolo gran sport': [{ from: 1978, id: 4085 }], // Campagnolo 3500, Nuovo Gran Sport
+    // 1987 Bianchi.
+    'campagnolo new victory': 4169, // Campagnolo Victory S3
+    'shimano 105 sis': 4449, // Shimano RD-1050, 105
+    'shimano dura ace sis 7': 4504, // Shimano RD-7401, Dura-Ace (6/7sp)
+    'shimano 525 sis': 4519, // Shimano RD-L525, Light Action
+    'shimano 532 sis': 4521, // Shimano RD-L532, Light Action
   },
   Hubs: {
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
@@ -407,6 +417,13 @@ const COMPONENT_OVERRIDES = {
     'campagnolo gran sport': 3256, // Campagnolo 1006, Gran Sport
     'campagnolo record pista (32 spoke tied soldered)': 3270, // Campagnolo 1036, Record Pista (high flange)
     'gipiemme pista': 3351, // Gipiemme Special Pista
+    // 1987 Bianchi. "Shimano 105" otherwise hits the 1985-86 Golden Arrow;
+    // N105 is the 1050 series.
+    'campagnolo c record': 3241, // Campagnolo 322/101, C-Record
+    'campagnolo new victory': 3281, // Campagnolo Victory 422 (low flange)
+    'shimano dura ace': [{ from: 1984, id: 3560 }], // Shimano FH-7400, Dura-Ace 7400 (freewheel)
+    'shimano 105': 3524, // Shimano HB-1050, 105
+    'ofmega competizione pista': 3445, // Ofmega Super Competizione Track (high flange)
   },
   Brakes: {
     // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
@@ -430,6 +447,12 @@ const COMPONENT_OVERRIDES = {
     'campagnolo gran sport brakes': 554, // Campagnolo Gran Sport (second gen)
     // 1984 Bianchi (ambiguous between two Flash versions).
     'modolo flash (anatomic hoods)': 874, // Modolo Flash (1st version)
+    // 1987 Bianchi. Bare "Shimano 600"/"Dura-Ace" substring-hit 1970s
+    // centre-pulls; the 1987 600 (6207) has no DB row, so it is blocked.
+    'campagnolo new victory': 590, // Campagnolo Victory 415/102
+    'shimano 105': 953, // Shimano BR-1050, 105 (39-49mm)
+    'shimano dura ace': [{ to: 1983, id: 987 }, { from: 1984, id: 991 }], // centre-pull / BR-7400
+    'shimano 600': [{ to: 1983, id: 963 }, { from: 1984, id: null }], // centre-pull / no row
   },
   Headsets: {
     // 1974 Motobecane.
@@ -445,6 +468,11 @@ const COMPONENT_OVERRIDES = {
     'campagnolo nuovo record': 2959, // Campagnolo 1039, Gran Sport / Record
     'campagnolo gran sport': 2951, // Campagnolo 1040/A, Gran Sport
     'gipiemme pista': 3008, // Gipiemme Special (Pista)
+    // 1987 Bianchi. Bare "C Record" substring-hits the Century Finish variant.
+    'campagnolo c record': 2954, // Campagnolo 304/104, C-Record
+    'gipiemme cronosprint': 3007, // Gipiemme Crono Sprint
+    'shimano 105': 3083, // Shimano HP-1050, 105
+    'shimano dura ace': [{ from: 1984, id: 3099 }], // Shimano HP-7400, Dura-Ace
   },
   'Bottom Brackets': {
     // 1981 Kalkhoff. Bare substring hits the titanium 1st-gen row; the
@@ -477,6 +505,14 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record pista': 1505, // Campagnolo 1051, Record Pista (144bcd)
     'gipiemme pista': 1593,
     'campagnolo gran sport': [{ from: 1978, id: 1473 }], // Campagnolo 0304, (Nuovo) Gran Sport (144 BCD; bianchi labeled)
+    // 1987 Bianchi. "Master Gran Premio" substring-hit Master; the catalog
+    // names the Gran Premio.
+    'ofmega master gran premio 52 42t': 1694, // Ofmega Gran Premio
+    'ofmega super competizione 52 42t': 1703, // Ofmega Super Competizione (road, 2nd version)
+    'ofmega super competizione pista 48t': 1702, // Ofmega Super Competizione (pista)
+    'campagnolo victory 52 42t': 1516, // Campagnolo 0355, Victory
+    'shimano 105 52 42t biopace': 1778, // Shimano FC-1050, 105
+    'shimano dura ace 53 42t': 1819, // Shimano FC-7400, Dura-Ace
   },
   Saddles: {
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
@@ -492,6 +528,8 @@ const COMPONENT_OVERRIDES = {
     'brooks professional with campagnolo seat post': 5303,
     // 1983 Bianchi.
     'cinelli #2': 5332, // Cinelli Unicanitor #2 suede
+    // 1987 Bianchi.
+    'selle italia special mundialita': 5497, // Selle Italia Mundialita
   },
   Handlebars: {
     // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
@@ -507,6 +545,17 @@ const COMPONENT_OVERRIDES = {
     // 1981 Kalkhoff. Cinelli's "Super Record" stem is the 1R (1/Record).
     'cinelli super record': 6491, // Cinelli 1R (1/Record)
     'shimano 600 ax': 6674, // Shimano HS-6300, 600 AX
+    // 1987 Bianchi.
+    '3ttt ar84': 6424, // 3ttt Record 84 (AR84 silver)
+    'itm 400': 6564, // ITM 400 Racing
+    'sr custom': 6659, // Sakae/Ringyo (SR) CUSTOM
+  },
+  Shifters: {
+    // 1987 Bianchi. The catalog's "levers" are the down-tube shifters.
+    'campagnolo c record': 5970, // Campagnolo C-Record Retro-Friction (2nd Gen.)
+    'c record levers': 5970,
+    'shimano 105 sis': 6130, // Shimano SL-1050, 105 (6sp)
+    'suntour cyclone 7000 barcon': 6280, // SunTour Cyclone 5000/7000/9000
   },
   Pedals: {
     // 1973 Raleigh.
@@ -524,6 +573,12 @@ const COMPONENT_OVERRIDES = {
     // variant; the standard NR pedal is the 1037.
     'campagnolo nuovo record': 3708, // Campagnolo 1037, Record Strada
     'campagnolo gran sport': [{ from: 1978, id: 3688 }], // Campagnolo 3700, (Nuovo) Gran Sport
+    // 1987 Bianchi. Bare "C Record" substring-hits the Pista pedal.
+    'campagnolo c record': 3693, // Campagnolo 305/501, C-Record
+    'campagnolo victory': 3720, // Campagnolo 405/000, Victory
+    'ofmega master': 3879, // Ofmega Master Strada (Road)
+    'shimano 105': 3953, // Shimano PD-1050, 105
+    'shimano dura ace': [{ from: 1984, id: 3970 }], // Shimano PD-7400, Dura-Ace
   },
   'Seat Posts': {
     'campagnolo': 5749, // Campagnolo 1044, Record — the period Campagnolo post
@@ -533,6 +588,8 @@ const COMPONENT_OVERRIDES = {
     // 1983 Bianchi. "fluted" Campagnolo post of the period is the 1044 NR.
     'campagnolo nuovo record fluted': 5748, // Campagnolo 1044, Nuovo Record (Superlegerro)
     'campagnolo fluted': 5748,
+    // 1987 Bianchi (two lengths in the DB; the common 130mm).
+    'campagnolo c record': 5737, // Campagnolo C-Record (Aero type, 130mm)
   },
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
@@ -545,6 +602,9 @@ const COMPONENT_OVERRIDES = {
   Freewheels: {
     'simplex 14 24t': 2225, // Simplex
     'regina oro 13 21': 2194, // Regina Oro (6 speed) — 1975 Motobecane
+    // 1987 Bianchi.
+    'regina cx 13 23t': 2168, // Regina CX (6 speed)
+    'shimano dura ace 13 23t': 2222, // Shimano MF-7400, Dura-Ace (7sp) — paired with SIS-7
   },
   Tyres: {
     'clement criterium silk tubular': 6748, // Clement Criterium Seta (seta = silk)
@@ -553,6 +613,9 @@ const COMPONENT_OVERRIDES = {
     // override.
     'super champion rims elvezia tubulars': 6752, // Clement Elvezia
     'super champion rims paris roubaix tubulars': 6762, // Clement Paris - Roubaix
+    // 1987 Bianchi. The DB spells Giro del Mondo "Mundo".
+    'vittoria cg': 6877, // Vittoria Corsa CG Seta
+    'vittoria giro del mondo': 6889, // Vittoria Giro del Mundo
   },
   Rims: {
     'nisi ava sprint alloy': 5123, // Nisi
@@ -561,6 +624,8 @@ const COMPONENT_OVERRIDES = {
     // value carries a spoke aside.
     'mavic gp4': 5069, // Mavic GP 4
     'mavic or 10 (tied and soldered spokes)': 5103, // Mavic OR 10
+    // 1987 Bianchi (three identically titled MA 40 rows).
+    'mavic ma40': 5077, // Mavic MA 40
   },
 };
 
@@ -582,13 +647,17 @@ const COMPONENT_OVERRIDES = {
 // only candidate is the bike's own brand name (these Italian-era catalogs
 // say things like "Sella Bianchi" — "Bianchi" alone is flavor text, not a
 // reference to a component literally titled "Bianchi").
-// Resolves a COMPONENT_OVERRIDES entry (id or year-range array) for a catalog year.
+// Resolves a COMPONENT_OVERRIDES entry for a catalog year. Returns an id, or
+// null when the entry (or the matching range) is an explicit `null` — which
+// means "do not link": used when the only substring hit is a wrong-era row
+// and the DB has no right one (e.g. 1987 "Shimano 600" brakes vs the 1970s
+// centre-pull). Returns undefined when there is no entry at all.
 function resolveOverride(entry, year) {
-  if (!entry) return null;
-  if (typeof entry === 'number') return entry;
+  if (entry === undefined) return undefined;
+  if (entry === null || typeof entry === 'number') return entry;
   const y = Number(year);
   const hit = entry.find((r) => (r.from == null || y >= r.from) && (r.to == null || y <= r.to));
-  return hit ? hit.id : null;
+  return hit ? hit.id : undefined;
 }
 
 function matchComponent(valueText, componentRecords, excludeTitle, label, year) {
@@ -601,6 +670,7 @@ function matchComponent(valueText, componentRecords, excludeTitle, label, year) 
 
   for (const category of categories) {
     const overrideId = resolveOverride(COMPONENT_OVERRIDES[category]?.[normalizedValue], year);
+    if (overrideId === null) return null; // explicit "do not link"
     if (overrideId) return { component_id: overrideId };
   }
 
