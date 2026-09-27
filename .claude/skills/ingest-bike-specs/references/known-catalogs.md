@@ -206,6 +206,42 @@ Link counts are as of the last load; regenerate to confirm.
   Cronosprint posts (three variants), 3ttt Competizione bars (three bends),
   ITM Mondial bars and ITM 100-300 stems (no rows), Extras.
 
+## 1993 Bianchi — `1993_bianchi_spec.csv` (24 bikes, 408 specs, 118 linked)
+
+- Six " / "-paired columns split in the CSV: Fork/Headset, Drivetrain/
+  Shifters (→ Derailleurs + Shifters; a slash-less cell fills both),
+  Saddle/Seatpost, Hubset/Spokes, Freewheel/Chain (→ Cassette + Chain: 20 of
+  24 bikes list cassettes), Tires/Rims. Frame Details → Frame Material.
+- Noise stripped: spoke counts (32H/36H), SG-X/Powering/SuperShifter, tyre
+  sizes, rim finish words, trailing "cassette"/"chain" nouns. Prefixes and
+  typos: Dura-Ace → Shimano Dura-Ace, HG50/70/90 → Shimano CN-HG.., HP50 →
+  HG50, 7401 chain → CN-7401, Diacompe → Dia-Compe, Suntour → SunTour, LOOK
+  PM76/PM56 → PP76/PP56.
+- Shifters label now maps to Shifters AND Shifting Brake Levers, so STI
+  links (ST-7400, ST-6400, ST-1055). No Record/Chorus Ergopower rows of
+  this era exist.
+- The 1990 boundary: Campagnolo Record, Shimano 105 and Dura-Ace overrides
+  for brakes/headsets/hubs/pedals/seat posts were converted to year ranges
+  (pre-1990 = 1973/1987 picks; from 1990 = BR-14RE, 105SC 1055, 7402/7410,
+  Record 8sp). Without this the 1993 bikes inherited 1973 and 1987 rows.
+- Blocked with null: bare "Alloy" hubs (was hitting a Roval hub) and
+  seatposts (Titan alloy), "FIR Tour or Ambrosio Giro d'Italia" (either/or),
+  bare "Campagnolo" seatpost from 1990 (no Record post of that span).
+- Picks: Record 8-speed → C-Record-generation crank 1482, RD-01RE, FD-01SRE,
+  HS-01RE, Record 8sp hubs, Exa-Drive cassette; Chorus → FC-01CH, RD/FD-01CH,
+  Monoplaner brakes (bare "Chorus" hit a 2000s 10s row), 704/101 headset,
+  FH-00CH hubs, Chorus Friction downtube levers; Veloce → 2317/4164/3279;
+  Ultegra → 6400 series; RX100 → A550 series; XTR → M900; XT → M735/M737;
+  DX → M650; LX → M550/M560; Dia-Compe 987 and XCE; Turbo-Matic → Turbo
+  Matic 2; Flite → Titanium; Avocet R20; Rohloff → SLT 99; Mavic 231 → M 231
+  CD; Omicron → Strada Polished; Vittoria Corsa CX → Servizio Corse; Tange
+  CD → Tange-Seiki Levin CD.
+- Left unlinked: frame/fork prose (Rock Shox: Forks has no category),
+  spokes, sealed/Aheadset/black headsets, AT10/CT10/CT20/Exage LT+ES groups
+  (no rows), Rapidfire Plus, Hyperglide cassettes and HG chains, Bianchi
+  saddles/tyres, Ritchey, Kalloy, Selcof, Tioga, Panaracer, Maxxis, MTB Araya
+  and Ukai rims, FIR rims.
+
 ## Outstanding across catalogs
 
 Spec labels are inconsistent singular/plural and by wording (Saddle/Saddles,
@@ -215,4 +251,6 @@ Equipment/Included Accessories). Fixing it means choosing canonical names,
 renaming CSV headers, and a one-off SQL to merge label rows. Treat as its own
 task.
 
-Not yet loaded: 1993 Bianchi.
+All ten catalogs in bike_specs/ are loaded. Next catalogs will most likely
+need: their own year ranges on the Campagnolo/Shimano group overrides, and
+the label normalization above.

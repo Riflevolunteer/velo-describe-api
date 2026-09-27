@@ -190,8 +190,9 @@ const LABEL_TO_CATEGORY = {
   seatposts: ['Seat Posts'],
   'seat post': ['Seat Posts'],
   'seat posts': ['Seat Posts'],
-  shifter: ['Shifters'],
-  shifters: ['Shifters'],
+  // Integrated levers (STI, Ergopower) live in their own DB category.
+  shifter: ['Shifters', 'Shifting Brake Levers'],
+  shifters: ['Shifters', 'Shifting Brake Levers'],
   cassette: ['Cassettes'],
   cassettes: ['Cassettes'],
   'bottom bracket': ['Bottom Brackets'],
@@ -352,6 +353,20 @@ const COMPONENT_OVERRIDES = {
     'campagnolo new victory': 2318, // Campagnolo Victory
     'shimano 105 sis': 2462, // Shimano FD-1050, 105
     'shimano dura ace sis 7': 2510, // Shimano FD-7400, Dura-Ace 7400
+    // 1993 Bianchi. A comma-less Drivetrain cell fills both derailleurs.
+    'campagnolo record 8 speed ergopower': 2306, // Campagnolo FD-01SRE, Record (91-94)
+    'campagnolo chorus 8 speed ergopower': 2286, // Campagnolo FD-01FCH, Chorus
+    'campagnolo chorus 8 speed downtube shift levers': 2286,
+    'campagnolo veloce': 2317, // Campagnolo Veloce
+    'shimano dura ace sti': 2511, // Shimano FD-7403, Dura-Ace 7400
+    'shimano ultegra sti': 2479, // Shimano FD-6401, 600 Ultegra
+    'shimano 105 sti': 2467, // Shimano FD-1055, 105SC
+    'shimano rx100 gs sis': 2531, // Shimano FD-A550, RX100
+    'shimano xtr': 2541, // Shimano FD-M900, XTR M900
+    'shimano xtr top pull dual sis': 2541,
+    'shimano deore dx top pull dual sis': 2487, // Shimano FD-M650, Deore DX
+    'shimano deore xt top pull dual sis': 2501, // Shimano FD-M735, Deore XT
+    'shimano deore lx top pull dual sis': 2491, // Shimano FD-M550, Deore LX
   },
   'Rear Derailleurs': {
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
@@ -387,6 +402,21 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace sis 7': 4504, // Shimano RD-7401, Dura-Ace (6/7sp)
     'shimano 525 sis': 4519, // Shimano RD-L525, Light Action
     'shimano 532 sis': 4521, // Shimano RD-L532, Light Action
+    // 1993 Bianchi.
+    'campagnolo record 8 speed ergopower': 4134, // Campagnolo RD-01RE, Record
+    'campagnolo chorus 8 speed ergopower': 4109, // Campagnolo RD-01CH, Chorus
+    'campagnolo chorus 8 speed downtube shift levers': 4109,
+    'campagnolo veloce': 4164, // Campagnolo RD-01VL, Veloce
+    'shimano dura ace sti': 4505, // Shimano RD-7402, Dura-Ace (8sp)
+    'shimano ultegra sti': 4467, // Shimano RD-6401, 600 Ultegra
+    'shimano 105 sti': 4455, // Shimano RD-1055, 105SC
+    'shimano rx100 gs sis': 4533, // Shimano RD-A551-GS, RX100
+    'shimano xtr': 4542, // Shimano RD-M900, XTR M900
+    'shimano xtr top pull dual sis': 4542,
+    'shimano deore dx top pull dual sis': 4480, // Shimano RD-M650, Deore DX (SGS)
+    'shimano deore xt top pull dual sis': 4493, // Shimano RD-M735 SGS, Deore XT
+    'shimano deore lx top pull dual sis': 4484, // Shimano RD-M550 SGS, Deore LX
+    'suntour xc comp top pull powerflo': 4783, // SunTour XC Comp
   },
   Hubs: {
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
@@ -405,7 +435,7 @@ const COMPONENT_OVERRIDES = {
     // the gold- and red-label rows; the road bikes took the high-flange gold.
     'normandy luxe competition': 3388,
     'normandy sport with quick release': 3390,
-    'campagnolo record': 3260, // Campagnolo 1035, Record (high flange)
+    'campagnolo record': [{ to: 1985, id: 3260 }, { from: 1990, id: 3265 }], // 1035 high flange / Record 8sp
     // 1975 Motobecane.
     'campagnolo record large flange': 3260,
     'campagnolo record low flange': 3259, // Campagnolo 1034, Record (Low Flange)
@@ -421,17 +451,31 @@ const COMPONENT_OVERRIDES = {
     // N105 is the 1050 series.
     'campagnolo c record': 3241, // Campagnolo 322/101, C-Record
     'campagnolo new victory': 3281, // Campagnolo Victory 422 (low flange)
-    'shimano dura ace': [{ from: 1984, id: 3560 }], // Shimano FH-7400, Dura-Ace 7400 (freewheel)
-    'shimano 105': 3524, // Shimano HB-1050, 105
+    'shimano dura ace': [{ from: 1984, to: 1989, id: 3560 }, { from: 1990, id: 3562 }], // FH-7400 / FH-7403 Hyperglide
+    'shimano 105': [{ to: 1989, id: 3524 }, { from: 1990, id: 3527 }], // HB-1050 / FH-1055 105SC
     'ofmega competizione pista': 3445, // Ofmega Super Competizione Track (high flange)
+    // 1993 Bianchi (spoke counts stripped from the CSV).
+    'campagnolo chorus': 3250, // Campagnolo FH-00CH / HB-00CH, Chorus
+    'campagnolo veloce': 3279, // Campagnolo HB-00VL / HF-00VL, Veloce
+    'shimano ultegra': 3534, // Shimano FH-6400, 600 Ultegra
+    'shimano rx100': 3579, // Shimano HB-A550 / FH-A550, RX100
+    'shimano xtr': 3581, // Shimano FH-M900, XTR M900
+    'shimano dx': 3542, // Shimano FH-M650 / HB-M650, Deore DX
+    'shimano xt': 3552, // Shimano FH-M737, Deore XT M737
+    'shimano lx': 3544, // Shimano FH-M550, Deore LX
+    alloy: null, // generic word; substring-hits "Roval by Maillard alloy rear hub"
   },
   Brakes: {
     // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
     // catalog is the later, 71-era version.
     'super alfa': 1181, // Zeus Super Alfa 71
-    // 1973 Raleigh Professional; without the override the only substring
-    // hit is the 1980s Record O.R.
-    'campagnolo record': 573, // Campagnolo 2040, Record (standard reach, pre-CPSC)
+    // Without an override the only substring hit is the 1980s Record O.R.
+    // 1973 Raleigh -> pre-CPSC 2040; 1990s (Bianchi 1993) -> BR-14RE dual pivot.
+    'campagnolo record': [
+      { to: 1977, id: 573 }, // Campagnolo 2040, Record (standard reach, pre-CPSC)
+      { from: 1978, to: 1986, id: 572 }, // Campagnolo 2040, Record (standard reach, post-CPSC)
+      { from: 1990, id: 578 }, // Campagnolo BR-14RE, Record (dual pivot with group name)
+    ],
     // 1974 Motobecane.
     'universal 61 center pull': 1081, // Universal Mod. 61
     // 1975 Motobecane.
@@ -450,9 +494,18 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi. Bare "Shimano 600"/"Dura-Ace" substring-hit 1970s
     // centre-pulls; the 1987 600 (6207) has no DB row, so it is blocked.
     'campagnolo new victory': 590, // Campagnolo Victory 415/102
-    'shimano 105': 953, // Shimano BR-1050, 105 (39-49mm)
-    'shimano dura ace': [{ to: 1983, id: 987 }, { from: 1984, id: 991 }], // centre-pull / BR-7400
+    'shimano 105': [{ to: 1989, id: 953 }, { from: 1990, id: 960 }], // BR-1050 / BR-1055 105SC
+    'shimano dura ace': [{ to: 1983, id: 987 }, { from: 1984, to: 1989, id: 991 }, { from: 1990, id: 993 }], // centre-pull / BR-7400 / BR-7403 SLR-S
     'shimano 600': [{ to: 1983, id: 963 }, { from: 1984, id: null }], // centre-pull / no row
+    // 1993 Bianchi. Bare "Chorus" substring-hits a 2000s 10-speed row.
+    'campagnolo chorus': [{ from: 1990, to: 1999, id: 565 }], // Campagnolo BR-02CH, Chorus Monoplaner
+    'shimano ultegra': 966, // Shimano BR-6400, 600 Ultegra
+    'shimano rx100 aero levers': 1007, // Shimano BR-A550, RX100
+    'shimano xtr': 1018, // Shimano BR-M900, XTR M900
+    'shimano deore lx m system': 977, // Shimano BR-M560, Deore LX
+    'shimano exage es m system': 1002, // Shimano BR-M520, Exage ES
+    'dia compe xce cantilevers 287 levers': 703, // Dia-Compe XCE
+    'dia compe 987 ss 7 brs': 652, // Dia-Compe 987
   },
   Headsets: {
     // 1974 Motobecane.
@@ -471,8 +524,13 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi. Bare "C Record" substring-hits the Century Finish variant.
     'campagnolo c record': 2954, // Campagnolo 304/104, C-Record
     'gipiemme cronosprint': 3007, // Gipiemme Crono Sprint
-    'shimano 105': 3083, // Shimano HP-1050, 105
-    'shimano dura ace': [{ from: 1984, id: 3099 }], // Shimano HP-7400, Dura-Ace
+    'shimano 105': [{ to: 1989, id: 3083 }, { from: 1990, id: 3086 }], // HP-1050 / HP-1055 105SC
+    'shimano dura ace': [{ from: 1984, to: 1989, id: 3099 }, { from: 1990, id: 3100 }], // HP-7400 / HP-7410
+    // 1993 Bianchi.
+    'campagnolo record': [{ to: 1985, id: 2959 }, { from: 1990, id: 2964 }], // 1039 / HS-01RE
+    'campagnolo chorus': 2956, // Campagnolo 704/101, Chorus
+    'shimano ultegra': 3087, // Shimano HP-6400, 600 Ultegra
+    'tange cd sealed': 3155, // Tange-Seiki Levin CD
   },
   'Bottom Brackets': {
     // 1981 Kalkhoff. Bare substring hits the titanium 1st-gen row; the
@@ -513,6 +571,18 @@ const COMPONENT_OVERRIDES = {
     'campagnolo victory 52 42t': 1516, // Campagnolo 0355, Victory
     'shimano 105 52 42t biopace': 1778, // Shimano FC-1050, 105
     'shimano dura ace 53 42t': 1819, // Shimano FC-7400, Dura-Ace
+    // 1993 Bianchi (SG-X/Powering stripped from the CSV). "Record" in 1993
+    // is the C-Record generation crank.
+    'campagnolo record 53 39t': 1482, // Campagnolo C-Record (1987-1994)
+    'campagnolo chorus 53 39t': 1488, // Campagnolo FC-01CH, Chorus
+    'campagnolo chorus 53 44t': 1488,
+    'shimano 105 53 39t': 1782, // Shimano FC-1055, 105SC
+    'shimano dura ace 53 39t': 1820, // Shimano FC-7402, Dura-Ace
+    'shimano ultegra 53 39t': 1790, // Shimano FC-6400, 600 Ultegra
+    'shimano rx100 52 42 30t': 1840, // Shimano FC-A550-T, RX100 (triple)
+    'shimano xtr 48 36 26t': 1848, // Shimano FC-M900, XTR M900
+    'shimano xtr 46 36 26t': 1848,
+    'shimano deore lx 46 36 26t': 1807, // Shimano FC-M550, Deore LX
   },
   Saddles: {
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
@@ -530,6 +600,11 @@ const COMPONENT_OVERRIDES = {
     'cinelli #2': 5332, // Cinelli Unicanitor #2 suede
     // 1987 Bianchi.
     'selle italia special mundialita': 5497, // Selle Italia Mundialita
+    // 1993 Bianchi. "Turbo-Matic" in 1993 is the Turbo Matic 2; bare "Flite"
+    // is ambiguous across six variants, the original is the Titanium.
+    'selle italia turbo matic': 5516, // Selle Italia Turbo Matic 2
+    'selle italia flite': 5489, // Selle Italia Flite Titanium
+    'avocet gelflex r20': 5249, // Avocet R20 GelFlex
   },
   Handlebars: {
     // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
@@ -556,6 +631,17 @@ const COMPONENT_OVERRIDES = {
     'c record levers': 5970,
     'shimano 105 sis': 6130, // Shimano SL-1050, 105 (6sp)
     'suntour cyclone 7000 barcon': 6280, // SunTour Cyclone 5000/7000/9000
+    // 1993 Bianchi (down-tube and thumb shifters).
+    'campagnolo chorus 8 speed downtube shift levers': 5976, // Campagnolo Chorus Friction - Graphite finish
+    'shimano rx100 gs sis': 6189, // Shimano SL-A550, RX100
+    'deore xt thumb shifters': 6160, // Shimano SL-M732, Deore XT M730
+  },
+  'Shifting Brake Levers': {
+    // 1993 Bianchi (integrated levers; the Shifters label maps to both
+    // categories). No Record or Chorus Ergopower rows of this era in the DB.
+    'shimano dura ace sti': 6365, // Shimano ST-7400, Dura-Ace 7400
+    'shimano ultegra sti': 6358, // Shimano ST-6400, 600EX Ultegra
+    'shimano 105 sti': 6357, // Shimano ST-1055, 105SC
   },
   Pedals: {
     // 1973 Raleigh.
@@ -577,11 +663,19 @@ const COMPONENT_OVERRIDES = {
     'campagnolo c record': 3693, // Campagnolo 305/501, C-Record
     'campagnolo victory': 3720, // Campagnolo 405/000, Victory
     'ofmega master': 3879, // Ofmega Master Strada (Road)
-    'shimano 105': 3953, // Shimano PD-1050, 105
-    'shimano dura ace': [{ from: 1984, id: 3970 }], // Shimano PD-7400, Dura-Ace
+    'shimano 105': [{ to: 1989, id: 3953 }, { from: 1990, id: 3955 }], // PD-1050 / PD-1055 105SC
+    'shimano dura ace': [{ from: 1984, to: 1989, id: 3970 }, { from: 1990, id: 3971 }], // PD-7400 / PD-7401
+    // 1993 Bianchi ("PM" in the catalog is LOOK's PP series).
+    'look pp76': 3791, // LOOK PP76
+    'look pp56': 3787, // LOOK "Touring" PP56
+    'shimano 1056 clipless': 3956, // Shimano PD-1056, 105SC
   },
   'Seat Posts': {
-    'campagnolo': 5749, // Campagnolo 1044, Record — the period Campagnolo post
+    // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
+    // from in the 90s (Krono 1993), so blocked rather than wrong.
+    'campagnolo': [{ to: 1985, id: 5749 }, { from: 1990, id: null }], // Campagnolo 1044, Record
+    'shimano dura ace': [{ from: 1990, id: 5895 }], // Shimano SP-7410, Dura-Ace 7400 — 1993 Bianchi
+    alloy: null, // generic word; substring-hits "Titan alloy"
     // 1981 Kalkhoff.
     'campagnolo super record': 5759, // Campagnolo 4051, Super Record (Campagnolo Script)
     'shimano 600 ax': 5886, // Shimano SP-6300, 600 AX
@@ -598,6 +692,16 @@ const COMPONENT_OVERRIDES = {
     // 1981 Kalkhoff: no chain row is titled EX; the CN-7100 Uniglide is the
     // Dura-Ace chain of the EX era.
     'dura ace ex': 1411, // Shimano CN-7100, Dura-Ace (Uniglide)
+    // 1993 Bianchi.
+    rohloff: 1396, // Rohloff SLT 99 (Road)
+    'shimano dura ace chain': 1414, // Shimano CN-7401, Dura-Ace 7400
+  },
+  Cassettes: {
+    // 1993 Bianchi ("cassette" noun stripped from the CSV).
+    'campagnolo 12 23t 8 speed': 1186, // Campagnolo Record Exa-Drive (8sp)
+    'campagnolo 12 23 8 speed': 1186,
+    'shimano dura ace 12 23t 8 speed': 1205, // Shimano CS-7400-8, Dura-Ace 7400 (Uniglide)
+    'suntour powerflo 11 28t 8 speed': 1220, // SunTour CS-AP20-S8, XC Comp
   },
   Freewheels: {
     'simplex 14 24t': 2225, // Simplex
@@ -616,6 +720,8 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi. The DB spells Giro del Mondo "Mundo".
     'vittoria cg': 6877, // Vittoria Corsa CG Seta
     'vittoria giro del mondo': 6889, // Vittoria Giro del Mundo
+    // 1993 Bianchi (ambiguous between Servizio Corse and Squadre Prof).
+    'vittoria corsa cx': 6880, // Vittoria Corsa CX Servizio Corse
   },
   Rims: {
     'nisi ava sprint alloy': 5123, // Nisi
@@ -626,6 +732,10 @@ const COMPONENT_OVERRIDES = {
     'mavic or 10 (tied and soldered spokes)': 5103, // Mavic OR 10
     // 1987 Bianchi (three identically titled MA 40 rows).
     'mavic ma40': 5077, // Mavic MA 40
+    // 1993 Bianchi.
+    'campagnolo omicron': 4962, // Campagnolo Omicron Strada Polished (three finishes)
+    'mavic 231': 5071, // Mavic M 231 CD
+    "fir tour or ambrosio giro d'italia": null, // either/or spec; don't pick one
   },
 };
 
