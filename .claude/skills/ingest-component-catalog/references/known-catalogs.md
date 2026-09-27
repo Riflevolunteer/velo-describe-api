@@ -51,6 +51,47 @@ in the repo records them except this file.
   4144 (1013/2) → 1960; 3273 (1006/A) → 1960; 3256, 3257 (1006, 1006/G)
   → 1955 (present in N. 13, absent in N. 14).
 
+## Campagnolo Catalogo N. 15 "Prodotti Speciali" — 1967 (Campy1967_catalog15.pdf, 46 pp)
+
+- Nuovo Record arrives: 1020/a rear derailleur (1020/1a with hanger),
+  1046/a bottom bracket with plastic sleeve 2110, group named Record
+  throughout. Gran Sport and Sport gone from the group pages; budget line is
+  now Valentino Super (2150/1 rear, 2050 front, 1204/1206 levers) and Nuovo
+  Sport 2230. New: 1036/1 large-flange QR track hubs, Nuovo Tipo hub range
+  1250-1253 (1260-1267 sub-numbers), special triple and cyclocross right
+  cranks (753/1 flanged rings, 744/1-2 spindles), 1060 Corsa dropouts,
+  1220/1230 QR bands, grease tins, 1102 workstand. Chainline and gear tables
+  at the back.
+- Added: 6993 "2150/1, Valentino Super (con attacco)" 1967-1970 (group
+  Valentino Extra); 6994 "1036/1, Record Pista (high flange, quick release)"
+  1967-1980; 6995 "1204 1206, Valentino" levers 1967-1980. source_id
+  MANUAL-CAT15-1967-*.
+- Years: 4146 (2230 Nuovo Sport) year_to → 1967; 3270, 3271 (1036 track
+  hubs) → 1967; 3712, 3714 (1038, 1038/1 pedals) → 1967; 5752 (1044 first
+  version) → 1968 (5749 covers 1969 on); 2316 (2050 Valentino front)
+  year_from 1968 → 1967.
+- Confirmed as-is: 4123 1020/a v1 1967-68, 1496 1049 v4 BCD 144 from 1967,
+  1505 1051 144 BCD from 1967, 1495 1048/4 cyclocross from 1968, 30 1046/a,
+  all levers. 4118 1012/4 Gran Sport (to 1973) is absent here but the 1973
+  Bianchi Special still lists Gran Sport, so left alone.
+
+## Campagnolo Catalogue No. 16, English edition — 1968 (Campy1968_catalog16.pdf, 46 pp)
+
+- English printing of N. 15 with two additions: the Record brakes (2040 set:
+  2000 front, 2001 rear, 2030 QR lever; spares 2002-2039) and the Sport
+  Extra 2180 rear derailleur. Valentino Super 2150/1 → Valentino Extra 2170;
+  Nuovo Sport 2230 → Sport Extra 2180. 1036/1 QR track hub not shown;
+  1036/2 small-flange solid-spindle track hub is. 1038/1 toothed pedal
+  dropped. New 1240 QR bolt and 693/1 steerer (out of scope).
+- Added: 6996 "2180, Sport Extra (con attacco)" 1968-1975 (group Sport),
+  source_id MANUAL-CAT16-1968-2180. year_to 1975 is a guess.
+- Years: 6993 (2150/1 Valentino Super) year_to 1970 → 1967; 6994 (1036/1)
+  year_to 1980 → 1967; 3271 (1036/2) year_to 1967 → 1968.
+- Confirmed: 574 2040 Record "1968 - no lettering", 228 2030 lever 1968,
+  4162 2170 Valentino Extra 1968, 6004 1026 twin Valentino lever.
+- Left: 226 "2030, Nuovo Record" lever dated from 1967, a year before the
+  brakes appear in any catalog; velobase may know something, not changed.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
