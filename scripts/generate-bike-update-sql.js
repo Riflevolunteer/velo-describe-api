@@ -225,7 +225,9 @@ const SPLIT_LABELS = {
 };
 
 function expandLabel(label) {
-  return SPLIT_LABELS[label.trim().toLowerCase()] || [label];
+  const key = label.trim().toLowerCase();
+  if (SPLIT_LABELS[key]) return SPLIT_LABELS[key];
+  return [LABEL_ALIASES[key] || label.trim()];
 }
 
 // Maps a normalized CSV header to a column already on the `bike` table
@@ -253,6 +255,53 @@ const BIKE_FIELD_LABELS = {
   'average weight': 'weight',
   'weight (lbs)': 'weight',
 };
+
+// Canonical spec labels for header variants that mean the same thing.
+// Catalogs write "Brakeset"/"Brakes", "Saddle"/"Saddles", "Extras"/"Standard
+// Equipment"... and the detail page should show one label per part across
+// brands. Keyed on the lowercased header; the original header is still kept
+// in bike_spec.raw_label. Singular wins (majority form); "Brakes" wins over
+// "Brakeset" because it's the part and the DB category name. Cassette stays
+// distinct from Freewheel, and "Other Features" (1940 Bianchi frame notes)
+// is not Extras.
+const LABEL_ALIASES = {
+  frame: 'Frame Material',
+  'frame type': 'Frame Material',
+  'frame details': 'Frame Material',
+  'frame material/tubing': 'Frame Material',
+  brakeset: 'Brakes',
+  chains: 'Chain',
+  'chain type': 'Chain',
+  cranksets: 'Crankset',
+  freewheels: 'Freewheel',
+  'gear cluster': 'Freewheel',
+  saddles: 'Saddle',
+  'seat posts': 'Seatpost',
+  'seat post': 'Seatpost',
+  stems: 'Stem',
+  tires: 'Tyres',
+  'tire configuration': 'Tyres',
+  'wheel rims & spokes': 'Rims',
+  wheels: 'Rims',
+  'rims/wheels': 'Rims',
+  'shifters/levers': 'Shifters',
+  'extras no charge': 'Extras',
+  'included accessories': 'Extras',
+  'standard equipment': 'Extras',
+  miscellaneous: 'Extras',
+  haken: 'Toe Clips',
+};
+
+// One global display order for canonical labels (frame -> drivetrain ->
+// contact points -> wheels -> extras). Labels not listed sort after these,
+// in first-seen order. bike_spec_label.sort_order is set from this.
+const LABEL_ORDER = [
+  'Frame Material', 'Fork', 'Lugs', 'Headset', 'Handlebars', 'Stem', 'Shifters',
+  'Brakes', 'Front Derailleur', 'Rear Derailleur', 'Crankset', 'Bottom Bracket',
+  'Chain', 'Freewheel', 'Cassette', 'Pedals', 'Toe Clips', 'Saddle', 'Seatpost',
+  'Hubs', 'Spokes', 'Rims', 'Tyres', 'Cable & Tape', 'Fenders', 'Chain Guard',
+  'Groupset / Components', 'Other Features', 'Extras',
+];
 
 // CSV columns that are about the source document, not the bike — dropped
 // entirely (no bike column, no bike_spec row). Keyed on the lowercased header.
@@ -917,7 +966,15 @@ async function main() {
   lines.push('');
 
   lines.push('-- Bike spec labels (sort_order = first-seen order across processed files)');
-  for (const [label, sortOrder] of labelSortOrder) lines.push(labelLookupInsert(label, sortOrder));
+  // sort_order comes from LABEL_ORDER (global display order); labels not in
+  // it sort after, in first-seen order. The UPDATE realigns labels that an
+  // earlier run inserted with a per-catalog first-seen order.
+  for (const [label, seen] of labelSortOrder) {
+    const idx = LABEL_ORDER.indexOf(label);
+    const sortOrder = idx >= 0 ? idx : LABEL_ORDER.length + seen;
+    lines.push(labelLookupInsert(label, sortOrder));
+    lines.push(`UPDATE bike_spec_label SET sort_order = ${sortOrder} WHERE title = '${sqlEscape(label)}' AND sort_order <> ${sortOrder};`);
+  }
   lines.push('');
 
   lines.push('-- Bikes');

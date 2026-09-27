@@ -242,14 +242,29 @@ Link counts are as of the last load; regenerate to confirm.
   saddles/tyres, Ritchey, Kalloy, Selcof, Tioga, Panaracer, Maxxis, MTB Araya
   and Ukai rims, FIR rims.
 
-## Outstanding across catalogs
+## Label normalization (done 2026-09-27)
 
-Spec labels are inconsistent singular/plural and by wording (Saddle/Saddles,
-Stem/Stems, Chain/Chains, Crankset/Cranksets, Freewheel/Freewheels/Gear
-Cluster, Frame/Frame Material/Frame Type, Extras/Extras No Charge/Standard
-Equipment/Included Accessories). Fixing it means choosing canonical names,
-renaming CSV headers, and a one-off SQL to merge label rows. Treat as its own
-task.
+The ten catalogs had minted 49 labels, ~15 of them wording variants. Merged
+to 29 canonical labels with one global display order:
+
+- `LABEL_ALIASES` in the generator maps header variants to canonical labels
+  at read time (Frame/Frame Type/Frame Details → Frame Material; Brakeset →
+  Brakes; Chains/Chain Type → Chain; Cranksets → Crankset; Freewheels/Gear
+  Cluster → Freewheel; Saddles → Saddle; Seat Posts → Seatpost; Stems →
+  Stem; Tires/Tire Configuration → Tyres; Wheel Rims & Spokes/Wheels →
+  Rims; Shifters/Levers → Shifters; Extras No Charge/Included Accessories/
+  Standard Equipment/Miscellaneous → Extras; Haken → Toe Clips). CSVs were
+  not edited; `bike_spec.raw_label` keeps the original header.
+- `LABEL_ORDER` sets `sort_order` (frame → drivetrain → contact points →
+  wheels → extras); the generator now emits an UPDATE so existing labels
+  realign on any run.
+- One-off SQL repointed 247 bike_spec rows and deleted the 18 emptied label
+  rows. Cassette stays distinct from Freewheel; "Other Features" (1940
+  Bianchi frame notes) is not Extras; "Groupset / Components" (1984) kept.
+- Side effect: two values now sit under mapped categories and link —
+  1975 Motobecane "REGINA ORO 13-21" (Gear Cluster → Freewheel, existing
+  override) and 1983 Bianchi Professional "Suntour" shifters → the brand-level
+  SunTour shifter row.
 
 All ten catalogs in bike_specs/ are loaded. Next catalogs will most likely
 need: their own year ranges on the Campagnolo/Shimano group overrides, and

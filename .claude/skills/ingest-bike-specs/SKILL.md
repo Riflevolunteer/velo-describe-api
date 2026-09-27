@@ -57,11 +57,14 @@ had at least one of:
 - **Wrong column for the data**: e.g. "STURMEY ARCHER 3 speed hub" in the
   Derailleur column. Move it to Hubs and blank Derailleur, or the split will
   mint two fake derailleur rows.
-- **Header alignment**: compare headers to labels already in the DB
-  (`node scripts/db-query.js "SELECT title FROM bike_spec_label ORDER BY sort_order"`).
-  Prefer an existing label over a new near-duplicate (Brakeset vs Brakes,
-  Saddle vs Saddles). A groupset column named "Rear Derailleurs" whose values
-  are groupset names should become "Derailleurs" so both derailleurs get rows.
+- **Header alignment**: `LABEL_ALIASES` in the generator folds known variants
+  (Brakeset → Brakes, Saddles → Saddle, Standard Equipment → Extras...) into
+  the canonical label and `LABEL_ORDER` fixes display order; the original
+  header is kept in `bike_spec.raw_label`. Compare a new file's headers to
+  the canonical list (`node scripts/db-query.js "SELECT title FROM bike_spec_label ORDER BY sort_order"`)
+  and add an alias rather than letting a near-duplicate label be minted. A
+  groupset column named "Rear Derailleurs" whose values are groupset names
+  should become "Derailleurs" so both derailleurs get rows.
 - **Source-document columns** (page references): add to `IGNORED_LABELS`.
 - **Combined columns** that name two components with DB rows for each
   ("Wheel Rims & Tires"): add to `SPLIT_LABELS`. Leave combined columns alone
