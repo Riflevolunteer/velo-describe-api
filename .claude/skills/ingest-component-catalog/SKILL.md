@@ -1,0 +1,120 @@
+---
+name: ingest-component-catalog
+description: Read a scanned manufacturer component catalog (PDF or a folder of page JPGs, e.g. Campagnolo Catalogo N. 12/13/14) and reconcile it with the component_detail table: list every component with DB category, part-numbered title, description and year, diff it against existing rows by part number, then apply year corrections and any genuinely new rows as idempotent SQL. Use this whenever the user drops in a component catalog, price list or parts book and asks to analyse it, list its components, "see what we can ascertain", diff it against the DB, or fix component years from a catalog. Not for bike catalogs (bikes with specs) — that is ingest-bike-specs.
+---
+
+# Ingest a component catalog
+
+A manufacturer catalog is evidence about components: which part numbers
+existed, what they were called, and which years they were on sale. The
+`component_detail` table (crawled from velobase) already has most parts; what
+a catalog adds is confirmation, year bounds, and the occasional missing part.
+The job is to read it carefully, diff by part number, and change only what
+the pages actually support.
+
+## 1. Make the pages readable
+
+- **PDF**: `pdfinfo` for page count; `pdftotext -f 1 -l 3 file - | wc -c`
+  to check for a text layer. Nearly all of these are scans with none, so
+  read them visually with the Read tool, `pages` in batches of ≤20 (its
+  hard limit). Needs poppler (`brew install poppler`) for rendering.
+- **Folder of JPGs**: bind them into one PDF first so they can be read in
+  batches instead of 40 separate calls:
+  `scripts/bind-images-to-pdf.sh <folder> <out.pdf>` (downscales to 1800 px
+  with sips, converts each to PDF, merges with pdfunite). Sort order is the
+  filename order; print the page→file map so you can cite pages.
+- Pages are often rotated 90° in the scan; they are still legible. Later
+  bound-in pages may come from a different printing (N. 12 had one).
+
+## 2. List the components
+
+Produce the listing in the chat first, before touching the DB, as a table
+per category with these columns:
+
+- **Category** — the DB's `component_category` title (Rear Derailleurs,
+  Front Derailleurs, Shifters, Hubs, Brakes, Cranksets, Bottom Brackets,
+  Headsets, Pedals, Seat Posts, Chains, Freewheels, Rims, Tyres, Saddles,
+  Stems, Handlebars, Brake Levers, Chainrings, Single Sprockets, Cassettes,
+  Wheel(sets), Geared Hubs, Shifting Brake Levers). Dropouts, frame
+  fittings, cables, bands, pump clips and tools have no category: list them
+  in one summary line and say they are out of scope.
+- **Title** — in the DB's convention `Campagnolo <part no>, <name>`, e.g.
+  "Campagnolo 1012/4, Gran Sport". Include sub-numbers when the catalog
+  sells them separately (1001/1 front hub vs 1001/2 rear hub).
+- **Description** — what the catalog says: what the part is, what it is
+  sold with, cable lengths, threadings, sub-part numbers if useful.
+- **Year** — the catalog year, and separately what the catalog implies
+  (a Bartali 1948 photo means the part predates the catalog; a part present
+  in N. 13 and absent from N. 14 has a year_to between them).
+
+Close the listing with a "what we can ascertain" section: what is new in
+this printing vs the previous one, what has been dropped, and what the
+catalog's own dating implies. Then stop and let the user ask for the diff.
+
+## 3. Diff against the DB
+
+`scripts/component-diff.js '<title regex>'` prints matching rows with
+category, years, description tail and source_id. Query by part number, not
+by name — names drift (the 1040 track headset is titled "Record Pista #
+1040" in the DB but was Gran Sport in 1960). A useful regex for a numbered
+range: `'10(3[4-9]|4[0-9]|5[0-3])(/|,| |$)'`.
+
+Read the DB rows' own `year_from`/`year_to` before judging: the velobase
+dates are often per-version and are the thing you are reconciling against.
+Classify each catalog item as:
+
+- **Present, years compatible** — no change.
+- **Present, catalog extends the years** — a part listed as current moves
+  `year_to` up to the catalog year; a part listed earlier than the DB's
+  `year_from` moves that down. A part missing from a later catalog bounds
+  `year_to` at the previous catalog's year, no further.
+- **Present under another name** — same part number, different title
+  (Record vs Gran Sport). Append a note to the description rather than
+  retitling or duplicating.
+- **Genuinely missing** — only for categories that exist. Confirm by part
+  number and by name before inserting.
+- **Apparent duplicates** (two rows, same title, different source_id and
+  weight) are two velobase examples of one part. Leave them unless the user
+  asks; offer a distinguishing title suffix over deletion.
+
+## 4. Apply as idempotent SQL
+
+Write one `.sql` file per catalog in the scratchpad, then
+`node scripts/load-sql.js <file>` and verify with `scripts/db-query.js`.
+
+- `UPDATE ... WHERE component_id = N AND year_to < Y` style guards so a
+  re-run is a no-op.
+- Inserts mirror an existing row of the same brand/category: `brand_id`,
+  `category_id`, `group_id` (look up `component_group` by title),
+  `search_text` = `"<title> <category>"`, and a manual
+  `source_id` like `MANUAL-CAT14-1960-1034` (≤36 chars) so the velobase
+  crawler's source_id dedupe cannot collide with it. Every existing row has
+  a source_id; never leave it NULL.
+- **Comments on their own lines.** `load-sql.js` splits on `;` followed by
+  a newline; a trailing `-- comment` after the semicolon merges statements
+  into one batch. MySQL has executed them anyway so far, but the statement
+  count it reports is then wrong, and it is not something to rely on.
+- Description notes are appended (`CONCAT`) and guarded with
+  `description NOT LIKE '%Catalogo N. 14%'`.
+
+Report the result as a table of row, part, change. State which changes came
+from a different catalog than the one being processed (they happen: a bike
+catalog can show a brake still fitted years after the DB's year_to).
+
+## 5. Record it
+
+Add an entry to `references/known-catalogs.md`: catalog, year, source file,
+what was new/dropped vs the previous printing, rows added, rows adjusted,
+and anything left unresolved. Nothing in the repo changes for a catalog,
+so there is normally nothing to commit; the SQL stays in the scratchpad.
+
+## Gotchas
+
+- DB access needs your IP in the RDS security group; `connect ETIMEDOUT`
+  means it changed (README).
+- The Read tool's PDF renderer needs poppler's `pdftoppm`.
+- A catalog is a first-appearance record, not a start date: do not move
+  `year_from` earlier than the DB says unless the catalog itself is earlier.
+- Bike-catalog overrides (`COMPONENT_OVERRIDES` in the bike generator) that
+  pick a version by year must agree with these rows' years; if you change a
+  component's years here, check the bike skill's ranges.
