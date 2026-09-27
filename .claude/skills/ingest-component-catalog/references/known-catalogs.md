@@ -92,6 +92,60 @@ in the repo records them except this file.
 - Left: 226 "2030, Nuovo Record" lever dated from 1967, a year before the
   brakes appear in any catalog; velobase may know something, not changed.
 
+## Campagnolo Supplement to Cycle Catalogue No. 16 — November 1971 (Campy1971_catalog16sup/, 12 JPGs)
+
+- Quadrilingual colour update sheet. Records the Superleggero series (1037/a,
+  1038/a pedals; 1044/a, 1045/a seatposts; 763/a sprocket), the budget-line
+  rename Sport Extra 2180 → Velox 2250 with 1013/1a and 1014/1a levers, the
+  Gran Turismo 2270 with 1013/1b lever and 3360 Elefante bar control, and a
+  new Sport groupset: 3320 cottered crank + 3331 bottom bracket (3330 set)
+  and a Sport headset (687/a-690/a, no set number). Also 3345/3346 pump
+  adaptors, 2041 toothed washer, eyelet-less dropouts (out of scope).
+- Added: 6997 "1013/1a 1014/1a, Velox" levers 1971-1975 (group Velox); 6998
+  "1013/1b, Gran Turismo" lever 1971-1975; 6999 "763/a, Superleggero
+  Sprocket" 1971-1980; 7000 "Sport Strada Headset" 1971-1975 (group Sport).
+  source_id MANUAL-CAT16S-1971-*. End years are guesses.
+- Note appended to 20 (3331 "(Nuovo) Gran Sport (Thin Cup)"): sold as the
+  Sport bottom bracket in 1971.
+- Years: 5748 (1044 Nuovo Record Superleggero = the 1044/a) year_to → 1971;
+  5985 (Elefante) → 1971; 4120 (2270 Gran Turismo) → 1971.
+- Confirmed: 4167 Velox 1971, 3709/3715 superlight pedals from 1971, 5754
+  1045/a 1971, 1508 3320 Sport 1971-75, 2316 Valentino front to 1980.
+- Caution: 5964 "1013/1A, Gran Sport (Single Sided)" 1960-70 and 5965
+  "1014/1A, Nuovo Gran Sport" 1974-83 reuse the /1A suffix for different
+  eras; the 1971 Velox levers are distinct rows.
+
+## Campagnolo Catalogue No. 17, English edition — 1974 (Campy1974_catalog17.pdf, 93 pp)
+
+- Has an OCR text layer but it is drawing noise; pages read visually. PDF
+  page ≠ printed page (blanks/skips); printed pages 77-78 (cyclocross parts,
+  Rally gear) are missing from the scan. Colour-coded groups: Super Record
+  road 4000/F (blue), track 4100, Record road 1032/F and track 1033
+  (yellow), Gran Sport 2240 (green), Valentino Extra, triple/cross/Rally,
+  sundries, tools, tables.
+- Super Record debut: 4001 rear, 4061/4061-1 brakes with 4062 drilled lever,
+  4011/4014 Ti-spindle hubs, 4021 pedals, 1049/A crank + 4030 set + 4031 Ti
+  bottom bracket, 4041 headset, 4051 seatpost; track 4101/4121/4151/4131/
+  4141. Nuovo Gran Sport 3500 replaces Velox/Gran Turismo with 1014/1A and
+  1013/1A levers; 1207/1208 braze-on levers; Sport crank becomes 3320/A with
+  fixed ring pairs; Nuovo Tipo solid-axle 1250/1252 dropped; 1049/3, 1049/5
+  (fixed 36T) triples and 1049/4 cyclocross as 1048/x sets. 1052/1 is the
+  front derailleur for every group (no SR front until 1979).
+- Added: 7001 "1013/1A, Nuovo Gran Sport (right hand)" 1974-1983 (distinct
+  from 5964, the 1960s Gran Sport 1013/1A); 7002 "1207 1208, Gran Sport /
+  Valentino (braze-on)" 1974-1983; 7003 "1049/5, Record Triple (fixed 36T
+  inner)" 1974-1980. source_id MANUAL-CAT17-1974-*.
+- Completed: row 19 (velobase "super record - titanium - 1st gen;", no
+  number/years/group) → "4031, Super Record (First Gen, titanium spindle)"
+  1974-1979, group Super Record. Note on 2951 (1040/A "Gran Sport"): sold as
+  the Sport head set.
+- Years: 6997 Velox levers and 6996 Sport Extra year_to → 1973; 3229, 3231
+  Nuovo Tipo solid-axle → 1973.
+- Confirmed: whole SR group dated from 1970/1974 by velobase; 4148 4001 1st
+  gen 1974-79; 1509 1049/A from 1974; 4085 3500 from 1974; 5965 1014/1A from
+  1974; 1498 covers 1049/3 (triple v4 from 1973); 4081 Rally 1st gen 1974.
+- Skipped: 3320/A (covered by 1508 3320 Sport 1971-75); Rally (page missing).
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
