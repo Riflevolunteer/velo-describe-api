@@ -146,6 +146,37 @@ in the repo records them except this file.
   1974; 1498 covers 1049/3 (triple v4 from 1973); 4081 Rally 1st gen 1974.
 - Skipped: 3320/A (covered by 1508 3320 Sport 1971-75); Rally (page missing).
 
+## Campagnolo Catalog 17a, US English edition — 1975 (Campy1975_catalog17a.pdf, 58 pp)
+
+- Black-and-white US-market condensation of Catalogue 17 (54 printed pages,
+  PDF page = printed + 4; no text layer). "Sole Technical Advisor" page runs
+  1974 Worlds to 1977 Worlds; copyright 1975. Group pages (SR road 4000/F,
+  NR road 1032/F, SR track 4100, Record track 1033, Gran Sport 2240) then
+  exploded parts pages with abbreviations R/NR/SR/RL/NGS/V/VO/S/SL/NT.
+  Contains the Rally 3450 parts page missing from the Cat 17 scan.
+- Still current in 1975, contrary to earlier conclusions: Velox 2250 and
+  Gran Turismo 2270 (pictured p 18), Velox levers 1013/1A (V) and 1014/1A
+  (V, NGS), and the Nuovo Tipo solid-spindle hubs 1250/1252 (p 25). Also
+  1036 and 1036/2 solid-spindle Record track hubs, and "six-sprocket hubs
+  also available" with the 1006/8 skewer.
+- Added: 7004 "4104, Super Record Pista (Low Flange, Ti Spindle)" 1975-1980;
+  7005 "4061/1, Super Record (short reach)" 1975-1982; 7006 "764, Record
+  Pista Sprocket (1" x 3/16" chain)" 1975-1980. source_id
+  MANUAL-CAT17A-1975-*. End years mirror sibling rows.
+- Years (all year_to → 1975): 3229, 3231 Nuovo Tipo solid axle (reverses
+  the Cat 17 change to 1973, note appended); 4167 Velox, 4120 Gran Turismo
+  (notes appended), 6997 Velox levers; 4162 2170 Valentino Extra; 3275 4011,
+  3276 4014, 3272 4101 SR hubs; 3270 1036, 3271 1036/2; 2963 1039 headset;
+  3711 1038, 3715 1038/a pedals; 5753 1045, 5748 1044/a, 5754 1045/a seat
+  pins; 5996 1013/1, 5989 1013/5-6, 5995 1014/1, 5979 1012/3 controls;
+  6380 763 sprocket.
+- Confirmed: SR road group, 4081 Rally 1st gen to 1975 / 4080 1.1 gen from
+  1975, 576 2040/1 short reach 1970-78, 230 4062 from 1975, 5760 4051 fluted
+  1975, 2297 1052/1, 1508 3320 Sport to 1975, 1509 1049/A, 1507 4151.
+- Skipped: set numbers 3330, 1048, 1050, 4030, 4130 (crank + BB bundles);
+  2000/1, 2001/1 (covered by 2040/1 rows). Sport Extra 6996 absent, left at
+  1973.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
