@@ -768,6 +768,37 @@ in the repo records them except this file.
   not rows; accessories (bottle 1120007, spoke guard, mudguard,
   reflectors) have no category.
 
+## Campagnolo range brochures, GB edition — June 1990 and September 1990 "Anaheim 1990" (Campy1990_Groups/, 12 + 14 thumbnails)
+
+- Two overview brochures, one page per group with photo, paragraph and an
+  options table (standard / on request). No part numbers, so a year and
+  options record only. Read as two bound PDFs (groups-6-90, groups-9-90).
+- June: Xenon, Athena, Chorus, Croce d'Aune, Record, Olympus, Centaur,
+  Euclid, Tandem Road (Croce d'Aune and Xenon variants), MTB Tandem
+  (Centaur and Olympus variants), lubricants and tools. September adds
+  Record Pista, Record Keirin and Themis (new touring group), drops the
+  Xenon and Olympus tandem variants.
+- First appearances: Tandem Road and MTB Tandem groups June 1990; Themis
+  September 1990. Chorus rear "preset for 8 speed" by September. Century
+  (Record) and graphite (Athena, Chorus, Croce, Centaur, Euclid) finishes
+  all current 1990, supporting the 1990-92 estimates set earlier today.
+- No inserts. Years: 17 rows year_to -> 1990 (223 Croce levers, 5739/5755
+  A0R7 posts, 3249 Chorus 722/101 hubs, 1489/1490 Croce cranks, 7018-7024
+  Keirin/Pista/Triple Bearing, 3242/3243/23/1485 C-Record Pista); 3718
+  Themis pedals year_from 1989 -> 1990.
+- Notes ("1990 range brochures"): 3265 Record cassette hub, 1354 Rohloff
+  chain, 4128 Olympus, 4115 Euclid, 3227 tandem hub composition, 4154
+  Themis composition, 3718; short "1990:" notes on 4108 Chorus.
+- Truncation incident: four notes overflowed varchar(255) and two (5971,
+  7029) lost their guard text, so the file was not idempotent on re-run.
+  Repaired in groups-1990-fix.sql by rebuilding from the pre-note text;
+  the main file now carries LENGTH(description) < 120 guards. The same
+  check found two older truncations (3261 HiLo, 7002 1207/1208) and
+  closed their sentences. Rule: always add a LENGTH guard on CONCAT notes.
+- Left: no Themis-specific rows beyond 4154/3718 (parts are Xenon and
+  Olympus); no tandem lever or 40-h hub rows beyond 3227; 4098 A010 not
+  extended (4133 R010 covers 1990-91); 7026 D056 not listed, left at 1988.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
