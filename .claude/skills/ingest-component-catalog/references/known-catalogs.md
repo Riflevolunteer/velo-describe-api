@@ -711,6 +711,38 @@ in the repo records them except this file.
 - Left: 1183 "(7sp, Xenon?)" title; 2074 freewheel core is a sub-part
   row kept as is.
 
+## Campagnolo section C placeholder years and titles — 2026-09-28 (user request, all categories)
+
+- The section C items left by the seven dedupe reports, applied in one
+  idempotent file (campy-section-c-years.sql, 49 statements, 66 rows,
+  run by me since nothing is deleted). Only 1231 chainring guard keeps
+  NULL years (no basis for a date).
+- Catalogue-backed: 41/42 4131, 3272 4101, 3717 4121 start 1974 (Super
+  Record launch); 1473 Bianchi 0304 to 1985 (sibling 1472); 4973 retitled
+  "060.102, Record Strada" (Cat. n. 18 bis); 5739 A0R7-S 1986-89 and
+  group Record to match 5755; 1354 Record chain to 1993.
+- Estimates (est), model history not catalogue evidence: 990 century
+  finish 2280/4089 1987-90; graphite/Century finishes 2289, 4090, 224,
+  1500 1990-91, 222, 557, 2953, 3239 1990-92 or 1991-92; 4082 Rally with
+  NR parallelogram 1974-82; 2277 3600/NT wing logo 1980-85; no-flute SR
+  arms 1510/1511/1512/1514 1985-87; 37 Triple Bearing BB 1997; 3258
+  disc hub 1985-90; 3696 PD-02RE 1991-94; 3707 orthopedic 1970-85; 5976
+  Chorus graphite levers 1990-92; 6001 SR Retro-Friction 1984-87;
+  Ergopower 6338 1992-94, 6339 Avanti 1995-98, 6340/6342 1998-2000, 6341
+  from 1992, 6348 1996-97, 6349 1992-93; 1237 759 skip-tooth 1950-60;
+  rims Greek-letter 4948/4950/4958/4961 1988-92, 4969 from 1988, 4962
+  from 1985, Olympic-city 4946/4952/4953/4954/4967 1990-92, 4944/4947/
+  4968 and Shamal wheels 6961/6962 1992-96, 6963 Vento 1994-98.
+- Titles fixed: 1494 "Mirage" (was doubled), 2963 "1039, Record Strada"
+  (stray <C>), 2966 "1040, Record Pista", 3689 "Record, 50th
+  Anniversary", 5748 Superleggero spelling, 5755/5739 A0R7 cylindrical
+  180/130 mm, 5737/5738 A0R2-S / A0R2 C-Record aero, 5741 "Q0R8, Centaur
+  (325 mm, frame QR)", 6955 "Bora (1st generation, 26 in)"; 33 Record
+  Pista BB given a description.
+- Generator: 'campagnolo omicron' -> 4962 has no year range, so the
+  1980 -> 1985 start change does not affect it. The 1049/A no-flute rows
+  are not referenced.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
