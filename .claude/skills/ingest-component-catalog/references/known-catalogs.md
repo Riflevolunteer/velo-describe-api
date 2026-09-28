@@ -222,9 +222,14 @@ in the repo records them except this file.
   Bianchi-labelled 0304 untouched; toe clips have no category.
 - Deleted (user decision, 2026-09-28): 2296 "Record 1052/1" (bare 1972
   example, covered by 2298/2297) and 2304 "1052/1, Record (2nd version
-  variation)" (no stated feature, covered by 2305). Kept 2303 (no slot) and
-  2305 (slotted cable stop) as real variants. Original source_ids
+  variation)" (no stated feature, covered by 2305). Original source_ids
   7872E656-… and 35CEFF78-…; delete again if a crawl reinserts them.
+- Then collapsed the rest of the 1052/1 family to two rows (user decision,
+  2026-09-28), since no catalog splits it into versions: deleted 2298
+  "later body with cable stop" (155D51C4-…, overlapped 2297) and 2303 "no
+  slot in cable stop" (C10C6511-…); retitled 2305 → "1052/1, Record (first
+  body, 1960-1969)" and 2297 → "1052/1, Record (second body, 1970-1977)".
+  2297 keeps the bike-spec links and the generator's pre-1978 override.
 
 ## Cross-catalog notes
 

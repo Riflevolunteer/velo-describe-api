@@ -380,7 +380,7 @@ const COMPONENT_OVERRIDES = {
     // The 1052/1 for 70s catalogs (Raleigh/Motobecane); the 0104007 three-hole
     // band for 80s ones (Bianchi). 1978-81 had the 1052/NT, not yet needed.
     'campagnolo nuovo record': [
-      { to: 1977, id: 2297 }, // Campagnolo Record 1052/1 (1973-1977)
+      { to: 1977, id: 2297 }, // Campagnolo 1052/1, Record (second body, 1970-1977)
       { from: 1978, to: 1981, id: 2299 }, // Campagnolo Record 1052/NT (1978 - 1982, 3-hole narrow band)
       { from: 1982, id: 2300 }, // Campagnolo Nuovo Record 0104007 (1982 - 1987, 3-hole standard band)
     ],
