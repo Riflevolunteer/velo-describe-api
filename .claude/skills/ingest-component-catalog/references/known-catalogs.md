@@ -943,6 +943,40 @@ in the repo records them except this file.
   and Avanti rows untouched; tools none; Icarus SP-IC 5747 kept to 1994
   since the same post serves Record O.R.
 
+## Campagnolo 1995 range catalogue, GB (Campyjpg1995/, 20 double-page scans + thumbnails)
+
+- Prose group pages plus a Technical Specifications table; NO part codes.
+  Groups: Record, Chorus, Athena, Veloce, Mirage (new), Avanti (new),
+  Record O.R. Stratos gone after one year. New: low-profile cranks
+  across the range, Record shorter-axle three-bearing cartridge BB,
+  carbon Ergopower extended to Chorus, triple options on Chorus, Athena,
+  Veloce and Mirage, Athena aero seat pillar, revamped head sets, Exa-
+  Drive on every group; rims Delta (clincher) and Arkos (28 in off-road)
+  new, Sigma 20 gone; wheels Zonda new (26/28 clincher), Ghibli rear now
+  7-sp cassette.
+- Added (18, uncoded, descriptive titles, source_id MANUAL-RANGE95-1995-
+  <GROUP>-<code>): Mirage rear, front, cartridge BB, Ergopower, hubs, QR
+  pedals (1995-96); Avanti crank, cartridge BB, hubs, QR pedals, seat
+  pillar (1995-98); Chorus triple crank, Veloce triple crank, Athena aero
+  pillar, Chorus carbon Ergopower (1995-96); Delta and Arkos rims
+  (1995-96); Zonda 1st generation wheelset (1995-98).
+- Re-dated: 1494 "Mirage" crank (velobase placeholder 1990) -> "Mirage
+  crankset (1995)" 1995-96.
+- Years -> 1995 (confirmed current): 36 rows across Chorus, Athena,
+  Veloce, Record dual-pivot 7076/7077, Ergopower, headsets, posts, pedals,
+  the 1992 ATB rims, Dedra, ATEK.
+- Notes ("1995 range"): 15 rows incl. 6956 Ghibli 7-sp, 2956 head set
+  revamp, 7070 Stratos dropped, 7032 Sigma 20 gone. LENGTH guarded, 245.
+- Incident: the generator's own length assert tripped on one description
+  after 14 INSERTs had already been printed, so the first load ran only
+  those inserts and no updates. Fixed the text, regenerated, reloaded;
+  the guarded inserts were no-ops. Rule: run the length check before
+  printing any SQL, not inline.
+- Left: Mirage/Avanti brake levers and headsets (not separately described
+  or specced); Record O.R. rows already 1992-95; Chorus/Athena/Veloce
+  triple rear and front derailleurs carried as notes on the triple crank
+  rows rather than as separate rows.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
