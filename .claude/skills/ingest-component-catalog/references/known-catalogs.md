@@ -231,6 +231,51 @@ in the repo records them except this file.
   body, 1960-1969)" and 2297 → "1052/1, Record (second body, 1970-1977)".
   2297 keeps the bike-spec links and the generator's pre-1978 override.
 
+## Campagnolo Catalogue n. 18, English edition — c. 1985 (Campy1985_catalog18.pdf, 70 pp)
+
+- Vicenza (Via della Chimica) printing; no year printed. Dated 1985 from the
+  filename, the "replaced by the Victory range" note and the 1013/5N-6N
+  levers (DB from 1984). PDF page = printed page + 1. Has a usable OCR
+  layer (pdftotext -layout) for the parts lists; picture pages read
+  visually for the "No more available" asterisks.
+- Groups: SR road 4000/F (on 1046/A steel BB and 1037/A pedals, Ti pedals
+  on request), Record 1032/F, Gran Sport 2240/5F (marked no more
+  available, replaced by Victory), SR track 4100, Record track 1033,
+  Touring 279 (5011/06 Rally Touring, 0306/C, 5031/00), 980 Equipaggiamento
+  281. Seven-digit numbers now primary: 0102018, 0104006-0104012, 5011/06,
+  6011/00. Valentino Extra 2170 is back with a full parts page.
+- Dropped since 1982: HiLo hub, Ti bottom brackets 4031/4131 (BB page lists
+  only 1046, 1046/A, 1046/3, 1046/4, 3331, 5031/00), 1014/1 pump-clip lever,
+  1049/3. Asterisked as no more available: 0304, 0305, 0306 cranks, 3700
+  pedals.
+- Added: 7012 "0104011, Super Record (braze-on)" front 1985-87; 7013
+  "1046/4, Record Cyclocross" BB 1985-87. source_id MANUAL-CAT18-1985-*.
+- Corrected: 7010/7011 BMX hubs swapped — 821 is large flange, 822 small
+  flange (1982 photo and this catalogue agree; my 1982 text reading was
+  transposed).
+- Notes appended: 2301 Nuovo Valentino front = 0104008; 2313 1052/SR =
+  0104010; 7007 1022/00 = 0104009; 7002 levers sold as 1207/N 1208/N;
+  4162 reappears after the 1982 US edition; 1472, 1474, 1475, 3688 marked
+  discontinued.
+- Years (all year_to → 1985, 47 rows): 4162 (from 1975), 4083; 2276, 2316,
+  2301; levers 5988, 5979, 5996, 7001, 5991, 5993, 5994, 5965, 7002; hubs
+  3259, 3260, 3270, 3271, 3230, 3233, 7010, 7011; cranks 1505, 1507, 1495,
+  7003, 1472, 1474, 1475, 1480; BBs 40, 30, 20; headsets 2963, 2966, 2951,
+  2968, 2967; pedals 3708, 3709, 3711, 3715, 3716, 3717, 3688, 3692; posts
+  5749, 5734, 5761; brakes 7005, 553, 554; freewheel 2072; sprockets 6380
+  (from 1975), 6999.
+- Confirmed: 4001 2nd gen rows, NR v5 from 1985, 3500 and 980 to 1985,
+  0104007 to 1985, 980 front to 1986, 6000 levers 1984-87, 4061 v2, 2040
+  post-CPSC, 1049/1049A rows, 7008, 7009.
+- Left: 4031/4131 and HiLo at 1982 (absent here); 5995 1014/1 at 1982.
+- Retitled (user request, 2026-09-28) so the clip-on / braze-on pairs read
+  as pairs: 2313 → "1052/SR (0104010), Super Record (clip-on)"; 2300 →
+  "0104007, Nuovo Record (clip-on, 3-hole standard band)"; 7007 →
+  "1022/00 (0104009), Record (braze-on)"; 7012 unchanged.
+- HiLo (user decision, 2026-09-28): deleted 3262 (velobase "unused body
+  shell" repeat, D5258F61-…); retitled 3261 → "HiLo, Record (high-low
+  flange rear)" with the 1982 catalogue description, years 1980-82.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,

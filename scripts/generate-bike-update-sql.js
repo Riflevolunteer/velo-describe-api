@@ -382,7 +382,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo nuovo record': [
       { to: 1977, id: 2297 }, // Campagnolo 1052/1, Record (second body, 1970-1977)
       { from: 1978, to: 1981, id: 2299 }, // Campagnolo Record 1052/NT (1978 - 1982, 3-hole narrow band)
-      { from: 1982, id: 2300 }, // Campagnolo Nuovo Record 0104007 (1982 - 1987, 3-hole standard band)
+      { from: 1982, id: 2300 }, // Campagnolo 0104007, Nuovo Record (clip-on, 3-hole standard band)
     ],
     'new huret jubilee': 2395, // Huret Jubilee (4 holes in outer cage plate)
     // 1974 Motobecane (values carry shifter asides after a dash/comma).
@@ -393,7 +393,7 @@ const COMPONENT_OVERRIDES = {
     'huret challenger stem shifter': 2388, // Huret Challenger (hinged clamping band)
     // 1981 Kalkhoff. Shimano rows are titled "Shimano FD-7200, Dura-Ace EX"
     // (part number between brand and group), so substring never fires.
-    'campagnolo super record': 2313, // Campagnolo 1052/SR, Super Record (1979-1987)
+    'campagnolo super record': 2313, // Campagnolo 1052/SR (0104010), Super Record (clip-on)
     'dura ace ex': 2518, // Shimano FD-7200, Dura-Ace EX (clamp)
     'shimano 600 ax': 2476, // Shimano FD-6300, 600 AX (clamp)
     // 1983 Bianchi: the 80s (Nuovo) Gran Sport is the 3600/NT. No DB row for
