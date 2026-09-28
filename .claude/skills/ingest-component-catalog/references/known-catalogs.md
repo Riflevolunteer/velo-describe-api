@@ -640,6 +640,37 @@ in the repo records them except this file.
 - Day's five dedupes: derailleurs 142->127, brakes/levers 70->57,
   cranks/BBs 87->80, hubs/headsets 89->79, pedals/posts 69->60 (54 rows).
 
+## Campagnolo shifter, Ergopower and chainring dedupe — 2026-09-28 (user decision, sections A and B)
+
+- Analysed 78 rows (15 chainrings, 50 shifters, 13 shifting brake
+  levers). No deleted row carried a bike_spec link or a generator
+  override (5970 and 5976 stay pinned). SQL kept as
+  campy-shifter-ring-dedupe.sql; the user ran it. 64 rows remain.
+- Deleted (source_id prefix): shifters 5975 Q222 repeat (603373EE), 5991
+  bare 1014 Record (2C598429), 5988 1012/1013 bar-end umbrella
+  (B73DB228), 6005 Valentino Extra thumb-nut (B284DB07), 5984 Gran
+  Turismo unnumbered (BC04F5BF), 5967 Athena = A281 (A1C92234), 5968
+  Syncro II Athena = A221 (A640349D), 5997 Record 8-speed = SL-01RE
+  (D6A977B0); Ergopower 6347 Carbon BB-System Record 9-sp repeat
+  (FC42C347); chainrings 1236 753 151 BCD (8CC001FD), 1239 760 151 BCD
+  (8057CC96), 1243 unnumbered Super Record ring (894D350F), 1232 and
+  1242 chainring guards PATENT stampings (F2F61D9C, 766A3B56).
+- Merged/retitled: 6343 -> "Record 9-speed Ergopower (Carbon BB-System)"
+  1998-2000; 1235 -> "753, Record" and 1238 -> "760, Record Pista" with
+  151/144 BCD notes; 1231 -> "chainring guard (BREV or PATENT CAMPAGNOLO
+  stamping)"; 5969 C-Record Friction to 1990 (Athena years); notes on
+  5979 (1012/2 pattern), 6004 (thumb-nut), 1244 (outer 87 g).
+- Left (section C, not applied): 5976 Chorus graphite and 6001 SR
+  Retro-Friction dated 1980 (linked; c. 1990-92 and 1984-87); all
+  unnumbered Ergopower rows dated 1990 (6338, 6339 NULL, 6340, 6341,
+  6342, 6348, 6349); 1237 759 skip-tooth NULL; 5987 title lacks group.
+  Section D kept: 1013/1 eras, both 1013/1A rows, 1014 versions, 1015s,
+  760/A gens, C-Record lever family, 7027 Chorus levers, EC/SL series.
+- Day's six dedupes: derailleurs 142->127, brakes/levers 70->57,
+  cranks/BBs 87->80, hubs/headsets 89->79, pedals/posts 69->60,
+  shifters/rings 78->64 (68 rows). Remaining Campagnolo categories not
+  analysed: rims, wheels, freewheels/cassettes, chains, stems/bars.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
