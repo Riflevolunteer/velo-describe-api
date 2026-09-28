@@ -301,7 +301,7 @@ Link counts are as of the last load; regenerate to confirm.
   the candidate set, not from this catalog's generator edits (verified
   by diffing pre- and post-edit generator output). Loaded rows unaffected.
 
-## 1986 Cinelli — `1986_cinelli_spec.csv` (7 bikes, 64 specs, 32 linked)
+## 1986 Cinelli — `1986_cinelli_spec.csv` (7 bikes, 82 specs, 52 linked)
 
 - Source is Ten Speed Drive Imports' four-page US brochure
   (Cinelli_10_Speed_Drive.pdf), no printed date. Dated 1986 from "38
@@ -312,10 +312,23 @@ Link counts are as of the last load; regenerate to confirm.
   note), and the SLX Super Corsa frameset as a Frameset-type row with
   sizes, both paints and the 5.5 lb weight; geometry in Extras. New bike
   brand created on load.
-- Column layout: 840 lists parts individually (Crankset, Seat Post,
-  Headset, Derailleurs, Pedals); the others give a groupset in
-  "Groupset / Components" (not a linkable label). Toe Clips, Spokes and
-  Cable & Tape kept as plain text.
+- Column layout (revised 2026-09-28 at user request): the "Groupset /
+  Components" column was removed and its three values (Super Record,
+  Victory, Record Corsa) fanned out into Front Derailleur, Rear
+  Derailleur, Crankset, Seat Post, Brakes, Brake Levers and Pedals; the
+  840's combined Derailleurs cell split likewise. The three loaded
+  groupset rows were converted in place to Rear Derailleur rows
+  (cinelli-groupset-convert.sql) so nothing was deleted; the label row
+  stays for the 1983/84 Bianchi. Toe Clips, Spokes and Cable & Tape kept
+  as plain text. Headset not fanned out (840 only).
+- Fan-out picks (1986): Super Record rear -> 4001 2nd gen ver. 2 4152,
+  brakes -> 4061 v2 583 (both existing Kalkhoff overrides year-ranged at
+  1983/1984), levers -> 4062 post-83 231; Victory -> 2318 / 4168 / 0355
+  1516 / 5764 / 415/102 590 / 235 / 405/000 3720; Record Corsa (C-Record)
+  -> 2283 / 0102050 4096 / 1483 / A0R2 5738 / 0118065 212 / 305/501
+  3693; Record Corsa brakes explicit null (Delta not shipping in 1986,
+  groups delivered with SR brakes). New 'Brake Levers' override block and
+  'brake lever(s)' LABEL_TO_CATEGORY mapping added.
 - Era picks (1986): Super Record crank -> 1049/A 1509, headset -> 4041
   2968, SL pedals -> 4021 3716, seat post -> 4051/1 5761; Nuovo Record
   front 0104007 / rear v5 / hubs 1034 by matcher; Record hubs -> 1035

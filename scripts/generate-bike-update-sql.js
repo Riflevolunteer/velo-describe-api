@@ -155,6 +155,8 @@ const LABEL_TO_CATEGORY = {
   brakes: ['Brakes'],
   brakeset: ['Brakes'],
   brakesets: ['Brakes'],
+  'brake lever': ['Brake Levers'],
+  'brake levers': ['Brake Levers'],
   saddle: ['Saddles'],
   saddles: ['Saddles'],
   chain: ['Chains'],
@@ -434,6 +436,9 @@ const COMPONENT_OVERRIDES = {
     'suntour cyclone mkiii': 2629, // SunTour FD-3300 Cyclone (1984)
     'suntour superbe pro': [{ from: 1984, id: 2652 }], // FD2000 (1984-86); 1983 Bianchi stays unlinked as before
     'suntour ag tech': 2609, // SunTour FD-2800, AG Tech
+    // 1986 Cinelli groupset fan-out.
+    'campagnolo victory': 2318, // Victory (1984-86)
+    'campagnolo record corsa': 2283, // C-Record (1985-90)
   },
   'Rear Derailleurs': {
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
@@ -458,7 +463,7 @@ const COMPONENT_OVERRIDES = {
     'sun tour vgt luxe stem power shifter': 4704,
     'sun tour vgt luxe down tube ratchet shifters': 4704,
     // 1981 Kalkhoff. "600 AX" otherwise substring-matches plain "Shimano 600".
-    'campagnolo super record': 4149, // Campagnolo 4001, Super Record, PAT. 80
+    'campagnolo super record': [{ to: 1983, id: 4149 }, { from: 1984, id: 4152 }], // PAT. 80 for 1981 Kalkhoff; 4001 2nd gen ver. 2 (1984-87) for 1986 Cinelli
     'dura ace ex': 4509, // Shimano RD-7200, Dura-Ace EX
     'shimano 600 ax': 4465, // Shimano RD-6300, 600 AX
     // 1983 Bianchi (3500 Nuovo Gran Sport); 1973 Bianchi Special -> the
@@ -496,6 +501,9 @@ const COMPONENT_OVERRIDES = {
     'suntour cyclone mkiii': 4739, // SunTour Cyclone (1984 row)
     'suntour superbe pro': [{ to: 1983, id: 4766 }, { from: 1984, id: 4768 }], // 1979-83 row keeps the 1983 Bianchi pick; friction row 1983-86 for 1985 Raleigh
     'suntour arx': 4727, // SunTour aRX (short cage)
+    // 1986 Cinelli groupset fan-out.
+    'campagnolo victory': 4168, // G010-SM, Victory (1984-86)
+    'campagnolo record corsa': 4096, // 0102050, C-Record first generation (1985-86)
   },
   Hubs: {
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
@@ -567,7 +575,7 @@ const COMPONENT_OVERRIDES = {
     'universal mod 68 side pull racing': 1082, // Universal Super 68
     'mafac racer center pull (1 front 2 rear)': 838, // MAFAC Racer (lettered MAFAC RACER)
     // 1981 Kalkhoff.
-    'campagnolo super record': 582, // Campagnolo 4061, Super Record (v1)
+    'campagnolo super record': [{ to: 1982, id: 582 }, { from: 1983, id: 583 }], // 4061 v1 to 1982 (Kalkhoff); v2 1983-87 (1986 Cinelli)
     'dura ace ex': 997, // Shimano BR-7200, Dura-Ace EX
     'shimano 600 ax': 965, // Shimano BR-6300, 600 AX
     'weinmann 405': 1117, // Weinmann AG 405
@@ -605,6 +613,9 @@ const COMPONENT_OVERRIDES = {
     'dia compe 960 161 gum hoods alloy cantilever': 690, // Dia-Compe Gran Compe GC960
     'shimano deore xt cantilever': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)
     'shimano deore xt alloy cantilever shimano z levers with gum hoods': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)
+    // 1986 Cinelli groupset fan-out.
+    'campagnolo victory': 590, // Victory 415/102
+    'campagnolo record corsa': null, // Delta not yet shipping in 1986; Record Corsa groups were delivered with Super Record brakes, so no single right row
   },
   Headsets: {
     // 1974 Motobecane.
@@ -684,6 +695,9 @@ const COMPONENT_OVERRIDES = {
     'shimano deore lx 46 36 26t': 1807, // Shimano FC-M550, Deore LX
     // 1985 Raleigh (Sheldon Brown scan).
     'ofmega "mistral" 52 42 170mm': 1699, // Ofmega Mistral
+    // 1986 Cinelli groupset fan-out.
+    'campagnolo victory': 1516, // 0355, Victory double; matcher picked the triple
+    'campagnolo record corsa': 1483, // C-Record 306/101 (1985-86)
   },
   Saddles: {
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
@@ -762,6 +776,12 @@ const COMPONENT_OVERRIDES = {
     'shimano ultegra sti': 6358, // Shimano ST-6400, 600EX Ultegra
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC
   },
+  'Brake Levers': {
+    // 1986 Cinelli groupset fan-out.
+    'campagnolo super record': 231, // 4062 post-83 shield-logo hoods (1983-87)
+    'campagnolo victory': 235, // Victory levers (1984-87)
+    'campagnolo record corsa': 212, // 0118065, C-Record first generation (1985-86)
+  },
   Pedals: {
     // 1973 Raleigh.
     'campagnolo strada': 3708, // Campagnolo 1037, Record Strada
@@ -794,6 +814,8 @@ const COMPONENT_OVERRIDES = {
     'suntour road vx quill': 4014, // SunTour PL-1500, Vx
     // 1986 Cinelli (Ten Speed Drive Imports).
     'campagnolo sl': 3716, // 4021 Super Record Strada (Superleggeri)
+    // 1986 Cinelli groupset fan-out.
+    'campagnolo record corsa': 3693, // 305/501, C-Record
   },
   'Seat Posts': {
     // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
@@ -815,6 +837,9 @@ const COMPONENT_OVERRIDES = {
     'sugino micro adjust model sp ck': 5928, // catalog prints SP-CK for the Sugino SP-KC
     'sugino micro adjust sp ck': 5928, // catalog prints SP-CK for the Sugino SP-KC
     // 1986 Cinelli (Ten Speed Drive Imports).
+    // 1986 Cinelli groupset fan-out.
+    'campagnolo victory': 5764, // Victory / Triomphe
+    'campagnolo record corsa': 5738, // A0R2, C-Record aero
   },
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
