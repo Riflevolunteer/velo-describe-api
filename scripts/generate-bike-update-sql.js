@@ -439,6 +439,12 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 2318, // Victory (1984-86)
     'campagnolo record corsa': 2283, // C-Record (1985-90)
+    // 1979 Peugeot (French catalogue).
+    'simplex slja 302': 2567, // Simplex LJ A302 (1978); SLJA is the Spidel-badged name
+    'simplex lja 302': 2567, // Simplex LJ A302
+    'simplex sx a 22': 2577, // Simplex SX A22 (1977-83)
+    'simplex sxa 22': 2577, // Simplex SX A22
+    'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
@@ -506,6 +512,12 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record corsa': 4096, // 0102050, C-Record first generation (1985-86)
     // 1975 Falcon.
     'campagnolo velox': 4167, // 2250 Velox (1971-75)
+    // 1979 Peugeot (French catalogue).
+    'simplex slj 5500 cp': 4651, // Simplex SLJ5500 (version 1) 1979-84
+    'simplex sx 410 t': 4621, // Simplex SX410 T (1977-85)
+    'simplex sx 410 tsp': 4621, // TSP variant not in DB; SX410 T is the same gear
+    'simplex 410 tsp': 4621, // as above (PK 60 wording)
+    'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
@@ -562,6 +574,14 @@ const COMPONENT_OVERRIDES = {
     // 1975 Falcon.
     'campagnolo quick release': [{ to: 1985, id: 3260 }], // 1035 Record high flange, matches the Hubs "campagnolo record" range
     'campagnolo single sided track': 3270, // 1036 Record Pista (high flange)
+    // 1979 Peugeot (French catalogue).
+    'spidel 700 small flange quick release': 3591, // Spidel/Maillard 700
+    'normandy quick release': 3389, // Normandy Luxe Competition (red label, low flange) 1970-80
+    'normandy dural small flange quick release': 3389, // Normandy Luxe Competition low flange
+    'normandy dural quick release': 3389, // Normandy Luxe Competition low flange
+    'maillard dural large flange quick release': 3391, // Maillard Normandy (high flange, oblong holes) 1960-80
+    'maillard large flange quick release': 3391, // Maillard Normandy high flange
+    'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
     // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
@@ -623,6 +643,14 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record corsa': null, // Delta not yet shipping in 1986; Record Corsa groups were delivered with Super Record brakes, so no single right row
     // 1975 Falcon.
     'campagnolo': [{ to: 1977, id: 573 }], // only Record 2040 pre-CPSC existed; 1975 Falcon Model 76
+    // 1979 Peugeot (French catalogue).
+    'side pull': null, // generic; matcher hit Phillips Side-Pull
+    'spidel competition centre pull': 1029, // Spidel (made by Mafac); the Mafac Competition rebadged
+    'weinmann 605 side pull': 1133, // Weinmann AG 605 (incised lettering, cap nut) 1978-80
+    'mafac competition simplified centre pull': 825, // MAFAC Competition (later version)
+    'mafac competition centre pull': 825, // MAFAC Competition (later version)
+    'mafac racer centre pull': 838, // MAFAC Racer (lettered MAFAC RACER) 1970-80
+    'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
     // 1974 Motobecane.
@@ -648,6 +676,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo chorus': 2956, // Campagnolo 704/101, Chorus
     'shimano ultegra': 3087, // Shimano HP-6400, 600 Ultegra
     'tange cd sealed': 3155, // Tange-Seiki Levin CD
+    // 1979 Peugeot (French catalogue).
+    'spidel s7 competition': 3123, // Stronglight S7 Super Competition; DB dates it 1981-83, catalogue shows it 1979
   },
   'Bottom Brackets': {
     // 1981 Kalkhoff. Bare substring hits the titanium 1st-gen row; the
@@ -709,6 +739,9 @@ const COMPONENT_OVERRIDES = {
     'campagnolo sport': 1476, // 3320 Gran Sport / Sport (1970-75)
     'campagnolo sport cotterless': 1476, // 3320 Gran Sport / Sport (1970-75)
     'campagnolo cotterless': [{ to: 1977, id: 1496 }], // 1049 Nuovo Record Strada v4 on the Nuovo Record Model 76
+    // 1979 Peugeot (French catalogue).
+    'stronglight 49 d anodised square taper double 42 x 52': 1895, // Stronglight 49D (Depose), as the 1975 Motobecane pick; DB has no 1970s 49D row
+    'stronglight 49 d dural triple 32 x 42 x 52': 1893, // Stronglight 49 Tri
   },
   Saddles: {
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
@@ -736,6 +769,8 @@ const COMPONENT_OVERRIDES = {
     'concor sc': 5547, // Selle San Marco Concor Supercorsa
     // 1975 Falcon.
     'mattress': null, // generic; matcher hit a Brooks mattress saddle
+    // 1979 Peugeot (French catalogue).
+    'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
     // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
@@ -761,6 +796,8 @@ const COMPONENT_OVERRIDES = {
     'cinelli mod 1 r': 6491, // Cinelli 1R (1/Record)
     'cinelli 1 a': 6489, // Cinelli 1A (winged "C" logo, 1978-82)
     'cinelli mod 1 a': 6489, // Cinelli 1A (winged "C" logo, 1978-82)
+    // 1979 Peugeot (French catalogue).
+    'atax forged dural anodised hidden expander': 6447, // ATAX (1A style)
   },
   Shifters: {
     // 1987 Bianchi. The catalog's "levers" are the down-tube shifters.
@@ -832,6 +869,9 @@ const COMPONENT_OVERRIDES = {
     // 1975 Falcon.
     'campagnolo': [{ to: 1985, id: 3708 }], // 1037 Record Strada, the only Campagnolo road pedal of the period
     'campagnolo track pattern': 3711, // 1038 Record Pista (silver finish, 1971-85)
+    // 1979 Peugeot (French catalogue).
+    'lyotard dural course with toe clips and straps': 3815, // Lyotard 460D (1970-80), the standard French dural quill
+    'lyotard with toe clips and straps': 3815, // Lyotard 460D
   },
   'Seat Posts': {
     // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
@@ -891,6 +931,15 @@ const COMPONENT_OVERRIDES = {
     'regina bx oro': 2195, // Regina Oro BX (6 speed)
     'regina cx 6 speed': 2169, // Regina CX/CX-S (6 speed)
     'regina oro 6 speed': 2194, // Regina Oro (6 speed)
+    // 1979 Peugeot (French catalogue).
+    'spidel 700 6 speed 13 14 15 17 19 21': 2123, // Maillard 700 (6 speed); Spidel-badged
+    'maillard 6 speed 13 14 15 17 19 21': 2123, // Maillard 700 (6 speed), the 13-21 racing block
+    'maillard 14 15 17 19 21 24': 2110, // Maillard brand row; no model named
+    'maillard 14 17 19 21 24': 2110, // Maillard brand row
+    'maillard 14 16 18 21 24': 2110, // Maillard brand row
+    'maillard 14 17 20 24 28': 2110, // Maillard brand row
+    'maillard 14 16 20 24 28': 2110, // Maillard brand row
+    'maillard 14 16 18 20 23': 2110, // Maillard brand row
   },
   Tyres: {
     'clement criterium silk tubular': 6748, // Clement Criterium Seta (seta = silk)
@@ -926,6 +975,10 @@ const COMPONENT_OVERRIDES = {
     // 1975 Falcon.
     'sprint': null, // generic term for a tubular rim; matcher hit Fiamme Sprint
     'lightweight sprint': null, // generic
+    // 1979 Peugeot (French catalogue).
+    '700c': null, // wheel size, not a rim; hit Diamant 700C
+    '350': null, // wheel size; hit Araya TX-350
+    'super champion 700c dural': 5176, // Super Champion Competition (1970-80), the standard tubular
   },
 };
 
@@ -1148,6 +1201,14 @@ async function main() {
     const bikeIdSelect =
       `(SELECT bike_id FROM bike WHERE brand_id = ${brandIdSelect} AND title = ${bikeTitle} AND year_from = ${yearFrom})`;
     const labelIdSelect = lookupSubquery('bike_spec_label', 'label_id', spec.label);
+    // bike_spec.value_text is varchar(255). MySQL truncates a longer value on
+    // INSERT, but the NOT EXISTS check compares the untruncated string, so the
+    // row is re-inserted on every run (1979 Peugeot PY 10 CP Extras). Truncate
+    // here so the key the check uses is the value actually stored.
+    if (spec.valueText.length > 255) {
+      console.warn(`value_text over 255 chars, truncated: ${spec.bikeTitle} / ${spec.label}`);
+      spec.valueText = spec.valueText.slice(0, 255);
+    }
     const valueText = sqlString(spec.valueText);
     const rawLabel = sqlString(spec.rawLabel);
 
