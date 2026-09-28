@@ -546,6 +546,27 @@ in the repo records them except this file.
   (NR v1-v5, Rally gens, cage lengths, finish variants, 0104007 bodies,
   M022-M024, RD-xxRE series) kept.
 
+## Campagnolo brake and brake lever dedupe — 2026-09-28 (user decision, sections A and B)
+
+- Analysed 70 rows (29 levers, 41 brakes). Only 588 carried a bike_spec
+  link (moved to 587); no generator override referenced a deleted id.
+  SQL kept as campy-brake-dedupe.sql; the user ran it. 57 rows remain.
+- Deleted (source_id prefix): levers 217 (FE5E10FA) and 218 (C96C4AA3)
+  "Centaur, Centaur", 221 Chorus (1993) (15A43395), 208 Corsa Record
+  (5AEDA2CC), 213 Corsa Record pantographed (D34D675B), 230 4062 "long
+  reach?" (7C7CBB54); brakes 586 Veloce Monoplaner (D2E450DB), 588 and
+  589 Veloce (8A12DE4B, C9C7626B), 584 Triomphe unnumbered (FE99461C),
+  563 Centaur unnumbered (28D66D99), 568 Euclid unnumbered (2CFFC1DA),
+  571 Mirage Monoplanar (9631D3AB).
+- Merged/retitled: 219 Q500 Centaur lever to 1993; 220 Chorus lever to
+  1993; 587 -> "BR-02VL, Veloce Monoplaner"; 212 -> "0118065, C-Record
+  (first generation)" (Corsa Record and pantographed examples noted);
+  232 4062 pre-'83 year_from 1970 -> 1974; 570 Mirage noted Monoplaner.
+- Left (section C, not applied): 222 Chorus graphite, 224 Euclid later
+  version, 557 Athena Monoplaner graphite still dated from 1980; 226/228
+  2030 overlap. Section D kept: 2040/2040-1 CPSC versions, 4061 v1/v2/
+  4061-1, Gran Sport first/second gen, Delta family, numbered 1990s rows.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
