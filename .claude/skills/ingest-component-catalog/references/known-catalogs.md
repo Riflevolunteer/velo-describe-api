@@ -613,6 +613,33 @@ in the repo records them except this file.
 - Running total for the day's four dedupes: derailleurs 142 -> 127,
   brakes/levers 70 -> 57, cranks/BBs 87 -> 80, hubs/headsets 89 -> 79.
 
+## Campagnolo pedal and seat post dedupe — 2026-09-28 (user decision, sections A and B)
+
+- Analysed 69 rows (35 pedals, 34 posts). No deleted row carried a
+  bike_spec link or a generator override. SQL kept as
+  campy-pedal-post-dedupe.sql; the user ran it. 60 rows remain (9
+  deletions, one more than the report's count of 8).
+- Deleted (source_id prefix): pedals 3704 Euclid 1st Gen (6454032B),
+  3699 Centaur unnumbered (309CE850), 3713 1038/1 alloy con denti
+  1958-59 (092485E7); posts 5757 SP-10RE circa 97 (F81DDBFE), 5760 4051
+  fluted two-bolt 1975 (D154629D), 5762/5763 4051-1 polished and
+  semi-polished uppers (C9793725, 4CDE9E76), 7025 C0R2 Athena
+  (MANUAL-ATH88, my own insert), 5744 Croce d'Aune long version
+  (27443F7F).
+- Merged/retitled: 3714 1038/1 con denti 1958-67; 5759 -> "4051, Super
+  Record (two-bolt, fluted)" 1974-80; 5761 finish note; 5742 -> "C0R2,
+  Chorus (styled; fitted to Athena and Croce d' Aune)" 1987-90, the one
+  row for the shared Chorus post (DPC88 lists it in all three groups).
+- Left (section C, not applied): 3696 PD-02RE dated 1980-90 (1991-94);
+  3716/3717 SR pedals start 1970; 3707 orthopedic no years; 3689 title
+  spacing; 5755/5739 titles carry "1986-1989" and sit in different
+  groups; 5737/5738 lengths 130/210 vs catalogue 180/130; 5741 wants
+  Q0R8 in the title; 5748 "Superlegerro". Section D kept: 1037/1037-a,
+  1038 family, 1044 versions, 1045, Euclid bolt variants, both Centaur
+  posts, PD-12CH/PD-22CH.
+- Day's five dedupes: derailleurs 142->127, brakes/levers 70->57,
+  cranks/BBs 87->80, hubs/headsets 89->79, pedals/posts 69->60 (54 rows).
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
