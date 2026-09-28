@@ -504,6 +504,8 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 4168, // G010-SM, Victory (1984-86)
     'campagnolo record corsa': 4096, // 0102050, C-Record first generation (1985-86)
+    // 1975 Falcon.
+    'campagnolo velox': 4167, // 2250 Velox (1971-75)
   },
   Hubs: {
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
@@ -557,6 +559,9 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli (Ten Speed Drive Imports).
     'campagnolo record sf': 3241, // 322/101 C-Record small flange, fitted with the 1986 Record Corsa group
     'campagnolo victory sf': 3281, // Victory 422 (low flange)
+    // 1975 Falcon.
+    'campagnolo quick release': [{ to: 1985, id: 3260 }], // 1035 Record high flange, matches the Hubs "campagnolo record" range
+    'campagnolo single sided track': 3270, // 1036 Record Pista (high flange)
   },
   Brakes: {
     // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
@@ -616,6 +621,8 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 590, // Victory 415/102
     'campagnolo record corsa': null, // Delta not yet shipping in 1986; Record Corsa groups were delivered with Super Record brakes, so no single right row
+    // 1975 Falcon.
+    'campagnolo': [{ to: 1977, id: 573 }], // only Record 2040 pre-CPSC existed; 1975 Falcon Model 76
   },
   Headsets: {
     // 1974 Motobecane.
@@ -698,6 +705,10 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 1516, // 0355, Victory double; matcher picked the triple
     'campagnolo record corsa': 1483, // C-Record 306/101 (1985-86)
+    // 1975 Falcon.
+    'campagnolo sport': 1476, // 3320 Gran Sport / Sport (1970-75)
+    'campagnolo sport cotterless': 1476, // 3320 Gran Sport / Sport (1970-75)
+    'campagnolo cotterless': [{ to: 1977, id: 1496 }], // 1049 Nuovo Record Strada v4 on the Nuovo Record Model 76
   },
   Saddles: {
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
@@ -723,6 +734,8 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli (Ten Speed Drive Imports).
     'concor rolls': 5563, // Selle San Marco Rolls
     'concor sc': 5547, // Selle San Marco Concor Supercorsa
+    // 1975 Falcon.
+    'mattress': null, // generic; matcher hit a Brooks mattress saddle
   },
   Handlebars: {
     // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
@@ -816,6 +829,9 @@ const COMPONENT_OVERRIDES = {
     'campagnolo sl': 3716, // 4021 Super Record Strada (Superleggeri)
     // 1986 Cinelli groupset fan-out.
     'campagnolo record corsa': 3693, // 305/501, C-Record
+    // 1975 Falcon.
+    'campagnolo': [{ to: 1985, id: 3708 }], // 1037 Record Strada, the only Campagnolo road pedal of the period
+    'campagnolo track pattern': 3711, // 1038 Record Pista (silver finish, 1971-85)
   },
   'Seat Posts': {
     // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
@@ -853,6 +869,8 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace chain': 1414, // Shimano CN-7401, Dura-Ace 7400
     // 1986 Cinelli (Ten Speed Drive Imports).
     'regina cxs': 1384, // Regina CX / CX-S
+    // 1975 Falcon.
+    'renolds': 1393, // Renold (two identical brand rows; first taken)
   },
   Cassettes: {
     // 1993 Bianchi ("cassette" noun stripped from the CSV).
@@ -905,6 +923,9 @@ const COMPONENT_OVERRIDES = {
     "fir tour or ambrosio giro d'italia": null, // either/or spec; don't pick one
     // 1985 Raleigh (Sheldon Brown scan).
     'araya 16a 5 alloy 27 x 1 3 8 36 hole front 40 hole rear': 4916, // Araya 16A (box style alloy clincher)
+    // 1975 Falcon.
+    'sprint': null, // generic term for a tubular rim; matcher hit Fiamme Sprint
+    'lightweight sprint': null, // generic
   },
 };
 
