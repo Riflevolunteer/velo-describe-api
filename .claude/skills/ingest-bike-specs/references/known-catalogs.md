@@ -261,6 +261,46 @@ Link counts are as of the last load; regenerate to confirm.
 - Durall (Bianchi house alloy brand) brakes/bars, rod brakes and wheel
   descriptions stay as text.
 
+## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 344 specs, 79 linked)
+
+- Source is a single scanned image on Sheldon Brown's Retro Raleighs site
+  (catalogs/1985/pages/specifications.html), 19 per-model text blocks in
+  four ranges, not a table. Transcribed by hand (2026-09-28) after cutting
+  the 1071x1519 scan into 12 magnified cells; the CSV is the record of the
+  transcription. Type column added from the range headings (Lightweight
+  Racing / Lightweight Touring / Sport Touring / Mountain Tour); weight
+  from each model heading ("-22 LBS").
+- Headers kept as printed; new LABEL_ALIASES: shifting levers -> Shifters,
+  seat pillar -> Seatpost, handlebar -> Handlebars, special features and
+  accessories -> Extras. DROP-OUTS / FRAME/DROP-OUTS merged into the Frame
+  cell rather than minting a label.
+- Era fixes over the matcher: Shimano Deore XT auto-hit the 1994-95 rear;
+  overrides send front/rear/shifters/brakes to the M700 series (FD-M700,
+  RD-M700 v2 1985-86, SL-M700, BR-MC70). Shimano "Model 105" in 1985 is
+  the Golden Arrow A105 series (FD/RD/SL-A105, 105 hubs 3526). SunTour
+  Superbe Pro is year-ranged: rear to 1983 -> 4766, from 1984 -> 4768
+  friction; front from 1984 -> 2652 FD2000 (1983 Bianchi keeps its old
+  pick and unlinked front); levers -> 6301 LD-4650. Cyclone MKIII -> the
+  1984 Cyclone rows (2629, 4739). ARX rear -> short cage 4727.
+- Z-series: Z204/Z206 fronts, Z503/Z505 rears, Z401/Z408 levers all have
+  numbered rows. Dia-Compe: AGC 300/250 (and the ACG typo) -> Aero Gran
+  Compe 686; AC 500G -> 665; DC500N -> N500 681; 500QS and QS-500N -> N500
+  QR 682; 960 -> GC960 690; 981 matched itself. Sugino "SP-CK" read as the
+  SP-KC (5928). Sansin Gyro -> Sunshine Gyro-Master 3601. New Winner 7-sp
+  -> 2239 (only 7-sp New Winner row, velobase dates it 1990). SR SP-154,
+  SunTour VX pedals, Araya 16A, SR Aero stem, Ofmega Mistral linked.
+- Left unlinked (no model row): SunTour HR, SU-2, UB-10, PUB-M, DLN, EM 30,
+  Light Action L512, Shimano AT-50 brakes, Kusuki bars/stems, SR CXC/CRC/
+  55G and Takagi cranks, Sugino LP, Sansin RE-50/RE-60/ET-QS/AX-10A, SR
+  MTH-100, Araya SP-30, SR SP-153 and bear-trap pedals, Daido chains,
+  Shimano XT/Tourney XT cranks (no FC-M700 row).
+- Regression: recorded counts for 1975 Motobecane (46), 1983 Bianchi (47),
+  1987 Bianchi (128) and 1993 Bianchi (118) were already stale against the
+  DB (47, 48, 128, 118 loaded); regenerating today gives 47, 47, 126, 117,
+  the differences coming from the 2026-09-28 Campagnolo dedupe reshaping
+  the candidate set, not from this catalog's generator edits (verified
+  by diffing pre- and post-edit generator output). Loaded rows unaffected.
+
 ## Nuovo Record rear-derailleur ranges (corrected 2026-09-27)
 
 While reading this catalog the DB's own dating for the 1020/A rows came up:

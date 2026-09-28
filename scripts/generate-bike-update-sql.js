@@ -290,6 +290,12 @@ const LABEL_ALIASES = {
   'standard equipment': 'Extras',
   miscellaneous: 'Extras',
   haken: 'Toe Clips',
+  // 1985 Raleigh (Sheldon Brown scan): its own header wording.
+  'shifting levers': 'Shifters',
+  'seat pillar': 'Seatpost',
+  handlebar: 'Handlebars',
+  'special features': 'Extras',
+  accessories: 'Extras',
 };
 
 // One global display order for canonical labels (frame -> drivetrain ->
@@ -419,6 +425,15 @@ const COMPONENT_OVERRIDES = {
     'shimano deore dx top pull dual sis': 2487, // Shimano FD-M650, Deore DX
     'shimano deore xt top pull dual sis': 2501, // Shimano FD-M735, Deore XT
     'shimano deore lx top pull dual sis': 2491, // Shimano FD-M550, Deore LX
+    // 1985 Raleigh (Sheldon Brown scan).
+    'suntour "seven"': 2641, // SunTour Seven
+    'shimano model 105': 2466, // Shimano FD-A105, 105 Golden Arrow (1983-86)
+    'shimano z204': 2543, // Shimano FD-Z204-HS
+    'shimano z206': 2544, // Shimano FD-Z206-HS, Z-Series
+    'shimano deore xt': 2497, // Shimano FD-M700, Deore XT (1983-86)
+    'suntour cyclone mkiii': 2629, // SunTour FD-3300 Cyclone (1984)
+    'suntour superbe pro': [{ from: 1984, id: 2652 }], // FD2000 (1984-86); 1983 Bianchi stays unlinked as before
+    'suntour ag tech': 2609, // SunTour FD-2800, AG Tech
   },
   'Rear Derailleurs': {
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
@@ -472,6 +487,15 @@ const COMPONENT_OVERRIDES = {
     'shimano deore xt top pull dual sis': 4493, // Shimano RD-M735 SGS, Deore XT
     'shimano deore lx top pull dual sis': 4484, // Shimano RD-M550 SGS, Deore LX
     'suntour xc comp top pull powerflo': 4783, // SunTour XC Comp
+    // 1985 Raleigh (Sheldon Brown scan).
+    'shimano model 105': 4452, // Shimano RD-A105, 105 Golden Arrow (1983-86)
+    'shimano z503': 4545, // Shimano RD-Z503, Z-Series
+    'shimano z503 gs': 4545, // Shimano RD-Z503, Z-Series
+    'shimano z505gs': 4546, // Shimano RD-Z505, Z-Series
+    'shimano deore xt': 4490, // Shimano RD-M700, Deore XT M700 (Version 2, 1985-86)
+    'suntour cyclone mkiii': 4739, // SunTour Cyclone (1984 row)
+    'suntour superbe pro': [{ to: 1983, id: 4766 }, { from: 1984, id: 4768 }], // 1979-83 row keeps the 1983 Bianchi pick; friction row 1983-86 for 1985 Raleigh
+    'suntour arx': 4727, // SunTour aRX (short cage)
   },
   Hubs: {
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
@@ -519,6 +543,9 @@ const COMPONENT_OVERRIDES = {
     'shimano xt': 3552, // Shimano FH-M737, Deore XT M737
     'shimano lx': 3544, // Shimano FH-M550, Deore LX
     alloy: null, // generic word; substring-hits "Roval by Maillard alloy rear hub"
+    // 1985 Raleigh (Sheldon Brown scan).
+    'sansin "gyro" precision sealed bearing alloy small flange qr': 3601, // Sunshine Gyro-Master
+    'shimano 105 small flange alloy qr 36 hole sealed': 3526, // Shimano 105, 105 Golden Arrow
   },
   Brakes: {
     // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
@@ -565,6 +592,16 @@ const COMPONENT_OVERRIDES = {
     'shimano exage es m system': 1002, // Shimano BR-M520, Exage ES
     'dia compe xce cantilevers 287 levers': 703, // Dia-Compe XCE
     'dia compe 987 ss 7 brs': 652, // Dia-Compe 987
+    // 1985 Raleigh (Sheldon Brown scan).
+    'dia compe agc 300 250 cold forged alloy': 686, // Dia-Compe Aero Gran Compe (AGC 300 caliper, 250 lever)
+    'dia compe acg 300 250 cold forged alloy': 686, // catalog typo for AGC 300/250
+    'dia compe aerodynamic ac 500g acg 250': 665, // Dia-Compe AC 500 (G)
+    'dia compe dc500n 164 alloy sp with extension levers': 681, // Dia-Compe N500
+    'dia compe 500qs cold forged alloy sp': 682, // Dia-Compe N500 (quick release)
+    'dia compe qs 500n 152 gum hoods': 682, // Dia-Compe N500 (quick release)
+    'dia compe 960 161 gum hoods alloy cantilever': 690, // Dia-Compe Gran Compe GC960
+    'shimano deore xt cantilever': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)
+    'shimano deore xt alloy cantilever shimano z levers with gum hoods': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)
   },
   Headsets: {
     // 1974 Motobecane.
@@ -642,6 +679,8 @@ const COMPONENT_OVERRIDES = {
     'shimano xtr 48 36 26t': 1848, // Shimano FC-M900, XTR M900
     'shimano xtr 46 36 26t': 1848,
     'shimano deore lx 46 36 26t': 1807, // Shimano FC-M550, Deore LX
+    // 1985 Raleigh (Sheldon Brown scan).
+    'ofmega "mistral" 52 42 170mm': 1699, // Ofmega Mistral
   },
   Saddles: {
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
@@ -683,6 +722,8 @@ const COMPONENT_OVERRIDES = {
     '3ttt ar84': 6424, // 3ttt Record 84 (AR84 silver)
     'itm 400': 6564, // ITM 400 Racing
     'sr custom': 6659, // Sakae/Ringyo (SR) CUSTOM
+    // 1985 Raleigh (Sheldon Brown scan).
+    'sr ae alloy aero black': 6657, // Sakae/Ringyo (SR) Aero
   },
   Shifters: {
     // 1987 Bianchi. The catalog's "levers" are the down-tube shifters.
@@ -694,6 +735,15 @@ const COMPONENT_OVERRIDES = {
     'campagnolo chorus 8 speed downtube shift levers': 5976, // Campagnolo Chorus Friction - Graphite finish
     'shimano rx100 gs sis': 6189, // Shimano SL-A550, RX100
     'deore xt thumb shifters': 6160, // Shimano SL-M732, Deore XT M730
+    // 1985 Raleigh (Sheldon Brown scan).
+    'shimano model 105': 6132, // Shimano SL-A105, 105 Golden Arrow
+    'shimano z401 down tube': 6194, // Shimano SL-Z401, Z-Series
+    'shimano z408': 6195, // Shimano SL-Z408, Z-Series
+    'shimano z408 down tube': 6195, // Shimano SL-Z408, Z-Series
+    'shimano z408 down tube braze on': 6195, // Shimano SL-Z408, Z-Series
+    'shimano xt fingertip shifters': 6158, // Shimano SL-M700, Deore XT (1983-86)
+    'suntour fingertip ld 2800': 6307, // SunTour LD-2800 Power Thumb Shifter
+    'suntour superbe pro': 6301, // SunTour LD-4650, Superbe Pro (1983-86)
   },
   'Shifting Brake Levers': {
     // 1993 Bianchi (integrated levers; the Shifters label maps to both
@@ -728,6 +778,10 @@ const COMPONENT_OVERRIDES = {
     'look pp76': 3791, // LOOK PP76
     'look pp56': 3787, // LOOK "Touring" PP56
     'shimano 1056 clipless': 3956, // Shimano PD-1056, 105SC
+    // 1985 Raleigh (Sheldon Brown scan).
+    'sr sp 154': 3927, // Sakae/Ringyo (SR) SP-154
+    'sr sp154 alloy quill type': 3927, // Sakae/Ringyo (SR) SP-154
+    'suntour road vx quill': 4014, // SunTour PL-1500, Vx
   },
   'Seat Posts': {
     // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
@@ -743,6 +797,11 @@ const COMPONENT_OVERRIDES = {
     'campagnolo fluted': 5748,
     // 1987 Bianchi (two lengths in the DB; the common 130mm).
     'campagnolo c record': 5737, // Campagnolo C-Record (Aero type, 130mm)
+    // 1985 Raleigh (Sheldon Brown scan).
+    'sugino sp kc alloy micro adjust': 5928, // Sugino SP-KC
+    'sugino sp kc 230mm alloy micro adjust': 5928, // Sugino SP-KC
+    'sugino micro adjust model sp ck': 5928, // catalog prints SP-CK for the Sugino SP-KC
+    'sugino micro adjust sp ck': 5928, // catalog prints SP-CK for the Sugino SP-KC
   },
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
@@ -768,6 +827,8 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi.
     'regina cx 13 23t': 2168, // Regina CX (6 speed)
     'shimano dura ace 13 23t': 2222, // Shimano MF-7400, Dura-Ace (7sp) — paired with SIS-7
+    // 1985 Raleigh (Sheldon Brown scan).
+    'suntour 13 24 7 speed new winner': 2239, // SunTour New Winner 7 speed (DB row dated 1990; only 7-sp New Winner row)
   },
   Tyres: {
     'clement criterium silk tubular': 6748, // Clement Criterium Seta (seta = silk)
@@ -795,6 +856,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo omicron': 4962, // Campagnolo Omicron Strada Polished (three finishes)
     'mavic 231': 5071, // Mavic M 231 CD
     "fir tour or ambrosio giro d'italia": null, // either/or spec; don't pick one
+    // 1985 Raleigh (Sheldon Brown scan).
+    'araya 16a 5 alloy 27 x 1 3 8 36 hole front 40 hole rear': 4916, // Araya 16A (box style alloy clincher)
   },
 };
 
