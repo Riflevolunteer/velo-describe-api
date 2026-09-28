@@ -350,6 +350,40 @@ in the repo records them except this file.
 - Left: 6956 Ghibli 7sp cassette (1995-99), Scirocco, Bora, Shamal,
   Vento — later models. No separate Khamsin front row.
 
+## Campagnolo "Record" brochure, USA edition — November 1987 (Campy1987_Record/, 15 JPGs)
+
+- Same Lonigo printer and "November '87" date as the Fluid-Dynamic
+  brochure. C-Record renamed plain "Record" with A-series catalogue
+  numbers; prose pages carry no numbers, the parts list is p 14 (file
+  14.jpg). Bound at 4000 px (JPGs are 1308x1800), read in one batch.
+- Groups: A000A Record (A500D Delta + Power-Grade levers, A100 rear +
+  braze-on front, 0271 Doppler levers, A300 hubs, A040 crank, A0H0 BB,
+  A600-L pedals, A0D0 headset, A0R2 post); A000P Record track (A300PFG,
+  A040P, A0H0P, A630-L, A0D0P, A0R2); A000K Record Keirin (A300KFG,
+  A040K, A0H0K, A630KA, A0D0K, 00R8K), all NJS. Alternatives: A022/A023
+  clip-on fronts, Friction 0281-83, Syncro 0211-13, Syncro 2 0221-23,
+  A330-FG large flange hubs, A610 SGR-1, A620-L Triple Bearing, A0R2-S,
+  A0R8/A0R8-S, A300P, A300K, B600KA, 00R8-S.
+- Delta now shipping (was "not available" in n. 18 bis). Misprint: A300KFG
+  and A300K are both described as large flange.
+- Added: 7018 A300KFG Keirin hubs, 7019 A040K Keirin crank, 7020 A0H0K
+  Keirin BB, 7021 A0D0K Keirin headset, 7022 00R8K Keirin post (all group
+  C-Record Pista), 7023 A620-L Triple Bearing pedals, 7024 A0D0P track
+  headset; all 1987-87. source_id MANUAL-REC87-1987-*.
+- Years: 7014, 23, 3242, 3243, 1485 year_to 1986 -> 1987 (renumbered
+  A0H0/A0H0P/A300P/A300PFG/A040P); 3694 SGR-1 and 5971 Syncro II
+  year_from -> 1987 (listed as A610 and 0221-23); 214 Power Grade lever
+  1980-1980 -> 1987-90 (year_to mirrors the Delta rows, only 1987 is
+  evidenced).
+- Notes appended ("Record brochure"): A-numbers on 4098, 2283, 2284,
+  5970, 5969, 5973, 5971, 560, 214, 3241, 3240, 3242, 3243, 1482, 1485,
+  7014, 23, 2954, 3693, 3695, 3694, 5755, 5739, 5737, 5738.
+- Left: 208/213 Corsa Record levers (generation unclear), 1483 C-Record
+  crank at 1986 (1482 covers 1987-94), 4099/4096 first-gen rears at 1986
+  (4098 A010 covers 1987-89), 5755/5739 A0R7 posts (number not in this
+  brochure, noted). Victory/Triomphe/990/rims absent: single-group
+  brochure, not evidence.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
