@@ -915,6 +915,34 @@ in the repo records them except this file.
 - Left: Veloce seat post (none listed); RD-11IC/RD-13CE/FD-03FOR/HS-03/
   04 as notes not rows; Shamal 6961/6962 already 1992-96; tools.
 
+## Campagnolo 1994 range catalogue, GB — 60th anniversary (Campyjpg1994/, 16 double-page scans + thumbnails)
+
+- Prose page per group plus a Technical Specifications table at the back;
+  NO part codes printed anywhere, so a year/composition record only.
+  Groups: Record, Chorus, Athena, Veloce, Stratos (new, OEM, Ergopower
+  only), Record O.R. Icarus and Centaur are gone. New: Exa-Drive
+  cassettes and chain, carbon-bodied Record Ergopower, dual-pivot
+  Cam-Plus brakes on Record and Chorus, Stratos group, Dedra 23 mm hybrid
+  rim, Bora carbon 16-spoke and Vento 20-spoke wheels; Shamal now 26/28
+  in road and track; Ghibli 24/26 fronts and 28 rears only; Omega XL and
+  Contax chain gone.
+- Added (8, uncoded so descriptive titles; source_id MANUAL-RANGE94-
+  1994-*): Stratos rear, front, Ergopower, crankset, QR pedals (1994);
+  Dedra hybrid rim (1994-96); Record dual-pivot (1994, Cam-Plus) and
+  Chorus dual-pivot (1994) brakes. Stratos brakes 581 and hubs 3274
+  already existed.
+- Years -> 1993 (dropped for 1994): Icarus 1493, 4121, 7057, 7065, 7066,
+  5986, 3706, 2960; Centaur 7058, 1486, 3246; single-pivot 565 BR-02CH
+  and 7038 BR-02RE. Years -> 1994 (confirmed current): 4135, 4093, 6345,
+  6349, 4164, 6006, 3279, 3702, 7052, 7053, 7054, 4955, 6957, 6958, 6960,
+  6959.
+- Notes ("1994 range"): 15 rows incl. 578 BR-14RE (1995 coded successor
+  of the 1994 dual-pivot), 1186 Exa-Drive, 6346 carbon Ergopower, Shamal/
+  Bora/Vento/Ghibli wheel facts. LENGTH guarded, longest 247.
+- Left: Record O.R. rows already 1992-95; Athena Monoplaner 556 (1995)
+  and Avanti rows untouched; tools none; Icarus SP-IC 5747 kept to 1994
+  since the same post serves Record O.R.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
