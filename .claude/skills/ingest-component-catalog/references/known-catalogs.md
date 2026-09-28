@@ -884,6 +884,37 @@ in the repo records them except this file.
   FD-01SRE already 1991-94; C-Record/Croce/Euclid/Olympus/Centaur MTB
   rows untouched (not in a road brochure); wheel bags.
 
+## Campagnolo 1993 Product Range, GB — printed 9/92 (Campyjpg1993/, 18 double-page scans)
+
+- Full-range catalogue, first with every part coded and group codes
+  (GR-03RE Record, GR-03CH Chorus, GR-03AT Athena, GR-03VL Veloce new,
+  GR-03OR Record O.R., GR-03IC Icarus, GR-03CE Centaur), then rims,
+  Shamal (first appearance, 16-spoke, R0226-R0658), Ghibli/Scirocco/
+  Khamsin (as 1992) and two pages of special tools (out of scope).
+- 1993 changes: RD-11RE/CH/AT replace RD-01; FD-11SRE/FRE and FD-11SCH
+  replace FD-01; EC-12RE CG (EC-12REAB on Athena) replaces EC-02RE;
+  PD22REQR/CHQR/ATQR replace PD-12; BB-11/13RECART TBS cartridge; CS-8RE
+  Ni-Cr and CS-8SR alloy split from CS-8S; CN-NTS chain on Athena/Veloce/
+  Centaur; FH-01SR alloy-body freehub. Rims: Sigma Pave and Ypsilon
+  dropped, Omega 19 26 in P0682 added, Stheno 405 g, ATEK 390 g.
+- Corrections to my 1992 run: FC-01CSIC is the real Icarus Compact Drive
+  crank code (1493 reverted from my wrong "FC-01ICTG" retitle; the 1992
+  FC-01ICTG road triple optional was a different part). FC-01TDIC is the
+  Centaur triple (24-26/34-36/46-48) as well as the tandem crank; 1486
+  retitled to say both.
+- Added (15, 1993-94 guessed): RD-11CH, RD-11OR, RD-12IC, RD-12CE;
+  FD-11SRE, FD-11SCH, FD-01SVL; FC-01VL; SL-02TB CG; BL-02OR CG;
+  BR-02CLTDIC; HB/FH-00IC; CN-NTS (no group); PD-22RE QR; PD-12VL QR.
+  source_id MANUAL-RANGE93-1993-<code>.
+- Retitled: 18 -> "BB-01VL / BB-03VL, Veloce (cartridge; also Stratos)";
+  2970 -> "HS-01VL, Veloce" 1993-94 (was placeholder 1990-91); 5747 ->
+  "SP-IC, Icarus / Centaur / Record O.R.".
+- Years: 4134, 4109, 4091, 6344 -> 1992 (superseded); 211, 565, 587,
+  2960, 3706, 5747 -> 1994 (confirmed current).
+- Notes ("1993 Range"): 41 rows, LENGTH guarded, longest now 253.
+- Left: Veloce seat post (none listed); RD-11IC/RD-13CE/FD-03FOR/HS-03/
+  04 as notes not rows; Shamal 6961/6962 already 1992-96; tools.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
