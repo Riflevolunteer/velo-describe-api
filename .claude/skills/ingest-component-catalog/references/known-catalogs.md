@@ -176,6 +176,11 @@ in the repo records them except this file.
 - Skipped: set numbers 3330, 1048, 1050, 4030, 4130 (crank + BB bundles);
   2000/1, 2001/1 (covered by 2040/1 rows). Sport Extra 6996 absent, left at
   1973.
+- Deleted (user decision, 2026-09-28): 4159 "Nuovo Valentino Extra" and
+  4160 "Valentino Extra" — unnumbered velobase repeats of 4162 (2170). Both
+  were unreferenced by bike_spec and by generator overrides. The velobase
+  crawler could reinsert them under their original source_ids
+  (AA0D3126-…, 39DECE91-…); if they reappear, delete again.
 
 ## Cross-catalog notes
 
