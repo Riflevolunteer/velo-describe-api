@@ -567,6 +567,29 @@ in the repo records them except this file.
   2030 overlap. Section D kept: 2040/2040-1 CPSC versions, 4061 v1/v2/
   4061-1, Gran Sport first/second gen, Delta family, numbered 1990s rows.
 
+## Campagnolo crankset and bottom bracket dedupe — 2026-09-28 (user decision, sections A and B)
+
+- Analysed 87 rows (34 BBs, 53 cranks). Only 1513 carried bike_spec links
+  (5, moved to 1509); the generator's 1981 Kalkhoff 'campagnolo super
+  record' crank override was repointed 1513 -> 1509 in the same commit.
+  SQL kept as campy-crank-bb-dedupe.sql; the user ran it. 80 rows remain.
+- Deleted (source_id prefix): BBs 36 BB-01RE CART 111 (56F4790A), 39
+  Record con sfere 3/16 unwidthed (5D348EB8); cranks 1513 bare 1049/A
+  Super Record 1980 (823786B4), 1469 "FC-01TDIC Tandem" (5EE3F466), 1497
+  1049 v4 Special Record polished (06EBC9FF), 1470 "record pista
+  non-fluted" (4B911B9B), 1508 3320 Sport (1C9F2B57).
+- Merged/retitled: 35 -> "BB-01RE (CART 111), Record" 1992-95; 38 ->
+  "Record (con sfere da 3/16, 70 and 74 mm)"; 1476 -> "3320, Gran Sport /
+  Sport" 1970-75; notes on 1496 (polished Special Record) and 1505
+  (non-fluted arms).
+- Left (section C, not applied): 41/42 4131 start 1970 (should be 1974);
+  1510-1514 no-flute SR arms dated 1980-90 (should be c. 1985-87); 1473
+  Bianchi 0304 at 1980 only; 37 Triple Bearing BB at 1990 (title says c.
+  1997); 1500 Olympus graphite no years; 1494 title "Campagnolo,
+  Campagnolo Mirage"; 33 Record Pista BB empty description; 1471 "Record
+  triple" 1990 ungrouped. Section D kept: 1049 v1-v4, 4031/4131 gens,
+  1046 family, 0304-0306, C-Record gens, graphite finishes, 1990s series.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,

@@ -606,7 +606,7 @@ const COMPONENT_OVERRIDES = {
     'stronglight 49 d cotterless 42 52': 1895,
     // 1981 Kalkhoff. Sakae is named without a model; the DB brand row is the
     // best available (kept deliberately, like Iris).
-    'campagnolo super record': 1513, // Campagnolo 1049/A, Super Record
+    'campagnolo super record': 1509, // Campagnolo 1049/A, Strada Super Record (bare 1513 row merged 2026-09-28)
     'dura ace ex 42 53': 1828, // Shimano FC-7200, Dura-Ace EX
     'shimano 600 ax': 1787, // Shimano FC-6300, 600 AX
     'sakae 42 52': 1732, // Sakae/Ringyo (SR)
