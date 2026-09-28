@@ -535,6 +535,12 @@ in the repo records them except this file.
   S3 1986-87; 4139 Record Ti 9-sp 1997-2000; 4102 1001 Cambio Corsa from
   1940; 4119 1012/4 first version re-dated 1951 -> 1955 (first appears
   in Catalogo N. 13). Notes on 4148, 4151, 4152, 4133, 4162.
+- Cleanup (description-cleanup.sql, same day): the merge/delete
+  housekeeping was stripped from those descriptions again since it is
+  user-facing text; this file is the record. Also stripped velobase's
+  "View Weight List" UI tail from 305 rows across all brands. Rule for
+  future runs: catalogue facts go in descriptions, row-number bookkeeping
+  goes only here.
 - Left (section C placeholders, not applied): NULL years on 2280, 2289,
   4082; 1980 placeholders on 4090, 4089, 2277, 4153. Section D splits
   (NR v1-v5, Rally gens, cage lengths, finish variants, 0104007 bodies,
