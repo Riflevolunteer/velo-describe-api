@@ -483,8 +483,10 @@ in the repo records them except this file.
   with a LENGTH check; 5971 skipped at 248 chars). Longest now 251.
 - Corrections: 7025 -> "Chorus C0R2 styled seat pin, also on Croce
   d'Aune"; 7028 -> "Chorus head set, also on Athena"; 7027 542/S Chorus
-  Friction shortened and noted that DPC88 lists Chorus with A281 (kept,
-  user may prefer deletion since it is a provisional number).
+  Friction shortened and noted that DPC88 lists Chorus with A281; then
+  retitled (user decision, 2026-09-28) to "Chorus levers (A281 Friction
+  with Dual-Mode Syncro inserts)" so the provisional 542/S number is out
+  of the title and the Chorus-specific A/B inserts are what it records.
 - Left: Syncro insert codes 7222063-7222088, toe clips, straps, bottle
   1120005 (no category). 5971 Syncro II untouched (full).
 
