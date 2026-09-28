@@ -384,6 +384,29 @@ in the repo records them except this file.
   brochure, noted). Victory/Triomphe/990/rims absent: single-group
   brochure, not evidence.
 
+## Campagnolo "Athena" brochure, USA edition — April 1988 (Campy1988_Athena/, 9 JPGs)
+
+- Thumbnails only (479x700) but legible. Cover "4/88", back "April 88",
+  West Caldwell NJ. First-generation Athena with D-series numbers; parts
+  list is p 8 (tn_09.jpg). Group id 5 exists.
+- Group D000A: D500 brakes + levers, D100 rear + braze-on front, 0281
+  Record Friction levers, D300 small-flange hubs, D040 crank (135 BCD,
+  170/172.5, rings 39-44 / 48-53), D0H0 BB, D600-AM pedals, D0D0 headset,
+  C0R2 post. Alternatives: C022/C023 clip-on fronts, 0282/0283 Friction,
+  0221-23 Syncro 2, C0R2-S, D056 Compact levers. C-prefixed parts are
+  shared with Chorus. Rear has the "Multi Function System" five-position
+  hanger insert (20-30 T).
+- Added: 7025 "C0R2, Athena (styled)" post 1988-89 (year_to guessed from
+  the 1990 SP-10AT v2 row); 7026 "D056, Athena Compact" levers 1988.
+  source_id MANUAL-ATH88-1988-*.
+- Years: 5967 Athena shifters 1980-80 -> 1988-90; 5968 Syncro II Athena
+  year_from 1980 -> 1988.
+- Notes appended ("Athena brochure"): 4092, 2281, 558, 211, 1479, 22,
+  3236, 2952, 3690, 5969, 5971, 5967, 5968.
+- Left: 4090 graphite rear and 557 Monoplaner graphite at 1980-90 (later
+  finishes, not in this brochure); 5736 SP-10AT v2 at 1990; 215 Centaur
+  Compact 1990 is a different part from D056.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
