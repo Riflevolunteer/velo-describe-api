@@ -799,6 +799,28 @@ in the repo records them except this file.
   Olympus); no tandem lever or 40-h hub rows beyond 3227; 4098 A010 not
   extended (4133 R010 covers 1990-91); 7026 D056 not listed, left at 1988.
 
+## Campagnolo range brochure, GB edition — January 1991 (Campy1991_Groups/, 16 thumbnails)
+
+- Cover "1/91". Same format and page order as the Sep 1990 "Anaheim"
+  brochure; every group text and options table is reprinted word for
+  word (Xenon, Athena, Chorus 8-speed, Croce d'Aune, Record, Record
+  Pista/Keirin, Themis, Olympus, Centaur, Euclid, Tandem Road, MTB
+  Tandem, lubricant and tools). Only addition: Biodynamic, Biothermal
+  and Biodynamic 900 bottles (no category). No part numbers.
+- Significance: last brochure before the 1992 Record OR / Icarus /
+  Ergopower generation, so it documents a 1991 endpoint for every
+  1988-90 group.
+- No inserts. Years: 71 rows year_to 1990 -> 1991 across Xenon, Athena,
+  Chorus, Croce d'Aune, Record/C-Record, Record Pista/Keirin, Olympus,
+  Centaur and misc (tandem hub 3227, Veloce headset 2970, Icarus/Centaur
+  pedals 3706, disc hub 3258, freewheels 2073/2075/2076). Left at 1990
+  because not listed: 1494 Mirage crank, 587 Veloce brakes, 2969
+  Triomphe headset.
+- Notes ("Current in the Jan 1991 range brochure"): one per group rear
+  derailleur where length allowed (4173 Xenon, 4092 Athena, 4112 Croce,
+  4133 Record, 4128 Olympus); 4108, 7029, 4115, 4154 skipped by the
+  LENGTH guard, which behaved as intended.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
