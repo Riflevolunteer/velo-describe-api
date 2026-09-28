@@ -490,6 +490,30 @@ in the repo records them except this file.
 - Left: Syncro insert codes 7222063-7222088, toe clips, straps, bottle
   1120005 (no category). 5971 Syncro II untouched (full).
 
+## Campagnolo "Centaur" brochure, USA edition — April 1989 (centaur89.pdf, 11 pp)
+
+- A4 scan, no text layer. Cover "4/89", back "April '89", Cartografica
+  Veneta, Lonigo. First all-terrain group, code Q000; parts list p 10.
+  Group id 7 exists.
+- Basic group: Q010-LG rear (Q010-MD, Q010 SM substitutes; caps 44/38/32,
+  max sprocket 34/34/30), M022 Euclid front (M023 adjustable, M024 35-36
+  mm), Q222 Syncro clip-on levers (0118155 7-sp rear), Q500 Monoplaner
+  cantilever brakes + levers (Q05C Compact, Q05E Biofitting), Q040 triple
+  175 mm (Q071/Q072 170; rings QZ001/QZ00M/QZ00, 110/74 BCD), Q0H0 BB
+  (124/132 axle), Q600 LG pedals (Q640 SM), Q300 hubs (Q300-FG), Q0R8
+  post 325 mm with frame QR, Q0D0 steel headset with locking bracket.
+- Added: 7029 "Q010-LG, Centaur (first generation)" rear 1989-90 with all
+  three cage lengths in the description; 7030 "M024, Euclid (35-36 mm
+  clip)" front 1989-91. source_id MANUAL-CEN89-1989-*.
+- Years: 15 Centaur rows year_from 1990 -> 1989: 24, 2955, 3247, 3697,
+  3698, 5974, 5975, 564, 219, 215, 216, 1486, 5741, 563, 3699.
+- Notes appended ("Centaur brochure"): those 15 plus 3248, 217, 218,
+  2291, 2292.
+- Left: 4104/4105 RD-02CE/03CE (1990-93 second generation), 2285 Century
+  grey front, 3245/3246 cassette hubs, 5740/5747 later posts, 3706 Icarus
+  pedals. 3699 pedals row says country "France" (velobase error, not
+  touched). Toe-clips, reflectors, gear guards, bottle: no category.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
