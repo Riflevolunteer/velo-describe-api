@@ -850,6 +850,40 @@ in the repo records them except this file.
 - Left: 4948 Epsilon (not in this catalogue); 4955/4956 Omega 19/20 and
   the Olympic-city rims (not listed, later or earlier); wheel bags.
 
+## Campagnolo 1992 Road Range and 1992 Rims Range, GB — 1992 (Campy1992_Rims&Road/, 8 + 8 thumbnails)
+
+- Two Lonigo-printed brochures. Road: first catalogue of the Ergopower
+  generation, three groups (Record RR, Chorus RS, Athena RS) with the
+  two-letter codes the DB already uses (RD-01RE, FD-01SRE/FRE, SL-01SRE
+  CG, EC-02RE CG, HS-01OR, FC-01RE, BB-01/03RE, BB-01/03CART, PD-12REQR,
+  PD-02RE, SP-RE, BR-02RE, BL-02RE CG, HB/FH-00RE, FH-01RE, CS-8AL,
+  CS-8S, CN-CA68S; CH and AT equivalents; HS-01CO Contax on Chorus;
+  FD-02FCH adjustable clip shared). Optionals: FC-01TDIC tandem crank,
+  HB/FH-00TD tandem hubs, FC-01ICTG Icarus triple, FC-01ATTG Athena
+  triple, SL-02BE CG Icarus bar-end. Rims: P-series as 1991 plus Omega
+  19 P0562, Omicron/Gamma black and silver replace Electrox, ATB rims
+  Stheno P0594/P0604, ATEK P0614/P0624, Mirox P0634/P0644, Zark P0664/
+  P0654 replace Thorr and Contax; Sigma Crono, Omega XL tubular, Ghibli
+  Gyroscopic, 28 in fronts and French threads dropped. The ATB text says
+  "Atex" but the table prints ATEK (matches DB 4944).
+- Added (17 group parts 1992-94, 3 rims 1992-93, year_to guessed):
+  FC-01RE, SP-RE, BR-02RE, BL-02RE (Record); FD-01SCH, SP-CH, PD-02CH,
+  BL-02CH (Chorus); FD-01SAT, SL-01SAT, HS-01AT, FC-01AT, BB-01AT, SP-AT,
+  BR-02AT, FC-01ATTG (Athena); Stheno, Mirox, Zark. source_id
+  MANUAL-ROAD92-1992-<code> and MANUAL-RIM92-1992-<code>. Record hubs
+  HB/FH-00RE not inserted: 3265 "Record 8sp" covers them, coded in note.
+- Retitled: 21 -> "BB-03AT / BB-03CART, Athena (CART 111 cartridge)";
+  1486 -> "FC-01TDIC, Tandem (Centaur-based)" (was titled Centaur; it is
+  the tandem crank); 5987 -> "SL-02BE CG, Icarus (bar-end)"; 1493
+  "FC-01CSIC" -> "FC-01ICTG, Icarus TG (triple)" (velobase misreading).
+- Years: 4091, 4134, 6344, 3701, 1486, 3227, 4955 -> 1993; 2287, 3250 ->
+  1994; 21, 2960 -> 1992; 7034 Thorr and 7035 Contax cut back to 1991.
+- Notes ("1992 Road Range" / "1992 Rims Range"): 36 rows, all LENGTH
+  guarded; one row (see tail check) filled to exactly 255 by design.
+- Left: HS-01RE 2964 at 1991 (Record ships HS-01OR in 1992); 2306
+  FD-01SRE already 1991-94; C-Record/Croce/Euclid/Olympus/Centaur MTB
+  rows untouched (not in a road brochure); wheel bags.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
