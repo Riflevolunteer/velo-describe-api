@@ -821,6 +821,35 @@ in the repo records them except this file.
   4133 Record, 4128 Olympus); 4108, 7029, 4115, 4154 skipped by the
   LENGTH guard, which behaved as intended.
 
+## Campagnolo rims and Fluid-Dynamic wheels, GB edition — January 1991 (Campy_1991Rims.pdf, 12 pp)
+
+- Cover "1/91". Scan, no text layer. Pages: tubular rims (Sigma, Omega,
+  Lambda), clincher "crochet" rims (Omega, Lambda, Ypsilon, Omicron,
+  Gamma), ATB rims (Thorr, Contax), Fluid-Dynamic wheels (Ghibli M23,
+  Gyroscopic, Khamsin, Scirocco, bags), and the R-number wheel table.
+  Rims carry P-series numbers: xxx1 tubular, xxx2 clincher, xxx4 ATB.
+- Rim numbers: P0071 Sigma Pave, P0091 Sigma Strada, P0111 Sigma 20,
+  P0121 Sigma Crono; P0451/P0222 Omega V profile tub/clincher, P0161/
+  P0162 Omega XL, P0171/P0172 Omega Strada, P0211/P0212/P0232 Lambda,
+  P0322 Ypsilon V, P0272/P0352 Omicron polished/Electrox, P0282/P0332
+  Gamma polished/Electrox; P0504/14/24 Thorr and P0534/44/54 Contax in
+  Hardox/oxide/polished. Wheel table reprints Nov 1987 plus Scirocco
+  R0215 road and R0225 track.
+- First appearances Jan 1991: P-numbers, Sigma 20, Ypsilon, Thorr,
+  Contax, Scirocco track. Record Pave/Strada/Crono and Victory rims of
+  1986 are gone (Sigma replaces them). Confirms the Greek-letter rims'
+  1988-92 estimates.
+- Added: 7031 P0071 Sigma Pave, 7032 P0111 Sigma 20 Strada, 7033 P0322
+  Ypsilon Strada V Profile, 7034 P0504 Thorr (ATB, finishes noted), 7035
+  P0534 Contax (ATB), all 1991-92 (year_to a guess). source_id
+  MANUAL-RIM91-1991-*.
+- Years: 4951 Lambda, 4962 Omicron, 4970 Sigma Strada, 6959 Khamsin,
+  7017 Ghibli Gyroscopic year_to -> 1991.
+- Notes ("Jan 1991"): P-numbers on 4957, 4958, 4961, 4951, 4962, 4950,
+  4970, 4969; R0225 on 6960; still-listed on 6959, 7017. All guarded.
+- Left: 4948 Epsilon (not in this catalogue); 4955/4956 Omega 19/20 and
+  the Olympic-city rims (not listed, later or earlier); wheel bags.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
