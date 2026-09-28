@@ -697,6 +697,20 @@ in the repo records them except this file.
   shifters/rings 78->64, rims/wheels 42->37 (73 rows). Not analysed:
   freewheels/cassettes/sprockets, chains, stems/bars, saddles, tyres.
 
+## Campagnolo freewheel, cassette and sprocket review — 2026-09-28
+
+- Analysed 15 rows (6 cassettes, 5 freewheels, 4 sprockets). No
+  duplicates; every row is a distinct model, speed, material or version.
+  Only 1186 Exa-Drive 8-sp is linked. Nothing deleted.
+- Years fixed (campy-fw-years.sql, run by me, no deletions): 2072 alloy
+  6-sp from 1982 (first catalogue appearance); 2073 alloy 7-sp 1985-90;
+  2076 titanium 1987-90; 2075 7-sp narrow 1988-90, noted as the Servizio
+  Corsa Compact of the 1988 dealer catalogue; 1187/1188 Exa-Drive 9-sp
+  to 2000. The 1985-90 and 1987-90 values are estimates, not catalogue
+  evidence; 2075's identification is from the DPC88 insert table.
+- Left: 1183 "(7sp, Xenon?)" title; 2074 freewheel core is a sub-part
+  row kept as is.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
