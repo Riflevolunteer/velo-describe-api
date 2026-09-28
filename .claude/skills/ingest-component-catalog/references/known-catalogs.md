@@ -1039,6 +1039,44 @@ in the repo records them except this file.
   XA/XB tools have no category. Sky Lark and Lark SS/SPO are separate
   rows since the catalogue separates them; Eagle SPO/GPO likewise.
 
+## Shimano 1982 Bicycle System Components — printed 01.82 (Downloads/Shimano1982/, 44 spread JPEGs, blz01-45, no 44)
+
+- 1200x858 spreads bound to shimano82.pdf; the Read tool dropped pages
+  in every batch of 15, so it took six passes of 3-10 pages to see all
+  44. Copyright 1982, imprint "0182 F1/37M". 37 numbered pages: aero
+  essay, AX features, innovations (Centeron, DD pedal, Parapul, Uniglide,
+  10 mm pitch, NBM shoe), then Dura-Ace 10 track, Dura-Ace track, Dura-
+  Ace AX, 600 AX, Dura-Ace EX, 600 EX, Deore, Dura-Ace road (7100), 600,
+  Adamas AX, FF System, PPS System, and the system components chart.
+- Every part coded; weights and capacities given. DB already held the
+  AX, EX, Deore and Adamas ranges (velobase dates them 1981-84), so the
+  work was codes and years on older rows.
+- Added (12, 1982-84 guessed, source_id MANUAL-SHI82-1982-<code>):
+  FD-7310, SL-7310, SP-7300 (Dura-Ace AX braze-on front, brazed A lever,
+  A-type post); FH-6263 / FH-6253 600EX large-flange freehub (black
+  variants in the description); BB-DE30 Deore triple; MF-7150 / MF-7160
+  Dura-Ace freewheel; HP-7100; CN-6120 and CN-UG20 chains; MF-FF51 /
+  MF-FF61 FF freewheel; RD-PF10 / RD-PF20 Positron-FH; SL-PF13 PPS stem
+  lever. Groups: DA AX 100, 600EX 46, Deore 158, DA 7100 137, 600 93,
+  Positron 224; chains and FF ungrouped.
+- Retitled: 3571 "HF-7261" -> FH-7261 (small flange 6-sp silver); 3541
+  "Adamas AX (?)" hubs -> FH-AD61 / FH-AD65 1982-83; 1800 "Adamas AX, FF
+  System" crank -> FC-FF33, FF System; 1404 Link-Lock -> CN-6130.
+- Years: 3530/3531 600 HB-6110/6120 hubs (were 1975-76) -> 1982, since
+  the catalogue prints those codes; BB-7500 134 (shared by FC-7200/7300/
+  7500), BB-7200 136, BB-6200 126, HP-7500 3101/3102, SS-7500 6386/6387
+  -> 1984; FC-7000 1817, SS-7000 6385, CN-7000 1410 -> 1983 (with
+  HB-7020); FH-7250/7260 3568/3569, FH-6261 3540, CN-6200 1407, CN-7100
+  1411, SL-7210/7220 6173/6174, HS-7200 6679, MF-6151 2216, MF-1500 2214
+  -> 1982; RD-DE20 4479 1980 -> 1982-84.
+- Notes ("1982 catalogue"): 91 rows with codes, weights, capacities and
+  sub-variants (black/silver, 5/6-speed, band/braze-on). Guarded; longest
+  245.
+- Left: fork ends FE-*, cable parts SM-*, SM-BT10 bottle, CP-AX30/50
+  protectors, CL-P210 cable (no category); 4445 "400FF" and 4525/6184
+  bare "Positron" rows untouched (PF rows inserted separately); 1197/
+  1198 AX cassette rows untouched.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
