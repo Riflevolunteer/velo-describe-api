@@ -276,6 +276,80 @@ in the repo records them except this file.
   shell" repeat, D5258F61-…); retitled 3261 → "HiLo, Record (high-low
   flange rear)" with the 1982 catalogue description, years 1980-82.
 
+## Campagnolo Catalogue n. 18 bis, English edition — December 1986 (Campy1986_Catalog18bis/, 54 JPGs)
+
+- Vicenza printing, back cover "12/86". Printed page = JPG number - 1
+  (n18_02 is missing). Bound with `bind-images-to-pdf.sh` at 4000 px (the
+  JPGs are only 1226x1800 so nothing was downscaled); all pages read
+  visually in three batches of 18. First catalogue for the C-Record /
+  Victory / Triomphe generation; shares only 980/990 and 3331 with n. 18.
+- Groups: 180 Record corsa (C-Record: 0102050, 0104018, 0118071/72,
+  322/101, 306/101, 303/101, 305/101 [misprint for 305/501], 304/104,
+  316/101, 315/101), 182 C-Record pista, 269/268 Victory corsa/leisure,
+  267/266 Triomphe corsa/leisure. Loose: 0102068 990 rear, 0104012/13 980
+  fronts, 3331 Gran Sport triple BB, first rims (060.101-105 Record
+  pave/strada/crono, Victory strada/crono).
+- Delta brake 315/101 (0116070/71) is listed but "not available when
+  printing this catalogue"; groups shipped with Super Record brakes.
+- Misprints: p 25 calls 0104027 "Triomphe corsa braze-on"; pp 16 and 30 and
+  its parts (clip 7182039, long fork 1180009) make it the leisure clip-on.
+  Group pages say pedals 305/101, parts page 305/501.
+- Dropped since n. 18: every Super Record / Nuovo Record / Rally / Gran
+  Sport / Valentino part, 1013/1014 levers, 1034 headsets, 1046 BBs, 1037
+  pedals, 1044 posts, 1035/1036 hubs, 2040 brakes, 0304-0306 cranks,
+  3550/3700/3800, 0104006-0104011 fronts, freewheels (box pictured p 5,
+  no page).
+- Added: 7014 "303/101, C-Record" BB 1985-86 (year_from from sibling
+  C-Record rows); 7015 "0102057, Triomphe (leisure, long cage)" rear
+  1986-86. source_id MANUAL-CAT18BIS-1986-*.
+- Years (year_to -> 1986, 17 rows): 4096, 4088, 2318, 2314, 6007, 6002,
+  6003, 2971, 1485, 1245, 44, 20, 3720, 3719, 590, 585, 584.
+- Placeholder 1980-1980 rows re-dated (year_from is inferred from sibling
+  rows of the same range, year_to from this catalogue): 3242, 3243, 23,
+  212, 4971 -> 1985-86; 3278 -> 1984-86.
+- Notes appended (34 rows, tagged "Cat. n. 18 bis"): part numbers on the
+  C-Record/Victory/Triomphe rows that velobase titled by name only
+  (4099, 4097, 4096, 4168, 4172, 4155, 4088, 2283, 2284, 2279, 2318, 2314,
+  5969, 6007, 6002, 3242, 2969, 1483, 1517, 1245, 1241, 5737, 5738, 5764,
+  3693, 560, 233, 235, 212, 4973, 4966, 4965, 4972, 4971). Row 20 got no
+  note: its description is already 220 chars of 255.
+- Confirmed: 3241, 3240, 3280, 3281, 3277 hubs; 2954, 2969 headsets; 1483,
+  1516, 1515, 1517 cranks; 45 BB; 3693 pedals; 560 Delta; 233, 235 levers;
+  4973, 4966, 4965, 4972 rims; 2279 980 front to 1986.
+- Left: SR/NR/1049/2040/4061/4062/1013-5N rows dated to 1987 (4150, 4152,
+  4127, 2313, 1496-1498, 1509, 572, 575, 583, 231, 6000) and my n. 18
+  guesses 7012, 7013 — this is a new-range catalogue and p 6 says SR
+  brakes were still being shipped, so absence here is not evidence. Not
+  inserted: 0118063 Triomphe top-tube levers, 306/051 C-Record ring,
+  316/102 round post, QR sets 314/414/914. 4156 Triomphe S3, 2319 LX,
+  2280 990 front, 3695 C-Record Pista pedals untouched. 5737/5738 aero
+  posts are titled 130/210 mm but the catalogue sells 180 mm styled and
+  130 mm circular; noted, not retitled. No generator override references
+  any changed row.
+
+## Campagnolo "Fluid-Dynamic Wheels" brochure, USA edition — November 1987 (Campy1987_FluidDynamics.pdf, 10 pp)
+
+- Disc wheels only (Ghibli M23, Ghibli M23 "Gyroscopic", Khamsin). Back
+  page "Lonigo (VI) - November '87", West Caldwell NJ distributor on the
+  cover. Has a usable text layer; the parts table is p 9. Photo p 5 shows
+  a Delta brake in use, consistent with Delta shipping in 1987.
+- Numbering: R0xx1 Ghibli, R0xx3 Gyroscopic, R0xx2 Khamsin, R0xx4 Khamsin
+  convertible rear. Fronts 24/26/28 in, 100 or 90 mm; rears 28 in only,
+  three thread variants (IT/IN/FR) per wheel. Gyroscopic is front only.
+- DB shape is one row per model (no groups, no per-size rows); kept that.
+- Added: 7016 "Ghibli M23 (front)" 1987-94 (year_to copied from 6958);
+  7017 "Ghibli M23 Gyroscopic (front)" 1987-87 (only appearance known;
+  first insert overran 255 chars and was
+  truncated; fixed with a 252-char description in the same SQL file). source_id MANUAL-FDW-1987-*.
+- Years: 6958 Ghibli M23 road rear and 6957 Ghibli track rear year_from
+  1980 -> 1987 (placeholder; catalogue is the only evidence, the Khamsin
+  sibling 6959 says 1986 so 1986 would also be defensible).
+- Notes appended ("Fluid-Dynamic brochure"): 6958 R0501/11/21; 6957
+  R0531/41/51; 6959 R0594/604/614 convertible rear, R0562-82 road rear,
+  R0102/R0112 fronts.
+- Left: 6956 Ghibli 7sp cassette (1995-99), Scirocco, Bora, Shamal,
+  Vento — later models. No separate Khamsin front row.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
