@@ -1000,6 +1000,45 @@ in the repo records them except this file.
   2800 26.0 clamp 1990; Cinelli_10_Speed_Drive.pdf in Downloads not yet
   processed.
 
+## Shimano "A Complete Line of Shimano" — printed 12.1975 (equusbicycle.com/bike/shimanocatalog75/, 20 spread PDFs)
+
+- First Shimano catalogue in the log. The Bicycle Info Project page
+  links each thumbnail to pdf/shimanocat7500NN.pdf (one spread each,
+  4537x2936 JPEG inside, usable OCR layer); merged to shimano75.pdf in
+  the scratchpad. Back cover imprint "'75.12. KM.NP". 37 pages.
+- Contents: Dura-Ace road (DB-100/110 Crane, EA-100, LA-100, LD-500,
+  FA-100/110, HA-100/200, GA-200 + GB-100, BA-100, MA-100, UA-100, Black
+  Series), Dura-Ace track (HA-300, FA-200, GA-100, UA-200), 600 series
+  NEW (DC-200/210, EC-200/210, LB-180, BB-300, BE-100 cantilever,
+  MB-200, HB-100/200, GC-100 + GB-200), Positron DG-100 NEW with LB-500/
+  510, 500 DC-100/110, Titlist DB-200/210 and EB-100, Tourney DB-300/
+  310, Eagle DE-100/200/110/210, Lark DD-100/200/500/300, fronts EC-100
+  Shimano 50 and ED-100/200 Thunder Bird, levers LB-100 to LB-400 and
+  LD-200/300/400, freewheels FC-300/330 and FB-100, hubs HC-100/110/120/
+  200/210 and HD-100, Tourney brakes BB-100/110/200/210 (Auto Adjust
+  NEW), levers MD/MC/MB-100 and MB-110, coaster CC-100 Mighty Mite NEW
+  and CB-100, hub gears TB-100/TC-100/AB-100, disc BC-300 NEW and
+  BC-200 hydraulic, protectors, small parts, outer bands, tools.
+- Added (46, all 1975-76 with year_to guessed; source_id
+  MANUAL-SHI75-1975-<code>): 11 rears, 2 fronts, 11 shifters, 3 track
+  parts (HA-300, FA-200 sprocket, UA-200), 7 brakes and levers, 2
+  freewheels, 5 hubs, 2 geared hubs, 2 bottom brackets. Group ids:
+  Dura-Ace 50, 600 93, Positron 224, 500 133; Titlist/Eagle/Lark/
+  Tourney-generic parts left ungrouped.
+- Retitled: 4539 "Tourney" 300 g -> DB-300; 4540 "Tourney" 274 g NULL
+  years -> DB-310 Tourney GS 1975-79 (weights match the catalogue's
+  300 / 330 g); 413 "600" levers -> MB-200; 1812 GA-100 -> track
+  chainwheel (the catalogue's GA-100 is the track crank, GA-200 road).
+- Years: 3530/3531 600 hubs and 414 levers year_from 1976 -> 1975;
+  4439 Lark W and 1010 BB-100 year_to -> 1975.
+- Notes ("Dec 1975 catalogue"): codes, capacities and weights on 38
+  existing rows. Guarded; longest 219.
+- Left: 600 hub rows 3530/3531 keep their later HB-6110/6120 titles
+  (catalogue codes HB-200/HB-100 in the note); NB/NC/ND/NF fork ends,
+  KA/KB/KD bands and cable parts, PB spoke protectors, small parts and
+  XA/XB tools have no category. Sky Lark and Lark SS/SPO are separate
+  rows since the catalogue separates them; Eagle SPO/GPO likewise.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
