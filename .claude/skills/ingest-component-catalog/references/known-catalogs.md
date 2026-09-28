@@ -514,6 +514,32 @@ in the repo records them except this file.
   pedals. 3699 pedals row says country "France" (velobase error, not
   touched). Toe-clips, reflectors, gear guards, bottle: no category.
 
+## Campagnolo derailleur dedupe — 2026-09-28 (user decision, sections A and B of the report)
+
+- Analysed all 142 Campagnolo front/rear derailleur rows for same-part
+  duplicates. Only 4099 carried bike_spec links (moved to 4096); no
+  generator override referenced a deleted id. SQL kept as
+  campy-derailleur-dedupe.sql; the user ran it (auto-mode blocks DELETEs).
+  127 rows remain.
+- Deleted (source_id prefix, so a velobase crawl reinsert can be spotted):
+  4097 C-Record First Gen. (353F4ECB), 4099 "c record" (01F0EB60), 2284
+  C-Record front (6AEB8E46), 4116 1012/1 1952 (C9705308), 4132 1020
+  Record (1965) (DF4577B3), 4170 Victory S3 1987 (6FFDFE4E), 4156
+  Triomphe S3 (1986) (F5906D74), 4140/4141 Record Ti 9-sp 1997/2000
+  (B63A5BDB, 695C5686), 4100/4101 Cambio Corsa 1940/1945 (4B8F93E2,
+  1299F4FE), 4147 bare 4001 1970-80 (E27153A5), 4150 4001 2nd gen matte
+  (6A32380A), 4130 Record (1991) (1DA3D706), 4161 Valentino G.S.
+  (1DBC4BA3).
+- Merged/retitled: 4096 -> "0102050, C-Record (first generation)"
+  1985-86; 4117 1012/1 from 1952; 4169 Victory S3 1987-88; 4157 Triomphe
+  S3 1986-87; 4139 Record Ti 9-sp 1997-2000; 4102 1001 Cambio Corsa from
+  1940; 4119 1012/4 first version re-dated 1951 -> 1955 (first appears
+  in Catalogo N. 13). Notes on 4148, 4151, 4152, 4133, 4162.
+- Left (section C placeholders, not applied): NULL years on 2280, 2289,
+  4082; 1980 placeholders on 4090, 4089, 2277, 4153. Section D splits
+  (NR v1-v5, Rally gens, cage lengths, finish variants, 0104007 bodies,
+  M022-M024, RD-xxRE series) kept.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
