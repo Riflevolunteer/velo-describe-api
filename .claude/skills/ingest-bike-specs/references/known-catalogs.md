@@ -301,6 +301,40 @@ Link counts are as of the last load; regenerate to confirm.
   the candidate set, not from this catalog's generator edits (verified
   by diffing pre- and post-edit generator output). Loaded rows unaffected.
 
+## 1986 Cinelli — `1986_cinelli_spec.csv` (7 bikes, 64 specs, 32 linked)
+
+- Source is Ten Speed Drive Imports' four-page US brochure
+  (Cinelli_10_Speed_Drive.pdf), no printed date. Dated 1986 from "38
+  years" after the 1948 founding and "Campagnolo's new Record Corsa road
+  group". Transcribed by hand (2026-09-28). Bikes: 850 SLX Super Record
+  Pro, 830 Victory, 840 SLX Competition, 860 Record Corsa (specified),
+  Laser Road and Laser Track (prose only, Extras carries the disc-wheel
+  note), and the SLX Super Corsa frameset as a Frameset-type row with
+  sizes, both paints and the 5.5 lb weight; geometry in Extras. New bike
+  brand created on load.
+- Column layout: 840 lists parts individually (Crankset, Seat Post,
+  Headset, Derailleurs, Pedals); the others give a groupset in
+  "Groupset / Components" (not a linkable label). Toe Clips, Spokes and
+  Cable & Tape kept as plain text.
+- Era picks (1986): Super Record crank -> 1049/A 1509, headset -> 4041
+  2968, SL pedals -> 4021 3716, seat post -> 4051/1 5761; Nuovo Record
+  front 0104007 / rear v5 / hubs 1034 by matcher; Record hubs -> 1035
+  3260 via the widened Hubs range (to 1987); Record SF -> C-Record 322/101
+  3241; Victory SF -> 422 low flange 3281. Regina: CX and CXS chains ->
+  1384; BX ORO -> 2195; CX 6-sp -> 2169; ORO 6-sp -> 2194 (CXS 7-sp has
+  no row). Clement 2001 CF -> 6740. Cinelli 1/A -> 6489 winged C, 1/R ->
+  6491. Concor Rolls -> 5563 Rolls, Concor SC -> 5547 Concor Supercorsa.
+  Ambrosio Synthesis / Montreal Durex / Metamorphosis matched themselves.
+- Override collision: Seat Posts 'campagnolo super record' (1981
+  Kalkhoff -> 5759 two-bolt 4051, which ended 1980) ranged to
+  { to 1980: 5759, from 1981: 5761 }; Kalkhoff bike_spec 780 re-pointed
+  to 5761 by one-off UPDATE (kalkhoff-seatpost-fix.sql). Kalkhoff still
+  57 links.
+- Left unlinked: bare "Cinelli" bars, Almarc leather bar (no row),
+  Alpina spokes, Bike Ribbon tape, Binda straps / toe clips, groupset
+  cells, frame tubing.
+- Regression: all other catalogs unchanged.
+
 ## Nuovo Record rear-derailleur ranges (corrected 2026-09-27)
 
 While reading this catalog the DB's own dating for the 1020/A rows came up:

@@ -514,7 +514,7 @@ const COMPONENT_OVERRIDES = {
     // the gold- and red-label rows; the road bikes took the high-flange gold.
     'normandy luxe competition': 3388,
     'normandy sport with quick release': 3390,
-    'campagnolo record': [{ to: 1985, id: 3260 }, { from: 1990, id: 3265 }], // 1035 high flange / Record 8sp
+    'campagnolo record': [{ to: 1987, id: 3260 }, { from: 1990, id: 3265 }], // 1035 high flange (to 1987, covers 1986 Cinelli) / Record 8sp
     // 1975 Motobecane.
     'campagnolo record large flange': 3260,
     'campagnolo record low flange': 3259, // Campagnolo 1034, Record (Low Flange)
@@ -546,6 +546,9 @@ const COMPONENT_OVERRIDES = {
     // 1985 Raleigh (Sheldon Brown scan).
     'sansin "gyro" precision sealed bearing alloy small flange qr': 3601, // Sunshine Gyro-Master
     'shimano 105 small flange alloy qr 36 hole sealed': 3526, // Shimano 105, 105 Golden Arrow
+    // 1986 Cinelli (Ten Speed Drive Imports).
+    'campagnolo record sf': 3241, // 322/101 C-Record small flange, fitted with the 1986 Record Corsa group
+    'campagnolo victory sf': 3281, // Victory 422 (low flange)
   },
   Brakes: {
     // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
@@ -703,6 +706,9 @@ const COMPONENT_OVERRIDES = {
     'selle italia turbo matic': 5516, // Selle Italia Turbo Matic 2
     'selle italia flite': 5489, // Selle Italia Flite Titanium
     'avocet gelflex r20': 5249, // Avocet R20 GelFlex
+    // 1986 Cinelli (Ten Speed Drive Imports).
+    'concor rolls': 5563, // Selle San Marco Rolls
+    'concor sc': 5547, // Selle San Marco Concor Supercorsa
   },
   Handlebars: {
     // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
@@ -724,6 +730,10 @@ const COMPONENT_OVERRIDES = {
     'sr custom': 6659, // Sakae/Ringyo (SR) CUSTOM
     // 1985 Raleigh (Sheldon Brown scan).
     'sr ae alloy aero black': 6657, // Sakae/Ringyo (SR) Aero
+    // 1986 Cinelli (Ten Speed Drive Imports).
+    'cinelli mod 1 r': 6491, // Cinelli 1R (1/Record)
+    'cinelli 1 a': 6489, // Cinelli 1A (winged "C" logo, 1978-82)
+    'cinelli mod 1 a': 6489, // Cinelli 1A (winged "C" logo, 1978-82)
   },
   Shifters: {
     // 1987 Bianchi. The catalog's "levers" are the down-tube shifters.
@@ -782,6 +792,8 @@ const COMPONENT_OVERRIDES = {
     'sr sp 154': 3927, // Sakae/Ringyo (SR) SP-154
     'sr sp154 alloy quill type': 3927, // Sakae/Ringyo (SR) SP-154
     'suntour road vx quill': 4014, // SunTour PL-1500, Vx
+    // 1986 Cinelli (Ten Speed Drive Imports).
+    'campagnolo sl': 3716, // 4021 Super Record Strada (Superleggeri)
   },
   'Seat Posts': {
     // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
@@ -790,7 +802,7 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace': [{ from: 1990, id: 5895 }], // Shimano SP-7410, Dura-Ace 7400 — 1993 Bianchi
     alloy: null, // generic word; substring-hits "Titan alloy"
     // 1981 Kalkhoff.
-    'campagnolo super record': 5759, // Campagnolo 4051, Super Record (Campagnolo Script)
+    'campagnolo super record': [{ to: 1980, id: 5759 }, { from: 1981, id: 5761 }], // 4051 two-bolt to 1980; 4051/1 single-bolt 1980-85 (1981 Kalkhoff row 780 re-pointed 2026-09-28, 1986 Cinelli)
     'shimano 600 ax': 5886, // Shimano SP-6300, 600 AX
     // 1983 Bianchi. "fluted" Campagnolo post of the period is the 1044 NR.
     'campagnolo nuovo record fluted': 5748, // Campagnolo 1044, Nuovo Record (Superlegerro)
@@ -802,6 +814,7 @@ const COMPONENT_OVERRIDES = {
     'sugino sp kc 230mm alloy micro adjust': 5928, // Sugino SP-KC
     'sugino micro adjust model sp ck': 5928, // catalog prints SP-CK for the Sugino SP-KC
     'sugino micro adjust sp ck': 5928, // catalog prints SP-CK for the Sugino SP-KC
+    // 1986 Cinelli (Ten Speed Drive Imports).
   },
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
@@ -813,6 +826,8 @@ const COMPONENT_OVERRIDES = {
     // 1993 Bianchi.
     rohloff: 1396, // Rohloff SLT 99 (Road)
     'shimano dura ace chain': 1414, // Shimano CN-7401, Dura-Ace 7400
+    // 1986 Cinelli (Ten Speed Drive Imports).
+    'regina cxs': 1384, // Regina CX / CX-S
   },
   Cassettes: {
     // 1993 Bianchi ("cassette" noun stripped from the CSV).
@@ -829,6 +844,10 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace 13 23t': 2222, // Shimano MF-7400, Dura-Ace (7sp) — paired with SIS-7
     // 1985 Raleigh (Sheldon Brown scan).
     'suntour 13 24 7 speed new winner': 2239, // SunTour New Winner 7 speed (DB row dated 1990; only 7-sp New Winner row)
+    // 1986 Cinelli (Ten Speed Drive Imports).
+    'regina bx oro': 2195, // Regina Oro BX (6 speed)
+    'regina cx 6 speed': 2169, // Regina CX/CX-S (6 speed)
+    'regina oro 6 speed': 2194, // Regina Oro (6 speed)
   },
   Tyres: {
     'clement criterium silk tubular': 6748, // Clement Criterium Seta (seta = silk)
@@ -842,6 +861,9 @@ const COMPONENT_OVERRIDES = {
     'vittoria giro del mondo': 6889, // Vittoria Giro del Mundo
     // 1993 Bianchi (ambiguous between Servizio Corse and Squadre Prof).
     'vittoria corsa cx': 6880, // Vittoria Corsa CX Servizio Corse
+    // 1986 Cinelli (Ten Speed Drive Imports).
+    'clement 2001cf': 6740, // Clement CF 2001
+    'clement 2001 cf': 6740, // Clement CF 2001
   },
   Rims: {
     'nisi ava sprint alloy': 5123, // Nisi
