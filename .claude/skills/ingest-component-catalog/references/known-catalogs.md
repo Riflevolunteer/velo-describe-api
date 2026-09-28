@@ -671,6 +671,32 @@ in the repo records them except this file.
   shifters/rings 78->64 (68 rows). Remaining Campagnolo categories not
   analysed: rims, wheels, freewheels/cassettes, chains, stems/bars.
 
+## Campagnolo rim and wheel dedupe — 2026-09-28 (user decision, sections A and B)
+
+- Analysed 42 rows (30 rims, 12 wheels). No deleted row carried a
+  bike_spec link; the generator's 'campagnolo omicron' rim override keeps
+  its target 4962. SQL kept as campy-rim-dedupe.sql; the user ran it.
+  37 rows remain. No wheel duplicates found.
+- Deleted (source_id prefix): 4945 Barcelona 92 high profile (853D7D7E),
+  4963 Omicron Electrox (2F4933C9), 4964 Omicron Oxide (75428F3E), 4960
+  Omega Strada hardox clincher (FE7484FC), 4949 Epsilon Strada Oxide
+  (6C0CA46D).
+- Merged/retitled: 4946 -> "Barcelona 92 (high profile)"; 4962 ->
+  "Omicron Strada (polished, Electrox or oxide finish)"; 4948 ->
+  "Epsilon Strada (G25 or oxide finish)"; 4957 Omega Strada Hardox noted
+  as clincher, 395-430 g.
+- Left (section C, not applied): NULL years on 4944 ATEK, 4947 Electron,
+  4948 Epsilon, 4950 Gamma, 4954 Moskva 80, 4958 Omega XL; placeholder
+  1980/1990 on 4967 Seoul 88, 4952 Mexico 68, 4953 Montreal 76, 4968
+  Shamal 12 HPW, 4961, 4969, 4946; 4973 should read "060.102, Record
+  Strada"; wheels 6955 title in capitals, 6961/6962 Shamal and 6963
+  Vento dated 1990. Section D kept: Omega profiles/widths, the five 1986
+  Record/Victory rims, all wheel rows.
+- Day's seven dedupes: derailleurs 142->127, brakes/levers 70->57,
+  cranks/BBs 87->80, hubs/headsets 89->79, pedals/posts 69->60,
+  shifters/rings 78->64, rims/wheels 42->37 (73 rows). Not analysed:
+  freewheels/cassettes/sprockets, chains, stems/bars, saddles, tyres.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
