@@ -743,6 +743,31 @@ in the repo records them except this file.
   1980 -> 1985 start change does not affect it. The 1049/A no-flute rows
   are not referenced.
 
+## Campagnolo "Euclid" brochure, USA edition — September 1988 (euclid89.pdf, 13 pp)
+
+- A4 scan, no text layer; cover "9/88", back "September 88" (Centrooffset,
+  Mestrino). The filename says 89 but the brochure is 1988. Page 2 (group
+  photo spread) did not render; the parts list on p 12 is complete. First
+  mountain-bike group, code M000, Chorus-derived. Group id 10 exists.
+- Basic composition: M010 gear, M022 front (M023 adjustable, M024 35-36
+  mm), M500-CP brakes + levers (standard or Biofitting; Syncro levers
+  0118122 6-sp, 0118124 7-sp on the brake-lever stalk, I.G.A.S.; M2KD
+  third-brake kit), M040 triple 110/74 (170/175/180; 46-50 / 36-38 /
+  24-28), M0H0 BB 132 mm (136 asymmetric and 140 options), M600-PR pedals
+  (M600-AM steel clips), M300 hubs (M300-FG, M300P, M300PFG; 7 or 9 mm
+  ends; gear-guard versions), M0R8 post (M0RV two straps; 50/60 mm frame
+  QR), M0D0 headset with cable carrier. Gear guards 1390001/2.
+- No inserts. Years (catalogue-backed): 17 Euclid rows year_from 1989 ->
+  1988 (225, 569, 1491, 1492, 2291, 2292, 7030, 2958, 3252, 3253, 3705,
+  4113-4115, 5745, 5746, 5977); 28 M0H0 1990 -> 1988-91; 3253 M300-FG to
+  1991. 224 later-version levers and 2290 graphite front stay 1990-91.
+- Notes appended ("Euclid brochure"): M-numbers and specs on 16 rows,
+  including that the brochure lists one M010 gear where velobase has
+  three cage lengths (4113/4114/4115 kept as they are).
+- Left: solid-spindle M300P/M300PFG and the Biofitting lever as notes,
+  not rows; accessories (bottle 1120007, spoke guard, mudguard,
+  reflectors) have no category.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
