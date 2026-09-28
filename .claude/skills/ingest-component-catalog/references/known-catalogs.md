@@ -182,6 +182,50 @@ in the repo records them except this file.
   crawler could reinsert them under their original source_ids
   (AA0D3126-…, 39DECE91-…); if they reappear, delete again.
 
+## Campagnolo USA "Bicycle Components" — 1982 (Campy1982_Olympic/, 50 JPGs)
+
+- Houston, Texas edition, copyright 1982, LA 1984 Olympic supplier cover.
+  Printed page = JPG number. Bound with `bind-images-to-pdf.sh`, but the
+  1800 px downscale made the gruppo pages unreadable: read those JPGs
+  directly (pp 4-9, 12, 23, 25, 26, 31, 34, 36, 38, 41). Carries the new
+  seven-digit identification numbers in brackets (0102018 = 4001, 0104007 =
+  1052/NT, 0104006 = 3600/NT, 5011/06 = 3550, 6011/00 = 980 rear). velobase
+  already used it: 2276 (3600/NT) says "82 Olympic Catalog".
+- Five gruppos: Super Record road (Ti and steel), Nuovo Record, Gran Sport
+  road, Gran Sport Touring (0305/0306 116 BCD cranks, 5031/00 triple BB,
+  3550 Gran Sport Rally), Record/SR track. SR hubs 4011/4014/4101/4104 and
+  the one-bolt 4051 are gone; SR uses Record hubs and 4051/1. Gran Sport now
+  has its own 3600/NT front, 3700 pedals, 3800 post, 2040/F and 2040/FS
+  brakes, 0304 crank. 980 rear and front listed. First freewheel (6-speed,
+  3 pawl, 12 ranges), HiLo hub, BMX 305/806/821/822, toe clips.
+- Dropped since 1975: Velox, Gran Turismo, Valentino Extra and 1204-1208
+  levers, 1250/1252 solid-axle Nuovo Tipo, 1045, 1044/a, 1045/a posts.
+- Added: 7007 "1022/00, Record (braze-on)" 1982-85; 7008 "1046/3, Record
+  Triple and Cyclocross" BB 1982-85; 7009 "5031/00, Gran Sport Touring
+  Triple" BB 1982-85; 7010 "821, BMX (small flange)" and 7011 "822, BMX
+  (large flange)" hubs 1980-82 (group BMX). source_id MANUAL-CAT82-1982-*.
+  End years are guesses.
+- Notes appended: 4083 Rally Touring = 3550 Gran Sport Rally / 5011/06
+  (225 g matches); 553, 554 Gran Sport brakes = 118 2040/F and 117 2040/FS.
+- Years (all year_to → 1982, 48 rows): 2276, 2316; levers 5991, 5993, 5994,
+  5995, 5996, 5989, 5979, 5988; hubs 3259, 3260, 3270, 3271, 3230, 3233,
+  3261, 3262; cranks 1505, 1507, 1495, 7003, 1472, 1474, 1475, 1480; BBs 40,
+  30, 20, 43, 41, 42; headsets 2963, 2966, 2951, 2968; pedals 3708, 3709,
+  3711, 3715, 3688, 3716, 3717, 3692; posts 5749, 5734, 5761; brakes 553,
+  554; freewheel 2072.
+- Confirmed: 4001 2nd gen rows, NR v3 to 1981 / v4 from 1982, 3500, 980
+  (4087, 2279), 1052/NT to 1982 / 0104007 from 1982, 1052/SR from 1979,
+  Rally 1.1 to 1982, post-CPSC 2040/2040-1, 4061 v1 to 1982, 7005, 1049,
+  1049/A, 4141, 7001/5965/7002.
+- Left: 3229/3231 solid-axle Nuovo Tipo stay at 1975 (absent here); both
+  4131 rows extended since the catalog does not distinguish axles; 1473
+  Bianchi-labelled 0304 untouched; toe clips have no category.
+- Deleted (user decision, 2026-09-28): 2296 "Record 1052/1" (bare 1972
+  example, covered by 2298/2297) and 2304 "1052/1, Record (2nd version
+  variation)" (no stated feature, covered by 2305). Kept 2303 (no slot) and
+  2305 (slotted cable stop) as real variants. Original source_ids
+  7872E656-… and 35CEFF78-…; delete again if a crawl reinserts them.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
