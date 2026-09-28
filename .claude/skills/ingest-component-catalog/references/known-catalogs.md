@@ -590,6 +590,29 @@ in the repo records them except this file.
   triple" 1990 ungrouped. Section D kept: 1049 v1-v4, 4031/4131 gens,
   1046 family, 0304-0306, C-Record gens, graphite finishes, 1990s series.
 
+## Campagnolo hub and headset dedupe — 2026-09-28 (user decision, sections A and B)
+
+- Analysed 89 rows (26 headsets, 63 hubs). No deleted row carried a
+  bike_spec link or a generator override. SQL kept as
+  campy-hub-headset-dedupe.sql; the user ran it. 79 rows remain.
+- Deleted (source_id prefix): 2957 headset "don't know" (CF525DD7), 3225
+  "pista/track hubs" (DE49DFC1), 3238 FH-00AT 1993 (991EFBB6), 7000 Sport
+  Strada headset (MANUAL-CAT16SUP, my own insert; it was the 1040/A),
+  3254 and 3255 unnumbered 1950 Gran Sport hubs (9A973289, F6003587),
+  3228 Record 'SU' engraved (46B49944), 3235 Athena 7 speed (EDF21B4A),
+  3264 and 3266 Record 8sp rear/front (9445FD63, 6F0FE940).
+- Merged/extended: 2951 1040/A Gran Sport headset 1971-85 with the
+  Sport-headset race numbers; 3237 FH-00AT to 1993; 3265 Record 8sp
+  1991-96; notes on 3256 (pressed flanges) and 3259 (SU stamp).
+- Left (section C, not applied): 2953 and 3239 Century finish dated
+  1980 / 1985-90 (should be c. 1991-92); titles "1039, <C> Record Strada"
+  (2963) and "Record Pista # 1040" (2966); 3272 4101 start 1970 (should
+  be 1974); 3232 1253 kidney-bean at 1972 only; 3258 disc hub no years.
+  Section D kept: Cambio Corsa front/rear, 1034-1036 flanges, 1250-1253,
+  1039 eras, C-Record 321/322, SR 4011/4014/4101/4104, 3263 alloy body.
+- Running total for the day's four dedupes: derailleurs 142 -> 127,
+  brakes/levers 70 -> 57, cranks/BBs 87 -> 80, hubs/headsets 89 -> 79.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
