@@ -1077,6 +1077,58 @@ in the repo records them except this file.
   bare "Positron" rows untouched (PF rows inserted separately); 1197/
   1198 AX cassette rows untouched.
 
+## Shimano 1984 Bicycle System Components Dealer Catalog — June 1984 (Downloads/Shimano 84.pdf, 162 pages, scan, no text layer)
+
+- Colophon "(c) Jun. 1984 ... 0684 FC/10M". 160 numbered pages; PDF page =
+  catalogue page + 1. Read in batches of 10, no pages dropped. Sections:
+  series feature spreads (AX, EX, New 600EX, 105, Deore XT, DX, FF/PPS),
+  system combination charts (14-19), spec charts (20-21), then per-model
+  parts pages with weights and capacities for rear/front derailleurs,
+  levers, hubs, freehubs, internal hubs, freewheels, cranks, pedals,
+  brakes, brake levers, chains, headsets, seat posts, stems, plus fork
+  ends, protectors, carded parts, clamps, cables and tools.
+- Dealer/service book: superseded 1981-83 ranges (Dura-Ace 10, 7100, EX,
+  600 Arabesque, 600 AX, Deore, Altus, FF/PPS, Tourney) keep full spec
+  and parts pages beside the new 1984 lines (New 600EX 6207, 105 Golden
+  Arrow, Z components, Deore XT M700, AL-11, Biopace CR-BP10, PD-AD20,
+  PD-7310, Positron-FH400, DX/SX BMX, SG three-speed hubs). Adamas AX is
+  gone except PD-AD20 and FD-AX50; PD-MX10 is stamped DISCONTINUED.
+- User chose "apply without budget": group-level parts only. Added 24
+  (1984-1984, source_id MANUAL-SHI84-1984-<code>): RD-PF40, RD-P240,
+  RD-P210, RD-RS11 / RS12; FD-T105; SL-Z403, SL-MT50, SL-AT11 / AT12,
+  SL-BC10; HB-AQ11 / AQ21, HB-AN11 / AN21, HB-F105 / FH-R105, FH-Q620,
+  FH-N620 / K610; SG-3S20, SG-2S10, SG-3S23, SG-3C23 (Geared Hubs);
+  MF-FF50; FC-FF35; BB-6210; PD-7310, PD-AD20; BL-Z304. Groups: Positron
+  224, 105 Golden Arrow 43, Z-Series 103, ALTUS 183, 600 93, 600EX 46,
+  Dura-Ace 50, Adamas AX 47; RS, AL-11, alloy hubs, SQ/SN freehubs,
+  SG-3S20/2S10, FF parts ungrouped.
+- Not inserted (budget, listed for a later pass): SL-PF45, P221, P213,
+  PF50, EM50, 2S21, 3S45, 3S20, LS10, QS10, QP10 levers; HB-SN11 / SN31;
+  HB-MX25 / 26, FH-MX15, FH-MX20, FC-MX61 / BB-MX60, PD-MX10 / MX20,
+  BR-MX10 / 20, BL-MX10 / 20, SF-MX10, SP-MX20 (DX/SX BMX); CB-D110
+  coaster; SF-1100; BR-TS10 / 30 / 40 / 60, BR-C800 / C801; BL-D800 /
+  D805, D500, HD30, HD85, LM10, PL10, LF10.
+- Retitled: 4445 "400FF" -> RD-401F, 400FF (to 1984); 123 "105 Golden
+  Arrow" BB -> BB-3L11 / BB-3P11 1983-86; 959 "BR-Z57, 105 Golden Arrow"
+  -> BR-Z570 / Z640 / Z720 / Z790, Z-Series, group 103. 410 BL-Z306 stays
+  in the 105 group with a Z-Series note.
+- Years -> 1984 (34 rows, all had a full parts page): FH-7250/7260,
+  FH-6261, HB-6110/6120, CN-6200, CN-7100, SL-7210/7220, HS-7200,
+  MF-6151, MF-1500 (were 1982 from the 1982 book); HB-7020, SS-7000,
+  CN-7000, FC-7000, FH-7370, FH-6361 hub (were 1983); BR-7210 998,
+  BL-H105 409; RD-AT11/AT12, FD-AT11/AT12, FD-AL11, FD-FE12, SL-AT22,
+  SL-Z408, FH-6207 3537/3538, FH-5A10, CR-BP10 1280, FC-FF33 1800,
+  PD-MX15 3966 (velobase 1980 placeholders, year_from left alone).
+  RD-Z501 4544 year_from 1986 -> 1984; 4543 GS year_from NULL -> 1984.
+- Notes ("1984 dealer catalogue", 30 rows): capacities, weights, cage and
+  band variants, Italian conversion part, April-1984 Biopace rings.
+  Guarded on tag and LENGTH; no row reached 255.
+- Left: SP-7320 5897 and SP-6322 5888 are not in this book (only 7300/
+  7310/7322 and 6300/6310), untouched; FD-Z rows carry a velobase "-HS"
+  suffix; 3966 PD-MX15 still grouped Deore XT (it is Shimano SX); 7149
+  FH-6263 not listed here. Out of scope: CP protectors, FE fork ends,
+  SM-HP10, SM-BT10, carded parts, clamps, cables, tools.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
