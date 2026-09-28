@@ -393,8 +393,8 @@ in the repo records them except this file.
   Record Friction levers, D300 small-flange hubs, D040 crank (135 BCD,
   170/172.5, rings 39-44 / 48-53), D0H0 BB, D600-AM pedals, D0D0 headset,
   C0R2 post. Alternatives: C022/C023 clip-on fronts, 0282/0283 Friction,
-  0221-23 Syncro 2, C0R2-S, D056 Compact levers. C-prefixed parts are
-  shared with Chorus. Rear has the "Multi Function System" five-position
+  0221-23 Syncro 2, C0R2-S, D056 Compact levers. (C022/C023/C0D0/C0R2 are Chorus parts fitted to
+  Athena and Croce d'Aune; settled by the 1988 dealer parts catalogue.) Rear has the "Multi Function System" five-position
   hanger insert (20-30 T).
 - Added: 7025 "C0R2, Athena (styled)" post 1988-89 (year_to guessed from
   the 1990 SP-10AT v2 row); 7026 "D056, Athena Compact" levers 1988.
@@ -406,6 +406,87 @@ in the repo records them except this file.
 - Left: 4090 graphite rear and 557 Monoplaner graphite at 1980-90 (later
   finishes, not in this brochure); 5736 SP-10AT v2 at 1990; 215 Centaur
   Compact 1990 is a different part from D056.
+
+## Campagnolo "Chorus" brochure, USA edition — April 1988 (Campy1988_Chorus/, 11 JPGs)
+
+- Thumbnails (509x700), legible. Cover "4/88", back "April 88". Group
+  code 700, 700-series part numbers (not the C-prefix I guessed from the
+  Athena list). Parts list is p 10 (tn_10.jpg). Group id 8 exists.
+- Group 700: 715/100 Monoplaner brakes + levers, 265/CS SM rear + braze-on
+  front, 542/S Friction levers, 722/101 hubs, 706/101 crank (135 BCD,
+  170/172.5/175, rings 39-54), 703/101 BB, 705/000 pedals, 704/101
+  headset, 545 post 180 mm. Alternatives: 280/CS LG rear, 702/101 clip-on
+  front, D056 Compact levers, 543/ST 544/F Friction, 325-327 Doppler,
+  535-537/6AB and 538-541/7AB Syncro with Dual-Mode A/B inserts, 716/102
+  post 130 mm. Rear has "Dual-Mode System" (parallelogram at 5 or 30 deg)
+  and the first barrel adjuster on a Campagnolo rear.
+- Added: 7027 "542/S, Chorus Friction" 1988-90, carrying all lever
+  numbers in the description. source_id MANUAL-CHO88-1988-542-S.
+- Years: 25 BB, 220 levers, 565 Monoplaner, 2287 adjustable-clamp front
+  year_from 1980 -> 1988; 3249 722/101 hubs year_to 1987 -> 1988.
+- Notes appended ("Chorus brochure"): 4108, 4107, 2286, 2287, 1487, 25,
+  565, 220, 2956, 3249, 3700, 5742.
+- Correction: 7025 (Athena C0R2 post) no longer says "shared with
+  Chorus"; the Chorus post is 545 / 716/102 and the DB's Chorus aero post
+  5742 is C0R1, the 1988 dealer catalogue later showed the 700-series numbers were
+  provisional and C0R2/C0D0 are Chorus parts shared with Athena and
+  Croce d'Aune; 7025/7028 corrected again in the DPC88 run.
+- Left: 5976 and 222 graphite-finish rows at 1980 (later finish); 1992+
+  CH-suffixed rows untouched.
+
+## Campagnolo "Croce d'Aune" brochure, USA edition — March 1988 (Campy1988_Croce/, 11 JPGs)
+
+- Full-size scans (1308x1800). Cover "3/88", back "March 88"; earliest of
+  the four 1988 group brochures. Group code B000, B-series numbers; parts
+  list is p 10 (10.jpg). Group id 9 exists.
+- Group B000: B500 Delta "Penta-Drive" brakes + Power-Grade levers, B100
+  SM rear (Twin-Axle System) + braze-on front, 0271 Doppler levers, B300
+  hubs, B040 crank (135 BCD, 170/172.5/175, rings 39-47 / 48-54), B0H0 BB,
+  B620-L Triple Bearing pedals, C0D0 headset, C0R2 post. Alternatives:
+  B010-LG rear, A055 Record Compact levers, C022/C023 clip-on fronts,
+  0272/0273 Doppler, 0281-83 Friction, 0221-23 Syncro 2 6 sp and
+  0221-7/0222-7/0223-7 7 sp, B620-A steel clips, B620-R Multi-Size clips,
+  C0R2-S. C-prefixed parts are Chorus parts, shared with Athena (see DPC88).
+- Added: 7028 "C0D0, Croce d' Aune" headset 1988-91 (year_to from sibling
+  front/hub rows). source_id MANUAL-CDA88-1988-C0D0.
+- Years: 4112, 4111, 567, 27 placeholder 1980-1980 -> 1988-91 (year_to
+  from siblings, only 1988 evidenced); 5744 post year_from 1980 -> 1988.
+- Notes appended ("Croce brochure"): 4112, 4111, 2288, 567, 223, 1489,
+  27, 3251, 3703, 5744, 5971 (7-speed Syncro 2 suffix).
+- Correction: 7025 Athena C0R2 post now says "shared with Croce d'Aune".
+- Left: 1490 and 2289 graphite rows; no Croce-specific shifter exists and
+  none is listed (Record levers shared), so none inserted.
+
+## Campagnolo Dealer Parts Catalogue — 1988 (1988CampagnoloDealerPartsCatalogue.pdf, 114 pp)
+
+- Spare-parts catalogue, no text layer, no printed date (1988 from the
+  filename; content predates Euclid/Centaur 1989). Six tabbed sections:
+  Athena (blue), Chorus (magenta), Croce d'Aune (green), Record, Record
+  Pista, Record Keirin (red). Each has a Basic Group / Substitutive
+  components table then an exploded page per part with seven-digit
+  sub-part numbers. Read visually in six batches of 20.
+- Settles the numbering: A=Record, B=Croce, C=Chorus, D=Athena; x010
+  rear, x021/22/23 fronts, x300 hubs (x031/x032), x040 crank (x071/x072),
+  x0H0 BB, x500 brakes (x051/x052) + x053 lever, x600/x620/x630 pedals,
+  x0R2 post, x0D0 headset. The x100 codes in the US brochures were
+  gear+front subgroups; the Chorus brochure's 700-series and the Record
+  brochure's 02xx lever numbers were provisional (now C0xx, A2xx).
+- Sharing: Athena and Croce use Chorus C021 front, C0R2 post, C0D0
+  headset; Record uses C023 adjustable clip. Chorus and Athena ship A281
+  Record Friction levers, Croce and Record A271 Doppler. Compact levers:
+  D056 (Athena, Chorus), A055 (Croce, Record). Seat pins: tables say
+  x0R2/x0R8, parts pages x0R1/x0R7 (confirms 5755/5739 A0R7).
+- No inserts: every part already had a row.
+- Years: 7018-7024 (Keirin/Pista/Triple Bearing rows from the Nov 1987
+  brochure), 7014, 23, 1485, 3242, 3243, 3695 year_to 1987 -> 1988.
+- Notes appended, tag "DPC88:", 65 rows across all six groups (guarded
+  with a LENGTH check; 5971 skipped at 248 chars). Longest now 251.
+- Corrections: 7025 -> "Chorus C0R2 styled seat pin, also on Croce
+  d'Aune"; 7028 -> "Chorus head set, also on Athena"; 7027 542/S Chorus
+  Friction shortened and noted that DPC88 lists Chorus with A281 (kept,
+  user may prefer deletion since it is a provisional number).
+- Left: Syncro insert codes 7222063-7222088, toe clips, straps, bottle
+  1120005 (no category). 5971 Syncro II untouched (full).
 
 ## Cross-catalog notes
 
