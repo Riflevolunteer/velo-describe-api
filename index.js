@@ -451,17 +451,49 @@ app.get('/searchBikes', function (req, res, next) {
 // eBay Sporting Goods > Cycling > Bicycle Components & Parts. Scopes every
 // search to this category so a generic part name (e.g. "Simplex") doesn't
 // pull in unrelated listings from other categories that happen to match the
-// same keywords. Category IDs are marketplace-specific, but this one holds
-// for EBAY_US, the only marketplace queried today.
+// same keywords. Confirmed live on every marketplace in EBAY_MARKETPLACES.
 const EBAY_BICYCLE_PARTS_CATEGORY_ID = '57262'
+
+// Marketplaces this app is allowed to query, matching the brands' home
+// markets already covered by ingested catalogues (French Simplex, Italian
+// Campagnolo/Nisi, British Raleigh/Brooks, German Sachs). All confirmed live
+// against the Browse API with the category filter above before adding here.
+const EBAY_MARKETPLACES = new Set(['EBAY_US', 'EBAY_GB', 'EBAY_DE', 'EBAY_FR', 'EBAY_IT'])
+const DEFAULT_EBAY_MARKETPLACE = 'EBAY_US'
+
+// Validates the optional ?marketplace= query param against EBAY_MARKETPLACES,
+// defaulting to DEFAULT_EBAY_MARKETPLACE. Throws a 400 error object (same
+// shape as fetchEbayListings) on an unrecognized value, rather than silently
+// falling back — an unrecognized marketplace is almost always a typo the
+// caller should see, not a query that should quietly run against the US site.
+function resolveMarketplace(req) {
+  const marketplace = req.query.marketplace
+  if (!marketplace) return DEFAULT_EBAY_MARKETPLACE
+  if (!EBAY_MARKETPLACES.has(marketplace)) {
+    const error = new Error(`Unsupported marketplace: ${marketplace}. Supported: ${[...EBAY_MARKETPLACES].join(', ')}`)
+    error.status = 400
+    throw error
+  }
+  return marketplace
+}
+
+// Same as resolveMarketplace but for /getTopListings, which can fan out to
+// every marketplace at once (?marketplace=ALL) since merging listings (each
+// keeping its own price/currency) doesn't have the cross-currency blending
+// problem /getMarketPlacePrices' single min/max/avg would.
+function resolveMarketplaces(req) {
+  if (req.query.marketplace === 'ALL') return [...EBAY_MARKETPLACES]
+  return [resolveMarketplace(req)]
+}
 
 // Shared eBay item search used by /getMarketPlacePrices and /getTopListings so both
 // endpoints always apply the same affiliate tracking header and error handling.
-async function fetchEbayListings(query, limit, accessToken) {
+async function fetchEbayListings(query, limit, accessToken, marketplace) {
   const result = await fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${encodeURIComponent(query)}&category_ids=${EBAY_BICYCLE_PARTS_CATEGORY_ID}&limit=${limit}`, {
     method: 'get',
     headers: {
       'Authorization': `Bearer ${accessToken}`,
+      'X-EBAY-C-MARKETPLACE-ID': marketplace,
       'X-EBAY-C-ENDUSERCTX': 'affiliateCampaignId=5339210616'
     }
   })
@@ -482,15 +514,20 @@ app.get('/getMarketPlacePrices', async function (req, res, next) {
   }
 
   try {
+    const marketplace = resolveMarketplace(req)
     const accessToken = await getAccessToken()
-    const itemSummaries = await fetchEbayListings(query, 10, accessToken)
+    const itemSummaries = await fetchEbayListings(query, 10, accessToken, marketplace)
     const prices = itemSummaries.map(itemSummary => Number(itemSummary.price.value))
 
     res.send(
       {
         maxPrice: prices.length ? Math.max(...prices) : 0,
         minPrice: prices.length ? Math.min(...prices) : 0,
-        avgPrice: prices.length ? Number(prices.reduce((a,b) => a+b, 0) / prices.length).toFixed(2) : 0
+        avgPrice: prices.length ? Number(prices.reduce((a,b) => a+b, 0) / prices.length).toFixed(2) : 0,
+        // All items in one search share a marketplace, so a single currency
+        // covers the whole result set - null only when there were no items.
+        currency: itemSummaries[0]?.price?.currency || null,
+        marketplace
       })
   } catch (err) {
     console.error(err)
@@ -506,15 +543,30 @@ app.get('/getTopListings', async function (req, res, next) {
   }
 
   try {
+    const marketplaces = resolveMarketplaces(req)
     const accessToken = await getAccessToken()
-    const itemSummaries = await fetchEbayListings(query, 5, accessToken)
-    const listings = itemSummaries.map(itemSummary => ({
-      title: itemSummary.title,
-      url: itemSummary.itemAffiliateWebUrl || itemSummary.itemWebUrl,
-      price: itemSummary.price ? Number(itemSummary.price.value) : null,
-      currency: itemSummary.price ? itemSummary.price.currency : null
-    }))
-    res.send({ listings })
+    // allSettled: one marketplace erroring (rate limit, transient failure)
+    // shouldn't sink a request that asked for all five.
+    const perMarketplace = await Promise.allSettled(
+      marketplaces.map(async (marketplace) => {
+        const itemSummaries = await fetchEbayListings(query, 5, accessToken, marketplace)
+        return itemSummaries.map(itemSummary => ({
+          title: itemSummary.title,
+          url: itemSummary.itemAffiliateWebUrl || itemSummary.itemWebUrl,
+          price: itemSummary.price ? Number(itemSummary.price.value) : null,
+          currency: itemSummary.price ? itemSummary.price.currency : null,
+          marketplace
+        }))
+      })
+    )
+    perMarketplace.filter(r => r.status === 'rejected').forEach(r => console.error('getTopListings marketplace fetch failed:', r.reason))
+    // Raw eBay relevance order isn't comparable across marketplaces, so once
+    // there's more than one, price is the only sensible common sort key.
+    const listings = perMarketplace
+      .filter(r => r.status === 'fulfilled')
+      .flatMap(r => r.value)
+      .sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity))
+    res.send({ listings, marketplaces })
   } catch (err) {
     console.error(err)
     res.status(err.status || 500).json({ error: err.message })

@@ -54,7 +54,7 @@ of it back).
 
 - `crypto.createDecipher` (used for the DB password in index.js/config.js and every scripts/*.js that connects) is deprecated by Node; migrate to `createDecipheriv` with an explicit IV
 
-- investigate the eBay Browse API's marketplace support (`X-EBAY-C-MARKETPLACE-ID`) to add other marketplaces (EBAY_GB, EBAY_DE, ...) - `fetchEbayListings` (used by `/getMarketPlacePrices` and `/getTopListings`) currently only queries the one hardcoded default marketplace
+- ~~investigate the eBay Browse API's marketplace support to add other marketplaces~~ done - `?marketplace=` on `/getMarketPlacePrices`/`/getTopListings`, validated against `EBAY_MARKETPLACES` (EBAY_US default, GB/DE/FR/IT), passed through as `X-EBAY-C-MARKETPLACE-ID`; `/getMarketPlacePrices` now also returns `currency` since it's no longer always USD. `/getTopListings?marketplace=ALL` fans out to all five and merges (sorted by price, since raw eBay relevance order isn't comparable across marketplaces) - `/getMarketPlacePrices` deliberately doesn't support ALL, since blending min/max/avg across currencies without FX conversion would be meaningless. Maybe add more marketplaces later (ES, AU, ...) as more catalogues get ingested
 
 - look into the 397 bare single-word `component_detail` rows (brand only, no model, e.g. "Simplex", "Shimano") - only 7 are linked to any bike_spec row, the other 390 are unused velobase-crawl artifacts, some carrying the same bogus-specific-year shape that caused a 1979 Peugeot to show an "1920 Simplex" derailleur (see `ingest-bike-specs/references/known-catalogs.md`, "Bare-brand exact-match bug"); decide whether to bulk-delete the unused ones
 
