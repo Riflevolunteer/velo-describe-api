@@ -83,6 +83,26 @@ function labelLookupInsert(title, sortOrder) {
   );
 }
 
+// One data_source row per source CSV (label = "<year> <brand> catalogue"),
+// so every bike/bike_spec row this script inserts can be traced back to the
+// catalogue that produced it instead of sitting at source_ref = NULL forever.
+function dataSourceLookupInsert(label, citation) {
+  const escLabel = sqlEscape(label);
+  const escCitation = sqlEscape(citation);
+  return (
+    `INSERT INTO data_source (source_type, label, citation) SELECT 'catalogue', '${escLabel}', '${escCitation}' FROM DUAL ` +
+    `WHERE NOT EXISTS (SELECT 1 FROM data_source WHERE source_type = 'catalogue' AND label = '${escLabel}');`
+  );
+}
+
+function dataSourceSubquery(label) {
+  return `(SELECT source_id FROM data_source WHERE source_type = 'catalogue' AND label = '${sqlEscape(label)}')`;
+}
+
+function catalogueLabel(year, brand) {
+  return `${year} ${brand} catalogue`;
+}
+
 function capitalize(word) {
   return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
 }
@@ -1088,6 +1108,7 @@ async function main() {
 
   const brands = new Set();
   const labelSortOrder = new Map(); // label title -> first-seen sort order
+  const catalogSources = new Map(); // catalogue label -> source filename (citation)
   const bikes = []; // { brand, title, year, searchText }
   const specs = []; // { brand, bikeTitle, year, label, valueText }
 
@@ -1105,6 +1126,7 @@ async function main() {
     }
     const { year, brand } = parsed;
     brands.add(brand);
+    catalogSources.set(catalogueLabel(year, brand), filename);
 
     const rows = parseCsv(fs.readFileSync(file, 'utf8'));
     const [header, ...dataRows] = rows;
@@ -1159,6 +1181,10 @@ async function main() {
   for (const brand of brands) lines.push(lookupInsert('bike_brand', brand));
   lines.push('');
 
+  lines.push('-- Data sources (one per source CSV)');
+  for (const [label, filename] of catalogSources) lines.push(dataSourceLookupInsert(label, filename));
+  lines.push('');
+
   lines.push('-- Bike spec labels (sort_order = first-seen order across processed files)');
   // sort_order comes from LABEL_ORDER (global display order); labels not in
   // it sort after, in first-seen order. The UPDATE realigns labels that an
@@ -1181,13 +1207,21 @@ async function main() {
     const sizes = sqlString(bike.sizes);
     const colors = sqlString(bike.colors);
     const weight = sqlString(bike.weight);
+    const sourceRefSelect = dataSourceSubquery(catalogueLabel(bike.year, bike.brand));
     lines.push(
-      `INSERT INTO bike (brand_id, title, category, year_from, sizes, colors, weight, search_text)\n` +
-        `  SELECT ${brandIdSelect}, ${title}, ${category}, ${yearFrom}, ${sizes}, ${colors}, ${weight}, ${searchText}\n` +
+      `INSERT INTO bike (brand_id, title, category, year_from, sizes, colors, weight, search_text, source_ref)\n` +
+        `  SELECT ${brandIdSelect}, ${title}, ${category}, ${yearFrom}, ${sizes}, ${colors}, ${weight}, ${searchText}, ${sourceRefSelect}\n` +
         `  FROM DUAL\n` +
         `  WHERE NOT EXISTS (\n` +
         `    SELECT 1 FROM bike WHERE brand_id = ${brandIdSelect} AND title = ${title} AND year_from = ${yearFrom}\n` +
         `  );`
+    );
+    // Back-fill: a bike inserted before this script tracked provenance (or by
+    // an older run of this same file) has source_ref NULL; never overwrite a
+    // value another run already set.
+    lines.push(
+      `UPDATE bike SET source_ref = ${sourceRefSelect}\n` +
+        `  WHERE brand_id = ${brandIdSelect} AND title = ${title} AND year_from = ${yearFrom} AND source_ref IS NULL;`
     );
   }
   lines.push('');
@@ -1215,14 +1249,19 @@ async function main() {
     const matched = matchComponent(spec.valueText, componentRecords, spec.brand, spec.label, spec.year);
     if (matched) linkedCount++;
     const componentIdSelect = matched ? String(matched.component_id) : 'NULL';
+    const sourceRefSelect = dataSourceSubquery(catalogueLabel(spec.year, spec.brand));
 
     lines.push(
-      `INSERT INTO bike_spec (bike_id, label_id, raw_label, value_text, component_id)\n` +
-        `  SELECT ${bikeIdSelect}, ${labelIdSelect}, ${rawLabel}, ${valueText}, ${componentIdSelect}\n` +
+      `INSERT INTO bike_spec (bike_id, label_id, raw_label, value_text, component_id, source_ref)\n` +
+        `  SELECT ${bikeIdSelect}, ${labelIdSelect}, ${rawLabel}, ${valueText}, ${componentIdSelect}, ${sourceRefSelect}\n` +
         `  FROM DUAL\n` +
         `  WHERE NOT EXISTS (\n` +
         `    SELECT 1 FROM bike_spec WHERE bike_id = ${bikeIdSelect} AND label_id = ${labelIdSelect} AND value_text = ${valueText}\n` +
         `  );`
+    );
+    lines.push(
+      `UPDATE bike_spec SET source_ref = ${sourceRefSelect}\n` +
+        `  WHERE bike_id = ${bikeIdSelect} AND label_id = ${labelIdSelect} AND value_text = ${valueText} AND source_ref IS NULL;`
     );
     // Rows inserted by an earlier run stay put (the INSERT above is a no-op
     // for them), so a match that only became resolvable later — a new

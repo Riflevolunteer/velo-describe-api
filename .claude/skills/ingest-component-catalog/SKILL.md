@@ -6,11 +6,16 @@ description: Read a scanned manufacturer component catalog (PDF or a folder of p
 # Ingest a component catalog
 
 A manufacturer catalog is evidence about components: which part numbers
-existed, what they were called, and which years they were on sale. The
-`component_detail` table (crawled from velobase) already has most parts; what
-a catalog adds is confirmation, year bounds, and the occasional missing part.
-The job is to read it carefully, diff by part number, and change only what
-the pages actually support.
+existed, what they were called, and which years they were on sale.
+`component_detail` is populated from several sources — a velobase crawl and a
+growing set of catalogues, each tracked via `source_ref` into `data_source`
+(`SELECT * FROM data_source`) — and for most brands the velobase crawl already
+has most parts, so a catalog's job is usually confirmation, year bounds, and
+the occasional missing part. But a catalog is not merely a correction layer on
+top of velobase: if the brand or part isn't in the DB at all yet, the catalog
+is the first and only source for those rows, inserted the same way. The job is
+to read it carefully, diff by part number, and change only what the pages
+actually support.
 
 ## 1. Make the pages readable
 
@@ -59,9 +64,10 @@ by name — names drift (the 1040 track headset is titled "Record Pista #
 1040" in the DB but was Gran Sport in 1960). A useful regex for a numbered
 range: `'10(3[4-9]|4[0-9]|5[0-3])(/|,| |$)'`.
 
-Read the DB rows' own `year_from`/`year_to` before judging: the velobase
-dates are often per-version and are the thing you are reconciling against.
-Classify each catalog item as:
+Read the DB rows' own `year_from`/`year_to` before judging: the existing
+dates are often per-version and are the thing you are reconciling against
+(check `source_ref` — join to `data_source` — if it matters which source set
+them). Classify each catalog item as:
 
 - **Present, years compatible** — no change.
 - **Present, catalog extends the years** — a part listed as current moves
@@ -86,10 +92,21 @@ Write one `.sql` file per catalog in the scratchpad, then
   re-run is a no-op.
 - Inserts mirror an existing row of the same brand/category: `brand_id`,
   `category_id`, `group_id` (look up `component_group` by title),
-  `search_text` = `"<title> <category>"`, and a manual
-  `source_id` like `MANUAL-CAT14-1960-1034` (≤36 chars) so the velobase
-  crawler's source_id dedupe cannot collide with it. Every existing row has
-  a source_id; never leave it NULL.
+  `search_text` = `"<title> <category>"`.
+- **Provenance**: look up this catalogue's `data_source` row —
+  `SELECT source_id FROM data_source WHERE source_type = 'catalogue' AND label = '<label>'`
+  (label convention: `"<Manufacturer> <short catalogue name> (<year>)"`, e.g.
+  `Campagnolo Catalogue n. 18, English edition (c. 1985)` — match
+  `known-catalogs.md`'s section headings). If it doesn't exist yet, insert it
+  first (`source_type = 'catalogue'`, `citation` = the source filename/path).
+  Set every new row's `source_ref` to that id. This catalogue does not need
+  to be a correction to an existing velobase row — if the brand or part isn't
+  in the DB at all, these inserts are the first and only source for it.
+  Still also give every new row a manual `source_id` like
+  `MANUAL-CAT14-1960-1034` (≤36 chars, unique) — `component_detail.source_id`
+  is the load-idempotency key regardless of source, so it still needs a
+  value; it no longer has to dodge the velobase crawler's GUID space on its
+  own, `source_ref` carries the actual provenance now.
 - **Comments on their own lines.** `load-sql.js` splits on `;` followed by
   a newline; a trailing `-- comment` after the semicolon merges statements
   into one batch. MySQL has executed them anyway so far, but the statement

@@ -39,8 +39,17 @@ review step matters more than speed.
   right one (1987 "Shimano 600" brakes vs the 1970s centre-pull).
 - Idempotency: bikes key on brand+title+year_from; specs on bike+label+
   value_text. Re-runs skip existing rows and only back-fill `component_id`
-  where it is NULL. A changed value_text therefore creates a second row rather
-  than replacing the first, and an existing wrong link is never overwritten.
+  and `source_ref` where they are NULL. A changed value_text therefore creates
+  a second row rather than replacing the first, and an existing wrong link or
+  source_ref is never overwritten.
+- Provenance: the generator creates one `data_source` row per input CSV
+  (`source_type = 'catalogue'`, label `"<year> <brand> catalogue"`, citation =
+  the filename) and stamps it onto every `bike`/`bike_spec` row that file
+  produces, via `source_ref`. Bikes loaded before this existed are still
+  `source_ref = NULL`; regenerating and reloading an already-loaded catalog's
+  CSV back-fills them (see the Zeus example: rerunning
+  `1973_zeus_spec.csv` tagged all 6 existing bikes and 96 specs with no other
+  changes).
 
 ## Workflow
 
