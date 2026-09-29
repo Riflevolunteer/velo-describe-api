@@ -53,3 +53,9 @@ of it back).
 - ~~retire the `MANUAL-...` prefix convention on `component_detail.source_id`~~ done - the skill now generates a UUID for new catalogue rows, and the 190 existing `MANUAL-...` rows were renamed to UUIDs too (`scripts/retire_manual_source_ids.sql`)
 
 - `crypto.createDecipher` (used for the DB password in index.js/config.js and every scripts/*.js that connects) is deprecated by Node; migrate to `createDecipheriv` with an explicit IV
+
+- investigate the eBay Browse API's marketplace support (`X-EBAY-C-MARKETPLACE-ID`) to add other marketplaces (EBAY_GB, EBAY_DE, ...) - `fetchEbayListings` (used by `/getMarketPlacePrices` and `/getTopListings`) currently only queries the one hardcoded default marketplace
+
+- look into the 397 bare single-word `component_detail` rows (brand only, no model, e.g. "Simplex", "Shimano") - only 7 are linked to any bike_spec row, the other 390 are unused velobase-crawl artifacts, some carrying the same bogus-specific-year shape that caused a 1979 Peugeot to show an "1920 Simplex" derailleur (see `ingest-bike-specs/references/known-catalogs.md`, "Bare-brand exact-match bug"); decide whether to bulk-delete the unused ones
+
+- add a category filter to `/searchComponents` (currently text-query only against `search_text`)
