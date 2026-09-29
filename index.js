@@ -448,10 +448,17 @@ app.get('/searchBikes', function (req, res, next) {
   }
 });
 
+// eBay Sporting Goods > Cycling > Bicycle Components & Parts. Scopes every
+// search to this category so a generic part name (e.g. "Simplex") doesn't
+// pull in unrelated listings from other categories that happen to match the
+// same keywords. Category IDs are marketplace-specific, but this one holds
+// for EBAY_US, the only marketplace queried today.
+const EBAY_BICYCLE_PARTS_CATEGORY_ID = '57262'
+
 // Shared eBay item search used by /getMarketPlacePrices and /getTopListings so both
 // endpoints always apply the same affiliate tracking header and error handling.
 async function fetchEbayListings(query, limit, accessToken) {
-  const result = await fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${encodeURIComponent(query)}&limit=${limit}`, {
+  const result = await fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${encodeURIComponent(query)}&category_ids=${EBAY_BICYCLE_PARTS_CATEGORY_ID}&limit=${limit}`, {
     method: 'get',
     headers: {
       'Authorization': `Bearer ${accessToken}`,

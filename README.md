@@ -58,4 +58,4 @@ of it back).
 
 - look into the 397 bare single-word `component_detail` rows (brand only, no model, e.g. "Simplex", "Shimano") - only 7 are linked to any bike_spec row, the other 390 are unused velobase-crawl artifacts, some carrying the same bogus-specific-year shape that caused a 1979 Peugeot to show an "1920 Simplex" derailleur (see `ingest-bike-specs/references/known-catalogs.md`, "Bare-brand exact-match bug"); decide whether to bulk-delete the unused ones
 
-- add a category filter to `/searchComponents` (currently text-query only against `search_text`)
+- ~~add a category filter to the eBay search~~ done - `fetchEbayListings` now passes `category_ids=57262` (eBay's "Bicycle Components & Parts") on every `/getMarketPlacePrices`/`/getTopListings` call; cut a "Brooks" search from 621k results (mostly Brooks Brothers/running shoes) to 1.3k genuine bike parts
