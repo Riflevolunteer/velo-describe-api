@@ -1179,6 +1179,62 @@ in the repo records them except this file.
   quick-release) and DF-M730 (chain deflector) — accessory items with no
   matching category, same as fork ends/tools/cables/brazed-on parts.
 
+## Maillard cycle fittings catalogue (Maillard_Cycle_fittings_catalogue.pdf, 34 pages, scan, no text layer)
+
+- No printed date anywhere in the catalogue. Only soft era clue: the
+  Maillard 700 racing freewheel page lists its pro-team users (Peugeot,
+  Mercier, Raleigh, Gitane, Lejeune, Flandria, Merckx), which reads
+  mid-1970s-shaped, but that's not strong enough to date the catalogue or
+  any row from — user decision: every new row gets year_from/year_to NULL,
+  not a guess off the sponsor list.
+- Also contains 5 pages (24-28) of LAM (H. Lamarque) brakes and brake
+  levers — same Incheville, France address as Maillard, bundled as a
+  sister-brand section, not a Maillard product. Pages 33-34 are not
+  catalogue content at all: an unbranded technical line-drawing and a
+  modern "IceniCAM Information Service" archive cover page from whoever
+  scanned it; excluded.
+- Checked whether this catalogue could finally identify the bare
+  `Maillard` freewheel placeholder row (id 2110, no years, linked to 15
+  1979 Peugeot bikes — the same "bare brand, no model" shape flagged as a
+  latent bug risk in the bike-spec generator work). It can't: none of the
+  bikes' tooth-count combos (`14-15-17-19-21-24` etc.) exactly match any
+  combo table the catalogue prints for Atom or Normandy, and the Maillard
+  700 racing freewheel explicitly supports "all combinations", so it can't
+  be ruled in or out by ratio alone. Left id 2110 and its 15 links
+  untouched rather than guess a redirect.
+- Brakes (LAM): all three catalogue models (49-72, 59-77, 66-86mm reach)
+  already exist in the DB under the exact same names — clean confirmation,
+  no changes.
+- Most Maillard hub lines already present (Atom, Normandy, Normandy
+  Sport, Normandy Luxe Compétition x2 flange sizes, Maillard 700 x2
+  flange sizes, drum brake) — no changes.
+- Added (29 rows, all NULL years, source_ref -> this catalogue's
+  data_source row):
+  - Freewheels: Maillard Atom, Atom Luxe, Atom Inter, T.B.W. (all single-
+    speed models missing entirely — DB only had 700/Normandy/Compact/
+    Sprint/Helicomatic named rows, no Atom); Atom (3-speed), Atom
+    (4-speed), Atom (5-speed) (split by speed to match the DB's existing
+    Maillard 700 convention of one row per speed count); Normandy
+    (5-speed, sealed bearings) (a real feature - chain-guard + sealed
+    bearings - none of the 3 existing Normandy rows, which distinguish by
+    lettering position, capture).
+  - Hubs: Maillard GC4 and Atom Junior (juvenile hubs, nothing juvenile
+    existed for Maillard at all); Atom Sport (small flange QR - only the
+    Normandy Sport large-flange QR existed).
+  - Pedals: Atom 63, Atom 2 BIS, Atom 440, Atom 600 Sport (none of the
+    existing Maillard 700 / ATOM CXC rows match these by name or feature).
+  - Bottom Brackets: Maillard Atom (no Maillard row existed in this
+    category at all).
+  - Brake Levers (LAM): 13 numbered ref variants (1R, 1C, 1 bis R, 1 bis
+    C, 2R, 2C, 4R, 4C, 7R, 8R, 8C, 10C, 11C - light alloy). None of the 4
+    existing generic LAM lever rows ("LAM Course", "LAM Competition", "LAM
+    / Guidonnet", "LAM (drilled lever, cable adjuster)") use these ref
+    codes, and none could be confidently mapped to a specific one, so all
+    4 were left as-is rather than guess-merged.
+- Left out of scope (no component_category): freewheel removal tools,
+  Atom quick-release skewer hardware, fasteners/cones/axles/washers within
+  every exploded diagram.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
