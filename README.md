@@ -58,6 +58,6 @@ has no way to recreate. Read its header comment before ever running it again.
 
 - ~~Decouple the DB from velobase as the sole source of truth~~ done - `data_source`/`source_ref` provenance model (component_detail, bike, bike_spec all backfilled), ingest skills write catalogues as first-class sources, README/cleanup.sql no longer claim the DB is regenerable from a velobase wipe-and-reload
 
-- once `source_ref`/`data_source` provenance has been relied on for a while, retire the `MANUAL-...` prefix convention on `component_detail.source_id` — it's now just a load-idempotency key, not provenance, and a plain sequential/UUID id would do
+- ~~retire the `MANUAL-...` prefix convention on `component_detail.source_id`~~ done - the skill now generates a UUID for new catalogue rows, and the 190 existing `MANUAL-...` rows were renamed to UUIDs too (`scripts/retire_manual_source_ids.sql`)
 
 - `crypto.createDecipher` (used for the DB password in index.js/config.js and every scripts/*.js that connects) is deprecated by Node; migrate to `createDecipheriv` with an explicit IV

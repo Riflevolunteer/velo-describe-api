@@ -102,11 +102,13 @@ Write one `.sql` file per catalog in the scratchpad, then
   Set every new row's `source_ref` to that id. This catalogue does not need
   to be a correction to an existing velobase row — if the brand or part isn't
   in the DB at all, these inserts are the first and only source for it.
-  Still also give every new row a manual `source_id` like
-  `MANUAL-CAT14-1960-1034` (≤36 chars, unique) — `component_detail.source_id`
+  Still also give every new row a `source_id` — `component_detail.source_id`
   is the load-idempotency key regardless of source, so it still needs a
-  value; it no longer has to dodge the velobase crawler's GUID space on its
-  own, `source_ref` carries the actual provenance now.
+  unique value — but generate it as a plain UUID (`SELECT UUID()` in the SQL,
+  or `crypto.randomUUID()` if scripting it) rather than the retired
+  `MANUAL-<CODE>-<YEAR>-<part>` naming. That naming existed only to dodge the
+  velobase crawler's GUID space; `source_ref` now carries the actual
+  provenance, so a `MANUAL-...`-shaped id buys nothing a UUID doesn't.
 - **Comments on their own lines.** `load-sql.js` splits on `;` followed by
   a newline; a trailing `-- comment` after the semicolon merges statements
   into one batch. MySQL has executed them anyway so far, but the statement
