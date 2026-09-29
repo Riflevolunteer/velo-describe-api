@@ -129,16 +129,31 @@ node scripts/db-query.js "SELECT bb.title brand, b.year_from, COUNT(DISTINCT b.b
 A first load shows every INSERT affecting rows; a re-run shows 0 for inserts
 and only back-fill UPDATEs affecting rows. Report the per-brand table.
 
-### 5. Re-ingesting after a fix
+### 5. Re-ingesting after a fix, or removing what a catalog shows is wrong
+
+Updating or deleting existing rows isn't limited to fixing your own bad CSV
+edits — a catalog can itself be the evidence that a bike or spec row is
+wrong: a model that turns out not to be that brand/year, a spec value that
+was a transcription error corrected by re-reading the source, a `component_id`
+link that new catalog evidence shows points at the wrong-era row. Treat these
+the same as an ingest-component-catalog dedupe: write the DELETE/UPDATE,
+check nothing external only made sense with the old row (there's no
+generator override or cross-catalog reference into `bike`/`bike_spec` today,
+unlike `component_detail`, but check before assuming that stays true), show
+the user the statements, then run them through `load-sql.js` (it accepts
+DELETE and plain UPDATE, not just the generator's guarded ones).
 
 Because value changes create duplicates, clean up first with a one-off SQL
-file run through `load-sql.js` (it accepts DELETE), then regenerate and load:
+file run through `load-sql.js`, then regenerate and load:
 
 - Label renamed (e.g. "Rear Derailleurs" → "Derailleurs"): delete the
   `bike_spec` rows for the old label and the `bike_spec_label` row.
 - Cell values changed for some bikes: delete those bikes' `bike_spec` rows and
   the `bike` rows, then reload. IDs change; nothing external references them yet.
 - Only new overrides: just regenerate and load. The back-fill UPDATE handles it.
+- A bike/spec row is simply wrong and nothing should replace it (catalog shows
+  it never existed, or belongs to a different brand entirely): delete it
+  directly, no reload needed. Record what and why in `known-catalogs.md`.
 
 ### 6. Commit
 

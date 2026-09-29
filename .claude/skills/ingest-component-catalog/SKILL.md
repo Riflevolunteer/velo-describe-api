@@ -79,9 +79,17 @@ them). Classify each catalog item as:
   retitling or duplicating.
 - **Genuinely missing** — only for categories that exist. Confirm by part
   number and by name before inserting.
-- **Apparent duplicates** (two rows, same title, different source_id and
-  weight) are two velobase examples of one part. Leave them unless the user
-  asks; offer a distinguishing title suffix over deletion.
+- **Apparent duplicates or rows the catalog shows don't belong** (two rows,
+  same title, different source_id and weight; a row that's actually a bare
+  placeholder superseded by a numbered one; a part the catalog's own text
+  says never existed as described) are not something to just leave alone by
+  default. Deleting or merging them is a normal, available outcome of a
+  catalog reconciliation — the `known-catalogs.md` history has many of
+  these (the 2026-09-28 Campagnolo dedupe passes deleted dozens of rows).
+  Prefer a distinguishing title suffix over deletion only when the rows are
+  each independently attested (two genuine catalog-photographed variants);
+  otherwise propose the merge/delete plan and get the user's go-ahead
+  (destructive statements need review, same as any DELETE) before running it.
 
 ## 4. Apply as idempotent SQL
 
@@ -115,6 +123,13 @@ Write one `.sql` file per catalog in the scratchpad, then
   count it reports is then wrong, and it is not something to rely on.
 - Description notes are appended (`CONCAT`) and guarded with
   `description NOT LIKE '%Catalogo N. 14%'`.
+- **Deletes and merges are in scope, not just inserts/updates.** Before
+  deleting a row: check `bike_spec.component_id` for links to it and
+  `COMPONENT_OVERRIDES` in `scripts/generate-bike-update-sql.js` for
+  references to its id — move them to the surviving row first (an override
+  or a linked spec pointing at a deleted id silently breaks). Present the
+  DELETE statements for review like any other SQL; nothing here auto-runs
+  a DELETE without the user seeing it first.
 
 Report the result as a table of row, part, change. State which changes came
 from a different catalog than the one being processed (they happen: a bike
@@ -124,8 +139,11 @@ catalog can show a brake still fitted years after the DB's year_to).
 
 Add an entry to `references/known-catalogs.md`: catalog, year, source file,
 what was new/dropped vs the previous printing, rows added, rows adjusted,
-and anything left unresolved. Nothing in the repo changes for a catalog,
-so there is normally nothing to commit; the SQL stays in the scratchpad.
+rows deleted/merged and why (include the deleted row's id and source_id, so
+a later catalog that seems to reintroduce it can be recognised as the same
+part), and anything left unresolved. Nothing in the repo changes for a
+catalog, so there is normally nothing to commit; the SQL stays in the
+scratchpad.
 
 ## Gotchas
 
