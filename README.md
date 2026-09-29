@@ -2,7 +2,7 @@
 
 npm run start
 
-## Loading component data into the AWS database
+## Loading component and bike data into the AWS database
 
 The database is the `velo-components` RDS MySQL instance in eu-central-1. It is
 publicly accessible but its security group only allows specific IPs on 3306, so
@@ -13,25 +13,35 @@ if the connection times out.
 `scripts/load-sql.js` runs .sql files using the app's own `.env` and password
 decryption, so no mysql client is required.
 
+`component_detail`/`bike`/`bike_spec` rows are provenance-tracked via
+`source_ref` into `data_source` (`SELECT source_type, COUNT(*) FROM data_source
+GROUP BY source_type`): some rows came from a one-off velobase.com crawl,
+most now come from ingesting scanned manufacturer/bike catalogues by hand (see
+the `ingest-component-catalog` and `ingest-bike-specs` skills). The crawl is
+no longer the authoritative bulk source — it's one contributor among several,
+useful for backfill or cross-checking a brand catalogue coverage hasn't
+reached yet, not for regenerating the DB from scratch.
+
 ```
-# 1. Regenerate the SQL from the crawl output
+# 1. Regenerate the SQL from the crawl output (only ever adds/updates
+#    velobase-sourced rows; never touches catalogue-sourced ones)
 node scripts/generate-update-sql.js
 
 # 2. Check connectivity and see current schema / row counts (read-only)
 node scripts/load-sql.js --check
 
-# 3. Wipe and reload all component data (about a minute; ~9k statements)
-node scripts/load-sql.js scripts/cleanup.sql velobase-update.sql
+# 3. Load it
+node scripts/load-sql.js velobase-update.sql
 ```
 
 Tables are created from the `scripts/*.sql` CREATE TABLE files; the `--check`
 output flags a schema that has fallen behind them (e.g. missing
 `component_detail.source_id`).
 
-Step 3 is a full wipe-and-reload; the data is entirely regenerable from
-`velobase-component-details.jsonl`, and RDS automated backups cover rollback.
-The post-load snapshot should show ~6989 component_detail rows and a non-zero
-Ofmega brakes count.
+`scripts/cleanup.sql` (wipe all component data before reloading) is legacy
+from when the crawl was the only source and is now destructive: it deletes
+catalogue-only rows, brands, groups and categories that `velobase-update.sql`
+has no way to recreate. Read its header comment before ever running it again.
 
 # TODO
 
