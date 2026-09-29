@@ -4,7 +4,7 @@
 // per-table summary of affected rows is printed at the end.
 //
 //   node scripts/load-sql.js --check                 # connectivity + schema/row-count snapshot, no writes
-//   node scripts/load-sql.js scripts/cleanup.sql velobase-update.sql
+//   node scripts/load-sql.js <scratchpad>/some-catalog.sql
 //
 // The RDS instance is publicly accessible but its security group only allows
 // specific IPs on 3306 — if the connection hangs/ETIMEDOUT, add your current

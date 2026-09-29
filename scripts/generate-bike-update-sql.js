@@ -15,8 +15,8 @@
 //
 // component_id linking: exact (case-insensitive/trimmed), then substring,
 // match of a spec's value_text against component_detail titles read live
-// from the DB (not the static velobase-component-details.jsonl snapshot, so
-// components added directly to the DB are matchable too). Only labels with
+// from the DB, so components added directly to the DB (by hand or by the
+// ingest-component-catalog skill) are matchable too. Only labels with
 // a component_category mapping in LABEL_TO_CATEGORY are matched at all —
 // unmapped labels (Fenders, Other Features, ...) are free text with no
 // sensible category to search, so they're never linked. Ambiguous substring

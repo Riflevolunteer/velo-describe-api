@@ -11,37 +11,29 @@ the load runs from your laptop (no SSH/SSM hop needed). Add your current IP
 if the connection times out.
 
 `scripts/load-sql.js` runs .sql files using the app's own `.env` and password
-decryption, so no mysql client is required.
-
-`component_detail`/`bike`/`bike_spec` rows are provenance-tracked via
-`source_ref` into `data_source` (`SELECT source_type, COUNT(*) FROM data_source
-GROUP BY source_type`): some rows came from a one-off velobase.com crawl,
-most now come from ingesting scanned manufacturer/bike catalogues by hand (see
-the `ingest-component-catalog` and `ingest-bike-specs` skills). The crawl is
-no longer the authoritative bulk source — it's one contributor among several,
-useful for backfill or cross-checking a brand catalogue coverage hasn't
-reached yet, not for regenerating the DB from scratch.
+decryption, so no mysql client is required:
 
 ```
-# 1. Regenerate the SQL from the crawl output (only ever adds/updates
-#    velobase-sourced rows; never touches catalogue-sourced ones)
-node scripts/generate-update-sql.js
-
-# 2. Check connectivity and see current schema / row counts (read-only)
-node scripts/load-sql.js --check
-
-# 3. Load it
-node scripts/load-sql.js velobase-update.sql
+node scripts/load-sql.js --check   # connectivity + schema/row-count snapshot, no writes
+node scripts/load-sql.js <file.sql>
 ```
 
 Tables are created from the `scripts/*.sql` CREATE TABLE files; the `--check`
 output flags a schema that has fallen behind them (e.g. missing
 `component_detail.source_id`).
 
-`scripts/cleanup.sql` (wipe all component data before reloading) is legacy
-from when the crawl was the only source and is now destructive: it deletes
-catalogue-only rows, brands, groups and categories that `velobase-update.sql`
-has no way to recreate. Read its header comment before ever running it again.
+`component_detail`/`bike`/`bike_spec` rows are provenance-tracked via
+`source_ref` into `data_source` (`SELECT source_type, COUNT(*) FROM data_source
+GROUP BY source_type`). All bulk data now comes from ingesting scanned
+manufacturer/bike catalogues by hand — see the `ingest-component-catalog` and
+`ingest-bike-specs` skills. There used to be a one-off velobase.com crawler
+(`crawl-components.js`, `crawl-component-details.js`, `generate-update-sql.js`)
+that seeded the DB before catalogue ingestion existed; it and its generated
+snapshots (`velobase-components.csv`, `velobase-component-details.jsonl`,
+`velobase-update.sql`) have been removed along with `scripts/cleanup.sql` (a
+wipe-before-reload step that only made sense for that crawl and had become
+actively destructive to catalogue-only data — see git history if you need any
+of it back).
 
 # TODO
 
@@ -56,7 +48,7 @@ has no way to recreate. Read its header comment before ever running it again.
 
 - apply for eBay Marketplace Insights API access (sold prices, not just asking prices) - current app creds get invalid_scope for buy.marketplace.insights
 
-- ~~Decouple the DB from velobase as the sole source of truth~~ done - `data_source`/`source_ref` provenance model (component_detail, bike, bike_spec all backfilled), ingest skills write catalogues as first-class sources, README/cleanup.sql no longer claim the DB is regenerable from a velobase wipe-and-reload
+- ~~Decouple the DB from velobase as the sole source of truth~~ done - `data_source`/`source_ref` provenance model (component_detail, bike, bike_spec all backfilled), ingest skills write catalogues as first-class sources, README/cleanup.sql no longer claim the DB is regenerable from a velobase wipe-and-reload; the velobase crawler and cleanup.sql have since been removed entirely (git history has them if needed)
 
 - ~~retire the `MANUAL-...` prefix convention on `component_detail.source_id`~~ done - the skill now generates a UUID for new catalogue rows, and the 190 existing `MANUAL-...` rows were renamed to UUIDs too (`scripts/retire_manual_source_ids.sql`)
 
