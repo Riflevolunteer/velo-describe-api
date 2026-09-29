@@ -1129,6 +1129,56 @@ in the repo records them except this file.
   FH-6263 not listed here. Out of scope: CP protectors, FE fork ends,
   SM-HP10, SM-BT10, carded parts, clamps, cables, tools.
 
+## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
+
+- Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West
+  Germany. Dealer parts catalogue, same format as the 1984 book: series
+  spreads absent, straight into per-model exploded-parts pages grouped by
+  category (Rear/Front Derailleurs, Shifting Levers, Front Chainwheels,
+  Pedals, Hubs, Multiple Freewheels, Brake Arches, Brake Levers, Head
+  Parts, Seat Pillars, Handle Stems, Seat Post QR, Chain Deflector,
+  Chains, Tools, Fork Ends, Others). Entirely SIS-era (Dura-Ace 7400 down
+  to Exage trail/Z, New Positron PPS, plus the older Positron SG-3C30
+  three-speed hub); no overlap with the 1975/1982/1984 catalogues' part
+  numbers.
+- Years -> 1988 (15 rows, catalogue shows them still current): 4521
+  RD-L532, 4519/4520 RD-L525 (both cage variants), 4529 RD-P500, 4523
+  RD-M531 (year_to only, no year_from ever set), 2527 FD-M350/M351 (year_to
+  only), 6128 SL-S434, 6127 SL-MS55 (year_to only), 3952 PD-T100, 3523
+  FH-1050, 2218 MF-6208, 3520 CB-E110, 1004 BR-L490, 448 BL-AT50, 7154
+  CN-UG20.
+- Years corrected, year_from moved earlier (3 rows, DB claimed a start
+  date *after* this catalogue's Jan 1988 date, which can't be right): 1809
+  FC-MT60 (was 1989), 3971 PD-7401 (was 1990), 417 BL-6402 (was 1992).
+- Added (51 rows, all 1988-1988, source_ref -> this catalogue's
+  data_source row): RD-M450, RD-M350 (Rear Derailleurs); FD-A450, FD-M450
+  (Front Derailleurs); SL-M450, SL-M350, SL-S441, SL-MS41, SL-MT36,
+  SL-MT34, SL-AT50, SL-3S60, SL-P500 (Shifters); FC-M350 (Cranksets);
+  BB-7600, BB-M450 (Bottom Brackets); PD-M731, PD-M450, PD-M350, PD-MX20,
+  PD-E100 (Pedals); FH-MT60, HB-M450, FH-M450, SG-3C30, FH-7400-6/7,
+  HB-7400-F (Hubs); MF-Z012, SS-7600 (Freewheels); BR-A450, BR-M450,
+  BR-M451, BR-M350, BR-L570 (Brakes); BL-5002, BL-6400, BL-1052, BL-A450,
+  BL-A453, BL-M450, BL-M350, BL-L330, BL-L331, BL-Z325, BL-Z326 (Brake
+  Levers); HP-M730, HP-MT60, HP-M450, HP-M350 (Headsets); CN-7400, CN-6208
+  (Chains).
+- BR-L570 added rather than left unrepresented: DB had BR-L490 (49-type)
+  but no 57-type companion, and the catalogue pairs them the same way
+  BR-1050's 39-49/47-57 rows are already split in the DB, so the missing
+  half was inserted rather than treated as covered by BR-L490 alone.
+- FH-7400-6/7 / HB-7400-F deliberately NOT merged into the existing bare
+  `Shimano FH-7400, Dura-Ace 7400 (freewheel)` row (id 3560, year 1980-1980,
+  no weight/detail — the same "bogus single year, no real data" shape as
+  the bare-brand exact-match bug fixed 2026-09-29 in the bike-spec
+  generator). That row can't be confidently identified as the same
+  sub-revision as this catalogue's plain FH-7400/HB-7400 (the DB's other
+  7400-family rows are FH-7402/HB-7402 "Uniglide Only" 1985 and
+  FH-7403/HB-7400 "Hyperglide Rear" 1991-96 — different numbers,
+  different mechanism). Inserted fresh with the catalogue's own weights
+  instead of guessing a merge; id 3560 left untouched.
+- Not inserted (no component_category, out of scope): SQ-M730 (seat post
+  quick-release) and DF-M730 (chain deflector) — accessory items with no
+  matching category, same as fork ends/tools/cables/brazed-on parts.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
