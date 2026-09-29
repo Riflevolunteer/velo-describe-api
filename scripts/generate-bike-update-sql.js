@@ -467,6 +467,12 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // Bare "Simplex" (catalog names only the brand, no model) was exact-
+    // matching component_id 4549, a bare-brand placeholder row wrongly dated
+    // 1920-1920 — linking e.g. 1979 Peugeots to a "1920 Simplex" derailleur.
+    // Every current use of the bare value is 1979 Peugeot; block it outright
+    // rather than year-range it, since there's no real row to point at.
+    'simplex': null,
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
     // DB title is `Zeus "Especial Alfa 72"` — the quotes and brand prefix
     // defeat substring matching.
@@ -920,6 +926,10 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // Bare "Shimano" was exact-matching component_id 1403, a bare-brand
+    // placeholder wrongly dated 1980-1980 — linking 1987 Bianchis to a
+    // "1980 Shimano" chain with no real model behind it. Block it.
+    shimano: null,
     'iris 1 2 x 3 32': 1369, // Iris (1973 Zeus)
     // 1981 Kalkhoff: no chain row is titled EX; the CN-7100 Uniglide is the
     // Dura-Ace chain of the EX era.
@@ -978,7 +988,10 @@ const COMPONENT_OVERRIDES = {
     'clement 2001 cf': 6740, // Clement CF 2001
   },
   Rims: {
-    'nisi ava sprint alloy': 5123, // Nisi
+    // id 5123 is a bare "Nisi" placeholder wrongly dated 1980-1980 (this
+    // value is only ever used by 1973 Raleighs, which predate it entirely);
+    // 5124 is the other bare "Nisi" row, dated 1970-1980, which covers 1973.
+    'nisi ava sprint alloy': 5124, // Nisi
     'ava sprint alloy': 4937, // AVA
     // 1984 Bianchi. GP 4 is ambiguous with its red-label variant; the OR 10
     // value carries a spoke aside.

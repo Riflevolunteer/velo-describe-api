@@ -470,3 +470,42 @@ to 29 canonical labels with one global display order:
 All ten catalogs in bike_specs/ are loaded. Next catalogs will most likely
 need: their own year ranges on the Campagnolo/Shimano group overrides, and
 the label normalization above.
+
+## Bare-brand exact-match bug and one wrong override (fixed 2026-09-29)
+
+A user noticed a 1979 Peugeot's rear derailleur spec showed as an "1920
+Simplex" — clearly wrong. Root cause: `matchComponent`'s exact-title-match
+branch ran *before* the "single-word title is a brand-only catch-all"
+substring guard, so a bare CSV value like `"Simplex"` (catalog names only
+the brand, no model) would exact-match any `component_detail` row also
+titled exactly `"Simplex"` — including bare-brand placeholder rows with a
+bogus specific year, with zero year filtering (year ranges are only
+honored inside `COMPONENT_OVERRIDES`/`resolveOverride`).
+
+Same audit found one more real instance and one look-alike that turned out
+to be a different bug entirely:
+
+- **Simplex, Rear Derailleurs** (component_id 4549, wrongly dated
+  1920-1920): 7 rows, all 1979 Peugeot. Added `'simplex': null` to
+  `COMPONENT_OVERRIDES.Rear Derailleurs`; one-off `UPDATE` set those 7
+  `bike_spec.component_id` back to NULL (run and discarded, not kept in
+  the repo — the fix that matters is the override).
+- **Shimano, Chains** (component_id 1403, wrongly dated 1980-1980): 2 rows,
+  1987 Bianchi. Added `shimano: null` to `COMPONENT_OVERRIDES.Chains`, same
+  one-off unlink.
+- **Nisi, Rims** (component_id 5123, wrongly dated 1980-1980) — NOT the
+  same bug. This was a deliberate `'nisi ava sprint alloy'` override that
+  just pointed at the wrong one of two identically-titled bare "Nisi" rows;
+  5124 (dated 1970-1980, covers the 1973 Raleighs that use this value) was
+  sitting unused. Retargeted the override to 5124; one-off `UPDATE`
+  repointed the 2 already-loaded rows.
+
+Broader finding, not yet acted on: 397 `component_detail` rows across the
+whole DB are bare single-word (brand-only, no model) titles; only 7 are
+linked to any `bike_spec` row (the ones above, plus Maillard/Freewheels,
+Iris/Chains, Renold/Chains, AVA/Rims, Simplex/Freewheels, SunTour/Shifters
+— all checked and fine, no false year claims). The other 390 are unused
+velobase-crawl artifacts, some carrying the same "bogus specific year"
+shape as the bugs above, sitting dormant until some future catalogue's
+bare-brand value happens to exact-match one. Whether to bulk-delete them
+(safe — zero bike_spec references) is an open decision, not yet made.
