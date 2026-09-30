@@ -1293,17 +1293,16 @@ in the repo records them except this file.
     weight/capacity/fitting). Single-catalog attestation, year_from =
     year_to = 1982.
 - Shifters (SXP 4506, SLJ 5057, SXP 4557/4558, SXP 4555/4556, SXP L
-  4543/4542, SXP 4541/4540) deliberately **not** actioned this pass. The
-  DB has several loosely-dated, unnumbered "type" rows (`Simplex SXP
-  (1st/2nd type; stem mount)`, `Simplex SXP (white)`, `Simplex SXP-L
-  (stem mount)`, `Simplex SLJ (3rd/4th type...)`) that might correspond,
-  and one weight match is exact (SLJ 5057's 88g = `Simplex SLJ (4th type,
-  black anodized)`'s 88g), but the catalog only gives weight for 2 of the
-  6 SKUs, and there are more catalog SKUs than DB "type" buckets - forcing
-  the rest would risk wrongly conflating distinct SKUs. Left unresolved
-  for a future pass; new `data_source` row (source_id 51, label "Simplex
-  New Generation & Selematic brochure (1982)") is already in place for
-  whenever that happens.
+  4543/4542, SXP 4541/4540), resolved on a follow-up pass: only one had a
+  confident match - SLJ 5057's 88g is exact against `Simplex SLJ (4th
+  type, black anodized)` (6240, also 88g), both retro-friction down-tube
+  levers, so appended the part-number note to that row's description
+  rather than retitling. The other 5 had no weight in the catalog and
+  outnumber the DB's 4 unnumbered SXP "type" buckets, so inserted as new,
+  distinctly-specced rows instead of forcing an uncertain match: SXP 4506
+  (7265), SXP 4557/4558 (7266), SXP 4555/4556 (7267), SXP L 4543/4542
+  (7268), SXP 4541/4540 (7269) - all `source_ref` 51, year_from = year_to
+  = 1982.
 
 ## Cross-catalog notes
 
