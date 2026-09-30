@@ -1420,7 +1420,17 @@ in the repo records them except this file.
 - Panel 16 is a separate 1928-1935 historical facsimile insert bundled
   into this 1981 catalog (race palmarès by year, plus original "Le
   Simplex Type Route"/"Super-Simplex" pricing) - handled as its own pass,
-  not part of the above.
+  not part of the above. Scan quality is poor (the site's own caption:
+  "poorly printed and of limited utility"), so only two clearly legible
+  matches were actioned: 4550 "Simplex (like Cyclo; chainstay mount)" and
+  4551 "(...; hanger mount)" (both bare, 1928-1950) enriched with "Le
+  Simplex Type Route"'s 1928-35 pricing (87/110/120fr for 2/3/4-speed)
+  and its three fixation options; 4558 "Simplex Selection Standard (Super
+  Simplex Competition)" (bare, dated exactly 1934-1935) enriched with the
+  "Super-Simplex"'s separated parallelogram-arm/tensioner mechanism.
+  "Le Simplex Type 38" and "Le Simplex Type Tour de France 34" have no
+  DB match and the surrounding print was too degraded to transcribe
+  confidently - left unresolved rather than guessed.
 
 ## Cross-catalog notes
 
