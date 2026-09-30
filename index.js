@@ -477,12 +477,14 @@ function resolveMarketplace(req) {
   return marketplace
 }
 
-// Same as resolveMarketplace but for /getTopListings, which can fan out to
-// every marketplace at once (?marketplace=ALL) since merging listings (each
-// keeping its own price/currency) doesn't have the cross-currency blending
-// problem /getMarketPlacePrices' single min/max/avg would.
+// Same as resolveMarketplace but for /getTopListings, which fans out to
+// every marketplace by default since merging listings (each keeping its own
+// price/currency) doesn't have the cross-currency blending problem
+// /getMarketPlacePrices' single min/max/avg would. ?marketplace=ALL is kept
+// as an explicit alias for that default; ?marketplace=EBAY_XX still narrows
+// to just one.
 function resolveMarketplaces(req) {
-  if (req.query.marketplace === 'ALL') return [...EBAY_MARKETPLACES]
+  if (!req.query.marketplace || req.query.marketplace === 'ALL') return [...EBAY_MARKETPLACES]
   return [resolveMarketplace(req)]
 }
 
