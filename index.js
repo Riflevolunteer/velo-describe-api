@@ -477,14 +477,17 @@ function resolveMarketplace(req) {
   return marketplace
 }
 
-// Same as resolveMarketplace but for /getTopListings, which fans out to
-// every marketplace by default since merging listings (each keeping its own
-// price/currency) doesn't have the cross-currency blending problem
-// /getMarketPlacePrices' single min/max/avg would. ?marketplace=ALL is kept
-// as an explicit alias for that default; ?marketplace=EBAY_XX still narrows
-// to just one.
+// Same as resolveMarketplace but for /getTopListings. Defaults to US only:
+// existing app clients render `price` without checking `currency`, so
+// fanning out to every marketplace by default would show e.g. GBP/EUR
+// prices with no indication they aren't dollars. ?marketplace=ALL opts in
+// to the multi-marketplace fan-out (each listing keeps its own
+// price/currency, so that request shape doesn't have the cross-currency
+// blending problem /getMarketPlacePrices' single min/max/avg would);
+// ?marketplace=EBAY_XX still narrows to just one.
 function resolveMarketplaces(req) {
-  if (!req.query.marketplace || req.query.marketplace === 'ALL') return [...EBAY_MARKETPLACES]
+  if (!req.query.marketplace) return [DEFAULT_EBAY_MARKETPLACE]
+  if (req.query.marketplace === 'ALL') return [...EBAY_MARKETPLACES]
   return [resolveMarketplace(req)]
 }
 
