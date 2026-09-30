@@ -549,3 +549,26 @@ purged those 3 `component_brand` rows and their 7 `category_brand` rows
 too; no `component_group` rows were scoped to them. OMAS, Altenburger, and
 SunTour kept their brand rows since each has plenty of other real
 components.
+
+Full-DB sweep, same day: checked for referential orphans across
+component_detail/component_group/category_brand/component_brand/bike/
+bike_spec/data_source - none found (every FK-shaped reference resolves).
+Two things did turn up:
+
+- **26 exact-duplicate `component_detail` rows** (25 groups - 24 pairs and
+  one triple - identical on brand_id/category_id/title/year_from/year_to/
+  description, both/all from the velobase crawl crawled twice): deleted
+  the redundant copy of each, keeping whichever side already carried any
+  `bike_spec` link or `COMPONENT_OVERRIDES` reference (Union 486 id 1427,
+  Sturmey Archer id 3593, Shimano CN-7401 Dura-Ace chain id 1414, Mavic
+  MA 40 id 5077) or a set `group_id` (Stronglight 107 Pista id 1916) where
+  that differed between the two. One-off, not kept in the repo.
+- **One junk `component_group` row**, id 248, titled literally "do not
+  know", scoped to Campagnolo, zero `component_detail` rows in it -
+  deleted.
+
+`data_source` id 50 (Le Cycle magazine no. 58 Maillard ad, see below) has
+zero rows pointing at its `source_ref` - not a stray row, it's a
+legitimate citation whose only effect was correcting years on rows that
+keep their original catalogue's `source_ref` (per the entry above); left
+as-is.
