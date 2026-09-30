@@ -502,11 +502,11 @@ to be a different bug entirely:
 
 Broader finding, acted on 2026-09-30: 397 `component_detail` rows across the
 whole DB were bare single-word (brand-only, no model) titles; only 7 were
-linked to any `bike_spec` row (the ones above, plus Maillard/Freewheels,
-Iris/Chains, Renold/Chains, AVA/Rims, Simplex/Freewheels, SunTour/Shifters
-— all checked and fine, no false year claims, kept as-is). The other 390
-were unused velobase-crawl artifacts, some carrying the same "bogus specific
-year" shape as the bugs above, sitting dormant until some future catalogue's
+linked to any `bike_spec` row (Maillard/Freewheels, Iris/Chains,
+Renold/Chains, AVA/Rims, Simplex/Freewheels, SunTour/Shifters, Nisi/Rims —
+checked and fine on years at the time). The other 390 were unused
+velobase-crawl artifacts, some carrying the same "bogus specific year"
+shape as the bugs above, sitting dormant until some future catalogue's
 bare-brand value happened to exact-match one.
 
 Deleted (one-off, run and discarded, not kept in the repo): the 390 unused
@@ -518,3 +518,20 @@ was cleaned up too: 2 `component_group` rows scoped to them (verified zero
 surviving component links first) and 129 `category_brand` rows. Verified
 before running: zero `bike_spec` references on the 390, and none of their
 ids appeared in `COMPONENT_OVERRIDES` (`scripts/generate-bike-update-sql.js`).
+
+The 7 linked rows turned out, on a second look, to be the same bare-brand
+mismatch as the Simplex/Shimano fixes above — the earlier audit only
+checked years, not whether the link made sense at all. Each of the 29
+`bike_spec` rows pointing at them carries a generic `value_text` (a chain
+pitch, a freewheel gear-count range, or just the bare brand name again,
+e.g. "Iris 1/2 x 3/32", "Maillard 14-15-17-19-21-24", "Suntour") with no
+matching specific model row elsewhere in the DB to relink to instead — so
+unlinked (`component_id` -> NULL, `value_text`/`raw_label` untouched) and
+deleted the 7 rows themselves (one-off, not kept in the repo). None of
+these 7 brands (AVA, Iris, Maillard, Nisi, Renold, Simplex, SunTour) lost
+their brand row — each still has other real component_detail rows. No new
+`COMPONENT_OVERRIDES` entries were needed: the current substring guard in
+`matchComponent` already stops a single-word title from matching inside a
+multi-word value, and the one bare-value case (a catalog literally saying
+just "Suntour") now correctly resolves to "ambiguous, no match" against
+SunTour's ~65 real model rows instead of the wrong bare placeholder.
