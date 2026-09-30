@@ -577,5 +577,9 @@ their current years, not the crawl.
 Separately: the "Other/Unknown" brand (id 561) had one Tyres component,
 Cyclepro Discovery (6840) - zero `bike_spec` references, not in
 `COMPONENT_OVERRIDES`, deleted along with the `category_brand` row linking
-that brand to Tyres. The brand stayed (still has a Saddles entry, Bualto
-B17, 5437).
+that brand to Tyres. Initially left the brand in place (still had a
+Saddles entry, Bualto B17, 5437) - then removed that too on request, same
+checks (zero `bike_spec` references, no override), which left the brand
+with zero components; purged the brand (561) itself and its remaining
+Saddles `category_brand` row. No `component_group` rows were scoped to
+it. "Other/Unknown" no longer exists anywhere in the DB.
