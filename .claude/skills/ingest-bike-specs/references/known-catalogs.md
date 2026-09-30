@@ -583,3 +583,16 @@ checks (zero `bike_spec` references, no override), which left the brand
 with zero components; purged the brand (561) itself and its remaining
 Saddles `category_brand` row. No `component_group` rows were scoped to
 it. "Other/Unknown" no longer exists anywhere in the DB.
+
+Found via a user spot-check on Assos/Bottom Brackets: a brand doesn't need
+to be fully orphaned (the earlier 119-brand sweep's bar) to leave
+scaffolding behind - a brand that *partially* survived (some categories
+still have real components) can still have a `category_brand` row for a
+category whose only entry was a bare/unknown placeholder deleted earlier.
+`index.js`'s `/brandsbycategory` uses `category_brand` to populate the
+app's per-category brand picker, so a dangling row shows a brand with
+nothing to actually select. Swept the whole table for this: 116
+`category_brand` rows across ~90 brands had zero `component_detail` rows
+for that brand+category combo (Assos/Bottom Brackets, Assos/Cranksets,
+Assos/Pedals among them) - deleted all of them. Ran ad hoc, not kept in
+the repo.
