@@ -535,3 +535,17 @@ their brand row — each still has other real component_detail rows. No new
 multi-word value, and the one bare-value case (a catalog literally saying
 just "Suntour") now correctly resolves to "ambiguous, no match" against
 SunTour's ~65 real model rows instead of the wrong bare placeholder.
+
+Related cleanup, same day: 6 more `component_detail` rows were a brand plus
+"unknown"/"(unknown)" with no real model attested — Falco Unknown
+(Brakes), GIOS Unknown (Pedals), OMAS unknown freewheel hubs with ti axle
+(Hubs), Altenburger unknown (Rims), Bianchi (unknown) (Hubs), SunTour
+(unknown) (Front Derailleurs). None had `bike_spec` references or appeared
+in `COMPONENT_OVERRIDES`, so deleted outright (one-off, not kept in the
+repo). Falco, GIOS, and the *component*-brand Bianchi (distinct from the
+`bike_brand` Bianchi used for actual bikes — separate table, separate id
+space) had zero other `component_detail` rows once these were gone, so
+purged those 3 `component_brand` rows and their 7 `category_brand` rows
+too; no `component_group` rows were scoped to them. OMAS, Altenburger, and
+SunTour kept their brand rows since each has plenty of other real
+components.
