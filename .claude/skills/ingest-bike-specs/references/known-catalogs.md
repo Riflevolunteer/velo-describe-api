@@ -573,3 +573,9 @@ a citation whose 4 affected rows (2112, 2113, 2114, 2120) still carried the
 generic velobase-crawl `source_ref=1` rather than this ad. Backfilled: all
 4 repointed to `source_ref=50`, since this ad is what actually set/corrected
 their current years, not the crawl.
+
+Separately: the "Other/Unknown" brand (id 561) had one Tyres component,
+Cyclepro Discovery (6840) - zero `bike_spec` references, not in
+`COMPONENT_OVERRIDES`, deleted along with the `category_brand` row linking
+that brand to Tyres. The brand stayed (still has a Saddles entry, Bualto
+B17, 5437).
