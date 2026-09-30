@@ -567,8 +567,9 @@ Two things did turn up:
   know", scoped to Campagnolo, zero `component_detail` rows in it -
   deleted.
 
-`data_source` id 50 (Le Cycle magazine no. 58 Maillard ad, see below) has
-zero rows pointing at its `source_ref` - not a stray row, it's a
-legitimate citation whose only effect was correcting years on rows that
-keep their original catalogue's `source_ref` (per the entry above); left
-as-is.
+`data_source` id 50 (Le Cycle magazine no. 58 Maillard ad, see below) had
+zero rows pointing at its `source_ref` at the time - not a stray row, just
+a citation whose 4 affected rows (2112, 2113, 2114, 2120) still carried the
+generic velobase-crawl `source_ref=1` rather than this ad. Backfilled: all
+4 repointed to `source_ref=50`, since this ad is what actually set/corrected
+their current years, not the crawl.
