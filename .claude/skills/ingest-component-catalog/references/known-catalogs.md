@@ -1304,6 +1304,36 @@ in the repo records them except this file.
   (7268), SXP 4541/4540 (7269) - all `source_ref` 51, year_from = year_to
   = 1982.
 
+## Le Cyclo instruction/price leaflet (2 pages, c.1927, via disraeligears.co.uk)
+
+- French "Changement de Vitesse" owner's/dealer instruction sheet with
+  pricing, not a full catalog - but it's the earliest date evidence for
+  any Cyclo derailleur/shifter/freewheel row in the DB (every existing one
+  was completely undated).
+- Describes Le Cyclo's 2- and 3-speed boxed sets, distinguished only by
+  mounting support (A/B/C) and tension-pulley type (toothed vs Rosa
+  flanged), never by any of the DB's existing named sub-lines (Route,
+  Sport, Randonneur - also all bare/undated). Couldn't confidently map the
+  mechanism onto any of those, so it got its own plain row instead of a
+  guess.
+- Dated 1927 and enriched: 6008 "Cyclo (double cable)" (Shifters) - the
+  whole leaflet describes this exact double-cable, helical-drive control
+  system; 2077 "Cyclo (2 speed)" (Freewheels) - "grand pignon 472" per the
+  leaflet.
+- New: 7270 "Cyclo (3 speed)" (Freewheels) - "grand pignon 347"; no
+  existing row covered a 3-speed Cyclo freewheel at all. 7271 "Cyclo
+  (double-cable system, 1927 leaflet)" (Rear Derailleurs) - the mechanism
+  itself, with the leaflet's full pricing (Support A 87fr, Course/Rosa
+  flanged Support C 95fr, Support B 110fr, standalone flanged tension
+  pulley 20fr).
+- Gotcha hit here: `component_detail.description` is `varchar(255)` and a
+  `CONCAT`/literal insert past that silently truncates mid-word (MySQL's
+  default SQL mode doesn't error on this) - 7271's first insert lost the
+  Support B price and the tension-pulley accessory entirely. Caught by
+  checking `LENGTH(description)` after loading; fixed by shortening the
+  text, not by widening the column. Worth checking length on any
+  catalog-enrichment description that's pushing close to 255 chars.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
