@@ -69,27 +69,53 @@ dates are often per-version and are the thing you are reconciling against
 (check `source_ref` — join to `data_source` — if it matters which source set
 them). Classify each catalog item as:
 
-- **Present, years compatible** — no change.
+- **Present, years compatible** — no change to years, but still check the
+  next bullet for enrichment.
 - **Present, catalog extends the years** — a part listed as current moves
   `year_to` up to the catalog year; a part listed earlier than the DB's
   `year_from` moves that down. A part missing from a later catalog bounds
   `year_to` at the previous catalog's year, no further.
-- **Present under another name** — same part number, different title
-  (Record vs Gran Sport). Append a note to the description rather than
-  retitling or duplicating.
+- **Present, catalog adds detail years alone don't capture** — a match by
+  part number is not just a years check. If the catalog's title or
+  description carries something the DB row doesn't (a model name, a
+  material, a cable length, a sub-part breakdown, what it's sold with), fold
+  it in even when the years already agree:
+  - **Same name, thin description** — append the catalog's detail to the
+    existing description (`CONCAT`, guarded like any other description
+    update) rather than leaving the row as bare as a velobase crawl often
+    leaves it.
+  - **Present under another name** — same part number, different title
+    (Record vs Gran Sport). Append a note to the description rather than
+    retitling or duplicating — the DB's existing title convention for that
+    part number stays, since a later catalog may use the older name again.
+  - Never overwrite a description outright; only add to it. If the existing
+    title looks simply wrong (a typo, a swapped sub-number) rather than a
+    naming variant, propose the title fix explicitly and get confirmation
+    like any other correction, since it's not purely additive.
 - **Genuinely missing** — only for categories that exist. Confirm by part
   number and by name before inserting.
-- **Apparent duplicates or rows the catalog shows don't belong** (two rows,
-  same title, different source_id and weight; a row that's actually a bare
-  placeholder superseded by a numbered one; a part the catalog's own text
-  says never existed as described) are not something to just leave alone by
-  default. Deleting or merging them is a normal, available outcome of a
-  catalog reconciliation — the `known-catalogs.md` history has many of
-  these (the 2026-09-28 Campagnolo dedupe passes deleted dozens of rows).
-  Prefer a distinguishing title suffix over deletion only when the rows are
-  each independently attested (two genuine catalog-photographed variants);
-  otherwise propose the merge/delete plan and get the user's go-ahead
-  (destructive statements need review, same as any DELETE) before running it.
+- **Apparent duplicates, placeholders, or rows the catalog shows don't
+  belong** (two rows, same title, different source_id and weight; a row
+  that's actually a bare placeholder superseded by a numbered one; a part
+  the catalog's own text says never existed as described) are not something
+  to just leave alone by default. Deleting or merging them is a normal,
+  available outcome of a catalog reconciliation — the `known-catalogs.md`
+  history has many of these (the 2026-09-28 Campagnolo dedupe passes deleted
+  dozens of rows). Prefer a distinguishing title suffix over deletion only
+  when the rows are each independently attested (two genuine
+  catalog-photographed variants); otherwise propose the merge/delete plan
+  and get the user's go-ahead (destructive statements need review, same as
+  any DELETE) before running it.
+- **Existing row, especially velobase-sourced, absent from this catalog** —
+  absence from one catalog alone is weak evidence (see the year-bounding
+  bullet above; it just caps `year_to`, it doesn't imply the part never
+  existed). Only raise it as a merge/delete candidate when the absence
+  *combines* with an independent duplicate/placeholder signal — bare or
+  generic title, no part number, a near-identical row elsewhere with a real
+  part number, or the catalog's own text contradicting it. In that case
+  treat it exactly like the bullet above: propose the merge/delete plan and
+  wait for confirmation before running it. Don't propose deletion on
+  absence alone.
 
 ## 4. Apply as idempotent SQL
 
