@@ -1369,6 +1369,59 @@ in the repo records them except this file.
   beyond the 1927 leaflet's vague "472 or 347" reference - not done here,
   a future pass could pick it up.
 
+## Simplex "Derailleurs" fold-out poster catalog (16 panels, January 1981, via disraeligears.co.uk)
+
+- Dated precisely by the printer's credit line on the last panel:
+  "Printed in France - Imp. Gougenheim - Lyon - January 1981". Spec-sheet
+  style catalog (weight/housing material/capacity/fitting tables per
+  model ref) across Rear/Front Derailleurs, Shifters, Seat Posts and a
+  chainring line - 45 rows touched in total (9 Rear Derailleurs, 12 Front
+  Derailleurs, 20 Shifters, 2 Seat Posts, 2 Chainrings).
+- Convention followed throughout: P vs SP (standard fork end vs
+  with-hanger) and L/R lever pairs are folded into one row's description,
+  matching how existing sibling rows already did it (e.g. 4658 "Simplex
+  SX110 T" already notes both its fork-end weights in one row) - not
+  split into separate rows. A genuinely different cage/capacity (GT =
+  long cage) gets its own row, matching existing SX410 T vs SX410 GT
+  (long cage).
+- Years extended: 4657 "SX100 T" and 4658 "SX110 T" (year_to 1980->1981),
+  4600 "LJ1000 T" (year_to 1970->1981, a big jump but the catalog
+  attests the same identifiable part still current), 5901 "SX 1500" seat
+  post (year_to 1980->1981).
+- Enriched (catalog detail folded in even though years already agreed):
+  4614 "SJ810 GT" (P/SP weight split), 4646 "LJ1000 CP", 4647 "S001 T,
+  Prestige (version 2)" (its missing with-hanger weight), and all 6
+  matched Front Derailleur rows (2585 SA02, 2586 SA12, 2577 SX A22, 2580
+  SX A52, 2573 SJ A102, 2574 SJ A103) - the DB's bare descriptions lacked
+  housing material, fixing-clip material, and chainring compatibility
+  that the catalog gives for every model.
+- New rows - Rear Derailleurs: "SX810 T" (no `SX810` row existed at all),
+  "SLJ6000 GT (long cage)" (only the 26t plain `SLJ6000` existed), "LJ4000
+  T (version 2)" (the `LJ4000 CP` line has v1/v2/v3 but `LJ4000 T` only
+  had v3 - a gap this catalog's 1981 attestation fills, dated to the same
+  1978-1984 window as CP's v2). Front Derailleurs: "SX A23"/"SX A53"
+  (triple versions of A22/A52), and the entire **SLJ A** series
+  (SLJ A502/503/522/523) - none existed. Seat Posts: "SLJ4164" - only a
+  **Spidel**-branded `Spidel SLJ 4164, Serie Sport Ref 01` existed
+  (same OEM-rebadge pattern as other Spidel/Simplex rows), no plain
+  Simplex-brand row. Chainrings: "DP210"/"DP211" (steel/dural 3-arm
+  detachable double chainwheel, 45-53t) - nothing like it existed.
+  Shifters: **all 20** model refs (Série S/SP/SJ/LJ/SLJ down-tube and
+  braze-on-boss levers, SXP/SXP-L stem levers, SLJ2615 handlebar control
+  lever) - none matched any existing DB row, including the DB's bare
+  "type"-generation Shifters placeholders, which are mechanically
+  stem-mount rather than this catalog's down-tube clip/braze-on series.
+- One case deliberately left as new inserts rather than reinterpreting an
+  existing row: 4651 "SLJ5500 (version 1)" is dated 1979-1984 at 219g,
+  but this catalog's three SLJ5500 variants (CP/SP 183g, GT/SP 201g,
+  T/SP 192g) are all 20-35g lighter - too big a gap for measurement
+  noise, so treated as a separate lighter sub-line rather than asserting
+  they're the same casting as "version 1".
+- Panel 16 is a separate 1928-1935 historical facsimile insert bundled
+  into this 1981 catalog (race palmarès by year, plus original "Le
+  Simplex Type Route"/"Super-Simplex" pricing) - handled as its own pass,
+  not part of the above.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
