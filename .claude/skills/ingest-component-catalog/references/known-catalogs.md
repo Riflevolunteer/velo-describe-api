@@ -1261,6 +1261,50 @@ in the repo records them except this file.
   already dated 1980 - distinct SKUs from the ad's plain "700 Compact",
   not the same model despite the matching year.
 
+## Simplex "New Generation" & Selematic brochure (6 pages, 1982)
+
+- Small single-product-line brochure (not a full-line catalog): the
+  Selematic pressure gear-changer plus the "new generation" SJ/SLJ
+  derailleurs and SXP/SLJ shifters. Printed 09-1982 per the back-cover
+  imprint. Scan, no text layer.
+- Rear derailleurs: S061 T/P, SX610 T/P, SX610 GT/P, SLJ6600 T/SP, SLJ6600
+  GT/SP already/partly in the DB.
+  - 4654 "SLJ6600 GT (long cage)": year_to 1980 -> 1982 (catalog postdates
+    it; weight matches exactly, 208g both).
+  - 4630 "SX610 T (version 1)": had no weight, catalog gives 311g -
+    appended.
+  - 4628 "SX610 GT (version 1)", 4655 "SLJ6600 T (version 1)": years
+    already compatible (1982 within range); left alone (4655's catalog
+    weight, 195g, differs from the DB's 204g by a small margin - ordinary
+    measurement variance on a hand-weighed vintage part, not treated as a
+    different SKU).
+  - New: S061 T/P (7262) - no match anywhere in the DB. 287g, capacity
+    30/30 teeth, T/SP fork-end fitting. Single-catalog attestation,
+    year_from = year_to = 1982.
+- Front derailleurs: SJ A222/A223 already in the DB but dated 1984-1985;
+  this 1982 brochure predates that.
+  - 2575 "SJ A222", 2576 "SJ A223 (triple)": year_from 1984 -> 1982.
+    Catalog also carries fitting/capacity detail (Ø28/28.6mm down tube,
+    brazed tunnel 4123, 14/24-tooth capacity) the DB description lacked -
+    appended. Catalog's weights (108g/119g) differ from the DB's 126g
+    spec on both - noted in the appended text, not overwritten.
+  - New: SLJ A422 (7263), SLJ A423 triple (7264) - no match at all in the
+    DB (a separate SLJ-series-compatible SKU from SJ A222/223, identical
+    weight/capacity/fitting). Single-catalog attestation, year_from =
+    year_to = 1982.
+- Shifters (SXP 4506, SLJ 5057, SXP 4557/4558, SXP 4555/4556, SXP L
+  4543/4542, SXP 4541/4540) deliberately **not** actioned this pass. The
+  DB has several loosely-dated, unnumbered "type" rows (`Simplex SXP
+  (1st/2nd type; stem mount)`, `Simplex SXP (white)`, `Simplex SXP-L
+  (stem mount)`, `Simplex SLJ (3rd/4th type...)`) that might correspond,
+  and one weight match is exact (SLJ 5057's 88g = `Simplex SLJ (4th type,
+  black anodized)`'s 88g), but the catalog only gives weight for 2 of the
+  6 SKUs, and there are more catalog SKUs than DB "type" buckets - forcing
+  the rest would risk wrongly conflating distinct SKUs. Left unresolved
+  for a future pass; new `data_source` row (source_id 51, label "Simplex
+  New Generation & Selematic brochure (1982)") is already in place for
+  whenever that happens.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
