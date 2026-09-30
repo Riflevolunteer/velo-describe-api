@@ -500,12 +500,21 @@ to be a different bug entirely:
   sitting unused. Retargeted the override to 5124; one-off `UPDATE`
   repointed the 2 already-loaded rows.
 
-Broader finding, not yet acted on: 397 `component_detail` rows across the
-whole DB are bare single-word (brand-only, no model) titles; only 7 are
+Broader finding, acted on 2026-09-30: 397 `component_detail` rows across the
+whole DB were bare single-word (brand-only, no model) titles; only 7 were
 linked to any `bike_spec` row (the ones above, plus Maillard/Freewheels,
 Iris/Chains, Renold/Chains, AVA/Rims, Simplex/Freewheels, SunTour/Shifters
-— all checked and fine, no false year claims). The other 390 are unused
-velobase-crawl artifacts, some carrying the same "bogus specific year"
-shape as the bugs above, sitting dormant until some future catalogue's
-bare-brand value happens to exact-match one. Whether to bulk-delete them
-(safe — zero bike_spec references) is an open decision, not yet made.
+— all checked and fine, no false year claims, kept as-is). The other 390
+were unused velobase-crawl artifacts, some carrying the same "bogus specific
+year" shape as the bugs above, sitting dormant until some future catalogue's
+bare-brand value happened to exact-match one.
+
+Deleted (one-off, run and discarded, not kept in the repo): the 390 unused
+rows, plus a knock-on check on the 119 `component_brand` rows that then had
+zero `component_detail` rows left (e.g. Acme, Aironi, SelleRoyal — distinct
+from brands like Agrati or Astros that also had a bare row but kept other
+real components, which were left untouched). Those 119 brands' scaffolding
+was cleaned up too: 2 `component_group` rows scoped to them (verified zero
+surviving component links first) and 129 `category_brand` rows. Verified
+before running: zero `bike_spec` references on the 390, and none of their
+ids appeared in `COMPONENT_OVERRIDES` (`scripts/generate-bike-update-sql.js`).
