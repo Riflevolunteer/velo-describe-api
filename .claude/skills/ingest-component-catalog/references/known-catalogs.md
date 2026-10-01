@@ -1581,16 +1581,29 @@ in the repo records them except this file.
   DB match and the surrounding print was too degraded to transcribe
   confidently - left unresolved rather than guessed.
 
-## Simplex "Loisirs... détente" catalogue (20 pages, 1984)
+## Simplex "Loisirs... détente" catalogue (20 pages, September 1984)
 
 - `data_source` 55. Source: `~/Downloads/Simplex/scan0001-0020.jpg`
-  (printed page N = scan(N-1) for pages 6-19, e.g. page 7 = scan0006). Dated by the back-cover
-  imprint "Printed in France 1?/84" (month digit cut off at the scan
-  edge) and the president's foreword ("By 1984..."). Bilingual FR/EN
-  spec-sheet catalogue organised by range: Bronze, Silver
-  Sport/Touring/"Mountain Bike", Gold Racing/Touring, plus QR/seat
-  posts, braze-ons and dropouts (out of scope). The contents list a
-  page 20 (BMX wheels) that is not in the scan.
+  (printed page N = scan(N-1) for pages 6-19, e.g. page 7 = scan0006);
+  complete copy at
+  https://www.disraeligears.co.uk/site/simplex_-_loisirs_detente_1984.html
+  (images `..._loisirs_detente_1984_{front_cover,inside_front_cover,page_1..20,inside_rear_cover,rear_cover}_main_image.jpg`).
+  Dated by the rear-cover edge imprint "Conception et réalisation
+  Gougenheim imprimerie publicité Lyon - Printed in France 09/84". The
+  local scan clipped it and was first misread as "1?/84"; the
+  disraeligears copy shows it in full. Corroborated by the president's
+  foreword ("By 1984..."). Bilingual FR/EN spec-sheet catalogue organised
+  by range: Bronze, Silver Sport/Touring/"Mountain Bike", Gold
+  Racing/Touring, plus QR/seat posts, braze-ons and dropouts (out of
+  scope).
+- Page 20 (BMX wheels, missing from the local scan) was ingested from
+  the disraeligears copy: new Wheel(sets) rows 7345 FW200 (front, 1400g),
+  7346 RW200 (rear, 1438g), 7347 FW201 (front with drum brake, 1596g)
+  and 7348 RW201 (rear with drum brake, 1640g). All are 1984-1984,
+  `source_ref` 55, glass-fibre polyamide 6/6 with light-alloy hubs and
+  five colours. Pair refs PW200/PW201 are noted in the descriptions
+  rather than given their own rows. These were the first Simplex
+  Wheel(sets) rows in the DB.
 - New vs 1981/82: the first Simplex MTB group (SX 630 GT/SPMB, SJ A103
   MB, MB 2600/2601 thumb shifters), SX 1 T/P, SX A32/A33, SX 630 T/SP,
   Delrin SX 88xx / S 344x / SP 246x levers, Zamac SJ 62xx/63xx levers,
@@ -1708,7 +1721,8 @@ in the repo records them except this file.
     for two versions (1982 brochure 311g = v1, 1984 catalogue 275g = v2);
     both weights are kept in 4631's description. If a later catalogue
     makes the v1/v2 distinction matter, split again on weight.
-- Left unresolved: BMX wheels page missing from the scan.
+- BMX wheels page: resolved later from the disraeligears copy (see the
+  top of this section).
 
 ## Cross-catalog notes
 
