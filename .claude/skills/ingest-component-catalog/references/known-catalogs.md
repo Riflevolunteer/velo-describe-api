@@ -1676,3 +1676,17 @@ in the repo records them except this file.
 - Part numbers are reused across eras (1013/1 is a Gran Sport lever in 1953
   and a Record lever in 1967; 1040 is Gran Sport pista in 1960 and "Record
   Pista" later). Diff by number, then read the DB title before deciding.
+- **Redundant velobase weights (2026-10-01, Simplex, at the user's
+  call):** a deliberate, narrow exception to add-only descriptions. A
+  velobase "(Spec)" weight was removed only where it exactly equals a
+  catalogue weight for the same model on the same row. Removed text, so
+  it can be restored: 2575 "126 grams (Spec)", 4616 "287 grams (Spec)",
+  6209 "71 grams (Spec)", 6216 "86 grams (Spec)", 7263 "108 grams
+  (Spec)" (each sat right after "France, "). Kept on purpose: every
+  "(Actual)" and "(avg)" weight (measured specimens are independent
+  evidence of real variance), (Spec) weights that only approximately
+  match (6212 105 vs 105.5g, 4603, 4632), derived matches (6231 180g =
+  2x90g), rows where the catalogue note doesn't restate the weight
+  (2567, 6240), and 4617, where the weight anchors the SP wording.
+  Weights on catalogue-inserted rows (e.g. 7281-7284, 7305) are
+  themselves catalogue figures, not velobase ones.
