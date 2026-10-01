@@ -1506,6 +1506,11 @@ in the repo records them except this file.
   1974, may be what it was numbered against, but nothing links them);
   also added the 1981 poster's T/P weight (272g), which the 1981 pass
   had skipped, next to its T/SP 236g.
+- Merged/deleted (follow-up pass, not catalogue-driven): 4582 "Prestige
+  (variant version of AR637P/NI)" (velobase, bare, 1974,
+  `D357B3A8-5CCF-47F2-9F0A-A7FE9038E6CD`) -> same-titled 4583 (246g,
+  6 bike links, the `'simplex prestige'` override). 4583's year_to moved
+  1972 -> 1974; the override comment was updated to match.
 - Merged/deleted (none had bike_spec links or overrides):
   - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
     -> 4616. The 1982 pass missed the match because of the SO61 typo.

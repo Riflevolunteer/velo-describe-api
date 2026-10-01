@@ -473,7 +473,7 @@ const COMPONENT_OVERRIDES = {
     // Every current use of the bare value is 1979 Peugeot; block it outright
     // rather than year-range it, since there's no real row to point at.
     'simplex': null,
-    'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1972
+    'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1974
     // DB title is `Zeus "Especial Alfa 72"` — the quotes and brand prefix
     // defeat substring matching.
     'alfa 72': 4863,
