@@ -1490,6 +1490,13 @@ in the repo records them except this file.
     `2328F219-60B4-40BD-BF62-038E49A9369A`) -> 7317 "SX8811", on a
     follow-up pass at the user's call (it could equally have been SP
     2468). 7317 took its year_to, now 1984-1985.
+  - 4628 "SX610 GT (version 1)" (velobase, 1981-1983, 332g,
+    `82D7087F-50FC-424E-B57B-79B9947EFFA0`) -> 4629 "SX610 GT (version
+    2)", on a follow-up pass at the user's call: the 1984 catalogue's
+    332g GT/P matched v1's weight but v2's years, so the split wasn't
+    supported. 4629 is now 1981-1985 and retitled "Simplex SX610 GT"
+    (dropped "(version 2)"). The SX610 T v1/v2 split (4630/4631) was
+    left as is.
 - Left unresolved: BMX wheels page missing from the scan.
 
 ## Cross-catalog notes
