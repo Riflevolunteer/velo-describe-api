@@ -1484,7 +1484,11 @@ in the repo records them except this file.
   corrected to "GT/SP 250g". 4653 "SLJ6000" (238g) -> "SLJ6000 T" to
   pair with 7277, since 238g is exactly the poster's T/SP; also
   enriched with the poster's T/SP spec (26t capacity, max sprocket 24t).
-  4652 "SLJ5500 GT  (version 2)" (stray double space) -> "SLJ5500 GT".
+  4652 "SLJ5500 GT  (version 2)" (stray double space) -> "SLJ5500 GT";
+  7311 "SLJ5500 GT (version 1)" -> "SLJ5500 GT/SP" (the catalogue name),
+  since the "version 2" it was numbered against is gone. The two GT rows
+  are now told apart by name and years (7311 1981-84 at 201g, 4652
+  1985-90 at 219g).
 - Merged/deleted (none had bike_spec links or overrides):
   - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
     -> 4616. The 1982 pass missed the match because of the SO61 typo.
