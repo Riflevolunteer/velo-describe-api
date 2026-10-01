@@ -1471,7 +1471,9 @@ in the repo records them except this file.
 - Retitled: 4616 "SO61 T" -> "S061 T" (letter-O typo); 4655 "SLJ6600 T
   (version 1)" -> "SLJ6600 T" (there was no version 2 row); 4620 "SX410
   GT (long cage)" -> "SX410 GT"; 4654 "SLJ6600 GT (long cage)" ->
-  "SLJ6600 GT".
+  "SLJ6600 GT"; 7277 "SLJ6000 GT (long cage)" (1981 pass) -> "SLJ6000
+  GT", search_text updated too (the 1981 insert had baked the suffix
+  into it).
 - Merged/deleted (none had bike_spec links or overrides):
   - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
     -> 4616. The 1982 pass missed the match because of the SO61 typo.
