@@ -1416,7 +1416,9 @@ in the repo records them except this file.
   but this catalog's three SLJ5500 variants (CP/SP 183g, GT/SP 201g,
   T/SP 192g) are all 20-35g lighter - too big a gap for measurement
   noise, so treated as a separate lighter sub-line rather than asserting
-  they're the same casting as "version 1".
+  they're the same casting as "version 1". **Correction (1984 pass):**
+  those three inserts never actually landed in the DB; they were added
+  by the 1984 pass below (7309-7311, dated 1981-1984).
 - Panel 16 is a separate 1928-1935 historical facsimile insert bundled
   into this 1981 catalog (race palmarès by year, plus original "Le
   Simplex Type Route"/"Super-Simplex" pricing) - handled as its own pass,
@@ -1431,6 +1433,62 @@ in the repo records them except this file.
   "Le Simplex Type 38" and "Le Simplex Type Tour de France 34" have no
   DB match and the surrounding print was too degraded to transcribe
   confidently - left unresolved rather than guessed.
+
+## Simplex "Loisirs... détente" catalogue (20 pages, 1984)
+
+- `data_source` 55. Source: `~/Downloads/Simplex/scan0001-0020.jpg`
+  (printed page N = scan(N-1) for pages 6-19, e.g. page 7 = scan0006). Dated by the back-cover
+  imprint "Printed in France 1?/84" (month digit cut off at the scan
+  edge) and the president's foreword ("By 1984..."). Bilingual FR/EN
+  spec-sheet catalogue organised by range: Bronze, Silver
+  Sport/Touring/"Mountain Bike", Gold Racing/Touring, plus QR/seat
+  posts, braze-ons and dropouts (out of scope). The contents list a
+  page 20 (BMX wheels) that is not in the scan.
+- New vs 1981/82: the first Simplex MTB group (SX 630 GT/SPMB, SJ A103
+  MB, MB 2600/2601 thumb shifters), SX 1 T/P, SX A32/A33, SX 630 T/SP,
+  Delrin SX 88xx / S 344x / SP 246x levers, Zamac SJ 62xx/63xx levers,
+  SLJ 5068/5069, SLJ 6164 seat post (successor to 1981's SLJ4164).
+  Dropped: LJ1000, SX100/110, SLJ6000 GT, SA02/12, SX A22/23/52/53, SLJ
+  A502/503/423, most SXP stem levers, Selematic. Their DB year_to values
+  were already at or below 1983, so nothing needed capping.
+- Years extended to 1984: 4655 SLJ6600 T (v1), 4654 SLJ6600 GT, 7263 SLJ
+  A422, 7304 SLJ2615, 5901 SX 1500. 5904 SLJ 6164 was undated, now
+  1984-1984.
+- Enriched only (capacity/weight/fitting appended, years unchanged):
+  4614, 4620, 4621, 4631, 4629, 4632, 4633, 4603, 2578, 2575, 2576.
+  Catalogue part numbers appended to unnumbered rows: 6209 "Zytel levers,
+  square finger pads" = S 3448 (71g exact), 6212 "SJ (2nd type)" = SJ 6311
+  (105g), 6231 "MB Silver Range" = MB 2600/2601 (180g = 2x90g), 6239 "SLJ
+  (4th type)" = SLJ 5057 (the 1984 photo shows a silver lever, not 6240's
+  black anodized one, so 6240's years were left alone).
+- Left ambiguous: SX 610 GT/P at 332g matches 4628 v1's weight but
+  4629 v2's years. Noted on 4629 only.
+- New (16 rows, 7308-7323): SX1 T; SLJ5500 CP / T / GT (version 1)
+  (1981-1984, see the 1981 correction above; GT is "version 1" because
+  4652 is the 1985-90 "version 2"); SX A33; SJ A103 MB; shifters S3445,
+  SP2466, SP2468, SX8811, SX8820 (+8821 LH), SJ6320 (+6321 LH), SJ6211,
+  SJ6220 (+6221 LH), SXP 4503, SLJ5068 (+5069 LH).
+- Retitled: 4616 "SO61 T" -> "S061 T" (letter-O typo).
+- Merged/deleted (none had bike_spec links or overrides):
+  - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
+    -> 4616. The 1982 pass missed the match because of the SO61 typo.
+    Both rows were 287g.
+  - 7276 "SX810 T" (1981 pass, `8acf1f80-bd18-11f1-a2df-02fea3763e8d`)
+    -> 4617 "SX 810 T" (same 266g T/SP). 4617 also took its SX group.
+  - 2588 "Super LJ A 522" (velobase,
+    `3475EE29-C9B1-4A25-BC95-9BF6B7434423`) -> 7283 "SLJ A522", same
+    114g. 7283 is now 1980-1984 in the Super LJ group.
+  - 2593 "Super LJ 523 (triple)" (`6897DE83-CFB2-42F8-81B6-BD286984FF44`)
+    and 2594 "Super LJ 523 (triple; second version)"
+    (`D286DD35-9F7C-4CDA-8114-32536EED7089`), both bare velobase rows
+    dated 1980, -> 7284 "SLJ A523", now 1980-1984. Nothing distinguished
+    the "second version".
+  - 7265 "SXP 4506" (1982 pass, `1d2bc191-bd12-11f1-a2df-02fea3763e8d`,
+    89g) -> 6216 "SXP (2nd type; stem mount)", whose 86g matches the 1984
+    catalogue exactly.
+- Left unresolved: 6214 "Simplex (Delrin)" (1984-85, bare) is probably
+  SX 8811 or SP 2468, but there's not enough evidence to merge. BMX
+  wheels page missing from the scan.
 
 ## Cross-catalog notes
 
