@@ -1613,6 +1613,9 @@ in the repo records them except this file.
   refs), IR8020, ERGO 2900 (left-hand refs folded into the right-hand
   rows); Wheel(sets) Free Style Mod 300 / Mod 400; Freewheels "5/6-speed
   index freewheel" (5.45mm pitch, no model name in the catalogue).
+- Retitled (follow-up): 4564 "Vallee" -> "SX Vallee T", the catalogue's
+  SX Vallée T/SP, to match 4565 "SX Foret GT" / 4568 "SX Foret T"
+  (accents dropped as in those rows).
 - Merged/deleted (the catalogue shows one Alpha T sold in three colours
   and one SX Forêt GT, so the bare velobase "version" rows weren't
   independently attested):
