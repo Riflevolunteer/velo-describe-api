@@ -1495,6 +1495,9 @@ in the repo records them except this file.
   1979-1990. The two velobase rows shared the same 219g, which matches
   no SLJ 5500 in the 1981 or 1984 catalogues (183/192/201g). Its bike
   links had already moved to 7309.
+- Deleted (follow-up pass, not catalogue-driven): 4609 "S005, Composit"
+  (velobase, bare, `7184D8BF-4731-40BE-AF44-5BCCC0EECF1D`), an
+  exact-title, same-years duplicate of 4610, which keeps its 255g spec.
 - Merged/deleted (none had bike_spec links or overrides):
   - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
     -> 4616. The 1982 pass missed the match because of the SO61 typo.
