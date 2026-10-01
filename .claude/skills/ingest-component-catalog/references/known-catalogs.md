@@ -1298,7 +1298,10 @@ in the repo records them except this file.
   only), 4647 S001 T, 4657 SX100 T, 4658 SX110 T, 4621 SX410 T (T/P 311g;
   the 1981 poster says 315g), 4614 SJ810 GT (GT/P 330g), 4646/4600 LJ1000
   CP/T (245g), 4603/7278 LJ4000 CP v2/T v2 (177g), 4650 SLJ5000 (230g,
-  all three cages' capacities), 2567 LJ A302.
+  all three cages' capacities), 2567 LJ A302. The 1978 catalogue prints
+  one weight per CP/T pair (items 8 and 9), so the LJ1000 and LJ4000
+  notes say "(one figure for CP and T)"; the first pass had appended it
+  as if it were model-specific.
 - New (14 rows, 7327-7340, all 1978-1978): front SX A12, SX A42, SX A43,
   LJ A303, LJ A322, LJ A323; shifters SX3612, SX3613, SX3614, LJ4001
   (LH double clip, missing from the 1981 LJ set), SLJ5006 (LH double
