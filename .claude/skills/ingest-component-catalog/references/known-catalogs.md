@@ -1487,8 +1487,14 @@ in the repo records them except this file.
   4652 "SLJ5500 GT  (version 2)" (stray double space) -> "SLJ5500 GT";
   7311 "SLJ5500 GT (version 1)" -> "SLJ5500 GT/SP" (the catalogue name),
   since the "version 2" it was numbered against is gone. The two GT rows
-  are now told apart by name and years (7311 1981-84 at 201g, 4652
-  1985-90 at 219g).
+  are now told apart by name and weight (7311 1981-84 at 201g, 4652 at
+  219g).
+- Merged/deleted (follow-up pass, at the user's call): 4651 "SLJ5500
+  (version 1)" (velobase, 1979-1984, 219g, no cage type,
+  `B35882D6-65CE-43AC-B68E-B329887D1C77`) -> 4652 "SLJ5500 GT", now
+  1979-1990. The two velobase rows shared the same 219g, which matches
+  no SLJ 5500 in the 1981 or 1984 catalogues (183/192/201g). Its bike
+  links had already moved to 7309.
 - Merged/deleted (none had bike_spec links or overrides):
   - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
     -> 4616. The 1982 pass missed the match because of the SO61 typo.
