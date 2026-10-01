@@ -1523,7 +1523,9 @@ in the repo records them except this file.
   derailleur hanger)"; 4658 "283 grams (Actual) with integral claw
   (standard dropouts), approx. 248 g without (SP, for frames with a
   hanger)". 4656 "SX300 T" (direct attachment 279g, with hanger 292g)
-  is consistent and was left alone. Read "hanger" in any source by which
+  is consistent and was left alone. 4647 "S001 T, Prestige" carried the
+  poster's own phrasing ("T/SP (with hanger) 236g"); reworded to "T/SP
+  (for frames with a hanger) 236g". Read "hanger" in any source by which
   part it belongs to before treating weights as contradictory.
 - Merged/deleted (none had bike_spec links or overrides):
   - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
