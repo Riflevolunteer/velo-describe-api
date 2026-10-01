@@ -1851,7 +1851,7 @@ in the repo records them except this file.
   and a Record lever in 1967; 1040 is Gran Sport pista in 1960 and "Record
   Pista" later). Diff by number, then read the DB title before deciding.
 - **Redundant velobase weights (2026-10-01, Simplex, at the user's
-  call):** a deliberate, narrow exception to add-only descriptions. A
+  call):** done when descriptions were still treated as add-only (since relaxed: velobase is not the authority, see SKILL.md). A
   velobase "(Spec)" weight was removed only where it exactly equals a
   catalogue weight for the same model on the same row. Removed text, so
   it can be restored: 2575 "126 grams (Spec)", 4616 "287 grams (Spec)",

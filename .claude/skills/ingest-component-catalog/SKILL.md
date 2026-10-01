@@ -80,18 +80,31 @@ them). Classify each catalog item as:
   description carries something the DB row doesn't (a model name, a
   material, a cable length, a sub-part breakdown, what it's sold with), fold
   it in even when the years already agree:
-  - **Same name, thin description** — append the catalog's detail to the
-    existing description (`CONCAT`, guarded like any other description
-    update) rather than leaving the row as bare as a velobase crawl often
-    leaves it.
+  - **Velobase is not the authority.** Its titles and descriptions are a
+    crawl, often bare, sometimes garbled ("SO61", "(version 2)" with no
+    version 1, a double space, a reversed hanger note). A manufacturer
+    catalogue outranks it. Rewrite titles and descriptions outright when
+    the catalogue gives a better one: fix typos, drop orphaned or
+    unsupported suffixes, adopt the catalogue's model name and code, and
+    replace wrong, redundant or confusing text rather than appending a
+    correction after it. Propose these in the diff like any other change;
+    they don't need a separate confirmation round.
+  - Keep velobase facts that are independent evidence and not contradicted
+    by the catalogue, chiefly measured weights ("(Actual)", "(avg)").
+    Drop a velobase "(Spec)" weight that just repeats a catalogue figure.
+  - **Same name, thin description** — rewrite the description to carry the
+    catalog's detail (what it is, material, capacity, weight, codes)
+    instead of leaving it as bare as the crawl left it.
   - **Present under another name** — same part number, different title
-    (Record vs Gran Sport). Append a note to the description rather than
-    retitling or duplicating — the DB's existing title convention for that
-    part number stays, since a later catalog may use the older name again.
-  - Never overwrite a description outright; only add to it. If the existing
-    title looks simply wrong (a typo, a swapped sub-number) rather than a
-    naming variant, propose the title fix explicitly and get confirmation
-    like any other correction, since it's not purely additive.
+    (Record vs Gran Sport). Part numbers are reused across eras, so pick
+    the title the catalogues best support for that row's years and mention
+    the other name in the description; don't duplicate the row.
+  - Earlier catalogue notes on the row (from our own passes) are ours to
+    restructure too: consolidate repeated "1981 catalog: ... Sep 1981
+    catalog: ..." fragments into one coherent description when a row gets
+    crowded, keeping which catalogue each figure came from.
+  - Record a rewrite's old title in `known-catalogs.md` (as with deleted
+    rows), so a later source using the old name can still be matched.
 - **Genuinely missing** — only for categories that exist. Confirm by part
   number and by name before inserting.
 - **Apparent duplicates, placeholders, or rows the catalog shows don't
@@ -147,8 +160,11 @@ Write one `.sql` file per catalog in the scratchpad, then
   a newline; a trailing `-- comment` after the semicolon merges statements
   into one batch. MySQL has executed them anyway so far, but the statement
   count it reports is then wrong, and it is not something to rely on.
-- Description notes are appended (`CONCAT`) and guarded with
-  `description NOT LIKE '%Catalogo N. 14%'`.
+- Description changes are idempotent either way: an append is guarded
+  with `description NOT LIKE '%Catalogo N. 14%'`; a rewrite sets the new
+  text with `WHERE component_id = N AND description <> '<new text>'`.
+  `description` is `varchar(255)` and silently truncates, so check
+  `CHAR_LENGTH` of the new text before loading.
 - **Deletes and merges are in scope, not just inserts/updates.** Before
   deleting a row: check `bike_spec.component_id` for links to it and
   `COMPONENT_OVERRIDES` in `scripts/generate-bike-update-sql.js` for
