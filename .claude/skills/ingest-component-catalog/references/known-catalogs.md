@@ -1261,6 +1261,56 @@ in the repo records them except this file.
   already dated 1980 - distinct SKUs from the ad's plain "700 Compact",
   not the same model despite the matching year.
 
+## Simplex "Derailleurs" catalogue, English edition (6 scans, July 1978, via disraeligears.co.uk)
+
+- `data_source` 57. Source:
+  https://www.disraeligears.co.uk/site/simplex_-_derailleurs_1978.html
+  (images `00_main_images/simplex_-_derailleurs_1978_scan_N_main_image.jpg`,
+  N = 1-6; scans 2-4 and 5-6 are two spreads). Dated by the imprint
+  "Printed in France - 07-1978 - Imp. Gougenheim - Lyon". The earliest
+  dated Simplex source for the 1970s-80s range.
+- Spec catalogue, items numbered 1-68: weights, capacities, tube sizes,
+  model refs. Its own key: P = "fit rear fork end without hanger", SP =
+  "with hanger" (frame meaning, as in the 1981 poster). It also notes the
+  C.P.S.C.-compliant 5mm allen cable-grab screw 4082 on all rear mechs.
+- vs September 1979: here but gone by 1979 are SX A12 (25.4mm), SX
+  A42/A43, LJ A302/A303, LJ A322/A323, the S stem levers sold as
+  S3956/S3958, the dural SX3612-3614 levers, and DP213/215. Not yet here:
+  SLJ5500, SLJ5001, SLJ6600, SX A52/53, SJ A102/103, which supports their
+  1979 starts. SLJ5000 is still current with CP/T/GT cages.
+- year_from moved down to 1978 (26 rows): 7306/7307 DP210/211, 7281-7284
+  SLJ A502/503/522/523, 7279 SX A23, 7277 SLJ6000 GT, 7305 SLJ4164,
+  7285-7288 S3950/3951/3952/S2954, 7289/7290 SP3510/3511, 7294-7296
+  LJ4010/4012/4084, 7297-7299 SLJ5005/5007/5008, 7300-7303 SXP
+  4189/4190 and SXP-L 4191/4192, 7304 SLJ2615. Most also got short
+  "1978 catalog:" notes (silver/gold options, "without click" vs "luxe",
+  SLJ4164's 188mm/193g).
+- 7289/7290 SP3510/SP3511 were sold in 1978 as S 3956/3957/3510 and S
+  3958/3959/3511 (same part numbers, S prefix), noted on each. Two
+  corrections there:
+  - Lever material: the 1981 pass wrote "light alloy lever", but the
+    poster's shared Series S/SP header says "lever member Zytel" and 1978
+    says Delrin. Replaced with "Zytel lever".
+  - The 21.2mm twin is "SP 3599" in the 1981 poster (7290 already said so)
+    and "S 3959" in 1978. Both kept: either a poster misprint or a
+    renumbering.
+- Enriched only (years already covered 1978): 4615 S0 (243g, 25t, P
+  only), 4647 S001 T, 4657 SX100 T, 4658 SX110 T, 4621 SX410 T (T/P 311g;
+  the 1981 poster says 315g), 4614 SJ810 GT (GT/P 330g), 4646/4600 LJ1000
+  CP/T (245g), 4603/7278 LJ4000 CP v2/T v2 (177g), 4650 SLJ5000 (230g,
+  all three cages' capacities), 2567 LJ A302.
+- New (14 rows, 7327-7340, all 1978-1978): front SX A12, SX A42, SX A43,
+  LJ A303, LJ A322, LJ A323; shifters SX3612, SX3613, SX3614, LJ4001
+  (LH double clip, missing from the 1981 LJ set), SLJ5006 (LH double
+  clip, likewise); chainrings DP213/DP215 (5-pin, 28-50t); seat post
+  4160 (all dural, not fluted, 197g; no unnumbered DB seat post matches).
+- No deletes. Rows with bike links (2567, 2577, 2586, 4621, 4657) already
+  covered 1978, so no override years were affected.
+- Out of scope: QR SLJ/SX 3607, demultiplicator 3637L, cable clips and
+  tunnels, dropouts, seat bolt 3649A, chainguards C1 A/C2 A, tensioners
+  T 232/234, spoke disc. Item 53 prints "SLJ 4146 A (240 mm)", a likely
+  misprint for SLJ 4164 A.
+
 ## Simplex "Dérailleurs - Pièces Détachées" parts book (20 pages, September 1979, via disraeligears.co.uk)
 
 - `data_source` 56. Source:
