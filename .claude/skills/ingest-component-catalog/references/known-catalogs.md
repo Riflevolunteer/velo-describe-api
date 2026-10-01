@@ -1261,6 +1261,47 @@ in the repo records them except this file.
   already dated 1980 - distinct SKUs from the ad's plain "700 Compact",
   not the same model despite the matching year.
 
+## Simplex "Dérailleurs - spécialités" catalogue (24 images, September 1981, via disraeligears.co.uk)
+
+- `data_source` 58. Source:
+  https://www.disraeligears.co.uk/site/simplex_-_derailleurs_specialites_1981.html
+  (images `00_main_images/simplex_-_derailleurs_specialites_1981_*_main_image.jpg`:
+  front_cover, inside_front_cover, page_1..page_20, inside_rear_cover,
+  rear_cover; printed page N = page_N). Dated by "Printed in France -
+  09-1981 - Imp. Gougenheim-Lyon" on the contents page. Eight months
+  after the January 1981 poster, same printer. The most complete Simplex
+  spec catalogue: every model has a weight, capacity and max sprocket,
+  and P/SP options are given with their own weights.
+- **Key finding: SX610's old "version 1/version 2" weights were P vs
+  SP.** Here SX610 T/P is 311g and T/SP 275g; GT/P 332g and GT/SP 296g.
+  That confirms the follow-up merges 4630 -> 4631 and 4628 -> 4629.
+- **The 1984 catalogue's "/P" weights are SP weights on some rows:**
+  SX410 "T/P" 279g, SX610 "T/P" 275g and SJ810 "GT/P" 296g all match this
+  catalogue's SP versions. It isn't systematic (1984's SX410 GT/P 336g and
+  SX610 GT/P 332g are correct P weights), so notes were appended to 4621,
+  4614 and 4631 rather than rewriting the 1984 labels.
+- **SP 3959 settles the 21.2mm twin stem lever:** printed SP 3959 here
+  (and S 3959 in 1978), so the January 1981 poster's "SP 3599" was a
+  misprint. 7290's "3599 for 21.2mm" was corrected to "3959 for 21.2mm
+  (Jan 1981 poster misprint 3599)".
+- vs January 1981: new are SX610 T/GT, S061 (with T/SP 251g), SJ A222/223
+  and SLJ A422/423 with CX options, the renumbered SLJ 505x levers
+  (lighter than the 500x they replace: 5055 51g vs 5005 54g, 5058 35g vs
+  5008 38g), and SX P 4562/4563 and 4503/4506. Gone are SX100 T, SLJ6000
+  T/GT and SLJ5000 (DB year_to values already at or below 1981).
+- year_from moved down to 1981: 2575 SJ A222, 2576 SJ A223, 7263 SLJ
+  A422, 7264 SLJ A423, 7322 SXP 4503, 7323 SLJ5068. Each got a short "Sep
+  1981" note.
+- Enriched: 4631 SX610 T, 4629 SX610 GT (answers its "version pictured
+  unconfirmed" note), 4616 S061 T (first SP weight), 4620 SX410 GT, 4658
+  SX110 T, 6240 SLJ 4th type (SLJ 5057 twin 88g confirmed), plus the
+  1984-label notes on 4621/4614.
+- New (7341-7344, 1981-1981): SLJ5055, SLJ5058, SXP 4562, SXP 4563. The
+  SLJ 5057 twin needed no new row (6240 holds the ref).
+- Left unresolved: 4615 S0 is at 233/255 chars, so this catalogue's S0/P
+  figures (250g, 28t/28t, vs January's 246g, 26t/28t) weren't added.
+  No deletes, and no bike-linked rows changed years.
+
 ## Simplex "Derailleurs" catalogue, English edition (6 scans, July 1978, via disraeligears.co.uk)
 
 - `data_source` 57. Source:
@@ -1292,8 +1333,9 @@ in the repo records them except this file.
     poster's shared Series S/SP header says "lever member Zytel" and 1978
     says Delrin. Replaced with "Zytel lever".
   - The 21.2mm twin is "SP 3599" in the 1981 poster (7290 already said so)
-    and "S 3959" in 1978. Both kept: either a poster misprint or a
-    renumbering.
+    and "S 3959" in 1978. Both kept at the time; the September 1981
+    catalogue later showed SP 3959, so 3599 was a poster misprint (see
+    that section).
 - Enriched only (years already covered 1978): 4615 S0 (243g, 25t, P
   only), 4647 S001 T, 4657 SX100 T, 4658 SX110 T, 4621 SX410 T (T/P 311g;
   the 1981 poster says 315g), 4614 SJ810 GT (GT/P 330g), 4646/4600 LJ1000
