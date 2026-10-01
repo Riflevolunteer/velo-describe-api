@@ -1581,6 +1581,58 @@ in the repo records them except this file.
   DB match and the surrounding print was too degraded to transcribe
   confidently - left unresolved rather than guessed.
 
+## Simplex catalogue (20 pages, 1989, via disraeligears.co.uk)
+
+- `data_source` 59. Source:
+  https://www.disraeligears.co.uk/site/simplex_-_catalogue_1989.html
+  (images `00_main_images/simplex_-_catalogue_1989_page_N_main_image.jpg`,
+  N = 1-20; printed page N = page_N, pages 2 and 19 blank). Dated by the
+  page-18 imprint "Photos: Christian Morel - Garnier imprimeur conseil -
+  Dijon/France - 1989". Trilingual FR/EN/DE. The company had moved to
+  Marsannay-la-Côte. First Simplex catalogue with 5-digit ordering refs
+  (10071, 11402...) alongside model names. All rear mechs are usable
+  non-indexed (3-7 speed) or indexed (5-6, or 5-7 on the slant
+  parallelograms).
+- vs 1984: the range is almost entirely replaced (no Bronze/Silver/Gold
+  tiers, no SX410/610/630, S061, SLJ5500/6600, SLJ A fronts, SX 88xx, SP
+  246x). Carried over: SX A32/A33 (A33 now 20t capacity, was 24t),
+  SJ6320/6321, SJ6311, SLJ5068/5069, SLJ6164. MB2700/2701 replace the
+  1984 MB2600/2601.
+- year_to moved to 1989: 2578 SX A32, 7312 SX A33, 7319 SJ6320, 7323
+  SLJ5068, 5904 SLJ 6164. year_from moved down to 1989: 4561 Alpha T,
+  4569 Fun Bike SX GT, 2549 "Simplex 302" (the catalogue's SJ A302,
+  Vallée set, 125g; noted, not retitled).
+- Enriched (refs/weights/capacity appended): the above plus 4570 S002 T
+  (T/SP 11402, GT/SP 11403), 4564 Vallee (T/SP 10111, 271g), 4565 SX
+  Foret GT (GT/SP 10116, 313g), 6212 SJ 2nd type (SJ6311 chrome 11353),
+  2579 SX A32 white (10502).
+- New (18 rows, 7349-7366, all 1989-1989): rear SX650 (Touring, 300g);
+  front SX A202, SX A203, SJ A303, SJ A Fun Bike; shifters SX5810,
+  SX5811, SX5820, SXP5803, SXP5806 (SX 58 series, acetal), SJ6310 (SJ 63
+  chrome collar), MB2700, SX Index (one row listing the colour/fitting
+  refs), IR8020, ERGO 2900 (left-hand refs folded into the right-hand
+  rows); Wheel(sets) Free Style Mod 300 / Mod 400; Freewheels "5/6-speed
+  index freewheel" (5.45mm pitch, no model name in the catalogue).
+- Merged/deleted (the catalogue shows one Alpha T sold in three colours
+  and one SX Forêt GT, so the bare velobase "version" rows weren't
+  independently attested):
+  - 4562 "Alpha T (version 2)" (bare, 1990,
+    `05F54A27-064B-484C-A00E-86889E77909F`) and 4563 "Alpha T (version
+    3)" (bare, 1990, `E41C2843-A92D-4B08-B4DA-8D29849ACBCD`) -> 4561,
+    retitled "Simplex Alpha T", now 1989-1995.
+  - 4566 "SX Foret GT (version 2)" (1990, 315g,
+    `F7030D7D-730B-460F-9F47-5A298518ACCA`) and 4567 "SX Foret GT
+    (version 3)" (bare, 1990, `9163A732-22B9-4C5F-94D7-D2652ECDDF32`) ->
+    4565, retitled "Simplex SX Foret GT", now 1989-1990.
+- Left alone: 4568 SX Foret T (1990; the catalogue shows only GT), 2582
+  "Simplex Alpha" front (bare, undated; no Alpha front in this
+  catalogue), the 651 rows and the 6219-6221 Alpha shifters (1990s). The
+  chain on page 12 has no model name and was not added. Out of scope:
+  bosses 5482/4294, collars 3604/3594/2112, cable guide 5244, gear guard
+  5799, seat-post QR 11099 and bolt 3649, and the page-15 spare parts
+  (hanger plates 5122/150 and 46000/150, pulley 2648/150, Fun Bike pivot
+  2551/122, Alpha index adjuster 11400/000).
+
 ## Simplex "Loisirs... détente" catalogue (20 pages, September 1984)
 
 - `data_source` 55. Source: `~/Downloads/Simplex/scan0001-0020.jpg`
