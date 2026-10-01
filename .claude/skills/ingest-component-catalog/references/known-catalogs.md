@@ -1000,9 +1000,67 @@ in the repo records them except this file.
   2800 26.0 clamp 1990; Cinelli_10_Speed_Drive.pdf in Downloads not yet
   processed.
 
+## Shimano "'72 Bicycle Parts" — printed 09.1972 (disraeligears.co.uk, 24 images)
+
+- `data_source` 60. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_parts_-_72.html
+  (images `00_main_images/shimano_bicycle_parts_-_72_*_main_image.jpg`:
+  front_cover, contents, page_1..page_21, rear_cover; printed page N =
+  page_N). Dated by the rear-cover imprint "Printed in Japan '72.9". An
+  English export catalogue (Shimano American Corp. NY, Shimano Europa
+  Düsseldorf). Now the earliest Shimano catalogue in the log.
+- **Pre-renumbering codes.** 1972 uses D/E/L/F/H/T/A/C/B/M + 3 digits
+  (D600 Titlist, L221 Alumi, F200 freewheel, H710 hub); by Dec 1975 these
+  were DB-/DE-/DD-/LB-/FC-/HC-... Kept as separate rows per number,
+  matching the DB's existing D-600 Titlist (4437) vs DB-200 (7100). Where
+  the weight is identical, the new row notes the likely 1975 successor:
+  D700 -> DB-300, D710 -> DB-310, D210 -> DD-100, D220 -> DD-200 Lark
+  SPO, D160 -> DD-500 Sky Lark. Eagle weights don't match the 1975 DE-
+  rows (380/400 vs 350/380g), so they have no successor note.
+  "Without adaptor" (claw-less) versions D501/511/601/611/701/711 are
+  folded into the parent row.
+- **Dura-Ace in Sept 1972 is only the crankset and hanger axle** (page
+  16). Brakes are plain B110/B120 marked "Tourney", and levers are plain
+  M110-M220. This argues against the velobase 1970 dates on Dura-Ace
+  brake/shifter/hub/headset rows (987, 988, 6161, 3553, 1813-1815,
+  3095/3096), but absence is weak evidence and velobase seems to use
+  1970 as a decade placeholder, so they were left for a dedicated
+  Dura-Ace pass.
+- year_from moved down to 1972: 4498 Crane D-501, 4499 Crane GS D-510,
+  2461 Thunder Bird GTO, 1816 GA-200 Dura-Ace First Gen, 7144 GB-100.
+  year_to moved up to 1972: 4437 D-600 Titlist, 4438 D-610 Titlist-GS,
+  4444 Eagle-SS (= D310), 6163 L-600 bar-end, 6120/6124 Super Shifter.
+  6181 "L-422, Light Action" (undated) -> 1972-1972 and noted as the
+  catalogue's L422 G.T. Console (5D); title kept. 4439 Lark-W enriched
+  (D280, L120 W-Grip).
+- Retitled: 6124/6120, two same-titled "Super Shifter" rows (1970, 135g
+  and 160g), became "Super Shifter (single)" and "(twin)" with the S
+  L251/253/255/257 and W L252/254/256/258 numbers. The weight-to-S/W
+  mapping is inferred, not printed.
+- New (43 rows, 7368-7410, all 1972-1972): rears D700, D710, D330,
+  D320, D340, D210, D220, D160; fronts E302 Titlist, E101 Thunder Bird;
+  shifters as one row per family with all mounts (L221-L228 Alumi,
+  L241-L248 Long, L271-L278 Flat, L261-L268 Finger Tip, L211-L218 Lever,
+  L231-L238 Short Lever, L905-L908 Round Stem, L535-L538 Short Stem DX)
+  plus L313, L323, L411, L120 and the 3-speed hub controls L373, L363,
+  L461, L110, L150, L472; freewheels F916-F924 single and F200-F512
+  5-speed; hubs H710/H810, H720/H820, H700/H800, H500/H600, H300/H400;
+  geared hubs T100, T300, A600 Auto-2, C100 coaster (Geared Hubs, as the
+  DB files coaster hubs 2709/7143); brakes B110/B120 Tourney, B700 disc;
+  brake levers M110 hooded, M210 dual extension.
+- Merged/deleted: 131 "GB-100, Dura-Ace" (velobase, 1970-1970, 269 g
+  avg, `E18061DD-E02A-4600-8FBF-DF2FE187A45A`) -> 7144 GB-100 Dura-Ace
+  BB set, now 1972-1976 (the velobase 1970 start was dropped in favour
+  of the catalogue's 1972).
+- Left alone: 4440 "DB-600 Titlist" (230g; no DB-600 exists in either
+  catalogue and the weight matches neither D600 nor DB-200, so the title
+  looks wrong but isn't fixable from this source); generic Tourney brake
+  rows 1009/1015. Out of scope: spoke protectors P100/P310/P410, spokes,
+  tools X101-X702, outer bands/clips (page 19), cables W910-W922.
+
 ## Shimano "A Complete Line of Shimano" — printed 12.1975 (equusbicycle.com/bike/shimanocatalog75/, 20 spread PDFs)
 
-- First Shimano catalogue in the log. The Bicycle Info Project page
+- First Shimano catalogue ingested (the Sept 1972 one above was added later). The Bicycle Info Project page
   links each thumbnail to pdf/shimanocat7500NN.pdf (one spread each,
   4537x2936 JPEG inside, usable OCR layer); merged to shimano75.pdf in
   the scratchpad. Back cover imprint "'75.12. KM.NP". 37 pages.
