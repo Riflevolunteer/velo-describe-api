@@ -1476,7 +1476,8 @@ in the repo records them except this file.
   into it). Its description also said "1981 catalog: T/SP 250g", but
   panel 5 of the poster gives SLJ 6000 T/SP 238g and GT/SP 250g, so
   corrected to "GT/SP 250g". 4653 "SLJ6000" (238g) -> "SLJ6000 T" to
-  pair with 7277, since 238g is exactly the poster's T/SP.
+  pair with 7277, since 238g is exactly the poster's T/SP; also
+  enriched with the poster's T/SP spec (26t capacity, max sprocket 24t).
 - Merged/deleted (none had bike_spec links or overrides):
   - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
     -> 4616. The 1982 pass missed the match because of the SO61 typo.
