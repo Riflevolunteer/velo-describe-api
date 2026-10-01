@@ -1511,14 +1511,20 @@ in the repo records them except this file.
   `D357B3A8-5CCF-47F2-9F0A-A7FE9038E6CD`) -> same-titled 4583 (246g,
   6 bike links, the `'simplex prestige'` override). 4583's year_to moved
   1972 -> 1974; the override comment was updated to match.
-- Corrected 4617 "SX 810 T": the velobase text said "in version SP
-  (without hanger)", but the 1981 poster (panel 3) gives SX 810 T/SP,
-  266g, as the with-hanger model and T/P, 302g, as the standard one.
-  Changed to "(with hanger)". The weights already agreed.
-- Corrected 4658 "SX110 T", the same velobase mix-up in reverse: "283
-  grams (Actual), with Hanger, without appr. 248 g" -> "283 grams
-  (Actual) standard, with hanger appr. 248 g", per the 1981 poster
-  (panel 2): SX 110 T/P standard 282g, T/SP with hanger 246g.
+- Reworded 4617 "SX 810 T" and 4658 "SX110 T" hanger text. **Gotcha:**
+  "hanger" means opposite things in the two sources. The 1981 poster's
+  "Fits fork end: with hanger" (SP) describes the *frame* (the dropout
+  has a hanger, so the derailleur has no claw and is ~36g lighter);
+  velobase's "with/without hanger" describes the *derailleur* (its own
+  claw). The velobase text was correct all along. A first pass misread
+  it as an error and "fixed" both rows into the poster's meaning, which
+  then read backwards. Final wording names the claw explicitly:
+  4617 "266 grams (Spec), SP version (no claw, for frames with a
+  derailleur hanger)"; 4658 "283 grams (Actual) with integral claw
+  (standard dropouts), approx. 248 g without (SP, for frames with a
+  hanger)". 4656 "SX300 T" (direct attachment 279g, with hanger 292g)
+  is consistent and was left alone. Read "hanger" in any source by which
+  part it belongs to before treating weights as contradictory.
 - Merged/deleted (none had bike_spec links or overrides):
   - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
     -> 4616. The 1982 pass missed the match because of the SO61 typo.
