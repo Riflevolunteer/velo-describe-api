@@ -1469,7 +1469,8 @@ in the repo records them except this file.
   SP2466, SP2468, SX8811, SX8820 (+8821 LH), SJ6320 (+6321 LH), SJ6211,
   SJ6220 (+6221 LH), SXP 4503, SLJ5068 (+5069 LH).
 - Retitled: 4616 "SO61 T" -> "S061 T" (letter-O typo); 4655 "SLJ6600 T
-  (version 1)" -> "SLJ6600 T" (there was no version 2 row).
+  (version 1)" -> "SLJ6600 T" (there was no version 2 row); 4620 "SX410
+  GT (long cage)" -> "SX410 GT".
 - Merged/deleted (none had bike_spec links or overrides):
   - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
     -> 4616. The 1982 pass missed the match because of the SO61 typo.
