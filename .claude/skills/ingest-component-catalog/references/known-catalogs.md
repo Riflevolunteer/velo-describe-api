@@ -1616,6 +1616,11 @@ in the repo records them except this file.
 - Retitled (follow-up): 4564 "Vallee" -> "SX Vallee T", the catalogue's
   SX Vallée T/SP, to match 4565 "SX Foret GT" / 4568 "SX Foret T"
   (accents dropped as in those rows).
+- Added (follow-up): 7367 "Simplex S002 GT" (GT/SP 11403, 270g, 38t,
+  max 32t), giving the long cage its own row per the T/GT convention. It
+  had only been mentioned inside 4570 S002 T's description, which was
+  left as is. Dated 1989-1990; the 1990 year_to follows 4570, whose
+  velobase text also covers the GT version.
 - Merged/deleted (the catalogue shows one Alpha T sold in three colours
   and one SX Forêt GT, so the bare velobase "version" rows weren't
   independently attested):
