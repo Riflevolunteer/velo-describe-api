@@ -1503,7 +1503,9 @@ in the repo records them except this file.
   differ only by a space. 4572 then retitled "S007 T" to match 4611 "S007
   GT". 4647 "S001 T, Prestige (version 2)" -> "S001 T, Prestige" (no
   version 1 row existed; 4582 "Prestige (variant version of AR637P/NI)",
-  1974, may be what it was numbered against, but nothing links them).
+  1974, may be what it was numbered against, but nothing links them);
+  also added the 1981 poster's T/P weight (272g), which the 1981 pass
+  had skipped, next to its T/SP 236g.
 - Merged/deleted (none had bike_spec links or overrides):
   - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
     -> 4616. The 1982 pass missed the match because of the SO61 typo.
