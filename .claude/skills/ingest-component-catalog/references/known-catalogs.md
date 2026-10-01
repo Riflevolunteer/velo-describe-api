@@ -1511,6 +1511,10 @@ in the repo records them except this file.
   `D357B3A8-5CCF-47F2-9F0A-A7FE9038E6CD`) -> same-titled 4583 (246g,
   6 bike links, the `'simplex prestige'` override). 4583's year_to moved
   1972 -> 1974; the override comment was updated to match.
+- Corrected 4617 "SX 810 T": the velobase text said "in version SP
+  (without hanger)", but the 1981 poster (panel 3) gives SX 810 T/SP,
+  266g, as the with-hanger model and T/P, 302g, as the standard one.
+  Changed to "(with hanger)". The weights already agreed.
 - Merged/deleted (none had bike_spec links or overrides):
   - 7262 "S061 T/P" (1982 pass, `cccbde79-bd11-11f1-a2df-02fea3763e8d`)
     -> 4616. The 1982 pass missed the match because of the SO61 typo.
