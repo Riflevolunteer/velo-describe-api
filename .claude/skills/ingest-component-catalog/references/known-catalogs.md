@@ -1495,8 +1495,14 @@ in the repo records them except this file.
     2)", on a follow-up pass at the user's call: the 1984 catalogue's
     332g GT/P matched v1's weight but v2's years, so the split wasn't
     supported. 4629 is now 1981-1985 and retitled "Simplex SX610 GT"
-    (dropped "(version 2)"). The SX610 T v1/v2 split (4630/4631) was
-    left as is.
+    (dropped "(version 2)").
+  - 4630 "SX610 T (version 1)" (velobase, 1981-1983, 311g; source_id
+    not captured before the delete, so it's recoverable only from an RDS
+    snapshot or a re-crawl) -> 4631, retitled "Simplex SX610 T", now
+    1981-1985. Merged at the user's call despite the weight evidence
+    for two versions (1982 brochure 311g = v1, 1984 catalogue 275g = v2);
+    both weights are kept in 4631's description. If a later catalogue
+    makes the v1/v2 distinction matter, split again on weight.
 - Left unresolved: BMX wheels page missing from the scan.
 
 ## Cross-catalog notes
