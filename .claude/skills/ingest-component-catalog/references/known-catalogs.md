@@ -1486,9 +1486,11 @@ in the repo records them except this file.
   - 7265 "SXP 4506" (1982 pass, `1d2bc191-bd12-11f1-a2df-02fea3763e8d`,
     89g) -> 6216 "SXP (2nd type; stem mount)", whose 86g matches the 1984
     catalogue exactly.
-- Left unresolved: 6214 "Simplex (Delrin)" (1984-85, bare) is probably
-  SX 8811 or SP 2468, but there's not enough evidence to merge. BMX
-  wheels page missing from the scan.
+  - 6214 "Simplex (Delrin)" (velobase, bare, 1984-1985,
+    `2328F219-60B4-40BD-BF62-038E49A9369A`) -> 7317 "SX8811", on a
+    follow-up pass at the user's call (it could equally have been SP
+    2468). 7317 took its year_to, now 1984-1985.
+- Left unresolved: BMX wheels page missing from the scan.
 
 ## Cross-catalog notes
 
