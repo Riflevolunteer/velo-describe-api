@@ -1261,6 +1261,58 @@ in the repo records them except this file.
   already dated 1980 - distinct SKUs from the ad's plain "700 Compact",
   not the same model despite the matching year.
 
+## Simplex "Dérailleurs - Pièces Détachées" parts book (20 pages, September 1979, via disraeligears.co.uk)
+
+- `data_source` 56. Source:
+  https://www.disraeligears.co.uk/site/simplex_derailleurs_-_pieces_detachees_1979.html
+  (images `00_main_images/..._front_cover_main_image.jpg` and
+  `..._page_N_main_image.jpg`, N = 2-20; PDF page N = printed page N).
+  Dated by the page-20 imprint "Nouvelle Imprimerie Dijonnaise. Printed
+  in France. Septembre 1979". The earliest dated Simplex source we have
+  for the 1970s-80s range.
+- Exploded parts diagrams only: no weights, capacities or prices. Its
+  evidence is which model refs and P/SP/CP/T/GT variants existed by
+  September 1979. Sub-part numbers were not ingested.
+- Range shown: rear S0, S001, SX100 (T/P only), SX110, SX410 T/GT, SX810,
+  SJ810 GT, LJ1000 CP/T, LJ4000 CP/T, SLJ5001 CP/T/GT, SLJ5500 CP/T/GT,
+  SLJ6000 T/GT; front SA02/12, SX A22/23/52/53, SJ A102/103, SLJ
+  A502/503/522/523; shifters "Manettes" S/SJ/LJ/SLJ families (no model
+  refs, so they can't pin a row), SXP 4189/4190, SXP-L 4191/4192, SLJ2615;
+  DP210/211 chainrings; SX 1500 and SLJ4164/4164A seat posts. Out of
+  scope: T 232/234 chain tensioners, relay 3637L, SLJ/SX 3607 QR, tunnels
+  4123/4124, dropouts, chainguards C1/C2.
+- vs the January 1981 poster: SLJ5001 and S0 are here but SLJ6600 and the
+  numbered S/SJ/SLJ shifter refs aren't; SX100 GT is in neither.
+- year_from moved down to 1979 (the book predates the 1980/1981 starts the
+  poster passes gave them): 7279 SX A23, 7280 SX A53, 7281 SLJ A502, 7282
+  SLJ A503, 7283 SLJ A522, 7284 SLJ A523, 7300/7301 SXP 4189/4190,
+  7302/7303 SXP-L 4191/4192, 7304 SLJ2615, 7306/7307 DP210/211, 7305
+  SLJ4164, 5901 SX 1500, 7310 SLJ5500 T, 7311 SLJ5500 GT/SP, 7277 SLJ6000
+  GT. 7306/7307 enriched with the interchangeable-ring refs by tooth count
+  and the 992b 5-arm spider; 7305 with the 1979 shaft lengths (4163 195mm
+  / 4163A 247mm, vs 190/240mm in 1981).
+- 4615 "SO" (1970-1970, bare) retitled "Simplex S0" (digit zero, as in
+  S001/S005/S007) and extended to 1981, enriched with this book's S0/P
+  and S0/SP and the 1981 poster's panel-2 specs (S0/P 246g, S0/SP 216g,
+  S0 E/P 246g). The 1981 year_to comes from the poster, which the 1981
+  pass had missed for this row.
+- New: 7324-7326 SLJ5001 CP / T / GT (1979-1979, Super LJ group). They
+  share body 3936 and pivot bolts with the SLJ5000 line (4650, 1971-78),
+  while SLJ5500 uses body 4416, so they're read as the last SLJ5000
+  update rather than a new line. Kept as separate rows rather than
+  folded into 4650.
+- Merged/deleted: 2592 "Super LJ 503 (triple; first version)" (velobase,
+  bare, undated, `86E493E0-2A15-4108-A63E-8196137F5684`) -> 7282 SLJ
+  A503, which took its Super LJ group and an "aka Super LJ 503 (triple)"
+  note. Same pattern as the 2593/2594 -> 7284 merge.
+- Left alone: 4618 SX100 GT (1975-81, velobase) is absent from both this
+  book and the 1981 poster (both show SX100 T/P only), which is weak
+  evidence on its own. 2589 "Super LJ" (bare, generic) is too generic to
+  map.
+- The override comment on `'simplex sx 410 tsp'` ("TSP variant not in
+  DB") is still right: this book shows SX 410 T/SP, but P/SP pairs share
+  one row (4621).
+
 ## Simplex "New Generation" & Selematic brochure (6 pages, 1982)
 
 - Small single-product-line brochure (not a full-line catalog): the
