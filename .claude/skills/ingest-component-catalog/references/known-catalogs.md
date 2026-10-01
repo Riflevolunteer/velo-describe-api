@@ -1468,6 +1468,12 @@ in the repo records them except this file.
   4652 is the 1985-90 "version 2"); SX A33; SJ A103 MB; shifters S3445,
   SP2466, SP2468, SX8811, SX8820 (+8821 LH), SJ6320 (+6321 LH), SJ6211,
   SJ6220 (+6221 LH), SXP 4503, SLJ5068 (+5069 LH).
+- Bike override repointed (follow-up pass): `'simplex slj 5500 cp'` in
+  `generate-bike-update-sql.js` 4651 -> 7309, and bike_spec 2553/2572
+  (1979 Peugeot PY 10 CP / PY 10 LC, "Simplex SLJ 5500 CP") moved with
+  it. That moved 7309's year_from 1981 -> 1979, on the 1979 Peugeot
+  catalogue's evidence (data_source 40, a bike catalogue, not this one).
+  4651 "SLJ5500 (version 1)" now has no bike links.
 - Retitled: 4616 "SO61 T" -> "S061 T" (letter-O typo); 4655 "SLJ6600 T
   (version 1)" -> "SLJ6600 T" (there was no version 2 row); 4620 "SX410
   GT (long cage)" -> "SX410 GT"; 4654 "SLJ6600 GT (long cage)" ->

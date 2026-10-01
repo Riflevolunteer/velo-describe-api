@@ -539,7 +539,7 @@ const COMPONENT_OVERRIDES = {
     // 1975 Falcon.
     'campagnolo velox': 4167, // 2250 Velox (1971-75)
     // 1979 Peugeot (French catalogue).
-    'simplex slj 5500 cp': 4651, // Simplex SLJ5500 (version 1) 1979-84
+    'simplex slj 5500 cp': 7309, // Simplex SLJ5500 CP (1979-84)
     'simplex sx 410 t': 4621, // Simplex SX410 T (1977-85)
     'simplex sx 410 tsp': 4621, // TSP variant not in DB; SX410 T is the same gear
     'simplex 410 tsp': 4621, // as above (PK 60 wording)
