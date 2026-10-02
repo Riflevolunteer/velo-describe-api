@@ -600,7 +600,7 @@ const COMPONENT_OVERRIDES = {
     // 1993 Bianchi (spoke counts stripped from the CSV).
     'campagnolo chorus': 3250, // Campagnolo FH-00CH / HB-00CH, Chorus
     'campagnolo veloce': 3279, // Campagnolo HB-00VL / HF-00VL, Veloce
-    'shimano ultegra': 3534, // Shimano FH-6400-6/7 / HB-6400-F, 600 Ultegra
+    'shimano ultegra': [{ to: 1991, id: 3534 }, { from: 1992, id: 3535 }], // FH-6400-6/7 / FH-6402-HG 8-speed, 600 Ultegra
     'shimano rx100': 3579, // Shimano FH-A550 / HB-A550-F, RX100
     'shimano xtr': 3581, // Shimano FH-M900, XTR M900
     'shimano dx': 3542, // Shimano FH-M650 / HB-M650-F, Deore DX
@@ -668,8 +668,8 @@ const COMPONENT_OVERRIDES = {
     'shimano ultegra': 966, // Shimano BR-6400, 600 Ultegra
     'shimano rx100 aero levers': 1007, // Shimano BR-A550, RX100
     'shimano xtr': 1018, // Shimano BR-M900, XTR M900
-    'shimano deore lx m system': 977, // Shimano BR-M560, Deore LX
-    'shimano exage es m system': 1002, // Shimano BR-M520, Exage ES
+    'shimano deore lx m system': 977, // Shimano BR-M560 / BR-M561, Deore LX (M-System)
+    'shimano exage es m system': 1002, // Shimano BR-M520 / BR-M521, Exage ES (M-System)
     'dia compe xce cantilevers 287 levers': 703, // Dia-Compe XCE
     'dia compe 987 ss 7 brs': 652, // Dia-Compe 987
     // 1985 Raleigh (Sheldon Brown scan).
@@ -714,7 +714,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo c record': 2954, // Campagnolo 304/104, C-Record
     'gipiemme cronosprint': 3007, // Gipiemme Crono Sprint
     'shimano 105': [{ to: 1989, id: 3083 }, { from: 1990, id: 3086 }], // HP-1050 / HP-1055 105SC
-    'shimano dura ace': [{ from: 1984, to: 1989, id: 3099 }, { from: 1990, id: 3100 }], // HP-7400 / HP-7410
+    'shimano dura ace': [{ from: 1984, to: 1993, id: 3099 }, { from: 1994, id: 3100 }], // HP-7400 / HP-7410
     // 1993 Bianchi.
     'campagnolo record': [{ to: 1985, id: 2959 }, { from: 1990, id: 2964 }], // 1039 / HS-01RE
     'campagnolo chorus': 2956, // Campagnolo 704/101, Chorus
@@ -872,7 +872,7 @@ const COMPONENT_OVERRIDES = {
     // categories). No Record or Chorus Ergopower rows of this era in the DB.
     'shimano dura ace sti': 6365, // Shimano ST-7400, Dura-Ace (Dual Control)
     'shimano ultegra sti': 6358, // Shimano ST-6400, 600 Ultegra (Dual Control)
-    'shimano 105 sti': 6357, // Shimano ST-1055, 105SC
+    'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
     // 1986 Cinelli groupset fan-out.
@@ -925,7 +925,7 @@ const COMPONENT_OVERRIDES = {
     // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
     // from in the 90s (Krono 1993), so blocked rather than wrong.
     'campagnolo': [{ to: 1985, id: 5749 }, { from: 1990, id: null }], // Campagnolo 1044, Record
-    'shimano dura ace': [{ from: 1990, id: 5895 }], // Shimano SP-7410, Dura-Ace 7400 — 1993 Bianchi
+    'shimano dura ace': [{ from: 1990, to: 1993, id: 5893 }, { from: 1994, id: 5895 }], // SP-7400-A / SP-7410 — 1993 Bianchi
     alloy: null, // generic word; substring-hits "Titan alloy"
     // 1981 Kalkhoff.
     'campagnolo super record': [{ to: 1980, id: 5759 }, { from: 1981, id: 5761 }], // 4051 two-bolt to 1980; 4051/1 single-bolt 1980-85 (1981 Kalkhoff row 780 re-pointed 2026-09-28, 1986 Cinelli)

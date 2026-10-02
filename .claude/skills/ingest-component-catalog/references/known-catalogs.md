@@ -2390,6 +2390,80 @@ in the repo records them except this file.
   A100, SM-SH24 / SH50 / SH55, SM-PD20 / PD30, SQ-M900 / M730, DF-M730,
   SM-SP / MT cable guides, FE-SF25, tools.
 
+## Shimano "'93 Shimano Bicycle System Components", English (E) — printed 07.1992 (disraeligears.co.uk, 96 images)
+
+- `data_source` 84, label "Shimano Bicycle System Components 1993, European
+  edition (printed 07.1992)". Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_-_93.html
+  (images page_001..096; page_001 = front cover, image page N = printed
+  page N). Rear cover "Jul. 1992 Shimano Inc., 0792 Printed in Germany XBC
+  IZM", Shimano Europa + European distributors: 1993 model year. Spec pages
+  for XTR / XT / DX / LX / Dura-Ace / Track / Ultegra / 105SC; tables for
+  Exage ES / LT, Altus A10 / A20 / C10 / C20, Tourney TY20 / TY15, 700CX /
+  400CX, RX100.
+- New for 1993: Dual SIS (front SIS) with SG-X cranks (FC-M900-A,
+  FC-M730-A, FC-MT60-A, FC-M560, FC-M520, FC-M320, FC-AT10 / AT20, FC-CT10 /
+  CT20, FC-TY21, FC-1056, FC-C700 / C400); M-System brakes (BR-M734-M,
+  BR-M650-M / M651-M and all new cantilevers); Deore LX M560 (black);
+  Exage ES (M520) and LT (M320); Altus A10 / A20 / C10 / C20; Tourney TY20
+  / TY15 series; 700CX / 400CX hybrids (11-21T CS-HG70-C); 105SC STI
+  (ST-1055, RD-1056, FD-1056, SL-1056, FH-1056-HG, CS-HG70-8); ST-M075;
+  PD-7410 road SPD; BB-UN91 / UN71 / UN51 / LP10 / LP20 / LP30 / CS21 /
+  CS11; MF-Z015; SL-BS50-7.
+- Not seen vs 1992 (left at year_to 1992 or earlier): Deore LX M550 (RD /
+  FD / FC / FH / HB-M550, ST-M060-S, BR-C510-B, BB-UN50); all Exage LX,
+  Exage EX, 200GS / 100GS / 70GS, 500CX / 200CX, Youth Package; BB-UN70,
+  BB-CS20 / CS10 / M200 / M550; Dura-Ace SL-7401, FH-7402-8, FH-7400-7/6,
+  BB-7400; Ultegra SL-6400, FH-6401-HG, CS-6400-6/7; RD / FD / FC-1055.
+  Misprints: PD-MT60 shown 212g (412g elsewhere); SL-MY21 printed twice (Dual
+  SIS and 6-speed versions).
+- New groups: 318 "Exage ES", 319 "Exage LT" (brand 51, 1993). Altus rows
+  use existing ALTUS 183, Tourney 144, 700CX 221, 400CX 157, Deore LX M560
+  135. 1002 BR-M520 and 1834 FC-M520 moved from Exage Mountain (139) to
+  Exage ES; 2224 MF-Z015 from Z-Series (103) to Tourney.
+- year_to -> 1993 on 63 rows (all re-listed rows ending 1992; Tourney 7606
+  RD-TY20, 7608 FD-TY20, 7609 FD-TY25 from 1991). Placeholders: 1834
+  FC-M520, 1808 FC-M560, 6360 ST-M075, 2471 FD-C400 (velobase 1990-1990)
+  and 3546 FH-M560 (NULL) -> 1993-1993; year_from -> 1993 on 2492 FD-M561
+  (was 1992), 6357 ST-1055 (1992), 2537 FD-TY15 (1995), 2224 MF-Z015 (2000).
+- Retitled (old titles): 1848 "Shimano FC-M900, XTR M900"; 7578 "Shimano
+  FC-M730-SG, Deore XT (SG triple)"; 1809 "Shimano FC-MT60 / FC-MT60-SG,
+  Deore / Deore DX"; 985 "Shimano BR-M734, Deore XT"; 7660 "Shimano
+  BR-M650, Deore DX (cantilever)"; 7661 "Shimano BR-M651, Deore DX
+  (low-profile cantilever)"; 6360 "Shimano ST-M075, Deore DX M650 Series";
+  977 "Shimano BR-M560, Deore LX"; 4485 "Shimano RD-M560, Deore LX"; 1808
+  "Shimano FC-M560, Deore LX M560 Series"; 3546 "Shimano FH-M560, Deore LX
+  M560"; 2492 "Shimano FD-M561, Deore LX"; 1002 "Shimano BR-M520, Exage
+  ES"; 1834 "Shimano FC-M520, Exage Mountain"; 2471 "Shimano FD-C400,
+  400CX"; 2482 "Shimano FD-C700, 700CX"; 2468 "Shimano FD-1056, 105SC";
+  6135 "Shimano SL-1056, 105SC (8sp)"; 6357 "Shimano ST-1055, 105SC"; 3972
+  "Shimano PD-7410 SPD, Dura Ace 7410"; 6146 "Shimano SL-BS50 / SL-BS50-8,
+  bar-end"; 2537 "Shimano FD-TY15, Tourney"; 2224 "Shimano MF-Z015,
+  Z-Series". Descriptions also rewritten on 4473 RD-C700, 1783 FC-1056,
+  4456 RD-1056.
+- New (58 rows, 1993-1993): BB-UN91, BB-UN71, BB-UN51; ST-M560, FD-M560,
+  HB-M560-F; Exage ES RD-M520, FD-M520 / M521, ST-M520; Exage LT RD-M320,
+  FD-M320 / M321, ST-M320, BR-M320 / M321, FC-M320, BB-LP20 / LP30; Altus
+  A10 (RD, FD-AT10 / AT11, ST, BR-AT10 / AT11, FC, BB-LP10), A20 (RD, FD,
+  ST, BR-AT20 / AT21, FC), C10 (RD, FD, ST-CT10 / CT15, BL, BR-CT10 / CT11,
+  FC, BB-CS21 / CS11), C20 (RD-CT20-GS, FD, ST-CT20 / SL-CT20, BL, BR-CT20
+  / CT21, FC); Tourney FD-TY21-GS, SL-MY21, BL-TY20, BR-TY20 / TY21,
+  FC-TY20 / TY21, RD-TY15, SL-MY15; 700CX ST-C070, BR-C700 / C701,
+  FC-C700, FH-C070 / HB-C700, CS-HG70-C; 400CX RD-C400, ST-C040, BR-C400 /
+  C401, FC-C400, FH-C040 / HB-C400; FH-1056-HG, CS-HG70-8.
+- No deletes. BB-UN90 (142) kept separate from new BB-UN91. Left: 4457
+  RD-1056-GS (velobase, not in manual), 6361 ST-M567 (velobase 1990,
+  unknown), 133 BB-7410.
+- 1993 bike links fixed (wrong-era rows): bike_spec 1517 Ultegra hubs 3534
+  FH-6400-6/7 -> 3535 FH-6402-HG; 1440 Dura-Ace headset 3100 HP-7410 (1994+)
+  -> 3099 HP-7400; 1448 Dura-Ace seat post 5895 SP-7410 (1994+) -> 5893
+  SP-7400-A. Overrides 'shimano ultegra' (hubs), 'shimano dura ace'
+  (headsets, seat posts) now year-ranged.
+- Out of scope: shoes SH-R210 / R110 / T110 / M200 / M110 / M051 / M030 /
+  A100 / A050, SH-CV20, SM-SH24 / 30 / 50 / 55 / 70 / 71, SM-PD20 / PD30,
+  SQ-M900 / M730, DF-M730, cable guides / stoppers / cable boxes, FE-SF25,
+  tools TL-UN72 / HG15 / CT10 / CN21 / WR38 / FC30 / FC10 / PD40 / PD73.
+
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
 - Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West
