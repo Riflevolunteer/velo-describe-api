@@ -642,3 +642,20 @@ the repo.
   map to `null` (do not link). Link counts after regeneration match the DB:
   Peugeot 83, Raleigh 43, Zeus 29, Falcon 17. No other override points at
   a missing row.
+
+## 1987 Bianchi Shimano override pass — 2026-10-02
+
+- 12 links back-filled (125 -> 137 of 320) from period rows the Shimano
+  catalogue passes dated: Limited "Shimano 600" brakes 972 BR-6208,
+  crankset 1798 FC-6207, headset 3090 HP-6207, pedals 3961 PD-6207, hubs
+  7551 HB-6207F / R (freewheel hubs, bike has MF-6208; row dated 1984-86);
+  "600 14-24T" freewheel (Limited, Squadra) 2218 MF-6208-6; "600 SIS"
+  shifters (Limited, Squadra) 6149 SL-6208 (replaces the earlier `null`,
+  set when SL-6208 still had a 1980 velobase date); Giro "Dura-Ace SIS-7"
+  shifters 6165 SL-7401; Brava "UG-2" chain 7450 CN-UG20; Volpe "AT-50
+  cantilever" 1003 BR-AT50 (range from 1986, so the 1985 Raleigh value stays
+  unlinked). All ranged by year. Regression: other catalogues unchanged.
+- Left: "Shimano 525 SIS" / "532 SIS" front derailleurs and shifters and
+  "Tourney" (no FD-L525 / L532, no 1987 Tourney rows); "Shimano UG",
+  bare "Shimano" chain, "Shimano 14-28T" and "105 14-24T" freewheels
+  (generic or no MF-1050 row).

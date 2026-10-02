@@ -574,6 +574,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    'shimano 600': [{ from: 1984, to: 1987, id: 7551 }], // 1987 Bianchi: Shimano HB-6207F / HB-6207R, 600EX (freewheel hubs; bike has MF-6208)
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
     // 1973 Zeus catalog lists bare "Zeus Gigante" only on road models.
     'zeus gigante': 3651, // Zeus Gigante road
@@ -679,7 +680,8 @@ const COMPONENT_OVERRIDES = {
     // Mod. 51 is still fitted to the Rekord 74 despite the DB's 1951-61 dating.
     'universal corsa mod 68': 1082, // Universal Super 68
     'universal mod 51': 1080, // Universal Extra Mod. 51 (Brev 453949)
-    'shimano 600': [{ to: 1983, id: 963 }, { from: 1984, id: null }], // centre-pull / no row
+    'shimano 600': [{ to: 1983, id: 963 }, { from: 1984, to: 1985, id: null }, { from: 1986, to: 1987, id: 972 }, { from: 1988, id: null }], // centre-pull / BR-6208 600EX (1987 Bianchi Limited)
+    'shimano at 50 cantilever': [{ from: 1986, id: 1003 }], // Shimano BR-AT50 (1987 Bianchi Volpe); 1985 Raleigh predates the row
     // 1993 Bianchi. Bare "Chorus" substring-hits a 2000s 10-speed row.
     'campagnolo chorus': [{ from: 1990, to: 1999, id: 565 }], // Campagnolo BR-02CH, Chorus Monoplaner
     'shimano ultegra': 966, // Shimano BR-6400, 600 Ultegra
@@ -714,6 +716,7 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
+    'shimano 600': [{ from: 1983, to: 1987, id: 3090 }], // 1987 Bianchi: Shimano HP-6207, 600EX
     // 1974 Motobecane.
     campagnolo: 2959, // Campagnolo 1039, Gran Sport / Record
     'stronglight competition': 3124, // Stronglight V4 Competition (earlier version, two pin locknut)
@@ -747,6 +750,7 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    'shimano 600 52 42t': [{ from: 1984, to: 1987, id: 1798 }], // 1987 Bianchi: Shimano FC-6207, 600EX
     'shimano ct10 48 38 28t': 7736, // 1993 Bianchi, from the Jul 1992 manual: Shimano FC-CT10, Altus C10
     'shimano ct20 48 38 28t': 7743, // Shimano FC-CT20, Altus C20
     'shimano deore dx 46 36 26t': 1809, // Shimano FC-MT60 / -SG / -A, Deore DX
@@ -866,11 +870,11 @@ const COMPONENT_OVERRIDES = {
     'atax forged dural anodised hidden expander': 6447, // ATAX (1A style)
   },
   Shifters: {
+    'shimano 600 sis': [{ from: 1986, to: 1987, id: 6149 }], // 1987 Bianchi: Shimano SL-6208, 600EX SIS
+    'shimano dura ace sis 7': [{ from: 1987, id: 6165 }], // Shimano SL-7401, Dura-Ace SIS (7sp)
     'rapidfire plus ct15': 7733, // 1993 Bianchi, from the Jul 1992 manual: Shimano ST-CT10 / ST-CT15, Altus C10
-    // 1987 Bianchi Limited/Squadra: "600 SIS" substring-hit 6138, a bare
-    // velobase "Shimano 600" (1970-80). The DB has SL-6207 (1984-87, friction
-    // era) and SL-6208 (dated 1980) but neither is clearly the SIS lever.
-    'shimano 600 sis': null,
+    // 1987 Bianchi Limited/Squadra "600 SIS": SL-6208 is now catalogue-dated
+    // 1986-87 as the 600EX SIS lever (was a 1980 velobase date, so unlinked).
     // 1987 Bianchi. The catalog's "levers" are the down-tube shifters.
     'campagnolo c record': 5970, // Campagnolo C-Record Retro-Friction (2nd Gen.)
     'c record levers': 5970,
@@ -905,6 +909,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record corsa': 212, // 0118065, C-Record first generation (1985-86)
   },
   Pedals: {
+    'shimano 600': [{ from: 1984, to: 1987, id: 3961 }], // 1987 Bianchi: Shimano PD-6207, 600EX
     'shimano spd 737 clipless': 7666, // 1993 Bianchi, from the Jul 1992 manual: Shimano PD-M737, Deore XT (SPD)
     'shimano rx100': 3977, // Shimano PD-A550, RX100
     // 1973 Raleigh.
@@ -974,6 +979,7 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    'shimano ug 2': 7450, // 1987 Bianchi: Shimano QA-200 / CN-UG20, Uniglide-II
     // Bare "Shimano" was exact-matching component_id 1403, a bare-brand
     // placeholder wrongly dated 1980-1980 — linking 1987 Bianchis to a
     // "1980 Shimano" chain with no real model behind it. Block it.
@@ -999,6 +1005,7 @@ const COMPONENT_OVERRIDES = {
     'suntour powerflo 11 28t 8 speed': 1220, // SunTour CS-AP20-S8, XC Comp
   },
   Freewheels: {
+    'shimano 600 14 24t': [{ from: 1986, to: 1989, id: 2218 }], // 1987 Bianchi: Shimano MF-6208-6, 600EX SIS
     'simplex 14 24t': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
     'regina oro 13 21': 2194, // Regina Oro (6 speed) — 1975 Motobecane
     // 1987 Bianchi.
