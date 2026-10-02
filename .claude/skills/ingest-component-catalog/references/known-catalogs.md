@@ -3165,6 +3165,43 @@ in the repo records them except this file.
   it). Back-filled 8 specs: Peugeot 1979 (3), Kalkhoff 1981 (3), Motobecane
   1974 (2).
 
+## SunTour road catalogue 1989 (pp 7-8, 13-14, system chart) and Japanese Superbe page c. 1983 (equusbicycle.com, 6 scans)
+
+- Source: https://equusbicycle.com/bike/suntour/suntourscans.html.
+  `data_source` 86 "SunTour road catalogue (1989)": Superbe-Pro-page-1 / 2
+  (printed pp 7-8), Suntour-GPX-page-1 / 2 (pp 13-14, "'89 NEW COMPONENTS"),
+  Suntour-road-range-89 (Component System Chart, Light Weight: Superbe Pro,
+  Sprint 9000, GPX, Olé, Edge 4050, Blaze 3040 / alpha-2000 / 1500 / RT1000).
+  `data_source` 87 "SunTour Superbe catalogue page, Japanese (c. 1983)":
+  SuperbeJapanese.jpg, undated, RD-3100 Superbe Pro marked NEW; dated c. 1983
+  on that basis, no year_from moved on it.
+- All SunTour rows (brand 56) are velobase. Retitled (old titles): 4745
+  "SunTour GPX" (RD) -> RD-GP00-SSB; 4769 "SunTour Superbe Pro" (RD
+  1986-1994, 198g) -> RD-SB00-SSB (Accushift); 2634 / 2635 "FD-GP00 SSB" /
+  "FD-GP00 SSH"; 2650 / 2651 "FD-SB00-B" / "FD-SB00-H" -> -SSB / -SSH; 1047
+  "SunTour BA-B00-N, Superbe Pro" (typo) -> BA-SB00-N (standard reach); 1048
+  -> "(short reach)"; 463 -> BL-SB00-N / -S; 6302 "SunTour Superbe Pro (Power
+  Command Friction)" -> SL-SB00-B / -C (Power Ratchet); 6295 -> SL-IP00-B /
+  -C, Accushift I.P.C.; 6262 "SunTour SL-BC00 Bar Con (SL-BC01-R6 /
+  SL-BC01-L)" -> SL-BC00-R6R / -R7U / -L (bar-con), 1980 -> 1989, group 68;
+  168 / 173 / 3132 -J / -F / -I (-C) variants added; 2249 -> "FW-AL00-U7,
+  Alpha freewheel (7-speed Accushift)"; 456 "BL-GP00, GPX Aero Levers" ->
+  "(aero)"; from the Japanese page 4760 "SunTour Superbe" (RD, 196g) ->
+  RD-2100, Superbe and 3615 "SunTour Superbe" (hub, 604g pair) -> RH-2000,
+  Superbe (high flange). Descriptions rewritten on these plus CW-GP00,
+  CW-SB10, HB-GP00, PL-GP00, SP-SU00-S, SL-GP00-B / C, BA-GP00-S, FD-1500,
+  LD-2000, LD-2050.
+- Years: chart velobase 1980 placeholders -> 1989-1989 on 1038 BA-ED45-S,
+  2633 FD-ED45-SSH, 1983 CW-ED45, 6285 SL-4050, 6274 SL-3040; year_to -> 1989
+  on 1426 SP-6000, 1424 SP-6200, 4007 PL-5600, 1987 CW-7500; 4011 PL-SB00
+  year_from 1990 -> 1989; year_to -> 1983 on 2645 FD-1500, 6296 / 6297
+  LD-2000 / LD-2050.
+- New (1989): CH-GP00 (GPX), BL-SB10 (Superbe Pro aero). Chart-only codes
+  without specs not inserted.
+- Left: RD-3100 Superbe Pro (velobase 4766 / 4767 / 4768 "Superbe Pro" rows
+  1979-1986, two bike-linked, can't tell which); RH-1000 low flange (3614's
+  383g doesn't match 548g printed). Bike link counts unchanged.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
