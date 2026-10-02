@@ -596,3 +596,38 @@ nothing to actually select. Swept the whole table for this: 116
 for that brand+category combo (Assos/Bottom Brackets, Assos/Cranksets,
 Assos/Pedals among them) - deleted all of them. Ran ad hoc, not kept in
 the repo.
+
+## Generic "Shimano 600" / "600 SIS" / "Tourney" links (fixed 2026-10-02)
+
+- Found while ingesting the Shimano 1977/1978 component catalogues: bare
+  values had substring-matched 1970s rows. 1981 Kalkhoff Amateur 05 S,
+  Touring 05 S, Touring 55 S "Shimano 600" rear derailleur (bike_spec
+  833/884/901) and 1987 Bianchi Limited/Squadra "Shimano 600 SIS" rear
+  (1250/1270) -> 4461, a velobase "Shimano 600" that is really the
+  1975-78 DC-200; 1987 Limited/Squadra "600 SIS" shifters (1251/1271) ->
+  6138 bare "Shimano 600" (1970-80); 1987 Strada "Shimano Tourney" rear
+  (1390) -> 4539 DB-300 (1975-76).
+- Fixed with a one-off UPDATE (the back-fill never overwrites a link) and
+  matching overrides: 1981 Kalkhoff rear -> no link (RD-6100 600 vs
+  RD-6200 600EX and cage length are undecidable from the catalogue);
+  1987 "600 SIS" rear -> 4471 RD-6208 600EX (SIS), front (1249/1269,
+  previously unlinked) -> 2481 FD-6207 600EX, shifters -> no link (no
+  clear SIS lever row); Strada Tourney rear -> no link (only 1970s Tourney
+  rows exist). Overrides: Rear Derailleurs 'shimano 600' [to 1978 ->
+  4462 DC-200, from 1979 -> null], 'shimano 600 sis' 4471, 'shimano
+  tourney' null; Front Derailleurs 'shimano 600' [to 1978 -> 7435 EC-600,
+  from 1979 -> null] (needed because the component pass retitled EC-600
+  "Shimano EC-600, Shimano-600", which the matcher would otherwise hit
+  for 1981 Kalkhoff), 'shimano 600 sis' 2481; Shifters 'shimano 600 sis'
+  null.
+- **Matcher fix:** resolveOverride returned undefined for a ranged entry
+  with no matching year, so it fell through to the substring matcher,
+  contrary to the COMPONENT_OVERRIDES comment ("no matching range means
+  no link"). It now returns null. Regenerating all 15 catalogues before
+  and after gave identical links, so nothing else changed.
+- Regression check also showed about 40 pre-existing generator/DB
+  differences (Super Record brakes 582 vs 583, C Record / Veloce /
+  Record Pista resolving to nothing, rims/chains/freewheels that would
+  gain links on reload), caused by earlier component retitles and
+  inserts. These don't affect the DB unless a catalogue is reloaded;
+  left for a separate pass.

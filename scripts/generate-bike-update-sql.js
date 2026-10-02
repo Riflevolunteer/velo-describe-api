@@ -402,6 +402,11 @@ function normalizeForMatch(value) {
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
     'simplex prestige': 2583, // Simplex Prestige Criterium AV 223
+    // Bare "Shimano 600" substring-hits EC-600 "Shimano-600" (1977-78). Fine
+    // to 1978; from 1979 it could be FD-6100 or FD-6200 600EX, so no link.
+    'shimano 600': [{ to: 1978, id: 7435 }, { from: 1979, id: null }], // Shimano EC-600, Shimano-600
+    // 1987 Bianchi Limited/Squadra: the SIS-era 600EX front.
+    'shimano 600 sis': 2481, // Shimano FD-6207, 600EX (1984-87)
     // Catalog names the Alfa groupset by its rear derailleur ("Alfa 72");
     // the matching front is the plain Zeus Alfa.
     'alfa 72': 2682, // Zeus Alfa
@@ -473,6 +478,17 @@ const COMPONENT_OVERRIDES = {
     // Every current use of the bare value is 1979 Peugeot; block it outright
     // rather than year-range it, since there's no real row to point at.
     'simplex': null,
+    // Bare "Shimano 600" substring-hit 4461, a velobase "Shimano 600" row
+    // that is really the 1975-78 DC-200. Catalogs to 1978 get DC-200; from
+    // 1978 the name could be RD-6100 600 or RD-6200 600EX (and long cage or
+    // short for touring models), so 1981 Kalkhoff gets no link.
+    // (An uncovered year falls through to the matcher, so the null range is
+    // needed to actually block it.)
+    'shimano 600': [{ to: 1978, id: 4462 }, { from: 1979, id: null }], // Shimano DC-200, 600
+    'shimano 600 sis': 4471, // Shimano RD-6208, 600EX (SIS), 1986-87 (1987 Bianchi)
+    // 1987 Bianchi Strada: no 1980s Tourney rear derailleur row exists; the
+    // only hits are 1970s DB-300/DB-400, so block it.
+    'shimano tourney': null,
     'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1974
     // DB title is `Zeus "Especial Alfa 72"` — the quotes and brand prefix
     // defeat substring matching.
@@ -828,6 +844,10 @@ const COMPONENT_OVERRIDES = {
     'atax forged dural anodised hidden expander': 6447, // ATAX (1A style)
   },
   Shifters: {
+    // 1987 Bianchi Limited/Squadra: "600 SIS" substring-hit 6138, a bare
+    // velobase "Shimano 600" (1970-80). The DB has SL-6207 (1984-87, friction
+    // era) and SL-6208 (dated 1980) but neither is clearly the SIS lever.
+    'shimano 600 sis': null,
     // 1987 Bianchi. The catalog's "levers" are the down-tube shifters.
     'campagnolo c record': 5970, // Campagnolo C-Record Retro-Friction (2nd Gen.)
     'c record levers': 5970,
@@ -1045,7 +1065,10 @@ function resolveOverride(entry, year) {
   if (entry === null || typeof entry === 'number') return entry;
   const y = Number(year);
   const hit = entry.find((r) => (r.from == null || y >= r.from) && (r.to == null || y <= r.to));
-  return hit ? hit.id : undefined;
+  // No matching range means no link (as documented on COMPONENT_OVERRIDES),
+  // not a fall-through to the substring matcher, which would pick whatever
+  // wrong-era row shares the name.
+  return hit ? hit.id : null;
 }
 
 function matchComponent(valueText, componentRecords, excludeTitle, label, year) {
