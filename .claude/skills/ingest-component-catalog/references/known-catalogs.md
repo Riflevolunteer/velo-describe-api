@@ -1209,6 +1209,16 @@ in the repo records them except this file.
   (Sep 1972 to Dec 1975) lists a Dura-Ace extension lever. Every Dura-Ace
   lever is the plain hooded M-140/MA-100, and the extension levers
   (M-210/220, MB-110) are standard Shimano. No bike links.
+- Follow-up, Dura-Ace headsets: one row per part with both codes, as for
+  the other first-gen road parts. 3098 "UA-100, Dura-Ace First Gen." ->
+  "K-901 / UA-100, Dura-Ace" (1973-78), merging 3095 "K-901, Dura-Ace"
+  (velobase, `71276C9D-6049-47A8-A0C3-2B832B701794`, box HP-101 note
+  carried over). 7126 "UA-200, Dura-Ace track headset" -> "K-902 /
+  UA-200, Dura-Ace track", year_from 1975 -> 1973, merging 3096 "K-902,
+  Dura-Ace" (velobase, `BB7C6CE8-5CBE-459E-9C7A-CEC2FC673322`). The
+  track hubs 3555 H-741/841 and 7124 HA-300 stay separate because their
+  catalogue rear weights differ (290 vs 300g); the headsets have no such
+  evidence. No bike links or overrides.
 - No track, Titlist or Tourney parts (Dura-Ace road only), so those rows
   are neither confirmed nor capped. No year changes, no new rows, no
   deletes. Several descriptions were condensed to fit the box numbers.
