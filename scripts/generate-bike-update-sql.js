@@ -478,7 +478,7 @@ const COMPONENT_OVERRIDES = {
     // Every current use of the bare value is 1979 Peugeot; block it outright
     // rather than year-range it, since there's no real row to point at.
     'simplex': null,
-    // Bare "Shimano 600" substring-hit 4461, a velobase "Shimano 600" row
+    // Bare "Shimano 600" substring-hit 4461 (since deleted), a velobase "Shimano 600" row
     // that is really the 1975-78 DC-200. Catalogs to 1978 get DC-200; from
     // 1978 the name could be RD-6100 600 or RD-6200 600EX (and long cage or
     // short for touring models), so 1981 Kalkhoff gets no link.

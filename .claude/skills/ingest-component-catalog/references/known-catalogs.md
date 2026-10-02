@@ -1424,6 +1424,10 @@ in the repo records them except this file.
   "600 SIS". Those are generic name matches to a 1975 derailleur and
   wrong for those years, so repointing them to DC-200 wouldn't help;
   this is for the bike skill. 4462 already carries 4461's 236g.
+  **Resolved the same day:** the bike skill relinked those specs (see
+  ingest-bike-specs known-catalogs, "Generic Shimano 600 / 600 SIS /
+  Tourney links"), leaving 4461 with no bike links, and 4461 was then
+  merged into 4462 and deleted.
 - Out of scope: UL-100 handle lock, fork ends NB-200 (new)/NB-100/120,
   NC-100, ND-100, NF-100, cable parts KA/KB, spoke protectors PB-/PC-
   (PC-110/150 new), WE-100 colour casing (new) and W- cables, outer
