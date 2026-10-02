@@ -1200,6 +1200,15 @@ in the repo records them except this file.
   "L-600, ..." (hyphenated as the Dec 1972 and Feb 1973 books print
   it), and year_from 1970 -> 1972 (the velobase 1970 start had no
   catalogue support; Sep 1972 is the first).
+- Follow-up, Dura-Ace brake levers: 433 "M-140 / MA-100, Dura-Ace First
+  Gen." -> "M-140 / MA-100, Dura-Ace"; 432 "Dura-Ace First Gen. (black)"
+  -> "MA-100, Dura-Ace (Black)" (1975 code only, as 2507/3553; 209g
+  measured kept). Merged/deleted: 431 "Dura-Ace First Gen with Extention
+  Lever" (velobase, bare, 1973-1973,
+  `7C251DB1-620A-4728-A586-1ABC56AC24FB`) -> 433. No catalogue
+  (Sep 1972 to Dec 1975) lists a Dura-Ace extension lever. Every Dura-Ace
+  lever is the plain hooded M-140/MA-100, and the extension levers
+  (M-210/220, MB-110) are standard Shimano. No bike links.
 - No track, Titlist or Tourney parts (Dura-Ace road only), so those rows
   are neither confirmed nor capped. No year changes, no new rows, no
   deletes. Several descriptions were condensed to fit the box numbers.
