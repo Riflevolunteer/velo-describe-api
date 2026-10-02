@@ -1656,6 +1656,57 @@ in the repo records them except this file.
   rear / front derailleurs from 1979; 4462 DC-200 / RD-6100 and 7435
   EC-600 / FD-6100 now run to 1982, so the 1981 Kalkhoff specs could link.
 
+## Shimano "Aero Dynamics" AX brochure — printed 01.1981 (disraeligears.co.uk, 40 images)
+
+- `data_source` 70. Source:
+  https://www.disraeligears.co.uk/site/shimano_aero_dynamics.html (images
+  `shimano_aero_dynamics_{front_cover,page_01..page_38,rear_cover}`;
+  image page_NN = printed page NN). Rear cover "(c) Jan. 1981 by Shimano
+  Industrial Co., Ltd. 1981 AC2/20M English Printed in Japan AZIZM".
+  The AX launch brochure (shown at IFMA Cologne 1980). Pp.1-22 are the
+  aerodynamics essay and wind-tunnel results, pp.23-36 the parts, pp.37-38
+  the system chart. The Dec 1980 general 1981 catalogue has no AX, so this
+  is its supplement.
+- Ranges: Dura-Ace AX (7300), 600 AX (6300), Adamas AX (AD), and plain AX
+  (Integer AX FC-AX21, Direction-6 AX FH-AX61, Positron AX RD / FD /
+  SL-AX10, Parapull AX BR-AX10, DEL-80 AX BL-AX10 / AX50).
+- year_from -> 1981 (DB had 1982, mostly velobase Adamas 1982-83): 128
+  BB-SL31, 423 BL-AD10, 424 BL-AD50, 974 BR-AD10/20, 1801 FC-AD11, 1802
+  FC-AD21, 2483 FD-AD10, 3541 FH-AD61/65, 3962 PD-AD10, 4474 RD-AD10, 6151
+  SL-AD1x, 6152 SL-AD20/24, 1787 FC-6300, 3957 PD-6300, 2516 FD-7300, 7146
+  FD-7310, 7147 SL-7310, 7148 SP-7300. 1803 FC-AD22 (AXII) is not in the
+  brochure and stays at 1982.
+- Retitled: 974 "Shimano BR-AD20, Adamas AX" -> "BR-AD10 / BR-AD20, Adamas
+  AX Parapull" (brochure prints BR-AD10 at 397g, the 1982 BR-AD20 weight;
+  treated as a renumber); 6151 "Shimano SL-AD10, Adamas AX" -> "SL-AD10 /
+  SL-AD11 / SL-AD12 / SL-AD14, Adamas AX"; 6152 "Shimano SL-AD24, Adamas
+  AX (top tube mount)" -> "SL-AD20 / SL-AD24, Adamas AX (positive
+  click)"; 6141 "Shimano SL-6311, 600 AX  (Brazed-on B Type)" (double
+  space) -> "(brazed-on B type)"; 6142 "... (Brazed-on B Typ for oval
+  tubes)" -> "(brazed-on B type, oval tube)"; 6140 "(Brazed-on A Type)"
+  -> "(brazed-on A type)"; 6170 "Shimano SL-7311, Dura-Ace AX" and 6171
+  "Shimano SL-7321, Dura-Ace AX" gain type suffixes; 2516 "Shimano
+  FD-7300, Dura-Ace AX" -> "(band)"; 2517 "Shimano FD-7320, Dura-Ace AX"
+  -> "(oval tube)"; 5887 "Shimano SP-6310, 600 AX" -> "(B-type)"; 995
+  BR-7300 and 965 BR-6300 gain "Parapull".
+- Descriptions consolidated "(Jan 1981, 1982)" on 43 AX rows, keeping
+  measured weights. Corrections: 5896 SP-7310 velobase "224 grams" (the
+  SP-7300 figure) -> 244g; 6170 / 6171 SL-7311 / 7321 velobase 64g ->
+  68g; 3541 garbled "Shimano Adamas AX (?)" opening removed; 6169 SL-7300
+  band notes it is absent from the brochure (brazed-on types only).
+- New (9 rows, 1981-1981): FC-AX21 Integer AX, BB-SL32, FH-AX61
+  Direction-6 AX, RD-AX10 / FD-AX10 / SL-AX10 Positron AX (group 224),
+  BR-AX10 Parapull AX, BL-AX10 / BL-AX50 DEL-80 AX, SD-AD10 Adamas AX
+  saddle (Saddles, group 47).
+- Confirmed: FH-7370 is printed as 7-speed, as in the 1982 catalogue.
+  RD-AX10 is printed with the same 283 / 319g as RD-AD10; recorded as
+  printed.
+- Left: bare "Shimano Positron" 4525 (RD) and 6184 (shifter), 1980,
+  possibly Positron AX but no code to merge on; 1197 bare "AX, 600 AX"
+  cassette; 2477 FD-6300 braze tab (brochure shows band only); 2459
+  FD-AX50 (a later part). Out of scope: SM-HP10 head parts cover,
+  SM-BT10 Aero-Bottle, CP-AX30 / AX50 protectors.
+
 ## Shimano 1982 Bicycle System Components — printed 01.82 (Downloads/Shimano1982/, 44 spread JPEGs, blz01-45, no 44)
 
 - 1200x858 spreads bound to shimano82.pdf; the Read tool dropped pages
