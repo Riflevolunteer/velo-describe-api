@@ -3125,6 +3125,46 @@ in the repo records them except this file.
 - BMX wheels page: resolved later from the disraeligears copy (see the
   top of this section).
 
+## Weinmann 50th anniversary catalogue "Bicycle Components and Ski-Boots" — May 1983 (leblogduvelovintage.art.blog, catalogue-weinmann.pdf, 27 pp)
+
+- `data_source` 85. Source:
+  https://leblogduvelovintage.art.blog/2022/09/24/catalogue-weinmann-80s/
+  (PDF https://leblogduvelovintage.art.blog/wp-content/uploads/2022/09/catalogue-weinmann.pdf).
+  Weinmann AG Schaffhausen jubilee brochure, German / French / English,
+  letters dated "Schaffhausen im Frühjahr 1983" and "Singen/Htwl., im Mai
+  1983", printed in Switzerland 7000834. Mostly company history, factory
+  photos and ski-boots; five product spreads give model numbers over photos,
+  no specs. Printed pages 18-21 are missing from the scan (a centre-pull
+  spread with 999 / 610 / 750 may be there), so absence proves nothing.
+- Listed: side-pulls Carrera 600, Carrera 400, Aero 409, 605, 405, 506 (with
+  No. 1664 QR); HP 2000 new spindle rim brake (announced); levers No. 185,
+  187, 185-100, 186-100 / 186-101, 144 / 144-1 (147.7-1 hood), 180 / 180-1,
+  juvenile 190 / 191, touring 146 / 160-146.3; rims 903 Carrera (AS), A124
+  Super X, 571 S, A125 Sprint, A106, 431 BMX, 420, 801 INOX 18/10, Moto
+  (motorcycle, skipped).
+- All 112 Weinmann rows (brand 105 "Weinmann AG") are velobase. Updated:
+  1168 Carrera 400 and 491 / 492 levers 405 / 605 year_to -> 1983; 1117 AG
+  405 brake NULL -> 1981-1983 (1981 from the Kalkhoff bike catalogue);
+  retitled 1163 "Weinmann AG Aero" -> "Weinmann AG Aero 409" (year_to
+  1983, 294g measured kept), 493 "Weinmann AG Carrera # 185" -> "Weinmann
+  AG No. 185 (Carrera)" (year_to 1983).
+- New (20 rows): Carrera 600 (group 113), AG 506 (1979-1983, year_from from
+  the 1979 Peugeot / 1981 Kalkhoff bike catalogues), HP 2000; levers No.
+  185-100, 186-100 / 186-101, 187, 144 / 144-1, 180 / 180-1, 190, 191, 146,
+  160-146.3; rims 903 Carrera (AS), A124 Super X, 571 S, A125 Sprint
+  (1974-1983, year_from from the 1974 Motobecane bike catalogue), A106, 431
+  BMX, 420, 801 INOX 18/10. All 1983-1983 unless noted.
+- Left: 605 brake variants 1132-1135 (photo can't pick a lettering
+  version); Carrera (earlier / later) 1167 / 1169; 1154 "AG 801" filed as a
+  brake but probably the 801 INOX rim; velobase clutter (bare "AG" levers,
+  "Made in Switzerland") not touched.
+- Bike links: overrides 'weinmann 506 side pull' (+ 'with safety levers'),
+  'weinmann 506', 'clb weinmann 506' -> 7764 and the 1974 Motobecane
+  "WEINMANN Sprint alloy 27x1.25\  MICHELIN..." rim value -> 7778 (the CSV
+  cell has a stray backslash that MySQL drops on insert, so the key keeps
+  it). Back-filled 8 specs: Peugeot 1979 (3), Kalkhoff 1981 (3), Motobecane
+  1974 (2).
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,

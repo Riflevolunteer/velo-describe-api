@@ -639,6 +639,11 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // May 1983 Weinmann catalogue (506 dated 1979-83 from the 1979 Peugeot / 1981 Kalkhoff bikes)
+    'weinmann 506 side pull': 7764, // Weinmann AG 506
+    'weinmann 506 side pull with safety levers': 7764,
+    'weinmann 506': 7764,
+    'clb weinmann 506': 7764,
     'shimano at10 m system': 7723, // 1993 Bianchi, from the Jul 1992 manual: Shimano BR-AT10 / BR-AT11, Altus A10
     'shimano ct10 m system': 7735, // Shimano BR-CT10 / BR-CT11, Altus C10
     'shimano ct20 m system': 7742, // Shimano BR-CT20 / BR-CT21, Altus C20
@@ -1044,6 +1049,8 @@ const COMPONENT_OVERRIDES = {
     'clement 2001 cf': 6740, // Clement CF 2001
   },
   Rims: {
+    // CSV cell carries a stray backslash ("27x1.25\  MICHELIN"), MySQL drops it on insert
+    'weinmann sprint alloy 27x125\\ michelin or hutchinson high pressure tires"': 7778, // Weinmann A125 Sprint (1974 Motobecane)
     // Both bare "Nisi" rows (5123, 5124) and bare "AVA" (4937) were deleted;
     // the catalog never names a Nisi / AVA model, so these stay unlinked.
     'nisi ava sprint alloy': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
