@@ -631,3 +631,14 @@ the repo.
   gain links on reload), caused by earlier component retitles and
   inserts. These don't affect the DB unless a catalogue is reloaded;
   left for a separate pass.
+
+## Stale bare-brand overrides nulled — 2026-10-02
+
+- Regenerating 1979 Peugeot, 1973 Raleigh / Zeus and 1975 Falcon showed 28
+  "new" links. All pointed at bare-brand rows deleted on 2026-09-30
+  (f9b86f2): 2110 Maillard, 1369 Iris, 1393 Renold, 2225 Simplex, 4937 AVA,
+  5124 Nisi. Their overrides were never removed, so any back-fill would have
+  written dangling component_ids. Not loaded; the 11 override entries now
+  map to `null` (do not link). Link counts after regeneration match the DB:
+  Peugeot 83, Raleigh 43, Zeus 29, Falcon 17. No other override points at
+  a missing row.

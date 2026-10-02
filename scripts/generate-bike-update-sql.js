@@ -978,7 +978,7 @@ const COMPONENT_OVERRIDES = {
     // placeholder wrongly dated 1980-1980 — linking 1987 Bianchis to a
     // "1980 Shimano" chain with no real model behind it. Block it.
     shimano: null,
-    'iris 1 2 x 3 32': 1369, // Iris (1973 Zeus)
+    'iris 1 2 x 3 32': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
     // 1981 Kalkhoff: no chain row is titled EX; the CN-7100 Uniglide is the
     // Dura-Ace chain of the EX era.
     'dura ace ex': 7472, // Shimano QA-110 / CN-7100, Dura-Ace UG (was 1411, merged 1981 catalogue)
@@ -988,7 +988,7 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli (Ten Speed Drive Imports).
     'regina cxs': 1384, // Regina CX / CX-S
     // 1975 Falcon.
-    'renolds': 1393, // Renold (two identical brand rows; first taken)
+    'renolds': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
   },
   Cassettes: {
     'shimano xtr 12 28t 8 speed': 7668, // 1993 Bianchi, from the Jul 1992 manual: Shimano CS-M900-8, XTR (Q 12-28T)
@@ -999,7 +999,7 @@ const COMPONENT_OVERRIDES = {
     'suntour powerflo 11 28t 8 speed': 1220, // SunTour CS-AP20-S8, XC Comp
   },
   Freewheels: {
-    'simplex 14 24t': 2225, // Simplex
+    'simplex 14 24t': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
     'regina oro 13 21': 2194, // Regina Oro (6 speed) — 1975 Motobecane
     // 1987 Bianchi.
     'regina cx 13 23t': 2168, // Regina CX (6 speed)
@@ -1013,12 +1013,12 @@ const COMPONENT_OVERRIDES = {
     // 1979 Peugeot (French catalogue).
     'spidel 700 6 speed 13 14 15 17 19 21': 2123, // Maillard 700 (6 speed); Spidel-badged
     'maillard 6 speed 13 14 15 17 19 21': 2123, // Maillard 700 (6 speed), the 13-21 racing block
-    'maillard 14 15 17 19 21 24': 2110, // Maillard brand row; no model named
-    'maillard 14 17 19 21 24': 2110, // Maillard brand row
-    'maillard 14 16 18 21 24': 2110, // Maillard brand row
-    'maillard 14 17 20 24 28': 2110, // Maillard brand row
-    'maillard 14 16 20 24 28': 2110, // Maillard brand row
-    'maillard 14 16 18 20 23': 2110, // Maillard brand row
+    'maillard 14 15 17 19 21 24': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
+    'maillard 14 17 19 21 24': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
+    'maillard 14 16 18 21 24': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
+    'maillard 14 17 20 24 28': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
+    'maillard 14 16 20 24 28': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
+    'maillard 14 16 18 20 23': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
   },
   Tyres: {
     'clement criterium silk tubular': 6748, // Clement Criterium Seta (seta = silk)
@@ -1037,11 +1037,10 @@ const COMPONENT_OVERRIDES = {
     'clement 2001 cf': 6740, // Clement CF 2001
   },
   Rims: {
-    // id 5123 is a bare "Nisi" placeholder wrongly dated 1980-1980 (this
-    // value is only ever used by 1973 Raleighs, which predate it entirely);
-    // 5124 is the other bare "Nisi" row, dated 1970-1980, which covers 1973.
-    'nisi ava sprint alloy': 5124, // Nisi
-    'ava sprint alloy': 4937, // AVA
+    // Both bare "Nisi" rows (5123, 5124) and bare "AVA" (4937) were deleted;
+    // the catalog never names a Nisi / AVA model, so these stay unlinked.
+    'nisi ava sprint alloy': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
+    'ava sprint alloy': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
     // 1984 Bianchi. GP 4 is ambiguous with its red-label variant; the OR 10
     // value carries a spoke aside.
     'mavic gp4': 5069, // Mavic GP 4
