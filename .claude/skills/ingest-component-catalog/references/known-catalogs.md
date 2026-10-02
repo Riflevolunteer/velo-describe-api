@@ -2092,6 +2092,47 @@ in the repo records them except this file.
   Time Trial"; 1285 "600EX Ultegra" chainring. Out of scope: TL-RD10 /
   FW30 / CT10 / CN20, grease, shoe sets, DF-M730, SQ-M730, accessories.
 
+## Shimano "Bicycle System Components — The Complete Line", US edition — printed 08.1988 (disraeligears.co.uk, 36 scans)
+
+- `data_source` 81. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_august_1988.html
+  (images `..._-_scan_1..36`). Rear cover "(c) Aug. 1988 by Shimano
+  Industrial Co., Ltd. 1088 Printed in Japan XBC IZM"; front "English (U)".
+  1989 model year, full range (the same month's Exage manual is
+  `data_source` 78). First Integrated-8 SIS (Dura-Ace RD / SL-7402,
+  FH-7402, CS-7400-8), Hyperglide (Deore XT-II M732, Deore II MT62) and
+  7-speed 105 (1051). Exage pages show bikes only. Dropped vs Dec 1987:
+  Light Action L5xx, Z-Series derailleurs, BR-L490 / L570, BL-L330 / L331,
+  SL-S434 (left as is, US edition).
+- year_from -> 1989 (DB had 1990-91): 6166 SL-7402, 3561 FH-7402-8, 1205
+  CS-7400-8, 992 BR-7402, 436 BL-7402, 3959 PD-6401, 430 BL-M732 / M733
+  (now 1989-1992), 5892 SP-M730, 7580 BR-MT63, 425 BL-MT63, 7604 RD-L554,
+  7605 RD-R552, 7612 / 7613 FD-Z254 / Z255, 7617 SL-MS52, 7619 SL-S452,
+  7573 HB-RM50-F.
+- year_to 1988 -> 1989: Dura-Ace 2510, 7231; CN-6208 7232; MF-6208 2218;
+  105 6-speed 122, 953, 954, 1778, 3523, 3524; Santé 4535, 6190, 2533,
+  2223, 1841, 140, 3580, 1008, 447, 7216, 3107, 7562; Deore XT M730 4491,
+  3549, 981, 7198, 7227; Deore MT60 4487, 6157, 2496, 7203, 427, 978, 979.
+  4534 RD-5000 stays 1988 (RD-5001 replaced it).
+- Retitled: 6160 "Shimano SL-M732, Deore XT M730" -> "SL-M732, Deore
+  XT-II"; 4492 "Shimano RD-M732, Deore XT" -> "RD-M732-SGS, Deore XT-II";
+  2500 "Shimano FD-M732, Deore XT" -> "FD-M732, Deore XT-II"; 3551
+  "Shimano FH-M732, Deore XT M732" -> "FH-M732 / HB-M730-F, Deore XT-II";
+  430 "Shimano BL-M733, Deore XT (2-finger)" -> "BL-M732 / BL-M733, Deore
+  XT-II"; 4482 "Shimano RD-MT62, Deore II" -> "RD-MT62-SGS, Deore II"; 2490
+  "Shimano FD-MT62, Deore II" -> "FD-MT62 (-AL / -HS), Deore II"; 3543
+  "Shimano FH-MT62, Deore II" -> "FH-MT62 / HB-MT62-F, Deore II"; 425
+  "Shimano BL-MT63, Deore DX" -> "BL-MT63, Deore II / Deore DX (2-finger)";
+  7580 "Shimano BR-MT63, Deore DX (U-II)" -> "BR-MT63, Deore II / Deore DX
+  (U-II)"; 3965 "Shimano PD-MT60, Deore MT60 Series" -> "PD-MT60 /
+  PD-MT61, Deore"; 1820 "Shimano FC-7402 / FC-7402-SG, Dura-Ace" ->
+  "FC-7402 / FC-7402-BP / FC-7402-SG, Dura-Ace" (SG is 1990); 6131
+  "Shimano SL-1051, 105 (7sp)" -> "SL-1051-BCAI / SL-1051-FCAI, 105 SIS
+  (7sp)". Descriptions also on 983, 984 (357g Aug 1988 vs 375g 1990, both
+  kept), 4450, 3954, 4505 (205g vs 209g), 3959.
+- New (4 rows, 1989-1989): FC-1051-BP / BB-1050, FH-1051-6/7 (105, group
+  42); CS-M732, CN-M732 (Deore XT-II, group 98). No deletes.
+
 ## Shimano "The New System Component Family for Every Riding Style", Exage dealer sales manual — printed 08.1988 (disraeligears.co.uk, 36 images)
 
 - `data_source` 78. Source:
