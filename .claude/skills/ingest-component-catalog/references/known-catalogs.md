@@ -1963,6 +1963,51 @@ in the repo records them except this file.
   HP-1050 (129g), 3953 PD-1050 (280g), 1404 CN-6130.
 - No new rows, no deletes. Out of scope: TL-CN20, SM-DG11 / DG16.
 
+## Shimano "Bicycle System Components — The Complete Line", US edition — printed 12.1986 (disraeligears.co.uk, 28 scans)
+
+- `data_source` 75. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_december_1986.html
+  (images `shimano_bicycle_system_components_1987_scan_1..28`). Rear cover
+  "(c) Dec. 1986 by Shimano Industrial Co., Ltd. 1286 FC/100M Printed in
+  Japan XBC IZM"; front "English (U)". US edition of the 1987 model year
+  (the Aug 1986 printing is the European one).
+- New vs Aug 1986: Santé (RD-5000, FD-5000-B/F, SL-5000-FCAI, MF-5000),
+  New Deore XT M730 (RD, FD -AL/-HS, SL, BR-M730 cantilever, BR-M731
+  U-Brake, BL, FH-M730-NT/QR + HB-M730, FC-M730 Biopace II + BB, PD,
+  SQ-M730 QR), New Deore MT60 (RD, FD, SL, BR-MT60/MT61, BL), MS series
+  (RD-M531-GS, SL-MS55, SL-MS40), Light Action SLR (BR-L490-49, BL-L330 /
+  L331), SL-S434, SL-S431, RD-L532-GS, FC-B126 / FC-B124 Biopace, HB-1050
+  conventional hubs. Not printed: Deore XT M700, AT 50, FC-7300 / PD-7300,
+  FC-6206, FH-6208-R, FH-1050, PD-GX10, PD-MX15, RD-Z505 / Z503, SL-Z408,
+  CN-6110 / 6120 / UG20 / 6130. No year_to changes made for those
+  (regional edition; weak signal).
+- year_from -> 1987: 1810 FC-M730, 2499 FD-M730, 6159 SL-M730, 982
+  BR-M731, 1776 FC-B124 (all 1986, absent from both 1986 printings); 7223 /
+  7224 BL-L330 / L331 (1988), 1004 BR-L490 (1980), 429 BL-M730 (1980),
+  3967 PD-M730 (1980), 6126 SL-MS40 (1988), 6127 SL-MS55 (NULL), 4523
+  RD-M531 (NULL), 2496 FD-MT60 (1988).
+- Retitled: 4523 "Shimano RD-M531 Light Action SIS" -> "RD-M531-GS, MS
+  series (SIS, long cage)"; 6127 "Shimano SL-MS55" -> "SL-MS55, MS
+  series"; 6126 "Shimano SL-MS40 Light Action" -> "SL-MS40, MS series";
+  6128 "Shimano SL-S434" -> "SL-S434-FCAI, Light Action SIS"; 1004
+  "Shimano BR-L490, Light Action" -> "BR-L490-49, Light Action SLR"; 4521
+  "RD-L532-SS / RD-L532-SGS" -> "RD-L532-SS / RD-L532-GS / RD-L532-SGS";
+  2533 "Shimano FD-5000-F, Sante" -> "FD-5000-B / FD-5000-F, Sante"; 2499
+  "Shimano FD-M730, Deore XT" -> "FD-M730 (-AL / -HS), Deore XT"; 2496
+  "Shimano FD-MT60-AL, Deore" -> "FD-MT60 (-AL / -HS), Deore"; 3549
+  "Shimano FH-M730, Deore XT M730" -> "FH-M730-NT / FH-M730-QR, Deore XT";
+  3524 "Shimano HB-1050, 105" -> "HB-1050-R / HB-1050-F, 105".
+- Descriptions from the catalogue (measured weights kept) on those rows
+  plus 3550, 4534, 6190, 2223, 4491, 981, 982, 429, 3967, 1810, 130, 4487,
+  6157, 978, 979, 427, 7223, 7224, 1776.
+- New (2 rows, 1987-1987): SL-S431 Light Action SIS stem lever, FC-B126
+  Biopace double (LD).
+- Left: other Santé rows (BB / BL-5001 / 5002 / BR / FC / HB / HP-5000,
+  1988) and 4535 RD-5001-LS not in this edition; MT60 BB / FC / HB / HP /
+  PD and FH-MT60 not printed; 5892 SP-M730. Out of scope: SQ-M730 seat
+  post QR, DF-M730 chain deflector, tools TL-RD10 / CT10 / FW30 / CN20,
+  grease, shoe sets, accessories. No deletes.
+
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
 - Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West
