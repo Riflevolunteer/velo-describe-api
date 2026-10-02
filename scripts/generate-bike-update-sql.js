@@ -782,8 +782,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super record': 1509, // Campagnolo 1049/A, Strada Super Record (bare 1513 row merged 2026-09-28)
     'dura ace ex 42 53': 1828, // Shimano FC-7200, Dura-Ace EX
     'shimano 600 ax': 1787, // Shimano FC-6300, 600 AX
-    'sakae 42 52': 1732, // Sakae/Ringyo (SR)
-    'sakae 40 52': 1732,
+    'sakae 42 52': null, // bare-brand row 1732 deleted 2026-10-02 (SR No. 18 pass); no model named
+    'sakae 40 52': null,
     // 1983 Bianchi. The DB has a Bianchi-labelled Competizione crank.
     'ofmega competizione': 1687, // Ofmega Competizione BIANCHI
     'campagnolo gran sport triple': 1475, // Campagnolo 0306, (Nuovo) Gran Sport (116 BCD Triple)
@@ -858,6 +858,7 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    'sr ctd': 7888, // Sakae/Ringyo (SR) CTD, Custom Double Tube (SR No. 18; 1987 Bianchi)
     // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
     // logo)"; a 1973 catalog predates the logo change.
     'cinelli pista handlebars': 2811, // Cinelli 67 Pista (old logo)
@@ -866,6 +867,7 @@ const COMPONENT_OVERRIDES = {
     "cinelli giro d'italia": 2801, // Cinelli 64 Giro D'Italia (70's model)
   },
   Stems: {
+    'sr ax; ah': 7901, // Sakae/Ringyo (SR) AX-AH, Apex (SR No. 18; 1981 Kalkhoff)
     // 1975 Motobecane: the Giro d'Italia bar was paired with the 1A stem.
     "cinelli giro d'italia": 6489, // Cinelli 1A (winged "C" logo)
     // 1981 Kalkhoff. Cinelli's "Super Record" stem is the 1R (1/Record).
