@@ -1433,6 +1433,97 @@ in the repo records them except this file.
   (PC-110/150 new), WE-100 colour casing (new) and W- cables, outer
   bands, tools XA/XB/XC, small parts.
 
+## Shimano "Bicycle System Components" — printed 12.1978 (disraeligears.co.uk, 76 images)
+
+- `data_source` 68. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_december_1978.html
+  (images `shimano_bicycle_system_components_december_1978_{front_cover,
+  page_01..page_74,rear_cover}`; image page_NN = printed page NN). Rear
+  cover "(c) Dec. 1978 by Shimano Industrial Co., Ltd. 1278 C1/20M XBC
+  NP". The 1979 model-year catalogue ("World Racers '79", p.38) and the
+  first with Dura-Ace EX, 600 EX, Altus/Selecta, Positron-III, the
+  Centeron RS/LS/LE trio, the Freehub family and the MX range.
+- **The 1978 EX/Altus codes are the same parts as velobase's 1980 codes.**
+  Rows were retitled with both codes (as with Dura-Ace first gen), and
+  descriptions rewritten, not duplicated: 4509 DA-200 / RD-7200, 2518
+  EA-200 / FD-7200 (band), 2519 EA-210 / FD-7210, 6172 LA-110 / SL-7200,
+  1828 GA-300 / FC-7200, 136 GB-110 / BB-7200, 3569 HF-100 / FH-7260 (6-sp),
+  3568 HF-110 / FH-7250 (5-sp), 997 BA-200 / BR-7200 (CS-49), 998 BA-220 /
+  BR-7210 (CS-57), 439 MA-200 / BL-7200, 3105 UA-110 / HP-7200; 4468 DC-230
+  / RD-6200, 2480 EC-630 / FD-6200, 6147 LB-630 / SL-6200, 1793 GC-400 /
+  FC-6200, 126 GB-210 / BB-6200, 3540 HF-350 / FH-6261 (small flange,
+  HF-360/300/310), 7149 HF-370 / FH-6263 (large, HF-380/320/330), 969
+  BB-330 / BR-6200, 419 MB-230 / BL-6200, 3089 UB-100 / HP-6200; 4476
+  DH-100 / RD-AT11, 4477 DH-110 / RD-AT12, 2484 EF-100 / FD-AT11, 2485
+  EF-110 / FD-AT12, 6153 LF-110 / SL-AT22, 7165 LC-450 / LC-460 (SL-AT11 /
+  AT12); 7170 HF-400 / HF-410 (FH-Q620) Freehub-SQ, 7171 HF-800..830
+  (FH-N620 / K610) SK / SN, 3521 HF-610 / FH-5A10 Freehub-5A; 3530 / 3531
+  HB-200 / HB-6110 and HB-100 / HB-6120 (600 hubs, code already in the
+  descriptions). The code mapping is inferred from matching specs and
+  weights, not printed anywhere.
+  Old titles: "Shimano RD-7200, Dura-Ace EX", "Shimano FD-7200, Dura-Ace
+  EX (clamp)", "Shimano FD-7210, Dura-Ace EX (Braze-tab)", "Shimano
+  SL-7200, Dura-Ace EX", "Shimano FC-7200, Dura-Ace EX", "Shimano BB-7200,
+  Dura-Ace EX", "Shimano FH-7260 / FH-7250, Dura-Ace EX", "Shimano
+  BR-7200 / BR-7210, Dura-Ace EX", "Shimano BL-7200, Dura-Ace EX",
+  "Shimano HP-7200, Dura-Ace EX", "Shimano RD-6200, 600EX Arabesque (Short
+  Cage)", "Shimano FD-6200 / FC-6200 / HP-6200 / BR-6200, 600EX
+  Arabesque", "Shimano SL-6200, 600EX Arabesque (clamp-on)", "Shimano
+  BB-6200 / BL-6200, 600EX", "Shimano FH-6261, 600EX (6sp)", "Shimano
+  FH-6263 / FH-6253, 600EX (large flange freehub)", "Shimano RD-AT11,
+  ALTUS-ST", "Shimano RD-AT12, ALTUS LT", "Shimano FD-AT11, Altus-ST",
+  "Shimano FD-AT12, Altus LT", "Shimano SL-AT22, ALTUS-LT", "Shimano
+  SL-AT11 / SL-AT12, Altus (stem)", "Shimano FH-Q620, Freehub-SQ",
+  "Shimano FH-N620 / FH-K610, Freehub-SN / SK", "Shimano FH-5A10 -
+  steel", "Shimano 600, HB-6110 (low flange)", "Shimano 600, HB-6120
+  (high flange)", "Shimano RS, DH-500 / DH-510", "Shimano BB-250,
+  Tourney", "Shimano LD-500, Dura-Ace bar-end control".
+- year_from: 1828, 3568 (was 1970), 3569, 998, 126, 3540, 7149 -> 1978;
+  4476/4477/6153 (were 1970), 7165, 7170, 7171 (were 1984), 3521, 4443
+  -> 1979. Velobase 1970-1970 placeholders 6187 LE-420, 3578 HF-500, 3576
+  HD-400, 3577 HD-410, 1014 BB-250 Tourney (QR; also the MX rear) ->
+  1979-1979 with descriptions.
+- year_to -> 1979: 114 rows still listed, including the Black Series
+  (pictured pp.30/32), 7434 EA-200 Dura-Ace, 7464 DC-300 (pictured).
+- **Code reuse:** EA-200 is printed twice: as the Dura-Ace Panta front
+  (p.30, 16T 110g, = 7434 from Feb 1977) and as the Dura-Ace EX band
+  front (p.25, 14T 102g, = 2518). LD-500 is printed under both Dura-Ace
+  (black) and 600: one row, 7113. BV-100 and HE-410 are each printed as
+  front and rear (existing single rows). LC-450 and LC-460 are both
+  labelled Altus-ST. Positron-III front derailleurs carry D- codes
+  (DG-400/410).
+- Not listed (stay ending 1978): 7463 DG-220, 7468 GC-110 (same spec as
+  GC-400, probably renamed; noted on the row), 7477 LE-610, 7469 GB-300,
+  2709 CB-100. The Dura-Ace road section prints no caliper or brake lever
+  (989 stays at velobase's 1979).
+- New (21 rows, 1979-1979): EE-200/210 Positron-III rear, DG-400/410
+  Positron-III front, ED-400/410 Shimano-FE, LG-200/210 Positron-III
+  lever, LF-100/150 Altus-ST down tube, LC-600 Shimano-LS, LF-200
+  Shimano-LE, GC-410 600 EX touring double, GH-200/210 Selecta-A,
+  GH-220/230 Selecta-B, GH-300 Selecta-C, GH-100 OCTA-SS, GB-410, GB-430,
+  GB-400, GG-420, HF-700/710 Freehub-6II/5II, CD-100 coaster D-type,
+  CB-400/410 MX coasters, QA-500 600 UG Link Lock.
+- Merged/deleted: 2508 "EA-200, Dura-Ace EX"
+  (`909C0F14-DA93-4695-B7E7-8F65670594BD`) -> 2518; 1829 "GA-300, Dura-Ace
+  EX" (610g, `33E0D8C7-7DD4-44BE-9258-82D777192E93`) and 1827 bare "Dura-Ace
+  EX" crankset (`B0B21258-D724-4A2C-A0FE-EA2506ED7426`) -> 1828; 990
+  "BA-200, Dura-Ace 7100" (332g avg, `C4A47AFF-B76D-410B-952A-6C3B946E81BC`)
+  -> 997; 996 "BA-220 (CS-57)" (`C7DA3688-533B-4A63-9A2D-1583BD141921`) ->
+  998; 440 "MA-200, Dura-Ace EX" (`1C064C8F-15D5-4154-8E3B-75DC862410EA`)
+  and 7483 "MA-200, Dura-Ace" (our May 1978 row,
+  `3fc693e2-be39-11f1-a2df-02fea3763e8d`) -> 439; 3104 bare "HP-7200"
+  (`1EF4E183-DA5B-41EF-A5A6-95021F6D5A1C`, bike_spec 800 moved to 3105)
+  -> 3105; 1792 bare "FC-6200" (NULL years,
+  `5EE09FDE-A71D-43DD-A12F-19F973A01C6A`) -> 1793.
+- Left: Takagi JT- parts (p.62, another brand); 4501/4502 "RD-7100
+  (black), Early EX (version 1/2)" (dubious, but not addressed here);
+  1210 "Dura-Ace EX" cassette; 3536 "600 Uniglide, 600EX (5sp) Freehub";
+  2529 EE-100 Positron front; 4472 RD-6210 and 6150 SL-6210 (not
+  printed); 7161 RD-RS11/12 kept separate from 4443 (1984 specs differ).
+- Out of scope: fork ends NC-200 (new)/NC-100/NB-/ND-100/NF-100, cable
+  parts KA-/KB-, KD-100, chain/freehub/spoke protectors GP-/PF-/PB-/PC-,
+  WE-100 and W- cables, outer bands, UL-100, tools, small parts.
+
 ## Shimano 1982 Bicycle System Components — printed 01.82 (Downloads/Shimano1982/, 44 spread JPEGs, blz01-45, no 44)
 
 - 1200x858 spreads bound to shimano82.pdf; the Read tool dropped pages
