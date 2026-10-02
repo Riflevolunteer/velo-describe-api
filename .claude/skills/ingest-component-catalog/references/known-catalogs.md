@@ -2058,6 +2058,55 @@ in the repo records them except this file.
   Time Trial"; 1285 "600EX Ultegra" chainring. Out of scope: TL-RD10 /
   FW30 / CT10 / CN20, grease, shoe sets, DF-M730, SQ-M730, accessories.
 
+## Shimano "The New System Component Family for Every Riding Style", Exage dealer sales manual — printed 08.1988 (disraeligears.co.uk, 36 images)
+
+- `data_source` 78. Source:
+  https://www.disraeligears.co.uk/site/shimano_-_the_new_system_component_family_for_every_riding_style.html
+  (images `..._{front_cover,page_01..34,rear_cover}`). Rear cover imprint
+  faint: "(c) Aug. 1988 by Shimano Industrial Co., Ltd. ... Printed in
+  Japan XBC IZM". 1989 model year, Exage family only: road Sport LX (A452),
+  Exage Sport (A450/451), Action (A350/351), Motion (A250); off-road
+  Mountain LX (M452), Exage Mountain (M450/451), Trail (M350/351), Country
+  (M250). Line-up charts pp.9-12, specs pp.21-34. First Biopace-HP
+  (FC-M452) and Hyperglide (CS-MT62).
+- year_to 1988 -> 1989: the Jan 1988 (`data_source` 48) Exage Sport /
+  Mountain / Trail rows still listed (4516, 2526, 6180, 1835, 7211, 7219,
+  444, 445, 7220, 3573, 3575, 3976, 3106, 7182, 7221, 1833, 7197, 7212,
+  7205, 7204, 7229, 7183, 2527, 7222, 7195, 7214, 7230), Sport LX 4536 /
+  2534 / 6191 / 1842, CS-1000 7564, MF-Z012 7209, CN-UG20 7450.
+- year_from -> 1989: 6178 SL-A250, 1001 BR-A250, 1000 BR-A350, 441
+  BL-A351, 7592 BR-M250, 7602 HB-RA50, 7614 CN-UG50 (all 1990 from the
+  1990 manual); 4514 RD-A350, 6177 SL-A351, 2524 FD-A351-B (1980-1980
+  placeholders -> 1989-1989; Exage Action is not in Jan 1988); 2527
+  FD-M350 / M351 (NULL).
+- Retitled: 4515 "Shimano RD-A520, Exage Motion" -> "RD-A250, Exage Motion"
+  (A520 was a typo); 4524 "Shimano RD-M452 SGS, mountain-LX" -> "RD-M452-GS
+  / RD-M452-SGS, Mountain LX"; 2528 "Shimano FD-M452, mountain-LX" ->
+  "FD-M452 (-AL / -HS), Mountain LX"; 1836 "Shimano FC-M452, mountain-LX"
+  -> "FC-M452, Mountain LX (Biopace-HP triple)"; 6183 "Shimano SL-M453
+  Mountain-LX" -> "SL-M453, Mountain LX"; 7182 / 7183 "RD-M450 / RD-M350"
+  -> "-GS / -SGS"; 2534 "FD-A452" -> "FD-A452-B"; 2526 "FD-A451, Exage
+  Sport" -> "FD-A451-B, Exage Sport (front SIS)"; 6191 "SL-A453, Sport LX"
+  -> "SL-A453-BCAI / SL-A453-FCAI, Sport LX (7-speed)"; 6180 "SL-A451" ->
+  "SL-A451-FCAI, Exage Sport (front SIS)"; 7211 "BR-A450, Exage Sport" ->
+  "BR-A450-49 / BR-A450-57, Exage Sport / Sport LX"; 3573 "FH-A450" ->
+  "FH-A450-6/7, Exage Sport / Sport LX"; 3575 "HB-A450" -> "HB-A450-R /
+  HB-A450-F"; 7204 "HB-M450" -> "HB-M450-F"; 7221 "BL-M450" -> "BL-M450 /
+  BL-M450-B"; 7222 "BL-M350" -> "BL-M350 / BL-M351-B"; 3976 "PD-A450" ->
+  "PD-A450-A / PD-A450-B"; 3106 "HP-A450" -> "HP-A450-A / HP-A450-B".
+  Descriptions rewritten on 41 rows (measured weights kept).
+- New (18 rows, 1989-1989): SL-A452-BCAI / FCAI (Sport LX 6-speed),
+  FC-A350, FC-A250, FH-RM50, FD-M451, SL-M451-A / B, SL-M452, BR-M452
+  U-brake, FH-M452 / HB-M451-F, CS-MT62, CN-MT62, BL-M451-A, SL-M351-A / B,
+  and Exage Country RD-M250-GS / SGS, FD-M250, SL-M250, BL-M250, FC-M250 /
+  BB-M250 (no Exage Country group exists; ungrouped).
+- Merged/deleted: 4517 "Shimano RD-A350" (bare, 1987-88, Light Action
+  group 141, `2A287D28-16E4-4B3F-9EB9-814FFE8490BC`, no links) -> 4514.
+- Left: 2457 bare "FD-A350" (1980, may be the non-front-SIS twin of
+  FD-A351); 1988-only rows not listed here (7213 BR-M451 U-brake, 7186
+  SL-M450, 7184 FD-A450, 6179 SL-A450, 7185 FD-M450) stay ending 1988;
+  3574 FH-A451 (1990).
+
 ## Shimano "Dealers' 1990 Product Manual" — printed 08.1989 (disraeligears.co.uk, 68 images)
 
 - `data_source` 77. Source:
