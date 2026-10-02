@@ -2008,6 +2008,21 @@ in the repo records them except this file.
   post QR, DF-M730 chain deflector, tools TL-RD10 / CT10 / FW30 / CN20,
   grease, shoe sets, accessories. No deletes.
 
+## Shimano "Santé — A New Expression in Componentry" launch brochure — printed 12.1986 (disraeligears.co.uk, 12 scans)
+
+- `data_source` 80. Source:
+  https://www.disraeligears.co.uk/site/shimano_sante_-_brochure.html
+  (images `shimano_sante_-_brochure_scan_1..12`). Rear cover "(c) Dec. 1986
+  by Shimano Industrial Co., Ltd. Printed in Japan SHL IZM". Launch of the
+  first Santé (5000) for 1987, same month as the Dec 1986 US Complete Line.
+  Sold as a boxed set: RD, FD, shift levers, cables, freewheel and narrow
+  600EX Uniglide chain (CN-6208). Parts: RD-5000, SL-5000-FCAI, FD-5000-B /
+  F, MF-5000.
+- No year changes, new rows or deletes. Descriptions rewritten on 4534,
+  6190, 2533, 2223 and 7232 (boxed-set note). Conflict recorded on 2223
+  MF-5000: the brochure says it fits the standard 126mm 6-speed dropout; the
+  Dec 1986 catalogue reading gave 125mm. Both kept.
+
 ## Shimano "600 Ultegra" launch brochure — printed 10.1987 (disraeligears.co.uk, 8 scans)
 
 - `data_source` 79. Source:
