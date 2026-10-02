@@ -401,6 +401,7 @@ function normalizeForMatch(value) {
 // matching range means no link rather than a wrong-era one.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'suntour cyclone 7000': 2631, // SunTour Cyclone 7000 (White) FD (1987 Bianchi)
     // SunTour No. 61 retitles (bare "Vx" / "ARx" rows now carry codes): keep existing links
     'suntour vx': 2614, // SunTour FD-1600, VX (1981 Kalkhoff)
     'suntour arx': 2621, // SunTour FD-2600, ARX (1985 Raleigh)
@@ -481,6 +482,9 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // SunTour AccuShift leaflets (c. 1987): pin retitled 1987 Bianchi links
+    'suntour cyclone 7000': 4740, // SunTour RD-CL10-SS, Cyclone 7000
+    'suntour alpha 5000': 4721, // SunTour RD-5000-SS, alpha-5000
     'suntour vx': 4774, // SunTour RD-2200, VX (1981 Kalkhoff)
     'suntour ag tech': 4710, // SunTour RD-5000, AG-Tech (1985 Raleigh)
     'suntour ar gt': 4723, // SunTour RD-4400, AR (aR II GT), 1984 (1985 Raleigh)
@@ -881,6 +885,8 @@ const COMPONENT_OVERRIDES = {
     'atax forged dural anodised hidden expander': 6447, // ATAX (1A style)
   },
   Shifters: {
+    'suntour alpha 5000 accushift': 7859, // SunTour SL-5000-BS / CS / CP, alpha-5000 (AccuShift leaflet c. 1987)
+    'suntour accushift (alpha 5000 front derailleur)': 7859,
     // SunTour No. 61 (Sep 1983): UB-10 is the UBN-10 stem lever LD-3000 (1985 Raleigh)
     'suntour ub 10 stem mount': 6288, // SunTour LD-3000, UB-10 / UBN-10 (stem)
     'suntour ub 10': 6288,
@@ -1020,6 +1026,7 @@ const COMPONENT_OVERRIDES = {
     'suntour powerflo 11 28t 8 speed': 1220, // SunTour CS-AP20-S8, XC Comp
   },
   Freewheels: {
+    'suntour alpha 5000 14 28t': 7866, // SunTour FW-AL00-R6, Alpha freewheel (AccuShift leaflet c. 1987)
     'shimano 600 14 24t': [{ from: 1986, to: 1989, id: 2218 }], // 1987 Bianchi: Shimano MF-6208-6, 600EX SIS
     'simplex 14 24t': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
     'regina oro 13 21': 2194, // Regina Oro (6 speed) — 1975 Motobecane

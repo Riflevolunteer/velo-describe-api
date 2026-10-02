@@ -3362,6 +3362,53 @@ in the repo records them except this file.
   for 'suntour cyclone mkiii' updated; link counts unchanged. HR, SU-2, DLN,
   PUB-M (1985 Raleigh) still not in any SunTour catalogue.
 
+## SunTour USA "AccuShift" product leaflets — undated, c. 1987 (disraeligears.co.uk, 43 scans)
+
+- `data_source` 91, label "SunTour USA AccuShift product leaflets (c.
+  1987)". Source:
+  https://www.disraeligears.co.uk/site/suntour_product_leaflets_-_1987.html
+  (scan_1..43). Seven fold-out leaflets, SunTour USA, Fairfield NJ, "Printed
+  in USA", no date (site: 1987): AccuShift overview with "SunTour Family of
+  Indexed Shift Systems" chart, Superbe Pro, Sprint 9000, Cyclone 7000, XC
+  9000, XC Sport 7000, Winner Freewheel System. Spec panels give model codes
+  and weights. Superbe Pro crankset printed "CW-SDB10" (misprint for
+  CW-SB10).
+- Retitled (old titles): 4740 "SunTour Cyclone 7000" (RD, 221g) ->
+  RD-CL10-SS; 4741 "SunTour Cyclone 7000 (White)" (RD, 280g) -> RD-CL10-GT
+  (white); 4759 "SunTour Sprint 9000 (Indexed)" -> RD-SP10; 4758 "SunTour
+  Sprint" (RD, 183g) -> RD-7000 (non-indexed); 4788 "SunTour XC Sport 7000"
+  (RD) -> RD-XS00; 1058 "SunTour XC Sport 7000" (Brakes) -> CB-6600 roller
+  cam; 459 "SunTour Sprint" (Brake Levers, 236g) -> CB-7700 aero; 3613
+  "SunTour BH-SP00, Sprint" (557g) -> HB-SF00; 4709 "SunTour alpha-3000 SS"
+  -> RD-3000-SS; 4721 "SunTour alpha-5000" -> RD-5000-SS; 2660 "SunTour
+  FD-XS00, XC Sport 7000" -> FD-XS00-GT / GX; 2247 "SunTour WT-7000 WINUL
+  7S-S" -> WT-7000, Winner (Ultra 7); 466 "SunTour CB-6200, XC" -> XC / XC
+  9000; 1424 "SP-6200 , Sprint 9000" (stray space). Descriptions also on
+  RD-XC00, FD-XC00-GX, FD-CL10-B, CL-XC00 / XC10 / XS00 / XS10, BA-XC00,
+  HB-XC00 / XC10, CB-6700, LD-4700, PL-5600, HS-SA00, CW-7500, PL-CL10,
+  SP-XC00, HS-SB00, WP-6000.
+- Years: year_to -> 1987 on PL-5300, SP-6100, CB-7200, LD-3700, LD-3750 /
+  3850, LD-3600, RH-4800, PL-5100, CB-6200; velobase 1980 / 1990 / NULL
+  year_from -> 1987 on SP-XC00, HS-SB00, WP-6000, WT-7000, FD-XS00, PL-CL10,
+  CB-7700.
+- New (25 rows, 1987): FD-SP00-B, LD-4800 / 4850, CB-8600 (Sprint 9000);
+  SL-CL10-B / C, BL-CL10, CW-CL10, HB-CL10 / CL00, FD-CL10-H (Cyclone 7000);
+  PL-5700 (XC 9000); RH-5000, SP-XS00 (XC Sport 7000); SL-5000-BS / CS /
+  CP, SL-5000-CH, RD-5000-GT, RD-5000-GX, FW-AL00-R6 (alpha-5000); SL-3000-
+  BS / CS / CP, SL-3000-CH, RD-3000-GX (alpha-3000); WP-7000 / 6500 / 5000,
+  WT-6500 / 6000 / 5000.
+- Deleted: 468 "SunTour CB-6200, XC 9000" (Brake Levers, 1987, velobase,
+  `D7918D6F-D428-4FF7-AC31-2B8167F55224`) merged into 466; 4722 "SunTour
+  alpha-5000" (RD, 1987, 278g avg, `82D59CFF-6A7C-4C07-9CD4-447D8D613A43`)
+  merged into 4721 (weight noted). Neither had links.
+- Bike links (1987 Bianchi): "SunTour Alpha-5000 14-28T" -> 7866
+  FW-AL00-R6; "SunTour Alpha-5000 Accushift" and "SunTour Accushift
+  (Alpha-5000 front derailleur)" shifters -> 7859 SL-5000-BS / CS / CP.
+  Overrides also pin 'suntour cyclone 7000' (RD 4740, FD 2631) and 'suntour
+  alpha 5000' (RD 4721). Left: 2631 "Cyclone 7000 (White)" FD vs 2630
+  FD-CL10-B (both 107g); Alpha-5000 FD / brakes / crankset / hubs not in
+  leaflets; 2229 bare "Winner", 2234 FW-WT10-S7U, SB-XC00, HL-3000.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
