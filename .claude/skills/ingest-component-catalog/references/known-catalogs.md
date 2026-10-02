@@ -1865,6 +1865,68 @@ in the repo records them except this file.
 - Left: 1412 / 1413 bare 7400 Uniglide chains (1980-90), 3561 FH-7402,
   1204 / 1205 CS-7400 cassettes dated 1980.
 
+## Shimano "Complete Line of Shimano System Components" — printed 01.1986 (disraeligears.co.uk, 20 scans)
+
+- `data_source` 73. Source:
+  https://www.disraeligears.co.uk/site/complete_line_of_shimano_system_components_january_1986.html
+  (images `..._scan_01..20`). Rear cover "(c) Jan. 1986 by Shimano
+  Industrial Co., Ltd. 0186 FC/50M Printed in Japan XBC IZM"; front
+  "ENGLISH (U)". 1986 model year: SIS spreads to 600EX (6208) and
+  Shimano-L (Light Action L525); New Dura-Ace Track 7600, Light Action,
+  Biopace, Z-Series and AT 50 parts; AX parts (FC-7300, PD-7300, BL-7300,
+  BL-6300) still listed. No 105 Golden Arrow, EX, Adamas, Altus or
+  Positron.
+- year_from -> 1986 (DB had 1988, or velobase 1980): 1823 FC-7600, 7196
+  BB-7600, 3565 HB-7600, 7210 SS-7600, 3103 HP-7600, 7231 CN-7400, 6677
+  HS-7400, 5893 SP-7400-A, 7232 CN-6208, 7209 MF-Z012, 7225 / 7226
+  BL-Z325 / Z326, 7192 SL-AT50, 2218 MF-6208, 6149 SL-6208 (now
+  1986-1987), 4519 / 4520 RD-L525, 3952 PD-T100.
+- year_to -> 1986: 1826 FC-7300, 3973 PD-7300, 438 BL-7300, 415 BL-6300,
+  7551 HB-6207F/R, 3961 PD-6207, 7451 CN-6110, 7473 CN-6120, 4488 RD-M700,
+  4546 RD-Z505, 6194 SL-Z401, 6195 SL-Z408, 3966 PD-MX15.
+- **105 Golden Arrow capped at 1985** (absent from this "complete line";
+  user chose the generous 1985 bound since no 1985 catalogue is in hand):
+  123, 410, 958, 1780, 1781, 2466, 3085, 3526, 4452, 4454, 6132 year_to
+  1986 -> 1985; 4453 "RD-A105 ... (dark parallelogram)" 1986-1986 ->
+  1985-1985. The 1985 Raleigh Supercourse links still fit.
+- Retitled: 972 "Shimano BR-6208 600EX" -> "BR-6208-49 / BR-6208-57,
+  600EX"; 6149 "Shimano SL-6208, 600EX" -> "SL-6208 (FAI / FCAI / FCBI /
+  BCAI), 600EX SIS"; 2218 "Shimano MF-6208, 600EX (6sp)" -> "MF-6208-6,
+  600EX SIS"; 1799 "Shimano FC-6207 BP, 600EX (Biopace)" -> "FC-6207-BP,
+  600EX (Biopace double, LD type)"; 1797 "Shimano FC-6206 Biopace, 600EX
+  (Triple version of FC-6207)" -> "FC-6206, 600EX (Biopace triple, MD
+  type)"; 4519 "Shimano RD-L525, Light Action" -> "RD-L525-SS, Light
+  Action (SIS, short cage)"; 4520 "Shimano RD-L525, Light Action (long
+  cage)" -> "RD-L525-GS / RD-L525-SGS, Light Action"; 4518 "Shimano
+  RD-L523, Light Action" -> "RD-L523-SS / -GS / -SGS"; 4546 "Shimano
+  RD-Z505, Z-Series" -> "RD-Z505 / RD-Z505-GS"; 4544 "Shimano RD-Z501,
+  Z-Series" -> "RD-Z501 / RD-Z501-GS / RD-Z501-SGS"; 4489 "Shimano
+  RD-M700, Deore XT (with "Super Plate System")" -> "RD-M700-SP, Deore XT
+  (Superplate)"; 3565 "Shimano HB-7600, Dura-Ace 7600 (High Flange)" ->
+  "HB-7600, Dura-Ace Track (large / small flange)"; 448 "Shimano BL-AT50,
+  Z-Series" -> "BL-AT50, AT 50 series"; 7192 "Shimano SL-AT50" ->
+  "SL-AT50, AT 50 series".
+- Descriptions rewritten from the catalogue on about 30 more rows (RD-6208
+  204g, BL-6208, FC-7600 605g, HP-7600 90g vs velobase 80g, SS-7600,
+  CN-7400 / 6208, HS-7400, SP-7400-A 224g, RD-M700 222g, FD / SL / BR /
+  BL-M700, HB-MN72, Z-Series rows, PD-T100, PD-MX15). FD-Z202 / 204 / 206
+  keep velobase's "-HS" titles; the catalogue prints them without it (and
+  with -GS long cages), noted in the descriptions.
+- New (6 rows, 1986-1986): RD-L522-SS / SGS, SL-S424-FAI / FCAI (Light
+  Action SIS), SL-L422 (BA / FA / S), FH-7400-ATB / HB-7400-ATB (Deore XT),
+  PD-GX10, SP-7410 Dura-Ace semi-oval B (kept apart from 5895 SP-7410
+  1994-2000, a later reuse of the code).
+- Deleted: 4543 "Shimano RD-Z501-GS" (Rear Derailleurs, bare, velobase
+  1984-NULL, group 103, "311 grams (Actual)") -> 4544, which now carries
+  the 311g figure. Source_id **not captured** before the delete (the
+  pre-delete query omitted the column); match a reappearance by title and
+  the 311g weight.
+- Left: 3537 / 3538 FH-6207 (not listed; year_to stays 1984); 3539
+  FH-6208 and 5891 "SP-6207?" (1980 placeholders, not in this catalogue);
+  4490 "RD-M700 (Version 2)" and 2498 FD-M700 2nd style; 1003 BR-AT50
+  titled "Exage Trail"; Biopace chainring rows; out of scope SM-DG11 /
+  DG16 guards, TL-CN20.
+
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
 - Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West
