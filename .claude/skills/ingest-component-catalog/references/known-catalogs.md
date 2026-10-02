@@ -1927,6 +1927,42 @@ in the repo records them except this file.
   titled "Exage Trail"; Biopace chainring rows; out of scope SM-DG11 /
   DG16 guards, TL-CN20.
 
+## Shimano "Bicycle System Components — The Complete Line" — printed 08.1986 (disraeligears.co.uk, 24 scans)
+
+- `data_source` 74. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_august_1986.html
+  (images `shimano_bicycle_system_components_1986_scan_01..24`). Rear cover
+  "(c) Aug. 1986 by Shimano Industrial Co., Ltd. 0786 FC/50M Printed in
+  West Germany XBC", European distributor list; front "English (E)".
+  1987 model year; largely a reprint of the Jan 1986 Complete Line.
+- New vs Jan 1986: Dura-Ace 7-speed SIS (RD-7401, SL-7401, FH-7400-7,
+  MF-7400-7, HB-7400 7-speed compatible), BL-7401 aero (replaces BL-7300),
+  FH-6208-R 600EX SIS freehub, BL-6209 aero (replaces BL-6300), New 105
+  1050 series (RD, FD, SL, FC/BB, BR-1050-49/57, BL-1050/1051, FH/HB-1050,
+  HP, PD), RD-L532. Dropped: Shimano-L SIS (RD-L525-SS, RD-L522, SL-S424),
+  BL-7300, BL-6300; those stay ending 1986 (4519 RD-L525-SS kept to 1988:
+  velobase plus a 1987 Bianchi Premio link).
+- year_from -> 1987 (absent from Jan 1986): 3523 FH-1050 (velobase 1980),
+  122 BB-1050 (1985), 953 / 954 BR-1050 (1985), 1778 FC-1050 (1986), 422
+  BL-6209 (1986), 3539 FH-6208 (1980-1980 -> 1987-1987). 1404 CN-6130
+  year_to 1982 -> 1987. The 1987 Bianchi Brava links (953, 1778) still fit.
+- Retitled: 3539 "Shimano FH-6208, 600EX" -> "FH-6208-R / HB-6207-F, 600EX
+  (SIS freehub)"; 4521 "Shimano RD-L532, Light Action" -> "RD-L532-SS /
+  RD-L532-SGS, Light Action"; 953 "Shimano BR-1050, 105 (39-49mm)" ->
+  "BR-1050-49, 105 (short 49 type)"; 954 "Shimano BR-1050, 105 (47-57mm)"
+  -> "BR-1050-57, 105 (long 57 type)"; 2221 "Shimano MF-7400, Dura-Ace
+  (6sp)" -> "MF-7400-6 ..."; 2222 "Shimano MF-7400, Dura-Ace (7sp)" ->
+  "MF-7400-7 ..."; 6165 "Shimano SL-7401, Dura-Ace 7400 (7sp)" -> "SL-7401
+  (FAI / BCAI / FCAI / FCBI), Dura-Ace SIS (7sp)"; 2462 "Shimano FD-1050,
+  105" -> "FD-1050-B / FD-1050-F, 105"; 6130 "Shimano SL-1050, 105 (6sp)"
+  -> "SL-1050 (BCAI / BCBI / FCAI / FCBI / FAI), 105 SIS (6sp)".
+- Descriptions from the catalogue (measured weights kept): 7207, 3560,
+  4504 RD-7401 (205g), 435 BL-7401 (254g), 422 BL-6209 (238g), 4449
+  RD-1050 (257g), 1778 FC-1050 (664g), 122 BB-1050 (327g), 406 / 407
+  BL-1050 / 1051 (202 / 252g), 3523 / 3524 FH / HB-1050 (415 / 218g), 3083
+  HP-1050 (129g), 3953 PD-1050 (280g), 1404 CN-6130.
+- No new rows, no deletes. Out of scope: TL-CN20, SM-DG11 / DG16.
+
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
 - Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West
