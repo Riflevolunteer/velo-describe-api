@@ -3494,6 +3494,39 @@ in the repo records them except this file.
   but not the label / washer version. 1020 / 1024 velobase rows kept apart
   from the new 1022-A. No bike links (bike Weinmann values are 1973-79).
 
+## Weinmann UK retail price leaflet — c. 1970 (velovintageagogo.com forum, 10 scans)
+
+- `data_source` 94, label "Weinmann UK retail price leaflet (c. 1970)".
+  Source: https://www.velovintageagogo.com/t6768-catalogue-weinmann-1970
+  (servimg weinma10..19.jpg, posted 2017 by Tof59218). Fold-out leaflet,
+  cover "Weinmann Vainqueur 999" pencilled "c 1970", "Retail Prices for
+  Weinmann Replacement Parts". No imprint; prices in pre-decimal s/d (42/-,
+  10/6), so before UK decimalisation (Feb 1971).
+- Listed: side-pulls 500 / 730 / 810 / 890 / 1020 / 1080 with shoe reach
+  per type and lever sets (161, 144, 136, 133, 131); "The New Weinmann
+  Vainqueur symetric action centre pull brake 999 (610 / 750)" (610 1-7/8 -
+  2-3/8in, 750 2-1/4 - 3in) with levers 144 / 161 / 162; Dynamic 712 / 812
+  side-pull with centre-pull action; levers 144, 160, 161, 162, 131, 133,
+  135 / 135.16, 136 / 136.16, 151, 154, hoods 144.7; rims 210, 293 (new
+  hollow sprint, ferrules), 294; stems 430 / 431; cables 80.x / 86.x,
+  mudguard extension, tools and replacement parts out of scope.
+- Updated: 1099 "Weinmann AG Dynamic" -> "AG Dynamic 712 / 812", year_from
+  1980 -> 1970; 1157 AG 810, 1115 AG 1020 (NULL -> 1970), 1122 AG 500 /
+  1142 AG 730 (earlier cap-nut versions), 1148 / 1149 AG 750 Vainqueur 999
+  descriptions; 7920 "Weinmann 890-A-Rear" -> "890-A", 7922 "Weinmann 133-W
+  handlever" -> "133-W / 133 tourist lever (straight)", 7926 294 rim, year_to
+  -> 1970; 7769 AG No. 144 year_from 1983 -> 1970; 5204 AG 210 description.
+- New: 7929 "Weinmann AG Vainqueur 999 (610 / 750)" model-level row,
+  1970-1975 (1975 from the 1973-75 bike catalogues, user decision); AG 1080;
+  levers AG No. 160 / 161 / 162, 131, 135 / 135.16, 136 / 136.16, 151 / 154;
+  rim 293; stems 430 / 431 (all 1970-1970).
+- Bike links (user decision 4A): 22 specs -> 7929 via overrides — Raleigh
+  1973 (6), Motobecane 1974 (3) / 1975 (5), Falcon 1975 (8, including bare
+  "Weinmann centre pull" x4 and "...with hooded levers", since the 999 was
+  Weinmann's only centre-pull). "999 De LUXE or UNIVERSAL 61" left unlinked.
+- Left: 500 / 730 / 610 label and washer variants; "WEINMANN 500, Side Pull"
+  (1974), "Tourist" / "side pull" values (no single row).
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,

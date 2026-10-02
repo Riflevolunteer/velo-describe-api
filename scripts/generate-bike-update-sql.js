@@ -649,6 +649,21 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // Weinmann UK leaflet c. 1970: model-level Vainqueur 999 (610 / 750) row, 1970-75 (1973-75 bikes).
+    // The 999 was Weinmann's only centre-pull then, so bare "Weinmann centre pull" links too (user decision 4A).
+    // "999 De LUXE or UNIVERSAL 61" left unlinked (two makes).
+    'weinmann 999 with q r feature light levers': 7929, // Weinmann AG Vainqueur 999 (610 / 750)
+    'weinmann 999 with black lever hoods': 7929,
+    'weinmann 999 short reach centre pull': 7929,
+    'weinmann 999 centre pull': 7929,
+    'weinmann 999 center pull quick release extension levers': 7929,
+    'weinmann 999 de luxe center pull quick release extension levers': 7929,
+    'weinmann 999 de luxe center pull with quick release levers': 7929,
+    'weinmann 999 center pull with extension levers': 7929,
+    'weinmann 999 center pull with quick release de luxe fitting': 7929,
+    'weinmann centre pull': 7929,
+    'weinmann centre pull 999': 7929,
+    'weinmann centre pull with hooded levers': 7929,
     // May 1983 Weinmann catalogue (506 dated 1979-83 from the 1979 Peugeot / 1981 Kalkhoff bikes)
     'weinmann 506 side pull': 7764, // Weinmann AG 506
     'weinmann 506 side pull with safety levers': 7764,
