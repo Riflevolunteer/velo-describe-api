@@ -1309,6 +1309,68 @@ in the repo records them except this file.
   XA/XB tools have no category. Sky Lark and Lark SS/SPO are separate
   rows since the catalogue separates them; Eagle SPO/GPO likewise.
 
+## Shimano "Bicycle System Components" — printed 02.1977 (disraeligears.co.uk, 46 images)
+
+- `data_source` 66. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_february_1977.html
+  (images are named `shimano_bicycle_system_components_1977_*`:
+  front_cover, page_01..page_42, rear_cover, card_scan_01/02; printed
+  page N = page_NN). Rear-cover imprint "CC 0277 YBC NP". The 1977
+  model-year catalogue and the first after Dec 1974, organised by
+  system: Dura-Ace 10 track ("will be introduced in 1977"), Dura-Ace
+  road/track, Shimano-600, FF, PPS, Positron. Scans are 600px but the
+  spec tables are legible.
+- year_to -> 1977 (55 rows): mostly the Dec 1974 rows whose 1976
+  year_to was a guess (Crane DB-100/110, DC-200/210/110, DG-100, EA-100,
+  LA-100, LD-500, the LB- levers except LB-300, LD-200/300, GA-200/100,
+  GB-100/200, FC-300/330, FB-100, HA-300, HC-100/200/210, HD-100,
+  BE-100, BC-300, Tourney BB-100/110/200/210, MA-100, MB-200/100/110,
+  MD-100, TB-100, TC-100, CB-100, CC-100, UA-200, FA-200) plus the
+  Dura-Ace Black Series rows pictured on pages 10-12 (2507, 3097, 432,
+  988, 1813, 1814, 6161, 3553). Several gained the 1977 weights (Crane
+  206g, Crane-GS 216g, BA-100 195/193g, LA-100 71g, MA-100 220g, MB-200
+  209g).
+- Not listed in 1977 (they stay at 1976 or earlier): DB-200/210 Titlist,
+  DB-300/310 Tourney, the DE- Eagles, DD-100/200/500, EB-100, LB-300
+  Super Shifter, LD-400, HC-120, BC-200, MC-100, AB-100.
+- Velobase rows confirmed and redated to 1977 (were 1970 or 1980):
+  4440 "DB-600 Titlist" -> "DB-600, Titlist" (235g; 230g measured);
+  2451 EB-200 Titlist; 2456 "ED-300, Thunderbird II" -> "ED-300,
+  Thunder Bird-II"; 4442 "Skylark, DD-510" -> "DD-510, Sky Lark"; 4447
+  "Eagle II" -> "DE-100F, Eagle-II"; 4527 "DG-200 Positron II, Positron"
+  -> "DG-200, Positron-II"; 4528 DG-300 (year_from 1980 -> 1977); 4441
+  "400, DC-400" -> "DC-400, Shimano-400"; 2453 "EC-400, Uniglide 400" ->
+  "EC-400, Shimano-400" (Uniglide is the chain, not this derailleur);
+  2473 "EC-500" -> "EC-500, Shimano-500" (1978 -> 1977); 6186 "LB-700,
+  Positron" -> "LB-700, Positron Down Tube"; 6137 "LB-600" -> "LB-600,
+  Shimano-600".
+- Dura-Ace 10: the 1977 codes GA-110 crank, QA-100 chain, HA-310 hubs
+  and FA-210 sprocket were inserted as their own rows (separate-code
+  convention). The later 1980s rows 6385 SS-7000 (velobase 1970) and
+  1817 FC-7000 (1976) had year_from moved to 1978 and notes added
+  naming the 1977 code.
+- New (35 rows, 7427-7461, all 1977-1977): DA-100 Dura-Ace (176g,
+  Synchro-Line), EA-200 Dura-Ace (110g), DB-610, DB-400, DB-410, DC-410,
+  DC-400F, DD-100F, EC-600, LC-410, LD-600, LE-400, LC-500, GA-110,
+  GF-210/400/410/420, GG-200/210, GG-100, FC-600, FF-300, QA-100,
+  QA-200 Uniglide-II, QA-400 Uniglide-600, HA-310, HE-300 Freehub-A,
+  HE-400 Freehub-C, HD-200, BB-400 600 centre-pull, Tourney BB-240,
+  BB-230, BB-120, MB-210, FA-210.
+- Merged/deleted: 413 "MB-200, 600 (brake levers)" (velobase, bare,
+  1975-1977, `6210DA00-CB05-4AB5-B610-659DE335C407`) -> 7130 MB-200, 600
+  brake levers, now 1975-1977.
+- Flagged, not changed: 4539 DB-300 Tourney (velobase 1975-1979) is
+  absent here (replaced by DB-400/410), so its 1979 end looks wrong. It
+  is also linked to the 1987 Strada "Shimano Tourney" spec (bike_spec
+  1390, a generic name match), which is a bike-skill fix. Left until
+  the 1978/1979 catalogues are in. Also left: 6187 LE-420 Positron 10-S
+  Console (velobase 1970; the 1977 console is LE-400), 1777 "FFS"
+  (bare), the 600 RD-6100/FD-6100 rows (later codes for DC-200/EC-600),
+  1009/1015 generic Tourney brakes.
+- Out of scope: fork ends NB-100/120, NC-100, ND-100, NF-100, pump
+  holder KD-100, cable parts KA/KB, spoke protectors PB-, cables W-,
+  outer bands, tools XA/XB, small parts.
+
 ## Shimano 1982 Bicycle System Components — printed 01.82 (Downloads/Shimano1982/, 44 spread JPEGs, blz01-45, no 44)
 
 - 1200x858 spreads bound to shimano82.pdf; the Read tool dropped pages
