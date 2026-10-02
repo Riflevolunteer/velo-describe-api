@@ -1092,7 +1092,9 @@ in the repo records them except this file.
 - Redated from catalogue absence plus the Dec 1975 "Black Series": the
   Dura-Ace (Black) rows 988, 6161, 3553, 1813, 1814 (velobase 1970) and
   432, 2507, 3097 (1973-76) -> 1975-1976. 2220 FA-110 6-speed year_from
-  1970 -> 1975 (no 6-speed in either 1972-era catalogue).
+  1970 -> 1975 (no 6-speed in either 1972-era catalogue). **Superseded:**
+  the Dec 1972 English edition (next section) shows 6-speed Dura-Ace
+  freewheels, so 2220 was moved to 1973.
 - Override changed: `'shimano dura ace'` brakes `to: 1983` pointed at 987
   "Dura-Ace (center-pull)"; both 1972-era catalogues show the first
   Dura-Ace brake is the B-210 side-pull and every Shimano centre-pull is
@@ -1105,6 +1107,46 @@ in the repo records them except this file.
 - Left: 1815 GA-200 "(drilled rings)" and 1289 Dura-Ace road chainring
   (velobase 1970) and 1288 chainring guard (undated); no catalogue
   identifies them.
+
+## Shimano "Bicycle Parts", English Edition — printed 12.1972 (disraeligears.co.uk, 40 images)
+
+- `data_source` 62. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_parts_december_1972.html
+  (front_cover, inside_front_cover, page_01..page_36, inside_rear_cover,
+  rear_cover; printed page N = page_NN). Imprint "'72.12 M63". Same
+  month as the "'73 Bicycle Parts" catalogue above but a separate
+  premium dealer book: Road/Track/Touring "ensemble" spreads, then
+  every upper-range part (Dura-Ace, Crane, Titlist, Tourney) with specs,
+  sub-part numbers and exploded drawings. Low-res scans (446px) but
+  legible.
+- **D500/D501 resolved:** "D-501 ... 225g ... With Adapter: Model
+  D-500", so D500 (with adapter) is 255g and D501 (without) is 225g,
+  matching the 1975 DB-100's 225g. 4498's description was corrected (the
+  '73 pass had called the difference "plain vs Dura-Ace").
+- **Correction:** 6-speed Dura-Ace freewheels 13-18 / 13-23 are listed,
+  so 2220 FA-110's year_from went back from 1975 to 1973.
+- First Dura-Ace track parts. Redated from velobase 1970 to 1973-1973:
+  3555 (retitled from "H-741/H-841, Dura-Ace Track" to "H-741 / H-841,
+  Dura-Ace track large flange", 240/290g, likely HA-300 by 1975), 3095
+  K-901 road head parts (likely UA-100), 3096 K-902 track (likely
+  UA-200). 1812 GA-100 track chainwheel year_from 1974 -> 1973 (44-55T,
+  1/8in, 107mm spindle).
+- Retitled: 3556 "Dura-Ace Low Flange First Gen" -> "HS-731 / HS-831
+  (HA-100), Dura-Ace small flange" (220/290g); 6163 "L600, Bar-End
+  Control" -> "L600, Finger-Tip Bar-End Control" (the book's name).
+- Weights added: 989 B-210 200g each; 7407 B110/B120 per-wheel weights;
+  7409 M110 200g pair; 7410 M210 320g pair; 7398 H710/H810 270/360g;
+  7399 H720/H820 230/350g; 2219 F-100 15-24 option. Confirmed with no
+  change: 4499, 4437, 4438, 7376, 1816, 3554, 433, 6162, 6124/6120,
+  7381.
+- New (7415-7417, 1973-1973): Titlist front chain wheel (no code,
+  39-48/48-55T, 165mm), HS-741/HS-841 Dura-Ace track small flange
+  (200/250g), FR-912 to FR-916 chromoly track sprockets (likely FA-200
+  by 1975).
+- Out of scope: fork ends N-101 SF / N-102 LF / N-103 TF, spoke
+  protectors P-100 to P-420, cable parts K-511 to K-541, casing and
+  cable W-101 to W-642, tools X-101/102/401/701/702, chain-line and
+  gear tables. No deletes.
 
 ## Shimano "A Complete Line of Shimano" — printed 12.1975 (equusbicycle.com/bike/shimanocatalog75/, 20 spread PDFs)
 
