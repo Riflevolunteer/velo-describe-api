@@ -401,6 +401,12 @@ function normalizeForMatch(value) {
 // matching range means no link rather than a wrong-era one.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'shimano at10 sis': 7721, // 1993 Bianchi, from the Jul 1992 manual: Shimano FD-AT10 / FD-AT11, Altus A10
+    'shimano ct10 dual sis': 7732, // Shimano FD-CT10, Altus C10
+    'shimano ct10 15': 7732,
+    'shimano ct20': 7739, // Shimano FD-CT20, Altus C20
+    'shimano exage lt top pull dual sis': 7715, // Shimano FD-M320 / FD-M321, Exage LT
+    'shimano exage es top pull dual sis': 7712, // Shimano FD-M520 / FD-M521, Exage ES
     'simplex prestige': 2583, // Simplex Prestige Criterium AV 223
     // Bare "Shimano 600" substring-hits EC-600 "Shimano-600" (1977-78). Fine
     // to 1978; from 1979 it could be FD-6100 or FD-6200 600EX, so no link.
@@ -472,6 +478,12 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    'shimano at10 sis': 7720, // 1993 Bianchi, from the Jul 1992 manual: Shimano RD-AT10, Altus A10
+    'shimano ct10 dual sis': 7731, // Shimano RD-CT10, Altus C10
+    'shimano ct10 15': 7731,
+    'shimano ct20': 7738, // Shimano RD-CT20-GS, Altus C20
+    'shimano exage lt top pull dual sis': 7714, // Shimano RD-M320, Exage LT
+    'shimano exage es top pull dual sis': 7711, // Shimano RD-M520, Exage ES
     // Bare "Simplex" (catalog names only the brand, no model) was exact-
     // matching component_id 4549, a bare-brand placeholder row wrongly dated
     // 1920-1920 — linking e.g. 1979 Peugeots to a "1920 Simplex" derailleur.
@@ -626,6 +638,11 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    'shimano at10 m system': 7723, // 1993 Bianchi, from the Jul 1992 manual: Shimano BR-AT10 / BR-AT11, Altus A10
+    'shimano ct10 m system': 7735, // Shimano BR-CT10 / BR-CT11, Altus C10
+    'shimano ct20 m system': 7742, // Shimano BR-CT20 / BR-CT21, Altus C20
+    'shimano deore dx m system': 7660, // Shimano BR-M650 / BR-M650-M, Deore DX
+    'shimano exage lt m system': 7717, // Shimano BR-M320 / BR-M321, Exage LT
     // Ambiguous between "Zeus Super Alfa" and "Zeus Super Alfa 71"; the 1973
     // catalog is the later, 71-era version.
     'super alfa': 1181, // Zeus Super Alfa 71
@@ -730,6 +747,11 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    'shimano ct10 48 38 28t': 7736, // 1993 Bianchi, from the Jul 1992 manual: Shimano FC-CT10, Altus C10
+    'shimano ct20 48 38 28t': 7743, // Shimano FC-CT20, Altus C20
+    'shimano deore dx 46 36 26t': 1809, // Shimano FC-MT60 / -SG / -A, Deore DX
+    'shimano exage lt 46 36 26t': 7718, // Shimano FC-M320, Exage LT
+    'shimano exage es 46 36 26t': 1834, // Shimano FC-M520, Exage ES
     // 1974 Motobecane.
     'campagnolo record': 1496, // Campagnolo 1049, (Nuovo) Record Strada v4 (BCD 144)
     'stronglight 49 cotterless 42 52 alloy': 1895, // Stronglight 49D (Depose)
@@ -844,6 +866,7 @@ const COMPONENT_OVERRIDES = {
     'atax forged dural anodised hidden expander': 6447, // ATAX (1A style)
   },
   Shifters: {
+    'rapidfire plus ct15': 7733, // 1993 Bianchi, from the Jul 1992 manual: Shimano ST-CT10 / ST-CT15, Altus C10
     // 1987 Bianchi Limited/Squadra: "600 SIS" substring-hit 6138, a bare
     // velobase "Shimano 600" (1970-80). The DB has SL-6207 (1984-87, friction
     // era) and SL-6208 (dated 1980) but neither is clearly the SIS lever.
@@ -868,6 +891,7 @@ const COMPONENT_OVERRIDES = {
     'suntour superbe pro': 6301, // SunTour LD-4650, Superbe Pro (1983-86)
   },
   'Shifting Brake Levers': {
+    'shimano at10 sis': 7722, // 1993 Bianchi, from the Jul 1992 manual: Shimano ST-AT10, Altus A10
     // 1993 Bianchi (integrated levers; the Shifters label maps to both
     // categories). No Record or Chorus Ergopower rows of this era in the DB.
     'shimano dura ace sti': 6365, // Shimano ST-7400, Dura-Ace (Dual Control)
@@ -881,6 +905,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record corsa': 212, // 0118065, C-Record first generation (1985-86)
   },
   Pedals: {
+    'shimano spd 737 clipless': 7666, // 1993 Bianchi, from the Jul 1992 manual: Shimano PD-M737, Deore XT (SPD)
+    'shimano rx100': 3977, // Shimano PD-A550, RX100
     // 1973 Raleigh.
     'campagnolo strada': 3708, // Campagnolo 1037, Record Strada
     'campagnolo super leggera strada': 3709, // Campagnolo 1037/a, Record Strada Superleggeri (SL)
@@ -965,6 +991,7 @@ const COMPONENT_OVERRIDES = {
     'renolds': 1393, // Renold (two identical brand rows; first taken)
   },
   Cassettes: {
+    'shimano xtr 12 28t 8 speed': 7668, // 1993 Bianchi, from the Jul 1992 manual: Shimano CS-M900-8, XTR (Q 12-28T)
     // 1993 Bianchi ("cassette" noun stripped from the CSV).
     'campagnolo 12 23t 8 speed': 1186, // Campagnolo Record Exa-Drive (8sp)
     'campagnolo 12 23 8 speed': 1186,

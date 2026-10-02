@@ -2459,6 +2459,12 @@ in the repo records them except this file.
   -> 3099 HP-7400; 1448 Dura-Ace seat post 5895 SP-7410 (1994+) -> 5893
   SP-7400-A. Overrides 'shimano ultegra' (hubs), 'shimano dura ace'
   (headsets, seat posts) now year-ranged.
+- 1993 Bianchi regenerated (2026-10-02): 49 NULL links back-filled (13 HG
+  chains plus 36 via new overrides for Exage ES / LT, Altus AT10 / CT10 /
+  CT20, Deore DX M-System / crankset, PD-M737, PD-A550, CS-M900-8); linked
+  118 -> 167 of 408. Left unlinked: generic "Shimano Hyperglide 7-speed"
+  cassettes, "Shimano" hubs, "Shimano SPD", "HG chain", AT10-X (not in the
+  European manual), EX300 aero levers.
 - Out of scope: shoes SH-R210 / R110 / T110 / M200 / M110 / M051 / M030 /
   A100 / A050, SH-CV20, SM-SH24 / 30 / 50 / 55 / 70 / 71, SM-PD20 / PD30,
   SQ-M900 / M730, DF-M730, cable guides / stoppers / cable boxes, FE-SF25,
