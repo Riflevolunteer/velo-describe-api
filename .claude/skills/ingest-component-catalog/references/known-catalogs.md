@@ -1196,7 +1196,10 @@ in the repo records them except this file.
   rather than given their own rows.
 - Retitled: 6162 "L-284 / SL-101 , Dura-Ace First Gen." -> "L-284,
   Dura-Ace". The velobase title had used the box number SL-101, and had
-  a stray space.
+  a stray space. Follow-up: 6163 "L600, Finger-Tip Bar-End Control" ->
+  "L-600, ..." (hyphenated as the Dec 1972 and Feb 1973 books print
+  it), and year_from 1970 -> 1972 (the velobase 1970 start had no
+  catalogue support; Sep 1972 is the first).
 - No track, Titlist or Tourney parts (Dura-Ace road only), so those rows
   are neither confirmed nor capped. No year changes, no new rows, no
   deletes. Several descriptions were condensed to fit the box numbers.
