@@ -444,7 +444,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo chorus 8 speed downtube shift levers': 2286,
     'campagnolo veloce': 2317, // Campagnolo Veloce
     'shimano dura ace sti': 2511, // Shimano FD-7403, Dura-Ace 7400
-    'shimano ultegra sti': 2479, // Shimano FD-6401, 600 Ultegra
+    'shimano ultegra sti': 2479, // Shimano FD-6401-B / FD-6401-F, 600 Ultegra
     'shimano 105 sti': 2467, // Shimano FD-1055, 105SC
     'shimano rx100 gs sis': 2531, // Shimano FD-A550, RX100
     'shimano xtr': 2541, // Shimano FD-M900, XTR M900
@@ -871,7 +871,7 @@ const COMPONENT_OVERRIDES = {
     // 1993 Bianchi (integrated levers; the Shifters label maps to both
     // categories). No Record or Chorus Ergopower rows of this era in the DB.
     'shimano dura ace sti': 6365, // Shimano ST-7400, Dura-Ace (Dual Control)
-    'shimano ultegra sti': 6358, // Shimano ST-6400, 600EX Ultegra
+    'shimano ultegra sti': 6358, // Shimano ST-6400, 600 Ultegra (Dual Control)
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC
   },
   'Brake Levers': {

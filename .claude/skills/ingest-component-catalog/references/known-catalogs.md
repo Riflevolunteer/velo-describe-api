@@ -2332,6 +2332,64 @@ in the repo records them except this file.
   Out of scope: shoes SH-M100 / R100 / T100, SH-CV10, SQ-M730, DF-M730,
   SM-CS50 / ST74 / SP55 / MT55, tools.
 
+## Shimano "'92 Shimano Bicycle System Component — Dealers' Product Manual", English (GB) — printed 08.1991 (disraeligears.co.uk, 108 images)
+
+- `data_source` 83, label "Shimano Bicycle System Component 1992 Dealers
+  Product Manual, European edition (printed 08.1991)". Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_component_-_92.html
+  (front cover, inside front cover = new products, contents, page_001..104
+  = printed pages, rear cover). Rear cover "(c) Aug. 1991 Shimano Inc. 0891
+  Printed in Germany", Shimano Europa + European distributors: 1992 model
+  year. XT / DX / LX / Dura-Ace / Ultegra / 105SC have spec pages; Exage
+  LX, GS, RX100, Exage EX, CX and Youth are tables.
+- New for 1992: XTR M900 group; 600 Ultegra STI 8-speed (ST-6400,
+  FH-6402-HG, RD-6401, FD-6401, SL-6401-FCAI, SL-BS64-8, CS-HG90-8,
+  PD-6402); 70GS; Exage 500CX / 200CX hybrid; Youth Package; Rapidfire
+  Plus (ST-M900-8, ST-M095); top-pull FD-M901 / M736 / M651 / M301;
+  cartridge BBs BB-UN90 / UN70 / UN50 / CS20 / CS10; SPD PD-M525 and
+  PD-A525; SP-M650; HP-R501; BR-C510-B; BR-M501 / M502; RX100 triple
+  (RD-A550-GS, FD-A553-GS, SL-A550-T, FC-A550-T); FC-M202 / M102;
+  FH-7463-HG; FC-A300-BP; BB-A200 / BB-M200.
+- Not seen vs 1991 (left at year_to 1991): Dura-Ace SL-7400 6sp,
+  CS-7400-6/7/8 Uniglide, MF-7400, HB-7400-R freewheel hub, BR-7402-49;
+  ST-M091; BR-M732; BB-M730 / BB-MT60; ST-M050 4-finger, BR-M454,
+  BR-M550, BR-M250, BL-M451-A, BL-M350-B, BL-M250-C, SL-M453, SL-M300-B /
+  C, BB-M500; FD-M200-B, FC-M200 / M201, FC-M100-SG; FH-6400-6/7; all
+  Nexus and Tourney (FD-TY20 only as Youth FD-TY20-S); BB-UN10, BB-A450,
+  CS-1000.
+- New groups: 314 "70GS", 315 "Exage 500CX", 316 "200CX", 317 "Youth
+  Package" (brand 51, 1992).
+- year_to -> 1992 on 82 rows (all re-listed rows ending 1991, plus 7614
+  CN-UG50 from 1990 and 7628 BR-M452 from 1989). 1848 FC-M900 (velobase
+  1990-1990) and 3581 FH-M900 (NULL) -> 1992-1992; 3951 PD-A525 year_from
+  1993 -> 1992; 3563 FH-7463 year_to 1990 -> 1992.
+- Retitled (old titles): 2540 "Shimano FC-M901, XTR M900" (Front
+  Derailleurs row; -> FD-M901 top-pull); 142 "Shimano BB UN-90"; 3108
+  "Shimano HP-M900, XTR M900"; 6358 "Shimano ST-6400, 600EX Ultegra"; 3960
+  "Shimano PD-6402, 600EX Ultegra"; 6145 "Shimano SL-6401, 600 Ultegra
+  (8sp)"; 3535 "Shimano FH-6402, 600 Ultegra"; 2479 "Shimano FD-6401, 600
+  Ultegra"; 3563 "Shimano FH-7463, Dura-Ace 7400"; 2532 "Shimano FD-A553,
+  RX100"; 4532 "Shimano RD-A550, RX100"; 1830 "Shimano FC-A300, 300EX";
+  6362 "Shimano ST-M095, Deore XT M735 Series"; 2502 "Shimano FD-M736,
+  Deore XT"; 2489 "Shimano FD-M651, Deore DX"; 7581 "Shimano ST-M060, Deore
+  LX Rapidfire"; 7599 "Shimano BL-M200 / BL-M201, 200GS"; 7628 "Shimano
+  BR-M452, Exage Mountain (U-brake)". Descriptions also rewritten on 2541,
+  1018, 1848, 3581, 3582, 4542, 4467, 1840, 6189, 3951.
+- New (38 rows, 1992-1992): ST-M900-8, CS-M900-8, SP-M900; SL-BS64-8,
+  CS-HG90-8; BB-UN70, SP-M650, BB-UN50, PD-M525; HP-R501, BB-CS20, BB-CS10,
+  BB-A200 (no group); BR-M501 / M502, FD-M301; FC-M202-SG / CG, BB-M200,
+  FC-M102-SG / CG; 70GS RD-TY70, FD-TY70-B, ST-M007 / -W, SL-TY70, BR-TY70,
+  BL-TY70 / -S, FC-TY70; 500CX RD-M500-C-SGS, FD-M500-C, ST-M050-C, BR-C510
+  / C510-B, FC-M500-C-SG; 200CX RD-M200-C-SGS, FD-M202-C, ST-M020-C,
+  BR-C200 / C200-B, BL-M201-C, FC-M202-C; Youth FD-TY20-S, FC-M100-W.
+- No deletes. Left: 1416 CN-M981 XTR (later era); overrides 'shimano xtr
+  top pull dual sis' -> 2541 FD-M900 and 'shimano deore dx top pull dual
+  sis' -> 2487 FD-M650 point at the band versions while top-pull rows
+  2540 / 2489 exist (bike_spec 1611, 1628, both 1993) — not changed.
+  Out of scope: shoes SH-R200 / R110 / T110 / M200 / M100 / M050 / M030 /
+  A100, SM-SH24 / SH50 / SH55, SM-PD20 / PD30, SQ-M900 / M730, DF-M730,
+  SM-SP / MT cable guides, FE-SF25, tools.
+
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
 - Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West
