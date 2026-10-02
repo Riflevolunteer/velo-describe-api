@@ -1010,7 +1010,7 @@ in the repo records them except this file.
   English export catalogue (Shimano American Corp. NY, Shimano Europa
   Düsseldorf). Now the earliest Shimano catalogue in the log.
 - **Pre-renumbering codes.** 1972 uses D/E/L/F/H/T/A/C/B/M + 3 digits
-  (D600 Titlist, L221 Alumi, F200 freewheel, H710 hub); by Dec 1975 these
+  (D600 Titlist, L221 Alumi, F200 freewheel, H710 hub); by Dec 1974 these
   were DB-/DE-/DD-/LB-/FC-/HC-... Kept as separate rows per number,
   matching the DB's existing D-600 Titlist (4437) vs DB-200 (7100). Where
   the weight is identical, the new row notes the likely 1975 successor:
@@ -1082,14 +1082,14 @@ in the repo records them except this file.
   likely MB-100/MB-110 successors; 7376 E302 notes the Dura-Ace E-304.
 - Dura-Ace matched and rewritten: 4498 Crane (D-501 225g vs plain D500
   255g); 989 B-210/BA-100; 433 M-140/MA-100; 6162 L-284 (year_to 1973
-  -> 1976, as its own Dec 1975 LA-100 note implied). Retitled (old
+  -> 1976, as its own Dec 1974 LA-100 note implied). Retitled (old
   titles): 2219 "FA-100, Dura-Ace" -> "F-100 / FA-100, Dura-Ace",
   year_from 1970 -> 1973 ("new racing model" here, absent Sept 1972);
   3554 "Dura-Ace High Flange First Gen" -> "H-731 / H-831 (HA-200),
   Dura-Ace large flange"; 1816 "GA-200, Dura-Ace First Gen" -> "G-210 /
   G-220 (GA-200), Dura-Ace"; 7144 "GB-100, Dura-Ace bottom bracket set"
   -> "G-520 / GB-100, Dura-Ace bottom bracket set".
-- Redated from catalogue absence plus the Dec 1975 "Black Series": the
+- Redated from catalogue absence plus the Dec 1974 "Black Series": the
   Dura-Ace (Black) rows 988, 6161, 3553, 1813, 1814 (velobase 1970) and
   432, 2507, 3097 (1973-76) -> 1975-1976. 2220 FA-110 6-speed year_from
   1970 -> 1975 (no 6-speed in either 1972-era catalogue). **Superseded:**
@@ -1170,7 +1170,7 @@ in the repo records them except this file.
   here either). No new rows, no deletes.
 - Follow-up retitle: 3553 "Dura-Ace High Flange First Gen  (Black)"
   (double space) -> "HA-200, Dura-Ace large flange (Black)". It uses the
-  1975 code only, since black parts first appear in Dec 1975. 620g pair
+  1975 code only, since black parts first appear in Dec 1974. 620g pair
   measured kept.
 
 ## Shimano "Dura-Ace Light Alloy Bicycle Parts" brochure — printed 04.1973 (disraeligears.co.uk, 8 scans)
@@ -1206,7 +1206,7 @@ in the repo records them except this file.
   measured kept). Merged/deleted: 431 "Dura-Ace First Gen with Extention
   Lever" (velobase, bare, 1973-1973,
   `7C251DB1-620A-4728-A586-1ABC56AC24FB`) -> 433. No catalogue
-  (Sep 1972 to Dec 1975) lists a Dura-Ace extension lever. Every Dura-Ace
+  (Sep 1972 to Dec 1974) lists a Dura-Ace extension lever. Every Dura-Ace
   lever is the plain hooded M-140/MA-100, and the extension levers
   (M-210/220, MB-110) are standard Shimano. No bike links.
 - Follow-up, Dura-Ace headsets: one row per part with both codes, as for
@@ -1258,7 +1258,7 @@ in the repo records them except this file.
   FR-91x).
 - Redated: 2454 ED-100 Thunder Bird and 2455 ED-200 Thunder Bird GPO
   (velobase 1974) -> 1975-1975. Jun 1974 still prints E-101 / E-111, so
-  the ED- codes date from Dec 1975. Kept separate per code, as D600 /
+  the ED- codes date from Dec 1974. Kept separate per code, as D600 /
   DB-200.
 - Merged/deleted (velobase duplicates of the 1975 lever rows, bare,
   dated 1970): 6121 "LB-100 'ALMI Lever' (Titlist, Tourney, Eagle,
@@ -1270,12 +1270,12 @@ in the repo records them except this file.
   protectors P-100/310/320/410/420, cables W-series, outer bands, tools
   X-101 to X-702.
 
-## Shimano "A Complete Line of Shimano" — printed 12.1975 (equusbicycle.com/bike/shimanocatalog75/, 20 spread PDFs)
+## Shimano "A Complete Line of Shimano" — printed 12.1974 (equusbicycle.com/bike/shimanocatalog75/, 20 spread PDFs)
 
 - First Shimano catalogue ingested (the Sept 1972 one above was added later). The Bicycle Info Project page
   links each thumbnail to pdf/shimanocat7500NN.pdf (one spread each,
   4537x2936 JPEG inside, usable OCR layer); merged to shimano75.pdf in
-  the scratchpad. Back cover imprint "'75.12. KM.NP". 37 pages.
+  the scratchpad. Back cover imprint "74 12. KM. NP." (December 1974, the 1975 model-year catalogue). **Correction (2026-10-02):** this was first misread as "'75.12"; the disraeligears copy (https://www.disraeligears.co.uk/site/a_complete_line_of_shimano_1975.html) shows "74 12" clearly. Data_source 24 was relabelled and the 37 "Dec 1975" description notes were rewritten to "Dec 1974"; no years changed, since 1975 as model year still holds. 37 pages.
 - Contents: Dura-Ace road (DB-100/110 Crane, EA-100, LA-100, LD-500,
   FA-100/110, HA-100/200, GA-200 + GB-100, BA-100, MA-100, UA-100, Black
   Series), Dura-Ace track (HA-300, FA-200, GA-100, UA-200), 600 series
@@ -1301,7 +1301,7 @@ in the repo records them except this file.
   chainwheel (the catalogue's GA-100 is the track crank, GA-200 road).
 - Years: 3530/3531 600 hubs and 414 levers year_from 1976 -> 1975;
   4439 Lark W and 1010 BB-100 year_to -> 1975.
-- Notes ("Dec 1975 catalogue"): codes, capacities and weights on 38
+- Notes ("Dec 1974 catalogue"): codes, capacities and weights on 38
   existing rows. Guarded; longest 219.
 - Left: 600 hub rows 3530/3531 keep their later HB-6110/6120 titles
   (catalogue codes HB-200/HB-100 in the note); NB/NC/ND/NF fork ends,
