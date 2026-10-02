@@ -3465,6 +3465,35 @@ in the repo records them except this file.
   CXC-624 / 331, CRC-T301, 55G, MTH-100 (later SR numbering), "Royal special
   racing bend" (RY-978 vs RY-RC ambiguous), 1987 "CT-P5E".
 
+## Weinmann "Light Metal Caliper Brakes, Parts and Rims and Tools", Catalogue No. 107 — January 1963 (eBay listing photos, partial)
+
+- `data_source` 93, label "Weinmann Catalogue No. 107, Delaware Mercantile
+  Co. (January 1963)". Source: eBay item 116566852462 listing photos
+  (eBay pages block scripted fetch; the user passed the i.ebayimg.com image
+  URLs directly; s-l1600 versions downloaded). Delaware Mercantile Company
+  (Delmerco), 111 Main St, Stamford NY, Weinmann US importer; cross-lists
+  Schwinn part numbers. Photos show printed pp 1, 2, 3, 6, 8 and an "Also
+  available" insert (812-Rear Vert.); pp 4 (levers / cables), 5, 7 missing,
+  so absence proves nothing.
+- Listed: complete caliper brakes 812-A F / R (middleweight, handlever 97-W
+  or #133, or hooded 130-W / 57-W), 812-Rear Vert. (vertical clamp), 1022-A
+  F / R, 730-A F / R (lightweight, QR), 890-A-Rear, 500-A-Front (very short
+  arms, QR), Vainqueur 999 center-pulls 610-Front / 750-Rear ("New Improved
+  Model, in use since end 1962", arms 1008 / 1009.610-8, 1010 / 1011.750-8,
+  springs 1047.610 / .750, QR 1256); rims 270 (wood inserted), 294 (hollow),
+  230 Alesa (650-A / B), 256 Alesa H.P.; spare parts (-W numbers, 44.12, 66)
+  out of scope.
+- Updated descriptions only (years already fit): 1107 Vainqueur 999 3rd
+  version (2 springs, mounted pivots, 1962-1964) and 1112 999 De Luxe (2
+  springs, mounted pivots, 1962-1964) = the end-1962 New Improved Model.
+- New (12 rows, 1963-1963): 812-A, 812-Rear Vert., 1022-A, 890-A-Rear;
+  handlevers 97-W, 133-W, hooded 130-W, 57-W; rims 270, 294, 230 Alesa, 256
+  Alesa H.P.
+- Left: 610 / 750 label variants (1136 / 1137 / 1139, 1148-1151), 730
+  variants (1140-1146), 500 variants (1119-1128) — catalogue names the model
+  but not the label / washer version. 1020 / 1024 velobase rows kept apart
+  from the new 1022-A. No bike links (bike Weinmann values are 1973-79).
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
