@@ -1173,6 +1173,34 @@ in the repo records them except this file.
   1975 code only, since black parts first appear in Dec 1975. 620g pair
   measured kept.
 
+## Shimano "Dura-Ace Light Alloy Bicycle Parts" brochure — printed 04.1973 (disraeligears.co.uk, 8 scans)
+
+- `data_source` 64. Source:
+  https://www.disraeligears.co.uk/site/shimano_dura-ace_light_alloy_bicycle_parts.html
+  (`..._-_scan_N_main_image.jpg`, N = 1-8). Imprint "Printed in Japan.
+  7304". The first Dura-Ace-only brochure, with its own typeface and
+  boxed packaging. It prints the same specs as the Dec 1972 and Feb 1973
+  English editions but **no model codes**: it lists retail **package
+  numbers** instead (scan 8 table).
+- **Package numbers are not model codes.** FC-/HB-/CB-/SL-/FW-/DR-/HP-
+  are box numbers. They look like 1975 prefixes but don't match them
+  (1975 hubs are HA-100/200, not HB-). They were added to descriptions
+  as "box ..." so a listing that quotes the box still matches: SL-101
+  -> 6162 L-284; SL-210 -> 6163 L600; DR-101/102 -> 4498/4499 Crane/GS;
+  DR-601 -> 2506 E-404; FC-201 to 204 (39-52 / 45-54 x 165 / 170) ->
+  1816; Pro Model FW-101/102/103 -> 2219, FW-601/602 -> 2220; Touring
+  Model FW-201 to 208 -> 7397 F200-F512 (8 combinations, one-to-one);
+  CB-101 brake set -> 989 + 433; HP-101 -> 3095 K-901.
+- **6-speed Dura-Ace hubs:** HB-102 large flange and HB-202 small flange
+  "for 6-speed", with no code, weight or spacing. Noted on 3554/3556
+  rather than given their own rows.
+- Retitled: 6162 "L-284 / SL-101 , Dura-Ace First Gen." -> "L-284,
+  Dura-Ace". The velobase title had used the box number SL-101, and had
+  a stray space.
+- No track, Titlist or Tourney parts (Dura-Ace road only), so those rows
+  are neither confirmed nor capped. No year changes, no new rows, no
+  deletes. Several descriptions were condensed to fit the box numbers.
+
 ## Shimano "A Complete Line of Shimano" — printed 12.1975 (equusbicycle.com/bike/shimanocatalog75/, 20 spread PDFs)
 
 - First Shimano catalogue ingested (the Sept 1972 one above was added later). The Bicycle Info Project page
