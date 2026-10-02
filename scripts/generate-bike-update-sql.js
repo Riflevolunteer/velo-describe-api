@@ -882,7 +882,7 @@ const COMPONENT_OVERRIDES = {
   },
   Shifters: {
     // SunTour No. 61 (Sep 1983): UB-10 is the UBN-10 stem lever LD-3000 (1985 Raleigh)
-    'suntour ub 10 stem mount': 6288, // SunTour LD-3000, UBN-10 (stem)
+    'suntour ub 10 stem mount': 6288, // SunTour LD-3000, UB-10 / UBN-10 (stem)
     'suntour ub 10': 6288,
     'shimano 600 sis': [{ from: 1986, to: 1987, id: 6149 }], // 1987 Bianchi: Shimano SL-6208, 600EX SIS
     'shimano dura ace sis 7': [{ from: 1987, id: 6165 }], // Shimano SL-7401, Dura-Ace SIS (7sp)

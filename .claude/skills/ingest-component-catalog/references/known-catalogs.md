@@ -3285,6 +3285,35 @@ in the repo records them except this file.
   brake not inserted. Bike values not in this catalogue: HR, SU-2, DLN,
   PUB-M, Alpha-5000; the 1983 Bianchi Superbe Pro FD stays unlinked.
 
+## SunTour "Small Parts Catalog" — undated, c. 1983 (disraeligears.co.uk, 50 scans)
+
+- `data_source` 89, label "SunTour Small Parts Catalog (c. 1983)". Source:
+  https://www.disraeligears.co.uk/site/suntour_small_parts_catalog_-_1983.html
+  (scan_1..50). SunTour U.S.A., Inc., P.O. Box 1076, Fairfield NJ. Spare-parts
+  book: one exploded diagram and 8-digit spare-part list per model, no
+  specs, weights or printed date ("1983" is the site's label). Spare parts
+  themselves out of scope.
+- Models: RD-1200 GT, RD-1100 Honor, RD-2000 7GT, RD-2200 / 2400 Road VX
+  (GT), RD-4200 / 4400 AR (GT), RD-4300 / 4500 ARX (GT), RD-3500 / 3700
+  Cyclone Mk II (GT), RD-2100 Superbe, RD-5300 (labelled "Superbe Pro"),
+  RD-5600 AG Tech-GTL, RD-5500 MounTech-GTL, RD-4700 / 5400 Superbe Tech
+  (L / GTL cages); FD-1000 Spirt, FD-1400 Seven, FD-1600 Road VX, FD-1100
+  Compe-V, FD-2500 AR, FD-2600 ARX, FD-2800 AG Tech, FD-2700 MounTech,
+  FD-2300 Cyclone Mk II, FD-3000 Superbe; LS-3500 UB-5, LD-3000 UB-10,
+  LS-1300 PUB-5, LD-1300 PUB-10, LD-1900 Road VX, LD-2900 DLW, LD-1500
+  PDL-M, LD-2300 Top-Mount, LD-2000 / 2050 Superbe, LD-3250 / 3200 Superbe
+  Pro, LD-2800, LD-1400 Bar-Con; BH-2000 Sprint hubs; PL-4000 / PL-2000
+  Superbe Pro, PL-5100 XC-II; CB-3000 / CB-4000 Superbe Pro brakes. All
+  already present from No. 61.
+- Retitled (old titles): 6288 "SunTour LD-3000, UBN-10 (stem)" -> "UB-10 /
+  UBN-10 (stem)"; 7798 "SunTour LS-3500, UBN-5 (stem)" -> "UB-5 / UBN-5
+  (stem)". 4763 RD-5300 description notes the parts book's "Superbe Pro"
+  label (No. 61 naming kept). From No. 61, missed in that pass: 2609
+  FD-2800 AG Tech and 2607 / 2608 FD-2700 MounTech v1 / v2 year_to 1980 ->
+  1984 with No. 61 specs.
+- Not done (user decision): year_from 1984 -> 1983 on the 15 rows that start
+  in 1984 only from No. 61 — the book is undated.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
