@@ -2382,10 +2382,10 @@ in the repo records them except this file.
   BL-TY70 / -S, FC-TY70; 500CX RD-M500-C-SGS, FD-M500-C, ST-M050-C, BR-C510
   / C510-B, FC-M500-C-SG; 200CX RD-M200-C-SGS, FD-M202-C, ST-M020-C,
   BR-C200 / C200-B, BL-M201-C, FC-M202-C; Youth FD-TY20-S, FC-M100-W.
-- No deletes. Left: 1416 CN-M981 XTR (later era); overrides 'shimano xtr
-  top pull dual sis' -> 2541 FD-M900 and 'shimano deore dx top pull dual
-  sis' -> 2487 FD-M650 point at the band versions while top-pull rows
-  2540 / 2489 exist (bike_spec 1611, 1628, both 1993) — not changed.
+- No deletes. Left: 1416 CN-M981 XTR (later era).
+- Links fixed: overrides 'shimano xtr top pull dual sis' 2541 -> 2540
+  FD-M901 and 'shimano deore dx top pull dual sis' 2487 -> 2489 FD-M651
+  (top-pull versions); bike_spec 1611 and 1628 (both 1993) repointed.
   Out of scope: shoes SH-R200 / R110 / T110 / M200 / M100 / M050 / M030 /
   A100, SM-SH24 / SH50 / SH55, SM-PD20 / PD30, SQ-M900 / M730, DF-M730,
   SM-SP / MT cable guides, FE-SF25, tools.

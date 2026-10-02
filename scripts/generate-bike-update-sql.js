@@ -448,8 +448,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 2467, // Shimano FD-1055, 105SC
     'shimano rx100 gs sis': 2531, // Shimano FD-A550, RX100
     'shimano xtr': 2541, // Shimano FD-M900, XTR M900
-    'shimano xtr top pull dual sis': 2541,
-    'shimano deore dx top pull dual sis': 2487, // Shimano FD-M650, Deore DX
+    'shimano xtr top pull dual sis': 2540, // Shimano FD-M901, XTR M900 (top-pull)
+    'shimano deore dx top pull dual sis': 2489, // Shimano FD-M651, Deore DX (top-pull)
     'shimano deore xt top pull dual sis': 2501, // Shimano FD-M735, Deore XT
     'shimano deore lx top pull dual sis': 2491, // Shimano FD-M550, Deore LX
     // 1985 Raleigh (Sheldon Brown scan).
