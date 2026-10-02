@@ -2008,6 +2008,56 @@ in the repo records them except this file.
   post QR, DF-M730 chain deflector, tools TL-RD10 / CT10 / FW30 / CN20,
   grease, shoe sets, accessories. No deletes.
 
+## Shimano "Bicycle System Components — The Complete Line", US edition — printed 12.1987 (disraeligears.co.uk, 36 scans)
+
+- `data_source` 76. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_december_1987.html
+  (images `shimano_bicycle_system_components_1988_scan_01..36`). Rear cover
+  "(c) Dec. 1987 by Shimano Industrial Co., Ltd. 1287 Printed in Japan XBC
+  IZM"; front "English (U)". US edition, 1988 model year. First 600 Ultegra
+  (6400) and second Santé (RD-5001, FC / BB / FH / HB / BR / BL / HP-5000);
+  Exage introduced (intro page only, no parts). 600EX is gone except
+  CN-6208. Freehub system page names the cassettes CS-7400-6 / -7,
+  CS-5000 / CS-6400-7, CS-6208-6, CS-1000.
+- Most rows already started in 1988 (velobase and the Jan 1988 dealer
+  pass, `data_source` 48). 600EX rows velobase runs to 1988 (BL-6208,
+  MF-6208, HS-6207) were left as they are (regional edition).
+- Years: 3958 PD-6400 1980 -> 1988; 4535 RD-5001-LS 1987 -> 1988; 4522
+  RD-L541 1987 -> 1988; 1204 CS-7400-7 1980-1980 -> 1987-1988; 3534
+  year_to 1988 -> 1991.
+- Retitled: 4535 "Shimano RD-5001-LS, Sante" -> "RD-5001 / RD-5001-LS,
+  Sante"; 4522 "Shimano RD-L541 GS, Light Action" -> "RD-L541-SS / -GS /
+  -SGS"; 4491 "Shimano RD-M730, Deore XT M730" -> "RD-M730-GS /
+  RD-M730-SGS, Deore XT"; 7215 "Shimano BR-L570, Light Action" ->
+  "BR-L570-57, Light Action SLR"; 966 "Shimano BR-6400, 600 Ultegra" ->
+  "BR-6400-49 / BR-6400-57"; 2478 "Shimano FD-6400-B, 600 Ultegra" ->
+  "FD-6400-B / FD-6400-F"; 6144 "Shimano SL-6400, 600 Ultegra (7sp)" ->
+  "SL-6400-BCAI / SL-6400-FCAI, 600 Ultegra SIS (6 / 7sp)"; 1789 "Shimano
+  FC-6400, 600 Ultegra (Biopace)" -> "FC-6400-BP, 600 Ultegra (Biopace
+  double, LD type)"; 3958 "Shimano PD-6400, 600EX Ultegra" -> "PD-6400,
+  600 Ultegra"; 416 "Shimano BL-6401, 600EX Ultegra" -> "BL-6401, 600
+  Ultegra (aero)"; 5889 "Shimano SP-6400-A 600 Ultegra" -> "SP-6400-A, 600
+  Ultegra (round A type)"; 5890 "Shimano SP-6400-B 600 Ultegra - Aero" ->
+  "SP-6400-B, 600 Ultegra (semi-oval B type)"; 3534 "Shimano FH-6400, 600
+  Ultegra" -> "FH-6400-6/7 / HB-6400-F, 600 Ultegra" (override comment
+  updated); 3580 "Shimano HB-5000 & FH-5000, Sante" -> "FH-5000 / HB-5000,
+  Sante"; 1008 "Shimano BR-5000, Sante" -> "BR-5000-49, Sante"; 7203
+  "Shimano FH-MT60, Deore" -> "FH-MT60-NT / FH-MT60-QR, Deore"; 7189
+  "Shimano SL-MS41" -> "SL-MS41, MS series"; 7188 "Shimano SL-S441" ->
+  "SL-S441, Light Action SIS"; 6128 "SL-S434-FCAI" -> "SL-S434-BCAI /
+  SL-S434-FCAI".
+- Descriptions from the catalogue (measured weights kept) on those plus
+  125, 7217, 417, 4466, 3087, 6675, 1199, 1841, 140, 447, 7216, 3107,
+  3971, 7207, 3523, 7218, 1809, 3965, 7228, 7198, 7227, 1204.
+- New (4, Cassettes, 1988-1988): CS-7400-6, CS-5000, CS-6208-6, CS-1000.
+- Merged/deleted: 3533 "Shimano FH-6400 & HB-6400 600EX Ultegra" (Hubs,
+  velobase 1988-1999, 630g pair measured,
+  `1E5F0209-4650-4284-B009-14E4658367FA`, no links) -> 3534.
+- Left: 1205 / 1207 CS-7400-8 (8-speed, later; 1205's 1980 start is a
+  placeholder); 6146 SL-BS50 dated 1980; FC-6400 round (1790); 1788 "6400
+  Time Trial"; 1285 "600EX Ultegra" chainring. Out of scope: TL-RD10 /
+  FW30 / CT10 / CN20, grease, shoe sets, DF-M730, SQ-M730, accessories.
+
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
 - Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West

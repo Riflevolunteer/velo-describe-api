@@ -600,7 +600,7 @@ const COMPONENT_OVERRIDES = {
     // 1993 Bianchi (spoke counts stripped from the CSV).
     'campagnolo chorus': 3250, // Campagnolo FH-00CH / HB-00CH, Chorus
     'campagnolo veloce': 3279, // Campagnolo HB-00VL / HF-00VL, Veloce
-    'shimano ultegra': 3534, // Shimano FH-6400, 600 Ultegra
+    'shimano ultegra': 3534, // Shimano FH-6400-6/7 / HB-6400-F, 600 Ultegra
     'shimano rx100': 3579, // Shimano HB-A550 / FH-A550, RX100
     'shimano xtr': 3581, // Shimano FH-M900, XTR M900
     'shimano dx': 3542, // Shimano FH-M650 / HB-M650, Deore DX
