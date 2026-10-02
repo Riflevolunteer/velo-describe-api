@@ -609,7 +609,7 @@ const COMPONENT_OVERRIDES = {
     alloy: null, // generic word; substring-hits "Roval by Maillard alloy rear hub"
     // 1985 Raleigh (Sheldon Brown scan).
     'sansin "gyro" precision sealed bearing alloy small flange qr': 3601, // Sunshine Gyro-Master
-    'shimano 105 small flange alloy qr 36 hole sealed': 3526, // Shimano 105, 105 Golden Arrow
+    'shimano 105 small flange alloy qr 36 hole sealed': 3526, // Shimano HB-F105 / HB-R105, 105 Golden Arrow (small flange)
     // 1986 Cinelli (Ten Speed Drive Imports).
     'campagnolo record sf': 3241, // 322/101 C-Record small flange, fitted with the 1986 Record Corsa group
     'campagnolo victory sf': 3281, // Victory 422 (low flange)

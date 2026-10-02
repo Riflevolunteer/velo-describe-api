@@ -1745,6 +1745,45 @@ in the repo records them except this file.
   bare "Positron" rows untouched (PF rows inserted separately); 1197/
   1198 AX cassette rows untouched.
 
+## Shimano "New Shimano 600 EX — The High Energy Cycling Components" brochure — printed 10.1983 (disraeligears.co.uk, 8 scans)
+
+- `data_source` 71. Source:
+  https://www.disraeligears.co.uk/site/shimano_new_600_ex_-_brochure.html
+  (images `shimano_new_600_ex_-_brochure_scan_1..8`). Rear cover "(c) Oct.
+  1983 by Shimano Industrial Co., Ltd. 1083 FC/40M Printed in Japan XBC
+  IZM"; front "ENGLISH (U)". Launch of the 6207 New 600 EX (scans 4-6) and
+  the first 105 Golden Arrow (scan 7) for 1984; scan 8 advertises Dura-Ace
+  AX / EX / 10 and Deore XT only.
+- Nearly all parts were already in the DB (velobase plus 1984 dealer
+  notes). New rows (2, 1984-1984): HB-6207F / HB-6207R conventional 600EX
+  hubs (219 / 312g; the DB only had the FH-6207 freehub) and
+  BR-Z575-105 / BR-Z645-105 (338g, 43-57 / 49-64mm).
+- Corrections: 123 BB-3L11 / BB-3P11 had the cranks reversed (from our
+  1984 pass); the brochure table gives BB-3P11 for FC-S125 (119mm) and
+  BB-3L11 for FC-S105 (116mm), so the 1984 dealer reading is suspect.
+  3537 / 3538 FH-6207 year_from 1980 -> 1984 (6207 series is new here).
+- Retitled: 970 "Shimano BR-6207, 600EX (short reach)" -> "BR-6207-49,
+  600EX (short, 49 type)"; 971 "Shimano BR-6207, 600EX (standard reach)"
+  -> "BR-6207-57, 600EX (long, 57 type)"; 4454 "Shimano RD-A105, 105
+  Golden Arrow (long cage)" -> "RD-A105GS ..."; 2217 "Shimano MF-6207,
+  600EX (6sp)" -> "MF-6207-5 / MF-6207-6, 600EX"; 410 "Shimano BL-Z306,
+  105 Golden Arrow" -> "BL-Z306-105, 105 Golden Arrow"; 3526 bare "Shimano
+  105, 105 Golden Arrow" (Hubs, velobase 1980, 650g measured) -> "HB-F105 /
+  HB-R105, 105 Golden Arrow (small flange)" 1984-1986. 3526 kept rather
+  than merged because the 1985 Raleigh Supercourse spec (bike_spec 1959,
+  "Shimano 105 small flange alloy, Q.R. 36 hole sealed") and its generator
+  override point at it; the override comment was updated.
+- Descriptions rewritten from the brochure (measured weights kept): 4470 /
+  4469 RD-6207 (GS), 2481 FD-6207 (18T triple capacity), 6148 SL-6207
+  (BA / FA / BB / FB / FC), 1798 FC-6207, 127 BB-6207, 3961 PD-6207 (440g
+  pair, 31 deg), 420 BL-6207, 3090 HP-6207, 4452 RD-A105, 2466 FD-A105,
+  6132 SL-A105, 1781 FC-S125, 1780 FC-S105, 3085 HP-A105, 7474 (MF-6160 /
+  6161 also shown as the 105 freewheel).
+- Left: 958 BR-S105, 409 BL-H105, 7169 HB-F105 / FH-R105 (freehub
+  version, separate), 4453 RD-A105 dark; velobase 6208 rows dated 1980
+  (3539 FH-6208, 6149 SL-6208, 2218 MF-6208, 5891 "SP-6207?") need an
+  SIS-era source. No deletes.
+
 ## Shimano 1984 Bicycle System Components Dealer Catalog — June 1984 (Downloads/Shimano 84.pdf, 162 pages, scan, no text layer)
 
 - Colophon "(c) Jun. 1984 ... 0684 FC/10M". 160 numbered pages; PDF page =
