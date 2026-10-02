@@ -427,12 +427,12 @@ const COMPONENT_OVERRIDES = {
       { from: 1978, to: 1981, id: 2299 }, // Campagnolo Record 1052/NT (1978 - 1982, 3-hole narrow band)
       { from: 1982, id: 2300 }, // Campagnolo 0104007, Nuovo Record (clip-on, 3-hole standard band)
     ],
-    'new huret jubilee': 2395, // Huret Jubilee (4 holes in outer cage plate)
+    'new huret jubilee': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }], // Huret Jubilee 500: 5-hole cage (1972-76) / 4-hole (1977-80); 1973 Huret catalogue
     // 1974 Motobecane (values carry shifter asides after a dash/comma).
-    'huret jubilee': 2395,
+    'huret jubilee': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }],
     'simplex prestige stem shifter': 2583,
     // 1975 Motobecane.
-    'huret jubilee wide ratio': 2395,
+    'huret jubilee wide ratio': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }],
     'huret challenger stem shifter': 2388, // Huret Challenger (hinged clamping band)
     // 1981 Kalkhoff. Shimano rows are titled "Shimano FD-7200, Dura-Ace EX"
     // (part number between brand and group), so substring never fires.
@@ -522,7 +522,7 @@ const COMPONENT_OVERRIDES = {
       { from: 1982, to: 1984, id: 4126 }, // Nuovo Record v4 (w/ spring, hollow rivets)
       { from: 1985, id: 4127 }, // Nuovo Record v5 (w/hollow rivets, w/o spring fixing bolt)
     ],
-    'new huret jubilee': 4303, // Huret Jubilee (first version)
+    'new huret jubilee': 4303, // Huret Jubilee 2200 / 2252 / 2240 (first version)
     // 1974 Motobecane.
     'huret jubilee': 4303,
     'simplex prestige stem shifter': 4583,
