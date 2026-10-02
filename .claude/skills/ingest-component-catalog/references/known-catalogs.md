@@ -1836,6 +1836,35 @@ in the repo records them except this file.
   FH-6263 not listed here. Out of scope: CP protectors, FE fork ends,
   SM-HP10, SM-BT10, carded parts, clamps, cables, tools.
 
+## Shimano "New Dura-Ace — The Unlimited Challenge" brochure — printed 01.1985 (disraeligears.co.uk, 8 scans)
+
+- `data_source` 72. Source:
+  https://www.disraeligears.co.uk/site/shimano_new_dura-ace_-_brochure.html
+  (images `shimano_new_dura-ace_-_brochure_scan_1..8`). Rear cover "(c)
+  Jan. 1985 by Shimano Industrial Co., Ltd. 0185 FC/55M Printed in Japan
+  XBC IZM"; front "ENGLISH (U)". Launch of Dura-Ace 7400 with SIS; scans
+  2-5 essay and feature notes, 6-7 specs. FC-7400 46 / 54T rings
+  "available from March '85". Only the BR-7400-49 brake is listed; no
+  stem, seat post or chain.
+- year_from -> 1985: 991 BR-7400 (was 1988), 2510 FD-7400 (1987), 3970
+  PD-7400 (1987), 2221 MF-7400 6sp (1988), 7207 FH-7400-6/7 (1988), 7208
+  HB-7400-F (1988), 3560 (velobase 1980 placeholder; now 1985-1989).
+  Already 1985: 132, 434, 1819, 3099, 4503, 6164.
+- Retitled: 3560 "Shimano FH-7400, Dura-Ace 7400 (freewheel)" ->
+  "HB-7400-R / HB-7400-F, Dura-Ace (freewheel hub)" (its 1987 Giro link
+  sits beside an MF-7400 freewheel, so the conventional hub is right; the
+  hubs override comment was updated); 2510 "Shimano FD-7400, Dura-Ace 7400"
+  -> "FD-7400-B / FD-7400-F, Dura-Ace"; 6164 "Shimano SL-7400, Dura-Ace
+  7400 (6sp)" -> "SL-7400 (BCAI / FCAI / FCBI), Dura-Ace SIS (6sp)".
+- Descriptions from the brochure (measured weights kept): 991 (BR-7400-49
+  355g), 4503 RD-7400 (189g, 12-26T), 1819 FC-7400 (637g), 132 BB-7400
+  (314g), 3970 PD-7400 (372g pair, 34 deg), 434 BL-7400 (216g), 3099
+  HP-7400 (113g), 2221 MF-7400 (360g), 7207 (FH-7400-6 438g), 7208.
+- Deleted: 1206 "Shimano FH-7400-6, Dura-Ace (6sp Uni-Glide)" (Cassettes,
+  1990-91, bare, `27AD7396-BE5E-4150-BC80-C984E4C06CFC`) -> 7207.
+- Left: 1412 / 1413 bare 7400 Uniglide chains (1980-90), 3561 FH-7402,
+  1204 / 1205 CS-7400 cassettes dated 1980.
+
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
 - Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West

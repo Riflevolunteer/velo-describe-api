@@ -594,7 +594,7 @@ const COMPONENT_OVERRIDES = {
     // N105 is the 1050 series.
     'campagnolo c record': 3241, // Campagnolo 322/101, C-Record
     'campagnolo new victory': 3281, // Campagnolo Victory 422 (low flange)
-    'shimano dura ace': [{ from: 1984, to: 1989, id: 3560 }, { from: 1990, id: 3562 }], // FH-7400 / FH-7403 Hyperglide
+    'shimano dura ace': [{ from: 1984, to: 1989, id: 3560 }, { from: 1990, id: 3562 }], // HB-7400-R/F freewheel hub / FH-7403 Hyperglide
     'shimano 105': [{ to: 1989, id: 3524 }, { from: 1990, id: 3527 }], // HB-1050 / FH-1055 105SC
     'ofmega competizione pista': 3445, // Ofmega Super Competizione Track (high flange)
     // 1993 Bianchi (spoke counts stripped from the CSV).
