@@ -3314,6 +3314,54 @@ in the repo records them except this file.
 - Not done (user decision): year_from 1984 -> 1983 on the 15 rows that start
   in 1984 only from No. 61 — the book is undated.
 
+## SunTour "Bicycle Equipment Catalog" Edition No. 62 — printed 12.1984 (disraeligears.co.uk, 32 images)
+
+- `data_source` 90, label "SunTour Bicycle Equipment Catalog Edition No. 62
+  (printed 12.1984)". Source:
+  https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_no_62.html
+  (front cover, page_1..30, rear cover; image page N = printed page N).
+  Rear cover "Printed in Japan DEC. '84" -> 1985 model year. pp 3-24
+  components, 25-26 clothing / bags, 27-30 sprocket, gear capacity, spoke
+  and dropout charts.
+- New vs No. 61: new Cyclone (RD-6000 S / 6200 W / 6800 GT, FD-3300 / 3360 /
+  3700, LD-3700 / 3750 / 3800 / 3850, CB-7000 / 8000 sets, CW-7000, BB-400,
+  BH-2200, PL-5300); Le Pree (RD-6100 / 6700, FD-3400, RH-4900, LD-3900 /
+  3950 / 4000 / 4050); full XC group (RD-6300, FD-3500, LD-3600, CB-6000 /
+  6100 / 6200, MS-1400, SP-2000, BH-2300, RH-4800, PT-6300); Superbe Pro
+  FD-2060, LD-4600, CB-3500 set (CB-3600 calipers), SP-2100; Superbe
+  FD-3060; LX-10 LD-4100 / 4150; renumbered DLW LD-4200 / 4250, SLW
+  LS-3900, PUB-10 LD-4300, PUB-5 LS-4600; Trimec RD-6400 / 6600, FD-3600,
+  LD-4400 / 4450 / 4500 / 4550, LS-4700 / 4800; Mighty Click LS-2800;
+  DS-200 / 210 / 220 / 230; LS-4900.
+- Dropped vs No. 61 (left at year_to 1984): BL and VX groups, Superbe RH
+  hubs / CW-1000 / CW-3000 / BB-100 / 300 / PL-1000 / 3000 / HC-500,
+  RD-4800 / 5400, FD-1700 / 1100, LD-2900 / 2950, LS-1000, LD-1300,
+  LS-1300, LD-3500 MSM, LD-2800, Trimec RD-4600 / LS-3600 / LD-2750, CAP
+  RD-5100, BH-1700 / 2000, RH-4100 / 4300, US-6500, NW-5100, PT-6200.
+  1985 Raleigh "SunTour road VX quill" still links PL-1500 (year_to 1984,
+  left).
+- Retitled (old titles): 4739 "SunTour Cyclone" (RD, 1984, 210g) -> RD-6000,
+  Cyclone (S) (1985 Raleigh "Cyclone MKIII"); 2629 "SunTour FD-3300
+  Cyclone"; 4778 "SunTour XC" (RD) -> RD-6300; 4749 "SunTour LePree
+  (standard cage)" -> RD-6100, Le Pree (S); 3608 "SunTour LePree" (hub) ->
+  RH-4900; 1037 / 1036 CB-7100 / 8100 -> "(CB-7000 / CB-8000 set)"; 1050 /
+  1051 CB-3600 / 4100 -> "(CB-3500 / CB-4000 set)"; 1052 "CB-6100, XC" ->
+  "(CB-6000 set, roller cam)"; 6308 "LD-3600, XC" -> LD-3600 (LS-4400 /
+  LS-4500). Descriptions also on FD-3400, FD-3500, CB-6200, CB-7200,
+  CB-2200, CB-3200, CW-7000, CW-6000, BB-400, BH-2200, LD-3700 / 3800,
+  PT-6300, SP-2000, RH-4800.
+- Years: 17 velobase 1980-1980 placeholders -> 1985-1985; year_to 1984 ->
+  1985 on 62 re-listed rows.
+- New (26 rows, 1985): RD-6200, RD-6800, FD-3360, FD-3700, LD-3750 / 3850;
+  RD-6700, LD-3900 / 3950, LD-4000 / 4050; FD-2060, LD-4600, SP-2100;
+  FD-3060; LD-4100 / 4150 LX-10; LD-4200 / 4250 DLW; LS-3900 SLW; LD-4300
+  PUB-10; LS-4600 PUB-5; Trimec RD-6400, RD-6600, FD-3600, LD-4400 / 4450,
+  LS-4700 / 4800; LS-2800; BH-2300; DS series; LS-4900.
+- No deletes. Left: 4750 "LePree (standard cage) version 1", 4751 "LePree 3
+  Pulley System"; BMX ensemble and CB-5000 not inserted. Override comments
+  for 'suntour cyclone mkiii' updated; link counts unchanged. HR, SU-2, DLN,
+  PUB-M (1985 Raleigh) still not in any SunTour catalogue.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,

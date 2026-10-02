@@ -467,7 +467,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z204': 2543, // Shimano FD-Z204-HS
     'shimano z206': 2544, // Shimano FD-Z206-HS, Z-Series
     'shimano deore xt': 2497, // Shimano FD-M700, Deore XT (1983-86)
-    'suntour cyclone mkiii': 2629, // SunTour FD-3300 Cyclone (1984)
+    'suntour cyclone mkiii': 2629, // SunTour FD-3300, Cyclone (No. 61 / 62)
     'suntour superbe pro': [{ from: 1984, id: 2652 }], // FD-2000 endless band (1984-86); 1983 Bianchi stays unlinked as before
     'suntour ag tech': 2609, // SunTour FD-2800, AG Tech
     // 1986 Cinelli groupset fan-out.
@@ -564,7 +564,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z503 gs': 4545, // Shimano RD-Z503, Z-Series
     'shimano z505gs': 4546, // Shimano RD-Z505, Z-Series
     'shimano deore xt': 4490, // Shimano RD-M700, Deore XT M700 (Version 2, 1985-86)
-    'suntour cyclone mkiii': 4739, // SunTour Cyclone (1984 row)
+    'suntour cyclone mkiii': 4739, // SunTour RD-6000, Cyclone (S), No. 62 (Dec 1984)
     'suntour superbe pro': [{ to: 1983, id: 4766 }, { from: 1984, id: 4768 }], // 1979-83 row keeps the 1983 Bianchi pick; friction row 1983-86 for 1985 Raleigh
     'suntour arx': 4727, // SunTour aRX (short cage)
     // 1986 Cinelli groupset fan-out.
