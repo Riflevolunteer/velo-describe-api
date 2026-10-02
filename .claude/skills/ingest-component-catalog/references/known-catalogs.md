@@ -1148,6 +1148,27 @@ in the repo records them except this file.
   cable W-101 to W-642, tools X-101/102/401/701/702, chain-line and
   gear tables. No deletes.
 
+## Shimano "Bicycle Parts", English Edition reprint — printed 02.1973 (disraeligears.co.uk, 40 images)
+
+- `data_source` 63. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_parts_february_1973.html
+  (images are named `shimano_bicycle_parts_-_1973_*`: front_cover,
+  contents, page_1..page_36, inside_rear_cover, rear_cover). Imprint
+  "'73.2 MKS". A reprint of the Dec 1972 English edition above, same
+  36 pages, at higher resolution (1560px). This copy has handwritten
+  prices on the Crane page.
+- Changes vs Dec 1972: new **E-404 Dura-Ace front derailleur** (105g,
+  585-series parts), so E-304 is now Titlist only; L-262/L-261 (1in)
+  added to the Finger-Tip table; D-501 parts list adds a cable adjusting
+  barrel and spring. Everything else identical (the FR-900 track lock
+  ring, out of scope, is in both).
+- Retitled: 2506 "EA-100, Dura-Ace (First Generation)" -> "E-404 /
+  EA-100, Dura-Ace" (105g in both catalogues, the same part renumbered;
+  years 1973-76 kept). 7376 E302 reworded: E304 shown in the Dec 1972
+  Dura-Ace spread, Titlist only by Feb 1973. 7381 Finger Tip rewritten
+  with clamp sizes. 2507 EA-100 (Black) left at 1975-76 (no black parts
+  here either). No new rows, no deletes.
+
 ## Shimano "A Complete Line of Shimano" — printed 12.1975 (equusbicycle.com/bike/shimanocatalog75/, 20 spread PDFs)
 
 - First Shimano catalogue ingested (the Sept 1972 one above was added later). The Bicycle Info Project page
