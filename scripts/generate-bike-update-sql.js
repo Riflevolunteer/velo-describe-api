@@ -594,16 +594,16 @@ const COMPONENT_OVERRIDES = {
     // N105 is the 1050 series.
     'campagnolo c record': 3241, // Campagnolo 322/101, C-Record
     'campagnolo new victory': 3281, // Campagnolo Victory 422 (low flange)
-    'shimano dura ace': [{ from: 1984, to: 1989, id: 3560 }, { from: 1990, id: 3562 }], // HB-7400-R/F freewheel hub / FH-7403 Hyperglide
-    'shimano 105': [{ to: 1989, id: 3524 }, { from: 1990, id: 3527 }], // HB-1050 / FH-1055 105SC
+    'shimano dura ace': [{ from: 1984, to: 1989, id: 3560 }, { from: 1990, id: 3562 }], // HB-7400-R/F freewheel hub / FH-7403-HG Hyperglide
+    'shimano 105': [{ to: 1989, id: 3524 }, { from: 1990, id: 3527 }], // HB-1050 / FH-1055-HG 105SC
     'ofmega competizione pista': 3445, // Ofmega Super Competizione Track (high flange)
     // 1993 Bianchi (spoke counts stripped from the CSV).
     'campagnolo chorus': 3250, // Campagnolo FH-00CH / HB-00CH, Chorus
     'campagnolo veloce': 3279, // Campagnolo HB-00VL / HF-00VL, Veloce
     'shimano ultegra': 3534, // Shimano FH-6400-6/7 / HB-6400-F, 600 Ultegra
-    'shimano rx100': 3579, // Shimano HB-A550 / FH-A550, RX100
+    'shimano rx100': 3579, // Shimano FH-A550 / HB-A550-F, RX100
     'shimano xtr': 3581, // Shimano FH-M900, XTR M900
-    'shimano dx': 3542, // Shimano FH-M650 / HB-M650, Deore DX
+    'shimano dx': 3542, // Shimano FH-M650 / HB-M650-F, Deore DX
     'shimano xt': 3552, // Shimano FH-M737, Deore XT M737
     'shimano lx': 3544, // Shimano FH-M550, Deore LX
     alloy: null, // generic word; substring-hits "Roval by Maillard alloy rear hub"
@@ -657,7 +657,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105': [{ to: 1989, id: 953 }, { from: 1990, id: 960 }], // BR-1050 / BR-1055 105SC
     // First-gen Dura-Ace brake is the B-210/BA-100 side-pull (Dec 1972 and
     // Dec 1975 catalogues); no Shimano centre-pull is sold as Dura-Ace.
-    'shimano dura ace': [{ to: 1983, id: 989 }, { from: 1984, to: 1989, id: 991 }, { from: 1990, id: 993 }], // B-210/BA-100 side-pull / BR-7400 / BR-7403 SLR-S
+    'shimano dura ace': [{ to: 1983, id: 989 }, { from: 1984, to: 1989, id: 991 }, { from: 1990, id: 993 }], // B-210/BA-100 side-pull / BR-7400 / BR-7403-49 dual pivot
     // 1973 Bianchi (Italian catalog). "Corsa Mod. 68" is the Super 68; the
     // Mod. 51 is still fitted to the Rekord 74 despite the DB's 1951-61 dating.
     'universal corsa mod 68': 1082, // Universal Super 68
@@ -767,13 +767,13 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record 53 39t': 1482, // Campagnolo C-Record (1987-1994)
     'campagnolo chorus 53 39t': 1488, // Campagnolo FC-01CH, Chorus
     'campagnolo chorus 53 44t': 1488,
-    'shimano 105 53 39t': 1782, // Shimano FC-1055, 105SC
+    'shimano 105 53 39t': 1782, // Shimano FC-1055-SG, 105SC
     'shimano dura ace 53 39t': 1820, // Shimano FC-7402, Dura-Ace
     'shimano ultegra 53 39t': 1790, // Shimano FC-6400, 600 Ultegra
     'shimano rx100 52 42 30t': 1840, // Shimano FC-A550-T, RX100 (triple)
     'shimano xtr 48 36 26t': 1848, // Shimano FC-M900, XTR M900
     'shimano xtr 46 36 26t': 1848,
-    'shimano deore lx 46 36 26t': 1807, // Shimano FC-M550, Deore LX
+    'shimano deore lx 46 36 26t': 1807, // Shimano FC-M550-SG, Deore LX
     // 1985 Raleigh (Sheldon Brown scan).
     'ofmega "mistral" 52 42 170mm': 1699, // Ofmega Mistral
     // 1986 Cinelli groupset fan-out.
@@ -870,7 +870,7 @@ const COMPONENT_OVERRIDES = {
   'Shifting Brake Levers': {
     // 1993 Bianchi (integrated levers; the Shifters label maps to both
     // categories). No Record or Chorus Ergopower rows of this era in the DB.
-    'shimano dura ace sti': 6365, // Shimano ST-7400, Dura-Ace 7400
+    'shimano dura ace sti': 6365, // Shimano ST-7400, Dura-Ace (Dual Control)
     'shimano ultegra sti': 6358, // Shimano ST-6400, 600EX Ultegra
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC
   },

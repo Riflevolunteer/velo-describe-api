@@ -2259,6 +2259,79 @@ in the repo records them except this file.
   out of scope tools TL-HG15 / RD10 / PD40 / FW30 / FC10 / CN20 / CT10 /
   FC30, SQ-M730, DF-M730, accessories.
 
+## Shimano "Bicycle System Components" 1991 dealer manual, European edition — printed 08.1990 (disraeligears.co.uk, 88 images)
+
+- `data_source` 82, label "Shimano Bicycle System Components 1991, European
+  edition (printed 08.1990)". Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_component_-_91.html
+  (front cover, introduction, contents, page_001..084 = printed pages 1-84,
+  rear cover). Rear cover "(c) Aug. 1990 by Shimano Industrial Co., Ltd.
+  0890 Printed in Germany XBC IZM", Shimano Europa GmbH plus European
+  distributors: European edition, 1991 model year. Groups get individual
+  spec pages for road (Dura-Ace, Track, Ultegra, 105SC) and XT / DX / LX;
+  RX100, Exage EX / LX, Nexus, 200GS / 100GS and Tourney are spec tables.
+- New for 1991 (manual's own lists, p14 / p48): ST-7400 Dual Control (first
+  road STI), BR-7403-49 dual pivot, SL-BS50-8; BR-6403-49 / BL-6403 Super
+  SLR, FC-6400-SG; PD-M737 SPD (+ SH-M100 shoe), ST-M092 Servo-Wave SLR
+  Plus, BR-M734, CN-HG91; BR-M650 / M651 (DX); ST-M050-S 3-finger,
+  BR-M352 short-frame rear (Exage LX); BL-M201 / BR-M201 (200GS); 100GS
+  group (Europe only); Nexus derailleur road / city group (RD-E700,
+  RD-E500-7, FC-E700 / R500, FH-R700 / R500 etc.; not the later hub-gear
+  Nexus).
+- Not seen vs the 1990 manual (left alone, regional edition): CS-HG20,
+  HB-RA50, BL-M050, RD-L554, RD-R552 (only named in a note), RD-TY10,
+  FD-Z260-A / Z261-A / Z254 / Z255, CN-UG50 / UG30, SL-M301, SL-S460,
+  FD-AX50 / 55, FC-M730 Biopace.
+- Catalogue misprints: 300EX table weight line says "SL-A250-FCAI" (lever
+  is SL-A400); p48 calls ST-M060 three-finger (p64: 4-finger).
+- New groups: `component_group` 312 "Nexus", 313 "100GS" (brand 51,
+  1991-1991).
+- year_to -> 1991 on 93 rows (all listed rows ending before 1991: Dura-Ace
+  FD-7403, SL-7400 / 7401, BR-7402-49, CS-7400-6/7/8, FH-7400, FH-7402-8,
+  HB-7400 rows, PD-7401, BB-7600, SS-7600; Ultegra FC-6400-BP, FH-6401,
+  PD-6400 / 6401, SL-BS50; BL-1055, BR-1055; PD-A550; Exage EX; XT / DX /
+  LX carry-overs; all Exage LX, 200GS and Tourney rows; HG chains /
+  cassettes, CS-1000, HP-R500). 985 BR-M734 year_from 1993 -> 1991.
+- Retitled (old titles): 993 "Shimano BR-7403 SLR-S, Dura-Ace"; 967
+  "Shimano BR-6403, 600 Ultegra"; 418 "Shimano BL-6403, 600 Ultegra"; 6365
+  "Shimano ST-7400, Dura-Ace 7400"; 3562 "Shimano FH-7403 / HB-7400,
+  Dura-Ace 7400 (Hyperglide Rear)"; 7565 "Shimano FH-6401, 600 Ultegra
+  (7-speed HG)"; 3527 "Shimano FH-1055 / HB-1055-F, 105SC"; 3579 "Shimano
+  HB-A550 / FH-A550, RX100"; 3572 "Shimano FH-HG50, Exage 500EX"; 3542
+  "Shimano FH-M650 / HB-M650, Deore DX"; 3545 "Shimano HB-M550, Deore LX";
+  1789 "Shimano FC-6400-BP, 600 Ultegra (Biopace double, LD type)" (-> also
+  FC-6400-SG); 1782 "Shimano FC-1055, 105SC"; 1838 "Shimano FC-A550,
+  RX100"; 1832 "Shimano FC-A500, Exage 500EX"; 7576 "Shimano FC-A400,
+  Exage 400EX"; 1807 "Shimano FC-M550, Deore LX" (BB now BB-M550); 7587 /
+  7591 / 1831 FC-M500 / M400 / M300 (-> -SG); 7600 "Shimano FC-M200 /
+  FC-M201, 200GS"; 1809 "Shimano FC-MT60, Deore MT60 Series"; 7577
+  "Shimano ST-M090 / ST-M091, Deore XT Rapidfire" (+ ST-M092); 7585
+  "Shimano ST-M050 / BL-M050, Exage 500LX Rapidfire" (-> ST-M050 /
+  ST-M050-S); 7590 "Shimano BR-M351, Exage 400LX (cantilever)" (+ BR-M352);
+  7598 "Shimano BR-M200, 200GS (cantilever)" (+ BR-M201); 7599 "Shimano
+  BL-M200, 200GS" (+ BL-M201); 6183 "Shimano SL-M453, Mountain LX"; 7632
+  "Shimano BL-M451-A, Mountain LX / Exage Mountain"; 7637 "Shimano
+  BL-M250, Exage Country"; 7222 "Shimano BL-M350 / BL-M351-B, Exage
+  Trail"; 426 "Shimano BL-MT62, Deore II (4-finger)"; 2520 "Shimano
+  FD-A300-B / FD-A300-A, 300EX"; 7209 "Shimano MF-Z012, Z-Series".
+  Descriptions rewritten on these plus 985, 129, 442.
+- New (24 rows, 1991-1991): Nexus RD-E700, RD-E500-7, FD-E700-B / F,
+  SL-E500-7, SL-E700-7, BR-E700 / R500 (+ -L), BL-E700-EM / NL / BL-R500,
+  FC-E700 / R500 (W / S), FH-R700 / R500, PD-M400; 100GS RD-M100-GS,
+  FD-M100-B, ST-M010, SL-M100, BR-M100, BL-M101, FC-M100-SG; BR-M650,
+  BR-M651, SL-M300-B / C, BB-M550, BB-UN10 (no group), CN-HG91, PD-M737.
+- Deleted: 1207 "Shimano CS-7400-8, Dura-Ace 7400 (Uniglide)" (Cassettes,
+  1993-1994, velobase, `C0B6F642-AD17-4F0E-B30F-68FCC49751E3`), bare
+  duplicate of 1205; 443 "Shimano BL-A251 & BL-A25, Exage Motion w/
+  extension lever" (Brake Levers, 1989-1990, velobase,
+  `FDE17763-A1AB-4E33-B0D2-52CB9CFA0C27`), merged into 442 (extension lever
+  option noted). Neither had links or overrides.
+- Left: 1790 FC-6400 (generic, linked); 1839 FC-A550 white, 1840 FC-A550-T;
+  6355 ST-R500; 1810 FC-M730 Biopace; override at line 660 still picks 993
+  BR-7403 from 1990 although the brake is 1991 (no 1990 bikes affected yet).
+  Out of scope: shoes SH-M100 / R100 / T100, SH-CV10, SQ-M730, DF-M730,
+  SM-CS50 / ST74 / SP55 / MT55, tools.
+
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
 - Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West
