@@ -1864,3 +1864,30 @@ in the repo records them except this file.
   (2567, 6240), and 4617, where the weight anchors the SP wording.
   Weights on catalogue-inserted rows (e.g. 7281-7284, 7305) are
   themselves catalogue figures, not velobase ones.
+- **Description/title sweep (2026-10-02, Simplex + Shimano 1972, after
+  the "velobase is not the authority" rule).** 54 rows that had collected
+  stacked "1978 catalog: ... Sep 1981 catalog: ..." fragments were
+  rewritten into one consolidated description each (what the part is,
+  then each figure with its catalogue year). Dropped: merge audit notes
+  (the deleted rows are recorded above), velobase "(Spec)" weights that
+  repeated a catalogue figure, and stale qualifiers. Kept: measured
+  "(Actual)"/"(avg)" weights and "aka Super LJ ..." names. 4615 S0 gained
+  the Sep 1981 S0/P figures (250g, 28t) that hadn't fit before. 6181 was
+  also taken out of group 141 "Light Action". Old titles, so later
+  sources using them can still be matched:
+  - Shimano: 4498 "Crane D-501" -> "D500 / DB-100, Crane"; 4499 "Crane GS
+    D-510" -> "D510 / DB-110, Crane G.S."; 4439 "Lark-W" -> "D280 /
+    DD-300, Lark-W"; 4437 "D-600 Titlist" -> "D600, Titlist"; 4438
+    "D-610 Titlist-GS" -> "D610, Titlist G.S."; 4444 "Eagle-SS" -> "D310,
+    Eagle S.S."; 2461 "Thunder Bird GTO" -> "E111, Thunder Bird G.T.O.";
+    6163 "L-600 Fingertip Control Barcons" -> "L600, Bar-End Control";
+    6181 "L-422, Light Action" -> "L422, G.T. Console (5D)"; 6124/6120
+    "Super Shifter (single)/(twin)" (originally both "Super Shifter") ->
+    "L251, Super Shifter (single)" / "L252, Super Shifter (twin)".
+  - Simplex: 2549 "302" -> "SJ A302"; 2576 "SJ A223 (triple)", 7264 "SLJ
+    A423 (triple)", 2574 "SJ A103 (Triple)" -> suffix dropped; 4617 "SX
+    810 T" -> "SX810 T"; 5904 "SLJ 6164" -> "SLJ6164"; 6209 "(Zytel
+    levers, square finger pads)" -> "S3448"; 6231 "MB Silver Range" ->
+    "MB2600"; 6212 "SJ (2nd type)" -> "SJ6311"; 6240 "SLJ (4th type,
+    black anodized)" -> "SLJ5057 (black anodized)"; 6239 "SLJ (4th
+    type)" -> "SLJ5057"; 6216 "SXP (2nd type; stem mount)" -> "SXP 4506".
