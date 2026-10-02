@@ -1168,6 +1168,10 @@ in the repo records them except this file.
   Dura-Ace spread, Titlist only by Feb 1973. 7381 Finger Tip rewritten
   with clamp sizes. 2507 EA-100 (Black) left at 1975-76 (no black parts
   here either). No new rows, no deletes.
+- Follow-up retitle: 3553 "Dura-Ace High Flange First Gen  (Black)"
+  (double space) -> "HA-200, Dura-Ace large flange (Black)". It uses the
+  1975 code only, since black parts first appear in Dec 1975. 620g pair
+  measured kept.
 
 ## Shimano "A Complete Line of Shimano" — printed 12.1975 (equusbicycle.com/bike/shimanocatalog75/, 20 spread PDFs)
 
