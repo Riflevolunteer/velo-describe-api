@@ -955,7 +955,7 @@ const COMPONENT_OVERRIDES = {
     'iris 1 2 x 3 32': 1369, // Iris (1973 Zeus)
     // 1981 Kalkhoff: no chain row is titled EX; the CN-7100 Uniglide is the
     // Dura-Ace chain of the EX era.
-    'dura ace ex': 1411, // Shimano CN-7100, Dura-Ace (Uniglide)
+    'dura ace ex': 7472, // Shimano QA-110 / CN-7100, Dura-Ace UG (was 1411, merged 1981 catalogue)
     // 1993 Bianchi.
     rohloff: 1396, // Rohloff SLT 99 (Road)
     'shimano dura ace chain': 1414, // Shimano CN-7401, Dura-Ace 7400

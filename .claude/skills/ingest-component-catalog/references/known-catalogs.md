@@ -1524,6 +1524,138 @@ in the repo records them except this file.
   parts KA-/KB-, KD-100, chain/freehub/spoke protectors GP-/PF-/PB-/PC-,
   WE-100 and W- cables, outer bands, UL-100, tools, small parts.
 
+## Shimano "Bicycle System Components 1981" — printed 12.1980 (disraeligears.co.uk, 64 images)
+
+- `data_source` 69. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_-_1981.html
+  (images `shimano_bicycle_system_components_1981_{front_cover,page_01..
+  page_62,rear_cover}`; image page_NN = printed page NN). Rear cover
+  "(c) Dec. 1980 by Shimano Industrial Co., Ltd. 1280 C1/15M Printed in
+  Japan. XBC NP". The 1981 model-year catalogue.
+- **First catalogue with the 1980s code system** (RD-7200, SL-QP10,
+  HB-AQ11...). It prints "Old No." for EF-100 -> FD-AT11, DD-100F ->
+  RD-LK10, QA-200 -> CN-UG20, LB-170 -> SL-QP10, LD-500 -> SL-BC10 and
+  WE-100 -> 840 999xx colour casing. That confirms the renumbering was
+  one-for-one. Other pairs are matched on spec and weight; LE-150 ->
+  SL-C310 and BB-250 -> BR-TS30 / BR-MX10 are the least certain and say
+  "probably" in their descriptions.
+- **Merge policy (user-approved):** each 1975-79 code row and its 1980s
+  code row became one "OLD / NEW" row, kept on the row with catalogue
+  detail, with years the union of both and measured weights kept, as for
+  Dura-Ace first gen and the Dec 1978 EX pass. Kept separate (one-to-many
+  or unclear): EA-100 and EA-200 vs FD-7100 2509; GA-200 / GA-210 vs
+  FC-7110 1818; GB-100 vs BB-7500; FF-300 vs MF-FF51 / 61; FA-200 vs
+  SS-7500 alloy / steel; MB-120 DEL-77 vs BL-HD85; QA-500 vs CN-6130.
+- Merged survivors: 7427 DA-100 / RD-7100 (1977-84), 4501 DA-100 / RD-7100
+  (Black), 4462 DC-200 / RD-6100 (1975-82), 7110 DC-210 / RD-6101, 4443
+  DH-500 / DH-510 (RD-RS12 / RD-RS11), 7432 DC-400F / RD-401F, 4442 DD-510
+  / RD-SL10, 4527 DG-200 / RD-P210, 4528 DG-300 / RD-P240, 7435 EC-600 /
+  FD-6100 (1977-82), 7113 LD-500 / SL-BC10, 7440 GA-110 / FC-7000, 1812
+  GA-100 / FC-7500, 7452 HA-310 / HB-7020, 7124 HA-300 / HB-7520, 3556
+  (HA-100 / HB-7110), 3554 (HA-200 / HB-7120), 7137 HC-210 / HB-AQ11, 3522
+  HC-110 / HB-AQ21, 7138 HC-200 / HB-AN11, 7139 HC-100 / HB-AN21, 2219
+  F-100 / FA-100 / MF-7150, 2220 FA-110 / MF-7160, 7474 FD-1x0/2x0
+  (MF-6150/6160/6151/6161), 7461 FA-210 / SS-7000, 2711 TB-100 / SG-3S20,
+  7127 BE-100 / BR-6102, 7449 QA-100 / CN-7000, 7472 QA-110 / CN-7100, 7451
+  QA-400 / CN-6110, 7473 QA-410 / CN-6120, 7450 QA-200 / CN-UG20, 7126
+  K-902 / UA-200 / HP-7500, 3098 K-901 / UA-100 / HP-7100.
+- Merged/deleted (30): 4502 "Shimano RD-7100 (black), Early EX (version
+  2)" (`ECB6CF6D-DBE8-4CE8-9B49-BDDCC3845520`); 4463 "Shimano RD-6100 600"
+  (`173AD886-F397-48AB-86CF-9FE5CB1F9BFB`); 4464 "Shimano RD-6101 600 GS"
+  (`DFCF6C60-DA1D-4458-B6F1-076456A89217`); 7161 "Shimano RD-RS11 /
+  RD-RS12, Shimano-RS" (1984 pass, `205284ee-bc3e-11f1-a2df-02fea3763e8d`);
+  4445 "Shimano RD-401F, 400FF" (`D225EEAB-08DE-42E7-9B3C-74A24B9406E6`);
+  4448 "Shimano RD-SL10, Skylark" (`EE565BD7-0867-4295-A3CD-FD614581C2C9`);
+  7160 "Shimano RD-P210, Positron-II" (1984,
+  `205280b7-bc3e-11f1-a2df-02fea3763e8d`); 7159 "Shimano RD-P240,
+  Positron-400" (1984, `20528286-bc3e-11f1-a2df-02fea3763e8d`); 2475
+  "Shimano FD-6100 600 Uniglide" (135g,
+  `FC033078-EA63-4FEA-8AA6-870FD61F935D`); 7166 "Shimano SL-BC10, 600
+  (bar-end)" (1984, `20528d16-bc3e-11f1-a2df-02fea3763e8d`); 1817 "Shimano
+  FC-7000, pitch 10 crankset" (`1902059B-9843-4F96-A3E7-4E95E1699521`);
+  1822 "Shimano FC-7500, Dura-Ace" (`3AB24023-7A36-4A22-840D-D58A816B04F9`);
+  3557 "Shimano HB-7020, Dura-Ace 10" (520g,
+  `4C2227BA-F279-4AE9-B9FD-901E4D72ED74`); 3564 "Shimano HB-7520, Dura-Ace
+  Track" (553g, `E6906EDD-893C-4D91-879D-11946F668D3B`); 3558 "Shimano
+  HB-7110, Dura-Ace 7100 (low flange)"
+  (`B73F469B-9339-4A05-B861-DDAB9A979CFA`); 3559 "Shimano HB-7120,
+  Dura-Ace 7100 (high flange)" (`AC793FA1-3037-4684-8BCF-30F46636382D`);
+  7167 "Shimano HB-AQ11 / HB-AQ21 (alloy quick release)" (1984,
+  `20527a56-bc3e-11f1-a2df-02fea3763e8d`); 7168 "Shimano HB-AN11 /
+  HB-AN21 (alloy nut type)" (1984, `205277c2-bc3e-11f1-a2df-02fea3763e8d`);
+  7151 "Shimano MF-7150 / MF-7160, Dura-Ace (freewheel)" (1982,
+  `20523f3f-bc3e-11f1-a2df-02fea3763e8d`); 2216 "Shimano MF-6151, 600
+  (early model)" (422g, `156862F1-295B-4F0B-8FF2-8F8D1C34581F`); 6385
+  "Shimano SS-7000, Dura-Ace 10" (`5595B61E-00F3-4FD4-8C08-BFD1E18E642E`);
+  7172 "Shimano SG-3S20 three-speed hub" (1984,
+  `20528900-bc3e-11f1-a2df-02fea3763e8d`); 968 "Shimano BR-6102, 600EX
+  (cantilever)" (`37540293-D654-4C28-AAF5-B303E3DF43ED`); 1410 "Shimano
+  CN-7000, Dura-Ace 10" (`969276F0-B95B-4808-A099-955C04F48006`); 1411
+  "Shimano CN-7100, Dura-Ace (Uniglide)"
+  (`2B28CCDD-B143-4F4F-BBEA-B46563A0006B`; bike_spec 791 and the bike
+  generator's chains override `'dura ace ex'` moved to 7472 first); 1405
+  "Shimano CN-6110, 600 Uniglide" (`82999CC3-7448-4501-AE51-511BDFBDB2F9`);
+  7153 "Shimano CN-6120, 600 UG chain" (1982,
+  `2052394f-bc3e-11f1-a2df-02fea3763e8d`); 7154 "Shimano CN-UG20,
+  Uniglide-II chain" (1982, `20523aed-bc3e-11f1-a2df-02fea3763e8d`); 3101
+  "Shimano HP-7500, Dura-Ace (Track)" (136g,
+  `7F607DA6-A73A-4DB9-9B15-3CE4A8C3DF55`); 7152 "Shimano HP-7100, Dura-Ace
+  (road head parts)" (1982, `20523e68-bc3e-11f1-a2df-02fea3763e8d`).
+- Retitled with the 1981 code added, year_to -> 1981: 7433 DD-100F /
+  RD-LK10, 4447 DE-100F / RD-EG10, 7462 DG-210 / RD-P21E, 7493 ED-400 /
+  ED-410 (FD-FE12 / FD-FE11), 7114 LB-180 / SL-QB11, 6122 LB-150 /
+  SL-QS10, 7115 LB-170 / SL-QP10, 7116 LB-100 / SL-AL10, 7118 LB-400 /
+  SL-FT10, 7497 LF-200 / SL-LE10, 7496 LC-600 / SL-LS10, 7495 LF-100 /
+  LF-150 (SL-AT21), 6186 LB-700 / SL-P221, 7436 LC-410 / SL-P211, 7437
+  LD-600 / SL-P241, 7122 LD-300 / SL-3S30, 7123 LD-200 / SL-3S20, 7478
+  LE-150 / SL-C310, 7498 GC-410 / FC-6210, 7507 HF-700 / HF-710
+  (FH-6II10 / FH-5II10), 7141 HD-100 / HB-SN11 (668g), 3578 HF-500 /
+  FH-MX60 / FH-MX40, 7475 FG-100 / MF-1500 / MF-1510, 7136 FB-100 /
+  SF-1100, 2712 TC-100 / SG-3C20, 7508 CD-100 / CB-D110, 7458 BB-230 /
+  BR-TS40, 7459 BB-120 / BR-TC30, 1010 BB-100 / BR-TC10, 1014 BB-250 /
+  BR-TS30 / BR-MX10, 7134 MB-110 / BL-D500, 7133 MB-100 / BL-HD30, 7485
+  MS-100 / BL-LM10, 7131 MD-100 / BL-PL10. Titles only (years already
+  later): 6153 adds SL-AT23, 1793 "(MD type)", 7170 FH-Q610 / FH-Q510,
+  7171 FH-K610 / K510 / N610 / N510, 3521 HF-600 / HF-610 (FH-6A10 /
+  FH-5A10). Also 2509 "FD-7100, Dura-Ace 7100" -> "FD-7100, Dura-Ace"
+  1981-1981 (was velobase 1970-1980), 1804 "FC-SL24, Selecta B1" ->
+  "Selecta-T" to 1981. All old titles are the ones listed in the Dec 1978
+  section or in the deletes above, plus: "Shimano DA-100, Dura-Ace",
+  "Shimano RD-7100 (black), Early EX (version 1)", "Shimano DC-200, 600",
+  "Shimano DC-210, 600 GS", "Shimano DD-510, Sky Lark", "Shimano DG-200,
+  Positron-II", "Shimano DG-300, Positron 400", "Shimano EC-600,
+  Shimano-600", "Shimano GA-110, Dura-Ace 10", "Shimano GA-100, Dura-Ace
+  track chainwheel", "Shimano HA-310, Dura-Ace 10", "Shimano HA-300,
+  Dura-Ace track hubs", "Shimano HC-210 / HC-200 / HC-110 / HC-100 ...
+  hub", "Shimano FA-110, Dura-Ace", "Shimano FA-210, Dura-Ace 10",
+  "Shimano TB-100 Three Speed Hub", "Shimano TC-100 Three Speed Coaster
+  Brake", "Shimano BE-100, cantilever brake", "Shimano QA-100 / QA-110 /
+  QA-400 / QA-410 / QA-200 ...", "Shimano K-902 / UA-200, Dura-Ace
+  track", "Shimano K-901 / UA-100, Dura-Ace", and the bare-code titles of
+  the B rows.
+- year_from -> 1981 (DB had 1982 or 1984): 4478 / 4479 RD-DE10 / DE20,
+  2486 FD-DE10, 1805 / 1806 FC-DE, 7150 BB-DE30, 1818 FC-7110, 7178
+  BB-6210, 7156 RD-PF10 / PF20, 7158 RD-PF40, 7157 SL-PF13, 7155 MF-FF51 /
+  61, 7176 MF-FF50, 7177 FC-FF35, 7173 SG-2S10.
+- New (30 rows, 1981-1981): RD-PF1E; SL-PF41, SL-PF37 Digital-6,
+  SL-PF35 / PF36; BR-TS60, BR-MX20; BL-D800 / D805 DEL-80, BL-HD85 / HD80,
+  BL-LF10; FC-FF14, FC-FF30 / FF32, BB-FF30, BB-FF10; BMX DX / SX (group
+  156): RD-MX10, FD-MX20, FD-MX10, SL-MX20, SL-MX10, SL-2S21, FC-MX62,
+  FC-MX61, BB-MX60, FC-MX10, PD-MX10 / MX11, FH-MX20, FH-MX10 / MX12,
+  FH-MX15, BL-MX20, BL-MX10, SP-MX20.
+- Not listed in 1981 (stay ending 1979): Titlist, Tourney DB-, 500, 400
+  and Lark-Mini / Shimano-100 rears; EC-500 / 400, EB-200, ED-300; all of
+  Positron-III; LE-410 / 420, LB-600, LB-300 / 200 / 160; Selecta-A / B /
+  C, OCTA-SS, GC-100 / 300; BB-300 / 400, MB-200 / 210, BB-240, Radiax,
+  V-Brakes, CC-100, HE- freehubs, NJ-100.
+- Left: Takagi JT-MX parts (another brand); RD-MX60 / MX50 chain
+  tensioners; 3102 HP-7500 (NJS) kept separate; BB-SL31 128 is titled
+  "Adamas AX" but is the Selecta-T BB here (untouched); QA-500 Link Lock
+  vs CN-6130 left separate.
+- Bike follow-up (not done): COMPONENT_OVERRIDES unlinks "Shimano 600"
+  rear / front derailleurs from 1979; 4462 DC-200 / RD-6100 and 7435
+  EC-600 / FD-6100 now run to 1982, so the 1981 Kalkhoff specs could link.
+
 ## Shimano 1982 Bicycle System Components — printed 01.82 (Downloads/Shimano1982/, 44 spread JPEGs, blz01-45, no 44)
 
 - 1200x858 spreads bound to shimano82.pdf; the Read tool dropped pages
