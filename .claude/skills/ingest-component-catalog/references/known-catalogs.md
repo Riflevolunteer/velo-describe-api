@@ -2008,6 +2008,25 @@ in the repo records them except this file.
   post QR, DF-M730 chain deflector, tools TL-RD10 / CT10 / FW30 / CN20,
   grease, shoe sets, accessories. No deletes.
 
+## Shimano "600 Ultegra" launch brochure — printed 10.1987 (disraeligears.co.uk, 8 scans)
+
+- `data_source` 79. Source:
+  https://www.disraeligears.co.uk/site/shimano_600_ultegra_-_brochure.html
+  (images `shimano_600_ultegra_-_brochure_scan_1..8`). Rear cover "(c) 1987
+  by Shimano Industrial Co., Ltd. 1087 SM/7M Printed in Japan AX IZM";
+  front "English (U)". US launch of 600 Ultegra 6400 for 1988, two months
+  before the Dec 1987 Complete Line; confirms the 1988 starts already in the
+  DB. Parts: RD-6400, SL-6400 (BCAI / FCAI / FCBI / FAI), FD-6400-B / F,
+  PD-6400, HB-6400-F / FH-6400-7, HP-6400, FC-6400-BP + BB-6400,
+  BR-6400-49 / 57, BL-6400 / 6401 / 6402 (no stem, seat post or chain).
+- No year changes, new rows or deletes. Retitled 6144 "Shimano SL-6400-BCAI
+  / SL-6400-FCAI, 600 Ultegra SIS (6 / 7sp)" -> "SL-6400 (BCAI / FCAI / FCBI
+  / FAI), 600 Ultegra SIS (6 / 7sp)". Descriptions on 13 rows now cite
+  "(Oct, Dec 1987)" and add: FH-6400 647g with 7-sp 12-21T sprockets;
+  CS-6400-7 spacer widths (3.30 / 3.1mm, 6-sp 3.65mm); BR-6400-57 "normal
+  reach"; BL-6400 family 260g pair (brochure) vs BL-6401 328g (Dec 1987),
+  both kept; PD-6400 5 deg more clearance; HP-6400 French M25 thread.
+
 ## Shimano "Bicycle System Components — The Complete Line", US edition — printed 12.1987 (disraeligears.co.uk, 36 scans)
 
 - `data_source` 76. Source:
