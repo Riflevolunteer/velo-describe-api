@@ -1371,6 +1371,64 @@ in the repo records them except this file.
   holder KD-100, cable parts KA/KB, spoke protectors PB-, cables W-,
   outer bands, tools XA/XB, small parts.
 
+## Shimano "Bicycle System Components" — printed 05.1978 (disraeligears.co.uk, 52 images)
+
+- `data_source` 67. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_may_1978.html
+  (images are named `shimano_bicycle_system_components_1978_*`:
+  front_cover, page_1..page_50, rear_cover; printed page N = page_N).
+  Rear cover "(c) 5/1978 by Shimano Industrial Co., Ltd. - CC II 0578
+  XBC NP". The 1978 model-year successor to Feb 1977, same layout,
+  1560px scans.
+- year_to -> 1978 (about 105 rows): nearly every row still current in
+  Feb 1977, including the Dura-Ace Black Series (pictured p.14), Dura-Ace
+  10, 600, 500, 400, Titlist DB-600/610, Tourney DB-400/410, FF, PPS
+  DG-200/300, the LB- levers, hubs, Tourney BB-240/230/120/100, and the
+  coaster and 3-speed hubs. 7117 LB-300 Super Shifter (ended 1976) is
+  listed again, so it now runs to 1978 with an "absent Feb 1977" note.
+- Not listed in 1978 (they stay ending 1977): DG-100 Positron, LB-500,
+  LB-510, LE-400 (replaced by LE-410), MA-100 (replaced by MA-200) and
+  its black version, Tourney BB-110/200/210, FC-600 (replaced by the
+  FD- 600 UG freewheel).
+- Capped: 4539 DB-300 and 4540 DB-310 Tourney year_to 1979 -> 1976.
+  They are absent in both Feb 1977 and May 1978, where DB-400/410 replace
+  them. 4539 still carries the 1987 Strada "Shimano Tourney" bike_spec
+  1390, a generic name match for the bike skill to fix.
+- Descriptions rewritten with 1978 weights or notes: DA-100 (174g,
+  13/26T), ED-300 (179g), BB-300 (159/157g), HA-310 (225/295g), HA-300
+  (rear 313g), HE-400 (480g), HD-100 (710g pair), HA-100/HA-200 (6-speed
+  rears 310/335g, 126mm), DC-200 (235g), DC-110 (325g), MB-200; 2506
+  EA-100 is printed as the "Crane" front (110g); 7144 GB-100 now serves
+  GA-200 "A Type", GA-210 "B Type" and GA-110.
+- **Code reuse:** MC-100 was the 1975 Tourist Lever (7132) and is a
+  resin V-Brake Lever in 1978, so it was added as a separate row (7486)
+  and both rows note the reuse.
+- New (29 rows, 7462-7490, all 1978-1978): DG-210 Positron-EM, DG-220
+  Positron-II 32, DC-300 Shimano-100, DD-400 Lark-Mini; GA-210 Dura-Ace B
+  Type, GC-300 600 triple, GC-110 600 5-arm, GB-300, GF-440, GG-320;
+  QA-110 Dura-Ace UG, QA-410 600 UG, FD-100/200/110/210 600 UG freewheel,
+  FG-100 Uniglide freewheel; LE-410, LE-610, LE-150; BB-500 500
+  centre-pull, BF-100 Radiax, BV-100 V-Brake C, BV-200 V-Brake M; MA-200,
+  MB-120 DEL-77, MS-100 Soft LM, MC-100 V-Brake Lever; HD-600, HE-410,
+  HE-310; NJ-100 Just Seat (Seat Posts).
+- Merged/deleted: 4460 "DC-110, 500GS" (velobase, 1970, 340g,
+  `2DBEE58D-17BD-4DDD-9BED-0333DB446193`) -> 7109 DC-110; 414 "Shimano
+  600" (Brake Levers, bare, 1975-77,
+  `6AC1A073-CF34-4E4F-AD67-54BE388816A9`) -> 7130 MB-200.
+- **Not deleted (the bike_spec guard blocked it):** 4461 "Shimano 600"
+  (Rear Derailleurs, velobase 1975, 236g,
+  `9422ABE1-A7B3-4622-9DAB-EF4DEC646ED5`) was planned for merging into
+  4462 DC-200 (236g matches DC-200's 235g). The pre-check missed that it
+  has 5 bike_spec links: 1981 Kalkhoff Amateur 05 S / Touring 05 S /
+  Touring 55 S and 1987 Bianchi Limited / Squadra, all "Shimano 600" or
+  "600 SIS". Those are generic name matches to a 1975 derailleur and
+  wrong for those years, so repointing them to DC-200 wouldn't help;
+  this is for the bike skill. 4462 already carries 4461's 236g.
+- Out of scope: UL-100 handle lock, fork ends NB-200 (new)/NB-100/120,
+  NC-100, ND-100, NF-100, cable parts KA/KB, spoke protectors PB-/PC-
+  (PC-110/150 new), WE-100 colour casing (new) and W- cables, outer
+  bands, tools XA/XB/XC, small parts.
+
 ## Shimano 1982 Bicycle System Components — printed 01.82 (Downloads/Shimano1982/, 44 spread JPEGs, blz01-45, no 44)
 
 - 1200x858 spreads bound to shimano82.pdf; the Read tool dropped pages
