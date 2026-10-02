@@ -1223,6 +1223,53 @@ in the repo records them except this file.
   are neither confirmed nor capped. No year changes, no new rows, no
   deletes. Several descriptions were condensed to fit the box numbers.
 
+## Shimano "'74 Bicycle Parts" — printed 06.1974 (disraeligears.co.uk, 32 images)
+
+- `data_source` 65. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_parts_-_74.html
+  (front_cover, inside_front_cover, page_1..page_29, rear_cover; printed
+  page N = page_N). Rear cover "74. 06. SZK Printed in Japan". The annual
+  successor to the '73 catalogue, same layout.
+- **Eagle renumbered by Jun 1974:** D-350 Eagle 350g, D-360 SPO 350g,
+  D-370 GS 380g, D-380 GPO 380g replace the 1972 D310/D320/D330/D340
+  (380/370/400/400g). The new weights match the 1975 DE-100/200/110/210
+  exactly, so DE- renumbers the 1974 codes. New rows 7418-7421, each
+  noting its likely DE- successor; the 1972-code rows 4444 and 7370-7372
+  end in 1973.
+- Other renumbering: Click-Stick L313 -> L-311, Semi-Console L323 ->
+  L-321, 3-speed L363 -> L-361 and L373 -> L-371 (new rows 7422, 7423,
+  7425, 7426; old rows end 1973). New: L-345 CL-Lever (7424). Renamed
+  but same parts: S.T.O./G.T.O. -> SPO/GPO (7374 Lark, 2461 Thunder
+  Bird noted). Crane GS headline code is now D-511 (D-510 "with
+  adaptor").
+- year_to 1973 -> 1974 (39 rows): D600, D610, D700, D710, D210, D160,
+  D220; E302/E304 (only E-304 listed now), E101; L-600, Almi, Finger
+  Tip, Flat, Short Stem DX, both Super Shifter rows (top-tube L251/252
+  no longer listed), L120, L461, L472, L110, L150; F200-F512,
+  F916-F924; H710/810, H720/820, H700/800 (first weights, 210/330g),
+  H300/H400 (only the H-400 steel rear hub, 450g); T100, T300, A600,
+  C100; B110/B120 (180g / 185g each), B-220/B-230 (now branded Tourney,
+  group 144), B700 and B900 (disc and hydraulic disc listed without
+  codes); M110, M210, M-410, M-310. 1816 Dura-Ace crank gained 75S rings
+  and 172.5/175mm by request.
+- Last listed 1973 (not in Jun 1974): Long L241-248, Lever L211-218,
+  Short Lever L231-238, Round Stem L905-908, L411, L422, H500/H600,
+  Titlist crankset, and all track parts (H-741/841, HS-741/841, K-902,
+  FR-91x).
+- Redated: 2454 ED-100 Thunder Bird and 2455 ED-200 Thunder Bird GPO
+  (velobase 1974) -> 1975-1975. Jun 1974 still prints E-101 / E-111, so
+  the ED- codes date from Dec 1975. Kept separate per code, as D600 /
+  DB-200.
+- Merged/deleted (velobase duplicates of the 1975 lever rows, bare,
+  dated 1970): 6121 "LB-100 'ALMI Lever' (Titlist, Tourney, Eagle,
+  Lark)" (`F694CBB1-25E1-4837-92C6-863A4C48B5C6`) -> 7116 LB-100, Almi
+  Lever; 6125 "LB-400 FingerTip" (`1677E254-2B19-4C98-8AFB-AEE895D64DE1`)
+  -> 7118 LB-400, Finger-Tip. Survivors now note their 1972-74 codes
+  (L-221-228 / L-261-268). No bike links.
+- Out of scope: fork ends N-101/N-102, axle stopper 710 9004, spoke
+  protectors P-100/310/320/410/420, cables W-series, outer bands, tools
+  X-101 to X-702.
+
 ## Shimano "A Complete Line of Shimano" — printed 12.1975 (equusbicycle.com/bike/shimanocatalog75/, 20 spread PDFs)
 
 - First Shimano catalogue ingested (the Sept 1972 one above was added later). The Bicycle Info Project page
