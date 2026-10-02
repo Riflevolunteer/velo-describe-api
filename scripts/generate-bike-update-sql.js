@@ -401,6 +401,9 @@ function normalizeForMatch(value) {
 // matching range means no link rather than a wrong-era one.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // SunTour No. 61 retitles (bare "Vx" / "ARx" rows now carry codes): keep existing links
+    'suntour vx': 2614, // SunTour FD-1600, VX (1981 Kalkhoff)
+    'suntour arx': 2621, // SunTour FD-2600, ARX (1985 Raleigh)
     'shimano at10 sis': 7721, // 1993 Bianchi, from the Jul 1992 manual: Shimano FD-AT10 / FD-AT11, Altus A10
     'shimano ct10 dual sis': 7732, // Shimano FD-CT10, Altus C10
     'shimano ct10 15': 7732,
@@ -465,7 +468,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z206': 2544, // Shimano FD-Z206-HS, Z-Series
     'shimano deore xt': 2497, // Shimano FD-M700, Deore XT (1983-86)
     'suntour cyclone mkiii': 2629, // SunTour FD-3300 Cyclone (1984)
-    'suntour superbe pro': [{ from: 1984, id: 2652 }], // FD2000 (1984-86); 1983 Bianchi stays unlinked as before
+    'suntour superbe pro': [{ from: 1984, id: 2652 }], // FD-2000 endless band (1984-86); 1983 Bianchi stays unlinked as before
     'suntour ag tech': 2609, // SunTour FD-2800, AG Tech
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 2318, // Victory (1984-86)
@@ -478,6 +481,9 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    'suntour vx': 4774, // SunTour RD-2200, VX (1981 Kalkhoff)
+    'suntour ag tech': 4710, // SunTour RD-5000, AG-Tech (1985 Raleigh)
+    'suntour ar gt': 4723, // SunTour RD-4400, AR (aR II GT), 1984 (1985 Raleigh)
     'shimano at10 sis': 7720, // 1993 Bianchi, from the Jul 1992 manual: Shimano RD-AT10, Altus A10
     'shimano ct10 dual sis': 7731, // Shimano RD-CT10, Altus C10
     'shimano ct10 15': 7731,
@@ -875,6 +881,9 @@ const COMPONENT_OVERRIDES = {
     'atax forged dural anodised hidden expander': 6447, // ATAX (1A style)
   },
   Shifters: {
+    // SunTour No. 61 (Sep 1983): UB-10 is the UBN-10 stem lever LD-3000 (1985 Raleigh)
+    'suntour ub 10 stem mount': 6288, // SunTour LD-3000, UBN-10 (stem)
+    'suntour ub 10': 6288,
     'shimano 600 sis': [{ from: 1986, to: 1987, id: 6149 }], // 1987 Bianchi: Shimano SL-6208, 600EX SIS
     'shimano dura ace sis 7': [{ from: 1987, id: 6165 }], // Shimano SL-7401, Dura-Ace SIS (7sp)
     'rapidfire plus ct15': 7733, // 1993 Bianchi, from the Jul 1992 manual: Shimano ST-CT10 / ST-CT15, Altus C10
@@ -914,6 +923,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record corsa': 212, // 0118065, C-Record first generation (1985-86)
   },
   Pedals: {
+    'suntour xc ii chrome moly shafts': 4015, // SunTour PL-5100, XC-II (1985 Raleigh; dup 4000 merged)
     'shimano 600': [{ from: 1984, to: 1987, id: 3961 }], // 1987 Bianchi: Shimano PD-6207, 600EX
     'shimano spd 737 clipless': 7666, // 1993 Bianchi, from the Jul 1992 manual: Shimano PD-M737, Deore XT (SPD)
     'shimano rx100': 3977, // Shimano PD-A550, RX100

@@ -3202,6 +3202,89 @@ in the repo records them except this file.
   1979-1986, two bike-linked, can't tell which); RH-1000 low flange (3614's
   383g doesn't match 548g printed). Bike link counts unchanged.
 
+## SunTour "Bicycle Equipment Catalog" Edition No. 61 — printed 09.1983 (disraeligears.co.uk, 40 images)
+
+- `data_source` 88, label "SunTour Bicycle Equipment Catalog Edition No. 61
+  (printed 09.1983)". Source:
+  https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_no_61.html
+  (front cover, page_1..38, rear cover; image page N = printed page N).
+  SunTour U.S.A. Inc. (Fairfield NJ) / Maeda Industries; rear cover
+  "Printed in Japan SEP. '83" -> 1984 model year. pp 1-8 features, 9-26
+  specs (model code, materials, weight), 27-38 tools / maintenance / gear
+  capacity and spoke charts.
+- Ranges: Superbe Pro (RD-5200, FD-2000, LD-3200 / LD-3250, CB-3000 =
+  CB-3100 + CB-3200, CB-4000 = CB-4100 + CB-3200, BH-1500, PL-4000 /
+  PL-2000, HS-150, BH-1600 / BH-1700, HC-100); Superbe (RD-5300, FD-3000,
+  LD-2000 / 2050, RH-1000 / 2000 / 3000 / 4000, CW-1000 / 3000, BB-100 /
+  300, PL-1000 / 3000, HS-100 / 300); Sprint BH-2000, RH-4400; touring
+  Superbe Tech RD-4700 / 4800 / 5400, MounTech RD-4900 / 5500 FD-2700,
+  AG-Tech RD-5000 / 5600 FD-2800; Cyclone Mk-II RD-3500 / 3700 FD-2300 /
+  2400; Top-Mount LD-2300 / 2350; BL, ARX, VX, AR, Seven, GT, Honor,
+  Volante; NSL / Compe-V / Spirt FDs; shift levers Bar-Con, PDL-M, PSL-M,
+  DLW, SLW, PUB-10 / 5, UBN-10 / 5, Mighty Shifter II, MSM; Micro Lite /
+  New Winner / Perfect / Pro-Compe / AG freewheels; Ultra-6 UC-6000, Z
+  TZ-6000 chains; Trimec, CAP, Mighty Click systems; dirt XC-II PL-5100,
+  LD-2800, BH-1400, NW-5100; SA- / SS- sealed BBs; TH-1000 3-speed hub;
+  BMX ensemble (not inserted).
+- All SunTour rows (brand 56) were velobase. Retitled (old titles): 4768
+  "SunTour Superbe Pro (friction)" -> RD-5200, Superbe Pro; 4763 "SunTour
+  Superbe II" -> RD-5300, Superbe (Superbe II); 4761 "Superbe Tech Short
+  Cage" / 4762 "Superbe Tech L" / 4764 "Superbe Tech-GTL" -> RD-4700 /
+  4800 / 5400; 4711 "Mountech GTL" -> RD-5500; 4710 "AG Tech (Alpine
+  Gear)" -> RD-5000; 4742 / 4743 "Cyclone M-II (GT)" -> RD-3500 / 3700;
+  4730 "BL - Blue Line" -> RD-3200; 4731 "BL - Blue Line (Long Cage)" ->
+  RD-3300, BL (GT); 4727 "aRX (short cage)" -> RD-4300; 4729 "aRX GT" ->
+  RD-4500; 4774 "Vx" / 4775 "Vx S" / 4707 "Vx-GT" -> RD-2200 / 2500 /
+  2400; 4725 "aR II" / 4723 "aR II GT" -> RD-4200 / 4400; 4756 "Seven
+  (version 2A)" -> RD-1900; 4702 "Honor (version 2D, 2E, 3A, or 3B)" ->
+  RD-1100; 4708 "Volante (type 1A)" -> RD-2600; 4771 "Trimec" -> RD-4600;
+  4685 "Mighty Click" -> RD-2700; 2652 "FD2000, Superbe Pro"; 2621 "ARx"
+  (FD) -> FD-2600; 2614 "Vx" (FD) -> FD-1600; 2605 'NSL "New SL"' ->
+  FD-1700; 2641 "Seven" (FD) -> FD-1400; 2603 "Compe-V (5-hole)" ->
+  FD-1100; 2601 "Spirt" -> FD-1000; 2654 "FD2900, Trimec"; 6299 "LD-3200,
+  Superbe" / 6300 "LD-3250, Superbe" -> Superbe Pro (catalogue files them
+  under Superbe Pro); 6282 "LD-2300, Cyclone Mk-II (Symmetric)" ->
+  Top-Mount; 6266 "Symmetric LD-2350 (Direct Mount)"; 6264 "LD-1500 Power
+  Shifter" -> PDL-M; 6272 "LD3300, ARx"; 6265 "LD-1900, Road VX"; 6288
+  "LD-3000, Honor" (1988) -> LD-3000, UBN-10 (stem), 1984-1988; 462
+  "CB-3200, Superbe (dual slot drilled)" -> Superbe Pro brake lever; 3622
+  "BH-1400, XC" -> XC (sealed); 3612 "Sprint Pista" -> RH-4400; 3135
+  "Superbe" (headset) -> HS-100; 4009 "PL-4000, Superbe" -> Superbe Pro;
+  4015 "PL-5100, XC" -> XC-II; 2235 "Microlite" -> LF-6000 / LF-7000;
+  2237 "New Winner (NW-7000) Ultra 7"; 2240 "New Winner 6sp Ultra" ->
+  NW-6500; 2238 "Suntour New Winner 6 speed" -> NW-6000; 2242 "Pro-Compe
+  (5-speed)" -> PC-5000; 2244 "PT-3800 PR 5S" -> AG.
+- Years: listed rows year_to -> 1984 and NULL / later year_from -> 1984
+  (e.g. 4771, 2654, 6300, 4010, 2235, 2237, 6288 year_from 1985-1988 ->
+  1984); 2641 FD-1400 1984-1985 (1985 from the Raleigh bike catalogue).
+- New (37 rows, 1984): RD-4900, RD-5600, RD-3600, RD-2000 Seven GT,
+  RD-1200 GT, RD-5100 CAP, FD-2400; LD-1400, LS-1500, LD-2900 / 2950,
+  LS-1000, LD-1300 PUB-10, LS-1300 PUB-5, LS-3500 UBN-5, LS-2200, LD-3500
+  MSM, LD-1950, LD-3350, Trimec LD-2700 / 2750 and LD-3100 / LS-3600,
+  LD-2400 DLC, LD-2500 UBD-10; BH-1700, BH-2000, BH-4600 / 4700, RH-4100 /
+  4300, TH-1000; US-6500, PN-6000 / PS-6000, PT-6200, PT-6100, NW-5100,
+  FT-3050 / FS-1500 / MF-1000; SA / SS sealed BB series; HS-300;
+  UC-6000; TZ-6000 (1984-1989).
+- Deleted: 6298 "SunTour LD-3200, Superbe" (Shifters, 1986, velobase,
+  `CA43ECD7-E26F-4BAA-AB94-A1B7F28F15C1`) dup of 6299; 1049 "SunTour
+  CB-3100, Superbe Pro Short Reach" (Brakes, 1980,
+  `B8834FB9-1BEF-499E-B6F8-43C50CA4E099`) dup of 1045; 2610 "SunTour
+  FD-2800, AGear Tech" (1970-1980, `C8FD52D8-FCCE-439E-B171-D62950C93AEA`)
+  dup of 2609; 4000 "SunTour XC-II" (Pedals, 1980, 446g,
+  `7DF3E0F8-F0CA-456A-8D06-529379C86866`) merged into 4015 (its 1985
+  Raleigh link moved first).
+- Bike links: 1985 Raleigh "SunTour AR-GT" x2 4726 -> 4723 RD-4400;
+  "SunTour UB-10 (stem mount)" x4 -> 6288 UBN-10. Overrides added for
+  these plus 'suntour vx' (FD 2614 / RD 4774), 'suntour arx' (FD 2621),
+  'suntour ag tech' (RD 4710), 'suntour xc ii chrome moly shafts' (4015)
+  so the retitled rows stay linked on regeneration. Raleigh 1985 79 -> 83.
+- Left: 4766 / 4767 velobase "Superbe Pro" RDs (pre-1984, RD-3100 era);
+  FD-2000 variants 2647-2649; 4728 aRX long cage; 4712 MounTech GTL v2;
+  FD-2700 v1 / v2; 2606 bare "BL" FD; 6259 "3090 Bar-Con"; 6283 "DLW
+  LD-1000"; 6257 / 6263 LD-1100 PUB-10; BMX ensemble and CB-5000 coaster
+  brake not inserted. Bike values not in this catalogue: HR, SU-2, DLN,
+  PUB-M, Alpha-5000; the 1983 Bianchi Superbe Pro FD stays unlinked.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
