@@ -1058,6 +1058,54 @@ in the repo records them except this file.
   rows 1009/1015. Out of scope: spoke protectors P100/P310/P410, spokes,
   tools X101-X702, outer bands/clips (page 19), cables W910-W922.
 
+## Shimano "'73 Bicycle Parts" — printed 12.1972 (disraeligears.co.uk, 28 images)
+
+- `data_source` 61. Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_parts_-_73.html
+  (front_cover, contents, page_1..page_25, rear_cover; printed page N =
+  page_N). Rear cover "Printed in Japan '72.12"; cover says '73, i.e.
+  the 1973 model-year edition, three months after the Sept 1972 one.
+- **First Dura-Ace range** (pages 2-3): D-501 Crane 225g, E-304 Titlist
+  front, F-100 freewheel (new; 13-21 350g / 14-22 375g), B-210 side-pull
+  caliper, M-140 hooded lever, H-731/H-831 large-flange hubs (260/360g),
+  L-284 lever 75g, L-600 bar-end 80g, G-210/G-220 cranks 600g, G-520 BB
+  300g, N-101 fork ends (out of scope). Sept 1972 had Dura-Ace only as a
+  crankset, so first-gen Dura-Ace dates from model year 1973.
+- Otherwise the Sept 1972 range is carried over unchanged (H300/H400
+  renamed "Steel Rear Hub"; consoles now pictured single). New:
+  B-220/B-230 side-pull (CS-79/CS-72), B900 oil disc, M-410 Popular and
+  M-310 Tourist levers, P320/P420 spoke protectors (out of scope);
+  B-110/B-120 now carry CC-65/CC-75 type names.
+- year_to 1972 -> 1973: all 43 Sept 1972 rows (7368-7410) and 4437,
+  4438, 4444, 6163, 6181, 6120, 6124. 7407 B110/B120 described with
+  CC-65/CC-75 and "renumbered BB-100 by 1975"; 7409/7410 M110/M210 note
+  likely MB-100/MB-110 successors; 7376 E302 notes the Dura-Ace E-304.
+- Dura-Ace matched and rewritten: 4498 Crane (D-501 225g vs plain D500
+  255g); 989 B-210/BA-100; 433 M-140/MA-100; 6162 L-284 (year_to 1973
+  -> 1976, as its own Dec 1975 LA-100 note implied). Retitled (old
+  titles): 2219 "FA-100, Dura-Ace" -> "F-100 / FA-100, Dura-Ace",
+  year_from 1970 -> 1973 ("new racing model" here, absent Sept 1972);
+  3554 "Dura-Ace High Flange First Gen" -> "H-731 / H-831 (HA-200),
+  Dura-Ace large flange"; 1816 "GA-200, Dura-Ace First Gen" -> "G-210 /
+  G-220 (GA-200), Dura-Ace"; 7144 "GB-100, Dura-Ace bottom bracket set"
+  -> "G-520 / GB-100, Dura-Ace bottom bracket set".
+- Redated from catalogue absence plus the Dec 1975 "Black Series": the
+  Dura-Ace (Black) rows 988, 6161, 3553, 1813, 1814 (velobase 1970) and
+  432, 2507, 3097 (1973-76) -> 1975-1976. 2220 FA-110 6-speed year_from
+  1970 -> 1975 (no 6-speed in either 1972-era catalogue).
+- Override changed: `'shimano dura ace'` brakes `to: 1983` pointed at 987
+  "Dura-Ace (center-pull)"; both 1972-era catalogues show the first
+  Dura-Ace brake is the B-210 side-pull and every Shimano centre-pull is
+  Tourney, so it now points at 989. No bike_spec was linked to 987 at the
+  time. 987 itself (velobase, 1970, 135g) was left; a Dura-Ace-badged
+  centre-pull may exist outside these catalogues.
+- New (7411-7414, 1973-1973): B-220/B-230 side-pull, B900 oil disc,
+  M-410 Popular, M-310 Tourist, each noting its likely 1975 successor
+  (BB-200, BC-200, MD-100, MC-100).
+- Left: 1815 GA-200 "(drilled rings)" and 1289 Dura-Ace road chainring
+  (velobase 1970) and 1288 chainring guard (undated); no catalogue
+  identifies them.
+
 ## Shimano "A Complete Line of Shimano" — printed 12.1975 (equusbicycle.com/bike/shimanocatalog75/, 20 spread PDFs)
 
 - First Shimano catalogue ingested (the Sept 1972 one above was added later). The Bicycle Info Project page

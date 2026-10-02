@@ -639,7 +639,9 @@ const COMPONENT_OVERRIDES = {
     // centre-pulls; the 1987 600 (6207) has no DB row, so it is blocked.
     'campagnolo new victory': 590, // Campagnolo Victory 415/102
     'shimano 105': [{ to: 1989, id: 953 }, { from: 1990, id: 960 }], // BR-1050 / BR-1055 105SC
-    'shimano dura ace': [{ to: 1983, id: 987 }, { from: 1984, to: 1989, id: 991 }, { from: 1990, id: 993 }], // centre-pull / BR-7400 / BR-7403 SLR-S
+    // First-gen Dura-Ace brake is the B-210/BA-100 side-pull (Dec 1972 and
+    // Dec 1975 catalogues); no Shimano centre-pull is sold as Dura-Ace.
+    'shimano dura ace': [{ to: 1983, id: 989 }, { from: 1984, to: 1989, id: 991 }, { from: 1990, id: 993 }], // B-210/BA-100 side-pull / BR-7400 / BR-7403 SLR-S
     // 1973 Bianchi (Italian catalog). "Corsa Mod. 68" is the Super 68; the
     // Mod. 51 is still fitted to the Rekord 74 despite the DB's 1951-61 dating.
     'universal corsa mod 68': 1082, // Universal Super 68
