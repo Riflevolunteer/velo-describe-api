@@ -3566,6 +3566,41 @@ in the repo records them except this file.
   Allvit Cable Saver; Challenger / Success rows (not in 1973). "ATOM ... with
   HURET spoke protector" freewheel values (spoke protector out of scope).
 
+## Huret "Accessoires Cycles, Cyclomoteurs, Motos" — 1975 (disraeligears.co.uk, 27 images)
+
+- `data_source` 96, label "Huret Accessoires Cycles Cyclomoteurs Motos
+  (1975)". Source:
+  https://www.disraeligears.co.uk/site/huret_accessoires_cycles_cyclomoteurs_motos_-_1975.html
+  (front cover, inside front cover, page_1..24 = sheets H1-H24, rear cover).
+  Huret et ses Fils, Nanterre, "member of Frexa", French / English, some
+  speedometers stickered "Not available on U.S. market". Reference numbers
+  and capacities, no prices or weights.
+- Listed: rear Challenger 2400 / 2440 / 2448 / 2454 (new), Allvit 1900,
+  Super Allvit 1999 (2.38 chain only), Svelto 2000 (now 13-28T) and 2030 (now
+  13-26T); front Challenger 950 / 951 (new), Standard 900 / 901 (new codes);
+  levers Competition 1733-1736 / 1707 (new), Standard 1898 / 1882, 1899 /
+  1884 / 1879, 661 / 641 C / 1848 C, Challenger 1725-1782 down tube and stem
+  (new), 80mm long 1747-1794 (new), bar-end 2300 / 2301; cable clips,
+  dropouts, spoke protectors, wing nuts, chain tensioners, dropout kits,
+  speedometers out of scope.
+- Not in 1975 vs 1973 (not capped, regional / range split): whole Jubilee
+  range (rear 2200 etc., front 500, lever 1567 — still on 1975 Motobecane
+  bikes), 700 front, Stick-Shift 1885 / 1888, stem levers 1512-1574, long
+  levers 1826 / 1886 / 1887.
+- Retitled (old titles): 4273 "Huret Challenger" (RD) -> Challenger 2400 /
+  2440 / 2448 / 2454; 2388 "Huret Challenger (hinged clamping band)" ->
+  Challenger 950 / 951 (hinged clamping band); 6073 "Huret Challenger
+  (1970's)" (shifter) -> Challenger levers 1725-1782, 1970 -> 1975-1975;
+  6071 "Huret 1882 / 1884 / 641, Allvit & Svelto (standard levers)" -> +
+  1898 / 1899 / 1879 / 661 / 1848 C. year_to 1973 -> 1975 on 4290 Allvit,
+  4292 Super Allvit, 4293 Svelto 2000, 7940 Svelto 2030, 6071, 7943 bar-end.
+- New (3 rows, 1975): Standard 900 / 901 front, Competition levers 1733-1736
+  / 1707, 80mm long levers 1747-1794.
+- Bike links unchanged; added override 'huret challenger stem shifter' ->
+  4273 in Rear Derailleurs (the retitle had stopped the name match for 1975
+  Motobecane Nomade). Left: velobase Challenger variants 2377, 4298, 6064,
+  4300, 4289.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,

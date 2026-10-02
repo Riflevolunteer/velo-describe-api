@@ -433,7 +433,7 @@ const COMPONENT_OVERRIDES = {
     'simplex prestige stem shifter': 2583,
     // 1975 Motobecane.
     'huret jubilee wide ratio': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }],
-    'huret challenger stem shifter': 2388, // Huret Challenger (hinged clamping band)
+    'huret challenger stem shifter': 2388, // Huret Challenger 950 / 951 (hinged clamping band)
     // 1981 Kalkhoff. Shimano rows are titled "Shimano FD-7200, Dura-Ace EX"
     // (part number between brand and group), so substring never fires.
     'campagnolo super record': 2313, // Campagnolo 1052/SR (0104010), Super Record (clip-on)
@@ -530,6 +530,7 @@ const COMPONENT_OVERRIDES = {
     'sun tour vgt stem power shifter': 4695, // SunTour V-GT (type 2C or 2D)
     // 1975 Motobecane.
     'huret jubilee wide ratio': 4303,
+    'huret challenger stem shifter': 4273, // Huret Challenger 2400 / 2440 / 2448 / 2454 (1975 Motobecane; pinned after 1975 catalogue retitle)
     'sun tour vgt luxe stem power shifter': 4704,
     'sun tour vgt luxe down tube ratchet shifters': 4704,
     // 1981 Kalkhoff. "600 AX" otherwise substring-matches plain "Shimano 600".
