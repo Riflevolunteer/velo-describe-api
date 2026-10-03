@@ -43,9 +43,9 @@ for (const m of bikeSection.matchAll(bikeRe)) {
   bikes.push({ title: unq(m[1]), category: v(m[2]), year: m[3], sizes: v(m[4]), colors: v(m[5]), weight: v(m[6]) });
 }
 
-// Specs: ... AND title = 'bike' AND year_from = 'y'), (SELECT label_id ... title = 'label'), 'raw', 'value', component|NULL
+// Specs: ... AND title = 'bike' AND year_from = 'y'), (SELECT label_id ... title = 'label'), 'raw', 'value', component|NULL[, (SELECT source_id ...)]
 const specs = [];
-const specRe = /SELECT \(SELECT bike_id FROM bike WHERE brand_id = \(SELECT brand_id FROM bike_brand WHERE title = '((?:[^']|'')*)'\) AND title = '((?:[^']|'')*)' AND year_from = '([^']*)'\), \(SELECT label_id FROM bike_spec_label WHERE title = '((?:[^']|'')*)'\), '(?:[^']|'')*', '((?:[^']|'')*)', (NULL|\d+)\s*\n\s*FROM DUAL/g;
+const specRe = /SELECT \(SELECT bike_id FROM bike WHERE brand_id = \(SELECT brand_id FROM bike_brand WHERE title = '((?:[^']|'')*)'\) AND title = '((?:[^']|'')*)' AND year_from = '([^']*)'\), \(SELECT label_id FROM bike_spec_label WHERE title = '((?:[^']|'')*)'\), '(?:[^']|'')*', '((?:[^']|'')*)', (NULL|\d+)(?:, \(SELECT source_id FROM data_source[^\n]*\))?\s*\n\s*FROM DUAL/g;
 for (const m of sql.matchAll(specRe)) {
   specs.push({ brand: unq(m[1]), bike: unq(m[2]), year: m[3], label: unq(m[4]), value: unq(m[5]), component: m[6] === 'NULL' ? null : Number(m[6]) });
 }

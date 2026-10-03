@@ -207,7 +207,7 @@ Link counts are as of the last load; regenerate to confirm.
   Cronosprint posts (three variants), 3ttt Competizione bars (three bends),
   ITM Mondial bars and ITM 100-300 stems (no rows), Extras.
 
-## 1993 Bianchi — `1993_bianchi_spec.csv` (24 bikes, 408 specs, 118 linked)
+## 1993 Bianchi — `1993_bianchi_spec.csv` (24 bikes, 408 specs, 174 linked)
 
 - Six " / "-paired columns split in the CSV: Fork/Headset, Drivetrain/
   Shifters (→ Derailleurs + Shifters; a slash-less cell fills both),
@@ -242,6 +242,19 @@ Link counts are as of the last load; regenerate to confirm.
   (no rows), Rapidfire Plus, Hyperglide cassettes and HG chains, Bianchi
   saddles/tyres, Ritchey, Kalloy, Selcof, Tioga, Panaracer, Maxxis, MTB Araya
   and Ukai rims, FIR rims.
+- 2026-10-03, after the SunTour 1992 catalogue ingest (component skill log):
+  Volpe "SunTour FS-E Top Pull" → RD-FE00-GXB 7951 (rear) / FD-TP05-GXH
+  Top-Pull Lite 7968 (front; "Top Pull" only describes the front, the
+  Derailleurs split copies it to both), "FS-E 52/42/32T" → CW-FS00-N 8002,
+  "PowerFlo 12-30T 7-speed" → CS-AP10 1221; Project 7 "XC Comp Top Pull
+  PowerFlo" front → FD-TP10-GXH Top-Pull Pro 7966 (rear stays 4783, now
+  titled RD-XC20-GXB), "XC-COMP MD 42/32/20T" → CW-XC11 7998; Grizzly
+  "SunTour XC Comp" headset → HS-ST00 8045. All via overrides, back-filled
+  with a regenerate + load (7 UPDATEs). 167 → 174 linked. Still unlinked:
+  bare "SunTour" hubs (Volpe), "SunTour XC-COMP" hubs (Project 7 — front
+  hub and freehub are separate rows), "SunTour AP-12 chain" (not in the
+  1992 catalogue). `summarize-bike-sql.js` had reported 0 specs since
+  `source_ref` was added to the spec INSERT; regex fixed in this pass.
 
 ## 1973 Bianchi — `1973_bianchi_spec.csv` (22 bikes, 86 specs, 8 linked)
 

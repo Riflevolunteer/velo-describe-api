@@ -3633,6 +3633,103 @@ in the repo records them except this file.
   analysis called Normandy "absent" — wrong: Normandy hubs are in the DB
   under the Maillard brand (3383, 3384, 3388-3391).
 
+## SunTour "1992 Bicycle Equipment Catalog" — printed 09.1991 (disraeligears.co.uk, 32 scans)
+
+- `data_source` 98, label "SunTour Bicycle Equipment Catalog 1992 (printed
+  09.1991)". Source:
+  https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1992.html
+  (front cover, inside front cover, page_1..28, inside rear cover, rear
+  cover "Printed in JAPAN Sep/'91"); 1992 model year, same convention as
+  No. 61 / 62. SunTour USA / Maeda Industries, English. pp 2-8 features
+  (Micro Drive, PowerFlo, Wishbone, Command, X-Press, SE cantilever, Lite
+  Operation, Grease Guard, Microlite), 9-18 ATB & hybrid (XC-Pro MD /
+  XC-Pro, XC-Comp MD / XC-Comp, XC-LTD, X-1, FS-E, XCE, XCM, XCT, XCU),
+  19-26 road (Superbe Pro + Track, SL, Radius, Edge, Blaze, VX, RT), 27
+  options (Microlite hubs / BBs, Scrambler RD, top-pull FDs, Command and
+  bar-end levers), 28-29 accessories / tools and system charts. Model
+  codes, code numbers, specs and weights; no prices.
+- New for '92 per the catalogue: Micro Drive (CW-XP10 / CW-XC11, CS-AP20,
+  FH-XP20 / FH-XC11, BB-SL10), PowerFlo cassettes, Wishbone (SL-XP20 /
+  XM20 / FE20 / XU20) and Command (SL-CD01) shifters, X-Press, SE
+  cantilever CT-XP11, Lite Operation, the FS-E / XCM / XCT hybrid line,
+  Superbe Pro 8-speed (FH-SB00-8, CS-AP00-S8). Two velobase rows dated
+  1990 for MD parts (1214 CS-AP20-K7, 1999 CW-XP10) were moved to
+  1992-1992 on the catalogue's own "new for 1992" statement.
+- Retitled (old titles): 4786 "XC Pro GX" -> RD-XP00-GXB; 4787 'XC Pro
+  "MD" SS Type' -> RD-XP00-SSB; 4785 bare "SunTour XC Pro" (RD) ->
+  RD-XP00-GTB (the one cage not otherwise represented; a judgement call);
+  4783 "XC Comp" -> RD-XC20-GXB; 4784 "XC LTD" -> RD-XL00-GXB; 4776 "X-1"
+  -> RD-X101-GXB; 4791 "XCE" -> RD-XE01-GXB; 4793 "XCM" -> RD-XM02-GXB;
+  4757 "SL" -> RD-SL00-SSB; 4753 "Radius" -> RD-RA00-SSB; 4715 "VX
+  Accushift" -> RD-VX02-SSB / -SSZ; 2659 "FD-XP00-GXH, XC Pro" -> FD-XP00
+  / FD-XP01; 2658 "FD-XL00-GXH" -> + XC-LTD; 2663 "XCE" (FD) ->
+  FD-XE01-GXH; 2665 "XCM" (FD) -> FD-XM02-GXH; 2639 / 2640 "FD-RA00-SS"
+  (spec / actual) -> FD-RA00-SSB (braze-on) / FD-RA00-SSH (clamp-on);
+  6311 "XC Pro" (shifter) -> SL-XP00-R7 / L; 6312 -> SL-XP10 X-Press;
+  6313 SL-XP20 -> Wishbone; 6310 -> SL-XL00-R7 / L; 6306 "X-1 - thumb
+  style" -> SL-X102-R7 / L; 6269 "Command (7 & 8 Speed)" -> SL-CD01-R7 /
+  L; 6304 "Superbe Pro (7, 8 index)" -> SL-SB02-B / -BF; 6293 -> SL-SL00-B
+  / -BF / -C; 6291 "Radius" (shifter) -> SL-RA00-B / -BF / -C; 6284
+  "Suntour (Edge?)" -> SL-ED00-B7 / -B7F / -C7; 6270 "Wishbone SL-XM20-7"
+  (1993) -> SL-XM20-R7 / L, year_from 1992; 3627 "XC Pro (Front)" ->
+  HB-XP01-F; 3629 FH-XP20-7; 3632 "AT" -> HB-AT02-F / -R; 3618 "Superbe
+  Pro (8speed)" (hub) -> FH-SB00-8; 1214 "CS-AP20-K7 Power-Flow
+  MicroDrive" -> CS-AP20-S7 / -K7; 1221 CS-AP10-K7 -> + S7; 1216
+  "CS-AP00-S7, Superbe Pro" -> + K7, all groups; 6388 "HC-100 Superbe Pro"
+  -> track cog; 1998 "XC Pro" (crank) -> CW-XP01; 1997 "XC LTD" -> CW-XL00;
+  2002 "XCE" (crank) -> CW-XE01; 177 "BB-SL10, XC Pro" -> -E / -73 / -I
+  Microlite; 169 BB-SL00-I -> -E / -73 / -I; 174 BB-SB11 -> -E / -I; 176
+  "X-1, X-1" (BB) -> BB-X101-E / -I; 469 BL-XP00 -> -S; 457 BL-RA00-S ->
+  + -N; 465 "X-1" (lever) -> BL-X101-S; 1056 CT-XP00 -> + CT-XP20; 1048
+  BA-SB00-S -> + BA-SB01-S; 1041 "BA-SL00-SF" -> BA-SL00-S; 1040 "Radius
+  (by Dia-Compe)" -> BA-RA01-S; 4019 PL-XP01 -> + PL-XP02.
+- Years: year_to -> 1992 on the rows above plus 1217, 1425, 4017, 4010
+  (PL-2000 track, 1987 -> 1992). Descriptions rewritten with the
+  catalogue's capacities, clamp sizes, hole counts and weights.
+- New (99 rows, 1992): RD XC20-GTB / -SSB, FE00, XT02, XU01, ED01, RT01,
+  SR21 x3; FD XC01, X100, FE00, XT02, XU00, ED01, RT01, TP10 / TP00 /
+  TP05 top-pull, BR01 braze-on; shifters XL10, XM01, XM10, FE20, XU01,
+  XU20, BC01 bar-end, BE02 (B7 / C7 / CP7), RT01; hubs FH-XP02-7,
+  HB-XC02-F, FH-XC11-7, FH-XC02-7, HB-XL00-F, FH-XL01-7, FH-AT01-7,
+  HB-SB00-F / -R, FH-SB00-7, HB-SL10-F, FH-SL01-7, FH-SL10-7, HB-RA01-F /
+  -R, FH-RA01-7, BH-1600 / 1800 track; FW-AL10-K7, FW-WT10-S7; CH-AP15,
+  CH-AP21; cranks CW-XC11, XC01, X101, FS00-S, FS00-N, XM01, XT01 / XT02
+  (SR), XU00 (SR), 6000 track, RA01, ED01, BE01, VX01 (SR), RT00 (SR); BBs
+  XP00, XC01, XT00 (SR), RA01, VX01 (SR), SB20 Microlite; brake levers
+  XC01-S, XL00-S, FE00 / FE10 (DC), XE01 (DC), XM01-N, XT01-N, XU00-N
+  (DC), SB11, ED00, BE00, VX00-N, RT00-N (DC); brakes CT-XP11 SE, CT-XL00,
+  CT-X101, CT-FE00, BA-FE00, CT-XE01, CT-XM01, BA-XM00, CT-XT01, CT-XU00,
+  BA-ED00, BA-BE00, BA-VX00, BA-RT00 (DC); HS-XP02 (J / I / OS), HS-ST00
+  (J / I); SP-XP00, SP-XP10. "DC" = Dia-Compe-made, "SR" = Sakae
+  Ringyo-made, as marked in the catalogue.
+- Deleted: 1215 "SunTour CS-AP00-S7, Radius" (Cassettes, 1990-1992, 286g,
+  velobase, `1CEE96DF-97C2-43B4-94A7-84A1E21D4BF1`) — same part number as
+  1216, merged there; 170 "SunTour Micro Drive" (Bottom Brackets,
+  1992-1995, 291g spec, velobase, `8D2C0877-4C07-4872-A727-F9B43A45739D`)
+  — the MD bottom bracket is BB-SL10-E, merged into 177. Neither had bike
+  links or overrides.
+- Not in 1992 (not capped — one catalogue): GPX, Ole, Sprint 9000,
+  Cyclone 7000, alpha series, XCD 6000, XC 9000 / 9010, XC Sport 7000, XC
+  Expert, X-1 Chroma, Edge 4050, MounTech, S-1; 1223 / 1220 CS-AP20-S8
+  8-speed MD (1992 has 7-speed MD only, 8-speed is 1993). Velobase
+  year_from = 1980 left on XCE (4791 / 2663 / 2002), AT 3632, Radius 2639
+  / 2640 / 1040, HC-100 6388, 1220 — wrong, but this catalogue gives no
+  earlier bound.
+- Bike links (1993 Bianchi): Volpe "SunTour FS-E Top Pull" -> 7951
+  RD-FE00-GXB (rear) and 7968 FD-TP05-GXH Top-Pull Lite (front; the system
+  chart on p. 28 puts TP05 under FS-E), "FS-E 52/42/32T" -> 8002
+  CW-FS00-N, "PowerFlo 12-30T 7-speed" -> 1221; Project 7 "XC Comp Top
+  Pull PowerFlo" front -> 7966 FD-TP10-GXH (chart: TP10 under XC-Comp),
+  "XC-COMP MD 42/32/20T" -> 7998 CW-XC11; Grizzly "SunTour XC Comp"
+  headset -> 8045 HS-ST00. Overrides added for all seven; 1993 Bianchi
+  167 -> 174 linked. Left: Volpe bare "SunTour" hubs, Project 7 "SunTour
+  XC-COMP" hubs (front / freehub are separate rows), "SunTour AP-12 chain"
+  (not in the catalogue). Regression: 1983 / 1987 Bianchi regenerate 1-2
+  links lower than loaded, all Campagnolo (582 -> 583, 4149 -> 4152, 4096,
+  2966) — pre-existing drift, not from this pass. `summarize-bike-sql.js`
+  was not parsing the `source_ref` subquery on spec inserts (0 specs
+  reported since source_ref was added); regex fixed.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,

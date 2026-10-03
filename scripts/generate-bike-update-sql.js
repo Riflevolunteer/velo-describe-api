@@ -405,6 +405,9 @@ const COMPONENT_OVERRIDES = {
     // SunTour No. 61 retitles (bare "Vx" / "ARx" rows now carry codes): keep existing links
     'suntour vx': 2614, // SunTour FD-1600, VX (1981 Kalkhoff)
     'suntour arx': 2621, // SunTour FD-2600, ARX (1985 Raleigh)
+    // 1993 Bianchi, from the SunTour 1992 catalogue system chart: FS-E takes the Top-Pull Lite, XC-Comp the Top-Pull Pro.
+    'suntour fs e top pull': 7968, // SunTour FD-TP05-GXH, Top-Pull Lite
+    'suntour xc comp top pull powerflo': 7966, // SunTour FD-TP10-GXH, Top-Pull Pro
     'shimano at10 sis': 7721, // 1993 Bianchi, from the Jul 1992 manual: Shimano FD-AT10 / FD-AT11, Altus A10
     'shimano ct10 dual sis': 7732, // Shimano FD-CT10, Altus C10
     'shimano ct10 15': 7732,
@@ -562,7 +565,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore dx top pull dual sis': 4480, // Shimano RD-M650, Deore DX (SGS)
     'shimano deore xt top pull dual sis': 4493, // Shimano RD-M735 SGS, Deore XT
     'shimano deore lx top pull dual sis': 4484, // Shimano RD-M550 SGS, Deore LX
-    'suntour xc comp top pull powerflo': 4783, // SunTour XC Comp
+    'suntour xc comp top pull powerflo': 4783, // SunTour RD-XC20-GXB, XC-Comp (GX)
+    'suntour fs e top pull': 7951, // SunTour RD-FE00-GXB, FS-E ("Top Pull" describes the front only)
     // 1985 Raleigh (Sheldon Brown scan).
     'shimano model 105': 4452, // Shimano RD-A105, 105 Golden Arrow (1983-86)
     'shimano z503': 4545, // Shimano RD-Z503, Z-Series
@@ -770,6 +774,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record': [{ to: 1985, id: 2959 }, { from: 1990, id: 2964 }], // 1039 / HS-01RE
     'campagnolo chorus': 2956, // Campagnolo 704/101, Chorus
     'shimano ultegra': 3087, // Shimano HP-6400, 600 Ultegra
+    'suntour xc comp': 8045, // SunTour HS-ST00-J / -I (XC-Comp headset per the 1992 system chart)
     'tange cd sealed': 3155, // Tange-Seiki Levin CD
     // 1979 Peugeot (French catalogue).
     'spidel s7 competition': 3123, // Stronglight S7 Super Competition; DB dates it 1981-83, catalogue shows it 1979
@@ -783,6 +788,8 @@ const COMPONENT_OVERRIDES = {
   Cranksets: {
     'shimano 600 52 42t': [{ from: 1984, to: 1987, id: 1798 }], // 1987 Bianchi: Shimano FC-6207, 600EX
     'shimano ct10 48 38 28t': 7736, // 1993 Bianchi, from the Jul 1992 manual: Shimano FC-CT10, Altus C10
+    'suntour fs e 52 42 32t': 8002, // 1993 Bianchi: SunTour CW-FS00-N, FS-E (52-42-32)
+    'suntour xc comp md 42 32 20t': 7998, // 1993 Bianchi: SunTour CW-XC11, XC-Comp MD
     'shimano ct20 48 38 28t': 7743, // Shimano FC-CT20, Altus C20
     'shimano deore dx 46 36 26t': 1809, // Shimano FC-MT60 / -SG / -A, Deore DX
     'shimano exage lt 46 36 26t': 7718, // Shimano FC-M320, Exage LT
@@ -1042,6 +1049,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo 12 23 8 speed': 1186,
     'shimano dura ace 12 23t 8 speed': 1205, // Shimano CS-7400-8, Dura-Ace 7400 (Uniglide)
     'suntour powerflo 11 28t 8 speed': 1220, // SunTour CS-AP20-S8, XC Comp
+    'suntour powerflo 12 30t 7 speed': 1221, // SunTour CS-AP10-S7 / -K7, PowerFlo 7-speed (1992 catalogue)
   },
   Freewheels: {
     'suntour alpha 5000 14 28t': 7866, // SunTour FW-AL00-R6, Alpha freewheel (AccuShift leaflet c. 1987)
