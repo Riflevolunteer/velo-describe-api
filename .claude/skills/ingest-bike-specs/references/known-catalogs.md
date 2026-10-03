@@ -194,7 +194,7 @@ Link counts are as of the last load; regenerate to confirm.
 - Left unlinked: fork prose, TTT stems, San Marco, plain Mavic and Super
   Champion rims, Wolber tyres, the groupset column.
 
-## 1987 Bianchi — `1987_bianchi_spec.csv` (16 bikes, 320 specs, 128 linked)
+## 1987 Bianchi — `1987_bianchi_spec.csv` (16 bikes, 320 specs, 144 linked)
 
 - Richest catalog: full parts lists with model numbers, but six columns pair
   two components comma-separated. Split in the CSV on the first comma:
@@ -235,6 +235,8 @@ Link counts are as of the last load; regenerate to confirm.
   HL, KL, TH-305, HTI-A1, CST, UCP), Regina C Record/Pista chains, Gipiemme
   Cronosprint posts (three variants), 3ttt Competizione bars (three bends),
   ITM Mondial bars and ITM 100-300 stems (no rows), Extras.
+- 2026-10-04: Premio "Dia Compe QS500N Balance Response System" -> 682
+  (retitled QS500N by the Dia-Compe 1986 ingest) via override; 143 -> 144.
 
 ## 1993 Bianchi — `1993_bianchi_spec.csv` (24 bikes, 408 specs, 174 linked)
 
@@ -303,7 +305,7 @@ Link counts are as of the last load; regenerate to confirm.
 - Durall (Bianchi house alloy brand) brakes/bars, rod brakes and wheel
   descriptions stay as text.
 
-## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 360 specs, 88 linked)
+## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 360 specs, 90 linked)
 
 - Source is a single scanned image on Sheldon Brown's Retro Raleighs site
   (catalogs/1985/pages/specifications.html), 19 per-model text blocks in
@@ -355,6 +357,11 @@ Link counts are as of the last load; regenerate to confirm.
   aerodynamic' -> 665, 'dia compe dc500n alloy sp' -> 681, 'dia compe qs
   500n' -> 682, 'dia compe 960 alloy cantilever' -> 690); the catalogue's
   "ACG" typo was corrected in the CSV. DC630N still unlinked (no row).
+- 2026-10-04, after the Dia-Compe Products 1986 ingest: "Dia-Compe DC630N
+  alloy S.P." -> 8083 DC630N and "Dia-Compe 281 levers" -> 8113 (281 /
+  281M) via overrides; 88 -> 90 linked. 161 and 164 levers stay unlinked —
+  they sit on the catalogue's racing / extension lever pages (12-16),
+  which the bmxmuseum scan set does not include.
 
 ## 1986 Cinelli — `1986_cinelli_spec.csv` (7 bikes, 82 specs, 52 linked)
 

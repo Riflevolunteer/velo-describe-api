@@ -740,6 +740,8 @@ const COMPONENT_OVERRIDES = {
     'dia compe 500qs cold forged alloy sp': 682, // Dia-Compe N500 (quick release)
     'dia compe qs 500n': 682, // Dia-Compe N500 (quick release)
     'dia compe 960 alloy cantilever': 690, // Dia-Compe Gran Compe GC960
+    'dia compe dc630n alloy sp': 8083, // Dia-Compe DC630N, N-brakes (1986 catalogue)
+    'dia compe qs500n balance response system': 682, // 1987 Bianchi: Dia-Compe QS500N (quick release)
     'shimano deore xt cantilever': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)
     'shimano deore xt alloy cantilever shimano z levers with gum hoods': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)
     // 1986 Cinelli groupset fan-out.
@@ -969,6 +971,7 @@ const COMPONENT_OVERRIDES = {
     // 281 have no DB row yet.
     'dia compe agc 250': 279, // Dia-Compe AGC250, Aero Compe
     'dia compe 152 gum hoods': 271, // Dia-Compe 152 (Double Slot Drilled)
+    'dia compe 281 levers': 8113, // Dia-Compe 281 / 281M, mountain bike levers (1986 catalogue)
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
