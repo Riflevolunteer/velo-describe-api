@@ -3792,6 +3792,45 @@ in the repo records them except this file.
   front line is Spirt / Compe-V / SL and the bike catalogue does not say
   which. Bike links unchanged.
 
+## SunTour "'74 Products" — 1974 (disraeligears.co.uk, 22 scans)
+
+- `data_source` 100, label "SunTour '74 Products catalogue (1974)". Source:
+  https://www.disraeligears.co.uk/site/suntour_74_products.html (front
+  cover, page_1..20, rear cover; PDF page N+1 = printed page N). Maeda
+  Industries, print code 30/0249, Maeda Industries of U.S.A. (Fairfield
+  NJ) now listed; English; no prices. pp 2-7 rear derailleurs and p 8
+  fronts, each with an exploded diagram and a code / part-number parts
+  list; 9-12 control levers; 13-15 freewheels; 16 3-speed hub; 17-19
+  accessories; 20 factories.
+- New vs '73: V-T Luxe 3902 (mid-length, 32T, 295g — "completes the V
+  Luxe range"); the V-GT Luxe appears as **4902** (335g, body engraved
+  "V-GT Luxe"), replacing the 385g 4900 VGT; Turtle Lever 3158; PSL-S
+  3550; ST-10 / ST-5 3230 / 3220 paddle stem levers; 3-speed hub 3828 /
+  3836 (28H / 36H) with casing clips 1096-1098; resin clips 1071-1078;
+  spoke discs renumbered 1144 / 1145 / 1146. Dropped vs '73: SLW 3203
+  top-tube, TT-5 3051, STM-3 3112, long levers 3021 / 3031, HS-3 console
+  3043 / 3039, Honor two-bolt body, plain Perfect 1102-1106 (only 1100,
+  1101 and the Z-gear models listed). Front derailleurs unchanged in
+  number and parts list but the copy now says "top normal" where 1973
+  said "low normal" — recorded as catalogue text, not a redesign.
+- Retitled (old titles): 4704 "SunTour V-GT Luxe (version 1)" -> 4902,
+  V-GT Luxe (version 1), year_from 1973 -> 1974 (first appearance; the
+  1973 catalogue has no Luxe VGT); 2737 "SunTour 3-speed" (Geared Hubs,
+  undated velobase) -> 3828 / 3836, 3-speed hub, 1974-1974.
+- Years: year_to -> 1974 on 4772, 4703, 4702, 4689, 2616 and the 1973
+  rows carried over (8049 SLW down-tube, 8050, 8051, 8054-8058, 8061-8068);
+  6256 trigger -> 1974. 1973-only rows left at 1973: 8048, 8052, 8053,
+  8059, 8060. Descriptions of 4772, 4702, 2601, 2603, 2616, 2245 gained
+  the 1974 detail.
+- New (4 rows, 1974): 8069 V-T Luxe 3902; 8070 Turtle Lever 3158; 8071
+  PSL-S 3550; 8072 ST-10 / ST-5 3230 / 3220.
+- Bike links unchanged: the 1974 / 75 Motobecane "V.G.T. Luxe" lines
+  already pointed at 4704, which this catalogue now dates and numbers
+  correctly. The Motobecane front lines stay unlinked (same three fronts
+  as 1973, bike catalogue silent). Left: 4705 "V-GT Luxe (version 2)"
+  1978-82 velobase; the 252g velobase weight on 4704 vs 335g here
+  (flagged in the description).
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
