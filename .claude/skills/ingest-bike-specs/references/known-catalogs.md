@@ -45,7 +45,7 @@ Link counts are as of the last load; regenerate to confirm.
 - Left unlinked: Weinmann 999 (a dozen Vainqueur variants), New Simplex Maxi
   (no row), Raleigh-branded parts, G.B. Maes bars.
 
-## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 131 specs, 38 linked)
+## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 129 specs, 38 linked)
 
 - "Catalog Page Reference" column ignored via IGNORED_LABELS.
 - Frame Size cells had backslash/doubled-quote inch-mark debris; rewritten.
@@ -75,11 +75,14 @@ Link counts are as of the last load; regenerate to confirm.
   "… with alloy / CAMPAGNOLO seat post" -> Saddle + Seat Post column;
   "CAMPAGNOLO seat post" -> 5749 (1044 Record). Brakes cells "WEINMANN 999
   … with extension / quick release levers" -> Brakes + Brake Levers
-  ("WEINMANN extension levers" etc. unlinked — no model named). The Front
-  Derailleur half of the Derailleur split still copies the rear's brand
-  name (unlinked text; the catalogue never names the front mech).
+  ("WEINMANN extension levers" etc. unlinked — no model named). Then the
+  Derailleur column was replaced by explicit Front Derailleur / Rear
+  Derailleur columns: the groupset bikes keep their front rows (Prestige,
+  Jubile, Nuovo Record), the two SunTour V-GT bikes (Mirage, Grand Touring)
+  get none — V-GT is a rear-only model and the catalogue never names the
+  front mech, so the split's copied rows were wrong. 131 -> 129 specs.
 
-## 1975 Motobecane — `1975_motobecane_spec.csv` (11 bikes, 208 specs, 58 linked)
+## 1975 Motobecane — `1975_motobecane_spec.csv` (11 bikes, 205 specs, 58 linked)
 
 - "Catalog Page" ignored. Frame Size and Wheel Rims & Tires cells had the same
   inch-mark debris; rewritten (`27" x 1-1/4"`).
@@ -108,7 +111,10 @@ Link counts are as of the last load; regenerate to confirm.
   unlinked; Seat Post column — "CAMPAGNOLO seat post" x2 -> 5749, alloy x3
   unlinked; Brake Levers column — Weinmann lever halves, unlinked. Rear /
   front Challenger overrides re-keyed to bare 'huret challenger' (4273 /
-  2388), 'sun tour vgt luxe' -> 4704.
+  2388), 'sun tour vgt luxe' -> 4704. Derailleur column then replaced by
+  explicit Front / Rear Derailleur columns, front blank on the three
+  SunTour V-GT Luxe bikes (Tandem, Mirage, Grand Touring) — see 1974 note.
+  208 -> 205 specs.
 
 ## 1981 Kalkhoff — `1981_kalkhoff_spec.csv` (8 bikes, 136 specs, 57 linked)
 
