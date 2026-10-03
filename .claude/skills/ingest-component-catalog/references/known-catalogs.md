@@ -3730,6 +3730,68 @@ in the repo records them except this file.
   was not parsing the `source_ref` subquery on spec inserts (0 specs
   reported since source_ref was added); regex fixed.
 
+## SunTour "'73 Products" — 1973 (disraeligears.co.uk, 24 scans)
+
+- `data_source` 99, label "SunTour '73 Products catalogue (1973)". Source:
+  https://www.disraeligears.co.uk/site/suntour_73_products.html (front
+  cover, index, page_1..21, rear cover; PDF page N+2 = printed page N).
+  Maeda Industries, Sakai; English; no prices. pp 1-5 derailleurs with
+  exploded parts diagrams, 6-10 control levers (position codes A down
+  tube / B stem / C bar-end / C' handlebar / D top tube), 11-14
+  freewheels, 15-19 accessories (QRs, quick bands, clips, gear guard,
+  Multi-stand, fork ends, spoke discs, one-piece BB set), 20-21 machinery
+  / factory. Derailleur and lever numbering is the 4-digit 1970s series
+  (2902, 4900, 3302 ...), not the later LD-/LS-/RD- codes.
+- Listed: RD V-Luxe 2902 (first appearance), VGT 4900, GT 4600, Honor
+  2600 (earlier two-bolt body), Skitter 2200; FD Spirt 3700, Compe-V 3701,
+  SL 3702; levers 3203 / 3202 SLW, 3153 Sport, 3155 Mark-II, 3051 TT-5,
+  3112 STM-3, 3552 PSL-M, 3551 PDL-S, 3302 DLW, 3553 PDL-M, 3020 / 3030
+  UB-5 / UB-10, 3070 / 3080 PUB-5 / PUB-10, 3021 / 3031 long levers, 3043
+  / 3039 HS-3B / HS-3, 3090 Bar-Con, 3450 Mighty Shifter, 3460 trigger;
+  freewheels 1110 Winner (alloy body), 1100-1106 Perfect, -G Pro-Compe,
+  -Z Z-gear, 1250 3-sp, 1200 / 1800 4-sp, single freewheel, racing
+  sprocket; 4100 one-piece BB set. No hubs, cranks, pedals, brakes.
+- Retitled (old titles): 4772 "SunTour V-Luxe" -> 2902, V-Luxe; 4695
+  "SunTour V-GT (type 2C or 2D)" -> 4900, VGT (type 2C / 2D) (weight 397g
+  avg matches the 385 / 420g 4900, so this row is the plain VGT, not a
+  Luxe); 4703 "GT (version 1B)" -> 4600, GT (version 1B); 4702 "RD-1100,
+  Honor" -> 2600 / RD-1100, Honor; 4689 "New Skitter (version 2B)" ->
+  2200, Skitter (version 2B); 2603 "FD-1100, Compe-V (5-hole)" -> 3701 /
+  FD-1100; 2601 "FD-1000, Spirt" -> 3700 / FD-1000 (1973 version is
+  steel, low normal; No. 61 version alloy, top normal — both in the
+  description); 2616 "SunTour SL" (FD) -> 3702, SL; 6259 "3090 Bar-Con"
+  -> 3090, Bar-Con (power double lever); 6283 "DLW LD-1000" -> 3302 /
+  LD-1000, DLW; 6256 "3-Speed trigger" (undated) -> 3460, Trigger Lever,
+  1973-1973; 6263 "LD-1100" -> 3080 / LD-1100, PUB-10; 2245 "PT-5000,
+  Perfect (5 speed)" -> 1100-1106 / PT-5000; 2242 "PC-5000, Pro-Compe
+  (5-speed)" -> 1101-G / PC-5000; 2229 "SunTour Winner" -> 1110, Winner
+  (5-speed, alloy body).
+- Years: year_from -> 1973 on 2601 (1976), 6283 (1976), 6263 (1979), 2229
+  (1980 — catalogue is earlier, so allowed); year_to -> 1973 on 2616
+  (1972). 4695 / 4703 already ended 1973.
+- New (21 rows, 1973): levers 3203, 3202, 3153, 3155, 3051, 3112, 3552,
+  3551, 3553, 3020 / 3030, 3070, 3021 / 3031, 3043 / 3039, 3450;
+  freewheels 1102-Z..1106-Z Z-gear, 1250, 1200, 1800, single freewheel
+  (no number); Racing Sprocket "888" (Single Sprockets, no number); 4100
+  one-piece-crank BB set. Rule applied: where the DB row for the same
+  model name is one of our own 1984 / 85 catalogue rows carrying an LD- /
+  LS- code (LS-1000 SLW, LS-1500 PSL-M, LS-1300 PUB-5, LS-3500 UB-5,
+  LD-3000 UB-10, LS-2200 Mighty Shifter II), the 1973 number got its own
+  row rather than stretching the 1984 row back 11 years; velobase rows
+  already dated into the 1970s were folded.
+- Deleted: 6257 "SunTour LD-1100 (PUB-10)" (Shifters, 1970-1970, no
+  weight, velobase, `196B6891-CC60-43C5-BBDA-46F387E06976`) — same part as
+  6263, merged there. No links or overrides.
+- Not in 1973 (left): 4704 / 4705 "V-GT Luxe" v1 / v2 — the Luxe name is
+  not in this catalogue; the 1974 / 75 Motobecane links to 4704 stand.
+  2602 bare "Compe-V" 1974-79 (140.5g avg) is probably the same part as
+  2603 but velobase keeps it separate; not merged. 2617 SL (Black), 2605
+  FD-1700 NSL, 4694 V (2C), 4718 "Vista VG T", 2231 AP, 2241 Perfect YE,
+  2243 Pro-Compe Ultra-6 — absent, no cap applied. Motobecane 1974 / 75
+  "SUN TOUR V.G.T." front-derailleur lines still unlinked: the 1973
+  front line is Spirt / Compe-V / SL and the bike catalogue does not say
+  which. Bike links unchanged.
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
