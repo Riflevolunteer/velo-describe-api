@@ -3831,6 +3831,49 @@ in the repo records them except this file.
   1978-82 velobase; the 252g velobase weight on 4704 vs 335g here
   (flagged in the description).
 
+## SunTour "'75 Products" — 1975 (disraeligears.co.uk, 8 scans)
+
+- `data_source` 101, label "SunTour '75 Products brochure (1975)". Source:
+  https://www.disraeligears.co.uk/site/suntour_75_products.html (scan_1..8:
+  cover, two mood photos, index, three product pages, rear cover; Shiga
+  factory added; "Printed in Japan"). Fold-out brochure, specs only — no
+  exploded diagrams or parts lists. English, no prices.
+- New vs '74: Cyclone 5902 RD (forged alloy, 24T, 13-24 / 40-51, 175g) and
+  3704 FD (forged alloy, low normal, 95g) — first appearance; Love 2000
+  steel touring RD (232g); Allegro 3703 steel FD (low normal, triple);
+  Winner-S 1110-S (steel cogs, to 26T); 1300 "Frash type" 3-speed
+  freewheel; single freewheels numbered 1716-1724 and a full-ball 5/32in
+  1718-S..1724-S series; racing sprockets numbered 1762-1767 (12T added);
+  "SD" fork ends 4421-4424; spoke discs renumbered 1147 / 1148 / 1149;
+  cable caps 1099. Dropped vs '74: all top-tube consoles (Sport 3153,
+  Mark-II 3155, Turtle 3158). Names: 2902 listed as "V" (not V-Luxe), 3902
+  as "VT", 4902 as "VGT"; VGT weight 335g -> 310g; VT capacity 32T -> 28T
+  (14-30 / 36-48); Honor 14-30 / 36-48.
+- Retitled (old titles): 4735 "SunTour Cyclone" (1976, 178g avg) -> 5902,
+  Cyclone, year_from 1975; 2626 "SunTour Cyclone (with no cable housing
+  stop)" -> 3704, Cyclone (no cable housing stop), year_from 1975, 95g;
+  2624 / 2625 / 2627 / 2628 Cyclone FD variants -> "3704, Cyclone (...)"
+  (years 1976-80 unchanged — the brochure attests one 1975 version only);
+  8066 "SunTour single freewheel (1/2 x 1/8in)" -> 1716-1724, single
+  freewheel; 8067 "SunTour Racing Sprocket (888 track cog)" -> 1762-1767,
+  Racing Sprocket.
+- Years: year_to -> 1975 on 4772, 8069, 4703, 4702, 4689, 2616, 2737 and
+  the carried-over '73 / '74 rows (8049, 8054-8058, 8061, 8062-8068, 8071,
+  8072, 6256). 8050, 8051, 8070 stay at 1974. Descriptions of 4772, 8069,
+  4704, 4702 gained the 1975 figures.
+- New (5 rows, 1975): 8073 Love 2000; 8074 Allegro 3703; 8075 Winner-S
+  1110-S; 8076 1300 Frash 3-speed; 8077 1718-S..1724-S single freewheel.
+- Deleted: 4736 "SunTour Cyclone (variation 2)" (RD, 1975, 175g spec "from
+  1975 Suntour catalog", velobase, `10A24F5C-EA9A-48BA-8437-AA7A0BC79D9C`)
+  and 4737 "SunTour Cyclone (variation 3)" (RD, 1975, 170g actual "less
+  frame hanger bracket", velobase, `548018C6-7E85-45BD-A042-BAD23BC1CB4F`)
+  — both the 5902; weights folded into 4735. No links or overrides.
+- Left: 4733 Cyclone "(Black Pivot Knuckles)" undated finish variant; 4713
+  "Love (version 2)" 1987-89 is a different later part; 2602 bare Compe-V
+  1974-79 (140.5g avg) still unmerged with 2603 (136g). Bike links
+  unchanged (no Cyclone-era bikes 1975-79 in the DB yet; the 1975
+  Motobecane V-GT Luxe links to 4704 stand, now with the 310g figure).
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,
