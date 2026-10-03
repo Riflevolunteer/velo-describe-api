@@ -431,12 +431,11 @@ const COMPONENT_OVERRIDES = {
       { from: 1982, id: 2300 }, // Campagnolo 0104007, Nuovo Record (clip-on, 3-hole standard band)
     ],
     'new huret jubilee': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }], // Huret Jubilee 500: 5-hole cage (1972-76) / 4-hole (1977-80); 1973 Huret catalogue
-    // 1974 Motobecane (values carry shifter asides after a dash/comma).
+    // 1974 Motobecane (shifter asides now split into the Shifters column).
     'huret jubilee': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }],
-    'simplex prestige stem shifter': 2583,
     // 1975 Motobecane.
     'huret jubilee wide ratio': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }],
-    'huret challenger stem shifter': 2388, // Huret Challenger 950 / 951 (hinged clamping band)
+    'huret challenger': 2388, // Huret Challenger 950 / 951 (hinged clamping band)
     // 1981 Kalkhoff. Shimano rows are titled "Shimano FD-7200, Dura-Ace EX"
     // (part number between brand and group), so substring never fires.
     'campagnolo super record': 2313, // Campagnolo 1052/SR (0104010), Super Record (clip-on)
@@ -528,14 +527,15 @@ const COMPONENT_OVERRIDES = {
     'new huret jubilee': 4303, // Huret Jubilee 2200 / 2252 / 2240 (first version)
     // 1974 Motobecane.
     'huret jubilee': 4303,
-    'simplex prestige stem shifter': 4583,
-    'sun tour vgt lux down tube ratchet shifter': 4704, // SunTour V-GT Luxe (version 1)
-    'sun tour vgt stem power shifter': 4695, // SunTour V-GT (type 2C or 2D)
+    // Shifter halves now live in the Shifters column (compound-cell split).
+    // Plain "V.G.T." in the 1974 catalogue alongside a "V.G.T. LUX": the
+    // pre-Luxe 4900 VGT (SunTour '73 Products), not the 1974 4902.
+    'sun tour vgt': 4695, // SunTour 4900, VGT (type 2C / 2D)
+    'sun tour vgt lux': 4704, // SunTour 4902, V-GT Luxe (version 1)
     // 1975 Motobecane.
     'huret jubilee wide ratio': 4303,
-    'huret challenger stem shifter': 4273, // Huret Challenger 2400 / 2440 / 2448 / 2454 (1975 Motobecane; pinned after 1975 catalogue retitle)
-    'sun tour vgt luxe stem power shifter': 4704,
-    'sun tour vgt luxe down tube ratchet shifters': 4704,
+    'huret challenger': 4273, // Huret Challenger 2400 / 2440 / 2448 / 2454 (1975 Motobecane; pinned after 1975 catalogue retitle)
+    'sun tour vgt luxe': 4704,
     // 1981 Kalkhoff. "600 AX" otherwise substring-matches plain "Shimano 600".
     'campagnolo super record': [{ to: 1983, id: 4149 }, { from: 1984, id: 4152 }], // PAT. 80 for 1981 Kalkhoff; 4001 2nd gen ver. 2 (1984-87) for 1986 Cinelli
     'dura ace ex': 4509, // Shimano RD-7200, Dura-Ace EX
@@ -666,6 +666,11 @@ const COMPONENT_OVERRIDES = {
     'weinmann 999 de luxe center pull with quick release levers': 7929,
     'weinmann 999 center pull with extension levers': 7929,
     'weinmann 999 center pull with quick release de luxe fitting': 7929,
+    // 1974 / 75 Motobecane after the lever halves moved to Brake Levers.
+    'weinmann 999 center pull quick release': 7929,
+    'weinmann 999 de luxe center pull quick release': 7929,
+    'weinmann 999 de luxe center pull': 7929,
+    'weinmann 999 center pull': 7929,
     'weinmann centre pull': 7929,
     'weinmann centre pull 999': 7929,
     'weinmann centre pull with hooded levers': 7929,
@@ -727,13 +732,14 @@ const COMPONENT_OVERRIDES = {
     'dia compe xce cantilevers 287 levers': 703, // Dia-Compe XCE
     'dia compe 987 ss 7 brs': 652, // Dia-Compe 987
     // 1985 Raleigh (Sheldon Brown scan).
-    'dia compe agc 300 250 cold forged alloy': 686, // Dia-Compe Aero Gran Compe (AGC 300 caliper, 250 lever)
-    'dia compe acg 300 250 cold forged alloy': 686, // catalog typo for AGC 300/250
-    'dia compe aerodynamic ac 500g acg 250': 665, // Dia-Compe AC 500 (G)
-    'dia compe dc500n 164 alloy sp with extension levers': 681, // Dia-Compe N500
+    // 1985 Raleigh: the CSV "Brakes" cells were split into caliper (here) and
+    // lever (Brake Levers) halves, so the keys carry the caliper only.
+    'dia compe agc 300 cold forged alloy': 686, // Dia-Compe Aero Gran Compe (AGC 300 caliper)
+    'dia compe ac 500g aerodynamic': 665, // Dia-Compe AC 500 (G)
+    'dia compe dc500n alloy sp': 681, // Dia-Compe N500
     'dia compe 500qs cold forged alloy sp': 682, // Dia-Compe N500 (quick release)
-    'dia compe qs 500n 152 gum hoods': 682, // Dia-Compe N500 (quick release)
-    'dia compe 960 161 gum hoods alloy cantilever': 690, // Dia-Compe Gran Compe GC960
+    'dia compe qs 500n': 682, // Dia-Compe N500 (quick release)
+    'dia compe 960 alloy cantilever': 690, // Dia-Compe Gran Compe GC960
     'shimano deore xt cantilever': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)
     'shimano deore xt alloy cantilever shimano z levers with gum hoods': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)
     // 1986 Cinelli groupset fan-out.
@@ -912,6 +918,13 @@ const COMPONENT_OVERRIDES = {
   Shifters: {
     'suntour alpha 5000 accushift': 7859, // SunTour SL-5000-BS / CS / CP, alpha-5000 (AccuShift leaflet c. 1987)
     'suntour accushift (alpha 5000 front derailleur)': 7859,
+    // 1974 / 75 Motobecane: shifter halves split out of the Derailleur cells;
+    // the SunTour levers are dated by the '73-'75 Products catalogues. The
+    // Simplex Prestige stem lever has no 1970s row, so it stays unlinked.
+    'sun tour stem power shifter': 6263, // SunTour 3080 / LD-1100, PUB-10
+    'sun tour down tube ratchet shifter': 8056, // SunTour 3553, PDL-M
+    'sun tour down tube ratchet shifters': 8056,
+    'huret challenger stem shifter': 6073, // Huret Challenger levers 1725-1782 (down tube / stem), 1975
     // SunTour No. 61 (Sep 1983): UB-10 is the UBN-10 stem lever LD-3000 (1985 Raleigh)
     'suntour ub 10 stem mount': 6288, // SunTour LD-3000, UB-10 / UBN-10 (stem)
     'suntour ub 10': 6288,
@@ -952,6 +965,11 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super record': 231, // 4062 post-83 shield-logo hoods (1983-87)
     'campagnolo victory': 235, // Victory levers (1984-87)
     'campagnolo record corsa': 212, // 0118065, C-Record first generation (1985-86)
+    // 1985 Raleigh lever halves (split out of the Brakes cells). 161 / 164 /
+    // 281 have no DB row yet.
+    'dia compe agc 250': 279, // Dia-Compe AGC250, Aero Compe
+    'dia compe 152 gum hoods': 271, // Dia-Compe 152 (Double Slot Drilled)
+    'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
     'suntour xc ii chrome moly shafts': 4015, // SunTour PL-5100, XC-II (1985 Raleigh; dup 4000 merged)
@@ -1002,6 +1020,7 @@ const COMPONENT_OVERRIDES = {
     // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
     // from in the 90s (Krono 1993), so blocked rather than wrong.
     'campagnolo': [{ to: 1985, id: 5749 }, { from: 1990, id: null }], // Campagnolo 1044, Record
+    'campagnolo seat post': [{ to: 1985, id: 5749 }], // 1974 / 75 Motobecane, split out of the Saddle cells
     'shimano dura ace': [{ from: 1990, to: 1993, id: 5893 }, { from: 1994, id: 5895 }], // SP-7400-A / SP-7410 — 1993 Bianchi
     alloy: null, // generic word; substring-hits "Titan alloy"
     // 1981 Kalkhoff.

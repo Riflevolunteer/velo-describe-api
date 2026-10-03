@@ -45,7 +45,7 @@ Link counts are as of the last load; regenerate to confirm.
 - Left unlinked: Weinmann 999 (a dozen Vainqueur variants), New Simplex Maxi
   (no row), Raleigh-branded parts, G.B. Maes bars.
 
-## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 119 specs, 30 linked)
+## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 131 specs, 38 linked)
 
 - "Catalog Page Reference" column ignored via IGNORED_LABELS.
 - Frame Size cells had backslash/doubled-quote inch-mark debris; rewritten.
@@ -63,8 +63,23 @@ Link counts are as of the last load; regenerate to confirm.
 - Left unlinked: Sedis (no plain row), Weinmann 999 De Luxe / 500, Nervar and
   Solida steel cranks, T.A. Professional (no row), Atom freewheels, Lyotard,
   Motobecane-branded parts, Pivo generic stems.
+- 2026-10-04 compound-cell split (CSV rewritten, old bike_spec rows deleted,
+  reloaded; 119 -> 131 specs, 35 -> 38 linked). Derailleur cells carried the
+  shifter ("SUN TOUR V.G.T., stem power shifter"): shifter text moved to a
+  new Shifters column — "SUN TOUR stem power shifter" -> 6263 PUB-10, "SUN
+  TOUR down tube ratchet shifter" -> 8056 PDL-M, "SIMPLEX PRESTIGE stem
+  shifter" unlinked (no 1970s Simplex stem lever row). Rear derailleur
+  overrides re-keyed on the bare names: 'sun tour vgt' -> 4695 (4900 VGT —
+  the plain "V.G.T." sits beside a "V.G.T. LUX" in the same catalogue, so
+  it is the pre-Luxe part), 'sun tour vgt lux' -> 4704 (4902). Saddle cells
+  "… with alloy / CAMPAGNOLO seat post" -> Saddle + Seat Post column;
+  "CAMPAGNOLO seat post" -> 5749 (1044 Record). Brakes cells "WEINMANN 999
+  … with extension / quick release levers" -> Brakes + Brake Levers
+  ("WEINMANN extension levers" etc. unlinked — no model named). The Front
+  Derailleur half of the Derailleur split still copies the rear's brand
+  name (unlinked text; the catalogue never names the front mech).
 
-## 1975 Motobecane — `1975_motobecane_spec.csv` (11 bikes, 194 specs, 46 linked)
+## 1975 Motobecane — `1975_motobecane_spec.csv` (11 bikes, 208 specs, 58 linked)
 
 - "Catalog Page" ignored. Frame Size and Wheel Rims & Tires cells had the same
   inch-mark debris; rewritten (`27" x 1-1/4"`).
@@ -86,6 +101,14 @@ Link counts are as of the last load; regenerate to confirm.
   Regina Oro 13-21 → Regina Oro (6 speed).
 - Left unlinked: Unicanitor (ten variants, user to pick), Sedis, Weinmann,
   Nervar/Solida/Tourney/T.A. cranks, Atom clusters, Lyotard/Union pedals.
+- 2026-10-04 compound-cell split, same pattern as 1974 (194 -> 208 specs,
+  52 -> 58 linked): Shifters column — "SUN TOUR stem power shifter" x2 ->
+  6263, "SUN TOUR down tube ratchet shifters" -> 8056, "HURET Challenger
+  stem shifter" -> 6073 (Challenger levers 1725-1782), Simplex Prestige
+  unlinked; Seat Post column — "CAMPAGNOLO seat post" x2 -> 5749, alloy x3
+  unlinked; Brake Levers column — Weinmann lever halves, unlinked. Rear /
+  front Challenger overrides re-keyed to bare 'huret challenger' (4273 /
+  2388), 'sun tour vgt luxe' -> 4704.
 
 ## 1981 Kalkhoff — `1981_kalkhoff_spec.csv` (8 bikes, 136 specs, 57 linked)
 
@@ -274,7 +297,7 @@ Link counts are as of the last load; regenerate to confirm.
 - Durall (Bianchi house alloy brand) brakes/bars, rod brakes and wheel
   descriptions stay as text.
 
-## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 344 specs, 79 linked)
+## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 360 specs, 88 linked)
 
 - Source is a single scanned image on Sheldon Brown's Retro Raleighs site
   (catalogs/1985/pages/specifications.html), 19 per-model text blocks in
@@ -313,6 +336,19 @@ Link counts are as of the last load; regenerate to confirm.
   the differences coming from the 2026-09-28 Campagnolo dedupe reshaping
   the candidate set, not from this catalog's generator edits (verified
   by diffing pre- and post-edit generator output). Loaded rows unaffected.
+- 2026-10-04 compound-cell split (CSV rewritten, old bike_spec rows deleted,
+  reloaded; 344 -> 360 specs, 83 -> 88 linked). Brakes cells named caliper
+  and lever ("Dia-Compe AGC 300/250", "981 cantilever, 161 levers", "DC500N
+  /164 … extension levers", "Deore XT cantilever, Z-levers"): lever half
+  moved to a new Brake Levers column. Links: "Dia-Compe AGC 250" x4 -> 279
+  (AGC250 Aero Compe), "Dia-Compe 152 gum hoods" -> 271, "Shimano Z-levers
+  with gum hoods" -> 410 (BL-Z306); unlinked, waiting for a Dia-Compe
+  catalogue: 161 (x2), 164 (x3), 281; generic "Extension levers", "Raleigh
+  / Mountain levers". Brakes overrides re-keyed to the caliper-only values
+  ('dia compe agc 300 cold forged alloy' -> 686, 'dia compe ac 500g
+  aerodynamic' -> 665, 'dia compe dc500n alloy sp' -> 681, 'dia compe qs
+  500n' -> 682, 'dia compe 960 alloy cantilever' -> 690); the catalogue's
+  "ACG" typo was corrected in the CSV. DC630N still unlinked (no row).
 
 ## 1986 Cinelli — `1986_cinelli_spec.csv` (7 bikes, 82 specs, 52 linked)
 
