@@ -9,6 +9,15 @@
 - Only "Regina Extra (1 speed)" freewheels link. Everything else is Italian
   prose or names the maker (Società Catene Calibrate Regina) rather than a
   model. Not fixable with overrides.
+- **Removed (user request, 2026-10-04):** the whole catalogue was deleted —
+  all 17 bikes (bike_id 7-27) and their 153 `bike_spec` rows, including the
+  3 links to `component_detail` 2170 "Regina Extra (1 speed)" (component row
+  itself left in place, just unlinked — nothing else referenced it, so it's
+  now linked to zero bikes). Also deleted the two `bike_spec_label` rows
+  this catalogue had minted and used exclusively — "Chain Guard" (20) and
+  "Other Features" (25), both with zero remaining references elsewhere.
+  `data_source` 34 ("1940 Bianchi catalogue") left in place; no generator
+  code (`COMPONENT_OVERRIDES`) referenced these bike_ids or component 2170.
 
 ## 1983 Bianchi — `1983_bianchi_spec.csv` (9 bikes, 118 specs, 47 linked)
 
