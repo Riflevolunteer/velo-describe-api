@@ -153,7 +153,10 @@ file run through `load-sql.js`, then regenerate and load:
 - Only new overrides: just regenerate and load. The back-fill UPDATE handles it.
 - A bike/spec row is simply wrong and nothing should replace it (catalog shows
   it never existed, or belongs to a different brand entirely): delete it
-  directly, no reload needed. Record what and why in `known-catalogs.md`.
+  directly, no reload needed. Record what and why in the relevant brand
+  file under `references/known-catalogs/` (or `cross-catalog-notes.md` if
+  it's a matcher/generator fix spanning brands) — see
+  `references/known-catalogs.md` for the index.
 
 ### 6. Commit
 
@@ -163,9 +166,12 @@ committed; describe them in the message so the reasoning survives.
 
 ## Reference
 
-- `references/known-catalogs.md` lists each catalog processed so far, its
+- `references/known-catalogs.md` indexes `references/known-catalogs/<brand>.md`,
+  one file per bike brand, each listing its catalogs processed so far, their
   quirks, the repairs made, and the linking decisions, so repeat questions
-  ("why is Zeus Gigante the road hub?") have an answer.
+  ("why is Zeus Gigante the road hub?") have an answer. Read only the brand
+  file(s) relevant to the catalog at hand, plus `cross-catalog-notes.md` for
+  matcher/generator-wide fixes.
 - Sibling API routes (`/bikeBrands`, `/bikesbybrand`, `/bikedetail`,
   `/searchBikes`) read these tables; `bike.created_at` and
   `bike_spec.updated_at` are DB defaults, nothing to set.
