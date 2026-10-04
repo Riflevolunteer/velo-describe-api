@@ -82,3 +82,52 @@
   already dated 1980 - distinct SKUs from the ad's plain "700 Compact",
   not the same model despite the matching year.
 
+## Maillard "Freewheels" catalogue — c. 1982, per filename (Maillard1982FreewheelCatalog.pdf, 4 pp, scan, no text layer)
+
+- No printed date; "1982" is the filename's claim only. Lettered models
+  A-M exactly repeat the scheme from the 1978 cycle-fittings catalogue
+  above (data_source 49); N-U are new (Helicomatic 600/700 SH, 700 Course,
+  700 Compact, 700 Sprint lines). Tools 406-420 out of scope (no category).
+- Years: A-D, G, H (7234, 7233, 7235, 7236, 7237, 7238) year_to 1978 -> 1982,
+  confirming the 1978 catalogue's single/3-speed/4-speed Atom family is
+  still current. 7234 (Atom Luxe) description gained "2 or 4 pawls".
+- K (7239, Atom 5-speed, dismountable): 1978 catalogue said 13-28T, this one
+  says 13-24T (narrower). Kept the wider 1978 figure as primary, noted the
+  1982 figure in parens rather than overwrite - may be a real narrowing of
+  the range or just this edition's emphasis, not resolvable from the page.
+- O (2050, 2051 "Atom 77 (6 speed, black/silver cogs)"): catalogue doesn't
+  distinguish cog colour, extended both year_to -> 1982 (user decision -
+  weak evidence but nothing contradicts either colour still being sold).
+- P (2052 "Atom 77 Compact (6 speed)"): year_to 1980 -> 1982, description
+  enriched with the narrow-chain/13-28T ratio detail, previously bare.
+- S/T confirmed and enriched: 2113/2114 "700 Course (5/6 speed)" already
+  covered this catalogue's range (2113's 1984 year_to already exceeds it,
+  2114's 1982 matches exactly) - no year change, left as-is. 2112 "700
+  Compact" and 2124 "700 Compact Super (7 speed)" year_to 1980 -> 1982,
+  both descriptions enriched with the MR/MB/MS/MT sprocket-code detail.
+- U: 2120 retitled "Maillard Sprint" -> "Maillard 700 Sprint" (catalogue's
+  full name), year_to 1980 -> 1982, description enriched with steel/alloy
+  and ratio detail.
+- Added (11 rows, year_from=year_to=1982, this catalogue is the only
+  evidence): E "Maillard Atom (3-speed, first sprocket 16T)" and F
+  "Maillard T.B.W. (3-speed, first sprocket 16T)" - distinct from G/7237
+  which is the first-sprocket-14T version; I "Maillard Normandy
+  (5-speed)" and J "Maillard Normandy Sport (5-speed)" - distinct from
+  7240's sealed-bearing/chain-guard Normandy variant; L "Maillard Atom 77
+  (5-speed)" - only 6-speed Atom 77 rows existed; M "Maillard Special
+  Tandem"; N "Maillard Normandy Sport (6-speed)"; Q split into "Maillard
+  600 SH (5 speed)" and "Maillard 600 SH (6 speed compact)"; R split into
+  "Maillard 700 SH (6 speed compact)" and "Maillard 700 SH (7 speed
+  compact)" (mirrors the DB's existing one-row-per-speed-count convention
+  for this family). Individual replacement sprockets the catalogue also
+  sells separately (SHA-SHF, MA-MD/ZA-ZD, MR/MB/MS/MT) were not inserted
+  as Single Sprockets rows (user decision) - their ranges are folded into
+  the parent freewheel rows' descriptions instead.
+- Deleted (user decision, bike_spec/COMPONENT_OVERRIDES checked clean on
+  all three): 2115 "Maillard Helicomatic" and 2116 "Maillard Helicomatic
+  (single cog)" - bare velobase placeholders with no part number or years,
+  superseded by the new 600 SH / 700 SH rows above; 2111 "Maillard
+  [multiple spaces] Compact Super" - garbled-title duplicate of 2124
+  "Maillard 700 Compact Super (7 speed)", same year, no distinguishing
+  detail.
+
