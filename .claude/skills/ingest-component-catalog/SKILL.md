@@ -143,8 +143,10 @@ Write one `.sql` file per catalog in the scratchpad, then
 - **Provenance**: look up this catalogue's `data_source` row —
   `SELECT source_id FROM data_source WHERE source_type = 'catalogue' AND label = '<label>'`
   (label convention: `"<Manufacturer> <short catalogue name> (<year>)"`, e.g.
-  `Campagnolo Catalogue n. 18, English edition (c. 1985)` — match
-  `known-catalogs.md`'s section headings). If it doesn't exist yet, insert it
+  `Campagnolo Catalogue n. 18, English edition (c. 1985)` — match the
+  relevant brand file's section headings under
+  `references/known-catalogs/`, indexed from `references/known-catalogs.md`).
+  If it doesn't exist yet, insert it
   first (`source_type = 'catalogue'`, `citation` = the source filename/path).
   Set every new row's `source_ref` to that id. This catalogue does not need
   to be a correction to an existing velobase row — if the brand or part isn't
@@ -179,13 +181,16 @@ catalog can show a brake still fitted years after the DB's year_to).
 
 ## 5. Record it
 
-Add an entry to `references/known-catalogs.md`: catalog, year, source file,
-what was new/dropped vs the previous printing, rows added, rows adjusted,
-rows deleted/merged and why (include the deleted row's id and source_id, so
-a later catalog that seems to reintroduce it can be recognised as the same
-part), and anything left unresolved. Nothing in the repo changes for a
-catalog, so there is normally nothing to commit; the SQL stays in the
-scratchpad.
+Add an entry to the relevant brand file under `references/known-catalogs/`
+(see `references/known-catalogs.md` for the index — create a new brand file
+there if this is the first catalog for that manufacturer): catalog, year,
+source file, what was new/dropped vs the previous printing, rows added, rows
+adjusted, rows deleted/merged and why (include the deleted row's id and
+source_id, so a later catalog that seems to reintroduce it can be recognised
+as the same part), and anything left unresolved. Only read/touch that one
+brand file, not the others — this is what keeps each run's context small.
+Nothing in the repo changes for a catalog, so there is normally nothing to
+commit; the SQL stays in the scratchpad.
 
 ## Gotchas
 
