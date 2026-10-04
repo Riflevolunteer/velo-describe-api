@@ -20,7 +20,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/sakae-ringyo.md](known-catalogs/sakae-ringyo.md) — Sakae Ringyo / SR (1 entry)
 - [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (1 entry)
 - [known-catalogs/dia-compe.md](known-catalogs/dia-compe.md) — Dia-Compe (1 entry)
-- [known-catalogs/zeus.md](known-catalogs/zeus.md) — Zeus (1 entry)
+- [known-catalogs/zeus.md](known-catalogs/zeus.md) — Zeus (2 entries)
 - [known-catalogs/mavic.md](known-catalogs/mavic.md) — Mavic (1 entry)
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands (velobase title-fixup conventions, etc.)
 

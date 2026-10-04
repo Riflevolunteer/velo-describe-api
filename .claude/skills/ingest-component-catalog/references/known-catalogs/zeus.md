@@ -77,3 +77,46 @@ list, 190g — first Zeus row in Tyres).
   Iris chain, R.516 Arius saddle, R.821–826 Akront rims, R.861 Michelin
   tubular) were left out of the Zeus brand entirely — one-line mentions only,
   no despiece, and not Zeus's own product.
+
+## Catálogo Zeus-101 (Abadiano, 1970) — recordandobicicletaszeus.blogspot.com scan, data_source id 107
+
+Same Section 2 "Componentes" structure and Ref numbering as Catálogo 102
+(1973, see above) — this earlier printing was processed second, so the job
+was mostly cross-catalogue weight reconciliation and pushing `year_from`
+back to 1970 where this catalogue is earlier than what 102 alone had
+established. No despiece content outside what's listed below; tools,
+dropouts, fasteners and clothing sections are out of scope exactly as for
+102.
+
+**Confirmed an existing untracked attribution:** the Gran Sport pedal (id
+4057) already carried a "440 grams (Spec), zeus catalog 101 (1970)" note
+from before this skill tracked provenance — this catalogue's own Ref.41
+page gives exactly 440g, confirming that old note was correctly attributed
+all along.
+
+**year_from pushed back to 1970** (this catalogue is earlier than the
+DB's/102's existing value, weights otherwise matching): 4864 Alfa Junior
+rear mech (240g both), 3171 Gran Sport headset, 3651 Gigante road hub (590g
+both), 3652 Pista hub (590g both — now confirmed in *two* independent
+catalogues, so the Gigante/Pista equal-weight coincidence is real, not a
+scan artifact), 6392 Alloy Track Cog (12g both), 2026 Criterium triple
+crankset.
+
+**Cross-catalogue weight deltas kept as separate attributed figures** (not
+overwritten — per-printing running changes, not noise): 4870 Criterium 69
+rear mech (240g/1970 vs 220g/1973), 2681 Criterium 69 front mech (140g/1970
+vs 130g/1973), 2026 Criterium triple crankset (997g/1970 vs 990g/1973), 4056
+Pista pedal (410g/1970 vs 320g/1973 vs an older unlabeled 380g note), 3171
+Gran Sport headset (190g/1970 vs 188g/1973), 8146 Standard hub (**530g/1970
+vs 480g/1973** — the biggest single-printing delta found so far), 1181
+Super Alfa 71 caliper (190g/1970 vs 177g/1973 — this row had no description
+at all before this pass).
+
+**New row inserted** (source_ref 107): Seat Posts "Zeus Ideale" (id 8151,
+Ref.54, 180mm, 282g) — a rim-rail-saddle swan-neck seatpost sold alongside
+the rod-rail "Zeus Criterium" seatpost; not present in the 1973 catalogue's
+listing at all, genuinely missing before this pass.
+
+**Left unresolved:** same Ciclo-Cross crankset non-match as noted under
+Catálogo 102 above (this catalogue's Ref.31.2 is single-ring, 970g, still
+doesn't match the existing double-ring "w/ Ciclo-Cross Chainguard" rows).
