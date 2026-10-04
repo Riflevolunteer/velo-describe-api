@@ -131,3 +131,46 @@
   "Maillard 700 Compact Super (7 speed)", same year, no distinguishing
   detail.
 
+## R. J. Chicken & Sons trade catalogue, Maillard section — 7 November 1979 (Cycle_fittings_from_R_J_Chicken_catalogue_1979-11-07.pdf, 13 pp, scan, no text layer)
+
+- UK distributor's trade catalogue (pp 11-17, Maillard section) bundled
+  with their own suggested trade price list, which carries a firm printed
+  date ("NOVEMBER 7th, 1979") - harder evidence than the externally-guessed
+  "1978" on the cycle-fittings catalogue above. Different document; not a
+  reprint of it. Freewheel tools (406-408, a new chain-whip-style cog
+  removing tool), Normandy Q/R skewer+cone accessory sets, and all
+  axle/cone/dust-cap spare parts (p 17 and the price list's hub-spares
+  block) left out of scope, same convention as the other Maillard entry.
+- 7243 "Maillard Atom Sport" (quick-release small-flange hub) year_to
+  1978 -> 1979, confirmed by the price list's "Atom S/F, Q/R" line.
+- 3391 "Maillard Normandy (high flange, oblong holes)" enriched: the
+  catalogue's "L/F Front & Rear" (460g, elongated cut-outs, single
+  side/gear) and "L/F D/S Gear & Fixed" (300g) are the same shell under
+  different end-threading, folded into one description rather than split
+  into new rows.
+- 7246 "Maillard Atom 440" year_to 1978 -> 1979, enriched with both trims
+  the catalogue shows under one model number: 410g plain (p 13, boxed) and
+  510g with reflectors added (p 14) - a running change, not a new part.
+- 7239 "Maillard Atom (5-speed)" and 8125 "Maillard Normandy (5-speed)"
+  (inserted last session off the 1982 "Freewheels" catalogue): this 1979
+  document predates that one, so 8125's year_from moved back 1982 -> 1979,
+  and both got the ratio combos this catalogue/its price list attest
+  (14-16-18-20-22, 14-16-18-21-24, 14-17-20-23-26, 14-18-23-30-34) folded
+  into their descriptions. The price list calls these "ATOM and NORMANDY"
+  combinations jointly, without distinguishing plain Normandy from
+  Normandy Sport (8126) - left 8126 untouched, the combos don't clearly
+  belong to it specifically.
+- Added (10 rows, year_from=year_to=1979, this catalogue is the only
+  evidence): Hubs - "Maillard Atom (small flange, D/S Gear & Fixed)" 275g
+  and "(small flange, Front & Rear)" 400g, both solid-axle (distinct from
+  7243's QR version); "Maillard Normandy (small flange, de-luxe
+  competition, Q/R)" 510g and "(small flange, Q/R)" standard (prose only,
+  no weight given - weaker evidence); "Maillard Normandy (large flange,
+  Q/R)" 600g and "Normandy de-Luxe (large flange, Q/R)" 590g competition -
+  distinct from the existing "Luxe Competition" red/gold-label rows
+  (3384/3388/3389), which carry unrelated weights and aren't contradicted.
+  Pedals - "Maillard Atom 600RC" (chrome) and "600RN" (black cage), both
+  430g quill pedals with 13mm long-thread spindle; "Maillard Atom 450RA"
+  and "450RN", lower-tier quill pedals named only in the price list, not
+  pictured - noted as the weakest evidence in this pass.
+
