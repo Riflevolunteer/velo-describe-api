@@ -95,14 +95,28 @@ them). Classify each catalog item as:
   - **Same name, thin description** — rewrite the description to carry the
     catalog's detail (what it is, material, capacity, weight, codes)
     instead of leaving it as bare as the crawl left it.
+  - **Don't cite the source in the description text.** `source_ref` ->
+    `data_source` already carries which catalogue/edition a row came from,
+    and the API returns it (`source_label` on `/componentdetail`), so a
+    trailing `"(Zeus Catálogo 102, 1973)"` or a leading `"1982 catalogue:
+    ..."` is pure redundant noise — write the spec directly ("boron steel
+    axle, 68/70mm, 321g"), not "1982 catalogue: boron steel axle, 68/70mm,
+    321g". The exception is a part whose *spec itself differs* between two
+    catalogue editions (a BB that's 116mm in the 1982 printing and 119mm in
+    1989) — there, naming each edition is the only way to carry that
+    distinction, since `source_ref` is a single FK and can't represent two
+    sources at once. When you do that, pick the primary/most-authoritative
+    edition as `source_ref` and name the other edition inline.
   - **Present under another name** — same part number, different title
     (Record vs Gran Sport). Part numbers are reused across eras, so pick
     the title the catalogues best support for that row's years and mention
     the other name in the description; don't duplicate the row.
   - Earlier catalogue notes on the row (from our own passes) are ours to
-    restructure too: consolidate repeated "1981 catalog: ... Sep 1981
-    catalog: ..." fragments into one coherent description when a row gets
-    crowded, keeping which catalogue each figure came from.
+    restructure too: when a row gets crowded with repeated "1981 catalog:
+    ... Sep 1981 catalog: ..." fragments from before `source_ref` existed,
+    drop the ones that are pure citations of the row's own `source_ref` and
+    consolidate the rest into one coherent description, keeping dates only
+    where they distinguish genuinely different specs (see above).
   - Record a rewrite's old title in `known-catalogs.md` (as with deleted
     rows), so a later source using the old name can still be matched.
 - **Genuinely missing** — only for categories that exist. Confirm by part
@@ -164,6 +178,10 @@ Write one `.sql` file per catalog in the scratchpad, then
   `MANUAL-<CODE>-<YEAR>-<part>` naming. That naming existed only to dodge the
   velobase crawler's GUID space; `source_ref` now carries the actual
   provenance, so a `MANUAL-...`-shaped id buys nothing a UUID doesn't.
+  Since `source_ref` is the provenance record, don't also restate the
+  catalogue name/date inside the `description` text you're writing in this
+  same statement — see the "don't cite the source in the description text"
+  bullet above.
 - **Comments on their own lines.** `load-sql.js` splits on `;` followed by
   a newline; a trailing `-- comment` after the semicolon merges statements
   into one batch. MySQL has executed them anyway so far, but the statement
