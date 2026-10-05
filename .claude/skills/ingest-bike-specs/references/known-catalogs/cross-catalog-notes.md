@@ -266,7 +266,8 @@ inserted.
   Hyperglide 8-speed) or unresolvable variant choices (Normandy alloy
   hubs, Super Champion rims, Mafac course levers, Regina Oro, Mavic
   Monthlery). Coverage now needs component catalogues, not overrides.
-- Regenerate with `$(ls bike_specs/*.csv | grep -v 1940)`: the 1940 Bianchi
-  CSV is still in bike_specs/ after that catalogue was deleted, and a bare
-  generator run would reload it. Baseline without it reproduced the DB
-  exactly (2790 specs, 894 linked) before the overrides; 899 after.
+- This pass excluded the 1940 Bianchi CSV, which was still in bike_specs/
+  after that catalogue was deleted (a bare generator run would have
+  reloaded it). Baseline without it reproduced the DB exactly (2790 specs,
+  894 linked) before the overrides; 899 after. The CSV has since been
+  removed from bike_specs/, so a bare generator run is safe again.
