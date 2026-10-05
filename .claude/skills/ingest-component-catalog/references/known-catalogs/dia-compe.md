@@ -56,3 +56,25 @@
   8113 (88 -> 90); 1987 Bianchi "QS500N Balance Response System" -> 682
   (143 -> 144). Raleigh 161 / 164 levers remain unlinked (missing pages).
 
+## Dia-Compe NGC982-280 brochure + 986 instruction leaflet — undated (equusbicycle.com/bike/diacompe/diacompe.htm)
+
+- Two leaflets, four scans, no dates: `data_source` 115 "Dia-Compe
+  NGC982-280 cantilever set brochure (undated)" (cover "New Gran-Compe" +
+  exploded view with code/catalogue-no. parts list) and 116 "Dia-Compe 986
+  cantilever brake instruction leaflet (undated)" (EN/JP; Dia-Compe Inc.
+  Fletcher NC, Dia-Compe Taiwan, Yoshigai addresses).
+- NGC982-280 set (code 8282280001): NGC982F / NGC982R arches, GC280 lever,
+  1245 straddle bridge, 1274-380 straddle cable, 982.11 shoes, 982.7 /
+  982.8 brazed pivots. 986: 986.15 per-arm spring tension adjuster, XMA.5
+  gold right / XMA.6 silver left springs, 0.5-3.0 kgf lever force, 1242
+  bridge, 1276-300W cable, 982.7-III / 982.8-III pivots at 255 mm (fork) /
+  253 mm (stay) for 575 mm-OD rims 23-32 mm wide.
+- Updated: 697 NGC982 description (set breakdown added; its stroke/weight
+  figures came from the 1986 catalogue, source_ref now 115). 663 retitled
+  "Dia-Compe 986" -> "Dia-Compe 986 (cantilever)", description rewritten,
+  source_ref 116. No years changed (undated source).
+- Not touched: 8111 GC280 (nothing new); 980/981/983/985/987/988/960.
+- Unresolved: 663's velobase 1980-1980 is probably wrong — the 986 is absent
+  from Products 1986 (though pp 12-16, 21-22 unscanned), and its 26in MTB
+  rim chart and Taiwan address suggest c.1988+. Re-date from a dated
+  catalogue if one turns up.
