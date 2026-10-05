@@ -1,6 +1,6 @@
 # Raleigh catalogs processed so far
 
-## 1973 Raleigh — `1973_raleigh_spec.csv` (9 bikes, 165 specs, 53 linked)
+## 1973 Raleigh — `1973_raleigh_spec.csv` (9 bikes, 165 specs, 54 linked)
 
 - Header "Weight." (trailing period) is mapped in BIKE_FIELD_LABELS.
 - This catalog motivated the single-word-title rule: Brooks B17N, Simplex
@@ -17,6 +17,9 @@
 - 2026-10-05 re-link pass: "G.B. Forged Alloy" stem (International,
   Competition Mk II) -> 6533 GB Forged; it was ambiguous with the 1950s
   Hiduminium spearpoint row.
+- 2026-10-05: Professional Mk IV `1/2" x 3/32" Regina ORO` chain -> 1382
+  Regina Extra 50 Oro (the Regina Extra C/7 109/E catalogue's only
+  1/2 x 3/32 oro chain; four oro rows had competed).
 
 ## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 360 specs, 90 linked)
 

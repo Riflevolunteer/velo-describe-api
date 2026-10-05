@@ -1086,6 +1086,9 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace chain': 1414, // Shimano CN-7401, Dura-Ace 7400
     // 1986 Cinelli (Ten Speed Drive Imports).
     'regina cxs': 1384, // Regina CX / CX-S
+    // 1973 Raleigh. The Regina Extra C/7 109/E catalogue's only 1/2 x 3/32
+    // «oro quality» chain is the 50 oro; four oro rows otherwise compete.
+    '1 2" x 3 32" regina oro': 1382, // Regina Extra 50 Oro
     // 1975 Falcon.
     'renolds': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
   },
