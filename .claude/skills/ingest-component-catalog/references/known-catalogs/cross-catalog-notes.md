@@ -49,3 +49,17 @@
     "MB2600"; 6212 "SJ (2nd type)" -> "SJ6311"; 6240 "SLJ (4th type,
     black anodized)" -> "SLJ5057 (black anodized)"; 6239 "SLJ (4th
     type)" -> "SLJ5057"; 6216 "SXP (2nd type; stem mount)" -> "SXP 4506".
+
+## source_ref backfill (2026-10-05)
+
+- 1,137 velobase rows (`source_ref` 1) retagged to the catalogue that last
+  changed them, matching the "last source to change this row" rule in
+  SKILL.md §4. Evidence: applied SQL from earlier sessions, ids in these
+  logs, and catalogue cues in descriptions.
+- Added `data_source` rows for six Campagnolo catalogues ingested without
+  one: 108 Catalogo N. 13 (c. 1955), 109 Catalogo N. 14 (c. 1960), 110
+  Dealer Parts Catalogue (1988), 111 "Euclid" brochure (September 1988),
+  112 range brochures GB (June and September 1990), 113 range brochure GB
+  (January 1991). Use these ids for any re-ingestion.
+- Left as velobase: 10 Simplex rows whose only change was a typo or merge
+  with no catalogue named, and 30 rows touched only by dedupe/sweep passes.
