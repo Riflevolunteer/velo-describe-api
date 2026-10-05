@@ -52,6 +52,10 @@
   Crossbow, 680 MX-901 (velobase bare — the 1986 MX901 was inserted as its
   own row; candidate merge next pass), 683, 684, 668-676 later ranges,
   6516 / 6517 stems.
+- Same scan set also at https://www.retrobike.co.uk/archive/1986-dia-compe-catalogue.1153/download
+  (`dc86.pdf`, img2pdf, 25 pp; the download 406s without a Referer from the
+  archive page). Checked 2026-10-05: identical pages, p.26 bound before
+  p.23, **still no pp 12-16 or 21-22** — nothing new, not re-ingested.
 - Bike links: 1985 Raleigh "DC630N alloy S.P." -> 8083, "281 levers" ->
   8113 (88 -> 90); 1987 Bianchi "QS500N Balance Response System" -> 682
   (143 -> 144). Raleigh 161 / 164 levers remain unlinked (missing pages).
