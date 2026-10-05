@@ -74,3 +74,51 @@
   Motobecane Nomade). Left: velobase Challenger variants 2377, 4298, 6064,
   4300, 4289.
 
+
+## Huret "Accessoires Cycles, Cyclomoteurs, Motos" — 1976 (disraeligears.co.uk, 40 images)
+
+- `data_source` 118, label "Huret Accessoires Cycles Cyclomoteurs Motos
+  (1976)". Source:
+  https://www.disraeligears.co.uk/site/huret_accessoires_cycles_cyclomoteurs_motos_-_1976.html
+  (front cover, inside front cover, page_1..36 = sheets H1-H36, inside rear
+  cover gear charts, rear cover). Huret et ses Fils, Nanterre, "member of
+  Frexa", French / English, weights in g and oz, no prices.
+- New vs 1975: Success rear 2460 / 2470 and front 975; Duopar 2600 / 2640 and
+  long cage 2648 / 2654; Allvit Safety 2546 / 2549; Jubilee front 530 (28.6mm);
+  Ratchet levers (down tube 1465-1468, stem 1416 / 1471 / 1472); Challenger
+  Click-In (1349-1354, stem 1363 / 1368 / 1370); 80mm stem levers 1239 / 1240 /
+  1245; 80mm Click-In (1375-1380, stem 1389 / 1394 / 1396); Luxe levers
+  1337-1344. Jubilee range is back (absent 1975): rear 2200 family now 136g
+  (133g in 1973), long cage 145g, front 500.
+- Renumbered: Allvit 1900 -> 2500 / 2540, Super Allvit 1999 -> 2548 / 2554,
+  Svelto 2000 -> 2040 / 2072, Svelto small-wheel 2030 -> 2065; front
+  "Standard" 900 / 901 is now "Club"; Competition levers 1733-1736 / 1707 now
+  "Jubilee / Success". Dropped: Challenger long cage 2448 / 2454, 1975
+  standard lever numbers (1898 / 1882 / 1899 / 1884 / 1879 / 661 / 641 C /
+  1848 C).
+- Retitled (old titles): 4299 "Huret Success" -> Success 2460 / 2470; 4292
+  "Huret Super Allvit 1999" -> + 2548 / 2554; 4302 "Huret Duopar (titanium)"
+  -> Duopar 2600 / 2640 (titanium), NULL -> 1976; 4293 "Huret Svelto 2000 /
+  2000 D (2nd version)" -> + 2040 / 2072; 7940 "Huret Svelto 2030" -> + 2065;
+  2396 "Huret Jubilee 500 (5 holes ...)" -> Jubilee 500 / 530 (5 holes ...);
+  2389 "Huret Success (solid clamping band)" -> Success 975 (solid clamping
+  band), year_from 1977 -> 1976; 2378 "Huret Club" -> Club 900 / 901
+  (velobase 133g Spec dropped, catalogue 163g); 7945 "Huret Competition
+  levers 1733-1736 / 1707" -> Jubilee / Success levers 1733-1736 / 1707; 6066
+  "Huret Ratchet" -> Ratchet levers 1465-1468 / 1416 / 1471 / 1472.
+- year_to -> 1976: 4303, 4307, 4290 Allvit (title kept for the bike-name
+  match), 4292, 4293, 7940, 7945, 6073 Challenger levers, 7946 80mm levers,
+  7943 bar-end. Description only: 4273 Challenger (2448 / 2454 not in 1976).
+- New (5 rows, 1976): 8172 Allvit Safety 2546 / 2549, 8173 Duopar 2648 /
+  2654 (titanium, long cage), 8174 Luxe levers 1337-1344, 8175 Challenger
+  Click-In levers 1349-1370, 8176 80mm long Click-In levers 1375-1396.
+- Deleted (merged): 7944 "Huret Standard 900 / 901" (Front Derailleurs,
+  1975-1975, our 1975 catalogue row, `37ddc8a5-be86-11f1-a2df-02fea3763e8d`)
+  into 2378 Club 900 / 901 — same refs. No links / overrides.
+- Bike links unchanged (regenerated all catalogues: 901 links, identical).
+  Front Jubilee overrides (<=1976 2396, >=1977 2395) still agree with row
+  years.
+- Left: 6077 Jubilee lever 1567 and 4304 Jubilee black (not in 1976); 6071
+  1975 standard levers (Luxe 1337-1344 inserted separately, catalogue
+  doesn't say it's the same lever); velobase Allvit generations 4269-4272,
+  Challenger II / 3rd-version rows, Success-Duopar CPSC fronts (1978+).
