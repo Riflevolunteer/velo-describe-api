@@ -8,8 +8,10 @@ CREATE TABLE `bike_spec` (
   -- Set on insert and bumped by the component_id back-fill UPDATE, so it
   -- records when a spec was last (re)linked.
   `updated_at` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `source_ref` int DEFAULT NULL, -- data_source.source_id
   PRIMARY KEY (`bike_spec_id`),
   KEY `idx_bike_spec_bike_id` (`bike_id`),
   KEY `idx_bike_spec_label_id` (`label_id`),
-  KEY `idx_bike_spec_component_id` (`component_id`)
+  KEY `idx_bike_spec_component_id` (`component_id`),
+  KEY `idx_bike_spec_source_ref` (`source_ref`)
 );

@@ -14,6 +14,8 @@ CREATE TABLE `component_detail` (
   -- across categories (e.g. an "Ofmega Vantage" brakeset AND crankset) and
   -- even within one category as variants, so title-based dedupe drops data.
   `source_id` varchar(36) DEFAULT NULL,
+  `source_ref` int DEFAULT NULL, -- data_source.source_id
   PRIMARY KEY (`component_id`),
-  UNIQUE KEY `uq_component_detail_source_id` (`source_id`)
+  UNIQUE KEY `uq_component_detail_source_id` (`source_id`),
+  KEY `idx_component_detail_source_ref` (`source_ref`)
 );

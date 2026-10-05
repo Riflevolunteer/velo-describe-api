@@ -176,8 +176,10 @@ app.get('/componentdetail', function (req, res, next) {
       }
       const component_id = req.query.id;
       // Executing the MySQL query (select all data from the 'users' table).
-      connection.query(`SELECT compd.*, compg.title as group_title FROM component_detail compd
-                          left join component_group compg on compg.group_id=compd.group_id where compd.component_id=?`, [component_id], function (error, results, fields) {
+      connection.query(`SELECT compd.*, compg.title as group_title, ds.label as source_label, ds.source_type FROM component_detail compd
+                          left join component_group compg on compg.group_id=compd.group_id
+                          left join data_source ds on ds.source_id=compd.source_ref
+                          where compd.component_id=?`, [component_id], function (error, results, fields) {
         connection.release();
         // If some error occurs, we throw an error.
         if (error) {
@@ -362,8 +364,9 @@ app.get('/bikedetail', function (req, res, next) {
     }
 
     const bikePromise = new Promise((resolve, reject) => {
-      connection.query(`SELECT b.*, bb.title as brand_title FROM bike b
+      connection.query(`SELECT b.*, bb.title as brand_title, ds.label as source_label, ds.source_type FROM bike b
                           left join bike_brand bb on bb.brand_id=b.brand_id
+                          left join data_source ds on ds.source_id=b.source_ref
                           where b.bike_id=?`, [bike_id], function (error, bikeResults) {
         if (error) return reject(error)
         resolve(bikeResults)

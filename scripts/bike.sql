@@ -11,6 +11,8 @@ CREATE TABLE `bike` (
   `image` blob,
   `search_text` varchar(90) DEFAULT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP, -- when the bike was first ingested
+  `source_ref` int DEFAULT NULL, -- data_source.source_id
   PRIMARY KEY (`bike_id`),
-  KEY `idx_bike_brand_id` (`brand_id`)
+  KEY `idx_bike_brand_id` (`brand_id`),
+  KEY `idx_bike_source_ref` (`source_ref`)
 );
