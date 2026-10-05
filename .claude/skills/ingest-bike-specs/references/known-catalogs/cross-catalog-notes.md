@@ -254,3 +254,19 @@ inserted.
   Kalkhoff "Shimano 600" FD/RD (600 vs 600 AX), Superbe Pro FD (clamp vs
   band), Weinmann 999 De Luxe "or Universal 61", Simplex Prestige stem
   shifter (only stem-mount row is 1964-65).
+
+## 2026-10-05 re-link pass (no new CSV)
+
+- Swept every unlinked spec under a mapped label for same-category rows
+  sharing brand + model words: ~120 specs had any candidate, and only 5
+  could be justified (GB Forged stem, Spidel 700 dural pedals, Nervar
+  cotterless crank; see raleigh/peugeot/motobecane). The remainder are
+  models with no DB row (ITM 200/201/Mondial, Rigida Jade/Saphir, Kusuki
+  WP-B/WIN, SR SP-153/CT-P5E, Kalloy SP-248, 600 AX headset/BB/chain,
+  Hyperglide 8-speed) or unresolvable variant choices (Normandy alloy
+  hubs, Super Champion rims, Mafac course levers, Regina Oro, Mavic
+  Monthlery). Coverage now needs component catalogues, not overrides.
+- Regenerate with `$(ls bike_specs/*.csv | grep -v 1940)`: the 1940 Bianchi
+  CSV is still in bike_specs/ after that catalogue was deleted, and a bare
+  generator run would reload it. Baseline without it reproduced the DB
+  exactly (2790 specs, 894 linked) before the overrides; 899 after.

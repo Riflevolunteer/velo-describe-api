@@ -876,6 +876,8 @@ const COMPONENT_OVERRIDES = {
     // 1979 Peugeot (French catalogue).
     'stronglight 49 d anodised square taper double 42 x 52': 1895, // Stronglight 49D (Depose), as the 1975 Motobecane pick; DB has no 1970s 49D row
     'stronglight 49 d dural triple 32 x 42 x 52': 1893, // Stronglight 49 Tri
+    // 1974 Motobecane (Grand Touring). The steel cottered Nervar has no DB row.
+    'nervar cotterless 40 52 alloy chainwheel rings with alloy guard': 1653, // Nervar (3-pin, alloy/cotterless)
   },
   Saddles: {
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
@@ -934,6 +936,8 @@ const COMPONENT_OVERRIDES = {
     'cinelli mod 1 a': 6489, // Cinelli 1A (winged "C" logo, 1978-82)
     // 1979 Peugeot (French catalogue).
     'atax forged dural anodised hidden expander': 6447, // ATAX (1A style)
+    // 1973 Raleigh. Also substring-hits the 1950s Hiduminium spearpoint.
+    'gb forged alloy': 6533, // GB Forged
   },
   Shifters: {
     'suntour alpha 5000 accushift': 7859, // SunTour SL-5000-BS / CS / CP, alpha-5000 (AccuShift leaflet c. 1987)
@@ -1038,6 +1042,7 @@ const COMPONENT_OVERRIDES = {
     // 1979 Peugeot (French catalogue).
     'lyotard dural course with toe clips and straps': 3815, // Lyotard 460D (1970-80), the standard French dural quill
     'lyotard with toe clips and straps': 3815, // Lyotard 460D
+    'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
     // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick

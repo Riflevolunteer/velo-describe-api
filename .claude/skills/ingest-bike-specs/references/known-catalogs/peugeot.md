@@ -1,6 +1,6 @@
 # Peugeot catalogs processed so far
 
-## 1979 Peugeot — `1979_peugeot_spec.csv` (29 bikes, 405 specs, 105 linked)
+## 1979 Peugeot — `1979_peugeot_spec.csv` (29 bikes, 405 specs, 88 linked)
 
 - Source: "Les Vélos, Cycles Peugeot 79", French home-market catalogue,
   13 pages, printed 01.79, hosted on Calameo
@@ -52,4 +52,8 @@
   A CSV rewrite of mine also duplicated the header as a data row for one
   generation; caught before load.
 - Regression: all other catalogs unchanged.
+- 2026-10-05 re-link pass reverses the Spidel call above: "Spidel 700
+  dural course" (PY 10 CP, PY 10 LC) -> 3833 Spidel/Maillard 700 Black
+  Alloy Cages. "Dural" rules out the steel-cage row and "course" the
+  platform, same reasoning as the Lyotard dural course -> 460D pick.
 

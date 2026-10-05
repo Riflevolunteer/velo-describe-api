@@ -1,6 +1,6 @@
 # Motobecane catalogs processed so far
 
-## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 129 specs, 38 linked)
+## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 129 specs, 40 linked)
 
 - "Catalog Page Reference" column ignored via IGNORED_LABELS.
 - Frame Size cells had backslash/doubled-quote inch-mark debris; rewritten.
@@ -36,6 +36,10 @@
   Jubile, Nuovo Record), the two SunTour V-GT bikes (Mirage, Grand Touring)
   get none — V-GT is a rear-only model and the catalogue never names the
   front mech, so the split's copied rows were wrong. 131 -> 129 specs.
+- 2026-10-05 re-link pass: Grand Touring "NERVAR cotterless, 40-52 alloy
+  chainwheel rings, with alloy guard" -> 1653 Nervar (3-pin,
+  alloy/cotterless), the only cotterless Nervar row. The steel cottered
+  Nervar cranks on the other bikes still have no row.
 
 ## 1975 Motobecane — `1975_motobecane_spec.csv` (11 bikes, 205 specs, 58 linked)
 
