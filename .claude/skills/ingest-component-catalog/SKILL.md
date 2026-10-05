@@ -148,7 +148,13 @@ Write one `.sql` file per catalog in the scratchpad, then
   `references/known-catalogs/`, indexed from `references/known-catalogs.md`).
   If it doesn't exist yet, insert it
   first (`source_type = 'catalogue'`, `citation` = the source filename/path).
-  Set every new row's `source_ref` to that id. This catalogue does not need
+  Set every new row's `source_ref` to that id, and also set it on every
+  existing row this catalogue changes (years, title or description) —
+  `source_ref` means "last source to change this row", so the catalogue
+  replaces velobase or an earlier catalogue there. Add `source_ref = <id>`
+  to the same idempotency-guarded UPDATE rather than a separate unguarded
+  one, so a re-run doesn't retag rows nothing changed on. Rows that only
+  matched with no change keep their `source_ref`. This catalogue does not need
   to be a correction to an existing velobase row — if the brand or part isn't
   in the DB at all, these inserts are the first and only source for it.
   Still also give every new row a `source_id` — `component_detail.source_id`
