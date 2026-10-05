@@ -401,6 +401,7 @@ function normalizeForMatch(value) {
 // matching range means no link rather than a wrong-era one.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'shimano at10 x sis': 7721, // 1993 Bianchi "AT10-X" spelling of the AT10 SIS entry below
     'suntour cyclone 7000': 2631, // SunTour Cyclone 7000 (White) FD (1987 Bianchi)
     // SunTour No. 61 retitles (bare "Vx" / "ARx" rows now carry codes): keep existing links
     'suntour vx': 2614, // SunTour FD-1600, VX (1981 Kalkhoff)
@@ -484,6 +485,9 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    'shimano at10 x sis': 7720, // 1993 Bianchi "AT10-X" spelling of the AT10 SIS entry below
+    // 1987 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
+    'campagnolo c record': 4096, // Campagnolo 0102050, C-Record (first generation)
     // SunTour AccuShift leaflets (c. 1987): pin retitled 1987 Bianchi links
     'suntour cyclone 7000': 4740, // SunTour RD-CL10-SS, Cyclone 7000
     'suntour alpha 5000': 4721, // SunTour RD-5000-SS, alpha-5000
@@ -589,6 +593,8 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1983 Bianchi. 1251 small flange is the only Nuovo Tipo row in range for 1983.
+    'campagnolo tipo': 3230, // Campagnolo 1251, Nuovo Tipo (small flange)
     'shimano 600': [{ from: 1984, to: 1987, id: 7551 }], // 1987 Bianchi: Shimano HB-6207F / HB-6207R, 600EX (freewheel hubs; bike has MF-6208)
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
     // 1973 Zeus catalog lists bare "Zeus Gigante" only on road models.
@@ -654,6 +660,11 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1993 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
+    'campagnolo veloce': 587, // Campagnolo BR-02VL, Veloce Monoplaner
+    'shimano deore xt alloy cantilever': 980, // 1985 Raleigh: Shimano BR-MC70, Deore XT M700 (1983-86, first-gen XT)
+    // 1974 Motobecane. 1122 is the only Weinmann 500 variant dated before 1980.
+    'weinmann 500 side pull': 1122, // Weinmann AG 500 (earlier, red center bolt washer, cap nut)
     // Weinmann UK leaflet c. 1970: model-level Vainqueur 999 (610 / 750) row, 1970-75 (1973-75 bikes).
     // The 999 was Weinmann's only centre-pull then, so bare "Weinmann centre pull" links too (user decision 4A).
     // "999 De LUXE or UNIVERSAL 61" left unlinked (two makes).
@@ -759,13 +770,13 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
+    // 1983 Bianchi. A later Campagnolo pass added the A0D0P (1987-91) row, making bare Record Pista ambiguous.
+    'campagnolo record pista': [{ to: 1985, id: 2966 }, { from: 1987, id: 7024 }], // 1040 to 1985; A0D0P from 1987
+    'campagnolo veloce': 2970, // 1993 Bianchi: Campagnolo HS-01VL, Veloce (part-number retitle)
     'shimano 600': [{ from: 1983, to: 1987, id: 3090 }], // 1987 Bianchi: Shimano HP-6207, 600EX
     // 1974 Motobecane.
     campagnolo: 2959, // Campagnolo 1039, Gran Sport / Record
     'stronglight competition': 3124, // Stronglight V4 Competition (earlier version, two pin locknut)
-    // 1975 Motobecane. Without this the only substring hit is the Record
-    // Pista #1040 track headset.
-    'campagnolo record': 2959,
     // 1981 Kalkhoff (ambiguous with the Super Record Pista row).
     'campagnolo super record': 2968, // Campagnolo 4041, Super Record
     // 1983 Bianchi. Bare "Nuovo Record" substring-hits the Alleggerita
@@ -779,6 +790,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105': [{ to: 1989, id: 3083 }, { from: 1990, id: 3086 }], // HP-1050 / HP-1055 105SC
     'shimano dura ace': [{ from: 1984, to: 1993, id: 3099 }, { from: 1994, id: 3100 }], // HP-7400 / HP-7410
     // 1993 Bianchi.
+    // 1975 Motobecane / later catalogues. Without this the only substring hit is the Record Pista #1040 track headset.
     'campagnolo record': [{ to: 1985, id: 2959 }, { from: 1990, id: 2964 }], // 1039 / HS-01RE
     'campagnolo chorus': 2956, // Campagnolo 704/101, Chorus
     'shimano ultegra': 3087, // Shimano HP-6400, 600 Ultegra
@@ -788,12 +800,18 @@ const COMPONENT_OVERRIDES = {
     'spidel s7 competition': 3123, // Stronglight S7 Super Competition; DB dates it 1981-83, catalogue shows it 1979
   },
   'Bottom Brackets': {
+    // 1973 Zeus. Bare 'Zeus Criterium' row 186 was merged into 188 (Zeus catalogue 102 dedupe, 2026-10-04).
+    'zeus criterium (e)': 188, // Zeus Ref.33, Criterium
     // 1981 Kalkhoff. Bare substring hits the titanium 1st-gen row; the
     // period part is the second-gen 4031.
     'campagnolo super record': 43, // Campagnolo 4031, Super Record (Second Gen)
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    'campagnolo pista 49t': 1505, // 1973 Raleigh: Campagnolo 1051, Record Pista (144bcd, 1967-85)
+    'campagnolo veloce 53 39t': 7062, // 1993 Bianchi: Campagnolo FC-01VL, Veloce
+    'shimano at10 x 50 40 28t': 7724, // 1993 Bianchi: Shimano FC-AT10, Altus A10 (SG-X triple)
+    'shimano at10 x 50 40 30t': 7724, // 1993 Bianchi: Shimano FC-AT10, Altus A10 (SG-X triple)
     'shimano 600 52 42t': [{ from: 1984, to: 1987, id: 1798 }], // 1987 Bianchi: Shimano FC-6207, 600EX
     'shimano ct10 48 38 28t': 7736, // 1993 Bianchi, from the Jul 1992 manual: Shimano FC-CT10, Altus C10
     'suntour fs e 52 42 32t': 8002, // 1993 Bianchi: SunTour CW-FS00-N, FS-E (52-42-32)
@@ -957,7 +975,9 @@ const COMPONENT_OVERRIDES = {
   'Shifting Brake Levers': {
     'shimano at10 sis': 7722, // 1993 Bianchi, from the Jul 1992 manual: Shimano ST-AT10, Altus A10
     // 1993 Bianchi (integrated levers; the Shifters label maps to both
-    // categories). No Record or Chorus Ergopower rows of this era in the DB.
+    // categories). EC-12RE CG was fitted to both Record and Chorus in the 1993 range (row 6345 description).
+    'campagnolo record 8 speed ergopower': 6345, // Campagnolo EC-12RE CG, Record
+    'campagnolo chorus 8 speed ergopower': 6345, // Campagnolo EC-12RE CG, Record (Chorus used the same lever)
     'shimano dura ace sti': 6365, // Shimano ST-7400, Dura-Ace (Dual Control)
     'shimano ultegra sti': 6358, // Shimano ST-6400, 600 Ultegra (Dual Control)
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
@@ -1074,6 +1094,7 @@ const COMPONENT_OVERRIDES = {
     'suntour powerflo 12 30t 7 speed': 1221, // SunTour CS-AP10-S7 / -K7, PowerFlo 7-speed (1992 catalogue)
   },
   Freewheels: {
+    '13 24t regina oro 6 speed': 2194, // 1973 Raleigh: Regina Oro (6 speed)
     'suntour alpha 5000 14 28t': 7866, // SunTour FW-AL00-R6, Alpha freewheel (AccuShift leaflet c. 1987)
     'shimano 600 14 24t': [{ from: 1986, to: 1989, id: 2218 }], // 1987 Bianchi: Shimano MF-6208-6, 600EX SIS
     'simplex 14 24t': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row

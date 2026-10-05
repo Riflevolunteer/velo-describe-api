@@ -210,3 +210,47 @@ the repo.
   Peugeot 83, Raleigh 43, Zeus 29, Falcon 17. No other override points at
   a missing row.
 
+
+## Re-link sweep across all loaded catalogues (2026-10-05)
+
+Regenerated all 14 loaded CSVs and diffed each generated link against the
+DB's (bike, label, value) -> component_id. Linked specs 878 -> 894 of 2,790;
+afterwards generator and DB agree exactly (0 differences). No spec rows
+inserted.
+
+- **Regressions from component-side renames/merges** (DB kept the right
+  link, but a fresh reload would lose it): the "Campagnolo <part no>,
+  <name>" retitles put a part number between brand and model, so bare
+  values no longer substring-match. Overrides added: Brakes 'campagnolo
+  veloce' -> 587, Headsets 'campagnolo veloce' -> 2970, Rear Derailleurs
+  'campagnolo c record' -> 4096 (1987 Bianchi). Headsets 'campagnolo record
+  pista' became ambiguous when 7024 A0D0P (1987-91) was added; now ranged
+  (to 1985 -> 2966 1040, from 1987 -> 7024). Bottom Brackets 'zeus criterium
+  (e)' -> 188 after row 186 was merged into it (component catalogue dedupe,
+  2026-10-04).
+- **Stale links fixed by one-off UPDATE** (loaded before the year-ranged
+  Super Record overrides existed; back-fill never overwrites): 1983/84/87
+  Bianchi Brakes "Campagnolo Super Record" 582 (4061 v1) -> 583 (v2), 4 rows;
+  1984/87 Bianchi Rear Derailleur "Campagnolo Super Record" 4149 (PAT. 80)
+  -> 4152 (2nd gen ver. 2), 2 rows. 1983 RD stays 4149 per the override.
+- **New links**: 1973 Zeus BB/Pedals "Zeus Pista" and Tyres "Zeus-2000
+  Imperforable Tubulars" matched on their own after the Zeus catalogue 102
+  renames/inserts (187, 4056, 8148). Overrides: 1973 Raleigh 'campagnolo
+  pista 49t' -> 1505, '13 24t regina oro 6 speed' -> 2194; 1974 Motobecane
+  'weinmann 500 side pull' -> 1122 (only pre-1980 Weinmann 500 variant);
+  1983 Bianchi Hubs 'campagnolo tipo' -> 3230 (only Nuovo Tipo row in range);
+  1985 Raleigh 'shimano deore xt alloy cantilever' -> 980 (BR-MC70,
+  1983-86); 1993 Bianchi 'campagnolo veloce 53 39t' -> 7062, the "AT10-X"
+  spelling of the existing AT10 crank/FD/RD overrides (7724/7721/7720), and
+  Record + Chorus 8-speed Ergopower -> 6345 EC-12RE CG (its description says
+  it was fitted to both groups in 1993).
+- Removed a dead duplicate Headsets 'campagnolo record' key (the later
+  ranged entry already won, same row for 1975 Motobecane).
+- **Left unlinked on purpose**: of 662 distinct unlinked component values
+  only ~90 had any same-brand candidate. Skipped generic values ("Alloy",
+  "Course levers", bare "Sedis"/"Simplex"/"Suntour"), models with no DB row
+  (Dia-Compe 161/164, Shimano CN-HG20, L512SGS), and variant choices the
+  catalogue text can't settle: 3ttt Competizione (Merckx vs Gimondi), 1981
+  Kalkhoff "Shimano 600" FD/RD (600 vs 600 AX), Superbe Pro FD (clamp vs
+  band), Weinmann 999 De Luxe "or Universal 61", Simplex Prestige stem
+  shifter (only stem-mount row is 1964-65).
