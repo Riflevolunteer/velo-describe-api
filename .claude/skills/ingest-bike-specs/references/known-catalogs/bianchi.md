@@ -45,8 +45,13 @@
   SuperMighty → Super Mighty Competition.
 - Left unlinked: TTT stem/bars/saddle/post (no model), Cinelli bars, San
   Marco saddle/post, Selle Italia Aero II (no row), Campagnolo Tipo (five
-  Nuovo Tipo rows), Mavic Monthlery (three), tyres, Mafac cantilever,
-  Shifters/Levers (no category mapping).
+  Nuovo Tipo rows), tyres, Mafac cantilever, Shifters/Levers (no category
+  mapping).
+- 2026-10-05: Campione d'Italia "Mavic Monthlery" rim -> 5093 Mavic
+  Montlhéry Route (the 84-85 Mavic catalogue names the Route as the
+  première-monte/OEM rim; Pro was for retail builds). Judgment call; the
+  rows were retitled Monthlery -> Montlhéry in that catalogue pass, so the
+  bare value no longer even substring-matches.
 
 ## 1984 Bianchi — `1984_bianchi_spec.csv` (6 bikes, 77 specs, 24 linked)
 

@@ -1150,6 +1150,9 @@ const COMPONENT_OVERRIDES = {
     // value carries a spoke aside.
     'mavic gp4': 5069, // Mavic GP 4
     'mavic or 10 (tied and soldered spokes)': 5103, // Mavic OR 10
+    // 1983 Bianchi Campione d'Italia. Bare "Monthlery" spans Route/Pro/Légère;
+    // the 84-85 Mavic catalogue names the Route as the OEM (première monte) one.
+    'mavic monthlery': 5093, // Mavic Montlhéry Route
     // 1987 Bianchi (three identically titled MA 40 rows).
     'mavic ma40': 5077, // Mavic MA 40
     // 1993 Bianchi.
