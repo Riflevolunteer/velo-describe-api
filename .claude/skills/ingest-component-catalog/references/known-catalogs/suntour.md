@@ -485,3 +485,44 @@
   unchanged (no Cyclone-era bikes 1975-79 in the DB yet; the 1975
   Motobecane V-GT Luxe links to 4704 stand, now with the 310g figure).
 
+
+## SunTour "Component Parts" service book, blue cover — undated, c. 1974 (equusbicycle.com, 33 single-page PDFs)
+
+- `data_source` 124, label "SunTour Component Parts service book (c. 1974)".
+  Source: https://equusbicycle.com/bike/suntour/earlysuntourcatblue/index.html
+  (pdf/earlysuntourcatalogblue - 0001..0033.pdf; equus calls it "circa early
+  1970's", HTML title "Through 1988" is template junk). Maeda Industries,
+  Sakai + Mihara factory, Tokyo office, Maeda Industries of U.S.A.
+  (Fairfield NJ); English; no prices. Service parts book: per model an
+  exploded diagram and a parts list (assy no. / code no. / part no.) with a
+  short spec box. PDF page = printed page + 4 up to p. 2, then the scan
+  skips printed pp 3-4 (VT 3902, in the index only) and pp 27-28 (3-speed
+  hub); pp 31-32 accessories (resin / steel / press clips, alu band,
+  casings, cable length table) out of scope.
+- Dating, c. 1974: 4902 VGT at 335g (1974 figure; 1975 says 310g), VT, PSL-S
+  3550, ST-10 / ST-5, 3-speed hub and 1071-1078 resin clips all present
+  (new in '74); fronts "top normal" ('74 wording); USA office listed. No
+  Cyclone, Love, Allegro, Winner-S, Frash or Shiga factory (all '75). Unlike
+  '74, no Sport / Mark-II / Turtle top-tube consoles — either a parts-book
+  omission or a late-'74 / early-'75 printing.
+- Listed: RD 4902 VGT (plate "V-GT Luxe"), 2902 V (plate "V-Luxe"), [3902
+  VT], 4600 GT, 2600 Honor, 2200 Skitter; FD 3702 SL, 3701 Compe-V, 3700
+  Spirt; levers 3553 PDL-M, 3552 PSL-M, 3551 PDL-S, 3550 PSL-S, 3080 / 3070
+  PUB-10 / 5, 3030 / 3020 UB-10 / 5, 3302 DLW, 3202 SLW, 3230 / 3220 ST-10 /
+  5, 3090 Bar-Con, 3450 Mighty Shifter, 3460 trigger; freewheels Winner
+  (body 1651 99), Pro-Compe gold (1558 99), Perfect 3/32 and 1/8 (1551 99).
+  No new models vs '73 / '74.
+- Years: none changed — every matching row already spans 1974. 8050 / 8051
+  / 8070 consoles (absent here) already end 1974.
+- Descriptions rewritten, source_ref -> 124 (10 rows): 8057 UB-5 / UB-10
+  and 8058 PUB-5 / 6263 PUB-10 (bell fitting on the lever axle end, bell
+  1119 / clangor 1115 — parts drawn on both diagrams, listed under UB);
+  8049 SLW (1in clamp 1001 / 1-1/8in 1002); 8072 ST-10 / ST-5 (black
+  handles); 6256 3460 trigger (kit contents); 2616 SL (same frame 872 as
+  Compe-V, plain cage 873 vs drilled 871); 2229 Winner, 2242 Pro-Compe,
+  2245 Perfect (sprocket ranges, 28-34T zig-zag). Dropped for length (still
+  true): 2242 "e.g. 1101-G 14-15-17-19-21"; 2245 "1974 lists 1100, 1101 and
+  Z-gear only". Titles unchanged.
+- Added / deleted: none. Left: 2602 bare Compe-V (140.5g avg) vs 2603 —
+  still probably one part, no new signal here, no bike links on either.
+  Bike links unchanged.
