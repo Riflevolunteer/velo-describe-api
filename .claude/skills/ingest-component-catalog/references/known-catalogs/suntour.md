@@ -670,3 +670,78 @@
   Winner 6-speeds and 8061 Mighty Shifter end 1976; 7817 combined row; the
   three Cyclone FD variants 2624 / 2625 / 2627 / 2628 keep "3704" titles.
   Bike links unchanged.
+
+## SunTour Catalog Edition No. 59 — printed 10.1981 (disraeligears.co.uk, 22 scans)
+
+- `data_source` 127, label "SunTour Catalog Edition No. 59 (printed
+  10.1981)". Source: https://www.disraeligears.co.uk/site/suntour_catalog_no_59.html
+  (front cover, page_1..20, rear cover; PDF page N = printed page N-1).
+  SunTour U.S.A. (10 Madison Road, Fairfield NJ) / Maeda; rear cover
+  "Printed in Japan Oct. '81" -> 1982 model year, the only catalogue we have
+  between 1978 (126) and No. 61 (88). Sections: Microlite & Aerodynamics
+  (Superbe Pro FDs, Cyclone Mk-II), New Products (Top-Mount, ARX, AR),
+  feature pages, gear capacity table (p8), Superbe Pro road / Superbe road +
+  track, Cyclone + BL, Road VX, RD / FD / shift lever ranges, New Winner
+  freewheels + chains, fork ends, BMX (photo + code list only), hubs,
+  CB-5000 coaster, accessories, tools.
+- New vs 1978: Superbe Pro group (RD-3100, FD-2000 / 2050, CB-3000 / 4000,
+  CB-3200, PL-4000 / 2000, HS-150, RH-3100); Cyclone Mk-II (RD-3500 / 3700,
+  FD-2300 / 2350 / 2400); Top-Mount LD-2300 / 2350; ARX, AR; BL (RD-3200 /
+  3600 / 3300, FD-1900, LD-2200 / 2250); VGT RD-1500 back; Mighty Click
+  RD-2700 / 2800, FD-1800, LS-2900, DLC / UBD-10 click levers (LD-2450 /
+  2550 Honor versions); AG RD-3400, FD-2100, PT-3800; Volante RD-2600 /
+  Volante-S RD-4100; New Winner NW-*; IC console levers LS-3200 / 3300;
+  TZ-6000; RS-1000 stem; RH-4100 / 4200 / 4300. Dropped vs 1978: Skitter,
+  Love, VX-T, SL FD, N PUB-10, ST levers, Winner-S, PT-3000 / FT-3000 /
+  FS-1000 / FS-2000, PC-6000, US-6000, TL-1000 / TH-1000, CB-1000,
+  SP-1000, CW-1500 / BB-150. Gone again by No. 61: RD-3100, RD-2100,
+  FD-1500, RD-1700 / 1800, FD-1300, RD-1500, RD-2800, RD-4100, RD-3400 /
+  FD-2100, FD-1800, consoles. **LD-2200 is the BL lever; LS-2200 is the
+  Mighty Shifter II.** Gear table lists an IC rear derailleur with no code.
+- year_from -> 1982: 4729, 4725, 4723, 7787, 2652, 7791, 2620, 6266, 7801,
+  7805, 7806, 1051, 4010, 4001, 7821, 7810, 2237, 2236, 7813, 7817.
+  year_to -> 1982: 4735, 4738, 2626, 6276, 6277 (dark LD-1600 = "Cyclone
+  Black Series"), 8057, 6283, 8262, 8263, 8264, 8261, 4684, 6694.
+- Velobase placeholder floors (user-approved): 1970 -> 1982 on 4685
+  RD-2700, 6273 LD-2200, 2605 FD-1700, 2240 NW-6500, 2244 PT-3800; absent
+  here, first in No. 61 -> 1984 on 4710 RD-5000, 2609 FD-2800, 2607 / 2608
+  FD-2700, 4711 RD-5500, 4761 RD-4700 (was 1970 / 1980). 4705 VGT keeps
+  1978 (single absence).
+- Retitled (old titles): 4766 "SunTour Superbe Pro" -> "RD-3100, Superbe
+  Pro"; 4705 "SunTour V-GT Luxe (version 2)" -> "RD-1500, VGT (V-GT Luxe
+  version 2)"; 4684 "SunTour Alpine" -> "RD-3400, AG (Alpine Gear)"; 2599
+  "SunTour AG" (FD) -> "FD-2100, AG (Alpine Gear)"; 6694 "SunTour Superbe"
+  (stem) -> "RS-1000, Superbe"; 2620 "SunTour AR, FD-2500" -> "FD-2500,
+  AR"; 7805 "LD-2400, DLC (Mighty Click)" -> "LD-2400 / LD-2450, DLC
+  (Mighty Click / Honor)"; 7806 "LD-2500, UBD-10 (Mighty Click, stem)" ->
+  "LD-2500 / LD-2550, UBD-10 (Mighty Click / Honor, stem)". 4009 PL-4000
+  group Superbe -> Superbe Pro.
+- Descriptions rewritten and "(No. 61, Sep 1983)" citations dropped where
+  this catalogue carries the same spec; kept where the spec is No. 61's only
+  (4001, 2236 / 2237, 7813, 7817, 2240, 2244 and the 1984 floor rows).
+  Edition differences named inline: RD-4500 34 / 32T, RD-4400 32 / 34T
+  capacity, RD-3200 25 / 24T, RD-3300 36 / 34T, RD-2500 30 / 28 / 27T
+  (1978 / 1982 / No. 61), RD-2700 22 / 16T, RD-2600 25T / 21T, RD-2100
+  22T 198g / 20T 194g (1978 / 1982), FD-1900 110 / 93g, LD-2300 69 / 73g,
+  LD-2350 66 / 68g, HS-150 94 / 110g, PL-4000 300 / 290g, CW-1000 609 /
+  600g, RH-4300 469 / 544g, TZ-6000 silver / gold pin plates. 57 rows
+  updated on source_ref 127.
+- New (11 rows, 1982-1982): 8266 RD-2800 Mighty Click GT; 8267 RD-4100
+  Volante-S; 8268 FD-2050 Superbe Pro braze-on; 8269 FD-2350 Cyclone Mk-II
+  braze-on; 8270 FD-1800 Mighty Click 10; 8271 LD-2250 BL braze-on; 8272
+  LS-3300 / 8273 LS-3200 IC console levers; 8274 LS-2900 Mighty Click
+  console; 8275 RH-3100 Superbe Pro track hubs; 8276 RH-4200.
+- Deleted (user-approved, no links or overrides): 461 "SunTour CB-3200,
+  Superbe" (Brake Levers, 1982, 213g, `88BC2376-1D64-4EFC-9CC6-5598428DEF88`)
+  -> 462 (only CB-3200 is the Superbe Pro lever); 4724 "SunTour aR" (RD,
+  1982, 280g, `78FBBF86-1C91-4C96-9F3F-E43AB4F0F4CA`) -> 4725 RD-4200; 4726
+  "SunTour aR GT" (RD, 1981-83, 303g, `90623F8E-6507-4BF4-9195-D4A0DCB47D6F`)
+  -> 4723 RD-4400; 2606 "SunTour BL" (FD, 1980, 90g,
+  `0697B982-416E-4184-8CAE-54DC0E2460F8`) -> 2622 FD-1900.
+- Left: 4767 velobase "Superbe Pro" RD (1983, 180g actual — probably
+  RD-5200, user chose to keep); IC rear derailleur (no code); BMX parts and
+  CB-5000 coaster brake; fork ends / accessories / tools; 2604 "7 (early
+  style)" FD; 4733 Cyclone black pivot knuckles; FD-2000 variants 2647-2649.
+  Bike follow-up: 2652 FD-2000 now starts 1982, so the 1983 Bianchi Superbe
+  Pro FD could link (override in generate-bike-update-sql.js starts 1984);
+  4766 keeps its 1983 Bianchi link.
