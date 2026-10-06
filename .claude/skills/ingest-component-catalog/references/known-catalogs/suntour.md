@@ -526,3 +526,59 @@
 - Added / deleted: none. Left: 2602 bare Compe-V (140.5g avg) vs 2603 —
   still probably one part, no new signal here, no bike links on either.
   Bike links unchanged.
+
+## SunTour "'76 Products" — 1976 (disraeligears.co.uk, 9 scans)
+
+- `data_source` 125, label "SunTour '76 Products catalogue (1976)". Source:
+  https://www.disraeligears.co.uk/site/suntour_76_products.html (scan_1..9:
+  cover, two seascape photo pages, accessories, derailleurs, control
+  levers, freewheels, 3-speed hub / tools, rear cover). Maeda Industries;
+  Sakai, Mihara, Shiga factories, Tokyo office, Fairfield NJ; English; no
+  prices; specs only, no parts lists.
+- **Renumbering:** every part now carries an 8-digit "No. xxxx 99 01" code.
+  Map: RD 5902 -> 2811 99 01, 2902 -> 2620, 3902 -> 2630, 4902 -> 2720, 4600
+  -> 2410, 2600 -> 2310, 2200 -> 2210, Love 2000 -> 2810; FD 3704 -> 2931,
+  3702 -> 2932 99 01 / 02, 3701 -> 2920 99 02 / 08, 3700 -> 2910 99 07 / 08 /
+  09; levers 3553 -> 3169, 3552 -> 3159, 3302 -> 3029, 3202 -> 3019, 3090 ->
+  3124, 3450 -> 3134, 3080 -> 3104, 3070 -> 3094, 3230 / 3220 -> 3324 /
+  3214, 3030 / 3020 -> 3064 / 3054, 3460 -> 3197; freewheels 1110 -> 1651 99
+  02, 1110-S -> 1651 99 10, 1100 -> 1551, 1101-G -> 1558, 1250 -> 1531, 1300
+  -> 1231, 1200 / 1800 -> 1541 99 01 / 11, 1716-1724 -> 1116-1124 99 01,
+  1718-S.. -> 1018-1024 99 01; track cogs 1762-1767 -> 1172-1177 01 02; hub
+  3828 / 3836 -> 4011 99 35 / 34. The c. 1974 parts book's internal code
+  numbers are the stems of these. Rows keep their 4-digit titles; the
+  1976 number is in the description.
+- New vs '75: Cyclone GT 2812 (34T / 36T with bracket, 188g), Seven 2320
+  (364g), Seven-GT 2321 (385g) rears; Seven 2940 front; Cyclone CL-10 3369
+  lever (first in our catalogues); N PUB-10 / N PUB-5 3106 / 3105; Winner
+  and Winner-S 6-speed 1661 99 02 / 20; 13T alloy track cog 1173 01 04;
+  Rock Ring lockrings; (out of scope) SDB fork ends, tandem chain
+  tensioner. Dropped vs '75: Allegro 3703, PDL-S / PSL-S, Z-gear as numbered
+  models (feature panel only; touring Perfect sets now 14-17-21-26-32 in
+  place of 14-18-22-27-32). Specs changed: VGT 310 -> 300g; Cyclone RD front
+  40-51 -> 40-53; Cyclone FD 95 -> 98g; Skitter not marked quick cage. PUB-10
+  / PUB-5 are listed without the power-shifter star although the lever
+  reads "Power Shift"; recorded, not acted on.
+- Retitled (old titles): 4738 "SunTour Cyclone GT" -> "2812 99 01, Cyclone
+  GT"; 4755 "SunTour Seven (version 1B)" -> "2320 99 01, Seven" (velobase
+  313g Spec dropped — the 1983 RD-1900 figure); 4754 "SunTour Seven GT
+  (version 1A)" -> "2321 99 01, Seven-GT" (velobase 343g kept); 6276
+  "SunTour LD-1600, Cyclone" -> "3369 99 01 / LD-1600, Cyclone CL-10",
+  year_from 1970 -> 1976 (1970 was an impossible velobase placeholder;
+  user-approved).
+- Years: year_to -> 1976 on 8069, 4703, 8073, 2616, 8056, 8054, 8049,
+  8061, 8058, 8072, 8057, 6256, 8075, 8062, 8064, 8065, 8063, 8076, 8066,
+  8077, 8067, 2737. Descriptions (1976 numbers, weights, citation text
+  removed) on those plus 4735, 4772, 4704, 4702, 4689, 2626, 2603, 2601,
+  6283, 6259, 6263, 2229, 2242, 2245 — 40 rows, all source_ref 125.
+- New (5 rows, 1976-1976): 8253 Seven FD 2940 99 01 / 02 (group Seven; own
+  row, not stretched onto 2641 FD-1400); 8254 N PUB-10 / N PUB-5; 8255
+  Winner 6-speed 1661 99 02; 8256 Winner-S 6-speed 1661 99 20; 8257 13T alloy
+  racing sprocket 1173 01 04.
+- Deleted: 6275 "SunTour Cyclone MK1" (Shifters, 1970-1980, bare, no
+  weight, velobase, `0ED2357C-854F-42AF-843E-5452F27C69B1`) — merged into
+  6276 Cyclone CL-10, the only Cyclone lever in 1976. No links or overrides.
+- Left: 8074 Allegro, 8055 PDL-S, 8071 PSL-S stay at 1975; 2602 bare
+  Compe-V still unmerged with 2603; 4701 "New Skitter (version 2C)" 1977
+  velobase left beside 4689; Cyclone FD variants 2624 / 2625 / 2627 / 2628
+  untouched. Bike links unchanged (no 1976-79 SunTour bikes in the DB).
