@@ -472,7 +472,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z206': 2544, // Shimano FD-Z206-HS, Z-Series
     'shimano deore xt': 2497, // Shimano FD-M700, Deore XT (1983-86)
     'suntour cyclone mkiii': 2629, // SunTour FD-3300, Cyclone (No. 61 / 62)
-    'suntour superbe pro': [{ from: 1984, id: 2652 }], // FD-2000 endless band (1984-86); 1983 Bianchi stays unlinked as before
+    'suntour superbe pro': [{ from: 1982, id: 2652 }], // FD-2000 endless band (1982-86 per Catalog No. 59 / No. 61); links the 1983 Bianchi
     'suntour ag tech': 2609, // SunTour FD-2800, AG Tech
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 2318, // Victory (1984-86)
