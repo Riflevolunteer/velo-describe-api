@@ -252,6 +252,39 @@ function expandLabel(label) {
   return [LABEL_ALIASES[key] || label.trim()];
 }
 
+// Words that tie one part of a split cell to one of its labels, so
+// "Simplex rear, Huret front" or "tubulars, rims" still land correctly.
+const SPLIT_PART_HINTS = {
+  'Front Derailleur': /\bfront\b/i,
+  'Rear Derailleur': /\brear\b/i,
+  Rims: /\brims?\b/i,
+  Tyres: /\b(tires?|tyres?|tubulars?|clinchers?)\b/i,
+  'Bottom Bracket': /\b(bottom bracket|bb)\b/i,
+  Crankset: /\b(cranks?|crankset|chainwheel)\b/i,
+};
+
+// Assigns a split column's cell to its labels. A cell that divides on
+// " / ", ", " or "; " into exactly one part per label is shared out —
+// by hint word where every part has exactly one, else by position
+// ("SUPER CHAMPION rims, ELVEZIA tubulars" -> Rims / Tyres). Anything else
+// (one groupset name for both derailleurs, "Sakae 42/52") is copied whole
+// to every label, which was the only behaviour before cell splitting.
+function splitCellValue(labels, valueText) {
+  const whole = labels.map((label) => ({ label, valueText }));
+  if (labels.length < 2) return whole;
+  const parts = valueText.split(/\s+\/\s+|,\s+|;\s+/).map((p) => p.trim()).filter(Boolean);
+  if (parts.length !== labels.length) return whole;
+  const byHint = labels.map((label) => {
+    const hint = SPLIT_PART_HINTS[label];
+    const hits = hint ? parts.filter((p) => hint.test(p)) : [];
+    return hits.length === 1 ? hits[0] : null;
+  });
+  if (byHint.every(Boolean) && new Set(byHint).size === labels.length) {
+    return labels.map((label, i) => ({ label, valueText: byHint[i] }));
+  }
+  return labels.map((label, i) => ({ label, valueText: parts[i] }));
+}
+
 // Maps a normalized CSV header to a column already on the `bike` table
 // itself, rather than a bike_spec row. These are bike-level attributes, not
 // component references, so they should never become a bike_spec_label
@@ -1136,11 +1169,12 @@ const COMPONENT_OVERRIDES = {
   },
   Tyres: {
     'clement criterium silk tubular': 6748, // Clement Criterium Seta (seta = silk)
-    // 1975 Motobecane "Wheel Rims & Tires" cells (matched under Tyres via
-    // SPLIT_LABELS); the Super Champion rim model isn't named, so no Rims
-    // override.
-    'super champion rims elvezia tubulars': 6752, // Clement Elvezia
-    'super champion rims paris roubaix tubulars': 6762, // Clement Paris - Roubaix
+    // 1975 Motobecane "Wheel Rims & Tires" cells, split by splitCellValue
+    // ("SUPER CHAMPION rims, ELVEZIA tubulars" -> Rims / Tyres); the Super
+    // Champion rim model isn't named, so no Rims override, and the DB has no
+    // Clement Gran Turismo.
+    'elvezia tubulars': 6752, // Clement Elvezia
+    'paris roubaix tubulars': 6762, // Clement Paris - Roubaix
     // 1987 Bianchi. The DB spells Giro del Mondo "Mundo".
     'vittoria cg': 6877, // Vittoria Corsa CG Seta
     'vittoria giro del mondo': 6889, // Vittoria Giro del Mundo
@@ -1339,8 +1373,8 @@ async function main() {
         if (bikeColumn) {
           bikeFields[bikeColumn] = valueText;
         } else {
-          for (const label of expandLabel(labels[i])) {
-            rowSpecs.push({ label, rawLabel: labels[i], valueText });
+          for (const part of splitCellValue(expandLabel(labels[i]), valueText)) {
+            rowSpecs.push({ label: part.label, rawLabel: labels[i], valueText: part.valueText });
           }
         }
       }

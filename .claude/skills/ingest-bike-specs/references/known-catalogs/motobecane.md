@@ -52,6 +52,14 @@
 - "Wheel Rims & Tires" added to SPLIT_LABELS (Rims + Tyres). Tyres link via
   overrides (Elvezia, Paris-Roubaix → Clement); the Super Champion rim model
   isn't named so Rims stay unlinked.
+- 2026-10-06, cell splitting added to the generator: the three "SUPER
+  CHAMPION rims, X tubulars" cells now split into Rims "SUPER CHAMPION
+  rims" + Tyres "ELVEZIA / GRAN-TURISMO / PARIS-ROUBAIX tubulars" instead of
+  the whole cell under both labels. Old rows 3939 / 3940 / 3958 / 3959 /
+  3977 / 3978 deleted and reloaded; overrides rekeyed to the tyre part.
+  Still 205 specs, 58 linked. The other rims-and-tyres cells ("Steel rims
+  27" x 1-1/4" gum wall tires", "WEINMANN H. P. ... MICHELIN ... tires") have
+  no separator and are still copied whole to both labels.
 - Wrong auto-link fixed: CAMPAGNOLO Record headset was hitting Record Pista
   #1040; now 1039 Gran Sport/Record.
 - Overrides: Record 42-53 crank → v4; Record large/low flange → 1035/1034;

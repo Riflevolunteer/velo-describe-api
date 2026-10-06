@@ -78,6 +78,17 @@ had at least one of:
 - **Combined columns** that name two components with DB rows for each
   ("Wheel Rims & Tires"): add to `SPLIT_LABELS`. Leave combined columns alone
   when only one half is ever described (see the "Handlebars / Stem" note).
+  The generator then splits each cell (`splitCellValue`): a cell that
+  divides on " / ", ", " or "; " into exactly one part per label is shared
+  out — by hint word (`SPLIT_PART_HINTS`: front / rear, rims / tires,
+  crank / BB) when each part has one, else by position — so "SUPER CHAMPION
+  rims, ELVEZIA tubulars" becomes Rims "SUPER CHAMPION rims" + Tyres
+  "ELVEZIA tubulars". Any other cell (one groupset name for both
+  derailleurs, "Sakae 42/52") is copied whole to every label. Cells with no
+  separator ("Steel rims 27" x 1-1/4" gum wall tires") are not split: add a
+  ", " in the CSV if both halves name real parts. Overrides key on the split
+  part, not the whole cell. A paired " / " header with distinct halves
+  ("Freewheel/Chain") is not in `SPLIT_LABELS` — split those in the CSV.
 
 Write a small node script in the scratchpad for CSV rewrites (RFC-4180 parse,
 edit cells, write back with quoting) rather than sed; several cells span lines.
