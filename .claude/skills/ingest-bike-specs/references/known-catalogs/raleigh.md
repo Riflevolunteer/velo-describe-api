@@ -177,6 +177,48 @@
   stated), Cinelli bars / stem (no model), Clement Ritmo. All loaded
   catalogs regenerate unchanged.
 
+## 1983 Raleigh — `1983_raleigh_spec.csv` (21 bikes, 462 specs, 94 linked)
+
+- Source: https://www.retrobike.co.uk/archive/1983-raleigh-racers-catalogue.1133/
+  (16-page PDF, 100 ppi JPEG scan, no text layer; UK "Racers - The
+  Race-Bred Raleighs", Spring 1983). Download needs the archive page's
+  cookies and full browser headers (a curl with a bare UA gets 406 even
+  on the archive page). Four Technical Specifications tables, pp. 5, 9,
+  12, 15, transcribed by hand (scratchpad script) from 300 dpi crops;
+  `data_source` 133 citation names the scan.
+- Scope (user's choice): all 21 table columns — Team Replica 12, Gran
+  Sport 12, Road Ace 12, Competition 12, Record Ace 12; Royale 10, Royal
+  10, Clubman 12, Rapide 12, Record Sprint 12, Zenith 10; Stratos 10,
+  Silhouette 5 & 10, Europa 12, Medale 5 & 10 Ladies / Mens (two table
+  columns, two bikes); Supersport 12, Wisp 5 & 10, Winner 5 & 10, Ace 5 &
+  10, Micron 5. Not added: frame sets (p. 16), accessories.
+- CSV layout: Wheels split into Rims / Hubs / Spokes; Lugs out of Frame
+  Material; Frame Angles appended to Frame Material; Derailleur cell into
+  Front / Rear Derailleur + Shifters; toe clips out of Extras into Toe
+  Clips; bar tape / grips / cables into Cable & Tape. Arrow-spanned cells
+  copied into each spanned column. Fixes: "Regino Oro" -> Regina Oro; Wisp
+  10-speed "60cm (23")" -> 23.5" (model page). Shifters for Medale Mens,
+  Winner, Ace, Micron (blank in the table) taken from the model text.
+- Generator: WORD_ALIASES `600ax` -> `600 ax` (table prints "600AX").
+  Road Ace 600 AX: RD-6300, FD-6300 clamp, BR-6300, FC-6300, FH-6361,
+  PD-6300, HS-6300, SP-6300 (Kalkhoff pick), bars HD-7300 Dura-Ace AX;
+  shifter -> null (generic "Shimano 600" hit; four SL-63xx variants).
+- Overrides: Gran Sport crank exact wording -> 1472 plain 0304 (the 1983+
+  bare-key range is the Bianchi-labelled 1473); Nuovo Record crank 1496;
+  SunTour VGT Large Capacity -> 4705 RD-1500 (bare "sun tour vgt" is the
+  1973 4900); Seven front 2641; Volante 4708; Compe-V -> 2603 (only row
+  past 1979); Weinmann 405 -> 1117, 610 -> 1138 (as 1982); Campagnolo
+  Strada headset 2963 / seatpost 5749; Nuovo Tipo 3230; Atom 3183;
+  Cinelli 65 -> 2804, 1A -> 6489; SR Apex 7901, CT-P5 5857, CT-P6 5861,
+  SP-12 3924; Tange MA60 3144; SunTour Z 7821, Ultra-6 chain 7820;
+  Uniglide chain 7450, freewheel 7475; NW-6000 2238, PN-6000 / Perfect 6
+  7813; Regina Oro 2194; Weinmann A124 -> 7776 (only A124 row, "Super X").
+- Left unlinked: Weinmann 500 / 605 / 610-750, Gran Sport brakes, Ultra-6
+  freewheels, SR Custom cranks / stems / bars, Tange CMA60 / New Levin,
+  600 EX headset, Huret Eco front, Positron front, ISCA Tornado (cover not
+  stated) / Competition / 407, Sedisport chains, 600AX cassette (DB row
+  is under Cassettes). All loaded catalogs regenerate byte-identical.
+
 ## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 91 linked)
 
 - Source is a single scanned image on Sheldon Brown's Retro Raleighs site

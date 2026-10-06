@@ -404,6 +404,8 @@ const WORD_ALIASES = {
   alvit: 'allvit',
   // French catalogs (1974 Motobecane) spell Huret's derailleur "Jubile".
   jubile: 'jubilee',
+  // 1983 Raleigh tables print "600AX"; DB rows and the 1981 Kalkhoff say "600 AX".
+  '600ax': '600 ax',
 };
 
 // Collapses hyphens/dashes/slashes/commas to spaces, drops periods,
@@ -441,6 +443,11 @@ function normalizeForMatch(value) {
 // matching range means no link rather than a wrong-era one.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    'sun tour \'7\'': 2641, // Royale / Royal: SunTour FD-1400, Seven (1978-85)
+    // Only 3701 / FD-1100 Compe-V runs past 1979 (the bare Compe-V row is 1974-79).
+    'compe v': 2603, // Europa: SunTour 3701 / FD-1100, Compe-V (5-hole)
+    'compe v on 10 speed': 2603, // Stratos
     'shimano at10 x sis': 7721, // 1993 Bianchi "AT10-X" spelling of the AT10 SIS entry below
     'suntour cyclone 7000': 2631, // SunTour Cyclone 7000 (White) FD (1987 Bianchi)
     // SunTour No. 61 retitles (bare "Vx" / "ARx" rows now carry codes): keep existing links
@@ -540,6 +547,10 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    // 'sun tour vgt' is the 1973 4900; by 1983 the VGT is the RD-1500 V-GT Luxe.
+    'sun tour vgt large capacity': 4705, // Royale / Royal: SunTour RD-1500, VGT (V-GT Luxe version 2)
+    'sun tour volante alloy': 4708, // Stratos / Europa: SunTour RD-2600, Volante
     'shimano at10 x sis': 7720, // 1993 Bianchi "AT10-X" spelling of the AT10 SIS entry below
     // 1987 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
     'campagnolo c record': 4096, // Campagnolo 0102050, C-Record (first generation)
@@ -665,6 +676,11 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    'shimano 600 ax small flange quick release': 3532, // Road Ace: Shimano FH-6361, 600 AX
+    'campagnolo nuovo tipo small flange qr': 3230, // Gran Sport: Campagnolo 1251, Nuovo Tipo (small flange)
+    'atom small flange alloy quick release': 3183, // Royale / Royal: Atom (low flange aluminum), as 1977 Super Course
+    'atom small flange quick release': 3183, // Clubman / Rapide
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'campagnolo nuovo record small flange quick release': 3259, // Team Replica: Campagnolo 1034, Record (Low Flange)
     // 1983 Bianchi. 1251 small flange is the only Nuovo Tipo row in range for 1983.
@@ -751,6 +767,11 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    'shimano 600 ax with recessed bolts': 965, // Road Ace: Shimano BR-6300, 600 AX
+    'weinmann 405 alloy side pull quick release recessed bolts': 1117, // Competition: Weinmann AG 405
+    'weinmann 610 alloy centre pull quick release levers': 1138, // Royal: Weinmann AG Raleigh 610 (as 1982)
+    'weinmann 610 alloy centre pull quick release brake levers': 1138, // Clubman
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'weinmann 610 alloy centre pull with quick release levers': [{ to: 1982, id: 1138 }], // Weinmann AG Raleigh 610 (row dated 1970-80; Raleigh's own 610)
     // 1974 Raleigh (US): the table drops the "999" the 1973 table carried, but the
@@ -879,6 +900,9 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    'campagnolo strada': 2963, // Team Replica: Campagnolo 1039, Record Strada
+    'tange ma60': 3144, // Record Sprint / Zenith: Tange MA-60
     // 1983 Bianchi. A later Campagnolo pass added the A0D0P (1987-91) row, making bare Record Pista ambiguous.
     'campagnolo record pista': [{ to: 1985, id: 2966 }, { from: 1987, id: 7024 }], // 1040 to 1985; A0D0P from 1987
     'campagnolo veloce': 2970, // 1993 Bianchi: Campagnolo HS-01VL, Veloce (part-number retitle)
@@ -917,6 +941,11 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    'campagnolo nuovo record with 52 42t super record rings 170mm cranks': 1496, // Team Replica: 1049 (Nuovo) Record Strada v4
+    // The 1983+ bare Gran Sport range is the Bianchi-labelled 0304; a Raleigh takes the plain one.
+    'campagnolo gran sport 5 arm 52 42t 170mm cranks': 1472, // Gran Sport: Campagnolo 0304, (Nuovo) Gran Sport (144 BCD)
+    'shimano 600 ax with 52 42t 170mm cranks': 1787, // Road Ace: Shimano FC-6300, 600 AX
     'campagnolo pista 48t': 1505, // 1973 Raleigh Professional Track: Campagnolo 1051, Record Pista (144bcd, 1967-85)
     'campagnolo pista with 165mm cranks': 1505, // 1974 Raleigh Professional Track
     'campagnolo cotterless alloy': [{ to: 1977, id: 1496 }], // 1974 Raleigh International: 1049 Nuovo Record Strada v4
@@ -1036,6 +1065,10 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    'cinelli no 65 alloy bend': 2804, // Team Replica: Cinelli 65 Criterium
+    'cinelli no 65 engraved alloy bend': 2804, // Gran Sport
+    'shimano dura ace alloy engraved': 2917, // Road Ace (600 AX bike): Shimano HD-7300, Dura-Ace AX
     'sr ctd': 7888, // Sakae/Ringyo (SR) CTD, Custom Double Tube (SR No. 18; 1987 Bianchi)
     // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
     // logo)"; a 1973 catalog predates the logo change.
@@ -1045,6 +1078,9 @@ const COMPONENT_OVERRIDES = {
     "cinelli giro d'italia": 2801, // Cinelli 64 Giro D'Italia (70's model)
   },
   Stems: {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    'cinelli no 1a': 6489, // Team Replica / Gran Sport: Cinelli 1A (winged "C" logo), latest 1A row
+    'sr apex forged alloy': 7901, // Competition / Record Ace: SR AX-AH, Apex
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'forged alloy': null, // generic; substring-hits the 1950s GB Hiduminium spearpoint
     'sr ax; ah': 7901, // Sakae/Ringyo (SR) AX-AH, Apex (SR No. 18; 1981 Kalkhoff)
@@ -1069,6 +1105,10 @@ const COMPONENT_OVERRIDES = {
     'gb forged alloy': 6533, // GB Forged
   },
   Shifters: {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    // Substring-hits the generic "Shimano 600" row; the AX lever is one of
+    // four SL-63xx variants (clamp / braze-on A / B / oval) and the table doesn't say.
+    'shimano 600 ax top mounted direct fit levers': null, // Road Ace
     'suntour alpha 5000 accushift': 7859, // SunTour SL-5000-BS / CS / CP, alpha-5000 (AccuShift leaflet c. 1987)
     'suntour accushift (alpha 5000 front derailleur)': 7859,
     // 1974 / 75 Motobecane: shifter halves split out of the Derailleur cells;
@@ -1130,6 +1170,8 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    'sr sp12 platform alloy': 3924, // Competition: SR SP-12AL
     'suntour xc ii chrome moly shafts': 4015, // SunTour PL-5100, XC-II (1985 Raleigh; dup 4000 merged)
     'shimano 600': [{ from: 1984, to: 1987, id: 3961 }], // 1987 Bianchi: Shimano PD-6207, 600EX
     'shimano spd 737 clipless': 7666, // 1993 Bianchi, from the Jul 1992 manual: Shimano PD-M737, Deore XT (SPD)
@@ -1179,6 +1221,12 @@ const COMPONENT_OVERRIDES = {
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    'shimano 600 ax oval': 5886, // Road Ace: Shimano SP-6300, 600 AX (the 1981 Kalkhoff pick)
+    'campagnolo strada': 5749, // Team Replica: Campagnolo 1044, Record (as 1982 Nuovo Record pin)
+    'sr ctp5 fluted alloy with single allen bolt adjustment': 5857, // Record Ace / Royal / Clubman / Rapide: SR CT-P5, Custom-P5 (Laprade)
+    'sr ctp5 aerodynamic alloy with single allen bolt adjustment': 5857, // Competition
+    'sr ctp6': 5861, // Royale: SR CT-P6 / CT-P6C, Custom-P6
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'campagnolo nuovo record': [{ to: 1985, id: 5749 }], // Campagnolo 1044, Record
     'campagnolo gran sport': 5734, // Campagnolo 3800, Gran Sport
@@ -1211,6 +1259,12 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    'sun tour ultra 6 narrow': 7820, // Record Ace / Clubman: SunTour UC-6000, Ultra-6 chain
+    'sun tour z silver black': 7821, // Gran Sport / Competition: SunTour TZ-6000, Z chain
+    'sun tour z gold': 7821, // Rapide
+    'shimano uniglide black silver': 7450, // Road Ace: Shimano QA-200 / CN-UG20, Uniglide-II (1977-89)
+    'uniglide 1 2" x 3 32"': 7450, // Silhouette
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'sun tour ultra 6': 7820, // SunTour UC-6000, Ultra-6 chain (1978-85)
     'shimano ug 2': 7450, // 1987 Bianchi: Shimano QA-200 / CN-UG20, Uniglide-II
@@ -1251,6 +1305,14 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
   },
   Freewheels: {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    'regina oro 13 14 15 16 17 18 teeth': 2194, // Team Replica: Regina Oro (6 speed)
+    'sun tour nw 6000 silver 13 14 15 17 19 21 teeth': 2238, // Gran Sport: SunTour NW-6000, New Winner (6-speed)
+    'sun tour nw 6000 13 14 15 17 19 21 teeth': 2238, // Competition
+    'sun tour pn 6000 gold 14 15 17 19 21 24t': 7813, // Rapide: SunTour PN-6000 / PS-6000, Perfect (6-speed)
+    'sun tour perfect 6 speed gold 14 15 17 19 21 24t': 7813, // Record Sprint
+    'sun tour perfect 6 speed 14 15 17 19 21 24t': 7813, // Europa / Supersport
+    'uniglide 14 28t 5 speed with spoke protector disc': 7475, // Silhouette: Shimano MF-1500, Uniglide freewheel
     '13 24t regina oro 6 speed': 2194, // 1973 Raleigh: Regina Oro (6 speed)
     "13 24t regina d'oro 6 speed": 2194, // 1974 Raleigh Team Professional: Regina Oro (6 speed)
     'suntour alpha 5000 14 28t': 7866, // SunTour FW-AL00-R6, Alpha freewheel (AccuShift leaflet c. 1987)
@@ -1295,6 +1357,10 @@ const COMPONENT_OVERRIDES = {
     'clement 2001 cf': 6740, // Clement CF 2001
   },
   Rims: {
+    // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
+    // Only A124 row in the DB, dated 1983 (Weinmann's concave A124).
+    'weinmann a124 concave section alloy': 7776, // Gran Sport: Weinmann A124 Super X
+    'weinmann a124 concave section': 7776, // Competition
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'mavic gp4 alloy sprint': 5069, // Team Replica: Mavic GP 4 (1980-91)
     // CSV cell carries a stray backslash ("27x1.25\  MICHELIN"), MySQL drops it on insert
