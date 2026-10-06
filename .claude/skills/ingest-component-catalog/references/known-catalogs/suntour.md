@@ -801,3 +801,9 @@
   1979 lists the RD-1900 / 2000 at No. 61 weights (313 / 343g); MC-1000 seat
   clamp, DT-100, fork ends, accessories, tools out of scope. Bike links
   unchanged (no 1979 SunTour bikes; 4766 override years untouched).
+- Follow-up (bike link, not from this catalogue): 1993 Bianchi Volpe
+  "Barcon lever Accushift Plus" (spec 1579) -> 7976 SL-BC01-R7 / -L Bar-End
+  Control, the only AccuShift Plus bar-end lever in the 1992 catalogue;
+  override added, 7976 year_to 1992 -> 1993 (source_ref 47, 1993 Bianchi
+  catalogue; spec still the 1992 catalogue's, named inline). 1993 Bianchi
+  181 -> 182 linked.

@@ -966,6 +966,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo chorus 8 speed downtube shift levers': 5976, // Campagnolo Chorus Friction - Graphite finish
     'shimano rx100 gs sis': 6189, // Shimano SL-A550, RX100
     'deore xt thumb shifters': 6160, // Shimano SL-M732, Deore XT M730
+    // 1993 Bianchi Volpe: SunTour's only AccuShift Plus bar-end lever in the 1992 catalogue; year_to extended to 1993 on this bike.
+    'barcon lever accushift plus': 7976, // SunTour SL-BC01-R7 / SL-BC01-L, Bar-End Control (Superbe Pro)
     // 1985 Raleigh (Sheldon Brown scan).
     'shimano model 105': 6132, // Shimano SL-A105, 105 Golden Arrow
     'shimano z401 down tube': 6194, // Shimano SL-Z401, Z-Series
