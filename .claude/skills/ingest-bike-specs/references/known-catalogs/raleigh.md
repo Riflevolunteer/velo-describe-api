@@ -1,6 +1,6 @@
 # Raleigh catalogs processed so far
 
-## 1973 Raleigh — `1973_raleigh_spec.csv` (9 bikes, 165 specs, 54 linked)
+## 1973 Raleigh — `1973_raleigh_spec.csv` (9 bikes, 170 specs, 54 linked)
 
 - Header "Weight." (trailing period) is mapped in BIKE_FIELD_LABELS.
 - This catalog motivated the single-word-title rule: Brooks B17N, Simplex
@@ -20,6 +20,57 @@
 - 2026-10-05: Professional Mk IV `1/2" x 3/32" Regina ORO` chain -> 1382
   Regina Extra 50 Oro (the Regina Extra C/7 109/E catalogue's only
   1/2 x 3/32 oro chain; four oro rows had competed).
+- 2026-10-06, checked against the scan the CSV came from:
+  https://www.retrobike.co.uk/archive/1973-raleigh-catalogue.1211/ (73.pdf,
+  11 pages, US edition — Raleigh Industries of America, Boston; covers pp
+  2-9, the Technical Specifications table p. 22 cut off at the Grand Prix
+  DL 115 column, and the back cover; the Record DL 130 column and pp 11-20
+  are not in it, so Record is unverified). The download needs the archive
+  page's cookies first (a bare GET returns 406). Fixes: Professional Track
+  crank "Campagnolo Pista 49T" -> 48T (override re-keyed, still 1505);
+  Professional Mk IV "Tee Clips" -> Toe Clips; Gran Sport tyres "Wired-on"
+  -> "Wired-bead"; 5 blank Chain cells (Competition Mk II, Gran Sport,
+  Super Course TT, Super Course, Grand Prix) -> 1/2" x 3/32"; bike rows:
+  Gran Sport sizes gain 20.5", Super Course TT weight 26.5 -> 28-29 lbs.
+  Rows 310 / 317 / 378 deleted and reloaded; data_source 36 citation now
+  names the scan. 165 -> 170 specs, still 54 linked. Not added: the
+  Super Course Ladies DL 100L (in the p. 9 text, no spec column).
+
+## 1974 Raleigh — `1974_raleigh_spec.csv` (10 bikes, 187 specs, 67 linked)
+
+- Source: https://www.retrobike.co.uk/archive/1974-raleigh-catalogue.1190/
+  (r74.pdf, 25 pages, img2pdf scan, no text layer; US edition, Raleigh
+  Industries of America; download needs the archive page's cookies first).
+  CSV written by hand (scratchpad script) from the Technical Specifications
+  table p. 23, read from 300-600 dpi crops; headers copied from the 1973 CSV
+  so labels line up. `data_source` citation names the scan.
+- Table models only (same scope as 1973): Professional Track DL175, Team
+  Professional DL185 (new), Professional Mk IV DL180, International DL170,
+  Competition Mk II DL165, Gran Sport DL160, Super Course Mk II DL100 / 100L,
+  Grand Prix DL115 / 115L, Record DL130 / 130L, Super Tourer DL135 / 140
+  (new). Lady's versions share their gents' column. Not added: Sprite 27,
+  Superbe, Tourist, Sports, Ltd, Folder, Chopper, Record 24, Colt, Space
+  Rider, Mountie (text + size/colour box only). Track brakes / derailleur
+  blank in the table -> "None" (1973 convention). Super Tourer weight 26¼ lbs
+  -> "26.25 lbs.".
+- Overrides: the 1973 picks re-keyed for 1974 wording ("Large Flange" for
+  "Wide Flange", ", 10 speed" suffixes, "Leather Team Special" word order,
+  "D'Oro"); Team Professional Super Record parts -> RD 4148 (4001 1st gen),
+  crank 1509 (1049/A), pedals 3716 (4021), seatpost 5759 (4051); New Huret
+  Challenger -> 2388 / 4273; Clement Strada 66 -> 6775. Weinmann centre-pulls
+  -> 7929 Vainqueur 999 (table drops "999", but the International text p. 6
+  says "Weinmann 999 center pull"). "Campagnolo Record Large Flange" is the
+  Track's hub here and a road hub on the 1975 Motobecane — override ranged
+  to 1974 -> 3270 (1036 Pista) / 1975 -> 3260 (1035).
+- Left unlinked: Super Record front mech and hubs (high / low flange
+  ambiguous), Weinmann Alesa rims (only Alesa H.P. row dated 1963), G.B.
+  Maes bars, Symetric side-pull, T.A. / Stronglight / Nervar cranks, Simplex
+  Maxi, Nisi rims, Raleigh-branded parts, generic sizes.
+- Exposed a splitter bug: "Campagnolo Nuovo Record, 12 speed" in the
+  Derailleurs column would have split by position (front = groupset, rear =
+  "12 speed"). splitCellValue now only splits by position when a part carries
+  its own label's hint word and none carries another's; all 14 loaded
+  catalogs regenerate to unchanged counts.
 
 ## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 91 linked)
 

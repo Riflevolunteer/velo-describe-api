@@ -265,10 +265,13 @@ const SPLIT_PART_HINTS = {
 
 // Assigns a split column's cell to its labels. A cell that divides on
 // " / ", ", " or "; " into exactly one part per label is shared out —
-// by hint word where every part has exactly one, else by position
-// ("SUPER CHAMPION rims, ELVEZIA tubulars" -> Rims / Tyres). Anything else
-// (one groupset name for both derailleurs, "Sakae 42/52") is copied whole
-// to every label, which was the only behaviour before cell splitting.
+// by hint word where every part has exactly one, else by position, but
+// only when some part carries its own label's hint word and none carries
+// another label's ("SUPER CHAMPION rims, ELVEZIA tubulars" -> Rims /
+// Tyres). Without that evidence a comma is just prose ("Campagnolo Nuovo
+// Record, 12 speed" stays one groupset for both derailleurs). Anything
+// else (one groupset name, "Sakae 42/52") is copied whole to every label,
+// which was the only behaviour before cell splitting.
 function splitCellValue(labels, valueText) {
   const whole = labels.map((label) => ({ label, valueText }));
   if (labels.length < 2) return whole;
@@ -282,6 +285,10 @@ function splitCellValue(labels, valueText) {
   if (byHint.every(Boolean) && new Set(byHint).size === labels.length) {
     return labels.map((label, i) => ({ label, valueText: byHint[i] }));
   }
+  const hints = labels.map((label) => SPLIT_PART_HINTS[label]);
+  const ownHit = parts.some((p, i) => hints[i] && hints[i].test(p));
+  const crossHit = parts.some((p, i) => hints.some((h, j) => j !== i && h && h.test(p)));
+  if (!ownHit || crossHit) return whole;
   return labels.map((label, i) => ({ label, valueText: parts[i] }));
 }
 
@@ -465,6 +472,13 @@ const COMPONENT_OVERRIDES = {
       { from: 1982, id: 2300 }, // Campagnolo 0104007, Nuovo Record (clip-on, 3-hole standard band)
     ],
     'new huret jubilee': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }], // Huret Jubilee 500: 5-hole cage (1972-76) / 4-hole (1977-80); 1973 Huret catalogue
+    // 1974 Raleigh (US) spec table: same picks as 1973, speed count appended.
+    'campagnolo nuovo record 10 speed': [{ to: 1977, id: 2297 }], // Campagnolo 1052/1, Record (second body)
+    'campagnolo nuovo record 12 speed': [{ to: 1977, id: 2297 }],
+    'huret jubilee super light 10 speed': [{ to: 1976, id: 2396 }], // Huret Jubilee 500 (5-hole cage)
+    'huret jubilee 5 or 10 speed': [{ to: 1976, id: 2396 }],
+    'new huret challenger alloy 10 speed': 2388, // Huret Challenger 950 / 951
+    'simplex prestige 10 speed': 2583, // Simplex Prestige Criterium AV 223
     // 1974 Motobecane (shifter asides now split into the Shifters column).
     'huret jubilee': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }],
     // 1975 Motobecane.
@@ -562,6 +576,14 @@ const COMPONENT_OVERRIDES = {
       { from: 1985, id: 4127 }, // Nuovo Record v5 (w/hollow rivets, w/o spring fixing bolt)
     ],
     'new huret jubilee': 4303, // Huret Jubilee 2200 / 2252 / 2240 (first version)
+    // 1974 Raleigh (US) spec table.
+    'campagnolo nuovo record 10 speed': [{ to: 1981, id: 4125 }], // Nuovo Record v3
+    'campagnolo nuovo record 12 speed': [{ to: 1981, id: 4125 }],
+    'campagnolo super nuovo record 12 speed': 4148, // Campagnolo 4001, Super Record (1st Generation, 1974-79) — Team Professional
+    'huret jubilee super light 10 speed': 4303,
+    'huret jubilee 5 or 10 speed': 4303,
+    'new huret challenger alloy 10 speed': 4273, // Huret Challenger 2400 / 2440 / 2448 / 2454
+    'simplex prestige 10 speed': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1974
     // 1974 Motobecane.
     'huret jubilee': 4303,
     // Shifter halves now live in the Shifters column (compound-cell split).
@@ -638,6 +660,10 @@ const COMPONENT_OVERRIDES = {
     // 1973 Raleigh ("wide flange" = high flange).
     'campagnolo record wide flange q r': 3260, // Campagnolo 1035, Record (high flange)
     'campagnolo record wide flange': 3270, // Campagnolo 1036, Record Pista (high flange) — track model
+    // 1974 Raleigh says "Large Flange" where 1973 said "Wide Flange".
+    'campagnolo record large flange q r': 3260, // Campagnolo 1035, Record (high flange)
+    'normandy competition large flange q r alloy': 3388, // Normandy Luxe Competition (gold label), as 1973
+    'normandy sport large flange q r alloy': 3390, // Normandy Sport (high flange, oblong holes)
     'normandy luxe q r competition wide flange': 3388, // Normandy Luxe Competition (gold label)
     'normandy sport q r wide flange alloy': 3390, // Normandy Sport (high flange, oblong holes)
     'normandy sport alloy wide flange q r': 3390,
@@ -646,8 +672,10 @@ const COMPONENT_OVERRIDES = {
     'normandy luxe competition': 3388,
     'normandy sport with quick release': 3390,
     'campagnolo record': [{ to: 1987, id: 3260 }, { from: 1990, id: 3265 }], // 1035 high flange (to 1987, covers 1986 Cinelli) / Record 8sp
-    // 1975 Motobecane.
-    'campagnolo record large flange': 3260,
+    // Same text on a track bike (1974 Raleigh Professional Track, no Q/R ->
+    // 1036 Record Pista) and a road bike (1975 Motobecane -> 1035). The only two
+    // catalogs using it, so the year split is exact.
+    'campagnolo record large flange': [{ to: 1974, id: 3270 }, { from: 1975, id: 3260 }],
     'campagnolo record low flange': 3259, // Campagnolo 1034, Record (Low Flange)
     // 1981 Kalkhoff.
     'shimano 600 ax': 3532, // Shimano FH-6361, 600 AX
@@ -693,6 +721,12 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1974 Raleigh (US): the table drops the "999" the 1973 table carried, but the
+    // International copy (p. 6) still says "Weinmann 999 center pull quick release".
+    'weinmann center pull with lightened q r levers': [{ to: 1975, id: 7929 }], // Weinmann AG Vainqueur 999 (610 / 750)
+    'weinmann center pull with q r levers': [{ to: 1975, id: 7929 }],
+    'weinmann center pull with extension levers': [{ to: 1975, id: 7929 }],
+    'campagnolo record with lightened levers': [{ to: 1977, id: 573 }], // 1974 Raleigh Team Professional: Campagnolo 2040, Record (pre-CPSC)
     // 1993 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
     'campagnolo veloce': 587, // Campagnolo BR-02VL, Veloce Monoplaner
     'shimano deore xt alloy cantilever': 980, // 1985 Raleigh: Shimano BR-MC70, Deore XT M700 (1983-86, first-gen XT)
@@ -841,7 +875,10 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
-    'campagnolo pista 49t': 1505, // 1973 Raleigh: Campagnolo 1051, Record Pista (144bcd, 1967-85)
+    'campagnolo pista 48t': 1505, // 1973 Raleigh Professional Track: Campagnolo 1051, Record Pista (144bcd, 1967-85)
+    'campagnolo pista with 165mm cranks': 1505, // 1974 Raleigh Professional Track
+    'campagnolo cotterless alloy': [{ to: 1977, id: 1496 }], // 1974 Raleigh International: 1049 Nuovo Record Strada v4
+    'campagnolo super nuovo record titanium axle and chainrings 42 52t': 1509, // 1974 Raleigh Team Professional: 1049/A Strada Super Record
     'campagnolo veloce 53 39t': 7062, // 1993 Bianchi: Campagnolo FC-01VL, Veloce
     'shimano at10 x 50 40 28t': 7724, // 1993 Bianchi: Shimano FC-AT10, Altus A10 (SG-X triple)
     'shimano at10 x 50 40 30t': 7724, // 1993 Bianchi: Shimano FC-AT10, Altus A10 (SG-X triple)
@@ -921,6 +958,9 @@ const COMPONENT_OVERRIDES = {
     'brooks b17 leather': 5315, // Brooks B17 Champion Standard
     'brooks professional': 5303, // Brooks Team Professional
     'brooks professional team special leather': 5304, // Brooks Team Professional "Team Special"
+    'brooks professional leather team special': 5304, // 1974 Raleigh word order
+    'brooks professional leather': 5303, // 1974 Raleigh International
+    'brooks b17 narrow leather': 5310, // 1974 Raleigh: Brooks B17 Champion Narrow
     // 1974 Motobecane (the seat post aside is not part of the saddle).
     'brooks professional with alloy seat post': 5303,
     'brooks professional with campagnolo seat post': 5303,
@@ -1040,6 +1080,8 @@ const COMPONENT_OVERRIDES = {
     'shimano rx100': 3977, // Shimano PD-A550, RX100
     // 1973 Raleigh.
     'campagnolo strada': 3708, // Campagnolo 1037, Record Strada
+    'campagnolo nuovo record strada': 3708, // 1974 Raleigh International: Campagnolo 1037, Record Strada
+    'campagnolo super nuovo record': [{ from: 1974, to: 1985, id: 3716 }], // 1974 Raleigh Team Professional: Campagnolo 4021, Super Record Strada
     'campagnolo super leggera strada': 3709, // Campagnolo 1037/a, Record Strada Superleggeri (SL)
     'campagnolo super leggera pista': 3715, // Campagnolo 1038/a, Record Pista Superleggari (SL)
     // 1974 Motobecane. Without this the only substring hit is the 1983 50th
@@ -1084,6 +1126,8 @@ const COMPONENT_OVERRIDES = {
     // from in the 90s (Krono 1993), so blocked rather than wrong.
     'campagnolo': [{ to: 1985, id: 5749 }, { from: 1990, id: null }], // Campagnolo 1044, Record
     'campagnolo seat post': [{ to: 1985, id: 5749 }], // 1974 / 75 Motobecane, split out of the Saddle cells
+    'campagnolo alloy': [{ to: 1985, id: 5749 }], // 1974 Raleigh: Campagnolo 1044, Record
+    'campagnolo super nuovo record': [{ from: 1974, to: 1980, id: 5759 }], // 1974 Raleigh Team Professional: Campagnolo 4051, Super Record
     'shimano dura ace': [{ from: 1990, to: 1993, id: 5893 }, { from: 1994, id: 5895 }], // SP-7400-A / SP-7410 — 1993 Bianchi
     alloy: null, // generic word; substring-hits "Titan alloy"
     // 1981 Kalkhoff.
@@ -1124,6 +1168,7 @@ const COMPONENT_OVERRIDES = {
     // 1973 Raleigh. The Regina Extra C/7 109/E catalogue's only 1/2 x 3/32
     // «oro quality» chain is the 50 oro; four oro rows otherwise compete.
     '1 2" x 3 32" regina oro': 1382, // Regina Extra 50 Oro
+    '1 2" x 3 32" regina d\'oro gold': 1382, // 1974 Raleigh Professional Mk IV: Regina Extra 50 Oro
     // 1975 Falcon.
     'renolds': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
   },
@@ -1144,6 +1189,7 @@ const COMPONENT_OVERRIDES = {
   },
   Freewheels: {
     '13 24t regina oro 6 speed': 2194, // 1973 Raleigh: Regina Oro (6 speed)
+    "13 24t regina d'oro 6 speed": 2194, // 1974 Raleigh Team Professional: Regina Oro (6 speed)
     'suntour alpha 5000 14 28t': 7866, // SunTour FW-AL00-R6, Alpha freewheel (AccuShift leaflet c. 1987)
     'shimano 600 14 24t': [{ from: 1986, to: 1989, id: 2218 }], // 1987 Bianchi: Shimano MF-6208-6, 600EX SIS
     'simplex 14 24t': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
@@ -1168,6 +1214,7 @@ const COMPONENT_OVERRIDES = {
     'maillard 14 16 18 20 23': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
   },
   Tyres: {
+    'clement strada 66 lightweight cotton tubular': 6775, // 1974 Raleigh International: Clement Strada 66 (red label)
     'clement criterium silk tubular': 6748, // Clement Criterium Seta (seta = silk)
     // 1975 Motobecane "Wheel Rims & Tires" cells, split by splitCellValue
     // ("SUPER CHAMPION rims, ELVEZIA tubulars" -> Rims / Tyres); the Super

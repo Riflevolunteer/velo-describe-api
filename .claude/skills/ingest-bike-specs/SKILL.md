@@ -81,7 +81,9 @@ had at least one of:
   The generator then splits each cell (`splitCellValue`): a cell that
   divides on " / ", ", " or "; " into exactly one part per label is shared
   out — by hint word (`SPLIT_PART_HINTS`: front / rear, rims / tires,
-  crank / BB) when each part has one, else by position — so "SUPER CHAMPION
+  crank / BB) when each part has one, else by position but only if some part
+  carries its own label's hint and none carries another's (so "Campagnolo
+  Nuovo Record, 12 speed" stays whole for both derailleurs) — so "SUPER CHAMPION
   rims, ELVEZIA tubulars" becomes Rims "SUPER CHAMPION rims" + Tyres
   "ELVEZIA tubulars". Any other cell (one groupset name for both
   derailleurs, "Sakae 42/52") is copied whole to every label. Cells with no
