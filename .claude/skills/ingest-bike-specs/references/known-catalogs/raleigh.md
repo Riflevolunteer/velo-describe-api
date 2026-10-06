@@ -72,6 +72,39 @@
   its own label's hint word and none carries another's; all 14 loaded
   catalogs regenerate to unchanged counts.
 
+## 1975 Raleigh — `1975_raleigh_spec.csv` (10 bikes, 187 specs, 66 linked)
+
+- Source: https://www.retrobike.co.uk/archive/1975-raleigh-catalogue.1191/
+  (r75.pdf, 24 pages, 150 ppi JPEG scan, no text layer; US edition;
+  download needs the archive page's cookies first). CSV written by hand
+  (scratchpad script) from the Technical Specifications table p. 23, read
+  from 400 dpi crops; headers copied from the 1974 CSV. `data_source` 130
+  citation names the scan (UPDATE appended to the load file).
+- Models: Team Professional DL-185, Professional Track DL-175, Professional
+  Mk IV DL-180, International DL-170, Competition Mk II DL-165, Gran Sport
+  DL-160, Super Course Mk II DL-100 & 100L, Grand Prix DL-115 & 115L, Record
+  DL-130 & 130L, Super Tourer DL-140 (the DL-135 5-speed is gone).
+- Source fixes in the CSV: Super Tourer chain printed `1/24" x 3/32"` ->
+  `1/2" x 3/32"`; "Prugnet 62 A" / "Prugnant 62A" lugs -> Prugnat 62A (1974
+  spelling); line-break hyphens rejoined ("Compe-tition"). Track brakes /
+  derailleur blank -> "None"; Extras blank for Super Course, Grand Prix,
+  Record. Weights 22½ / 26¼ -> "22.5 lbs." / "26.25 lbs.".
+- Overrides: 1974 picks re-keyed for 1975 wording (Weinmann "999
+  Centerpull" -> 7929; Huret Challenger / Challenger Deluxe -> 2388 / 4273;
+  Huret Jubilee 10 Speed -> 2396 / 4303; Record Pista Large Flange -> 3270,
+  Record Strada Large Flange Q/R -> 3260; Normandy Competition word order ->
+  3388; Regina D'Oro chain -> 1382; Brooks Professional Team Special ->
+  5304; Nuovo Record Cotterless -> 1496; Pista 165 mm -> 1505). Team
+  Professional: brakes now "Campagnolo Super Record" -> 582 (4061 Super
+  Record v1, 1974-82) instead of 1974's 2040 Record; RD 4148, crank 1509,
+  pedals 3716, seatpost 5759 as 1974. Simplex Prestige rear stays 4583
+  (dated 1971-74, closest row).
+- Left unlinked: Super Record front (DB rows start 1979) and hubs (high /
+  low flange ambiguous); Gran Sport "Normandy Large Flange Q/R Alloy" (Sport
+  vs Competition); Weinmann Symmetric (1970 black / red label rows); T.A.
+  Criterium, Nervar, Maillard 13-26, Simplex Maxi, TTT Franco Belge / Track
+  bend, Raleigh-branded parts. All loaded catalogs regenerate unchanged.
+
 ## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 91 linked)
 
 - Source is a single scanned image on Sheldon Brown's Retro Raleighs site

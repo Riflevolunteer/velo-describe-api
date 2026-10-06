@@ -479,6 +479,11 @@ const COMPONENT_OVERRIDES = {
     'huret jubilee 5 or 10 speed': [{ to: 1976, id: 2396 }],
     'new huret challenger alloy 10 speed': 2388, // Huret Challenger 950 / 951
     'simplex prestige 10 speed': 2583, // Simplex Prestige Criterium AV 223
+    // 1975 Raleigh (US) spec table. Super Record front left unlinked: the DB's
+    // Super Record fronts start 1979, before that the group used the 1052/1.
+    'huret jubilee 10 speed': [{ to: 1976, id: 2396 }], // Huret Jubilee 500 (5-hole cage)
+    'huret challenger 10 speed': 2388, // Huret Challenger 950 / 951
+    'huret challenger deluxe 10 speed': 2388,
     // 1974 Motobecane (shifter asides now split into the Shifters column).
     'huret jubilee': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }],
     // 1975 Motobecane.
@@ -584,6 +589,11 @@ const COMPONENT_OVERRIDES = {
     'huret jubilee 5 or 10 speed': 4303,
     'new huret challenger alloy 10 speed': 4273, // Huret Challenger 2400 / 2440 / 2448 / 2454
     'simplex prestige 10 speed': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1974
+    // 1975 Raleigh (US) spec table.
+    'campagnolo super record 12 speed': 4148, // Campagnolo 4001, Super Record (1st Generation) — Team Professional
+    'huret jubilee 10 speed': 4303,
+    'huret challenger 10 speed': 4273, // Huret Challenger 2400 / 2440 / 2448 / 2454
+    'huret challenger deluxe 10 speed': 4273,
     // 1974 Motobecane.
     'huret jubilee': 4303,
     // Shifter halves now live in the Shifters column (compound-cell split).
@@ -667,6 +677,11 @@ const COMPONENT_OVERRIDES = {
     'normandy luxe q r competition wide flange': 3388, // Normandy Luxe Competition (gold label)
     'normandy sport q r wide flange alloy': 3390, // Normandy Sport (high flange, oblong holes)
     'normandy sport alloy wide flange q r': 3390,
+    // 1975 Raleigh. Gran Sport's bare "Normandy Large Flange Q/R Alloy" left
+    // unlinked (Sport vs Luxe Competition; 1974 Gran Sport had Competition).
+    'campagnolo record pista large flange': 3270, // Campagnolo 1036, Record Pista (high flange) — Professional Track
+    'campagnolo record strada large flange q r': 3260, // Campagnolo 1035, Record (high flange)
+    'normandy competition large flange alloy q r': 3388, // Normandy Luxe Competition (gold label), as 1974
     // 1974 Motobecane. Bare "Normandy Luxe Competition" is ambiguous between
     // the gold- and red-label rows; the road bikes took the high-flange gold.
     'normandy luxe competition': 3388,
@@ -727,6 +742,11 @@ const COMPONENT_OVERRIDES = {
     'weinmann center pull with q r levers': [{ to: 1975, id: 7929 }],
     'weinmann center pull with extension levers': [{ to: 1975, id: 7929 }],
     'campagnolo record with lightened levers': [{ to: 1977, id: 573 }], // 1974 Raleigh Team Professional: Campagnolo 2040, Record (pre-CPSC)
+    // 1975 Raleigh (US): the "999" is back in the table.
+    'weinmann 999 centerpull with lightened q r levers': [{ to: 1975, id: 7929 }], // Weinmann AG Vainqueur 999 (610 / 750)
+    'weinmann 999 centerpull with q r levers': [{ to: 1975, id: 7929 }],
+    'weinmann 999 centerpull with extension levers': [{ to: 1975, id: 7929 }],
+    'campagnolo super record with lightened levers': 582, // 1975 Team Professional: Campagnolo 4061, Super Record v1 (1974-82)
     // 1993 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
     'campagnolo veloce': 587, // Campagnolo BR-02VL, Veloce Monoplaner
     'shimano deore xt alloy cantilever': 980, // 1985 Raleigh: Shimano BR-MC70, Deore XT M700 (1983-86, first-gen XT)
@@ -879,6 +899,9 @@ const COMPONENT_OVERRIDES = {
     'campagnolo pista with 165mm cranks': 1505, // 1974 Raleigh Professional Track
     'campagnolo cotterless alloy': [{ to: 1977, id: 1496 }], // 1974 Raleigh International: 1049 Nuovo Record Strada v4
     'campagnolo super nuovo record titanium axle and chainrings 42 52t': 1509, // 1974 Raleigh Team Professional: 1049/A Strada Super Record
+    'campagnolo pista with 165 mm cranks': 1505, // 1975 Raleigh Professional Track
+    'campagnolo nuovo record cotterless': [{ to: 1977, id: 1496 }], // 1975 Raleigh Mk IV / International: 1049 Nuovo Record Strada v4
+    'campagnolo super nuovo record with titanium axle & cups 53 42 chainrings 1725 mm cranks': 1509, // 1975 Raleigh Team Professional: 1049/A
     'campagnolo veloce 53 39t': 7062, // 1993 Bianchi: Campagnolo FC-01VL, Veloce
     'shimano at10 x 50 40 28t': 7724, // 1993 Bianchi: Shimano FC-AT10, Altus A10 (SG-X triple)
     'shimano at10 x 50 40 30t': 7724, // 1993 Bianchi: Shimano FC-AT10, Altus A10 (SG-X triple)
@@ -959,6 +982,7 @@ const COMPONENT_OVERRIDES = {
     'brooks professional': 5303, // Brooks Team Professional
     'brooks professional team special leather': 5304, // Brooks Team Professional "Team Special"
     'brooks professional leather team special': 5304, // 1974 Raleigh word order
+    'brooks professional team special': 5304, // 1975 Raleigh
     'brooks professional leather': 5303, // 1974 Raleigh International
     'brooks b17 narrow leather': 5310, // 1974 Raleigh: Brooks B17 Champion Narrow
     // 1974 Motobecane (the seat post aside is not part of the saddle).
@@ -1081,6 +1105,7 @@ const COMPONENT_OVERRIDES = {
     // 1973 Raleigh.
     'campagnolo strada': 3708, // Campagnolo 1037, Record Strada
     'campagnolo nuovo record strada': 3708, // 1974 Raleigh International: Campagnolo 1037, Record Strada
+    'campagnolo super record titanium spindles light alloy rail': 3716, // 1975 Raleigh Team Professional: Campagnolo 4021, Super Record Strada
     'campagnolo super nuovo record': [{ from: 1974, to: 1985, id: 3716 }], // 1974 Raleigh Team Professional: Campagnolo 4021, Super Record Strada
     'campagnolo super leggera strada': 3709, // Campagnolo 1037/a, Record Strada Superleggeri (SL)
     'campagnolo super leggera pista': 3715, // Campagnolo 1038/a, Record Pista Superleggari (SL)
@@ -1169,6 +1194,7 @@ const COMPONENT_OVERRIDES = {
     // «oro quality» chain is the 50 oro; four oro rows otherwise compete.
     '1 2" x 3 32" regina oro': 1382, // Regina Extra 50 Oro
     '1 2" x 3 32" regina d\'oro gold': 1382, // 1974 Raleigh Professional Mk IV: Regina Extra 50 Oro
+    '1 2" x 3 32" regina d\'oro': 1382, // 1975 Raleigh Team Professional / Professional Mk IV
     // 1975 Falcon.
     'renolds': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
   },

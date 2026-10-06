@@ -10,7 +10,7 @@ Cross-cutting fixes (matcher bugs, label normalization, DB-wide cleanups
 that touched more than one brand) live separately:
 
 - [known-catalogs/bianchi.md](known-catalogs/bianchi.md) — Bianchi (7 entries)
-- [known-catalogs/raleigh.md](known-catalogs/raleigh.md) — Raleigh (2 entries)
+- [known-catalogs/raleigh.md](known-catalogs/raleigh.md) — Raleigh (4 entries)
 - [known-catalogs/motobecane.md](known-catalogs/motobecane.md) — Motobecane (2 entries)
 - [known-catalogs/kalkhoff.md](known-catalogs/kalkhoff.md) — Kalkhoff (1 entry)
 - [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (1 entry)
