@@ -21,7 +21,7 @@
   Regina Extra 50 Oro (the Regina Extra C/7 109/E catalogue's only
   1/2 x 3/32 oro chain; four oro rows had competed).
 
-## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 360 specs, 90 linked)
+## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 91 linked)
 
 - Source is a single scanned image on Sheldon Brown's Retro Raleighs site
   (catalogs/1985/pages/specifications.html), 19 per-model text blocks in
@@ -78,4 +78,13 @@
   281M) via overrides; 88 -> 90 linked. 161 and 164 levers stay unlinked —
   they sit on the catalogue's racing / extension lever pages (12-16),
   which the bmxmuseum scan set does not include.
+- 2026-10-06: Special Features parts moved to their own columns (CSV
+  rewritten by script, every other cell verified unchanged): Headset
+  ("Tange sealed headset" Portage, "Tange FL-225 sealed headset" Crested
+  Butte — no FL-225 row, so unlinked), Toe Clips (7 bikes), Spokes
+  ("Stainless steel spokes", Prestige / Team U.S.A.). Old Special Features
+  rows 3306 / 3325 / 3344 / 3363 / 3382 / 3401 / 3421 / 3458 / 3575 deleted
+  and reloaded; 360 -> 371 specs, still 91 linked. Pursuit Gearing "14-36 -
+  6 speed" vs Freewheel "14-30 - 6 speed" looks like a transcription slip;
+  left, needs the scan.
 
