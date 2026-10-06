@@ -945,7 +945,7 @@ const COMPONENT_OVERRIDES = {
     // 1974 / 75 Motobecane: shifter halves split out of the Derailleur cells;
     // the SunTour levers are dated by the '73-'75 Products catalogues. The
     // Simplex Prestige stem lever has no 1970s row, so it stays unlinked.
-    'sun tour stem power shifter': 6263, // SunTour 3080 / LD-1100, PUB-10
+    'sun tour stem power shifter': 6263, // SunTour 3080, PUB-10
     'sun tour down tube ratchet shifter': 8056, // SunTour 3553, PDL-M
     'sun tour down tube ratchet shifters': 8056,
     'huret challenger stem shifter': 6073, // Huret Challenger levers 1725-1782 (down tube / stem), 1975

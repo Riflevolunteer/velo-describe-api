@@ -582,3 +582,91 @@
   Compe-V still unmerged with 2603; 4701 "New Skitter (version 2C)" 1977
   velobase left beside 4689; Cyclone FD variants 2624 / 2625 / 2627 / 2628
   untouched. Bike links unchanged (no 1976-79 SunTour bikes in the DB).
+
+## SunTour Catalog 1978 — printed 10.1977 (disraeligears.co.uk, 44 scans)
+
+- `data_source` 126, label "SunTour Catalog 1978 (printed 10.1977)". Source:
+  https://www.disraeligears.co.uk/site/suntour_catalog_1978.html (front
+  cover, inside front cover, page_1..40, inside rear cover, rear cover; PDF
+  page N = printed page N-2). Maeda Industries; USA office now 60 Chapin
+  Road, Pine Brook NJ; English; no prices; spec boxes in oz / g. Sections:
+  Superbe Road (pp 4-7), Superbe Track (8-10), Cyclone family (12-13), Road
+  VX (14-17), range by category (18-33), comparison tables (34-38), chain
+  lines, gear tables. No 1977 catalogue seen.
+- **Renumbering:** the 1976 8-digit codes give way to RD- / FD- / LD- / LS-
+  / PT- / FS- / HC- / TH- codes (the No. 61 / 62 series). Map: Cyclone
+  5902/2811 -> RD-1700, Cyclone GT 2812 -> RD-1800, Seven 2320 -> RD-1900,
+  Seven-GT 2321 -> RD-2000, Honor 2310 -> RD-1100, GT 2410 -> RD-1200 (new
+  design), Skitter 2210 -> RD-1000, Love 2810 -> RD-1600; FD Cyclone 2931 ->
+  FD-1300, SL 2932 -> FD-1200, Seven 2940 -> FD-1400, Compe-V FD-1100, Spirt
+  FD-1000; levers Cyclone 3369 -> LD-1600, PDL-M 3169 -> LD-1500, PSL-M 3159
+  -> LS-1500, DLW 3029 -> LD-1000, SLW 3019 -> LS-1000, N PUB-10 3106 ->
+  LD-1700, PUB-10 3104 -> LD-1300, PUB-5 3094 -> LS-1300, ST-10 / ST-5 ->
+  LD-1200 / LS-1200, UB-10 / UB-5 -> LD-1100 / LS-1100, Bar-Con 3124 ->
+  LD-1400; freewheels Winner-S 1651 99 10 -> WS-5000, 1531 -> PT-3000, 1231
+  -> FT-3000, 1116-1124 -> FS-1000, 1018-1024 -> FS-2000; track cogs
+  1172-1177 -> HC-100, 1173 01 04 -> HC-500; hub 4011 -> TH-1000.
+  **LD-1100 is the UB-10, not the PUB-10** (PUB-10 = LD-1300).
+- New vs '76: Superbe road (RD-2100, FD-1500, LD-2000, RH-2000 / RH-1000,
+  CB-1000, PL-1000, SP-1000, CW-1000, BB-100, HS-100) and track (CW-3000,
+  BB-300, RH-3000 / RH-4000, PL-3000, HS-300, HC-100 / 500 / 900); Road VX
+  (RD-2200 / 2300 VxT / 2400 VxGT / 2500 VxS, FD-1600, LD-1900, CW-1500,
+  BB-150, RH-2500 / RH-1500, PL-1500); PC-6000; US-6000 / US-6500 Ultra-6 and
+  UC-6000 chain; LS-2200 Mighty Shifter II; TL-1000 trigger; MF-1000 mini
+  freewheel. Dropped vs '76: whole V range (V, VT, VGT — back in 1982 per
+  Disraeli Gears), Winner alloy 5 / 6-speed, Winner-S 6, N PUB-5, 3450 Mighty
+  Shifter, 4-speed freewheels, separately numbered Z-gear ("Z gear used over
+  17 teeth" on PT-5000). The comparison table labels a 65g lever "Cyclone"
+  — it is the LD-2000 Superbe.
+- Rule applied: where a row already carried the 1978 code (mostly our
+  1983-85 rows), its year_from moved down to 1978 and the older-number row
+  kept its years with a "succeeds" / "from 1978" note; where none did, the
+  code was folded into the older row's title and year_to extended to 1978.
+- year_from -> 1978: 4756 RD-1900, 7788 RD-2000, 7789 RD-1200, 2641
+  FD-1400, 6296 LD-2000, 6265 LD-1900, 6264 LD-1500, 7793 LS-1500, 7795
+  LS-1000, 7796 LD-1300, 7797 LS-1300, 7799 LS-2200, 7792 LD-1400, 7812
+  US-6500, 7820 UC-6000, 6388 HC-100, 6389 HC-500, 3619 RH-3000, 7811
+  TH-1000, 4013 PL-3000, 172 BB-100, 7819 HS-300. Velobase 1970 placeholder
+  floors -> 1978 (user-approved): 4774 RD-2200, 4014 PL-1500, 1994 CW-3000,
+  1995 CW-1500, 5933 SP-1000, 3620 RH-4000, 3615 RH-2000.
+- year_to -> 1978: 4735, 4773, 4701, 8073, 2616, 8254, 8072, 8057, 8075,
+  8063, 8076, 8066, 8077, 1995. Capped at 1976 (absent): 4772 V-Luxe (was
+  1979), 4704 V-GT Luxe v1 (was 1978), 2229 1110 Winner (was 1990).
+- Retitled (old titles): 4735 "5902, Cyclone" -> "5902 / RD-1700, Cyclone";
+  4738 "2812 99 01, Cyclone GT" -> "2812 99 01 / RD-1800, Cyclone GT"; 4773
+  "SunTour  Vx-T" -> "RD-2300, VX-T"; 4701 "SunTour New Skitter (version
+  2C)" -> "RD-1000, Skitter (version 2C)"; 8073 "2000, Love" -> "2000 /
+  RD-1600, Love"; 2626 "3704, Cyclone (no cable housing stop)" -> "3704 /
+  FD-1300, ..."; 2616 "3702, SL" -> "3702 / FD-1200, SL"; 8254 "3106 99 01 /
+  3105 99 01, N PUB-10 / N PUB-5" -> "... / LD-1700, ..."; 8072 "3230 /
+  3220, ST-10 / ST-5" -> "3230 / 3220 / LD-1200 / LS-1200, ..."; 8057 "3020 /
+  3030, UB-5 / UB-10" -> "3020 / 3030 / LS-1100 / LD-1100, ..."; 8075
+  "1110-S, Winner-S" -> "1110-S / WS-5000, ..."; 8063 "1250, 3-speed
+  freewheel" -> "1250 / PT-3000, ..."; 8076 "1300, 3-speed freewheel (Frash
+  type)" -> "1300 / FT-3000, 3-speed freewheel (Flash type)"; 8066 / 8077
+  gained "/ FS-1000" / "/ FS-2000"; 1995 "SunTour Road Vx, Vx" -> "CW-1500,
+  VX"; **6263 "3080 / LD-1100, PUB-10" -> "3080, PUB-10"** (velobase LD-1100
+  code and 143g were the UB-10's; override comment in
+  generate-bike-update-sql.js fixed to match).
+- Descriptions rewritten (no title / year change) on 4760, 4774, 4707,
+  4775, 4702 (velobase "versions 2D-3B" dropped for length), 2645, 2614,
+  6276, 6259, 1044, 460, 4014, 5933 plus all rows above — 66 rows on
+  source_ref 126. Spec differences 1978 vs No. 61 named inline (RD-1900 364
+  / 313g, RD-2000 385 / 343g, RD-2500 30T / 27T, FD-1600 15T 105g / 18T
+  114g, LD-2000 65 / 78g, LS-1000 65 / 56g, PL-1500 390 / 360g, RH-3000 525
+  / 535g, TH-1000 TL-1000 / TL-2000).
+- New (8 rows, 1978-1978): 8258 TL-1000 trigger; 8259 PC-6000 Pro-Compe 6;
+  8260 US-6000 Winner Ultra-6; 8261 MF-1000 mini single freewheel (own row;
+  7817's combined 1984 FT-3050 / FS-1500 / MF-1000 row left); 8262 RH-1000
+  Superbe small-flange hubs (group Superbe); 8263 RH-2500 / 8264 RH-1500 VX
+  hubs (group VX); 8265 BB-150 VX.
+- Deleted: 6267 "SunTour LS-1100, LS" (Shifters, 1980-1980, bare, velobase,
+  `C128FAEC-32BC-4261-BCE7-9847CFC0B7AD`) — LS-1100 is the UB-5, merged into
+  8057. No links or overrides. User-approved.
+- Left: 3621 bare "SunTour Vx" hub (RH-2500 or RH-1500, can't tell); 3614
+  Superbe hub, 1335 Superbe chainrings, 6694 Superbe stem (bare velobase);
+  2243 Pro-Compe (Ultra-6); 4705 V-GT Luxe v2 (velobase 1978-82, conflicts
+  with V range absent 1978 — left pending the 1982 catalogue); 8255 / 8256
+  Winner 6-speeds and 8061 Mighty Shifter end 1976; 7817 combined row; the
+  three Cyclone FD variants 2624 / 2625 / 2627 / 2628 keep "3704" titles.
+  Bike links unchanged.
