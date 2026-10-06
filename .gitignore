@@ -2,3 +2,4 @@
 .env
 /bike_specs
 bike-update.sql
+.DS_Store

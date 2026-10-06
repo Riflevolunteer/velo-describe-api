@@ -57,9 +57,13 @@
   rims" + Tyres "ELVEZIA / GRAN-TURISMO / PARIS-ROUBAIX tubulars" instead of
   the whole cell under both labels. Old rows 3939 / 3940 / 3958 / 3959 /
   3977 / 3978 deleted and reloaded; overrides rekeyed to the tyre part.
-  Still 205 specs, 58 linked. The other rims-and-tyres cells ("Steel rims
-  27" x 1-1/4" gum wall tires", "WEINMANN H. P. ... MICHELIN ... tires") have
-  no separator and are still copied whole to both labels.
+  Still 205 specs, 58 linked. CSV edit (user, same day): commas added to
+  the other eight rims-and-tyres cells ("Steel rims 27" x 1-1/4", gum wall
+  tires", "WEINMANN H. P. alloy knurled sides, 27" x 1-1/4" MICHELIN high
+  pressure tires"; Grand Jubile's " ,27" typo fixed to ", 27"), so they split
+  too: rows 3790 / 3791, 3807 / 3808, 3823 / 3824, 3841 / 3842, 3860 / 3861,
+  3879 / 3880, 3898 / 3899, 3919 / 3920 deleted and reloaded as Rims + Tyres.
+  No new links (no rim or tyre model named). 205 specs, 58 linked.
 - Wrong auto-link fixed: CAMPAGNOLO Record headset was hitting Record Pista
   #1040; now 1039 Gran Sport/Record.
 - Overrides: Record 42-53 crank → v4; Record large/low flange → 1035/1034;
