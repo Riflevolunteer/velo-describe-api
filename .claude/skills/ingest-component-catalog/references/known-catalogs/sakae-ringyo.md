@@ -1,5 +1,99 @@
 # Sakae Ringyo (SR) catalogs processed so far
 
+## Sakae Ringyo (SR) "Sakae Bicycle Parts" Catalog No. P-5 — Aug 1980 (cyclespeugeot.web.fc2.com, 12pp)
+
+- `data_source` 123, label "Sakae Ringyo (SR) Sakae Bicycle Parts Catalog No. P-5
+  (Aug 1980)". Source: http://cyclespeugeot.web.fc2.com/reminiscence/sakae80.html
+  (save0047.jpg..save0058.jpg, 800x1130 each = 12 printed pages). Cover reads
+  "CATALOG No. P-5"; footer on the Original Component Table page reads
+  "AUG '80 PRINTED IN JAPAN". This is the earliest SR source on file — predates
+  both Catalog No. 18 (c. 1982) and P-7 (Sep 1982) by about two years.
+- Covers: Royal/Super Apex/Apex/Custom/Silstar chainwheels (RY-5ESL/5/S5,
+  SAX-5LA-EL/5RG/5TG, AX-5DLASL/5DLA/5DRG/5SDIIAH, CT-5LA-EL/5RG/5TG, SN-5DLA-EL/
+  SNB-5DLA-SL/SN-5DRG-AH/SN-5SDIIAH/SN-5SDIIE/SNS-5SE/SN-S/SNA/SN-5DX/SNB-5DX/
+  SNS-5DXC); BB sets (Royal ESL/Royal, Super Apex, Apex, SC, SI); chain guards
+  CG-101/110/111/960S/960SS; tools T-902/905-911; handlebar bends (FSC/FSG,
+  RY-978/RY-RC, WS, WR-420, RND-420, RNS-395, SC-713, 7D-701, CTD, CTS, NA-312-90
+  "former name NL-90", NA-324, NA-321-90, NS-321N, ARA-101 "former name AR-L",
+  ARA-102-90, NA-323, NA-340-90); handle stems (FS, RY-ESL, RYII, RY-TY, AX-AH,
+  CT, CS, SR, SAS-50AH/E, AS-30E, JUN-50x150/180, SW-50x135/165); pedals (SP-11,
+  SP-100AL/BL/CP, SP-150(SE), SP-200AL/BL, SP-350, SP-360, SP-450/451, SP-460/461,
+  SP-550FB/FW + accessories); seat pillars (FS-P5, RY-P1ESL II, RY-P1 II, CT-P3,
+  CT-P5, CT-P6/P6C, SSP series, ASP); motocross parts (MB-300 bar, MS-400 stem,
+  MP-120 pedals, MC-100 chainwheel); closes with specification cross-reference
+  tables for every category.
+- Why this one was worth tracking down: the P-7 reconciliation pass (below)
+  flagged several items as "left unresolved, flagged for a decision" because
+  P-7/No. 18 alone couldn't settle them. This catalogue, being independent and
+  earlier, settled two of them outright:
+  - **7882/7883 "Super Apex"/"Apex bottom bracket set"**: P-7 couldn't tell if
+    the DB's 315g/355g was a full assembled-set weight or axle+cups alone.
+    This catalogue's own "SUPER APEX BOTTOM BRACKET SET ... Weight: 315g" and
+    "APEX BOTTOM BRACKET SET ... Weight: 355g" are an exact match as full
+    assembled-set weights. Confirmed, not merged (they were never actually
+    duplicates, just unconfirmed).
+  - **7897 "AR-S / AR-L, All-Rounder"**: catalogue states outright "Model
+    ARA-101 ... (Former model name AR-L)", weight 180g, matching the DB's
+    AR-L split exactly. Settles that half of the row (AR-S remains
+    unresolved — no "AR-S" bend appears in this catalogue either).
+  - Also independently corroborates two judgment calls from the P-7 pass:
+    NA-312-90's former name "NL-90" (used to match row 7895), and SP-200AL/BL
+    being a "Track" type (the catalogue's own spec table says "Track" for
+    SP-200), already used to retitle row 3929 in the P-7 pass.
+- Year extensions applied (27 rows): catalogue proves these parts already
+  existed in Aug 1980, two years before their current `year_from` of 1982
+  (set by the No. 18/P-7 passes) — all exact weight matches: 7876 SI-5DRG AH
+  (610g, catalogued here as "SN-5DRG-AH" — Sakae evidently renamed the SN-
+  prefix to SI- between 1980 and 1982, same part), 7878 SI-5SDIIAH (585g,
+  "SN-5SDIIAH"), 7879 SI-5SDIIE (860g, "SN-5SDIIE"), 7882 Super Apex BB set
+  (315g), 7883 Apex BB set (355g), 7884 RY-978 (290-305g), 7885 RY-RC (280g),
+  7887 WS (305-310g), 7888 CTD (305-310g), 7890 CT-S/CTS (615g), 7892 RN-S/
+  RNS-395 (680g), 7893 SC/SC-713 (530g), 7894 7D/7D-701 (630g), 7895 NL-90/
+  NA-312-90 (220g), 7902 SR-AH/SR-E (305-365g range), 7905 SW-50x135 (280g),
+  7907 RY-P1ESL II (210g), 7909 SSP series (86-193g range), 8219 FSC
+  (310-335g), 8220 FSG (310-335g), 8221 ARA-102-90 (200g), 8227 NA-323
+  (250g), 8228 NA-340-90 (220g), 8233 CS Custom-S stem (370g, 80mm
+  extension), 8234 CT Custom stem (280-330g), 8235 SAS-50AHx190/SAS-50Ex190
+  (370g/380g), 8238 SW-50x165 (300g). `source_ref` repointed to 123 on all.
+- New (3 rows, 1980-1980): Custom chainwheels CT-5LA-EL (625g, component_id
+  8250), CT-5RG (630g, 8251), CT-5TG (660g, triple, 8252) — genuinely absent
+  from the DB; only the bare placeholder row 1746 "Sakae/Ringyo (SR) Custom"
+  (no spec, 1980-1980) existed before.
+- Deleted (user decision, same pass): three bare placeholder rows, no
+  bike_spec links and no `COMPONENT_OVERRIDES` references (checked first) —
+  1746 "Sakae/Ringyo (SR) Custom" (Cranksets, no spec, velobase,
+  `7C3884AE-E2CD-4ED9-A32E-B1934F767D1E`), superseded by CT-5LA-EL/CT-5RG/
+  CT-5TG (8250-8252) above; 1738 "Sakae/Ringyo (SR) Apex" (Cranksets, no
+  spec, no years, velobase, `88779F17-2E4F-4ECA-B056-003936DB1422`),
+  superseded by the existing AX-/AA- Apex chainwheel rows; 3513 bare hub
+  "Sakae/Ringyo (SR)" (Hubs, no spec, no years, velobase,
+  `98876B7B-7217-4082-88B4-EEDA41175B25`), superseded by the specific
+  SH-100/300 Silstar hub rows (7913-7916, 8239).
+- Left unresolved / flagged for a decision, not touched:
+  - 1759 "Silstar" (Cranksets, 183g, non-driveside arm only) — carries
+    independent measured-weight evidence, not a bare placeholder, so a
+    merge rather than a straight delete if it's ever addressed.
+  - **8240 SP-11, Silstar Pedal-11** (380g, year 1982-1982): this
+    catalogue's own SP-11 is 415g(14.5oz) — a real mismatch, not applied.
+    Could be a different sub-variant or a transcription error in either
+    source; needs the physical part or a third source to settle, so left
+    untouched rather than guessed at.
+  - SP-460/461 (catalogue, 440g/400g) vs DB's SP-466/SP-468 (420g/410g):
+    different codes, weights close but not exact — read as a later
+    generation/renumbering rather than the same part. Not merged.
+  - 8246 SP-550FB/FW (DB 500g) vs catalogue's SP-550 520g(18.2oz): a
+    20g gap, inside plausible rounding/printing drift between 1980 and
+    1982 editions but not an exact match — left untouched rather than
+    bundled in with the exact-match year extensions above.
+  - 7901 AX-AH (DB range 300-400g) and 7904 SW-50AH/SW-50E (DB 330g),
+    8236/8237 AS-40E/AS-25E: catalogue's Apex-AH and Swan-AH/E stem entries
+    only show a narrower weight range (320-340g) or don't appear under
+    these exact codes at all (no AS-40/AS-25 on this printing, only
+    AS-30Ex230) — plausibly the same parts measured over a wider size run,
+    but not an exact-match confirmation, so `year_from` left at 1982.
+  - Chain guards, tools, and motocross parts noted above are out of scope
+    for `component_category`, same convention as the P-7/No. 18 passes.
+
 ## Sakae Ringyo (SR) "Sakae Bicycle Parts" Catalog No. P-7 — Sep 1982 (user-provided scan, 12pp)
 
 - `data_source` 122, label "Sakae Ringyo (SR) Sakae Bicycle Parts Catalog No. P-7
