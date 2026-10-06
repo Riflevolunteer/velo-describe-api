@@ -228,3 +228,58 @@ needs it). 5097 Open 4 CD is linked to bike 100 "Virata" (1993), beyond its
 1989 year_to — needs a 1990s catalogue. 2410 "870, SSC (31.8 clamp)" left
 alone (likely later). 3403 hub / 1192 cassette "Mavic 571" probably the MRL
 570's successor, not merged. 5114 "Mavic SSC" (1986, bare) still unplaced.
+
+## Mavic Trade Catalogue 90/91 (1990) — disraeligears.co.uk, data_source id 121
+
+Source: https://www.disraeligears.co.uk/site/mavic_trade_catalogue_9091.html
+(46 `..._page_N_main_image.jpg` images: front cover, pp. 1-44, rear cover;
+bound locally, PDF page N = catalogue page N-1). **English edition**, cover
+"Trade Catalogue 90/91"; Road pp. 4-23, ATB pp. 26-33, technical pp. 34-44;
+no group-composition pages. Dated year_from 1990 / year_to 1991. Disraeli
+Gears: the 845 pictured is a prototype.
+
+Near-total range turnover vs 88-89. New road: 305 headset, 351 bar, Kit 357,
+610 **URD** (axles 110/114/116/119/123 replace 112-125), 631 crank (internal
+ring star; track/double/triple builds), 646 LMS pedal, 440 brakes, 840/841
+RDs, 821 indexed shifters, Mach 2 CD 2 (double eyelet). New ATB line:
+Oxygen M6 CD, Energy M7 CD, MA 40 MB, M 231 / 231 CD / 261 / 261 CD (P.S.P.
+cantilever profile), 530 hub (Paris-Gao-Dakar kit = 530 hubs + Oxygen M6 CD
+rims), 315 headset, 616 RD BB, 637 crank, 875 front, 845 rear, 825
+shifters; 330 seatpost first appears. Dropped (all already year_to 1989):
+600 RD BB, 630/635/636, 645 LS, 410/430 brakes, 810-832 FDs, 861/871,
+801/803/851/853, 580 CX/Piste, MRL 570, Mach 2 CD, MA 50 Cr.D, SSC n° 4,
+310/311/312. Spec changes named per edition: Open 4 CD 395/360 -> 420/385 g;
+Rando M4 up to 44 mm/500 g -> 44-55 mm/550 g; Bulb'Air 650 780 g -> 650 900
+g + 600 830 g; 365 stem gains 130 mm; 315 128 g here vs 125 g "1991".
+
+**Updated** (59 rows, source_ref -> 121):
+- Retitled (old title kept here for matching): 3409 "Mavic Paris Gao Dakar"
+  (hub) -> "Mavic 530 (Paris-Gao-Dakar)"; 2862 "Mavic 351 SSC" -> "Mavic
+  351"; 2864 "Mavic 357 Extension Kit" -> "Mavic Kit 357"; 83 "Mavic 616"
+  -> "Mavic 616 RD". All -> 1990-1991 (were 1980 or 1990 placeholders).
+- year_from moved later to 1990 (called new here, or absent from all three
+  complete 1984/86/88 catalogues): 1645 631 (was 1980), 3049 305, 3046 315,
+  5817 / 5818 330 seat posts, 855 440 brake, 364 440 lever, 6087 821, 4340
+  840 / 4341 841 / 4345 845 (were 1992-1992; year_to kept 1992), 3838 646
+  LMS (was 1991), 5072 M 261 (was NULL).
+- year_to capped: 85 610 RD 1990 -> 1989 (superseded by 610 URD, new row).
+- year_to -> 1991: rims 5049, 5073, 5074, 8177, 5084, 5085, 5048, 5086,
+  5097, 5105, 5109, 5093, 5092, 5069, 5052, 5067, 5066, 5057, 5082, 8150,
+  8178, 8179, 5071; wheels 6971, 6972, 6973, 8181; hubs 3397, 8159, 3401;
+  bars 2861, 2863; stems 6585, 6586; crank 1643; pedals 3837, 8180; FDs
+  2407, 8187; shifters 8165, 6085.
+
+**Inserted** (UUID source_id, source_ref 121; 1990-1991 unless noted):
+rims Oxygen M6 CD (8188), Energy M7 CD (8189), MA 40 MB (8190), M 231
+(8191), M 261 CD (8192), **Paris-Roubaix SSC (8193, 1988-1991, SSC)** — the
+unlabelled row the 88-89 pass flagged missing; its 1988 start rests on the
+88-89 catalogue; BB 610 URD (8194); FD 875 (8195).
+
+**Deleted:** none.
+
+**Left unresolved:** 5071 M 231 CD is the `'mavic 231'` override target and
+is linked to three 1993 bikes (Grizzly, Super Grizzly, Nth FS) beyond its
+1991 year_to — they may really be the plain M 231 (8191). 3402 "Mavic 531"
+hub (1990) possibly a 530 successor, not merged. 4343 "870 (MTB)" RD
+(1990-1994, "as listed in 1991") absent here. 2410 "870, SSC (31.8 clamp)",
+1192 / 3403 "571" unchanged.
