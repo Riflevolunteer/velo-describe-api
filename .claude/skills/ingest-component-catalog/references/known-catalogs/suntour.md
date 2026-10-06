@@ -745,3 +745,59 @@
   Bike follow-up: 2652 FD-2000 now starts 1982, so the 1983 Bianchi Superbe
   Pro FD could link (override in generate-bike-update-sql.js starts 1984);
   4766 keeps its 1983 Bianchi link.
+
+## SunTour Catalog, Japanese domestic edition — printed 04.1979 (cyclespeugeot.web.fc2.com, 48 JPGs)
+
+- `data_source` 128, label "SunTour Catalog, Japanese edition (printed 04.1979)".
+  Source: http://cyclespeugeot.web.fc2.com/reminiscence/suntour79.html
+  ("Reminiscence" Part 96; catalog/suntour79/1..48.jpg, image N = printed page
+  N-2). Maeda Industries (Sakai, Mihara, Shiga), SunTour U.S.A. 60 Chapin Road,
+  Pine Brook NJ; rear cover "PRINTED IN JAPAN. APR. 1979". Japanese, no prices,
+  "NEW" flags. pp 2-5 features, 6-13 Superbe road / track, 14-15 Cyclone, 16-18
+  Road VX, 19 New Winner / Ultra-6, 20-22 BMX, 23 Mighty Click, 24-34 range by
+  category (RDs, FDs, levers, freewheels, 3-speed hub / coaster, fork ends,
+  accessories), 35-36 cables / tools, 37 clothing, 38-44 comparison tables,
+  chain lines, gear tables. Sits between 1978 (126) and No. 59 (127).
+- New vs 1978 (NEW-flagged): Superbe Pro RD-3100, CB-3000 / 3100, CB-4000 /
+  4100, HS-150, PL-2000, RS-1000 (filed under Superbe Pro; No. 59 has it as
+  Superbe), HC-100 now badged Superbe Pro; NSL FD-1700; Mighty Click RD-2800,
+  FD-1800, LS-2900, LD-2100 LP-10, LS-2800 LP-5; PN-6000; LS-3000 Luxury; the
+  whole BMX line. Not flagged but absent from 1978: VGT RD-1500, Volante,
+  New Winner NW-7000 / 6500 / 6000 / 5000, RD-2700, LS-2500 Tank, LS-2100 SFL,
+  LS-3100. Absent vs 1978 (stay capped 1978): CB-1000 (calipers and levers),
+  Love, VX-T, SL FD-1200, N PUB-10, WS-5000, US-6000, PT-3000, FS-1000 /
+  FS-2000 (FS-1500 SD instead). Last appearance before No. 59: Skitter,
+  ST-10 / ST-5, TL-1000, CW-1500, BB-150, PC-6000, FT-3000 (SP-1000 already to
+  1980). CB-3200 filed under Superbe here, 210g.
+- **LS-2800 in 1979 is the Mighty Click LP-5 stem lever** (same 22.2mm, 218g
+  part as No. 62's LS-2800) — 7844 retitled.
+- year_from -> 1979: 4685, 8266, 2605, 8270, 6297, 7801, 8274, 7844, 1051,
+  3136, 4010, 4001, 2237, 2240, 2238 (1980), 2236, 7813 (PS-6000 still No. 61
+  only), 7817 (FS-1500 from 1979; FT-3050 No. 61), 6694 RS-1000 (velobase 1970
+  placeholder; catalogue flags NEW). year_to -> 1979: 4701, 8072, 8258, 1995,
+  8265, 8259, 8076. year_to 1979 -> 1978 (absent): 1044 / 460 CB-1000.
+- Retitled (old titles): 7844 "SunTour LS-2800, Mighty Click" -> "LS-2800,
+  Mighty Click LP-5"; 2236 "SunTour NW-5000, New Winner 5sp" -> "New Winner
+  (5-speed)".
+- Descriptions rewritten (edition differences inline, No. 61 citations
+  dropped where 1979 gives the same spec): 4766 (22T / 12T front in 1979 vs
+  20T / 10T in 1982), 4760, 4708, 4705 (36T / 16T vs 38T / 18T; velobase
+  249g Spec dropped for length), 4685, 2614, 6296, 1045, 462, 3615 (590g vs
+  599g), 3620, 1994, 3135, 4008, 175 (292 / 295g), 1995, 8261, 6388 ("Superbe
+  Pro name from the 1980s" was wrong) plus the year rows. 44 rows on
+  source_ref 128.
+- New (19 rows, 1979-1979, source_ref 128): 8277 LS-2500 Tank, 8278 LS-2100
+  SFL, 8279 LD-2100 Mighty Click LP-10, 8280 LS-3100 sports lever (3-speed
+  hub); BMX (new SunTour group 320 "BMX", 4001 MP-1000 moved into it): 8281
+  RD-2900 Hole Shot, 8282 LS-2600 Hole Shot, 8283 LS-3000 Luxury, 8284 /
+  8285 MF-2000 / MF-1500 EZ Off, 8286 MF-3000 Hole Shot 2S, 8287 CW-2000 VX
+  gear crank, 8288 CW-1600 VX Jr, 8289 CW-2100 chain rings, 8290 MS-1000 stem,
+  8291 / 8292 MH-1500 / MH-1000 front hubs, 8293 MH-2000 Unit Hub, 8294
+  HB-5000 Double Thread Hub, 8295 CB-5000 coaster brake (Geared Hubs).
+- Deleted (user-approved): 1979 "SunTour BMX" (Cranksets, NULL years, bare
+  velobase, `A05A7AEB-ECAF-4322-ABD3-0860F9405EA7`, no links or overrides) —
+  placeholder for CW-2000 or CW-1600, can't tell which.
+- Left: 4755 / 4754 (2320 / 2321 Seven, Seven-GT) keep year_to 1979 though
+  1979 lists the RD-1900 / 2000 at No. 61 weights (313 / 343g); MC-1000 seat
+  clamp, DT-100, fork ends, accessories, tools out of scope. Bike links
+  unchanged (no 1979 SunTour bikes; 4766 override years untouched).
