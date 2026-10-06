@@ -169,3 +169,62 @@ holds the `mavic ma40` override and a bike_spec link). No links/overrides.
 (independent avg weights); 6973 "Comete -/+ (disc)" — a "COMETE +" disc is
 photographed but not described; 630 crank 1640 vs 1641 font still unsettled;
 no component_group rows for 1015 RS.
+
+## Mavic Catalogue 88-89 (1988) — disraeligears.co.uk, data_source id 120
+
+Source: https://www.disraeligears.co.uk/site/mavic_catalogue_88-89.html (50
+`..._page_N_main_image.jpg` images: front cover, pp. 1-48, rear cover;
+bound locally, PDF page N = catalogue page N-1). **French edition**, cover
+"88·89 catalogue", no print code. Dated year_from 1988 / year_to 1989 (same
+convention as the 1986-87 entry). Per Disraeli Gears, the last catalogue
+with the 800/850 derailleurs and the only one with the 803/853.
+
+New vs 1986-87: M.R.L. 570 freewheel hub; Bulb'Air front lenticular;
+Comète ± fully described (8 weight versions); rims 190 FB, Open 4 CD ("une
+nouvelle génération"), MA 50 Cr.D (hard chrome), Oxygen M6, Mach 2 CD
+(tubular, single eyelet), SSC n° 4 Cr.D; 355 aero bar; 611 RD Piste and 615
+RD MTB BBs; 636 Piste crank; 645 LS Look pedal (6450/6451); triple FDs
+830/831/832 and 870/871/872; long-cage 803/853 RDs. Stainless exposed
+eyelets on all top rims; Module 4 gains 48 holes; all rim labels redesigned
+(yellow MAVIC block + coloured "M" panel). Dropped: Montlhéry Légère, Argent
+8, CXP 25, Sulky 540, all BMX (TTM 4/4 CD/504/504 CD/560).
+**Resolves the 1988 ad's "570":** the 1000 SSC options column puts 570 under
+Moyeux (hubs) — it is this MRL 570, not a brake. 1000 SSC options: 370,
+570, 613, 635, 645, 870/871/872, 853. 1015 RS options: 613, 635, 645,
+830/831/832, 803.
+
+**Updated** (58 rows, source_ref -> 120):
+- Retitled (old title kept here for matching): 5048 "Mavic M3 CD" (and
+  before that velobase "Mavic Module 3CD") -> "Mavic Module 3 CD"; 5115
+  "Mavic SSC N°4 CRD" -> "Mavic SSC n° 4 Cr.D" (NULL -> 1988-1989); 6973
+  "Mavic Comete -/+ (disc)" -> "Mavic Comète ±"; 2863 "Mavic 355 Drop
+  Handlebar / Bullhorn" -> "Mavic 355"; 1644 "Mavic Pista" -> "Mavic 636
+  Piste" (NULL -> 1988-1989).
+- year_from moved later: 5097 Open 4 CD 1980 -> 1988 ("new generation",
+  absent 1986); 2409 870 SSC 1984 -> 1988 (absent from 1984 and 1986);
+  4347 853 SSC 1980-1980 -> 1988-1989.
+- NULL -> 1988-1989: 5080 MA 50 Cr.D.
+- year_to -> 1989: rims 5073, 5074, 8177, 5084, 5085, 5048, 5086, 8150,
+  8178, 8179, 5105, 5109, 5093, 5092, 5052, 5066, 8149, 5057, 5097; wheels
+  6971, 6972, 6973; hubs 8159, 3408, 8160, 3401; 3045 312; 2861 350; 6585
+  365; BB 84; cranks 1641, 1642; pedals 3837, 8180, 3836 645 LS (was 1987);
+  FDs 2405, 2406, 8163, 2407, 8164; RD 4346; shifter 8165; brakes 852, 854;
+  levers 361, 363.
+- Description only: 5049 190 FB (single eyelet here, double in the 1988
+  ad — both named), 5077 MA 40, 5069 GP 4, 5067 GL330, 85 610 RD (adds
+  611/615 sub-refs), 4339 803 (1986).
+
+**Inserted** (1988-1989, UUID source_id, source_ref 120): Bulb'Air (8181,
+Wheel(sets)), M.R.L. 570 (8182, Hubs), FDs 830 (8183), 831 (8184), 832
+(8185), 871 SSC (8186), 872 SSC (8187).
+
+**Deleted:** none.
+
+**Left unresolved:** label-variant rows not extended past 1987 because the
+1988 labels were redesigned — 5075 MA 2 (Red/Green Label), 5112
+Paris-Roubaix SSC (red label), 5113 (yellow label); the 1988-89
+Paris-Roubaix SSC has no unlabelled row (insert one if a later source
+needs it). 5097 Open 4 CD is linked to bike 100 "Virata" (1993), beyond its
+1989 year_to — needs a 1990s catalogue. 2410 "870, SSC (31.8 clamp)" left
+alone (likely later). 3403 hub / 1192 cassette "Mavic 571" probably the MRL
+570's successor, not merged. 5114 "Mavic SSC" (1986, bare) still unplaced.
