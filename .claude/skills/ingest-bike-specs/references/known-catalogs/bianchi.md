@@ -166,6 +166,14 @@
   hub and freehub are separate rows), "SunTour AP-12 chain" (not in the
   1992 catalogue). `summarize-bike-sql.js` had reported 0 specs since
   `source_ref` was added to the spec INSERT; regex fixed in this pass.
+- 2026-10-06: Volpe "Barcon lever Accushift Plus" → SL-BC01 7976 (year_to
+  extended to 1993 on this bike). Bare "Shimano Hyperglide" 8-speed
+  cassettes, each on one bike, picked by group + catalogued range: SBX
+  12-23T → CS-HG90-8 7671 (U), Virata 13-23T → CS-HG70-8 7762 (T), Super
+  Grizzly 12-28T → CS-M900-8 7668 (Q). The 6 / 7-speed values (12-28T,
+  13-28T, 13-30T, 14-28T, black 13-30T) are shared by bikes of different
+  groups (e.g. 12-28T 7-speed on XT, DX and LX bikes), so a value-keyed
+  override can't pick one; left unlinked. 181 → 185 linked.
 
 ## 1973 Bianchi — `1973_bianchi_spec.csv` (22 bikes, 86 specs, 8 linked)
 

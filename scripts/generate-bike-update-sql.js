@@ -1102,6 +1102,12 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace 12 23t 8 speed': 1205, // Shimano CS-7400-8, Dura-Ace 7400 (Uniglide)
     'suntour powerflo 11 28t 8 speed': 1220, // SunTour CS-AP20-S8, XC Comp
     'suntour powerflo 12 30t 7 speed': 1221, // SunTour CS-AP10-S7 / -K7, PowerFlo 7-speed (1992 catalogue)
+    // 1993 Bianchi bare "Hyperglide" 8-speed values: each is on one bike only, and the
+    // bike's group plus the catalogued sprocket range pick the cassette. The 6 / 7-speed
+    // values are shared across bikes of different groups, so they stay unlinked.
+    'shimano hyperglide 12 23t 8 speed': 7671, // SBX / Ultegra-STI: Shimano CS-HG90-8, 600 Ultegra (U 12-23T)
+    'shimano hyperglide 13 23t 8 speed': 7762, // Virata (105 STI): Shimano CS-HG70-8, 105SC (T 13-23T)
+    'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
   },
   Freewheels: {
     '13 24t regina oro 6 speed': 2194, // 1973 Raleigh: Regina Oro (6 speed)
