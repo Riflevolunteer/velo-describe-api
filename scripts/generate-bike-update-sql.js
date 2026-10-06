@@ -484,6 +484,9 @@ const COMPONENT_OVERRIDES = {
     'huret jubilee 10 speed': [{ to: 1976, id: 2396 }], // Huret Jubilee 500 (5-hole cage)
     'huret challenger 10 speed': 2388, // Huret Challenger 950 / 951
     'huret challenger deluxe 10 speed': 2388,
+    // 1977 Raleigh (US). Record 24 "Challenger" is the Huret. Gran Sport front
+    // and Compe V left unlinked (GS front rows start 1978; two Compe-V rows).
+    'challenger derailleur 10 speed': 2388, // Huret Challenger 950 / 951
     // 1974 Motobecane (shifter asides now split into the Shifters column).
     'huret jubilee': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }],
     // 1975 Motobecane.
@@ -594,6 +597,10 @@ const COMPONENT_OVERRIDES = {
     'huret jubilee 10 speed': 4303,
     'huret challenger 10 speed': 4273, // Huret Challenger 2400 / 2440 / 2448 / 2454
     'huret challenger deluxe 10 speed': 4273,
+    // 1977 Raleigh (US).
+    'campagnolo gran sport alloy': [{ from: 1974, to: 1985, id: 4085 }], // Competition GS: Campagnolo 3500, Nuovo Gran Sport
+    'sun tour cyclone alloy rear': 4735, // Super Course: SunTour 5902 / RD-1700, Cyclone (1975-82)
+    'challenger derailleur 10 speed': 4273, // Record 24: Huret Challenger 2400 series
     // 1974 Motobecane.
     'huret jubilee': 4303,
     // Shifter halves now live in the Shifters column (compound-cell split).
@@ -682,6 +689,12 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record pista large flange': 3270, // Campagnolo 1036, Record Pista (high flange) — Professional Track
     'campagnolo record strada large flange q r': 3260, // Campagnolo 1035, Record (high flange)
     'normandy competition large flange alloy q r': 3388, // Normandy Luxe Competition (gold label), as 1974
+    // 1977 Raleigh (US). Professional Mk V's bare "Campagnolo Record quick
+    // release" left unlinked (high vs low flange not stated).
+    'campagnolo nuovo tipo small flange quick release': 3230, // Competition GS: Campagnolo 1251, Nuovo Tipo (small flange)
+    'atom small flanged forged light alloy quick release': 3183, // Super Course: Atom (low flange aluminum)
+    'normandy sport forged large flange light alloy quick release': 3390, // Grand Prix: Normandy Sport (high flange)
+    'normandy sport forged large flange light alloy': 3390, // Record Limited
     // 1974 Motobecane. Bare "Normandy Luxe Competition" is ambiguous between
     // the gold- and red-label rows; the road bikes took the high-flange gold.
     'normandy luxe competition': 3388,
@@ -747,6 +760,11 @@ const COMPONENT_OVERRIDES = {
     'weinmann 999 centerpull with q r levers': [{ to: 1975, id: 7929 }],
     'weinmann 999 centerpull with extension levers': [{ to: 1975, id: 7929 }],
     'campagnolo super record with lightened levers': 582, // 1975 Team Professional: Campagnolo 4061, Super Record v1 (1974-82)
+    // 1977 Raleigh (US). Grand Prix / Record Limited "Raleigh/Weinmann forged
+    // alloy centerpull" name no model, left unlinked.
+    'campagnolo record side pull': [{ to: 1978, id: 573 }], // Professional Mk V: Campagnolo 2040, Record (pre-CPSC)
+    'weinmann carrera sidepull with wheel guides': 1167, // Competition GS: Weinmann AG Carrera (earlier, 1970-80)
+    'raleigh weinmann 610 centerpull with lightened quick release levers': 1138, // Super Course: Weinmann AG Raleigh 610
     // 1993 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
     'campagnolo veloce': 587, // Campagnolo BR-02VL, Veloce Monoplaner
     'shimano deore xt alloy cantilever': 980, // 1985 Raleigh: Shimano BR-MC70, Deore XT M700 (1983-86, first-gen XT)
@@ -901,6 +919,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super nuovo record titanium axle and chainrings 42 52t': 1509, // 1974 Raleigh Team Professional: 1049/A Strada Super Record
     'campagnolo pista with 165 mm cranks': 1505, // 1975 Raleigh Professional Track
     'campagnolo nuovo record cotterless': [{ to: 1977, id: 1496 }], // 1975 Raleigh Mk IV / International: 1049 Nuovo Record Strada v4
+    'campagnolo nuovo record cotterless with alloy disc chainguard': [{ to: 1977, id: 1496 }], // 1977 Raleigh Professional Mk V
     'campagnolo super nuovo record with titanium axle & cups 53 42 chainrings 1725 mm cranks': 1509, // 1975 Raleigh Team Professional: 1049/A
     'campagnolo veloce 53 39t': 7062, // 1993 Bianchi: Campagnolo FC-01VL, Veloce
     'shimano at10 x 50 40 28t': 7724, // 1993 Bianchi: Shimano FC-AT10, Altus A10 (SG-X triple)
@@ -983,6 +1002,8 @@ const COMPONENT_OVERRIDES = {
     'brooks professional team special leather': 5304, // Brooks Team Professional "Team Special"
     'brooks professional leather team special': 5304, // 1974 Raleigh word order
     'brooks professional team special': 5304, // 1975 Raleigh
+    'brooks professional best butt leather with copper rivets': 5303, // 1977 Raleigh Professional Mk V: copper rivets = standard Team Professional, not the polished-rivet Team Special
+    'brooks professional best butt leather': 5303, // 1977 Raleigh Competition GS: Brooks Team Professional
     'brooks professional leather': 5303, // 1974 Raleigh International
     'brooks b17 narrow leather': 5310, // 1974 Raleigh: Brooks B17 Champion Narrow
     // 1974 Motobecane (the seat post aside is not part of the saddle).

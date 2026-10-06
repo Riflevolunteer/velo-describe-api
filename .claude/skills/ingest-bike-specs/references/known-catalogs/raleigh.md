@@ -105,6 +105,49 @@
   Criterium, Nervar, Maillard 13-26, Simplex Maxi, TTT Franco Belge / Track
   bend, Raleigh-branded parts. All loaded catalogs regenerate unchanged.
 
+## 1977 Raleigh — `1977_raleigh_spec.csv` (6 bikes, 95 specs, 20 linked)
+
+- Source: https://www.retrobike.co.uk/archive/1977-raleigh-catalogue.1345/
+  (r.pdf, 24 pages, scan with no text layer; US edition, Raleigh / Rampar;
+  download needs the archive page's cookies first). No combined table: one
+  model per page with its own "Specifications" block. Transcribed by hand
+  from 400 dpi crops of pp. 3-7 and 11; `data_source` 131 citation names
+  the scan.
+- Scope (user's choice): Raleigh derailleur lightweights only —
+  Professional Mk V, Competition GS, Super Course, Grand Prix, Record
+  Limited, Record 24. Not added: Rampar R-One / R-Two / R-Three / R-Four
+  10-speeds (if wanted later, user said title them "Rampar R-One" etc.
+  under Raleigh), Tourist, Sprite 27, Sports, LTD, and the kids / hi-rise /
+  BMX models (Space Rider, Mountie, Grifter, MX, Rampar R-5 to R-16).
+- The "Gears" line was split into Derailleurs / Freewheels / Shifters;
+  "Wheels" into Rims / Hubs; Handlebar line into Handlebars / Stems. Kept
+  as printed: Super Course 27" size, 14-34 freewheels (Grand Prix, Record
+  Limited), Grand Prix 27 x 1-1/4" rims vs 27 x 1-1/8" tyres, "Cortone".
+  No weights in the source.
+- Overrides: Mk V brakes "Campagnolo Record side pull" -> 573 (2040
+  pre-CPSC, ranged to 1978); Mk V crank -> 1496 (as 1975); Mk V Brooks
+  Professional "with copper rivets" -> 5303 (copper = standard Team
+  Professional; 5304 Team Special is the polished-rivet one); Competition
+  GS: Gran Sport rear -> 4085 (3500 Nuovo Gran Sport), Weinmann Carrera ->
+  1167 (earlier), Nuovo Tipo small flange -> 3230 (1251), Brooks
+  Professional -> 5303; Super Course: SunTour Cyclone rear -> 4735
+  (RD-1700), Raleigh/Weinmann 610 -> 1138, Atom small flange -> 3183;
+  Normandy Sport forged large flange -> 3390; Record 24 "Challenger" ->
+  Huret 2388 / 4273.
+- Left unlinked: Gran Sport front (rows start 1978) and crank (3320 ends
+  1975, 0304 starts 1980); Compe V front (2602 vs 2603); Mk V bare
+  "Campagnolo Record quick release" hubs (flange not stated); Raleigh/
+  Weinmann forged centerpulls with no model; Weinmann A124 (only a 1983
+  row); IRC Featherlight, SR 5RGII, SunTour bar-end / power shifters.
+  All loaded catalogs regenerate unchanged.
+
+## 1976 Raleigh UK brochure — not loaded
+
+- https://www.retrobike.co.uk/archive/1976-raleigh-catalogue.351/ is a
+  12-page UK brochure excerpt with prose only (no spec table), covering
+  Raleigh, Carlton and Sun. Transcribed into three CSVs, then reversed at
+  the user's request before loading: not what they want in the DB.
+
 ## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 91 linked)
 
 - Source is a single scanned image on Sheldon Brown's Retro Raleighs site
