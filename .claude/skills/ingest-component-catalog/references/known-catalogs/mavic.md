@@ -116,3 +116,56 @@ doesn't settle which was current; Paris-Roubaix SSC "grise" vs 5112 red /
 SSC" may be the same rims as the new Bleu/Argent 12 SSC rows; 6087 "Mavic
 821" (Zap) left as a separate later lever; 5089 "Module E2" probably
 duplicates 5090 "Module E2 Argent" but has 2 bike_spec links.
+
+## Mavic Trade catalogue 1986-1987 (1986) — disraeligears.co.uk, data_source id 119
+
+Source: https://www.disraeligears.co.uk/site/mavic_-_trade_catalogue_1986-1987.html
+(46 `..._page_N_main_image.jpg` images: front cover, pp. 1-44, rear cover;
+bound locally, PDF page N = catalogue page N-1). English trade edition, 44
+pp., complete — includes the clincher pages the 1984 scan lacked. Dated
+"1986-1987" on the cover: year_from 1986 for parts first seen here, year_to
+1987 for parts still listed (user-confirmed convention).
+
+New per its own text: 365 stem ("a new light weight stem", absent in 1984);
+641 pedal (= 640 in 9/16 x 20 BSA thread — resolves the 1988-ad "641");
+1015 RS group (310/350/365/410/500/612/630/640-641/810-812/801/820)
+replacing 1984's 1010/1012/1013; MTB rims Rando M4/M5; CXP 25, Challenger,
+Comète; "definitive" 801/851 (Campagnolo-type hanger, flat outer plate).
+Dropped since 1984: Pro 420 brake + 362 lever, 360 stem, 300/302 headsets,
+510 hub, Sport 600, Bleu SSC, Argent 12 SSC, OR 10, Module E2 Argent, G 40.
+The 1000 SSC options row reads Stem 370 / BB 613 / Crankset 635 — so the
+1988 ad's "570 brake" and "635 BB" options were column-shifted misreads.
+Specs differing from 1984 are named per edition in the descriptions
+(Légère, Argent 10, CX 18, Module 3D Argent, 520/580 Piste, Sulky, 350,
+370, 635).
+
+**Updated** (50 rows, source_ref -> 119):
+- Retitled (old title kept here for matching): 5048 "Mavic Module 3CD" ->
+  "Mavic M3 CD"; 5061 "Mavic CXP 25 (aluminum rim, carbon fairing)" ->
+  "Mavic CXP 25"; 6972 "Mavic Comete" -> "Mavic Comète"; 4346 "Mavic 851,
+  SSC" -> "Mavic 851 (1986), SSC" (also year_from 1980 -> 1986; 4342 "851
+  (1984)" covers 1984-85).
+- year_from moved later: 6585 365 stem 1980 -> 1986 ("new").
+- NULL years set: 5073 MA 1986-1987; 5086 Module 4 1984-1987 (1984 Sulky
+  text names it); 5061 CXP 25 1986-1987.
+- year_to -> 1987: rims 5109, 5093, 5092, 5091, 5105, 5052, 5054, 5066,
+  5057, 5085, 5084, 5074, 5075, 5112 (red label, was 1979), 5048, 8155,
+  8156; wheels 6971, 6972, 8157, 8158; hubs 8159, 3408, 8160, 3401, 8161,
+  8162; BB 84; crank 1642; FDs 2405, 2406, 8163, 8164; shifter 8165; brake
+  852; levers 361, 363.
+- Description only: 5077 MA 40, 5067 GL330, 2861 350, 6586 370, 1641 630
+  (1988-ad citation dropped), 3837 640, 4338 801 (1986), 854 Super Pro 430.
+
+**Inserted** (1986-1987, UUID source_id, source_ref 119): rims MA 2 Argent
+(8177), Rando M4 (8178), Rando M5 (8179); pedal 641 (8180, SSC).
+
+**Deleted:** 5079 "Mavic MA 40" (1970-1970, velobase source_id
+9364EF73-97C3-498C-AED9-890A2A2012B5, bare) — duplicate of 5077 (1980-1999,
+holds the `mavic ma40` override and a bike_spec link). No links/overrides.
+
+**Left unresolved:** 310/311/312 headsets given 82 g here vs 102 g in 1984
+(82 g is the 1984 figure for the 300 — likely a copied table; not changed);
+5074 MA 2 vs 5075 MA 2 (Red/Green Label) probably the same rim, both kept
+(independent avg weights); 6973 "Comete -/+ (disc)" — a "COMETE +" disc is
+photographed but not described; 630 crank 1640 vs 1641 font still unsettled;
+no component_group rows for 1015 RS.
