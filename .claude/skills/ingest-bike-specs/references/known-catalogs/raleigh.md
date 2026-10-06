@@ -148,6 +148,35 @@
   Raleigh, Carlton and Sun. Transcribed into three CSVs, then reversed at
   the user's request before loading: not what they want in the DB.
 
+## 1982 Raleigh — `1982_raleigh_spec.csv` (6 bikes, 73 specs, 28 linked)
+
+- Source: https://www.retrobike.co.uk/archive/1982-raleigh-lightweights-racing-catalogue.993/
+  (r.pdf, 9 pages, scan with no text layer; UK "The Raleigh Racing Formula"
+  lightweights brochure, Spring 1982). Each model has a short paragraph
+  naming its parts plus a size / wheel list, no table. Transcribed by hand
+  from 400 dpi crops of pp. 3-5; `data_source` 132 citation names the scan.
+  User approved this prose format (unlike the 1976 UK brochure) because the
+  paragraphs name specific parts.
+- Models: Team Replica 12 (Nuovo Record), Gran Sport 12 (Gran Sport),
+  Record Ace 12 and Competition 12 (Gran Sport derailleurs), Clubman 12 and
+  Rapide 12 (Campagnolo 980). Not added: the frameset page (p. 9),
+  clothing, Reynolds advert. "Ensemble" parts were copied into each
+  component column (gear, chainset, brakes, pedals, seat pin, headset);
+  tyres taken from the wheel line (700 x 25 / 27"). No weights.
+- Overrides: Gran Sport crank split by year — `{1978-1982: 1472, 1983+:
+  1473}` — the Bianchi-labelled 0304 (1473) was a global pick from the
+  1984 Bianchi, its only 1983+ user; Nuovo Record crank -> 1496, hubs
+  "small flange quick-release" -> 3259 (1034), seatposts NR -> 5749 / GS
+  -> 5734, Mavic GP4 -> 5069, ISCA Tornado suede -> 5382, SunTour Ultra 6
+  chain -> 7820 (UC-6000), Weinmann 610 centre-pull -> 1138 (Raleigh 610,
+  row dated 1970-80, ranged to 1982); "forged alloy" stem -> null (was
+  hitting the 1950s GB Hiduminium).
+- Left unlinked: Campagnolo Gran Sport brakes (553 / 554 share dates),
+  Weinmann 605 / 500 (many variants), SunTour Ultra 6 freewheel (5
+  rows), SR Custom (~15 1982 variants), Nuovo Tipo hubs (flange not
+  stated), Cinelli bars / stem (no model), Clement Ritmo. All loaded
+  catalogs regenerate unchanged.
+
 ## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 91 linked)
 
 - Source is a single scanned image on Sheldon Brown's Retro Raleighs site

@@ -665,6 +665,8 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1982 Raleigh (UK "Racing Formula" lightweights).
+    'campagnolo nuovo record small flange quick release': 3259, // Team Replica: Campagnolo 1034, Record (Low Flange)
     // 1983 Bianchi. 1251 small flange is the only Nuovo Tipo row in range for 1983.
     'campagnolo tipo': 3230, // Campagnolo 1251, Nuovo Tipo (small flange)
     'shimano 600': [{ from: 1984, to: 1987, id: 7551 }], // 1987 Bianchi: Shimano HB-6207F / HB-6207R, 600EX (freewheel hubs; bike has MF-6208)
@@ -749,6 +751,8 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1982 Raleigh (UK "Racing Formula" lightweights).
+    'weinmann 610 alloy centre pull with quick release levers': [{ to: 1982, id: 1138 }], // Weinmann AG Raleigh 610 (row dated 1970-80; Raleigh's own 610)
     // 1974 Raleigh (US): the table drops the "999" the 1973 table carried, but the
     // International copy (p. 6) still says "Weinmann 999 center pull quick release".
     'weinmann center pull with lightened q r levers': [{ to: 1975, id: 7929 }], // Weinmann AG Vainqueur 999 (610 / 750)
@@ -955,7 +959,10 @@ const COMPONENT_OVERRIDES = {
     // align with the 1983 pick. Gran Sport crank: DB has a Bianchi-labelled row.
     'campagnolo record pista': 1505, // Campagnolo 1051, Record Pista (144bcd)
     'gipiemme pista': 1593,
-    'campagnolo gran sport': [{ from: 1978, id: 1473 }], // Campagnolo 0304, (Nuovo) Gran Sport (144 BCD; bianchi labeled)
+    // Year split stands in for brand: the only 1983+ user is the 1984 Bianchi
+    // (Bianchi-labelled row); the 1982 Raleigh takes the plain 0304.
+    'campagnolo gran sport': [{ from: 1978, to: 1982, id: 1472 }, { from: 1983, id: 1473 }], // Campagnolo 0304, (Nuovo) Gran Sport (144 BCD)
+    'campagnolo nuovo record': [{ from: 1967, to: 1987, id: 1496 }], // 1982 Raleigh Team Replica: Campagnolo 1049, (Nuovo) Record Strada v4
     // 1987 Bianchi. "Master Gran Premio" substring-hit Master; the catalog
     // names the Gran Premio.
     'ofmega master gran premio 52 42t': 1694, // Ofmega Gran Premio
@@ -992,6 +999,8 @@ const COMPONENT_OVERRIDES = {
     'nervar cotterless 40 52 alloy chainwheel rings with alloy guard': 1653, // Nervar (3-pin, alloy/cotterless)
   },
   Saddles: {
+    // 1982 Raleigh (UK "Racing Formula" lightweights).
+    'isca tornado suede': 5382, // Iscaselle Tornado (suede cover)
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
     'zeus leather': 5708, // Zeus (black suede)
     // 1973 Raleigh. "B17N" is the B17 Narrow.
@@ -1036,6 +1045,8 @@ const COMPONENT_OVERRIDES = {
     "cinelli giro d'italia": 2801, // Cinelli 64 Giro D'Italia (70's model)
   },
   Stems: {
+    // 1982 Raleigh (UK "Racing Formula" lightweights).
+    'forged alloy': null, // generic; substring-hits the 1950s GB Hiduminium spearpoint
     'sr ax; ah': 7901, // Sakae/Ringyo (SR) AX-AH, Apex (SR No. 18; 1981 Kalkhoff)
     // 1975 Motobecane: the Giro d'Italia bar was paired with the 1A stem.
     "cinelli giro d'italia": 6489, // Cinelli 1A (winged "C" logo)
@@ -1168,6 +1179,9 @@ const COMPONENT_OVERRIDES = {
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
+    // 1982 Raleigh (UK "Racing Formula" lightweights).
+    'campagnolo nuovo record': [{ to: 1985, id: 5749 }], // Campagnolo 1044, Record
+    'campagnolo gran sport': 5734, // Campagnolo 3800, Gran Sport
     // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
     // from in the 90s (Krono 1993), so blocked rather than wrong.
     'campagnolo': [{ to: 1985, id: 5749 }, { from: 1990, id: null }], // Campagnolo 1044, Record
@@ -1197,6 +1211,8 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1982 Raleigh (UK "Racing Formula" lightweights).
+    'sun tour ultra 6': 7820, // SunTour UC-6000, Ultra-6 chain (1978-85)
     'shimano ug 2': 7450, // 1987 Bianchi: Shimano QA-200 / CN-UG20, Uniglide-II
     // Bare "Shimano" was exact-matching component_id 1403, a bare-brand
     // placeholder wrongly dated 1980-1980 — linking 1987 Bianchis to a
@@ -1279,6 +1295,8 @@ const COMPONENT_OVERRIDES = {
     'clement 2001 cf': 6740, // Clement CF 2001
   },
   Rims: {
+    // 1982 Raleigh (UK "Racing Formula" lightweights).
+    'mavic gp4 alloy sprint': 5069, // Team Replica: Mavic GP 4 (1980-91)
     // CSV cell carries a stray backslash ("27x1.25\  MICHELIN"), MySQL drops it on insert
     'weinmann sprint alloy 27x125"': 7778, // Weinmann A125 Sprint (1974 Motobecane, rims half of the split Wheel Rims & Tires cell)
     // Both bare "Nisi" rows (5123, 5124) and bare "AVA" (4937) were deleted;
