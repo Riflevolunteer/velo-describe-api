@@ -1,6 +1,6 @@
 # Motobecane catalogs processed so far
 
-## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 129 specs, 40 linked)
+## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 136 specs, 42 linked)
 
 - "Catalog Page Reference" column ignored via IGNORED_LABELS.
 - Frame Size cells had backslash/doubled-quote inch-mark debris; rewritten.
@@ -40,6 +40,17 @@
   chainwheel rings, with alloy guard" -> 1653 Nervar (3-pin,
   alloy/cotterless), the only cotterless Nervar row. The steel cottered
   Nervar cranks on the other bikes still have no row.
+- 2026-10-06: Wheels column (aliased to Rims only, so tyres sat in the Rims
+  line) renamed "Wheel Rims & Tires" in the CSV so splitCellValue gives
+  Rims + Tyres; export debris (`27x1.25\  … tires"`) cleaned and a ", "
+  added between rims and tyres. "with HURET spoke protector" moved from 6
+  Freewheel cells to Extras ("ATOM or MAEDA, 14-32" comma dropped). Weinmann
+  Sprint rim override re-keyed to 'weinmann sprint alloy 27x125"' (7778).
+  Old rows 3662 / 3680 / 3698 / 3716 / 3736 / 3755 / 3773 (Wheels), 3658 /
+  3676 / 3694 / 3712 / 3732 / 3751 (Freewheel), 3665 / 3683 / 3701 / 3719 /
+  3739 / 3758 (Extras) deleted and reloaded. New links: "CLEMENT ELVEZIA
+  tubular" -> 6752, "CLEMENT PARIS-ROUBAIX Tubular" -> 6762. 129 -> 136
+  specs, 40 -> 42 linked.
 
 ## 1975 Motobecane — `1975_motobecane_spec.csv` (11 bikes, 205 specs, 58 linked)
 

@@ -1186,7 +1186,7 @@ const COMPONENT_OVERRIDES = {
   },
   Rims: {
     // CSV cell carries a stray backslash ("27x1.25\  MICHELIN"), MySQL drops it on insert
-    'weinmann sprint alloy 27x125\\ michelin or hutchinson high pressure tires"': 7778, // Weinmann A125 Sprint (1974 Motobecane)
+    'weinmann sprint alloy 27x125"': 7778, // Weinmann A125 Sprint (1974 Motobecane, rims half of the split Wheel Rims & Tires cell)
     // Both bare "Nisi" rows (5123, 5124) and bare "AVA" (4937) were deleted;
     // the catalog never names a Nisi / AVA model, so these stay unlinked.
     'nisi ava sprint alloy': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
