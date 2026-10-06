@@ -1520,3 +1520,12 @@
   quick-release) and DF-M730 (chain deflector) — accessory items with no
   matching category, same as fork ends/tools/cables/brazed-on parts.
 
+
+## Cleanup 2026-10-06 (no catalogue)
+
+- Deleted (user-approved): 1198 "Shimano FH-6361, 600 AX" (Cassettes,
+  1981-1984, velobase, `4816E872-0BFF-450F-B0B3-46980449FCC8`, "161 grams
+  (Actual), 6s in 13-18") — duplicate of hub row 3532 (FH-6361 is the freehub;
+  the cogs aren't a separately numbered part). No links or overrides; the
+  measured 161g for 13-18T cogs folded into 3532's description.
+- HS-6300 (6674) is correctly a stem (600 AX aero stem), not a headset.
