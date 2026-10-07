@@ -670,6 +670,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record corsa': 4096, // 0102050, C-Record first generation (1985-86)
     // 1975 Falcon.
     'campagnolo velox': 4167, // 2250 Velox (1971-75)
+    'campagnolo velox rear': 4167, // 1973 Falcon Olympic 78 (5-speed, no front mech)
     // 1979 Peugeot (French catalogue).
     'simplex slj 5500 cp': 7309, // Simplex SLJ5500 CP (1979-84)
     'simplex sx 410 t': 4621, // Simplex SX410 T (1977-85)
@@ -817,6 +818,7 @@ const COMPONENT_OVERRIDES = {
     'weinmann centre pull': 7929,
     'weinmann centre pull 999': 7929,
     'weinmann centre pull with hooded levers': 7929,
+    'weinmann centre pull with lever 144': 7929, // 1973 Falcon Olympic 78 (lever 144 = the 999 set lever)
     // May 1983 Weinmann catalogue (506 dated 1979-83 from the 1979 Peugeot / 1981 Kalkhoff bikes)
     'weinmann 506 side pull': 7764, // Weinmann AG 506
     'weinmann 506 side pull with safety levers': 7764,

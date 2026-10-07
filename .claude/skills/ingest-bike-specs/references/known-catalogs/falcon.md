@@ -32,3 +32,37 @@
   bare bars/stem; generic Maes, quill, steel parts; Clement tubular.
 - Regression: all other catalogs unchanged.
 
+
+## 1973 Falcon — `1973_falcon_spec.csv` (17 bikes, 156 specs, 17 linked)
+
+- Source: velo-pages.com Gallery2 album "Falcon catalog (1973)" (item
+  27332, folder "Falcon"), read via Wayback (site 500s). 16 pages = items
+  27343 + 3/4 steps to 27389 (list in `g2_view=slideshow.SlideshowMediaRss&
+  g2_itemId=27343`); full-res 1433x916 never archived, only the 640x409
+  display images (item+2, serial 2). Date is velo-pages' title; no printed
+  date. data_source 139. Transcribed by hand 2026-10-08.
+- Earlier edition of the same "range of lightweight cycles" brochure as
+  1975 (same cover, Tour de Suisse / Nouvelle-France roundels, E. A.
+  Clements foreword). Differences vs 1975: 76 chain "Regina or Renolds",
+  Cinelli crown, 24" (not 24.5") size, alt finish Red/Black; 94 Lime Green
+  with Prugnat lugs, Centre Pull, plastic saddle; 92 5-speed (10 extra);
+  70 / 71 Flamboyant Purple 5-speed; 78 Bronze, Velox 5-speed, Weinmann
+  lever 144; 80 not supplied in 5-speed; Majorca 64 and E.C. 74 here (no
+  84, 69, E.C. 72); 82 / 83 "Super Tourist" with Sturmey-Archer 3-speed.
+- Bikes: San Remo 76, 98, 96 ("exactly as" 98, spec copied), 94, 92, 80;
+  Black Diamond 70 / 71; Olympic 78; Majorca 64; Model 68; Model 58;
+  Super-Tourist De Luxe 88 / 89; Super Tourist 82 / 83 (not illustrated).
+  "Handlebars and Stem: Cinelli" -> both labels.
+- Repairs: 78 Derailleurs "None, Campagnolo Velox rear" so the split gives
+  Front None (5-speed, no front mech) / Rear Velox.
+- New overrides: Brakes 'weinmann centre pull with lever 144' -> 7929;
+  Rear Derailleurs 'campagnolo velox rear' -> 4167. Everything else via
+  existing 1975 keys (573 brakes, 3260 / 3270 hubs, 3708 / 3711 pedals,
+  2801 Cinelli 64, 5303 Brooks, 7929 centre-pulls). Sturmey-Archer 3-speed
+  -> brand-level 3593 (Motobecane precedent; Geared Hubs not reachable
+  from the Hubs label).
+- Left unlinked: bare "Campagnolo" derailleurs on 76 / 80; unbranded
+  Cotterless cranks, Quick release / Narrow barrel / Large flange hubs,
+  Centre pull / side pull brakes; "Weinmann alloy tourist", "Weinmann with
+  hooded levers"; Sprint / Endrick / Weinmann alloy rims; Clement.
+- Regression: all other catalogs unchanged.
