@@ -42,6 +42,8 @@ of it back).
 
 - Fix DB data quality issues with brands with No Components 
 
+- Audit component_id link rate by category - currently ranges from 9% (Handlebars) to 82% (Rear Derailleurs) across the 8 loaded bike brands, with no clear correlation to catalogue size (Brake Levers has 392 components yet only 21% link; Rear Derailleurs has 865 and hits 82%). Spot-checked a sample of unlinked Handlebars/Tyres values and found three distinct causes, in descending order of how much of the gap they explain: (1) brand-only spec text with no model ("Cinelli Handlebars", "Michelin 700c Tires") - correctly left unlinked since multiple candidate models exist and matchComponent refuses to guess; (2) pure dimension specs with no brand ("28 x 1 5/8 x 1 1/4 two-tone") - not a "component" in any linkable sense; (3) genuinely missing component_detail rows for specific named models (e.g. three D'Alessandro tubular models referenced in specs aren't in the DB at all). Also confirmed short/ambiguous-but-resolvable cases like "TTT" (Handlebars, blocked by the word-boundary guard in matchComponent from matching "3ttt Aero - early 1980's" despite being the only sensible candidate) aren't a matcher bug - they're exactly what COMPONENT_OVERRIDES exists for, just not yet added for this value. Next step: pull a larger unlinked sample per weak category (Handlebars, Tyres, Rims, Brake Levers, Freewheel) and sort into "add COMPONENT_OVERRIDES entry" vs "add missing component_detail row" vs "unlinkable by nature", rather than assuming more raw catalogue size will move the link rate.
+
 - ~~Add Search feature~~ done - `/searchComponents?q=` endpoint
 
 - maybe also show max and min
