@@ -440,7 +440,9 @@ function normalizeForMatch(value) {
 // (inclusive catalog years, either bound optional) for parts that kept one
 // name across several versions — "Campagnolo Nuovo Record" in a 1973 and a
 // 1983 catalog are different DB rows. The catalog year picks the range; no
-// matching range means no link rather than a wrong-era one.
+// matching range means no link rather than a wrong-era one. A range may also
+// carry `bike` (exact bike title) for one catalog's value that means
+// different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
@@ -1091,6 +1093,17 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': 6674, // Shimano HS-6300, 600 AX
     // 1987 Bianchi.
     '3ttt ar84': 6424, // 3ttt AR84, Mod. 84 (Record 84)
+    // 1973-75 Raleigh / 1974 Motobecane "T.T.T. Record": the 1970s Mod. 1
+    // Record Strada; 1975 Raleighs say "New ...", taken as the 2nd version.
+    // The Professional Track DL 175 gets the Mod. 2 Record Pista instead.
+    '3ttt record alloy': [
+      { bike: 'Professional Track DL 175', id: 6420 }, // 3ttt Mod. 2, Record Pista (64 degree)
+      { to: 1974, id: 6417 }, // 3ttt Mod. 1 Record Strada (first version)
+    ],
+    '3ttt record': [{ to: 1974, id: 6417 }],
+    '3ttt record lightweight alloy': [{ to: 1974, id: 6417 }],
+    'new 3ttt record': [{ bike: 'Professional Track DL 175', id: 6420 }],
+    'new 3ttt record alloy': [{ from: 1975, to: 1975, id: 6416 }], // 3ttt Mod. 1 Record Strada (2nd version)
     'itm 400': 6564, // ITM 400 Racing
     'sr custom': 6659, // Sakae/Ringyo (SR) CUSTOM
     // 1985 Raleigh (Sheldon Brown scan).
@@ -1417,18 +1430,21 @@ const COMPONENT_OVERRIDES = {
 // means "do not link": used when the only substring hit is a wrong-era row
 // and the DB has no right one (e.g. 1987 "Shimano 600" brakes vs the 1970s
 // centre-pull). Returns undefined when there is no entry at all.
-function resolveOverride(entry, year) {
+function resolveOverride(entry, year, bikeTitle) {
   if (entry === undefined) return undefined;
   if (entry === null || typeof entry === 'number') return entry;
   const y = Number(year);
-  const hit = entry.find((r) => (r.from == null || y >= r.from) && (r.to == null || y <= r.to));
+  const hit = entry.find(
+    (r) =>
+      (r.bike == null || r.bike === bikeTitle) && (r.from == null || y >= r.from) && (r.to == null || y <= r.to)
+  );
   // No matching range means no link (as documented on COMPONENT_OVERRIDES),
   // not a fall-through to the substring matcher, which would pick whatever
   // wrong-era row shares the name.
   return hit ? hit.id : null;
 }
 
-function matchComponent(valueText, componentRecords, excludeTitle, label, year) {
+function matchComponent(valueText, componentRecords, excludeTitle, label, year, bikeTitle) {
   if (!valueText) return null;
   const normalizedLabel = label.trim().toLowerCase();
   const normalizedValue = normalizeForMatch(valueText);
@@ -1437,7 +1453,7 @@ function matchComponent(valueText, componentRecords, excludeTitle, label, year) 
   if (!categories) return null;
 
   for (const category of categories) {
-    const overrideId = resolveOverride(COMPONENT_OVERRIDES[category]?.[normalizedValue], year);
+    const overrideId = resolveOverride(COMPONENT_OVERRIDES[category]?.[normalizedValue], year, bikeTitle);
     if (overrideId === null) return null; // explicit "do not link"
     if (overrideId) return { component_id: overrideId };
   }
@@ -1641,7 +1657,7 @@ async function main() {
     const valueText = sqlString(spec.valueText);
     const rawLabel = sqlString(spec.rawLabel);
 
-    const matched = matchComponent(spec.valueText, componentRecords, spec.brand, spec.label, spec.year);
+    const matched = matchComponent(spec.valueText, componentRecords, spec.brand, spec.label, spec.year, spec.bikeTitle);
     if (matched) linkedCount++;
     const componentIdSelect = matched ? String(matched.component_id) : 'NULL';
     const sourceRefSelect = dataSourceSubquery(catalogueLabel(spec.year, spec.brand));

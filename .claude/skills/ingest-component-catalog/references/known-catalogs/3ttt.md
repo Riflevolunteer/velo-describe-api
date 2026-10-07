@@ -153,3 +153,18 @@
   first/second-version question is settled. Track stem on H4 is photo-only.
 - Out of scope: spares B001 / S001 / S002, 3TTT Ribbon bar tape HT30-HT49,
   end plugs, TB10 bottle.
+
+## Follow-up: "T.T.T. Record" stem links (2026-10-07, no new catalogue)
+
+- The 7 bike_spec links on 6423 "3ttt Record" (Stems, 1986-1986, bare) were
+  all 1973-75 bikes, caught by the generator's substring match on the bare
+  title. Repointed: 1973-74 Raleighs + 1974 Motobecane Le Champion -> 6417
+  Mod. 1 Record Strada (first version); 1975 Raleigh Pro Mk IV "New T.T.T.
+  Record Alloy" -> 6416 (2nd version, "New" read as the version change);
+  Raleigh Professional Track DL 175 (1974, 1975) -> 6420 Mod. 2, Record
+  Pista (64 degree) (64 vs 58 degree can't be told from the spec text).
+  Year-ranged COMPONENT_OVERRIDES carry this, using a new optional `bike`
+  condition on ranges, since the 1974 track and road bikes share the value.
+- 6417: year_to 1970 -> 1974 (source_ref -> 129, 1974 Raleigh catalogue).
+- Deleted: 6423 "3ttt Record" (Stems, 1986-1986, velobase,
+  `54EABD5A-6A47-4C90-9A44-5B3D80840048`): bare placeholder, no links left.
