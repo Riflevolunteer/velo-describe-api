@@ -1090,7 +1090,7 @@ const COMPONENT_OVERRIDES = {
     'cinelli super record': 6491, // Cinelli 1R (1/Record)
     'shimano 600 ax': 6674, // Shimano HS-6300, 600 AX
     // 1987 Bianchi.
-    '3ttt ar84': 6424, // 3ttt Record 84 (AR84 silver)
+    '3ttt ar84': 6424, // 3ttt AR84, Mod. 84 (Record 84)
     'itm 400': 6564, // ITM 400 Racing
     'sr custom': 6659, // Sakae/Ringyo (SR) CUSTOM
     // 1985 Raleigh (Sheldon Brown scan).
