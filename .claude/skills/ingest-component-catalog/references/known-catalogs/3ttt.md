@@ -168,3 +168,69 @@
 - 6417: year_to 1970 -> 1974 (source_ref -> 129, 1974 Raleigh catalogue).
 - Deleted: 6423 "3ttt Record" (Stems, 1986-1986, velobase,
   `54EABD5A-6A47-4C90-9A44-5B3D80840048`): bare placeholder, no links left.
+
+## 3ttt Catalogo / Catalogue, Mathi (c. 1991) — rennrad-news.de forum post, data_source id 137
+
+- Source: rennrad-news.de thread "Mountainbikes für Klassikerfreunde
+  herzeigen" (66480), page 111, post 4586088 by RoKaDo, 2019-10-25: six
+  photos `3t-90er_01..06.jpg` (attachments 712760-712765, 751x1024; fetch
+  `/forum/attachments/3t-90er_0N-jpg.<id>/` with the thread page as Referer).
+  Photos of a fold-out IT/EN "Catalogo / Catalogue"; they overlap (bottom of
+  photo 2 = part of 3, bottom of 5 = top of 6). Back cover: 3T S.p.A., 10075
+  Mathi (TO). **No printed date**; c. 1991 inferred from the Mathi address
+  (Torino in 1986), clip-on U-Bar and Tri Bar, Cobra AOS3/AOS4 for 1 1/8 and
+  1 1/4 steerers, and no Ergopower bars yet. Used 1991 as a single-year bound.
+- 3T factory codes throughout ("Codice"): A = attacco / stem, C = curva /
+  bar, R = reggisella / post, N = nastro / tape. AR84 / AR84N / RSCAL match
+  the 1986 sheets, confirming the 1989 B.../S... numbers were RJC's own.
+- Run-out in this printing ("ad esaurimento / sold until it runs out"): CSL
+  Racing Team SL, CRH Record Dell'Ora; year_to 1991 is their last year.
+- Spec changes between editions, carried as dated text in descriptions: CSL
+  250 g (same as 1989 Superleggera RTS); RSCAL 180 mm (1986) -> 200 mm;
+  2002 85-135 mm 290 g vs 1989 90-110 mm 300 g; AR 60-130 vs 60-140; Moscow
+  275 g vs 1989 350 g; Extreme bar 58 cm 7000 T6 vs 1989 70 cm 6000; CS
+  Sport centre 25.4 vs 26 mm.
+- Retitled (old title kept for matching), source_ref -> 137 unless noted:
+  8309 "3ttt 2002, Attacco 2002" -> "3ttt A2002, Attacco 2002";
+  6404 "3ttt Record AR" -> "3ttt AR, Record";
+  8314 "3ttt Mountain Top" (Stems) -> "3ttt ABIK, Mountain Top";
+  6401 "3ttt Podium" (Stems) -> "3ttt APOD, Podium";
+  6420 "3ttt Mod. 2, Record Pista (64 degree)" -> "3ttt ARP2, Mod. 2 Record
+  Pista (64 degree)"; 6422 likewise -> "3ttt ARP3, Mod. 3 Record Pista (58
+  degree)"; 8312 "3ttt Rear Tandem (adjustable)" -> "3ttt ATAN, Tandem
+  Regolabile"; 2743 "3ttt Podium" (Handlebars) -> "3ttt CPODS, Podium"
+  (NULL -> 1991); 8303 "3ttt Superleggera Race Team Service" -> "3ttt CSL,
+  Racing Team SL" (same 250 g / bends, read as a rename); 2762 "3ttt
+  Moscow" -> "3ttt CMOS, Moscow"; 2746 "3ttt Moser Low Profile" -> "3ttt
+  CRH, Record Dell'Ora (Moser Low Profile)" (the 1984 Moser hour-record bar;
+  42/44 cm, 250 g fits); 2764 "3ttt Paris-Roubaix" -> "3ttt CPR,
+  Paris-Roubaix"; 8307 "3ttt Extreme ATB" (Handlebars) -> "3ttt CEXT,
+  Extreme"; 8306 "3ttt CS" -> "3ttt CS, Sport"; 5715 "3ttt Mountain Top"
+  (Seat Posts) -> "3ttt RMBIKE, Mountain Top" (resolves the 1989 flag: it's
+  a real post, correctly filed); 5718 "3ttt Aertech" -> "3ttt RSAERO,
+  Aertech" (NULL -> 1991); 5717 "3ttt Mod. Record 1980's" -> "3ttt RSR,
+  Record".
+- year_to -> 1991 (titles kept): 6424 AR84, 8296 AR84N, 2777 / 2750 / 2752
+  CC Competizione (now CCG), 2768 CGP (now CGPS Grand-Prix), 2753 Record
+  Competizione Track (now CCP Pista), 5719 RSCAL; plus every retitled row
+  above except 2743 / 5718 (NULL -> 1991-1991).
+- Inserted (1991-1991, UUID source_id): Stems 8316-8322 ASIT Synthesis, AOS
+  Oversize, AOS2/3/4 Cobra 234, AEX1 Ex-1, AEXT2 Extreme 2, AEXT3 Extreme 3,
+  ADG Doppio Girevole; Handlebars 8323-8333 CFSL Forma SL, CFORMA Forma,
+  CTRI Tri Bar, CUB U-Bar, CCSG Supercompetizione, CTT Time Trial, CWB1
+  WB-1, COF Off Road, CPRO MTB Procompe, CPLANEN New Plane, CSTY Stayer.
+- From the 1987 Bianchi catalogue (data_source 46), not this one: 8302 Aero
+  Dynamic Competizione year_from 1989 -> 1987 (source_ref -> 46), linked to
+  the X4's "3ttt Competizione Aero"; the Trofeo / Limited / Squadra "3ttt
+  RSR" posts linked to 5717. Overrides added: Seat Posts `'3ttt rsr': 5717`,
+  Handlebars `'3ttt competizione aero': 8302` and `'3ttt competizione':
+  null`. The null is needed because the CC retitles left 2751 "Competizione
+  (Merckx bend - early model)" as the only substring hit for the
+  bend-less Mondiale / Giro value.
+- Not touched: ARG Regolabile (photo only; which of 6406-6411?); 8313
+  Extreme ATB stem (1989 swan-neck chromoly, doesn't clearly match Extreme 2
+  or 3); 2758 Forma SL Ergopower / 2756 Forma 2 (different bars from CFSL /
+  CFORMA); the velobase CS Sport shapes (2747 Valencia, 2765 Parma, 2772
+  Roma, 2773 Touriste, 2774-2776 / 2748 Trial) could be tied to 8306.
+- Out of scope: tape N3RD 3 Ribbon Degradé, N3R 3 Ribbon, NL Lorica, N3RF 3
+  Ribbon Fluo, NCORK / NCORKF Cork Soft Tape.

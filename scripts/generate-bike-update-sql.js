@@ -1067,6 +1067,11 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // 1987 Bianchi X4.
+    '3ttt competizione aero': 8302, // 3ttt Aero Dynamic Competizione
+    // 1987 Bianchi Mondiale / Giro: no bend named, and the only substring hit
+    // is the early-model Merckx row.
+    '3ttt competizione': null,
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'cinelli no 65 alloy bend': 2804, // Team Replica: Cinelli 65 Criterium
     'cinelli no 65 engraved alloy bend': 2804, // Gran Sport
@@ -1234,6 +1239,8 @@ const COMPONENT_OVERRIDES = {
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
+    // 1987 Bianchi Trofeo / Limited / Squadra.
+    '3ttt rsr': 5717, // 3ttt RSR, Record
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'shimano 600 ax oval': 5886, // Road Ace: Shimano SP-6300, 600 AX (the 1981 Kalkhoff pick)
     'campagnolo strada': 5749, // Team Replica: Campagnolo 1044, Record (as 1982 Nuovo Record pin)
