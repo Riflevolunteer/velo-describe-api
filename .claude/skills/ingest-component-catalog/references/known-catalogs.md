@@ -11,7 +11,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (35 entries)
 - [known-catalogs/shimano.md](known-catalogs/shimano.md) — Shimano (29 entries)
 - [known-catalogs/suntour.md](known-catalogs/suntour.md) — SunTour (13 entries)
-- [known-catalogs/simplex.md](known-catalogs/simplex.md) — Simplex (7 entries)
+- [known-catalogs/simplex.md](known-catalogs/simplex.md) — Simplex (8 entries)
 - [known-catalogs/weinmann.md](known-catalogs/weinmann.md) — Weinmann (3 entries)
 - [known-catalogs/maillard.md](known-catalogs/maillard.md) — Maillard (4 entries)
 - [known-catalogs/huret.md](known-catalogs/huret.md) — Huret (3 entries)

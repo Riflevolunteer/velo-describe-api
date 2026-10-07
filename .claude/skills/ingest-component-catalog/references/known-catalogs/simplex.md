@@ -458,3 +458,72 @@
 - BMX wheels page: resolved later from the disraeligears copy (see the
   top of this section).
 
+
+## Simplex Product Sheets (40 sheets, September 1975, velo-pages.com via Wayback)
+
+- `data_source` 140, label "Simplex Product Sheets (September 1975)".
+  Source: velo-pages.com album "Simplex - Product Sheets (09-1975)",
+  items 20404-20648 (sheet N front/back = consecutive items, 3 apart;
+  slideshow feed `g2_view=slideshow.SlideshowMediaRss&g2_itemId=20404` only
+  returns 25 items, so the list came from the CDX index). 81 page images:
+  34 at full res (1275x1800, item serial 3) and the rest at 453 px (item+2
+  serial 2); every page legible. Caution: item+3 serial 2 is the *next*
+  sheet's thumbnail, not this one's. French, one sheet per model (photo,
+  construction table, weight, CPSC note / exploded view, options,
+  capacities). Imprint "Imp. Gougenheim Lyon", no printed date; the LJ1000
+  sheets say "Vainqueur du Tour de France 1975", so after July 1975, which
+  fits velo-pages' 09-1975. Now the earliest dated Simplex source.
+- Range: front S A02, SX A12, SX A52, LJ A100, LJ A200, SLJ A500; rear
+  S005, S001 T, SX100 T/GT, SX200 T/GT, SX300 T/GT, SX400 T/GT, SX500
+  CP/T/GT, LJ1000 CP/T/GT, LJ2000 T/GT, LJ3000 T/GT, LJ4000 CP/T/GT (LJ4000
+  T front sheet not archived, back only, so no weight), SLJ5000 CP/T/GT,
+  SLJ6000 T/GT; shifters S, SX, retrofriction LJ and SLJ, SLJ 2615
+  cross-commandes; chainrings RS 3, VS 3, RS 5, 3 VS 3 (chromed steel
+  standard), DP210/211 "Compétition", 213-214 / DP215 "Touriste"; SLJ seat
+  post 3639 / 3639A. Out of scope: chainguards C1 A / C2 A, dropouts
+  3480-81 / 3755-56 / 881-881B / 1600-1601 / fork ends 932-933, seat bolt
+  3649, SX / SLJ QR sets, collars 2111 / 2112 / 3591L-3604L, papillon P560,
+  tensioners T 232 / 233 / 234, cable oiler, spoke protector PR, gear
+  tables.
+- year_from moved down to 1975: front 7327 SX A12, 2580 SX A52; rear 4647
+  S001 T, 7277 SLJ6000 GT; shifters 7285-7290 S3950/3951/3952/S2954,
+  SP3510/3511, 7333-7335 SX3612-3614, 7294/7295 LJ4010/4012, 7336 LJ4001,
+  7297/7298/7337 SLJ5005/5007/5006, 7304 SLJ2615; chainrings 7306/7307
+  DP210/211, 7338/7339 DP213/DP215.
+- year_to moved up to 1975: 2587, 4601 LJ2000 T, 4599 LJ2000 GT.
+- Retitled (old titles kept for matching): 2587 "Simplex Super LJ A500
+  AV.326" (double space) -> "Simplex SLJ A500" (AV.326 kept in the
+  description); 4599 "Simplex LJ 2000 GT" -> "Simplex LJ2000 GT" (matches
+  4601 LJ2000 T).
+- Descriptions rewritten / enriched (source_ref -> 140): 2585 SA02, 2564 LJ
+  A100, 2565 LJ A200, 4610 S005, 4618 SX100 GT (confirms it existed, which
+  the 1979 / 1981 sources didn't show), 4619 SX200 T, 4656 SX300 T, 4660
+  SX500 CP, 4646 / 4600 LJ1000 CP / T (1975 weights 253g / 257g alongside
+  1978 / 1981), 4602 LJ4000 CP v1, 4650 SLJ5000 (CP 231g / T 235g / GT
+  238g), 4653 SLJ6000 T (241g, 32t). Per-edition specs named where they
+  differ: SX A12 clamps (1975 three sizes, 1978 25.4mm only), SX3612-3614
+  lever material (zamak 1975, dural 1978), SLJ6000 / SLJ5000 GT capacity
+  (40t 1975, 39t later).
+- Renumbered parts (no new row): 1975's twin S lever 3962 is 7287 S3952
+  (same 3954 for 25.4mm); 1975's LJ 4011 / 4015 is 7336 LJ4001 (1978 lists
+  LJ4015 under it).
+- New (16 rows, all 1975-1975): rear 8353 SX200 GT, 8354 SX300 GT, 8355 /
+  8356 SX400 T / GT, 8357 / 8358 SX500 T / GT, 8359 LJ1000 GT, 8360 / 8361
+  LJ3000 T / GT, 8362 / 8363 LJ4000 T / GT (version 1, alongside 4602 CP
+  v1); chainrings 8368 RS 3, 8369 VS 3, 8370 RS 5, 8371 3 VS 3; seat post
+  8375 SLJ 3639.
+- Merged/deleted (user decision, no bike links or overrides on either):
+  6213 "Simplex Cross Commande (retro-friction)" (velobase, 1975-1990,
+  154g Spec, `6CC22B39-1076-4E00-97F5-5E6C3065D7ED`) -> 7304 SLJ2615 (the
+  sheets' "Cross-Commandes SLJ à rétrofriction"; 154g kept as the pair
+  weight, against 80-82g per lever; velobase's 1990 end not adopted, as
+  the 1989 catalogue doesn't list it); 5903 "Simplex Ref. TS3640 (black &
+  gold badge), SLJ" (velobase, 1960-1970, 244g Spec,
+  `B946CD53-67AD-4379-B0ED-0C837CCF2F5F`) -> 8375 SLJ 3639 (same 244g;
+  "aka TS3640, black & gold badge" kept; 1960-1970 dropped, since Super LJ
+  dates from c. 1971).
+- Not touched: 2586 SA12 (absent here, weak evidence alone); 2566 LJ A200
+  "Criterium (CPSC version)" (every 1975 sheet already claims CPSC
+  conformity, so the "CPSC version" split is doubtful but not resolvable
+  from these sheets); 4657 SX100 T (bike override `'simplex sx 100 t'`
+  unaffected).
