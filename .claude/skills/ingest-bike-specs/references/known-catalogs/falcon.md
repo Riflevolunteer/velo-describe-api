@@ -1,6 +1,6 @@
 # Falcon catalogs processed so far
 
-## 1975 Falcon — `1975_falcon_spec.csv` (18 bikes, 203 specs, 19 linked)
+## 1974 Falcon — `1974_falcon_spec.csv` (18 bikes, 203 specs, 25 linked; loaded as 1975 until 2026-10-08)
 
 - Source: Falcon Cycles (Barton-upon-Humber) "range of lightweight
   cycles" brochure, 16 catalogue pages plus a 4-page typed Model 76 press
@@ -8,6 +8,16 @@
   inferred from Campagnolo Velox (1971-75), the Sport 3320 crank (DB to
   1975) and the team's Tour de la Nouvelle France / Tour de Suisse rides
   (1974-75). Transcribed by hand 2026-09-28. New bike brand on load.
+- **Re-dated 1975 -> 1974 (2026-10-08, user decision).** velo-pages.com has
+  the same brochure, page for page and word for word, as album "Falcon
+  catalog (1974)" (item 27334, pages 27405-27451, 640 px only; red/blue
+  cover, back cover "AGENT" box, "Hand made in England"). The roundel
+  clue was weak: the 1973 edition carries the same roundels. Bikes 166-183
+  year_from 1975 -> 1974; data_source 38 relabelled "1974 Falcon
+  catalogue", citation `1974_falcon_spec.csv`; CSV renamed (backup of the
+  old file in that session's scratchpad). Link picks checked identical
+  at 1974 (no override range boundary between 1974 and 1975), and a reload
+  of the renamed CSV was a full no-op. Still no printed date.
 - Bikes: San Remo 76 (team replica), 98 track and 96 (enamelled twin),
   94, 92, 80; Black Diamond 70 and ladies 71; Olympic 78; Models 84, 68
   and ladies 69, junior 58, E.C. 72; Super-Tourist De Luxe 88 and ladies
@@ -18,7 +28,7 @@
 - Generic values suppressed with null overrides: Rims "Sprint" /
   "Lightweight sprint" (matcher hit Fiamme Sprint), Saddles "Mattress"
   (hit a Brooks mattress row).
-- 1975 picks: Brakes bare "Campagnolo" -> 573 2040 pre-CPSC (ranged to
+- Picks: Brakes bare "Campagnolo" -> 573 2040 pre-CPSC (ranged to
   1977); Pedals "Campagnolo" -> 3708 1037 (to 1985), "track pattern" ->
   3711 1038; Hubs "quick release" -> 3260 1035 (to 1985), "single sided
   track" -> 3270 1036; Cranksets "Sport" / "Sport cotterless" -> 1476
@@ -42,8 +52,8 @@
   display images (item+2, serial 2). Date is velo-pages' title; no printed
   date. data_source 139. Transcribed by hand 2026-10-08.
 - Earlier edition of the same "range of lightweight cycles" brochure as
-  1975 (same cover, Tour de Suisse / Nouvelle-France roundels, E. A.
-  Clements foreword). Differences vs 1975: 76 chain "Regina or Renolds",
+  1974 (same cover, Tour de Suisse / Nouvelle-France roundels, E. A.
+  Clements foreword). Differences vs 1974: 76 chain "Regina or Renolds",
   Cinelli crown, 24" (not 24.5") size, alt finish Red/Black; 94 Lime Green
   with Prugnat lugs, Centre Pull, plastic saddle; 92 5-speed (10 extra);
   70 / 71 Flamboyant Purple 5-speed; 78 Bronze, Velox 5-speed, Weinmann

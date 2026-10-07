@@ -130,7 +130,7 @@
   levers AG No. 160 / 161 / 162, 131, 135 / 135.16, 136 / 136.16, 151 / 154;
   rim 293; stems 430 / 431 (all 1970-1970).
 - Bike links (user decision 4A): 22 specs -> 7929 via overrides — Raleigh
-  1973 (6), Motobecane 1974 (3) / 1975 (5), Falcon 1975 (8, including bare
+  1973 (6), Motobecane 1974 (3) / 1975 (5), Falcon 1974 (then dated 1975; 8, including bare
   "Weinmann centre pull" x4 and "...with hooded levers", since the 999 was
   Weinmann's only centre-pull). "999 De LUXE or UNIVERSAL 61" left unlinked.
 - Left: 500 / 730 / 610 label and washer variants; "WEINMANN 500, Side Pull"

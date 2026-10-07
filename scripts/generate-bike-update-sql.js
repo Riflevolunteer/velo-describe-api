@@ -668,7 +668,7 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 4168, // G010-SM, Victory (1984-86)
     'campagnolo record corsa': 4096, // 0102050, C-Record first generation (1985-86)
-    // 1975 Falcon.
+    // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'campagnolo velox': 4167, // 2250 Velox (1971-75)
     'campagnolo velox rear': 4167, // 1973 Falcon Olympic 78 (5-speed, no front mech)
     // 1979 Peugeot (French catalogue).
@@ -757,7 +757,7 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli (Ten Speed Drive Imports).
     'campagnolo record sf': 3241, // 322/101 C-Record small flange, fitted with the 1986 Record Corsa group
     'campagnolo victory sf': 3281, // Victory 422 (low flange)
-    // 1975 Falcon.
+    // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'campagnolo quick release': [{ to: 1985, id: 3260 }], // 1035 Record high flange, matches the Hubs "campagnolo record" range
     'campagnolo single sided track': 3270, // 1036 Record Pista (high flange)
     // 1979 Peugeot (French catalogue).
@@ -892,8 +892,8 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 590, // Victory 415/102
     'campagnolo record corsa': null, // Delta not yet shipping in 1986; Record Corsa groups were delivered with Super Record brakes, so no single right row
-    // 1975 Falcon.
-    'campagnolo': [{ to: 1977, id: 573 }], // only Record 2040 pre-CPSC existed; 1975 Falcon Model 76
+    // 1974 Falcon (loaded as 1975 until 2026-10-08).
+    'campagnolo': [{ to: 1977, id: 573 }], // only Record 2040 pre-CPSC existed; 1974 Falcon Model 76
     // 1979 Peugeot (French catalogue).
     'side pull': null, // generic; matcher hit Phillips Side-Pull
     'spidel competition centre pull': 1029, // Spidel (made by Mafac); the Mafac Competition rebadged
@@ -1021,7 +1021,7 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 1516, // 0355, Victory double; matcher picked the triple
     'campagnolo record corsa': 1483, // C-Record 306/101 (1985-86)
-    // 1975 Falcon.
+    // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'campagnolo sport': 1476, // 3320 Gran Sport / Sport (1970-75)
     'campagnolo sport cotterless': 1476, // 3320 Gran Sport / Sport (1970-75)
     'campagnolo cotterless': [{ to: 1977, id: 1496 }], // 1049 Nuovo Record Strada v4 on the Nuovo Record Model 76
@@ -1063,7 +1063,7 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli (Ten Speed Drive Imports).
     'concor rolls': 5563, // Selle San Marco Rolls
     'concor sc': 5547, // Selle San Marco Concor Supercorsa
-    // 1975 Falcon.
+    // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'mattress': null, // generic; matcher hit a Brooks mattress saddle
     // 1979 Peugeot (French catalogue).
     'course': null, // generic; hit Selle San Marco Mercier Course
@@ -1232,7 +1232,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo sl': 3716, // 4021 Super Record Strada (Superleggeri)
     // 1986 Cinelli groupset fan-out.
     'campagnolo record corsa': 3693, // 305/501, C-Record
-    // 1975 Falcon.
+    // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'campagnolo': [{ to: 1985, id: 3708 }], // 1037 Record Strada, the only Campagnolo road pedal of the period
     'campagnolo track pattern': 3711, // 1038 Record Pista (silver finish, 1971-85)
     // 1979 Peugeot (French catalogue).
@@ -1308,7 +1308,7 @@ const COMPONENT_OVERRIDES = {
     '1 2" x 3 32" regina oro': 1382, // Regina Extra 50 Oro
     '1 2" x 3 32" regina d\'oro gold': 1382, // 1974 Raleigh Professional Mk IV: Regina Extra 50 Oro
     '1 2" x 3 32" regina d\'oro': 1382, // 1975 Raleigh Team Professional / Professional Mk IV
-    // 1975 Falcon.
+    // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'renolds': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
   },
   Cassettes: {
@@ -1406,7 +1406,7 @@ const COMPONENT_OVERRIDES = {
     "fir tour or ambrosio giro d'italia": null, // either/or spec; don't pick one
     // 1985 Raleigh (Sheldon Brown scan).
     'araya 16a 5 alloy 27 x 1 3 8 36 hole front 40 hole rear': 4916, // Araya 16A (box style alloy clincher)
-    // 1975 Falcon.
+    // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'sprint': null, // generic term for a tubular rim; matcher hit Fiamme Sprint
     'lightweight sprint': null, // generic
     // 1979 Peugeot (French catalogue).
