@@ -22,7 +22,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/dia-compe.md](known-catalogs/dia-compe.md) — Dia-Compe (2 entries)
 - [known-catalogs/zeus.md](known-catalogs/zeus.md) — Zeus (2 entries)
 - [known-catalogs/mavic.md](known-catalogs/mavic.md) — Mavic (5 entries)
-- [known-catalogs/regina.md](known-catalogs/regina.md) — Regina (1 entry)
+- [known-catalogs/regina.md](known-catalogs/regina.md) — Regina (2 entries)
 - [known-catalogs/3ttt.md](known-catalogs/3ttt.md) — 3ttt (5 entries)
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands (velobase title-fixup conventions, etc.)
 

@@ -82,7 +82,7 @@ of it back).
   - SunTour advertisement (03-1975), ~12410-12470, 13 images
   - ~~3ttt catalog - Product Sheets (1988), ~6732-6762, 12 images~~ done - actually 1986 (p. 1 dates the 3T mark to 1961 + 25 years) and a 30-page album (`g2_itemId=6809`), of which only 13 pages are archived; ingested as data_source 134, see `known-catalogs/3ttt.md`
   - Simplex catalog (1971), ~19978-20006, 9 images
-  - Regina catalog (1978), ~5937-5984, 9 images
+  - ~~Regina catalog (1978), ~5937-5984, 9 images~~ done - Catalogo C-78, 16-page album (`g2_itemId=5934`), 8 pages archived; ingested as data_source 138, see `known-catalogs/regina.md`
   - Detto Pietro catalog (1970's), ~6606-6638, 9 images
   - Shimano Dura-Ace EX brochure (1978), ~6973-6982, 5 images
   - Lyotard catalog (06-1977), ~2087-2110, 5 images
