@@ -40,6 +40,40 @@
   it). Back-filled 8 specs: Peugeot 1979 (3), Kalkhoff 1981 (3), Motobecane
   1974 (2).
 
+### Same catalogue, second copy: velo-pages.com album "Weinmann catalog (1983)" — missing pages filled (2026-10-08)
+
+- velo-pages.com Gallery2 album `g2_itemId=28891`, read via Wayback (site
+  500s). Slideshow feed (`g2_view=slideshow.SlideshowMediaRss&g2_itemId=29093`)
+  lists 17 items: covers 29052 / 29081, spreads "Pages 00-01" ... "28-29"
+  (29056 ... 29102, 29078). Only three are archived beyond thumbnails: pp.
+  18-19 (29092, 640 px), 20-21 (29093 serial 3, 2314x1650 full res), 24-25
+  (29101, 640 px). Same jubilee brochure as above; 18-21 and 24-25 are not in
+  the leblog scan, so kept as data_source 85 (citation extended), not a new
+  source.
+- Listed: centre-pulls Vainqueur 610 / 750 / 900, CP 631 / 751; side-pulls
+  500 / 730 / 810 / 890 / 1020 / 1080 (heading reads "Junior" at 640 px),
+  same with quick release (No. 1668 as read at 640 px; BMX page says 1664);
+  Symetric 733 / 813 / 1023, also with No. 1680 Semi-Automatic cable
+  adjuster; BMX 1340-20 / -40 and 1390-20 / -40 levers (20 / 40 deg bent),
+  W 1020 and BMX 1028 (with 1664 QR) brakes; racing handlevers 182, 182-1,
+  162-1, 162, 162/160.7-2 (black hood); tourist levers 151 (children), 131,
+  134-or-136 (illegible), 152 (children), 135, 129; stainless mudguards (out
+  of scope).
+- Updated (source_ref -> 85): 7929 Vainqueur 999 (610 / 750) year_to 1975 ->
+  1983 (overrides `{ to: 1975 }` unaffected); 1160 Vainqueur 900 NULL ->
+  1983-1983; 1157 AG 810, 7920 890-A, 1115 AG 1020, 7930 AG 1080, 7934 131,
+  7935 135, 7937 151 year_to 1970 -> 1983; retitled 7933 "Weinmann AG No.
+  162" -> "Weinmann AG No. 162 / No. 162-1" (year_to 1983).
+- New (1983-1983): 8338 CP (631 / 751), 8339 Symetric (733 / 813 / 1023)
+  (model-level rows, like 7929), 8340 W 1020 (BMX), 8341 BMX 1028, 8342
+  1340-20 / 1340-40 and 8343 1390-20 / 1390-40 BMX levers, 8344 No. 182 /
+  182-1, 8345 152 junior tourist lever, 8346 129 tourist lever.
+- Left: 500 / 730 variant rows (no model-level row to extend); CP type 1-3
+  (1165 / 1093 / 1094) and Symetric label rows 1103 / 1104 (visual variants);
+  7936 136 (can't confirm 134 vs 136). Unlinked bike specs "Weinmann
+  Symetric Side-Pull Alloy" (bike 222) / "Weinmann Symmetric" (bike 232)
+  are candidates for 8339 if those bikes' years fit.
+
 ## Weinmann "Light Metal Caliper Brakes, Parts and Rims and Tools", Catalogue No. 107 — January 1963 (eBay listing photos, partial)
 
 - `data_source` 93, label "Weinmann Catalogue No. 107, Delaware Mercantile
