@@ -304,3 +304,25 @@ inserted.
   (ITM, Kusuki, Rigida, Araya, Ukai, FIR, Dia-Compe racing levers, Vittoria,
   Panaracer), not overrides.
 
+## Super Record ranges widened for a 1979 catalogue (2026-10-08)
+
+Ingesting the 1979 Colnago sheets (first pre-1980 catalogue with bare
+"Campagnolo Super Record" group values) showed two overrides were anchored
+on their first user rather than on the DB dates:
+
+- Rear Derailleurs 'campagnolo super record' started at `{ to: 1983 -> 4149 }`,
+  the PAT. 80 row dated 1980 only; a 1979 bike would have inherited it.
+  Now `{ to: 1979 -> 4148 1st gen (1974-79) }, { 1980-83 -> 4149 }, { from
+  1984 -> 4152 }`. 1981 Kalkhoff unchanged.
+- Brake Levers 'campagnolo super record' was a flat 231 (post-'83 shield
+  hoods, 1983-87) from the 1986 Cinelli work. Now `{ to: 1982 -> 232 pre-'83
+  globe hoods (1974-83) }, { from 1983 -> 231 }`. 1986 Cinelli unchanged.
+- Added 'campagnolo record' entries (Front/Rear Derailleurs, Brake Levers,
+  Seat Posts) ranged on the Nuovo Record generations, because the bare
+  value otherwise either fails (ambiguous) or, for levers, exact-matches a
+  1994 row titled just "Campagnolo Record". Same shape as the existing
+  'campagnolo nuovo record' entries.
+
+Regression over all 20 loaded catalogues: one change, the 1982 Raleigh Gran
+Sport brakes (see raleigh.md), which was a missing link, not a moved one.
+

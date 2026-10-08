@@ -148,7 +148,7 @@
   Raleigh, Carlton and Sun. Transcribed into three CSVs, then reversed at
   the user's request before loading: not what they want in the DB.
 
-## 1982 Raleigh — `1982_raleigh_spec.csv` (6 bikes, 73 specs, 29 linked)
+## 1982 Raleigh — `1982_raleigh_spec.csv` (6 bikes, 73 specs, 30 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1982-raleigh-lightweights-racing-catalogue.993/
   (r.pdf, 9 pages, scan with no text layer; UK "The Raleigh Racing Formula"
@@ -332,4 +332,4 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
   161 / 164", "Kusuki WP-B / WPR-B", "Araya SP-30", "Vredestein 700 x 20C
   Racer", "Raleigh Maes Alloy" (18 bikes; only a bare 1980 Raleigh bar row)
   — no DB row.
-
+- 2026-10-08 (Colnago ingest): Brakes 'campagnolo gran sport' override added for the 1979 Colnago Export (553 to 1980, 554 from 1981) also linked the 1982 Clubman/Competition "Campagnolo Gran Sport" brakes -> 554 second gen, consistent with the 1983 'gran sport brakes' entry; regenerated and back-filled, 29 -> 30.

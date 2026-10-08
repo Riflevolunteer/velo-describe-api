@@ -445,6 +445,10 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
+    'campagnolo record': [{ to: 1969, id: 2305 }, { from: 1970, to: 1977, id: 2297 }, { from: 1978, to: 1982, id: 2299 }, { from: 1983, to: 1985, id: 2300 }], // 1052/1 first body / second body / 1052/NT 3-hole narrow band / 0104007 clip-on
+    // 1986 Colnago Catalogo generale group fan-outs.
+    'campagnolo super record 30nnale': 2313, // Regal 30nnale: same 1052/SR as the plain Super Record group
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'sun tour \'7\'': 2641, // Royale / Royal: SunTour FD-1400, Seven (1978-85)
     // Only 3701 / FD-1100 Compe-V runs past 1979 (the bare Compe-V row is 1974-79).
@@ -549,6 +553,15 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
+    'campagnolo record': [{ from: 1970, to: 1981, id: 4125 }, { from: 1982, to: 1984, id: 4126 }, { from: 1985, to: 1987, id: 4127 }], // 1020/A Nuovo Record v3 / v4 / v5 (DB dates)
+    // 1986 Colnago Catalogo generale group fan-outs.
+    'campagnolo c record 180': 4096, // 0102050, C-Record first generation (1985-86), as 1986 Cinelli Record Corsa
+    'campagnolo triomphe': 4155, // Triomphe (1st version, 1984-86); 0102057 leisure long cage is 1986-only and the Gentleman Sport runs a double
+    'campagnolo super record 30nnale': 4152, // 4001 2nd gen ver. 2
+    // 1986 Master Mountain Bike: the matcher hits an undated bare "Shimano Deore XT" row. In 1986 "Deore" is undecidable between the
+    // discontinued DE-series Deore (to 1984) and Deore XT M700 (1983-86); the MT60 "Deore" group only arrives in 1987.
+    'shimano deore': null,
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     // 'sun tour vgt' is the 1973 4900; by 1983 the VGT is the RD-1500 V-GT Luxe.
     'sun tour vgt large capacity': 4705, // Royale / Royal: SunTour RD-1500, VGT (V-GT Luxe version 2)
@@ -626,7 +639,7 @@ const COMPONENT_OVERRIDES = {
     'huret challenger': 4273, // Huret Challenger 2400 / 2440 / 2448 / 2454 (1975 Motobecane; pinned after 1975 catalogue retitle)
     'sun tour vgt luxe': 4704,
     // 1981 Kalkhoff. "600 AX" otherwise substring-matches plain "Shimano 600".
-    'campagnolo super record': [{ to: 1983, id: 4149 }, { from: 1984, id: 4152 }], // PAT. 80 for 1981 Kalkhoff; 4001 2nd gen ver. 2 (1984-87) for 1986 Cinelli
+    'campagnolo super record': [{ to: 1979, id: 4148 }, { from: 1980, to: 1983, id: 4149 }, { from: 1984, id: 4152 }], // 4001 1st gen (1974-79; 1979 Colnago); PAT. 80 for 1981 Kalkhoff; 4001 2nd gen ver. 2 (1984-87) for 1986 Cinelli
     'dura ace ex': 4509, // Shimano RD-7200, Dura-Ace EX
     'shimano 600 ax': 4465, // Shimano RD-6300, 600 AX
     // 1983 Bianchi (3500 Nuovo Gran Sport); 1973 Bianchi Special -> the
@@ -770,6 +783,11 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
+    'campagnolo gran sport': [{ to: 1980, id: 553 }, { from: 1981, id: 554 }], // first gen for the group's first years (Export); second gen as the 1983 Raleigh 'gran sport brakes' entry
+    // 1986 Colnago Catalogo generale group fan-outs.
+    'campagnolo c record 180': null, // Delta not shipping in 1986; groups delivered with Super Record brakes (same call as 1986 Cinelli Record Corsa)
+    'campagnolo super record 30nnale': 583, // 4061 v2
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'shimano 600 ax with recessed bolts': 965, // Road Ace: Shimano BR-6300, 600 AX
     'weinmann 405 alloy side pull quick release recessed bolts': 1117, // Competition: Weinmann AG 405
@@ -904,6 +922,8 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
+    // 1979 Colnago: "sterzo Colnago superleggero" = the alloy Colnago headset; the steel one is the "record" row.
+    'colnago superlight': 2981, // Colnago ("super record", alu)
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'campagnolo strada': 2963, // Team Replica: Campagnolo 1039, Record Strada
     'tange ma60': 3144, // Record Sprint / Zenith: Tange MA-60
@@ -945,6 +965,9 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1986 Colnago Catalogo generale group fan-outs.
+    'campagnolo triomphe': 1515, // 0365, Triomphe (1985-88)
+    'campagnolo super record 30nnale': 1509, // 1049/A Strada Super Record
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'campagnolo nuovo record with 52 42t super record rings 170mm cranks': 1496, // Team Replica: 1049 (Nuovo) Record Strada v4
     // The 1983+ bare Gran Sport range is the Bianchi-labelled 0304; a Raleigh takes the plain one.
@@ -1032,6 +1055,7 @@ const COMPONENT_OVERRIDES = {
     'nervar cotterless 40 52 alloy chainwheel rings with alloy guard': 1653, // Nervar (3-pin, alloy/cotterless)
   },
   Saddles: {
+    'concor or rolls': null, // 1986 Colnago either/or spec; don't pick one
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'isca tornado suede': 5382, // Iscaselle Tornado (suede cover)
     // The catalog's "Zeus Leather" saddle is the DB's black suede Zeus.
@@ -1096,6 +1120,8 @@ const COMPONENT_OVERRIDES = {
     'sr royal special racing bend alloy': 7884, // Sakae/Ringyo (SR) RY-978, Royal-978
   },
   Stems: {
+    // 1986 Colnago: "attacco 3TTT mod. 84 nero" = the black AR84N (1986-91), not the silver AR84.
+    '3ttt mod 84': 8296, // 3ttt AR84N, Mod. 84 (black)
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'cinelli no 1a': 6489, // Team Replica / Gran Sport: Cinelli 1A (winged "C" logo), latest 1A row
     'sr apex forged alloy': 7901, // Competition / Record Ace: SR AX-AH, Apex
@@ -1187,8 +1213,14 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
+    'campagnolo record': [{ to: 1984, id: 226 }], // 2030, Nuovo Record (1967-84); the bare "Campagnolo Record" row the matcher hits is 1994
+    'campagnolo gran sport': 209, // 1040/1A, Nuovo Gran Sport (1970-84)
+    // 1986 Colnago Catalogo generale group fan-outs.
+    'campagnolo c record 180': 212, // 0118065, C-Record first generation (1985-86)
+    'campagnolo super record 30nnale': 231, // 4062 post-83
     // 1986 Cinelli groupset fan-out.
-    'campagnolo super record': 231, // 4062 post-83 shield-logo hoods (1983-87)
+    'campagnolo super record': [{ to: 1982, id: 232 }, { from: 1983, id: 231 }], // 4062 pre-'83 globe-logo hoods (1974-83; 1979 Colnago) / post-83 shield-logo hoods (1983-87; 1986 Cinelli, Colnago)
     'campagnolo victory': 235, // Victory levers (1984-87)
     'campagnolo record corsa': 212, // 0118065, C-Record first generation (1985-86)
     // 1985 Raleigh lever halves (split out of the Brakes cells). 161 / 164 /
@@ -1199,6 +1231,10 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    // 1986 Colnago Catalogo generale group fan-outs.
+    'campagnolo c record 180': 3693, // 305/501, C-Record
+    'campagnolo triomphe': 3719, // 905/000, Triomphe (1984-86)
+    'campagnolo super record 30nnale': 3716, // 4021 Super Record Strada
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'sr sp12 platform alloy': 3924, // Competition: SR SP-12AL
     'suntour xc ii chrome moly shafts': 4015, // SunTour PL-5100, XC-II (1985 Raleigh; dup 4000 merged)
@@ -1250,6 +1286,12 @@ const COMPONENT_OVERRIDES = {
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
+    // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
+    'campagnolo record': [{ to: 1985, id: 5749 }], // 1044, Record (1969-85)
+    // 1986 Colnago Catalogo generale group fan-outs.
+    'campagnolo c record 180': 5738, // A0R2, C-Record aero (as 1986 Cinelli Record Corsa)
+    'campagnolo triomphe': 5764, // Victory / Triomphe
+    'campagnolo super record 30nnale': 5761, // 4051/1 Nuovo Super Record
     // 1987 Bianchi Trofeo / Limited / Squadra.
     '3ttt rsr': 5717, // 3ttt RSR, Record
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
@@ -1290,6 +1332,11 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1979 Colnago.
+    'regina extra record': 1381, // Regina Extra 50 Record (1970-80)
+    // 1986 Colnago. Everest chains were made by Fossati & C., so the catalogue's "Fossati Racing Cromo" is the Everest Racing Cromo row.
+    'fossati racing cromo': 1361, // Everest Modello Racing Cromo
+    'everest special cromo': 1364, // Everest Serie Special (silver); the Oro variant is gold, not chrome
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'sun tour ultra 6 narrow': 7820, // Record Ace / Clubman: SunTour UC-6000, Ultra-6 chain
     'sun tour z silver black': 7821, // Gran Sport / Competition: SunTour TZ-6000, Z chain
@@ -1382,6 +1429,7 @@ const COMPONENT_OVERRIDES = {
     'sun tour wide ratio 14 18 23 30 34t': 2245, // SunTour 1100-1106 / PT-5000, Perfect (5-speed)
   },
   Tyres: {
+    'clement tubulars mod colnago': 6743, // Clement Colnago (1979 Colnago Mexico / Mexico Oro)
     'clement strada 66 lightweight cotton tubular': 6775, // 1974 Raleigh International: Clement Strada 66 (red label)
     'clement criterium silk tubular': 6748, // Clement Criterium Seta (seta = silk)
     // 1975 Motobecane "Wheel Rims & Tires" cells, split by splitCellValue
@@ -1404,6 +1452,9 @@ const COMPONENT_OVERRIDES = {
     'clement pista tubular': 6765, // Clement Pistard
   },
   Rims: {
+    // 1986 Colnago Raid / Gentleman Sport / Lady Sport: the only Elite Aero row.
+    'ambrosio elite aero black anodized': 4890, // Ambrosio 19 Extra Elite Aero dynamic
+    'ambrosio elite aero white': 4890,
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     // Only A124 row in the DB, dated 1983 (Weinmann's concave A124).
     'weinmann a124 concave section alloy': 7776, // Gran Sport: Weinmann A124 Super X
