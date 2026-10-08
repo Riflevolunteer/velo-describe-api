@@ -293,9 +293,11 @@ inserted.
   pointing at a Single Sprockets id (the matcher only searches the label's
   own category). Same trick as the Road Ace 600AX cassette.
 - Side effect of the load: `bike_spec_label` "Brake Levers" sort_order moved
-  50 -> 55. It is not in `LABEL_ORDER`, so the generator assigns it a
-  trailing slot after Extras; add it after 'Brakes' in `LABEL_ORDER` if it
-  should display next to the brakes.
+  50 -> 55 because it was not in `LABEL_ORDER` (unlisted labels get a
+  trailing slot after Extras). Fixed the same day: added it to `LABEL_ORDER`
+  directly after 'Brakes', regenerated and reloaded, so it now sorts
+  between Brakes and Front Derailleur and the labels after it shifted down
+  one.
 - What is left in these categories is almost entirely generic text ("Light
   Alloy", "14-28T", "Course levers", bare brands) or models with no DB row
   (lists in the brand files). Next gains need component catalogue ingests

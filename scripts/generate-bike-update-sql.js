@@ -365,7 +365,7 @@ const LABEL_ALIASES = {
 // in first-seen order. bike_spec_label.sort_order is set from this.
 const LABEL_ORDER = [
   'Frame Material', 'Fork', 'Lugs', 'Headset', 'Handlebars', 'Stem', 'Shifters',
-  'Brakes', 'Front Derailleur', 'Rear Derailleur', 'Gearing', 'Crankset', 'Bottom Bracket',
+  'Brakes', 'Brake Levers', 'Front Derailleur', 'Rear Derailleur', 'Gearing', 'Crankset', 'Bottom Bracket',
   'Chain', 'Freewheel', 'Cassette', 'Pedals', 'Toe Clips', 'Saddle', 'Seatpost',
   'Hubs', 'Spokes', 'Rims', 'Tyres', 'Cable & Tape', 'Fenders', 'Chain Guard',
   'Groupset / Components', 'Other Features', 'Extras',
