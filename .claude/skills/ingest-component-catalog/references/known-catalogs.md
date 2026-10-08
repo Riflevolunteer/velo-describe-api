@@ -24,6 +24,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/mavic.md](known-catalogs/mavic.md) — Mavic (5 entries)
 - [known-catalogs/regina.md](known-catalogs/regina.md) — Regina (2 entries)
 - [known-catalogs/3ttt.md](known-catalogs/3ttt.md) — 3ttt (5 entries)
+- [known-catalogs/mafac.md](known-catalogs/mafac.md) — MAFAC (1 entry)
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands (velobase title-fixup conventions, etc.)
 
 When a new brand shows up for the first time, create
