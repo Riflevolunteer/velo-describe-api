@@ -74,6 +74,56 @@
 - Left unlinked: fork prose, TTT stems, San Marco, plain Mavic and Super
   Champion rims, Wolber tyres, the groupset column.
 
+## 1985 Bianchi — `1985_bianchi_spec.csv` (10 bikes, 164 specs, 77 linked)
+
+- Source: ebykr.com scan of the Piaggio Japan range sheet
+  (https://ebykr.com/library/bianchi-1985-japan-range-sheet/, two pages,
+  Japanese, prices dated 1 April 1985), `data_source` 144. The scan cuts
+  the spec table's row-label column off; rows identified by content and
+  order (price, sizes, frame, bars, stem, brakes with levers, crank,
+  pedals, freewheel, chain, saddle, seatpost, derailleurs, hubs, tyres,
+  rims, extras, weight, colour). The Campagnolo / Sakae P-5 row between
+  Saddle and Derailleur is the seatpost row. Transcribed by hand
+  (2026-10-08) from ebykr's Japanese transcription checked against the
+  1164 px scan; chains corrected to Sedis on the Centenario, Super Leggera
+  and Campione (the transcription had HKK throughout). Yen prices put in
+  Extras (no price column). "Yoshigai" rendered Dia-Compe, "Mikashima"
+  MKS, スーパーレゲロ Superleggero, モンディアリタ Mundialita.
+- Bikes: Centenario (100th-anniversary limited edition, black nickel,
+  ¥600,000), Super Leggera, Campione, Campionissimo, Squadra, Speciale-II
+  (tubular and 700C builds in one column, kept as either/or cells),
+  Strada, Randonneur 700, Rekord 26, Bambina.
+- Brakes and levers were one cell ("Yoshigai 500G + GC200"): split into
+  Brakes / Brake Levers in the CSV for the four Dia-Compe bikes.
+- Overrides (all 1985 Bianchi comments in the generator): brakes
+  'campagnolo nuovo record bianchi engraved' -> 572 (post-CPSC range),
+  'campagnolo super record bianchi engraved' -> 583, 'modolo flash' -> 874
+  1st version; cranks with dimensions -> 1472 Gran Sport, 1496 Nuovo
+  Record Strada ("Record with SL chainrings" = 1049 with Super Leggero
+  rings), 1687 Ofmega Competizione BIANCHI; pedals 'campagnolo
+  superleggero' -> 3709 1037/a SL; freewheels Regina CX 13-21 / 13-23 ->
+  2168 (as 1987 Bianchi), 'suntour nw 13 21t 6 speed' -> 2238 NW-6000;
+  FD 'campagnolo 990 980' -> 2279 Campagnolo 980 (990 front exists only
+  as the 1987+ century finish; rear matched 4088 990 itself); RD 'suntour
+  arx' merged with the 1985 Raleigh entry into a ranged one: Randonneur
+  700 -> 4729 RD-4500 GT (50/45/34 triple, 14-28), default 4727 RD-4300;
+  hubs 'campagnolo nuovo record 36h' -> 3259, 'campagnolo record 32h /
+  36h' -> 3260, 'campagnolo gran sport 36h' -> 3256 1006 (as 1983; DB's
+  only Gran Sport hub, velobase-dated 1950-55 though the number was
+  reused — check against a 1980s Campagnolo catalogue); bars 'sakae ctd
+  390 mm / 370 mm' -> 7888, 'nitto 105 390 mm' -> 2889 Universiade 105;
+  seatposts 'sakae p 5' -> 5857 CT-P5, 'sakae p 3' -> 5855 CT-P3; null:
+  'selle italia turbo junior' (matcher hit the adult Turbo), the
+  Speciale-II either/or rim cell.
+- Left unlinked: TTT bars/stems, Nitto Technomic stems and Junior bar,
+  Sakae RY / AH stems, Sakae bare 390 bar, Dia-Compe 500G / DC400N / GC200
+  / NGC200 / DC195 (no 1985 rows by those codes), Campagnolo Victory hubs
+  (flange unknown), Suzue LPF / 28H, Ofmega Junior cranks and Competizione
+  pedals, Sakae CT/SPG triple, MKS Promenade, Vittoria (bare and Seta),
+  Panaracer, Sedis / HKK, Selle Italia Aero II / ANA, Martano Pro / G-P80,
+  Ambrosio, Bianchi original rims, frame prose.
+- Regression: all 22 loaded catalogues unchanged (1,449 links).
+
 ## 1987 Bianchi — `1987_bianchi_spec.csv` (16 bikes, 320 specs, 144 linked)
 
 - Richest catalog: full parts lists with model numbers, but six columns pair

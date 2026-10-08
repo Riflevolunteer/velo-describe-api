@@ -445,6 +445,9 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1985 Bianchi Japan range sheet (Piaggio Japan).
+    // "990/980" names the budget group; the DB's 1985-era front is the 980 (990 front exists only as the 1987+ century finish).
+    'campagnolo 990 980': 2279, // Strada / Bambina: Campagnolo 980
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
     'campagnolo record': [{ to: 1969, id: 2305 }, { from: 1970, to: 1977, id: 2297 }, { from: 1978, to: 1982, id: 2299 }, { from: 1983, to: 1985, id: 2300 }], // 1052/1 first body / second body / 1052/NT 3-hole narrow band / 0104007 clip-on
     // 1986 Colnago Catalogo generale group fan-outs.
@@ -553,6 +556,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // 1985 Bianchi Japan range sheet (Piaggio Japan).
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
     'campagnolo record': [{ from: 1970, to: 1981, id: 4125 }, { from: 1982, to: 1984, id: 4126 }, { from: 1985, to: 1987, id: 4127 }], // 1020/A Nuovo Record v3 / v4 / v5 (DB dates)
     // 1986 Colnago Catalogo generale group fan-outs.
@@ -677,7 +681,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore xt': 4490, // Shimano RD-M700, Deore XT M700 (Version 2, 1985-86)
     'suntour cyclone mkiii': 4739, // SunTour RD-6000, Cyclone (S), No. 62 (Dec 1984)
     'suntour superbe pro': [{ to: 1983, id: 4766 }, { from: 1984, id: 4768 }], // 1979-83 row keeps the 1983 Bianchi pick; friction row 1983-86 for 1985 Raleigh
-    'suntour arx': 4727, // SunTour aRX (short cage)
+    // 1985 Raleigh Grand Prix: short-cage RD-4300. 1985 Bianchi Randonneur 700 runs a 50/45/34 triple with a 14-28 block, so the long-cage GT.
+    'suntour arx': [{ bike: 'Randonneur 700', from: 1985, to: 1985, id: 4729 }, { id: 4727 }], // SunTour RD-4500 ARX (GT) / RD-4300 ARX
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 4168, // G010-SM, Victory (1984-86)
     'campagnolo record corsa': 4096, // 0102050, C-Record first generation (1985-86)
@@ -692,6 +697,11 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1985 Bianchi Japan range sheet (Piaggio Japan).
+    'campagnolo nuovo record 36h': 3259, // Centenario: 1034 Record (Low Flange), as the bare Nuovo Record entry
+    'campagnolo record 32h': 3260, // Super Leggera: 1035 Record (high flange), as the bare 'campagnolo record' range
+    'campagnolo record 36h': 3260, // Campionissimo
+    'campagnolo gran sport 36h': 3256, // Squadra: 1006 Gran Sport, as 1983 Bianchi (the DB's only Gran Sport hub row; velobase dates it 1950-55 but the number was reused by the 1980s group)
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'shimano 600 ax small flange quick release': 3532, // Road Ace: Shimano FH-6361, 600 AX
     'campagnolo nuovo tipo small flange qr': 3230, // Gran Sport: Campagnolo 1251, Nuovo Tipo (small flange)
@@ -783,6 +793,10 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1985 Bianchi Japan range sheet (Piaggio Japan).
+    'campagnolo nuovo record bianchi engraved': [{ from: 1978, id: 572 }], // Centenario: 2040 Record post-CPSC, as the plain Nuovo Record range
+    'campagnolo super record bianchi engraved': 583, // Super Leggera: 4061 v2 (1983-87)
+    'modolo flash': 874, // Speciale-II: Modolo Flash (1st version, 1979-88), as 1984 Bianchi
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
     'campagnolo gran sport': [{ to: 1980, id: 553 }, { from: 1981, id: 554 }], // first gen for the group's first years (Export); second gen as the 1983 Raleigh 'gran sport brakes' entry
     // 1986 Colnago Catalogo generale group fan-outs.
@@ -965,6 +979,14 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1985 Bianchi Japan range sheet (Piaggio Japan).
+    'campagnolo gran sport 170 mm 52x42t': 1472, // Squadra: 0304 (Nuovo) Gran Sport 144 BCD
+    'campagnolo nuovo record bianchi engraved 170 mm 53x42t': 1496, // Centenario: 1049 Nuovo Record Strada v4
+    // "Record with SL chainrings" = the 1049 Record crank with Super Leggero rings.
+    'campagnolo record with sl chainrings bianchi engraved 170 mm 53x42t': 1496, // Super Leggera
+    'campagnolo record with sl chainrings 170 mm 53x42t': 1496, // Campione
+    'campagnolo record with sl chainrings 170 mm 52x42t': 1496, // Campionissimo
+    'ofmega competizione 170 mm 52x42t': 1687, // Speciale-II: Ofmega Competizione BIANCHI, as 1983/84 Bianchi
     // 1986 Colnago Catalogo generale group fan-outs.
     'campagnolo triomphe': 1515, // 0365, Triomphe (1985-88)
     'campagnolo super record 30nnale': 1509, // 1049/A Strada Super Record
@@ -1055,6 +1077,8 @@ const COMPONENT_OVERRIDES = {
     'nervar cotterless 40 52 alloy chainwheel rings with alloy guard': 1653, // Nervar (3-pin, alloy/cotterless)
   },
   Saddles: {
+    // 1985 Bianchi Japan range sheet (Piaggio Japan).
+    'selle italia turbo junior': null, // Bambina: a smaller junior model; the matcher hits the adult Turbo
     'concor or rolls': null, // 1986 Colnago either/or spec; don't pick one
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'isca tornado suede': 5382, // Iscaselle Tornado (suede cover)
@@ -1093,6 +1117,10 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // 1985 Bianchi Japan range sheet (Piaggio Japan).
+    'sakae ctd 390 mm': 7888, // Speciale-II / Strada: SR CTD, Custom Double Tube
+    'sakae ctd 370 mm': 7888, // Rekord 26
+    'nitto 105 390 mm': 2889, // Squadra: Nitto Universiade 105
     // 1987 Bianchi X4.
     '3ttt competizione aero': 8302, // 3ttt Aero Dynamic Competizione
     // 1987 Bianchi Mondiale / Giro: no bend named, and the only substring hit
@@ -1233,6 +1261,8 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    // 1985 Bianchi Japan range sheet (Piaggio Japan).
+    'campagnolo superleggero': 3709, // Super Leggera / Campionissimo: 1037/a Record Strada Superleggeri (SL)
     // 1986 Colnago Catalogo generale group fan-outs.
     'campagnolo c record 180': 3693, // 305/501, C-Record
     'campagnolo triomphe': 3719, // 905/000, Triomphe (1984-86)
@@ -1288,6 +1318,9 @@ const COMPONENT_OVERRIDES = {
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
+    // 1985 Bianchi Japan range sheet (Piaggio Japan).
+    'sakae p 5': 5857, // Speciale-II / Randonneur 700 / Rekord 26 / Bambina: SR CT-P5, Custom-P5 (Sakae Laprade)
+    'sakae p 3': 5855, // Strada: SR CT-P3, Custom-P3 (melt forging)
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
     'campagnolo record': [{ to: 1985, id: 5749 }], // 1044, Record (1969-85)
     // 1986 Colnago Catalogo generale group fan-outs.
@@ -1385,6 +1418,10 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
   },
   Freewheels: {
+    // 1985 Bianchi Japan range sheet (Piaggio Japan).
+    'regina cx 13 21t 6 speed': 2168, // Centenario: Regina CX (6 speed), as the 1987 Bianchi 'regina cx 13 23t'
+    'regina cx 13 23t 6 speed': 2168, // Super Leggera
+    'suntour nw 13 21t 6 speed': 2238, // Campionissimo / Squadra: SunTour NW-6000, New Winner (6-speed)
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'regina oro 13 14 15 16 17 18 teeth': 2194, // Team Replica: Regina Oro (6 speed)
     'sun tour nw 6000 silver 13 14 15 17 19 21 teeth': 2238, // Gran Sport: SunTour NW-6000, New Winner (6-speed)
@@ -1454,6 +1491,8 @@ const COMPONENT_OVERRIDES = {
     'clement pista tubular': 6765, // Clement Pistard
   },
   Rims: {
+    // 1985 Bianchi Japan range sheet (Piaggio Japan).
+    'martano strada (tubular) araya 20a smoked (700c)': null, // Speciale-II either/or build spec; don't pick one
     // 1986 Colnago Raid / Gentleman Sport / Lady Sport: the only Elite Aero row.
     'ambrosio elite aero black anodized': 4890, // Ambrosio 19 Extra Elite Aero dynamic
     'ambrosio elite aero white': 4890,
