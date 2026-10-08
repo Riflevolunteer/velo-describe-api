@@ -14,6 +14,8 @@
   - Brake Levers: Dia-Compe 164, Dia-Compe 161
   - Freewheel: Sun Tour Ultra 6, Shimano 600AX Cassette, Regina CXS 7-speed - but most of this category's remaining unlinked specs are brand + bare tooth-range ("Maillard 14-15-17-19-21-24", "Shimano 14-28T") describing gearing config rather than naming a distinct product; worth deciding whether vintage freewheels should even be catalogued by tooth range before adding rows for these, since otherwise they're permanently unlinkable regardless of data entry
 
+- add a link-coverage report endpoint (e.g. `/linkCoverage`) so the link-rate audits above can be re-run regularly without scripting against `/bikeBrands` -> `/bikesbybrand` -> `/bikedetail`. It should return how many `bike_spec` rows have a `component_id`: overall (total specs, linked, %), by spec category (`bike_spec_label`, sorted weakest first, with categories that have no component equivalent such as Frame Material, Fork, Lugs and Extras flagged separately so they don't drag the numbers down), and by bike brand (and maybe brand x category) to show where the gaps are and what to work on next. Optionally, per category, the most common unlinked `value_text` values with their bike count, which is the list that drove the Freewheel / Brake Lever pass on 2026-10-08 (overall 1,204 / 3,973 = 30%; Handlebars 10%, Tyres 13%, Rims 19%, Brake Levers 21%, Freewheel 21% ... Rear Derailleur 80%). Read-only aggregate SQL, one GROUP BY per breakdown
+
 - ~~Add Search feature~~ done - `/searchComponents?q=` endpoint
 
 - maybe also show max and min

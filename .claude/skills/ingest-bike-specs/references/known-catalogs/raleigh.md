@@ -218,6 +218,12 @@
   600 EX headset, Huret Eco front, Positron front, ISCA Tornado (cover not
   stated) / Competition / 407, Sedisport chains, 600AX cassette (DB row
   is under Cassettes). All loaded catalogs regenerate byte-identical.
+- 2026-10-08 link-gap pass: Road Ace "600AX Cassette" -> 1197 (Shimano AX,
+  600 AX; an override can point across categories) and Clubman "Ultra 6
+  Silver 13-...-24T" -> 2240 NW-6500 (13T top sprocket rules out the
+  14T-start Perfect US-6500; US-6000 is dated 1978 only). Record Ace's
+  14-28 Ultra 6 stays unlinked (no Ultra-6 row goes past 26T), as do the
+  bare 1982 "Sun Tour Ultra 6" values.
 
 ## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 91 linked)
 

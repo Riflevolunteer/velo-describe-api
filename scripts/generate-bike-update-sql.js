@@ -1335,6 +1335,8 @@ const COMPONENT_OVERRIDES = {
     'sun tour perfect 6 speed gold 14 15 17 19 21 24t': 7813, // Record Sprint
     'sun tour perfect 6 speed 14 15 17 19 21 24t': 7813, // Europa / Supersport
     'uniglide 14 28t 5 speed with spoke protector disc': 7475, // Silhouette: Shimano MF-1500, Uniglide freewheel
+    'sun tour ultra 6 silver 13 14 15 18 21 24t': 2240, // Clubman: SunTour NW-6500, New Winner Ultra 6 (13T top rules out Perfect US-6500; US-6000 row is 1978 only)
+    'shimano 600 ax cassette 13 14 15 17 19 21 teeth': 1197, // Road Ace: Shimano AX, 600 AX (row is under Cassettes; the CSV label is Freewheel)
     '13 24t regina oro 6 speed': 2194, // 1973 Raleigh: Regina Oro (6 speed)
     "13 24t regina d'oro 6 speed": 2194, // 1974 Raleigh Team Professional: Regina Oro (6 speed)
     'suntour alpha 5000 14 28t': 7866, // SunTour FW-AL00-R6, Alpha freewheel (AccuShift leaflet c. 1987)
