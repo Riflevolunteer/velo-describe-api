@@ -19,7 +19,7 @@
   `data_source` 34 ("1940 Bianchi catalogue") left in place; no generator
   code (`COMPONENT_OVERRIDES`) referenced these bike_ids or component 2170.
 
-## 1983 Bianchi — `1983_bianchi_spec.csv` (9 bikes, 118 specs, 47 linked)
+## 1983 Bianchi — `1983_bianchi_spec.csv` (9 bikes, 118 specs, 51 linked)
 
 - This catalog exposed that overrides were global: its "Campagnolo Nuovo
   Record" derailleurs inherited the 1973 Raleigh picks. COMPONENT_OVERRIDES
@@ -209,3 +209,20 @@
   "Tourney" (no FD-L525 / L532, no 1987 Tourney rows); "Shimano UG",
   bare "Shimano" chain, "Shimano 14-28T" and "105 14-24T" freewheels
   (generic or no MF-1050 row).
+
+## Link-gap pass on the weakest categories — 2026-10-08
+
+- 1983 Super Pista Tyres "Clement Pista tubular" -> 6765 Clement Pistard,
+  via override. Judgment call: Pistard is Clement's track tubular and the
+  only track-named Clement row. 1983: 50 -> 51 (the heading above said 47
+  from an earlier load; the DB had 50 before this pass).
+- 1987 PISTA Freewheel "Campagnolo 16T fixed cog": override ranged to 6380
+  (763 steel sprocket) up to 1985 and `null` from 1986, so it stays
+  unlinked — the 763 row ends 1985 and there is no later Campagnolo cog row.
+- Left unlinked, no DB row: "ITM Mondial" / "Mondial Pista", "Modolo Flyer"
+  (1987); "Ambrosio Elite" / "Montreal" (1987; five Elite and six Montreal
+  variants); "Regina CXS 7-speed" is a 1986 Cinelli value, the only CX-S row
+  is 6-speed; 1993 Araya AP21 / VX300 / PX-35 / PX-45 / RM-18T / VP20, Ukai
+  EX-17, FIR Tour / Pulsar, Vittoria Open Tubular Flash M19, Panaracer
+  Smoke / Dart, Ritchey, Maxxis, Bianchi-branded tyres.
+

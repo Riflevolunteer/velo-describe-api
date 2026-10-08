@@ -1085,6 +1085,15 @@ const COMPONENT_OVERRIDES = {
     // 1975 Motobecane.
     'philippe professional': 2895, // Philippe Professionnel
     "cinelli giro d'italia": 2801, // Cinelli 64 Giro D'Italia (70's model)
+    // 2026-10-08 link-gap pass (weakest categories).
+    // 1974 Motobecane Le Champion: the only plain "Record" bar; the Record
+    // Competizione rows are a different (named) model.
+    '3ttt record': 2771, // 3ttt Record (1st Version)
+    // 1975 Raleigh Professional Track: the Racing Team Service PISTA row is
+    // undated and the later line; this one covers 1975.
+    '3ttt track bend': 2753, // 3ttt Record Competizione Track (Pista)
+    // 1985 Raleigh Prestige (road): RY-RC Royal-Racer is the track bar.
+    'sr royal special racing bend alloy': 7884, // Sakae/Ringyo (SR) RY-978, Royal-978
   },
   Stems: {
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
@@ -1361,6 +1370,16 @@ const COMPONENT_OVERRIDES = {
     'maillard 14 17 20 24 28': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
     'maillard 14 16 20 24 28': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
     'maillard 14 16 18 20 23': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
+    // Fixed track cogs sit under Single Sprockets, not Freewheels; the CSV
+    // label is Freewheel. 1/8" chain and no "alloy" means the steel 763
+    // rather than 763/a Superleggero or the 3/16" 764 Record Pista.
+    'campagnolo 15t': 6380, // 1973 Raleigh Professional Track: Campagnolo 763 Sprocket (steel)
+    'campagnolo 15t x 1 8" fixed': 6380, // 1974 Raleigh Professional Track
+    'campagnolo 15 tooth fixed': 6380, // 1975 Raleigh Professional Track
+    'campagnolo 16t fixed cog': [{ to: 1985, id: 6380 }, { from: 1986, id: null }], // 1987 Bianchi PISTA: 763 row ends 1985, no later row
+    // 1983 Raleigh Royal / Royale 10: a 5-speed 14-34 wide-ratio block;
+    // Perfect was SunTour's touring line (New Winner was the racing block).
+    'sun tour wide ratio 14 18 23 30 34t': 2245, // SunTour 1100-1106 / PT-5000, Perfect (5-speed)
   },
   Tyres: {
     'clement strada 66 lightweight cotton tubular': 6775, // 1974 Raleigh International: Clement Strada 66 (red label)
@@ -1379,6 +1398,10 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli (Ten Speed Drive Imports).
     'clement 2001cf': 6740, // Clement CF 2001
     'clement 2001 cf': 6740, // Clement CF 2001
+    // 2026-10-08 link-gap pass. 1982/83 Raleigh Team Replica, 1983 Road Ace.
+    'clement ritmo tubular': 6767, // Clement Ritmo LTX 55 (only Ritmo row)
+    // 1983 Bianchi Super Pista: Pistard is Clement's track tubular.
+    'clement pista tubular': 6765, // Clement Pistard
   },
   Rims: {
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
@@ -1415,6 +1438,10 @@ const COMPONENT_OVERRIDES = {
     '700c': null, // wheel size, not a rim; hit Diamant 700C
     '350': null, // wheel size; hit Araya TX-350
     'super champion 700c dural': 5176, // Super Champion Competition (1970-80), the standard tubular
+    // 1977 Raleigh Competition GS / Super Course; same A124 as the 1982/83
+    // entries above (the row is dated 1983 but is the only A124).
+    '700 c weinmann a 124 narrow concave section alloy': 7776, // Weinmann A124 Super X
+    '700 c weinmann a124 narrow concave section alloy': 7776,
   },
 };
 

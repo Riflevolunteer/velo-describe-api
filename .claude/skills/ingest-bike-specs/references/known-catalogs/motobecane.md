@@ -1,6 +1,6 @@
 # Motobecane catalogs processed so far
 
-## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 136 specs, 42 linked)
+## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 136 specs, 43 linked)
 
 - "Catalog Page Reference" column ignored via IGNORED_LABELS.
 - Frame Size cells had backslash/doubled-quote inch-mark debris; rewritten.
@@ -97,4 +97,16 @@
   explicit Front / Rear Derailleur columns, front blank on the three
   SunTour V-GT Luxe bikes (Tandem, Mirage, Grand Touring) — see 1974 note.
   208 -> 205 specs.
+
+## Link-gap pass on the weakest categories — 2026-10-08
+
+- 1974 Le Champion Handlebars "T.T.T. RECORD" -> 2771 3ttt Record (1st
+  Version), via override. Judgment call: it is the only plain "Record" bar;
+  the Record Competizione rows are a different, named model. 42 -> 43.
+- Left unlinked: "PIVO Professional" x3 (1975; only a bare "Pivo (deep drop
+  bars)" row), "WEINMANN extension levers" / "quick release levers" (the
+  Weinmann AG lever rows are velobase cosmetic variants, QR one dated 1971
+  only), "ATOM 14-26" / "ATOM or MAEDA" clusters (three cosmetic Atom
+  5-speed variants, nothing in the text to choose on), "T.T.T. Franco Belge"
+  has no row.
 

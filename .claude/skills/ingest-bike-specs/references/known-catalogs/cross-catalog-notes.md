@@ -271,3 +271,34 @@ inserted.
   reloaded it). Baseline without it reproduced the DB exactly (2790 specs,
   894 linked) before the overrides; 899 after. The CSV has since been
   removed from bike_specs/, so a bare generator run is safe again.
+
+## 2026-10-08 link-gap pass via /linkCoverage (no new CSV)
+
+- `/linkCoverage` (index.js) now reports link rates overall, per spec
+  category (weakest first, with the ten non-linkable labels split out), per
+  brand, brand x category, and the most common unlinked values per
+  category. Use it instead of scripting against the bike endpoints.
+- Worked the five weakest categories (Handlebars, Tyres, Rims, Brake Levers,
+  Freewheel) from its unlinked-value list against the current
+  component_detail rows. 14 new override links (see raleigh / motobecane /
+  bianchi), plus the 2 overrides from 38d64d9 that had never been loaded.
+  1,204 -> 1,220 of 3,973 (30.3% -> 30.7%; 40.3% of linkable specs).
+  Handlebars 9.5 -> 11.1%, Tyres 12.8 -> 14.7%, Rims 18.9 -> 19.7%,
+  Freewheel 21.5 -> 26.7%, Brake Levers unchanged at 20.8%.
+- Method: regenerate all 20 CSVs before and after, diff the summarizer's
+  "Linked specs" sections; the only differences were the intended rows.
+  Load was back-fill only (0 inserts, 16 bike_spec UPDATEs).
+- Pattern worth keeping: fixed track cogs are Single Sprockets rows, but the
+  CSV label is Freewheel, so they link through `COMPONENT_OVERRIDES.Freewheels`
+  pointing at a Single Sprockets id (the matcher only searches the label's
+  own category). Same trick as the Road Ace 600AX cassette.
+- Side effect of the load: `bike_spec_label` "Brake Levers" sort_order moved
+  50 -> 55. It is not in `LABEL_ORDER`, so the generator assigns it a
+  trailing slot after Extras; add it after 'Brakes' in `LABEL_ORDER` if it
+  should display next to the brakes.
+- What is left in these categories is almost entirely generic text ("Light
+  Alloy", "14-28T", "Course levers", bare brands) or models with no DB row
+  (lists in the brand files). Next gains need component catalogue ingests
+  (ITM, Kusuki, Rigida, Araya, Ukai, FIR, Dia-Compe racing levers, Vittoria,
+  Panaracer), not overrides.
+

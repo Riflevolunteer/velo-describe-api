@@ -1,6 +1,6 @@
 # Raleigh catalogs processed so far
 
-## 1973 Raleigh — `1973_raleigh_spec.csv` (9 bikes, 170 specs, 54 linked)
+## 1973 Raleigh — `1973_raleigh_spec.csv` (9 bikes, 170 specs, 55 linked)
 
 - Header "Weight." (trailing period) is mapped in BIKE_FIELD_LABELS.
 - This catalog motivated the single-word-title rule: Brooks B17N, Simplex
@@ -36,7 +36,7 @@
   names the scan. 165 -> 170 specs, still 54 linked. Not added: the
   Super Course Ladies DL 100L (in the p. 9 text, no spec column).
 
-## 1974 Raleigh — `1974_raleigh_spec.csv` (10 bikes, 187 specs, 67 linked)
+## 1974 Raleigh — `1974_raleigh_spec.csv` (10 bikes, 187 specs, 68 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1974-raleigh-catalogue.1190/
   (r74.pdf, 25 pages, img2pdf scan, no text layer; US edition, Raleigh
@@ -72,7 +72,7 @@
   its own label's hint word and none carries another's; all 14 loaded
   catalogs regenerate to unchanged counts.
 
-## 1975 Raleigh — `1975_raleigh_spec.csv` (10 bikes, 187 specs, 66 linked)
+## 1975 Raleigh — `1975_raleigh_spec.csv` (10 bikes, 187 specs, 68 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1975-raleigh-catalogue.1191/
   (r75.pdf, 24 pages, 150 ppi JPEG scan, no text layer; US edition;
@@ -105,7 +105,7 @@
   Criterium, Nervar, Maillard 13-26, Simplex Maxi, TTT Franco Belge / Track
   bend, Raleigh-branded parts. All loaded catalogs regenerate unchanged.
 
-## 1977 Raleigh — `1977_raleigh_spec.csv` (6 bikes, 95 specs, 20 linked)
+## 1977 Raleigh — `1977_raleigh_spec.csv` (6 bikes, 95 specs, 22 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1977-raleigh-catalogue.1345/
   (r.pdf, 24 pages, scan with no text layer; US edition, Raleigh / Rampar;
@@ -148,7 +148,7 @@
   Raleigh, Carlton and Sun. Transcribed into three CSVs, then reversed at
   the user's request before loading: not what they want in the DB.
 
-## 1982 Raleigh — `1982_raleigh_spec.csv` (6 bikes, 73 specs, 28 linked)
+## 1982 Raleigh — `1982_raleigh_spec.csv` (6 bikes, 73 specs, 29 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1982-raleigh-lightweights-racing-catalogue.993/
   (r.pdf, 9 pages, scan with no text layer; UK "The Raleigh Racing Formula"
@@ -177,7 +177,7 @@
   stated), Cinelli bars / stem (no model), Clement Ritmo. All loaded
   catalogs regenerate unchanged.
 
-## 1983 Raleigh — `1983_raleigh_spec.csv` (21 bikes, 462 specs, 94 linked)
+## 1983 Raleigh — `1983_raleigh_spec.csv` (21 bikes, 462 specs, 100 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1983-raleigh-racers-catalogue.1133/
   (16-page PDF, 100 ppi JPEG scan, no text layer; UK "Racers - The
@@ -225,7 +225,7 @@
   14-28 Ultra 6 stays unlinked (no Ultra-6 row goes past 26T), as do the
   bare 1982 "Sun Tour Ultra 6" values.
 
-## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 91 linked)
+## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 92 linked)
 
 - Source is a single scanned image on Sheldon Brown's Retro Raleighs site
   (catalogs/1985/pages/specifications.html), 19 per-model text blocks in
@@ -291,4 +291,45 @@
   and reloaded; 360 -> 371 specs, still 91 linked. Pursuit Gearing "14-36 -
   6 speed" vs Freewheel "14-30 - 6 speed" looks like a transcription slip;
   left, needs the scan.
+
+## Link-gap pass on the weakest categories — 2026-10-08
+
+Driven by the new `/linkCoverage` endpoint (Handlebars 9.5%, Tyres 12.8%,
+Rims 18.9%, Brake Levers 20.8%, Freewheel 21.5% before this pass). Raleigh
+gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
+
+- Freewheel "Campagnolo 15T" / "15T x 1/8\" Fixed" / "15 Tooth Fixed" on the
+  1973 / 1974 / 1975 Professional Track DL 175 -> 6380 Campagnolo 763
+  Sprocket (steel). The row is under Single Sprockets (same category
+  crossing as the Road Ace 600AX cassette); steel rather than 763/a
+  Superleggero because the spec says 1/8" and never says alloy, and 764
+  Record Pista is the 3/16" cog.
+- Handlebars "TTT Track Bend" (1975 Professional Track) -> 2753 3ttt Record
+  Competizione Track (Pista), dated to cover 1975; the only other 3ttt
+  track bar, Racing Team Service PISTA, is undated and the later line.
+- Rims "700 C Weinmann A 124 narrow, concave section alloy" (Competition
+  GS) and "...A124..." (Super Course), 1977 -> 7776 Weinmann A124 Super X,
+  the same row the 1982/83 entries use (it is the only A124, dated 1983).
+- Tyres "Clement Ritmo Tubular" (1982 Team Replica, 1983 Team Replica and
+  Road Ace) -> 6767 Clement Ritmo LTX 55, the only Ritmo row.
+- Freewheel "Sun Tour Wide Ratio 14-18-23-30-34T" (1983 Royal 10 / Royale
+  10) -> 2245 SunTour PT-5000 Perfect (5-speed). Judgment call: Perfect
+  was the touring line and the 1983 Rapide already links to Perfect; New
+  Winner was the racing block.
+- Handlebars "SR Royal special racing bend, alloy" (1985 Prestige, a road
+  bike) -> 7884 SR RY-978 Royal-978; the other Royal row (RY-RC) is the
+  track bar.
+- Also loaded in the same run: the 1983 Clubman "Sun Tour Ultra 6 Silver
+  13-...-24T" -> 2240 and Road Ace "Shimano 600AX Cassette" -> 1197
+  overrides committed earlier that day (38d64d9) but never loaded.
+- Left unlinked on purpose: 1982 "Sun Tour Ultra 6" (Clubman / Competition
+  / Rapide / Record Ace 12) — the 1983 catalogue puts these same models on
+  three different blocks (New Winner, Perfect, 600AX), so the bare 1982
+  text is undecidable; "G.B. Maes Alloy Engraved/Embossed" (1973-75
+  Professional / Team Professional) — the two with-ferrule GB Maes rows
+  differ only by ferrule shape; "13/26T Maillard 6 speed" (1974/75
+  Professional Mk IV) — every Maillard 6-speed row is dated 1980+; "Dia-Compe
+  161 / 164", "Kusuki WP-B / WPR-B", "Araya SP-30", "Vredestein 700 x 20C
+  Racer", "Raleigh Maes Alloy" (18 bikes; only a bare 1980 Raleigh bar row)
+  — no DB row.
 
