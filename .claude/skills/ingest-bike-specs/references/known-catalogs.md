@@ -15,6 +15,7 @@ that touched more than one brand) live separately:
 - [known-catalogs/kalkhoff.md](known-catalogs/kalkhoff.md) — Kalkhoff (1 entry)
 - [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (1 entry)
 - [known-catalogs/colnago.md](known-catalogs/colnago.md) — Colnago (2 entries)
+- [known-catalogs/derosa.md](known-catalogs/derosa.md) — De Rosa (1 entry)
 - [known-catalogs/falcon.md](known-catalogs/falcon.md) — Falcon (2 entries)
 - [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (1 entry)
 - [known-catalogs/zeus.md](known-catalogs/zeus.md) — Zeus (1 entry)

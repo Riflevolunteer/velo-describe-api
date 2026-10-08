@@ -107,10 +107,19 @@ function capitalize(word) {
   return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
 }
 
+// Brands whose display name isn't just the capitalized filename token (the
+// pattern allows only letters, so multi-word names lose their space). The
+// bike_brand title and data_source label are both derived from this, so a
+// re-run must produce the same spelling or it mints a duplicate brand.
+const BRAND_NAMES = {
+  derosa: 'De Rosa',
+};
+
 function parseFilename(filename) {
   const m = filename.match(FILENAME_PATTERN);
   if (!m) return null;
-  return { year: m[1], brand: capitalize(m[2]) };
+  const token = m[2].toLowerCase();
+  return { year: m[1], brand: BRAND_NAMES[token] || capitalize(token) };
 }
 
 // Minimal RFC4180-style CSV parser: handles quoted fields with embedded
@@ -804,6 +813,8 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // c. 1984 De Rosa (ebykr scan).
+    'campagnolo c record': null, // Delta not shipping; C-Record groups were delivered with Super Record brakes (as Cinelli / Colnago)
     // 1978 Raleigh (US, ebykr scan).
     'weinmann 605 alloy side pull with wheel guides': 1133, // Competition GS: Weinmann AG 605 (incised lettering, cap nut), the 605 variant dated 1978-80
     'raleigh weinmann short reach alloy center pull': 1138, // Super Course: Weinmann AG Raleigh 610, the short-reach Raleigh centre-pull the 1977 Super Course names as 610
@@ -1095,6 +1106,8 @@ const COMPONENT_OVERRIDES = {
     'nervar cotterless 40 52 alloy chainwheel rings with alloy guard': 1653, // Nervar (3-pin, alloy/cotterless)
   },
   Saddles: {
+    // c. 1984 De Rosa (ebykr scan).
+    'selle italia super turbo or turbo': null, // C Record: either/or; the matcher hit the 1992 Super Turbo row
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'selle italia turbo junior': null, // Bambina: a smaller junior model; the matcher hits the adult Turbo
     'concor or rolls': null, // 1986 Colnago either/or spec; don't pick one
@@ -1261,6 +1274,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // c. 1984 De Rosa (ebykr scan).
+    'campagnolo c record': 212, // 0118065, C-Record first generation (1985-86), as the Cinelli Record Corsa / Colnago C-Record 180 calls
     // 1979 Peugeot: the MAFAC 1976 catalogue names its forged racing lever "poignée course".
     'mafac course': 357, // MAFAC Course 419 / 429, Competition (the catalogue's CB/CS dural racing lever)
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
@@ -1394,6 +1409,8 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // c. 1984 De Rosa (ebykr scan).
+    'regina cx s': 1384, // Regina CX / CX-S (1980-90), as the 1986 Cinelli CXS
     // 1978 Raleigh (US, ebykr scan).
     // Extra 50 Oro (1970-80) for the 1978 Professional Mk V, as the 1973-75 Raleighs; the undated Oro BX from 1981 keeps the 1986 Cinelli pick.
     'regina oro': [{ to: 1980, id: 1382 }, { from: 1981, id: 1380 }], // Regina Extra 50 Oro / Regina Oro BX

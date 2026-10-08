@@ -326,3 +326,15 @@ on their first user rather than on the DB dates:
 Regression over all 20 loaded catalogues: one change, the 1982 Raleigh Gran
 Sport brakes (see raleigh.md), which was a missing link, not a moved one.
 
+## Multi-word brand names from the filename (2026-10-09)
+
+`FILENAME_PATTERN` allows only letters in the brand token, and
+`parseFilename` capitalised it, so `1984_derosa_spec.csv` loaded as brand
+"Derosa" with a "1984 Derosa catalogue" source. Added `BRAND_NAMES` in the
+generator (token -> display name, currently `derosa` -> "De Rosa") and
+fixed the loaded rows by one-off UPDATE. Any future brand whose name has a
+space or internal capital (Bottecchia is fine; "Le Cyclo", "Dawes Galaxy"
+style names are not) needs an entry there before its first load, since
+bike_brand.title and the data_source label both derive from it and a
+mismatch on re-run mints a duplicate brand.
+
