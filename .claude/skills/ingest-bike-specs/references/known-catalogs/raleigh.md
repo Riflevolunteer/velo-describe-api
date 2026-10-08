@@ -141,6 +141,58 @@
   row); IRC Featherlight, SR 5RGII, SunTour bar-end / power shifters.
   All loaded catalogs regenerate unchanged.
 
+## 1978 Raleigh — `1978_raleigh_spec.csv` (7 bikes, 140 specs, 35 linked)
+
+- Source: ebykr.com, "Ride With the Winner: Team Raleigh" US catalogue
+  (https://ebykr.com/library/raleigh-1978-catalog-ride-with-the-winner-team-raleigh-united-states/),
+  six scans: cover, contents, printed pp. 3-5 (Professional Mark V,
+  Competition G.S., Super Course model pages) and p. 27 Technical
+  Specifications grid; `data_source` 145. Model pages 6-12 are not
+  scanned, so Super Grand Prix, Grand Prix, Record Ace and Record FFS/PPS
+  come from the grid alone. Transcribed by hand (2026-10-08) from the
+  grid, cross-checked with ebykr's transcription and the three model
+  pages (they agree; the grid adds Atom 440 pedals for the Super Course).
+- Scope as 1977: Raleigh derailleur lightweights only. Not added: Rampar
+  R Four / R Two / R 1027 (grid columns 8-10). Titles kept identical to
+  1977 ("Professional Mk V", "Competition GS") so the bikes key as the
+  same models in a new year. Grid rows Wheel Base / Frame Angles folded
+  into Extras; Derailleur row split into Front / Rear / Shifters.
+- Overrides (1978 Raleigh block in the generator): Chains 'regina oro'
+  ranged { to 1980: 1382 Extra 50 Oro, from 1981: 1380 Oro BX } — the
+  matcher had hit the undated Oro BX, and the range keeps the 1986
+  Cinelli on it; 'shimano uniglide' -> 7450 CN-UG20; RD 'sun tour
+  cyclone gt' -> 4738 RD-1800, 'raleigh sun tour vgt' -> 4705 RD-1500
+  V-GT Luxe v2 (1978-82), 'raleigh sun tour seven gt' -> 7788 RD-2000,
+  'shimano positron' ranged { to 1979: null, from 1980: 4525 } (1978
+  undecidable between Positron-II / EM / 400; the matcher exact-hit the
+  bare 1980 velobase row, which the 1983 Silhouette keeps); Shifters
+  'positron stem shifters' -> 7436 LC-410; Brakes 'weinmann 605 ... wheel
+  guides' -> 1133 (the 605 variant dated 1978-80), 'raleigh weinmann
+  short reach alloy center pull' -> 1138 Raleigh 610 (named as 610 on the
+  1977 Super Course); Cranksets 'campagnolo nuovo record cotterless 42
+  51t' -> 1496, 'campagnolo gran sport cotterless 42 52t 170mm' -> 1472
+  0304 (as the 1979 Colnago; row dated from 1980 — 1977 left it
+  unlinked), 'shimano ffs 40 52t 165mm' -> 1777 FFS; Freewheels Perfect
+  14/28 and 14-34 -> 2245 PT-5000 (as 1983 Royal); Hubs Nuovo Record /
+  Gran Sport / Atom small flange Q.R. -> 3259 / 3256 / 3183; Seat Posts
+  Record / Gran Sport 27.2mm -> 5749 / 5734; Rims A124 -> 7776; Pedals
+  'atom 440' -> 3662 (kept on the velobase row the 1973-77 Raleighs and
+  1974/75 Motobecanes link; 7246 "Maillard Atom 440" from the Maillard
+  catalogue is a duplicate to merge on the component side).
+- Matcher picks checked: Record side pull 573 pre-CPSC (ranged to 1978),
+  Nuovo Record FD 2299 1052/NT (1978-82), RD 4125 v3, Gran Sport 2276 /
+  4085 / 3688, Super Leggera Strada pedals 3709, Brooks Professional 5303,
+  Team Special 5304 (row dated from 1981, as the 1974/75 picks), G.B. Biba
+  6537.
+- Left unlinked: Compe V front x5 (2602 1974-79 and 2603 1970-84 both
+  fit; same as 1977), "Campagnolo down tube controls" (1013/5-6, 1014
+  later, 1014 milled all fit 1978), Raleigh/Shimano 400 front, Normandy
+  large flange Q.R. (Sport vs Luxe Competition), Brooks CR3 (no row),
+  Mavic Sprint, Raleigh/SR cranks / stems / posts, Raleigh tyres and
+  pedals, bare tooth-count freewheels, Shimano 14-28T and small-flange
+  hubs, handlebar-end / stem power shifters.
+- Regression: all 23 loaded catalogues unchanged (1,526 links).
+
 ## 1976 Raleigh UK brochure — not loaded
 
 - https://www.retrobike.co.uk/archive/1976-raleigh-catalogue.351/ is a

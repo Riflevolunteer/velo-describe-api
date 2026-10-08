@@ -556,6 +556,13 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // 1978 Raleigh (US, ebykr scan).
+    'sun tour cyclone gt': 4738, // Super Course: SunTour 2812 99 01 / RD-1800, Cyclone GT (1976-82)
+    'raleigh sun tour vgt': 4705, // Super Grand Prix / Grand Prix: RD-1500 V-GT Luxe version 2 (1978-82); v1 ended 1976
+    'raleigh sun tour seven gt': 7788, // Record Ace: SunTour RD-2000, Seven GT (1978-85)
+    // Record FFS/PPS: the matcher exact-hits a bare velobase "Shimano Positron" (1980). The 1978 Positron could be the
+    // DG-200 Positron-II, DG-210 EM or DG-300 Positron-400 and the sheet says only "Positron", so no link.
+    'shimano positron': [{ to: 1979, id: null }, { from: 1980, id: 4525 }], // from 1980 keeps the 1983 Raleigh Silhouette on the bare velobase row
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
     'campagnolo record': [{ from: 1970, to: 1981, id: 4125 }, { from: 1982, to: 1984, id: 4126 }, { from: 1985, to: 1987, id: 4127 }], // 1020/A Nuovo Record v3 / v4 / v5 (DB dates)
@@ -697,6 +704,10 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1978 Raleigh (US, ebykr scan).
+    'campagnolo nuovo record small flange qr': 3259, // Professional Mk V: 1034 Record (Low Flange)
+    'campagnolo gran sport small flange qr': 3256, // Competition GS: 1006 Gran Sport (DB's only Gran Sport hub; see 1985 Bianchi note)
+    'atom small flange qr': 3183, // Super Course: Atom (low flange aluminum), as 1977
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'campagnolo nuovo record 36h': 3259, // Centenario: 1034 Record (Low Flange), as the bare Nuovo Record entry
     'campagnolo record 32h': 3260, // Super Leggera: 1035 Record (high flange), as the bare 'campagnolo record' range
@@ -793,6 +804,9 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1978 Raleigh (US, ebykr scan).
+    'weinmann 605 alloy side pull with wheel guides': 1133, // Competition GS: Weinmann AG 605 (incised lettering, cap nut), the 605 variant dated 1978-80
+    'raleigh weinmann short reach alloy center pull': 1138, // Super Course: Weinmann AG Raleigh 610, the short-reach Raleigh centre-pull the 1977 Super Course names as 610
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'campagnolo nuovo record bianchi engraved': [{ from: 1978, id: 572 }], // Centenario: 2040 Record post-CPSC, as the plain Nuovo Record range
     'campagnolo super record bianchi engraved': 583, // Super Leggera: 4061 v2 (1983-87)
@@ -979,6 +993,10 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1978 Raleigh (US, ebykr scan).
+    'campagnolo nuovo record cotterless 42 51t': [{ to: 1987, id: 1496 }], // Professional Mk V: 1049 Nuovo Record Strada v4
+    'campagnolo gran sport cotterless 42 52t 170mm': [{ from: 1978, id: 1472 }], // Competition GS: 0304 (Nuovo) Gran Sport, as the 1979 Colnago Export (row dated from 1980)
+    'shimano ffs 40 52t 165mm': 1777, // Record FFS/PPS: Shimano FFS (Front Freewheel System); FC-FF33 row starts 1980
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'campagnolo gran sport 170 mm 52x42t': 1472, // Squadra: 0304 (Nuovo) Gran Sport 144 BCD
     'campagnolo nuovo record bianchi engraved 170 mm 53x42t': 1496, // Centenario: 1049 Nuovo Record Strada v4
@@ -1188,6 +1206,8 @@ const COMPONENT_OVERRIDES = {
     'gb forged alloy': 6533, // GB Forged
   },
   Shifters: {
+    // 1978 Raleigh (US, ebykr scan).
+    'positron stem shifters': 7436, // Record FFS/PPS: Shimano LC-410 / SL-P211, Positron Stem (1977-81)
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     // Substring-hits the generic "Shimano 600" row; the AX lever is one of
     // four SL-63xx variants (clamp / braze-on A / B / oval) and the table doesn't say.
@@ -1261,6 +1281,10 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    // 1978 Raleigh (US, ebykr scan).
+    // Two Atom 440 rows exist (velobase 3662, 1970-80; Maillard 1978/79 catalogue 7246). Keep the one the 1977 Super Course
+    // already links until the component side merges them.
+    'atom 440': 3662, // Super Course: Atom 440
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'campagnolo superleggero': 3709, // Super Leggera / Campionissimo: 1037/a Record Strada Superleggeri (SL)
     // 1986 Colnago Catalogo generale group fan-outs.
@@ -1318,6 +1342,9 @@ const COMPONENT_OVERRIDES = {
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
+    // 1978 Raleigh (US, ebykr scan).
+    'campagnolo record 272mm': [{ to: 1985, id: 5749 }], // Professional Mk V: 1044 Record
+    'campagnolo gran sport 272mm': 5734, // Competition GS: 3800 Gran Sport
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'sakae p 5': 5857, // Speciale-II / Randonneur 700 / Rekord 26 / Bambina: SR CT-P5, Custom-P5 (Sakae Laprade)
     'sakae p 3': 5855, // Strada: SR CT-P3, Custom-P3 (melt forging)
@@ -1367,6 +1394,10 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1978 Raleigh (US, ebykr scan).
+    // Extra 50 Oro (1970-80) for the 1978 Professional Mk V, as the 1973-75 Raleighs; the undated Oro BX from 1981 keeps the 1986 Cinelli pick.
+    'regina oro': [{ to: 1980, id: 1382 }, { from: 1981, id: 1380 }], // Regina Extra 50 Oro / Regina Oro BX
+    'shimano uniglide': 7450, // Record FFS/PPS: Shimano QA-200 / CN-UG20, Uniglide-II (1977-89), as the 1983 Road Ace
     // 1979 Colnago.
     'regina extra record': 1381, // Regina Extra 50 Record (1970-80)
     // 1986 Colnago. Everest chains were made by Fossati & C., so the catalogue's "Fossati Racing Cromo" is the Everest Racing Cromo row.
@@ -1418,6 +1449,9 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
   },
   Freewheels: {
+    // 1978 Raleigh (US, ebykr scan).
+    'raleigh sun tour perfect 14 28t': 2245, // Super Course: SunTour 1100-1106 / PT-5000, Perfect (5-speed)
+    'raleigh sun tour perfect 14 34t': 2245, // Super Grand Prix / Grand Prix / Record Ace, as the 1983 Royal
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'regina cx 13 21t 6 speed': 2168, // Centenario: Regina CX (6 speed), as the 1987 Bianchi 'regina cx 13 23t'
     'regina cx 13 23t 6 speed': 2168, // Super Leggera
@@ -1491,6 +1525,8 @@ const COMPONENT_OVERRIDES = {
     'clement pista tubular': 6765, // Clement Pistard
   },
   Rims: {
+    // 1978 Raleigh (US, ebykr scan).
+    'weinmann 700c alloy concave a124 narrow section': 7776, // Competition GS / Super Course: A124 Super X, as 1977
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'martano strada (tubular) araya 20a smoked (700c)': null, // Speciale-II either/or build spec; don't pick one
     // 1986 Colnago Raid / Gentleman Sport / Lady Sport: the only Elite Aero row.
