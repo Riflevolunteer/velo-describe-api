@@ -229,7 +229,7 @@
   stated), Cinelli bars / stem (no model), Clement Ritmo. All loaded
   catalogs regenerate unchanged.
 
-## 1983 Raleigh — `1983_raleigh_spec.csv` (21 bikes, 462 specs, 100 linked)
+## 1983 Raleigh — `1983_raleigh_spec.csv` (21 bikes, 462 specs, 101 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1983-raleigh-racers-catalogue.1133/
   (16-page PDF, 100 ppi JPEG scan, no text layer; UK "Racers - The
@@ -276,6 +276,69 @@
   14T-start Perfect US-6500; US-6000 is dated 1978 only). Record Ace's
   14-28 Ultra 6 stays unlinked (no Ultra-6 row goes past 26T), as do the
   bare 1982 "Sun Tour Ultra 6" values.
+
+## 1984 Raleigh — `1984_raleigh_spec.csv` (19 bikes, 435 specs, 94 linked)
+
+- Source: ebykr.com, "Raleigh 1984 Catalog — Racers: The Race-Bred
+  Raleighs" (https://ebykr.com/library/raleigh-1984-catalog-racers-the-race-bred-raleighs/),
+  16 scans, UK edition, TI Raleigh Ltd; `data_source` 148. Four Technical
+  Specifications grids, pp. 5, 9, 12, 14, all legible at the "-scaled"
+  (1782 x 2560) size. Transcribed by hand (2026-10-09) from ebykr's
+  transcription checked grid by grid against the scans; one correction:
+  Sirocco freewheel reads "PN6000" in the scan, not "Pro6000".
+- Scope as 1983: every grid column. Team Replica 12, Road Ace 12,
+  Competition 12, Corsa 12, Sirocco 12 (p. 5); Record Sprint 12, Quasar 12,
+  Pulsar 10, Team Cadet 10, Winner 5 & 10, Sprint 5 & 10 (p. 9); Classic
+  15, Record Ace 12, Royal 10, Clubman 12, Zenith 10 (p. 12); Stratos 10,
+  Weekender 15, Medale 5 & 10 (p. 14). Not added: p. 15 framesets (Team
+  Professional, Gran Course, Gran Tour, 753 Pro Super, Time Trials
+  Special), gear-ratio rows, the ladies' versions (in the separate Raleigh
+  Collection catalogue). Model titles match the 1983 file where the model
+  carried over (Team Replica 12, Road Ace 12, Competition 12, Record Ace
+  12, Royal 10, Clubman 12, Zenith 10, Stratos 10, Medale 5 & 10, Record
+  Sprint 12, Winner 5 & 10).
+- CSV layout as 1983 (Wheels -> Rims / Hubs / Spokes, Derailleur ->
+  Front / Rear / Shifters, Mudguards -> Fenders, tape and cable colour ->
+  Cable & Tape, Frame Angles appended to Frame Material, toe clips out of
+  Extras). Gear ratios dropped.
+- Matcher errors nulled: Pulsar "Maillard Alloy" (hit a Roval by Maillard
+  rear hub), three "Selle Royal Aero ..." (hit the bare Selle Royal brand
+  row 5521; no Aero model row), Weekender "Huret ECO Duopar" (hit the plain
+  Eco 4301; now 4277 Duopar Eco Version 1).
+- Overrides added (1984 Raleigh block): Headsets 'shimano 600 ex with aero
+  cover' -> 3090 HP-6207; Brakes Weinmann 405 -> 1117, Shimano 105 ->
+  958 BR-S105 Golden Arrow, 600 AX -> 965; FD Shimano 105 -> 2466, AR
+  (both spellings) -> 2620 FD-2500, 'sun tour arx' -> 2621; RD Shimano 105
+  -> 4452 RD-A105, Cyclone II -> 4742 RD-3500, Cyclone II GT -> 4743
+  RD-3700, AR -> 4725 RD-4200, 'sun tour arx' -> 4727, Eco Duopar -> 4277,
+  'huret titanium bodied duopar' -> 4398 Sachs Huret DuoPar (titanium)
+  (judgment: the DB's other Ti Duopars are the 1976 2600 series); Cranks
+  Nuovo Record 52/42 SR rings -> 1496, 600 AX -> 1787; Chains Z (four
+  spellings) -> 7821, Ultra 6 Narrow -> 7820, Uniglide Silver/Black ->
+  7450; Freewheels NW6000 -> 2238, PN6000 -> 7813, PN5000 -> 2245 PT-5000,
+  Ultra 6 13-24 -> 2240, Regina Oro 13-18T -> 2194, 600 AX Cassette
+  13-21 -> 1197; Hubs 600 AX -> 3532, 105 -> 3526, 'maillard competition
+  small flange alloy qr' -> 8136 (Maillard 1979 de-luxe competition
+  small-flange Q/R), 'maillard atom helicomatic qr black' -> 3387; Pedals
+  SP12 -> 3924; Saddles ISCA Tornado suede -> 5382; Seat Posts CTP5
+  (three wordings) -> 5857, CTP6 -> 5861, CTP3 -> 5855, 600 AX Aero ->
+  5886; Stems 'cinelli 1a' -> 6489; Handlebars Dura Ace Engraved Bend ->
+  2917; Rims A124 Eyeletted Black -> 7776; Tyres Vittoria Nuovo Pro ->
+  6893 (only Nuovo Pro row).
+- Matcher picks kept: Sedisport -> 1402 Sedisport Delta (1987 Bianchi
+  precedent), Sugino GS 1934 / PX 1957, Maillard Atom Q.R. -> 3386,
+  Helicomatic -> 3387, Brooks B17 -> 5315 Champion Standard, Huret ECO-S
+  -> 4301 Huret Eco, Tange MA60 3144, SR Apex 7901, Mavic GP4 5069.
+- Left unlinked: Weinmann 500 (three velobase variants), 605 (four), 610/750
+  and bare centre-pulls, Tange CMA60 / New Levin, Sugino DGT, Thun Gamma,
+  Shimano "Alloy" 105 crank and 105 cassette 13-24, Helicomatic freewheels
+  (no row), Sakae SP 362, Union 632, Michelin Club Tourist, Vredestein
+  Racer, Huret Club / Club AS front, Huret Eco-S front, Simplex, SR Custom
+  bars / stems, Cyclone II front (FD-2300 and FD-2400 both fit), bare
+  "Maillard Competition Q.R." (flange unknown), generic cells.
+- Regression: all 26 loaded catalogues unchanged except the 1983 Road Ace
+  "Shimano 600 EX with Aero Cover" headset, previously unlinked, now 3090
+  via the new key; regenerated and back-filled, 1983: 100 -> 101.
 
 ## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 92 linked)
 
