@@ -451,6 +451,132 @@ app.get('/searchBikes', function (req, res, next) {
   }
 });
 
+// Spec categories that describe the bike itself rather than name a part that
+// could exist in component_detail: there is no component_category for a frame
+// material, a lug pattern, a gearing count or an "Extras" line, so their
+// bike_spec rows can never carry a component_id. (Groupset / Components names
+// a component_group, not a component_detail row, and bike_spec only links to
+// the latter.) /linkCoverage reports these separately so they don't drag the
+// link-rate numbers down. Keep in step with bike_spec_label when labels change.
+const NON_LINKABLE_SPEC_LABELS = new Set([
+  'Frame Material', 'Fork', 'Lugs', 'Gearing', 'Toe Clips', 'Spokes',
+  'Cable & Tape', 'Fenders', 'Groupset / Components', 'Extras'
+])
+
+// Creating a GET route that reports how many bike_spec rows are linked to a
+// component_detail row: overall, per spec category (weakest first), per bike
+// brand and per brand x category, so the link-rate audit in TODO.md can be
+// re-run without walking /bikeBrands -> /bikesbybrand -> /bikedetail. Also
+// lists the most common unlinked value_text per linkable category with the
+// number of bikes carrying each, which is the worklist for the next catalogue
+// or COMPONENT_OVERRIDES pass; ?unlinked=N sets how many values per category
+// (default 10, max 50, 0 omits the list). Read-only aggregate SQL.
+app.get('/linkCoverage', function (req, res, next) {
+  const unlinkedLimit = req.query.unlinked === undefined ? 10 : Number(req.query.unlinked)
+  if (!Number.isInteger(unlinkedLimit) || unlinkedLimit < 0 || unlinkedLimit > 50) {
+    res.status(400).json({ error: 'unlinked must be an integer from 0 to 50' })
+    return
+  }
+
+  const query = (sql, params) => new Promise((resolve, reject) => {
+    connection.query(sql, params, (error, results) => error ? reject(error) : resolve(results))
+  });
+  // One decimal place; null rather than 0 when there is nothing to measure.
+  const pct = (linked, specs) => specs ? Math.round(linked / specs * 1000) / 10 : null
+  const weakestFirst = (a, b) => (a.pct ?? 101) - (b.pct ?? 101) || b.specs - a.specs
+
+  // Everything except the unlinked-value list is derived from this one
+  // brand x category GROUP BY: the per-category, per-brand and overall totals
+  // are just sums over it.
+  const cellsPromise = query(`SELECT bb.brand_id, bb.title as brand, bsl.label_id, bsl.title as label,
+                                     COUNT(bs.bike_spec_id) as specs, SUM(bs.component_id IS NOT NULL) as linked
+                                FROM bike_spec bs
+                                left join bike b on b.bike_id=bs.bike_id
+                                left join bike_brand bb on bb.brand_id=b.brand_id
+                                left join bike_spec_label bsl on bsl.label_id=bs.label_id
+                                group by bb.brand_id, bb.title, bsl.label_id, bsl.title`)
+  const bikesPromise = query('SELECT brand_id, COUNT(*) as bikes FROM bike group by brand_id')
+  // Distinct bikes rather than spec rows, so a value repeated across a bike's
+  // split compound cells doesn't count twice.
+  const unlinkedPromise = unlinkedLimit === 0 ? Promise.resolve([]) : query(
+    `SELECT label_id, label, value_text, bikes FROM (
+        SELECT bsl.label_id, bsl.title as label, bs.value_text, COUNT(DISTINCT bs.bike_id) as bikes,
+               ROW_NUMBER() OVER (PARTITION BY bsl.label_id ORDER BY COUNT(DISTINCT bs.bike_id) DESC, bs.value_text) as rn
+          FROM bike_spec bs
+          join bike_spec_label bsl on bsl.label_id=bs.label_id
+          where bs.component_id IS NULL and bsl.title not in (?)
+          group by bsl.label_id, bsl.title, bs.value_text
+     ) ranked where rn <= ? order by label_id, rn`, [[...NON_LINKABLE_SPEC_LABELS], unlinkedLimit])
+
+  Promise.all([cellsPromise, bikesPromise, unlinkedPromise]).then(([cellRows, bikeRows, unlinkedRows]) => {
+    // SUM() comes back from the mysql driver as a DECIMAL string.
+    const cells = cellRows.map(r => ({
+      brand_id: r.brand_id, brand: r.brand, label_id: r.label_id, label: r.label,
+      specs: Number(r.specs), linked: Number(r.linked),
+      linkable: !NON_LINKABLE_SPEC_LABELS.has(r.label)
+    }))
+
+    const addTo = (totals, cell) => {
+      totals.specs += cell.specs
+      totals.linked += cell.linked
+      if (cell.linkable) {
+        totals.linkable_specs += cell.specs
+        totals.linkable_linked += cell.linked
+      }
+      return totals
+    }
+    const emptyTotals = () => ({ specs: 0, linked: 0, linkable_specs: 0, linkable_linked: 0 })
+    const finishTotals = (t) => ({
+      ...t, pct: pct(t.linked, t.specs), linkable_pct: pct(t.linkable_linked, t.linkable_specs)
+    })
+
+    const overall = finishTotals(cells.reduce(addTo, emptyTotals()))
+
+    const byLabel = new Map()
+    const byBrand = new Map()
+    for (const cell of cells) {
+      if (!byLabel.has(cell.label_id)) byLabel.set(cell.label_id, { label_id: cell.label_id, label: cell.label, linkable: cell.linkable, specs: 0, linked: 0 })
+      const l = byLabel.get(cell.label_id)
+      l.specs += cell.specs
+      l.linked += cell.linked
+      if (!byBrand.has(cell.brand_id)) byBrand.set(cell.brand_id, { brand_id: cell.brand_id, brand: cell.brand, bikes: 0, ...emptyTotals() })
+      addTo(byBrand.get(cell.brand_id), cell)
+    }
+    for (const r of bikeRows) {
+      if (byBrand.has(r.brand_id)) byBrand.get(r.brand_id).bikes = Number(r.bikes)
+    }
+
+    const categories = [...byLabel.values()].filter(l => l.linkable)
+      .map(({ linkable, ...l }) => ({ ...l, unlinked: l.specs - l.linked, pct: pct(l.linked, l.specs) }))
+      .sort(weakestFirst)
+    const non_linkable_categories = [...byLabel.values()].filter(l => !l.linkable)
+      .map(({ linkable, ...l }) => l)
+      .sort((a, b) => b.specs - a.specs)
+    const brands = [...byBrand.values()].map(finishTotals)
+      .sort((a, b) => (a.linkable_pct ?? 101) - (b.linkable_pct ?? 101) || b.linkable_specs - a.linkable_specs)
+    const brandOrder = new Map(brands.map((b, i) => [b.brand_id, i]))
+    const brand_categories = cells.filter(c => c.linkable)
+      .map(({ linkable, ...c }) => ({ ...c, pct: pct(c.linked, c.specs) }))
+      .sort((a, b) => brandOrder.get(a.brand_id) - brandOrder.get(b.brand_id) || weakestFirst(a, b))
+
+    // Same weakest-first order as `categories`, so the first entry is the
+    // category most worth working on next.
+    const unlinkedByLabel = new Map()
+    for (const r of unlinkedRows) {
+      if (!unlinkedByLabel.has(r.label_id)) unlinkedByLabel.set(r.label_id, [])
+      unlinkedByLabel.get(r.label_id).push({ value_text: r.value_text, bikes: Number(r.bikes) })
+    }
+    const unlinked_values = unlinkedLimit === 0 ? undefined : categories
+      .filter(c => unlinkedByLabel.has(c.label_id))
+      .map(c => ({ label_id: c.label_id, label: c.label, values: unlinkedByLabel.get(c.label_id) }))
+
+    res.send({ overall, categories, non_linkable_categories, brands, brand_categories, unlinked_values })
+  }).catch((error) => {
+    console.error(error && error.message)
+    res.status(500).json({ error: error.message })
+  })
+});
+
 // eBay Sporting Goods > Cycling > Bicycle Components & Parts. Scopes every
 // search to this category so a generic part name (e.g. "Simplex") doesn't
 // pull in unrelated listings from other categories that happen to match the
