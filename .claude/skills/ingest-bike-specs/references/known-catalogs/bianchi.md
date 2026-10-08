@@ -276,3 +276,15 @@
   EX-17, FIR Tour / Pulsar, Vittoria Open Tubular Flash M19, Panaracer
   Smoke / Dart, Ritchey, Maxxis, Bianchi-branded tyres.
 
+## C-Record era fix on the 1987 catalogue — 2026-10-09
+
+- The bare 'campagnolo c record' overrides were flat on the 1985-86
+  first-generation rows (set during the 2026-10-05 re-link sweep to
+  preserve the original matcher hits). Ranging them for the 1989 De Rosa
+  showed the Mondiale and X4 on wrong-era rows: Rear Derailleur
+  "Campagnolo C Record" 4096 -> 4098 A010 Corsa Record 2nd gen (1987-89)
+  and Crankset "Campagnolo C Record 53/42T" 1483 -> 1482 C-Record
+  (1987-94), 4 rows, one-off UPDATE (crecord-era-fix.sql). Still 148
+  linked. Levers, FD, hubs, headset, pedals, seatpost, shifters (5970,
+  1987-91) were already period-correct.
+

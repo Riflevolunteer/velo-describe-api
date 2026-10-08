@@ -338,3 +338,23 @@ style names are not) needs an entry there before its first load, since
 bike_brand.title and the data_source label both derive from it and a
 mismatch on re-run mints a duplicate brand.
 
+## C-Record overrides ranged (2026-10-09)
+
+Bare "Campagnolo C-Record" values were linked by flat overrides to the
+first-generation rows (RD 4096 0102050 1985-86, crank 1483 1985-86, levers
+212 0118065 1985-86, shifters 5970 Retro-Friction 1987-91) whatever the
+catalogue year. Ranged on the DB dates for the 1989 De Rosa:
+
+- Rear Derailleurs: to 1986 -> 4096; 1987-89 -> 4098 A010 Corsa Record 2nd
+  gen; from 1990 -> 4133 R010.
+- Cranksets ('campagnolo c record' and the 1987 Bianchi 'campagnolo c
+  record 53 42t'): to 1986 -> 1483; from 1987 -> 1482.
+- Brake Levers: to 1986 -> 212; from 1987 -> 214 Corsa Record (Power Grade).
+- Shifters: to 1986 -> 5969 C-Record Friction; from 1987 -> 5970.
+- New: Brakes 'campagnolo c record delta' -> 560 Delta C-Record (1986-93).
+
+Loaded rows moved by one-off UPDATE: 1987 Bianchi Mondiale / X4 RD and
+crank (4 rows), 1984 De Rosa shifters (1 row). The 'campagnolo c record
+180' (1986 Colnago) and 'campagnolo record corsa' (1986 Cinelli) keys stay
+flat on the first-generation rows: both catalogues are 1986.
+

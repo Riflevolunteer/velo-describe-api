@@ -588,7 +588,9 @@ const COMPONENT_OVERRIDES = {
     'sun tour volante alloy': 4708, // Stratos / Europa: SunTour RD-2600, Volante
     'shimano at10 x sis': 7720, // 1993 Bianchi "AT10-X" spelling of the AT10 SIS entry below
     // 1987 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
-    'campagnolo c record': 4096, // Campagnolo 0102050, C-Record (first generation)
+    // Ranged on the DB rows (2026-10-09, 1989 De Rosa): first gen 1985-86, A010 2nd gen 1987-89, R010 1990-91. The 1987 Bianchi
+    // Mondiale / X4 rows had been left on the first gen; fixed by one-off UPDATE.
+    'campagnolo c record': [{ to: 1986, id: 4096 }, { from: 1987, to: 1989, id: 4098 }, { from: 1990, id: 4133 }],
     // SunTour AccuShift leaflets (c. 1987): pin retitled 1987 Bianchi links
     'suntour cyclone 7000': 4740, // SunTour RD-CL10-SS, Cyclone 7000
     'suntour alpha 5000': 4721, // SunTour RD-5000-SS, alpha-5000
@@ -813,6 +815,8 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1989 De Rosa 35° Anniversario ("Record-C Delta").
+    'campagnolo c record delta': 560, // Campagnolo Delta C-Record (1986-93)
     // c. 1984 De Rosa (ebykr scan).
     'campagnolo c record': null, // Delta not shipping; C-Record groups were delivered with Super Record brakes (as Cinelli / Colnago)
     // 1978 Raleigh (US, ebykr scan).
@@ -1004,6 +1008,9 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // C-Record crank: 306/101 1985-86, then the 1987-94 row. The matcher exact-hit the first on every year; 1987 Bianchi fixed by one-off UPDATE.
+    'campagnolo c record': [{ to: 1986, id: 1483 }, { from: 1987, id: 1482 }],
+    'campagnolo c record 53 42t': [{ to: 1986, id: 1483 }, { from: 1987, id: 1482 }], // 1987 Bianchi Mondiale / X4
     // 1978 Raleigh (US, ebykr scan).
     'campagnolo nuovo record cotterless 42 51t': [{ to: 1987, id: 1496 }], // Professional Mk V: 1049 Nuovo Record Strada v4
     'campagnolo gran sport cotterless 42 52t 170mm': [{ from: 1978, id: 1472 }], // Competition GS: 0304 (Nuovo) Gran Sport, as the 1979 Colnago Export (row dated from 1980)
@@ -1243,7 +1250,7 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi Limited/Squadra "600 SIS": SL-6208 is now catalogue-dated
     // 1986-87 as the 600EX SIS lever (was a 1980 velobase date, so unlinked).
     // 1987 Bianchi. The catalog's "levers" are the down-tube shifters.
-    'campagnolo c record': 5970, // Campagnolo C-Record Retro-Friction (2nd Gen.)
+    'campagnolo c record': [{ to: 1986, id: 5969 }, { from: 1987, id: 5970 }], // C-Record Friction (1985-91) / Retro-Friction 2nd gen (1987-91); 1984 De Rosa row fixed by one-off UPDATE
     'c record levers': 5970,
     'shimano 105 sis': 6130, // Shimano SL-1050, 105 (6sp)
     'suntour cyclone 7000 barcon': 6280, // SunTour Cyclone 5000/7000/9000
@@ -1275,7 +1282,7 @@ const COMPONENT_OVERRIDES = {
   },
   'Brake Levers': {
     // c. 1984 De Rosa (ebykr scan).
-    'campagnolo c record': 212, // 0118065, C-Record first generation (1985-86), as the Cinelli Record Corsa / Colnago C-Record 180 calls
+    'campagnolo c record': [{ to: 1986, id: 212 }, { from: 1987, id: 214 }], // 0118065 first gen (1985-86, as Cinelli / Colnago) / Corsa Record with Power Grade (1987-91)
     // 1979 Peugeot: the MAFAC 1976 catalogue names its forged racing lever "poignée course".
     'mafac course': 357, // MAFAC Course 419 / 429, Competition (the catalogue's CB/CS dural racing lever)
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.

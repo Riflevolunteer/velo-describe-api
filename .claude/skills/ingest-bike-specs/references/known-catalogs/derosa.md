@@ -41,3 +41,35 @@
   chain, "Regina CX-S or Campagnolo" and "Regina or Campagnolo" freewheels,
   Super Record hubs (only the 1974-75 Ti-spindle rows exist), frame prose.
 - Regression: all 24 loaded catalogues unchanged (1,561 links).
+
+## 1989 De Rosa — `1989_derosa_spec.csv` (3 bikes, 34 specs, 10 linked)
+
+- Source: ebykr.com, "De Rosa 1989 Catalog — Frames and Bicycles, with the
+  35° Anniversario Limited Edition"
+  (https://ebykr.com/library/de-rosa-1989-catalog-frames-and-bicycles-35-anniversario/),
+  8 PNG scans, English, GITA Sporting Goods (Charlotte NC) US dealer
+  catalogue; `data_source` 147. Spec blocks on pp. 4 (35° Anniversario),
+  7 (Professional SLX) and 8 (Pista). Transcribed by hand (2026-10-09),
+  checked against the scans. Not loaded: the Athena / Chorus / Croce
+  d'Aune pages (group names over photos, no parts), the Columbus MAX
+  mountain frame (prose mention only).
+- Bikes: 35° Anniversario (complete, "Campagnolo Record-C Delta with
+  pantographed caliper cover", 3T bar and pantographed stem, Campagnolo
+  rims, Vittoria tyres; Pearl White, 47-64 cm), Professional SLX
+  (frameset; complete-bike option with Nisi rims, 3T bar/stem, Vittoria,
+  "any Campagnolo or Shimano gruppo" kept in Groupset / Components),
+  Pista (frameset, Columbus SL, pista dropouts, 48-62 cm). Group fanned
+  out as in 1984, with Brakes "Campagnolo C-Record Delta".
+- Links: all second-generation C-Record via the newly ranged overrides
+  (see cross-catalog-notes "C-Record overrides ranged"): RD 4098 A010
+  Corsa Record 2nd gen (1987-89), crank 1482 (1987-94), levers 214 Corsa
+  Record Power Grade, shifters 5970 Retro-Friction 2nd gen, brakes 560
+  Delta C-Record via new 'campagnolo c record delta'; FD 2283, hubs 3241,
+  headset 2954, pedals 3693, seatpost 5737 as before.
+- Left unlinked: bare "Campagnolo" rims (Delta Strada Chromium, Lambda,
+  Sigma, Omicron all current in 1989), Nisi, 3ttt bars and stems, Vittoria,
+  the "any gruppo" cell, frame prose.
+- Same session: the 1984 C Record's shifters re-pointed 5970 -> 5969
+  C-Record Friction (1985-91) by one-off UPDATE (crecord-era-fix.sql),
+  since the Retro-Friction 2nd gen row starts 1987.
+
