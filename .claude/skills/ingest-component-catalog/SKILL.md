@@ -119,6 +119,16 @@ them). Classify each catalog item as:
     where they distinguish genuinely different specs (see above).
   - Record a rewrite's old title in `known-catalogs.md` (as with deleted
     rows), so a later source using the old name can still be matched.
+  - **A retitle must also rewrite `search_text`** to `"<new title>
+    <category>"` in the same guarded UPDATE. `/searchComponents` matches
+    only on `search_text`, never on `title`, so a retitled row whose
+    `search_text` still carries the old name is unfindable by its new
+    name (the 2026-10-09 sweep found 37 such rows across the 3ttt, Regina,
+    Shimano and SunTour ingests, e.g. "3ttt AR84, Mod. 84" indexed as
+    "3ttt Record 84 Stems"). Don't append the old name as an alias:
+    `search_text` is also the eBay query string, where extra words narrow
+    results. The old name lives in `known-catalogs.md` and, if useful,
+    the description.
 - **Genuinely missing** — only for categories that exist. Confirm by part
   number and by name before inserting.
 - **Apparent duplicates, placeholders, or rows the catalog shows don't
@@ -153,7 +163,9 @@ Write one `.sql` file per catalog in the scratchpad, then
   re-run is a no-op.
 - Inserts mirror an existing row of the same brand/category: `brand_id`,
   `category_id`, `group_id` (look up `component_group` by title),
-  `search_text` = `"<title> <category>"`.
+  `search_text` = `"<title> <category>"`. The same applies to every row
+  whose `title` changes (see the retitle bullet in step 3): set
+  `search_text` alongside `title` and `source_ref` in that UPDATE.
 - **Provenance**: look up this catalogue's `data_source` row —
   `SELECT source_id FROM data_source WHERE source_type = 'catalogue' AND label = '<label>'`
   (label convention: `"<Manufacturer> <short catalogue name> (<year>)"`, e.g.
