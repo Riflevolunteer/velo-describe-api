@@ -532,6 +532,12 @@
   page_62,rear_cover}`; image page_NN = printed page NN). Rear cover
   "(c) Dec. 1980 by Shimano Industrial Co., Ltd. 1280 C1/15M Printed in
   Japan. XBC NP". The 1981 model-year catalogue.
+- Duplicate copy, checked 2026-10-10 and not loaded: the "SHIMANO 1981"
+  page on labibleduvelocataloguesshimano.blogspot.com hotlinks 43 scans
+  (pages 00-40, 62, 63; pp. 41-61 missing) from bibibike.forumserv.com,
+  same cover and the identical rear-cover imprint, at 1024px — a partial,
+  lower-resolution copy of this printing with nothing the disraeligears
+  set lacks.
 - **First catalogue with the 1980s code system** (RD-7200, SL-QP10,
   HB-AQ11...). It prints "Old No." for EF-100 -> FD-AT11, DD-100F ->
   RD-LK10, QA-200 -> CN-UG20, LB-170 -> SL-QP10, LD-500 -> SL-BC10 and
@@ -727,6 +733,13 @@
   MF-FF61 FF freewheel; RD-PF10 / RD-PF20 Positron-FH; SL-PF13 PPS stem
   lever. Groups: DA AX 100, 600EX 46, Deore 158, DA 7100 137, 600 93,
   Positron 224; chains and FF ungrouped.
+- Duplicate copy, checked 2026-10-10 and not loaded: the "SHIMANO 1982"
+  page on labibleduvelocataloguesshimano.blogspot.com carries the same 44
+  spreads ("SHIMANO CYCLE CATALOG 1982 (1-44).jpg") at 2048px — higher
+  resolution than the 1200px set used here, same cover, same table of
+  contents (37 pages), identical imprint "0182 F1/37M ... XBC IZM". Worth
+  using instead of the Downloads copy if any 1982 page ever needs
+  re-reading.
 - Retitled: 3571 "HF-7261" -> FH-7261 (small flange 6-sp silver); 3541
   "Adamas AX (?)" hubs -> FH-AD61 / FH-AD65 1982-83; 1800 "Adamas AX, FF
   System" crank -> FC-FF33, FF System; 1404 Link-Lock -> CN-6130.
@@ -1099,7 +1112,18 @@
   (images `..._-_scan_1..36`). Rear cover "(c) Aug. 1988 by Shimano
   Industrial Co., Ltd. 1088 Printed in Japan XBC IZM"; front "English (U)".
   1989 model year, full range (the same month's Exage manual is
-  `data_source` 78). First Integrated-8 SIS (Dura-Ace RD / SL-7402,
+  `data_source` 78).
+- Duplicate copy, checked 2026-10-10: the "SHIMANO 1989" page on
+  labibleduvelocataloguesshimano.blogspot.com has 17 of these spreads at
+  2048px ("SHIMANO CATALOG 1989 (1-17)", same imprint) plus two separate
+  brochures with the same Aug 1988 imprint ("0688 ... XBC IZM"): a 7-page
+  Deore XT-II brochure (M732 / M730 codes) and a 4-page Deore II brochure
+  (MT62 / MT60 codes). All 33 brochure codes already in the DB with
+  matching specs; no data_source created for them. Two misses from this
+  pass fixed on their evidence: 7228 HP-MT60 and 3547 HB-MT60 (listed on
+  the Deore II / 6-speed Deore spread and in the Deore II brochure as
+  HB-MT60-F) year_to 1988 -> 1989.
+- First Integrated-8 SIS (Dura-Ace RD / SL-7402,
   FH-7402, CS-7400-8), Hyperglide (Deore XT-II M732, Deore II MT62) and
   7-speed 105 (1051). Exage pages show bikes only. Dropped vs Dec 1987:
   Light Action L5xx, Z-Series derailleurs, BR-L490 / L570, BL-L330 / L331,
