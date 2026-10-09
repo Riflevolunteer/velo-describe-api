@@ -1144,6 +1144,11 @@ const COMPONENT_OVERRIDES = {
     'nervar cotterless 40 52 alloy chainwheel rings with alloy guard': 1653, // Nervar (3-pin, alloy/cotterless)
   },
   Saddles: {
+    // 1993 Bianchi MTBs: "Ritchey Comp leather" is the Logic Comp, new for
+    // 1992 (Italian-made leather, spring-steel rails); the Virata adds "Cro-mo
+    // rails". The Logic Pro WCS (titanium rails) is the only other Comp-era row.
+    'ritchey comp leather': 8410, // Ritchey Logic Comp Saddle
+    'ritchey comp leather cro mo rails': 8410, // Virata
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'isca tornado black suede': 5382, // Team Replica: Iscaselle Tornado (suede cover)
     'isca tornado blue suede': 5382, // Road Ace
@@ -1415,6 +1420,9 @@ const COMPONENT_OVERRIDES = {
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
+    // 1993 Bianchi Super Grizzly: Ritchey's Force Directional (FD) butted
+    // post, mountain length (Ritchey 1992 catalogue).
+    'ritchey fd': 8407, // Ritchey Force Directional Seatpost (Mountain)
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'sr ctp5 aero single allen bolt adjustment': 5857, // Competition: SR CT-P5, Custom-P5 (Sakae Laprade)
     'sr ctp5 fluted alloy single allen bolt adjustment': 5857, // Corsa
@@ -1621,6 +1629,10 @@ const COMPONENT_OVERRIDES = {
     'clement ritmo tubular': 6767, // Clement Ritmo LTX 55 (only Ritmo row)
     // 1983 Bianchi Super Pista: Pistard is Clement's track tubular.
     'clement pista tubular': 6765, // Clement Pistard
+    // 1993 Bianchi MTBs, rows from the Ritchey 1992 catalogue. The CSV
+    // spells HardDrive "Hardrive", so the substring match can't see it.
+    'ritchey z max': 8382, // Nth FS: Ritchey MegaBite Z-Max
+    'ritchey megabite hardrive': 8383, // Ibex / Osprey: Ritchey MegaBite HardDrive
   },
   Rims: {
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).

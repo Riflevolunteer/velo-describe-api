@@ -203,6 +203,17 @@
   (no rows), Rapidfire Plus, Hyperglide cassettes and HG chains, Bianchi
   saddles/tyres, Ritchey, Kalloy, Selcof, Tioga, Panaracer, Maxxis, MTB Araya
   and Ukai rims, FIR rims.
+- 2026-10-09, after the Ritchey 1992 catalogue ingest (component skill,
+  `known-catalogs/ritchey.md`, data_source 149): 10 Ritchey specs linked
+  via new overrides — Tyres "Ritchey Z-Max" -> 8382 MegaBite Z-Max (Nth
+  FS), "Ritchey Megabite Hardrive" -> 8383 MegaBite HardDrive (Ibex,
+  Osprey; the CSV's "Hardrive" spelling defeats the substring match);
+  Seat Posts "Ritchey FD" -> 8407 Force Directional Seatpost (Mountain)
+  (Super Grizzly); Saddles "Ritchey Comp leather" (+ "Cro-mo rails" on the
+  Virata) -> 8410 Logic Comp Saddle (6 bikes). Those four rows' year_to
+  extended 1992 -> 1993 (source_ref -> 47). Applied directly as guarded
+  UPDATEs rather than a full bike-update.sql reload; the regenerated SQL
+  agrees. 185 -> 195 linked.
 - 2026-10-03, after the SunTour 1992 catalogue ingest (component skill log):
   Volpe "SunTour FS-E Top Pull" → RD-FE00-GXB 7951 (rear) / FD-TP05-GXH
   Top-Pull Lite 7968 (front; "Top Pull" only describes the front, the
