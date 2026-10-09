@@ -1204,6 +1204,13 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi Mondiale / Giro: no bend named, and the only substring hit
     // is the early-model Merckx row.
     '3ttt competizione': null,
+    // 1986 Colnago: the catalogue says "manubrio ed attacco 3TTT mod. 84
+    // nero, pantografato" for bars and stem alike, but Mod. 84 is the AR84
+    // stem (linked under Stems); the bar model is unidentified, so these
+    // must never link to a stem row or a guessed bar.
+    '3ttt black pantographed': null,
+    '3ttt sport bend black pantographed': null, // Gentleman / Lady Sport
+    '3ttt special aerodynamic ox horn bend': null, // Master Krono
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'cinelli no 65 alloy bend': 2804, // Team Replica: Cinelli 65 Criterium
     'cinelli no 65 engraved alloy bend': 2804, // Gran Sport

@@ -81,8 +81,16 @@ modern). New bike brand created on load 2026-10-08.
   stays unlinked (only Special Oro rows); Everest Nova Cromo freewheel ->
   2060 Everest Nova; Ambrosio Metamorphosis SC -> 4899, Aero -> 4892, Elite
   Aero -> 4890 19 Extra Elite Aero dynamic; Universal AER -> 1065; 3ttt mod.
-  84 stem -> 8296 AR84N black (catalogue says "nero"; no Mod. 84 handlebar
-  row, so the bars stay unlinked).
+  84 stem -> 8296 AR84N black (catalogue says "nero").
+- Handlebars: the catalogue says "manubrio ed attacco 3TTT mod. 84 nero,
+  pantografato" ("3TTT 84 stem and handlebar, engraved" in the English
+  column) for bars and stem alike, but Mod. 84 is 3ttt's AR84 *stem*
+  designation and no Mod. 84 handlebar exists. 2026-10-09: dropped "mod.
+  84" from the 16 Handlebars values (CSV + bike_spec), now "3ttt, black,
+  pantographed", "3ttt sport bend, black, pantographed" (Gentleman / Lady
+  Sport) and "3ttt special aerodynamic ox-horn bend" (Master Krono). The
+  bar model is unidentified (black pantographed 3ttt bar in the photos), so
+  they stay unlinked via explicit null overrides.
 - Set to no link: "Shimano Deore" RD (matcher hit an undated bare Deore XT
   row; in 1986 "Deore" is undecidable between the ended DE series and XT
   M700, MT60 Deore arrives 1987), "Concor or Rolls" (either/or).
