@@ -1521,6 +1521,41 @@
   matching category, same as fork ends/tools/cables/brazed-on parts.
 
 
+## Shimano "Dura-Ace 10 Series Track Ensemble" launch sheet — late 1976 (labibleduvelocataloguesshimano.blogspot.com "SHIMANO 1976", 1 image)
+
+- `data_source` 153. The blog's "SHIMANO 1976" page is not a catalogue but
+  four loose images ("SHIMNANO GROUPSET 1-4", 640-1000px). Three are from
+  catalogues already ingested: pp. 18 and 20 "Track Ensemble" (FC-7500 /
+  SS-7500 / HB-7520 / HP-7500 / FE-SF10 / FE-UF10 and FC-7000 / HB-7020 /
+  SS-7000 / CN-7000, the 1981-82 System Components numbering) and p. 39,
+  the Dura-Ace 10 / Dura-Ace / EX / 600 EX / 600 / Deore range overview
+  (1981 or 1982 catalogue). All 44 codes on those three were verified
+  present with matching data; no source row created for them.
+- The fourth image is a single undated Dura-Ace 10 track launch sheet:
+  HA-310 hubs (240 / 303g, Duralumin Almite, BC33 x 24 sprocket, BC32 x
+  24 left lock ring, 28/32/36h), GA-110 chainwheel with GB-100 BB set
+  (75S Extra Super Duralumin, 10 x 3mm, 46-55T, 165 / 170, 167.5 by
+  request), FA-210 sprocket (14 / 15 / 16T), QA-100 chain, plus the
+  Dura-Ace 10 vs Dura-Ace weight chart (total 959g vs 1079g). Text:
+  Nicholson "crowned World Professional Sprint Champion after
+  successfully defending his 1975 title in Italy during September, 1976"
+  and "Dura-Ace 10 Road System Components Ensemble will be introduced in
+  1977" — so printed late 1976, before the Feb 1977 catalogue that had
+  dated these rows.
+- year_from 1977 -> 1976, source_ref -> 153, descriptions rewritten to
+  carry the sheet's spec and the later drift: 7440 GA-110 / FC-7000
+  (46-55T, 167.5 by request), 7449 QA-100 / CN-7000 (330g), 7452 HA-310 /
+  HB-7020 (240 / 303g 1976-77, 225 / 295g from May 1978), 7461 FA-210 /
+  SS-7000 (22-31g). GB-100 stays in 7144 "G-520 / GB-100".
+- Also on the blog: the "SHIMANO 1975" page is pp. 15-32 of the Dec 1974
+  "A Complete Line of Shimano" (data_source 24), verified 2026-10-10 as
+  fully covered (55 codes, all weights and capacities matching); not
+  loaded. Four titles there still break the `<code>, <name>` convention
+  (2472 "Shimano 50, EC-100", 2454, 6123, 2709 lacking the comma) and ~20
+  rows keep "1975 catalogue." / "Dec 1974 catalogue:" citations in their
+  descriptions — optional cleanup, not done.
+- Out of scope: FE-SF10 / FE-UF10 fork ends.
+
 ## Cleanup 2026-10-06 (no catalogue)
 
 - Deleted (user-approved): 1198 "Shimano FH-6361, 600 AX" (Cassettes,
