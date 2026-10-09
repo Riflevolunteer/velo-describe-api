@@ -373,6 +373,13 @@
   55G and Takagi cranks, Sugino LP, Sansin RE-50/RE-60/ET-QS/AX-10A, SR
   MTH-100, Araya SP-30, SR SP-153 and bear-trap pedals, Daido chains,
   Shimano XT/Tourney XT cranks (no FC-M700 row).
+- 2026-10-09, after the Araya 1980-95 catalogue excerpts ingest
+  (component skill, `known-catalogs/araya.md`, data_source 152): the two
+  1985 "Araya SP-30" specs (Alyeska 27x1-1/4, Grand Prix 700C) link to the
+  new 8424 Araya SP-30 (1985-1992) via Rims overrides. The Portage's
+  "Araya 650 x 35c alloy" names no model and stays unlinked. Araya 7X
+  (4923) and ADX-1W (4925) rows the 1985 bikes already linked to now run to
+  1995 and 1988 respectively.
 - Regression: recorded counts for 1975 Motobecane (46), 1983 Bianchi (47),
   1987 Bianchi (128) and 1993 Bianchi (118) were already stale against the
   DB (47, 48, 128, 118 loaded); regenerating today gives 47, 47, 126, 117,

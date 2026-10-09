@@ -214,6 +214,16 @@
   extended 1992 -> 1993 (source_ref -> 47). Applied directly as guarded
   UPDATEs rather than a full bike-update.sql reload; the regenerated SQL
   agrees. 185 -> 195 linked.
+- 2026-10-09, after the Araya 1980-95 catalogue excerpts ingest
+  (component skill, `known-catalogs/araya.md`, data_source 152): 7 Rims
+  specs linked via new overrides — "Araya PX-35" -> 8430 (Advantage),
+  "Araya PX-45" -> 8429 (Boardwalk), "Araya AP21" -> 8451 AP-21 (Nyala,
+  Ocelot), "Araya VP20" -> 8450 VP-20 (Osprey), "Araya VX300" -> 8428
+  VX-300 (Project 3, Volpe); the CSV drops the hyphens. PX-35 / PX-45 /
+  AP-21 / VX-300 and the already-linked SS-45 (Europa) extended to 1993
+  on this catalogue (source_ref 47). "Araya RM-18T" (Ibex) matches no
+  Araya model in any 1980-95 spread — TM-18 (1992) is the nearest guess
+  — so it has an explicit null override. 195 -> 202 linked.
 - 2026-10-03, after the SunTour 1992 catalogue ingest (component skill log):
   Volpe "SunTour FS-E Top Pull" → RD-FE00-GXB 7951 (rear) / FD-TP05-GXH
   Top-Pull Lite 7968 (front; "Top Pull" only describes the front, the

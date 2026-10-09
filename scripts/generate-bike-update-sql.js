@@ -1635,6 +1635,18 @@ const COMPONENT_OVERRIDES = {
     'ritchey megabite hardrive': 8383, // Ibex / Osprey: Ritchey MegaBite HardDrive
   },
   Rims: {
+    // Araya rows from the 1980-95 catalogue excerpts (bmxmuseum.com). The CSVs
+    // drop the hyphen ("AP21", "VP20", "VX300"), which the title match can't see.
+    'araya sp 30 27 x 1 1 4 alloy 36 hole front 40 hole rear': 8424, // 1985 Raleigh Alyeska
+    'araya sp 30 alloy 700 x 25c': 8424, // 1985 Raleigh Grand Prix
+    'araya px 35': 8430, // 1993 Bianchi Advantage
+    'araya px 45': 8429, // 1993 Bianchi Boardwalk
+    'araya ap21': 8451, // 1993 Bianchi Nyala / Ocelot: Araya AP-21
+    'araya vp20': 8450, // 1993 Bianchi Osprey: Araya VP-20
+    'araya vx300': 8428, // 1993 Bianchi Project 3 / Volpe: Araya VX-300
+    // 1993 Bianchi Ibex "RM-18T": no such Araya model in any catalogue; TM-18
+    // (1992) is the nearest but the match is a guess, so leave it unlinked.
+    'araya rm 18t': null,
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'weinmann a124 eyeletted black': 7776, // Record Sprint / Quasar: Weinmann A124 Super X
     // 1978 Raleigh (US, ebykr scan).
