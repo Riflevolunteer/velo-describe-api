@@ -309,3 +309,15 @@
   linked. Levers, FD, hubs, headset, pedals, seatpost, shifters (5970,
   1987-91) were already period-correct.
 
+- 2026-10-10 (Nitto No. 6, 1980 ingest): 1985 Bambina Stem "Nitto Technomic,
+  60 mm" -> 8563 Nitto Technomic (generic match; 8563 year_to 1985). Overrides
+  added: Handlebars 'nitto 165 400 mm' -> 2877 (Campionissimo; the row was
+  retitled "Nitto Mod. 165" and the matcher lost it) and Stems
+  'nitto technomic aero ...' -> null (Squadra; the Aero is a later model with
+  no DB row, and the matcher would have taken the plain Technomic). 2877 /
+  2889 year_to moved to 1985 on the strength of the Campionissimo / Squadra
+  specs. Still unlinked: Bambina "Nitto Junior, 340 mm" (no Junior in the
+  1980 catalogue) and Campionissimo "Nitto, Bianchi engraved" (no model).
+- 2026-10-10 (Nitto No. 11, 1989 ingest): Handlebars override 'nitto junior
+  340 mm' -> 8622 Nitto B110AA (Bambina), the only 340mm junior bar in the
+  1989 catalogue; 8622 year_from set to 1985 on this link's evidence.

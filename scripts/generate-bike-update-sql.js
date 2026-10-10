@@ -1267,8 +1267,15 @@ const COMPONENT_OVERRIDES = {
     // (CT-S is the steel one).
     'sr custom engraved italienne alloy bend': 7889, // Sakae/Ringyo (SR) CT-L, Custom-L
     'sr custom engraved alloy bend': 7889,
+    // 1985 Bianchi Campionissimo: retitled "Nitto Mod. 165" (Nitto No. 6, 1980).
+    'nitto 165 400 mm': 2877,
+    // 1985 Bianchi Bambina: the only 340mm junior bar in Nitto No. 11 (1989).
+    'nitto junior 340 mm': 8622, // Nitto B110AA
   },
   Stems: {
+    // 1985 Bianchi Squadra: the Technomic Aero is a later model than the plain
+    // Technomic (Nitto No. 6, 1980) and has no DB row; don't let the matcher take it.
+    'nitto technomic aero 80 mm (510) 90 mm (530 550)': null,
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'cinelli 1a': 6489, // Team Replica: Cinelli 1A (winged "C" logo), as the 1983 'cinelli no 1a'
     // 1986 Colnago: "attacco 3TTT mod. 84 nero" = the black AR84N (1986-91), not the silver AR84.
