@@ -321,3 +321,42 @@
 - 2026-10-10 (Nitto No. 11, 1989 ingest): Handlebars override 'nitto junior
   340 mm' -> 8622 Nitto B110AA (Bambina), the only 340mm junior bar in the
   1989 catalogue; 8622 year_from set to 1985 on this link's evidence.
+
+## 1981 Bianchi — `1981_bianchi_spec.csv` (7 bikes, 123 specs, 38 linked)
+
+- Source: https://saarf.london/2014/02/14/bianchi-1981-catalog/ (pg11 ..
+  pg41.jpg): Vespa of America Corporation (Piaggio Group, Brisbane CA) US
+  catalogue, "© 1980 Vespa of America", for the 1981 range (Sprint/81). Last
+  page is a full specification table; transcribed by hand (crops at x3).
+- Bikes: Super Corsa, Super Leggera, Rekord 748, Sprint/81, Rekord "M"
+  Strada, Rekord "W" Strada, Super Turismo; weight, frame sizes (cm only) and
+  colours on the bike rows.
+- Transcription choices: canonical headers written directly; "Derailleur"
+  -> Derailleurs (fans to front + rear, as 1983); "Rims-Spokes" split into
+  Rims / Spokes; "Fork Ends" folded into Fork; "Standard Package" -> Extras;
+  "OF. ME. GA. (manufacturer)" headsets -> "Ofmega"; source spelling
+  "Rekord" kept in values.
+- Generator: WORD_ALIASES `rekord` -> `record` (no DB title uses "Rekord");
+  the 1974 Motobecane `'3ttt record'` -> 2771 (1st Version, 1970) override
+  ranged `{ to: 1975 }` so the 1981 plain "T.T.T. Rekord" bar/stem stay
+  unlinked.
+- Picks: Super Record by existing overrides (RD 4149 PAT. 80 for 1980-83,
+  brakes 582 v1, FD 2313, headset 2968, pedals 3716) plus crank 1509 (1049/A
+  Strada Super Record, "special engraving"); Nuovo Record FD 2299 / RD 4125
+  by matcher; Nuovo Gran Sport FD 2276 / RD 4085 (as 1983 Gran Sport);
+  Record Strada headset 2963 and 32-hole hubs 3259 (1034 low flange, as the
+  1983 NR hubs); "T.T.T. Rekord competition, superlight" bars -> 2767 Record
+  Competizione Superleggero (name match; velobase dates it 1970-75);
+  Universal model 77 -> 1083, ART. 125 -> 1075; Everest Special Oro chain
+  -> 1365; Regina Extra Oro 5-speed -> 2182, plain Regina Extra 5-speed ->
+  8171 (scalare); Mavic OR10 -> 5103, OR7 -> 5104; Clement Campionissimo ->
+  6738 (only dated Campionissimo row), Criterium -> 6745.
+- Left unlinked: TTT plain Record bar/stem and model 78 stem, "Super-light
+  Rekord" pedals (1037 vs 4021 undecidable), Campagnolo "New Type" hubs
+  (five Nuovo Tipo rows), Huret (no model), Dia-Compe / Universal
+  centre-pulls, Universal ART. 130/131, Ofmega Super Corsa cranks / hubs,
+  Gipiemme / Sugino Corsa cranks, Everest and Regina Oro 6-speed freewheels,
+  Regina Super Corsa chain, Clement Gentleman tyres, Italia / TTT saddles,
+  house "Corsa" parts.
+- Regression: all 28 catalogues regenerated; only the 31 new 1981 links
+  changed.

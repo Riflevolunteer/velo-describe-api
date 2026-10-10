@@ -101,3 +101,23 @@ modern). New bike brand created on load 2026-10-08.
 - Regression at load: all 20 loaded catalogues unchanged except 1982
   Raleigh "Campagnolo Gran Sport" brakes, which the new Brakes range links
   to 554 (regenerated and back-filled in the same session, 29 -> 30).
+
+## Other copies seen, not loaded (2026-10-10)
+
+- https://saarf.london/2012/12/06/colnago-catalog-1982-1983/ (011..111.jpg):
+  the same "Yes advertising" sheet set as `1979_colnago_spec.csv` (Export,
+  Beppe Saronni Giro d'Italia, Mexico Oro, International, Roger de Vlaeminck
+  Parigi-Roubaix, Mexico, Super, Nuovo Mexico / Super framesets, plus a
+  clothing sheet Art. 101-113), identical text. saarf titles it "1982-1983"
+  without giving a reason. Kept at 1979: Saronni won the Giro in 1979 and in
+  1983, but he was world champion from late 1982 and the sheet doesn't say
+  so; Nuovo Mexico Profil, the Super Record parts and the Roger de Vlaeminck
+  Paris-Roubaix bike all point to the late 1970s. No DB change.
+- https://saarf.london/2012/12/06/colnago-catalog-mid-1970s/
+  (colnago_brochure_11..31, colnago_mexico_accessories1,
+  colnago_mexico_first_generation1): the "la bicicletta dei campioni"
+  brochure listed above as the 1973 brochure — Super-Pantografata (detail
+  captions only), the Eddy Merckx racing bicycle (photo only, "exclusive
+  builder for Italy"), an accessories photo, and a first-generation Colnago
+  Mexico "extra light with material special Titanio". No component specs, so
+  not transcribed.

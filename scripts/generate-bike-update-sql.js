@@ -415,6 +415,9 @@ const WORD_ALIASES = {
   jubile: 'jubilee',
   // 1983 Raleigh tables print "600AX"; DB rows and the 1981 Kalkhoff say "600 AX".
   '600ax': '600 ax',
+  // 1981 Bianchi (Vespa of America) spells Campagnolo/3ttt "Rekord"; no DB
+  // title uses it, so this only reaches spec values, never bike titles.
+  rekord: 'record',
 };
 
 // Collapses hyphens/dashes/slashes/commas to spaces, drops periods,
@@ -454,6 +457,8 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
+    'campagnolo nuovo gran sport': 2276, // Campagnolo 3600/NT, Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'shimano 105': 2466, // Corsa: Shimano FD-A105, 105 Golden Arrow (1983-85)
     'suntour ar': 2620, // Sirocco: SunTour FD-2500, AR (1982-85)
@@ -570,6 +575,8 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
+    'campagnolo nuovo gran sport': 4085, // Campagnolo 3500, Nuovo Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'shimano 105': 4452, // Corsa / Record Sprint: Shimano RD-A105, 105 Golden Arrow (1983-85)
     'suntour cyclone ii': 4742, // Competition: SunTour RD-3500, Cyclone Mark-II (1981-85)
@@ -732,6 +739,8 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
+    'campagnolo record strada 32 holes': 3259, // Campagnolo 1034, Record (Low Flange), as the 1983 Bianchi Nuovo Record hubs
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'shimano 600 ax small flange qr': 3532, // Road Ace: Shimano FH-6361, 600 AX
     'shimano 105 small flange alloy qr': 3526, // Corsa: Shimano HB-F105 / HB-R105, 105 Golden Arrow (small flange)
@@ -838,6 +847,9 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
+    'universal model 77 with lightened levers': 1083, // Universal Mod. 77
+    'universal art 125': 1075, // Universal Mod. 125
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'weinmann 405 qr recessed fitting calipers and hooded levers': 1117, // Competition: Weinmann AG 405, as 1983
     'shimano 105 qr recessed fitting calipers & hooded alloy levers': 958, // Corsa: Shimano BR-S105, 105 Golden Arrow (1983-85)
@@ -1007,6 +1019,8 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
+    // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
+    'campagnolo record strada': 2963, // Campagnolo 1039, Record Strada
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'shimano 600 ex with aero cover': 3090, // Road Ace: Shimano HP-6207, 600EX (1983-87)
     // 1979 Colnago: "sterzo Colnago superleggero" = the alloy Colnago headset; the steel one is the "record" row.
@@ -1052,6 +1066,8 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
+    'campagnolo super record 42 53 special engraving': 1509, // Campagnolo 1049/A, Strada Super Record
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'campagnolo nuovo record with 52 42t super record rings': 1496, // Team Replica: 1049 Nuovo Record Strada v4 (1983 key carried "170mm cranks")
     'shimano 600 ax fully detachable 52 42t': 1787, // Road Ace: Shimano FC-6300, 600 AX
@@ -1220,6 +1236,8 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
+    '3ttt record competition superlight covered with black leather': 2767, // 3ttt Record Competizione Superleggero
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'shimano dura ace alloy engraved bend': 2917, // Road Ace: Shimano HD-7300, Dura-Ace AX
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
@@ -1257,7 +1275,9 @@ const COMPONENT_OVERRIDES = {
     // 2026-10-08 link-gap pass (weakest categories).
     // 1974 Motobecane Le Champion: the only plain "Record" bar; the Record
     // Competizione rows are a different (named) model.
-    '3ttt record': 2771, // 3ttt Record (1st Version)
+    // Ranged 2026-10-10: the 1981 Bianchi's plain "T.T.T. Rekord" is not the
+    // 1st version and the DB has no later plain Record bar.
+    '3ttt record': [{ to: 1975, id: 2771 }], // 3ttt Record (1st Version)
     // 1975 Raleigh Professional Track: the Racing Team Service PISTA row is
     // undated and the later line; this one covers 1975.
     '3ttt track bend': 2753, // 3ttt Record Competizione Track (Pista)
@@ -1535,6 +1555,8 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
+    'everest special oro 1 2" x 3 32"': 1365, // Everest Serie Special Oro
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'suntour z silver black': 7821, // SunTour TZ-6000, Z chain (as 1983)
     'suntour z silver': 7821,
@@ -1599,6 +1621,10 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
   },
   Freewheels: {
+    // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
+    'regina extra oro 14 22 5 speed': 2182, // Regina Extra Oro (5 speed)
+    'regina extra oro 14 28 5 speed': 2182,
+    'regina extra 14 28 5 speed': 8171, // Regina Extra (5 speed, scalare)
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'suntour nw6000 silver 13 14 15 16 17 19 21t': 2238, // Competition: SunTour NW-6000, New Winner (6-speed)
     'suntour pn6000 14 15 17 19 21 24t': 7813, // Sirocco: SunTour PN-6000 / PS-6000, Perfect (6-speed); ebykr's transcription reads "Pro6000", the scan "PN6000"
@@ -1659,6 +1685,8 @@ const COMPONENT_OVERRIDES = {
     'sun tour wide ratio 14 18 23 30 34t': 2245, // SunTour 1100-1106 / PT-5000, Perfect (5-speed)
   },
   Tyres: {
+    // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
+    'clement campionissimo tubular 28"': 6738, // Clement Campionissimo Seta Extra (the only dated Campionissimo row)
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'vittoria nuovo pro tubular': 6893, // Team Replica / Road Ace: Vittoria Nuovo Pro 260 (only Nuovo Pro row)
     'clement tubulars mod colnago': 6743, // Clement Colnago (1979 Colnago Mexico / Mexico Oro)
@@ -1688,6 +1716,9 @@ const COMPONENT_OVERRIDES = {
     'ritchey megabite hardrive': 8383, // Ibex / Osprey: Ritchey MegaBite HardDrive
   },
   Rims: {
+    // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
+    'mavic or10 light': 5103, // Mavic OR 10
+    'mavic or7 extra light': 5104, // Mavic OR 7
     // Araya rows from the 1980-95 catalogue excerpts (bmxmuseum.com). The CSVs
     // drop the hyphen ("AP21", "VP20", "VX300"), which the title match can't see.
     'araya sp 30 27 x 1 1 4 alloy 36 hole front 40 hole rear': 8424, // 1985 Raleigh Alyeska
