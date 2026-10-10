@@ -457,6 +457,8 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1982 Bianchi US racing brochure (saarf.london).
+    'shimano 600 gs': 7435, // Shimano EC-600 / FD-6100, Shimano-600 (1977-82; the 600 GS group front)
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
     'campagnolo nuovo gran sport': 2276, // Campagnolo 3600/NT, Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
@@ -575,6 +577,8 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // 1982 Bianchi US racing brochure (saarf.london).
+    'shimano 600 gs': 7110, // Shimano DC-210 / RD-6101, 600 GS (1975-82)
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
     'campagnolo nuovo gran sport': 4085, // Campagnolo 3500, Nuovo Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
@@ -739,6 +743,8 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1982 Bianchi US racing brochure (saarf.london).
+    'campagnolo record pista': 3270, // Campagnolo 1036, Record Pista (high flange), as the 1983 Super Pista
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
     'campagnolo record strada 32 holes': 3259, // Campagnolo 1034, Record (Low Flange), as the 1983 Bianchi Nuovo Record hubs
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
@@ -847,6 +853,8 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1982 Bianchi US racing brochure (saarf.london).
+    'universal 77': 1083, // Universal Mod. 77
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
     'universal model 77 with lightened levers': 1083, // Universal Mod. 77
     'universal art 125': 1075, // Universal Mod. 125
@@ -1408,6 +1416,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1982 Bianchi US racing brochure (saarf.london).
+    'campagnolo gran sport drilled': 209, // 1040/1A, Nuovo Gran Sport ("Gran Sport brakes with drilled-out levers")
     // c. 1984 De Rosa (ebykr scan).
     'campagnolo c record': [{ to: 1986, id: 212 }, { from: 1987, id: 214 }], // 0118065 first gen (1985-86, as Cinelli / Colnago) / Corsa Record with Power Grade (1987-91)
     // 1979 Peugeot: the MAFAC 1976 catalogue names its forged racing lever "poignée course".

@@ -360,3 +360,32 @@
   house "Corsa" parts.
 - Regression: all 28 catalogues regenerated; only the 31 new 1981 links
   changed.
+
+## 1982 Bianchi — `1982_bianchi_spec.csv` (6 bikes, 56 specs, 21 linked)
+
+- Source: https://saarf.london/2014/02/18/bianchi-racing-catalog-1982/
+  (112, 211, 311, 411, 512, 61-91.jpg): US racing brochure ("Bianchi. There
+  are no substitutes. Only compromises."; "all 12 of the Bianchis now
+  available in America" — only the racing pages are scanned). A photo and
+  a prose paragraph per bike, no table, sizes or colours; transcribed by
+  hand. Not the 1983 catalogue: same model names, different specs (1982
+  Nuovo Racing has Universal 77 brakes and G.P.M. crank, 1983 Ofmega).
+- Bikes: Nuovo Racing, Nuovo Touring (new, 18-speed 30-110, Shimano 600
+  G.S.), Campione del Mondo (Belgian team bike), Super Leggera, Super Corsa
+  (19 lb), Super Pista. "G.P.M." written as Gipiemme. Super Corsa's "only
+  Campagnolo Super Record equipment" fanned to FD / RD / crank / brakes /
+  levers / pedals / seatpost (as 1979 Colnago); Super Leggera's "Nuovo and
+  Super Record" kept as a groupset value only (undecidable per part).
+- Picks: Super Record and Nuovo Record by existing ranges (1982 -> FD 2300
+  0104007, RD 4126 v4; SR levers 232, brakes 582, seatpost 5761, RD 4149);
+  Gran Sport brakes 554; Record Pista crank 1505 / headset 2966; Cinelli #2
+  -> 5332; Mavic OR 10 -> 5103. New overrides: Universal 77 -> 1083;
+  "Campagnolo Gran Sport, drilled" levers -> 209 1040/1A; Record Pista hubs
+  -> 3270 (1036 high flange, as 1983); Shimano 600 GS rear -> 7110 RD-6101
+  600 GS, front -> 7435 FD-6100 Shimano-600 (same era, no "600 GS" front
+  row).
+- Left unlinked: bare Mavic / Clement, Gipiemme crank and pedals (no
+  model), "Campagnolo, Bianchi engraved chainwheels", engraved stems /
+  seatposts, T.T.T. track stem.
+- Regression: all 29 catalogues regenerated; only the 5 new 1982 links
+  changed.
