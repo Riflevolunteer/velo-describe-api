@@ -110,3 +110,10 @@
   5-speed variants, nothing in the text to choose on), "T.T.T. Franco Belge"
   has no row.
 
+
+- 2026-10-11 (1970 Peugeot pass): the 'stronglight competition' headset
+  override moved from 3124 (V4 Competition earlier version, two-pin
+  locknut, 1950-60) to 3125 (later version, octagonal locknut, 1960-80).
+  The five 1974 / 1975 Grand Touring, Grand Jubile and Grand Record
+  "STRONGLIGHT Competition" headset specs were re-linked with a one-off
+  UPDATE (stronglight-headset-fix.sql, 5 rows).

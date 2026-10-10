@@ -67,3 +67,30 @@
   Randonneur 355. Only PX 10 C names ATAX; the others assume Peugeot's
   unbranded French bends are the Philippe ones. Tandems' "Course front,
   Tessinois rear" left unlinked.
+
+## 1970 Peugeot — `1970_peugeot_spec.csv` (4 bikes, 57 specs, 12 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1970.html
+  ("Catalogues Peugeot 1970 labibleduvelo (1)-(4).jpg", 714 px; no larger
+  size is served). Dutch-market edition (prices in guilders, "PEUGEOT '70"
+  cover); only four pages scanned: cover, accessories, the PA 10 E /
+  PA 10 EH / P 10 spread and the PX 10 page. The page's "Bibibike.jpg" is
+  the blog's YouTube banner, not catalogue. Translated from Dutch by hand.
+- Bikes: PX 10 (Reynolds 531, f. 650), PA 10 E (Peugeot tubing, Nervex
+  lugs, f. 348), PA 10 EH ("PA 10 E without gears": derailleurs None,
+  single speed, f. 311), P 10 (f. 289). All white, 56 / 58 / 60 cm, racing
+  pedals, toe clips and straps, bell and pump; prices in Extras.
+- Overrides: FD 'simplex criterium' -> 2583 Prestige Criterium AV 223
+  (1964-75; no other Criterium front before the 1977 LJ A200); crank
+  'stronglight competition 45 52t' -> 1902 Stronglight 63 Super
+  Competition; Brakes 'mafac racer' -> 838; freewheel 'cyclo competition
+  5 speed 14 21t' -> 2088 Cyclo Competition 64 (5 speed). Headsets
+  'stronglight competition' changed 3124 (V4 earlier, 1950-60) -> 3125
+  (V4 later, 1960-80); see motobecane.md for the one-off re-link.
+- Kept: 'brooks professional' -> 5303 Brooks Team Professional (velobase
+  dates it 2000; the same saddle line under its later name, no 1970s
+  plain Professional row; shared with 11 Raleigh / Falcon / Motobecane
+  bikes).
+- Left unlinked: Mafac Course brakes (no row), Altenburger Synchron (two
+  logo variants), Simplex Competition 46/50 chainrings (Chainrings
+  category, not reachable from Crankset), generic alloy / tubular cells.

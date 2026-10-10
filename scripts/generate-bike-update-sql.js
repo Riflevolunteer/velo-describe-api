@@ -457,6 +457,8 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1970 Peugeot (Dutch-market catalogue).
+    'simplex criterium': [{ from: 1964, to: 1975, id: 2583 }], // Simplex Prestige Criterium AV 223 (no other Criterium front before the 1977 LJ A200)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace': [{ from: 1990, to: 1993, id: 2511 }], // FD-7403 (8sp HG)
     'shimano ultegra': [{ from: 1990, to: 1991, id: 2478 }], // FD-6400, 600 Ultegra (the matcher took a 1990 "Ultegra Tripple" velobase row)
@@ -903,6 +905,8 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1970 Peugeot (Dutch-market catalogue).
+    'mafac racer': [{ from: 1970, to: 1980, id: 838 }], // MAFAC Racer (lettered MAFAC RACER)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'campagnolo athena': [{ from: 1988, to: 1992, id: 558 }], // D500, Athena
     'shimano ultegra linear response': [{ from: 1988, to: 1990, id: 966 }], // BR-6400, 600 Ultegra
@@ -1112,7 +1116,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600': [{ from: 1983, to: 1987, id: 3090 }], // 1987 Bianchi: Shimano HP-6207, 600EX
     // 1974 Motobecane.
     campagnolo: 2959, // Campagnolo 1039, Gran Sport / Record
-    'stronglight competition': 3124, // Stronglight V4 Competition (earlier version, two pin locknut)
+    'stronglight competition': 3125, // Stronglight V4 Competition (later version, octagonal locknut, 1960-80); was the 1950-60 earlier version until the 1970 Peugeot pass
     // 1981 Kalkhoff (ambiguous with the Super Record Pista row).
     'campagnolo super record': 2968, // Campagnolo 4041, Super Record
     // 1983 Bianchi. Bare "Nuovo Record" substring-hits the Alleggerita
@@ -1144,6 +1148,8 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1970 Peugeot (Dutch-market catalogue).
+    'stronglight competition 45 52t': [{ from: 1963, to: 1970, id: 1902 }], // Stronglight 63 Super Competition (PX 10)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano ultegra 53 42t': [{ from: 1988, to: 1999, id: 1790 }], // FC-6400, 600 Ultegra
     'shimano 105 52 42t': [{ from: 1990, to: 1992, id: 1782 }], // FC-1055-SG, 105SC
@@ -1782,6 +1788,8 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
   },
   Freewheels: {
+    // 1970 Peugeot (Dutch-market catalogue).
+    'cyclo competition 5 speed 14 21t': 2088, // Cyclo Competition 64 (5 speed)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano hyperglide black 14 28t 6 speed': [{ from: 1990, to: 1993, id: 7603 }], // MF-HG20, 200GS (6sp HG)
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
