@@ -58,3 +58,12 @@
   platform, same reasoning as the Lyotard dural course -> 460D pick.
 
 - 2026-10-08 (MAFAC 1976 component catalogue): Brake Levers override 'mafac course' -> 357 MAFAC Course 419 / 429, Competition, linking the TH 8 / TM 8 Tandem "Mafac course" specs (2934, 2946). The catalogue names its forged racing lever "poignée course", which settles the variant question the 2026-10-05 pass left open; 88 -> 90 linked. The tandems' brake row 845 was retitled "MAFAC Cyclo-Tandem" (1976-1979) in the same run.
+
+- Handlebars (2026-10-10, after the ATAX / Guidons Philippe 1982 catalogue,
+  data_source 157): 24 bar specs linked by bend name via overrides —
+  Course / Course type / Course, dural / Dural course / Steel course / Atax
+  course, dural -> 2901 Philippe Franco Belge 354; Helvetia type variants ->
+  8502 Philippe Helvetia 303 / 304; Randonneur bend -> 8500 Philippe
+  Randonneur 355. Only PX 10 C names ATAX; the others assume Peugeot's
+  unbranded French bends are the Philippe ones. Tandems' "Course front,
+  Tessinois rear" left unlinked.

@@ -1242,6 +1242,21 @@ const COMPONENT_OVERRIDES = {
     '3ttt track bend': 2753, // 3ttt Record Competizione Track (Pista)
     // 1985 Raleigh Prestige (road): RY-RC Royal-Racer is the track bar.
     'sr royal special racing bend alloy': 7884, // Sakae/Ringyo (SR) RY-978, Royal-978
+    // 1979 Peugeot: French bend names from the ATAX / Guidons Philippe 1982
+    // catalogue, whose only "Course" bend is the Franco-Belge 354 (steel A 354,
+    // dural D/DG 354). Only PX 10 C names ATAX; the rest are inferred from the
+    // bend name. "Course front, Tessinois rear" (tandems) is two bars, unlinked.
+    'atax course dural': 2901, // Philippe Franco Belge 354
+    'course': 2901,
+    'course type': 2901,
+    'course type dural': 2901,
+    'course dural': 2901,
+    'dural course': 2901,
+    'steel course': 2901,
+    'helvetia type': 8502, // Philippe Helvetia 303 / 304
+    'sport helvetia type': 8502,
+    'sport dural helvetia type': 8502,
+    'randonneur bend': 8500, // Philippe Randonneur 355
   },
   Stems: {
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).

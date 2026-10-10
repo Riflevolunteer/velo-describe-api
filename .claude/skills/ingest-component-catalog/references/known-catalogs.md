@@ -28,6 +28,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/ritchey.md](known-catalogs/ritchey.md) — Ritchey (3 entries)
 - [known-catalogs/araya.md](known-catalogs/araya.md) — Araya (1 entry)
 - [known-catalogs/gb.md](known-catalogs/gb.md) — GB / G.B. Cycle Components (2 entries)
+- [known-catalogs/atax.md](known-catalogs/atax.md) — ATAX / Guidons Philippe (1 entry)
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands (velobase title-fixup conventions, etc.)
 
 When a new brand shows up for the first time, create
