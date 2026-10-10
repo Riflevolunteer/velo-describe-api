@@ -460,3 +460,19 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
   Racer", "Raleigh Maes Alloy" (18 bikes; only a bare 1980 Raleigh bar row)
   — no DB row.
 - 2026-10-08 (Colnago ingest): Brakes 'campagnolo gran sport' override added for the 1979 Colnago Export (553 to 1980, 554 from 1981) also linked the 1982 Clubman/Competition "Campagnolo Gran Sport" brakes -> 554 second gen, consistent with the 1983 'gran sport brakes' entry; regenerated and back-filled, 29 -> 30.
+- 2026-10-10 (SR link pass): 11 specs linked via overrides.
+  - Cranksets "SR Custom alloy cotterless" (1982 Record Ace / Competition
+    12) and "SR Custom Alloy Cotterless (5 Pin Detachable) 52/42T, 170mm
+    Cranks" (1983 Competition / Record Ace / Royale / Royal / Clubman /
+    Rapide), 8 in all -> 8199 SR CTC-5DLA2 Custom. It is the five-arm Custom
+    with 52x42 standard rings in SR No. 18; the other Custom codes are 52x40
+    or riveted DX. 8199 year_to moved 1982 -> 1983, source_ref 133.
+  - Handlebars "SR Custom Engraved (Italienne) Alloy Bend" (1983 Competition
+    / Rapide, 1984 Competition), 3 in all -> 7889 SR CT-L Custom-L, the alloy
+    Custom bar (CT-S is steel). 7889 year_to moved 1982 -> 1984, source_ref 148.
+  - Left unlinked: "Raleigh/SR alloy (5 pin) cotterless" 1977-78 (7 specs:
+    Raleigh-branded, no model; the one "5RGII" hint would be AX-5RG II 7874,
+    dated 1982 only, 52x40 standard); "SR alloy cotterless 5-pin detachable"
+    1982 Clubman / Rapide (no model); 1985 SR CXC-624 / CRC-T301 / CXC-331 /
+    55G (no DB rows; needs a mid-80s SR catalogue); plain "Raleigh Italienne"
+    and "Raleigh Maes" bars (Raleigh's own names, no SR evidence).

@@ -1143,6 +1143,12 @@ const COMPONENT_OVERRIDES = {
     'stronglight 49 d dural triple 32 x 42 x 52': 1893, // Stronglight 49 Tri
     // 1974 Motobecane (Grand Touring). The steel cottered Nervar has no DB row.
     'nervar cotterless 40 52 alloy chainwheel rings with alloy guard': 1653, // Nervar (3-pin, alloy/cotterless)
+    // 1982-83 Raleigh (Record Ace / Competition / Royal / Clubman / Rapide):
+    // "SR Custom" 52/42 five-arm is the CTC-5DLA2 (SR No. 18; the other Custom
+    // codes are 52x40 or riveted DX).
+    'sr custom alloy cotterless': 8199, // Sakae/Ringyo (SR) CTC-5DLA2, Custom
+    'sr custom alloy cotterless 52 42t 170mm cranks': 8199,
+    'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
     // 1993 Bianchi MTBs: "Ritchey Comp leather" is the Logic Comp, new for
@@ -1257,6 +1263,10 @@ const COMPONENT_OVERRIDES = {
     'sport helvetia type': 8502,
     'sport dural helvetia type': 8502,
     'randonneur bend': 8500, // Philippe Randonneur 355
+    // 1983-84 Raleigh Competition / Rapide: the alloy SR Custom bar is CT-L
+    // (CT-S is the steel one).
+    'sr custom engraved italienne alloy bend': 7889, // Sakae/Ringyo (SR) CT-L, Custom-L
+    'sr custom engraved alloy bend': 7889,
   },
   Stems: {
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
