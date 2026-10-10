@@ -421,3 +421,58 @@
   and IRC Triathlete tyres (no rows), Ambrosio disc wheels, 3ttt bars /
   stems, frames, forks, Celeste tape.
 - Regression: all 30 catalogues regenerated; only the 1988 links changed.
+
+## 1990 Bianchi — `1990_bianchi_spec.csv` (26 bikes, 519 specs, 262 linked)
+
+- Source: https://www.retrobike.co.uk/archive/1990-bianchi-catalogue.1676/
+  ("1990 Bianchi Catalogo.pdf", 23 pp, Bianchi USA Inc., South San
+  Francisco; the download needs a browser UA + cookie from the archive
+  page, plain curl gets 406). Prose per bike on pp. 4-19, geometry on p. 20,
+  full spec table on pp. 21-22 (read from x3 crops of the 1275 px page
+  images). Series: Cross-Terrain, Mountain, Road; category = series plus
+  the catalogue's level word (Professional / Competition / Performance)
+  where given. Mondiale Frameset is prose-only (frame + Cinelli BB).
+- CSV choices: paired columns split into Fork/Headset, Handlebars/Stem,
+  Saddle/Seatpost, Hubs/Spokes, Freewheel-or-Cassette/Chain, Rims/Tyres,
+  FD/RD/Shifters; Brakeset split into Brakes + Brake Levers when a lever is
+  named. Freewheel vs Cassette follows the catalogue's "cassette" wording.
+  Crank finish words (Powering, Superglide, hard anodized) dropped; "Ofmega
+  Competition" -> Competizione; Pista "16T fixed gear" -> "fixed cog" (hits
+  the existing null). "*" (CPSC reflector group) written out in Extras.
+  The Pedals column is out of focus in the scan: SR MTP-126 / MTP-170,
+  H.T.I. HTI-P15, H.K. VP-230, Sakae CTP-170 and Forza "H.K. VP-382S" are
+  best readings.
+- Generator: 1990 Bianchi block in each category, all ranged by year.
+  Existing overrides ranged: FD / RD 'shimano 105' (Golden Arrow to 1989,
+  105SC from 1990), FD / RD 'shimano deore xt' (M700 to 1989, M735 from
+  1990), Brakes 'shimano dura ace' (1990 -> BR-7402 992; BR-7403 dual
+  pivot from 1991, its DB start), Cranksets 'shimano dura ace 53 42t'
+  (FC-7400 to 1988, FC-7402 from 1989), Shifters 'shimano 105 sis'
+  (SL-1050 to 1989, SL-1055 from 1990), Pedals 'ofmega master' (Pista ->
+  3880 Master Pista).
+- Matcher corrections: Dura-Ace FD-7703 / EX rear -> FD-7403 / RD-7402;
+  Ultegra RD-6500 / "Ultegra Tripple" -> 600 Ultegra 6400; 105 Golden Arrow
+  -> 105SC; XT M700 -> M735; Chorus RS post -> C0R2 5742; Athena
+  Ergopower -> null (Synchro-2 downtube levers, no row); X-1 Chroma 1989
+  rear -> RD-X101.
+- Picks: 1990 Shimano groups by DB dating (105SC, 600 Ultegra, Dura-Ace
+  8sp, Deore XT M735 / DX M650 / LX M550, 200GS, Exage 500EX); XC-Pro hubs
+  -> 3628 rear freewheel hub (bikes listed with freewheels); Campione crank
+  -> 1705 Ofmega Vantage (Bianchi Quattro version). Bike-keyed: X-Press
+  shifters only on Project 7 / Grizzly (6312 XC-Pro), 13-23T 7sp cassette
+  only on Virata (CS-HG90).
+- Linked to SunTour rows the DB dates only 1992 (same model, only row):
+  XC-Comp FD 7959 / crank 7999 / hub 7982, XCT FD 7962 / RD 7952 / crank
+  8004 / cantilever 8038, X-1 crank 8000 / cantilever 8032, Radius crank
+  8007, XC-Pro seatpost 8046. This catalogue is evidence for year_from
+  1990 on those rows (not yet applied).
+- Left unlinked: SR / H.L. / ITM / Modolo bars and stems, Tange CD /
+  TH-series headsets, Bianchi Dakar / Advantage tyres, Vittoria Zefir /
+  Formula 1, IRC Triathlete, C.S.T., Regina RL.SY90, Sedisport 270, Viscount
+  saddles, SR / Strong posts, Rapidfire shifters, Modolo Quattro brakes,
+  Ambrosio Montreal (several variants), Campagnolo Delta XL, Athena
+  Synchro-2.
+- Regression: all 31 catalogues regenerated; only the 1990 rows changed.
+- Open: the bare 'shimano 105' FD / RD overrides send pre-1990 catalogues
+  to Golden Arrow, so the 1987 Bianchi 105 derailleurs likely point at
+  1983-85 rows instead of the 1050 group.
