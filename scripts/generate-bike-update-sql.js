@@ -912,6 +912,21 @@ const COMPONENT_OVERRIDES = {
     'weinmann 506 side pull with safety levers': 7764,
     'weinmann 506': 7764,
     'clb weinmann 506': 7764,
+    // 1982-84 Raleigh: the model-level 500 row (Weinmann c. 1971 leaflet); the
+    // finish / bolt variant rows can't be told apart from the spec text.
+    'weinmann 500 alloy quick release side pull': 8636, // Weinmann AG 500
+    'gold anodised weinmann 500 alloy side pull with extension levers and black cutaway hoods': 8636,
+    'weinmann 500 alloy side pull quick release recessed bolts': 8636,
+    'weinmann 500 alloy with extension levers and black cutaway hoods': 8636,
+    'weinmann 500 alloy qr levers': 8636,
+    'weinmann 500 alloy shimano adamas levers': 8636,
+    'weinmann 500 qr alloy black shimano adamas levers': 8636,
+    'weinmann 500 qr calipers with recessed fittings hooded alloy levers': 8636,
+    'weinmann 500 qr levers alloy golden': 8636,
+    // 1982-84 Raleigh: the model-level 605 row (Weinmann Oct 1981 parts catalog).
+    'weinmann 605 alloy quick release side pull': 8642, // Weinmann AG 605
+    'weinmann 605 alloy side pull quick release with wheel guides': 8642,
+    'weinmann 605 alloy side pull quick release calipers & hooded levers': 8642,
     'shimano at10 m system': 7723, // 1993 Bianchi, from the Jul 1992 manual: Shimano BR-AT10 / BR-AT11, Altus A10
     'shimano ct10 m system': 7735, // Shimano BR-CT10 / BR-CT11, Altus C10
     'shimano ct20 m system': 7742, // Shimano BR-CT20 / BR-CT21, Altus C20
@@ -1698,6 +1713,17 @@ const COMPONENT_OVERRIDES = {
     // Only A124 row in the DB, dated 1983 (Weinmann's concave A124).
     'weinmann a124 concave section alloy': 7776, // Gran Sport: Weinmann A124 Super X
     'weinmann a124 concave section': 7776, // Competition
+    // 1984 Raleigh: the A-124 is the anodized concave rim with reinforced
+    // eyelets (Weinmann Oct 1981 parts catalog).
+    'weinmann concave section eyeletted alloy': 7776, // Weinmann A124 Super X
+    // Weinmann / Delmerco c. 1975 catalogue rims. 1975 Motobecane: the 210
+    // H.P. is the one rim listed with knurled sides.
+    'weinmann h p alloy knurled sides': 5204, // Weinmann AG 210 H.P.
+    // 1973-75 Raleigh: the 256 Alesa H.P. (17mm) is the narrow-section HP
+    // rim; the 210 H.P. is 18mm.
+    'weinmann narrow alesa high pressure alloy': 7928, // Weinmann 256 Alesa H.P.
+    'weinmann narrow section alesa high pressure alloy': 7928,
+    'weinmann narrow alloy high pressure': 7928,
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'mavic gp4 alloy sprint': 5069, // Team Replica: Mavic GP 4 (1980-91)
     // CSV cell carries a stray backslash ("27x1.25\  MICHELIN"), MySQL drops it on insert
