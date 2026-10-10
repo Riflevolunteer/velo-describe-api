@@ -3,6 +3,7 @@ const mysql = require('mysql');
 const EbayAuthToken = require('ebay-oauth-nodejs-client');
 const fetch = require('node-fetch');
 const loadEnv = require('./load-env');
+const { BICYCLE_PARTS, categoryLadder } = require('./ebay-categories');
 
 var crypto = require('crypto'),
     algorithm = 'aes-256-ctr',
@@ -577,11 +578,12 @@ app.get('/linkCoverage', function (req, res, next) {
   })
 });
 
-// eBay Sporting Goods > Cycling > Bicycle Components & Parts. Scopes every
+// eBay Sporting Goods > Cycling > Bicycle Components & Parts. Scopes a
 // search to this category so a generic part name (e.g. "Simplex") doesn't
 // pull in unrelated listings from other categories that happen to match the
 // same keywords. Confirmed live on every marketplace in EBAY_MARKETPLACES.
-const EBAY_BICYCLE_PARTS_CATEGORY_ID = '57262'
+// /getTopListings narrows further per component category (ebay-categories.js).
+const EBAY_BICYCLE_PARTS_CATEGORY_ID = BICYCLE_PARTS
 
 // Marketplaces this app is allowed to query, matching the brands' home
 // markets already covered by ingested catalogues (French Simplex, Italian
@@ -622,24 +624,69 @@ function resolveMarketplaces(req) {
 
 // Shared eBay item search used by /getMarketPlacePrices and /getTopListings so both
 // endpoints always apply the same affiliate tracking header and error handling.
-async function fetchEbayListings(query, limit, accessToken, marketplace) {
-  const result = await fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${encodeURIComponent(query)}&category_ids=${EBAY_BICYCLE_PARTS_CATEGORY_ID}&limit=${limit}`, {
-    method: 'get',
-    headers: {
-      'Authorization': `Bearer ${accessToken}`,
-      'X-EBAY-C-MARKETPLACE-ID': marketplace,
-      'X-EBAY-C-ENDUSERCTX': 'affiliateCampaignId=5339210616'
+// categoryIds is a ladder, narrowest first: each rung is tried in turn within
+// this one marketplace until one returns items.
+// Returns the items and the rung that produced them (the last rung tried when
+// nothing matched anywhere).
+async function fetchEbayListings(query, limit, accessToken, marketplace, categoryIds = [EBAY_BICYCLE_PARTS_CATEGORY_ID]) {
+  let itemSummaries = []
+  let categoryId = null
+  for (categoryId of categoryIds) {
+    const result = await fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${encodeURIComponent(query)}&category_ids=${categoryId}&limit=${limit}`, {
+      method: 'get',
+      headers: {
+        'Authorization': `Bearer ${accessToken}`,
+        'X-EBAY-C-MARKETPLACE-ID': marketplace,
+        'X-EBAY-C-ENDUSERCTX': 'affiliateCampaignId=5339210616'
+      }
+    })
+    if (result.status !== 200) {
+      const error = new Error('Market place failed to return data')
+      error.status = 400
+      throw error
     }
-  })
-  if (result.status !== 200) {
-    const error = new Error('Market place failed to return data')
+    const body = await result.json()
+    itemSummaries = body.itemSummaries || []
+    if (itemSummaries.length) break
+  }
+  return { itemSummaries, categoryId }
+}
+
+// Resolves /getTopListings' search: ?componentId= looks up that component's
+// search_text and category (so the ladder can start at its eBay leaf
+// category), otherwise ?query= is searched with the generic ladder. Throws a
+// 400/404 error object, same shape as resolveMarketplace.
+async function resolveListingSearch(req) {
+  const componentId = req.query.componentId
+  if (componentId === undefined) {
+    if (!req.query.query) {
+      const error = new Error('No query or componentId parameter')
+      error.status = 400
+      throw error
+    }
+    return { query: req.query.query, categoryIds: categoryLadder(null) }
+  }
+  if (!/^\d+$/.test(componentId)) {
+    const error = new Error(`Invalid componentId: ${componentId}`)
     error.status = 400
     throw error
   }
-  const body = await result.json()
-  return body.itemSummaries || []
+  const results = await new Promise((resolve, reject) => {
+    connection.query(`SELECT compd.search_text, compc.title as category_title FROM component_detail compd
+                        left join component_category compc on compc.category_id=compd.category_id
+                        where compd.component_id=?`, [componentId], (error, rows) => error ? reject(error) : resolve(rows))
+  })
+  if (!results.length) {
+    const error = new Error(`Unknown componentId: ${componentId}`)
+    error.status = 404
+    throw error
+  }
+  const { search_text, category_title } = results[0]
+  return { query: search_text, categoryIds: categoryLadder(category_title) }
 }
 
+// Deprecated: the app no longer calls this, and it won't be extended (no
+// category ladder - it keeps the fixed 57262 filter). Kept for old clients.
 app.get('/getMarketPlacePrices', async function (req, res, next) {
   const query = req.query.query
   if(!query) {
@@ -650,7 +697,7 @@ app.get('/getMarketPlacePrices', async function (req, res, next) {
   try {
     const marketplace = resolveMarketplace(req)
     const accessToken = await getAccessToken()
-    const itemSummaries = await fetchEbayListings(query, 10, accessToken, marketplace)
+    const { itemSummaries } = await fetchEbayListings(query, 10, accessToken, marketplace)
     const prices = itemSummaries.map(itemSummary => Number(itemSummary.price.value))
 
     res.send(
@@ -670,26 +717,23 @@ app.get('/getMarketPlacePrices', async function (req, res, next) {
 })
 
 app.get('/getTopListings', async function (req, res, next) {
-  const query = req.query.query
-  if (!query) {
-    res.status(400).json({ error: 'No query parameter' })
-    return
-  }
-
   try {
     const marketplaces = resolveMarketplaces(req)
+    const { query, categoryIds } = await resolveListingSearch(req)
     const accessToken = await getAccessToken()
     // allSettled: one marketplace erroring (rate limit, transient failure)
     // shouldn't sink a request that asked for all five.
     const perMarketplace = await Promise.allSettled(
       marketplaces.map(async (marketplace) => {
-        const itemSummaries = await fetchEbayListings(query, 5, accessToken, marketplace)
+        const { itemSummaries, categoryId } = await fetchEbayListings(query, 5, accessToken, marketplace, categoryIds)
+        console.log(`getTopListings ${marketplace} q="${query}" ladder=${categoryIds.join('>')} rung=${categoryId} items=${itemSummaries.length}`)
         return itemSummaries.map(itemSummary => ({
           title: itemSummary.title,
           url: itemSummary.itemAffiliateWebUrl || itemSummary.itemWebUrl,
           price: itemSummary.price ? Number(itemSummary.price.value) : null,
           currency: itemSummary.price ? itemSummary.price.currency : null,
-          marketplace
+          marketplace,
+          categoryId
         }))
       })
     )
