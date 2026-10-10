@@ -449,7 +449,12 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
   three different blocks (New Winner, Perfect, 600AX), so the bare 1982
   text is undecidable; "G.B. Maes Alloy Engraved/Embossed" (1973-75
   Professional / Team Professional) — the two with-ferrule GB Maes rows
-  differ only by ferrule shape; "13/26T Maillard 6 speed" (1974/75
+  differ only by ferrule shape (**superseded 2026-10-10**: linked to 2843
+  "GB Maes (alloy, with ferrule)" via Handlebars overrides after the GB
+  c. 1962 leaflet, data_source 154, described the alloy Maes as sold with an
+  "engraved reinforcing ferrule" or a plain bulged centre; 2843 now 1962-1975.
+  2844 "scalloped ferrule" remains the unproven alternative — revert the two
+  overrides if a source ties the engraved bar to it); "13/26T Maillard 6 speed" (1974/75
   Professional Mk IV) — every Maillard 6-speed row is dated 1980+; "Dia-Compe
   161 / 164", "Kusuki WP-B / WPR-B", "Araya SP-30", "Vredestein 700 x 20C
   Racer", "Raleigh Maes Alloy" (18 bikes; only a bare 1980 Raleigh bar row)

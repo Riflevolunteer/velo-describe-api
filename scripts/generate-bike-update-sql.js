@@ -1216,6 +1216,11 @@ const COMPONENT_OVERRIDES = {
     '3ttt black pantographed': null,
     '3ttt sport bend black pantographed': null, // Gentleman / Lady Sport
     '3ttt special aerodynamic ox horn bend': null, // Master Krono
+    // 1973-75 Raleigh Professional / Team Professional: the GB alloy Maes with
+    // engraved reinforcing ferrule (GB leaflet c. 1962); bare title match is
+    // ambiguous across the four GB Maes rows.
+    'gb maes alloy embossed': 2843, // GB Maes (alloy, with ferrule)
+    'gb maes alloy engraved': 2843,
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'cinelli no 65 alloy bend': 2804, // Team Replica: Cinelli 65 Criterium
     'cinelli no 65 engraved alloy bend': 2804, // Gran Sport
