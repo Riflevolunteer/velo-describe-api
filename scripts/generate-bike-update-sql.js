@@ -578,6 +578,7 @@ const COMPONENT_OVERRIDES = {
     'sun tour ar': 4725, // Quasar / Zenith
     'sun tour arx': 4727, // Clubman: SunTour RD-4300, ARX
     'huret eco duopar': 4277, // Weekender: Huret Duopar Eco (Version 1); the matcher hit the plain Eco
+    'huret eco s': 8485, // Pulsar / Team Cadet / Stratos / Medale: Sachs Huret Eco S 2830-00 (June 1984 catalogue); was the plain Eco 4301
     // Classic: the DB's titanium Duopar rows are the 1976 2600 series and the 1980 Sachs Huret DuoPar; the 1984 touring
     // Duopar is the Sachs-era part.
     'huret titanium bodied duopar': 4398, // Sachs Huret DuoPar (titanium)

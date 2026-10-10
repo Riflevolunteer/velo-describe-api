@@ -122,3 +122,62 @@
   1975 standard levers (Luxe 1337-1344 inserted separately, catalogue
   doesn't say it's the same lever); velobase Allvit generations 4269-4272,
   Challenger II / 3rd-version rows, Success-Duopar CPSC fronts (1978+).
+
+## Sachs-Huret catalogue — June 1984 (labibleduvelocataloguessachshuret.blogspot.com, 16 pages)
+
+- `data_source` 156, label "Sachs-Huret catalogue (June 1984)". Source:
+  https://labibleduvelocataloguessachshuret.blogspot.com/p/sachs-huret-1984.html
+  (16 blogger images, 760px at /s1600/ — that's the original size, still
+  legible). German / English, "JUNE 1984" printed bottom-left of the rear
+  cover (usage chart), Huret et ses Fils, Nanterre, with Fichtel & Sachs AG,
+  Schweinfurt for DE / AT / NL / Scandinavia. Weights and capacities, no
+  prices. Pp. 2-13 derailleur groups, 14-15 speedometers (out of scope).
+- Brands: Huret (139) holds the 1970s rows, Sachs Huret (171) the 1980s
+  velobase rows, Sachs (98) the hubs. Matched rows kept their brand; new
+  1984 rows went to Sachs Huret, Sachs for Orbit / Torpedo.
+- Marked NEW in 1984: Pilot rear 2900-00 H, front 3060-00 and levers 3416,
+  Hi-Stepper front 3080-00 S and thumb shifters 3300 / 3303, electronic
+  computer. Velobase had Pilot rear (4408) and Pilot triple front (2436) at
+  1980-1980 — decade placeholders; year_from moved *later* to 1984 on the
+  NEW label (user-approved, an exception to "never move year_from").
+- Gone vs 1976 (not capped, eight-year gap): Allvit, Super Allvit, Svelto,
+  Challenger, Success 2460, Duopar 2600 / 2640, Jubilee 2252 / 2240 / 2254,
+  Jubilee front 500, Ratchet / Click-In / 80mm levers.
+- Retitled (old titles): 4419 "Sachs Huret Jubilee" -> Jubilee 2200 (taken
+  as the 1984 drilled-cage Jubilee; 4303 "first version" keeps 1972-76 and
+  its 1973-75 links); 4281 "Huret Super Success" -> + 2470 S; 4400 "Sachs
+  Huret DuoPar Eco" -> Duopar Eco 2690-00 H / GC; 4408 "Sachs Huret Pilot"
+  -> Pilot 2900-00 H; 4401 "Sachs Huret Rival" -> Rival 2850-00; 4399 "Sachs
+  Huret Eco" -> Eco 2490-01 / 2490-01 H; 2395 "Huret Jubilee (4 holes in
+  outer cage plate)" -> Jubilee 530 (4 holes ...); 2390 "Huret Success CPSC
+  (later version; solid band)" -> Success 975 CPSC (...); 2443 "Sachs Huret
+  Hi Stepper" -> Hi-Stepper 3080-00 S; 2436 "Sachs Huret Pilot (triple)" ->
+  Pilot 3080-00 (triple); 6112 "Sachs Huret Luxe AS Double Shifters" -> Luxe
+  AS 3152-00 S; 6067 "Huret Ratcheting Thumb Shifters" -> Hi-Stepper 3300 /
+  3303 thumb shifter (judgment call: bare row taken as the Hi-Stepper).
+- year_to -> 1984: 4419, 4307 Jubilee long cage (now 155g / 40T vs 145g in
+  1976, both named), 4299 Success, 8173 Duopar 2648 (H 34T / GC 38T,
+  titanium or steel bodies; 1976 spec named inline), 4400, 4401, 2395 (agrees
+  with the >=1977 Jubilee front override), 2390. 2443, 6067 NULL ->
+  1984-1984. Descriptions only: 4281, 4399, 6112.
+- New (16 rows, 1984-1984): rear 8484 Commander 12913 / 12900, 8485 Eco S
+  2830-00 / H; front 8486 Jubilee 530 SPP, 8487 Pilot 3060-00, 8488 Rival
+  1086-00, 8489 Club AS 1005-01, 8490 Club 1000-01; shifters 8491 Jubilee
+  1164-00 / 2390-00 / 2380-00, 8492 Pilot 3416 / 3416 R, 8493 Rival 3252-00,
+  8494 Commander 13000, 8495 Commander 13031 / 13041, 8496 Luxe A 3152 B,
+  8497 Sachs Torpedo 2 x 3 double lever; geared hubs 8498 Sachs Orbit
+  12961, 8499 Sachs Torpedo S.
+- Bike links (generator): 1984 Raleigh "Huret ECO-S" rears (Pulsar 10, Team
+  Cadet 10, Stratos 10, Medale 5 & 10) had matched plain Eco 4301; the new
+  8485 made the name ambiguous, so added override 'huret eco s' -> 8485.
+  The generator only fills `component_id IS NULL`, so the four existing 4301
+  links were repointed with a one-off guarded UPDATE (value_text 'Huret
+  ECO-S', Rear Derailleur, component_id 4301). "Huret Club AS" fronts
+  (Classic 15, Weekender 15) now name-match 8489 (loaded via bike-update.sql).
+  Stratos 10 / Medale 5 & 10 list "Huret ECO-S" as the *front* derailleur
+  (a Raleigh catalogue error) — left unlinked.
+- Left (possible duplicates, no evidence to merge): 4398 Sachs Huret DuoPar
+  (titanium) vs 8173 / 4302; 4279 Huret Rival (no years) vs 4401; 4301 Huret
+  Eco and 4391 "Sachs (Eco?)" vs 4399; velobase Sachs Huret Rival / Rival
+  Sport / AV 62.10D fronts vs 8488. "Huret Club brazed-on" (1984 Raleigh) is
+  probably Club S (braze-on Club AS, 8489) — not linked.

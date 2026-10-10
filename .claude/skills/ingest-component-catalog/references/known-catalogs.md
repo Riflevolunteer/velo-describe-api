@@ -14,7 +14,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/simplex.md](known-catalogs/simplex.md) — Simplex (8 entries)
 - [known-catalogs/weinmann.md](known-catalogs/weinmann.md) — Weinmann (3 entries)
 - [known-catalogs/maillard.md](known-catalogs/maillard.md) — Maillard (4 entries)
-- [known-catalogs/huret.md](known-catalogs/huret.md) — Huret (3 entries)
+- [known-catalogs/huret.md](known-catalogs/huret.md) — Huret / Sachs-Huret (4 entries)
 - [known-catalogs/le-cyclo.md](known-catalogs/le-cyclo.md) — Le Cyclo (2 entries)
 - [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (1 entry)
 - [known-catalogs/sakae-ringyo.md](known-catalogs/sakae-ringyo.md) — Sakae Ringyo / SR (1 entry)
