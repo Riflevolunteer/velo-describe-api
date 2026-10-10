@@ -244,6 +244,9 @@ app.get('/componentGroup', function (req, res, next) {
 });
 
 // Creating a GET route that returns component suggestions matching a search term.
+// Matches title + category + brand, not search_text: search_text is the eBay
+// query (no category, punctuation stripped, see scripts/search-text.js), so
+// matching on it would lose "derailleurs" or "1020/A".
 app.get('/searchComponents', function (req, res, next) {
   const q = req.query.q;
   if (!q) {
@@ -262,7 +265,7 @@ app.get('/searchComponents', function (req, res, next) {
     return
   }
 
-  const whereClauses = words.map(() => 'compd.search_text LIKE ?').join(' AND ');
+  const whereClauses = words.map(() => "CONCAT_WS(' ', compd.title, compc.title, compb.title) LIKE ?").join(' AND ');
   const params = words.map(w => `%${escapeLike(w)}%`);
 
   try {
@@ -273,6 +276,7 @@ app.get('/searchComponents', function (req, res, next) {
       }
       connection.query(`SELECT compd.component_id, compd.title, compd.description, compc.title as category_title FROM component_detail compd
                           left join component_category compc on compc.category_id=compd.category_id
+                          left join component_brand compb on compb.brand_id=compd.brand_id
                           where ${whereClauses} order by compd.title limit 10`, params, function (error, results, fields) {
         connection.release();
         if (error) {
