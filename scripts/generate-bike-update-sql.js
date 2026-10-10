@@ -457,6 +457,9 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
+    'campagnolo chorus': 2286, // Campagnolo FD-01FCH, Chorus (1987-91)
+    'shimano 600 ultegra': 2478, // Shimano FD-6400, 600 Ultegra
     // 1982 Bianchi US racing brochure (saarf.london).
     'shimano 600 gs': 7435, // Shimano EC-600 / FD-6100, Shimano-600 (1977-82; the 600 GS group front)
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
@@ -577,6 +580,9 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
+    'campagnolo chorus': 4108, // Campagnolo Chorus (short cage), 1988-91
+    'shimano 600 ultegra': 4466, // Shimano RD-6400, 600 Ultegra
     // 1982 Bianchi US racing brochure (saarf.london).
     'shimano 600 gs': 7110, // Shimano DC-210 / RD-6101, 600 GS (1975-82)
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
@@ -730,7 +736,7 @@ const COMPONENT_OVERRIDES = {
     // 1985 Raleigh Grand Prix: short-cage RD-4300. 1985 Bianchi Randonneur 700 runs a 50/45/34 triple with a 14-28 block, so the long-cage GT.
     'suntour arx': [{ bike: 'Randonneur 700', from: 1985, to: 1985, id: 4729 }, { id: 4727 }], // SunTour RD-4500 ARX (GT) / RD-4300 ARX
     // 1986 Cinelli groupset fan-out.
-    'campagnolo victory': 4168, // G010-SM, Victory (1984-86)
+    'campagnolo victory': [{ to: 1986, id: 4168 }, { from: 1987, id: 4169 }], // G010-SM, Victory (1984-86) / Victory S3 (1987-88; 1988 Bianchi Giro)
     'campagnolo record corsa': 4096, // 0102050, C-Record first generation (1985-86)
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'campagnolo velox': 4167, // 2250 Velox (1971-75)
@@ -853,6 +859,8 @@ const COMPONENT_OVERRIDES = {
     'maillard large flange': 3391, // Maillard Normandy high flange
   },
   Brakes: {
+    // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
+    'shimano 600 ultegra': 966, // Shimano BR-6400, 600 Ultegra
     // 1982 Bianchi US racing brochure (saarf.london).
     'universal 77': 1083, // Universal Mod. 77
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
@@ -991,7 +999,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600': [{ to: 1983, id: 963 }, { from: 1984, to: 1985, id: null }, { from: 1986, to: 1987, id: 972 }, { from: 1988, id: null }], // centre-pull / BR-6208 600EX (1987 Bianchi Limited)
     'shimano at 50 cantilever': [{ from: 1986, id: 1003 }], // Shimano BR-AT50 (1987 Bianchi Volpe); 1985 Raleigh predates the row
     // 1993 Bianchi. Bare "Chorus" substring-hits a 2000s 10-speed row.
-    'campagnolo chorus': [{ from: 1990, to: 1999, id: 565 }], // Campagnolo BR-02CH, Chorus Monoplaner
+    'campagnolo chorus': [{ from: 1988, to: 1999, id: 565 }], // Campagnolo BR-02CH, Chorus Monoplaner (1988-93; from 1988 for the 1988 Bianchi)
     'shimano ultegra': 966, // Shimano BR-6400, 600 Ultegra
     'shimano rx100 aero levers': 1007, // Shimano BR-A550, RX100
     'shimano xtr': 1018, // Shimano BR-M900, XTR M900
@@ -1074,6 +1082,9 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
+    'shimano 600 ultegra': 1790, // Shimano FC-6400, 600 Ultegra
+    'ofmega super competizione pista': 1702, // Ofmega Super Competizione (pista)
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
     'campagnolo super record 42 53 special engraving': 1509, // Campagnolo 1049/A, Strada Super Record
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
@@ -1361,6 +1372,9 @@ const COMPONENT_OVERRIDES = {
     'gb forged alloy': 6533, // GB Forged
   },
   Shifters: {
+    // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
+    'shimano 600 ultegra sis': 6144, // Shimano SL-6400, 600 Ultegra SIS
+    'campagnolo chorus syncro': 7027, // Campagnolo Chorus levers (Dual-Mode Syncro inserts)
     // 1978 Raleigh (US, ebykr scan).
     'positron stem shifters': 7436, // Record FFS/PPS: Shimano LC-410 / SL-P211, Positron Stem (1977-81)
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
@@ -1416,6 +1430,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
+    'shimano 600 ultegra': 7217, // Shimano BL-6400, 600 Ultegra (base model; the aero BL-6401 is not named)
     // 1982 Bianchi US racing brochure (saarf.london).
     'campagnolo gran sport drilled': 209, // 1040/1A, Nuovo Gran Sport ("Gran Sport brakes with drilled-out levers")
     // c. 1984 De Rosa (ebykr scan).

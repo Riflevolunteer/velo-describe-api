@@ -389,3 +389,35 @@
   seatposts, T.T.T. track stem.
 - Regression: all 29 catalogues regenerated; only the 5 new 1982 links
   changed.
+
+## 1988 Bianchi — `1988_bianchi_spec.csv` (6 bikes, 57 specs, 31 linked)
+
+- Source: https://saarf.london/2014/03/01/bianchi-1986-vintage-roadbike-catalog/
+  (111, 21, 32, 411, 511.jpg): US catalogue, Professional Series (C-4
+  Project, Mondiale, Super Leggera, Pista) and Competition Series (Giro,
+  Limited), accessories page. Prose per bike, no sizes / colours / weights;
+  transcribed by hand. saarf dates it 1986; loaded as **1988**: Super
+  Leggera "introduces the Campagnolo Chorus Syncro group" (all Chorus rows
+  1987/88+), Limited has Shimano 600 Ultegra SIS (Ultegra rows from 1988),
+  Victory Syncro fits Victory S3 (1987-88), and the accessories cap reads
+  "campione del mondo 1986-1987" (Argentin, retrospective). Differs from
+  the 1987 catalogue on every shared model (Mondiale C-Record Syncro +
+  Cobalto vs C Record + Super Record brakes; Super Leggera Chorus vs
+  Modolo/Gipiemme; Giro Victory vs Dura-Ace; Limited 600 Ultegra vs 600).
+- Group text fanned to FD / RD / crank / brakes / levers (Mondiale brakes =
+  Cobalto from the text); C-4's "C-Record component group" kept as a
+  groupset value only. Shifters written per group ("Campagnolo Chorus
+  Syncro") so each reaches its own row.
+- Picks: C-Record by existing ranges (crank 1482, FD 2283, RD 4098, levers
+  214; shifters 5973 by matcher); Cobalto 561; Victory crank 1516, FD 2318,
+  brakes 590, levers 235 (only Victory rows, dated to 1986), shifters 6007;
+  Chorus levers 220 / crank 1487 by matcher. New overrides: Chorus FD 2286,
+  RD 4108 short cage, shifters 7027; 600 Ultegra FD 2478 / RD 4466 / brakes
+  966 / levers 7217 (BL-6400 base) / crank 1790 / SIS shifters 6144 (was
+  hitting "Shimano 600" 1970-80); Ofmega Super Competizione Pista 1702.
+  Ranges changed: Victory RD -> 4169 Victory S3 from 1987 (4168 G010-SM to
+  1986); Chorus brakes 565 range now from 1988 (was 1990).
+- Left unlinked: Look pedals (no model, seven Look rows), Clement Meeting
+  and IRC Triathlete tyres (no rows), Ambrosio disc wheels, 3ttt bars /
+  stems, frames, forks, Celeste tape.
+- Regression: all 30 catalogues regenerated; only the 1988 links changed.
