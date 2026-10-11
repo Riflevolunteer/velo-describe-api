@@ -1553,6 +1553,71 @@
   Tourney 30 TY30 / BR-TY22-23 / BL-TY21; MJ10 / MJ12; RX100 FD-A551,
   SL-A551, FC-A551, FH-A551. BB-A551 does not exist (RX100 uses BB-UN51).
 
+## Shimano "'95 Bicycle System Components — Dealer Sales & Support Manual", English (GB) — printed 07.1994 (disraeligears.co.uk, 88 images)
+
+- `data_source` 174, label "Shimano Bicycle System Components 1995,
+  European edition (printed 07.1994)". Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_-_95.html
+  (images `00_main_images/..._page_NN_main_image.jpg`, page N = printed page
+  N, bound to shimano95.pdf; the full-page JPGs are 1560x2209 and the spec
+  tables are readable at that size, not at the PDF render size). 1995 model
+  year. Rear cover "Jul. 1994 Shimano Inc., 0794 Printed in Belgium XBC
+  IZM", Shimano Europe B.V. (Nunspeet). Pages: 6-21 MTB (XTR, Deore XT,
+  Deore LX, STX-RC, specs p16-17, feature charts p18-21), 22-37 STX,
+  Alivio, Acera-X, Altus C90, MJ / MJ-II (specs p32-33, 37), 38-39
+  700CX / 400CX, 40-41 Nexus (Inter-7, Inter-M, Revo-Shifter), 42-57 road
+  (Dura-Ace, 600 Ultegra, 105SC, RX100, RSX, Exage 300EX; specs p52-55),
+  58-73 technology pages (IG, Top-Swing, Dual SIS and Dual Control charts
+  p66-67, BB chart p71, headset specs p73), 74-76 small parts and tools,
+  77-85 SPD shoes, 86-87 Test Point, 88 rear cover.
+- New for 1995: IG drivetrain (CS-IG60 / IG50, CN-IG50 / IG30, SGX-II
+  chainrings) on STX-RC / STX / Alivio; Top-Swing front derailleur
+  (Alivio, Acera-X, MJ-II, RSX); XTR M910 generation (RD / ST / FH / HB /
+  SP-M910, FC-M900-II); Deore LX M565 / M566 (8-speed) and PD-M535; STX
+  MC32 / MC33; Altus C90 (CT90, Pre-Select, Easy-Set BB-CT90); Acera-X
+  M290; MJ-II (MJ05 / MJ06); RSX (A410 / A413) and Exage 300EX; Nexus
+  Inter-7 hub with Inter-M roller brake and Revo-Shifter; SP-7410 seat post.
+- year_to -> 1995 on 53 rows (ids 411, 442, 960, 961, 6145, 7670, 6146,
+  6133, 6368, 3960, 3972, 3971, 3977, 4532, 3951, 7675, 7666, 7758, 7752,
+  2471, 7756, 7759, 7753, 7760, 7754, 7707, 7706, 142, 7719, 7737, 1203,
+  7668, 7671, 7762, 7755, 7567, 1195, 7574, 7568, 7566, 7665, 7614, 3527,
+  7761, 3572, 7573, 7569, 3088, 5892, 7669, 4537, 1843, 2532): road brakes,
+  levers and 8-speed shifters, SPD pedals, 700CX / 400CX, the UN / LP / CS
+  bottom brackets, HG cassettes and chains, 105SC / 300EX hubs, CS-M900-8
+  and SP-M900 (still listed in the XTR spec table next to the M910 parts),
+  RD-A550 (RD-A550-GS), FD-A553, STX RD-MC32 and FC-MC32.
+- Date fixes (all had velobase 1990-1990): 6364 ST-M738 -> 1994-1995
+  (rewritten description); 2535 FD-MC33 -> 1995 (STX-RC is 1995, STX itself
+  1994); 4531 RD-A410 GS retitled "RD-A410-SS / RD-A410-GS, RSX" (old title
+  "Shimano RD-A410 GS, RSX", search_text rewritten) -> 1995; 6366 ST-A410
+  and 1006 BR-A410 -> 1995 (RSX is "brand new" for 1995; SL-A410 was already
+  1995-1998).
+- 96 rows added, source_ref 174, group_id from the existing groups where
+  they exist (XTR M900 60, Deore XT M737 136, Deore LX M560 Series 135, STX
+  189, STX RC 190, Alivio 277, ALTUS 183, RSX 143, Exage 300EX 185, RX100
+  57, Nexus 312) and three new groups Acera-X, MJ, MJ-II. year_from 1994
+  only where the '94 entry above names the code (XT RD / FC / HB-M737,
+  HP-M741 / M742, LX M563 / M564 ST, FC, HB, FH, HP, FC-MJ10 / MJ12, RX100
+  FD / FC / FH / SL-A551); everything else 1995. Spec-table names that
+  differ from the photo captions: FC-M900-ti (photo FC-M900-II), HG-M738-A
+  (a typo for HB-M738-A), HB-J05 (photo HB-MJ05), FC-AS53 / RD-AS53 do not
+  exist (misreads of FC-A550-T / RD-A550-GS).
+- Not added (no DB category): SO-M900 / SO-M730 skewers, DF-M730 chain
+  deflector, SM-SP17 cable guides, SM-ST10 / SM-CS50 / SM-ST74, tools,
+  cable and casing, brake shoes, footwear and SPD cleats.
+- Left unresolved: descriptions of the 53 year-extended rows were not
+  enriched from the 1995 spec tables (weights, capacities); 7558 SP-7410
+  1986-1986 (source 73) is NOT a duplicate (the 1986 semi-oval B-type
+  SP-7410, distinct from the 1994 SP-7410, id 5895) and was left; FD-M566
+  (2494, no dates) and FD-M738 (2504, 1996-1998) not in this manual;
+  RD-MC32 / FC-MC32 were 1993-1993 from velobase while the '95 manual says
+  the STX group dates from 1994, so their year_from is doubtful; FH-M737 /
+  FH-M737-A and HB-M737-A / HB-M738-A share a row or pair across ids;
+  PD-M535 is "available early 1995" so its 1995 start is the catalogue
+  year, not a firm date. Capped at 1994 (not in the '95 manual): RD / ST /
+  FH / HB-M900, FC-M900 (1848), FH-M560 / HB-M560-F / FC-M560, FD-M563,
+  ST-MC30 (6369), Altus C50 / Tourney / STX MC30 parts.
+
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
 - Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West
