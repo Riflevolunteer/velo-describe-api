@@ -202,8 +202,9 @@ const LABEL_TO_CATEGORY = {
   'tire configuration': ['Tyres'],
   pedal: ['Pedals'],
   pedals: ['Pedals'],
-  hub: ['Hubs'],
-  hubs: ['Hubs'],
+  // Hub gears (Sturmey-Archer, Sachs Torpedo) are their own DB category.
+  hub: ['Hubs', 'Geared Hubs'],
+  hubs: ['Hubs', 'Geared Hubs'],
   crankset: ['Cranksets'],
   cranksets: ['Cranksets'],
   headset: ['Headsets'],
@@ -596,6 +597,8 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // Peugeot 1970-72 (Dutch catalogues): two velobase rows share the title.
+    'simplex criterium': [{ from: 1965, to: 1970, id: 4644 }, { from: 1971, to: 1973, id: 4645 }], // Simplex Criterium 1965-70 / 1971-73
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace': [{ from: 1990, to: 1996, id: 4505 }], // RD-7402 (8sp); matcher took Dura-Ace EX
     'shimano ultegra': [{ from: 1990, to: 1991, id: 4466 }], // RD-6400, 600 Ultegra; matcher took 1997 RD-6500
@@ -779,6 +782,8 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1973 Peugeot (Dutch catalogue).
+    'normandy high flange simplex quick release': [{ from: 1960, to: 1980, id: 3391 }], // Maillard Normandy (high flange, oblong holes)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace 32h': [{ from: 1990, to: 1996, id: 3562 }], // FH-7403-HG / HB-7400-F
     'shimano ultegra 32h': [{ from: 1990, to: 1992, id: 7565 }], // FH-6401-HG (7sp HG cassette on the Virata)
@@ -903,6 +908,11 @@ const COMPONENT_OVERRIDES = {
     'maillard dural large flange quick release': 3391, // Maillard Normandy (high flange, oblong holes) 1960-80
     'maillard large flange quick release': 3391, // Maillard Normandy high flange
     'maillard large flange': 3391, // Maillard Normandy high flange
+  },
+  'Geared Hubs': {
+    // 1971 Peugeot (Dutch-market catalogue).
+    'fichtel & sachs 3 speed': [{ from: 1962, to: 1984, id: 2694 }], // F&S 415 (PE 40 / PE 45; caliper-braked, so not the 515 coaster)
+    'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
     // 1970 Peugeot (Dutch-market catalogue).
@@ -1148,8 +1158,11 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1973 Peugeot (Dutch catalogue).
+    'stronglight 49 d 45 53t': 1895, // Stronglight 49D (Depose), as the 1975 Motobecane / 1979 Peugeot 49 D picks
+    'stronglight 45 52t': null, // 1971 Peugeot PA 10 S: 45/52 tooth chainset, not the 1950 Stronglight 45 model
     // 1970 Peugeot (Dutch-market catalogue).
-    'stronglight competition 45 52t': [{ from: 1963, to: 1970, id: 1902 }], // Stronglight 63 Super Competition (PX 10)
+    'stronglight competition 45 52t': [{ from: 1963, to: 1972, id: 1902 }], // Stronglight 63 Super Competition (PX 10; the 1971 and 1972 Dutch catalogues repeat the 1970 wording)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano ultegra 53 42t': [{ from: 1988, to: 1999, id: 1790 }], // FC-6400, 600 Ultegra
     'shimano 105 52 42t': [{ from: 1990, to: 1992, id: 1782 }], // FC-1055-SG, 105SC
@@ -1341,6 +1354,7 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    'touring bend': null, // 1971 Peugeot children's bikes: generic bend, not the GB Touring Bend
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
     '3ttt record competition superlight covered with black leather': 2767, // 3ttt Record Competizione Superleggero
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
@@ -1567,6 +1581,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    'rubber block': null, // 1971 Peugeot sports bikes: generic, not the Roger Piel row
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace clipless': [{ from: 1988, to: 1993, id: 3971 }], // PD-7401
     'shimano 105 clipless': [{ from: 1990, to: 1995, id: 3955 }], // PD-1055, 105SC

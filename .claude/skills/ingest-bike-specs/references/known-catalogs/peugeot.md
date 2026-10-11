@@ -94,3 +94,78 @@
 - Left unlinked: Mafac Course brakes (no row), Altenburger Synchron (two
   logo variants), Simplex Competition 46/50 chainrings (Chainrings
   category, not reachable from Crankset), generic alloy / tubular cells.
+
+## 1971 Peugeot — `1971_peugeot_spec.csv` (11 bikes, 134 specs, 22 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1971.html
+  (12 pages "catalogues cycles Peugeot 1971 labibleduvelo (1)-(12).jpg",
+  1415 px, PeugeotShow.com scans). Dutch-market "Peugeot Fietsen" price
+  list, Cycles Peugeot Nederland NV, Haarlem (dealer stamp Epi Kuiper,
+  Winschoten); prices in guilders incl. 14% BTW. Translated by hand.
+- Full range transcribed (26 models, backed up in the scratchpad as
+  1971_peugeot_spec.with-children.csv); at the user's request the 15
+  children's and folding / town models were dropped before loading, as
+  with 1979: P 8 EH (P 8 E without gears, 54 cm, "for about 12 years"),
+  G 50 C / CD / E, G 45 C, G 40, F 50 E, F 45, F 40, RML, DA 22 E,
+  RA 22 E, DA 40 E (Torpedo Duomatic), RA 40 E, PC.
+- Loaded: Racing PA 10 E (now 52-60 cm, f. 368), PA 10 S (PA 10 E with
+  a Stronglight BB and 45/52 chainset, f. 399), P 10 (f. 299), PX 10
+  (f. 688); Sports PX 8 (Mafac Racer, Simplex hubs, stainless mudguards,
+  36/50 mountain option), P 8 E, PE 41 (5-speed), PE 22 (single speed),
+  PE 40 (F&S 3-speed); Ladies Sports PE 25 (3-speed derailleur option
+  f. 249 noted), PE 45 (F&S 3-speed). Racing specs repeat 1970.
+- Generator: LABEL_TO_CATEGORY 'hub' / 'hubs' now also match Geared
+  Hubs (no other catalogue changed); new 'Geared Hubs' overrides
+  'fichtel & sachs 3 speed' -> 2694 F&S 415 (caliper-braked bikes, so not
+  the 515 coaster) and 'fichtel & sachs torpedo duomatic' -> 2700
+  (Duomatic 102 & 101; only the dropped DA / RA 40 E used it). Nulls:
+  Handlebars 'touring bend' (was GB Touring Bend), Pedals 'rubber block'
+  (Roger Piel), Cranksets 'stronglight 45 52t' (1950 Stronglight 45).
+  PX 10 crank override (Stronglight 63) extended to 1971.
+- Left unlinked: Altenburger Synchron, Mafac Course, generic alloy /
+  leather / tubular cells.
+
+## 1972 Peugeot — `1972_peugeot_spec.csv` (11 bikes, 139 specs, 22 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1972.html
+  (11 PeugeotShow scans, 7 GIF + 4 JPG). Dutch "Peugeot Fietsen '72",
+  Cycles Peugeot Nederland (dealer stamp Jos. Nefkens & Zn., Amersfoort).
+- Loaded the adult range only (user rule from 1971): Racing PA 10 E
+  (54-60 cm, 45/52, f. 398), PR 10 (new: PA 10 E with Reynolds 531 frame,
+  Stronglight BB and steel chainset, f. 470; replaces the 1971 PA 10 S),
+  P 10 (f. 319), PX 10 (f. 748); Sports PX 8 (45/52, f. 342), P 8 E (45/52,
+  f. 273), PE 41 (54 / 57 / 60 cm, f. 257), PE 22, PE 40 (F&S 3-speed,
+  cable brakes); Ladies Sports PE 25 (3-speed derailleur option f. 269),
+  PE 45. Not loaded: G 50 C / CD, G 45 C, G 40, RML, J 8 (youth, 11-14),
+  NJ, DA 22 E / DA 40 E (take-apart), NS 22 / NS 40 / PNS (Nouveau Style
+  small-wheel town bikes).
+- Generator: Rear Derailleurs 'simplex criterium' ranged — 4644 (1965-70)
+  to 1970, 4645 (1971-73) from 1971; the three 1971 rows were re-linked
+  4644 -> 4645 with criterium-rear-fix.sql (3 rows). PX 10 Stronglight 63
+  crank override extended to 1972.
+
+## 1973 Peugeot — `1973_peugeot_spec.csv` (4 bikes, 60 specs, 14 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1973.html
+  (7 images). Mixes two catalogues: the Dutch "Peugeot Fietsen '73"
+  (cover + pp. 8-9 only, full specs, kg weights, guilder prices) and two
+  pages of the French general catalogue (one line per model: Tourisme HA /
+  PL / PRP, Randonneurs HA 50 / P 50 / PL 50 / PX 50 L, Sport HA 8 / P 8 /
+  PL 8 / PX 8 L, Course PN 10 / P 10 / PA 10 L / PR 10 L / PX 10 L,
+  Week-end, Nouveau Style, Jeunes gens, Juniors). Only the four Dutch
+  racing bikes were loaded; the French index has no component specs and
+  its P 10 would collide with the Dutch one.
+- Bikes: P 10 (Bocama lugs, Prestige, Normandy high flange, 11.5 kg,
+  f. 349), PA 10 E (Prestige front / Criterium rear, Stronglight steel
+  cottered, Mafac Racer, f. 439), PR 10 (orange, Reynolds 531 / Nervex,
+  Stronglight 49 D 45/53, 10.8 kg, f. 529), PX 10 (Simplex Super
+  Competition / Super Criterium, Stronglight 93, Normandy Super
+  Competition, Mavic Monthlery, Mafac Racer Professional, Brooks
+  Professional or Ideale 90, 10.2 kg, f. 828).
+- Overrides: Hubs 'normandy high flange simplex quick release' -> 3391
+  (1960-80); Cranksets 'stronglight 49 d 45 53t' -> 1895 (as 1975
+  Motobecane / 1979 Peugeot). Matcher: Stronglight 93 -> 1904, Mavic
+  Monthlery -> 5093 (existing override).
+- Left unlinked: Super Competition / Super Criterium, Mafac Racer
+  Professional, Altenburger Synchron, Normandy Super Competition hubs,
+  the either/or saddle.

@@ -17,7 +17,7 @@ that touched more than one brand) live separately:
 - [known-catalogs/colnago.md](known-catalogs/colnago.md) — Colnago (2 entries)
 - [known-catalogs/derosa.md](known-catalogs/derosa.md) — De Rosa (1 entry)
 - [known-catalogs/falcon.md](known-catalogs/falcon.md) — Falcon (2 entries)
-- [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (2 entries)
+- [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (5 entries)
 - [known-catalogs/zeus.md](known-catalogs/zeus.md) — Zeus (1 entry)
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — matcher/override bugs, label normalization, DB-wide dedupe sweeps (6 entries)
 
