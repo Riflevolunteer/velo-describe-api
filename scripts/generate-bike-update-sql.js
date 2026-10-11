@@ -1816,6 +1816,7 @@ const COMPONENT_OVERRIDES = {
     'suntour pn6000 14 15 17 19 21 24t': 7813, // Sirocco: SunTour PN-6000 / PS-6000, Perfect (6-speed); ebykr's transcription reads "Pro6000", the scan "PN6000"
     'suntour pn5000 14 17 20 24 28t': 2245, // Classic: SunTour 1100-1106 / PT-5000, Perfect (5-speed)
     'sun tour ultra 6 13 14 15 18 21 24t': 2240, // Clubman: SunTour NW-6500, New Winner Ultra 6 (same block as 1983)
+    'suntour ultra 6 silver 14 16 18 21 24 28t': 7812, // Record Ace: SunTour US-6500, Perfect Ultra-6 (14T start rules out NW-6500; 28T top is beyond the row's 14-26T, nearest fit)
     'regina oro 13 14 15 16 17 18t': 2194, // Team Replica: Regina Oro (6 speed)
     'shimano 600 ax cassette 13 14 15 16 17 19 21t': 1197, // Road Ace: Shimano AX, 600 AX (Cassettes row)
     // 1978 Raleigh (US, ebykr scan).
@@ -1834,6 +1835,7 @@ const COMPONENT_OVERRIDES = {
     'sun tour perfect 6 speed 14 15 17 19 21 24t': 7813, // Europa / Supersport
     'uniglide 14 28t 5 speed with spoke protector disc': 7475, // Silhouette: Shimano MF-1500, Uniglide freewheel
     'sun tour ultra 6 silver 13 14 15 18 21 24t': 2240, // Clubman: SunTour NW-6500, New Winner Ultra 6 (13T top rules out Perfect US-6500; US-6000 row is 1978 only)
+    'sun tour ultra 6 silver 14 16 18 21 24 28 teeth': 7812, // Record Ace: SunTour US-6500, Perfect Ultra-6 (same block as 1984)
     'shimano 600 ax cassette 13 14 15 17 19 21 teeth': 1197, // Road Ace: Shimano AX, 600 AX (row is under Cassettes; the CSV label is Freewheel)
     '13 24t regina oro 6 speed': 2194, // 1973 Raleigh: Regina Oro (6 speed)
     "13 24t regina d'oro 6 speed": 2194, // 1974 Raleigh Team Professional: Regina Oro (6 speed)
