@@ -1494,6 +1494,65 @@
   SQ-M900 / M730, DF-M730, cable guides / stoppers / cable boxes, FE-SF25,
   tools TL-UN72 / HG15 / CT10 / CN21 / WR38 / FC30 / FC10 / PD40 / PD73.
 
+## Shimano "'94 Bicycle System Components", English (E) dealer's product manual — printed 08.1993 (disraeligears.co.uk, 84 images)
+
+- `data_source` 173, label "Shimano Bicycle System Components 1994,
+  European edition (printed 08.1993)". Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_-_94_august_1993.html
+  (images `00_main_images/..._page_NN_main_image.jpg`, page N = printed page
+  N, bound to shimano94.pdf). 1994 model year. Rear cover "Aug. 1993 SEGH
+  Printed in Belgium", Shimano (Europa) GmbH + Shimano American Corp. +
+  Shimano Inc., European distributor list: the European printing, front
+  "English (E)". A sibling "'94 (November 1993)" document is linked from
+  the page and was not read. All 84 pages read: 57-65 are Advanced
+  Features (p59 Dual SIS and p61 Dual Control compatibility charts, both
+  with a BB column; p62 HyperDrive-C; p64-65 M-System), 74-83 SPD footwear
+  and accessories (no DB category), 84 rear cover.
+- Groups: XTR M900, Deore XT M737 (redone), Deore LX M563/M564
+  HyperDrive-C and M560, STX (MC30 / MC31-CH Special Edition, new), Alivio
+  (MC10 / MC11, new), Altus C50 (CT50, new), Tourney 30 / 20 / 15, MJ youth
+  (new), 700CX / 400CX, Dura-Ace 7400 and track 7600, 600 Ultegra 6400,
+  105SC 1055 / 1056, RX100 A550 / A551. p68 has the cartridge BB chart
+  (spindle / stamped marking / shell / chainline by crankset); p73 the BB
+  tools (TL-UN72 names UN90 / 91, UN70 / 71, UN50 / 51, CS10 / 11 / 20 / 21,
+  LP20 / 30). BB-UN72, BB-UN73 and BB-7700 are NOT in it (later parts).
+  p59 BB per group: XTR UN91; Deore XT M737 UN91 / UN71; Deore LX M563
+  UN71 / UN51 and M560 UN71 / UN51; STX UN51 / LP30; Alivio LP20; Altus
+  C50 and Tourney 30 CS11 / CS21; MJ LP30 / LP20; 700CX UN71 / UN51 / LP30;
+  400CX UN51 / LP30. p61: Dura-Ace FC-7410 + BB-7410, 600 Ultegra FC-6400
+  + UN71, 105SC FC-1056 + UN51, RX100 FC-A551 + UN51.
+- year_to -> 1994 on 61 rows listed as current: Dura-Ace PD-7410; 600
+  Ultegra SL-6401, SL-BS64-8, PD-6402, CS-HG90-8, CN-HG90, FC-6400 (1789);
+  105SC BR-1055 / BL-1055 / HB-1055 / FH-1056 / CS-HG70-8 / CS-HG70 /
+  CN-HG70; RX100 PD-A525 / PD-A550, HP-R500 / R501, CN-HG50; XTR ST / CS /
+  SP / FC / FH-M900; Deore XT PD-M737, CN-HG91, CS-M737, SP-M730; Deore LX
+  FC / FD / ST / HB / FH-M560, PD-M550 / M525; STX ST-MC30; 700CX / 400CX
+  (11 rows); Tourney RD-TY20, FD-TY25, FC-TY20/21, RD-TY15, SL-MY15,
+  CN-UG50, MF-HG20; BB 7706, 7707, 7719, 7737, 7196. Earlier start: 4533
+  RD-A551-GS 1996 -> 1994, 6368 ST-A550 NULL -> 1994-1994.
+- Retitled (old titles): 133 "Shimano BB-7410, Dura Ace 7410" -> "BB-7410,
+  Dura-Ace 7400" (FC-7410 only, 103mm SS103, 43.5 chainline, 230g); 142
+  "Shimano BB-UN90, XTR M900" -> "BB-UN90 / BB-UN91, XTR M900", 1992-1994.
+  search_text rewritten on both. Descriptions of 7706 / 7707 / 7719 gained
+  chainline and the 1994 crankset pairings; 7737 BB-CS21 / CS11 gained
+  Altus C50 and Tourney 30 / 20 / 15 (p59 chart).
+- Merged / deleted: 7705 "Shimano BB-UN91, XTR / Dura-Ace" (1993-1993,
+  source_ref 84, search_text "Shimano BB-UN91 XTR Dura-Ace") into 142. No
+  bike_spec links, no generator override. Its "also Dura-Ace 115mm for
+  FC-7402" note was dropped: the '94 chart pairs only FC-7410 with BB-7410.
+  A later source naming "BB-UN91 ... Dura-Ace" is the same part as 142.
+- Left: 133 BB-7410 year_from 1993 although FC-7410 (1821) starts 1994
+  (check the '93 catalogue); 3088 HP-6500 is dated 1990-1990 but the
+  catalogue calls the cartridge HP-6500 new for 1994; 3534 HB-6400-F
+  (1988-1991) is shown on p48 but shares a row with FH-6400-6/7; 7618
+  SL-MY20 (1990-91) is shown on p34 but left, as 1992-93 is unattested.
+- Not yet added (about 60 codes, the new 1994 off-road and entry-level
+  parts): XTR SQ-M900; Deore XT ST / RD / FC / HB-M737 / M738, SM-CS80,
+  HP-M741 / M742, SQ-M730, DF-M730; Deore LX M563 / M564 ST, RD, FC, HB, FH,
+  HP and SP-M560; STX MC30 / MC31-CH; Alivio MC10 / MC11; Altus C50 CT50;
+  Tourney 30 TY30 / BR-TY22-23 / BL-TY21; MJ10 / MJ12; RX100 FD-A551,
+  SL-A551, FC-A551, FH-A551. BB-A551 does not exist (RX100 uses BB-UN51).
+
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
 - Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West
