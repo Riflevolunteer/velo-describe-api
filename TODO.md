@@ -96,3 +96,15 @@
   - Magazine features: Bicycling Magazine 03-1969 Raleigh Professional and 05-1969 Dawes Galaxy road tests, ~13732-13757, 5 images
   - Not sources - restoration photo sets from the site's "Live Nude Bikes" section: 1975 Crescent Pepita Professional 320 De Luxe (~20725-20753, 8), 1983 Pino Morroni (~21735-21753, 9 - component close-ups), 1971 Gitane Super Corsa (~22841-22851, 5)
   - Not sources - the site owner's "Items For Sale" listings: Stronglight headset/bottom bracket flyer (1984) + Spence Wolf reproduction MAFAC brake booster plate (~25913-25934, 4 - the 1984 Stronglight flyer is 1 image, the rest are the booster plate), Campagnolo Record 29/R hollow axle and post-1977 crank arm dust caps (~30921-30946, 4), Pino Morroni titanium quick releases (~31109-31119, 6), NOS bar-end plugs / ALE toe clips / Stronglight chainring bolts / Christophe straps (~42593-42622, 6), MAVIC 365 stem (~42864-42873, 4)
+
+## Shimano bottom bracket cleanup (2026-10-11; 137->136 merge and 141 redate to 1998 applied, rest still open)
+
+Reviewed the 55 Bottom Brackets rows. Most apparent overlaps are distinct part numbers, so only one real merge.
+
+- Merge: 137 "BB-7200 (NJS) Dura-Ace EX for DynaDrive Crankset" (1980, bare velobase row, 296g, 0 specs) into 136 "GB-110 / BB-7200, Dura-Ace EX" (1978-84, 1 spec). Fold the NJS / DynaDrive / 296g note into 136's description, then delete 137.
+- Not duplicates, keep apart: 126 BB-6200 vs 7178 BB-6210 (126 already notes 6210 is the 119mm version); 7144 GB-100 Dura-Ace vs 7145 GB-200 600; 128 BB-SL31 vs 7543 BB-SL32; FF set 7446 / 7445 / 7471 / 7524 / 7525; 134 BB-7500 vs 7196 BB-7600.
+- Redate: 141 BB-6500 Ultegra 1990 -> 1998 (crank FC-6500, row 1847, is 1998). 135 BB-7700 undated, and crank FC-7700 (row 1824) is dated 1990, which looks wrong for Dura-Ace 7700 (check against a 1997 catalogue before changing either).
+- Leave undated until a 1994+ catalogue is found: 119 BB UN-72, 121 BB-UN73 (later than UN71 / UN91, 1993). 120 BB-LP27 (1990, velobase) is low confidence.
+- Titles with no description beyond "Japan" (119, 120, 121, 124, 135, 141) need a catalogue to enrich.
+- Name collision: 12 Brakes rows carry BB- codes (Tourney / 600 / 500 brakes, e.g. BB-100, BB-300, BB-400); any BB- search mixes them in. No change planned.
+- Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general, 1976 general, 1994+.
