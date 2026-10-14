@@ -456,6 +456,42 @@ app.get('/searchBikes', function (req, res, next) {
   }
 });
 
+// Creating a GET route that returns the most recently ingested bikes, newest
+// first, for the home-page "recently added" list. ?limit=N (default 5, max 20).
+// A whole catalogue shares one created_at, so bike_id breaks the tie.
+app.get('/recentBikes', function (req, res, next) {
+  const limit = req.query.limit === undefined ? 5 : Number(req.query.limit)
+  if (!Number.isInteger(limit) || limit < 1 || limit > 20) {
+    res.status(400).json({ error: 'limit must be an integer from 1 to 20' })
+    return
+  }
+  try {
+    connection.getConnection(function (err, connection) {
+      if (err) {
+        console.error(err && err.message)
+        return res.status(500).json({ error: err.message })
+      }
+      connection.query(`SELECT b.bike_id, b.title, b.category, b.year_from, b.year_to, b.created_at,
+                               bb.title as brand_title, ds.label as source_label FROM bike b
+                          left join bike_brand bb on bb.brand_id=b.brand_id
+                          left join data_source ds on ds.source_id=b.source_ref
+                          order by b.created_at desc, b.bike_id desc limit ?`, [limit], function (error, results, fields) {
+        connection.release();
+        if (error) {
+          console.error(error && error.message)
+          res.status(500).json({ error: error.message })
+          return
+        }
+        res.send(results)
+      });
+    });
+  }
+  catch (error) {
+    console.error(error && error.message)
+    res.status(500).json({ error: error.message })
+  }
+});
+
 // Spec categories that describe the bike itself rather than name a part that
 // could exist in component_detail: there is no component_category for a frame
 // material, a lug pattern, a gearing count or an "Extras" line, so their
