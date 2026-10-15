@@ -1,7 +1,7 @@
 # TODO
 
 
-- `GET /recentBikes?limit=5` (default 5, max 20) for the FE home-page "recently added" list (velo-describe TODO). Bikes only; components dropped (`component_detail` has no timestamp). Orders by `bike.created_at desc, bike_id desc`, so it catches new bikes only, not re-runs or spec edits. Returns `bike_id, title, category, year_from, year_to, created_at, brand_title, source_label`. Implemented in `index.js`, not yet run against the DB or wired into the FE. A whole catalogue shares one `created_at`, so the last 5 usually all come from the newest catalogue. If that looks repetitive, switch to the newest bike per `data_source`.
+- `GET /recentBikes?limit=5` (default 5, max 20) for the FE home-page "recently added" list (velo-describe TODO). Bikes only; components dropped (`component_detail` has no timestamp). Orders by `bike.created_at desc, bike_id desc`, so it catches new bikes only, not re-runs or spec edits. Returns `bike_id, title, category, year_from, year_to, created_at, brand_title, source_label`. Implemented in `index.js`, deployed and wired into the FE home screen (velo-describe 1.4.0). A whole catalogue shares one `created_at`, so the last 5 usually all come from the newest catalogue (currently all Peugeot); decided to keep as is.
 
 - convert to es-2015 using babel
 
