@@ -96,3 +96,40 @@
   '66' cable clip, cables and spares.
 - Unresolved: true print date; what OT / OR / ONW mean; whether 314 / 311
   really are the booklet's levers.
+
+## GB Synchron brake leaflet (c. 1965) — icenicam.org.uk, data_source id 175
+
+- Source: https://www.icenicam.org.uk/library/GB/Synchron_brake_leaflet.pdf
+  (3 pp, no text layer: p1 the Synchron advert, p2 the "Spares for GB
+  Synchron" price list, p3 the IceniCAM cover). G.B. Cycle Components Ltd,
+  Feltham, Middlesex; pre-decimal prices.
+- **Undated.** 1965 used as a single-year bound to match the c. 1965 GB
+  catalogue (155). Evidence is weak: only the Sport Mk. 3, Superhood and
+  quick-release levers appear and there are no SR164-style stirrup size
+  codes (the 1965 catalogue has them), so the leaflet may be a little
+  earlier (c. 1963-65). Pre-1971 from the prices.
+- Single-product leaflet, not a catalogue. Confirms the Synchron as in 155:
+  forged alloy stirrups pivoting on a common back plate, a stud on the L/H
+  stirrup bearing under the R/H one ("Synchronised" action), single spring,
+  operative stirrup depth 2"-2-1/4". Packs: with Sport Mk. 3 levers 45/6 a
+  pair, Superhood levers 47/6, quick-release levers 49/6. Superhood hood has
+  a slot for the metal insert of a GB rubber; the quick-release lever has an
+  automatic cable release.
+- Spare numbers (not in any row's years): 801 back plate, 802 L/H stirrup,
+  803 R/H stirrup, 804-807 anchor bolts, 808-811 nut, washer, seating pads,
+  812 spring, 813-817 pivot bolt parts, 818 cable adjuster, 819 cable clamp
+  bolt, 820 plastic cap, 562 Wetgrip blocks, 624-631 cables, 850 Superhood
+  lever complete (10/6), 851 block, 852 lever only, 853 fixing screw, 854
+  ferrule cup, 598 / 599 cross pin and nylon bush, 531 / 532 bar clips, 124A
+  quick-release lever complete (12/6).
+- Description rewritten, source_ref 155 -> 175, years unchanged: 8480
+  Synchron (adds stirrup depth), 314 Super Hood later version (adds the
+  850 / 851 / 852 Synchron-set spare numbers and the rubber slot), 8482 124a
+  Quick Release (adds "sold as a set with the Synchron" and 124A complete).
+- Matched with no change: 750 Sport Mk3 (the Synchron's standard lever).
+- Not in this leaflet, untouched: 311 Arret, 315 Superhood Rapide, 8475
+  Superhood Plus.
+- Rows added 0, deleted 0; no bike_spec links to the changed rows.
+- Out of scope: spares 801-820, Wetgrip blocks, cables, bar clips.
+- Unresolved: true print date; whether the Superhood spares 850-854 are the
+  same lever as 595-597 in 155 (taken as the same, sold with the Synchron).
