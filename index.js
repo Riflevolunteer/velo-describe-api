@@ -511,12 +511,38 @@ const NON_LINKABLE_SPEC_LABELS = new Set([
 // lists the most common unlinked value_text per linkable category with the
 // number of bikes carrying each, which is the worklist for the next catalogue
 // or COMPONENT_OVERRIDES pass; ?unlinked=N sets how many values per category
-// (default 10, max 50, 0 omits the list). Read-only aggregate SQL.
+// (default 10, max 50, 0 omits the list). ?bike_type=road,touring (or the
+// shortcut "kept", the types the road-bike scoping keeps) restricts every
+// number to bikes of those types so before/after link rates are comparable;
+// "unclassified" matches bikes with no bike_type yet. With no ?bike_type the
+// whole table is reported as before. by_bike_type always covers the whole
+// table, ignoring the filter. Read-only aggregate SQL.
+const BIKE_TYPES = new Set(['road', 'touring', 'track', 'cyclocross', 'mountain', 'tandem', 'city', 'hybrid', 'children', 'unclassified'])
+const KEPT_BIKE_TYPES = ['road', 'touring', 'track', 'cyclocross', 'mountain', 'tandem']
 app.get('/linkCoverage', function (req, res, next) {
   const unlinkedLimit = req.query.unlinked === undefined ? 10 : Number(req.query.unlinked)
   if (!Number.isInteger(unlinkedLimit) || unlinkedLimit < 0 || unlinkedLimit > 50) {
     res.status(400).json({ error: 'unlinked must be an integer from 0 to 50' })
     return
+  }
+
+  // Optional bike_type filter -> a WHERE fragment on bike alias b (+ params).
+  let bikeTypes = null
+  let typeWhere = ''
+  let typeParams = []
+  if (req.query.bike_type !== undefined) {
+    const requested = String(req.query.bike_type).split(',').map(t => t.trim()).filter(Boolean)
+    const unknown = requested.filter(t => t !== 'kept' && !BIKE_TYPES.has(t))
+    if (requested.length === 0 || unknown.length > 0) {
+      res.status(400).json({ error: `bike_type must be a comma-separated list of: kept, ${[...BIKE_TYPES].join(', ')}` })
+      return
+    }
+    bikeTypes = [...new Set(requested.flatMap(t => t === 'kept' ? KEPT_BIKE_TYPES : [t]))]
+    const named = bikeTypes.filter(t => t !== 'unclassified')
+    const clauses = []
+    if (named.length > 0) { clauses.push('b.bike_type IN (?)'); typeParams = [named] }
+    if (bikeTypes.includes('unclassified')) clauses.push('b.bike_type IS NULL')
+    typeWhere = `where (${clauses.join(' or ')})`
   }
 
   const query = (sql, params) => new Promise((resolve, reject) => {
@@ -535,8 +561,9 @@ app.get('/linkCoverage', function (req, res, next) {
                                 left join bike b on b.bike_id=bs.bike_id
                                 left join bike_brand bb on bb.brand_id=b.brand_id
                                 left join bike_spec_label bsl on bsl.label_id=bs.label_id
-                                group by bb.brand_id, bb.title, bsl.label_id, bsl.title`)
-  const bikesPromise = query('SELECT brand_id, COUNT(*) as bikes FROM bike group by brand_id')
+                                ${typeWhere}
+                                group by bb.brand_id, bb.title, bsl.label_id, bsl.title`, typeParams)
+  const bikesPromise = query(`SELECT b.brand_id, COUNT(*) as bikes FROM bike b ${typeWhere} group by b.brand_id`, typeParams)
   // Distinct bikes rather than spec rows, so a value repeated across a bike's
   // split compound cells doesn't count twice.
   const unlinkedPromise = unlinkedLimit === 0 ? Promise.resolve([]) : query(
@@ -545,11 +572,24 @@ app.get('/linkCoverage', function (req, res, next) {
                ROW_NUMBER() OVER (PARTITION BY bsl.label_id ORDER BY COUNT(DISTINCT bs.bike_id) DESC, bs.value_text) as rn
           FROM bike_spec bs
           join bike_spec_label bsl on bsl.label_id=bs.label_id
+          join bike b on b.bike_id=bs.bike_id
           where bs.component_id IS NULL and bsl.title not in (?)
+                ${typeWhere ? 'and ' + typeWhere.slice('where '.length) : ''}
           group by bsl.label_id, bsl.title, bs.value_text
-     ) ranked where rn <= ? order by label_id, rn`, [[...NON_LINKABLE_SPEC_LABELS], unlinkedLimit])
+     ) ranked where rn <= ? order by label_id, rn`, [[...NON_LINKABLE_SPEC_LABELS], ...typeParams, unlinkedLimit])
+  // Whole-table breakdown by bike_type (ignores the filter), so the effect of
+  // scoping to road bikes can be read off a single unfiltered call.
+  const byTypePromise = query(
+    `SELECT b.bike_type, COUNT(DISTINCT b.bike_id) as bikes, COUNT(bs.bike_spec_id) as specs,
+            SUM(bs.component_id IS NOT NULL) as linked,
+            SUM(bsl.title NOT IN (?)) as linkable_specs,
+            SUM(bsl.title NOT IN (?) AND bs.component_id IS NOT NULL) as linkable_linked
+       FROM bike b
+       left join bike_spec bs on bs.bike_id=b.bike_id
+       left join bike_spec_label bsl on bsl.label_id=bs.label_id
+      group by b.bike_type`, [[...NON_LINKABLE_SPEC_LABELS], [...NON_LINKABLE_SPEC_LABELS]])
 
-  Promise.all([cellsPromise, bikesPromise, unlinkedPromise]).then(([cellRows, bikeRows, unlinkedRows]) => {
+  Promise.all([cellsPromise, bikesPromise, unlinkedPromise, byTypePromise]).then(([cellRows, bikeRows, unlinkedRows, byTypeRows]) => {
     // SUM() comes back from the mysql driver as a DECIMAL string.
     const cells = cellRows.map(r => ({
       brand_id: r.brand_id, brand: r.brand, label_id: r.label_id, label: r.label,
@@ -611,7 +651,13 @@ app.get('/linkCoverage', function (req, res, next) {
       .filter(c => unlinkedByLabel.has(c.label_id))
       .map(c => ({ label_id: c.label_id, label: c.label, values: unlinkedByLabel.get(c.label_id) }))
 
-    res.send({ overall, categories, non_linkable_categories, brands, brand_categories, unlinked_values })
+    const by_bike_type = byTypeRows.map(r => finishTotals({
+      bike_type: r.bike_type === null ? 'unclassified' : r.bike_type, bikes: Number(r.bikes),
+      specs: Number(r.specs), linked: Number(r.linked),
+      linkable_specs: Number(r.linkable_specs), linkable_linked: Number(r.linkable_linked)
+    })).sort((a, b) => b.bikes - a.bikes)
+
+    res.send({ bike_type_filter: bikeTypes || undefined, overall, by_bike_type, categories, non_linkable_categories, brands, brand_categories, unlinked_values })
   }).catch((error) => {
     console.error(error && error.message)
     res.status(500).json({ error: error.message })
