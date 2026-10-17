@@ -181,3 +181,52 @@
   Eco and 4391 "Sachs (Eco?)" vs 4399; velobase Sachs Huret Rival / Rival
   Sport / AV 62.10D fronts vs 8488. "Huret Club brazed-on" (1984 Raleigh) is
   probably Club S (braze-on Club AS, 8489) — not linked.
+
+## Huret catalogue, English edition (c. 1980, undated) — cyclespeugeot.web.fc2.com "Part 98: Huret in 1980's", data_source id 188
+
+- Source: http://cyclespeugeot.web.fc2.com/reminiscence/huret1980s.html;
+  `catalog/huret1980s/huret_198x01.jpg` to `_10.jpg` (cover 360x507, nine
+  pages 720x1013). 60 avenue Felix Faure, Nanterre; back cover "member of
+  Frexa". No date printed; the page author guesses 1980, so every year bound
+  here is 1980 (single-year bound, not a start date). Export edition, ounces
+  and grams. Page map: p. 2-3 rear derailleurs, p. 3-4 front derailleurs and
+  levers, p. 5 adjustable stop plate and Sensomatic 3, p. 6 speedometers,
+  p. 7 accessories (fork ends 240 / 241 / 244 / 245), p. 8 road racing
+  components (brakes 342 / 343, lever 323, freewheels 685 / 686, Multito),
+  p. 9 chainwheels, BB axle, seat post, road pedal, p. 10 hubs, triple
+  chainwheel.
+- Range: rear Jubilee 2200 (148g), Success 2470 (175g, titanium), Super
+  Success 2470 S, Duopar titanium 2648 / 2654 (254g), Duopar / ECO 2690-01
+  (331g), Allvit III 2700 (296g), Allvit Safety III, Super Allvit III 2748
+  (312g), Challenger II 2400 / 2440 (180g), Eco 2490-01 (239g); front Jubilee
+  530 (80g), Success / Duopar 975 CPSC (132g, S.P.P. System, "NEW"),
+  Challenger II 1050-00 (120g) and CPSC version (132g), Eco 1000-01 / 1001-01
+  CPSC (158g, S.P.P.), Club II 1000-01 / 1001-01 (143g); levers Jubilee /
+  Success / Duopar 1164-00 (80g), Challenger II 548-01 / 546-01 (99g), Ratchet
+  1466 / 1468 (148g), Luxe 1136-01 / 1134-01 (128g), stem lever 1158-01,
+  Sensomatic 3 (positive selection, with the Eco rear for 24T maximum).
+- Diff on 2026-10-17: Huret (brand 139) and Sachs Huret (171) already held
+  about 165 rows from 1973 / 1975 / 1976 / June 1984 catalogues. The gap that
+  motivated the pass: no plain Eco front derailleur, so the six bike specs
+  "Huret Eco" (Front Derailleur) were unlinked.
+- Inserted (1980-1980, UUID source_id, group_id NULL): 8796 "Huret Eco
+  (front)" (Front Derailleurs; search_text "Huret Eco").
+- Updated, source_ref -> 188: 2379 Club II front year_to 1978 -> 1980 and
+  description (143g, 1000-01 / 1001-01); 2380 Challenger II front (description,
+  ref 1050-00, S.P.P. 132g); 4301 Huret Eco rear (description; measured 242g
+  kept); 4298 Challenger II rear (description, 180g, 2400 / 2440); 6064
+  Challenger II lever (description: it is a shifter, 99g with clip, 548-01 /
+  546-01); 4276 Duopar Eco year_to 1970 -> 1980 and description (331g, 2690-01).
+- Not inserted: the Huret chainwheels 1010 / 1006, BB axle 622, hubs 472 / 473 /
+  477 / 478, road pedal 490, seat post, brakes 342 / 343 and lever 323 (marked
+  "NEW" in this printing), since no bike spec names them; Allvit III / Safety
+  III / Super Allvit III rears (covered by 4290 / 4292 / 8172 under other
+  names, not checked line by line).
+- Does not explain "Huret Club brazed-on" (4 bikes) or "Huret ECO-S" front (2):
+  neither is named here (probably Club AS 8489 and a later Eco S).
+- Bike links: loading the row does not link existing specs; the six "Huret Eco"
+  front derailleur specs pick up 8796 when the bike generator is re-run for those
+  catalogues (not done; the removed non-road models must be stripped from the
+  CSVs first, see the `ingest-bike-specs` scope check).
+- Out of scope: speedometers (Universo, Multito cyclometer), fork ends, cable
+  stops and clips, driving gears, wing nuts, spoke protector 996.
