@@ -1717,6 +1717,47 @@
   descriptions — optional cleanup, not done.
 - Out of scope: FE-SF10 / FE-UF10 fork ends.
 
+## Shimano "Bicycle Component" pocket catalogue — 1976 (cyclespeugeot.web.fc2.com "Part 13: Shimano in 1976", 8 scans, Japanese)
+
+- Source: http://cyclespeugeot.web.fc2.com/reminiscence/shimano76.html. The
+  page links `../catalog/shimano76/shimano76_01.jpg` to `_07.jpg`; `_08.jpg`
+  also exists (the 600 Touring Ensemble) and `_09` redirects, so 8 scans,
+  480px tall (244-732px wide), Japanese text, partly legible. Pocket-size
+  folder: cover (John Nicholson, 1975 sprint world champion, on the Dura-
+  Ace 10 / Dura-Ace / 600 emblems), racers page (Nicholson, Maertens, Stam,
+  Shimano-Flandria and Shimano US teams), Dura-Ace 10 10mm-pitch track
+  ensemble, Dura-Ace track ensemble (12.7mm), Dura-Ace road ensemble (3
+  panels), 600 intro, 600 road ensemble, 600 touring ensemble.
+- Undated; the page says 1976. Consistent with that: Nicholson's 1975
+  title, Dura-Ace 10 (late 1976 launch sheet, data_source 153) with a road
+  model "coming soon", and no Dura-Ace EX (1978).
+- Codes read from the photo captions: Dura-Ace 10 GA-110 / GB-100, HA-310,
+  FA-210, QA-100; track GA-100, HA-300, FA-200, UA-200, NC-100; road GA-200,
+  GB-100, BA-100, MA-100, HA-100 / HA-200, FA-100 / FA-110, UA-100, EA-100,
+  DB-100 Crane / DB-110 Crane GS, LA-100, LD-500; 600 DC-200 / DC-210,
+  EC-200 / EC-210 ("Shimano 60" / "60 GS"), HB-100 / HB-200, GC-100 / GB-200,
+  BB-300, BE-100 (cantilever), MB-200, LB-180.
+- **Diff on 2026-10-17: every code already has a row, no years or
+  descriptions changed, no rows added or deleted, no data_source created**
+  (source_ref untouched everywhere). Matches: 7440, 7144, 7452, 7461, 7449,
+  1812, 7124, 7125, 7126, 1816, 3556, 3554, 2219, 2220, 3098, 988 / 989, 433,
+  2506, 4498, 4499, 6162 (L-284 / LA-100), 7113, 4462, 7110, 2474, 7112,
+  3531, 3530, 1786, 7145, 964, 7127, 7130, 7114. Existing years (1973 or 1975
+  to 1979 and later) already contain 1976; EC-200 / EC-210 end at 1976, still
+  compatible. The weights that were legible agree (MB-200 160g pair, GA-110
+  arm 239g). Existing descriptions come from the 1974 / 1977 / 1978
+  catalogues and are fuller than this scan, so nothing was rewritten.
+- The page claims the 600 series was introduced in this catalogue, but the
+  600 codes (DC-200, EC-200, HB-100, GC-100, BB-300, MB-200) are already
+  dated 1975 from the Dec 1974 catalogue (data_source 24), so 600 predates
+  1976; years left as they are.
+- Out of scope: fork ends NB-100 / NB-120 / NC-100 / ND-100 / NF-100, cable
+  guides and stoppers KA-/KB-, outer band KA-210, pump holder KD-100, the
+  600 road parts kit.
+- Unresolved: exact codes on the 600 touring panel (DC-210 / EC-210, BE-100
+  cantilever, NB-120 / NF-100 fork ends) were read at 480px and the 600 road
+  caliper is read as BB-300 from the caption; spec text is not reliable.
+
 ## Cleanup 2026-10-06 (no catalogue)
 
 - Deleted (user-approved): 1198 "Shimano FH-6361, 600 AX" (Cassettes,
