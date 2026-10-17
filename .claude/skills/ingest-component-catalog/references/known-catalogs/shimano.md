@@ -1809,6 +1809,50 @@
 - Unresolved: whether the domestic D-100 / D-110 Skylark, B-231 and GT
   console codes are separate parts or renumbers.
 
+## Shimano "105 Technical Information" sheets (1983), plus New 600 EX dealer catalogue pages — velo-pages.com via Wayback, data_source id 183
+
+- Source: velo-pages.com Gallery2 items 7179-7234 (the TODO's "Shimano 105
+  technical information (1983), 14 images"), read through the Wayback
+  Machine. Query tip: the CDX index canonicalises URLs and sorts the query
+  parameters, so search `velo-pages.com/main.php?g2_itemId=<prefix>` with
+  `matchType=prefix`, not `g2_view=core.DownloadItem&g2_itemId=...` (that
+  form silently returns 0 rows even for archived items). Each page is three
+  ids (original, thumbnail, resize); image bytes come from
+  `web.archive.org/web/<timestamp>id_/<original url>`.
+- The range holds **two documents**. 105 Technical Information (5 pages
+  archived at usable size, the rest only as thumbnails): 7179 (1275px) and
+  its 495px copy 7181 = Derailleur Set FD-A105 / RD-A105 / SL-A105 with the
+  front derailleur parts list (items 1-7, interchangeability with 600EX,
+  Deore-XT, Deore, Altus); 7185 specs and front derailleur assembly; 7191
+  rear derailleur and chain assembly; 7197 front chainwheel FC-S105 /
+  FC-S125 parts; 7200 FC specs, BB and crank assembly, tools TL-FC20 /
+  TL-FC30. From 7210 (1264px cover, "ENGLISH (U) Dealer Catalog") the New
+  Shimano 600 EX dealer catalogue with Service Plus parts lists (7216 intro,
+  7219 p. 2, 7222 RD-6207 / RD-6207GS, 7225 RD-6207 exploded view, 7228
+  FD-6207, 7231 FD-6207 exploded view, parts-list code 8310-US94A).
+- Dating: 1983; the 600 EX pages carry print code 8310 (Oct 1983) and the
+  105 Golden Arrow is the 1984 range, the same material as the New 600 EX
+  brochure (data_source 71).
+- Diff on 2026-10-17: the DB already matched almost everything, because the
+  brochure pass (71) had rewritten these rows. Matched, no change: FD-A105
+  2466 (14T, 115g), SL-A105 6132 (63g), BB-3L11 / BB-3P11 123 (116 / 119mm,
+  70mm shell 119 / 122mm), RD-6207 / GS 4470 / 4469 (195g / 217g), FD-6207
+  2481 (18T, 110g, 28 / 28.6mm clamps). The 600 EX dealer pages repeat the
+  brochure and add only spare parts lists. No new rows, no year changes.
+- Updated (descriptions only, source_ref -> 183): 4452 RD-A105 (brochure
+  233g against the technical sheet's 8.7oz / 247g, both named; capacity 13T
+  front difference, 28T rear, 28T total; Hexagon-Release), 2466 FD-A105
+  (Hexagon-Release), 1780 FC-S105 and 1781 FC-S125 (W-cut large-ring teeth,
+  short pin, recessed crank arm).
+- Not reachable: the other pages of the 105 technical information (lever
+  parts, hubs, brakes, freewheel, headset) are not archived at full size, so
+  the 105 BR-S105 / HB-F105 / HP-A105 rows are unchanged. RD-A105GS (4454)
+  is not on the archived pages.
+- Does not settle the Shimano gaps in the TODO: nothing here names BB-UN72,
+  BB-UN73 or BB-7700, so "1983 general" is not covered by this source.
+- Out of scope: numbered spare parts and exploded views, special tools
+  TL-FC20 / TL-FC30, assembly diagrams, the 600 EX marketing pages.
+
 ## Cleanup 2026-10-06 (no catalogue)
 
 - Deleted (user-approved): 1198 "Shimano FH-6361, 600 AX" (Cassettes,
