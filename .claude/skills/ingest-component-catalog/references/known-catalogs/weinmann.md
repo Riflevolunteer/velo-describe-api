@@ -341,3 +341,57 @@
   alongside the 913 rows, "sold as Weinmann" in the description).
 - Left: Delta 1095 / 1096 black variants; long-reach 570 53/71 (unnamed, no
   row). No bike specs name 570 / Prestige / Delta / 913.
+
+## R. J. Chicken & Sons trade catalogue, Weinmann section — 7 November 1979 (Weinmann/Cycle_fittings_from_R_J_Chicken_catalogue_1979-11-07.pdf, 32 pp, scan, no text layer), data_source id 180
+
+- Source: https://www.icenicam.org.uk/library/Weinmann/Cycle_fittings_from_R_J_Chicken_catalogue_1979-11-07.pdf
+  (IceniCAM). The Weinmann section (cat. pp. 43-67) of the UK distributor R.
+  J. Chicken & Sons Ltd's trade catalogue; the same 7 Nov 1979 catalogue as
+  Maillard (104), Selle Italia (176), Sedis (177) and Vredestein (179). PDF
+  pp.: 1 index, 2 blank, 3-6 = cat. pp. 43-46 rims (A124 / A129, high-pressure
+  210, Sprint 293, team photos), 7-8 = pp. 47-48 spares dispenser and 605
+  spares, 9-10 = pp. 49-50 the 605 brake and display boxes, 11-13 = pp. 51-53
+  Carrera and the black 500/500/161.1, 14-15 = pp. 54-55 Superbrake 734,
+  Symetric 733, Vainqueur 999, 16-17 = pp. 56-57 side-pull parts and the
+  500 / 730 / 810 / 890 / 1020 / 1080 range, 18-21 = pp. 58-61 racing levers,
+  22-23 = pp. 62-63 tourist levers, 24-26 = pp. 64-66 hangers, cables, blocks
+  (1741 "X", 1743 new late 1978), clamp and stainless mudguards, 27 = p. 67
+  CPSC braking test, 29-31 = the pink trade price sheet (cat. p. 68), 32
+  IceniCAM cover. "NEW" flags: Sprint rim 293, black 500/500/161.1, 157 / 158
+  / 149.1 levers; the 605 is "new".
+- Dated by filename (7 Nov 1979); a UK distributor listing is a first-
+  appearance record, not a start date. Almost everything was already in the
+  DB from the 1963, c. 1970, c. 1971, c. 1975, 1981, 1983 and 1987 sources, so
+  the pass was mostly confirmation and moving year_from back to 1979.
+- year_from -> 1979, source_ref -> 180: 7776 A124 Super X (1981), 5208 A129
+  Super Concave (1981; the DB had 580g, the 1979 sheet says about 620g, both
+  kept with the editions named), 1147 734 Super (1981), 8339 Symetric 733 /
+  813 / 1023 (1983), 8647 137-W / 138-W junior racing lever (1981), 8644
+  No. 149-1 (1981), 8645 No. 1690 extension lever (1981), 7770 No. 180 /
+  180-1 (1983). year_to -> 1979: 7927 230 Alesa (1975) and 7931 No. 160
+  (1970, a single c. 1970 leaflet entry). Descriptions extended on 7776,
+  5208, 7938 (293: 20.5mm / 370g / ETRO 1985.5mm in 1979, extruded; years
+  1970-81 already compatible), 1147, 8339, 8644 and 7770.
+- Inserted (1979-1979, UUID source_id, group_id NULL): 8773 No. 158 Junior
+  Racing Lever with extension (157 + 180.1) and 8774 139 tourist lever
+  (hooded straight; 136 / 136.16, 7936, is the earlier hooded straight lever).
+- Matched, no change: rims 210 (5204), A125 (7778), 605 (8642 and its
+  lettering variants), Vainqueur 999 610 / 750 (7929), side-pull 500 / 730
+  / 810 / 890 / 1020 / 1080 (8636, 8637, 1157, 7920, 1115, 7930), levers 131
+  (7934), 135 (7935), 144 / 144.1 (7769), 146 (7773), 151 / 154 (7937), 157
+  (495), 161 / 161.1 (7932), 162 (7933).
+- Left alone: 8660 No. 149 (1985, "longer stroke for city bikes") because the
+  1979 "149" is the 605-type racing lever, so the number was reused;
+  Carrera rows 1167 (earlier, 1970-80) / 1169 (later, 1970) / 1168 / 7763
+  because the "new Carrera" (anodised, 147 / 147.7 levers, Carlton-Weinmann)
+  cannot be told apart from them; 1119 500 (hex socket centre bolt, black) as
+  a possible match for the black anodised 500/500/161.1.
+- Not inserted: 134 straight tourist lever (7922 covers 133 / straight; the
+  catalogue uses 133 and 134 loosely) and the 170 / 1690 dual lever (8645
+  covers the 1690 extension).
+- Out of scope: brake blocks and shoes (1741, 74, 75, 1750, 1743, 76, 77,
+  1776), cables and inner wires, centre-pull hangers, handlebar clips, hoods,
+  spare parts and the spares dispenser, third-hand brake clamp, stainless
+  mudguards, spanners.
+- Unresolved: which Carrera row is the 1979 model; whether 1119 is the black
+  anodised 500.
