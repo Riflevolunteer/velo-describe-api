@@ -807,3 +807,44 @@
   override added, 7976 year_to 1992 -> 1993 (source_ref 47, 1993 Bianchi
   catalogue; spec still the 1992 catalogue's, named inline). 1993 Bianchi
   181 -> 182 linked.
+
+## SunTour dealer catalogue (1987), specification pages, and Maeda "Control Lever" parts pages (1976) — velo-pages.com via Wayback, data_source id 185
+
+- Source: velo-pages.com Gallery2 items 12884 / 12893 / 12899 / 12902 (the TODO's
+  "SunTour dealer catalog (1987), ~12884-12902, 4 images") and 12603 / 12606 /
+  12621 / 12624 (the "SunTour parts catalog (1976), ~12601-12625, 4 images"),
+  read through the Wayback Machine. Only these eight were archived at full size
+  (484x640 and 640x495); every other item in both ranges is a thumbnail. The
+  12606 snapshot is stored gzip-compressed: fetch it with `if_` instead of
+  `id_` in the Wayback URL.
+- 1987 dealer catalogue pages (landscape): p. 14 Shift Lever Specifications
+  (Superbe Pro SL-SB00, Index Power Control SL-IP00, Sprint LD-4850 / 4800,
+  Cyclone-7000 SL-CL10, Cyclone LD-3750 / 3700, alpha-5000 and alpha-3000
+  SL-5000 / SL-3000 side and stem mount, DLW LD-4250 / 4200, PUB-10 LD-4300,
+  UB-10 LD-3000, with braze-on and clamp-on weights), p. 17 Brake Caliper
+  Specifications (XC-9000 BA-XC00 570g, XC-Sport-7000 CB-6600 492g), p. 19
+  Brake Lever Specifications (CB-6200 306g, CB-6700 276g), p. 20 Crankset
+  Specifications (Superbe Pro CW-SOB10 / CW-SB10 634g, Sprint CW-7500 680g,
+  Cyclone-7000 CW-CL10 712g, all 52 x 42T 170mm). 1976 pages (portrait, Maeda
+  Industries Ltd, "Control Lever" parts lists 30-02 Cyclone, 30-03 PDL-M, 30-08
+  PUB-5, 30-09 NPUB-10): exploded views with part codes only, no printed date.
+- Diff on 2026-10-17: every model was already in the DB from the c. 1987
+  AccuShift leaflets (data_source 91) and the 1984 / 1989 catalogues, with the
+  same weights (SL-SB00 56 / 81g, SL-IP00 85 / 104g, UB-10 142g, PUB-10 168g,
+  XC9000 570g, CB-6600 492g, CB-6200 306g, CB-6700 276g, CW-7500 680g, CW-CL10
+  712g) and years that already contain 1976 for the parts pages (PDL-M 8056,
+  PUB-5 8058, N PUB 8254, Cyclone 6276). No rows added or deleted.
+- Updated, source_ref -> 185: year_to 1985 -> 1987 on 7835 DLW LD-4200 / LD-4250
+  and 7837 PUB-10 LD-4300 (both in the 1987 table); descriptions on 1993 CW-SB10
+  Superbe Pro (634g in the 1987 table against 680g in the 1989 catalogue, both
+  named, the velobase "634g (Spec)" dropped), 6278 LD-3700 and 7826 LD-3750 /
+  LD-3850 Cyclone (LD-3750 braze-on 51g in No. 62, 41g in 1987), 7849 Sprint
+  LD-4800 / LD-4850 (80g clamp-on, 56g braze-on) and 7851 SL-CL10 Cyclone 7000
+  (80g braze-on, 100g clamp-on).
+- Left: DLW LD-4250 braze-on weight (DB 74g from No. 62, the 1987 table reads
+  about 64g but the print is too small to be sure).
+- Does not fill the gaps that motivated it: Ultra 6 freewheel (4 bikes), HR
+  rear derailleur (4), Raleigh / Sun Tour Compe V front derailleur (4) and
+  AccuShift Plus X-Press (2) are not on the eight archived pages.
+- Out of scope: the parts listings (frame clamps, ratchets, springs, washers),
+  bike or marketing content.
