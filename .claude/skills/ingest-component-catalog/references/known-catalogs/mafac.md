@@ -61,3 +61,41 @@
   unresolvable variant. Existing links to 825 / 838 / 843 / 845 unchanged.
 - Left: which velobase lever row (357 vs 358) the catalogue lever really
   is; whether 836 or another 2000 row is the 1976 version; the Racer page.
+
+## MAFAC poster and parts chart (1979) — velo-pages.com "MAFAC Poster (1979)" via Wayback, data_source id 187
+
+- Source: velo-pages.com Gallery2 album "MAFAC Poster (1979)": items 2106
+  (illustrated poster of the range, 396x640), 2108 (parts chart, 2470 x 3997;
+  2110 is a smaller copy of it) and 2099 (a separate MAFAC advert, 495x640,
+  Tiger "Code 953, complete set 72/6" and Racer "Code 954, 65/-", pre-decimal
+  prices so 1960s; its album page is not archived, not used). Found while
+  trying to read the "Lyotard catalog (06-1977)" album (item 2087): the TODO's
+  ~2087-2110 cluster covers two albums; none of the Lyotard pages (2087-2098)
+  is archived above thumbnail size, so the Lyotard catalogue is unrecoverable
+  through Wayback.
+- Content (French): exploded parts views and brazing dimensions for the
+  brakes GT, "2000", LS and LS2 (side-pull, "tirage lateral"), "S",
+  Competition, LC, Racer, Raid, Critérium and Tandem (the last two with
+  brazed-on shoes); reach tables per model (h, Cm, H, ET, E, small / large /
+  adjustable stirrups); levers Course 121, 130, 218, 429, 435, Course Enfant
+  611, Guidonnet forgé 820, Ville forgé 725; the three-digit "code poignées"
+  scheme (lever, cocotte / hood, collar and rest) and collar sizes 106 B / S,
+  136 B / S, 206 S. The poster's low-resolution labels read Course 126 / 135 /
+  128, taken as 121 / 130 / 218 from the chart.
+- Diff on 2026-10-17: almost everything was already in the DB from the c. 1976
+  catalogue (data_source 143) with years that include 1979: GT 830, LS 833,
+  LS2 834 (1979), LC 832, Competition 825 / 826, Racer 838, Critérium 829,
+  Cyclo-Tandem 845, Raid 843, Course 429 357.
+- Updated, year_to -> 1979, source_ref -> 187 (years only, descriptions
+  untouched): brakes 836 MAFAC 2000 (later version) and 844 MAFAC S (both
+  1976), levers 355 Course 130 (1973), 356 Course 218 (1970), 343 Guidonnet
+  Forge 820 (1976), 8379 course enfant (1976, the poster's Course Enfant
+  611) and 8377 Ville VF (1976, the poster's Ville forgé 725).
+- Inserted (1979-1979, UUID source_id, group_id NULL): 8795 MAFAC Course 435
+  (Brake Levers); the DB had 419 / 429 and 519 / 529 but no 435.
+- Left alone: Course 121 rows 353 ("Top 63") and 354 ("Professional"), dated
+  1950-1960, because the 1979 Course 121 may be a later part under the same
+  number; the Tiger (846, 1960) and Racer variants (840-842); the reach tables,
+  since the existing descriptions of 836 and 838 are already full.
+- Does not help the unlinked bike specs "Mafac centre-pull" (5 bikes) and
+  "Mafac Course" (3), which are brand-only.
