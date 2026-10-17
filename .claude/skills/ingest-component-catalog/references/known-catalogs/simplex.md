@@ -527,3 +527,45 @@
   conformity, so the "CPSC version" split is doubtful but not resolvable
   from these sheets); 4657 SX100 T (bike override `'simplex sx 100 t'`
   unaffected).
+
+## Simplex "Derailleurs" catalogue, English edition (c. 1971, "Lucien Juy") — velo-pages.com via Wayback, data_source id 186
+
+- Source: velo-pages.com Gallery2 items 19978, 19988, 19991, 19994, 19995,
+  19997, 20000, 20003, 20006 (the TODO's "Simplex catalog (1971), ~19978-20006,
+  9 images"), read through the Wayback Machine. Landscape pages, 640x503 (19995
+  is 1575px). Cover and pp. 2-8 of an English edition; undated, 1971 comes from
+  the album title. pp. 9-11 (Click-shift and Stick-shift levers, handlebar
+  controls) were not archived. The catalogue covers derailleurs and levers only.
+- Page map: 19978 cover, 19988 p. 2 "Criterium" and "Super-Competition"
+  (professional racing series, 37-tooth capacity, 3 to 6-speed freewheels, 3/32
+  or 1/8in chains), 19991 p. 3 compositions and references, 19994 p. 4
+  "Prestige", 19995 / 19997 p. 5 Prestige compositions (the same page twice),
+  20000 p. 6 chain guards CP 249 / 252 / 253 and Prestige spare parts, 20003 p.
+  7 fitting diagrams, 20006 p. 8 "Mini-Prestige".
+- Parts: rear AR 637 NI "Criterium"; rear AR 637 P (standard fork ends) and NI
+  (gear hanger) "Prestige"; rear AR 513 "Mini-Prestige" (13-tooth capacity, no
+  front changer, mini-cycles / play-bikes / hi-risers, fork-end bracket 3197
+  for 9.5mm axles and 3197 E for 8mm); front AV 3 "Super-Competition"; front
+  AV 223 (double) and AV 323 (triple) "Criterium" and "Prestige" (screw 1928
+  replaced by 24 converts a 223 into a 323, 28mm); Criterium clip-on levers
+  3005 right, 3007 double, 3006 left with double clip; Prestige levers 2950
+  right, 2953 right braze-on, 2952 double, 2951 left on double clip, 2953 G left
+  braze-on, 2954 left on perforated clip (26 / 28mm); Mini-Prestige Stick-shift
+  2960 (28mm clip), 3003 (22mm), 2961 braze-on, 3004 head-set fitting.
+- Diff on 2026-10-17: the DB already had the Criterium and Prestige rows with
+  years that include 1971, from the 1975-1989 catalogues (data_source 51, 54-59,
+  140), so this is the earliest Simplex catalogue held. Updated (descriptions
+  only, source_ref -> 186): 4645 Simplex Criterium (1971-73, was a bare
+  "Simplex Criterium, France"), 4583 Prestige (variant of AR637P/NI), 2583
+  Prestige Criterium AV 223 (measured weights kept).
+- Inserted (1971-1971, UUID source_id, group_id NULL): 8793 AR 513 Mini-
+  Prestige (Rear Derailleurs), 8794 AV 3 Super-Competition (Front Derailleurs).
+- Left alone: the Criterium lever types (6222 2nd, 6223 3rd 1970, 6224 5th 1972-
+  78, the 4th type 1971 is not a row), the Prestige 5th type lever 6228
+  (1969-72), Click Shift 6207 and Stick Shift 6205 (1971).
+- Does not fill the gaps that motivated it: no Competition crankset (5 bikes),
+  no Competition seat post (4), no "Super Criterium" or "Prestige stem shifter"
+  by those names; those are not in the archived pages and the catalogue has
+  no cranksets or seat posts.
+- Out of scope: chain guards CP 249 / 252 / 253, clip-on cable stops and
+  tunnels 2112 / 2113, lever bosses and spare parts.
