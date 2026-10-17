@@ -740,6 +740,19 @@
   contents (37 pages), identical imprint "0182 F1/37M ... XBC IZM". Worth
   using instead of the Downloads copy if any 1982 page ever needs
   re-reading.
+- Second duplicate copy, checked 2026-10-17 and not loaded: "Part 47:
+  Shimano in 1982" on cyclespeugeot.web.fc2.com
+  (http://cyclespeugeot.web.fc2.com/reminiscence/shimano82.html), 44 scans
+  `../catalog/shimano82/shimano82_0001.jpg` to `_0044.jpg` at only 800x565,
+  so lower resolution than both copies above. Same page count and the AX
+  commentary matches this catalogue. Unresolved: the last scan's Japanese
+  footer looks like an April 1982 date and an imprint "0482F/50M ...
+  XBG IZM" rather than "0182 F1/37M ... XBC IZM", which would make it a
+  Japanese-market printing of the same catalogue (possibly with yen prices
+  or different weights), but the small print is not legible at 800px, so
+  it was treated as a duplicate and no pages were read. If a Japanese
+  edition's codes or weights ever matter, compare a few pages against the
+  2048px blogspot copy first.
 - Retitled: 3571 "HF-7261" -> FH-7261 (small flange 6-sp silver); 3541
   "Adamas AX (?)" hubs -> FH-AD61 / FH-AD65 1982-83; 1800 "Adamas AX, FF
   System" crank -> FC-FF33, FF System; 1404 Link-Lock -> CN-6130.
