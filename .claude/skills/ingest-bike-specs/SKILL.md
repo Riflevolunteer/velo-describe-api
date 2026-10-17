@@ -53,6 +53,38 @@ review step matters more than speed.
 
 ## Workflow
 
+### 0. Scope check: road bikes only
+
+The bike table holds road-type bikes only: road / racing, touring, track,
+cyclocross, mountain and tandem. Children's, city / roadster / utility /
+shopper / folding and hybrid (flat-bar, cross-terrain) models are out of scope:
+their specs are generic ("Chrome Plated Steel", "Rubber block", "Amberwall to
+suit wheel size") and drag the link rate down. 51 such bikes were deleted on
+2026-10-17 (Bianchi 27, Peugeot 12, Falcon 6, Motobecane 4, Raleigh 2). Before
+generating, classify every model in the CSV and drop the out-of-scope rows:
+
+- Evidence, in order: the catalogue's own section heading or a Type / category
+  column, then the specs (handlebars, tyre and wheel size, fenders, chain
+  guard / skirt guard, racks, kickstand, gearing). Not the model name alone.
+- Children's: 20-24" wheels, junior saddle or bars on every size (Raleigh
+  Micron 5, Falcon Model 58 Junior, Bianchi Bambina / Rekord ragazzo). An adult
+  range that merely offers a junior frame size (Raleigh "5 & 10" lines) is not
+  children's, and a small-framed racing bike (Bianchi Rekord 26) is road.
+- City: sports / comfort bars with fenders, chain guard or case, carrier,
+  kickstand, 3-speed hub or skirt guard on narrow 1-3/8" or 1-5/8" tyres
+  (Peugeot PE 22 / 25 / 40 / 41 / 45, Motobecane Nobly / Riviera, Bianchi
+  Viaggio and 1973 Sebino). A drop-bar bike with fenders and a rear rack is
+  still touring or road.
+- Hybrid: flat or bulge bars on 700c cross-terrain / hybrid models (Bianchi
+  1990 Cross-Terrain and 1993 Hybrid).
+- Back the CSV up to the scratchpad, remove the out-of-scope rows (the folder
+  is gitignored so the edit is untracked), and list the skipped models in that
+  catalogue's `references/known-catalogs/` entry so a later pass knows they
+  were left out on purpose. Borderline models: ask the user, don't guess.
+- Existing CSVs for already-loaded catalogues still contain the deleted
+  models. Re-running a generator on one of those files re-inserts them, so
+  strip the out-of-scope rows from the CSV first.
+
 ### 1. Inspect the CSV before generating
 
 Read the header and a few rows. Look for the faults every catalog so far has
