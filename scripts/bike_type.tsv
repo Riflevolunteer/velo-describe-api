@@ -1,0 +1,411 @@
+bike_id	brand	title	year	catalogue_category	proposed_type	confidence	reason
+117	Bianchi	Advantage	1993	Hybrid	hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+383	Bianchi	Advantage	1990	Cross-Terrain (Performance)	hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+397	Bianchi	Alfana	1990	Road (Competition)	road	high	racing/road by catalogue category or default
+379	Bianchi	Axis	1990	Cross-Terrain (Competition)	hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+381	Bianchi	Backstreet	1990	Cross-Terrain (Competition)	hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+324	Bianchi	Bambina	1985	Juvenile Road Racing	children	high	junior 22-24in wheels / Juvenile / Bambina
+382	Bianchi	Boardwalk	1990	Cross-Terrain (Performance)	hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+116	Bianchi	Boardwalk	1993	Hybrid	hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+87	Bianchi	BRAVA	1987		road	medium	NULL category, DL/US road range by specs
+370	Bianchi	C-4 Project	1988	Time Trial	road	high	racing/road by catalogue category or default
+317	Bianchi	Campione	1985	Road Racing	road	high	racing/road by catalogue category or default
+398	Bianchi	Campione d'Italia	1990	Road (Competition)	road	high	racing/road by catalogue category or default
+73	Bianchi	Campione d'Italia	1984	Road Racing	road	high	racing/road by catalogue category or default
+88	Bianchi	CAMPIONE D'ITALIA	1987		road	medium	NULL category, DL/US road range by specs
+65	Bianchi	Campione d'Italia	1983	Road Racing	road	high	racing/road by catalogue category or default
+67	Bianchi	Campione del Mondo	1983	Road Racing	road	high	racing/road by catalogue category or default
+366	Bianchi	Campione del Mondo	1982	Road Racing	road	high	racing/road by catalogue category or default
+318	Bianchi	Campionissimo	1985	Road Racing	road	high	racing/road by catalogue category or default
+315	Bianchi	Centenario	1985	Road Racing (100th anniversary limited edition)	road	high	racing/road by catalogue category or default
+106	Bianchi	Denali	1993	Mountain (Suspension)	mountain	high	catalogue Mountain / MTB bars and tyres
+76	Bianchi	Eco Pista	1984	Track (Fixed Gear)	track	high	Pista / Eco Pista / Super Pista
+70	Bianchi	Eco Pista	1983	Track (Fixed Gear)	track	high	Pista / Eco Pista / Super Pista
+377	Bianchi	Equinox	1990	Cross-Terrain (Professional)	hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+101	Bianchi	Eros	1993	Road (Triple)	road	high	racing/road by catalogue category or default
+399	Bianchi	Eros	1990	Road (Competition)	road	high	racing/road by catalogue category or default
+102	Bianchi	Europa	1993	Road (Triple)	road	high	racing/road by catalogue category or default
+123	Bianchi	Europa (00.5.50)	1973	Corsa	road	high	racing/road by catalogue category or default
+400	Bianchi	Forza	1990	Road (Performance)	road	high	racing/road by catalogue category or default
+95	Bianchi	Gatorade Team	1993	Road (Reparto Corse)	road	high	racing/road by catalogue category or default
+97	Bianchi	Genius / Chorus	1993	Road (Reparto Corse)	road	high	racing/road by catalogue category or default
+129	Bianchi	Ghisallo 26in Condor 10 vel. (00.5.62)	1973	Sport	road	medium	Ghisallo: 10-speed Condor with fenders and chain guard; borderline, kept
+128	Bianchi	Ghisallo 28in Condor 10 vel. (00.5.05)	1973	Sport	road	medium	Ghisallo: 10-speed Condor with fenders and chain guard; borderline, kept
+80	Bianchi	GIRO	1987		road	medium	NULL category, DL/US road range by specs
+374	Bianchi	Giro	1988	Road Racing	road	high	racing/road by catalogue category or default
+394	Bianchi	Giro	1990	Road	road	high	racing/road by catalogue category or default
+386	Bianchi	Grizzly	1990	Mountain (Professional)	mountain	high	catalogue Mountain / MTB bars and tyres
+107	Bianchi	Grizzly	1993	Mountain (Competition)	mountain	high	catalogue Mountain / MTB bars and tyres
+109	Bianchi	Ibex	1993	Mountain (Suspension)	mountain	high	catalogue Mountain / MTB bars and tyres
+376	Bianchi	Intercept	1990	Cross-Terrain	hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+96	Bianchi	Krono / Chorus	1993	Road (Reparto Corse)	road	high	racing/road by catalogue category or default
+375	Bianchi	Limited	1988	Road Racing	road	high	racing/road by catalogue category or default
+85	Bianchi	LIMITED	1987		road	medium	NULL category, DL/US road range by specs
+94	Bianchi	MG/Bianchi Team	1993	Road (Reparto Corse)	road	high	racing/road by catalogue category or default
+79	Bianchi	MONDIALE	1987		road	medium	NULL category, DL/US road range by specs
+371	Bianchi	Mondiale	1988	Road Racing	road	high	racing/road by catalogue category or default
+401	Bianchi	Mondiale Frameset	1990	Road (Frameset)	road	high	racing/road by catalogue category or default
+104	Bianchi	Nth FS	1993	Mountain (Full Susp.)	mountain	high	catalogue Mountain / MTB bars and tyres
+84	Bianchi	NUOVO ALLORO	1987		road	medium	NULL category, DL/US road range by specs
+63	Bianchi	Nuovo Racing	1983	Road Racing	road	high	racing/road by catalogue category or default
+364	Bianchi	Nuovo Racing	1982	Road Racing	road	high	racing/road by catalogue category or default
+72	Bianchi	Nuovo Racing	1984	Road Racing	road	high	racing/road by catalogue category or default
+365	Bianchi	Nuovo Touring	1982	Touring	touring	high	Touring / Randonneur / Super Turismo / Rallye
+111	Bianchi	Nyala	1993	Mountain (Sport)	mountain	high	catalogue Mountain / MTB bars and tyres
+390	Bianchi	Nyala	1990	Mountain (Performance)	mountain	high	catalogue Mountain / MTB bars and tyres
+391	Bianchi	Ocelot	1990	Mountain (Performance)	mountain	high	catalogue Mountain / MTB bars and tyres
+112	Bianchi	Ocelot	1993	Mountain (Sport)	mountain	high	catalogue Mountain / MTB bars and tyres
+389	Bianchi	Osprey	1990	Mountain (Competition)	mountain	high	catalogue Mountain / MTB bars and tyres
+110	Bianchi	Osprey	1993	Mountain (Sport)	mountain	high	catalogue Mountain / MTB bars and tyres
+387	Bianchi	Peregrine	1990	Mountain (Professional)	mountain	high	catalogue Mountain / MTB bars and tyres
+108	Bianchi	Peregrine	1993	Mountain (Competition)	mountain	high	catalogue Mountain / MTB bars and tyres
+395	Bianchi	Pista	1990	Road (Track)	track	high	Pista / Eco Pista / Super Pista
+81	Bianchi	PISTA	1987		track	high	Pista / Eco Pista / Super Pista
+373	Bianchi	Pista	1988	Track (Fixed Gear)	track	high	Pista / Eco Pista / Super Pista
+90	Bianchi	PREMIO	1987		road	medium	NULL category, DL/US road range by specs
+64	Bianchi	Professional	1983	Road / Criterium	road	high	racing/road by catalogue category or default
+115	Bianchi	Project 3	1993	700c Mountain	mountain	medium	700c Mountain / Mountain
+114	Bianchi	Project 5	1993	700c Mountain	mountain	medium	700c Mountain / Mountain
+113	Bianchi	Project 7	1993	700c Mountain	mountain	medium	700c Mountain / Mountain
+385	Bianchi	Project 7	1990	Mountain	mountain	medium	700c Mountain / Mountain
+392	Bianchi	Proto	1990	Road	road	medium	Proto: Vittoria tubulars, aero ITM bars
+66	Bianchi	Rallye	1983	Handcrafted Touring	touring	high	Touring / Randonneur / Super Turismo / Rallye
+322	Bianchi	Randonneur 700	1985	Touring	touring	high	Touring / Randonneur / Super Turismo / Rallye
+361	Bianchi	"Rekord ""M"" Strada"	1981	Sport Touring	road	medium	"catalogue ""Sport Touring"", Corsa Strada model"
+362	Bianchi	"Rekord ""W"" Strada"	1981	Sport Touring	road	medium	"catalogue ""Sport Touring"", Corsa Strada model"
+127	Bianchi	Rekord 22in 5 vel. ragazzo (00.5.69)	1973	Corsa, junior	children	high	junior 22-24in wheels / Juvenile / Bambina
+124	Bianchi	Rekord 24in 10 vel. ragazzo (00.5.55)	1973	Corsa, junior	children	high	junior 22-24in wheels / Juvenile / Bambina
+126	Bianchi	Rekord 24in 10 vel. tubolari (00.5.68)	1973	Corsa, junior	children	high	junior 22-24in wheels / Juvenile / Bambina
+125	Bianchi	Rekord 24in 5 vel. ragazzo (00.5.56)	1973	Corsa, junior	children	high	junior 22-24in wheels / Juvenile / Bambina
+323	Bianchi	Rekord 26	1985	Road Racing, 26 inch	road	medium	cro-moly, Campagnolo Gran Sport, 9.5kg, 370mm bar: small-framed racing bike
+120	Bianchi	Rekord 74 (00.5.67)	1973	Corsa	road	high	racing/road by catalogue category or default
+359	Bianchi	Rekord 748	1981	Road Racing	road	high	racing/road by catalogue category or default
+121	Bianchi	Rekord Strada 10 vel. (00.5.08)	1973	Corsa	road	high	racing/road by catalogue category or default
+99	Bianchi	SBX / Ultegra-STI	1993	Road (Reparto Corse)	road	high	racing/road by catalogue category or default
+98	Bianchi	SBX / Veloce	1993	Road (Reparto Corse)	road	high	racing/road by catalogue category or default
+131	Bianchi	Sebino 26in Condor 4 vel. (00.5.63)	1973	Sport	city	medium	fenders, chain guard/case, 4-speed or sport bars; skirt guard on donna; utility sport
+130	Bianchi	Sebino 28in Condor 4 vel. (00.5.03)	1973	Sport	city	medium	fenders, chain guard/case, 4-speed or sport bars; skirt guard on donna; utility sport
+132	Bianchi	Sebino 28in Lusso (00.5.17)	1973	Sport	city	medium	fenders, chain guard/case, 4-speed or sport bars; skirt guard on donna; utility sport
+384	Bianchi	Signature 2	1990	Mountain	mountain	high	catalogue Mountain / MTB bars and tyres
+388	Bianchi	Sika	1990	Mountain (Competition)	mountain	high	catalogue Mountain / MTB bars and tyres
+119	Bianchi	Special (00.5.66)	1973	Corsa	road	high	racing/road by catalogue category or default
+320	Bianchi	Speciale-II	1985	Road Sport	road	high	racing/road by catalogue category or default
+118	Bianchi	Specialissima Professionale (00.5.11)	1973	Corsa	road	high	racing/road by catalogue category or default
+133	Bianchi	Sport Donna/Cortina 26in (00.5.04)	1973	Sport, ladies	city	medium	fenders, chain guard/case, 4-speed or sport bars; skirt guard on donna; utility sport
+89	Bianchi	SPORT SX	1987		road	medium	NULL category, DL/US road range by specs
+360	Bianchi	Sprint/81	1981	Sport Touring	road	medium	"catalogue ""Sport Touring"", Corsa Strada model"
+86	Bianchi	SQUADRA	1987		road	medium	NULL category, DL/US road range by specs
+319	Bianchi	Squadra	1985	Road Racing	road	high	racing/road by catalogue category or default
+321	Bianchi	Strada	1985	Road Sport	road	high	racing/road by catalogue category or default
+92	Bianchi	STRADA	1987		road	medium	NULL category, DL/US road range by specs
+91	Bianchi	STRADA LX	1987		road	medium	NULL category, DL/US road range by specs
+122	Bianchi	Strada/Eco (00.5.19)	1973	Corsa	road	high	racing/road by catalogue category or default
+357	Bianchi	Super Corsa	1981	Road Racing	road	high	racing/road by catalogue category or default
+368	Bianchi	Super Corsa	1982	Road Racing	road	high	racing/road by catalogue category or default
+105	Bianchi	Super Grizzly	1993	Mountain (Suspension)	mountain	high	catalogue Mountain / MTB bars and tyres
+358	Bianchi	Super Leggera	1981	Road Racing	road	high	racing/road by catalogue category or default
+82	Bianchi	SUPER LEGGERA	1987		road	medium	NULL category, DL/US road range by specs
+69	Bianchi	Super Leggera	1983	World Champ Racing	road	high	racing/road by catalogue category or default
+75	Bianchi	Super Leggera	1984	Professional Racing	road	high	racing/road by catalogue category or default
+372	Bianchi	Super Leggera	1988	Road Racing	road	high	racing/road by catalogue category or default
+393	Bianchi	Super Leggera	1990	Road (Professional)	road	high	racing/road by catalogue category or default
+367	Bianchi	Super Leggera	1982	Road Racing	road	high	racing/road by catalogue category or default
+316	Bianchi	Super Leggera	1985	Road Racing	road	high	racing/road by catalogue category or default
+77	Bianchi	Super Pista	1984	Professional Track	track	high	Pista / Eco Pista / Super Pista
+369	Bianchi	Super Pista	1982	Track (Fixed Gear)	track	high	Pista / Eco Pista / Super Pista
+71	Bianchi	Super Pista	1983	Track (Fixed Gear)	track	high	Pista / Eco Pista / Super Pista
+363	Bianchi	Super Turismo	1981	Touring	touring	high	Touring / Randonneur / Super Turismo / Rallye
+378	Bianchi	Tangent	1990	Cross-Terrain (Professional)	hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+68	Bianchi	Tipo Corsa	1983	Professional Racing	road	high	racing/road by catalogue category or default
+74	Bianchi	Tipo Corsa	1984	Professional Racing	road	high	racing/road by catalogue category or default
+135	Bianchi	Touring 26in Sport donna (00.5.65)	1973	Sport, ladies	city	medium	fenders, chain guard/case, 4-speed or sport bars; skirt guard on donna; utility sport
+134	Bianchi	Touring 28in Sport uomo (00.5.64)	1973	Sport	city	medium	fenders, chain guard/case, 4-speed or sport bars; skirt guard on donna; utility sport
+137	Bianchi	Touring uomo (00.5.60)	1973	Viaggio	city	medium	Viaggio / Touring uomo-donna, 28x1-5/8 two-tone tyres, utility
+139	Bianchi	Touring Viaggio donna (00.5.61)	1973	Viaggio	city	medium	Viaggio / Touring uomo-donna, 28x1-5/8 two-tone tyres, utility
+83	Bianchi	TROFEO	1987		road	medium	NULL category, DL/US road range by specs
+138	Bianchi	Viaggio Lusso donna (00.5.02)	1973	Viaggio	city	medium	Viaggio / Touring uomo-donna, 28x1-5/8 two-tone tyres, utility
+136	Bianchi	Viaggio Lusso uomo (00.5.01)	1973	Viaggio	city	medium	Viaggio / Touring uomo-donna, 28x1-5/8 two-tone tyres, utility
+100	Bianchi	Virata	1993	Road (Performance)	road	high	racing/road by catalogue category or default
+396	Bianchi	Virata	1990	Road (Professional)	road	high	racing/road by catalogue category or default
+380	Bianchi	Volpe	1990	Cross-Terrain (Competition)	hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+93	Bianchi	VOLPE	1987		hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+103	Bianchi	Volpe	1993	Road (Triple/Cross)	hybrid	medium	catalogue Cross-Terrain / Hybrid, 700c cross or MTB-style bars
+78	Bianchi	X4	1987		road	medium	NULL category, DL/US road range by specs
+160	Cinelli	830 Victory	1986	Road Racing	road	high	racing/road by catalogue category or default
+161	Cinelli	840 SLX Competition	1986	Road Racing	road	high	racing/road by catalogue category or default
+159	Cinelli	850 SLX Super Record Pro	1986	Road Racing	road	high	racing/road by catalogue category or default
+162	Cinelli	860 Record Corsa	1986	Road Racing	road	high	racing/road by catalogue category or default
+163	Cinelli	Laser Road	1986	Road Time Trial	road	high	racing/road by catalogue category or default
+164	Cinelli	Laser Track	1986	Track	track	high	racing/road by catalogue category or default
+165	Cinelli	SLX Super Corsa Frameset	1986	Frameset	road	high	racing/road by catalogue category or default
+283	Colnago	Export	1979	Road Racing	road	high	racing/road by catalogue category or default
+305	Colnago	Gentleman Sport	1986	Sport / Touring	touring	medium	Gentleman / Lady Sport, fenders; Raid touring
+286	Colnago	International	1979	Road Racing	road	high	racing/road by catalogue category or default
+292	Colnago	International	1986	Road Racing	road	high	racing/road by catalogue category or default
+314	Colnago	Krono CX	1986	Time Trial Frameset	road	high	racing/road by catalogue category or default
+306	Colnago	Lady Sport	1986	Ladies Sport / Touring	touring	medium	Gentleman / Lady Sport, fenders; Raid touring
+313	Colnago	Master	1986	Frameset	road	high	racing/road by catalogue category or default
+301	Colnago	Master C-Record 180	1986	Road Racing	road	high	racing/road by catalogue category or default
+303	Colnago	Master Krono C-Record 180	1986	Time Trial	road	high	racing/road by catalogue category or default
+302	Colnago	Master Krono S.R.	1986	Time Trial	road	high	racing/road by catalogue category or default
+308	Colnago	Master Mountain Bike	1986	Mountain Bike	mountain	high	Mountain Bike
+300	Colnago	Master S.R.	1986	Road Racing	road	high	racing/road by catalogue category or default
+311	Colnago	Mexico	1986	Frameset	road	high	racing/road by catalogue category or default
+288	Colnago	Mexico	1979	Road Racing	road	high	racing/road by catalogue category or default
+296	Colnago	Mexico C-Record 180	1986	Road Racing	road	high	racing/road by catalogue category or default
+285	Colnago	Mexico Oro	1979	Road Racing	road	high	racing/road by catalogue category or default
+295	Colnago	Mexico S.R.	1986	Road Racing	road	high	racing/road by catalogue category or default
+290	Colnago	Nuovo Mexico	1979	Frameset	road	high	racing/road by catalogue category or default
+304	Colnago	Raid	1986	Touring	touring	medium	Gentleman / Lady Sport, fenders; Raid touring
+312	Colnago	Regal	1986	Frameset	road	high	racing/road by catalogue category or default
+298	Colnago	Regal C-Record 180	1986	Road Racing	road	high	racing/road by catalogue category or default
+297	Colnago	Regal S.R.	1986	Road Racing	road	high	racing/road by catalogue category or default
+299	Colnago	Regal S.R. 30nnale	1986	Road Racing	road	high	racing/road by catalogue category or default
+287	Colnago	Roger de Vlaeminck	1979	Road Racing	road	high	racing/road by catalogue category or default
+284	Colnago	Saronni	1979	Road Racing	road	high	racing/road by catalogue category or default
+309	Colnago	Super	1986	Frameset	road	high	racing/road by catalogue category or default
+289	Colnago	Super	1979	Road Racing	road	high	racing/road by catalogue category or default
+307	Colnago	Super Mountain Bike	1986	Mountain Bike	mountain	high	Mountain Bike
+291	Colnago	Super S.R.	1986	Road Racing	road	high	racing/road by catalogue category or default
+310	Colnago	Superissimo SLX	1986	Frameset	road	high	racing/road by catalogue category or default
+294	Colnago	Superissimo SLX S.R.	1986	Road Racing	road	high	racing/road by catalogue category or default
+293	Colnago	Victory	1986	Road Racing	road	high	racing/road by catalogue category or default
+335	De Rosa	35° Anniversario	1989	Road Racing (35th anniversary limited edition)	road	high	racing/road by catalogue category or default
+332	De Rosa	C Record	1984	Road Racing	road	high	racing/road by catalogue category or default
+337	De Rosa	Pista	1989	Track frameset	track	high	racing/road by catalogue category or default
+334	De Rosa	Pista Sei Giorni	1984	Track (six-day)	track	high	racing/road by catalogue category or default
+333	De Rosa	Professional	1984	Road Racing	road	high	racing/road by catalogue category or default
+336	De Rosa	Professional SLX	1989	Road Racing frameset	road	high	racing/road by catalogue category or default
+171	Falcon	Black Diamond Model 70	1974	Sports	road	high	racing/road by catalogue category or default
+271	Falcon	Black Diamond Model 70	1973	Sports	road	high	racing/road by catalogue category or default
+172	Falcon	Black Diamond Model 71	1974	Ladies Sports	road	high	racing/road by catalogue category or default
+272	Falcon	Black Diamond Model 71	1973	Ladies Sports	road	high	racing/road by catalogue category or default
+275	Falcon	Majorca Model 64	1973	Sports	road	high	racing/road by catalogue category or default
+277	Falcon	Model 58	1973	Junior	children	high	Junior racer, 24in wheels
+178	Falcon	Model 58	1974	Junior	children	high	Junior racer, 24in wheels
+276	Falcon	Model 68	1973	Sports	road	medium	Model 68: 10/5-speed, Maes bars, sizes to 25in; schoolboy note applies to the 19.5in frame only
+176	Falcon	Model 68	1974	Sports	road	medium	Model 68: 10/5-speed, Maes bars, sizes to 25in; schoolboy note applies to the 19.5in frame only
+177	Falcon	Model 69	1974	Ladies Sports	road	medium	Model 69: ladies version of Model 68
+175	Falcon	Model 84	1974	Sports	road	high	racing/road by catalogue category or default
+183	Falcon	Model E.C.72	1974	Sports	road	high	racing/road by catalogue category or default
+282	Falcon	Model E.C.74	1973	Sports	road	high	racing/road by catalogue category or default
+273	Falcon	Olympic Model 78	1973	Sports	road	high	racing/road by catalogue category or default
+173	Falcon	Olympic Model 78	1974	Sports	road	high	racing/road by catalogue category or default
+266	Falcon	San Remo Model 76	1973	Road Racing	road	high	racing/road by catalogue category or default
+166	Falcon	San Remo Model 76	1974	Road Racing	road	high	racing/road by catalogue category or default
+174	Falcon	San Remo Model 80	1974	Sports	road	high	racing/road by catalogue category or default
+274	Falcon	San Remo Model 80	1973	Sports	road	high	racing/road by catalogue category or default
+270	Falcon	San Remo Model 92	1973	Sports	road	high	racing/road by catalogue category or default
+170	Falcon	San Remo Model 92	1974	Sports	road	high	racing/road by catalogue category or default
+169	Falcon	San Remo Model 94	1974	Road Racing	road	high	racing/road by catalogue category or default
+269	Falcon	San Remo Model 94	1973	Road Racing	road	high	racing/road by catalogue category or default
+168	Falcon	San Remo Model 96	1974	Track	track	high	catalogue Track, fixed
+268	Falcon	San Remo Model 96	1973	Track	track	high	catalogue Track, fixed
+267	Falcon	San Remo Model 98	1973	Track	track	high	catalogue Track, fixed
+167	Falcon	San Remo Model 98	1974	Track	track	high	catalogue Track, fixed
+280	Falcon	Super Tourist Model 82	1973	Touring	touring	medium	catalogue Touring; 3/5-speed all-rounder bars, fenders, could be city
+281	Falcon	Super Tourist Model 83	1973	Touring	touring	medium	catalogue Touring; 3/5-speed all-rounder bars, fenders, could be city
+179	Falcon	Super-Tourist De Luxe Model 88	1974	Touring	city	medium	Super-Tourist De Luxe, straight bars, fenders, matching accessories
+278	Falcon	Super-Tourist De Luxe Model 88	1973	Touring	city	medium	Super-Tourist De Luxe, straight bars, fenders, matching accessories
+279	Falcon	Super-Tourist De Luxe Model 89	1973	Touring	city	medium	Super-Tourist De Luxe, straight bars, fenders, matching accessories
+180	Falcon	Super-Tourist De Luxe Model 89	1974	Touring	city	medium	Super-Tourist De Luxe, straight bars, fenders, matching accessories
+181	Falcon	Tourist Model 82	1974	Touring	touring	medium	catalogue Touring; 3/5-speed all-rounder bars, fenders, could be city
+182	Falcon	Tourist Model 83	1974	Touring	touring	medium	catalogue Touring; 3/5-speed all-rounder bars, fenders, could be city
+58	Kalkhoff	Amateur 05 S	1981		road	medium	NULL category, DL/US road range by specs
+59	Kalkhoff	Amateur 06 S	1981		road	medium	NULL category, DL/US road range by specs
+60	Kalkhoff	Amateur 56 S	1981		road	medium	NULL category, DL/US road range by specs
+57	Kalkhoff	Professional 10 S	1981		road	medium	NULL category, DL/US road range by specs
+56	Kalkhoff	Professional 11 S	1981		road	medium	NULL category, DL/US road range by specs
+55	Kalkhoff	Professional 13 S	1981		road	medium	NULL category, DL/US road range by specs
+61	Kalkhoff	Touring 05 S	1981		touring	high	Touring, Belleri touring bar
+62	Kalkhoff	Touring 55 S	1981		touring	high	Touring, Belleri touring bar
+51	Motobecane	Grand Jubile	1975		touring	medium	randonneur/touring bend with kickstand; could be city
+41	Motobecane	Grand Jubile	1974		touring	medium	randonneur/touring bend with kickstand; could be city
+52	Motobecane	Grand Record	1975		road	medium	NULL category, DL/US road range by specs
+42	Motobecane	Grand Record	1974		road	medium	NULL category, DL/US road range by specs
+40	Motobecane	Grand Touring	1974		touring	medium	randonneur/touring bend with kickstand; could be city
+50	Motobecane	Grand Touring	1975		touring	medium	randonneur/touring bend with kickstand; could be city
+43	Motobecane	Le Champion	1974		road	medium	NULL category, DL/US road range by specs
+53	Motobecane	Le Champion	1975		road	medium	NULL category, DL/US road range by specs
+39	Motobecane	Mirage	1974		touring	medium	randonneur/touring bend with kickstand; could be city
+49	Motobecane	Mirage	1975		touring	medium	randonneur/touring bend with kickstand; could be city
+37	Motobecane	Nobly	1974		city	medium	comfort/touring bend, fenders, rear carrier, gumwall
+47	Motobecane	Nobly/10	1975		city	medium	comfort/touring bend, fenders, rear carrier, gumwall
+46	Motobecane	Nobly/3	1975		city	medium	comfort/touring bend, fenders, rear carrier, gumwall
+38	Motobecane	Nomade	1974		touring	medium	randonneur/touring bend with kickstand; could be city
+48	Motobecane	Nomade	1975		touring	medium	randonneur/touring bend with kickstand; could be city
+45	Motobecane	Riviera	1975		city	medium	comfort/touring bend, fenders, rear carrier, gumwall
+44	Motobecane	Tandem	1975		other	high	Tandem
+54	Motobecane	Team Champion	1975		road	medium	NULL category, DL/US road range by specs
+196	Peugeot	H 10	1979	Road Racing	road	high	racing/road by catalogue category or default
+428	Peugeot	P 10	1973	Racing	road	high	racing/road by catalogue category or default
+408	Peugeot	P 10	1971	Racing	road	high	racing/road by catalogue category or default
+405	Peugeot	P 10	1970	Racing	road	high	racing/road by catalogue category or default
+419	Peugeot	P 10	1972	Racing	road	high	racing/road by catalogue category or default
+198	Peugeot	P 60 M	1979	Cyclotouring	touring	high	catalogue Cyclotouring
+200	Peugeot	P 65 M	1979	Cyclotouring	touring	high	catalogue Cyclotouring
+411	Peugeot	P 8 E	1971	Sports	road	medium	racing/touring bend, fenders, lighting and carrier; could be city
+422	Peugeot	P 8 E	1972	Sports	road	medium	racing/touring bend, fenders, lighting and carrier; could be city
+429	Peugeot	PA 10 E	1973	Racing	road	high	racing/road by catalogue category or default
+406	Peugeot	PA 10 E	1971	Racing	road	high	racing/road by catalogue category or default
+403	Peugeot	PA 10 E	1970	Racing	road	high	racing/road by catalogue category or default
+417	Peugeot	PA 10 E	1972	Racing	road	high	racing/road by catalogue category or default
+404	Peugeot	PA 10 EH	1970	Racing	road	high	racing/road by catalogue category or default
+407	Peugeot	PA 10 S	1971	Racing	road	high	racing/road by catalogue category or default
+206	Peugeot	PA 55 Sport Dames	1979	Sports	city	medium	Sport Dames, Helvetia bars, rack, lighting
+195	Peugeot	PBN 10 Course	1979	Road Racing	road	high	racing/road by catalogue category or default
+413	Peugeot	PE 22	1971	Sports	city	high	sports bend, fenders, lighting, carrier, chain guard, 28x1-5/8x1-3/8
+424	Peugeot	PE 22	1972	Sports	city	high	sports bend, fenders, lighting, carrier, chain guard, 28x1-5/8x1-3/8
+415	Peugeot	PE 25	1971	Ladies Sports	city	high	sports bend, fenders, lighting, carrier, chain guard, 28x1-5/8x1-3/8
+426	Peugeot	PE 25	1972	Ladies Sports	city	high	sports bend, fenders, lighting, carrier, chain guard, 28x1-5/8x1-3/8
+414	Peugeot	PE 40	1971	Sports	city	high	sports bend, fenders, lighting, carrier, chain guard, 28x1-5/8x1-3/8
+425	Peugeot	PE 40	1972	Sports	city	high	sports bend, fenders, lighting, carrier, chain guard, 28x1-5/8x1-3/8
+412	Peugeot	PE 41	1971	Sports	city	high	sports bend, fenders, lighting, carrier, chain guard, 28x1-5/8x1-3/8
+423	Peugeot	PE 41	1972	Sports	city	high	sports bend, fenders, lighting, carrier, chain guard, 28x1-5/8x1-3/8
+427	Peugeot	PE 45	1972	Ladies Sports	city	high	sports bend, fenders, lighting, carrier, chain guard, 28x1-5/8x1-3/8
+416	Peugeot	PE 45	1971	Ladies Sports	city	high	sports bend, fenders, lighting, carrier, chain guard, 28x1-5/8x1-3/8
+193	Peugeot	PF 10 Competition	1979	Road Racing	road	high	racing/road by catalogue category or default
+194	Peugeot	PFN 10	1979	Road Racing	road	high	racing/road by catalogue category or default
+210	Peugeot	PH 50	1979	Randonneur	city	medium	3-speed, randonneur bend, lighting
+205	Peugeot	PH 8 M 10 V	1979	Sports	road	medium	"""Course type"" bars, fenders, lighting; 5/10 speed sports"
+204	Peugeot	PH 8 M 5 V	1979	Sports	road	medium	"""Course type"" bars, fenders, lighting; 5/10 speed sports"
+190	Peugeot	PK 10 Competition	1979	Road Racing	road	high	racing/road by catalogue category or default
+197	Peugeot	PK 60 Gentlemen	1979	Cyclotouring	touring	high	catalogue Cyclotouring
+199	Peugeot	PK 65 Ladies	1979	Cyclotouring	touring	high	catalogue Cyclotouring
+191	Peugeot	PKN 10	1979	Road Racing	road	high	racing/road by catalogue category or default
+192	Peugeot	PKN 13	1979	Road Racing	road	high	racing/road by catalogue category or default
+209	Peugeot	PL 50 M 10 V	1979	Randonneur	touring	high	Randonneur, front and rear racks
+208	Peugeot	PL 50 M 5 V	1979	Randonneur	touring	high	Randonneur, front and rear racks
+203	Peugeot	PL 8 M 10 V	1979	Sports	road	medium	"""Course type"" bars, fenders, lighting; 5/10 speed sports"
+202	Peugeot	PL 8 M 5 V	1979	Sports	road	medium	"""Course type"" bars, fenders, lighting; 5/10 speed sports"
+418	Peugeot	PR 10	1972	Racing	road	high	racing/road by catalogue category or default
+430	Peugeot	PR 10	1973	Racing	road	high	racing/road by catalogue category or default
+188	Peugeot	PS 10 L Competition	1979	Road Racing	road	high	racing/road by catalogue category or default
+189	Peugeot	PSN 10	1979	Road Racing	road	high	racing/road by catalogue category or default
+187	Peugeot	PV 10 Super Competition	1979	Road Racing	road	high	racing/road by catalogue category or default
+402	Peugeot	PX 10	1970	Racing	road	high	racing/road by catalogue category or default
+420	Peugeot	PX 10	1972	Racing	road	high	racing/road by catalogue category or default
+409	Peugeot	PX 10	1971	Racing	road	high	racing/road by catalogue category or default
+431	Peugeot	PX 10	1973	Racing	road	high	racing/road by catalogue category or default
+186	Peugeot	PX 10 C	1979	Road Racing	road	high	racing/road by catalogue category or default
+207	Peugeot	PX 50 M Randonneurs	1979	Randonneur	touring	high	Randonneur, front and rear racks
+410	Peugeot	PX 8	1971	Sports	road	medium	racing/touring bend, fenders, lighting and carrier; could be city
+421	Peugeot	PX 8	1972	Sports	road	medium	racing/touring bend, fenders, lighting and carrier; could be city
+201	Peugeot	PX 8 M Sport Hommes	1979	Sports	road	medium	"""Course type"" bars, fenders, lighting; 5/10 speed sports"
+184	Peugeot	PY 10 CP Prestige Peugeot	1979	Road Racing	road	high	racing/road by catalogue category or default
+185	Peugeot	PY 10 LC Super Competition	1979	Road Racing	road	high	racing/road by catalogue category or default
+211	Peugeot	TH 8 Tandem	1979	Tandem	other	high	Tandem
+212	Peugeot	TM 8 Tandem	1979	Tandem	other	high	Tandem
+264	Raleigh	Ace 5 & 10	1983		road	medium	5&10 entry sports; junior bar only on 46-47cm frame, review
+146	Raleigh	Alyeska	1985	Lightweight Touring	touring	high	randonneur bars, racks/quickstand, touring tyres
+349	Raleigh	Classic 15	1984		touring	high	randonneur bars, racks/quickstand, touring tyres
+252	Raleigh	Clubman 12	1983		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+352	Raleigh	Clubman 12	1984		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+243	Raleigh	Clubman 12	1982		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+141	Raleigh	Competition	1985	Lightweight Racing	road	high	racing/road by catalogue category or default
+340	Raleigh	Competition 12	1984		road	medium	NULL category, DL/US road range by specs
+248	Raleigh	Competition 12	1983		road	medium	NULL category, DL/US road range by specs
+242	Raleigh	Competition 12	1982		road	medium	NULL category, DL/US road range by specs
+326	Raleigh	Competition GS	1978	Road Racing / Touring	touring	high	racing/road by catalogue category or default
+234	Raleigh	Competition GS	1977		road	medium	NULL category, DL/US road range by specs
+227	Raleigh	Competition Mk II DL 165	1975		road	medium	NULL category, DL/US road range by specs
+31	Raleigh	Competition Mk II DL 165	1973		road	medium	NULL category, DL/US road range by specs
+217	Raleigh	Competition Mk II DL 165	1974		road	medium	NULL category, DL/US road range by specs
+341	Raleigh	Corsa 12	1984		road	medium	NULL category, DL/US road range by specs
+154	Raleigh	Crested Butte	1985	Mountain Tour	mountain	high	"26in knobby/fat tyres, ""Mountain Tour"""
+155	Raleigh	Elkhorn	1985	Mountain Tour	mountain	high	"26in knobby/fat tyres, ""Mountain Tour"""
+258	Raleigh	Europa 12	1983		road	medium	NULL category, DL/US road range by specs
+246	Raleigh	Gran Sport 12	1983		road	medium	NULL category, DL/US road range by specs
+240	Raleigh	Gran Sport 12	1982		road	medium	NULL category, DL/US road range by specs
+218	Raleigh	Gran Sport DL 160	1974		road	medium	NULL category, DL/US road range by specs
+228	Raleigh	Gran Sport DL 160	1975		road	medium	NULL category, DL/US road range by specs
+32	Raleigh	Gran Sport DL 160	1973		road	medium	NULL category, DL/US road range by specs
+158	Raleigh	Grand Mesa	1985	Mountain Tour	mountain	high	"26in knobby/fat tyres, ""Mountain Tour"""
+329	Raleigh	Grand Prix	1978	Road Sport	road	high	racing/road by catalogue category or default
+236	Raleigh	Grand Prix	1977		road	medium	NULL category, DL/US road range by specs
+143	Raleigh	Grand Prix	1985	Lightweight Racing	road	high	racing/road by catalogue category or default
+35	Raleigh	Grand Prix DL 115	1973		road	medium	NULL category, DL/US road range by specs
+230	Raleigh	Grand Prix DL 115 & DL 115L	1975		road	medium	NULL category, DL/US road range by specs
+220	Raleigh	Grand Prix DL 115 & DL 115L	1974		road	medium	NULL category, DL/US road range by specs
+30	Raleigh	International DL 170	1973		road	medium	NULL category, DL/US road range by specs
+226	Raleigh	International DL 170	1975		road	medium	NULL category, DL/US road range by specs
+216	Raleigh	International DL 170	1974		road	medium	NULL category, DL/US road range by specs
+145	Raleigh	Kodiak	1985	Lightweight Touring	touring	high	randonneur bars, racks/quickstand, touring tyres
+150	Raleigh	Marathon	1985	Sport Touring	touring	medium	"catalogue ""Sport Touring"""
+356	Raleigh	Medale 5 & 10	1984		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+259	Raleigh	Medale 5 & 10 Ladies	1983		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+260	Raleigh	Medale 5 & 10 Mens	1983		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+265	Raleigh	Micron 5	1983		children	medium	20in / 24in wheels, junior bars or saddle
+149	Raleigh	Olympian	1985	Sport Touring	touring	medium	"catalogue ""Sport Touring"""
+144	Raleigh	Portage	1985	Lightweight Touring	touring	high	randonneur bars, racks/quickstand, touring tyres
+140	Raleigh	Prestige	1985	Lightweight Racing	road	high	racing/road by catalogue category or default
+225	Raleigh	Professional Mk IV DL 180	1975		road	medium	NULL category, DL/US road range by specs
+28	Raleigh	Professional Mk IV DL 180	1973		road	medium	NULL category, DL/US road range by specs
+215	Raleigh	Professional Mk IV DL 180	1974		road	medium	NULL category, DL/US road range by specs
+325	Raleigh	Professional Mk V	1978	Road Racing	road	high	racing/road by catalogue category or default
+233	Raleigh	Professional Mk V	1977		road	medium	NULL category, DL/US road range by specs
+29	Raleigh	Professional Track DL 175	1973		track	high	Professional Track, track bend/pista tubulars
+213	Raleigh	Professional Track DL 175	1974		track	high	Professional Track, track bend/pista tubulars
+224	Raleigh	Professional Track DL 175	1975		track	high	Professional Track, track bend/pista tubulars
+345	Raleigh	Pulsar 10	1984		road	medium	NULL category, DL/US road range by specs
+151	Raleigh	Pursuit	1985	Sport Touring	touring	medium	"catalogue ""Sport Touring"""
+344	Raleigh	Quasar 12	1984		road	medium	NULL category, DL/US road range by specs
+244	Raleigh	Rapide 12	1982		road	medium	NULL category, DL/US road range by specs
+253	Raleigh	Rapide 12	1983		road	medium	NULL category, DL/US road range by specs
+152	Raleigh	Record	1985	Sport Touring	touring	medium	"catalogue ""Sport Touring"""
+238	Raleigh	Record 24	1977		children	medium	20in / 24in wheels, junior bars or saddle
+330	Raleigh	Record Ace	1978	Road Sport	road	high	racing/road by catalogue category or default
+241	Raleigh	Record Ace 12	1982		road	medium	NULL category, DL/US road range by specs
+350	Raleigh	Record Ace 12	1984		road	medium	NULL category, DL/US road range by specs
+249	Raleigh	Record Ace 12	1983		road	medium	NULL category, DL/US road range by specs
+36	Raleigh	Record DL 130	1973		road	medium	NULL category, DL/US road range by specs
+231	Raleigh	Record DL 130 & DL 130L	1975		road	medium	NULL category, DL/US road range by specs
+221	Raleigh	Record DL 130 & DL 130L	1974		road	medium	NULL category, DL/US road range by specs
+331	Raleigh	Record FFS/PPS	1978	Road Sport	road	high	racing/road by catalogue category or default
+237	Raleigh	Record Limited	1977		road	medium	NULL category, DL/US road range by specs
+254	Raleigh	Record Sprint 12	1983		road	medium	NULL category, DL/US road range by specs
+343	Raleigh	Record Sprint 12	1984		road	medium	NULL category, DL/US road range by specs
+339	Raleigh	Road Ace 12	1984		road	medium	NULL category, DL/US road range by specs
+247	Raleigh	Road Ace 12	1983		road	medium	NULL category, DL/US road range by specs
+351	Raleigh	Royal 10	1984		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+251	Raleigh	Royal 10	1983		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+250	Raleigh	Royale 10	1983		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+156	Raleigh	Seneca	1985	Mountain Tour	mountain	high	"26in knobby/fat tyres, ""Mountain Tour"""
+257	Raleigh	Silhouette 5 & 10	1983		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+342	Raleigh	Sirocco 12	1984		road	medium	NULL category, DL/US road range by specs
+153	Raleigh	Sportif	1985	Sport Touring	touring	medium	"catalogue ""Sport Touring"""
+348	Raleigh	Sprint 5 & 10	1984		road	medium	5&10 entry sports; junior bar only on 46-47cm frame, review
+256	Raleigh	Stratos 10	1983		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+354	Raleigh	Stratos 10	1984		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+327	Raleigh	Super Course	1978	Road Sport	road	high	racing/road by catalogue category or default
+235	Raleigh	Super Course	1977		road	medium	NULL category, DL/US road range by specs
+34	Raleigh	Super Course DL 100	1973		road	medium	NULL category, DL/US road range by specs
+229	Raleigh	Super Course Mk II DL 100 & DL 100L	1975		road	medium	NULL category, DL/US road range by specs
+219	Raleigh	Super Course Mk II DL 100 & DL 100L	1974		road	medium	NULL category, DL/US road range by specs
+33	Raleigh	Super Course TT DL 105	1973		road	medium	NULL category, DL/US road range by specs
+328	Raleigh	Super Grand Prix	1978	Road Sport	road	high	racing/road by catalogue category or default
+222	Raleigh	Super Tourer DL 135 & DL 140	1974		touring	high	Super Tourer, touring bars, mudguards
+232	Raleigh	Super Tourer DL 140	1975		touring	high	Super Tourer, touring bars, mudguards
+142	Raleigh	Supercourse	1985	Lightweight Racing	road	high	racing/road by catalogue category or default
+261	Raleigh	Supersport 12	1983		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+346	Raleigh	Team Cadet 10	1984		road	medium	NULL category, DL/US road range by specs
+223	Raleigh	Team Professional DL 185	1975		road	medium	NULL category, DL/US road range by specs
+214	Raleigh	Team Professional DL 185	1974		road	medium	NULL category, DL/US road range by specs
+338	Raleigh	Team Replica 12	1984		road	medium	NULL category, DL/US road range by specs
+239	Raleigh	Team Replica 12	1982		road	medium	NULL category, DL/US road range by specs
+245	Raleigh	Team Replica 12	1983		road	medium	NULL category, DL/US road range by specs
+148	Raleigh	Team U.S.A.	1985	Sport Touring	touring	medium	"catalogue ""Sport Touring"""
+157	Raleigh	Teton	1985	Mountain Tour	mountain	high	"26in knobby/fat tyres, ""Mountain Tour"""
+355	Raleigh	Weekender 15	1984		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+263	Raleigh	Winner 5 & 10	1983		road	medium	5&10 entry sports; junior bar only on 46-47cm frame, review
+347	Raleigh	Winner 5 & 10	1984		road	medium	5&10 entry sports; junior bar only on 46-47cm frame, review
+262	Raleigh	Wisp 5 & 10	1983		road	medium	5&10 entry sports; junior bar only on 46-47cm frame, review
+147	Raleigh	Wyoming	1985	Lightweight Touring	touring	high	randonneur bars, racks/quickstand, touring tyres
+255	Raleigh	Zenith 10	1983		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+353	Raleigh	Zenith 10	1984		road	medium	entry drop-bar sports bike with fenders/carrier; city-leaning, review
+6	Zeus	Z 41	1973	Bicicleta Junior Alfa	road	medium	Z 41/46: 700c Dural rims, competition bars, 50-60cm, 11.5kg; junior/beginner tier of the racing range
+5	Zeus	Z 46	1973	Bicicleta Principiante Alfa	road	medium	Z 41/46: 700c Dural rims, competition bars, 50-60cm, 11.5kg; junior/beginner tier of the racing range
+4	Zeus	Z 59	1973	Bicicleta Profesional	road	high	racing/road by catalogue category or default
+3	Zeus	Z 66	1973	Bicicleta Ciclo-Cross	cyclocross	high	catalogue Ciclo-Cross, Cinelli bars
+2	Zeus	Z 67	1973	Bicicleta Pista Track / Velodrome	track	high	Pista Track
+1	Zeus	Z 77	1973	Bicicleta Suprema (Competition Road)	road	high	racing/road by catalogue category or default
