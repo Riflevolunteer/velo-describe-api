@@ -30,6 +30,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/gb.md](known-catalogs/gb.md) — GB / G.B. Cycle Components (3 entries)
 - [known-catalogs/atax.md](known-catalogs/atax.md) — ATAX / Guidons Philippe (1 entry)
 - [known-catalogs/nitto.md](known-catalogs/nitto.md) — Nitto (3 entries)
+- [known-catalogs/sedis.md](known-catalogs/sedis.md) — Sedis (1 entry)
 - [known-catalogs/selle-italia.md](known-catalogs/selle-italia.md) — Selle Italia (1 entry)
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands (velobase title-fixup conventions, etc.)
 
