@@ -1758,6 +1758,57 @@
   cantilever, NB-120 / NF-100 fork ends) were read at 480px and the 600 road
   caliper is read as BB-300 from the caption; spec text is not reliable.
 
+## Shimano "'74 Catalogue" (SHIMANO CATALOGUE '74 商品カタログ), Japanese domestic edition — 1974 (cyclespeugeot.web.fc2.com "Part 80: Shimano in 1974", 12 scans), data_source id 178
+
+- Source: http://cyclespeugeot.web.fc2.com/reminiscence/shimano74.html;
+  scans `../catalog/shimano74/1974shimano_01.jpg` to `_12.jpg` (`_13`
+  redirects). `_01` is the front / back cover at 1600x1131, the rest are
+  800x566 spreads: Dura-Ace photo spread (no codes), p. 1 3-speed hubs, pp.
+  2-3 rear derailleurs, p. 4 front derailleurs, pp. 5-7 shift levers, pp.
+  8-11 brakes, pp. 12-13 freewheels, pp. 14-15 hubs, p. 16 spoke protectors,
+  p. 17 tools, p. 18 mini-cycle. Japanese text; the codes are legible, the
+  small spec print is not. Undated beyond "'74"; Eagle D-350 to D-380 are
+  already the renumbered codes, so at least as late as the Jun 1974 export
+  catalogue (data_source 65). A different printing from that English export
+  edition, with a domestic numbering in places.
+- Matched, no change: Crane D-500 / 501 / 510 / 511 (4498, 4499), Titlist
+  D-600 / 601 / 610 / 611 (4437, 4438), Tourney D-700 / 701 / 710 / 711
+  (7368, 7369), Eagle D-350 to D-380 (7418-7421), Lark D-210 / D-220 / D-280
+  (7373, 7374, 4439), Titlist front E-304 (7376), Thunder Bird E-103 / E-104
+  and GPO E-113 / E-114 (7377, 2461 already list those codes), levers
+  L-223 / L-224 (7378), L-263 to L-266 (7381), L-273 to L-276 (7380), CL
+  L-345 (7424), L-110 and L-120 (7393, 7389), brake levers M-410 / M-310 /
+  M-110 / M-120 / M-210 / M-220 (7413, 7414, 7409, 7410), B-700 (7408), B-110
+  / B-120 (7407), coaster C-100 (7406), hubs H-710 / H-810, H-720 / H-820,
+  H-700 / H-800, H-300 / H-400 (7398-7400, 7402), T-200 (same 1100g, 28 / 36H
+  spec as 7403 T100).
+- year_to 1973 -> 1974, source_ref 60 -> 178: 7383 L231-L238 Short Lever
+  (only L-233 / L-234 down tube and L-235 / L-236 stem listed) and 7379
+  L241-L248 Long (only L-243 / L-244 / L-245 / L-246, the "New Long Lever").
+  Both descriptions note which versions were still listed.
+- 7408 B700 disc brake: description only, adds rear B-700, front B-701 and
+  disc hub H-190 (source_ref -> 178).
+- Inserted (1974-1974, UUID source_id, group_id NULL): 8766 L-293 / L-294 /
+  L-296 Unishift (one-way clutch; successor LB-200 Uni Shift 7119, 1975),
+  8767 L-545 / L-546 New Long Stem (long blades, 7/8in; L-535 / L-536 short
+  versions are already in 7385), 8768 D-290 Lark Mini (mini-cycle, about
+  190g), 8769 H-900 Combi 4-speed / Unit hub, 8770 D-702 mini-cycle disc
+  brake.
+- Not inserted (decided 2026-10-17): GT-500 L-431, GT-7 L-441, GT-5 L-451
+  and GT-5 console (3S) L-481 (unclear against the older L411 / L422 / L461 /
+  L472 consoles), EM lever L-169 / L-179, trigger L-152 (predecessor of
+  LD-200), Skylark D-100 / D-110 (probably the D160 Sky Lark, 7375, under
+  different codes), Tourney B-231 auto-adjust (likely BB-210, 1013, whose
+  "new" is 1975) and the C-220 / C-230 / C-240 / C-250 / C-260 side-pull
+  codes (against export B-220 / B-230, 7411), freewheels F-716 to F-724
+  (against export F916-F924, 7396) and the F-102 to F-113 / F-204 / F-205 /
+  F-235 multis (against F200-F512, 7397): the domestic numbering differs
+  from the export editions and the mapping is a guess.
+- Out of scope: spoke protectors P-100 / P-210 / P-310 / P-311, tools X-101
+  / X-102 / X-203 / X-301 / X-302 / X-401, the Dura-Ace photo spread.
+- Unresolved: whether the domestic D-100 / D-110 Skylark, B-231 and GT
+  console codes are separate parts or renumbers.
+
 ## Cleanup 2026-10-06 (no catalogue)
 
 - Deleted (user-approved): 1198 "Shimano FH-6361, 600 AX" (Cassettes,
