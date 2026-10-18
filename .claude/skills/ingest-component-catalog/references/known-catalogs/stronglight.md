@@ -54,3 +54,53 @@
   Stronglight no. 24 (1978), no. 27 (1984) and a 1958 catalogue, but only
   the 1980s PDF and no. 26 zip have download links. The velo-pages "Stronglight
   catalog (1958)" (~11505-11526, 6 images) is still unused, see TODO.
+
+## Stronglight "Catalogue n° 26" (16 scans, 1982, VeloBase archive)
+
+- `data_source` 195, label `Stronglight Catalogue no. 26 (1982)`. Source:
+  `Stronglight/Stronglight_no26.zip` (scans `01_front_cover.jpg` ..
+  `16_RearCovers.jpg`, credited "Bob Hanson, Albuquerque, 2008"). Bilingual
+  FR/EN, Etablissements Verot-Perrin, 54 bd Fauriat, Saint-Etienne, phone
+  "(77) 25-48-68" (old 6-digit format, so pre-Oct 1985). **Undated; 1982 is
+  the VeloBase index title** ("no. 26 (1982)", between no. 24 (1978) and no.
+  27 (1984)), which the contents fit: D8 and S7 headsets current, the 700T /
+  700A monobloc BB flagged "Nouveau modele", the 99 bis NM flagged "new
+  model only in 170". Cranks, BBs, headsets, tandem diagram and tools only.
+- Listed: cranksets 106, 104 (+ 104 bis), 99 bis NM (and 99 with
+  non-perforated rings), TS bis, 105 bis, 49, 49 Tri; BB sets 65, 34, 700T /
+  700A monobloc, 650 / 651 sealed; headsets D8, S7, P3, V4 Competition;
+  tandem series (sets 49 or 99 NM, a drive-side diagram, no part number).
+  Out of scope: extra-light screws 59 D-60 D / 61 D-62 D / 61 D-74 D,
+  grease, cap, tools 82-94, 220/221, 710, 720, 730.
+- Rows updated (17, `source_ref` 195). `year_to` -> 1982: 1882 "106", 1909
+  "99 BIS NM", 1906 "99", 1915 "Touring Sport Bis" (was 1970), 1880 "105
+  Bis", 1894 "49A" (was 1970), 1893 "49 Tri" (was 1970), 155 "Competition
+  ref. 65", 3125 "V4 Competition (later version)". Description only: 1879
+  "104 bis", 150 "700a", 151 "700t", 153 "No. 34", 157 "Competition ref.
+  651", 3117 "D8", 3123 "S7", 3120 "P3 (later version)". Weights matching
+  the DB exactly: 99 bis NM 944 g, 105 bis 908 g, 49 Tri 975 g, 49A 895 g,
+  TS bis 920 g, S7 192 g. No titles changed, so no `search_text` rewrites.
+- Row inserted: 8811 "Stronglight 104" (1982-1982, cranksets), the plain
+  104; the DB only had 104 bis (null years) and "104 (Peugeot logo)" 1878
+  (1980), which was left alone.
+- Edition difference: 157 (651 BB) is 275 g here and 272 g in the 1980s
+  brochure (`data_source` 194); both are named in its description and the
+  measured 238 g was kept.
+- Judgement calls and open items:
+  - 1894 "49A" was extended to 1982 on its 895 g weight match alone; the
+    catalogue calls the part simply "49".
+  - 1907 "99 (new style, drilled)", 1908 "99 (new style, triple)" and 1909
+    "99 BIS NM" may be the same part (bis = perforated rings). Not
+    merged; the catalogue cannot decide it and bike links were not checked.
+  - Null years kept null on 150, 151, 153, 1879 (700T / 700A are "new
+    model" here, so a 1982-ish start is plausible but not stated).
+  - The S7 headset: the DB's 1981-83 agrees with this catalogue. The
+    `generate-bike-update-sql.js` comment "catalogue shows it 1979" is not
+    supported by no. 26 (probably an earlier edition) and was left as is.
+  - Absent from no. 26 and so unchanged: D6 (3116, 1977-80), S5 (3122,
+    1973-80), 561 (154), 107 / 185 / 190 / 390 / Ironlight cranks (later or
+    not listed), 1878 104 (Peugeot logo), 1914 Touring Sport, 105 ter, 63
+    and earlier cranks, P3 Tandem, JDX94.
+  - Catalogues no. 24 (1978), no. 27 (1984) and a 1958 catalogue are named on
+    the VeloBase index but have no download link; the velo-pages "Stronglight
+    catalog (1958)" (~11505-11526, 6 images) is still unused, see TODO.
