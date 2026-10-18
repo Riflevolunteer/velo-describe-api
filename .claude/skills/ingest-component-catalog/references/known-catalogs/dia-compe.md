@@ -106,6 +106,40 @@
   DC-N row is the 500N, needs its own row), the 1974 Nomade "center pull" /
   "with extension levers" and the 1981 "dual brake levers" brakes (generic).
 
+## Yoshigai "DIA-WEINMANN" catalogue (7 pages, September 1964, Reminiscence Part 76) — data_source id 216
+
+- `data_source` 216, label "Yoshigai Dia-Weinmann catalogue (September 1964)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/yoshigai64.html, JPGs
+  `catalog/yoshigai64/1964_dia-weinmann_01-07l.jpg` (1024 x ~1450, legible) plus
+  `cycle195805_30-31.jpg` (a May 1958 Cycle magazine page on brake dimensions: not
+  Yoshigai and not a product list, not used). Japanese, Yoshigai Kikai Kinzoku
+  (Osaka). The parts page (04) is stamped "S. 39. 9" = Showa 39 = **September 1964**;
+  p. 6 says the calipers are the forged light-alloy calipers of the **1963** tie-up
+  between Yoshigai and Weinmann (Switzerland). The earliest Dia-Compe source we hold
+  (the next is the 1974 Tomoda list). Pages: 1 cover (lever and caliper drawings), 2
+  calipers No. 500 / 730 / 810 (reach A / B 43 / 57, 52 / 72, 61 / 79 mm; pairs
+  810 x 810 x 131 / 135 / 144, 810 x 131, 810 x 135, 810 x 810 x 144 (22 or 23.5), 730 x 730,
+  730 x 810, 500 x 500, 500 x 730), 3 levers 131 (131.1, 132.22 / 132.235 bands, 94 cup),
+  135 (135.1), 136 / 138 (136.1 / 138.1, 136.22 / 136.235 bands) and the start of 162, 4
+  levers 144 (144.1, .3, .4, .5, .6, .7, .8, bands 144.22 / .235), 160 / 161 / 162 (160.1,
+  160.9, 161.3) and the cable dimension table, 5 caliper parts diagram (40 / 42 bolts,
+  44.12, 46.x springs, 48 - 76.1), 6 "about DIA-WEINMANN calipers" text with the
+  Vainqueur 909 (centre-pull) and Weinmann 801 photos, 7 the brake-holder tool.
+- Updated (all `source_ref` -> 216): 8107 131 / 131D / 131DS, 8105 135 and 8801 162
+  `year_from` 1974 -> 1964, **on the judgement** that the 1964 Dia-Weinmann levers and the
+  later Dia-Compe rows are the same lineage (the 1974 rows already say "flat-type light
+  alloy lever" and "Weinmann 162 type"). 8801 now also notes the red-button QR.
+- New (3 rows, 1964-1964, brand 73): 8929 "500 / 730 / 810, Dia-Weinmann calipers"
+  (Brakes), 8930 "144 / 160 / 161, Dia-Weinmann racing levers", 8931 "136 / 138,
+  Dia-Weinmann touring levers". The calipers are **not** the later GC500 / N-brake rows
+  (688, 678, 681 and so on start 1970 as velobase "500"); the matching Weinmann AG
+  rows (8636 500, 8637 730, 1157 810, 1963 on) already exist and were left alone. The
+  1986 "138" (row 268) is a hand rest, a different part.
+- Left alone: 269 144C, 282 160C, 8866 (1986 144 / 151 / 160 / 161 / 162 no-hood), 8864 (Compe-G),
+  8869 (144T), and the centre-pull Vainqueur / 801 (no Dia-Weinmann part numbers). Out
+  of scope: arches, springs, bolts, washers, bridges, quick release 66, tool 64, cables.
+- No bike links or overrides touch the rows changed here.
+
 ## Dia-Compe NGC982-280 brochure + 986 instruction leaflet — undated (equusbicycle.com/bike/diacompe/diacompe.htm)
 
 - Two leaflets, four scans, no dates: `data_source` 115 "Dia-Compe
