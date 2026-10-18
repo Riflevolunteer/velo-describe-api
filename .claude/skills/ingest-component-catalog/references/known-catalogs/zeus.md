@@ -1,5 +1,72 @@
 # Zeus catalogs processed so far
 
+## Catálogo Zeus-103 (Abadiano, July 1977) — Reminiscence Part 94, 22 spreads, data_source id 208
+
+- `data_source` 208, label "Catálogo Zeus-103 (1977)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/zeus_77.html, JPG spreads
+  `catalog/zeus/1977_zeus_cover1-4, cover2-p01, p02-03 ... p40-41.jpg`
+  (**720 x 509 px, two pages per image, ~360 px per page**; the site's E-book
+  at adjustbook.com is dead, so no larger version; part numbers and most
+  weights read, fine print does not). `nc197801.jpg` on the same page is a New
+  Cycling (Jan 1978) Japanese advert showing this cover, a dating
+  corroboration. Zeus Industrial S.A., Abadiano (Vizcaya); foreword July 1977
+  for the 50th anniversary ("Desde 1926"); 44 pages, A4, Spanish and English.
+  Three series by material: Zeus-2000 (titanium, Super Earlumin II),
+  Criterium (Earlumin, Super Earlumin II), Gran Sport (Duralumin S, Earlumin).
+  Index: derailleurs 2-6, chainwheels 7-11, pedals 12-14, seat posts 15,
+  saddles and pumps 16, head sets 17, brakes 18-21, hubs 22-27, freewheels
+  28-29, fork ends and crowns 30, balls and grease 31, tools 32-36,
+  miscellaneous (clothing) 37, gallery 38-39. The Zeus-2001 side-pull brake
+  set is introduced here ("Zeus introduce el modelo 2001"). **Reference numbers
+  moved since 1973**: Ref. 80 was the Standard hub and is now the Zeus-2000
+  hub (80.1 Criterium), Ref. 34 was the Gran Sport cottered BB and is now the
+  Gran Sport chainwheel set, Ref. 24 was the Alfa front and is now the Gran Sport
+  rear, Ref. 73 was the Super Alfa lever and is now the Criterium lever, Ref. 61 is
+  now the Criterium head set (Gran Sport is 62), so rows were matched by model,
+  series and weight, not by Ref.
+- **Reading correction:** the Criterium chainwheel set Ref. 31 reads 848 g (it
+  first looked like 648 g; titanium Zeus-2000 is 698 g so it cannot be lighter),
+  which equals the DB's 848 g "quoted weight from Zeus catalog" on 2027.
+- Years extended to 1977 (`year_to`, all `source_ref` -> 208): 4860 Zeus 2000
+  rear (184 g, Ref. 20 = 185 g), 2686 Gran Sport front (115 g exact, Ref. 28),
+  2026 Criterium triple (31.1), 8144 Pista (31.3), 3654 Gran Sport hubs
+  (530 g exact, Ref. 81), 3651 Gigante (Ref. 82, 580 g vs 590 g in 1973), 3652
+  Pista hubs (Ref. 83), 3653 Criterium hubs (Ref. 80.1, 520 g), 3171 Gran Sport
+  head set (Ref. 62, 180 g vs 188 g), 3170 Criterium head set (Ref. 61),
+  5947 Gran Sport seat post (310 g exact, Ref. 52), 6392 track cog (83.1).
+  Undated rows dated 1977-1977: 2027 Criterium crankset (Ref. 31, 848 g), 2030
+  Gran Sport crankset (Ref. 34, 856 g; **a judgement**, the title says
+  "w/ Ciclo-Cross Chainguard" and the Ref. 31.2 cyclo-cross set in Catálogo 102
+  is single-ring, see the unresolved note under 102), 4049 / 4052 Zeus 2000
+  pedals later model (Refs. 43 / 44, 340 / 310 g), 5710 Zeus 2000 saddle (Ref.
+  55), 3168 Zeus 2000 head set (Ref. 60). 1178 Zeus 2001 brake `year_from` 1970
+  -> **1977** (**a judgement** against the velobase 1970-80: the 1977 catalogue
+  introduces the model and Catálogo 102 does not list it). Descriptions only
+  (years already cover 1977): 2680 (Ref. 26, 98 g), 2681 (Ref. 27, 106 g),
+  184 / 185 (Refs. 32.3 / 32, 175 g), 4056 (Ref. 48, 380 g), 4057 (Ref. 47,
+  420 g), 5946 (Ref. 51, 260 g). 26 rows updated in all.
+- New (8 rows, 1977-1977): 8853 "Ref. 10, Zeus-2000 double control lever"
+  (110 g), 8854 "Ref. 11, Gran Sport single control lever" (65 g; **may overlap
+  6334 "Single Lever"**, 45.4 g actual, 1970), 8855 "Ref. 12, Criterium double
+  control lever" (115 g), 8856 "Ref. 24, Gran Sport" rear derailleur (225 g;
+  4872 v2, 200 g, 1970 is probably an earlier version), 8857 "Ref. 80,
+  Zeus-2000 hub set" (titanium, 470 g), 8858 "Ref. 72.1, Zeus-2001 brake
+  lever" (106 g), 8859 "Ref. 56, Criterium leather saddle" (380 g), 8860 "Ref.
+  57, Gran Sport saddle" (320 g).
+- Left alone: the Criterium rear (Ref. 22, 215 g; cannot tell which of 4867 /
+  4868 / 4869), the Zeus-2000 chainwheel set (Ref. 30, 698 g; no weight match
+  among 2023 / 2024 / 2025), Ref. 33 Criterium BB (188, 270 g exact, nothing to
+  change), the 5-speed and 6-speed freewheels (2265 / 2266, weights exact),
+  Refs. 71 / 73 / 76 / 79 (1177, 505, 1179, years already cover 1977). The
+  Alfa series (2682, 4862, 4863, 4864, 8145, 8147, 1181), Ideale post 8151 and
+  the Imperforable tyre 8148 are absent from this catalogue, consistent with
+  their 1973 `year_to`. Out of scope: quick releases and axles 85-87, fork
+  ends and crowns 94-99, balls 130-161, grease 190, the tool range H0-H9,
+  clothing and bags V1/01-08, the gallery.
+- Deleted: none. Bike links on 2681, 3651, 3652, 3654, 4056, 4057 and 5946 are
+  unaffected (only years or descriptions changed, and the Zeus Gigante / Pista
+  hub overrides point at ids).
+
 ## Catálogo Zeus-102 (Abadiano, Enero 1973) — `ZEUS_102.pdf`, 174pp scan, data_source id 105
 
 First formal run of this skill against a Zeus catalogue, though a 1973 Zeus
