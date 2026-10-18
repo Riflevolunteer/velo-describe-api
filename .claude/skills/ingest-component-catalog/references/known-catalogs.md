@@ -37,7 +37,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/selle-italia.md](known-catalogs/selle-italia.md) — Selle Italia (1 entry)
 - [known-catalogs/vredestein.md](known-catalogs/vredestein.md) — Vredestein (1 entry)
 - [known-catalogs/stronglight.md](known-catalogs/stronglight.md) — Stronglight (2 entries)
-- [known-catalogs/gipiemme.md](known-catalogs/gipiemme.md) — Gipiemme (1 entry)
+- [known-catalogs/gipiemme.md](known-catalogs/gipiemme.md) — Gipiemme (2 entries)
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands (velobase title-fixup conventions, etc.)
 
 When a new brand shows up for the first time, create
