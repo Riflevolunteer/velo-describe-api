@@ -46,7 +46,7 @@
 - Unresolved: eight unlinked Sugino bike specs ("Sugino DGT" 1984 x3, "Forged
   Sugino LP" 1985, "Sugino Corsa 42/52" and "Sugino-Bianchi Corsa" 1981,
   "Sugino Mighty 46/36/26T" and "XE300" 1993) are not in this catalogue; the
-  1973 and 1982 pages are below, the 1995 page (`sugino_techno1995`) is still to do.
+  1973, 1982 and 1965 pages are below, the 1995 page (`sugino_techno1995`) is still to do.
 
 ## Sugino chain wheel catalogue (7 spreads, 1973, Reminiscence Part 29) — data_source id 211
 
@@ -99,3 +99,34 @@
   8897 OPC-XJ, 8898 No.5 FE-WB, 8899 "HP-UFO / HP-G2 / HP-G3 / HP-G3A / HP-G4, BMX stems".
 - Left alone: HP-GL stem (6690), BMX 81 (1930), Carbon BMX (1327). Bike links on 1934
   (2 specs) and 1957 (1) are unaffected (years only extend).
+
+## Sugino chain wheel leaflet (c. 1965, Reminiscence Part 63) — data_source id 213
+
+- `data_source` 213, label "Sugino chain wheel leaflet (c. 1965)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/sugino65.html, JPGs
+  `catalog/sugino65/1965sugino_01, 03-09.jpg` (720 px wide, 293-876 px high; **image
+  02 is linked nowhere and 404s**, so the inside left page is missing; 09 is a
+  photo of a cotterless Mighty 5 with a Campagnolo "68-SS-120" shaft, not a
+  catalogue page). Japanese, Sugino Tekkosho, Osaka, "JASCA group" (name changed to
+  Sugino Techno in 1982). Dated c. 1965 by the site from New Cycling ads: the
+  Pro-dynamic was a cottered crank in Aug 1965 and cotterless in Oct 1965, and the
+  leaflet shows the cotterless crank. Pages: 1 front and back cover, 3 spread of
+  all models, 4 Pro-dynamic, 5 High-Double I (DJ-1 / DF-1) and II (DJ-2A / DJ-2B),
+  6 High-Triple I / II (TJ-1 / TJ-2A / TJ-2B) and Howard (HJ, PAT. 75509, 4 rings),
+  7 Mighty 5 (PAT. 436235) and Dynamic (hollow Ni-Cr steel, cranks 165 / 168 / 171),
+  8 imports: Atom hub (410 g), Normandy hub (508 g), Normandy Sport hub (590 g), Atom
+  Sport hub (510 g), Huret wing nuts (Luxe, Vit), TA bottle with cage. Sugino made
+  a technical tie-up with Maillard and began knock-down production in June 1965.
+- Updated (all `source_ref` -> 213): 1954 Pro Dynamic (Cottered) `year_to` 1960 ->
+  1965 (**a judgement**: advertised Aug 1965); 1955 Pro Dynamic and 1328 Pro-D
+  `year_from` 1973 -> 1965; 3600 Normandy hub `year_from` 1970 -> 1965 (Sugino-
+  badged Maillard Normandy, 508 g, 36 holes).
+- New (7 rows, 1965-1965): 8900 "High-Double I / II (DJ-1, DF-1, DJ-2A, DJ-2B)", 8901
+  "High-Triple I / II, TJ-1 / TJ-2A / TJ-2B" (48-45-36T), 8902 "Howard, HJ (4-ring)"
+  (51-48-45-36T), 8903 "Mighty 5" (cottered and cotterless, cranks 165 / 168 / 171),
+  8904 "Dynamic (Dyna-hollow)", 8905 "Atom hub / Atom Sport hub", 8906 "Normandy
+  Sport hub".
+- Left alone: 1952 No. 5 / Silstar (1970, not in this leaflet), 1944 / 1945 Maxy
+  3-bolt, 1920 Mighty Competition (starts 1972; the site calls the Mighty 5 its
+  ancestor, no year change), the wing nuts and the TA bottle (no category).
+- Deleted: none. No bike links or overrides touch the rows changed here.
