@@ -204,3 +204,18 @@
 - Unresolved: the 1969 cap is a judgement (838 and 841 take over from 1970),
   not evidence. The Racer page of the 1978 catalogue (printed pp. 6-7) is
   missing from the scan; if found, re-date 839-842 from it.
+
+## VeloBase archive copy: `Mafac_1970s.pdf` (checked 2026-10-18, no rows changed)
+
+- 21-page A4-landscape scan, no text layer. It is the same c. 1976 catalogue
+  as the ebykr entry above (`data_source` 143), not a new source: pp. 1-9
+  were read and match page for page (cover, Compétition brake Cn 1/2/3 with
+  stirrups 451/452/1451, "dural" and "2000" racing levers, the unnumbered
+  translucent-hood insert, 2000 brake M 1-3 A/D, Ville/Guidonnet levers,
+  Raid brake Rd GL/L). pp. 10-21 were not read; the page count and layout
+  match the ebykr set.
+- Same gap as ebykr: printed numbering jumps from p. 5 to p. 8, so the
+  Racer pages (pp. 6-7) are missing here too. It cannot date the Racer
+  variants (838-842) or test the 1969 cap on row 839.
+- No SQL, `source_ref` unchanged. Still unresolved: a source that includes
+  the Racer pages of this catalogue or of the 1978 one.
