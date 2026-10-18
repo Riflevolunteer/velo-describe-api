@@ -281,3 +281,32 @@
 - Unresolved: a date for No. 17 (could be 1979 or earlier); `Sakae_Pedals_Hubs.pdf`
   ("1970's?") not read; no No. 17 source for the 1970-dated cranks such as
   Custom-3.
+
+## Sakae Ringyo (SR) "Light Alloy Pedals" and hubs leaflet — undated (VeloBase archive, 6 pp, read 2026-10-18, no rows changed)
+
+- No `data_source` and no SQL. Source: velobase.com/Pages/Resources/CatalogScans.aspx
+  `Sakae/Sakae_Pedals_Hubs.pdf` (6 pp, no text layer; VeloBase labels it "1970's?").
+  Cover, back cover (Sakae Ringyo Co. Ltd., Head Office 2-16 Aoi, Adachi-ku, Tokyo,
+  "Printed in Japan", no year) and four spec pages. **Undated;** the SR crank,
+  P-5, No. 17, No. 18 and P-7 catalogues all use the same SP / SH numbering, so it is
+  from the same period, not a separate early line.
+- Listed (all super melt-forged light-alloy bodies, B.C. 9/16 x 20T pedal thread):
+  pedals SP-100AL/BL/CP (quill, 62 x 60 mm, 340 g AL/BL, 440 g CP), SP-200AL/BL
+  (rat-trap, 62 x 60 mm, 320 g), SP-300AL/CP (quill with reflector, 80 x 60 mm, 400 g /
+  480 g), SP-400AL/CP/SS (rat-trap with reflector, 430 g / 465 g), SP-401AL/CP/SS
+  (rat-trap, 360 g / 400 g); hubs, thread 1.37" x 24 TPI, over-locknut F 96 / 100 mm
+  by R 124 / 120 mm: SH-300QR (small flange, 575 g), SH-100QR (large flange, 635 g),
+  SH-300SK / 300SD (solid axle, 465 g), SH-100SK / SD (525 g).
+- Every model is already in the DB (rows 3922, 3929, 3931, 7910, 7911, 7913-7916 from
+  P-7 / No. 18 / P-5), so there was nothing to add as a row. Differences, left
+  unrecorded in the DB: weights 5-20 g off the later catalogues (SP-100 340 / 440 g vs
+  345 / 420 g, SP-200 320 g vs 345 g, SP-300 400 / 480 g vs 405 / 490 g, SP-400 430 g
+  AL vs 405 g, SH-100QR 635 g vs 640 g, SH-300QR 575 g vs 580 g, SH-100SK 525 g vs
+  550 g, SH-300SK 465 g vs 480 g), a stainless "SS" plate version of SP-400 and
+  SP-401 that the DB rows (7910, 7911) don't mention, and rear over-locknut 124 mm
+  where the DB says 120/126.
+- Conflict, unresolved: this leaflet calls SP-200AL/BL a **rat-trap** pedal; row
+  3929 (P-7) says "track type, quill type". Nothing here decides which is right; the
+  leaflet photo shows a rat-trap cage.
+- Years left alone: the leaflet is undated and the hub rows are only 1982, and the
+  "Silstar" name P-7 and No. 18 use does not appear in it.
