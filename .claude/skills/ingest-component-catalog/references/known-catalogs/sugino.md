@@ -46,5 +46,56 @@
 - Unresolved: eight unlinked Sugino bike specs ("Sugino DGT" 1984 x3, "Forged
   Sugino LP" 1985, "Sugino Corsa 42/52" and "Sugino-Bianchi Corsa" 1981,
   "Sugino Mighty 46/36/26T" and "XE300" 1993) are not in this catalogue; the
-  1973, 1982 and 1995 pages (`sugino73`, `sugino82`, `sugino_techno1995`) are
-  still to do.
+  1973 and 1982 pages are below, the 1995 page (`sugino_techno1995`) is still to do.
+
+## Sugino chain wheel catalogue (7 spreads, 1973, Reminiscence Part 29) — data_source id 211
+
+- `data_source` 211, label "Sugino chain wheel catalogue (1973)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/sugino73.html, JPGs
+  `catalog/sugino73/sugino73_01-07.jpg` (720 x ~480). Japanese, Sugino Tekkosho
+  Osaka, "since 1910"; crank-only; sizes compatible with Campagnolo (site). The
+  earliest Sugino source. Pages: 2 Mighty Competition (MCS single, MCD double, MCC
+  custom and black, MCT triple; cranks 165 / 168 / 171 / 175 mm, single 40-54T,
+  double 42-54T, 55-62T on order), 3 Mighty Tour (inner 34 / 36 / 40 / 42 / 44 /
+  45T, outer 48 / 50 / 52T, cranks 165 / 171) and Dynamic Professional (outer
+  48-52T, inner 32-50T, 28T on order), 4 Maxy (SJX single, DJX / DFX double, TJX
+  triple; type 1 inner swap, type 2 inner and outer), 5 new products (MCV /
+  MCV Black Mighty Victory 46-54T, New Maxy NJX-1, NJX-2, NJX-2AL, titanium MW-68
+  shaft set and hanger sets), 6-7 tools, cotterless shaft sets, SDX / DX / H
+  hangers and the shaft dimension table (MS-68, MW-68 / 70, MT-68 / 70, PW-68 /
+  70, PT-68 / 70).
+- Updated (all `source_ref` -> 211): 1920 Mighty Competition `year_to` 1972 -> 1973;
+  1326 chainring, 1947 Mighty Comp (pista) and 1946 Mighty (road) (undated ->
+  1973; 1946 is **a judgement**, the drilled MCC custom); 1943 Maxy 5-Arm
+  `year_to` 1970 -> 1973; 1948 / 1949 Mighty Tour, 1955 Pro Dynamic and 1328 Pro-D
+  `year_from` 1978 -> 1973 (1955 and 1328 are "Dynamic Professional" here, the 1978
+  entry says formerly "Pro-dai"); 161 MW-68 and 163 MS-68 `year_from` 1978 -> 1973.
+- New (3 rows, 1973-1973): 8890 "MCV / MCV Black, Mighty Victory", 8891 "NJX-1 /
+  NJX-2 / NJX-2AL, New Maxy", 8892 "PW-68 / PW-70 / PT-68 / PT-70, Pro-D BB shafts".
+- Left alone: the 3-bolt Maxy rows 1944 / 1945 (1970, not in this catalogue),
+  the tools, the cotterless shaft sets (descriptions only) and the SDX / DX / H
+  hangers. Naming history: 1973 Mighty Competition -> 1978 Super Mighty; Maxy / New
+  Maxy -> Super Maxy; Dynamic Professional -> Pro-Dynamic.
+
+## Sugino Techno catalogue Vol. 55 (3 images, 1982, Reminiscence Part 48) — data_source id 212
+
+- `data_source` 212, label "Sugino Techno catalogue Vol. 55 (1982)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/sugino82.html, JPGs
+  `catalog/sugino82/sugino82_01-03.jpg` (360 / 720 / 360 px; **the page 3 spec
+  table is unreadable**, so only models and dates were used, no weights or tooth
+  ranges). English and Japanese; the company became Sugino Techno in 1982 and the
+  cover is the GUINES set (site: sold in 1,000 sets to 72 countries, serial-numbered,
+  super duralumin and titanium, 110,000 yen in the June 1982 New Cycling ad).
+  Groups: racing (Aero Mighty DAMC / DAMG, AS DAAS, GS DGS), touring and
+  10-speed (AT TAT, PX TPX, GT TGT, No. 6 FE-RB, No. 5 FE-WB), BMX chainwheels (CT-BMX,
+  AT-BMX, GT-BMX, Maxy Cross, OPC-SA-BJ, OPC-XJ) and BMX stems (HP-UFO, HP-G2, HP-G3,
+  HP-G3A, HP-G4).
+- Updated (all `source_ref` -> 212): `year_to` -> 1982 on 1925 Aero Mighty, 1926 Aero
+  Mighty Techno (**a judgement**, the catalogue shows only the two Aero Mighty),
+  1932 AS, 1934 GS, 1964 / 1965 AT (duplicates of one model), 1937 GT, 1967 GT
+  (triple), 1953 No.6 FE-RB; undated -> 1982: 1957 PX, 1931 CT-BMX. Guines 160 /
+  1938 already 1982, unchanged.
+- New (7 rows, 1982-1982): 8893 AT-BMX, 8894 GT-BMX, 8895 Maxy Cross, 8896 OPC-SA / BJ,
+  8897 OPC-XJ, 8898 No.5 FE-WB, 8899 "HP-UFO / HP-G2 / HP-G3 / HP-G3A / HP-G4, BMX stems".
+- Left alone: HP-GL stem (6690), BMX 81 (1930), Carbon BMX (1327). Bike links on 1934
+  (2 specs) and 1957 (1) are unaffected (years only extend).
