@@ -848,3 +848,50 @@
   AccuShift Plus X-Press (2) are not on the eight archived pages.
 - Out of scope: the parts listings (frame clamps, ratchets, springs, washers),
   bike or marketing content.
+
+## SunTour Bicycle Equipment Catalog Editions No. 60 (1982), No. 61 (1983) and No. 63 (1985), Japanese editions — cyclespeugeot.web.fc2.com, data_source id 192 (No. 60)
+
+- Sources: http://cyclespeugeot.web.fc2.com/reminiscence/suntour82.html,
+  `suntour83.html` and `suntour85.html` (Reminiscence parts 82-85 series; plain JPEGs).
+  Japanese text with yen prices, Maeda Industries Ltd, Sakai, Osaka.
+  - **suntour82 = Edition No. 60** (cover reads "Edition No.60"), 29 images: 16 tall
+    single-page crops (`save0133`-`save0148`, 480px wide) and 12 spreads
+    (`suntour82_01`-`12`) plus a gear capacity chart (`suntour82_capacity`); the
+    two sets show the same pages. The red triangle logo (introduced 1981), no MTB
+    parts yet. We held No. 59 (10.1981, source 127) and No. 61, not No. 60, so this
+    is the missing edition between them. Recorded as data_source 192.
+  - **suntour83 = Edition No. 61**, dealer edition (cover marked 販売店様用),
+    35 images (page 31 is missing from the site). The same edition number as
+    data_source 88; the Superbe Pro page (RD-5200, FD-2000, LD-3200 / 3250, CB-3000
+    set) matches that entry, so it is a Japanese-language second copy. Only pages
+    1-12 were read; nothing was ingested.
+  - **suntour85 = Edition No. 63**, 16 spreads (32 pages), 1920px originals. We held
+    No. 62 (12.1984, source 90), not No. 63. Superbe Pro, Superbe, Cyclone, XC
+    (mountain), Cyclone Mark-II, ARX, AR, Le Pree, Superbe Tech, Mountech, AG Tech,
+    BMX, Trimec, 3-speed hub and coaster brake, freewheels and chains, fork ends,
+    accessories, special tools, original goods, sprocket diagrams, gear capacity.
+    Gets no data_source row because no row changed.
+- Diff on 2026-10-18 (codes read against all 690 SunTour rows): No. 60 - 94 of
+  the 107 codes read already had rows covering 1982; the other 13 were false alarms
+  (CB-3000 / HC-1000 / HC-900 / SA-110 / SA-120 / SS-110 / SS-120 exist as CB-3100,
+  HC-100 / HC-500 and the SA-100 / SS-100 series row, RD-2300 was a misreading of
+  RD-2200) or the three year changes below. No. 63 - all 73 codes read already had
+  rows covering 1985; CW-5050 and CW-7050 are the crank-arm versions of CW-5000 /
+  CW-7000.
+- Updated, year_from -> 1982, source_ref -> 192 (years only, descriptions untouched):
+  2235 LF-6000 / LF-7000 Micro Lite (was 1984), 3612 RH-4400 Sprint track hub (was
+  1984), 7818 SA-100 / SS-100 series sealed bottom bracket (was 1984). No rows
+  added or deleted.
+- No. 60 first-appearance notes: Micro-lite 6 and 7-speed (LF-6000 / LF-7000), Ultra-6
+  chain UC-6000 and Z chain TZ-6000, Perfect Ultra-6 US-6500, the AG (Alpine Gear)
+  and Mighty Click systems, the IC system, Volante and Luxury rears, sealed SA / SS
+  bottom brackets. The Superbe Pro generation is RD-3100 (1982) and RD-5200 (1985).
+- Does not fix the unlinked bike specs it was meant to: "Sun Tour Ultra 6"
+  (freewheel, 4 bikes) is ambiguous between at least five existing rows (7812
+  US-6500 Perfect Ultra-6, 2240 NW-6500, 8260 US-6000, 7868 WP-6500, 7870 WT-6500),
+  "Raleigh/Sun Tour Compe V" (4 bikes) fails on the "Raleigh/" prefix although row
+  2603 (FD-1100 Compe-V, 1970-84) exists, and "SunTour HR" (4 bikes) is probably the
+  Honor (4702 RD-1100). All three are COMPONENT_OVERRIDES jobs, not catalogue gaps.
+  AccuShift Plus X-Press is not in any of these editions (later system).
+- Out of scope: fork ends and dropouts, spoke discs, accessories, special tools,
+  original goods, BMX parts, gear capacity and spoke length charts.
