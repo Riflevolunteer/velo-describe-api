@@ -169,3 +169,40 @@
 - Left unlinked: Super Competition / Super Criterium, Mafac Racer
   Professional, Altenburger Synchron, Normandy Super Competition hubs,
   the either/or saddle.
+
+## 1974 Peugeot — `1974_peugeot_spec.csv` (10 bikes, 102 specs, 33 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1974.html
+  (12 images, loaded 2026-10-19). Mixes two catalogues, as 1973: the Dutch
+  "Peugeot Modellen '74" (8 scans: cover, pp. 10-14, 18, 19; pp. 15-17 are not
+  on the blog) with full specs, and 4 scans of the French general catalogue
+  (bikeboompeugeot.com watermark) with one-line blurbs and no components.
+- Dutch specs: P 10, PA 10 E (same page as P 10: the left box lists its extras,
+  the right box is P 10's spec, as 1973), PR 10, PX 10 LE, PA 60 and PX 60
+  (gentleman / gentleman luxe, loaded as Cyclotouring). No prices printed.
+- French blurbs only: Sports HA 8, P 8, PL 8, PX 8 L (loaded at the user's
+  request, sparse rows). The French PX 60 text says Simplex Super Competition
+  derailleur; the Dutch page says Super LJ and was kept. PA 60 / PX 60 also
+  gained the French wheel, seatpost and stem details in Extras.
+- Not loaded: NSL 22 / NSL 40 / PNSL 22 (Nouveau Style town and folding,
+  Dutch pp. 10-11) and the rest of the French index (Randonneur HA 50 / P 50 /
+  PL 50 / PX 50 L, Tourisme HA / PL / PRP, Course PN 10 / P 10 / PA 10 L /
+  PR 10 L / PX 10 L, Week-end, Nouveau Style, Jeunes gens, Juniors). The
+  Randonneur section is the obvious next candidate.
+- Overrides added: Rear 'simplex criterium' 4645 range extended 1971-73 ->
+  1971-74; Rear 'simplex super lj' -> 4650 SLJ5000 (1971-78; 4649 SX660 is
+  undated); Front 'simplex super competition' -> 8794 (1971-75; also
+  back-fills the 1973 PX 10 once that CSV is reloaded); Hubs 'normandy luxe
+  competition quick release' -> 3389 (red label 1970-80; flange size not
+  stated); Cranksets 49 D -> 1895 (as 1973) and Stronglight 99 -> 1906 (base
+  row; "nieuwste model", drilled or plain not stated); Pedals Lyotard 45 CA
+  -> 3811.
+- CSV spellings: Ideale 2001 and Mavic Monthlery written without accents so
+  the matcher and the existing 'mavic monthlery' -> 5093 override apply (that
+  row is 1980-91, kept for consistency with 1973).
+- Left unlinked: Mafac Competition (825-827) and Altenburger Synchron (511 /
+  512) variants, Maillard 700 hub (3393 / 3394 flange not stated), Stronglight
+  Competition 53 crank (no row), Super Champion rim, bare Philippe bars,
+  Wolber Transalpino tyre, Simplex Competition seatpost.
+- 1973 reloaded 2026-10-19 to back-fill the PX 10 front Super Competition
+  link (1973 now 60 specs, 15 linked; no other changes).

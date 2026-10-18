@@ -504,6 +504,8 @@ const COMPONENT_OVERRIDES = {
     'compe v alloy front': [{ from: 1977, to: 1978, id: 2603 }],
     // 1970 Peugeot (Dutch-market catalogue).
     'simplex criterium': [{ from: 1964, to: 1975, id: 2583 }], // Simplex Prestige Criterium AV 223 (no other Criterium front before the 1977 LJ A200)
+    // 1974 Peugeot (Dutch catalogue): PA 60 front; also back-fills the 1973 PX 10.
+    'simplex super competition': [{ from: 1971, to: 1975, id: 8794 }], // Simplex AV 3, Super-Competition (1971)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace': [{ from: 1990, to: 1993, id: 2511 }], // FD-7403 (8sp HG)
     'shimano ultegra': [{ from: 1990, to: 1991, id: 2478 }], // FD-6400, 600 Ultegra (the matcher took a 1990 "Ultegra Tripple" velobase row)
@@ -645,7 +647,9 @@ const COMPONENT_OVERRIDES = {
     // RD-1100 (1973-85, 28T / 14-30) fits by capacity and tier; no DB row is titled HR, so this is by abbreviation.
     'suntour hr': [{ from: 1985, to: 1985, id: 4702 }], // SunTour 2600 / RD-1100, Honor
     // Peugeot 1970-72 (Dutch catalogues): two velobase rows share the title.
-    'simplex criterium': [{ from: 1965, to: 1970, id: 4644 }, { from: 1971, to: 1973, id: 4645 }], // Simplex Criterium 1965-70 / 1971-73
+    'simplex criterium': [{ from: 1965, to: 1970, id: 4644 }, { from: 1971, to: 1974, id: 4645 }], // Simplex Criterium 1965-70 / 1971-74 (row dated 1971-73; the 1974 Dutch catalogue still lists it)
+    // 1974 Peugeot (Dutch catalogue): PX 10 LE / PX 60, captioned "Achterderailleur Simplex Super LJ".
+    'simplex super lj': [{ from: 1971, to: 1978, id: 4650 }], // Simplex SLJ5000 (1971-78), the Super LJ rear; 4649 SX660 is undated
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace': [{ from: 1990, to: 1996, id: 4505 }], // RD-7402 (8sp); matcher took Dura-Ace EX
     'shimano ultegra': [{ from: 1990, to: 1991, id: 4466 }], // RD-6400, 600 Ultegra; matcher took 1997 RD-6500
@@ -947,6 +951,8 @@ const COMPONENT_OVERRIDES = {
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'campagnolo quick release': [{ to: 1985, id: 3260 }], // 1035 Record high flange, matches the Hubs "campagnolo record" range
     'campagnolo single sided track': 3270, // 1036 Record Pista (high flange)
+    // 1974 Peugeot (Dutch catalogue): PA 60 / PX 60 "Normandy Luxe Competition met uitvalassen".
+    'normandy luxe competition quick release': 3389, // Normandy Luxe Competition (red label, low flange) 1970-80; the gold-label row ends 1970
     // 1979 Peugeot (French catalogue).
     'spidel 700 small flange quick release': 3591, // Spidel/Maillard 700
     'normandy quick release': 3389, // Normandy Luxe Competition (red label, low flange) 1970-80
@@ -1205,6 +1211,10 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1974 Peugeot (Dutch catalogue). No Stronglight Competition 53 row exists, left unlinked.
+    'stronglight 49 d light alloy 45 53t': 1895, // Stronglight 49D (Depose), as 1973
+    'stronglight dural 49d 50 40t': 1895, // PA 60 touring double
+    'stronglight competition no 99 59 40t': 1906, // Stronglight 99 ("nieuwste model"; drilled vs plain not stated, so the base row)
     // 1973 Peugeot (Dutch catalogue).
     'stronglight 49 d 45 53t': 1895, // Stronglight 49D (Depose), as the 1975 Motobecane / 1979 Peugeot 49 D picks
     'stronglight 45 52t': null, // 1971 Peugeot PA 10 S: 45/52 tooth chainset, not the 1950 Stronglight 45 model
@@ -1645,6 +1655,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    'lyotard 45 ca with toe clips and straps': 3811, // 1974 Peugeot PX 10 LE / PX 60: Lyotard 45CA (1930-80)
     'rubber block': null, // 1971 Peugeot sports bikes: generic, not the Roger Piel row
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace clipless': [{ from: 1988, to: 1993, id: 3971 }], // PD-7401
