@@ -591,3 +591,52 @@
   seat post (the 1982 leaflet and 1984 catalogue list no cranks, and the
   only seat posts are SX1500 and SLJ6164). Those specs need a
   COMPONENT_OVERRIDES decision or an earlier Simplex source.
+
+## Simplex "Prestige" catalogue (6 pages, 1964, Reminiscence Part 84) — data_source id 204
+
+- `data_source` 204, label "Simplex Prestige catalogue (1964)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/simplex64.html, JPGs
+  `catalog/simplex64/1964_simplex_01l-06l.jpg` (1280 px wide; read from the
+  full-size `l` versions, the bound PDF is too small to read part numbers).
+  French leaflet, Simplex, 75 rue Général-Fauconnet, Dijon, export card
+  A-349-6, "Printed in France 1964". Cover + printed pp. 1-5 (the scan puts p. 5
+  before p. 4): Prestige AR 532 P / N rear (p. 1), AV 223 front and left /
+  twin controls (p. 2), clamp and brazed-on mounting (p. 3), Compétition and
+  Touriste double chainrings, chain tensioners and tools (p. 4), dropouts,
+  T.S. 530 seat post, skewer BR 540 and wing nuts (p. 5). The Reminiscence text
+  says the Prestige here has a different mechanism from the 1965 catalogue's.
+- Updated (all `source_ref` -> 204): 7306 DP210, 7307 DP211, 7338 DP213, 7339
+  DP215 `year_from` 1975 -> 1964 (the Compétition 3-arm and Touriste 5-arm
+  chainwheels, same ring numbers 645-650 / 1137 / 999 and 694-696 / 644 / 643
+  / 691-693 / 1138 as the 1975 sheets; descriptions gain the 998 elbow arm and
+  the riveted sets DP330 / 340 / 350 (46x49, 47x50, 47x52) and DP400 / 410 /
+  420 (48x36, 48x38, 48x40)); 2583 Prestige Criterium AV 223 (description:
+  clamp housing C 252, brazed-on C 253); 6227 Prestige 3rd type single
+  (description: 2335 right and 2336 left controls with cables / sheaths; **a
+  judgement** that the 36 g single is these two); 4578 retitled **"Simplex
+  Prestige Criterium (later version)" -> "Simplex AR 532, Prestige Criterium
+  (later version)"** (search_text "Simplex Prestige Criterium" -> "Simplex AR
+  532 Prestige Criterium"; the 155 g extra-light Criterium version of the AR
+  532 P / N; years 1963-64 kept).
+- New (3 rows, 1964-1964): 8833 "Simplex 2337, Prestige twin control" (coupled
+  controls, ARV 755, Type / Luxe / Criterium), 8834 "Simplex 2346 / 2346 G,
+  Prestige brazed-on controls" (base 599), 8835 "Simplex T.S. 530" (seat post,
+  diameters 26-27.2 mm, no weight).
+- **Part-number reading:** the first chat listing had the controls as 3335 /
+  3336 / 3337 (misread at 475 px); the 1280 px scans give **2335 right, 2336
+  left, 2337 twin**, brazed-on 2346 / 2346 G. Clamps 2111 (cable-stop), 2112
+  (stop), 2113 (tunnel), relay 2343 with cable 2344, base 599, collier 2269.
+- Not added: the **AR 532 P / N Type and Luxe** standard rear derailleur (32T,
+  2-5 speeds, 2.38 or 3.17 chain; N fitted with 1645 for Simplex dropouts
+  1600/1601, 1611/1611 G, 1752/1753; P with 2295 for 881 / 881 B), by decision:
+  the velobase "Prestige Promotion" (4576, 158 g, 1964), "Cadet" (4575,
+  1964-66) and "Senior" front (2584) may be those versions, undecided. Also
+  not added: dropouts and fork ends (1752/1753, 881/881 B, 1611/1611 G,
+  1600/1601, 932/933), skewer BR 540, wing nuts, chain tensioners T 232 / 233 /
+  234, spanners 270 / 275 (no category).
+- Bike links: none of the rows changed here are referenced by overrides or
+  `bike_spec`, apart from 2583 (24 specs, years unchanged). Still unlinked and
+  not helped: "Simplex Competition" seat post (4 bikes, 1970-73; T.S. 530 is
+  not named Competition) and the "Simplex Competition 46/50T / 45/52T"
+  cranksets (5 bikes, 1970-72; DP210 / 1297 are chainwheels, so a
+  COMPONENT_OVERRIDES call into the Cranksets category is still open).
