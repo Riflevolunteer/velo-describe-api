@@ -640,3 +640,51 @@
   not named Competition) and the "Simplex Competition 46/50T / 45/52T"
   cranksets (5 bikes, 1970-72; DP210 / 1297 are chainwheels, so a
   COMPONENT_OVERRIDES call into the Cranksets category is still open).
+
+## Simplex "Dérailleurs" Catalogue 195, October 1965 (Reminiscence Part 51) — data_source id 205
+
+- `data_source` 205, label "Simplex Catalogue 195 (October 1965)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/simplex65.html, JPGs
+  `catalog/simplex65/1965simplex01l-08l, 10l` (720 px pages, "copied from
+  copies"; 09 exists on the server but is unlinked and a near-duplicate of 10,
+  not used). "Division Cycle", Lucien Juy, Dijon. Cover; p. 2 Prestige
+  Critérium (grand luxe) AR 537 NI rear and AV 223 / 323 fronts with controls
+  and the ARV 760 / 860 sets; p. 3 Prestige AR 537 P and NI, AV 223 / 323,
+  ARV 760 / 860; p. 4 Prestige Cadet AR 306 and mounting; p. 5 double
+  chainwheels and tensioners; p. 6 dropouts, T.S. 530, BR 540, CP 252 / 253;
+  pp. 7-8 AV 223 / 323 assembly notice. **p. 10 is a later photocopy printing**
+  (Critérium AR 637, controls 4006 C / 4007 C, sets ARV 860 / 960): not used for
+  1965; it may be what the velobase "Criterium" shifters 6222 / 6223 (1967-70)
+  are, which nothing dates, so left alone.
+- Updated (all `source_ref` -> 205): 4575 retitled **"Simplex Prestige Cadet" ->
+  "Simplex AR 306, Prestige Cadet"** (`search_text` "Simplex Prestige Cadet" ->
+  "Simplex AR 306 Prestige Cadet"; 6T, 2-3 speeds, 1/8in chain, controls
+  2335 C / 2540 C; years 1964-66 kept); 4644 "Simplex Criterium" 1965-70
+  description only (Critérium AR 537 NI in 1965, AR 637 NI later; not
+  retitled because the span covers both; the `simplex criterium` override
+  still points at it); 8368 RS 3, 8369 VS 3, 8370 RS 5 `year_from` 1975 ->
+  1965 (R.S.3 and R.S.5 sizes are the 1964 DP330 / 340 / 350 and DP400 / 410 /
+  420, noted in the descriptions; 8371 "3 VS 3", the triple, is not in
+  1965); 8835 T.S. 530 `year_to` 1965, now seven diameters (26.6 appears in
+  1965; the 1964 leaflet has six); 8833 retitled **"Simplex 2337, Prestige
+  twin control" -> "Simplex 2337 / 2532, Prestige twin control"** and 8834
+  **"Simplex 2346 / 2346 G, Prestige brazed-on controls" -> "Simplex 2346 /
+  2540, Prestige brazed-on controls"** (both `year_to` 1965, `search_text`
+  rewritten; 2532 A / C is the 1965 coupled control, 2540 A / GA the 1965
+  brazed-on right / left).
+- New (3 rows, 1965-1965): 8836 "Simplex AR 537 P / AR 537 NI, Prestige" (37T,
+  3-5 speeds, group 227; no velobase twin: Promotion 4576 is 1964 only and
+  Cadet is the AR 306), 8837 "Simplex 2530 / 2531, Prestige controls" (right
+  2530 A / C, left 2531 A / C, 2541 A for 26-28 mm), 8838 "Simplex VS 5"
+  (bolted 5-arm double, 46x49 / 47x50 / 47x52).
+- Not changed: DP210 / 211 / 213 / 215 (identical to 1964, years already cover
+  1965), 2583 AV 223, 6227 3rd type single, 2584 Senior front, 4576 Promotion,
+  4578 Criterium later version (all consistent with their years). Out of
+  scope: dropouts and fork ends, BR 540 skewer, clamps 2111 / 2112 / 2113 /
+  2208, relay 2343, CP 252 / 253, tensioners T 232 / 233 / 234, tool 0 280,
+  spoke guard 2585.
+- Control numbers 1964 -> 1965: Prestige right 2335 -> 2530 (2335 C is then the
+  Cadet's right control), left 2336 -> 2531, coupled 2337 -> 2532, brazed-on
+  2346 / 2346 G -> 2540 A / 2540 GA; the assembly notice still shows 2336 /
+  2337 / 2354. The AR 532 P / N (1964) is replaced by the 37T AR 537 P / NI;
+  the 1964 AR 532 P / N standard row stays unadded (undecided).
