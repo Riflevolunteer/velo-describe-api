@@ -46,7 +46,7 @@
 - Unresolved: eight unlinked Sugino bike specs ("Sugino DGT" 1984 x3, "Forged
   Sugino LP" 1985, "Sugino Corsa 42/52" and "Sugino-Bianchi Corsa" 1981,
   "Sugino Mighty 46/36/26T" and "XE300" 1993) are not in this catalogue; the
-  1973, 1982 and 1965 pages are below, the 1995 page (`sugino_techno1995`) is still to do.
+  1973, 1982, 1965 and 1995 pages are below.
 
 ## Sugino chain wheel catalogue (7 spreads, 1973, Reminiscence Part 29) — data_source id 211
 
@@ -130,3 +130,37 @@
   3-bolt, 1920 Mighty Competition (starts 1972; the site calls the Mighty 5 its
   ancestor, no year change), the wing nuts and the TA bottle (no category).
 - Deleted: none. No bike links or overrides touch the rows changed here.
+
+## Sugino Cycle Parts catalogue No. 32 and New Model Catalog Vol. 68 (1995, Reminiscence Part 104) — data_source id 214
+
+- `data_source` 214, label "Sugino Cycle Parts catalogue No. 32 and New Model Catalog
+  Vol. 68 (1995)". Source: http://cyclespeugeot.web.fc2.com/reminiscence/sugino_techno1995.html,
+  JPGs `catalog/sugino1995/sugino95_00-23.jpg` (740 x 973 / 1044) and `_30.jpg` (a small
+  repeat of the Vol. 68 cover). Two documents: "1995 Bicycle Parts No. 32" in English (images
+  00-19; 18 numbered pages: New Technology, Compact Super Shifter MTB, Super Shifter MTB, MTB,
+  Junior MTB, City, Road and Track, Light Weight, BB parts, Tension Disc, replacement parts,
+  one-piece cranks and tools) and the Japanese "1995 New Model Catalog Vol. 68" (images 20-23,
+  with retail prices in yen excluding tax). Sugino Cycle Industries Ltd., Nara. Dated 1995 by
+  its own title; the site's owner says he had not seen most of the parts and added no
+  commentary. NEW in 1995 per the catalogue: Compact Super Shifter II, S3 (S-Cubic)
+  chainrings, PD-UYP push-in pedal, TENSION DISC, BB-SG75 (NJS) Super Lap, MIGHTY 900,
+  MIGHTY TRC, IMPEL, DINOS, GENESIS 100.
+- Updated (all `source_ref` -> 214): `year_to` -> 1995 on 1923 AC130 (933 g with steel
+  rings vs the velobase 780 g actual), 1957 PX (**a judgement**: the 1995 TPX is the 1982
+  crank under its code), 5930 SP-K2 CF (220 / 255 g), 6984 Tension Disc, 1941 Impel (**a
+  judgement**: velobase 1990 predates the 1995 IMPEL line); 6983 ATB Tension Disc undated
+  -> 1995 (TD-AT3-ATR).
+- New (20 rows, 1995-1995, group NULL): cranksets 8907 MIGHTY 900, 8908 MIGHTY TRC, 8909
+  IMPEL 700 / 500, 8910 IMPEL 350 / 300, 8911 DINOS 200 / 100 / 50, 8912 MIGHTY XP / TR
+  (Team Pro), 8913 FUSE 500, 8914 GENESIS 100, 8915 GRANDE 50 / 20 / 10, 8916 DFM-Y /
+  SZOFY junior, 8917 city chainwheels (SFY / SCFP2B / SNJA-1 / SHJA-1 / SOJRA-1 / SOFRA-1),
+  8918 SFUYP push-in pedal crank (with PD-UYP), 8919 MIGHTY-DTR, 8920 SG-75 130 ROAD / SG-75 144
+  TRACK (NJS), 8921 NBS5 / NGM light-weight; chainrings 8922 S3, 8923 CSP2-44T / CSC-20T;
+  8924 bottom brackets BB-SG75 / MXB / MXN / TIMA; 8925 SP-N seat post; 8926 TD-700 tension
+  disc.
+- Not added: cup sets HS / H / E, bar tape BT-75 / BT-SF, toe straps TS-1500 / TS-1000, seat
+  pin, one-piece cranks (Scandinavian, USA), ST / YJ / SUS replacement rings, bolts and nuts,
+  tools, G4PP / G5PC / G5PM guards. Left alone: the 75 group (1921, 1973, 1330; SG-75 may be
+  the same family, nothing says so), Mighty/Grand Mighty Competition Track (1975), 1331-1333
+  Cycloid, AC110, Qualete (1997), VP (1969, 3 bike links).
+- Deleted: none. Bike links on 1957 (1 spec) are unaffected (only the years extend).
