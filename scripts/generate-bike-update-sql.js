@@ -1569,6 +1569,16 @@ const COMPONENT_OVERRIDES = {
     'gpx aero': [{ from: 1989, to: 1991, id: 456 }], // BL-GP00, GPX (aero) — Axis
     'campagnolo athena aero': [{ from: 1988, to: 1994, id: 211 }], // BL-02AT, Athena
     'dia compe radius aero': [{ from: 1990, to: 1992, id: 457 }], // SunTour BL-RA00, Radius (Dia-Compe)
+    // 1985 Raleigh (Alyeska, Kodiak, Olympian, Marathon, Pursuit) and 1985 Bianchi (Strada, Rekord 26, Randonneur 700):
+    // the 1986 Dia-Compe catalogue (complete edition, data_source 209) names these levers in grouped rows, so the
+    // matcher cannot reach them by substring.
+    'dia compe 161 gum hoods': [{ from: 1984, to: 1986, id: 8866 }], // 161 in the standard (no hood) row; the hoods are separate rubber covers
+    'dia compe 161 levers with gum hoods': [{ from: 1984, to: 1986, id: 8866 }],
+    // 164 = 161 + 166 extension lever; the catalogue lists only the Compe-G version 164G (161G + 166, 140 g). A judgement.
+    'dia compe 164 with extension levers': [{ from: 1984, to: 1986, id: 8873 }], // Dia-Compe 164G, extension lever set
+    'dia compe ngc200': [{ from: 1984, to: 1986, id: 8861 }], // Dia-Compe NGC200 / NGC210 / NGC212, New Gran Compe
+    // "GC200" is not a 1986 model name; NGC200 is the 24.0mm lever (105g) that goes with the GC500 / NGC brakes. A judgement.
+    'dia compe gc200': [{ from: 1984, to: 1986, id: 8861 }],
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
     'shimano 600 ultegra': 7217, // Shimano BL-6400, 600 Ultegra (base model; the aero BL-6401 is not named)
     // 1982 Bianchi US racing brochure (saarf.london).

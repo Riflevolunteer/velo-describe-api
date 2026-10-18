@@ -96,12 +96,15 @@
   the larger two, so the CF-G description names only the extensions); the "164" without the G, "GC200" and "500G" are not
   in the catalogue by those names (164G = 161G + 166, NGC200 is the 24.0 mm
   lever, no 500G brake).
-- **Follow-up for the bike specs (not done):** unlinked 1985 Raleigh values
-  "Dia-Compe 164 with extension levers" (3 bikes), "GC200" (2), "161 levers with
-  gum hoods" (2), "161 gum hoods", "NGC200" (1), "500G" and "DC400N" brakes need
-  `COMPONENT_OVERRIDES` entries or title matches against the new rows (8873 for
-  the 164, 8861 for NGC200 and GC200, 8866 for 161); the grouped titles will not
-  match by substring.
+- **Bike specs linked (2026-10-18, `COMPONENT_OVERRIDES` `Brake Levers`, 8 specs):**
+  1985 Raleigh "Dia-Compe 161 levers with gum hoods" / "161 gum hoods" (Kodiak,
+  Alyeska) -> 8866; "164 with extension levers" (Olympian, Marathon, Pursuit)
+  -> 8873 164G (**a judgement**, the catalogue lists only the Compe-G 164G);
+  1985 Bianchi "NGC200" (Randonneur 700) and "GC200" (Strada, Rekord 26) -> 8861
+  (**a judgement** for GC200, not a 1986 model name). Left unlinked: "500G"
+  brakes (Strada; GC500 or G500N, unknown), "DC400N" brakes (Rekord 26; the
+  DC-N row is the 500N, needs its own row), the 1974 Nomade "center pull" /
+  "with extension levers" and the 1981 "dual brake levers" brakes (generic).
 
 ## Dia-Compe NGC982-280 brochure + 986 instruction leaflet — undated (equusbicycle.com/bike/diacompe/diacompe.htm)
 
