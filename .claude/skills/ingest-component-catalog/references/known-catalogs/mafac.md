@@ -99,3 +99,49 @@
   since the existing descriptions of 836 and 838 are already full.
 - Does not help the unlinked bike specs "Mafac centre-pull" (5 bikes) and
   "Mafac Course" (3), which are brand-only.
+
+## MAFAC catalogue (1978) — cyclespeugeot.web.fc2.com "Part 92: MAFAC in 1978", data_source id 189
+
+- Source: http://cyclespeugeot.web.fc2.com/reminiscence/mafac78.html;
+  `catalog/mafac78/1978_mafac_00.jpg` and `_02` to `_25` (25 scans, 720x507,
+  no `_01`). A4 landscape, 24 printed pages, bilingual French / English,
+  cover dated 1978, "Manufacture Arvernoise de Freins et Accessoires pour
+  Cycles", illustrations by Daniel Rebour. Bound into one PDF for reading;
+  printed page n = the n-th scan after the cover.
+- Pages: 2 Promotion drilled lever "perfo" (CP a, 75g), 3 Competition brake
+  (173g, 148g with braze-on pivots; Cn 1 / 2 / 3 stirrups 451 / 452 / 1451,
+  anodised Cn 1 A / 2 A / 3 A), 4 Course drilled lever "perfo" (CAP RME/p GT,
+  130g), 5 LS (188g, side-pull), 6 Course "2000" lever (C RMEGT, CA RMEGT, 137g),
+  7 "2000" brake (182g, M 1 A / 2 A / 3 A), 8 Course "dural" lever (CB / CS clips,
+  RMT / RMGT hoods, RMGT 118g, RMT 115g), 9 Racer (184g, Rb GL / RGL / Rb L /
+  RL), 10 Promotion quick-release lever (PB / PS, 78g), 11 "S" (153g, Sb L / SL),
+  12 Ville VF and Guidonnet GF forged dural (75g / 64g), 13 Raid (205g, Rd GL /
+  Rd L), 14 Ville VDA and Guidonnet GDA (80g / 85g), 15 Critérium (141g, KGL /
+  KL), 16 Course "Sécurité" lever (CLS, 158g), 17 Cyclo-Tandem (156g, HC 4 / HC
+  5 / HZ 4 / HZ 5), 18 children's Ville VE, Guidonnet GE, Course CE / CET (53-56g),
+  19 Jacky (126g, ref J), 20 pivot holders, 21 tool-kit 48 (195g) and blocks 604 /
+  64 / 264, 22-23 brake pivot brazing dimensions, 24 brake set compositions
+  (R1, R2 GL, Cn 1-3, M 1-3 A, Rd 1, S3 L, LS).
+- Diff on 2026-10-17: it sits between our c. 1976 catalogue (143) and the 1979
+  poster (187), and almost everything was already in the DB with years that
+  contain 1978 and detailed reference-code descriptions from 143. Matched, no
+  change: Competition 825, "2000" 836, Racer 838, "S" 844, Raid 843, Critérium
+  829, Cyclo-Tandem 845, levers 351 VDA, 8377 VF, 343 GF, 8379 CE / CET, 357
+  Course 419 / 429.
+- Updated, source_ref -> 189: year_to -> 1978 on 8376 2000 racing lever (years
+  only; at 248 of 255 characters there was no room for the 137g), 8378
+  Guidonnet GDA (+85g), 8381 Guidonnet enfant (+56g), 8380 Ville enfant (+53g)
+  and 831 Jacky (+126g); descriptions on the bare rows 833 LS (188g side-pull),
+  826 Competition braze-on (148g, 173g standard), 346 Promotion quick release
+  (78g) and 347 Promotion Perfo (75g, replacing the velobase "(Spec)" weight).
+- Inserted (1978-1978, UUID source_id, group_id NULL): 8797 MAFAC Course
+  Securite (CLS), Brake Levers. The existing "Securite (first version)" 824 is a
+  1946-47 brake, not this lever.
+- Left alone: GT, LC, Tiger, Top 63, Driver, LS2 (not in this catalogue;
+  absence from one catalogue is weak evidence); Racer (vertical bolt) 839 (the
+  catalogue shows both vertical and horizontal fittings); the "Course perfo"
+  (CAP RME/p GT, 130g) lever, which could not be tied to an existing row.
+- No bike links: the unlinked MAFAC specs ("Mafac centre-pull", "Mafac Course",
+  "Mafac cantilever") are brand-only values.
+- Out of scope: pivot holders 65 / 499, tool-kit 48, brake blocks 604 / 64 / 264,
+  brazing dimensions, set compositions.
