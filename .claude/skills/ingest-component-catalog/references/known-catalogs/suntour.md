@@ -986,3 +986,32 @@
   every subquery that matches on it, not just in the INSERT; the first load
   failed on the `source_ref` subquery and loaded nothing until the generator
   escaped it in both places.
+
+## SunTour "BL" touring leaflet (6 images, February 1981) and "Original Goods" catalogue (4 images, May 1983), Reminiscence
+
+- **BL leaflet** (`suntourbl81`, Reminiscence Part 59), `data_source` 201, label
+  `SunTour BL leaflet, Japanese edition (Feb 1981)`. Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/suntourbl81.html
+  (`suntour-bl_01l..06l.jpg`). Japanese, Maeda Industries (SunTour USA on the
+  back), "PRINTED IN JAPAN FEB.'81". The touring group "BL" (Blue Line), above
+  Road-VX: RD-3200 (BL, 25T capacity, 24T max, 208 g, 4,400 yen), RD-3600 (BL-S,
+  30T / 26T, 225 g), RD-3300 (BL-GT, 36T / 34T, quick cage, 220 g), FD-1900 (95 g),
+  LD-2200 (68 g) and LD-2250 (direct-mount, 58 g), plus exploded parts lists
+  (out of scope). All six were already in the DB from Edition No. 59, the 1982
+  catalogue and No. 61, with matching specs.
+  - Rows updated (4, `source_ref` 201): `year_from` 1982 -> 1981 on 7787 RD-3600,
+    6273 LD-2200 and 8271 LD-2250 (the leaflet predates 1982); 2622 FD-1900
+    description gained "95g (Feb 1981)" beside the existing 110 g (1982) and 93 g
+    (No. 61) edition weights. RD-3200 4730 (1980-84) and RD-3300 4731 (1981-84)
+    needed nothing. None of these rows has linked bike specs or overrides.
+  - Not in the leaflet: the "Hero" siblings (2636, 4746, 4747, 1987), which the
+    Reminiscence page says share the BL design (the page also mentions a black
+    plate variant); left alone.
+- **Original Goods catalogue** (`suntour_goods83`, Reminiscence Part 102, 4
+  images), no `data_source`, no rows. "SunTour Catalog, Original Goods",
+  Edition No. 61-D, printed May 1983 (the red triangle mark appeared in 1981).
+  Accessories only: team bag PE-2400, quick bag PE-2500, 2-way shoulder bag
+  PE-2600, bike bag PE-1400, wheel cover PE-1500, water bottle PE-1200, wallet
+  PE-2300, sweat band PE-2100, racing cap PE-1300, bandana PE-2200, jersey
+  PE-1600, pants PE-1700, apron PE-1800, stickers PE-1900 / PE-2000. None has a
+  component category, so it is out of scope entirely.
