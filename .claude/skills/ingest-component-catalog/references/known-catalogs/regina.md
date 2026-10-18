@@ -104,3 +104,63 @@
 - Out of scope: chain spares n. 4 / 7 / 26 / 27 / 30, rivet extractor type
   1, cutting/rejoining pliers, Regina Cycle Lube (165 cc), single-sprocket
   weight table (p. 11).
+
+## Regina Extra: VeloBase archive PDFs — Regina USA catalogue (1992), plus two 1970s files — data_source id 190
+
+- Source: VeloBase's own catalogue-scan archive
+  (velobase.com/Pages/Resources/CatalogScans.aspx, files fetched with
+  `DownloadFile.aspx?Path=/CatalogScans/<name>&FileName=<name>`), three PDFs, no
+  text layer:
+  - `ReginaExtra_1970s_2.pdf` (12 pp): "Catalog C/7 109/E", English edition,
+    S.I.C.C. Regina S.p.A., Cinisello Balsamo, roller chains and freewheels for
+    bicycles and mopeds. **A second copy of data_source 117** (same catalogue
+    code); not re-ingested.
+  - `ReginaExtra_1970s.pdf` (4 pp): undated bilingual Italian / English leaflet
+    (Milan, Via A. Manuzio 15): chains 50 / 51 / 53 / 54 and block chains 80 /
+    81, spare links 4 / 7 / 12 / 26 / 27 / 30, single freewheels 16-24T and 3 to
+    6 speed combinations (2.10mm tooth, 19 to 30mm wide). Same numbers as the
+    rows already held from 117 (8166-8169, 1376); nothing changed.
+  - `1992ReginaExtra.pdf` (8 pp): **Regina USA, Inc., 311 Commerce Drive,
+    Easton, Maryland, 1992** ("more than 70 years of quality"), recorded as
+    data_source 190 "Regina USA catalogue (1992)". Pages: chains (Hollow Pin,
+    Anniversario, CX-S, 50 America S.L.), "new and improved" freewheels (Synchro
+    1992, America 1992, America Superlight), the chain table, spokes and nipples,
+    the Enduro mountain-bike page and the four group sets (America, Strada,
+    Stelvio, Enduro) with weights.
+- 1992 chain table (overall width mm / kg per metre; the "W" column printed 3.30
+  for every chain at scan size and was not used): 53 Turismo 9.3 / 0.29, 51 Sport
+  9.1 / 0.28, 51 CX-Pista 9.1 / 0.28, 50 Corsa 8.1 / 0.26, 50 Oro 8.1 / 0.26, 50
+  Silver 8.1 / 0.26, 50 Racing 7.2 / 0.23, 50 Super Racing 7.2 / 0.23, 50 S.L.
+  7.2 / 0.19, 50 America S.L. 7.2 / 0.19, 50 CX-S 7.2 / 0.23, 50 Anniversario
+  7.2 / 0.23. The 1970 51 was 9.3mm / 0.29, so the 51 Sport's spec differs between
+  editions and 8166 names both.
+- Group sets (1992): rear derailleur America 230g (28T), Strada 285g (28T, cable
+  saver, spoke-barrier cage), Stelvio 295g (32T), Enduro 360g (40T capacity, 32T
+  maximum); front America 100g with clip (90g braze-on), Strada 130g, Stelvio and
+  Enduro 150g; shifters 90g (Stelvio frame 90g / handlebar 215g, Enduro 200g);
+  chainwheel and crank 710g (America, Strada) and 770g (Stelvio, Enduro); bottom
+  bracket 340 / 340 / 350 / 350g; freewheel America 6-speed 13-21T 360g and 7-speed
+  415g, Strada Synchro 90 6-speed 350g and 7-speed 410g, Stelvio and Enduro
+  14-32T about 500 / 510g.
+- Updated, source_ref -> 190: chains 1376 50 Corsa and 1382 50 Oro (year_to ->
+  1992 only), 1388 Anniversario, 1384 CX / CX-S, 1389 America Superleggera (the 50
+  America S.L.), 1390 Superleggera SL (50 S.L.), 1387 Racing (50 Racing), 1377 Super
+  Racing (years none -> 1992), 8166 Extra 51 (51 Sport) and 8167 Extra 53 (53
+  Turismo); freewheels 2200 Synchro 92, 2158 / 2159 America S 1992, 2203 America
+  1992 Superleggera (the America Superlight, years left NULL), 2205 Synchro 90-S and
+  2207 Synchro 90 (year_to -> 1992); group parts 1716 America crank, 1717 Strada
+  crank, 4378 / 4377 / 4376 America / Strada / Enduro rear derailleurs, 2422 / 2423
+  America / Strada front derailleurs, 6098 America shifters. Measured weights kept.
+- Inserted (1992-1992, UUID source_id, group_id NULL): 8798 Regina Extra 51
+  CX-Pista and 8799 Regina Extra 50 Silver (Chains). "Silver BX" 1386 is a
+  different name and was left alone.
+- Not inserted: the Stelvio group parts, the Strada shifters, the Enduro crank,
+  front derailleur and shifters, Regina bottom brackets (there are no Regina BB
+  rows) and the Hollow Pin chain (no specification given).
+- Does not resolve the unlinked bike specs "Regina C Record" chain (5 bikes;
+  the Campagnolo-branded C-Record chain made by Regina, so a Campagnolo catalogue
+  is the place to look) and "Regina Extra Super Corsa 1/2 x 3/32" (3 bikes; it
+  may be 1376, "Gran Sport Super Corsa" in c. 1970, but that is an override
+  choice, not a catalogue finding).
+- Out of scope: spokes and nipples, chain spare links, rivet extractors and
+  freewheel removers, the race service case, speed ratio tables.
