@@ -8,7 +8,7 @@ in the repo records them except this file and the brand files below.
 Split by brand to keep each run's context small — **read only the brand
 file(s) relevant to the catalog you're ingesting**, not all of them:
 
-- [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (35 entries)
+- [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (36 entries)
 - [known-catalogs/shimano.md](known-catalogs/shimano.md) — Shimano (29 entries)
 - [known-catalogs/suntour.md](known-catalogs/suntour.md) — SunTour (14 entries)
 - [known-catalogs/simplex.md](known-catalogs/simplex.md) — Simplex (9 entries)

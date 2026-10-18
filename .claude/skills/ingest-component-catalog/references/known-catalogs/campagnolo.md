@@ -972,3 +972,71 @@
   triple rear and front derailleurs carried as notes on the triple crank
   rows rather than as separate rows.
 
+
+## VeloBase archive, seven small Campagnolo files (44 pages, 2026-10-18)
+
+The last unread Campagnolo files in VeloBase's catalogue archive
+(`Campagnolo/` folder, download path `%2fCatalogScans%2fCampagnolo%2f...`).
+All are brochures, service sheets or newsletters with few part numbers, so
+the DB already held nearly everything. Three files changed rows; each got
+its own `data_source`.
+
+- **`Campy1986_Victory_Triomphe.zip`** (8 scans, imprint November 1986,
+  **scan `02.jpg` missing, so one page is absent**), `data_source` 196, label
+  `Campagnolo Nuovo Victory and Nuovo Triomphe brochure (November 1986)`.
+  Prose on the Nuovo Victory and Nuovo Triomphe groups and the "LX" front and
+  rear derailleur set (gear-change capacity 38T, biggest sprocket 32T, front
+  change 23T; Triomphe set 32T / 30T / 18T). Rows updated (6, description
+  only, no year changes): 2319 LX front (added 23T capacity, 744 / 744-1
+  axle), 4172 Victory long-cage "Leisure gear" (added LX-set capacity 38T,
+  biggest sprocket 32T; its "Cat. n. 18 bis" citation was dropped as a pure
+  citation of the old source), hubs 3280 / 3281 Victory and 3277 / 3278
+  Triomphe (24/28/32/36/40-hole options; Victory also 6- or 7-speed
+  spacings). 4172 is matched to the LX set by the 38T capacity (long cage);
+  the Triomphe leisure rear 7015 was left alone because the brochure's 32T
+  Triomphe figure is the corsa cage. The 130 mm Victory/Triomphe seatpost was
+  already in 5764 (416/101).
+- **`RecordNews87.zip`** (6 scans, Record News Vol. 2 No. 3, Winter 1987,
+  Campagnolo USA), `data_source` 197. Syncro history: development began April
+  1986, debut at the Cologne show October 1986, shown at the BRS Expo (Long
+  Beach) January 1987; exploded parts list; chain/freewheel compatibility
+  chart for C Record, Super Record, Victory and Triomphe rear derailleurs.
+  **Row inserted:** 8812 "Campagnolo 0118084-0118096, Syncro (first version)"
+  (Shifters, 1986-1987): 6-speed 0118084 braze-on / 0118086 top-tube / 0118087
+  clamp-on (insert 7222064); 7-speed 0118088/89/90 (7222063) and
+  0118094/95/96 (7222069). One row for all nine kits (they differ only in
+  speed count and fitting). **Misread corrected:** the kit numbers first read
+  as 0116xxx from the bound PDF; the raw JPG at full size shows 0118xxx. 5973
+  "C-Record Syncro" (0211/0212/0213, 1987-88) is the renumbered version and
+  was left as is; year_to 1987 for 8812 rests on the Nov 1987 Record brochure
+  already using 0211-0213.
+- **`1980CampagnoloFreewheel.pdf`** (8 pp, IT/EN/FR/DE, Brevetti
+  Internazionali Vicenza; print code "34-02-0927348-1-80-6000" read as January
+  1980, 6000 copies), `data_source` 198, label `Campagnolo freewheel service
+  sheet (January 1980)`. Freewheel body parts 050071-050078 (adjusting cone,
+  spacers, 1/8" stainless balls, outer body, pawl, inner body, springs),
+  tools 1-7, and a sprocket lay-out chart (AB / DE / F / G, 12-28T, a sixth
+  sprocket step). Rows updated: 2074 "Aluminum Freewheel core" (added the parts
+  list and 12-28T range; years 1980-1980 unchanged) and 2072 "aluminum (6
+  speed)" (**year_from 1982 -> 1980, the least certain call**: the sheet shows
+  a six-sprocket light freewheel in January 1980 but does not say
+  "aluminium").
+- **Read, no rows changed:**
+  - `Campy1986_Synchro.zip` (4 scans, 1986): prose leaflet on the Syncro
+    lever (5/6- and 7-speed, 4 mm and 3 mm spacing, secondary lever turns 45
+    degrees to disengage indexing); no part numbers or weights.
+  - `Campy1987_Sytn.zip` (4 scans, USA, 1987): SYNT sintered brake pads
+    (friction about 70% above the ordinary pad; for Delta, Croce d'Aune with
+    Penta Drive, and Chorus Mono-Planer); no brake-pad category and no part
+    numbers.
+  - `Campy1987_RecordIntro.zip` (8 spreads): "Record: the name of success",
+    race-win lists and prose on the Record gear set (capacity 30T, biggest
+    sprocket 28T, front 18T), brakes, headset and seatpin, chainring and BB,
+    pedal and hub, Record Pista. Low-resolution; the Nov 1987 Record brochure
+    already holds the detail.
+  - `Campagnolo50thAnniversary.pdf` (6 pp, Campagnolo USA, Houston): the 1983
+    limited, numbered 50th Anniversary Group and the new freewheel ads; no
+    part numbers. Rows for the group already exist in every category, all
+    1983-1983.
+- Still unread in this folder: none. The remaining `Campy1953`-`Campy1995`
+  files are duplicates of ingested catalogues or are recorded above.
