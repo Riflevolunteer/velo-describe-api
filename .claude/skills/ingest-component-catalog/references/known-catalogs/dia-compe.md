@@ -106,6 +106,41 @@
   DC-N row is the 500N, needs its own row), the 1974 Nomade "center pull" /
   "with extension levers" and the 1981 "dual brake levers" brakes (generic).
 
+## Dia-Compe "Product Guide" (6 spreads, c. 1994, Reminiscence Part 27) — data_source id 218
+
+- `data_source` 218, label "Dia-Compe Product Guide (c. 1994)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/yoshigai94.html, JPGs
+  `catalog/yoshigai94/yoshigai94_01-06.jpg` (**720 x 509 spreads, about 360 px a page**:
+  model codes read, **weights and prices do not**, a few codes such as 884D are small print).
+  Yoshigai Kikai Kinzoku (Dia-Compe), dated 1994 by the site. Cover "Product Guide", back
+  cover "Component system chart" (ATB, road racing, freestyle, BMX). The guide calls MTB "ATB"
+  and has no V-brake. Pages: 1-2 ATB brakes (N987, N986, C985, 986TKIT, VERSA C5 / C3, 972)
+  and levers (SS-7 / 5 / 4, PC-8 / 5 / 3Jr), 3 road racing (BRS500 BA-55 + BL-50, BRS400
+  BA-45 + BL-45 / 46, BRS200 BA-27 + BL-23 / 24, BRS100 BA-08 + BL-08 / 08C), 4 arch brakes
+  (500N / 630N / 730N / 810N, 750, 510 / 700, MX900, 884D, 887), 5-6 levers (128S-2 / TECH 8,
+  127, 181, 187, 135, 182 / MX77, 188 / 188.4 opposite lever, 182S-2 / TECH 77, MX99, SS-7T,
+  204C, 204QC, 287, BRS400T, HR-08, 166E; the 144 is gone), 7 disk brake with TSALI HUB-F /
+  HUB-R and spacers / pressure plugs, 8 Ahead set (AH 1", AH DL 1-1/8", AH DL 1-1/4"), 9-10
+  brake parts and the brake size table. Per the site BRS500 was an OEM brake for the Mavic
+  racing group.
+- Updated (all `source_ref` -> 218, `year_to` -> 1994, descriptions only where the note fit in
+  255 characters): 652 987 (N987), 663 986 (N986, **a judgement**), 666 985 (C985, dated
+  1994), 674 BRS 500 and 276 BRS 500 lever (dated 1994), 657 750, 677 DC510 (510 / 700), 659
+  884 (884D, **small print, a judgement**, dated 1994), 681 DC500N and 8083 DC630N (the
+  N-brakes 500N / 630N / 730N / 810N), 8089 MX900 / MX1000, 8105 135, 8108 125 / 126 / 127, 273
+  166E, 8868 204 / 207 / 208C. 8083 and 681 have bike links; only their years extend.
+- New (13 rows, 1994-1994, brand 73): brakes 8944 VERSA C5 / C3, 8945 972, 8946 BRS100 BA-08 /
+  BRS400 BA-45, 8947 disk brake; levers 8948 BRS levers BL-50 / 45 / 46 / 23 / 24 / 08 / 08C,
+  8949 SS-7 / 5 / 4 / 7T, 8950 PC-8 / 5 / 3Jr, 8951 MX99 / 182 / MX77 / 182S-2 / TECH 77 / 181
+  / 187 / 287 / HR-08 / BRS400T, 8952 188 / 188.4 opposite lever; 8953 TSALI HUB-F / HUB-R
+  (Hubs); Ahead sets 8954 AH 1", 8955 AH DL 1-1/8", 8956 AH DL 1-1/4" (Headsets).
+- Left alone: BRS 200 (671, 1991-2011), BRS 300 (672 and 275; BRS300 is not in the 1994 guide),
+  the Tsali Competition hub (3295, 1994-97, a different hub), 887 and the other 8xx rows
+  (not clear enough to match), 128S-2 / TECH 8 and the 182 / MX77 family (grouped into 8951,
+  not matched to the 1986 Tech-6 / 128S-II row 8116). Out of scope: brake shoes, cable
+  hangers, rubber covers, adjusting barrels, straddle cables, cables, tools, the size table.
+- Deleted: none. No overrides touch the rows changed here.
+
 ## Yoshigai "DIA-WEINMANN" catalogue (7 pages, September 1964, Reminiscence Part 76) — data_source id 216
 
 - `data_source` 216, label "Yoshigai Dia-Weinmann catalogue (September 1964)". Source:
