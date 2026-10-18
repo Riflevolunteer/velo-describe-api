@@ -80,3 +80,29 @@
   tables and 1984-90 boxes, 330g in the 1992/95 boxes — both recorded);
   the models on the pages not scanned (e.g. 1984 pp. 1-6 road range);
   whether "Santana" in the 1992 spoke chart is a model or a customer.
+
+## Araya Rim catalogue (4 images, 1978, Reminiscence Part 31) — data_source id 215
+
+- `data_source` 215, label "Araya Rim catalogue (1978)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/araya78.html, JPGs
+  `catalog/araya78/araya_01-04.jpg` (720 x 510). Japanese, Araya Industrial Co. Ltd., Osaka.
+  Dated 1978 by the site; the cover carries a news flash that two Japanese riders on Araya
+  rims (Gold label tubulars) won 1st and 2nd in the Aug 1977 World Championships in
+  Venezuela (the same flash as the Sugino 1978 catalogue). Pages: 1 cover (20A), 2
+  back cover with addresses, 3 Model 16B (Gold, Red, Blue labels) and Model 20A, 4
+  Models 16A (1), (2), (4), (5), 7B and 7C. The earliest Araya source; the DB's other
+  Araya rows come from the 1980-95 bmxmuseum excerpts (data_source 152). Tables
+  read at 720 px, so weights could be a digit off.
+- Confirmed with no change: 4916 16A (16A(1) 26x1-3/8 630 g exact), 4922 20A (700C 405 g,
+  27x1-1/4 415 g exact; 5 bike links), 4917 / 4918 / 4919 16B (Gold 300 g, Red 300 g, Blue
+  about 400 g, 24x1-1/4 Red about 400 g; agrees with the 400 g grade noted for 1980-82).
+- Updated (`source_ref` -> 215): 8460 7C `year_from` 1980 -> 1978 (20x1.75, 455 g, the
+  same weight as the 1980 spec box).
+- New (2 rows, 1978-1978, group NULL): 8927 "16A (2) / (4) / (5) hollow" (16A(2) 27x1-1/4
+  610 g, 650B x 35B 560 g, 24x1-1/4 530 g; 16A(4) 22 mm, 700C 525 g, 27x1-1/4 535 g; 16A(5)
+  hollow 700C 415 g) and 8928 "7B" (BMX 20x1.75, 420 g). The 4916 16A row's description is
+  at the 255-character limit, so the 1978 variants live in their own row.
+- Unresolved: the 1978 hollow 16A(5) reads 415 g against 485 g in the 1980 spread (4916 gives
+  16A(5) 22.0/16.0 700C 485 g), so it may be a later generation or a different measure.
+  The 1978 pages also say the 20A matches the structure of the new Mavic rim announced
+  with the Michelin Elan in 1976; no row changed on that.
