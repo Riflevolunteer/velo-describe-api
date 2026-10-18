@@ -569,3 +569,25 @@
   no cranksets or seat posts.
 - Out of scope: chain guards CP 249 / 252 / 253, clip-on cable stops and
   tunnels 2112 / 2113, lever bosses and spare parts.
+
+## VeloBase archive copies: `Simplex_1982.pdf` and `Simplex.zip` (checked 2026-10-18, no rows changed)
+
+- Both are duplicates of catalogues already ingested; nothing was loaded and
+  `source_ref` is unchanged everywhere.
+  - `Simplex_1982.pdf` (6 pages) is the same September 1982 "New Generation"
+    and Selematic brochure as the entry above (`data_source` 51). A fresh
+    diff found every part present with matching weights and years
+    compatible (S061 4616, SX610 4629/4631, SLJ6600 4654/4655, SJ A222/223
+    2575/2576, SLJ A422/423 7263/7264, SXP 4506 6216, SLJ5057 6240, SXP
+    4557/4558 to 4541/4540 7266-7269).
+  - `Simplex.zip` (`scan0001-0020.jpg`) is the same 20 scans as the
+    September 1984 "Loisirs... détente" catalogue (`data_source` 55);
+    spot-checked rows (SX630, SX1, SJ A103 MB, S3445, SP2466/2468, SX8811/
+    8820, MB2600, SX1500, SLJ6164) all exist with 1984 dates.
+- Left alone, by choice: Selematic rows 4648 and 6230 end in 1981 although
+  the 1982 brochure shows the Selematic on sale (a one-year extension with
+  no part number); SLJ A423 (7264) ends 1982 while SLJ A422 runs to 1984.
+- Still unresolved: no Simplex source on hand has a Competition crankset or
+  seat post (the 1982 leaflet and 1984 catalogue list no cranks, and the
+  only seat posts are SX1500 and SLJ6164). Those specs need a
+  COMPONENT_OVERRIDES decision or an earlier Simplex source.
