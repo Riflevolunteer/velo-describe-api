@@ -915,6 +915,9 @@
 - Does NOT contain "AccuShift Plus": that is the later 1989-90 generation (4744
   Accushift Edge 4050, CH-AP10 1419, CS-AP00-S6R 1219 already exist), so the unlinked
   "AccuShift Plus" bike specs stay a COMPONENT_OVERRIDES decision.
-- Unresolved: 6260 "SunTour a-3000" shifter (velobase, no years, no description,
-  no bike links) looks like a placeholder duplicate of 7863 / 7864; a merge or delete
-  candidate, not proposed to the DB.
+- Deleted 2026-10-18 (user decision, no catalogue): 6260 "SunTour a-3000" (Shifters,
+  velobase, source_id 0CF5012B-3AE4-4E2E-9EAC-E26ACA5CF042, source_ref 1, no years,
+  description "SunTour a-3000, Japan", no bike links, no override). A bare placeholder
+  beside the 1987 alpha-3000 levers 7863 / 7864; it might instead have been a shifter
+  of the 1980 a-3000 generation (front derailleurs 2600 / 2611 / 2612 are dated 1980),
+  which has no source. If a later source shows a 1980 a-3000 shifter, insert it fresh.
