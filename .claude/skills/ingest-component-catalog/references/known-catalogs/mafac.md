@@ -145,3 +145,46 @@
   "Mafac cantilever") are brand-only values.
 - Out of scope: pivot holders 65 / 499, tool-kit 48, brake blocks 604 / 64 / 264,
   brazing dimensions, set compositions.
+
+## MAFAC catalogue (1964) — cyclespeugeot.web.fc2.com "Part 70: MAFAC in 1964", data_source id 191
+
+- Source: http://cyclespeugeot.web.fc2.com/reminiscence/mafac64.html;
+  `catalog/mafac64/mafac0001.jpg`, `mafac0002.jpg` (plus enlargements `l1` and
+  `l2` of the same spread), `mafac0003.jpg`, `mafac0004.jpg`. A 4-page centre-
+  fold with no front cover, French only, illustrations by Hebert. Dated 1964 by the
+  page title and by the print code "64-1573" at the foot of the tools page.
+  `mafac0004` is a collector's photo (a tool kit in a Miyata pouch), not a page.
+  The earliest MAFAC source held; the others are c. 1976 (143), 1978 (189) and the
+  1979 poster (187).
+- Pages: 1 "Sa gamme incomparable de freins cantilevers a tasseaux brases": K
+  "Criterium" ("universally known and appreciated"), D "Driver" (cast Alpax shell),
+  H "Cyclomoteur" (chromed steel 5-pad shoes or zinc-plated 4-pad); children's
+  brakes J "Jacky" (cut-out dural) and Y "Kathy" (cast Alpax shell); levers VE
+  (children's city), GE (children's guidonnet), G 1 / G 2 (cyclotouriste
+  guidonnet), V 1 / V 2 (offset city), VDA 1 / VDA 2 (offset city, armoured Delrin),
+  I (inverted, 22 or 23.5mm, steel or dural), GDA 1 / GDA 2 (cyclotouriste guidonnet,
+  armoured Delrin). 2 "Ses freins competitions": Top 63 (forged AG 5 alloy, arms
+  1154 G / D, stirrup 1151 E adjustable, half-stirrups 1151/ME and 1151/FE) and
+  Racer (451E / 452E stirrups, arms 454 G / D), the "poignee course professionnelle
+  a bords arrondis" with a light-alloy cocotte and rubber rest-hand tensioner or the
+  new Delrin "Cocotte-Repose-main-Tendeur", and a Delrin cable relay ball 1161.
+  3 tool kits 44 / 45 / 46 / 48 for bicycles and 51 to 131 for mopeds, scooters and
+  motorcycles, Super-Mafac spark plug spanners.
+- Updated, source_ref -> 191, year_from -> 1964 (the catalogue itself is earlier
+  than the DB's 1970 / 1976): 831 Jacky, 351 Ville VDA (plastic levers), 8378
+  Guidonnet GDA, 8380 Ville enfant (VE), 8381 Guidonnet enfant (GE), 845
+  Cyclo-Tandem. The Cyclomoteur (ref H) is the earlier name of the Cyclo-Tandem:
+  chromed with 5-pad shoes and zinc-plated with 4-pad shoes match the later HC 5 /
+  HC 4 and HZ 5 / HZ 4 codes (C chrome, Z zinc), so it was recorded on 845 and no
+  Cyclomoteur row was inserted. year_to -> 1964: 847 Top 63 (was 1962; description
+  added) and 354 Course 121 Professional (was 1960; medium confidence, matched only
+  by the "professional racing lever" name). 822 Driver years none -> 1964-1964
+  with a description.
+- Inserted (1964-1964, UUID source_id, group_id NULL): 8800 MAFAC Kathy (Brakes).
+- Left alone: Criterium 828 / 829 and the Racer variants 838-842 (years already
+  include 1964, and the lettering on the 1964 Racer drawing cannot be read, so no
+  year_from was moved); reverse lever 348 (the "I" lever, 1960-76, already covered);
+  V 1 / V 2 and G 1 / G 2 levers (no row; probably precursors of the VF and GF);
+  Tiger 846 (not in this fold-out).
+- No bike links: the unlinked MAFAC specs are brand-only.
+- Out of scope: tool kits and spark plug spanners, the Delrin cable relay ball 1161.
