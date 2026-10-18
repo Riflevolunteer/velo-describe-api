@@ -1047,3 +1047,13 @@
   13-24T) and "SunTour HR" rear derailleur (Marathon, Pursuit, Record, Teton, 1985
   Raleigh; the only candidate is 4702 RD-1100 Honor, linked by the abbreviation
   alone, and the Teton is a mountain bike). Both left for a source or a call.
+
+### Follow-up (2026-10-18): "SunTour HR" linked
+
+- Decided after the entry above: the four 1985 Raleigh "SunTour HR" rear
+  derailleurs (Marathon, Pursuit, Record, Teton) now link to 4702 "SunTour 2600
+  / RD-1100, Honor" through `Rear Derailleurs` `'suntour hr': [{ from: 1985, to:
+  1985, id: 4702 }]`. **A judgement:** no DB row is titled HR; the Honor
+  (1973-85, 28T, 14-30) fits the 14-30 5/6-speed freewheels and the mid tier.
+  If a catalogue shows HR is a different model, repoint that entry. The
+  "AccuShift Plus silver 12-30T 7-speed" freewheels stay unlinked.

@@ -102,3 +102,18 @@
 - Left alone: all other rows (the page lists nothing else we lack).
 - Unresolved: 161, 164, GC200, NGC200 still have no source; they need a
   Dia-Compe catalogue between 1974 and 1986.
+
+## 2026-10-18 re-check of the 1986 catalogue and search for other Dia-Compe sources (no rows changed)
+
+- Diffed the bmxmuseum scans (data_source 102) against the live DB: every
+  brake and lever family is present and dated 1986. Optional gaps left alone:
+  135MT20 / 135MT45 (62g, 20 / 45 degree bent MX levers, p20) have no row (8118
+  covers only the 132MT series); DC400N 117g, DC730N 133g and DC810N 134g are
+  not in 681's description. 696 NGC450B says 184g; the scan reads 164g on both
+  NGC450B and NGC450 but at 800 px the 6 and 8 cannot be told apart, so it was
+  left.
+- VeloBase's only Dia-Compe entry is "Dia-Compe 1986 Catalog" at velo-pages
+  `g2_itemId=1284`, possibly with the pp. 12-16 and 21-22 missing from this
+  scan set; velo-pages is down and the Wayback CDX was offline on 2026-10-18.
+  oldschoolracing.ch (1990-98 adverts) and other web results had no
+  164 / 161 / GC200 / NGC200 data.

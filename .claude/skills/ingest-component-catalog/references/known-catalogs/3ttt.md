@@ -234,3 +234,17 @@
   Roma, 2773 Touriste, 2774-2776 / 2748 Trial) could be tied to 8306.
 - Out of scope: tape N3RD 3 Ribbon Degradé, N3R 3 Ribbon, NL Lorica, N3RF 3
   Ribbon Fluo, NCORK / NCORKF Cork Soft Tape.
+
+## COMPONENT_OVERRIDES decision: bare "TTT" stem on the 1983-84 Bianchi (2026-10-18, no catalogue; bike_spec links only)
+
+- The generator reads "TTT" as `3ttt` (WORD_ALIASES) and could not pick among
+  the 3ttt stem rows. New `Stems` entry `'3ttt'`: 1983-84 -> 6404 "3ttt AR,
+  Record" (1980-91), 7 specs (1983 Nuovo Racing, Super Leggera, Tipo Corsa,
+  Campione del Mondo, Campione d'Italia; 1984 Super Leggera, Tipo Corsa); the
+  1983 Eco Pista track bike -> 6420 "3ttt ARP2, Mod. 2 Record Pista" (same pick
+  as the Professional Track DL 175). **A judgement:** the AR84 "Record 84" is
+  not named in a catalogue before 1986-87, so the plain AR Record was taken for
+  1983-84. Years outside 1983-84 get no link (the 1989 Professional SLX "3ttt"
+  stem stays unlinked). Bare "TTT" handlebars, saddles and seatposts are not
+  covered: the bare brand does not identify a model there. 8 rows changed, no
+  `component_detail` row touched.

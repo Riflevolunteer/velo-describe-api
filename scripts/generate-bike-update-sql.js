@@ -601,6 +601,9 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // 1985 Raleigh (Marathon, Pursuit, Record, Teton): "SunTour HR", on 14-30 5/6-speed freewheels. Only the Honor
+    // RD-1100 (1973-85, 28T / 14-30) fits by capacity and tier; no DB row is titled HR, so this is by abbreviation.
+    'suntour hr': [{ from: 1985, to: 1985, id: 4702 }], // SunTour 2600 / RD-1100, Honor
     // Peugeot 1970-72 (Dutch catalogues): two velobase rows share the title.
     'simplex criterium': [{ from: 1965, to: 1970, id: 4644 }, { from: 1971, to: 1973, id: 4645 }], // Simplex Criterium 1965-70 / 1971-73
     // 1990 Bianchi US catalogue (retrobike archive 1676).
@@ -1455,6 +1458,13 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': 6674, // Shimano HS-6300, 600 AX
     // 1987 Bianchi.
     '3ttt ar84': 6424, // 3ttt AR84, Mod. 84 (Record 84)
+    // 1983-84 Bianchi (Nuovo Racing, Super Leggera, Tipo Corsa, Campione del Mondo, Campione d'Italia): a bare "TTT"
+    // stem. The 3ttt Record road stem of the era is the AR "Record" (1980-91); the AR84 is not named until 1986-87.
+    // The 1983 Eco Pista track bike gets the Mod. 2 Record Pista, as the Professional Track DL 175 below.
+    '3ttt': [
+      { bike: 'Eco Pista', from: 1983, to: 1983, id: 6420 }, // 3ttt ARP2, Mod. 2 Record Pista (64 degree)
+      { from: 1983, to: 1984, id: 6404 }, // 3ttt AR, Record
+    ],
     // 1973-75 Raleigh / 1974 Motobecane "T.T.T. Record": the 1970s Mod. 1
     // Record Strada; 1975 Raleighs say "New ...", taken as the 2nd version.
     // The Professional Track DL 175 gets the Mod. 2 Record Pista instead.
