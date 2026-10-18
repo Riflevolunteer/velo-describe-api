@@ -188,3 +188,19 @@
   Tiger 846 (not in this fold-out).
 - No bike links: the unlinked MAFAC specs are brand-only.
 - Out of scope: tool kits and spark plug spanners, the Delrin cable relay ball 1161.
+
+## Racer duplicate review (2026-10-18, no catalogue; source_ref unchanged)
+
+- Reviewed the five Racer brake rows 838-842. 838 (lettered MAFAC RACER,
+  1970-80, catalogue 143), 840 (oil holes, DURAL FORGE MAFAC, 1952-53), 841
+  (lettered MAFAC, black plastic washers, 1970) and 842 (red plastic washer,
+  DURAL FORGE MAFAC, 1960) are distinct collector variants, not duplicates.
+- 839 "MAFAC Racer (vertical bolt)" (velobase, 1952-1980, bare description, no
+  bike links, no override) described a fitting rather than a lettering and
+  overlapped every other row. Retitled "MAFAC Racer (lettering unrecorded;
+  vertical bolt)", year_to 1980 -> 1969, description rewritten; search_text
+  unchanged ("MAFAC Racer"). source_ref stays 1 (velobase) as no source
+  supports the change.
+- Unresolved: the 1969 cap is a judgement (838 and 841 take over from 1970),
+  not evidence. The Racer page of the 1978 catalogue (printed pp. 6-7) is
+  missing from the scan; if found, re-date 839-842 from it.
