@@ -248,3 +248,50 @@
   stem stays unlinked). Bare "TTT" handlebars, saddles and seatposts are not
   covered: the bare brand does not identify a model there. 8 rows changed, no
   `component_detail` row touched.
+
+## 3ttt catalogue (12 pages, undated c. 1978, Reminiscence Part 55) — data_source id 207
+
+- `data_source` 207, label "3ttt catalogue (c. 1978)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/3ttt78.html, JPGs
+  `catalog/3ttt78/3ttt_01s-12s.jpg` (**360 x 505 px, no larger version on the
+  server**; legible, art. numbers and weights could be a digit off). Italian,
+  English and French, Tecno Tubo Torino S.r.l. Dated c. 1978 by the site from
+  Cycle Sports "All Catalog" ("the road racing stem mod. 78 and new seat post
+  appeared in that year"); the pages carry no date, so rows touched are 1978
+  as a first-appearance year. Pages: 3-4 Manubrio Record Grand Prix (100/1/2/3),
+  Competizione (150/1/2), Competizione Superleggero (200/1/2), Competizione
+  Pista (250/5, 300/3); 5-6 stems Mod. 1 Record Strada (230/1/2, K 60-140),
+  Mod. 2 / Mod. 3 Record Pista (250/5, 110 / 120), Mod. 78 Record Strada
+  (200/6), Record Regolabile (250/3), Record Doppio Girevole (250/4), bolt 12/0,
+  expander 10/0, key 20; 7 bends alone: Curva Record Competizione (300/2/3,
+  0.360 kg), Superleggero (300/4, 0.250 kg), Grand Prix (300/1); 8 Touriste
+  Mod. 75 (400/3/4) and Viaggio shapes Inglese, Valencia, Condor, Tirolo,
+  Torino, Parma (300/5, 300/6) and the 600/1 touring brake lever; 9-11
+  seat post 500/1 (160 mm, 230 g), saddles 50/1, 50/2, 50/5, 50/7, Criterium
+  seat post 500/3 (160 mm, 180 g), saddle Criterium Competizione 50/9.
+  The "Manubrio" entries are bar + stem sets; the bends are listed alone later.
+- Updated (all `source_ref` -> 207): 2767 Record Competizione Superleggero
+  `year_to` 1975 -> 1978 (bend 300/4, set 200/1/2); 6406 Record Regolabile v1
+  `year_to` 1975 -> 1978 (250/3; **a judgement** that the 1978 Regolabile is
+  the 1975 one); 8322 ADG Doppio Girevole `year_from` 1991 -> 1978 (**a
+  judgement**: the 1978 "Record Doppio Girevole" 250/4 is the same concept as
+  the 1991 ADG); 5230 retitled **"3ttt Criterium 78" -> "3ttt 50/9, Criterium
+  Competizione"** (`search_text` "3ttt Criterium 78" -> "3ttt 50/9 Criterium
+  Competizione"; **a judgement** that "78" names the 1978 saddle; "also
+  Criterium 78" kept in the description); descriptions with art. numbers only:
+  2768 CGP (300/1; set 100/1/2/3), 2753 Competizione Track (300/3; set 250/5),
+  6416 Mod. 1 (230/1/2, K 60-140 mm), 6420 ARP2 and 6422 ARP3 (250/5), 5719
+  RSCAL (1978 spec named inline: 500/3, forged duralumin, 160 mm, 180 g vs the
+  1986 180 mm).
+- New (9 rows, 1978-1978, group NULL): 8844 "400/3/4, Touriste Mod. 75", 8845
+  Inglese, 8846 Condor, 8847 Tirolo (300/5), 8848 Torino (300/6), all "(Viaggio)";
+  8849 "200/6, Record Strada Mod. 78" (stem); 8850 "500/1, Reggisella" (160 mm,
+  230 g, patented, the successor of 5716 Mod. Record, 250 g, 1970-75); 8851
+  "50/1, molded racing saddle"; 8852 "600/1, brake lever for touring bars"
+  (first 3ttt row in Brake Levers).
+- Not added, by decision: the saddles **50/2, 50/5 and 50/7**, which look like the
+  1975 #10 (calfskin, moulded, unpadded), #20 (seal-skin, microcellular) and
+  #30 SL under new numbers (8301, 8300, 5228); no rows added and no years
+  extended on the 1975 rows. Valencia (2747, "300/5") and Parma (2765) already
+  existed. The 12/0 bolt, 10/0 expander and 20 key are out of scope.
+- Deleted: none. No bike links or overrides referenced a row changed here.
