@@ -114,3 +114,39 @@
 - Left alone (in neither catalogue): ADB 125 AA, ADB X, AeroDynamics
   bullhorns, M196, Tsubasa 5 / 6, MT-18, Dirt Drop, Jaguar (steel) 6617,
   Hi-Crown, Periscopa, Lugged, Adjustable, posts 67 / 72 / Jaguar / S-83.
+
+## Nitto Handle catalogue (25 pages, 1966, Reminiscence Part 121) — data_source id 217
+
+- `data_source` 217, label "Nitto Handle catalogue (1966)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/nitto_handle1966.html, JPGs
+  `catalog/nitto1966/01-25.jpg` (740 x ~1090, legible; page added to the site in Jan 2026).
+  Japanese, Nitto Handle Works Co. Ltd., 41 4-chome Arakawa, Arakawa-ku, Tokyo ("Technology of
+  Nitto"; Tokyo 8-company parts group; back cover price 200 yen). 1966 per the site; no year is
+  printed. 13 product pages (1 Universiade, 2 Olympiade, 3 Drop B-121 / B-122 and Grand
+  Randonneur 131 / 132, 4 All Rounder B-201 to B-209, 5 North-Road B-301 to B-305, 6 Prior, 7
+  Special, 8 Hyper, 9 Hi-Crown / 10 Hi-Way, 11 Slider and S-62 / S-11), then a frame-fit
+  diagram and 10 pages of selection advice (bar and stem choice by bike type, reach, shoulder
+  width, the "drop bar danger" myth). Each page header carries its patent number (Universiade
+  782553 / 4060256 / 4052576, Prior 4082320, Special / Hyper 492725, Hi-Crown 399587, Hi-Way
+  4052577, Slider 4024360 / 4071910). The company text says Hyper came first, then Universiade,
+  Prior, Olympiade and Hi-Crown.
+- Updated (all `source_ref` -> 217, `year_from` 1980 -> **1966**, 1966 weight appended to the
+  description): 8532 B104 and 2889 B105 Universiade (104 alloy 300 g, 105 alloy 315 g; 2889
+  has 1 bike link, only its year moves earlier), 8535 B111 / 8536 B112 / 8537 B113 / 8538 B114
+  Olympiade (111 645 g, 112 570 g, 113 / 114 alloy 300 g), 8533 B132 Randonneur (Grand
+  Randonneur-132 alloy 300 g; the catalogue prints "Raundoneur"), 8541 B201 / 8542 B206 /
+  8543 B209 All Rounder (380 / 190, 375 / 185, 420 / 210 g), 8546 B302 North Road and 8547 B303
+  (520 / 255 and 510 / 250 g). **Judgements** on model identity: matching width, drop and
+  weights against the 1980 rows. 6616 Hi-Crown (1960-70) description gains the 1966 spec (forged
+  ALCOA 17S-T4, 250 / 260 g), years unchanged.
+- New (12 rows, 1966-1966, brand 323, group NULL): 8932 "101 / 102, Universiade (steel)", 8933
+  "103, Universiade (alloy)", 8934 "B-121 / B-122, Other's Drop (track)", 8935 "131, Grand
+  Randonneur (steel)", 8936 "B-202 / 203 / 204 / 205 / 207 / 208, All Rounder", 8937 "B-301 /
+  304 / 305, North Road", stems 8938 "Prior 40 / 50 / 60 / 70", 8939 "Special 50 / 60 / 70", 8940
+  "Hyper 40 / 50 / 60 / 70", 8941 "Hi-Way 50", 8942 "Slider 100", 8943 "S-62 / S-11".
+- Left alone: B115 Olympiade (2876) and B135 Randonneur (8534) are not in 1966; B307, B409, B211 /
+  B212 come later; the B123 / B125AA Craft track bars (the 1966 track bars are B-121 / B-122);
+  the 1980 Slider (8561, 720 g, 60-140 mm) is not merged with the 1966 Slider 100 (525 g, 50-100
+  mm), probably a later generation; 6608 Nitto (First Gen.) (1960-70). The frame-fit diagram and
+  commentary pages are out of scope.
+- Deleted: none. No overrides touch the rows changed here.
