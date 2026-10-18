@@ -60,6 +60,49 @@
   8113 (88 -> 90); 1987 Bianchi "QS500N Balance Response System" -> 682
   (143 -> 144). Raleigh 161 / 164 levers remain unlinked (missing pages).
 
+## Dia-Compe "Products 1986", complete English edition (Reminiscence Part 37, 32 pages) — data_source id 209
+
+- `data_source` 209, label "Dia-Compe Products 1986 catalogue, complete English
+  edition (1986)". Source: http://cyclespeugeot.web.fc2.com/reminiscence/yoshigai86.html,
+  JPGs `catalog/yoshigai86/1986dc_01-32.jpg` (800 x 565, A5, 32 pages, English,
+  "Yoshigai Kikai Kinzoku", Higashi-Osaka / Dia-Compe Inc., Fletcher NC). **The
+  same printing as data_source 102** (same cover "PRODUCTS 1986", same weights on
+  the calipers, MTB and MX pages), but **complete**: it has the printed pp. 12-16
+  (racing, touring and extension levers) and pp. 21-22 (handlebar stems) that the
+  bmxmuseum scan lacked, so the "not touched (pages missing)" rows in the entry
+  below for 102 are resolved here. The other pages were not re-read row by row.
+  The page text (Mr. Gami) says the 1986 range includes "levers over 10 pages",
+  the Weinmann-derived centre-pull and side-pull lines, and the 960 cantilever
+  being "almost the same as the French CLB".
+- Updated (all `source_ref` -> 209): 270 151C, 271 152, 272 154, 282 160C, 283 NGC
+  202, 284 NGC160, 8801 162, 6516 CF-G Series, 6517 GC Series `year_to` -> 1986
+  (all velobase 1980 or the 1974 Tomoda row); 273 166E Extention Lever (undated)
+  -> 1986; 269 144C description only. Descriptions now give each lever's weight
+  and clamp; the weights agree with the velobase pair weights (88 / 90 / 103 / 104 /
+  108 g each); 6517's 338 g (Spec) equals GC110. 8801 (162, Weinmann type, 1974)
+  extended on the judgement that the 1974 set weight (195 g) and the 1986
+  singles (162 86 g, 162C 105 g, 162H 85 g, 162G 103 g) are the same line.
+- New (22 rows, 1986-1986, brand 73): levers 8861 NGC200 / NGC210 / NGC212 (105 /
+  113 / 111 g, 24.0 mm), 8862 NGC144, 8863 GC144 / GC160 / GC162, 8864 144G /
+  160G / 161G / 162G (Compe-G), 8865 153 / 155 / 156 / 157, 8866 144 / 151 / 160
+  / 161 / 162 and H versions (no hood), 8867 201, 8868 204 / 207 / 208C
+  anatomical, 8869 144T / 204T tandem, 8870 141 juvenile, 8871 166A / 196
+  extension levers, 8872 163 / 165 / 169 / 195 extension sets, 8873 164G
+  (161G + 166, 140 g), 8874 205 / 205-II / 205C / 209C / 265; stems 8875 NGC series
+  (NGC85 / 95 / 105, 316 / 324 / 336 g), 8876 GC-H, 8877 GC/BL, 8878 CF, 8879
+  CF-H, 8880 CF45G, 8881 DC65; handlebars 8882 189.3 / 189.3L. All stems: forged
+  aluminium alloy, 70 degree head, 25.4 mm clamp, Allen head bolt unless noted.
+- Left alone: the CF-G stem weights (CF65G read as 204 g against 310 / 332 g for
+  the larger two, so the CF-G description names only the extensions); the "164" without the G, "GC200" and "500G" are not
+  in the catalogue by those names (164G = 161G + 166, NGC200 is the 24.0 mm
+  lever, no 500G brake).
+- **Follow-up for the bike specs (not done):** unlinked 1985 Raleigh values
+  "Dia-Compe 164 with extension levers" (3 bikes), "GC200" (2), "161 levers with
+  gum hoods" (2), "161 gum hoods", "NGC200" (1), "500G" and "DC400N" brakes need
+  `COMPONENT_OVERRIDES` entries or title matches against the new rows (8873 for
+  the 164, 8861 for NGC200 and GC200, 8866 for 161); the grouped titles will not
+  match by substring.
+
 ## Dia-Compe NGC982-280 brochure + 986 instruction leaflet — undated (equusbicycle.com/bike/diacompe/diacompe.htm)
 
 - Two leaflets, four scans, no dates: `data_source` 115 "Dia-Compe
