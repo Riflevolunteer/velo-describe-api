@@ -921,3 +921,68 @@
   beside the 1987 alpha-3000 levers 7863 / 7864; it might instead have been a shifter
   of the 1980 a-3000 generation (front derailleurs 2600 / 2611 / 2612 are dated 1980),
   which has no source. If a later source shows a 1980 a-3000 shifter, insert it fresh.
+
+## SunTour "Component Catalog '88 New Line-up", Japanese edition (12 images, 1988, Reminiscence Part 32)
+
+- `data_source` 199, label `SunTour Component Catalog '88 New Line-up,
+  Japanese edition (1988)`. Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/suntour88.html
+  (`catalog/suntour88/suntour88_01..12.jpg`, large versions `_04l.._12l` for
+  pp. 6-22). The cover reads "'88 NEW LINE-UP"; the page text recalls the
+  1988 Tour de France (Steve Bauer in yellow) and SunTour's sponsorship of
+  the SMM/La Suisse team, so everything is 1988 and "NEW" marks products
+  introduced in 1988. **Only printed pp. 1-4, 6-7, 10-11, 13-14, 16-17, 19 and
+  21-22 are on the site**; pp. 5, 8-9, 12, 15, 18, 20 and 23 onward are not.
+  Japanese text; model codes and weights read from the large images (the
+  XCD 6000 labels were re-read from a 3x crop). Code Nos. were only read at
+  page size, so none was written into a description.
+- Ranges covered: Superbe Pro, Sprint 9000, Cyclone 7000, XC 9000, XC Sport
+  7000 and XCD 6000 (all NEW), plus Winner-Pro 7/6/5-speed and SunTour-alpha
+  freewheels, and the Accushift explanation pages (I.P.C, I.F.C, P.C, F.C).
+  New in 1988: the whole XCD 6000 group, SL-BC00 Bar-Con, OS-410 cable holder,
+  SL-XS00-CH, CL-XC01, BL-XC00, SP-SU00-S, BL-PC00 Palm Control, FW-AL00 alpha
+  freewheels. No "AccuShift Plus" appears.
+- `year_to` -> 1988 (23 rows, year only, part shown current in 1988): freewheels
+  7867 WP-7000, 7868 WP-6500, 7869 WP-5000, 7866 FW-AL00-R6; 1042 CB-7600, 7850
+  CB-8600, 7852 BL-CL10, 459 CB-7700, 454 CB-7200; 7853 CW-CL10, 1420 SP-6100,
+  167 BB-400; 7855 FD-CL10-H, 7848 FD-SP00-B, 4780 RD-XC00, 7851 SL-CL10, 7849
+  LD-4850; hubs 7854 HB-CL10, 7857 RH-5000, 3623 RH-4800; pedals 4003 PL-CL10,
+  7856 PL-5700, 4015 PL-5100.
+- `year_from` -> 1988 (6 rows, catalogue earlier than the DB): 6262 SL-BC00
+  Bar-Con (1989), 7784 BL-SB10 (1989), 4011 PL-SB00 (1989), 173 BB-SB10
+  (1989), 7986 HB-SB00 hubs (1992, now 1988-1992), 5932 SP-SU00-S (1989; still
+  titled "GPX", but the catalogue lists it NEW on the Cyclone page).
+- XCD 6000 (9 rows, years 1988-1990; **1990 is a judgement**, taken from the
+  existing 1988-90 generic rows and the 1990 siblings 2000, 2662, 4789, 1224,
+  6316, not from this catalogue, which only shows 1988): years only on 3631
+  HB-XD00 and 4021 PL-XD00; descriptions rewritten from the catalogue on 472
+  BL-XD00 (326 g), 1060 BA-XD00 (roller cam, 255 g), 2001 CW-XD00 (724 g,
+  matched the Spec), 6317 SL-XD00 (198 g pair, matched the Spec), 6376 CL-XD10
+  (518 g pair; also gained 1988-1990, it had null years). Retitled with
+  `search_text` rewritten: 2661 "SunTour XCD 6000" -> "SunTour FD-XD00-GX,
+  XCD 6000" (110 g matched) and 4790 "SunTour XCD 6000 Rear Derailleur" ->
+  "SunTour RD-XD00-GX, XCD 6000" (the velobase 896 g Spec replaced by the
+  catalogue's 296 g, probably a typo for 296).
+- Rows inserted (8, 1988-1988): 8813 SL-XS00-CH XC Sport 7000 thumb shifter,
+  8814 SP-SU00-L XCD 6000 seatpost (300 mm), 8815 BB-XD00, 8816 BA-XD10
+  cantilever, 8817 FW-AL00-R5 alpha 5-speed, 8818 HB-SP00 Sprint 9000 hubs,
+  8819 BB-500 Sprint 9000, 8820 SP-8000 Superbe Pro chain.
+- Rows deleted (2): 471 `SunTour XCD 6000` brake lever (`source_id`
+  D2F7B720-33A5-4425-A41A-DA49BDF7B2EB, 1988-90, source_ref 1) and 1059
+  `SunTour XCD 6000` brakes (`source_id` BE246287-8E28-4AE2-AE81-98C06000FF48,
+  1988-90, source_ref 1): bare, no part number, duplicates of the numbered
+  472 BL-XD00 and 1060 BA-XD00. No bike_spec links, no
+  `COMPONENT_OVERRIDES` references; the DELETE was shown first and guarded
+  on `source_id` and `NOT EXISTS`. If a later source seems to reintroduce
+  "SunTour XCD 6000" brake levers or brakes, it is these.
+- Left alone: 3630 "SunTour XCD 6000" hub (1980-1990, generic; unclear
+  whether the catalogue's second hub is an HB-XD10); CL-XC01 (XC 9000
+  combination lever, NEW) is probably the same part as the existing CL-XC10
+  (1987, 6373), so no row was added; no-category items OS-410 cable holder,
+  BL-PC00 Palm Control, HL-3000 head binder, QR-170 seatpost binder, OT-GP00
+  grip; CL-XS00, SP-XS00 and CW-XC00 (not shown in the pages we have); the
+  pages missing from the Reminiscence set.
+- Gotcha: a quote in a `data_source` label (the "'88") must be escaped in
+  every subquery that matches on it, not just in the INSERT; the first load
+  failed on the `source_ref` subquery and loaded nothing until the generator
+  escaped it in both places.
