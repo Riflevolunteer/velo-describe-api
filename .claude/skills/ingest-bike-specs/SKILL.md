@@ -81,9 +81,13 @@ generating, classify every model in the CSV and drop the out-of-scope rows:
   is gitignored so the edit is untracked), and list the skipped models in that
   catalogue's `references/known-catalogs/` entry so a later pass knows they
   were left out on purpose. Borderline models: ask the user, don't guess.
-- Existing CSVs for already-loaded catalogues still contain the deleted
-  models. Re-running a generator on one of those files re-inserts them, so
-  strip the out-of-scope rows from the CSV first.
+- Existing CSVs for already-loaded catalogues still contain the 51 deleted
+  models. `scripts/generate-bike-update-sql.js` skips them through the
+  `NON_ROAD_SKIP` map (keyed `<year>|<brand>`, exact first-column titles) and
+  prints "Skipped N non-road model(s)"; without it a re-run re-inserted one (the
+  1985 Bianchi "Bambina", 2026-10-18, reverted). For a new catalogue, either
+  strip the out-of-scope rows from the CSV as above or add their titles to
+  `NON_ROAD_SKIP`, and check the "Skipped" line before loading.
 
 ### 1. Inspect the CSV before generating
 

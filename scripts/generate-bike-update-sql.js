@@ -122,6 +122,46 @@ function parseFilename(filename) {
   return { year: m[1], brand: BRAND_NAMES[token] || capitalize(token) };
 }
 
+// Models that stay in the source CSVs but are NOT loaded: the bike table is road
+// bikes only (road, touring, mountain, track, tandem, cyclocross). On 2026-10-17
+// these 51 city, hybrid and children's models were removed from the DB, but their
+// rows are still in bike_specs/*.csv, so without this skip any re-run of a
+// catalogue puts them back (it did once, with the 1985 Bianchi "Bambina").
+// Keyed `<year>|<brand lower-case>`; titles are the exact first-column values.
+// Classified from each bike's specs (bars, tyre and wheel size, fenders, racks,
+// gearing) plus the catalogue category, not from model names. Add a model here
+// when a new catalogue brings in a non-road one.
+const NON_ROAD_SKIP = new Map(
+  Object.entries({
+    '1973|bianchi': [
+      'Rekord 24in 10 vel. ragazzo (00.5.55)', 'Rekord 24in 5 vel. ragazzo (00.5.56)',
+      'Rekord 24in 10 vel. tubolari (00.5.68)', 'Rekord 22in 5 vel. ragazzo (00.5.69)',
+      'Sebino 28in Condor 4 vel. (00.5.03)', 'Sebino 26in Condor 4 vel. (00.5.63)',
+      'Sebino 28in Lusso (00.5.17)', 'Sport Donna/Cortina 26in (00.5.04)',
+      'Touring 28in Sport uomo (00.5.64)', 'Touring 26in Sport donna (00.5.65)',
+      'Viaggio Lusso uomo (00.5.01)', 'Touring uomo (00.5.60)',
+      'Viaggio Lusso donna (00.5.02)', 'Touring Viaggio donna (00.5.61)',
+    ],
+    '1985|bianchi': ['Bambina'],
+    '1987|bianchi': ['VOLPE'],
+    '1990|bianchi': ['Intercept', 'Equinox', 'Tangent', 'Axis', 'Volpe', 'Backstreet', 'Boardwalk', 'Advantage'],
+    '1993|bianchi': ['Volpe', 'Boardwalk', 'Advantage'],
+    '1973|falcon': ['Model 58', 'Super-Tourist De Luxe Model 88', 'Super-Tourist De Luxe Model 89'],
+    '1974|falcon': ['Model 58', 'Super-Tourist De Luxe Model 88', 'Super-Tourist De Luxe Model 89'],
+    '1974|motobecane': ['Nobly'],
+    '1975|motobecane': ['Riviera', 'Nobly/3', 'Nobly/10'],
+    '1971|peugeot': ['PE 41', 'PE 22', 'PE 40', 'PE 25', 'PE 45'],
+    '1972|peugeot': ['PE 41', 'PE 22', 'PE 40', 'PE 25', 'PE 45'],
+    '1979|peugeot': ['PA 55 Sport Dames', 'PH 50'],
+    '1977|raleigh': ['Record 24'],
+    '1983|raleigh': ['Micron 5'],
+  }).map(([key, titles]) => [key, new Set(titles)])
+);
+
+function isNonRoad(year, brand, title) {
+  return NON_ROAD_SKIP.get(`${year}|${brand.toLowerCase()}`)?.has(title) === true;
+}
+
 // Minimal RFC4180-style CSV parser: handles quoted fields with embedded
 // commas/newlines and doubled-quote escaping, which these catalog CSVs use.
 function parseCsv(text) {
@@ -2140,6 +2180,7 @@ async function main() {
   let bikeCount = 0;
   let specCount = 0;
   let skippedFiles = [];
+  const nonRoadSkipped = [];
 
   for (const file of files) {
     const filename = path.basename(file);
@@ -2169,6 +2210,10 @@ async function main() {
     for (const row of dataRows) {
       const title = (row[0] || '').trim();
       if (!title) continue;
+      if (isNonRoad(year, brand, title)) {
+        nonRoadSkipped.push(`${year} ${brand} ${title}`);
+        continue;
+      }
       const bikeFields = { category: null, sizes: null, colors: null, weight: null };
       const rowSpecs = [];
 
@@ -2306,6 +2351,9 @@ async function main() {
   );
   if (skippedFiles.length) {
     console.log(`Skipped (filename doesn't match <year>_<brand>_spec*.csv): ${skippedFiles.join(', ')}`);
+  }
+  if (nonRoadSkipped.length) {
+    console.log(`Skipped ${nonRoadSkipped.length} non-road model(s) (NON_ROAD_SKIP): ${nonRoadSkipped.join('; ')}`);
   }
 }
 
