@@ -235,3 +235,49 @@
   CXC-624 / 331, CRC-T301, 55G, MTH-100 (later SR numbering), "Royal special
   racing bend" (RY-978 vs RY-RC ambiguous), 1987 "CT-P5E".
 
+
+## Sakae Ringyo (SR) "Bicycle Parts" Catalog No. 17 — undated, c. 1980 (VeloBase archive, 40 pp)
+
+- `data_source` 200, label `Sakae Ringyo (SR) Sakae Bicycle Parts Catalog No. 17
+  (c. 1980)`. Source: velobase.com/Pages/Resources/CatalogScans.aspx
+  `Sakae/Sakae_No17.pdf` (download path `%2fCatalogScans%2fSakae%2f...`; 40 pp,
+  English, no text layer; printed page N = PDF page N+1). **Undated.** In the
+  series it sits before P-5 (August 1980), No. 18 (c. 1982) and P-7 (Sep 1982),
+  so `year_from` 1980 was used as an upper bound for every part it shows (the
+  real year could be 1979 or earlier). No pedals or hubs: those are in
+  `Sakae_Pedals_Hubs.pdf`, which is still unread.
+- Contents (printed pp.): Extra Super Light, Super Light and Track Racing groups
+  (3-8), chainwheels Royal / Super Apex / Apex / Silstar / Grand Silver / Super
+  Steel (9-20), chain guards CG-101/102/110/111/501/550 (21-22), bars (23-26),
+  motocross (27), stems (28-33), tools T-902-910 (34), seat pillars (35-36),
+  small parts H-0101-0602 and boxes (37-38). Out of scope: chain guards,
+  tools, small parts, packaging.
+- It shows the earlier model names the later catalogues call "former names":
+  NL-90 (later NA-312-90), AR-L / AR-S (later ARA-101), and the Silstar cranks
+  as SI-5DRG / SI-5SD (P-5 has SN-5DLA / SN-5DRG). Chain guards and the part
+  tables use SAX-5RG / AX-5RG I-II naming throughout.
+- Rows updated (16, `year_from` 1982 -> 1980, `source_ref` 200): 7873 SAX-5RG,
+  1755 SAX-3TG, 7874 AX-5RG II, 7875 AX-5SD II AH, 7877 SI-5DRG E, 7897 AR-S /
+  AR-L, 7896 NR-S / NR-L, 7891 RN-L, 7889 CT-L (also 3 bike specs linked, year_to
+  1984 left), 7886 WS-SL / WS-SLB, 7898 MB-205B, 7899 NRY, 7903 SS-30, 7901
+  AX-AH (7 bike specs linked), 7904 SW-50AH / SW-50E, 7908 ASP. Row 6669 VT
+  (Vitesse) description rewritten with the VT1 72 / VT2 65 / VT3 58 degree
+  angles, 70-140 mm extensions, 325-395 g (the DB's 365 g Spec is the 110 mm).
+- Rows inserted (4, 1980-1980, `source_ref` 200): 8821 GS-3 Grand Silver (690 g
+  alloy, 975 g steel), 8822 SST-5 Super Steel-5 (1,240 g), 8823 AX-5SDIIE
+  Apex-5SD II E (the Apex counterpart of the existing AX-5SDIIAH, no weight
+  given), 8824 NRC-375 New Racer (steel track bend, 570 g, Track Racing Group
+  181).
+- Left alone:
+  - 7906 MS-100B / MS-200CP / MS-200B / MS-300 motocross stems: No. 17 shows
+    MS-100 and MS-200 only, not the MS-300, so the 1982 `year_from` stays.
+  - 7907 "RY-P1ESL II" (210 g) and 5852 "RY-P1SL III" (260 g) look like later
+    versions of No. 17's NRY-P1ESL (190 g) and RY-P1SL (275 g); the DB has no
+    row for the earlier versions, and nothing says whether they are distinct
+    products, so none was added.
+  - Rows for parts not in No. 17 (Custom A / CAC / CTC / DX series, Aerox AEC,
+    New Apex AA, OPC cranks, conversion axles, Silstar hubs, SI-3DFA, RY-TY, AS
+    stems) are newer and unchanged.
+- Unresolved: a date for No. 17 (could be 1979 or earlier); `Sakae_Pedals_Hubs.pdf`
+  ("1970's?") not read; no No. 17 source for the 1970-dated cranks such as
+  Custom-3.

@@ -17,7 +17,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/huret.md](known-catalogs/huret.md) — Huret / Sachs-Huret (4 entries)
 - [known-catalogs/le-cyclo.md](known-catalogs/le-cyclo.md) — Le Cyclo (3 entries)
 - [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (1 entry)
-- [known-catalogs/sakae-ringyo.md](known-catalogs/sakae-ringyo.md) — Sakae Ringyo / SR (1 entry)
+- [known-catalogs/sakae-ringyo.md](known-catalogs/sakae-ringyo.md) — Sakae Ringyo / SR (4 entries)
 - [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (1 entry)
 - [known-catalogs/dia-compe.md](known-catalogs/dia-compe.md) — Dia-Compe (4 entries)
 - [known-catalogs/zeus.md](known-catalogs/zeus.md) — Zeus (3 entries)
