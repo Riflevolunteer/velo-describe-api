@@ -82,3 +82,23 @@
   from Products 1986 (though pp 12-16, 21-22 unscanned), and its 26in MTB
   rim chart and Taiwan address suggest c.1988+. Re-date from a dated
   catalogue if one turns up.
+
+## Tomoda World Parts List No. 1 (April 1974) — Reminiscence page diacompe.html, data_source 193
+
+- Source: http://cyclespeugeot.web.fc2.com/reminiscence/diacompe.html (JPEG
+  scans of a Tomoda mail-order parts list, Osaka; images tomoda-wpl_197404_43
+  / _46 / _132 = pp. 43, 46, 132). A retailer's list, so a first-appearance
+  record, not a start date. The #960 date comes from the page's citation of
+  New Cycling, July 1973 (CLB type #960, made by Yoshigai), not from the list.
+- Updated, source_ref -> 193: 8107 Dia-Compe 131 / 131D / 131DS year_from
+  1986 -> 1974 (1974 #131 was a flat-type alloy lever, 130g per set; the
+  1986 weights are kept and both editions named in the description because
+  the spec differs); 8105 Dia-Compe 135 year_from 1986 -> 1974 (same style
+  of note); 8096 Dia-Compe 960 cantilever year_from 1986 -> 1973 (replaced
+  the Mafac Driver-type set, 1968-73).
+- Inserted (1974-1974): 8801 "Dia-Compe 162, hooded lever (Weinmann 162
+  type)", brake levers, hooded alloy lever with adjuster and quick release,
+  195g; search_text "Dia-Compe 162 hooded lever".
+- Left alone: all other rows (the page lists nothing else we lack).
+- Unresolved: 161, 164, GC200, NGC200 still have no source; they need a
+  Dia-Compe catalogue between 1974 and 1986.
