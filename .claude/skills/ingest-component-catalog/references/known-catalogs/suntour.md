@@ -895,3 +895,26 @@
   AccuShift Plus X-Press is not in any of these editions (later system).
 - Out of scope: fork ends and dropouts, spoke discs, accessories, special tools,
   original goods, BMX parts, gear capacity and spoke length charts.
+
+## SunTour USA Technical Bulletin #21, AccuShift installation and troubleshooting guide — undated, c. 1987 (SunTour-ServiceBulletin.zip, VeloBase archive, 33 pp) — reviewed, no rows changed
+
+- Source: velobase.com catalogue archive, `/CatalogScans/SunTour/SunTour-ServiceBulletin.zip`
+  (33 GIF/JPG scans: 31 bulletin pages plus a Superbe-Pro 1985 advertisement and one
+  duplicate). SunTour U.S.A., Parsippany NJ. Dated only by "the '87 Superbe Pro",
+  so c. 1987-88. No data_source row created.
+- A service guide, not a parts list: IC / IFC / IPC lever classes (IPC = "Power
+  AccuShift", RE / UL / P selector), rear derailleurs with a 4-digit name (Sprint 9000,
+  XC 9000, Cyclone 7000, XC Sport 7000, alpha-5000; alpha-3000 is the one
+  incompatible exception), Winner / Winner Pro / a freewheels, Superbe Pro, SunTour
+  Pro and Cyclone chains, hub shell offset 33 mm (5-speed) / 37 mm (6-speed and
+  Ultra-7), drop dimension 24-28 mm, lever models SL-IP00, SL-CL10-B/C,
+  SL-5000-BS/CS/CH/CP, SL-3000-BS/CS/CH/CP, torque and troubleshooting tables.
+- No rows added or changed: 6295 SL-IP00 already carries the index / Power Ratchet
+  modes (87); 7863 / 7864 alpha-3000 levers already come from the c. 1987 leaflet
+  (91); nothing dates anything more precisely.
+- Does NOT contain "AccuShift Plus": that is the later 1989-90 generation (4744
+  Accushift Edge 4050, CH-AP10 1419, CS-AP00-S6R 1219 already exist), so the unlinked
+  "AccuShift Plus" bike specs stay a COMPONENT_OVERRIDES decision.
+- Unresolved: 6260 "SunTour a-3000" shifter (velobase, no years, no description,
+  no bike links) looks like a placeholder duplicate of 7863 / 7864; a merge or delete
+  candidate, not proposed to the DB.
