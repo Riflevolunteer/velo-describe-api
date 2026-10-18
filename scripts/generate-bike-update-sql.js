@@ -458,6 +458,10 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1977-78 Raleigh (Super Course, Grand Prix, Record Ace, Super Grand Prix): the only Compe V row; the
+    // "Raleigh/" prefix and the bare "Compe V alloy front" keep the matcher from linking it.
+    'raleigh sun tour compe v': [{ from: 1977, to: 1978, id: 2603 }], // SunTour 3701 / FD-1100, Compe-V (5-hole)
+    'compe v alloy front': [{ from: 1977, to: 1978, id: 2603 }],
     // 1970 Peugeot (Dutch-market catalogue).
     'simplex criterium': [{ from: 1964, to: 1975, id: 2583 }], // Simplex Prestige Criterium AV 223 (no other Criterium front before the 1977 LJ A200)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
@@ -1977,6 +1981,22 @@ const COMPONENT_OVERRIDES = {
     // entries above (the row is dated 1983 but is the only A124).
     '700 c weinmann a 124 narrow concave section alloy': 7776, // Weinmann A124 Super X
     '700 c weinmann a124 narrow concave section alloy': 7776,
+  },
+  'Freewheels': {
+    // 1982 Raleigh Clubman 12 / Competition 12 / Rapide 12 / Record Ace 12 list "Sun Tour Ultra 6" alone. Two
+    // Ultra-6 rows are in range (NW-6500 1979-85, US-6500 1978-84); NW-6500 chosen as the common New Winner
+    // Ultra-6 of the period. Judgement, not proven by the spec text.
+    'sun tour ultra 6': [{ from: 1979, to: 1985, id: 2240 }], // SunTour NW-6500, New Winner Ultra 6
+  },
+  'Cassettes': {
+    // 1990 Bianchi US catalogue: SunTour AccuShift Plus 7-speed cassettes.
+    'suntour accushift plus black 12 30t 7 speed': [{ from: 1990, to: 1992, id: 1216 }], // CS-AP00-S7 / K7, 7-speed
+    'suntour accushift plus black 13 23t 7 speed': [{ from: 1990, to: 1992, id: 1216 }],
+    'suntour accushift plus black 14 28t 7 speed': [{ from: 1990, to: 1992, id: 1216 }],
+  },
+  'Shifters': {
+    // 1990 Bianchi US catalogue (Nyala, Osprey): under-bar X-Press levers.
+    'suntour accushift plus x press': [{ from: 1990, to: 1992, id: 6312 }], // SL-XP10-R7 / L, X-Press (XC-Pro / XC-Comp)
   },
 };
 

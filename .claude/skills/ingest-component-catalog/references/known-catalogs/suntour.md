@@ -1015,3 +1015,35 @@
   PE-2300, sweat band PE-2100, racing cap PE-1300, bandana PE-2200, jersey
   PE-1600, pants PE-1700, apron PE-1800, stickers PE-1900 / PE-2000. None has a
   component category, so it is out of scope entirely.
+
+## COMPONENT_OVERRIDES decisions for four SunTour spec strings (2026-10-18, no catalogue; bike_spec links only)
+
+- Not a catalogue: these specs name parts the DB already has but the bike
+  generator's matcher refuses to guess, so they were linked with year-ranged
+  entries in `COMPONENT_OVERRIDES` (`scripts/generate-bike-update-sql.js`, new
+  `Freewheels`, `Cassettes` and `Shifters` blocks, plus two lines in `Front
+  Derailleurs`). The generator was re-run, and only the 16 matching `UPDATE
+  bike_spec SET component_id` statements were loaded (14 rows changed, second run 0;
+  Grizzly and Project 7 X-Press were already linked to 6312 by the matcher). No
+  `component_detail` row changed.
+- **Compe V -> 2603** "SunTour 3701 / FD-1100, Compe-V (5-hole)", 1977-78: "Raleigh/Sun
+  Tour Compe V" (Grand Prix, Record Ace, Super Course, Super Grand Prix 1978; the
+  "Raleigh/" prefix blocked the matcher) and "Compe V alloy front" (Super Course
+  1977). The only Compe V row; clear.
+- **Sun Tour Ultra 6 -> 2240** NW-6500, New Winner Ultra 6 (1979-85), for the
+  1982 Raleigh Clubman 12, Competition 12, Rapide 12 and Record Ace 12
+  freewheels. **A judgement:** US-6500 7812 (Perfect Ultra-6, 1978-84) is equally in
+  range, and the spec text can't separate them. 8260 (1978 only) and 7868 / 7870
+  (1987-88) are out by year. The same bikes' rear derailleurs link to 7820.
+- **SunTour AccuShift Plus** (all 1990 Bianchi): cassettes "black 12-30T / 13-23T /
+  14-28T 7-speed" (Osprey, Eros, Nyala) -> 1216 CS-AP00-S7 / K7 (1990-92); the
+  "X-Press" shifters (Nyala, Osprey) -> 6312 SL-XP10 X-Press (XC-Pro / XC-Comp,
+  1990-92), the row the matcher had already given Grizzly and Project 7.
+  **Correction:** an earlier TODO guess that AccuShift Plus meant row 4744
+  (Accushift Edge) was wrong; these specs are cassettes, freewheels and
+  shifters, not rear derailleurs.
+- Still unlinked: "AccuShift Plus silver 12-30T 7-speed" freewheels (Grizzly,
+  Project 7; the 1992 freewheels 7994 / 7995 are the wrong year and 2249 alpha is
+  13-24T) and "SunTour HR" rear derailleur (Marathon, Pursuit, Record, Teton, 1985
+  Raleigh; the only candidate is 4702 RD-1100 Honor, linked by the abbreviation
+  alone, and the Teton is a mountain bike). Both left for a source or a call.
