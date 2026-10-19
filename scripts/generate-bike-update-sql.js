@@ -1030,9 +1030,9 @@ const COMPONENT_OVERRIDES = {
     'weinmann 999 with quick release hand-lever': [{ to: 1971, id: 7929 }],
     'weinmann 999': [{ to: 1971, id: 7929 }],
     // 1975 Raleigh (US): the "999" is back in the table.
-    'weinmann 999 centerpull with lightened q r levers': [{ to: 1975, id: 7929 }], // Weinmann AG Vainqueur 999 (610 / 750)
-    'weinmann 999 centerpull with q r levers': [{ to: 1975, id: 7929 }],
-    'weinmann 999 centerpull with extension levers': [{ to: 1975, id: 7929 }],
+    'weinmann 999 centerpull with lightened q r levers': [{ to: 1976, id: 7929 }], // Weinmann AG Vainqueur 999 (610 / 750)
+    'weinmann 999 centerpull with q r levers': [{ to: 1976, id: 7929 }],
+    'weinmann 999 centerpull with extension levers': [{ to: 1976, id: 7929 }],
     'campagnolo super record with lightened levers': 582, // 1975 Team Professional: Campagnolo 4061, Super Record v1 (1974-82)
     // 1977 Raleigh (US). Grand Prix / Record Limited "Raleigh/Weinmann forged
     // alloy centerpull" name no model, left unlinked.
@@ -1280,6 +1280,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo nuovo record cotterless': [{ to: 1977, id: 1496 }], // 1975 Raleigh Mk IV / International: 1049 Nuovo Record Strada v4
     'campagnolo nuovo record cotterless with alloy disc chainguard': [{ to: 1977, id: 1496 }], // 1977 Raleigh Professional Mk V
     'campagnolo super nuovo record with titanium axle & cups 53 42 chainrings 1725 mm cranks': 1509, // 1975 Raleigh Team Professional: 1049/A
+    'campagnolo super record with titanium axle & cups 53 42 chainrings 1725 mm cranks': 1509, // 1976 Raleigh Team Professional: same crank, 1049/A
     'campagnolo veloce 53 39t': 7062, // 1993 Bianchi: Campagnolo FC-01VL, Veloce
     'shimano at10 x 50 40 28t': 7724, // 1993 Bianchi: Shimano FC-AT10, Altus A10 (SG-X triple)
     'shimano at10 x 50 40 30t': 7724, // 1993 Bianchi: Shimano FC-AT10, Altus A10 (SG-X triple)
@@ -1883,7 +1884,10 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
   },
   Freewheels: {
-    // 1970 Peugeot (Dutch-market catalogue).
+    // 1982 Raleigh Clubman 12 / Competition 12 / Rapide 12 / Record Ace 12 list "Sun Tour Ultra 6" alone. Two
+    // Ultra-6 rows are in range (NW-6500 1979-85, US-6500 1978-84); NW-6500 chosen as the common New Winner
+    // Ultra-6 of the period. Judgement, not proven by the spec text.
+    'sun tour ultra 6': [{ from: 1979, to: 1985, id: 2240 }], // SunTour NW-6500, New Winner Ultra 6    // 1970 Peugeot (Dutch-market catalogue).
     'cyclo competition 5 speed 14 21t': 2088, // Cyclo Competition 64 (5 speed)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano hyperglide black 14 28t 6 speed': [{ from: 1990, to: 1993, id: 7603 }], // MF-HG20, 200GS (6sp HG)
@@ -2055,15 +2059,11 @@ const COMPONENT_OVERRIDES = {
     'super champion 700c dural': 5176, // Super Champion Competition (1970-80), the standard tubular
     // 1977 Raleigh Competition GS / Super Course; same A124 as the 1982/83
     // entries above (the row is dated 1983 but is the only A124).
+    '27 x 1 1 4"': null, // 1976 Raleigh Record: bare tyre size, hit the Rigida 27 x 1 1/4" brand row
     '700 c weinmann a 124 narrow concave section alloy': 7776, // Weinmann A124 Super X
     '700 c weinmann a124 narrow concave section alloy': 7776,
   },
-  'Freewheels': {
-    // 1982 Raleigh Clubman 12 / Competition 12 / Rapide 12 / Record Ace 12 list "Sun Tour Ultra 6" alone. Two
-    // Ultra-6 rows are in range (NW-6500 1979-85, US-6500 1978-84); NW-6500 chosen as the common New Winner
-    // Ultra-6 of the period. Judgement, not proven by the spec text.
-    'sun tour ultra 6': [{ from: 1979, to: 1985, id: 2240 }], // SunTour NW-6500, New Winner Ultra 6
-  },
+
   'Cassettes': {
     // 1990 Bianchi US catalogue: SunTour AccuShift Plus 7-speed cassettes.
     'suntour accushift plus black 12 30t 7 speed': [{ from: 1990, to: 1992, id: 1216 }], // CS-AP00-S7 / K7, 7-speed

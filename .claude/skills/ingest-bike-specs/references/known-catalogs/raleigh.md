@@ -127,6 +127,31 @@
   Criterium, Nervar, Maillard 13-26, Simplex Maxi, TTT Franco Belge / Track
   bend, Raleigh-branded parts. All loaded catalogs regenerate unchanged.
 
+## 1976 Raleigh (US) — `1976_raleigh_spec.csv` (10 bikes, 187 specs, 69 linked)
+
+- Source: https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1966.html
+  — the blog files it under 1966, but it is the US "Raleigh Lightweight
+  Bicycles" catalogue of 1976 (25 pages; price lists on pp 23 and 25 dated
+  "MAR. 26, 1976", Raleigh Industries of America; DL-185 Team Professional did
+  not exist in 1966). Ingested as 1976 at the user's instruction. Distinct
+  from the UK 1976 brochure that was transcribed and reversed (see above).
+  Technical Specifications table p. 22, transcribed by hand from crops.
+- Models: the 10 table columns (Team Professional through Super Tourer,
+  titles as 1975). Not added: Record 24 / 26 (price list only), Sprite 27,
+  Sports, Superbe, Tourist, Folder, LTD, MX, Colt, Space Rider, Mountie.
+- Fixes: Super Tourer chain "1/24"" -> 1/2"; "Prugnet 62 A" -> Prugnat 62A;
+  weights 22.5 / 26.25 lbs.; Track brakes / derailleur blank -> "None".
+- Overrides: Weinmann 999 centerpull wordings ranged to 1976 -> 7929; Team
+  Professional crank (1976 wording) -> 1509; bare `27 x 1-1/4"` rims -> null
+  (hit the Rigida brand row 5153). Alesa rims link to 7928 unaided.
+- Generator fix: COMPONENT_OVERRIDES defined `Freewheels` twice, the later
+  block shadowing the earlier (dead since 3625d8f). Merged; every loaded
+  catalogue regenerates equal or higher. `Cassettes` and `Shifters` are also
+  duplicated and still shadowed; not yet merged.
+- Left unlinked: Weinmann Symmetric, Nervar / T.A. / alloy-disc cranks,
+  Normandy hubs with no flange stated, Simplex Maxi, tyres, bars and stems
+  with no model row.
+
 ## 1977 Raleigh — `1977_raleigh_spec.csv` (6 bikes, 95 specs, 22 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1977-raleigh-catalogue.1345/
