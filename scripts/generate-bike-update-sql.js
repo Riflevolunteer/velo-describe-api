@@ -137,6 +137,8 @@ const CATALOGUE_COUNTRY = new Map([
   ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
   ['1973|bianchi', 'IT'], ['1940|bianchi', 'IT'], // Italian-market scans
   ['1986|colnago', 'IT'], // "Catalogo generale"
+  ['1979|colnago', 'IT'], // four-language export sheet; user chose IT (2026-10-19)
+  ['1984|derosa', 'IT'], // Italian/English dealer brochure; user chose IT (2026-10-19). 1989 stays US (GITA dealer catalogue)
   ['1981|bianchi', 'US'], // Vespa of America catalogue
   ['1982|bianchi', 'US'], // US racing brochure ("available in America")
   ['1988|bianchi', 'US'], // US catalogue (saarf dates it 1986)
