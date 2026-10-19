@@ -137,6 +137,16 @@ const CATALOGUE_COUNTRY = new Map([
   ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
   ['1973|bianchi', 'IT'], ['1940|bianchi', 'IT'], // Italian-market scans
   ['1986|colnago', 'IT'], // "Catalogo generale"
+  ['1981|bianchi', 'US'], // Vespa of America catalogue
+  ['1982|bianchi', 'US'], // US racing brochure ("available in America")
+  ['1988|bianchi', 'US'], // US catalogue (saarf dates it 1986)
+  ['1990|bianchi', 'US'], // Bianchi USA Inc., South San Francisco
+  ['1989|derosa', 'US'], // GITA Sporting Goods (Charlotte NC) US dealer catalogue
+  // Inferred, not stated by the source (user accepted 2026-10-19); correct if the original says otherwise:
+  ['1985|raleigh', 'US'], // Sheldon Brown Retro Raleighs scan, lbs weights, Team U.S.A. models
+  ['1974|motobecane', 'US'], ['1975|motobecane', 'US'], // lbs weights, inch frame sizes, "Extras No Charge"
+  ['1973|zeus', 'ES'], // Spanish-language catalogue (Zeus-102)
+  ['1983|bianchi', 'IT'], ['1984|bianchi', 'IT'], // translated from Italian per the transcription notes
 ]);
 
 function capitalize(word) {
