@@ -323,6 +323,46 @@
   chains, Dia-Compe RT 400 / QS 400N / Royal Gran Comp 400 / DC 630N, Shimano
   Z105 / Z202 / Z501 / Z513GS / L522GS / L523, SunTour Lepree / XC / Hero rear.
 
+## 1987 Raleigh (UK) — `1987_raleigh_spec.csv` (13 bikes, 294 specs, 38 linked)
+
+- Source: https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1987_3.html
+  (24 scans). Pp. 1-16 are the TI Raleigh Ltd, Nottingham "Handbuilt
+  Lightweights" catalogue ("100 Years of Winning 1887-1987", UK edition ->
+  `data_source.country` GB); the spec tables are p. 14 "Lightweights -
+  Technical Specifications" (8 models) and p. 15 "Lightweight Tourers -
+  Technical Specifications" (4 tourers + Maverick 18 Pro). Pp. 17-24 are a
+  separate Raleigh Frame Sets catalogue (Types 8801-8804, SBDU; issue date
+  Oct. 1987), not loaded. Transcribed by hand from zoomed crops; CSV on the
+  1984 UK header layout (Wheels -> Rims / Hubs / Spokes).
+- Models: Criterium 12, Record Sprint 12, Sirocco 12, Competition 12,
+  Triathlon 12, Road Ace 12, Ventura 12 (Gents + Lady's), Record Ace 12;
+  Zenith 10, Granada 10, Royal 18, Randonneur 18; Maverick 18 Pro (mountain).
+  All drop-bar / rim-brake road, touring or mountain, so in scope; the
+  other catalogues of the set (Racers, BMX, fun bikes) are not on the page.
+- Overrides (1987 block per category): 105 = the 1987 "105" 1050 series
+  (FD 2462, RD 4449, SL-1050 6130, FC-1050 1778 incl. the Biopace cell,
+  HB-1050 3524, PD-1050 3953, HP-1050 3083, BR-1050-57 954); 600EX = the
+  1986-87 6208 SIS series (FD-6207 2481, RD-6208 4471, SL-6208 6149, FC-6207
+  1798, FH-6208 3539, MF-6208-6 2218, BR-6208 972, HP-6207 3090). The
+  existing 'shimano 105' FD / RD overrides keep the 1983-85 Golden Arrow
+  picks for other bikes; Sirocco 12 and Ventura 12 are prepended with
+  bike + 1987 entries because the 1984 Sirocco 12 shares the title. Selle
+  Royal Aero Pearl White / Triathlon nulled (matcher took the bare brand
+  row 5521).
+- Matcher picks kept: Michelin Select 6826 (row dated 1990, but the model is
+  in this 1987 catalogue and it is the only Select row), SunTour Mountech
+  GTL v2 rear 4712 (dated 1985, only row), Dia-Compe 980 660 (dated 1986,
+  only row), Tange MTB-225 3154, Shimano PD-T100 3952, Huret Rival rear 4279,
+  Uniglide chain 7450.
+- Left unlinked: friction 600EX pedals (PD-6207 ends 1986) and Record Ace
+  rear (RD-6207 ends 1986, 6208 is SIS only), Competition "new 105 SLR
+  calipers" (49 vs 57 not stated), the 105 / 600EX cassettes and 105
+  friction shifters, Huret Rival / New Success fronts, Weinmann 570 / 610 /
+  733, Maillard hubs, Sakae stems and seat pins, Sedisport / Sedisport Black,
+  MKS pedals, Brooks / ISCA / Selle Italia saddles, Sugino TPX, SunTour Z,
+  Nitto MT1, tyres other than Select.
+- Regression: all 40 other CSVs regenerate with unchanged link counts.
+
 ## 1982 Raleigh — `1982_raleigh_spec.csv` (6 bikes, 73 specs, 30 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1982-raleigh-lightweights-racing-catalogue.993/

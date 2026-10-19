@@ -128,7 +128,7 @@ function bikeSourceCond(sourceRefSelect) {
 const CATALOGUE_COUNTRY = new Map([
   ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
   ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
-  ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], // TI Raleigh UK brochures
+  ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], // TI Raleigh UK brochures
   ['1973|falcon', 'GB'], ['1974|falcon', 'GB'],
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
   ['1970|peugeot', 'NL'], // Dutch-market "Peugeot '70" (1971-74 mix NL + FR: left NULL until split)
@@ -551,6 +551,10 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
+    'shimano new 105 sis': [{ from: 1987, to: 1987, id: 2462 }], // Competition / Triathlon: FD-1050 105
+    'shimano 600ex': [{ from: 1987, to: 1987, id: 2481 }], // Road Ace / Record Ace: FD-6207 600EX (1984-87)
+    'shimano 600 ex': [{ from: 1987, to: 1987, id: 2481 }], // Road Ace: FD-6207 600EX (1984-87)
     // 1986 Raleigh (US) Supercourse: bare "Suntour Cyclone"; no row dated 1986 (FD-3300 / FD-3700 end 1985, Cyclone 7000 starts 1987).
     'suntour cyclone': null,
     // 1977-78 Raleigh (Super Course, Grand Prix, Record Ace, Super Grand Prix): the only Compe V row; the
@@ -583,7 +587,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
     'campagnolo nuovo gran sport': 2276, // Campagnolo 3600/NT, Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
-    'shimano 105': [{ to: 1989, id: 2466 }, { from: 1990, to: 1992, id: 2467 }], // Corsa: FD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: FD-1055 105SC
+    'shimano 105': [{ bike: 'Sirocco 12', from: 1987, to: 1987, id: 2462 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 2462 }, { to: 1989, id: 2466 }, { from: 1990, to: 1992, id: 2467 }], // Corsa: FD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: FD-1055 105SC
     'suntour ar': 2620, // Sirocco: SunTour FD-2500, AR (1982-85)
     'sun tour ar': 2620, // Quasar / Zenith
     'sun tour arx': 2621, // Clubman: SunTour FD-2600, ARX (same row as the 'suntour arx' key)
@@ -698,6 +702,10 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
+    'shimano new 105 sis': [{ from: 1987, to: 1987, id: 4449 }], // Competition / Triathlon: RD-1050 105
+    'shimano 600 ex': [{ from: 1987, to: 1987, id: 4471 }], // Road Ace: RD-6208 600EX SIS (1986-87)
+    'shimano 600ex': null, // Record Ace: friction 600EX; RD-6207 ends 1986, RD-6208 is SIS only, so no row fits
     // 1985 Raleigh (Marathon, Pursuit, Record, Teton): "SunTour HR", on 14-30 5/6-speed freewheels. Only the Honor
     // RD-1100 (1973-85, 28T / 14-30) fits by capacity and tier; no DB row is titled HR, so this is by abbreviation.
     'suntour hr': [{ from: 1985, to: 1985, id: 4702 }], // SunTour 2600 / RD-1100, Honor
@@ -727,7 +735,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
     'campagnolo nuovo gran sport': 4085, // Campagnolo 3500, Nuovo Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
-    'shimano 105': [{ to: 1989, id: 4452 }, { from: 1990, to: 1992, id: 4455 }], // Corsa / Record Sprint: RD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: RD-1055 105SC
+    'shimano 105': [{ bike: 'Sirocco 12', from: 1987, to: 1987, id: 4449 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 4449 }, { to: 1989, id: 4452 }, { from: 1990, to: 1992, id: 4455 }], // Corsa / Record Sprint: RD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: RD-1055 105SC
     'suntour cyclone ii': 4742, // Competition: SunTour RD-3500, Cyclone Mark-II (1981-85)
     'sun tour cyclone ii gt wide ratio': 4743, // Royal: SunTour RD-3700, Cyclone Mark-II (GT)
     'suntour ar': 4725, // Sirocco: SunTour RD-4200, AR (aR II) (1982-85)
@@ -888,6 +896,10 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
+    'shimano new 105 small flange light alloy qr': [{ from: 1987, to: 1987, id: 3524 }], // Competition: HB-1050 105
+    'shimano new 105 qr': [{ from: 1987, to: 1987, id: 3524 }], // Triathlon: HB-1050 105
+    'shimano 600ex small flange qr light alloy': [{ from: 1987, to: 1987, id: 3539 }], // Road Ace: FH-6208 / HB-6207-F 600EX SIS freehub (bike has the 600EX cassette)
     // 1986 Raleigh (US) Prestige: only the front hub is named; BH-1500 (1980-85), BH-1600 (1984-85) and the 1988+ HB-SB00 all fit, none dated 1986.
     'suntour superbe pro (front hub)': null,
     // 1973 Peugeot (Dutch catalogue).
@@ -1025,6 +1037,9 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
+    'shimano 600ex qr; recessed fitting calipers and hooded alloy levers': [{ from: 1987, to: 1987, id: 972 }], // Road Ace: BR-6208 600EX (1986-87)
+    'calipers : shimano new 105 type 57 long bolt': [{ from: 1987, to: 1987, id: 954 }], // Triathlon: BR-1050-57 105 (long, 57 type)
     // 1970 Peugeot (Dutch-market catalogue).
     'mafac racer': [{ from: 1970, to: 1980, id: 838 }], // MAFAC Racer (lettered MAFAC RACER)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
@@ -1223,6 +1238,9 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
+    // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
+    'shimano new 105': [{ from: 1987, to: 1987, id: 3083 }], // Competition / Triathlon headset: HP-1050 105
+    'shimano 600ex light alloy sealed mechanism': [{ from: 1987, to: 1987, id: 3090 }], // Road Ace: HP-6207 600EX (1983-87)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano deore xt': [{ from: 1990, to: 1993, id: 7579 }], // HP-M735 / M737
     'shimano r500': [{ from: 1990, to: 1993, id: 7569 }], // HP-R500
@@ -1274,6 +1292,11 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
+    'shimano 105 52 42t alloy rings & cold forged 170mm alloy cranks': [{ from: 1987, to: 1987, id: 1778 }], // Sirocco: FC-1050 105
+    'shimano new 105 52 42t light alloy with 170 mm cranks': [{ from: 1987, to: 1987, id: 1778 }], // Competition: FC-1050 105
+    'shimano 105 biopace 52 42t 170 mm cranks': [{ from: 1987, to: 1987, id: 1778 }], // Triathlon: FC-1050 105 (the DB has no separate Biopace 105 row)
+    'shimano 600ex 52 42t light alloy with 170 mm alloy cranks and sealed mechanism bottom bracket': [{ from: 1987, to: 1987, id: 1798 }], // Road Ace / Record Ace: FC-6207 600EX (1984-87)
     // 1986 Raleigh (US).
     'suntour superbe pro 52 42 170mm': [{ from: 1984, to: 1986, id: 1991 }], // Prestige: SunTour CW-5000 Superbe Pro (1984-86); the matcher took the 1993-94 Superbe
     // 1974 Peugeot (Dutch catalogue). No Stronglight Competition 53 row exists, left unlinked.
@@ -1422,6 +1445,9 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
+    // 1987 Raleigh (UK): brand + descriptor only; the matcher falls back to the bare Selle Royal brand row (5521).
+    'selle royal aero pearl white': null,
+    'selle royal triathlon': null,
     // 1986 Raleigh (US): brand + descriptor only; the matcher falls back to the bare Selle Royal brand row (5521), as the 1984 Aero values were nulled.
     'selle royal anatomical': null,
     'selle royal leather': null,
@@ -1612,6 +1638,9 @@ const COMPONENT_OVERRIDES = {
     'gb forged alloy': 6533, // GB Forged
   },
   Shifters: {
+    // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
+    'shimano new 105 sis index gear change': [{ from: 1987, to: 1987, id: 6130 }], // Competition / Triathlon: SL-1050 105 SIS (6sp)
+    'shimano 600 ex with sis index system levers': [{ from: 1987, to: 1987, id: 6149 }], // Road Ace: SL-6208 600EX SIS; the matcher took the 1970-80 Shimano 600
     // 1986 Raleigh (US).
     'suntour cyclone': null, // Supercourse: LD-3700 / LD-3750 / LD-3800 (1985-87) all fit; the matcher took the 1988-89 Cyclone 5000/7000/9000
     'suntour superbe pro': [{ from: 1983, to: 1986, id: 6301 }], // Prestige: LD-4650 Superbe Pro (1983-86), as the 1985 pick; matcher took the 1991 row
@@ -1734,6 +1763,8 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
+    'shimano new 105 alloy platform': [{ from: 1987, to: 1987, id: 3953 }], // Competition: PD-1050 105
     'lyotard 45 ca with toe clips and straps': 3811, // 1974 Peugeot PX 10 LE / PX 60: Lyotard 45CA (1930-80)
     'rubber block': null, // 1971 Peugeot sports bikes: generic, not the Roger Piel row
     // 1990 Bianchi US catalogue (retrobike archive 1676).
@@ -1961,6 +1992,8 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
   },
   Freewheels: {
+    // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
+    'shimano 600ex cassette 13 14 15 17 19 21t silver': [{ from: 1987, to: 1987, id: 2218 }], // Road Ace: MF-6208-6 600EX SIS cassette (1986-89)
     'sun tour ultra 6 13 24t': [{ from: 1979, to: 1985, id: 2240 }], // 1979 Raleigh Super Course: NW-6500 (13T top sprocket rules out US-6500), as the 1983 Clubman
     // 1982 Raleigh Clubman 12 / Competition 12 / Rapide 12 / Record Ace 12 list "Sun Tour Ultra 6" alone. Two
     // Ultra-6 rows are in range (NW-6500 1979-85, US-6500 1978-84); NW-6500 chosen as the common New Winner
