@@ -281,6 +281,48 @@
   pedals and tyres.
 - Regression: all 39 other CSVs regenerate with unchanged counts.
 
+## 1986 Raleigh (US) — `1986_raleigh_spec.csv` (21 bikes, 424 specs, 52 linked)
+
+- Source: https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1986.html
+  (32 scans, mostly 750 x 1000; Raleigh Cycle Company of America, Kent WA,
+  "Copyright 1986", form 075RG; `data_source.country` US). The specs are the
+  "1986 Raleigh - Speced for Performance" text blocks on pp. 30-31 (p. 30
+  1141 x 1500, p. 31 1130 x 1500), one block per model like the 1985 sheet;
+  transcribed by hand from zoomed crops. CSV on the 1985 header layout:
+  Type from the range heading, weight from the model heading, Headset /
+  Brake Levers / Spokes as their own columns; BRAZE-ONS folded into Special
+  Features (-> Extras) rather than minting a label; "Dia-compe QS500N/152"-
+  style cells split into Brakes + Brake Levers; no Gearing column (not in 1986).
+- Ranges: Lightweight Racing (Prestige, Competition, Supercourse, Grand
+  Prix), Lightweight Touring (Portage, Kodiak, Alyeska), Technium USA (480,
+  460, 440; new), Sport Touring (Olympian, Marathon, Pursuit, Record, Sportif,
+  Capri; Wyoming and Team U.S.A. gone, Capri new), Mountain Tour (Crested
+  Butte, Elkhorn, Seneca, Teton, Grand Mesa). Not added: Teton 24" (24"
+  wheels, single 17" frame, treated as children's). No Teton saddle line in
+  the source.
+- Overrides: Superbe Pro crank -> 1991 CW-5000 (1984-86); Superbe Pro
+  shifters -> 6301 LD-4650 (1983-86); "Shimano 600" shifters ranged
+  {to 1985: 6138, 1986-87: 6148 SL-6207}; nulled for no 1986 row or generic
+  text: Superbe Pro front hub, bare "Suntour Cyclone" front derailleur and
+  shifters, "Thumb shifters", and the Selle Royal brand + descriptor saddles
+  (they fell back to the brand row 5521).
+- Matcher picks kept: Deore XT M700 (2497 / 4490 / 980), Z-series (2543 /
+  2544 / 4545 / 4546 / 6195), AR (2620 / 4725), Superbe Pro FD / RD (2652 /
+  4768), SVX GT RD 4770, Dia-Compe 981 / GC960 / DC500N / QS500N and levers
+  152 / AGC 250, Araya 7X / 16A / SP-30, Shimano 600EX hubs / pedals / brakes
+  (7551 / 3961 / 972), SunTour Hero front 2636 (row dated 1987), SR SP-154.
+- Generator fix: COMPONENT_OVERRIDES defined `Cassettes` and `Shifters` twice
+  (as `Freewheels` before), the later small block shadowing the first;
+  merged. Regenerated link counts rise for 1974 / 1975 Motobecane, 1978 and
+  1985 Raleigh, 1984 and 1989 De Rosa and the 1987 / 1988 / 1990 / 1993
+  Bianchi (restored overrides; not back-filled into the DB). 1983 and 1984
+  Raleigh each drop by one: the restored 'shimano 600ax top mounted direct
+  fit levers' null (those two DB rows are already NULL).
+- Left unlinked: SR / Sansin / Maillard hubs and cranks, Selle Royal (above),
+  Kusuki, Rigida, Weinmann 570 / 116, IRC and Raleigh tyres, Sedis / Daido
+  chains, Dia-Compe RT 400 / QS 400N / Royal Gran Comp 400 / DC 630N, Shimano
+  Z105 / Z202 / Z501 / Z513GS / L522GS / L523, SunTour Lepree / XC / Hero rear.
+
 ## 1982 Raleigh — `1982_raleigh_spec.csv` (6 bikes, 73 specs, 30 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1982-raleigh-lightweights-racing-catalogue.993/

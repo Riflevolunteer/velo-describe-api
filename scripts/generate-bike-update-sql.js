@@ -127,7 +127,7 @@ function bikeSourceCond(sourceRefSelect) {
 // rest stay NULL rather than guessed. A filename token overrides this.
 const CATALOGUE_COUNTRY = new Map([
   ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
-  ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], // Raleigh Industries of America / Rampar
+  ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
   ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], // TI Raleigh UK brochures
   ['1973|falcon', 'GB'], ['1974|falcon', 'GB'],
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
@@ -551,6 +551,8 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1986 Raleigh (US) Supercourse: bare "Suntour Cyclone"; no row dated 1986 (FD-3300 / FD-3700 end 1985, Cyclone 7000 starts 1987).
+    'suntour cyclone': null,
     // 1977-78 Raleigh (Super Course, Grand Prix, Record Ace, Super Grand Prix): the only Compe V row; the
     // "Raleigh/" prefix and the bare "Compe V alloy front" keep the matcher from linking it.
     'raleigh sun tour compe v': [{ from: 1977, to: 1978, id: 2603 }], // SunTour 3701 / FD-1100, Compe-V (5-hole)
@@ -886,6 +888,8 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1986 Raleigh (US) Prestige: only the front hub is named; BH-1500 (1980-85), BH-1600 (1984-85) and the 1988+ HB-SB00 all fit, none dated 1986.
+    'suntour superbe pro (front hub)': null,
     // 1973 Peugeot (Dutch catalogue).
     'normandy high flange simplex quick release': [{ from: 1960, to: 1980, id: 3391 }], // Maillard Normandy (high flange, oblong holes)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
@@ -1270,6 +1274,8 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1986 Raleigh (US).
+    'suntour superbe pro 52 42 170mm': [{ from: 1984, to: 1986, id: 1991 }], // Prestige: SunTour CW-5000 Superbe Pro (1984-86); the matcher took the 1993-94 Superbe
     // 1974 Peugeot (Dutch catalogue). No Stronglight Competition 53 row exists, left unlinked.
     'stronglight 49 d light alloy 45 53t': 1895, // Stronglight 49D (Depose), as 1973
     'stronglight dural 49d 50 40t': 1895, // PA 60 touring double
@@ -1416,6 +1422,11 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
+    // 1986 Raleigh (US): brand + descriptor only; the matcher falls back to the bare Selle Royal brand row (5521), as the 1984 Aero values were nulled.
+    'selle royal anatomical': null,
+    'selle royal leather': null,
+    'selle royal leather racing': null,
+    'selle royal racing': null,
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'avocet leather racing 1': [{ from: 1980, to: 1990, id: 5258 }], // Avocet Racing I
     // 1993 Bianchi MTBs: "Ritchey Comp leather" is the Logic Comp, new for
@@ -1601,6 +1612,13 @@ const COMPONENT_OVERRIDES = {
     'gb forged alloy': 6533, // GB Forged
   },
   Shifters: {
+    // 1986 Raleigh (US).
+    'suntour cyclone': null, // Supercourse: LD-3700 / LD-3750 / LD-3800 (1985-87) all fit; the matcher took the 1988-89 Cyclone 5000/7000/9000
+    'suntour superbe pro': [{ from: 1983, to: 1986, id: 6301 }], // Prestige: LD-4650 Superbe Pro (1983-86), as the 1985 pick; matcher took the 1991 row
+    'shimano 600': [{ to: 1985, id: 6138 }, { from: 1986, to: 1987, id: 6148 }], // Competition: SL-6207 600EX (1984-87); the exact-title row is the 1970-80 Shimano 600
+    'thumb shifters': null, // Teton / Grand Mesa: generic text, hit the SunTour XM01 thumb shifter
+    // 1990 Bianchi US catalogue (Nyala, Osprey): under-bar X-Press levers.
+    'suntour accushift plus x press': [{ from: 1990, to: 1992, id: 6312 }], // SL-XP10-R7 / L, X-Press (XC-Pro / XC-Comp)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace sis': [{ from: 1989, to: 1998, id: 6166 }], // SL-7402 (8sp)
     'shimano ultegra sis': [{ from: 1988, to: 1992, id: 6144 }], // SL-6400, 600 Ultegra SIS
@@ -1917,6 +1935,10 @@ const COMPONENT_OVERRIDES = {
     'renolds': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
   },
   Cassettes: {
+    // 1990 Bianchi US catalogue: SunTour AccuShift Plus 7-speed cassettes.
+    'suntour accushift plus black 12 30t 7 speed': [{ from: 1990, to: 1992, id: 1216 }], // CS-AP00-S7 / K7, 7-speed
+    'suntour accushift plus black 13 23t 7 speed': [{ from: 1990, to: 1992, id: 1216 }],
+    'suntour accushift plus black 14 28t 7 speed': [{ from: 1990, to: 1992, id: 1216 }],
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano hyperglide silver 13 23t 8 speed': [{ from: 1990, to: 1996, id: 1208 }], // CS-7401, Dura-Ace 8sp HG
     'shimano hyperglide silver 12 28t 7 speed': [{ from: 1990, to: 1994, id: 1202 }], // CS-HG90 (Deore XT)
@@ -2118,17 +2140,6 @@ const COMPONENT_OVERRIDES = {
     '27 x 1 1 4"': null, // 1976 Raleigh Record: bare tyre size, hit the Rigida 27 x 1 1/4" brand row
     '700 c weinmann a 124 narrow concave section alloy': 7776, // Weinmann A124 Super X
     '700 c weinmann a124 narrow concave section alloy': 7776,
-  },
-
-  'Cassettes': {
-    // 1990 Bianchi US catalogue: SunTour AccuShift Plus 7-speed cassettes.
-    'suntour accushift plus black 12 30t 7 speed': [{ from: 1990, to: 1992, id: 1216 }], // CS-AP00-S7 / K7, 7-speed
-    'suntour accushift plus black 13 23t 7 speed': [{ from: 1990, to: 1992, id: 1216 }],
-    'suntour accushift plus black 14 28t 7 speed': [{ from: 1990, to: 1992, id: 1216 }],
-  },
-  'Shifters': {
-    // 1990 Bianchi US catalogue (Nyala, Osprey): under-bar X-Press levers.
-    'suntour accushift plus x press': [{ from: 1990, to: 1992, id: 6312 }], // SL-XP10-R7 / L, X-Press (XC-Pro / XC-Comp)
   },
 };
 
