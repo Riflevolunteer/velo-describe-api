@@ -143,6 +143,9 @@ const CATALOGUE_COUNTRY = new Map([
   ['1990|bianchi', 'US'], // Bianchi USA Inc., South San Francisco
   ['1987|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19)
   ['1993|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19)
+  // Peugeot 1971-74 mix Dutch spec pages and French general-catalogue pages in one CSV; the user chose FR
+  // for all of them (2026-10-19) instead of splitting. 1970 stays NL (Dutch-market catalogue only).
+  ['1971|peugeot', 'FR'], ['1972|peugeot', 'FR'], ['1973|peugeot', 'FR'], ['1974|peugeot', 'FR'],
   ['1989|derosa', 'US'], // GITA Sporting Goods (Charlotte NC) US dealer catalogue
   // Inferred, not stated by the source (user accepted 2026-10-19); correct if the original says otherwise:
   ['1985|raleigh', 'US'], // Sheldon Brown Retro Raleighs scan, lbs weights, Team U.S.A. models
