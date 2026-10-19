@@ -247,6 +247,40 @@
   Raleigh, Carlton and Sun. Transcribed into three CSVs, then reversed at
   the user's request before loading: not what they want in the DB.
 
+## 1979 Raleigh (US) — `1979_raleigh_spec.csv` (6 bikes, 120 specs, 28 linked)
+
+- Source: https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1979.html
+  (18 scans: cover, photo pages, "Technical Specifications on 10 speeds"
+  p. 10, model blurb pages, TI Raleigh (USA) Inc. confidential price list
+  dated 1 January 1979, revised 12/7/78). US edition (`data_source.country`
+  US). Table transcribed by hand from native-resolution crops; the Grand
+  Prix / Record Ace hub, tyre, saddle and seat post cells were re-read at
+  higher zoom because the first crop was ambiguous.
+- Scope as 1977 / 1978 (user's earlier choice): Raleigh-branded derailleur
+  lightweights only — Professional Mk V, Competition GS, Super Course, Super
+  Grand Prix, Grand Prix, Record Ace; titles and CSV layout as 1978. Not
+  added: the table's four Rampar columns (Superbe, Touring 14, R-1T, R-1027;
+  would be titled "Rampar Superbe" etc.), Record FFS/PPS and Record Ace 24
+  (price list and photos only, no table column), and the Tourist, Sports,
+  Sprite, Rampar kids / BMX models.
+- Fixes: "Weinman" -> Weinmann; derailleur cell split into Front / Rear /
+  Shifters; "Haden" kept as printed (Hayden); the table's size / weight cells
+  rewritten as `21½"` and `23 lbs (23½" frame)`.
+- Overrides: Professional brakes "Campagnolo Record short reach" -> 575
+  (2040/1 short reach, post-CPSC 1978-87; the pre-CPSC 576 ends 1978; 1978's
+  standard-reach pick stays 573); Professional crank "Nuovo Record cotterless
+  42/52T 170mm" -> 1496 (as 1978's 42/51T); Super Course "Sun Tour Ultra 6
+  13-24T" freewheel -> 2240 NW-6500 (13T top sprocket rules out US-6500, as
+  the 1983 Clubman). The rest are the 1978 picks (Gran Sport 2276 / 4085 /
+  3688 / 5734, Nuovo Record RD 4125 and hubs 3259, Weinmann 605 1133, A124
+  7776, VGT 4705, Atom 3183 / 3662, Brooks 5303 / 5304, Ultra-6 chain 7820,
+  Perfect freewheel 2245).
+- Left unlinked, as 1977 / 78: Compe V front (2602 / 2603), Weinmann 500 and
+  the Raleigh/Weinmann centerpulls, Maillard 13-24T, Normandy hubs, Mavic
+  Sprint, Brooks CR3, Sedis Sedi Color, Raleigh / SR cranks, stems, bars,
+  pedals and tyres.
+- Regression: all 39 other CSVs regenerate with unchanged counts.
+
 ## 1982 Raleigh — `1982_raleigh_spec.csv` (6 bikes, 73 specs, 30 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1982-raleigh-lightweights-racing-catalogue.993/

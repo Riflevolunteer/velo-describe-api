@@ -127,7 +127,7 @@ function bikeSourceCond(sourceRefSelect) {
 // rest stay NULL rather than guessed. A filename token overrides this.
 const CATALOGUE_COUNTRY = new Map([
   ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
-  ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], // Raleigh Industries of America / Rampar
+  ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], // Raleigh Industries of America / Rampar
   ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], // TI Raleigh UK brochures
   ['1973|falcon', 'GB'], ['1974|falcon', 'GB'],
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
@@ -1090,6 +1090,7 @@ const COMPONENT_OVERRIDES = {
     // 1977 Raleigh (US). Grand Prix / Record Limited "Raleigh/Weinmann forged
     // alloy centerpull" name no model, left unlinked.
     'campagnolo record side pull': [{ to: 1978, id: 573 }], // Professional Mk V: Campagnolo 2040, Record (pre-CPSC)
+    'campagnolo record short reach': [{ from: 1979, to: 1979, id: 575 }], // 1979 Raleigh Professional Mk V: Campagnolo 2040/1 Record short reach, post-CPSC row (1978-87)
     'weinmann carrera sidepull with wheel guides': 1167, // Competition GS: Weinmann AG Carrera (earlier, 1970-80)
     'raleigh weinmann 610 centerpull with lightened quick release levers': 1138, // Super Course: Weinmann AG Raleigh 610
     // 1993 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
@@ -1307,6 +1308,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo c record 53 42t': [{ to: 1986, id: 1483 }, { from: 1987, id: 1482 }], // 1987 Bianchi Mondiale / X4
     // 1978 Raleigh (US, ebykr scan).
     'campagnolo nuovo record cotterless 42 51t': [{ to: 1987, id: 1496 }], // Professional Mk V: 1049 Nuovo Record Strada v4
+    'campagnolo nuovo record cotterless 42 52t 170mm': [{ to: 1979, id: 1496 }], // 1979 Raleigh Professional Mk V: 1049 Nuovo Record Strada v4, as 1978's 42/51T
     'campagnolo gran sport cotterless 42 52t 170mm': [{ from: 1978, id: 1472 }], // Competition GS: 0304 (Nuovo) Gran Sport, as the 1979 Colnago Export (row dated from 1980)
     'shimano ffs 40 52t 165mm': 1777, // Record FFS/PPS: Shimano FFS (Front Freewheel System); FC-FF33 row starts 1980
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
@@ -1937,6 +1939,7 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
   },
   Freewheels: {
+    'sun tour ultra 6 13 24t': [{ from: 1979, to: 1985, id: 2240 }], // 1979 Raleigh Super Course: NW-6500 (13T top sprocket rules out US-6500), as the 1983 Clubman
     // 1982 Raleigh Clubman 12 / Competition 12 / Rapide 12 / Record Ace 12 list "Sun Tour Ultra 6" alone. Two
     // Ultra-6 rows are in range (NW-6500 1979-85, US-6500 1978-84); NW-6500 chosen as the common New Winner
     // Ultra-6 of the period. Judgement, not proven by the spec text.
