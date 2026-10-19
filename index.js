@@ -332,8 +332,9 @@ app.get('/bikesbybrand', function (req, res, next) {
         console.error(err && err.message)
         return res.status(500).json({ error: err.message })
       }
-      connection.query(`SELECT bike_id, title, category, year_from, year_to, created_at FROM bike
-                          where brand_id=? order by year_from, title`, [brand_id], function (error, results, fields) {
+      connection.query(`SELECT b.bike_id, b.title, b.category, b.year_from, b.year_to, b.created_at, ds.country FROM bike b
+                          left join data_source ds on ds.source_id=b.source_ref
+                          where b.brand_id=? order by b.year_from, b.title, ds.country`, [brand_id], function (error, results, fields) {
         connection.release();
         if (error) {
           console.error(error && error.message)
@@ -369,7 +370,7 @@ app.get('/bikedetail', function (req, res, next) {
     }
 
     const bikePromise = new Promise((resolve, reject) => {
-      connection.query(`SELECT b.*, bb.title as brand_title, ds.label as source_label, ds.source_type FROM bike b
+      connection.query(`SELECT b.*, bb.title as brand_title, ds.label as source_label, ds.source_type, ds.country FROM bike b
                           left join bike_brand bb on bb.brand_id=b.brand_id
                           left join data_source ds on ds.source_id=b.source_ref
                           where b.bike_id=?`, [bike_id], function (error, bikeResults) {
@@ -437,9 +438,10 @@ app.get('/searchBikes', function (req, res, next) {
         console.error(err && err.message)
         return res.status(500).json({ error: err.message })
       }
-      connection.query(`SELECT b.bike_id, b.title, b.category, b.year_from, b.year_to, bb.title as brand_title FROM bike b
+      connection.query(`SELECT b.bike_id, b.title, b.category, b.year_from, b.year_to, bb.title as brand_title, ds.country FROM bike b
                           left join bike_brand bb on bb.brand_id=b.brand_id
-                          where ${whereClauses} order by b.year_from, b.title limit 10`, params, function (error, results, fields) {
+                          left join data_source ds on ds.source_id=b.source_ref
+                          where ${whereClauses} order by b.year_from, b.title, ds.country limit 10`, params, function (error, results, fields) {
         connection.release();
         if (error) {
           console.error(error && error.message)
@@ -472,7 +474,7 @@ app.get('/recentBikes', function (req, res, next) {
         return res.status(500).json({ error: err.message })
       }
       connection.query(`SELECT b.bike_id, b.title, b.category, b.year_from, b.year_to, b.created_at,
-                               bb.title as brand_title, ds.label as source_label FROM bike b
+                               bb.title as brand_title, ds.label as source_label, ds.country FROM bike b
                           left join bike_brand bb on bb.brand_id=b.brand_id
                           left join data_source ds on ds.source_id=b.source_ref
                           order by b.created_at desc, b.bike_id desc limit ?`, [limit], function (error, results, fields) {

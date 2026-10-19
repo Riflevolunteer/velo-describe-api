@@ -37,11 +37,20 @@ review step matters more than speed.
   UPDATE; the back-fill only fills NULLs. An explicit `null` id means "do not
   link" — for when the only substring hit is a wrong-era row and the DB has no
   right one (1987 "Shimano 600" brakes vs the 1970s centre-pull).
-- Idempotency: bikes key on brand+title+year_from; specs on bike+label+
+- Idempotency: bikes key on brand+title+year_from+source (a NULL `source_ref`
+  also matches, so the back-fill can tag it); specs on bike+label+
   value_text. Re-runs skip existing rows and only back-fill `component_id`
   and `source_ref` where they are NULL. A changed value_text therefore creates
   a second row rather than replacing the first, and an existing wrong link or
   source_ref is never overwritten.
+- Country: `data_source.country` (CHAR(2), ISO 3166-1) is the market the
+  catalogue was printed for, not where the bike was built; bikes get it
+  through `source_ref` and the list endpoints return it. The generator reads
+  it from the `CATALOGUE_COUNTRY` map (`<year>|<brand>`) or, for a second
+  catalogue of the same brand and year from another market, from a filename
+  token (`1976_raleigh_gb_spec.csv`, label `1976 Raleigh (GB) catalogue`).
+  Record the edition in step 1 while the source is open; leave it NULL rather
+  than guess. The data_source UPDATE only fills a NULL.
 - Provenance: the generator creates one `data_source` row per input CSV
   (`source_type = 'catalogue'`, label `"<year> <brand> catalogue"`, citation =
   the filename) and stamps it onto every `bike`/`bike_spec` row that file

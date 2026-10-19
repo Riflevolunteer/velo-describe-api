@@ -51,7 +51,9 @@ function query(conn, sql, params) {
   });
 }
 
-const FILENAME_PATTERN = /^(\d{4})_([a-zA-Z]+)_spec/;
+// Optional two-letter country token before "_spec" (1976_raleigh_gb_spec.csv) for
+// a second catalogue of the same brand and year from another market.
+const FILENAME_PATTERN = /^(\d{4})_([a-zA-Z]+)_(?:([a-z]{2})_)?spec/;
 const MIN_COMPONENT_MATCH_LENGTH = 4;
 
 function sqlEscape(value) {
@@ -86,22 +88,56 @@ function labelLookupInsert(title, sortOrder) {
 // One data_source row per source CSV (label = "<year> <brand> catalogue"),
 // so every bike/bike_spec row this script inserts can be traced back to the
 // catalogue that produced it instead of sitting at source_ref = NULL forever.
-function dataSourceLookupInsert(label, citation) {
+// country is the market the catalogue was printed for (ISO 3166-1 alpha-2), or
+// null when unknown; the UPDATE only fills a NULL, never overwrites.
+function dataSourceLookupInsert(label, citation, country) {
   const escLabel = sqlEscape(label);
   const escCitation = sqlEscape(citation);
-  return (
-    `INSERT INTO data_source (source_type, label, citation) SELECT 'catalogue', '${escLabel}', '${escCitation}' FROM DUAL ` +
-    `WHERE NOT EXISTS (SELECT 1 FROM data_source WHERE source_type = 'catalogue' AND label = '${escLabel}');`
-  );
+  const countrySql = country ? `'${sqlEscape(country)}'` : 'NULL';
+  const lines = [
+    `INSERT INTO data_source (source_type, label, citation, country) SELECT 'catalogue', '${escLabel}', '${escCitation}', ${countrySql} FROM DUAL ` +
+      `WHERE NOT EXISTS (SELECT 1 FROM data_source WHERE source_type = 'catalogue' AND label = '${escLabel}');`,
+  ];
+  if (country) {
+    lines.push(
+      `UPDATE data_source SET country = ${countrySql} WHERE source_type = 'catalogue' AND label = '${escLabel}' AND country IS NULL;`
+    );
+  }
+  return lines.join('\n');
 }
 
 function dataSourceSubquery(label) {
   return `(SELECT source_id FROM data_source WHERE source_type = 'catalogue' AND label = '${sqlEscape(label)}')`;
 }
 
-function catalogueLabel(year, brand) {
-  return `${year} ${brand} catalogue`;
+// A country token in the filename makes a distinct source ("1976 Raleigh (GB)
+// catalogue"); files without one keep the original label so loaded rows still match.
+function catalogueLabel(year, brand, fileCountry) {
+  return fileCountry ? `${year} ${brand} (${fileCountry}) catalogue` : `${year} ${brand} catalogue`;
 }
+
+// Bike key: brand + title + year + catalogue. A NULL source_ref (a bike loaded
+// before provenance existed) still matches so the back-fill can tag it.
+function bikeSourceCond(sourceRefSelect) {
+  return `AND (source_ref = ${sourceRefSelect} OR source_ref IS NULL)`;
+}
+
+// Market the catalogue was printed for, keyed `<year>|<brand>` (lower case) like
+// NON_ROAD_SKIP. Only catalogues whose edition is stated in the source; the
+// rest stay NULL rather than guessed. A filename token overrides this.
+const CATALOGUE_COUNTRY = new Map([
+  ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
+  ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], // Raleigh Industries of America / Rampar
+  ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], // TI Raleigh UK brochures
+  ['1973|falcon', 'GB'], ['1974|falcon', 'GB'],
+  ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
+  ['1970|peugeot', 'NL'], // Dutch-market "Peugeot '70" (1971-74 mix NL + FR: left NULL until split)
+  ['1979|peugeot', 'FR'], // French home-market catalogue
+  ['1981|kalkhoff', 'DE'],
+  ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
+  ['1973|bianchi', 'IT'], ['1940|bianchi', 'IT'], // Italian-market scans
+  ['1986|colnago', 'IT'], // "Catalogo generale"
+]);
 
 function capitalize(word) {
   return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
@@ -119,7 +155,7 @@ function parseFilename(filename) {
   const m = filename.match(FILENAME_PATTERN);
   if (!m) return null;
   const token = m[2].toLowerCase();
-  return { year: m[1], brand: BRAND_NAMES[token] || capitalize(token) };
+  return { year: m[1], brand: BRAND_NAMES[token] || capitalize(token), fileCountry: m[3] ? m[3].toUpperCase() : null };
 }
 
 // Models that stay in the source CSVs but are NOT loaded: the bike table is road
@@ -2205,9 +2241,11 @@ async function main() {
       skippedFiles.push(filename);
       continue;
     }
-    const { year, brand } = parsed;
+    const { year, brand, fileCountry } = parsed;
     brands.add(brand);
-    catalogSources.set(catalogueLabel(year, brand), filename);
+    const catalogue = catalogueLabel(year, brand, fileCountry);
+    const country = fileCountry || CATALOGUE_COUNTRY.get(`${year}|${brand.toLowerCase()}`) || null;
+    catalogSources.set(catalogue, { filename, country });
 
     const rows = parseCsv(fs.readFileSync(file, 'utf8'));
     const [header, ...dataRows] = rows;
@@ -2247,11 +2285,11 @@ async function main() {
         }
       }
 
-      bikes.push({ brand, title, year, searchText: buildSearchText(title, brand), ...bikeFields });
+      bikes.push({ brand, title, year, catalogue, searchText: buildSearchText(title, brand), ...bikeFields });
       bikeCount++;
 
       for (const { label, rawLabel, valueText } of rowSpecs) {
-        specs.push({ brand, bikeTitle: title, year, label, rawLabel, valueText });
+        specs.push({ brand, bikeTitle: title, year, catalogue, label, rawLabel, valueText });
         specCount++;
       }
     }
@@ -2267,7 +2305,7 @@ async function main() {
   lines.push('');
 
   lines.push('-- Data sources (one per source CSV)');
-  for (const [label, filename] of catalogSources) lines.push(dataSourceLookupInsert(label, filename));
+  for (const [label, { filename, country }] of catalogSources) lines.push(dataSourceLookupInsert(label, filename, country));
   lines.push('');
 
   lines.push('-- Bike spec labels (sort_order = first-seen order across processed files)');
@@ -2292,13 +2330,13 @@ async function main() {
     const sizes = sqlString(bike.sizes);
     const colors = sqlString(bike.colors);
     const weight = sqlString(bike.weight);
-    const sourceRefSelect = dataSourceSubquery(catalogueLabel(bike.year, bike.brand));
+    const sourceRefSelect = dataSourceSubquery(bike.catalogue);
     lines.push(
       `INSERT INTO bike (brand_id, title, category, year_from, sizes, colors, weight, search_text, source_ref)\n` +
         `  SELECT ${brandIdSelect}, ${title}, ${category}, ${yearFrom}, ${sizes}, ${colors}, ${weight}, ${searchText}, ${sourceRefSelect}\n` +
         `  FROM DUAL\n` +
         `  WHERE NOT EXISTS (\n` +
-        `    SELECT 1 FROM bike WHERE brand_id = ${brandIdSelect} AND title = ${title} AND year_from = ${yearFrom}\n` +
+        `    SELECT 1 FROM bike WHERE brand_id = ${brandIdSelect} AND title = ${title} AND year_from = ${yearFrom} ${bikeSourceCond(sourceRefSelect)}\n` +
         `  );`
     );
     // Back-fill: a bike inserted before this script tracked provenance (or by
@@ -2317,8 +2355,9 @@ async function main() {
     const brandIdSelect = lookupSubquery('bike_brand', 'brand_id', spec.brand);
     const bikeTitle = sqlString(spec.bikeTitle);
     const yearFrom = sqlString(spec.year);
+    const specSourceRef = dataSourceSubquery(spec.catalogue);
     const bikeIdSelect =
-      `(SELECT bike_id FROM bike WHERE brand_id = ${brandIdSelect} AND title = ${bikeTitle} AND year_from = ${yearFrom})`;
+      `(SELECT bike_id FROM bike WHERE brand_id = ${brandIdSelect} AND title = ${bikeTitle} AND year_from = ${yearFrom} ${bikeSourceCond(specSourceRef)})`;
     const labelIdSelect = lookupSubquery('bike_spec_label', 'label_id', spec.label);
     // bike_spec.value_text is varchar(255). MySQL truncates a longer value on
     // INSERT, but the NOT EXISTS check compares the untruncated string, so the
@@ -2334,7 +2373,7 @@ async function main() {
     const matched = matchComponent(spec.valueText, componentRecords, spec.brand, spec.label, spec.year, spec.bikeTitle);
     if (matched) linkedCount++;
     const componentIdSelect = matched ? String(matched.component_id) : 'NULL';
-    const sourceRefSelect = dataSourceSubquery(catalogueLabel(spec.year, spec.brand));
+    const sourceRefSelect = dataSourceSubquery(spec.catalogue);
 
     lines.push(
       `INSERT INTO bike_spec (bike_id, label_id, raw_label, value_text, component_id, source_ref)\n` +
