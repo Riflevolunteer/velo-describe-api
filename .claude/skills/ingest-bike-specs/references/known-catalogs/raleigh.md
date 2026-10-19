@@ -440,6 +440,20 @@
   14-28 Ultra 6 stays unlinked (no Ultra-6 row goes past 26T), as do the
   bare 1982 "Sun Tour Ultra 6" values.
 
+- 2026-10-19 back-fill after the Freewheels / Cassettes / Shifters override
+  merges: regenerated all 41 CSVs and diffed every generated link against the
+  live DB. Only 6 NULL rows would change (the six 1983 "Huret Eco" front
+  derailleurs on Medale Ladies / Mens, Supersport 12, Wisp, Winner, Ace ->
+  8796 Huret Eco (front), a row added after the 1983 load; dated 1980, like
+  the rear 4301 they already pair with); applied as a one-off guarded UPDATE.
+  Every other catalogue's DB links already matched. Also fixed the
+  1979 Peugeot PSN 10 "Michelin Elan TS" (spec 2641): 6834 Michelin Elan
+  (1975-83) -> 8789 Michelin Elan TS (1979), the generator's pick; the other
+  six 1979 Peugeot "Michelin Elan" specs stay on 6834. The 1979 Peugeot SQL
+  also carries four Headset rows (PX 10 C, PV 10 Super Competition, PS 10 L
+  Competition, PSN 10) the DB lacks, so that file must not be reloaded
+  whole without deciding on them.
+
 ## 1984 Raleigh — `1984_raleigh_spec.csv` (19 bikes, 435 specs, 94 linked)
 
 - Source: ebykr.com, "Raleigh 1984 Catalog — Racers: The Race-Bred
