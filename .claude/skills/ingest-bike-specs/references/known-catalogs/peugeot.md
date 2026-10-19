@@ -170,7 +170,7 @@
   Professional, Altenburger Synchron, Normandy Super Competition hubs,
   the either/or saddle.
 
-## 1974 Peugeot — `1974_peugeot_spec.csv` (10 bikes, 102 specs, 33 linked)
+## 1974 Peugeot — `1974_peugeot_spec.csv` (6 bikes, 86 specs, 31 linked)
 
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1974.html
   (12 images, loaded 2026-10-19). Mixes two catalogues, as 1973: the Dutch
@@ -180,12 +180,18 @@
 - Dutch specs: P 10, PA 10 E (same page as P 10: the left box lists its extras,
   the right box is P 10's spec, as 1973), PR 10, PX 10 LE, PA 60 and PX 60
   (gentleman / gentleman luxe, loaded as Cyclotouring). No prices printed.
-- French blurbs only: Sports HA 8, P 8, PL 8, PX 8 L (loaded at the user's
-  request, sparse rows). The French PX 60 text says Simplex Super Competition
-  derailleur; the Dutch page says Super LJ and was kept. PA 60 / PX 60 also
-  gained the French wheel, seatpost and stem details in Extras.
+- French blurbs only: Sports HA 8, P 8, PL 8, PX 8 L were loaded on
+  2026-10-19 as sparse rows (16 specs, 2 Mafac Racer links) and removed the
+  same day at the user's request (bike_ids 439-442 deleted; rows are gone from
+  the CSV, so a regenerate won't bring them back). Blurbs, if wanted again:
+  HA 8 3-speed, side-pull, 700C; P 8 4 or 8-speed, rear carrier; PL 8 5 or
+  10-speed, Mafac Racer, stainless fenders; PX 8 L 10-speed, Mafac Racer,
+  dural large-flange QR hubs, stainless fenders. The French PX 60 text says
+  Simplex Super Competition derailleur; the Dutch page says Super LJ and was
+  kept. PA 60 / PX 60 kept the French wheel, seatpost and stem details in
+  Extras.
 - Not loaded: NSL 22 / NSL 40 / PNSL 22 (Nouveau Style town and folding,
-  Dutch pp. 10-11) and the rest of the French index (Randonneur HA 50 / P 50 /
+  Dutch pp. 10-11) and the rest of the French index (Sports above, Randonneur HA 50 / P 50 /
   PL 50 / PX 50 L, Tourisme HA / PL / PRP, Course PN 10 / P 10 / PA 10 L /
   PR 10 L / PX 10 L, Week-end, Nouveau Style, Jeunes gens, Juniors). The
   Randonneur section is the obvious next candidate.
