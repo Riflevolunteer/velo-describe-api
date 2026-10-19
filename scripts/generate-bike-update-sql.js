@@ -1024,6 +1024,11 @@ const COMPONENT_OVERRIDES = {
     'weinmann center pull with q r levers': [{ to: 1975, id: 7929 }],
     'weinmann center pull with extension levers': [{ to: 1975, id: 7929 }],
     'campagnolo record with lightened levers': [{ to: 1977, id: 573 }], // 1974 Raleigh Team Professional: Campagnolo 2040, Record (pre-CPSC)
+    // 1970 Raleigh (US): the table names the 999 outright, as 1973. Ranged to 1970 because the
+    // bare 'weinmann 999' is Grand Prix-only wording.
+    'weinmann 999 with quick release hand lever': [{ to: 1971, id: 7929 }], // Weinmann AG Vainqueur 999 (610 / 750)
+    'weinmann 999 with quick release hand-lever': [{ to: 1971, id: 7929 }],
+    'weinmann 999': [{ to: 1971, id: 7929 }],
     // 1975 Raleigh (US): the "999" is back in the table.
     'weinmann 999 centerpull with lightened q r levers': [{ to: 1975, id: 7929 }], // Weinmann AG Vainqueur 999 (610 / 750)
     'weinmann 999 centerpull with q r levers': [{ to: 1975, id: 7929 }],

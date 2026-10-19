@@ -1,5 +1,27 @@
 # Raleigh catalogs processed so far
 
+## 1970 Raleigh — `1970_raleigh_spec.csv` (6 bikes, 114 specs, 23 linked)
+
+- Source: https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1970.html
+  (US edition, Raleigh Industries of America, Boston, form 170 20M; nine
+  scans: cover, Carlton photo pages pp 5-7, back cover, a January 1969 dealer
+  price list, and the Technical Specifications table, p. 9). Table
+  transcribed by hand from crops; headers copied from the 1975 CSV.
+- Models: Professional Mk II DL 180 (Limited Edition, 500 made), International
+  DL 170, Gran Sport DL 160, Super Course DL 100, Grand Prix DL 115, Record
+  DL 130. Not added: Competition DL 140 (price list only, no spec column),
+  Superbe, Sports, Tourist, Sprite, Colt, Space Rider, Mountie, Mini, Chopper
+  range, Fireball, Rodeo, Twenty, Folder (city / children's / hi-rise).
+- Fixes: "Neuvo Record" -> Nuovo Record; Gears split into Derailleurs; Rear
+  Cog -> Freewheels; sizes rewritten as `23.5"`.
+- Override: Weinmann 999 (three wordings) -> 7929, ranged to 1970.
+- Left unlinked: bare "Weinmann" (Record), Nervar / Zeus cranks, Atom pedals,
+  Normandy hubs, Dunlop / Clement tyres, Wrights W3, Brooks B-15, TTT Grand
+  Prix / AVA stems, Huret Luxe front. "Huret Allvit - Gents, Simplex - Ladies"
+  front links to 2394 Huret Alvit (matcher pick, kept).
+- Regression: the nine loaded Raleigh catalogues generate identical counts
+  with and without the new override.
+
 ## 1973 Raleigh — `1973_raleigh_spec.csv` (9 bikes, 170 specs, 55 linked)
 
 - Header "Weight." (trailing period) is mapped in BIKE_FIELD_LABELS.
