@@ -141,6 +141,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1982|bianchi', 'US'], // US racing brochure ("available in America")
   ['1988|bianchi', 'US'], // US catalogue (saarf dates it 1986)
   ['1990|bianchi', 'US'], // Bianchi USA Inc., South San Francisco
+  ['1987|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19)
   ['1989|derosa', 'US'], // GITA Sporting Goods (Charlotte NC) US dealer catalogue
   // Inferred, not stated by the source (user accepted 2026-10-19); correct if the original says otherwise:
   ['1985|raleigh', 'US'], // Sheldon Brown Retro Raleighs scan, lbs weights, Team U.S.A. models
