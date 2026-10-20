@@ -152,3 +152,5 @@ Reviewed the 55 Bottom Brackets rows. Most apparent overlaps are distinct part n
 - DONE 2026-10-21: Mavic catalogue c. 1980 (disraeligears, data_source 240): 20 rows updated (10 year_from back to 1980, 6 year_to extended or filled, 4 descriptions), 4336 retitled "Mavic 800 (original)", 3 new rows (800 levers, 351 G.I. and 352 F.B. bends). Open: 3835 "Mavic 600" pedal vs 3837 640 (merge?); see mavic.md.
 
 - DONE 2026-10-21: Mavic "The MAVIC advantage" leaflet (1984, data_source 241): Module E and E2 year_to -> 1984, 550 RD pair weight; everything else already matched the 84-85 catalogue.
+
+- DONE 2026-10-21: Mavic leaflet c. 1979 (disraeligears, data_source 242): 14 rows year_from -> 1979, 3 descriptions (410 lever, 810 front, 3835 series 600 pedal, which settles the 3835 vs 640 question: two eras, no merge). The 1979 date is inferred; see mavic.md.

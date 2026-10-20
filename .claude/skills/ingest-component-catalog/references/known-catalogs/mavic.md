@@ -303,3 +303,12 @@ Source: https://www.disraeligears.co.uk/site/the_mavic_advantage.html (10 pages,
 - 8159 550 RD: pair weight 511/462 g (1984) added; the per-end figures in the row sum to 505/465 g, so the sources differ slightly.
 - Consistent, no change: Module 3D Argent present in 1984 (absent in 1980, row left 1980-91), Sport 700C and Argent 7 absent in 1984 (rows end 1980), 801 at 182 g vs the 1980 catalogue's 175 g 800 (supports the 4336 retitle).
 - Out of scope: the 1000 SSC group page (no part numbers or weights), QR skewers, tools.
+
+## Mavic leaflet c. 1979 — disraeligears.co.uk, data_source id 242
+
+Source: https://www.disraeligears.co.uk/site/mavic_-_leaflet_1979.html (7 pages, FR/EN fold-out, no printed date). Dated c. 1979 by the site (shows Module E, no separate E2 rim, same photos as the c. 1980 catalogue, data_source 240); the leaflet's own caption says Module E also exists with a double eyelet (E2), 36 and 32 holes. Earliest Mavic document with a derailleur. Series 100 rims, 500 road / track / CX hubs, 600 bottom bracket (310 g), pedal (164 g) and cranks, 800 rear (175 g, 12-32) / front (102 g) / levers (68 g), 300 headset (82 g), bends and stems (no part numbers), 410 / 420 brakes (410 stirrup 184 g, lever 102 g).
+
+- year_from 1980 -> 1979 (14 rows): rims 5091 Montlhéry Légère, 5093 Route, 5105 Piste, 5052 Argent 10, 5053 Argent 7, 5104 OR 7, 5069 GP 4, 8153 Bleu SSC, 8154 Argent 12 SSC; hubs 3408 580 CX and 3401 520 Piste ("track and CX versions"); 84 600 RD; 853 Pro 420; 9030 800 levers; 361 410 lever. The leaflet's "Argent S.S.C." was taken as 8154 "Argent 12 SSC" (both 395 g, 20 mm).
+- Descriptions: 361 (204 g is the pair, 102 g each), 2405 810 (102 g in 1979, 105 g in 1980), 3835 bare "Mavic 600" pedal now the series 600 pedal (164 g), succeeded by the 640 (3837, 167 g). This resolves the open question in the c. 1980 entry: 3835 and 3837 are two eras of one series, not a duplicate; no merge.
+- Confirmed, no change: 4336 Mavic 800 (original) 175 g 12-32T (its 1979 start now has a source), Module E / 3, Montlhéry Pro, CX 18, Paris-Roubaix SSC red label (1979), 300 headset, 410 / 420 brakes.
+- Judgement: the 1979 date is inferred. If the leaflet is really 1980, the 14 year_from moves are one year early; the pre-existing 1979 rows (810, E2, 300, Paris-Roubaix SSC red label, 600 cranks) support 1979. Not in the leaflet and left alone: Sport 700C, Module E2 Argent, 3D Argent, Module 4, GL 330, G.E.L. 280, Argent 8 (all dated 1980 or later).
