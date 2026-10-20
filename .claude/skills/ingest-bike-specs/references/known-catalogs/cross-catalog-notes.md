@@ -423,3 +423,17 @@ catalogue that might date these is not retrievable (see huret.md). The Zenith /
 Granada "Huret Rival" front stays unlinked: the Rival fronts are dated 1980,
 1984, 1989 and 1990, none 1987.
 
+
+Brooks saddles (2026-10-20): 1987 Raleigh Randonneur 18 "Brooks Professional,
+honey finish, pre-softened" -> 5295 Brooks Professional pre-softened, via a
+1987-90 ranged Saddles override. The row is dated 2000 (velobase), treated as a
+misdate; the saddle is in the 1987 catalogue itself. The Brooks saddle rows are
+all velobase with one-year or no dates (Team Professional 2000, B17 Champion
+Standard 1898, B17 Narrow 1910, many NULL), so 1970s Raleigh links to
+5303 / 5304 / 5310 / 5315 sit on rows whose years contradict the bike. No
+Brooks catalogue covering 1960-2011 was found: the blog's cdn.brooksengland.com
+PDFs (1926, 1933, 1935, 1957, 2012-2015) are dead (Brooks moved to Shopify;
+Wayback not retrievable from here), ebykr has Brooks catalogues 1890-1938 plus
+a one-page Bikecology 1981 retailer sheet. Still unlinked on purpose: "Brooks
+CR3" (no row), "Brooks B-15" (Champion Standard / Narrow / Swallow ambiguous),
+"Brooks Professional or Ideale 90", generic "Brooks leather" / padded vinyl.
