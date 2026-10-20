@@ -151,6 +151,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1989|derosa', 'US'], // GITA Sporting Goods (Charlotte NC) US dealer catalogue
   // Inferred, not stated by the source (user accepted 2026-10-19); correct if the original says otherwise:
   ['1985|raleigh', 'US'], // Sheldon Brown Retro Raleighs scan, lbs weights, Team U.S.A. models
+  ['1972|raleigh', 'US'], // Sheldon Brown Retro Raleighs PDF (7 pp excerpt, no printer line); DL model numbers and lbs as the 1970 / 1973 US editions
   ['1974|motobecane', 'US'], ['1975|motobecane', 'US'], // lbs weights, inch frame sizes, "Extras No Charge"
   ['1973|zeus', 'ES'], // Spanish-language catalogue (Zeus-102)
   ['1983|bianchi', 'IT'], ['1984|bianchi', 'IT'], // translated from Italian per the transcription notes
@@ -1107,11 +1108,11 @@ const COMPONENT_OVERRIDES = {
     'weinmann center pull with q r levers': [{ to: 1975, id: 7929 }],
     'weinmann center pull with extension levers': [{ to: 1975, id: 7929 }],
     'campagnolo record with lightened levers': [{ to: 1977, id: 573 }], // 1974 Raleigh Team Professional: Campagnolo 2040, Record (pre-CPSC)
-    // 1970 Raleigh (US): the table names the 999 outright, as 1973. Ranged to 1970 because the
+    // 1970 / 1972 Raleigh (US): the table names the 999 outright, as 1973. Ranged to 1970-72 because the
     // bare 'weinmann 999' is Grand Prix-only wording.
-    'weinmann 999 with quick release hand lever': [{ to: 1971, id: 7929 }], // Weinmann AG Vainqueur 999 (610 / 750)
-    'weinmann 999 with quick release hand-lever': [{ to: 1971, id: 7929 }],
-    'weinmann 999': [{ to: 1971, id: 7929 }],
+    'weinmann 999 with quick release hand lever': [{ to: 1972, id: 7929 }], // Weinmann AG Vainqueur 999 (610 / 750)
+    'weinmann 999 with quick release hand-lever': [{ to: 1972, id: 7929 }],
+    'weinmann 999': [{ to: 1972, id: 7929 }],
     // 1975 Raleigh (US): the "999" is back in the table.
     'weinmann 999 centerpull with lightened q r levers': [{ to: 1976, id: 7929 }], // Weinmann AG Vainqueur 999 (610 / 750)
     'weinmann 999 centerpull with q r levers': [{ to: 1976, id: 7929 }],
@@ -1306,6 +1307,9 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1970 / 1972 Raleigh (US) Professional Mk IV and International (1972): Campagnolo 44/52T with the Nuovo Record
+    // derailleurs -> 1049 Nuovo Record Strada v4 (1967-87), as the 1973 International 'campagnolo cotterless alloy'.
+    'campagnolo 44 52t': [{ from: 1970, to: 1972, id: 1496 }],
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano 105 52 42t alloy rings & cold forged 170mm alloy cranks': [{ from: 1987, to: 1987, id: 1778 }], // Sirocco: FC-1050 105
     'shimano new 105 52 42t light alloy with 170 mm cranks': [{ from: 1987, to: 1987, id: 1778 }], // Competition: FC-1050 105

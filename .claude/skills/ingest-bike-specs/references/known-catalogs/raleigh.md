@@ -22,6 +22,36 @@
 - Regression: the nine loaded Raleigh catalogues generate identical counts
   with and without the new override.
 
+## 1972 Raleigh (US, inferred) — `1972_raleigh_spec.csv` (7 bikes, 133 specs, 35 linked)
+
+- Source: https://www.sheldonbrown.com/retroraleighs/catalogs/Raleigh-Catalog-1972.pdf
+  (7-page excerpt, 1659 KB, PDF metadata title "75a"; page 1 cover, pp. 2-6
+  model photo pages for the Professional range, International, Gran Sport,
+  Super Course and a ladies' mixte, p. 7 "Technical Specifications"). No year,
+  printer or price on any page: the 1972 date is Sheldon Brown's filename,
+  supported by the range (Professional Mk IV exists; no Competition Mk II
+  DL 165 or Super Course TT DL 105, both in the 1973 catalogue). Country US is
+  inferred (DL model numbers, weights in lbs, same line-up as the 1970 and 1973
+  US editions); `data_source` country set through the generator map.
+- Table transcribed by hand from a 260 dpi render, headers and titles as 1970 /
+  1973. Models: Professional Mk IV DL 180, Professional Track DL 175,
+  International DL 170, Gran Sport DL 160, Super Course DL 100, Grand Prix DL
+  115, Record DL 130. Not added: Grand Prix 24 DL 114 (18" frame, 24" wheels,
+  steel stem and rims: children's). Typos fixed: "Neuvo Record" -> Nuovo
+  Record, "GB Raddoneur" -> GB Randonneur, "Stronglite" -> Stronglight. Track
+  derailleur blank -> "None" (as 1973-75); Track rear cog "None" kept.
+- Overrides: Weinmann 999 wordings (with quick release hand-lever, bare)
+  ranged to 1972 (-> 7929, as 1970 / 1973-75); 'campagnolo 44 52t' ranged
+  1970-72 -> 1496 (1049 Nuovo Record Strada v4, the 1973 International pick;
+  judgment: the table does not name the crank). The latter also back-filled the
+  1970 Professional Mk II and International (23 -> 25 linked).
+- Left unlinked: Record Q.R. hubs (flange not stated), Normandy hubs, Weinmann
+  Type 293 / 294 and Special Lightweight rims, Hutchinson tyres, Brooks B15 (the
+  Standard / Narrow / Swallow rows are all dated 1950-60), Stronglight and Nervar
+  cranks, the Track's Pista pedals and hubs, Rattrap pedals, Record "Weinmann
+  Center Pull".
+- Regression: the other 41 CSVs regenerate unchanged except 1970 (+2, above).
+
 ## 1973 Raleigh — `1973_raleigh_spec.csv` (9 bikes, 170 specs, 55 linked)
 
 - Header "Weight." (trailing period) is mapped in BIKE_FIELD_LABELS.
