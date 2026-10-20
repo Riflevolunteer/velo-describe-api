@@ -231,6 +231,46 @@
 - Out of scope: speedometers (Universo, Multito cyclometer), fork ends, cable
   stops and clips, driving gears, wing nuts, spoke protector 996.
 
+## Sachs Kettenschaltungen für Rennen, Touristik, Off-road — April 1986 (disraeligears.co.uk, 4 scans)
+
+- `data_source` label "Sachs derailleur catalogue (April 1986)". Source:
+  https://www.disraeligears.co.uk/site/sachs_kettenschaltung_fur_rennen_touristik_off-road_-_1986.html
+  (`00_main_images/..._scan_0N_main_image.jpg`, 1560 x 2215). German,
+  Fichtel & Sachs, "183.01 Printed in Germany 0486 200"; cover branded
+  Sachs, every derailleur Sachs-Huret. A four-page flyer: cover (New Success
+  photo), Jubilee, New Success / Rival / Pilot, Rider / Duopar. Disraeli
+  notes the photos lack the spoke protectors most 1986 derailleurs had, so
+  the pictured parts may be 1985. New part codes: rears AR n.1 D / T, fronts
+  AV, shifters MA (no DB row carried them, so every match is by spec and
+  name, not part number).
+- Adjusted (source_ref -> the new source): 4419 Jubilee 2200 -> "Sachs Huret
+  Jubilee 2200 / AR 44.1 D", 1980-84 -> 1980-86 (old title "Sachs Huret
+  Jubilee 2200"; identical 148g / 28T / 31T spec to the 1984 catalogue);
+  4402 New Success -> "Sachs Huret AR 47.1 D, New Success", 1985 -> 1985-86,
+  description rewritten (old title "Sachs Huret New Success"); 4408 Pilot
+  2900-00 H 1984 -> 1984-86; 2395 Huret Jubilee 530 front and 8491 Jubilee
+  levers 1984 -> 1986 with the AV 66.1 D / MA 85.1 E codes noted (judgment:
+  the 1986 Jubilee front shows the Huret script and a 4-hole cage; not proven
+  by number).
+- Added (all 1986, brand Sachs Huret 171, group NULL, like the 1984 rows):
+  rears 8957 AR 41.1 D Rival (28T capacity, 36T max freewheel, unlike 4401
+  Rival 2850-00's 30T), 8958 AR 46.1 T Rider, 8959 AR 40.1 T Duopar; fronts
+  8960 AV 66.3 D New Success, 8961 AV 62.1 D Rival, 8962 AV 62.1 T Rider /
+  Duopar (triple); shifters 8963 MA 85.2 E New Success, 8964 MA 82.2 C Rival,
+  8965 MA 86.1 G Rider, 8966 MA 86.1 E Duopar. No weights in the source.
+- Unresolved: the undated velobase "Rider (type 1 / type 2)" rows (4410 /
+  4411, front 2437) may be the same part as 8958; the Duopar (8173 / 4400 /
+  4398) likewise; 4403 "New Success touring" (1980, velobase) is probably a
+  misdated long-cage New Success but this source cannot correct it; the
+  Pilot front 8487 / 2436 and levers 8492 were not mentioned and keep 1984.
+  6110 and 6111 ("ARIS New Success (type 1)", identical title and years, 84 g
+  spec vs 70 g) look like duplicates, untouched.
+- Bike side: this printing says plain "New Success" (no ARIS). The 1987
+  Raleigh Randonneur 18 "Huret New Success" is linked to ARIS rows (4412 /
+  2439 / 6110, dated 1987+); 4402 now ends 1986, so 1987 stays on the ARIS
+  rows (the only 1987-dated ones). Revisit if a 1987 Sachs-Huret catalogue
+  shows which style Raleigh fitted.
+
 ## Sachs-Huret 1985 — not retrievable (checked 2026-10-20)
 
 - https://labibleduvelocataloguessachshuret.blogspot.com/p/sachs-huret-1975.html
