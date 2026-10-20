@@ -146,3 +146,5 @@ Reviewed the 55 Bottom Brackets rows. Most apparent overlaps are distinct part n
 - Dropped as stale 2026-10-12: show max and min (price display), eBay Marketplace Insights access (current app creds get invalid_scope; reopen only if sold prices become a goal)
 
 - DONE 2026-10-21: Peugeot 1974-78 unlinked-spec override pass (1977 DE 71/210, 1978 99/218 linked). Remaining gaps are component-catalogue rows (San Marco Gilux race, Gauthier Rilsan, Sedis 1977-78, Stronglight TS, Monthlery); see peugeot.md.
+
+- CHECKED 2026-10-21 Lyotard web search: only source found is an undated US-importer pedal leaflet (bikeboompeugeot.com/Parts%20and%20Accessories/Pedals/Lyotard%20Pedal%20Brochure.jpg) listing 14F Faucheux, 23 Berthet, 36F Rattrap, 45 (chrome steel), 45CA (dural cage) and 460 (dural, 3.5" platform) with weights. It has no 36 RCM, Atom 600, 65, 136 or "steel with reflectors", and no dates, so the 13 unlinked Lyotard specs (5 Motobecane, 6 + 2 Peugeot 1977 DE) stay unlinked. Not loaded as a data_source.
