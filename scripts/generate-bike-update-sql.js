@@ -127,7 +127,7 @@ function bikeSourceCond(sourceRefSelect) {
 // rest stay NULL rather than guessed. A filename token overrides this.
 const CATALOGUE_COUNTRY = new Map([
   ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
-  ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1980|raleigh', 'US'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
+  ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1980|raleigh', 'US'], ['1981|raleigh', 'CA'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
   ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], // TI Raleigh UK brochures
   ['1973|falcon', 'GB'], ['1974|falcon', 'GB'],
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
@@ -557,7 +557,9 @@ const COMPONENT_OVERRIDES = {
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 2462 }], // Competition / Triathlon: FD-1050 105
     'shimano 600ex': [{ from: 1987, to: 1987, id: 2481 }], // Road Ace / Record Ace: FD-6207 600EX (1984-87)
-    'shimano 600 ex': [{ from: 1987, to: 1987, id: 2481 }], // Road Ace: FD-6207 600EX (1984-87)
+    'shimano 600 ex': [{ from: 1981, to: 1981, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // 1981 Criterium: EC-630 / FD-6200 Arabesque (1978-84; FD-6207 is 1984-87) // Road Ace: FD-6207 600EX (1984-87)
+    'sun tour spirt': 2601, // 1981 Royale: SunTour 3700 / FD-1000 Spirt (1973-85)
+    'sun tour spirt pub': 2601, // 1981 Record: as Royale
     // 1986 Raleigh (US) Supercourse: bare "Suntour Cyclone"; no row dated 1986 (FD-3300 / FD-3700 end 1985, Cyclone 7000 starts 1987).
     'suntour cyclone': null,
     // 1977-78 Raleigh (Super Course, Grand Prix, Record Ace, Super Grand Prix): the only Compe V row; the
@@ -709,7 +711,7 @@ const COMPONENT_OVERRIDES = {
     'huret new success': [{ from: 1987, to: 1987, id: 4412 }], // Sachs Huret ARIS New Success 1st Gen. (the only row dated 1987; 4402 is 1985, 4403 the 1980 touring)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 4449 }], // Competition / Triathlon: RD-1050 105
-    'shimano 600 ex': [{ from: 1987, to: 1987, id: 4471 }], // Road Ace: RD-6208 600EX SIS (1986-87)
+    'shimano 600 ex': [{ from: 1981, to: 1981, id: 4468 }, { from: 1987, to: 1987, id: 4471 }], // 1981 Criterium: RD-6200 Arabesque short cage, 13/28T (1978-84; RD-6207 is 1984-86) // Road Ace: RD-6208 600EX SIS (1986-87)
     'shimano 600ex': null, // Record Ace: friction 600EX; RD-6207 ends 1986, RD-6208 is SIS only, so no row fits
     // 1985 Raleigh (Marathon, Pursuit, Record, Teton): "SunTour HR", on 14-30 5/6-speed freewheels. Only the Honor
     // RD-1100 (1973-85, 28T / 14-30) fits by capacity and tier; no DB row is titled HR, so this is by abbreviation.
@@ -771,6 +773,7 @@ const COMPONENT_OVERRIDES = {
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     // 'sun tour vgt' is the 1973 4900; by 1983 the VGT is the RD-1500 V-GT Luxe.
     'sun tour vgt large capacity': 4705, // Royale / Royal: SunTour RD-1500, VGT (V-GT Luxe version 2)
+    'sun tour honor': 4702, // 1981 Royale: SunTour 2600 / RD-1100 Honor (1973-85)
     'sun tour volante alloy': 4708, // Stratos / Europa: SunTour RD-2600, Volante
     'shimano at10 x sis': 7720, // 1993 Bianchi "AT10-X" spelling of the AT10 SIS entry below
     // 1987 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
@@ -940,6 +943,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo nuovo record small flange qr 36 hole': 3259, // 1980 Professional Mk V, as 1979
     'campagnolo gran sport small flange qr': 3256, // Competition GS: 1006 Gran Sport (DB's only Gran Sport hub; see 1985 Bianchi note)
     'campagnolo gran sport small flange qr 36 hole': 3256, // 1980 Competition GS, as 1979
+    'campagnolo gran sport small flange quick release': 3256, // 1981 Raleigh Canada Competition GS: 1006 Gran Sport
     'atom small flange qr': 3183, // Super Course: Atom (low flange aluminum), as 1977
     'atom small flange light alloy qr 36 hole': 3183, // 1980 Super Course, as 1979
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
@@ -1126,6 +1130,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record side pull': [{ to: 1978, id: 573 }], // Professional Mk V: Campagnolo 2040, Record (pre-CPSC)
     'campagnolo record short reach': [{ from: 1979, to: 1979, id: 575 }], // 1979 Raleigh Professional Mk V: Campagnolo 2040/1 Record short reach, post-CPSC row (1978-87)
     'campagnolo record short reach 47mm': [{ from: 1980, to: 1980, id: 575 }], // 1980 Raleigh Professional Mk V: 2040/1 short reach, as 1979
+    'campagnolo record with campagnolo levers': [{ from: 1981, to: 1981, id: 575 }], // 1981 Raleigh Canada Professional: 2040/1 short reach post-CPSC row (1978-87); reach unstated
     'weinmann carrera sidepull with wheel guides': 1167, // Competition GS: Weinmann AG Carrera (earlier, 1970-80)
     'raleigh weinmann 610 centerpull with lightened quick release levers': 1138, // Super Course: Weinmann AG Raleigh 610
     // 1993 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
@@ -1361,6 +1366,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo nuovo record cotterless 42 51t': [{ to: 1987, id: 1496 }], // Professional Mk V: 1049 Nuovo Record Strada v4
     'campagnolo nuovo record cotterless 42 52t 170mm': [{ to: 1979, id: 1496 }], // 1979 Raleigh Professional Mk V: 1049 Nuovo Record Strada v4, as 1978's 42/51T
     'campagnolo nuovo record cotterless 42 51t 170mm': [{ to: 1987, id: 1496 }], // 1980 Raleigh Professional Mk V, as 1978's 42/51T
+    'campagnolo strada record alloy 51 42': 1496, // 1981 Raleigh Canada Professional: 1049 Nuovo Record Strada v4
+    'campagnolo gran sport set 52 42': 1472, // 1981 Raleigh Canada Competition GS: 0304 (Nuovo) Gran Sport
     'campagnolo gran sport cotterless 42 52t 170mm': [{ from: 1978, id: 1472 }], // Competition GS: 0304 (Nuovo) Gran Sport, as the 1979 Colnago Export (row dated from 1980)
     'shimano ffs 40 52t 165mm': 1777, // Record FFS/PPS: Shimano FFS (Front Freewheel System); FC-FF33 row starts 1980
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
@@ -1889,6 +1896,7 @@ const COMPONENT_OVERRIDES = {
     // 1978 Raleigh (US, ebykr scan).
     'campagnolo record 272mm': [{ to: 1985, id: 5749 }], // Professional Mk V: 1044 Record
     'campagnolo gran sport 272mm': 5734, // Competition GS: 3800 Gran Sport
+    'campagnolo gran sport with clip': 5734, // 1981 Raleigh Canada Competition GS: 3800 Gran Sport
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'sakae p 5': 5857, // Speciale-II / Randonneur 700 / Rekord 26 / Bambina: SR CT-P5, Custom-P5 (Sakae Laprade)
     'sakae p 3': 5855, // Strada: SR CT-P3, Custom-P3 (melt forging)

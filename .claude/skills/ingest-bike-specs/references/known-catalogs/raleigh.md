@@ -338,6 +338,37 @@
   centerpulls, Maillard, Mavic, Araya, stems, bars, tyres, vinyl saddles.
 - Regression: all 42 other CSVs regenerate with unchanged link counts.
 
+## 1981 Raleigh (Canada) — `1981_raleigh_spec.csv` (7 bikes, 131 specs, 24 linked)
+
+- Source: https://theheadbadge.com/catalogs/1981-raleigh-catalog-canada/ (15
+  images of a folded brochure; no text layer; Neal Lerner / Stephen P. Clark).
+  "Technical Specifications 1981" is the 6911px "Outside, Specs" panel
+  (`1981-Raleigh-Canada-13.jpg`, size suffix dropped); transcribed from two
+  native-resolution crops. TI Raleigh Industries of Canada edition, so
+  `data_source.country` CA (`CATALOGUE_COUNTRY` `1981|raleigh`); a US 1981
+  catalogue would need a `_us` filename token.
+- Models: Royale, Record, Grand Prix, Criterium (12, new for 1981), Super
+  Course, Competition GS, Professional. All drop-bar adult (Royale / Record /
+  Grand Prix have hooded levers with extensions, like the 1980 Reliant). No
+  other spec columns in the brochure.
+- Fixes: weights printed without a unit, entered as lbs; "Weinman" ->
+  Weinmann; Rear Cluster -> Freewheel; Derailleur split into Front / Rear /
+  Shifters; "N.R." pedals -> Campagnolo Nuovo Record. Printed oddities kept
+  ("Spirt", "Impere Seta Tubeless", Super Course "Sakae Apex").
+- Overrides: Shimano 600 EX front / rear derailleur ranged to 1981 -> 2480
+  (EC-630 / FD-6200 Arabesque) and 4468 (RD-6200 short cage, 13/28T); the
+  FD-6207 / RD-6207 rows are 1984-87, so the 1987 picks stay. SunTour Spirt /
+  Spirt P.U.B. front -> 2601, Honor rear -> 4702. Campagnolo: Record with
+  Campagnolo levers brakes -> 575 (reach unstated, post-CPSC row assumed),
+  Strada Record 51/42 crank -> 1496, Gran Sport 52/42 set -> 1472, Gran Sport
+  hubs -> 3256, Gran Sport seatpost "with clip" -> 5734.
+- Not linked on purpose: Shimano 600 EX crank (three Arabesque variants, no
+  basis to choose) and brakes (brochure says centre pull, the Arabesque
+  brake is a side pull); SunTour G.T. / V.T. / S.L. / V.X.
+- Left unlinked, as 1977-80: Weinmann centre-pulls, Sakae / Silstar cranks,
+  Shimano Gold and Sun Tour freewheels, rims, plain hubs, generic saddles.
+- Regression: all 43 other CSVs regenerate with unchanged link counts.
+
 ## 1986 Raleigh (US) — `1986_raleigh_spec.csv` (21 bikes, 424 specs, 52 linked)
 
 - Source: https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1986.html
