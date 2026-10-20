@@ -147,7 +147,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1993|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19)
   // Peugeot 1971-74 mix Dutch spec pages and French general-catalogue pages in one CSV; the user chose FR
   // for all of them (2026-10-19) instead of splitting. 1970 stays NL (Dutch-market catalogue only).
-  ['1971|peugeot', 'FR'], ['1972|peugeot', 'FR'], ['1973|peugeot', 'FR'], ['1974|peugeot', 'FR'], ['1975|peugeot', 'NL'], // 1975: Dutch-only "Peugeot Modellen '75" (Cycles Peugeot Nederland), no French pages
+  ['1971|peugeot', 'FR'], ['1972|peugeot', 'FR'], ['1973|peugeot', 'FR'], ['1974|peugeot', 'FR'], ['1975|peugeot', 'NL'], ['1976|peugeot', 'NL'], // 1975: Dutch-only "Peugeot Modellen '75"; 1976: Dutch "Peugeot '76" (both Cycles Peugeot Nederland; the 1976 PY 10 spec comes from the French April 1976 leaflet)
   ['1989|derosa', 'US'], // GITA Sporting Goods (Charlotte NC) US dealer catalogue
   // Inferred, not stated by the source (user accepted 2026-10-19); correct if the original says otherwise:
   ['1985|raleigh', 'US'], // Sheldon Brown Retro Raleighs scan, lbs weights, Team U.S.A. models
@@ -571,7 +571,7 @@ const COMPONENT_OVERRIDES = {
     // 1970 Peugeot (Dutch-market catalogue).
     'simplex criterium': [{ from: 1964, to: 1975, id: 2583 }], // Simplex Prestige Criterium AV 223 (no other Criterium front before the 1977 LJ A200)
     // 1974 Peugeot (Dutch catalogue): PA 60 front; also back-fills the 1973 PX 10.
-    'simplex super competition': [{ from: 1971, to: 1975, id: 8794 }], // Simplex AV 3, Super-Competition (1971)
+    'simplex super competition': [{ from: 1971, to: 1976, id: 8794 }], // Simplex AV 3, Super-Competition (1971)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace': [{ from: 1990, to: 1993, id: 2511 }], // FD-7403 (8sp HG)
     'shimano ultegra': [{ from: 1990, to: 1991, id: 2478 }], // FD-6400, 600 Ultegra (the matcher took a 1990 "Ultegra Tripple" velobase row)
@@ -721,7 +721,7 @@ const COMPONENT_OVERRIDES = {
     // RD-1100 (1973-85, 28T / 14-30) fits by capacity and tier; no DB row is titled HR, so this is by abbreviation.
     'suntour hr': [{ from: 1985, to: 1985, id: 4702 }], // SunTour 2600 / RD-1100, Honor
     // Peugeot 1970-72 (Dutch catalogues): two velobase rows share the title.
-    'simplex criterium': [{ from: 1965, to: 1970, id: 4644 }, { from: 1971, to: 1975, id: 4645 }], // Simplex Criterium 1965-70 / 1971-75 (row dated 1971-73; the 1974 and 1975 Dutch catalogues still list it)
+    'simplex criterium': [{ from: 1965, to: 1970, id: 4644 }, { from: 1971, to: 1976, id: 4645 }], // Simplex Criterium 1965-70 / 1971-76 (row dated 1971-73; the 1974-76 Dutch catalogues still list it)
     // 1974 Peugeot (Dutch catalogue): PX 10 LE / PX 60, captioned "Achterderailleur Simplex Super LJ".
     'simplex super lj': [{ from: 1971, to: 1978, id: 4650 }], // Simplex SLJ5000 (1971-78), the Super LJ rear; 4649 SX660 is undated
     // 1990 Bianchi US catalogue (retrobike archive 1676).
@@ -1060,7 +1060,8 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
-    'altenburger synchron': [{ from: 1970, to: 1975, id: 511 }], // 1970-75 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron; 511 and 512 are the two undated velobase logo variants of the same brake, 511 chosen as the exact title match (a judgement)
+    'mafac 2000 anodised': [{ from: 1976, to: 1976, id: 836 }], // 1976 PY 10: MAFAC 2000 later version (1970-79; 835 and 837 are 1970-only variants)
+    'altenburger synchron': [{ from: 1970, to: 1976, id: 511 }], // 1970-76 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron; 511 and 512 are the two undated velobase logo variants of the same brake, 511 chosen as the exact title match (a judgement)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'shimano deore xt cantilever with gumhoods': [{ from: 1983, to: 1986, id: 980 }], // 1986 Raleigh Portage; as "Shimano Deore XT, cantilever" (BR-MC70)
     'dia compe dc630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Sportif; as the 1985 "DC630N alloy S.P." pick
@@ -1349,6 +1350,7 @@ const COMPONENT_OVERRIDES = {
     'stronglight 49 d 45 53t': 1895, // Stronglight 49D (Depose), as the 1975 Motobecane / 1979 Peugeot 49 D picks
     // 1975 Peugeot (Dutch catalogue): the same Stronglight cranks as 1973-74.
     'stronglight 49 d light alloy 45 52t': 1895, // PR 10, as the 1974 45/53T pick
+    'stronglight 49 d light alloy 42 52t': 1895, // 1976 PR 10 (42/52T), as the 1975 45/52T pick
     'stronglight dural 49d 40 50t': 1895, // PA 60, as the 1974 50/40T pick
     'stronglight competition 93 light alloy 45 52t': 1904, // PX 10 LE: Stronglight 93 (1967-80), as the 1973 PX 10 pick
     'stronglight competition 99 40 50t': 1906, // PX 60: Stronglight 99 base row (1970-82), as the 1974 pick
@@ -1495,6 +1497,7 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
+    'ideale 2002 or treated leather': null, // 1976 PY 10: either / or, as the 1973 PX 10 either/or saddle (left unlinked)
     // 1987 Raleigh Randonneur 18: "Brooks Professional, honey finish, pre-softened" -> 5295 Brooks Professional pre-softened (velobase dates the row 2000, treated as a misdate; the catalogue itself shows the saddle in 1987).
     'brooks professional honey finish pre softened': [{ from: 1987, to: 1990, id: 5295 }],
     // 1987 Raleigh (UK): brand + descriptor only; the matcher falls back to the bare Selle Royal brand row (5521).

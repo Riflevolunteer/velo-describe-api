@@ -256,3 +256,37 @@
   27 linked against 25 in the DB, and 1990 Bianchi 189 against 191 (one-off SQL fixes the
   generator does not know about); 1984 / 1989 De Rosa are labelled "Derosa" in the file name
   but "De Rosa" in the DB, so a label-name comparison must handle that.
+
+## 1976 Peugeot — `1976_peugeot_spec.csv` (9 bikes, 131 specs, 38 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1976.html
+  (43 images, loaded 2026-10-20). Mixes two catalogues, as 1973 / 1974: the Dutch
+  "Peugeot '76" (cover, pp. 2-15 and back cover, 1045 px PeugeotShow scans; plus the
+  1 January 1976 Cycles Peugeot Nederland price list, dealer stamp J.W. v.d. Kieft,
+  Barneveld) with full specs, kg weights and frame heights; and the French
+  "Cyclotourisme et course" leaflet printed 4.76 (bikeboompeugeot.com watermark, 8
+  scans: cover, PA 60 / PX 60, PY 60 P / PA 55 / PA 65, two photo pages, courses PN 10 -
+  PY 10, PY 10 P with a development table, back). The other images are the poster, a
+  French text page and cropped text snippets of the same leaflet. Country NL
+  (`CATALOGUE_COUNTRY` `1976|peugeot`).
+- Loaded (adult range, as 1971-75): Racing P 10 (40/50T, f. 14-21T, 11.5 kg), PR 10
+  (Reynolds 531, Stronglight 49 D 42/52T, 11 kg), PY 10 (new: made-to-measure 12-speed
+  "course professionnel", f. 2,090; the Dutch back cover is prose only, so its components
+  come from the French leaflet's PY 10 P: Simplex Super LJ, Mafac 2000, Stronglight dural
+  38-54T, Maillard 700 pedals, Ideale 2002 or leather, Simplex dural seatpost, 6-speed
+  13-28T); Cyclotouring PA 60 and PX 60 (Ideale 80, Super Competition front, Criterium
+  rear, 40/50T x 14-26T); Sports PX 8, P 8 E (40/50T, 14-26T), PL 8 (5-speed), UO 8.
+- Not loaded: NSL 22 / PNSL 22; G 42 / G 46 C / G 50 C / G 50 CD / J 8 (children's);
+  PE 40 / PE 41 / PE 25 / PE 45 / PE 46 (town); UE 18 (ladies' 10-speed, borderline, held
+  out as in 1975, spec unchanged: Simplex Prestige, 40/50T x 14-28T, Normandy high-flange,
+  Mafac Racer, 16 kg); the French-only PN 10, PA 10 L, PR 10 L, PX 10 L, PY 60 P, PA 55,
+  PA 65 (blurbs that duplicate the Dutch names or are ladies' models).
+- Overrides: Front 'simplex super competition' 8794 range -> 1971-76; Rear 'simplex
+  criterium' 4645 -> 1971-76; Brakes 'altenburger synchron' 511 -> 1970-76; Cranksets
+  'stronglight 49 d light alloy 42 52t' -> 1895; Saddles 'ideale 2002 or treated leather'
+  -> null (either / or, as the 1973 PX 10 saddle); Brakes 'mafac 2000 anodised' -> 836 MAFAC
+  2000 later version (1970-79; 835 and 837 are 1970-only variants).
+- Left unlinked: Simplex Competition and Simplex dural seatposts, Maillard 700 pedals
+  (four colour variants), Philippe Dural bars, generic frame / saddle / fender cells.
+- Regression: all 46 other catalogues' link counts unchanged (Falcon 1974 and Bianchi 1990
+  drift as noted under 1975).
