@@ -147,7 +147,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1993|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19)
   // Peugeot 1971-74 mix Dutch spec pages and French general-catalogue pages in one CSV; the user chose FR
   // for all of them (2026-10-19) instead of splitting. 1970 stays NL (Dutch-market catalogue only).
-  ['1971|peugeot', 'FR'], ['1972|peugeot', 'FR'], ['1973|peugeot', 'FR'], ['1974|peugeot', 'FR'], ['1975|peugeot', 'NL'], ['1976|peugeot', 'NL'], // 1975: Dutch-only "Peugeot Modellen '75"; 1976: Dutch "Peugeot '76" (both Cycles Peugeot Nederland; the 1976 PY 10 spec comes from the French April 1976 leaflet)
+  ['1971|peugeot', 'FR'], ['1972|peugeot', 'FR'], ['1973|peugeot', 'FR'], ['1974|peugeot', 'FR'], ['1975|peugeot', 'NL'], ['1976|peugeot', 'NL'], ['1978|peugeot', 'NL'], // 1975: Dutch-only "Peugeot Modellen '75"; 1976: Dutch "Peugeot '76" (both Cycles Peugeot Nederland; the 1976 PY 10 spec comes from the French April 1976 leaflet)
   ['1989|derosa', 'US'], // GITA Sporting Goods (Charlotte NC) US dealer catalogue
   // Inferred, not stated by the source (user accepted 2026-10-19); correct if the original says otherwise:
   ['1985|raleigh', 'US'], // Sheldon Brown Retro Raleighs scan, lbs weights, Team U.S.A. models
@@ -552,6 +552,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'simplex slja 502': [{ from: 1978, to: 1981, id: 7281 }], // 1978 Peugeot (NL) PX 10 LE / PY 10 EC / PY 10 CP: SLJ A502 (1978-81)
     'simplex slja 522': [{ from: 1977, to: 1984, id: 7283 }], // 1977 Peugeot (DE) PY 10/CP: SLJ A522 (the only row, dated 1978-84; a judgement, one year early)
     'sun tour vx': [{ from: 1979, to: 1980, id: 2614 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour FD-1600, VX (1978-84)
     'shimano z202': [{ from: 1986, to: 1986, id: 2542 }], // 1986 Raleigh Marathon / Pursuit: FD-Z202-HS, Z-Series (1984-88)
@@ -710,7 +711,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
-    'simplex lj 4000 cp': [{ from: 1975, to: 1977, id: 4602 }], // 1977 Peugeot (DE) PY 10/CP: LJ4000 CP version 1 (1975-77)
+    'simplex lj 4000 cp': [{ from: 1975, to: 1977, id: 4602 }, { from: 1978, to: 1984, id: 4603 }], // 1977 Peugeot (DE) PY 10/CP: LJ4000 CP version 1 (1975-77)
     'simplex lj 1000 t': [{ from: 1970, to: 1981, id: 4600 }], // 1977 Peugeot (DE) PX 10/LE, PXN 10/E: LJ1000 T (1970-81)
     'simplex sx 810 t': [{ from: 1977, to: 1981, id: 4617 }], // 1977 Peugeot (DE) PA 10/LE: SX810 T (1977-81; the DB title has no space, so the matcher misses it)
     'sun tour vx gt': [{ from: 1979, to: 1980, id: 4707 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour RD-2400, VX (GT) (1977-84)
@@ -912,6 +913,9 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1978 Peugeot (NL): Maillard 700 Professional (1970-80), flange wording as the catalogue.
+    'maillard 700 dural high flange simplex quick release': [{ from: 1970, to: 1980, id: 3393 }], // PX 10 LE: large (high) flange
+    'maillard 700 dural low flange simplex quick release': [{ from: 1970, to: 1980, id: 3394 }], // PY 10 EC / PY 10 CP: low flange
     // 1985-86 Raleigh (US) Sansin hubs, from the Sansin Catalog No. 11 (Dec 1987), rows 9000-9013.
     'sansin re 50 qr large flange sealed 36 hole front 40 hole rear': [{ from: 1985, to: 1985, id: 9002 }], // 1985 Kodiak: Sansin RE-50 (the catalogue lists 32 / 36h only; the 40h rear is Raleigh's)
     'sansin re 50 large flange alloy qr sealed 36 hole front 40 hole rear': [{ from: 1985, to: 1985, id: 9002 }], // 1985 Alyeska
@@ -1278,6 +1282,8 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
+    'stronglight d6 titanium': [{ from: 1977, to: 1980, id: 3116 }], // 1978 Peugeot (NL) PY 10 CP: D6 Extra Leger
+    'stronglight v4 competition': [{ from: 1960, to: 1982, id: 3125 }], // 1978 Peugeot (NL) PX 10 LE: V4 later version
     'stronglight d 6 titanium': [{ from: 1977, to: 1977, id: 3116 }], // 1977 Peugeot (DE) PY 10/CP: D6 Extra Leger (1977-80)
     'tange cma60': [{ from: 1983, to: 1987, id: 3144 }], // 1983-87 Raleigh: Tange MA-60 (undated); a judgement by the user 2026-10-20, CMA60 taken as the MA-60 headset
     'tange cma 60': [{ from: 1983, to: 1987, id: 3144 }],
@@ -1338,6 +1344,7 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    'stronglight 49d 42 52t': [{ from: 1970, to: 1982, id: 1895 }], // 1978 Peugeot (NL) PS 10 / TM 8: Stronglight 49D, as the 1973-77 picks (the DB has no 1970s 49D row)
     // 1970 / 1972 Raleigh (US) Professional Mk IV and International (1972): Campagnolo 44/52T with the Nuovo Record
     // derailleurs -> 1049 Nuovo Record Strada v4 (1967-87), as the 1973 International 'campagnolo cotterless alloy'.
     'campagnolo 44 52t': [{ from: 1970, to: 1972, id: 1496 }],
@@ -1911,6 +1918,10 @@ const COMPONENT_OVERRIDES = {
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
+    // 1978 Peugeot (NL).
+    'laprade 505': [{ from: 1970, to: 1979, id: 5815 }], // PY 10 EC: Laprade Brevete 505 (1970-79)
+    'laprade 606': [{ from: 1970, to: 1979, id: 5816 }], // PY 10 CP: Laprade Brevete 606 (1970-79)
+    'simplex slj 4160': [{ from: 1978, to: 1978, id: 7340 }], // PX 10 LE: Simplex 4160 (1978)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'campagnolo chorus': [{ from: 1987, to: 1991, id: 5742 }], // C0R2, Chorus (matcher took the mid-90s RS)
     'campagnolo athena': [{ from: 1990, to: 1991, id: 5736 }], // SP-10AT (v2)
@@ -2155,6 +2166,7 @@ const COMPONENT_OVERRIDES = {
     'sun tour wide ratio 14 18 23 30 34t': 2245, // SunTour 1100-1106 / PT-5000, Perfect (5-speed)
   },
   Tyres: {
+    'michelin elan ts 28 x 1 1 16': [{ from: 1978, to: 1979, id: 8789 }], // 1978 Peugeot (NL) PSN 10 / PRN 10 E: Michelin Elan TS (row dated 1979, one year after this catalogue; a judgement)
     'peugeot professionnel or clement criterium tubulars': null, // 1977 Peugeot (DE) PY 10/CP: either / or, left unlinked
     '27 x 1 1 4': null, // bare size (1975 Peugeot UO 8), not the Continental Cyclocross 27 x 1 1/4 the substring matcher finds
     'clement no 3 silk tubular': [{ from: 1973, to: 1974, id: 8970 }], // 1973-74 Raleigh Professional Track: Clement Seta, Tipo 3 (track silk, 175 g; Clement 1977 leaflet)
@@ -2192,6 +2204,7 @@ const COMPONENT_OVERRIDES = {
     'ritchey megabite hardrive': 8383, // Ibex / Osprey: Ritchey MegaBite HardDrive
   },
   Rims: {
+    'rigida chrolux': [{ from: 1960, to: 1970, id: 5158 }], // 1978 Peugeot (NL) TM 8 would otherwise inherit the 1960-70 chrome rim; no 1978 Chrolux row
     'mavic sport or pellet record light alloy': null, // 1977 Peugeot (DE): either / or, left unlinked
     'araya sp30 alloy': [{ from: 1986, to: 1986, id: 8424 }], // 1986 Raleigh Pursuit / Technium 440 / 460: Araya SP-30 (1985-92)
     'araya sp30 27 x 1 1 4 alloy': [{ from: 1986, to: 1986, id: 8424 }], // 1986 Raleigh Alyeska

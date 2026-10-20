@@ -337,3 +337,41 @@
   Trophy / Route tyres.
 - Regression: all 47 other catalogues' link counts unchanged (Falcon 1974 and Bianchi 1990
   drift as noted under 1975).
+
+## 1978 Peugeot — `1978_peugeot_spec.csv` (12 bikes, 218 specs, 54 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1978.html (54
+  images, loaded 2026-10-20). Three catalogues on one post: (1) the Dutch "Peugeot '78"
+  (Cycles Peugeot Nederland; cover "Perfectie op Maat sinds 1882", frame geometry diagram,
+  16 spreads of prose specs with component weights in grams, and a comparison table for the
+  Race / Gentleman / Lady range) which was loaded; (2) the French "Cycles Peugeot 78" (23
+  pages of blurbs for PY 10 C / CP, PX 10 L, PS 10, PR 10 L, PA 10 L, P 10, PN 10 L), not
+  loaded; (3) the French "Cycles Peugeot 1978" brochure (cover, PX 8 L "La Balade", mopeds
+  such as the 103 SVL, ...), not loaded. Country NL (`CATALOGUE_COUNTRY` `1978|peugeot`).
+- Loaded: Racing PA 10 LE / PAN 10 LE (Peugeot Allege 10/10, SX 810 T, Mafac-S, 10.8 kg),
+  PS 10 / PSN 10 (Reynolds 531, 49D, SX 410 T, 10.6 kg), PR 10 LE / PRN 10 E (10.7 kg), PX 10
+  LE (SLJ A502 / LJ 4000 CP, Maillard 700, Lyotard 65, Simplex SLJ 4160, 10.2 kg), PY 10 EC
+  (12-speed, 105 Bis, Laprade 505, S5 headset, 10.1 kg), PY 10 CP (hand-built, Thevenet's
+  bike, Reynolds 5/10, Laprade 606, titanium D6, 9.0 kg); Cyclotouring PA 60 (13 kg) and PR 60
+  Gentleman (12.9 kg, Bluemels); Tandem TM 8 (mixed, Mafac Cyclo-Tandem, 49D, rear hub drum
+  brake). The N / E variants (PAN, PSN, PRN) carry the parent spec with Mavic Module E rims
+  and Michelin Elan / Elan TS clinchers. Component weights are summarised under "Weights:" in
+  Extras so the component cells stay clean (the first draft had them inline and only 17 of
+  218 specs linked; the verbose draft is in the scratchpad as 1978_peugeot_spec.verbose.csv).
+- Not loaded: PR 65 Lady (ladies' semi-racer, 38/48T, Reynolds 531, Bluemels, rack: held out
+  as borderline, like UE 18 / PR 65 (1977)); the French-only P 10, PN 10 L, PX 10 L, PY 10 C
+  (blurbs; the Dutch PX 10 LE and PY 10 EC cover them), PX 8 L and the mopeds.
+- Overrides: Front 'simplex slja 502' -> 7281 (1978-81); Rear 'simplex lj 4000 cp' range
+  extended with 1978-84 -> 4603; Seat Posts 'laprade 505' -> 5815, 'laprade 606' -> 5816 (both
+  1970-79), 'simplex slj 4160' -> 7340 (1978); Hubs 'maillard 700 dural high flange simplex
+  quick release' -> 3393 and '... low flange ...' -> 3394 (Professional large / low flange);
+  Headsets 'stronglight d6 titanium' -> 3116, 'stronglight v4 competition' -> 3125; Cranksets
+  'stronglight 49d 42 52t' -> 1895 (as 1973-77; the DB has no 1970s 49D row); Tyres 'michelin
+  elan ts 28 x 1 1/16' -> 8789 (the Elan TS row is dated 1979, one year after this catalogue;
+  a judgement); Rims 'rigida chrolux' ranged 1960-70 -> 5158 so the 1978 TM 8 stays unlinked.
+- Left unlinked: Mafac Competition (825-827 variants), Mavic Module E (1975 rows only),
+  Peugeot Route / Trophy / Professionnel tubulars, Philippe Professionnel and Atax bars,
+  Gauthier Rilsan and San Marco saddles, Record du Monde and Pellet rims, Normandy
+  Competition hubs, generic cells.
+- Regression: all 48 other catalogues' link counts unchanged (Falcon 1974 and Bianchi 1990
+  drift as noted under 1975).
