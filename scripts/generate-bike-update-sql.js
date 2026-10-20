@@ -914,6 +914,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    'large flange quick release': null, // 1974 Falcon: bare "Large flange quick release" substring-matched the SunShine Regular 73-5 row (8986), a different maker; the DB never had that link
     'maillard 700 special forged light alloy quick release': [{ from: 1970, to: 1980, id: 3393 }], // 1975 Peugeot P 10: Maillard 700 Professional, large flange
     'high flange maillard 700 dural quick release (simplex or maillard)': [{ from: 1970, to: 1980, id: 3393 }],
     'normal flange maillard 700 forged dural quick release (simplex or maillard)': [{ from: 1970, to: 1980, id: 3394 }], // 1977 Peugeot (DE): normal = low flange
