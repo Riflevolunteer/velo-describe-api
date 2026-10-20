@@ -154,3 +154,5 @@ Reviewed the 55 Bottom Brackets rows. Most apparent overlaps are distinct part n
 - DONE 2026-10-21: Mavic "The MAVIC advantage" leaflet (1984, data_source 241): Module E and E2 year_to -> 1984, 550 RD pair weight; everything else already matched the 84-85 catalogue.
 
 - DONE 2026-10-21: Mavic leaflet c. 1979 (disraeligears, data_source 242): 14 rows year_from -> 1979, 3 descriptions (410 lever, 810 front, 3835 series 600 pedal, which settles the 3835 vs 640 question: two eras, no merge). The 1979 date is inferred; see mavic.md.
+
+- DONE 2026-10-21: 6 bike specs linked to Mavic rims after the Mavic catalogue passes (1978 Peugeot Monthlery -> 5093 x3, 1981 Bianchi special sport -> 5109, 1986 Raleigh MA 40 -> 5077, 1987 Raleigh M3CD -> 5048). Open: Raleigh "Mavic Sprint" (3) and "Mavic Professional" (1) have no clear row.

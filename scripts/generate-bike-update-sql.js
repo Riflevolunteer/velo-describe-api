@@ -2235,6 +2235,10 @@ const COMPONENT_OVERRIDES = {
     'ritchey megabite hardrive': 8383, // Ibex / Osprey: Ritchey MegaBite HardDrive
   },
   Rims: {
+    'mavic special sport': [{ from: 1980, to: 1991, id: 5109 }], // 1981 Bianchi: Mavic Spéciale Sport tubular (c. 1980 catalogue, 400 g)
+    'mavic ma 40 hard anodized': 5077, // 1986 Raleigh: Mavic MA 40, as the 1987 Bianchi "Mavic MA40"
+    'mavic m3cd hard anodised 36h eyeleted': 5048, // 1987 Raleigh: Module 3 CD (M3 CD)
+    'mavic monthlery drilled for tubulars': [{ from: 1970, to: 1980, id: 5093 }], // 1978 Peugeot (NL): Montlhéry Route, as the 1973-75 "Mavic Monthlery" picks (Route / Pro / Légère all listed, text does not say which)
     'mavic module e': [{ from: 1975, to: 1978, id: 5087 }], // 1978 Peugeot (NL): Module E (Red Label); the row is dated 1975
     'rigida chrolux': [{ from: 1960, to: 1970, id: 5158 }], // 1978 Peugeot (NL) TM 8 would otherwise inherit the 1960-70 chrome rim; no 1978 Chrolux row
     'mavic sport or pellet record light alloy': null, // 1977 Peugeot (DE): either / or, left unlinked
