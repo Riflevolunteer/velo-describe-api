@@ -294,3 +294,12 @@ Source: https://www.disraeligears.co.uk/site/mavic_-_catalogue_1980.html (24 pag
 - Retitled 4336 "Mavic 801" (1970-80, 175 g, bare) -> "Mavic 800 (original)", 1979-80: the catalogue's rear 800 weighs 175 g and has the 8-position chain tension / adjustable roller design, not the 801's adjustable chain guide (4337, 1980-85). The 1979 start comes from the 810 front (1979), not from this catalogue. Old title "Mavic 801" so later sources using it can be matched. 4348 "Mavic 800" (1993, 241 g) is a different, later row and was left alone.
 - New rows: 9030 Mavic 800 levers (68 g pair), 9031 Mavic 351, G.I. bend and 9032 Mavic 352, F.B. bend (40-44 cm, 340-355 g). Existing 2862 "Mavic 351" is a different 1990 bar (part number reused).
 - Unresolved: 3835 "Mavic 600" pedal (1979, bare) is probably the series name of the 640, a merge candidate; Module 3 CD / 3D Argent are absent from this catalogue (weak evidence they came later, not capped); the catalogue's crank has no number (the 1979-84 "Mavic 600" rows 1637-1639 cover it).
+
+## Mavic "The MAVIC advantage" dealer leaflet (1984) — disraeligears.co.uk, data_source id 241
+
+Source: https://www.disraeligears.co.uk/site/the_mavic_advantage.html (10 pages, FR/EN/DE, Taff Vale Cycles dealer stamp). A digest of the 84/85 catalogue ("ask for catalogue 84/85"; imprint "884"), so dated 1984. Almost everything already matched data_source 114 and the later passes: 410 / 420 / 430 brakes, 300 / 310 headsets, 801 / 851 182 g, 810-812 and 860-862, 500 RD pair 522/473 g, Module 3 / 3D / 4, the tubular and hard-surface rims, TTM 4 / 560 / 504 weights.
+
+- year_to 1980 -> 1984: 5087 Module E (Red Label) and 5089 Module E2 (both still listed in 1984). 5089 description rewritten: holes 32-36-40 (the 1980 pass had "36-32"), 650A 36 holes 400 g, velobase "(Spec)" weight dropped.
+- 8159 550 RD: pair weight 511/462 g (1984) added; the per-end figures in the row sum to 505/465 g, so the sources differ slightly.
+- Consistent, no change: Module 3D Argent present in 1984 (absent in 1980, row left 1980-91), Sport 700C and Argent 7 absent in 1984 (rows end 1980), 801 at 182 g vs the 1980 catalogue's 175 g 800 (supports the 4336 retitle).
+- Out of scope: the 1000 SSC group page (no part numbers or weights), QR skewers, tools.
