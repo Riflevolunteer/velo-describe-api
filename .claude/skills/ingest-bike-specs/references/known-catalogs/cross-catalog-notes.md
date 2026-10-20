@@ -412,3 +412,14 @@ release", "Wide Flange Alloy", "Course with toe clips and straps", "27 x
 1-1/4 alloy 36 hole", "Weinmann 700C Alloy", "Forged dural, anodised, hidden
 expander"); "3ttt Competizione" vs "...Aero"; plain "Engraved Italienne
 Alloy Bend" (Raleigh's own, not the SR Custom bar); 600 AX shifters vs 600EX.
+
+Huret New Success (1987 Raleigh Randonneur 18), added the same day: three
+specs linked from the DB rows alone: rear 4412 Sachs Huret ARIS New Success
+1st Gen. (the only New Success row dated 1987; 4402 is 1985, 4403 the 1980
+touring), front 2439 ARIS New Success (the only New Success front, undated),
+shifters 6110 ARIS New Success (type 1, 1987-90; 6111 has the same title and
+looks like a duplicate to merge on the component side). The 1985 Sachs-Huret
+catalogue that might date these is not retrievable (see huret.md). The Zenith /
+Granada "Huret Rival" front stays unlinked: the Rival fronts are dated 1980,
+1984, 1989 and 1990, none 1987.
+

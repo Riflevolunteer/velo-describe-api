@@ -230,3 +230,17 @@
   CSVs first, see the `ingest-bike-specs` scope check).
 - Out of scope: speedometers (Universo, Multito cyclometer), fork ends, cable
   stops and clips, driving gears, wing nuts, spoke protector 996.
+
+## Sachs-Huret 1985 — not retrievable (checked 2026-10-20)
+
+- https://labibleduvelocataloguessachshuret.blogspot.com/p/sachs-huret-1975.html
+  is the 1985 catalogue (the page's own note: the tab is labelled 1985, the
+  URL says 1975 by mistake). 10 images, but they are Blogger proxy images
+  (`blogger_img_proxy`) of scans hosted on bibibike.forumserv.com
+  (`/image/110/.../sheet-NN-*.jpg.htm`). Today the proxy URLs return 404, the
+  forum is gone (xooit "forum inexistant"), and the Wayback Machine has no
+  copy of those image URLs (it rate-limited further probing). Nothing was
+  ingested. If a copy turns up elsewhere (retrobike, ebykr, disraeligears),
+  it would date the pre-ARIS New Success rows (4402 / 4403) but not the 1987
+  ARIS ones.
+
