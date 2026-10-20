@@ -22,6 +22,28 @@
 - Regression: the nine loaded Raleigh catalogues generate identical counts
   with and without the new override.
 
+## 1971 Raleigh Carlton (US) — `1971_raleigh_spec.csv` (5 bikes, 95 specs, 22 linked)
+
+- Source: https://theheadbadge.com/catalogs/1971-raleigh-carlton-catalog-usa/
+  (four scans, `RaleighCarlton-1971-US-<n>.jpg` with the `-450xNNN` suffix
+  dropped; cover, Grand Prix / Super Course page, Record page, and p. 4 with
+  the spec table plus International / Professional blurbs). Raleigh Industries
+  of America, Boston, FORM NO. 171 50M, so country US (stated; map entry
+  `1971|raleigh`). The page says it is only the Carlton-built lightweights, not
+  the full 1971 Raleigh catalogue.
+- Models: Professional Mk III DL 180, International DL 170, Super Course DL
+  100, Grand Prix DL 115, Record DL 130; titles and headers as the 1970 / 1972
+  CSVs. Ladies DL-115L / DL-130L appear only in the blurbs, not as table
+  columns. Nothing left out of scope.
+- Fixes: Neuvo -> Nuovo Record, Huchinson -> Hutchinson, Stronglite ->
+  Stronglight; footnoted West Coast only items kept in the size / colour cells.
+- Overrides: none new. Weinmann 999 (7929), Campagnolo 44/52T crank (1496,
+  1970-72), bare Campagnolo Record hubs (3260) and pedals (3708), Huret Luxe /
+  Allvit and Simplex Prestige picks already cover 1971.
+- Left unlinked, as 1970 / 1972: Brooks B-15, Nervar / Stronglight cranks,
+  Atom pedals and hubs, Normandy hubs, Weinmann Tubular rims, Weinmann Center
+  pull No. 144, tyres, Campagnolo 27.2mm seatpost, Huret Luxe as a front.
+
 ## 1972 Raleigh (US, inferred) — `1972_raleigh_spec.csv` (7 bikes, 133 specs, 35 linked)
 
 - Source: https://www.sheldonbrown.com/retroraleighs/catalogs/Raleigh-Catalog-1972.pdf

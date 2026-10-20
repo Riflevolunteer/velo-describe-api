@@ -151,7 +151,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1989|derosa', 'US'], // GITA Sporting Goods (Charlotte NC) US dealer catalogue
   // Inferred, not stated by the source (user accepted 2026-10-19); correct if the original says otherwise:
   ['1985|raleigh', 'US'], // Sheldon Brown Retro Raleighs scan, lbs weights, Team U.S.A. models
-  ['1972|raleigh', 'US'], // Sheldon Brown Retro Raleighs PDF (7 pp excerpt, no printer line); DL model numbers and lbs as the 1970 / 1973 US editions
+  ['1971|raleigh', 'US'], ['1972|raleigh', 'US'], // Sheldon Brown Retro Raleighs PDF (7 pp excerpt, no printer line); DL model numbers and lbs as the 1970 / 1973 US editions
   ['1974|motobecane', 'US'], ['1975|motobecane', 'US'], // lbs weights, inch frame sizes, "Extras No Charge"
   ['1973|zeus', 'ES'], // Spanish-language catalogue (Zeus-102)
   ['1983|bianchi', 'IT'], ['1984|bianchi', 'IT'], // translated from Italian per the transcription notes
