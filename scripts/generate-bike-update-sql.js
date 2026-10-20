@@ -147,7 +147,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1993|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19)
   // Peugeot 1971-74 mix Dutch spec pages and French general-catalogue pages in one CSV; the user chose FR
   // for all of them (2026-10-19) instead of splitting. 1970 stays NL (Dutch-market catalogue only).
-  ['1971|peugeot', 'FR'], ['1972|peugeot', 'FR'], ['1973|peugeot', 'FR'], ['1974|peugeot', 'FR'],
+  ['1971|peugeot', 'FR'], ['1972|peugeot', 'FR'], ['1973|peugeot', 'FR'], ['1974|peugeot', 'FR'], ['1975|peugeot', 'NL'], // 1975: Dutch-only "Peugeot Modellen '75" (Cycles Peugeot Nederland), no French pages
   ['1989|derosa', 'US'], // GITA Sporting Goods (Charlotte NC) US dealer catalogue
   // Inferred, not stated by the source (user accepted 2026-10-19); correct if the original says otherwise:
   ['1985|raleigh', 'US'], // Sheldon Brown Retro Raleighs scan, lbs weights, Team U.S.A. models
@@ -721,7 +721,7 @@ const COMPONENT_OVERRIDES = {
     // RD-1100 (1973-85, 28T / 14-30) fits by capacity and tier; no DB row is titled HR, so this is by abbreviation.
     'suntour hr': [{ from: 1985, to: 1985, id: 4702 }], // SunTour 2600 / RD-1100, Honor
     // Peugeot 1970-72 (Dutch catalogues): two velobase rows share the title.
-    'simplex criterium': [{ from: 1965, to: 1970, id: 4644 }, { from: 1971, to: 1974, id: 4645 }], // Simplex Criterium 1965-70 / 1971-74 (row dated 1971-73; the 1974 Dutch catalogue still lists it)
+    'simplex criterium': [{ from: 1965, to: 1970, id: 4644 }, { from: 1971, to: 1975, id: 4645 }], // Simplex Criterium 1965-70 / 1971-75 (row dated 1971-73; the 1974 and 1975 Dutch catalogues still list it)
     // 1974 Peugeot (Dutch catalogue): PX 10 LE / PX 60, captioned "Achterderailleur Simplex Super LJ".
     'simplex super lj': [{ from: 1971, to: 1978, id: 4650 }], // Simplex SLJ5000 (1971-78), the Super LJ rear; 4649 SX660 is undated
     // 1990 Bianchi US catalogue (retrobike archive 1676).
@@ -1060,7 +1060,7 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
-    'altenburger synchron': [{ from: 1970, to: 1974, id: 511 }], // 1970-74 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron; 511 and 512 are the two undated velobase logo variants of the same brake, 511 chosen as the exact title match (a judgement)
+    'altenburger synchron': [{ from: 1970, to: 1975, id: 511 }], // 1970-75 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron; 511 and 512 are the two undated velobase logo variants of the same brake, 511 chosen as the exact title match (a judgement)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'shimano deore xt cantilever with gumhoods': [{ from: 1983, to: 1986, id: 980 }], // 1986 Raleigh Portage; as "Shimano Deore XT, cantilever" (BR-MC70)
     'dia compe dc630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Sportif; as the 1985 "DC630N alloy S.P." pick
@@ -1347,6 +1347,11 @@ const COMPONENT_OVERRIDES = {
     'stronglight competition no 99 59 40t': 1906, // Stronglight 99 ("nieuwste model"; drilled vs plain not stated, so the base row)
     // 1973 Peugeot (Dutch catalogue).
     'stronglight 49 d 45 53t': 1895, // Stronglight 49D (Depose), as the 1975 Motobecane / 1979 Peugeot 49 D picks
+    // 1975 Peugeot (Dutch catalogue): the same Stronglight cranks as 1973-74.
+    'stronglight 49 d light alloy 45 52t': 1895, // PR 10, as the 1974 45/53T pick
+    'stronglight dural 49d 40 50t': 1895, // PA 60, as the 1974 50/40T pick
+    'stronglight competition 93 light alloy 45 52t': 1904, // PX 10 LE: Stronglight 93 (1967-80), as the 1973 PX 10 pick
+    'stronglight competition 99 40 50t': 1906, // PX 60: Stronglight 99 base row (1970-82), as the 1974 pick
     'stronglight 45 52t': null, // 1971 Peugeot PA 10 S: 45/52 tooth chainset, not the 1950 Stronglight 45 model
     // 1970 Peugeot (Dutch-market catalogue).
     'stronglight competition 45 52t': [{ from: 1963, to: 1972, id: 1902 }], // Stronglight 63 Super Competition (PX 10; the 1971 and 1972 Dutch catalogues repeat the 1970 wording)
@@ -2139,6 +2144,7 @@ const COMPONENT_OVERRIDES = {
     'sun tour wide ratio 14 18 23 30 34t': 2245, // SunTour 1100-1106 / PT-5000, Perfect (5-speed)
   },
   Tyres: {
+    '27 x 1 1 4': null, // bare size (1975 Peugeot UO 8), not the Continental Cyclocross 27 x 1 1/4 the substring matcher finds
     'clement no 3 silk tubular': [{ from: 1973, to: 1974, id: 8970 }], // 1973-74 Raleigh Professional Track: Clement Seta, Tipo 3 (track silk, 175 g; Clement 1977 leaflet)
     'clement gentleman wired on 27"': [{ from: 1981, to: 1981, id: 8973 }], // 1981 Bianchi Sprint/81: Clement Gentleman (new in the 1977 leaflet)
     'clement gentleman wired on 28"': [{ from: 1981, to: 1981, id: 8973 }], // 1981 Bianchi Super Turismo

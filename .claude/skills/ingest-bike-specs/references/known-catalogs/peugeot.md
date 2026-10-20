@@ -212,3 +212,47 @@
   Wolber Transalpino tyre, Simplex Competition seatpost.
 - 1973 reloaded 2026-10-19 to back-fill the PX 10 front Super Competition
   link (1973 now 60 specs, 15 linked; no other changes).
+
+## 1975 Peugeot — `1975_peugeot_spec.csv` (9 bikes, 132 specs, 42 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1975.html
+  (20 PeugeotShow scans at 1600 px, "catalogues cycles peugeot 1975 (1)-(20).jpg",
+  loaded 2026-10-20; the post also shows 12 sidebar images named 1.jpg-13.jpg that are
+  not catalogue). Dutch "Peugeot Modellen '75", Cycles Peugeot Nederland N.V.,
+  Veenendaal; unlike 1973 / 1974 there are no French pages, so the whole range has full
+  specs, kg weights and frame heights; no prices printed. The blog order is shuffled
+  (printed pp. 1-15 plus covers; p. 12 is a photo page). Country NL
+  (`CATALOGUE_COUNTRY` `1975|peugeot`); the 1971-74 editions are FR by the user's call.
+- Loaded (adult range, as 1971-74): Racing P 10 (Bocama lugs, 46/50T, f. 16-21T),
+  PR 10 (Reynolds 531, Stronglight 49 D, 11 kg), PX 10 LE (9.9 kg, Super LJ, Competition 93
+  crank, Maillard 700, Wolber Transalpino, Mavic Monthlery, Mafac Competition, Lyotard 45 CA);
+  Cyclotouring PA 60 (Super Competition / Criterium, Dural 49D 40/50T, 13 kg) and PX 60
+  (Reynolds 531, Super LJ, Competition 99, Philippe Dural, 10.7 kg); Sports PX 8, P 8 E,
+  PL 8 (5-speed, rear derailleur only) and UO 8 (new: 15-speed trim bike, 36/45/52T x
+  14-28T, 13.8 kg, 27 x 1 1/4). PA 60 tyre size read as 1 1/8 as in 1974 (the scan is
+  ambiguous). The catalogue's "spieloos" after the chainring sizes (Dutch for play-free /
+  pinless) was not carried over.
+- Not loaded: NSL 22 / PNSL 22 (Nouveau Style family and folding), G 50 CD / G 50 C /
+  G 46 C / G 42 / J 8 (children's and youth), PE 41 / PE 40 / PE 22 and PE 25 V / PE 25 /
+  PE 46 / PE 45 (town models, the PE series is excluded as in 1971 / 1972), UE 18 (ladies'
+  10-speed sports with fenders, chain guard and sports bars: borderline, held out pending
+  the user's call; p. 11 of the scans, Simplex Prestige, Normandy high-flange hubs,
+  Mafac Racer, 40/50T x 14-28T, 16.0 kg, Schrader valves).
+- Overrides: Rear Derailleurs 'simplex criterium' 4645 range 1971-74 -> 1971-75;
+  Brakes 'altenburger synchron' 511 range 1970-74 -> 1970-75 (back-fills 2 specs on this
+  catalogue); Cranksets 'stronglight 49 d light alloy 45 52t' and 'stronglight dural 49d
+  40 50t' -> 1895 (as 1974), 'stronglight competition 93 light alloy 45 52t' -> 1904 (as the
+  1973 PX 10), 'stronglight competition 99 40 50t' -> 1906 (as the 1974 PX 60); Tyres
+  '27 x 1 1 4' -> null (the bare size otherwise matched 6786 Continental Cyclocross 27 x 1
+  1/4 by substring, the only place it happened). The Lyotard 45 CA pedals are written as in
+  1974 so the existing 3811 override applies (reflectors dropped from the text).
+- Rear 'simplex prestige' -> 4583 (row dated 1971-74) and front -> 2583 (1964-75) are the
+  same picks as 1974 and one year outside 4583's range.
+- Left unlinked: Mafac Competition brakes (825-827 variants), bare Philippe bars, Simplex
+  Competition seatpost, Maillard 700 hubs (3393 / 3394 flange not stated), Wolber
+  Transalpino (1974 only in the DB's Wolber rows), generic frame / saddle / fender cells.
+- Regression: every other catalogue's link count is unchanged. The comparison also showed
+  two pre-existing drifts that the committed generator reproduces: 1974 Falcon generates
+  27 linked against 25 in the DB, and 1990 Bianchi 189 against 191 (one-off SQL fixes the
+  generator does not know about); 1984 / 1989 De Rosa are labelled "Derosa" in the file name
+  but "De Rosa" in the DB, so a label-name comparison must handle that.
