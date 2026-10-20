@@ -127,7 +127,7 @@ function bikeSourceCond(sourceRefSelect) {
 // rest stay NULL rather than guessed. A filename token overrides this.
 const CATALOGUE_COUNTRY = new Map([
   ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
-  ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
+  ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1980|raleigh', 'US'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
   ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], // TI Raleigh UK brochures
   ['1973|falcon', 'GB'], ['1974|falcon', 'GB'],
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
@@ -937,8 +937,11 @@ const COMPONENT_OVERRIDES = {
     'maillard alloy': null, // Pulsar: generic; the matcher hit a Roval by Maillard rear hub
     // 1978 Raleigh (US, ebykr scan).
     'campagnolo nuovo record small flange qr': 3259, // Professional Mk V: 1034 Record (Low Flange)
+    'campagnolo nuovo record small flange qr 36 hole': 3259, // 1980 Professional Mk V, as 1979
     'campagnolo gran sport small flange qr': 3256, // Competition GS: 1006 Gran Sport (DB's only Gran Sport hub; see 1985 Bianchi note)
+    'campagnolo gran sport small flange qr 36 hole': 3256, // 1980 Competition GS, as 1979
     'atom small flange qr': 3183, // Super Course: Atom (low flange aluminum), as 1977
+    'atom small flange light alloy qr 36 hole': 3183, // 1980 Super Course, as 1979
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'campagnolo nuovo record 36h': 3259, // Centenario: 1034 Record (Low Flange), as the bare Nuovo Record entry
     'campagnolo record 32h': 3260, // Super Leggera: 1035 Record (high flange), as the bare 'campagnolo record' range
@@ -1122,6 +1125,7 @@ const COMPONENT_OVERRIDES = {
     // alloy centerpull" name no model, left unlinked.
     'campagnolo record side pull': [{ to: 1978, id: 573 }], // Professional Mk V: Campagnolo 2040, Record (pre-CPSC)
     'campagnolo record short reach': [{ from: 1979, to: 1979, id: 575 }], // 1979 Raleigh Professional Mk V: Campagnolo 2040/1 Record short reach, post-CPSC row (1978-87)
+    'campagnolo record short reach 47mm': [{ from: 1980, to: 1980, id: 575 }], // 1980 Raleigh Professional Mk V: 2040/1 short reach, as 1979
     'weinmann carrera sidepull with wheel guides': 1167, // Competition GS: Weinmann AG Carrera (earlier, 1970-80)
     'raleigh weinmann 610 centerpull with lightened quick release levers': 1138, // Super Course: Weinmann AG Raleigh 610
     // 1993 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
@@ -1356,6 +1360,7 @@ const COMPONENT_OVERRIDES = {
     // 1978 Raleigh (US, ebykr scan).
     'campagnolo nuovo record cotterless 42 51t': [{ to: 1987, id: 1496 }], // Professional Mk V: 1049 Nuovo Record Strada v4
     'campagnolo nuovo record cotterless 42 52t 170mm': [{ to: 1979, id: 1496 }], // 1979 Raleigh Professional Mk V: 1049 Nuovo Record Strada v4, as 1978's 42/51T
+    'campagnolo nuovo record cotterless 42 51t 170mm': [{ to: 1987, id: 1496 }], // 1980 Raleigh Professional Mk V, as 1978's 42/51T
     'campagnolo gran sport cotterless 42 52t 170mm': [{ from: 1978, id: 1472 }], // Competition GS: 0304 (Nuovo) Gran Sport, as the 1979 Colnago Export (row dated from 1980)
     'shimano ffs 40 52t 165mm': 1777, // Record FFS/PPS: Shimano FFS (Front Freewheel System); FC-FF33 row starts 1980
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
@@ -1789,6 +1794,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    'chrome plated steel': null, // 1980 Reliant: generic steel cages, not the Spidel/Maillard 700 substring hit
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 alloy platform': [{ from: 1987, to: 1987, id: 3953 }], // Competition: PD-1050 105
     'lyotard 45 ca with toe clips and straps': 3811, // 1974 Peugeot PX 10 LE / PX 60: Lyotard 45CA (1930-80)
@@ -1970,6 +1976,7 @@ const COMPONENT_OVERRIDES = {
     'everest special cromo': 1364, // Everest Serie Special (silver); the Oro variant is gold, not chrome
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'sun tour ultra 6 narrow': 7820, // Record Ace / Clubman: SunTour UC-6000, Ultra-6 chain
+    'sun tour ultra 6 ½" x 3 32" narrow': 7820, // 1980 Superbe / Touring 14 / Super Course: Ultra-6 chain, as 1979
     'sun tour z silver black': 7821, // Gran Sport / Competition: SunTour TZ-6000, Z chain
     'sun tour z gold': 7821, // Rapide
     'shimano uniglide black silver': 7450, // Road Ace: Shimano QA-200 / CN-UG20, Uniglide-II (1977-89)
@@ -2050,6 +2057,9 @@ const COMPONENT_OVERRIDES = {
     // 1978 Raleigh (US, ebykr scan).
     'raleigh sun tour perfect 14 28t': 2245, // Super Course: SunTour 1100-1106 / PT-5000, Perfect (5-speed)
     'raleigh sun tour perfect 14 34t': 2245, // Super Grand Prix / Grand Prix / Record Ace, as the 1983 Royal
+    'raleigh sun tour perfect 5 speed 14 28t': 2245, // 1980 Super Grand Prix: Perfect (5-speed), as 1979
+    'raleigh sun tour perfect 5 speed 14 34t': 2245, // 1980 Gran Sport / Grand Prix / Super Record, as 1979
+    'sun tour perfect 5 speed 14 32t': 2245, // 1980 Reliant
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'regina cx 13 21t 6 speed': 2168, // Centenario: Regina CX (6 speed), as the 1987 Bianchi 'regina cx 13 23t'
     'regina cx 13 23t 6 speed': 2168, // Super Leggera
@@ -2151,6 +2161,7 @@ const COMPONENT_OVERRIDES = {
     'weinmann a124 eyeletted black': 7776, // Record Sprint / Quasar: Weinmann A124 Super X
     // 1978 Raleigh (US, ebykr scan).
     'weinmann 700c alloy concave a124 narrow section': 7776, // Competition GS / Super Course: A124 Super X, as 1977
+    'weinmann 700c light alloy concave a124 narrow section': 7776, // 1980 Competition GS / Super Course, as 1979
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'martano strada (tubular) araya 20a smoked (700c)': null, // Speciale-II either/or build spec; don't pick one
     // 1986 Colnago Raid / Gentleman Sport / Lady Sport: the only Elite Aero row.

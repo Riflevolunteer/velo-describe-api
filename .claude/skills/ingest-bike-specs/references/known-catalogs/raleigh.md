@@ -311,6 +311,33 @@
   pedals and tyres.
 - Regression: all 39 other CSVs regenerate with unchanged counts.
 
+## 1980 Raleigh (US) — `1980_raleigh_spec.csv` (10 bikes, 200 specs, 33 linked)
+
+- Source: https://theheadbadge.com/catalogs/1980-raleigh-catalog-usa/ (28
+  full-size page scans, no text layer; contributed by Neal Lerner, cleaned by
+  Stephen P. Clark). "Technical Specifications on 10-speeds" table on p. 24,
+  sizes / colours chart p. 26. Images are `Raleigh-1980-US-<n>.jpg` under
+  `wp-content/uploads` with the `-450xNNN` suffix dropped (3400px originals).
+  US edition (`data_source.country` US). Table transcribed by hand from
+  quadrant crops of p. 24.
+- Models: Professional Mk V, Superbe, Competition GS, Touring 14, Super
+  Course, Super Grand Prix, Gran Sport, Grand Prix, Super Record, Reliant
+  (drop-bar, 5-speed, so road). Not added: Rapide (blurb p. 10 only, no table
+  column), Rapide 24 (24" wheels, children's), Tourist / Sports / Sprite /
+  Roadster / Rambler (city), Juvenile and BMX ranges.
+- Fixes: printed "Grant Sport" derailleur -> Campagnolo Gran Sport; the
+  Derailleur row split into Front / Rear / Shifters; wording as the 1979 CSV.
+- Overrides (all as 1979, wording or range extended): Record short reach 47mm
+  -> 575, Nuovo Record 42/51T 170mm crank -> 1496, Weinmann "light alloy"
+  A124 -> 7776, hubs Nuovo Record 3259 / Gran Sport 3256 / Atom 3183 (with
+  "36 hole"), Ultra-6 chain 7820, Perfect 5 speed freewheel 2245 (14-28T,
+  14-34T, 14-32T). Reliant "Chrome plated steel" pedals set to null (the
+  substring hit was Spidel/Maillard 700 cages).
+- Left unlinked, as 1977-79: Sun Tour Superbe / VX / 7GT parts, Compe V
+  front, Normandy and Sun Tour hubs, Raleigh / SR cranks, Weinmann 500,
+  centerpulls, Maillard, Mavic, Araya, stems, bars, tyres, vinyl saddles.
+- Regression: all 42 other CSVs regenerate with unchanged link counts.
+
 ## 1986 Raleigh (US) — `1986_raleigh_spec.csv` (21 bikes, 424 specs, 52 linked)
 
 - Source: https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1986.html
