@@ -552,6 +552,8 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'sun tour vx': [{ from: 1979, to: 1980, id: 2614 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour FD-1600, VX (1978-84)
+    'shimano z202': [{ from: 1986, to: 1986, id: 2542 }], // 1986 Raleigh Marathon / Pursuit: FD-Z202-HS, Z-Series (1984-88)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
     'huret new success': [{ from: 1987, to: 1990, id: 2439 }], // Sachs Huret ARIS New Success (the only New Success front; undated)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
@@ -564,7 +566,7 @@ const COMPONENT_OVERRIDES = {
     'suntour cyclone': null,
     // 1977-78 Raleigh (Super Course, Grand Prix, Record Ace, Super Grand Prix): the only Compe V row; the
     // "Raleigh/" prefix and the bare "Compe V alloy front" keep the matcher from linking it.
-    'raleigh sun tour compe v': [{ from: 1977, to: 1979, id: 2603 }], // SunTour 3701 / FD-1100, Compe-V (5-hole); 1979 Raleigh Grand Prix / Super Grand Prix / Record Ace carry the same text as 1978 (2602 is 1974-79 but 2603 is the pick already made for 1978)
+    'raleigh sun tour compe v': [{ from: 1977, to: 1980, id: 2603 }], // SunTour 3701 / FD-1100, Compe-V (5-hole); 1979 Raleigh Grand Prix / Super Grand Prix / Record Ace carry the same text as 1978, and the 1980 Gran Sport / Grand Prix / Super Grand Prix / Super Record the same again (row spans 1970-84) (2602 is 1974-79 but 2603 is the pick already made for 1978)
     'compe v alloy front': [{ from: 1977, to: 1978, id: 2603 }],
     // 1970 Peugeot (Dutch-market catalogue).
     'simplex criterium': [{ from: 1964, to: 1975, id: 2583 }], // Simplex Prestige Criterium AV 223 (no other Criterium front before the 1977 LJ A200)
@@ -707,6 +709,8 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    'sun tour vx gt': [{ from: 1979, to: 1980, id: 4707 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour RD-2400, VX (GT) (1977-84)
+    'suntour hero': [{ from: 1986, to: 1986, id: 4746 }], // 1986 Raleigh Record / Sportif / Capri / Grand Mesa: SunTour Hero (Version 1); a judgement, the row is dated 1987, one year later (Version 2 is undated)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
     'huret new success': [{ from: 1987, to: 1987, id: 4412 }], // Sachs Huret ARIS New Success 1st Gen. (the only row dated 1987; 4402 is 1985, 4403 the 1980 touring)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
@@ -1240,6 +1244,7 @@ const COMPONENT_OVERRIDES = {
     'dia compe 500qs cold forged alloy sp': 682, // Dia-Compe N500 (quick release)
     'dia compe qs 500n': 682, // Dia-Compe N500 (quick release)
     'dia compe 960 alloy cantilever': 690, // Dia-Compe Gran Compe GC960
+    'dia compe royal gran comp 400': [{ from: 1986, to: 1986, id: 700 }], // 1986 Raleigh Prestige: Dia-Compe RGC400, Royal Gran Compe
     'dia compe dc630n alloy sp': 8083, // Dia-Compe DC630N, N-brakes (1986 catalogue)
     'dia compe qs500n balance response system': 682, // 1987 Bianchi: Dia-Compe QS500N (quick release)
     'shimano deore xt cantilever': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)
@@ -1259,6 +1264,8 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
+    'tange cma60': [{ from: 1983, to: 1987, id: 3144 }], // 1983-87 Raleigh: Tange MA-60 (undated); a judgement by the user 2026-10-20, CMA60 taken as the MA-60 headset
+    'tange cma 60': [{ from: 1983, to: 1987, id: 3144 }],
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'tange mtb 225 fully sealed': 3154, // 1987 Raleigh Maverick 18 Pro; as "Tange MTB 225" on the Randonneur 18
     'shimano 600 alloy': [{ from: 1983, to: 1987, id: 3090 }], // 1986 Raleigh Prestige / Competition; as the bare 'shimano 600' headset range (HP-6207 600EX)
@@ -1670,6 +1677,7 @@ const COMPONENT_OVERRIDES = {
     'gb forged alloy': 6533, // GB Forged
   },
   Shifters: {
+    'shimano deore xt': [{ from: 1986, to: 1986, id: 6158 }], // 1986 Raleigh Crested Butte / Portage: SL-M700, Deore XT (1983-86)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
     'huret new success alloy front and rear with ratchet levers': [{ from: 1987, to: 1990, id: 6110 }], // ARIS New Success (type 1) 1987-90; 6111 is a duplicate title
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
@@ -1754,6 +1762,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    'dia compe 165': [{ from: 1986, to: 1986, id: 8872 }], // 1986 Raleigh Technium 440 USA: Dia-Compe 163 / 165 / 169 / 195 extension lever sets
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano ultegra aero': [{ from: 1988, to: 1990, id: 416 }], // BL-6401, 600 Ultegra (aero)
     'shimano 105 aero': [{ from: 1990, to: 1993, id: 411 }], // BL-1055, 105SC
@@ -1801,6 +1810,8 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    'sr sp 250': [{ from: 1986, to: 1986, id: 3930 }], // 1986 Raleigh Grand Prix / Supercourse / Technium 480: Sakae/Ringyo SP-250 (undated)
+    'sr sp 154 alloy quill': [{ from: 1986, to: 1986, id: 3927 }], // 1986 Raleigh Alyeska / Kodiak: Sakae/Ringyo SP-154 (row dated 1980)
     'chrome plated steel': null, // 1980 Reliant: generic steel cages, not the Spidel/Maillard 700 substring hit
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 alloy platform': [{ from: 1987, to: 1987, id: 3953 }], // Competition: PD-1050 105
@@ -2046,6 +2057,7 @@ const COMPONENT_OVERRIDES = {
     // 1982 Raleigh Clubman 12 / Competition 12 / Rapide 12 / Record Ace 12 list "Sun Tour Ultra 6" alone. Two
     // Ultra-6 rows are in range (NW-6500 1979-85, US-6500 1978-84); NW-6500 chosen as the common New Winner
     // Ultra-6 of the period. Judgement, not proven by the spec text.
+    'sun tour ultra 6 14 28t': [{ from: 1980, to: 1980, id: 7812 }], // 1980 Raleigh Super Course: US-6500, Perfect Ultra-6 (14T start rules out NW-6500; 28T top is beyond the row's 14-26T, nearest fit, as the 1984 Record Ace)
     'sun tour ultra 6': [{ from: 1979, to: 1985, id: 2240 }], // SunTour NW-6500, New Winner Ultra 6    // 1970 Peugeot (Dutch-market catalogue).
     'cyclo competition 5 speed 14 21t': 2088, // Cyclo Competition 64 (5 speed)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
@@ -2150,6 +2162,9 @@ const COMPONENT_OVERRIDES = {
     'ritchey megabite hardrive': 8383, // Ibex / Osprey: Ritchey MegaBite HardDrive
   },
   Rims: {
+    'araya sp30 alloy': [{ from: 1986, to: 1986, id: 8424 }], // 1986 Raleigh Pursuit / Technium 440 / 460: Araya SP-30 (1985-92)
+    'araya sp30 27 x 1 1 4 alloy': [{ from: 1986, to: 1986, id: 8424 }], // 1986 Raleigh Alyeska
+    'weinmann type 293': [{ from: 1972, to: 1972, id: 7938 }], // 1972 Raleigh Professional Mk IV / Track: Weinmann 293 (1970-81)
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
     'mavic or10 light': 5103, // Mavic OR 10
     'mavic or7 extra light': 5104, // Mavic OR 7
