@@ -552,6 +552,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'simplex slja 522': [{ from: 1977, to: 1984, id: 7283 }], // 1977 Peugeot (DE) PY 10/CP: SLJ A522 (the only row, dated 1978-84; a judgement, one year early)
     'sun tour vx': [{ from: 1979, to: 1980, id: 2614 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour FD-1600, VX (1978-84)
     'shimano z202': [{ from: 1986, to: 1986, id: 2542 }], // 1986 Raleigh Marathon / Pursuit: FD-Z202-HS, Z-Series (1984-88)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
@@ -709,6 +710,9 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    'simplex lj 4000 cp': [{ from: 1975, to: 1977, id: 4602 }], // 1977 Peugeot (DE) PY 10/CP: LJ4000 CP version 1 (1975-77)
+    'simplex lj 1000 t': [{ from: 1970, to: 1981, id: 4600 }], // 1977 Peugeot (DE) PX 10/LE, PXN 10/E: LJ1000 T (1970-81)
+    'simplex sx 810 t': [{ from: 1977, to: 1981, id: 4617 }], // 1977 Peugeot (DE) PA 10/LE: SX810 T (1977-81; the DB title has no space, so the matcher misses it)
     'sun tour vx gt': [{ from: 1979, to: 1980, id: 4707 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour RD-2400, VX (GT) (1977-84)
     'suntour hero': [{ from: 1986, to: 1986, id: 4746 }], // 1986 Raleigh Record / Sportif / Capri / Grand Mesa: SunTour Hero (Version 1); a judgement, the row is dated 1987, one year later (Version 2 is undated)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
@@ -1060,6 +1064,7 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'mafac racer with course levers': [{ from: 1970, to: 1980, id: 838 }], // 1977 Peugeot (DE): MAFAC Racer (1970-80), as the other bare Mafac Racer picks
     'mafac 2000 anodised': [{ from: 1976, to: 1976, id: 836 }], // 1976 PY 10: MAFAC 2000 later version (1970-79; 835 and 837 are 1970-only variants)
     'altenburger synchron': [{ from: 1970, to: 1976, id: 511 }], // 1970-76 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron; 511 and 512 are the two undated velobase logo variants of the same brake, 511 chosen as the exact title match (a judgement)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
@@ -1273,6 +1278,7 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
+    'stronglight d 6 titanium': [{ from: 1977, to: 1977, id: 3116 }], // 1977 Peugeot (DE) PY 10/CP: D6 Extra Leger (1977-80)
     'tange cma60': [{ from: 1983, to: 1987, id: 3144 }], // 1983-87 Raleigh: Tange MA-60 (undated); a judgement by the user 2026-10-20, CMA60 taken as the MA-60 headset
     'tange cma 60': [{ from: 1983, to: 1987, id: 3144 }],
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
@@ -1826,6 +1832,8 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    'lyotard 36 rcm with christophe toe clips and lapize toe straps': null, // 1977 Peugeot (DE): 36 RCM is not the 1950-70 "Lyotard 36" row the substring matcher finds; no RCM row
+    'lyotard 45 ca dural with christophe toe clips and lapize toe straps': 3811, // 1977 Peugeot (DE) PX 10/LE, PXN 10/E: Lyotard 45CA, as 1974
     'sr sp 250': [{ from: 1986, to: 1986, id: 3930 }], // 1986 Raleigh Grand Prix / Supercourse / Technium 480: Sakae/Ringyo SP-250 (undated)
     'sr sp 154 alloy quill': [{ from: 1986, to: 1986, id: 3927 }], // 1986 Raleigh Alyeska / Kodiak: Sakae/Ringyo SP-154 (row dated 1980)
     'chrome plated steel': null, // 1980 Reliant: generic steel cages, not the Spidel/Maillard 700 substring hit
@@ -2147,6 +2155,7 @@ const COMPONENT_OVERRIDES = {
     'sun tour wide ratio 14 18 23 30 34t': 2245, // SunTour 1100-1106 / PT-5000, Perfect (5-speed)
   },
   Tyres: {
+    'peugeot professionnel or clement criterium tubulars': null, // 1977 Peugeot (DE) PY 10/CP: either / or, left unlinked
     '27 x 1 1 4': null, // bare size (1975 Peugeot UO 8), not the Continental Cyclocross 27 x 1 1/4 the substring matcher finds
     'clement no 3 silk tubular': [{ from: 1973, to: 1974, id: 8970 }], // 1973-74 Raleigh Professional Track: Clement Seta, Tipo 3 (track silk, 175 g; Clement 1977 leaflet)
     'clement gentleman wired on 27"': [{ from: 1981, to: 1981, id: 8973 }], // 1981 Bianchi Sprint/81: Clement Gentleman (new in the 1977 leaflet)
@@ -2183,6 +2192,7 @@ const COMPONENT_OVERRIDES = {
     'ritchey megabite hardrive': 8383, // Ibex / Osprey: Ritchey MegaBite HardDrive
   },
   Rims: {
+    'mavic sport or pellet record light alloy': null, // 1977 Peugeot (DE): either / or, left unlinked
     'araya sp30 alloy': [{ from: 1986, to: 1986, id: 8424 }], // 1986 Raleigh Pursuit / Technium 440 / 460: Araya SP-30 (1985-92)
     'araya sp30 27 x 1 1 4 alloy': [{ from: 1986, to: 1986, id: 8424 }], // 1986 Raleigh Alyeska
     'weinmann type 293': [{ from: 1972, to: 1972, id: 7938 }], // 1972 Raleigh Professional Mk IV / Track: Weinmann 293 (1970-81)

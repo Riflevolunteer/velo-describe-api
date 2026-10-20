@@ -290,3 +290,50 @@
   (four colour variants), Philippe Dural bars, generic frame / saddle / fender cells.
 - Regression: all 46 other catalogues' link counts unchanged (Falcon 1974 and Bianchi 1990
   drift as noted under 1975).
+
+## 1977 Peugeot (DE) — `1977_peugeot_de_spec.csv` (11 bikes, 210 specs, 39 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1977.html (43
+  images, loaded 2026-10-20). The post holds three catalogues: (1) the German-market
+  "Peugeot Rennräder" (cover B. Thevenet, Tour winner '75 and '77, and Gregor Braun, 1976
+  Sportler des Jahres; 8 pages at 740 px) with full component specs for the racing and
+  training range, which is what was loaded; (2) the French home-market "Présence" brochure
+  (bikeboompeugeot.com, ~25 images: PRN 10 with Michelin Elan TS, tourisme / randonneur /
+  gentlemen / ladies / course one-line blurbs, PY 10 and PY 10 P with specs, PY 60 P, the
+  French back page) which was NOT loaded (blurbs only; the only specs duplicate the German
+  PY 10/CP); (3) the French "Tarif Bicyclettes" no. 327, 1 September 1977 (price list with
+  colour codes: P 10 853 F, PR 10 L 1,345 F, PX 10 L 2,119 F, PY 10 C 2,907 F, PY 60 P
+  3,714 F, ...), not loaded. Country DE through the filename token, label "1977 Peugeot
+  (DE) catalogue" (the 1977 French brochure, if ever loaded, takes plain `1977_peugeot_spec.csv`
+  with an `FR` entry in `CATALOGUE_COUNTRY`).
+- Loaded (racing and training, as the German names give them): PY 10/CP "Prestige Peugeot"
+  (12-speed, Reynolds 531 5/10, Simplex LJ 4000 CP / SLJA 522, Stronglight 105 Bis, D6
+  titanium headset, Maillard 700 6-speed, 9-9.5 kg), PX 10/LE and PXN 10/E (Reynolds 531
+  7/10, LJ 1000 T, Lyotard 45 CA, 10 kg), PS 10/E and PSN 10/E (Super Luxe, 3 x Reynolds, SX
+  410 T, 10.5 kg), PR 10/LE (Luxe), PA 10/LE (Peugeot Allege, SX 810 T, Mafac-S), PN 10/LE
+  (Mixed cranks, SX 100 T, PIVO stem), PRN 10/E and PRN 13/E (15-speed, 32/42/52T),
+  PR 60/L (Gentlemen Cyclotouring, Bluemels mudguards and rack). The N / E variants carry
+  the parent spec with 700C training rims (Rigida or Mavic) and Michelin Elan TS 700 x 25.
+  A new Stem column was used (the earlier Peugeot CSVs had none).
+- Not loaded: PR 65 (ladies' 10-speed, Reynolds double-tube frame, 38/48T, fenders and rack:
+  borderline, held out as UE 18 was; pp. 36 of the scans, 53 and 57 cm, 11.5 kg, silver,
+  bronze, matt black); the Radtouristik models mentioned on the PR 10/LE page (PX 8/E-D/SP,
+  P 60, P 60/L, PA 55, P 65, P 65/L) which are in a separate German brochure not on the post.
+- Overrides: Rear 'simplex lj 4000 cp' -> 4602 (1975-77), 'simplex lj 1000 t' -> 4600,
+  'simplex sx 810 t' -> 4617 (DB title "SX810 T" has no space so the matcher misses it);
+  Front 'simplex slja 522' -> 7283 (SLJ A522, dated 1978-84, one year early, the only row);
+  Headsets 'stronglight d 6 titanium' -> 3116; Brakes 'mafac racer with course levers' -> 838;
+  Pedals 'lyotard 45 ca dural with christophe toe clips and lapize toe straps' -> 3811;
+  null: Pedals 'lyotard 36 rcm ...' (the matcher found the 1950-70 "Lyotard 36" row, a
+  different model and era), Rims 'mavic sport or pellet record light alloy', Tyres
+  'peugeot professionnel or clement criterium tubulars' (either / or).
+- CSV edits: the PX 10/LE and PXN 10/E either/or freewheel ("Maillard Normandy ... or Cyclo
+  Competition ...") was split so only the Maillard text is the Freewheel value and the Cyclo
+  Competition alternative sits in Extras (otherwise it linked to 2086 Cyclo Competition).
+- Left unlinked: Mafac Competition (825-827 variants), Stronglight 49 / TS / 105 cranks (no
+  matching rows), Philippe Professionnel bars and Philippe-Peugeot stem, Maillard 700 and
+  Normandy hubs and freewheels, Laprade 505 / San Marco / Simplex SLJ 4164 seatposts,
+  Gourgaud Lightrace headset, Mavic Monthlery or Pellet Super Champion rims, Peugeot
+  Trophy / Route tyres.
+- Regression: all 47 other catalogues' link counts unchanged (Falcon 1974 and Bianchi 1990
+  drift as noted under 1975).
