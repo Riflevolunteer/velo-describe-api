@@ -1037,6 +1037,13 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
+    'shimano deore xt cantilever with gumhoods': [{ from: 1983, to: 1986, id: 980 }], // 1986 Raleigh Portage; as "Shimano Deore XT, cantilever" (BR-MC70)
+    'dia compe dc630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Sportif; as the 1985 "DC630N alloy S.P." pick
+    'dia compe dc 630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Pursuit (levers DC 630/165 and /135 are separate)
+    'dia compe 630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Record
+    'mafac racer professional': [{ from: 1970, to: 1980, id: 838 }], // 1973 Peugeot PX 10; as bare "Mafac Racer" (lettered MAFAC RACER, 1970-80, the only period Racer row)
+    'mafac racer forged': [{ from: 1970, to: 1980, id: 838 }], // 1974 Peugeot PX 60
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano 600ex qr; recessed fitting calipers and hooded alloy levers': [{ from: 1987, to: 1987, id: 972 }], // Road Ace: BR-6208 600EX (1986-87)
     'calipers : shimano new 105 type 57 long bolt': [{ from: 1987, to: 1987, id: 954 }], // Triathlon: BR-1050-57 105 (long, 57 type)
@@ -1238,6 +1245,9 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
+    // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
+    'tange mtb 225 fully sealed': 3154, // 1987 Raleigh Maverick 18 Pro; as "Tange MTB 225" on the Randonneur 18
+    'shimano 600 alloy': [{ from: 1983, to: 1987, id: 3090 }], // 1986 Raleigh Prestige / Competition; as the bare 'shimano 600' headset range (HP-6207 600EX)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105': [{ from: 1987, to: 1987, id: 3083 }], // Competition / Triathlon headset: HP-1050 105
     'shimano 600ex light alloy sealed mechanism': [{ from: 1987, to: 1987, id: 3090 }], // Road Ace: HP-6207 600EX (1983-87)
@@ -1638,6 +1648,10 @@ const COMPONENT_OVERRIDES = {
     'gb forged alloy': 6533, // GB Forged
   },
   Shifters: {
+    // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
+    'shimano z401': [{ from: 1984, to: 1986, id: 6194 }], // 1986 Raleigh Pursuit; as "Shimano Z401 down tube" (SL-Z401)
+    'shimano z401 stem mount': [{ from: 1984, to: 1986, id: 6194 }], // 1986 Raleigh Olympian (stem-mount variant of the same SL-Z401)
+    'shimano z408 dt': [{ from: 1980, to: 1986, id: 6195 }], // 1986 Raleigh Alyeska; as "Shimano Z408 down tube" (SL-Z408)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis index gear change': [{ from: 1987, to: 1987, id: 6130 }], // Competition / Triathlon: SL-1050 105 SIS (6sp)
     'shimano 600 ex with sis index system levers': [{ from: 1987, to: 1987, id: 6149 }], // Road Ace: SL-6208 600EX SIS; the matcher took the 1970-80 Shimano 600
@@ -1906,6 +1920,10 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
+    'suntour z': [{ from: 1982, to: 1989, id: 7821 }], // 1987 Raleigh Maverick 18 Pro; as "Suntour Z Silver/Black" and "Gold" (TZ-6000)
+    'sedisport black': [{ from: 1980, id: 1402 }], // 1987 Raleigh tourers; colour variant of 'sedisport' (1402 from 1980)
+    'sedisport gold': [{ from: 1980, id: 1402 }], // 1983 Raleigh Team Replica 12
     // Bare "Sedisport": two rows now exist (8765 Sedis Sedisport 1979, 1402 Sedisport Delta 1980), so the matcher sees an ambiguity. 1402 is the pick already in the DB for
     // the 1984 Raleigh and 1987 Bianchi (Delta replaced the plain Sedisport from 1980), so 1980+ stays on it; earlier years keep the matcher result.
     'sedisport': [{ from: 1980, id: 1402 }],

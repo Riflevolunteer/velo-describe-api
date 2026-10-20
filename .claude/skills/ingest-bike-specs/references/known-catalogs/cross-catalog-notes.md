@@ -382,3 +382,33 @@ Deliberate, left mixed: Gran Sport front 1973 Bianchi (row dated 1978-85),
 Positron rear 1978 Raleigh (row dated 1980), Campagnolo / Campagnolo Record
 seatposts 1993 Bianchi (row ends 1985), HG 13-23T 7-speed cassette on the 1990
 Bianchi Alfana (only the Virata is CS-HG90).
+
+## Near-match audit: same part with extra words, linked on one bike only — 2026-10-20
+
+The exact-text audit above (same `value_text`) missed values that differ by a
+qualifier, e.g. 1987 Raleigh Maverick 18 Pro headset "Tange MTB-225 fully
+sealed" (NULL) vs Randonneur 18 "Tange MTB 225" (-> 3154). The matcher only
+links when a whole component title fits inside the value, so trailing words
+("fully sealed", "DT", "alloy", a colour) block it. Search: per label, an
+unlinked value that contains a linked value (same label, one component id,
+linked year range covering the bike's year). 17 rows fixed with ranged
+overrides and guarded UPDATEs:
+- Headsets 'tange mtb 225 fully sealed' -> 3154; 'shimano 600 alloy' (1986
+  Prestige / Competition) -> 3090.
+- Brakes 1986 Portage 'shimano deore xt cantilever with gumhoods' -> 980;
+  1986 Sportif / Pursuit / Record DC630N wordings -> 8083 (the 1985 pick);
+  1973 / 1974 Peugeot 'mafac racer professional' / 'mafac racer forged' -> 838.
+- Shifters 1986 Pursuit 'shimano z401' and Olympian 'z401 stem mount' -> 6194;
+  Alyeska 'shimano z408 dt' -> 6195.
+- Chains 1987 Maverick 'suntour z' -> 7821; 'sedisport black' (1987 tourers)
+  and 'sedisport gold' (1983 Team Replica) -> 1402, as bare 'sedisport' 1980+.
+
+Left unlinked on purpose (judgment, say if you disagree): brand-only
+"Selle Royal ..." saddles (only the bare brand row exists); "Sedisport
+Narrow" (1983) and "Sedisport 270 black" (1990 Bianchi), which may be a
+different chain; Marathon "Shimano 401" (not stated as Z401); values that
+lack the brand or model of the linked sibling ("14-22", "Large flange quick
+release", "Wide Flange Alloy", "Course with toe clips and straps", "27 x
+1-1/4 alloy 36 hole", "Weinmann 700C Alloy", "Forged dural, anodised, hidden
+expander"); "3ttt Competizione" vs "...Aero"; plain "Engraved Italienne
+Alloy Bend" (Raleigh's own, not the SR Custom bar); 600 AX shifters vs 600EX.
