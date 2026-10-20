@@ -358,3 +358,27 @@ crank (4 rows), 1984 De Rosa shifters (1 row). The 'campagnolo c record
 180' (1986 Colnago) and 'campagnolo record corsa' (1986 Cinelli) keys stay
 flat on the first-generation rows: both catalogues are 1986.
 
+
+## Same value linked on some bikes, NULL on others — 2026-10-20
+
+Query: `GROUP BY label, value_text HAVING linked > 0 AND unlinked > 0` over
+`bike_spec`. Eight mixed values; three were gaps, five are deliberate.
+
+Fixed (7 rows, guarded NULL-only UPDATEs; overrides extended so a regenerate
+agrees with the DB):
+- Stem 'new 3ttt record alloy' (1976 Raleigh Professional Mk IV) -> 6416:
+  range 1975 -> 1975-76, the 1976 catalogue repeats the 1975 text.
+- Front Derailleur 'raleigh sun tour compe v' (1979 Raleigh Grand Prix, Super
+  Grand Prix, Record Ace) -> 2603: range 1977-78 -> 1977-79, as 1978.
+- Chain 'sedisport' (1987 Raleigh Sirocco 12, Ventura 12, Record Ace 12) ->
+  1402: new override from 1980. Two rows now exist (8765 Sedis Sedisport,
+  1979; 1402 Sedisport Delta, 1980), so the matcher calls the bare value
+  ambiguous and nulls it, while the 1984 Raleigh and 1987 Bianchi links to
+  1402 pre-date 8765. 1402 kept for 1980+ on the grounds that Delta replaced
+  the plain Sedisport; earlier years keep the matcher result. "Sedisport
+  Black" (1987 Raleigh tourers) is a different string and stays unlinked.
+
+Deliberate, left mixed: Gran Sport front 1973 Bianchi (row dated 1978-85),
+Positron rear 1978 Raleigh (row dated 1980), Campagnolo / Campagnolo Record
+seatposts 1993 Bianchi (row ends 1985), HG 13-23T 7-speed cassette on the 1990
+Bianchi Alfana (only the Virata is CS-HG90).

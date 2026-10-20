@@ -559,7 +559,7 @@ const COMPONENT_OVERRIDES = {
     'suntour cyclone': null,
     // 1977-78 Raleigh (Super Course, Grand Prix, Record Ace, Super Grand Prix): the only Compe V row; the
     // "Raleigh/" prefix and the bare "Compe V alloy front" keep the matcher from linking it.
-    'raleigh sun tour compe v': [{ from: 1977, to: 1978, id: 2603 }], // SunTour 3701 / FD-1100, Compe-V (5-hole)
+    'raleigh sun tour compe v': [{ from: 1977, to: 1979, id: 2603 }], // SunTour 3701 / FD-1100, Compe-V (5-hole); 1979 Raleigh Grand Prix / Super Grand Prix / Record Ace carry the same text as 1978 (2602 is 1974-79 but 2603 is the pick already made for 1978)
     'compe v alloy front': [{ from: 1977, to: 1978, id: 2603 }],
     // 1970 Peugeot (Dutch-market catalogue).
     'simplex criterium': [{ from: 1964, to: 1975, id: 2583 }], // Simplex Prestige Criterium AV 223 (no other Criterium front before the 1977 LJ A200)
@@ -1623,7 +1623,7 @@ const COMPONENT_OVERRIDES = {
     '3ttt record': [{ to: 1974, id: 6417 }],
     '3ttt record lightweight alloy': [{ to: 1974, id: 6417 }],
     'new 3ttt record': [{ bike: 'Professional Track DL 175', id: 6420 }],
-    'new 3ttt record alloy': [{ from: 1975, to: 1975, id: 6416 }], // 3ttt Mod. 1 Record Strada (2nd version)
+    'new 3ttt record alloy': [{ from: 1975, to: 1976, id: 6416 }], // 3ttt Mod. 1 Record Strada (2nd version); the 1976 Professional Mk IV repeats the 1975 text
     'itm 400': 6564, // ITM 400 Racing
     'sr custom': 6659, // Sakae/Ringyo (SR) CUSTOM
     // 1985 Raleigh (Sheldon Brown scan).
@@ -1906,6 +1906,9 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // Bare "Sedisport": two rows now exist (8765 Sedis Sedisport 1979, 1402 Sedisport Delta 1980), so the matcher sees an ambiguity. 1402 is the pick already in the DB for
+    // the 1984 Raleigh and 1987 Bianchi (Delta replaced the plain Sedisport from 1980), so 1980+ stays on it; earlier years keep the matcher result.
+    'sedisport': [{ from: 1980, id: 1402 }],
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano cn 6400 silver': [{ from: 1988, to: 1993, id: 1406 }], // CN-6400
     'shimano cn hg90 silver': [{ from: 1990, to: 1993, id: 7566 }], // CN-HG90
