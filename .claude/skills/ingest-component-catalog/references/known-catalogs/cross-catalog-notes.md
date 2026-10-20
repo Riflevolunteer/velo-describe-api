@@ -98,3 +98,36 @@ Left as weaker suspects: SunTour XCD 6000 bare vs coded rows (7 categories),
 164-166 sealed BBs, 1220 / 1223 CS-AP20-S8 XC Comp vs XC Pro, Shimano 1412 /
 1413 Dura-Ace 7400 chain, SunTour 2619 a-4050 vs 2633 Edge 4050 FD,
 Weinmann 1129 / 1130 570.
+
+## Bikecology catalogue — Summer 1981 (2velo.com, multi-brand US retailer)
+
+- `data_source` label "Bikecology catalogue (Summer 1981)", country US. Source:
+  https://2velo.com/bikecology-bicycle-catalogs/ (56 pages, `bikeNN.jpg` via
+  i0.wp.com `?w=1400`, ~1220 x 1600, legible). Bikecology Mail Order, Los
+  Angeles; warehouse sale 12 Sept 1981. A retailer, so only its own catalogue
+  numbers (no manufacturer part numbers) and retailer-view descriptions. Read
+  2026-10-20: pp. 5 (Dura-Ace EX), 8, 10, 12-19, 21-29, 33, 34, 45; the rest
+  (bikes, frames, clothing, tools, bags, tubes, spokes, lights) is out of scope.
+- Almost everything it lists was already in the DB with years covering 1981
+  (Campagnolo Record / Super Record headsets, cranks, hubs and derailleurs, SR
+  Four-Sir / Custom / SAS / New Royal / Laprade, Cinelli 1A / 1R / 64, Tange
+  Levin 3152, OMAS, Chris King, SunTour Cyclone / VX, Shimano Dura-Ace EX, Modolo,
+  Dia-Compe G, KKT Pro Ace, Clement tubulars, Sedisport). Second-half rows
+  (derailleurs, brakes, pedals, hubs, rims, tyres, chains) were only
+  spot-checked for presence, not diffed row by row.
+- Changed (year_to -> 1981, source_ref -> this source): 5297 Brooks Professional
+  Select (1979); 5656 and 5657 Ideale 90 Speciale Competition (to 1980); 1963
+  Sugino Super Mighty Competition (to 1980; one bike spec links it); 1948 and
+  1949 Sugino Mighty Tour double / triple (to 1980); 1856 Spécialités TA
+  Cyclotouriste (to 1975). All guarded `year_to < 1981`.
+- Not applied: candidate new rows (Selle San Marco Concor Maxi, Ideale 92
+  Touriste Man / Lady, Sugino Super Mighty Custom) were not verified missing; the
+  DB has Ideale "92 Diagonale" rows (1977) that may be the same saddle. The
+  Brooks "Professional" here (532 g, chrome rails) is probably 5303, whose DB
+  years (2000) contradict the 1970s bike links; not changed from this source.
+- No ITM, Selle Royal, ISCA, Daido, Kusuki or mid-80s SR in this catalogue, so
+  it closes none of the bike-link gaps that prompted the search.
+- The other 2velo pages: Bike Warehouse (40 images at 400 x 400, unreadable),
+  Cyclo-Pedia 11th edition (c. 1974, 72 pp: Huret, Simplex, Campagnolo, TA,
+  Stronglight, Vittoria, Mafac, Weinmann, Ideale, 3ttt; brands already covered),
+  Fiamme / Galli / Bocama (single-brand, not read).
