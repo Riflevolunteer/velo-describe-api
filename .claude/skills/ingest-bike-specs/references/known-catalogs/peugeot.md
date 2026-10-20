@@ -375,3 +375,9 @@
   Competition hubs, generic cells.
 - Regression: all 48 other catalogues' link counts unchanged (Falcon 1974 and Bianchi 1990
   drift as noted under 1975).
+
+### Peugeot 1974-78 unlinked-spec pass (2026-10-21)
+
+Override-only pass, back-fill of NULL `component_id`; no new rows. Linked: Mafac Competition -> 825 (range 1971-80), Simplex LJA302 -> 2567, Philippe Professionnel -> 2895, Franco-Italia (incl. Atax-branded) -> 2897, Lyotard 136 Race -> 3801, Maillard 700 hubs -> 3393 / 3394, Normandy Sport -> 3390, Normandy -> 3391, Normandy Competition high flange -> 3384 (row has no years), Stronglight 105 -> 1880, 49 five-hole -> 1894, 49 triple -> 1893, 49D 40/50T -> 1895, Mavic Module E -> 5087 (row dated 1975), Maillard Normandy 5-speed freewheels 1977-78 -> 7240 (row dated 1978; 1979-82 is 8125). Same strings in the 1974 and 1975 catalogues picked up the Mafac and Maillard 700 hub links too.
+Left unlinked on purpose or for lack of a DB row: Maillard 700 freewheels (nearest row 1980-82) and pedals (four variants), Mavic Monthlery, Pellet Record du Monde (only a 1970 Super Champion row), San Marco Gilux race, Gauthier Rilsan, Sedis 1977-78 chains (rows start 1979), Wolber Transalpino, Peugeot-branded tubulars, Simplex Super Competition front and 1978 Criterium rear, Stronglight TS cranks, Atax stems (rows 1980-82).
+Peugeot linked after the pass: 1974 35/86, 1975 44/132, 1976 38/131, 1977 DE 71/210, 1978 99/218.

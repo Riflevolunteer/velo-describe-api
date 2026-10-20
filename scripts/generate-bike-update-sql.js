@@ -552,6 +552,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'simplex lja302': 2567, // 1978 Peugeot (NL): Simplex LJ A302
     'simplex slja 502': [{ from: 1978, to: 1981, id: 7281 }], // 1978 Peugeot (NL) PX 10 LE / PY 10 EC / PY 10 CP: SLJ A502 (1978-81)
     'simplex slja 522': [{ from: 1977, to: 1984, id: 7283 }], // 1977 Peugeot (DE) PY 10/CP: SLJ A522 (the only row, dated 1978-84; a judgement, one year early)
     'sun tour vx': [{ from: 1979, to: 1980, id: 2614 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour FD-1600, VX (1978-84)
@@ -913,6 +914,12 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    'maillard 700 special forged light alloy quick release': [{ from: 1970, to: 1980, id: 3393 }], // 1975 Peugeot P 10: Maillard 700 Professional, large flange
+    'high flange maillard 700 dural quick release (simplex or maillard)': [{ from: 1970, to: 1980, id: 3393 }],
+    'normal flange maillard 700 forged dural quick release (simplex or maillard)': [{ from: 1970, to: 1980, id: 3394 }], // 1977 Peugeot (DE): normal = low flange
+    'high flange maillard normandy sport dural quick release (simplex or maillard)': [{ from: 1970, to: 1980, id: 3390 }], // 1977 Peugeot (DE): Normandy Sport (high flange)
+    'high flange maillard normandy dural quick release (simplex or maillard)': [{ from: 1960, to: 1980, id: 3391 }],
+    'normandy competition high flange simplex quick release': [{ from: 1970, to: 1980, id: 3384 }], // 1978 Peugeot (NL): Luxe Competition (red label, high flange); the row has no years
     // 1978 Peugeot (NL): Maillard 700 Professional (1970-80), flange wording as the catalogue.
     'maillard 700 dural high flange simplex quick release': [{ from: 1970, to: 1980, id: 3393 }], // PX 10 LE: large (high) flange
     'maillard 700 dural low flange simplex quick release': [{ from: 1970, to: 1980, id: 3394 }], // PY 10 EC / PY 10 CP: low flange
@@ -1068,6 +1075,10 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'mafac competition': [{ from: 1971, to: 1980, id: 825 }], // 1975 Peugeot P 10: bare Competition, later version (the 1970 early row is 827)
+    'mafac competition peugeot special with course gt levers (silver anodised)': [{ from: 1971, to: 1980, id: 825 }],
+    'mafac competition with course gt levers (black hand guard)': [{ from: 1971, to: 1980, id: 825 }],
+    'mafac competition with course 2000 levers': [{ from: 1971, to: 1980, id: 825 }],
     'mafac racer with course levers': [{ from: 1970, to: 1980, id: 838 }], // 1977 Peugeot (DE): MAFAC Racer (1970-80), as the other bare Mafac Racer picks
     'mafac 2000 anodised': [{ from: 1976, to: 1976, id: 836 }], // 1976 PY 10: MAFAC 2000 later version (1970-79; 835 and 837 are 1970-only variants)
     'altenburger synchron': [{ from: 1970, to: 1976, id: 511 }], // 1970-76 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron; 511 and 512 are the two undated velobase logo variants of the same brake, 511 chosen as the exact title match (a judgement)
@@ -1344,6 +1355,11 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    'stronglight 105 mod 65 axle five arm cranks 170mm double chainring 42 52t': [{ from: 1970, to: 1982, id: 1880 }], // 1977/78 Peugeot: Stronglight 105 Bis
+    'stronglight 105 42 52t': [{ from: 1970, to: 1982, id: 1880 }],
+    'stronglight 49 five hole cranks 170mm double chainring 42 52t': [{ from: 1970, to: 1982, id: 1894 }], // 1977 Peugeot (DE): Stronglight 49A
+    'stronglight 49 five hole cranks 170mm triple chainring 32 42 52t': [{ from: 1970, to: 1982, id: 1893 }], // Stronglight 49 Tri
+    'stronglight 49d 40 50t': [{ from: 1970, to: 1982, id: 1895 }], // 1978 Peugeot (NL): as the 42/52T pick
     'stronglight 49d 42 52t': [{ from: 1970, to: 1982, id: 1895 }], // 1978 Peugeot (NL) PS 10 / TM 8: Stronglight 49D, as the 1973-77 picks (the DB has no 1970s 49D row)
     // 1970 / 1972 Raleigh (US) Professional Mk IV and International (1972): Campagnolo 44/52T with the Nuovo Record
     // derailleurs -> 1049 Nuovo Record Strada v4 (1967-87), as the 1973 International 'campagnolo cotterless alloy'.
@@ -1577,6 +1593,13 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    'philippe professionnel dural': 2895, // 1977 Peugeot (DE): Philippe Professionnel 351
+    'philippe professionnel dural silver anodised': 2895,
+    'philippe professionnel': 2895,
+    'philippe professionnel to choice': 2895,
+    'thickened franco italia': 2897, // 1978 Peugeot (NL): Franco-Italia 352 (Atax branding)
+    'atax thickened chromed franco italia 420mm light alloy': 2897,
+    'atax thickened franco italia racing bar 420mm light alloy countersunk bolt': 2897,
     'touring bend': null, // 1971 Peugeot children's bikes: generic bend, not the GB Touring Bend
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
     '3ttt record competition superlight covered with black leather': 2767, // 3ttt Record Competizione Superleggero
@@ -1839,6 +1862,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    'lyotard 136 race with toe clips and straps': 3801, // 1978 Peugeot (NL): Lyotard 136R
     'lyotard 36 rcm with christophe toe clips and lapize toe straps': null, // 1977 Peugeot (DE): 36 RCM is not the 1950-70 "Lyotard 36" row the substring matcher finds; no RCM row
     'lyotard 45 ca dural with christophe toe clips and lapize toe straps': 3811, // 1977 Peugeot (DE) PX 10/LE, PXN 10/E: Lyotard 45CA, as 1974
     'sr sp 250': [{ from: 1986, to: 1986, id: 3930 }], // 1986 Raleigh Grand Prix / Supercourse / Technium 480: Sakae/Ringyo SP-250 (undated)
@@ -2086,6 +2110,12 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
   },
   Freewheels: {
+    'maillard normandy 5 speed 14 17 19 21 24t': [{ from: 1977, to: 1978, id: 7240 }], // 1977/78 Peugeot: Normandy 5-speed (row dated 1978, sealed bearings); 1979-82 row is 8125
+    'maillard normandy 14 17 19 21 24t': [{ from: 1977, to: 1978, id: 7240 }],
+    'maillard normandy 14 16 19 22 26t': [{ from: 1977, to: 1978, id: 7240 }],
+    'maillard normandy 14 16 18 19 21t': [{ from: 1977, to: 1978, id: 7240 }],
+    'maillard normandy 14 16 18 20 23t': [{ from: 1977, to: 1978, id: 7240 }],
+    'maillard normandy 14 17 20 24 28t': [{ from: 1977, to: 1978, id: 7240 }],
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano 600ex cassette 13 14 15 17 19 21t silver': [{ from: 1987, to: 1987, id: 2218 }], // Road Ace: MF-6208-6 600EX SIS cassette (1986-89)
     'sun tour ultra 6 13 24t': [{ from: 1979, to: 1985, id: 2240 }], // 1979 Raleigh Super Course: NW-6500 (13T top sprocket rules out US-6500), as the 1983 Clubman
@@ -2204,6 +2234,7 @@ const COMPONENT_OVERRIDES = {
     'ritchey megabite hardrive': 8383, // Ibex / Osprey: Ritchey MegaBite HardDrive
   },
   Rims: {
+    'mavic module e': [{ from: 1975, to: 1978, id: 5087 }], // 1978 Peugeot (NL): Module E (Red Label); the row is dated 1975
     'rigida chrolux': [{ from: 1960, to: 1970, id: 5158 }], // 1978 Peugeot (NL) TM 8 would otherwise inherit the 1960-70 chrome rim; no 1978 Chrolux row
     'mavic sport or pellet record light alloy': null, // 1977 Peugeot (DE): either / or, left unlinked
     'araya sp30 alloy': [{ from: 1986, to: 1986, id: 8424 }], // 1986 Raleigh Pursuit / Technium 440 / 460: Araya SP-30 (1985-92)

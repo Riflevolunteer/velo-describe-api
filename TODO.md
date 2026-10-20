@@ -144,3 +144,5 @@ Reviewed the 55 Bottom Brackets rows. Most apparent overlaps are distinct part n
 - eBay category filter (now the per-component ladder below, replacing the blanket `category_ids=57262`)
 - `search_text`: category name removed and punctuation cleaned on all 7,812 rows (`scripts/search-text.js`); the audit of whether the values are good eBay queries is superseded by the ladder plus `componentId` search
 - Dropped as stale 2026-10-12: show max and min (price display), eBay Marketplace Insights access (current app creds get invalid_scope; reopen only if sold prices become a goal)
+
+- DONE 2026-10-21: Peugeot 1974-78 unlinked-spec override pass (1977 DE 71/210, 1978 99/218 linked). Remaining gaps are component-catalogue rows (San Marco Gilux race, Gauthier Rilsan, Sedis 1977-78, Stronglight TS, Monthlery); see peugeot.md.
