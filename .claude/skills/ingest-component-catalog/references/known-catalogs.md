@@ -38,6 +38,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/ofmega.md](known-catalogs/ofmega.md) — Ofmega (1 entry)
 - [known-catalogs/sedis.md](known-catalogs/sedis.md) — Sedis (1 entry)
 - [known-catalogs/selle-italia.md](known-catalogs/selle-italia.md) — Selle Italia (1 entry)
+- [known-catalogs/clement.md](known-catalogs/clement.md) — Clement (1 entry)
 - [known-catalogs/vredestein.md](known-catalogs/vredestein.md) — Vredestein (1 entry)
 - [known-catalogs/stronglight.md](known-catalogs/stronglight.md) — Stronglight (2 entries)
 - [known-catalogs/gipiemme.md](known-catalogs/gipiemme.md) — Gipiemme (2 entries)

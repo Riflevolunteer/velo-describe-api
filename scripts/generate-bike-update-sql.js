@@ -1053,6 +1053,7 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'altenburger synchron': [{ from: 1970, to: 1974, id: 511 }], // 1970-74 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron; 511 and 512 are the two undated velobase logo variants of the same brake, 511 chosen as the exact title match (a judgement)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'shimano deore xt cantilever with gumhoods': [{ from: 1983, to: 1986, id: 980 }], // 1986 Raleigh Portage; as "Shimano Deore XT, cantilever" (BR-MC70)
     'dia compe dc630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Sportif; as the 1985 "DC630N alloy S.P." pick
@@ -2131,6 +2132,10 @@ const COMPONENT_OVERRIDES = {
     'sun tour wide ratio 14 18 23 30 34t': 2245, // SunTour 1100-1106 / PT-5000, Perfect (5-speed)
   },
   Tyres: {
+    'clement no 3 silk tubular': [{ from: 1973, to: 1974, id: 8970 }], // 1973-74 Raleigh Professional Track: Clement Seta, Tipo 3 (track silk, 175 g; Clement 1977 leaflet)
+    'clement gentleman wired on 27"': [{ from: 1981, to: 1981, id: 8973 }], // 1981 Bianchi Sprint/81: Clement Gentleman (new in the 1977 leaflet)
+    'clement gentleman wired on 28"': [{ from: 1981, to: 1981, id: 8973 }], // 1981 Bianchi Super Turismo
+    'clement criterium cotton tubular 28"': [{ from: 1981, to: 1981, id: 8972 }], // 1981 Bianchi Super Leggera: Clement Criterium Cotone, Tipo 12 bis (was the 180 g Criterium row 6745)
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
     'clement campionissimo tubular 28"': 6738, // Clement Campionissimo Seta Extra (the only dated Campionissimo row)
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
