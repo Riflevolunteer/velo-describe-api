@@ -908,6 +908,13 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1985-86 Raleigh (US) Sansin hubs, from the Sansin Catalog No. 11 (Dec 1987), rows 9000-9013.
+    'sansin re 50 qr large flange sealed 36 hole front 40 hole rear': [{ from: 1985, to: 1985, id: 9002 }], // 1985 Kodiak: Sansin RE-50 (the catalogue lists 32 / 36h only; the 40h rear is Raleigh's)
+    'sansin re 50 large flange alloy qr sealed 36 hole front 40 hole rear': [{ from: 1985, to: 1985, id: 9002 }], // 1985 Alyeska
+    'sansin re 50 lf w qr 36° sealed rear: 40°': [{ from: 1986, to: 1986, id: 9002 }], // 1986 Kodiak
+    'sansin "sportif" re 60 small flange alloy sealed qr 36 hole': [{ from: 1985, to: 1985, id: 9003 }], // 1985 Competition: Sansin RE-60 (RE-60S sealed-bearing option)
+    'sansin "sportif" re 60 small flange alloy qr 36 hole sealed': [{ from: 1985, to: 1985, id: 9003 }], // 1985 Grand Prix
+    'sansin ax 10a 36 hole sealed': [{ from: 1985, to: 1985, id: 9013 }], // 1985 Elkhorn: Sansin AX-10A (large flange, nut type, sealed system)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 small flange light alloy qr': [{ from: 1987, to: 1987, id: 3524 }], // Competition: HB-1050 105
     'shimano new 105 qr': [{ from: 1987, to: 1987, id: 3524 }], // Triathlon: HB-1050 105
