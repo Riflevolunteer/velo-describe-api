@@ -148,3 +148,5 @@ Reviewed the 55 Bottom Brackets rows. Most apparent overlaps are distinct part n
 - DONE 2026-10-21: Peugeot 1974-78 unlinked-spec override pass (1977 DE 71/210, 1978 99/218 linked). Remaining gaps are component-catalogue rows (San Marco Gilux race, Gauthier Rilsan, Sedis 1977-78, Stronglight TS, Monthlery); see peugeot.md.
 
 - CHECKED 2026-10-21 Lyotard web search: only source found is an undated US-importer pedal leaflet (bikeboompeugeot.com/Parts%20and%20Accessories/Pedals/Lyotard%20Pedal%20Brochure.jpg) listing 14F Faucheux, 23 Berthet, 36F Rattrap, 45 (chrome steel), 45CA (dural cage) and 460 (dural, 3.5" platform) with weights. It has no 36 RCM, Atom 600, 65, 136 or "steel with reflectors", and no dates, so the 13 unlinked Lyotard specs (5 Motobecane, 6 + 2 Peugeot 1977 DE) stay unlinked. Not loaded as a data_source.
+
+- DONE 2026-10-21: Mavic catalogue c. 1980 (disraeligears, data_source 240): 20 rows updated (10 year_from back to 1980, 6 year_to extended or filled, 4 descriptions), 4336 retitled "Mavic 800 (original)", 3 new rows (800 levers, 351 G.I. and 352 F.B. bends). Open: 3835 "Mavic 600" pedal vs 3837 640 (merge?); see mavic.md.

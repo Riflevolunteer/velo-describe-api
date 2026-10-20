@@ -283,3 +283,14 @@ is linked to three 1993 bikes (Grizzly, Super Grizzly, Nth FS) beyond its
 hub (1990) possibly a 530 successor, not merged. 4343 "870 (MTB)" RD
 (1990-1994, "as listed in 1991") absent here. 2410 "870, SSC (31.8 clamp)",
 1192 / 3403 "571" unchanged.
+
+## Mavic Catalogue c. 1980 — disraeligears.co.uk, data_source id 240
+
+Source: https://www.disraeligears.co.uk/site/mavic_-_catalogue_1980.html (24 pages, bilingual FR/EN, no printed date). Dated c. 1980: page 9 lists the 1980 teams using the Grise SSC rim, the 800 derailleur is not called "new", and there is no G 40 rim (1982). Covers rims (Module E / E2 / 3, polished and anodised tubulars), 500 RD road and track hubs and the CX hubs, 600 RD bottom bracket, 800 derailleurs, series 600 pedal (ref. 640), cranks (no model number printed), G.I. 351 / F.B. 352 bends, stems, 410 / 420 brakes, 300 headset, tools.
+
+- year_from moved back to 1980 (were 1984): 8152 Sport 600, 5109 Spéciale Sport, 5105 Piste, 5052 Argent 10, 8153 Bleu SSC, 8154 Argent 12 SSC, 3408 580 CX, 8160 580 CX Piste, 3837 640 pedal, 361 410 lever.
+- year_to extended to 1980: 5087 Module E (Red Label, was 1975; 3 Peugeot 1978 specs link to it), 5089 Module E2 (was 1979), 5111 Sport Tubular (was 1970), 6583 grooved quill stem (was 1970). 5053 Argent 7 and 5104 OR 7 had NULL years, now 1980-1980.
+- Descriptions only: 3401 520 Piste (listed in 1980 as the 500 RD track hub), 2405 810 (105 g in 1980), 6582 flat stem.
+- Retitled 4336 "Mavic 801" (1970-80, 175 g, bare) -> "Mavic 800 (original)", 1979-80: the catalogue's rear 800 weighs 175 g and has the 8-position chain tension / adjustable roller design, not the 801's adjustable chain guide (4337, 1980-85). The 1979 start comes from the 810 front (1979), not from this catalogue. Old title "Mavic 801" so later sources using it can be matched. 4348 "Mavic 800" (1993, 241 g) is a different, later row and was left alone.
+- New rows: 9030 Mavic 800 levers (68 g pair), 9031 Mavic 351, G.I. bend and 9032 Mavic 352, F.B. bend (40-44 cm, 340-355 g). Existing 2862 "Mavic 351" is a different 1990 bar (part number reused).
+- Unresolved: 3835 "Mavic 600" pedal (1979, bare) is probably the series name of the 640, a merge candidate; Module 3 CD / 3D Argent are absent from this catalogue (weak evidence they came later, not capped); the catalogue's crank has no number (the 1979-84 "Mavic 600" rows 1637-1639 cover it).
