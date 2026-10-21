@@ -2,6 +2,8 @@
 
 ## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 136 specs, 43 linked)
 
+- Source (added 2026-10-21): very likely VeloBase CatalogScans/Motobecane `1974_Motobecane_catalog.pdf` or `Motobecane1974.zip`, both titled "Motobécane - MBK 1974 US Catalog" (https://velobase.com/Pages/Resources/CatalogScans.aspx). Inferred from the title and year (the CSV has a page-reference column, as a scanned catalogue would), not confirmed. The index title states the market, so US is stated, not inferred.
+
 - "Catalog Page Reference" column ignored via IGNORED_LABELS.
 - Frame Size cells had backslash/doubled-quote inch-mark debris; rewritten.
 - Values carry shifter asides after an em dash or comma ("SIMPLEX PRESTIGE —
@@ -53,6 +55,8 @@
   specs, 40 -> 42 linked.
 
 ## 1975 Motobecane — `1975_motobecane_spec.csv` (11 bikes, 205 specs, 58 linked)
+
+- Source (added 2026-10-21): very likely VeloBase CatalogScans/Motobecane `1975_Motobecane_catalog.pdf` or `Motobecane1975.zip`, both titled "Motobécane - MBK 1975 US Catalog" (https://velobase.com/Pages/Resources/CatalogScans.aspx). Inferred, not confirmed, as for 1974. US is stated by the index title.
 
 - "Catalog Page" ignored. Frame Size and Wheel Rims & Tires cells had the same
   inch-mark debris; rewritten (`27" x 1-1/4"`).

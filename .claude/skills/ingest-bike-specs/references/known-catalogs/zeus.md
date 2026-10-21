@@ -2,6 +2,8 @@
 
 ## 1973 Zeus — `1973_zeus_spec.csv` (6 bikes, 96 specs, 35 linked)
 
+- Source (added 2026-10-21): VeloBase CatalogScans/Zeus `ZEUS_102.pdf`, "Zeus Catalog No.102, 1973" (12.8 MB; https://velobase.com/Pages/Resources/CatalogScans.aspx), downloaded 2026-10-04 (the browser's download origin confirms it). Date and catalogue number are now stated. ES is still inferred from the Spanish-language text; the index gives no market. The same folder has `Zeus1973.zip`, "Zeus Advertisements, circa 1973" (not used).
+
 - Header "Rear Derailleurs" renamed to "Derailleurs": values (Criterium 69,
   Alfa 72, Alfa Junior) are groupset names, so both derailleurs get rows.
   Old label rows were deleted from the DB before reload.

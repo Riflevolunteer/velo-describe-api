@@ -2,6 +2,8 @@
 
 ## 1940 Bianchi — `1940_bianchi_specs.csv` (17 bikes, 153 specs, 3 linked)
 
+- Source (added 2026-10-21): very likely VeloBase CatalogScans `Bianchi_1940.pdf`, "1940 Bianchi Catalog" (17.8 MB; https://velobase.com/Pages/Resources/CatalogScans.aspx). Inferred from the matching title and year, not confirmed: no download is on disk and the notes never named the file. No market is stated.
+
 - Four models had "Identical to <model>" placeholder cells (Freccia←Folgore,
   Costantino←Cesare, Cleopatra and Cirene←Cecilia); copied across 24 cells.
   Those four bikes were deleted and reloaded.
@@ -126,6 +128,8 @@
 
 ## 1987 Bianchi — `1987_bianchi_spec.csv` (16 bikes, 320 specs, 144 linked)
 
+- Source (added 2026-10-21): VeloBase CatalogScans `1987Bianchi.pdf`, "1987 Bianchi" (2.39 MB; https://velobase.com/Pages/Resources/CatalogScans.aspx), downloaded 2026-10-19 (the browser's download origin confirms it). The index states no market; US is the user's call (2026-10-19).
+
 - Richest catalog: full parts lists with model numbers, but six columns pair
   two components comma-separated. Split in the CSV on the first comma:
   Handlebar and Stem, Saddle and Seatpost, Hubset and Spokes, Freewheel and
@@ -247,6 +251,8 @@
   override can't pick one; left unlinked. 181 → 185 linked.
 
 ## 1973 Bianchi — `1973_bianchi_spec.csv` (22 bikes, 86 specs, 8 linked)
+
+- Source (added 2026-10-21): VeloBase CatalogScans `Bianchi1973_ital.pdf`, "1973 Bianchi Catalog (Italian market)" (10.9 MB; https://velobase.com/Pages/Resources/CatalogScans.aspx); the filename matches the one named below. The index title confirms the Italian market, so IT is stated, not inferred.
 
 - First catalog built from a scanned PDF (Bianchi1973_ital.pdf, Italian
   market, 8 pages, no text layer): pages read visually, the CSV written by

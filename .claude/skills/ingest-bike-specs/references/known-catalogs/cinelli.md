@@ -2,6 +2,8 @@
 
 ## 1986 Cinelli — `1986_cinelli_spec.csv` (7 bikes, 82 specs, 52 linked)
 
+- Source location (added 2026-10-21): VeloBase CatalogScans/Cinelli `Cinelli_10_Speed_Drive.pdf`, listed there as "Cinelli Frames (mid-80's)" (791 KB; https://velobase.com/Pages/Resources/CatalogScans.aspx); the filename matches the one named below. The same folder has `Cinelli_Acccessories.pdf` and `Cinelli_Accessories_2.pdf` ("Cinelli Componets (mid-80's)"), not used.
+
 - Source is Ten Speed Drive Imports' four-page US brochure
   (Cinelli_10_Speed_Drive.pdf), no printed date. Dated 1986 from "38
   years" after the 1948 founding and "Campagnolo's new Record Corsa road
