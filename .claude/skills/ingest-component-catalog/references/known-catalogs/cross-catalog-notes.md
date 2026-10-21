@@ -99,6 +99,54 @@ Left as weaker suspects: SunTour XCD 6000 bare vs coded rows (7 categories),
 1413 Dura-Ace 7400 chain, SunTour 2619 a-4050 vs 2633 Edge 4050 FD,
 Weinmann 1129 / 1130 570.
 
+## Bikecology catalogue, 5th edition — April 1976 (blogspot "Catalogues divers: Revue 1976", data_source 244)
+
+- `data_source` label "Bikecology catalogue, 5th edition (April 1976)", country US. Source:
+  https://labibleduvelodivers.blogspot.com/p/doc-1976.html (116 page images at
+  1276 x 1650, "BICYCLE CATALOG 1976 (n)", legible; printed page = image number - 2).
+  Bikecology Mail Order, Santa Monica CA, (c) April 1976, "5th Edition, supersedes
+  all previous editions and prices". A retailer: its own catalogue numbers (HPA,
+  HDA, SU, HSI ...) beside the makers' numbers, AW / SW weights and 1976 USD prices.
+  Components are pp. 1-55 (table of contents on the second image); the rest is
+  clothing, shoes, bags, camping, complete bikes (Ron Cooper, Mondia, Bob Jackson,
+  Masi, Windsor, Niko, Rossin; pp. 87-111, an `ingest-bike-specs` job), tools,
+  lighting and books. Read 2026-10-21: every component page (pp. 1-55).
+- Dated items inside it: new for 1976 Cyclone shift levers, Maxy 5 crank, Sunshine
+  small-flange hubs, Elan clincher wheel (from May), Sunshine Super Pro Am stem
+  (June); introduced 1975 TTT Record stem, Rally rear derailleur, Weinmann 500 de
+  Luxe, Campagnolo 2040/1; Campagnolo Record pedals "till 1/1/76"; Super Record hubs
+  "discontinued by Campy in 1975".
+- Most rows were already in the DB with years covering 1976 (SunTour, Shimano,
+  Campagnolo, Sugino, Dia-Compe, Weinmann, Mafac, Regina, SR, 3ttt, Cinelli,
+  Stronglight): no change.
+- Changed (source_ref -> 244): 26 rows. year_to -> 1976 on 8074 SunTour 3703
+  Allegro, 5599 / 5600 Ideale 2001 / 2002, 2773 3ttt Touriste bar, 5180 / 5185 /
+  5189 Super Champion Arc en Ciel / Medaille d'Or / Record du Monde; year_from
+  -> 1976 on 5333 Cinelli Unicanitor #4, 7887 / 2913 SR World Custom / World
+  Randonneur, 3602 Sunshine/Sansin low flange, 5091 Mavic Montlhery Legere, and
+  (from 1977) Clement 6737 / 6731 / 8972 / 6732 / 8970; dated 1976-1976 (were
+  undated) 5344 Cool Gear The Seat, 5609 Ideale 39, 5337 Cinelli Mod. 55, 3476 Phil
+  Wood High-Low, 3733 East Rochester Tool & Die, 6810 Hutchinson Krono Milano, 5182
+  Super Champion Etoile; descriptions rewritten on most; 5648 Ideale 80 description
+  only. 5303 Brooks Team Professional year_from 2000 -> 1976 (judgement: the
+  Bikecology "Professional", 532 g, is taken as 5303; title kept; the 2000 date was a
+  decade placeholder and contradicted the 1970s Raleigh links).
+- Added (all 1976, group NULL): 9042 Weyless WLS 1000 hub set, 9043 Weyless seat
+  post, Mavic Elan rim, Hutchinson Supersprint / 80-GTX Corsa / Corsa Leggero /
+  Super Corsa / Cross TR / Special Seta (9045-9050), Michelin Falco / Nibbio /
+  Fifty / High Speed (9051-9054).
+- Not applied (no row or not enough evidence): Regina "Gran Sport Super Corsa Oro"
+  CH6 / CH6a and "Extra Black" CH5 chains, HKK chains (no brand row), Everest
+  superlight CH8, Renold track chain, Sugino Mighty Custom SU2 / Maxy 5 / Maxy II
+  SU3 (the DB has Maxy 3-bolt and Maxy 5-arm, not the same), Ideale 90TB / 90IR vs
+  our "90 Speciale Competition", Cinelli bars HSI 63 / 65, Tange "Levin HS TL" (maybe
+  3152 LV-11), Fiamme Red / Gold / Yellow Label tubulars, Tahei and Lambertini
+  saddles, Belri bar and stem, Dura-Ace track hubs H740 / H840 / H741 / H841 (the
+  numbers do not match our HS-741 / H-741 rows and HA-300 may be the same hub),
+  Campagnolo Nuovo Tipo C1264-C1267 (we hold the 1251 / 1253 pair numbers). Out of
+  scope: the Bikecology-built wheels (Hosteller, Tourist, Olympiad, Elan, ...), tubes,
+  juvenile tyres, spokes, pumps, forks, tape and plugs, clothing and shoes.
+
 ## Bikecology catalogue — Summer 1981 (2velo.com, multi-brand US retailer)
 
 - `data_source` label "Bikecology catalogue (Summer 1981)", country US. Source:
