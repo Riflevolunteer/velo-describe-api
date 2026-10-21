@@ -99,6 +99,61 @@ Left as weaker suspects: SunTour XCD 6000 bare vs coded rows (7 categories),
 1413 Dura-Ace 7400 chain, SunTour 2619 a-4050 vs 2633 Edge 4050 FD,
 Weinmann 1129 / 1130 570.
 
+## Palo Alto Bicycle Shop catalogue — 1976 (blogspot "Catalogues divers: Revue 2 1976", data_source 245)
+
+- `data_source` label "Palo Alto Bicycle Shop catalogue (1976)", country US. Source:
+  https://labibleduvelodivers.blogspot.com/p/revue-2-1976.html (42 images at
+  1276 x 1650, "CATALOGUES 1976 (n)", numbered from the BACK: image 01 = back cover, 41 =
+  introduction and index, 42 = cover; printed page n = image 41 - n). Palo Alto Bicycle
+  Shop, 171 University Avenue, Palo Alto CA, "Copyright 1976", 1976 USCF form in the back.
+  A US mail-order retailer, like Bikecology, with its own catalogue numbers (T-, R-, H-,
+  CS-, BB-, HS-, BR-, DR-, SE-, SP-) and gram weights. Components are pp. 1-30; pp.
+  31-38 are shoes, cleats, clothing, touring bags, racks and a racing application, no
+  category. Read 2026-10-21: all of pp. 1-30.
+- Dated inside it: Alas cranksets "available as of May 15, 1976"; new for 1976 Stronglight
+  105 / 105bis cranksets and the 651 / 650 bottom brackets, Cinelli N 1/Record stem,
+  Universal CX, C.L.B. Professional and Galli Ti / 75 brakes, latex-tube Clement
+  tubulars and Vittoria's sealant-valve tubulars, Campagnolo Super Record alloy headset.
+  Duplicate catalogue numbering: BR-09 / BR-10 swap Model 51 and 61 between pp. 23 and 24,
+  and the p. 20 toe-clip numbers clash with the Weyless pedals of p. 19.
+- Most rows (SunTour, Shimano, Campagnolo derailleurs, shifters, hubs, brakes, Super
+  Champion rims, Cinelli bars and stems) already covered 1976 or were done in the
+  Bikecology 1976 pass: no change.
+- Changed (source_ref -> 245, 31 rows): Clement year_from 1977 -> 1976 on 6755 Gran
+  Sport 65, 6733 70, 6762 Paris-Roubaix, 6757 Grifo 61, 6763 Paris-Roubaix Seta, 8971
+  Criterium Seta Extra, 6738 Campionissimo Seta Extra, 6761 Nuovo Super Seta Extra; 6891
+  Vittoria Mondiale and 6892 Normalcross dated 1976; Universal 1086 CX (description),
+  1082 Super 68, 1081 Mod. 61, 1080 Extra Mod. 51 (year_to -> 1976); 595 CLB Professionnel
+  (description, taken as the 1976 "New C.L.B. Professional"); 2123 Maillard 700 (6 speed)
+  year_from 1980 -> 1976; 1364 Everest Serie Special; 5483 Selle Italia Criterium
+  (buffalo) and 5326 Cinelli Unicanitor Mod. 50 year_to -> 1976; 5656 / 5657 Ideale 90
+  descriptions; 5906 STM (straight post) dated 1976; 9043 Weyless seat post 207 g; 100
+  Phil Wood BB year_from 1977 -> 1976; 3818 Lyotard 65, 3815 Lyotard 460D, 3769 KKT Pro Ace
+  descriptions; 2798 Cinelli 14 year_to -> 1976; 6492 Cinelli 1R early version 1970 ->
+  1976-1979 (judgement: new in 1976, the winged-logo 1R starts 1980); 1920 Sugino Mighty
+  Competition and 8890 Mighty Victory year_to 1973 -> 1976.
+- Added (34 rows, all 1976, group NULL): Vittoria Vulcan, Granturismo, Supersport,
+  Competizione, Giro d'Italia, Tour de France, Criterium, Record, Imperforabile,
+  Supercross, Record Seta, Imperforabile Seta and Record (clincher); Galli Ti and Galli 75
+  brakes; Maillard 700 (5 speed); Everest Oro and Everest Dural freewheels; the new
+  brand Alas (brand_id 668: headset, Edramon, Super Competizione and Competizione
+  cranksets, steel and titanium bottom brackets); Stronglight 105; Sugino Mighty Custom;
+  Cinelli 63 Campione del Mondo, 19 Track and Unicanitor 65; Selle Italia Superlight;
+  Lyotard 45; KKT S.P. Sprint; Weyless Road and Track pedals.
+- category_brand links added for Alas (Bottom Brackets, Cranksets, Headsets) and Weyless
+  (Hubs, Seat Posts): the Bikecology 1976 load had added Weyless hub and seat post rows
+  without them, so the brand-by-category lists would not have shown them.
+- Not applied: Regina Super Corsa Oro and Extra Black chains (names do not map onto
+  our "Extra 50" / "Oro" rows), Fiamme Red / Yellow Label rims and Super Champion
+  clinchers (no single matching row), Shimano Tourney hubs, Phil Wood medium-flange hub,
+  Lyotard 23 Platform (ambiguous between the Marcel Berthet rows), Cinelli 65 / 66 bars and
+  the M-71 pedal (existing rows are the 1980s versions or already well described), the
+  Vittoria "Butyl" (a tube type). Selle Italia Superlight kept apart from 5504
+  Superleggera (1978-79, 215 g, Allen-key nose): same maker and probably related, but a
+  different construction as described. Out of scope: pumps, tyre sealant and
+  carriers, spokes and tools, toe clips and straps, cables and housing, brake parts, Arnold
+  bolts and bottle cages, shoes, cleats, clothing, racks and bags.
+
 ## Bikecology catalogue, 5th edition — April 1976 (blogspot "Catalogues divers: Revue 1976", data_source 244)
 
 - `data_source` label "Bikecology catalogue, 5th edition (April 1976)", country US. Source:
