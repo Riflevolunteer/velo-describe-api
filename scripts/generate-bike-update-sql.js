@@ -147,7 +147,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1988|bianchi', 'US'], // US catalogue (saarf dates it 1986)
   ['1990|bianchi', 'US'], // Bianchi USA Inc., South San Francisco
   ['1987|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19)
-  ['1993|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19)
+  ['1993|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19); probable source retrobike "1993 Bianchi Catalogue", English, lbs
   // Peugeot 1971-74 mix Dutch spec pages and French general-catalogue pages in one CSV; the user chose FR
   // for all of them (2026-10-19) instead of splitting. 1970 stays NL (Dutch-market catalogue only).
   ['1971|peugeot', 'FR'], ['1972|peugeot', 'FR'], ['1973|peugeot', 'FR'], ['1974|peugeot', 'FR'], ['1975|peugeot', 'NL'], ['1976|peugeot', 'NL'], ['1978|peugeot', 'NL'], // 1975: Dutch-only "Peugeot Modellen '75"; 1976: Dutch "Peugeot '76" (both Cycles Peugeot Nederland; the 1976 PY 10 spec comes from the French April 1976 leaflet)

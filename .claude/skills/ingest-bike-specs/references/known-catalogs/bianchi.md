@@ -178,6 +178,8 @@
 
 ## 1993 Bianchi — `1993_bianchi_spec.csv` (24 bikes, 408 specs, 174 linked)
 
+- Source (added 2026-10-21, PROBABLE, not confirmed against the spec pages): retrobike.co.uk archive "1993 Bianchi Catalogue" (https://www.retrobike.co.uk/archive/1993-bianchi-catalogue.1672/, file name "Catalogo Bianchi 1993.pdf"). Its cover is hand-marked "93" and the text says "28 different models of Road, Mountain and Cross-Terrain bicycles", weights in lbs, a Reparto Corse mountain bike with Genius Nivacrom tubing, "In 1993" and "108 years": an English, US-style catalogue consistent with this CSV. The download truncates on every attempt (1.4-2.6 MB, no PDF trailer), so only the cover, history, a blueprint spread and two further pages were recovered (images carved from the Flate/DCT streams); the product spec pages could not be read and the tables were not compared. Not the same as the Japanese-edition "Bianchi 1993" on labibleduvelocataloguesbianchi.blogspot.com/p/bianchi-1993.html (yen prices, Giro / MMX / EL models), which has not been ingested. Market stays US as stated by the user.
+
 - Six " / "-paired columns split in the CSV: Fork/Headset, Drivetrain/
   Shifters (→ Derailleurs + Shifters; a slash-less cell fills both),
   Saddle/Seatpost, Hubset/Spokes, Freewheel/Chain (→ Cassette + Chain: 20 of
