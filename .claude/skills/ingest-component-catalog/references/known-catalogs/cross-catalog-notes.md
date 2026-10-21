@@ -99,6 +99,44 @@ Left as weaker suspects: SunTour XCD 6000 bare vs coded rows (7 categories),
 1413 Dura-Ace 7400 chain, SunTour 2619 a-4050 vs 2633 Edge 4050 FD,
 Weinmann 1129 / 1130 570.
 
+## Palo Alto Bicycles catalogue — 1981/82 (blogspot "Catalogues divers: Revue 1981", data_source 248)
+
+- `data_source` label "Palo Alto Bicycles catalogue (1981/82)", country US. Source:
+  https://labibleduvelodivers.blogspot.com/p/revue-1981.html (54 images at 1276 x 1650,
+  "CATALOGUES VELOS 1981 (n)", numbered from the back: image 54 = cover "1981/82
+  catalog", 53 = index; printed page n = image 53 - n). Palo Alto Bicycles, 171
+  University Ave, Palo Alto CA; the next edition of the Palo Alto Bicycle Shop 1976
+  catalogue (data_source 245). Gram weights for nearly everything. Components are
+  pp. 2-37; clothing (4-7), tools (13, 23), Palo Alto-built wheels (14), spokes (15),
+  the house "Palo Alto Cotton" tubular, tubes, pumps, toe clips and straps, cables,
+  lubricants, superlight bolts, bottles, books, rollers, helmets, bags, racks, shoes and
+  posters are out of scope. Read 2026-10-21.
+- Main value: the Avocet range (saddles, seat post, cranks, bottom bracket, hubs, pedals,
+  headsets), whose DB rows were bare velobase entries, many dated a year late.
+- Changed (source_ref -> 248, 45 rows), all dated to include 1981: Avocet 4 Model I BB
+  (was undated), 1453 Racing crank (1982 -> 1981), 1454 Touring Triple, 2937 / 2936 Model
+  II / III headsets (1982 / 1983 -> 1981), 3189 / 3191 Model I / II low-flange hubs, 3669 /
+  3670 / 3671 Model I / II / III pedals, saddles 5258 Racing I, 5253 Racing II, 5251 Racing
+  III, 5252 RS, 5254 Touring I (later), 5255 Touring II, 5256 Touring WI, 5724 seat post
+  (descriptions rewritten on all, velobase weights kept); Galli 741 Super Criterium brake
+  (undated -> 1981); Universal 1083 Mod. 77 (1977 -> 1981), 1086 CX, 1082 Super 68, 1080
+  Extra Mod. 51; SunTour 4773 VX-T; SR 6668 FS Foursir stem; Super Champion 5187
+  Performance, 5183 Gentleman, 5180 Arc en Ciel, 5189 Record du Monde; Fiamme 4992 Ergal;
+  Wolber 6918 Invulnerable 84; Clement 6731 50, 6733 70, 6737 CdM Seta, 6763 Paris-Roubaix
+  Seta; Specialized 6861 Touring, 6867 Touring-X, 6869 Ultralight, 6863 Touring Turbo,
+  6868 Turbo S; Lyotard 9085 45 and 3815 460D; 8765 Sedisport; Phil Wood 3478 hubs and 100
+  BB.
+- Added (8 rows, 1981): Avocet Touring III, Touring WII, Racing IIT, Racing WI, Racing WII
+  saddles; Galli Brunito brake; Sugino Super Mighty Custom (kept apart from 9080 Mighty
+  Custom, 1976: the Super Mighty series is the 1978 rename); Wolber steel-belted clincher.
+- Judgement: the catalogue's SunTour "Cyclone II" is our Cyclone Mark-II (RD-3500,
+  RD-3700, FD-2300, 1981-85), already covered; its "syncro-shift" Cyclone II lever has no
+  row and was not added (no part number). SR "Model G" bar = 8220 Foursir-G (1980-82),
+  unchanged. Not applied: the SunTour "Superbe" brake (CB-1000 1977-78 vs Superbe Pro
+  CB-4100 / 3100 1979+, unclear); Regina Record Oro / Oro / Black chains (no unambiguous
+  row); Avocet "W20" 5257 left as is. Duplicate noticed: two bare "Specialized
+  Touring-II" rows (6865 with 265 g avg, 6866 bare), a merge candidate.
+
 ## Bikecology catalogue — 1980 (blogspot "Catalogues divers: Revue 1980", data_source 247)
 
 - `data_source` label "Bikecology catalogue (1980)", country US. Source:
