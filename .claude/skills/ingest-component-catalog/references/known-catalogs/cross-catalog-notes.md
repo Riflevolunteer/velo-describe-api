@@ -99,6 +99,53 @@ Left as weaker suspects: SunTour XCD 6000 bare vs coded rows (7 categories),
 1413 Dura-Ace 7400 chain, SunTour 2619 a-4050 vs 2633 Edge 4050 FD,
 Weinmann 1129 / 1130 570.
 
+## Bike Warehouse catalogue No. 12 — 1978 (blogspot "Catalogues divers: Revue 1978", data_source 246)
+
+- `data_source` label "Bike Warehouse catalogue No. 12 (1978)", country US. Source:
+  https://labibleduvelodivers.blogspot.com/p/revue-1978.html (37 images at 1276 x 1650,
+  "BICYCLE CATALOG 1978 (n)", numbered from the back: image 37 = back cover with the parts
+  index, image 36 = p. 1, so printed page n = image 37 - n; image 01 = a final page of
+  frame-builder ads). Bike Warehouse, a division of Nashbar / Associates Inc., Ohio,
+  "Copyright 1978 Bike Warehouse", toll free 1-800-321-2474. A US mail-order retailer like
+  Bikecology and Palo Alto; prices USD, grams. Components are pp. 1-10 plus the Lambertini
+  saddles on p. 14; pp. 11-13 and 15-23 (tools, built-up wheels, bottles, carriers,
+  clothing, helmets, shoes, speedometers, lights, books) and the wm. sampson frame ad are
+  out of scope. Read 2026-10-21. Probably the same catalogue family as the unreadable
+  400 x 400 "Bike Warehouse" 2velo.com album noted under Bikecology 1981; not compared.
+- Dated inside it: "NEW" in 1978 = Shimano 600 EX and Dura-Ace EX groups, Uniglide
+  freewheel and chain, SunTour Ultra-6, Sakae Laprade P5, Sunshine Hi/Lo hubs, Wolber
+  Liberty, Michelin TS foldable clincher, HKK 2-Chain, Zeus alloy headset; "limited supply"
+  Mavic, Weinmann and Super Champion rims.
+- Almost everything Shimano, SunTour, Campagnolo, Wolber and Zeus Criterium / 2000 lists was
+  already in the DB with 1978 covered (Shimano 600 EX / Dura-Ace EX 1978-84 rows, SunTour
+  Cyclone / VX / Superbe, Wolber from data_source 235): no change.
+- Changed (source_ref -> 246, 40 rows): year_to -> 1978 on SunTour 4772 V-Luxe; Phil Wood
+  3478 Standard Flange, 3476 High-Low, 100 cartridge BB (descriptions rewritten); Zeus 4860
+  2000 rear, 8857 2000 hub set, 3653 Criterium hubs, 3654 Gran Sport hubs, 3171 Gran Sport
+  headset, 3168 2000 headset, 8853 2000 control lever, 8855 Criterium shift levers, 2026
+  Criterium triple crank, 4049 2000 titanium pedals; 3756 Hi-E pedals; Hutchinson 9045
+  Supersprint, 9046 80-GTX Corsa, 9047 Corsa Leggero, 6810 Krono Milano, 9050 Special Seta;
+  9053 Michelin Fifty; 5004 Fiamme Strada red label; 5185 / 5180 Super Champion Medaille
+  d'Or / Arc en Ciel; Cinelli 2801 64 Giro (70s), 2809 66 CdM early logo, 5337 Mod. 55, 9083
+  Unicanitor 65; 9080 Sugino Mighty Custom. year_from -> 1978 on 3261 Campagnolo Hi-Lo
+  (1980), Weinmann 7776 A124 and 5208 A129 (1979, first seen in the 1979 Chicken list),
+  Sakae 7907 Royal P1 ESL post, 6663 Royal SL stem, 7901 Apex stem, 8234 Custom stem, 7886
+  World Custom-SL bar (1980), 8789 Michelin Elan TS (1979; judgement: the "NEW Michelin TS
+  foldable clincher"), 1398 Sedis Gold (1980). 3678 Bob Reedy pedals dated 1978 with a
+  description.
+- Added (21 rows, all 1978, group NULL): HKK Blue Sky Silver / Oro / Gold and HKK 2-Chain
+  (Ultra-6) (new brand HKK, 669); Lambertini racing, smooth leather, suede and padded suede
+  saddles (new brand Lambertini, 671); National tubular and clincher (new brand National,
+  670); IRC Road Lite Z, High Racer Skinwall, High Pressure Gumwall; Hutchinson LL 240 and
+  GTX 80 latex; Mavic Extra Legere; Dia-Compe Gran Compe Superbe, 500G and Gran Compe 710;
+  Sunshine Hi/Lo hubs; Bullseye hub. category_brand links added for these.
+- Not applied: KKT Pro Ace / Pro Vic / Top Run (existing rows cover the span or the name
+  is ambiguous), Super Olimpic pedals (several Olimpic rows, no clear match), Dia-Compe
+  730 x 810 (8929 is the 1964 Dia-Weinmann), Tange Levin (DB rows are undated variants),
+  Rigida 13 mm, Fiamme Gold / Yellow Label (no single row). The Ideale saddle rows are
+  filed under brand 580 "Tron & Berthet", which looks like a mislabelled brand; not
+  changed here.
+
 ## Palo Alto Bicycle Shop catalogue — 1976 (blogspot "Catalogues divers: Revue 2 1976", data_source 245)
 
 - `data_source` label "Palo Alto Bicycle Shop catalogue (1976)", country US. Source:
