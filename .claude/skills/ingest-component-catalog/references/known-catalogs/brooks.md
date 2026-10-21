@@ -40,3 +40,38 @@
   blog's links (cdn.brooksengland.com 1926, 1933, 1935, 1957, 2012-2015 PDFs)
   are dead (Brooks moved to Shopify). ebykr has Brooks catalogues 1890-1938,
   adverts 1947-59 and a one-page Bikecology 1981 retailer sheet.
+
+## Brooks "Cycle Saddles" leaflet — 1959 (bulgier.net, data_source 243)
+
+- `data_source` label "Brooks Cycle Saddles leaflet (1959)", country GB. Source:
+  http://bulgier.net/pics/bike/Catalogs/Brooks/1959_cs.pdf (2-page PDF of one folded
+  leaflet, scans from Mark Bulgier's archive). J. B. Brooks & Co. Ltd, Great Charles
+  Street, Birmingham 3; printer code JBB/S/1959. Prices pre-decimal (shillings).
+  Read visually (no text layer); sizes and weights read off a small scan, fractions
+  approximate. Also lists cycle bags (Millbrook ... Highbrook) and B2085 panniers: no
+  category, not ingested.
+- Range: B17 Standard / Narrow / Flyer / Sprinter / Competition / Swallow /
+  Competition (Campagnolo model); B15 Standard / Narrow / Flyer / Swallow; tourists
+  B66 Champion, B66, B72, B10/2, B73; heavy duty B90/2, B90/3, B33, B33/1, B12;
+  mattress B22, B22L; juveniles J5, J9.
+- New vs the June 1950 leaflet: the B17 / B15 Narrow-Flyer-Sprinter-Competition-Swallow
+  family, the Campagnolo-model Competition, B66 Champion, B33, B33/1, B12, B22,
+  B22L, J9. Gone: the B.27 / B.37 / B.47 / B.57 Lightweight Champions, J3, and the
+  B66L / B72L / B73L ladies' variants (B22L is the only ladies' model listed).
+- Adjusted (source_ref -> 243): year_to 1950 -> 1959 on 5268 B10/2 Tourist, 5285
+  B72, 5287 B73, 8967 B90/2, 5288 B90/3, 8969 J5, 5275 B33 (double sprung);
+  year_from 1960 -> 1959 on 5307 B15 Swallow and 5318 B17 Competition Standard;
+  5308 B17 Champion Flyer and 5306 B15 Champion (Narrow) dated 1959-1959;
+  descriptions rewritten on all of these and on 5282 B66 (years kept 1927-1976, 2
+  bike specs linked). Where 1950 and 1959 differ the description names both (B73 2 lb
+  6 oz / 2 lb 9 oz, B90/3 4 lb 8 oz / 4 lb 4 oz, J5 1 lb 7 oz / 1 lb 8 oz).
+- Added (1959, brand 529, Saddles): 9033 B17 Swallow (group B17), 9034 B17
+  Competition (Campagnolo model) (B17), 9035 B15 Flyer (B15), 9036 B66 Champion, 9037
+  B33/1, 9038 B12, 9039 B22, 9040 B22L, 9041 J9 Juvenile.
+- Judgement: 5318 "B17 Competition Standard" (decade-placeholder 1960) is taken as
+  the 1959 B17 Competition; 5317 "B17 Competition" (1970) and 5319 "Keyhole Type" (1950)
+  are left as other variants. B66 and B66 Champion are two saddles in the leaflet.
+- Left alone: 5315 B17 Standard, 5310 B17 Narrow, 5313 B17 Sprinter, 5305 B15
+  Standard (years already span 1959, size differences within reading error); 5286
+  B72L (not listed in 1959, weak evidence); 8968 J3 (absent, already capped at 1950).
+- Deleted (merge, user-approved 2026-10-21): 5277 "Brooks B33 (double sprung) - version 2" (1940-1950, source_ref 1, source_id 215A71A0-F1A3-4071-AF9D-EA75DF21F3BD, bare "England" description) into 5275 "Brooks B33 (double sprung)". It had no "version 1", the same dates and no bike_spec or COMPONENT_OVERRIDES references. 5276 (1970s version) kept.
