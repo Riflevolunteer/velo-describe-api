@@ -1864,6 +1864,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    'lyotard 45 ca or atom 600 dural steel cage with christophe toe clips and lapize toe straps': null, // 1977 Peugeot (DE) PS 10/E, PSN 10/E: either / or; the matcher finds 9085 Lyotard 45, but the 45 CA is a different row (3811)
     'lyotard 136 race with toe clips and straps': 3801, // 1978 Peugeot (NL): Lyotard 136R
     'lyotard 36 rcm with christophe toe clips and lapize toe straps': null, // 1977 Peugeot (DE): 36 RCM is not the 1950-70 "Lyotard 36" row the substring matcher finds; no RCM row
     'lyotard 45 ca dural with christophe toe clips and lapize toe straps': 3811, // 1977 Peugeot (DE) PX 10/LE, PXN 10/E: Lyotard 45CA, as 1974
@@ -2018,6 +2019,7 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    'sedisport narrow': [{ from: 1980, id: 1402 }], // 1983 Raleigh Europa / Record Sprint / Supersport 12: as bare 'sedisport' (1402 from 1980)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'suntour z': [{ from: 1982, to: 1989, id: 7821 }], // 1987 Raleigh Maverick 18 Pro; as "Suntour Z Silver/Black" and "Gold" (TZ-6000)
     'sedisport black': [{ from: 1980, id: 1402 }], // 1987 Raleigh tourers; colour variant of 'sedisport' (1402 from 1980)
@@ -2198,6 +2200,9 @@ const COMPONENT_OVERRIDES = {
     'sun tour wide ratio 14 18 23 30 34t': 2245, // SunTour 1100-1106 / PT-5000, Perfect (5-speed)
   },
   Tyres: {
+    'michelin elan ts 700 x 25 extra narrow training tyres with inner tube': [{ from: 1977, to: 1979, id: 8789 }], // 1977 Peugeot (DE) PRN / PSN / PXN 10/E, PRN 13/E: Michelin Elan TS (8789 year_from moved to 1977 on this catalogue)
+    'michelin 27" x 1 1 8" club tourist': [{ from: 1980, to: 1984, id: 8788 }], // 1984 Raleigh Classic 15 / Record Ace 12 / Royal 10: Michelin Club Tourist (8788 year_to extended to 1984 on this catalogue); the size text in the middle defeats the substring match
+    'high pressure gumwall': null, // 1975-76 Raleigh Super Course / Grand Prix: bare description; the substring matcher finds 9101 IRC High Pressure Gumwall (1978), a different maker's tyre
     'michelin elan ts 28 x 1 1 16': [{ from: 1978, to: 1979, id: 8789 }], // 1978 Peugeot (NL) PSN 10 / PRN 10 E: Michelin Elan TS (row dated 1979, one year after this catalogue; a judgement)
     'peugeot professionnel or clement criterium tubulars': null, // 1977 Peugeot (DE) PY 10/CP: either / or, left unlinked
     '27 x 1 1 4': null, // bare size (1975 Peugeot UO 8), not the Continental Cyclocross 27 x 1 1/4 the substring matcher finds

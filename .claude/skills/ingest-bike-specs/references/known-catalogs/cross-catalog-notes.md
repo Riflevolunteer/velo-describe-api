@@ -437,3 +437,21 @@ Wayback not retrievable from here), ebykr has Brooks catalogues 1890-1938 plus
 a one-page Bikecology 1981 retailer sheet. Still unlinked on purpose: "Brooks
 CR3" (no row), "Brooks B-15" (Champion Standard / Narrow / Swallow ambiguous),
 "Brooks Professional or Ideale 90", generic "Brooks leather" / padded vinyl.
+
+## Link pass after the 2026-10-21 component catalogue ingests
+
+- Regenerated every catalogue and compared link counts with the DB; checked the remaining
+  unlinked specs against the brands just ingested (Brooks, Bikecology 1976 / 1980, Palo Alto
+  1976 / 1981, Bike Warehouse 1978).
+- Linked (guarded UPDATE on bike_spec_id, NULL only; overrides added so regeneration agrees):
+  1977 Peugeot (DE) "Michelin Elan TS 700 x 25 ..." -> 8789 (4; 8789 year_from 1978 -> 1977),
+  1984 Raleigh "Michelin 27" x 1-1/8" Club Tourist" -> 8788 (3; year_to 1983 -> 1984), 1983
+  Raleigh "Sedisport Narrow" -> 1402 (3; same rule as bare "Sedisport"), 1985 Bianchi Strada
+  "Dia-Compe 500G" -> 9106 (1; matcher exact title, no override).
+- Blocked with null: Tyres "High Pressure Gumwall" (1975-76 Raleigh, would hit 9101 IRC High
+  Pressure Gumwall) and Pedals "Lyotard 45 CA or Atom 600 ..." (1977 Peugeot DE, either/or;
+  would hit 9085 Lyotard 45 although the 45 CA is 3811).
+- Left: Brooks B15 (1970-72 Raleigh, Standard vs Narrow), "Ideale 2002 or treated leather",
+  brand-only Unicanitor / HKK / SEDIS / Hutchinson Silk / Super Champion values.
+- Known drift, not chased: 1978 and 1979 Peugeot and 1990 Bianchi have 2-3 more links in the
+  DB than a regeneration produces (harmless; the back-fill never unlinks).
