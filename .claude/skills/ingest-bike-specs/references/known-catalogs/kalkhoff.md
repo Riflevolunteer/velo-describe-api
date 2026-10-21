@@ -2,6 +2,8 @@
 
 ## 1981 Kalkhoff — `1981_kalkhoff_spec.csv` (8 bikes, 136 specs, 57 linked)
 
+- Source (added 2026-10-21, from the user): VeloBase CatalogScans `kalhoff_prospekt_81.pdf` (sic), "1981 Kalkhoff Catalog" (1,478 KB, listed under Frames; https://velobase.com/Pages/Resources/CatalogScans.aspx). A German "Prospekt"; the index gives no market, so DE remains inferred from the language. The velopedia.online Kalkhoff leaflets seen in search are different documents.
+
 - German-sourced, partly translated. Repairs: lowercase headers title-cased,
   "Frame" → "Frame Material"; the English "Toe Clips" column was a duplicate
   of "Haken" (German for toe clips) with worse data, so it was dropped and

@@ -133,7 +133,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
   ['1970|peugeot', 'NL'], // Dutch-market "Peugeot '70" (1971-74 mix NL + FR: left NULL until split)
   ['1979|peugeot', 'FR'], // French home-market catalogue
-  ['1981|kalkhoff', 'DE'],
+  ['1981|kalkhoff', 'DE'], // VeloBase "1981 Kalkhoff Catalog" (kalhoff_prospekt_81.pdf), German text; market not stated
   ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
   ['1973|bianchi', 'IT'], // VeloBase title "1973 Bianchi Catalog (Italian market)"
   ['1940|bianchi', 'IT'], // inferred
