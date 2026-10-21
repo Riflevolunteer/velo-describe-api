@@ -99,6 +99,51 @@ Left as weaker suspects: SunTour XCD 6000 bare vs coded rows (7 categories),
 1413 Dura-Ace 7400 chain, SunTour 2619 a-4050 vs 2633 Edge 4050 FD,
 Weinmann 1129 / 1130 570.
 
+## Bikecology catalogue — 1980 (blogspot "Catalogues divers: Revue 1980", data_source 247)
+
+- `data_source` label "Bikecology catalogue (1980)", country US. Source:
+  https://labibleduvelodivers.blogspot.com/p/revue-1980.html (64 images at 1276 x 1650,
+  "CATALOGUES VELOS 1980 (n)", numbered from the back: image 64 = cover, 01 = back
+  cover; printed page n = image 65 - n). Bikecology Mail Order, 12509 Beatrice St, Los
+  Angeles, $1.00, the cover advertises the "Annual Warehouse Clearance Sale, Sat., Sep. 6"
+  (a Saturday in 1980) and "Eclipse '80 Nomad". Same retailer as the April 1976 (data_source
+  244) and Summer 1981 (227) catalogues. Components are pp. 9-36 (headsets to rims);
+  pp. 2-8 and 62-63 are handmade frames (Bob Jackson, Mercian, Colnago, Freschi, Jack
+  Taylor tandem), p. 9 index and forks, the rest bags, clothing, shoes, tools, pumps,
+  tubes, spokes, cables, wheels. Read 2026-10-21; pp. 32-34 (tubes, pumps, spokes) not
+  read.
+- Dated inside it: "NEW"/"New for 1980": Ideale 88/Titanium and 92 Touriste, SunTour
+  Pro Superbe brake and Superbe pedal, SunTour New Winner freewheel system, SR SilStar pedal,
+  SR Laprade 220 mm, redesigned Campagnolo Super Record rear (cage for 6-7 speed) and Record
+  front, Wolber Liberty, Tange "NEW" Levin.
+- Campagnolo, SunTour, Shimano, Cinelli, SR (Royal, Laprade, Custom, Swan, World bars),
+  Dia-Compe G, Modolo, Mafac and the 600EX headset all already covered 1980: no change.
+- Changed (source_ref -> 247, 27 rows): year_to -> 1980 on 1391 Regina Extra 50 Titanio
+  (sold as the Record III Titanium), 8334 Record S (Record II "S"), 8765 Sedisport,
+  9080 Sugino Mighty Custom, 880 Modolo Professional [INTERN PAT], 9068 Galli Ti, 845
+  MAFAC Cyclo-Tandem, 909 Phil Wood disk brake, 6796 Cycle Pro 300, 6921 Wolber Liberty,
+  Clement 6731 / 6733 / 6737 / 8971, 9104 Mavic Extra Legere, Super Champion 5180 Arc en
+  Ciel and 5189 Record du Monde; year_from -> 1980 on 7821 SunTour TZ-6000 Z chain (1982;
+  the Trans-Z chain dates from 1978), 4009 SunTour PL-4000 Superbe Pro (1981; judgement:
+  the "all-new Superbe pedal going into 1980", 278 g, needle bearings), 8080 Dia-Compe
+  NGC500 (1986); dated 1980-1980 (were undated) 3621 SunTour Vx hubs, 97 OMAS Titanio BB,
+  3067 OMAS Superlight headset, 4910 Ambrosio Synthesis; descriptions on 2976 Chris King
+  1", 3771 KKT Pro Ace (PA) light alloy, 6797 Cycle Pro T230.
+- Added (7 rows, all 1980, group NULL): Ideale 92 Touriste (under brand 580 "Tron &
+  Berthet", where the Ideale rows live), Barelli Superlight, Phil Wood tandem hub (double
+  threaded), Cycle Pro 270 tubular, Cycle Pro High Extra (RRE) and Road Racing Extra
+  clinchers, Cycle Pro touring tires. category_brand links already existed (0 rows
+  inserted).
+- Not applied: Ideale 88/Titanium (new for 1980; the DB has 88 Speciale Competition rows
+  5654 / 5655 1960-80 and a 90 titanium 5658, so it is unclear which is the same part),
+  OMAS sealed bearing hubs (not clearly one of 3449 / 3450), Jasik tandem headset parts,
+  Regina Record I Oro and Super Corse Oro chains (still no unambiguous row), SR SilStar
+  3922 (already 1970-82). Brands "Cycle Pro" (337) and "National" (670) cover the same
+  Japanese maker (National Tire Co.); a later cleanup could merge them. Out of scope: frames,
+  forks (Tange Italian-style, Cinelli-style, standard), the Bikecology-built wheels (Tourist
+  179A / 279A / 379A, Racing Tubular 579), bolts, spokes, tubes, pumps, tools, toe clips and
+  straps, mirrors, cables, tape and plugs, bags, clothing, shoes and helmets.
+
 ## Bike Warehouse catalogue No. 12 — 1978 (blogspot "Catalogues divers: Revue 1978", data_source 246)
 
 - `data_source` label "Bike Warehouse catalogue No. 12 (1978)", country US. Source:
