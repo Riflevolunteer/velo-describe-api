@@ -629,6 +629,8 @@
 
 ## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 92 linked)
 
+- Source (added 2026-10-21): https://www.sheldonbrown.com/retroraleighs/catalogs/1985/ , titled "1985 Raleigh USA Bicycle Catalogue" (scans by Gary, HTML by Sheldon Brown, January 2007; cover, four range pages and a specifications page, no printer or form number). The title states the US market, so US is stated, not inferred.
+
 - Source is a single scanned image on Sheldon Brown's Retro Raleighs site
   (catalogs/1985/pages/specifications.html), 19 per-model text blocks in
   four ranges, not a table. Transcribed by hand (2026-09-28) after cutting

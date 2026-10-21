@@ -23,6 +23,8 @@
 
 ## 1983 Bianchi — `1983_bianchi_spec.csv` (9 bikes, 118 specs, 51 linked)
 
+- Source (added 2026-10-21): ebykr.com "Bianchi Catalog of about 1983" (https://ebykr.com/library/bianchi-1983-catalog/), 12 pages in English, published in Italy by Bianchi; scans from Mark Bulgier's archive (bulgier.net/pics/bike/Catalogs/Bianchi-83/, posted 2001, also on 2velo.com). It carries no year; ebykr estimates 1983 from the Super Pista text citing a 1982 World Championship medal. The catalogue names no export market, so IT is the publisher's country, still an inference for the intended market.
+
 - This catalog exposed that overrides were global: its "Campagnolo Nuovo
   Record" derailleurs inherited the 1973 Raleigh picks. COMPONENT_OVERRIDES
   now accepts year ranges; Nuovo Record front/rear and the Gran Sport and
@@ -56,6 +58,8 @@
   bare value no longer even substring-matches.
 
 ## 1984 Bianchi — `1984_bianchi_spec.csv` (6 bikes, 77 specs, 24 linked)
+
+- Source (added 2026-10-21): ebykr.com "Bianchi Catalog of about 1984" (https://ebykr.com/library/bianchi-1984-catalog/), 9 pages in English, published in Italy by Bianchi; scans from Mark Bulgier's archive (bulgier.net/pics/bike/Catalogs/Bianchi-84/, posted 2001, also on 2velo.com). It carries no year; ebykr estimates 1984 from the Super Pista text citing a 1983 World Championship gold medal. Its models are exactly the six loaded. The catalogue names no export market, so IT is the publisher's country, still an inference for the intended market.
 
 - Looser translation than 1983. Repairs: Frame → Frame Material, "Fork
   details" → Fork, Tires → Tyres, "Rims & Spokes" → Rims, "Saddle & Seatpost"

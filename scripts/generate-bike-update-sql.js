@@ -142,6 +142,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1979|colnago', 'IT'], // four-language export sheet; user chose IT (2026-10-19)
   ['1984|derosa', 'IT'], // Italian/English dealer brochure; user chose IT (2026-10-19). 1989 stays US (GITA dealer catalogue)
   ['1981|bianchi', 'US'], // Vespa of America catalogue
+  ['1985|raleigh', 'US'], // Sheldon Brown "1985 Raleigh USA Bicycle Catalogue"
   ['1982|bianchi', 'US'], // US racing brochure ("available in America")
   ['1988|bianchi', 'US'], // US catalogue (saarf dates it 1986)
   ['1990|bianchi', 'US'], // Bianchi USA Inc., South San Francisco
@@ -152,10 +153,9 @@ const CATALOGUE_COUNTRY = new Map([
   ['1971|peugeot', 'FR'], ['1972|peugeot', 'FR'], ['1973|peugeot', 'FR'], ['1974|peugeot', 'FR'], ['1975|peugeot', 'NL'], ['1976|peugeot', 'NL'], ['1978|peugeot', 'NL'], // 1975: Dutch-only "Peugeot Modellen '75"; 1976: Dutch "Peugeot '76" (both Cycles Peugeot Nederland; the 1976 PY 10 spec comes from the French April 1976 leaflet)
   ['1989|derosa', 'US'], // GITA Sporting Goods (Charlotte NC) US dealer catalogue
   // Inferred, not stated by the source (user accepted 2026-10-19); correct if the original says otherwise:
-  ['1985|raleigh', 'US'], // Sheldon Brown Retro Raleighs scan, lbs weights, Team U.S.A. models
   ['1971|raleigh', 'US'], ['1972|raleigh', 'US'], // Sheldon Brown Retro Raleighs PDF (7 pp excerpt, no printer line); DL model numbers and lbs as the 1970 / 1973 US editions
   ['1973|zeus', 'ES'], // Spanish-language catalogue (Zeus-102)
-  ['1983|bianchi', 'IT'], ['1984|bianchi', 'IT'], // translated from Italian per the transcription notes
+  ['1983|bianchi', 'IT'], ['1984|bianchi', 'IT'], // ebykr / bulgier.net English catalogues published in Italy by Bianchi; no export market named
 ]);
 
 function capitalize(word) {
