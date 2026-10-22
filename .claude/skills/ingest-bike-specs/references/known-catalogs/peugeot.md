@@ -376,6 +376,48 @@
 - Regression: all 48 other catalogues' link counts unchanged (Falcon 1974 and Bianchi 1990
   drift as noted under 1975).
 
+## 1980 Peugeot — `1980_peugeot_spec.csv` (FR, data_source 249: 26 bikes, 402 specs, 81 linked) and `1980_peugeot_nl_spec.csv` (NL, data_source 250: 6 bikes, 115 specs, 51 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1980.html (63 images, loaded
+  2026-10-22). Three catalogues on the post: (1) the Dutch "Peugeotboek voor totale fietsrecreatie,
+  Kollektie 1980" (Cycles Peugeot Nederland b.v., Veenendaal; 38 PeugeotShow scans 840x1200 named
+  "catalogues cycles peugeot 1980 labibleduvelo (N).jpg"; pp. 12 (PX 8 M) and 36 are not on the blog);
+  (2) the French "Les vélos sport et course, Cycles Peugeot 1980" leaflet (AnyConv.com__1-16.jpg,
+  bikeboompeugeot.com, 1000 px landscape panels) with full component specs, unlike the 1973-78 French
+  blurbs; (3) "Les vélos enfants et juniors 1980" (AnyConv.com__17-26.jpg), children's, not loaded.
+  FR is the plain file (`CATALOGUE_COUNTRY` `1980|peugeot`), NL uses the `_nl` filename token.
+- FR loaded: Course PRO 10 (made to measure, Reynolds 5/10, all Spidel, options list in Extras), PY 10 S,
+  PX 10 S, PV 10, PK 10, PKN 10, PKN 13, PF 10, PFN 10, PBN 10, PH 10, H 10 Helium; Cyclotourisme PF 60,
+  P60M; Sport PX 8 M, PL 8 M-5v, PL 8 M, PH 8 M-5v, PH 8 M, H 8 Helium; Randonneurs PX 50 M, PL 50 M-5v,
+  PL 50 M, PH 50 M; tandems TH 8, TM 8. No colours, weights or prices printed. "Même modèle" rows carry
+  the parent spec.
+- NL loaded: supersport PL 8 M; racing PBN 10, PFN 10, PKN 10, PVN 10, PY 10 LC (Spidel parts), with kg
+  weights and colours. PBN 10 / PFN 10 exist in both editions as separate bikes.
+- Not loaded (user's call 2026-10-22): ladies' and mixte drop-bar models, held out as UE 18 / PR 65 were:
+  NL PX 18 MC / PX 18 M, PK 65 lady (PK65C / PK65T); FR PF 65, P65M, PX 18 M, PL 18 M, PH 18 M. NL PXN 10
+  (prose only: 9.9 kg, full Reynolds 531 7/10, pearl white). Town: PE 46 M, PH 41 M, PX 41 M, the
+  semi-sport VL 25 M / VL 22 M range. CPX 100-400 BMX; the Super Competition frameset (p. 27).
+- Transcription: PVN 10 brakes printed "Mafac 605 side-pull" but the photo shows a Weinmann 605 caliper;
+  stored as Weinmann 605, the misprint noted in Extras. PY 10 LC "Mafac side-pull LS2" stored as Spidel
+  LS2 ("all parts Spidel"). PL 8 M rear derailleur is not named. PRO 10 Extras shortened under 255.
+- Overrides: fronts SJA 102 -> 2573, SJA 103 / "SJ 103" -> 2574, SXA22 -> 2577, Spidel SLJ A522 -> 7283;
+  rears Spidel SLJ 5500 CP -> 7309, SX410T -> 4621, SX810T -> 4617, SX 410 GT SP -> 4620; brakes Spidel
+  LS2 -> 834 MAFAC LS2, NL Weinmann 605 -> 1133, Weinmann 506 -> 7764, Mafac Competition anodised -> 825;
+  Spidel D8 headset -> 3117 (row 1981-83); cranks NL Stronglight 104 -> 1878 (Peugeot logo, 1980; the
+  matcher found the 1982 row 8811), 104 Bis -> 1879, 105 Bis -> 1880; bars Atax Franco Italia -> 2897,
+  Atax race bend -> 2901; levers drilled Mafac Promotion -> 347 Perfo, Mafac Dural Course -> 357; pedals
+  Lyotard 136 race -> 3801, Spidel 700 dural cage -> 3833, Lyotard 36 RCM -> null (as 1977); seatpost
+  Simplex SJ4164 -> 5905 Spidel SLJ 4164; Sedissport 108 -> 1402; freewheels Maillard Normandy 5-speed
+  -> 8125 (ranged 1979-82), Maillard 700 6-speed -> 2123; hubs NL plain Maillard Normandy Simplex SX ->
+  8137 small flange Q/R (flange not stated, photos look small flange: a judgement), Normandy Competition
+  -> 3389; tyres '650' -> null (matched Wolber 22 Racing Team 650), Elan TS folding -> 8789; rims 'mavic
+  module e' range widened 1975-78 -> 1975-84 (row dates), Module E drilled -> 5087, Super Champion dural
+  -> 5176.
+- Left unlinked: Peugeot Trophy hubs and tubulars, Gallet 31 / 33 and San Marco luxe saddles, Laprade SR
+  seatposts, Nervar 5570 crank, Rigida Chrolux (ranged to 1960-70), Mafac Course 2000 and plain Promotion
+  levers, Maillard 700 hubs and pedals, Maillard Normandy 6-speed and wing-nut hubs, generic French cells.
+- Regression: all 49 other catalogues' link counts unchanged.
+
 ### Peugeot 1974-78 unlinked-spec pass (2026-10-21)
 
 Override-only pass, back-fill of NULL `component_id`; no new rows. Linked: Mafac Competition -> 825 (range 1971-80), Simplex LJA302 -> 2567, Philippe Professionnel -> 2895, Franco-Italia (incl. Atax-branded) -> 2897, Lyotard 136 Race -> 3801, Maillard 700 hubs -> 3393 / 3394, Normandy Sport -> 3390, Normandy -> 3391, Normandy Competition high flange -> 3384 (row has no years), Stronglight 105 -> 1880, 49 five-hole -> 1894, 49 triple -> 1893, 49D 40/50T -> 1895, Mavic Module E -> 5087 (row dated 1975), Maillard Normandy 5-speed freewheels 1977-78 -> 7240 (row dated 1978; 1979-82 is 8125). Same strings in the 1974 and 1975 catalogues picked up the Mafac and Maillard 700 hub links too.
