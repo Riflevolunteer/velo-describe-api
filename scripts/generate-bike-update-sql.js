@@ -2221,6 +2221,23 @@ const COMPONENT_OVERRIDES = {
     'maillard 700 13 14 15 17 19 21': 2123, // PY 10 LC: Maillard 700 (6 speed)
     '5 speed': null, // 1982 Peugeot: bare speed count; matched a Shimano F200-F512 row
     '600 sh 13 21': 8131, // 1982 Peugeot: Maillard 600 SH 6-speed compact (1982)
+    // Peugeot 1982-84 catalogues print the freewheel as "Maillard Helicomatic". The 1982 Maillard
+    // "Freewheels" catalogue (data_source 103) has the 600 SH as the "original equipment model" and
+    // the 700 SH as the "racing model", so a plain Helicomatic on a complete bike is the 600 SH. Rows
+    // are dated 1982 only; ranged 1980-84 so the 1983 / 1984 bikes link (a year or two off, as before).
+    'maillard helicomatic 6 speed 13 21': [{ from: 1980, to: 1984, id: 8131 }],
+    'maillard helicomatic 6 speed 13 24': [{ from: 1980, to: 1984, id: 8131 }],
+    'maillard helicomatic 6 speed 14 24': [{ from: 1980, to: 1984, id: 8131 }],
+    'maillard helicomatic 13 14 15 17 19 21': [{ from: 1980, to: 1984, id: 8131 }],
+    'maillard helicomatic 13 15 17 20 24 28': [{ from: 1980, to: 1984, id: 8131 }],
+    'maillard helicomatic 14 16 18 20 23 26': [{ from: 1980, to: 1984, id: 8131 }],
+    'maillard helicomatic cassette 14 15 17 19 21 24': [{ from: 1980, to: 1984, id: 8131 }],
+    'maillard helicomatic gold 14 15 17 19 21 24t': [{ from: 1980, to: 1984, id: 8131 }], // 1984 Raleigh Record Sprint 12
+    'maillard helicomatic silver 14 15 17 19 21 24t': [{ from: 1980, to: 1984, id: 8131 }], // 1984 Raleigh Quasar 12
+    '6 speed sh 13 21': [{ from: 1980, to: 1984, id: 8131 }], // 1984 Peugeot (GB) PX 10 DU
+    'maillard helicomatic 5 speed 14 24': [{ from: 1980, to: 1984, id: 8130 }], // 600 SH 5-speed
+    'maillard helicomatic 5 speed 14 28': [{ from: 1980, to: 1984, id: 8130 }],
+    'maillard 700 sh 13 14 15 17 19 21': [{ from: 1980, to: 1984, id: 8132 }], // 1983 Peugeot (NL) PX 10 Du: 700 SH 6-speed compact
     '600 sh 14 24': 8131,
     'maillard normandy 5 speed 14 17 19 21 24t': [{ from: 1977, to: 1978, id: 7240 }], // 1977/78 Peugeot: Normandy 5-speed (row dated 1978, sealed bearings); 1979-82 row is 8125
     'maillard normandy 14 17 19 21 24t': [{ from: 1977, to: 1978, id: 7240 }],
