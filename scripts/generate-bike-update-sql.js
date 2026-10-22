@@ -134,6 +134,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1970|peugeot', 'NL'], // Dutch-market "Peugeot '70" (1971-74 mix NL + FR: left NULL until split)
   ['1979|peugeot', 'FR'], // French home-market catalogue
   ['1980|peugeot', 'FR'], // "Les velos sport et course" leaflet; the Dutch Peugeotboek is 1980_peugeot_nl_spec.csv
+  ['1981|peugeot', 'FR'], // "Les velos sport et course 1981"; the Swiss one-page PY 10 S is 1981_peugeot_ch_spec.csv
   ['1981|kalkhoff', 'DE'], // VeloBase "1981 Kalkhoff Catalog" (kalhoff_prospekt_81.pdf), German text; market not stated
   ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
   ['1973|bianchi', 'IT'], // VeloBase title "1973 Bianchi Catalog (Italian market)"
@@ -722,6 +723,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    'simplex s 061': 4616, // 1981 Peugeot PSV / PK / PF / PFN 10: Simplex S061 T (1981-90)
     'spidel slj 5500 cp': 7309, // 1980 Peugeot PRO 10 / PY 10 S: Simplex SLJ5500 CP, Spidel-badged
     'simplex sx410t': 4621, // 1980 Peugeot (NL): Simplex SX410 T
     'simplex sx810t': 4617, // Simplex SX810 T
@@ -1317,6 +1319,7 @@ const COMPONENT_OVERRIDES = {
   },
   Headsets: {
     'spidel d8': 3117, // 1980 Peugeot PRO 10: Stronglight D8 Extra Leger (row dated 1981-83, as the 1979 S7 pick)
+    'spidel d 8': 3117, // 1981 Peugeot PRO 10
     'stronglight d6 titanium': [{ from: 1977, to: 1980, id: 3116 }], // 1978 Peugeot (NL) PY 10 CP: D6 Extra Leger
     'stronglight v4 competition': [{ from: 1960, to: 1982, id: 3125 }], // 1978 Peugeot (NL) PX 10 LE: V4 later version
     'stronglight d 6 titanium': [{ from: 1977, to: 1977, id: 3116 }], // 1977 Peugeot (DE) PY 10/CP: D6 Extra Leger (1977-80)
@@ -1381,6 +1384,7 @@ const COMPONENT_OVERRIDES = {
   Cranksets: {
     'stronglight 104 anodised 45 x 52t 170 mm': 1878, // 1980 Peugeot (NL): Stronglight 104 (Peugeot logo, 1980); the matcher found the 1982 row
     'stronglight 104 bis 42 x 52t': 1879, // 1980 Peugeot PV 10
+    'stronglight 104 bis 52 x 42t': 1879, // 1981 Peugeot PSV 10
     'stronglight 105 bis anodised and drilled 45 x 52t 170 mm': 1880, // 1980 Peugeot (NL) PVN 10
     'stronglight 105 mod 65 axle five arm cranks 170mm double chainring 42 52t': [{ from: 1970, to: 1982, id: 1880 }], // 1977/78 Peugeot: Stronglight 105 Bis
     'stronglight 105 42 52t': [{ from: 1970, to: 1982, id: 1880 }],
@@ -1622,6 +1626,7 @@ const COMPONENT_OVERRIDES = {
   Handlebars: {
     'atax franco italia thickened race bend 420 mm': 2897, // 1980 Peugeot (NL): Franco-Italia 352 (Atax branding), as 1978
     'atax race bend 420 mm': 2901, // 1980 Peugeot (NL) PL 8 M: course bend -> Franco Belge 354, as 1979
+    steel: null, // 1981 Peugeot PL 50 M: bare material; matched Nitto B125, Steel by substring
     'philippe professionnel dural': 2895, // 1977 Peugeot (DE): Philippe Professionnel 351
     'philippe professionnel dural silver anodised': 2895,
     'philippe professionnel': 2895,

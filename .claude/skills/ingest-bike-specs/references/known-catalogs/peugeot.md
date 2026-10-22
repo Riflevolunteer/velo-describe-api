@@ -418,6 +418,35 @@
   levers, Maillard 700 hubs and pedals, Maillard Normandy 6-speed and wing-nut hubs, generic French cells.
 - Regression: all 49 other catalogues' link counts unchanged.
 
+## 1981 Peugeot — `1981_peugeot_spec.csv` (FR, data_source 251: 23 bikes, 349 specs, 59 linked) and `1981_peugeot_ch_spec.csv` (CH, data_source 252: 1 bike, 15 specs, 1 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1981.html (38 images named
+  1.jpg-37.jpg and 1981_1.jpg, loaded 2026-10-22). Images 1-15: French "Les vélos sport et course,
+  Peugeot 1981" leaflet (bikeboompeugeot.com, dealer stamp Ets Bulle, Dole), with per-model frame text
+  (p. 5, plus "common to PRO 10 .. PFN 13": biconical seat stays, Simplex dropouts with screw stops,
+  brazed guides / bosses / chain rest, Sedisport chain and 6-speed freewheel, dural rims and pedals) and a
+  "Tableau récapitulatif" for the racing range (image 7: cranks, derailleurs, brakes, wheels, bars,
+  saddle and post, gearing). 16-31: "Les vélos ville et campagne" and the children's range; 32-37 CPX and
+  "Vélos cross" leaflet; none loaded. Image 38: Swiss German one-page "Rennvelos für höchste Ansprüche"
+  (Cycles Peugeot DCF-DAC 02.81, printer Schraag, Valdoie): PY 10 S "Professionnel", pearl white, Fr.
+  1680, 52-62 cm; loaded as CH at the user's call.
+- FR loaded: racing PRO 10, PY 10 S, PX 10 S, PSV 10 (new: Super Vitus), PKN 10, PK 10, PFN 13, PFN 10,
+  PF 10, PBN 10, PH 10; cyclotouring PF 60, P 60 M; sports PX 8 M, PL 8 M, PH 8 S, PH 8 M, PH 8 M 5V;
+  randonneur PX 50 S, PL 50 M, PH 50 M; tandems TH 8, TM 8. Maillard Helicomatic rear hubs on PKN 10, PK 10,
+  PSV 10, PF 10, PFN 10, PFN 13, PBN 10 (image 8).
+- Not loaded: ladies' PH 15, PF 65, P 65 M, PX 18 M, PL 18 M, PH 18 M (held out as 1980); town (PX 40 M,
+  PH 40 M, PH 22 M, PX 45 M, PH 45 M, PH 25 M, NS 640 / 622 / 540 / 522 ...), children's (M 23 S, Baby,
+  CPX 12, CP 14, NJ, NC, RML, J 8 GL, J 8 GL 5, C 50 MDL ... C 32 C), CPX BMX.
+- Overrides: Rear 'simplex s 061' -> 4616 Simplex S061 T (1981-90); Cranksets 'stronglight 104 bis 52 x
+  42t' -> 1879; Headsets 'spidel d 8' -> 3117 (as 1980); Handlebars 'steel' -> null (PL 50 M matched Nitto
+  B125, Steel). Matcher: Helicomatic -> 3387 (dated 1980), Stronglight 99 -> 1906, Weinmann 506 / 605,
+  Spidel LS2 -> 834 via the 1980 overrides.
+- Left unlinked: "Ensemble SLJ" derailleurs on PRO 10 / PY 10 S (no model numbers), bare Simplex SJA / SX,
+  Atom 450 pedals (450RA / 450RN rows), Spidel 700 and Maillard 700 pedals, Maillard Trophy hubs, Gallet
+  or San Marco saddles, the Swiss PY 10 S generic cells (Simplex Spidel, Spidel Competition side-pull,
+  Super Competition tubulars).
+- Regression: all 51 other catalogues' link counts unchanged.
+
 ### Peugeot 1974-78 unlinked-spec pass (2026-10-21)
 
 Override-only pass, back-fill of NULL `component_id`; no new rows. Linked: Mafac Competition -> 825 (range 1971-80), Simplex LJA302 -> 2567, Philippe Professionnel -> 2895, Franco-Italia (incl. Atax-branded) -> 2897, Lyotard 136 Race -> 3801, Maillard 700 hubs -> 3393 / 3394, Normandy Sport -> 3390, Normandy -> 3391, Normandy Competition high flange -> 3384 (row has no years), Stronglight 105 -> 1880, 49 five-hole -> 1894, 49 triple -> 1893, 49D 40/50T -> 1895, Mavic Module E -> 5087 (row dated 1975), Maillard Normandy 5-speed freewheels 1977-78 -> 7240 (row dated 1978; 1979-82 is 8125). Same strings in the 1974 and 1975 catalogues picked up the Mafac and Maillard 700 hub links too.
