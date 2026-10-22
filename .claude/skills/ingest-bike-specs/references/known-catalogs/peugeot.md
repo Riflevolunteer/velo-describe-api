@@ -491,6 +491,36 @@
   found three older duplicates, left alone: Shifters 'suntour accushift plus x press' and 'suntour superbe
   pro', Pedals 'sr sp12 platform alloy'.
 
+## 1983 Peugeot — `1983_peugeot_spec.csv` (CA, data_source 255: 9 bikes, 109 specs, 32 linked) and `1983_peugeot_nl_spec.csv` (NL, data_source 256: 15 bikes, 126 specs, 19 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1983.html (33 PeugeotShow scans,
+  loaded 2026-10-22). Images 1-10: bilingual English / French "Peugeot - Pleasure that lasts / Un plaisir
+  qui dure", Velo Sport (1982) Inc., St-Georges-de-Beauce, Québec ("Made in Canada"; Peugeot under licence),
+  one model per half page with a full component list and catalogue number (no. 401-490). Country CA, plain
+  file name. Images 11-33: Dutch "Frans en vrij fietsen met Peugeot, kollektie 1983" (pp. 1-24): prose blurbs
+  plus a small per-model table (frame sizes, colour, weight, freewheel, crankset); much thinner than the
+  1980-82 Peugeotboek, loaded at the user's call because it is the only 1983 source for PY 10 FC, PSVN 10,
+  PX 10 Du and P 12 E.
+- CA loaded: PY 14 Professionnel (no. 448, 14-speed, Stronglight 107, SLJ 5500), PX 14 Super Competition
+  (442), PB 12 Course (433, Reynolds 501), PK 12 Competition (437), PH 9 Challenge (429, Carbolite lugless),
+  UO 12 Sprint (427), UO 9 Super Sport (408), UO 5 Club (401, Huret), PA 60 Nomade (474, 18-speed touring).
+- NL loaded: semi-race PH 8 (lugless, Technyl chainrings), PL 8 M, PX 8 M; race P 10 S (new), H 10, P 12 E
+  (new aerodynamic), PH 12, PBN 10, PKN 10, PFN 10, PSVN 10 (new, Super Vitus 980, Helicomatic, 9.9 kg), PVN
+  10, PXN 10, PX 10 Du (new, Vitus Duralinox 979, 8.6 kg, to order), PY 10 FC (new, carbon fibre main tubes
+  with Duralinox stays / fork / head tube, Stronglight 107 Ti, Ofmega Sintesi, Sedis Nickelée, 7.6 kg).
+- Not loaded: CA PBL 12 (staggered), UO 16C and UE 19 (mixte), C 46 Sprint Junior (24 in), VX 40 Classique
+  (Sturmey 3-speed), TX 30 Tourisme and UE 6 Sport (flat bars). NL PH 15, PH 18 C, PX 18 M / PX 18 MC
+  (ladies'), the Tradition V 40/45 FC-RVS, VL 40/45 FC, V 22/25 M and PH 46 M / PH 41 M (town), CPX BMX.
+- Overrides: Canadian derailleur suffixes read as the standard models: Rear 'simplex slj 5500 cp sp' ->
+  7309, 'lj 4000 cp sp' -> 4603 (version 2, 1978-84), 'lj 1000 cp sp' -> 4646 (row 1975-81), 'sx 810 t p'
+  -> 4617 (row 1977-81), 'sx 410 gt p' -> 4620; Front 'simplex sja 422' -> 7263 SLJ A422, 'sx a 32' ->
+  2578 (row 1984-89, the only one), 'sx a 52' -> 2580; Brakes Weinmann 506 QR -> 7764, 605 QR -> 8642;
+  Pedals 'lyotard 136r with reflectors' -> 3801; Cranksets Stronglight 104 bis (CA and NL wordings) -> 1879.
+- Left unlinked: Maillard 700 / Trophy / alloy hubs, Professional 225 g and Challenge tubulars, Maillard 700
+  7-speed freewheels, Huret Club (rows end 1980; 1984 Sachs Huret), Stronglight / Solida 5470 cranks,
+  Maillard 700RN and 600 pedals, Lyotard 77R, Sedis Nickelée, CLB aero brakes, generic Dutch cells.
+- Regression: all 55 other catalogues' link counts unchanged.
+
 ### Peugeot 1974-78 unlinked-spec pass (2026-10-21)
 
 Override-only pass, back-fill of NULL `component_id`; no new rows. Linked: Mafac Competition -> 825 (range 1971-80), Simplex LJA302 -> 2567, Philippe Professionnel -> 2895, Franco-Italia (incl. Atax-branded) -> 2897, Lyotard 136 Race -> 3801, Maillard 700 hubs -> 3393 / 3394, Normandy Sport -> 3390, Normandy -> 3391, Normandy Competition high flange -> 3384 (row has no years), Stronglight 105 -> 1880, 49 five-hole -> 1894, 49 triple -> 1893, 49D 40/50T -> 1895, Mavic Module E -> 5087 (row dated 1975), Maillard Normandy 5-speed freewheels 1977-78 -> 7240 (row dated 1978; 1979-82 is 8125). Same strings in the 1974 and 1975 catalogues picked up the Mafac and Maillard 700 hub links too.

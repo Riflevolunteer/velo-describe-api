@@ -136,6 +136,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1980|peugeot', 'FR'], // "Les velos sport et course" leaflet; the Dutch Peugeotboek is 1980_peugeot_nl_spec.csv
   ['1981|peugeot', 'FR'], // "Les velos sport et course 1981"; the Swiss one-page PY 10 S is 1981_peugeot_ch_spec.csv
   ['1982|peugeot', 'FR'], // "Peugeot 1982. Une bonne odeur de velo."; the Dutch Peugeotboek is 1982_peugeot_nl_spec.csv
+  ['1983|peugeot', 'CA'], // Velo Sport (1982) Inc., Quebec, bilingual "Pleasure that lasts"; the Dutch kollektie is 1983_peugeot_nl_spec.csv
   ['1981|kalkhoff', 'DE'], // VeloBase "1981 Kalkhoff Catalog" (kalhoff_prospekt_81.pdf), German text; market not stated
   ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
   ['1973|bianchi', 'IT'], // VeloBase title "1973 Bianchi Catalog (Italian market)"
@@ -565,6 +566,9 @@ const COMPONENT_OVERRIDES = {
     'spidel slj a522': 7283, // Simplex SLJ A522 (1978-84), Spidel-badged on the PRO 10 / PY 10 S
     'simplex slja522': 7283,
     'simplex sja 222': 2575, // 1982 Peugeot: Simplex SJ A222 (1981-85)
+    'simplex sja 422': 7263, // 1983 Peugeot (CA) PY 14 / PX 14: Simplex SLJ A422 (1981-84); "SJA-422" is the SLJ A422
+    'simplex sx a 32': 2578, // 1983 Peugeot (CA): Simplex SX A32 (row dated 1984-89, a year early: the only row)
+    'simplex sx a 52': 2580, // 1983 Peugeot (CA) PA 60: Simplex SX A52 (1975-83)
     'simplex sja 223': 2576, // 1982 Peugeot PFN 13 triple: SJ A223
     'simplex sja 222 cx': 2575, // 1982 Peugeot (NL) PH 12: braze-on CX version of the SJ A222 (no CX row)
     'spidel slja 422': 7263, // 1982 Peugeot PY 10 S: Simplex SLJ A422 (1981-84), Spidel-badged
@@ -734,6 +738,12 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 610 tsp': 4631, // 1982 Peugeot PX 10 DU / PX 10 S: Simplex SX610 T (1981-85)
     'simplex sx 610 t': 4631,
     'simplex sx 810 tsp': 4617, // 1982 Peugeot PBN 10 S
+    // 1983 Peugeot (CA, Velo Sport): "/SP" and "T/P" are the Canadian suffixes for the same gears
+    'simplex sx 810 t p': 4617, // SX810 T (row dated 1977-81)
+    'simplex sx 410 gt p': 4620, // SX410 GT
+    'simplex slj 5500 cp sp': 7309, // SLJ5500 CP
+    'simplex lj 4000 cp sp': 4603, // LJ4000 CP version 2 (1978-84)
+    'simplex lj 1000 cp sp': 4646, // LJ1000 CP (row dated 1975-81)
     'simplex 810t': 4617, // 1982 Peugeot (NL) lugless PH 10 / PH 10 S
     'simplex s001t': 4647, // 1982 Peugeot (NL) H 10: Simplex S001 T, Prestige
     'spidel slj 550 cp': 7309, // 1982 Peugeot PY 10 S: table prints "SLJ 550 CP", the SLJ5500 CP
@@ -1112,6 +1122,8 @@ const COMPONENT_OVERRIDES = {
   Brakes: {
     'spidel lsx': 823, // 1982 Peugeot PRO 10 / PY 10 S: MAFAC LSX (1982), Spidel-badged
     'spidel lsx professional': 823,
+    'weinmann 506 alloy side pull quick release': 7764, // 1983 Peugeot (CA) PH 9: Weinmann AG 506 (1979-83)
+    'weinmann 605 quick release': 8642, // 1983 Peugeot (CA) PK 12
     'weinmann 500': 8636, // 1982 Peugeot: Weinmann AG 500 base row (1963-84); the 1980 variants differ by bolt colour, not stated
     'weinmann 500 side pull forged dural': 8636,
     'weinmann 605': 8642, // 1982 Peugeot PX 10 S / PSV 10 S: Weinmann AG 605 (1978-84); 1133 is dated 1978-80
@@ -1408,6 +1420,8 @@ const COMPONENT_OVERRIDES = {
     'spidel 107 aerodynamic': 1883, // 1982 Peugeot PRO 10: Stronglight 107 (1980-85), Spidel-badged
     'stronglight 104 bis 42 x 52t': 1879, // 1980 Peugeot PV 10
     'stronglight 104 bis 52 x 42t': 1879, // 1981 Peugeot PSV 10
+    'stronglight 104 bis 42 x 52t 170 mm': 1879, // 1983 Peugeot (CA) PK 12
+    'stronglight 104 bis drilled 45 x 52t': 1879, // 1983 Peugeot (NL) PVN 10
     'stronglight 105 bis anodised and drilled 45 x 52t 170 mm': 1880, // 1980 Peugeot (NL) PVN 10
     'stronglight 105 mod 65 axle five arm cranks 170mm double chainring 42 52t': [{ from: 1970, to: 1982, id: 1880 }], // 1977/78 Peugeot: Stronglight 105 Bis
     'stronglight 105 42 52t': [{ from: 1970, to: 1982, id: 1880 }],
@@ -1926,6 +1940,7 @@ const COMPONENT_OVERRIDES = {
   Pedals: {
     'lyotard 36 rcm with reflector christophe toe clips and straps': null, // 1980 Peugeot (NL) PBN 10: not the 1950-70 "Lyotard 36" row, as 1977
     'lyotard 136 race with reflectors toe clips and straps': 3801, // 1980 Peugeot (NL) PL 8 M: Lyotard 136R, as 1978
+    'lyotard 136r with reflectors': 3801, // 1983 Peugeot (CA) UO 9 / PA 60: Lyotard 136R (type 1), as 1978-82
     'spidel 700 dural cage christophe toe clips and lapize straps': 3833, // 1980 Peugeot PRO 10 / PY 10 S: dural cage, as the 1979 'spidel 700 dural course'
     'lyotard 45 ca or atom 600 dural steel cage with christophe toe clips and lapize toe straps': null, // 1977 Peugeot (DE) PS 10/E, PSN 10/E: either / or; the matcher finds 9085 Lyotard 45, but the 45 CA is a different row (3811)
     'lyotard 136 race with toe clips and straps': 3801, // 1978 Peugeot (NL): Lyotard 136R
