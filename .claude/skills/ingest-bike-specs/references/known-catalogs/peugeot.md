@@ -521,6 +521,45 @@
   Maillard 700RN and 600 pedals, Lyotard 77R, Sedis Nickelée, CLB aero brakes, generic Dutch cells.
 - Regression: all 55 other catalogues' link counts unchanged.
 
+## 1984 Peugeot — `1984_peugeot_spec.csv` (FR, data_source 257: 25 bikes, 402 specs, 56 linked) and `1984_peugeot_gb_spec.csv` (GB, data_source 258: 11 bikes, 200 specs, 45 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1984.html (40 images, loaded
+  2026-10-22). Images 1-30: French "Peugeot Bicyclettes 1984, A la rencontre de la liberté"
+  (bikeboompeugeot.com; image N = printed page N; dealer stamp 11/83, prices pencilled in). Racing pp. 4-7
+  give frame / sizes and refer to the "Recapitulation table of racing models" pp. 22-23, printed in English
+  (frame, fork, steering, crank, pedals, freewheel / wheels, derailleurs, post and saddle, bars, brakes,
+  accessories; "6S SH" = 6-speed Maillard Helicomatic). Sport / touring / randonneur pp. 8-11 are prose.
+  Images 31-40: UK "Cycles Peugeot 1984" brochure (bikeboompeugeot.com) with a "Detailed specification"
+  table (image 39) for 11 models plus colour codes and sizes on the model spreads; GB via the filename token.
+- FR loaded: racing PRO 10, PY 10 LS, PZ 10 (new: Campagnolo Super Record build, Reynolds 531 7/10), PY 10
+  FC, PX 10 DU, PX 10 LS, PSV 10 L, PGN 10, PG 10 (tubular PGN 10), PH 12, PH 13, PH 11 (new: Peugeot BBT
+  brazed butted tubing), PH 10 LS, PH 10 M, P 10 S, P 10 L; cyclotouring PCA 10 (Reynolds 501, Huret
+  Duopar, CLB cantilevers, racks); sports PH 60 C (cycle computer in the stem), PX 8 L, PH 8 S, PH 8 M, P 8 L;
+  randonneur PX 50 S, PL 50 M, PH 50 M.
+- GB loaded: PY 10 FC 'Fibre de Carbone', PX 10 DU '979', PY 10 LS Professional, PS 10 L Roubaix (= the
+  French PSV 10 L), PGN 10 US Routier (new, Reynolds 501 'Cromalloy M'), PGN 10 Paris-Nice, PH 11 Avance, PH
+  10 LS Competition, PH 10 L Criterium, MB 1 Urban Express and MB 2 Canyon Express (Peugeot's first mountain
+  bikes, chrome-moly TIG, SunTour, SR, Tange, Araya / Sumo).
+- Not loaded: ladies' / mixte FR PH 15 T, PH 65, PCA 15, PH 18 S / PH 18 M, P 18 L, PX 18 L; GB VH 35 S, PH 18
+  L, PH 15 C, P 15 C. Town FR VX 40 FC, VX 45 FC, VL 45 M, VL 40 M, V 25, PRP 20 M, PH 35 S, PX 45 S, PH 45 M,
+  PH 40 M, P 45, P 25. Children's / cross / CPX BMX; GB C 50 CX, P 20, P 30. Track framesets CFP 11 / CFP 13
+  (Columbus). GB P 10 L Premiere, P 10 S Talisman 12, PH 11 L, P 10 T (blurbs, not in the spec table).
+- Overrides: run-together model numbers — Front 'simplex sja222' / 'sja222cx' -> 2575, 'slja422' -> 7263,
+  'sxa32' -> 2578, 'sxa33' -> 7312; Rear 'sx610tsp' -> 4631, 'sx810tsp' -> 4617, 'sx061tsp' -> 4616,
+  'sx410 gtsp' -> 4620, 'slj5500cp' -> 7309, 'slj6600tsp' -> 4655 SLJ6600 T, GB misprints 'slga550cp' ->
+  7309 and 'slj660tsp' -> 4655; 'campagnolo 1020/a' -> 4126 Nuovo Record v4 (1982-84). Headsets
+  'stronglight a9' -> 3112 (France locknut, 1984-85), 'stronglight b10' -> 3114. Rims 'super champion
+  model 58 23 mm' -> 5178.
+- Bare "Campagnolo" (PZ 10 headset and seat post): the existing overrides (headset 2959 for 1974
+  Motobecane, post 5749 to 1985) now carry a `{ bike: 'PZ 10', id: null }` entry first, so only that
+  Super Record bike is blocked. A year-based block was tried first and cost the 1983 Bianchi Campione del
+  Mondo its seat-post link.
+- Left unlinked: Campagnolo 1052/1 front (rows 1960-77), Peyrard / Nervar 3020 and Solida 5171 / 5271 / 5371
+  cranks, Maillard Palette CX 500 / 550, CX650, CX700, 700 pedals, Helicomatic freewheels, Atom and Maillard
+  hubs, Lightrace headsets, Turbo / Tenor / Viscount Terra saddles, CLB brakes, Huret Duopar (variants), the
+  MB parts (SunTour, SR, Tange, Araya, Sumo, VP), generic cells.
+- Regression: all 57 other catalogues' link counts unchanged.
+
 ### Peugeot 1974-78 unlinked-spec pass (2026-10-21)
 
 Override-only pass, back-fill of NULL `component_id`; no new rows. Linked: Mafac Competition -> 825 (range 1971-80), Simplex LJA302 -> 2567, Philippe Professionnel -> 2895, Franco-Italia (incl. Atax-branded) -> 2897, Lyotard 136 Race -> 3801, Maillard 700 hubs -> 3393 / 3394, Normandy Sport -> 3390, Normandy -> 3391, Normandy Competition high flange -> 3384 (row has no years), Stronglight 105 -> 1880, 49 five-hole -> 1894, 49 triple -> 1893, 49D 40/50T -> 1895, Mavic Module E -> 5087 (row dated 1975), Maillard Normandy 5-speed freewheels 1977-78 -> 7240 (row dated 1978; 1979-82 is 8125). Same strings in the 1974 and 1975 catalogues picked up the Mafac and Maillard 700 hub links too.

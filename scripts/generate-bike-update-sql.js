@@ -136,6 +136,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1980|peugeot', 'FR'], // "Les velos sport et course" leaflet; the Dutch Peugeotboek is 1980_peugeot_nl_spec.csv
   ['1981|peugeot', 'FR'], // "Les velos sport et course 1981"; the Swiss one-page PY 10 S is 1981_peugeot_ch_spec.csv
   ['1982|peugeot', 'FR'], // "Peugeot 1982. Une bonne odeur de velo."; the Dutch Peugeotboek is 1982_peugeot_nl_spec.csv
+  ['1984|peugeot', 'FR'], // "Peugeot Bicyclettes 1984"; the UK brochure is 1984_peugeot_gb_spec.csv
   ['1983|peugeot', 'CA'], // Velo Sport (1982) Inc., Quebec, bilingual "Pleasure that lasts"; the Dutch kollektie is 1983_peugeot_nl_spec.csv
   ['1981|kalkhoff', 'DE'], // VeloBase "1981 Kalkhoff Catalog" (kalhoff_prospekt_81.pdf), German text; market not stated
   ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
@@ -566,6 +567,12 @@ const COMPONENT_OVERRIDES = {
     'spidel slj a522': 7283, // Simplex SLJ A522 (1978-84), Spidel-badged on the PRO 10 / PY 10 S
     'simplex slja522': 7283,
     'simplex sja 222': 2575, // 1982 Peugeot: Simplex SJ A222 (1981-85)
+    // 1984 Peugeot (FR table / GB spec): model numbers printed run together
+    'simplex sja222': 2575,
+    'simplex sja222cx': 2575, // PH 12 braze-on; no CX row
+    'simplex slja422': 7263, // Simplex SLJ A422 (1981-84)
+    'simplex sxa32': 2578, // Simplex SX A32 (1984-89)
+    'simplex sxa33': 7312, // PH 13 triple: Simplex SX A33 (1984-89)
     'simplex sja 422': 7263, // 1983 Peugeot (CA) PY 14 / PX 14: Simplex SLJ A422 (1981-84); "SJA-422" is the SLJ A422
     'simplex sx a 32': 2578, // 1983 Peugeot (CA): Simplex SX A32 (row dated 1984-89, a year early: the only row)
     'simplex sx a 52': 2580, // 1983 Peugeot (CA) PA 60: Simplex SX A52 (1975-83)
@@ -735,6 +742,17 @@ const COMPONENT_OVERRIDES = {
     'simplex s 061': 4616, // 1981 Peugeot PSV / PK / PF / PFN 10: Simplex S061 T (1981-90)
     'simplex s061 tsp': 4616, // 1982 Peugeot: no TSP row, S061 T is the same gear
     'simplex s061tsp': 4616,
+    // 1984 Peugeot (FR table / GB spec)
+    'simplex sx061tsp': 4616, // PH 11: "SX 061 TSP" is the S061 T
+    'simplex sx610tsp': 4631, // SX610 T (1981-85)
+    'simplex sx810tsp': 4617, // SX810 T
+    'simplex sx410 gtsp': 4620, // SX410 GT
+    'simplex slj5500cp': 7309, // SLJ5500 CP
+    'simplex slga550cp': 7309, // GB table misprint of SLJA 5500 CP
+    'simplex slj6600tsp': 4655, // PY 10 FC: SLJ6600 T (1981-84)
+    'simplex slj660tsp': 4655, // GB table PX 10 DU: misprint of SLJ 6600 TSP
+    'campagnolo 1020/a': [{ from: 1982, to: 1984, id: 4126 }], // 1984 Peugeot PZ 10: Nuovo Record v4 (1982-84)
+    'campagnolo 1020 a': [{ from: 1982, to: 1984, id: 4126 }],
     'simplex sx 610 tsp': 4631, // 1982 Peugeot PX 10 DU / PX 10 S: Simplex SX610 T (1981-85)
     'simplex sx 610 t': 4631,
     'simplex sx 810 tsp': 4617, // 1982 Peugeot PBN 10 S
@@ -1352,6 +1370,8 @@ const COMPONENT_OVERRIDES = {
   Headsets: {
     'spidel d8': 3117, // 1980 Peugeot PRO 10: Stronglight D8 Extra Leger (row dated 1981-83, as the 1979 S7 pick)
     'spidel d 8': 3117, // 1981 Peugeot PRO 10
+    'stronglight a9': 3112, // 1984 Peugeot: Stronglight A9 (France on locknut, 1984-85); the Spidel-locknut 3113 is the Spidel-badged one
+    'stronglight b10': 3114, // 1984 Peugeot PSV 10 L / PS 10 L: Stronglight B10 (1984-86)
     'spidel 57': 3123, // 1982 Peugeot PY 10 S: table prints "Spidel 57", read as the S7 (Stronglight S7 Super Competition, 1981-83)
     'stronglight d6 titanium': [{ from: 1977, to: 1980, id: 3116 }], // 1978 Peugeot (NL) PY 10 CP: D6 Extra Leger
     'stronglight v4 competition': [{ from: 1960, to: 1982, id: 3125 }], // 1978 Peugeot (NL) PX 10 LE: V4 later version
@@ -1381,8 +1401,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record pista': [{ to: 1985, id: 2966 }, { from: 1987, id: 7024 }], // 1040 to 1985; A0D0P from 1987
     'campagnolo veloce': 2970, // 1993 Bianchi: Campagnolo HS-01VL, Veloce (part-number retitle)
     'shimano 600': [{ from: 1983, to: 1987, id: 3090 }], // 1987 Bianchi: Shimano HP-6207, 600EX
-    // 1974 Motobecane.
-    campagnolo: 2959, // Campagnolo 1039, Gran Sport / Record
+    // 1974 Motobecane. Not for the 1984 Peugeot PZ 10, a Super Record build (4041 would be the guess).
+    campagnolo: [{ bike: 'PZ 10', id: null }, { id: 2959 }], // Campagnolo 1039, Gran Sport / Record
     'stronglight competition': 3125, // Stronglight V4 Competition (later version, octagonal locknut, 1960-80); was the 1950-60 earlier version until the 1970 Peugeot pass
     // 1981 Kalkhoff (ambiguous with the Super Record Pista row).
     'campagnolo super record': 2968, // Campagnolo 4041, Super Record
@@ -2071,7 +2091,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo gran sport': 5734, // Campagnolo 3800, Gran Sport
     // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
     // from in the 90s (Krono 1993), so blocked rather than wrong.
-    'campagnolo': [{ to: 1985, id: 5749 }, { from: 1990, id: null }], // Campagnolo 1044, Record
+    // 1984 Peugeot PZ 10 is a Super Record build (the 4051/1 would be the guess): blocked for that bike.
+    'campagnolo': [{ bike: 'PZ 10', id: null }, { to: 1985, id: 5749 }, { from: 1990, id: null }], // Campagnolo 1044, Record
     'campagnolo seat post': [{ to: 1985, id: 5749 }], // 1974 / 75 Motobecane, split out of the Saddle cells
     'campagnolo alloy': [{ to: 1985, id: 5749 }], // 1974 Raleigh: Campagnolo 1044, Record
     'campagnolo super nuovo record': [{ from: 1974, to: 1980, id: 5759 }], // 1974 Raleigh Team Professional: Campagnolo 4051, Super Record
@@ -2336,6 +2357,7 @@ const COMPONENT_OVERRIDES = {
     'mavic monthlery drilled for tubulars': [{ from: 1970, to: 1980, id: 5093 }], // 1978 Peugeot (NL): Montlhéry Route, as the 1973-75 "Mavic Monthlery" picks (Route / Pro / Légère all listed, text does not say which)
     'mavic module e': [{ from: 1975, to: 1984, id: 5087 }], // 1978 Peugeot (NL): Module E (Red Label); the row is now dated 1975-84, so 1980 Peugeot PKN 10 / 13 too
     'mavic module e drilled': [{ from: 1975, to: 1984, id: 5087 }], // 1980 Peugeot (NL) PVN 10
+    'super champion model 58 23 mm': 5178, // 1984 Peugeot (GB) PH 10 L: Super Champion Mod. 58 (1960-80)
     'super champion dural 700c tubular': 5176, // 1980 Peugeot PY 10 S: Super Champion Competition, as 1979 'super champion 700c dural'
     'super champion dural 32 hole stainless spokes': 5176, // 1980 Peugeot PRO 10
     'rigida chrolux': [{ from: 1960, to: 1970, id: 5158 }], // 1978 Peugeot (NL) TM 8 would otherwise inherit the 1960-70 chrome rim; no 1978 Chrolux row
