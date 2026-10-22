@@ -1958,6 +1958,10 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    // SR pedals named by model number (rows from the SR Catalog No. 18 pass, data_source 92)
+    'sr sp100al alloy': 3922, // 1979 Raleigh Super Course: SP-100AL Silstar quill (1970-82)
+    'sr sp100 alloy quill': 3922, // 1986 Raleigh Portage: same quill, row ends 1982 (a judgement)
+    'sakae sp 150': 3925, // 1982 Peugeot PX 10 DU / PX 10 S / PSV 10 S: SP-150 (row 1970-80, the only SP-150 row)
     'lyotard 36 rcm with reflector christophe toe clips and straps': null, // 1980 Peugeot (NL) PBN 10: not the 1950-70 "Lyotard 36" row, as 1977
     'lyotard 136 race with reflectors toe clips and straps': 3801, // 1980 Peugeot (NL) PL 8 M: Lyotard 136R, as 1978
     'lyotard 136r with reflectors': 3801, // 1983 Peugeot (CA) UO 9 / PA 60: Lyotard 136R (type 1), as 1978-82
@@ -2043,6 +2047,11 @@ const COMPONENT_OVERRIDES = {
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
+    // 1986 Raleigh: SR CT-P5 (Sakae Laprade). 5857 is the later version (1980-82) vs 5858 early;
+    // the CT-P5E cells stay unlinked (no E row).
+    'sr ctp 5 laprade alloy micro adjust': 5857,
+    'sr cpt 5 laprade micro adjust': 5857,
+    'sr laprade ctp5 alloy micro adjust': 5857,
     'simplex sj4164': 5905, // 1980 Peugeot (NL) PY 10 LC ("all parts Spidel"): Spidel SLJ 4164
     // 1978 Peugeot (NL).
     'laprade 505': [{ from: 1970, to: 1979, id: 5815 }], // PY 10 EC: Laprade Brevete 505 (1970-79)

@@ -455,3 +455,6 @@ CR3" (no row), "Brooks B-15" (Champion Standard / Narrow / Swallow ambiguous),
   brand-only Unicanitor / HKK / SEDIS / Hutchinson Silk / Super Champion values.
 - Known drift, not chased: 1978 and 1979 Peugeot and 1990 Bianchi have 2-3 more links in the
   DB than a regeneration produces (harmless; the back-fill never unlinks).
+
+## SR / Sakae model-number links (2026-10-22)
+After re-checking SR Catalog No. 18 (data_source 92, already ingested): Pedals 'sr sp100al alloy' (1979 Raleigh Super Course) and 'sr sp100 alloy quill' (1986 Raleigh Portage, row ends 1982) -> 3922 SP-100AL Silstar; 'sakae sp 150' (1982 Peugeot PX 10 DU / PX 10 S / PSV 10 S) -> 3925 SP-150 (row 1970-80, the only one). Seat Posts: 1986 Raleigh "SR CTP-5 / CPT-5 / Laprade CTP5" -> 5857 CT-P5 (later version, 1980-82, over the 5858 early version). CT-P5E / CPT5E cells left unlinked (no E row). Back-fill only: 1979 Raleigh 33 -> 34, 1982 Peugeot 84 -> 87, 1986 Raleigh 82 -> 86. Most other unlinked SR specs are mid-80s numbering (SAC 310, CRH-310, CXC-624, MTH-100, SP-452 / 518, CLE-100, MTB-224) that needs a later SR catalogue, or generic "SR alloy" text.
