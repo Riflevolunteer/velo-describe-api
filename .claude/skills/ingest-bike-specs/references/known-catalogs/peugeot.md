@@ -447,6 +447,50 @@
   Super Competition tubulars).
 - Regression: all 51 other catalogues' link counts unchanged.
 
+## 1982 Peugeot — `1982_peugeot_spec.csv` (FR, data_source 253: 24 bikes, 403 specs, 82 linked) and `1982_peugeot_nl_spec.csv` (NL, data_source 254: 12 bikes, 210 specs, 59 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1982.html (59 images, loaded
+  2026-10-22). Images 1-4: French "Gamme Plus" price flyer (prices at 1/3/82; Z 40, Z 45, Z 10 790 F,
+  Z 8 870 F, Z 18; one-liners, not loaded at the user's call). Images 5-28: French "Peugeot 1982. Une
+  bonne odeur de vélo." (bikeboompeugeot.com; image N = printed page N-4): sport et course pp. 3-8, ville
+  et tourisme 9-11, cross 15-17, enfant 18-21, "Tableau récapitulatif des modèles course" pp. 22-23 (frame,
+  fork, headset, crank, pedals, freewheel / wheels, Simplex derailleurs, saddle and post, bars, brakes,
+  accessories for all 13 racing models). Images 29-59: Dutch "Peugeotboek voor totale fietsrecreatie,
+  kollektie 1982" (PeugeotShow; image N = page N-28; Peugeot centenary "Eeuwfeest 100").
+- FR loaded: racing PRO 10, PY 10 S, PX 10 DU (new: Vitus 979 Duralinox frame and fork), PX 10 S, PSV 10 S
+  (Super Vitus 980), PF 10 S, PFN 10 S, PFN 13, PF 10, PFN 10, PBN 10 S, PH 10 S, P 10; cyclotouring PF 60;
+  sports PX 8 S, PH 8 S, PH 8 M, PH 8M 5V, P 8; randonneur PX 50 S, PL 50 M, PH 50 M; tandems TM 8, TH 8.
+  Racing rows = p. 4 common features + frame text + table row.
+- NL loaded: semi-race PX 8 M (15.0 kg, 54-66 cm), PL 8 M; race PH 12 (new aerodynamic: Sakae Custom, SX
+  660 / SJA 222 CX, CLB Competition, Ofmega pedals, Mavic Module E, 10.8 kg), PBN 10, PFN 10, PKN 10, PVN
+  10, PXN 10 (full spec this year, 9.9 kg); lugless ("Peugeot Specials '82") H 10, PH 10, PH 10 S
+  (Helicomatic), PH 8 M.
+- Not loaded: ladies' / mixte FR PH 15, PX 18 S, PH 18 S, P 18, PF 65; NL PX 18 MC / PX 18 M, PH 18 MC,
+  PH 15. Town FR VX 45 MF, VX 40 MF, VL 25 M / VL 45 M / VL 40 M, PRP 20 M, PNS 55 S, NS 640 / NS 540, PX
+  45 S, PH 45 M, PH 35 S, P 25, PH 40 M, PH 22 M; NL PH 46 M, PH 41 M, PX 18 MF, PX 41 MF (also the
+  lugless PH 41 M / PH 46 M) and the "Tradition" sport range (pp. 8-11). Cross, children's, BMX, clothing.
+- Transcription: NL PVN 10 / PXN 10 brakes printed "Mafac 605" again; no close-up this year, so stored as
+  "605 side-pull" (unlinked) with the misprint noted. FR PY 10 S headset "Spidel 57" read as S7 and "SLJ
+  550 CP" as the SLJ 5500 CP.
+- Overrides: Rear S061 TSP -> 4616, SX 610 T / TSP -> 4631, SX 810 TSP and "810T" -> 4617, S001T -> 4647,
+  Spidel SLJ 550 CP -> 7309; 'simplex prestige' rear ranged to <= 1979 (4583 is 1971-74; the NL PL 8 M
+  stays unlinked). Front SJA 222 -> 2575, SJA 223 -> 2576, SJA 222 CX -> 2575, Spidel SLJA 422 -> 7263.
+  Brakes Spidel LSX -> 823 MAFAC LSX, Weinmann 500 -> 8636 base row, bare Weinmann 605 -> 8642 (1978-84),
+  Carrera 400 -> 1168; levers Weinmann 144-1 -> 7769, Carrera 400 -> 493 (No. 185). Cranks Spidel 107 ->
+  1883 Stronglight 107; 'stronglight 104 anodised 45 x 52t 170 mm' ranged 1980-81 -> 1878, 1982 -> 8811.
+  Headset 'spidel 57' -> 3123. Freewheels '600 sh 13 21' / '14 24' -> 8131 (600 SH 6-speed compact),
+  '5 speed' -> null (matched Shimano F200). Handlebars 'race' -> null (matched Modolo Q-Race). Hubs
+  'normandy luxe competition' was already a 1974 Motobecane override (3388) further down the Hubs block;
+  a second copy of the key silently replaced it, so the two were merged into one ranged entry (to 1979
+  -> 3388, from 1980 -> 3389 red label).
+- Left unlinked: Atom 500 RA, Sakae SP 150, Spidel 700 RA, Lyotard 77R pedals; Lightrace headsets; Reydel
+  Profil, Selle Italia CX, Royal 463/2 saddles; Solida 5270A, Sakae Custom cranks; Maillard Helicomatic
+  and 6-speed Normandy freewheels; Maillard 700 SH hubs; SX 660 (only the undated SLJ SX660 row); CLB
+  Competition (1950-70 rows), Ofmega pedals; Mafac Promotion levers (variants).
+- Regression: all 53 other catalogues' link counts unchanged. A duplicate-key scan of COMPONENT_OVERRIDES
+  found three older duplicates, left alone: Shifters 'suntour accushift plus x press' and 'suntour superbe
+  pro', Pedals 'sr sp12 platform alloy'.
+
 ### Peugeot 1974-78 unlinked-spec pass (2026-10-21)
 
 Override-only pass, back-fill of NULL `component_id`; no new rows. Linked: Mafac Competition -> 825 (range 1971-80), Simplex LJA302 -> 2567, Philippe Professionnel -> 2895, Franco-Italia (incl. Atax-branded) -> 2897, Lyotard 136 Race -> 3801, Maillard 700 hubs -> 3393 / 3394, Normandy Sport -> 3390, Normandy -> 3391, Normandy Competition high flange -> 3384 (row has no years), Stronglight 105 -> 1880, 49 five-hole -> 1894, 49 triple -> 1893, 49D 40/50T -> 1895, Mavic Module E -> 5087 (row dated 1975), Maillard Normandy 5-speed freewheels 1977-78 -> 7240 (row dated 1978; 1979-82 is 8125). Same strings in the 1974 and 1975 catalogues picked up the Mafac and Maillard 700 hub links too.

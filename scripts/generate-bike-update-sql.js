@@ -135,6 +135,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1979|peugeot', 'FR'], // French home-market catalogue
   ['1980|peugeot', 'FR'], // "Les velos sport et course" leaflet; the Dutch Peugeotboek is 1980_peugeot_nl_spec.csv
   ['1981|peugeot', 'FR'], // "Les velos sport et course 1981"; the Swiss one-page PY 10 S is 1981_peugeot_ch_spec.csv
+  ['1982|peugeot', 'FR'], // "Peugeot 1982. Une bonne odeur de velo."; the Dutch Peugeotboek is 1982_peugeot_nl_spec.csv
   ['1981|kalkhoff', 'DE'], // VeloBase "1981 Kalkhoff Catalog" (kalhoff_prospekt_81.pdf), German text; market not stated
   ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
   ['1973|bianchi', 'IT'], // VeloBase title "1973 Bianchi Catalog (Italian market)"
@@ -563,6 +564,10 @@ const COMPONENT_OVERRIDES = {
     'simplex sxa22': 2577, // Simplex SX A22
     'spidel slj a522': 7283, // Simplex SLJ A522 (1978-84), Spidel-badged on the PRO 10 / PY 10 S
     'simplex slja522': 7283,
+    'simplex sja 222': 2575, // 1982 Peugeot: Simplex SJ A222 (1981-85)
+    'simplex sja 223': 2576, // 1982 Peugeot PFN 13 triple: SJ A223
+    'simplex sja 222 cx': 2575, // 1982 Peugeot (NL) PH 12: braze-on CX version of the SJ A222 (no CX row)
+    'spidel slja 422': 7263, // 1982 Peugeot PY 10 S: Simplex SLJ A422 (1981-84), Spidel-badged
     'simplex lja302': 2567, // 1978 Peugeot (NL): Simplex LJ A302
     'simplex slja 502': [{ from: 1978, to: 1981, id: 7281 }], // 1978 Peugeot (NL) PX 10 LE / PY 10 EC / PY 10 CP: SLJ A502 (1978-81)
     'simplex slja 522': [{ from: 1977, to: 1984, id: 7283 }], // 1977 Peugeot (DE) PY 10/CP: SLJ A522 (the only row, dated 1978-84; a judgement, one year early)
@@ -724,6 +729,14 @@ const COMPONENT_OVERRIDES = {
   },
   'Rear Derailleurs': {
     'simplex s 061': 4616, // 1981 Peugeot PSV / PK / PF / PFN 10: Simplex S061 T (1981-90)
+    'simplex s061 tsp': 4616, // 1982 Peugeot: no TSP row, S061 T is the same gear
+    'simplex s061tsp': 4616,
+    'simplex sx 610 tsp': 4631, // 1982 Peugeot PX 10 DU / PX 10 S: Simplex SX610 T (1981-85)
+    'simplex sx 610 t': 4631,
+    'simplex sx 810 tsp': 4617, // 1982 Peugeot PBN 10 S
+    'simplex 810t': 4617, // 1982 Peugeot (NL) lugless PH 10 / PH 10 S
+    'simplex s001t': 4647, // 1982 Peugeot (NL) H 10: Simplex S001 T, Prestige
+    'spidel slj 550 cp': 7309, // 1982 Peugeot PY 10 S: table prints "SLJ 550 CP", the SLJ5500 CP
     'spidel slj 5500 cp': 7309, // 1980 Peugeot PRO 10 / PY 10 S: Simplex SLJ5500 CP, Spidel-badged
     'simplex sx410t': 4621, // 1980 Peugeot (NL): Simplex SX410 T
     'simplex sx810t': 4617, // Simplex SX810 T
@@ -835,7 +848,7 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi Strada: no 1980s Tourney rear derailleur row exists; the
     // only hits are 1970s DB-300/DB-400, so block it.
     'shimano tourney': null,
-    'simplex prestige': 4583, // Simplex Prestige (variant of AR637P/NI), 1971-1974
+    'simplex prestige': [{ from: 1900, to: 1979, id: 4583 }], // Simplex Prestige (variant of AR637P/NI), 1971-1974; not for the 1982 Peugeot (NL) PL 8 M
     // DB title is `Zeus "Especial Alfa 72"` — the quotes and brand prefix
     // defeat substring matching.
     'alfa 72': 4863,
@@ -1037,7 +1050,8 @@ const COMPONENT_OVERRIDES = {
     'normandy sport forged large flange light alloy': 3390, // Record Limited
     // 1974 Motobecane. Bare "Normandy Luxe Competition" is ambiguous between
     // the gold- and red-label rows; the road bikes took the high-flange gold.
-    'normandy luxe competition': 3388,
+    // 1982 Peugeot PFN 10 S: the red label (3389, 1970-80) is the later hub.
+    'normandy luxe competition': [{ to: 1979, id: 3388 }, { from: 1980, id: 3389 }],
     'normandy sport with quick release': 3390,
     'campagnolo record': [{ to: 1987, id: 3260 }, { from: 1990, id: 3265 }], // 1035 high flange (to 1987, covers 1986 Cinelli) / Record 8sp
     // Same text on a track bike (1974 Raleigh Professional Track, no Q/R ->
@@ -1096,6 +1110,12 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'spidel lsx': 823, // 1982 Peugeot PRO 10 / PY 10 S: MAFAC LSX (1982), Spidel-badged
+    'spidel lsx professional': 823,
+    'weinmann 500': 8636, // 1982 Peugeot: Weinmann AG 500 base row (1963-84); the 1980 variants differ by bolt colour, not stated
+    'weinmann 500 side pull forged dural': 8636,
+    'weinmann 605': 8642, // 1982 Peugeot PX 10 S / PSV 10 S: Weinmann AG 605 (1978-84); 1133 is dated 1978-80
+    'weinmann carrera 400': 1168, // 1982 Peugeot PX 10 DU: Weinmann AG Carrera 400 (1980-83)
     'spidel ls2 side pull': 834, // 1980 Peugeot PRO 10 / PY 10 S / PY 10 LC: MAFAC LS2 (1979); Spidel brakes were Mafac-made
     'weinmann 605 side pull with quick release and centring bolt': 1133, // 1980 Peugeot (NL) PVN 10 (text says "Mafac 605"; photo is Weinmann)
     'weinmann 506 side pull with quick release and centring bolt': 7764, // Weinmann AG 506
@@ -1320,6 +1340,7 @@ const COMPONENT_OVERRIDES = {
   Headsets: {
     'spidel d8': 3117, // 1980 Peugeot PRO 10: Stronglight D8 Extra Leger (row dated 1981-83, as the 1979 S7 pick)
     'spidel d 8': 3117, // 1981 Peugeot PRO 10
+    'spidel 57': 3123, // 1982 Peugeot PY 10 S: table prints "Spidel 57", read as the S7 (Stronglight S7 Super Competition, 1981-83)
     'stronglight d6 titanium': [{ from: 1977, to: 1980, id: 3116 }], // 1978 Peugeot (NL) PY 10 CP: D6 Extra Leger
     'stronglight v4 competition': [{ from: 1960, to: 1982, id: 3125 }], // 1978 Peugeot (NL) PX 10 LE: V4 later version
     'stronglight d 6 titanium': [{ from: 1977, to: 1977, id: 3116 }], // 1977 Peugeot (DE) PY 10/CP: D6 Extra Leger (1977-80)
@@ -1382,7 +1403,9 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
-    'stronglight 104 anodised 45 x 52t 170 mm': 1878, // 1980 Peugeot (NL): Stronglight 104 (Peugeot logo, 1980); the matcher found the 1982 row
+    // 1980 Peugeot (NL): Stronglight 104 (Peugeot logo, 1980); 1982 Peugeot (NL) PKN 10: the 1982 row
+    'stronglight 104 anodised 45 x 52t 170 mm': [{ from: 1980, to: 1981, id: 1878 }, { from: 1982, to: 1982, id: 8811 }],
+    'spidel 107 aerodynamic': 1883, // 1982 Peugeot PRO 10: Stronglight 107 (1980-85), Spidel-badged
     'stronglight 104 bis 42 x 52t': 1879, // 1980 Peugeot PV 10
     'stronglight 104 bis 52 x 42t': 1879, // 1981 Peugeot PSV 10
     'stronglight 105 bis anodised and drilled 45 x 52t 170 mm': 1880, // 1980 Peugeot (NL) PVN 10
@@ -1627,6 +1650,7 @@ const COMPONENT_OVERRIDES = {
     'atax franco italia thickened race bend 420 mm': 2897, // 1980 Peugeot (NL): Franco-Italia 352 (Atax branding), as 1978
     'atax race bend 420 mm': 2901, // 1980 Peugeot (NL) PL 8 M: course bend -> Franco Belge 354, as 1979
     steel: null, // 1981 Peugeot PL 50 M: bare material; matched Nitto B125, Steel by substring
+    race: null, // 1982 Peugeot (NL) PH 8 M: bare bend type; matched Modolo Q-Race
     'philippe professionnel dural': 2895, // 1977 Peugeot (DE): Philippe Professionnel 351
     'philippe professionnel dural silver anodised': 2895,
     'philippe professionnel': 2895,
@@ -1848,6 +1872,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    'weinmann 144 1': 7769, // 1982 Peugeot: Weinmann AG No. 144 / 144-1 Professional
+    'weinmann carrera 400': 493, // 1982 Peugeot PX 10 DU: Weinmann No. 185 (Carrera) levers, 1980-83
     'mafac dural promotion drilled': 347, // 1980 Peugeot (NL) PFN 10: "geperforeerde" Promotion = Perfo; the plain PBN 10 one stays unlinked
     'mafac dural course drilled rubber hoods and adjusters': 357, // 1980 Peugeot (NL) PKN / PVN 10: MAFAC Course, as the 1979 tandems
     'dia compe 165': [{ from: 1986, to: 1986, id: 8872 }], // 1986 Raleigh Technium 440 USA: Dia-Compe 163 / 165 / 169 / 195 extension lever sets
@@ -2157,6 +2183,9 @@ const COMPONENT_OVERRIDES = {
     'maillard normandy 14 17 19 21 24': [{ from: 1979, to: 1982, id: 8125 }],
     'maillard normandy 14 16 18 20 23': [{ from: 1979, to: 1982, id: 8125 }],
     'maillard 700 13 14 15 17 19 21': 2123, // PY 10 LC: Maillard 700 (6 speed)
+    '5 speed': null, // 1982 Peugeot: bare speed count; matched a Shimano F200-F512 row
+    '600 sh 13 21': 8131, // 1982 Peugeot: Maillard 600 SH 6-speed compact (1982)
+    '600 sh 14 24': 8131,
     'maillard normandy 5 speed 14 17 19 21 24t': [{ from: 1977, to: 1978, id: 7240 }], // 1977/78 Peugeot: Normandy 5-speed (row dated 1978, sealed bearings); 1979-82 row is 8125
     'maillard normandy 14 17 19 21 24t': [{ from: 1977, to: 1978, id: 7240 }],
     'maillard normandy 14 16 19 22 26t': [{ from: 1977, to: 1978, id: 7240 }],
