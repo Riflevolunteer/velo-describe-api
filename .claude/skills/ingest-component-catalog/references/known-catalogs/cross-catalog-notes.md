@@ -364,3 +364,123 @@ Weinmann 1129 / 1130 570.
   Cyclo-Pedia 11th edition (c. 1974, 72 pp: Huret, Simplex, Campagnolo, TA,
   Stronglight, Vittoria, Mafac, Weinmann, Ideale, 3ttt; brands already covered),
   Fiamme / Galli / Bocama (single-brand, not read).
+
+## Holdsworth "Bike Riders Aids" — May 1975 (disraeligears.co.uk, data_source 260)
+
+- `data_source` label "Holdsworth Bike Riders Aids (1975)", country GB. Source:
+  https://www.disraeligears.co.uk/site/holdsworth_-_bike_riders_aids_1975.html (99 scans at
+  `00_main_images/holdsworth_-_bike_riders_aids_1975_<page>_main_image.jpg`, page names
+  front_cover, inside_front_cover, page_i ... page_xvi, page_1 ... page_80, inside_rear_cover,
+  rear_cover; printed page n = bound PDF page n + 17). Holdsworthy Co. Ltd, London SE20, a UK
+  mail-order retailer like Bikecology / Palo Alto; prices in GBP, weights in oz. Components are
+  pp. 26-80; pp. i-xvi and 1-25 are essays, clothing, bags and bottles. Read 2026-10-23.
+- Dated inside it: May 1975, "again in 1974 winner"; new = Campagnolo "Titanium Lightened
+  Super Record Group" (ad only, with the "Super" Record titanium headset), Huret Challenger 2400,
+  Evian-Racer centre-pull, GB Menton bar, Birmalux Sprint rim, Simplex Prestige 637 ("latest");
+  Il Primo di Lusso stem's Allen bolt "new for 1974".
+- Already covered 1975, no change: all Campagnolo (Catalogue 17a, data_source 7), Huret,
+  Simplex (except 4583), Weinmann brakes and 133/144/161/162 levers, Universal 51/61/68, MAFAC
+  Racer / Criterium / Cyclo-Tandem, Regina chains and freewheels, TA, Super Champion rims.
+- Changed (source_ref -> 260, 37 rows): year_to -> 1975 on Simplex 4583 Prestige AR 637;
+  Weinmann 7936 136 lever; GB 752 GB 77 (Coureur '77', description), 314 Super Hood, 2848
+  Ventoux, 2847 Randonneur, 8473 All-Rounder, 6542 Norma, 6543 Nova (6541 Neta description
+  only); TDC 3160 Continental Italia; Williams 2018 C34; Nylfor 3058; Chater Lea 3723 Sprint
+  pedals; Cinelli 6501 Pista Steel stem (catalogue "Plain"); Fiamme 5006 Sprint rim; Wrights
+  5706 W3SW (swallow). year_from -> 1975 on Sansin 3602 one-piece hubs; Lyotard 9085 45;
+  Cinelli 9081 Mod. 63, 2804 65 Criterium, 5337 Unicanitor Mod. 55, 9083 Unicanitor 65 (the
+  "Unica-Nitor 65/4 Campione del Mondo"), 5333 Unicanitor #4 (the 75/x "Tour de France"
+  padded); Clement 6771 Seta Extra (No. 1), 8971 Criterium Seta Extra (No. 1 Bis), 8970 Seta
+  Tipo 3, 9259 N. 10, 8972 Criterium Cotone (No. 12 Bis Criterium), 6737 CdM Seta (No. 13),
+  6736 Campestre (No. 18), 6731 Clement 50 (No. 19); Brooks 5303 Team Professional (the
+  catalogue's "B17 Professional", judgement). Dated 1975-1975 (were undated): Stronglight 153
+  No. 34 BB, TDC 3157 Continental J, Lyotard 3812 45ter and 3813 460A.
+- Added (40 rows, 1975, group NULL): D'Alessandro Silk / Cotton Imperforabile, Criterium,
+  Cyclone, Worthy; Birmalux Sprint and High Pressure rims, Maes and Allrounder bars, alloy seat
+  pin; Cinelli 18 Pista bar and Sacchi stem; Fiamme Maes bar and High Pressure rim; GB Menton;
+  Gallet Junior; Clement Nuovo Alberto (made for Holdsworthy); new brands Il Primo (Giro di
+  Sicilia bar, di Lusso stem), Allez (Maes bar), Van Schothorst (High Pressure, Endrick
+  rims), Evian (Racer brake), Nicklin (N34, N200, N901 cranks), Canetti (7 tubulars), Kowalit
+  (4 tubulars), YFC (Seamless), Matex, Merton (Coureur) saddles. Only items with a weight or
+  size were added, as for data_source 259.
+- Not added / unresolved: Weinmann USA Dual lever, Cherry centre-pull, Evian CLB B2 /
+  Criterium / Tandem, TDC Super Set K, Suzue solid-axle hubs, Fiamme stem, WA Corsa pedals
+  (maker unclear, possibly Way-Assauto), unnamed Renold / D.I.D. chains, Regina "Super Course"
+  (probably 1376 Extra 50 Corsa), Universal hooded levers, Stronglight "49D" (DB 49A vs 49D
+  rows), Cinelli alloy stem (1A vs 1R). 4940 "Birmalux Tubular Rims" (undated, 336 g actual)
+  is probably the new Sprint rim: a merge candidate. Wrights W3 Swallow and Lyotard 45A were
+  not inserted because 5706 and 9085 are the same parts.
+
+## La Bicicletta Guida '85/86 - I componenti da corsa (Nov 1985, 41 scans, disraeligears.co.uk), data_source id 259
+
+- Source: https://www.disraeligears.co.uk/site/la_bicicletta_guida_8586_-_i_componenti_da_corsa.html
+  (scans at `00_main_images/la_bicicletta_guida_1985_november_-_i_componenti_da_corsa_scan_NN_main_image.jpg`,
+  01-41, 1560 px, legible). Label `La Bicicletta Guida '85/86, I componenti da corsa (1985)`, country IT.
+- An Italian magazine's buyer's guide, **not a manufacturer catalogue**: tables per
+  category of model / material / weight / size / lire price, about 60 makers, mostly
+  without part numbers (codes only for Gian Robert, Miche, Ofmega, OMAS, Nisi,
+  Regina). Read as a snapshot of what was on sale in late 1985. It never moves
+  `year_from` below 1985 and never caps `year_to`.
+- Scan map: 1-2 stems; 3-4 rear derailleurs, chains; 5-8 rims; 9-11 handlebars;
+  11-13 front derailleurs; 13-14 brakes; 14-16 cranksets; 16-17 brake levers;
+  18 shifters; 19-20 bottom brackets; 20-22 hubs; 24-25 pedals; 29 seat posts
+  (**the section's first page is missing**, so it opens mid-list at Miche; the
+  Campagnolo and Cinelli posts are probably lost), disc wheels, start of freewheels;
+  30 freewheels, saddles; 31-32 saddles; 34-36 headsets; 39-41 tubulars.
+  Out of scope: bottles, cages, toe straps / clips, tape, pumps, spokes, lugs /
+  dropouts, Columbus and other tubing, frame jigs.
+- Year rule applied: NULL or >1985 `year_from` -> 1985, NULL or <1985 `year_to`
+  -> 1985 (undated velobase rows became 1985-1985, as in earlier passes).
+- **195 rows updated** (`source_ref` -> 259). The full list with old -> new years
+  is in the session report; by brand: Gipiemme 25, Clement 16, Ofmega 15,
+  Modolo 14, Cinelli 11, Fiamme 10, saddles (Selle Italia / Royal / San Marco /
+  Iscaselle) 14, rims (Nisi, FiR, Ambrosio, Vittoria) 29, 3ttt 6, Universal /
+  Regina / Everest 16, Rino / Galli / Gian Robert / OMAS / Miche / Michelin /
+  Cosmos / Gimondi / Pneudan / FT / Silva / Cobra / ITM about 35, Campagnolo 4
+  (209 1040/1A NGS levers 1984 -> 1985; 43 4031 Super Record BB 1982 -> 1985;
+  7015 Triomphe leisure RD 1986 -> 1985; 2073 7-speed alloy freewheel
+  description). Notable start-year moves: 3ttt 8296 AR84N 1986 -> 1985, 8302
+  Aero Dynamic Competizione 1987 -> 1985; Modolo 374 Kronos levers 1986 ->
+  1985; Cinelli 2814 Perfection 1990 -> 1985, 5338 Volare SLX 1988 -> 1985;
+  Selle Italia 5503 Super Turbo 1992 -> 1985, 5518 Turbo SLG 1990 -> 1985; ITM
+  6564 400 Racing 1990 -> 1985.
+- **Retitles** (old names, for matching later sources): 4906 "Ambrosio Pista
+  Color" -> Ambrosio Pistacolor; 5024 "Galli Top Crit" -> Galli Top Criterium;
+  2816 "Cinelli L.A. 84" -> Cinelli 62 Los Angeles; 6090 "Modolo - Kronos
+  Aerodynamic Control Levers" -> Modolo Kronos (shifters); 6889 "Vittoria Giro
+  del Mundo" -> Vittoria Giro del Mondo. search_text rewritten on all five.
+- Judgement matches, worth revisiting: Universal "MS 77" = 1084 Super 77;
+  Cinelli "Mod. SA Pista" (10-13 cm) read as a misprint of 7097 2A Pista; the
+  guide swaps the 65 / 66 bar names (65 Campione del Mondo, 66 Criterium + 66
+  CdM), so the DB's 65 Criterium (2804) and 66 Campione del Mondo (2806) were
+  extended; Fiamme "Etichetta" colours mapped to the DB's label rows (Oro Ergal
+  -> 4992 Ergal, Verde -> 4995 Green Label, Rossa -> 5004 Strada red label,
+  Nera -> 5005 Type 22 Black Label, Gialla -> 4999 Professional yellow label);
+  3ttt Record seat post 230 g / 160 mm = 8850 500/1 Reggisella.
+- **193 rows inserted** (1985-1985, UUID source_id, `source_ref` 259): only parts
+  the guide gives a weight or a size for (user's choice, 2026-10-23); the ~110
+  name-only entries were not inserted. New brands: Cycloman (3 stems), Cascella
+  (Performance Strada crankset), CAM (Contak pedals), C.B.L. Brusati (Hickory
+  wooden rim), Silpa (4 saddles), plus 12 category_brand links. Largest groups:
+  Vittoria 17 rims and tubulars, Nisi 17 coded rims (00100 ... 00840),
+  Gipiemme 19 (200 RS/CC/RT/CT/R1 BBs, Crono Special Cross / Tandem / Triplo
+  cranks, Minisprint), San Marco 14, Gian Robert 11 (1005-3005 shifters, 1009,
+  1012, 1014-1018), Ambrosio 12, ITM 11, Pneudan 10, Miche 9 (1301, 1302,
+  1601-1603, 1902, 1905, brakes), Cosmos 8, FiR 8, Pirelli 6, Royal 6, Ofmega 6,
+  Clement 5, Hutchinson 5; one Campagnolo row, "Gran Sport (1980s)" hubs
+  (548 / 524 g; no 1980s GS hub row existed).
+- No deletes.
+- Left alone (the guide can't say which version it means): Ofmega Mistral RD /
+  shifter generations, Premier shifter generations, Competizione hub/crank
+  versions; Gipiemme Cronosprint 800-series derailleurs, Cronosprint Classic /
+  Economic brakes and cranks vs 700CC / 100 CC, Special hubs 3352; Rino Crono
+  Nero 2274, Criterium headset types, Supercrono vs Crono RD; Ambrosio Montreal
+  and the Elite / 19 Extra / Aero family (Aerodynamic, Aero Elite, Elite, 19
+  Extra not inserted); Modolo Corsa brake versions; Clement Mirage, Ritmo,
+  Criterium sub-models; Vittoria Nuovo Pro 260 (guide's Nuovo Pro is 290 g);
+  Nisi Countach, Toro, M20 / Pista Speciale (00120 / 00150); OMAS Big Sliding
+  hub articles 101 ... 1100 (only two DB hub rows); Gian Robert Campione RD
+  types and Competition hub finishes.
+- Unresolved: Campagnolo Super Record hubs are still sold here in 1985, but the
+  DB only has Ti-axle 4011 / 4014 rows dated 1974-75, so a 1980s Super Record hub
+  row may be missing. Galli hubs are headed "Galli Maillard" (Maillard-made).
+  The missing seat-post page.
