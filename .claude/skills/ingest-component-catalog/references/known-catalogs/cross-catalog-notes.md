@@ -486,3 +486,54 @@ Weinmann 1129 / 1130 570.
   DB only has Ti-axle 4011 / 4014 rows dated 1974-75, so a 1980s Super Record hub
   row may be missing. Galli hubs are headed "Galli Maillard" (Maillard-made).
   The missing seat-post page.
+
+## Ron Kitching "Everything Cycling" — Accessories, Tubulars and Sundries, June 1984 (disraeligears.co.uk, data_source 261)
+
+- `data_source` label "Ron Kitching Everything Cycling (1984)", country GB. Source:
+  https://www.disraeligears.co.uk/site/ron_kitching_everything_cycling_-_1984.html (74 scans at
+  `00_main_images/ron_kitching_everything_cycling_-_1984_<page>_main_image.jpg`, front_cover,
+  page_1 ... page_72, rear_cover; printed page n = bound PDF page n + 1). Ron Kitching, Cycleparts
+  International Centre, Hookstone Park, Harrogate: the UK importer / wholesaler of SunTour, TA,
+  Zeus, Dia-Compe, Wolber, Milremo and others. GBP ex VAT, gram weights for nearly everything;
+  pp. 53-59 and 65-66 are weight / availability / tubular-use tables (useful cross-checks).
+  Components pp. 2-52 and tubulars 62-64; bags, lighting, pumps, bottles, toe clips, shoe plates,
+  tape, cables, spokes, tools, books, stands and racks out of scope. Read 2026-10-23.
+- "NEW" = new to Kitching's UK range: SunTour Superbe Pro II RD-5200, Superbe II RD-5300, LE
+  Tech RD-5900 / FD-3200, Cyclone RD-6000 / FD-3300 (the table's "Cyclone III"), CW-5000, BH-1500 /
+  BH-1600 / BH-2000, CB-2200, Cyclone CB-7000/8000, LD-3700/3750, SP-2000/2100, MS-1400 XC-V; Zeus
+  Supercronos brake and FD, New Racer crank; Dia-Compe DC/QS/GX-630N, RGC-400, 204C, DC981,
+  NGC982; Cinelli Domino and Volare; 3ttt AR 84; Milremo Pro UL; Fontana tubulars; Sup'air 240;
+  Nitto B801 / MT-1; Win MT-28; FAG L66; ATAX Polypro.
+- Already covered 1984: almost all SunTour (Catalogs 61 / 62, data_source 88 / 90), Mavic
+  (84-85, 114), Cinelli 64-67 and stems, 3ttt Record range, Araya ADX-1/3/4, Stronglight 107 /
+  650 / 651, Nitto 185 / Crystemblue.
+- Changed (source_ref -> 261, 151 rows; full list in the session report): SunTour gap rows (16:
+  4684 RD-3400 AG, 8268 FD-2050, 2599 FD-2100, 6276 LD-1600, 8262 / 8264 / 8275 RH-1000 / 1500 /
+  3100, 5933 SP-1000, 6694 RS-1000 to 1984; 6278 LD-3700, 7826 LD-3750, 6308 LD-3600, 464 CB-2200,
+  1052 CB-6100, 7832 SP-2100, 5935 SP-2000 from 1985 to 1984); Dia-Compe 20 rows dated 1986 by
+  data_source 102 / 209 now from 1984; Zeus 26 (New Racer / Gran Sport / Gigante / Pista /
+  Criterium to 1984, 2000 Titanox BBs and freewheels, Supercronos descriptions with code numbers);
+  Spécialités TA 25 rows from the 1975 TA catalogue to 1984 (incl. Tevano 1863 / 1864); Wolber 16
+  tubulars; Vittoria 8, Cinelli 8, Milremo 7, Ideale (brand Tron & Berthet) 6, MKS 5, Lyotard 4,
+  3ttt 2, Ambrosio 2 and singles for ATAX, Bador, Bullseye, FAG/Nadax, Lightrace, Araya, San Marco,
+  Super Champion, Strong, Stronglight, Tange, Arius.
+- Retitle: 6940 "Wolber Strada 801" -> Wolber Strada 80 (search_text rewritten). Data fix: 3859
+  MKS Esquartz 102 years 1880-1880 -> 1984-1984.
+- Added (108 rows, 1984, group NULL; weight or size only): Zeus 7, Milremo 38, Cinelli 6,
+  Vittoria 9, Wolber 4, Mavic Monthlery Route / Pro, Fiamme Bussola, MKS GR-8 / 505 / 707, Nitto
+  B801 / MT-1, ATAX 3, Bador stem, Bullseye BB and pedals, FAG L66, Lightrace TTS Super BB; new
+  brands Lion (9 tubulars), Fontana (3), Sup'air (2), Izumi (3 chains), Enuma, Jaguar (3 saddles),
+  Conpy, Cypari (2 brakes), Win (4), Silver Star. A "Mavic GEL 280" insert was dropped: 5066
+  "G.E.L. 280" already covers it.
+- Merged (2026-10-23, user-approved): 9081 "Cinelli 63 Campione del Mondo" (source_id
+  c54eeecb-cd89-11f1-a2df-02fea3763e8d, 1975-76, from data_source 260 / 245) deleted into 7096
+  "Cinelli Mod. 63, Campione del Mondo", now 1975-1984, description consolidated (reach / drop
+  corrected to 76 / 147mm per the Kitching table; the old text had them swapped). 2602 "SunTour
+  Compe-V" (velobase source_id F2E28746-7806-4B13-B427-BC322E8FC324, 1974-79, 140.5 g avg, no
+  links) deleted as a placeholder for 2603 "3701 / FD-1100, Compe-V (5-hole)".
+- Judgement / unresolved: SunTour BH-2000 is "Cyclone" here, "Sprint (road)" in the DB (7808,
+  unchanged); LD-2800 "Microlite" = 6307 Power Thumb Shifter (155 g); Tevano 1863 / 1864 are
+  dated from 1970 but the catalogue calls Tevano "the newest name" (start year doubtful); left
+  alone for unclear versions: Zeus 2000 / New Racer cranks, New Racer brake variants, Lyotard
+  136R types, Ideale 88 rivet variants, 3ttt Regolabile versions, Dia-Compe G-500N / DC-500N,
+  SunTour PSL-M / PDL-M / SLW / Mighty Shifter old-vs-LD codes.
