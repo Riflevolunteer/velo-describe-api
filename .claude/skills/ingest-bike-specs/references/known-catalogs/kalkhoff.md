@@ -1,6 +1,6 @@
 # Kalkhoff catalogs processed so far
 
-## 1981 Kalkhoff — `1981_kalkhoff_spec.csv` (8 bikes, 136 specs, 57 linked)
+## 1981 Kalkhoff — `1981_kalkhoff_spec.csv` (8 bikes, 136 specs, 43 linked)
 
 - Source (added 2026-10-21, from the user): VeloBase CatalogScans `kalhoff_prospekt_81.pdf` (sic), "1981 Kalkhoff Catalog" (1,478 KB, listed under Frames; https://velobase.com/Pages/Resources/CatalogScans.aspx). A German "Prospekt"; the index gives no market, so DE remains inferred from the language. The velopedia.online Kalkhoff leaflets seen in search are different documents.
 
@@ -23,8 +23,11 @@
   hit a titanium 1st-gen row), seat post → 4051 Campagnolo Script, pedals →
   4021 Strada, crank → 1049/A; Cinelli "Super Record" stem → 1R (1/Record);
   Dura-Ace EX chain → CN-7100 Uniglide (no row carries "EX").
-- Brand rows kept: Sakae cranks → Sakae/Ringyo (SR); "Union" chain → Union
-  486 and pedals → Union U40 (only Union row in each category; auto).
+- Brand rows kept: Sakae cranks → Sakae/Ringyo (SR).
+- 2026-10-23: "Union" chain/pedals unlinked (they had auto-linked to Union
+  486 / Union U40, models the catalogue doesn't name) and "Selle Royal"
+  saddles unlinked; overrides set to null. The brand-only "Selle Royal"
+  component row 5521 was deleted. 54 → 43 linked.
 - Left unlinked: Dura-Ace EX hubs (four EX hub rows, nothing to choose on),
   plain "Shimano 600" front (no row), Weinmann 506, CLB, Rigida/Weinmann rims,
   Tange, Maillard, SunTour hubs/pedals, tyres, "SR" stems. Toe Clips has no

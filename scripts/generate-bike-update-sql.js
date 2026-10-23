@@ -1621,6 +1621,7 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
+    'selle royal': null, // 1981 Kalkhoff: brand only (brand row 5521 deleted 2026-10-23)
     'ideale 2002 or treated leather': null, // 1976 PY 10: either / or, as the 1973 PX 10 either/or saddle (left unlinked)
     // 1987 Raleigh Randonneur 18: "Brooks Professional, honey finish, pre-softened" -> 5295 Brooks Professional pre-softened (velobase dates the row 2000, treated as a misdate; the catalogue itself shows the saddle in 1987).
     'brooks professional honey finish pre softened': [{ from: 1987, to: 1990, id: 5295 }],
@@ -1642,7 +1643,7 @@ const COMPONENT_OVERRIDES = {
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'isca tornado black suede': 5382, // Team Replica: Iscaselle Tornado (suede cover)
     'isca tornado blue suede': 5382, // Road Ace
-    // Selle Royal Aero: the only hit is the bare brand row 5521, no Aero model row.
+    // Selle Royal Aero: no Aero model row (the bare brand row 5521 was deleted 2026-10-23).
     'selle royal aero black': null,
     'selle royal aero black imitation suede': null,
     'selle royal aero silver': null,
@@ -1970,6 +1971,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    'union': null, // 1981 Kalkhoff: brand only; Union U40 is a model the catalogue doesn't name
     // SR pedals named by model number (rows from the SR Catalog No. 18 pass, data_source 92)
     'sr sp100al alloy': 3922, // 1979 Raleigh Super Course: SP-100AL Silstar quill (1970-82)
     'sr sp100 alloy quill': 3922, // 1986 Raleigh Portage: same quill, row ends 1982 (a judgement)
@@ -2139,6 +2141,7 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    'union': null, // 1981 Kalkhoff: brand only; Union 486 is a model the catalogue doesn't name
     'sedissport 108 links delta treated': 1402, // 1980 Peugeot (NL): Sedis Sedisport Delta (1980)
     'sedisport narrow': [{ from: 1980, id: 1402 }], // 1983 Raleigh Europa / Record Sprint / Supersport 12: as bare 'sedisport' (1402 from 1980)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
