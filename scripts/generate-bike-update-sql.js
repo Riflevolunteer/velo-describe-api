@@ -1445,6 +1445,13 @@ const COMPONENT_OVERRIDES = {
     'stronglight 105 bis anodised and drilled 45 x 52t 170 mm': 1880, // 1980 Peugeot (NL) PVN 10
     'stronglight 105 mod 65 axle five arm cranks 170mm double chainring 42 52t': [{ from: 1970, to: 1982, id: 1880 }], // 1977/78 Peugeot: Stronglight 105 Bis
     'stronglight 105 42 52t': [{ from: 1970, to: 1982, id: 1880 }],
+    // 1977-79 Peugeot: "Stronglight 105 Bis ..." also hits 9079 Stronglight 105 (the 1976 model 93
+    // successor, added from the Palo Alto 1976 catalogue), so the matcher sees two candidates.
+    'stronglight 105 bis anodised drilled 42 x 52': [{ from: 1970, to: 1982, id: 1880 }], // 1979 PY 10 CP Prestige / PY 10 LC
+    'stronglight 105 bis double 42 x 52': [{ from: 1970, to: 1982, id: 1880 }], // 1979 PV 10 Super Competition
+    'stronglight 105 bis titanium axle five arm cranks 170mm double chainring 42 53t drilled silver anodised': [{ from: 1970, to: 1982, id: 1880 }], // 1977 PY 10/CP
+    'stronglight 105 bis 42 52t': [{ from: 1970, to: 1982, id: 1880 }], // 1978 PY 10 EC
+    'stronglight 105 bis drilled anodised chainring sizes to choice': [{ from: 1970, to: 1982, id: 1880 }], // 1978 PY 10 CP
     'stronglight 49 five hole cranks 170mm double chainring 42 52t': [{ from: 1970, to: 1982, id: 1894 }], // 1977 Peugeot (DE): Stronglight 49A
     'stronglight 49 five hole cranks 170mm triple chainring 32 42 52t': [{ from: 1970, to: 1982, id: 1893 }], // Stronglight 49 Tri
     'stronglight 49d 40 50t': [{ from: 1970, to: 1982, id: 1895 }], // 1978 Peugeot (NL): as the 42/52T pick
@@ -1836,8 +1843,6 @@ const COMPONENT_OVERRIDES = {
     'suntour superbe pro': [{ from: 1983, to: 1986, id: 6301 }], // Prestige: LD-4650 Superbe Pro (1983-86), as the 1985 pick; matcher took the 1991 row
     'shimano 600': [{ to: 1985, id: 6138 }, { from: 1986, to: 1987, id: 6148 }], // Competition: SL-6207 600EX (1984-87); the exact-title row is the 1970-80 Shimano 600
     'thumb shifters': null, // Teton / Grand Mesa: generic text, hit the SunTour XM01 thumb shifter
-    // 1990 Bianchi US catalogue (Nyala, Osprey): under-bar X-Press levers.
-    'suntour accushift plus x press': [{ from: 1990, to: 1992, id: 6312 }], // SL-XP10-R7 / L, X-Press (XC-Pro / XC-Comp)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace sis': [{ from: 1989, to: 1998, id: 6166 }], // SL-7402 (8sp)
     'shimano ultegra sis': [{ from: 1988, to: 1992, id: 6144 }], // SL-6400, 600 Ultegra SIS
@@ -1846,7 +1851,15 @@ const COMPONENT_OVERRIDES = {
     'campagnolo chorus syncro 2': [{ from: 1988, to: 1991, id: 7027 }], // A281 Chorus levers with dual-mode Syncro, as 1988 Bianchi
     'campagnolo athena syncro 2': null, // matcher took the 1992-95 Athena Ergopower; no Athena downtube row
     'suntour accushift plus command shifter': [{ from: 1990, to: 1990, id: 6268 }], // SunTour Command (6 & 7 speed)
-    'suntour accushift plus x press': [{ bike: 'Project 7', from: 1990, to: 1990, id: 6312 }, { bike: 'Grizzly', from: 1990, to: 1990, id: 6312 }], // SL-XP10 X-Press (XC-Pro); X-1 / XCT bikes have no 1990 row
+    // SL-XP10 X-Press (XC-Pro / XC-Comp) on Project 7 / Grizzly, and the under-bar levers on
+    // Nyala / Osprey; X-1 / XCT bikes have no 1990 row. One key: a second, unscoped entry for
+    // Nyala / Osprey further up this object was silently overridden by this one.
+    'suntour accushift plus x press': [
+      { bike: 'Project 7', from: 1990, to: 1990, id: 6312 },
+      { bike: 'Grizzly', from: 1990, to: 1990, id: 6312 },
+      { bike: 'Nyala', from: 1990, to: 1990, id: 6312 },
+      { bike: 'Osprey', from: 1990, to: 1990, id: 6312 },
+    ],
     'suntour radius accushift plus': [{ from: 1990, to: 1992, id: 6291 }], // SL-RA00, Radius
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
     'shimano 600 ultegra sis': 6144, // Shimano SL-6400, 600 Ultegra SIS
@@ -1893,7 +1906,6 @@ const COMPONENT_OVERRIDES = {
     'shimano z408 down tube braze on': 6195, // Shimano SL-Z408, Z-Series
     'shimano xt fingertip shifters': 6158, // Shimano SL-M700, Deore XT (1983-86)
     'suntour fingertip ld 2800': 6307, // SunTour LD-2800 Power Thumb Shifter
-    'suntour superbe pro': 6301, // SunTour LD-4650, Superbe Pro (1983-86)
   },
   'Shifting Brake Levers': {
     'shimano at10 sis': 7722, // 1993 Bianchi, from the Jul 1992 manual: Shimano ST-AT10, Altus A10
@@ -1997,7 +2009,6 @@ const COMPONENT_OVERRIDES = {
     'campagnolo triomphe': 3719, // 905/000, Triomphe (1984-86)
     'campagnolo super record 30nnale': 3716, // 4021 Super Record Strada
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
-    'sr sp12 platform alloy': 3924, // Competition: SR SP-12AL
     'suntour xc ii chrome moly shafts': 4015, // SunTour PL-5100, XC-II (1985 Raleigh; dup 4000 merged)
     'shimano 600': [{ from: 1984, to: 1987, id: 3961 }], // 1987 Bianchi: Shimano PD-6207, 600EX
     'shimano spd 737 clipless': 7666, // 1993 Bianchi, from the Jul 1992 manual: Shimano PD-M737, Deore XT (SPD)

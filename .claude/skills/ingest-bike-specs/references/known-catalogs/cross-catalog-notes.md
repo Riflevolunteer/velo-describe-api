@@ -458,3 +458,25 @@ CR3" (no row), "Brooks B-15" (Champion Standard / Narrow / Swallow ambiguous),
 
 ## SR / Sakae model-number links (2026-10-22)
 After re-checking SR Catalog No. 18 (data_source 92, already ingested): Pedals 'sr sp100al alloy' (1979 Raleigh Super Course) and 'sr sp100 alloy quill' (1986 Raleigh Portage, row ends 1982) -> 3922 SP-100AL Silstar; 'sakae sp 150' (1982 Peugeot PX 10 DU / PX 10 S / PSV 10 S) -> 3925 SP-150 (row 1970-80, the only one). Seat Posts: 1986 Raleigh "SR CTP-5 / CPT-5 / Laprade CTP5" -> 5857 CT-P5 (later version, 1980-82, over the 5858 early version). CT-P5E / CPT5E cells left unlinked (no E row). Back-fill only: 1979 Raleigh 33 -> 34, 1982 Peugeot 84 -> 87, 1986 Raleigh 82 -> 86. Most other unlinked SR specs are mid-80s numbering (SAC 310, CRH-310, CXC-624, MTH-100, SP-452 / 518, CLE-100, MTB-224) that needs a later SR catalogue, or generic "SR alloy" text.
+
+## Duplicate override keys and the Stronglight 105 ambiguity (2026-10-23)
+A full regeneration after the 2026-10-23 component loads reproduced every DB link except 8, which
+is the "known drift" noted above (1978 / 1979 Peugeot, 1990 Bianchi). Two causes:
+- **Duplicate keys in `COMPONENT_OVERRIDES`.** A JS object literal keeps the *last* entry for a
+  repeated key, silently. Shifters had `'suntour accushift plus x press'` twice: an unscoped 1990-92
+  -> 6312 entry for the 1990 Bianchi Nyala / Osprey, then a later bike-scoped entry for Project 7 /
+  Grizzly that replaced it, so Nyala / Osprey no longer linked on regeneration. Merged into one
+  bike-scoped list with all four bikes. Two more duplicates found by scanning the object (no link
+  change, both removed): Shifters `'suntour superbe pro'` (ranged 1983-86 -> 6301, then an unranged
+  6301; only 1985 / 1986 bikes use it) and Shifting Brake Levers `'sr sp12 platform alloy'` (3924
+  twice). Scan for this after adding overrides: the same key under one category never errors.
+- **New-row ambiguity.** The six 1977-79 Peugeot "Stronglight 105 Bis ..." cranksets matched both
+  1880 Stronglight 105 Bis and 9079 Stronglight 105 (added 2026-10-21 from the Palo Alto 1976
+  catalogue), so the matcher refused to pick. Added ranged 1970-82 -> 1880 overrides for the five
+  value spellings. A row added by a component catalogue can make an older bike value ambiguous
+  this way; regenerate and diff links after big component loads.
+- After the fix a regeneration matches 3354 specs, equal to the DB. Remaining difference: 1981
+  Bianchi Super Leggera "Clement Criterium cotton tubular 28"" is 6745 in the DB, but the override
+  (and the 2026-10-20 Clement 1977 record) says 8972 Criterium Cotone; the one-off UPDATE moving it
+  was never applied (the back-fill only fills NULLs). Applied 2026-10-23: bike_spec 6517 -> 8972, and
+  8972 year_to 1977 -> 1981 (source_ref 165, 1981 Bianchi catalogue). DB and regeneration now agree.
