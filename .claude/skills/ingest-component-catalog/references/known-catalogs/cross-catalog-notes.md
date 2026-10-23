@@ -411,6 +411,9 @@ Weinmann 1129 / 1130 570.
 - Merged (2026-10-23): 4940 "Birmalux Tubular Rims" (velobase source_id
   3185AC4D-FAD0-4E82-A2B4-5D506ACDDBD5, undated, 336 g actual, no bike_spec links) deleted
   into 9323 Birmalux Sprint, the only Birmalux tubular rim; its measured 336 g kept on 9323.
+- Merged (2026-10-23): 634 "Evian (relabelled CLB Racer Course 73)" (velobase source_id
+  8556B34A-976E-43C4-A66B-572F9CB01406, 1973-1977, no bike_spec links) deleted into 9340
+  Evian Racer; 9340 widened from 1975 to 1973-1977 and its description notes the CLB relabel.
 
 ## La Bicicletta Guida '85/86 - I componenti da corsa (Nov 1985, 41 scans, disraeligears.co.uk), data_source id 259
 
