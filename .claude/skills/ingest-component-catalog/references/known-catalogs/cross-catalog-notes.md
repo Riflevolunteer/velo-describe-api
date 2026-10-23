@@ -406,9 +406,11 @@ Weinmann 1129 / 1130 570.
   Criterium / Tandem, TDC Super Set K, Suzue solid-axle hubs, Fiamme stem, WA Corsa pedals
   (maker unclear, possibly Way-Assauto), unnamed Renold / D.I.D. chains, Regina "Super Course"
   (probably 1376 Extra 50 Corsa), Universal hooded levers, Stronglight "49D" (DB 49A vs 49D
-  rows), Cinelli alloy stem (1A vs 1R). 4940 "Birmalux Tubular Rims" (undated, 336 g actual)
-  is probably the new Sprint rim: a merge candidate. Wrights W3 Swallow and Lyotard 45A were
+  rows), Cinelli alloy stem (1A vs 1R). Wrights W3 Swallow and Lyotard 45A were
   not inserted because 5706 and 9085 are the same parts.
+- Merged (2026-10-23): 4940 "Birmalux Tubular Rims" (velobase source_id
+  3185AC4D-FAD0-4E82-A2B4-5D506ACDDBD5, undated, 336 g actual, no bike_spec links) deleted
+  into 9323 Birmalux Sprint, the only Birmalux tubular rim; its measured 336 g kept on 9323.
 
 ## La Bicicletta Guida '85/86 - I componenti da corsa (Nov 1985, 41 scans, disraeligears.co.uk), data_source id 259
 
