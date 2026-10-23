@@ -532,8 +532,10 @@ Weinmann 1129 / 1130 570.
   Compe-V" (velobase source_id F2E28746-7806-4B13-B427-BC322E8FC324, 1974-79, 140.5 g avg, no
   links) deleted as a placeholder for 2603 "3701 / FD-1100, Compe-V (5-hole)".
 - Judgement / unresolved: SunTour BH-2000 is "Cyclone" here, "Sprint (road)" in the DB (7808,
-  unchanged); LD-2800 "Microlite" = 6307 Power Thumb Shifter (155 g); Tevano 1863 / 1864 are
-  dated from 1970 but the catalogue calls Tevano "the newest name" (start year doubtful); left
+  unchanged); LD-2800 "Microlite" = 6307 Power Thumb Shifter (155 g); Tevano 1863 / 1864
+  (velobase 1970) moved to 1984-1984 on 2026-10-23: the c. 1975 TA catalogue (206) has no
+  Tevano crankset (TEVANO is only its distributor) and this catalogue calls Tevano "the newest
+  name"; 1863's description now carries the AX5000 spec, 575 g measured kept; left
   alone for unclear versions: Zeus 2000 / New Racer cranks, New Racer brake variants, Lyotard
   136R types, Ideale 88 rivet variants, 3ttt Regolabile versions, Dia-Compe G-500N / DC-500N,
   SunTour PSL-M / PDL-M / SLW / Mighty Shifter old-vs-LD codes.
