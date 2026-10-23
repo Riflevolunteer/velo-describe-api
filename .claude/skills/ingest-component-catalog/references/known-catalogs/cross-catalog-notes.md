@@ -539,3 +539,52 @@ Weinmann 1129 / 1130 570.
   alone for unclear versions: Zeus 2000 / New Racer cranks, New Racer brake variants, Lyotard
   136R types, Ideale 88 rivet variants, 3ttt Regolabile versions, Dia-Compe G-500N / DC-500N,
   SunTour PSL-M / PDL-M / SLW / Mighty Shifter old-vs-LD codes.
+
+## La Bicicletta Guida '88 - I componenti da corsa (Feb 1988, 54 scans, disraeligears.co.uk), data_source id 262
+
+- Label `La Bicicletta Guida '88, I componenti da corsa (1988)`, country IT. Source:
+  https://www.disraeligears.co.uk/site/la_bicicletta_guida_88_-_i_componenti_da_corsa.html (scans at
+  `00_main_images/la_bicicletta_guida_1988_february_-_i_componenti_da_corsa_scan_NN_main_image.jpg`,
+  01-54, only ~436 px wide: model names and weights legible, fine print marginal). The next edition
+  of the '85/86 guide (data_source 259, above); same table format. Miche is printed as "FAC
+  MICHELIN" (the company F.A.C. Michelin). **The scans stop part-way through the Vittoria
+  tubulars**, so the rest of the tubular / clincher section is missing. Read 2026-10-23.
+- Scan map: 1-3 stems; 4-5 rear derailleurs; 5-6 seat posts; 6-7 chains; 7-11 rims; 12-14
+  brakes; 14-18 handlebars; 18-19 front derailleurs; 19-21 cranksets; 22-23 brake levers; 23-24
+  shifters; 24-26 bottom brackets; 26-28 hubs; 29-32 pedals; 35-37 disc wheels; 37-39 freewheels;
+  39-41 saddles; 43-45 headsets; 50-54 tubulars. Out of scope: bottles, cages, toe straps / clips,
+  tape, pumps, spokes, frame fittings, tubing (Columbus, Falck, Oria, Tensor), machinery.
+- vs 1985: Campagnolo C-Record ("Record"), Croce d'Aune, Chorus, Nuovo Victory / Triomphe, LX / LZ,
+  Doppler, Ghibli / Khamsin, Sigma / Omega / Lambda rims new, Super Record / Nuovo Record / Rally
+  still listed, Gran Sport / Valentino / 980 / 990 gone; Ofmega derailleurs now Simplex-based
+  (Master / Linea / Vantage / Alpine LP); Galli "Aris" Team groups (Sachs-Huret); Miche indexed
+  (SunTour-made) derailleurs and a new Primato group; Rino, Everest chains, Cycloman, Bador, Vetta,
+  Silpa gone; Gommitalia tubulars new; MTB parts throughout.
+- Year rule: year_to < 1988 -> 1988, year_from > 1988 -> 1988, undated -> 1988-1988. No
+  descriptions changed (the 1985 pass wrote most specs; the 1988 weights mostly repeat them).
+- Changed (source_ref -> 262, 277 rows; full list in the session report b88-report.txt): Campagnolo
+  31 (Super Record RD 4152 / FD 7012, 2313 / brake 583 / levers 231 / pedals 3716, 3717 / headsets
+  2968, 2967 / shifters 6001 / crank 1509; Nuovo Record RD 4127, crank 1496, 1498, BB 30, hubs
+  3259, 3260, Superleggero pedals 3709, 3715; Rally Touring 4083; Record Pista BB 40 and hubs 3270,
+  3271; Victory / Triomphe brakes, levers, hubs, pedals, BB 44, RD 4157; Cobalto 561; LX FD 2319);
+  rims 46 (Ambrosio, Fiamme, FiR, Gimondi, Nisi, Galli); Ofmega 31; Gipiemme 23; tyres 47 (Clement,
+  Pirelli, Pneudan, Vittoria, Michelin 6836 / 6832); bars and stems 42; Miche / Modolo / Universal /
+  Saccon 26; Gian Robert, OMAS, FT, Everest, Regina, saddles 31. Start years moved down to 1988:
+  Modolo 6597 Flash / 6593 Equipe stems and 2869 Equipe bar; 3ttt 8309 A2002, 8310 Triathlon, 8304
+  Carbonair, 2764 CPR, 2762 CMOS; Ofmega 1686 Alpine LP crank (was 1997); Miche 4351 / 2413 / 6089
+  Competition RD / FD / shifters (were 1989); Regina 1389 America Superleggera, 1377 Super Racing,
+  8799 50 Silver chains.
+- Added (34 rows, 1988; weight or size only): Miche Primato crank / BB / aero post / levers / Index
+  shifters, Superfast RD / FD / crank, Monolithic crank and pedal; Ofmega Linea RD, Alpine LP RD /
+  FD / pedal, Alpine and Mountain MTB brakes, Mistral hubs, Mountain pedal; stems Cosmos Super and
+  Double M.Bike, Gian Robert Competition, Gipiemme Crono Special, ITM 500 SL / 500 ATB / Pioneer,
+  Modolo Speedy and Master SSC; Ambrosio Aerodynamic (430 g; kept apart from 4890 "19 Extra Elite
+  Aero dynamic", 465 g) and Aero Elite; Nisi Ziggurat and Dart MTB rims; Michelin Hi-Lite Road and
+  Super Elan clinchers; Campagnolo Doppler shifters.
+- No deletes. Left alone for unclear versions: Campagnolo C-Record first-gen rows, 7005 Super
+  Record short reach, 8812 Syncro v1; Cinelli 64 / 66 logo variants; Ofmega Competizione / Linea
+  crank and FD versions; Gipiemme Crono Sprint 800-series and Sprint seat-post types; Nisi Countach
+  / Laser eyelet variants; Iscaselle Tornado covers; Vittoria Corsa CX (6880 / 6881); Clement Ritmo
+  LTX 55. Not added (no weight): Galli Aris groups, Cascella, Saccon levers, Royal / San Marco
+  posts, Selle Italia Personal, Gommitalia tubulars, Iscaselle Time / Record, Campagnolo Ghibli M 25
+  (the DB has M23 rows covering 1988).
