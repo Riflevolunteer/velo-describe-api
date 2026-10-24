@@ -6,10 +6,11 @@ i0.wp.com, `?w=1400` gives a readable scan). Only two groups carry component
 specifications. Not transcribed: 1973 brochure (Super Pantografata / Eddy
 Merckx, says only "Gruppo e freni Record" and Columbus), 1983 Oval CX
 brochure (frames only: CX Cromosatinato, Super, Nuovo Mexico, CX
-Cromovelato), 1985 ad (Victory / Master '85 with a bare brand list), 1988
-Colnago Concept (Ferrari Engineering concept bike, no specs), 1989 35th
-anniversary C35 / Carbitubo press feature, 1997 general catalogue (61 pages,
-modern). New bike brand created on load 2026-10-08.
+Cromovelato), 1985 ad (Victory / Master '85 with a bare brand list), 1989
+35th anniversary C35 / Carbitubo press feature, 1997 frame catalogue (see
+below). The 1988 group was first misread as the Concept cover only; it is a
+full catalogue, loaded 2026-10-24 (below). New bike brand created on load
+2026-10-08.
 
 ## 1979 Colnago — `1979_colnago_spec.csv` (8 bikes, 133 specs, 70 linked)
 
@@ -121,3 +122,15 @@ modern). New bike brand created on load 2026-10-08.
   builder for Italy"), an accessories photo, and a first-generation Colnago
   Mexico "extra light with material special Titanio". No component specs, so
   not transcribed.
+
+## 1988 Colnago — `1988_colnago_spec.csv` (28 bikes, 306 specs, 126 linked)
+
+- Source: 2velo 1988 group (01-2 .. 22.jpg, 30 pages, `?w=1400`), cover "1988 Colnago Concept" (Ferrari Engineering); intro says Colnago went to Ferrari "in late 1986" and "a year of design and testing" followed. Four-language prose per model; transcribed by hand from the Italian / English blocks. data_source 264, country IT (as 1986).
+- Rows: 16 complete bikes, one per group variant as 1986 (Carbon Volo C-Record; Super Krono 26"-28" Santé / Chorus; Master Krono 26"-28" C-Record; Masterpiù Santé / Chorus / Croce d'Aune and Masterpiù America C-Record; Conic SLX Total Spiral Chorus / Super Record / C-Record; Super Chorus; Super Sprint (GPM, Modolo Mach-3, Campagnolo 980 RD); Super Sprint International (Ofmega Super Competizione, Colnago signed); Master Mountainbike AL 11 SIS / Deore XT SIS) and 12 Frameset rows (Carbon Volo, Master, Masterpiù, Master Krono, Special Krono, Conic SLX Total Spiral, Esamexico, Superissimo SLX, Super, Super Sprint Frameset, Duall, Master Mountainbike). The Super Sprint frame is titled "Super Sprint Frameset" so it doesn't key onto the complete Super Sprint. Track versions ("also for track with ...") noted in Extras, not rows. Standard colours page (01-08) not recorded.
+- Values reuse the 1986 wording ("3ttt, black, pantographed", "3ttt mod. 84", "3ttt special aerodynamic ox-horn bend", Gommitalia tubulars), so the 1986 picks carry over; group names fanned to Shifters as well (as 1988 Bianchi).
+- New ranged overrides: Santé FD-5000 2533, FC-5000 1841, BR-5000 1008, SL-5000 6190; Croce d'Aune FD 2288, RD short cage 4112, crank 1489, Delta brakes 567, levers 223, pedals 3703 B620-A, seatpost 5742 C0R2; Deore XT SIS FD-M730 2499, RD-M730 4491 (matcher hit the bare undated 4496), FC-M730 1810, BL-M730 429, SL-M730 6159; Ofmega Super Competizione crank 1703; Chorus shifters 7027 A281; Regal saddle 5561. Other catalogues unchanged.
+- Left unlinked: C-Record brakes (existing null; Delta vs Cobalto in 1988), Santé RD (5000 / 5001) and levers (BL-5001 / 5002), Deore XT brakes (BR-M730 / M731), pedals (PD-M730 / M731) and seatpost (SP-M730 dated from 1989), Shimano AL 11 SIS, bare Gipiemme, Gommitalia, Concor, Ambrosio California, ITM. Possible duplicate rows: Everest freewheels 9145 "Cromo Nova" (hit by "Everest Cromo") and 2060 "Nova" (hit by "Everest Nova Cromo").
+
+## 1997 Colnago — not loaded (user decision, 2026-10-24)
+
+- 2velo 1997 group (61 pages): a frame catalogue. Nine framesets with tubing, sizes and Art Decor '97 paint codes (C-40, Ovaltitan, Monotitan, Master, Tecnos, Dream, Crystal, Altain, C-35); complete bikes are photo plates only. Dated by the 1997 champions spread (Museeuw world champion, Mapei-GB national champions) and Van Lierde's 1997 Ironman. Seven languages, no market. Drafted (22 specs, 0 links) but left out: frame-only rows from outside the 1970-1993 range. Draft CSV kept outside bike_specs/ so a batch run can't load it.

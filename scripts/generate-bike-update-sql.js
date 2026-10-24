@@ -145,6 +145,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1940|bianchi', 'IT'], // inferred
   ['1974|motobecane', 'US'], ['1975|motobecane', 'US'], // VeloBase titles "Motobécane - MBK 197x US Catalog"
   ['1986|colnago', 'IT'], // "Catalogo generale"
+  ['1988|colnago', 'IT'], // Colnago Concept catalogue, Italian first of four languages (as 1986)
   ['1979|colnago', 'IT'], // four-language export sheet; user chose IT (2026-10-19)
   ['1984|derosa', 'IT'], // Italian/English dealer brochure; user chose IT (2026-10-19). 1989 stays US (GITA dealer catalogue)
   ['1981|bianchi', 'US'], // Vespa of America catalogue
@@ -560,6 +561,10 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
+    'shimano santé': [{ from: 1987, to: 1989, id: 2533 }], // FD-5000, Sante
+    "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 2288 }],
+    'shimano deore xt sis': [{ from: 1987, to: 1990, id: 2499 }], // FD-M730
     // 1980 Peugeot (FR leaflet / NL Peugeotboek): the SJA / SXA names run together or spaced
     'simplex sja 102': 2573, // Simplex SJ A102 (1979-89)
     'simplex sja102': 2573,
@@ -742,6 +747,9 @@ const COMPONENT_OVERRIDES = {
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
   },
   'Rear Derailleurs': {
+    // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
+    "campagnolo croce d'aune": [{ from: 1988, to: 1991, id: 4112 }], // short cage on road racing bikes
+    'shimano deore xt sis': [{ from: 1987, to: 1989, id: 4491 }], // RD-M730 (the matcher hit the bare undated Deore XT row 4496)
     'simplex s 061': 4616, // 1981 Peugeot PSV / PK / PF / PFN 10: Simplex S061 T (1981-90)
     'simplex s061 tsp': 4616, // 1982 Peugeot: no TSP row, S061 T is the same gear
     'simplex s061tsp': 4616,
@@ -1148,6 +1156,9 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
+    'shimano santé': [{ from: 1988, to: 1989, id: 1008 }], // BR-5000
+    "campagnolo croce d'aune": [{ from: 1988, to: 1991, id: 567 }], // Delta, Croce d'Aune
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'campagnolo super record short reach with special bianchi lightening': [{ from: 1975, to: 1985, id: 7005 }], // "bassi": 4061/1 short reach
     'universal competizione 77': [{ from: 1977, to: 1988, id: 1083 }], // Rekord/748: Universal Mod. 77
@@ -1452,6 +1463,11 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
+    'shimano santé': [{ from: 1988, to: 1989, id: 1841 }], // FC-5000
+    "campagnolo croce d'aune": [{ from: 1988, to: 1991, id: 1489 }],
+    'shimano deore xt sis': [{ from: 1987, to: 1993, id: 1810 }], // FC-M730
+    'ofmega super competizione': [{ from: 1980, to: 1990, id: 1703 }], // road, 2nd version
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'campagnolo super record 42 53t 170mm': [{ from: 1974, to: 1988, id: 1509 }], // Super-Leggera: 1049/A Strada Super Record
     'campagnolo super record strada 42 53t 170mm': [{ from: 1974, to: 1988, id: 1509 }], // Barcellona
@@ -1642,6 +1658,8 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
+    // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
+    'regal': [{ from: 1970, to: 2000, id: 5561 }], // Selle San Marco Regal
     'turbo': [{ from: 1980, to: 1990, id: 5508 }], // 1984 Peugeot PRO 10 / PY 10: bare "Turbo" is the Selle Italia Turbo
     'selle royal': null, // 1981 Kalkhoff: brand only (brand row 5521 deleted 2026-10-23)
     'ideale 2002 or treated leather': null, // 1976 PY 10: either / or, as the 1973 PX 10 either/or saddle (left unlinked)
@@ -1851,6 +1869,10 @@ const COMPONENT_OVERRIDES = {
     'gb forged alloy': 6533, // GB Forged
   },
   Shifters: {
+    // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
+    'shimano santé': [{ from: 1987, to: 1989, id: 6190 }], // SL-5000
+    'shimano deore xt sis': [{ from: 1987, to: 1989, id: 6159 }], // SL-M730
+    'campagnolo chorus': [{ from: 1988, to: 1991, id: 7027 }], // A281, the only Chorus lever of the period
     'shimano deore xt': [{ from: 1986, to: 1986, id: 6158 }], // 1986 Raleigh Crested Butte / Portage: SL-M700, Deore XT (1983-86)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
     'huret new success alloy front and rear with ratchet levers': [{ from: 1987, to: 1990, id: 6110 }], // ARIS New Success (type 1) 1987-90; 6111 is a duplicate title
@@ -1941,6 +1963,9 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
+    "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 223 }],
+    'shimano deore xt sis': [{ from: 1987, to: 1990, id: 429 }], // BL-M730
     'weinmann 144 1': 7769, // 1982 Peugeot: Weinmann AG No. 144 / 144-1 Professional
     'weinmann carrera 400': 493, // 1982 Peugeot PX 10 DU: Weinmann No. 185 (Carrera) levers, 1980-83
     'mafac dural promotion drilled': 347, // 1980 Peugeot (NL) PFN 10: "geperforeerde" Promotion = Perfo; the plain PBN 10 one stays unlinked
@@ -1993,6 +2018,8 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
+    "campagnolo croce d'aune": [{ from: 1987, to: 1990, id: 3703 }], // B620-A
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'campagnolo super record strada': [{ from: 1974, to: 1988, id: 3716 }], // Barcellona: 4021
     'campagnolo record super leggeri': [{ from: 1971, to: 1988, id: 3709 }], // Super-Leggera: 1037/a Record Strada Superleggeri
@@ -2085,6 +2112,8 @@ const COMPONENT_OVERRIDES = {
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
+    // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
+    "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 5742 }], // C0R2 (fitted to Athena and Croce d'Aune)
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'campagnolo record strada': [{ from: 1969, to: 1985, id: 5749 }], // Super-Leggera: 1044 Record
     // 1986 Raleigh: SR CT-P5 (Sakae Laprade). 5857 is the later version (1980-82) vs 5858 early;
