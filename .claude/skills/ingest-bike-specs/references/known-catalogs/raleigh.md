@@ -765,3 +765,7 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
     1982 Clubman / Rapide (no model); 1985 SR CXC-624 / CRC-T301 / CXC-331 /
     55G (no DB rows; needs a mid-80s SR catalogue); plain "Raleigh Italienne"
     and "Raleigh Maes" bars (Raleigh's own names, no SR evidence).
+
+## Link pass from /linkCoverage — 2026-10-24
+
+- 1979 and 1980 Professional Mk V "Sedis Sedi Color" chain -> 8764 Sedis Sedicolor (the catalogue splits the name). +2 links.

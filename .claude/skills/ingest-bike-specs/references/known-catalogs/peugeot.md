@@ -571,3 +571,7 @@ Peugeot linked after the pass: 1974 35/86, 1975 44/132, 1976 38/131, 1977 DE 71/
 
 ### Helicomatic freewheel links (2026-10-22)
 The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB rows (from the 1982 Maillard "Freewheels" catalogue, data_source 103) are titled "600 SH" / "700 SH", so the matcher never connected them. Freewheels overrides, ranged 1980-84 (the rows are dated 1982 only): Helicomatic 6-speed wordings, "6-speed SH 13-21" and the Helicomatic cassette -> 8131 600 SH (6 speed compact), the Maillard catalogue's "original equipment model"; Helicomatic 5-speed -> 8130; "Maillard 700 SH 13-14-15-17-19-21" (1983 NL PX 10 Du) -> 8132. The two 1984 Raleigh Helicomatic Gold / Silver cells took 8131 too. Back-fill only: 1982 FR 82 -> 84, 1982 NL 59 -> 60, 1983 NL 19 -> 21, 1984 FR 56 -> 67, 1984 GB 45 -> 51, 1984 Raleigh 116 -> 118. Plain "Maillard Normandy 6-speed 14-24" stays unlinked (the only 6-speed Normandy row is the Normandy Sport).
+
+## Link pass from /linkCoverage — 2026-10-24
+
+- 1982 (NL) "Sedisport, 114 links, Delta treated" (5) -> 1402 Sedis Sedisport Delta, as the 1980 108-link value. 1984 (FR 3, GB 2) bare "Turbo" saddle -> 5508 Selle Italia Turbo (ranged 1980-90). +10 links; no other catalogue changed.

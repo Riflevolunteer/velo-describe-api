@@ -1622,6 +1622,7 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
+    'turbo': [{ from: 1980, to: 1990, id: 5508 }], // 1984 Peugeot PRO 10 / PY 10: bare "Turbo" is the Selle Italia Turbo
     'selle royal': null, // 1981 Kalkhoff: brand only (brand row 5521 deleted 2026-10-23)
     'ideale 2002 or treated leather': null, // 1976 PY 10: either / or, as the 1973 PX 10 either/or saddle (left unlinked)
     // 1987 Raleigh Randonneur 18: "Brooks Professional, honey finish, pre-softened" -> 5295 Brooks Professional pre-softened (velobase dates the row 2000, treated as a misdate; the catalogue itself shows the saddle in 1987).
@@ -2144,6 +2145,8 @@ const COMPONENT_OVERRIDES = {
   Chains: {
     'union': null, // 1981 Kalkhoff: brand only; Union 486 is a model the catalogue doesn't name
     'sedissport 108 links delta treated': 1402, // 1980 Peugeot (NL): Sedis Sedisport Delta (1980)
+    'sedisport 114 links delta treated': 1402, // 1982 Peugeot PBN / PFN / PKN / PVN / PXN 10: as the 108-link Delta
+    'sedis sedi color ½" x 3 32"': 8764, // 1979-80 Raleigh Professional Mk V: Sedis Sedicolor (catalogue splits the name)
     'sedisport narrow': [{ from: 1980, id: 1402 }], // 1983 Raleigh Europa / Record Sprint / Supersport 12: as bare 'sedisport' (1402 from 1980)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'suntour z': [{ from: 1982, to: 1989, id: 7821 }], // 1987 Raleigh Maverick 18 Pro; as "Suntour Z Silver/Black" and "Gold" (TZ-6000)
