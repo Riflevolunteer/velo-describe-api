@@ -480,3 +480,10 @@ is the "known drift" noted above (1978 / 1979 Peugeot, 1990 Bianchi). Two causes
   (and the 2026-10-20 Clement 1977 record) says 8972 Criterium Cotone; the one-off UPDATE moving it
   was never applied (the back-fill only fills NULLs). Applied 2026-10-23: bike_spec 6517 -> 8972, and
   8972 year_to 1977 -> 1981 (source_ref 165, 1981 Bianchi catalogue). DB and regeneration now agree.
+
+## Wrong-part pass from /linkCoverage era check — 2026-10-24
+
+- Headsets: "Campagnolo Record" / "Campagnolo Nuovo Record" / bare "CAMPAGNOLO" went to 2959 "1039, Gran Sport / Record" (1956-60). Overrides now range it: 2959 to 1959, 2963 "1039, Record Strada" 1960-85. 4 specs relinked (1974 / 1975 Motobecane Le Champion and Team Champion, 1983 Bianchi Tipo Corsa).
+- Hubs: Campagnolo Gran Sport went to 3256 "1006 Gran Sport" (1950-55), chosen when it was the only Gran Sport hub. Now 9212 "Gran Sport (1980s)" (La Bicicletta Guida '85/86). 6 specs relinked (1978-81 Raleigh Competition GS, 1983 Bianchi Campione del Mondo, 1985 Bianchi Squadra).
+- Brand-only links removed, as for the Kalkhoff Union / Selle Royal: 1987 Bianchi Sport SX "DID" chain (bare D.I.D row 1355) and 1973 Falcon Super Tourist 82 / 83 "Sturmey-Archer 3-speed" hubs (bare 1950 Sturmey Archer row 3593); both keys set to null.
+- Found by listing links whose bike year is more than 4 years outside the part's dates. Most other hits are velobase's single-year decade dating ("1980" for the 1980s). Part-date corrections proposed, not applied: Stronglight 49D 1895 (ends 1960, catalogues to 1979), Brooks Team Special 5304 (from 1981, Raleigh 1971-76), Mavic Montlhery Route 5093 (from 1979, Peugeot 1973-74), Ofmega Ambassador 9159 (1985, Bianchi 1978), Campagnolo 1052/SR 2313 (from 1979, catalogues 1975-78).

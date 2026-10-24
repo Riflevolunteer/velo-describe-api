@@ -19,7 +19,7 @@ that touched more than one brand) live separately:
 - [known-catalogs/falcon.md](known-catalogs/falcon.md) — Falcon (2 entries)
 - [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (5 entries)
 - [known-catalogs/zeus.md](known-catalogs/zeus.md) — Zeus (1 entry)
-- [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — matcher/override bugs, label normalization, DB-wide dedupe sweeps (6 entries)
+- [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — matcher/override bugs, label normalization, DB-wide dedupe sweeps (7 entries)
 
 When a new bike brand shows up for the first time, create
 `known-catalogs/<brand-slug>.md` for it (title `# <Brand> catalogs processed

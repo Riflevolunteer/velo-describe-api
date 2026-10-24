@@ -973,6 +973,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    'sturmey archer 3 speed': null, // 1973 Falcon Super Tourist 82 / 83: brand + speed count; the hit is the bare 1950 Sturmey Archer row 3593
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     // "flange normali" is the low-flange 1034, not the high-flange bare 'campagnolo record' pick.
     'campagnolo record strada normal flange 32 hole': [{ from: 1960, to: 1988, id: 3259 }], // Super-Leggera
@@ -1035,16 +1036,18 @@ const COMPONENT_OVERRIDES = {
     // 1978 Raleigh (US, ebykr scan).
     'campagnolo nuovo record small flange qr': 3259, // Professional Mk V: 1034 Record (Low Flange)
     'campagnolo nuovo record small flange qr 36 hole': 3259, // 1980 Professional Mk V, as 1979
-    'campagnolo gran sport small flange qr': 3256, // Competition GS: 1006 Gran Sport (DB's only Gran Sport hub; see 1985 Bianchi note)
-    'campagnolo gran sport small flange qr 36 hole': 3256, // 1980 Competition GS, as 1979
-    'campagnolo gran sport small flange quick release': 3256, // 1981 Raleigh Canada Competition GS: 1006 Gran Sport
+    // Gran Sport hubs from the 1970s-80s group: 9212 Gran Sport (1980s), added with La Bicicletta Guida '85/86;
+    // until then these used 3256, the 1950-55 1006 row (2026-10-24).
+    'campagnolo gran sport small flange qr': 9212, // Competition GS
+    'campagnolo gran sport small flange qr 36 hole': 9212, // 1980 Competition GS, as 1979
+    'campagnolo gran sport small flange quick release': 9212, // 1981 Raleigh Canada Competition GS
     'atom small flange qr': 3183, // Super Course: Atom (low flange aluminum), as 1977
     'atom small flange light alloy qr 36 hole': 3183, // 1980 Super Course, as 1979
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'campagnolo nuovo record 36h': 3259, // Centenario: 1034 Record (Low Flange), as the bare Nuovo Record entry
     'campagnolo record 32h': 3260, // Super Leggera: 1035 Record (high flange), as the bare 'campagnolo record' range
     'campagnolo record 36h': 3260, // Campionissimo
-    'campagnolo gran sport 36h': 3256, // Squadra: 1006 Gran Sport, as 1983 Bianchi (the DB's only Gran Sport hub row; velobase dates it 1950-55 but the number was reused by the 1980s group)
+    'campagnolo gran sport 36h': 9212, // 1985 Bianchi Squadra: Gran Sport (1980s)
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'shimano 600 ax small flange quick release': 3532, // Road Ace: Shimano FH-6361, 600 AX
     'campagnolo nuovo tipo small flange qr': 3230, // Gran Sport: Campagnolo 1251, Nuovo Tipo (small flange)
@@ -1098,7 +1101,7 @@ const COMPONENT_OVERRIDES = {
     // 1983 Bianchi. Bare "Nuovo Record" substring-hits an oddly titled
     // "(low flange, non-drilled, disk?)" row; the NR hubs are the 1034/1035.
     'campagnolo nuovo record': 3259, // Campagnolo 1034, Record (Low Flange)
-    'campagnolo gran sport': 3256, // Campagnolo 1006, Gran Sport
+    'campagnolo gran sport': [{ to: 1960, id: 3256 }, { from: 1970, id: 9212 }], // 1006 Gran Sport (1950-55) / Gran Sport (1980s)
     'campagnolo record pista (32 spoke tied soldered)': 3270, // Campagnolo 1036, Record Pista (high flange)
     'gipiemme pista': 3351, // Gipiemme Special Pista
     // 1987 Bianchi. "Shimano 105" otherwise hits the 1985-86 Golden Arrow;
@@ -1412,13 +1415,14 @@ const COMPONENT_OVERRIDES = {
     'campagnolo veloce': 2970, // 1993 Bianchi: Campagnolo HS-01VL, Veloce (part-number retitle)
     'shimano 600': [{ from: 1983, to: 1987, id: 3090 }], // 1987 Bianchi: Shimano HP-6207, 600EX
     // 1974 Motobecane. Not for the 1984 Peugeot PZ 10, a Super Record build (4041 would be the guess).
-    campagnolo: [{ bike: 'PZ 10', id: null }, { id: 2959 }], // Campagnolo 1039, Gran Sport / Record
+    // 1039 Gran Sport / Record (2959) is the 1956-60 row; from 1960 the 1039 is Record Strada (2963).
+    campagnolo: [{ bike: 'PZ 10', id: null }, { to: 1959, id: 2959 }, { from: 1960, to: 1985, id: 2963 }],
     'stronglight competition': 3125, // Stronglight V4 Competition (later version, octagonal locknut, 1960-80); was the 1950-60 earlier version until the 1970 Peugeot pass
     // 1981 Kalkhoff (ambiguous with the Super Record Pista row).
     'campagnolo super record': 2968, // Campagnolo 4041, Super Record
     // 1983 Bianchi. Bare "Nuovo Record" substring-hits the Alleggerita
     // variant; the standard NR headset is the 1039.
-    'campagnolo nuovo record': 2959, // Campagnolo 1039, Gran Sport / Record
+    'campagnolo nuovo record': [{ to: 1959, id: 2959 }, { from: 1960, to: 1985, id: 2963 }], // 1039 Record Strada from 1960 (1983 Bianchi Tipo Corsa)
     'campagnolo gran sport': 2951, // Campagnolo 1040/A, Gran Sport
     'gipiemme pista': 3008, // Gipiemme Special (Pista)
     // 1987 Bianchi. Bare "C Record" substring-hits the Century Finish variant.
@@ -1428,7 +1432,7 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace': [{ from: 1984, to: 1993, id: 3099 }, { from: 1994, id: 3100 }], // HP-7400 / HP-7410
     // 1993 Bianchi.
     // 1975 Motobecane / later catalogues. Without this the only substring hit is the Record Pista #1040 track headset.
-    'campagnolo record': [{ to: 1985, id: 2959 }, { from: 1990, id: 2964 }], // 1039 / HS-01RE
+    'campagnolo record': [{ to: 1959, id: 2959 }, { from: 1960, to: 1985, id: 2963 }, { from: 1990, id: 2964 }], // 1039 / 1039 Record Strada / HS-01RE
     'campagnolo chorus': 2956, // Campagnolo 704/101, Chorus
     'shimano ultegra': 3087, // Shimano HP-6400, 600 Ultegra
     'suntour xc comp': 8045, // SunTour HS-ST00-J / -I (XC-Comp headset per the 1992 system chart)
@@ -2163,6 +2167,7 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    'did': null, // 1987 Bianchi Sport SX: brand only; the hit is the bare D.I.D brand row 1355
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'regina extra oro': [{ from: 1970, to: 1980, id: 1385 }], // Rekord/748, /746: Regina Extra "Oro"
     'union': null, // 1981 Kalkhoff: brand only; Union 486 is a model the catalogue doesn't name
