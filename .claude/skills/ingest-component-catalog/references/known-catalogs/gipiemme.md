@@ -86,3 +86,50 @@
   answered "Temporarily Offline", so full-size scans could not be checked. Retry
   the CDX search for images over about 15 KB in items 1505-1546 when Wayback is
   back.
+
+## Gipiemme "Gruppi completi e componenti" catalogue (9 scans, October 1984, disraeligears.co.uk)
+
+- `data_source` 269, label `Gipiemme catalogue, complete groups and components (Oct 1984)`, country IT. Source:
+  https://www.disraeligears.co.uk/site/gipiemme_-_catalogue_1984.html (scans at
+  `00_main_images/gipiemme_catalogue_1984_-_<name>_main_image.jpg`: front_cover, section_divider, page_g1..g6,
+  rear_cover; 1560 x 1072 landscape; only the cover's full-size link is in the page HTML, the rest follow the same
+  pattern). Gipiemme S.R.L., via XX Settembre 60, Camisano Vicentino; IT / EN / FR / DE. **"10/84" is printed on every
+  page**, so the date is stated. Read 2026-10-24.
+- Seven groups (G1 table): Cronospecial AA, Special BB (road); Cronosprint Nero / Aero CA, Cronosprint Classic CC,
+  Cronosprint Economy CE (road); Special B1 (track); Special B4 (cross). G1 prints "Nero" where G4 prints "Aero". Classic
+  and Cross are in the G1 table only, never pictured, so no rows. Pages: G2 Cronospecial AA, G3 Special BB, G4
+  Cronosprint Aero CA, G5 Cronosprint Economy CE, G6 Special Pista B1.
+- New part numbering, replacing the 1970s binder's 6001xx / 7001xx: 100 crankset, 200 bottom bracket, 300 pedals, 400
+  hubs, 500 headset, 600 seat post, 700 brakes, 800 derailleur set (front, rear, shifters); the suffix is the group
+  (AA, BB, CA, CC, CD, CE, DD, A1, B1). Cronospecial and Special share 100AA / 200BB / 400BB / 500AA / 600BB / 800AS.
+  The page author (disraeligears) guesses the derailleurs are re-badged Simplex (800AS = SLJ6600, 800CS = LJ4000,
+  800DS = SX610); the catalogue itself names no maker. G1 also prints thread sizes (pedals 9/16x20F or M14x1.25, BB
+  "36x25F" / M35x1 / "1.360x24", hubs 35x24F / 37.1x1 / 1.370x24, headset 25.4x24F / M25x1 / 1"x24, seat post
+  diameters 25-27.2); the 36x25F and 1.360 look like misprints and were not used.
+- The first Gipiemme catalogue on file with derailleurs, brakes and brake levers (the binder, `data_source` 202, has none;
+  203 is freewheels and pedals only).
+- Rows inserted (2, 1984-1984, group 85 Crono Sprint, `source_ref` 269): 9509 400DD hubs (Aero and Economy), 9510 700CE
+  brakes (Economy, black enamel).
+- Rows updated (19, `source_ref` 269): `year_to` -> 1984 on 1587 (100AA), 1589 (100CC), 5788 (600DD), 765 (700CC),
+  4261 (800DS rear); `year_from` -> 1984 (old values in brackets) on 9133 200CC (1985), 64 200BB (1988), 3351 400B1
+  (1985), 9137 500AA (1985), 321 Crono Special levers (1985), 324 Special levers (1985); descriptions only on 3348 400BB,
+  3007 500CC, 3008 500B1, 5790 600CA, 5786 600BB, 2367 / 4259 800AS front and rear, 3747 300AA. No titles changed, so
+  no `search_text` rewrites. The old 3747 text ("current model in the 1982-83 leaflet") was dropped as a citation of
+  its own source.
+- Judgement calls and open items (all left unchanged):
+  - 100CE (Economy crank) and 500CE (Economy headset) are probably 1591 "Crono Sprint /E" and 3004 "Crono Sprint E"
+    (no years, group 85 / none); the "E" is only suggestive.
+  - 100A1 (Pista crank) could be 1588 "Crono Special (Pista)" (1982-88, group 165) or 1593 "Special 600101 (Pista)"
+    (1970-70).
+  - 200B1 (Pista bottom bracket): 9136 "200 R1" (1985, 316 g) is probably the same part with B read as R; recheck the
+    1985 guide pages (`data_source` 259) before relinking.
+  - 800CS (Aero front and rear) and 800DS (front): the DB has 2368 / 4260 "800CC-80xCC" and 2369 "802 DD" from 1982,
+    so 800CS may be a rename of 800CC; not inserted.
+  - Pedals 300BB, 300CA and 300DD (DB 3752 Special, 3749 Cronosprint) and the Cronospecial and Special brakes (763 /
+    764 and 766 / 767, "nut vs hex socket" cannot be seen in the photos) left alone.
+  - 5788 "Crono Sprint 600DD" sits in group 27 (Crono Special) although its title and the catalogue say Crono Sprint
+    (group 85); group not changed.
+  - Spelling: the catalogue prints "Cronospecial" / "Cronosprint" as one word; the DB mixes it with "Crono Special" /
+    "Crono Sprint" (about 100 rows). A spelling pass was not done.
+  - Absent from this catalogue and not capped (one catalogue's absence): Dual Sprint, Azzurra, Azzurro, Bagarre,
+    Exploit, Crono Sprint White Laser rows.
