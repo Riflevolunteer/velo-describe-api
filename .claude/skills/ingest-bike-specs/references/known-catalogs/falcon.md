@@ -76,3 +76,7 @@
   Centre pull / side pull brakes; "Weinmann alloy tourist", "Weinmann with
   hooded levers"; Sprint / Endrick / Weinmann alloy rims; Clement.
 - Regression: all other catalogs unchanged.
+
+## Scope pass — 2026-10-24
+
+- Deleted as utility bikes (user decision), with their 34 specs (none linked), and added to NON_ROAD_SKIP: 1973 Super Tourist Model 82 / 83 (all-rounder bars, Sturmey-Archer 3-speed, mattress saddle, Bluemels) and 1974 Tourist Model 82 / 83 (all-rounder bars, 5-speed with AW 3-speed option, mattress saddle, Bluemels, Endrick steel rims). Same pattern as the Super-Tourist De Luxe 88 / 89 dropped 2026-10-17. Ladies' drop-bar models (Black Diamond 71, Model 69) stay.
