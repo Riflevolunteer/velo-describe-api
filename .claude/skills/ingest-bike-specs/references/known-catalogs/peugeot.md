@@ -575,3 +575,4 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 ## Link pass from /linkCoverage — 2026-10-24
 
 - 1982 (NL) "Sedisport, 114 links, Delta treated" (5) -> 1402 Sedis Sedisport Delta, as the 1980 108-link value. 1984 (FR 3, GB 2) bare "Turbo" saddle -> 5508 Selle Italia Turbo (ranged 1980-90). +10 links; no other catalogue changed.
+- 1984 PCA 10: Front Derailleur "Huret Duopar" deleted (Duopar is a rear mech; the cell repeated the rear). CSV cell blanked (untracked).
