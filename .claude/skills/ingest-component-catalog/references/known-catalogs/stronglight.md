@@ -178,3 +178,20 @@
   specs are now linked to 1914 and the three values are in `COMPONENT_OVERRIDES` (Cranksets, 1977-1980).
   1914's `year_from` 1970 is a velobase decade value and n° 22 (1974) does not list the TS, so a later
   start is likely, but no catalogue attests a start year.
+
+## `year_from` moves (2026-10-24, first use of the "DB year_from is earlier than the evidence" rule)
+
+Velobase decade-bucket `year_from` 1970 moved later on catalogue / bike evidence; `source_ref` left as is. Old value 1970 on all
+seven, so to revert set `year_from = '1970'`.
+
+| Row | Moved to | Evidence |
+|---|---|---|
+| 1906 "99" | 1974 | n° 22 (1974) calls it the "nouveau 99"; earliest linked bike 1974. |
+| 1880 "105 Bis" | 1976 | Palo Alto 1976 (row 9079) "new for 1976"; absent from n° 22; earliest Bis bike 1977. |
+| 1893 "49 Tri" | 1977 | Absent from n° 22 (1974), in n° 25 (1980); earliest linked bike 1977. |
+| 1882 "106" | 1980 | Absent from n° 22; earliest linked bike 1980 (12 bikes 1980-84). n° 25 (1980) omits it, which conflicts with those bikes. |
+| 1909 "99 BIS NM" | 1982 | No. 26 calls it the "new model"; nothing earlier lists it; no linked bikes. |
+| 1907 / 1908 "99 (new style, drilled / triple)" | 1980 | Absent from n° 22, first listed in n° 25; weak, n° 24 (1978) not in our sources. |
+
+Not moved: 156 / 157 (650 / 651: n° 25 "nouveaute" vs a 1976 citation, conflict); 1914 Touring Sport (no attested start year).
+The generator's overrides for 1880 and 1893 still start at 1970 but only resolve 1977-79 bikes, so they agree.
