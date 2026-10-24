@@ -425,7 +425,13 @@
 - Same scans as the "1986" set on https://2velo.com/bianchi-bicycle-catalog-80s/
   (115, 28, 37, 46, 55.jpg; checked 2026-10-24), so 2velo's 1986 is this
   catalogue, not a missing year. 2velo's "1988" set (1988p11-p81.jpg) is a
-  different, Japanese "Bianchi by BJ Sport Inc." catalogue: not ingested.
+  different, Japanese "Bianchi by BJ Sport Inc." catalogue (yen prices): Proto
+  (Columbus MAX), Mondiale (SL), Leggera (Chorus), X-4 Argentin, X-4, Squadra
+  (Victory), Speciale, Rekord, Axis, Grizzly, X-4 / M-8 / S-8 frames, plus
+  Bambina and Aquiletta (children's). Also c. 1988 (MAX, Chorus), so it would
+  load as `1988_bianchi_jp_spec.csv` beside this US one, not displace it.
+  Held 2026-10-24 (user): only 500px scans exist and the Japanese spec lines
+  are unreadable; wait for a sharper copy.
 - Also bikalog.org `Bianchi/1986/bianchi-1986-roadmodels.pdf` (5 pages,
   OCRmyPDF): the same five scans (identical page sizes 1169x1460 ...
   1151x1460, same OCR text). Three sites now file it as 1986; it stays 1988
