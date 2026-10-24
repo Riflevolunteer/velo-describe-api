@@ -935,7 +935,7 @@ const COMPONENT_OVERRIDES = {
     // 1012/4 Gran Sport, which the DB dates to 1973.
     'campagnolo gran sport': [{ to: 1977, id: 4118 }, { from: 1978, id: 4085 }], // 1012/4 Gran Sport / 3500 Nuovo Gran Sport
     // 1973 Bianchi junior Rekord.
-    'campagnolo valentino': 4079, // Campagnolo Nuovo Valentino (1970)
+    'campagnolo valentino': 4162, // Campagnolo 2170, Valentino Extra (1968-85); the unnumbered velobase 4079 "Nuovo Valentino" was merged into it
     // 1987 Bianchi.
     'campagnolo new victory': 4169, // Campagnolo Victory S3
     'shimano 105 sis': 4449, // Shimano RD-1050, 105

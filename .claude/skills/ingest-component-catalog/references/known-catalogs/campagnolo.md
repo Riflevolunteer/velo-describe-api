@@ -1040,3 +1040,17 @@ its own `data_source`.
     1983-1983.
 - Still unread in this folder: none. The remaining `Campy1953`-`Campy1995`
   files are duplicates of ingested catalogues or are recorded above.
+
+## Campagnolo year_from check on 4079 and 5734 — 2026-10-24 (user decision)
+
+Prompted by the new "DB year_from is earlier than the evidence" rule; checked against the catalogue notes above.
+
+- **4079 "Campagnolo Nuovo Valentino" rear (1970-1970, velobase, source_id 6926B3EA-15EE-4DD5-87C8-99E0B83EF5A7)
+  merged into 4162 "2170, Valentino Extra" (1968-1985) and deleted.** An unnumbered repeat like 4159 / 4160 (deleted
+  2026-09-28); it survived only through one link, the 1978 Bianchi Rekord/745 ("Campagnolo Valentino" rear). That link and
+  the generator override `'campagnolo valentino'` (Rear Derailleurs) now point at 4162. "Nuovo Valentino" appears in the
+  catalogues only as the front 0104008 (n. 18, 1985, row 2301). Delete again if a crawl reinserts it.
+- **5734 "3800, Gran Sport" seatpost `year_from` 1970 -> 1978.** The 1982 US catalogue says Gran Sport "now has its own 3800
+  post", n. 18 (1985) lists it, and the earliest linked bike is the 1978 Raleigh Competition GS. Medium confidence:
+  catalogue n. 17 (1974) and n. 17a (1975) were not rechecked for a 3800 post (the notes above neither list nor exclude
+  one); if either shows it, restore 1974 / 1975. To revert, set `year_from = '1970'`.
