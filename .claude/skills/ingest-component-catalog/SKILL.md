@@ -75,6 +75,28 @@ them). Classify each catalog item as:
   `year_to` up to the catalog year; a part listed earlier than the DB's
   `year_from` moves that down. A part missing from a later catalog bounds
   `year_to` at the previous catalog's year, no further.
+- **Present, DB `year_from` is earlier than the evidence** — velobase years
+  are mostly decade buckets (1950, 1960, 1970, 1980, 1990; often the same
+  value in both columns) meaning "sometime in that decade", not a measured
+  start. Treat them as weak, and move `year_from` **later** when the
+  catalogues refine or contradict them:
+  - the catalogue says the part is new ("nouveauté", "new for 19xx",
+    "introduced"): use that year;
+  - the part is absent from an earlier catalogue that lists the brand's
+    range in that category in full (a real catalogue, not a leaflet, an ad
+    or a bike spec list) and is in this one: set `year_from` to the
+    earliest year the part is attested anywhere (this catalogue, or a dated
+    bike spec, test or leaflet). That is an upper bound on the true start,
+    but better than a bucket the catalogues contradict;
+  - never move it past the earliest attestation. If sources conflict (a
+    "nouveauté" line in 1980 but a 1976 test already citing the part), keep
+    the earliest attested year and flag the conflict instead of moving;
+  - don't move it later on absence from a partial source, or on a
+    `year_from` a catalogue set deliberately (check `source_ref`) without a
+    stated start.
+  List every later move in the diff as "`year_from` N -> M, because ..." and
+  record the old value in `known-catalogs.md` so it can be reverted. The
+  bike generator's year-ranged overrides must move with it (see Gotchas).
 - **Present, catalog adds detail years alone don't capture** — a match by
   part number is not just a years check. If the catalog's title or
   description carries something the DB row doesn't (a model name, a
@@ -213,7 +235,8 @@ Write one `.sql` file per catalog in the scratchpad, then
   DELETE statements for review like any other SQL; nothing here auto-runs
   a DELETE without the user seeing it first.
 
-Report the result as a table of row, part, change. State which changes came
+Report the result as a table of row, part, change, with any `year_from` moved
+later called out on its own. State which changes came
 from a different catalog than the one being processed (they happen: a bike
 catalog can show a brake still fitted years after the DB's year_to).
 
@@ -235,8 +258,12 @@ commit; the SQL stays in the scratchpad.
 - DB access needs your IP in the RDS security group; `connect ETIMEDOUT`
   means it changed (README).
 - The Read tool's PDF renderer needs poppler's `pdftoppm`.
-- A catalog is a first-appearance record, not a start date: do not move
-  `year_from` earlier than the DB says unless the catalog itself is earlier.
+- A catalog is a first-appearance record, not a start date. Moving
+  `year_from` **earlier** needs a catalogue that is itself earlier. Moving it
+  **later** is expected for velobase decade buckets the catalogues contradict
+  (see "DB `year_from` is earlier than the evidence" in step 3), but the new
+  value is still only an upper bound on the start: use the earliest
+  attestation and record the reason.
 - Bike-catalog overrides (`COMPONENT_OVERRIDES` in the bike generator) that
   pick a version by year must agree with these rows' years; if you change a
   component's years here, check the bike skill's ranges.

@@ -1463,6 +1463,10 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1977-78 Peugeot: Stronglight TS (Touring Sport, 3-arm, 170mm, plain rings; the perforated one is the TS Bis, 1915).
+    'stronglight ts three arm cranks 170mm double chainring 42 52t': [{ from: 1977, to: 1980, id: 1914 }],
+    'stronglight ts 42 52t': [{ from: 1977, to: 1980, id: 1914 }],
+    'stronglight ts 40 50t': [{ from: 1977, to: 1980, id: 1914 }],
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'shimano santé': [{ from: 1988, to: 1989, id: 1841 }], // FC-5000
     "campagnolo croce d'aune": [{ from: 1988, to: 1991, id: 1489 }],

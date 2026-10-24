@@ -172,3 +172,9 @@
     (the 1980 99 Bis is the lighter pre-NM version), 1882 106 (absent 1974 and 1980, in no. 26), 1880 105 Bis.
   - Coffret Luxe names "105 / 99 / 49 / T.S." as families, too loose to extend 1914 Touring Sport or 9079.
   - Rings 1055, 452, 252 and the dural double chainwheel 352 are only described as crank parts; no rows.
+- Follow-up 2026-10-24: 1914 "Touring Sport" (the plain-ring TS; 1915 is the perforated TS Bis) extended
+  1970-1970 -> 1970-1980 (`source_ref` 266) because nine 1977-78 Peugeot specs ("Stronglight TS, 42/52T",
+  "three-arm cranks 170mm", "40/50T") name it and n° 25's Coffret Luxe lists "T.S." in 1980. Those nine
+  specs are now linked to 1914 and the three values are in `COMPONENT_OVERRIDES` (Cranksets, 1977-1980).
+  1914's `year_from` 1970 is a velobase decade value and n° 22 (1974) does not list the TS, so a later
+  start is likely, but no catalogue attests a start year.
