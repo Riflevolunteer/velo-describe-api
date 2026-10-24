@@ -591,3 +591,24 @@ Weinmann 1129 / 1130 570.
   LTX 55. Not added (no weight): Galli Aris groups, Cascella, Saccon levers, Royal / San Marco
   posts, Selle Italia Personal, Gommitalia tubulars, Iscaselle Time / Record, Campagnolo Ghibli M 25
   (the DB has M23 rows covering 1988).
+
+## La Bicicletta, July 1984 - Guida all'acquisto: le bici da turismo (8 scans, disraeligears.co.uk), read 2026-10-24, not ingested
+
+- Source: https://www.disraeligears.co.uk/site/la_bicicletta_1984_july_-_guida_allacquisto_le_bici_da_turismo.html
+  (scans at `00_main_images/la_bicicletta_1984_july_-_guida_allacquisto_le_bici_da_turismo_scan_NN_main_image.jpg`,
+  01-08, 1560 px, legible). No `data_source` row was created.
+- **Not a component catalogue.** A buyer's guide to complete city, touring, folding and children's
+  bikes: model / frame / wheels / colours / fittings / price in lire. Part 1 of 2 and covers makers
+  A to D: Atala, Aurelia Dino, Battaglin, Benotto, Bianchi, Biemmezeta, Bibici, Bicipeg, Bottecchia,
+  Carraro, Ceriz, Chiorda, Dei. The sequel (E to Z) is in issue no. 8, August 1984; not found yet.
+- The fittings column is house parts ("freni a filo", "cambio 5v", "manubrio piega inglese") with
+  makers named only as a brand and no part number: Suntour 10v, Modolo brakes, Ofmega headset and
+  groups, Huret, Simplex 3v, Sturmey Archer 3v, Mauri, Universal, Ambrosio, Gian Robert, GPM. The
+  only model-level names: Campagnolo 980 (1984 Bianchi Stelvio, Bottecchia Dolomiti), Campagnolo GS
+  (Biemmezeta Portofino), Campagnolo NV derailleur and NT hubs (Dei Gran Turismo, Turismo 5V).
+- **Effect on the DB: none.** Campagnolo 980 (rear 4087 1980-85, front 2279 1980-86), Nuovo
+  Valentino (4079, 2301) and Nuovo Gran Sport 3500 (4085) already cover the years; the NT hub is not
+  tied to a row. Brand-only text lands in the `brand_only` class of `/linkCoverage`.
+- Left as a bike source: ~90 city / folding / kids' models, low value for link coverage (brand-only
+  or house parts). If ever loaded, use `ingest-bike-specs`. Part 2 (August 1984) is the more useful
+  half: Colnago, Legnano, Peugeot, Raleigh and similar makers fall there.
