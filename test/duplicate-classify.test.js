@@ -51,6 +51,18 @@ test('fitting differences are configurations', () => {
   assert.strictEqual(relate(row('Zeus 2000 Titanium (Pista)'), row('Zeus 2000 Titanium (Strada)')), 'configuration')
 })
 
+test('flange, material and mounting differences are configurations', () => {
+  assert.strictEqual(relate(row('Galli (low flange, GG skewer)'), row('Galli (high flange, GALLI skewer)')), 'configuration')
+  assert.strictEqual(relate(row('Alas bottom bracket (titanium)'), row('Alas bottom bracket (steel)')), 'configuration')
+  assert.strictEqual(relate(row('Shimano FD-7410, Dura-Ace 7400 (braze on)'), row('Shimano FD-7410, Dura-Ace 7400')), 'configuration')
+  assert.strictEqual(relate(row('Maillard 700, Professional (low flange)'), row('Maillard 700, Professional (large flange)')), 'configuration')
+})
+
+test('markings on the part are cosmetic', () => {
+  assert.strictEqual(relate(row("Olimpic Super ('Super Olimpic' on levers)"), row("Olimpic Super ('Olimpic' on levers)")), 'cosmetic')
+  assert.strictEqual(relate(row('FB (FB in circle)'), row('FB (FB in circle with inset rectangle)')), 'cosmetic')
+})
+
 test('an unexplained difference is left for review', () => {
   assert.strictEqual(relate(row('Modolo Speedy (variation 2)'), row('Modolo Speedy')), 'review')
 })

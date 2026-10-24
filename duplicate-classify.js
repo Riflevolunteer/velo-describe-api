@@ -14,8 +14,9 @@
 //
 // Only duplicate and cosmetic are merge candidates; the rest are real parts.
 
-const COSMETIC_WORDS = /\b(black|white|silver|gold|red|blue|green|grey|gray|yellow|orange|anodi[sz]ed|polished|painted|finish|lettering|lettered|incised|label|labelled|labeled|logo|washers?|cap nut|nut|hex socket|center ?bolt|centre ?bolt|decal|edition|font|drilled|engraved|stamped|color|colour|sticker)\b/i
-const CONFIG_WORDS = /\b(double|triple|single|pista|strada|road|track|cross|tandem|mtb|touring|left|right|lh|rh|front|rear|quick release|qr|braze-?on|clincher|tubular|\d+ ?(speed|mm|t|bcd)|bcd|short|long|cage|compact)\b/i
+const COSMETIC_WORDS = /\b(black|white|silver|gold|red|blue|green|grey|gray|yellow|orange|anodi[sz]ed|polished|painted|finish|lettering|lettered|incised|label|labelled|labeled|logo|washers?|cap nut|nut|hex socket|center ?bolt|centre ?bolt|decal|edition|font|drilled|engraved|stamped|color|colour|sticker|badge|printed|signature|on (the )?(levers?|body|barrel|backside)|in (a |an )?(circle|oval|ovals|indent|rectangle)|oblong rectangle|knurled)\b/i
+// Fitting, construction and material differences: a different part, not a repaint.
+const CONFIG_WORDS = /\b(double|triple|single|pista|strada|road|track|cross|tandem|mtb|touring|left|right|lh|rh|front|rear|quick release|qr|braze[- ]?on|clincher|tubular|\d+ ?(speed|mm|t|bcd)|bcd|short|long|cage|compact|(high|low|large|small)[ -]?flange|flange|pieces?|mount|clamps?|band|tab|spiders?|arms?|pins?|flutes?|fluted|rails?|springs?|wires?|taper|cottered|cotterless|expander|steel|alloy|alu(minum|minium)?|titanium|cro-?moly|chromoly|leather|suede|forged|smooth|slotted|holes|pulleys?|inner|outer|aero|sidepull|quill|girder|ferrule|sleeved|speed indicator)\b/i
 const GENERATION_WORDS = /\b(v\d|version|type \d|gen|generation|first|second|third|1st|2nd|3rd|early|earlier|later|late|new style|old style|mk ?\d|mark \d|prototype)\b/i
 
 const parentheticals = (title) => (title.match(/\(([^)]*)\)/g) || []).map(s => s.slice(1, -1).trim()).filter(Boolean)
