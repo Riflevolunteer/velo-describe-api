@@ -127,9 +127,9 @@
   (earlier version). 1894 49A description names both editions (810 g 1974 new model, 895 g no. 26) and
   keeps `source_ref` 195. No titles changed, so no `search_text` rewrites.
 - Judgement calls and open items:
-  - n° 22's 99 has slotted rings, so it was matched to the "new style" rows 1907 / 1908, not 1906 "99"
-    (which no. 26 describes with non-perforated rings, 1970-82). If the "new style" rows are really the
-    same part as 1906 or 1909, they would merge.
+  - **Corrected by n° 25 (2026-10-24):** n° 22's 99 has slotted, non-perforated rings, so it is the plain
+    1906 "99" (800 g / 850 g now on 1906); the "new style, drilled / triple" rows 1907 / 1908 are the
+    perforated 99 Bis (900 g / 972 g, n° 25). My first match put the n° 22 spec on 1907 / 1908.
   - 1874 "93 Pista" (id 1874, source_id 24293C73-3E73-44F9-8378-1C194DE531D3, bare Velobase row, no years,
     no links) was merged into 1905 "93 Piste" (the catalogue says "version piste") and deleted 2026-10-24.
   - 1880 "105 Bis" starts 1970 in the DB, but n° 22 has no 105 and Palo Alto 1976 (row 9079) calls the
@@ -141,3 +141,34 @@
     651 BBs, 49 Tri 1893 (listed in no. 26).
   - V4 later version 3125 matches n° 22 exactly (303-308, 185 g), no change; the earlier two-pin V4
     (3124, ends 1960) is consistent.
+
+## Stronglight "Catalogue n° 25" (25 scans, c. 1980, labibleduvelocataloguesstronlight.blogspot.com)
+
+- `data_source` 266, label `Stronglight Catalogue no. 25 (1980)`, country FR. Source:
+  https://labibleduvelocataloguesstronlight.blogspot.com/p/stronlight-1980.html (Blogger images
+  `CYCLES STRONLIGHT 1980 (1..25)`, 1600 x 1133 landscape). FR / EN / DE / ES, Etablissements
+  Verot-Perrin, tel (77) 25-48-68 (6-digit), printed by J. Haubtmann. Title page prints "catalogue n° 25"
+  and no year; **1980 is the blog page title**, between n° 24 (1978) and no. 26 (1982). Scan N is
+  printed page N-1 from scan 3 on. Read 2026-10-24.
+- Listed: cranksets 105 Bis (908 g, 1023 g with guard, super-light 870 / 775 g), 99 Bis (900 / 972 g),
+  49 (rings 1055 / 490, 895 g), 49 Tri (975 g), TS Bis (920 g), No. 52, tandem series (diagram only);
+  Coffret Luxe kit (105 / 99 / 49 / T.S.); axle 65 and 65 cups, 34, 650 (199 g, "nouveaute") and 651
+  (275 g); chainwheels 255 (355 / 455) and 253; headsets D6, S5, P3 (octagonal locknut 303), V4. Out
+  of scope: extra-light screws 59D-74D, sealing sleeve, tools 82-94, cap.
+- No rows inserted. Rows updated (15, descriptions): 1880 105 Bis, 1893 49 Tri, 1915 Touring Sport Bis,
+  1907 / 1908 (99 Bis double / triple), 155 ref. 65, 1322 Type 49 (ring 490), 3116 D6, 3120 P3 later
+  version `source_ref` 266; 1906 99 (n° 22 spec moved here, `source_ref` 265). `year_to` -> 1980: 1897
+  No. 52, 9502 255, 9503 253 (255 / 253 keep `source_ref` 265, 1897 is 266). 1894 49A (195), 3122 S5
+  (265) name both editions. No titles changed, so no `search_text` rewrites.
+- Edition differences recorded inline: 255 inner ring 36-39-40 (n° 22) vs 36-38-40 (n° 25); 253 teeth
+  46-47-48-49-50-52 vs 46-48-50-52; 49 ring 490 46-53T vs 48-53T in no. 26; S5 225 g (n° 22) vs 210 g /
+  190 g with alloy 603 / 604 (n° 25); axle 65 S length 124 (n° 22) vs 123 (n° 25).
+- Judgement calls and open items:
+  - 650 / 651 are marked "nouveaute" but Palo Alto 1976 (row 9079) already cites them, so 156 / 157
+    (1970-85) were not touched.
+  - Absent from n° 25, no change: 93 / 93 Tri / No. 53 (1904 stays 1967-1980; n° 24, 1978, is not in
+    our sources), 104 (1878, 8811), 106 (1882), 107, D8, S7 (consistent with their 1981 start).
+  - Years that look too early and were left: 1893 49 Tri (absent from n° 22, present 1980), 1909 99 BIS NM
+    (the 1980 99 Bis is the lighter pre-NM version), 1882 106 (absent 1974 and 1980, in no. 26), 1880 105 Bis.
+  - Coffret Luxe names "105 / 99 / 49 / T.S." as families, too loose to extend 1914 Touring Sport or 9079.
+  - Rings 1055, 452, 252 and the dural double chainwheel 352 are only described as crank parts; no rows.
