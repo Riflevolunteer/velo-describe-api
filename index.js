@@ -4,6 +4,7 @@ const EbayAuthToken = require('ebay-oauth-nodejs-client');
 const fetch = require('node-fetch');
 const loadEnv = require('./load-env');
 const { BICYCLE_PARTS, categoryLadder } = require('./ebay-categories');
+const { buildBrandIndex, classifyValue, ACTIONABLE_CLASSES, CLASS_ORDER } = require('./link-classify');
 
 var crypto = require('crypto'),
     algorithm = 'aes-256-ctr',
@@ -512,8 +513,12 @@ const NON_LINKABLE_SPEC_LABELS = new Set([
 // re-run without walking /bikeBrands -> /bikesbybrand -> /bikedetail. Also
 // lists the most common unlinked value_text per linkable category with the
 // number of bikes carrying each, which is the worklist for the next catalogue
-// or COMPONENT_OVERRIDES pass; ?unlinked=N sets how many values per category
-// (default 10, max 50, 0 omits the list). Read-only aggregate SQL.
+// or COMPONENT_OVERRIDES pass. Only values someone could act on are listed
+// (link-classify.js: a brand plus a model word, or a model word alone); the
+// materials, sizes, brand-only and house values are just counted per class in
+// `classes`. Values that differ only in case, accents or punctuation are one
+// entry, with the spellings in `variants`. ?unlinked=N sets how many values per
+// category (default 10, max 50, 0 omits the list). Read-only aggregate SQL.
 app.get('/linkCoverage', function (req, res, next) {
   const unlinkedLimit = req.query.unlinked === undefined ? 10 : Number(req.query.unlinked)
   if (!Number.isInteger(unlinkedLimit) || unlinkedLimit < 0 || unlinkedLimit > 50) {
@@ -539,19 +544,33 @@ app.get('/linkCoverage', function (req, res, next) {
                                 left join bike_spec_label bsl on bsl.label_id=bs.label_id
                                 group by bb.brand_id, bb.title, bsl.label_id, bsl.title`)
   const bikesPromise = query('SELECT brand_id, COUNT(*) as bikes FROM bike group by brand_id')
+  // Every unlinked value, not a top N: the classifier decides what's listed.
   // Distinct bikes rather than spec rows, so a value repeated across a bike's
   // split compound cells doesn't count twice.
-  const unlinkedPromise = unlinkedLimit === 0 ? Promise.resolve([]) : query(
-    `SELECT label_id, label, value_text, bikes FROM (
-        SELECT bsl.label_id, bsl.title as label, bs.value_text, COUNT(DISTINCT bs.bike_id) as bikes,
-               ROW_NUMBER() OVER (PARTITION BY bsl.label_id ORDER BY COUNT(DISTINCT bs.bike_id) DESC, bs.value_text) as rn
-          FROM bike_spec bs
-          join bike_spec_label bsl on bsl.label_id=bs.label_id
-          where bs.component_id IS NULL and bsl.title not in (?)
-          group by bsl.label_id, bsl.title, bs.value_text
-     ) ranked where rn <= ? order by label_id, rn`, [[...NON_LINKABLE_SPEC_LABELS], unlinkedLimit])
+  const skip = Promise.resolve([])
+  const unlinkedPromise = unlinkedLimit === 0 ? skip : query(
+    `SELECT bsl.label_id, bs.value_text, COUNT(DISTINCT bs.bike_id) as bikes
+       FROM bike_spec bs
+       join bike_spec_label bsl on bsl.label_id=bs.label_id
+      where bs.component_id IS NULL and bsl.title not in (?)
+      group by bsl.label_id, bs.value_text`, [[...NON_LINKABLE_SPEC_LABELS]])
+  // What the classifier needs to recognise makers: component brands, the first
+  // word their component titles start with, bike brands, and which component
+  // categories each label links to (from the links already made) so a bike
+  // brand counts as a maker only where it has rows in that category.
+  const brandsPromise = unlinkedLimit === 0 ? skip : query('SELECT brand_id, title FROM component_brand')
+  const titleWordsPromise = unlinkedLimit === 0 ? skip : query(
+    `SELECT brand_id, SUBSTRING_INDEX(TRIM(title), ' ', 1) as word FROM component_detail
+      group by brand_id, word having COUNT(*) >= 3`)
+  const bikeBrandsPromise = unlinkedLimit === 0 ? skip : query('SELECT title FROM bike_brand')
+  const labelCategoriesPromise = unlinkedLimit === 0 ? skip : query(
+    `SELECT DISTINCT bs.label_id, cd.category_id FROM bike_spec bs
+       join component_detail cd on cd.component_id=bs.component_id`)
+  const brandCategoriesPromise = unlinkedLimit === 0 ? skip : query('SELECT DISTINCT brand_id, category_id FROM component_detail')
 
-  Promise.all([cellsPromise, bikesPromise, unlinkedPromise]).then(([cellRows, bikeRows, unlinkedRows]) => {
+  Promise.all([cellsPromise, bikesPromise, unlinkedPromise, brandsPromise, titleWordsPromise, bikeBrandsPromise,
+    labelCategoriesPromise, brandCategoriesPromise]).then(([cellRows, bikeRows, unlinkedRows, brandRows, titleWordRows,
+    bikeBrandRows, labelCategoryRows, brandCategoryRows]) => {
     // SUM() comes back from the mysql driver as a DECIMAL string.
     const cells = cellRows.map(r => ({
       brand_id: r.brand_id, brand: r.brand, label_id: r.label_id, label: r.label,
@@ -604,14 +623,50 @@ app.get('/linkCoverage', function (req, res, next) {
 
     // Same weakest-first order as `categories`, so the first entry is the
     // category most worth working on next.
+    const brandIndex = buildBrandIndex(brandRows, bikeBrandRows.map(r => r.title), titleWordRows)
+    const labelCategories = new Map()
+    for (const r of labelCategoryRows) {
+      if (!labelCategories.has(r.label_id)) labelCategories.set(r.label_id, [])
+      labelCategories.get(r.label_id).push(r.category_id)
+    }
+    const brandCategories = new Set(brandCategoryRows.map(r => `${r.brand_id}|${r.category_id}`))
+
+    // label_id -> { classes: {class: {values, bikes}}, values: Map(key -> entry) }.
+    // Variants of one value are summed, which can count a bike twice if it
+    // carries two spellings of the same text; rare enough to ignore.
     const unlinkedByLabel = new Map()
     for (const r of unlinkedRows) {
-      if (!unlinkedByLabel.has(r.label_id)) unlinkedByLabel.set(r.label_id, [])
-      unlinkedByLabel.get(r.label_id).push({ value_text: r.value_text, bikes: Number(r.bikes) })
+      const categoryIds = labelCategories.get(r.label_id) || []
+      const brandHasRows = (brandIds) => brandIds.some(b => categoryIds.some(c => brandCategories.has(`${b}|${c}`)))
+      const { key, class: cls, brands } = classifyValue(r.value_text, brandIndex, brandHasRows)
+      const bikes = Number(r.bikes)
+      if (!unlinkedByLabel.has(r.label_id)) unlinkedByLabel.set(r.label_id, { classes: {}, values: new Map() })
+      const l = unlinkedByLabel.get(r.label_id)
+      const c = l.classes[cls] || (l.classes[cls] = { values: 0, bikes: 0 })
+      c.bikes += bikes
+      if (!l.values.has(key)) {
+        c.values += 1
+        l.values.set(key, { class: cls, brands, bikes: 0, variants: [] })
+      }
+      const v = l.values.get(key)
+      v.bikes += bikes
+      v.variants.push({ value_text: r.value_text, bikes })
     }
     const unlinked_values = unlinkedLimit === 0 ? undefined : categories
       .filter(c => unlinkedByLabel.has(c.label_id))
-      .map(c => ({ label_id: c.label_id, label: c.label, values: unlinkedByLabel.get(c.label_id) }))
+      .map(c => {
+        const { classes, values } = unlinkedByLabel.get(c.label_id)
+        const listed = [...values.values()]
+          .filter(v => ACTIONABLE_CLASSES.has(v.class))
+          .map(({ variants, ...v }) => {
+            variants.sort((a, b) => b.bikes - a.bikes || a.value_text.localeCompare(b.value_text))
+            return { value_text: variants[0].value_text, ...v, ...(variants.length > 1 && { variants }) }
+          })
+          .sort((a, b) => b.bikes - a.bikes || a.value_text.localeCompare(b.value_text))
+          .slice(0, unlinkedLimit)
+        const ordered = Object.fromEntries(CLASS_ORDER.filter(k => classes[k]).map(k => [k, classes[k]]))
+        return { label_id: c.label_id, label: c.label, classes: ordered, values: listed }
+      })
 
     res.send({ overall, categories, non_linkable_categories, brands, brand_categories, unlinked_values })
   }).catch((error) => {
