@@ -195,3 +195,36 @@ seven, so to revert set `year_from = '1970'`.
 
 Not moved: 156 / 157 (650 / 651: n° 25 "nouveaute" vs a 1976 citation, conflict); 1914 Touring Sport (no attested start year).
 The generator's overrides for 1880 and 1893 still start at 1970 but only resolve 1977-79 bikes, so they agree.
+
+## Stronglight "Catalogue n° 27" (16 scans, printed August 1982, labibleduvelocataloguesstronlight.blogspot.com)
+
+- `data_source` 267, label `Stronglight Catalogue no. 27 (1982)`, country FR. Source:
+  https://labibleduvelocataloguesstronlight.blogspot.com/p/stronlight-1984.html (Blogger images
+  `STRONLIGHT 1984 (1..16)`, 1128 x 1600 portrait). FR / EN / DE, joint Stronglight and Spidel branding,
+  Etablissements Verot-Perrin, tel (77) 25-48-68. **The back cover prints "AOUT 1982"** (Imprimerie J. Haubtmann,
+  photographers Coussirat and Delpech); the blog title and the VeloBase index both say 1984, so the printed date wins.
+  Scan 1 cover, 2 title page, then scan N is printed page N. Read 2026-10-24.
+- Listed: cranksets 107 (+ Tri), 106 (+ Tri), 103, 101, 99 Bis (+ Tandem 99 diagram), Cyclo-Cross, BMX; bottom
+  brackets 330 (sport / touring), 65 (competition), 650 / 651, adjustable one-piece shell (700 double-threaded /
+  701 fully threaded; Ti axle 224 g, steel 288 g, "T" or "A"), monobloc 600 (312 g); needle-bearing headsets A9
+  (78 g, parts 903-909) and B10 (66 g, parts 903 / 1005-1008). Out of scope: sealing sleeve, chain line table, tools
+  22 / 85 / 90 / 91 / 93-96 / 720 bis / 710 / 730, extra-light bolts 590D / 591D / 61D / 62D.
+- Compared with no. 26: the whole Super Competition headset line (D6, S5, S7, D8, P3, V4) is gone, replaced by the
+  needle-bearing A9 and B10; also gone: 105 Bis, 104, 49, 49 Tri, Touring Sport Bis, 255, 253. New pages: A9 and B10,
+  Cyclo-Cross, BMX, 600, 330.
+- Rows inserted (5, 1982-1982, `source_ref` 267): 9504 106 (triple), 9505 330, 9506 600, 9507 Cyclo-Cross, 9508 BMX.
+- Rows updated (8, `source_ref` 267): `year_from` 1984 -> 1982 on 3112 A9 (France locknut) and 3114 B10 (Spidel locknut),
+  because the catalogue is earlier than the DB's dates (old values 1984); `year_to` 1980 -> 1984 on 1877 103 (n. 27 lists
+  it in 1982 and two linked bikes are 1983-84; the 1984 rests on those bikes) and 1980 -> 1982 on 1876 101; descriptions on
+  1883 107 (884 g / 810 g with bottom bracket added to the 610 g crank-only), 1884 107 (triple), 1909 99 BIS NM (axle 118 /
+  125), 158 Delta (the adjustable shell, 224 g / 288 g, is the same as n. 27's "boitier de pedalier reglable"; the 700T /
+  700A rows 151 / 150 are 212 g / 262 g and stay separate). No titles changed, so no `search_text` rewrites.
+- Judgement calls and open items:
+  - n. 27's 99 Bis weighs 944 g / 1000 g, which is the 99 BIS NM (1909) of no. 26, not the 900 g / 972 g of n. 25
+    (1907 / 1908). 1907 / 1908 therefore keep 1980-1980 and were not extended.
+  - No. 26 is labelled 1982 in `data_source` 195 from the VeloBase index title; with n. 27 printed Aug 1982, no. 26 is
+    probably 1981 or earlier. Not relabelled.
+  - 330 and 600 have no weight or year evidence beyond 1982 (1982-1982 is the weakest of the inserts).
+  - Absent from n. 27 and not capped (one catalogue's absence): 105 Bis, 49, 49 Tri, Touring Sport Bis, 255, 253,
+    D6, S5, S7, D8, P3, V4. 3113 A9 (Spidel locknut) and 3115 B10 Bernard Hinault are not shown in n. 27 and unchanged.
+  - 104 is mentioned only as "same fixing diameter as 101 and 103"; no page, no row change.
