@@ -141,6 +141,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1981|kalkhoff', 'DE'], // VeloBase "1981 Kalkhoff Catalog" (kalhoff_prospekt_81.pdf), German text; market not stated
   ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
   ['1973|bianchi', 'IT'], // VeloBase title "1973 Bianchi Catalog (Italian market)"
+  ['1978|bianchi', 'IT'], // labibleduvelocataloguesbianchi "Bianchi 1978": Italian text, no prices; inferred
   ['1940|bianchi', 'IT'], // inferred
   ['1974|motobecane', 'US'], ['1975|motobecane', 'US'], // VeloBase titles "Motobécane - MBK 197x US Catalog"
   ['1986|colnago', 'IT'], // "Catalogo generale"
@@ -972,6 +973,10 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
+    // "flange normali" is the low-flange 1034, not the high-flange bare 'campagnolo record' pick.
+    'campagnolo record strada normal flange 32 hole': [{ from: 1960, to: 1988, id: 3259 }], // Super-Leggera
+    'campagnolo record normal flange 32 hole': [{ from: 1960, to: 1988, id: 3259 }], // Barcellona
     // 1980 Peugeot (NL) PBN / PFN / PKN 10: flange not stated; the photos show small flange hubs on
     // the racing range, so the 1979 small flange Q/R row (a judgement)
     'maillard normandy dural simplex sx quick release': 8137,
@@ -1139,6 +1144,10 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
+    'campagnolo super record short reach with special bianchi lightening': [{ from: 1975, to: 1985, id: 7005 }], // "bassi": 4061/1 short reach
+    'universal competizione 77': [{ from: 1977, to: 1988, id: 1083 }], // Rekord/748: Universal Mod. 77
+    'universal competizione cx': [{ from: 1970, to: 1985, id: 1086 }], // Campione del Mondo CX: Universal CX
     'spidel lsx': 823, // 1982 Peugeot PRO 10 / PY 10 S: MAFAC LSX (1982), Spidel-badged
     'spidel lsx professional': 823,
     'weinmann 506 alloy side pull quick release': 7764, // 1983 Peugeot (CA) PH 9: Weinmann AG 506 (1979-83)
@@ -1428,6 +1437,8 @@ const COMPONENT_OVERRIDES = {
     'spidel s7 competition': 3123, // Stronglight S7 Super Competition; DB dates it 1981-83, catalogue shows it 1979
   },
   'Bottom Brackets': {
+    // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
+    'campagnolo record': [{ from: 1967, to: 1988, id: 30 }], // Super-Leggera: 'movimento Record' -> 1046/a Nuovo Record (Strada)
     // 1973 Zeus. Bare 'Zeus Criterium' row 186 was merged into 188 (Zeus catalogue 102 dedupe, 2026-10-04).
     'zeus criterium (e)': 188, // Zeus Ref.33, Criterium
     // 1981 Kalkhoff. Bare substring hits the titanium 1st-gen row; the
@@ -1436,6 +1447,10 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
+    'campagnolo super record 42 53t 170mm': [{ from: 1974, to: 1988, id: 1509 }], // Super-Leggera: 1049/A Strada Super Record
+    'campagnolo super record strada 42 53t 170mm': [{ from: 1974, to: 1988, id: 1509 }], // Barcellona
+    'campagnolo record strada 42 53t 170mm': [{ from: 1967, to: 1988, id: 1496 }], // Campione del Mondo CX: 1049 Nuovo Record Strada v4
     // 1980 Peugeot (NL): Stronglight 104 (Peugeot logo, 1980); 1982 Peugeot (NL) PKN 10: the 1982 row
     'stronglight 104 anodised 45 x 52t 170 mm': [{ from: 1980, to: 1981, id: 1878 }, { from: 1982, to: 1982, id: 8811 }],
     'spidel 107 aerodynamic': 1883, // 1982 Peugeot PRO 10: Stronglight 107 (1980-85), Spidel-badged
@@ -1973,6 +1988,9 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
+    'campagnolo super record strada': [{ from: 1974, to: 1988, id: 3716 }], // Barcellona: 4021
+    'campagnolo record super leggeri': [{ from: 1971, to: 1988, id: 3709 }], // Super-Leggera: 1037/a Record Strada Superleggeri
     'union': null, // 1981 Kalkhoff: brand only; Union U40 is a model the catalogue doesn't name
     // SR pedals named by model number (rows from the SR Catalog No. 18 pass, data_source 92)
     'sr sp100al alloy': 3922, // 1979 Raleigh Super Course: SP-100AL Silstar quill (1970-82)
@@ -2062,6 +2080,8 @@ const COMPONENT_OVERRIDES = {
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
   },
   'Seat Posts': {
+    // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
+    'campagnolo record strada': [{ from: 1969, to: 1985, id: 5749 }], // Super-Leggera: 1044 Record
     // 1986 Raleigh: SR CT-P5 (Sakae Laprade). 5857 is the later version (1980-82) vs 5858 early;
     // the CT-P5E cells stay unlinked (no E row).
     'sr ctp 5 laprade alloy micro adjust': 5857,
@@ -2143,6 +2163,8 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
+    'regina extra oro': [{ from: 1970, to: 1980, id: 1385 }], // Rekord/748, /746: Regina Extra "Oro"
     'union': null, // 1981 Kalkhoff: brand only; Union 486 is a model the catalogue doesn't name
     'sedissport 108 links delta treated': 1402, // 1980 Peugeot (NL): Sedis Sedisport Delta (1980)
     'sedisport 114 links delta treated': 1402, // 1982 Peugeot PBN / PFN / PKN / PVN / PXN 10: as the 108-link Delta
@@ -2242,6 +2264,9 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
   },
   Freewheels: {
+    // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
+    'regina extra oro 5 speed': [{ from: 1970, to: 1978, id: 2182 }], // Rekord/748
+    'regina extra 5 speed': [{ from: 1970, to: 1978, id: 8171 }], // Rekord/746: Regina Extra (5 speed)
     // 1980 Peugeot (NL): Normandy 5-speed (1979-82 row); the 6-speed 14-24 Normandy has no row before 1982
     'maillard normandy 14 17 19 21 24': [{ from: 1979, to: 1982, id: 8125 }],
     'maillard normandy 14 16 18 20 23': [{ from: 1979, to: 1982, id: 8125 }],
@@ -2395,6 +2420,8 @@ const COMPONENT_OVERRIDES = {
     'ritchey megabite hardrive': 8383, // Ibex / Osprey: Ritchey MegaBite HardDrive
   },
   Rims: {
+    // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
+    'mavic special': null, // "speciale MAVIC": a special Mavic rim, not the Service des Courses row the substring hits
     'mavic special sport': [{ from: 1980, to: 1991, id: 5109 }], // 1981 Bianchi: Mavic Spéciale Sport tubular (c. 1980 catalogue, 400 g)
     'mavic ma 40 hard anodized': 5077, // 1986 Raleigh: Mavic MA 40, as the 1987 Bianchi "Mavic MA40"
     'mavic m3cd hard anodised 36h eyeleted': 5048, // 1987 Raleigh: Module 3 CD (M3 CD)
