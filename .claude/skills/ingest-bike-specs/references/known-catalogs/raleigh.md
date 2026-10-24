@@ -769,4 +769,5 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
 ## Link pass from /linkCoverage — 2026-10-24
 
 - 1979 and 1980 Professional Mk V "Sedis Sedi Color" chain -> 8764 Sedis Sedicolor (the catalogue splits the name). +2 links.
-- 1975 and 1976 Gran Sport DL 160: Front Derailleur "Simplex Maxi wide Ratio 10 Speed" deleted (the Derailleurs cell was copied to both; Maxi is the rear). CSVs (untracked) gained a "Rear Derailleur" column holding that value, with Derailleurs blanked for that row. 1973 "New Simplex Maxi" and 1974 "Simplex Maxi 10 speed" still have the same front copy.
+- 1975 and 1976 Gran Sport DL 160: Front Derailleur "Simplex Maxi wide Ratio 10 Speed" deleted (the Derailleurs cell was copied to both; Maxi is the rear). CSVs (untracked) gained a "Rear Derailleur" column holding that value, with Derailleurs blanked for that row.
+- 1973 "New Simplex Maxi" and 1974 "Simplex Maxi 10 speed" Gran Sport DL 160: same front copy deleted the same way (2026-10-24).
