@@ -426,6 +426,10 @@
   (115, 28, 37, 46, 55.jpg; checked 2026-10-24), so 2velo's 1986 is this
   catalogue, not a missing year. 2velo's "1988" set (1988p11-p81.jpg) is a
   different, Japanese "Bianchi by BJ Sport Inc." catalogue: not ingested.
+- Also bikalog.org `Bianchi/1986/bianchi-1986-roadmodels.pdf` (5 pages,
+  OCRmyPDF): the same five scans (identical page sizes 1169x1460 ...
+  1151x1460, same OCR text). Three sites now file it as 1986; it stays 1988
+  on the component evidence above.
 - Group text fanned to FD / RD / crank / brakes / levers (Mondiale brakes =
   Cobalto from the text); C-4's "C-Record component group" kept as a
   groupset value only. Shifters written per group ("Campagnolo Chorus
