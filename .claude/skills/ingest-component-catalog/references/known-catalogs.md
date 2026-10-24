@@ -42,7 +42,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/sansin.md](known-catalogs/sansin.md) — Sansin / SunShine hubs (2 entries)
 - [known-catalogs/wolber.md](known-catalogs/wolber.md) — Wolber (1 entry)
 - [known-catalogs/vredestein.md](known-catalogs/vredestein.md) — Vredestein (1 entry)
-- [known-catalogs/stronglight.md](known-catalogs/stronglight.md) — Stronglight (2 entries)
+- [known-catalogs/stronglight.md](known-catalogs/stronglight.md) — Stronglight (3 entries)
 - [known-catalogs/gipiemme.md](known-catalogs/gipiemme.md) — Gipiemme (2 entries)
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands (velobase title-fixup conventions, etc.)
 

@@ -104,3 +104,40 @@
   - Catalogues no. 24 (1978), no. 27 (1984) and a 1958 catalogue are named on
     the VeloBase index but have no download link; the velo-pages "Stronglight
     catalog (1958)" (~11505-11526, 6 images) is still unused, see TODO.
+
+## Stronglight "Catalogue n° 22" (19 scans, c. 1974, labibleduvelocataloguesstronlight.blogspot.com)
+
+- `data_source` 265, label `Stronglight Catalogue no. 22 (1974)`, country FR. Source:
+  https://labibleduvelocataloguesstronlight.blogspot.com/p/stronlight-1974.html (Blogger images
+  `CATALOGUES STRONLIGHT 1974 (1)..(19)`, 1237 x 1582; the "(N)" in the URL is encoded as `%2528N%2529`,
+  so a regex on it picks up a stray "28" prefix). FR / EN / DE / ES. Title page prints "catalogue n° 22"
+  and no year; **1974 is the blog page title**, fitting between no. 24 (1978) and earlier. Scan N is
+  printed page N-1 from scan 3 on. Read 2026-10-24.
+- Listed: cranksets 99 (double 800 g, triple 850 g, "nouveau 99", slotted rings), 93 (double 850 g, also
+  a track version; 93 Tri 900 g), type 49 "nouveau modele" with Intraviss bolts (810 g; rings no. 63
+  38-48T, no. 49 46-53T, replacing ring no. 12), forged 3-arm 53 (540 g), 3-pin "Made by Stronglight"
+  52 (680 g pair); chainwheels 255 (355 / 455) and 253; bottom bracket no. 34 (285 g); headsets S5
+  Super Competition (503-508), P3 (103-108), V4 Competition (303-308). Cotterless axle length table
+  (113 P / 118.5 C / 120.5 R / 124 S / 125.5 T), tools 82-85 and loose bolts / cups: out of scope.
+- Rows inserted (4, 1974-1974, `source_ref` 265): 9500 93 Tri, 9501 No. 53, 9502 255, 9503 253.
+- Rows updated (10, `source_ref` 265): 153 No. 34 (years 1975 -> 1974-1982, no. 26 also lists it),
+  1897 Diamant No. 52 (`year_to` 1950 -> 1974; 680.4 g Spec = catalogue 680 g pair, so dropped),
+  1905 93 Piste (`year_to` 1970 -> 1974, from "also exists in a track version"), descriptions only on
+  1904 93, 1907 / 1908 99 new style (drilled / triple), 1317 "63", 1322 "Type 49", 3122 S5, 3119 P3
+  (earlier version). 1894 49A description names both editions (810 g 1974 new model, 895 g no. 26) and
+  keeps `source_ref` 195. No titles changed, so no `search_text` rewrites.
+- Judgement calls and open items:
+  - n° 22's 99 has slotted rings, so it was matched to the "new style" rows 1907 / 1908, not 1906 "99"
+    (which no. 26 describes with non-perforated rings, 1970-82). If the "new style" rows are really the
+    same part as 1906 or 1909, they would merge.
+  - 1874 "93 Pista" (id 1874, source_id 24293C73-3E73-44F9-8378-1C194DE531D3, bare Velobase row, no years,
+    no links) was merged into 1905 "93 Piste" (the catalogue says "version piste") and deleted 2026-10-24.
+  - 1880 "105 Bis" starts 1970 in the DB, but n° 22 has no 105 and Palo Alto 1976 (row 9079) calls the
+    105 "new for 1976". Not changed (`COMPONENT_OVERRIDES` pins 1880 to 1970-82 for the 1977/78
+    Peugeot specs); needs a decision and a matching override change.
+  - 1895 49D (Depose) 1936-79 is the earlier exposed-bolt 49 that n° 22 says the new model replaces;
+    its `year_to` is probably too late but absence caps nothing.
+  - Absent from n° 22 and unchanged: 104, 105 bis, 106, TS bis, D6 (3116, 1977-80), D8, S7, 700 / 650 /
+    651 BBs, 49 Tri 1893 (listed in no. 26).
+  - V4 later version 3125 matches n° 22 exactly (303-308, 185 g), no change; the earlier two-pin V4
+    (3124, ends 1960) is consistent.
