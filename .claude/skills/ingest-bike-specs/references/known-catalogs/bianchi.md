@@ -422,6 +422,10 @@
   the 1987 catalogue on every shared model (Mondiale C-Record Syncro +
   Cobalto vs C Record + Super Record brakes; Super Leggera Chorus vs
   Modolo/Gipiemme; Giro Victory vs Dura-Ace; Limited 600 Ultegra vs 600).
+- Same scans as the "1986" set on https://2velo.com/bianchi-bicycle-catalog-80s/
+  (115, 28, 37, 46, 55.jpg; checked 2026-10-24), so 2velo's 1986 is this
+  catalogue, not a missing year. 2velo's "1988" set (1988p11-p81.jpg) is a
+  different, Japanese "Bianchi by BJ Sport Inc." catalogue: not ingested.
 - Group text fanned to FD / RD / crank / brakes / levers (Mondiale brakes =
   Cobalto from the text); C-4's "C-Record component group" kept as a
   groupset value only. Shifters written per group ("Campagnolo Chorus
