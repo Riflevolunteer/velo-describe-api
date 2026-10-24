@@ -275,6 +275,12 @@
   No early-70s Gran Sport front row, so the Special's front stays unlinked.
 - Durall (Bianchi house alloy brand) brakes/bars, rod brakes and wheel
   descriptions stay as text.
+- 2026-10-24: Ghisallo 28in and 26in Condor 10 vel. (00.5.05, 00.5.62)
+  deleted as city bikes (2 bikes, 8 specs) and added to NON_ROAD_SKIP:
+  "Sport" section with fenders, chain guard and 28 x 1 5/8 x 1 1/4 tyres,
+  like the Sebino Condor already dropped. Borderline (10-speed, alloy QR
+  hubs, centre-pulls); the user's call. Strada/Eco and Europa ("Derived from
+  Rekord Strada", Corsa section) kept as bare rows.
 
 ## 1987 Bianchi Shimano override pass — 2026-10-02
 

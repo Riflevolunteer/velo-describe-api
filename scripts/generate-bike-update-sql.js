@@ -201,6 +201,7 @@ const NON_ROAD_SKIP = new Map(
       'Touring 28in Sport uomo (00.5.64)', 'Touring 26in Sport donna (00.5.65)',
       'Viaggio Lusso uomo (00.5.01)', 'Touring uomo (00.5.60)',
       'Viaggio Lusso donna (00.5.02)', 'Touring Viaggio donna (00.5.61)',
+      'Ghisallo 28in Condor 10 vel. (00.5.05)', 'Ghisallo 26in Condor 10 vel. (00.5.62)',
     ],
     '1985|bianchi': ['Bambina'],
     '1987|bianchi': ['VOLPE'],
