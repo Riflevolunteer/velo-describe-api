@@ -38,7 +38,7 @@ Last measured 2026-10-20: about 44.3% of linkable specs linked (2,557 / 5,778); 
 
 - Done 2026-10-24: the three clear overrides (Sedisport Delta 114 links, Sedis Sedicolor, bare "Turbo" -> Selle Italia Turbo), +12 links.
 - Judgement calls (skipped 2026-10-24, user unsure; leave unlinked until a catalogue or photo settles the variant): 1982 Peugeot "Lightrace Luxe" headset (7) vs 3032 Lightrace Grand Luxe (undated); 1981-82 Peugeot "Spidel SLJ" rear (3) 4671 SLJ5500 T vs 4672 SLJ6600, front -> 2595 Spidel/Simplex Super LJ; 1981 Peugeot "Simplex SJA" front (5) SJ A102 / A103 / A222 / A223; 1984 Raleigh "Huret Club brazed-on" (4), Club II ends 1980; 1983 Peugeot "Maillard 700 Pro" hubs (3) large vs low flange; 1982 Peugeot "Mafac Promotion" levers (3) four variants; 1990 Bianchi "Sedisport 270 black" (2).
-- Source data to check: front derailleur copies cleared 2026-10-24 for 1984 Peugeot PCA 10 and 1973-76 Raleigh Gran Sport DL 160; 1975-76 Raleigh Team Professional "Campagnolo Super Record 12 Speed" front: row 2313 1052/SR starts in 1979, but Super Record dates from 1974 (a year_from fix?).
+- Source data to check: front derailleur copies cleared 2026-10-24 for 1984 Peugeot PCA 10 and 1973-76 Raleigh Gran Sport DL 160. Done 2026-10-24: 2313 1052/SR redated from 1975 and the 1975-76 Team Professional front linked.
 - No row (source gaps): Reydel Profil (6), Hyperglide 7-speed cassettes other than CS-HG70 (9), Vittoria Flash M19, Tange CD / Levin sealed, Lyotard 36 RCM, bare "Rapidfire Plus" on mixed-group 1993 MTBs.
 
 Named parts with no row or no source yet (worth a search if a source turns up):
