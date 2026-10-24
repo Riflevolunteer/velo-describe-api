@@ -131,6 +131,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], // TI Raleigh UK brochures
   ['1973|falcon', 'GB'], ['1974|falcon', 'GB'],
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
+  ['1982|battaglin', 'IT'], // Cicli Battaglin, Marostica (VI): Italian-language sheets and a 1981-82 lire price list
   ['1970|peugeot', 'NL'], // Dutch-market "Peugeot '70" (1971-74 mix NL + FR: left NULL until split)
   ['1979|peugeot', 'FR'], // French home-market catalogue
   ['1980|peugeot', 'FR'], // "Les velos sport et course" leaflet; the Dutch Peugeotboek is 1980_peugeot_nl_spec.csv
@@ -982,6 +983,8 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
   },
   Hubs: {
+    // 1982 Battaglin: Gipiemme Pista Special hub = Special Pista (1985 row; the 1982 sheet is earlier).
+    'gipiemme pista special': [{ from: 1982, to: 1988, id: 3351 }],
     'sturmey archer 3 speed': null, // 1973 Falcon Super Tourist 82 / 83: brand + speed count; the hit is the bare 1950 Sturmey Archer row 3593
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     // "flange normali" is the low-flange 1034, not the high-flange bare 'campagnolo record' pick.
@@ -1393,6 +1396,9 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
   },
   Headsets: {
+    // 1982 Battaglin: Gipiemme Cronospecial headset (the 1985-88 row; the 1982 sheet is earlier) and the Pista Special headset.
+    'gipiemme cronospecial': [{ from: 1982, to: 1988, id: 9137 }], // Crono Special
+    'gipiemme pista special': [{ from: 1980, to: 1988, id: 3008 }], // Special (Pista)
     'spidel d8': 3117, // 1980 Peugeot PRO 10: Stronglight D8 Extra Leger (row dated 1981-83, as the 1979 S7 pick)
     'spidel d 8': 3117, // 1981 Peugeot PRO 10
     'stronglight a9': 3112, // 1984 Peugeot: Stronglight A9 (France on locknut, 1984-85); the Spidel-locknut 3113 is the Spidel-badged one
@@ -1463,6 +1469,9 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1982 Battaglin (Italian sheets): Gipiemme prints "Cronospecial" / "Cronosprint" as one word. The 1982 rows are the 100 AA and 100 CC.
+    'gipiemme cronospecial': [{ from: 1982, to: 1982, id: 1587 }], // Crono Special 100 AA
+    'gipiemme cronosprint': [{ from: 1982, to: 1982, id: 1589 }], // Crono Sprint 100 CC
     // 1977-78 Peugeot: Stronglight TS (Touring Sport, 3-arm, 170mm, plain rings; the perforated one is the TS Bis, 1915).
     'stronglight ts three arm cranks 170mm double chainring 42 52t': [{ from: 1977, to: 1980, id: 1914 }],
     'stronglight ts 42 52t': [{ from: 1977, to: 1980, id: 1914 }],
@@ -1817,6 +1826,8 @@ const COMPONENT_OVERRIDES = {
     'nitto junior 340 mm': 8622, // Nitto B110AA
   },
   Stems: {
+    // 1982 Battaglin: Cinelli 1/R is the 1R (1/Record); the early version ends 1979.
+    'cinelli 1 r': [{ from: 1976, to: 1979, id: 6492 }, { from: 1980, to: 1985, id: 6491 }],
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'ritchey force': [{ from: 1988, to: 1992, id: 8400 }], // Force Directional (Mountain)
     'ritchey force comp ht butted': [{ from: 1989, to: 1992, id: 8399 }], // Force Comp (Mountain)
@@ -2022,6 +2033,9 @@ const COMPONENT_OVERRIDES = {
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
   },
   Pedals: {
+    // 1982 Battaglin: either/or cell (Cronospecial or Special) names two parts, so no link; Pista Special is the Special (Pista) pedal.
+    'gipiemme cronospecial special': null,
+    'gipiemme pista special': 3751, // Gipiemme Special (Pista)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     "campagnolo croce d'aune": [{ from: 1987, to: 1990, id: 3703 }], // B620-A
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
@@ -2459,6 +2473,9 @@ const COMPONENT_OVERRIDES = {
     'ritchey megabite hardrive': 8383, // Ibex / Osprey: Ritchey MegaBite HardDrive
   },
   Rims: {
+    // 1982 Battaglin: Nisi rims printed without their five-digit codes (rows 00250 and 00218).
+    'nisi corsa stretto': [{ from: 1982, to: 1988, id: 9228 }],
+    'nisi ekip': [{ from: 1982, to: 1985, id: 9227 }],
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'mavic special': null, // "speciale MAVIC": a special Mavic rim, not the Service des Courses row the substring hits
     'mavic special sport': [{ from: 1980, to: 1991, id: 5109 }], // 1981 Bianchi: Mavic Spéciale Sport tubular (c. 1980 catalogue, 400 g)
