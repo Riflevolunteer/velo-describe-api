@@ -284,3 +284,10 @@
   it would date the pre-ARIS New Success rows (4402 / 4403) but not the 1987
   ARIS ones.
 
+
+
+## Mel Pinto Imports parts catalog, 1970 to 1975 (pp. 19-29), `data_source` 272
+
+See the full entry in [suntour.md](suntour.md). Huret rows unchanged except
+the Luxe rear derailleurs 4295 / 4296 / 4297 (descriptions: refs 2100 T /
+2100 ST, cages 2101 / 2101-C). Huret 2150 twin levers have no row.

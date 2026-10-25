@@ -312,3 +312,11 @@ Source: https://www.disraeligears.co.uk/site/mavic_-_leaflet_1979.html (7 pages,
 - Descriptions: 361 (204 g is the pair, 102 g each), 2405 810 (102 g in 1979, 105 g in 1980), 3835 bare "Mavic 600" pedal now the series 600 pedal (164 g), succeeded by the 640 (3837, 167 g). This resolves the open question in the c. 1980 entry: 3835 and 3837 are two eras of one series, not a duplicate; no merge.
 - Confirmed, no change: 4336 Mavic 800 (original) 175 g 12-32T (its 1979 start now has a source), Module E / 3, Montlhéry Pro, CX 18, Paris-Roubaix SSC red label (1979), 300 headset, 410 / 420 brakes.
 - Judgement: the 1979 date is inferred. If the leaflet is really 1980, the 14 year_from moves are one year early; the pre-existing 1979 rows (810, E2, 300, Paris-Roubaix SSC red label, 600 cranks) support 1979. Not in the leaflet and left alone: Sport 700C, Module E2 Argent, 3D Argent, Module 4, GL 330, G.E.L. 280, Argent 8 (all dated 1980 or later).
+
+
+## Mel Pinto Imports parts catalog, 1970 to 1975 (p. 30), `data_source` 272
+
+See the full entry in [suntour.md](suntour.md). Added 9579 Monthléry N (395 g)
+and 9580 Monthléry Légère (310 g), both 20 mm, 700C, years 1970-1975 (the
+binder range). 9104 Extra Légère description now names the 20 mm / 259 g
+Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).

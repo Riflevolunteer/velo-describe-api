@@ -1057,3 +1057,44 @@
   (1973-85, 28T, 14-30) fits the 14-30 5/6-speed freewheels and the mid tier.
   If a catalogue shows HR is a different model, repoint that entry. The
   "AccuShift Plus silver 12-30T 7-speed" freewheels stay unlinked.
+
+## Mel Pinto Imports parts catalog, 1970 to 1975 (disraeligears.co.uk, 61 scans), `data_source` 272
+
+- Source: https://www.disraeligears.co.uk/site/mel_pinto_catalog_-_1970_to_1975.html
+  (scan_1..61). A US distributor's mixed parts binder (Campagnolo, Huret,
+  Mavic, Shimano, Simplex, Stronglight, Sugino, SunTour, Super Champion),
+  dated 1970 to 1975 as a range only and no page more closely, so it moved
+  no `year_from` / `year_to`. SunTour pages carry "IBM No. 50-05-xxx" and
+  the 888 mark. Spares (28 per derailleur etc.) are out of scope.
+- Page map: 1-16 Campagnolo (1 composite, 2-6 Record road / track ensembles,
+  7-9 Nuovo Record gear, 10 Sport Extra, 11-13 spares, 14 Nuovo Tipo 1253
+  hubs 1266 / 1267, 15 extra-light pedals, 16 Record brakes 2040), 17-18
+  Campagnolo tools, 19-29 Huret (Jubilee, Luxe 2100 / 2100T / 2100 ST,
+  Allvit 1900, Super Allvit 1999, Svelto 2000 / 2000D / 2030, adaptors,
+  Jubilee front 500, front derailleurs and levers), 30 Mavic rims, 31-43
+  Shimano (Crane D-501, Crane GS D-510, Dura-Ace front derailleur, L-284 and
+  10-speed lever, cranks, hubs, B-210, M-140), 44-46 Simplex (Criterium and
+  Prestige AR 637, AV 223 / 323, 1971 / 72 productions), 47-48 Stronglight
+  (axles, V4, S5), 49-50 Sugino (Mighty Compe, Maxi), 51-57 SunTour (V
+  2900/1, V-GT 2902/3, GT 4600, Honor 2600, Compe-V 3701, Spirt 3700,
+  handlebar-end 3090), 58-59 SunTour levers (3302, 3070 / 3080), 60 Super
+  Champion rims 300 / 301 / 302 / 58 / 60, 61 cadence chart.
+- Diff: every part was already in the DB except the three rims below. SunTour
+  matches 4702, 4693 / 4694, 4695 / 4704, 4703, 2603, 2601, 6283, 8058, 6263,
+  6259: no change (Honor 4702 shows 380 g against 400 g in the row; left, the
+  description is 241 / 255).
+- Added (source_ref 272, 1970-1975 = the binder range): 9579 Mavic Monthléry N
+  (395 g), 9580 Mavic Monthléry Légère (310 g), 9581 Super Champion 302,
+  Professional (410 g).
+- Adjusted: Huret Luxe 4295 / 4296 / 4297 descriptions (refs 2100 T / 2100
+  ST, cages 2101 / 2101-C; mapping T = Touring, ST = Super Touring is a
+  reading, not stated); 9104 Mavic Extra Légère description (20 mm and 259 g
+  here against 21.5 mm in Bikecology 1980; source_ref left on 247).
+- Not changed, for a later source: "V 2900/1" and "V-GT 2902/3" here against
+  4772 "2902, V-Luxe" and 4704 "4902, V-GT Luxe" in the DB (number conflict);
+  Shimano "D-501 / D-509" here against the title "D500 / DB-100, Crane"
+  (4498); Huret 2150 twin levers have no row (1882 / 1884 is 6071, Luxe
+  1337-1344 is 8174, 1976); Mavic Extra Légère 9104, Piste 5105 and Spéciale
+  Sport 5109 could take a 1975 `year_from` from this binder (they start 1978,
+  1979, 1980; left because other catalogues set them); Huret 700 front 2385
+  ends 1973 though the binder still lists a Luxe 700.

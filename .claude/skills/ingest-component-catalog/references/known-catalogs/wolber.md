@@ -28,3 +28,11 @@ saddles and a wheelset from the velobase crawl (not touched).
   6920 Leader 80 vs Leader, 6910 Competition Slick vs Competition, 6942 Super-Corsa vs Team Corsa.
 - Bike links: none. The unlinked Raleigh Wolber specs are 1974 "Transalpino tubulars", 1983
   "300g tubular", 1984 "Rallye" and bare "tubulars"; none names a model in this catalogue.
+
+
+## Mel Pinto Imports parts catalog, 1970 to 1975 (p. 60), `data_source` 272
+
+See the full entry in [suntour.md](suntour.md). Super Champion page: added
+9581 Super Champion 302, Professional (410 g, 36 holes, 1970-1975, binder
+range). 300, 301, 58 and 60 matched 5185, 5177 / 5180, 5178 and 5179
+unchanged.
