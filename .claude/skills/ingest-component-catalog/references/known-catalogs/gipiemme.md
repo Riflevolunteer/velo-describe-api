@@ -206,3 +206,11 @@
   - 9510 700CE Economy brakes `year_to` 1984 -> 1985 (guide lists Cronosprint Economic brakes).
   - 763 / 764 (hex socket vs nut on the centerbolt): no source can tell them apart; left as is.
   - `source_ref`: 259 on 9510, 9513, 9520 (changed from the guide); 270 elsewhere; 9509 back on 269.
+- Follow-up, Economy crank (done): the 1985 guide (scan 15) lists "Cronosprint Economy Strada" as its own crank (597 g,
+  52-53 / 42, 170 mm, 62,500 lire) beside the Classic (same specs, 72,000), so 1591 "Crono Sprint /E" (bare, no years,
+  `source_id` 34E5CCA8-40F5-4B7E-90F3-7A25AA1A4844) is the 100CE. Retitled "Crono Sprint 100CE (Economy)", 1984-1987,
+  597 g, `source_ref` 270, `search_text` rewritten. Merged 9511 "Sprint 100SB" (the row inserted above, `source_id`
+  f4ca5a07-d061-11f1-a2df-02fea3763e8d) into it: the c. 1986-87 catalogue's Sprint 100SB has the same spec (170 mm,
+  52-53 / 42), matched on spec alone, so a later source that shows 100SB distinct from 100CE should reinstate it. The
+  guide also agrees with the later catalogue that the Classic 100CC (1589) is 170 mm with 52-53 / 42, so the "165-175mm,
+  41-54T" taken from Oct 1984 may be a group-wide range; not rechecked against the 1984 page.
