@@ -985,6 +985,8 @@ const COMPONENT_OVERRIDES = {
   Hubs: {
     // 1982 Battaglin: Gipiemme Pista Special hub = Special Pista (1985 row; the 1982 sheet is earlier).
     'gipiemme pista special': [{ from: 1982, to: 1988, id: 3351 }],
+    'luxe competition': 3389, // 1982 Peugeot PSV 10 S / PF 10 S: Maillard Normandy Luxe Competition (red label, low flange, 1970-80); flange and label not stated
+    'dura ace ex': 3571, // 1981 Kalkhoff Professional 11 S: Dura-Ace EX FH-7261 (small flange, 6-speed, 1981-82); gearing not checked
     'sturmey archer 3 speed': null, // 1973 Falcon Super Tourist 82 / 83: brand + speed count; the hit is the bare 1950 Sturmey Archer row 3593
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     // "flange normali" is the low-flange 1034, not the high-flange bare 'campagnolo record' pick.
