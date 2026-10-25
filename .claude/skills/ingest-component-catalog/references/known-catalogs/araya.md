@@ -106,3 +106,44 @@
   16A(5) 22.0/16.0 700C 485 g), so it may be a later generation or a different measure.
   The 1978 pages also say the 20A matches the structure of the new Mavic rim announced
   with the Michelin Elan in 1976; no row changed on that.
+
+## Araya Rim catalogue (11 images, 1993, Reminiscence Part 34) — data_source id 274
+
+- `data_source` 274, label "Araya Rim catalogue (1993)". Source:
+  http://cyclespeugeot.web.fc2.com/reminiscence/araya93.html
+  (`catalog/araya93/araya93-01..13.jpg`, 640 px; 02 and 04 are not linked on the
+  page; read at 2x). English with Japanese text. Dated 1993 by the site; the
+  cover print line is too small to read for certain. Page 1 is the cover plus
+  an "approximate measurement and weight table" (too small to read), pp. 2-12
+  the model pages (MTB, cross / hybrid, all-terrain, racing and touring,
+  disk and special tubular, tubular, BMX), p. 13 spoke-length charts (out of
+  scope). A complete range list: models in the 1992 DB that it lacks (CT-19,
+  RM-14, RX-7) keep their 1992 `year_to`.
+- NEW in this printing: RM-395 Team-XC, RM-400 Pro-XC, TM-810F, GP-710,
+  AP-21 (24), SA-530C, ADX-510, RT-520, SA-230S, Santana 350.
+- New (5 rows, 1993-1993, ids 9594-9598): SA-530C, ADX-510, RT-520, SA-230S,
+  Santana 350 (Japanese domestic only).
+- `year_from` moved EARLIER (1993 is earlier than the 1995 spread that was
+  the only source): 8456 TM-810F 1995 -> 1993, 8459 GP-710 1995 -> 1993.
+- `year_to` extended to 1993 (and descriptions given the 1993 spec-box
+  figures, `source_ref` -> 274): 8446 RM-400 Pro (415g as Pro-XC), 8448 RM-17
+  (430g, DB 440g), 4930 RM-20, 8452 TM-18, 4934 VX-400, 4933 TX-350, 8427
+  RS-430, 8424 SP-30, 8425 SP-20, 8431 LP-50, 8432 LP-60, 4921 18 (M-18),
+  8426 CTL-370 (CTL-385: 385g / 355g), 4924 ADX-1, 8434 ADX-5, 8435
+  ADX-240CF (240g), 8437 / 8436 Pro Staff 340 / 400, 4929 R-50, 8467
+  Carbon Disc (Super Light 920g, Light 1,300g).
+- Descriptions only (`source_ref` -> 274): 8453 RM-395 Team (Team-XC name
+  and 410g attested 1993, not 1995; `year_to` 1995 kept), 8451 AP-21 (24"
+  465g), 8429 PX-45 (500g, DB 490g), 4932 SS-45 (480g, DB 450g), 4920 16B
+  Tita Ace Gold (1993 says titanium material, 310g; DB said "titanium-coloured
+  anodised", 300g), 4933 TX-350 (465g; the 372g was a carton-table figure).
+- Old figures kept in the descriptions where the weights disagree.
+- Left alone: 4922 20A (1993: 700C 460g, 26x1 420g, 24x1-1/8 385g against
+  405g / 340g from 1978-92; edition difference, not appended, 255 limit), 8422 15
+  (M-15 1993: 620 / 580 / 575 / 530g against 570 / 565 / 520g), the 16B family
+  (4917 350g, 4918 300g, 4919 Gold NJS; 1993 has 16B Gold 310g polish 36H and
+  16B Red 360g, which do not map cleanly), 4931 "Super Aero" (velobase,
+  432g Actual; both SA-530C and SA-230S carry a "Super Aero" label, the
+  230S is 435g), 8468 Aluminum Disc (not in this catalogue, stays 1992).
+- Bike links: none changed; existing 1993 Bianchi links (8428-8430, 8450,
+  8451) stay on rows whose years now reach 1993 anyway.
