@@ -1473,6 +1473,10 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin (Italian sheets): Gipiemme prints "Cronospecial" / "Cronosprint" as one word. The 1982 rows are the 100 AA and 100 CC.
     'gipiemme cronospecial': [{ from: 1982, to: 1982, id: 1587 }], // Crono Special 100 AA
     'gipiemme cronosprint': [{ from: 1982, to: 1982, id: 1589 }], // Crono Sprint 100 CC
+    'gipiemme minisprint': 9126, // Crono Sprint Minisprint Strada (row dated 1985-88; the 1982 sheet is earlier)
+    'gipiemme pista special': [{ from: 1982, to: 1982, id: 1588 }], // Crono Special 100A1 (Pista), 1982-88
+    // 1977 Raleigh Competition GS: the only Gran Sport crank row dated before the 1980-85 ones (row dated 1970-75).
+    'campagnolo gran sport alloy cotterless with alloy disc chainguard': 1476, // Campagnolo 3320, Gran Sport / Sport
     // 1977-78 Peugeot: Stronglight TS (Touring Sport, 3-arm, 170mm, plain rings; the perforated one is the TS Bis, 1915).
     'stronglight ts three arm cranks 170mm double chainring 42 52t': [{ from: 1977, to: 1980, id: 1914 }],
     'stronglight ts 42 52t': [{ from: 1977, to: 1980, id: 1914 }],
