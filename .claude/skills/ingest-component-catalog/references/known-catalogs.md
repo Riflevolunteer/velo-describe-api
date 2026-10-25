@@ -44,6 +44,9 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/vredestein.md](known-catalogs/vredestein.md) — Vredestein (1 entry)
 - [known-catalogs/stronglight.md](known-catalogs/stronglight.md) — Stronglight (5 entries)
 - [known-catalogs/gipiemme.md](known-catalogs/gipiemme.md) — Gipiemme (3 entries)
+- [known-catalogs/takagi.md](known-catalogs/takagi.md) — Takagi (1 entry)
+- [known-catalogs/tange.md](known-catalogs/tange.md) — Tange (1 entry)
+- [known-catalogs/kkt.md](known-catalogs/kkt.md) — KKT / Kyokuto (1 entry)
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands (velobase title-fixup conventions, etc.)
 
 When a new brand shows up for the first time, create

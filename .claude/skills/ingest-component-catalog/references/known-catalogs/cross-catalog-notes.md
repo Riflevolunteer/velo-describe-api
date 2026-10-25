@@ -612,3 +612,48 @@ Weinmann 1129 / 1130 570.
 - Left as a bike source: ~90 city / folding / kids' models, low value for link coverage (brand-only
   or house parts). If ever loaded, use `ingest-bike-specs`. Part 2 (August 1984) is the more useful
   half: Colnago, Legnano, Peugeot, Raleigh and similar makers fall there.
+
+## JBM "Japan's Top Bicycle Parts Makers" — July 1974 (disraeligears.co.uk, 24 scans, data_source 271)
+
+- Source: https://www.disraeligears.co.uk/site/jbm_-_japans_top_bicycle_parts_makers.html
+  (front cover, pages 1-22, rear cover; scans at 00_main_images/..._page_N_main_image.jpg).
+  Rear cover code "JBM 0774". Marketing group catalogue for six makers: Takagi
+  (pp. 5-6), Tange (7-8), Araya (9-10), Sakae/SR (11-14), Kyokuto/KKT (15-17),
+  Shimano (18-22). Page 3 calls the spotlighted lines "models for 1974".
+- Shimano was already covered by the '72/'73/'74 catalogues (sources 60/61/65/178), so
+  JBM was confirmation plus a few gaps. Out of scope (no category): Tange frame sets,
+  fork/stay ends, forks, chain guards, toe clips/straps/strap ends, quick seat pins,
+  spokes, spoke protectors, tools, twist-grip/trigger levers (already rows 7393/7394).
+- Rows added (56): Shimano L-160/L-170 Finger Tip EM, L-395 Silver Stem; Sakae Custom-5,
+  Apex-3B, Apex-S, Silver Cotterless, Racer bar, Custom-P1, 11 stems (RY-110, RY-90/70,
+  SR-100AH, SR-80AH/E, SR-60AH/E, SR-50E/40E, SW-60LB, SW-60, SW-35, Dia Star-R/A,
+  SB-50DM); Araya Model 1/5/5W/7A/10/17; KKT RT-SF AL, RT-SF, RT-SR, RT-GL, RT-A, RT-B,
+  F-1, RM-3, No. 50 Racer, Pro Ace (Road)-P.A; Tange Unit Hanger, R-401, TS-401, JL-401;
+  Takagi 12 cranksets + 5 chainring sets (first Takagi rows beyond "Tourney XT").
+  Year range 1974-1974 on all new rows (only attestation, not an end date). Exercisers
+  (KKT Exerciser-F, DX-2) deliberately not ingested.
+- Rows adjusted (25), old values for revert:
+  - year_from moved earlier (JBM is older than the setting source): 1749 Royal-5 1980->1974
+    (spec differs: 1974 forged alloy milled 5-pin, c.1982 14S super duralumin), 8821 GS-3
+    1980->1974, 2913 WR 1976->1974, 7887 WS 1976->1974, 7889 CT-L 1980->1974,
+    7891 RN-L 1980->1974, 7896 NR-S/L 1980->1974, 8928 Araya 7B 1978->1974,
+    9086 KKT S.P. Sprint 1976->1974, 3770 KKT Pro Ace Pista 1980->1974 (folded in the
+    Pro Ace (Track) 68-2 pedal rather than inserting a new row).
+  - NULL years set 1974/1974: 3773 RT-E, 3774 SPA, 3144 Tange MA-60, 3141 Tange Falcon.
+  - year_to 1973->1974: 7384 Shimano L905-L908 Round Stem (JBM lists W-Round Stem L-908/906,
+    though the Jun 1974 catalogue (65) does not).
+  - Retitles (old title in case a later source uses it; search_text rewritten):
+    7374 "Shimano D220, Lark S.T.O." -> "Shimano D220, Lark SPO";
+    8766 "Shimano L-293 / L-294 / L-296, Unishift" -> adds L-298;
+    3774 "KKT/Kyokuto SPA" -> "KKT/Kyokuto S.P. (Sprint) SPA, light alloy";
+    3775 "KKT/Kyokuto Top-Run" -> "KKT/Kyokuto T.P. (Top Run)";
+    3769 "KKT/Kyokuto Kyokuto Pro Ace, (Road)" -> "KKT/Kyokuto Pro Ace (Road)";
+    3770 "KKT/Kyokuto Kyokuto Pro Ace Pista NJS" -> "KKT/Kyokuto Pro Ace (Track), Pista NJS".
+  - Descriptions rewritten/enriched: 7376, 7412, 8766, 1734, 1749, 8821, 5853, 4917, 4918,
+    8928, 3769 (JBM says forged light alloy body; the 1976 source 245 says all-steel; both
+    kept, labelled by year), 3770, 3773, 3774, 3775, 9086.
+- Left as is / unresolved: Pro Ace (PA) row 3771 (1980 superlight) is a different part from
+  the 1974 "(Road)-P.A with reflector" (new row). Catalogue spellings "Randnner" (World
+  Randnner, Randnner-L) read as typos for Randonneur and matched to WR / RN-L. JUN-50 (6660)
+  confirmed, no change. JBM weights for KKT pedals are probably per pair but are not stated.
+  No deletes or merges.
