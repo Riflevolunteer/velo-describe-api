@@ -133,3 +133,50 @@
     "Crono Sprint" (about 100 rows). A spelling pass was not done.
   - Absent from this catalogue and not capped (one catalogue's absence): Dual Sprint, Azzurra, Azzurro, Bagarre,
     Exploit, Crono Sprint White Laser rows.
+
+## Gipiemme "8 times world champions" catalogue (14 scans, c. 1986-87, disraeligears.co.uk)
+
+- `data_source` 270, label `Gipiemme catalogue, "8 times world champions" (c. 1986-87)`, country IT. Source:
+  https://www.disraeligears.co.uk/site/catalogo_gipiemme_-_8_times_world_champions.html (scans
+  `00_main_images/catalogo_gipiemme_-_8_times_world_champions_scan_001..014_main_image.jpg`, 1560 x 1119). Gipiemme
+  S.R.L., Grumolo Abbadesse, Loc. Vancimuglio (Vicenza), so later than the Oct 1984 catalogue (Camisano Vicentino).
+  **Undated.** The page author guesses 1987 (the cover shows 1986 world-championship results); it is not the "1982"
+  catalogue some sites label it. Dating rule used: `year_to` extensions to 1986 (safe lower bound), new rows 1986-1987,
+  the one `year_from` move 1987 (safe upper bound).
+- Contents: Cronospecial AA and B1 (Pista), Cronosprint BA, Sprint DD (overview pp. 4-5); cranksets 100AA / AT / A1 / A4,
+  100CC / CT / BA Bagarre, Sprint 100SB, Minisprint 100DM; BBs 200AB-AT-A4, 200A1, Sprint 200DS; seat posts 600AA / DD /
+  BA / CA / SS; pedals 300AX Multiasse, BB, B1, CA, DD, Sprint SA; hubs 400BB, CA, B1, B2, Sprint SA; headsets 500AA, CC,
+  BP, B1, Sprint CE; brakes 700AA, CA, CC, Sprint SA; Cronospecial 800AE (801AE / 802AE / 870SE "Selectron"),
+  Cronosprint 800CC (801CC / 802DD / 870DS), Sprint 802DD, 870BC; freewheels 906/907 AS, AA, CS, CC, CE; bars AA / CC / DD;
+  stems 1400xx and chains 950xx as overview codes only. Out of scope: toe clips, washers, grease, 1840-1890 shell kit,
+  braze-ons, fork ends. Misprints: "CONOSPECIAL 300B1", "400BA" (overview) for 100BA, steel freewheels headed
+  "Cronospecial". Group codes differ between the overview pages and the detail pages; detail-page codes used.
+- New vs Oct 1984: Bagarre crank, 100AT / 100CT triples, 100A4 cross and 100DM Minisprint cranks, Cronospecial 800AE
+  Selectron derailleurs. Not pictured: the Economy group as such (only 500CE / 906CE), Cronospecial seat post 600BB
+  (here 600AA).
+- Rows inserted (10, 1986-1987, `source_ref` 270): 9511 Sprint 100SB, 9512 Crono Special 300B1 (Pista), 9513 400B2 (Pista),
+  9514 Crono Sprint 700CA, 9515 / 9516 / 9517 Crono Special 801 AE / 802 AE / 870 SE, 9518 Crono Sprint 906 CE, 9519
+  Crono Sprint CC bar, 9520 Sprint DD bar.
+- Rows updated (36, `source_ref` 270): `year_to` -> 1986 on 9131, 764, 323, 2105, 2106, 8829, 8830, 5788, 6051, 9138,
+  1587, 1589, 3006, 765, 3747, 3351, 9509, 5789, 4260, 6050, 2369; years set on 3348 (NULL -> 1984-1986) and 768
+  (NULL -> 1986-1987); **`year_from` moved earlier 9469 1988 -> 1987** (revert value: 1988). Retitles (old title ->
+  new, `search_text` rewritten): 4260 "Crono Sprint 800CC-801CC" -> "Crono Sprint 801 CC"; 6050 "Crono Sprint 800CC-870DS"
+  -> "Crono Sprint 870 DS"; 768 "Sprint" -> "Sprint 700SA"; 1590 "Crono Sprint 400BA, Bagarre BA 100" -> "Crono Sprint
+  100BA, Bagarre"; 1588 "Crono Special (Pista)" -> "Crono Special 100A1 (Pista)"; 9130 "Crono Special Triplo" ->
+  "Crono Special 100AT, Triplo". Descriptions only: 9126 (2nd ring 35-40, was 30-40), 9127, 3748, 9137, 3007, 3353, 5786,
+  3749, 3753.
+- Spec differs between editions: 1589 100CC is 165-175mm cranks and 41-54T in Oct 1984 but 170mm and 52-53 / 42T here;
+  both named in the description, `source_ref` 270.
+- Rows deleted: 2368 "Crono Sprint 800CC-802DD" (1982, `source_id` CBFC2604-00EA-4496-9EDF-1F6D50DBC0F5), a duplicate
+  of 2369 "802 DD", which survives; 6052 "Crono Sprint (friction)" (bare, no years, `source_id`
+  41F71281-64AC-45B5-BA18-A73FD9EDC658), a duplicate of 6051 (870 BC retro-friction levers). Neither had bike_spec links
+  or generator overrides.
+- Unresolved / left for later (item F): 200AB / AT / A4 / A1 against the 1985 guide's 200 RS / RT / R1 (likely A -> R
+  letter change) and 200DS against 65 "Sprint"; 400CA against 9509; 3349 "Crono Special Pista" hub (1988) against 3351
+  (probable duplicates, 3351 is a `COMPONENT_OVERRIDES` target); 600SS against 5792 / 5793 "Sprint (type 1/2)"; 906AA /
+  907AA against 8827 / 8828; Cronospecial bar AA against 2849; 3012 "Sprint" headset and 3004 "Crono Sprint E" against
+  500CE (3012 description not changed, name match only); 763 vs 764 brake variant for 700AA.
+- Follow-up merge (item F, done): 3349 "Crono Special Pista" (1988, bare, group 165, `source_id`
+  400AD9EE-82B3-4C33-8D42-9717200FDE20, `source_ref` 262) deleted into 3351 "Special Pista" (400B1 track hubs, 2 bike
+  specs, `COMPONENT_OVERRIDES` target). 3351 `year_to` 1986 -> 1988 (old 1986), `source_ref` 270 -> 262, description
+  notes the later "Cronospecial Pista" name. 3349 had no bike_spec links or overrides.
