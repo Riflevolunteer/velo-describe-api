@@ -1399,6 +1399,7 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin: Gipiemme Cronospecial headset (the 1985-88 row; the 1982 sheet is earlier) and the Pista Special headset.
     'gipiemme cronospecial': [{ from: 1982, to: 1988, id: 9137 }], // Crono Special
     'gipiemme pista special': [{ from: 1980, to: 1988, id: 3008 }], // Special (Pista)
+    'ofmega gran premio': 9160, // 1987 Bianchi Pista: Ofmega 3100, Gran Premio (row dated 1985)
     'spidel d8': 3117, // 1980 Peugeot PRO 10: Stronglight D8 Extra Leger (row dated 1981-83, as the 1979 S7 pick)
     'spidel d 8': 3117, // 1981 Peugeot PRO 10
     'stronglight a9': 3112, // 1984 Peugeot: Stronglight A9 (France on locknut, 1984-85); the Spidel-locknut 3113 is the Spidel-badged one
@@ -2224,6 +2225,10 @@ const COMPONENT_OVERRIDES = {
     'union': null, // 1981 Kalkhoff: brand only; Union 486 is a model the catalogue doesn't name
     'sedissport 108 links delta treated': 1402, // 1980 Peugeot (NL): Sedis Sedisport Delta (1980)
     'sedisport 114 links delta treated': 1402, // 1982 Peugeot PBN / PFN / PKN / PVN / PXN 10: as the 108-link Delta
+    '112 links delta treated': 1402, // 1980 Peugeot PL 8 M: as the 108 / 114-link Delta
+    'sedisport delta treated': 1402, // 1982 Peugeot PL 8 M: as above
+    'sedisport 112 links': 1402, // 1982 Peugeot PX 8 M: as bare 'sedisport' (1402 from 1980)
+    'shimano cn 6208 silver': 7232, // 1990 Bianchi Virata: CN-6208 600EX (row dated 1986-89, the model is exact)
     'sedis sedi color ½" x 3 32"': 8764, // 1979-80 Raleigh Professional Mk V: Sedis Sedicolor (catalogue splits the name)
     'sedisport narrow': [{ from: 1980, id: 1402 }], // 1983 Raleigh Europa / Record Sprint / Supersport 12: as bare 'sedisport' (1402 from 1980)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
