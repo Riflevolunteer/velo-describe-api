@@ -180,3 +180,11 @@
   400AD9EE-82B3-4C33-8D42-9717200FDE20, `source_ref` 262) deleted into 3351 "Special Pista" (400B1 track hubs, 2 bike
   specs, `COMPONENT_OVERRIDES` target). 3351 `year_to` 1986 -> 1988 (old 1986), `source_ref` 270 -> 262, description
   notes the later "Cronospecial Pista" name. 3349 had no bike_spec links or overrides.
+- Follow-up, 200 bottom brackets (item F, done): the 1985 guide (`data_source` 259, scan 20) actually prints 200 BB / CC /
+  BT / CT / B1 (320 / 337 / 330 / 330 / 315 g); our 1985 rows had misread B as R. The c. 1986-87 catalogue renumbers
+  200BB / BT / B1 as 200AB / AT / A1 (not an A -> R change, as first guessed). Merged 9132 "200 RS" (= 200BB, 320 g,
+  `source_id` 56000bc2-ceee-11f1-a2df-02fea3763e8d) into 64 (description now 320 g, "numbered 200AB in the later
+  catalogue"). Retitled 9134 "200 RT" -> "200 BT" (`year_to` 1986) and 9136 "200 R1" -> "200 B1" (weight 316 -> 315 g,
+  `year_from` **1985 -> 1984** from the Oct 1984 catalogue, `year_to` 1986; revert value 1985); `search_text` rewritten.
+  Inserted 9521 "Sprint 200DS" (1986-1987, group 126). 9133 200CC and 9135 200CT left as they were. 65 "Sprint" is the
+  1970s 700120 crankpin assembly, a different part. No bike_spec links or overrides on any of the rows.
