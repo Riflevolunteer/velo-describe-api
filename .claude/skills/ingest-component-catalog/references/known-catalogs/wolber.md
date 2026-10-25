@@ -77,6 +77,9 @@ unchanged.
   81" (now `source_ref` 273, description from the brochure's five weights).
   No bike links or overrides. Years of 5184 left at 1970-80 against the "81" in
   the name (undated brochure; 1981-1981 is the obvious move if wanted).
-- Left for a decision: Model 58 duplicates 5178 / 5221 (two velobase rows;
-  5178 has one bike link, so it would be the survivor). Invulnerable 84 (6918) shows as plain "Invulnerable" here
+- Merged (2026-10-26, follow-up): 5221 "Wolber Super Champion Modele 58"
+  (Wolber brand, velobase, 1979-80, 565 g Spec 27x1 1/4", source_id
+  `BB3DF84A-54CC-47DE-B576-AC7112F98838`) into 5178 "Super Champion Mod. 58"
+  (1960-84, already carries the four sizes and weights). 5221 had no bike
+  links or overrides; 5178's one link and override stand. Invulnerable 84 (6918) shows as plain "Invulnerable" here
   (280 g, 21.5 mm).
