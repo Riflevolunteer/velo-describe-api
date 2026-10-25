@@ -71,8 +71,12 @@ unchanged.
   261, source_id `6934` row title "Wolber Record Route 18") into 6933 "Wolber
   Record Route" (now 1980-84); same 18.5 mm / 185 g tubular. No bike links or
   overrides pointed at 6934.
-- Left for a decision: Gentleman 81 duplicates 5184 / 5215 and Model 58
-  duplicates 5178 / 5221 (two velobase rows each; 5178 has one bike link, so it
-  would be the survivor), and Gentleman 81 years of 1970-80 against the "81" in
-  the name. Invulnerable 84 (6918) shows as plain "Invulnerable" here
+- Merged (2026-10-26, follow-up): 5215 "Wolber Super Champion Gentleman 81"
+  (Wolber brand, velobase, 1970-80, 495 g Spec 27x1 1/4", source_id
+  `73FE6455-9E25-49CD-AB73-C14481A4EC87`) into 5184 "Super Champion Gentleman
+  81" (now `source_ref` 273, description from the brochure's five weights).
+  No bike links or overrides. Years of 5184 left at 1970-80 against the "81" in
+  the name (undated brochure; 1981-1981 is the obvious move if wanted).
+- Left for a decision: Model 58 duplicates 5178 / 5221 (two velobase rows;
+  5178 has one bike link, so it would be the survivor). Invulnerable 84 (6918) shows as plain "Invulnerable" here
   (280 g, 21.5 mm).
