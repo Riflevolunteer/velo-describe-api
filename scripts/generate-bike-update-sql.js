@@ -1736,6 +1736,9 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli (Ten Speed Drive Imports).
     'concor rolls': 5563, // Selle San Marco Rolls
     'concor sc': 5547, // Selle San Marco Concor Supercorsa
+    // 1982 Battaglin (catalogue spells it "Profil", as the DB row does).
+    'san marco concor profil': 5544, // Selle San Marco Concor Profil
+    'san marco concor super corsa': 5547, // Selle San Marco Concor Supercorsa
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'mattress': null, // generic; matcher hit a Brooks mattress saddle
     // 1979 Peugeot (French catalogue).
