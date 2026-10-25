@@ -188,3 +188,21 @@
   `year_from` **1985 -> 1984** from the Oct 1984 catalogue, `year_to` 1986; revert value 1985); `search_text` rewritten.
   Inserted 9521 "Sprint 200DS" (1986-1987, group 126). 9133 200CC and 9135 200CT left as they were. 65 "Sprint" is the
   1970s 700120 crankpin assembly, a different part. No bike_spec links or overrides on any of the rows.
+- Follow-up, rest of item F (done), checked against the 1985 guide (`data_source` 259, scans 10, 13, 21, 30, 35; Gipiemme
+  entries by name only, no part numbers):
+  - **Reverted a guess:** 9509 "400DD, Crono Sprint" had been given "numbered 400CA in the later catalogue" and `year_to` 1986
+    from a name match; back to 1984-1984, `source_ref` 269. The Oct 1984 catalogue has 400DD for the Cronosprint hub, so 400CA
+    is a different number; inserted 9522 "Crono Sprint 400CA" (1986-1987, 32 or 36 holes).
+  - 9513 400B2 (Pista): `year_from` 1986 -> **1985**, 545 g, from the guide's second, heavier Special Pista hub (inferred
+    from weight and price, not a part number; old value 1986).
+  - 3004 "Crono Sprint E" (bare) = the Economy headset 500CE (Oct 1984 catalogue, 1985 guide "Cronosprint Economy" 150 g,
+    c. 1986-87 catalogue "Sprint 500CE"): retitled "Crono Sprint 500CE (Economy)", 1984-1986, group 85. 3012 "Sprint"
+    left alone: it could instead be the 1970s Dual-Sprint 700168 headset. (1591 "Crono Sprint /E" is likely the 100CE
+    Economy crank; not touched.)
+  - Freewheels 8827, 8828, 8831, 8832: `year_to` 1985 -> 1986; the later catalogue's 906AA-907AA (alloy 5/6) and
+    906CC-907CC (steel) look like the 906A / 905A and 906C / 905C lines renamed (judgement call).
+  - Bars: 2849 description notes Cronospecial AA (26mm, 38-44cm; 338 g kept, the 1985 guide has 275 g); 9520 Sprint DD
+    `year_from` 1986 -> **1985**, 355 g (the guide's 25.7mm bar; old value 1986). 9519 Crono Sprint CC has no guide match.
+  - 9510 700CE Economy brakes `year_to` 1984 -> 1985 (guide lists Cronosprint Economic brakes).
+  - 763 / 764 (hex socket vs nut on the centerbolt): no source can tell them apart; left as is.
+  - `source_ref`: 259 on 9510, 9513, 9520 (changed from the guide); 270 elsewhere; 9509 back on 269.
