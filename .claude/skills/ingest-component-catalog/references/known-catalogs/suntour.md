@@ -895,6 +895,39 @@
   AccuShift Plus X-Press is not in any of these editions (later system).
 - Out of scope: fork ends and dropouts, spoke discs, accessories, special tools,
   original goods, BMX parts, gear capacity and spoke length charts.
+- **Description enrichment pass, 2026-10-26** (No. 60 only, source_ref 192). Read
+  the 16 large single pages (`save0133`-`0148`, 480px; zoomed with pdftoppm for
+  small print); the other 4 spreads (cover, feature pages) exist only as 400px
+  thumbnails and carry no specs. 114 rows matched; nearly all already carry the
+  No. 59 (10.1981, same 1982 model year) specs from that pass, so No. 60 adds little.
+  - Rewritten: 4684 RD-3400 AG (was "34T capacity" from Ron Kitching 1984; No. 60
+    prints 40T total, 38T max, 16T front difference, swing cage, 375g); 7818 SA / SS
+    sealed BB (dropped the "Sep 1983 No. 61 catalogue:" citation; per model SA-100
+    single 42mm 275g, SA-110 double 43.5mm 280g, SA-120 triple 45mm 280g, SS 355 /
+    365 / 368g; the No. 61 ranges 275-304g / 355-389g and the 130 / 140 / 160 /
+    SS-150 versions dropped for length); 8275 RH-3100 (525g pair, solid large flange,
+    hollow Cr-Mo axle, 1.29 x 24 left lockring; Kitching's 572g kept); 4009 PL-4000
+    (290g pair in No. 60 next to Bikecology's 278g; the No. 59 300g figure the
+    earlier pass noted had been lost in the Bikecology rewrite and was not
+    restored); 3136 HS-150 (No. 60 already prints 110g: now "94g (1979, No. 59),
+    110g (No. 60, No. 61)", was "94g (1979-82)").
+  - Years: 8278 LS-2100 SFL year_to 1979 -> 1982; 8281 RD-2900 year_to 1979 -> 1982.
+  - Retitled (old title): 8281 "SunTour RD-2900, Hole Shot (BMX)" -> "SunTour
+    RD-2900, Hole Shot / Luxury" (No. 60 sells the same steel cam-slide 2-speed,
+    14-24T, 235g, as the "Luxury" mini-cycle rear, 10T capacity vs 12T in 1979);
+    search_text rewritten.
+  - New: 9713 SunTour IC-1000, IC System (Cranksets, 1982-1982, no group): IC
+    chainwheel with built-in front freewheel, 40 / 44 / 46 / 48T, 125 / 150 /
+    165mm, chain guard, 910g; crank partner of LS-3200 / 3300.
+  - Merged (user-approved): deleted 2649 "SunTour FD-2000, Superbe Pro (endless
+    band; later version)" (velobase, 1980-1980, 78g,
+    `6AF4F545-3676-44F6-AB91-D857437DEB52`, no bike_spec links or overrides) into
+    2652 FD-2000 (endless band), which now ends "78g (velobase)". 2647 FD-2000
+    "(clamp)" left: no catalogue shows a clamp version, but no duplicate signal.
+  - Left: IC CG-100 chain watcher, DG-100 guard, FP-100 plate, TA-220 tool (no
+    category); RD-3400 year_from 1980 not moved (No. 59 lists AG as new vs 1978,
+    but whether the 1979 Japanese edition or Bikecology 1980 shows it was not
+    rechecked).
 
 ## SunTour USA Technical Bulletin #21, AccuShift installation and troubleshooting guide — undated, c. 1987 (SunTour-ServiceBulletin.zip, VeloBase archive, 33 pp) — reviewed, no rows changed
 
