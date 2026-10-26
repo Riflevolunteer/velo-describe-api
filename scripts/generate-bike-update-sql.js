@@ -1460,6 +1460,10 @@ const COMPONENT_OVERRIDES = {
     'tange cd sealed': 3155, // Tange-Seiki Levin CD
     // 1979 Peugeot (French catalogue).
     'spidel s7 competition': 3123, // Stronglight S7 Super Competition; DB dates it 1981-83, catalogue shows it 1979
+    // Headset link pass 2026-10-26 (from /linkCoverage).
+    'tange cd': 3155, // 1990 Bianchi Alfana / Virata: Tange-Seiki Levin CD, as the 1993 'tange cd sealed'
+    'hatta "vesta" sealed steel cp': 3020, // 1986 Raleigh Elkhorn: Hatta Vesta, as the 1990 Bianchi "Hatta Vesta"
+    'campagnolo sport': [{ from: 1971, to: 1985, id: 2951 }], // 1978 Bianchi Campione del Mondo CX: 1040/A Gran Sport ("sold as the Sport head set")
   },
   'Bottom Brackets': {
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
