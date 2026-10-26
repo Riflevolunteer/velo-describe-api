@@ -149,3 +149,7 @@ test('pairs reviewed and kept apart are left out unless asked for', () => {
   assert.deepStrictEqual(findNearPairs([a, b]), [])
   assert.deepStrictEqual(findNearPairs([a, b], { includeReviewed: true }).map((p) => [p.reason, p.reviewed]), [['code', true]])
 })
+
+test('drilling for lightness is a configuration, not a finish', () => {
+  assert.strictEqual(relate(row('Modolo Flash (drilled)'), row('Modolo Flash (non-drilled)')), 'configuration')
+})

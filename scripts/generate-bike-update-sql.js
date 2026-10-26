@@ -1174,10 +1174,10 @@ const COMPONENT_OVERRIDES = {
     'weinmann 605 quick release': 8642, // 1983 Peugeot (CA) PK 12
     'weinmann 500': 8636, // 1982 Peugeot: Weinmann AG 500 base row (1963-84); the 1980 variants differ by bolt colour, not stated
     'weinmann 500 side pull forged dural': 8636,
-    'weinmann 605': 8642, // 1982 Peugeot PX 10 S / PSV 10 S: Weinmann AG 605 (1978-84); 1133 is dated 1978-80
+    'weinmann 605': 8642, // 1982 Peugeot PX 10 S / PSV 10 S: Weinmann AG 605 (1978-84)
     'weinmann carrera 400': 1168, // 1982 Peugeot PX 10 DU: Weinmann AG Carrera 400 (1980-83)
     'spidel ls2 side pull': 834, // 1980 Peugeot PRO 10 / PY 10 S / PY 10 LC: MAFAC LS2 (1979); Spidel brakes were Mafac-made
-    'weinmann 605 side pull with quick release and centring bolt': 1133, // 1980 Peugeot (NL) PVN 10 (text says "Mafac 605"; photo is Weinmann)
+    'weinmann 605 side pull with quick release and centring bolt': 8642, // 1980 Peugeot (NL) PVN 10 (text says "Mafac 605"; photo is Weinmann)
     'weinmann 506 side pull with quick release and centring bolt': 7764, // Weinmann AG 506
     'mafac competition centre pull anodised': 825, // MAFAC Competition (later version)
     'mafac competition': [{ from: 1971, to: 1980, id: 825 }], // 1975 Peugeot P 10: bare Competition, later version (the 1970 early row is 827)
@@ -1186,7 +1186,7 @@ const COMPONENT_OVERRIDES = {
     'mafac competition with course 2000 levers': [{ from: 1971, to: 1980, id: 825 }],
     'mafac racer with course levers': [{ from: 1970, to: 1980, id: 838 }], // 1977 Peugeot (DE): MAFAC Racer (1970-80), as the other bare Mafac Racer picks
     'mafac 2000 anodised': [{ from: 1976, to: 1976, id: 836 }], // 1976 PY 10: MAFAC 2000 later version (1970-79; 835 and 837 are 1970-only variants)
-    'altenburger synchron': [{ from: 1970, to: 1976, id: 511 }], // 1970-76 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron; 511 and 512 are the two undated velobase logo variants of the same brake, 511 chosen as the exact title match (a judgement)
+    'altenburger synchron': [{ from: 1970, to: 1976, id: 511 }], // 1970-76 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron (512, the other logo variant, merged into 511 on 2026-10-26) match (a judgement)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'shimano deore xt cantilever with gumhoods': [{ from: 1983, to: 1986, id: 980 }], // 1986 Raleigh Portage; as "Shimano Deore XT, cantilever" (BR-MC70)
     'dia compe dc630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Sportif; as the 1985 "DC630N alloy S.P." pick
@@ -1229,7 +1229,7 @@ const COMPONENT_OVERRIDES = {
     // c. 1984 De Rosa (ebykr scan).
     'campagnolo c record': null, // Delta not shipping; C-Record groups were delivered with Super Record brakes (as Cinelli / Colnago)
     // 1978 Raleigh (US, ebykr scan).
-    'weinmann 605 alloy side pull with wheel guides': 1133, // Competition GS: Weinmann AG 605 (incised lettering, cap nut), the 605 variant dated 1978-80
+    'weinmann 605 alloy side pull with wheel guides': 8642, // Competition GS: Weinmann AG 605 (lettering variants merged into 8642 on 2026-10-26)
     'raleigh weinmann short reach alloy center pull': 1138, // Super Course: Weinmann AG Raleigh 610, the short-reach Raleigh centre-pull the 1977 Super Course names as 610
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'campagnolo nuovo record bianchi engraved': [{ from: 1978, id: 572 }], // Centenario: 2040 Record post-CPSC, as the plain Nuovo Record range
@@ -1391,7 +1391,7 @@ const COMPONENT_OVERRIDES = {
     // 1979 Peugeot (French catalogue).
     'side pull': null, // generic; matcher hit Phillips Side-Pull
     'spidel competition centre pull': 1029, // Spidel (made by Mafac); the Mafac Competition rebadged
-    'weinmann 605 side pull': 1133, // Weinmann AG 605 (incised lettering, cap nut) 1978-80
+    'weinmann 605 side pull': 8642, // Weinmann AG 605 (lettering variants merged into 8642 on 2026-10-26)
     'mafac competition simplified centre pull': 825, // MAFAC Competition (later version)
     'mafac competition centre pull': 825, // MAFAC Competition (later version)
     'mafac racer centre pull': 838, // MAFAC Racer (lettered MAFAC RACER) 1970-80
