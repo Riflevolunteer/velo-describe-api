@@ -1841,6 +1841,17 @@ const COMPONENT_OVERRIDES = {
     'nitto 165 400 mm': 2877,
     // 1985 Bianchi Bambina: the only 340mm junior bar in Nitto No. 11 (1989).
     'nitto junior 340 mm': 8622, // Nitto B110AA
+    // Handlebar link pass 2026-10-26 (from /linkCoverage).
+    'philippe professionnel thickened 420 mm': 2895, // 1982 Peugeot PXN 10: Philippe Professionnel 351
+    '3ttt record competizione super leggero leather covered': 2767, // 1978 Bianchi Specialissima: 3ttt Record Competizione Superleggero
+    '3ttt tourist 75': 8844, // 1978 Bianchi Rekord/745: 3ttt 400/3/4, Touriste Mod. 75
+    '3ttt duralumin english model': 8845, // 1981 Bianchi Super Turismo: 3ttt 300/5, Inglese (Viaggio)
+    'vantoux gb': 2848, // 1972 Raleigh Professional Track: GB Ventoux, as 1973-74
+    'gb maes engraved anodized silver': 2843, // 1976 Raleigh Team Professional: GB Maes (alloy, with ferrule), as 1974-75
+    "cinelli 64's": 2802, // 1986 Raleigh Prestige: Cinelli 64 Giro d'Italia (80's model)
+    'atax franco italia': 2897, // 1983 Peugeot UO 12 Sprint: Franco-Italia 352 (Atax branding), as 1978 / 1980
+    'aluminium franco italia inscription': 2897, // 1982 Peugeot PH 10 S
+    'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
     // 1982 Battaglin: Cinelli 1/R is the 1R (1/Record); the early version ends 1979.
