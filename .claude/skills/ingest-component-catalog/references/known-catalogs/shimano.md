@@ -753,6 +753,16 @@
   it was treated as a duplicate and no pages were read. If a Japanese
   edition's codes or weights ever matter, compare a few pages against the
   2048px blogspot copy first.
+- Third duplicate copy, checked 2026-10-26 and not loaded: bikalog.org
+  https://bikalog.org/api/view/Shimano/1982/shimano-1982.pdf, 46 pages,
+  800px OCR'd scan (ocrmypdf; the text layer is too garbled to use).
+  Rear cover imprint "0182 F1/37M Printed in Japan XBC IZM", identical to
+  the copy used here, and the same TOC and page order (front cover bound
+  last, the pp. 37-40 chart spreads given once whole and once as halves).
+  Chart-only codes (FD-7320, SL-7311/7321/6321, SP-7300-7322, SP-6300-
+  6322, FH-7370, FH-6361, SL-AD24, BL-AD50, BR-6102, HB-7110/7120/7520)
+  were checked against the DB and all are present with 1982 detail.
+  Lower resolution than the other copies, so not worth re-reading.
 - Retitled: 3571 "HF-7261" -> FH-7261 (small flange 6-sp silver); 3541
   "Adamas AX (?)" hubs -> FH-AD61 / FH-AD65 1982-83; 1800 "Adamas AX, FF
   System" crank -> FC-FF33, FF System; 1404 Link-Lock -> CN-6130.
@@ -1863,6 +1873,75 @@
   measured 161g for 13-18T cogs folded into 3532's description.
 - HS-6300 (6674) is correctly a stem (600 AX aero stem), not a headset.
 
+## Shimano "'96 Bicycle System Components — Dealer Sales & Support Manual", English (E) — printed 07.1995 (disraeligears.co.uk, 92 images)
+
+- `data_source` 277, label "Shimano Bicycle System Components 1996, English (E)
+  dealer sales and support manual (printed 07.1995)". Source:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_-_96.html
+  (images `00_main_images/..._-_96_page_NN_main_image.jpg`, image N = printed
+  page N; the 1560x2209 JPGs are legible read whole, no cropping needed).
+  Rear cover "(c) Jul. 1995 Shimano Inc., 0795 Printed in Belgium XBC IZM",
+  Shimano Europe. 1996 model year. Pages: 6-11 functions for 1996, 12-27 XTR /
+  Deore XT / Deore LX / STX-RC (specs 22-23, feature charts 24-27), 28-39 STX,
+  Alivio, Acera-X, Altus, MJ-II, Tourney 30 / 22 / 15 (specs 36-39), 40-45
+  Nexus (specs 45), 46-61 road (Dura-Ace 7400, 600 Ultegra 6400, 105SC, RX100,
+  RSX, 300EX; specs 56-59, charts 60-61), 62-73 function pages (BB chart 73),
+  74-79 cables, pads, tools, 80-89 SPD shoes and pedals.
+- Duplicate / partial copy, checked 2026-10-26 and not loaded: bikalog.org
+  https://bikalog.org/api/view/Shimano/1996/shimano96.pdf is 9 group-photo
+  pages (printed 27-35) of the US edition of this manual (same photos,
+  "aluminum" spelling, different pagination), no specs or imprint.
+- **New for 1996 (stated)**: XTR "completely re-designed" (M950, differential
+  plate FD, V-brake); V-brake on XTR and XT; Rapidfire SL (XTR, XT, LX,
+  STX-RC, STX); EZ-Fire (Acera-X, Altus); Top-Swing on all MTB groups; Silent
+  Clutch FH-R050 (STX-RC, STX, Alivio); Easy-Set cantilevers; 7.1mm IG chains
+  CN-IG90 / 70 / 51 / 31; SP-40 cable. vs '95: XTR M910 RD / FH / HB gone
+  (ST-M910, CS-M900-I, SP-M900, HP-M900 still listed); Altus C90 RD / FD / FC /
+  BB -> CT91; Acera-X M290 RD / FD / FC -> M291; ST-MC30 -> MC34; Nexus SB-7R40
+  -> SB-7S40. Road range unchanged (Dura-Ace still 8-speed 7400).
+- **year_from 1997 -> 1996 (58 rows, all inserted 1997-1997 by the '97 pass)**:
+  119, 2494, 2536, 9602, 9603, 9605, 9606, 9607, 9609-9617, 9619-9621, 9632-
+  9635, 9638, 9639, 9641, 9642, 9645-9653, 9655, 9656, 9658, 9660, 9662, 9663,
+  9665, 9667, 9668, 9670, 9672, 9674-9676, 9678-9683, 9685. 9641 RD-MC14 / 16 and 9667 SL-TY37 / 31 move on the photo caption
+  only: the spec tables print RD-MC12 and SL-TY30.
+- **year_to -> 1996 (9 rows)**: 3563 FH-7463-HG (was 1993), 3971 PD-7401 (1995),
+  7673 SP-M650 (1993, now shown with LX), 7737 BB-CS21 / CS11 (1995), 7750
+  SL-MY15 (1994), 7755 CS-HG70-C (1995), 8675 ST-M565 / M566 (1995), 8679
+  FH-M563 (1995), 8684 ST-MC33 (1995).
+- **year_from moved later (old value, for reverting)**: 6361 ST-M567 1990 ->
+  1996 (velobase bucket; the '95 manual lists the full LX shifter range with
+  only M565 / M566).
+- **Retitled (old titles)**: 6361 "Shimano ST-M567, Deore LX M560 Series" ->
+  "Shimano ST-M567, Deore LX"; 9623 "Shimano CS-M738-I, Deore XT" ->
+  "Shimano CS-M737-I, Deore XT" (1996 photo and spec, and the '97 tables, all
+  say M737-I; only the '97 photo says M738-I), year_from 1996; 1821 "Shimano
+  FC-7410, Dura Ace 7410" -> "Shimano FC-7410, Dura-Ace 7400"; 2512 "Shimano
+  FD-7410, Dura-Ace 7400" -> "Shimano FD-7410-B, Dura-Ace 7400"; 2513 "Shimano
+  FD-7410, Dura-Ace 7400 (braze on)" -> "Shimano FD-7410-F, Dura-Ace 7400";
+  4456 "Shimano RD-1056, 105SC" -> "Shimano RD-1056 / RD-1056-SS, 105SC".
+  search_text rewritten on all six.
+- **Descriptions rewritten from the spec tables** (measured velobase weights
+  kept): 2495 FD-M567, 2504 FD-M738, 2505 FD-M739, 4486 RD-M567, 4475 RD-MC12,
+  4457 RD-1056-GS (velobase said "short cage"; GS is the 36T long cage and the
+  246g measured unit matches the SS weight), 3552 FH-M737, 3094 HP-M740, 1790
+  FC-6400, 2469 FD-1057, 6188 SL-A410, 3100 HP-7410, 5895 SP-7410, 3971 PD-7401,
+  plus 1821 / 2512 / 2513 / 9623 above.
+- **New rows (9, ids 9704-9712, `source_ref` 277)**: ST-M008 Rapidfire SL
+  (no group), FD-CT91-E Altus (photo FD-CT91), FD-TY30, BL-TY21, FC-TS21
+  Tourney, CS-HG70-I Deore LX, SB-7S40 / SB-4S30 and BL-IM40 / BL-IM30 Nexus,
+  HB-6400 600 Ultegra front hub (1996-1997; the '97 entry noted the later
+  HB-6400 but added no row). All 1996-1996 except HB-6400.
+- **Printed inconsistencies, not inserted**: SP-M950 (p27) vs SP-M900 (p23);
+  SL-TY30 (spec) vs SL-TY31 (photo, '97); BR-1056 (spec) vs BR-1055 (photo,
+  text; rows 960 / 961); BR-A551 (spec) vs BR-A550 (photo); RSX cassette
+  CS-HG70-7 (spec) vs CS-HG50-7 (p55 text); CS-HG70-I listed "7-speed" in the
+  p23 chart but 8 sprockets.
+- **Left**: 7755 CS-HG70-C grouped "ac 11-28" in the p23 chart while the row
+  ('95) says 11-21T, so only its years moved; BR-M900-C (1018 BR-M900) and
+  CN-HG91 (7665, titled Deore XT, listed under 600 Ultegra here) not enriched;
+  road rows already carrying older-manual specs not rewritten; seat binders,
+  DF-M730, cables, pads, tools, shoes and cleats out of scope.
+
 ## Shimano "'97 Bicycle System Components — Dealer Sales & Support Manual", English (U) — printed 09.1996 (disraeligears.co.uk, 94 images)
 
 - `data_source` 275, label "Shimano Bicycle System Components 1997, English (U)
@@ -1882,6 +1961,12 @@
   FH-MC38); 7-speed Tourney 22 / 30 and Tourney 05; Nexus Inter-S shifters and
   Inter-M roller brakes. 600 Ultegra (6400), 105-SC, RX-100, RSX and 300EX are
   carried over.
+  **Corrected by the '96 manual (`data_source` 277, entry above)**: XTR M950,
+  Deore XT M739 (V-brake), Alivio MC14, STX-RC MC36, STX MC34, Tourney 30 / 22,
+  Nexus Inter-S ST-7S20 / 4S20, Inter-M brakes / hubs and SG-7C21 / 4R31 / 4C30
+  are all in the 1996 manual, so 58 of this pass's 1997-1997 rows now start in
+  1996. Still genuinely 1997: Dura-Ace 7700, Deore LX M569, Alivio MC16,
+  STX-RC MC38, Tourney 05, FH-R080 (absent from the '96 manual).
 - **Updated, year_to -> 1997 only (111 rows, each guarded on its old year_to)**:
   3972, 5893, 5894, 1823, 3565, 7210, 3103, 5889, 5890, 7566, 7665, 7671,
   6145, 7670, 960, 961, 411, 3527, 7761, 3951, 6133, 6146, 7567, 7762, 7568,
