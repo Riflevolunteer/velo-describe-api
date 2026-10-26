@@ -1083,16 +1083,17 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record wide flange': 3270, // Campagnolo 1036, Record Pista (high flange) — track model
     // 1974 Raleigh says "Large Flange" where 1973 said "Wide Flange".
     'campagnolo record large flange q r': 3260, // Campagnolo 1035, Record (high flange)
-    'normandy competition large flange q r alloy': 3388, // Normandy Luxe Competition (gold label), as 1973
+    // Red label, high flange: the gold-label row ends 1970 and 3389 is the low-flange red label (version-range check 2026-10-26).
+    'normandy competition large flange q r alloy': 3384, // Maillard Normandy Luxe Competition (red label, high flange)
     'normandy sport large flange q r alloy': 3390, // Normandy Sport (high flange, oblong holes)
-    'normandy luxe q r competition wide flange': 3388, // Normandy Luxe Competition (gold label)
+    'normandy luxe q r competition wide flange': 3384, // Maillard Normandy Luxe Competition (red label, high flange)
     'normandy sport q r wide flange alloy': 3390, // Normandy Sport (high flange, oblong holes)
     'normandy sport alloy wide flange q r': 3390,
     // 1975 Raleigh. Gran Sport's bare "Normandy Large Flange Q/R Alloy" left
     // unlinked (Sport vs Luxe Competition; 1974 Gran Sport had Competition).
     'campagnolo record pista large flange': 3270, // Campagnolo 1036, Record Pista (high flange) — Professional Track
     'campagnolo record strada large flange q r': 3260, // Campagnolo 1035, Record (high flange)
-    'normandy competition large flange alloy q r': 3388, // Normandy Luxe Competition (gold label), as 1974
+    'normandy competition large flange alloy q r': 3384, // Maillard Normandy Luxe Competition (red label, high flange), as 1974
     // 1977 Raleigh (US). Professional Mk V's bare "Campagnolo Record quick
     // release" left unlinked (high vs low flange not stated).
     'campagnolo nuovo tipo small flange quick release': 3230, // Competition GS: Campagnolo 1251, Nuovo Tipo (small flange)
@@ -1503,6 +1504,7 @@ const COMPONENT_OVERRIDES = {
     'stronglight 104 bis 52 x 42t': 1879, // 1981 Peugeot PSV 10
     'stronglight 104 bis 42 x 52t 170 mm': 1879, // 1983 Peugeot (CA) PK 12
     'stronglight 104 bis drilled 45 x 52t': 1879, // 1983 Peugeot (NL) PVN 10
+    'stronglight 104 bis anodised and drilled 45 x 52t': 1879, // 1982 Peugeot (NL) PVN 10
     'stronglight 105 bis anodised and drilled 45 x 52t 170 mm': 1880, // 1980 Peugeot (NL) PVN 10
     'stronglight 105 mod 65 axle five arm cranks 170mm double chainring 42 52t': [{ from: 1970, to: 1982, id: 1880 }], // 1977/78 Peugeot: Stronglight 105 Bis
     'stronglight 105 42 52t': [{ from: 1970, to: 1982, id: 1880 }],
@@ -1877,8 +1879,8 @@ const COMPONENT_OVERRIDES = {
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'forged alloy': null, // generic; substring-hits the 1950s GB Hiduminium spearpoint
     'sr ax; ah': 7901, // Sakae/Ringyo (SR) AX-AH, Apex (SR No. 18; 1981 Kalkhoff)
-    // 1975 Motobecane: the Giro d'Italia bar was paired with the 1A stem.
-    "cinelli giro d'italia": 6489, // Cinelli 1A (winged "C" logo)
+    // 1975 Motobecane: the Giro d'Italia bar was paired with the 1A stem; the winged-"C" 1A starts 1978.
+    "cinelli giro d'italia": [{ to: 1977, id: 6487 }, { from: 1978, id: 6489 }], // Cinelli 1A (Cinelli Milano logo / winged "C" logo)
     // 1981 Kalkhoff. Cinelli's "Super Record" stem is the 1R (1/Record).
     'cinelli super record': 6491, // Cinelli 1R (1/Record)
     'shimano 600 ax': 6674, // Shimano HS-6300, 600 AX
@@ -1973,6 +1975,8 @@ const COMPONENT_OVERRIDES = {
     // 1980 Peugeot (NL) PY 10 LC: bare "Simplex SLJ" down-tube levers, read as the twin lever (a judgement:
     // the PY 10 had a pair; single SLJ5005 is the other choice).
     'simplex slj': [{ from: 1975, to: 1981, id: 7298 }], // Simplex SLJ5007
+    // 1981 Peugeot PX 10 S / PSV 10: bare "Simplex SJ" levers by year (version-range check 2026-10-26).
+    'simplex sj': [{ from: 1979, to: 1982, id: 6210 }, { from: 1984, to: 1990, id: 6211 }], // Simplex SJ (1st type) / (3rd type)
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     // Substring-hits the generic "Shimano 600" row; the AX lever is one of
     // four SL-63xx variants (clamp / braze-on A / B / oval) and the table doesn't say.
