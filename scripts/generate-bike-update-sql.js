@@ -2325,10 +2325,18 @@ const COMPONENT_OVERRIDES = {
     'suntour powerflo 12 30t 7 speed': 1221, // SunTour CS-AP10-S7 / -K7, PowerFlo 7-speed (1992 catalogue)
     // 1993 Bianchi bare "Hyperglide" 8-speed values: each is on one bike only, and the
     // bike's group plus the catalogued sprocket range pick the cassette. The 6 / 7-speed
-    // values are shared across bikes of different groups, so they stay unlinked.
+    // values are shared across bikes of different groups, so they link per bike by group
+    // (the 1990 rule: XT -> HG90, LX / DX / RX100 -> HG70, Exage -> HG50).
     'shimano hyperglide 12 23t 8 speed': 7671, // SBX / Ultegra-STI: Shimano CS-HG90-8, 600 Ultegra (U 12-23T)
     'shimano hyperglide 13 23t 8 speed': 7762, // Virata (105 STI): Shimano CS-HG70-8, 105SC (T 13-23T)
     'shimano hyperglide 12 28t 8 speed': 7668, // Super Grizzly (XTR): Shimano CS-M900-8, XTR (Q 12-28T)
+    'shimano hyperglide 12 28t 7 speed': [
+      { bike: 'Grizzly', from: 1993, to: 1993, id: 1202 }, // Deore XT: CS-HG90
+      { bike: 'Peregrine', from: 1993, to: 1993, id: 7567 }, // Deore LX: CS-HG70
+      { bike: 'Denali', from: 1993, to: 1993, id: 7567 }, // Deore DX: CS-HG70
+    ],
+    'shimano hyperglide 13 28t 7 speed': [{ bike: 'Eros', from: 1993, to: 1993, id: 7567 }], // RX100: CS-HG70; the Europa (AT10) has no row
+    'shimano hyperglide 13 30t 7 speed': [{ from: 1993, to: 1993, id: 1195 }], // Ibex / Osprey / Project 5 / Project 3, all Exage LT / ES: CS-HG50
   },
   Freewheels: {
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
@@ -2442,6 +2450,23 @@ const COMPONENT_OVERRIDES = {
     // 1983 Raleigh Royal / Royale 10: a 5-speed 14-34 wide-ratio block;
     // Perfect was SunTour's touring line (New Winner was the racing block).
     'sun tour wide ratio 14 18 23 30 34t': 2245, // SunTour 1100-1106 / PT-5000, Perfect (5-speed)
+    // Freewheel link pass 2026-10-26 (from /linkCoverage).
+    'regina oro': 2194, // 1982 Battaglin: Regina Oro (6 speed), as the 1975 Motobecane / 1983 Raleigh
+    // 2194's description is "the Extra 6-speed in Oro quality"; 2182 is the 5-speed Extra Oro.
+    'regina extra oro 6 speed': 2194, // 1978 Bianchi Specialissima Super-Leggera / Campione del Mondo CX
+    'regina extra oro 6 speed or alloy 6 speed on request': 2194, // 1978 Bianchi Specialissima Barcellona: the standard fit
+    'regina extra oro 13 21 6 speed': 2194, // 1981 Bianchi Super Leggera
+    'maillard 700 6 speed dural 13 14 15 16 17 18t or 13 14 15 17 19 21t': 2123, // 1977 Peugeot (DE) PY 10/CP: Maillard 700 (6 speed)
+    'maillard 700 13 14 15 17 19 21t': 2123, // 1978 Peugeot PY 10 EC
+    'maillard 700 6 speed light alloy hard steel core to choice': 2123, // 1978 Peugeot PY 10 CP
+    // 1983 Peugeot PX 14 / PY 14: 7-speed 700; hubs are 700 racer, not Helicomatic, so not the 700 SH 8133.
+    'maillard 700 13 14 15 16 17 18 19': [{ from: 1980, to: 1984, id: 2124 }], // Maillard 700 Compact Super (7 speed), row 1980-82
+    'normandy 14 17 20 24 28': [{ from: 1979, to: 1983, id: 8125 }], // 1983 Peugeot UO 9: Normandy (5-speed), row 1979-82, a year early
+    'atom 14 24': [{ from: 1978, to: 1982, id: 7239 }], // 1982 Peugeot PH 10 S: Maillard Atom (5-speed); the 1982 catalogue lists 13-24T
+    'regina rlsy90 silver 13 23t 7 speed': 2205, // 1990 Bianchi Super Leggera / Giro: Regina Synchro 90-S (7 speed); its 1992 Strada block is 13-23
+    'sun tour ultra 7 13 32t': 2237, // 1980 Raleigh Touring 14: SunTour NW-7000, New Winner Ultra 7 (the only Ultra-7 row in range)
+    // 1990 Bianchi Grizzly / Project 7 (XC-Pro groups); the row is under Cassettes, the CSV label is Freewheel.
+    'suntour accushift plus silver 12 30t 7 speed': [{ from: 1990, to: 1990, id: 1222 }], // SunTour CS-AP00-S7U, XC Pro
   },
   Tyres: {
     '650': null, // 1980 Peugeot PH 50 M: bare wheel size; matched Wolber 22 Racing Team 650 by substring
