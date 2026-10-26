@@ -2179,7 +2179,7 @@ const COMPONENT_OVERRIDES = {
     'sakae p 5': 5857, // Speciale-II / Randonneur 700 / Rekord 26 / Bambina: SR CT-P5, Custom-P5 (Sakae Laprade)
     'sakae p 3': 5855, // Strada: SR CT-P3, Custom-P3 (melt forging)
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
-    'campagnolo record': [{ to: 1985, id: 5749 }], // 1044, Record (1969-85)
+    'campagnolo record': [{ to: 1985, id: 5749 }, { from: 1992, to: 1995, id: 7037 }], // 1044, Record (1969-85); 1993 Bianchi MG Team: SP-RE, Record
     // 1986 Colnago Catalogo generale group fan-outs.
     'campagnolo c record 180': 5738, // A0R2, C-Record aero (as 1986 Cinelli Record Corsa)
     'campagnolo triomphe': 5764, // Victory / Triomphe
@@ -2217,6 +2217,12 @@ const COMPONENT_OVERRIDES = {
     'sugino sp kc 230mm alloy micro adjust': 5928, // Sugino SP-KC
     'sugino micro adjust model sp ck': 5928, // catalog prints SP-CK for the Sugino SP-KC
     'sugino micro adjust sp ck': 5928, // catalog prints SP-CK for the Sugino SP-KC
+    // Seatpost link pass 2026-10-26 (from /linkCoverage).
+    'campagnolo 272mm': [{ to: 1985, id: 5749 }], // 1971 Raleigh Professional Mk III / International: 1044 Record
+    'sun tour superbe fluted 270mm': 5933, // 1980 Raleigh Superbe: SunTour SP-1000, Superbe (Fluted)
+    'sugino spkc': 5928, // 1986 Raleigh Crested Butte: Sugino SP-KC
+    'sugino sp kvc 230mm': 5928, // 1986 Raleigh Elkhorn: "KVC" a typo of the 1985 "SP KC 230mm"
+    'simplex slj 4164 dural silver anodised 266mm': 7305, // 1977 Peugeot (DE) PY 10/CP: Simplex SLJ4164, row 1978-81, a year early
     // 1986 Cinelli (Ten Speed Drive Imports).
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 5764, // Victory / Triomphe
