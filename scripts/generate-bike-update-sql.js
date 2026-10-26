@@ -1899,6 +1899,18 @@ const COMPONENT_OVERRIDES = {
     'atax forged dural anodised hidden expander': 6447, // ATAX (1A style)
     // 1973 Raleigh. Also substring-hits the 1950s Hiduminium spearpoint.
     'gb forged alloy': 6533, // GB Forged
+    // Stem link pass 2026-10-26 (from /linkCoverage).
+    'itm 200': [{ from: 1985, to: 1988, id: 9202 }], // 1987 Bianchi Limited / Squadra / Pista: ITM Mod. 200 (1985-88)
+    'itm 100': [{ from: 1985, to: 1988, id: 9203 }], // 1987 Bianchi Campione d'Italia: ITM Mod. 100
+    'itm 300': [{ from: 1985, to: 1988, id: 9201 }], // 1987 Bianchi Trofeo: ITM Mod. 300
+    'atax asc anodized': 8507, // 1984 Peugeot PRO 10 / PY 10: ATAX ASC Aerodynamic (1982-84)
+    'atax cfc 80 aluminium': 8512, // 1982 Peugeot PX 10 DU: ATAX CFC Forged Race
+    'atax cfc alloy': 8512, // 1984 Peugeot PX 10 DU '979', as the 1982 PX 10 DU
+    'atax cfc aluminium': 8512, // 1984 Peugeot PX 10 DU
+    '3ttt model 78 specific sizes': 8849, // 1981 Bianchi Super Corsa / Super Leggera: 3ttt 200/6, Record Strada Mod. 78
+    'sun tour superbe forged light alloy fluted': 6694, // 1980 Raleigh Superbe: SunTour RS-1000 Superbe (1979-84)
+    'sr mts 101 adjustable alloy': 6661, // 1986 Raleigh Elkhorn: SR MTS-101 (1980-90)
+    'nitto mt1 4 bolt alloy clamp': 9412, // 1987 Raleigh Maverick 18 Pro: Nitto MT-1 (two-piece clamp MTB stem)
   },
   Shifters: {
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
