@@ -310,3 +310,31 @@
   leaflet photo shows a rat-trap cage.
 - Years left alone: the leaflet is undated and the hub rows are only 1982, and the
   "Silstar" name P-7 and No. 18 use does not appear in it.
+
+## SR Sakae pages (pp 16-19) of the SR SunTour "1993 Bicycle Equipment" catalogue, English — printed 10.1992 (bikalog.org), data_source 278
+
+- Source: https://bikalog.org/api/view/Sun%20Tour/1993/SunTour93.pdf, pp 16-19
+  (the SunTour pages of the same catalogue are logged in suntour.md; shared
+  `data_source` 278). Read with pdftoppm -r 300. Photo captions only: codes and
+  names, no weights or dimensions except TCO seat post lengths. First SR source
+  in the log after the c. 1982 catalogues; the 1990s range was almost absent from
+  the DB. Pages: 16 SR Sakae intro (Litage, Pressure Fit, Accurad forging) and
+  DuoTrack fork ("'93 NEW"), 17 DuoTrack spec and handlebars, 18 stems and
+  seatposts, 19 pedals, cassette BBs, cranks / chainrings, toe clips.
+- Updated (year_to -> 1993, source_ref 278): 3935 retitled (old title "Sakae/Ringyo
+  (SR) SXP-102") -> "Sakae/Ringyo (SR) SXP-102 / PL-SXP-102BL", search_text
+  rewritten; 8246 SP-550FB / FW Silstar (was 1982), description rewritten.
+- Not extended: 3925 SP-150 (1970-1980, linked via the 'sakae sp 150' override
+  for the 1982 Peugeots): the catalogue's PL-SP-150-SE got its own row instead.
+- New (32 rows, ids 9738-9769, all 1993-1993, no group): handlebars BR-MTB-226SB
+  Powerbulge Quad-2, BR-MTB-420AS Powerbulge Titanium, BR-MTB-528AS Zetto,
+  BR-CMB-201, BR-FMB-200-DM; stems HP-MTS-301BL, HP-MTS-455BL Zetto, HP-CTS-320BL
+  (hinged), HP-FXS-100DM, HP-CYS-120BLA; seat posts SP-MTE-315HG2 TCO,
+  SP-MTE-325 TCO Sport, SP-MTE-335 MTE ('93 new), SP-FXE-100DM, CTE-100; pedals
+  PL-MTP-129HG / 127 / 126BL, MTP-170, MTP-426, PL-MTP-481FB, PL-SP-530FB,
+  PL-CTP-470BLA, PL-CTP-400AL, PL-SP-150-SE, PL-SP-583FB; BB-CB10 cassette BB
+  ('93 new; the silver BB-CB00 is SunTour row 9729); cranks SW-SES-631-BL2,
+  CW-CSC Tandem; chainrings Ninja 300T, Platinum and Round Tech (300T / 300C /
+  310 / 200).
+- Left: 6661 MTS-101 stem and 5849 MTE-100 post (different models); DuoTrack fork,
+  Litage forks, AS-30BL / AC-51BL toe clips and straps (no category).

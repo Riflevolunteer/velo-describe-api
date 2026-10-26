@@ -19,7 +19,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/le-cyclo.md](known-catalogs/le-cyclo.md) — Le Cyclo (3 entries)
 - [known-catalogs/cyclo-pedia.md](known-catalogs/cyclo-pedia.md) — Gene Portuesi's Cyclo-Pedia, US multi-brand retailer (1 entry)
 - [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (1 entry)
-- [known-catalogs/sakae-ringyo.md](known-catalogs/sakae-ringyo.md) — Sakae Ringyo / SR (5 entries)
+- [known-catalogs/sakae-ringyo.md](known-catalogs/sakae-ringyo.md) — Sakae Ringyo / SR (6 entries)
 - [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (1 entry)
 - [known-catalogs/dia-compe.md](known-catalogs/dia-compe.md) — Dia-Compe (4 entries)
 - [known-catalogs/zeus.md](known-catalogs/zeus.md) — Zeus (4 entries)
