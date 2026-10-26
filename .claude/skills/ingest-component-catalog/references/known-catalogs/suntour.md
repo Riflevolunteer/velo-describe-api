@@ -341,6 +341,71 @@
   was not parsing the `source_ref` subquery on spec inserts (0 specs
   reported since source_ref was added); regex fixed.
 
+## SR SunTour "1993 Bicycle Equipment", English — printed 10.1992 (bikalog.org, 20 pages)
+
+- `data_source` 278, label "SR SunTour Bicycle Equipment 1993, English edition
+  (printed 10.1992)". Source: https://bikalog.org/api/view/Sun%20Tour/1993/SunTour93.pdf
+  (ocrmypdf scan, 1063px pages, PDF page N = printed page N; the pp. 14-15 spec
+  chart needs pdftoppm -r 300 in horizontal strips to read). Rear cover "SR
+  SUNTOUR / Printed in Belgium, Oct. '92"; first catalogue after the SR (Sakae
+  Ringyo) merger. Pages: 2-8 features, 9-10 ATB groups (XC-Pro MD / XC-Pro,
+  XC-Comp MD / XC-Comp, XC-LTD, XC-Expert MD, S-1, X-1, XCE, XCM, XC Sport), 11
+  road (Superbe Pro, Superbe Pro Track, SL, FS-E, Blaze), 12 Microlite and
+  options, 13 accessories and tools, 14-15 spec chart, 16-19 SR Sakae (DuoTrack
+  fork, bars, stems, seatposts, pedals, cassette BBs, cranks). Abridged: the
+  X-1 / XCE / XCM / XC Sport / FS-E / Blaze / S-1 groups are photos only.
+- **'93 NEW** (stated): XC-Expert MD group; 8-speed Micro Drive (CS-AP20-S8,
+  11-28T); S-1 derailleur and Twist Shifter; MT Twist Shifter; cantilevers
+  CT-XP01 / CT-XC02 with levers BL-XP01 / XC02; Micro Claw pedals PL-XP10 /
+  XP11; BB-CB00 cassette BB; Power Hanger; SL with Microlite and 8-speed;
+  DuoTrack fork. XC-Pro / XC-Comp derailleurs renumbered RD-XP00 -> RD-XP01 and
+  RD-XC20 -> RD-XC01 (different capacities and weights, so new rows); FD-TP00
+  -> TP01, SL-SL00 -> SL01, SL-XP00 -> SL-XP01 likewise.
+- **year_to -> 1993 (52 rows)**: 4784, 2659, 7959, 2658, 7966, 7969, 6312, 6310,
+  7970, 6304, 3627, 7979, 7980, 7982, 7983, 7984, 7986, 7987, 7988, 7990, 7993,
+  1214, 1221, 1216, 1217, 7995, 1425, 7996, 7997, 1999, 1998, 7998, 7999, 1997,
+  8006, 8012, 8013, 8017, 8019, 8025, 8030, 8031, 4019, 4017, 4010, 8044, 8045,
+  8046, 6388, plus the retitled freehubs 3629, 7981, 7989.
+- **year_from moved later (old values, for reverting)**, all on the catalogue's
+  "'93 NEW" plus absence from the full 1992 catalogue: 4792 1990-1990 -> 1993-1993,
+  2664 1990-1990 -> 1993-1993, 6318 1990-1990 -> 1993-1993, 1220 1980-1990 ->
+  1993-1993, 4714 S-1 1992 -> 1993 (year_to stays 1993), 6370 NULL -> 1993-1993,
+  6271 NULL -> 1993-1993.
+- **Retitled (old titles)**: 4792 "SunTour XC Expert MD" -> "RD-XX00-GXB, XC-Expert
+  MD"; 6318 "SunTour XC Expert" (Shifters) -> "SL-XX00-R / SL-XX00-L, XC-Expert MD
+  (thumb)" (a judgement: could have been the Twist Shifter); 2664 "FD-XX00-GXH, XC
+  Expert" -> "..., XC-Expert MD"; 1225 "CS-AP20-K8, XC Expert" -> "..., XC-Expert
+  MD"; 1220 "CS-AP20-S8, XC Comp" -> "CS-AP20-S8, PowerFlo MD 8-speed (11-28)"
+  (group 153 -> NULL); 6271 "Suntour SL-XP01" -> "SL-XP01-R / SL-XP01-L, XC-Pro /
+  XC-Comp (thumb)"; 3629 "FH-XP20-7, XC-Pro MD (7-speed freehub)" -> "FH-XP20-8 /
+  FH-XP20-7, XC-Pro MD (freehub)"; 7981 "FH-XC11-7, XC-Comp MD (7-speed freehub)"
+  -> "FH-XC11-8 / FH-XC11-7, ..."; 7989 "FH-SL01-7, SL (7-speed freehub)" ->
+  "FH-SL01-8 / FH-SL01-7, SL (freehub)"; 5934 "SP-SB00 (-S)(-L) , Superbe Pro" ->
+  "SP-SB00-S / SP-SB00-L, Superbe Pro". search_text rewritten on all. The three
+  freehub descriptions name 1992 vs 1993 weights (375g 7-speed in 1992 vs 454-472g
+  in 1993). 1986 CW-SL00 and 4714 / 6370 S-1 descriptions rewritten.
+- **New group** 325 "XC-Expert MD" (SunTour); 4792, 2664, 6318, 1225 moved there
+  from 155 XCE (XCE = the XE01 parts, a separate group also shown in 1993). 4714
+  S-1 group NULL -> 306.
+- **New rows (24, ids 9714-9737, all 1993-1993)**: RD-XP01-GXB / GTB / SSB,
+  RD-XC01-GXB / GTB / SSB, RD-XX00-GTB, FD-TP01-GXH, SL-SL01-B / BF, TS-XX00 Twist
+  Shifter, FH-XX00-8 / 7, HB-SU00-F suspension hub, CS-AP10-S8, CH-AP12, CW-XX00,
+  BB-CB00 cassette BB, BL-XP01, BL-XC02, BL-XX00, CT-XP01, CT-XC02, CT-XX00,
+  PL-XP10 / PL-XP11 Micro Claw.
+- **Merged (user-approved)**: deleted 1223 "SunTour CS-AP20-S8, XC Pro" (velobase,
+  1992-1992, 319g spec, `A6807582-6EB7-4D17-B1A6-8E7F0D5D6A37`, no links or
+  overrides) into 1220, which keeps the 1993 Bianchi Project 7 link and the
+  `'suntour powerflo 11 28t 8 speed': 1220` override.
+- **Printed oddities**: "SC-AP00-S7" for CS-AP00-S7; SL-XP10 X-Press 276g in the
+  XC-Pro column vs 331g in XC-Comp (1992: 331g, left as is); HS-ST00 125g under
+  XC-LTD vs 122g elsewhere.
+- **Left**: SR Sakae pages 16-19 (brand 49 `Sakae/Ringyo (SR)`; photo-only codes
+  such as HP-MTS-456BL, SP-MTE-335, PL-MTP-129HG, BB-CB10, CW-CSC tandem, DuoTrack
+  fork) for a separate pass; RD-XP00 / XC20, CT-XP00 / 20, BL-XP00 / XC01 not
+  capped (abridged catalogue); photo-only groups X-1 / XCE / XCM / XC Sport /
+  FS-E / Blaze unmatched; out of scope: grips, binder SB-XP00, cable stops,
+  BP-100 pulleys, Power Hanger OT-PH00, lights, tools, accessories, Litage forks.
+
 ## SunTour "'73 Products" — 1973 (disraeligears.co.uk, 24 scans)
 
 - `data_source` 99, label "SunTour '73 Products catalogue (1973)". Source:
