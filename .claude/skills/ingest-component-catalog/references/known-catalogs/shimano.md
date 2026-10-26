@@ -1555,7 +1555,8 @@
   FC-7402" note was dropped: the '94 chart pairs only FC-7410 with BB-7410.
   A later source naming "BB-UN91 ... Dura-Ace" is the same part as 142.
 - Left: 133 BB-7410 year_from 1993 although FC-7410 (1821) starts 1994
-  (check the '93 catalogue); 3088 HP-6500 is dated 1990-1990 but the
+  (checked 2026-10-26: the '93 catalogue pp. 47-51 has FC-7402-SG + BB-UN91
+  and no FC-7410 / BB-7410, so 133 was moved to 1994); 3088 HP-6500 is dated 1990-1990 but the
   catalogue calls the cartridge HP-6500 new for 1994; 3534 HB-6400-F
   (1988-1991) is shown on p48 but shares a row with FH-6400-6/7; 7618
   SL-MY20 (1990-91) is shown on p34 but left, as 1992-93 is unattested.
