@@ -2612,6 +2612,16 @@ const COMPONENT_OVERRIDES = {
     '27 x 1 1 4"': null, // 1976 Raleigh Record: bare tyre size, hit the Rigida 27 x 1 1/4" brand row
     '700 c weinmann a 124 narrow concave section alloy': 7776, // Weinmann A124 Super X
     '700 c weinmann a124 narrow concave section alloy': 7776,
+    // Rim link pass 2026-10-26 (from /linkCoverage).
+    'weinmann type 294': 7926, // 1972 Raleigh International: Weinmann 294 (1963-75), as 'weinmann type 293'
+    'araya rm25': 8442, // 1986 Raleigh Crested Butte: Araya RM-25 (1985-88)
+    'campagnolo sigma crono hard anodized': 4969, // 1990 Bianchi Proto: Sigma Crono Oxide (1988-91)
+    'mavic module e anodised': [{ from: 1975, to: 1984, id: 5087 }], // 1982 Peugeot PFN 10 S: Module E (Red Label)
+    'mavic module e grey satin stainless spokes': [{ from: 1975, to: 1984, id: 5087 }], // 1983 Peugeot PSVN 10
+    'weinmann 700c narrow section': 7776, // 1981 Raleigh Super Course / Competition GS: A124 Super X, as 1978-80
+    'weinmann concave section alloy': 7776, // 1982 Raleigh Gran Sport: A124, as the 1983 Gran Sport
+    '7x type alloy 36°': 4923, // 1986 Raleigh Teton: Araya 7X, as the other 1986 Raleigh MTBs
+    'pellet record du monde light alloy': 5189, // 1977 Peugeot (DE) PY 10/CP: Super Champion Record du Monde ("Pellet Super Champion" in the same catalogue)
   },
 };
 
