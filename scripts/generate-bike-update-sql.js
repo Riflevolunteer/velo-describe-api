@@ -1970,6 +1970,9 @@ const COMPONENT_OVERRIDES = {
     'campagnolo chorus syncro': 7027, // Campagnolo Chorus levers (Dual-Mode Syncro inserts)
     // 1978 Raleigh (US, ebykr scan).
     'positron stem shifters': 7436, // Record FFS/PPS: Shimano LC-410 / SL-P211, Positron Stem (1977-81)
+    // 1980 Peugeot (NL) PY 10 LC: bare "Simplex SLJ" down-tube levers, read as the twin lever (a judgement:
+    // the PY 10 had a pair; single SLJ5005 is the other choice).
+    'simplex slj': [{ from: 1975, to: 1981, id: 7298 }], // Simplex SLJ5007
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     // Substring-hits the generic "Shimano 600" row; the AX lever is one of
     // four SL-63xx variants (clamp / braze-on A / B / oval) and the table doesn't say.
