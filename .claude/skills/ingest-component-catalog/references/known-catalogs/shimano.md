@@ -1940,3 +1940,17 @@
 - **Left**: SQ-M900 / SQ-M730 seat binders, DF-M730, SM-SP18, cables, tools,
   shoes and cleats (out of scope); 3534 FH-6400-6/7 / HB-6400-F not extended
   (the 1997 HB-6400 front hub is a later part on the same code).
+- **Page check, 2026-10-26** (two fresh readers re-compared every MTB, low-end
+  and Nexus description with the page images; 17 rows corrected, all
+  `source_ref` 275): FD-M566 (2494) is not top-swing and has no printed
+  weight; ST-M567 (6361) and ST-MC36 are Rapidfire SL, not Plus; BL-M950 and
+  BL-M600 lose the 159g (printed for BL-M739 only); RD-MC36 / RD-MC38 (4538)
+  pulleys are sintered steel bushings on the p30 table while the p29 text says
+  chromized (page contradicts itself); PD-M747 (3969) lost "lightweight
+  compact"; BR-M950 "F and R" dropped; BB-UN52 gained the MM110 (110.5mm)
+  version; BB-LP26 spindle is 110.5mm; BR-IM31 also comes without a cooling
+  disc; RD-TY30 has one 34T / 20T figure and the GS / SS split belongs to
+  RD-TY22; RD-MC14 / MC16 Teflon is on the pins; FD-MJ07-E "Dual SIS" removed.
+  CS-M738-I is CS-M737-I in the p32-33 tables. Confirmed: CN-IG90 / IG70 /
+  IG51 / IG31 are 7.1mm (p33), and the Nexus p76 weights sit under the right
+  columns.
