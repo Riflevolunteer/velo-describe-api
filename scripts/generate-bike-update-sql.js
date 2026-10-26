@@ -1748,6 +1748,13 @@ const COMPONENT_OVERRIDES = {
     'san marco concor super corsa': 5547, // Selle San Marco Concor Supercorsa
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'mattress': null, // generic; matcher hit a Brooks mattress saddle
+    // Saddle link pass 2026-10-26 (from /linkCoverage).
+    'brooks leather b17n': 5310, // 1981 Raleigh Super Course: Brooks B17 Champion Narrow, as 'brooks b17n'
+    'brooks professional large head rivets': 5303, // 1981 Raleigh Professional: Team Professional ("large copper rivets")
+    'isca tornado black': 5382, // 1983 Raleigh Team Replica: Tornado (suede cover), as the 1984 "ISCA Tornado Black Suede"
+    'isca tornado blue': 5382, // 1983 Raleigh Road Ace, as the 1984 "ISCA Tornado Blue Suede"
+    'isca tornado blue nabuk suede leather cover': 5382, // 1987 Raleigh Road Ace
+    'sella italia anatomic': 8759, // 1984 Peugeot PCA 10: Selle Italia Anatomic (1979-85)
     // 1979 Peugeot (French catalogue).
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
