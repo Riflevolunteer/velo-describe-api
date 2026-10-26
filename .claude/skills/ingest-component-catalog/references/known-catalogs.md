@@ -10,7 +10,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 
 - [known-catalogs/brooks.md](known-catalogs/brooks.md) — Brooks (1 entry)
 - [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (36 entries)
-- [known-catalogs/shimano.md](known-catalogs/shimano.md) — Shimano (29 entries)
+- [known-catalogs/shimano.md](known-catalogs/shimano.md) — Shimano (30 entries)
 - [known-catalogs/suntour.md](known-catalogs/suntour.md) — SunTour (17 entries)
 - [known-catalogs/simplex.md](known-catalogs/simplex.md) — Simplex (9 entries)
 - [known-catalogs/weinmann.md](known-catalogs/weinmann.md) — Weinmann (8 entries)

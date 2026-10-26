@@ -66,13 +66,12 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ## Open: Shimano bottom bracket cleanup
 
-55 Bottom Brackets rows reviewed 2026-10-11; the 137 -> 136 merge and the 141 BB-6500 redate to 1998 are done. Still open:
-- 135 BB-7700 is undated and FC-7700 (row 1824) is dated 1990, which looks wrong for Dura-Ace 7700; check against a 1997 catalogue before changing either.
-- 119 BB-UN72 and 121 BB-UN73 stay undated: they are not in the 1983, 1994 or 1995 material, so they are later than 1995 (need a 1996+ catalogue). 120 BB-LP27 (1990, velobase) is low confidence.
-- 133 BB-7410 `year_from` 1993 vs FC-7410 (1821) starting 1994: checked 2026-10-26 against the '93 catalogue (data_source 84, pp. 47-51). Its Dura-Ace road crank is FC-7402-SG paired with BB-UN91 ("use with FC-7402"); neither FC-7410 nor BB-7410 appears. First evidence is the '94 manual (FC-7410 + BB-7410, p61), so `year_from` 1993 is unsupported. Applied 2026-10-26: 133 `year_from` 1993 -> 1994, matching 1821 (one guarded UPDATE; the SQL is deleted, git history of this note is the record).
-- Titles with no description beyond "Japan" (119, 120, 121, 124, 135, 141) need a catalogue to enrich.
+55 Bottom Brackets rows reviewed 2026-10-11; the 137 -> 136 merge, the 141 BB-6500 redate to 1998, the 133 BB-7410 `year_from` 1993 -> 1994 (the '93 catalogue has FC-7402-SG + BB-UN91 and no 7410 parts) and the '97 manual pass (2026-10-26, data_source 275) are done: 135 BB-7700 and FC-7700 (1824) now start 1997 and 119 BB-UN72 is retitled and dated 1997. Still open:
+- The 1997 starts on 135 / 1824 / 119 are upper bounds: Dura-Ace 7700 and UN72 first appear in the '97 manual (printed 09.1996) and are absent from '95. A 1996 dealer manual would tighten them.
+- 121 BB-UN73 (undated) and 120 BB-LP27 (1990, velobase, low confidence) are not in the '97 manual either (only BB-LP26 is); they need another source or a deletion decision.
+- 120, 121, 124, 141 still have no description beyond "Japan" or a measured weight; 124 BB-1055 (105SC) is superseded by BB-UN52 in 1997 but its 1990-1992 dates stand.
 - Name collision: 12 Brakes rows carry BB- codes (Tourney / 600 / 500); no change planned.
-- Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general, 1996+.
+- Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general, a 1996 dealer manual.
 
 ## Done
 
