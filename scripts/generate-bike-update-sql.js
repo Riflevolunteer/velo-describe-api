@@ -2115,8 +2115,7 @@ const COMPONENT_OVERRIDES = {
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'sr sp12 platform alloy': 3924, // Competition: Sakae/Ringyo (SR) SP-12AL
     // 1978 Raleigh (US, ebykr scan).
-    // Two Atom 440 rows exist (velobase 3662, 1970-80; Maillard 1978/79 catalogue 7246). Keep the one the 1977 Super Course
-    // already links until the component side merges them.
+    // The Maillard 1978/79 catalogue row 7246 was merged into 3662 on 2026-10-26.
     'atom 440': 3662, // Super Course: Atom 440
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     'campagnolo superleggero': 3709, // Super Leggera / Campionissimo: 1037/a Record Strada Superleggeri (SL)
@@ -2267,7 +2266,7 @@ const COMPONENT_OVERRIDES = {
   Chains: {
     'did': null, // 1987 Bianchi Sport SX: brand only; the hit is the bare D.I.D brand row 1355
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
-    'regina extra oro': [{ from: 1970, to: 1980, id: 1385 }], // Rekord/748, /746: Regina Extra "Oro"
+    'regina extra oro': [{ from: 1970, to: 1980, id: 1382 }], // Rekord/748, /746: Regina Extra 50 Oro (1385 "Extra Oro (center drilled)" merged into it 2026-10-26)
     'union': null, // 1981 Kalkhoff: brand only; Union 486 is a model the catalogue doesn't name
     'sedissport 108 links delta treated': 1402, // 1980 Peugeot (NL): Sedis Sedisport Delta (1980)
     'sedisport 114 links delta treated': 1402, // 1982 Peugeot PBN / PFN / PKN / PVN / PXN 10: as the 108-link Delta

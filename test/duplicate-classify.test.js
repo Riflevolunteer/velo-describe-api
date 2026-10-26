@@ -1,7 +1,7 @@
 // node test/duplicate-classify.test.js (npm test)
 const test = require('node:test')
 const assert = require('assert')
-const { groupKey, relate, buildGroups } = require('../duplicate-classify')
+const { groupKey, relate, buildGroups, findNearPairs, brandsCompatible } = require('../duplicate-classify')
 
 let nextId = 1
 const row = (title, extra = {}) => ({
@@ -78,4 +78,74 @@ test('the survivor is the most used row, then a catalogue row', () => {
 test('rows differing in brand or category never group', () => {
   const rows = [row('Mavic MA 40'), row('Mavic MA 40', { category_id: 2 }), row('Mavic MA 40', { brand_id: 2 })]
   assert.strictEqual(buildGroups(rows).length, 0)
+})
+
+test('square-bracket qualifiers group like parentheticals', () => {
+  assert.strictEqual(groupKey('Weinmann AG Symetric [black label]'), groupKey('Weinmann AG Symetric [red label]'))
+})
+
+// Near pairs: rows carry a brand title, as from duplicate-report.js.
+const brandIds = new Map()
+const part = (brand, title, extra = {}) => {
+  if (!brandIds.has(brand)) brandIds.set(brand, brandIds.size + 1)
+  return row(title, { brand, brand_id: brandIds.get(brand), ...extra })
+}
+const nearOf = (...rows) => findNearPairs(rows).map((p) => p.reason)
+
+test('a shared rare part number pairs rows, "15/21" read as 1521', () => {
+  assert.deepStrictEqual(nearOf(part('Rigida', 'Rigida 15/21'), part('Rigida', 'Rigida AL 1521')), ['code'])
+  assert.deepStrictEqual(nearOf(part('Atom', 'Atom 440'), part('Maillard', 'Maillard Atom 440')), ['code'])
+  assert.deepStrictEqual(nearOf(part('Spidel', 'Spidel SLJ 4164, Serie Sport Ref 01'), part('Simplex', 'Simplex SLJ4164')), ['code'])
+})
+
+test('lettered part numbers must agree', () => {
+  assert.deepStrictEqual(nearOf(part('Shimano', 'Shimano BB-A450, Exage Sport'), part('Shimano', 'Shimano BB-M450, Exage Mountain')), [])
+  assert.deepStrictEqual(nearOf(part('SunTour', 'SunTour FD-XC00-GX, XC 9000'), part('SunTour', 'SunTour FD-SP00-B, Sprint 9000')), [])
+})
+
+test('a part number shared by many rows of the category is not evidence', () => {
+  const rows = ['A', 'B', 'C', 'D'].map((x) => part('Shimano', `Shimano 600 ${x}x`))
+  assert.deepStrictEqual(findNearPairs(rows, { maxCodeRows: 3 }), [])
+})
+
+test('years, two model names and real variants keep rows apart', () => {
+  assert.deepStrictEqual(nearOf(part('Atom', 'Atom 440', { year_from: '1950', year_to: '1960' }), part('Maillard', 'Maillard Atom 440', { year_from: '1978', year_to: '1979' })), [])
+  assert.deepStrictEqual(nearOf(part('Gipiemme', 'Gipiemme Crono Special 905 A'), part('Gipiemme', 'Gipiemme Crono Sprint 905 C')), [])
+  assert.deepStrictEqual(nearOf(part('Shimano', 'Shimano FD-5500, braze-on, 105'), part('Shimano', 'Shimano FD-5500, clamp-on, 105')), [])
+  assert.deepStrictEqual(nearOf(part('SunTour', 'SunTour FD-2700, MounTech v1'), part('SunTour', 'SunTour FD-2700, MounTech v2')), [])
+})
+
+test('the same model words pair rows of two family brands', () => {
+  assert.deepStrictEqual(nearOf(part('Simplex', 'Simplex Super LJ Luxe'), part('Spidel', 'Spidel Super LJ Luxe (Simplex)')), ['name'])
+  assert.deepStrictEqual(nearOf(part('Simplex', 'Simplex SLJ5000'), part('Spidel', 'Spidel SLJ5000 (Simplex)')), ['code'])
+  assert.deepStrictEqual(nearOf(part('Zeus', 'Zeus Super Alfa'), part('Zeus', 'Zeus Super Alfa 71')), ['name'])
+})
+
+test('name pairs need every word to agree and the same numbers', () => {
+  assert.deepStrictEqual(nearOf(part('Gipiemme', 'Gipiemme Crono Sprint'), part('Gipiemme', 'Gipiemme Crono Sprint Triple')), [])
+  assert.deepStrictEqual(nearOf(part('Shimano', 'Shimano BL-6207, 600EX'), part('Shimano', 'Shimano BL-6208, 600EX')), [])
+  assert.deepStrictEqual(nearOf(part('SunTour', 'SunTour LD-1900, VX'), part('SunTour', 'SunTour LD-1950, VX')), [])
+})
+
+test("one row's model is the other's brand", () => {
+  assert.deepStrictEqual(nearOf(part('Atom', 'Atom (5 speed, silver cogs)'), part('Maillard', 'Maillard Atom (5-speed)')), ['brand'])
+  assert.deepStrictEqual(nearOf(part('Atom', 'Atom (4 speed)'), part('Maillard', 'Maillard Atom (5-speed)')), [])
+})
+
+test('brands outside one family never pair', () => {
+  assert.ok(brandsCompatible('Maillard', 'Atom'))
+  assert.ok(brandsCompatible('Spidel', 'Simplex'))
+  assert.ok(!brandsCompatible('Atom', 'Simplex'))
+  assert.deepStrictEqual(nearOf(part('Ofmega', 'Ofmega 4164'), part('Simplex', 'Simplex SLJ4164')), [])
+})
+
+test('rows buildGroups already groups are not near pairs', () => {
+  assert.deepStrictEqual(nearOf(part('Mavic', 'Mavic 580 (black)'), part('Mavic', 'Mavic 580')), [])
+})
+
+test('pairs reviewed and kept apart are left out unless asked for', () => {
+  const a = { component_id: 1869, brand_id: 900, brand: 'Spidel', category_id: 1, title: 'Spidel 106', source_ref: 1, used: 0 }
+  const b = { component_id: 1882, brand_id: 901, brand: 'Stronglight', category_id: 1, title: 'Stronglight 106', source_ref: 1, used: 0 }
+  assert.deepStrictEqual(findNearPairs([a, b]), [])
+  assert.deepStrictEqual(findNearPairs([a, b], { includeReviewed: true }).map((p) => [p.reason, p.reviewed]), [['code', true]])
 })

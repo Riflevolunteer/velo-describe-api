@@ -11,13 +11,16 @@
 //   node scripts/duplicate-report.js --category=Brakes    category title contains text
 //   node scripts/duplicate-report.js --used               only groups where a non-survivor is linked from a bike_spec
 //   node scripts/duplicate-report.js --json               machine-readable
+//   node scripts/duplicate-report.js --near               cross-brand / renamed pairs (findNearPairs) instead of groups;
+//                                                         takes --brand, --category, --used, --reason=code|name|brand, --json;
+//                                                         --reviewed also lists pairs already kept apart (REVIEWED_NOT_DUPLICATES)
 //
 // Same DB config as scripts/db-query.js.
 
 const mysql = require('mysql');
 const crypto = require('crypto');
 const config = require('../config');
-const { buildGroups, MERGE_CANDIDATE } = require('../duplicate-classify');
+const { buildGroups, MERGE_CANDIDATE, findNearPairs } = require('../duplicate-classify');
 
 function decrypt(text) {
   const decipher = crypto.createDecipher('aes-256-ctr', 'd6F3Efeq');
@@ -30,7 +33,7 @@ const flags = Object.fromEntries(process.argv.slice(2).map((a) => {
   const [k, v] = a.replace(/^--/, '').split('=');
   return [k, v === undefined ? true : v];
 }));
-const known = ['merge', 'relation', 'brand', 'category', 'used', 'json'];
+const known = ['merge', 'relation', 'brand', 'category', 'used', 'json', 'near', 'reason', 'reviewed'];
 const unknown = Object.keys(flags).filter((k) => !known.includes(k));
 if (unknown.length) {
   console.error(`Unknown option(s): ${unknown.join(', ')}. See the header of scripts/duplicate-report.js.`);
@@ -63,6 +66,35 @@ conn.query(sql, (err, rows) => {
   rows = rows.map((r) => ({ ...r, used: Number(r.used), has_image: Boolean(r.has_image) }));
 
   const has = (text, needle) => String(text).toLowerCase().includes(String(needle).toLowerCase());
+  const years = (r) => (r.year_from || r.year_to ? `${r.year_from || '?'}-${r.year_to || '?'}` : 'no years');
+  const describe = (r) => `${r.component_id} "${r.title}" ${years(r)} src ${r.source_ref ?? '-'}${r.has_image ? ' img' : ''} used ${r.used}`;
+
+  if (flags.near) {
+    let pairs = findNearPairs(rows, { includeReviewed: Boolean(flags.reviewed) });
+    if (flags.brand) pairs = pairs.filter((p) => has(p.a.brand, flags.brand) || has(p.b.brand, flags.brand));
+    if (flags.category) pairs = pairs.filter((p) => has(p.a.category, flags.category));
+    if (flags.reason) pairs = pairs.filter((p) => p.reason === flags.reason);
+    if (flags.used) pairs = pairs.filter((p) => p.a.used > 0 || p.b.used > 0);
+    const strip = ({ codes, codeRare, nameRare, ...r }) => r;
+    if (flags.json) {
+      console.log(JSON.stringify(pairs.map((p) => ({ reason: p.reason, reviewed: p.reviewed, a: strip(p.a), b: strip(p.b) })), null, 2));
+      return;
+    }
+    const byReason = {};
+    for (const p of pairs) byReason[p.reason] = (byReason[p.reason] || 0) + 1;
+    console.log(`${pairs.length} near pairs, ${rows.length} component_detail rows scanned`);
+    for (const reason of ['code', 'name', 'brand']) if (byReason[reason]) console.log(`  ${reason.padEnd(6)} ${byReason[reason]}`);
+    console.log('');
+    pairs.sort((x, y) => x.a.category.localeCompare(y.a.category) || x.a.brand.localeCompare(y.a.brand) || x.a.component_id - y.a.component_id);
+    for (const p of pairs) {
+      const brands = p.a.brand === p.b.brand ? p.a.brand : `${p.a.brand} + ${p.b.brand}`;
+      console.log(`${p.reason.padEnd(6)} ${brands} / ${p.a.category}${p.reviewed ? ' (reviewed, kept apart)' : ''}`);
+      console.log(`         ${describe(p.a)}`);
+      console.log(`         ${describe(p.b)}`);
+    }
+    return;
+  }
+
   let groups = buildGroups(rows);
   if (flags.brand) groups = groups.filter((g) => has(g.survivor.brand, flags.brand));
   if (flags.category) groups = groups.filter((g) => has(g.survivor.category, flags.category));
@@ -84,9 +116,6 @@ conn.query(sql, (err, rows) => {
     console.log(JSON.stringify({ summary: tally, groups }, null, 2));
     return;
   }
-
-  const years = (r) => (r.year_from || r.year_to ? `${r.year_from || '?'}-${r.year_to || '?'}` : 'no years');
-  const describe = (r) => `${r.component_id} "${r.title}" ${years(r)} src ${r.source_ref ?? '-'}${r.has_image ? ' img' : ''} used ${r.used}`;
 
   console.log(`${groups.length} groups, ${rows.length} component_detail rows scanned`);
   for (const rel of ['duplicate', 'cosmetic', 'configuration', 'generation', 'review']) {
