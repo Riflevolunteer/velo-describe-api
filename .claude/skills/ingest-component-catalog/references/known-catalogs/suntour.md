@@ -989,6 +989,16 @@
     `6AF4F545-3676-44F6-AB91-D857437DEB52`, no bike_spec links or overrides) into
     2652 FD-2000 (endless band), which now ends "78g (velobase)". 2647 FD-2000
     "(clamp)" left: no catalogue shows a clamp version, but no duplicate signal.
+  - Follow-up merge, 2026-10-26 (user-approved, no catalogue): deleted the three
+    bare velobase "SunTour Sealed bottom bracket" rows (Bottom Brackets, all
+    1982-1985, no part number, no bike_spec links or overrides) into 7818 SA-100 /
+    SS-100 series, whose years they matched exactly: 164 (313g avg,
+    `A908F7F5-6084-4BB2-B5FA-812888604425`), 165 (254g avg,
+    `23181AC5-5FB4-414E-9D50-5FD647806C61`), 166 (326g,
+    `886F5328-9A26-43D8-B07D-160F74658F76`). The weights don't match a printed SA
+    / SS figure, so 7818 now ends "254 / 313 / 326g measured (velobase)"; its
+    "SunTour SA-100 / SS-100 series, sealed bottom bracket, Japan." prefix was
+    dropped for length.
   - Left: IC CG-100 chain watcher, DG-100 guard, FP-100 plate, TA-220 tool (no
     category); RD-3400 year_from 1980 not moved (No. 59 lists AG as new vs 1978,
     but whether the 1979 Japanese edition or Bikecology 1980 shows it was not
