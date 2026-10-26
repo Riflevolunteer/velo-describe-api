@@ -2546,6 +2546,11 @@ const COMPONENT_OVERRIDES = {
     // spells HardDrive "Hardrive", so the substring match can't see it.
     'ritchey z max': 8382, // Nth FS: Ritchey MegaBite Z-Max
     'ritchey megabite hardrive': 8383, // Ibex / Osprey: Ritchey MegaBite HardDrive
+    // Tyre link pass 2026-10-26 (from /linkCoverage).
+    'peugeot route tubulars': 6812, // 1977-78 Peugeot: Peugeot Route by Hutchinson (only Route row)
+    'michelin bib 20 ts 28 x 1 1 16': 6830, // 1982 Peugeot PH 12: Michelin BIB TS-20, as the 1983-84 PH 12
+    'vittoria formula 1 tubulars': 6875, // 1990 Bianchi Pista: Vittoria Competition Formula Uno
+    'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
     // 1982 Battaglin: Nisi rims printed without their five-digit codes (rows 00250 and 00218).
