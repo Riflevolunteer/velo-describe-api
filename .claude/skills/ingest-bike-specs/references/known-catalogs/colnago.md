@@ -126,6 +126,11 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
   2026-10-27): the same five images (Colnago brochure 1-3, Colnago Mexico
   accessories, Colnago Mexico First Generation), up to 2316px but the same
   captions only. Not transcribed.
+- http://bulgier.net/pics/bike/Catalogs/Colnago-89/ (col1-col7, checked
+  2026-10-27): the 1989 35th-anniversary pack already listed as not
+  transcribed above: "35 1954-1989" cover, C35 carbon frame and complete
+  C35 photos (no captions or specs), and the La Bicicletta "Carbitubo" press
+  reprint (frame construction text only). Not transcribed.
 
 ## 1988 Colnago — `1988_colnago_spec.csv` (28 bikes, 306 specs, 126 linked)
 
