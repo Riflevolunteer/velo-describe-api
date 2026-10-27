@@ -146,6 +146,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1940|bianchi', 'IT'], // inferred
   ['1974|motobecane', 'US'], ['1975|motobecane', 'US'], // VeloBase titles "Motobécane - MBK 197x US Catalog"
   ['1986|colnago', 'IT'], // "Catalogo generale"
+  ['1987|colnago', 'IT'], // "Catalogo generale 1987", four-language
   ['1988|colnago', 'IT'], // Colnago Concept catalogue, Italian first of four languages (as 1986)
   ['1979|colnago', 'IT'], // four-language export sheet; user chose IT (2026-10-19)
   ['1984|derosa', 'IT'], // Italian/English dealer brochure; user chose IT (2026-10-19). 1989 stays US (GITA dealer catalogue)
@@ -632,7 +633,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
     'campagnolo nuovo gran sport': 2276, // Campagnolo 3600/NT, Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
-    'shimano 105': [{ bike: 'Sirocco 12', from: 1987, to: 1987, id: 2462 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 2462 }, { to: 1989, id: 2466 }, { from: 1990, to: 1992, id: 2467 }], // Corsa: FD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: FD-1055 105SC
+    'shimano 105': [{ bike: 'Junior 105', from: 1987, to: 1987, id: 2462 }, { bike: 'Sirocco 12', from: 1987, to: 1987, id: 2462 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 2462 }, { to: 1989, id: 2466 }, { from: 1990, to: 1992, id: 2467 }], // Corsa: FD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: FD-1055 105SC
     'suntour ar': 2620, // Sirocco: SunTour FD-2500, AR (1982-85)
     'sun tour ar': 2620, // Quasar / Zenith
     'sun tour arx': 2621, // Clubman: SunTour FD-2600, ARX (same row as the 'suntour arx' key)
@@ -821,7 +822,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
     'campagnolo nuovo gran sport': 4085, // Campagnolo 3500, Nuovo Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
-    'shimano 105': [{ bike: 'Sirocco 12', from: 1987, to: 1987, id: 4449 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 4449 }, { to: 1989, id: 4452 }, { from: 1990, to: 1992, id: 4455 }], // Corsa / Record Sprint: RD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: RD-1055 105SC
+    'shimano 105': [{ bike: 'Junior 105', from: 1987, to: 1987, id: 4449 }, { bike: 'Sirocco 12', from: 1987, to: 1987, id: 4449 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 4449 }, { to: 1989, id: 4452 }, { from: 1990, to: 1992, id: 4455 }], // Corsa / Record Sprint: RD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: RD-1055 105SC
     'suntour cyclone ii': 4742, // Competition: SunTour RD-3500, Cyclone Mark-II (1981-85)
     'sun tour cyclone ii gt wide ratio': 4743, // Royal: SunTour RD-3700, Cyclone Mark-II (GT)
     'suntour ar': 4725, // Sirocco: SunTour RD-4200, AR (aR II) (1982-85)
@@ -1162,6 +1163,8 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1987 Colnago Junior SIS 600 (Catalogo generale 1987).
+    'shimano 600 sis': [{ bike: 'Junior SIS 600', from: 1987, to: 1987, id: 972 }], // BR-6208, 600EX (1986-87)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'shimano santé': [{ from: 1988, to: 1989, id: 1008 }], // BR-5000
     "campagnolo croce d'aune": [{ from: 1988, to: 1991, id: 567 }], // Delta, Croce d'Aune
@@ -1477,6 +1480,8 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1987 Colnago Junior 105 / Junior SIS 600 (Catalogo generale 1987): 1050-series 105.
+    'shimano 105': [{ bike: 'Junior 105', from: 1987, to: 1987, id: 1778 }], // FC-1050, 105 (1987-89)
     // 1982 Battaglin (Italian sheets): Gipiemme prints "Cronospecial" / "Cronosprint" as one word. The 1982 rows are the 100 AA and 100 CC.
     'gipiemme cronospecial': [{ from: 1982, to: 1982, id: 1587 }], // Crono Special 100 AA
     'gipiemme cronosprint': [{ from: 1982, to: 1982, id: 1589 }], // Crono Sprint 100 CC
@@ -2029,6 +2034,9 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1987 Colnago Junior 105 / Junior SIS 600 (Catalogo generale 1987).
+    'shimano 105': [{ bike: 'Junior 105', from: 1987, to: 1987, id: 406 }], // BL-1050, SLR 105 (1987-89)
+    'shimano 600 sis': [{ bike: 'Junior SIS 600', from: 1987, to: 1987, id: 421 }], // BL-6208, 600EX (1986-88)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 223 }],
     'shimano deore xt sis': [{ from: 1987, to: 1990, id: 429 }], // BL-M730
@@ -2563,6 +2571,8 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // 1987 Colnago Master America: either / or, don't pick one.
+    'campagnolo victory or ambrosio metamorphosis servizio corse black anodized': null,
     // 1982 Battaglin: Nisi rims printed without their five-digit codes (rows 00250 and 00218).
     'nisi corsa stretto': [{ from: 1982, to: 1988, id: 9228 }],
     'nisi ekip': [{ from: 1982, to: 1985, id: 9227 }],

@@ -143,6 +143,38 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
   (3ttt Record stem, Campagnolo Super Record seat post and chainring). Not
   loaded: framesets with no build spec, from a retailer.
 
+## 1987 Colnago — `1987_colnago_spec.csv` (15 bikes, 240 specs, 118 linked)
+
+- Source: https://labibleduvelocataloguescolnago1.blogspot.com/p/colnago-1987.html
+  (23 scans `1.png`..`23.png`, ~930px, the R.S.C. register copy): "Colnago.
+  Catalogo generale 1987", the 1986 catalogue's successor, same four-language
+  prose layout; transcribed from the Italian and English blocks. Country IT
+  (`CATALOGUE_COUNTRY` '1987|colnago'). Loaded 2026-10-27.
+- Bikes: Classic International (Ofmega Premier + Universal AER, Colnago
+  signed), Junior Special (Columbus GT, Ofmega Super Competizione crank,
+  Modolo Flash brakes, Campagnolo 980 derailleurs, Ofmega Master headset /
+  hubs / pedals, Everest chain + freewheel), Junior 105, Junior SIS 600 and
+  Junior Victory (separate rows; Junior frames are 50-62cm adult sizes, so in
+  scope), Esamexico S.R. / C-Record 180 (Columbus SL Exacolnago), Master S.R.,
+  Master America C-Record 180 (Regal saddle), Master Krono S.R. / C-Record 180
+  (disc wheels noted in Extras), Super S.R., Superissimo SLX S.R., Super
+  Mountain Bike (Shimano AL 11), Master Mountain Bike (Deore SIS).
+- Not loaded (user decision): the six frameset pages (Classic International,
+  Super, Superissimo SLX, Esamexico, Master, Master Krono); they were dropped
+  from the CSV before generating.
+- Values reuse the 1986 strings so its overrides apply (115 links with no new
+  override). New overrides, all bike-specific so no other catalogue changed
+  (regression over all 63 CSVs: only 1987 Colnago 115 -> 118): Junior 105 ->
+  1050 series FD 2462, RD 4449, FC 1778, BL 406 (the generic 'shimano 105'
+  range would pick Golden Arrow); Junior SIS 600 -> BR-6208 972, BL-6208 421;
+  Master America rims "Campagnolo Victory or Ambrosio Metamorphosis ..." -> null.
+- Judgement: Junior Victory RD -> 4169 Victory S3 via the existing 1987+ range
+  (catalogue says "Victory 86"); Junior SIS 600 FD stays on FD-6207 2481 (no
+  FD-6208 row). Left unlinked as in 1986: C-Record 180 brakes (null), Concor
+  saddles, bare 3ttt / ITM bars and stems, Gommitalia tyres, Formula Inox
+  spokes, AL 11 and Deore SIS groups, Ofmega Premier crank / seatpost / pedals.
+- Colour pages (standard, MODA grid, bicolour codes 01-25) not transcribed.
+
 ## 1988 Colnago — `1988_colnago_spec.csv` (28 bikes, 306 specs, 126 linked)
 
 - Source: 2velo 1988 group (01-2 .. 22.jpg, 30 pages, `?w=1400`), cover "1988 Colnago Concept" (Ferrari Engineering); intro says Colnago went to Ferrari "in late 1986" and "a year of design and testing" followed. Four-language prose per model; transcribed by hand from the Italian / English blocks. data_source 264, country IT (as 1986).
