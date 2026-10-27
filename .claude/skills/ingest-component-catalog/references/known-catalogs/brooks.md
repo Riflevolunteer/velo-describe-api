@@ -96,3 +96,34 @@
 - New (4 rows, Saddles, no group): 9789 B66L and 9790 B73L (1950-1957; named in the June 1950 leaflet, specs
   from 1957), 9791 J4 Juvenile and 9792 J6 Juvenile (1957-1957).
 - No change: the rest, whose years already span 1957 and whose specs match the 1959 text.
+
+## Brooks "Saddle-Comfort" catalogue — c. 1938 (bulgier.net `1937_cy.pdf`, data_source 284)
+
+- `data_source` label "Brooks Saddle-Comfort catalogue (1938)", country GB. Source:
+  http://bulgier.net/pics/bike/Catalogs/Brooks/1937_cy.pdf (21-page PDF of a 36-page booklet, two printed pages
+  per scan). J. B. Brooks & Co. Ltd, Criterion Works, Birmingham 3. The file name says 1937, but a customer letter
+  on p. 7 is dated 25 February 1938 and pp. 32-33 tell the year-distance record that ended 31 December 1937, so
+  it was printed in 1938 or later. Summary tables of all leather (p. 4), spring-seat (p. 27) and weatherproof
+  (p. 33) saddles with weights, sizes, finishes and prices; the rest is essays and testimonials.
+- Earliest Brooks catalogue in the log. Range: sports B17 Champion Standard / Narrow / Flyer / Sprinter, B17
+  Champion Flyweight Flyer / Flyweight Narrow ("recently introduced"), Champion Swallow (patent), B19 Champion
+  Narrow, B15 Champion, B11 Champion, B32, B5, B22 (sports), B18 Champion (+ Ladies), B66 Champion (+ Ladies);
+  three-coil B75, B73, B31, B2, B21 (+ L each); four-wire B18, B72, B30, B3, B20 (+ L each); loop front B90/1 /
+  2 / 3, B35, B33, B6, B23; hammock B80, B12; tension coil B130; juvenile J3, J4, J5; spring seat S25/NH, S30/N,
+  S20/2, S20/1H, S20/1, S30/1; weatherproof Plyflex P205 (+ L), P208, P209, P207, P211; Patent Seat Pillar
+  ("introduced"), Nos. 1-5.
+- year_from moved earlier to 1938 (16 rows): 5285 B72, 5287 B73, 8967 B90/2, 5288 B90/3, 5313 B17 Sprinter,
+  5305 B15 Champion, 8968 J3, 8969 J5, 5286 B72L, 9790 B73L (all 1950); 9791 J4, 9038 B12, 9036 B66 Champion,
+  5308 B17 Champion Flyer, 9033 B17 Swallow (all 1957); 5275 B33 (1940). 9033 is a judgement: the 1938 "Champion
+  Swallow" (11½ x 6 x 3in, 1 lb 9 oz) is taken as the same saddle as the 1957 B17 Swallow; its description names both.
+- NULL -> 1938-1938 with descriptions: 5269 B130, 5274 B31. Descriptions only: 5272 B19 Champion Narrow (years
+  1923-1939 kept), 9036 B66 Champion (ladies' version noted).
+- New (31 rows, ids 9793-9823, all 1938-1938, no group; ladies' variants share the gents' row): B17 Champion
+  Flyweight Flyer, B17 Champion Flyweight Narrow, B11 Champion, B32, B5, "B22 (sports)", B18 Champion / B18
+  Champion Ladies, B75 / B75L, B2 / B2L, B21 / B21L, "B18 / B18L (four-wire)", B30 / B30L, B3 / B3L, B20 /
+  B20L, B90/1, B35, B6, B23, B80, S25/NH, S30/N, S20/2, S20/1H, S20/1, S30/1, P205 / P205L Plyflex, P208, P209,
+  P207, P211 Plyflex (Saddles), Brooks Patent Seat Pillar (Seat Posts).
+- Kept apart on purpose: the 1938 sports B22 is a different saddle from the 1957 mattress B22 (9039, not
+  extended); the sports "B18 Champion" and the four-wire "B18" are two lines in the price table, so two rows;
+  5271 B18 Messenger (later model), 5282 B66 / 9789 B66L (1938 lists only the B66 Champion Ladies), 5309 B17
+  Champion Lightweight (1936, not the Flyweight), 5298 Release and 5299 S22/1 left alone.
