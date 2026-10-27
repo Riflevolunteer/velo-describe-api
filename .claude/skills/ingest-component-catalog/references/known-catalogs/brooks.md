@@ -75,3 +75,24 @@
   Standard (years already span 1959, size differences within reading error); 5286
   B72L (not listed in 1959, weak evidence); 8968 J3 (absent, already capped at 1950).
 - Deleted (merge, user-approved 2026-10-21): 5277 "Brooks B33 (double sprung) - version 2" (1940-1950, source_ref 1, source_id 215A71A0-F1A3-4071-AF9D-EA75DF21F3BD, bare "England" description) into 5275 "Brooks B33 (double sprung)". It had no "version 1", the same dates and no bike_spec or COMPONENT_OVERRIDES references. 5276 (1970s version) kept.
+
+## Brooks "Cycle Saddles" leaflet — 1957 (bulgier.net, data_source 283)
+
+- `data_source` label "Brooks Cycle Saddles leaflet (1957)", country GB. Source:
+  http://bulgier.net/pics/bike/Catalogs/Brooks/1957_cs.pdf (9-page PDF of one booklet). J. B. Brooks & Co.
+  Ltd, Great Charles Street, Birmingham 3; printer code JBB/S/1957; same format as the 1959 leaflet (243).
+  Prices pre-decimal. Also lists cycle bags (Millbrook ... Highbrook): no category, not ingested.
+- Range: B17 Standard / Narrow / Flyer / Sprinter / Competition Standard / Swallow; B15 Standard / Narrow /
+  Flyer / Swallow; B66 Champion; four-wire B10/2, B72 (+ B72L); three-coil B73 (+ B73L); two-coil B66
+  (+ B66L); loop front B90/2, B90/3, B33, B33/1; hammock B12; juveniles J3, J4, J5, J6; mattress B22, B22L;
+  juvenile mattress J9.
+- vs 1959: no B17 Competition (Campagnolo model) yet; ladies B72L / B73L / B66L and juveniles J3 / J4 / J6
+  still listed (gone by 1959).
+- year_from 1959 -> 1957 (earlier move, 12 rows): 9033 B17 Swallow, 9035 B15 Flyer, 5308 B17 Champion Flyer,
+  5306 B15 Champion (Narrow), 5307 B15 Swallow, 5318 B17 Competition Standard, 9036 B66 Champion, 9037 B33/1,
+  9038 B12, 9039 B22, 9040 B22L, 9041 J9. No bike links.
+- year_to -> 1957: 5286 B72L (was 1950, description now carries the 1957 size and weight), 8968 J3 Juvenile
+  (was 1950; spec unchanged).
+- New (4 rows, Saddles, no group): 9789 B66L and 9790 B73L (1950-1957; named in the June 1950 leaflet, specs
+  from 1957), 9791 J4 Juvenile and 9792 J6 Juvenile (1957-1957).
+- No change: the rest, whose years already span 1957 and whose specs match the 1959 text.
