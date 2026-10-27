@@ -2039,3 +2039,14 @@
   CS-M738-I is CS-M737-I in the p32-33 tables. Confirmed: CN-IG90 / IG70 /
   IG51 / IG31 are 7.1mm (p33), and the Nexus p76 weights sit under the right
   columns.
+
+## Cleanup 2026-10-27 (no catalogue): BR-1050 "dark anodized" duplicates
+
+- Deleted (user-approved) two velobase rows duplicating the catalogue-sourced
+  BR-1050 pair (953 / 954, 1987-1989, source_ref 81). "Dark anodized" is the
+  standard first-generation 105 (1050) finish, not a separate version:
+  956 "Shimano BR-1050, 105 dark anodized (39-49mm)" (Brakes, 1989-1989,
+  328g actual pair, `54F8E2DF-2FE1-4C88-A2B3-2F96F0F9DE20`) -> 953 BR-1050-49;
+  955 "Shimano BR-1050, 105 Dark Anodized (47-57mm)" (Brakes, 1989-1989, bare,
+  `7414ED0B-F833-4EA9-BAFF-B358C6CB475D`) -> 954 BR-1050-57. Neither had bike_spec
+  links or COMPONENT_OVERRIDES entries. 953 now ends "326 / 328g measured."
