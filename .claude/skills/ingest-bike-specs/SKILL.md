@@ -69,7 +69,10 @@ cyclocross, mountain and tandem. Children's, city / roadster / utility /
 shopper / folding and hybrid (flat-bar, cross-terrain) models are out of scope:
 their specs are generic ("Chrome Plated Steel", "Rubber block", "Amberwall to
 suit wheel size") and drag the link rate down. 51 such bikes were deleted on
-2026-10-17 (Bianchi 27, Peugeot 12, Falcon 6, Motobecane 4, Raleigh 2). Before
+2026-10-17 (Bianchi 27, Peugeot 12, Falcon 6, Motobecane 4, Raleigh 2).
+Framesets (frame and fork only, no group, even "sold as a frameset or a
+complete bicycle") are out of scope too: 23 were deleted on 2026-10-27 with one
+component link between them; skip them via `NON_ROAD_SKIP`. Before
 generating, classify every model in the CSV and drop the out-of-scope rows:
 
 - Evidence, in order: the catalogue's own section heading or a Type / category

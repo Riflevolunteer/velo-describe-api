@@ -487,3 +487,21 @@ is the "known drift" noted above (1978 / 1979 Peugeot, 1990 Bianchi). Two causes
 - Hubs: Campagnolo Gran Sport went to 3256 "1006 Gran Sport" (1950-55), chosen when it was the only Gran Sport hub. Now 9212 "Gran Sport (1980s)" (La Bicicletta Guida '85/86). 6 specs relinked (1978-81 Raleigh Competition GS, 1983 Bianchi Campione del Mondo, 1985 Bianchi Squadra).
 - Brand-only links removed, as for the Kalkhoff Union / Selle Royal: 1987 Bianchi Sport SX "DID" chain (bare D.I.D row 1355) and 1973 Falcon Super Tourist 82 / 83 "Sturmey-Archer 3-speed" hubs (bare 1950 Sturmey Archer row 3593); both keys set to null.
 - Found by listing links whose bike year is more than 4 years outside the part's dates. Most other hits are velobase's single-year decade dating ("1980" for the 1980s). Part dates corrected from that catalogue evidence (same day): Stronglight 49D 1895 to 1936-1979 (1973-79 Peugeot / Motobecane), Brooks Team Special 5304 from 1971 (1971-76 Raleigh), Mavic Montlhery Route 5093 from 1973 (1973-74 Peugeot), Ofmega 3150 Ambassador 9159 1978-85 (1978 Bianchi), Campagnolo 1052/SR 2313 from 1975 (1975-76 Raleigh, 1978 Bianchi). With 2313 redated, the 1975-76 Raleigh Team Professional "Campagnolo Super Record 12 Speed" front derailleur now links to it (new ranged Front Derailleurs override; +2 links).
+
+## Framesets removed — 2026-10-27 (user decision)
+
+- Deleted 23 frameset bikes (76 bike_spec rows, 1 component link: Cinelli 165's
+  headset -> 2968): Colnago 1979 290 Nuovo Mexico; Colnago 1986 309 Super, 310
+  Superissimo SLX, 311 Mexico, 312 Regal, 313 Master, 314 Krono CX; Colnago 1988
+  744 Carbon Volo, 745 Master, 746 Masterpiù, 747 Master Krono 26"-28", 748
+  Special Krono 26"-28", 749 Conic SLX Total Spiral, 750 Esamexico, 751
+  Superissimo SLX, 752 Super, 753 Super Sprint Frameset, 754 Duall, 755 Master
+  Mountainbike; Cinelli 1986 165 SLX Super Corsa Frameset; Bianchi 1990 401
+  Mondiale Frameset; De Rosa 1989 336 Professional SLX ("frameset or complete
+  bicycle", bars / stem / rims / tyres only, user chose to remove) and 337 Pista.
+  Found by category (Frameset / Road (Frameset) / Time Trial Frameset / Track
+  frameset / Road Racing frameset) and title; nothing else referenced them.
+- The rows stay in the six CSVs, so all 23 titles are in `NON_ROAD_SKIP`
+  (keyed by display brand: '1989|de rosa'); re-generating each catalogue shows
+  them in the "Skipped" line. The 1987 Colnago framesets were never loaded.
+- Framesets are now out of scope in the skill's step 0.

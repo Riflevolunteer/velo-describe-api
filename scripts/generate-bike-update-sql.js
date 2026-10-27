@@ -191,7 +191,10 @@ function parseFilename(filename) {
 // these 51 city, hybrid and children's models were removed from the DB, but their
 // rows are still in bike_specs/*.csv, so without this skip any re-run of a
 // catalogue puts them back (it did once, with the 1985 Bianchi "Bambina").
-// Keyed `<year>|<brand lower-case>`; titles are the exact first-column values.
+// Framesets (frame-only models) are skipped the same way: they carry a frame
+// description and no group, so they add bikes with nothing to link.
+// Keyed `<year>|<brand lower-case>` (the display brand, e.g. "de rosa");
+// titles are the exact first-column values.
 // Classified from each bike's specs (bars, tyre and wheel size, fenders, racks,
 // gearing) plus the catalogue category, not from model names. Add a model here
 // when a new catalogue brings in a non-road one.
@@ -209,7 +212,7 @@ const NON_ROAD_SKIP = new Map(
     ],
     '1985|bianchi': ['Bambina'],
     '1987|bianchi': ['VOLPE'],
-    '1990|bianchi': ['Intercept', 'Equinox', 'Tangent', 'Axis', 'Volpe', 'Backstreet', 'Boardwalk', 'Advantage'],
+    '1990|bianchi': ['Intercept', 'Equinox', 'Tangent', 'Axis', 'Volpe', 'Backstreet', 'Boardwalk', 'Advantage', 'Mondiale Frameset'],
     '1993|bianchi': ['Volpe', 'Boardwalk', 'Advantage'],
     '1973|falcon': ['Model 58', 'Super-Tourist De Luxe Model 88', 'Super-Tourist De Luxe Model 89', 'Super Tourist Model 82', 'Super Tourist Model 83'],
     '1974|falcon': ['Model 58', 'Super-Tourist De Luxe Model 88', 'Super-Tourist De Luxe Model 89', 'Tourist Model 82', 'Tourist Model 83'],
@@ -220,6 +223,13 @@ const NON_ROAD_SKIP = new Map(
     '1979|peugeot': ['PA 55 Sport Dames', 'PH 50'],
     '1977|raleigh': ['Record 24'],
     '1983|raleigh': ['Micron 5'],
+    // Framesets (frame only, no group): deleted 2026-10-27, 23 bikes, 1 link between them.
+    '1979|colnago': ['Nuovo Mexico'],
+    '1986|colnago': ['Super', 'Superissimo SLX', 'Mexico', 'Regal', 'Master', 'Krono CX'],
+    '1988|colnago': ['Carbon Volo', 'Master', 'Masterpiù', 'Master Krono 26"-28"', 'Special Krono 26"-28"', 'Conic SLX Total Spiral',
+      'Esamexico', 'Superissimo SLX', 'Super', 'Super Sprint Frameset', 'Duall', 'Master Mountainbike'],
+    '1986|cinelli': ['SLX Super Corsa Frameset'],
+    '1989|de rosa': ['Professional SLX', 'Pista'],
   }).map(([key, titles]) => [key, new Set(titles)])
 );
 
