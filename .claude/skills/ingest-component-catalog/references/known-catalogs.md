@@ -9,7 +9,7 @@ Split by brand to keep each run's context small — **read only the brand
 file(s) relevant to the catalog you're ingesting**, not all of them:
 
 - [known-catalogs/brooks.md](known-catalogs/brooks.md) — Brooks (1 entry)
-- [known-catalogs/ideale.md](known-catalogs/ideale.md) — Ideale saddles (1 entry)
+- [known-catalogs/ideale.md](known-catalogs/ideale.md) — Ideale saddles, brand 580 Tron & Berthet (1 entry)
 - [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (36 entries)
 - [known-catalogs/shimano.md](known-catalogs/shimano.md) — Shimano (30 entries)
 - [known-catalogs/suntour.md](known-catalogs/suntour.md) — SunTour (17 entries)
