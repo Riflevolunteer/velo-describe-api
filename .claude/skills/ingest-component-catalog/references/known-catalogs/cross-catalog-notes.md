@@ -657,3 +657,47 @@ Weinmann 1129 / 1130 570.
   Randnner, Randnner-L) read as typos for Randonneur and matched to WR / RN-L. JUN-50 (6660)
   confirmed, no change. JBM weights for KKT pedals are probably per pair but are not stated.
   No deletes or merges.
+
+## Ten Speed Drive Imports (US importer) catalogue, 1983 — printed late 1982 (bulgier.net, 17 JPGs), data_source 279
+
+- Source: http://bulgier.net/pics/bike/Catalogs/tsd82-83/ (https fails on the EG
+  proxy with a certificate error; plain http works). Files 1.jpg-9woodrup.jpg =
+  printed pp 1-17 (9acinelli...9hconcorsaddles are pp 10-17, 9woodrup is p 9).
+  The TOC runs to p 28: Sergal, Brancale, Detto Pietro, Pavarin, Campagnolo (p 24),
+  Columbus, Regina (p 26), Cobra, Mariplast and terms are not scanned. Dated by
+  "Guerciotti 1983 Framesets", the Ambrosio Hypothesis "new ... mid 1983" and a
+  July 1982 Bicycling quote. Importer's selection, not full maker ranges, so no
+  year_to was capped from absence. country = US.
+- Component pages: Cinelli bars / stems / saddles (p 11), Vittoria tubulars (12),
+  Clement tubulars (13), Silca pumps (14, out of scope), Ambrosio rims (15), Mavic
+  rims and Alpina spokes (16), San Marco Concor saddles (17), Campagnolo
+  pantographed parts (8). Bike pages (Guerciotti, Ciocc, Cinelli, Woodrup) were not
+  loaded; they are bike-catalogue material.
+- year_from -> 1983 (old values for reverting): 6900 Vittoria Special Pro 1984,
+  9428 Corsa CG 1984, 9244 Pavè 1985, 9433 Pista CS 1984, 6777 Clement Super Condor
+  1985, 4899 Ambrosio Metamorphosis 1984, 9481 Aerodynamic 1988, 4898 Hypothesis
+  1985, 9368 Cinelli Mod. L. Strada (= "Mod L Ultralight") 1984, 9298 San Marco
+  Concor Max (= "Concor Maxi") 1985. All earlier moves, not later ones.
+- NULL -> 1983-1983 (bare velobase rows, descriptions added): 6767 Clement Ritmo
+  LTX 55, 6759 Clement Mirage Servizio Course, 4890 Ambrosio 19 Extra Elite Aero
+  dynamic.
+- year_to -> 1983: 6880 Vittoria Corsa CX Servizio Corse (1980), 6737 Clement
+  Campionato del Mondo Seta (1981), 8972 Criterium Cotone (#12 Bis Criterium
+  Cotton, 1981), 8970 Seta Tipo 3 (#3 Pista Seta, 1977), 6732 Sei Giorni (#8 Six
+  Day, 1977), 8973 Gentleman (1977), 4889 Ambrosio 19 Extra Elite Durex (1980), 4888
+  19 Extra Elite (1980), 4902 Montreal Durex Crono (1980), 5335 Cinelli Unicanitor
+  #3 Buffalo (#3 Nitor Tour de France, 1982). Year-ranged overrides on 8970 / 8972
+  / 8973 still fit. Description only: 4913 Ambrosio Montreal Durex.
+- New (3 rows, 1983-1983): 9770 Clement Grinta (rain tubular), 9771 Ambrosio Off
+  Road Durex (26 x 1.75), 9772 Selle San Marco Concor Junior.
+- Name map used (catalogue -> row): Clement #1 Bis Criterium Seta Extra -> 8971,
+  #6 Criterium Seta -> 6748, #12 Bis Strada 66 -> 6775, #1 Pista Seta Extra ->
+  6771; Concor SC -> 5547 Supercorsa; Mavic Grise SSC -> 5112 Paris-Roubaix SSC, E2
+  -> 5090 Module E2 Argent.
+- Flagged, not changed: 6740 Clement CF 2001 (1970-1988) is "Clement's newest
+  model" here, contradicting the velobase 1970, but 6741 CF 2001/T is dated 1980,
+  so not moved later; Cinelli Mod. 65 "new" is a US-launch remark (in the 1982
+  Cinelli brochure); Concor SL 305g ambiguous between 5552 Superleggera (260g) and
+  9295 Supercorsa SL; Ambrosio Synthesis Durex Pro (400g, 22mm) matches neither
+  4910 (310g) nor 4911; Ambrosio anodised Montreal vs the garbled 4914; Campagnolo
+  pantographed / engraved parts not added as rows.
