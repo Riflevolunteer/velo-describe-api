@@ -131,6 +131,17 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
   transcribed above: "35 1954-1989" cover, C35 carbon frame and complete
   C35 photos (no captions or specs), and the La Bicicletta "Carbitubo" press
   reprint (frame construction text only). Not transcribed.
+- https://labibleduvelocataloguescolnago1.blogspot.com/p/colnago-1981.html
+  (checked 2026-10-27, 5 images): "Colnago International" and "Colnago Super"
+  sheets are the same "Yes advertising" sheets as `1979_colnago_spec.csv`
+  (International a)-m) list word for word; Super frame text identical); the
+  blog dates them 1981, saarf 1982-83, we keep 1979. The other two pages are
+  Bikecology's 1981 US catalogue pp. 6-7 ("New 1981 style with full chrome
+  forks", "Colors available for 1981"): Super (49-65cm, $425; Columbus SL
+  49-57 / SP 58-65) and Mexico (54-63cm, $475; Columbus Record) framesets
+  only, Campagnolo Super Record dropouts, Cinelli cast BB, plus accessories
+  (3ttt Record stem, Campagnolo Super Record seat post and chainring). Not
+  loaded: framesets with no build spec, from a retailer.
 
 ## 1988 Colnago — `1988_colnago_spec.csv` (28 bikes, 306 specs, 126 linked)
 
