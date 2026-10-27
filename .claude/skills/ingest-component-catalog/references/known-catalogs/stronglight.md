@@ -228,3 +228,23 @@ The generator's overrides for 1880 and 1893 still start at 1970 but only resolve
   - Absent from n. 27 and not capped (one catalogue's absence): 105 Bis, 49, 49 Tri, Touring Sport Bis, 255, 253,
     D6, S5, S7, D8, P3, V4. 3113 A9 (Spidel locknut) and 3115 B10 Bernard Hinault are not shown in n. 27 and unchanged.
   - 104 is mentioned only as "same fixing diameter as 101 and 103"; no page, no row change.
+
+## Classic Rendezvous Stronglight page (updated 6.1.2009): Catalogue n° 27 and n° 26 scans with "Nouveautés" leaflets, data_source 282, 2026-10-27
+
+- Source: https://classicrendezvous.com/country-of-origin/france/french-parts/stronglight/ — a gallery
+  (Mod. 49, 57 "intro 1957", 63, 93, 99, 105 bis, P3; a 1962 Cycling quote) plus 32 catalogue scans
+  `stronglight_1..32.jpg`, 560-575 x 768. Scans 1, 3-16 = Catalogue n° 27 (Aug 1982, already source 267;
+  scan 2 an alternate cover); scans 17-32 = Catalogue n° 26 (already source 195). The only new material
+  is three leaflets bound into this n° 26 copy (not in the VeloBase copy): "Nouveautés 1981 — Pédalier
+  107 aérodynamique" (884 g, 810 g with 700T), "Nouveauté 1982 — Jeu de direction A9" (78 g, locknut photo
+  reads "STRONGLIGHT SP..."), and a 106 Tri / adjustable 700 BB page (specs as n° 27). data_source 282
+  "Stronglight 'Nouveautés 1981' / 'Nouveauté 1982' leaflets, bound into Catalogue no. 26 (Classic
+  Rendezvous copy)", country FR.
+- year_from moved later (old values for reverting): 1883 107, 1884 107 (triple), 1916 107 Pista 1980 ->
+  1981; 1885 107 (variation 2, velobase) 1980-1980 -> 1981-1981. Evidence: the leaflet's "Nouveautés 1981",
+  and n° 25 (c. 1980) omits the 107; earliest linked bike 1982. The `'spidel 107 aerodynamic'` override
+  has no year range.
+- year_from moved earlier: 3113 A9 (Spidel locknut, velobase) 1984 -> 1982, on the partly visible
+  "STRONGLIGHT SP..." locknut in the 1982 leaflet photo (weakest call here).
+- No inserts, deletes or description changes; leaflet weights already match the rows. Gallery photos
+  carry no new codes or dates.
