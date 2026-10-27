@@ -122,6 +122,10 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
   builder for Italy"), an accessories photo, and a first-generation Colnago
   Mexico "extra light with material special Titanio". No component specs, so
   not transcribed.
+- http://bulgier.net/pics/bike/Catalogs/Colnago-73-75-ish(Mexico)/ (checked
+  2026-10-27): the same five images (Colnago brochure 1-3, Colnago Mexico
+  accessories, Colnago Mexico First Generation), up to 2316px but the same
+  captions only. Not transcribed.
 
 ## 1988 Colnago — `1988_colnago_spec.csv` (28 bikes, 306 specs, 126 linked)
 
