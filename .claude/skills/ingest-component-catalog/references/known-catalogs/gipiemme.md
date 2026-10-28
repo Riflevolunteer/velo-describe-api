@@ -285,3 +285,29 @@
   CI 870, carbon fibre crankset, lenticular disc wheel.
 - Left alone: Azzurra rows (group 83, Simplex-made, a separate earlier line); Exploit rows; the bare Dual Sprint / Special
   / Sprint / White Laser derailleurs, brakes, levers and shifters (still need an early-1980s source).
+
+## Iscaselle Gipiemme Catalogo No. 7 (ISCA S.p.A., undated, c. 1991; disraeligears.co.uk), `data_source` 288
+
+- Label `Iscaselle Gipiemme Catalogo No. 7 (c. 1991)`, country IT. Source:
+  https://www.disraeligears.co.uk/site/iscaselle_gipiemme_catalogo_no_7.html
+  (`00_main_images/iscaselle_gipiemme_catalogo_no_7_-_page_NNN_main_image.jpg`). ISCA S.p.A., Rossano Veneto / Loria,
+  after Iscaselle took over Gipiemme. **Undated**: disraeligears says "1991?"; 7-speed index parts fit c. 1990-91. New rows
+  1991-1991, `year_to` extensions 1991.
+- **Partial**: 24 of ~40 pages survive (1, 3-11, 17-25, 32, 37-40); pages 2, 12-16, 26-31 and 33-36 are missing, and no
+  saddle page survives (the Isca 406 / 407 saddle gap in TODO is not settled by it). Mostly budget / OEM parts with 6-7
+  digit ISCA codes and no group names; Azzurro, Bagarre and Cronobagarre are the only 1988 names left. K2, Pista and Block
+  are gone as named lines.
+- Light pass, by the user's choice. Rows updated (5, `year_to` 1988 -> 1991, `source_ref` 287 -> 288, code added to the
+  description): 1585 Azzurro SB 100 = X 100SB 4252; 5789 600BA / BA 600 Cronobagarre = X60CA72; judgement calls from
+  description and photo, no code link: 320 BA 704 = 833270 (internal cable, QR), 319 SB 704 = 833260 (internal cable), 762
+  BA 700 = 811997 (forged, QR).
+- Rows inserted (18, ids 9861-9878): X120B6 Bagarre Tandem crank (group 84; kept apart from 9128 Crono Special Tandem
+  Strada), 892711 titanium BB, 82294 Mod. 402 cromoly post, 8129102 clipless road pedals, headsets 825502 (1-1/8) / 825501
+  (1-1/4), RDs 815590 / 815515 LN / 815591 / 815570 (indexed), FDs 846481 / 846482 (MTB, 31.8 / 34.9 clamps), shifters
+  841205 / 841209 / 841125 / 841127 (indexed), cantilevers 811R002 / 811R004 ("ABS system").
+- Not inserted (catalogue completeness only, no bike-spec values to link): friction / steel RDs 815511, 815551S, 815512,
+  815500; FDs 846450S, 846470, 846450A, 846452, 846451, 846480; shifters 841101, 841102, 841105, 841110, 841300; levers
+  833392A, 833372P, 83333, 833271A, 833146A; brakes 811102A, 811730AL, 811400, 811714; hubs 826512R / 826515F, 826511,
+  8262022 / 25 / 26, 826103; cranks 8249037 (Mod. 6000), 8241041 / 8241042 (MTB triples), 8249036 (Mod. 2010), 8249035
+  (Mod. 2011), 8249032, 824361 (Bimbo); BBs 8922003 / 8922012; posts 822 / 819. Out of scope: bags, computers, trainer,
+  cable guides, guards, skewers, seat clamps and bolts, pulleys, hanger, spokes, grease.
