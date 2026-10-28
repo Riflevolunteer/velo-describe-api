@@ -28,11 +28,12 @@
   Racer seat post, 4058 New Racer pedals, 2264 / 2265 / 2266 Z-2000 7 / 6 / 5-speed freewheels.
 - Rows inserted (3, 1982-1982): 20900.00 Zeus-2001 braze-on double lever (Shifters, group 2000), 13030.00 Zeus-2000
   Track crankset, 50501.00 Z-2000 Prestige saddle.
-- **Same ref, two names (merge candidates, not merged here):** the Ron Kitching 1984 rows (`data_source` 261) carry
+- **Same ref, two names: merged 2026-10-28** (the Kitching rows deleted, their 1984 facts folded into the survivor, survivor `year_to` -> 1984; none had bike links or overrides). Deleted row -> survivor (deleted `source_id`): 4875 -> 4860 (974187A4-0730-4317-B022-3C77411FB190), 2687 -> 2680 (6C1C842B-06E0-472B-B4EC-4238C7E1039D), 9362 -> 8853 (4675debd-cef6-11f1-a2df-02fea3763e8d), 1182 -> 1178 (C3E0CB50-0CF4-41FF-B968-DA0031900195), 506 -> 8858 (82190B21-4DBF-4DD6-8116-F8117439FDDF), 9360 -> 3168 (4671dd71-cef6-11f1-a2df-02fea3763e8d), 3656 -> 8857 (ECCE6ADB-75E7-42D5-B368-F3307EC7BC11), 9359 -> 188 (466fdf0f-cef6-11f1-a2df-02fea3763e8d). Old titles: "Zeus Supercronos" (4875, 1182, 3656), "Zeus Supercronos (2-holes)", "Zeus 21000.00 / 21001.00, Supercronos", "Zeus Supercronos (Zeus in Z)", "Zeus 26000.00, Supercronos", "Zeus 23100.00, Supercronos". The pairs as found: the Ron Kitching 1984 rows (`data_source` 261) carry
   this catalogue's refs under the name "Supercronos": 4875 Supercronos 22000 = 4860 Zeus 2000 rear; 2687 Supercronos
   22500 = 2680 front; 9362 Supercronos 21000 / 21001 = 8853 lever; 1182 Supercronos 27000 = 1178 Zeus 2001 brake;
   506 Supercronos 37001 = 8858 lever; 9360 Supercronos 26000 = 3168 headset; 3656 Supercronos 28000 = 8857 hubs;
   9359 "23100.00, Supercronos" (steel BB) = 188 Criterium BB (23100 is the Criterium BB in 1982).
+  Still separate (no 1982 ref to pair with): Supercronos cranks 2032 / 2033 / 2034, 9361 seat post 25000, 4059 pedals 24000.
 - Left alone: which Z-2000 crank row 13000 is (2023 early / 2024 later non-fluted / 2025 partially drilled); New Racer
   crank and brake lettering variants (2020 / 2021, 1176); Gran Sport rows not capped (Kitching 1984 still lists the Gran
   Sport headset); Z-2000 track BB 23030 / Pista hub / track cog already current. Out of scope: axle and QR sets, tools,
