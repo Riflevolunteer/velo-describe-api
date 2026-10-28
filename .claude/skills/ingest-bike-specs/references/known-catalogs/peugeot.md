@@ -427,7 +427,7 @@
   levers, Maillard 700 hubs and pedals, Maillard Normandy 6-speed and wing-nut hubs, generic French cells.
 - Regression: all 49 other catalogues' link counts unchanged.
 
-## 1981 Peugeot — `1981_peugeot_spec.csv` (FR, data_source 251: 23 bikes, 349 specs, 59 linked) and `1981_peugeot_ch_spec.csv` (CH, data_source 252: 1 bike, 15 specs, 1 linked)
+## 1981 Peugeot — `1981_peugeot_spec.csv` (FR, data_source 251: 29 bikes, 428 specs, 69 linked) and `1981_peugeot_ch_spec.csv` (CH, data_source 252: 1 bike, 15 specs, 1 linked)
 
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1981.html (38 images named
   1.jpg-37.jpg and 1981_1.jpg, loaded 2026-10-22). Images 1-15: French "Les vélos sport et course,
@@ -443,7 +443,11 @@
   PF 10, PBN 10, PH 10; cyclotouring PF 60, P 60 M; sports PX 8 M, PL 8 M, PH 8 S, PH 8 M, PH 8 M 5V;
   randonneur PX 50 S, PL 50 M, PH 50 M; tandems TH 8, TM 8. Maillard Helicomatic rear hubs on PKN 10, PK 10,
   PSV 10, PF 10, PFN 10, PFN 13, PBN 10 (image 8).
-- Not loaded: ladies' PH 15, PF 65, P 65 M, PX 18 M, PL 18 M, PH 18 M (held out as 1980); town (PX 40 M,
+- Ladies' / mixte loaded 2026-10-28 (as 1980): PH 15 (image 5 text, image 6 photo: ladies' racer, lugless,
+  48 x 38T, Weinmann side-pull); "Sport dames" panel (image 12) PF 65 ("torpille" Vitus 172, triple),
+  P 65 M, PX 18 M, PL 18 M, PH 18 M (mixte, Helvetia bars). 6 bikes, 79 specs, 6 linked (the leaflet
+  names brands only); new Handlebars override bare 'helvetia' -> 8502 (1979-82).
+- Not loaded: town (PX 40 M,
   PH 40 M, PH 22 M, PX 45 M, PH 45 M, PH 25 M, NS 640 / 622 / 540 / 522 ...), children's (M 23 S, Baby,
   CPX 12, CP 14, NJ, NC, RML, J 8 GL, J 8 GL 5, C 50 MDL ... C 32 C), CPX BMX.
 - Overrides: Rear 'simplex s 061' -> 4616 Simplex S061 T (1981-90); Cranksets 'stronglight 104 bis 52 x
