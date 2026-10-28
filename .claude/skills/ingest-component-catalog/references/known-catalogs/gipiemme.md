@@ -214,3 +214,18 @@
   52-53 / 42), matched on spec alone, so a later source that shows 100SB distinct from 100CE should reinstate it. The
   guide also agrees with the later catalogue that the Classic 100CC (1589) is 170 mm with 52-53 / 42, so the "165-175mm,
   41-54T" taken from Oct 1984 may be a group-wide range; not rechecked against the 1984 page.
+
+## velo-pages "Gipiemme 1982 Catalog" album (Wayback, checked 2026-10-28): not 1982, nothing new
+
+- Album `g2_itemId=1483`, page items 1505-1545 (step 3), read through the Wayback CDX index (curl needs `-g` for the
+  bracket regex). Only three images survive above thumbnail size: 1542 (1672 x 1200, the braze-on parts 18xx and fork
+  ends 1800 AX / BB / CC / B1 page), 1517 and 1538 (640 x 459: the Cronospecial "Professional AA" and Pista "B1" group
+  spreads with the 100AA / 200AB / 300AA / 800AS / 906CC codes, and the Manubri page with the Cronospecial AA,
+  Cronosprint CC and Sprint DD bars). Every other capture is a 5-10 KB thumbnail.
+- The part numbering is the post-1984 one (100 / 200 / ... / 800 + group suffix) and the pages match the c. 1986-87
+  "8 times world champions" catalogue (`data_source` 270) already loaded, so velo-pages' "1982" label is wrong, as the
+  270 entry suspected. No rows changed.
+- The bare Gipiemme rows still without a catalogue source (about 28 derailleurs, brakes, levers and shifters: Azzurra,
+  Azzurro, Bagarre, Dual Sprint, Special, Sprint, White Laser, Exploit) need a genuine early-1980s source; the remaining
+  lead is velo-pages "Catalogs & Ads 1978-1984" (`g2_itemId=65`), not yet checked.
+
