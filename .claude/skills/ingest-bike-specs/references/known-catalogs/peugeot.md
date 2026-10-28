@@ -546,7 +546,7 @@
   Maillard 700RN and 600 pedals, Lyotard 77R, Sedis Nickelée, CLB aero brakes, generic Dutch cells.
 - Regression: all 55 other catalogues' link counts unchanged.
 
-## 1984 Peugeot — `1984_peugeot_spec.csv` (FR, data_source 257: 25 bikes, 402 specs, 56 linked) and `1984_peugeot_gb_spec.csv` (GB, data_source 258: 11 bikes, 200 specs, 45 linked)
+## 1984 Peugeot — `1984_peugeot_spec.csv` (FR, data_source 257: 32 bikes, 492 specs, 88 linked) and `1984_peugeot_gb_spec.csv` (GB, data_source 258: 11 bikes, 200 specs, 45 linked)
 
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1984.html (40 images, loaded
   2026-10-22). Images 1-30: French "Peugeot Bicyclettes 1984, A la rencontre de la liberté"
@@ -565,8 +565,13 @@
   French PSV 10 L), PGN 10 US Routier (new, Reynolds 501 'Cromalloy M'), PGN 10 Paris-Nice, PH 11 Avance, PH
   10 LS Competition, PH 10 L Criterium, MB 1 Urban Express and MB 2 Canyon Express (Peugeot's first mountain
   bikes, chrome-moly TIG, SunTour, SR, Tange, Araya / Sumo).
-- Not loaded: ladies' / mixte FR PH 15 T, PH 65, PCA 15, PH 18 S / PH 18 M, P 18 L, PX 18 L; GB VH 35 S, PH 18
-  L, PH 15 C, P 15 C. Town FR VX 40 FC, VX 45 FC, VL 45 M, VL 40 M, V 25, PRP 20 M, PH 35 S, PX 45 S, PH 45 M,
+- Ladies' / mixte loaded 2026-10-28: FR PH 15 T (p. 7 + recap table row 1: SXA32 / SX810T, Solida 38 x 48,
+  Weinmann 500, "straight bend" = the Helvetia of the photo), PH 65 (p. 9, "torpille", flat bar; ladies' PH 60 C),
+  PCA 15 (p. 10, "torpille" Reynolds 501; ladies' PCA 10), PH 18 S (flat bar), PH 18 M (Helvetia), P 18 L (p. 10),
+  PX 18 L (p. 11, flat bar). 7 bikes, 91 specs, 10 linked.
+- Not loaded: GB VH 35 S Classique Shopper (2-speed loop frame, basket) and PH 18 L Sapphire ("for
+  shopping", dress guard, prop stand): town; GB PH 15 C Solitaire and P 15 C Lady Premiere: blurbs only, not
+  in the spec table (as the men's P 10 L Premiere). Town FR VX 40 FC, VX 45 FC, VL 45 M, VL 40 M, V 25, PRP 20 M, PH 35 S, PX 45 S, PH 45 M,
   PH 40 M, P 45, P 25. Children's / cross / CPX BMX; GB C 50 CX, P 20, P 30. Track framesets CFP 11 / CFP 13
   (Columbus). GB P 10 L Premiere, P 10 S Talisman 12, PH 11 L, P 10 T (blurbs, not in the spec table).
 - Overrides: run-together model numbers — Front 'simplex sja222' / 'sja222cx' -> 2575, 'slja422' -> 7263,
