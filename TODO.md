@@ -72,7 +72,6 @@ Cleaned up 2026-10-21 and again 2026-10-28: finished work moved to "Done" (detai
 - Convert to ES2015 using babel.
 - Replace deprecated `crypto.createDecipher` with `createDecipheriv` (explicit IV) in `index.js`, `config.js` and `scripts/{component-diff,summarize-bike-sql,load-sql,db-query,generate-bike-update-sql}.js`.
 - Fix DB data quality for brands with no components.
-- `scripts/bike.sql` / `bike_spec.sql` are old table dumps and no longer match the DB.
 
 ## Open: link coverage (bike_spec -> component_id)
 

@@ -7,6 +7,9 @@ CREATE TABLE `data_source` (
   -- URL for a crawled source, or a free-text catalogue citation
   -- (e.g. "Shimano June 1984 dealer catalogue"). NULL for ad-hoc manual edits.
   `citation` varchar(255) DEFAULT NULL,
+  -- ISO 3166-1 alpha-2 market the catalogue was printed for (not where the
+  -- bike was built). NULL when unknown or not a catalogue.
+  `country` char(2) DEFAULT NULL,
   `ingested_at` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`source_id`),
   KEY `idx_data_source_type` (`source_type`)
