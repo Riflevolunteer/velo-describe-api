@@ -229,7 +229,8 @@
   Bianchi "SR CTD" bars x3 -> 7888 CTD. Kalkhoff 1981 57 -> 54 (5 unlinked,
   2 linked); Bianchi 1987 140 -> 143.
 - Left: 1751 RY-5SL triple, 1756 SAX-5LA-EL, Super Custom / Aerox /
-  Custom-3 cranks, 6659 "SR CUSTOM" stem, 3933 Silstar 550FW, SP-150 / 152 /
+  Custom-3 cranks, (6659 "SR CUSTOM" stem: merged into 8234 CT, Custom on
+  2026-10-28, 8234 now 1978-87), 3933 Silstar 550FW, SP-150 / 152 /
   154 / 155, 5862 Four-Sir, 5848, bare 6665 "SR" stem / 1738 "Apex" / 1759
   "Silstar" / 3513 hub. Not in No. 18: 1985 Raleigh SP-153 / 452 / 518,
   CXC-624 / 331, CRC-T301, 55G, MTH-100 (later SR numbering), "Royal special

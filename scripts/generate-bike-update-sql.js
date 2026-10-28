@@ -1984,16 +1984,17 @@ const COMPONENT_OVERRIDES = {
     'cinelli alloy': [{ from: 1982, to: 1982, id: 6489 }], // Cinelli 1A (winged "C" logo)
     'new 3ttt record alloy': [{ from: 1975, to: 1976, id: 6416 }], // 3ttt Mod. 1 Record Strada (2nd version); the 1976 Professional Mk IV repeats the 1975 text
     'itm 400': 6564, // ITM 400 Racing
-    'sr custom': 6659, // Sakae/Ringyo (SR) CUSTOM
-    // 1983-87 Raleigh "SR / Sakae Custom light alloy", as `sr custom` above (row dated 1980; 8234 "CT,
-    // Custom" may be the same stem, a duplicate to review). The 1984 "Custom Alloy" names no maker; the
-    // other 1984 Raleighs print SR Custom.
-    'sr custom light alloy': [{ from: 1980, to: 1987, id: 6659 }],
-    'sakae custom light alloy': [{ from: 1980, to: 1987, id: 6659 }],
-    'custom alloy': [{ from: 1984, to: 1984, id: 6659 }],
-    // 1986 Raleigh "SR CT (forged) alloy": SR CT, Custom (row 1978-82).
-    'sr ct alloy': [{ from: 1978, to: 1986, id: 8234 }],
-    'sr ct forged alloy': [{ from: 1978, to: 1986, id: 8234 }],
+    'sr custom': 8234, // Sakae/Ringyo (SR) CT, Custom (6659 "SR CUSTOM" merged into it 2026-10-28)
+    // 1983-87 Raleigh "SR / Sakae Custom light alloy", as `sr custom` above: SR CT, Custom (1978-87 since the
+    // 2026-10-28 merge of 6659). The 1984 "Custom Alloy" names no maker; the other 1984 Raleighs print SR Custom.
+    'sr custom light alloy': [{ from: 1978, to: 1987, id: 8234 }],
+    'sakae custom light alloy': [{ from: 1978, to: 1987, id: 8234 }],
+    'custom alloy': [{ from: 1984, to: 1984, id: 8234 }],
+    // 1986 Raleigh "SR CT (forged) alloy": SR CT, Custom (1978-87).
+    'sr ct alloy': [{ from: 1978, to: 1987, id: 8234 }],
+    'sr ct forged alloy': [{ from: 1978, to: 1987, id: 8234 }],
+    // 1982 Peugeot (FR) PY 10 S: the catalogue table put "CFC 80" on the bar line; CFC is the ATAX stem.
+    'atax cfc 80 anodised silver': [{ from: 1982, to: 1984, id: 8512 }],
     // 1985 Raleigh (Sheldon Brown scan).
     'sr ae alloy aero black': 6657, // Sakae/Ringyo (SR) Aero
     // 1986 Cinelli (Ten Speed Drive Imports).

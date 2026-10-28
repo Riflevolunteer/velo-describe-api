@@ -462,6 +462,8 @@
   fork, headset, crank, pedals, freewheel / wheels, Simplex derailleurs, saddle and post, bars, brakes,
   accessories for all 13 racing models). Images 29-59: Dutch "Peugeotboek voor totale fietsrecreatie,
   kollektie 1982" (PeugeotShow; image N = page N-28; Peugeot centenary "Eeuwfeest 100").
+- PY 10 S bar / stem (2026-10-28): the summary table prints "CFC 80" on the bar line; stored as bar
+  "Atax, anodised silver", stem "Atax CFC 80" (8512, as the PX 10 DU), misprint noted in Extras.
 - FR loaded: racing PRO 10, PY 10 S, PX 10 DU (new: Vitus 979 Duralinox frame and fork), PX 10 S, PSV 10 S
   (Super Vitus 980), PF 10 S, PFN 10 S, PFN 13, PF 10, PFN 10, PBN 10 S, PH 10 S, P 10; cyclotouring PF 60;
   sports PX 8 S, PH 8 S, PH 8 M, PH 8M 5V, P 8; randonneur PX 50 S, PL 50 M, PH 50 M; tandems TM 8, TH 8.
