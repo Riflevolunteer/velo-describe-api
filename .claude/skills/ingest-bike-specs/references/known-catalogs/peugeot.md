@@ -380,7 +380,7 @@
 - Regression: all 48 other catalogues' link counts unchanged (Falcon 1974 and Bianchi 1990
   drift as noted under 1975).
 
-## 1980 Peugeot — `1980_peugeot_spec.csv` (FR, data_source 249: 26 bikes, 402 specs, 81 linked) and `1980_peugeot_nl_spec.csv` (NL, data_source 250: 6 bikes, 115 specs, 51 linked)
+## 1980 Peugeot — `1980_peugeot_spec.csv` (FR, data_source 249: 31 bikes, 476 specs, 94 linked) and `1980_peugeot_nl_spec.csv` (NL, data_source 250: 9 bikes, 175 specs, 69 linked)
 
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1980.html (63 images, loaded
   2026-10-22). Three catalogues on the post: (1) the Dutch "Peugeotboek voor totale fietsrecreatie,
@@ -397,9 +397,13 @@
   the parent spec.
 - NL loaded: supersport PL 8 M; racing PBN 10, PFN 10, PKN 10, PVN 10, PY 10 LC (Spidel parts), with kg
   weights and colours. PBN 10 / PFN 10 exist in both editions as separate bikes.
-- Not loaded (user's call 2026-10-22, reversed 2026-10-28: ladies' / mixte road models are now in
-  scope, so these are a follow-up to transcribe and load): ladies' and mixte drop-bar models:
-  NL PX 18 MC / PX 18 M, PK 65 lady (PK65C / PK65T); FR PF 65, P65M, PX 18 M, PL 18 M, PH 18 M. NL PXN 10
+- Ladies' / mixte models loaded 2026-10-28 (held out 2026-10-22, in scope since the 2026-10-28 rule):
+  FR p. 11 panel: PF 65 "Lady" (Vitus 172, 18-speed triple) and P65M (mixte, SA 12 / SX 810 T, Helvetia
+  bar); FR "Sport dames" panel: PX 18 M, PL 18 M, PH 18 M (mixte, Helvetia bars, fenders, rack; ladies'
+  versions of the Sport PX 8 M / PL 8 M / PH 8 M); NL p. 7: PX 18 MC (race bar) and PX 18 M (430 mm Atax
+  Helvetia bar -> 8502, new override); NL p. 8: PK 65 lady, one bike for the PK65C race / PK65T touring
+  versions (bar and levers recorded as either/or, so unlinked). 8 bikes, 134 specs, 24 linked.
+- Not loaded: NL PXN 10
   (prose only: 9.9 kg, full Reynolds 531 7/10, pearl white). Town: PE 46 M, PH 41 M, PX 41 M, the
   semi-sport VL 25 M / VL 22 M range. CPX 100-400 BMX; the Super Competition frameset (p. 27).
 - Transcription: PVN 10 brakes printed "Mafac 605 side-pull" but the photo shows a Weinmann 605 caliper;
