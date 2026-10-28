@@ -174,6 +174,11 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
   FD-6208 row). C-Record 180 brakes -> 583 as 1986 (2026-10-28). Left unlinked: Concor
   saddles, bare 3ttt / ITM bars and stems, Gommitalia tyres, Formula Inox
   spokes, AL 11 and Deore SIS groups, Ofmega Premier crank / seatpost / pedals.
+- Deore SIS linked 2026-10-28 (1987 Master Mountain Bike; ranged 'shimano deore sis' overrides, 1987-89 /
+  -93): FD-MT60 2496, RD-MT60 4487, BR-MT60 978 (the MT61 979 is the other Deore cantilever; MT60 taken as the
+  base model), BL-MT60 427, PD-MT60 / 61 3965. Crankset and seat post stay unlinked (no MT60 crank or Deore post
+  row). The 1986 plain "Shimano Deore" stays unlinked (DE series ended 1984, XT M700 ran to 1986; undecidable).
+  "Shimano AL 11" (Super Mountain Bike 1986-87, Master Mountainbike AL 11 SIS 1988) has no DB rows.
 - Colour pages (standard, MODA grid, bicolour codes 01-25) not transcribed.
 
 ## 1988 Colnago — `1988_colnago_spec.csv` (28 bikes, 306 specs, 126 linked)

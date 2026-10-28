@@ -757,6 +757,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sx a 22': 2577, // Simplex SX A22 (1977-83)
     'simplex sxa 22': 2577, // Simplex SX A22
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
+    'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
@@ -992,6 +993,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 410 tsp': 4621, // TSP variant not in DB; SX410 T is the same gear
     'simplex 410 tsp': 4621, // as above (PK 60 wording)
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
+    'shimano deore sis': [{ from: 1987, to: 1989, id: 4487 }], // 1987 Colnago Master Mountain Bike: RD-MT60, Deore
   },
   Hubs: {
     // 1982 Battaglin: Gipiemme Pista Special hub = Special Pista (1985 row; the 1982 sheet is earlier).
@@ -1416,6 +1418,7 @@ const COMPONENT_OVERRIDES = {
     'mafac competition centre pull': 825, // MAFAC Competition (later version)
     'mafac racer centre pull': 838, // MAFAC Racer (lettered MAFAC RACER) 1970-80
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
+    'shimano deore sis': [{ from: 1987, to: 1989, id: 978 }], // 1987 Colnago Master Mountain Bike: BR-MT60 (the MT61 979 is the other Deore cantilever; MT60 as the base model)
   },
   Headsets: {
     // 1982 Battaglin: Gipiemme Cronospecial headset (the 1985-88 row; the 1982 sheet is earlier) and the Pista Special headset.
@@ -2180,6 +2183,7 @@ const COMPONENT_OVERRIDES = {
     'dia compe 152 gum hoods': 271, // Dia-Compe 152 (Double Slot Drilled)
     'dia compe 281 levers': 8113, // Dia-Compe 281 / 281M, mountain bike levers (1986 catalogue)
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
+    'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
   },
   Pedals: {
     // 1982 Battaglin: either/or cell (Cronospecial or Special) names two parts, so no link; Pista Special is the Special (Pista) pedal.
@@ -2276,6 +2280,7 @@ const COMPONENT_OVERRIDES = {
     'lyotard dural course with toe clips and straps': 3815, // Lyotard 460D (1970-80), the standard French dural quill
     'lyotard with toe clips and straps': 3815, // Lyotard 460D
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
+    'shimano deore sis': [{ from: 1987, to: 1993, id: 3965 }], // 1987 Colnago Master Mountain Bike: PD-MT60 / PD-MT61, Deore
   },
   'Seat Posts': {
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
