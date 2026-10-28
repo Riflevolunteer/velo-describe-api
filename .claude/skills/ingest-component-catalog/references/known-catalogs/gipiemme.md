@@ -243,4 +243,12 @@
   derailleurs, brakes, levers, shifters) stay as they are until another early-1980s source turns up (a dealer
   catalogue such as a Bikecology / Palo Alto / Bike Warehouse page that lists Gipiemme, or a magazine group test).
 
+## labibleduvelo "GIPIEMME 1982" page (checked 2026-10-28): images lost, nothing to read
+
+- https://labibleduvelocataloguesgipiemme.blogspot.com/p/gipiemme-1982.html lists 13 pages (page-00-a, page-01 ..
+  page-12) but every image was hosted on imagesia.com (links `http://imagesia.com/page-NN_12y3?`, files
+  `http://img.imagesia.com/fichiers/12y/page-NN_imagesia-com_<code>.jpg`, codes 12y3z, 12y3s, 12y3v, 12y3w, 12y3u, 12y3t,
+  12y3x, 12y3y, 12y40 .. 12y44). Blogger's image proxy returns 404 for all 13, imagesia.com no longer answers, and the
+  Wayback CDX has other files from the same `fichiers/12y/` folder but none of these pages nor their viewer pages. The
+  same blog also has 1984 and 1987 Gipiemme pages (covered by `data_source` 269 / 270 from disraeligears).
 
