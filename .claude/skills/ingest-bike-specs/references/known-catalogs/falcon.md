@@ -72,7 +72,8 @@
   -> brand-level 3593 (Motobecane precedent; Geared Hubs not reachable
   from the Hubs label).
 - Left unlinked: bare "Campagnolo" derailleurs on 76 / 80; unbranded
-  Cotterless cranks, Quick release / Narrow barrel / Large flange hubs,
+  Cotterless cranks (explicit null since 2026-10-28: the later SR 9528 row caught them by substring), Quick
+  release / Narrow barrel / Large flange hubs,
   Centre pull / side pull brakes; "Weinmann alloy tourist", "Weinmann with
   hooded levers"; Sprint / Endrick / Weinmann alloy rims; Clement.
 - Regression: all other catalogs unchanged.

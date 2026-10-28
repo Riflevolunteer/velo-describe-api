@@ -503,6 +503,8 @@
   'normandy luxe competition' was already a 1974 Motobecane override (3388) further down the Hubs block;
   a second copy of the key silently replaced it, so the two were merged into one ranged entry (to 1979
   -> 3388, from 1980 -> 3389 red label).
+- CLB Competition (2026-10-28): the NL PH 12 "CLB Competition aerodynamic" had been linked to 608 (1950-70) by a
+  substring match; cleared, and 'clb competition' ranged to <= 1979 / 'clb competition aerodynamic' -> null.
 - Left unlinked: Atom 500 RA, Sakae SP 150, Spidel 700 RA, Lyotard 77R pedals; Lightrace headsets; Reydel
   Profil, Selle Italia CX, Royal 463/2 saddles; Solida 5270A, Sakae Custom cranks; Maillard Helicomatic
   and 6-speed Normandy freewheels; Maillard 700 SH hubs; SX 660 (only the undated SLJ SX660 row); CLB

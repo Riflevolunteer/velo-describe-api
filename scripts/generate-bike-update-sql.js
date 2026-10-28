@@ -1324,6 +1324,10 @@ const COMPONENT_OVERRIDES = {
     'weinmann 506 side pull with safety levers': 7764,
     'weinmann 506': 7764,
     'clb weinmann 506': 7764,
+    // 608 CLB Competition is the 1950-70 brake; the 1982-84 Peugeot PH 12 "CLB Competition (aerodynamic)" is the
+    // 1980s aero brake, which has no row (drift check 2026-10-28: exact / substring matches linked the wrong era).
+    'clb competition': [{ to: 1979, id: 608 }],
+    'clb competition aerodynamic': null,
     // 1982-84 Raleigh: the model-level 500 row (Weinmann c. 1971 leaflet); the
     // finish / bolt variant rows can't be told apart from the spec text.
     'weinmann 500 alloy quick release side pull': 8636, // Weinmann AG 500
@@ -1504,6 +1508,9 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1973 Falcon San Remo 76 / 94: bare "Cotterless" (unbranded, left unlinked at load); the 1974 SR Silver Cotterless
+    // row 9528 added later would otherwise catch it by substring (drift check 2026-10-28).
+    cotterless: null,
     // 1987 Colnago Junior 105 / Junior SIS 600 (Catalogo generale 1987): 1050-series 105.
     'shimano 105': [{ bike: 'Junior 105', from: 1987, to: 1987, id: 1778 }], // FC-1050, 105 (1987-89)
     // 1982 Battaglin (Italian sheets): Gipiemme prints "Cronospecial" / "Cronosprint" as one word. The 1982 rows are the 100 AA and 100 CC.

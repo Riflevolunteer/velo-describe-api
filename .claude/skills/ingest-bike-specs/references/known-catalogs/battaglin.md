@@ -34,7 +34,8 @@
 - Left unlinked: Giro d'Italia crankset "Gipiemme Special" (600100 and 600100/M), Alessandro "Minisprint"
   (DB row from 1985), Super Pista "Pista Special" crankset (1588 and 1593), Cronosprint front (2368 / 2369) and rear
   (4260 / 4261) derailleurs, Sprint 610 rear, Gipiemme Sprint seatposts (types 1 and 2), Nisi Pista Special (5138 /
-  9225), Modolo Professional (880 / 892), Spidi and Sporting (888 / 893) brakes, Vittoria CX / C.S. Satinato / Uni,
+  9225), Modolo Professional (880 / 892) and Spidi brakes (Sporting linked to 888 on 2026-10-28 once 893 was merged; Concor
+  Junior saddle linked to 9772, a row added after the load), Vittoria CX / C.S. Satinato / Uni,
   Regina Oro freewheel (2194 / 2195), Cinelli bars (brand only), Alpinaraggi spokes.
 - Several linked rows start after the catalogue (9137 headset 1985-88, 3351 hub 1985, 9227 / 9228 rims 1985+): the
   same parts, so a component pass could move their `year_from` earlier.
