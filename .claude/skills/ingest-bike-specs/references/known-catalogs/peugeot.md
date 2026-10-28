@@ -460,7 +460,7 @@
   Super Competition tubulars).
 - Regression: all 51 other catalogues' link counts unchanged.
 
-## 1982 Peugeot — `1982_peugeot_spec.csv` (FR, data_source 253: 24 bikes, 403 specs, 82 linked) and `1982_peugeot_nl_spec.csv` (NL, data_source 254: 12 bikes, 210 specs, 59 linked)
+## 1982 Peugeot — `1982_peugeot_spec.csv` (FR, data_source 253: 29 bikes, 471 specs, 100 linked) and `1982_peugeot_nl_spec.csv` (NL, data_source 254: 16 bikes, 277 specs, 101 linked)
 
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1982.html (59 images, loaded
   2026-10-22). Images 1-4: French "Gamme Plus" price flyer (prices at 1/3/82; Z 40, Z 45, Z 10 790 F,
@@ -480,8 +480,13 @@
   660 / SJA 222 CX, CLB Competition, Ofmega pedals, Mavic Module E, 10.8 kg), PBN 10, PFN 10, PKN 10, PVN
   10, PXN 10 (full spec this year, 9.9 kg); lugless ("Peugeot Specials '82") H 10, PH 10, PH 10 S
   (Helicomatic), PH 8 M.
-- Not loaded: ladies' / mixte FR PH 15, PX 18 S, PH 18 S, P 18, PF 65; NL PX 18 MC / PX 18 M, PH 18 MC,
-  PH 15. Town FR VX 45 MF, VX 40 MF, VL 25 M / VL 45 M / VL 40 M, PRP 20 M, PNS 55 S, NS 640 / NS 540, PX
+- Ladies' / mixte loaded 2026-10-28 (as 1980-81): FR p. 6 PH 15 (lugless 3-tube ladies' racer), p. 7 PX 18 S,
+  PH 18 S, P 18 (mixte, Helvetia bars; P 18 names no derailleur, 5-speed like the P 8), p. 8 PF 65 ("torpille"
+  Vitus 172); NL p. 6 PX 18 MC / PX 18 M (mixte PX 8 M; race bar or 430 mm Atax Helvetia), p. 19 PH 18 MC
+  (mixte lugless PH 8 M), p. 20 PH 15 (spaced twin-tube ladies' racer, a different bike from the FR PH 15).
+  9 bikes, 135 specs, 21 linked; new override 'dural helvetia type' -> 8502. "Simplex Prestige" fronts on the
+  1982 NL bikes link to 2583 (dated 1964-75) through an unranged override: pre-existing, see TODO.
+- Not loaded: Town FR VX 45 MF, VX 40 MF, VL 25 M / VL 45 M / VL 40 M, PRP 20 M, PNS 55 S, NS 640 / NS 540, PX
   45 S, PH 45 M, PH 35 S, P 25, PH 40 M, PH 22 M; NL PH 46 M, PH 41 M, PX 18 MF, PX 41 MF (also the
   lugless PH 41 M / PH 46 M) and the "Tradition" sport range (pp. 8-11). Cross, children's, BMX, clothing.
 - Transcription: NL PVN 10 / PXN 10 brakes printed "Mafac 605" again; no close-up this year, so stored as

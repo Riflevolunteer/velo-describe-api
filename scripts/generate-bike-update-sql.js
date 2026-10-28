@@ -1908,6 +1908,7 @@ const COMPONENT_OVERRIDES = {
     'atax helvetia demi course 430 mm': [{ from: 1979, to: 1982, id: 8502 }],
     // 1981 Peugeot (FR) "Sport dames" PX 18 M / PL 18 M / PH 18 M: bare "Guidon Helvétia", as the 1980 rows.
     helvetia: [{ from: 1979, to: 1982, id: 8502 }],
+    'dural helvetia type': [{ from: 1979, to: 1982, id: 8502 }], // 1982 Peugeot (FR) PX 18 S
     'randonneur bend': 8500, // Philippe Randonneur 355
     // 1983-84 Raleigh Competition / Rapide: the alloy SR Custom bar is CT-L
     // (CT-S is the steel one).
