@@ -1241,7 +1241,10 @@ const COMPONENT_OVERRIDES = {
     // 1989 De Rosa 35° Anniversario ("Record-C Delta").
     'campagnolo c record delta': 560, // Campagnolo Delta C-Record (1986-93)
     // c. 1984 De Rosa (ebykr scan).
-    'campagnolo c record': null, // Delta not shipping; C-Record groups were delivered with Super Record brakes (as Cinelli / Colnago)
+    // C-Record groups shipped with Super Record brakes until the Delta arrived (Cat. 18 bis, Dec 1986: "not yet
+    // available"; first shown in the Nov 1987 Record brochure), so pre-1988 catalogues get the 4061 Super Record
+    // v2 of the time and 1988+ the Delta. Decided 2026-10-28 (was an explicit null).
+    'campagnolo c record': [{ to: 1987, id: 583 }, { from: 1988, to: 1993, id: 560 }], // c. 1984 De Rosa; 1988 Colnago
     // 1978 Raleigh (US, ebykr scan).
     'weinmann 605 alloy side pull with wheel guides': 8642, // Competition GS: Weinmann AG 605 (lettering variants merged into 8642 on 2026-10-26)
     'raleigh weinmann short reach alloy center pull': 1138, // Super Course: Weinmann AG Raleigh 610, the short-reach Raleigh centre-pull the 1977 Super Course names as 610
@@ -1252,7 +1255,7 @@ const COMPONENT_OVERRIDES = {
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
     'campagnolo gran sport': [{ to: 1980, id: 553 }, { from: 1981, id: 554 }], // first gen for the group's first years (Export); second gen as the 1983 Raleigh 'gran sport brakes' entry
     // 1986 Colnago Catalogo generale group fan-outs.
-    'campagnolo c record 180': null, // Delta not shipping in 1986; groups delivered with Super Record brakes (same call as 1986 Cinelli Record Corsa)
+    'campagnolo c record 180': [{ to: 1987, id: 583 }], // 1986-87 Colnago: the Super Record brakes the group shipped with, as 'campagnolo c record'
     'campagnolo super record 30nnale': 583, // 4061 v2
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'shimano 600 ax with recessed bolts': 965, // Road Ace: Shimano BR-6300, 600 AX

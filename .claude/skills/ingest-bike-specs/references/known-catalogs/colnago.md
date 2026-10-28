@@ -70,8 +70,9 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
 - Group picks: Super Record as 1986 Cinelli (2313 / 4152 / 1509 / 5761 /
   583 / 231 / 3716); 30nnale overrides point at the same rows. C-Record 180
   as the Cinelli Record Corsa calls: FD 2283, RD 4096 first gen, crank 1483,
-  seatpost 5738 A0R2, levers 212, pedals 3693, brakes explicit null (Delta
-  not shipping in 1986). Victory by existing overrides. Triomphe: FD 2314,
+  seatpost 5738 A0R2, levers 212, pedals 3693, brakes 583 4061 Super Record v2
+  (Delta not shipping in 1986, the group came with SR brakes; was null until
+  2026-10-28, user's call; 1988 "C-Record" -> 560 Delta). Victory by existing overrides. Triomphe: FD 2314,
   RD 4155 1st version (not the 1986-only 0102057 long-cage leisure; the
   Gentleman Sport runs a double), crank 1515 0365, seatpost 5764, levers
   233, brakes 585, pedals 3719 905/000. Ofmega Premier FD 2419 / RD 4359 by
@@ -170,7 +171,7 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
   Master America rims "Campagnolo Victory or Ambrosio Metamorphosis ..." -> null.
 - Judgement: Junior Victory RD -> 4169 Victory S3 via the existing 1987+ range
   (catalogue says "Victory 86"); Junior SIS 600 FD stays on FD-6207 2481 (no
-  FD-6208 row). Left unlinked as in 1986: C-Record 180 brakes (null), Concor
+  FD-6208 row). C-Record 180 brakes -> 583 as 1986 (2026-10-28). Left unlinked: Concor
   saddles, bare 3ttt / ITM bars and stems, Gommitalia tyres, Formula Inox
   spokes, AL 11 and Deore SIS groups, Ofmega Premier crank / seatpost / pedals.
 - Colour pages (standard, MODA grid, bicolour codes 01-25) not transcribed.

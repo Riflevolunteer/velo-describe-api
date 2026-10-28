@@ -32,8 +32,9 @@
   headset 2968, seatpost 5761, shifters 6001 Retro-Friction; Ambrosio
   Metamorphosis 4899; Selle Italia Turbo 5508.
 - Overrides added (De Rosa block): Brake Levers 'campagnolo c record' ->
-  212 0118065 first gen; Brakes 'campagnolo c record' -> null (Delta not
-  shipping; as Cinelli Record Corsa / Colnago C-Record 180); Chains
+  212 0118065 first gen; Brakes 'campagnolo c record' -> 583 4061 Super Record v2
+  (Delta not shipping until late 1987; the group came with SR brakes;
+  was null until 2026-10-28, user's call); Chains
   'regina cx s' -> 1384 CX / CX-S; Saddles 'selle italia super turbo or
   turbo' -> null (either/or; matcher hit the 1992 Super Turbo row).
 - Left unlinked: "Cinelli or 3ttt" bars (either/or, bare brands), De Rosa
