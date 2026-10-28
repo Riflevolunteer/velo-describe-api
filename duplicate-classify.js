@@ -11,6 +11,9 @@
 //   generation     a different production run: year ranges that don't overlap
 //                  or a "v2" / "later version" / "type 3" marker
 //   review         the difference is none of the above; a person decides
+//   variant        a cosmetic row a person has reviewed and kept (REVIEWED_VARIANTS):
+//                  a special edition, a finish sold as its own model, or a
+//                  marking that dates the part
 //
 // Only duplicate and cosmetic are merge candidates; the rest are real parts.
 
@@ -18,8 +21,10 @@ const { GENERIC_WORDS } = require('./link-classify')
 
 const COSMETIC_WORDS = /\b(black|white|silver|gold|red|blue|green|grey|gray|yellow|orange|anodi[sz]ed|polished|painted|finish|lettering|lettered|incised|label|labelled|labeled|logo|washers?|cap nut|nut|hex socket|center ?bolt|centre ?bolt|decal|edition|font|engraved|stamped|color|colour|sticker|badge|printed|signature|on (the )?(levers?|body|barrel|backside)|in (a |an )?(circle|oval|ovals|indent|rectangle)|oblong rectangle|knurled)\b/i
 // Fitting, construction and material differences: a different part, not a repaint.
-// Drilling for lightness counts (Modolo Flash drilled / non-drilled, drilled cogs).
-const CONFIG_WORDS = /\b(double|triple|single|pista|strada|road|track|cross|tandem|mtb|touring|left|right|lh|rh|front|rear|quick release|qr|braze[- ]?on|clincher|tubular|\d+ ?(speed|mm|t|bcd)|bcd|short|long|cage|compact|(high|low|large|small)[ -]?flange|flange|pieces?|mount|clamps?|band|tab|spiders?|arms?|pins?|flutes?|fluted|rails?|springs?|wires?|taper|cottered|cotterless|expander|steel|alloy|alu(minum|minium)?|titanium|cro-?moly|chromoly|leather|suede|forged|smooth|slotted|holes|drilled|pulleys?|inner|outer|aero|sidepull|quill|girder|ferrule|sleeved|speed indicator)\b/i
+// Drilling for lightness counts (Modolo Flash drilled / non-drilled, drilled cogs), and so do shape
+// and machining: lever shape, plug, base, races, cup flats, bolt count, cable stops (cosmetic review
+// 2026-10-28: Altenburger, Cyclo Benelux, Magistroni, STM, AVA, Way Assauto, SunTour Cyclone).
+const CONFIG_WORDS = /\b(double|triple|single|pista|strada|road|track|cross|tandem|mtb|touring|left|right|lh|rh|front|rear|quick release|qr|braze[- ]?on|clincher|tubular|\d+[ -]?(speed|mm|t|bcd)|bcd|short|long|cage|compact|(high|low|large|small)[ -]?flange|flange|pieces?|mount|clamps?|band|tab|spiders?|arms?|pins?|flutes?|fluted|rails?|springs?|wires?|taper|cottered|cotterless|expander|steel|alloy|alu(minum|minium)?|titanium|cro-?moly|chromoly|leather|suede|forged|smooth|slotted|holes|drilled|pulleys?|inner|outer|aero|sidepull|quill|girder|ferrule|sleeved|speed indicator|grooved|straight|(longer|shorter) lever|plastic body|plugs?|(squared|rounded) base|races|flats|milled|(one|two|single|twin)[ -]bolts?|stops?|(narrow|wide) (enlarged )?cent(er|re) section)\b/i
 const GENERATION_WORDS = /\b(v\d|version|type \d|gen|generation|first|second|third|1st|2nd|3rd|early|earlier|later|late|new style|old style|mk ?\d|mark \d|prototype)\b/i
 
 // Qualifiers in round or square brackets ("[black label]").
@@ -98,6 +103,20 @@ function relate(row, survivor) {
 
 const MERGE_CANDIDATE = new Set(['duplicate', 'cosmetic'])
 
+// Cosmetic rows a person reviewed and kept as real variants (2026-10-28, user's call: case by case,
+// none merged). buildGroups reports them as 'variant', so they stop showing as merge candidates.
+const REVIEWED_VARIANTS = new Map([
+  [387, 'special edition: Modolo Speedy La Vie Claire (levers)'],
+  [887, 'special edition: Modolo Speedy La Vie Claire (brakes)'],
+  [5564, 'special edition: San Marco Rolls 1986 World Championship'],
+  [7427, 'finish model: Dura-Ace DA-100 silver beside the Black Series 4501'],
+  [4880, 'finish model: Alesa 913 Hard Anodized'],
+  [2118, 'dating marking: Maillard Normandy cog lettered Normandy'],
+  [2119, 'dating marking: Maillard Normandy body lettered Normandy on backside'],
+  [3036, 'dating marking: Magistroni L. MAGISTRONI lettered on upper race'],
+  [2551, 'dating marking: Simplex Competition LE SIMPLEX Bte SGDG badge (1949-55)'],
+])
+
 // --- Near pairs: the same part under another brand row or another name ---
 //
 // buildGroups only sees rows of one brand whose titles agree outside the
@@ -158,14 +177,14 @@ const REVIEWED_NOT_DUPLICATES = [
   [2661, 2662], // different part: SunTour FD-XD00-GX, XCD 6000 / SunTour XCD 6000 (1990)
   [2682, 2683], // different part: Zeus Alfa 65 / Zeus Alfa (push rod style)
   [8531, 8618], // different part: Nitto Mod. 185 / Nitto Mod. 185-H
-  [2953, 2954], // finish variant (cosmetic decision): Campagnolo C-Record (Century Finish) / Campagnolo 304/104, C-Record
+  [2953, 2954], // finish variant, kept (cosmetic review 2026-10-28): Campagnolo C-Record (Century Finish) / Campagnolo 304/104, C-Record
   [3004, 3006], // different part: Gipiemme Crono Sprint 500CE (Economy) / Gipiemme Crono Sprint 500 BP
   [3256, 3273], // different part: Campagnolo 1006, Gran Sport / Campagnolo 1006/A, Sport
   [3408, 8160], // different part: Mavic 580 CX / Mavic 580 CX Piste
   [3708, 3709], // different part: Campagnolo 1037, Record Strada / Campagnolo 1037/a, Record Strada Super
   [3989, 7247], // Spidel badge variant: Spidel/Atom/Maillard 600 / Maillard Atom 600 Sport
   [4281, 4299], // different part: Huret Super Success 2470 S / Huret Success 2460 / 2470
-  [4303, 4304], // finish variant (cosmetic decision): Huret Jubilee 2200 / 2252 / 2240 (firs / Huret Jubilee 2200 / 2252 / 2240 (firs
+  [4303, 4304], // finish variant, kept (cosmetic review 2026-10-28): Huret Jubilee 2200 / 2252 / 2240 (firs / Huret Jubilee 2200 / 2252 / 2240 (firs
   [4600, 4669], // Spidel badge variant: Simplex LJ1000 T / Spidel LJ1000 T (Simplex)
   [4650, 4670], // Spidel badge variant: Simplex SLJ5000 / Spidel SLJ5000 (Simplex)
   [5071, 8191], // different part: Mavic M 231 CD / Mavic M 231
@@ -380,11 +399,14 @@ function buildGroups(rows) {
     if (members.length < 2) continue
     const survivor = pickSurvivor(members)
     const others = members.filter(r => r !== survivor)
-      .map(row => ({ row, relation: relate(row, survivor) }))
+      .map(row => {
+        const relation = relate(row, survivor)
+        return { row, relation: relation === 'cosmetic' && REVIEWED_VARIANTS.has(row.component_id) ? 'variant' : relation }
+      })
       .sort((a, b) => a.row.component_id - b.row.component_id)
     groups.push({ survivor, others })
   }
   return groups.sort((a, b) => b.others.length - a.others.length || a.survivor.component_id - b.survivor.component_id)
 }
 
-module.exports = { groupKey, fullKey, yearRange, yearsDisjoint, pickSurvivor, relate, buildGroups, MERGE_CANDIDATE, codesOf, brandsCompatible, findNearPairs }
+module.exports = { groupKey, fullKey, yearRange, yearsDisjoint, pickSurvivor, relate, buildGroups, MERGE_CANDIDATE, REVIEWED_VARIANTS, codesOf, brandsCompatible, findNearPairs }

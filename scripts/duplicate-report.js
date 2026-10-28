@@ -1,6 +1,6 @@
 // Reports component_detail rows that look like the same part (see
 // duplicate-classify.js): one survivor per group, each extra row tagged
-// duplicate / cosmetic / configuration / generation / review, with how many
+// duplicate / cosmetic / configuration / generation / review / variant, with how many
 // bike_specs would need repointing if it were merged away. Read-only; merging
 // is a separate reviewed .sql file run through scripts/load-sql.js.
 //
@@ -118,7 +118,7 @@ conn.query(sql, (err, rows) => {
   }
 
   console.log(`${groups.length} groups, ${rows.length} component_detail rows scanned`);
-  for (const rel of ['duplicate', 'cosmetic', 'configuration', 'generation', 'review']) {
+  for (const rel of ['duplicate', 'cosmetic', 'configuration', 'generation', 'review', 'variant']) {
     const t = tally[rel];
     if (t) console.log(`  ${rel.padEnd(13)} ${String(t.rows).padStart(4)} rows, ${t.repoint} bike_specs on them`);
   }

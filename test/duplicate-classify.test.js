@@ -1,7 +1,7 @@
 // node test/duplicate-classify.test.js (npm test)
 const test = require('node:test')
 const assert = require('assert')
-const { groupKey, relate, buildGroups, findNearPairs, brandsCompatible } = require('../duplicate-classify')
+const { groupKey, relate, buildGroups, findNearPairs, brandsCompatible, MERGE_CANDIDATE } = require('../duplicate-classify')
 
 let nextId = 1
 const row = (title, extra = {}) => ({
@@ -152,4 +152,25 @@ test('pairs reviewed and kept apart are left out unless asked for', () => {
 
 test('drilling for lightness is a configuration, not a finish', () => {
   assert.strictEqual(relate(row('Modolo Flash (drilled)'), row('Modolo Flash (non-drilled)')), 'configuration')
+})
+
+test('shape, machining and speed-count differences are configurations', () => {
+  const base = row('Altenburger (black button)')
+  assert.strictEqual(relate(row('Altenburger (finger grooved)'), base), 'configuration')
+  assert.strictEqual(relate(row('Altenburger (straight lever)'), base), 'configuration')
+  assert.strictEqual(relate(row('Way-Assauto (flats on cups)'), row('Way Assauto (knurled on cups)')), 'configuration')
+  assert.strictEqual(relate(row('STM (two bolts, two black ribs)'), row('STM (straight post)')), 'configuration')
+  assert.strictEqual(relate(row('Regina Extra BX (6-speed, silver)'), row('Regina Extra BX (5-speed)')), 'configuration')
+  assert.strictEqual(relate(row('SunTour Cyclone (no cable housing stop; black anodized)'), row('SunTour Cyclone (with cable housing stop)')), 'configuration')
+})
+
+test('reviewed cosmetic rows report as kept variants, not merge candidates', () => {
+  const survivor = row('Modolo Speedy', { component_id: 386, source_ref: 9 })
+  const edition = row('Modolo Speedy (La Vie Claire edition)', { component_id: 387 })
+  const other = row('Modolo Speedy (red lettering)', { component_id: 99999 })
+  const [group] = buildGroups([survivor, edition, other])
+  const byId = Object.fromEntries(group.others.map(o => [o.row.component_id, o.relation]))
+  assert.strictEqual(byId[387], 'variant')
+  assert.strictEqual(byId[99999], 'cosmetic')
+  assert.ok(!MERGE_CANDIDATE.has('variant'))
 })
