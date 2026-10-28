@@ -11,9 +11,9 @@
 //   generation     a different production run: year ranges that don't overlap
 //                  or a "v2" / "later version" / "type 3" marker
 //   review         the difference is none of the above; a person decides
-//   variant        a cosmetic row a person has reviewed and kept (REVIEWED_VARIANTS):
-//                  a special edition, a finish sold as its own model, or a
-//                  marking that dates the part
+//   variant        a cosmetic or duplicate row a person has reviewed and kept
+//                  (REVIEWED_VARIANTS): a special edition, a finish sold as its own
+//                  model, a marking that dates the part, or two runs under one title
 //
 // Only duplicate and cosmetic are merge candidates; the rest are real parts.
 
@@ -103,8 +103,9 @@ function relate(row, survivor) {
 
 const MERGE_CANDIDATE = new Set(['duplicate', 'cosmetic'])
 
-// Cosmetic rows a person reviewed and kept as real variants (2026-10-28, user's call: case by case,
-// none merged). buildGroups reports them as 'variant', so they stop showing as merge candidates.
+// Cosmetic or duplicate rows a person reviewed and kept as real variants (2026-10-28, user's call:
+// case by case, none merged). buildGroups reports them as 'variant', so they stop showing as merge
+// candidates.
 const REVIEWED_VARIANTS = new Map([
   [387, 'special edition: Modolo Speedy La Vie Claire (levers)'],
   [887, 'special edition: Modolo Speedy La Vie Claire (brakes)'],
@@ -115,6 +116,7 @@ const REVIEWED_VARIANTS = new Map([
   [2119, 'dating marking: Maillard Normandy body lettered Normandy on backside'],
   [3036, 'dating marking: Magistroni L. MAGISTRONI lettered on upper race'],
   [2551, 'dating marking: Simplex Competition LE SIMPLEX Bte SGDG badge (1949-55)'],
+  [6201, 'two runs under one title: Simplex double, 1950-55 80 g beside the 1955-56 70 g 6200 (kept 2026-10-24)'],
 ])
 
 // --- Near pairs: the same part under another brand row or another name ---
@@ -401,7 +403,8 @@ function buildGroups(rows) {
     const others = members.filter(r => r !== survivor)
       .map(row => {
         const relation = relate(row, survivor)
-        return { row, relation: relation === 'cosmetic' && REVIEWED_VARIANTS.has(row.component_id) ? 'variant' : relation }
+        const kept = (relation === 'cosmetic' || relation === 'duplicate') && REVIEWED_VARIANTS.has(row.component_id)
+        return { row, relation: kept ? 'variant' : relation }
       })
       .sort((a, b) => a.row.component_id - b.row.component_id)
     groups.push({ survivor, others })

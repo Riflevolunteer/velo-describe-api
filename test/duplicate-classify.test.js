@@ -174,3 +174,10 @@ test('reviewed cosmetic rows report as kept variants, not merge candidates', () 
   assert.strictEqual(byId[99999], 'cosmetic')
   assert.ok(!MERGE_CANDIDATE.has('variant'))
 })
+
+test('a reviewed exact-title pair reports as a kept variant', () => {
+  const later = row('Simplex double (both levers on right)', { component_id: 6200, year_from: '1955', year_to: '1956' })
+  const earlier = row('Simplex double (both levers on right)', { component_id: 6201, year_from: '1950', year_to: '1955' })
+  assert.strictEqual(relate(earlier, later), 'duplicate')
+  assert.strictEqual(buildGroups([later, earlier])[0].others[0].relation, 'variant')
+})
