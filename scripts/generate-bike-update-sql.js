@@ -1428,6 +1428,10 @@ const COMPONENT_OVERRIDES = {
     'tange cma 60': [{ from: 1983, to: 1987, id: 3144 }],
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'tange mtb 225 fully sealed': 3154, // 1987 Raleigh Maverick 18 Pro; as "Tange MTB 225" on the Randonneur 18
+    'tange fl 225 sealed headset': 3154, // 1985 Raleigh Crested Butte: FL-225 read as the MTB-225 Levin, as 1987
+    // 1981 Kalkhoff Amateur / 1983-84 Raleigh Competition 12: Tange Seiki LV-11, Levin (1980-2000).
+    'tange new levin': [{ from: 1980, to: 2000, id: 3152 }],
+    'tange nl': [{ from: 1980, to: 2000, id: 3152 }],
     'shimano 600 alloy': [{ from: 1983, to: 1987, id: 3090 }], // 1986 Raleigh Prestige / Competition; as the bare 'shimano 600' headset range (HP-6207 600EX)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105': [{ from: 1987, to: 1987, id: 3083 }], // Competition / Triathlon headset: HP-1050 105
@@ -1477,6 +1481,7 @@ const COMPONENT_OVERRIDES = {
     // Headset link pass 2026-10-26 (from /linkCoverage).
     'tange cd': 3155, // 1990 Bianchi Alfana / Virata: Tange-Seiki Levin CD, as the 1993 'tange cd sealed'
     'hatta "vesta" sealed steel cp': 3020, // 1986 Raleigh Elkhorn: Hatta Vesta, as the 1990 Bianchi "Hatta Vesta"
+    'hatta steel cp sealed': 3020, // 1986 Raleigh Teton / Seneca: same wording as the Elkhorn, no model printed
     'campagnolo sport': [{ from: 1971, to: 1985, id: 2951 }], // 1978 Bianchi Campione del Mondo CX: 1040/A Gran Sport ("sold as the Sport head set")
   },
   'Bottom Brackets': {
@@ -1756,6 +1761,11 @@ const COMPONENT_OVERRIDES = {
     'cinelli #2': 5332, // Cinelli Unicanitor #2 suede
     // 1987 Bianchi.
     'selle italia special mundialita': 5497, // Selle Italia Mundialita
+    'selle italia super mundialita': [{ from: 1985, to: 1990, id: 5497 }], // 1990 Bianchi Super Leggera, as above
+    // 1985 Bianchi Strada / Randonneur 700: "ANA" read as the Selle Italia Anatomic (1979-85). The 1987
+    // Raleigh "padded black anatomic" is past the row and stays unlinked.
+    'selle italia ana': [{ from: 1979, to: 1985, id: 8759 }],
+    'selle italia ana camoscio': [{ from: 1979, to: 1985, id: 8759 }],
     // 1993 Bianchi. "Turbo-Matic" in 1993 is the Turbo Matic 2; bare "Flite"
     // is ambiguous across six variants, the original is the Titanium.
     'selle italia turbo matic': 5516, // Selle Italia Turbo Matic 2
@@ -1771,6 +1781,14 @@ const COMPONENT_OVERRIDES = {
     'san marco 313 1': [{ from: 1970, to: 1985, id: 5553 }],
     'san marco 313 1 luxe race': [{ from: 1970, to: 1985, id: 5553 }],
     'san marco 313 2': [{ from: 1970, to: 1985, id: 5553 }],
+    // 1982 Battaglin Marostica: GI-LUX 312 (1980-84). The 1978 Peugeot "Gilux race" predates it and 311 is
+    // undated, so those stay unlinked.
+    'san marco gi lux': [{ from: 1980, to: 1984, id: 5556 }],
+    // 1970 Raleigh Grand Prix / Record: Wrights W3N, as the 1972 Raleighs print it.
+    'wrights w3': [{ from: 1970, to: 1970, id: 5703 }],
+    // 1981 Bianchi Super Corsa / Super Leggera: 3ttt 50/9 Criterium Competizione (row 1970-80, a year short).
+    '3ttt competition': [{ from: 1970, to: 1981, id: 5230 }],
+    unicanitor: [{ from: 1950, to: 1976, id: 5326 }], // 1975 Motobecane Team Champion: the base Unicanitor Mod. 50
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'mattress': null, // generic; matcher hit a Brooks mattress saddle
     // Saddle link pass 2026-10-26 (from /linkCoverage).
@@ -1821,6 +1839,7 @@ const COMPONENT_OVERRIDES = {
     // ambiguous across the four GB Maes rows.
     'gb maes alloy embossed': 2843, // GB Maes (alloy, with ferrule)
     'gb maes alloy engraved': 2843,
+    '613 maes embossed': [{ from: 1962, to: 1975, id: 2843 }], // 1970 Professional Mk II, as the 1971-73 "G.B. Maes Alloy Embossed"
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'cinelli no 65 alloy bend': 2804, // Team Replica: Cinelli 65 Criterium
     'cinelli no 65 engraved alloy bend': 2804, // Gran Sport
@@ -1833,12 +1852,24 @@ const COMPONENT_OVERRIDES = {
     'cinelli pista handlebars': 2811, // Cinelli 67 Pista (old logo)
     // 1975 Motobecane.
     'philippe professional': 2895, // Philippe Professionnel
+    // 1974-76 Peugeot PX 10 LE / PX 60: bare "Philippe" / "Philippe Dural", as the 1977-78 PX 10s'
+    // Professionnel. Ranged so the 1982 PX 10 DU's bare "Philippe" stays unlinked.
+    philippe: [{ from: 1974, to: 1976, id: 2895 }],
+    'philippe dural': [{ from: 1974, to: 1976, id: 2895 }],
+    // 1982-83 Peugeot: the French "Course" bend, Philippe Franco Belge 354 (1979-82), as the 1980 NL
+    // `atax race bend 420 mm`.
+    'aluminium race bend': [{ from: 1979, to: 1983, id: 2901 }],
+    'aluminium race bend cables routed through the bar': [{ from: 1979, to: 1983, id: 2901 }],
+    'aluminium race bike ribbon tape': [{ from: 1979, to: 1983, id: 2901 }],
     "cinelli giro d'italia": 2801, // Cinelli 64 Giro D'Italia (70's model)
     // 1973 Falcon San Remo Model 94: bare "Cinelli", as the 1974 San Remo 94's Giro d'Italia bar. Bike-scoped:
     // the San Remo 96 / 98, Kalkhoff, Battaglin and other bare "Cinelli" bars have no precedent.
     cinelli: [{ bike: 'San Remo Model 94', from: 1973, to: 1973, id: 2801 }],
     // 1990 Bianchi Signature 2: ITM ITALIA-Pro (black), 1980-90.
     'itm pro': [{ from: 1980, to: 1990, id: 2854 }],
+    'itm pista': [{ from: 1985, to: 1990, id: 9194 }], // 1990 Bianchi Pista: the only ITM track bar (1985-88)
+    // 1984 Raleigh Corsa 12: Cinelli 65 Criterium, as the 1983 Gran Sport "Cinelli No. 65 engraved alloy bend".
+    'cinelli engraved alloy bend': [{ from: 1975, to: 1988, id: 2804 }],
     // 2026-10-08 link-gap pass (weakest categories).
     // 1974 Motobecane Le Champion: the only plain "Record" bar; the Record
     // Competizione rows are a different (named) model.
@@ -1900,6 +1931,9 @@ const COMPONENT_OVERRIDES = {
     'nitto technomic aero 80 mm (510) 90 mm (530 550)': null,
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'cinelli 1a': 6489, // Team Replica: Cinelli 1A (winged "C" logo), as the 1983 'cinelli no 1a'
+    // 1973-74 Falcon San Remo: bare "Cinelli" stem, the 1A of the Cinelli Milano logo era (1972-78). Ranged
+    // so the 1984 Peugeot PZ 10's bare "Cinelli" stays unlinked.
+    cinelli: [{ from: 1972, to: 1974, id: 6487 }],
     // 1986 Colnago: "attacco 3TTT mod. 84 nero" = the black AR84N (1986-91), not the silver AR84.
     '3ttt mod 84': 8296, // 3ttt AR84N, Mod. 84 (black)
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
@@ -1929,7 +1963,10 @@ const COMPONENT_OVERRIDES = {
       { bike: 'Professional Track DL 175', id: 6420 }, // 3ttt Mod. 2, Record Pista (64 degree)
       { to: 1974, id: 6417 }, // 3ttt Mod. 1 Record Strada (first version)
     ],
-    '3ttt record': [{ to: 1974, id: 6417 }],
+    // 1981 Bianchi Super Turismo / Rekord 748 "T.T.T. Rekord": the AR Record (1980-91), as the 1983-84
+    // bare-"TTT" rule; the same catalogue names the Mod. 78 separately.
+    '3ttt record': [{ to: 1974, id: 6417 }, { from: 1980, to: 1991, id: 6404 }],
+    '3ttt record specific sizes': [{ from: 1980, to: 1991, id: 6404 }],
     '3ttt record lightweight alloy': [{ to: 1974, id: 6417 }],
     'new 3ttt record': [{ bike: 'Professional Track DL 175', id: 6420 }],
     // 1972-73 Raleigh Professional Track DL 175: the 1974-76 specs on the same model link the Mod. 2 Record Pista.
@@ -1942,6 +1979,15 @@ const COMPONENT_OVERRIDES = {
     'new 3ttt record alloy': [{ from: 1975, to: 1976, id: 6416 }], // 3ttt Mod. 1 Record Strada (2nd version); the 1976 Professional Mk IV repeats the 1975 text
     'itm 400': 6564, // ITM 400 Racing
     'sr custom': 6659, // Sakae/Ringyo (SR) CUSTOM
+    // 1983-87 Raleigh "SR / Sakae Custom light alloy", as `sr custom` above (row dated 1980; 8234 "CT,
+    // Custom" may be the same stem, a duplicate to review). The 1984 "Custom Alloy" names no maker; the
+    // other 1984 Raleighs print SR Custom.
+    'sr custom light alloy': [{ from: 1980, to: 1987, id: 6659 }],
+    'sakae custom light alloy': [{ from: 1980, to: 1987, id: 6659 }],
+    'custom alloy': [{ from: 1984, to: 1984, id: 6659 }],
+    // 1986 Raleigh "SR CT (forged) alloy": SR CT, Custom (row 1978-82).
+    'sr ct alloy': [{ from: 1978, to: 1986, id: 8234 }],
+    'sr ct forged alloy': [{ from: 1978, to: 1986, id: 8234 }],
     // 1985 Raleigh (Sheldon Brown scan).
     'sr ae alloy aero black': 6657, // Sakae/Ringyo (SR) Aero
     // 1986 Cinelli (Ten Speed Drive Imports).
@@ -1953,7 +1999,8 @@ const COMPONENT_OVERRIDES = {
     // 1973 Raleigh. Also substring-hits the 1950s Hiduminium spearpoint.
     'gb forged alloy': 6533, // GB Forged
     // Stem link pass 2026-10-26 (from /linkCoverage).
-    'itm 200': [{ from: 1985, to: 1988, id: 9202 }], // 1987 Bianchi Limited / Squadra / Pista: ITM Mod. 200 (1985-88)
+    // 1987 Bianchi Limited / Squadra / Pista and 1990 Campione d'Italia: ITM Mod. 200 (row 1985-88).
+    'itm 200': [{ from: 1985, to: 1990, id: 9202 }],
     'itm 100': [{ from: 1985, to: 1988, id: 9203 }], // 1987 Bianchi Campione d'Italia: ITM Mod. 100
     'itm 300': [{ from: 1985, to: 1988, id: 9201 }], // 1987 Bianchi Trofeo: ITM Mod. 300
     'atax asc anodized': 8507, // 1984 Peugeot PRO 10 / PY 10: ATAX ASC Aerodynamic (1982-84)
@@ -2228,6 +2275,10 @@ const COMPONENT_OVERRIDES = {
     'sr ctp 5 laprade alloy micro adjust': 5857,
     'sr cpt 5 laprade micro adjust': 5857,
     'sr laprade ctp5 alloy micro adjust': 5857,
+    'sp laprade alloy micro adjust': 5857, // Grand Prix, by the same catalogue's rule
+    'sr laprade micro adjust': 5857, // Alyeska / Kodiak (MTBs; may be the longer post, no row for it)
+    // 1988 Colnago Master Mountainbike: SP-M730 (row 1989-97; the M730 group dates from 1987).
+    'shimano deore xt sis': [{ from: 1987, to: 1997, id: 5892 }],
     'simplex sj4164': 5905, // 1980 Peugeot (NL) PY 10 LC ("all parts Spidel"): Spidel SLJ 4164
     // 1980-81 Peugeot PRO 10 / PY 10 S: the only Spidel post row, and SLJ 4164 is the fluted anodised one
     // (as the 1980 PY 10 LC above).
@@ -2561,6 +2612,11 @@ const COMPONENT_OVERRIDES = {
     'atom 14 26': [{ from: 1960, to: 1977, id: 2044 }],
     'atom 14 28 with huret spoke protector': [{ from: 1960, to: 1977, id: 2044 }], // Grand Jubile
     'atom 14 32 with huret spoke protector': [{ from: 1960, to: 1977, id: 2044 }], // Tandem
+    // 1981-82 Peugeot: Normandy Sport, the only 6-speed Normandy in the 1982 catalogue (row 1982). The 1980
+    // PKN / PVN 10 print the same cluster but predate it, so they stay unlinked.
+    'maillard normandy 14 15 17 19 21 24': [{ from: 1981, to: 1982, id: 8129 }],
+    'maillard normandy 13 14 15 17 19 21': [{ from: 1981, to: 1982, id: 8129 }],
+    'everest alloy 13 21 6 speed': [{ from: 1976, to: 1981, id: 9072 }], // 1981 Bianchi Super Corsa: Everest Dural (5 / 6 speed)
     'regina rlsy90 silver 13 23t 7 speed': 2205, // 1990 Bianchi Super Leggera / Giro: Regina Synchro 90-S (7 speed); its 1992 Strada block is 13-23
     'sun tour ultra 7 13 32t': 2237, // 1980 Raleigh Touring 14: SunTour NW-7000, New Winner Ultra 7 (the only Ultra-7 row in range)
     // 1990 Bianchi Grizzly / Project 7 (XC-Pro groups); the row is under Cassettes, the CSV label is Freewheel.
@@ -2588,6 +2644,10 @@ const COMPONENT_OVERRIDES = {
     // as the Clement Colnago the Mexico sheet names.
     'colnago super corsa tubulars': [{ from: 1979, to: 1979, id: 6743 }],
     'colnago tubulars': [{ from: 1979, to: 1979, id: 6743 }],
+    'clement cotton tubulars': [{ from: 1975, to: 1983, id: 8972 }], // 1978 Bianchi: Criterium Cotone, as the 1981 Bianchi
+    // 1982 Battaglin: Cronometro CS (1980-88; Pista CS starts 1983) and Corsa CX Servizio Corse (1980-83).
+    'vittoria cs satinato': [{ from: 1980, to: 1988, id: 6885 }],
+    'vittoria cx': [{ from: 1980, to: 1983, id: 6880 }],
     'clement strada 66 lightweight cotton tubular': 6775, // 1974 Raleigh International: Clement Strada 66 (red label)
     'clement criterium silk tubular': 6748, // Clement Criterium Seta (seta = silk)
     // 1975 Motobecane "Wheel Rims & Tires" cells, split by splitCellValue
@@ -2627,6 +2687,13 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin Super Pista: Nisi 00110 Pista Speciale, the five-digit row as the other 1982 Battaglin
     // Nisi overrides (row dated 1985-88), not the duplicate 5138 M20.
     'nisi pista special': [{ from: 1982, to: 1988, id: 9225 }],
+    // 1987 Bianchi: Ambrosio Super Elite (1985-88), which the other 1987 Bianchis print in full.
+    'ambrosio elite': [{ from: 1985, to: 1988, id: 4909 }],
+    // 1987 Bianchi Pista: Nuovo Montreal Crono (1985-88) by date. The 1990 "Montreal black" is a different
+    // key and past the row, so it stays unlinked.
+    'ambrosio montreal': [{ from: 1985, to: 1988, id: 9175 }],
+    // 1984 Raleigh Competition 12 / Corsa 12: Weinmann A124 Super X (1978-83), as the 1983 Competition.
+    'weinmann high strength narrow section eyeletted alloy': [{ from: 1978, to: 1984, id: 7776 }],
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'mavic special': null, // "speciale MAVIC": a special Mavic rim, not the Service des Courses row the substring hits
     'mavic special sport': [{ from: 1980, to: 1991, id: 5109 }], // 1981 Bianchi: Mavic Spéciale Sport tubular (c. 1980 catalogue, 400 g)
