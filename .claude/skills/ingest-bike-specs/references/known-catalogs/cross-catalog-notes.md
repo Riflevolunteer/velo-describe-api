@@ -505,3 +505,13 @@ is the "known drift" noted above (1978 / 1979 Peugeot, 1990 Bianchi). Two causes
   (keyed by display brand: '1989|de rosa'); re-generating each catalogue shows
   them in the "Skipped" line. The 1987 Colnago framesets were never loaded.
 - Framesets are now out of scope in the skill's step 0.
+
+## Ladies' / mixte scope check — 2026-10-28
+
+After ladies' and mixte road / touring models were put in scope (SKILL.md scope check), every brand's notes
+were checked for models held out under the old rule. Only Peugeot had any (1975-84, 42 bikes loaded; see
+peugeot.md). Raleigh prints its ladies' versions in the gents' spec columns: loaded combined as "... & DL
+100L" in 1974-76, and inside the 1972 Record DL 130 (saddle "Leather-Racing (gents), Mattress (ladies)") and
+1987 Ventura 12 (Gents + Lady's) rows; the 1971 DL-115L / DL-130L and 1973 DL 100L appear only in the text.
+Raleigh 1983 Medale 5 & 10 Ladies, Colnago 1986 Lady Sport and Falcon 1973-74 Models 69 / 71 were already
+loaded. Battaglin Turismo (mixte city) and Falcon 83 / 89 (utility, deleted with their men's 82 / 88) stay out.
