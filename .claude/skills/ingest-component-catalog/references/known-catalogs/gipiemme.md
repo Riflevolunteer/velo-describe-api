@@ -227,5 +227,20 @@
   270 entry suspected. No rows changed.
 - The bare Gipiemme rows still without a catalogue source (about 28 derailleurs, brakes, levers and shifters: Azzurra,
   Azzurro, Bagarre, Dual Sprint, Special, Sprint, White Laser, Exploit) need a genuine early-1980s source; the remaining
-  lead is velo-pages "Catalogs & Ads 1978-1984" (`g2_itemId=65`), not yet checked.
+  lead was velo-pages "Catalogs & Ads 1978-1984" (`g2_itemId=65`), checked the same day: see below.
+
+## velo-pages "Gipiemme / GPM" folder (album 65, Wayback, checked 2026-10-28): only thumbnails survive
+
+- Album 65 is the whole Gipiemme folder: adverts 06-1978 (1465), 05-1979 (1469), 06-1979 (1472), 07-1979 (25471),
+  09-1979 (1475), 11-1979 (1478); Bicycling 11-1979 "Super Lightweight Components" (album 1481, pages 1485 / 1489 /
+  1492); **"Gipiemme brochure (1980)"** (album 1482, pages 1495 / 1499 / 1502); "Gipiemme catalog (1982)" (1483, the
+  mislabelled c. 1986-87 catalogue above); **"Gipiemme brochure (1982)"** (album 69471); "catalog - ONLY PARTIAL
+  (10-1984)" (1484, = `data_source` 269, which disraeligears has in full).
+- The Wayback Machine holds only 3.6-5.9 KB thumbnails of the 1979 article and 1980 brochure pages (1488, 1498, 1503),
+  and has **no capture at all** of album 69471. velo-pages.com still answers HTTP 500 to every request. So the
+  early-1980s brochures exist but can't be read; the velo-pages leads for Gipiemme are exhausted.
+- The ~28 bare Gipiemme rows (Azzurra, Azzurro, Bagarre, Dual Sprint, Special, Sprint, White Laser, Exploit
+  derailleurs, brakes, levers, shifters) stay as they are until another early-1980s source turns up (a dealer
+  catalogue such as a Bikecology / Palo Alto / Bike Warehouse page that lists Gipiemme, or a magazine group test).
+
 
