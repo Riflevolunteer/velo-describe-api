@@ -511,7 +511,7 @@
   found three older duplicates, left alone: Shifters 'suntour accushift plus x press' and 'suntour superbe
   pro', Pedals 'sr sp12 platform alloy'.
 
-## 1983 Peugeot — `1983_peugeot_spec.csv` (CA, data_source 255: 9 bikes, 109 specs, 32 linked) and `1983_peugeot_nl_spec.csv` (NL, data_source 256: 15 bikes, 126 specs, 19 linked)
+## 1983 Peugeot — `1983_peugeot_spec.csv` (CA, data_source 255: 11 bikes, 133 specs, 43 linked) and `1983_peugeot_nl_spec.csv` (NL, data_source 256: 21 bikes, 182 specs, 25 linked)
 
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1983.html (33 PeugeotShow scans,
   loaded 2026-10-22). Images 1-10: bilingual English / French "Peugeot - Pleasure that lasts / Un plaisir
@@ -528,9 +528,14 @@
   (new aerodynamic), PH 12, PBN 10, PKN 10, PFN 10, PSVN 10 (new, Super Vitus 980, Helicomatic, 9.9 kg), PVN
   10, PXN 10, PX 10 Du (new, Vitus Duralinox 979, 8.6 kg, to order), PY 10 FC (new, carbon fibre main tubes
   with Duralinox stays / fork / head tube, Stronglight 107 Ti, Ofmega Sintesi, Sedis Nickelée, 7.6 kg).
-- Not loaded: CA PBL 12 (staggered), UO 16C and UE 19 (mixte), C 46 Sprint Junior (24 in), VX 40 Classique
-  (Sturmey 3-speed), TX 30 Tourisme and UE 6 Sport (flat bars). NL PH 15, PH 18 C, PX 18 M / PX 18 MC
-  (ladies'), the Tradition V 40/45 FC-RVS, VL 40/45 FC, V 22/25 M and PH 46 M / PH 41 M (town), CPX BMX.
+- Loaded 2026-10-28 (ladies' / mixte now in scope): CA PBL 12 Course (no. 434, staggered 54 cm ladies' PB 12,
+  image 3) and UO 16C Sport (no. 405, 103 mixte, image 6); NL p. 9 PH 18 SC and the men's PH 8 S (missed by
+  the first pass, on no list), p. 10 PH 18 C (mixte PH 8; the photo shows a raised sport bar), p. 11 PX 18 M
+  (demi-course) / PX 18 MC (race bend), p. 15 PH 15 (spaced parallel-tube ladies' racer). 8 bikes, 80 specs,
+  7 linked (the Dutch book prints prose and a small table only).
+- Not loaded: CA UE 19 (mixte UE 6: flat bars; a ladies' / mixte model loads when its men's version is
+  loaded, and the UE 6 isn't), C 46 Sprint Junior (24 in), VX 40 Classique (Sturmey 3-speed), TX 30
+  Tourisme and UE 6 Sport (flat bars). NL the Tradition V 40/45 FC-RVS, VL 40/45 FC, V 22/25 M and PH 46 M / PH 41 M (town), CPX BMX.
 - Overrides: Canadian derailleur suffixes read as the standard models: Rear 'simplex slj 5500 cp sp' ->
   7309, 'lj 4000 cp sp' -> 4603 (version 2, 1978-84), 'lj 1000 cp sp' -> 4646 (row 1975-81), 'sx 810 t p'
   -> 4617 (row 1977-81), 'sx 410 gt p' -> 4620; Front 'simplex sja 422' -> 7263 SLJ A422, 'sx a 32' ->
