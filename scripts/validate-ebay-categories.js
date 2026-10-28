@@ -21,7 +21,8 @@ const { BICYCLE_PARTS, TYRES_TUBES_WHEELS, CYCLING, COMPONENT_CATEGORY_LEAVES } 
 //   node scripts/validate-ebay-categories.js EBAY_AU,EBAY_CA
 const MARKETPLACES = process.argv[2]
   ? process.argv[2].split(',').map(m => m.trim().toUpperCase())
-  : ['EBAY_US', 'EBAY_GB', 'EBAY_DE', 'EBAY_FR', 'EBAY_IT'];
+  : ['EBAY_US', 'EBAY_AT', 'EBAY_AU', 'EBAY_BE', 'EBAY_CA', 'EBAY_CH', 'EBAY_DE', 'EBAY_ES',
+    'EBAY_FR', 'EBAY_GB', 'EBAY_HK', 'EBAY_IE', 'EBAY_IT', 'EBAY_NL', 'EBAY_PL', 'EBAY_SG'];
 
 async function get(path, accessToken) {
   const result = await fetch(`${config.marketplace.url}${path}`, { headers: { Authorization: `Bearer ${accessToken}` } });

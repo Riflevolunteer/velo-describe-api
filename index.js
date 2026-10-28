@@ -4,6 +4,7 @@ const EbayAuthToken = require('ebay-oauth-nodejs-client');
 const fetch = require('node-fetch');
 const loadEnv = require('./load-env');
 const { BICYCLE_PARTS, categoryLadder } = require('./ebay-categories');
+const { EBAY_REGIONS, REGION_MARKETPLACES, mergeRegionListings } = require('./ebay-regions');
 const { buildBrandIndex, classifyValue, ACTIONABLE_CLASSES, CLASS_ORDER } = require('./link-classify');
 
 var crypto = require('crypto'),
@@ -682,11 +683,15 @@ app.get('/linkCoverage', function (req, res, next) {
 // /getTopListings narrows further per component category (ebay-categories.js).
 const EBAY_BICYCLE_PARTS_CATEGORY_ID = BICYCLE_PARTS
 
-// Marketplaces this app is allowed to query, matching the brands' home
-// markets already covered by ingested catalogues (French Simplex, Italian
-// Campagnolo/Nisi, British Raleigh/Brooks, German Sachs). All confirmed live
-// against the Browse API with the category filter above before adding here.
-const EBAY_MARKETPLACES = new Set(['EBAY_US', 'EBAY_GB', 'EBAY_DE', 'EBAY_FR', 'EBAY_IT'])
+// What ?marketplace=ALL searches: the brands' home markets already covered by
+// ingested catalogues (French Simplex, Italian Campagnolo/Nisi, British
+// Raleigh/Brooks, German Sachs). Kept at these five for shipped builds that
+// hard-code ALL; new clients send ?region= instead.
+const ALL_EBAY_MARKETPLACES = ['EBAY_US', 'EBAY_GB', 'EBAY_DE', 'EBAY_FR', 'EBAY_IT']
+// Marketplaces this app is allowed to query: the five above plus every site a
+// region searches (ebay-regions.js). All confirmed live against the Browse
+// API with the category filter above (scripts/validate-ebay-categories.js).
+const EBAY_MARKETPLACES = new Set([...ALL_EBAY_MARKETPLACES, ...REGION_MARKETPLACES])
 const DEFAULT_EBAY_MARKETPLACE = 'EBAY_US'
 
 // Validates the optional ?marketplace= query param against EBAY_MARKETPLACES,
@@ -715,8 +720,23 @@ function resolveMarketplace(req) {
 // ?marketplace=EBAY_XX still narrows to just one.
 function resolveMarketplaces(req) {
   if (!req.query.marketplace) return [DEFAULT_EBAY_MARKETPLACE]
-  if (req.query.marketplace === 'ALL') return [...EBAY_MARKETPLACES]
+  if (req.query.marketplace === 'ALL') return [...ALL_EBAY_MARKETPLACES]
   return [resolveMarketplace(req)]
+}
+
+// Validates the optional ?region= query param (a country code with an entry
+// in EBAY_REGIONS) and returns it, or null when absent. Can't be combined
+// with ?marketplace=, which would otherwise be silently ignored. Throws a 400
+// error object, same as resolveMarketplace.
+function resolveRegion(req) {
+  const region = req.query.region
+  if (region === undefined) return null
+  const badRequest = (message) => Object.assign(new Error(message), { status: 400 })
+  if (req.query.marketplace) throw badRequest('Use region or marketplace, not both')
+  if (!Object.hasOwn(EBAY_REGIONS, region)) {
+    throw badRequest(`Unsupported region: ${region}. Supported: ${Object.keys(EBAY_REGIONS).join(', ')}`)
+  }
+  return region
 }
 
 // Shared eBay item search used by /getMarketPlacePrices and /getTopListings so both
@@ -724,12 +744,15 @@ function resolveMarketplaces(req) {
 // categoryIds is a ladder, narrowest first: each rung is tried in turn within
 // this one marketplace until one returns items.
 // Returns the items and the rung that produced them (the last rung tried when
-// nothing matched anywhere).
-async function fetchEbayListings(query, limit, accessToken, marketplace, categoryIds = [EBAY_BICYCLE_PARTS_CATEGORY_ID]) {
+// nothing matched anywhere). deliveryCountry (a country code), when given,
+// keeps only listings that ship there; it removes nothing on that country's
+// own site.
+async function fetchEbayListings(query, limit, accessToken, marketplace, categoryIds = [EBAY_BICYCLE_PARTS_CATEGORY_ID], deliveryCountry = null) {
   let itemSummaries = []
   let categoryId = null
+  const filter = deliveryCountry ? `&filter=${encodeURIComponent(`deliveryCountry:${deliveryCountry}`)}` : ''
   for (categoryId of categoryIds) {
-    const result = await fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${encodeURIComponent(query)}&category_ids=${categoryId}&limit=${limit}`, {
+    const result = await fetch(`${config.marketplace.url}buy/browse/v1/item_summary/search?q=${encodeURIComponent(query)}&category_ids=${categoryId}&limit=${limit}${filter}`, {
       method: 'get',
       headers: {
         'Authorization': `Bearer ${accessToken}`,
@@ -813,33 +836,46 @@ app.get('/getMarketPlacePrices', async function (req, res, next) {
   }
 })
 
+// ?region=US (see ebay-regions.js) searches that region's sites, filtered to
+// listings that ship to it, and returns up to 5 from each site in the
+// region's order, home site first, each site in eBay's own order. A listing
+// found on several sites appears once, on the earliest. Without a region,
+// ?marketplace= works as before.
 app.get('/getTopListings', async function (req, res, next) {
   try {
-    const marketplaces = resolveMarketplaces(req)
+    const region = resolveRegion(req)
+    const marketplaces = region ? EBAY_REGIONS[region] : resolveMarketplaces(req)
     const { query, categoryIds } = await resolveListingSearch(req)
     const accessToken = await getAccessToken()
     // allSettled: one marketplace erroring (rate limit, transient failure)
-    // shouldn't sink a request that asked for all five.
+    // shouldn't sink a request that asked for several.
     const perMarketplace = await Promise.allSettled(
       marketplaces.map(async (marketplace) => {
-        const { itemSummaries, categoryId } = await fetchEbayListings(query, 5, accessToken, marketplace, categoryIds)
-        console.log(`getTopListings ${marketplace} q="${query}" ladder=${categoryIds.join('>')} rung=${categoryId} items=${itemSummaries.length}`)
+        const { itemSummaries, categoryId } = await fetchEbayListings(query, 5, accessToken, marketplace, categoryIds, region)
+        console.log(`getTopListings ${region ? `region=${region} ` : ''}${marketplace} q="${query}" ladder=${categoryIds.join('>')} rung=${categoryId} items=${itemSummaries.length}`)
         return itemSummaries.map(itemSummary => ({
           title: itemSummary.title,
           url: itemSummary.itemAffiliateWebUrl || itemSummary.itemWebUrl,
           price: itemSummary.price ? Number(itemSummary.price.value) : null,
           currency: itemSummary.price ? itemSummary.price.currency : null,
           marketplace,
-          categoryId
+          categoryId,
+          // The same listing has the same legacyItemId on every site.
+          itemId: itemSummary.legacyItemId || null
         }))
       })
     )
     perMarketplace.filter(r => r.status === 'rejected').forEach(r => console.error('getTopListings marketplace fetch failed:', r.reason))
+    // A failed site contributes nothing; its slot in the order stays empty.
+    const found = perMarketplace.map(r => r.status === 'fulfilled' ? r.value : [])
+    if (region) {
+      res.send({ listings: mergeRegionListings(found), marketplaces, region })
+      return
+    }
     // Raw eBay relevance order isn't comparable across marketplaces, so once
     // there's more than one, price is the only sensible common sort key.
-    const listings = perMarketplace
-      .filter(r => r.status === 'fulfilled')
-      .flatMap(r => r.value)
+    const listings = found
+      .flat()
       .sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity))
     res.send({ listings, marketplaces })
   } catch (err) {
