@@ -1,5 +1,43 @@
 # Zeus catalogs processed so far
 
+## Zeus Cyclery Corp. 1982 Catalog (US importer) — disraeligears, 24 pages, data_source id 286
+
+- `data_source` 286, label "Zeus Cyclery Corp. 1982 Catalog (1982)", country US. Source:
+  https://www.disraeligears.co.uk/site/zeus_cyclery_corp_-_1982_catalog.html; only page 1 is linked, the rest follow
+  `00_main_images/zeus_cyclery_corp_-_1982_catalog_page_NN_main_image.jpg` (01-24, 1560 x 1200). Read 2026-10-28.
+  Zeus Cyclery Corp. is the US distributor: the Zeus (Spain), Roto (see roto.md) and REG ranges plus Zeus Supercronos /
+  Elan and Cuevas frames. **The year is printed on the cover.**
+- **Numbering:** 5-digit refs (13xxx cranks, 2x... derailleurs and levers, 23xxx BBs, 24xxx pedals, 25xxx seat posts,
+  26xxx headsets, 27xxx / 37xxx brakes, 28xxx hubs, 29xxx freewheels), replacing the 1977 two-digit Refs. Three series:
+  Zeus-2000 (Titanox, Super Earlumin II), Criterium (Earlumin), New Racer (Duralumin S and steel), which **replaced Gran
+  Sport** ("replaced Gransport headset / seatpost").
+- New vs Catálogo 103 (1977): Zeus-2000 7-speed freewheel 29000, Zeus-2001 braze-on double lever 20900, Z-2000 "Prestige"
+  saddle 50501, black / gold anodised Z-2000 finishes, the New Racer series. Drawing / text code clashes: Criterium road
+  crank 13110 on p. 6 but 13100 in the drawings (13110 = triple); Z-2000 5-speed freewheel 29150 (p. 12) vs 29100.05
+  (drawing); Criterium 5-speed 29250 vs 29200.05.
+- `year_to` -> 1982 (21 rows, `source_ref` 286): 4860 Zeus 2000 rear, 2680 Zeus 2000 front, 2681 Criterium 69 front,
+  8853 Ref. 10 Zeus-2000 lever, 8855 Ref. 12 Criterium lever, 1178 Zeus 2001 brake, 8858 Ref. 72.1 lever, 2028
+  Criterium crank, 2026 Criterium triple, 2027 Criterium cyclo-cross, 8144 Pista crank (= Criterium track 13130), 188
+  Criterium BB, 187 Pista BB (= Criterium track 23130), 4049 / 4052 Z-2000 road / track pedals, 8857 Ref. 80 Z-2000
+  hubs, 3653 Criterium hubs, 3168 Z-2000 headset, 3170 Criterium headset, 5946 Criterium seat post. Descriptions on
+  4860, 2680, 8853, 8855, 1178, 8858, 4049, 4052 carry the 1982 ref.
+- **`year_from` moved earlier to 1982** (Kitching 1984 rows, now attested two years before; old value 1984 on all):
+  9363 New Racer front 22800, 9358 New Racer BB 23200, 6336 New Racer shifters 21300, 3655 New Racer hubs 28500, 9364
+  Criterium freewheels 29200.
+- Descriptions only: 4873 New Racer rear (22300, 12-28T), 1180 New Racer brake (27400), 3167 New Racer headset, 5951 New
+  Racer seat post, 4058 New Racer pedals, 2264 / 2265 / 2266 Z-2000 7 / 6 / 5-speed freewheels.
+- Rows inserted (3, 1982-1982): 20900.00 Zeus-2001 braze-on double lever (Shifters, group 2000), 13030.00 Zeus-2000
+  Track crankset, 50501.00 Z-2000 Prestige saddle.
+- **Same ref, two names (merge candidates, not merged here):** the Ron Kitching 1984 rows (`data_source` 261) carry
+  this catalogue's refs under the name "Supercronos": 4875 Supercronos 22000 = 4860 Zeus 2000 rear; 2687 Supercronos
+  22500 = 2680 front; 9362 Supercronos 21000 / 21001 = 8853 lever; 1182 Supercronos 27000 = 1178 Zeus 2001 brake;
+  506 Supercronos 37001 = 8858 lever; 9360 Supercronos 26000 = 3168 headset; 3656 Supercronos 28000 = 8857 hubs;
+  9359 "23100.00, Supercronos" (steel BB) = 188 Criterium BB (23100 is the Criterium BB in 1982).
+- Left alone: which Z-2000 crank row 13000 is (2023 early / 2024 later non-fluted / 2025 partially drilled); New Racer
+  crank and brake lettering variants (2020 / 2021, 1176); Gran Sport rows not capped (Kitching 1984 still lists the Gran
+  Sport headset); Z-2000 track BB 23030 / Pista hub / track cog already current. Out of scope: axle and QR sets, tools,
+  braze-ons, crowns, dropouts, roller, bag, REG accessories, frames.
+
 ## Catálogo Zeus-103 (Abadiano, July 1977) — Reminiscence Part 94, 22 spreads, data_source id 208
 
 - `data_source` 208, label "Catálogo Zeus-103 (1977)". Source:
