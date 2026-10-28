@@ -16,8 +16,12 @@ const fetch = require('node-fetch');
 const config = require('../config');
 const { BICYCLE_PARTS, TYRES_TUBES_WHEELS, CYCLING, COMPONENT_CATEGORY_LEAVES } = require('../ebay-categories');
 
-// Keep in step with EBAY_MARKETPLACES in index.js.
-const MARKETPLACES = ['EBAY_US', 'EBAY_GB', 'EBAY_DE', 'EBAY_FR', 'EBAY_IT'];
+// Keep in step with EBAY_MARKETPLACES in index.js. A comma-separated list as
+// the first argument checks other sites instead, e.g. before adding them:
+//   node scripts/validate-ebay-categories.js EBAY_AU,EBAY_CA
+const MARKETPLACES = process.argv[2]
+  ? process.argv[2].split(',').map(m => m.trim().toUpperCase())
+  : ['EBAY_US', 'EBAY_GB', 'EBAY_DE', 'EBAY_FR', 'EBAY_IT'];
 
 async function get(path, accessToken) {
   const result = await fetch(`${config.marketplace.url}${path}`, { headers: { Authorization: `Bearer ${accessToken}` } });
