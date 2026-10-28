@@ -252,3 +252,36 @@
   Wayback CDX has other files from the same `fichiers/12y/` folder but none of these pages nor their viewer pages. The
   same blog also has 1984 and 1987 Gipiemme pages (covered by `data_source` 269 / 270 from disraeligears).
 
+
+## Gipiemme catalogue 1988 (24 scans, disraeligears.co.uk), `data_source` 287
+
+- Label `Gipiemme catalogue (1988)`, country IT. Source: https://www.disraeligears.co.uk/site/gipiemme_-_catalogue_1988.html
+  (`00_main_images/gipiemme_catalogue_1988_-_<name>_main_image.jpg`, front cover, pages 1-21, rear cover; IT/EN/FR/DE;
+  Gipiemme s.r.l., Vancimuglio di Grumolo delle Abbadesse). Dated 1988: the disc-wheel page looks back on "la stagione 1987".
+- Contents: four groups, Bagarre BA 2000, Azzurro SB 2000, Pista AP 2000, MTB K2 MK 2000, plus the Cronosprint Triplo CT,
+  Road SR, Sprint DD and Cronospecial AA leftovers. Codes are printed code-first (BA 100, not 100BA). Cranks BA / SB / SR /
+  AP / CT / MK / MP 100; BBs BA / SB / AP / CT / MK 200; pedals BL (Block) / BA / AA / DD / SB / AP / MK 300; hubs BA
+  (Cronobagarre) / SB / AP / MT 400; headsets BA / SB / MK / AP 500; seat posts BA (Cronobagarre) / DD / SB / MT 600; brakes
+  BA / SB / MK 700, levers 704; RDs BA / SB / MT 801; FDs BA 803, SB / MT 802; shifters BA (retrofriction) / SB / CI
+  (indexed) / MT 876; chains CS / AS / MT 950; freewheels AA 906 / 907, CE 906; carbon crank and lenticular disc wheel (no
+  codes). Out of scope: Gian Robert chain tool 02190, dropouts 1800 series, Unicrown, frame fittings, cable guides IS 7xx,
+  IS 884 computer, guards, grease, BA 318 toe clips.
+- New vs c. 1986-87: the Azzurro and K2 groups, Bagarre as a full group (crank only before), Block clipless pedal,
+  indexed shifters. Dropped: the Cronospecial road group (only AA pedals, freewheels, dropouts left), Selectron, White
+  Laser. "Exploit" is not printed anywhere (disraeligears' text calls BA 801 "Exploit / Bagarre"); 4263 / 6053 left as is.
+  disraeligears also says BA 801 is Campagnolo-made and SB 801 / MT 801 SunRace 581 / 580: not in the catalogue, not used.
+- Rows updated (27, `source_ref` 287). Retitles (old title -> new, `search_text` rewritten): 1590 "Crono Sprint 100BA,
+  Bagarre" -> "Bagarre BA 100" (group 85 -> 84); 762 / 320 / 4258 / 2366 "Bagarre" -> "Bagarre BA 700 / 704 / 801 / 803";
+  1585 / 63 / 3347 / 761 / 319 "Azzurro" -> "Azzurro SB 100 / 200 / 400 / 700 / 704"; 3745 "Block" -> "Block BL 300".
+  **`year_from` moved later** (revert values): 1590 1982 -> 1986 (Bagarre crank new in c. 1986-87); 762, 320, 4258,
+  1585, 761, 319, 3347 1980 -> 1988 (decade buckets; Bagarre and Azzurro absent from the full Oct 1984 and c. 1986-87
+  ranges); 63 and 3745 NULL -> 1988. `year_to` -> 1988: 6051 (BA 870), 5789 (BA 600), 9131 (CT 100), 9135 (CT 200), 5788
+  (DD 600), 9518 (CE 906). Judgement-call matches by renumbered code, `year_to` -> 1988 unless already: 1588 = AP 100,
+  9136 = AP 200, 9512 = AP 300 "Specialpista", 3747 = AA 300, 3351 = AP 400, 3008 = AP 500, 8827 = AA 906, 2106 = AA 907,
+  9138 = AS 950, 1368 = CS 950 (CS = Cronosprint, as on 906 CS). 3749 (300DD) = DD 300, unchanged.
+- Rows inserted (27, 1988-1988 except the disc wheel 1987-1988): ids 9834-9860. Bagarre BA 200 / 300 / 400
+  (Cronobagarre) / 500; Azzurro SB 300 / 500 / 600 / 801 / 802 / 870; new `component_group` 326 "K2" (brand 21): MK 100,
+  MP 100, MK 200, MK 300, MT 400, MK 500, MT 600, MK 700, MK 704, MT 801, MT 802, MT 876, MT 950; no group: Road SR 100,
+  CI 870, carbon fibre crankset, lenticular disc wheel.
+- Left alone: Azzurra rows (group 83, Simplex-made, a separate earlier line); Exploit rows; the bare Dual Sprint / Special
+  / Sprint / White Laser derailleurs, brakes, levers and shifters (still need an early-1980s source).
