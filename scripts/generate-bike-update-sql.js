@@ -1032,6 +1032,9 @@ const COMPONENT_OVERRIDES = {
     'suntour superbe pro (front hub)': null,
     // 1973 Peugeot (Dutch catalogue).
     'normandy high flange simplex quick release': [{ from: 1960, to: 1980, id: 3391 }], // Maillard Normandy (high flange, oblong holes)
+    'normandy high flange quick release': [{ from: 1960, to: 1980, id: 3391 }], // 1975-76 Peugeot UE 18, as the UO 8 above
+    // 1978 Peugeot (NL) PR 65 Lady: plain Normandy Dural high flange (not the Competition the PR 60 has).
+    'maillard normandy dural high flange simplex sx quick release': [{ from: 1960, to: 1980, id: 3391 }],
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace 32h': [{ from: 1990, to: 1996, id: 3562 }], // FH-7403-HG / HB-7400-F
     'shimano ultegra 32h': [{ from: 1990, to: 1992, id: 7565 }], // FH-6401-HG (7sp HG cassette on the Virata)

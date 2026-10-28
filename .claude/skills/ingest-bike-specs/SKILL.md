@@ -93,6 +93,11 @@ generating, classify every model in the CSV and drop the out-of-scope rows:
   is gitignored so the edit is untracked), and list the skipped models in that
   catalogue's `references/known-catalogs/` entry so a later pass knows they
   were left out on purpose. Borderline models: ask the user, don't guess.
+- Ladies' and mixte road, sports and touring models are in scope (user's call
+  2026-10-28): load them like the men's versions, even with fenders, rack or
+  chain guard, as long as they have a derailleur group and named components
+  (Peugeot UE 18, PR 65 / PR 65 Lady, PK 65 Ladies). Ladies' town bikes
+  (3-speed hub or single speed, skirt guard, PE series) stay out as city.
 - Existing CSVs for already-loaded catalogues still contain the 51 deleted
   models. `scripts/generate-bike-update-sql.js` skips them through the
   `NON_ROAD_SKIP` map (keyed `<year>|<brand>`, exact first-column titles) and

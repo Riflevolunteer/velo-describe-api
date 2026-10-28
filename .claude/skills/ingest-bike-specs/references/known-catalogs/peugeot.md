@@ -213,7 +213,7 @@
 - 1973 reloaded 2026-10-19 to back-fill the PX 10 front Super Competition
   link (1973 now 60 specs, 15 linked; no other changes).
 
-## 1975 Peugeot — `1975_peugeot_spec.csv` (9 bikes, 132 specs, 42 linked)
+## 1975 Peugeot — `1975_peugeot_spec.csv` (10 bikes, 147 specs, 50 linked)
 
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1975.html
   (20 PeugeotShow scans at 1600 px, "catalogues cycles peugeot 1975 (1)-(20).jpg",
@@ -234,9 +234,9 @@
   pinless) was not carried over.
 - Not loaded: NSL 22 / PNSL 22 (Nouveau Style family and folding), G 50 CD / G 50 C /
   G 46 C / G 42 / J 8 (children's and youth), PE 41 / PE 40 / PE 22 and PE 25 V / PE 25 /
-  PE 46 / PE 45 (town models, the PE series is excluded as in 1971 / 1972), UE 18 (ladies'
-  10-speed sports with fenders, chain guard and sports bars: borderline, held out pending
-  the user's call; p. 11 of the scans, Simplex Prestige, Normandy high-flange hubs,
+  PE 46 / PE 45 (town models, the PE series is excluded as in 1971 / 1972), UE 18 loaded 2026-10-28
+  (user's call: ladies' / mixte road and touring models are in scope). Ladies' 10-speed
+  sports with fenders, chain guard and sports bars; printed p. 11 (blog scan (7)), Simplex Prestige, Normandy high-flange hubs,
   Mafac Racer, 40/50T x 14-28T, 16.0 kg, Schrader valves).
 - Overrides: Rear Derailleurs 'simplex criterium' 4645 range 1971-74 -> 1971-75;
   Brakes 'altenburger synchron' 511 range 1970-74 -> 1970-75 (back-fills 2 specs on this
@@ -257,7 +257,7 @@
   generator does not know about); 1984 / 1989 De Rosa are labelled "Derosa" in the file name
   but "De Rosa" in the DB, so a label-name comparison must handle that.
 
-## 1976 Peugeot — `1976_peugeot_spec.csv` (9 bikes, 131 specs, 38 linked)
+## 1976 Peugeot — `1976_peugeot_spec.csv` (10 bikes, 146 specs, 43 linked)
 
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1976.html
   (43 images, loaded 2026-10-20). Mixes two catalogues, as 1973 / 1974: the Dutch
@@ -277,8 +277,9 @@
   13-28T); Cyclotouring PA 60 and PX 60 (Ideale 80, Super Competition front, Criterium
   rear, 40/50T x 14-26T); Sports PX 8, P 8 E (40/50T, 14-26T), PL 8 (5-speed), UO 8.
 - Not loaded: NSL 22 / PNSL 22; G 42 / G 46 C / G 50 C / G 50 CD / J 8 (children's);
-  PE 40 / PE 41 / PE 25 / PE 45 / PE 46 (town); UE 18 (ladies' 10-speed, borderline, held
-  out as in 1975, spec unchanged: Simplex Prestige, 40/50T x 14-28T, Normandy high-flange,
+  PE 40 / PE 41 / PE 25 / PE 45 / PE 46 (town); UE 18 loaded 2026-10-28 (as 1975; printed
+  p. 11, blog scan "catalogues cycles peugeot 1976 (11)"; colours blue / white from the 1 January
+  1976 price list, spec unchanged: Simplex Prestige, 40/50T x 14-28T, Normandy high-flange,
   Mafac Racer, 16 kg); the French-only PN 10, PA 10 L, PR 10 L, PX 10 L, PY 60 P, PA 55,
   PA 65 (blurbs that duplicate the Dutch names or are ladies' models).
 - Overrides: Front 'simplex super competition' 8794 range -> 1971-76; Rear 'simplex
@@ -291,7 +292,7 @@
 - Regression: all 46 other catalogues' link counts unchanged (Falcon 1974 and Bianchi 1990
   drift as noted under 1975).
 
-## 1977 Peugeot (DE) — `1977_peugeot_de_spec.csv` (11 bikes, 210 specs, 39 linked)
+## 1977 Peugeot (DE) — `1977_peugeot_de_spec.csv` (12 bikes, 230 specs, 90 linked)
 
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1977.html (43
   images, loaded 2026-10-20). The post holds three catalogues: (1) the German-market
@@ -315,8 +316,9 @@
   PR 60/L (Gentlemen Cyclotouring, Bluemels mudguards and rack). The N / E variants carry
   the parent spec with 700C training rims (Rigida or Mavic) and Michelin Elan TS 700 x 25.
   A new Stem column was used (the earlier Peugeot CSVs had none).
-- Not loaded: PR 65 (ladies' 10-speed, Reynolds double-tube frame, 38/48T, fenders and rack:
-  borderline, held out as UE 18 was; pp. 36 of the scans, 53 and 57 cm, 11.5 kg, silver,
+- PR 65 loaded 2026-10-28 (ladies' 10-speed, Reynolds double-tube / mixte frame, 38/48T, fenders and
+  rack; the page says "Ausstattung wie PR 60/L, jedoch:", so the row copies the PR 60/L and
+  applies the frame, crank, 14-17-20-23-26T freewheel, sizes, colours and weight; pp. 36 of the scans, 53 and 57 cm, 11.5 kg, silver,
   bronze, matt black); the Radtouristik models mentioned on the PR 10/LE page (PX 8/E-D/SP,
   P 60, P 60/L, PA 55, P 65, P 65/L) which are in a separate German brochure not on the post.
 - Overrides: Rear 'simplex lj 4000 cp' -> 4602 (1975-77), 'simplex lj 1000 t' -> 4600,
@@ -338,7 +340,7 @@
 - Regression: all 47 other catalogues' link counts unchanged (Falcon 1974 and Bianchi 1990
   drift as noted under 1975).
 
-## 1978 Peugeot — `1978_peugeot_spec.csv` (12 bikes, 218 specs, 54 linked)
+## 1978 Peugeot — `1978_peugeot_spec.csv` (13 bikes, 236 specs, 120 linked)
 
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1978.html (54
   images, loaded 2026-10-20). Three catalogues on one post: (1) the Dutch "Peugeot '78"
@@ -358,8 +360,10 @@
   and Michelin Elan / Elan TS clinchers. Component weights are summarised under "Weights:" in
   Extras so the component cells stay clean (the first draft had them inline and only 17 of
   218 specs linked; the verbose draft is in the scratchpad as 1978_peugeot_spec.verbose.csv).
-- Not loaded: PR 65 Lady (ladies' semi-racer, 38/48T, Reynolds 531, Bluemels, rack: held out
-  as borderline, like UE 18 / PR 65 (1977)); the French-only P 10, PN 10 L, PX 10 L, PY 10 C
+- PR 65 Lady loaded 2026-10-28 (ladies' semi-racer, mixte, Reynolds 531 7/10, 38/48T x 14-28T,
+  Simplex LJA302 / SX 410 T, Mavic Module E, Michelin Elan 1 1/16, Bluemels, rack; blog scan
+  "cycles peugeot 1978 catalogues labibleduvelo (10)"; hubs -> 3391 Normandy high flange as the
+  Dural rule). Not loaded: the French-only P 10, PN 10 L, PX 10 L, PY 10 C
   (blurbs; the Dutch PX 10 LE and PY 10 EC cover them), PX 8 L and the mopeds.
 - Overrides: Front 'simplex slja 502' -> 7281 (1978-81); Rear 'simplex lj 4000 cp' range
   extended with 1978-84 -> 4603; Seat Posts 'laprade 505' -> 5815, 'laprade 606' -> 5816 (both
@@ -393,7 +397,8 @@
   the parent spec.
 - NL loaded: supersport PL 8 M; racing PBN 10, PFN 10, PKN 10, PVN 10, PY 10 LC (Spidel parts), with kg
   weights and colours. PBN 10 / PFN 10 exist in both editions as separate bikes.
-- Not loaded (user's call 2026-10-22): ladies' and mixte drop-bar models, held out as UE 18 / PR 65 were:
+- Not loaded (user's call 2026-10-22, reversed 2026-10-28: ladies' / mixte road models are now in
+  scope, so these are a follow-up to transcribe and load): ladies' and mixte drop-bar models:
   NL PX 18 MC / PX 18 M, PK 65 lady (PK65C / PK65T); FR PF 65, P65M, PX 18 M, PL 18 M, PH 18 M. NL PXN 10
   (prose only: 9.9 kg, full Reynolds 531 7/10, pearl white). Town: PE 46 M, PH 41 M, PX 41 M, the
   semi-sport VL 25 M / VL 22 M range. CPX 100-400 BMX; the Super Competition frameset (p. 27).
