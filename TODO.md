@@ -30,7 +30,42 @@ Cleaned up 2026-10-21 and again 2026-10-28: finished work moved to "Done" (detai
       - GB: the GB site alone returns 61-430 per query, all GB sellers. With `deliveryCountry:GB`, DE/FR/IT lean towards GB sellers (IT Brooks B17: 5 of 5 from GB), so they add less than expected; US adds distinct stock. Stronglight 93 on DE and FR is the same 5 French listings.
       - AU: the AU site is already international: mostly US/GB sellers, the filter removes nothing, and many listings repeat on US (6-7 of 12-18 distinct per query on 2+ sites). AU + GB + US covers most of it; DE/IT add a little.
       - `deliveryCountry` is a no-op on the buyer's own site in every run, so it's safe to always send. One `ETIMEDOUT` from eBay with 3 probes running at once; the server should treat a timed-out site like any other failed one (it already uses `allSettled`).
-    - Leaning, per region: US = US + GB + DE + FR + IT; GB = GB + US + DE + FR + IT (or drop FR); AU = AU + GB + US (+ DE?). Always send `deliveryCountry:<region>`; dedupe on `legacyItemId`, keeping the home site's copy; rank home site first, then the others (option a) until currency conversion is decided.
+    - **Which sites exist** (1 Browse + 1 Taxonomy call each): Browse serves 16: US, AT, AU, BE, CA, CH, DE, ES, FR, GB, HK, IE, IT, NL, PL, SG. IN, MY, PH, TW, NZ, SE, JP return 409 "not supported"; MX and BR quietly return the US results and have no category tree, so they aren't sites.
+    - **Coverage run** (1,024 Browse calls): for a buyer in each of the 16 countries, every site was searched with `deliveryCountry:<buyer>`, limit 50, leaf category only, same 4 queries. Then sites were picked greedily by how many new `legacyItemId`s each adds beyond the home site. Order after the home site, with the new-listing count:
+
+      | Buyer | Greedy picks after home |
+      |---|---|
+      | US | DE 135, SG 73, FR 68, GB 59, CA 19 |
+      | GB | US 131, FR 115, SG 69, DE 41, CA 18 |
+      | DE | GB 154, CA 108, FR 61, SG 60, US 40 |
+      | FR | GB 200, US 102, SG 60, DE 47, AU 22 |
+      | IT | GB 119, FR 85, US 82, SG 63, DE 37 |
+      | AU | FR 114, GB 99, US 73, SG 54, DE 45 |
+      | CA | GB 130, FR 97, SG 60, DE 43, US 36 |
+      | HK | GB 96, US 39, AU 19, DE 17, IT 16 |
+      | SG | GB 175, FR 114, US 84, DE 43, AU 26 |
+      | AT, BE, CH, ES, IE, NL, PL | GB 108-118, then US / FR 80-93, SG 57-63, DE 25-41 |
+
+      Home + 4 covers 84-91% of everything found across all 16 sites, for every buyer; the 5th site adds under 50 new listings everywhere.
+    - **Caveat: SG (and CA for a DE buyer) are a limit-50 artefact, not stock.** SG's own pool is the smallest (42 / 186 / 4 / 2 for the 4 queries, buyer US), and its top 50 are US and GB sellers (57 US, 22 GB of 98) that are on eBay US / GB anyway, below the top 50 there. The app shows 5 listings, so ranking depth past 50 doesn't matter. The small EU sites (AT, BE, IE, NL, PL, ES, CH) behave like a global view too: eBay NL for a US buyer is 106 of 166 from US sellers. The distinct stock comes from the sites where vintage parts are listed locally: GB, US, FR, DE, with IT behind.
+    - **Proposed `EBAY_REGIONS`** (home first, then the GB / US / FR / DE core in greedy order, minus SG; IT as 5th where the home site is in the core):
+
+      | Region | Sites |
+      |---|---|
+      | US | US, DE, FR, GB, IT |
+      | GB | GB, US, FR, DE, IT |
+      | DE | DE, GB, FR, US, IT |
+      | FR | FR, GB, US, DE, IT |
+      | IT | IT, GB, FR, US, DE |
+      | AU | AU, FR, GB, US, DE |
+      | CA | CA, GB, FR, DE, US |
+      | HK | HK, GB, US, AU, DE |
+      | SG | SG, GB, FR, US, DE |
+      | AT, BE, CH, ES, IE, NL, PL | home, GB, US, FR, DE |
+
+      Countries without a Browse site (NZ, JP, SE, DK, NO, FI...): no region of their own. Either the user picks the nearest one (NZ -> AU, Nordics -> DE or GB) or there's an "Other" that uses the US list with `deliveryCountry` set to their country; decide with the client setting.
+    - Before adding the 11 new sites to `EBAY_MARKETPLACES`, run `scripts/validate-ebay-categories.js` against all 16 (its `MARKETPLACES` list is hard-coded). All 16 have a category tree; leaf IDs aren't checked yet beyond the 4 used here.
+    - Always send `deliveryCountry:<region>`; dedupe on `legacyItemId`, keeping the home site's copy; rank home site first, then the others (option a) until currency conversion is decided. With 16 regions, AUD / CAD / CHF / HKD / PLN / SGD join the currency mix, which makes the conversion question (option b) more pressing.
   - Client side: see `velo-describe` TODO (region setting, send `region=`, store build).
 - **eBay category ladder follow-ups** (ladder, `ebay-categories.js`, validation script and `?componentId=` are done and in the client source, `velo-describe` ae8f45a, not yet in a store build): (a) measure once the client sends `componentId`: check `getTopListings ... rung=` log lines per category and marketplace, and settle the Shifting Brake Levers (177824 vs 100245) and Single Sprockets (177809 vs 177811) judgement calls; (b) run `scripts/validate-ebay-categories.js` weekly via GitHub Actions (cron + `workflow_dispatch`, Node 20, secrets `MARKETPLACE_URL`, `MARKETPLACE_CLIENT_ID`, `MARKETPLACE_CLIENT_SECRET`, `MARKETPLACE_DEVID`; no DB needed; note scheduled workflows are disabled after 60 days without repo activity). Key facts to keep: tyres, tubes and wheelsets sit under 185023, not 57262; Vintage Cycling 158999 / 56197 exist only on the US tree; Browse accepts one `category_ids` value and silently ignores ids not in that marketplace's tree.
 
