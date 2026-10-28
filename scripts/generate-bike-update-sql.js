@@ -1767,6 +1767,10 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin (catalogue spells it "Profil", as the DB row does).
     'san marco concor profil': 5544, // Selle San Marco Concor Profil
     'san marco concor super corsa': 5547, // Selle San Marco Concor Supercorsa
+    // 1982 Peugeot (NL): Selle San Marco Corsaire 313 (1970-85); the DB has one row for the /1 and /2.
+    'san marco 313 1': [{ from: 1970, to: 1985, id: 5553 }],
+    'san marco 313 1 luxe race': [{ from: 1970, to: 1985, id: 5553 }],
+    'san marco 313 2': [{ from: 1970, to: 1985, id: 5553 }],
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'mattress': null, // generic; matcher hit a Brooks mattress saddle
     // Saddle link pass 2026-10-26 (from /linkCoverage).
@@ -1820,6 +1824,8 @@ const COMPONENT_OVERRIDES = {
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'cinelli no 65 alloy bend': 2804, // Team Replica: Cinelli 65 Criterium
     'cinelli no 65 engraved alloy bend': 2804, // Gran Sport
+    // 1982 Raleigh (UK "Racing Formula" brochure): the same two models print "Cinelli No. 65" in 1983-84.
+    'cinelli alloy bend': [{ from: 1982, to: 1982, id: 2804 }], // Team Replica 12 / Gran Sport 12: Cinelli 65 Criterium
     'shimano dura ace alloy engraved': 2917, // Road Ace (600 AX bike): Shimano HD-7300, Dura-Ace AX
     'sr ctd': 7888, // Sakae/Ringyo (SR) CTD, Custom Double Tube (SR No. 18; 1987 Bianchi)
     // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
@@ -1828,6 +1834,11 @@ const COMPONENT_OVERRIDES = {
     // 1975 Motobecane.
     'philippe professional': 2895, // Philippe Professionnel
     "cinelli giro d'italia": 2801, // Cinelli 64 Giro D'Italia (70's model)
+    // 1973 Falcon San Remo Model 94: bare "Cinelli", as the 1974 San Remo 94's Giro d'Italia bar. Bike-scoped:
+    // the San Remo 96 / 98, Kalkhoff, Battaglin and other bare "Cinelli" bars have no precedent.
+    cinelli: [{ bike: 'San Remo Model 94', from: 1973, to: 1973, id: 2801 }],
+    // 1990 Bianchi Signature 2: ITM ITALIA-Pro (black), 1980-90.
+    'itm pro': [{ from: 1980, to: 1990, id: 2854 }],
     // 2026-10-08 link-gap pass (weakest categories).
     // 1974 Motobecane Le Champion: the only plain "Record" bar; the Record
     // Competizione rows are a different (named) model.
@@ -1837,6 +1848,9 @@ const COMPONENT_OVERRIDES = {
     // 1975 Raleigh Professional Track: the Racing Team Service PISTA row is
     // undated and the later line; this one covers 1975.
     '3ttt track bend': 2753, // 3ttt Record Competizione Track (Pista)
+    // 1983 Bianchi Eco Pista: bare "TTT" bar on the track bike, the Pista bar to match its Mod. 2 Record
+    // Pista stem. Bike-scoped: the 1985 Campione's bare "TTT" has nothing to go on.
+    '3ttt': [{ bike: 'Eco Pista', from: 1983, to: 1983, id: 2753 }],
     // 1985 Raleigh Prestige (road): RY-RC Royal-Racer is the track bar.
     'sr royal special racing bend alloy': 7884, // Sakae/Ringyo (SR) RY-978, Royal-978
     // 1979 Peugeot: French bend names from the ATAX / Guidons Philippe 1982
@@ -1918,6 +1932,13 @@ const COMPONENT_OVERRIDES = {
     '3ttt record': [{ to: 1974, id: 6417 }],
     '3ttt record lightweight alloy': [{ to: 1974, id: 6417 }],
     'new 3ttt record': [{ bike: 'Professional Track DL 175', id: 6420 }],
+    // 1972-73 Raleigh Professional Track DL 175: the 1974-76 specs on the same model link the Mod. 2 Record Pista.
+    'alloy 3ttt': [{ bike: 'Professional Track DL 175', id: 6420 }],
+    '3ttt 110 mm': [{ bike: 'Professional Track DL 175', id: 6420 }],
+    // 1982 Bianchi Super Pista: the Mod. 2 Record Pista, as the 1983 Eco Pista bare-"TTT" rule above.
+    '3ttt track': [{ from: 1970, to: 1991, id: 6420 }],
+    // 1982 Raleigh Team Replica 12 / Gran Sport 12: the same models print "Cinelli No. 1A" in 1983.
+    'cinelli alloy': [{ from: 1982, to: 1982, id: 6489 }], // Cinelli 1A (winged "C" logo)
     'new 3ttt record alloy': [{ from: 1975, to: 1976, id: 6416 }], // 3ttt Mod. 1 Record Strada (2nd version); the 1976 Professional Mk IV repeats the 1975 text
     'itm 400': 6564, // ITM 400 Racing
     'sr custom': 6659, // Sakae/Ringyo (SR) CUSTOM
@@ -2208,6 +2229,15 @@ const COMPONENT_OVERRIDES = {
     'sr cpt 5 laprade micro adjust': 5857,
     'sr laprade ctp5 alloy micro adjust': 5857,
     'simplex sj4164': 5905, // 1980 Peugeot (NL) PY 10 LC ("all parts Spidel"): Spidel SLJ 4164
+    // 1980-81 Peugeot PRO 10 / PY 10 S: the only Spidel post row, and SLJ 4164 is the fluted anodised one
+    // (as the 1980 PY 10 LC above).
+    'spidel fluted': [{ from: 1980, to: 1981, id: 5905 }],
+    'spidel fluted dural': [{ from: 1980, to: 1981, id: 5905 }],
+    // 1980 / 1982 Peugeot (NL) PFN / PKN / PVN 10: SR CT-P5 (Sakae Laprade), row 1980-82.
+    'laprade sr': [{ from: 1980, to: 1982, id: 5857 }],
+    // 1978-80 Raleigh Super Course: the only Raleigh-branded SR post row, Custom-P3 (1970-80).
+    'raleigh sr 268mm': [{ from: 1970, to: 1980, id: 5856 }],
+    'raleigh sr light alloy 272mm': [{ from: 1970, to: 1980, id: 5856 }],
     // 1978 Peugeot (NL).
     'laprade 505': [{ from: 1970, to: 1979, id: 5815 }], // PY 10 EC: Laprade Brevete 505 (1970-79)
     'laprade 606': [{ from: 1970, to: 1979, id: 5816 }], // PY 10 CP: Laprade Brevete 606 (1970-79)
@@ -2527,6 +2557,10 @@ const COMPONENT_OVERRIDES = {
     'maillard 700 13 14 15 16 17 18 19': [{ from: 1980, to: 1984, id: 2124 }], // Maillard 700 Compact Super (7 speed), row 1980-82
     'normandy 14 17 20 24 28': [{ from: 1979, to: 1983, id: 8125 }], // 1983 Peugeot UO 9: Normandy (5-speed), row 1979-82, a year early
     'atom 14 24': [{ from: 1978, to: 1982, id: 7239 }], // 1982 Peugeot PH 10 S: Maillard Atom (5-speed); the 1982 catalogue lists 13-24T
+    // 1974-75 Motobecane: Atom (5 speed, silver cogs), 1960-80. The Maillard-brand 7239 starts in 1978.
+    'atom 14 26': [{ from: 1960, to: 1977, id: 2044 }],
+    'atom 14 28 with huret spoke protector': [{ from: 1960, to: 1977, id: 2044 }], // Grand Jubile
+    'atom 14 32 with huret spoke protector': [{ from: 1960, to: 1977, id: 2044 }], // Tandem
     'regina rlsy90 silver 13 23t 7 speed': 2205, // 1990 Bianchi Super Leggera / Giro: Regina Synchro 90-S (7 speed); its 1992 Strada block is 13-23
     'sun tour ultra 7 13 32t': 2237, // 1980 Raleigh Touring 14: SunTour NW-7000, New Winner Ultra 7 (the only Ultra-7 row in range)
     // 1990 Bianchi Grizzly / Project 7 (XC-Pro groups); the row is under Cassettes, the CSV label is Freewheel.
@@ -2550,6 +2584,10 @@ const COMPONENT_OVERRIDES = {
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'vittoria nuovo pro tubular': 6893, // Team Replica / Road Ace: Vittoria Nuovo Pro 260 (only Nuovo Pro row)
     'clement tubulars mod colnago': 6743, // Clement Colnago (1979 Colnago Mexico / Mexico Oro)
+    // 1979 Colnago Super / Saronni / International / Roger de Vlaeminck / Export: no maker printed, read
+    // as the Clement Colnago the Mexico sheet names.
+    'colnago super corsa tubulars': [{ from: 1979, to: 1979, id: 6743 }],
+    'colnago tubulars': [{ from: 1979, to: 1979, id: 6743 }],
     'clement strada 66 lightweight cotton tubular': 6775, // 1974 Raleigh International: Clement Strada 66 (red label)
     'clement criterium silk tubular': 6748, // Clement Criterium Seta (seta = silk)
     // 1975 Motobecane "Wheel Rims & Tires" cells, split by splitCellValue
@@ -2586,6 +2624,9 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin: Nisi rims printed without their five-digit codes (rows 00250 and 00218).
     'nisi corsa stretto': [{ from: 1982, to: 1988, id: 9228 }],
     'nisi ekip': [{ from: 1982, to: 1985, id: 9227 }],
+    // 1982 Battaglin Super Pista: Nisi 00110 Pista Speciale, the five-digit row as the other 1982 Battaglin
+    // Nisi overrides (row dated 1985-88), not the duplicate 5138 M20.
+    'nisi pista special': [{ from: 1982, to: 1988, id: 9225 }],
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'mavic special': null, // "speciale MAVIC": a special Mavic rim, not the Service des Courses row the substring hits
     'mavic special sport': [{ from: 1980, to: 1991, id: 5109 }], // 1981 Bianchi: Mavic Spéciale Sport tubular (c. 1980 catalogue, 400 g)
@@ -2597,6 +2638,8 @@ const COMPONENT_OVERRIDES = {
     'super champion model 58 23 mm': 5178, // 1984 Peugeot (GB) PH 10 L: Super Champion Mod. 58 (1960-80)
     'super champion dural 700c tubular': 5176, // 1980 Peugeot PY 10 S: Super Champion Competition, as 1979 'super champion 700c dural'
     'super champion dural 32 hole stainless spokes': 5176, // 1980 Peugeot PRO 10
+    // 1986 Raleigh Technium 480: Rigida AL 1521 (title match; 5151 "Rigida 15/21" is an undated duplicate).
+    'rigida 1521 alloy 36°': 5154,
     'rigida chrolux': [{ from: 1960, to: 1970, id: 5158 }], // 1978 Peugeot (NL) TM 8 would otherwise inherit the 1960-70 chrome rim; no 1978 Chrolux row
     'mavic sport or pellet record light alloy': null, // 1977 Peugeot (DE): either / or, left unlinked
     'araya sp30 alloy': [{ from: 1986, to: 1986, id: 8424 }], // 1986 Raleigh Pursuit / Technium 440 / 460: Araya SP-30 (1985-92)
