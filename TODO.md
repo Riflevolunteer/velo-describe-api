@@ -28,20 +28,19 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 
 ## Open: code and data hygiene
 
-- Convert to ES2015 using babel.
 - Drop the inner DB-password encryption (decided 2026-10-29, not applied). `DB_PASSWORD` is a `SecureString` in SSM but its value is also an AES-CTR ciphertext decrypted by `decrypt.js` with the hard-coded key `d6F3Efeq`, so the second layer protects nothing. Steps: put the plain password in local `.env`, run `scripts/create-ssm-params.sh` to update SSM, change `index.js` and the six scripts (`db-query`, `component-diff`, `duplicate-report`, `load-sql`, `generate-bike-update-sql`, `summarize-bike-sql`) to use `config.db.password` directly, delete `decrypt.js` and `test/decrypt.test.js`, deploy and smoke-test `index.js`. Order matters: update SSM and deploy together, or prod gets a plain password it tries to decrypt. Also rotate the DB password afterwards, since the old ciphertext and key are in git history.
 
 ## Open: component data follow-ups
 
 - Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Mighty Custom / Maxy II and the Nuovo Tipo C1264-1267 hubs (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
-- Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); SunTour Cyclone Mark-II lever and the 1981 Superbe brake (Palo Alto 1981/82).
-- Campagnolo Gran Sport front 2050 (row 2316): applied 2026-10-29 (generator ranges, 2316 note + source_ref 6, bikes 119 and 234 linked, campagnolo.md corrected). Still open:
+- Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); the SunTour "syncro-shift" Cyclone II lever (Palo Alto 1981/82; no part number, no row). The 1981 Superbe brake is settled by years: CB-1000 ends 1978, so a 1981 Superbe is the Superbe Pro CB-3100 / 4100 family (reach unstated); nothing links to it.
+- Campagnolo Gran Sport front 2050 (row 2316, applied 2026-10-29, see Done). Still open:
   - no 1973-76 Raleigh Gran Sport DL 160 Campagnolo front specs exist in the DB now, so the 2026-10-24 clearing was a deletion not a null link; re-ingest from the CSV if those bikes are wanted back, and check the 1973 Bianchi.
   - check 1253 on Cat 17 p 54 against row 3232 ("1253 kidney-bean at 1972 only", still current in 1974); needs the page image.
 
 ## Open: link coverage (bike_spec -> component_id)
 
-Measured 2026-10-28 (end of day): 4,042 of 8,974 linkable specs linked (45.0%; 11,824 specs on 712 bikes; the base grew with the 42 ladies' / mixte bikes). Weakest: Tyres 24%, Handlebars 30%, Saddle 32%, Rims 33%, Seatpost 37%, Shifters 38%, Freewheel 39%, Stem 40%. `/linkCoverage` (`?unlinked=N` for the top unlinked values) is the live report. Most unlinked values are correctly unlinked: brand-only text ("Cinelli", "SEDIS", "Gommitalia tubulars", "Clement tubular", "3ttt, black, pantographed"), dimension or config strings ("14-28T", `1/2" x 3/32"`) and Raleigh house parts (the DB holds almost no Raleigh-branded component rows and no catalogue source exists). The per-category sections below keep the 2026-10-26 counts and the open calls from that pass; the applied links are in Done.
+Weakest on 2026-10-28: Tyres 24%, Handlebars 30%, Saddle 32%, Rims 33%, Seatpost 37%, Shifters 38%, Freewheel 39%, Stem 40%. `/linkCoverage` (`?unlinked=N` for the top unlinked values) is the live report. Most unlinked values are correctly unlinked: brand-only text ("Cinelli", "SEDIS", "Gommitalia tubulars", "Clement tubular", "3ttt, black, pantographed"), dimension or config strings ("14-28T", `1/2" x 3/32"`) and Raleigh house parts (the DB holds almost no Raleigh-branded component rows and no catalogue source exists). The per-category sections below keep the 2026-10-26 counts and the open calls from that pass; the applied links are in Done.
 
 ### Tooling
 
@@ -128,7 +127,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 - **velo-pages.com** (Gallery2 photo site) was 500ing site-wide on 2026-10-17, so only the Wayback copy is usable; method: CDX-search the domain for archived images over ~15 KB, cluster by `g2_itemId`, resolve the title from the nearest archived HTML page. Unread manufacturer clusters: Fiamme catalog 1985 (~1400-1464; a 2026-10-29 CDX probe got 503s and 504s from the Internet Archive and empty prefixes for 140x / 142x / 143x / 145x, so retry later, one prefix per range with retries), SunTour advertisement 03-1975 (~12410-12470), Detto Pietro 1970s (~6606-6638), Shimano Dura-Ace EX brochure 1978 (~6973-6982), Stronglight catalog 1958 (~11505-11526), Simplex ads (~25480-25496), Barelli ads (~26605-26619); (The Gipiemme albums are done: see Done, do not re-check.) 1986-87 catalogue already loaded, mislabelled, and only 3 pages survive above thumbnail size). Unread bike clusters (`ingest-bike-specs`): Falcon Merckx brochure 1973 and sales literature 1974, Original Plastic Bike 1973 (~27603-27639), Bottecchia 1973 (~27995-28010). Magazine features and restoration or for-sale photo sets are corroboration only, not sources. Modolo 1979 and 1983 brochures and the 1977 Lyotard album are unrecoverable (thumbnails only).
 - **Reminiscence** (cyclespeugeot.web.fc2.com/reminiscence/ and the Japanese original cyclotourist.web.fc2.com/catarogue/; plain JPEGs; `curl -L`, index page 403s so probe slugs with curl): the component pages on the list are all used. `sakae80` exists but Sakae 1980s slugs do not.
 - **VeloBase catalogue archive** (velobase.com/Pages/Resources/CatalogScans.aspx, `DownloadFile.aspx?Path=...`): remaining unused items are the Stronglight no. 24 (1978), no. 27 (1984) and 1958 catalogues (no download link on VeloBase, only velo-pages / Wayback; the downloadable no. 26 and 1980s brochure are done; SunTour New Winner poster done 2026-10-29, data_source 289), the "MAFAC 1970's Catalog" PDF (checked: it is the c. 1976 ebykr catalogue, nothing new).
-- **disraeligears.co.uk** has more catalogue pages (Mavic done: data_source 240-242).
+- **disraeligears.co.uk**: surveyed 2026-10-29 (documents_from_the_1980s); unused: Huret July 1981 catalogue, Ricci '89, Shimano Spare Parts Catalogue 1986 / 1987 (derailleur sections only, no bottom brackets). None maps to an open gap.
 - **Windsor 1979** (radiolabworks.com, 7 pp): a bike catalogue for a Mexico City brand, low link yield, not ingested.
 
 ## Open: Shimano bottom bracket cleanup
