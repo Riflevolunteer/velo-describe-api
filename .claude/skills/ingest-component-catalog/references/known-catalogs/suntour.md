@@ -1206,3 +1206,18 @@
   Sport 5109 could take a 1975 `year_from` from this binder (they start 1978,
   1979, 1980; left because other catalogues set them); Huret 700 front 2385
   ends 1973 though the binder still lists a Luxe 700.
+
+## SunTour New Winner multiple freewheel poster (2 scans, Nov 1978, VeloBase archive, data_source 289), 2026-10-29
+
+Source: velobase.com CatalogScans, `SunTour/SunTourNewWinner.zip` ("new winner 1.jpg"
+interchangeable cog chart, "new winner 2.jpg" operation manual; "PRINTED IN JAPAN NOV.
+1978", Maeda Industries / SunTour U.S.A.). Not a catalogue: one poster for NW-7000 (Ultra 7,
+126mm), NW-6500 (Ultra 6, 120mm), NW-6000 (6-speed, 126mm, regular chain) and NW-5000
+(5-speed, 120mm), 1.37" x 24T thread, with cog ranges per position, close-ratio sets and cog
+/ spacer part numbers (160xxxxx / 150xxxxx).
+- Adjusted: 2236, 2237, 2238, 2240 `year_from` 1979 -> 1978 (poster predates the April 1979
+  catalogue, data_source 128; old value 1979), thread and close-ratio set added to each
+  description, 2238 chain noted as regular, `source_ref` 128 -> 289.
+- Hub widths on the poster already matched the rows. No rows added; 2239 "Suntour New Winner
+  7 speed" (1990) and 7816 NW-5100 untouched.
+- Left: the cog and spacer part numbers (no component rows for individual sprockets).
