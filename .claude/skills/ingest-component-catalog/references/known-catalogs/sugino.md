@@ -164,3 +164,21 @@
   the same family, nothing says so), Mighty/Grand Mighty Competition Track (1975), 1331-1333
   Cycloid, AC110, Qualete (1997), VP (1969, 3 bike links).
 - Deleted: none. Bike links on 1957 (1 spec) are unaffected (only the years extend).
+
+## Sugino Aero Dynamics Catalog Vol. 53 (4-page A4 leaflet, c. 1980, VeloBase archive) — data_source id 290, 2026-10-29
+
+- Source: velobase.com CatalogScans `Sugino_Aero_Dynamics_vol53.pdf` (cover, Aero Mighty / Aero Maxy
+  group photos, features chart, specification page; "Printed in Japan", no date). **Dated c. 1980 by
+  volume numbering** (Vol. 55 = 1982, Vol. 68 = 1995, one volume a year), consistent with the
+  Aero Mighty rows (1980-82); an inference, not a printed date.
+- Content: Aero Mighty DAMC crank (165-172.5mm, 42-52T, 610g), Aero Maxy MJAX-2A (170mm, 42-53T,
+  690g), PD-MC pedal (426g/pr with toe clip), SP-N Aero seat pillar (200mm, 240g Reynolds / 232g
+  Vitus), HP-GL (310g) and HP-GE (325g) stems, 80 / 105 / 120mm extensions.
+- Updated (all `source_ref` -> 290): 1924 Aero Maxy (bare, undated) 1980-1980 and a full description;
+  1925 Aero Mighty description (years unchanged, 1980-82); 3997 pedal retitled "Sugino Aero Mighty"
+  -> "Sugino PD-MC, Aero Mighty" (search_text rewritten) with description; 6690 HP-GL (bare) 1980-1980
+  and description.
+- New (2 rows, 1980-1980): 9879 "Sugino HP-GE", 9880 "Sugino SP-N Aero". The 1995 8925 "SP-N (NJS)" is
+  a different, later post and was left alone.
+- Not touched: the TODO's Mighty Custom / Maxy II gap (this leaflet covers neither).
+
