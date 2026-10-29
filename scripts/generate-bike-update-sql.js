@@ -702,8 +702,8 @@ const COMPONENT_OVERRIDES = {
     'huret jubilee 10 speed': [{ to: 1976, id: 2396 }], // Huret Jubilee 500 (5-hole cage)
     'huret challenger 10 speed': 2388, // Huret Challenger 950 / 951
     'huret challenger deluxe 10 speed': 2388,
-    // 1977 Raleigh (US). Record 24 "Challenger" is the Huret. Gran Sport front
-    // and Compe V left unlinked (GS front rows start 1978; two Compe-V rows).
+    // 1977 Raleigh (US). Record 24 "Challenger" is the Huret. Compe V left
+    // unlinked (two Compe-V rows); the Gran Sport front is 2316 (Cat 17 p 54).
     'challenger derailleur 10 speed': 2388, // Huret Challenger 950 / 951
     // 1974 Motobecane (shifter asides now split into the Shifters column).
     'huret jubilee': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }],
@@ -716,9 +716,10 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super record 12 speed': [{ from: 1975, to: 1988, id: 2313 }], // 1975-76 Raleigh Team Professional (row redated from 1979 to 1975, 2026-10-24)
     'dura ace ex': 2518, // Shimano FD-7200, Dura-Ace EX (clamp)
     'shimano 600 ax': 2476, // Shimano FD-6300, 600 AX (clamp)
-    // 1983 Bianchi: the 80s (Nuovo) Gran Sport is the 3600/NT. No DB row for
-    // the early-70s Gran Sport front, so 1973 stays unlinked.
-    'campagnolo gran sport': [{ from: 1978, id: 2276 }], // Campagnolo 3600/NT, Gran Sport
+    // 1983 Bianchi: the 80s (Nuovo) Gran Sport is the 3600/NT. The early-70s
+    // Gran Sport front is the 2050 (Cat 17 p 54, group 2240), row 2316.
+    'campagnolo gran sport': [{ to: 1977, id: 2316 }, { from: 1978, id: 2276 }], // Campagnolo 2050, Valentino / 3600/NT, Gran Sport
+    'campagnolo gran sport alloy': [{ to: 1977, id: 2316 }], // 1977 Raleigh Competition GS
     // 1973 Bianchi junior Rekord ("Valentino completo di deragliatore").
     'campagnolo valentino': 2316, // Campagnolo 2050, Valentino (1968-1980)
     // 1987 Bianchi.

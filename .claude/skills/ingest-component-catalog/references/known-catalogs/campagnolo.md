@@ -125,7 +125,9 @@
   1013/1A levers; 1207/1208 braze-on levers; Sport crank becomes 3320/A with
   fixed ring pairs; Nuovo Tipo solid-axle 1250/1252 dropped; 1049/3, 1049/5
   (fixed 36T) triples and 1049/4 cyclocross as 1048/x sets. 1052/1 is the
-  front derailleur for every group (no SR front until 1979).
+  front derailleur for the Record groups (no SR front until 1979); the
+  2240 Gran Sport group (p 54) takes the 2050 front (row 2316, "Valentino";
+  note and source_ref 6 added 2026-10-29).
 - Added: 7001 "1013/1A, Nuovo Gran Sport (right hand)" 1974-1983 (distinct
   from 5964, the 1960s Gran Sport 1013/1A); 7002 "1207 1208, Gran Sport /
   Valentino (braze-on)" 1974-1983; 7003 "1049/5, Record Triple (fixed 36T

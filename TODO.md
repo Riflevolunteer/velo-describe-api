@@ -36,11 +36,9 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 - Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Mighty Custom / Maxy II and the Nuovo Tipo C1264-1267 hubs (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
 - Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); SunTour Cyclone Mark-II lever and the 1981 Superbe brake (Palo Alto 1981/82).
 - Merge the Cycle Pro (337) and National (670) brands (both still separate on 2026-10-28).
-- Campagnolo Gran Sport front derailleur 1970-77 (found 2026-10-29, not applied). Catalogue 17 (1974) p 54 (disraeligears.co.uk campagnolo_-_catalogue_n_17_page_54), group 2240 Gran Sport: 3500 rear, **2050 front** (plain "CAMPAGNOLO" body), 1253 hubs, 1014/1A lever. The campagnolo.md Cat 17 line "1052/1 is the front derailleur for every group" is wrong for Gran Sport. Row 2316 "2050, Valentino" (1968-1980) very likely is this part (unverified, no DB here), so the gap is a missing link, not a missing row. Steps:
-  - generator: `'campagnolo gran sport'` -> `[{ to: 1977, id: 2316 }, { from: 1978, id: 2276 }]`; fix the "No DB row for the early-70s Gran Sport front" comment (~line 719) and the 1977 Raleigh "GS front rows start 1978" comment.
-  - re-check the 1973-76 Raleigh Gran Sport DL 160 front derailleur copies cleared on 2026-10-24, likely cleared only because of this gap; also the 1973 Bianchi.
-  - DB: append note to 2316 "Cat 17 (1974) p 54: front derailleur of the 2240 Gran Sport group" (confirm the description first, DB often unreachable).
-  - campagnolo.md: correct the Cat 17 entry; check 1253 on p 54 against row 3232 ("1253 kidney-bean at 1972 only", still current in 1974).
+- Campagnolo Gran Sport front 2050 (row 2316): applied 2026-10-29 (generator ranges, 2316 note + source_ref 6, bikes 119 and 234 linked, campagnolo.md corrected). Still open:
+  - no 1973-76 Raleigh Gran Sport DL 160 Campagnolo front specs exist in the DB now, so the 2026-10-24 clearing was a deletion not a null link; re-ingest from the CSV if those bikes are wanted back, and check the 1973 Bianchi.
+  - check 1253 on Cat 17 p 54 against row 3232 ("1253 kidney-bean at 1972 only", still current in 1974); needs the page image.
 
 ## Open: link coverage (bike_spec -> component_id)
 
