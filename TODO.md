@@ -35,7 +35,7 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 
 - Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Mighty Custom / Maxy II and the Nuovo Tipo C1264-1267 hubs (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
 - Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); SunTour Cyclone Mark-II lever and the 1981 Superbe brake (Palo Alto 1981/82).
-- Merge the Cycle Pro (337) and National (670) brands (both still separate on 2026-10-28).
+- Row 2983 "Cycle Pro" (brand 337, category Headsets, velobase, no years, no bike_spec links) looks like a miscategorised placeholder for the tyre brand; delete candidate, needs a go-ahead (the Cycle Pro / National brand merge itself was done 2026-10-29).
 - Campagnolo Gran Sport front 2050 (row 2316): applied 2026-10-29 (generator ranges, 2316 note + source_ref 6, bikes 119 and 234 linked, campagnolo.md corrected). Still open:
   - no 1973-76 Raleigh Gran Sport DL 160 Campagnolo front specs exist in the DB now, so the 2026-10-24 clearing was a deletion not a null link; re-ingest from the CSV if those bikes are wanted back, and check the 1973 Bianchi.
   - check 1253 on Cat 17 p 54 against row 3232 ("1253 kidney-bean at 1972 only", still current in 1974); needs the page image.

@@ -177,7 +177,9 @@ Weinmann 1129 / 1130 570.
   OMAS sealed bearing hubs (not clearly one of 3449 / 3450), Jasik tandem headset parts,
   Regina Record I Oro and Super Corse Oro chains (still no unambiguous row), SR SilStar
   3922 (already 1970-82). Brands "Cycle Pro" (337) and "National" (670) cover the same
-  Japanese maker (National Tire Co.); a later cleanup could merge them. Out of scope: frames,
+  Japanese maker (National Tire Co.); merged 2026-10-29: brand 670 deleted, rows 9097 /
+  9098 moved to 337 and retitled (old titles "National tubular" / "National clincher";
+  search_text is now the new title, since search-text.js drops "Cycle" as a brand stopword). Out of scope: frames,
   forks (Tange Italian-style, Cinelli-style, standard), the Bikecology-built wheels (Tourist
   179A / 279A / 379A, Racing Tubular 579), bolts, spokes, tubes, pumps, tools, toe clips and
   straps, mirrors, cables, tape and plugs, bags, clothing, shoes and helmets.
