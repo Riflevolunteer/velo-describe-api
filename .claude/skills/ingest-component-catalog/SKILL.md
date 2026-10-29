@@ -31,10 +31,42 @@ actually support.
 - Pages are often rotated 90° in the scan; they are still legible. Later
   bound-in pages may come from a different printing (N. 12 had one).
 
+## Keep the run cheap
+
+Reading scanned pages is the expensive part (roughly 1.5-3k tokens per page
+image, and everything in context is re-sent every turn). So:
+
+- **One catalogue per session.** Don't carry a previous catalogue's pages or
+  diff into the next one; start fresh.
+- **Triage pages first.** Read the contents/index page and a quick skim, and
+  skip covers, adverts, dealer lists, price-only pages, tool/cable/clip
+  pages and exploded diagrams that are out of scope (see step 2). Note the
+  skipped page numbers in the `known-catalogs` entry.
+- **Transcribe in subagents, not the main context.** For more than ~20 pages,
+  spawn Agent subagents (`model: "haiku"` or `"sonnet"`) on batches of 10-15
+  pages each, in parallel. Each reads its pages and writes a compact
+  JSON/CSV to the scratchpad (`page, category, part_no, name, description,
+  year_hint`), returning only the file path and a one-line count. The main
+  context then reads those files, never the page images. Spot-check any page
+  where a part number or year looks doubtful by reading that page yourself at
+  full size; small-print part numbers are where cheap models misread.
+- **Don't go below 1800 px** in `bind-images-to-pdf.sh`; part numbers are small
+  and a re-read of an illegible page costs more than the saving.
+- **Diff in a script, not by eye.** Feed the transcription file to
+  `scripts/component-diff.js` (or a small scratchpad script that loops part
+  numbers through it) and read only the exceptions: missing, year mismatch,
+  description differs. Don't page through matching rows in chat.
+- **Write the listing to a file and summarise in chat.** The step 2 table can
+  be long output; put the full table in the scratchpad and show only the
+  "what we can ascertain" section plus counts, unless the user asks for the
+  table.
+- **Don't retry an unreachable DB** (see Gotchas). Write the SQL file, say the
+  DB was unreachable, and stop; a retry loop spends turns for nothing.
+
 ## 2. List the components
 
-Produce the listing in the chat first, before touching the DB, as a table
-per category with these columns:
+Produce the listing before touching the DB (in the scratchpad per the section
+above, summarised in chat), as a table per category with these columns:
 
 - **Category** — the DB's `component_category` title (Rear Derailleurs,
   Front Derailleurs, Shifters, Hubs, Brakes, Cranksets, Bottom Brackets,

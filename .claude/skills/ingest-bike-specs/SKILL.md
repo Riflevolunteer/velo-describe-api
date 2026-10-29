@@ -111,6 +111,13 @@ generating, classify every model in the CSV and drop the out-of-scope rows:
 
 ### 1. Inspect the CSV before generating
 
+Cost note: when the CSV is still to be transcribed from scanned pages, do the
+page reading in Haiku/Sonnet subagents in batches that write to a scratchpad
+file (see "Keep the run cheap" in `ingest-component-catalog`), one catalogue
+per session, and skip non-spec pages. Don't read the generator's full SQL
+output in chat; use `scripts/summarize-bike-sql.js` and read the "Skipped" and
+unlinked-spec lines.
+
 Read the header and a few rows. Look for the faults every catalog so far has
 had at least one of:
 
