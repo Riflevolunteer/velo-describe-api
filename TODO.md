@@ -29,7 +29,6 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 ## Open: code and data hygiene
 
 - Convert to ES2015 using babel.
-- Replace deprecated `crypto.createDecipher` with `createDecipheriv` (explicit IV) in `index.js`, `config.js` and `scripts/{component-diff,summarize-bike-sql,load-sql,db-query,generate-bike-update-sql}.js`.
 
 ## Open: component data follow-ups
 

@@ -18,16 +18,9 @@
 // Same DB config as scripts/db-query.js.
 
 const mysql = require('mysql');
-const crypto = require('crypto');
+const decrypt = require('../decrypt');
 const config = require('../config');
 const { buildGroups, MERGE_CANDIDATE, findNearPairs } = require('../duplicate-classify');
-
-function decrypt(text) {
-  const decipher = crypto.createDecipher('aes-256-ctr', 'd6F3Efeq');
-  let dec = decipher.update(text, 'hex', 'utf8');
-  dec += decipher.final('utf8');
-  return dec;
-}
 
 const flags = Object.fromEntries(process.argv.slice(2).map((a) => {
   const [k, v] = a.replace(/^--/, '').split('=');

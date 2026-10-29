@@ -13,18 +13,11 @@
 const fs = require('fs');
 const path = require('path');
 const mysql = require('mysql');
-const crypto = require('crypto');
+const decrypt = require('../decrypt');
 
 const config = require('../config');
 
 // Mirrors decrypt() in index.js.
-function decrypt(text) {
-  const decipher = crypto.createDecipher('aes-256-ctr', 'd6F3Efeq');
-  let dec = decipher.update(text, 'hex', 'utf8');
-  dec += decipher.final('utf8');
-  return dec;
-}
-
 const BATCH_SIZE = 200;
 
 function splitStatements(sql) {

@@ -8,15 +8,8 @@
 // Read-only; same DB config as scripts/db-query.js.
 
 const mysql = require('mysql');
-const crypto = require('crypto');
+const decrypt = require('../decrypt');
 const config = require('../config');
-
-function decrypt(text) {
-  const decipher = crypto.createDecipher('aes-256-ctr', 'd6F3Efeq');
-  let dec = decipher.update(text, 'hex', 'utf8');
-  dec += decipher.final('utf8');
-  return dec;
-}
 
 const [pattern, brand] = process.argv.slice(2);
 if (!pattern) {
