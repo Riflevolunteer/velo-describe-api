@@ -180,7 +180,7 @@ Weinmann 1129 / 1130 570.
   Japanese maker (National Tire Co.); merged 2026-10-29: brand 670 deleted, rows 9097 /
   9098 moved to 337 and retitled (old titles "National tubular" / "National clincher";
   search_text is now the new title, since search-text.js drops "Cycle" as a brand stopword).
-  Also deleted row 2983 "Cycle Pro" (Headsets, velobase, source_id 8E... bare placeholder, no
+  Also deleted row 2983 "Cycle Pro" (Headsets, velobase, bare placeholder, no
   years, no bike_spec links) and the now-empty category_brand (Headsets, 337). Out of scope: frames,
   forks (Tange Italian-style, Cinelli-style, standard), the Bikecology-built wheels (Tourist
   179A / 279A / 379A, Racing Tubular 579), bolts, spokes, tubes, pumps, tools, toe clips and
