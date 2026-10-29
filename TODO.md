@@ -29,6 +29,7 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 ## Open: code and data hygiene
 
 - Convert to ES2015 using babel.
+- Drop the inner DB-password encryption (decided 2026-10-29, not applied). `DB_PASSWORD` is a `SecureString` in SSM but its value is also an AES-CTR ciphertext decrypted by `decrypt.js` with the hard-coded key `d6F3Efeq`, so the second layer protects nothing. Steps: put the plain password in local `.env`, run `scripts/create-ssm-params.sh` to update SSM, change `index.js` and the six scripts (`db-query`, `component-diff`, `duplicate-report`, `load-sql`, `generate-bike-update-sql`, `summarize-bike-sql`) to use `config.db.password` directly, delete `decrypt.js` and `test/decrypt.test.js`, deploy and smoke-test `index.js`. Order matters: update SSM and deploy together, or prod gets a plain password it tries to decrypt. Also rotate the DB password afterwards, since the old ciphertext and key are in git history.
 
 ## Open: component data follow-ups
 
