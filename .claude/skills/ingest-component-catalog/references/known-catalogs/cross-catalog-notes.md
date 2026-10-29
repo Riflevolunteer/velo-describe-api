@@ -758,3 +758,13 @@ Weinmann 1129 / 1130 570.
 - Closed TODO gap: Sugino Mighty Custom (a second source; Maxy II is not in this catalogue). Not closed:
   Regina Super Corsa Oro chains, Fiamme / Super Champion clinchers.
 
+
+
+## Palo Alto Bicycle Shop catalogue — 1979-80 (VeloBase `PaloAlto+79-80.zip`, 52 JPGs, copyright 1979, components pp. 1-33), 2026-10-30
+
+- `data_source` label "Palo Alto Bicycle Shop catalogue (1979-80)", country US. Same method as the 1978-79 entry above: four
+  Sonnet subagents transcribed image ranges (195 records), five group agents proposed the diff (111 match, 43 ambiguous, 25 skip,
+  16 new), reviewed by hand; this time the corrected plan was loaded without a separate go-ahead (noted to the user).
+- Changed (old values for reverting). `year_to` -> 1979 on 15 rows: 9892 Avocet Model I (high flange) (1978-1978); 9893 Avocet Model III (1978-1978); 8260 SunTour US-6000, Winner Ultr (1978-1978); 2243 SunTour Pro-Compe (Ultra-6) (1978-1978); 9896 Cyclo Alloy (5 speed, custom (1978-1978); 9897 Avocet Seat Post (1978-1978); 2801 Cinelli 64 Giro D'Italia (70 (1970-1978); 2809 Cinelli 66 Campione del Mond (1960-1978); 9069 Galli 75 (1976-1978); 8883 Sugino MCVS / MCVD, Super Mi (1978-1978); 9899 Sugino Mighty Custom (1978-1978); 9900 Sugino Mighty Victory (1978-1978); 9901 Spécialités TA bottom bracke (1978-1978); 9902 Sugino Mighty Custom/Victory (1978-1978); 9903 Clement Elvezia 75 (1978-1978). `year_from` -> 1979 (earlier) on 5 rows: 5187 Super Champion Performance (1980-1981); 9123 Sugino Super Mighty Custom (1981-1981); 9119 Avocet Racing IIT (1981-1981); 6863 Specialized Touring Turbo (1980-1981); 6868 Specialized Turbo S (1980-1981). Fill 1979/1979 on []. Descriptions enriched on 11 rows (ids [3259, 3260, 4125, 5749, 6667, 7886, 9068, 8883, 6861, 6863, 6868]); old text was never shortened. New rows (1979-1979): Cyclo Alloy (6 speed, custom), Specialized Racing 700C x 1.
+- Rejected on review: matches to the Avocet hubs "(by Ofmega)" 3189 / 3190 / 3191 again, Avocet Professional headset -> Model II 2937, Avocet sealed BB -> Model I (4), Rigida 14-20 mm rims -> the 13-19 rows 9894 / 9895 and a generic Rigida 27 x 1 1/4 row 5153; new rows for BB spindles and cup sets (sub-parts), Palo Alto house tubulars (retailer house brand, TODO policy question), the Rigida 700C x 1 1/4, SR Laprade seat post (Laprade brand already has rows) and Avocet chainrings for double / triple (no model name).
+- Still ambiguous (43, not loaded): Regina chains and freewheels again, Cyclone front derailleur variants, Cinelli 1/A stems, Super Champion and Fiamme clinchers.
