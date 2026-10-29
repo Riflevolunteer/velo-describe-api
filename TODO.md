@@ -32,7 +32,7 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 
 ## Open: component data follow-ups
 
-- Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Mighty Custom / Maxy II and the Nuovo Tipo C1264-1267 hubs (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
+- Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Maxy II (Mighty Custom now has a second source, Palo Alto 1978-79) and the Nuovo Tipo C1264-1267 hubs (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
 - Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); the SunTour "syncro-shift" Cyclone II lever (Palo Alto 1981/82; no part number, no row). The 1981 Superbe brake is settled by years: CB-1000 ends 1978, so a 1981 Superbe is the Superbe Pro CB-3100 / 4100 family (reach unstated); nothing links to it.
 - Campagnolo Gran Sport front 2050 (row 2316, applied 2026-10-29, see Done). Still open:
   - no 1973-76 Raleigh Gran Sport DL 160 Campagnolo front specs exist in the DB now, so the 2026-10-24 clearing was a deletion not a null link; re-ingest from the CSV if those bikes are wanted back, and check the 1973 Bianchi.
@@ -131,6 +131,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 - **"1984 SR Bicycle manual.pdf"** (radiolabworks.com/bikes/catalogs/, linked from the VeloBase catalogue page): checked 2026-10-30, not a Sakae Ringyo parts catalogue. It is the owner's manual of the Windsor Enterprises (National City, CA) "SR" 12-speed and motocross bicycles: assembly, adjustment, torque and gear chart, no part numbers or component specs (Tange-marked seat clamp and wrench only as illustrations). Nothing for the SR / Sakae 1983-87 seatpost and stem gap; do not re-check.
 - **"Tange_1988.pdf"** (VeloBase, 40 pp): checked 2026-10-30, it is the Tange Frame Components System catalogue (frame tubing sets, lugs, dropouts, crowns, Fusion / Unicrown forks, brazed frame fittings), printed 1988. Contents run to Frame Fitting (p. 35) with no headsets, stems or seatposts, so nothing for the TH-305 / TH-108 / MX 600M / Levin headset gap; do not re-check.
 - **equusbicycle.com/bike/sugino/pdf/**: all four Vol. 56 spreads read and ingested 2026-10-30 (data_source 291); no further Sugino files there (the folder holds only `suginobrochure56 1..4.pdf`).
+- **Palo Alto Bicycle Shop catalogues** (VeloBase `Palo Alto Shop Catalogs/`): 1978-79 done 2026-10-30 (data_source 292, see `cross-catalog-notes.md`); `PaloAlto+79-80.zip` and `palo_alto_1984.pdf` not yet read. Method that worked: five Sonnet subagents transcribe page batches to JSON, group agents propose the diff, review by hand.
 - **Windsor 1979** (radiolabworks.com, 7 pp): a bike catalogue for a Mexico City brand, low link yield, not ingested.
 
 ## Open: Shimano bottom bracket cleanup

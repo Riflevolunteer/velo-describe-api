@@ -727,3 +727,34 @@ Weinmann 1129 / 1130 570.
 - Still `review` (7): 6641 Pivo track, 716 Favorit F2671/6-2, 8461 Araya 7X(N) (BMX, real), 5044 Mavic
   (1960's?) 410g, 5655 Ideale 88 smaller rivets, 6426 3ttt Mutant, 6973 Mavic Comète ± (real).
 
+## Palo Alto Bicycle Shop catalogue — 1978-79 (VeloBase `Palo Alto Shop Catalogs/PaloAlto+78-79.zip`, 48 JPGs, data_source 292), 2026-10-30
+
+- Source: 48 page images `78-79 Palo Alto00NN.jpg` (no 0037; the image-to-printed-page mapping is not constant,
+  roughly printed page = image + 2 up to p. 30 then shifting, so cite printed pages), "Copyright 1978"
+  (a 12-tooth cog is noted as late 1978), Palo Alto Bicycle Shop, 171 University Ave, CA; country US. Index:
+  pedals 12-13, hubs 14-15, wheels 15-16, rims 17, freewheels 18-19, chains 20, handlebars 27, stems 28,
+  brakes and headsets 29-30, derailleurs 31, shifters 32, superlight parts 33, tyres 37-40, saddles 42-44,
+  seat posts 44, cranksets and chainrings 45-47, bottom brackets 47-48. Clothing, books, touring, tools,
+  spokes and frames not read. Transcribed by five Sonnet subagents into 203 records, matched against the DB
+  by group agents, then corrected by hand.
+- Result: 98 existing rows matched (79 needed nothing). 9 `year_to` -> 1978: 6781 Clement Veltro (was
+  1977), 8069 V-T Luxe, 9056 Vittoria Granturismo, 9058 Competizione, 9060 Tour de France, 9062 Record,
+  9063 Imperforabile, 9069 Galli 75, 9072 Everest Dural (all were 1976). 8 `year_from` -> 1978 (earlier;
+  old values): 5255 Avocet Touring II 1980, 5258 Racing I 1980, 6277 Cyclone shifter 1980, 7097 Cinelli 2A
+  1982, 9117 Touring III 1981, 9118 Touring WII 1981, 9120 Racing WI 1981, 9121 Racing WII 1981. 2243
+  Pro-Compe Ultra-6 filled 1978. 19 descriptions enriched. 14 new rows (1978-1978): Phil Wood Platform
+  pedal, Avocet Model I high flange and Model III hubs, Rigida 13-19 27x1 / 700Cx1 rims, Cyclo Alloy
+  5 speed, Avocet seat post, Cinelli headset, Sugino Mighty Custom and Mighty Victory chainrings (9899, 9900),
+  Sugino Mighty Custom/Victory BB, TA non-sealed BB, Clement Elvezia 75, Cycle Pro National 1 1/8 clincher.
+- Rejected on review: matches to the Avocet Model I / II hubs "(by Ofmega)" 3189 / 3190 / 3191 (later parts);
+  year extensions on 3712 (Record Pista 1960-67) and the Sugino Mighty Competition rows 1326 / 1920 (may be
+  the pre-Super-Mighty model; 935g vs 900g on 1963); "Record Seta" with no brand; new rows for Record Road /
+  Track Black pedals (finish variants), Christophe toe clips (no category), Cyclo Pan kits, SunTour
+  "Standard" levers; the agents' claim that no Ti chain exists (1391 Extra 50 Titanio does).
+- Still ambiguous (38 records, not loaded): Regina Supercorsa Black / Oro / Record Oro chains and Super Corsa
+  Oro 5 / 6-speed freewheels (Extra 50 family, no proof), Super Champion 27x1 / 27x1 1/4 / 700C clinchers
+  and Rigida 16-22 clinchers and Fiamme Yellow Label clinchers (no model names that match the DB), Cyclone
+  front derailleurs, Cinelli 1/A stems by logo era, Stronglight / TA ring variants.
+- Closed TODO gap: Sugino Mighty Custom (a second source; Maxy II is not in this catalogue). Not closed:
+  Regina Super Corsa Oro chains, Fiamme / Super Champion clinchers.
+
