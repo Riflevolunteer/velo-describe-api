@@ -24,7 +24,9 @@ const COSMETIC_WORDS = /\b(black|white|silver|gold|red|blue|green|grey|gray|yell
 // Drilling for lightness counts (Modolo Flash drilled / non-drilled, drilled cogs), and so do shape
 // and machining: lever shape, plug, base, races, cup flats, bolt count, cable stops (cosmetic review
 // 2026-10-28: Altenburger, Cyclo Benelux, Magistroni, STM, AVA, Way Assauto, SunTour Cyclone).
-const CONFIG_WORDS = /\b(double|triple|single|pista|strada|road|track|cross|tandem|mtb|touring|left|right|lh|rh|front|rear|quick release|qr|braze[- ]?on|clincher|tubular|\d+[ -]?(speed|mm|t|bcd)|bcd|short|long|cage|compact|(high|low|large|small)[ -]?flange|flange|pieces?|mount|clamps?|band|tab|spiders?|arms?|pins?|flutes?|fluted|rails?|springs?|wires?|taper|cottered|cotterless|expander|steel|alloy|alu(minum|minium)?|titanium|cro-?moly|chromoly|leather|suede|forged|smooth|slotted|holes|drilled|pulleys?|inner|outer|aero|sidepull|quill|girder|ferrule|sleeved|speed indicator|grooved|straight|(longer|shorter) lever|plastic body|plugs?|(squared|rounded) base|races|flats|milled|(one|two|single|twin)[ -]bolts?|stops?|(narrow|wide) (enlarged )?cent(er|re) section)\b/i
+// The 2026-10-29 review pass added speed / cog counts, hub type, 700C, bends, eyelets, perforation, wood,
+// stem and lever styles, knuckles, friction vs aero shifters, crank profile words and part codes (907AS).
+const CONFIG_WORDS = /\b(double|triple|single|pista|strada|road|track|cross|tandem|mtb|touring|left|right|lh|rh|front|rear|quick release|qr|braze[- ]?on|clincher|tubular|\d+[ -]?(speed|mm|t|bcd)|bcd|short|long|cage|compact|(high|low|large|small)[ -]?flange|flange|pieces?|mount|clamps?|band|tab|spiders?|arms?|pins?|flutes?|fluted|rails?|springs?|wires?|taper|cottered|cotterless|expander|steel|alloy|alu(minum|minium)?|titanium|cro-?moly|chromoly|leather|suede|forged|smooth|slotted|holes|drilled|pulleys?|inner|outer|aero|sidepull|quill|girder|ferrule|sleeved|speed indicator|grooved|straight|(longer|shorter) lever|plastic body|plugs?|(squared|rounded) base|races|flats|milled|(one|two|single|twin)[ -]bolts?|stops?|(narrow|wide) (enlarged )?cent(er|re) section|\d+ ?(sp|cogs?)|cassette|freewheel|700c|quick releases|bends?|eyelets?|perforated|styles?|adjustable|wood(en)?|knuckles|porteur|drop|city|cent(er|re)pull|tips?|tension|(non)?covered|replac?e?able|swedged|relieved|round(ed)? base|vertical|parallelogram|underslung|depression|integrated|slot|friction|aerodynamic|(chain)?rings?|guard|narrow|\d+ ?g|no\. ?\d+|\d{3,4}[a-z]{1,2})\b/i
 const GENERATION_WORDS = /\b(v\d|version|type \d|gen|generation|first|second|third|1st|2nd|3rd|early|earlier|later|late|new style|old style|mk ?\d|mark \d|prototype)\b/i
 
 // Qualifiers in round or square brackets ("[black label]").
@@ -116,6 +118,13 @@ const REVIEWED_VARIANTS = new Map([
   [2119, 'dating marking: Maillard Normandy body lettered Normandy on backside'],
   [3036, 'dating marking: Magistroni L. MAGISTRONI lettered on upper race'],
   [2551, 'dating marking: Simplex Competition LE SIMPLEX Bte SGDG badge (1949-55)'],
+  [2021, 'marking: Zeus New Racer crank with circle Z only beside circle Z & ZEUS (kept 2026-10-29)'],
+  [2033, 'marking: Zeus Supercronos crank with circle Z only beside circle Z & ZEUS (kept 2026-10-29)'],
+  [862, 'marking: Milremo caliper lettered Lge LAM DURAL FORGE (kept 2026-10-29)'],
+  [2057, 'dating marking: Caimi CAIMI beside BREV CAIMI (patent marking, 1960; kept 2026-10-29)'],
+  [3113, 'marking: Stronglight A9 with Spidel locknut, own source 282 (kept 2026-10-29)'],
+  [1896, 'dating marking: Stronglight 49D Marque Deposee (1960) beside Depose (kept 2026-10-29)'],
+  [5798, 'marking: Huret Licence Satri beside JPR (kept 2026-10-29)'],
   [6201, 'two runs under one title: Simplex double, 1950-55 80 g beside the 1955-56 70 g 6200 (kept 2026-10-24)'],
 ])
 
@@ -403,7 +412,7 @@ function buildGroups(rows) {
     const others = members.filter(r => r !== survivor)
       .map(row => {
         const relation = relate(row, survivor)
-        const kept = (relation === 'cosmetic' || relation === 'duplicate') && REVIEWED_VARIANTS.has(row.component_id)
+        const kept = (relation === 'cosmetic' || relation === 'duplicate' || relation === 'review') && REVIEWED_VARIANTS.has(row.component_id)
         return { row, relation: kept ? 'variant' : relation }
       })
       .sort((a, b) => a.row.component_id - b.row.component_id)

@@ -181,3 +181,19 @@ test('a reviewed exact-title pair reports as a kept variant', () => {
   assert.strictEqual(relate(earlier, later), 'duplicate')
   assert.strictEqual(buildGroups([later, earlier])[0].others[0].relation, 'variant')
 })
+
+test('construction and shape words from the 2026-10-29 review are configurations', () => {
+  assert.strictEqual(relate(row('SunTour Alpha (7sp)'), row('SunTour Alpha (6sp)')), 'configuration')
+  assert.strictEqual(relate(row('Prior (4 cogs)'), row('Prior (3 cogs)')), 'configuration')
+  assert.strictEqual(relate(row('Vredestein Slimline Sprint (700C)'), row('Vredestein Slimline Sprint (27 x 1-1/4 x 1-1/16)')), 'configuration')
+  assert.strictEqual(relate(row('Nisi Countach (with eyelets)'), row('Nisi Countach (no eyelets)')), 'configuration')
+  assert.strictEqual(relate(row('Galli (pointed tip)'), row('Galli (rounded tip)')), 'configuration')
+  assert.strictEqual(relate(row('Gipiemme Crono Special (907AS)'), row('Gipiemme Crono Special (906AS)')), 'configuration')
+})
+
+test('a reviewed marking row that relate() leaves for review reports as a kept variant', () => {
+  const survivor = row('Caimi (BREV CAIMI)', { component_id: 2056 })
+  const other = row('Caimi (CAIMI)', { component_id: 2057 })
+  assert.strictEqual(relate(other, survivor), 'review')
+  assert.strictEqual(buildGroups([survivor, other])[0].others[0].relation, 'variant')
+})
