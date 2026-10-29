@@ -705,3 +705,20 @@ Weinmann 1129 / 1130 570.
   9295 Supercorsa SL; Ambrosio Synthesis Durex Pro (400g, 22mm) matches neither
   4910 (310g) nor 4911; Ambrosio anodised Montreal vs the garbled 4914; Campagnolo
   pantographed / engraved parts not added as rows.
+
+## Duplicate report `review` pass (2026-10-29, user's go-ahead)
+
+69 `review` rows: 46 reclassified as configurations (classifier words added in
+`duplicate-classify.js`), 7 marking rows kept in `REVIEWED_VARIANTS` (2021, 2033, 862, 2057, 3113,
+1896, 5798), 5 deleted or merged, 11 left for a source.
+- Deleted (all velobase or bare, no `bike_spec` links, no overrides): 1885 "Stronglight 107
+  (variation 2)" (1981, 635g, src 282, `1BE4D7C5-71DE-4BE4-A027-96CDAF306827`; weight already in
+  1883); 388 "Modolo Speedy (variation 2)" (1970-80, `B18EC253-4202-4E9A-923B-8DAF9723CD43`,
+  survivor 386); 2723 "Sturmey Archer AW" (no years, `06CCAAD7-45EB-40A8-9DC8-49D71FE87F92`,
+  siblings 2724 / 2725); 1729 "Sachs New Success" (no years, 640g Actual complete with rings and
+  bolts, `015218AC-C4C5-48D0-8D05-6E80FDA49C66`; weight folded into 1730); 798 "LAM [Super-Dural]
+  Course" (no years, `988012E7-A52C-4836-BF1A-E954616811BA`; marking noted on 811).
+- Still `review` (no evidence either way): 6036 Galli New Success, 6641 Pivo track, 716 Favorit
+  F2671/6-2, 767 Gipiemme hex bolts, 8461 Araya 7X(N), 5044 Mavic (1960's?) 410g, 5655 Ideale 88
+  smaller rivets, 6249 HSJ-508 bare, 6426 3ttt Mutant, 6645 Pivo 75 crescent, 6973 Mavic Comète ±.
+
