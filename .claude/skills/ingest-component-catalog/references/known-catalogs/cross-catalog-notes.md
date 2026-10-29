@@ -718,7 +718,12 @@ Weinmann 1129 / 1130 570.
   siblings 2724 / 2725); 1729 "Sachs New Success" (no years, 640g Actual complete with rings and
   bolts, `015218AC-C4C5-48D0-8D05-6E80FDA49C66`; weight folded into 1730); 798 "LAM [Super-Dural]
   Course" (no years, `988012E7-A52C-4836-BF1A-E954616811BA`; marking noted on 811).
-- Still `review` (no evidence either way): 6036 Galli New Success, 6641 Pivo track, 716 Favorit
-  F2671/6-2, 767 Gipiemme hex bolts, 8461 Araya 7X(N), 5044 Mavic (1960's?) 410g, 5655 Ideale 88
-  smaller rivets, 6249 HSJ-508 bare, 6426 3ttt Mutant, 6645 Pivo 75 crescent, 6973 Mavic Comète ±.
+- Merged later the same day (user's call, no evidence either way): 6036 "Galli (Galli Approved, New
+  Success)" (`4ECD396E-5AF1-458B-8B51-F539E3547383`) into 6035; 767 "Gipiemme Special (hex bolts)"
+  (`332A7EE6-6BB4-44CF-8219-434C5DA44665`) into 766; 6249 "Sturmey Archer HSJ-508, 4-speed"
+  (`1FF558D6-B486-4F15-B46E-0D80A5077530`) into 6250 (Brass); 6645 "Pivo 75 (with crescent)"
+  (`80062252-5C81-4BA9-BD01-7AD2744680BE`) into 6644. Each survivor's description notes the variant;
+  no links or overrides.
+- Still `review` (7): 6641 Pivo track, 716 Favorit F2671/6-2, 8461 Araya 7X(N) (BMX, real), 5044 Mavic
+  (1960's?) 410g, 5655 Ideale 88 smaller rivets, 6426 3ttt Mutant, 6973 Mavic Comète ± (real).
 
