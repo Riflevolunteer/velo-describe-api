@@ -182,3 +182,23 @@
   a different, later post and was left alone.
 - Not touched: the TODO's Mighty Custom / Maxy II gap (this leaflet covers neither).
 
+## Sugino Bicycle Parts Catalog Vol. 56 (1 A3 spread, c. 1982-83, equusbicycle.com) — data_source id 291, 2026-10-30
+
+- Source: `equusbicycle.com/bike/sugino/pdf/suginobrochure56%201.pdf` (one spread, text layer plus image:
+  chain wheel, B.B. set and BMX stem specification tables; cover GUINES, "Sugino Cycle Industries" /
+  "Sugino Cycle Inc."). **Dated c. 1982-83 by volume numbering** (Vol. 55 = 1982, Guines launched mid-1982);
+  an inference. It supplies the weights and tooth ranges the unreadable page 3 of Vol. 55 (data_source 212)
+  lacked. No year_from or existing year_to moved.
+- Rewritten (descriptions, `source_ref` -> 291): 1925 Aero Mighty (lengths 165-180, outer 50-54T, inner
+  42-47T; the 290 text had 42-52T); 1932 AS ("620 grams (Spec)" dropped, repeats the catalogue); 1934 GS;
+  1964 AT (710g, velobase 732g kept tagged); 1967 GT triple (rings 52 x 40, was "52/42"); 1953 No.6 FE-RB;
+  8898 No.5 FE-WB; 1931 CT-BMX; 8893 AT-BMX; 8894 GT-BMX; 8895 Maxy Cross; 8897 OPC-XJ; 8899 BMX stems
+  (HP-UFO / G3A / G3 / **G5** specs; the row's HP-G2 / G4 names come from Vol. 55 and are kept); 161 Mighty
+  MW-68 (Mighty BB set noted, 380g).
+- Retitled: 8896 "Sugino OPC-SA / BJ" -> "Sugino OPC-A5 + BJ / OPC-A4 + BJ, one-piece BMX cranks"
+  (search_text rewritten; Vol. 56 prints A5 / A4, "SA" was probably a misread of the Vol. 55 scan).
+- New (7 rows, 1982-1983, an estimate): 9881 No.66 FE-TR, 9882 CT-A5, 9883 BB-SC, 9884 Maxy BB set
+  (bolt / nut), 9885 CV-SC, 9886 OPC-SC, 9887 CV-LE-CR.
+- Not touched: Guines rows (only the cover), Aero Maxy 1924 (not on the spread). The TODO gap (Mighty
+  Custom / Maxy II) is not covered by this spread.
+
