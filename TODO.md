@@ -130,6 +130,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 - **disraeligears.co.uk**: surveyed 2026-10-29 (documents_from_the_1980s); unused: Huret July 1981 catalogue, Ricci '89, Shimano Spare Parts Catalogue 1986 / 1987 (derailleur sections only, no bottom brackets). None maps to an open gap.
 - **"1984 SR Bicycle manual.pdf"** (radiolabworks.com/bikes/catalogs/, linked from the VeloBase catalogue page): checked 2026-10-30, not a Sakae Ringyo parts catalogue. It is the owner's manual of the Windsor Enterprises (National City, CA) "SR" 12-speed and motocross bicycles: assembly, adjustment, torque and gear chart, no part numbers or component specs (Tange-marked seat clamp and wrench only as illustrations). Nothing for the SR / Sakae 1983-87 seatpost and stem gap; do not re-check.
 - **"Tange_1988.pdf"** (VeloBase, 40 pp): checked 2026-10-30, it is the Tange Frame Components System catalogue (frame tubing sets, lugs, dropouts, crowns, Fusion / Unicrown forks, brazed frame fittings), printed 1988. Contents run to Frame Fitting (p. 35) with no headsets, stems or seatposts, so nothing for the TH-305 / TH-108 / MX 600M / Levin headset gap; do not re-check.
+- **equusbicycle.com/bike/sugino/pdf/**: all four Vol. 56 spreads read and ingested 2026-10-30 (data_source 291); no further Sugino files there (the folder holds only `suginobrochure56 1..4.pdf`).
 - **Windsor 1979** (radiolabworks.com, 7 pp): a bike catalogue for a Mexico City brand, low link yield, not ingested.
 
 ## Open: Shimano bottom bracket cleanup

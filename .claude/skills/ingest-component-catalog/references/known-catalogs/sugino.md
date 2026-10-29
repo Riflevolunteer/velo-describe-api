@@ -202,3 +202,17 @@
 - Not touched: Guines rows (only the cover), Aero Maxy 1924 (not on the spread). The TODO gap (Mighty
   Custom / Maxy II) is not covered by this spread.
 
+### Vol. 56 spreads 2-4 (same catalogue, data_source 291, 2026-10-30)
+
+The equusbicycle folder (`/bike/sugino/pdf/`, "Sugino brochures early to mid 1980's") holds four spreads,
+`suginobrochure56 1..4.pdf`; spread 1 was ingested above. Spread 2 photo page (model names), 3 BB-SC / CV-SC /
+OPC-SC and RT / BT cranks, 4 No.66 and DZF cranks, SP-K, HP-G5 and OPC-A5 / A4.
+- RT (1935 double, 1968 triple) and BT (1933, 1966): bare "(Spec)" weights replaced by DRT / TRT / DBT / TBT
+  specs; the catalogue weights equal the old ones (660 / 750 / 690 / 780g). `year_to` 1980 -> 1982 on all
+  four (old 1980; Vol. 56 is at least 1982, the Guines is on its cover, so 1982 is a floor, not a measured end).
+- 5927 SP-K (bare, undated) 1982-1983 with the 200mm / 7 diameters / 225g spec.
+- Extra detail on 9881 No.66 FE-TR, 9883 BB-SC, 9885 CV-SC, 9886 OPC-SC, 8896 OPC-A5 / A4, 8899 BMX stems.
+- New (3 rows, 1982-1983): DZF02-1B, DZF02-1E, DZFO-1R cottered steel cranks (ids from the DB, `title LIKE
+  'Sugino DZF%'`).
+- Still not in any source on hand: Mighty Custom / Maxy II (TODO gap).
+
