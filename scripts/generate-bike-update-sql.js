@@ -568,6 +568,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'simplex sa 02': 2585, // 1982 Peugeot: Simplex SA02, Serie SA (1975-81) (Simplex spacing links 2026-10-30)
     'huret rider 3 pl': 8962, // 1987 Peugeot (FR) Saint-Bernard: Sachs Huret Rider / Duopar triple front (// linkCoverage pass 2026-10-30)
     'suntour lepree': 2637, // 1986 Raleigh Technium 480: SunTour FD-3400, LePree
     'huret rival av: 62 1d': 8961, // 1987 Peugeot (FR) table: Sachs Huret AV 62.1 D, Rival (part number printed)
@@ -795,6 +796,9 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
+    'simplex sx 660': 4649, // 1982 Peugeot: Simplex SLJ SX660, Super LJ (undated row) (Simplex spacing links 2026-10-30)
+    'simplex sx660': 4649, // 1984 Peugeot
+    'simplex s 001 t p': 4647, // 1983 Peugeot: Simplex S001 T, Prestige (1975-87)
     'shimano light action l522gs': 7553, // 1986 Raleigh: Shimano RD-L522, Light Action (Shimano exact-model links 2026-10-30)
     'shimano light action l523': 4518, // 1986 Raleigh: Shimano RD-L523, Light Action
     'huret rider': 8958, // 1986 Raleigh Teton: Sachs Huret AR 46.1 T, Rider, the only dated Rider rear (// linkCoverage pass 2026-10-30)
@@ -865,7 +869,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 410 gt sp': 4620, // 1980 Peugeot PF 60: SX410 GT (no GT SP row)
     'simplex lj 4000 cp': [{ from: 1975, to: 1977, id: 4602 }, { from: 1978, to: 1984, id: 4603 }], // 1977 Peugeot (DE) PY 10/CP: LJ4000 CP version 1 (1975-77)
     'simplex lj 1000 t': [{ from: 1970, to: 1981, id: 4600 }], // 1977 Peugeot (DE) PX 10/LE, PXN 10/E: LJ1000 T (1970-81)
-    'simplex sx 810 t': [{ from: 1977, to: 1981, id: 4617 }], // 1977 Peugeot (DE) PA 10/LE: SX810 T (1977-81; the DB title has no space, so the matcher misses it)
+    'simplex sx 810 t': [{ from: 1977, to: 1986, id: 4617 }], // 1977 Peugeot (DE) PA 10/LE, 1982 Peugeot: SX810 T (1977-86; the DB title has no space, so the matcher misses it)
     'sun tour vx gt': [{ from: 1979, to: 1980, id: 4707 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour RD-2400, VX (GT) (1977-84)
     'suntour hero': [{ from: 1986, to: 1986, id: 4746 }], // 1986 Raleigh Record / Sportif / Capri / Grand Mesa: SunTour Hero (Version 1); a judgement, the row is dated 1987, one year later (Version 2 is undated)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
@@ -2190,6 +2194,7 @@ const COMPONENT_OVERRIDES = {
     'nitto mt1 4 bolt alloy clamp': 9412, // 1987 Raleigh Maverick 18 Pro: Nitto MT-1 (two-piece clamp MTB stem)
   },
   Shifters: {
+    'simplex sx p 4190': 7301, // 1983 Peugeot: Simplex SXP 4190 (1978-81) (Simplex spacing links 2026-10-30)
     'shimano sis 105 sl1050': 6130, // 1987 Peugeot (US) Galaxie / Comete: SL-1050, 105 SIS
     'shimano new deore xt sis sl m730': 6159, // 1987 Peugeot (US) Cannon Ball Express: SL-M730
     'shimano sis new deore sl mt60': 6157, // 1987 Peugeot (US) Alpine Express: SL-MT60, Deore
