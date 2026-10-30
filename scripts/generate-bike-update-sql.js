@@ -2605,7 +2605,7 @@ const COMPONENT_OVERRIDES = {
     'regina cx s': 1384, // Regina CX / CX-S (1980-90), as the 1986 Cinelli CXS
     // 1978 Raleigh (US, ebykr scan).
     // Extra 50 Oro (1970-80) for the 1978 Professional Mk V, as the 1973-75 Raleighs; the undated Oro BX from 1981 keeps the 1986 Cinelli pick.
-    'regina oro': [{ to: 1980, id: 1382 }, { from: 1981, id: 1380 }], // Regina Extra 50 Oro / Regina Oro BX
+    'regina oro': [{ to: 1984, id: 1382 }, { from: 1985, id: 1380 }], // Regina Extra 50 Oro (1970-92) / Regina Oro BX (1985); the 1982 Battaglin Oro is not the BX
     'shimano uniglide': 7450, // Record FFS/PPS: Shimano QA-200 / CN-UG20, Uniglide-II (1977-89), as the 1983 Road Ace
     // 1979 Colnago.
     'regina extra record': 1381, // Regina Extra 50 Record (1970-80)
@@ -2870,7 +2870,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
     'clement campionissimo tubular 28"': 6738, // Clement Campionissimo Seta Extra (the only dated Campionissimo row)
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
-    'vittoria nuovo pro tubular': 6893, // Team Replica / Road Ace: Vittoria Nuovo Pro 260 (only Nuovo Pro row)
+    'vittoria nuovo pro tubular': null, // 1984 Raleigh Team Replica / Road Ace: the only Nuovo Pro row is the 1988 Nuovo Pro 260, not shown for 1984 (unlinked 2026-10-30)
     'clement tubulars mod colnago': 6743, // Clement Colnago (1979 Colnago Mexico / Mexico Oro)
     // 1979 Colnago Super / Saronni / International / Roger de Vlaeminck / Export: no maker printed, read
     // as the Clement Colnago the Mexico sheet names.
