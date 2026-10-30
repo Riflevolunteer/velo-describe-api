@@ -320,3 +320,27 @@ See the full entry in [suntour.md](suntour.md). Added 9579 Monthléry N (395 g)
 and 9580 Monthléry Légère (310 g), both 20 mm, 700C, years 1970-1975 (the
 binder range). 9104 Extra Légère description now names the 20 mm / 259 g
 Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
+
+## Mavic racing rims sheet (1974) — labibleduvelocataloguesmavic "MAVIC 1974", data_source id 300
+
+- Source: https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1974.html, one JPG (1024 x 728,
+  proxied from bibibike.forumserv.com 1974-4d2cec9.jpg): "Jantes en alliage léger pour cycles de
+  course / Lightweight rims for racing cycles", Mavic, Saint Trivier sur Moignans. No year printed;
+  1974 from the blog. It is the same sheet as Mel Pinto binder p. 30 (source 272, 1970-75).
+- Rims: Monthléry N 395 g and Monthléry Légère 310 g (20 mm, 700C, 24-40 holes); Extra-Légère or
+  Golden Monthléry 259 g (20 mm, 28-40); Sport 390 g, Piste 420 g, Spéciale Sport 410 g (21.5 mm,
+  700C; Sport and Spéciale Sport 32-40, Piste 24-40); Démontable clincher 22 mm (650B, 26 x 1 3/8,
+  700C, 27 x 1 1/4; 32-40).
+- year_from moved earlier to 1974 (old value): 9104 Extra Légère (1978), 5105 Piste (1979), 5109
+  Spéciale Sport (1980), 5091 Montlhéry Légère (1976). The 2026-10 Mel Pinto pass left these because
+  the binder's range is loose; a dated maker's sheet settles it. The 'mavic special sport' override
+  (1980-91 -> 5109) is unchanged.
+- Descriptions: 5105 Piste (21.5 mm and 420 g in 1974 vs 370 g in 1979), 5109 Spéciale Sport (410 g,
+  32-40 holes in 1974 vs 400 g c. 1980), 5047 Démontable (was a velobase stub; 1974-1974, clincher
+  sizes and holes, measured 470 g kept), 5091 Montlhéry Légère (1974 holes and weight).
+- Merged: deleted 9580 "Mavic Monthléry Légère" (1970-75, source 272, 0 links; added from the Mel
+  Pinto copy of this sheet) into 5091 Montlhéry Légère. No overrides referenced it.
+- Matched, no change: 5111 Sport Tubular (390 g, 21.5 mm), 9579 Monthléry N.
+- Lead, kept apart (user's call): 9579 Monthléry N (395 g, 20 mm, 1970-75) looks like the earlier
+  name of 5092 Montlhéry Pro (20 mm, 395 g in Kitching 1984, 399 g avg). 5110 "Mavic Sport" (velobase
+  stub, 1960) vs 5111 Sport Tubular also left.
