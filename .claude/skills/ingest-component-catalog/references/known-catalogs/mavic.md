@@ -344,3 +344,34 @@ Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
 - Lead, kept apart (user's call): 9579 Monthléry N (395 g, 20 mm, 1970-75) looks like the earlier
   name of 5092 Montlhéry Pro (20 mm, 395 g in Kitching 1984, 399 g avg). 5110 "Mavic Sport" (velobase
   stub, 1960) vs 5111 Sport Tubular also left.
+
+## Mavic catalogue (1979) — labibleduvelocataloguesmavic "MAVIC 1979", data_source id 301
+
+- Source: https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1979.html, 17 JPGs ("MAVIC 1979
+  (1-17)", s0 = 1725 x 1237, FR / EN). Printed page = scan - 1; scan 2 is the contents. Dated by
+  its own text: the Grise SSC rim "developed in 1974 ... used for five years ... (In 1979:
+  Renault-Gitane, Miko-Mercier, Fiat-la France, Raleigh, Bianchi, Gios, Teka, Supéria, Scic,
+  Novostil, Flandria, Zonca-Santini, Magniflex)". So it is a year before the c. 1980 catalogue
+  (source 240, 1980 team list) and fuller than the c. 1979 leaflet (source 242).
+- Pages: 2 clincher rims (Module E, E2, E2 Argent, E2 650A, Module 3 700C / 650), 3 polished
+  tubulars (Sport 700C 390 g / 600 300 g, Spéciale Sport 400, Montlhéry Route 420, Pro 395, Légère
+  310, Piste 370), 4-5 anodised tubulars (Argent / Or 10, Argent / Or 7, GP 4, Bleu SSC, Argent 12
+  SSC, Grise SSC Paris-Roubaix 400 g), 6-7 500 RD hubs (front 236 / 212 g, 505 RD 275 / 250 g, 506 RD
+  286 / 261 g), 8-9 600 RD bottom bracket (602 / 603 metric and Italian, steel / alloy / titanium
+  axles, 210-340 g), 10-11 800 rear (175 g, 12-32), 12 Series 600 cranks (593-600 g) and pedals 640
+  (167 g) / 641, 13 bends 351 G.I. / 352 F.B. and flat / round / grooved stems, 14 brakes 410 / 420,
+  15 hub spares, 16 tools (out of scope). No front derailleur or shifter in this printing (absence
+  only; 2405 810 stays 1979).
+- year_from 1980 -> 1979: 5090 Module E2 Argent, 8152 Sport 600, 9031 351 G.I. bend, 9032 352 F.B.
+  bend, 3837 640 pedal (description rewritten: 167 g, 641 meanings).
+- Added: 9969 Mavic 641, Piste (1979-1979): in 1979 the 641 is the track version of the 640. The
+  number was reused: 8180 "Mavic 641" (1986-91) is the 640 with 9/16 x 20 threads. Kept apart.
+- Merged (0 links, no overrides; source_id values were not captured before the delete):
+  3835 "Mavic 600" pedal (1979, 164 g, source 242) into 3837: the 1979 catalogue calls the Series
+  600 pedal ref. 640, which reverses the c. 1980 entry's "two eras, no merge"; 9421 "Mavic Monthlery
+  Route" (1984, source 261) into 5093 Montlhéry Route and 9422 "Mavic Monthlery Pro" (1984, source
+  261) into 5092 Montlhéry Pro: Kitching 1984 rows duplicating the existing ones, whose facts
+  (21.5 mm 420 g; 20 mm 395 g) the survivors already carry.
+- Matched, no change: rims Module E / E2 / 3, Montlhéry Route / Pro / Légère, Piste, Spéciale Sport,
+  Argent / Or 10 and 7, GP 4, Bleu / Argent 12 SSC, Paris-Roubaix SSC; 3397 500 RD; 84 600 RD; 4336
+  800; 1637 Series 600 cranks; 6582 / 6583 stems; 410 / 420 brakes.
