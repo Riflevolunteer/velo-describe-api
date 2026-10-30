@@ -612,3 +612,4 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 ## Judgement calls — 2026-10-30
 
 - Seatposts: "Simplex aluminium" / "Simplex dural" picked by the bike's Simplex tier: 1982 / 1984 PX 10 DU (SX 610) -> 5901 SX 1500 (bike-keyed range); 1984 PY 10 LS, PRO 10, PY 10 FC (SLJ 5500 / 6600) -> 5904 SLJ6164. 1977 (DE) PS / PSN 10/E "San Marco, dural, 26.6mm" and 1978 PS / PSN 10 "San Marco, lightweight" -> 5882 G.S. earlier version (unnamed San Marco post taken as the plain G.S.). +9. Left: 1982 PH 12 "Simplex Dural, 24 mm", 1976 PY 10 "Simplex dural, anodised".
+- Handlebars (2026-10-30): 1984 (GB) PGN 10 US Routier / Paris-Nice "CTA" -> 2782 ATAX CTA (Weinmann 506 with standard levers, so not the aero-cable CTA; steel would be named); 2782 dated 1984 on this catalogue. +2. 1970-76 "Racing bend" (13) left unlinked by decision: no maker printed, and 2901 Franco Belge 354 starts 1979.

@@ -1826,6 +1826,12 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // Judgement calls 2026-10-30. 1984 Peugeot (GB) PGN 10 US Routier / Paris-Nice: plain CTA (Weinmann 506 with
+    // standard levers rules out the aero-cable CTA; steel would be named). 2782 dated 1984 on this catalogue.
+    cta: [{ from: 1984, to: 1984, id: 2782 }], // ATAX CTA
+    // 1980 Raleigh Touring 14: an engraved ferrule is a double-tube centre, so not the RN-L bulge bar;
+    // the RND is the "Road Champion" marked one.
+    'sr light alloy randonneur with engraved ferrule': 2913, // Sakae/Ringyo (SR) WR, World Randonneur
     'atax franco italia thickened race bend 420 mm': 2897, // 1980 Peugeot (NL): Franco-Italia 352 (Atax branding), as 1978
     'atax race bend 420 mm': 2901, // 1980 Peugeot (NL) PL 8 M: course bend -> Franco Belge 354, as 1979
     steel: null, // 1981 Peugeot PL 50 M: bare material; matched Nitto B125, Steel by substring
