@@ -789,3 +789,18 @@ Weinmann 1129 / 1130 570.
   source_id E06940DC-5EDE-40EA-85E3-1BE6AD1F36F3); kept 1466 "Cambio Rino Aereo" (1985, La Bicicletta
   Guida '85/86, source 259). No bike_spec links or overrides. duplicate-report missed it because
   the stub's model name sat inside the parenthetical ("Cambio Rino" vs "Cambio Rino Aereo").
+
+## Dedupe 2026-10-30: model names hidden in parentheticals (one-off scan)
+
+- Scan: rows whose bracketed text holds the extra model words of another row of the same brand +
+  category (the Cambio Rino "(type aereo)" pattern). 61 pairs, nearly all configuration variants
+  (BCD, flange, quill length, speeds); 3 real leads.
+- Merged 8006 "SunTour CW-6000, Superbe Pro Track" (1992-93, SR SunTour 1993, source 278, source_id
+  7100218c-bf6e-11f1-a2df-02fea3763e8d) into 1992 (No. 62 Dec 1984, source 90 kept), retitled from
+  "SunTour CW-6000, Superbe Pro (Track)" to "SunTour CW-6000, Superbe Pro Track", years 1985-1993; the
+  description names both editions' specs (595g 52T 170mm vs 625g 49T 165mm).
+- Merged 3011 "Gipiemme Special (?), Special (Strada)" (velobase, 1980, 97 g Actual, source_id
+  2AA2D25A-B2CA-4C27-A2A0-CBA36FE58B11) into 3010 Gipiemme 'Special' Strada (600168): weight and the
+  1980 year folded in.
+- Left: 2679 "Zeus (Campagnolo Gran Sport copy)" (velobase 1950-60) vs 2686 Zeus Gran Sport front
+  (Zeus 1977, ref. 28): may be an earlier part, no evidence either way.
