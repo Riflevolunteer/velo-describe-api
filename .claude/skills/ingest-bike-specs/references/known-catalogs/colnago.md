@@ -192,3 +192,5 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
 ## 1997 Colnago — not loaded (user decision, 2026-10-24)
 
 - 2velo 1997 group (61 pages): a frame catalogue. Nine framesets with tubing, sizes and Art Decor '97 paint codes (C-40, Ovaltitan, Monotitan, Master, Tecnos, Dream, Crystal, Altain, C-35); complete bikes are photo plates only. Dated by the 1997 champions spread (Museeuw world champion, Mapei-GB national champions) and Van Lierde's 1997 Ironman. Seven languages, no market. Drafted (22 specs, 0 links) but left out: frame-only rows from outside the 1970-1993 range. Draft CSV kept outside bike_specs/ so a batch run can't load it.
+
+- 2026-10-30: bare "Concor", "Concor Moda" and "Concor in MODA grid colours" saddles (1986-88, 23 specs) left unlinked by decision: by 1985 Concor is a family, not one model.

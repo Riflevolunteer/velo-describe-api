@@ -517,3 +517,7 @@
 - New overrides (all ranged): Super Record cranks -> 1509 1049/A, Record Strada crank -> 1496; Super Record "bassi" brakes -> 7005 4061/1 short reach; Universal Competizione/77 -> 1083 Mod. 77, Competizione CX -> 1086 CX; "normal flange" Record hubs -> 3259 1034 low flange; Super Record Strada pedals -> 3716 4021, Record Super Leggeri -> 3709 1037/a; Record Strada seatpost -> 5749; Record BB -> 30 1046/a; Regina Extra Oro chain -> 1385; Regina Extra Oro 5-speed -> 2182, Extra 5-speed -> 8171. "Mavic special" set to null (substring hit Service des Courses 5108). No other catalogue's link count changed.
 - Judgement calls kept: Super Record front -> 2313 1052/SR although the row starts 1979 (see TODO); "Ambassador" headset -> 9159 Ofmega 3150 Ambassador; bare "Campagnolo" CX pedals / seatpost via the existing 3708 / 5749 overrides.
 - Left unlinked: T.T.T. bars and posts, Clement tubulars, Regina "Extra Oro 50 Record" chain (Extra 50 Oro vs Extra 50 Record), Regina Extra Oro 6-speed (no row), Campagnolo "Sport" headset, Bianchi / Gipiemme house parts.
+
+## Judgement calls — 2026-10-30
+
+- 1987 Giro / Super Leggera "Gipiemme Cronosprint" seatpost -> 5789 Crono Sprint 600BA fluted (the plain group's post); 1983-84 Eco Pista "San Marco" -> 5883 G.S. later version; 1978 Rekord/746 "T.T.T. Record" -> 5716 Mod. Record, row redated 1970-75 -> 1970-78. +5. 1978 Specialissima Barcellona "Clement silk tubulars, extra-light" left unlinked (three road Seta Extra rows).

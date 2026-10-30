@@ -608,3 +608,7 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 
 - 1982 (NL) "Sedisport, 114 links, Delta treated" (5) -> 1402 Sedis Sedisport Delta, as the 1980 108-link value. 1984 (FR 3, GB 2) bare "Turbo" saddle -> 5508 Selle Italia Turbo (ranged 1980-90). +10 links; no other catalogue changed.
 - 1984 PCA 10: Front Derailleur "Huret Duopar" deleted (Duopar is a rear mech; the cell repeated the rear). CSV cell blanked (untracked).
+
+## Judgement calls — 2026-10-30
+
+- Seatposts: "Simplex aluminium" / "Simplex dural" picked by the bike's Simplex tier: 1982 / 1984 PX 10 DU (SX 610) -> 5901 SX 1500 (bike-keyed range); 1984 PY 10 LS, PRO 10, PY 10 FC (SLJ 5500 / 6600) -> 5904 SLJ6164. 1977 (DE) PS / PSN 10/E "San Marco, dural, 26.6mm" and 1978 PS / PSN 10 "San Marco, lightweight" -> 5882 G.S. earlier version (unnamed San Marco post taken as the plain G.S.). +9. Left: 1982 PH 12 "Simplex Dural, 24 mm", 1976 PY 10 "Simplex dural, anodised".

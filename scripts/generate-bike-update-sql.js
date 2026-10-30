@@ -2391,6 +2391,21 @@ const COMPONENT_OVERRIDES = {
     'sugino spkc': 5928, // 1986 Raleigh Crested Butte: Sugino SP-KC
     'sugino sp kvc 230mm': 5928, // 1986 Raleigh Elkhorn: "KVC" a typo of the 1985 "SP KC 230mm"
     'simplex slj 4164 dural silver anodised 266mm': 7305, // 1977 Peugeot (DE) PY 10/CP: Simplex SLJ4164, row 1978-81, a year early
+    // Judgement calls 2026-10-30. Bare "Cronosprint": the main group's post (Aero and Economy were named groups).
+    'gipiemme cronosprint': [{ from: 1980, to: 1991, id: 5789 }], // 1987 Bianchi Giro / Super Leggera: Crono Sprint 600BA (fluted)
+    // Peugeot Simplex material-only posts, picked by the bike's Simplex tier: SX group -> SX 1500, SLJ group -> SLJ6164.
+    // 1982 PH 12 "Simplex Dural, 24 mm" and 1976 PY 10 "dural, anodised" stay unlinked.
+    'simplex aluminium': [
+      { bike: 'PX 10 DU', from: 1979, to: 1984, id: 5901 }, // 1982 / 1984 PX 10 DU (SX 610): Simplex SX 1500
+      { from: 1984, to: 1989, id: 5904 }, // 1984 PY 10 LS / PRO 10 (SLJ 5500): Simplex SLJ6164
+    ],
+    'simplex dural': [{ from: 1984, to: 1989, id: 5904 }], // 1984 PY 10 FC (SLJ 6600): Simplex SLJ6164
+    // Unnamed San Marco posts as the plain G.S. (the fluted G.S. Special would be named).
+    'san marco dural 266mm': [{ from: 1970, to: 1980, id: 5882 }], // 1977 Peugeot (DE) PS / PSN 10/E: G.S. earlier version
+    'san marco lightweight': [{ from: 1970, to: 1980, id: 5882 }], // 1978 Peugeot PS / PSN 10
+    'san marco': [{ from: 1981, to: 1988, id: 5883 }], // 1983-84 Bianchi Eco Pista: G.S. later version
+    // 1978 Bianchi Rekord/746 "T.T.T. Record": the 70s Mod. Record pillar (5716 extended 1975 -> 1978 on this catalogue; RSR from 1980).
+    '3ttt record': [{ from: 1970, to: 1978, id: 5716 }],
     // 1986 Cinelli (Ten Speed Drive Imports).
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 5764, // Victory / Triomphe
@@ -2652,6 +2667,8 @@ const COMPONENT_OVERRIDES = {
     'suntour accushift plus silver 12 30t 7 speed': [{ from: 1990, to: 1990, id: 1222 }], // SunTour CS-AP00-S7U, XC Pro
   },
   Tyres: {
+    // 1970 Raleigh Professional Mk II: Clement's standard road silk of 1970 (6769 "Clement Seta" is a 1974-85 stub).
+    "clement 'seta' silk": [{ from: 1970, to: 1988, id: 6748 }], // Clement Criterium Seta
     '650': null, // 1980 Peugeot PH 50 M: bare wheel size; matched Wolber 22 Racing Team 650 by substring
     'michelin elan ts 1 1 16 folding': 8789, // 1980 Peugeot (NL) PVN 10: Elan TS (row dated 1977-79, a year early, as 1978)
     'michelin elan ts 700 x 25 extra narrow training tyres with inner tube': [{ from: 1977, to: 1979, id: 8789 }], // 1977 Peugeot (DE) PRN / PSN / PXN 10/E, PRN 13/E: Michelin Elan TS (8789 year_from moved to 1977 on this catalogue)
