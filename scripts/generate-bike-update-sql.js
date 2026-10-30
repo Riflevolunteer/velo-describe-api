@@ -1260,6 +1260,8 @@ const COMPONENT_OVERRIDES = {
     'weinmann 500 alloy side pull with qr': 1125, // 1986 Peugeot (US) Tourmalet: Weinmann AG 500 (hex socket, quick release)
     'shimano br 6207': 970, // 1986 Peugeot (FR) table PG / PX 10 SH: BR-6207-49, the short-reach road caliper
     'weinmann 506 alloy side pull': 7764, // 1986 Peugeot (US) table Ventoux: Weinmann AG 506
+    'weinmann 405 alloy side pull with racing levers': 1117, // 1986 Peugeot (US) PGN 10 Galibier: Weinmann AG 405 caliper (491 is the lever)
+    'weinmann 405 side pull': 1117, // 1985 Peugeot PGN 10 M: Weinmann AG 405 caliper
     // 1987 Colnago Junior SIS 600 (Catalogo generale 1987).
     'shimano 600 sis': [{ bike: 'Junior SIS 600', from: 1987, to: 1987, id: 972 }], // BR-6208, 600EX (1986-87)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.

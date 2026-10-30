@@ -129,6 +129,7 @@ const REVIEWED_VARIANTS = new Map([
   [6973, 'distinct part: Mavic Comète ± weighted rear disc, listed apart from the Comète in the 90/91 catalogue (kept 2026-10-30)'],
   [8461, 'distinct part: Araya 7X(N) 28.0 mm BMX rim beside the 32.2 mm 7X, same Araya source (kept 2026-10-30)'],
   [716, 'distinct part: Favorit Special F2671/6-2 beside F-2048/6-2, different part numbers (kept 2026-10-30)'],
+  [5044, 'two runs under one title: Mavic (1960\'s?) 410 g rim beside the Mavic (1950\'s) 5043 (kept 2026-10-30)'],
 ])
 
 // --- Near pairs: the same part under another brand row or another name ---

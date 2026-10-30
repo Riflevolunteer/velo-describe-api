@@ -726,6 +726,11 @@ Weinmann 1129 / 1130 570.
   no links or overrides.
 - Still `review` (7): 6641 Pivo track, 716 Favorit F2671/6-2, 8461 Araya 7X(N) (BMX, real), 5044 Mavic
   (1960's?) 410g, 5655 Ideale 88 smaller rivets, 6426 3ttt Mutant, 6973 Mavic Comète ± (real).
+- Leads, 2026-10-30 (user's go-ahead): deleted 2000 "SunTour XCD 6000" (velobase, 1990, "Japan" only,
+  `8343CBE2-BE34-4790-A082-31A5F8917CD7`, no links or overrides) as a stub of 2001 "SunTour CW-XD00,
+  XCD 6000" (source 199). 491 / 1117 "Weinmann AG 405" are lever / caliper, not a pair; 1117
+  `year_to` 1983 -> 1986 (fitted on the 1984 Raleigh Competition 12 and 1984-86 Peugeots). 5044 Mavic
+  (1960's?) kept apart from 5043 (1950's) in `REVIEWED_VARIANTS`. Still `review` (2): 6641, 6426.
 
 ## Palo Alto Bicycle Shop catalogue — 1978-79 (VeloBase `Palo Alto Shop Catalogs/PaloAlto+78-79.zip`, 48 JPGs, data_source 292), 2026-10-30
 
