@@ -27,7 +27,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/mavic.md](known-catalogs/mavic.md) — Mavic (5 entries)
 - [known-catalogs/regina.md](known-catalogs/regina.md) — Regina (3 entries)
 - [known-catalogs/3ttt.md](known-catalogs/3ttt.md) — 3ttt (5 entries)
-- [known-catalogs/mafac.md](known-catalogs/mafac.md) — MAFAC (1 entry)
+- [known-catalogs/mafac.md](known-catalogs/mafac.md) — MAFAC (5 catalogues: c. 1976, 1964, 1978, 1979 poster, 1980)
 - [known-catalogs/ritchey.md](known-catalogs/ritchey.md) — Ritchey (3 entries)
 - [known-catalogs/araya.md](known-catalogs/araya.md) — Araya (1 entry)
 - [known-catalogs/ta.md](known-catalogs/ta.md) — Spécialités TA (1 entry)

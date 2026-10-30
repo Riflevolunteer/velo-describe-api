@@ -219,3 +219,38 @@
   variants (838-842) or test the 1969 cap on row 839.
 - No SQL, `source_ref` unchanged. Still unresolved: a source that includes
   the Racer pages of this catalogue or of the 1978 one.
+
+## MAFAC catalogue (1980) — labibleduvelocataloguesmafac "MAFAC 1980", data_source id 298
+
+- Source: https://labibleduvelocataloguesmafac.blogspot.com/p/mafac-1980.html, 30 JPGs
+  ("MAFAC CYCLES 1980 (1-30)", s0 = 1740 x 1237, landscape, bilingual). Printed page = scan - 2.
+  Scans 1-3 cover and history (out); 4-15 brakes LS2, GT, LS, Compétition anodised, 2000,
+  Compétition grand luxe, Racer, LC, Raid, S, Critérium, Tandem; 16-25 levers 429, 435, 218, 227,
+  110, 130, 150, 611, 825 (GF / GDA), 710 (VDA / VF); 26 holders and tool-kits, 27 blocks 604 /
+  64 / 264 and self-lubricating cables, 28 pivot brazing (all out of scope); 29 three-digit lever
+  code; 30 brake-set compositions. Transcribed by two Sonnet subagents.
+- Lever code (p. 27): digit 1 lever (1 bright, 2 drilled, 4 drilled silver-anodised, 5 drilled
+  gold-anodised, 6 junior, 7 ville, 8 guidonnet); digit 2 bracket (1 resin / resin lever, 2 alloy /
+  alloy lever, 3 promotion, 4 double control, 5 safety); digit 3 clip and hood (0-4 simplified,
+  5-9 patented: 0 / 5 no hood, 1 / 6 small adjuster, 2 / 7 large adjuster, 3 / 8 black enveloping
+  cover, 4 / 9 translucent cover). Sets (p. 28): LS2 A, GT A, LS A, Cn A, M A with 429 and the
+  self-lubricating (Rilsan-lined) cable; Cn + 127; R 1 = R GL + 126, R 1P + 135, R 2 + 120, R 2P +
+  130, R 3 = R L + 120, R 3P + 130; LC 3 = LC L + 110; Rd 1 + 126, Rd 3 + 120, S 3 + 120.
+- New in 1980 vs 1978: the anodised A-series Compétition (Cn 1-A / 2-A / 3-A, stirrups 3451E /
+  3452E / 1451AE, pivots 3491E / 3493E, 173 g; Cn T-A 142 g braze-on) beside the grand luxe Cn 1-3
+  (451E / 452E / 1451E, 170 g); GT (1-A / 2-A, 169 g; T-A 140 g); LS2; LC; levers 227 and 110.
+- Updated (source_ref -> 298): year_to 1979 -> 1980 on 834 LS2, 836 2000, 843 Raid (+205 g),
+  844 S, 355 Course 130, 356 Course 218, 343 GF, 8379 CE / CET, 8377 VF; 1978 -> 1980 on 8797 CLS
+  (= Course 150, 156 g) and 8378 GDA (95 g in 1980 vs 85g in 1978); descriptions on 830 GT (was
+  bare), 833 LS, 351 VDA. Retitled: 352 "MAFAC Competition (last)" -> MAFAC Competition A
+  (anodised); 832 "MAFAC  LC" -> MAFAC LC; 347 "MAFAC Promotion Perfo" -> MAFAC 435, Promotion
+  Perfo (years 1978-1980). search_text rewritten with each.
+- Merged: deleted 8795 "MAFAC Course 435" (1979 poster, source 187, 0 links) into 347: by the code
+  4-3-5 it is the drilled anodised promotion lever with patented clip, 75 g = CP a (1978). 347
+  keeps its bike link and the override 'mafac dural promotion drilled'.
+- Added (1980-1980): 9965 MAFAC Course 227 (drilled, alloy bracket, large-adjuster hood, patented
+  clip, 118 g), 9966 MAFAC Course 110 (bright, resin bracket, no hood, simplified clip, 65 g).
+- Leads, not merged: 356 Course 218 vs 8376 "2000 racing lever (C RMEGT)" (137 g both,
+  enveloping hood); 355 Course 130 vs 346 Promotion (with quick release) (78 g both, promotion
+  bracket; the 1980 page names no QR). 357 "Course 419 / 429" carries the 1976 dural CB / RMT
+  lever description, which is 126 / 127 in the 1980 code; left (9 links, override 'mafac course').
