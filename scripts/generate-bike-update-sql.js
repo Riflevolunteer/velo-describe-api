@@ -1289,6 +1289,7 @@ const COMPONENT_OVERRIDES = {
     'mafac competition with course 2000 levers': [{ from: 1971, to: 1980, id: 825 }],
     'mafac racer with course levers': [{ from: 1970, to: 1980, id: 838 }], // 1977 Peugeot (DE): MAFAC Racer (1970-80), as the other bare Mafac Racer picks
     'mafac 2000 anodised': [{ from: 1976, to: 1976, id: 836 }], // 1976 PY 10: MAFAC 2000 later version (1970-79; 835 and 837 are 1970-only variants)
+    'new altenburger alloy center pull': 510, // 1973 Raleigh Record: Altenburger Centrepull (generic; 513 Concorde is a named model the text doesn't give)
     'altenburger synchron': [{ from: 1970, to: 1976, id: 511 }], // 1970-76 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron (512, the other logo variant, merged into 511 on 2026-10-26) match (a judgement)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'shimano deore xt cantilever with gumhoods': [{ from: 1983, to: 1986, id: 980 }], // 1986 Raleigh Portage; as "Shimano Deore XT, cantilever" (BR-MC70)
@@ -2064,6 +2065,7 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    'alloy ah': null, // 1985 Raleigh Pursuit: no maker printed
     'atax asc anodised': 8507, // 1986 Peugeot (FR) PY 10 FC: ATAX ASC, Aerodynamic
     'dural atax asc': 8507, // 1986 Peugeot (FR) PRO 10
     'cta alloy aero': 6452, // 1986 Peugeot (US) Galibier / Ventoux / Tourmalet / Avoriaz: ATAX CTA (XA style, aero)
@@ -2437,6 +2439,11 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1993, id: 3965 }], // 1987 Colnago Master Mountain Bike: PD-MT60 / PD-MT61, Deore
   },
   'Seat Posts': {
+    // Judgement calls, 2026-10-30 (user's go-ahead).
+    'sakae super light alloy with adjusting clamp': 5852, // 1981 Raleigh Super Course: SR RY-P1SL III, Royal-P1 Super Light (1970-82, SR catalogue), not the 1970 velobase 5854
+    'suntour alloy pillar and clamp': [{ bike: 'MB 2 Canyon Express', id: 5935 }], // 1984 Peugeot MB 2: SunTour SP-2000, XC (1984-85 ATB post)
+    'gipiemme sprint': null, // 1982 Battaglin: type 1 or type 2 (5792 / 5793, undated stubs), nothing to choose on
+    'royal alloy': null, // 1983 Peugeot UO 9: SR Royal smooth (5850) or fluted (5851), finish not printed
     'simplex 6164 dural': 5904, // 1987 Peugeot (FR) Perthus / Santé: Simplex SLJ6164
     'campagnolo chorus aero': 5742, // 1987 Peugeot (FR) Chorus: C0R2 Chorus (styled)
     'shimano sp 6207': 5891, // 1987 Peugeot (US) Triathlon: SP-6207, 600EX
@@ -2512,7 +2519,7 @@ const COMPONENT_OVERRIDES = {
     // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
     // from in the 90s (Krono 1993), so blocked rather than wrong.
     // 1984 Peugeot PZ 10 is a Super Record build (the 4051/1 would be the guess): blocked for that bike.
-    'campagnolo': [{ bike: 'PZ 10', id: null }, { to: 1985, id: 5749 }, { from: 1990, id: null }], // Campagnolo 1044, Record
+    'campagnolo': [{ bike: 'PZ 10', id: null }, { to: 1985, id: 5749 }, { bike: 'Krono / Chorus', id: 7041 }, { from: 1990, id: null }], // Campagnolo 1044, Record; 1993 Bianchi Krono / Chorus: SP-CH, Chorus RS (1992-95)
     'campagnolo seat post': [{ to: 1985, id: 5749 }], // 1974 / 75 Motobecane, split out of the Saddle cells
     'campagnolo alloy': [{ to: 1985, id: 5749 }], // 1974 Raleigh: Campagnolo 1044, Record
     'campagnolo super nuovo record': [{ from: 1974, to: 1980, id: 5759 }], // 1974 Raleigh Team Professional: Campagnolo 4051, Super Record
@@ -2561,6 +2568,8 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    'regina extra super corsa': 1376, // 1978 Bianchi Rekord 745: Regina Extra 50 Corsa, the Extra race-grade chain (a judgement, 2026-10-30)
+    'regina extra super corsa 1 2" x 3 32"': 1376, // 1981 Bianchi Sprint / Rekord Strada
     'shimano deore': null, // 1987 Peugeot (FR) Normandie: the hit is the 1990s Deore LX chain
     'shimano cn 6120 1 2 x 3 32': [{ from: 1978, to: 1987, id: 7473 }], // 1987 Peugeot (US) Triathlon: QA-410 / CN-6120, 600 UG
     'did': null, // 1987 Bianchi Sport SX: brand only; the hit is the bare D.I.D brand row 1355
