@@ -213,6 +213,8 @@ const REVIEWED_NOT_DUPLICATES = [
   [8387, 8388], // different part: Ritchey Mod Quad / Ritchey Quad
   [8157, 8158], // different part: Mavic TTM 504 / Mavic TTM 504 CD
   [9098, 9904], // different size (2026-10-30): Cycle Pro National 27 x 1 / 700 x 25, 270 g / National 1 1/8, 300 g
+  [1136, 7929], // model-level row (paren scan 2026-10-30): Weinmann AG 610 Vainqueur 999 / Vainqueur 999 (610 / 750), user decision 4A
+  [1148, 7929], // model-level row (paren scan 2026-10-30): Weinmann AG 750 Vainqueur 999 / Vainqueur 999 (610 / 750)
 ]
 const reviewedKey = (a, b) => `${Math.min(a, b)}|${Math.max(a, b)}`
 const REVIEWED = new Set(REVIEWED_NOT_DUPLICATES.map(([a, b]) => reviewedKey(a, b)))
@@ -399,6 +401,60 @@ function findNearPairs(rows, { maxCodeRows = 3, maxNameRows = 2, includeReviewed
   return pairs
 }
 
+// Words that only frame a parenthetical model name ("(type aereo)"), and
+// words that negate the one after them ("(no Concor)").
+const FRAME_WORDS = new Set(['type', 'model', 'mod', 'the', 'a', 'of', 'with', 'and', 'for', 'on', 'in'])
+const NEGATIONS = new Set(['no', 'not', 'non', 'without'])
+
+// Pairs of one brand and category where b's model name sits in its
+// parentheticals and a carries it in the title ("Cambio Rino (type aereo)" /
+// "Cambio Rino Aereo", "Gipiemme Special (?), Special (Strada)" / "Gipiemme
+// 'Special' Strada"), which buildGroups misses. b's title words outside the
+// brackets must all be in a's, and a's extra words all in b's brackets. A pair
+// is dropped when a moved word is negated in b's brackets ("(no Concor)"), or
+// when the bracket text left over (a's, and b's less the moved
+// words) differs and names a configuration or generation, so "Normandy (small
+// flange, de-luxe competition, Q/R)" doesn't pair with "Normandy Luxe
+// Competition (red label, high flange)". Pairs in REVIEWED_NOT_DUPLICATES are
+// left out unless `includeReviewed`. Returns { a, b, moved, reviewed }.
+function findParenPairs(rows, { includeReviewed = false } = {}) {
+  const outside = (title) => new Set(words(dropParentheticals(fold(title))))
+  const inside = (title) => parentheticals(title).flatMap((p) => words(p).filter((w, i, ws) => !NEGATIONS.has(ws[i - 1])))
+    .filter((w) => !FRAME_WORDS.has(w) && !NEGATIONS.has(w))
+  const byKey = new Map()
+  for (const r of rows) {
+    if (!r.title) continue
+    const k = `${r.brand_id}|${r.category_id}`
+    if (!byKey.has(k)) byKey.set(k, [])
+    byKey.get(k).push(r)
+  }
+  const pairs = []
+  for (const members of byKey.values()) {
+    for (const b of members) {
+      const bIn = inside(b.title)
+      if (!bIn.length) continue
+      const bOut = outside(b.title)
+      for (const a of members) {
+        if (a === b || groupKey(a.title) === groupKey(b.title) || yearsDisjoint(a, b)) continue
+        const aOut = outside(a.title)
+        if (![...bOut].every((w) => aOut.has(w))) continue
+        const moved = [...aOut].filter((w) => !bOut.has(w) && !FRAME_WORDS.has(w))
+        if (!moved.length || !moved.every((w) => bIn.includes(w))) continue
+        const aLeft = inside(a.title)
+        const bLeft = bIn.filter((w) => !moved.includes(w))
+        if (!sameSet(new Set(aLeft), new Set(bLeft))) {
+          const text = [...aLeft, ...bLeft].join(' ')
+          if (CONFIG_WORDS.test(text) || GENERATION_WORDS.test(text)) continue
+        }
+        const reviewed = REVIEWED.has(reviewedKey(a.component_id, b.component_id))
+        if (reviewed && !includeReviewed) continue
+        pairs.push({ a, b, moved, reviewed })
+      }
+    }
+  }
+  return pairs.sort((x, y) => x.a.component_id - y.a.component_id || x.b.component_id - y.b.component_id)
+}
+
 // rows: { component_id, brand_id, category_id, title, year_from, year_to,
 // source_ref, used }. Returns groups of two or more, biggest first.
 function buildGroups(rows) {
@@ -425,4 +481,4 @@ function buildGroups(rows) {
   return groups.sort((a, b) => b.others.length - a.others.length || a.survivor.component_id - b.survivor.component_id)
 }
 
-module.exports = { groupKey, fullKey, yearRange, yearsDisjoint, pickSurvivor, relate, buildGroups, MERGE_CANDIDATE, REVIEWED_VARIANTS, codesOf, brandsCompatible, findNearPairs }
+module.exports = { groupKey, fullKey, yearRange, yearsDisjoint, pickSurvivor, relate, buildGroups, MERGE_CANDIDATE, REVIEWED_VARIANTS, codesOf, brandsCompatible, findNearPairs, findParenPairs }

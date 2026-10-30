@@ -14,19 +14,22 @@
 //   node scripts/duplicate-report.js --near               cross-brand / renamed pairs (findNearPairs) instead of groups;
 //                                                         takes --brand, --category, --used, --reason=code|name|brand, --json;
 //                                                         --reviewed also lists pairs already kept apart (REVIEWED_NOT_DUPLICATES)
+//   node scripts/duplicate-report.js --paren              same-brand pairs where one row's model name sits in its
+//                                                         parentheticals (findParenPairs: "Cambio Rino (type aereo)" /
+//                                                         "Cambio Rino Aereo"); takes --brand, --category, --used, --json, --reviewed
 //
 // Same DB config as scripts/db-query.js.
 
 const mysql = require('mysql');
 const decrypt = require('../decrypt');
 const config = require('../config');
-const { buildGroups, MERGE_CANDIDATE, findNearPairs } = require('../duplicate-classify');
+const { buildGroups, MERGE_CANDIDATE, findNearPairs, findParenPairs } = require('../duplicate-classify');
 
 const flags = Object.fromEntries(process.argv.slice(2).map((a) => {
   const [k, v] = a.replace(/^--/, '').split('=');
   return [k, v === undefined ? true : v];
 }));
-const known = ['merge', 'relation', 'brand', 'category', 'used', 'json', 'near', 'reason', 'reviewed'];
+const known = ['merge', 'relation', 'brand', 'category', 'used', 'json', 'near', 'reason', 'reviewed', 'paren'];
 const unknown = Object.keys(flags).filter((k) => !known.includes(k));
 if (unknown.length) {
   console.error(`Unknown option(s): ${unknown.join(', ')}. See the header of scripts/duplicate-report.js.`);
@@ -61,6 +64,25 @@ conn.query(sql, (err, rows) => {
   const has = (text, needle) => String(text).toLowerCase().includes(String(needle).toLowerCase());
   const years = (r) => (r.year_from || r.year_to ? `${r.year_from || '?'}-${r.year_to || '?'}` : 'no years');
   const describe = (r) => `${r.component_id} "${r.title}" ${years(r)} src ${r.source_ref ?? '-'}${r.has_image ? ' img' : ''} used ${r.used}`;
+
+  if (flags.paren) {
+    let pairs = findParenPairs(rows, { includeReviewed: Boolean(flags.reviewed) });
+    if (flags.brand) pairs = pairs.filter((p) => has(p.a.brand, flags.brand));
+    if (flags.category) pairs = pairs.filter((p) => has(p.a.category, flags.category));
+    if (flags.used) pairs = pairs.filter((p) => p.a.used > 0 || p.b.used > 0);
+    if (flags.json) {
+      console.log(JSON.stringify(pairs, null, 2));
+      return;
+    }
+    console.log(`${pairs.length} parenthetical-name pairs, ${rows.length} component_detail rows scanned`);
+    console.log('');
+    for (const p of pairs) {
+      console.log(`${p.a.brand} / ${p.a.category}: "${p.moved.join(' ')}"${p.reviewed ? ' (reviewed, kept apart)' : ''}`);
+      console.log(`         ${describe(p.a)}`);
+      console.log(`         ${describe(p.b)}`);
+    }
+    return;
+  }
 
   if (flags.near) {
     let pairs = findNearPairs(rows, { includeReviewed: Boolean(flags.reviewed) });

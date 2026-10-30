@@ -1,7 +1,7 @@
 // node test/duplicate-classify.test.js (npm test)
 const test = require('node:test')
 const assert = require('assert')
-const { groupKey, relate, buildGroups, findNearPairs, brandsCompatible, MERGE_CANDIDATE } = require('../duplicate-classify')
+const { groupKey, relate, buildGroups, findNearPairs, findParenPairs, brandsCompatible, MERGE_CANDIDATE } = require('../duplicate-classify')
 
 let nextId = 1
 const row = (title, extra = {}) => ({
@@ -196,4 +196,29 @@ test('a reviewed marking row that relate() leaves for review reports as a kept v
   const other = row('Caimi (CAIMI)', { component_id: 2057 })
   assert.strictEqual(relate(other, survivor), 'review')
   assert.strictEqual(buildGroups([survivor, other])[0].others[0].relation, 'variant')
+})
+
+const parenOf = (...rows) => findParenPairs(rows).map((p) => [p.a.title, p.b.title, p.moved.join(' ')])
+
+test('a model name inside the parentheticals pairs with the row that carries it', () => {
+  const a = row('Cambio Rino Aereo', { year_from: '1985', year_to: '1985' })
+  const b = row('Cambio Rino (type aereo)')
+  assert.deepStrictEqual(parenOf(a, b), [['Cambio Rino Aereo', 'Cambio Rino (type aereo)', 'aereo']])
+  assert.deepStrictEqual(parenOf(row("Gipiemme 'Special' Strada"), row('Gipiemme Special (?), Special (Strada)')).map((p) => p[2]), ['strada'])
+  assert.deepStrictEqual(parenOf(row('SunTour CW-6000, Superbe Pro Track'), row('SunTour CW-6000, Superbe Pro (Track)')).map((p) => p[2]), ['track'])
+})
+
+test('negated names, configuration leftovers, same-key titles and other brands are not paren pairs', () => {
+  assert.deepStrictEqual(parenOf(row('Selle San Marco Concor Supercorsa'), row('Selle San Marco Supercorsa (no Concor)')), [])
+  assert.deepStrictEqual(parenOf(row('Maillard Normandy Luxe Competition (red label, high flange)'), row('Maillard Normandy (small flange, de-luxe competition, Q/R)')), [])
+  assert.deepStrictEqual(parenOf(row('Sakae Custom-P5A (190mm)'), row('Sakae Custom-P5A (220mm)')), [])
+  assert.deepStrictEqual(parenOf(row('Cambio Rino Aereo'), row('Cambio Rino (type aereo)', { brand_id: 2 })), [])
+  assert.deepStrictEqual(parenOf(row('Cambio Rino Aereo', { year_from: '1985', year_to: '1985' }), row('Cambio Rino (type aereo)', { year_from: '1950', year_to: '1955' })), [])
+})
+
+test('reviewed paren pairs are left out unless asked for', () => {
+  const a = row('Weinmann AG 610 Vainqueur 999', { component_id: 1136 })
+  const b = row('Weinmann AG Vainqueur 999 (610 / 750)', { component_id: 7929 })
+  assert.deepStrictEqual(findParenPairs([a, b]), [])
+  assert.strictEqual(findParenPairs([a, b], { includeReviewed: true })[0].reviewed, true)
 })
