@@ -782,3 +782,10 @@ Weinmann 1129 / 1130 570.
 - Descriptions enriched on 15 rows (ids [2968, 3671, 3708, 3716, 5761, 6860, 6861, 6862, 6863, 6865, 6867, 6868, 6869, 8765, 9771]), none shortened. New rows (1983-1984): Specialized Saturne rim, Ritchey Bullmoose bar / stem, Specialized TriCross, Crossroads and Street Stomper tyres, Vittoria Pave CG tubular.
 - Rejected: matches of the Avocet hubs to the "(by Ofmega)" rows 3189 / 3191 (again) and a Campagnolo front derailleur to the 1985+ 7012; new rows for SR Laprade 250 mm, Avocet headsets Model 20 / 30 (likely the DB's Model II / III), Shimano XT hubs and 600 XT chainset (no model numbers), Sugino Aero Tour A/T cranks (DB has "Sugino AT"), A/T bottom bracket and chainrings, Avocet chainrings.
 - Still ambiguous (29, not loaded): Regina chains and freewheels, Cyclone and Campagnolo generation variants; no help for Fiamme / Super Champion clinchers or Sugino Maxy II.
+
+## Dedupe 2026-10-30: Cambio Rino Aereo crankset
+
+- Deleted 1465 "Cambio Rino (type aereo)" (velobase stub, no years, description "Italy" only,
+  source_id E06940DC-5EDE-40EA-85E3-1BE6AD1F36F3); kept 1466 "Cambio Rino Aereo" (1985, La Bicicletta
+  Guida '85/86, source 259). No bike_spec links or overrides. duplicate-report missed it because
+  the stub's model name sat inside the parenthetical ("Cambio Rino" vs "Cambio Rino Aereo").
