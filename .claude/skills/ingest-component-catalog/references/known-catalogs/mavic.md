@@ -434,3 +434,20 @@ Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
 - Dated from undated stubs: 3403 Mavic 571 hub NULL -> 1991-1992; 3405 Mavic 577 NULL -> 1992-1992.
 - Descriptions rewritten on all seven (velobase "(Spec)" weights kept on 3399 / 3402 / 856 / 365).
   No bike links or overrides on any of them. 6970 3G Carbon (1992) on the cover matches.
+
+## Mavic ZMS 8000 group brochure (1994) — labibleduvelocataloguesmavic "MAVIC 1994", data_source id 305
+
+- Source: https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1994.html: 3 JPGs (1024 x 1409,
+  proxied from bibibike.forumserv.com mavic-zap-1994_1..3) of the "Groupe ZMS, Zap Mavic System 8000"
+  brochure, FR / EN, plus a fourth image, a Cosmic wheel photo from arueda.com (not a Mavic document,
+  not used). Year from the blog and file names.
+- Content: the ZMS 800, "the first rear derailleur controlled by a microprocessor" (2 zap buttons,
+  microprocessor in the bar end, energy from the upper jockey via cam and rack, solenoid, indexing
+  piston; double shift in 0.1 s, long press runs to the end cog, self-setting limits). Composition:
+  305 headset, 451 brakes, 571/2 32h hubs, 571 CB 12/23 cogs, 610 long 114 mm BB, 631 42 x 52 crankset
+  (170 mm group 1, 172.5 mm group 2), 650 chain, 821 shifter, 862 front, ZMS 800 (only in the group).
+- year_to -> 1994: 3049 305 (1991), 1645 631 (1991), 8194 610 URD (1991), 6087 821 (1991), 856 451
+  brake (1992), 1192 571 cassette (1992), 365 451 lever (1993), 2411 862 SSC (1992). Description: 3404
+  571/2 (was a bare stub; years 1993-95 unchanged).
+- Added (1994-1994): 9973 Mavic ZMS 800 rear (group 32 Zap, as the 451 / 305 / 821 rows), 9974 Mavic 650
+  chain. 6088 "Mavic ZAP" shifter (1993) is the first-generation Zap, left as is. No start year moved.
