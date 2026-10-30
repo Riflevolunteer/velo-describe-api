@@ -1518,7 +1518,7 @@ const COMPONENT_OVERRIDES = {
     'spidel d8': 3117, // 1980 Peugeot PRO 10: Stronglight D8 Extra Leger (row dated 1981-83, as the 1979 S7 pick)
     'spidel d 8': 3117, // 1981 Peugeot PRO 10
     'stronglight a9 alloy': 3112, // 1986 Peugeot (US) table: as 'stronglight a9'
-    'stronglight a9': 3112,    'stronglight a9': 3112, // 1984 Peugeot: Stronglight A9 (France on locknut, 1984-85); the Spidel-locknut 3113 is the Spidel-badged one
+    'stronglight a9': 3112, // 1984 Peugeot: Stronglight A9 (France on locknut, 1984-85); the Spidel-locknut 3113 is the Spidel-badged one
     'stronglight b 10': 3114, // 1986 Peugeot (FR) table PGN 10 M / GOLD
     'stronglight a 9': 3112, // 1986 Peugeot (FR) table PY 10 M / PRO 10 / PY 10 FC
     'stronglight b10': 3114, // 1984 Peugeot PSV 10 L / PS 10 L: Stronglight B10 (1984-86)
