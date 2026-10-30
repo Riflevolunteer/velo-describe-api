@@ -4,7 +4,7 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 
 ## Open: API and client
 
-- **Catalogue country follow-ups** (country itself is done, see Done): check the API change is deployed; show country in the client (`velo-describe`) when two rows collide; optionally split the Peugeot 1971-74 CSVs per country (each mixes Dutch and French pages, currently set to FR). Inferred values (not stated by the source): Raleigh 1985, Motobecane 1974/75, Zeus 1973, Bianchi 1983/84. Open question: country code vs free text for non-national editions (export catalogues, Dutch-language Belgian editions).
+- **Catalogue country follow-ups** (country itself is done, see Done): API change deployed 2026-10-30 (1.5.1, `/recentBikes` returns `country`); show country in the client (`velo-describe`) when two rows collide; optionally split the Peugeot 1971-74 CSVs per country (each mixes Dutch and French pages, currently set to FR). Inferred values (not stated by the source): Raleigh 1985, Motobecane 1974/75, Zeus 1973, Bianchi 1983/84. Open question: country code vs free text for non-national editions (export catalogues, Dutch-language Belgian editions).
 - **Show the data source in the client** at the bottom of bike spec and component views. API side done (`/bikedetail` and `/componentdetail` return `source_label` and `source_type`); the client still has to render it. 85% of components are `source_type = 'velobase'`, so consider showing catalogue sources only. Possible follow-up: on component pages list the catalogues whose bikes fitted the part (`bike_spec` -> `bike` -> `data_source`).
 - **Bike images** (plan only, nothing built):
   1. per catalogue, crop each bike's picture from the page scans, name `<brand>_<model>_<year>.webp` (slugified, `_2` suffix for repeats), webp at quality ~80, long edge capped ~1200px (maybe a ~400px thumbnail)
@@ -14,7 +14,7 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
   5. client: `expo-image` on the detail screen, no image when null (needs a store build, so keep it optional)
   - Open: copyright for scanned pictures (show `source_label` at minimum, consider only publishing images from sources that allow it); cropping method (by hand, script, or Claude returning boxes); pilot on one small catalogue (Cinelli or De Rosa) before the 130-bike Bianchi set.
 - **eBay listings by region** (API side done 2026-10-28 in 1.5.0, see Done; the user picks a region in the app, US default, stored on the device; no geolocation). Still to do:
-  1. deploy API 1.5.0 (`?region=` and the 16 sites are on `master`, not live);
+  1. ~~deploy API~~ done 2026-10-30: 1.5.1 live (`?region=GB` smoke-tested on the instance);
   2. client region setting (see the `velo-describe` TODO): picker, stored on device, send `region=` instead of `marketplace=ALL`, show each listing's site / currency; needs a store build;
   3. countries without a Browse site (NZ, JP, SE, DK, NO, FI...): the user picks the nearest region (NZ -> AU, Nordics -> DE or GB), or an "Other" that uses the US list with `deliveryCountry` set to their country; decide with the client setting;
   4. currency: each listing is in its site's currency (AUD / CAD / CHF / EUR / GBP / HKD / PLN / SGD / USD) and labelled; convert to one currency (daily-cached rates) only if users find the mix confusing;
