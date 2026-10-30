@@ -1283,11 +1283,11 @@ const COMPONENT_OVERRIDES = {
     'weinmann 605 side pull with quick release and centring bolt': 8642, // 1980 Peugeot (NL) PVN 10 (text says "Mafac 605"; photo is Weinmann)
     'weinmann 506 side pull with quick release and centring bolt': 7764, // Weinmann AG 506
     'mafac competition centre pull anodised': 825, // MAFAC Competition (later version)
-    'mafac competition': [{ from: 1971, to: 1980, id: 825 }], // 1975 Peugeot P 10: bare Competition, later version (the 1970 early row is 827)
-    'mafac competition peugeot special with course gt levers (silver anodised)': [{ from: 1971, to: 1980, id: 825 }],
-    'mafac competition with course gt levers (black hand guard)': [{ from: 1971, to: 1980, id: 825 }],
-    'mafac competition with course 2000 levers': [{ from: 1971, to: 1980, id: 825 }],
-    'mafac racer with course levers': [{ from: 1970, to: 1980, id: 838 }], // 1977 Peugeot (DE): MAFAC Racer (1970-80), as the other bare Mafac Racer picks
+    'mafac competition': [{ from: 1971, to: 1982, id: 825 }], // 1975 Peugeot P 10: bare Competition, later version (the 1970 early row is 827)
+    'mafac competition peugeot special with course gt levers (silver anodised)': [{ from: 1971, to: 1982, id: 825 }],
+    'mafac competition with course gt levers (black hand guard)': [{ from: 1971, to: 1982, id: 825 }],
+    'mafac competition with course 2000 levers': [{ from: 1971, to: 1982, id: 825 }],
+    'mafac racer with course levers': [{ from: 1970, to: 1982, id: 838 }], // 1977 Peugeot (DE): MAFAC Racer (1970-82), as the other bare Mafac Racer picks
     'mafac 2000 anodised': [{ from: 1976, to: 1976, id: 836 }], // 1976 PY 10: MAFAC 2000 later version (1970-79; 835 and 837 are 1970-only variants)
     'new altenburger alloy center pull': 510, // 1973 Raleigh Record: Altenburger Centrepull (generic; 513 Concorde is a named model the text doesn't give)
     'altenburger synchron': [{ from: 1970, to: 1976, id: 511 }], // 1970-76 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron (512, the other logo variant, merged into 511 on 2026-10-26) match (a judgement)
@@ -1296,13 +1296,13 @@ const COMPONENT_OVERRIDES = {
     'dia compe dc630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Sportif; as the 1985 "DC630N alloy S.P." pick
     'dia compe dc 630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Pursuit (levers DC 630/165 and /135 are separate)
     'dia compe 630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Record
-    'mafac racer professional': [{ from: 1970, to: 1980, id: 838 }], // 1973 Peugeot PX 10; as bare "Mafac Racer" (lettered MAFAC RACER, 1970-80, the only period Racer row)
-    'mafac racer forged': [{ from: 1970, to: 1980, id: 838 }], // 1974 Peugeot PX 60
+    'mafac racer professional': [{ from: 1970, to: 1982, id: 838 }], // 1973 Peugeot PX 10; as bare "Mafac Racer" (lettered MAFAC RACER, 1970-82, the only period Racer row)
+    'mafac racer forged': [{ from: 1970, to: 1982, id: 838 }], // 1974 Peugeot PX 60
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano 600ex qr; recessed fitting calipers and hooded alloy levers': [{ from: 1987, to: 1987, id: 972 }], // Road Ace: BR-6208 600EX (1986-87)
     'calipers : shimano new 105 type 57 long bolt': [{ from: 1987, to: 1987, id: 954 }], // Triathlon: BR-1050-57 105 (long, 57 type)
     // 1970 Peugeot (Dutch-market catalogue).
-    'mafac racer': [{ from: 1970, to: 1980, id: 838 }], // MAFAC Racer (lettered MAFAC RACER)
+    'mafac racer': [{ from: 1970, to: 1982, id: 838 }], // MAFAC Racer (lettered MAFAC RACER); ranges to 1982 with the rows (c. 1982 MAFAC catalogue, source 299)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'campagnolo athena': [{ from: 1988, to: 1992, id: 558 }], // D500, Athena
     'shimano ultegra linear response': [{ from: 1988, to: 1990, id: 966 }], // BR-6400, 600 Ultegra

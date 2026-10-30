@@ -32,7 +32,7 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 
 ## Open: component data follow-ups
 
-- Era mismatches left after the 2026-10-30 pass (12 specs, 9 parts): 3141 Tange Falcon (1974) on 1986-87 Peugeot "sealed" x3 (probably a later sealed Falcon, no row); 3388 Normandy Luxe Competition gold label on 1974-75 Motobecane x2 (see Version rows). Single bike-earlier specs: 1398 Sedis Gold (1978) on 1975, 6899 Vittoria Pro L Slick (1990) on 1987, 1365 Everest Serie Special Oro (1985) on 1981, Nisi 9227 / 9228 / 9225 and 9126 Gipiemme Crono Sprint (1985) on 1982 Battaglin. Also: 35 descriptions sit at the 255-char limit (they end on full sentences), 918 search_text typo "Reijloa"; `load-sql.js` mis-splits statements with a trailing `-- comment` and crashes in its summary (put comments on their own line).
+- Era mismatches left after the 2026-10-30 pass (12 specs, 9 parts): 3141 Tange Falcon (1974) on 1986-87 Peugeot "sealed" x3 (probably a later sealed Falcon, no row); 3388 Normandy Luxe Competition gold label on 1974-75 Motobecane x2 (see Version rows). Single bike-earlier specs: 1398 Sedis Gold (1978) on 1975, 6899 Vittoria Pro L Slick (1990) on 1987, 1365 Everest Serie Special Oro (1985) on 1981, Nisi 9227 / 9228 / 9225 and 9126 Gipiemme Crono Sprint (1985) on 1982 Battaglin. Also: 35 descriptions sit at the 255-char limit (they end on full sentences).
 - Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Maxy II (Mighty Custom now has a second source, Palo Alto 1978-79) and the Nuovo Tipo C1264-1267 hubs (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
 - Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); the SunTour "syncro-shift" Cyclone II lever (Palo Alto 1981/82; no part number, no row). The 1981 Superbe brake is settled by years: CB-1000 ends 1978, so a 1981 Superbe is the Superbe Pro CB-3100 / 4100 family (reach unstated); nothing links to it.
 - Campagnolo Gran Sport front 2050 (row 2316, applied 2026-10-29, see Done). Checked 2026-10-30: the 1973-76 Raleigh Gran Sport DL 160 is a Simplex Maxi bike (Gran Sport is Raleigh's model name), and the front specs deleted 2026-10-24 were copies of the rear name, so nothing to restore; the 1973 Bianchi Special front is already on 2316. Still open:
@@ -48,7 +48,6 @@ Weakest on 2026-10-28: Tyres 24%, Handlebars 30%, Saddle 32%, Rims 33%, Seatpost
 - **Persist do-not-link decisions**: `COMPONENT_OVERRIDES` `null` entries live only in the generator, so values decided on (e.g. "Selle Royal Aero Black") still list as actionable. Leaning towards a nullable `bike_spec.link_status` the generator writes.
 - The generic word list is a judgement call: check the unbranded bucket now and then for words to add.
 
-- MAFAC overrides (2026-10-30): 'mafac racer', 'mafac competition' and the Course-lever variants are ranged to 1980 on 838 / 825, but the c. 1982 catalogue (source 299) extends both rows to 1982; widen the ranges if 1981-82 bike specs carry those values.
 
 ### Policy questions
 
@@ -115,7 +114,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 ### Headsets (2026-10-26 pass)
 
 165 of 302 Headset specs (label 9) unlinked, 52 distinct values. About 135 are house-brand or finish text ("Raleigh" 11, "Steel CP" 9, "Chromed steel" 8, "Peugeot" 8, "Peugeot chromed" 8, "Peugeot, chromed steel" 8, "MOTOBECANE" 6, "Peugeot, non-loosening" 6, "Non-adjustable, chromed" 5, "Sealed headset" 5, "Chromed" 4, "Lightweight" 3, "Black headset", "Special tandem", "Bianchi Corsa" / "Bianchi Competizione" / "Bianchi"), brand only ("Zeus" 4, "Ofmega" 3, "Tange" 3, "Spidel" 2, "Tange chromed steel" 2, "Campagnolo" on the 1984 PZ 10 (existing do-not-link), "Mavic headset", "AheadSet" 3): leave. Bike_spec ids in brackets.
-- No row: Tange TH-305 / TH-305C / TH 305 (6, 1984-90) and TH-108; Tange MX 600M; Shimano 600 AX (1981 Kalkhoff; the `shimano 600` range starts 1983); Tioga Expert-CR (2); Nikyo; YST steel CP; Zeus Alfa (2, 1973).
+- No row: Tange TH-305 / TH-305C / TH 305 (6, 1984-90) and TH-108; Tange MX 600M; Shimano 600 AX (1981 Kalkhoff; no 600 AX headset row, 3089 HP-6200 600EX Arabesque 1978-84 is the nearest but AX may have had its own); Tioga Expert-CR (2); Nikyo; YST steel CP; Zeus Alfa (2, 1973).
 
 ## Open: duplicate components
 
@@ -148,6 +147,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ## Done
 
+- 2026-10-30 quick fixes: brand 166 "Reijloa" -> "Reijola" (918 search_text rebuilt, "Reijola Aero"); `load-sql.js` drops a trailing `-- comment` after `;` (outside string literals) before splitting, so commented statements no longer merge and crash the summary; MAFAC Racer / Competition override ranges widened to 1982 with rows 838 / 825 (no 1981-82 spec used those exact keys, so no link changed).
 - 2026-10-30 TODO judgement calls (all as recommended, +8 links): 1993 Bianchi Krono / Chorus bare "Campagnolo" seatpost -> 7041 SP-CH Chorus RS (bike-keyed); 1981 Raleigh Super Course Sakae Super Light -> 5852 RY-P1SL III; 1984 Peugeot MB 2 SunTour pillar -> 5935 SP-2000 XC (bike-keyed); Regina Extra Super Corsa x4 (1978 / 1981 Bianchi) -> 1376 Extra 50 Corsa; 1973 Raleigh Record "New Altenburger Alloy Center Pull" -> 510 Centrepull; Tange CMA60 confirmed as 3144 MA-60, widened to 1987. Do-not-link overrides: Gipiemme Sprint seatpost (type 1 / 2), "Royal alloy" seatpost (smooth / fluted), bare "Alloy AH" stem. Policy: house-brand tyre rows yes (queued), Shimano BB-UN73 / BB-LP27 kept, ISO country code for non-national editions.
 - 2026-10-30 era pass (406 -> 36 mismatched specs): policy agreed, widen a part's years to the dated bike catalogues that fit it. `year_to` widened on 90 parts (86 scripted where no sibling row covers the bike year and the gap is <= 10 years, plus 3791 LOOK PP76, 3441 Ofmega Competizione, 3819 Lyotard 79, 1593 Gipiemme Pista by hand), e.g. 1402 Sedisport Delta 1980 -> 1987, 8131 Maillard 600 SH 1982 -> 1987. `year_from` moved earlier: 5303 Brooks Team Professional 1970, 6826 Michelin Select 1987, 9212 Campagnolo Gran Sport (1980s) hubs 1978, 5144 Nisi Solidal 1979, 2239 SunTour New Winner 7 1985, 5295 Brooks Professional pre-softened 1987. 1982 Battaglin "Regina Oro" relinked 1380 Oro BX -> 1382 Extra 50 Oro (override split moved to 1985); 1984 Raleigh "Vittoria Nuovo Pro Tubular" unlinked (override null; the 260 is 1988).
 - 2026-10-30 whitespace: collapsed double / trailing spaces in 33 component titles and 33 descriptions (e.g. 903 "Olimpic Ruta", 1105 / 1106 Vainqueur 999); no title collisions, `search_text` was already clean.

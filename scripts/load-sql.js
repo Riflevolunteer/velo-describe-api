@@ -22,10 +22,17 @@ const BATCH_SIZE = 200;
 
 function splitStatements(sql) {
   // Generated files have one statement per `;` + newline and never contain
-  // that sequence inside a string literal; comment-only lines are dropped.
+  // that sequence inside a string literal; comment-only lines are dropped, and
+  // so is a trailing `-- comment` after a statement's `;` (left in place it hid
+  // the split, MySQL ran two statements as one and the summary crashed).
   const withoutComments = sql
     .split('\n')
     .filter((line) => !line.trim().startsWith('--'))
+    .map((line) => {
+      const m = line.match(/;\s*--\s.*$/);
+      // Only when the `;` is outside a string literal (an even number of quotes before it).
+      return m && (line.slice(0, m.index).match(/'/g) || []).length % 2 === 0 ? line.slice(0, m.index + 1) : line;
+    })
     .join('\n');
   return withoutComments
     .split(/;\s*\n/)
