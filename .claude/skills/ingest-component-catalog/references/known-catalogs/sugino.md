@@ -216,3 +216,10 @@ OPC-SC and RT / BT cranks, 4 No.66 and DZF cranks, SP-K, HP-G5 and OPC-A5 / A4.
   'Sugino DZF%'`).
 - Still not in any source on hand: Mighty Custom / Maxy II (TODO gap).
 
+
+### Bike-spec links made from Vol. 56 (2026-10-30)
+
+- "Sugino DGT" (bike_spec 6202, 6360, 6383, 1984 Raleigh bikes 344 / 351 / 352) -> 1937 Sugino GT: Vol. 56 lists DGT as the double GT crank
+  (TGT is the triple, row 1967). The row ends 1982 and the bikes are 1984; the catalogue is c. 1982-83. 1937's description now says double (DGT).
+- "Sugino TPX" (8875, 1987 Raleigh bike 498) -> 1957 Sugino PX ("PX (TPX)"); not from Vol. 56, the link was simply missing.
+- Both are in `COMPONENT_OVERRIDES` (Cranksets) so a regenerate gives the same links.

@@ -1505,6 +1505,12 @@ const COMPONENT_OVERRIDES = {
     // 1973 Falcon San Remo 76 / 94: bare "Cotterless" (unbranded, left unlinked at load); the 1974 SR Silver Cotterless
     // row 9528 added later would otherwise catch it by substring (drift check 2026-10-28).
     cotterless: null,
+    // 1984 Raleigh: Sugino DGT is the double GT crank (the triple is the TGT); the Sugino Vol. 56 spread lists DGT among the cranks (row 1937 ends 1982, the model was still listed c. 1982-83).
+    'sugino dgt 52 42t steel rings': 1937, // Sugino GT
+    'sugino dgt alloy cotterless 50 36t': 1937,
+    'sugino dgt alloy cotterless with alloy 50 36t chainwheels': 1937,
+    // 1987 Raleigh: TPX is the triple PX (row 1957, "PX (TPX)").
+    'sugino tpx 46 36t 26t alloy 170mm cranks with suntour sealed cassette bottom bracket': 1957, // Sugino PX
     // 1987 Colnago Junior 105 / Junior SIS 600 (Catalogo generale 1987): 1050-series 105.
     'shimano 105': [{ bike: 'Junior 105', from: 1987, to: 1987, id: 1778 }], // FC-1050, 105 (1987-89)
     // 1982 Battaglin (Italian sheets): Gipiemme prints "Cronospecial" / "Cronosprint" as one word. The 1982 rows are the 100 AA and 100 CC.
