@@ -963,6 +963,21 @@
   titled "Exage Trail"; Biopace chainring rows; out of scope SM-DG11 /
   DG16 guards, TL-CN20.
 
+## Shimano "Spare Parts Catalogue" 1986 / 1987 (disraeligears.co.uk, 14 + 14 scans) — checked 2026-10-30, nothing loaded
+
+- Source: https://www.disraeligears.co.uk/site/shimano_spare_parts_catalogue_-_1986.html and
+  ..._-_1987.html (images `shimano_bicycle_parts_-_198N_scan_01..14_main_image.jpg`). Despite the
+  title, both are rear-derailleur spec-and-parts sheets only (one spec page plus one exploded page per
+  model), no front derailleurs, shifters or bottom brackets. No `data_source` row added.
+- 1986 (footers "(c) Mar. 1986 ... 0386 C1/12.2M"; RD-7400 sheets "Feb. 1986"): RD-6208, RD-L525-SS,
+  RD-L525-GS / SGS, RD-L523-SS / GS / SGS, RD-L522-SS / SGS, RD-7400 (with adjuster); pp. 3-4 SIS
+  set-up instructions. RD-L512 / L513 / L524 appear only as tiny interchangeability column labels.
+- 1987 (footers "(c) Jan. 1987", MT60 / L532 / M531 "Feb. 1987"): RD-7401, RD-5000 Santé, RD-1050,
+  RD-M730, RD-MT60, RD-L532-SS / GS / SGS, RD-M531-GS.
+- Diff: all 13 models present (4471, 4519, 4520, 4518, 7553, 4503, 4504, 4534, 4449, 4491, 4487, 4521,
+  4523) with compatible years; no changes. Still no rows for RD-L512, Z105 / Z513, RD-M535, FD-M236,
+  FD-L525 / L532, SL-Z501, EM-30 / EM-50 (unlinked on 1985-87 Raleigh / Peugeot / Bianchi bikes).
+
 ## Shimano "Bicycle System Components — The Complete Line" — printed 08.1986 (disraeligears.co.uk, 24 scans)
 
 - `data_source` 74. Source:

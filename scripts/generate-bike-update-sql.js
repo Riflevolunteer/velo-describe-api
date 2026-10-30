@@ -792,6 +792,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
+    'shimano light action l522gs': 7553, // 1986 Raleigh: Shimano RD-L522, Light Action (Shimano exact-model links 2026-10-30)
+    'shimano light action l523': 4518, // 1986 Raleigh: Shimano RD-L523, Light Action
     'huret rider': 8958, // 1986 Raleigh Teton: Sachs Huret AR 46.1 T, Rider, the only dated Rider rear (// linkCoverage pass 2026-10-30)
     'huret rider gt sp': 8958, // 1987 Peugeot (FR) Saint-Bernard
     'shimano z501': 4544, // 1986 Raleigh Pursuit: Shimano RD-Z501, Z-Series
@@ -1253,6 +1255,7 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'shimano at 50 cantilever front and rear': 1003, // 1987 Peugeot (US): Shimano BR-AT50, Exage Trail (Shimano exact-model links 2026-10-30)
     'mafac special tandem cantilevers front and rear maillard 80 mm rear drum': 845, // 1982 Peugeot TH 8 / TM 8: MAFAC Cyclo-Tandem (// linkCoverage pass 2026-10-30)
     'mafac "special cyclo tandem" cantilevers front and rear maillard rear drum brake': 845, // 1980 Peugeot TH 8 / TM 8
     'modelo speedy black side pull': 886, // 1987 Peugeot (US) Mont Cenis: Modolo Speedy (misprinted Modelo; black is a finish)
@@ -1479,7 +1482,7 @@ const COMPONENT_OVERRIDES = {
     'universal corsa mod 68': 1082, // Universal Super 68
     'universal mod 51': 1080, // Universal Extra Mod. 51 (Brev 453949)
     'shimano 600': [{ to: 1983, id: 963 }, { from: 1984, to: 1985, id: null }, { from: 1986, to: 1987, id: 972 }, { from: 1988, id: null }], // centre-pull / BR-6208 600EX (1987 Bianchi Limited)
-    'shimano at 50 cantilever': [{ from: 1986, id: 1003 }], // Shimano BR-AT50 (1987 Bianchi Volpe); 1985 Raleigh predates the row
+    'shimano at 50 cantilever': [{ from: 1985, id: 1003 }], // Shimano BR-AT50 (1987 Bianchi Volpe); from 1985 for the 1985 Raleigh (row widened 2026-10-30)
     // 1993 Bianchi. Bare "Chorus" substring-hits a 2000s 10-speed row.
     'campagnolo chorus': [{ from: 1987, to: 1999, id: 565 }], // Campagnolo BR-02CH, Chorus Monoplaner (1988-93; from 1988 for the 1988 Bianchi); from 1987 for the 1987 Peugeot (FR) Chorus
     'shimano ultegra': 966, // Shimano BR-6400, 600 Ultegra
@@ -2348,6 +2351,9 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
   },
   Pedals: {
+    'shimano pd 6207; toe clips and straps': 3961, // 1986 Peugeot (FR): Shimano PD-6207, 600EX (Shimano exact-model links 2026-10-30)
+    'shimano dural pd 6207; toe clips and straps': 3961, // 1986 Peugeot (FR)
+    'shimano 600ex sealed mechanism light alloy': 3961, // 1987 Raleigh: PD-6207, 600EX (row 1984-86)
     'campagnolo gran sport reflector with toe clips and straps': 3688, // 1981 Raleigh Competition GS: Campagnolo 3700, (Nuovo) Gran Sport (// linkCoverage pass 2026-10-30)
     'campagnolo chorus; toe clips; straps': 3700, // 1987 Peugeot (FR) Chorus
     'campagnolo victory; toe clips; straps': 3720, // 1987 Peugeot (FR) Dolomites: 405/000 Victory
