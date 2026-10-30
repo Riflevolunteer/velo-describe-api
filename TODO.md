@@ -34,9 +34,9 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 
 - Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Maxy II (Mighty Custom now has a second source, Palo Alto 1978-79) and the Nuovo Tipo C1264-1267 hubs (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
 - Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); the SunTour "syncro-shift" Cyclone II lever (Palo Alto 1981/82; no part number, no row). The 1981 Superbe brake is settled by years: CB-1000 ends 1978, so a 1981 Superbe is the Superbe Pro CB-3100 / 4100 family (reach unstated); nothing links to it.
-- Campagnolo Gran Sport front 2050 (row 2316, applied 2026-10-29, see Done). Still open:
-  - no 1973-76 Raleigh Gran Sport DL 160 Campagnolo front specs exist in the DB now, so the 2026-10-24 clearing was a deletion not a null link; re-ingest from the CSV if those bikes are wanted back, and check the 1973 Bianchi.
+- Campagnolo Gran Sport front 2050 (row 2316, applied 2026-10-29, see Done). Checked 2026-10-30: the 1973-76 Raleigh Gran Sport DL 160 is a Simplex Maxi bike (Gran Sport is Raleigh's model name), and the front specs deleted 2026-10-24 were copies of the rear name, so nothing to restore; the 1973 Bianchi Special front is already on 2316. Still open:
   - check 1253 on Cat 17 p 54 against row 3232 ("1253 kidney-bean at 1972 only", still current in 1974); needs the page image.
+  - judgement call: 1973-76 Raleigh Gran Sport DL 160 rear "New Simplex Maxi" / "Simplex Maxi 10 speed" / "Simplex Maxi wide Ratio 10 Speed" (4, bikes 32 218 228 454) -> 9692 Simplex AR 642 P, Maxi-Prestige (dated 1974 only)? The only Maxi row in the DB.
 
 ## Open: link coverage (bike_spec -> component_id)
 
