@@ -466,3 +466,26 @@ Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
 - year_to 1992 -> 1996 on 4340 840, 4341 841, 4345 845; descriptions add 8-speed (and the body / link
   detail on 4340). A retailer listing, so possibly old stock; it is the only post-1992 attestation. No
   bike links or overrides. No start year moved.
+
+## Mavic Catalogue Rims & Wheels (1997) — labibleduvelocataloguesmavic "MAVIC 1997", data_source id 307
+
+- Source: https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1997.html: 8 JPG spreads
+  (2048 px, "MAVIC 1997 (1-8)"), English, Mavic S.A. / Mavic U.S.A. addresses. 1 cover, 2 MTB wheels
+  (Crossland, Crossmax), 3 road rims, 4 MTB / trekking / BMX rims, 5 "Why choose Mavic" (skipped),
+  6 "What's new" (Helium, Crossmax), 7 FTS hubs + SUP / UB Control / Ceramic tech, 8 road wheels +
+  501 hub. Left-edge spec columns read from full-size crops.
+- Dating in the text: Helium launched to the pros July 1996 (Tour: ONCE, Gan, Motorola, MG); Crossmax
+  2 bronzes and Cosmic Carbone gold (Pascal Richard) at Atlanta 1996; GP4 "is back"; FTS "at the
+  heart of all '97 Mavic wheels". Absent: M 231/261/281, Oxygen, Energy, Module, Open 4, Mach 2, MA 40 MB.
+- year_to -> 1997: 5074 MA 2, 5069 GP 4 (1997 spec 480 g, 32/36 named inline), 8193 Paris-Roubaix
+  SSC, 3399 501 hub, 6972 Comète (description now covers the 1985-91 and 1997 generations).
+- NULL -> 1997-1997: 5102 Open SUP CD, 5059 CXP 12, 5060 CXP 14.
+- year_from moved later (old value), absent from the complete 90/91 trade catalogue (source 121), no
+  earlier attestation in hand: 5107 Reflex 1990 -> 1997 (treated as the clincher; velobase 394 g avg
+  sits between clincher 410 and tubular 375/390), 5062 CXP 30 1990 -> 1997, 5063 CXP 30 (clincher)
+  1990 -> 1997. Probably c. 1993-94 in reality; move earlier if a dated source turns up.
+- Retitled: 5062 "Mavic CXP 30" -> "Mavic CXP 30 (tubular)" (search_text unchanged).
+- Added: rims 9975 Reflex (tubular), 9976 121, 9977 217, 9978 220, 9979 221, 9980 238, 9981 T217,
+  9982 T238, 9983 T261, 9984 "Mavic X BMX" (logo is an X with a superscript x; name uncertain);
+  wheels 9985 Helium (1996), 9986 Cosmic Carbone (1996), 9987 Cosmic Expert, 9988 Cosmic Pro,
+  9989 Crossland, 9990 Crossmax (1996). MA 40 (5077, to 1999) confirmed, unchanged.
