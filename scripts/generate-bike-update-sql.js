@@ -1441,6 +1441,9 @@ const COMPONENT_OVERRIDES = {
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'tange mtb 225 fully sealed': 3154, // 1987 Raleigh Maverick 18 Pro; as "Tange MTB 225" on the Randonneur 18
     'tange fl 225 sealed headset': 3154, // 1985 Raleigh Crested Butte: FL-225 read as the MTB-225 Levin, as 1987
+    // Judgement calls 2026-10-30: the sealed Levin on the same Raleigh MTB / ATB-touring range (LV-11 is the loose-ball road Levin).
+    'tange levin sealed': [{ from: 1985, to: 1987, id: 3154 }], // 1986 Raleigh Crested Butte / Portage
+    'tange sealed headset': [{ from: 1985, to: 1987, id: 3154 }], // 1985 Raleigh Portage
     // 1981 Kalkhoff Amateur / 1983-84 Raleigh Competition 12: Tange Seiki LV-11, Levin (1980-2000).
     'tange new levin': [{ from: 1980, to: 2000, id: 3152 }],
     'tange nl': [{ from: 1980, to: 2000, id: 3152 }],
@@ -1946,6 +1949,11 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    // Judgement calls 2026-10-30. Unqualified "Royal" = the base NRY (SL / ESL would be named); 7899 redated 1980 -> 1979.
+    'sr royal': [{ from: 1979, to: 1982, id: 7899 }], // 1979 Raleigh Professional Mk V / Competition GS: SR NRY, New Royal
+    // Branded AH stem = SR's base SR-AH (7902 redated to 1986 on these); bare "Alloy AH" (1985 Raleigh Pursuit) stays unlinked.
+    'sakae ah': [{ from: 1980, to: 1986, id: 7902 }], // 1985 Bianchi Strada
+    'sr ah alloy': [{ from: 1980, to: 1986, id: 7902 }], // 1986 Raleigh Technium 440 USA
     // 1982 Battaglin: Cinelli 1/R is the 1R (1/Record); the early version ends 1979.
     'cinelli 1 r': [{ from: 1976, to: 1979, id: 6492 }, { from: 1980, to: 1985, id: 6491 }],
     // 1990 Bianchi US catalogue (retrobike archive 1676).
