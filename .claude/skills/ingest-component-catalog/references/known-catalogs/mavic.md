@@ -451,3 +451,18 @@ Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
   571/2 (was a bare stub; years 1993-95 unchanged).
 - Added (1994-1994): 9973 Mavic ZMS 800 rear (group 32 Zap, as the 451 / 305 / 821 rows), 9974 Mavic 650
   chain. 6088 "Mavic ZAP" shifter (1993) is the first-generation Zap, left as is. No start year moved.
+
+## Bike-Pro Publications catalogue, Mavic rear derailleurs (1996) — labibleduvelocataloguesmavic "MAVIC 1996", data_source id 306
+
+- Source: https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1996.html: 2 images proxied from
+  bibibike.forumserv.com. Image 1 (1024 x 543, "1996-4d2ced7.png") is a US retailer's text, "(c) 1996
+  Bike-Pro Publications", on the 840 double / 841 triple road rears and the 845 ATB rear. Image 2
+  ("mavic_helium-1996") is an owner's photo of red Helium hubs and rims, not a document, not used; the
+  DB has no Helium rows.
+- Content: 840 short cage, 841 medium cage for triples ("largely identical to the 845"), all bolted and
+  repairable with a parts diagram; body and links forged 2014 alloy, C.N.D. black body, silver links;
+  2 mm hex adjusters; pulley plates 5 mm inner / 3.2 mm outer; grey nylon pulleys on needle bearings;
+  span 6, 7 or 8 speed; "the most expensive rear derailleurs we sell".
+- year_to 1992 -> 1996 on 4340 840, 4341 841, 4345 845; descriptions add 8-speed (and the body / link
+  detail on 4340). A retailer listing, so possibly old stock; it is the only post-1992 attestation. No
+  bike links or overrides. No start year moved.
