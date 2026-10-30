@@ -36,7 +36,6 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 - Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); the SunTour "syncro-shift" Cyclone II lever (Palo Alto 1981/82; no part number, no row). The 1981 Superbe brake is settled by years: CB-1000 ends 1978, so a 1981 Superbe is the Superbe Pro CB-3100 / 4100 family (reach unstated); nothing links to it.
 - Campagnolo Gran Sport front 2050 (row 2316, applied 2026-10-29, see Done). Checked 2026-10-30: the 1973-76 Raleigh Gran Sport DL 160 is a Simplex Maxi bike (Gran Sport is Raleigh's model name), and the front specs deleted 2026-10-24 were copies of the rear name, so nothing to restore; the 1973 Bianchi Special front is already on 2316. Still open:
   - check 1253 on Cat 17 p 54 against row 3232 ("1253 kidney-bean at 1972 only", still current in 1974); needs the page image.
-  - judgement call: 1973-76 Raleigh Gran Sport DL 160 rear "New Simplex Maxi" / "Simplex Maxi 10 speed" / "Simplex Maxi wide Ratio 10 Speed" (4, bikes 32 218 228 454) -> 9692 Simplex AR 642 P, Maxi-Prestige (dated 1974 only)? The only Maxi row in the DB.
 
 ## Open: link coverage (bike_spec -> component_id)
 
@@ -145,6 +144,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ## Done
 
+- 2026-10-30: 1973-76 Raleigh Gran Sport DL 160 "Simplex Maxi" rears linked to 9692 Simplex AR 642 P Maxi-Prestige (+4), 9692 redated 1973-76 from the Raleigh catalogues.
 - 2026-10-29 session: Campagnolo Gran Sport front 2050 linked (row 2316 for 1973-77 via generator ranges, bikes 119 and 234, source_ref 6; 1253 and the DL 160 copies still open above); deprecated `crypto.createDecipher` replaced by a shared `decrypt.js` (`createDecipheriv`, same key derivation, test in `test/decrypt.test.js`); National (670) merged into Cycle Pro (337) and placeholder 2983 deleted; SunTour New Winner poster Nov 1978 (`data_source` 289, 2236 / 2237 / 2238 / 2240 `year_from` 1979 -> 1978); duplicate-report `review` rows 69 -> 11 (classifier words, 7 kept marking variants, 5 merged or deleted: 1885, 388, 2723, 1729, 798); cost guidance added to both ingest skills.
 - Catalogue country (2026-10-19): `data_source.country CHAR(2)`, all bike catalogues filled, bikes keyed on brand + title + year_from + `source_ref`, `country` returned by `/bikedetail`, `/bikesbybrand`, `/searchBikes`, `/recentBikes`.
 - eBay regions (2026-10-28, API 1.5.0, not deployed): probes of all 16 Browse sites; `/getTopListings?region=XX` with the 16 lists in `ebay-regions.js` (tests in `test/ebay-regions.test.js`), `deliveryCountry` filter, up to 5 listings per site, home site first, deduped on `legacyItemId` (kept on the earliest site), `itemId` on each listing, `region` in the response, 400 on an unknown region or `region` with `marketplace`; `EBAY_MARKETPLACES` holds all 16 sites while `ALL` stays the original five; `scripts/validate-ebay-categories.js` takes a site list and passes on all 16.

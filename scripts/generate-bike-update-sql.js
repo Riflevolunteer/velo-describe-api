@@ -895,6 +895,11 @@ const COMPONENT_OVERRIDES = {
     // only hits are 1970s DB-300/DB-400, so block it.
     'shimano tourney': null,
     'simplex prestige': [{ from: 1900, to: 1979, id: 4583 }], // Simplex Prestige (variant of AR637P/NI), 1971-1974; not for the 1982 Peugeot (NL) PL 8 M
+    // 1973-76 Raleigh Gran Sport DL 160 "Simplex Maxi": the AR 642 Maxi-Prestige,
+    // Simplex's only Maxi rear (long cage, wide range; 14-28 freewheel on the bike).
+    'new simplex maxi': [{ from: 1973, to: 1976, id: 9692 }], // Simplex AR 642 P, Maxi-Prestige
+    'simplex maxi 10 speed': [{ from: 1973, to: 1976, id: 9692 }],
+    'simplex maxi wide ratio 10 speed': [{ from: 1973, to: 1976, id: 9692 }],
     // DB title is `Zeus "Especial Alfa 72"` — the quotes and brand prefix
     // defeat substring matching.
     'alfa 72': 4863,
