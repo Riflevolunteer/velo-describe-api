@@ -568,6 +568,11 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'shimano fd z202 front': 2542, // 1986 Peugeot (US) Avoriaz / Iseran / City Express: FD-Z202, Z-Series (1984-88)
+    'shimano z 202 front': 2542, // 1986 Peugeot (US) U.S. Express
+    'huret eco s satin finish': 8796, // 1986 Peugeot (US) Corbier: Huret Eco (front), the only Eco front
+    'huret rival front': 8488, // 1986 Peugeot (US) Ventoux / Tourmalet: Sachs Huret Rival 1086-00 (1984)
+    'huret rival (set)': 8488, // 1986 Peugeot (FR) PH 501 "Ensemble Huret Rival": the front of the set
     'shimano deore xt front': 2497, // 1986 Peugeot (US) table Canyon Express: FD-M700, Deore XT
     'huret new success front': 8960,
     // Judgement calls 2026-10-30. Bare "Spidel SLJ" (1981 PRO 10 / PY 10 S, 1982 PRO 10): the 1980 models' A522
@@ -796,6 +801,9 @@ const COMPONENT_OVERRIDES = {
     'simplex slj 6600 tsp': 4655, // 1985 Peugeot PY 10 FC (p. 3 caption)
     'shimano rd 6207': 4470, // 1985 Peugeot PX 10 SH: RD-6207, 600EX
     'mavic 801 rear': 4338, // 1986 Peugeot (US) table PX: Mavic 801 (1986)
+    'shimano rd z501 gs rear': 4544, // 1986 Peugeot (US) Avoriaz / Iseran / City Express: RD-Z501-GS, Z-Series (1984-89)
+    'shimano z 501 rear': 4544, // 1986 Peugeot (US) U.S. Express
+    'huret eco s satin finish': 8485, // 1986 Peugeot (US) Corbier: Sachs Huret Eco S 2830-00 (1984), not the 1960-80 Eco
     'shimano deore xt superplate rear': 4489, // 1986 Peugeot (US) table Canyon Express: RD-M700-SP, Deore XT (Superplate)
     'huret new success rear': 4402,
     'campagnolo 1020/a': [{ from: 1982, to: 1984, id: 4126 }], // 1984 Peugeot PZ 10: Nuovo Record v4 (1982-84)
@@ -1209,6 +1217,8 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'weinmann 610 alloy center pull qr double levers': 1136, // 1986 Peugeot (US) Avoriaz: Weinmann AG 610 Vainqueur 999
+    'weinmann 500 alloy side pull with qr': 1125, // 1986 Peugeot (US) Tourmalet: Weinmann AG 500 (hex socket, quick release)
     'shimano br 6207': 970, // 1986 Peugeot (FR) table PG / PX 10 SH: BR-6207-49, the short-reach road caliper
     'weinmann 506 alloy side pull': 7764, // 1986 Peugeot (US) table Ventoux: Weinmann AG 506
     // 1987 Colnago Junior SIS 600 (Catalogo generale 1987).
@@ -1872,6 +1882,7 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    'cta alloy bike ribbon': 2782, // 1986 Peugeot (US) Galibier / Ventoux: ATAX CTA, as the 1984 GB "CTA"
     'cinelli 65 benotto tape': 2804, // 1986 Peugeot (US) table PZ 10: Cinelli 65 Criterium
     // Judgement calls 2026-10-30. 1984 Peugeot (GB) PGN 10 US Routier / Paris-Nice: plain CTA (Weinmann 506 with
     // standard levers rules out the aero-cable CTA; steel would be named). 2782 dated 1984 on this catalogue.
@@ -2002,6 +2013,10 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    'atax asc anodised': 8507, // 1986 Peugeot (FR) PY 10 FC: ATAX ASC, Aerodynamic
+    'dural atax asc': 8507, // 1986 Peugeot (FR) PRO 10
+    'cta alloy aero': 6452, // 1986 Peugeot (US) Galibier / Ventoux / Tourmalet / Avoriaz: ATAX CTA (XA style, aero)
+    'atax alloy aero': 6449, // 1986 Peugeot (US) Mont Cenis / Triathlon: ATAX (aero, XA style)
     'cinelli ir': 6491, // 1986 Peugeot (US) table PZ 10: "IR" is the Cinelli 1R
     // Judgement calls 2026-10-30. Unqualified "Royal" = the base NRY (SL / ESL would be named); 7899 redated 1980 -> 1979.
     'sr royal': [{ from: 1979, to: 1982, id: 7899 }], // 1979 Raleigh Professional Mk V / Competition GS: SR NRY, New Royal
@@ -2467,6 +2482,7 @@ const COMPONENT_OVERRIDES = {
       { from: 1984, to: 1989, id: 5904 }, // 1984 PY 10 LS / PRO 10 (SLJ 5500): Simplex SLJ6164
     ],
     'simplex dural': [{ from: 1984, to: 1989, id: 5904 }], // 1984 PY 10 FC (SLJ 6600): Simplex SLJ6164
+    'simplex alloy expander binder': [{ from: 1984, to: 1989, id: 5904 }], // 1985 PY 10 FC (SLJ 6600) / PRO 10 (SLJ group): Simplex SLJ6164
     // Unnamed San Marco posts as the plain G.S. (the fluted G.S. Special would be named).
     'san marco dural 266mm': [{ from: 1970, to: 1980, id: 5882 }], // 1977 Peugeot (DE) PS / PSN 10/E: G.S. earlier version
     'san marco lightweight': [{ from: 1970, to: 1980, id: 5882 }], // 1978 Peugeot PS / PSN 10
@@ -2618,6 +2634,8 @@ const COMPONENT_OVERRIDES = {
     'maillard helicomatic 6 speed 14 24': [{ from: 1980, to: 1986, id: 8131 }],
     'maillard helicomatic 6 speed 13 21 zinc plated': [{ from: 1980, to: 1986, id: 8131 }], // 1986 Peugeot (FR) table
     'maillard helicomatic 5 speed 14 21 zinc plated': [{ from: 1980, to: 1986, id: 8130 }], // 1986 Peugeot (FR) table PH 513
+    'maillard 700 super plus 13 x 14 x 15 x 17 x 19 x 21t': 2127, // 1986 Peugeot (US) PX: Maillard 700 Course Super Plus
+    'maillard 700 13 x 14 x 17 x 19 x 21t silver': 2113, // 1986 Peugeot (US) PZ 10: 700 Course, 5 speed
     // 1986 Peugeot (US) table: bare "Helicomatic" with its sprockets, the same 600 SH
     'helicomatic 6 speed 13 x 14 x 15 x 17 x 19 x 21t silver': [{ from: 1980, to: 1986, id: 8131 }],
     'helicomatic 6 speed 13 x 15 x 17 x 19 x 21 x 24t silver': [{ from: 1980, to: 1986, id: 8131 }],

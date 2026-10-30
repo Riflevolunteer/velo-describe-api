@@ -689,3 +689,10 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 - Freewheels and rims (2026-10-30): 1980 (NL) PKN / PVN 10 "Maillard Normandy 14-15-17-19-21-24" -> 8129 Normandy Sport 6-speed (same text as 1982; row redated 1982 -> 1980); 1984 (GB) PY 10 LS "Maillard 700 13-14-15-16-17-18" -> 2114 700 Course (straight block; row to 1984; the 1983 FR copy of the text is on a skipped bike); 1978 PA 10 LE "Record du Monde, drilled for tubulars" -> 5189 Super Champion Record du Monde. +4.
 - Saddles (2026-10-30), left unlinked by decision: 1978 PS / PSN 10 "San Marco Gilux race" (GI-LUX 311 undated vs 312 from 1980); 1982 / 1984 "Selle Italia CX" (no row; Selle Royal CX only on a misprint).
 - 2026-10-24 calls settled (2026-10-30): bare "Spidel SLJ" on the 1981 PRO 10 / PY 10 S and 1982 PRO 10 -> rear 7309 SLJ5500 CP, front 7283 SLJ A522 (the same models print SLJ 5500 CP / SLJ A522 in 1980; the 1982 PY 10 S front is the A422, so the front pick is the user's call); 1981 PK 10 / PKN 10 "Simplex SJA" -> 2573 SJ A102 (bike-keyed; both print SJA 102 in 1980). +8. Left unlinked by decision: 1981 PX 10 S / PSV 10 / PFN 13 "Simplex SJA", 1982 "Lightrace Luxe" headsets, 1983 "Maillard 700 Pro" hubs, 1982 "Mafac Promotion" levers. The 1980 PY 10 S "Spidel SLJ" shifter is untouched (no override in Shifters).
+- 1985-86 link pass (2026-10-30): Shimano FD-Z202 -> 2542 and RD-Z501 GS -> 4544 (US Avoriaz, Iseran, City / U.S.
+  Express wordings); Huret Rival front and the FR "Rival (set)" -> 8488 Rival 1086-00; Corbier "Huret Eco S" front ->
+  8796 Huret Eco (front), rear moved 4301 -> 8485 Sachs Huret Eco S 2830-00 (one-off UPDATE, 2 specs); ATAX ASC stems
+  -> 8507, "CTA, alloy, aero" -> 6452, "Atax, alloy, aero" -> 6449; "CTA, alloy, bike ribbon" bars -> 2782; Maillard
+  700 Super Plus -> 2127, 5-speed 700 -> 2113; Weinmann 610 -> 1136, 500 with QR -> 1125; 1985 PY 10 FC / PRO 10
+  "Simplex alloy, expander binder" -> 5904 (SLJ tier). +33: 1985 31 -> 33, 1986 FR 81 -> 84, 1986 US 81 -> 109. Left:
+  Huret Club 2 (Club II 1978-80 vs Sachs Club 1984), Simplex SX 640 (no row), and the no-row parts listed above.
