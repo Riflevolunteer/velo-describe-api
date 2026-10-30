@@ -4,9 +4,10 @@
 #
 #   scripts/velo-pages-wayback.sh <out-dir> <image-item-id> [<image-item-id> ...]
 #
-# The ids are the image items of an album (the album page lists them: each page has a page
-# item N and an image item N+1, e.g. Fiamme catalog (1985), album 1398: 1401 1406 1409 ...
-# 1460). For each id it asks the CDX index for archived JPEGs of
+# The ids are the DISPLAY-size image items of an album. In Gallery2 each page has a page item
+# N, a thumbnail item N+1 (the one the album listing links to) and the display image N+2
+# (what the page's own view loads); e.g. Fiamme catalog (1985), album 1398: page items 1400,
+# 1405, 1408 ... so images 1402, 1407, 1410 ... Thumbnails are usually all that was archived. For each id it asks the CDX index for archived JPEGs of
 # main.php?g2_view=core.DownloadItem&g2_itemId=<id> and saves the largest one as
 # <out-dir>/pNN_<id>.jpg. Existing files are skipped, so it can be re-run.
 #
