@@ -568,6 +568,13 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'sun tour superbe': 2645, // 1980 Raleigh: SunTour FD-1500, Superbe (SunTour linking pass 2026-10-30)
+    'sun tour alloy vx': 2614, // 1981 Raleigh: SunTour FD-1600, VX
+    'sun tour 7': 2641, // 1980 Raleigh: SunTour FD-1400, Seven
+    'suntour svx': 2653, // 1986 Raleigh: SunTour FD-4300, SVX
+    'suntour xc sport': 2660, // 1986 Raleigh: SunTour FD-XS00, XC Sport 7000
+    'suntour xc sport front': 2660, // 1986 Peugeot (US): FD-XS00, XC Sport 7000
+    'sun tour sl alloy': 2605, // 1981 Raleigh: SunTour FD-1700, NSL (New SL)
     'simplex sa 02': 2585, // 1982 Peugeot: Simplex SA02, Serie SA (1975-81) (Simplex spacing links 2026-10-30)
     'huret rider 3 pl': 8962, // 1987 Peugeot (FR) Saint-Bernard: Sachs Huret Rider / Duopar triple front (// linkCoverage pass 2026-10-30)
     'suntour lepree': 2637, // 1986 Raleigh Technium 480: SunTour FD-3400, LePree
@@ -796,6 +803,13 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
+    'sun tour 7gt': 7788, // 1980 Raleigh: SunTour RD-2000, Seven GT (SunTour linking pass 2026-10-30)
+    'raleigh sun tour 7gt': 7788, // 1980 Raleigh: RD-2000, Seven GT
+    'suntour xc': 4778, // 1986 Raleigh: SunTour RD-6300, XC
+    'sun tour superbe': 4760, // 1980 Raleigh: SunTour RD-2100, Superbe (road bike, not the long-cage Superbe II)
+    'sun tour gt': 7789, // 1981 Raleigh: SunTour RD-1200, GT
+    'suntour lepree': 7827, // 1986 Raleigh Technium: SunTour RD-6700, Le Pree (GT), the only 1980s LePree rear
+    'suntour xc sport rear': 4788, // 1986 Peugeot (US): SunTour RD-XS00, XC Sport 7000
     'simplex sx 660': 4649, // 1982 Peugeot: Simplex SLJ SX660, Super LJ (undated row) (Simplex spacing links 2026-10-30)
     'simplex sx660': 4649, // 1984 Peugeot
     'simplex s 001 t p': 4647, // 1983 Peugeot: Simplex S001 T, Prestige (1975-87)
@@ -1076,6 +1090,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 4487 }], // 1987 Colnago Master Mountain Bike: RD-MT60, Deore
   },
   Hubs: {
+    'sun tour road vx large flange qr 36 hole': 8263, // 1980 Raleigh: SunTour RH-2500, VX (large flange) (SunTour linking pass 2026-10-30)
+    'sun tour superbe small flange qr 36 hole': 8262, // 1980 Raleigh: SunTour RH-1000, Superbe (small flange)
     'shimano 6400': [{ from: 1987, to: 1991, id: 3534 }], // 1987 Peugeot (FR) Puymorens: FH-6400 / HB-6400-F, 600 Ultegra
     'shimano 5000': 3580, // 1987 Peugeot (FR) Santé: FH-5000 / HB-5000
     'shimano new 600 ex': 7551, // 1986 Peugeot (FR) table PG 10 SH: HB-6207F / HB-6207R (freewheel hubs; Helicomatic block)
@@ -1621,6 +1637,8 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    'sun tour superbe cotterless 42 52t 170mm': 1988, // 1980 Raleigh: SunTour CW-1000, Superbe (SunTour linking pass 2026-10-30)
+    'sun tour vx cotterless 39 52t 170mm': 1995, // 1980 Raleigh: SunTour CW-1500, VX
     'shimano 105 42x52': 1778, // 1987 Peugeot (FR) Aspin: FC-1050
     'shimano 105 biopace 42x52': 1778, // 1987 Peugeot (FR) Galaxie: FC-1050 (Biopace rings)
     'shimano 6400 biopace 42x52': 1789, // 1987 Peugeot (FR) Puymorens: FC-6400-BP
@@ -2194,6 +2212,8 @@ const COMPONENT_OVERRIDES = {
     'nitto mt1 4 bolt alloy clamp': 9412, // 1987 Raleigh Maverick 18 Pro: Nitto MT-1 (two-piece clamp MTB stem)
   },
   Shifters: {
+    'suntour xc sport': 6315, // 1986 Raleigh: SunTour LD-4700, Power Thumb Shifter, XC-Sport (SunTour linking pass 2026-10-30)
+    'suntour pub 10 stem shifter': 7837, // 1986 Raleigh: SunTour LD-4300, PUB-10 (stem)
     'simplex sx p 4190': 7301, // 1983 Peugeot: Simplex SXP 4190 (1978-81) (Simplex spacing links 2026-10-30)
     'shimano sis 105 sl1050': 6130, // 1987 Peugeot (US) Galaxie / Comete: SL-1050, 105 SIS
     'shimano new deore xt sis sl m730': 6159, // 1987 Peugeot (US) Cannon Ball Express: SL-M730
@@ -2359,6 +2379,11 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
   },
   Pedals: {
+    'suntour cyclone': 4002, // 1986 Raleigh: SunTour PL-5300, Cyclone (SunTour linking pass 2026-10-30)
+    'suntour xc 11 alloy bear trap': 4015, // 1986 Peugeot (US): SunTour PL-5100, XC-II
+    'suntour xcii alloy': 4015, // 1986 Raleigh: PL-5100, XC-II
+    'suntour xc ii light alloy beartrap with cr mo axle': 4015, // 1987 Raleigh: PL-5100, XC-II
+    'sun tour road vx alloy': 4014, // 1980 Raleigh: SunTour PL-1500, VX
     'shimano pd 6207; toe clips and straps': 3961, // 1986 Peugeot (FR): Shimano PD-6207, 600EX (Shimano exact-model links 2026-10-30)
     'shimano dural pd 6207; toe clips and straps': 3961, // 1986 Peugeot (FR)
     'shimano 600ex sealed mechanism light alloy': 3961, // 1987 Raleigh: PD-6207, 600EX (row 1984-86)
@@ -2468,6 +2493,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1993, id: 3965 }], // 1987 Colnago Master Mountain Bike: PD-MT60 / PD-MT61, Deore
   },
   'Seat Posts': {
+    'suntour xc alloy 300mm': 5935, // 1987 Peugeot (US): SunTour SP-2000, XC (300mm) (SunTour linking pass 2026-10-30)
     // Judgement calls, 2026-10-30 (user's go-ahead).
     'sakae super light alloy with adjusting clamp': 5852, // 1981 Raleigh Super Course: SR RY-P1SL III, Royal-P1 Super Light (1970-82, SR catalogue), not the 1970 velobase 5854
     'suntour alloy pillar and clamp': [{ bike: 'MB 2 Canyon Express', id: 5935 }], // 1984 Peugeot MB 2: SunTour SP-2000, XC (1984-85 ATB post)
@@ -2597,6 +2623,7 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    'suntour ap 12 chain': 9727, // 1993 Bianchi: SunTour CH-AP12 (SunTour linking pass 2026-10-30)
     'sedis 110 links delta treated': 1402, // 1980 Peugeot PX 18 M / MC, PK 65: Sedisport Delta (// linkCoverage pass 2026-10-30)
     'sedisport black 1 2 x 3 32': [{ from: 1980, id: 1402 }], // 1987 Peugeot (US): as 'sedisport black'
     'sedisport silver 1 2 x 3 32': [{ from: 1980, id: 1402 }], // 1987 Peugeot (US): as 'sedisport silver'
