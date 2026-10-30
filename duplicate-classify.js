@@ -126,6 +126,9 @@ const REVIEWED_VARIANTS = new Map([
   [1896, 'dating marking: Stronglight 49D Marque Deposee (1960) beside Depose (kept 2026-10-29)'],
   [5798, 'marking: Huret Licence Satri beside JPR (kept 2026-10-29)'],
   [6201, 'two runs under one title: Simplex double, 1950-55 80 g beside the 1955-56 70 g 6200 (kept 2026-10-24)'],
+  [6973, 'distinct part: Mavic Comète ± weighted rear disc, listed apart from the Comète in the 90/91 catalogue (kept 2026-10-30)'],
+  [8461, 'distinct part: Araya 7X(N) 28.0 mm BMX rim beside the 32.2 mm 7X, same Araya source (kept 2026-10-30)'],
+  [716, 'distinct part: Favorit Special F2671/6-2 beside F-2048/6-2, different part numbers (kept 2026-10-30)'],
 ])
 
 // --- Near pairs: the same part under another brand row or another name ---
@@ -209,6 +212,7 @@ const REVIEWED_NOT_DUPLICATES = [
   [9470, 9471], // different part: ITM 500 SL / ITM 500 ATB
   [8387, 8388], // different part: Ritchey Mod Quad / Ritchey Quad
   [8157, 8158], // different part: Mavic TTM 504 / Mavic TTM 504 CD
+  [9098, 9904], // different size (2026-10-30): Cycle Pro National 27 x 1 / 700 x 25, 270 g / National 1 1/8, 300 g
 ]
 const reviewedKey = (a, b) => `${Math.min(a, b)}|${Math.max(a, b)}`
 const REVIEWED = new Set(REVIEWED_NOT_DUPLICATES.map(([a, b]) => reviewedKey(a, b)))
