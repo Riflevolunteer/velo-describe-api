@@ -524,3 +524,4 @@
 - 2026-10-30: 1985 (Japan) Strada "Sakae AH" stem -> 7902 SR-AH (row redated to 1986). +1. Sakae RY stems (Randonneur 700, Rekord 26, Speciale-II) left unlinked by decision: only 1974 RY and 1982 RY2 rows.
 - 2026-10-30: 1978 Campione del Mondo CX "T.T.T. Record Competizione" bar left unlinked by decision (the DB splits it by Gimondi / Merckx / TdF bend; none printed).
 - 2026-10-30: 1990 Alfana "Shimano Hyperglide silver 13-23T 7-speed" -> 7567 CS-HG70 (silver, 105SC; the Virata keeps 1202 via its bike range); 1990 Pista "Ambrosio Montreal black" -> 9175, as the 1987 Pista (row to 1990). +2.
+- 2026-10-30, left unlinked by decision: 1985 Super Leggera / Centenario "Vittoria Seta" (three road Corsa Seta variants), 1984 Nuovo Racing "Wolber Rallye" (four Rallye rows).

@@ -121,3 +121,5 @@
   The five 1974 / 1975 Grand Touring, Grand Jubile and Grand Record
   "STRONGLIGHT Competition" headset specs were re-linked with a one-off
   UPDATE (stronglight-headset-fix.sql, 5 rows).
+
+- 2026-10-30: 1975 Le Champion "GRAN-TURISMO tubulars" -> 9056 Vittoria Granturismo (the only Gran Turismo tubular row, 1974-78; user's call, maker not printed). +1.

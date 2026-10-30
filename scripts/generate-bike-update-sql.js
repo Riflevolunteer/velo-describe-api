@@ -1822,6 +1822,9 @@ const COMPONENT_OVERRIDES = {
     'isca tornado blue': 5382, // 1983 Raleigh Road Ace, as the 1984 "ISCA Tornado Blue Suede"
     'isca tornado blue nabuk suede leather cover': 5382, // 1987 Raleigh Road Ace
     'sella italia anatomic': 8759, // 1984 Peugeot PCA 10: Selle Italia Anatomic (1979-85)
+    // Judgement calls 2026-10-30.
+    'selle italia padded black anatomic': [{ from: 1979, to: 1987, id: 8759 }], // 1987 Raleigh Maverick 18 Pro (row extended 1985 -> 1987)
+    'cinelli suede slx': [{ from: 1985, to: 1988, id: 5338 }], // 1986 Raleigh Prestige: Volare SLX (frame is 531, so SLX is the saddle)
     // 1979 Peugeot (French catalogue).
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
@@ -2687,6 +2690,8 @@ const COMPONENT_OVERRIDES = {
     'suntour accushift plus silver 12 30t 7 speed': [{ from: 1990, to: 1990, id: 1222 }], // SunTour CS-AP00-S7U, XC Pro
   },
   Tyres: {
+    // 1975 Motobecane Le Champion: the only Gran Turismo tubular row (judgement call 2026-10-30; maker not printed).
+    'gran turismo tubulars': [{ from: 1974, to: 1978, id: 9056 }], // Vittoria Granturismo
     // 1970 Raleigh Professional Mk II: Clement's standard road silk of 1970 (6769 "Clement Seta" is a 1974-85 stub).
     "clement 'seta' silk": [{ from: 1970, to: 1988, id: 6748 }], // Clement Criterium Seta
     '650': null, // 1980 Peugeot PH 50 M: bare wheel size; matched Wolber 22 Racing Team 650 by substring
