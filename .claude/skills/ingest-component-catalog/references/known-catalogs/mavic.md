@@ -396,3 +396,12 @@ Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
   668 / 730 / 835 g, 637 660-700 g, 646 LMS 480 g (DB 496), 820 70 g, 821 77 g, 825 160 g, 840 230 g /
   841 235 g / 845 295 g (max cog 28 / 30 / 32, capacity 30 / 36 / 38).
 - If a dated source shows the manual is 1989, the 1990 starts of those rows could move to 1989.
+
+## Mavic "ATB Guide 90-1" (2 scans) — labibleduvelocataloguesmavic "MAVIC 1990", checked 2026-10-30, no change
+
+- Source: https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1990.html, 2 JPGs proxied from
+  bibibike.forumserv.com (mavic1990a / mavic1990b): the cover of the "ATB Guide 90-1" (Saint-Trivier-
+  sur-Moignans, printed in France) and its derailleur spread only: indexed ATB group for 6 or 7 speed,
+  anatomic under-bar levers adjustable to all positions; 845 rear 250 g, 875 front 110 g, 825 shifters
+  160 g. All three already match 4345 / 8195 / 6085 (source 121, years 1990-91/92). No data_source row
+  created, no SQL. The rest of the guide is not on the page; do not re-check.
