@@ -2518,7 +2518,10 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide silver 13 30t 7 speed': [{ from: 1990, to: 1993, id: 7567 }], // CS-HG70 (LX / DX bikes)
     'shimano hyperglide black 14 28t 7 speed': [{ from: 1990, to: 1990, id: 7601 }], // CS-HG20, 200GS
     'shimano hyperglide black 13 23t 7 speed': [{ from: 1990, to: 1993, id: 1195 }], // CS-HG50, Exage
-    'shimano hyperglide silver 13 23t 7 speed': [{ bike: 'Virata', from: 1990, to: 1990, id: 1202 }], // CS-HG90 (Deore XT / 600 Ultegra); the Alfana (105SC) is left unlinked
+    'shimano hyperglide silver 13 23t 7 speed': [
+      { bike: 'Virata', from: 1990, to: 1990, id: 1202 }, // CS-HG90 (Deore XT / 600 Ultegra)
+      { from: 1990, to: 1990, id: 7567 }, // Alfana (105): CS-HG70, silver and listed for 105SC (HG50 is brown); judgement call 2026-10-30
+    ],
     'shimano xtr 12 28t 8 speed': 7668, // 1993 Bianchi, from the Jul 1992 manual: Shimano CS-M900-8, XTR (Q 12-28T)
     // 1993 Bianchi ("cassette" noun stripped from the CSV).
     'campagnolo 12 23t 8 speed': 1186, // Campagnolo Record Exa-Drive (8sp)
@@ -2661,6 +2664,9 @@ const COMPONENT_OVERRIDES = {
     'regina extra oro 13 21 6 speed': 2194, // 1981 Bianchi Super Leggera
     'maillard 700 6 speed dural 13 14 15 16 17 18t or 13 14 15 17 19 21t': 2123, // 1977 Peugeot (DE) PY 10/CP: Maillard 700 (6 speed)
     'maillard 700 13 14 15 17 19 21t': 2123, // 1978 Peugeot PY 10 EC
+    // Judgement calls 2026-10-30.
+    'maillard 700 13 14 15 16 17 18': [{ from: 1984, to: 1984, id: 2114 }], // 1984 Peugeot (GB) PY 10 LS: straight block = 700 Course (row extended 1982 -> 1984)
+    'suntour ultra 6 14 16 18 21 24 28t': [{ from: 1987, to: 1987, id: 7870 }], // 1987 Raleigh Maverick 18 Pro: Mountech bike, so the Winner WT-6500 not the Winner Pro
     'maillard 700 6 speed light alloy hard steel core to choice': 2123, // 1978 Peugeot PY 10 CP
     // 1983 Peugeot PX 14 / PY 14: 7-speed 700; hubs are 700 racer, not Helicomatic, so not the 700 SH 8133.
     'maillard 700 13 14 15 16 17 18 19': [{ from: 1980, to: 1984, id: 2124 }], // Maillard 700 Compact Super (7 speed), row 1980-82
@@ -2672,7 +2678,7 @@ const COMPONENT_OVERRIDES = {
     'atom 14 32 with huret spoke protector': [{ from: 1960, to: 1977, id: 2044 }], // Tandem
     // 1981-82 Peugeot: Normandy Sport, the only 6-speed Normandy in the 1982 catalogue (row 1982). The 1980
     // PKN / PVN 10 print the same cluster but predate it, so they stay unlinked.
-    'maillard normandy 14 15 17 19 21 24': [{ from: 1981, to: 1982, id: 8129 }],
+    'maillard normandy 14 15 17 19 21 24': [{ from: 1980, to: 1982, id: 8129 }], // 1980 (NL) PKN / PVN 10 print the same as 1982; 8129 redated 1982 -> 1980 (2026-10-30)
     'maillard normandy 13 14 15 17 19 21': [{ from: 1981, to: 1982, id: 8129 }],
     'everest alloy 13 21 6 speed': [{ from: 1976, to: 1981, id: 9072 }], // 1981 Bianchi Super Corsa: Everest Dural (5 / 6 speed)
     'regina rlsy90 silver 13 23t 7 speed': 2205, // 1990 Bianchi Super Leggera / Giro: Regina Synchro 90-S (7 speed); its 1992 Strada block is 13-23
@@ -2752,6 +2758,10 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi Pista: Nuovo Montreal Crono (1985-88) by date. The 1990 "Montreal black" is a different
     // key and past the row, so it stays unlinked.
     'ambrosio montreal': [{ from: 1985, to: 1988, id: 9175 }],
+    // Judgement calls 2026-10-30.
+    'ambrosio montreal black': [{ from: 1985, to: 1990, id: 9175 }], // 1990 Bianchi Pista, as the 1987 Pista (9175 extended 1988 -> 1990)
+    'record du monde drilled for tubulars': [{ from: 1970, to: 1981, id: 5189 }], // 1978 Peugeot PA 10 LE: Super Champion Record du Monde (Mavic's is "de l'Heure")
+    'mavic professional with reinforcing ferrules': 5092, // 1980 Raleigh Professional Mk V: Montlhery Pro (double eyelet; 5055 is a 1970 row)
     // 1984 Raleigh Competition 12 / Corsa 12: Weinmann A124 Super X (1978-83), as the 1983 Competition.
     'weinmann high strength narrow section eyeletted alloy': [{ from: 1978, to: 1984, id: 7776 }],
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).

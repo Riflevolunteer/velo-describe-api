@@ -523,3 +523,4 @@
 - 1987 Giro / Super Leggera "Gipiemme Cronosprint" seatpost -> 5789 Crono Sprint 600BA fluted (the plain group's post); 1983-84 Eco Pista "San Marco" -> 5883 G.S. later version; 1978 Rekord/746 "T.T.T. Record" -> 5716 Mod. Record, row redated 1970-75 -> 1970-78. +5. 1978 Specialissima Barcellona "Clement silk tubulars, extra-light" left unlinked (three road Seta Extra rows).
 - 2026-10-30: 1985 (Japan) Strada "Sakae AH" stem -> 7902 SR-AH (row redated to 1986). +1. Sakae RY stems (Randonneur 700, Rekord 26, Speciale-II) left unlinked by decision: only 1974 RY and 1982 RY2 rows.
 - 2026-10-30: 1978 Campione del Mondo CX "T.T.T. Record Competizione" bar left unlinked by decision (the DB splits it by Gimondi / Merckx / TdF bend; none printed).
+- 2026-10-30: 1990 Alfana "Shimano Hyperglide silver 13-23T 7-speed" -> 7567 CS-HG70 (silver, 105SC; the Virata keeps 1202 via its bike range); 1990 Pista "Ambrosio Montreal black" -> 9175, as the 1987 Pista (row to 1990). +2.

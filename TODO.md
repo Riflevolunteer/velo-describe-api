@@ -66,7 +66,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 ### Freewheels / cassettes (2026-10-26 pass)
 
 362 unlinked (350 Freewheel label 36, 12 Cassette label 48). ~320 are brand + tooth range, tooth range only or either/or ("ATOM or MAEDA", "Regina or Campagnolo"): leave. Bike_spec ids in brackets.
-- Judgement calls: Maillard Normandy 6-speed, 1980 Peugeot PKN / PVN 10 [10600 10622]: predate 8129 Normandy Sport (1982); Atom 13/26 6 speed, 1981 Raleigh Professional [9341] -> Atom 77 2050 / 2051 (cog colour unknown); Maillard 700 13-18, 1984 PY 10 LS [12309] -> 2112 Compact / 2114 Course / 2123; Suntour Ultra 6, 1987 Maverick [8877] -> 7870 WT-6500 or 7868 WP-6500; Hyperglide 13-23T 7-speed on 1990 105 Alfana [7166] -> 1195 or 7567; Shimano Gold 13/28 with 600 EX, 1981 [9285] -> 7474?; Regina CXS 7-speed [2309] -> 2169 is 6-speed only.
+- Decided 2026-10-30, leave unlinked: Atom 13/26 6 speed, 1981 Raleigh Professional [9341] (2050 black vs 2051 silver cogs, colour not printed); Shimano Gold 13/28 with 600 EX, 1981 Raleigh Criterium [9285] (no Gold freewheel row); Regina CXS 7-speed, 1986 Cinelli [2309] (2169 is the 6-speed only).
 - No row: Shimano 105 freewheel / cassettes 1984-87 [1296 6134 8673 8695]; Hyperglide on CT10 / CT20 / AT10 1993 [1723 1740 1570]; Everest Special Cromo (4, already listed).
 
 ### Seatposts (2026-10-26 pass)
@@ -79,7 +79,6 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 ### Rims (2026-10-26 pass)
 
 401 of 575 Rims specs (label 30) unlinked, 178 distinct values. About 330 are size / material / finish text ("700c" 19, "aluminium" 13, "dural" 13, "alloy" 10, "steel" 9, the Raleigh and Falcon `27 x 1¼"` / Endrick / high-pressure strings, "grey anodized"), brand only ("Mavic" 9, "Nisi" 6, "Super Champion rims", "Weinmann alloy" 6, "Campagnolo", "Ambrosio"), either/or ("Mavic Sport or Pellet Record", "special 700c rims (Rigida or Mavic)", "Mavic aluminium (tubulars); steel (clinchers)") or existing do-not-links (Mavic special, Sprint, A.V.A. sprint, Rigida Chrolux 1978+, Araya RM-18T): leave. Bike_spec ids in brackets.
-- Judgement calls: Record du Monde, drilled for tubulars, 1978 Peugeot PA 10 LE [9935] -> 5189 (no maker printed; Mavic 5106 Record du Monde de l'Heure also exists); Ambrosio Montreal black, 1990 Bianchi Pista [7130]: past both Montreal rows (the 1987 Pista went to 9175 Nuovo Montreal Crono on 2026-10-28); Mavic Professional with reinforcing ferrules, 1980 Raleigh Mk V [9031] -> 5092 Montlhéry Pro vs 5055 (already listed above).
 - No row: Akront 700c / Pista (4, 1973 Zeus); Ambrosio California (3) and disc wheels; FiR Tour, MTB Pro, tri-spoke (3); Martano G-P80, Pro; Mavic Sprint (3, ferrule / tubular wording); Rigida Jade (3), Saphir (2); Sumo 14F; Ukai 20A (3), 22A, EX-17 (2); Weinmann 116, 716E (2), and the 1987 Raleigh "hollow section 700c eyeletted" (5, model not printed).
 
 ### Saddles (2026-10-26 pass)
@@ -146,6 +145,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ## Done
 
+- 2026-10-30 judgement calls, freewheels and rims (+8): 1980 Peugeot (NL) Maillard Normandy 14-24 -> 8129 Normandy Sport (redated from 1980, as 1982); 1984 Peugeot (GB) Maillard 700 13-18 -> 2114 700 Course (to 1984); 1987 Raleigh Maverick Ultra 6 -> 7870 WT-6500 Winner; 1990 Bianchi Alfana Hyperglide silver 13-23 -> 7567 CS-HG70; rims 1978 Peugeot Record du Monde -> 5189 Super Champion, 1980 Raleigh Mavic Professional -> 5092 Montlhery Pro, 1990 Bianchi Ambrosio Montreal black -> 9175 (to 1990).
 - 2026-10-30 judgement calls, handlebars (+3): 1984 Peugeot (GB) PGN 10 "CTA" -> 2782 ATAX CTA (dated 1984; standard levers rule out the aero CTA); 1980 Raleigh Touring 14 "SR light alloy Randonneur with engraved ferrule" -> 2913 SR WR World Randonneur (ferrule = double-tube centre).
 - 2026-10-30 judgement calls, stems and headsets (+7): 1979 Raleigh "SR Royal" -> 7899 NRY New Royal (redated from 1979); "Sakae AH" / "SR AH alloy" (1985 Bianchi, 1986 Raleigh) -> 7902 SR-AH (redated to 1986); 1985-86 Raleigh "Tange Levin sealed" / "Tange sealed headset" -> 3154 MTB-225 Levin.
 - 2026-10-30 judgement calls (+15): seatposts Gipiemme Cronosprint -> 5789 (2), Peugeot Simplex aluminium / dural by derailleur tier -> 5901 SX 1500 / 5904 SLJ6164 (5), unnamed San Marco -> 5882 / 5883 G.S. by year (6), 1978 Bianchi T.T.T. Record -> 5716 Mod. Record (redated to 1978); tyre 1970 Raleigh Clement 'Seta' Silk -> 6748 Criterium Seta.

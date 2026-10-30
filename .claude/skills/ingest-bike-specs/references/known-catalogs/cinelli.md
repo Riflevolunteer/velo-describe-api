@@ -49,3 +49,4 @@
   cells, frame tubing.
 - Regression: all other catalogs unchanged.
 
+- 2026-10-30: 1986 860 Record Corsa "Regina CXS 7-speed" left unlinked by decision (2169 CX/CX-S is the 6-speed only).
