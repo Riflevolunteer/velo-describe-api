@@ -604,6 +604,35 @@ Peugeot linked after the pass: 1974 35/86, 1975 44/132, 1976 38/131, 1977 DE 71/
 ### Helicomatic freewheel links (2026-10-22)
 The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB rows (from the 1982 Maillard "Freewheels" catalogue, data_source 103) are titled "600 SH" / "700 SH", so the matcher never connected them. Freewheels overrides, ranged 1980-84 (the rows are dated 1982 only): Helicomatic 6-speed wordings, "6-speed SH 13-21" and the Helicomatic cassette -> 8131 600 SH (6 speed compact), the Maillard catalogue's "original equipment model"; Helicomatic 5-speed -> 8130; "Maillard 700 SH 13-14-15-17-19-21" (1983 NL PX 10 Du) -> 8132. The two 1984 Raleigh Helicomatic Gold / Silver cells took 8131 too. Back-fill only: 1982 FR 82 -> 84, 1982 NL 59 -> 60, 1983 NL 19 -> 21, 1984 FR 56 -> 67, 1984 GB 45 -> 51, 1984 Raleigh 116 -> 118. Plain "Maillard Normandy 6-speed 14-24" stays unlinked (the only 6-speed Normandy row is the Normandy Sport).
 
+## 1985 Peugeot — `1985_peugeot_spec.csv` (FR, data_source 308: 32 bikes, 437 specs, 31 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1985.html (31 images proxied from
+  bibibike.forumserv.com, loaded 2026-10-30). Images 1-19: French "Bicyclettes Peugeot 1985" (image N = printed
+  page N); image 20 is a 404 at the source (the forum host is gone), so the "tableau récapitulatif de la gamme
+  course 85" the racing pages refer to is not available. Racing pp. 3-7, tandems p. 8, sport pp. 9-11, VTT p. 13,
+  town pp. 15 / 17, juniors pp. 18-19. Specs are prose per model; part numbers mostly only in photo captions.
+  Transcribed by a Sonnet subagent, spot-checked on pp. 3 and 5. Images 21-31: UK "Cycles Peugeot" brochure
+  (22 models, b02 intro, b10 warranty): blurbs, colours and sizes only, no spec table, not loaded (as the 1984 GB
+  blurb-only models); the transcription is in the session scratchpad only.
+- Loaded: racing PY 10 FC, PRO 10, PY 10 M, PX 10 DU, PSV 10 M, PSN 10 M (PSV 10 M on Michelin BIB TS 20), PX 10 SH
+  (new: Shimano 600 EX, RD 6207), PGN 10 M, PH 501 (new: Reynolds 501, Huret Rival), PH 11, PH 13, PH 10 LS, P 10 LS,
+  P 10 S, P 10 L; tandems TM 9 G, TH 9 G; sport PX 80, PH 60, PH 65, PH 8 SL, PH 18 SL, PH 15 T, P 15, PH 8 M, P 8 L,
+  PH 50 S, PH 50 M, PH 18 M, P 18 L; VTT 1, PMBF 1.
+- Repairs: the p. 3 captions (Simplex SLJ 6600 TSP, Stronglight 107, Weinmann Carrera 400, Sella Italia Turbo) are
+  page-level; applied to the featured PY 10 FC only (the 107 matches its titanium-axle text). PH 15 T / P 15 typed
+  Sport (ladies). PH 501 crank: text says Nervar, caption Peyrard 3020 (kept "Nervar ... [?]"). PH 10 LS: text CLB
+  brakes, caption Weinmann 500 (CLB kept).
+- Not loaded: CFY 10 C carbon frameset (p. 3); town PH 45 S, PH 45, P 45, PVD 05, PH 40 M, PH 22 M, PVD 02 (p. 15),
+  VH 35, V 35 BAC, VL 45 M, V 25, VH 30, PRP 20 M (p. 17); juniors J 8 GL, C 50 MDL, ZC 50 L, F 50 DL, ZF 46 L,
+  C 50 CY, F 46 DL, P 351 / 401 / 501 SP, Lion 16, SCHT 16 (pp. 18-19).
+- Overrides: Rear 'simplex slj 6600 tsp' -> 4655, 'shimano rd 6207' -> 4470; Cranksets 'shimano 600 ex alloy 42 x
+  52t' -> 1798 FC-6207; Saddles 'sella italia turbo' -> 5508 (1980-90); Rims '700 c' -> null (was hitting 4989 Femco
+  700 c); Helicomatic '6 speed 13 21' / '14 24' -> 8131 ranges extended to 1985. "Course type" / "Helvetia type"
+  bars keep the 1979 overrides (2901 / 8502, rows dated 1979-82).
+- Left unlinked: PGN 10 M "Weinmann 405 side-pull" (two rows, 491 and 1117, look like duplicates), Modolo, CLB,
+  Solida / Nervar cranks, Mondialita saddles, Vitus 983 post, brand-only Simplex / Huret / Maillard / Stronglight.
+- Regression: all 63 other catalogues' link counts unchanged.
+
 ## Link pass from /linkCoverage — 2026-10-24
 
 - 1982 (NL) "Sedisport, 114 links, Delta treated" (5) -> 1402 Sedis Sedisport Delta, as the 1980 108-link value. 1984 (FR 3, GB 2) bare "Turbo" saddle -> 5508 Selle Italia Turbo (ranged 1980-90). +10 links; no other catalogue changed.

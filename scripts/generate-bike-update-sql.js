@@ -131,6 +131,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1981|peugeot', 'FR'], // "Les velos sport et course 1981"; the Swiss one-page PY 10 S is 1981_peugeot_ch_spec.csv
   ['1982|peugeot', 'FR'], // "Peugeot 1982. Une bonne odeur de velo."; the Dutch Peugeotboek is 1982_peugeot_nl_spec.csv
   ['1984|peugeot', 'FR'], // "Peugeot Bicyclettes 1984"; the UK brochure is 1984_peugeot_gb_spec.csv
+  ['1985|peugeot', 'FR'], // "Bicyclettes Peugeot 1985"; the UK brochure has blurbs only and is not loaded
   ['1983|peugeot', 'CA'], // Velo Sport (1982) Inc., Quebec, bilingual "Pleasure that lasts"; the Dutch kollektie is 1983_peugeot_nl_spec.csv
   ['1981|kalkhoff', 'DE'], // VeloBase "1981 Kalkhoff Catalog" (kalhoff_prospekt_81.pdf), German text; market not stated
   ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
@@ -780,6 +781,8 @@ const COMPONENT_OVERRIDES = {
     'simplex slga550cp': 7309, // GB table misprint of SLJA 5500 CP
     'simplex slj6600tsp': 4655, // PY 10 FC: SLJ6600 T (1981-84)
     'simplex slj660tsp': 4655, // GB table PX 10 DU: misprint of SLJ 6600 TSP
+    'simplex slj 6600 tsp': 4655, // 1985 Peugeot PY 10 FC (p. 3 caption)
+    'shimano rd 6207': 4470, // 1985 Peugeot PX 10 SH: RD-6207, 600EX
     'campagnolo 1020/a': [{ from: 1982, to: 1984, id: 4126 }], // 1984 Peugeot PZ 10: Nuovo Record v4 (1982-84)
     'campagnolo 1020 a': [{ from: 1982, to: 1984, id: 4126 }],
     'simplex sx 610 tsp': 4631, // 1982 Peugeot PX 10 DU / PX 10 S: Simplex SX610 T (1981-85)
@@ -1524,6 +1527,7 @@ const COMPONENT_OVERRIDES = {
     // 1973 Falcon San Remo 76 / 94: bare "Cotterless" (unbranded, left unlinked at load); the 1974 SR Silver Cotterless
     // row 9528 added later would otherwise catch it by substring (drift check 2026-10-28).
     cotterless: null,
+    'shimano 600 ex alloy 42 x 52t': 1798, // 1985 Peugeot PX 10 SH: FC-6207, 600EX
     // 1984 Raleigh: Sugino DGT is the double GT crank (the triple is the TGT); the Sugino Vol. 56 spread lists DGT among the cranks (row 1937 ends 1982, the model was still listed c. 1982-83).
     'sugino dgt 52 42t steel rings': 1937, // Sugino GT
     'sugino dgt alloy cotterless 50 36t': 1937,
@@ -1742,6 +1746,7 @@ const COMPONENT_OVERRIDES = {
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'regal': [{ from: 1970, to: 2000, id: 5561 }], // Selle San Marco Regal
     'turbo': [{ from: 1980, to: 1990, id: 5508 }], // 1984 Peugeot PRO 10 / PY 10: bare "Turbo" is the Selle Italia Turbo
+    'sella italia turbo': [{ from: 1980, to: 1990, id: 5508 }], // 1985 Peugeot PY 10 FC (p. 3 caption)
     'selle royal': null, // 1981 Kalkhoff: brand only (brand row 5521 deleted 2026-10-23)
     'ideale 2002 or treated leather': null, // 1976 PY 10: either / or, as the 1973 PX 10 either/or saddle (left unlinked)
     // 1987 Raleigh Randonneur 18: "Brooks Professional, honey finish, pre-softened" -> 5295 Brooks Professional pre-softened (velobase dates the row 2000, treated as a misdate; the catalogue itself shows the saddle in 1987).
@@ -2572,9 +2577,10 @@ const COMPONENT_OVERRIDES = {
     // "Freewheels" catalogue (data_source 103) has the 600 SH as the "original equipment model" and
     // the 700 SH as the "racing model", so a plain Helicomatic on a complete bike is the 600 SH. Rows
     // are dated 1982 only; ranged 1980-84 so the 1983 / 1984 bikes link (a year or two off, as before).
-    'maillard helicomatic 6 speed 13 21': [{ from: 1980, to: 1984, id: 8131 }],
+    // The 1985 Peugeot catalogue prints the same two 6-speed wordings, so those two run to 1985.
+    'maillard helicomatic 6 speed 13 21': [{ from: 1980, to: 1985, id: 8131 }],
     'maillard helicomatic 6 speed 13 24': [{ from: 1980, to: 1984, id: 8131 }],
-    'maillard helicomatic 6 speed 14 24': [{ from: 1980, to: 1984, id: 8131 }],
+    'maillard helicomatic 6 speed 14 24': [{ from: 1980, to: 1985, id: 8131 }],
     'maillard helicomatic 13 14 15 17 19 21': [{ from: 1980, to: 1984, id: 8131 }],
     'maillard helicomatic 13 15 17 20 24 28': [{ from: 1980, to: 1984, id: 8131 }],
     'maillard helicomatic 14 16 18 20 23 26': [{ from: 1980, to: 1984, id: 8131 }],
@@ -2761,6 +2767,8 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // 1985 Peugeot: bare wheel size, not the 1970 Femco 700 c rim the substring match found.
+    '700 c': null,
     // 1987 Colnago Master America: either / or, don't pick one.
     'campagnolo victory or ambrosio metamorphosis servizio corse black anodized': null,
     // 1982 Battaglin: Nisi rims printed without their five-digit codes (rows 00250 and 00218).
