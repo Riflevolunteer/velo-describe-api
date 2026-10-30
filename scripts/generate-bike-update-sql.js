@@ -566,6 +566,14 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // Judgement calls 2026-10-30. Bare "Spidel SLJ" (1981 PRO 10 / PY 10 S, 1982 PRO 10): the 1980 models' A522
+    // (the 1982 PY 10 S has the A422, from 1981, so this is the user's call).
+    'spidel slj': [{ from: 1978, to: 1984, id: 7283 }], // Simplex SLJ A522
+    // 1981 "Simplex SJA": only PK 10 / PKN 10, which print SJA 102 in 1980 (and PKN 10 in 1982); PX 10 S, PSV 10, PFN 13 stay unlinked.
+    'simplex sja': [
+      { bike: 'PK 10', from: 1981, to: 1981, id: 2573 }, // Simplex SJ A102
+      { bike: 'PKN 10', from: 1981, to: 1981, id: 2573 },
+    ],
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'shimano santé': [{ from: 1987, to: 1989, id: 2533 }], // FD-5000, Sante
     "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 2288 }],
@@ -754,6 +762,9 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
+    // Judgement call 2026-10-30: 1981 PRO 10 / PY 10 S and 1982 PRO 10 bare "Spidel SLJ"; the same models print
+    // "Spidel SLJ 5500 CP" in 1980 and 1982 (PY 10 S).
+    'spidel slj': [{ from: 1979, to: 1984, id: 7309 }], // Simplex SLJ5500 CP
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     "campagnolo croce d'aune": [{ from: 1988, to: 1991, id: 4112 }], // short cage on road racing bikes
     'shimano deore xt sis': [{ from: 1987, to: 1989, id: 4491 }], // RD-M730 (the matcher hit the bare undated Deore XT row 4496)

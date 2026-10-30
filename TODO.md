@@ -53,7 +53,7 @@ Weakest on 2026-10-28: Tyres 24%, Handlebars 30%, Saddle 32%, Rims 33%, Seatpost
 
 ### Calls from 2026-10-24 (leave until a catalogue or photo settles them)
 
-- Judgement calls (skipped 2026-10-24, user unsure; leave unlinked until a catalogue or photo settles the variant): 1982 Peugeot "Lightrace Luxe" headset (7) vs 3032 Lightrace Grand Luxe (undated); 1981-82 Peugeot "Spidel SLJ" rear (3) 4671 SLJ5500 T vs 4672 SLJ6600, front -> 2595 Spidel/Simplex Super LJ; 1981 Peugeot "Simplex SJA" front (5) SJ A102 / A103 / A222 / A223; 1984 Raleigh "Huret Club brazed-on" (4), Club II ends 1980; 1983 Peugeot "Maillard 700 Pro" hubs (3) large vs low flange; 1982 Peugeot "Mafac Promotion" levers (3) four variants; 1990 Bianchi "Sedisport 270 black" (2).
+- Decided 2026-10-30, leave unlinked: 1982 Peugeot "Lightrace Luxe" headset (7; only 3032 Lightrace Grand Luxe, undated, and 3033 Super, 1984); 1981 Peugeot "Simplex SJA" front on PX 10 S, PSV 10, PFN 13 (3; neighbour years disagree: 102 / 222, triple 103 / 223); 1984 Raleigh "Huret Club brazed-on" (4; only the clamp-on 8489 Club AS for 1984); 1983 Peugeot "Maillard 700 Pro" hubs (3; large vs low flange, neighbour years do not say); 1982 Peugeot "Mafac Promotion" levers (3; four variants); 1990 Bianchi "Sedisport 270 black" (2; no 270 row).
 - No row (source gaps): Reydel Profil (6), Hyperglide 7-speed cassettes other than CS-HG70 (9), Vittoria Flash M19, Lyotard 36 RCM, bare "Rapidfire Plus" on mixed-group 1993 MTBs.
 
 Named parts with no row or no source yet (worth a search if a source turns up):
@@ -145,6 +145,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ## Done
 
+- 2026-10-30 judgement calls from 2026-10-24 (+8): 1981-82 Peugeot PRO 10 / PY 10 S bare "Spidel SLJ" rear -> 7309 SLJ5500 CP and front -> 7283 SLJ A522 (as the same models in 1980; front is the user's call, the 1982 PY 10 S has the A422); 1981 Peugeot PK 10 / PKN 10 "Simplex SJA" -> 2573 SJ A102 (bike-keyed, as 1980 / 1982).
 - 2026-10-30 judgement calls, saddles and tyres (+3): 1986 Raleigh Prestige "Cinelli, suede SLX" -> 5338 Volare SLX (frame is 531); 1987 Raleigh Maverick "Selle Italia padded black anatomic" -> 8759 Anatomic (to 1987); 1975 Motobecane Le Champion "GRAN-TURISMO tubulars" -> 9056 Vittoria Granturismo (user call; maker not printed).
 - 2026-10-30 judgement calls, freewheels and rims (+8): 1980 Peugeot (NL) Maillard Normandy 14-24 -> 8129 Normandy Sport (redated from 1980, as 1982); 1984 Peugeot (GB) Maillard 700 13-18 -> 2114 700 Course (to 1984); 1987 Raleigh Maverick Ultra 6 -> 7870 WT-6500 Winner; 1990 Bianchi Alfana Hyperglide silver 13-23 -> 7567 CS-HG70; rims 1978 Peugeot Record du Monde -> 5189 Super Champion, 1980 Raleigh Mavic Professional -> 5092 Montlhery Pro, 1990 Bianchi Ambrosio Montreal black -> 9175 (to 1990).
 - 2026-10-30 judgement calls, handlebars (+3): 1984 Peugeot (GB) PGN 10 "CTA" -> 2782 ATAX CTA (dated 1984; standard levers rule out the aero CTA); 1980 Raleigh Touring 14 "SR light alloy Randonneur with engraved ferrule" -> 2913 SR WR World Randonneur (ferrule = double-tube centre).
