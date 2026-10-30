@@ -132,6 +132,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1982|peugeot', 'FR'], // "Peugeot 1982. Une bonne odeur de velo."; the Dutch Peugeotboek is 1982_peugeot_nl_spec.csv
   ['1984|peugeot', 'FR'], // "Peugeot Bicyclettes 1984"; the UK brochure is 1984_peugeot_gb_spec.csv
   ['1985|peugeot', 'FR'], // "Bicyclettes Peugeot 1985"; the UK brochure has blurbs only and is not loaded
+  ['1986|peugeot', 'FR'], // "Gamme Course" + sport / ville pages (bikeboompeugeot.com); the US "1986 Brochure" is 1986_peugeot_us_spec.csv
   ['1983|peugeot', 'CA'], // Velo Sport (1982) Inc., Quebec, bilingual "Pleasure that lasts"; the Dutch kollektie is 1983_peugeot_nl_spec.csv
   ['1981|kalkhoff', 'DE'], // VeloBase "1981 Kalkhoff Catalog" (kalhoff_prospekt_81.pdf), German text; market not stated
   ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
@@ -567,6 +568,8 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'shimano deore xt front': 2497, // 1986 Peugeot (US) table Canyon Express: FD-M700, Deore XT
+    'huret new success front': 8960,
     // Judgement calls 2026-10-30. Bare "Spidel SLJ" (1981 PRO 10 / PY 10 S, 1982 PRO 10): the 1980 models' A522
     // (the 1982 PY 10 S has the A422, from 1981, so this is the user's call).
     'spidel slj': [{ from: 1978, to: 1984, id: 7283 }], // Simplex SLJ A522
@@ -592,6 +595,9 @@ const COMPONENT_OVERRIDES = {
     'simplex sja222': 2575,
     'simplex sja222cx': 2575, // PH 12 braze-on; no CX row
     'simplex slja422': 7263, // Simplex SLJ A422 (1981-84)
+    'simplex slja 422': 7263, // 1986 Peugeot (FR) table PRO 10
+    'simplex sx a 33': 7312, // 1986 Peugeot (FR) table PH 513 / PH 13 triples
+    'simplex sxa32 (parallelogram)': 2578, // 1986 Peugeot (FR) table
     'simplex sxa32': 2578, // Simplex SX A32 (1984-89)
     'simplex sxa33': 7312, // PH 13 triple: Simplex SX A33 (1984-89)
     'simplex sja 422': 7263, // 1983 Peugeot (CA) PY 14 / PX 14: Simplex SLJ A422 (1981-84); "SJA-422" is the SLJ A422
@@ -602,11 +608,12 @@ const COMPONENT_OVERRIDES = {
     'spidel slja 422': 7263, // 1982 Peugeot PY 10 S: Simplex SLJ A422 (1981-84), Spidel-badged
     'simplex lja302': 2567, // 1978 Peugeot (NL): Simplex LJ A302
     'simplex slja 502': [{ from: 1978, to: 1981, id: 7281 }], // 1978 Peugeot (NL) PX 10 LE / PY 10 EC / PY 10 CP: SLJ A502 (1978-81)
-    'simplex slja 522': [{ from: 1977, to: 1984, id: 7283 }], // 1977 Peugeot (DE) PY 10/CP: SLJ A522 (the only row, dated 1978-84; a judgement, one year early)
+    'simplex slja 522': [{ from: 1977, to: 1986, id: 7283 }], // 1977 Peugeot (DE) PY 10/CP: SLJ A522 (the only row, dated 1978-84; a judgement, one year early); 1986 Peugeot (FR) PY 10 FC too
     'sun tour vx': [{ from: 1979, to: 1980, id: 2614 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour FD-1600, VX (1978-84)
     'shimano z202': [{ from: 1986, to: 1986, id: 2542 }], // 1986 Raleigh Marathon / Pursuit: FD-Z202-HS, Z-Series (1984-88)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
-    'huret new success': [{ from: 1987, to: 1990, id: 2439 }], // Sachs Huret ARIS New Success (the only New Success front; undated)
+    // 1985-86: AV 66.3 D (1986 Peugeot (US) Triathlon / Galibier); 1987-90: ARIS.
+    'huret new success': [{ from: 1985, to: 1986, id: 8960 }, { from: 1987, to: 1990, id: 2439 }], // Sachs Huret ARIS New Success (the only New Success front; undated)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 2462 }], // Competition / Triathlon: FD-1050 105
     'shimano 600ex': [{ from: 1987, to: 1987, id: 2481 }], // Road Ace / Record Ace: FD-6207 600EX (1984-87)
@@ -776,6 +783,11 @@ const COMPONENT_OVERRIDES = {
     'simplex sx061tsp': 4616, // PH 11: "SX 061 TSP" is the S061 T
     'simplex sx610tsp': 4631, // SX610 T (1981-85)
     'simplex sx810tsp': 4617, // SX810 T
+    'simplex sx810 tsp': 4617, // 1986 Peugeot (FR) table PH 13
+    'simplex s 061 tsp': 4616, // 1986 Peugeot (FR) table PH 11: S061 T
+    'simplex s061t tsp': 4616, // 1986 Peugeot (FR) table PH 15 T
+    'simplex sx1t sp': 7308, // 1986 Peugeot (FR) table P 10 L / PH 20 M: SX1 T
+    'simplex sx440 gt sp': 4622, // 1986 Peugeot (FR) table PH 153 T: SX440 GT version 1 (1985-86)
     'simplex sx410 gtsp': 4620, // SX410 GT
     'simplex slj5500cp': 7309, // SLJ5500 CP
     'simplex slga550cp': 7309, // GB table misprint of SLJA 5500 CP
@@ -783,6 +795,9 @@ const COMPONENT_OVERRIDES = {
     'simplex slj660tsp': 4655, // GB table PX 10 DU: misprint of SLJ 6600 TSP
     'simplex slj 6600 tsp': 4655, // 1985 Peugeot PY 10 FC (p. 3 caption)
     'shimano rd 6207': 4470, // 1985 Peugeot PX 10 SH: RD-6207, 600EX
+    'mavic 801 rear': 4338, // 1986 Peugeot (US) table PX: Mavic 801 (1986)
+    'shimano deore xt superplate rear': 4489, // 1986 Peugeot (US) table Canyon Express: RD-M700-SP, Deore XT (Superplate)
+    'huret new success rear': 4402,
     'campagnolo 1020/a': [{ from: 1982, to: 1984, id: 4126 }], // 1984 Peugeot PZ 10: Nuovo Record v4 (1982-84)
     'campagnolo 1020 a': [{ from: 1982, to: 1984, id: 4126 }],
     'simplex sx 610 tsp': 4631, // 1982 Peugeot PX 10 DU / PX 10 S: Simplex SX610 T (1981-85)
@@ -807,7 +822,8 @@ const COMPONENT_OVERRIDES = {
     'sun tour vx gt': [{ from: 1979, to: 1980, id: 4707 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour RD-2400, VX (GT) (1977-84)
     'suntour hero': [{ from: 1986, to: 1986, id: 4746 }], // 1986 Raleigh Record / Sportif / Capri / Grand Mesa: SunTour Hero (Version 1); a judgement, the row is dated 1987, one year later (Version 2 is undated)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
-    'huret new success': [{ from: 1987, to: 1987, id: 4412 }], // Sachs Huret ARIS New Success 1st Gen. (the only row dated 1987; 4402 is 1985, 4403 the 1980 touring)
+    // 1985-86: AR 47.1 D (1986 Peugeot (US) Triathlon / Galibier).
+    'huret new success': [{ from: 1985, to: 1986, id: 4402 }, { from: 1987, to: 1987, id: 4412 }], // Sachs Huret ARIS New Success 1st Gen. (the only row dated 1987; 4402 is 1985, 4403 the 1980 touring)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 4449 }], // Competition / Triathlon: RD-1050 105
     'shimano 600 ex': [{ from: 1981, to: 1981, id: 4468 }, { from: 1987, to: 1987, id: 4471 }], // 1981 Criterium: RD-6200 Arabesque short cage, 13/28T (1978-84; RD-6207 is 1984-86) // Road Ace: RD-6208 600EX SIS (1986-87)
@@ -1009,6 +1025,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 4487 }], // 1987 Colnago Master Mountain Bike: RD-MT60, Deore
   },
   Hubs: {
+    'shimano new 600 ex': 7551, // 1986 Peugeot (FR) table PG 10 SH: HB-6207F / HB-6207R (freewheel hubs; Helicomatic block)
+    'shimano new 600 ex; quick release': 7551, // 1986 Peugeot (FR) table PX 10 SH
     // 1982 Battaglin: Gipiemme Pista Special hub = Special Pista (1985 row; the 1982 sheet is earlier).
     'gipiemme pista special': [{ from: 1982, to: 1988, id: 3351 }],
     'luxe competition': 3389, // 1982 Peugeot PSV 10 S / PF 10 S: Maillard Normandy Luxe Competition (red label, low flange, 1970-80); flange and label not stated
@@ -1191,6 +1209,8 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'shimano br 6207': 970, // 1986 Peugeot (FR) table PG / PX 10 SH: BR-6207-49, the short-reach road caliper
+    'weinmann 506 alloy side pull': 7764, // 1986 Peugeot (US) table Ventoux: Weinmann AG 506
     // 1987 Colnago Junior SIS 600 (Catalogo generale 1987).
     'shimano 600 sis': [{ bike: 'Junior SIS 600', from: 1987, to: 1987, id: 972 }], // BR-6208, 600EX (1986-87)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
@@ -1444,7 +1464,10 @@ const COMPONENT_OVERRIDES = {
     'ofmega gran premio': 9160, // 1987 Bianchi Pista: Ofmega 3100, Gran Premio (row dated 1985)
     'spidel d8': 3117, // 1980 Peugeot PRO 10: Stronglight D8 Extra Leger (row dated 1981-83, as the 1979 S7 pick)
     'spidel d 8': 3117, // 1981 Peugeot PRO 10
-    'stronglight a9': 3112, // 1984 Peugeot: Stronglight A9 (France on locknut, 1984-85); the Spidel-locknut 3113 is the Spidel-badged one
+    'stronglight a9 alloy': 3112, // 1986 Peugeot (US) table: as 'stronglight a9'
+    'stronglight a9': 3112,    'stronglight a9': 3112, // 1984 Peugeot: Stronglight A9 (France on locknut, 1984-85); the Spidel-locknut 3113 is the Spidel-badged one
+    'stronglight b 10': 3114, // 1986 Peugeot (FR) table PGN 10 M / GOLD
+    'stronglight a 9': 3112, // 1986 Peugeot (FR) table PY 10 M / PRO 10 / PY 10 FC
     'stronglight b10': 3114, // 1984 Peugeot PSV 10 L / PS 10 L: Stronglight B10 (1984-86)
     'spidel 57': 3123, // 1982 Peugeot PY 10 S: table prints "Spidel 57", read as the S7 (Stronglight S7 Super Competition, 1981-83)
     'stronglight d6 titanium': [{ from: 1977, to: 1980, id: 3116 }], // 1978 Peugeot (NL) PY 10 CP: D6 Extra Leger
@@ -1528,6 +1551,10 @@ const COMPONENT_OVERRIDES = {
     // row 9528 added later would otherwise catch it by substring (drift check 2026-10-28).
     cotterless: null,
     'shimano 600 ex alloy 42 x 52t': 1798, // 1985 Peugeot PX 10 SH: FC-6207, 600EX
+    'shimano 600 ex 42 x 52 dural': 1798, // 1986 Peugeot (FR) table PG / PX 10 SH: FC-6207
+    'mavic 630 42 x 53': 1641, // 1986 Peugeot (US) table PX: Mavic 630 (narrow font, 1984-89)
+    'campagnolo super record 42 x 53t': 1509, // 1986 Peugeot (US) table PZ 10: 1049/A Strada Super Record
+    'campagnolo victory 42 x 52': 1516, // 1986 Peugeot (US) table Mont Cenis: 0355 Victory
     // 1984 Raleigh: Sugino DGT is the double GT crank (the triple is the TGT); the Sugino Vol. 56 spread lists DGT among the cranks (row 1937 ends 1982, the model was still listed c. 1982-83).
     'sugino dgt 52 42t steel rings': 1937, // Sugino GT
     'sugino dgt alloy cotterless 50 36t': 1937,
@@ -1845,6 +1872,7 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    'cinelli 65 benotto tape': 2804, // 1986 Peugeot (US) table PZ 10: Cinelli 65 Criterium
     // Judgement calls 2026-10-30. 1984 Peugeot (GB) PGN 10 US Routier / Paris-Nice: plain CTA (Weinmann 506 with
     // standard levers rules out the aero-cable CTA; steel would be named). 2782 dated 1984 on this catalogue.
     cta: [{ from: 1984, to: 1984, id: 2782 }], // ATAX CTA
@@ -1974,6 +2002,7 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    'cinelli ir': 6491, // 1986 Peugeot (US) table PZ 10: "IR" is the Cinelli 1R
     // Judgement calls 2026-10-30. Unqualified "Royal" = the base NRY (SL / ESL would be named); 7899 redated 1980 -> 1979.
     'sr royal': [{ from: 1979, to: 1982, id: 7899 }], // 1979 Raleigh Professional Mk V / Competition GS: SR NRY, New Royal
     // Branded AH stem = SR's base SR-AH (7902 redated to 1986 on these); bare "Alloy AH" (1985 Raleigh Pursuit) stays unlinked.
@@ -2073,6 +2102,7 @@ const COMPONENT_OVERRIDES = {
     'nitto mt1 4 bolt alloy clamp': 9412, // 1987 Raleigh Maverick 18 Pro: Nitto MT-1 (two-piece clamp MTB stem)
   },
   Shifters: {
+    'xt shift levers': 6158, // 1986 Peugeot (US) table Canyon Express: SL-M700, Deore XT
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'shimano santé': [{ from: 1987, to: 1989, id: 6190 }], // SL-5000
     'shimano deore xt sis': [{ from: 1987, to: 1989, id: 6159 }], // SL-M730
@@ -2231,6 +2261,9 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
   },
   Pedals: {
+    'shimano pd 6207 toe clips and straps': 3961, // 1986 Peugeot (FR) table PG 10 SH
+    'shimano dural pd 6207 toe clips and straps': 3961, // 1986 Peugeot (FR) table PX 10 SH
+    'campagnolo super light': 3716, // 1986 Peugeot (US) table PZ 10: the Super Record ("Super Leggero") road pedal, 4021
     // 1982 Battaglin: either/or cell (Cronospecial or Special) names two parts, so no link; Pista Special is the Special (Pista) pedal.
     'gipiemme cronospecial special': null,
     'gipiemme pista special': 3751, // Gipiemme Special (Pista)
@@ -2328,6 +2361,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1993, id: 3965 }], // 1987 Colnago Master Mountain Bike: PD-MT60 / PD-MT61, Deore
   },
   'Seat Posts': {
+    dural: null, // 1986 Peugeot (FR) table: bare material (8 bikes), not the 9962 Strata dural seat pillar
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 5742 }], // C0R2 (fitted to Athena and Croce d'Aune)
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
@@ -2463,6 +2497,7 @@ const COMPONENT_OVERRIDES = {
     'suntour z': [{ from: 1982, to: 1989, id: 7821 }], // 1987 Raleigh Maverick 18 Pro; as "Suntour Z Silver/Black" and "Gold" (TZ-6000)
     'sedisport black': [{ from: 1980, id: 1402 }], // 1987 Raleigh tourers; colour variant of 'sedisport' (1402 from 1980)
     'sedisport gold': [{ from: 1980, id: 1402 }], // 1983 Raleigh Team Replica 12
+    'sedisport silver': [{ from: 1980, id: 1402 }], // 1986 Peugeot (US) table: colour variant of 'sedisport', as 'sedisport black'
     // Bare "Sedisport": two rows now exist (8765 Sedis Sedisport 1979, 1402 Sedisport Delta 1980), so the matcher sees an ambiguity. 1402 is the pick already in the DB for
     // the 1984 Raleigh and 1987 Bianchi (Delta replaced the plain Sedisport from 1980), so 1980+ stays on it; earlier years keep the matcher result.
     'sedisport': [{ from: 1980, id: 1402 }],
@@ -2577,10 +2612,19 @@ const COMPONENT_OVERRIDES = {
     // "Freewheels" catalogue (data_source 103) has the 600 SH as the "original equipment model" and
     // the 700 SH as the "racing model", so a plain Helicomatic on a complete bike is the 600 SH. Rows
     // are dated 1982 only; ranged 1980-84 so the 1983 / 1984 bikes link (a year or two off, as before).
-    // The 1985 Peugeot catalogue prints the same two 6-speed wordings, so those two run to 1985.
-    'maillard helicomatic 6 speed 13 21': [{ from: 1980, to: 1985, id: 8131 }],
+    // The 1985 and 1986 Peugeot catalogues print the same wordings, so these run to 1986.
+    'maillard helicomatic 6 speed 13 21': [{ from: 1980, to: 1986, id: 8131 }],
     'maillard helicomatic 6 speed 13 24': [{ from: 1980, to: 1984, id: 8131 }],
-    'maillard helicomatic 6 speed 14 24': [{ from: 1980, to: 1985, id: 8131 }],
+    'maillard helicomatic 6 speed 14 24': [{ from: 1980, to: 1986, id: 8131 }],
+    'maillard helicomatic 6 speed 13 21 zinc plated': [{ from: 1980, to: 1986, id: 8131 }], // 1986 Peugeot (FR) table
+    'maillard helicomatic 5 speed 14 21 zinc plated': [{ from: 1980, to: 1986, id: 8130 }], // 1986 Peugeot (FR) table PH 513
+    // 1986 Peugeot (US) table: bare "Helicomatic" with its sprockets, the same 600 SH
+    'helicomatic 6 speed 13 x 14 x 15 x 17 x 19 x 21t silver': [{ from: 1980, to: 1986, id: 8131 }],
+    'helicomatic 6 speed 13 x 15 x 17 x 19 x 21 x 24t silver': [{ from: 1980, to: 1986, id: 8131 }],
+    'helicomatic 6 speed 13 x 15 x 17 x 19 x 22 x 26t silver': [{ from: 1980, to: 1986, id: 8131 }],
+    'helicomatic 6 speed 13 x 15 x 17 x 20 x 24 x 28t': [{ from: 1980, to: 1986, id: 8131 }],
+    'helicomatic 6 speed 14 x 15 x 17 x 19 x 21 x 24t': [{ from: 1980, to: 1986, id: 8131 }],
+    'atom 6 speed helicomatic 13 x 15 x 17 x 20 x 24 x 28t': [{ from: 1980, to: 1986, id: 8131 }],
     'maillard helicomatic 13 14 15 17 19 21': [{ from: 1980, to: 1984, id: 8131 }],
     'maillard helicomatic 13 15 17 20 24 28': [{ from: 1980, to: 1984, id: 8131 }],
     'maillard helicomatic 14 16 18 20 23 26': [{ from: 1980, to: 1984, id: 8131 }],
@@ -2588,7 +2632,7 @@ const COMPONENT_OVERRIDES = {
     'maillard helicomatic gold 14 15 17 19 21 24t': [{ from: 1980, to: 1984, id: 8131 }], // 1984 Raleigh Record Sprint 12
     'maillard helicomatic silver 14 15 17 19 21 24t': [{ from: 1980, to: 1984, id: 8131 }], // 1984 Raleigh Quasar 12
     '6 speed sh 13 21': [{ from: 1980, to: 1984, id: 8131 }], // 1984 Peugeot (GB) PX 10 DU
-    'maillard helicomatic 5 speed 14 24': [{ from: 1980, to: 1984, id: 8130 }], // 600 SH 5-speed
+    'maillard helicomatic 5 speed 14 24': [{ from: 1980, to: 1986, id: 8130 }], // 600 SH 5-speed
     'maillard helicomatic 5 speed 14 28': [{ from: 1980, to: 1984, id: 8130 }],
     'maillard 700 sh 13 14 15 17 19 21': [{ from: 1980, to: 1984, id: 8132 }], // 1983 Peugeot (NL) PX 10 Du: 700 SH 6-speed compact
     '600 sh 14 24': 8131,
@@ -2707,6 +2751,10 @@ const COMPONENT_OVERRIDES = {
     'suntour accushift plus silver 12 30t 7 speed': [{ from: 1990, to: 1990, id: 1222 }], // SunTour CS-AP00-S7U, XC Pro
   },
   Tyres: {
+    'michelin hi lite comp 700 x 20c': 6835, // 1986 Peugeot (US) table Galibier
+    'michelin hi lite pro 700 x 20c': 6836, // 1986 Peugeot (US) table Mont Cenis (row dated 1988 only)
+    'michelin hi lite road 700 x 23c': 9498, // 1986 Peugeot (US) table Triathlon / Ventoux (row dated 1988 only)
+    'michelin hi lite road 27 x 1 1 8"': 9498, // 1986 Peugeot (US) Tourmalet
     // 1975 Motobecane Le Champion: the only Gran Turismo tubular row (judgement call 2026-10-30; maker not printed).
     'gran turismo tubulars': [{ from: 1974, to: 1978, id: 9056 }], // Vittoria Granturismo
     // 1970 Raleigh Professional Mk II: Clement's standard road silk of 1970 (6769 "Clement Seta" is a 1974-85 stub).
@@ -2769,6 +2817,9 @@ const COMPONENT_OVERRIDES = {
   Rims: {
     // 1985 Peugeot: bare wheel size, not the 1970 Femco 700 c rim the substring match found.
     '700 c': null,
+    'mavic gp4 anodized grey': 5069, // 1986 Peugeot (US) table PZ 10
+    'mavic gp4 tubular': 5069, // 1986 Peugeot (US) table PX
+    'mavic ma 40 w stainless spokes': 5077, // 1986 Peugeot (US) table Mont Cenis
     // 1987 Colnago Master America: either / or, don't pick one.
     'campagnolo victory or ambrosio metamorphosis servizio corse black anodized': null,
     // 1982 Battaglin: Nisi rims printed without their five-digit codes (rows 00250 and 00218).

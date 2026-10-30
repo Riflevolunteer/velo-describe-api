@@ -633,6 +633,50 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   Solida / Nervar cranks, Mondialita saddles, Vitus 983 post, brand-only Simplex / Huret / Maillard / Stronglight.
 - Regression: all 63 other catalogues' link counts unchanged.
 
+## 1986 Peugeot — `1986_peugeot_spec.csv` (FR, data_source 309: 32 bikes, 428 specs, 81 linked) and `1986_peugeot_us_spec.csv` (US, data_source 310: 16 bikes, 310 specs, 81 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1986.html (34 images, loaded 2026-10-30).
+  Images 1-13 (1000 px, bikeboompeugeot.com watermark): French "Gamme Course" (a01 cover, a02-a05 photos with
+  captions, a06-a07 racing spec table, a08 back cover) and sport / ville pages (a09 photo, a10 and a13 town, a11-a12
+  sport, prose). Blogger "CATALOGUES CYCLES PEUGEOT 1986 (1-22)", no (16): (1)-(2) two Dutch "Racefietsen" pages (PY 10
+  FC 4199,-, PX 10 SH Puymorens 1899,-; they cite "complete specificaties pag. 19-20", not present) — not loaded;
+  (3)-(22) US "Peugeot 1986 Brochure" (www.PeugeotShow.com), contents p. 2, model pages, specification table on
+  (18)-(21), warranty (22). Both transcribed by Sonnet subagents; a07 and US (18) spot-checked at full size.
+- FR loaded: table PH 15 T, PH 153 T (ladies), P 10 L, P 10 S 'Avoriaz', P 10 LS, PH 10 LS, PH 13, PH 11, PH 20 M
+  'Jubilé', PH 501 'Ventoux', PH 513 (new, Haubtmann 100 triple), PGN 10 M, GOLD (PGN 10 M in black with gold
+  equipment, footnote (1)), PG 10 SH (new, Shimano 600 EX, clinchers), PSV 10 M, PX 10 SH 'Puy-Morens', PY 10 M, PRO 10,
+  PY 10 FC 'Racing Team'; sport PH 8 SL, P 8 L, PH 8 M, P 18 L, PH 18 M, PH 18 SL, P 15, PL 65 / PL 60 'Force 8' (new,
+  8-speed, bar-end shift), PH 65, PH 60, PXR 80 (new, Reynolds 501, cantilevers, racks), PX 80. Printed as-is and
+  left unlinked: PSV 10 M headset "Shimano B 10" (Stronglight B 10 elsewhere in the table), PY 10 M front "Simplex
+  SLJA 22". Subagent "[?]" marks dropped on P 10 S "Solida mixte" (as 1985), PH 11 chain "nickel-plated", post "fluted".
+- US loaded: PZ 10 (Campagnolo Super Record, Reynolds 531 SL), PX (Columbus SLX, all Mavic 801 / 810 / 820 / 630 /
+  310 / 350 / 360 / 410 / 640), PSN 10 Mont Cenis, Triathlon, PGN 10 Galibier, PH 501 Ventoux, PH 10 LE Tourmalet;
+  sport P 8 / P 18 C Avoriaz, P 6 / P 16 Iseran, P 4 / P 14 Corbier (one table column per pair, split into two bikes
+  with their own sizes; drop bars with foam covers per the photos); ATB Canyon, Orient, U.S. Express. Table quotes
+  ('Michelin "Hi Lite Pro," 700 x 20c') and trailing full stops stripped in the CSV.
+- Not loaded: FR town a10 (PH 40 M, PVD 02, PVD 40, PRP 20, PVD 05, P 45, PH 45, PH 45 S, PVD 45, PVC DT 'Dorotennis')
+  and a13 (V 30 F, V 35 F, VH 35, VH 35 P, V 25 L, V 45); PGN 10 T 'Triathlon' (a03 caption, frame and fork only); the
+  a11 PH 15 T prose (10-speed, 700 x 23) conflicting with its a06 table row (6-speed 14-28, 700 x 22 C). US CY10FC
+  (carbon frameset, geometry only); commuting City / Urban Express, cruisers Pipeline 1 / 5, P 20 Folding; children's
+  and BMX C 46 / M 46, CP 16, CP 20, CPX 50, CPX 99, CPX 100, Ranger Express.
+- Overrides (US): 'mavic 801 rear' -> 4338, 'mavic 630 42 x 53' -> 1641, Deore XT front 2497 / Superplate rear 4489 /
+  'xt shift levers' 6158, Campagnolo SR crank 1509, Victory crank 1516, 'campagnolo super light' pedals -> 3716 (the SR
+  "Super Leggero"), 'cinelli 65 benotto tape' -> 2804, 'cinelli ir' -> 6491 1R, 'weinmann 506 alloy side pull' -> 7764,
+  'stronglight a9 alloy' -> 3112, GP4 / MA 40 rims, Michelin Hi-Lite Comp 6835 / Pro 6836 / Road 9498, 'sedisport
+  silver' -> 1402 (from 1980, as black), six bare "Helicomatic ..." wordings -> 8131 (1980-86). "Huret New Success"
+  front / rear gain a 1985-86 range (8960 AV 66.3 D / 4402 AR 47.1 D) ahead of the 1987+ ARIS ranges.
+- Overrides (FR): Simplex 'slja 422' 7263, 'slja 522' range to 1986, 'sx a 33' 7312, 'sxa32 (parallelogram)' 2578,
+  's 061 tsp' / 's061t tsp' 4616, 'sx810 tsp' 4617, 'sx1t sp' 7308, 'sx440 gt sp' 4622 (v1 1985-86); 'stronglight a 9'
+  3112, 'b 10' 3114; Shimano '600 ex 42 x 52 dural' 1798, 'new 600 ex' hubs 7551, PD-6207 3961, 'shimano br 6207' 970
+  (BR-6207-49 short reach: a judgement, the 57 is 971); Helicomatic 6-speed 13-21 / 14-24 and 5-speed 14-24 ranges to
+  1986 plus the "zinc-plated" wordings. Seat Posts bare 'dural' -> null (was hitting 9962 Strata dural seat pillar;
+  regression -1 on 1973 Zeus and -2 on 1984 Peugeot regenerations, neither link was in the DB).
+- Left unlinked: Stronglight 200, Thun Coronado / Haubtmann / Nervar / Solida cranks, Maillard / Atom CX pedals,
+  Weinmann 500 / 610 variants, CLB, Mondialita, Bador, Vetta, Italmanubri, Rigida, Atom / Maillard / Sanshin / Suzue
+  hubs, SunTour XC, Sugino, Huret Club 2, brand-only cells. "Weinmann 405" (FR) takes 1117 by exact title; see the
+  491 / 1117 duplicate lead in TODO.
+- Regression: all other catalogues unchanged apart from the two bare-"Dural" seatpost drops above.
+
 ## Link pass from /linkCoverage — 2026-10-24
 
 - 1982 (NL) "Sedisport, 114 links, Delta treated" (5) -> 1402 Sedis Sedisport Delta, as the 1980 108-link value. 1984 (FR 3, GB 2) bare "Turbo" saddle -> 5508 Selle Italia Turbo (ranged 1980-90). +10 links; no other catalogue changed.
