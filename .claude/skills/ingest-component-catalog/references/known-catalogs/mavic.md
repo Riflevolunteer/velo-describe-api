@@ -418,3 +418,19 @@ Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
 - Added (1991-1991, user's call to use this secondary source): 9970 Mavic M 281, 9971 Mavic M 281 CD,
   9972 Mavic M 231 Ceramic (the only rows missing from the DB). Everything else matched; no updates.
 - If a Mavic catalogue turns up for 1991-92, check these three for wider years and a maker's weight.
+
+## Mavic "Les 92" leaflet (1992) — labibleduvelocataloguesmavic "MAVIC 1992", data_source id 304
+
+- Source: https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1992.html, 6 JPGs ("MAVIC 1992
+  (1-6)", 1453 x 2048, FR / EN / IT): cover "MAVIC LES 92" (571 hubs and the 3G wheel), 571 road
+  freehub (new, raced in the 1991 Tour de France by RMO, Lotto, ONCE; 4 stage wins), its 8-speed
+  cogs and spec table, 577 MTB freehub (parts interchangeable with the 571), 501 / 531 hubs ("the new
+  501 and 531", from the 500 series, flanges 45 mm apart), 451 brakes (tested in the 1991 Tour).
+- None of these is in the complete 90/91 trade catalogue (source 121: 440 brakes, 500 / 530 / 550
+  hubs), so the velobase decade buckets were moved later on the leaflet's "new" / 1991-Tour dating.
+- year_from moved later (old value): 1192 Mavic 571 cassette 1990 -> 1991; 3399 Mavic 501 hub
+  1990 -> 1992; 3402 Mavic 531 hub 1990 -> 1992; 856 Mavic 451 brake 1980 -> 1991; 365 Mavic 451
+  lever 1989 -> 1991. year_to -> 1992 on 1192, 3399, 3402, 856 (365 kept 1993).
+- Dated from undated stubs: 3403 Mavic 571 hub NULL -> 1991-1992; 3405 Mavic 577 NULL -> 1992-1992.
+- Descriptions rewritten on all seven (velobase "(Spec)" weights kept on 3399 / 3402 / 856 / 365).
+  No bike links or overrides on any of them. 6970 3G Carbon (1992) on the cover matches.
