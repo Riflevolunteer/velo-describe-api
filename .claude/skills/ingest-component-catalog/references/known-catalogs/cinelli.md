@@ -57,3 +57,19 @@
 - Left: Mod. 66 drop / reach reads ~154 / 88 on B against 156 / 90 in the 1982 entry (scan too
   small to overrule); 9083 Unicanitor 65 and 5337 Mod. 55 already match. The bike generator's
   bare 'unicanitor' override stays ranged 1950-76 on 5326.
+
+## labibleduvelocataloguescinelli.blogspot.com "CINELLI 1985" (p/cinelli-198x.html) — checked 2026-10-30, no new source
+
+- 19 images (s0 ~1500 x 2048): CINELLI 198X (4) = the Ten Speed Drive Imports bike brochure (850
+  / 830 / 840 / 860, SLX Super Corsa framesets), already the 1986 Cinelli bike catalogue (source
+  45); ACC (6) = workshop and truing stands Art. 60 / 61 / 62 / 70 / 76 / 77 / 82 / 84, out of
+  scope; EQU (8) = Il Grande Ciclismo, the 1982 printing of source 23 (Merckx / Hinault cover,
+  CMX stem on the component spread, bar table Mod. 63-67 only), plus lugs, shells, clothing,
+  helmets, tandem; last image a 1985 "Progetto Laser" design article. Do not re-check.
+- Settles the two printings of Il Grande Ciclismo: 1982 (this page; Hinault) and c. 1984 (the
+  cinellionly Dale Brown copy; Fignon / Renault-Elf cover, Volare on the spread, adds Mod. 62
+  Texas and 65/AIR, Mod. 64 / 65 gain 42 cm, Mod. 66 gains 44 cm). Column B of the bar table is
+  drop, C is reach; the 2026 "1982 Cinelli brochure" notes had them swapped.
+- Rewritten (source_ref 23, no year changes): 2802 Mod. 64, 2804 Mod. 65, 2806 Mod. 66 (widths
+  per printing named inline, drop / reach corrected), 2808 Mod. 66 early logo 2 and 2812 Mod. 67
+  (drop / reach corrected only).
