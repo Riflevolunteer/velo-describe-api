@@ -18,7 +18,6 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/maillard.md](known-catalogs/maillard.md) — Maillard (4 entries)
 - [known-catalogs/huret.md](known-catalogs/huret.md) — Huret / Sachs-Huret (4 entries)
 - [known-catalogs/le-cyclo.md](known-catalogs/le-cyclo.md) — Le Cyclo (3 entries)
-- [known-catalogs/cyclo-pedia.md](known-catalogs/cyclo-pedia.md) — Gene Portuesi's Cyclo-Pedia, US multi-brand retailer (1 entry)
 - [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (2 entries)
 - [known-catalogs/sakae-ringyo.md](known-catalogs/sakae-ringyo.md) — Sakae Ringyo / SR (6 entries)
 - [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (1 entry)
@@ -49,7 +48,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/takagi.md](known-catalogs/takagi.md) — Takagi (1 entry)
 - [known-catalogs/tange.md](known-catalogs/tange.md) — Tange (1 entry)
 - [known-catalogs/kkt.md](known-catalogs/kkt.md) — KKT / Kyokuto (1 entry)
-- [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands (velobase title-fixup conventions, etc.)
+- [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands: multi-brand retailer and importer catalogues (Palo Alto, Bikecology, Holdsworth, Cyclo-Pedia, Ron Kitching, Ten Speed Drive, Bike Warehouse), La Bicicletta guides, dedupe passes, velobase title-fixup conventions
 - [known-catalogs/roto.md](known-catalogs/roto.md) — Roto (1 entry)
 
 When a new brand shows up for the first time, create
