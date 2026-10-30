@@ -568,6 +568,8 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'huret rider 3 pl': 8962, // 1987 Peugeot (FR) Saint-Bernard: Sachs Huret Rider / Duopar triple front (// linkCoverage pass 2026-10-30)
+    'suntour lepree': 2637, // 1986 Raleigh Technium 480: SunTour FD-3400, LePree
     'huret rival av: 62 1d': 8961, // 1987 Peugeot (FR) table: Sachs Huret AV 62.1 D, Rival (part number printed)
     'huret rival white av: 62 1d': 8961, // 1987 Peugeot (FR) table Triathlon: as above
     'shimano fd 105': [{ from: 1987, to: 1989, id: 2462 }], // 1987 Peugeot (FR) Aspin: FD-1050 (SIS 105), not the 1985-86 Golden Arrow A105
@@ -790,6 +792,9 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
+    'huret rider': 8958, // 1986 Raleigh Teton: Sachs Huret AR 46.1 T, Rider, the only dated Rider rear (// linkCoverage pass 2026-10-30)
+    'huret rider gt sp': 8958, // 1987 Peugeot (FR) Saint-Bernard
+    'shimano z501': 4544, // 1986 Raleigh Pursuit: Shimano RD-Z501, Z-Series
     'huret rival ar: 41 1d': 8957, // 1987 Peugeot (FR) table: Sachs Huret AR 41.1 D, Rival (part number printed)
     'huret rival white ar: 41 1d': 8957, // 1987 Peugeot (FR) table Triathlon: as above
     'shimano rd 105': [{ from: 1987, to: 1989, id: 4449 }], // 1987 Peugeot (FR) Aspin: RD-1050, 105 SIS
@@ -1248,6 +1253,10 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'mafac special tandem cantilevers front and rear maillard 80 mm rear drum': 845, // 1982 Peugeot TH 8 / TM 8: MAFAC Cyclo-Tandem (// linkCoverage pass 2026-10-30)
+    'mafac "special cyclo tandem" cantilevers front and rear maillard rear drum brake': 845, // 1980 Peugeot TH 8 / TM 8
+    'modelo speedy black side pull': 886, // 1987 Peugeot (US) Mont Cenis: Modolo Speedy (misprinted Modelo; black is a finish)
+    'shimano at50 cantilever': 1003, // 1986 Raleigh Elkhorn: Shimano BR-AT50, Exage Trail
     'weinmann 570': 1129, // 1987 Peugeot (FR) table: Weinmann AG 570
     'weinmann 570 side pull': 1129, // 1987 Peugeot (FR) table
     'weinmann 570 white': 1129, // 1987 Peugeot (FR) table
@@ -1510,6 +1519,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 978 }], // 1987 Colnago Master Mountain Bike: BR-MT60 (the MT61 979 is the other Deore cantilever; MT60 as the base model)
   },
   Headsets: {
+    'a9 sealed stronglight': 3112, // 1987 Peugeot (US) Galaxie: Stronglight A9, as 'stronglight a9' (// linkCoverage pass 2026-10-30)
     'shimano 6400': [{ from: 1987, to: 1994, id: 3087 }], // 1987 Peugeot (FR) Puymorens: HP-6400
     'stronglight a9h': 3112, // 1987 Peugeot (FR) table: A9 H(eadset), as 'stronglight a9'
     // 1982 Battaglin: Gipiemme Cronospecial headset (the 1985-88 row; the 1982 sheet is earlier) and the Pista Special headset.
@@ -2065,6 +2075,10 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    'suntour xc stem': 6695, // 1986 Peugeot (US) Canyon Express: SunTour MS-1400, XC (1984-88) (// linkCoverage pass 2026-10-30)
+    'cta dural': 6452, // 1987 Peugeot (FR) Comète: ATAX CTA (XA style)
+    'atax asc dural': 8507, // 1987 Peugeot (FR) Santé: ATAX ASC, Aerodynamic (row widened to 1987)
+    'atax asc h dural': 8507, // 1987 Peugeot (FR) Chorus / Perthus: ASC H, taken as an ASC version
     'alloy ah': null, // 1985 Raleigh Pursuit: no maker printed
     'atax asc anodised': 8507, // 1986 Peugeot (FR) PY 10 FC: ATAX ASC, Aerodynamic
     'dural atax asc': 8507, // 1986 Peugeot (FR) PRO 10
@@ -2334,6 +2348,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
   },
   Pedals: {
+    'campagnolo gran sport reflector with toe clips and straps': 3688, // 1981 Raleigh Competition GS: Campagnolo 3700, (Nuovo) Gran Sport (// linkCoverage pass 2026-10-30)
     'campagnolo chorus; toe clips; straps': 3700, // 1987 Peugeot (FR) Chorus
     'campagnolo victory; toe clips; straps': 3720, // 1987 Peugeot (FR) Dolomites: 405/000 Victory
     'shimano 105; toe clips; straps': 3953, // 1987 Peugeot (FR) Galaxie / Aspin: PD-1050
@@ -2568,6 +2583,10 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    'sedis 110 links delta treated': 1402, // 1980 Peugeot PX 18 M / MC, PK 65: Sedisport Delta (// linkCoverage pass 2026-10-30)
+    'sedisport black 1 2 x 3 32': [{ from: 1980, id: 1402 }], // 1987 Peugeot (US): as 'sedisport black'
+    'sedisport silver 1 2 x 3 32': [{ from: 1980, id: 1402 }], // 1987 Peugeot (US): as 'sedisport silver'
+    'sedisport nickel plated': [{ from: 1980, id: 1402 }], // 1986-87 Peugeot: finish variant of 'sedisport'
     'regina extra super corsa': 1376, // 1978 Bianchi Rekord 745: Regina Extra 50 Corsa, the Extra race-grade chain (a judgement, 2026-10-30)
     'regina extra super corsa 1 2" x 3 32"': 1376, // 1981 Bianchi Sprint / Rekord Strada
     'shimano deore': null, // 1987 Peugeot (FR) Normandie: the hit is the 1990s Deore LX chain
@@ -2690,6 +2709,7 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 13 30t 7 speed': [{ from: 1993, to: 1993, id: 1195 }], // Ibex / Osprey / Project 5 / Project 3, all Exage LT / ES: CS-HG50
   },
   Freewheels: {
+    'suntour pn 6s 6 speed 14 x 17 x 21 x 24 x 28 x 32t silver': 7813, // 1986 Peugeot (US) Canyon Express: SunTour PN-6000 / PS-6000, Perfect (6-speed) (// linkCoverage pass 2026-10-30)
     '6 speed 13x21 helicomatic': [{ from: 1980, to: 1987, id: 8131 }], // 1987 Peugeot (FR) table: bare Helicomatic = 600 SH, as 1986
     '6 speed 13x24 helicomatic': [{ from: 1980, to: 1987, id: 8131 }], // 1987 Peugeot (FR) table
     '6 speed 14x24 helicomatic': [{ from: 1980, to: 1987, id: 8131 }], // 1987 Peugeot (FR) table
