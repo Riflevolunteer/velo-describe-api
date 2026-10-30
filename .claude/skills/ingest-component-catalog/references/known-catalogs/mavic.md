@@ -405,3 +405,16 @@ Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
   anatomic under-bar levers adjustable to all positions; 845 rear 250 g, 875 front 110 g, 825 shifters
   160 g. All three already match 4345 / 8195 / 6085 (source 121, years 1990-91/92). No data_source row
   created, no SQL. The rest of the guide is not on the page; do not re-check.
+
+## French buyer's guide, Mavic ATB pages (1991) — labibleduvelocataloguesmavic "MAVIC 1991", data_source id 303
+
+- Source: https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1991.html, one JPG (1024 wide,
+  proxied from bibibike.forumserv.com 1991-4d2cec1.jpg): pp. 100-101 of a French 1991 magazine buyer's
+  guide (publisher not shown), Mavic's ATB range: 315 / 316 / 317 headsets, 616 RD BB, ATB hubs (505 g
+  the pair), 875 front 110 g, 825 shifters 160 g, 845 rear 250 g, 637 Zicral crankset, seatpost, and a
+  "Jantes Mavic VTT 26" table: Oxygen M6 / M6 CD 30 mm 490 g, Energy M7 CD 26 mm 580 g, Rando M4 26 mm
+  550 g, Rando M5 32 mm 500 g, MA 40 MB 20.5 mm 400 g, P.S.P. M 231 / CD 23 mm 410 g, M 261 / CD 26 mm
+  460 g, M 281 / CD 28 mm 520 g, M 231 Ceramic 23 mm 410 g; plus the ceramic coating's three claims.
+- Added (1991-1991, user's call to use this secondary source): 9970 Mavic M 281, 9971 Mavic M 281 CD,
+  9972 Mavic M 231 Ceramic (the only rows missing from the DB). Everything else matched; no updates.
+- If a Mavic catalogue turns up for 1991-92, check these three for wider years and a maker's weight.
