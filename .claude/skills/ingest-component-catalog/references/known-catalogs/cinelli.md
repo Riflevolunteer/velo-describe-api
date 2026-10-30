@@ -23,3 +23,37 @@
   2800 26.0 clamp 1990; Cinelli_10_Speed_Drive.pdf in Downloads not yet
   processed.
 
+
+## Cinelli catalogue (c. 1984) — cinellionly.blogspot.com "1980s Catalog" label, `data_source` 296
+
+- Source: https://cinellionly.blogspot.com/search/label/1980s%20Catalog, three posts. Two
+  documents: (A) Part I / II (2016, scans credited to Fabio), 20 page JPGs (s0 = 1454 x 2048),
+  via Folli 45 Milano, five languages, no year printed; (B) 2011 post (Dale Brown scans, 8 pp,
+  1024 x 768 max), a copy of the Il Grande Ciclismo brochure (source 23).
+- Dating of A (user's call): c. 1984 from contents. TOUR saddle naming and Model C (Kitching
+  1984 has Model C), no Volare and no Mod. L, CMX BMX line (CMX stem attested 1982).
+- A, pages read: 03 bmx retro (CMX saddle, stem, seat pillar), 14 selle retro (saddle range).
+  Skipped as out of scope: 01-02 accessories and shoes / cleats (mod. 1000, Uniblock), 05-06
+  Laser frames, 07-08 gloves, 09-10 Ergal toe clips and Binda straps, 11-12 helmets, 15-18
+  Supercorsa pista / strada frames, 19-20 bags; 04 and 13 are photo pages.
+- Saddle range in A: Model A (Mod. 50 black plain, Mod. 55 black perforated, Mod. CMX blue /
+  yellow / red perforated); Model 65 (65/N black buffalo, 65/C black chamois, 65/CM black
+  calf); TOUR (steel frame, Rilsan shell, closed-cell foam padding: TOUR 2 chamois, TOUR 3
+  buffalo in 13 colours, TOUR 4 calf); Model C (as TOUR, repeated-mark cover, black or brown).
+- Added: 9922 Cinelli Mod. CMX (Model A) saddle, 9923 Cinelli CMX seat pillar (Seat Posts),
+  both 1984.
+- Years: 5326 Unicanitor Mod. 50 year_to 1976 -> 1984; 5335 Unicanitor #3 Buffalo Hide
+  year_to 1983 -> 1984; 7098 CMX stem year_to 1982 -> 1984. No year_from moved.
+- Descriptions rewritten (source_ref -> 296): 5326 (Model A); 5332 / 5335 / 5333 Unicanitor
+  #2 / #3 / #4 = TOUR 2 / 3 / 4 (titles kept; the "1982 Cinelli brochure:" fragments dropped);
+  9367 Model C; 7098 CMX stem: the old text said "two-bolt front clamp", the catalogue says
+  four allen bolts in stainless threads (old text: "Short alloy stem with a two-bolt front
+  clamp, pictured with the clamp halves separate. Il Grande Ciclismo brochure, 1982.").
+- From B (source_ref -> 23, no year moves; user's call to treat it as an undated later copy,
+  since the 1982 entry lists only Mod. 63-67): bar table adds Mod. 62 "Texas" (40 / 42 cm) ->
+  2816 Cinelli 62 Los Angeles (description now names both), and Mod. 65/AIR "Criterium
+  Ovalizzata" (40 cm, drop 147, reach 77) -> 9369 Cinelli Aero (kept 1984). Table columns:
+  B = drop, C = reach.
+- Left: Mod. 66 drop / reach reads ~154 / 88 on B against 156 / 90 in the 1982 entry (scan too
+  small to overrule); 9083 Unicanitor 65 and 5337 Mod. 55 already match. The bike generator's
+  bare 'unicanitor' override stays ranged 1950-76 on 5326.
