@@ -47,6 +47,8 @@ Weakest on 2026-10-28: Tyres 24%, Handlebars 30%, Saddle 32%, Rims 33%, Seatpost
 - **Persist do-not-link decisions**: `COMPONENT_OVERRIDES` `null` entries live only in the generator, so values decided on (e.g. "Selle Royal Aero Black") still list as actionable. Leaning towards a nullable `bike_spec.link_status` the generator writes.
 - The generic word list is a judgement call: check the unbranded bucket now and then for words to add.
 
+- MAFAC overrides (2026-10-30): 'mafac racer', 'mafac competition' and the Course-lever variants are ranged to 1980 on 838 / 825, but the c. 1982 catalogue (source 299) extends both rows to 1982; widen the ranges if 1981-82 bike specs carry those values.
+
 ### Policy questions
 
 - House-brand tyre rows: 35 named house tyres (18 Raleigh tubulars, 12 Peugeot tubulars, 5 Bianchi Dakar / Advantage-SL) would link only if we add house-brand rows sourced from the bike catalogues themselves (they print name and weight).

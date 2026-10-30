@@ -254,3 +254,34 @@
   enveloping hood); 355 Course 130 vs 346 Promotion (with quick release) (78 g both, promotion
   bracket; the 1980 page names no QR). 357 "Course 419 / 429" carries the 1976 dural CB / RMT
   lever description, which is 126 / 127 in the 1980 code; left (9 links, override 'mafac course').
+
+## MAFAC catalogue (c. 1982) — labibleduvelocataloguesmafac page slug "mafac-1979" (titled MAFAC 1982), data_source id 299
+
+- Source: https://labibleduvelocataloguesmafac.blogspot.com/p/mafac-1979.html: the URL says 1979 but
+  the page title and the 40 JPGs ("CATALOGUES MAFAC 1982 (1-40)", s0 = 1237 x 1750 portrait) are the
+  c. 1982 catalogue, trilingual FR / EN / DE, the first as a member of the SPIDEL group. No year is
+  printed; c. 1982 from the blog and the LSX. Printed page = scan - 2; scan 3 is the contents.
+- Pages: 4 LSX, 5 LS2, 6 GT, 7 Compétition anodisé (Cn A), 8 2000, 9 LC-GL, 10 Compétition (GL), 11
+  Racer, 12 LC-L, 13 Raid, 14 S, 15 Critérium, 16 Tandem, 17 technical features table (stirrup refs,
+  reach H, weights); levers 18 PRO, 19 429, 20 435, 21 218, 22 227, 23 110, 24 130, 25 150, 26 611, 27
+  825, 28 710; out of scope 29 tool-kits, 30 shoes, 31 self-lubricating cables, 32 holders, 33-34 pivot
+  brazing; 35 brake set compositions, 36 (scans 38-39) lever codes and collars; scan 40 back cover.
+  Transcribed by two Sonnet subagents.
+- New vs 1980: LSX (Zicral pro side-pull, reach 40-50, 140 g, with the PRO lever), PRO lever (112 g),
+  LC-GL (super de luxe side-pull with QR, 168 g, with 218) beside LC-L; compact stirrups on every
+  stirrup brake (GT O-A 5551E, Cn O-A 3551E, M O-A 3551E, Cn O-GL / RO / SO 4551E); PRO MAFAC shoes;
+  gold anodised Competition A and black anodised LS2. Sets: LSX + PRO, LS2 / GT A / Cn A / M A + 429,
+  LC-GL + 218, Cn + 117, R-GL + 116, Rd-GL + 116, R-L / Rd-L / S.L / LC-L + 110 (1980: 127, 126, 120).
+- Dropped vs 1980 (absence only): Guidonnet GDA (8378 stays year_to 1980); the 710 page still
+  shows the forged VF second view.
+- Updated (source_ref -> 299): descriptions on 823 LSX (was the velobase "140 grams (Spec)" stub),
+  834 LS2, 830 GT, 352 Competition A (reach figures and compact stirrups); 832 retitled "MAFAC LC" ->
+  MAFAC LC-L (search_text with it). year_to -> 1982 on brakes 823 (already), 834, 830, 352, 836, 825,
+  838, 843, 844, 829, 845, 832 and levers 357, 347, 356, 9965, 9966, 355, 8797, 8379, 343, 351, 8377.
+- Added (1982-1982): 9967 MAFAC LC-GL (Brakes), 9968 MAFAC PRO (Brake Levers).
+- Title tidy, no source change: 840 Racer first version, double space after "oil holes;" removed.
+- Not changed: GT T-A printed 169 g with pivots (likely a misprint; 1980 gave 140 g, kept);
+  levers 116 / 117 (resin-bracket versions in the set table) have no rows.
+- Open (bike side): overrides 'mafac racer' / 'mafac competition' (and the Course-lever variants)
+  are ranged to 1980 on 838 / 825, so 1981-82 bike specs with those values stay unlinked; widen
+  them in a bike link pass if wanted.
