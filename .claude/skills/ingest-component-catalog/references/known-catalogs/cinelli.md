@@ -74,8 +74,8 @@
   per printing named inline, drop / reach corrected), 2808 Mod. 66 early logo 2 and 2812 Mod. 67
   (drop / reach corrected only).
 
-## Ron Kitching catalogue (1960) — see kitching.md (`data_source` 297)
+## Ron Kitching catalogue (1960) — see cross-catalog-notes.md (`data_source` 297)
 
 - The labibleduvelo "CINELLI 1960" page is Kitching 1960 excerpts; Cinelli rows from it (1960 bar
   numbers 11-18, stems No. 1 / 2 / 3, Super Corsa crank, Special BB and headset, chrome pillar) are
-  recorded in kitching.md.
+  recorded in cross-catalog-notes.md.
