@@ -132,7 +132,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1982|peugeot', 'FR'], // "Peugeot 1982. Une bonne odeur de velo."; the Dutch Peugeotboek is 1982_peugeot_nl_spec.csv
   ['1984|peugeot', 'FR'], // "Peugeot Bicyclettes 1984"; the UK brochure is 1984_peugeot_gb_spec.csv
   ['1985|peugeot', 'FR'], // "Bicyclettes Peugeot 1985"; the UK brochure has blurbs only and is not loaded
-  ['1986|peugeot', 'FR'], // "Gamme Course" + sport / ville pages (bikeboompeugeot.com); the US "1986 Brochure" is 1986_peugeot_us_spec.csv
+  ['1986|peugeot', 'FR'], ['1987|peugeot', 'FR'], // "Gamme Course" + sport / ville pages (bikeboompeugeot.com); the US "1986 Brochure" is 1986_peugeot_us_spec.csv
   ['1983|peugeot', 'CA'], // Velo Sport (1982) Inc., Quebec, bilingual "Pleasure that lasts"; the Dutch kollektie is 1983_peugeot_nl_spec.csv
   ['1981|kalkhoff', 'DE'], // VeloBase "1981 Kalkhoff Catalog" (kalhoff_prospekt_81.pdf), German text; market not stated
   ['1985|bianchi', 'JP'], // Piaggio Japan range sheet
@@ -568,6 +568,21 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'huret rival av: 62 1d': 8961, // 1987 Peugeot (FR) table: Sachs Huret AV 62.1 D, Rival (part number printed)
+    'huret rival white av: 62 1d': 8961, // 1987 Peugeot (FR) table Triathlon: as above
+    'shimano fd 105': [{ from: 1987, to: 1989, id: 2462 }], // 1987 Peugeot (FR) Aspin: FD-1050 (SIS 105), not the 1985-86 Golden Arrow A105
+    'shimano deore fd mt 60 ag': 2496, // 1987 Peugeot (FR) Normandie: FD-MT60, Deore
+    'simplex white sx a32': 2578, // 1987 Peugeot (FR) table: SX A32 in white
+    'shimano 6400': [{ from: 1987, to: 1991, id: 2478 }], // 1987 Peugeot (FR) Puymorens: FD-6400, 600 Ultegra (row from 1988; the catalogue dates it 1987)
+    'shimano sis 105 fd1050': 2462, // 1987 Peugeot (US) Galaxie / Comete: FD-1050, 105
+    'shimano new deore xt sis fd m730': 2499, // 1987 Peugeot (US) Cannon Ball Express: FD-M730, Deore XT
+    'huret eco 5': 8796, // 1987 Peugeot (US) Corbier P4 / P14: printed 'ECO 5' = the Eco S of the 1986 Corbier; Huret Eco (front)
+    'shimano z 501 stem shifters': 2542, // 1987 Peugeot (US) Avoriaz / Iseran: Z-Series group cell; front as the 1986 FD-Z202
+    'shimano z501 stem shifters': 2542, // 1987 Peugeot (US): as above
+    // 1987 Peugeot FR table / US Comete group cells: front as the 1986 'Huret Rival, front' 8488. Bike-keyed: the 1987
+    // Raleigh Huret Rival fronts were left unlinked on purpose.
+    'huret rival': [{ bike: "A 400A W 'Comète'", id: 8488 }, { bike: 'Comete', id: 8488 }],
+    'huret rival white': [{ bike: "PG 10B W 'Aravis'", id: 8488 }, { bike: "PG 10 W 'Galibier'", id: 8488 }, { bike: 'PH 501 Ventoux', id: 8488 }],
     'shimano fd z202 front': 2542, // 1986 Peugeot (US) Avoriaz / Iseran / City Express: FD-Z202, Z-Series (1984-88)
     'shimano z 202 front': 2542, // 1986 Peugeot (US) U.S. Express
     'huret eco s satin finish': 8796, // 1986 Peugeot (US) Corbier: Huret Eco (front), the only Eco front
@@ -657,7 +672,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
     'campagnolo nuovo gran sport': 2276, // Campagnolo 3600/NT, Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
-    'shimano 105': [{ bike: 'Junior 105', from: 1987, to: 1987, id: 2462 }, { bike: 'Sirocco 12', from: 1987, to: 1987, id: 2462 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 2462 }, { to: 1989, id: 2466 }, { from: 1990, to: 1992, id: 2467 }], // Corsa: FD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: FD-1055 105SC
+    'shimano 105': [{ bike: "A 500A W 'Galaxie'", from: 1987, to: 1987, id: 2462 }, { bike: 'Junior 105', from: 1987, to: 1987, id: 2462 }, { bike: 'Sirocco 12', from: 1987, to: 1987, id: 2462 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 2462 }, { to: 1989, id: 2466 }, { from: 1990, to: 1992, id: 2467 }], // Corsa: FD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: FD-1055 105SC / 1987 Peugeot (FR) Galaxie: FD-1050 (SIS)
     'suntour ar': 2620, // Sirocco: SunTour FD-2500, AR (1982-85)
     'sun tour ar': 2620, // Quasar / Zenith
     'sun tour arx': 2621, // Clubman: SunTour FD-2600, ARX (same row as the 'suntour arx' key)
@@ -775,6 +790,20 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
+    'huret rival ar: 41 1d': 8957, // 1987 Peugeot (FR) table: Sachs Huret AR 41.1 D, Rival (part number printed)
+    'huret rival white ar: 41 1d': 8957, // 1987 Peugeot (FR) table Triathlon: as above
+    'shimano rd 105': [{ from: 1987, to: 1989, id: 4449 }], // 1987 Peugeot (FR) Aspin: RD-1050, 105 SIS
+    'shimano deore rd mt60sp sis gt': 4487, // 1987 Peugeot (FR) Normandie: RD-MT60, Deore
+    'simplex sx 440 gt sp': 4622, // 1987 Peugeot (FR) table: as 'sx440 gt sp'
+    'simplex sx 440 gr sp': 4622, // 1987 Peugeot (FR) table: GR/SP misprint of GT/SP
+    'shimano 6400': [{ from: 1987, to: 1991, id: 4466 }], // 1987 Peugeot (FR) Puymorens: RD-6400, 600 Ultegra
+    'campagnolo victory indexed': 4169, // 1987 Peugeot (FR) Dolomites: Victory S3 (the indexed 1987-88 version)
+    'huret eco': [{ from: 1987, to: 1990, id: 4399 }, { id: 4301 }], // 1987 Peugeot (FR) table: bare Eco on a 1987 bike = Sachs Huret Eco 2490-01; earlier catalogues keep the matcher's 1960-80 Eco 4301
+    'shimano sis 105 rd1050': 4449, // 1987 Peugeot (US) Galaxie / Comete: RD-1050, 105
+    'shimano new deore xt sis rd m730': 4491, // 1987 Peugeot (US) Cannon Ball Express: RD-M730, Deore XT
+    'huret eco 5': 8485, // 1987 Peugeot (US) Corbier: as 'huret eco s' (Sachs Huret Eco S 2830-00)
+    'shimano z 501 stem shifters': 4544, // 1987 Peugeot (US) Avoriaz / Iseran: RD-Z501, as 1986
+    'shimano z501 stem shifters': 4544, // 1987 Peugeot (US): as above
     // Judgement call 2026-10-30: 1981 PRO 10 / PY 10 S and 1982 PRO 10 bare "Spidel SLJ"; the same models print
     // "Spidel SLJ 5500 CP" in 1980 and 1982 (PY 10 S).
     'spidel slj': [{ from: 1979, to: 1984, id: 7309 }], // Simplex SLJ5500 CP
@@ -865,7 +894,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
     'campagnolo nuovo gran sport': 4085, // Campagnolo 3500, Nuovo Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
-    'shimano 105': [{ bike: 'Junior 105', from: 1987, to: 1987, id: 4449 }, { bike: 'Sirocco 12', from: 1987, to: 1987, id: 4449 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 4449 }, { to: 1989, id: 4452 }, { from: 1990, to: 1992, id: 4455 }], // Corsa / Record Sprint: RD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: RD-1055 105SC
+    'shimano 105': [{ bike: "A 500A W 'Galaxie'", from: 1987, to: 1987, id: 4449 }, { bike: 'Junior 105', from: 1987, to: 1987, id: 4449 }, { bike: 'Sirocco 12', from: 1987, to: 1987, id: 4449 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 4449 }, { to: 1989, id: 4452 }, { from: 1990, to: 1992, id: 4455 }], // Corsa / Record Sprint: RD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: RD-1055 105SC / 1987 Peugeot (FR) Galaxie: RD-1050 (SIS)
     'suntour cyclone ii': 4742, // Competition: SunTour RD-3500, Cyclone Mark-II (1981-85)
     'sun tour cyclone ii gt wide ratio': 4743, // Royal: SunTour RD-3700, Cyclone Mark-II (GT)
     'suntour ar': 4725, // Sirocco: SunTour RD-4200, AR (aR II) (1982-85)
@@ -1033,6 +1062,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 4487 }], // 1987 Colnago Master Mountain Bike: RD-MT60, Deore
   },
   Hubs: {
+    'shimano 6400': [{ from: 1987, to: 1991, id: 3534 }], // 1987 Peugeot (FR) Puymorens: FH-6400 / HB-6400-F, 600 Ultegra
+    'shimano 5000': 3580, // 1987 Peugeot (FR) Santé: FH-5000 / HB-5000
     'shimano new 600 ex': 7551, // 1986 Peugeot (FR) table PG 10 SH: HB-6207F / HB-6207R (freewheel hubs; Helicomatic block)
     'shimano new 600 ex; quick release': 7551, // 1986 Peugeot (FR) table PX 10 SH
     // 1982 Battaglin: Gipiemme Pista Special hub = Special Pista (1985 row; the 1982 sheet is earlier).
@@ -1182,7 +1213,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105': [{ to: 1989, id: 3524 }, { from: 1990, id: 3527 }], // HB-1050 / FH-1055-HG 105SC
     'ofmega competizione pista': 3445, // Ofmega Super Competizione Track (high flange)
     // 1993 Bianchi (spoke counts stripped from the CSV).
-    'campagnolo chorus': 3250, // Campagnolo FH-00CH / HB-00CH, Chorus
+    'campagnolo chorus': [{ from: 1987, to: 1987, id: 3249 }, { id: 3250 }], // Campagnolo FH-00CH / HB-00CH, Chorus; 1987 Peugeot (FR) Chorus: 722/101 (1987-91)
     'campagnolo veloce': 3279, // Campagnolo HB-00VL / HF-00VL, Veloce
     'shimano ultegra': [{ to: 1991, id: 3534 }, { from: 1992, id: 3535 }], // FH-6400-6/7 / FH-6402-HG 8-speed, 600 Ultegra
     'shimano rx100': 3579, // Shimano FH-A550 / HB-A550-F, RX100
@@ -1217,6 +1248,14 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'weinmann 570': 1129, // 1987 Peugeot (FR) table: Weinmann AG 570
+    'weinmann 570 side pull': 1129, // 1987 Peugeot (FR) table
+    'weinmann 570 white': 1129, // 1987 Peugeot (FR) table
+    'shimano br 105': 953, // 1987 Peugeot (FR) Aspin: BR-1050-49, as the US Galaxie
+    'shimano 6400': [{ from: 1987, to: 1990, id: 966 }], // 1987 Peugeot (FR) Puymorens: BR-6400, 600 Ultegra
+    'shimano linear system br 1050': 953, // 1987 Peugeot (US) Galaxie / Comete: BR-1050-49 short reach (700c racers), as the 1986 BR-6207 pick
+    'weinmann 570 alloy side pull': 1129, // 1987 Peugeot (US) Mont Cenis: Weinmann AG 570
+    'weinmann 570 primo': 1129, // 1987 Peugeot (US) PX 10: Weinmann AG 570
     'weinmann 610 alloy center pull qr double levers': 1136, // 1986 Peugeot (US) Avoriaz: Weinmann AG 610 Vainqueur 999
     'weinmann 500 alloy side pull with qr': 1125, // 1986 Peugeot (US) Tourmalet: Weinmann AG 500 (hex socket, quick release)
     'shimano br 6207': 970, // 1986 Peugeot (FR) table PG / PX 10 SH: BR-6207-49, the short-reach road caliper
@@ -1340,7 +1379,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo veloce': 587, // Campagnolo BR-02VL, Veloce Monoplaner
     'shimano deore xt alloy cantilever': 980, // 1985 Raleigh: Shimano BR-MC70, Deore XT M700 (1983-86, first-gen XT)
     // 1974 Motobecane. 1122 is the only Weinmann 500 variant dated before 1980.
-    'weinmann 500 side pull': 1122, // Weinmann AG 500 (earlier, red center bolt washer, cap nut)
+    'weinmann 500 side pull': [{ from: 1987, to: 1987, id: null }, { id: 1122 }], // Weinmann AG 500 (earlier, red center bolt washer, cap nut); 1987 Peugeot (FR) table: not that 1970 variant, nothing to choose on
     // Weinmann UK leaflet c. 1970: model-level Vainqueur 999 (610 / 750) row, 1970-75 (1973-75 bikes).
     // The 999 was Weinmann's only centre-pull then, so bare "Weinmann centre pull" links too (user decision 4A).
     // "999 De LUXE or UNIVERSAL 61" left unlinked (two makes).
@@ -1430,7 +1469,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600': [{ to: 1983, id: 963 }, { from: 1984, to: 1985, id: null }, { from: 1986, to: 1987, id: 972 }, { from: 1988, id: null }], // centre-pull / BR-6208 600EX (1987 Bianchi Limited)
     'shimano at 50 cantilever': [{ from: 1986, id: 1003 }], // Shimano BR-AT50 (1987 Bianchi Volpe); 1985 Raleigh predates the row
     // 1993 Bianchi. Bare "Chorus" substring-hits a 2000s 10-speed row.
-    'campagnolo chorus': [{ from: 1988, to: 1999, id: 565 }], // Campagnolo BR-02CH, Chorus Monoplaner (1988-93; from 1988 for the 1988 Bianchi)
+    'campagnolo chorus': [{ from: 1987, to: 1999, id: 565 }], // Campagnolo BR-02CH, Chorus Monoplaner (1988-93; from 1988 for the 1988 Bianchi); from 1987 for the 1987 Peugeot (FR) Chorus
     'shimano ultegra': 966, // Shimano BR-6400, 600 Ultegra
     'shimano rx100 aero levers': 1007, // Shimano BR-A550, RX100
     'shimano xtr': 1018, // Shimano BR-M900, XTR M900
@@ -1468,6 +1507,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 978 }], // 1987 Colnago Master Mountain Bike: BR-MT60 (the MT61 979 is the other Deore cantilever; MT60 as the base model)
   },
   Headsets: {
+    'shimano 6400': [{ from: 1987, to: 1994, id: 3087 }], // 1987 Peugeot (FR) Puymorens: HP-6400
+    'stronglight a9h': 3112, // 1987 Peugeot (FR) table: A9 H(eadset), as 'stronglight a9'
     // 1982 Battaglin: Gipiemme Cronospecial headset (the 1985-88 row; the 1982 sheet is earlier) and the Pista Special headset.
     'gipiemme cronospecial': [{ from: 1982, to: 1988, id: 9137 }], // Crono Special
     'gipiemme pista special': [{ from: 1980, to: 1988, id: 3008 }], // Special (Pista)
@@ -1523,7 +1564,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super record': 2968, // Campagnolo 4041, Super Record
     // 1983 Bianchi. Bare "Nuovo Record" substring-hits the Alleggerita
     // variant; the standard NR headset is the 1039.
-    'campagnolo nuovo record': [{ to: 1959, id: 2959 }, { from: 1960, to: 1985, id: 2963 }], // 1039 Record Strada from 1960 (1983 Bianchi Tipo Corsa)
+    'campagnolo nuovo record': [{ to: 1959, id: 2959 }, { from: 1960, to: 1987, id: 2963 }], // 1039 Record Strada from 1960 (1983 Bianchi Tipo Corsa; 1987 Peugeot (FR) Dolomites)
     'campagnolo gran sport': 2951, // Campagnolo 1040/A, Gran Sport
     'gipiemme pista': 3008, // Gipiemme Special (Pista)
     // 1987 Bianchi. Bare "C Record" substring-hits the Century Finish variant.
@@ -1557,6 +1598,13 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    'shimano 105 42x52': 1778, // 1987 Peugeot (FR) Aspin: FC-1050
+    'shimano 105 biopace 42x52': 1778, // 1987 Peugeot (FR) Galaxie: FC-1050 (Biopace rings)
+    'shimano 6400 biopace 42x52': 1789, // 1987 Peugeot (FR) Puymorens: FC-6400-BP
+    'shimano fc 5000 biopace 42x52': 1841, // 1987 Peugeot (FR) Santé: FC-5000
+    'shimano deore biopace triple chainring 28x38x48': 1809, // 1987 Peugeot (FR) Normandie: FC-MT60, Deore
+    'campagnolo triomphe 42x52': 1515, // 1987 Peugeot (FR) Dolomites: 0365 Triomphe
+    'shimano fc m730 bio space 28x38x48t shimano sealed bb set with cro moly spindle': 1810, // 1987 Peugeot (US) Cannon Ball Express: FC-M730, Deore XT
     // 1973 Falcon San Remo 76 / 94: bare "Cotterless" (unbranded, left unlinked at load); the 1974 SR Silver Cotterless
     // row 9528 added later would otherwise catch it by substring (drift check 2026-10-28).
     cotterless: null,
@@ -1780,6 +1828,7 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
+    'italia turbo white leather': 5508, // 1987 Peugeot (FR) table: Selle Italia Turbo
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'regal': [{ from: 1970, to: 2000, id: 5561 }], // Selle San Marco Regal
     'turbo': [{ from: 1980, to: 1990, id: 5508 }], // 1984 Peugeot PRO 10 / PY 10: bare "Turbo" is the Selle Italia Turbo
@@ -2117,6 +2166,11 @@ const COMPONENT_OVERRIDES = {
     'nitto mt1 4 bolt alloy clamp': 9412, // 1987 Raleigh Maverick 18 Pro: Nitto MT-1 (two-piece clamp MTB stem)
   },
   Shifters: {
+    'shimano sis 105 sl1050': 6130, // 1987 Peugeot (US) Galaxie / Comete: SL-1050, 105 SIS
+    'shimano new deore xt sis sl m730': 6159, // 1987 Peugeot (US) Cannon Ball Express: SL-M730
+    'shimano sis new deore sl mt60': 6157, // 1987 Peugeot (US) Alpine Express: SL-MT60, Deore
+    'shimano sl mt60 thumb shifters': 6157, // 1987 Peugeot (US) Canyon Express
+    'shimano sl l422fa': 7555, // 1987 Peugeot (US) Tourmalet: SL-L422 FA, Light Action (blurry print; part number matches the row)
     'xt shift levers': 6158, // 1986 Peugeot (US) table Canyon Express: SL-M700, Deore XT
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'shimano santé': [{ from: 1987, to: 1989, id: 6190 }], // SL-5000
@@ -2276,6 +2330,11 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
   },
   Pedals: {
+    'campagnolo chorus; toe clips; straps': 3700, // 1987 Peugeot (FR) Chorus
+    'campagnolo victory; toe clips; straps': 3720, // 1987 Peugeot (FR) Dolomites: 405/000 Victory
+    'shimano 105; toe clips; straps': 3953, // 1987 Peugeot (FR) Galaxie / Aspin: PD-1050
+    'shimano 6400; toe clips; straps': [{ from: 1987, to: 1993, id: 3958 }], // 1987 Peugeot (FR) Santé (sic) / Puymorens: PD-6400
+    'shimano "pd m730" new deore xt': 3967, // 1987 Peugeot (US) Cannon Ball Express: PD-M730
     'shimano pd 6207 toe clips and straps': 3961, // 1986 Peugeot (FR) table PG 10 SH
     'shimano dural pd 6207 toe clips and straps': 3961, // 1986 Peugeot (FR) table PX 10 SH
     'campagnolo super light': 3716, // 1986 Peugeot (US) table PZ 10: the Super Record ("Super Leggero") road pedal, 4021
@@ -2376,6 +2435,9 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1993, id: 3965 }], // 1987 Colnago Master Mountain Bike: PD-MT60 / PD-MT61, Deore
   },
   'Seat Posts': {
+    'simplex 6164 dural': 5904, // 1987 Peugeot (FR) Perthus / Santé: Simplex SLJ6164
+    'campagnolo chorus aero': 5742, // 1987 Peugeot (FR) Chorus: C0R2 Chorus (styled)
+    'shimano sp 6207': 5891, // 1987 Peugeot (US) Triathlon: SP-6207, 600EX
     dural: null, // 1986 Peugeot (FR) table: bare material (8 bikes), not the 9962 Strata dural seat pillar
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 5742 }], // C0R2 (fitted to Athena and Croce d'Aune)
@@ -2497,6 +2559,8 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    'shimano deore': null, // 1987 Peugeot (FR) Normandie: the hit is the 1990s Deore LX chain
+    'shimano cn 6120 1 2 x 3 32': [{ from: 1978, to: 1987, id: 7473 }], // 1987 Peugeot (US) Triathlon: QA-410 / CN-6120, 600 UG
     'did': null, // 1987 Bianchi Sport SX: brand only; the hit is the bare D.I.D brand row 1355
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'regina extra oro': [{ from: 1970, to: 1980, id: 1382 }], // Rekord/748, /746: Regina Extra 50 Oro (1385 "Extra Oro (center drilled)" merged into it 2026-10-26)
@@ -2615,6 +2679,17 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 13 30t 7 speed': [{ from: 1993, to: 1993, id: 1195 }], // Ibex / Osprey / Project 5 / Project 3, all Exage LT / ES: CS-HG50
   },
   Freewheels: {
+    '6 speed 13x21 helicomatic': [{ from: 1980, to: 1987, id: 8131 }], // 1987 Peugeot (FR) table: bare Helicomatic = 600 SH, as 1986
+    '6 speed 13x24 helicomatic': [{ from: 1980, to: 1987, id: 8131 }], // 1987 Peugeot (FR) table
+    '6 speed 14x24 helicomatic': [{ from: 1980, to: 1987, id: 8131 }], // 1987 Peugeot (FR) table
+    '6 speed 14x28 helicomatic': [{ from: 1980, to: 1987, id: 8131 }], // 1987 Peugeot (FR) table
+    '5 speed 14x24 helicomatic': [{ from: 1980, to: 1987, id: 8130 }], // 1987 Peugeot (FR) table: 600 SH 5-speed
+    '5 speed 14x28 helicomatic': [{ from: 1980, to: 1987, id: 8130 }], // 1987 Peugeot (FR) table
+    '6 speed maillard 700 13x21': [{ from: 1987, to: 1987, id: 2114 }], // 1987 Peugeot (FR) Chorus: straight 6-speed 700 Course, as the 1984 GB pick
+    '6 speed maillard 700 13x18': [{ from: 1987, to: 1987, id: 2114 }], // 1987 Peugeot (FR) Perthus: as above
+    '6 speed helicomatic 13 x 15 x 17 x 19 x 21 x 24t': [{ from: 1980, to: 1987, id: 8131 }], // 1987 Peugeot (US): bare Helicomatic = 600 SH, as 1986
+    '6 speed helico maillard': [{ from: 1980, to: 1987, id: 8131 }], // 1987 Peugeot (US) Ventoux
+    'helicomatic 5 speed 13 x 14 x 15 x 17 x 19 x 21t silver': [{ from: 1980, to: 1987, id: 8130 }], // 1987 Peugeot (US) Mont Cenis: 600 SH 5-speed
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'regina extra oro 5 speed': [{ from: 1970, to: 1978, id: 2182 }], // Rekord/748
     'regina extra 5 speed': [{ from: 1970, to: 1978, id: 8171 }], // Rekord/746: Regina Extra (5 speed)
@@ -2769,6 +2844,7 @@ const COMPONENT_OVERRIDES = {
     'suntour accushift plus silver 12 30t 7 speed': [{ from: 1990, to: 1990, id: 1222 }], // SunTour CS-AP00-S7U, XC Pro
   },
   Tyres: {
+    'michelin "hi lite pro" 700x70c [?]': 6836, // 1987 Peugeot (US) Mont Cenis: printed 700x70C (sic), Hi-Lite Pro
     'michelin hi lite comp 700 x 20c': 6835, // 1986 Peugeot (US) table Galibier
     'michelin hi lite pro 700 x 20c': 6836, // 1986 Peugeot (US) table Mont Cenis (row dated 1988 only)
     'michelin hi lite road 700 x 23c': 9498, // 1986 Peugeot (US) table Triathlon / Ventoux (row dated 1988 only)
@@ -2833,6 +2909,7 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    'rigida 1521 black varnished spokes': 5154, // 1987 Peugeot (US): Rigida AL 1521
     // 1985 Peugeot: bare wheel size, not the 1970 Femco 700 c rim the substring match found.
     '700 c': null,
     'mavic gp4 anodized grey': 5069, // 1986 Peugeot (US) table PZ 10

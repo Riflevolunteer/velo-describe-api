@@ -677,6 +677,50 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   491 / 1117 duplicate lead in TODO.
 - Regression: all other catalogues unchanged apart from the two bare-"Dural" seatpost drops above.
 
+## 1987 Peugeot — `1987_peugeot_spec.csv` (FR, data_source 311: 33 bikes, 651 specs, 152 linked) and `1987_peugeot_us_spec.csv` (US, data_source 312: 18 bikes, 340 specs, 108 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1987.html (76 images, loaded 2026-10-30; a few
+  proxy fetches failed first time and succeeded on retry). Images 1-26: French "Bicyclettes Peugeot 1987"
+  (cycles-peugeot.com watermark), printed pp. 1-26 only: contents p. 2, Course photo pages pp. 3-18 with captions,
+  spec tables "Course homme" / "Course dame" on images 19-20 (no printed page number) and "Demi-course" / "Randonneur"
+  p. 26. Ville-Tourisme (p. 27) and Juniors (p. 39) are not scanned. Images 27-52: US brochure, one model per page with a
+  spec sidebar (pp. 2-27). Images 53-76: Dutch "Kollektie 1987" — NOT loaded yet (left for a later session).
+  Transcribed by Sonnet subagents; FR tables img 19 / 26 and US Tourmalet / Corbier sidebars spot-checked.
+- New model codes end in "W" (PY CA W 'Chorus', A 500A W 'Galaxie'): printed, not a misread.
+- FR loaded: Chorus (Campagnolo Chorus), Perthus (Mavic), Santé (Shimano 5000), Puymorens (Shimano 6400), Dolomites
+  (Triomphe / Victory), Savoie (Huret New Success ARIS), Aravis, Galibier, aluminium Galaxie / Comète / Cosmic, Aspin
+  (105), Triathlon, Vanoise, Ventoux P 501B / P 501, Mont-Blanc, Saint-Bernard, Aubisque PE 10D / PE 10L, Avoriaz;
+  ladies Cannes, Monaco, Cassis, Manosque, Lavandou; demi-course Bretagne, P 18SA W, Touraine, P 8SA W; randonneur
+  Normandie (Deore), Anjou, Dauphiné.
+- US loaded: PZ 10, PX 10, PSN 10 Mont Cenis, Triathlon, Galaxie, Comete, PH 501 Ventoux, PH 10 LE Tourmalet, P8 Avoriaz,
+  P6 / P16 Iseran and P4 / P14 Corbier (one sidebar per pair; ladies' rows carry the men's weight, P16 has no sizes),
+  Cannon Ball / Alpine / Canyon / Orient / US Express. Comete image is cut below SIZES (no colours).
+- Not loaded (US): CY10FC carbon frameset, City Express (ATB-style commuter, judged city), Pipeline 1 / 5 cruisers,
+  P20 folding, Exerciser, C46 / M46 juniors.
+- Repairs: FR brand capitals normalised to mixed case; "Huret 'New Success'" unquoted (so the 1987 ARIS range hits);
+  P 18SA W sizes "50, 53 cm" (table prints 50-53; transcription had 63); US "Malliard" -> "Maillard"; Tourmalet
+  shifter "[?]" dropped (SL-L422FA matches row 7555). Kept as printed with "[?]": Tourmalet derailleurs (illegible),
+  Mont Cenis tyres "700x70C", Anjou last size / tyres / pedals (watermark), Canyon Express colour code.
+- Overrides (US): 105 SIS FD / RD / SL-1050, BR-1050 -> 953 (49 short reach), Deore XT M730 FD / RD / SL / FC / PD, SL-MT60,
+  Weinmann 570 -> 1129, SP-6207, CN-6120 (range to 1987), Rigida 1521 -> 5154 AL 1521, Helicomatic wordings to 1987,
+  "Huret ECO 5" (printed; = the 1986 Corbier's Eco S) -> front 8796 / rear 8485, "Shimano Z501, stem shifters" group cell
+  -> FD-Z202 2542 / RD-Z501 4544 as 1986.
+- Overrides (FR): Rival with part numbers "AV: 62-1D" -> 8961, "AR: 41-1D" -> 8957; plain Rival fronts -> 8488 keyed to
+  Comète / Comete / Aravis / Galibier / US Ventoux (the 1987 Raleigh Rival fronts stay unlinked by decision); bare
+  "Shimano 105" FD / RD bike-keyed to Galaxie -> 1050 SIS (existing key keeps Golden Arrow elsewhere); Shimano 6400 FD /
+  RD / HP / hubs / BR / FC-BP / PD ranged from 1987 (rows dated 1988+); Santé FC / hubs; Deore MT60 FD / RD / FC; Chorus
+  hubs 722/101 3249 for 1987, Chorus brakes range now from 1987, pedals 3700, aero post 5742; Triomphe crank 1515,
+  Victory pedals 3720, "Victory, indexed" rear -> 4169 S3; Nuovo Record headset range to 1987 (2963); Stronglight A9H
+  -> 3112; Simplex 6164 -> 5904; SX 440 GT/SP (and GR/SP misprint) -> 4622; Italia Turbo -> 5508; bare "Huret Eco" rear
+  1987-90 -> 4399 Sachs Huret Eco 2490-01 (falls back to 4301 for earlier years, unchanged); Helicomatic ranges to 1987;
+  straight 6-speed Maillard 700 -> 2114; "Weinmann 500, side-pull" blocked for 1987 (only hit is the 1970 variant);
+  Normandie "Shimano Deore" chain -> null (hit was Deore LX).
+- Left unlinked: Solida / Peyrard 3020 / Stronglight 200 / Huret New Success cranks, Maillard CX pedals, CLB, Mondialita,
+  Perrache Tenor, Altenburger 53 S3, Simplex SX 620 / 640 / 432 (no rows), Huret Club 2, Huret Rider 3 PL / GT/SP,
+  Campagnolo Triomphe hubs (low / high flange not stated), Shimano 6400 cassette (6-speed; row is 7sp), New Deore M236
+  / M535, the Deore XT / Deore cantilever + U-brake pair cells, US Shimano 105 hub pair cell, generic cells.
+- Regression: all other catalogues' link counts unchanged.
+
 ## Link pass from /linkCoverage — 2026-10-24
 
 - 1982 (NL) "Sedisport, 114 links, Delta treated" (5) -> 1402 Sedis Sedisport Delta, as the 1980 108-link value. 1984 (FR 3, GB 2) bare "Turbo" saddle -> 5508 Selle Italia Turbo (ranged 1980-90). +10 links; no other catalogue changed.
