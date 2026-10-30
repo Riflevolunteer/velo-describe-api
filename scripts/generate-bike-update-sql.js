@@ -583,7 +583,10 @@ const COMPONENT_OVERRIDES = {
     'shimano z501 stem shifters': 2542, // 1987 Peugeot (US): as above
     // 1987 Peugeot FR table / US Comete group cells: front as the 1986 'Huret Rival, front' 8488. Bike-keyed: the 1987
     // Raleigh Huret Rival fronts were left unlinked on purpose.
-    'huret rival': [{ bike: "A 400A W 'Comète'", id: 8488 }, { bike: 'Comete', id: 8488 }],
+    'huret rival': [{ bike: "A 400A W 'Comète'", id: 8488 }, { bike: 'Comete', id: 8488 }, { bike: 'Zenith 10', id: 8488 }, { bike: 'Granada 10', id: 8488 }], // + 1987 Raleigh Zenith / Granada 10
+    'huret club': 2379, // 1983 Peugeot UO 5 Club: Huret Club II 1000-01 / 1001-01 (1978-87; July 1981 catalogue, merged with the 1984 Sachs Huret Club 1000-01 row 2026-10-30)
+    'huret club 2': 2379, // 1986-87 Peugeot (FR) Avoriaz / Aubisque / Lavandou: Club II
+    'huret club brazed on': 8489, // 1984 Raleigh Record Sprint / Quasar / Pulsar / Team Cadet: Sachs Huret Club AS 1005-01 (the Club S is its braze-on version)
     'huret rival white': [{ bike: "PG 10B W 'Aravis'", id: 8488 }, { bike: "PG 10 W 'Galibier'", id: 8488 }, { bike: 'PH 501 Ventoux', id: 8488 }],
     'shimano fd z202 front': 2542, // 1986 Peugeot (US) Avoriaz / Iseran / City Express: FD-Z202, Z-Series (1984-88)
     'shimano z 202 front': 2542, // 1986 Peugeot (US) U.S. Express

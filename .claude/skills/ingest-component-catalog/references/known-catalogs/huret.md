@@ -123,6 +123,37 @@
   doesn't say it's the same lever); velobase Allvit generations 4269-4272,
   Challenger II / 3rd-version rows, Success-Duopar CPSC fronts (1978+).
 
+## Huret catalogue — July 1981 (disraeligears.co.uk, 10 scans), `data_source` 313
+
+- Source: https://www.disraeligears.co.uk/site/huret_-_catalogue_july_1981.html (images
+  `huret_-_catalogue_1981_scan_1..10_main_image.jpg`; the page also shows thumbnails of other documents).
+  French text; no date on the cover (Huret, 60 avenue Felix Faure, Nanterre, "member of Frexa"), "Juillet 81"
+  printed sideways in the p10 margin. Pages: 1 cover, 2-4 derailleurs and levers, 5 accessories, 6
+  speedometers, 7 "Serie Course" (brakes, levers, freewheels), 8 chainset / BB / pedals / seatpost / hubs,
+  9 Commander preselection, 10 Sachs-Huret Commander. Transcription:
+  scratchpad `dg/huret-1981.csv` (Sonnet subagent, 66 rows). Skipped: speedometers, collars, clips.
+- Marked new: Super Success 2470 S, Duopar alloy / steel 2690-01, chainset 1010, BB axle, hubs 472 / 473,
+  Commander system. Content otherwise close to the c. 1980 English catalogue (`data_source` 188).
+- Merged: 8490 "Sachs Huret Club 1000-01" (1984, `data_source` 156, no links / overrides) into 2379, retitled
+  "Huret Club II" -> "Huret Club II 1000-01 / 1001-01", 1978-1980 -> 1978-1987 (same refs and 143g in 1981
+  and 1984; 1986-87 Peugeot print "Club 2"). The S.P.P. version is "Club 1000-01 CPSC", 158g (see below).
+- year_to -> 1981: 4298 Challenger II rear (2440 / 2400), 2380 Challenger II front (1050-00), 6064
+  Challenger II levers (548-01 / 546-01), 6066 Ratchet levers (1466 / 1468); all were 1980.
+- year_from 1984 -> 1981: 8491 Jubilee / Success / Duopar levers 1164 / 2390 / 2380, 8484 Commander 12900,
+  8495 Commander 13031, 8498 Sachs Orbit 12961 2-speed hub.
+- Added (1981-1981): 9991 Allvit III 2700 / 2700 H / 2740, 9992 Allvit Safety III 2746 / 2746 H / 2749,
+  9993 Super Allvit III 2748 / 2748 H / 2754, 9994 Luxe levers 1136-01 / 1134-01, 9995 stem levers 1158-01,
+  9996 freewheel 685 / 686 (steel sprockets), 9997 685 D / 686 D (Dural), 9998 hubs 472 / 473, 9999
+  chainset 1010, 10000 pedals 490, 10001 side-pull 342, 10002 centre-pull 343, 10003 brake levers 323
+  (category_brand rows added for Huret in Freewheels, Hubs, Pedals, Brake Levers).
+- Not added: Commander double stem lever 12970 (8494 is the 1984 double lever 13000; may be a renumber),
+  chain 238 (12962), BB axle and seatpost (no ref printed).
+- Bike links made with this pass: 1983 / 1986-87 Peugeot "Huret Club" / "Club 2" x7 -> 2379; 1984 Raleigh
+  "Club brazed-on" x4 -> 8489 (Club S is its braze-on version); 1987 Raleigh "Huret Rival" front x2 -> 8488.
+- Open: 8796 "Huret Eco (front)" (158g, S.P.P., 10 links) and 2387 "Club CPSC" (1977-78) look like the
+  1981 "Club 1000-01 CPSC" (158g); 4298 "Challenger II" (no refs) duplicates 4273 "Challenger 2400 / 2440 /
+  ..." (the 1981 Challenger II refs). No Rival, Eco S front or Luxe front in this catalogue.
+
 ## Sachs-Huret catalogue — June 1984 (labibleduvelocataloguessachshuret.blogspot.com, 16 pages)
 
 - `data_source` 156, label "Sachs-Huret catalogue (June 1984)". Source:
