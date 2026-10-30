@@ -375,3 +375,24 @@ Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
 - Matched, no change: rims Module E / E2 / 3, Montlhéry Route / Pro / Légère, Piste, Spéciale Sport,
   Argent / Or 10 and 7, GP 4, Bleu / Argent 12 SSC, Paris-Roubaix SSC; 3397 500 RD; 84 600 RD; 4336
   800; 1637 Series 600 cranks; 6582 / 6583 stems; 410 / 420 brakes.
+
+## Mavic USA technical manual (c. 1990) — labibleduvelocataloguesmavic "MAVIC 1989", data_source id 302
+
+- Source: https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1989.html, 23 JPGs (Mavic-1 ...
+  Mavic-19, 770 x 1024 at s0). Not a range catalogue: an English Mavic USA installation manual (east
+  and west US phone numbers) with a specification box per section: 305 / 315 / 316 / 317 headsets,
+  500 / 530 / 550 hubs, 610 URD and 616 RD bottom brackets, 631 and 637 cranksets, 646 LMS pedals,
+  820 retrofriction levers, 821 / 825 index levers, 840 / 841 / 845 and 801 PRO / 851 SSC rears.
+  Undated (welcome text: "much has changed ... in the last two years. Since SSC ..."); the blog says
+  1989. Dated c. 1990 (user's call): it shows the 1990 range (new in the 90/91 catalogue, absent from
+  88-89) beside the 801 / 851 the 90/91 catalogue had dropped, so no year_from was moved on it.
+- Updated (source_ref -> 302): 4338 Mavic 801 (1986) and 4346 Mavic 851 (1986), SSC year_to 1989 ->
+  1990 (still supported as 801 PRO / 851 SSC). 3047 Mavic 316 and 3048 Mavic 317: velobase "(Spec)"
+  weights were swapped (316 is 145 g, 317 is 155 g); descriptions rewritten with thread, head and
+  crown race diameters and stack height; year_from 1980 -> 1990 (velobase decade bucket; absent
+  from the complete 1984, 86-87 and 88-89 catalogues), year_to 1990 kept.
+- Matched, not changed (specs here vs DB): 305 118 g (DB 116), 315 140 g, 530 505 g, 610 URD spindles
+  112 / 114 / 116 / 119 / 123 (290-315 g), 616 RD 124 / 134 (350 / 360 g), 631 track / double / triple
+  668 / 730 / 835 g, 637 660-700 g, 646 LMS 480 g (DB 496), 820 70 g, 821 77 g, 825 160 g, 840 230 g /
+  841 235 g / 845 295 g (max cog 28 / 30 / 32, capacity 30 / 36 / 38).
+- If a dated source shows the manual is 1989, the 1990 starts of those rows could move to 1989.
