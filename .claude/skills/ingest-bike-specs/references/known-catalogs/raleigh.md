@@ -473,6 +473,48 @@
   Nitto MT1, tyres other than Select.
 - Regression: all 40 other CSVs regenerate with unchanged link counts.
 
+## 1988 Raleigh (UK) — `1988_raleigh_spec.csv` (11 bikes, 198 specs, 60 linked)
+
+- Source: https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1988.html
+  (7 scans, 1600 x 1125 spreads). Raleigh Ltd, Nottingham "Lightweights for
+  the pursuit of excellence", one of a set of 5 catalogues, "Issue Date JAN'
+  88" -> `data_source` 322, country GB. Specs are the "Lightweight Technical
+  Specifications" panel on p. 11, transcribed by hand from 3x sips crops;
+  sizes from the model pages (no colours or weights given). Type is the page's
+  Racing / Training / Touring / Off-Road icon.
+- CSV header: Model Name, Type, sizes, Frame Material, Fork, Headset, Rims,
+  Hubs, Spokes, Tyres, Handlebars, Stems, Brakes, Derailleurs (split to front +
+  rear), Cranksets, Freewheels, Pedals, Saddles, Seat Posts, Extras.
+- Models: Record Ace Moderne, Road Ace Select, Team Competition (page heading
+  "Competition"), Corsa, Quadra, Triathlon, Ritmo, Ozark II, Avanti, Royal,
+  Randonneur. Not added: Gemini 6 / Gemini 18 (ATB flat bar, 700 x 35C, full
+  mudguards and carrier, sold as a town bike: hybrid).
+- Fix: Record Ace Moderne pedals "Shimano Ultagra Platform" -> Ultegra.
+  "PDT-100" kept as printed (= PD-T100).
+- Overrides (1988 Raleigh block per category): Santé = 5000 series (FD 2533,
+  HP 3107, FH/HB 3580, BR 1008, FC 1841); Road Ace Select = 600 Ultegra 6400
+  (FD 2478, RD 4466, HP 3087, FH 3534, BR 966, FC 1790 round rings, PD 3958,
+  also the Santé bike's Ultegra pedals); Corsa = Exage Sport A450 (FD-A451-B
+  2526 front SIS, RD 4516, HP 3106, FH 3573, BR 7211, FC 1835, PD 3976); 105 =
+  the 1050 SIS series (FD 2462, RD 4449, FC 1778 incl. Biopace, PD 3953, hubs
+  FH-1050 3523 since every 105 bike lists a cassette; the 1987 load used HB-1050
+  3524); Deore = MT60 (FD 2496, RD 4487); Randonneur FC-M730 1810, Maillard
+  600 CX 3392 (only row, dated 1980), Brooks Professional pre-softened 5295;
+  PD-T100 3952; Cinelli 64 80's 2802, Cinelli 1E 6490 (dated 1980-86, only
+  row), Selle Italia Turbo Special 5519 (dated 1990, only row). Team
+  Competition 105 brakes -> BR-1050-49 953 (racing frame, no mudguard
+  clearance). Specialized Crossroads II nulled (the only row is the 1983-84
+  original).
+- Matcher picks kept: HP-1050 3083, Tange MTB-225 3154, PD-M730 3967, Michelin
+  Select 6826.
+- Left unlinked: Santé rear (RD-5000 and RD-5001 both cover 1988), Quadra /
+  Triathlon 105 brakes (reach not stated), Biopace 48/38/28 triples, the
+  cassettes, Sakae CTP-5 / CTP-5E / MTE-110 posts and Sakae stems, Weinmann
+  rims and 570 TOP brake, Vredestein Racer II / CST Pro-Lite / Ground Control
+  tyres, Maillard Diabolo, MKS AR-3, ISCA Nabuk, Selle Royal saddles, Tange
+  Unique headsets, Nitto bars / stem.
+- Regression: all other CSVs regenerate with unchanged link counts.
+
 ## 1982 Raleigh — `1982_raleigh_spec.csv` (6 bikes, 73 specs, 30 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1982-raleigh-lightweights-racing-catalogue.993/

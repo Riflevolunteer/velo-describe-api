@@ -121,7 +121,7 @@ function bikeSourceCond(sourceRefSelect) {
 const CATALOGUE_COUNTRY = new Map([
   ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
   ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1980|raleigh', 'US'], ['1981|raleigh', 'CA'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
-  ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], // TI Raleigh UK brochures
+  ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], ['1988|raleigh', 'GB'], // TI Raleigh UK brochures
   ['1973|falcon', 'GB'], ['1974|falcon', 'GB'], ['1986|falcon', 'GB'], // 1986: Falcon Cycles Ltd, Brigg; undated, IceniCAM files it c1992
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
   ['1982|battaglin', 'IT'], // Cicli Battaglin, Marostica (VI): Italian-language sheets and a 1981-82 lire price list
@@ -577,6 +577,13 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
+    'shimano santé sis indexed': 2533, // Record Ace Moderne: FD-5000, Sante
+    'shimano ultegra sis indexed': 2478, // Road Ace Select: FD-6400, 600 Ultegra
+    'shimano 105 sis indexed': [{ from: 1987, to: 1989, id: 2462 }], // Team Competition / Quadra / Triathlon: FD-1050, 105
+    'exage a450 front and rear sis indexed': 2526, // Corsa: FD-A451-B, the front-SIS Exage Sport
+    'shimano deore sis indexed': [{ from: 1987, to: 1989, id: 2496 }], // Randonneur: FD-MT60, Deore (SIS)
+    'shimano deore sis indexed handlebar control': [{ from: 1987, to: 1989, id: 2496 }], // Avanti: as above
     'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 2478 }], // 1989 Peugeot (FR) Galibier: FD-6400, 600 Ultegra
     'shimano sport lx a 450': [{ from: 1989, to: 1989, id: 7184 }], // 1989 Peugeot (FR) Aspin: FD-A450, Exage Sport (printed "A 450")
     'sachs huret "new success"': [{ from: 1989, to: 1989, id: 2439 }], // 1989 Peugeot (FR) Savoie: Sachs Huret ARIS New Success (the matcher hit the bare brand row)
@@ -834,6 +841,12 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
+    // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
+    'shimano ultegra sis indexed': 4466, // Road Ace Select: RD-6400, 600 Ultegra
+    'shimano 105 sis indexed': [{ from: 1987, to: 1989, id: 4449 }], // Team Competition / Quadra / Triathlon: RD-1050, 105
+    'exage a450 front and rear sis indexed': 4516, // Corsa: RD-A450, Exage Sport
+    'shimano deore sis indexed': [{ from: 1987, to: 1989, id: 4487 }], // Randonneur: RD-MT60, Deore
+    'shimano deore sis indexed handlebar control': [{ from: 1987, to: 1989, id: 4487 }], // Avanti: as above
     'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 4466 }], // 1989 Peugeot (FR) Galibier: RD-6400, 600 Ultegra
     'shimano sport lx a 450': [{ from: 1989, to: 1989, id: 4516 }], // 1989 Peugeot (FR) Aspin: RD-A450, Exage Sport
     'sachs huret "new success"': [{ from: 1989, to: 1989, id: 4412 }], // 1989 Peugeot (FR) Savoie: ARIS New Success 1st Gen. (1987; 2nd Gen. is 1990)
@@ -1140,6 +1153,12 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 4487 }], // 1987 Colnago Master Mountain Bike: RD-MT60, Deore
   },
   Hubs: {
+    // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
+    'shimano santé': [{ from: 1988, to: 1989, id: 3580 }], // Record Ace Moderne: FH-5000 / HB-5000
+    'shimano ultegra quick release': [{ from: 1988, to: 1991, id: 3534 }], // Road Ace Select: FH-6400 / HB-6400-F
+    'shimano 105 quick release': [{ from: 1987, to: 1989, id: 3523 }], // FH-1050 (every 1988 105 bike has a cassette; HB-1050 3524 is the screw-on pair)
+    'exage a450 quick release': 3573, // Corsa (cassette): FH-A450, Exage Sport
+    'maillard 600cx sealed bearing quick release': 3392, // Randonneur: Maillard 600 CX (only row, dated 1980)
     'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 3534 }], // 1989 Peugeot (FR) Galibier: FH-6400 / HB-6400-F
     'shimano sport lx a 450': [{ from: 1989, to: 1989, id: 3573 }], // 1989 Peugeot (FR) Aspin: FH-A450, Exage Sport / Sport LX
     'campagnolo athena rl': [{ from: 1989, to: 1989, id: 3236 }], // 1989 Peugeot (FR) Dolomites: D300, Athena
@@ -1340,6 +1359,11 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
+    'shimano santé aero levers with quick release': 1008, // Record Ace Moderne: BR-5000-49
+    'shimano ultegra aero levers': [{ from: 1988, to: 1993, id: 966 }], // Road Ace Select: BR-6400, 600 Ultegra
+    'shimano 105 hooded levers': [{ from: 1987, to: 1989, id: 953 }], // Team Competition: BR-1050-49 (racing frame, no mudguard clearance; Quadra / Triathlon reach not stated, left unlinked)
+    'exage a450 aero levers with quick release': 7211, // Corsa: BR-A450, Exage Sport
     'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 966 }], // 1989 Peugeot (FR) Galibier: BR-6400
     'shimano sport lx 450': [{ from: 1989, to: 1989, id: 7211 }], // 1989 Peugeot (FR) Aspin: BR-A450, Exage Sport / Sport LX
     'modolo mach i': [{ from: 1989, to: 1989, id: 877 }], // 1989 Peugeot (FR) Savoie: Modolo Mach 1 (1988-90)
@@ -1620,6 +1644,10 @@ const COMPONENT_OVERRIDES = {
     'shimano "new" deore': [{ from: 1987, to: 1989, id: 978 }], // 1987 Peugeot (US) Canyon Express: BR-MT60, as the Colnago Deore SIS
   },
   Headsets: {
+    // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
+    'shimano santé': [{ from: 1988, to: 1989, id: 3107 }], // Record Ace Moderne: HP-5000
+    'shimano 600 ultegra alloy': 3087, // Road Ace Select: HP-6400
+    'exage a450': 3106, // Corsa: HP-A450, Exage Sport
     'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 3087 }], // 1989 Peugeot (FR) Galibier: HP-6400
     'shimano sport lx a 452': [{ from: 1989, to: 1989, id: 3106 }], // 1989 Peugeot (FR) Aspin: HP-A450, Exage Sport (printed "A 452")
     'strong light a9h': [{ from: 1989, to: 1989, id: 3112 }], // 1989 Peugeot (FR) Savoie: as 'stronglight a9h' (1987 FR)
@@ -1718,6 +1746,13 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
+    'shimano santé 52 42 biopace': 1841, // Record Ace Moderne: FC-5000
+    'shimano ultegra 52 42': [{ from: 1988, to: 1994, id: 1790 }], // Road Ace Select: FC-6400 (round rings; 1789 is the BP / SG version)
+    'shimano 105 52 42': [{ from: 1987, to: 1989, id: 1778 }], // Team Competition: FC-1050
+    'shimano 105 52 42 biopace': [{ from: 1987, to: 1989, id: 1778 }], // Quadra / Triathlon: FC-1050 (as the 1987 Biopace cell)
+    'exage a450 52 42 biopace': 1835, // Corsa: FC-A450
+    'shimano fc m730 biopace ii 48 38 28': 1810, // Randonneur: FC-M730, Deore XT
     'shimano 6400 ultegra high performance 42x52': [{ from: 1989, to: 1989, id: 1790 }], // 1989 Peugeot (FR) Galibier: FC-6400, as the 1988 New 600 pick
     'shimano sport lx a 452 42x52': [{ from: 1989, to: 1989, id: 1835 }], // 1989 Peugeot (FR) Aspin: FC-A450, Exage Sport (printed "A 452")
     'mavic 630 42x52': [{ from: 1989, to: 1989, id: 1641 }], // 1989 Peugeot (FR) Racing Team: Mavic 630 (narrow font, 1984-89)
@@ -1962,6 +1997,9 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
+    // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
+    'brooks professional leather pre softened honey finish': 5295, // Randonneur: Brooks Professional pre-softened (1987-2000)
+    'selle italia turbo special lycra': 5519, // Record Ace Moderne: Turbo Special (row dated 1990; the only Turbo Special)
     'turbo white leather': [{ from: 1980, to: 1990, id: 5508 }], // 1989 Peugeot (FR) Dolomites / Galibier: Selle Italia Turbo, as bare "Turbo"
     'turbo white': [{ from: 1980, to: 1990, id: 5508 }], // 1989 Peugeot (NL) Galibier: Selle Italia Turbo, as bare "Turbo"
     'isca suede tornado': 5382, // 1986 Falcon Triomphe 12: Iscaselle Tornado (suede cover)
@@ -2068,6 +2106,8 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
+    'cinelli type 64 cushion tape': 2802, // Cinelli 64 Giro d'Italia, 80's model (1980-88)
     'atax philippe tour de france cable groove': [{ from: 1982, to: 1989, id: 2902 }], // 1989 Peugeot (NL) Galibier: Philippe Tour de France 357 (Atax-Philippe)
     'cta alloy bike ribbon': 2782, // 1986 Peugeot (US) Galibier / Ventoux: ATAX CTA, as the 1984 GB "CTA"
     'cinelli 65 benotto tape': 2804, // 1986 Peugeot (US) table PZ 10: Cinelli 65 Criterium
@@ -2200,6 +2240,8 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
+    'cinelli type 1e alloy': 6490, // Cinelli 1E (the only 1E row, dated 1980-86)
     'suntour xc stem': 6695, // 1986 Peugeot (US) Canyon Express: SunTour MS-1400, XC (1984-88) (// linkCoverage pass 2026-10-30)
     'cta dural': 6452, // 1987 Peugeot (FR) Comète: ATAX CTA (XA style)
     'atax asc dural': 8507, // 1987 Peugeot (FR) Santé: ATAX ASC, Aerodynamic (row widened to 1987)
@@ -2484,6 +2526,11 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
   },
   Pedals: {
+    // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
+    'shimano ultegra platform': [{ from: 1988, to: 1993, id: 3958 }], // Record Ace Moderne / Road Ace Select: PD-6400 (catalogue prints 'Ultagra')
+    'shimano 105 alloy platform': [{ from: 1987, to: 1988, id: 3953 }], // Team Competition: PD-1050
+    'exage a450 platform style': 3976, // Corsa: PD-A450
+    'shimano pdt 100 dual format alloy': 3952, // Quadra / Triathlon / Randonneur: PD-T100 (printed 'PDT-100')
     'shimano 6400 ultegra toe clips and straps': [{ from: 1989, to: 1989, id: 3958 }], // 1989 Peugeot (FR) Galibier: PD-6400
     'shimano sport lx a 450 toe clips and straps': [{ from: 1989, to: 1989, id: 3976 }], // 1989 Peugeot (FR) Aspin: PD-A450
     'shimano exage sport lx': [{ from: 1988, to: 1989, id: 3976 }], // 1989 Peugeot (NL): PD-A450, Exage Sport
@@ -3045,6 +3092,8 @@ const COMPONENT_OVERRIDES = {
     'suntour accushift plus silver 12 30t 7 speed': [{ from: 1990, to: 1990, id: 1222 }], // SunTour CS-AP00-S7U, XC Pro
   },
   Tyres: {
+    // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
+    'specialized crossroads ii 26 x 15': null, // Ozark II: Crossroads II; the only row is the 1983-84 original
     '700 x 25c': null, // bare size (1984 Peugeot FR / GB, 1989 Peugeot FR): the matcher hit the Wolber 700 x 25C Tandem row
     'michelin hi lite competition 700 x 20c': 6835, // 1989 Peugeot (NL) Galibier: Hi-Lite Comp
     'michelin hilite road': 9498, // 1988 Peugeot (FR): Michelin Hi-Lite Road
