@@ -507,9 +507,11 @@
 - Rapidfire shifters linked 2026-10-31 (Shifting Brake Levers): DX -> ST-M070 6359, LX -> ST-M060 7581,
   XT -> ST-M090 7577.
 - Regression: all 31 catalogues regenerated; only the 1990 rows changed.
-- Open: the bare 'shimano 105' FD / RD overrides send pre-1990 catalogues
-  to Golden Arrow, so the 1987 Bianchi 105 derailleurs likely point at
-  1983-85 rows instead of the 1050 group.
+- Checked 2026-10-31 (was open): the 1987 Bianchi has one 105 bike, BRAVA,
+  and its derailleurs read "Shimano 105 SIS", which keys to FD-1050 2462 /
+  RD-1050 4449, so the bare 'shimano 105' Golden Arrow range never reached
+  it. Every 105 part on it is a 1050 row; "Shimano 105 14-24T" freewheel
+  stays unlinked (no 105 freewheel row).
 
 ## 1978 Bianchi — `1978_bianchi_spec.csv` (7 bikes, 102 specs, 36 linked)
 
