@@ -122,7 +122,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
   ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1980|raleigh', 'US'], ['1981|raleigh', 'CA'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
   ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], // TI Raleigh UK brochures
-  ['1973|falcon', 'GB'], ['1974|falcon', 'GB'],
+  ['1973|falcon', 'GB'], ['1974|falcon', 'GB'], ['1986|falcon', 'GB'], // 1986: Falcon Cycles Ltd, Brigg; undated, IceniCAM files it c1992
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
   ['1982|battaglin', 'IT'], // Cicli Battaglin, Marostica (VI): Italian-language sheets and a 1981-82 lire price list
   ['1970|peugeot', 'NL'], // Dutch-market "Peugeot '70" (1971-74 mix NL + FR: left NULL until split)
@@ -575,6 +575,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'huret duopar': [{ from: 1986, to: 1986, id: 8962 }], // 1986 Falcon Cotswold: Sachs Huret AV 62.1 T, Rider / Duopar (triple), the 1986 Duopar front
     'sun tour superbe': 2645, // 1980 Raleigh: SunTour FD-1500, Superbe (SunTour linking pass 2026-10-30)
     'sun tour alloy vx': 2614, // 1981 Raleigh: SunTour FD-1600, VX
     'sun tour 7': 2641, // 1980 Raleigh: SunTour FD-1400, Seven
@@ -811,6 +812,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
+    'huret duopar': [{ from: 1986, to: 1986, id: 8959 }], // 1986 Falcon Cotswold: Sachs Huret AR 40.1 T, Duopar (1986)
     'sun tour 7gt': 7788, // 1980 Raleigh: SunTour RD-2000, Seven GT (SunTour linking pass 2026-10-30)
     'raleigh sun tour 7gt': 7788, // 1980 Raleigh: RD-2000, Seven GT
     'suntour xc': 4778, // 1986 Raleigh: SunTour RD-6300, XC
@@ -1098,6 +1100,10 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 4487 }], // 1987 Colnago Master Mountain Bike: RD-MT60, Deore
   },
   Hubs: {
+    'atom alloy small flange': 3183, // 1986 Falcon: Atom (low flange aluminum), as the Raleigh Atom small-flange keys
+    'atom alloy small flange quick release': 3183, // 1986 Falcon Challenger / Strada
+    'atom alloy small flange qr': 3183, // 1986 Falcon Cotswold
+    'campagnolo triomphe small flange quick release': 3277, // 1986 Falcon Triomphe 12: 922/000, Triomphe (low flange; 921/000 is the high flange)
     'sun tour road vx large flange qr 36 hole': 8263, // 1980 Raleigh: SunTour RH-2500, VX (large flange) (SunTour linking pass 2026-10-30)
     'sun tour superbe small flange qr 36 hole': 8262, // 1980 Raleigh: SunTour RH-1000, Superbe (small flange)
     'shimano 6400': [{ from: 1987, to: 1991, id: 3534 }], // 1987 Peugeot (FR) Puymorens: FH-6400 / HB-6400-F, 600 Ultegra
@@ -1286,6 +1292,8 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'dia compe alloy 981 cantilever': 661, // 1986 Falcon Everest: Dia-Compe 981 (1980-86)
+    'shimano br at50 cantilever alloy': 1003, // 1986 Falcon K2: BR-AT50, Exage Trail (1985-93); catalogue misprints "BRATSO"
     'shimano at 50 cantilever front and rear': 1003, // 1987 Peugeot (US): Shimano BR-AT50, Exage Trail (Shimano exact-model links 2026-10-30)
     'mafac special tandem cantilevers front and rear maillard 80 mm rear drum': 845, // 1982 Peugeot TH 8 / TM 8: MAFAC Cyclo-Tandem (// linkCoverage pass 2026-10-30)
     'mafac "special cyclo tandem" cantilevers front and rear maillard rear drum brake': 845, // 1980 Peugeot TH 8 / TM 8
@@ -1646,6 +1654,7 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    'campagnolo triomphe 42 52t x 170': 1515, // 1986 Falcon Triomphe 12: 0365, Triomphe (1985-88)
     'sun tour superbe cotterless 42 52t 170mm': 1988, // 1980 Raleigh: SunTour CW-1000, Superbe (SunTour linking pass 2026-10-30)
     'sun tour vx cotterless 39 52t 170mm': 1995, // 1980 Raleigh: SunTour CW-1500, VX
     'shimano 105 42x52': 1778, // 1987 Peugeot (FR) Aspin: FC-1050
@@ -1879,6 +1888,7 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
+    'isca suede tornado': 5382, // 1986 Falcon Triomphe 12: Iscaselle Tornado (suede cover)
     'italia turbo white leather': 5508, // 1987 Peugeot (FR) table: Selle Italia Turbo
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'regal': [{ from: 1970, to: 2000, id: 5561 }], // Selle San Marco Regal
@@ -2393,6 +2403,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
   },
   Pedals: {
+    'lyotard no 82 alloy quill': 3820, // 1986 Falcon Challenger / Strada / Cotswold: Lyotard 82 (1970-87)
+    'lyotard alloy no 460d': 3815, // 1986 Falcon Oxford / Westminster: Lyotard 460D (1970-81 row; the 1930 one is the pre-war pattern)
     'suntour cyclone': 4002, // 1986 Raleigh: SunTour PL-5300, Cyclone (SunTour linking pass 2026-10-30)
     'suntour xc 11 alloy bear trap': 4015, // 1986 Peugeot (US): SunTour PL-5100, XC-II
     'suntour xcii alloy': 4015, // 1986 Raleigh: PL-5100, XC-II
@@ -2995,6 +3007,7 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    'araya 26 x 175 alloy 7x': 4923, // 1986 Falcon K2: Araya 7X (1980-95)
     'rigida 1521 black varnished spokes': 5154, // 1987 Peugeot (US): Rigida AL 1521
     // 1985 Peugeot: bare wheel size, not the 1970 Femco 700 c rim the substring match found.
     '700 c': null,

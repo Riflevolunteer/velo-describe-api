@@ -1,5 +1,50 @@
 # Falcon catalogs processed so far
 
+## 1986 Falcon — `1986_falcon_spec.csv` (19 bikes, 402 specs, 64 linked; data_source 317, GB)
+
+- Source: IceniCAM On-Line Library, https://www.icenicam.org.uk/library/Falcon/Catalogue_c1992.pdf
+  (21 pp scan, no text layer; p21 is the library cover). "Falcon - Cycles
+  for all the family", Falcon Cycles Ltd, P.O. Box 3, Bridge Street, Brigg,
+  South Humberside. Two spec tables (p18 sports / tourist ladies, p19
+  tourist / city / all-terrain); the photo pages p3-17 give sizes and colours.
+  Transcribed 2026-10-31 by a Sonnet subagent, tables checked by hand.
+- **Dated 1986, not IceniCAM's c1992 (user decision 2026-10-31).** No date,
+  price or copyright line anywhere. Full Campagnolo Triomphe (DB 1984-88,
+  mechs 1984-86), Huret Eco (to 1986/87), Shimano 105 on 6-speed freewheels
+  with no SIS, Shimano Z-Series, Sachs-Huret Duopar, Suntour MounTech MTBs.
+- Bikes: Sports Firefly, Mustang, Scorpio; racing Laser, Team Equipe,
+  Challenger 12, Strada 12, Triomphe 12, Triathlon Competitor 12 (the
+  table heads drop the "12"; photo-page names used); Tourist Melody and
+  Ibiza (ladies' mixte, drop bars, Huret Eco 5-speed), Voyager, Black
+  Diamond, Oxford, Westminster, Cotswold; All-Terrain Sierra, Everest, K2.
+  Gents / ladies sharing one table column are one row with both size lists.
+- Left out (not in the CSV, so no NON_ROAD_SKIP entry): Super Tourist
+  (user decision: all-rounder bars, single-ring 5-speed with chainguard,
+  as the deleted 1973/74 Super Tourists, though now 453 / Huret Rival);
+  Conventionals City, Kensington, Marbella, Royale, Metro, Courier; Juvenile
+  Tipper, Princess, Petal, Opal, La Petite; 8 BMX models.
+- Repairs: Competitor crank "x 100" -> x 170 (misprint); K2 brakes
+  "BRATSO" -> BR-AT50, bar / stem "SRMTB-204" / "SRMTS-101" -> "SR MTB-204"
+  / "SR MTS-101"; Everest headset HP-O1G -> HP-01G; Sierra sizes 21", 23"
+  from p17 (table: 21" only). Extras dropped the range-wide "mudguard eyes on
+  all sports models" note and page tags to stay under 255 chars.
+- New overrides: Atom alloy small flange (+ quick release / Q.R.) -> 3183;
+  Triomphe crank -> 1515, Triomphe small-flange QR hubs -> 3277 (922/000);
+  Lyotard No. 82 -> 3820, Lyotard alloy No. 460D -> 3815; Dia Compe 981 ->
+  661; BR-AT50 -> 1003; ISCA Suede Tornado -> 5382; Araya 7X -> 4923;
+  bare "Huret Duopar" front 8962 / rear 8959 ranged 1986-only (the 1984
+  Peugeot's two Duopar rows stay unlinked, as before). Existing keys:
+  Triomphe rear -> 4155 1st version (S3 equally in range), Shimano 105 ->
+  A105 Golden Arrow, Sedisport -> 1402, Weinmann 605 -> 8642, Tange Falcon
+  headset 3141.
+- Left unlinked: bare Shimano 'Z' and 'Z' series G5, Suntour MT Tech
+  (several Z / MounTech variants, nothing to choose on); Weinmann side pull;
+  ISCA Aero Airline / anatomical / Suede; Solida 101, SR SAC, Sugino;
+  Maillard 600 hubs and CX 550 pedals; Atom 13/21 freewheel; Rigida,
+  Mavic, Hutchinson.
+- Regression: no other CSV carries the new keys except 1984 Peugeot (unchanged).
+
+
 ## 1974 Falcon — `1974_falcon_spec.csv` (18 bikes, 203 specs, 25 linked; loaded as 1975 until 2026-10-08)
 
 - Source: Falcon Cycles (Barton-upon-Humber) "range of lightweight
