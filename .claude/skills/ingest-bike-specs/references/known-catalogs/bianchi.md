@@ -501,9 +501,11 @@
 - Left unlinked: SR / H.L. / ITM / Modolo bars and stems, Tange CD /
   TH-series headsets, Bianchi Dakar / Advantage tyres, Vittoria Zefir /
   Formula 1, IRC Triathlete, C.S.T., Regina RL.SY90, Sedisport 270, Viscount
-  saddles, SR / Strong posts, Rapidfire shifters, Modolo Quattro brakes,
+  saddles, SR / Strong posts, Modolo Quattro brakes,
   Ambrosio Montreal (several variants), Campagnolo Delta XL, Athena
   Synchro-2.
+- Rapidfire shifters linked 2026-10-31 (Shifting Brake Levers): DX -> ST-M070 6359, LX -> ST-M060 7581,
+  XT -> ST-M090 7577.
 - Regression: all 31 catalogues regenerated; only the 1990 rows changed.
 - Open: the bare 'shimano 105' FD / RD overrides send pre-1990 catalogues
   to Golden Arrow, so the 1987 Bianchi 105 derailleurs likely point at

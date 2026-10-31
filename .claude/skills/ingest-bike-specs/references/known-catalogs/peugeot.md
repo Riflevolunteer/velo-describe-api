@@ -714,7 +714,8 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   -> 3112; Simplex 6164 -> 5904; SX 440 GT/SP (and GR/SP misprint) -> 4622; Italia Turbo -> 5508; bare "Huret Eco" rear
   1987-90 -> 4399 Sachs Huret Eco 2490-01 (falls back to 4301 for earlier years, unchanged); Helicomatic ranges to 1987;
   straight 6-speed Maillard 700 -> 2114; "Weinmann 500, side-pull" blocked for 1987 (only hit is the 1970 variant);
-  Normandie "Shimano Deore" chain -> null (hit was Deore LX).
+  Normandie "Shimano Deore" chain -> null (hit was Deore LX). Added 2026-10-31: Canyon Express 'Shimano "New" Deore'
+  brakes -> BR-MT60 978 (as the Colnago Deore SIS).
 - Left unlinked: Solida / Peyrard 3020 / Stronglight 200 / Huret New Success cranks, Maillard CX pedals, CLB, Mondialita,
   Perrache Tenor, Altenburger 53 S3, Simplex SX 620 / 640 / 432 (no rows), Huret Club 2, Huret Rider 3 PL / GT/SP,
   Campagnolo Triomphe hubs (low / high flange not stated), Shimano 6400 cassette (6-speed; row is 7sp), New Deore M236

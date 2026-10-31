@@ -1544,6 +1544,7 @@ const COMPONENT_OVERRIDES = {
     'mafac racer centre pull': 838, // MAFAC Racer (lettered MAFAC RACER) 1970-80
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
     'shimano deore sis': [{ from: 1987, to: 1989, id: 978 }], // 1987 Colnago Master Mountain Bike: BR-MT60 (the MT61 979 is the other Deore cantilever; MT60 as the base model)
+    'shimano "new" deore': [{ from: 1987, to: 1989, id: 978 }], // 1987 Peugeot (US) Canyon Express: BR-MT60, as the Colnago Deore SIS
   },
   Headsets: {
     'a9 sealed stronglight': 3112, // 1987 Peugeot (US) Galaxie: Stronglight A9, as 'stronglight a9' (// linkCoverage pass 2026-10-30)
@@ -1645,6 +1646,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 6400 biopace 42x52': 1789, // 1987 Peugeot (FR) Puymorens: FC-6400-BP
     'shimano fc 5000 biopace 42x52': 1841, // 1987 Peugeot (FR) Santé: FC-5000
     'shimano deore biopace triple chainring 28x38x48': 1809, // 1987 Peugeot (FR) Normandie: FC-MT60, Deore
+    'shimano deore sis': [{ from: 1987, to: 1989, id: 1809 }], // 1987 Colnago Master Mountain Bike: FC-MT60 (row dated 1988; the Normandie shows it in 1987)
     'campagnolo triomphe 42x52': 1515, // 1987 Peugeot (FR) Dolomites: 0365 Triomphe
     'shimano fc m730 bio space 28x38x48t shimano sealed bb set with cro moly spindle': 1810, // 1987 Peugeot (US) Cannon Ball Express: FC-M730, Deore XT
     // 1973 Falcon San Remo 76 / 94: bare "Cotterless" (unbranded, left unlinked at load); the 1974 SR Silver Cotterless
@@ -2311,6 +2313,10 @@ const COMPONENT_OVERRIDES = {
     'suntour fingertip ld 2800': 6307, // SunTour LD-2800 Power Thumb Shifter
   },
   'Shifting Brake Levers': {
+    // 1990 Bianchi Rapidfire shifters (the 1990 groups are M650 DX / M550 LX / M735 XT)
+    'shimano deore dx rapidfire': [{ from: 1990, to: 1993, id: 6359 }], // ST-M070 / ST-M071
+    'shimano deore lx rapidfire': [{ from: 1990, to: 1992, id: 7581 }], // ST-M060
+    'shimano deore xt rapidfire': [{ from: 1990, to: 1993, id: 7577 }], // ST-M090 / ST-M091 / ST-M092
     'shimano at10 sis': 7722, // 1993 Bianchi, from the Jul 1992 manual: Shimano ST-AT10, Altus A10
     // 1993 Bianchi (integrated levers; the Shifters label maps to both
     // categories). EC-12RE CG was fitted to both Record and Chorus in the 1993 range (row 6345 description).

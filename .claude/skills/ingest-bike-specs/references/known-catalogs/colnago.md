@@ -176,8 +176,8 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
   spokes, AL 11 and Deore SIS groups, Ofmega Premier crank / seatpost / pedals.
 - Deore SIS linked 2026-10-28 (1987 Master Mountain Bike; ranged 'shimano deore sis' overrides, 1987-89 /
   -93): FD-MT60 2496, RD-MT60 4487, BR-MT60 978 (the MT61 979 is the other Deore cantilever; MT60 taken as the
-  base model), BL-MT60 427, PD-MT60 / 61 3965. Crankset and seat post stay unlinked (no MT60 crank or Deore post
-  row). The 1986 plain "Shimano Deore" stays unlinked (DE series ended 1984, XT M700 ran to 1986; undecidable).
+  base model), BL-MT60 427, PD-MT60 / 61 3965. Seat post stays unlinked (no Deore post row). Crankset linked 2026-10-31 to FC-MT60 1809 (row dated 1988; the
+  1987 Peugeot Normandie also shows it in 1987). The 1986 plain "Shimano Deore" stays unlinked (DE series ended 1984, XT M700 ran to 1986; undecidable).
   "Shimano AL 11" (Super Mountain Bike 1986-87, Master Mountainbike AL 11 SIS 1988) has no DB rows.
 - Colour pages (standard, MODA grid, bicolour codes 01-25) not transcribed.
 
