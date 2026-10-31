@@ -509,6 +509,13 @@ async function readComponentRecords(conn) {
   return rows.map((r) => ({ component_id: r.component_id, title: r.title, category: r.category }));
 }
 
+// Normalized component_brand titles, so a value that is only a brand name
+// ("TTT", "Cinelli") doesn't substring-link to the one model row of that brand.
+async function readComponentBrandNames(conn) {
+  const rows = await query(conn, 'SELECT title FROM component_brand WHERE title IS NOT NULL');
+  return new Set(rows.map((r) => normalizeForMatch(r.title)));
+}
+
 // Brand spellings that differ between these period catalogs and the DB in a
 // way punctuation-stripping can't bridge (a genuinely different spelling,
 // not just formatting) — e.g. the catalogs write out "T.T.T." while the DB
@@ -3156,7 +3163,7 @@ function resolveOverride(entry, year, bikeTitle) {
   return hit ? hit.id : null;
 }
 
-function matchComponent(valueText, componentRecords, excludeTitle, label, year, bikeTitle) {
+function matchComponent(valueText, componentRecords, excludeTitle, label, year, bikeTitle, brandNames) {
   if (!valueText) return null;
   const normalizedLabel = label.trim().toLowerCase();
   const normalizedValue = normalizeForMatch(valueText);
@@ -3185,6 +3192,11 @@ function matchComponent(valueText, componentRecords, excludeTitle, label, year, 
   }
 
   if (byNormalizedTitle.has(normalizedValue)) return byNormalizedTitle.get(normalizedValue);
+  // A value that is only a brand name names no model: whichever row of that
+  // brand happens to be alone in the category would win, and the link then
+  // sticks after more rows are added (the back-fill never overwrites). Those
+  // link only by exact title or COMPONENT_OVERRIDES.
+  if (brandNames?.has(normalizedValue)) return null;
 
   const paddedValue = ` ${normalizedValue} `;
   const valueIsMultiWord = normalizedValue.includes(' ');
@@ -3223,8 +3235,10 @@ async function main() {
   });
   await new Promise((resolve, reject) => conn.connect((err) => (err ? reject(err) : resolve())));
   let componentRecords;
+  let brandNames;
   try {
     componentRecords = await readComponentRecords(conn);
+    brandNames = await readComponentBrandNames(conn);
   } finally {
     conn.end();
   }
@@ -3377,7 +3391,7 @@ async function main() {
     const valueText = sqlString(spec.valueText);
     const rawLabel = sqlString(spec.rawLabel);
 
-    const matched = matchComponent(spec.valueText, componentRecords, spec.brand, spec.label, spec.year, spec.bikeTitle);
+    const matched = matchComponent(spec.valueText, componentRecords, spec.brand, spec.label, spec.year, spec.bikeTitle, brandNames);
     if (matched) linkedCount++;
     const componentIdSelect = matched ? String(matched.component_id) : 'NULL';
     const sourceRefSelect = dataSourceSubquery(spec.catalogue);
