@@ -152,6 +152,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1982|bianchi', 'US'], // US racing brochure ("available in America")
   ['1988|bianchi', 'US'], // US catalogue (saarf dates it 1986)
   ['1990|bianchi', 'US'], // Bianchi USA Inc., South San Francisco
+  ['1989|bianchi', 'US'], // gringineer scans: "for the U.S. market" footer, edge code "MB89 Bianchi USA, Inc.", Minnesota dealer stamp
   ['1987|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19)
   ['1993|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19); probable source retrobike "1993 Bianchi Catalogue", English, lbs
   // Peugeot 1971-74 mix Dutch spec pages and French general-catalogue pages in one CSV; the user chose FR
@@ -713,7 +714,7 @@ const COMPONENT_OVERRIDES = {
     'simplex super competition': [{ from: 1971, to: 1976, id: 8794 }], // Simplex AV 3, Super-Competition (1971)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace': [{ from: 1990, to: 1993, id: 2511 }], // FD-7403 (8sp HG)
-    'shimano ultegra': [{ from: 1990, to: 1991, id: 2478 }], // FD-6400, 600 Ultegra (the matcher took a 1990 "Ultegra Tripple" velobase row)
+    'shimano ultegra': [{ from: 1988, to: 1991, id: 2478 }], // FD-6400, 600 Ultegra (1989-90 Bianchi; the matcher took a 1990 "Ultegra Tripple" velobase row)
     'shimano deore dx': [{ from: 1990, to: 1993, id: 2487 }], // FD-M650
     'shimano deore lx': [{ from: 1990, to: 1992, id: 2491 }], // FD-M550
     'shimano m200gs': [{ from: 1990, to: 1991, id: 7595 }], // FD-M200, 200GS
@@ -733,7 +734,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
     'campagnolo nuovo gran sport': 2276, // Campagnolo 3600/NT, Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
-    'shimano 105': [{ bike: "A 500A W 'Galaxie'", from: 1987, to: 1987, id: 2462 }, { bike: 'Junior 105', from: 1987, to: 1987, id: 2462 }, { bike: 'Sirocco 12', from: 1987, to: 1987, id: 2462 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 2462 }, { to: 1989, id: 2466 }, { from: 1990, to: 1992, id: 2467 }], // Corsa: FD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: FD-1055 105SC / 1987 Peugeot (FR) Galaxie: FD-1050 (SIS)
+    'shimano 105': [{ bike: "A 500A W 'Galaxie'", from: 1987, to: 1987, id: 2462 }, { bike: 'Junior 105', from: 1987, to: 1987, id: 2462 }, { bike: 'Sirocco 12', from: 1987, to: 1987, id: 2462 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 2462 }, { to: 1988, id: 2466 }, { from: 1989, to: 1989, id: 2462 }, { from: 1990, to: 1992, id: 2467 }], // Corsa: FD-A105, 105 Golden Arrow (1983-85) / 1989 Bianchi Krono: FD-1050 / 1990 Bianchi: FD-1055 105SC / 1987 Peugeot (FR) Galaxie: FD-1050 (SIS)
     'suntour ar': 2620, // Sirocco: SunTour FD-2500, AR (1982-85)
     'sun tour ar': 2620, // Quasar / Zenith
     'sun tour arx': 2621, // Clubman: SunTour FD-2600, ARX (same row as the 'suntour arx' key)
@@ -849,6 +850,16 @@ const COMPONENT_OVERRIDES = {
     'simplex sxa 22': 2577, // Simplex SX A22
     'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'shimano deore xt 2': [{ from: 1989, to: 1989, id: 2500 }], // FD-M732, Deore XT-II
+    'shimano deore 2': [{ from: 1989, to: 1989, id: 2490 }], // FD-MT62, Deore II
+    'shimano mountain lx': [{ from: 1989, to: 1989, id: 2528 }], // FD-M452, Mountain LX
+    'shimano exage country': [{ from: 1989, to: 1989, id: 7635 }], // FD-M250
+    'shimano exage action': [{ from: 1989, to: 1989, id: 2524 }], // FD-A351-B
+    'shimano sport lx': [{ from: 1989, to: 1989, id: 2534 }], // FD-A452-B
+    'suntour edge': [{ from: 1989, to: 1989, id: 2633 }], // FD-ED45-SSH, Edge 4050
+    'suntour xc 9010': [{ from: 1989, to: 1989, id: 2657 }], // FD-XC00-GX, the only XC 9000 front
+    'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
@@ -988,7 +999,7 @@ const COMPONENT_OVERRIDES = {
     'simplex super lj': [{ from: 1971, to: 1978, id: 4650 }], // Simplex SLJ5000 (1971-78), the Super LJ rear; 4649 SX660 is undated
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace': [{ from: 1990, to: 1996, id: 4505 }], // RD-7402 (8sp); matcher took Dura-Ace EX
-    'shimano ultegra': [{ from: 1990, to: 1991, id: 4466 }], // RD-6400, 600 Ultegra; matcher took 1997 RD-6500
+    'shimano ultegra': [{ from: 1988, to: 1991, id: 4466 }], // RD-6400, 600 Ultegra (1989-90 Bianchi); matcher took 1997 RD-6500
     'shimano deore dx': [{ from: 1990, to: 1993, id: 4480 }], // RD-M650-SGS (13-30 triple)
     'shimano deore lx': [{ from: 1990, to: 1992, id: 4484 }], // RD-M550-SGS
     'shimano m200gs': [{ from: 1990, to: 1992, id: 7594 }], // RD-M200, 200GS
@@ -1008,7 +1019,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Bianchi Super Turismo: "Nuovo Gran Sport" = the 1974-85 3500 rear and its 3600/NT front (as 1983 Bianchi Gran Sport).
     'campagnolo nuovo gran sport': 4085, // Campagnolo 3500, Nuovo Gran Sport
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
-    'shimano 105': [{ bike: "A 500A W 'Galaxie'", from: 1987, to: 1987, id: 4449 }, { bike: 'Junior 105', from: 1987, to: 1987, id: 4449 }, { bike: 'Sirocco 12', from: 1987, to: 1987, id: 4449 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 4449 }, { to: 1989, id: 4452 }, { from: 1990, to: 1992, id: 4455 }], // Corsa / Record Sprint: RD-A105, 105 Golden Arrow (1983-85) / 1990 Bianchi: RD-1055 105SC / 1987 Peugeot (FR) Galaxie: RD-1050 (SIS)
+    'shimano 105': [{ bike: "A 500A W 'Galaxie'", from: 1987, to: 1987, id: 4449 }, { bike: 'Junior 105', from: 1987, to: 1987, id: 4449 }, { bike: 'Sirocco 12', from: 1987, to: 1987, id: 4449 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 4449 }, { to: 1988, id: 4452 }, { from: 1989, to: 1989, id: 4449 }, { from: 1990, to: 1992, id: 4455 }], // Corsa / Record Sprint: RD-A105, 105 Golden Arrow (1983-85) / 1989 Bianchi Krono: RD-1050 / 1990 Bianchi: RD-1055 105SC / 1987 Peugeot (FR) Galaxie: RD-1050 (SIS)
     'suntour cyclone ii': 4742, // Competition: SunTour RD-3500, Cyclone Mark-II (1981-85)
     'sun tour cyclone ii gt wide ratio': 4743, // Royal: SunTour RD-3700, Cyclone Mark-II (GT)
     'suntour ar': 4725, // Sirocco: SunTour RD-4200, AR (aR II) (1982-85)
@@ -1174,6 +1185,17 @@ const COMPONENT_OVERRIDES = {
     'simplex 410 tsp': 4621, // as above (PK 60 wording)
     'simplex sx 100 t': 4657, // Simplex SX100 T (1975-80)
     'shimano deore sis': [{ from: 1987, to: 1989, id: 4487 }], // 1987 Colnago Master Mountain Bike: RD-MT60, Deore
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'shimano deore xt 2': [{ from: 1989, to: 1989, id: 4492 }], // RD-M732-SGS (matcher took the 1994 "Deore XT" row)
+    'shimano deore 2': [{ from: 1989, to: 1989, id: 4482 }], // RD-MT62-SGS
+    'shimano mountain lx': [{ from: 1989, to: 1989, id: 4524 }], // RD-M452
+    'shimano exage country': [{ from: 1989, to: 1989, id: 7634 }], // RD-M250
+    'shimano exage action': [{ from: 1989, to: 1989, id: 4514 }], // RD-A350
+    'shimano sport lx': [{ from: 1989, to: 1989, id: 4536 }], // RD-A452
+    'suntour edge': [{ from: 1989, to: 1989, id: 4744 }], // Accushift Edge (4050)
+    'suntour gpx': [{ from: 1989, to: 1989, id: 4745 }], // RD-GP00-SSB
+    'suntour xc 9010': [{ from: 1989, to: 1989, id: 4781 }], // RD-XC10-GXB (triple, long cage)
+    'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
@@ -1386,6 +1408,13 @@ const COMPONENT_OVERRIDES = {
     'maillard dural large flange quick release': 3391, // Maillard Normandy (high flange, oblong holes) 1960-80
     'maillard large flange quick release': 3391, // Maillard Normandy high flange
     'maillard large flange': 3391, // Maillard Normandy high flange
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'campagnolo athena': [{ from: 1989, to: 1989, id: 3236 }], // D300, Athena
+    'shimano deore xt 2': [{ from: 1989, to: 1989, id: 3551 }], // FH-M732 / HB-M730-F
+    'shimano deore 2': [{ from: 1989, to: 1989, id: 3543 }], // FH-MT62 / HB-MT62-F
+    'shimano mountain lx': [{ from: 1989, to: 1989, id: 7629 }], // FH-M452 / HB-M451-F
+    'shimano rm 50': [{ from: 1989, to: 1989, id: 7624 }], // FH-RM50
+    'suntour xc 9010': [{ from: 1989, to: 1989, id: 3626 }], // HB-XC10
   },
   'Geared Hubs': {
     // 1971 Peugeot (Dutch-market catalogue).
@@ -1684,6 +1713,16 @@ const COMPONENT_OVERRIDES = {
     'mafac special cyclo tandem cantilever front and rear maillard drum rear': 845, // MAFAC Tandem
     'shimano deore sis': [{ from: 1987, to: 1989, id: 978 }], // 1987 Colnago Master Mountain Bike: BR-MT60 (the MT61 979 is the other Deore cantilever; MT60 as the base model)
     'shimano "new" deore': [{ from: 1987, to: 1989, id: 978 }], // 1987 Peugeot (US) Canyon Express: BR-MT60, as the Colnago Deore SIS
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'shimano deore xt 2': [{ from: 1989, to: 1989, id: 983 }], // BR-M732 cantilever (Super Grizzly rear U-brake has its own row, not printed)
+    'shimano deore 2': [{ from: 1989, to: 1989, id: 975 }], // BR-MT62 cantilever
+    'shimano mountain lx': [{ from: 1989, to: 1989, id: 7628 }], // BR-M452, Mountain LX numbering
+    'shimano exage country': [{ from: 1989, to: 1989, id: 7592 }], // BR-M250 cantilever
+    'shimano exage motion': [{ from: 1989, to: 1989, id: 1001 }], // BR-A250
+    'shimano sport lx': [{ from: 1989, to: 1989, id: 7211 }], // BR-A450, Exage Sport / Sport LX
+    'suntour gpx': [{ from: 1989, to: 1989, id: 1039 }], // BA-GP00-S
+    'suntour blaze': [{ from: 1989, to: 1989, id: 1035 }], // BA-BE34-S
+    'suntour xc 9010': [{ from: 1989, to: 1989, id: 1055 }], // CT-XC10 cantilever
   },
   Headsets: {
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
@@ -1781,6 +1820,9 @@ const COMPONENT_OVERRIDES = {
     'hatta "vesta" sealed steel cp': 3020, // 1986 Raleigh Elkhorn: Hatta Vesta, as the 1990 Bianchi "Hatta Vesta"
     'hatta steel cp sealed': 3020, // 1986 Raleigh Teton / Seneca: same wording as the Elkhorn, no model printed
     'campagnolo sport': [{ from: 1971, to: 1985, id: 2951 }], // 1978 Bianchi Campione del Mondo CX: 1040/A Gran Sport ("sold as the Sport head set")
+    // 1989 Bianchi US catalogue (gringineer scans).
+    "campagnolo croce d'aune": [{ from: 1989, to: 1989, id: 7028 }], // C0D0, Croce d'Aune
+    'hatta vesta alloy': [{ from: 1989, to: 1989, id: 3020 }], // as bare "Hatta Vesta"
   },
   'Bottom Brackets': {
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
@@ -1918,7 +1960,7 @@ const COMPONENT_OVERRIDES = {
     'stronglight competition 45 52t': [{ from: 1963, to: 1972, id: 1902 }], // Stronglight 63 Super Competition (PX 10; the 1971 and 1972 Dutch catalogues repeat the 1970 wording)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano ultegra 53 42t': [{ from: 1988, to: 1999, id: 1790 }], // FC-6400, 600 Ultegra
-    'shimano 105 52 42t': [{ from: 1990, to: 1992, id: 1782 }], // FC-1055-SG, 105SC
+    'shimano 105 52 42t': [{ from: 1987, to: 1989, id: 1778 }, { from: 1990, to: 1992, id: 1782 }], // FC-1050 (1989 Bianchi Krono) / FC-1055-SG, 105SC
     'shimano exage 400e 52 42t': [{ from: 1990, to: 1992, id: 7576 }], // FC-A400, Exage 400EX
     'shimano deore xt 48 38 26t': [{ from: 1990, to: 1993, id: 7578 }], // FC-M730-SG (crank of the M735 group)
     'shimano deore dx 48 38 26t': [{ from: 1988, to: 1993, id: 1809 }], // FC-MT60, Deore / Deore DX
@@ -2054,6 +2096,17 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless': 8199, // Sakae/Ringyo (SR) CTC-5DLA2, Custom
     'sr custom alloy cotterless 52 42t 170mm cranks': 8199,
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
+    // 1989 Bianchi US catalogue (gringineer scans).
+    "campagnolo croce d'aune 53 42t": [{ from: 1989, to: 1989, id: 1489 }], // Croce d'Aune (the bare key misses the chainring suffix)
+    'shimano ultegra 52 42t': [{ from: 1989, to: 1989, id: 1790 }], // FC-6400
+    'shimano sport lx 52 42t': [{ from: 1989, to: 1989, id: 1842 }], // FC-A452
+    'shimano exage motion 52 42t': [{ from: 1989, to: 1989, id: 7623 }], // FC-A250
+    'shimano exage country 48 38 28t': [{ from: 1989, to: 1989, id: 7638 }], // FC-M250
+    'shimano mountain lx 48 38 28t': [{ from: 1989, to: 1989, id: 1836 }], // FC-M452
+    'shimano deore xt 2 48 38 28t': [{ from: 1989, to: 1989, id: 1810 }], // FC-M730
+    'suntour gpx 52 42t': [{ from: 1989, to: 1989, id: 1984 }], // CW-GP00
+    'suntour blaze 52 42t': [{ from: 1989, to: 1989, id: 1981 }], // CW-BE34
+    'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
@@ -2414,6 +2467,9 @@ const COMPONENT_OVERRIDES = {
     'sun tour superbe forged light alloy fluted': 6694, // 1980 Raleigh Superbe: SunTour RS-1000 Superbe (1979-84)
     'sr mts 101 adjustable alloy': 6661, // 1986 Raleigh Elkhorn: SR MTS-101 (1980-90)
     'nitto mt1 4 bolt alloy clamp': 9412, // 1987 Raleigh Maverick 18 Pro: Nitto MT-1 (two-piece clamp MTB stem)
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'itm 400 laser etched anodized': [{ from: 1989, to: 1989, id: 6564 }], // ITM 400 Racing
+    'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
     'shimano 6400 ultegra sis indexed': [{ from: 1989, to: 1989, id: 6144 }], // 1989 Peugeot (FR) Galibier: SL-6400, 600 Ultegra SIS
@@ -2514,6 +2570,16 @@ const COMPONENT_OVERRIDES = {
     'shimano z408 down tube braze on': 6195, // Shimano SL-Z408, Z-Series
     'shimano xt fingertip shifters': 6158, // Shimano SL-M700, Deore XT (1983-86)
     'suntour fingertip ld 2800': 6307, // SunTour LD-2800 Power Thumb Shifter
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'shimano deore xt 2 sis': [{ from: 1989, to: 1989, id: 6160 }], // SL-M732
+    'shimano deore 2 sis': [{ from: 1989, to: 1989, id: 6156 }], // SL-MT62
+    'shimano mountain lx sis': [{ from: 1989, to: 1989, id: 6183 }], // SL-M453
+    'shimano exage country sis': [{ from: 1989, to: 1989, id: 7636 }], // SL-M250
+    'shimano exage action sis': [{ from: 1989, to: 1989, id: 6177 }], // SL-A351
+    'shimano sport lx sis': [{ from: 1989, to: 1989, id: 6191 }], // SL-A453, 7-speed (Sport SX has a 7sp cassette)
+    'suntour edge accushift': [{ from: 1989, to: 1989, id: 6285 }], // SL-4050
+    'campagnolo chorus synchro 2': [{ from: 1989, to: 1989, id: 7027 }], // A281 with Syncro inserts
+    'campagnolo athena synchro 2': null, // downtube Synchro-2; the matcher took the 1992 Athena Ergopower row
   },
   'Shifting Brake Levers': {
     'campagnolo athena synchro': [{ from: 1989, to: 1989, id: null }], // 1989 Peugeot (FR) Dolomites down-tube Synchro levers: the matcher hit the 1992 Ergopower row
@@ -2545,7 +2611,7 @@ const COMPONENT_OVERRIDES = {
     'dia compe 165': [{ from: 1986, to: 1986, id: 8872 }], // 1986 Raleigh Technium 440 USA: Dia-Compe 163 / 165 / 169 / 195 extension lever sets
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano ultegra aero': [{ from: 1988, to: 1990, id: 416 }], // BL-6401, 600 Ultegra (aero)
-    'shimano 105 aero': [{ from: 1990, to: 1993, id: 411 }], // BL-1055, 105SC
+    'shimano 105 aero': [{ from: 1987, to: 1989, id: 406 }, { from: 1990, to: 1993, id: 411 }], // BL-1050 SLR 105 (1989 Bianchi Krono) / BL-1055, 105SC
     'shimano exage 400ex aero': [{ from: 1989, to: 1994, id: 441 }], // BL-A351, Exage Action / 400EX (aero)
     'shimano deore xt 2 finger': [{ from: 1989, to: 1993, id: 430 }], // BL-M732 / M733
     'shimano deore dx 2 finger': [{ from: 1989, to: 1993, id: 425 }], // BL-MT63 (2-finger)
@@ -2589,6 +2655,12 @@ const COMPONENT_OVERRIDES = {
     'dia compe 281 levers': 8113, // Dia-Compe 281 / 281M, mountain bike levers (1986 catalogue)
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
     'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'shimano deore xt 2 m733': [{ from: 1989, to: 1989, id: 430 }], // BL-M732 / BL-M733
+    'shimano deore 2 mt63': [{ from: 1989, to: 1989, id: 425 }], // BL-MT63 (2-finger)
+    'shimano mountain lx m451': [{ from: 1989, to: 1989, id: 7632 }], // BL-M451-A
+    'shimano exage motion aero': [{ from: 1989, to: 1989, id: 442 }], // BL-A251
+    'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
@@ -2720,6 +2792,8 @@ const COMPONENT_OVERRIDES = {
     'lyotard with toe clips and straps': 3815, // Lyotard 460D
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
     'shimano deore sis': [{ from: 1987, to: 1993, id: 3965 }], // 1987 Colnago Master Mountain Bike: PD-MT60 / PD-MT61, Deore
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
@@ -2764,7 +2838,7 @@ const COMPONENT_OVERRIDES = {
     'simplex slj 4160': [{ from: 1978, to: 1978, id: 7340 }], // PX 10 LE: Simplex 4160 (1978)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'campagnolo chorus': [{ from: 1987, to: 1991, id: 5742 }], // C0R2, Chorus (matcher took the mid-90s RS)
-    'campagnolo athena': [{ from: 1990, to: 1991, id: 5736 }], // SP-10AT (v2)
+    'campagnolo athena': [{ from: 1988, to: 1989, id: 5742 }, { from: 1990, to: 1991, id: 5736 }], // C0R2 (fitted to Athena; 1989 Bianchi Giro) / SP-10AT (v2)
     'shimano deore xt': [{ from: 1989, to: 1993, id: 5892 }], // SP-M730
     'suntour xc pro': [{ from: 1990, to: 1992, id: 8046 }], // SP-XP00 (row dated 1992)
     'ritchey force directional': [{ from: 1990, to: 1993, id: 8407 }], // Force Directional Seatpost (Mountain)
@@ -2945,6 +3019,12 @@ const COMPONENT_OVERRIDES = {
     '1 2" x 3 32" regina d\'oro': 1382, // 1975 Raleigh Team Professional / Professional Mk IV
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'renolds': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'shimano ultegra silver': [{ from: 1989, to: 1989, id: 1406 }], // CN-6400
+    'shimano ug50': [{ from: 1989, to: 1989, id: 7614 }], // CN-UG50
+    'shimano m732': [{ from: 1989, to: 1989, id: 7642 }], // CN-M732
+    'shimano mt62': [{ from: 1989, to: 1989, id: 7631 }], // CN-MT62
+    'suntour gpx silver': [{ from: 1989, to: 1989, id: 7783 }], // CH-GP00
   },
   Cassettes: {
     // 1990 Bianchi US catalogue: SunTour AccuShift Plus 7-speed cassettes.
@@ -2953,7 +3033,7 @@ const COMPONENT_OVERRIDES = {
     'suntour accushift plus black 14 28t 7 speed': [{ from: 1990, to: 1992, id: 1216 }],
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano hyperglide silver 13 23t 8 speed': [{ from: 1990, to: 1996, id: 1208 }], // CS-7401, Dura-Ace 8sp HG
-    'shimano hyperglide silver 12 28t 7 speed': [{ from: 1990, to: 1994, id: 1202 }], // CS-HG90 (Deore XT)
+    'shimano hyperglide silver 12 28t 7 speed': [{ from: 1989, to: 1989, id: 7641 }, { from: 1990, to: 1994, id: 1202 }], // CS-M732 Deore XT-II (1989 Bianchi Equinox) / CS-HG90 (Deore XT)
     'shimano hyperglide silver 13 30t 7 speed': [{ from: 1990, to: 1993, id: 7567 }], // CS-HG70 (LX / DX bikes)
     'shimano hyperglide black 14 28t 7 speed': [{ from: 1990, to: 1990, id: 7601 }], // CS-HG20, 200GS
     'shimano hyperglide black 13 23t 7 speed': [{ from: 1990, to: 1993, id: 1195 }], // CS-HG50, Exage
@@ -2982,6 +3062,9 @@ const COMPONENT_OVERRIDES = {
     ],
     'shimano hyperglide 13 28t 7 speed': [{ bike: 'Eros', from: 1993, to: 1993, id: 7567 }], // RX100: CS-HG70; the Europa (AT10) has no row
     'shimano hyperglide 13 30t 7 speed': [{ from: 1993, to: 1993, id: 1195 }], // Ibex / Osprey / Project 5 / Project 3, all Exage LT / ES: CS-HG50
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'shimano hyperglide silver 13 28t 7 speed': [{ bike: 'Super Grizzly', from: 1989, to: 1989, id: 7641 }, { bike: 'Grizzly', from: 1989, to: 1989, id: 7630 }, { bike: 'Incline', from: 1989, to: 1989, id: 7630 }], // CS-M732 on the XT-II bike, CS-MT62 on Deore II / Mountain LX
+    'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
@@ -3167,6 +3250,8 @@ const COMPONENT_OVERRIDES = {
     'sun tour ultra 7 13 32t': 2237, // 1980 Raleigh Touring 14: SunTour NW-7000, New Winner Ultra 7 (the only Ultra-7 row in range)
     // 1990 Bianchi Grizzly / Project 7 (XC-Pro groups); the row is under Cassettes, the CSV label is Freewheel.
     'suntour accushift plus silver 12 30t 7 speed': [{ from: 1990, to: 1990, id: 1222 }], // SunTour CS-AP00-S7U, XC Pro
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
@@ -3375,6 +3460,10 @@ const COMPONENT_OVERRIDES = {
     'weinmann concave section alloy': 7776, // 1982 Raleigh Gran Sport: A124, as the 1983 Gran Sport
     '7x type alloy 36°': 4923, // 1986 Raleigh Teton: Araya 7X, as the other 1986 Raleigh MTBs
     'pellet record du monde light alloy': 5189, // 1977 Peugeot (DE) PY 10/CP: Super Champion Record du Monde ("Pellet Super Champion" in the same catalogue)
+    // 1989 Bianchi US catalogue (gringineer scans).
+    'araya rm20 super hard anodized': [{ from: 1989, to: 1989, id: 4930 }], // RM-20
+    'araya rm20 black anodized': [{ from: 1989, to: 1989, id: 4930 }], // RM-20
+    'araya rx7 silver anodized': [{ from: 1989, to: 1989, id: 8443 }], // RX-7
   },
 };
 
