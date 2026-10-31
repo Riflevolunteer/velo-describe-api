@@ -515,6 +515,51 @@
   Unique headsets, Nitto bars / stem.
 - Regression: all other CSVs regenerate with unchanged link counts.
 
+## 1989 Raleigh (UK) — `1989_raleigh_spec.csv` (13 bikes, 230 specs, 74 linked)
+
+- Source: https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1989.html
+  (15 scans, 1162 x 1600, `Raleigh+Lightweights+1989-page-0NN.jpg`). Raleigh
+  Industries Ltd, Nottingham Lightweights brochure, "Issue Date JAN '89",
+  dealer stamp Bakers Cycles, Ringwood -> `data_source` 323, country GB. Spec
+  boxes on files p13 (road + Mountain Bikes) and p14 (Touring Bikes, Chinook,
+  Gemini), read from 3x sips crops; colours / sizes from the model pages (a
+  Sonnet subagent, colours.json in the scratchpad). Printed p. 11 (Ozark and
+  Appalachian blurbs) is not among the scans, so those two have no sizes or
+  colours. Road Ace Select sizes read as 54.5 / 57 / 59.5 / 63 cm. Header as
+  1988 plus Colors and Weight (kgs).
+- Models: Record Ace Moderne, Road Ace Select, Delta, Elix (racing geometry
+  per the table), Quadra II, Strada (training), Avanti, Appalachian, Ozark,
+  Chinook (Mountain Bikes), Randonneur, Royal, Touriste (Touring Bikes). Not
+  added: Gemini 6 / Gemini 18 ("city bike styling", full mudguards and
+  carrier: hybrid, as 1988) and the frame-only types 8901-8906 (framesets).
+- Overrides (1989 Raleigh block per category): 105 moves to the 1051 parts
+  for the 7-speed bikes (RD-1051 4450, FH-1051 7640, FC-1051-BP 7639; Delta
+  pedals PD-1051 3954 via a bike-keyed 'shimano 105' entry); FD-1050 2462 and
+  HP-1050 3083 stay (no 1051 rows). The 1988 'shimano 105 sis indexed' rear
+  range was narrowed to 1987-88 + 1989 -> 4450. Santé rear -> RD-5001 4535 (the
+  only Santé rear dated 1989). Elix A452 = Sport LX (FD 2534, RD 4536, FC
+  1842), A450 = Exage Sport (HP 3106, FH 3573, BR 7211, PD 3976); Strada A350 =
+  Exage Action (FD-A351-B 2524, RD 4514, BR 1000, FC 7622); Avanti Deore XT II
+  = M732 (FD 2500, RD 4492, hubs 3551, BR-M732 983, HP-M730 7227 judgment, SP-
+  M730 5892); Appalachian Deore II = MT62 (FD 2490, RD 4482, hubs 3543, BR
+  975); Ozark M452 Mountain LX (FD 2528, RD 4524, FC 1836), PD-M450 7199;
+  Chinook / Touriste M350 Exage Trail (FD 2527, RD 7183, FC 7195, PD 7200);
+  Randonneur Deore = MT60 (HP 7228, FC 1809), Maillard 600 CX 3392. Delta
+  brakes BR-1050-49 953 (racing geometry). TTT Grand Prix bar -> 3ttt CGP 2768
+  (keyed '3ttt grand prix ...': WORD_ALIASES rewrites ttt -> 3ttt).
+- Matcher picks kept: TTT Record stem -> 3ttt AR Record 6404 (1980-91),
+  Brooks Professional leather -> Team Professional 5303 (as 1974), Michelin
+  Select 6826, Turbo Special 5519, PD-T100 3952, PD-6400 3958, Ultegra 6400
+  rows.
+- Left unlinked: Alesa rims, Quadra II 105 brakes (reach not stated), the XT
+  II / Deore II / Royal / Touriste Biopace triples, Ozark / Chinook split
+  cantilever + U-brake cells, Ozark M450/452 hubs, Deore XT II / Deore II
+  pedals, Deore II headset, Isca / Raleigh Lightweight / Anatomic saddles, SR /
+  Sakae posts and stems, Panaracer Timbuk II, Skinside CST and generic tyres,
+  Tange headsets, MKS AR-3.
+- Regression: every other CSV regenerates with an identical linked-spec list
+  (compared component ids, not just counts).
+
 ## 1982 Raleigh — `1982_raleigh_spec.csv` (6 bikes, 73 specs, 30 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1982-raleigh-lightweights-racing-catalogue.993/

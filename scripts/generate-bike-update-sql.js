@@ -121,7 +121,7 @@ function bikeSourceCond(sourceRefSelect) {
 const CATALOGUE_COUNTRY = new Map([
   ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
   ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1980|raleigh', 'US'], ['1981|raleigh', 'CA'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
-  ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], ['1988|raleigh', 'GB'], // TI Raleigh UK brochures
+  ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], ['1988|raleigh', 'GB'], ['1989|raleigh', 'GB'], // TI Raleigh UK brochures
   ['1973|falcon', 'GB'], ['1974|falcon', 'GB'], ['1986|falcon', 'GB'], // 1986: Falcon Cycles Ltd, Brigg; undated, IceniCAM files it c1992
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
   ['1982|battaglin', 'IT'], // Cicli Battaglin, Marostica (VI): Italian-language sheets and a 1981-82 lire price list
@@ -577,6 +577,16 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
+    // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
+    'shimano 105 sis indexed colour': [{ from: 1987, to: 1989, id: 2462 }], // Delta: FD-1050 (no FD-1051 row)
+    'shimano ultegra sis': [{ from: 1988, to: 1991, id: 2478 }], // Road Ace Select: FD-6400
+    'shimano a452 sis indexed': 2534, // Elix: FD-A452-B, Sport LX
+    'shimano a350 sis front and rear': 2524, // Strada: FD-A351-B, Exage Action
+    'shimano deore xt ii': 2500, // Avanti: FD-M732, Deore XT-II
+    'shimano deore ii': 2490, // Appalachian: FD-MT62, Deore II
+    'shimano m452 sis': 2528, // Ozark: FD-M452, Mountain LX
+    'shimano m350 sis': 2527, // Chinook / Touriste: FD-M350 / FD-M351, Exage Trail
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano santé sis indexed': 2533, // Record Ace Moderne: FD-5000, Sante
     'shimano ultegra sis indexed': 2478, // Road Ace Select: FD-6400, 600 Ultegra
@@ -841,9 +851,20 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
+    // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
+    // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
+    'shimano santé sis indexed': [{ from: 1989, to: 1989, id: 4535 }], // 1989 Record Ace Moderne: RD-5001 (RD-5000 ends 1988; 1988 left unlinked, both rows cover it)
+    'shimano 105 sis indexed colour': [{ from: 1989, to: 1989, id: 4450 }], // Delta (7-speed): RD-1051
+    'shimano ultegra sis': [{ from: 1988, to: 1991, id: 4466 }], // Road Ace Select: RD-6400
+    'shimano a452 sis indexed': 4536, // Elix: RD-A452, Sport LX
+    'shimano a350 sis front and rear': 4514, // Strada: RD-A350, Exage Action
+    'shimano deore xt ii': 4492, // Avanti: RD-M732-SGS, Deore XT-II (the matcher took the bare 1994-95 Deore XT row 4496)
+    'shimano deore ii': 4482, // Appalachian: RD-MT62-SGS, Deore II
+    'shimano m452 sis': 4524, // Ozark: RD-M452, Mountain LX
+    'shimano m350 sis': 7183, // Chinook / Touriste: RD-M350, Exage Trail
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano ultegra sis indexed': 4466, // Road Ace Select: RD-6400, 600 Ultegra
-    'shimano 105 sis indexed': [{ from: 1987, to: 1989, id: 4449 }], // Team Competition / Quadra / Triathlon: RD-1050, 105
+    'shimano 105 sis indexed': [{ from: 1987, to: 1988, id: 4449 }, { from: 1989, to: 1989, id: 4450 }], // 1988 Team Competition / Quadra / Triathlon: RD-1050, 105 // 1989 Quadra II (7-speed): RD-1051
     'exage a450 front and rear sis indexed': 4516, // Corsa: RD-A450, Exage Sport
     'shimano deore sis indexed': [{ from: 1987, to: 1989, id: 4487 }], // Randonneur: RD-MT60, Deore
     'shimano deore sis indexed handlebar control': [{ from: 1987, to: 1989, id: 4487 }], // Avanti: as above
@@ -1153,6 +1174,15 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 4487 }], // 1987 Colnago Master Mountain Bike: RD-MT60, Deore
   },
   Hubs: {
+    // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
+    // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
+    'shimano 105 q r': [{ from: 1989, to: 1989, id: 7640 }], // Quadra II / Royal: FH-1051-6/7 (cassette)
+    'shimano 105 q r colour': [{ from: 1989, to: 1989, id: 7640 }], // Delta: as above
+    'shimano ultegra q r': [{ from: 1988, to: 1991, id: 3534 }], // Road Ace Select: FH-6400 / HB-6400-F
+    'shimano a450 alloy q r': 3573, // Elix (cassette): FH-A450
+    'shimano deore xt ii q r': 3551, // Avanti: FH-M732 / HB-M730-F, Deore XT-II
+    'shimano deore ii q r': 3543, // Appalachian: FH-MT62 / HB-MT62-F, Deore II
+    'maillard 600cx sealed qr': 3392, // 1989 Randonneur: Maillard 600 CX (only row, dated 1980)
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano santé': [{ from: 1988, to: 1989, id: 3580 }], // Record Ace Moderne: FH-5000 / HB-5000
     'shimano ultegra quick release': [{ from: 1988, to: 1991, id: 3534 }], // Road Ace Select: FH-6400 / HB-6400-F
@@ -1359,6 +1389,14 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
+    // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
+    'shimano santé aero levers with q r': 1008, // Record Ace Moderne: BR-5000-49
+    'shimano 105 slr aero levers colour': [{ from: 1987, to: 1989, id: 953 }], // Delta (racing geometry): BR-1050-49; Quadra II reach not stated, unlinked
+    'shimano a450 slr aero levers': 7211, // Elix: BR-A450
+    'shimano a350 slr aero levers': 1000, // Strada: BR-A350, Exage Action
+    'shimano deore xt ii cantilever front and rear': 983, // Avanti: BR-M732 cantilever, Deore XT-II
+    'shimano deore ii cantilever': 975, // Appalachian: BR-MT62, Deore II
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano santé aero levers with quick release': 1008, // Record Ace Moderne: BR-5000-49
     'shimano ultegra aero levers': [{ from: 1988, to: 1993, id: 966 }], // Road Ace Select: BR-6400, 600 Ultegra
@@ -1644,6 +1682,11 @@ const COMPONENT_OVERRIDES = {
     'shimano "new" deore': [{ from: 1987, to: 1989, id: 978 }], // 1987 Peugeot (US) Canyon Express: BR-MT60, as the Colnago Deore SIS
   },
   Headsets: {
+    // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
+    // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
+    'shimano a450': [{ from: 1988, to: 1989, id: 3106 }], // Elix / Strada: HP-A450, Exage Sport
+    'shimano deore': [{ from: 1988, to: 1989, id: 7228 }], // 1989 Randonneur: HP-MT60, Deore
+    'shimano deore xt ii': 7227, // Avanti: HP-M730 (the only XT headset dated 1989; no M732 row)
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano santé': [{ from: 1988, to: 1989, id: 3107 }], // Record Ace Moderne: HP-5000
     'shimano 600 ultegra alloy': 3087, // Road Ace Select: HP-6400
@@ -1746,6 +1789,16 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
+    // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
+    'shimano santé biopace 52 42t': 1841, // Record Ace Moderne: FC-5000
+    'shimano 105 biopace 52 42t': [{ from: 1989, to: 1989, id: 7639 }], // Quadra II: FC-1051-BP
+    'shimano 105 biopace 52 42t colour': [{ from: 1989, to: 1989, id: 7639 }], // Delta: as above
+    'shimano a452 biopace 52 42t': 1842, // Elix: FC-A452, Sport LX
+    'shimano a350 biopace 52 42t': 7622, // Strada: FC-A350, Exage Action
+    'shimano m452 biopace 48 38 28': 1836, // Ozark: FC-M452, Mountain LX Biopace-HP triple
+    'shimano m350 biopace 48 38 28t': 7195, // Chinook: FC-M350, Exage Trail
+    'shimano deore biopace hp 48 38 28t': [{ from: 1988, to: 1993, id: 1809 }], // Randonneur: FC-MT60, Deore
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano santé 52 42 biopace': 1841, // Record Ace Moderne: FC-5000
     'shimano ultegra 52 42': [{ from: 1988, to: 1994, id: 1790 }], // Road Ace Select: FC-6400 (round rings; 1789 is the BP / SG version)
@@ -2106,6 +2159,9 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
+    // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
+    '3ttt grand prix cushion tape': [{ from: 1986, to: 1991, id: 2768 }], // 1989 Record Ace Moderne / Road Ace Select: 3ttt CGP, Curva Record Grand Prix
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'cinelli type 64 cushion tape': 2802, // Cinelli 64 Giro d'Italia, 80's model (1980-88)
     'atax philippe tour de france cable groove': [{ from: 1982, to: 1989, id: 2902 }], // 1989 Peugeot (NL) Galibier: Philippe Tour de France 357 (Atax-Philippe)
@@ -2526,6 +2582,11 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
   },
   Pedals: {
+    // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
+    // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
+    'shimano a450': 3976, // Elix / Strada: PD-A450
+    'shimano m450': 7199, // Ozark: PD-M450, Exage Mountain
+    'shimano m350': 7200, // Chinook: PD-M350, Exage Trail
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano ultegra platform': [{ from: 1988, to: 1993, id: 3958 }], // Record Ace Moderne / Road Ace Select: PD-6400 (catalogue prints 'Ultagra')
     'shimano 105 alloy platform': [{ from: 1987, to: 1988, id: 3953 }], // Team Competition: PD-1050
@@ -2628,7 +2689,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo c record': 3693, // Campagnolo 305/501, C-Record
     'campagnolo victory': 3720, // Campagnolo 405/000, Victory
     'ofmega master': [{ bike: 'Pista', id: 3880 }, { id: 3879 }], // 1990 Bianchi Pista: Ofmega Master Pista / else Master Strada (Road)
-    'shimano 105': [{ to: 1989, id: 3953 }, { from: 1990, id: 3955 }], // PD-1050 / PD-1055 105SC
+    'shimano 105': [{ bike: 'Delta', from: 1989, to: 1989, id: 3954 }, { to: 1989, id: 3953 }, { from: 1990, id: 3955 }], // PD-1050 / PD-1055 105SC // 1989 Raleigh Delta: PD-1051
     'shimano dura ace': [{ from: 1984, to: 1989, id: 3970 }, { from: 1990, id: 3971 }], // PD-7400 / PD-7401
     // 1993 Bianchi ("PM" in the catalog is LOOK's PP series).
     'look pp76': 3791, // LOOK PP76
@@ -2652,6 +2713,9 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1993, id: 3965 }], // 1987 Colnago Master Mountain Bike: PD-MT60 / PD-MT61, Deore
   },
   'Seat Posts': {
+    // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
+    // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
+    'shimano deore xt ii': 5892, // 1989 Avanti: SP-M730, Deore XT
     'suntour xc alloy 300mm': 5935, // 1987 Peugeot (US): SunTour SP-2000, XC (300mm) (SunTour linking pass 2026-10-30)
     // Judgement calls, 2026-10-30 (user's go-ahead).
     'sakae super light alloy with adjusting clamp': 5852, // 1981 Raleigh Super Course: SR RY-P1SL III, Royal-P1 Super Light (1970-82, SR catalogue), not the 1970 velobase 5854
