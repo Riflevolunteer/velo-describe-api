@@ -586,7 +586,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 6400': [{ from: 1987, to: 1991, id: 2478 }], // 1987 Peugeot (FR) Puymorens: FD-6400, 600 Ultegra (row from 1988; the catalogue dates it 1987)
     'shimano sis 105 fd1050': 2462, // 1987 Peugeot (US) Galaxie / Comete: FD-1050, 105
     'shimano new deore xt sis fd m730': 2499, // 1987 Peugeot (US) Cannon Ball Express: FD-M730, Deore XT
-    'huret eco 5': 8796, // 1987 Peugeot (US) Corbier P4 / P14: printed 'ECO 5' = the Eco S of the 1986 Corbier; Huret Eco (front)
+    'huret eco 5': 8489, // 1987 Peugeot (US) Corbier P4 / P14: printed 'ECO 5' = the Eco S of the 1986 Corbier; the Eco S set's front is the Club AS (Huret new 82 leaflet)
     'shimano z 501 stem shifters': 2542, // 1987 Peugeot (US) Avoriaz / Iseran: Z-Series group cell; front as the 1986 FD-Z202
     'shimano z501 stem shifters': 2542, // 1987 Peugeot (US): as above
     // 1987 Peugeot FR table / US Comete group cells: front as the 1986 'Huret Rival, front' 8488. Bike-keyed: the 1987
@@ -594,11 +594,12 @@ const COMPONENT_OVERRIDES = {
     'huret rival': [{ bike: "A 400A W 'Comète'", id: 8488 }, { bike: 'Comete', id: 8488 }, { bike: 'Zenith 10', id: 8488 }, { bike: 'Granada 10', id: 8488 }], // + 1987 Raleigh Zenith / Granada 10
     'huret club': 2379, // 1983 Peugeot UO 5 Club: Huret Club II 1000-01 / 1001-01 (1978-87; July 1981 catalogue, merged with the 1984 Sachs Huret Club 1000-01 row 2026-10-30)
     'huret club 2': 2379, // 1986-87 Peugeot (FR) Avoriaz / Aubisque / Lavandou: Club II
-    'huret club brazed on': 8489, // 1984 Raleigh Record Sprint / Quasar / Pulsar / Team Cadet: Sachs Huret Club AS 1005-01 (the Club S is its braze-on version)
+    'huret club brazed on': 10008, // 1984 Raleigh Record Sprint / Quasar / Pulsar / Team Cadet: Huret 3040-01, Club S braze-on (Huret new 82 leaflet)
+    'huret eco s': 8489, // 1984 Raleigh Medale / Stratos front: no Eco S front exists, the Eco S set's front is the Club AS (Huret new 82 leaflet)
     'huret rival white': [{ bike: "PG 10B W 'Aravis'", id: 8488 }, { bike: "PG 10 W 'Galibier'", id: 8488 }, { bike: 'PH 501 Ventoux', id: 8488 }],
     'shimano fd z202 front': 2542, // 1986 Peugeot (US) Avoriaz / Iseran / City Express: FD-Z202, Z-Series (1984-88)
     'shimano z 202 front': 2542, // 1986 Peugeot (US) U.S. Express
-    'huret eco s satin finish': 8796, // 1986 Peugeot (US) Corbier: Huret Eco (front), the only Eco front
+    'huret eco s satin finish': 8489, // 1986 Peugeot (US) Corbier: the Eco S set's front is the Club AS (Huret new 82 leaflet)
     'huret rival front': 8488, // 1986 Peugeot (US) Ventoux / Tourmalet: Sachs Huret Rival 1086-00 (1984)
     'huret rival (set)': 8488, // 1986 Peugeot (FR) PH 501 "Ensemble Huret Rival": the front of the set
     'shimano deore xt front': 2497, // 1986 Peugeot (US) table Canyon Express: FD-M700, Deore XT

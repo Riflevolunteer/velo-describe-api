@@ -154,6 +154,37 @@
   1981 "Club 1000-01 CPSC" (158g); 4298 "Challenger II" (no refs) duplicates 4273 "Challenger 2400 / 2440 /
   ..." (the 1981 Challenger II refs). No Rival, Eco S front or Luxe front in this catalogue.
 
+## Huret "new 82" leaflet — November 1981 (disraeligears.co.uk, 6 scans), `data_source` 314
+
+- Label "Huret new 82 leaflet (November 1981)". Source:
+  https://www.disraeligears.co.uk/site/huret_-_new_82.html (`00_main_images/huret_-_new_82_scan_1..6_main_image.jpg`,
+  1560 x 2220). French / English; every sheet badged "new 82", "NOV. 81" in the margin of sheets 2, 5, 6. Sheets: 1-2
+  Rival set, 3 Eco S set, 4 Eco Mark II set, 5 Sensosaver 3 and Duopar Eco, 6 Eco set. Weights and capacities, no
+  prices. Read directly (6 pages, no subagents). Out of scope: braze-on fittings 3014 (oval) / 3034 (round).
+- New for 1982 per the leaflet: Rival group (rear 2850-00, fronts 1086-00 / Rival S 1056-00 / braze-on 3030-01,
+  lever), Eco S 2830-00, Club AS 1005-01 / 1009-01 (ASM without casing stop), Club S 3040-01 braze-on, Eco TD
+  2820-01, Luxe AS levers (clip, or central boss 3120-00 S / 3130-00 S), Sensosaver 3 (rear 2800-01, lever 1169-00).
+  Luxe A replaces the Luxe lever (9994 Luxe 1136-01 / 1134-01 stays 1981). Disraeli's "Rival 2850-00 1st style 1981?"
+  is a late-1981 release for 1982. The Eco S set is Eco S rear + Club AS front + Luxe AS levers: there is no Eco S front.
+- year_from 1984 -> 1982 (rows first dated by June 1984): 8485 Eco S, 8488 Rival 1086-00, 8489 Club AS, 8493 Rival
+  lever 3252-00, 6112 Luxe AS, 8496 Luxe A.
+- year_from moved later (velobase buckets; revert values): 4401 Rival 2850-00 1980 -> 1982 ("nouveau", absent from c.
+  1980 and July 1981); 4276 Duopar Eco 1970 -> 1980 (absent from the full 1976 catalogue, first in c. 1980; year_to 1980
+  -> 1982); 4301 Huret Eco 1960 -> 1980 (absent from 1973 / 1975 / 1976, first in c. 1980).
+- Retitled: 8489 "Sachs Huret Club AS 1005-01" -> "Sachs Huret Club AS 1005-01 / 1009-01" (search_text too), year_to
+  1984 -> 1987 for the 1986-87 Peugeot Corbier Eco S fronts now linked to it. Descriptions: 8488 (braze-on and Rival S
+  now point to their own rows), 6112 (central-boss refs), 2379 ("sold as plain Club from 1982").
+- Added (brand Huret 139, group NULL): 10004 Eco TD 2820-01 (1982), 10005 Eco Sensosaver 2800-01 (1982), 10006 Rival S
+  1056-00 (1982-84), 10007 Rival braze-on 3030-01 (1982-84), 10008 Club S braze-on 3040-01 (1982-84), 10009 Sensosaver 3
+  lever 1169-00 (1982). The 1982-84 ones end 1984 because the June 1984 catalogue names them inside 8488 / 8489.
+- Bike links: 1984 Raleigh "Huret Club brazed-on" x4 [6177 6200 6223 6245] 8489 -> 10008; Eco S fronts -> 8489 Club AS:
+  1984 Raleigh "Huret ECO-S" Medale / Stratos [6470 6427] (were unlinked), 1986 Peugeot Corbier "Eco S, satin finish"
+  [14899 14919] and 1987 "ECO 5" [15855 15873] (were 8796). Front overrides updated: 'huret club brazed on' 10008,
+  'huret eco s' / 'huret eco s satin finish' / 'huret eco 5' 8489.
+- Left: 12 "Huret Rival" rears (1985-87) on 4279, a bare velobase row with no years duplicating 4401 / 8957 (merge
+  later); 4301 / 4399 Eco duplicate pair (the leaflet's 235 g Eco matches both); front capacity "26T max difference"
+  here vs 16T in the 1984 rows (different measure, left).
+
 ## Sachs-Huret catalogue — June 1984 (labibleduvelocataloguessachshuret.blogspot.com, 16 pages)
 
 - `data_source` 156, label "Sachs-Huret catalogue (June 1984)". Source:
