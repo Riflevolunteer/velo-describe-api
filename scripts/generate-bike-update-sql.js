@@ -851,6 +851,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
+    // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
+    'campagnolo victory special': [{ to: 1986, id: 4168 }], // Rekord 920: G010-SM, Victory (1984-86)
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
     // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
     'shimano santé sis indexed': [{ from: 1989, to: 1989, id: 4535 }], // 1989 Record Ace Moderne: RD-5001 (RD-5000 ends 1988; 1988 left unlinked, both rows cover it)
@@ -1174,6 +1176,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 4487 }], // 1987 Colnago Master Mountain Bike: RD-MT60, Deore
   },
   Hubs: {
+    // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
+    'campagnolo victory': [{ from: 1984, to: 1987, id: 3281 }], // Rekord 920: Victory 422 (low flange), as 'campagnolo new victory'
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
     // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
     'shimano 105 q r': [{ from: 1989, to: 1989, id: 7640 }], // Quadra II / Royal: FH-1051-6/7 (cassette)
@@ -1789,6 +1793,8 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
+    'campagnolo victory 42 52t': 1516, // Rekord 920: 0355, Victory double
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
     // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
     'shimano santé biopace 52 42t': 1841, // Record Ace Moderne: FC-5000
@@ -2050,6 +2056,9 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
+    // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
+    'italia s turbo': 5503, // Specialissima X4: Selle Italia Super Turbo (as on the 1987 US X4)
+    'leather s mundialita': 5497, // Rekord 920: Selle Italia Mundialita (1985-88)
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'brooks professional leather pre softened honey finish': 5295, // Randonneur: Brooks Professional pre-softened (1987-2000)
     'selle italia turbo special lycra': 5519, // Record Ace Moderne: Turbo Special (row dated 1990; the only Turbo Special)
@@ -2846,6 +2855,8 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
+    'regina silver': [{ from: 1985, to: 1987, id: 1386 }], // Rekord 920: Regina Extra "Silver BX", paired with the BX Silver freewheel
     'suntour ap 12 chain': 9727, // 1993 Bianchi: SunTour CH-AP12 (SunTour linking pass 2026-10-30)
     'sedis 110 links delta treated': 1402, // 1980 Peugeot PX 18 M / MC, PK 65: Sedisport Delta (// linkCoverage pass 2026-10-30)
     'sedisport black 1 2 x 3 32': [{ from: 1980, id: 1402 }], // 1987 Peugeot (US): as 'sedisport black'
@@ -2973,6 +2984,8 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 13 30t 7 speed': [{ from: 1993, to: 1993, id: 1195 }], // Ibex / Osprey / Project 5 / Project 3, all Exage LT / ES: CS-HG50
   },
   Freewheels: {
+    // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
+    'regina cx 6 speed 13 23t': 2168, // Specialissima X4: Regina CX (6 speed); the CX/CX-S row ends 1985
     'shimano 7 speed cassette 13x24': [{ bike: "C 531 SB Z 'Galibier'", from: 1989, to: 1989, id: 1199 }], // 1989 Peugeot (FR) Galibier: CS-6400-7 (Cassettes row; the Freewheel label resolves in Freewheels); the Aspin (Sport LX) cassette has no row
     'sachs huret aris rival 6 speed 13x24': [{ from: 1989, to: 1989, id: 2121 }], // 1989 Peugeot (FR) Mont-Blanc: Sachs-Maillard Aris (1989)
     'campagnolo 13 14 15 17 19 21 24': [{ from: 1988, to: 1991, id: 2075 }], // 1989 Peugeot (NL) Galibier (14-speed): Campagnolo 7 speed narrow
@@ -3228,6 +3241,8 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
+    'mavic gl 330': 5067, // Specialissima X4: Mavic GL330 (1984-91)
     'mavic ma 40 hard anodised': [{ from: 1980, to: 1999, id: 5077 }], // 1989 Peugeot (FR) Cyclo: Mavic MA 40
     'mavic oxygen alloy': [{ from: 1988, to: 1991, id: 8150 }], // 1989 Peugeot (NL) Alpine Express: Oxygen M6 (the CD row is 1990-91)
     alu: null, // 1988 Peugeot (FR): bare material, not the Rigida Rigi-Alu the substring match found

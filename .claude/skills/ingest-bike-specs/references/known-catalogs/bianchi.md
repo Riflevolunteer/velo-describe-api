@@ -528,3 +528,11 @@
 - 2026-10-30: 1990 Alfana "Shimano Hyperglide silver 13-23T 7-speed" -> 7567 CS-HG70 (silver, 105SC; the Virata keeps 1202 via its bike range); 1990 Pista "Ambrosio Montreal black" -> 9175, as the 1987 Pista (row to 1990). +2.
 - 2026-10-30, left unlinked by decision: 1985 Super Leggera / Centenario "Vittoria Seta" (three road Corsa Seta variants), 1984 Nuovo Racing "Wolber Rallye" (four Rallye rows).
 - 2026-10-30: 1990 Giro / Super Leggera "Sedisport 270 black" chain left unlinked by decision (no 270 row).
+
+## 1986 Bianchi (DE) — `1986_bianchi_de_spec.csv` (2 bikes, 36 specs, 24 linked)
+
+- Source (2026-10-31): two German-language pages on https://labibleduvelocataloguesbianchi.blogspot.com/p/bianchi-1986.html, `bianchi-specialissima-x4-catalogue.jpg` (700x959, page 3, "Best.-Nr.: 1B2") and `1986 bianchi.jpg` (647x807, Rekord 920 Campagnolo). The page's other five "Bibibike Bianchi C4 1986 (1-5)" scans are the US C-4 Project catalogue loaded as 1988 (same pixel sizes as the saarf / bikalog set), so they were not used. `data_source` 324, country DE from the filename token. Partial: the rest of the brochure isn't online, and the two pages use different layouts, so they may come from separate brochures.
+- No year printed. Dated 1986 by components: launch-spec X4 (Columbus SLX, C Record with Super Record brakes, Regina CX 6-speed; the X4 first appears in January 1986 price lists) and a pre-Syncro Victory group on the Rekord 920 (Victory Special, 6-speed Regina BX Silver). No Chorus, Syncro or Ultegra, which all date the "1986" C-4 catalogue to 1988.
+- Translated to English on transcription (as 1977 Peugeot DE). Order number 1B2 and "12-Gang" go in Extras.
+- New overrides: Victory Special RD -> 4168 G010-SM (to 1986); Victory 42/52T crank -> 1516; Victory hubs -> 3281 low flange (1984-87; also filled the 1985 Japan Campione hub, 81 -> 82); Regina CX 6-speed -> 2168 (the CX/CX-S row ends 1985); "Regina Silver" chain -> 1386 Extra "Silver BX" (1985-87, judgement: pairs with the BX Silver freewheel); Mavic GL 330 -> 5067; "Italia S. Turbo" -> 5503 Super Turbo; "Leather, S. Mundialita" -> 5497 Selle Italia Mundialita.
+- Left unlinked: ITM bars and seat post, GPM headset, 3ttt Aero CCA bar and stem, plain alloy stem, spokes, frame and fork.
