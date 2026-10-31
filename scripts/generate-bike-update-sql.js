@@ -577,6 +577,14 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 2478 }], // 1989 Peugeot (FR) Galibier: FD-6400, 600 Ultegra
+    'shimano sport lx a 450': [{ from: 1989, to: 1989, id: 7184 }], // 1989 Peugeot (FR) Aspin: FD-A450, Exage Sport (printed "A 450")
+    'sachs huret "new success"': [{ from: 1989, to: 1989, id: 2439 }], // 1989 Peugeot (FR) Savoie: Sachs Huret ARIS New Success (the matcher hit the bare brand row)
+    'sachs huret 62 1 d white': [{ from: 1989, to: 1989, id: 8961 }], // 1989 Peugeot (FR) Mont-Blanc "AV: 62-1D": AV 62.1 D, Rival, as 1988
+    'simplex sxa 32': [{ from: 1989, to: 1989, id: 2578 }], // 1989 Peugeot (FR) SX A32
+    'simplex sxa 32 white': [{ from: 1989, to: 1989, id: 2578 }], // 1989 Peugeot (FR) SX A32
+    'simplex sxa 33': [{ from: 1989, to: 1989, id: 7312 }], // 1989 Peugeot (FR) SX A33
+    'simplex sxa 33 white': [{ from: 1989, to: 1989, id: 7312 }], // 1989 Peugeot (FR) SX A33
     'shimano exage sport lx': [{ from: 1988, to: 1989, id: 2526 }], // 1989 Peugeot (NL) Aspin / Chamonix: FD-A451-B, Exage Sport (front SIS)
     'shimano exage mountain': [{ from: 1989, to: 1989, id: 7625 }], // 1989 Peugeot (NL) Alpine Express (SIS): FD-M451
     'sachs rival': [{ from: 1989, to: 1989, id: 2440 }], // 1989 Peugeot (NL) Mont Blanc "Sachs Rival Aris Index": Sachs Huret ARIS Rival (1989)
@@ -826,6 +834,13 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
   },
   'Rear Derailleurs': {
+    'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 4466 }], // 1989 Peugeot (FR) Galibier: RD-6400, 600 Ultegra
+    'shimano sport lx a 450': [{ from: 1989, to: 1989, id: 4516 }], // 1989 Peugeot (FR) Aspin: RD-A450, Exage Sport
+    'sachs huret "new success"': [{ from: 1989, to: 1989, id: 4412 }], // 1989 Peugeot (FR) Savoie: ARIS New Success 1st Gen. (1987; 2nd Gen. is 1990)
+    'sachs huret eco sp': [{ from: 1989, to: 1989, id: 4399 }], // 1989 Peugeot (FR) Avoriaz / Lautaret / Lavandou: Sachs Huret Eco 2490-01 (1980-90; the matcher hit Huret Eco 1980-86)
+    'simplex foret': [{ from: 1989, to: 1989, id: 4565 }], // 1989 Peugeot (FR) Vanoise (18-speed) / Cyclo (21-speed): SX Foret GT (1989-90)
+    'simplex "foret"': [{ from: 1989, to: 1989, id: 4565 }], // 1989 Peugeot (FR) Cyclo: as above
+    'simplex so 01 t': [{ from: 1989, to: 1989, id: 4647 }], // 1989 Peugeot (FR) Dauphine: S001 T, as the 1988 PH 50 S "S00 IT"
     'shimano exage sport lx': [{ from: 1988, to: 1989, id: 4516 }], // 1989 Peugeot (NL) Aspin / Chamonix: RD-A450, Exage Sport
     'shimano exage mountain': [{ from: 1988, to: 1989, id: 7182 }], // 1989 Peugeot (NL) Alpine Express: RD-M450-GS / SGS
     'sachs rival': [{ from: 1989, to: 1990, id: 4417 }], // 1989 Peugeot (NL) Mont Blanc: Sachs Huret ARIS Rival (row dated 1990)
@@ -858,7 +873,7 @@ const COMPONENT_OVERRIDES = {
     'shimano rd 105': [{ from: 1987, to: 1989, id: 4449 }], // 1987 Peugeot (FR) Aspin: RD-1050, 105 SIS
     'shimano deore rd mt60sp sis gt': 4487, // 1987 Peugeot (FR) Normandie: RD-MT60, Deore
     'simplex sx 440 gt sp': 4622, // 1987 Peugeot (FR) table: as 'sx440 gt sp'
-    'simplex sx 440 gr sp': 4622, // 1987 Peugeot (FR) table: GR/SP misprint of GT/SP
+    'simplex sx 440 gr sp': 4622, // 1987 Peugeot (FR) table: GR/SP misprint of GT/SP; 1989 Peugeot (FR) Anjou prints it again
     'shimano 6400': [{ from: 1987, to: 1991, id: 4466 }], // 1987 Peugeot (FR) Puymorens: RD-6400, 600 Ultegra
     'campagnolo victory indexed': 4169, // 1987 Peugeot (FR) Dolomites: Victory S3 (the indexed 1987-88 version)
     'huret eco': [{ from: 1987, to: 1990, id: 4399 }, { id: 4301 }], // 1987 Peugeot (FR) table: bare Eco on a 1987 bike = Sachs Huret Eco 2490-01; earlier catalogues keep the matcher's 1960-80 Eco 4301
@@ -1125,6 +1140,9 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 4487 }], // 1987 Colnago Master Mountain Bike: RD-MT60, Deore
   },
   Hubs: {
+    'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 3534 }], // 1989 Peugeot (FR) Galibier: FH-6400 / HB-6400-F
+    'shimano sport lx a 450': [{ from: 1989, to: 1989, id: 3573 }], // 1989 Peugeot (FR) Aspin: FH-A450, Exage Sport / Sport LX
+    'campagnolo athena rl': [{ from: 1989, to: 1989, id: 3236 }], // 1989 Peugeot (FR) Dolomites: D300, Athena
     'shimano exage sport': [{ from: 1988, to: 1989, id: 3575 }], // 1989 Peugeot (NL) Aspin / Chamonix: HB-A450-R / F, Exage Sport
     'shimano deore xt quick release': [{ from: 1987, to: 1989, id: 3550 }], // 1989 Peugeot (NL) Europe Express: HB-M730, Deore XT M730
     'helicomatic quick release': [{ from: 1980, to: 1989, id: 3387 }], // 1989 Peugeot (NL) Anjou: Maillard Helicomatic
@@ -1322,6 +1340,9 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 966 }], // 1989 Peugeot (FR) Galibier: BR-6400
+    'shimano sport lx 450': [{ from: 1989, to: 1989, id: 7211 }], // 1989 Peugeot (FR) Aspin: BR-A450, Exage Sport / Sport LX
+    'modolo mach i': [{ from: 1989, to: 1989, id: 877 }], // 1989 Peugeot (FR) Savoie: Modolo Mach 1 (1988-90)
     'shimano exage sport lx': [{ from: 1988, to: 1989, id: 7211 }], // 1989 Peugeot (NL) Aspin / Chamonix: BR-A450, Exage Sport / Sport LX
     'shimano exage mountain rear u brake': [{ from: 1988, to: 1989, id: 7212 }], // 1989 Peugeot (NL) Alpine Express: BR-M450 cantilever (front; the rear U-brake has no separate row)
     'shimano deore xt rear deore xt u brake': [{ from: 1987, to: 1989, id: 981 }], // 1989 Peugeot (NL) Europe Express: BR-M730, as the M730 derailleurs
@@ -1599,6 +1620,10 @@ const COMPONENT_OVERRIDES = {
     'shimano "new" deore': [{ from: 1987, to: 1989, id: 978 }], // 1987 Peugeot (US) Canyon Express: BR-MT60, as the Colnago Deore SIS
   },
   Headsets: {
+    'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 3087 }], // 1989 Peugeot (FR) Galibier: HP-6400
+    'shimano sport lx a 452': [{ from: 1989, to: 1989, id: 3106 }], // 1989 Peugeot (FR) Aspin: HP-A450, Exage Sport (printed "A 452")
+    'strong light a9h': [{ from: 1989, to: 1989, id: 3112 }], // 1989 Peugeot (FR) Savoie: as 'stronglight a9h' (1987 FR)
+    'strong light a9': [{ from: 1989, to: 1989, id: 3112 }], // 1989 Peugeot (FR) Cyclo: as 'stronglight a9h'
     'shimano exage sport lx': [{ from: 1988, to: 1989, id: 3106 }], // 1989 Peugeot (NL): HP-A450, Exage Sport
     'shimano new 600': [{ from: 1988, to: 1994, id: 3087 }], // 1988 Peugeot (FR) PX SIS / PG SIS: HP-6400, 600 Ultegra
     'a9 sealed stronglight': 3112, // 1987 Peugeot (US) Galaxie: Stronglight A9, as 'stronglight a9' (// linkCoverage pass 2026-10-30)
@@ -1693,6 +1718,9 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    'shimano 6400 ultegra high performance 42x52': [{ from: 1989, to: 1989, id: 1790 }], // 1989 Peugeot (FR) Galibier: FC-6400, as the 1988 New 600 pick
+    'shimano sport lx a 452 42x52': [{ from: 1989, to: 1989, id: 1835 }], // 1989 Peugeot (FR) Aspin: FC-A450, Exage Sport (printed "A 452")
+    'mavic 630 42x52': [{ from: 1989, to: 1989, id: 1641 }], // 1989 Peugeot (FR) Racing Team: Mavic 630 (narrow font, 1984-89)
     'shimano exage sport lx biopace 42x52': [{ from: 1988, to: 1989, id: 1835 }], // 1989 Peugeot (NL): FC-A450, Exage Sport
     'shimano exage mountain biopace sis 28x38x48': [{ from: 1987, to: 1989, id: 1833 }], // 1989 Peugeot (NL) Alpine Express: FC-M450
     'shimano deore xt biopace 28x38x48': [{ from: 1987, to: 1989, id: 1810 }], // 1989 Peugeot (NL) Europe Express: FC-M730
@@ -1934,6 +1962,7 @@ const COMPONENT_OVERRIDES = {
     'sr custom alloy cotterless 5 pin detachable 52 42t 170mm cranks': 8199,
   },
   Saddles: {
+    'turbo white leather': [{ from: 1980, to: 1990, id: 5508 }], // 1989 Peugeot (FR) Dolomites / Galibier: Selle Italia Turbo, as bare "Turbo"
     'turbo white': [{ from: 1980, to: 1990, id: 5508 }], // 1989 Peugeot (NL) Galibier: Selle Italia Turbo, as bare "Turbo"
     'isca suede tornado': 5382, // 1986 Falcon Triomphe 12: Iscaselle Tornado (suede cover)
     'italia turbo white leather': 5508, // 1987 Peugeot (FR) table: Selle Italia Turbo
@@ -2280,6 +2309,8 @@ const COMPONENT_OVERRIDES = {
     'nitto mt1 4 bolt alloy clamp': 9412, // 1987 Raleigh Maverick 18 Pro: Nitto MT-1 (two-piece clamp MTB stem)
   },
   Shifters: {
+    'shimano 6400 ultegra sis indexed': [{ from: 1989, to: 1989, id: 6144 }], // 1989 Peugeot (FR) Galibier: SL-6400, 600 Ultegra SIS
+    'sachs huret "new success" indexed': [{ from: 1989, to: 1989, id: 6110 }], // 1989 Peugeot (FR) Savoie: ARIS New Success (type 1, 1987-90)
     'suntour xc sport': 6315, // 1986 Raleigh: SunTour LD-4700, Power Thumb Shifter, XC-Sport (SunTour linking pass 2026-10-30)
     'suntour pub 10 stem shifter': 7837, // 1986 Raleigh: SunTour LD-4300, PUB-10 (stem)
     'simplex sx p 4190': 7301, // 1983 Peugeot: Simplex SXP 4190 (1978-81) (Simplex spacing links 2026-10-30)
@@ -2378,6 +2409,7 @@ const COMPONENT_OVERRIDES = {
     'suntour fingertip ld 2800': 6307, // SunTour LD-2800 Power Thumb Shifter
   },
   'Shifting Brake Levers': {
+    'campagnolo athena synchro': [{ from: 1989, to: 1989, id: null }], // 1989 Peugeot (FR) Dolomites down-tube Synchro levers: the matcher hit the 1992 Ergopower row
     // 1990 Bianchi Rapidfire shifters (the 1990 groups are M650 DX / M550 LX / M735 XT)
     'shimano deore dx rapidfire': [{ from: 1990, to: 1993, id: 6359 }], // ST-M070 / ST-M071
     'shimano deore lx rapidfire': [{ from: 1990, to: 1992, id: 7581 }], // ST-M060
@@ -2452,6 +2484,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
   },
   Pedals: {
+    'shimano 6400 ultegra toe clips and straps': [{ from: 1989, to: 1989, id: 3958 }], // 1989 Peugeot (FR) Galibier: PD-6400
+    'shimano sport lx a 450 toe clips and straps': [{ from: 1989, to: 1989, id: 3976 }], // 1989 Peugeot (FR) Aspin: PD-A450
     'shimano exage sport lx': [{ from: 1988, to: 1989, id: 3976 }], // 1989 Peugeot (NL): PD-A450, Exage Sport
     'shimano exage mountain': [{ from: 1988, to: 1989, id: 7199 }], // 1989 Peugeot (NL) Alpine Express: PD-M450
     'shimano new 600 toe clips and straps': [{ from: 1988, to: 1993, id: 3958 }], // 1988 Peugeot (FR) PX SIS / PG SIS: PD-6400
@@ -2828,6 +2862,8 @@ const COMPONENT_OVERRIDES = {
     'shimano hyperglide 13 30t 7 speed': [{ from: 1993, to: 1993, id: 1195 }], // Ibex / Osprey / Project 5 / Project 3, all Exage LT / ES: CS-HG50
   },
   Freewheels: {
+    'shimano 7 speed cassette 13x24': [{ bike: "C 531 SB Z 'Galibier'", from: 1989, to: 1989, id: 1199 }], // 1989 Peugeot (FR) Galibier: CS-6400-7 (Cassettes row; the Freewheel label resolves in Freewheels); the Aspin (Sport LX) cassette has no row
+    'sachs huret aris rival 6 speed 13x24': [{ from: 1989, to: 1989, id: 2121 }], // 1989 Peugeot (FR) Mont-Blanc: Sachs-Maillard Aris (1989)
     'campagnolo 13 14 15 17 19 21 24': [{ from: 1988, to: 1991, id: 2075 }], // 1989 Peugeot (NL) Galibier (14-speed): Campagnolo 7 speed narrow
     'sachs aris 14 15 17 19 21 24': [{ from: 1989, to: 1989, id: 2121 }], // 1989 Peugeot (NL) Mont Blanc / Champagne: Sachs-Maillard Aris (1989)
     'helicomatic 13 14 15 17 19 21 24': [{ from: 1989, to: 1989, id: 8131 }], // 1989 Peugeot (NL) Cosmic: 12-speed so 6-speed Helicomatic (the table lists seven sprockets)
@@ -3009,6 +3045,7 @@ const COMPONENT_OVERRIDES = {
     'suntour accushift plus silver 12 30t 7 speed': [{ from: 1990, to: 1990, id: 1222 }], // SunTour CS-AP00-S7U, XC Pro
   },
   Tyres: {
+    '700 x 25c': null, // bare size (1984 Peugeot FR / GB, 1989 Peugeot FR): the matcher hit the Wolber 700 x 25C Tandem row
     'michelin hi lite competition 700 x 20c': 6835, // 1989 Peugeot (NL) Galibier: Hi-Lite Comp
     'michelin hilite road': 9498, // 1988 Peugeot (FR): Michelin Hi-Lite Road
     'michelin hilite road 700x20': 9498, // 1988 Peugeot (FR) PH 513 / PH 501
@@ -3078,6 +3115,7 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    'mavic ma 40 hard anodised': [{ from: 1980, to: 1999, id: 5077 }], // 1989 Peugeot (FR) Cyclo: Mavic MA 40
     'mavic oxygen alloy': [{ from: 1988, to: 1991, id: 8150 }], // 1989 Peugeot (NL) Alpine Express: Oxygen M6 (the CD row is 1990-91)
     alu: null, // 1988 Peugeot (FR): bare material, not the Rigida Rigi-Alu the substring match found
     'araya 26 x 175 alloy 7x': 4923, // 1986 Falcon K2: Araya 7X (1980-95)

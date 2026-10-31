@@ -792,6 +792,42 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   Sachs-Huret Rider rear, Nervar white crank, Maillard Normandie hubs, generic Weinmann / Rigida / Lee Chi / San Marco cells.
 - Regression: all 70 other catalogues' link counts unchanged.
 
+## 1989 Peugeot (FR) — `1989_peugeot_fr_spec.csv` (FR, data_source 321: 23 bikes, 435 specs, 81 linked)
+
+- Source: https://www.peugeotshow.com/1989fr.html "Collection 1989 - France" (loaded 2026-10-31). 43 linked images
+  (`1989fr/1989fr_NN.jpg`, 831-867 px): photo pages, spec tables spec1, spec2, spec4, spec6 and price lists tarif1 / tarif2.
+  The page links spec2 twice (from the spec3 thumbnail); `1989fr_spec3.jpg` exists unlinked and holds the Course Homme
+  continuation + Course Dame table; spec5 is 404. Table columns: Modèles | Cadre/Fourche | Tailles / Coloris | Direction |
+  Pédalier | Roues | Transmission | Guidon | Freins | Pédales | Selle | Accessoires / Poids. Transcribed by two Sonnet
+  subagents (verbatim French + English CSV); spec1-3 re-read at full size. Country FR through the `_fr` filename token
+  (the Dutch edition is the plain `1989_peugeot_spec.csv`).
+- Loaded: spec1 Course Homme C 653 MAB Z Racing Team (Mavic group), C SLX CB Z Dolomites (Athena), C 531 SB Z Galibier
+  (6400 Ultegra), C 531 HB Z Savoie (New Success), P SIS B Z Aspin (Sport LX A 450), P 513 B Z Vanoise, P 501 B Z Ventoux,
+  PHE 20 Z Mont-Blanc, PE 13 D Z Saint-Bernard; spec3 PE 10 D Z Aubisque, P 10 S Z Avoriaz, P 10 SA Z Lautaret and Course
+  Dame PE 15 B Z Cannes, PE 153 Z Monaco, PE 15 Z Cassis, P 15 Z Lavandou (ladies' sport frames, tessinois bars on the last
+  three); spec2 Demi-Course P 8 LS Z Touraine, P 8 SA Z Bourgogne, P 18 LS Z Bretagne, P 18 SA Z Aquitaine (ladies',
+  flat bars) and Randonneur CY 80 B Z Cyclo, P 80 Z Anjou, PH 50 Z Dauphine.
+- Not loaded: P 80 S Z Vincennes (flat painted bars, 700 x 28C cross tyres, kickstand: hybrid, as the 1988 PL 60); spec4
+  Fillette / Garçonnet (Miss 45 / 40 / 35, Mach 3 / 2 / 1, Pole-Position); spec6 Ville (Opéra, Élysée, Tradition VH 45 /
+  VH 40, Orléans, Reims, Chartres) and Tourisme (PH 46 Chambord, PH 41 Fontainebleau, Langeais, Chenonceaux, Blois,
+  Amboise, Cheverny: hub gears or 3 / 5 / single speed, raised or Dutch bars, mudguards, chain guards).
+- CSV notes: Mont-Blanc front "AV: 62-1D" written "62-1-D"; Mont-Blanc has no colour printed; Cyclo 56 until 03.89,
+  57 / 58 from 04.89; Saint-Bernard rear printed "501 GT/SP" and the Aubisque / Cannes / Cassis / Monaco rears "SOI T/SP" /
+  "SOI GT/SP" kept as printed (unlinked).
+- Overrides (1989-ranged unless noted): Galibier 6400 Ultegra -> FD 2478, RD 4466, BR 966, FC 1790, HP 3087, hubs 3534, PD
+  3958, SL-6400 6144, cassette CS-6400-7 1199 (bike-keyed, in Freewheels: the Freewheel label resolves there); Aspin Sport
+  LX A 450 / A 452 -> A450 rows (FD 7184, RD 4516, hubs 3573, BR 7211, FC 1835, HP 3106, PD 3976); Savoie New Success ->
+  FD 2439, RD 4412 1st Gen., shifters 6110, Modolo Mach 1 877; Mont-Blanc 62-1-D -> 8961, Aris Rival freewheel -> 2121;
+  Dolomites Athena RL hubs -> 3236; SXA 32 / 33 -> 2578 / 7312; Foret rear -> SX Foret GT 4565; Dauphine "SO 01 T" -> S001
+  T 4647 (as 1988); Sachs-Huret Eco SP -> 4399 (matcher hit Huret Eco 1980-86); Strong-Light A9 / A9H -> 3112; Mavic 630
+  -> 1641; Mavic MA 40 -> 5077; "Turbo, white leather" -> 5508; Anjou "SX 440 GR/SP" reuses the 1987 misprint key (4622).
+  Null: Dolomites "Athena synchro" shifters (matcher hit the 1992 Ergopower row); bare "700 x 25C" tyres, made global.
+- Wolber fix: bare "700 x 25C" had linked the 1984 Peugeot FR PH 10 M / P 10 S / P 10 L and GB PH 10 L Criterium tyres
+  to 9587 Wolber 700 x 25C Tandem; the global null plus a one-off UPDATE (bike_spec 12105, 12124, 12142, 12415) cleared them.
+- Left unlinked: bare Mavic hubs / derailleurs, Maillard 700 7-speed freewheels and hubs, Maillard CX 500 / 550 / 700 SS
+  pedals, Mondialita, GTI and Ideale saddles, Peyrard, Haubtman, Solida, generic cells.
+- Regression: all other catalogues unchanged apart from the four 1984 Wolber rows above.
+
 ## Link pass from /linkCoverage — 2026-10-24
 
 - 1982 (NL) "Sedisport, 114 links, Delta treated" (5) -> 1402 Sedis Sedisport Delta, as the 1980 108-link value. 1984 (FR 3, GB 2) bare "Turbo" saddle -> 5508 Selle Italia Turbo (ranged 1980-90). +10 links; no other catalogue changed.
