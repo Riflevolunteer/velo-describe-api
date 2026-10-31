@@ -722,6 +722,42 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   / M535, the Deore XT / Deore cantilever + U-brake pair cells, US Shimano 105 hub pair cell, generic cells.
 - Regression: all other catalogues' link counts unchanged.
 
+## 1988 Peugeot — `1988_peugeot_spec.csv` (FR, data_source 319: 41 bikes, 753 specs, 154 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1988.html (loaded 2026-10-31). Two image sets:
+  28 bibibike.forumserv.com images (all 404, no Wayback copy) and 29 Blogger images (1000 px, bikeboompeugeot.com
+  watermark) of the French "Peugeot 1988": Sommaire p. 2 (Alu p. 3, Course p. 7, Demi-Course p. 17, Ville-Tourisme p. 21,
+  VTT p. 27). Image N = printed page N up to 3, then image N = p. N+1 (p. 4 missing), and N+2 from image 20 (pp. 21 and
+  27, the section openers, missing); image 29 is the back cover. Spec tables: alu p. 6, racing p. 15, sport p. 16,
+  touring / tandem p. 20, ville p. 26, VTT p. 31; the other pages are photo captions. Transcribed by two Sonnet
+  subagents; pp. 6, 15, 16, 20, 26 re-read at full size.
+- Loaded: alu A 500 Galaxie (105 New), A 400 Comète (Rival), A 300 Cosmic; racing PY 10 FC Racing Team, PY 10 P Perthuis
+  (printed "Perthuis"; 1987 was "Perthus"), PX SIS Puymorens and PG SIS (Shimano New 600 = 6400), PJ 10 B Mont Cenis,
+  PG 10 T Triathlon, GOLD S Gold Spécial, PG 10 PB Aravis, PGN 10 P Galibier, PC 10 Mont Faron (table names blurred;
+  names from the pp. 8-11 captions); sport PH 513, PH 501, PH 10 TC / PH 15 TC Tennis Club (drop bars, racquet carrier),
+  PHE 20 / 13 / 10, PE 10 LS, PE 10 S1, ladies PH 153 T, PH 15 T, P 15; touring PH 50 S, PH 8 SL, PH 18 SL, P 8 LS,
+  P 18 LS, PX 80, PXR 80; tandem TM 9 G; VTT 4 L, VTT 2 L, VTT 2 GP, VTT 2 LF, VTT HB, VTT FB; from the Ville table the
+  drop-bar PH 60 'La balade' and its ladies' PH 65.
+- Not loaded: Ville-Tourisme PRP 20, PVD 40 / 45 / 02 / 05, PVC DT Dorotennis, PH 46, V 45 LS, V 45 M1, V 25 L; Force 8
+  PL 60 / PL 65 (loaded in 1986, but 1988 has flat dural bars + bar shifter: held out as hybrid, user's "load as is"
+  2026-10-31); CTB 26 F Paris Express (ladies' all-terrain commuter with kickstand, as the 1987 US City Express); juniors
+  VTT 24 Rocky Mountain, VTT 20 Ranger; TH 9 G (caption only, no table row).
+- Repairs: "RL 6 V." moved out of rims cells (it is the 6-speed freewheel); PH 501 lugless; PH 15 T bars dural; PHE 20
+  "Rival 62-1-D / 41-1-D" split front / rear; "Club 2/ECO" read front Club 2 / rear Eco as 1986-87; PH 50 S "S00 IT" ->
+  S001T (as PH 8 SL); "New Succès" -> "New Success"; Helicomatic cells prefixed 5- / 6-speed from the printed 15 / 12 V.
+  PY 10 FC rear printed "SLJ 66" kept as printed.
+- Overrides: Shimano New 600 -> 6400 rows (RD 4466, BR 966, hubs 3534, HP 3087, FC 1790, PD 3958; 1988+ ranges);
+  Shimano 105 NEW -> 1050 (FD 2462, RD 4449, BR 953, FC 1778); VTT 4 L bare "Deore XT" bike-keyed -> FD-M730 2499 /
+  RD-M730 4491; Deore cantilever -> BR-MT60 978; 'simplex slj 66' -> 4655, 'slj a 522' -> 7283, 'sja 302' -> 2549 (row
+  dated 1989-95); Rival 62-1-D 8961 / 41-1-D 8957; plain Rival fronts bike-keyed -> 8488 (Ventoux, PXR 80, Aravis,
+  Galibier, Mont Faron) and 'rival pilot finish' (Comète); Thun Aero Coronado -> 1445; Helicomatic 1988 wordings ->
+  8131 / 8130; Maillard 700 13x21 / 13x18 and ARIS New Success rear ranges extended to 1988; Hi-Lite Road 9498 / Pro
+  6836; Rims bare 'alu' -> null (was hitting 10015 Rigi-Alu).
+- Left unlinked: Mavic group cells, Maillard CX 500-700 pedals and hubs (no rows), Solida, Haubtmann, Stronglight 100 /
+  200, plain Thun Coronado, Simplex SX 620 / 640 variants, Huret Club 2 rear-less cells, Weinmann 500, Altenburger S3,
+  Mondia-Lita, Sakae, Sugino, Lee Chi, generic cells.
+- Regression: all 69 other catalogues' link counts unchanged.
+
 ## Link pass from /linkCoverage — 2026-10-24
 
 - 1982 (NL) "Sedisport, 114 links, Delta treated" (5) -> 1402 Sedis Sedisport Delta, as the 1980 108-link value. 1984 (FR 3, GB 2) bare "Turbo" saddle -> 5508 Selle Italia Turbo (ranged 1980-90). +10 links; no other catalogue changed.
