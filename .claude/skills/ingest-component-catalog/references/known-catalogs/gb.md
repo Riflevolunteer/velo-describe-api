@@ -133,3 +133,59 @@
 - Out of scope: spares 801-820, Wetgrip blocks, cables, bar clips.
 - Unresolved: true print date; whether the Superhood spares 850-854 are the
   same lever as 595-597 in 155 (taken as the same, sold with the Synchron).
+
+## GB Retail Price List, Catalogue of Components & Spare Parts (c. 1957) — icenicam.org.uk, data_source id 316
+
+- Source: https://www.icenicam.org.uk/library/GB/Components_catalogue_a.pdf
+  (6 pp, no text layer: p1 cover, p2 toe clips + rubber accessories 503-507,
+  p3 spread stems + handlebar bends + wingnuts, p4 spread caliper brakes +
+  spares 531-650, p5 carded displays + warranty, p6 IceniCAM cover). Render
+  p3/p4 with `pdftoppm -r 250` and crop with `sips -c` to read the small
+  print. G.B. Cycle Components Ltd, Hanworth Trading Estate, Feltham.
+- **Undated.** c. 1957 from: Coureur Plus "the latest development ... first
+  ever all nylon action brake" (velobase 758 starts it 1957); Sport Mk II
+  current with a "revolutionary new" Arret lever, no Sport Mk3 (DB 1958);
+  "spare parts for old model brakes ... refer to 1954/5 price list"; no
+  Coureur 66 (1961), no Sprite. Used 1957 as a single-year bound. Earliest
+  GB source so far, so year_from moved *earlier* on the rows it shares with
+  the c. 1962 leaflet (154).
+- Range: brakes Coureur Plus, Coureur, Sport Mk II, Grandtour (B depth
+  only), Sport Tourist (B or C); stirrup depth A 47-67, B 60-80, C 76-105 mm.
+  Levers Superhood 585, Superhood Plus 595, Arret 616, Grand Tour 575, Sport
+  Tourist 621, Tourist 643. Handlebar table = the 154 table plus Pelissier
+  and R.H. Maes; steel bars Kromo bulged (Maes, R.H. Maes) or mild steel
+  engraved ferrule (Maes, R.H. Maes, Olympic). Alloy stems 1-3/4" girder
+  45 mm, 2-3/4" / 3-1/2" oval non-twist 70 / 89 mm; steel stems (Kromo or
+  531) straight Nos. 1-9 (60-146 mm), Toni Merken Nos. 10-12, Underslung
+  Nos. 13-15.
+- year_from -> 1957, source_ref -> 316: handlebars 8469 Capo Berta, 8470
+  Olympic, 8471 Road Champion, 8472 Touring Bend, 8473 All-Rounder, 8474
+  Comfort, 2842 / 2843 Maes alloy (all were 1962); 2845 Maes steel, 9948
+  R.H. Maes steel (were 1960); stems 6533 Forged (1960), 6534 Kromo (1962,
+  description adds the c. 1957 Nos. 1-9 range), 6532 531 Toni Merken
+  (1960); levers 8475 Superhood Plus (1962, adds 595-599 numbers), 8476
+  Touring lever 575 (1962; description names it the Grand Tour lever).
+- year_to -> 1957 with descriptions: 754 Coureur (1950), 749 Sport MK2
+  (1950; retitled "GB Sport Mk II", old title "GB Sport MK2"), 313 Super
+  Hood earlier version (1950; taken as the 585 Superhood).
+- Retitled: 311 "GB Arret Coureur 66" -> "GB Arret", year_from 1965 -> 1957
+  (same Arret rubbers 507 in 155 and here; "Coureur 66" unsupported).
+- NULL -> 1957-1957 with descriptions: 2846 Pelissier (drop 5-7/8", width
+  15-1/2", reach 3-5/8"), 6535 Kromo Toni Merken, 6536 Kromo underslung.
+  6538 Girder section description only (years 1940-1960 kept).
+- Inserted (1957-1957, UUID source_id): Brakes 10022 Grandtour, 10023 Sport
+  Tourist; Brake Levers 10024 Sport Tourist lever 621, 10025 Tourist lever
+  643.
+- Deleted (merge): 312 "GB Gran Tour" (velobase
+  CF63B149-3CD2-498B-92BE-79B572C435F0, 1950-1950, bare) = the Grand Tour
+  lever No. 575 = 8476. No bike_spec links or overrides.
+- Not touched: 758 Coureur Plus (already 1957), 6531 GB 531, 6539
+  spearpoint (years compatible), 310 straight lever, 314 / 315.
+- Out of scope: toe clips (Type Professionnel, Clip-on), rubbers 503-507,
+  cable clamp buffers, wingnuts, cables, spares, boxed spares kit, carded
+  displays.
+- Unresolved: true print date; All Rounder drop reads 1-3/4" here vs
+  1-1/4" in the 154 read (one is a misread); 595 is Superhood Plus complete
+  here but Superhood with barrel adjuster in 155 (314) — renamed lever?;
+  6532 / 6535 are probably one stem (Kromo or 531 tube) split by velobase;
+  R.H. Maes in alloy not confirmed (only steel stated).
