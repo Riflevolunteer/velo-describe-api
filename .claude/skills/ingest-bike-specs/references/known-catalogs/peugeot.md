@@ -758,6 +758,40 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   Mondia-Lita, Sakae, Sugino, Lee Chi, generic cells.
 - Regression: all 69 other catalogues' link counts unchanged.
 
+## 1989 Peugeot (NL) — `1989_peugeot_spec.csv` (NL, data_source 320: 17 bikes, 301 specs, 61 linked)
+
+- Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1989.html (loaded 2026-10-31). 81 images: 48
+  bibibike.forumserv.com (all 404, as 1988) and 33 Blogger (1140 px, PeugeotShow.com watermark; the last two URLs are the
+  same file). It is the Dutch "Peugeot Cycles 1989" (Vanderhulst Nederland B.V., Veenendaal; guilder prices), NOT a French
+  edition: plain names (Galibier, Aspin...) with no PY / PH codes. Image N = printed page N up to 10, then N+1 (p. 11, the
+  Monaco caption, is missing). Sections Race pp. 2-7, Sport pp. 8-15, Stads pp. 16-21, ATB pp. 22-25, Jeugd pp. 26-29; one
+  spec table on pp. 30-31 split across img29 (model, frame, headset, crank, pedals, wheels) and img30 (derailleur, saddle /
+  post, bars, brakes, accessories, sizes, colour, weight), 35 rows in the same order. Transcribed by two Sonnet subagents;
+  both table halves re-read at full size. Country NL via `CATALOGUE_COUNTRY` `1989|peugeot`; values translated to English.
+- Loaded: race Galibier (Reynolds 531, Campagnolo Athena, 14-speed), Aspin (lugless 501, Exage Sport LX), Cosmic (Cégédur
+  alu, printed "Cedegur"), Chamonix (HLE, Exage Sport LX), Mont Blanc (Sachs Rival Aris Index), Aubisque, Avoriaz (103
+  Carbolite); sport Anjou (HLE Randonneur, 18-speed), Champagne (semi-race drop bars, fenders, rack; men's and ladies'),
+  Monaco (steel race bars, Positron 10-speed), Touraine (race or touring bars); ATB Alpine Express, Europe Express, VTT
+  Express, Fun Star, Hudson, US Express.
+- Not loaded: city Tradition, Inspiration, Orleans, Opera (3-speed hubs), Toulouse, Nice, Deauville (Positron with drum
+  brakes, kickstand / coat guard); Paris Express (Stads-ATB with fenders and kickstand, as the 1988 CTB 26 F); Versailles and
+  Chambord ("specificaties op aanvraag", no table row); juniors Hawai, Formule I, Bahamas, San Diego, Caraibes, Leader, Miss
+  Peugeot, Rapide, Mach III, Mach I; framesets Reynolds 653, Columbus SLX, Carbon Fiber. The CSV holds only the 17 loaded rows.
+- CSV notes: Cosmic saddle maker blurred ("Blue (maker name blurred)"); Hudson tyre printed "26x200" (kept with a note);
+  Hudson rear printed "R-552-0s"; Cosmic Helicomatic freewheel lists seven sprockets for a 12-speed bike.
+- Overrides: Exage Sport LX -> A450 series (FD-A451-B 2526, RD-A450 4516, BR-A450 7211, FC-A450 1835, HP-A450 3106, PD-A450
+  3976, hubs HB-A450 3575); Exage Mountain -> M450 / M451 (FD 7625, RD 7182, BR 7212, FC 1833, PD 7199); Europe Express Deore
+  XT -> M730 (FD 2499 / RD 4491 bike-keyed, FC 1810, HB 3550, HP 7227, PD 3967, BR 981; the HP / PD ranges were merged into
+  the existing 1990+ keys, a duplicate key would silently win); Sachs Rival -> ARIS Rival (FD 2440, RD 4417 dated 1990);
+  Suntour XCM -> FD-XM02 2665 / RD-XM02 4793 (matcher had 4795, dated 1980); AX-55 -> 2459; R-552 -> 7605; Galibier bare
+  Campagnolo hubs -> D300 Athena 3236 and seatpost -> C0R2 5742 (bike-keyed); Campagnolo 7 speed narrow 2075; Sachs-Maillard
+  Aris 2121; 1989 Helicomatic wordings -> 8131; Hi-Lite Competition -> 6835; Mavic Oxygen -> M6 8150; "Turbo, white" -> 5508;
+  Atax Philippe Tour de France -> 2902. Null: "Aero levers" (matcher hit Gipiemme), bare "Sachs-Huret" (Avoriaz), Monaco
+  "Shimano Positron" (only row dated 1980-83).
+- Left unlinked: Mavic 190 NE, Maillard CX 550, Lyotard 136 (two variants), CLB GL 47-60 (three variants), Simplex SX 640,
+  Sachs-Huret Rider rear, Nervar white crank, Maillard Normandie hubs, generic Weinmann / Rigida / Lee Chi / San Marco cells.
+- Regression: all 70 other catalogues' link counts unchanged.
+
 ## Link pass from /linkCoverage — 2026-10-24
 
 - 1982 (NL) "Sedisport, 114 links, Delta treated" (5) -> 1402 Sedis Sedisport Delta, as the 1980 108-link value. 1984 (FR 3, GB 2) bare "Turbo" saddle -> 5508 Selle Italia Turbo (ranged 1980-90). +10 links; no other catalogue changed.
