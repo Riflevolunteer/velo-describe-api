@@ -926,3 +926,39 @@ Weinmann 1129 / 1130 570.
   old stock); Ideale 88 (two rows); Weinmann "125 Carrera" (400 or 600);
   T.T.T. GP-6 bend names (Fr. Belga, Bobet, Anquetil, DeFilippis, Coppi,
   Pista) vs the Gimondi / Merckx / TdF rows.
+
+## Bike Warehouse catalogue No. 21 — 1981 (archive.org, data_source 315)
+
+- `data_source` label "Bike Warehouse catalogue No. 21 (1981)", country US. Source:
+  https://archive.org/details/bike-warehouse-catalog-21-1981 (`..._text.pdf`, 20 MB, 96
+  pages; pp. 49-96 are a second scan of pp. 1-48, same prices, so only 1-48 read; OCR
+  layer is unusable, read visually; printed page = PDF page - 1). Cover shows only "21";
+  the year is archive.org's. Same retailer as No. 12 (1978, data_source 246). The 2velo
+  "Bike Warehouse" album (BW00-BW33 + suffixed) is 400 x 400 at source, unreadable;
+  archive.org's Catalog 16 (1980, `BikeWarehouse-80.zip`) returned HTTP 500 on 2026-10-31.
+- Components: PDF pp. 7 (Avocet), 15-31, 35 (tandem). Out of scope: 2-6 order/info, 8-14
+  clothing/bags/racks/helmets/cables, 27 rollers, 32-34 tools/car racks/lights, 36-48
+  camping, books, ski closeouts, Tsunoda bikes, frames, back cover. Read 2026-10-31.
+- Stock numbers are retailer codes (CA-1020/A carries the Campagnolo number; SH-, ST-,
+  SR-, SU-, WO- etc. are not manufacturer codes, although SR-FS matches SR's "FS" stem).
+  Retailer source: attests 1981, absence caps nothing. "NEW"/due-July: Araya aerodynamic
+  rims, Tange Levin headset; SunTour New Winner "may be available '81".
+- Changed (source_ref -> 315, 13 rows): year_to -> 1981 on 3621 SunTour Vx hubs (1980),
+  3769 KKT Pro Ace road and 3775 KKT Top Run (1980), 5285 Brooks B72 (1959), 7128 Shimano
+  BC-300 Auto-Adjust disc brake (1978; p. 34 "SE Disc Brake", steel 36H hub), 9022 Wolber
+  Touriste Renforce, 9023 Team Corsa, 9027 Leader (1978), 9046 Hutchinson 80-GTX Corsa
+  (1978), 9049 Cross TR (1976), 9097 Cycle Pro National tubular (1978), 9894 / 9895 Rigida
+  13-19 (1978). No year_from moved, no retitles.
+- Added (12 rows, 1981-1981, group NULL): 10010 Hutchinson Sprint Anticrevaison; 10011-14
+  Specialized 300 / 270 / 240 / 220 tubulars; 10015 Rigida Rigi-Alu; 10016 MAFAC
+  Cantilever; 10017 / 10018 SR Foursir-C / Foursir-G bars (printed "Foursir"); 10019
+  Shimano Dura-Ace EX seatpost (no code given); 10020 Sturmey Archer S5 (catalogue says
+  only "5-speed hub"; 1981 is attestation, the hub is far older); 10021 Cycle Pro Touring
+  saddle (category_brand 17/337 added).
+- Not applied: Dia-Compe "Gran Compe 450 centerpull, sealed ball bearing pivots" (only
+  696 NGC450B 1984-86 in DB; would move year_from earlier on a name mismatch); Campagnolo
+  triple tandem crankset CA-TTC-V and "1048/T" (no Campagnolo number); Sugino Maxy I /
+  Maxy II; Avocet Men's / Women's Model 1 / 2 saddles vs DB Racing / Touring names; KKT
+  Pro Vic (DB 3772 "Pro Vic II", undated); Ideale "B6 woman's model"; Wolber W20 / W23
+  Invulnerable clinchers; National touring clincher; Shimano 600 cantilever (DB 951
+  undated "Touring Series"); Araya aero (4931 Super Aero undated).
