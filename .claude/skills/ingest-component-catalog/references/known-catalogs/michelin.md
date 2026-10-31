@@ -55,3 +55,15 @@
   when the bike generator is re-run for those catalogues.
 - Unresolved: the 1975 year_from of 6834 Elan is velobase and not supported
   by these papers; the c. 1980 booklet's actual year (Edition 3).
+
+### Re-check of the June 1983 leaflet (2026-10-31)
+
+- Re-read against the DB: every row above still matches it; later sources
+  (259, 262) have pushed some `year_to` values past 1983, which is consistent.
+- 9053 Fifty (added by source 276, 1976-1981): `year_to` 1981 -> 1983,
+  source_ref 276 -> 184, because the leaflet lists Fifty (Chevron) 27 x 1-1/4
+  (28-630).
+- 6830 BIB TS-20, 6831 BIB TS-23: description "crotchet rims" -> "crochet
+  rims" (the leaflet's spelling). Typo fix only, source_ref left at 259.
+- Not changed: the "France" velobase prefix in the descriptions, although
+  these British editions were made in Stoke-on-Trent.
