@@ -50,6 +50,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/kkt.md](known-catalogs/kkt.md) — KKT / Kyokuto (1 entry)
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands: multi-brand retailer and importer catalogues (Palo Alto, Bikecology, Holdsworth, Cyclo-Pedia, Ron Kitching, Ten Speed Drive, Bike Warehouse), La Bicicletta guides, dedupe passes, velobase title-fixup conventions
 - [known-catalogs/roto.md](known-catalogs/roto.md) — Roto (1 entry)
+- [known-catalogs/modolo.md](known-catalogs/modolo.md) — Modolo (1 entry, 1990)
 
 When a new brand shows up for the first time, create
 `known-catalogs/<brand-slug>.md` for it (title `# <Brand> catalogs processed
