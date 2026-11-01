@@ -185,6 +185,19 @@
   later); 4301 / 4399 Eco duplicate pair (the leaflet's 235 g Eco matches both); front capacity "26T max difference"
   here vs 16T in the 1984 rows (different measure, left).
 
+## Huret "Nouveau - New" leaflet — September 1982 (disraeligears.co.uk, 8 scans), read 2026-11-01, nothing loaded
+
+- Source: https://www.disraeligears.co.uk/site/huret_nouveau_-_new_-_september_1982.html
+  (`00_main_images/huret_nouveau_-_new_1982_scan_1..8_main_image.jpg`, 1560 x 2251). French / English, "Groupe Sachs",
+  "Septembre 1982" printed in the p8 margin. Sheets: 1-2 Rival set, 3 Eco S set, 4 Eco Mark II set (Eco TD, Club S
+  braze-on, Luxe AS central boss), 5 Commander-Orbit 12-speed (rear, double pre-selection lever, Orbit hub), 6
+  Commander 5/6-speed (rear, single stem lever), 7 Sensosaver 3 and Duopar Eco 2690-01 C, 8 Eco set (Eco rear, Club
+  1000-01 / 1001-01, Luxe A).
+- A reprint of the November 1981 "new 82" leaflet (314) plus the Commander sheets (as July 1981, 313). Every ref,
+  weight and capacity matches rows already loaded from 313 / 314, and every row already reaches 1982, so there were no
+  changes and no `data_source` row. The Commander double lever has no ref (12970 vs 8494's 13000 is still open); the
+  235 g Eco rear again matches both 4301 and 4399. Do not re-read.
+
 ## Sachs-Huret catalogue — June 1984 (labibleduvelocataloguessachshuret.blogspot.com, 16 pages)
 
 - `data_source` 156, label "Sachs-Huret catalogue (June 1984)". Source:
