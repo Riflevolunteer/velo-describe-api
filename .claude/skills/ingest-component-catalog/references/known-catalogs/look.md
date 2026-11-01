@@ -35,3 +35,22 @@
   Added: 10033 "LOOK carbon crank" (Cranksets, 1988-1988; "Manivelle Look", no code or weight) and category_brand
   (Cranksets, LOOK). 3791 PP76 (plain, 1980-1993, 5 links, override 'look pp76') left alone: the 1988 PP 76 is the Carbon.
 
+## Look catalogue (1989; La Bible du Vélo blog "Look 1989", 7 images), `data_source` 333
+
+- Label "Look catalogue (1989)". Source: https://labibleduvelocatalogueslook.blogspot.com/p/look-1989.html (7 images,
+  2048 x 1448 spreads, cover and back portrait). French; Hinault "Mon nouveau défi" (retired 9 Oct 1986, Toshiba-Look
+  team), "Grande nouveauté 89" (AP 86 shoe). Read directly (skim at 800 px, tables and texts cropped at full size).
+- Scans: 1 cover, 2 Hinault page and Look System (pedal on a Dura-Ace crank, cleat float diagram), 3 Performance / Sport /
+  Elle: PP 76 Carbon, PP 66 Racing, PP 71 Elle with pedal and shoe tables, 4 Touring: PP 56 Touring, PS 26 Réversible,
+  AS 56 / AS 46 / AS 26 shoes and tables, 5 KG 86 Kevlar 2001 and AV 86 Adventure frames, 6 accessories (clothing, bags,
+  VS 89 / VS 90 saddle covers), 7 back cover.
+- Pedal tables: PP 76 Carbon 217 g (red epoxy, carbon lever, "calypso" body), PP 66 Racing 245 g (white, red delrin
+  lever), PP 71 Elle 245 g (white, grey delrin lever, pink cap; lower release range), PP 56 Touring 233 g (white, delrin),
+  PS 26 Réversible 225 g (polyacetal body, polyamide lever, 26 deg). All cold-forged axles on needle / ball bearings,
+  lip seal plus venturi seal (not PS 26), threads 14 x 1.25 / 9/16 x 20.
+- Changed (source_ref -> 333): 3789 Racing PP66 year_to 1988 -> 1989; 3793 retitled "LOOK PS 26 (first gen clipless)" ->
+  "LOOK PS 26 Réversible" (search_text too), years 1980-1980 -> 1989-1989 (velobase bucket; the catalogue presents it as
+  new, "Look vous présente la première pédale réversible (PS 26)"), description. Added: 10034 "LOOK PP71 Elle" (Pedals,
+  1989-1989). 3792 PP 76 Carbon (1988-1990) and 3787 PP 56 (1988-1993) already cover 1989. No links or overrides on the
+  changed rows.
+
