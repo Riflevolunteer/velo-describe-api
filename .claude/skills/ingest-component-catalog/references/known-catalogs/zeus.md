@@ -284,3 +284,21 @@ doesn't match the existing double-ring "w/ Ciclo-Cross Chainguard" rows).
   can't be tied to one version; saddles 50502 / 50503 vs 1977 Refs 56 / 57 (380 / 320 g) not merged. Out of scope: QRs,
   axles, cable stops, clips, fork ends and crowns.
 
+## Zeus New Racer group leaflet (c. 1981; La Bible du Vélo blog "Zeus 1981", 2 images), `data_source` 337
+
+- Label "Zeus New Racer group leaflet (c. 1981)". Source: https://labibleduvelocatalogueszeus.blogspot.com/p/zeus-1981.html
+  ("zeus 1981 cycles (1).jpg" cover "grupo zeus group NEW RACER", "(2).jpg" parts sheet; 1200 x 1687). Undated; 1981 is
+  the blog's label. Read directly.
+- Parts sheet (refs, weights): 21300.00 double lever 80 g, 22300.00 rear 210 g, 22800.00 front 95 g, 13200.00 chainset
+  880 g (Duralumin K, 170 mm, 36-56T, metric / English / Italian), 24301.00 road pedals 440 g, 27400.00 brake set 650 g
+  (Allen-5 QR fixing, standard fixing to order), 28500.00 hubs 550 g (28 / 32 / 36 h, 5 or 6 speed).
+- The June 1980 Catálogo 104 foreword: "we have developed the beginning of a new line. We are calling it NEW RACER";
+  that catalogue lists only the New Racer pedals and hubs.
+- `year_from` 1982 -> 1981 (old 1982 from 286; source_ref -> 337): 6336 New Racer levers (21300), 9363 22800.00 front,
+  1180 New Racer brake 27400 (+650 g set). `year_from` moved **later** (velobase 1970 buckets contradicted by the 1980
+  foreword; old value 1970): 4058 New Racer pedals -> 1980 (in Catálogo 104, source_ref -> 336); 3167 New Racer headset
+  -> 1982 (not in 104 or this leaflet; first attested as 26300 in 286, source_ref -> 286). No links or overrides.
+- Left: 4873 New Racer rear and 5951 New Racer post keep year_from 1980 although absent from Catálogo 104 (this leaflet
+  is undated, so not moved later on it); 13200 crank not tied to 2020 / 2021 (undated lettering variants); 22300 rear
+  210 g vs 4873's description (no weight there) not added.
+
