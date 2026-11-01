@@ -2695,6 +2695,9 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // MKS Pedal Catalogue Edition 11 (c. 1985) retitled the MKS rows to "MKS <no.>, <name>", so the plain names no longer substring-match.
+    'mks esquartz #2025': 3859, // 1985 Raleigh Prestige / Competition: No. 2025 is the Esquartz 102, not the 2023 Esquartz
+    'mks sylvan road': 3865, // 1985 Bianchi Strada / Randonneur 700: MKS 2021, Sylvan Road
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
     // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
     'shimano a450': 3976, // Elix / Strada: PD-A450

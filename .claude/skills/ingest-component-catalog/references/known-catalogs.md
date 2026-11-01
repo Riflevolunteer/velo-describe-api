@@ -37,6 +37,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/gb.md](known-catalogs/gb.md) — GB / G.B. Cycle Components (4 entries)
 - [known-catalogs/atax.md](known-catalogs/atax.md) — ATAX / Guidons Philippe (1 entry)
 - [known-catalogs/nitto.md](known-catalogs/nitto.md) — Nitto (3 entries)
+- [known-catalogs/mks.md](known-catalogs/mks.md) — MKS / Mikashima pedals (1 entry, c. 1985)
 - [known-catalogs/laprade.md](known-catalogs/laprade.md) — Laprade (1 entry)
 - [known-catalogs/michelin.md](known-catalogs/michelin.md) — Michelin (1 entry)
 - [known-catalogs/ofmega.md](known-catalogs/ofmega.md) — Ofmega (1 entry)
