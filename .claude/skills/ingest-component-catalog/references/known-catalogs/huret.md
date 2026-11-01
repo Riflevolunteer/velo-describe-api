@@ -210,6 +210,29 @@
   sheets already reaches 1983 or later. No inserts, no deletes; the Commander double lever still has no ref, and the
   235 g Eco rear again matches both 4301 and 4399.
 
+## Sachs-Huret "Derailleurs - Speedometers" catalogue — September 1983 (disraeligears.co.uk, 16 scans), `data_source` 327
+
+- Label "Sachs-Huret Derailleurs - Speedometers catalogue (September 1983)". Source:
+  https://www.disraeligears.co.uk/site/huret_derailleurs_-_speedometers_-_september_1983.html
+  (`00_main_images/huret_derailleurs_-_speedometers_1983_scan_1..16_main_image.jpg`, 1560 x 2234). French / English,
+  Etablissements Huret et ses Fils, Nanterre, parts badged SACHS HURET; "SEPTEMBRE 1983" in the p16 margin. Transcribed
+  by one Sonnet subagent (scratchpad `dg2/huret-sept1983.json`, 31 items); p10 read by hand.
+- Pages: 1 cover, 2 Jubilee, 3 Success, 4 Jubilee long cage + 530 SPP, 5 Duopar 2648, 6 Hi-Stepper ATB (Duopar Eco
+  2690-00 H / GC, front 3080-00 S, levers 3300 / 3303), 7 Pilot (rear 2900-00 H, fronts 3060-00 / 3080-00, lever 3416 /
+  3416 R), 8 Rival, 9 Commander-Orbit (rear, double lever 13000, Orbit 12961), 10 Commander 5/6, 11 Torpedo 2 x 3 (Eco
+  2490-01, Torpedo S H 3111, double lever, no ref), 12 Eco S, 13 Eco; out of scope 14-15 speedometers, 16 usage chart.
+- The same range as the June 1984 catalogue (156), nine months earlier. Pilot and Hi-Stepper are marked NEW here.
+- year_from 1984 -> 1983 (old value 1984, from 156; source_ref -> 327): 4408 Pilot 2900-00 H, 8487 Pilot 3060-00, 2436
+  Pilot 3080-00 (triple), 8492 Pilot 3416 / 3416 R, 2443 Hi-Stepper 3080-00 S, 6067 Hi-Stepper 3300 / 3303, 8486
+  Jubilee 530 SPP, 8494 Commander 13000, 8499 Torpedo S, 8497 Torpedo 2 x 3 double lever. No links or overrides.
+- Commander refs conflict, left: the p10 captions give rear 13031 / 13041 and single lever 12913 / 12900, the reverse of
+  8484 (rear 12913 / 12900) / 8495 (lever 13031 / 13041) as set from 156; this catalogue's own p9 captions the rear
+  12900, and disraeligears' derailleur pages are "Commander 12913" / "12900", so p10 is taken as swapped captions.
+  p10 also names the double indexed lever for 10 / 12 speeds "12970 S or 13062" (already in 8495's description).
+- Not added: Pilot lever "3413 S" (caption only, no text), Pilot long cage (no ref), Torpedo 2 x 3 lever ref (none
+  printed). No inserts or deletes; 4276 Duopar Eco 2690-01 C is absent (the 2690-00 H / GC ATB version is listed), so
+  its 1983 year_to (from 326) stands.
+
 ## Sachs-Huret catalogue — June 1984 (labibleduvelocataloguessachshuret.blogspot.com, 16 pages)
 
 - `data_source` 156, label "Sachs-Huret catalogue (June 1984)". Source:
