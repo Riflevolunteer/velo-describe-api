@@ -2527,6 +2527,9 @@ const COMPONENT_OVERRIDES = {
     // 1986 Raleigh (US).
     'suntour cyclone': null, // Supercourse: LD-3700 / LD-3750 / LD-3800 (1985-87) all fit; the matcher took the 1988-89 Cyclone 5000/7000/9000
     'suntour superbe pro': [{ from: 1983, to: 1986, id: 6301 }], // Prestige: LD-4650 Superbe Pro (1983-86), as the 1985 pick; matcher took the 1991 row
+    // Technium 460 / 480: the catalogue (p. 10) prints "LePree down tube shifters" on the 460; the 480 photo shows the
+    // same side-mounted lever. LD-3900 / LD-3950 (1985-86 since 2026-11-01), not the top-of-down-tube LD-4000.
+    'suntour lepree': [{ from: 1986, to: 1986, id: 7828 }],
     'shimano 600': [{ to: 1985, id: 6138 }, { from: 1986, to: 1987, id: 6148 }], // Competition: SL-6207 600EX (1984-87); the exact-title row is the 1970-80 Shimano 600
     'thumb shifters': null, // Teton / Grand Mesa: generic text, hit the SunTour XM01 thumb shifter
     // 1990 Bianchi US catalogue (retrobike archive 1676).
