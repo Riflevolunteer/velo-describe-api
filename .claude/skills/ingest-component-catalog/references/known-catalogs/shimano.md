@@ -820,6 +820,24 @@
   (3539 FH-6208, 6149 SL-6208, 2218 MF-6208, 5891 "SP-6207?") need an
   SIS-era source. No deletes.
 
+## Shimano "Technical Information — Deore XT Series", Service Plus sheets — code 8312 (December 1983) (disraeligears.co.uk, 8 scans), data_source id 344
+
+- `data_source` label "Shimano Deore XT Technical Information (Service Plus, 12.1983)", country US. Source:
+  https://www.disraeligears.co.uk/site/shimano_technical_information_-_deore_xt.html (scans at
+  `00_main_images/shimano_technical_information_-_deore_xt_1983_scan_<n>_main_image.jpg`, 1560 x 2032,
+  legible). Shimano Sales Corp, Sun Valley CA; footer `2/8312M`. Scans 1-2 derailleur set (RD-M700, FD-M700,
+  SL-M700: parts lists, specs), 3 assembly, 4-6 cantilever brake (BR-MC70, BL-M700), 7-8 HB-MN72 hubs. Scan 6
+  (brake assembly text) not read. Read 2026-11-01.
+- Everything was already in the DB (1983-1986, data_source 73, Jan 1986); years unchanged. Descriptions
+  rewritten, source_ref -> 344: 4488 RD-M700 (Dec 1983: Centeron mechanism, expanded-capacity "GS" cage, 230g;
+  Jan 1986: Servo-Panta, 222g; both named inline), 6158 SL-M700 (Centeron lever convertible to friction via the
+  spring tip), 2497 FD-M700 (28.6mm clamp, triple-capable), 428 BL-M700 (350g pair 1983 vs 356g 1986, takes a
+  motorcycle cable), 3548 HB-MN72 (two resin shield rings, 130 / 126 / 120mm by spacers, BMX version). 980
+  BR-MC70 matched (260g), not changed.
+- Unresolved: 4490 "RD-M700 (Version 2)" (1985-86, velobase) may be the Servo-Panta second style, in which case
+  the Jan 1986 text on 4488 belongs there; needs a 1985 source or photo. Doesn't settle the 1986 Colnago Master
+  MTB "Shimano Deore" (M700 XT vs MT60).
+
 ## Shimano 1984 Bicycle System Components Dealer Catalog — June 1984 (Downloads/Shimano 84.pdf, 162 pages, scan, no text layer)
 
 - Colophon "(c) Jun. 1984 ... 0684 FC/10M". 160 numbered pages; PDF page =
