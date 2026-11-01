@@ -317,13 +317,17 @@ doesn't match the existing double-ring "w/ Ciclo-Cross Chainguard" rows).
 - Misprints flagged by the transcribers: Supercronos BBs print 23100.00 for road and track and 23110.00 for triple and
   cyclo-cross; the Zeus-2000 cyclo-cross BB prints 23000.00 (= road).
 - year_to -> 1984 (old 1982; source_ref -> 338): 1180 New Racer brake 27400 (650 g again), 9825 13030.00 Zeus-2000 Track,
-  9826 50501.00 saddle (now "exclusive Zeus-2001 model", 345 g; description), 2028 Criterium crank (description rewritten:
-  13100.00 from 1980, sold as Supercronos 13100.00 in 1984, 863 g). Also year_to 1982 -> 1984 with a Supercronos note: 2026 Criterium triple (13110), 2027 cyclo-cross (13120), 8144 Pista (13130). Added (1984-1984, group NULL): 10038 22400.00 Amateur
+  9826 50501.00 saddle (now "exclusive Zeus-2001 model", 345 g; description) (2028 / 2026 / 2027 / 8144 Criterium cranks were first extended here and then reverted, see below). Added (1984-1984, group NULL): 10038 22400.00 Amateur
   rear, 10039 22900.00 Amateur front, 10040 13400.00 Amateur crank (reuses the 1980 Gran Sport 13400 ref; 2030's
   Duralumin S 856 g Gran Sport set not extended), 10041 28700.00 Amateur hubs. No links or overrides on the changed rows.
-- **Open, merge candidate (not done, needs a go-ahead):** 2032 / 2033 "Zeus Supercronos (circle Z ...)" and 2034
-  "Supercronos (triple)" velobase crank rows (1984-1984, no links) are the 13100 / 13110 chainsets that 2028 Criterium /
-  2026 Criterium triple now carry into 1984. Also left: 13200 New Racer crank (860 g here) not tied to 2020 / 2021; the
-  New Racer caliper 37400 / lever 37401 and Supercronos caliper 37000 sold separately (parts of the sets); 50502 Criterium
-  saddle 310 g vs 8859 (380 g, 1977).
+- **Supercronos cranks are a new crank on old refs (checked 2026-11-01, user's go-ahead):** the 1984 Supercronos 13100 /
+  13110 / 13120 / 13130 chainsets have smooth unfluted arms, drilled rings, the circle-Z logo, Super Earlumin II, 863 g
+  (42/50) and spares 33011 / 43011; the June 1980 Criterium 13100-13130 (rows 2028 / 2026 / 2027 / 8144) are fluted,
+  undrilled, Earlumin, 848 g, spares 33111 / 43111. So **not** a merge: 2032 / 2033 (13100, circle Z & ZEUS / circle Z
+  only, a reviewed marking pair) and 2034 (13110 triple) stay, now with the 1984 descriptions (source_ref -> 338; years
+  1984-1984 kept). The Criterium crank extensions made earlier in this pass were reverted: 2028 / 2026 / 2027 / 8144
+  year_to 1984 -> 1982, "Supercronos ... in 1984" text removed (2028 keeps "13100.00 in 1980, Earlumin, 848 g, fluted",
+  source_ref 336; the others back to 286). Treat a bare 1984+ "13100" as Supercronos, 1980-82 as Criterium.
+- Also left: 13200 New Racer crank (860 g here) not tied to 2020 / 2021; the New Racer caliper 37400 / lever 37401 and
+  Supercronos caliper 37000 sold separately (parts of the sets); 50502 Criterium saddle 310 g vs 8859 (380 g, 1977).
 
