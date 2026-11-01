@@ -985,6 +985,9 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 410 gt sp': 4620, // 1980 Peugeot PF 60: SX410 GT (no GT SP row)
     'simplex lj 4000 cp': [{ from: 1975, to: 1977, id: 4602 }, { from: 1978, to: 1984, id: 4603 }], // 1977 Peugeot (DE) PY 10/CP: LJ4000 CP version 1 (1975-77)
     'simplex lj 1000 t': [{ from: 1970, to: 1981, id: 4600 }], // 1977 Peugeot (DE) PX 10/LE, PXN 10/E: LJ1000 T (1970-81)
+    // 1983 Peugeot PB 12 / PBL 12 Course: bare "LJ 1000"; the same catalogue prints "LJ 1000 CP/SP" on PH 9 / PK 12 and
+    // the PB 12 freewheel is 13-24 (CP max 24t). LJ1000 CP (1975-83 since 2026-11-01).
+    'simplex lj 1000': [{ from: 1983, to: 1983, id: 4646 }],
     'simplex sx 810 t': [{ from: 1977, to: 1986, id: 4617 }], // 1977 Peugeot (DE) PA 10/LE, 1982 Peugeot: SX810 T (1977-86; the DB title has no space, so the matcher misses it)
     'sun tour vx gt': [{ from: 1979, to: 1980, id: 4707 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour RD-2400, VX (GT) (1977-84)
     'suntour hero': [{ from: 1986, to: 1986, id: 4746 }], // 1986 Raleigh Record / Sportif / Capri / Grand Mesa: SunTour Hero (Version 1); a judgement, the row is dated 1987, one year later (Version 2 is undated)
@@ -1273,6 +1276,9 @@ const COMPONENT_OVERRIDES = {
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 small flange light alloy qr': [{ from: 1987, to: 1987, id: 3524 }], // Competition: HB-1050 105
     'shimano new 105 qr': [{ from: 1987, to: 1987, id: 3524 }], // Triathlon: HB-1050 105
+    // 1987 Peugeot (US) Galaxie / Triathlon: the cell swaps the codes; both bikes run an MF-Z012 screw-on freewheel, so
+    // the rear is the threaded HB-1050-R, not the FH-1050 freehub.
+    'shimano frt: fh1050 rer: hb1050': [{ from: 1987, to: 1987, id: 3524 }],
     'shimano 600ex small flange qr light alloy': [{ from: 1987, to: 1987, id: 3539 }], // Road Ace: FH-6208 / HB-6207-F 600EX SIS freehub (bike has the 600EX cassette)
     // 1986 Raleigh (US) Prestige: only the front hub is named; BH-1500 (1980-85), BH-1600 (1984-85) and the 1988+ HB-SB00 all fit, none dated 1986.
     'suntour superbe pro (front hub)': null,
@@ -1432,7 +1438,9 @@ const COMPONENT_OVERRIDES = {
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
     // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
     'shimano santé aero levers with q r': 1008, // Record Ace Moderne: BR-5000-49
-    'shimano 105 slr aero levers colour': [{ from: 1987, to: 1989, id: 953 }], // Delta (racing geometry): BR-1050-49; Quadra II reach not stated, unlinked
+    'shimano 105 slr aero levers colour': [{ from: 1987, to: 1989, id: 953 }], // Delta (racing geometry): BR-1050-49
+    // Quadra II (training geometry): reach not printed; BR-1050-57 as the 1987 Triathlon 12 (Type 57, mudguard clearance).
+    'shimano 105 slr aero levers': [{ from: 1989, to: 1989, id: 954 }],
     'shimano a450 slr aero levers': 7211, // Elix: BR-A450
     'shimano a350 slr aero levers': 1000, // Strada: BR-A350, Exage Action
     'shimano deore xt ii cantilever front and rear': 983, // Avanti: BR-M732 cantilever, Deore XT-II
@@ -1440,7 +1448,9 @@ const COMPONENT_OVERRIDES = {
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano santé aero levers with quick release': 1008, // Record Ace Moderne: BR-5000-49
     'shimano ultegra aero levers': [{ from: 1988, to: 1993, id: 966 }], // Road Ace Select: BR-6400, 600 Ultegra
-    'shimano 105 hooded levers': [{ from: 1987, to: 1989, id: 953 }], // Team Competition: BR-1050-49 (racing frame, no mudguard clearance; Quadra / Triathlon reach not stated, left unlinked)
+    'shimano 105 hooded levers': [{ from: 1987, to: 1989, id: 953 }], // Team Competition: BR-1050-49 (racing frame, no mudguard clearance)
+    // Quadra / Triathlon (training geometry): reach not printed; BR-1050-57 as the 1987 Triathlon 12 (Type 57, mudguard clearance).
+    'shimano 105 quick release aero levers': [{ from: 1988, to: 1988, id: 954 }],
     'exage a450 aero levers with quick release': 7211, // Corsa: BR-A450, Exage Sport
     'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 966 }], // 1989 Peugeot (FR) Galibier: BR-6400
     'shimano sport lx 450': [{ from: 1989, to: 1989, id: 7211 }], // 1989 Peugeot (FR) Aspin: BR-A450, Exage Sport / Sport LX
@@ -1558,6 +1568,7 @@ const COMPONENT_OVERRIDES = {
     'modolo flash': 874, // Speciale-II: Modolo Flash (1st version, 1979-88), as 1984 Bianchi
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
     'campagnolo gran sport': [{ to: 1980, id: 553 }, { from: 1981, id: 554 }], // first gen for the group's first years (Export); second gen as the 1983 Raleigh 'gran sport brakes' entry
+    'campagnolo gran sport with recessed bolts': [{ from: 1981, id: 554 }], // 1983 Raleigh Gran Sport 12: second gen, as above
     // 1986 Colnago Catalogo generale group fan-outs.
     'campagnolo c record 180': [{ to: 1987, id: 583 }], // 1986-87 Colnago: the Super Record brakes the group shipped with, as 'campagnolo c record'
     'campagnolo super record 30nnale': 583, // 4061 v2
@@ -1856,6 +1867,9 @@ const COMPONENT_OVERRIDES = {
     'shimano a350 biopace 52 42t': 7622, // Strada: FC-A350, Exage Action
     'shimano m452 biopace 48 38 28': 1836, // Ozark: FC-M452, Mountain LX Biopace-HP triple
     'shimano m350 biopace 48 38 28t': 7195, // Chinook: FC-M350, Exage Trail
+    // Touriste: FC-M350, as the Chinook (the bike's derailleurs are the M350 SIS group). 1988 Avanti / Ozark II / Royal
+    // print the same text with no group to choose on (FC-B124, FC-M450, FC-M350 all fit), so no link.
+    'shimano biopace 48 38 28': [{ bike: 'Touriste', from: 1989, to: 1989, id: 7195 }],
     'shimano deore biopace hp 48 38 28t': [{ from: 1988, to: 1993, id: 1809 }], // Randonneur: FC-MT60, Deore
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano santé 52 42 biopace': 1841, // Record Ace Moderne: FC-5000
