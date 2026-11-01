@@ -198,6 +198,18 @@
   changes and no `data_source` row. The Commander double lever has no ref (12970 vs 8494's 13000 is still open); the
   235 g Eco rear again matches both 4301 and 4399. Do not re-read.
 
+## Huret "Nouveau - New" leaflet — June 1983 (disraeligears.co.uk, 8 scans), `data_source` 326
+
+- Label "Huret Nouveau - New leaflet (June 1983)". Source:
+  https://www.disraeligears.co.uk/site/huret_nouveau_-_new_-_june_1983.html
+  (`00_main_images/huret_nouveau_-_new_1983_scan_1..8_main_image.jpg`, 1560 x 2251). "Juin 1983" in the p8 margin.
+- The September 1982 leaflet word for word (same eight sheets, refs, weights and capacities), with the "Groupe Sachs"
+  badge and the Huret logo on the parts replaced by "SACHS HURET". Read directly, no subagents.
+- year_to 1982 -> 1983 (still listed, source_ref -> 326): 10004 Eco TD 2820-01, 10005 Eco Sensosaver 2800-01, 10009
+  Sensosaver 3 lever 1169-00, 4276 Duopar Eco (2690-01 C). No links or overrides on any of them. Every other row on the
+  sheets already reaches 1983 or later. No inserts, no deletes; the Commander double lever still has no ref, and the
+  235 g Eco rear again matches both 4301 and 4399.
+
 ## Sachs-Huret catalogue — June 1984 (labibleduvelocataloguessachshuret.blogspot.com, 16 pages)
 
 - `data_source` 156, label "Sachs-Huret catalogue (June 1984)". Source:
