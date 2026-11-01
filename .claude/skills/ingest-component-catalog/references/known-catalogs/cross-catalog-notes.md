@@ -364,6 +364,20 @@ Weinmann 1129 / 1130 570.
   years (2000) contradict the 1970s bike links; not changed from this source.
 - No ITM, Selle Royal, ISCA, Daido, Kusuki or mid-80s SR in this catalogue, so
   it closes none of the bike-link gaps that prompted the search.
+- p. 15 (Seats) re-read 2026-11-01 from ebykr's retouched scan and transcription of
+  the same leaf (https://ebykr.com/library/bikecology-1981-catalog-seats-ideale-concor-and-brooks-page-15/,
+  from bulgier.net `Bikecology-81`); same catalogue, so still data_source 227. Applied:
+  9298 Concor Max year_from 1983 -> 1981 (the "Special Concor Maxi", steel rails, black
+  suede, 6ft 2in / 210 lb riders); 5297 Brooks Professional Select description (extra-large
+  copper rivets, black rails, gift box with Proofide, 540g; velobase 548g kept); 5661 / 5660
+  descriptions name the US "92 Touriste" Man / Lady (Lady "new this year").
+- Merged (user-approved 2026-11-01): 9110 "Ideale 92 Touriste" (1980-1980, source_ref 247,
+  source_id 4df62d76-cd8c-11f1-a2df-02fea3763e8d, no bike_spec / override refs) deleted into
+  5661 "Ideale 92 Diagonale (long model)" (1977-81): same 270 x 168-170mm oversized 90.
+- Left: 5303 Brooks Professional (1981 "normal diameter rivets" vs the 1975 "large copper
+  rivets" on the row; years already cover 1981); bare "Concor" steel / magnesium-rail
+  models (several candidate rows); Ideale 88 "completely new" vs 5654's 1960 velobase
+  year_from (the 1980 Bikecology also calls it new; not moved, user's call).
 - The other 2velo pages: Bike Warehouse (40 images at 400 x 400, unreadable),
   Cyclo-Pedia 11th edition (c. 1974, 72 pp: Huret, Simplex, Campagnolo, TA,
   Stronglight, Vittoria, Mafac, Weinmann, Ideale, 3ttt; brands already covered),
