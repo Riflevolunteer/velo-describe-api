@@ -232,3 +232,30 @@
   scan set; velo-pages is down and the Wayback CDX was offline on 2026-10-18.
   oldschoolracing.ch (1990-98 adverts) and other web results had no
   164 / 161 / GC200 / NGC200 data.
+
+## 2026-11-01 re-read of Reminiscence diacompe.html (new material beyond the Tomoda list) — data_source 347
+
+- `data_source` 347, label "New Cycling magazine, new-products memo, Yoshigai
+  cantilever (Sept 1968)", country JP. The page (same URL as data_source 193)
+  now also carries New Cycling Sept 1968 p84 (`nc196809_84.jpg`: Yoshigai Kikai
+  Kinzoku cantilever set, Mafac Driver type, forged light alloy, plus an unnamed
+  auxiliary drop-bar lever, name not read reliably), New Cycling Jul 1973 #960
+  notice (already in 193 / 8096), a Yokoo Sourinkan ad of Jul 1970 (Holks RS7
+  Special, "DIA cantilever brake", Driver type in the photo), the 1974 Katakura
+  Silk catalogue (Driver type fitted) and Cycle magazine May 1958 pp 22-31
+  (brake survey) plus a Yoshigai "Lucky Dia" Downhill brake ad. Gami's text: the
+  makers switched Driver -> #960 between 1973 and 1974.
+- Updated (source_ref -> 347): 675 retitled "Dia-Compe Crossbow" -> "Dia-Compe
+  cantilever (Mafac Driver type)", **a judgement** (velobase's 1968 start matches
+  the Sept 1968 announcement, and the page never says "Crossbow"; in Japan
+  "crossbow" was also Tokyo Brake's cantilever name). search_text "Dia-Compe
+  Crossbow" -> "Dia-Compe cantilever"; description written; `year_to` 1980 ->
+  1974 (velobase decade bucket; last attestation Tomoda Apr 1974 p43, replaced
+  by #960 1973-74). No bike links or overrides on 675.
+- Skipped by user decision: the 1958 DIA calipers on Cycle p26 (steel side-pull
+  basic model with anti-tilt stop, steel centre-pull, cast-alloy centre-pull),
+  no part numbers, so generic titles; also the 1958 Lucky Dia Downhill brake
+  (centre-pull with stopper lever). Not read: Cycle 1958 pp 28-31 (other
+  makers' levers and cantilevers: Toei, Seika, Aoridome).
+- The retrobike `dc86.pdf` was offered again on 2026-11-01. It is still the same
+  scan set as 102 (see the 2026-10-05 note above) and was not re-fetched.
