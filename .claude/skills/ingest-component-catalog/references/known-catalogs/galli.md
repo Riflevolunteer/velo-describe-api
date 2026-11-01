@@ -50,3 +50,21 @@
 - Left: 4240 KL rear already 1980; hubs, BB, headset and pedals of the groups not tied to rows (no model names); 306
   Criterium levers and 4242 Criterium rear stay undated (the Criterium group uses the KL derailleurs).
 
+## Galli of America brake and rim leaflets (1984; La Bible du Vélo blog "Galli 1984", 7 images), `data_source` 329
+
+- Label "Galli of America brake and rim leaflets (1984)". Source: https://labibleduvelocataloguesgalli.blogspot.com/p/galli-1984.html
+  ("GALLI 1984 1..7.jpg", panels 547 x 1275, spreads 1642 x 1275). Two US leaflets, each "(c) 1984 BPP, Inc.", Galli of
+  America (a division of BPP), Box 640, Santee, CA 92071. Images 1-4 "Brake technology's new horizon" (cover, KL series
+  synopsis, history, Criterium); 5-7 "A new road in rim technology" (cover, Top technology, Sport). No part numbers.
+- Brakes: KL calipers 380 g, 51 mm reach, V-shaped arms, one-handed cable clamp, cam QR, lined self-lubricating housing;
+  KL-AERO (Aerodinamico levers, cable through drilled bars) and KL-PRO (Professionale levers, conventional routing). KL
+  and Criterium in silver, black, red, blue, gold and brunito. Criterium 329 g, 51 or 55 mm. History panel: Maillard and
+  Stronglight tie-ups, Van Impe's team, 1984 USCF results.
+- Rims (new, "released to the American market" after test rides in the '84 season): Top Pro (hard anodised, braking
+  surface machine-turned by a patented process, 36 / 32 / 28 h, 390 g), Top Criterium (same without the hard anodising,
+  five colours, 36 / 32 h, 390 g), Sport (economy hard-anodised tubular, Top-series profile).
+- Changed (source_ref -> 329): 5024 Top Criterium and 5026 Sport rims year_from 1985 -> 1984 (old 1985-1985 from the
+  1985/86 guide, 259; "new" here); 739 Criterium brakes year_to 1980 -> 1984; descriptions on 738 KL brakes (KL-AERO /
+  KL-PRO, 51 mm in 1984), 305 Aerodinamico levers, 303 Professionale levers (was bare), 739, 5024, 5026. Added: 10032
+  "Galli Top Pro" (Rims, 1984-1984). No links or overrides on any.
+
