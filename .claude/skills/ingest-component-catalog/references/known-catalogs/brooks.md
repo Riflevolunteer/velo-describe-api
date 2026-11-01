@@ -127,3 +127,33 @@
   extended); the sports "B18 Champion" and the four-wire "B18" are two lines in the price table, so two rows;
   5271 B18 Messenger (later model), 5282 B66 / 9789 B66L (1938 lists only the B66 Champion Ladies), 5309 B17
   Champion Lightweight (1936, not the Flyweight), 5298 Release and 5299 S22/1 left alone.
+
+## Brooks "The Finishing Touch for Every Bicycle" brochure, "A Sturmey Archer Product" — c. 1991-95 (seller photos, data_source 345)
+
+- `data_source` label "Brooks The Finishing Touch for Every Bicycle brochure (c. 1991-95)", country GB. Source: 3
+  seller photos (BikeRecyclery.com listing, 1200 x 800 webp, in ~/Downloads/brooks): cover, centre spread (17
+  models photographed with captions), back page "Technical Specifications" (type, breadth x length, top colour,
+  frame / finish, BZL article numbers). Undated: "making saddles by hand for more than 125 years" (Brooks 1866 ->
+  1991+), Sturmey-Archer Ltd Nottingham tel 0602- (became 0115 in April 1995), Sturmey-Archer (Europa) B.V.
+  Amsterdam. year_to extensions use 1991, the earliest year the print date allows. Article numbers are small
+  print at 1200 px; a digit may be misread.
+- Range: B17 Standard (BZL 211); Professional (220 / 323); Professional 'S' (313 / 314 / 310); Team Professional
+  (232 / 324 / 312); Colt (304 / 303 / 311); Swift, titanium (360 / 361); Conquest (336-338 / 353); Countess
+  (354-357); B66 Universal (281 / 306); B66 S Universal (293 / 307); B66 Champion (305 / 236); B66 S Champion
+  (329 / 330); B72 (291); B73 (271); B33 (256); B90/3 (252); B130 (347).
+- Changed (source_ref -> 345, descriptions with size / colours / BZL numbers): year_to -> 1991 on 5315 B17 Champion
+  Standard (1984; the brochure's "B17 Standard"), 5296 Professional S (1990), 5290 Colt (1979), 5292 Conquest
+  (1990), 5289 Countess (1990), 5282 B66 (1976; the "B66 Universal"), 9036 B66 Champion (1959), 5285 B72 (1981),
+  5287 B73 (1959), 5276 B33 1970s version (1970), 5288 B90/3 (1959), 5269 B130 (1938). Dated 1991-1991 (were
+  undated): 5302 Swift (Ti Rail), 5283 B66S. 5303 Team Professional description only (years 1970-2000 kept).
+  Retitled: 5289 "Brooks Brooks Countess" -> "Brooks Countess" (search_text too).
+- Added: 10057 Brooks Professional (1981-1991; normal rivets, 160 x 260; the 1981 Bikecology sheet, data_source
+  227, already separates Professional normal rivets from Professional Select large rivets), 10058 Brooks B66 S
+  Champion (1991).
+- Bike links: generator overrides 'brooks professional' and 'brooks professional leather' ranged (to 1980 -> 5303,
+  from 1981 -> 10057); specs 9329 (1981 Raleigh Competition GS) and 18260 (1989 Raleigh Randonneur) relinked
+  5303 -> 10057. 9347 (1981 Raleigh Professional "large head rivets") stays on 5303.
+- Judgement / unresolved: 1938 / 1959 -> 1991 jumps assume continuous production (B73, B90/3, B66 Champion, B130;
+  the 1991 B130 "double compression springs" may be a reissue of the 1938 girder saddle); B33 extended on 5276 (1970s
+  version) not 5275 (1938-59); 5301 Swift (Steel Rail) not in the brochure, left undated; the 1970s "Brooks
+  Professional" on Raleighs stays on 5303 Team Professional (Holdsworth 1975 "B17 Professional" has large rivets).

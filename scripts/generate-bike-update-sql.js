@@ -2221,13 +2221,15 @@ const COMPONENT_OVERRIDES = {
     'brooks b17n leather': 5310, // Brooks B17 Champion Narrow
     'brooks b17n': 5310,
     'brooks b17 leather': 5315, // Brooks B17 Champion Standard
-    'brooks professional': 5303, // Brooks Team Professional
+    // Brooks c. 1991-95 brochure: the plain Professional (normal rivets, 10057) and the large-rivet
+    // Team Professional (5303) are separate; the 1981 Bikecology sheet already has both rivet sizes.
+    'brooks professional': [{ to: 1980, id: 5303 }, { from: 1981, id: 10057 }], // Team Professional / Professional
     'brooks professional team special leather': 5304, // Brooks Team Professional "Team Special"
     'brooks professional leather team special': 5304, // 1974 Raleigh word order
     'brooks professional team special': 5304, // 1975 Raleigh
     'brooks professional best butt leather with copper rivets': 5303, // 1977 Raleigh Professional Mk V: copper rivets = standard Team Professional, not the polished-rivet Team Special
     'brooks professional best butt leather': 5303, // 1977 Raleigh Competition GS: Brooks Team Professional
-    'brooks professional leather': 5303, // 1974 Raleigh International
+    'brooks professional leather': [{ to: 1980, id: 5303 }, { from: 1981, id: 10057 }], // 1974 Raleigh International / 1989 Randonneur
     'brooks b17 narrow leather': 5310, // 1974 Raleigh: Brooks B17 Champion Narrow
     // 1974 Motobecane (the seat post aside is not part of the saddle).
     'brooks professional with alloy seat post': 5303,
