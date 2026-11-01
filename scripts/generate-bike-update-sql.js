@@ -2565,7 +2565,12 @@ const COMPONENT_OVERRIDES = {
     'shimano exage 500ex sis': [{ from: 1990, to: 1994, id: 6176 }], // SL-A500
     'shimano m200gs rapidfire': [{ from: 1990, to: 1992, id: 7597 }], // SL-M200, 200GS
     'campagnolo chorus syncro 2': [{ from: 1988, to: 1991, id: 7027 }], // A281 Chorus levers with dual-mode Syncro, as 1988 Bianchi
-    'campagnolo athena syncro 2': null, // matcher took the 1992-95 Athena Ergopower; no Athena downtube row
+    // Athena / Croce d'Aune down-tube Syncro 2: 5971 Syncro II 0221-0223 (5968 "Syncro II Athena" merged into it 2026-09-28;
+    // the Apr 1988 Athena and Mar 1988 Croce brochures list 0221-23 Syncro 2). Croce's standard lever is 0271 Doppler (5970).
+    'campagnolo athena syncro 2': [{ from: 1988, to: 1991, id: 5971 }], // 1990 Bianchi Giro
+    "campagnolo croce d'aune synchro 2": [{ from: 1988, to: 1991, id: 5971 }], // 1989 Bianchi Mondiale
+    "campagnolo croce d'aune": [{ from: 1988, to: 1988, id: 5970 }], // 1988 Colnago Masterpiù Croce d'Aune: Doppler 0271
+    'campagnolo athena synchro': [{ from: 1989, to: 1989, id: 5971 }], // 1989 Peugeot (FR) Dolomites down-tube Synchro levers
     'suntour accushift plus command shifter': [{ from: 1990, to: 1990, id: 6268 }], // SunTour Command (6 & 7 speed)
     // SL-XP10 X-Press (XC-Pro / XC-Comp) on Project 7 / Grizzly, and the under-bar levers on
     // Nyala / Osprey; X-1 / XCT bikes have no 1990 row. One key: a second, unscoped entry for
@@ -2636,10 +2641,9 @@ const COMPONENT_OVERRIDES = {
     'shimano sport lx sis': [{ from: 1989, to: 1989, id: 6191 }], // SL-A453, 7-speed (Sport SX has a 7sp cassette)
     'suntour edge accushift': [{ from: 1989, to: 1989, id: 6285 }], // SL-4050
     'campagnolo chorus synchro 2': [{ from: 1989, to: 1989, id: 7027 }], // A281 with Syncro inserts
-    'campagnolo athena synchro 2': null, // downtube Synchro-2; the matcher took the 1992 Athena Ergopower row
+    'campagnolo athena synchro 2': [{ from: 1988, to: 1991, id: 5971 }], // 1989 Bianchi Giro: Syncro II 0221-0223, as above
   },
   'Shifting Brake Levers': {
-    'campagnolo athena synchro': [{ from: 1989, to: 1989, id: null }], // 1989 Peugeot (FR) Dolomites down-tube Synchro levers: the matcher hit the 1992 Ergopower row
     // 1990 Bianchi Rapidfire shifters (the 1990 groups are M650 DX / M550 LX / M735 XT)
     'shimano deore dx rapidfire': [{ from: 1990, to: 1993, id: 6359 }], // ST-M070 / ST-M071
     'shimano deore lx rapidfire': [{ from: 1990, to: 1992, id: 7581 }], // ST-M060
@@ -2910,6 +2914,7 @@ const COMPONENT_OVERRIDES = {
     'simplex slj 4160': [{ from: 1978, to: 1978, id: 7340 }], // PX 10 LE: Simplex 4160 (1978)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'campagnolo chorus': [{ from: 1987, to: 1991, id: 5742 }], // C0R2, Chorus (matcher took the mid-90s RS)
+    'campagnolo athena alloy': [{ from: 1988, to: 1989, id: 5742 }], // 1989 Peugeot (FR) Dolomites: C0R2, as below
     'campagnolo athena': [{ from: 1988, to: 1989, id: 5742 }, { from: 1990, to: 1991, id: 5736 }], // C0R2 (fitted to Athena; 1989 Bianchi Giro) / SP-10AT (v2)
     'shimano deore xt': [{ from: 1989, to: 1993, id: 5892 }], // SP-M730
     'suntour xc pro': [{ from: 1990, to: 1992, id: 8046 }], // SP-XP00 (row dated 1992)
