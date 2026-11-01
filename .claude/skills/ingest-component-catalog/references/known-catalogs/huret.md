@@ -340,6 +340,11 @@
   CSVs first, see the `ingest-bike-specs` scope check).
 - Out of scope: speedometers (Universo, Multito cyclometer), fork ends, cable
   stops and clips, driving gears, wing nuts, spoke protector 996.
+- Second copy (checked 2026-11-01): disraeligears.co.uk "Huret - catalogue 1980?"
+  (https://www.disraeligears.co.uk/site/huret_-_catalogue_1980.html, `00_main_images/huret_-_catalogue_scan_1..10_main_image.jpg`,
+  1560 x 2200) is this same English catalogue at twice the resolution: p2 rears / fronts and the p10 hubs 472 / 473 / 477 /
+  478, triple 1006 and "member of Frexa" back cover match. Nothing loaded, no data_source row; use it to re-read any
+  small print here. Disraeli also dates it "1980?".
 
 ## Sachs Kettenschaltungen für Rennen, Touristik, Off-road — April 1986 (disraeligears.co.uk, 4 scans)
 
