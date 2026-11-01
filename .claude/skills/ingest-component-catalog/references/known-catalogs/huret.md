@@ -150,9 +150,9 @@
   chain 238 (12962), BB axle and seatpost (no ref printed).
 - Bike links made with this pass: 1983 / 1986-87 Peugeot "Huret Club" / "Club 2" x7 -> 2379; 1984 Raleigh
   "Club brazed-on" x4 -> 8489 (Club S is its braze-on version); 1987 Raleigh "Huret Rival" front x2 -> 8488.
-- Open: 8796 "Huret Eco (front)" (158g, S.P.P., 10 links) and 2387 "Club CPSC" (1977-78) look like the
-  1981 "Club 1000-01 CPSC" (158g); 4298 "Challenger II" (no refs) duplicates 4273 "Challenger 2400 / 2440 /
-  ..." (the 1981 Challenger II refs). No Rival, Eco S front or Luxe front in this catalogue.
+- Settled 2026-11-01: 2387 "Club CPSC" (1977-78 velobase stub) merged into 8796 "Huret Eco (front)" (the 1981
+  "Club 1000-01 CPSC", 158g; title kept, year_from -> 1977). 4298 "Challenger II" is not 4273: same 2400 / 2440 refs
+  but the 180g redesign (4273 is 255g, linked 1974-76), so a generation; year_from 1970 -> 1978. No Rival, Eco S front or Luxe front in this catalogue.
 
 ## Huret "new 82" leaflet — November 1981 (disraeligears.co.uk, 6 scans), `data_source` 314
 
