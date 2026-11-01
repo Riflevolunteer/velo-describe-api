@@ -42,3 +42,39 @@
   undated; SLK 90 brakes keep velobase year_from 1980 (no evidence for a
   later start beyond the "'88'" name); out of scope: pads (Sinter 90 D-0015,
   Monoblock), SSC / Speedy cables, Aero-Carbon pad holders, 919 hoods, bags.
+
+## Modolo Professional / Speedy / Flash leaflet — c. 1979 (Swoon Cycles listing, 5 photos)
+
+- `data_source` 346, label "Modolo Professional / Speedy / Flash leaflet
+  (c. 1979)", country IT. Source: 5 BikeRecyclery dealer photos (900x600 webp)
+  from https://swooncycles.com/products/modolo-brakes-catalog-brochure-1980s-mint,
+  saved by the user to `~/Downloads/modolo` (the site 429s automated fetches).
+  Tri-fold, IT/FR/EN, red cover "Non correr rischi! Frena Modolo / Don't
+  risk! Brake Modolo". Imprint: Industria Modolo Adamo & C. s.n.c., Sarano di
+  S. Lucia di Piave (TV). Read 2026-11-01 in the main context.
+- Pages: p1 cover; p2 back panel (cables, red Professional presentation box;
+  text illegible at this resolution); p3 Professional brake panel + Leva
+  Professional / Speedy / Flash lever panel (the only legible page); p4
+  Professional / Speedy / Flash brake panels (text illegible); p5 overview.
+- Undated. c. 1979 inferred: Speedy and Flash are present (1979 in Modolo's
+  own timeline, 1990 catalogue) and Kronos (levers 1980, brake 1981) is not;
+  the pre-S.r.l. "Adamo & C. s.n.c." imprint fits. It's a leaflet, so absence
+  of other parts is weak evidence and caps nothing.
+- Professional text: self-lubricating transmission (molybdenum-bisulphide
+  tube), maintenance booklet with 1-year guarantee, serial number tracing the
+  lot and tester, central pivot and lower articulation, 6 anodised colours,
+  pantographed levers on the Stratos version. Photo caliper reads "MODOLO
+  INTERN PAT" (row 880). Professional Stratos levers: contrasting colour
+  marks, two rows of holes on the blade and one on the back, pantographed side.
+  All Modolo levers: light high-resistance alloy, tubular section.
+- Updated (source_ref -> 346), descriptions rewritten (old bare velobase "Modolo
+  X, Italy" text dropped, weights kept): 880 Professional brake (previous
+  text from Bikecology 1980, source 247, consolidated), 385 Professional
+  levers, 386 Speedy levers, 372 Flash levers (non-drilled).
+- `year_from` moved later: 386 Speedy levers 1970 -> 1979 (velobase decade
+  bucket; Modolo timeline dates Speedy to 1979, matching brake 886). No bike
+  specs or overrides referenced 385/386.
+- No inserts, no deletes. Left open: 385 Professional levers keep year_from
+  1980 (the leaflet is undated, so it can't safely push it to 1979; the brake is
+  1976). Flash brake 875 (2nd version) is still undated. The Speedy and Flash
+  brake panel text is unread and would need a higher-resolution photo.
