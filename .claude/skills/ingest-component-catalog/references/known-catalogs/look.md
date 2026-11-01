@@ -17,3 +17,21 @@
   actual kept); 3788 PP65 year_to 1984 -> 1987 and description (258 g Actual kept); 3794 PS 75 year_to 1980 -> 1987 and
   description (445 g kept; year_from 1980 is a velobase bucket, left). No links or overrides on these three (the 5
   links are on 3791 PP76, not in this catalogue).
+
+## Look catalogue (1988; La Bible du Vélo blog "Look 1988", 7 images), `data_source` 332
+
+- Label "Look catalogue (1988)". Source: https://labibleduvelocatalogueslook.blogspot.com/p/look-1988.html
+  ("CATALOGUES LOOK 1988 (1)..(7).jpg", 2048 x 1448 spreads, cover and back portrait). French; "1988" in the text
+  (Hinault / Tapie team). Read directly (skim at 800 px, pedal text and table at full size).
+- Scans: 1 cover, 2 "Le vélo passionnément" and Look carbon crank (pp. 2-3), 3 Carbone-Kevlar frames KG 85 and MTB with
+  geometry tables (pp. 4-5), 4 Look System / PP 76 Carbon, AP 76 / AP 71 shoes, black cleat (pp. 6-7), 5 PP 66 Course /
+  AP 66 and PP 56 Touring / AS 56 / AS 46 (pp. 8-9), 6 pedal and shoe tables and clothing (pp. 10-11), 7 back cover.
+- Pedal table: all cold-forged axles on needle / ball bearings, 29 deg lean, lip seal and sealed cap, acetal cleats,
+  threads 14 x 1.25 / 9 x 16; PP 76 Carbon red epoxy, carbon lever, "calypso" alloy body, 217 g, tension adjustable;
+  PP 66 Course white epoxy, red lever, 245 g, adjustable; PP 56 Touring white epoxy, black lever, 233 g, not adjustable
+  (factory pre-set). PP 76 is "the evolution of the competition pedal", shortened axle, now with a carbon lever.
+- Changed (source_ref -> 332), descriptions only (years already 1988): 3792 Carbon PP76 (velobase 439 g avg kept as the
+  measured pair), 3789 Racing PP66 ("Course"; the 245 g Spec = catalogue), 3787 "Touring" PP56 (233 g Spec = catalogue).
+  Added: 10033 "LOOK carbon crank" (Cranksets, 1988-1988; "Manivelle Look", no code or weight) and category_brand
+  (Cranksets, LOOK). 3791 PP76 (plain, 1980-1993, 5 links, override 'look pp76') left alone: the 1988 PP 76 is the Carbon.
+
