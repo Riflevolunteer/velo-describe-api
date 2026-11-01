@@ -1867,9 +1867,14 @@ const COMPONENT_OVERRIDES = {
     'shimano a350 biopace 52 42t': 7622, // Strada: FC-A350, Exage Action
     'shimano m452 biopace 48 38 28': 1836, // Ozark: FC-M452, Mountain LX Biopace-HP triple
     'shimano m350 biopace 48 38 28t': 7195, // Chinook: FC-M350, Exage Trail
-    // Touriste: FC-M350, as the Chinook (the bike's derailleurs are the M350 SIS group). 1988 Avanti / Ozark II / Royal
+    // Touriste: FC-M350, as the Chinook (the bike's derailleurs are the M350 SIS group). 1988 Avanti: FC-MT60, the
+    // model page says "Shimano New Deore group set" (as the 1989 Randonneur's Deore Biopace HP). 1988 Ozark II / Royal
     // print the same text with no group to choose on (FC-B124, FC-M450, FC-M350 all fit), so no link.
-    'shimano biopace 48 38 28': [{ bike: 'Touriste', from: 1989, to: 1989, id: 7195 }],
+    'shimano biopace 48 38 28': [{ bike: 'Touriste', from: 1989, to: 1989, id: 7195 }, { bike: 'Avanti', from: 1988, to: 1988, id: 1809 }],
+    // Avanti / Appalachian: the Aug 1988 Deore XT-II and Deore II brochures carry M730 / MT60 codes; there is no FC-M732
+    // or FC-MT62 (the 1988 Randonneur prints "FC-M730 BIO-PACE ... 48-38-28t").
+    'shimano deore xt ii biopace 48 38 28t': [{ from: 1989, to: 1989, id: 1810 }], // FC-M730, Deore XT
+    'shimano deore ii biopace 48 38 28t': [{ from: 1989, to: 1989, id: 1809 }], // FC-MT60, Deore
     'shimano deore biopace hp 48 38 28t': [{ from: 1988, to: 1993, id: 1809 }], // Randonneur: FC-MT60, Deore
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano santé 52 42 biopace': 1841, // Record Ace Moderne: FC-5000
@@ -2703,6 +2708,8 @@ const COMPONENT_OVERRIDES = {
     'shimano a450': 3976, // Elix / Strada: PD-A450
     'shimano m450': 7199, // Ozark: PD-M450, Exage Mountain
     'shimano m350': 7200, // Chinook: PD-M350, Exage Trail
+    'shimano deore xt ii': [{ from: 1989, to: 1989, id: 3967 }], // Avanti: PD-M730 (Deore XT-II brochure M730 codes), as the HP-M730 / SP-M730 picks
+    'shimano deore ii': [{ from: 1989, to: 1989, id: 3965 }], // Appalachian: PD-MT60 / PD-MT61 (Deore II brochure MT60 codes)
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano ultegra platform': [{ from: 1988, to: 1993, id: 3958 }], // Record Ace Moderne / Road Ace Select: PD-6400 (catalogue prints 'Ultagra')
     'shimano 105 alloy platform': [{ from: 1987, to: 1988, id: 3953 }], // Team Competition: PD-1050
