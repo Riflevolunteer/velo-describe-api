@@ -1087,3 +1087,35 @@ Prompted by the new "DB year_from is earlier than the evidence" rule; checked ag
   post", n. 18 (1985) lists it, and the earliest linked bike is the 1978 Raleigh Competition GS. Medium confidence:
   catalogue n. 17 (1974) and n. 17a (1975) were not rechecked for a 3800 post (the notes above neither list nor exclude
   one); if either shows it, restore 1974 / 1975. To revert, set `year_from = '1970'`.
+
+## Campagnolo press advertisements compilation — 1983-2008 (Campagnolo_other_Vintage_Catalogs/CampagnoloPress.pdf, 71 pp, data_source 343)
+
+- campybike.com compilation of magazine ads (Italian, plus English, French, German, Portuguese). Not a catalogue: no page
+  prints a part number and most carry no year, so treat as a partial source (dated attestations and "new" claims only;
+  absence proves nothing). Dating clues: p1-2 1983 Cinquantenario; p7 1986 Worlds; p10 Oscar 1989 (Euclid); p15/17 "Da
+  60 anni" (~1993, Shamal "ultima novità"); p21 German rim ad with 5-digit postcode 51381 Leverkusen (=> July 1993 or
+  later); p22 "gamma '95"; p27/29 "gamma/gruppi 1996"; p32 "ruote gamma '97"; p35/40 Ironman '97/'98; p46-47 2002;
+  p49-50 2003; p52 2004; p58/60 2005; p64/66/71 75th anniversary, Worlds 2008, 11-speed.
+- Skipped / out of scope: sportswear and pad ads 48, 57, 59, 63, 65, 67, 68; event ads 23, 31; p54 repeats p51.
+  Pages 41-71 (2000-2008: 10-speed, ErgoBrain, Pro-Fit Plus, Hyperon/Neutron/Nucleon, G3, CT, Ultra-Torque, 2-Way Fit,
+  11-speed) not ingested: the DB's Campagnolo coverage ends ~2000. 1983-1992 items (Cinquantenario, SGR, Croce d'Aune,
+  Centaur, Euclid, Record OR/Cart BB, Stheno/Omega 19/Mirox) all already present with compatible years.
+- Years: 1187 Record Titanium Exa-Drive 9sp `year_from` 1998 -> 1997 (p32, 9-speed "nuovissimo" in '97 range); 6342
+  `year_from` 1998 -> 1996 (p29, 1996 groups); 4961 Omega V `year_to` 1992 -> 1995 (p21 plus the 1995 range note
+  "Omega V continue[s]"; source_ref 22); 4962 Omicron and 4970 Sigma Strada `year_to` 1991 -> 1993 (p21; if the p21 Sigma
+  is really Sigma 20, revert 4970 to 1991).
+- `year_from` moved later: 4968 Shamal 12 HPW 1992-1996 -> 1997-1998 (1993-95 range catalogues list only the 16-spoke
+  Shamal; H.P.W. hubs presented as new on p30, undated, probably 1996; earliest dated p32 '97); 4947 Electron 1992-1996
+  -> 1998-1998 (absent from 1991-95 rim catalogues; "nuova gamma" Climb-Dynamic, earliest dated p40, 1998).
+- Retitled (old titles): 4968 "Campagnolo Shamal 12 HPW" -> "Shamal 12-HPW"; 4947 "Campagnolo Electron" -> "Electron
+  (Climb-Dynamic)"; 6342 "Campagnolo Record Titanium, Carbon BB-System" -> "Record Titanium Ergopower (Carbon
+  BB-System)". search_text rewritten with each. Descriptions rewritten on 1187, 6342, 4968, 4947; 6963 Vento noted as
+  16-HPW in 1997.
+- Added: 10055 "Pro-Fit, Record" pedal 1998 (p37, 266 g pair vs 430 g Record '97); 10056 "Proton (Climb-Dynamic)" wheel
+  1998. UUID source_ids.
+- Merged (user decision): 4956 "Campagnolo Omega 20" (velobase 1990-1990, 395 g, source_id
+  18F51D39-7888-45FF-BCC9-809A15390351) deleted as a duplicate of 4957 Omega Strada Hardox (P0171/P0172, 395/430 g; the
+  1995 range calls it Omega 20). No bike_spec links or overrides. 4957 retitled "Omega 20 (Omega Strada Hardox)",
+  search_text "Campagnolo Omega 20" (old title "Campagnolo Omega Strada Hardox"). Delete again if a crawl reinserts it.
+- Unresolved: Eurus 1997, Nucleon,
+  K2 / Kilimangiaro rims (p26, undated ~1995-96) named only, not added.
