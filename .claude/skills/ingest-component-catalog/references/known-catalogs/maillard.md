@@ -174,3 +174,19 @@
   and "450RN", lower-tier quill pedals named only in the price list, not
   pictured - noted as the weakest evidence in this pass.
 
+
+## Cleanup 2026-11-01 (no catalogue): Maillard 700 pedal colour variants folded
+
+- 3827 "Maillard 700 (black dust cap with serrations, silver cage)" (1970-80, 445g) retitled "Maillard 700",
+  variants listed in its description, group 263 "Maillard 700", year_to 1980 -> 1989: the 1981-88 Peugeot
+  catalogues print plain "Maillard 700" alongside "CX 700" / "Atom CX700 aero" (1984, 1986, 1988), so the
+  quill 700 stayed in the range; 1983 "700RN" is the black-cage version (RN as Atom 450RN / 600RN).
+- Deleted (velobase colour variants, no years, no links): 3830 "Maillard 700 (red dust cap, black cage)"
+  753B5F3D-A179-49BF-BE79-7339576BC9C0; 3831 "Maillard 700 (black dust cap, black cage)"
+  4DA6D166-8568-4C05-99E7-819B48D8A405; 3832 "Maillard 700 (red dust cap, silver cage)"
+  47ADDBBA-080F-4F56-A9B5-B07F073ED399.
+- Kept separate: 3833 Spidel/Maillard 700 Black Alloy Cages (the "dural" pick), 3991 Chrome Plated Steel
+  Cages, 3990 (platform), 3665 Atom 700, 3741 / 3742 Galli Maillard.
+- Links +14 (1976-88 Peugeot), generator overrides in Pedals; null for 1984 "700C" and 1989 "700 SS".
+- Still no rows: CX 500 / 550 / 650 / 700 pedals (~80 specs, 1984-89 Peugeot), Atom 500 RA (5, 1982),
+  Maillard 650 alloy.

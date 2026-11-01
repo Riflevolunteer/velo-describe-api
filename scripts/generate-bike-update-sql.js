@@ -2700,6 +2700,14 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // Maillard 700 quill pedal: 3827 holds the folded colour variants (2026-11-01), 1970-89 since Peugeot prints plain
+    // "Maillard 700" beside "CX 700" through 1988. Plain values match the title; these need keys.
+    'maillard 700 dural with christophe toe clips and lapize toe straps': 3833, // 1977 Peugeot (DE) PY 10/CP: dural = the alloy-cage row, as 'spidel 700 dural course'
+    'maillard 700rn': [{ from: 1983, to: 1983, id: 3827 }], // 1983 Peugeot PY 14 / PX 14: RN = black cage (as Atom 450RN / 600RN)
+    'maillard 700; toe clips and straps': [{ from: 1986, to: 1988, id: 3827 }], // 1986 Peugeot PY 10 M / PRO 10, 1988 PY 10 P
+    'maillard 700; toe clips; straps': [{ from: 1987, to: 1987, id: 3827 }], // 1987 Peugeot PY MA W
+    'maillard 700c with christophe toe clips': null, // 1984 Peugeot PY 10 FC: "700C" may be Course or a CX misprint
+    'maillard 700 ss toe clips and straps': null, // 1989 Peugeot C 653 MAB Z: no SS row
     // MKS Pedal Catalogue Edition 11 (c. 1985) retitled the MKS rows to "MKS <no.>, <name>", so the plain names no longer substring-match.
     'mks esquartz #2025': 3859, // 1985 Raleigh Prestige / Competition: No. 2025 is the Esquartz 102, not the 2023 Esquartz
     'mks sylvan road': 3865, // 1985 Bianchi Strada / Randonneur 700: MKS 2021, Sylvan Road
