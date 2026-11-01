@@ -3425,6 +3425,7 @@ const COMPONENT_OVERRIDES = {
     'mavic special sport': [{ from: 1980, to: 1991, id: 5109 }], // 1981 Bianchi: Mavic Spéciale Sport tubular (c. 1980 catalogue, 400 g)
     'mavic ma 40 hard anodized': 5077, // 1986 Raleigh: Mavic MA 40, as the 1987 Bianchi "Mavic MA40"
     'mavic m3cd hard anodised 36h eyeleted': 5048, // 1987 Raleigh: Module 3 CD (M3 CD)
+    'mavic m3cd hard anodised': 5048, // 1988 / 1989 Raleigh Randonneur: Module 3 CD (M3 CD)
     'mavic monthlery drilled for tubulars': [{ from: 1970, to: 1980, id: 5093 }], // 1978 Peugeot (NL): Montlhéry Route, as the 1973-75 "Mavic Monthlery" picks (Route / Pro / Légère all listed, text does not say which)
     'mavic module e': [{ from: 1975, to: 1984, id: 5087 }], // 1978 Peugeot (NL): Module E (Red Label); the row is now dated 1975-84, so 1980 Peugeot PKN 10 / 13 too
     'mavic module e drilled': [{ from: 1975, to: 1984, id: 5087 }], // 1980 Peugeot (NL) PVN 10
