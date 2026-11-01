@@ -54,3 +54,23 @@
   1989-1989). 3792 PP 76 Carbon (1988-1990) and 3787 PP 56 (1988-1993) already cover 1989. No links or overrides on the
   changed rows.
 
+## Look "Cycle 1990" catalogue (La Bible du Vélo blog "Look 1990", 20 spreads), `data_source` 334
+
+- Label "Look Cycle catalogue (1990)". Source: https://labibleduvelocatalogueslook.blogspot.com/p/look-1990.html (20 images,
+  2048 x 1449). French; cover "CYCLE 1990", code 0145 154 - F, printed in Belgium; p2 "Voici la nouvelle gamme LOOK 1990"
+  (Hinault and Moser). Transcribed by one Sonnet subagent (scratchpad `look90/look-1990.json`, 12 items); the p11 pedal
+  table checked by hand.
+- Pages: 1 cover, 2 intro, 3-5 frames (KG 96 Team Replica, KG 76 Kevlar Hinault, KG 66 Carbo Composit, KG 56 Generation 4),
+  6-8 PP 96 Carbo Pro and ARC cleat, 9-10 shoes, 11 pedal range and table, 12-15 MAXone power computer and hub, 16-19
+  clothing, helmet, bidons VV 78 / VV 79, bags, saddle covers, 20 distributors.
+- Pedal table: PP 96 Carbo Pro 200 g (32 deg, ball bearings, labyrinth seal, profiled carbon lever, red), PP 76/V Carbon
+  217 g ("nouveau coloris" violet), PP 66 Racing 245 g, PP 71 Elle 245 g (0.5-0.8 m/kg), PP 57 Class 225 g (grey, pre-set
+  0.8 m/kg), PS 26 Réversible 225 g (29 deg here vs 26 deg in 1989; colour kits incl. green). Threads 9/16 x 20 (PS 26
+  also 14 x 1.25). PP 96 is "la quatrième génération de pédales LOOK", "nouveau design"; ARC = red anatomical cleat.
+- Changed (source_ref -> 334): year_to 1989 -> 1990 on 3789 Racing PP66, 10034 PP71 Elle (description), 3793 PS 26
+  (description); 3792 Carbon PP76 description (violet PP 76/V; years 1988-1990 already). Added (1990-1990): 10035
+  "LOOK PP96 Carbo Pro", 10036 "LOOK PP57 Class" (Pedals), 10037 "LOOK MAXone rear hub" (Hubs; 230 g, 32 h, power-sensing
+  torsion bar; category_brand Hubs / LOOK added). Not added: MAXone computer, cleats, bidons (no category).
+- Left: 3787 PP56 (1988-1993) is absent here (PP 57 takes its place) but is fitted to a 1993 Bianchi, so its year_to
+  stands; 3791 plain PP76 (1980-1993, 5 links on 1993 Bianchis) untouched.
+
