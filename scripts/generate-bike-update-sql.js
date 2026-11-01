@@ -2642,6 +2642,12 @@ const COMPONENT_OVERRIDES = {
     'suntour edge accushift': [{ from: 1989, to: 1989, id: 6285 }], // SL-4050
     'campagnolo chorus synchro 2': [{ from: 1989, to: 1989, id: 7027 }], // A281 with Syncro inserts
     'campagnolo athena synchro 2': [{ from: 1988, to: 1991, id: 5971 }], // 1989 Bianchi Giro: Syncro II 0221-0223, as above
+    // 1989 Tangent / Axis / Volpe (drop bars): the catalogue puts the group name on the
+    // shifter line, but XC 9010 / XCD 6000 / XCE had no bar-end lever. SL-BC00 is SunTour's
+    // only AccuShift bar-con in 1989.
+    'suntour xc 9010 barcon accushift': [{ from: 1989, to: 1989, id: 6262 }], // SL-BC00, Superbe Pro (bar-con)
+    'suntour xcd 6000 barcon accushift': [{ from: 1989, to: 1989, id: 6262 }],
+    'suntour xce 4050 barcon accushift': [{ from: 1989, to: 1989, id: 6262 }],
   },
   'Shifting Brake Levers': {
     // 1990 Bianchi Rapidfire shifters (the 1990 groups are M650 DX / M550 LX / M735 XT)
