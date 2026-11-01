@@ -699,6 +699,7 @@ const COMPONENT_OVERRIDES = {
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 2462 }], // Competition / Triathlon: FD-1050 105
     'shimano 600ex': [{ from: 1987, to: 1987, id: 2481 }], // Road Ace / Record Ace: FD-6207 600EX (1984-87)
+    'sachs huret rider 2': [{ from: 1989, to: 1989, id: 2437 }], // 1989 Peugeot Lautaret / Lavandou: Sachs Huret Rider (as the Fun Star's 'Rider')
     'shimano 600 ex': [{ from: 1981, to: 1981, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // 1981 Criterium: EC-630 / FD-6200 Arabesque (1978-84; FD-6207 is 1984-87) // Road Ace: FD-6207 600EX (1984-87)
     'sun tour spirt': 2601, // 1981 Royale: SunTour 3700 / FD-1000 Spirt (1973-85)
     'sun tour spirt pub': 2601, // 1981 Record: as Royale
@@ -1007,7 +1008,7 @@ const COMPONENT_OVERRIDES = {
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 4449 }], // Competition / Triathlon: RD-1050 105
     'shimano 600 ex': [{ from: 1981, to: 1981, id: 4468 }, { from: 1987, to: 1987, id: 4471 }], // 1981 Criterium: RD-6200 Arabesque short cage, 13/28T (1978-84; RD-6207 is 1984-86) // Road Ace: RD-6208 600EX SIS (1986-87)
-    'shimano 600ex': null, // Record Ace: friction 600EX; RD-6207 ends 1986, RD-6208 is SIS only, so no row fits
+    'shimano 600ex': [{ bike: 'Record Ace 12', from: 1987, to: 1987, id: 4470 }], // Record Ace: friction 600EX levers, so RD-6207 (row ends 1986) rather than the SIS-only RD-6208
     // 1985 Raleigh (Marathon, Pursuit, Record, Teton): "SunTour HR", on 14-30 5/6-speed freewheels. Only the Honor
     // RD-1100 (1973-85, 28T / 14-30) fits by capacity and tier; no DB row is titled HR, so this is by abbreviation.
     'suntour hr': [{ from: 1985, to: 1985, id: 4702 }], // SunTour 2600 / RD-1100, Honor
@@ -1106,7 +1107,7 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi Strada: no 1980s Tourney rear derailleur row exists; the
     // only hits are 1970s DB-300/DB-400, so block it.
     'shimano tourney': null,
-    'simplex prestige': [{ from: 1900, to: 1979, id: 4583 }], // Simplex Prestige (variant of AR637P/NI), 1971-1974; not for the 1982 Peugeot (NL) PL 8 M
+    'simplex prestige': [{ from: 1900, to: 1979, id: 4583 }, { from: 1980, to: 1987, id: 4647 }], // Simplex Prestige (variant of AR637P/NI), 1971-1974; 1982 Peugeot (NL) PL 8 M: S001 T Prestige (1975-87)
     // 1973-76 Raleigh Gran Sport DL 160 "Simplex Maxi": the AR 642 Maxi-Prestige,
     // Simplex's only Maxi rear (long cage, wide range; 14-28 freewheel on the bike).
     'new simplex maxi': [{ from: 1973, to: 1976, id: 9692 }], // Simplex AR 642 P, Maxi-Prestige
@@ -1297,6 +1298,7 @@ const COMPONENT_OVERRIDES = {
     'normandy high flange quick release': [{ from: 1960, to: 1980, id: 3391 }], // 1975-76 Peugeot UE 18, as the UO 8 above
     // 1978 Peugeot (NL) PR 65 Lady: plain Normandy Dural high flange (not the Competition the PR 60 has).
     'maillard normandy dural high flange simplex sx quick release': [{ from: 1960, to: 1980, id: 3391 }],
+    'maillard normandy dural high flange quick release': [{ from: 1960, to: 1980, id: 3391 }], // 1980 Peugeot PX 18 M / MC
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace 32h': [{ from: 1990, to: 1996, id: 3562 }], // FH-7403-HG / HB-7400-F
     'shimano ultegra 32h': [{ from: 1990, to: 1992, id: 7565 }], // FH-6401-HG (7sp HG cassette on the Virata)
@@ -1445,6 +1447,8 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // Type only: the matcher found it inside 'Huret 343 centre-pull' (Peugeot / Bianchi / Falcon 1973-84).
+    'centre pull': null,
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
     // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
     'shimano santé aero levers with q r': 1008, // Record Ace Moderne: BR-5000-49
@@ -1587,6 +1591,9 @@ const COMPONENT_OVERRIDES = {
     'weinmann 405 alloy side pull quick release recessed bolts': 1117, // Competition: Weinmann AG 405
     'weinmann 610 alloy centre pull quick release levers': 1138, // Royal: Weinmann AG Raleigh 610 (as 1982)
     'weinmann 610 alloy centre pull quick release brake levers': 1138, // Clubman
+    // 1983 Royale 10 / 1984 Royal 10 name both calipers, so the generic 999 row, not Raleigh's own 610.
+    'weinmann 610 750 alloy centre pull quick release levers': [{ from: 1983, to: 1984, id: 7929 }], // Weinmann AG Vainqueur 999 (610 / 750)
+    'weinmann 610 750 alloy centrepull with quick release levers': [{ from: 1983, to: 1984, id: 7929 }],
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'weinmann 610 alloy centre pull with quick release levers': [{ to: 1982, id: 1138 }], // Weinmann AG Raleigh 610 (row dated 1970-80; Raleigh's own 610)
     // 1974 Raleigh (US): the table drops the "999" the 1973 table carried, but the
@@ -1992,6 +1999,7 @@ const COMPONENT_OVERRIDES = {
     'shimano new 105 52 42t light alloy with 170 mm cranks': [{ from: 1987, to: 1987, id: 1778 }], // Competition: FC-1050 105
     'shimano 105 biopace 52 42t 170 mm cranks': [{ from: 1987, to: 1987, id: 1778 }], // Triathlon: FC-1050 105 (the DB has no separate Biopace 105 row)
     'shimano 600ex 52 42t light alloy with 170 mm alloy cranks and sealed mechanism bottom bracket': [{ from: 1987, to: 1987, id: 1798 }], // Road Ace / Record Ace: FC-6207 600EX (1984-87)
+    'shimano 600 sis': [{ bike: 'Junior SIS 600', from: 1987, to: 1987, id: 1798 }], // 1987 Colnago: FC-6207, 600EX
     // 1986 Raleigh (US).
     'suntour superbe pro 52 42 170mm': [{ from: 1984, to: 1986, id: 1991 }], // Prestige: SunTour CW-5000 Superbe Pro (1984-86); the matcher took the 1993-94 Superbe
     // 1974 Peugeot (Dutch catalogue). No Stronglight Competition 53 row exists, left unlinked.
@@ -2609,6 +2617,10 @@ const COMPONENT_OVERRIDES = {
     'suntour ub 10 stem mount': 6288, // SunTour LD-3000, UB-10 / UBN-10 (stem)
     'suntour ub 10': 6288,
     'shimano 600 sis': [{ from: 1986, to: 1987, id: 6149 }], // 1987 Bianchi: Shimano SL-6208, 600EX SIS
+    // 1987 Raleigh: 105 levers are SL-1050 (SIS / friction); Record Ace's 600EX levers are friction, so SL-6207.
+    'shimano 105 front & rear light alloy levers': [{ from: 1987, to: 1987, id: 6130 }], // Sirocco 12
+    'shimano 105 with friction type light alloy levers': [{ from: 1987, to: 1987, id: 6130 }], // Ventura 12
+    'shimano 600ex front & rear with sealed non loosening mechanism levers': [{ from: 1987, to: 1987, id: 6148 }], // Record Ace 12
     'shimano dura ace sis 7': [{ from: 1987, id: 6165 }], // Shimano SL-7401, Dura-Ace SIS (7sp)
     'rapidfire plus ct15': 7733, // 1993 Bianchi, from the Jul 1992 manual: Shimano ST-CT10 / ST-CT15, Altus C10
     // 1987 Bianchi Limited/Squadra "600 SIS": SL-6208 is now catalogue-dated
@@ -2770,6 +2782,7 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 6207; toe clips and straps': 3961, // 1986 Peugeot (FR): Shimano PD-6207, 600EX (Shimano exact-model links 2026-10-30)
     'shimano dural pd 6207; toe clips and straps': 3961, // 1986 Peugeot (FR)
     'shimano 600ex sealed mechanism light alloy': 3961, // 1987 Raleigh: PD-6207, 600EX (row 1984-86)
+    'shimano 600 sis': [{ bike: 'Junior SIS 600', from: 1987, to: 1987, id: 3961 }], // 1987 Colnago: PD-6207, 600EX (as the 1987 Bianchi Limited)
     'campagnolo gran sport reflector with toe clips and straps': 3688, // 1981 Raleigh Competition GS: Campagnolo 3700, (Nuovo) Gran Sport (// linkCoverage pass 2026-10-30)
     'campagnolo chorus; toe clips; straps': 3700, // 1987 Peugeot (FR) Chorus
     'campagnolo victory; toe clips; straps': 3720, // 1987 Peugeot (FR) Dolomites: 405/000 Victory
@@ -2878,6 +2891,9 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // Finish only: the matcher found it inside 'Cinelli chrome seat pillar' (Raleigh 1970-76).
+    chrome: null,
+    'shimano 600 sis': [{ bike: 'Junior SIS 600', from: 1987, to: 1987, id: 5891 }], // 1987 Colnago: SP-6207, 600EX
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
     // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
     'shimano deore xt ii': 5892, // 1989 Avanti: SP-M730, Deore XT
@@ -3074,6 +3090,7 @@ const COMPONENT_OVERRIDES = {
     'regina extra record': 1381, // Regina Extra 50 Record (1970-80)
     // 1986 Colnago. Everest chains were made by Fossati & C., so the catalogue's "Fossati Racing Cromo" is the Everest Racing Cromo row.
     'fossati racing cromo': 1361, // Everest Modello Racing Cromo
+    'everest cromo': [{ from: 1985, to: 1988, id: 1361 }], // 1988 Colnago: Everest Modello Racing Cromo
     'everest special cromo': 1364, // Everest Serie Special (silver); the Oro variant is gold, not chrome
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
     'sun tour ultra 6 narrow': 7820, // Record Ace / Clubman: SunTour UC-6000, Ultra-6 chain
