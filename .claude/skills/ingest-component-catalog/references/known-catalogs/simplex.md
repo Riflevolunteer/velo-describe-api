@@ -688,3 +688,24 @@
   2346 / 2346 G -> 2540 A / 2540 GA; the assembly notice still shows 2336 /
   2337 / 2354. The AR 532 P / N (1964) is replaced by the 37T AR 537 P / NI;
   the 1964 AR 532 P / N standard row stays unadded (undecided).
+
+## Cycling magazine, 21 November 1985, "Simplex go for new smoother profile" (1 page, via disraeligears.co.uk) — data_source 341
+
+- Source: https://www.disraeligears.co.uk/site/cycling_21st_november_1985_-_simplex_go_for_new_smoother_profile.html
+  (main image 1560 x 1099, legible); the disraeligears specimen page `simplex_640_1st_style.html` (introduced
+  "1985?", 263g, 46mm pulley centres, top normal, sprung B pivot, friction, alloy knuckles and outer plate, steel
+  inner plate and cage) is linked to it. UK news item, country GB.
+- Content: two new rear ranges "likely to be fitted to 1986 models", 440 and 640, each standard or long-arm GT;
+  concealed rear pivot, die-cast alloy housing, reinforced stainless inner cage plate, Zytel rollers; 260-290g;
+  7-speed; capacities 28-40t; max sprocket 28t on the 640 racing model, 34t on the 440GT; ~£10; with model 302
+  and 303 front changers. Economy SX2 rear redesigned (black or white, Delrin pivots, 205g, 32t capacity, 30t max)
+  with model 32 front and twin levers (~£4). SX2000 seatpin (black flutes, cradle, 26.4 / 26.8 / 27.2mm, 220mm,
+  290g, ~£8). No SX 620 (5 Peugeot 1987-88 specs stay unlinked).
+- Added (1986-1989 unless stated): 10052 Simplex SX640 T, 10053 Simplex SX640 GT, 10054 Simplex SX2000 (Seat
+  Posts, 1986-1986).
+- Changed: 4659 SX2 year_from 1990 -> 1986, description from the article (174g measured kept); 2549 SJ A302
+  year_from 1989 -> 1986 and 7352 SJ A303 1989 -> 1986 (the article says "model 302 and 303 front changers",
+  not "SJ A"; 2549 was already linked by a 1988 Peugeot "SJA 302"). SX440 rows (1985-88, velobase) agree, unchanged.
+- Bike links +14 (1986-89 Peugeot): T x11, GT x3 (PH 513 / P 513 Vanoise triples). Peugeot prints GT only on
+  triples and T / TSP on doubles, so the plain "SX 640", "white SX 640" and "SX 640 Triathlon, white" doubles
+  went to the T (inference). Overrides in Rear Derailleurs, 1986-89.

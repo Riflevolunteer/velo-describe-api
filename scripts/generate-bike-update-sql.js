@@ -989,6 +989,16 @@ const COMPONENT_OVERRIDES = {
     // the PB 12 freewheel is 13-24 (CP max 24t). LJ1000 CP (1975-83 since 2026-11-01).
     'simplex lj 1000': [{ from: 1983, to: 1983, id: 4646 }],
     'simplex sx 810 t': [{ from: 1977, to: 1986, id: 4617 }], // 1977 Peugeot (DE) PA 10/LE, 1982 Peugeot: SX810 T (1977-86; the DB title has no space, so the matcher misses it)
+    // 1986-89 Peugeot: Simplex 640 range (Cycling 21 Nov 1985: standard or long-arm GT). Peugeot prints GT only on triples
+    // and T / TSP on doubles; the plain "SX 640" bikes are all doubles with 21-28t freewheels, so the T.
+    'simplex sx 640 tsp': [{ from: 1986, to: 1989, id: 10052 }],
+    'simplex sx 640 t': [{ from: 1986, to: 1989, id: 10052 }],
+    'simplex sx 640 t white': [{ from: 1986, to: 1989, id: 10052 }],
+    'simplex sx 640': [{ from: 1986, to: 1989, id: 10052 }],
+    'simplex white sx 640': [{ from: 1986, to: 1989, id: 10052 }],
+    'simplex sx 640 triathlon white': [{ from: 1986, to: 1989, id: 10052 }],
+    'simplex sx 640 gt': [{ from: 1986, to: 1989, id: 10053 }],
+    'simplex sx 640 gt sp': [{ from: 1986, to: 1989, id: 10053 }],
     'sun tour vx gt': [{ from: 1979, to: 1980, id: 4707 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour RD-2400, VX (GT) (1977-84)
     'suntour hero': [{ from: 1986, to: 1986, id: 4746 }], // 1986 Raleigh Record / Sportif / Capri / Grand Mesa: SunTour Hero (Version 1); a judgement, the row is dated 1987, one year later (Version 2 is undated)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
