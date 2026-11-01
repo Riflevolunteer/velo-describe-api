@@ -723,6 +723,11 @@ const COMPONENT_OVERRIDES = {
     'suntour xc comp top pull': [{ from: 1990, to: 1992, id: 7959 }], // FD-XC01, XC-Comp (only XC-Comp front row, dated 1992)
     'suntour xcd top pull': [{ from: 1990, to: 1990, id: 2662 }], // XCD 6000 (1990)
     'suntour xce top pull': [{ from: 1990, to: 1992, id: 2663 }], // FD-XE01, XCE
+    'suntour xce 4050': [{ from: 1989, to: 1989, id: 2663 }], // 1989 Bianchi Forte / Volpe: FD-XE01, XCE (the 4050 level)
+    // 1986-87 Colnago Super Mountain Bike / 1986 Raid "Shimano AL 11" group: FD-AL11 (1980-87 since 2026-11-01).
+    // The 1988 "AL 11 SIS" names a later indexed version with no row.
+    'shimano al 11': [{ from: 1986, to: 1987, id: 2458 }],
+    'shimano fd al 11': [{ from: 1986, to: 1986, id: 2458 }],
     'suntour xct': [{ from: 1990, to: 1992, id: 7962 }], // FD-XT02, XCT (row dated 1992)
     'suntour x 1 top pull': [{ from: 1990, to: 1990, id: 2655 }], // X-1 Chroma (1990)
     'suntour radius': [{ from: 1990, to: 1992, id: 2640 }], // FD-RA00-SSH clamp-on (Eros frame has no braze-on)
@@ -1008,6 +1013,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xc comp': [{ from: 1990, to: 1992, id: 4783 }], // RD-XC20-GXB
     'suntour xcd': [{ from: 1990, to: 1990, id: 4789 }], // XCD 6000 (1990)
     'suntour xce': [{ from: 1990, to: 1992, id: 4791 }], // RD-XE01-GXB
+    'suntour xce 4050': [{ from: 1989, to: 1989, id: 4791 }], // 1989 Bianchi Forte / Volpe
+    'shimano al 11': [{ from: 1986, to: 1987, id: 4446 }], // 1986-87 Colnago Super Mountain Bike: RD-AL11 (1984-87 since 2026-11-01)
     'suntour xct': [{ from: 1990, to: 1992, id: 7952 }], // RD-XT02, XCT (row dated 1992)
     'suntour x 1': [{ from: 1990, to: 1992, id: 4776 }], // RD-X101-GXB; matcher took the 1989 X-1 Chroma
     'suntour radius': [{ from: 1990, to: 1992, id: 4753 }], // RD-RA00-SSB
@@ -1462,7 +1469,9 @@ const COMPONENT_OVERRIDES = {
     'weinmann 570 alloy side pull': 1129, // 1987 Peugeot (US) Mont Cenis: Weinmann AG 570
     'weinmann 570 primo': 1129, // 1987 Peugeot (US) PX 10: Weinmann AG 570
     'weinmann 610 alloy center pull qr double levers': 1136, // 1986 Peugeot (US) Avoriaz: Weinmann AG 610 Vainqueur 999
-    'weinmann 500 alloy side pull with qr': 1125, // 1986 Peugeot (US) Tourmalet: Weinmann AG 500 (hex socket, quick release)
+    'weinmann 500 alloy side pull with qr': 1125,
+    // 1979-80 Raleigh Super Course: the quick-release AG 500 row (1979-86 since 2026-11-01).
+    'weinmann 500 short reach side pull with qr': [{ from: 1979, to: 1980, id: 1125 }], // 1986 Peugeot (US) Tourmalet: Weinmann AG 500 (hex socket, quick release)
     'shimano br 6207': 970, // 1986 Peugeot (FR) table PG / PX 10 SH: BR-6207-49, the short-reach road caliper
     'weinmann 506 alloy side pull': 7764, // 1986 Peugeot (US) table Ventoux: Weinmann AG 506
     'weinmann 405 alloy side pull with racing levers': 1117, // 1986 Peugeot (US) PGN 10 Galibier: Weinmann AG 405 caliper (491 is the lever)
@@ -1505,7 +1514,7 @@ const COMPONENT_OVERRIDES = {
     'mafac racer forged': [{ from: 1970, to: 1982, id: 838 }], // 1974 Peugeot PX 60
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano 600ex qr; recessed fitting calipers and hooded alloy levers': [{ from: 1987, to: 1987, id: 972 }], // Road Ace: BR-6208 600EX (1986-87)
-    'calipers : shimano new 105 type 57 long bolt': [{ from: 1987, to: 1987, id: 954 }], // Triathlon: BR-1050-57 105 (long, 57 type)
+    'calipers: shimano new 105 type 57 long bolt': [{ from: 1987, to: 1987, id: 954 }], // Triathlon: BR-1050-57 105 (long, 57 type)
     // 1970 Peugeot (Dutch-market catalogue).
     'mafac racer': [{ from: 1970, to: 1982, id: 838 }], // MAFAC Racer (lettered MAFAC RACER); ranges to 1982 with the rows (c. 1982 MAFAC catalogue, source 299)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
@@ -2435,10 +2444,13 @@ const COMPONENT_OVERRIDES = {
     'new 3ttt record alloy': [{ from: 1975, to: 1976, id: 6416 }], // 3ttt Mod. 1 Record Strada (2nd version); the 1976 Professional Mk IV repeats the 1975 text
     'itm 400': 6564, // ITM 400 Racing
     'sr custom': 8234, // Sakae/Ringyo (SR) CT, Custom (6659 "SR CUSTOM" merged into it 2026-10-28)
-    // 1983-87 Raleigh "SR / Sakae Custom light alloy", as `sr custom` above: SR CT, Custom (1978-87 since the
-    // 2026-10-28 merge of 6659). The 1984 "Custom Alloy" names no maker; the other 1984 Raleighs print SR Custom.
-    'sr custom light alloy': [{ from: 1978, to: 1987, id: 8234 }],
-    'sakae custom light alloy': [{ from: 1978, to: 1987, id: 8234 }],
+    // 1983-89 Raleigh "SR / Sakae Custom light alloy", as `sr custom` above: SR CT, Custom (1978-89; widened from
+    // 1987 to the 1988-89 Raleigh and 1989 Bianchi catalogues 2026-11-01). The 1984 "Custom Alloy" names no maker;
+    // the other 1984 Raleighs print SR Custom.
+    'sr custom light alloy': [{ from: 1978, to: 1989, id: 8234 }],
+    'sakae custom light alloy': [{ from: 1978, to: 1989, id: 8234 }],
+    'sr custom alloy': [{ from: 1978, to: 1989, id: 8234 }], // 1989 Raleigh Delta / Elix / Quadra II / Strada
+    'sr ct': [{ from: 1978, to: 1989, id: 8234 }], // 1989 Bianchi Brava / Limited / Sport SX
     'custom alloy': [{ from: 1984, to: 1984, id: 8234 }],
     // 1986 Raleigh "SR CT (forged) alloy": SR CT, Custom (1978-87).
     'sr ct alloy': [{ from: 1978, to: 1987, id: 8234 }],
@@ -2604,6 +2616,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 sis': [{ bike: 'Junior SIS 600', from: 1987, to: 1987, id: 421 }], // BL-6208, 600EX (1986-88)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 223 }],
+    "campagnolo croce d'aune aero": [{ from: 1987, to: 1991, id: 223 }], // 1989 Bianchi Mondiale
     'shimano deore xt sis': [{ from: 1987, to: 1990, id: 429 }], // BL-M730
     'weinmann 144 1': 7769, // 1982 Peugeot: Weinmann AG No. 144 / 144-1 Professional
     'weinmann carrera 400': 493, // 1982 Peugeot PX 10 DU: Weinmann No. 185 (Carrera) levers, 1980-83
