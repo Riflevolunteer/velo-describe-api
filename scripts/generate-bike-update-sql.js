@@ -1843,11 +1843,11 @@ const COMPONENT_OVERRIDES = {
     'campagnolo chorus': 2956, // Campagnolo 704/101, Chorus
     'shimano ultegra': 3087, // Shimano HP-6400, 600 Ultegra
     'suntour xc comp': 8045, // SunTour HS-ST00-J / -I (XC-Comp headset per the 1992 system chart)
-    'tange cd sealed': 3155, // Tange-Seiki Levin CD
+    'tange cd sealed': 3155, // Tange Levin CD
     // 1979 Peugeot (French catalogue).
     'spidel s7 competition': 3123, // Stronglight S7 Super Competition; DB dates it 1981-83, catalogue shows it 1979
     // Headset link pass 2026-10-26 (from /linkCoverage).
-    'tange cd': 3155, // 1990 Bianchi Alfana / Virata: Tange-Seiki Levin CD, as the 1993 'tange cd sealed'
+    'tange cd': 3155, // 1990 Bianchi Alfana / Virata: Tange Levin CD, as the 1993 'tange cd sealed'
     'hatta "vesta" sealed steel cp': 3020, // 1986 Raleigh Elkhorn: Hatta Vesta, as the 1990 Bianchi "Hatta Vesta"
     'hatta steel cp sealed': 3020, // 1986 Raleigh Teton / Seneca: same wording as the Elkhorn, no model printed
     'campagnolo sport': [{ from: 1971, to: 1985, id: 2951 }], // 1978 Bianchi Campione del Mondo CX: 1040/A Gran Sport ("sold as the Sport head set")
