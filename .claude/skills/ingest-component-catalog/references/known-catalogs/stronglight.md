@@ -248,3 +248,16 @@ The generator's overrides for 1880 and 1893 still start at 1970 but only resolve
   "STRONGLIGHT SP..." locknut in the 1982 leaflet photo (weakest call here).
 - No inserts, deletes or description changes; leaflet weights already match the rows. Gallery photos
   carry no new codes or dates.
+
+## LX range on 1986-88 Peugeot bikes (2026-11-01, no new source)
+
+- Peugeot prints the mid-80s LX cranks without "LX": "Stronglight 200 ..." (15 specs, 1986-88, anodised / white /
+  polished / deluxe, 42x52) and the triples' "Stronglight 100 ..." (3, 1987-88, incl. "R 100 30x40x50" on the 1987
+  P 513 Vanoise, "R" unexplained).
+- 1889 "Stronglight 200LX" (velobase 733B703D-7B83-4937-BD5F-B72F1B6C010F, was 1980-1980, source_ref 1) retitled
+  "Stronglight 200 LX" (search_text rewritten), described, 1985-1988, `source_ref` 194. year_from moved later:
+  the full crank ranges of n° 25 (c. 1980), n° 26 (1982) and n° 27 (Aug 1982) have no LX model; earliest
+  attestation is the c. 1985 brochure cover (200 LX arm). year_to from the 1988 Peugeot catalogue.
+- 1875 "Stronglight 100 LX" (years were NULL) dated 1985-1988: brochure floor as the 300 LX sibling, plus the
+  dated 1987-88 Peugeot triples (ST 100 LXT).
+- Links +18 via Cranksets overrides (1986-88).

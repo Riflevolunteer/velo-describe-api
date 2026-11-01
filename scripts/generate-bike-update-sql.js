@@ -1866,6 +1866,18 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1986-88 Peugeot: Peugeot drops the "LX" of Stronglight's mid-80s LX range (c. 1985 brochure: 100 LX, 300 LX,
+    // 400 LXT, 200 LX on the cover). "200" = 1889 200 LX; the triples' "100" = 1875 100 LX (ST 100 LXT).
+    'stronglight 200 anodised': [{ from: 1986, to: 1988, id: 1889 }],
+    'stronglight 200 42 x 52': [{ from: 1986, to: 1988, id: 1889 }],
+    'stronglight 200 deluxe 42 x 52': [{ from: 1986, to: 1988, id: 1889 }],
+    'stronglight 200 42x52': [{ from: 1986, to: 1988, id: 1889 }],
+    'stronglight 200 white 42x52': [{ from: 1986, to: 1988, id: 1889 }],
+    'stronglight 200 anodised 42x52': [{ from: 1986, to: 1988, id: 1889 }],
+    'stronglight 200 polished 42x52': [{ from: 1986, to: 1988, id: 1889 }],
+    'stronglight r 100 30x40x50': [{ from: 1986, to: 1988, id: 1875 }], // 1987 P 513 Vanoise: "R" unexplained
+    'stronglight 100 alu 30x40x50': [{ from: 1986, to: 1988, id: 1875 }],
+    'stronglight 100 triple 28x38x48': [{ from: 1986, to: 1988, id: 1875 }],
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
     'campagnolo victory 42 52t': 1516, // Rekord 920: 0355, Victory double
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
