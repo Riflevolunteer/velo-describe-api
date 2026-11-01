@@ -302,3 +302,28 @@ doesn't match the existing double-ring "w/ Ciclo-Cross Chainguard" rows).
   is undated, so not moved later on it); 13200 crank not tied to 2020 / 2021 (undated lettering variants); 22300 rear
   210 g vs 4873's description (no weight there) not added.
 
+## Catálogo Zeus-105 (January 1984; La Bible du Vélo blog "Zeus 1984", 36 pages), `data_source` 338
+
+- Label "Catalogo Zeus-105 (January 1984)", country ES. Source: https://labibleduvelocatalogueszeus.blogspot.com/p/zeus-1984.html
+  ("ZEUS CATALOG 1984 (1)..(36).jpg", 1275 x 1807). Cover "Catalogo Catalogue Zeus-105", foreword "Enero, 1984", Zeus
+  Industrial S.A., Durango / Abadiano. Printed page = file number - 2. Transcribed by three Sonnet subagents (scratchpad
+  `zeus84/part1-3.json`, merged `zeus105.json`). Out of scope: tools (files 28-32), gear tables, QRs, axles, misc.
+- **Series reorganised**: New Racer / Amateur (pp. 2-7), Supercronos (pp. 8-15), freewheels, Zeus-2000 cranks and BBs, Gigante
+  and Pista hubs. Supercronos takes the old Zeus-2000 refs (levers 21000 / 21001, rear 22000, front 22500, post 25000,
+  headset 26000, brakes 27000 "nuevo modelo Supercronos", hubs 28000, pedals 24000) **and the old Criterium crank / BB
+  refs** (13100-13130, 23100-23130). Zeus-2000 keeps only its cranks 13000-13030 (840 g) and BBs 23000-23030. New:
+  **Amateur** (rear 22400 steel 200 g, front 22900 125 g, crank 13400 Duralumin K 880 g, hubs 28700 530 g). Criterium is
+  left with pedals 24101 / 24103, freewheels 29200 and the 50502 saddle; Gran Sport with the 26200 headset only.
+- Misprints flagged by the transcribers: Supercronos BBs print 23100.00 for road and track and 23110.00 for triple and
+  cyclo-cross; the Zeus-2000 cyclo-cross BB prints 23000.00 (= road).
+- year_to -> 1984 (old 1982; source_ref -> 338): 1180 New Racer brake 27400 (650 g again), 9825 13030.00 Zeus-2000 Track,
+  9826 50501.00 saddle (now "exclusive Zeus-2001 model", 345 g; description), 2028 Criterium crank (description rewritten:
+  13100.00 from 1980, sold as Supercronos 13100.00 in 1984, 863 g). Also year_to 1982 -> 1984 with a Supercronos note: 2026 Criterium triple (13110), 2027 cyclo-cross (13120), 8144 Pista (13130). Added (1984-1984, group NULL): 10038 22400.00 Amateur
+  rear, 10039 22900.00 Amateur front, 10040 13400.00 Amateur crank (reuses the 1980 Gran Sport 13400 ref; 2030's
+  Duralumin S 856 g Gran Sport set not extended), 10041 28700.00 Amateur hubs. No links or overrides on the changed rows.
+- **Open, merge candidate (not done, needs a go-ahead):** 2032 / 2033 "Zeus Supercronos (circle Z ...)" and 2034
+  "Supercronos (triple)" velobase crank rows (1984-1984, no links) are the 13100 / 13110 chainsets that 2028 Criterium /
+  2026 Criterium triple now carry into 1984. Also left: 13200 New Racer crank (860 g here) not tied to 2020 / 2021; the
+  New Racer caliper 37400 / lever 37401 and Supercronos caliper 37000 sold separately (parts of the sets); 50502 Criterium
+  saddle 310 g vs 8859 (380 g, 1977).
+
