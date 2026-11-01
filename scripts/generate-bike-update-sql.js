@@ -2961,6 +2961,9 @@ const COMPONENT_OVERRIDES = {
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
     'regina silver': [{ from: 1985, to: 1987, id: 1386 }], // Rekord 920: Regina Extra "Silver BX", paired with the BX Silver freewheel
     'suntour ap 12 chain': 9727, // 1993 Bianchi: SunTour CH-AP12 (SunTour linking pass 2026-10-30)
+    // 1993 Bianchi Ocelot: no CN-HG20 in any Shimano manual; the Jul 1992 '93 manual (p. 73 Dual SIS chart) specs
+    // CN-HG50 for every Exage / Altus group, even with MF-HG20. Likely an OEM chain or a misprint.
+    'shimano cn hg20': [{ from: 1993, to: 1993, id: 7574 }], // Shimano CN-HG50, Hyperglide chain
     'sedis 110 links delta treated': 1402, // 1980 Peugeot PX 18 M / MC, PK 65: Sedisport Delta (// linkCoverage pass 2026-10-30)
     'sedisport black 1 2 x 3 32': [{ from: 1980, id: 1402 }], // 1987 Peugeot (US): as 'sedisport black'
     'sedisport silver 1 2 x 3 32': [{ from: 1980, id: 1402 }], // 1987 Peugeot (US): as 'sedisport silver'
