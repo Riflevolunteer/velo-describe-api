@@ -143,6 +143,37 @@
   1974; 1498 covers 1049/3 (triple v4 from 1973); 4081 Rally 1st gen 1974.
 - Skipped: 3320/A (covered by 1508 3320 Sport 1971-75); Rally (page missing).
 
+## Campagnolo Special Catalog, US edition — c. 1974 (Campagnolo_other_Vintage_Catalogs/CampagnoloSpecialCatalogue.pdf, 64 pp)
+
+- Blue "Special Catalog" from Olympic Resources Inc., Houston (US Cycling
+  Team supplier badge, "Printed in U.S.A."). Printed page = PDF page - 2; no
+  text layer. No printed date; dated c. 1974 from a reseller listing ("1039
+  SPECIAL CATALOG 1974") and the contents (one-bolt 4051, SR hubs, Velox,
+  Gran Turismo, solid-axle Nuovo Tipo, 1052/1 as the only front derailleur,
+  "New Special Triple Crankset Conversion" for 1049/5). data_source 342.
+- Skipped: printed pp 47-49 (cables, seat-tube bolts, fork ends), 51-56
+  (tools, stand), 57-60 (chain-line diagrams, gear table), covers/blanks.
+- Group pages 4000/F SR road, 1032/F NR road, SR track, Record track,
+  Gran Sport/Sport, then parts pages with codes R/NR/SR/OSR/RL/NGS/V/NT.
+  Also lists Sport Extra 2180 and the 3360 Elefante control (p 23).
+- Years: 6996 2180 Sport Extra year_to 1973 -> 1974; 5985 Elefante
+  year_to 1971 -> 1974; 7004 4104 year_from 1975 -> 1974 (pair 4104 with
+  4105/4106 on p 25).
+- Retitled: 5985 "Campagnolo Elefante Control Shifter" -> "Campagnolo
+  3360, Elefante" (search_text too); 3272 "Campagnolo 4101, Super Record
+  Pista" -> "... (High Flange)".
+- Descriptions rewritten (sub-numbers, holes, threads, sizes; velobase
+  weights kept, old 17a/Cat 16/Cat 17 citation tails dropped): 3275, 3276,
+  3272, 7004 SR hubs; 3259, 3260, 3270, 3271 Record hubs; 3229, 3230, 3231
+  Nuovo Tipo; 19 4031, 41, 42 4131; 2967 4141; 3708, 3709, 3711, 3715
+  pedals; 5753, 5754 1045 posts; 6380 763; 6996. All tagged source_ref 342.
+- Not moved: 7005 4061/1 stays from 1975. The 2000/1 and 2001/1 here are
+  "SR, short-reach" calipers but no 4061/1 set number, and they are also
+  the 2040/1 calipers. 1052/SR (2313, from 1975) absent; only 1052/1
+  "(R, RL, SR)". 1253 photo labels 1266/1267 and the 1026 diagram label on
+  p 22 not used (unconfirmed). SQL in the session scratchpad
+  (special-1974.sql); no rows added or deleted.
+
 ## Campagnolo Catalog 17a, US English edition — 1975 (Campy1975_catalog17a.pdf, 58 pp)
 
 - Black-and-white US-market condensation of Catalogue 17 (54 printed pages,
