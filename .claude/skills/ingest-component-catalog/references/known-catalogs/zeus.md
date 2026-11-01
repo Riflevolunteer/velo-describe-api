@@ -256,3 +256,31 @@ doesn't match the existing double-ring "w/ Ciclo-Cross Chainguard" rows).
   sold as the Zeus 2000 leather saddle (3 links, all 1973 Zeus bikes; override 'zeus leather' is not year-ranged).
   Everything else on the poster already spans 1974 in the DB. Do not re-read unless a larger scan turns up.
 
+## Catálogo Zeus-104 (June 1980; La Bible du Vélo blog "Zeus 1980", 40 pages), `data_source` 336
+
+- Label "Catalogo Zeus-104 (June 1980)", country ES. Source: https://labibleduvelocatalogueszeus.blogspot.com/p/zeus-1980.html
+  ("CATALOG ZEUS 1980 (1)..(40).jpg", 1275 x 1800). Cover "Catalogo / Catalogue zeus 104", foreword dated "Junio, 1980",
+  "Patentes Narregui, desde 1926"; Spanish / English. Printed page = file number - 2. File 2 has a stapled dealer
+  receipt of 2 Sept 1982 (owner ephemera). Transcribed by three Sonnet subagents (scratchpad `zeus80/part1-3.json`,
+  merged `zeus104.json`, 119 items incl. QRs, axles, sprockets, braze-ons).
+- **Already the five-digit refs of the 1982 US catalogue** (286): levers 20900-21201, rears 22000 / 22100 / 22200,
+  fronts 22500-22700, Gran Sport sets 10300 / 10400, cranks 13000-13030 (Zeus-2000), 13100-13130 (Criterium), 13400
+  (Gran Sport), BBs 23000-23030 / 23100-23130, pedals 24001-24303 (incl. New Racer 24301 / 24303), posts 25100 / 25200,
+  saddles 50501 / 50502 / 50503 (340 / 325 / 300 g), headsets 26000-26200, brakes 27200 (Zeus-2000, 690 g), 27000
+  (Zeus-2001, "zeus introduce el modelo 2001", 640 g), 27300 (Criterium, 720 g), hubs 28000-28600 (New Racer 28500,
+  New Racer Standard 28600), freewheels 29000 (7V, 255 g), 29100.06 / .05, 29200.06 / .05. Black and "doral" (gold)
+  Zeus-2000 finishes and the New Racer line are new here (the foreword), so the 1982 "new vs 103" list is really new by
+  1980. No New Racer rear, front, BB, brake, headset or post in this printing (only pedals and hubs).
+- `year_from` 1982 -> 1980 (old 1982 from 286): 9824 20900.00 Zeus-2001 braze-on lever (+65 g), 9825 13030.00 Zeus-2000
+  Track, 9826 50501.00 saddle (description: 340 g, "Prestige" by 1982), 2264 7-speed freewheel (255 g in 1980 vs 230 g),
+  9364 Criterium freewheels, 3655 New Racer hubs (its description already covers 28600).
+- `year_to` -> 1980 (old values) with the 1980 ref in the description: 8854 Gran Sport single lever 21201.00 (1977), 8856
+  Gran Sport rear 22200.00 (1977), 2686 Gran Sport front 22700.00 (1977), 2030 Gran Sport crank 13400.00 (1977, 856 g
+  again), 5947 Gran Sport post 25200.00 (1977), 3654 Gran Sport hubs 28200.00 (1978), 502 Zeus 2000 brake lever
+  37201.00 (1970; description rewritten). Bike links on 3654 (1973 Zeus) unaffected.
+- Left: 1178 Zeus 2001 brake keeps year_from 1977 (the 1977 judgement) although this catalogue says Zeus "introduces"
+  the 2001 model - conflict flagged, not moved; the Gran Sport double lever 21200 (115 g) has no clear row (6335 is a
+  253 g velobase avg); 13000 Zeus-2000 crank (2023 / 2024 / 2025, 698 g) and the 22100 Criterium rear (215 g) still
+  can't be tied to one version; saddles 50502 / 50503 vs 1977 Refs 56 / 57 (380 / 320 g) not merged. Out of scope: QRs,
+  axles, cable stops, clips, fork ends and crowns.
+
