@@ -248,6 +248,7 @@
 - Merged: deleted 8795 "MAFAC Course 435" (1979 poster, source 187, 0 links) into 347: by the code
   4-3-5 it is the drilled anodised promotion lever with patented clip, 75 g = CP a (1978). 347
   keeps its bike link and the override 'mafac dural promotion drilled'.
+  The plain "Mafac Dural Promotion" (1980 / 1982 Peugeot NL PBN 10) is code 13x = 355 Course 130 (override, 2026-11-01).
 - Added (1980-1980): 9965 MAFAC Course 227 (drilled, alloy bracket, large-adjuster hood, patented
   clip, 118 g), 9966 MAFAC Course 110 (bright, resin bracket, no hood, simplified clip, 65 g).
 - Leads, not merged: 356 Course 218 vs 8376 "2000 racing lever (C RMEGT)" (137 g both,

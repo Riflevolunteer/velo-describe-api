@@ -1438,6 +1438,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 966 }], // 1989 Peugeot (FR) Galibier: BR-6400
     'shimano sport lx 450': [{ from: 1989, to: 1989, id: 7211 }], // 1989 Peugeot (FR) Aspin: BR-A450, Exage Sport / Sport LX
     'modolo mach i': [{ from: 1989, to: 1989, id: 877 }], // 1989 Peugeot (FR) Savoie: Modolo Mach 1 (1988-90)
+    'gipiemme modolo professional': null, // 1982 Battaglin Giro d'Italia: v1 880 (INTERN. PAT., 1976-) or v2 892 (printed "Professional", -1985); no changeover date, the photo can't show the arm markings
     'shimano exage sport lx': [{ from: 1988, to: 1989, id: 7211 }], // 1989 Peugeot (NL) Aspin / Chamonix: BR-A450, Exage Sport / Sport LX
     'shimano exage mountain rear u brake': [{ from: 1988, to: 1989, id: 7212 }], // 1989 Peugeot (NL) Alpine Express: BR-M450 cantilever (front; the rear U-brake has no separate row)
     'shimano deore xt rear deore xt u brake': [{ from: 1987, to: 1989, id: 981 }], // 1989 Peugeot (NL) Europe Express: BR-M730, as the M730 derailleurs
@@ -2606,7 +2607,8 @@ const COMPONENT_OVERRIDES = {
     'shimano deore xt sis': [{ from: 1987, to: 1990, id: 429 }], // BL-M730
     'weinmann 144 1': 7769, // 1982 Peugeot: Weinmann AG No. 144 / 144-1 Professional
     'weinmann carrera 400': 493, // 1982 Peugeot PX 10 DU: Weinmann No. 185 (Carrera) levers, 1980-83
-    'mafac dural promotion drilled': 347, // 1980 Peugeot (NL) PFN 10: "geperforeerde" Promotion = Perfo; the plain PBN 10 one stays unlinked
+    'mafac dural promotion drilled': 347, // 1980 Peugeot (NL) PFN 10: "geperforeerde" Promotion = Perfo
+    'mafac dural promotion': 355, // 1980 / 1982 Peugeot (NL) PBN 10: undrilled alloy lever on the promotion bracket = lever code 13x, Course 130 (the only one in the 1980 and c. 1982 catalogues)
     'mafac dural course drilled rubber hoods and adjusters': 357, // 1980 Peugeot (NL) PKN / PVN 10: MAFAC Course, as the 1979 tandems
     'dia compe 165': [{ from: 1986, to: 1986, id: 8872 }], // 1986 Raleigh Technium 440 USA: Dia-Compe 163 / 165 / 169 / 195 extension lever sets
     // 1990 Bianchi US catalogue (retrobike archive 1676).
