@@ -68,3 +68,19 @@
   KL-PRO, 51 mm in 1984), 305 Aerodinamico levers, 303 Professionale levers (was bare), 739, 5024, 5026. Added: 10032
   "Galli Top Pro" (Rims, 1984-1984). No links or overrides on any.
 
+## Galli of America derailleur leaflet (1986; La Bible du Vélo blog "Galli 1986", 4 images), `data_source` 330
+
+- Label "Galli of America derailleur leaflet (1986)". Source: https://labibleduvelocataloguesgalli.blogspot.com/p/galli-1986.html
+  ("GALLI 1986 1..4.jpg": cover, spread 1642 x 1275, two panels). "Advanced derailleur technology - that works",
+  (c) 1986 BPP, Inc., Galli of America, Santee, CA. No part numbers or weights except "less than 100 grams" (KL front).
+- Contents: Criterium rear (circlip-fitted brass pivots, chromed pulley bushings, up to 24T, lighter than Super Record /
+  new Dura-Ace / Superbe Pro; black, green, blue, red, silver, gold; deliberately not indexed, "Race-Aided Design" panel
+  citing the 1985 Giro / Tour team); KL front (removable mounting stud, L cable clamp, chrome cage, < 100 g); Criterium
+  front (clamp-on, clamp anodised in the six colours); Criterium retrofriction shift levers "produced in cooperation with
+  Simplex of France" (spring clutch, no D-ring; six colours).
+- Changed (source_ref -> 330): 4242 Criterium rear undated -> 1986-1986 and description; year_to 1980 -> 1986 with
+  descriptions on 2352 Aerodynamic KL front, 2353 Criterium front, 6040 Criterium (Type 2) levers (the French-made
+  braze-on row taken as the Simplex-built retrofriction lever). No links or overrides.
+- Left: 2354 Criterium (type 2) front and 6039 Criterium levers (versions not distinguishable from the leaflet); 4240
+  KL rear and 4243 Super Criterium rear are not in this leaflet.
+
