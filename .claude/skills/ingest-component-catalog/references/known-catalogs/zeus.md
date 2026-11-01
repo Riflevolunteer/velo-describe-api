@@ -240,3 +240,19 @@ doesn't match the existing double-ring "w/ Ciclo-Cross Chainguard" rows).
 - Left out: Lucresa Soffatti / Imperator saddles (brand not in the DB), Notario N24 rat-trap and N26 rubber pedals (utility), Iris "Road Chain" (no model name), Roto 9008 shifters (already in 2425's
   description), the two handbuilt Zeus wheelsets. 14 ambiguous: Zeus Supercronos / Criterium track / New Racer cranksets (13100, 13130, 13200, 13230) and bottom bracket 23130, New Racer rear
   derailleur 22300 and seatpost, Maillard 700 Compact, Iris Gran Sport chain, Modolo Flash / Professional versions, 3ttt Competizione / Track Model 2.
+
+## Zeus range poster (c. 1974; La Bible du Vélo blog "Zeus 1974", one image), `data_source` 335
+
+- Label "Zeus range poster (c. 1974)". Source: https://labibleduvelocatalogueszeus.blogspot.com/p/zeus-1974.html; the one
+  image is hosted at http://img.xooimage.com/files110/4/9/8/1974-4d8e6cc.jpg (1024 x 662, the largest copy). A fold-out
+  poster of the range around a "Zeus Criterium" bike (component / thread table), with a world distributors list; Spanish /
+  English; undated, 1974 per the blog. Too small for weights; captions legible when zoomed.
+- Refs seen: 98 fork crown 2000, 94 fork ends 2000, 19 double control lever, 16 pump holder, 17 cable clip, 18 rubber
+  covers, 20 rear derailleur 2000, 22 front Criterium 69, 31 Criterium chainset, 90 freewheel 2000, 88 "juego de cubos
+  Zeus Gigante / Zeus hubs set Giant", 70 brakes 2000, 61 Gran Sport headset, 55 seat bolt, R 112 pump, R 510 "Zeus 2000
+  leather saddle", 52 Criterium seat post, 41 Gran Sport pedals. Several Refs differ from Catálogo 103 (1977: hubs Ref. 80
+  / 82, Criterium lever Ref. 12, headsets 61 / 62), so they were not used to move 1977-dated rows earlier.
+- Changed (source_ref -> 335): 5708 "Zeus Leather" (R.510, undated from 102) -> 1973-1974, description now says it was
+  sold as the Zeus 2000 leather saddle (3 links, all 1973 Zeus bikes; override 'zeus leather' is not year-ranged).
+  Everything else on the poster already spans 1974 in the DB. Do not re-read unless a larger scan turns up.
+
