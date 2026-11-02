@@ -286,7 +286,7 @@
   (Classic 15, Weekender 15) now name-match 8489 (loaded via bike-update.sql).
   Stratos 10 / Medale 5 & 10 list "Huret ECO-S" as the *front* derailleur
   (a Raleigh catalogue error) — left unlinked.
-- Left (possible duplicates, no evidence to merge): 4398 Sachs Huret DuoPar
+- Merged 2026-11-02 (VeloBase photos / model fields; a Huret badge alone does not split a row): 4398 -> 8173, 4279 -> 4401 (year_to 1988), 4301 -> 4399, 4289 -> 4300 (4680 / 2481 are date stamps). Previously left as possible duplicates: 4398 Sachs Huret DuoPar
   (titanium) vs 8173 / 4302; 4279 Huret Rival (no years) vs 4401; 4301 Huret
   Eco and 4391 "Sachs (Eco?)" vs 4399; velobase Sachs Huret Rival / Rival
   Sport / AV 62.10D fronts vs 8488. "Huret Club brazed-on" (1984 Raleigh) is

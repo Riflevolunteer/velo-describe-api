@@ -965,7 +965,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 440 gr sp': 4622, // 1987 Peugeot (FR) table: GR/SP misprint of GT/SP; 1989 Peugeot (FR) Anjou prints it again
     'shimano 6400': [{ from: 1987, to: 1991, id: 4466 }], // 1987 Peugeot (FR) Puymorens: RD-6400, 600 Ultegra
     'campagnolo victory indexed': 4169, // 1987 Peugeot (FR) Dolomites: Victory S3 (the indexed 1987-88 version)
-    'huret eco': [{ from: 1987, to: 1990, id: 4399 }, { id: 4301 }], // 1987 Peugeot (FR) table: bare Eco on a 1987 bike = Sachs Huret Eco 2490-01; earlier catalogues keep the matcher's 1960-80 Eco 4301
+    'huret eco': 4399, // Sachs Huret Eco 2490-01 (1980-90); Huret-badged Eco 4301 merged into it 2026-11-02
     'shimano sis 105 rd1050': 4449, // 1987 Peugeot (US) Galaxie / Comete: RD-1050, 105
     'shimano new deore xt sis rd m730': 4491, // 1987 Peugeot (US) Cannon Ball Express: RD-M730, Deore XT
     'huret eco 5': 8485, // 1987 Peugeot (US) Corbier: as 'huret eco s' (Sachs Huret Eco S 2830-00)
@@ -1086,7 +1086,7 @@ const COMPONENT_OVERRIDES = {
     'huret eco s': 8485, // Pulsar / Team Cadet / Stratos / Medale: Sachs Huret Eco S 2830-00 (June 1984 catalogue); was the plain Eco 4301
     // Classic: the DB's titanium Duopar rows are the 1976 2600 series and the 1980 Sachs Huret DuoPar; the 1984 touring
     // Duopar is the Sachs-era part.
-    'huret titanium bodied duopar': 4398, // Sachs Huret DuoPar (titanium)
+    'huret titanium bodied duopar': 8173, // Huret Duopar 2648 / 2654 (titanium, long cage); Sachs Huret DuoPar (titanium) 4398 merged into it 2026-11-02
     // 1978 Raleigh (US, ebykr scan).
     'sun tour cyclone gt': 4738, // Super Course: SunTour 2812 99 01 / RD-1800, Cyclone GT (1976-82)
     'raleigh sun tour vgt': 4705, // Super Grand Prix / Grand Prix: RD-1500 V-GT Luxe version 2 (1978-82); v1 ended 1976
