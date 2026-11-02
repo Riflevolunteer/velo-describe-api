@@ -2916,6 +2916,16 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 6207 toe clips and straps': 3961, // 1986 Peugeot (FR) table PG 10 SH
     'shimano dural pd 6207 toe clips and straps': 3961, // 1986 Peugeot (FR) table PX 10 SH
     'campagnolo super light': 3716, // 1986 Peugeot (US) table PZ 10: the Super Record ("Super Leggero") road pedal, 4021
+    // 2026-11-02 pedal pass.
+    'campagnolo super light record': [{ from: 1981, to: 1981, id: 3709 }], // 1981 Bianchi: 1037/a Record Strada Superleggeri (the text says Rekord, so not the 4021 Super Record above)
+    'campagnolo record toe clips and straps': [{ from: 1984, to: 1984, id: 3708 }], // 1984 Peugeot: 1037 Record Strada (1960-85)
+    'lyotard 136 race with reflectors': [{ from: 1980, to: 1982, id: 3801 }], // 1980-82 Peugeot: Lyotard 136R (type 1), as the other 136 wordings
+    'lyotard 136 with reflectors': [{ from: 1982, to: 1982, id: 3801 }],
+    'lyotard 136': [{ from: 1989, to: 1989, id: 3801 }], // 1989 Peugeot: 3801 year_to 1983 -> 1989 (judgement call)
+    'lyotard 79r lightweight with reflector christophe toe clips and straps': [{ from: 1982, to: 1982, id: 3819 }], // 1982 Peugeot: Lyotard 79 (1970-84); "R" unexplained (judgement call)
+    'sr sampson fxp 100 clipless': [{ from: 1989, to: 1989, id: 3934 }], // 1989 Bianchi: SR SP-Comp / FXP-100 (year_to 1988 -> 1989)
+    'sr mtp 126': [{ from: 1989, to: 1989, id: 9755 }], // 1989 Bianchi: SR PL-MTP-126BL, Low Fat (year_from 1993 -> 1989; judgement call)
+    'sakae sp 362 alloy platform': [{ from: 1984, to: 1984, id: 3932 }], // 1984 Raleigh: SR SP-362 (year_to 1980 -> 1984; judgement call)
     // 1982 Battaglin: either/or cell (Cronospecial or Special) names two parts, so no link; Pista Special is the Special (Pista) pedal.
     'gipiemme cronospecial special': null,
     'gipiemme pista special': 3751, // Gipiemme Special (Pista)
