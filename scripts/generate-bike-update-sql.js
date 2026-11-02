@@ -2229,6 +2229,29 @@ const COMPONENT_OVERRIDES = {
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
     'italia s turbo': 5503, // Specialissima X4: Selle Italia Super Turbo (as on the 1987 US X4)
     'leather s mundialita': 5497, // Rekord 920: Selle Italia Mundialita (1985-88)
+    // 1985-89 Peugeot: Selle Italia Mundialita, printed "Mondialita" / "Mondia-Lita" with cover and colour text
+    // (2026-11-02; 5497 widened to 1985-90 to cover the 1989-90 Bianchi links too). Overrides, not a word alias:
+    // the separate "Mundialita" brand rows 5434-5436 would make a substring match ambiguous.
+    'mondialita sella italia': 5497,
+    'mondialita': 5497,
+    'mondialita leather top': 5497,
+    'mondialita racing white': 5497,
+    'mondialita racing ': 5497, // printed with a trailing comma
+    'mondialita leather': 5497,
+    'mondialita white leather': 5497,
+    'mondialita white skai': 5497,
+    'mondialita black skai': 5497,
+    'mondialita black vinyl': 5497,
+    'mondia lita': 5497,
+    'mondia lita leather': 5497,
+    'mondia lita white leather': 5497,
+    'mondia lita black leather': 5497,
+    'mondia lita white': 5497,
+    'mondia lita skai': 5497,
+    'mondia lita black skai': 5497,
+    'mondia italia': [{ from: 1987, to: 1987, id: 5497 }], // 1987 Peugeot Comète: read as a misprint of Mondialita (judgement call 2026-11-02)
+    'leather super turbo': [{ from: 1987, to: 1987, id: 5503 }], // 1987 Peugeot Triathlon: Selle Italia Super Turbo (maker not printed)
+    'gti white leather': [{ from: 1987, to: 1989, id: 5461 }], // 1987 / 1989 Peugeot: Reydel GTi (5461 year_to 1980 -> 1989; judgement call 2026-11-02)
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'brooks professional leather pre softened honey finish': 5295, // Randonneur: Brooks Professional pre-softened (1987-2000)
     'selle italia turbo special lycra': 5519, // Record Ace Moderne: Turbo Special (row dated 1990; the only Turbo Special)
