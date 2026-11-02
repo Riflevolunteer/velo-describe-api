@@ -1480,6 +1480,18 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 2026-11-02 brake pass. Weinmann 500 / 570 on 1986-88 Peugeots, as the other years (8636 dated 1963-89, 1129 1985-89 from this pass).
+    'weinmann 500 dural side pull': [{ from: 1986, to: 1986, id: 8636 }],
+    'alu weinmann 500': [{ from: 1988, to: 1988, id: 8636 }],
+    'alu weinmann 500 side pull': [{ from: 1988, to: 1988, id: 8636 }],
+    'weinmann 500 alu': [{ from: 1988, to: 1988, id: 8636 }],
+    'dural weinmann 570 side pull': [{ from: 1988, to: 1988, id: 1129 }],
+    'weinmann 570 with qr gumhoods': [{ from: 1986, to: 1986, id: 1129 }], // 1986 Raleigh
+    'weinmann 570 qr with wheel guides adamas aero levers concealed brake cables': [{ from: 1987, to: 1987, id: 1129 }], // 1987 Peugeot (US)
+    'weinmann 570 top quick release hooded levers': [{ from: 1988, to: 1988, id: 1130 }], // 1988 Raleigh: AG 570 TOP (year_to 1985 -> 1988)
+    'weinmann vainqueur centre pull forged dural': [{ from: 1982, to: 1982, id: 7929 }], // 1982 Peugeot: Vainqueur 999 (610 / 750)
+    'weinmann center pull no 144': [{ from: 1971, to: 1971, id: 7929 }], // 1971 Raleigh: No. 144 is the lever number; caliper read as the Vainqueur 999 centre-pull (judgement call)
+    'dia compe 500 n': [{ from: 1986, to: 1986, id: 681 }], // 1986 Miyata: DC500N, N-brakes
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano new dura ace': [{ from: 1986, to: 1986, id: 991 }], // BR-7400
     'suntour sprint': [{ from: 1986, to: 1986, id: 1042 }], // CB-7600, Sprint
@@ -1664,7 +1676,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo veloce': 587, // Campagnolo BR-02VL, Veloce Monoplaner
     'shimano deore xt alloy cantilever': 980, // 1985 Raleigh: Shimano BR-MC70, Deore XT M700 (1983-86, first-gen XT)
     // 1974 Motobecane. 1122 is the only Weinmann 500 variant dated before 1980.
-    'weinmann 500 side pull': [{ from: 1987, to: 1987, id: null }, { id: 1122 }], // Weinmann AG 500 (earlier, red center bolt washer, cap nut); 1987 Peugeot (FR) table: not that 1970 variant, nothing to choose on
+    'weinmann 500 side pull': [{ from: 1987, to: 1987, id: 8636 }, { id: 1122 }], // Weinmann AG 500 (earlier, red center bolt washer, cap nut); 1987 Peugeot (FR) table: the 8636 base row, as the 1982-89 "Weinmann 500" (was do-not-link until 2026-11-02)
     // Weinmann UK leaflet c. 1970: model-level Vainqueur 999 (610 / 750) row, 1970-75 (1973-75 bikes).
     // The 999 was Weinmann's only centre-pull then, so bare "Weinmann centre pull" links too (user decision 4A).
     // "999 De LUXE or UNIVERSAL 61" left unlinked (two makes).
