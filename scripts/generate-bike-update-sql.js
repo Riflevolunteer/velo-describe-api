@@ -2797,6 +2797,11 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 2026-11-02 brake lever pass.
+    'mafac professional': [{ from: 1982, to: 1982, id: 9968 }], // 1982 Peugeot: MAFAC PRO (1982)
+    'weinmann pro': [{ from: 1984, to: 1984, id: 7769 }], // 1984 Peugeot: Weinmann AG No. 144, Professional (year_to 1983 -> 1984)
+    'mafac course 2000': [{ from: 1980, to: 1980, id: 8376 }], // 1980 Peugeot (NL): MAFAC 2000 racing lever (year_to 1978 -> 1980)
+    'suntour sprint aero': [{ from: 1986, to: 1986, id: 459 }], // 1986 Miyata: SunTour CB-7700, Sprint 9000 aero (year_from 1987 -> 1986; judgement call)
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano z 304b': [{ from: 1986, to: 1986, id: 7181 }], // BL-Z304
     'dia compe 164 dual levers': [{ from: 1986, to: 1986, id: 8873 }], // 164G extension lever set
