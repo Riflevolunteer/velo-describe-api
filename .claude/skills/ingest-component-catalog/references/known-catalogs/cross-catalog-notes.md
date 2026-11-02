@@ -659,8 +659,36 @@ Weinmann 1129 / 1130 570.
   - No deletes, no year_from moved later. "NEW" on Ultegra 9v / 105 9v is relative to the
     previous guide, not a first year (6500 rows were already 1997-98 from velobase), so no start
     year was moved on it.
-- **Still to do**: pass 2, the other brands (Miche, FRM, Mavic, rims, wheels, tyres, stems, bars,
-  posts, saddles, headsets).
+- **Pass 2, other brands (2026-11-02; source_ref -> 353 on 72 updated + 321 new rows).** Matched
+  by brand + category + model tokens (754 in-scope rows: 66 exact, 24 multiple, 104 partial,
+  350 missing for known brands, 210 for brands not in component_brand), then curated by hand.
+  - year_to -> 1999 (53): stems 6500, 6486, 6567, 6560, 6601, 6599, 6602, 6401, 6404, 8316,
+    6412, 6427, 6603; bars 2816, 2804, 2806, 2821, 2818, 8306, 2872; rims 4887, 5074, 5102, 5039;
+    wheels 9985, 9986; levers 6351; cranks 9487, 9489, 1697, 1704; BBs 8414, 8413; hubs 3424,
+    3426; pedals 3782, 4029, 9493; saddles 5480, 5471, 5520; headset 3052; chain 1396; tyres
+    6802, 6808, 6874, 6875, 6890, 9257, 6880, 9252, 8390, 6872.
+  - Undated -> 1999-1999 (18): 6495, 6562, 6561, 6395, 2820, 2871, 2875, 4912, 3304, 3842, 4027,
+    4030, 3764, 5507, 6814, 6818, 6787, 6903. year_from 2000 -> 1999: 6806 Gommitalia Targa.
+  - Rejected as name-only collisions (not the same product): Michelin Axial Pro / Axial Sport,
+    Time Criterium Pro / Criterium, Tufo Jet Pro / Jet, Cinelli Grammo Strada / Pista / Tria /
+    Grammo Titanium, Ritchey Logic Threadless / Logic headset, Miche Primato Aero / BB / hubs,
+    Continental Super Sport Ultra, Michelin Select Kevlar, Cinelli Top Ergo 64 / Top 64, 3ttt
+    Chromix / Grand Prix / Forma Ergopower / Mutant, Vittoria Nuovo Pro 260, Ambrosio Road Racing /
+    Montreal / Super Elite, Clement Criterium, Specialized Turbo, Tange Passage, Keywin titanium,
+    Mavic CXP 30 / 601, San Marco Squadra HDP Granfondo. These went in as new rows where they had
+    weights, so a later source may show some are the same part (merge candidates).
+  - New rows (321, 1999-1999, group NULL, known brands only, rows with a printed weight): mostly
+    tyres (Vittoria, Hutchinson, Tufo, Gommitalia, Continental, Michelin, Schwalbe, Veloflex),
+    wheels (Mavic, Corima, HED, FRM, Ambrosio), bars / stems (ITM, Deda Elementi, Cinelli, Modolo,
+    3ttt, Ritchey, LOOK, FRM), hubs (Miche, FRM, PMP, STM, Coda, Rudelli, Ritchey), rims, posts,
+    saddles, headsets, pedals. Titles "<brand> <model as printed>", Italian translated (ant. ->
+    front, tubolare -> tubular, Argento -> Argent ...); front and rear hubs are separate rows.
+    Eight titles that clash across categories carry a category word (Miche Monolithic seat post /
+    headset, Miche Excel headset, Modolo Oxo / Twin 777 handlebar, Ritchey Pro Road hub, Ritchey
+    Logic Pro Road pedals, Zipp 340 wheels). 22 descriptions were cut at 255 chars.
+  - Not inserted: 19 rows without a weight or with an unreadable name; all 210 rows of the 53
+    brands not in component_brand (Syncros, Tec Components, Areo, Spinergy, DT, SRAM, Race Face,
+    Thomson, Fi'zi:k, Tune, Tiso, WR Compositi, Casiraghi, Energy, Allara ...): a possible pass 3.
 
 ## La Bicicletta, July 1984 - Guida all'acquisto: le bici da turismo (8 scans, disraeligears.co.uk), read 2026-10-24, not ingested
 
