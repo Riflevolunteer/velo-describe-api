@@ -579,6 +579,12 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 2026-11-02 front derailleur pass.
+    'gipiemme cronosprint': [{ from: 1982, to: 1982, id: 2369 }], // 1982 Battaglin Marostica: Crono Sprint 802 DD (1982-86)
+    'raleigh shimano 400': [{ from: 1978, to: 1978, id: 2453 }], // 1978 Raleigh Record: EC-400, Shimano-400 (1977-79)
+    'simplex sx32': [{ from: 1986, to: 1986, id: 2578 }], // 1986 Peugeot PH 13: SX A32 double (1984-89)
+    'simplex spidel': [{ from: 1981, to: 1981, id: 7283 }], // 1981 Peugeot (CH) PY 10 S: SLJ A522, as the 1981 PY 10 S "Spidel SLJ" (judgement call)
+    'alfa junior': [{ from: 1973, to: 1973, id: 2682 }], // 1973 Zeus Z 41: the Alfa front, as "Alfa 72" (judgement call)
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano new dura ace': [{ from: 1986, to: 1986, id: 2510 }], // FD-7400
     'shimano new 600 ex': [{ from: 1986, to: 1986, id: 2481 }], // FD-6207 (the only 600EX front, 1984-87)
@@ -784,7 +790,8 @@ const COMPONENT_OVERRIDES = {
     'simplex prestige': 2583, // Simplex Prestige Criterium AV 223
     // Bare "Shimano 600" substring-hits EC-600 "Shimano-600" (1977-78). Fine
     // to 1978; from 1979 it could be FD-6100 or FD-6200 600EX, so no link.
-    'shimano 600': [{ to: 1978, id: 7435 }, { from: 1979, id: null }], // Shimano EC-600, Shimano-600
+    // 1986: FD-6207 600EX is the only 600 front (as the 1986 Raleigh "Shimano 600" crank -> FC-6207; 2026-11-02).
+    'shimano 600': [{ to: 1978, id: 7435 }, { from: 1986, to: 1986, id: 2481 }, { from: 1979, id: null }], // Shimano EC-600, Shimano-600
     // 1987 Bianchi Limited/Squadra: the SIS-era 600EX front.
     'shimano 600 sis': 2481, // Shimano FD-6207, 600EX (1984-87)
     // Catalog names the Alfa groupset by its rear derailleur ("Alfa 72");
