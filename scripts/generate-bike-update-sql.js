@@ -3529,6 +3529,11 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // Judgement calls 2026-11-02 (rim years widened in the DB to fit):
+    'rigida 1622 alloy 27 x 1 1 4" stainless steel spokes': [{ from: 1986, to: 1986, id: 5155 }], // 1986 Peugeot (US): Rigida AL 1622 (year_to 1980 -> 1986)
+    'mavic e alloy 700c stainless steel spokes': [{ from: 1986, to: 1986, id: 5087 }], // 1986 Peugeot (US): "Mavic E" read as Module E (year_to 1984 -> 1986)
+    'weinmann 116 alloy': [{ from: 1986, to: 1986, id: 4877 }], // 1986 Raleigh: Alesa 116 (Alesa is Weinmann's rim brand; row was undated, set 1986)
+    'ukai 21a super hard anodized': [{ from: 1989, to: 1989, id: 5196 }], // 1989 Bianchi Equinox: Ukai 21A (row was undated, set 1989; the Equinox runs 700 x 35C, not the 27 x 1 in the row title)
     'endrick': null, // 1978 Falcon: Endrick is a rim section many makers rolled; matcher hit the Dutch Van Schothorst Endrick (9339, 1975)
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'araya model 20 a 700c grey hard anodized': [{ from: 1986, to: 1986, id: 4922 }], // Araya 20A
