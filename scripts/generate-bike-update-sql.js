@@ -3324,6 +3324,13 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    // 2026-11-02 freewheel pass.
+    'shimano new 600 ex 6 speed 13 24 teeth': [{ from: 1986, to: 1986, id: 2217 }], // 1986 Miyata: MF-6207-6, 600EX (New 600 EX = 6207, as below)
+    'shimano new 600 ex 6 speed 13 24 teeth sealed': [{ from: 1986, to: 1986, id: 2217 }],
+    'shimano new 600 ex 6 speed 14 28 teeth sealed': [{ from: 1986, to: 1986, id: 2217 }],
+    'shimano new 600 ex 6 speed 14 32 teeth sealed': [{ from: 1986, to: 1986, id: 2217 }],
+    '7 speed 13x24 shimano 5000': [{ from: 1987, to: 1987, id: 7562 }], // 1987 Peugeot Santé: CS-5000 cassette (hub is the FH-5000 freehub; 7562 year_from 1988 -> 1987)
+    'suntour winner pro 7 speed 13 21 teeth': [{ from: 1986, to: 1986, id: 7867 }], // 1986 Pro Miyata: WP-7000, Winner Pro Ultra 7 (year_from 1987 -> 1986; judgement call)
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano new dura ace 6 speed 13 18 teeth': [{ from: 1986, to: 1986, id: 2221 }], // MF-7400-6
     'suntour perfect 6 speed 14 28 teeth': [{ from: 1986, to: 1986, id: 7813 }], // PN-6000 / PS-6000, Perfect 6-speed
