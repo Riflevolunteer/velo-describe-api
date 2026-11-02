@@ -2642,6 +2642,13 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
+    // 2026-11-02 shifter pass.
+    'shimano slz 408 shifter': [{ from: 1986, to: 1986, id: 6195 }], // 1986 Miyata: SL-Z408 (1980-86)
+    'shimano sport lx a 453 indexed': [{ from: 1989, to: 1989, id: 6191 }], // 1989 Peugeot: SL-A453 Sport LX
+    'shimano 401': [{ from: 1986, to: 1986, id: 6194 }], // 1986 Raleigh: SL-Z401, Z-Series
+    'sachs huret rival white indexed': [{ from: 1989, to: 1989, id: 6108 }], // 1989 Peugeot: Rival Aris Classic 3000 (indexed = Aris; judgement call)
+    'mt 50 thumb shifters': [{ from: 1986, to: 1986, id: 7164 }], // 1986 Peugeot (US): SL-MT50 (year_to 1984 -> 1986; judgement call)
+    'suntour mountech front and rear with suntour xc handlebar mounted ratchet levers': [{ from: 1987, to: 1987, id: 6308 }], // 1987 Raleigh: LD-3600 XC thumb levers (1984-87; judgement call)
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano new dura ace 515 shifter': [{ from: 1986, to: 1986, id: 6164 }], // SL-7400: printed "515", a typesetting of "SIS"
     'shimano l 422 shifter': [{ from: 1986, to: 1986, id: 7555 }], // SL-L422 Light Action, not the 1972 G.T. console 6181
