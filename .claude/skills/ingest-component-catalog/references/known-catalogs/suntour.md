@@ -197,6 +197,37 @@
   for 'suntour cyclone mkiii' updated; link counts unchanged. HR, SU-2, DLN,
   PUB-M (1985 Raleigh) still not in any SunTour catalogue.
 
+## SunTour "Bicycle Equipment Catalog" Edition No. 62 — second printing, FEB. 1985 (sscycleworks.com, 32-page PDF), 2026-11-02
+
+- `data_source` 348, label "SunTour Bicycle Equipment Catalog Edition No. 62
+  (printed 02.1985)". Source:
+  https://sscycleworks.com/galleries/bike-museum/SunTour-1985-catalog.pdf
+  (PDF page N = printed page N-1). Rear cover "Printed in Japan FEB. '85",
+  SunTour U.S.A. Fairfield NJ + Maeda addresses, dealer mailing label (Oct
+  1985). Same edition as source 90 (DEC. '84). Read printed pp 3-24.
+  Skipped: pp 1-2 (photos), clothing and the chart pages.
+- Diff: every road / MTB / Trimec / PUB / freewheel / sealed-BB code already
+  had a row covering 1985 (source 90 pass). False alarms: CW-5050 / 6050 /
+  7050 crank arms; SA-110 / 160 / 190, SS-* (series row 7818); RD-5000 here
+  = AG Tech 4710; LD-4500 / 4550, PT-5100 only named in notes. No description
+  enrichment (same edition as 90).
+- BMX pp 15-16 and 3-speed trigger p 22 (skipped by earlier passes) ingested:
+  - year_to 1979 -> 1985: 8284 MF-2000, 8290 MS-1000, 8291 MH-1500, 8292
+    MH-1000, 8295 CB-5000.
+  - New (group 320 BMX unless noted): 10059 BH-1000 / BH-1100, 10060 BH-1200 /
+    BH-1300 sealed hubs; 10061 HB-6100, 10062 HB-6200 single thread rears;
+    10063 MS-1100, 10064 MS-1200 Power Stems; 10065 SA-180 Hadley BB; 10066
+    MF-3000 EZ Off (16T Cr-Mo single, 155g; a different product from 8286
+    MF-3000 Hole Shot 2S of 1979, which is left at 1979); 10067 TL-2000
+    trigger (no group, 1983-1985; 1983 from 7811's No. 61 note).
+- Merged (user-approved): deleted 8261 "SunTour MF-1000, single freewheel (mini
+  size)" (1978-1982, source 128, `50ef70eb-c178-11f1-a2df-02fea3763e8d`, no
+  bike_spec links or overrides) into 7817 FT-3050 / FS-1500 / MF-1000. 8261
+  said MF-1000 was "new for 1978"; 7817 stays 1979-1985 because of its other
+  two parts.
+- Left: 2647 FD-2000 (clamp); out of scope HL-1000 head lock-up, MC-1000 seat
+  clamp, QR-170 / QR-180, EF / EP dropouts, SD spoke discs, accessories, tools.
+
 ## SunTour USA "AccuShift" product leaflets — undated, c. 1987 (disraeligears.co.uk, 43 scans)
 
 - `data_source` 91, label "SunTour USA AccuShift product leaflets (c.
