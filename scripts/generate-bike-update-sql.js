@@ -3043,6 +3043,11 @@ const COMPONENT_OVERRIDES = {
     'sr ctp 5 laprade alloy micro adjust': 5857,
     'sr cpt 5 laprade micro adjust': 5857,
     'sr laprade ctp5 alloy micro adjust': 5857,
+    // 1988-89 Raleigh "Sakae CTP-5" (2026-11-02): 5857 CT-P5 year_to 1986 -> 1989.
+    'sakae ctp 5 alloy': [{ from: 1988, to: 1988, id: 5857 }],
+    'sakae ctp 5 alloy micro adjust': [{ from: 1989, to: 1989, id: 5857 }],
+    // 1986 Miyata: SR CT-P6 / CT-P6C (5861 year_to 1982 -> 1986; judgement call 2026-11-02).
+    'sr ct p 6': [{ from: 1986, to: 1986, id: 5861 }],
     'sp laprade alloy micro adjust': 5857, // Grand Prix, by the same catalogue's rule
     'sr laprade micro adjust': 5857, // Alyeska / Kodiak (MTBs; may be the longer post, no row for it)
     // 1988 Colnago Master Mountainbike: SP-M730 (row 1989-97; the M730 group dates from 1987).
