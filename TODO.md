@@ -227,8 +227,8 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ## Open: Shimano bottom bracket cleanup
 
-- 121 BB-UN73 (undated) and 120 BB-LP27 (1990, velobase, low confidence) are not in the '96 or '97 manuals either (only BB-LP26 is). Decided 2026-10-30: keep them (no specs, no harm) until a source turns up.
-- 120, 121, 124, 141 still have no description beyond "Japan" or a measured weight; 124 BB-1055 (105SC) is superseded by BB-UN52 in 1997 but its 1990-1992 dates stand.
+- 121 BB-UN73 and 120 BB-LP27 are in no manual we hold (1990-97 manuals; the disraeligears 1998 / 1999 / 2000 Shimano spare parts catalogues are derailleur-only, checked 2026-11-02). 2026-11-02: both redated to 1998-1998 by series sequence (UN70 1992 / UN71 1993-95 / UN72 1996-97; LP25 1995 / LP26 1996-97; VeloBase says LP27 "Late 1990's"; 120 was 1990, 121 undated), marked "date inferred" in the descriptions. Confirm or correct from a 1998 / 1999 Shimano dealer manual if one turns up.
+- 2026-11-02: descriptions written for 120, 121, 124 BB-1055 and 141 BB-6500 from their VeloBase pages (spindle, threading, weight); 124's 1990-1992 dates stand.
 - Name collision: 12 Brakes rows carry BB- codes (Tourney / 600 / 500); no change planned.
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
 
