@@ -886,6 +886,13 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // 2026-11-02 rear derailleur pass.
+    'simplex sx 440 gt': [{ from: 1988, to: 1988, id: 4624 }], // 1988 Peugeot: SX440 GT version 3 (1987-88)
+    'sachs huret rider': [{ from: 1989, to: 1989, id: 8958 }], // 1989 Peugeot: AR 46.1 T Rider, the only dated Rider rear, as 'huret rider' (judgement call)
+    'shimano fd al 11': [{ from: 1986, to: 1986, id: 4446 }], // 1986 Colnago: RD column prints "FD. AL 11"; RD-AL11, as the 1986-87 'shimano al 11'
+    'simplex spidel': [{ from: 1981, to: 1981, id: 7309 }], // 1981 Peugeot (CH) PY 10 S: SLJ5500 CP, as the 1981 PY 10 S "Spidel SLJ" (judgement call)
+    'sun tour alloy vx': [{ from: 1981, to: 1981, id: 4774 }], // 1981 Raleigh: RD-2200, VX (front FD-1600 VX)
+    'suntour "hr"': [{ from: 1985, to: 1985, id: 4702 }], // 1985 Raleigh: quoted spelling of 'suntour hr' (RD-1100 Honor)
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano new dura ace': [{ from: 1986, to: 1986, id: 4503 }], // RD-7400 (6sp)
     'shimano deore xt sp': [{ from: 1986, to: 1986, id: 4489 }], // RD-M700-SP, Superplate (matcher picked the 1994 "Deore XT" row)
@@ -1131,7 +1138,8 @@ const COMPONENT_OVERRIDES = {
     // short for touring models), so 1981 Kalkhoff gets no link.
     // (An uncovered year falls through to the matcher, so the null range is
     // needed to actually block it.)
-    'shimano 600': [{ to: 1978, id: 4462 }, { from: 1979, id: null }], // Shimano DC-200, 600
+    // 1986: RD-6207 600EX (as the 1986 Raleigh Competition FD-6207 / FC-6207; road bike, so the short cage; 2026-11-02).
+    'shimano 600': [{ to: 1978, id: 4462 }, { from: 1986, to: 1986, id: 4470 }, { from: 1979, id: null }], // Shimano DC-200, 600
     'shimano 600 sis': 4471, // Shimano RD-6208, 600EX (SIS), 1986-87 (1987 Bianchi)
     // 1987 Bianchi Strada: no 1980s Tourney rear derailleur row exists; the
     // only hits are 1970s DB-300/DB-400, so block it.
