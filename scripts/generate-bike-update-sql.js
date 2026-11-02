@@ -2379,6 +2379,10 @@ const COMPONENT_OVERRIDES = {
     'cinelli type 64 cushion tape': 2802, // Cinelli 64 Giro d'Italia, 80's model (1980-88)
     'atax philippe tour de france cable groove': [{ from: 1982, to: 1989, id: 2902 }], // 1989 Peugeot (NL) Galibier: Philippe Tour de France 357 (Atax-Philippe)
     'cta alloy bike ribbon': 2782, // 1986 Peugeot (US) Galibier / Ventoux: ATAX CTA, as the 1984 GB "CTA"
+    // 1989 Peugeot Aubisque / P SIS B Z 'Aspin': ATAX CTA racing bar (2782 year_to 1984 -> 1989; 2026-11-02). The Anjou's
+    // "CTA alloy randonneur bars" stay unlinked: 2782 is a racing bend.
+    'cta alloy racing bars': [{ from: 1989, to: 1989, id: 2782 }],
+    'alloy racing bars aero cta bike ribbon white tape': [{ from: 1989, to: 1989, id: 2782 }],
     'cinelli 65 benotto tape': 2804, // 1986 Peugeot (US) table PZ 10: Cinelli 65 Criterium
     // Judgement calls 2026-10-30. 1984 Peugeot (GB) PGN 10 US Routier / Paris-Nice: plain CTA (Weinmann 506 with
     // standard levers rules out the aero-cable CTA; steel would be named). 2782 dated 1984 on this catalogue.
@@ -2514,6 +2518,17 @@ const COMPONENT_OVERRIDES = {
     'cinelli type 1e alloy': 6490, // Cinelli 1E (the only 1E row, dated 1980-86)
     'suntour xc stem': 6695, // 1986 Peugeot (US) Canyon Express: SunTour MS-1400, XC (1984-88) (// linkCoverage pass 2026-10-30)
     'cta dural': 6452, // 1987 Peugeot (FR) Comète: ATAX CTA (XA style)
+    // 1988-89 Peugeot road bikes (2026-11-02): ATAX CTA, as the 1986-87 "CTA" stems above (6452 year_to 1987 -> 1989).
+    // Bike-keyed for bare "CTA": the 1989 Alpine Express / VTT Express MTBs also print "CTA", and 6452 is an aero road stem.
+    'cta': [{ bike: 'PG SIS', from: 1988, to: 1988, id: 6452 }, { bike: 'Aspin', from: 1989, to: 1989, id: 6452 }, { bike: 'Chamonix', from: 1989, to: 1989, id: 6452 }],
+    'cta alloy': [{ from: 1989, to: 1989, id: 6452 }], // Mont Blanc / Aubisque / Anjou
+    'dural cta': [{ from: 1988, to: 1988, id: 6452 }], // 1988 A 400 'Comète'
+    'alloy racing aero cta': [{ from: 1989, to: 1989, id: 6452 }], // 1989 P SIS B Z 'Aspin'
+    // ATAX PSC Course stem (8508, 60-120 mm; year_to 1982 -> 1988). "BF" on the 1988 Tourmalet / Saint-Bernard is unexplained (judgement call 2026-11-02).
+    'atax psc 90': [{ from: 1987, to: 1987, id: 8508 }], // 1987 Peugeot Comète
+    'atax psc bf': [{ from: 1988, to: 1988, id: 8508 }],
+    // 1986 Falcon K2: SR MTS-101 (1980-90), as the 1986 Raleigh Elkhorn below.
+    'sr mts 101': [{ from: 1986, to: 1986, id: 6661 }],
     'atax asc dural': 8507, // 1987 Peugeot (FR) Santé: ATAX ASC, Aerodynamic (row widened to 1987)
     'atax asc h dural': 8507, // 1987 Peugeot (FR) Chorus / Perthus: ASC H, taken as an ASC version
     'alloy ah': null, // 1985 Raleigh Pursuit: no maker printed
