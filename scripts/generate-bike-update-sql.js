@@ -122,7 +122,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
   ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1980|raleigh', 'US'], ['1981|raleigh', 'CA'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
   ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], ['1988|raleigh', 'GB'], ['1989|raleigh', 'GB'], // TI Raleigh UK brochures
-  ['1970|falcon', 'GB'], ['1973|falcon', 'GB'], ['1974|falcon', 'GB'], ['1986|falcon', 'GB'], // 1986: Falcon Cycles Ltd, Brigg; undated, IceniCAM files it c1992
+  ['1970|falcon', 'GB'], ['1973|falcon', 'GB'], ['1974|falcon', 'GB'], ['1978|falcon', 'GB'], ['1986|falcon', 'GB'], // 1986: Falcon Cycles Ltd, Brigg; undated, IceniCAM files it c1992
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
   ['1986|miyata', 'US'], // Miyata Bicycle of America, Elk Grove Village IL (back cover)
   ['1982|battaglin', 'IT'], // Cicli Battaglin, Marostica (VI): Italian-language sheets and a 1981-82 lire price list
@@ -1243,6 +1243,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    // 1978 Falcon San Remo Equipe 76: "Campagnolo L/F Q.R. Hubs" = Record high flange 1035.
+    'campagnolo large flange quick release': [{ from: 1960, to: 1988, id: 3260 }],
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano new dura ace qr': [{ from: 1986, to: 1986, id: 3560 }], // HB-7400 freewheel hub (Team Miyata runs an MF-7400 freewheel)
     'shimano new 600 ex sealed qr': [{ from: 1986, to: 1986, id: 7551 }], // HB-6207F / R
@@ -1918,6 +1920,10 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1978 Falcon San Remo Equipe 76: bare "Campagnolo Chainset"; 1049 was the only Campagnolo road crank
+    // by then (Gran Sport 3320 ended 1975, Super Record used the 1049 crank too).
+    'campagnolo': [{ from: 1978, to: 1978, id: 1496 }],
+    'steel cottered': null, // 1978 Falcon Black Arrow 74: generic; matcher hit the Raleigh-made Triumph crank (2007)
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano new dura ace 53x42 teeth sealed': [{ from: 1986, to: 1986, id: 1819 }], // FC-7400
     'shimano new 600 ex 52x42 biopace ring': [{ from: 1986, to: 1986, id: 1799 }], // FC-6207-BP, Biopace double
@@ -2317,7 +2323,7 @@ const COMPONENT_OVERRIDES = {
     'wrights w3': [{ from: 1970, to: 1970, id: 5703 }],
     // 1981 Bianchi Super Corsa / Super Leggera: 3ttt 50/9 Criterium Competizione (row 1970-80, a year short).
     '3ttt competition': [{ from: 1970, to: 1981, id: 5230 }],
-    unicanitor: [{ from: 1950, to: 1976, id: 5326 }], // 1975 Motobecane Team Champion: the base Unicanitor Mod. 50
+    unicanitor: [{ from: 1950, to: 1978, id: 5326 }], // 1975 Motobecane Team Champion, 1978 Falcon San Remo Equipe 76: the base Unicanitor Mod. 50 (1950-84)
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'mattress': null, // generic; matcher hit a Brooks mattress saddle
     // Saddle link pass 2026-10-26 (from /linkCoverage).
@@ -3515,6 +3521,7 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    'endrick': null, // 1978 Falcon: Endrick is a rim section many makers rolled; matcher hit the Dutch Van Schothorst Endrick (9339, 1975)
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'araya model 20 a 700c grey hard anodized': [{ from: 1986, to: 1986, id: 4922 }], // Araya 20A
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).

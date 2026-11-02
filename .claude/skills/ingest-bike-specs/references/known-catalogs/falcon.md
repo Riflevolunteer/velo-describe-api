@@ -45,6 +45,37 @@
 - Regression: no other CSV carries the new keys except 1984 Peugeot (unchanged).
 
 
+## 1978 Falcon — `1978_falcon_spec.csv` (12 bikes, 135 specs, 4 linked; data_source 351, GB)
+
+- Source: falconrestorebike.wordpress.com/catalogues/1978-falcon-catalogue/,
+  `1978-1.jpg` .. `1978-4.jpg` (4 pp, A3 folded to A4, photographed ~1870 px,
+  legible). "The Falcon Range", Falcon Cycles Ltd., Marsh Lane, Barton on
+  Humber; "Hand made in England, race proved for thirty years". Undated: 1978
+  is the site owner's dating; Bill Nickson is "Winner of the 1976 Tour of
+  Britain Milk Race". Prose specs only, no tables. Transcribed by hand
+  2026-11-02.
+- Bikes: San Remo Equipe 76 (531 butted, Campagnolo 12-speed group, S.R.
+  bar / stem, Unicanitor), Professional 86 and Super Route 92 (Cr-Mo, 73°
+  angles, tubulars; 12 / 10 speed close ratio), Olympic 78 / ladies 79 (531
+  plain gauge), Black Diamond 70 / 71, Panther 62 / 63, Tempo 60 / 61 and
+  Black Arrow 2000 74 ("Special 51 tubing" badge, copied as printed). Ladies'
+  models are separate rows, as 1970. Sizes 20.5-25" "in half inches" (76)
+  expanded to ten sizes; "19.5 in frame with 26 in wheels" kept in Tyres.
+- Left out (not in the CSV, so no NON_ROAD_SKIP entry): Junior Racer 58
+  (18" frame, 24" wheels, children's); Super-Tourist De Luxe 88 / 89
+  (all-rounder bars, mattress saddle with touring bag, utility as 1970-74).
+- New overrides: Hubs 'campagnolo large flange quick release' -> 3260 (1035
+  high flange, 1960-88); Cranksets bare 'campagnolo' -> 1496 (1049) for 1978
+  only; Saddles 'unicanitor' range widened to 1978 (5326 Mod. 50, 1950-84).
+  Null: Cranksets 'steel cottered' (hit Raleigh-made Triumph 2007), Rims
+  'endrick' (hit Van Schothorst Endrick 9339; Endrick is a section, not a
+  maker). Existing key: Campagnolo pedals 3708.
+- Left unlinked: bare Campagnolo brakes (1978 has pre- and post-CPSC 2040 and
+  Super Record 4061 in range) and derailleurs (Nuovo or Super Record); S.R.
+  bar / stem, Mavic / Mavic Sprint rims (no rows); generic alloy centre / side
+  pulls, unnamed hubs, cotterless cranks.
+- Regression: all 78 other CSVs unchanged.
+
 ## 1970 Falcon — `1970_falcon_spec.csv` (12 bikes, 95 specs, 18 linked; data_source 350, GB)
 
 - Source: falconrestorebike.wordpress.com/catalogues/1970-falcon-brochure/,
