@@ -1805,6 +1805,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ from: 1989, to: 1989, id: 1055 }], // CT-XC10 cantilever
   },
   Headsets: {
+    // 2026-11-02 headset pass (judgement calls).
+    'shimano deore ii': [{ from: 1989, to: 1989, id: 7228 }], // 1989 Raleigh Appalachian: HP-MT60, Deore (no MT62 headset row; the Deore II brochure uses MT60 codes, as the pedals)
+    'shimano b 10': [{ from: 1986, to: 1986, id: 3114 }], // 1986 Peugeot PSV 10 M: read as Stronglight B10 (1982-86), the Peugeot headset; "Shimano" taken as a misprint
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano new dura ace sealed': [{ from: 1986, to: 1986, id: 3099 }], // HP-7400
     'shimano new 600 ex sealed': [{ from: 1986, to: 1986, id: 3090 }], // HP-6207
