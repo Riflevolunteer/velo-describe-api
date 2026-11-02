@@ -2073,6 +2073,22 @@
   IG51 / IG31 are 7.1mm (p33), and the Nexus p76 weights sit under the right
   columns.
 
+## bikeforums.net "1997-98 Shimano catalog scans" thread 1270806 — checked 2026-11-02, nothing loaded
+
+- https://www.bikeforums.net/classic-vintage/1270806-1997-98-shimano-catalog-scans.html
+  (site returns 403 to automated fetches; the user saved the 14 gallery images
+  to ~/Downloads/Shimano98/). Image 1 photographs the covers of both the '97
+  and the '98 "Shimano Bicycle System Components, Dealer Sales & Support
+  Manual", English (U). The other 13 are interior pages: XTR M950 photo, road
+  spec tables 60-65, 600 Ultegra 54-55, 105-SC 56, Dura-Ace 50-51, Track 66.
+- **These are '97 pages (`data_source` 275), not '98 ones.** The page numbers
+  match the '97 manual, the 105-SC / 6400 / 8-speed range and "New Dura-Ace"
+  text are the 1997 line-up, the printed errors the '97 entry records are all
+  here (p62 FC-6410, BB-UN52 427g / 415g, p55 FD-6402, BR-1055 photo), and
+  p64 is identical to disraeligears' '97 page 64. Nothing here dates anything
+  to 1998, so no year_to was extended. The '98 manual's interior is still
+  unseen; BB-UN73 / BB-LP27 (121 / 120) and the 1998 range remain open.
+
 ## Cleanup 2026-10-27 (no catalogue): BR-1050 "dark anodized" duplicates
 
 - Deleted (user-approved) two velobase rows duplicating the catalogue-sourced

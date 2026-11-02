@@ -610,6 +610,58 @@ Weinmann 1129 / 1130 570.
   posts, Selle Italia Personal, Gommitalia tubulars, Iscaselle Time / Record, Campagnolo Ghibli M 25
   (the DB has M23 rows covering 1988).
 
+## La Bicicletta Guida '99 - Componenti (1999, 56 scans, disraeligears.co.uk), data_source id 353
+
+- Label `La Bicicletta Guida '99, Componenti (1999)`, country IT. Source:
+  https://www.disraeligears.co.uk/site/la_bicicletta_guida_99_-_componenti.html (scans at
+  `00_main_images/la_bicicletta_guida_99_-_componenti_scan_NN_main_image.jpg`, 01-56, 1560 px,
+  legible read whole; **don't read the bound PDF**, the Read tool's PDF render is too small for
+  the weights). Printed pages 88-147; magazine page 129 (between cassettes and bottle cages) is
+  not on the site. Read 2026-11-02; transcription (1,052 rows) and diff kept in the session
+  scratchpad only.
+- Scan map: 1-3 groupsets; 3-8 stems; 8-9 quick releases; 11 rear derailleurs; 12-14 seat posts;
+  14-15 chains; 15-16 cables; 16-17 rims; 18 shifters, Ergopower / STI; 19-24 tyres; 24 brakes;
+  24-26 bars; 26-27 front derailleurs; 27-28 cranksets; 29 brake levers; 29-30 BBs; 30-34 hubs;
+  35-37 pedals; 37 cassettes / freewheels; 39-45 complete wheels; 45-48 saddles; 49-50 headsets;
+  53-56 tubulars. Out of scope: bottles, bolts, inner tubes, toe straps, tape, spokes, cages,
+  aerobars, tubing (51-52).
+- Few part codes: Shimano is listed by group ("Ultegra", "105-STI"), except the FD models
+  (6500-B / 6503, 5500-B / -F, 5503, A551-B / -F), crank models (FC-A416 / A417, FC-5500 / 5503)
+  and pedals (5500, 6600, 7700). Campagnolo has no codes at all. Matched on group + part + weight
+  against the Shimano '97 manual (275) figures.
+- **Pass 1, Shimano and Campagnolo (74 statements, source_ref -> 353 on 106 rows).**
+  - year_to -> 1999 (34): Shimano 135, 1824, 9600, 9599, 6168, 436, 418, 3088, 5890, 8750, 8751,
+    8752, 8754, 6368, 8753, 9602, 7762, 3951, 442, 6175, 3572, 9604, 1195, 7574, 9685, 9684, 9681;
+    Campagnolo 4095, 559, 7084, 6339, 10055, 10056, 6963.
+  - Descriptions rewritten (velobase-bare or thin): 4541 RD-6500, 2538 FD-6500, 1847 FC-6500,
+    141 BB-6500 (all four also year_to -> 1999), 6356 ST-5500, 957 BR-5500, 1779 FC-5500, 2463 /
+    2464 FD-5500, 4530 RD-A415. Measured weights kept; 2463's velobase "81 grams" (not marked
+    actual) replaced by the guide's 84g.
+  - New Shimano rows (10, 1999-1999): ST-6500, FH-6500 / HB-6500, CS-6500, PD-7700, PD-6600,
+    PD-5500, BB-5500, HB-5500, CS-5500, CN-HG72. Codes ST-/FH-/HB-/CS-6500 and BB-/HB-/CS-5500
+    are inferred from the group (not printed).
+  - New Campagnolo rows (52, 1999-1999, titled by group + "9-speed", no codes): Chorus / Athena /
+    Veloce / Mirage / Racing Triple 9-speed and Avanti Triple 8-speed RDs; Chorus, Record,
+    Veloce Triple and Racing Triple FDs (braze-on / clamp in one row); Record, Chorus, Veloce,
+    Mirage, Veloce Triple, Racing Triple and Mirage Triple cranks; Record, Chorus, Athena, Veloce
+    and Mirage BBs; Record front hub, Chorus / Athena / Veloce / Mirage / Avanti hub pairs; Chorus /
+    Athena / Veloce / Mirage brakes; Athena / Veloce / Mirage Ergopower; Record down-tube and
+    9-speed bar-end shifters; Chorus / Athena / Veloce / Mirage 9s and Avanti 8s cassettes; Record /
+    Veloce 9-speed chains; Record, Chorus (threaded and threadless) and Athena headsets; Pro-Fit
+    Chorus / Veloce; Record aero levers. **A late-90s Campagnolo catalogue should retitle these
+    with part codes** (the DB's newest Campagnolo catalogue is the 1995 range, source 22).
+    Racing Triple rows have no group_id.
+  - Not changed: "Shimano 6500" 9-speed chain, 304g (no confirmable code); 105 RD printed 300g vs
+    229g measured on 4451; RSX 8-speed brakes / levers / hubs / BB and 300EX / RSX front hubs
+    (A410 vs A41x not separable); Nexus Inter-3 / 4 / 7 and Nexave hubs (SG model not given);
+    Campagnolo wheels (Zonda, Shamal, Nucleon, Electron, Bora, Ghibli) and the Montreal 76 /
+    Atlanta 96 / Barcelona 92 rims, NEW here with names reused from 1990-92 rims 4953 / 4946.
+  - No deletes, no year_from moved later. "NEW" on Ultegra 9v / 105 9v is relative to the
+    previous guide, not a first year (6500 rows were already 1997-98 from velobase), so no start
+    year was moved on it.
+- **Still to do**: pass 2, the other brands (Miche, FRM, Mavic, rims, wheels, tyres, stems, bars,
+  posts, saddles, headsets).
+
 ## La Bicicletta, July 1984 - Guida all'acquisto: le bici da turismo (8 scans, disraeligears.co.uk), read 2026-10-24, not ingested
 
 - Source: https://www.disraeligears.co.uk/site/la_bicicletta_1984_july_-_guida_allacquisto_le_bici_da_turismo.html
