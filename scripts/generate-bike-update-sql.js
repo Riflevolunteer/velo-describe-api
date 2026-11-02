@@ -716,7 +716,9 @@ const COMPONENT_OVERRIDES = {
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 2462 }], // Competition / Triathlon: FD-1050 105
     'shimano 600ex': [{ from: 1987, to: 1987, id: 2481 }], // Road Ace / Record Ace: FD-6207 600EX (1984-87)
-    'sachs huret rider 2': [{ from: 1989, to: 1989, id: 2437 }], // 1989 Peugeot Lautaret / Lavandou: Sachs Huret Rider (as the Fun Star's 'Rider')
+    'sachs huret rider 2': [{ from: 1989, to: 1989, id: 8962 }], // 1989 Peugeot Lautaret / Lavandou: Sachs Huret AV 62.1 T, Rider / Duopar triple (2437 "Rider" merged in 2026-11-02)
+    'sachs huret rider': 8962, // 1989 Peugeot Fun Star / US Express / Avoriaz: as above
+    'huret rider': 8962, // 1986-88 Peugeot / Raleigh Teton: as above
     'shimano 600 ex': [{ from: 1981, to: 1981, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // 1981 Criterium: EC-630 / FD-6200 Arabesque (1978-84; FD-6207 is 1984-87) // Road Ace: FD-6207 600EX (1984-87)
     'sun tour spirt': 2601, // 1981 Royale: SunTour 3700 / FD-1000 Spirt (1973-85)
     'sun tour spirt pub': 2601, // 1981 Record: as Royale
