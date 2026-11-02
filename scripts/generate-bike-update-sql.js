@@ -124,6 +124,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], ['1988|raleigh', 'GB'], ['1989|raleigh', 'GB'], // TI Raleigh UK brochures
   ['1973|falcon', 'GB'], ['1974|falcon', 'GB'], ['1986|falcon', 'GB'], // 1986: Falcon Cycles Ltd, Brigg; undated, IceniCAM files it c1992
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
+  ['1986|miyata', 'US'], // Miyata Bicycle of America, Elk Grove Village IL (back cover)
   ['1982|battaglin', 'IT'], // Cicli Battaglin, Marostica (VI): Italian-language sheets and a 1981-82 lire price list
   ['1970|peugeot', 'NL'], // Dutch-market "Peugeot '70" (1971-74 mix NL + FR: left NULL until split)
   ['1979|peugeot', 'FR'], // French home-market catalogue
@@ -578,6 +579,16 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'shimano new dura ace': [{ from: 1986, to: 1986, id: 2510 }], // FD-7400
+    'shimano new 600 ex': [{ from: 1986, to: 1986, id: 2481 }], // FD-6207 (the only 600EX front, 1984-87)
+    'shimano deore xt gs': [{ from: 1986, to: 1986, id: 2497 }], // FD-M700 (printed "Deore XT-GS")
+    'shimano z 202': [{ from: 1986, to: 1986, id: 2542 }], // FD-Z202-HS
+    'shimano z 204': [{ from: 1986, to: 1986, id: 2543 }], // FD-Z204-HS
+    'shimano z 204 gs': [{ from: 1986, to: 1986, id: 2543 }], // FD-Z204-HS
+    'shimano z 206 gs': [{ from: 1986, to: 1986, id: 2544 }], // FD-Z206-HS
+    'suntour new cyclone': [{ from: 1986, to: 1986, id: 2629 }], // FD-3300, the 1984-85 new Cyclone
+    'suntour seven': [{ from: 1986, to: 1986, id: 2641 }], // FD-1400, Seven
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
     // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
     'shimano 105 sis indexed colour': [{ from: 1987, to: 1989, id: 2462 }], // Delta: FD-1050 (no FD-1051 row)
@@ -868,6 +879,17 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'shimano new dura ace': [{ from: 1986, to: 1986, id: 4503 }], // RD-7400 (6sp)
+    'shimano deore xt sp': [{ from: 1986, to: 1986, id: 4489 }], // RD-M700-SP, Superplate (matcher picked the 1994 "Deore XT" row)
+    'shimano l 522 sgs': [{ from: 1986, to: 1986, id: 7553 }], // RD-L522-SGS
+    'shimano l 523 ss': [{ from: 1986, to: 1986, id: 4518 }], // RD-L523-SS
+    'shimano l 523 sgs': [{ from: 1986, to: 1986, id: 4518 }], // RD-L523-SGS
+    'shimano z 501': [{ from: 1986, to: 1986, id: 4544 }], // RD-Z501
+    'shimano z 501 gs': [{ from: 1986, to: 1986, id: 4544 }], // RD-Z501-GS
+    'suntour new cyclone': [{ from: 1986, to: 1986, id: 4739 }], // RD-6000 (S): 710 runs 13-26 on a double
+    'suntour sprint': [{ from: 1986, to: 1986, id: 4758 }], // RD-7000, non-indexed Sprint (1985-87)
+    'suntour xc sport': [{ from: 1986, to: 1986, id: 4788 }], // RD-XS00 (front already 2660 FD-XS00 via the 1986 Raleigh override)
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
     'campagnolo victory special': [{ to: 1986, id: 4168 }], // Rekord 920: G010-SM, Victory (1984-86)
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
@@ -1219,6 +1241,13 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'shimano new dura ace qr': [{ from: 1986, to: 1986, id: 3560 }], // HB-7400 freewheel hub (Team Miyata runs an MF-7400 freewheel)
+    'shimano new 600 ex sealed qr': [{ from: 1986, to: 1986, id: 7551 }], // HB-6207F / R
+    'suntour sprint sealed qr': [{ from: 1986, to: 1986, id: 7808 }], // BH-2000, Sprint road
+    'suntour sprint track': [{ from: 1986, to: 1986, id: 3612 }], // RH-4400, Sprint track
+    'sansin re 60 36x40 sealed qr': [{ from: 1986, to: 1986, id: 9003 }], // RE-60, Sportif small flange
+    'shimano hb aq11 sealed qr': [{ from: 1986, to: 1986, id: 7137 }], // HC-210 / HB-AQ11
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
     'campagnolo victory': [{ from: 1984, to: 1987, id: 3281 }], // Rekord 920: Victory 422 (low flange), as 'campagnolo new victory'
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
@@ -1447,6 +1476,13 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'shimano new dura ace': [{ from: 1986, to: 1986, id: 991 }], // BR-7400
+    'suntour sprint': [{ from: 1986, to: 1986, id: 1042 }], // CB-7600, Sprint
+    'dia compe gx 400': [{ from: 1986, to: 1986, id: 8082 }], // GX-N series
+    'shimano z 570': [{ from: 1986, to: 1986, id: 959 }], // BR-Z570 Z-Series row
+    'shimano z 720': [{ from: 1986, to: 1986, id: 959 }], // BR-Z720 Z-Series row
+    'shimano br z570 with qr and tire guides': [{ from: 1986, to: 1986, id: 959 }], // BR-Z570 Z-Series row
     // Type only: the matcher found it inside 'Huret 343 centre-pull' (Peugeot / Bianchi / Falcon 1973-84).
     'centre pull': null,
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
@@ -1763,6 +1799,11 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ from: 1989, to: 1989, id: 1055 }], // CT-XC10 cantilever
   },
   Headsets: {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'shimano new dura ace sealed': [{ from: 1986, to: 1986, id: 3099 }], // HP-7400
+    'shimano new 600 ex sealed': [{ from: 1986, to: 1986, id: 3090 }], // HP-6207
+    'shimano new 600ex sealed': [{ from: 1986, to: 1986, id: 3090 }], // HP-6207
+    'tange ma60 sealed': [{ from: 1986, to: 1986, id: 3144 }], // MA-60
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
     // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
     'shimano a450': [{ from: 1988, to: 1989, id: 3106 }], // Elix / Strada: HP-A450, Exage Sport
@@ -1873,6 +1914,13 @@ const COMPONENT_OVERRIDES = {
     'dura ace ex 42 53': 136, // Shimano BB-7200, Dura-Ace EX
   },
   Cranksets: {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'shimano new dura ace 53x42 teeth sealed': [{ from: 1986, to: 1986, id: 1819 }], // FC-7400
+    'shimano new 600 ex 52x42 biopace ring': [{ from: 1986, to: 1986, id: 1799 }], // FC-6207-BP, Biopace double
+    'shimano new 600 ex 52x42 teeth bio ring sealed': [{ from: 1986, to: 1986, id: 1799 }], // FC-6207-BP, Biopace double
+    'shimano new 600ex 50x44x28 teeth bio ring sealed': [{ from: 1986, to: 1986, id: 1797 }], // FC-6206, Biopace triple
+    'suntour sprint 53x42 teeth sealed': [{ from: 1986, to: 1986, id: 1987 }], // CW-7500, Sprint
+    'sugino vp 50x44x28 teeth': [{ from: 1986, to: 1986, id: 1970 }], // VP (triple), not the plain VP row
     // 1986-88 Peugeot: Peugeot drops the "LX" of Stronglight's mid-80s LX range (c. 1985 brochure: 100 LX, 300 LX,
     // 400 LXT, 200 LX on the cover). "200" = 1889 200 LX; the triples' "100" = 1875 100 LX (ST 100 LXT).
     'stronglight 200 anodised': [{ from: 1986, to: 1988, id: 1889 }],
@@ -2282,6 +2330,9 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'nitto 55f alloy': [{ from: 1986, to: 1986, id: 2878 }], // Mod. 55
+    'nitto olympiad b115 alloy': [{ from: 1986, to: 1986, id: 2876 }], // B115, Olympiade
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
     // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
     '3ttt grand prix cushion tape': [{ from: 1986, to: 1991, id: 2768 }], // 1989 Record Ace Moderne / Road Ace Select: 3ttt CGP, Curva Record Grand Prix
@@ -2536,6 +2587,12 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'shimano new dura ace 515 shifter': [{ from: 1986, to: 1986, id: 6164 }], // SL-7400: printed "515", a typesetting of "SIS"
+    'shimano l 422 shifter': [{ from: 1986, to: 1986, id: 7555 }], // SL-L422 Light Action, not the 1972 G.T. console 6181
+    'shimano z 401 stem shifter': [{ from: 1986, to: 1986, id: 6194 }], // SL-Z401
+    'suntour ubn 10 stem shifter': [{ from: 1986, to: 1986, id: 6288 }], // LD-3000, UB-10 / UBN-10
+    'suntour ub 10 stem shifter': [{ from: 1986, to: 1986, id: 6288 }], // LD-3000, UB-10 / UBN-10
     'shimano 6400 ultegra sis indexed': [{ from: 1989, to: 1989, id: 6144 }], // 1989 Peugeot (FR) Galibier: SL-6400, 600 Ultegra SIS
     'sachs huret "new success" indexed': [{ from: 1989, to: 1989, id: 6110 }], // 1989 Peugeot (FR) Savoie: ARIS New Success (type 1, 1987-90)
     'suntour xc sport': 6315, // 1986 Raleigh: SunTour LD-4700, Power Thumb Shifter, XC-Sport (SunTour linking pass 2026-10-30)
@@ -2678,6 +2735,9 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'shimano z 304b': [{ from: 1986, to: 1986, id: 7181 }], // BL-Z304
+    'dia compe 164 dual levers': [{ from: 1986, to: 1986, id: 8873 }], // 164G extension lever set
     'aero levers': [{ from: 1989, to: 1989, id: null }], // 1989 Peugeot (NL): lever maker unstated; the matcher hit Gipiemme
     // 1987 Colnago Junior 105 / Junior SIS 600 (Catalogo generale 1987).
     'shimano 105': [{ bike: 'Junior 105', from: 1987, to: 1987, id: 406 }], // BL-1050, SLR 105 (1987-89)
@@ -2746,6 +2806,13 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'shimano new dura ace sealed': [{ from: 1986, to: 1986, id: 3970 }], // PD-7400
+    'shimano new 600 ex sealed': [{ from: 1986, to: 1986, id: 3961 }], // PD-6207
+    'mks esquartz 102': [{ from: 1986, to: 1986, id: 3859 }], // MKS 2025, Esquartz 102
+    'mks sylvan track': [{ from: 1986, to: 1986, id: 10043 }], // MKS 2031, Sylvan Track
+    'sr sp 155 sealed': [{ from: 1986, to: 1986, id: 3928 }], // SR SP-155
+    'suntour xc ii sealed cr mo spindle': [{ from: 1986, to: 1986, id: 4015 }], // PL-5100, XC-II
     // Maillard 700 quill pedal: 3827 holds the folded colour variants (2026-11-01), 1970-89 since Peugeot prints plain
     // "Maillard 700" beside "CX 700" through 1988. Plain values match the title; these need keys.
     'maillard 700 dural with christophe toe clips and lapize toe straps': 3833, // 1977 Peugeot (DE) PY 10/CP: dural = the alloy-cage row, as 'spidel 700 dural course'
@@ -2893,6 +2960,9 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'sr ct p5e': [{ from: 1986, to: 1986, id: 5857 }], // CT-P5, Custom-P5 (1980-86)
+    'sugino spk': [{ from: 1986, to: 1986, id: 5927 }], // SP-K
     // Finish only: the matcher found it inside 'Cinelli chrome seat pillar' (Raleigh 1970-76).
     chrome: null,
     'shimano 600 sis': [{ bike: 'Junior SIS 600', from: 1987, to: 1987, id: 5891 }], // 1987 Colnago: SP-6207, 600EX
@@ -3030,6 +3100,11 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'shimano dura ace ug nickel finish': [{ from: 1986, to: 1986, id: 7231 }], // CN-7400
+    'shimano 600 ug silver black': [{ from: 1986, to: 1986, id: 7232 }], // CN-6208 (UG)
+    'shimano 600 ug gold black': [{ from: 1986, to: 1986, id: 7232 }], // CN-6208 (UG)
+    'did track': [{ from: 1986, to: 1986, id: 1355 }], // D.I.D maker row; no model rows
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
     'regina silver': [{ from: 1985, to: 1987, id: 1386 }], // Rekord 920: Regina Extra "Silver BX", paired with the BX Silver freewheel
     'suntour ap 12 chain': 9727, // 1993 Bianchi: SunTour CH-AP12 (SunTour linking pass 2026-10-30)
@@ -3172,6 +3247,10 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'shimano new dura ace 6 speed 13 18 teeth': [{ from: 1986, to: 1986, id: 2221 }], // MF-7400-6
+    'suntour perfect 6 speed 14 28 teeth': [{ from: 1986, to: 1986, id: 7813 }], // PN-6000 / PS-6000, Perfect 6-speed
+    'suntour perfect 6 speed 14 32 teeth': [{ from: 1986, to: 1986, id: 7813 }], // PN-6000 / PS-6000, Perfect 6-speed
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
     'regina cx 6 speed 13 23t': 2168, // Specialissima X4: Regina CX (6 speed); the CX/CX-S row ends 1985
     'shimano 7 speed cassette 13x24': [{ bike: "C 531 SB Z 'Galibier'", from: 1989, to: 1989, id: 1199 }], // 1989 Peugeot (FR) Galibier: CS-6400-7 (Cassettes row; the Freewheel label resolves in Freewheels); the Aspin (Sport LX) cassette has no row
@@ -3431,6 +3510,8 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
+    'araya model 20 a 700c grey hard anodized': [{ from: 1986, to: 1986, id: 4922 }], // Araya 20A
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
     'mavic gl 330': 5067, // Specialissima X4: Mavic GL330 (1984-91)
     'mavic ma 40 hard anodised': [{ from: 1980, to: 1999, id: 5077 }], // 1989 Peugeot (FR) Cyclo: Mavic MA 40
