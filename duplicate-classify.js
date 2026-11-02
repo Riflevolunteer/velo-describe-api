@@ -216,6 +216,8 @@ const REVIEWED_NOT_DUPLICATES = [
   [9098, 9904], // different size (2026-10-30): Cycle Pro National 27 x 1 / 700 x 25, 270 g / National 1 1/8, 300 g
   [1136, 7929], // model-level row (paren scan 2026-10-30): Weinmann AG 610 Vainqueur 999 / Vainqueur 999 (610 / 750), user decision 4A
   [1148, 7929], // model-level row (paren scan 2026-10-30): Weinmann AG 750 Vainqueur 999 / Vainqueur 999 (610 / 750)
+  [2891, 9413], // rebrand kept apart (user decision 2026-11-02): Philippe Franco-Americain 358 (1982) / ATAX Franco-America (1984)
+  [2902, 9414], // rebrand kept apart (user decision 2026-11-02): Philippe Tour de France 357 (1982) / ATAX Tour de France (1984)
 ]
 const reviewedKey = (a, b) => `${Math.min(a, b)}|${Math.max(a, b)}`
 const REVIEWED = new Set(REVIEWED_NOT_DUPLICATES.map(([a, b]) => reviewedKey(a, b)))
