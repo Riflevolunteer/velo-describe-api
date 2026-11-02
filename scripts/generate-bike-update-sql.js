@@ -2018,6 +2018,8 @@ const COMPONENT_OVERRIDES = {
     'stronglight ts three arm cranks 170mm double chainring 42 52t': [{ from: 1977, to: 1980, id: 1914 }],
     'stronglight ts 42 52t': [{ from: 1977, to: 1980, id: 1914 }],
     'stronglight ts 40 50t': [{ from: 1977, to: 1980, id: 1914 }],
+    'stronglight ts three arm cranks 170mm double chainring 38 48t': [{ from: 1977, to: 1980, id: 1914 }], // 38/48 versions added 2026-11-02
+    'stronglight ts 38 48t': [{ from: 1977, to: 1980, id: 1914 }],
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'shimano santé': [{ from: 1988, to: 1989, id: 1841 }], // FC-5000
     "campagnolo croce d'aune": [{ from: 1988, to: 1991, id: 1489 }],
@@ -2139,6 +2141,13 @@ const COMPONENT_OVERRIDES = {
     'shimano at10 x 50 40 28t': 7724, // 1993 Bianchi: Shimano FC-AT10, Altus A10 (SG-X triple)
     'shimano at10 x 50 40 30t': 7724, // 1993 Bianchi: Shimano FC-AT10, Altus A10 (SG-X triple)
     'shimano 600 52 42t': [{ from: 1984, to: 1987, id: 1798 }], // 1987 Bianchi: Shimano FC-6207, 600EX
+    // 2026-11-02 crankset pass.
+    'shimano 600 52 42 170mm': [{ from: 1986, to: 1986, id: 1798 }], // 1986 Raleigh: FC-6207, 600EX (plain double; judgement call)
+    'shimano deore 2 48 38 28t': [{ from: 1989, to: 1989, id: 1809 }], // 1989 Bianchi: FC-MT60, as the 1989 Raleigh Appalachian 'Deore II Biopace'
+    'suntour xce 4050 48 38 28t': [{ from: 1989, to: 1989, id: 2002 }], // 1989 Bianchi Forte / Volpe: CW-XE01, XCE (as their XCE-4050 derailleurs)
+    'ofmega super competizione colnago signed': [{ from: 1987, to: 1987, id: 1703 }], // 1987 Colnago: Super Competizione road, 2nd version
+    'shimano tourney xt 50 45 28 175mm': [{ from: 1985, to: 1985, id: 2004 }], // 1985 Raleigh: Tourney XT (2004 year_to 1980 -> 1985; judgement call)
+    'sr ctc 5dxc 52x42 teeth': [{ from: 1986, to: 1986, id: 8205 }], // 1986 Miyata: SR CTC-5DXC2, Custom DX double (8205 year_to 1982 -> 1986; judgement call)
     'shimano ct10 48 38 28t': 7736, // 1993 Bianchi, from the Jul 1992 manual: Shimano FC-CT10, Altus C10
     'suntour fs e 52 42 32t': 8002, // 1993 Bianchi: SunTour CW-FS00-N, FS-E (52-42-32)
     'suntour xc comp md 42 32 20t': 7998, // 1993 Bianchi: SunTour CW-XC11, XC-Comp MD
