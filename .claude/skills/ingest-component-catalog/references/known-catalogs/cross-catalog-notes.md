@@ -976,3 +976,57 @@ Weinmann 1129 / 1130 570.
   Pro Vic (DB 3772 "Pro Vic II", undated); Ideale "B6 woman's model"; Wolber W20 / W23
   Invulnerable clinchers; National touring clincher; Shimano 600 cantilever (DB 951
   undated "Touring Series"); Araya aero (4931 Super Aero undated).
+
+## Falcon Lightweight Cycles parts catalogue — 1970 (UK importer, data_source 352)
+
+- Source: falconrestorebike.wordpress.com "1970 Falcon parts catalogue",
+  https://falconrestorebike.wordpress.com/wp-content/uploads/2023/07/1970-falcon-parts-catalogue.pdf
+  (A5, 15 PDF pp = printed 1-16, pp 8-9 one spread; scan, no text layer). No printed date; 1970
+  per the site. Falcon (Barton-upon-Humber) as UK stockist of Campagnolo, Clément, Cinelli,
+  AGV, Sergal, Hutchinson. "Ref." codes (H.32/33, C.79, T.63 ...) are Falcon stock refs, not
+  maker numbers; Clément part numbers are the Tipo numbers. Hutchinson page copy cites the
+  1964/65 season (older text reused). The bike catalogue of the same year is data_source 350.
+- Pages: p2 Model 76 San Remo Equipe spec; p3-4 Campagnolo hubs; p5 chainsets; p6 gears;
+  p7 pedals / 1044 / headsets / 2040 brakes / fork ends; p8-9 Clément tubulars (Tipo, name,
+  oz); p10 Cinelli 64 bars, 1/A stem, shoes, Binda straps; p11 AGV hats, mitts, W.P.B. saddle;
+  p12 Falcon framesets; p13 Falcon spares, ISCA saddle; p14 Falcon wheels, Clément clinchers;
+  p15 rims, name motifs, Sergal; p16 Hutchinson tubulars. Skipped as out of scope: fork ends
+  1010/1053, forks, frames, shoes, straps, hats, mitts, clothing, motifs, cement, repair kits.
+- Updated (19 rows, source_ref 352):
+  - Campagnolo: 3712 1038 Record Pista (standard) year_to 1967 -> 1970 (track pedals listed;
+    silver 3711 from 1971); 3233 1253 description rewritten with 1266 front / 1267 rear and
+    36/36, 32/40 (confirms the sub-numbers the c. 1974 Special Catalog pass left unconfirmed);
+    1495 1048/4 description rewritten (single 45T, 753/1 inner/outer guard rings, 170 mm).
+  - Cinelli: 6488 1A (early version) description adds Allen-key expander bolt, 8-13 cm by 0.5.
+  - Clément, year_from moved earlier to 1970 on Tipo number match (old value in brackets):
+    6731 Clement 50 / Tipo 19 (1975), 6755 Gran Sport 65 / 22 (1976), 8972 Criterium Cotone /
+    12 bis (1975), 6762 Paris-Roubaix cotton / 14 bis (1976), 6757 Grifo 61 / 15 bis (1976),
+    6736 Campestre / 18 (1975), 6732 6 Giorni / 8 bis (1976), 8971 Criterium Seta Extra / 1 bis
+    (1975), 6737 Campionato del Mondo Seta / 13 (1975), 6763 Paris-Roubaix Seta / 13 bis (1976),
+    6771 Seta Extra / 1 (1975), 8970 Seta Tipo 3 track (1973). 6774 Speciale Corsa (Tipo 14)
+    was undated with a bare description: now 1970-1970, cotton road tubular, ~310 g.
+  - Hutchinson: 9047 Corsa Leggero (1976) and 9048 Super Corsa (1976) year_from -> 1970.
+- Confirmed as-is: Campagnolo 1034/1035/1036, 1250-1253, 1048/1049 double, 1051, 1046/1046a,
+  2170, 1020/A v3 (printed "1020/1a"), 1052/1 second body, 2050 (called "Gran Sport front
+  changer" in the Valentino 10-speed set), 1014, 1012/3, 1204/1206, 1037, 1044 Record, 1039,
+  1040, 2040 pre-CPSC, 2030; Cinelli 2801 64 Giro d'Italia 70's (38/40 cm); Clément 6752
+  Elvezia (24), 6781 Veltro (21 bis), 6730 Clement 48 (20), 6758 Grifo Neve (15, printed
+  "Grifo Cyclo Cross"), 6748 Criterium Seta (6).
+- New (6 rows, 1970-1970): 10068 Clement Produzione (Tipo 23, 14 oz) 2bce7fff-d6c1-11f1-a2df-02fea3763e8d;
+  10069 Clement Olimpic (Tipo 21, black ribbed, 12 oz) 2bd0fe95-d6c1-11f1-a2df-02fea3763e8d;
+  10070 Hutchinson Saturno Strada (370 g) 2bd2f44f-d6c1-11f1-a2df-02fea3763e8d;
+  10071 Hutchinson Milano S. Remo (340 g) 2bd5135c-d6c1-11f1-a2df-02fea3763e8d;
+  10072 Hutchinson Sprint (Sprint Butyle folded in) 2bd71b5b-d6c1-11f1-a2df-02fea3763e8d;
+  10073 Iscaselle 18/PL, Racing ("a new type saddle from Italy") 2bd95020-d6c1-11f1-a2df-02fea3763e8d.
+- No deletes, no retitles, no bike_spec / COMPONENT_OVERRIDES changes (the 8972 override
+  range 1975-83 stays inside the new years).
+- Unresolved: W.P.B. S.57 butt-leather saddle with QR pillar ("used in Warsaw-Berlin-Prague";
+  no such brand in DB, maker unknown); Weinmann and San Remo 27" sprint rims (32/40, 36/36,
+  no model names); Clément Tipo 9 (cotton track, black smooth) and Tipo 10 (cotton track, black
+  file) clash with DB 6735 "Seta 9" and 9259 "N. 10" (1980s road), not touched; Clément
+  clinchers 27 x 1 1/4 HP and 12 / 14 x 1 3/4 Junior (no names); Falcon-branded "Falcon/Clement"
+  tubular and Falcon house spares (C.38/C.43/C.39 chainsets, C.19/C.21 chains, F.139 freewheel,
+  H.30 headset, R.10/R.13/R.15 rims) left out per the house-brand rule (DB "Falcon" freewheels
+  2099-2101 are the Taiwanese brand, unrelated); the 1970 1048 triple (three rings, 830-832 /
+  753 parts) predates 1498 "1049 Triple BCD 144+100" (from 1973) and is probably a different
+  design, 1498 not moved; Cinelli 2803 "64 Early model" (1967 only) not extended.

@@ -79,3 +79,8 @@
 - The labibleduvelo "CINELLI 1960" page is Kitching 1960 excerpts; Cinelli rows from it (1960 bar
   numbers 11-18, stems No. 1 / 2 / 3, Super Corsa crank, Special BB and headset, chrome pillar) are
   recorded in cross-catalog-notes.md.
+
+## Falcon parts catalogue (1970) — see cross-catalog-notes.md (`data_source` 352)
+
+- 64 Giro d'Italia 38 / 40 cm (2801 confirmed); 6488 1A early version description adds Allen-key
+  expander bolt and 8-13 cm sizes.

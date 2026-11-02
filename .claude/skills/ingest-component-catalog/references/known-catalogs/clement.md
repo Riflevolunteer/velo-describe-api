@@ -32,3 +32,9 @@
   model name); the 1970 Raleigh "Clement 'Seta' Silk" (Professional Mk II) could be 6769
   or the new Tipo 3 row, so it stays unlinked. The bare "Clement tubular" (11 bikes)
   cannot link without a model.
+
+## Falcon parts catalogue (1970) — see cross-catalog-notes.md (`data_source` 352)
+
+- UK importer list of 21 Clément tubulars by Tipo number with oz weights. Twelve rows moved
+  year_from to 1970, 6774 Speciale Corsa dated, new 10068 Produzione (23) and 10069 Olimpic (21).
+  Tipo 9 / 10 cotton track types left unresolved against 6735 "Seta 9" and 9259 "N. 10".

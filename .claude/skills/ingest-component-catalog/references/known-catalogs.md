@@ -10,7 +10,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 
 - [known-catalogs/brooks.md](known-catalogs/brooks.md) — Brooks (1 entry)
 - [known-catalogs/ideale.md](known-catalogs/ideale.md) — Ideale saddles, brand 580 Tron & Berthet (1 entry)
-- [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (36 entries)
+- [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (37 entries)
 - [known-catalogs/shimano.md](known-catalogs/shimano.md) — Shimano (30 entries)
 - [known-catalogs/suntour.md](known-catalogs/suntour.md) — SunTour (17 entries)
 - [known-catalogs/simplex.md](known-catalogs/simplex.md) — Simplex (9 entries)
@@ -21,7 +21,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/galli.md](known-catalogs/galli.md) — Galli (5 entries)
 - [known-catalogs/look.md](known-catalogs/look.md) — Look (4 entries)
 - [known-catalogs/universal.md](known-catalogs/universal.md) — Universal brakes (1 entry)
-- [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (2 entries)
+- [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (3 entries)
 - [known-catalogs/sakae-ringyo.md](known-catalogs/sakae-ringyo.md) — Sakae Ringyo / SR (6 entries)
 - [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (1 entry)
 - [known-catalogs/dia-compe.md](known-catalogs/dia-compe.md) — Dia-Compe (5 entries)
@@ -43,7 +43,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/ofmega.md](known-catalogs/ofmega.md) — Ofmega (1 entry)
 - [known-catalogs/sedis.md](known-catalogs/sedis.md) — Sedis (1 entry)
 - [known-catalogs/selle-italia.md](known-catalogs/selle-italia.md) — Selle Italia (1 entry)
-- [known-catalogs/clement.md](known-catalogs/clement.md) — Clement (1 entry)
+- [known-catalogs/clement.md](known-catalogs/clement.md) — Clement (2 entries)
 - [known-catalogs/sansin.md](known-catalogs/sansin.md) — Sansin / SunShine hubs (2 entries)
 - [known-catalogs/wolber.md](known-catalogs/wolber.md) — Wolber (1 entry)
 - [known-catalogs/vredestein.md](known-catalogs/vredestein.md) — Vredestein (1 entry)
@@ -52,7 +52,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/takagi.md](known-catalogs/takagi.md) — Takagi (1 entry)
 - [known-catalogs/tange.md](known-catalogs/tange.md) — Tange (1 entry)
 - [known-catalogs/kkt.md](known-catalogs/kkt.md) — KKT / Kyokuto (1 entry)
-- [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands: multi-brand retailer and importer catalogues (Palo Alto, Bikecology, Holdsworth, Cyclo-Pedia, Ron Kitching, Ten Speed Drive, Bike Warehouse), La Bicicletta guides, dedupe passes, velobase title-fixup conventions
+- [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands: multi-brand retailer and importer catalogues (Palo Alto, Bikecology, Holdsworth, Cyclo-Pedia, Ron Kitching, Ten Speed Drive, Bike Warehouse, Falcon 1970 parts), La Bicicletta guides, dedupe passes, velobase title-fixup conventions
 - [known-catalogs/roto.md](known-catalogs/roto.md) — Roto (1 entry)
 - [known-catalogs/modolo.md](known-catalogs/modolo.md) — Modolo (2 entries, c. 1979, 1990)
 

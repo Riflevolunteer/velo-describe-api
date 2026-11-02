@@ -1119,3 +1119,9 @@ Prompted by the new "DB year_from is earlier than the evidence" rule; checked ag
   search_text "Campagnolo Omega 20" (old title "Campagnolo Omega Strada Hardox"). Delete again if a crawl reinserts it.
 - Unresolved: Eurus 1997, Nucleon,
   K2 / Kilimangiaro rims (p26, undated ~1995-96) named only, not added.
+
+## Falcon parts catalogue (1970) — see cross-catalog-notes.md (`data_source` 352)
+
+- UK importer pages for hubs, chainsets, gears, pedals, headsets, 1044, 2040. 3712 1038 standard
+  year_to -> 1970; 3233 1253 gets 1266/1267 sub-numbers; 1495 1048/4 description (45T, 170 mm).
+  1970 1048 triple not matched to 1498.
