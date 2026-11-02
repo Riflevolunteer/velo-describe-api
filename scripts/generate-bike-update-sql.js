@@ -122,7 +122,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
   ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1980|raleigh', 'US'], ['1981|raleigh', 'CA'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
   ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], ['1988|raleigh', 'GB'], ['1989|raleigh', 'GB'], // TI Raleigh UK brochures
-  ['1973|falcon', 'GB'], ['1974|falcon', 'GB'], ['1986|falcon', 'GB'], // 1986: Falcon Cycles Ltd, Brigg; undated, IceniCAM files it c1992
+  ['1970|falcon', 'GB'], ['1973|falcon', 'GB'], ['1974|falcon', 'GB'], ['1986|falcon', 'GB'], // 1986: Falcon Cycles Ltd, Brigg; undated, IceniCAM files it c1992
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
   ['1986|miyata', 'US'], // Miyata Bicycle of America, Elk Grove Village IL (back cover)
   ['1982|battaglin', 'IT'], // Cicli Battaglin, Marostica (VI): Italian-language sheets and a 1981-82 lire price list
@@ -1221,6 +1221,8 @@ const COMPONENT_OVERRIDES = {
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'campagnolo velox': 4167, // 2250 Velox (1971-75)
     'campagnolo velox rear': 4167, // 1973 Falcon Olympic 78 (5-speed, no front mech)
+    'campagnolo gran sport rear': 4118, // 1970 Falcon 78 / 80 (5-speed, no front mech): 1012/4 Gran Sport (1955-73)
+    'campagnolo valentino rear': 4162, // 1970 Falcon E.C.74 (5-speed): 2170 Valentino Extra, as bare 'campagnolo valentino'
     // 1979 Peugeot (French catalogue).
     'simplex slj 5500 cp': 7309, // Simplex SLJ5500 CP (1979-84)
     'simplex sx 410 t': 4621, // Simplex SX410 T (1977-85)
@@ -1682,6 +1684,8 @@ const COMPONENT_OVERRIDES = {
     'weinmann centre pull 999': 7929,
     'weinmann centre pull with hooded levers': 7929,
     'weinmann centre pull with lever 144': 7929, // 1973 Falcon Olympic 78 (lever 144 = the 999 set lever)
+    'weinmann 999 centre pull quick release': 7929, // 1970 Falcon San Remo 80
+    'weinmann centre pull quick release': 7929, // 1970 Falcon Olympic 78, as bare 'weinmann centre pull'
     // May 1983 Weinmann catalogue (506 dated 1979-83 from the 1979 Peugeot / 1981 Kalkhoff bikes)
     'weinmann 506 side pull': 7764, // Weinmann AG 506
     'weinmann 506 side pull with safety levers': 7764,
@@ -2383,6 +2387,7 @@ const COMPONENT_OVERRIDES = {
     // engraved reinforcing ferrule (GB leaflet c. 1962); bare title match is
     // ambiguous across the four GB Maes rows.
     'gb maes alloy embossed': 2843, // GB Maes (alloy, with ferrule)
+    'gb maes': 2843, // 1970 Falcon San Remo 92: alloy with ferrule is the only alloy Maes row in range for 1970
     'gb maes alloy engraved': 2843,
     '613 maes embossed': [{ from: 1962, to: 1975, id: 2843 }], // 1970 Professional Mk II, as the 1971-73 "G.B. Maes Alloy Embossed"
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).

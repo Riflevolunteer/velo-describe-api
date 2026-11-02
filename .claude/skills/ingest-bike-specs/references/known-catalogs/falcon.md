@@ -45,6 +45,45 @@
 - Regression: no other CSV carries the new keys except 1984 Peugeot (unchanged).
 
 
+## 1970 Falcon — `1970_falcon_spec.csv` (12 bikes, 95 specs, 18 linked; data_source 350, GB)
+
+- Source: falconrestorebike.wordpress.com/catalogues/1970-falcon-brochure/,
+  `1970-falcon-brochure1.pdf` (2 pp, both sides of a fold-out, no text
+  layer; legible at 300 dpi, the 76 / 92 panels print upside down). "A range
+  of 1970 lightweight cycles", Falcon Lightweight Cycles, Marsh Lane,
+  Barton-upon-Humber; back-cover price list in £ s d. The site also shows a
+  late-1970 / early-1971 copy with a pasted-on price list adding Model 58 and
+  Model 68 Apprentice (replacing 62/63); no specs for those, not used.
+  Transcribed by hand 2026-11-02.
+- Bikes: San Remo 76 (Equipe, Nuovo Record 10-speed), San Remo 92 (Mk III,
+  mudguards not fitted), San Remo 80; Black Diamond 70 / ladies 71; Paragon
+  Sports 60 / ladies 61 and Majorca 64 ("similar to M.70", not illustrated);
+  Olympic 78; Model 66; E.C.74 (Campagnolo Valentino 5-speed); E.C.72.
+  Ladies' sizes ("Lady's (71) 21" only") became separate rows, as 1973. The
+  "10-speed (cycle only)" price-list entries are options, carried in Gearing.
+- Left out (not in the CSV, so no NON_ROAD_SKIP entry): Model 90 San Remo
+  Mk II frameset; Super-Tourist 82 / 83 and Super-Tourist De Luxe 88 / 89
+  (utility, as 1973/74); "The Falcon Apprentice" E.C.62 / girls' E.C.63
+  (user decision: single speed, plastic mudguards, carrier, 5-speed
+  conversion set extra).
+- Repairs / readings: 5-speed Gran Sport / Valentino bikes written as
+  Derailleurs "None, Campagnolo X rear" (1973 pattern). 76 fork printed
+  "Oval 1.7/8" rake" (1973 says 1.25 in), kept as printed.
+- New overrides: Rear Derailleurs 'campagnolo gran sport rear' -> 4118
+  (1012/4), 'campagnolo valentino rear' -> 4162 (2170 Valentino Extra);
+  Handlebars 'gb maes' -> 2843 (alloy with ferrule, the only alloy Maes row
+  covering 1970); Brakes 'weinmann 999 centre pull quick release' and
+  'weinmann centre pull quick release' -> 7929. Existing keys: Nuovo Record
+  front 2297 / rear 4125 v3, Campagnolo cotterless 1496, Cinelli 64 2801,
+  Campagnolo quick release hubs 3260, G.B. forged stem 6533, Weinmann centre
+  pull 7929.
+- Left unlinked: bare Regina chain (20+ variants); Lyotard pedals; Weinmann
+  side pull / Q/R / with hooded levers; Endrick, Sprint, Weinmann Sprints
+  rims; Clement tubulars; W.P.B. and butt leather saddles; generic hubs.
+- Regression: only change elsewhere is the 1983 Peugeot UO 9 "Weinmann
+  centre-pull, quick release" -> 7929 (in range, 1966-83), picked up on that
+  catalogue's next reload.
+
 ## 1974 Falcon — `1974_falcon_spec.csv` (18 bikes, 203 specs, 25 linked; loaded as 1975 until 2026-10-08)
 
 - Source: Falcon Cycles (Barton-upon-Humber) "range of lightweight
