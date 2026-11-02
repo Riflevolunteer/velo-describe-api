@@ -3480,7 +3480,9 @@ const COMPONENT_OVERRIDES = {
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
     'clement campionissimo tubular 28"': 6738, // Clement Campionissimo Seta Extra (the only dated Campionissimo row)
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
-    'vittoria nuovo pro tubular': null, // 1984 Raleigh Team Replica / Road Ace: the only Nuovo Pro row is the 1988 Nuovo Pro 260, not shown for 1984 (unlinked 2026-10-30)
+    'vittoria nuovo pro tubular': [{ from: 1984, to: 1984, id: 6893 }], // 1984 Raleigh Team Replica / Road Ace: the only Nuovo Pro row, Nuovo Pro 260 (6893 year_from moved 1988 -> 1984 on this catalogue; judgement call 2026-11-02, reversing the 2026-10-30 leave-unlinked)
+    // 1987 Peugeot (FR) PX CA W 'Dolomites': maker not printed; Neo Pro is Wolber's model (the 1987 US PX / PX 10 print "Wolber Neo Pro"). Judgement call 2026-11-02.
+    'tubulars 700 neo pro': [{ from: 1978, to: 1990, id: 6923 }], // Wolber Neo Pro
     'clement tubulars mod colnago': 6743, // Clement Colnago (1979 Colnago Mexico / Mexico Oro)
     // 1979 Colnago Super / Saronni / International / Roger de Vlaeminck / Export: no maker printed, read
     // as the Clement Colnago the Mexico sheet names.
