@@ -737,8 +737,11 @@ Weinmann 1129 / 1130 570.
     6960 was left at 1995. Record crank mapped to 7036 FC-01RE although the 1995 range brought low-profile cranks
     (no separate 1995 Record crank row exists). Record FD mapped to 7059 FD-11SRE (steel cage, not 2311 Record
     Titanium). The ED chain codes are as printed; maker not stated. Los Angeles 84 prints "5000-T6" alloy.
-  - Left for later: Gipiemme "Exploit Bagarre" 7-speed indexed RD (245 g) is probably 9869 815591 (Isca No. 7, 1991),
-    or the 4263 Exploit / 4258 BA 801 line, not decided; Shimano 300EX / 500EX headset (one shared 121 g entry),
+  - Gipiemme "Exploit Bagarre" 7-speed indexed RD (245 g), decided 2026-11-04 (user, option 1): matched by spec to 9869
+    815591 (Isca No. 7, 1991), retitled from "Gipiemme 815591, road 7-speed index" to "Gipiemme 815591, Exploit
+    Bagarre (road 7-speed index)", search_text rewritten, year_to 1991 -> 1996. 4263 Exploit (1982-88) and 4258
+    Bagarre BA 801 (1988-90) left as is.
+  - Left for later: Shimano 300EX / 500EX headset (one shared 121 g entry),
     RSX cassette, Dura-Ace bar-end shifters (185 g), Ultegra 180 g "Ergo" entry; 10502 Atlanta 96 could extend to
     1999 from the '99 guide (353).
 - **Pass 2, other brands in component_brand (2026-11-04; source_ref -> 357 on 204 updated + 294 new rows).** 619

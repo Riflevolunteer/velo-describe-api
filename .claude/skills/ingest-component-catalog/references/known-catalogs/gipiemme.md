@@ -334,3 +334,10 @@
     "Tecno Lenticolare" (26 / 28in, tubular or clincher, 850g; stiffer Carbon Plus 950g). Both editions named in the
     description because the specs differ. Judgement call; the alternative was a separate 1997 row.
 - Left alone: 6967 Tecno C946 (1995, velobase), not in this catalogue. No bike_spec links or overrides on any row touched.
+
+## 9869 815591 named "Exploit Bagarre" (2026-11-04, from La Bicicletta Guida '96, `data_source` 357)
+
+- The Guida '96 lists a "GIPIEMME Exploit Bagarre" road rear derailleur, aluminium, 7-speed indexed, 245 g, no code.
+  Matched by spec to 9869 (Isca No. 7 code 815591, road 7-speed index; user decision). Old title "Gipiemme 815591,
+  road 7-speed index"; now "Gipiemme 815591, Exploit Bagarre (road 7-speed index)", 1991-1996. 4263 Exploit and 4258
+  BA 801 unchanged. The guide's other Gipiemme rows are in cross-catalog-notes.md (Guida '96 pass 1).
