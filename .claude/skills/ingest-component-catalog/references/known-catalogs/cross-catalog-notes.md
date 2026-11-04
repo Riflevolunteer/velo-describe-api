@@ -690,6 +690,61 @@ Weinmann 1129 / 1130 570.
     brands not in component_brand (Syncros, Tec Components, Areo, Spinergy, DT, SRAM, Race Face,
     Thomson, Fi'zi:k, Tune, Tiso, WR Compositi, Casiraghi, Energy, Allara ...): a possible pass 3.
 
+## La Bicicletta Guida '96 - Componenti (March 1996, 58 scans, disraeligears.co.uk), data_source id 357
+
+- Label `La Bicicletta Guida '96, Componenti (1996)`, country IT. Source:
+  https://www.disraeligears.co.uk/site/la_bicicletta_guida_96_-_componenti.html (scans at
+  `00_main_images/la_bicicletta_guida_96_-_componenti_scan_NN_main_image.jpg`, **two-digit 01-58** (the page HTML
+  also yields bogus single-digit names that return a 9 KB error page), 1560 x 2164, legible). Printed pp. 104-161.
+  Read 2026-11-04 by six subagents straight from the JPGs; transcription (1,399 rows, 1,350 after joining page
+  breaks, ~985 in scope) and match files kept in the session scratchpad only.
+- Same format as the '99 guide: brand + model heading, materiale / misure / peso / altre caratteristiche, price in
+  lire; **no part codes** for Campagnolo or Shimano. Scan map: 1-2 groupsets; 2 axles; 2-5 stems; 6-7 QRs; 7-9
+  bottles; 9-10 bolts; 10-11 rear derailleurs; 11-12 tubes; 12-13 seat posts; 14 chains, cables; 14-18 rims
+  (clincher, then tubular); 18 straps; 18-19 shifters / Ergopower / STI; 19-23 clinchers; 23-24 brakes; 25-27 bars;
+  27-28 front derailleurs; 28-30 cranks; 30 brake levers; 30-32 BBs; 32-34 front hubs; 34-37 rear hubs; 37-38 tape;
+  39 nipples, pads, clipless pedals; 40 traditional pedals, cassettes / freewheels; 41-42 cages; 42-43 aerobars;
+  43-44 toe clips; 44-45 spokes; 45-48 wheels; 48-51 saddles; 52-53 headsets; 53-55 tubing; 55-58 tubulars.
+- **Pass 1, Campagnolo, Gipiemme and Shimano (2026-11-04; source_ref -> 357 on 60 updated + 33 new rows).**
+  - year_to -> 1996, Campagnolo (39): RDs 4164 RD-01VL, 4165 RD-31VL3, 4094 RD-31AT, 4110 RD-31CH; BBs 18, 26, 7048;
+    brakes 587 BR-02VL, 556 Athena Monoplaner, 7077 Chorus dual-pivot; cassette 1186 Record Exa-Drive 8sp; cranks
+    1488 FC-01CH, 7036 FC-01RE, 7062 FC-01VL; FDs 7059 FD-11SRE, 7060 FD-11SCH; headsets 2952, 2956, 2965, 2970,
+    2961; hubs 3237, 3250, 3279; pedals 3691, 3702, 7068, 7069; shifters 5998 SL-01RE, 6006 SL-01SVL; Ergopower
+    6338 Athena; Olympic-city rims 4946 Barcelona 92, 4952 Mexico 68, 4953 Montreal 76, 4954 Moskva 80, 4967
+    Seoul 88 (their 1990-92 years were velobase placeholders, see the rim dedupe entry). Gipiemme (4): 9863 Mod. 402
+    post (1991), 2366 Bagarre BA 803 FD (1988), 1585 Azzurro SB 100 crank (1991; the guide prints "Bagarre
+    Azzurro"), 6967 Tecno C946 (1995). Shimano (3): 7571 BR-A500, 7572 BL-A500 (both 1992), 3960 PD-6402 (1995).
+  - year_from moved earlier (old value in brackets): 10089 Avanti Triple RD (1999), 10093 Racing Triple FD (1999),
+    10099 Racing Triple crank (1999), 10100 Mirage Triple crank (1999), 10476 Tecno 416 wheels (1997), 10485 Pluma
+    (1997), 10486 Plus (1997), 10487 Sintra (1997), all -> 1996.
+  - **year_from moved later**: 2961 Campagnolo Mirage headset 1990 -> 1995 (velobase bucket; the 1995 range calls
+    Mirage a new group). Revert value 1990.
+  - Descriptions rewritten (bare velobase "<title>, Italy"): 559, 1478 (velobase 649 g kept), 2282, 2317, 2961, 3267,
+    4095, 4967, 5743, 6339, 6348, 6967. No titles changed.
+  - New rows (33, 1996-1996), ids 10488-10520. Campagnolo: Mirage Triple and Racing Triple 8-speed RDs; ED 30 / ED 50
+    / ED 100 chains; rims Crystal, London 48, Helsinki 52, Amber, Melbourne 56, Topaz, Roma 60, Tokio 64, München 72,
+    Atlanta 96, Los Angeles 84; Avanti Triple and Veloce / Mirage Triple FDs; Avanti brake levers and the unnamed
+    non-Ergopower aero lever "for Mirage to Record"; Mirage Triple and Racing Triple cartridge BBs; Veloce Exa-Drive
+    and Record Titanium Exa-Drive 8sp cassettes; Scirocco 20 (front + rear, 20 spokes) and Shamal 12 track wheels.
+    Gipiemme: R 416 rim, GPM 400 brakes, GPM 731 front hub, 812 96 A clipless pedals, Tecno C 416, Tecno 948 and
+    Tecno C 934 wheels. Racing Triple and Olympic-city rims have no group_id.
+  - Matched with no change (years already cover 1996), e.g. Campagnolo 4138 Record Titanium 8-speed RD (233 g, the
+    guide's "Record" RD), 6342 Record Titanium Ergopower ("Record Ergopower II"), 578 BR-14RE, 3265 Record 8sp hubs,
+    5756 SP-10RE, 6954 Bora, 6961 / 6962 Shamal, 6963 Vento, 7095 Zonda, 6956 / 6957 Ghibli, and the 1995-range Mirage /
+    Avanti rows; almost all Shimano (the 105SC 105x, RX100 A55x, RSX A410, 600 Ultegra 640x and Dura-Ace 740x rows
+    already span 1996).
+  - Judgement calls: the guide's Scirocco 20 is a 20-spoke wheel, not 6960 R0215 (the 1988-95 four-window disc), so
+    6960 was left at 1995. Record crank mapped to 7036 FC-01RE although the 1995 range brought low-profile cranks
+    (no separate 1995 Record crank row exists). Record FD mapped to 7059 FD-11SRE (steel cage, not 2311 Record
+    Titanium). The ED chain codes are as printed; maker not stated. Los Angeles 84 prints "5000-T6" alloy.
+  - Left for later: Gipiemme "Exploit Bagarre" 7-speed indexed RD (245 g) is probably 9869 815591 (Isca No. 7, 1991),
+    or the 4263 Exploit / 4258 BA 801 line, not decided; Shimano 300EX / 500EX headset (one shared 121 g entry),
+    RSX cassette, Dura-Ace bar-end shifters (185 g), Ultegra 180 g "Ergo" entry; 10502 Atlanta 96 could extend to
+    1999 from the '99 guide (353).
+- **Pass 2, other brands: not done.** ~620 in-scope entries for brands in component_brand (Vittoria 62, Miche 46,
+  Sachs 32, Cinelli 27, Ambrosio 27, Schwalbe 26, Mavic 25, Ofmega 25, OMAS 25, 3ttt 24, Zipp 24, Hutchinson 23, ITM
+  20, Selle Italia 18 ...) plus ~124 for brands not in it (MF Components, Tioga, MBS, Syncros, WR Compositi ...).
+
 ## La Bicicletta, July 1984 - Guida all'acquisto: le bici da turismo (8 scans, disraeligears.co.uk), read 2026-10-24, not ingested
 
 - Source: https://www.disraeligears.co.uk/site/la_bicicletta_1984_july_-_guida_allacquisto_le_bici_da_turismo.html
