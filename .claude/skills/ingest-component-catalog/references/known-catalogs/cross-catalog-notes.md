@@ -741,9 +741,56 @@ Weinmann 1129 / 1130 570.
     or the 4263 Exploit / 4258 BA 801 line, not decided; Shimano 300EX / 500EX headset (one shared 121 g entry),
     RSX cassette, Dura-Ace bar-end shifters (185 g), Ultegra 180 g "Ergo" entry; 10502 Atlanta 96 could extend to
     1999 from the '99 guide (353).
-- **Pass 2, other brands: not done.** ~620 in-scope entries for brands in component_brand (Vittoria 62, Miche 46,
-  Sachs 32, Cinelli 27, Ambrosio 27, Schwalbe 26, Mavic 25, Ofmega 25, OMAS 25, 3ttt 24, Zipp 24, Hutchinson 23, ITM
-  20, Selle Italia 18 ...) plus ~124 for brands not in it (MF Components, Tioga, MBS, Syncros, WR Compositi ...).
+- **Pass 2, other brands in component_brand (2026-11-04; source_ref -> 357 on 204 updated + 294 new rows).** 619
+  entries in 126 brand + category bundles (each with that brand's DB rows for the category) went to five Sonnet
+  subagents for match / new / skip plus English text; a script applied the years and guards. Decisions: 254 match,
+  320 new entries (294 rows after size variants and front / rear wheel pairs were folded), 45 skipped.
+  - Year rule (uniform): matched rows ending before 1996 -> year_to 1996; starting after 1996 -> year_from 1996;
+    undated -> 1996-1996. A gap of more than 8 years was held for review; six were then extended anyway (velobase
+    single-year buckets or long-running models): 3066 OMAS Grand Prix headset (1980), 3509 Sachs-Maillard New
+    Success hubs (1980), 6892 Vittoria Normalcross (1974-85), 9171 Miche 1301 Competition (1985), 9433 Vittoria
+    Pista CS (1983-84), 9434 Pista Seta CS (1984).
+  - year_to -> 1996, revert values in brackets: 404 (1990), 859 (1988), 1699 (1988), 1721 (1992), 1730 (1990), 2006
+    (1990), 2431 (1990), 2743 (1991), 2762 (1991), 2812 (1988), 3064 (1988), 3066 (1980), 3068 (1988), 3425 (1990),
+    3427 (1988), 3509 (1980), 4899 (1988), 4909 (1988), 4910 (1988), 5058 (1990), 5129 (1988), 5134 (1988), 5140
+    (1988), 5302 (1991), 5473 (1990), 5490 (1990), 5508 (1993), 5515 (1993), 5516 (1992), 5542 (1990), 5684 (1990),
+    6352 (1995), 6397 (1990), 6402 (1990), 6424 (1991), 6564 (1990), 6565 (1990), 6748 (1988), 6777 (1988), 6835
+    (1990), 6873 (1990), 6882 (1990), 6884 (1990), 6892 (1985), 6976 (1990), 7096 (1988), 7097 (1988), 8323 (1991),
+    8324 (1991), 8327 (1991), 8389 (1992), 8397 (1992), 8401 (1992), 8417 (1992), 9168 (1988), 9171 (1985), 9176
+    (1988), 9178 (1988), 9228 (1988), 9428 (1988), 9433 (1984), 9434 (1984), 9480 (1988), 9481 (1988), 9482 (1988),
+    9490 (1988), 9491 (1988), 9492 (1988). Plus 10 undated rows -> 1996-1996 (e.g. 3147 Tange Passage).
+  - year_from -> 1996 on 106 rows, almost all 1999-1999 rows from the '99 guide (353), which this guide shows were
+    already sold in 1996. The others (old value): 2759 3ttt Forma SL-Ergopower due (2002; the guide's "Forma SL
+    Ergopower 2"), 3786 LOOK PP236, 5059 Mavic CXP 12, 5060 CXP 14, 5062 CXP 30 tubular, 9982 T238 (all 1997), 5102
+    Open SUP CD (1997), 6576 LOOK Ergostem (1997).
+  - Descriptions: 74 matched rows rewritten (bare velobase "<title>, Italy" text, measured weights kept), 20 of them
+    with no year change. No titles changed.
+  - New rows (294, 1996-1996, group NULL, ids 10521-10814): tyres 61, hubs 41 (front and rear separate), saddles 36,
+    rims 30, wheels 22, stems 20, BBs 16, cranks 15, bars 14, pedals 10, posts 8, headsets 6, others 15. Most from
+    Selle Italia / San Marco / Royal / Bassano, OMAS, Vittoria, Ofmega, Miche, Zipp, Ambrosio, Schwalbe, FiR, Sachs,
+    Michelin, Mavic, Cinelli. Titles "<brand> <model as printed>"; Zipp rims carry "rim" and wheels "wheels" to
+    keep them apart; Schwalbe Blizzard Pro wire-bead versions are separate from the 1999 folding rows 10225 / 10227.
+  - Hand corrections to the agents' calls: 201 Zipp 530 rim skipped (printed "53 gr", agent guessed ~530 g); 793
+    "Club Team Roost" saddle skipped (brand misparse; Club Roost is not in component_brand); 298 / 299 Blizzard Pro
+    steel-bead made new instead of matching the folding rows.
+  - Close-name matches worth a second look: Vittoria "T.T." read as Twin Tread (10441, 10448), Pista 6 Giorni CS ->
+    9252 Sei Giorni, Michelin Hi Lite Competition -> 6835 Hi-Lite Comp, Ambrosio Road Racing -> 9176 Olimpic Road
+    Racing, Corima Eclipse -> 10160 Ellipse, Brooks Professional Team -> 5303, Cinelli Tempo Crono -> 2818 Tempo
+    bullhorns (255 vs 270 g), Miche Primato post -> 9480 Primato Aero, Ritchey Logic Road crank -> 1721 Logic
+    (1991-92), FRM CU2 Corsa Campagnolo / Shimano both -> 10279, Sachs New Success hubs -> 3509 Sachs-Maillard.
+  - Possible duplicates created (names differ from an existing row with similar specs): Panaracer Category One vs
+    10222 Category Pro; Vittoria Pro Lite 19 vs 6898 Pro L 19"; Vittoria Pista CL vs 10444 Atlanta Gold CL; Corima
+    Disc T vs 10360 Corima Disc; FRM Alu-Ergal / Carbon-Ergal front hubs vs 10303 Pro / 10305 Feather; FRM Ergal
+    post vs 10161 Arretrato; Mavic "CXP Titane SUP UB Control" (probably CXP 30 Titane); OMAS 120 S / 120 D Big
+    Sliding (identical specs); Ofmega Mistral SQ vs 93 Mistral.
+  - Skipped as ambiguous (45 in all), e.g. Selle Italia Flite (5488 / 5489), Selcof Team Titanio (5872 / 5874),
+    Cinelli 64 Giro d'Italia (2800-2802), 3ttt Competizione / Grand Prix, Hutchinson Krono Competition (10217 /
+    10218), Vittoria Zefir Kevlar, Crono Seta CS 150, Sachs New Success brake (942 / 943), Clement Criterium aperto
+    / Solo (merged multi-size entries).
+- **Not done (a possible pass 3):** ~124 entries for brands not in component_brand: MF Components 21, Tioga 8, MBS 7,
+  Syncros, WR Compositi, Bestialine, Hope, Poggipolini, Sipav, SDG (4 each), F.R.O. Castagnino 6, Titec, Taya,
+  Yaban, Race Face, L.L.S., Tec Components (3 each) and ~25 more with 1-2. Out-of-scope sections (bottles, cages,
+  QRs, bolts, tubes, tape, toe clips, straps, spokes, nipples, aerobars, tubing, groupset summaries) not ingested.
 
 ## La Bicicletta, July 1984 - Guida all'acquisto: le bici da turismo (8 scans, disraeligears.co.uk), read 2026-10-24, not ingested
 
