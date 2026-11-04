@@ -581,6 +581,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'shimano rx100': [{ from: 1989, to: 1993, id: 2531 }], // FD-A550-B / -F; FD-A551 (8750) only from 1994
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano 105sc (1055)': 2467, // FD-1055
     'suntour xc ltd': 2658, // FD-XL00-GXH
@@ -894,6 +895,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    'shimano rx100': [{ from: 1989, to: 1993, id: 4532 }], // RD-A550-GS / -SS; RD-A551 (4533) only from 1994
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano 105sc (1055)': 4455, // RD-1055
     'suntour xc ltd': 4784, // RD-XL00-GXB
@@ -1511,6 +1513,7 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'shimano rx100': [{ from: 1989, to: 1993, id: 1007 }], // BR-A550-49 / -57; BR-A551 (8754) only from 1995
     // 1991 / 1992 Bianchi (JP) catalogues
     'campagnolo c record aero levers': 560, // Delta C-Record
     'campagnolo chorus aero levers': 565, // BR-02CH Monoplaner
@@ -1978,6 +1981,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'shimano rx100': [{ from: 1989, to: 1993, id: 1838 }], // FC-A550-SG / -BP; FC-A551 (8751) only from 1994
     // 1991 / 1992 Bianchi (JP) catalogues
     'campagnolo c record 53 42t 170 mm': 1482, // C-Record (1987-1994); 1483 is the 1985-86 crank
     'campagnolo croce d\'aune 52 42t 170 mm': 1489,

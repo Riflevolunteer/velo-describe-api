@@ -596,5 +596,9 @@
 - Era note: the catalogue still says "Campagnolo C-Record" in 1992, the year Campagnolo renamed it Record (RD-01RE 4134); the C-Record
   parts link to the 1990-91 C-Record rows (4133 R010, 560 Delta, 1482) as printed, with no global range change.
   "Vittoria Criterium" (Mondiale) -> 6884 Criterium Super, ranged to 1992 (9061 Criterium ends 1981).
+- RX100 fix (2026-11-04, +4 links, 30 -> 34): Premio "Shimano RX100" (fanned to Brakes, Crankset, FD, RD) was unlinked because
+  each category has an A550 and an A551 row. Ranged overrides 'shimano rx100' 1989-93: brakes 1007 BR-A550, crank 1838 FC-A550-SG / -BP,
+  FD 2531 FD-A550, RD 4532 RD-A550-GS / -SS (the A551 rows start 1994-95). Hubs (3579) and pedals (3977) already had overrides.
+  Regression: 1993 unchanged (195).
 - Found while checking: 10569 "Vittoria Corsa CX" (1996, inserted by the Guida '96 pass 2) duplicates 6880 Corsa CX Servizio Corse,
   which the 'vittoria corsa cx' override points at; merged into 6880 the same day (see cross-catalog-notes.md, Guida '96).
