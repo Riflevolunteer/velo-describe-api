@@ -790,6 +790,7 @@ Weinmann 1129 / 1130 570.
     Cinelli 64 Giro d'Italia (2800-2802), 3ttt Competizione / Grand Prix, Hutchinson Krono Competition (10217 /
     10218), Vittoria Zefir Kevlar, Crono Seta CS 150, Sachs New Success brake (942 / 943), Clement Criterium aperto
     / Solo (merged multi-size entries).
+- Merged 2026-11-04 (user request): 10569 "Vittoria Corsa CX" (1996-1996, source_id 8a5cdbd9-d895-11f1-a2df-02fea3763e8d, no bike links) deleted into 6880 Vittoria Corsa CX Servizio Corse (1980-99, the 'vittoria corsa cx' override target); 6880's bare velobase text rewritten with the guide's sizes (19x28, 21x28, 19x26 in, 7-9 bar, 240-260 g; velobase 252 g avg kept), source_ref -> 357.
 - **Not done (a possible pass 3):** ~124 entries for brands not in component_brand: MF Components 21, Tioga 8, MBS 7,
   Syncros, WR Compositi, Bestialine, Hope, Poggipolini, Sipav, SDG (4 each), F.R.O. Castagnino 6, Titec, Taya,
   Yaban, Race Face, L.L.S., Tec Components (3 each) and ~25 more with 1-2. Out-of-scope sections (bottles, cages,

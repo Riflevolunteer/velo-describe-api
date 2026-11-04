@@ -597,4 +597,4 @@
   parts link to the 1990-91 C-Record rows (4133 R010, 560 Delta, 1482) as printed, with no global range change.
   "Vittoria Criterium" (Mondiale) -> 6884 Criterium Super, ranged to 1992 (9061 Criterium ends 1981).
 - Found while checking: 10569 "Vittoria Corsa CX" (1996, inserted by the Guida '96 pass 2) duplicates 6880 Corsa CX Servizio Corse,
-  which the 'vittoria corsa cx' override points at; a merge candidate.
+  which the 'vittoria corsa cx' override points at; merged into 6880 the same day (see cross-catalog-notes.md, Guida '96).
