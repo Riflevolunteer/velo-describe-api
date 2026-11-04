@@ -625,3 +625,7 @@
   match); overrides 'shimano 105sc' 1990-92 -> 960 BR-1055 / 1782 FC-1055-SG / 2467 FD-1055 / 4455 RD-1055, 1993+ -> 1056 crank / FD / RD.
   1991 "Shimano 105SC (1055) SIS" shifters -> 6134 SL-1055-BCAI, as the 1990 Alfana. 1991 124 links, 1992 38. Only these two CSVs use
   the strings.
+- Virata 600 Ultegra fix (2026-11-04, +4): 1992 "Shimano 600 Ultegra 8-speed" crank -> 1790 FC-6400, FD -> 2479 FD-6401, RD -> 4467
+  RD-6401 (the 8-speed generation, 1992-97); brakes left unlinked (BR-6400 966, 1988-93, or BR-6403 dual pivot 967, 1991-97: the
+  scan doesn't say). 1991 "Shimano CS-6400SG 13-23T 7-speed" -> 1202 CS-HG90 / 600 Ultegra 7-speed HG, as the 1990 Virata. 1991 125
+  links, 1992 41.

@@ -581,6 +581,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'shimano 600 ultegra 8 speed': 2479, // 1992 Bianchi Virata: FD-6401 (8-speed generation, 1992-97)
     'shimano 105sc': [{ from: 1990, to: 1992, id: 2467 }, { from: 1993, id: 2468 }], // FD-1055 to 1992, FD-1056 from 1993
     'shimano rx100': [{ from: 1989, to: 1993, id: 2531 }], // FD-A550-B / -F; FD-A551 (8750) only from 1994
     // 1991 / 1992 Bianchi (JP) catalogues
@@ -896,6 +897,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    'shimano 600 ultegra 8 speed': 4467, // 1992 Bianchi Virata: RD-6401 (8-speed generation, 1992-97)
     'shimano 105sc': [{ from: 1990, to: 1992, id: 4455 }, { from: 1993, id: 4456 }], // RD-1055 to 1992, RD-1056 from 1993
     'shimano rx100': [{ from: 1989, to: 1993, id: 4532 }], // RD-A550-GS / -SS; RD-A551 (4533) only from 1994
     // 1991 / 1992 Bianchi (JP) catalogues
@@ -1985,6 +1987,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'shimano 600 ultegra 8 speed': 1790, // 1992 Bianchi Virata: FC-6400 (1988-99)
     'shimano 105sc': [{ from: 1990, to: 1992, id: 1782 }, { from: 1993, id: 1783 }], // FC-1055-SG to 1992, FC-1056 from 1993
     'shimano rx100': [{ from: 1989, to: 1993, id: 1838 }], // FC-A550-SG / -BP; FC-A551 (8751) only from 1994
     // 1991 / 1992 Bianchi (JP) catalogues
@@ -3389,6 +3392,7 @@ const COMPONENT_OVERRIDES = {
     'suntour gpx silver': [{ from: 1989, to: 1989, id: 7783 }], // CH-GP00
   },
   Cassettes: {
+    'shimano cs 6400sg 13 23t 7 speed': 1202, // 1991 Bianchi Virata: 7-speed HG, as the 1990 Virata (CS-HG90 / 600 Ultegra)
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano cs hg70 12 28t 7 speed': 7567, // CS-HG70 7-speed
     'shimano cs hg70 13 23t 7 speed': 7567, // CS-HG70 7-speed
