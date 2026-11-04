@@ -600,5 +600,7 @@
   each category has an A550 and an A551 row. Ranged overrides 'shimano rx100' 1989-93: brakes 1007 BR-A550, crank 1838 FC-A550-SG / -BP,
   FD 2531 FD-A550, RD 4532 RD-A550-GS / -SS (the A551 rows start 1994-95). Hubs (3579) and pedals (3977) already had overrides.
   Regression: 1993 unchanged (195).
+- 1993 Eros RD fix (2026-11-04): override 'shimano rx100 gs sis' (Rear Derailleurs) 4533 RD-A551-GS (1994-97) -> 4532 RD-A550-GS / -SS;
+  bike_spec 1544 relinked by a one-off UPDATE (the back-fill only fills NULLs). 1993 still 195 links.
 - Found while checking: 10569 "Vittoria Corsa CX" (1996, inserted by the Guida '96 pass 2) duplicates 6880 Corsa CX Servizio Corse,
   which the 'vittoria corsa cx' override points at; merged into 6880 the same day (see cross-catalog-notes.md, Guida '96).

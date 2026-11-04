@@ -1225,7 +1225,7 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace sti': 4505, // Shimano RD-7402, Dura-Ace (8sp)
     'shimano ultegra sti': 4467, // Shimano RD-6401, 600 Ultegra
     'shimano 105 sti': 4455, // Shimano RD-1055, 105SC
-    'shimano rx100 gs sis': 4533, // Shimano RD-A551-GS, RX100
+    'shimano rx100 gs sis': 4532, // Shimano RD-A550-GS / -SS, RX100 (was 4533 RD-A551-GS, 1994-97: a year late for the 1993 Eros)
     'shimano xtr': 4542, // Shimano RD-M900, XTR M900
     'shimano xtr top pull dual sis': 4542,
     'shimano deore dx top pull dual sis': 4480, // Shimano RD-M650, Deore DX (SGS)
