@@ -2609,6 +2609,7 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    'nitto dynamic iii 90 degree': null, // 1991 Bianchi Virata / Alfana: no Dynamic III row (8562 is the 1980 Dynamic, 6614 the 1989 Dynamic-2)
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'cinelli type 1e alloy': 6490, // Cinelli 1E (the only 1E row, dated 1980-86)
     'suntour xc stem': 6695, // 1986 Peugeot (US) Canyon Express: SunTour MS-1400, XC (1984-88) (// linkCoverage pass 2026-10-30)
@@ -3641,6 +3642,7 @@ const COMPONENT_OVERRIDES = {
     'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
+    'panaracer record': null, // 1991 Bianchi Virata / Alfana: the only row is the 27" P-27RD (6841, 1980)
     // 1991 / 1992 Bianchi (JP) catalogues
     'vittoria super criterium': 6884, // Criterium Super
     'vittoria criterium': [{ from: 1992, to: 1992, id: 6884 }], // 1992 Bianchi JP: the same Mondiale tyre the 1991 table calls Super Criterium; 9061 Criterium ends 1981

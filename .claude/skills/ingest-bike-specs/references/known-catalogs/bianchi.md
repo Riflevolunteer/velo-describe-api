@@ -641,3 +641,13 @@
   4092, crank Chorus 1487) because a range miss means "no link", not a matcher fall-through.
 - Check: generated SQL for every catalogue diffed old vs new generator; only 1992 changed (the 11 links). 1992 now has no
   off-era links.
+
+## 1991 Bianchi era check — 2026-11-04 (user request)
+
+- 10 links outside the component's years; no 1991-generation sibling rows exist for any of them.
+- Widened year_to to 1991 (same part, the catalogue is the evidence; revert value in brackets): 7641 Shimano CS-M732 (1989; the
+  table prints the code), 1705 Ofmega Vantage (Bianchi Quattro version) (1990), 3628 SunTour XC Pro rear freewheel hub (1990), 6258
+  SunTour Quattro shifters (1990), 6826 Michelin Select (1990).
+- Unlinked (do-not-link overrides, one-off UPDATEs to NULL): Virata / Alfana "Nitto Dynamic III, 90 degree" stem (was 8562, the
+  1980 Dynamic; 6614 is the 1989 Dynamic-2; no Dynamic III row) and "Panaracer Record" tyres (was 6841 Record P-27RD, a 27" tyre
+  from the 1980 bucket). Only this CSV uses either string. 1991: 125 -> 121 links, none off-era.
