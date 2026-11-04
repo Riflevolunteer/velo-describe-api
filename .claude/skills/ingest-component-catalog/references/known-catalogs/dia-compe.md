@@ -259,3 +259,15 @@
   makers' levers and cantilevers: Toei, Seika, Aoridome).
 - The retrobike `dc86.pdf` was offered again on 2026-11-01. It is still the same
   scan set as 102 (see the 2026-10-05 note above) and was not re-fetched.
+
+## 2026-11-04 description tidy (no new source)
+
+- 64 Dia-Compe rows carrying the 1986 catalogue's specs (source_ref 102,
+  plus 218 / 247 / 261 where a later pass retagged them): dropped the
+  velobase-style "<title>, Japan." prefix and the "(1986 catalogue)" /
+  "1986 catalogue." citations, and the velobase old-title notes (those old
+  titles are listed in the 1986 entry above). Kept "(velobase)" where it
+  marks a second, independently weighed figure (e.g. 656 "166g avg", 678
+  "147g measured", 700 "350g pair actual"), and kept the 1994 dating notes
+  (657, 681, 8083, 8108). 268 now reads "used as tandem stoker hoods".
+  source_ref left unchanged (no new evidence). Specs and years untouched.
