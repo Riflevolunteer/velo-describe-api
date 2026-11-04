@@ -581,6 +581,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'shimano 105sc': [{ from: 1990, to: 1992, id: 2467 }, { from: 1993, id: 2468 }], // FD-1055 to 1992, FD-1056 from 1993
     'shimano rx100': [{ from: 1989, to: 1993, id: 2531 }], // FD-A550-B / -F; FD-A551 (8750) only from 1994
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano 105sc (1055)': 2467, // FD-1055
@@ -895,6 +896,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    'shimano 105sc': [{ from: 1990, to: 1992, id: 4455 }, { from: 1993, id: 4456 }], // RD-1055 to 1992, RD-1056 from 1993
     'shimano rx100': [{ from: 1989, to: 1993, id: 4532 }], // RD-A550-GS / -SS; RD-A551 (4533) only from 1994
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano 105sc (1055)': 4455, // RD-1055
@@ -1513,6 +1515,7 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'shimano 105sc': [{ from: 1990, to: 1992, id: 960 }], // BR-1055-49; 1992 Bianchi Alfana (the 1056 group starts 1993)
     'shimano rx100': [{ from: 1989, to: 1993, id: 1007 }], // BR-A550-49 / -57; BR-A551 (8754) only from 1995
     // 1991 / 1992 Bianchi (JP) catalogues
     'campagnolo c record aero levers': 560, // Delta C-Record
@@ -1982,6 +1985,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'shimano 105sc': [{ from: 1990, to: 1992, id: 1782 }, { from: 1993, id: 1783 }], // FC-1055-SG to 1992, FC-1056 from 1993
     'shimano rx100': [{ from: 1989, to: 1993, id: 1838 }], // FC-A550-SG / -BP; FC-A551 (8751) only from 1994
     // 1991 / 1992 Bianchi (JP) catalogues
     'campagnolo c record 53 42t 170 mm': 1482, // C-Record (1987-1994); 1483 is the 1985-86 crank
@@ -2725,6 +2729,7 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
+    'shimano 105sc (1055) sis': 6134, // 1991 Bianchi Alfana: SL-1055-BCAI, as the 1990 'shimano 105 sis'
     // 1991 / 1992 Bianchi (JP) catalogues
     'suntour xc ltd accushift plus top pull multimount': 6310, // SL-XL00 thumb
     'suntour xc pro accushift plus top pull multimount': 6311, // SL-XP00 thumb

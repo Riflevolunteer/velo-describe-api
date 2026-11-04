@@ -621,3 +621,7 @@
   (1992), 2964 Campagnolo HS-01RE Record headset (1991).
 - Left: Krono "Campagnolo Chorus 8-speed Downtube shift levers" -> 5976 Chorus Friction graphite (1990-92); the DB has no 1993
   Chorus down-tube lever row. Regression: all catalogues regenerated, link counts unchanged; 1993 still 195 links.
+- Alfana 105SC fix (2026-11-04, +5): 1992 "Shimano 105SC" (fanned to brakes, crank, FD, RD) was unlinked (1055 and 1056 rows both
+  match); overrides 'shimano 105sc' 1990-92 -> 960 BR-1055 / 1782 FC-1055-SG / 2467 FD-1055 / 4455 RD-1055, 1993+ -> 1056 crank / FD / RD.
+  1991 "Shimano 105SC (1055) SIS" shifters -> 6134 SL-1055-BCAI, as the 1990 Alfana. 1991 124 links, 1992 38. Only these two CSVs use
+  the strings.
