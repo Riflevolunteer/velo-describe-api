@@ -604,3 +604,20 @@
   bike_spec 1544 relinked by a one-off UPDATE (the back-fill only fills NULLs). 1993 still 195 links.
 - Found while checking: 10569 "Vittoria Corsa CX" (1996, inserted by the Guida '96 pass 2) duplicates 6880 Corsa CX Servizio Corse,
   which the 'vittoria corsa cx' override points at; merged into 6880 the same day (see cross-catalog-notes.md, Guida '96).
+
+## 1993 Bianchi era check — 2026-11-04 (user request)
+
+- Query: 1993 Bianchi links whose component years exclude 1993. 34 found; 5 are undated rows (Tange Levin CD, Mavic 192, Ukai
+  CR-700, Michelin Hi-Lite Supercomp H.D., Vittoria Flash M23), left as is.
+- Relinked (20 specs, one-off UPDATEs; the overrides were split into `{ to: 1992, id: old }, { from: 1993, id: new }` so other
+  catalogues keep their picks): MG/Bianchi Team Record brakes 578 BR-14RE (1995-2000) -> 7038 BR-02RE (Brakes 'campagnolo record'
+  range now 1990-93 -> 7038, 1994+ -> 578) and RD 4134 RD-01RE -> 4135 RD-11RE; Campagnolo 12-23(T) 8-speed cassettes x4 1186
+  Exa-Drive (1994-96) -> 1185 CS-8S Record steel; Gatorade Team Dura-Ace 8-speed 1205 CS-7400-8 -> 1208 CS-7401; Krono / Genius
+  Chorus FD 2286 FD-01FCH -> 7060 FD-11SCH and RD 4109 RD-01CH -> 7055 RD-11CH; SBX Veloce FD 2317 (1995-99) -> 7061 FD-01SVL;
+  Virata 105 crank / FD / RD 1782 / 2467 / 4455 (1055) -> 1783 / 2468 / 4456 (1056); Peregrine Deore LX top-pull FD 2491 -> 2492
+  FD-M561, RD 4484 -> 4485 RD-M560, hubs 3544 -> 3546 FH-M560; Grizzly XT hubs 3552 FH-M737 (1994-98) -> 3551 FH-M732 / HB-M730;
+  Project 7 XC-Comp RD 4783 RD-XC20 -> 9717 RD-XC01-GXB.
+- Widened year_to to 1993 (no 1993 sibling row): 5071 Mavic M 231 CD (1991), 5097 Open 4 CD (1991), 5503 Selle Italia Super Turbo
+  (1992), 2964 Campagnolo HS-01RE Record headset (1991).
+- Left: Krono "Campagnolo Chorus 8-speed Downtube shift levers" -> 5976 Chorus Friction graphite (1990-92); the DB has no 1993
+  Chorus down-tube lever row. Regression: all catalogues regenerated, link counts unchanged; 1993 still 195 links.

@@ -852,18 +852,18 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace sis 7': 2510, // Shimano FD-7400, Dura-Ace 7400
     // 1993 Bianchi. A comma-less Drivetrain cell fills both derailleurs.
     'campagnolo record 8 speed ergopower': 2306, // Campagnolo FD-01SRE, Record (91-94)
-    'campagnolo chorus 8 speed ergopower': 2286, // Campagnolo FD-01FCH, Chorus
-    'campagnolo chorus 8 speed downtube shift levers': 2286,
-    'campagnolo veloce': 2317, // Campagnolo Veloce
+    'campagnolo chorus 8 speed ergopower': [{ to: 1992, id: 2286 }, { from: 1993, id: 7060 }], // 1993 Bianchi era fix: FD-11SCH (was 2286 for every year)
+    'campagnolo chorus 8 speed downtube shift levers': [{ to: 1992, id: 2286 }, { from: 1993, id: 7060 }], // 1993 Bianchi era fix: FD-11SCH (was 2286 for every year)
+    'campagnolo veloce': [{ to: 1992, id: 2317 }, { from: 1993, id: 7061 }], // 1993 Bianchi era fix: FD-01SVL (was 2317 for every year)
     'shimano dura ace sti': 2511, // Shimano FD-7403, Dura-Ace 7400
     'shimano ultegra sti': 2479, // Shimano FD-6401-B / FD-6401-F, 600 Ultegra
-    'shimano 105 sti': 2467, // Shimano FD-1055, 105SC
+    'shimano 105 sti': [{ to: 1992, id: 2467 }, { from: 1993, id: 2468 }], // 1993 Bianchi era fix: FD-1056 (was 2467 for every year)
     'shimano rx100 gs sis': 2531, // Shimano FD-A550, RX100
     'shimano xtr': 2541, // Shimano FD-M900, XTR M900
     'shimano xtr top pull dual sis': 2540, // Shimano FD-M901, XTR M900 (top-pull)
     'shimano deore dx top pull dual sis': 2489, // Shimano FD-M651, Deore DX (top-pull)
     'shimano deore xt top pull dual sis': 2501, // Shimano FD-M735, Deore XT
-    'shimano deore lx top pull dual sis': 2491, // Shimano FD-M550, Deore LX
+    'shimano deore lx top pull dual sis': [{ to: 1992, id: 2491 }, { from: 1993, id: 2492 }], // 1993 Bianchi era fix: FD-M561 top-route (was 2491 for every year)
     // 1985 Raleigh (Sheldon Brown scan).
     'suntour "seven"': 2641, // SunTour Seven
     'shimano model 105': 2466, // Shimano FD-A105, 105 Golden Arrow (1983-86)
@@ -1218,20 +1218,20 @@ const COMPONENT_OVERRIDES = {
     'shimano 525 sis': 4519, // Shimano RD-L525, Light Action
     'shimano 532 sis': 4521, // Shimano RD-L532, Light Action
     // 1993 Bianchi.
-    'campagnolo record 8 speed ergopower': 4134, // Campagnolo RD-01RE, Record
-    'campagnolo chorus 8 speed ergopower': 4109, // Campagnolo RD-01CH, Chorus
-    'campagnolo chorus 8 speed downtube shift levers': 4109,
+    'campagnolo record 8 speed ergopower': [{ to: 1992, id: 4134 }, { from: 1993, id: 4135 }], // 1993 Bianchi era fix: RD-11RE (was 4134 for every year)
+    'campagnolo chorus 8 speed ergopower': [{ to: 1992, id: 4109 }, { from: 1993, id: 7055 }], // 1993 Bianchi era fix: RD-11CH (was 4109 for every year)
+    'campagnolo chorus 8 speed downtube shift levers': [{ to: 1992, id: 4109 }, { from: 1993, id: 7055 }], // 1993 Bianchi era fix: RD-11CH (was 4109 for every year)
     'campagnolo veloce': 4164, // Campagnolo RD-01VL, Veloce
     'shimano dura ace sti': 4505, // Shimano RD-7402, Dura-Ace (8sp)
     'shimano ultegra sti': 4467, // Shimano RD-6401, 600 Ultegra
-    'shimano 105 sti': 4455, // Shimano RD-1055, 105SC
+    'shimano 105 sti': [{ to: 1992, id: 4455 }, { from: 1993, id: 4456 }], // 1993 Bianchi era fix: RD-1056 (was 4455 for every year)
     'shimano rx100 gs sis': 4532, // Shimano RD-A550-GS / -SS, RX100 (was 4533 RD-A551-GS, 1994-97: a year late for the 1993 Eros)
     'shimano xtr': 4542, // Shimano RD-M900, XTR M900
     'shimano xtr top pull dual sis': 4542,
     'shimano deore dx top pull dual sis': 4480, // Shimano RD-M650, Deore DX (SGS)
     'shimano deore xt top pull dual sis': 4493, // Shimano RD-M735 SGS, Deore XT
-    'shimano deore lx top pull dual sis': 4484, // Shimano RD-M550 SGS, Deore LX
-    'suntour xc comp top pull powerflo': 4783, // SunTour RD-XC20-GXB, XC-Comp (GX)
+    'shimano deore lx top pull dual sis': [{ to: 1992, id: 4484 }, { from: 1993, id: 4485 }], // 1993 Bianchi era fix: RD-M560 (was 4484 for every year)
+    'suntour xc comp top pull powerflo': [{ to: 1992, id: 4783 }, { from: 1993, id: 9717 }], // 1993 Bianchi era fix: RD-XC01-GXB (was 4783 for every year)
     'suntour fs e top pull': 7951, // SunTour RD-FE00-GXB, FS-E ("Top Pull" describes the front only)
     // 1985 Raleigh (Sheldon Brown scan).
     'shimano model 105': 4452, // Shimano RD-A105, 105 Golden Arrow (1983-86)
@@ -1477,8 +1477,8 @@ const COMPONENT_OVERRIDES = {
     'shimano rx100': 3579, // Shimano FH-A550 / HB-A550-F, RX100
     'shimano xtr': 3581, // Shimano FH-M900, XTR M900
     'shimano dx': 3542, // Shimano FH-M650 / HB-M650-F, Deore DX
-    'shimano xt': 3552, // Shimano FH-M737, Deore XT M737
-    'shimano lx': 3544, // Shimano FH-M550, Deore LX
+    'shimano xt': [{ to: 1992, id: 3552 }, { from: 1993, id: 3551 }], // 1993 Bianchi era fix: FH-M732 / HB-M730; M737 hubs start 1994 (was 3552 for every year)
+    'shimano lx': [{ to: 1992, id: 3544 }, { from: 1993, id: 3546 }], // 1993 Bianchi era fix: FH-M560 (was 3544 for every year)
     alloy: null, // generic word; substring-hits "Roval by Maillard alloy rear hub"
     // 1985 Raleigh (Sheldon Brown scan).
     'sansin "gyro" precision sealed bearing alloy small flange qr': 3601, // Sunshine Gyro-Master
@@ -1781,7 +1781,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record': [
       { to: 1977, id: 573 }, // Campagnolo 2040, Record (standard reach, pre-CPSC)
       { from: 1978, to: 1986, id: 572 }, // Campagnolo 2040, Record (standard reach, post-CPSC)
-      { from: 1990, id: 578 }, // Campagnolo BR-14RE, Record (dual pivot with group name)
+      { from: 1990, to: 1993, id: 7038 }, // BR-02RE, Record (1992-93); 1993 Bianchi MG Team was on BR-14RE (1995-2000)
+      { from: 1994, id: 578 }, // Campagnolo BR-14RE, Record (dual pivot with group name)
     ],
     // 1974 Motobecane.
     'universal 61 center pull': 1081, // Universal Mod. 61
@@ -2268,7 +2269,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record 53 39t': 1482, // Campagnolo C-Record (1987-1994)
     'campagnolo chorus 53 39t': 1488, // Campagnolo FC-01CH, Chorus
     'campagnolo chorus 53 44t': 1488,
-    'shimano 105 53 39t': 1782, // Shimano FC-1055-SG, 105SC
+    'shimano 105 53 39t': [{ to: 1992, id: 1782 }, { from: 1993, id: 1783 }], // 1993 Bianchi era fix: FC-1056 (was 1782 for every year)
     'shimano dura ace 53 39t': 1820, // Shimano FC-7402, Dura-Ace
     'shimano ultegra 53 39t': 1790, // Shimano FC-6400, 600 Ultegra
     'shimano rx100 52 42 30t': 1840, // Shimano FC-A550-T, RX100 (triple)
@@ -3404,9 +3405,9 @@ const COMPONENT_OVERRIDES = {
     ],
     'shimano xtr 12 28t 8 speed': 7668, // 1993 Bianchi, from the Jul 1992 manual: Shimano CS-M900-8, XTR (Q 12-28T)
     // 1993 Bianchi ("cassette" noun stripped from the CSV).
-    'campagnolo 12 23t 8 speed': 1186, // Campagnolo Record Exa-Drive (8sp)
-    'campagnolo 12 23 8 speed': 1186,
-    'shimano dura ace 12 23t 8 speed': 1205, // Shimano CS-7400-8, Dura-Ace 7400 (Uniglide)
+    'campagnolo 12 23t 8 speed': [{ to: 1992, id: 1186 }, { from: 1993, id: 1185 }], // 1993 Bianchi era fix: CS-8S Record steel; Exa-Drive starts 1994 (was 1186 for every year)
+    'campagnolo 12 23 8 speed': [{ to: 1992, id: 1186 }, { from: 1993, id: 1185 }], // 1993 Bianchi era fix: CS-8S Record steel; Exa-Drive starts 1994 (was 1186 for every year)
+    'shimano dura ace 12 23t 8 speed': [{ to: 1992, id: 1205 }, { from: 1993, id: 1208 }], // 1993 Bianchi era fix: CS-7401 8-speed HG (was 1205 for every year)
     'suntour powerflo 11 28t 8 speed': 1220, // SunTour CS-AP20-S8, XC Comp
     'suntour powerflo 12 30t 7 speed': 1221, // SunTour CS-AP10-S7 / -K7, PowerFlo 7-speed (1992 catalogue)
     // 1993 Bianchi bare "Hyperglide" 8-speed values: each is on one bike only, and the
