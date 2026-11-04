@@ -1472,7 +1472,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo c record': 3241, // Campagnolo 322/101, C-Record
     'campagnolo new victory': 3281, // Campagnolo Victory 422 (low flange)
     'shimano dura ace': [{ from: 1984, to: 1989, id: 3560 }, { from: 1990, id: 3562 }], // HB-7400-R/F freewheel hub / FH-7403-HG Hyperglide
-    'shimano 105': [{ to: 1989, id: 3524 }, { from: 1990, id: 3527 }], // HB-1050 / FH-1055-HG 105SC
+    'shimano 105': [{ to: 1989, id: 3524 }, { from: 1990, to: 1992, id: 3527 }, { from: 1993, id: 7761 }], // HB-1050 / FH-1055-HG 105SC / FH-1056-HG 8-speed (1993 Bianchi Virata)
     'ofmega competizione pista': 3445, // Ofmega Super Competizione Track (high flange)
     // 1993 Bianchi (spoke counts stripped from the CSV).
     'campagnolo chorus': [{ from: 1987, to: 1987, id: 3249 }, { id: 3250 }], // Campagnolo FH-00CH / HB-00CH, Chorus; 1987 Peugeot (FR) Chorus: 722/101 (1987-91)
@@ -1517,6 +1517,7 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'shimano 600 ultegra 8 speed': 966, // 1992 Bianchi Virata: BR-6400 (user call 2026-11-04, as the 1990-91 Viratas; BR-6403 967 also fits)
     'shimano 105sc': [{ from: 1990, to: 1992, id: 960 }], // BR-1055-49; 1992 Bianchi Alfana (the 1056 group starts 1993)
     'shimano rx100': [{ from: 1989, to: 1993, id: 1007 }], // BR-A550-49 / -57; BR-A551 (8754) only from 1995
     // 1991 / 1992 Bianchi (JP) catalogues
