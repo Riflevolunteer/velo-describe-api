@@ -215,6 +215,10 @@ OPC-SC and RT / BT cranks, 4 No.66 and DZF cranks, SP-K, HP-G5 and OPC-A5 / A4.
 - New (3 rows, 1982-1983): DZF02-1B, DZF02-1E, DZFO-1R cottered steel cranks (ids from the DB, `title LIKE
   'Sugino DZF%'`).
 - Still not in any source on hand: Mighty Custom / Maxy II (TODO gap).
+- Duplicate of this source, nothing to ingest: https://bmxmuseum.com/reference/3329 ("1980's Sugino", "Sugino
+  brochures from early to mid '80's", credits equusbicycle.com/bike/sugino/) reposts the same four spreads as
+  150 px thumbnails only (`sugino_info.png`, `sugino_info_2..4.png`; no larger size on the server). Checked
+  2026-11-04; no rows changed.
 
 
 ### Bike-spec links made from Vol. 56 (2026-10-30)
