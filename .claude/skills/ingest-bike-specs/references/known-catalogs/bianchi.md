@@ -549,3 +549,52 @@
 - Existing overrides ranged: FD / RD 'shimano 105' now Golden Arrow to 1988, FD-1050 2462 / RD-1050 4449 for 1989 (Krono); Brake Levers 'shimano 105 aero' BL-1050 406 for 1987-89; Cranksets 'shimano 105 52 42t' FC-1050 1778 for 1987-89; FD / RD 'shimano ultegra' from 1988; Seat Posts 'campagnolo athena' C0R2 5742 for 1988-89; Cassettes 'shimano hyperglide silver 12 28t 7 speed' CS-M732 for 1989 (Equinox). Athena Synchro-2 shifters -> null (matcher took the 1992 Ergopower row). Super Mundialita stays on 5497 (existing 1985-90 decision).
 - Left unlinked: SunTour XCE-4050 (only 1992 Dia-Compe XCE rows, dated "1980-1992"), SunTour / Shimano barcons, GPX FD and shifters (B / C variants), Croce d'Aune Synchro-2, Sport LX levers / pedals, Quattro derailleurs, Modolo / Ofmega / Gipiemme Quattro, Dia-Compe 984 / 250S / BL-08, Viscount, SR / KA posts and stems, H.K. / H.T.I. / SR pedals, Vittoria / IRC / C.S.T. tyres, Sedisport 270, Tange TH headsets, Ukai 21A, Campagnolo Omega Super.
 - Regression: all other catalogues regenerated with the old and new generator; SQL byte-identical.
+
+## 1991 Bianchi (JP) — `1991_bianchi_spec.csv` (14 bikes, 247 specs, 123 linked)
+
+- Source (2026-11-04): https://2velo.com/bianchi-bicycle-catalog-90s/ `1991-catalog-p0111` .. `p1111.jpg` (11 scans, 299-400 px
+  wide; the same files are on labibleduvelocataloguesbianchi.blogspot.com/p/bianchi-1991.html). Japanese catalogue, yen prices,
+  back page "ビアンキ日本総代理店 株式会社エヌビーエス" (NBS Co., Osaka); `data_source` 358, country JP. p01 cover (road list), p02-p06
+  road bikes two per page with SIZE / COMPONENT / WEIGHT strips (the lower bike's strip is cut off on most scans; p04 is missing),
+  p07 geometry, **p08-p09 full spec table** (model, sizes and colours, frame, fork, brakeset, bar and stem, crank, pedals /
+  derailleurs and shifters, saddle and post, hubs, freewheel and chain, tyres and rims, misc, weight), p10-p11 clothing and
+  accessories. The table was read from 3.5-4x crops (a Swift CoreGraphics crop tool in the session scratchpad; `sips` crops from
+  the centre); katakana names transliterated.
+- Bikes: road Proto (Columbus MAX, C-Record), X-4 (TSX, C-Record), Mondiale (SLX, Croce d'Aune), Super Leggera (SLX, Chorus), Giro
+  (SLX, Athena), Virata (Super Set-2 Tange Prestige, Ultegra), Alfana (Tange Prestige, 105SC 1055), Trofeo (Cromor, SunTour Quattro
+  with Ofmega / Modolo Quattro); MTB Signature (MAX, Deore XT), Aranessa (Cromor-OR, 46 cm, Deore XT Rapidfire), Grizzly (Tange
+  Prestige, SunTour XC-Pro, Ritchey Logic fork), Peregrine (Deore DX), Sika (SunTour XC-LTD), Osprey (Deore LX).
+- **Left out (hybrid):** Equinox and Axis, 46-55 cm, 700x38C Bianchi Dakar tyres, Sakae FX-Hybrid / EX-Cross bars, top-pull
+  thumb shifters: the flat-bar cross-terrain models held out of 1990 (the 1989 drop-bar versions were loaded).
+- Bar / stem order: the table prints the bar first ("TTT コンペティション / ビアンキ" = TTT Competizione bar, Bianchi stem;
+  "Sakae MTB-227 / Ritchey Force Comp"). Unreadable or ambiguous text kept generic, not guessed: X-4 bar "TTT" (reads "S.レゲロ"),
+  Mondiale / Super Leggera / Giro freewheel "Regina 13-23T 7-speed" (the model reads like "RL SY90"), Signature rim "Araya, super
+  hard" (NEW RM-? number unreadable), Trofeo chain "SunTour", Trofeo saddle "Selle Italia". Prices in Extras.
+- Overrides added (keys are this catalogue's exact strings): C-Record 53/42T crank -> 1482 (1987-94; the substring hit was
+  1483, 1985-86); "... aero levers" brakes -> 560 Delta C-Record, 565 Chorus Monoplaner, 558 D500 Athena, 567 Delta Croce d'Aune;
+  1055SG crank 1782, Ultegra crank 1790 FC-6400; 105SC (1055) brakes 960 / FD 2467 / RD 4455 / hubs 3527, pedals 1055 3955 and
+  PD-1056 3956; Deore XT crank 7578 FC-M730-SG (no FC-M735 row), XT U-2 brake 984 BR-M733, XT hubs 3551; DX brakes 7660 / hubs 3542;
+  LX crank 1807 / brakes 7582 / hubs 3544; SunTour XC-Pro brakes 1056 / crank 1998 / FD 2659 / shifters 6311, XC-LTD crank 1997 /
+  FD 2658 / RD 4784 / shifters 6310; Sakae MTP-126 -> 9755; CS-HG70 7567, CS-M732 7641, CN-HG70 7568; Vittoria Super Criterium
+  -> 6884; Trofeo "Ofmega Quattro" crank -> 1705 Ofmega Vantage (Bianchi Quattro version, 1980-90). Ranges widened: Chorus Synchro 2
+  shifters 7027 to 1989-91, Campagnolo Athena hubs 3237 for 1991-92 (3236 D300 stays 1989).
+- Left unlinked: Aranessa "Shimano Deore XT" brakes (BR-M732 1989-91 or BR-M734 1991-93), 105SC SIS shifters (SL-1055 BCAI / FCAI),
+  Deore DX crank (no FC-M650 row), Deore XT "Competition" pedals, SunTour Quattro FD / RD, Modolo Quattro brakes, Campagnolo Sigma
+  and Omega XL rims (only Strada / clincher rows), Vittoria Nuovo Pro (only the 1984-88 Nuovo Pro 260 and 1996 R.T. rows).
+
+## 1992 Bianchi (JP) — `1992_bianchi_spec.csv` (8 bikes, 96 specs, 30 linked)
+
+- Source (2026-11-04): https://2velo.com/bianchi-bicycle-catalog-90s/ `1992-catalog-p1711` .. `p2311.jpg` (7 scans, 400 px; the
+  labibleduvelo copy adds one accessory page), printed pp. 17-23 of a larger Japanese catalogue (yen); `data_source` 359, country JP.
+  p17 "'92 Road" opener, p18-p21 road bikes with English spec blocks (PRICE / WEIGHT / SIZE / FRAME-FORK / HANDLE BAR-STEM /
+  COMPONENT / TIRE-RIM / SADDLE-POST, read from 4x crops), p22-p23 clothing and accessories. No MTB pages survive.
+- Bikes: Proto, X-4, Mondiale, Super Leggera, Giro, Virata (600 Ultegra 8-speed), Alfana (105SC), Premio (new, RX100). The
+  "COMPONENT" group name is fanned to Brakes, Crankset and Derailleurs. **Skipped:** the bike at the top of p20 (name cut off;
+  Superset-2 Tange Prestige, 600 Ultegra 8-speed Dual Control, Vittoria Nuovo Pro tubular / Araya Pro Staff 340, Avocet Racing-I
+  white, about ¥186,000). Prices, the X-4 and Virata weights and Premio sizes were too blurred to read; Sakae bar / stem codes
+  and the Premio Viscount saddle model left generic.
+- Era note: the catalogue still says "Campagnolo C-Record" in 1992, the year Campagnolo renamed it Record (RD-01RE 4134); the C-Record
+  parts link to the 1990-91 C-Record rows (4133 R010, 560 Delta, 1482) as printed, with no global range change.
+  "Vittoria Criterium" (Mondiale) -> 6884 Criterium Super, ranged to 1992 (9061 Criterium ends 1981).
+- Found while checking: 10569 "Vittoria Corsa CX" (1996, inserted by the Guida '96 pass 2) duplicates 6880 Corsa CX Servizio Corse,
+  which the 'vittoria corsa cx' override points at; a merge candidate.
