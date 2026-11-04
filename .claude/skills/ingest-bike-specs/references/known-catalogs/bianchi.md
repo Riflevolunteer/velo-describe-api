@@ -630,3 +630,14 @@
   links, 1992 42.
 - 1993 Virata "Shimano 105" hubs 3527 FH-1055-HG (7-speed) -> 7761 FH-1056-HG (8-speed, matching its 1056 group); Hubs override 'shimano 105'
   now 1990-92 -> 3527, 1993+ -> 7761 (its other users are 1987 bikes on 3524). bike_spec 1534 relinked by UPDATE.
+
+## 1992 Bianchi era check — 2026-11-04 (user request)
+
+- 11 links pointed at 1988-91 Campagnolo rows; relinked to the 1992-range rows (one-off UPDATEs) and the overrides ranged so 1991
+  and earlier keep their ids: Super Leggera Chorus crank 1487 -> 1488 FC-01CH, FD 2286 -> 7040 FD-01SCH (Chorus RS), RD 4108 -> 4109
+  RD-01CH; Giro Athena FD 2281 -> 7044 FD-01SAT, RD 4092 -> 4091 RD-01AT (Athena RS); Proto / X-4 "C-Record" FD 2283 -> 2306
+  FD-01SRE, RD 4133 -> 4134 RD-01RE, seat post 5737 -> 7037 SP-RE (Campagnolo renamed C-Record to Record for 1992; the Japanese
+  catalogue kept the old name). New override entries carry explicit pre-1992 ranges (FD Athena 2281, FD C-Record 2283, RD Athena
+  4092, crank Chorus 1487) because a range miss means "no link", not a matcher fall-through.
+- Check: generated SQL for every catalogue diffed old vs new generator; only 1992 changed (the 11 links). 1992 now has no
+  off-era links.

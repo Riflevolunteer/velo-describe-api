@@ -581,6 +581,8 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'campagnolo c record': [{ to: 1991, id: 2283 }, { from: 1992, to: 1994, id: 2306 }], // C-Record (1985-91) / FD-01SRE, Record (C-Record renamed Record for 1992);/ 1992 Bianchi (JP): 1992-range row
+    'campagnolo athena': [{ to: 1991, id: 2281 }, { from: 1992, to: 1994, id: 7044 }], // Athena (1988-91) / FD-01SAT, Athena RS;/ 1992 Bianchi (JP): 1992-range row
     'shimano 600 ultegra 8 speed': 2479, // 1992 Bianchi Virata: FD-6401 (8-speed generation, 1992-97)
     'shimano 105sc': [{ from: 1990, to: 1992, id: 2467 }, { from: 1993, id: 2468 }], // FD-1055 to 1992, FD-1056 from 1993
     'shimano rx100': [{ from: 1989, to: 1993, id: 2531 }], // FD-A550-B / -F; FD-A551 (8750) only from 1994
@@ -761,7 +763,7 @@ const COMPONENT_OVERRIDES = {
     'suntour x 1 top pull': [{ from: 1990, to: 1990, id: 2655 }], // X-1 Chroma (1990)
     'suntour radius': [{ from: 1990, to: 1992, id: 2640 }], // FD-RA00-SSH clamp-on (Eros frame has no braze-on)
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
-    'campagnolo chorus': 2286, // Campagnolo FD-01FCH, Chorus (1987-91)
+    'campagnolo chorus': [{ to: 1991, id: 2286 }, { from: 1992, to: 1994, id: 7040 }], // FD-01FCH, Chorus (1987-91) / FD-01SCH Chorus RS (1992 Bianchi JP)
     'shimano 600 ultegra': 2478, // Shimano FD-6400, 600 Ultegra
     // 1982 Bianchi US racing brochure (saarf.london).
     'shimano 600 gs': 7435, // Shimano EC-600 / FD-6100, Shimano-600 (1977-82; the 600 GS group front)
@@ -897,6 +899,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    'campagnolo athena': [{ to: 1991, id: 4092 }, { from: 1992, to: 1992, id: 4091 }], // Athena (1988-91) / Athena RS RD-01AT;/ 1992 Bianchi (JP): 1992-range row
     'shimano 600 ultegra 8 speed': 4467, // 1992 Bianchi Virata: RD-6401 (8-speed generation, 1992-97)
     'shimano 105sc': [{ from: 1990, to: 1992, id: 4455 }, { from: 1993, id: 4456 }], // RD-1055 to 1992, RD-1056 from 1993
     'shimano rx100': [{ from: 1989, to: 1993, id: 4532 }], // RD-A550-GS / -SS; RD-A551 (4533) only from 1994
@@ -1086,7 +1089,7 @@ const COMPONENT_OVERRIDES = {
     'suntour x 1': [{ from: 1990, to: 1992, id: 4776 }], // RD-X101-GXB; matcher took the 1989 X-1 Chroma
     'suntour radius': [{ from: 1990, to: 1992, id: 4753 }], // RD-RA00-SSB
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
-    'campagnolo chorus': 4108, // Campagnolo Chorus (short cage), 1988-91
+    'campagnolo chorus': [{ to: 1991, id: 4108 }, { from: 1992, to: 1992, id: 4109 }], // Chorus (short cage), 1988-91 / RD-01CH (1992 Bianchi JP)
     'shimano 600 ultegra': 4466, // Shimano RD-6400, 600 Ultegra
     // 1982 Bianchi US racing brochure (saarf.london).
     'shimano 600 gs': 7110, // Shimano DC-210 / RD-6101, 600 GS (1975-82)
@@ -1130,7 +1133,7 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
     // Ranged on the DB rows (2026-10-09, 1989 De Rosa): first gen 1985-86, A010 2nd gen 1987-89, R010 1990-91. The 1987 Bianchi
     // Mondiale / X4 rows had been left on the first gen; fixed by one-off UPDATE.
-    'campagnolo c record': [{ to: 1986, id: 4096 }, { from: 1987, to: 1989, id: 4098 }, { from: 1990, id: 4133 }],
+    'campagnolo c record': [{ to: 1986, id: 4096 }, { from: 1987, to: 1989, id: 4098 }, { from: 1990, to: 1991, id: 4133 }, { from: 1992, to: 1992, id: 4134 }], // 1992: RD-01RE, Record (1992 Bianchi JP)
     // SunTour AccuShift leaflets (c. 1987): pin retitled 1987 Bianchi links
     'suntour cyclone 7000': 4740, // SunTour RD-CL10-SS, Cyclone 7000
     'suntour alpha 5000': 4721, // SunTour RD-5000-SS, alpha-5000
@@ -1988,6 +1991,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'campagnolo chorus': [{ to: 1991, id: 1487 }, { from: 1992, to: 1996, id: 1488 }], // Chorus (1988-91) / FC-01CH;/ 1992 Bianchi (JP): 1992-range row
     'shimano 600 ultegra 8 speed': 1790, // 1992 Bianchi Virata: FC-6400 (1988-99)
     'shimano 105sc': [{ from: 1990, to: 1992, id: 1782 }, { from: 1993, id: 1783 }], // FC-1055-SG to 1992, FC-1056 from 1993
     'shimano rx100': [{ from: 1989, to: 1993, id: 1838 }], // FC-A550-SG / -BP; FC-A551 (8751) only from 1994
@@ -3248,7 +3252,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo nuovo record fluted': 5748, // Campagnolo 1044, Nuovo Record (Superlegerro)
     'campagnolo fluted': 5748,
     // 1987 Bianchi (two lengths in the DB; the common 130mm).
-    'campagnolo c record': 5737, // Campagnolo C-Record (Aero type, 130mm)
+    'campagnolo c record': [{ to: 1991, id: 5737 }, { from: 1992, to: 1995, id: 7037 }], // C-Record (Aero type, 130mm) / SP-RE Record (1992 Bianchi JP)
     // 1985 Raleigh (Sheldon Brown scan).
     'sugino sp kc alloy micro adjust': 5928, // Sugino SP-KC
     'sugino sp kc 230mm alloy micro adjust': 5928, // Sugino SP-KC
