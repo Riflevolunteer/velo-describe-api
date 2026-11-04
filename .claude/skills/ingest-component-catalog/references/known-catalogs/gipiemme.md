@@ -311,3 +311,26 @@
   8262022 / 25 / 26, 826103; cranks 8249037 (Mod. 6000), 8241041 / 8241042 (MTB triples), 8249036 (Mod. 2010), 8249035
   (Mod. 2011), 8249032, 824361 (Bimbo); BBs 8922003 / 8922012; posts 822 / 819. Out of scope: bags, computers, trainer,
   cable guides, guards, skewers, seat clamps and bolts, pulleys, hanger, spokes, grease.
+
+## Gipiemme "Road & Off-road '97" catalogue (8 scans, 1997, disraeligears.co.uk), `data_source` 356
+
+- Label `Gipiemme Road & Off-road '97 catalogue (1997)`. Source:
+  https://www.disraeligears.co.uk/site/gipiemme_-_road_off-road_97.html
+  (`00_main_images/gipiemme_-_road_off-road_97_scan_00N_main_image.jpg`, 1560 x 2227; IT/EN). Cover dated '97; back cover
+  Gipiemme, Via Balbi 13, Loria (Treviso), www.tradenet.it/isca: the ISCA era, after Catalogo No. 7 (c. 1991). Scans:
+  1 cover, 2-3 Tecno wheels, 4 Tecno Lenticolare / XR / Radius, 5 Zenith / Mirage, 6 Penta, 7 Pluma Evolution / Pluma /
+  Plus, 8 Sintra, colour/cover table and back cover. Wheels, rims and saddles only; no groupset parts.
+- Rows inserted (14, 1997-1997, brand 21, no group): Wheel(sets) 10474 Tecno 716 PRO, 10475 Tecno C 716 PRO (carbon),
+  10476 Tecno 416, 10477 Tecno M 724, 10478 Tecno M 416; Rims 10479 Tecno XR, 10480 Tecno Radius, 10481 Tecno Zenith,
+  10482 Tecno Mirage; Saddles 10483 Penta (Dual Shock Absorber, "New Project"), 10484 Pluma Evolution, 10485 Pluma
+  (both "100% titanio", same printed spec 240 x 132mm 155g; kept as two rows, user decision), 10486 Plus, 10487 Sintra
+  ("Active Suspension"). Colour/cover versions (Kevlar Design 2 / 3, Joker, Design P / DP, Skay) are in the descriptions,
+  not separate rows.
+- Rows updated (2, `source_ref` -> 356):
+  - 5029 "Gipiemme Tecno 724" (velobase, bare): category Rims -> Wheel(sets) (the catalogue sells it as a complete
+    road wheel, no separate rim); **`year_from` moved later, 1990 -> 1997** (revert: 1990-1990, category 16), because the
+    catalogue calls it a "nuova ruota" and 1990 was a velobase decade bucket; description rewritten with the spec.
+  - 9860 lenticular disc wheel (1988 catalogue row): `year_to` 1988 -> 1997, read as the same wheel continuing as the
+    "Tecno Lenticolare" (26 / 28in, tubular or clincher, 850g; stiffer Carbon Plus 950g). Both editions named in the
+    description because the specs differ. Judgement call; the alternative was a separate 1997 row.
+- Left alone: 6967 Tecno C946 (1995, velobase), not in this catalogue. No bike_spec links or overrides on any row touched.
