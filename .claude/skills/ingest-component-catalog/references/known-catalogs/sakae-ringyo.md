@@ -339,3 +339,24 @@
   310 / 200).
 - Left: 6661 MTS-101 stem and 5849 MTE-100 post (different models); DuoTrack fork,
   Litage forks, AS-30BL / AC-51BL toe clips and straps (no category).
+
+## Sakae Ringyo (SR) catalogue excerpts, Sep 1983 p.12 and mid-1980s p.19 (bmxmuseum.com), data_source 355
+
+- Source: https://bmxmuseum.com/reference/4373 ("SR MTP-100 & MTP-110 Pedals 'Speed
+  Traps'"), 2 images: (1) Sep 1983 SR catalogue p.12, "Pedals / Mountain Bike Pedals"
+  (MTP-100 and MTP-110 both marked NEW, German safety approval "under application");
+  (2) an undated mid-1980s SR catalogue p.19, a Mountain Bike / BMX series chart showing
+  pedal codes only. Label "Sakae Ringyo (SR) catalogue excerpts, Sep 1983 and mid-1980s
+  (bmxmuseum.com)".
+- First appearance of the MTP mountain bike pedals: none of No. 17, P-5, No. 18 or P-7 has
+  an MTP code. Before this pass the only SR MTP rows in the DB were from the 1993 range.
+- New (2 rows, 1983-1985; year_to 1985 is the user's reading of "mid-'80s" for the
+  undated chart): 10472 MTP-100 (sealed bearings) and 10473 MTP-110 (cup and cone). Both
+  have a light alloy body and interchangeable cage, a Cr-Mo spindle, BC 9/16 x 20T or
+  UNF 1/2 x 20T thread, 90 x 110 mm foot size and weigh 490 g. Riders call them "Speed
+  Traps" (noted in both descriptions). The chart lists them as Super Deluxe and Deluxe.
+- Not inserted (user decision; codes and photos only, undated): MP-470 (MTB Standard),
+  MP-131 (BMX Competition Pro), MP-130 (BMX Competition), MP-468 (BMX Popular). Possible
+  match, not merged: MP-468 and row 8245 SP-468 (1982, one-piece pedal with reflector,
+  64 x 95 mm, 410 g) could be the same pedal under a new number; no specs to check.
+- No bike_spec links or overrides affected.
