@@ -3731,6 +3731,8 @@ const COMPONENT_OVERRIDES = {
     'rigida 1320 700c black varnished spokes': [{ from: 1987, to: 1987, id: 9895 }],
     'rigida 700c 1320 alloy': [{ from: 1986, to: 1986, id: 9895 }],
     'rigida 700c alloy 1320': [{ from: 1986, to: 1986, id: 9895 }],
+    // 1991-92 Bianchi: Campagnolo Omega XL, P0161 tubular / P0162 clincher.
+    'campagnolo omega xl': [{ from: 1991, to: 1992, id: 4958 }],
     'mavic e alloy 700c stainless steel spokes': [{ from: 1986, to: 1986, id: 5087 }], // 1986 Peugeot (US): "Mavic E" read as Module E (year_to 1984 -> 1986)
     'weinmann 116 alloy': [{ from: 1986, to: 1986, id: 4877 }], // 1986 Raleigh: Alesa 116 (Alesa is Weinmann's rim brand; row was undated, set 1986)
     'ukai 21a super hard anodized': [{ from: 1989, to: 1989, id: 5196 }], // 1989 Bianchi Equinox: Ukai 21A (row was undated, set 1989; retitled from "Ukai 21A (27 x 1)", the Equinox runs 700 x 35C)
