@@ -341,3 +341,35 @@
   Matched by spec to 9869 (Isca No. 7 code 815591, road 7-speed index; user decision). Old title "Gipiemme 815591,
   road 7-speed index"; now "Gipiemme 815591, Exploit Bagarre (road 7-speed index)", 1991-1996. 4263 Exploit and 4258
   BA 801 unchanged. The guide's other Gipiemme rows are in cross-catalog-notes.md (Guida '96 pass 1).
+
+## SRC Group Inc. 1983 General Catalogue, Gipiemme pages (6 scans, 1983, classicrendezvous.com), `data_source` 361
+
+- Source: https://classicrendezvous.com/wp-content/uploads/2023/05/SRC.pdf (6-page scan, no text layer, found on the
+  Classic Rendezvous Gipiemme page 2026-11-05). SRC Group Inc., 530 N.W. 9th Ave, Portland, Oregon (US importer, est. 1971);
+  country US. Gipiemme is on catalogue pp. 5 (PDF 2), 6 (PDF 3), 15 (PDF 4) and tools on 23-24 (PDF 5-6, VAR / Gipiemme
+  frame-milling tools, out of scope). The same page also offers Alpina spokes and an Everest chain (other brands, not
+  loaded). Prices are in the catalogue but not stored.
+- Not the "1982 catalogue" on the same page: its two scans (`GPM_2_1982.jpg`, `GPM_3_1982.jpg`: 800AE / 800CC derailleur sets,
+  870 BC levers, 906 freewheels) carry AE / SE parts that the DB dates 1986-87 (9515, 9517), so they most likely duplicate
+  `data_source` 270. They confirm that the 800CC set is 801 CC rear / 802 DD front / 870 DS levers (4260 / 2369).
+- Listed (Gipiemme numbering of the late 1970s binder, 202, still in use in 1983): BB 600140 Special, 600122 triple,
+  600121 track; headset 600180 Cronospecial; pedals 500154 Cronospecial (new monoblock, spindle leans 15% more); cranksets
+  600100 Special road (170mm, 42/52 British BB), 800100 Cronosprint (new aero, long-web spider, sold with 600140 and 42/52),
+  600101 track, 600100/3 triple (36/42/52), 600100/T tandem triple; chainrings 600103 (28-36T), 600108 (42-49), 600107
+  (50-54), 600114 track (44-54), 600116 Cronosprint superlight (52, 53); hubs 600160 Cronospecial road (low flange, 5 or 6
+  speed, 28 / 32 / 36 holes) and 600162 Special track.
+- Rows inserted (12, 1983-1983, `source_ref` 361): 10816 Special 600140 (Strada), 10817 Special 600122 (Triplo), 10818
+  Special 600121 (Pista), 10819 Crono Special 600180 headset, 10820 Crono Sprint 800100, 10821 Special 600100/T (Tandem
+  Triple), 10822 / 10823 / 10824 Special chainrings 600103 / 600108 / 600107, 10825 Special 600114 (Pista), 10826 Crono
+  Sprint 600116, 10827 Special 600162 (Pista) hub.
+- Rows updated (4, `source_ref` -> 361): 1595 Special 600100 (Strada) `year_to` 1978 -> 1983; 1598 Special Triplo
+  `year_to` 1980 -> 1983 and description (600100/3, 36/42/52T, with 600122 BB; old description was the bare title); 3747
+  Cronospecial pedals description (500154 in 1983, monoblock body; old `source_ref` 287); 3352 Special hubs 600160 years NULL
+  -> 1970-1983 (1970 is the binder's decade bucket) and description (the 1983 catalogue calls 600160 the Cronospecial hub).
+- Possible merges, not made: 10820 800100 may be the same crankset as 1589 Crono Sprint 100 CC (1982-86; 800CC set, 100CC from
+  the Oct 1984 catalogue); 10819 600180 may be the predecessor of 9137 Crono Special headset 500AA (1984-88). Different part
+  numbers and no page that equates them, so kept apart.
+- Bike-spec links added through generator overrides (Cranksets): 12900 1982 Battaglin Giro d'Italia "Gipiemme Special" ->
+  1595; 6622 1982 Bianchi Nuovo Touring "Gipiemme triple" -> 1598 (judgement call); 6531 1981 Bianchi Rekord 748 "Gipiemme
+  Corsa 42/52, Bianchi complete" -> 1595 (weakest). Left unlinked: the three 1982 Battaglin "Cronospecial / Special" pedals
+  (explicit null, the cell names two parts; 3747 if reversed).

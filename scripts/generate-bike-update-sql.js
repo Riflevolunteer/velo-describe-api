@@ -1992,6 +1992,10 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // 2026-11-05 SRC Group 1983 catalogue (data_source 361): 600100 Special road crankset (42/52, 170mm) and 600100/3 Special triple still listed in 1983, so 1595 / 1598 reach 1983.
+    'gipiemme special': [{ from: 1982, to: 1983, id: 1595 }], // 1982 Battaglin Giro d'Italia: Special 600100 (Strada)
+    'gipiemme triple': [{ from: 1982, to: 1983, id: 1598 }], // 1982 Bianchi Nuovo Touring: Special 600100/3 triple (judgement call: the only Gipiemme triple on sale in 1982-83)
+    'gipiemme corsa 42 52 bianchi complete': [{ from: 1981, to: 1981, id: 1595 }], // 1981 Bianchi Rekord 748: 600100 comes with 42/52 rings (weakest of the three; "Corsa" is not a Gipiemme name)
     'campagnolo chorus': [{ to: 1991, id: 1487 }, { from: 1992, to: 1996, id: 1488 }], // Chorus (1988-91) / FC-01CH;/ 1992 Bianchi (JP): 1992-range row
     'shimano 600 ultegra 8 speed': 1790, // 1992 Bianchi Virata: FC-6400 (1988-99)
     'shimano 105sc': [{ from: 1990, to: 1992, id: 1782 }, { from: 1993, id: 1783 }], // FC-1055-SG to 1992, FC-1056 from 1993
