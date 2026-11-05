@@ -1,0 +1,343 @@
+# Gipiemme catalogs processed so far
+
+## Gipiemme catalogue binder, "Special" and "Dual-Sprint" lines (37 scans, 1970s, VeloBase archive)
+
+- `data_source` 202, label `Gipiemme catalogue binder, "Special" and
+  "Dual-Sprint" lines (1970s)`. Source: velobase.com/Pages/Resources/CatalogScans.aspx
+  `Gipiemme/Gipiemme.zip` (37 JPGs, `Scan10035-10038`, `10047-10050`,
+  `10063-10093` with gaps, `Scan10081` lower-case). Trilingual
+  Italian/English/German loose-leaf binder, Gipiemme S.R.L., Camisano Vicentino
+  (Vicenza), tel 0444-70855 / 70518, capital 200,000,000 lire. **Undated;**
+  VeloBase labels it "70's era". Specs and exploded parts lists only: no
+  weights, no prices.
+- **Pages are missing from this set** (gaps in the file numbering): there are no
+  derailleurs, brakes, levers or shifters, which the full binder should hold.
+- Two lines: "Gipiemme Special" (Art. 600xxx, blue panels) and "Gipiemme
+  Dual-Sprint" (Art. 700xxx, yellow panels). Listed: cranksets with BB 600100,
+  600100/M (pantographed), 600101 (track), 600100/C (cyclo-cross, side plates),
+  700100, 700135 (mini, Z 35/42, 145 mm); crankpin assemblies 600120 / 700120;
+  pedals 600154 (superlight road), 600155 (track), 700156 / 700157 (steel road /
+  track), 700158 / 700158/A (white / black alloy); hubs 600160 and 700160
+  (small flange, 32 holes, 100/125 mm, quick releases 480-483); headsets 600168 and
+  700168; seat post 700116/2; fork ends 600222 / 600223 / 600225; braze-on set
+  700115; tools 1401-1414; grease 700612-700618. Out of scope: fork ends,
+  braze-ons, tools, grease, frame bolts and sockets.
+- Rows updated (13, description only, `source_ref` 202, no years changed): 1595
+  Special 600100, 1596 Special 600100/M, 1593 Special 600101 (Pista) (2 bike
+  specs linked), 1592 Dual Sprint crank (700100), 66 Special BB (600120), 65
+  "Sprint" BB in the Dual Sprint group (700120), 3752 Special pedals (600154),
+  3751 Special (Pista) pedals (600155), 3750 Dual Sprint pedals (700156-158; 3 bike
+  specs linked), 3352 Special hubs (600160), 3350 Dual Sprint hubs (700160), 3010
+  'Special' Strada headset (600168), 5791 Special seat post (700116/2). The DB's
+  existing weights were kept (580 g, 335 g, 350 g).
+- Rows inserted (2, 1970-1980, `source_ref` 202): 8825 Special 600100/C
+  (Ciclocross), group 29; 8826 Dual Sprint 700135 (Mini), group 28. Years are the
+  decade bucket the existing Special / Dual Sprint rows use.
+- Left alone, by choice:
+  - 3353 "Sprint" hubs (525 g, 2 bike specs) may be the 700160 hub under its
+    shorter name, but "Sprint" (group 126) and "Dual Sprint" (group 28) are
+    separate groups in the DB and nothing in the binder decides it.
+  - 3012 "Sprint" headset (1980, group 126) may be 700168, so no Dual-Sprint
+    headset row was added.
+  - 3011 "Special (?), Special (Strada)" (97 g, 1980) and 3010 look like two
+    rows for the same 600168 headset; not independently attested, a possible
+    merge for later.
+  - 3351 / 3008 (Special Pista hub and headset, referenced by
+    `COMPONENT_OVERRIDES`): no page of this binder shows them.
+  - The Crono Special, Crono Sprint, Azzurra / Azzurro and White Laser lines are
+    all newer than this binder.
+- Unresolved: a date for the binder; the missing derailleur, brake, lever and shifter
+  pages (the other Gipiemme sources named in the VeloBase index, "1982
+  Catalog", "1980's era brochures" and "Catalogs & Ads 1978-1984", were not
+  looked at).
+
+## Gipiemme freewheel and "Cronospecial" pedal brochures (4 scans, c. 1982-83, equusbicycle.com)
+
+- `data_source` 203, label `Gipiemme freewheel and Cronospecial pedal brochures
+  (c. 1982-83)`. Source: http://equusbicycle.com/bike/gipiemme/ (the whole
+  page is four images: `images/01gipiemmefreewheel.jpg`,
+  `02gipiemmefreewheel.jpg`, `01gipiemmepedal.jpg`, `02gipiemmepedal.jpg`,
+  1200 px). Gipiemme S.R.L., via XX Settembre 60, Camisano Vicentino. **Undated;**
+  equus says "early to mid 1980's". The pedal leaflet announces the Multiasse as
+  a "1983 world-wide novelty" that is "not yet on sale", so c. 1982-83 was used.
+  It is **not** the 1982 catalogue, and holds no derailleurs, brakes or levers.
+- Freewheel brochure "Ruote libere / Freewheel": light-alloy "Cronospecial"
+  907 AS (7-speed), 906 AS and 906 A (6), 905 A (5), and steel "Cronosprint"
+  907 CS, 906 CS, 906 C, 905 C, with tooth ranges, spacers 941-946 and tool 910.
+  Narrow racing chains (max 7.2 mm) for the 907 and 906 S versions, regular
+  chains for 906 A / C and 905. Pedal leaflet: the "Cronospecial" road/track
+  set, and the patented "Multiasse" eccentric axle (0-5 mm, +/-2.5 mm).
+- Rows updated (4, `source_ref` 203): 2105 Crono Special (906AS) and 2106 (907AS)
+  (descriptions, 203 g and 195 g kept, years 1982 unchanged), 3747 Cronospecial
+  pedals (description), 3748 Cronospecial Multiasse (**1982 -> 1983-1983**, from the
+  "1983 novelty, not yet on sale" text).
+- Rows inserted (6, 1982-1983, `source_ref` 203): 8827 Crono Special 906 A and
+  8828 905 A (group 27); 8829 Crono Sprint 907 CS, 8830 906 CS, 8831 906 C, 8832
+  905 C (group 85). The 1982-1983 span covers the leaflet's uncertain print year.
+- Left alone: 2107 "Crono Sprint (gold)" and 2108 "(silver)" freewheels, which
+  are finishes in velobase and cannot be tied to a steel code; 3749 Cronosprint
+  pedals (not in the leaflet).
+- Still unresolved, and why: the derailleurs, brakes and levers (about 30 bare
+  Gipiemme rows) have no source. The other two Gipiemme entries in VeloBase's
+  index are velo-pages albums: "Gipiemme 1982 Catalog" (album
+  `g2_itemId=1483`, page items 1505-1546, the 2020 Wayback copy only has
+  thumbnails of about 5 KB) and "Catalogs & Ads 1978-1984" (`g2_itemId=65`).
+  velo-pages.com is down site-wide, and on 2026-10-18 the Wayback Machine itself
+  answered "Temporarily Offline", so full-size scans could not be checked. Retry
+  the CDX search for images over about 15 KB in items 1505-1546 when Wayback is
+  back.
+
+## Gipiemme "Gruppi completi e componenti" catalogue (9 scans, October 1984, disraeligears.co.uk)
+
+- `data_source` 269, label `Gipiemme catalogue, complete groups and components (Oct 1984)`, country IT. Source:
+  https://www.disraeligears.co.uk/site/gipiemme_-_catalogue_1984.html (scans at
+  `00_main_images/gipiemme_catalogue_1984_-_<name>_main_image.jpg`: front_cover, section_divider, page_g1..g6,
+  rear_cover; 1560 x 1072 landscape; only the cover's full-size link is in the page HTML, the rest follow the same
+  pattern). Gipiemme S.R.L., via XX Settembre 60, Camisano Vicentino; IT / EN / FR / DE. **"10/84" is printed on every
+  page**, so the date is stated. Read 2026-10-24.
+- Seven groups (G1 table): Cronospecial AA, Special BB (road); Cronosprint Nero / Aero CA, Cronosprint Classic CC,
+  Cronosprint Economy CE (road); Special B1 (track); Special B4 (cross). G1 prints "Nero" where G4 prints "Aero". Classic
+  and Cross are in the G1 table only, never pictured, so no rows. Pages: G2 Cronospecial AA, G3 Special BB, G4
+  Cronosprint Aero CA, G5 Cronosprint Economy CE, G6 Special Pista B1.
+- New part numbering, replacing the 1970s binder's 6001xx / 7001xx: 100 crankset, 200 bottom bracket, 300 pedals, 400
+  hubs, 500 headset, 600 seat post, 700 brakes, 800 derailleur set (front, rear, shifters); the suffix is the group
+  (AA, BB, CA, CC, CD, CE, DD, A1, B1). Cronospecial and Special share 100AA / 200BB / 400BB / 500AA / 600BB / 800AS.
+  The page author (disraeligears) guesses the derailleurs are re-badged Simplex (800AS = SLJ6600, 800CS = LJ4000,
+  800DS = SX610); the catalogue itself names no maker. G1 also prints thread sizes (pedals 9/16x20F or M14x1.25, BB
+  "36x25F" / M35x1 / "1.360x24", hubs 35x24F / 37.1x1 / 1.370x24, headset 25.4x24F / M25x1 / 1"x24, seat post
+  diameters 25-27.2); the 36x25F and 1.360 look like misprints and were not used.
+- The first Gipiemme catalogue on file with derailleurs, brakes and brake levers (the binder, `data_source` 202, has none;
+  203 is freewheels and pedals only).
+- Rows inserted (2, 1984-1984, group 85 Crono Sprint, `source_ref` 269): 9509 400DD hubs (Aero and Economy), 9510 700CE
+  brakes (Economy, black enamel).
+- Rows updated (19, `source_ref` 269): `year_to` -> 1984 on 1587 (100AA), 1589 (100CC), 5788 (600DD), 765 (700CC),
+  4261 (800DS rear); `year_from` -> 1984 (old values in brackets) on 9133 200CC (1985), 64 200BB (1988), 3351 400B1
+  (1985), 9137 500AA (1985), 321 Crono Special levers (1985), 324 Special levers (1985); descriptions only on 3348 400BB,
+  3007 500CC, 3008 500B1, 5790 600CA, 5786 600BB, 2367 / 4259 800AS front and rear, 3747 300AA. No titles changed, so
+  no `search_text` rewrites. The old 3747 text ("current model in the 1982-83 leaflet") was dropped as a citation of
+  its own source.
+- Judgement calls and open items (all left unchanged):
+  - 100CE (Economy crank) and 500CE (Economy headset) are probably 1591 "Crono Sprint /E" and 3004 "Crono Sprint E"
+    (no years, group 85 / none); the "E" is only suggestive.
+  - 100A1 (Pista crank) could be 1588 "Crono Special (Pista)" (1982-88, group 165) or 1593 "Special 600101 (Pista)"
+    (1970-70).
+  - 200B1 (Pista bottom bracket): 9136 "200 R1" (1985, 316 g) is probably the same part with B read as R; recheck the
+    1985 guide pages (`data_source` 259) before relinking.
+  - 800CS (Aero front and rear) and 800DS (front): the DB has 2368 / 4260 "800CC-80xCC" and 2369 "802 DD" from 1982,
+    so 800CS may be a rename of 800CC; not inserted.
+  - Pedals 300BB, 300CA and 300DD (DB 3752 Special, 3749 Cronosprint) and the Cronospecial and Special brakes (763 /
+    764 and 766 / 767, "nut vs hex socket" cannot be seen in the photos) left alone.
+  - 5788 "Crono Sprint 600DD" sits in group 27 (Crono Special) although its title and the catalogue say Crono Sprint
+    (group 85); group not changed.
+  - Spelling: the catalogue prints "Cronospecial" / "Cronosprint" as one word; the DB mixes it with "Crono Special" /
+    "Crono Sprint" (about 100 rows). A spelling pass was not done.
+  - Absent from this catalogue and not capped (one catalogue's absence): Dual Sprint, Azzurra, Azzurro, Bagarre,
+    Exploit, Crono Sprint White Laser rows.
+
+## Gipiemme "8 times world champions" catalogue (14 scans, c. 1986-87, disraeligears.co.uk)
+
+- `data_source` 270, label `Gipiemme catalogue, "8 times world champions" (c. 1986-87)`, country IT. Source:
+  https://www.disraeligears.co.uk/site/catalogo_gipiemme_-_8_times_world_champions.html (scans
+  `00_main_images/catalogo_gipiemme_-_8_times_world_champions_scan_001..014_main_image.jpg`, 1560 x 1119). Gipiemme
+  S.R.L., Grumolo Abbadesse, Loc. Vancimuglio (Vicenza), so later than the Oct 1984 catalogue (Camisano Vicentino).
+  **Undated.** The page author guesses 1987 (the cover shows 1986 world-championship results); it is not the "1982"
+  catalogue some sites label it. Dating rule used: `year_to` extensions to 1986 (safe lower bound), new rows 1986-1987,
+  the one `year_from` move 1987 (safe upper bound).
+- Contents: Cronospecial AA and B1 (Pista), Cronosprint BA, Sprint DD (overview pp. 4-5); cranksets 100AA / AT / A1 / A4,
+  100CC / CT / BA Bagarre, Sprint 100SB, Minisprint 100DM; BBs 200AB-AT-A4, 200A1, Sprint 200DS; seat posts 600AA / DD /
+  BA / CA / SS; pedals 300AX Multiasse, BB, B1, CA, DD, Sprint SA; hubs 400BB, CA, B1, B2, Sprint SA; headsets 500AA, CC,
+  BP, B1, Sprint CE; brakes 700AA, CA, CC, Sprint SA; Cronospecial 800AE (801AE / 802AE / 870SE "Selectron"),
+  Cronosprint 800CC (801CC / 802DD / 870DS), Sprint 802DD, 870BC; freewheels 906/907 AS, AA, CS, CC, CE; bars AA / CC / DD;
+  stems 1400xx and chains 950xx as overview codes only. Out of scope: toe clips, washers, grease, 1840-1890 shell kit,
+  braze-ons, fork ends. Misprints: "CONOSPECIAL 300B1", "400BA" (overview) for 100BA, steel freewheels headed
+  "Cronospecial". Group codes differ between the overview pages and the detail pages; detail-page codes used.
+- New vs Oct 1984: Bagarre crank, 100AT / 100CT triples, 100A4 cross and 100DM Minisprint cranks, Cronospecial 800AE
+  Selectron derailleurs. Not pictured: the Economy group as such (only 500CE / 906CE), Cronospecial seat post 600BB
+  (here 600AA).
+- Rows inserted (10, 1986-1987, `source_ref` 270): 9511 Sprint 100SB, 9512 Crono Special 300B1 (Pista), 9513 400B2 (Pista),
+  9514 Crono Sprint 700CA, 9515 / 9516 / 9517 Crono Special 801 AE / 802 AE / 870 SE, 9518 Crono Sprint 906 CE, 9519
+  Crono Sprint CC bar, 9520 Sprint DD bar.
+- Rows updated (36, `source_ref` 270): `year_to` -> 1986 on 9131, 764, 323, 2105, 2106, 8829, 8830, 5788, 6051, 9138,
+  1587, 1589, 3006, 765, 3747, 3351, 9509, 5789, 4260, 6050, 2369; years set on 3348 (NULL -> 1984-1986) and 768
+  (NULL -> 1986-1987); **`year_from` moved earlier 9469 1988 -> 1987** (revert value: 1988). Retitles (old title ->
+  new, `search_text` rewritten): 4260 "Crono Sprint 800CC-801CC" -> "Crono Sprint 801 CC"; 6050 "Crono Sprint 800CC-870DS"
+  -> "Crono Sprint 870 DS"; 768 "Sprint" -> "Sprint 700SA"; 1590 "Crono Sprint 400BA, Bagarre BA 100" -> "Crono Sprint
+  100BA, Bagarre"; 1588 "Crono Special (Pista)" -> "Crono Special 100A1 (Pista)"; 9130 "Crono Special Triplo" ->
+  "Crono Special 100AT, Triplo". Descriptions only: 9126 (2nd ring 35-40, was 30-40), 9127, 3748, 9137, 3007, 3353, 5786,
+  3749, 3753.
+- Spec differs between editions: 1589 100CC is 165-175mm cranks and 41-54T in Oct 1984 but 170mm and 52-53 / 42T here;
+  both named in the description, `source_ref` 270.
+- Rows deleted: 2368 "Crono Sprint 800CC-802DD" (1982, `source_id` CBFC2604-00EA-4496-9EDF-1F6D50DBC0F5), a duplicate
+  of 2369 "802 DD", which survives; 6052 "Crono Sprint (friction)" (bare, no years, `source_id`
+  41F71281-64AC-45B5-BA18-A73FD9EDC658), a duplicate of 6051 (870 BC retro-friction levers). Neither had bike_spec links
+  or generator overrides.
+- Unresolved / left for later (item F): 200AB / AT / A4 / A1 against the 1985 guide's 200 RS / RT / R1 (likely A -> R
+  letter change) and 200DS against 65 "Sprint"; 400CA against 9509; 3349 "Crono Special Pista" hub (1988) against 3351
+  (probable duplicates, 3351 is a `COMPONENT_OVERRIDES` target); 600SS against 5792 / 5793 "Sprint (type 1/2)"; 906AA /
+  907AA against 8827 / 8828; Cronospecial bar AA against 2849; 3012 "Sprint" headset and 3004 "Crono Sprint E" against
+  500CE (3012 description not changed, name match only); 763 vs 764 brake variant for 700AA.
+- Follow-up merge (item F, done): 3349 "Crono Special Pista" (1988, bare, group 165, `source_id`
+  400AD9EE-82B3-4C33-8D42-9717200FDE20, `source_ref` 262) deleted into 3351 "Special Pista" (400B1 track hubs, 2 bike
+  specs, `COMPONENT_OVERRIDES` target). 3351 `year_to` 1986 -> 1988 (old 1986), `source_ref` 270 -> 262, description
+  notes the later "Cronospecial Pista" name. 3349 had no bike_spec links or overrides.
+- Follow-up, 200 bottom brackets (item F, done): the 1985 guide (`data_source` 259, scan 20) actually prints 200 BB / CC /
+  BT / CT / B1 (320 / 337 / 330 / 330 / 315 g); our 1985 rows had misread B as R. The c. 1986-87 catalogue renumbers
+  200BB / BT / B1 as 200AB / AT / A1 (not an A -> R change, as first guessed). Merged 9132 "200 RS" (= 200BB, 320 g,
+  `source_id` 56000bc2-ceee-11f1-a2df-02fea3763e8d) into 64 (description now 320 g, "numbered 200AB in the later
+  catalogue"). Retitled 9134 "200 RT" -> "200 BT" (`year_to` 1986) and 9136 "200 R1" -> "200 B1" (weight 316 -> 315 g,
+  `year_from` **1985 -> 1984** from the Oct 1984 catalogue, `year_to` 1986; revert value 1985); `search_text` rewritten.
+  Inserted 9521 "Sprint 200DS" (1986-1987, group 126). 9133 200CC and 9135 200CT left as they were. 65 "Sprint" is the
+  1970s 700120 crankpin assembly, a different part. No bike_spec links or overrides on any of the rows.
+- Follow-up, rest of item F (done), checked against the 1985 guide (`data_source` 259, scans 10, 13, 21, 30, 35; Gipiemme
+  entries by name only, no part numbers):
+  - **Reverted a guess:** 9509 "400DD, Crono Sprint" had been given "numbered 400CA in the later catalogue" and `year_to` 1986
+    from a name match; back to 1984-1984, `source_ref` 269. The Oct 1984 catalogue has 400DD for the Cronosprint hub, so 400CA
+    is a different number; inserted 9522 "Crono Sprint 400CA" (1986-1987, 32 or 36 holes).
+  - 9513 400B2 (Pista): `year_from` 1986 -> **1985**, 545 g, from the guide's second, heavier Special Pista hub (inferred
+    from weight and price, not a part number; old value 1986).
+  - 3004 "Crono Sprint E" (bare) = the Economy headset 500CE (Oct 1984 catalogue, 1985 guide "Cronosprint Economy" 150 g,
+    c. 1986-87 catalogue "Sprint 500CE"): retitled "Crono Sprint 500CE (Economy)", 1984-1986, group 85. 3012 "Sprint"
+    left alone: it could instead be the 1970s Dual-Sprint 700168 headset. (1591 "Crono Sprint /E" is likely the 100CE
+    Economy crank; not touched.)
+  - Freewheels 8827, 8828, 8831, 8832: `year_to` 1985 -> 1986; the later catalogue's 906AA-907AA (alloy 5/6) and
+    906CC-907CC (steel) look like the 906A / 905A and 906C / 905C lines renamed (judgement call).
+  - Bars: 2849 description notes Cronospecial AA (26mm, 38-44cm; 338 g kept, the 1985 guide has 275 g); 9520 Sprint DD
+    `year_from` 1986 -> **1985**, 355 g (the guide's 25.7mm bar; old value 1986). 9519 Crono Sprint CC has no guide match.
+  - 9510 700CE Economy brakes `year_to` 1984 -> 1985 (guide lists Cronosprint Economic brakes).
+  - 763 / 764 (hex socket vs nut on the centerbolt): no source can tell them apart; left as is.
+  - `source_ref`: 259 on 9510, 9513, 9520 (changed from the guide); 270 elsewhere; 9509 back on 269.
+- Follow-up, Economy crank (done): the 1985 guide (scan 15) lists "Cronosprint Economy Strada" as its own crank (597 g,
+  52-53 / 42, 170 mm, 62,500 lire) beside the Classic (same specs, 72,000), so 1591 "Crono Sprint /E" (bare, no years,
+  `source_id` 34E5CCA8-40F5-4B7E-90F3-7A25AA1A4844) is the 100CE. Retitled "Crono Sprint 100CE (Economy)", 1984-1987,
+  597 g, `source_ref` 270, `search_text` rewritten. Merged 9511 "Sprint 100SB" (the row inserted above, `source_id`
+  f4ca5a07-d061-11f1-a2df-02fea3763e8d) into it: the c. 1986-87 catalogue's Sprint 100SB has the same spec (170 mm,
+  52-53 / 42), matched on spec alone, so a later source that shows 100SB distinct from 100CE should reinstate it. The
+  guide also agrees with the later catalogue that the Classic 100CC (1589) is 170 mm with 52-53 / 42, so the "165-175mm,
+  41-54T" taken from Oct 1984 may be a group-wide range; not rechecked against the 1984 page.
+
+## velo-pages "Gipiemme 1982 Catalog" album (Wayback, checked 2026-10-28): not 1982, nothing new
+
+- Album `g2_itemId=1483`, page items 1505-1545 (step 3), read through the Wayback CDX index (curl needs `-g` for the
+  bracket regex). Only three images survive above thumbnail size: 1542 (1672 x 1200, the braze-on parts 18xx and fork
+  ends 1800 AX / BB / CC / B1 page), 1517 and 1538 (640 x 459: the Cronospecial "Professional AA" and Pista "B1" group
+  spreads with the 100AA / 200AB / 300AA / 800AS / 906CC codes, and the Manubri page with the Cronospecial AA,
+  Cronosprint CC and Sprint DD bars). Every other capture is a 5-10 KB thumbnail.
+- The part numbering is the post-1984 one (100 / 200 / ... / 800 + group suffix) and the pages match the c. 1986-87
+  "8 times world champions" catalogue (`data_source` 270) already loaded, so velo-pages' "1982" label is wrong, as the
+  270 entry suspected. No rows changed.
+- The bare Gipiemme rows still without a catalogue source (about 28 derailleurs, brakes, levers and shifters: Azzurra,
+  Azzurro, Bagarre, Dual Sprint, Special, Sprint, White Laser, Exploit) need a genuine early-1980s source; the remaining
+  lead was velo-pages "Catalogs & Ads 1978-1984" (`g2_itemId=65`), checked the same day: see below.
+
+## velo-pages "Gipiemme / GPM" folder (album 65, Wayback, checked 2026-10-28): only thumbnails survive
+
+- Album 65 is the whole Gipiemme folder: adverts 06-1978 (1465), 05-1979 (1469), 06-1979 (1472), 07-1979 (25471),
+  09-1979 (1475), 11-1979 (1478); Bicycling 11-1979 "Super Lightweight Components" (album 1481, pages 1485 / 1489 /
+  1492); **"Gipiemme brochure (1980)"** (album 1482, pages 1495 / 1499 / 1502); "Gipiemme catalog (1982)" (1483, the
+  mislabelled c. 1986-87 catalogue above); **"Gipiemme brochure (1982)"** (album 69471); "catalog - ONLY PARTIAL
+  (10-1984)" (1484, = `data_source` 269, which disraeligears has in full).
+- The Wayback Machine holds only 3.6-5.9 KB thumbnails of the 1979 article and 1980 brochure pages (1488, 1498, 1503),
+  and has **no capture at all** of album 69471. velo-pages.com still answers HTTP 500 to every request. So the
+  early-1980s brochures exist but can't be read; the velo-pages leads for Gipiemme are exhausted.
+- The ~28 bare Gipiemme rows (Azzurra, Azzurro, Bagarre, Dual Sprint, Special, Sprint, White Laser, Exploit
+  derailleurs, brakes, levers, shifters) stay as they are until another early-1980s source turns up (a dealer
+  catalogue such as a Bikecology / Palo Alto / Bike Warehouse page that lists Gipiemme, or a magazine group test).
+
+## labibleduvelo "GIPIEMME 1982" page (checked 2026-10-28): images lost, nothing to read
+
+- https://labibleduvelocataloguesgipiemme.blogspot.com/p/gipiemme-1982.html lists 13 pages (page-00-a, page-01 ..
+  page-12) but every image was hosted on imagesia.com (links `http://imagesia.com/page-NN_12y3?`, files
+  `http://img.imagesia.com/fichiers/12y/page-NN_imagesia-com_<code>.jpg`, codes 12y3z, 12y3s, 12y3v, 12y3w, 12y3u, 12y3t,
+  12y3x, 12y3y, 12y40 .. 12y44). Blogger's image proxy returns 404 for all 13, imagesia.com no longer answers, and the
+  Wayback CDX has other files from the same `fichiers/12y/` folder but none of these pages nor their viewer pages. The
+  same blog also has 1984 and 1987 Gipiemme pages (covered by `data_source` 269 / 270 from disraeligears).
+
+
+## Gipiemme catalogue 1988 (24 scans, disraeligears.co.uk), `data_source` 287
+
+- Label `Gipiemme catalogue (1988)`, country IT. Source: https://www.disraeligears.co.uk/site/gipiemme_-_catalogue_1988.html
+  (`00_main_images/gipiemme_catalogue_1988_-_<name>_main_image.jpg`, front cover, pages 1-21, rear cover; IT/EN/FR/DE;
+  Gipiemme s.r.l., Vancimuglio di Grumolo delle Abbadesse). Dated 1988: the disc-wheel page looks back on "la stagione 1987".
+- Contents: four groups, Bagarre BA 2000, Azzurro SB 2000, Pista AP 2000, MTB K2 MK 2000, plus the Cronosprint Triplo CT,
+  Road SR, Sprint DD and Cronospecial AA leftovers. Codes are printed code-first (BA 100, not 100BA). Cranks BA / SB / SR /
+  AP / CT / MK / MP 100; BBs BA / SB / AP / CT / MK 200; pedals BL (Block) / BA / AA / DD / SB / AP / MK 300; hubs BA
+  (Cronobagarre) / SB / AP / MT 400; headsets BA / SB / MK / AP 500; seat posts BA (Cronobagarre) / DD / SB / MT 600; brakes
+  BA / SB / MK 700, levers 704; RDs BA / SB / MT 801; FDs BA 803, SB / MT 802; shifters BA (retrofriction) / SB / CI
+  (indexed) / MT 876; chains CS / AS / MT 950; freewheels AA 906 / 907, CE 906; carbon crank and lenticular disc wheel (no
+  codes). Out of scope: Gian Robert chain tool 02190, dropouts 1800 series, Unicrown, frame fittings, cable guides IS 7xx,
+  IS 884 computer, guards, grease, BA 318 toe clips.
+- New vs c. 1986-87: the Azzurro and K2 groups, Bagarre as a full group (crank only before), Block clipless pedal,
+  indexed shifters. Dropped: the Cronospecial road group (only AA pedals, freewheels, dropouts left), Selectron, White
+  Laser. "Exploit" is not printed anywhere (disraeligears' text calls BA 801 "Exploit / Bagarre"); 4263 / 6053 left as is.
+  disraeligears also says BA 801 is Campagnolo-made and SB 801 / MT 801 SunRace 581 / 580: not in the catalogue, not used.
+- Rows updated (27, `source_ref` 287). Retitles (old title -> new, `search_text` rewritten): 1590 "Crono Sprint 100BA,
+  Bagarre" -> "Bagarre BA 100" (group 85 -> 84); 762 / 320 / 4258 / 2366 "Bagarre" -> "Bagarre BA 700 / 704 / 801 / 803";
+  1585 / 63 / 3347 / 761 / 319 "Azzurro" -> "Azzurro SB 100 / 200 / 400 / 700 / 704"; 3745 "Block" -> "Block BL 300".
+  **`year_from` moved later** (revert values): 1590 1982 -> 1986 (Bagarre crank new in c. 1986-87); 762, 320, 4258,
+  1585, 761, 319, 3347 1980 -> 1988 (decade buckets; Bagarre and Azzurro absent from the full Oct 1984 and c. 1986-87
+  ranges); 63 and 3745 NULL -> 1988. `year_to` -> 1988: 6051 (BA 870), 5789 (BA 600), 9131 (CT 100), 9135 (CT 200), 5788
+  (DD 600), 9518 (CE 906). Judgement-call matches by renumbered code, `year_to` -> 1988 unless already: 1588 = AP 100,
+  9136 = AP 200, 9512 = AP 300 "Specialpista", 3747 = AA 300, 3351 = AP 400, 3008 = AP 500, 8827 = AA 906, 2106 = AA 907,
+  9138 = AS 950, 1368 = CS 950 (CS = Cronosprint, as on 906 CS). 3749 (300DD) = DD 300, unchanged.
+- Rows inserted (27, 1988-1988 except the disc wheel 1987-1988): ids 9834-9860. Bagarre BA 200 / 300 / 400
+  (Cronobagarre) / 500; Azzurro SB 300 / 500 / 600 / 801 / 802 / 870; new `component_group` 326 "K2" (brand 21): MK 100,
+  MP 100, MK 200, MK 300, MT 400, MK 500, MT 600, MK 700, MK 704, MT 801, MT 802, MT 876, MT 950; no group: Road SR 100,
+  CI 870, carbon fibre crankset, lenticular disc wheel.
+- Left alone: Azzurra rows (group 83, Simplex-made, a separate earlier line); Exploit rows; the bare Dual Sprint / Special
+  / Sprint / White Laser derailleurs, brakes, levers and shifters (still need an early-1980s source).
+
+## Iscaselle Gipiemme Catalogo No. 7 (ISCA S.p.A., undated, c. 1991; disraeligears.co.uk), `data_source` 288
+
+- Label `Iscaselle Gipiemme Catalogo No. 7 (c. 1991)`, country IT. Source:
+  https://www.disraeligears.co.uk/site/iscaselle_gipiemme_catalogo_no_7.html
+  (`00_main_images/iscaselle_gipiemme_catalogo_no_7_-_page_NNN_main_image.jpg`). ISCA S.p.A., Rossano Veneto / Loria,
+  after Iscaselle took over Gipiemme. **Undated**: disraeligears says "1991?"; 7-speed index parts fit c. 1990-91. New rows
+  1991-1991, `year_to` extensions 1991.
+- **Partial**: 24 of ~40 pages survive (1, 3-11, 17-25, 32, 37-40); pages 2, 12-16, 26-31 and 33-36 are missing, and no
+  saddle page survives (the Isca 406 / 407 saddle gap in TODO is not settled by it). Mostly budget / OEM parts with 6-7
+  digit ISCA codes and no group names; Azzurro, Bagarre and Cronobagarre are the only 1988 names left. K2, Pista and Block
+  are gone as named lines.
+- Light pass, by the user's choice. Rows updated (5, `year_to` 1988 -> 1991, `source_ref` 287 -> 288, code added to the
+  description): 1585 Azzurro SB 100 = X 100SB 4252; 5789 600BA / BA 600 Cronobagarre = X60CA72; judgement calls from
+  description and photo, no code link: 320 BA 704 = 833270 (internal cable, QR), 319 SB 704 = 833260 (internal cable), 762
+  BA 700 = 811997 (forged, QR).
+- Rows inserted (18, ids 9861-9878): X120B6 Bagarre Tandem crank (group 84; kept apart from 9128 Crono Special Tandem
+  Strada), 892711 titanium BB, 82294 Mod. 402 cromoly post, 8129102 clipless road pedals, headsets 825502 (1-1/8) / 825501
+  (1-1/4), RDs 815590 / 815515 LN / 815591 / 815570 (indexed), FDs 846481 / 846482 (MTB, 31.8 / 34.9 clamps), shifters
+  841205 / 841209 / 841125 / 841127 (indexed), cantilevers 811R002 / 811R004 ("ABS system").
+- Not inserted (catalogue completeness only, no bike-spec values to link): friction / steel RDs 815511, 815551S, 815512,
+  815500; FDs 846450S, 846470, 846450A, 846452, 846451, 846480; shifters 841101, 841102, 841105, 841110, 841300; levers
+  833392A, 833372P, 83333, 833271A, 833146A; brakes 811102A, 811730AL, 811400, 811714; hubs 826512R / 826515F, 826511,
+  8262022 / 25 / 26, 826103; cranks 8249037 (Mod. 6000), 8241041 / 8241042 (MTB triples), 8249036 (Mod. 2010), 8249035
+  (Mod. 2011), 8249032, 824361 (Bimbo); BBs 8922003 / 8922012; posts 822 / 819. Out of scope: bags, computers, trainer,
+  cable guides, guards, skewers, seat clamps and bolts, pulleys, hanger, spokes, grease.
+
+## Gipiemme "Road & Off-road '97" catalogue (8 scans, 1997, disraeligears.co.uk), `data_source` 356
+
+- Label `Gipiemme Road & Off-road '97 catalogue (1997)`. Source:
+  https://www.disraeligears.co.uk/site/gipiemme_-_road_off-road_97.html
+  (`00_main_images/gipiemme_-_road_off-road_97_scan_00N_main_image.jpg`, 1560 x 2227; IT/EN). Cover dated '97; back cover
+  Gipiemme, Via Balbi 13, Loria (Treviso), www.tradenet.it/isca: the ISCA era, after Catalogo No. 7 (c. 1991). Scans:
+  1 cover, 2-3 Tecno wheels, 4 Tecno Lenticolare / XR / Radius, 5 Zenith / Mirage, 6 Penta, 7 Pluma Evolution / Pluma /
+  Plus, 8 Sintra, colour/cover table and back cover. Wheels, rims and saddles only; no groupset parts.
+- Rows inserted (14, 1997-1997, brand 21, no group): Wheel(sets) 10474 Tecno 716 PRO, 10475 Tecno C 716 PRO (carbon),
+  10476 Tecno 416, 10477 Tecno M 724, 10478 Tecno M 416; Rims 10479 Tecno XR, 10480 Tecno Radius, 10481 Tecno Zenith,
+  10482 Tecno Mirage; Saddles 10483 Penta (Dual Shock Absorber, "New Project"), 10484 Pluma Evolution, 10485 Pluma
+  (both "100% titanio", same printed spec 240 x 132mm 155g; kept as two rows, user decision), 10486 Plus, 10487 Sintra
+  ("Active Suspension"). Colour/cover versions (Kevlar Design 2 / 3, Joker, Design P / DP, Skay) are in the descriptions,
+  not separate rows.
+- Rows updated (2, `source_ref` -> 356):
+  - 5029 "Gipiemme Tecno 724" (velobase, bare): category Rims -> Wheel(sets) (the catalogue sells it as a complete
+    road wheel, no separate rim); **`year_from` moved later, 1990 -> 1997** (revert: 1990-1990, category 16), because the
+    catalogue calls it a "nuova ruota" and 1990 was a velobase decade bucket; description rewritten with the spec.
+  - 9860 lenticular disc wheel (1988 catalogue row): `year_to` 1988 -> 1997, read as the same wheel continuing as the
+    "Tecno Lenticolare" (26 / 28in, tubular or clincher, 850g; stiffer Carbon Plus 950g). Both editions named in the
+    description because the specs differ. Judgement call; the alternative was a separate 1997 row.
+- Left alone: 6967 Tecno C946 (1995, velobase), not in this catalogue. No bike_spec links or overrides on any row touched.
+
+## 9869 815591 named "Exploit Bagarre" (2026-11-04, from La Bicicletta Guida '96, `data_source` 357)
+
+- The Guida '96 lists a "GIPIEMME Exploit Bagarre" road rear derailleur, aluminium, 7-speed indexed, 245 g, no code.
+  Matched by spec to 9869 (Isca No. 7 code 815591, road 7-speed index; user decision). Old title "Gipiemme 815591,
+  road 7-speed index"; now "Gipiemme 815591, Exploit Bagarre (road 7-speed index)", 1991-1996. 4263 Exploit and 4258
+  BA 801 unchanged. The guide's other Gipiemme rows are in cross-catalog-notes.md (Guida '96 pass 1).

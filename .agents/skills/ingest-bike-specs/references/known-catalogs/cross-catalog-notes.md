@@ -1,0 +1,517 @@
+# Cross-catalog notes catalogs processed so far
+
+## Nuovo Record rear-derailleur ranges (corrected 2026-09-27)
+
+While reading this catalog the DB's own dating for the 1020/A rows came up:
+v3 1970-1981, v4 1982-1984, v5 1985-1987. The ranges set during the 1983
+Bianchi work (v3 to 1973, v4 1974-77, v5 from 1978) contradicted that and
+had moved Motobecane 1974/75 to v4 and Bianchi 1983/84 to v5. Ranges now
+follow the DB dates; a one-off UPDATE moved 12 rows back (Motobecane → v3,
+Bianchi 1983/84 → v4). Lesson: when ranging an override, read the DB rows'
+year_from/year_to first rather than reasoning from memory.
+
+## Label normalization (done 2026-09-27)
+
+The ten catalogs had minted 49 labels, ~15 of them wording variants. Merged
+to 29 canonical labels with one global display order:
+
+- `LABEL_ALIASES` in the generator maps header variants to canonical labels
+  at read time (Frame/Frame Type/Frame Details → Frame Material; Brakeset →
+  Brakes; Chains/Chain Type → Chain; Cranksets → Crankset; Freewheels/Gear
+  Cluster → Freewheel; Saddles → Saddle; Seat Posts → Seatpost; Stems →
+  Stem; Tires/Tire Configuration → Tyres; Wheel Rims & Spokes/Wheels →
+  Rims; Shifters/Levers → Shifters; Extras No Charge/Included Accessories/
+  Standard Equipment/Miscellaneous → Extras; Haken → Toe Clips). CSVs were
+  not edited; `bike_spec.raw_label` keeps the original header.
+- `LABEL_ORDER` sets `sort_order` (frame → drivetrain → contact points →
+  wheels → extras); the generator now emits an UPDATE so existing labels
+  realign on any run.
+- One-off SQL repointed 247 bike_spec rows and deleted the 18 emptied label
+  rows. Cassette stays distinct from Freewheel; "Other Features" (1940
+  Bianchi frame notes) is not Extras; "Groupset / Components" (1984) kept.
+- Side effect: two values now sit under mapped categories and link —
+  1975 Motobecane "REGINA ORO 13-21" (Gear Cluster → Freewheel, existing
+  override) and 1983 Bianchi Professional "Suntour" shifters → the brand-level
+  SunTour shifter row.
+
+All ten catalogs in bike_specs/ are loaded. Next catalogs will most likely
+need: their own year ranges on the Campagnolo/Shimano group overrides, and
+the label normalization above.
+
+## Bare-brand exact-match bug and one wrong override (fixed 2026-09-29)
+
+A user noticed a 1979 Peugeot's rear derailleur spec showed as an "1920
+Simplex" — clearly wrong. Root cause: `matchComponent`'s exact-title-match
+branch ran *before* the "single-word title is a brand-only catch-all"
+substring guard, so a bare CSV value like `"Simplex"` (catalog names only
+the brand, no model) would exact-match any `component_detail` row also
+titled exactly `"Simplex"` — including bare-brand placeholder rows with a
+bogus specific year, with zero year filtering (year ranges are only
+honored inside `COMPONENT_OVERRIDES`/`resolveOverride`).
+
+Same audit found one more real instance and one look-alike that turned out
+to be a different bug entirely:
+
+- **Simplex, Rear Derailleurs** (component_id 4549, wrongly dated
+  1920-1920): 7 rows, all 1979 Peugeot. Added `'simplex': null` to
+  `COMPONENT_OVERRIDES.Rear Derailleurs`; one-off `UPDATE` set those 7
+  `bike_spec.component_id` back to NULL (run and discarded, not kept in
+  the repo — the fix that matters is the override).
+- **Shimano, Chains** (component_id 1403, wrongly dated 1980-1980): 2 rows,
+  1987 Bianchi. Added `shimano: null` to `COMPONENT_OVERRIDES.Chains`, same
+  one-off unlink.
+- **Nisi, Rims** (component_id 5123, wrongly dated 1980-1980) — NOT the
+  same bug. This was a deliberate `'nisi ava sprint alloy'` override that
+  just pointed at the wrong one of two identically-titled bare "Nisi" rows;
+  5124 (dated 1970-1980, covers the 1973 Raleighs that use this value) was
+  sitting unused. Retargeted the override to 5124; one-off `UPDATE`
+  repointed the 2 already-loaded rows.
+
+Broader finding, acted on 2026-09-30: 397 `component_detail` rows across the
+whole DB were bare single-word (brand-only, no model) titles; only 7 were
+linked to any `bike_spec` row (Maillard/Freewheels, Iris/Chains,
+Renold/Chains, AVA/Rims, Simplex/Freewheels, SunTour/Shifters, Nisi/Rims —
+checked and fine on years at the time). The other 390 were unused
+velobase-crawl artifacts, some carrying the same "bogus specific year"
+shape as the bugs above, sitting dormant until some future catalogue's
+bare-brand value happened to exact-match one.
+
+Deleted (one-off, run and discarded, not kept in the repo): the 390 unused
+rows, plus a knock-on check on the 119 `component_brand` rows that then had
+zero `component_detail` rows left (e.g. Acme, Aironi, SelleRoyal — distinct
+from brands like Agrati or Astros that also had a bare row but kept other
+real components, which were left untouched). Those 119 brands' scaffolding
+was cleaned up too: 2 `component_group` rows scoped to them (verified zero
+surviving component links first) and 129 `category_brand` rows. Verified
+before running: zero `bike_spec` references on the 390, and none of their
+ids appeared in `COMPONENT_OVERRIDES` (`scripts/generate-bike-update-sql.js`).
+
+The 7 linked rows turned out, on a second look, to be the same bare-brand
+mismatch as the Simplex/Shimano fixes above — the earlier audit only
+checked years, not whether the link made sense at all. Each of the 29
+`bike_spec` rows pointing at them carries a generic `value_text` (a chain
+pitch, a freewheel gear-count range, or just the bare brand name again,
+e.g. "Iris 1/2 x 3/32", "Maillard 14-15-17-19-21-24", "Suntour") with no
+matching specific model row elsewhere in the DB to relink to instead — so
+unlinked (`component_id` -> NULL, `value_text`/`raw_label` untouched) and
+deleted the 7 rows themselves (one-off, not kept in the repo). None of
+these 7 brands (AVA, Iris, Maillard, Nisi, Renold, Simplex, SunTour) lost
+their brand row — each still has other real component_detail rows. No new
+`COMPONENT_OVERRIDES` entries were needed: the current substring guard in
+`matchComponent` already stops a single-word title from matching inside a
+multi-word value, and the one bare-value case (a catalog literally saying
+just "Suntour") now correctly resolves to "ambiguous, no match" against
+SunTour's ~65 real model rows instead of the wrong bare placeholder.
+
+Related cleanup, same day: 6 more `component_detail` rows were a brand plus
+"unknown"/"(unknown)" with no real model attested — Falco Unknown
+(Brakes), GIOS Unknown (Pedals), OMAS unknown freewheel hubs with ti axle
+(Hubs), Altenburger unknown (Rims), Bianchi (unknown) (Hubs), SunTour
+(unknown) (Front Derailleurs). None had `bike_spec` references or appeared
+in `COMPONENT_OVERRIDES`, so deleted outright (one-off, not kept in the
+repo). Falco, GIOS, and the *component*-brand Bianchi (distinct from the
+`bike_brand` Bianchi used for actual bikes — separate table, separate id
+space) had zero other `component_detail` rows once these were gone, so
+purged those 3 `component_brand` rows and their 7 `category_brand` rows
+too; no `component_group` rows were scoped to them. OMAS, Altenburger, and
+SunTour kept their brand rows since each has plenty of other real
+components.
+
+Full-DB sweep, same day: checked for referential orphans across
+component_detail/component_group/category_brand/component_brand/bike/
+bike_spec/data_source - none found (every FK-shaped reference resolves).
+Two things did turn up:
+
+- **26 exact-duplicate `component_detail` rows** (25 groups - 24 pairs and
+  one triple - identical on brand_id/category_id/title/year_from/year_to/
+  description, both/all from the velobase crawl crawled twice): deleted
+  the redundant copy of each, keeping whichever side already carried any
+  `bike_spec` link or `COMPONENT_OVERRIDES` reference (Union 486 id 1427,
+  Sturmey Archer id 3593, Shimano CN-7401 Dura-Ace chain id 1414, Mavic
+  MA 40 id 5077) or a set `group_id` (Stronglight 107 Pista id 1916) where
+  that differed between the two. One-off, not kept in the repo.
+- **One junk `component_group` row**, id 248, titled literally "do not
+  know", scoped to Campagnolo, zero `component_detail` rows in it -
+  deleted.
+
+`data_source` id 50 (Le Cycle magazine no. 58 Maillard ad, see below) had
+zero rows pointing at its `source_ref` at the time - not a stray row, just
+a citation whose 4 affected rows (2112, 2113, 2114, 2120) still carried the
+generic velobase-crawl `source_ref=1` rather than this ad. Backfilled: all
+4 repointed to `source_ref=50`, since this ad is what actually set/corrected
+their current years, not the crawl.
+
+Separately: the "Other/Unknown" brand (id 561) had one Tyres component,
+Cyclepro Discovery (6840) - zero `bike_spec` references, not in
+`COMPONENT_OVERRIDES`, deleted along with the `category_brand` row linking
+that brand to Tyres. Initially left the brand in place (still had a
+Saddles entry, Bualto B17, 5437) - then removed that too on request, same
+checks (zero `bike_spec` references, no override), which left the brand
+with zero components; purged the brand (561) itself and its remaining
+Saddles `category_brand` row. No `component_group` rows were scoped to
+it. "Other/Unknown" no longer exists anywhere in the DB.
+
+Found via a user spot-check on Assos/Bottom Brackets: a brand doesn't need
+to be fully orphaned (the earlier 119-brand sweep's bar) to leave
+scaffolding behind - a brand that *partially* survived (some categories
+still have real components) can still have a `category_brand` row for a
+category whose only entry was a bare/unknown placeholder deleted earlier.
+`index.js`'s `/brandsbycategory` uses `category_brand` to populate the
+app's per-category brand picker, so a dangling row shows a brand with
+nothing to actually select. Swept the whole table for this: 116
+`category_brand` rows across ~90 brands had zero `component_detail` rows
+for that brand+category combo (Assos/Bottom Brackets, Assos/Cranksets,
+Assos/Pedals among them) - deleted all of them. Ran ad hoc, not kept in
+the repo.
+
+## Generic "Shimano 600" / "600 SIS" / "Tourney" links (fixed 2026-10-02)
+
+- Found while ingesting the Shimano 1977/1978 component catalogues: bare
+  values had substring-matched 1970s rows. 1981 Kalkhoff Amateur 05 S,
+  Touring 05 S, Touring 55 S "Shimano 600" rear derailleur (bike_spec
+  833/884/901) and 1987 Bianchi Limited/Squadra "Shimano 600 SIS" rear
+  (1250/1270) -> 4461, a velobase "Shimano 600" that is really the
+  1975-78 DC-200; 1987 Limited/Squadra "600 SIS" shifters (1251/1271) ->
+  6138 bare "Shimano 600" (1970-80); 1987 Strada "Shimano Tourney" rear
+  (1390) -> 4539 DB-300 (1975-76).
+- Fixed with a one-off UPDATE (the back-fill never overwrites a link) and
+  matching overrides: 1981 Kalkhoff rear -> no link (RD-6100 600 vs
+  RD-6200 600EX and cage length are undecidable from the catalogue);
+  1987 "600 SIS" rear -> 4471 RD-6208 600EX (SIS), front (1249/1269,
+  previously unlinked) -> 2481 FD-6207 600EX, shifters -> no link (no
+  clear SIS lever row); Strada Tourney rear -> no link (only 1970s Tourney
+  rows exist). Overrides: Rear Derailleurs 'shimano 600' [to 1978 ->
+  4462 DC-200, from 1979 -> null], 'shimano 600 sis' 4471, 'shimano
+  tourney' null; Front Derailleurs 'shimano 600' [to 1978 -> 7435 EC-600,
+  from 1979 -> null] (needed because the component pass retitled EC-600
+  "Shimano EC-600, Shimano-600", which the matcher would otherwise hit
+  for 1981 Kalkhoff), 'shimano 600 sis' 2481; Shifters 'shimano 600 sis'
+  null.
+- **Matcher fix:** resolveOverride returned undefined for a ranged entry
+  with no matching year, so it fell through to the substring matcher,
+  contrary to the COMPONENT_OVERRIDES comment ("no matching range means
+  no link"). It now returns null. Regenerating all 15 catalogues before
+  and after gave identical links, so nothing else changed.
+- Regression check also showed about 40 pre-existing generator/DB
+  differences (Super Record brakes 582 vs 583, C Record / Veloce /
+  Record Pista resolving to nothing, rims/chains/freewheels that would
+  gain links on reload), caused by earlier component retitles and
+  inserts. These don't affect the DB unless a catalogue is reloaded;
+  left for a separate pass.
+
+## Stale bare-brand overrides nulled — 2026-10-02
+
+- Regenerating 1979 Peugeot, 1973 Raleigh / Zeus and 1975 Falcon showed 28
+  "new" links. All pointed at bare-brand rows deleted on 2026-09-30
+  (f9b86f2): 2110 Maillard, 1369 Iris, 1393 Renold, 2225 Simplex, 4937 AVA,
+  5124 Nisi. Their overrides were never removed, so any back-fill would have
+  written dangling component_ids. Not loaded; the 11 override entries now
+  map to `null` (do not link). Link counts after regeneration match the DB:
+  Peugeot 83, Raleigh 43, Zeus 29, Falcon 17. No other override points at
+  a missing row.
+
+
+## Re-link sweep across all loaded catalogues (2026-10-05)
+
+Regenerated all 14 loaded CSVs and diffed each generated link against the
+DB's (bike, label, value) -> component_id. Linked specs 878 -> 894 of 2,790;
+afterwards generator and DB agree exactly (0 differences). No spec rows
+inserted.
+
+- **Regressions from component-side renames/merges** (DB kept the right
+  link, but a fresh reload would lose it): the "Campagnolo <part no>,
+  <name>" retitles put a part number between brand and model, so bare
+  values no longer substring-match. Overrides added: Brakes 'campagnolo
+  veloce' -> 587, Headsets 'campagnolo veloce' -> 2970, Rear Derailleurs
+  'campagnolo c record' -> 4096 (1987 Bianchi). Headsets 'campagnolo record
+  pista' became ambiguous when 7024 A0D0P (1987-91) was added; now ranged
+  (to 1985 -> 2966 1040, from 1987 -> 7024). Bottom Brackets 'zeus criterium
+  (e)' -> 188 after row 186 was merged into it (component catalogue dedupe,
+  2026-10-04).
+- **Stale links fixed by one-off UPDATE** (loaded before the year-ranged
+  Super Record overrides existed; back-fill never overwrites): 1983/84/87
+  Bianchi Brakes "Campagnolo Super Record" 582 (4061 v1) -> 583 (v2), 4 rows;
+  1984/87 Bianchi Rear Derailleur "Campagnolo Super Record" 4149 (PAT. 80)
+  -> 4152 (2nd gen ver. 2), 2 rows. 1983 RD stays 4149 per the override.
+- **New links**: 1973 Zeus BB/Pedals "Zeus Pista" and Tyres "Zeus-2000
+  Imperforable Tubulars" matched on their own after the Zeus catalogue 102
+  renames/inserts (187, 4056, 8148). Overrides: 1973 Raleigh 'campagnolo
+  pista 49t' -> 1505, '13 24t regina oro 6 speed' -> 2194; 1974 Motobecane
+  'weinmann 500 side pull' -> 1122 (only pre-1980 Weinmann 500 variant);
+  1983 Bianchi Hubs 'campagnolo tipo' -> 3230 (only Nuovo Tipo row in range);
+  1985 Raleigh 'shimano deore xt alloy cantilever' -> 980 (BR-MC70,
+  1983-86); 1993 Bianchi 'campagnolo veloce 53 39t' -> 7062, the "AT10-X"
+  spelling of the existing AT10 crank/FD/RD overrides (7724/7721/7720), and
+  Record + Chorus 8-speed Ergopower -> 6345 EC-12RE CG (its description says
+  it was fitted to both groups in 1993).
+- Removed a dead duplicate Headsets 'campagnolo record' key (the later
+  ranged entry already won, same row for 1975 Motobecane).
+- **Left unlinked on purpose**: of 662 distinct unlinked component values
+  only ~90 had any same-brand candidate. Skipped generic values ("Alloy",
+  "Course levers", bare "Sedis"/"Simplex"/"Suntour"), models with no DB row
+  (Dia-Compe 161/164, Shimano CN-HG20, L512SGS), and variant choices the
+  catalogue text can't settle: 3ttt Competizione (Merckx vs Gimondi), 1981
+  Kalkhoff "Shimano 600" FD/RD (600 vs 600 AX), Superbe Pro FD (clamp vs
+  band), Weinmann 999 De Luxe "or Universal 61", Simplex Prestige stem
+  shifter (only stem-mount row is 1964-65).
+
+## 2026-10-05 re-link pass (no new CSV)
+
+- Swept every unlinked spec under a mapped label for same-category rows
+  sharing brand + model words: ~120 specs had any candidate, and only 5
+  could be justified (GB Forged stem, Spidel 700 dural pedals, Nervar
+  cotterless crank; see raleigh/peugeot/motobecane). The remainder are
+  models with no DB row (ITM 200/201/Mondial, Rigida Jade/Saphir, Kusuki
+  WP-B/WIN, SR SP-153/CT-P5E, Kalloy SP-248, 600 AX headset/BB/chain,
+  Hyperglide 8-speed) or unresolvable variant choices (Normandy alloy
+  hubs, Super Champion rims, Mafac course levers, Regina Oro, Mavic
+  Monthlery). Coverage now needs component catalogues, not overrides.
+- This pass excluded the 1940 Bianchi CSV, which was still in bike_specs/
+  after that catalogue was deleted (a bare generator run would have
+  reloaded it). Baseline without it reproduced the DB exactly (2790 specs,
+  894 linked) before the overrides; 899 after. The CSV has since been
+  removed from bike_specs/, so a bare generator run is safe again.
+
+## 2026-10-08 link-gap pass via /linkCoverage (no new CSV)
+
+- `/linkCoverage` (index.js) now reports link rates overall, per spec
+  category (weakest first, with the ten non-linkable labels split out), per
+  brand, brand x category, and the most common unlinked values per
+  category. Use it instead of scripting against the bike endpoints.
+- Worked the five weakest categories (Handlebars, Tyres, Rims, Brake Levers,
+  Freewheel) from its unlinked-value list against the current
+  component_detail rows. 14 new override links (see raleigh / motobecane /
+  bianchi), plus the 2 overrides from 38d64d9 that had never been loaded.
+  1,204 -> 1,220 of 3,973 (30.3% -> 30.7%; 40.3% of linkable specs).
+  Handlebars 9.5 -> 11.1%, Tyres 12.8 -> 14.7%, Rims 18.9 -> 19.7%,
+  Freewheel 21.5 -> 26.7%, Brake Levers unchanged at 20.8%.
+- Method: regenerate all 20 CSVs before and after, diff the summarizer's
+  "Linked specs" sections; the only differences were the intended rows.
+  Load was back-fill only (0 inserts, 16 bike_spec UPDATEs).
+- Pattern worth keeping: fixed track cogs are Single Sprockets rows, but the
+  CSV label is Freewheel, so they link through `COMPONENT_OVERRIDES.Freewheels`
+  pointing at a Single Sprockets id (the matcher only searches the label's
+  own category). Same trick as the Road Ace 600AX cassette.
+- Side effect of the load: `bike_spec_label` "Brake Levers" sort_order moved
+  50 -> 55 because it was not in `LABEL_ORDER` (unlisted labels get a
+  trailing slot after Extras). Fixed the same day: added it to `LABEL_ORDER`
+  directly after 'Brakes', regenerated and reloaded, so it now sorts
+  between Brakes and Front Derailleur and the labels after it shifted down
+  one.
+- What is left in these categories is almost entirely generic text ("Light
+  Alloy", "14-28T", "Course levers", bare brands) or models with no DB row
+  (lists in the brand files). Next gains need component catalogue ingests
+  (ITM, Kusuki, Rigida, Araya, Ukai, FIR, Dia-Compe racing levers, Vittoria,
+  Panaracer), not overrides.
+
+## Super Record ranges widened for a 1979 catalogue (2026-10-08)
+
+Ingesting the 1979 Colnago sheets (first pre-1980 catalogue with bare
+"Campagnolo Super Record" group values) showed two overrides were anchored
+on their first user rather than on the DB dates:
+
+- Rear Derailleurs 'campagnolo super record' started at `{ to: 1983 -> 4149 }`,
+  the PAT. 80 row dated 1980 only; a 1979 bike would have inherited it.
+  Now `{ to: 1979 -> 4148 1st gen (1974-79) }, { 1980-83 -> 4149 }, { from
+  1984 -> 4152 }`. 1981 Kalkhoff unchanged.
+- Brake Levers 'campagnolo super record' was a flat 231 (post-'83 shield
+  hoods, 1983-87) from the 1986 Cinelli work. Now `{ to: 1982 -> 232 pre-'83
+  globe hoods (1974-83) }, { from 1983 -> 231 }`. 1986 Cinelli unchanged.
+- Added 'campagnolo record' entries (Front/Rear Derailleurs, Brake Levers,
+  Seat Posts) ranged on the Nuovo Record generations, because the bare
+  value otherwise either fails (ambiguous) or, for levers, exact-matches a
+  1994 row titled just "Campagnolo Record". Same shape as the existing
+  'campagnolo nuovo record' entries.
+
+Regression over all 20 loaded catalogues: one change, the 1982 Raleigh Gran
+Sport brakes (see raleigh.md), which was a missing link, not a moved one.
+
+## Multi-word brand names from the filename (2026-10-09)
+
+`FILENAME_PATTERN` allows only letters in the brand token, and
+`parseFilename` capitalised it, so `1984_derosa_spec.csv` loaded as brand
+"Derosa" with a "1984 Derosa catalogue" source. Added `BRAND_NAMES` in the
+generator (token -> display name, currently `derosa` -> "De Rosa") and
+fixed the loaded rows by one-off UPDATE. Any future brand whose name has a
+space or internal capital (Bottecchia is fine; "Le Cyclo", "Dawes Galaxy"
+style names are not) needs an entry there before its first load, since
+bike_brand.title and the data_source label both derive from it and a
+mismatch on re-run mints a duplicate brand.
+
+## C-Record overrides ranged (2026-10-09)
+
+Bare "Campagnolo C-Record" values were linked by flat overrides to the
+first-generation rows (RD 4096 0102050 1985-86, crank 1483 1985-86, levers
+212 0118065 1985-86, shifters 5970 Retro-Friction 1987-91) whatever the
+catalogue year. Ranged on the DB dates for the 1989 De Rosa:
+
+- Rear Derailleurs: to 1986 -> 4096; 1987-89 -> 4098 A010 Corsa Record 2nd
+  gen; from 1990 -> 4133 R010.
+- Cranksets ('campagnolo c record' and the 1987 Bianchi 'campagnolo c
+  record 53 42t'): to 1986 -> 1483; from 1987 -> 1482.
+- Brake Levers: to 1986 -> 212; from 1987 -> 214 Corsa Record (Power Grade).
+- Shifters: to 1986 -> 5969 C-Record Friction; from 1987 -> 5970.
+- New: Brakes 'campagnolo c record delta' -> 560 Delta C-Record (1986-93).
+
+Loaded rows moved by one-off UPDATE: 1987 Bianchi Mondiale / X4 RD and
+crank (4 rows), 1984 De Rosa shifters (1 row). The 'campagnolo c record
+180' (1986 Colnago) and 'campagnolo record corsa' (1986 Cinelli) keys stay
+flat on the first-generation rows: both catalogues are 1986.
+
+
+## Same value linked on some bikes, NULL on others — 2026-10-20
+
+Query: `GROUP BY label, value_text HAVING linked > 0 AND unlinked > 0` over
+`bike_spec`. Eight mixed values; three were gaps, five are deliberate.
+
+Fixed (7 rows, guarded NULL-only UPDATEs; overrides extended so a regenerate
+agrees with the DB):
+- Stem 'new 3ttt record alloy' (1976 Raleigh Professional Mk IV) -> 6416:
+  range 1975 -> 1975-76, the 1976 catalogue repeats the 1975 text.
+- Front Derailleur 'raleigh sun tour compe v' (1979 Raleigh Grand Prix, Super
+  Grand Prix, Record Ace) -> 2603: range 1977-78 -> 1977-79, as 1978.
+- Chain 'sedisport' (1987 Raleigh Sirocco 12, Ventura 12, Record Ace 12) ->
+  1402: new override from 1980. Two rows now exist (8765 Sedis Sedisport,
+  1979; 1402 Sedisport Delta, 1980), so the matcher calls the bare value
+  ambiguous and nulls it, while the 1984 Raleigh and 1987 Bianchi links to
+  1402 pre-date 8765. 1402 kept for 1980+ on the grounds that Delta replaced
+  the plain Sedisport; earlier years keep the matcher result. "Sedisport
+  Black" (1987 Raleigh tourers) is a different string and stays unlinked.
+
+Deliberate, left mixed: Gran Sport front 1973 Bianchi (row dated 1978-85),
+Positron rear 1978 Raleigh (row dated 1980), Campagnolo / Campagnolo Record
+seatposts 1993 Bianchi (row ends 1985), HG 13-23T 7-speed cassette on the 1990
+Bianchi Alfana (only the Virata is CS-HG90).
+
+## Near-match audit: same part with extra words, linked on one bike only — 2026-10-20
+
+The exact-text audit above (same `value_text`) missed values that differ by a
+qualifier, e.g. 1987 Raleigh Maverick 18 Pro headset "Tange MTB-225 fully
+sealed" (NULL) vs Randonneur 18 "Tange MTB 225" (-> 3154). The matcher only
+links when a whole component title fits inside the value, so trailing words
+("fully sealed", "DT", "alloy", a colour) block it. Search: per label, an
+unlinked value that contains a linked value (same label, one component id,
+linked year range covering the bike's year). 17 rows fixed with ranged
+overrides and guarded UPDATEs:
+- Headsets 'tange mtb 225 fully sealed' -> 3154; 'shimano 600 alloy' (1986
+  Prestige / Competition) -> 3090.
+- Brakes 1986 Portage 'shimano deore xt cantilever with gumhoods' -> 980;
+  1986 Sportif / Pursuit / Record DC630N wordings -> 8083 (the 1985 pick);
+  1973 / 1974 Peugeot 'mafac racer professional' / 'mafac racer forged' -> 838.
+- Shifters 1986 Pursuit 'shimano z401' and Olympian 'z401 stem mount' -> 6194;
+  Alyeska 'shimano z408 dt' -> 6195.
+- Chains 1987 Maverick 'suntour z' -> 7821; 'sedisport black' (1987 tourers)
+  and 'sedisport gold' (1983 Team Replica) -> 1402, as bare 'sedisport' 1980+.
+
+Left unlinked on purpose (judgment, say if you disagree): brand-only
+"Selle Royal ..." saddles (only the bare brand row exists); "Sedisport
+Narrow" (1983) and "Sedisport 270 black" (1990 Bianchi), which may be a
+different chain; Marathon "Shimano 401" (not stated as Z401); values that
+lack the brand or model of the linked sibling ("14-22", "Large flange quick
+release", "Wide Flange Alloy", "Course with toe clips and straps", "27 x
+1-1/4 alloy 36 hole", "Weinmann 700C Alloy", "Forged dural, anodised, hidden
+expander"); "3ttt Competizione" vs "...Aero"; plain "Engraved Italienne
+Alloy Bend" (Raleigh's own, not the SR Custom bar); 600 AX shifters vs 600EX.
+
+Huret New Success (1987 Raleigh Randonneur 18), added the same day: three
+specs linked from the DB rows alone: rear 4412 Sachs Huret ARIS New Success
+1st Gen. (the only New Success row dated 1987; 4402 is 1985, 4403 the 1980
+touring), front 2439 ARIS New Success (the only New Success front, undated),
+shifters 6110 ARIS New Success (type 1, 1987-90; 6111 has the same title and
+looks like a duplicate to merge on the component side). The 1985 Sachs-Huret
+catalogue that might date these is not retrievable (see huret.md). The Zenith /
+Granada "Huret Rival" front stays unlinked: the Rival fronts are dated 1980,
+1984, 1989 and 1990, none 1987.
+
+
+Brooks saddles (2026-10-20): 1987 Raleigh Randonneur 18 "Brooks Professional,
+honey finish, pre-softened" -> 5295 Brooks Professional pre-softened, via a
+1987-90 ranged Saddles override. The row is dated 2000 (velobase), treated as a
+misdate; the saddle is in the 1987 catalogue itself. The Brooks saddle rows are
+all velobase with one-year or no dates (Team Professional 2000, B17 Champion
+Standard 1898, B17 Narrow 1910, many NULL), so 1970s Raleigh links to
+5303 / 5304 / 5310 / 5315 sit on rows whose years contradict the bike. No
+Brooks catalogue covering 1960-2011 was found: the blog's cdn.brooksengland.com
+PDFs (1926, 1933, 1935, 1957, 2012-2015) are dead (Brooks moved to Shopify;
+Wayback not retrievable from here), ebykr has Brooks catalogues 1890-1938 plus
+a one-page Bikecology 1981 retailer sheet. Still unlinked on purpose: "Brooks
+CR3" (no row), "Brooks B-15" (Champion Standard / Narrow / Swallow ambiguous),
+"Brooks Professional or Ideale 90", generic "Brooks leather" / padded vinyl.
+
+## Link pass after the 2026-10-21 component catalogue ingests
+
+- Regenerated every catalogue and compared link counts with the DB; checked the remaining
+  unlinked specs against the brands just ingested (Brooks, Bikecology 1976 / 1980, Palo Alto
+  1976 / 1981, Bike Warehouse 1978).
+- Linked (guarded UPDATE on bike_spec_id, NULL only; overrides added so regeneration agrees):
+  1977 Peugeot (DE) "Michelin Elan TS 700 x 25 ..." -> 8789 (4; 8789 year_from 1978 -> 1977),
+  1984 Raleigh "Michelin 27" x 1-1/8" Club Tourist" -> 8788 (3; year_to 1983 -> 1984), 1983
+  Raleigh "Sedisport Narrow" -> 1402 (3; same rule as bare "Sedisport"), 1985 Bianchi Strada
+  "Dia-Compe 500G" -> 9106 (1; matcher exact title, no override).
+- Blocked with null: Tyres "High Pressure Gumwall" (1975-76 Raleigh, would hit 9101 IRC High
+  Pressure Gumwall) and Pedals "Lyotard 45 CA or Atom 600 ..." (1977 Peugeot DE, either/or;
+  would hit 9085 Lyotard 45 although the 45 CA is 3811).
+- Left: Brooks B15 (1970-72 Raleigh, Standard vs Narrow), "Ideale 2002 or treated leather",
+  brand-only Unicanitor / HKK / SEDIS / Hutchinson Silk / Super Champion values.
+- Known drift, not chased: 1978 and 1979 Peugeot and 1990 Bianchi have 2-3 more links in the
+  DB than a regeneration produces (harmless; the back-fill never unlinks).
+
+## SR / Sakae model-number links (2026-10-22)
+After re-checking SR Catalog No. 18 (data_source 92, already ingested): Pedals 'sr sp100al alloy' (1979 Raleigh Super Course) and 'sr sp100 alloy quill' (1986 Raleigh Portage, row ends 1982) -> 3922 SP-100AL Silstar; 'sakae sp 150' (1982 Peugeot PX 10 DU / PX 10 S / PSV 10 S) -> 3925 SP-150 (row 1970-80, the only one). Seat Posts: 1986 Raleigh "SR CTP-5 / CPT-5 / Laprade CTP5" -> 5857 CT-P5 (later version, 1980-82, over the 5858 early version). CT-P5E / CPT5E cells left unlinked (no E row). Back-fill only: 1979 Raleigh 33 -> 34, 1982 Peugeot 84 -> 87, 1986 Raleigh 82 -> 86. Most other unlinked SR specs are mid-80s numbering (SAC 310, CRH-310, CXC-624, MTH-100, SP-452 / 518, CLE-100, MTB-224) that needs a later SR catalogue, or generic "SR alloy" text.
+
+## Duplicate override keys and the Stronglight 105 ambiguity (2026-10-23)
+A full regeneration after the 2026-10-23 component loads reproduced every DB link except 8, which
+is the "known drift" noted above (1978 / 1979 Peugeot, 1990 Bianchi). Two causes:
+- **Duplicate keys in `COMPONENT_OVERRIDES`.** A JS object literal keeps the *last* entry for a
+  repeated key, silently. Shifters had `'suntour accushift plus x press'` twice: an unscoped 1990-92
+  -> 6312 entry for the 1990 Bianchi Nyala / Osprey, then a later bike-scoped entry for Project 7 /
+  Grizzly that replaced it, so Nyala / Osprey no longer linked on regeneration. Merged into one
+  bike-scoped list with all four bikes. Two more duplicates found by scanning the object (no link
+  change, both removed): Shifters `'suntour superbe pro'` (ranged 1983-86 -> 6301, then an unranged
+  6301; only 1985 / 1986 bikes use it) and Shifting Brake Levers `'sr sp12 platform alloy'` (3924
+  twice). Scan for this after adding overrides: the same key under one category never errors.
+- **New-row ambiguity.** The six 1977-79 Peugeot "Stronglight 105 Bis ..." cranksets matched both
+  1880 Stronglight 105 Bis and 9079 Stronglight 105 (added 2026-10-21 from the Palo Alto 1976
+  catalogue), so the matcher refused to pick. Added ranged 1970-82 -> 1880 overrides for the five
+  value spellings. A row added by a component catalogue can make an older bike value ambiguous
+  this way; regenerate and diff links after big component loads.
+- After the fix a regeneration matches 3354 specs, equal to the DB. Remaining difference: 1981
+  Bianchi Super Leggera "Clement Criterium cotton tubular 28"" is 6745 in the DB, but the override
+  (and the 2026-10-20 Clement 1977 record) says 8972 Criterium Cotone; the one-off UPDATE moving it
+  was never applied (the back-fill only fills NULLs). Applied 2026-10-23: bike_spec 6517 -> 8972, and
+  8972 year_to 1977 -> 1981 (source_ref 165, 1981 Bianchi catalogue). DB and regeneration now agree.
+
+## Wrong-part pass from /linkCoverage era check — 2026-10-24
+
+- Headsets: "Campagnolo Record" / "Campagnolo Nuovo Record" / bare "CAMPAGNOLO" went to 2959 "1039, Gran Sport / Record" (1956-60). Overrides now range it: 2959 to 1959, 2963 "1039, Record Strada" 1960-85. 4 specs relinked (1974 / 1975 Motobecane Le Champion and Team Champion, 1983 Bianchi Tipo Corsa).
+- Hubs: Campagnolo Gran Sport went to 3256 "1006 Gran Sport" (1950-55), chosen when it was the only Gran Sport hub. Now 9212 "Gran Sport (1980s)" (La Bicicletta Guida '85/86). 6 specs relinked (1978-81 Raleigh Competition GS, 1983 Bianchi Campione del Mondo, 1985 Bianchi Squadra).
+- Brand-only links removed, as for the Kalkhoff Union / Selle Royal: 1987 Bianchi Sport SX "DID" chain (bare D.I.D row 1355) and 1973 Falcon Super Tourist 82 / 83 "Sturmey-Archer 3-speed" hubs (bare 1950 Sturmey Archer row 3593); both keys set to null.
+- Found by listing links whose bike year is more than 4 years outside the part's dates. Most other hits are velobase's single-year decade dating ("1980" for the 1980s). Part dates corrected from that catalogue evidence (same day): Stronglight 49D 1895 to 1936-1979 (1973-79 Peugeot / Motobecane), Brooks Team Special 5304 from 1971 (1971-76 Raleigh), Mavic Montlhery Route 5093 from 1973 (1973-74 Peugeot), Ofmega 3150 Ambassador 9159 1978-85 (1978 Bianchi), Campagnolo 1052/SR 2313 from 1975 (1975-76 Raleigh, 1978 Bianchi). With 2313 redated, the 1975-76 Raleigh Team Professional "Campagnolo Super Record 12 Speed" front derailleur now links to it (new ranged Front Derailleurs override; +2 links).
+
+## Framesets removed — 2026-10-27 (user decision)
+
+- Deleted 23 frameset bikes (76 bike_spec rows, 1 component link: Cinelli 165's
+  headset -> 2968): Colnago 1979 290 Nuovo Mexico; Colnago 1986 309 Super, 310
+  Superissimo SLX, 311 Mexico, 312 Regal, 313 Master, 314 Krono CX; Colnago 1988
+  744 Carbon Volo, 745 Master, 746 Masterpiù, 747 Master Krono 26"-28", 748
+  Special Krono 26"-28", 749 Conic SLX Total Spiral, 750 Esamexico, 751
+  Superissimo SLX, 752 Super, 753 Super Sprint Frameset, 754 Duall, 755 Master
+  Mountainbike; Cinelli 1986 165 SLX Super Corsa Frameset; Bianchi 1990 401
+  Mondiale Frameset; De Rosa 1989 336 Professional SLX ("frameset or complete
+  bicycle", bars / stem / rims / tyres only, user chose to remove) and 337 Pista.
+  Found by category (Frameset / Road (Frameset) / Time Trial Frameset / Track
+  frameset / Road Racing frameset) and title; nothing else referenced them.
+- The rows stay in the six CSVs, so all 23 titles are in `NON_ROAD_SKIP`
+  (keyed by display brand: '1989|de rosa'); re-generating each catalogue shows
+  them in the "Skipped" line. The 1987 Colnago framesets were never loaded.
+- Framesets are now out of scope in the skill's step 0.
+
+## Ladies' / mixte scope check — 2026-10-28
+
+After ladies' and mixte road / touring models were put in scope (SKILL.md scope check), every brand's notes
+were checked for models held out under the old rule. Only Peugeot had any (1975-84, 42 bikes loaded; see
+peugeot.md). Raleigh prints its ladies' versions in the gents' spec columns: loaded combined as "... & DL
+100L" in 1974-76, and inside the 1972 Record DL 130 (saddle "Leather-Racing (gents), Mattress (ladies)") and
+1987 Ventura 12 (Gents + Lady's) rows; the 1971 DL-115L / DL-130L and 1973 DL 100L appear only in the text.
+Raleigh 1983 Medale 5 & 10 Ladies, Colnago 1986 Lady Sport and Falcon 1973-74 Models 69 / 71 were already
+loaded. Battaglin Turismo (mixte city) and Falcon 83 / 89 (utility, deleted with their men's 82 / 88) stay out.

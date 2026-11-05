@@ -1,0 +1,301 @@
+---
+name: ingest-component-catalog
+description: Read a scanned manufacturer component catalog (PDF or a folder of page JPGs, e.g. Campagnolo Catalogo N. 12/13/14) and reconcile it with the component_detail table: list every component with DB category, part-numbered title, description and year, diff it against existing rows by part number, then apply year corrections and any genuinely new rows as idempotent SQL. Use this whenever the user drops in a component catalog, price list or parts book and asks to analyse it, list its components, "see what we can ascertain", diff it against the DB, or fix component years from a catalog. Not for bike catalogs (bikes with specs) — that is ingest-bike-specs.
+---
+
+# Ingest a component catalog
+
+A manufacturer catalog is evidence about components: which part numbers
+existed, what they were called, and which years they were on sale.
+`component_detail` is populated from several sources — a velobase crawl and a
+growing set of catalogues, each tracked via `source_ref` into `data_source`
+(`SELECT * FROM data_source`) — and for most brands the velobase crawl already
+has most parts, so a catalog's job is usually confirmation, year bounds, and
+the occasional missing part. But a catalog is not merely a correction layer on
+top of velobase: if the brand or part isn't in the DB at all yet, the catalog
+is the first and only source for those rows, inserted the same way. The job is
+to read it carefully, diff by part number, and change only what the pages
+actually support.
+
+## 1. Make the pages readable
+
+- **PDF**: `pdfinfo` for page count; `pdftotext -f 1 -l 3 file - | wc -c`
+  to check for a text layer. Nearly all of these are scans with none, so
+  inspect them visually with the available PDF or image viewer, in batches that
+  fit its limits. Needs poppler (`brew install poppler`) for rendering.
+- **Folder of JPGs**: bind them into one PDF first so they can be read in
+  batches instead of 40 separate calls:
+  `scripts/bind-images-to-pdf.sh <folder> <out.pdf>` (downscales to 1800 px
+  with sips, converts each to PDF, merges with pdfunite). Sort order is the
+  filename order; print the page→file map so you can cite pages.
+- Pages are often rotated 90° in the scan; they are still legible. Later
+  bound-in pages may come from a different printing (N. 12 had one).
+
+## Keep the run cheap
+
+Reading scanned pages is the expensive part (roughly 1.5-3k tokens per page
+image, and everything in context is re-sent every turn). So:
+
+- **One catalogue per session.** Don't carry a previous catalogue's pages or
+  diff into the next one; start fresh.
+- **Triage pages first.** Read the contents/index page and a quick skim, and
+  skip covers, adverts, dealer lists, price-only pages, tool/cable/clip
+  pages and exploded diagrams that are out of scope (see step 2). Note the
+  skipped page numbers in the `known-catalogs` entry.
+- **Transcribe in subagents, not the main context.** For more than ~20 pages,
+  use Codex subagents on batches of 10-15 pages each, in parallel. Each reads
+  its pages and writes a compact
+  JSON/CSV to the scratchpad (`page, category, part_no, name, description,
+  year_hint`), returning only the file path and a one-line count. The main
+  agent then reads those files, never the page images. Spot-check any page
+  where a part number or year looks doubtful by reading that page yourself at
+  full size; small-print part numbers are where cheap models misread.
+- **Don't go below 1800 px** in `bind-images-to-pdf.sh`; part numbers are small
+  and a re-read of an illegible page costs more than the saving.
+- **Diff in a script, not by eye.** Feed the transcription file to
+  `scripts/component-diff.js` (or a small scratchpad script that loops part
+  numbers through it) and read only the exceptions: missing, year mismatch,
+  description differs. Don't page through matching rows in chat.
+- **Write the listing to a file and summarise in chat.** The step 2 table can
+  be long output; put the full table in the scratchpad and show only the
+  "what we can ascertain" section plus counts, unless the user asks for the
+  table.
+- **Don't retry an unreachable DB** (see Gotchas). Write the SQL file, say the
+  DB was unreachable, and stop; a retry loop spends turns for nothing.
+
+## 2. List the components
+
+Produce the listing before touching the DB (in the scratchpad per the section
+above, summarised in chat), as a table per category with these columns:
+
+- **Category** — the DB's `component_category` title (Rear Derailleurs,
+  Front Derailleurs, Shifters, Hubs, Brakes, Cranksets, Bottom Brackets,
+  Headsets, Pedals, Seat Posts, Chains, Freewheels, Rims, Tyres, Saddles,
+  Stems, Handlebars, Brake Levers, Chainrings, Single Sprockets, Cassettes,
+  Wheel(sets), Geared Hubs, Shifting Brake Levers). Dropouts, frame
+  fittings, cables, bands, pump clips and tools have no category: list them
+  in one summary line and say they are out of scope.
+- **Title** — in the DB's convention `Campagnolo <part no>, <name>`, e.g.
+  "Campagnolo 1012/4, Gran Sport". Include sub-numbers when the catalog
+  sells them separately (1001/1 front hub vs 1001/2 rear hub).
+- **Description** — what the catalog says: what the part is, what it is
+  sold with, cable lengths, threadings, sub-part numbers if useful.
+- **Year** — the catalog year, and separately what the catalog implies
+  (a Bartali 1948 photo means the part predates the catalog; a part present
+  in N. 13 and absent from N. 14 has a year_to between them).
+
+Close the listing with a "what we can ascertain" section: what is new in
+this printing vs the previous one, what has been dropped, and what the
+catalog's own dating implies. Then stop and let the user ask for the diff.
+
+## 3. Diff against the DB
+
+`scripts/component-diff.js '<title regex>'` prints matching rows with
+category, years, description tail and source_id. Query by part number, not
+by name — names drift (the 1040 track headset is titled "Record Pista #
+1040" in the DB but was Gran Sport in 1960). A useful regex for a numbered
+range: `'10(3[4-9]|4[0-9]|5[0-3])(/|,| |$)'`.
+
+Read the DB rows' own `year_from`/`year_to` before judging: the existing
+dates are often per-version and are the thing you are reconciling against
+(check `source_ref` — join to `data_source` — if it matters which source set
+them). Classify each catalog item as:
+
+- **Present, years compatible** — no change to years, but still check the
+  next bullet for enrichment.
+- **Present, catalog extends the years** — a part listed as current moves
+  `year_to` up to the catalog year; a part listed earlier than the DB's
+  `year_from` moves that down. A part missing from a later catalog bounds
+  `year_to` at the previous catalog's year, no further.
+- **Present, DB `year_from` is earlier than the evidence** — velobase years
+  are mostly decade buckets (1950, 1960, 1970, 1980, 1990; often the same
+  value in both columns) meaning "sometime in that decade", not a measured
+  start. Treat them as weak, and move `year_from` **later** when the
+  catalogues refine or contradict them:
+  - the catalogue says the part is new ("nouveauté", "new for 19xx",
+    "introduced"): use that year;
+  - the part is absent from an earlier catalogue that lists the brand's
+    range in that category in full (a real catalogue, not a leaflet, an ad
+    or a bike spec list) and is in this one: set `year_from` to the
+    earliest year the part is attested anywhere (this catalogue, or a dated
+    bike spec, test or leaflet). That is an upper bound on the true start,
+    but better than a bucket the catalogues contradict;
+  - never move it past the earliest attestation. If sources conflict (a
+    "nouveauté" line in 1980 but a 1976 test already citing the part), keep
+    the earliest attested year and flag the conflict instead of moving;
+  - don't move it later on absence from a partial source, or on a
+    `year_from` a catalogue set deliberately (check `source_ref`) without a
+    stated start.
+  List every later move in the diff as "`year_from` N -> M, because ..." and
+  record the old value in `known-catalogs.md` so it can be reverted. The
+  bike generator's year-ranged overrides must move with it (see Gotchas).
+- **Present, catalog adds detail years alone don't capture** — a match by
+  part number is not just a years check. If the catalog's title or
+  description carries something the DB row doesn't (a model name, a
+  material, a cable length, a sub-part breakdown, what it's sold with), fold
+  it in even when the years already agree:
+  - **Velobase is not the authority.** Its titles and descriptions are a
+    crawl, often bare, sometimes garbled ("SO61", "(version 2)" with no
+    version 1, a double space, a reversed hanger note). A manufacturer
+    catalogue outranks it. Rewrite titles and descriptions outright when
+    the catalogue gives a better one: fix typos, drop orphaned or
+    unsupported suffixes, adopt the catalogue's model name and code, and
+    replace wrong, redundant or confusing text rather than appending a
+    correction after it. Propose these in the diff like any other change;
+    they don't need a separate confirmation round.
+  - Keep velobase facts that are independent evidence and not contradicted
+    by the catalogue, chiefly measured weights ("(Actual)", "(avg)").
+    Drop a velobase "(Spec)" weight that just repeats a catalogue figure.
+  - **Same name, thin description** — rewrite the description to carry the
+    catalog's detail (what it is, material, capacity, weight, codes)
+    instead of leaving it as bare as the crawl left it.
+  - **Don't cite the source in the description text.** `source_ref` ->
+    `data_source` already carries which catalogue/edition a row came from,
+    and the API returns it (`source_label` on `/componentdetail`), so a
+    trailing `"(Zeus Catálogo 102, 1973)"` or a leading `"1982 catalogue:
+    ..."` is pure redundant noise — write the spec directly ("boron steel
+    axle, 68/70mm, 321g"), not "1982 catalogue: boron steel axle, 68/70mm,
+    321g". The exception is a part whose *spec itself differs* between two
+    catalogue editions (a BB that's 116mm in the 1982 printing and 119mm in
+    1989) — there, naming each edition is the only way to carry that
+    distinction, since `source_ref` is a single FK and can't represent two
+    sources at once. When you do that, pick the primary/most-authoritative
+    edition as `source_ref` and name the other edition inline.
+  - **Present under another name** — same part number, different title
+    (Record vs Gran Sport). Part numbers are reused across eras, so pick
+    the title the catalogues best support for that row's years and mention
+    the other name in the description; don't duplicate the row.
+  - Earlier catalogue notes on the row (from our own passes) are ours to
+    restructure too: when a row gets crowded with repeated "1981 catalog:
+    ... Sep 1981 catalog: ..." fragments from before `source_ref` existed,
+    drop the ones that are pure citations of the row's own `source_ref` and
+    consolidate the rest into one coherent description, keeping dates only
+    where they distinguish genuinely different specs (see above).
+  - Record a rewrite's old title in `known-catalogs.md` (as with deleted
+    rows), so a later source using the old name can still be matched.
+  - **A retitle must also rewrite `search_text`** in the same guarded
+    UPDATE, to `node scripts/search-text.js "<new title>" "<brand title>"`.
+    `search_text` is the eBay query `/getTopListings` sends verbatim, so a
+    retitled row with a stale one searches eBay for the old name (the
+    2026-10-09 sweep found 37 such rows, e.g. "3ttt AR84, Mod. 84" still
+    searching "3ttt Record 84"). In-app search (`/searchComponents`) matches
+    title + category + brand, not `search_text`. Don't append the old name
+    as an alias: extra words narrow eBay results. The old name lives in
+    `known-catalogs.md` and, if useful, the description.
+- **Genuinely missing** — only for categories that exist. Confirm by part
+  number and by name before inserting.
+- **Apparent duplicates, placeholders, or rows the catalog shows don't
+  belong** (two rows, same title, different source_id and weight; a row
+  that's actually a bare placeholder superseded by a numbered one; a part
+  the catalog's own text says never existed as described) are not something
+  to just leave alone by default. Deleting or merging them is a normal,
+  available outcome of a catalog reconciliation — the `known-catalogs.md`
+  history has many of these (the 2026-09-28 Campagnolo dedupe passes deleted
+  dozens of rows). Prefer a distinguishing title suffix over deletion only
+  when the rows are each independently attested (two genuine
+  catalog-photographed variants); otherwise propose the merge/delete plan
+  and get the user's go-ahead (destructive statements need review, same as
+  any DELETE) before running it.
+- **Existing row, especially velobase-sourced, absent from this catalog** —
+  absence from one catalog alone is weak evidence (see the year-bounding
+  bullet above; it just caps `year_to`, it doesn't imply the part never
+  existed). Only raise it as a merge/delete candidate when the absence
+  *combines* with an independent duplicate/placeholder signal — bare or
+  generic title, no part number, a near-identical row elsewhere with a real
+  part number, or the catalog's own text contradicting it. In that case
+  treat it exactly like the bullet above: propose the merge/delete plan and
+  wait for confirmation before running it. Don't propose deletion on
+  absence alone.
+
+## 4. Apply as idempotent SQL
+
+Write one `.sql` file per catalog in the scratchpad, then
+`node scripts/load-sql.js <file>` and verify with `scripts/db-query.js`.
+
+- `UPDATE ... WHERE component_id = N AND year_to < Y` style guards so a
+  re-run is a no-op.
+- Inserts mirror an existing row of the same brand/category: `brand_id`,
+  `category_id`, `group_id` (look up `component_group` by title),
+  `search_text` = the output of `node scripts/search-text.js "<title>"
+  "<brand title>"` (title minus bracketed notes and commas, brand prepended
+  if the title lacks it, no category; `require('./scripts/search-text')
+  .ebaySearchText` when generating SQL in a script). The same applies to
+  every row whose `title` changes (see the retitle bullet in step 3): set
+  `search_text` alongside `title` and `source_ref` in that UPDATE.
+- **Provenance**: look up this catalogue's `data_source` row —
+  `SELECT source_id FROM data_source WHERE source_type = 'catalogue' AND label = '<label>'`
+  (label convention: `"<Manufacturer> <short catalogue name> (<year>)"`, e.g.
+  `Campagnolo Catalogue n. 18, English edition (c. 1985)` — match the
+  relevant brand file's section headings under
+  `references/known-catalogs/`, indexed from `references/known-catalogs.md`).
+  If it doesn't exist yet, insert it
+  first (`source_type = 'catalogue'`, `citation` = the source filename/path).
+  Set every new row's `source_ref` to that id, and also set it on every
+  existing row this catalogue changes (years, title or description) —
+  `source_ref` means "last source to change this row", so the catalogue
+  replaces velobase or an earlier catalogue there. Add `source_ref = <id>`
+  to the same idempotency-guarded UPDATE rather than a separate unguarded
+  one, so a re-run doesn't retag rows nothing changed on. Rows that only
+  matched with no change keep their `source_ref`. This catalogue does not need
+  to be a correction to an existing velobase row — if the brand or part isn't
+  in the DB at all, these inserts are the first and only source for it.
+  Still also give every new row a `source_id` — `component_detail.source_id`
+  is the load-idempotency key regardless of source, so it still needs a
+  unique value — but generate it as a plain UUID (`SELECT UUID()` in the SQL,
+  or `crypto.randomUUID()` if scripting it) rather than the retired
+  `MANUAL-<CODE>-<YEAR>-<part>` naming. That naming existed only to dodge the
+  velobase crawler's GUID space; `source_ref` now carries the actual
+  provenance, so a `MANUAL-...`-shaped id buys nothing a UUID doesn't.
+  Since `source_ref` is the provenance record, don't also restate the
+  catalogue name/date inside the `description` text you're writing in this
+  same statement — see the "don't cite the source in the description text"
+  bullet above.
+- **Comments on their own lines.** `load-sql.js` splits on `;` followed by
+  a newline; a trailing `-- comment` after the semicolon merges statements
+  into one batch. MySQL has executed them anyway so far, but the statement
+  count it reports is then wrong, and it is not something to rely on.
+- Description changes are idempotent either way: an append is guarded
+  with `description NOT LIKE '%Catalogo N. 14%'`; a rewrite sets the new
+  text with `WHERE component_id = N AND description <> '<new text>'`.
+  `description` is `varchar(255)` and silently truncates, so check
+  `CHAR_LENGTH` of the new text before loading.
+- **Deletes and merges are in scope, not just inserts/updates.** Before
+  deleting a row: check `bike_spec.component_id` for links to it and
+  `COMPONENT_OVERRIDES` in `scripts/generate-bike-update-sql.js` for
+  references to its id — move them to the surviving row first (an override
+  or a linked spec pointing at a deleted id silently breaks). Present the
+  DELETE statements for review like any other SQL; nothing here auto-runs
+  a DELETE without the user seeing it first.
+
+Report the result as a table of row, part, change, with any `year_from` moved
+later called out on its own. State which changes came
+from a different catalog than the one being processed (they happen: a bike
+catalog can show a brake still fitted years after the DB's year_to).
+
+## 5. Record it
+
+Add an entry to the relevant brand file under `references/known-catalogs/`
+(see `references/known-catalogs.md` for the index — create a new brand file
+there if this is the first catalog for that manufacturer): catalog, year,
+source file, what was new/dropped vs the previous printing, rows added, rows
+adjusted, rows deleted/merged and why (include the deleted row's id and
+source_id, so a later catalog that seems to reintroduce it can be recognised
+as the same part), and anything left unresolved. Only read/touch that one
+brand file, not the others — this is what keeps each run's context small.
+Nothing in the repo changes for a catalog, so there is normally nothing to
+commit; the SQL stays in the scratchpad.
+
+## Gotchas
+
+- DB access needs your IP in the RDS security group; `connect ETIMEDOUT`
+  means it changed (README).
+- The PDF or image viewer may need poppler's `pdftoppm` for rendering.
+- A catalog is a first-appearance record, not a start date. Moving
+  `year_from` **earlier** needs a catalogue that is itself earlier. Moving it
+  **later** is expected for velobase decade buckets the catalogues contradict
+  (see "DB `year_from` is earlier than the evidence" in step 3), but the new
+  value is still only an upper bound on the start: use the earliest
+  attestation and record the reason.
+- Bike-catalog overrides (`COMPONENT_OVERRIDES` in the bike generator) that
+  pick a version by year must agree with these rows' years; if you change a
+  component's years here, check the bike skill's ranges.

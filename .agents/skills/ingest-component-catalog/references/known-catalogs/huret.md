@@ -1,0 +1,408 @@
+# Huret catalogs processed so far
+
+## Huret "Accessoires Cycles, Cyclomoteurs, Motos" — 1973 (disraeligears.co.uk, 28 scans)
+
+- `data_source` 95, label "Huret Accessoires Cycles Cyclomoteurs Motos
+  (1973)". Source:
+  https://www.disraeligears.co.uk/site/huret_accessoires_cycles_cyclomoteurs_motos_-_1973.html
+  (scan_01..28). French, "1973" on cover, Huret 60 av. Félix-Faure,
+  Nanterre; stamped by UK agent Delite Accessories Ltd, Wickham Skeith,
+  Suffolk. Exploded diagrams with reference numbers, capacities, some
+  weights; no prices.
+- Listed: Jubilee rear 2200 / 2252 / 2240 (133g) and long cage 2248 / 2253 /
+  2254; Jubilee front 500 (80g); front 700; Allvit 1900 / 1900 D; Super
+  Allvit 1999; Svelto 2000 / 2000 D and 2030 (small wheel); levers 1882 /
+  1884 / 641, long 1826 / 1886 / 1887, Jubilee 1567, Stick-Shift 1885 /
+  1888, stem levers 1512-1574, bar-end 2300 / 2301; out of scope: cable
+  clips and guides, dropouts 230-235 / 902-905, chain guard 643, spoke
+  protectors 996 / 998 / 999, wing nuts 892 / 895, chain tensioners 1112 /
+  1121, speedometers 4100-4900 and drives 6000 / 6500, display boxes.
+- All Huret rows (brand 139) were velobase. Retitled (old titles): 4303
+  "Huret Jubilee (first version; shorter spring on parallelogram)" and 4304
+  (black) -> codes 2200 / 2252 / 2240 added; 4307 "Huret Jubilee (long pulley
+  cage)" -> 2248 / 2253 / 2254, NULL -> 1973; 2396 "Huret Jubilee (5 holes in
+  outer cage plate)" -> Jubilee 500; 4292 "Huret Super Allvit" -> 1999; 4293
+  "Huret Svelto (2nd version)" -> 2000 / 2000 D; 6077 "Huret Jubilee"
+  (shifter) -> 1567 (manette double luxe); 6071 "Huret Allvit (short
+  levers/standard model)" -> 1882 / 1884 / 641; 6062 "Huret Allvit / Luxe
+  (long levers)" -> 1826 / 1886 / 1887. Descriptions on 2395, 2397 (ref.
+  500), 4290 (1900 / 1900 D), 2385 (ref. 700). year_to -> 1973 on 4303,
+  4304, 4290, 4292, 4293, 2385, 6077, 6071, 6062.
+- New (4 rows, 1973): Svelto 2030; Stick-Shift 1885 / 1888; stem-mount
+  levers 1512-1574; bar-end controls 2300 / 2301.
+- Bike links (user decision): 1973 Raleigh "New Huret Jubilee", 1974
+  Motobecane "HURET JUBILE", 1975 "HURET JUBILE, wide ratio" front
+  derailleurs repointed 2395 (4-hole, 1977-80) -> 2396 (5-hole, 1972-76) on
+  the rows' own dates; overrides now year-ranged (<=1976 2396, >=1977 2395).
+- Left: 2394 "Huret Alvit" front (1961-1985, linked 1973 Raleigh; no Allvit
+  front in this catalogue); 4305 / 4306 later Jubilee versions (1970); 4291
+  Allvit Cable Saver; Challenger / Success rows (not in 1973). "ATOM ... with
+  HURET spoke protector" freewheel values (spoke protector out of scope).
+
+## Huret "Accessoires Cycles, Cyclomoteurs, Motos" — 1975 (disraeligears.co.uk, 27 images)
+
+- `data_source` 96, label "Huret Accessoires Cycles Cyclomoteurs Motos
+  (1975)". Source:
+  https://www.disraeligears.co.uk/site/huret_accessoires_cycles_cyclomoteurs_motos_-_1975.html
+  (front cover, inside front cover, page_1..24 = sheets H1-H24, rear cover).
+  Huret et ses Fils, Nanterre, "member of Frexa", French / English, some
+  speedometers stickered "Not available on U.S. market". Reference numbers
+  and capacities, no prices or weights.
+- Listed: rear Challenger 2400 / 2440 / 2448 / 2454 (new), Allvit 1900,
+  Super Allvit 1999 (2.38 chain only), Svelto 2000 (now 13-28T) and 2030 (now
+  13-26T); front Challenger 950 / 951 (new), Standard 900 / 901 (new codes);
+  levers Competition 1733-1736 / 1707 (new), Standard 1898 / 1882, 1899 /
+  1884 / 1879, 661 / 641 C / 1848 C, Challenger 1725-1782 down tube and stem
+  (new), 80mm long 1747-1794 (new), bar-end 2300 / 2301; cable clips,
+  dropouts, spoke protectors, wing nuts, chain tensioners, dropout kits,
+  speedometers out of scope.
+- Not in 1975 vs 1973 (not capped, regional / range split): whole Jubilee
+  range (rear 2200 etc., front 500, lever 1567 — still on 1975 Motobecane
+  bikes), 700 front, Stick-Shift 1885 / 1888, stem levers 1512-1574, long
+  levers 1826 / 1886 / 1887.
+- Retitled (old titles): 4273 "Huret Challenger" (RD) -> Challenger 2400 /
+  2440 / 2448 / 2454; 2388 "Huret Challenger (hinged clamping band)" ->
+  Challenger 950 / 951 (hinged clamping band); 6073 "Huret Challenger
+  (1970's)" (shifter) -> Challenger levers 1725-1782, 1970 -> 1975-1975;
+  6071 "Huret 1882 / 1884 / 641, Allvit & Svelto (standard levers)" -> +
+  1898 / 1899 / 1879 / 661 / 1848 C. year_to 1973 -> 1975 on 4290 Allvit,
+  4292 Super Allvit, 4293 Svelto 2000, 7940 Svelto 2030, 6071, 7943 bar-end.
+- New (3 rows, 1975): Standard 900 / 901 front, Competition levers 1733-1736
+  / 1707, 80mm long levers 1747-1794.
+- Bike links unchanged; added override 'huret challenger stem shifter' ->
+  4273 in Rear Derailleurs (the retitle had stopped the name match for 1975
+  Motobecane Nomade). Left: velobase Challenger variants 2377, 4298, 6064,
+  4300, 4289.
+
+
+## Huret "Accessoires Cycles, Cyclomoteurs, Motos" — 1976 (disraeligears.co.uk, 40 images)
+
+- `data_source` 118, label "Huret Accessoires Cycles Cyclomoteurs Motos
+  (1976)". Source:
+  https://www.disraeligears.co.uk/site/huret_accessoires_cycles_cyclomoteurs_motos_-_1976.html
+  (front cover, inside front cover, page_1..36 = sheets H1-H36, inside rear
+  cover gear charts, rear cover). Huret et ses Fils, Nanterre, "member of
+  Frexa", French / English, weights in g and oz, no prices.
+- New vs 1975: Success rear 2460 / 2470 and front 975; Duopar 2600 / 2640 and
+  long cage 2648 / 2654; Allvit Safety 2546 / 2549; Jubilee front 530 (28.6mm);
+  Ratchet levers (down tube 1465-1468, stem 1416 / 1471 / 1472); Challenger
+  Click-In (1349-1354, stem 1363 / 1368 / 1370); 80mm stem levers 1239 / 1240 /
+  1245; 80mm Click-In (1375-1380, stem 1389 / 1394 / 1396); Luxe levers
+  1337-1344. Jubilee range is back (absent 1975): rear 2200 family now 136g
+  (133g in 1973), long cage 145g, front 500.
+- Renumbered: Allvit 1900 -> 2500 / 2540, Super Allvit 1999 -> 2548 / 2554,
+  Svelto 2000 -> 2040 / 2072, Svelto small-wheel 2030 -> 2065; front
+  "Standard" 900 / 901 is now "Club"; Competition levers 1733-1736 / 1707 now
+  "Jubilee / Success". Dropped: Challenger long cage 2448 / 2454, 1975
+  standard lever numbers (1898 / 1882 / 1899 / 1884 / 1879 / 661 / 641 C /
+  1848 C).
+- Retitled (old titles): 4299 "Huret Success" -> Success 2460 / 2470; 4292
+  "Huret Super Allvit 1999" -> + 2548 / 2554; 4302 "Huret Duopar (titanium)"
+  -> Duopar 2600 / 2640 (titanium), NULL -> 1976; 4293 "Huret Svelto 2000 /
+  2000 D (2nd version)" -> + 2040 / 2072; 7940 "Huret Svelto 2030" -> + 2065;
+  2396 "Huret Jubilee 500 (5 holes ...)" -> Jubilee 500 / 530 (5 holes ...);
+  2389 "Huret Success (solid clamping band)" -> Success 975 (solid clamping
+  band), year_from 1977 -> 1976; 2378 "Huret Club" -> Club 900 / 901
+  (velobase 133g Spec dropped, catalogue 163g); 7945 "Huret Competition
+  levers 1733-1736 / 1707" -> Jubilee / Success levers 1733-1736 / 1707; 6066
+  "Huret Ratchet" -> Ratchet levers 1465-1468 / 1416 / 1471 / 1472.
+- year_to -> 1976: 4303, 4307, 4290 Allvit (title kept for the bike-name
+  match), 4292, 4293, 7940, 7945, 6073 Challenger levers, 7946 80mm levers,
+  7943 bar-end. Description only: 4273 Challenger (2448 / 2454 not in 1976).
+- New (5 rows, 1976): 8172 Allvit Safety 2546 / 2549, 8173 Duopar 2648 /
+  2654 (titanium, long cage), 8174 Luxe levers 1337-1344, 8175 Challenger
+  Click-In levers 1349-1370, 8176 80mm long Click-In levers 1375-1396.
+- Deleted (merged): 7944 "Huret Standard 900 / 901" (Front Derailleurs,
+  1975-1975, our 1975 catalogue row, `37ddc8a5-be86-11f1-a2df-02fea3763e8d`)
+  into 2378 Club 900 / 901 — same refs. No links / overrides.
+- Bike links unchanged (regenerated all catalogues: 901 links, identical).
+  Front Jubilee overrides (<=1976 2396, >=1977 2395) still agree with row
+  years.
+- Left: 6077 Jubilee lever 1567 and 4304 Jubilee black (not in 1976); 6071
+  1975 standard levers (Luxe 1337-1344 inserted separately, catalogue
+  doesn't say it's the same lever); velobase Allvit generations 4269-4272,
+  Challenger II / 3rd-version rows, Success-Duopar CPSC fronts (1978+).
+
+## Huret catalogue — July 1981 (disraeligears.co.uk, 10 scans), `data_source` 313
+
+- Source: https://www.disraeligears.co.uk/site/huret_-_catalogue_july_1981.html (images
+  `huret_-_catalogue_1981_scan_1..10_main_image.jpg`; the page also shows thumbnails of other documents).
+  French text; no date on the cover (Huret, 60 avenue Felix Faure, Nanterre, "member of Frexa"), "Juillet 81"
+  printed sideways in the p10 margin. Pages: 1 cover, 2-4 derailleurs and levers, 5 accessories, 6
+  speedometers, 7 "Serie Course" (brakes, levers, freewheels), 8 chainset / BB / pedals / seatpost / hubs,
+  9 Commander preselection, 10 Sachs-Huret Commander. Transcription:
+  scratchpad `dg/huret-1981.csv` (Sonnet subagent, 66 rows). Skipped: speedometers, collars, clips.
+- Marked new: Super Success 2470 S, Duopar alloy / steel 2690-01, chainset 1010, BB axle, hubs 472 / 473,
+  Commander system. Content otherwise close to the c. 1980 English catalogue (`data_source` 188).
+- Merged: 8490 "Sachs Huret Club 1000-01" (1984, `data_source` 156, no links / overrides) into 2379, retitled
+  "Huret Club II" -> "Huret Club II 1000-01 / 1001-01", 1978-1980 -> 1978-1987 (same refs and 143g in 1981
+  and 1984; 1986-87 Peugeot print "Club 2"). The S.P.P. version is "Club 1000-01 CPSC", 158g (see below).
+- year_to -> 1981: 4298 Challenger II rear (2440 / 2400), 2380 Challenger II front (1050-00), 6064
+  Challenger II levers (548-01 / 546-01), 6066 Ratchet levers (1466 / 1468); all were 1980.
+- year_from 1984 -> 1981: 8491 Jubilee / Success / Duopar levers 1164 / 2390 / 2380, 8484 Commander 12900,
+  8495 Commander 13031, 8498 Sachs Orbit 12961 2-speed hub.
+- Added (1981-1981): 9991 Allvit III 2700 / 2700 H / 2740, 9992 Allvit Safety III 2746 / 2746 H / 2749,
+  9993 Super Allvit III 2748 / 2748 H / 2754, 9994 Luxe levers 1136-01 / 1134-01, 9995 stem levers 1158-01,
+  9996 freewheel 685 / 686 (steel sprockets), 9997 685 D / 686 D (Dural), 9998 hubs 472 / 473, 9999
+  chainset 1010, 10000 pedals 490, 10001 side-pull 342, 10002 centre-pull 343, 10003 brake levers 323
+  (category_brand rows added for Huret in Freewheels, Hubs, Pedals, Brake Levers).
+- Not added: Commander double stem lever 12970 (8494 is the 1984 double lever 13000; may be a renumber),
+  chain 238 (12962), BB axle and seatpost (no ref printed).
+- Bike links made with this pass: 1983 / 1986-87 Peugeot "Huret Club" / "Club 2" x7 -> 2379; 1984 Raleigh
+  "Club brazed-on" x4 -> 8489 (Club S is its braze-on version); 1987 Raleigh "Huret Rival" front x2 -> 8488.
+- Settled 2026-11-01: 2387 "Club CPSC" (1977-78 velobase stub) merged into 8796 "Huret Eco (front)" (the 1981
+  "Club 1000-01 CPSC", 158g; title kept, year_from -> 1977). 4298 "Challenger II" is not 4273: same 2400 / 2440 refs
+  but the 180g redesign (4273 is 255g, linked 1974-76), so a generation; year_from 1970 -> 1978. No Rival, Eco S front or Luxe front in this catalogue.
+
+## Huret "new 82" leaflet — November 1981 (disraeligears.co.uk, 6 scans), `data_source` 314
+
+- Label "Huret new 82 leaflet (November 1981)". Source:
+  https://www.disraeligears.co.uk/site/huret_-_new_82.html (`00_main_images/huret_-_new_82_scan_1..6_main_image.jpg`,
+  1560 x 2220). French / English; every sheet badged "new 82", "NOV. 81" in the margin of sheets 2, 5, 6. Sheets: 1-2
+  Rival set, 3 Eco S set, 4 Eco Mark II set, 5 Sensosaver 3 and Duopar Eco, 6 Eco set. Weights and capacities, no
+  prices. Read directly (6 pages, no subagents). Out of scope: braze-on fittings 3014 (oval) / 3034 (round).
+- New for 1982 per the leaflet: Rival group (rear 2850-00, fronts 1086-00 / Rival S 1056-00 / braze-on 3030-01,
+  lever), Eco S 2830-00, Club AS 1005-01 / 1009-01 (ASM without casing stop), Club S 3040-01 braze-on, Eco TD
+  2820-01, Luxe AS levers (clip, or central boss 3120-00 S / 3130-00 S), Sensosaver 3 (rear 2800-01, lever 1169-00).
+  Luxe A replaces the Luxe lever (9994 Luxe 1136-01 / 1134-01 stays 1981). Disraeli's "Rival 2850-00 1st style 1981?"
+  is a late-1981 release for 1982. The Eco S set is Eco S rear + Club AS front + Luxe AS levers: there is no Eco S front.
+- year_from 1984 -> 1982 (rows first dated by June 1984): 8485 Eco S, 8488 Rival 1086-00, 8489 Club AS, 8493 Rival
+  lever 3252-00, 6112 Luxe AS, 8496 Luxe A.
+- year_from moved later (velobase buckets; revert values): 4401 Rival 2850-00 1980 -> 1982 ("nouveau", absent from c.
+  1980 and July 1981); 4276 Duopar Eco 1970 -> 1980 (absent from the full 1976 catalogue, first in c. 1980; year_to 1980
+  -> 1982); 4301 Huret Eco 1960 -> 1980 (absent from 1973 / 1975 / 1976, first in c. 1980).
+- Retitled: 8489 "Sachs Huret Club AS 1005-01" -> "Sachs Huret Club AS 1005-01 / 1009-01" (search_text too), year_to
+  1984 -> 1987 for the 1986-87 Peugeot Corbier Eco S fronts now linked to it. Descriptions: 8488 (braze-on and Rival S
+  now point to their own rows), 6112 (central-boss refs), 2379 ("sold as plain Club from 1982").
+- Added (brand Huret 139, group NULL): 10004 Eco TD 2820-01 (1982), 10005 Eco Sensosaver 2800-01 (1982), 10006 Rival S
+  1056-00 (1982-84), 10007 Rival braze-on 3030-01 (1982-84), 10008 Club S braze-on 3040-01 (1982-84), 10009 Sensosaver 3
+  lever 1169-00 (1982). The 1982-84 ones end 1984 because the June 1984 catalogue names them inside 8488 / 8489.
+- Bike links: 1984 Raleigh "Huret Club brazed-on" x4 [6177 6200 6223 6245] 8489 -> 10008; Eco S fronts -> 8489 Club AS:
+  1984 Raleigh "Huret ECO-S" Medale / Stratos [6470 6427] (were unlinked), 1986 Peugeot Corbier "Eco S, satin finish"
+  [14899 14919] and 1987 "ECO 5" [15855 15873] (were 8796). Front overrides updated: 'huret club brazed on' 10008,
+  'huret eco s' / 'huret eco s satin finish' / 'huret eco 5' 8489.
+- Left: 12 "Huret Rival" rears (1985-87) on 4279, a bare velobase row with no years duplicating 4401 / 8957 (merge
+  later); 4301 / 4399 Eco duplicate pair (the leaflet's 235 g Eco matches both); front capacity "26T max difference"
+  here vs 16T in the 1984 rows (different measure, left).
+
+## Huret "Nouveau - New" leaflet — September 1982 (disraeligears.co.uk, 8 scans), read 2026-11-01, nothing loaded
+
+- Source: https://www.disraeligears.co.uk/site/huret_nouveau_-_new_-_september_1982.html
+  (`00_main_images/huret_nouveau_-_new_1982_scan_1..8_main_image.jpg`, 1560 x 2251). French / English, "Groupe Sachs",
+  "Septembre 1982" printed in the p8 margin. Sheets: 1-2 Rival set, 3 Eco S set, 4 Eco Mark II set (Eco TD, Club S
+  braze-on, Luxe AS central boss), 5 Commander-Orbit 12-speed (rear, double pre-selection lever, Orbit hub), 6
+  Commander 5/6-speed (rear, single stem lever), 7 Sensosaver 3 and Duopar Eco 2690-01 C, 8 Eco set (Eco rear, Club
+  1000-01 / 1001-01, Luxe A).
+- A reprint of the November 1981 "new 82" leaflet (314) plus the Commander sheets (as July 1981, 313). Every ref,
+  weight and capacity matches rows already loaded from 313 / 314, and every row already reaches 1982, so there were no
+  changes and no `data_source` row. The Commander double lever has no ref (12970 vs 8494's 13000 is still open); the
+  235 g Eco rear again matches both 4301 and 4399. Do not re-read.
+
+## Huret "Nouveau - New" leaflet — June 1983 (disraeligears.co.uk, 8 scans), `data_source` 326
+
+- Label "Huret Nouveau - New leaflet (June 1983)". Source:
+  https://www.disraeligears.co.uk/site/huret_nouveau_-_new_-_june_1983.html
+  (`00_main_images/huret_nouveau_-_new_1983_scan_1..8_main_image.jpg`, 1560 x 2251). "Juin 1983" in the p8 margin.
+- The September 1982 leaflet word for word (same eight sheets, refs, weights and capacities), with the "Groupe Sachs"
+  badge and the Huret logo on the parts replaced by "SACHS HURET". Read directly, no subagents.
+- year_to 1982 -> 1983 (still listed, source_ref -> 326): 10004 Eco TD 2820-01, 10005 Eco Sensosaver 2800-01, 10009
+  Sensosaver 3 lever 1169-00, 4276 Duopar Eco (2690-01 C). No links or overrides on any of them. Every other row on the
+  sheets already reaches 1983 or later. No inserts, no deletes; the Commander double lever still has no ref, and the
+  235 g Eco rear again matches both 4301 and 4399.
+
+## Sachs-Huret "Derailleurs - Speedometers" catalogue — September 1983 (disraeligears.co.uk, 16 scans), `data_source` 327
+
+- Label "Sachs-Huret Derailleurs - Speedometers catalogue (September 1983)". Source:
+  https://www.disraeligears.co.uk/site/huret_derailleurs_-_speedometers_-_september_1983.html
+  (`00_main_images/huret_derailleurs_-_speedometers_1983_scan_1..16_main_image.jpg`, 1560 x 2234). French / English,
+  Etablissements Huret et ses Fils, Nanterre, parts badged SACHS HURET; "SEPTEMBRE 1983" in the p16 margin. Transcribed
+  by one Sonnet subagent (scratchpad `dg2/huret-sept1983.json`, 31 items); p10 read by hand.
+- Pages: 1 cover, 2 Jubilee, 3 Success, 4 Jubilee long cage + 530 SPP, 5 Duopar 2648, 6 Hi-Stepper ATB (Duopar Eco
+  2690-00 H / GC, front 3080-00 S, levers 3300 / 3303), 7 Pilot (rear 2900-00 H, fronts 3060-00 / 3080-00, lever 3416 /
+  3416 R), 8 Rival, 9 Commander-Orbit (rear, double lever 13000, Orbit 12961), 10 Commander 5/6, 11 Torpedo 2 x 3 (Eco
+  2490-01, Torpedo S H 3111, double lever, no ref), 12 Eco S, 13 Eco; out of scope 14-15 speedometers, 16 usage chart.
+- The same range as the June 1984 catalogue (156), nine months earlier. Pilot and Hi-Stepper are marked NEW here.
+- year_from 1984 -> 1983 (old value 1984, from 156; source_ref -> 327): 4408 Pilot 2900-00 H, 8487 Pilot 3060-00, 2436
+  Pilot 3080-00 (triple), 8492 Pilot 3416 / 3416 R, 2443 Hi-Stepper 3080-00 S, 6067 Hi-Stepper 3300 / 3303, 8486
+  Jubilee 530 SPP, 8494 Commander 13000, 8499 Torpedo S, 8497 Torpedo 2 x 3 double lever. No links or overrides.
+- Commander refs conflict, left: the p10 captions give rear 13031 / 13041 and single lever 12913 / 12900, the reverse of
+  8484 (rear 12913 / 12900) / 8495 (lever 13031 / 13041) as set from 156; this catalogue's own p9 captions the rear
+  12900, and disraeligears' derailleur pages are "Commander 12913" / "12900", so p10 is taken as swapped captions.
+  p10 also names the double indexed lever for 10 / 12 speeds "12970 S or 13062" (already in 8495's description).
+- Not added: Pilot lever "3413 S" (caption only, no text), Pilot long cage (no ref), Torpedo 2 x 3 lever ref (none
+  printed). No inserts or deletes; 4276 Duopar Eco 2690-01 C is absent (the 2690-00 H / GC ATB version is listed), so
+  its 1983 year_to (from 326) stands.
+
+## Sachs-Huret catalogue — June 1984 (labibleduvelocataloguessachshuret.blogspot.com, 16 pages)
+
+- `data_source` 156, label "Sachs-Huret catalogue (June 1984)". Source:
+  https://labibleduvelocataloguessachshuret.blogspot.com/p/sachs-huret-1984.html
+  (16 blogger images, 760px at /s1600/ — that's the original size, still
+  legible). German / English, "JUNE 1984" printed bottom-left of the rear
+  cover (usage chart), Huret et ses Fils, Nanterre, with Fichtel & Sachs AG,
+  Schweinfurt for DE / AT / NL / Scandinavia. Weights and capacities, no
+  prices. Pp. 2-13 derailleur groups, 14-15 speedometers (out of scope).
+- Brands: Huret (139) holds the 1970s rows, Sachs Huret (171) the 1980s
+  velobase rows, Sachs (98) the hubs. Matched rows kept their brand; new
+  1984 rows went to Sachs Huret, Sachs for Orbit / Torpedo.
+- Marked NEW in 1984: Pilot rear 2900-00 H, front 3060-00 and levers 3416,
+  Hi-Stepper front 3080-00 S and thumb shifters 3300 / 3303, electronic
+  computer. Velobase had Pilot rear (4408) and Pilot triple front (2436) at
+  1980-1980 — decade placeholders; year_from moved *later* to 1984 on the
+  NEW label (user-approved, an exception to "never move year_from").
+- Gone vs 1976 (not capped, eight-year gap): Allvit, Super Allvit, Svelto,
+  Challenger, Success 2460, Duopar 2600 / 2640, Jubilee 2252 / 2240 / 2254,
+  Jubilee front 500, Ratchet / Click-In / 80mm levers.
+- Retitled (old titles): 4419 "Sachs Huret Jubilee" -> Jubilee 2200 (taken
+  as the 1984 drilled-cage Jubilee; 4303 "first version" keeps 1972-76 and
+  its 1973-75 links); 4281 "Huret Super Success" -> + 2470 S; 4400 "Sachs
+  Huret DuoPar Eco" -> Duopar Eco 2690-00 H / GC; 4408 "Sachs Huret Pilot"
+  -> Pilot 2900-00 H; 4401 "Sachs Huret Rival" -> Rival 2850-00; 4399 "Sachs
+  Huret Eco" -> Eco 2490-01 / 2490-01 H; 2395 "Huret Jubilee (4 holes in
+  outer cage plate)" -> Jubilee 530 (4 holes ...); 2390 "Huret Success CPSC
+  (later version; solid band)" -> Success 975 CPSC (...); 2443 "Sachs Huret
+  Hi Stepper" -> Hi-Stepper 3080-00 S; 2436 "Sachs Huret Pilot (triple)" ->
+  Pilot 3080-00 (triple); 6112 "Sachs Huret Luxe AS Double Shifters" -> Luxe
+  AS 3152-00 S; 6067 "Huret Ratcheting Thumb Shifters" -> Hi-Stepper 3300 /
+  3303 thumb shifter (judgment call: bare row taken as the Hi-Stepper).
+- year_to -> 1984: 4419, 4307 Jubilee long cage (now 155g / 40T vs 145g in
+  1976, both named), 4299 Success, 8173 Duopar 2648 (H 34T / GC 38T,
+  titanium or steel bodies; 1976 spec named inline), 4400, 4401, 2395 (agrees
+  with the >=1977 Jubilee front override), 2390. 2443, 6067 NULL ->
+  1984-1984. Descriptions only: 4281, 4399, 6112.
+- New (16 rows, 1984-1984): rear 8484 Commander 12913 / 12900, 8485 Eco S
+  2830-00 / H; front 8486 Jubilee 530 SPP, 8487 Pilot 3060-00, 8488 Rival
+  1086-00, 8489 Club AS 1005-01, 8490 Club 1000-01; shifters 8491 Jubilee
+  1164-00 / 2390-00 / 2380-00, 8492 Pilot 3416 / 3416 R, 8493 Rival 3252-00,
+  8494 Commander 13000, 8495 Commander 13031 / 13041, 8496 Luxe A 3152 B,
+  8497 Sachs Torpedo 2 x 3 double lever; geared hubs 8498 Sachs Orbit
+  12961, 8499 Sachs Torpedo S.
+- Bike links (generator): 1984 Raleigh "Huret ECO-S" rears (Pulsar 10, Team
+  Cadet 10, Stratos 10, Medale 5 & 10) had matched plain Eco 4301; the new
+  8485 made the name ambiguous, so added override 'huret eco s' -> 8485.
+  The generator only fills `component_id IS NULL`, so the four existing 4301
+  links were repointed with a one-off guarded UPDATE (value_text 'Huret
+  ECO-S', Rear Derailleur, component_id 4301). "Huret Club AS" fronts
+  (Classic 15, Weekender 15) now name-match 8489 (loaded via bike-update.sql).
+  Stratos 10 / Medale 5 & 10 list "Huret ECO-S" as the *front* derailleur
+  (a Raleigh catalogue error) — left unlinked.
+- Merged 2026-11-02 (VeloBase photos / model fields; a Huret badge alone does not split a row): 4398 -> 8173, 4279 -> 4401 (year_to 1988), 4301 -> 4399, 4289 -> 4300 (4680 / 2481 are date stamps). Previously left as possible duplicates: 4398 Sachs Huret DuoPar
+  (titanium) vs 8173 / 4302; 4279 Huret Rival (no years) vs 4401; 4301 Huret
+  Eco and 4391 "Sachs (Eco?)" vs 4399; velobase Sachs Huret Rival / Rival
+  Sport / AV 62.10D fronts vs 8488. "Huret Club brazed-on" (1984 Raleigh) is
+  probably Club S (braze-on Club AS, 8489) — not linked.
+
+## Huret catalogue, English edition (c. 1980, undated) — cyclespeugeot.web.fc2.com "Part 98: Huret in 1980's", data_source id 188
+
+- Source: http://cyclespeugeot.web.fc2.com/reminiscence/huret1980s.html;
+  `catalog/huret1980s/huret_198x01.jpg` to `_10.jpg` (cover 360x507, nine
+  pages 720x1013). 60 avenue Felix Faure, Nanterre; back cover "member of
+  Frexa". No date printed; the page author guesses 1980, so every year bound
+  here is 1980 (single-year bound, not a start date). Export edition, ounces
+  and grams. Page map: p. 2-3 rear derailleurs, p. 3-4 front derailleurs and
+  levers, p. 5 adjustable stop plate and Sensomatic 3, p. 6 speedometers,
+  p. 7 accessories (fork ends 240 / 241 / 244 / 245), p. 8 road racing
+  components (brakes 342 / 343, lever 323, freewheels 685 / 686, Multito),
+  p. 9 chainwheels, BB axle, seat post, road pedal, p. 10 hubs, triple
+  chainwheel.
+- Range: rear Jubilee 2200 (148g), Success 2470 (175g, titanium), Super
+  Success 2470 S, Duopar titanium 2648 / 2654 (254g), Duopar / ECO 2690-01
+  (331g), Allvit III 2700 (296g), Allvit Safety III, Super Allvit III 2748
+  (312g), Challenger II 2400 / 2440 (180g), Eco 2490-01 (239g); front Jubilee
+  530 (80g), Success / Duopar 975 CPSC (132g, S.P.P. System, "NEW"),
+  Challenger II 1050-00 (120g) and CPSC version (132g), Eco 1000-01 / 1001-01
+  CPSC (158g, S.P.P.), Club II 1000-01 / 1001-01 (143g); levers Jubilee /
+  Success / Duopar 1164-00 (80g), Challenger II 548-01 / 546-01 (99g), Ratchet
+  1466 / 1468 (148g), Luxe 1136-01 / 1134-01 (128g), stem lever 1158-01,
+  Sensomatic 3 (positive selection, with the Eco rear for 24T maximum).
+- Diff on 2026-10-17: Huret (brand 139) and Sachs Huret (171) already held
+  about 165 rows from 1973 / 1975 / 1976 / June 1984 catalogues. The gap that
+  motivated the pass: no plain Eco front derailleur, so the six bike specs
+  "Huret Eco" (Front Derailleur) were unlinked.
+- Inserted (1980-1980, UUID source_id, group_id NULL): 8796 "Huret Eco
+  (front)" (Front Derailleurs; search_text "Huret Eco").
+- Updated, source_ref -> 188: 2379 Club II front year_to 1978 -> 1980 and
+  description (143g, 1000-01 / 1001-01); 2380 Challenger II front (description,
+  ref 1050-00, S.P.P. 132g); 4301 Huret Eco rear (description; measured 242g
+  kept); 4298 Challenger II rear (description, 180g, 2400 / 2440); 6064
+  Challenger II lever (description: it is a shifter, 99g with clip, 548-01 /
+  546-01); 4276 Duopar Eco year_to 1970 -> 1980 and description (331g, 2690-01).
+- Not inserted: the Huret chainwheels 1010 / 1006, BB axle 622, hubs 472 / 473 /
+  477 / 478, road pedal 490, seat post, brakes 342 / 343 and lever 323 (marked
+  "NEW" in this printing), since no bike spec names them; Allvit III / Safety
+  III / Super Allvit III rears (covered by 4290 / 4292 / 8172 under other
+  names, not checked line by line).
+- Does not explain "Huret Club brazed-on" (4 bikes) or "Huret ECO-S" front (2):
+  neither is named here (probably Club AS 8489 and a later Eco S).
+- Bike links: loading the row does not link existing specs; the six "Huret Eco"
+  front derailleur specs pick up 8796 when the bike generator is re-run for those
+  catalogues (not done; the removed non-road models must be stripped from the
+  CSVs first, see the `ingest-bike-specs` scope check).
+- Out of scope: speedometers (Universo, Multito cyclometer), fork ends, cable
+  stops and clips, driving gears, wing nuts, spoke protector 996.
+- Second copy (checked 2026-11-01): disraeligears.co.uk "Huret - catalogue 1980?"
+  (https://www.disraeligears.co.uk/site/huret_-_catalogue_1980.html, `00_main_images/huret_-_catalogue_scan_1..10_main_image.jpg`,
+  1560 x 2200) is this same English catalogue at twice the resolution: p2 rears / fronts and the p10 hubs 472 / 473 / 477 /
+  478, triple 1006 and "member of Frexa" back cover match. Nothing loaded, no data_source row; use it to re-read any
+  small print here. Disraeli also dates it "1980?".
+
+## Sachs Kettenschaltungen für Rennen, Touristik, Off-road — April 1986 (disraeligears.co.uk, 4 scans)
+
+- `data_source` label "Sachs derailleur catalogue (April 1986)". Source:
+  https://www.disraeligears.co.uk/site/sachs_kettenschaltung_fur_rennen_touristik_off-road_-_1986.html
+  (`00_main_images/..._scan_0N_main_image.jpg`, 1560 x 2215). German,
+  Fichtel & Sachs, "183.01 Printed in Germany 0486 200"; cover branded
+  Sachs, every derailleur Sachs-Huret. A four-page flyer: cover (New Success
+  photo), Jubilee, New Success / Rival / Pilot, Rider / Duopar. Disraeli
+  notes the photos lack the spoke protectors most 1986 derailleurs had, so
+  the pictured parts may be 1985. New part codes: rears AR n.1 D / T, fronts
+  AV, shifters MA (no DB row carried them, so every match is by spec and
+  name, not part number).
+- Adjusted (source_ref -> the new source): 4419 Jubilee 2200 -> "Sachs Huret
+  Jubilee 2200 / AR 44.1 D", 1980-84 -> 1980-86 (old title "Sachs Huret
+  Jubilee 2200"; identical 148g / 28T / 31T spec to the 1984 catalogue);
+  4402 New Success -> "Sachs Huret AR 47.1 D, New Success", 1985 -> 1985-86,
+  description rewritten (old title "Sachs Huret New Success"); 4408 Pilot
+  2900-00 H 1984 -> 1984-86; 2395 Huret Jubilee 530 front and 8491 Jubilee
+  levers 1984 -> 1986 with the AV 66.1 D / MA 85.1 E codes noted (judgment:
+  the 1986 Jubilee front shows the Huret script and a 4-hole cage; not proven
+  by number).
+- Added (all 1986, brand Sachs Huret 171, group NULL, like the 1984 rows):
+  rears 8957 AR 41.1 D Rival (28T capacity, 36T max freewheel, unlike 4401
+  Rival 2850-00's 30T), 8958 AR 46.1 T Rider, 8959 AR 40.1 T Duopar; fronts
+  8960 AV 66.3 D New Success, 8961 AV 62.1 D Rival, 8962 AV 62.1 T Rider /
+  Duopar (triple); shifters 8963 MA 85.2 E New Success, 8964 MA 82.2 C Rival,
+  8965 MA 86.1 G Rider, 8966 MA 86.1 E Duopar. No weights in the source.
+- Unresolved: the undated velobase "Rider (type 1 / type 2)" rows (4410 /
+  4411, front 2437) may be the same part as 8958; the Duopar (8173 / 4400 /
+  4398) likewise; 4403 "New Success touring" (1980, velobase) is probably a
+  misdated long-cage New Success but this source cannot correct it; the
+  Pilot front 8487 / 2436 and levers 8492 were not mentioned and keep 1984.
+  6110 and 6111 ("ARIS New Success (type 1)", identical title and years, 84 g
+  spec vs 70 g) look like duplicates, untouched.
+- Bike side: this printing says plain "New Success" (no ARIS). The 1987
+  Raleigh Randonneur 18 "Huret New Success" is linked to ARIS rows (4412 /
+  2439 / 6110, dated 1987+); 4402 now ends 1986, so 1987 stays on the ARIS
+  rows (the only 1987-dated ones). Revisit if a 1987 Sachs-Huret catalogue
+  shows which style Raleigh fitted.
+
+## Sachs-Huret 1985 — not retrievable (checked 2026-10-20)
+
+- https://labibleduvelocataloguessachshuret.blogspot.com/p/sachs-huret-1975.html
+  is the 1985 catalogue (the page's own note: the tab is labelled 1985, the
+  URL says 1975 by mistake). 10 images, but they are Blogger proxy images
+  (`blogger_img_proxy`) of scans hosted on bibibike.forumserv.com
+  (`/image/110/.../sheet-NN-*.jpg.htm`). Today the proxy URLs return 404, the
+  forum is gone (xooit "forum inexistant"), and the Wayback Machine has no
+  copy of those image URLs (it rate-limited further probing). Nothing was
+  ingested. If a copy turns up elsewhere (retrobike, ebykr, disraeligears),
+  it would date the pre-ARIS New Success rows (4402 / 4403) but not the 1987
+  ARIS ones.
+
+
+
+## Mel Pinto Imports parts catalog, 1970 to 1975 (pp. 19-29), `data_source` 272
+
+See the full entry in [suntour.md](suntour.md). Huret rows unchanged except
+the Luxe rear derailleurs 4295 / 4296 / 4297 (descriptions: refs 2100 T /
+2100 ST, cages 2101 / 2101-C). Huret 2150 twin levers have no row.
