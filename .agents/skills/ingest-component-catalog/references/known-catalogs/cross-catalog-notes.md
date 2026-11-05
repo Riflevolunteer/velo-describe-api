@@ -1216,3 +1216,11 @@ Weinmann 1129 / 1130 570.
   2099-2101 are the Taiwanese brand, unrelated); the 1970 1048 triple (three rings, 830-832 /
   753 parts) predates 1498 "1049 Triple BCD 144+100" (from 1973) and is probably a different
   design, 1498 not moved; Cinelli 2803 "64 Early model" (1967 only) not extended.
+
+## Bike Warehouse catalogue No. 16 — 1980 (Ebykr scan)
+
+- Source: https://ebykr.com/library/bike-warehouse-1980-catalog/ (34-page scan; printed cover No. 16; scan source bulgier.net, scanned by Steve Kurt). This is a multi-brand US retailer catalogue. Full inventory is in `/private/tmp/bike-warehouse-1980-inventory.md`; only the Rigida rims have been reconciled to the database in this pass.
+- Printed p. 17 (scan page 18): retailer code `RI-1320-Z`, Rigida 1320, 13 mm internal width, double-wall clincher, offered in 700C and 27-inch sizes. `RI-1320-Z` is the retailer stock code, not a confirmed Rigida manufacturer part number.
+- Existing rows 9894 / 9895 were titled Rigida 13-19 for 27-inch / 700C, from the 1981 Bike Warehouse catalogue. Matching the 13 mm size/profile to the 1980 1320 description is an inference; retitled those rows as Rigida 1320 and cited this catalog. Row 9895 also has 1987 Peugeot (US) catalogue source evidence, extending its end year through 1987.
+- Existing row 10015, Rigi-Alu, is a separate alloy clincher with eyelets; its 27-inch 1 1/4 (1 1/8) specification and 700C alternative are recorded from printed p. 17; its start year is 1980.
+- Linked nine 1986 Peugeot / Falcon and 1987 Peugeot bike-spec values naming Rigida 1320 to 9895.
