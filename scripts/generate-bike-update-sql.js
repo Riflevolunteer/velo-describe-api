@@ -3144,8 +3144,9 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
-    // 1981 Kalkhoff Professional 11 S: pinned 2026-11-02, as 10019 "Shimano Dura-Ace EX seatpost" (probable duplicate of 5899) made the substring match ambiguous.
-    'dura ace ex': [{ from: 1981, to: 1984, id: 5899 }], // Shimano SP-7200, Dura-Ace EX
+    // Shimano Dura-Ace EX seatpost row 10019 was merged into coded SP-7200 row 5899 on 2026-11-05;
+    // 1986 Team Miyata catalog also lists Dura-Ace EX for the seatpost.
+    'dura ace ex': [{ from: 1981, to: 1986, id: 5899 }], // Shimano SP-7200, Dura-Ace EX
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'sr ct p5e': [{ from: 1986, to: 1986, id: 5857 }], // CT-P5, Custom-P5 (1980-86)
     'sugino spk': [{ from: 1986, to: 1986, id: 5927 }], // SP-K
