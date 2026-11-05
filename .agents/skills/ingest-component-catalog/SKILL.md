@@ -22,7 +22,8 @@ actually support.
 - **PDF**: `pdfinfo` for page count; `pdftotext -f 1 -l 3 file - | wc -c`
   to check for a text layer. Nearly all of these are scans with none, so
   inspect them visually with the available PDF or image viewer, in batches that
-  fit its limits. Needs poppler (`brew install poppler`) for rendering.
+  fit its limits (Claude Code: the Read tool with `pages`, ≤20 per call, its
+  hard limit). Needs poppler (`brew install poppler`) for rendering.
 - **Folder of JPGs**: bind them into one PDF first so they can be read in
   batches instead of 40 separate calls:
   `scripts/bind-images-to-pdf.sh <folder> <out.pdf>` (downscales to 1800 px
@@ -43,8 +44,9 @@ image, and everything in context is re-sent every turn). So:
   pages and exploded diagrams that are out of scope (see step 2). Note the
   skipped page numbers in the `known-catalogs` entry.
 - **Transcribe in subagents, not the main context.** For more than ~20 pages,
-  use Codex subagents on batches of 10-15 pages each, in parallel. Each reads
-  its pages and writes a compact
+  spawn subagents on a cheaper model (Claude Code: the Agent tool with
+  `model: "haiku"` or `"sonnet"`; Codex: its subagents) on batches of 10-15
+  pages each, in parallel. Each reads its pages and writes a compact
   JSON/CSV to the scratchpad (`page, category, part_no, name, description,
   year_hint`), returning only the file path and a one-line count. The main
   agent then reads those files, never the page images. Spot-check any page
@@ -289,7 +291,8 @@ commit; the SQL stays in the scratchpad.
 
 - DB access needs your IP in the RDS security group; `connect ETIMEDOUT`
   means it changed (README).
-- The PDF or image viewer may need poppler's `pdftoppm` for rendering.
+- The PDF or image viewer may need poppler's `pdftoppm` for rendering
+  (Claude Code's Read tool does).
 - A catalog is a first-appearance record, not a start date. Moving
   `year_from` **earlier** needs a catalogue that is itself earlier. Moving it
   **later** is expected for velobase decade buckets the catalogues contradict
