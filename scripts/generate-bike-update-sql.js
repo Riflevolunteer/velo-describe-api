@@ -2424,6 +2424,8 @@ const COMPONENT_OVERRIDES = {
     // Raleigh "padded black anatomic" is past the row and stays unlinked.
     'selle italia ana': [{ from: 1979, to: 1985, id: 8759 }],
     'selle italia ana camoscio': [{ from: 1979, to: 1985, id: 8759 }],
+    // 1991 Bianchi: “Bianchi / Avocet Gelflex AR-20” is the Avocet R20 GelFlex.
+    'bianchi avocet gelflex ar 20': [{ from: 1991, to: 1991, id: 5249 }],
     // 1993 Bianchi. "Turbo-Matic" in 1993 is the Turbo Matic 2; bare "Flite"
     // is ambiguous across six variants, the original is the Titanium.
     'selle italia turbo matic': 5516, // Selle Italia Turbo Matic 2
