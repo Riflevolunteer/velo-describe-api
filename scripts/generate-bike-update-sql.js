@@ -2461,10 +2461,12 @@ const COMPONENT_OVERRIDES = {
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'nitto 55f alloy': [{ from: 1986, to: 1986, id: 2878 }], // Mod. 55
     'nitto olympiad b115 alloy': [{ from: 1986, to: 1986, id: 2876 }], // B115, Olympiade
+    'nitto 804 aa alloy': [{ from: 1986, to: 1986, id: 10815 }], // Ridge Runner / Terra Runner: B-804 AA, aluminium ATB bar
     // Judgement calls 2026-11-02: Sport 10 "SR 7D-701" -> SR 7D, 7/8 Drop (7894 year_to moved 1982 -> 1986; 701 read as a later code in the 7D range);
     // Omnium "NITTO Triathlon" -> Nitto NTR55, Triathlon Bar (8623 year_from moved 1989 -> 1986; the only Nitto triathlon bar row).
     'sr 7d 701': [{ from: 1986, to: 1986, id: 7894 }],
     'nitto triathlon': [{ from: 1986, to: 1986, id: 8623 }],
+    'nitto heat treated dirtdrop': [{ from: 1989, to: 1989, id: 8607 }], // Bianchi Equinox: Nitto RM-013-14S, heat-treated MTB drop bar
     // 1986 Bianchi (DE) Specialissima X4: "3ttt Aero CCA" read as the Aero Dynamic Competizione (1984-89). Judgement call 2026-11-02.
     '3ttt aero cca leather wrap': [{ from: 1986, to: 1986, id: 8302 }],
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,

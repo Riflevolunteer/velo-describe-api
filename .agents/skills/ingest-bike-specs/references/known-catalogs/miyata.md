@@ -49,7 +49,7 @@
   HB-AQ11 7137, Tange MA-60, MKS Esquartz 102 / Sylvan Track, SR SP-155,
   XC-II PL-5100, Dia-Compe GX-400 -> GX-N 8082, 164 levers -> 164G 8873,
   Araya 20A 4922, SR CT-P5E -> CT-P5 5857, Sugino SPK -> SP-K 5927, Nitto
-  55F -> Mod. 55, Olympiad B115, D.I.D maker row 1355 for "DID TRACK".
+  55F -> Mod. 55, Olympiad B115, B-804 AA -> 10815 for Ridge Runner / Terra Runner (1986 catalog says NITTO 804 AA Alloy; Koga 1986 identifies B-804 AA as a special ATB aluminium bar), D.I.D maker row 1355 for "DID TRACK".
 - Left unlinked on purpose: New 600 EX rear derailleur, brakes and
   freewheel (6207 vs SIS 6208 both cover 1986; nothing in the text
   decides); SunTour Sprint front (DB Sprint FD rows start 1987), Sprint
