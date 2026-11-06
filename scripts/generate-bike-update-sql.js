@@ -2147,7 +2147,8 @@ const COMPONENT_OVERRIDES = {
     'stronglight ts 38 48t': [{ from: 1977, to: 1980, id: 1914 }],
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'shimano santé': [{ from: 1988, to: 1989, id: 1841 }], // FC-5000
-    "campagnolo croce d'aune": [{ from: 1988, to: 1991, id: 1489 }],
+    "campagnolo croce d'aune": [{ from: 1988, to: 1992, id: 1489 }], // + 1992 Bianchi Mondiale (1489 year_to 1991 -> 1992, 2026-11-06)
+    'shimano deore dx 46 36 24t sg': [{ from: 1991, to: 1991, id: 1809 }], // 1991 Bianchi Peregrine (RD-M650 Deore DX): FC-MT60-SG, Deore / Deore DX
     'shimano deore xt sis': [{ from: 1987, to: 1993, id: 1810 }], // FC-M730
     'ofmega super competizione': [{ from: 1980, to: 1990, id: 1703 }], // road, 2nd version
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
@@ -2178,7 +2179,7 @@ const COMPONENT_OVERRIDES = {
     'stronglight 49d 42 52t': [{ from: 1970, to: 1982, id: 1895 }], // 1978 Peugeot (NL) PS 10 / TM 8: Stronglight 49D, as the 1973-77 picks (the DB has no 1970s 49D row)
     // 1970 / 1972 Raleigh (US) Professional Mk IV and International (1972): Campagnolo 44/52T with the Nuovo Record
     // derailleurs -> 1049 Nuovo Record Strada v4 (1967-87), as the 1973 International 'campagnolo cotterless alloy'.
-    'campagnolo 44 52t': [{ from: 1970, to: 1972, id: 1496 }],
+    'campagnolo 44 52t': [{ from: 1970, to: 1973, id: 1496 }], // 1970-73 Raleigh Professional / International (1973 added 2026-11-06)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano 105 52 42t alloy rings & cold forged 170mm alloy cranks': [{ from: 1987, to: 1987, id: 1778 }], // Sirocco: FC-1050 105
     'shimano new 105 52 42t light alloy with 170 mm cranks': [{ from: 1987, to: 1987, id: 1778 }], // Competition: FC-1050 105
