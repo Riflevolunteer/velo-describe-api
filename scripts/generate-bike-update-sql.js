@@ -2841,7 +2841,7 @@ const COMPONENT_OVERRIDES = {
     // Technium 460 / 480: the catalogue (p. 10) prints "LePree down tube shifters" on the 460; the 480 photo shows the
     // same side-mounted lever. LD-3900 / LD-3950 (1985-86 since 2026-11-01), not the top-of-down-tube LD-4000.
     'suntour lepree': [{ from: 1986, to: 1986, id: 7828 }],
-    'shimano 600': [{ to: 1985, id: 6138 }, { from: 1986, to: 1987, id: 6148 }], // Competition: SL-6207 600EX (1984-87); the exact-title row is the 1970-80 Shimano 600
+    'shimano 600': [{ to: 1985, id: null }, { from: 1986, to: 1987, id: 6148 }], // Competition: SL-6207 600EX (1984-87); bare "Shimano 600" before 1986 names no lever (6138, the old exact-title row, merged into 7114 LB-180 2026-11-06)
     'thumb shifters': null, // Teton / Grand Mesa: generic text, hit the SunTour XM01 thumb shifter
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace sis': [{ from: 1989, to: 1998, id: 6166 }], // SL-7402 (8sp)
