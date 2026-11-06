@@ -2789,7 +2789,7 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
-    'shimano 105sc (1055) sis': 6134, // 1991 Bianchi Alfana: SL-1055-BCAI, as the 1990 'shimano 105 sis'
+    'shimano 105sc (1055) sis': 6133, // 1991 Bianchi Alfana: SL-1055 105SC (6134 BCAI merged into 6133 2026-11-06), as the 1990 'shimano 105 sis'
     // 1991 / 1992 Bianchi (JP) catalogues
     'suntour xc ltd accushift plus top pull multimount': 6310, // SL-XL00 thumb
     'suntour xc pro accushift plus top pull multimount': 6311, // SL-XP00 thumb
@@ -2904,7 +2904,8 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi. The catalog's "levers" are the down-tube shifters.
     'campagnolo c record': [{ to: 1986, id: 5969 }, { from: 1987, id: 5970 }], // C-Record Friction (1985-91) / Retro-Friction 2nd gen (1987-91); 1984 De Rosa row fixed by one-off UPDATE
     'c record levers': 5970,
-    'shimano 105 sis': [{ to: 1989, id: 6130 }, { from: 1990, to: 1993, id: 6134 }], // SL-1050 105 (6sp) / SL-1055-BCAI 105SC (1990 Bianchi Alfana)
+    'campagnolo c record syncro': 5973, // 1988 Mondiale: was an exact-title match until 5973 got its 0211-0213 numbers (2026-11-06)
+    'shimano 105 sis': [{ to: 1989, id: 6130 }, { from: 1990, to: 1993, id: 6133 }], // SL-1050 105 (6sp) / SL-1055 105SC (1990 Bianchi Alfana)
     'suntour cyclone 7000 barcon': 6280, // SunTour Cyclone 5000/7000/9000
     // 1993 Bianchi (down-tube and thumb shifters).
     'campagnolo chorus 8 speed downtube shift levers': 5976, // Campagnolo Chorus Friction - Graphite finish

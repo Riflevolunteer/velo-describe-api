@@ -238,6 +238,7 @@ const REVIEWED_NOT_DUPLICATES = [
   [5748, 5749], // different part: Campagnolo 1044, Nuovo Record (Superle / Campagnolo 1044, Record
   [5753, 5754], // different part: Campagnolo 1045, Record (Narrow) / Campagnolo 1045/a, Record Superlegero 
   [5905, 7305], // Spidel badge variant: Spidel SLJ 4164, Serie Sport Ref 01 / Simplex SLJ4164
+  [6047, 7295], // Gipiemme badge variant (kept 2026-11-06, VeloBase photo: gold GIPIEMME plates): Gipiemme 4012 (Simplex LJ4012) / Simplex LJ4012
   [5989, 5990], // different part: Campagnolo 1013/5 1013/6, Record / Campagnolo 1013/6 Porta Catena, Record
   [6565, 6566], // different part: ITM 700 Replica / Italmanubri (ITM) 700 Replica Open
   [9470, 9471], // different part: ITM 500 SL / ITM 500 ATB
