@@ -2360,6 +2360,11 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    // 2026-11-06 Avocet on 1991-92 Bianchi, as the 1990 models (5258 year_to 1990 -> 1992, 5250 1990 -> 1991).
+    'bianchi avocet leather racing i': [{ from: 1991, to: 1991, id: 5258 }], // 1991 Grizzly: Avocet Racing I, as the 1990 Grizzly "Avocet Leather Racing-1"
+    'avocet racing i leather black': [{ from: 1992, to: 1992, id: 5258 }], // 1992 Virata / Alfana
+    'bianchi avocet leather racing': [{ from: 1991, to: 1991, id: 5258 }], // 1991 Virata (judgement call: the 1992 Virata names it Racing-I)
+    'bianchi avocet': [{ bike: 'Osprey', from: 1991, to: 1991, id: 5250 }], // 1991 Osprey (judgement call: the 1990 Osprey "Avocet Racing" is 5250)
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
     'italia s turbo': 5503, // Specialissima X4: Selle Italia Super Turbo (as on the 1987 US X4)
     'leather s mundialita': 5497, // Rekord 920: Selle Italia Mundialita (1985-88)
