@@ -2793,6 +2793,10 @@ const COMPONENT_OVERRIDES = {
     // 1991 / 1992 Bianchi (JP) catalogues
     'suntour xc ltd accushift plus top pull multimount': 6310, // SL-XL00 thumb
     'suntour xc pro accushift plus top pull multimount': 6311, // SL-XP00 thumb
+    // 1991 Bianchi: Shimano Deore XT-II M732 and Deore LX M453 shifters.
+    'shimano deore xt hg rapidfire': [{ bike: 'Aranessa', from: 1991, to: 1991, id: 6160 }],
+    'shimano deore xt hg': [{ bike: 'Signature', from: 1991, to: 1991, id: 6160 }],
+    'shimano deore lx hg thumbshifters top pull': [{ bike: 'Osprey', from: 1991, to: 1991, id: 6183 }],
     // 2026-11-02 shifter pass.
     'shimano slz 408 shifter': [{ from: 1986, to: 1986, id: 6195 }], // 1986 Miyata: SL-Z408 (1980-86)
     'shimano sport lx a 453 indexed': [{ from: 1989, to: 1989, id: 6191 }], // 1989 Peugeot: SL-A453 Sport LX
@@ -2932,6 +2936,18 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010 barcon accushift': [{ from: 1989, to: 1989, id: 6262 }], // SL-BC00, Superbe Pro (bar-con)
     'suntour xcd 6000 barcon accushift': [{ from: 1989, to: 1989, id: 6262 }],
     'suntour xce 4050 barcon accushift': [{ from: 1989, to: 1989, id: 6262 }],
+    // 1989 Peugeot (FR): indexed Simplex levers match the SX Index; scope to these bikes so generic Simplex specs stay unlinked.
+    'simplex indexed': [
+      { bike: "P 501 B Z 'Ventoux'", from: 1989, to: 1989, id: 7361 },
+      { bike: "P 513 B Z 'Vanoise'", from: 1989, to: 1989, id: 7361 },
+      { bike: "PE 15 B Z 'Cannes'", from: 1989, to: 1989, id: 7361 },
+      { bike: "PE 15 Z 'Cassis'", from: 1989, to: 1989, id: 7361 },
+    ],
+    'simplex white indexed': [
+      { bike: "PE 10 D Z 'Aubisque'", from: 1989, to: 1989, id: 7361 },
+      { bike: "PE 13 D Z 'Saint-Bernard'", from: 1989, to: 1989, id: 7361 },
+      { bike: "PE 153 Z 'Monaco'", from: 1989, to: 1989, id: 7361 },
+    ],
   },
   'Shifting Brake Levers': {
     // 1990 Bianchi Rapidfire shifters (the 1990 groups are M650 DX / M550 LX / M735 XT)
