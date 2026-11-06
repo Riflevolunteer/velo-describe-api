@@ -149,6 +149,7 @@ const REVIEWED_VARIANTS = new Map([
   [2141, 'dating marking: Moyne 4 speed Made in France beside Fabrication Francaise 2140 (kept 2026-11-06)'],
   [2144, 'dating marking: Moyne 5 speed wide body Fabrication Francaise beside 2143 (kept 2026-11-06)'],
   [2252, 'dating marking: Super Champion 4 speed MADE IN FRANCE beside BREVETE SGDG 2253 (kept 2026-11-06)'],
+  [486, 'two runs: Weinmann AG red anodized early levers (1960) beside the plain early levers 484 (1950) (kept 2026-11-06)'],
 ])
 
 // --- Near pairs: the same part under another brand row or another name ---

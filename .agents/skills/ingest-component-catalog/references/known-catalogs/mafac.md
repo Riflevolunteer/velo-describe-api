@@ -286,3 +286,8 @@
 - Open (bike side): overrides 'mafac racer' / 'mafac competition' (and the Course-lever variants)
   are ranged to 1980 on 838 / 825, so 1981-82 bike specs with those values stay unlinked; widen
   them in a bike link pass if wanted.
+
+## 344 / 345 MAFAC Promotion plastic-body levers merged (2026-11-06, duplicate pass)
+
+- 345 "MAFAC Promotion (white plastic lever body)" (VeloBase C1CB0657-4E5B-4B9D-A2A2-DCA2819014A5) deleted into 344; 344's old title was
+  "MAFAC Promotion (black plastic lever body)", now "MAFAC Promotion (plastic lever body)" with black / white as variants. Both bare velobase, no years, no specs.
