@@ -43,6 +43,7 @@
 - Bike links: 1985 Raleigh Prestige / Competition "MKS Esquartz #2025" [3305 3324] 3858 -> 3859 (No.
   2025). Generator overrides added (Pedals): `mks esquartz #2025` -> 3859, `mks sylvan road` -> 3865, since
   the retitles stop the plain names substring-matching; MKS catalogue link counts unchanged.
+- Added 2026-11-06 (outside the first scope, for 1986 Miyata specs): 10831 6001 "33" (630g) and 10832 9004 "RT-7" (400g), p. 4, 1985-1986.
 - Left: 3873 "MKS Unique Road" (1970-80, 356g Actual) not matched to No. 2003 Unique Road (steel, 430g),
   weight disagrees and 3870 "Unique Pedal (road, alloy cage)" may be the same part; AR-3 (1987-89 Raleigh)
   still has no source; not in this edition: AR-2, AR-8, Esquartz 107, Mapstage, Radius 7000, Royal Nouvo

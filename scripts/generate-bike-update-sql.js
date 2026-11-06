@@ -2996,6 +2996,8 @@ const COMPONENT_OVERRIDES = {
     'shimano sport lx': [{ from: 1989, to: 1989, id: 3976 }], // 1989 Bianchi Sport SX: PD-A450, as the 1989 Peugeot "Sport LX A 450"
     'shimano spd': [{ from: 1993, to: 1993, id: 7666 }], // 1993 Bianchi Nth FS (XTR): PD-M737 SPD, as the 1993 Super Grizzly "SPD-737"
     'ofmega quattro': [{ from: 1989, to: 1991, id: 3885 }], // 1989-91 Bianchi Campione d'Italia / Trofeo: Ofmega Vantage pedal; crank 1705 is "Vantage (Bianchi Quattro version)" (3885 year_to 1988 -> 1991; judgement call)
+    'mks rt 7 chrome plated': [{ from: 1986, to: 1986, id: 10832 }], // 1986 Miyata 90: MKS 9004, RT-7 (Edition 11 p. 4, added 2026-11-06)
+    'mks 33': [{ from: 1986, to: 1986, id: 10831 }], // 1986 Miyata 100: MKS 6001, 33 (Edition 11 p. 4, added 2026-11-06)
     'shimano': [{ bike: 'PX 10 SH', from: 1985, to: 1985, id: 3961 }], // 1985 Peugeot PX 10 SH, 600EX crank / RD: PD-6207 (bare brand, bike-keyed; judgement call)
     // 1991 / 1992 Bianchi (JP) catalogues
     'campagnolo croce d\'aune': 3703, // B620-A
