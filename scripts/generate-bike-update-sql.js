@@ -1291,6 +1291,10 @@ const COMPONENT_OVERRIDES = {
     'shimano deore xt sealed qr (f)': [{ from: 1986, to: 1986, id: 3548 }], // 1986 Miyata Ridge Runner (RD-M700): HB-MN72, Deore XT M700 front hub
     'shimano new deore xt q r front and rear': [{ from: 1987, to: 1987, id: 3550 }], // 1987 Peugeot (US) Cannon Ball Express (M730): HB-M730, as the 1989 Europe Express
     'shimano m450 452 q r': [{ from: 1989, to: 1989, id: 7629 }], // 1989 Raleigh Ozark (M452): FH-M452 / HB-M451-F Mountain LX, as the 1989 Bianchi Incline
+    // 1989 Raleigh Exage Action / Trail bikes (6-speed cassettes): FH-RM50, the Aug 1988 Exage manual's freehub for Action, Motion, Trail and Country.
+    'shimano alloy q r': [{ bike: 'Strada', from: 1989, to: 1989, id: 7624 }], // Exage Action (RD-A350)
+    'shimano alloy front q r': [{ bike: 'Chinook', from: 1989, to: 1989, id: 7624 }], // Exage Trail (RD-M350)
+    'shimano q r front': [{ bike: 'Touriste', from: 1989, to: 1989, id: 7624 }], // Exage Trail (RD-M350)
     'campagnolo nuovo tipo quick release': [{ from: 1982, to: 1982, id: 3230 }], // 1982 Raleigh Gran Sport 12: 1251 Nuovo Tipo small flange, as the 1983 Gran Sport 12
     // Judgement calls (2026-11-06, user-approved).
     'normandy large flange qr': [{ from: 1978, to: 1978, id: 8138 }], // 1978 Raleigh Super Grand Prix: Normandy (large flange, Q/R) (8138 1979 -> 1978-1980)
