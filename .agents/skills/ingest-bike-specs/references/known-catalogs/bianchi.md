@@ -170,9 +170,15 @@
 - Brand rows kept: "Shimano" chain, "DID", "Sedisport" → Sedisport Delta,
   "Shimano 600 SIS" → plain Shimano 600 derailleur/shifter (no 6207 rows).
 - Left unlinked: frame/fork prose, spokes, budget house-brand parts (KK-310,
-  HL, KL, TH-305, HTI-A1, CST, UCP), Regina C Record/Pista chains, Gipiemme
+  HL, KL, TH-305, HTI-A1, CST, UCP), Regina Pista chain, Gipiemme
   Cronosprint posts (three variants), 3ttt Competizione bars (three bends),
   ITM Mondial bars and ITM 100-300 stems (no rows), Extras.
+- 2026-11-06: the five 1987 "Regina C Record" chains -> 1384 Regina Extra
+  CX / CX-S (1980-90). The c. 1984 De Rosa C-Record catalogue specifies a
+  Regina CX-S chain; Campagnolo's 1988 compatibility table lists Regina CX-S
+  for Record and Super Record. This supports the shared 1987 Bianchi wording:
+  [De Rosa c. 1984 catalogue](https://ebykr.com/library/de-rosa-c1984-catalog-c-record-professional-six-day-track-order-cards/);
+  [Campagnolo 1988 dealer parts catalogue](https://velobase.com/CatalogScans/Campagnolo/1988CampagnoloDealerPartsCatalogue.pdf).
 - 2026-10-04: Premio "Dia Compe QS500N Balance Response System" -> 682
   (retitled QS500N by the Dia-Compe 1986 ingest) via override; 143 -> 144.
 

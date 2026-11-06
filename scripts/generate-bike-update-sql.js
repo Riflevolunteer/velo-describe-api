@@ -3374,6 +3374,8 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1987 Bianchi: its five specs call this "Regina C Record"; De Rosa's c. 1984 C-Record bike specifies a Regina CX-S chain, and Campagnolo's 1988 compatibility table lists CX-S for Record/Super Record. Map the Bianchi shorthand to Regina Extra CX / CX-S.
+    'regina c record': [{ from: 1987, to: 1987, id: 1384 }],
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano cn hg70 grey black': 7568,
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
