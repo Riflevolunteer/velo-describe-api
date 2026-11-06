@@ -1256,3 +1256,15 @@ interchangeable cog chart, "new winner 2.jpg" operation manual; "PRINTED IN JAPA
 ## 3630 SunTour XCD 6000 hub retitled (2026-11-06, hub duplicate pass)
 
 - 3630 "SunTour XCD 6000" (VeloBase DAFB66FD-BC5E-4B30-BF80-58D3AD65720D; photo shows a cassette freehub body) -> "SunTour XCD 6000 (freehub)", year_from 1980 -> 1988 (XCD group new in the 1988 catalogue, source 199); kept beside 3631 HB-XD00 (freewheel). 1989 Bianchi Axis hub relinked to it.
+
+## Bottom bracket duplicate merge — 2026-11-06 (user approved)
+
+- Deleted 178 "SunTour XC Pro Grease Guard" (VeloBase source_id
+  84F8A702-0F91-45A8-8EDF-345E527EE185) into 8012 "SunTour BB-XP00-E /
+  BB-XP00-73 / BB-XC01-I, XC-Pro". The specimen describes the same English
+  Grease Guard cup-and-cone design with 1/4in balls, 11 per side; it is not
+  the Microlite cartridge in 177. Survivor already holds the useful details.
+- Kept 8012's catalogue dates 1992-1993 and source_ref 278. Discarded 178's
+  erroneous 1980-1980 bucket; no bike_spec links, overrides or stored images
+  on either row. SQL and rollback: `/private/tmp/bottom-bracket-merges.sql`
+  and `/private/tmp/bottom-bracket-merges-rollback.sql`.

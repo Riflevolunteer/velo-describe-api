@@ -1125,3 +1125,18 @@ Prompted by the new "DB year_from is earlier than the evidence" rule; checked ag
 - UK importer pages for hubs, chainsets, gears, pedals, headsets, 1044, 2040. 3712 1038 standard
   year_to -> 1970; 3233 1253 gets 1266/1267 sub-numbers; 1495 1048/4 description (45T, 170 mm).
   1970 1048 triple not matched to 1498.
+
+## Bottom bracket duplicate merge — 2026-11-06 (user approved)
+
+- Deleted 37 "Campagnolo Record Triple Bearing (c. 1997)" (VeloBase source_id
+  A09A95F1-DAF7-4779-B315-44D79FB74A74) into 10101 "Campagnolo Record 9-speed
+  bottom bracket": same 102mm, 190g cartridge. Preserved the triple-bearing
+  description and BB-31RECART Italian / BB-33RECART BSC codes from the
+  [VeloBase specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=a09a95f1-daf7-4779-b315-44d79fb74a74).
+- 10101 year_from 1999 -> 1997 carries forward 37's previously curated circa
+  1997 dating (not a newly found 1997 catalogue attestation); year_to remains
+  1999. Source_ref remains 353, the Guida '99 catalogue supporting its
+  construction, dimensions and weight. Title/search_text unchanged.
+- Neither row had bike_spec links, overrides or stored images. SQL and
+  rollback: `/private/tmp/bottom-bracket-merges.sql` and
+  `/private/tmp/bottom-bracket-merges-rollback.sql`.
