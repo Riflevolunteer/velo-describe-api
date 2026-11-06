@@ -1279,6 +1279,36 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    // 2026-11-06 hub pass: as the same model / wording in neighbouring years.
+    'maillard normandy dural low flange simplex sx quick release': [{ from: 1980, to: 1980, id: 8137 }], // 1980 Peugeot (NL) PK 65 lady: Normandy small flange Q/R, as the PKN / PFN / PBN 10
+    'maillard competition qr': [{ from: 1984, to: 1984, id: 8136 }], // 1984 Raleigh Classic 15 / Record Ace 12: Normandy small flange de-luxe competition, as the 1984 Competition 12
+    'maillard competition ground axle cones': [{ from: 1983, to: 1983, id: 3389 }], // 1983 Peugeot (NL) PVN 10: Luxe Competition (red, low flange), as the 1980 / 1982 PVN 10
+    'maillard competition': [{ from: 1983, to: 1983, id: 3389 }], // 1983 Peugeot (NL) PSVN 10: Luxe Competition, as the 1982 PSV 10 S
+    'atom alloy small flange front and rear qr': [{ from: 1986, to: 1986, id: 3183 }], // 1986 Peugeot (US) Avoriaz / Iseran: Atom low flange, as the 1986 Falcons (3183 year_to 1983 -> 1987)
+    'atom alloy': [{ from: 1986, to: 1986, id: 3183 }], // 1986 Peugeot (US) Corbier, as the 1987 Corbier "Atom alloy, small flange"
+    'sansin gyro master sealed qr': [{ from: 1986, to: 1986, id: 3601 }], // 1986 Miyata 710: Sunshine Gyro-Master, as the 1985 Raleigh Prestige
+    'sansin gyro master sealed qr 36x40': [{ from: 1986, to: 1986, id: 3601 }], // 1986 Miyata 610 / 1000
+    'shimano deore xt sealed qr (f)': [{ from: 1986, to: 1986, id: 3548 }], // 1986 Miyata Ridge Runner (RD-M700): HB-MN72, Deore XT M700 front hub
+    'shimano new deore xt q r front and rear': [{ from: 1987, to: 1987, id: 3550 }], // 1987 Peugeot (US) Cannon Ball Express (M730): HB-M730, as the 1989 Europe Express
+    'shimano m450 452 q r': [{ from: 1989, to: 1989, id: 7629 }], // 1989 Raleigh Ozark (M452): FH-M452 / HB-M451-F Mountain LX, as the 1989 Bianchi Incline
+    'campagnolo nuovo tipo quick release': [{ from: 1982, to: 1982, id: 3230 }], // 1982 Raleigh Gran Sport 12: 1251 Nuovo Tipo small flange, as the 1983 Gran Sport 12
+    // Judgement calls (2026-11-06, user-approved).
+    'normandy large flange qr': [{ from: 1978, to: 1978, id: 8138 }], // 1978 Raleigh Super Grand Prix: Normandy (large flange, Q/R) (8138 1979 -> 1978-1980)
+    'normandy large flange qr front and rear': [{ from: 1978, to: 1978, id: 8138 }], // 1978 Raleigh Grand Prix
+    'normandy large flange alloy qr': [{ from: 1979, to: 1979, id: 8138 }], // 1979 Raleigh Grand Prix / Super Grand Prix
+    'normandy large flange alloy front hub qr': [{ from: 1979, to: 1979, id: 8138 }], // 1979 Raleigh Record Ace
+    'normandy large flange alloy qr 36 hole': [{ from: 1980, to: 1980, id: 8138 }], // 1980 Raleigh Grand Prix / Super Grand Prix
+    'normandy large flange q r alloy': [{ from: 1975, to: 1976, id: 3390 }], // 1975-76 Raleigh Gran Sport DL 160: Normandy Sport, as the 1974 Gran Sport "Normandy Sport Large Flange"
+    'normandy wide flange': [{ from: 1970, to: 1972, id: 3390 }], // 1970-72 Raleigh Grand Prix DL 115: Normandy Sport, as the 1973 "Normandy Sport Q/R Wide Flange"
+    'normandy with quick release': [{ from: 1970, to: 1972, id: 3390 }], // 1970-72 Raleigh Super Course DL 100: Normandy Sport, as the 1973 Super Course
+    'gipiemme normal flange 32 holes': [{ from: 1981, to: 1981, id: 3352 }], // 1981 Bianchi Rekord 748: Gipiemme Special 600160 (small built-in flanges, 32 holes; 1970-83 from the SRC 1983 catalogue)
+    'gipiemme bianchi special alloy normal flange 32 hole': [{ from: 1978, to: 1978, id: 3352 }], // 1978 Bianchi Rekord/748: Gipiemme Special 600160
+    'huret new success': [{ from: 1987, to: 1987, id: 3509 }], // 1987 Peugeot Savoie: Sachs-Maillard New Success
+    'sachs huret "new success"': [{ from: 1989, to: 1989, id: 3509 }], // 1989 Peugeot (FR) Savoie
+    'sanshin ax 20 sealed alloy small flange': [{ from: 1986, to: 1986, id: 9015 }], // 1986 Peugeot (US) Canyon Express: Sansin AX-20 Off-Roader nut type (9015 year_from 1987 -> 1986)
+    'suntour ce 60': [{ from: 1989, to: 1989, id: 9007 }], // 1989 Bianchi Brava: Sansin CE-60 C Series, SunTour-sold (9007 year_to 1987 -> 1989)
+    'suntour alpha 5000': [{ from: 1987, to: 1987, id: 9010 }], // 1987 Bianchi Sport SX (alpha-5000 road RD): Sansin RE-60a, alpha-5000 road
+    'suntour xcd 6010': [{ from: 1989, to: 1989, id: 3631 }], // 1989 Bianchi Axis: HB-XD00, XCD 6000
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano 105sc (1055)': 3527, // FH-1055-HG / HB-1055-F
     'shimano deore dx': 3542, // FH-M650 / HB-M650-F
@@ -1371,8 +1401,8 @@ const COMPONENT_OVERRIDES = {
     'normandy high flange simplex quick release': [{ from: 1960, to: 1980, id: 3391 }], // Maillard Normandy (high flange, oblong holes)
     'normandy high flange quick release': [{ from: 1960, to: 1980, id: 3391 }], // 1975-76 Peugeot UE 18, as the UO 8 above
     // 1978 Peugeot (NL) PR 65 Lady: plain Normandy Dural high flange (not the Competition the PR 60 has).
-    'maillard normandy dural high flange simplex sx quick release': [{ from: 1960, to: 1980, id: 3391 }],
-    'maillard normandy dural high flange quick release': [{ from: 1960, to: 1980, id: 3391 }], // 1980 Peugeot PX 18 M / MC
+    'maillard normandy dural high flange simplex sx quick release': [{ from: 1960, to: 1982, id: 3391 }], // + 1982 Peugeot (NL) PX 8 M (3391 year_to 1980 -> 1982, 2026-11-06)
+    'maillard normandy dural high flange quick release': [{ from: 1960, to: 1982, id: 3391 }], // 1980 and 1982 Peugeot PX 18 M / MC
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace 32h': [{ from: 1990, to: 1996, id: 3562 }], // FH-7403-HG / HB-7400-F
     'shimano ultegra 32h': [{ from: 1990, to: 1992, id: 7565 }], // FH-6401-HG (7sp HG cassette on the Virata)
