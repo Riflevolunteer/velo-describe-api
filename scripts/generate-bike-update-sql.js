@@ -2907,6 +2907,11 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 2026-11-06 brake lever pass: levers matched to the bike's linked brakes.
+    'universal lightened': [{ from: 1978, to: 1978, id: 480 }], // 1978 Bianchi Rekord/748: Universal Mod.77 lever (706 extra light), brakes Mod. 77
+    'shimano santé': [{ from: 1988, to: 1989, id: 447 }], // 1988 Colnago Super Krono / Santé bikes: BL-5001 (standard 97.5mm reach) over the short-reach BL-5002 (judgement call); brakes BR-5000-49
+    'modolo': [{ bike: 'PSV 10 M', from: 1986, to: 1986, id: 386 }], // 1986 Peugeot PSV 10 M, brakes Modolo Speedy (886): Speedy lever (386 year_to 1985 -> 1986; judgement call, brand-only cell)
+    'weinmann quick release levers': [{ from: 1974, to: 1975, id: 487 }], // 1974-75 Motobecane Grand Jubilé, Weinmann 999 brakes: Weinmann AG (with quick releases) (487 year_to 1971 -> 1975; judgement call)
     // 2026-11-02 brake lever pass.
     'mafac professional': [{ from: 1982, to: 1982, id: 9968 }], // 1982 Peugeot: MAFAC PRO (1982)
     'weinmann pro': [{ from: 1984, to: 1984, id: 7769 }], // 1984 Peugeot: Weinmann AG No. 144, Professional (year_to 1983 -> 1984)
