@@ -1252,3 +1252,7 @@ interchangeable cog chart, "new winner 2.jpg" operation manual; "PRINTED IN JAPA
 - Hub widths on the poster already matched the rows. No rows added; 2239 "Suntour New Winner
   7 speed" (1990) and 7816 NW-5100 untouched.
 - Left: the cog and spacer part numbers (no component rows for individual sprockets).
+
+## 3630 SunTour XCD 6000 hub retitled (2026-11-06, hub duplicate pass)
+
+- 3630 "SunTour XCD 6000" (VeloBase DAFB66FD-BC5E-4B30-BF80-58D3AD65720D; photo shows a cassette freehub body) -> "SunTour XCD 6000 (freehub)", year_from 1980 -> 1988 (XCD group new in the 1988 catalogue, source 199); kept beside 3631 HB-XD00 (freewheel). 1989 Bianchi Axis hub relinked to it.

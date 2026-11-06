@@ -1308,7 +1308,7 @@ const COMPONENT_OVERRIDES = {
     'sanshin ax 20 sealed alloy small flange': [{ from: 1986, to: 1986, id: 9015 }], // 1986 Peugeot (US) Canyon Express: Sansin AX-20 Off-Roader nut type (9015 year_from 1987 -> 1986)
     'suntour ce 60': [{ from: 1989, to: 1989, id: 9007 }], // 1989 Bianchi Brava: Sansin CE-60 C Series, SunTour-sold (9007 year_to 1987 -> 1989)
     'suntour alpha 5000': [{ from: 1987, to: 1987, id: 9010 }], // 1987 Bianchi Sport SX (alpha-5000 road RD): Sansin RE-60a, alpha-5000 road
-    'suntour xcd 6010': [{ from: 1989, to: 1989, id: 3631 }], // 1989 Bianchi Axis: HB-XD00, XCD 6000
+    'suntour xcd 6010': [{ from: 1989, to: 1989, id: 3630 }], // 1989 Bianchi Axis: XCD 6000 freehub (its cassette is 1224 CS-AP00-K7U, so not the 3631 HB-XD00 freewheel hub; corrected 2026-11-06)
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano 105sc (1055)': 3527, // FH-1055-HG / HB-1055-F
     'shimano deore dx': 3542, // FH-M650 / HB-M650-F
