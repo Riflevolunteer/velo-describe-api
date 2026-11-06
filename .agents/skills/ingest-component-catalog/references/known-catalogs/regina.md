@@ -39,8 +39,8 @@
   «super racing» = the oro racing chain type, too indirect to merge);
   moped chains (54, 90 R, ASA 41/35, 120-122) and moped freewheels
   0090-0092 XY99 out of scope.
-- Candidate for a later pass: 2177 / 2178 are both "Regina Extra (7 speed,
-  silver)" 1980 — duplicate pair, not covered by this catalogue.
+- 2177 / 2178, both "Regina Extra (7 speed, silver)" 1980: merged 2026-11-06,
+  2178 (VeloBase 0B519615-10BD-4FB1-A8D6-0BFEDA111320) deleted into 2177.
 - Bike link candidate: 1973 Raleigh "1/2" x 3/32" Regina ORO" chain — the
   catalogue makes 1/2 x 3/32 oro the 50 oro, i.e. 1382.
 
@@ -100,7 +100,7 @@
   (Ti) (5,6 speed)" (221 g avg, possibly the Titanio Superstar); 2202's
   200 g is light for a steel-body Titanio, may really be a Superstar; 2163 /
   2164 Corsa 6-speed gold / silver; 2172 "(3 speed, splined remover)";
-  2177 / 2178 7-speed duplicate pair still open.
+  2177 / 2178 merged 2026-11-06; 2164 / 2163 Corsa gold / silver kept (REVIEWED_VARIANTS).
 - Out of scope: chain spares n. 4 / 7 / 26 / 27 / 30, rivet extractor type
   1, cutting/rejoining pliers, Regina Cycle Lube (165 cc), single-sprocket
   weight table (p. 11).

@@ -130,6 +130,25 @@ const REVIEWED_VARIANTS = new Map([
   [8461, 'distinct part: Araya 7X(N) 28.0 mm BMX rim beside the 32.2 mm 7X, same Araya source (kept 2026-10-30)'],
   [716, 'distinct part: Favorit Special F2671/6-2 beside F-2048/6-2, different part numbers (kept 2026-10-30)'],
   [5044, 'two runs under one title: Mavic (1960\'s?) 410 g rim beside the Mavic (1950\'s) 5043 (kept 2026-10-30)'],
+  // Freewheel review 2026-11-06 (user's call): Regina gold may be the separate Oro quality, so gold / silver rows stay;
+  // markings kept as dating marks, as 2118 / 2119.
+  [2163, 'finish model: Regina Corsa 6 speed gold beside silver 2164 (gold may be Oro; kept 2026-11-06)'],
+  [2186, 'finish model: Regina Futura 6 speed silver beside gold 2206 (kept 2026-11-06)'],
+  [2199, 'finish model: Regina Synchro 90 6 speed gold beside silver 2207 (kept 2026-11-06)'],
+  [2180, 'finish model: Regina Extra BX 6 speed gold beside silver 2181 (kept 2026-11-06)'],
+  [2190, 'finish model: Regina G. S. Corse 5 speed silver beside gold 2189 (kept 2026-11-06)'],
+  [2176, 'finish model: Regina Extra 7 speed bronze beside silver 2177 (kept 2026-11-06)'],
+  [2051, 'finish model: Atom 77 6 speed silver cogs beside black 2050, both in the 1982 catalogue range (user decision, kept 2026-11-06)'],
+  [2043, 'finish model: Atom 5 speed black cogs beside silver 2044 (kept 2026-11-06)'],
+  [2042, 'dating marking: Atom 5 speed S.I.C.C. Made in Italy beside 2044 (kept 2026-11-06)'],
+  [2036, 'dating marking: Atom 1 speed, no numbers with Atom, 4 ovals beside 2035 (kept 2026-11-06)'],
+  [2037, 'dating marking: Atom 1 speed, no numbers, no ovals beside 2035 (kept 2026-11-06)'],
+  [2039, 'dating marking: Atom 3 speed lettered Atom on backside beside 2038 (kept 2026-11-06)'],
+  [2040, 'dating marking: Atom 3 speed no ovals beside 2038 (kept 2026-11-06)'],
+  [2139, 'dating marking: Moyne 3 speed Made In France beside Fabrication Francaise 2138 (kept 2026-11-06)'],
+  [2141, 'dating marking: Moyne 4 speed Made in France beside Fabrication Francaise 2140 (kept 2026-11-06)'],
+  [2144, 'dating marking: Moyne 5 speed wide body Fabrication Francaise beside 2143 (kept 2026-11-06)'],
+  [2252, 'dating marking: Super Champion 4 speed MADE IN FRANCE beside BREVETE SGDG 2253 (kept 2026-11-06)'],
 ])
 
 // --- Near pairs: the same part under another brand row or another name ---
