@@ -2911,6 +2911,7 @@ const COMPONENT_OVERRIDES = {
     'universal lightened': [{ from: 1978, to: 1978, id: 480 }], // 1978 Bianchi Rekord/748: Universal Mod.77 lever (706 extra light), brakes Mod. 77
     'shimano santé': [{ from: 1988, to: 1989, id: 447 }], // 1988 Colnago Super Krono / Santé bikes: BL-5001 (standard 97.5mm reach) over the short-reach BL-5002 (judgement call); brakes BR-5000-49
     'modolo': [{ bike: 'PSV 10 M', from: 1986, to: 1986, id: 386 }], // 1986 Peugeot PSV 10 M, brakes Modolo Speedy (886): Speedy lever (386 year_to 1985 -> 1986; judgement call, brand-only cell)
+    'extension levers': null, // 1985 Raleigh Record / Sportif: generic text; the matcher hit 8871 Dia-Compe 166A / 196 by title substring, brakes are plain "Alloy S.P." (unlinked 2026-11-06)
     'weinmann quick release levers': [{ from: 1974, to: 1975, id: 487 }], // 1974-75 Motobecane Grand Jubilé, Weinmann 999 brakes: Weinmann AG (with quick releases) (487 year_to 1971 -> 1975; judgement call)
     // 2026-11-02 brake lever pass.
     'mafac professional': [{ from: 1982, to: 1982, id: 9968 }], // 1982 Peugeot: MAFAC PRO (1982)
@@ -2960,19 +2961,19 @@ const COMPONENT_OVERRIDES = {
     // 1982 Bianchi US racing brochure (saarf.london).
     'campagnolo gran sport drilled': 209, // 1040/1A, Nuovo Gran Sport ("Gran Sport brakes with drilled-out levers")
     // c. 1984 De Rosa (ebykr scan).
-    'campagnolo c record': [{ to: 1986, id: 212 }, { from: 1987, id: 214 }], // 0118065 first gen (1985-86, as Cinelli / Colnago) / Corsa Record with Power Grade (1987-91)
+    'campagnolo c record': [{ to: 1986, id: 212 }, { from: 1987, id: 214 }], // 0118065 first gen (row 1984-87 since 2026-11-06, as Cinelli / Colnago) / Corsa Record with Power Grade (1987-91)
     // 1979 Peugeot: the MAFAC 1976 catalogue names its forged racing lever "poignée course".
     'mafac course': 357, // MAFAC Course 419 / 429, Competition (the catalogue's CB/CS dural racing lever)
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
     'campagnolo record': [{ to: 1984, id: 226 }], // 2030, Nuovo Record (1967-84); the bare "Campagnolo Record" row the matcher hits is 1994
     'campagnolo gran sport': 209, // 1040/1A, Nuovo Gran Sport (1970-84)
     // 1986 Colnago Catalogo generale group fan-outs.
-    'campagnolo c record 180': 212, // 0118065, C-Record first generation (1985-86)
+    'campagnolo c record 180': 212, // 0118065, C-Record first generation (1984-87; the 1987 Colnago C-Record 180 bikes keep first-gen parts throughout)
     'campagnolo super record 30nnale': 231, // 4062 post-83
     // 1986 Cinelli groupset fan-out.
     'campagnolo super record': [{ to: 1982, id: 232 }, { from: 1983, id: 231 }], // 4062 pre-'83 globe-logo hoods (1974-83; 1979 Colnago) / post-83 shield-logo hoods (1983-87; 1986 Cinelli, Colnago)
     'campagnolo victory': 235, // Victory levers (1984-87)
-    'campagnolo record corsa': 212, // 0118065, C-Record first generation (1985-86)
+    'campagnolo record corsa': 212, // 0118065, C-Record first generation (1984-87)
     // 1985 Raleigh lever halves (split out of the Brakes cells). 161 / 164 /
     // 281 have no DB row yet.
     'dia compe agc 250': 279, // Dia-Compe AGC250, Aero Compe
