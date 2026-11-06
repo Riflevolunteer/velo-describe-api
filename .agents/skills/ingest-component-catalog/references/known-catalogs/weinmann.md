@@ -226,6 +226,7 @@
   DL 160 (x3), Super Tourer DL 135 / 140 (x2) "Weinmann Narrow (Section)
   Alesa High Pressure Alloy" / "Narrow Alloy High Pressure" -> 7928 (256 is
   17mm, the narrower of the two HP rims).
+- Re-read 2026-11-06 for extension levers (1974-75 Motobecane specs): none in this catalogue; hand levers are only on printed pp. 3-4, all already loaded.
 - Left: 1115 AG 1020 vs 7919 1022-A kept apart (arms 16.1020.6 serve the
   1022); 610 / 750 label variants; Raleigh 1984 "eyeletted" / "high strength
   narrow section" Weinmann rims (80s range, not here).
