@@ -3409,6 +3409,9 @@ const COMPONENT_OVERRIDES = {
     'suntour gpx silver': [{ from: 1989, to: 1989, id: 7783 }], // CH-GP00
   },
   Cassettes: {
+    // 2026-11-06 group-matched cassettes: bike-keyed by the rear-derailleur group.
+    'shimano hg 12 28t 7 speed': [{ bike: 'Peregrine', from: 1991, to: 1991, id: 7567 }], // 1991 Bianchi Peregrine, Deore DX: CS-HG70, as the 1990 / 1993 Peregrine
+    'suntour 13 28t 7 speed': [{ bike: 'Axis', from: 1989, to: 1989, id: 1224 }], // 1989 Bianchi Axis, XCD 6000: CS-AP00-K7U (1224 year_from 1990 -> 1989; judgement call); the Tangent (XC 9010) has no row
     'shimano cs 6400sg 13 23t 7 speed': 1202, // 1991 Bianchi Virata: 7-speed HG, as the 1990 Virata (CS-HG90 / 600 Ultegra)
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano cs hg70 12 28t 7 speed': 7567, // CS-HG70 7-speed
@@ -3455,6 +3458,17 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    // 2026-11-06 group-matched cassettes (Freewheel label): bike-keyed, the cassette follows the bike's rear-derailleur group, as the 1989-93 Bianchi overrides in Cassettes.
+    'cassette 7 speed hyperglide 13 30t': [
+      { bike: 'Avanti', from: 1989, to: 1989, id: 7641 }, // 1989 Raleigh, Deore XT-II M732: CS-M732
+      { bike: 'Appalachian', from: 1989, to: 1989, id: 7630 }, // Deore II MT62: CS-MT62, as the 1989 Bianchi Grizzly
+      { bike: 'Ozark', from: 1989, to: 1989, id: 7630 }, // Mountain LX M452: CS-MT62, as the 1989 Bianchi Incline
+    ],
+    'cassette 7 speed 12 21t': [{ bike: 'Road Ace Select', from: 1989, to: 1989, id: 1199 }], // 1989 Raleigh, 600 Ultegra RD-6400: CS-6400-7
+    '7 speed 12 21 cassette': [{ bike: 'Road Ace Select', from: 1988, to: 1988, id: 1199 }], // 1988 Raleigh, 600 Ultegra RD-6400: CS-6400-7
+    'cassette 7 speed 13 24t': [{ bike: 'Record Ace Moderne', from: 1989, to: 1989, id: 7562 }], // 1989 Raleigh, Santé RD-5001: CS-5000; the 105 (Quadra II, Delta) and Sport LX (Elix) bikes have no cassette row
+    'regina 13 23t 7 speed': [{ from: 1991, to: 1991, id: 2205 }], // 1991 Bianchi Giro / Super Leggera / Mondiale: Regina Synchro 90-S, as the same models' "RL.SY90" in 1989-90
+    'suntour 12 28t 7 speed': [{ bike: 'Grizzly', from: 1991, to: 1991, id: 1222 }], // 1991 Bianchi Grizzly, XC-Pro: CS-AP00-S7U, as the 1990 Grizzly (1222 year_to 1990 -> 1991; judgement call)
     // 2026-11-02 freewheel pass.
     'shimano new 600 ex 6 speed 13 24 teeth': [{ from: 1986, to: 1986, id: 2217 }], // 1986 Miyata: MF-6207-6, 600EX (New 600 EX = 6207, as below)
     'shimano new 600 ex 6 speed 13 24 teeth sealed': [{ from: 1986, to: 1986, id: 2217 }],
@@ -3654,6 +3668,10 @@ const COMPONENT_OVERRIDES = {
   },
   Tyres: {
     'panaracer record': null, // 1991 Bianchi Virata / Alfana: the only row is the 27" P-27RD (6841, 1980)
+    // 1989-90 Bianchi Vittoria Zefir: the only Zefir rows are 1996-99 (10242, 10241, 10558, La Bicicletta Guida '96 / '99); nothing shows the 1989 tyre is the same, so no link before 1996 (user's call 2026-11-06).
+    'vittoria zefir "22"': [{ to: 1995, id: null }], // 1989 Super Leggera / Giro
+    'vittoria zefir 700 x 20c': [{ to: 1995, id: null }], // 1989 Campione D'Italia
+    'vittoria zefir 700x20c': [{ to: 1995, id: null }], // 1990 Super Leggera / Giro / Campione d'Italia
     // 1991 / 1992 Bianchi (JP) catalogues
     'vittoria super criterium': 6884, // Criterium Super
     'vittoria criterium': [{ from: 1992, to: 1992, id: 6884 }], // 1992 Bianchi JP: the same Mondiale tyre the 1991 table calls Super Criterium; 9061 Criterium ends 1981
