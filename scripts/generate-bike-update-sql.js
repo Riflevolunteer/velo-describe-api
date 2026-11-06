@@ -3799,6 +3799,12 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // 2026-11-06: Ukai 1980 catalogue rows (source 354), year_to 1980 -> 1986 from the 1986 Raleigh / Miyata catalogues.
+    'ukai 20a 700c': [{ from: 1986, to: 1986, id: 5192 }], // 1986 Raleigh Competition / Supercourse / Grand Prix: Ukai Model 20A (No. 4094, 700x25C)
+    'ukai model 20 a 700c hard anodized': [{ from: 1986, to: 1986, id: 5192 }], // 1986 Miyata 912
+    'ukai model 20 a 700c gmg hard anodized': [{ from: 1986, to: 1986, id: 5192 }], // 1986 Miyata 710
+    'ukai model 20 a 700c gmg silver': [{ from: 1986, to: 1986, id: 5192 }], // 1986 Miyata 310
+    'ukai 7c 26x175': [{ from: 1986, to: 1986, id: 10470 }], // 1986 Miyata City Runner: Ukai Model 7C (judgement call: the 1980 catalogue lists the 7C in 24 / 20 / 16 in only)
     // Judgement calls 2026-11-02 (rim years widened in the DB to fit):
     'rigida 1622 alloy 27 x 1 1 4" stainless steel spokes': [{ from: 1986, to: 1986, id: 5155 }], // 1986 Peugeot (US): Rigida AL 1622 (year_to 1980 -> 1986)
     // Bike Warehouse catalog No. 16 (1980) identifies the narrow double-wall 13 mm clincher as Rigida 1320;
