@@ -150,6 +150,11 @@ const REVIEWED_VARIANTS = new Map([
   [2144, 'dating marking: Moyne 5 speed wide body Fabrication Francaise beside 2143 (kept 2026-11-06)'],
   [2252, 'dating marking: Super Champion 4 speed MADE IN FRANCE beside BREVETE SGDG 2253 (kept 2026-11-06)'],
   [486, 'two runs: Weinmann AG red anodized early levers (1960) beside the plain early levers 484 (1950) (kept 2026-11-06)'],
+  // Ukai 1980 catalogue (source 354) numbers its own sub-models, each with its own part numbers (kept 2026-11-06).
+  [10464, 'distinct part: Ukai Model 17(2), Nos. 3996-3999, 2.125 only, beside 17(1) 3985-3988'],
+  [10465, 'distinct part: Ukai Model 17(3), Nos. 4060-4063, dimpled spoke holes, beside 17(1)'],
+  [10467, 'distinct part: Ukai Model 16A(2), Nos. 3949 / 3954 (26x1-1/4, 27x1-1/4), beside 16A(1)'],
+  [10468, 'distinct part: Ukai Model 16A(5), 700x28C / 27x1-1/8, 22mm, beside 16A(1)'],
 ])
 
 // --- Near pairs: the same part under another brand row or another name ---
@@ -224,6 +229,10 @@ const REVIEWED_NOT_DUPLICATES = [
   [4600, 4669], // Spidel badge variant: Simplex LJ1000 T / Spidel LJ1000 T (Simplex)
   [4650, 4670], // Spidel badge variant: Simplex SLJ5000 / Spidel SLJ5000 (Simplex)
   [5071, 8191], // different part: Mavic M 231 CD / Mavic M 231
+  [5071, 9972], // different part (kept 2026-11-06): M 231 CD (hard anodised) / M 231 Ceramic (ceramic-coated braking surface)
+  [8191, 9972], // different part (kept 2026-11-06): M 231 (neutral anodised) / M 231 Ceramic
+  [9970, 9971], // different part (kept 2026-11-06): M 281 / M 281 CD (hard anodised), sold under their own designations
+  [9980, 9982], // different part (kept 2026-11-06): Mavic 238 (26in MTB, 450g) / T238 (700c trekking, 500g)
   [5072, 8192], // different part: Mavic M 261 / Mavic M 261 CD
   [5183, 5184], // different part: Super Champion Gentleman / Super Champion Gentleman 81
   [5748, 5749], // different part: Campagnolo 1044, Nuovo Record (Superle / Campagnolo 1044, Record
