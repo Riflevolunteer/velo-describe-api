@@ -652,3 +652,17 @@
 - Unlinked (do-not-link overrides, one-off UPDATEs to NULL): Virata / Alfana "Nitto Dynamic III, 90 degree" stem (was 8562, the
   1980 Dynamic; 6614 is the 1989 Dynamic-2; no Dynamic III row) and "Panaracer Record" tyres (was 6841 Record P-27RD, a 27" tyre
   from the 1980 bucket). Only this CSV uses either string. 1991: 125 -> 121 links, none off-era.
+
+## 1992 Bianchi Campagnolo seatpost links — 2026-11-06
+
+- User approved the two clear Campagnolo links: Super Leggera "Campagnolo Chorus"
+  (bike_spec 19650) -> 7041 SP-CH Chorus RS; Giro "Campagnolo Athena"
+  (19662) -> 7049 SP-AT Athena RS. Both seatposts are in the Campagnolo 1992
+  Road Range, data_source 18, and dated 1992-1995 in the component table.
+- Added 1992-only ranges to the Seat Posts overrides, retaining every earlier
+  range. Generated all 81 catalog CSVs before and after: exactly these two
+  matches changed (6061 -> 6063 linked specs in generated output).
+- Applied only the two generated NULL-only back-fill UPDATEs through
+  /private/tmp/bianchi-1992-seatposts.sql; two rows affected and read-back
+  confirmed both targets. No component changes. Live Seatpost coverage
+  229 -> 231 of 728 specs (31.7%).

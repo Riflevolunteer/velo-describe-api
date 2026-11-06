@@ -360,3 +360,37 @@
   match, not merged: MP-468 and row 8245 SP-468 (1982, one-piece pedal with reflector,
   64 x 95 mm, 410 g) could be the same pedal under a new number; no specs to check.
 - No bike_spec links or overrides affected.
+
+## SR recovered mountain bike stem fragment (c. 1983) and CX advertisement (July 1984), imported 2026-11-06
+
+- Sources registered: 363, `Sakae Ringyo (SR) mountain bike stems catalogue fragment (c. 1983)`;
+  364, `Sakae Ringyo (SR) CX crankset advertisement, Bicycling (July 1984)`, market US.
+  Both use source_type `catalogue`, following the existing advertisement/leaflet convention.
+- Stem fragment: https://cimg4.ibsrv.net/gimg/bikeforums.net-vbulletin/967x681/screenshot_20210423_170946_fennec_9de20ebd1234b2a775cd55b20b7101e6258e5abf.jpg
+  reproduced in BikeForums thread 1127647, post 724 (page 29). MTB Timeline
+  https://mtbtimeline.com/wiki/tech/slingshot attributes it to 1983 catalog p.10,
+  linking Velo-Pages item 58566. The fragment itself is undated and does not show
+  a catalog number: c.1983 is external attribution, not a confirmed No.19 imprint.
+- Advertisement: https://djcatnap.com/wp-content/uploads/2023/02/BicyclingMagazine1984-Cuevas.pdf#page=8
+  (8-page extract, printed p.169, explicitly July 1984). Only the SR advertisement
+  on the last page was ingested; the Cuevas frame article is outside this pass.
+- New: 10846 `Sakae/Ringyo (SR) MTS-100`, Stems, 1983-1983 (approximate source year):
+  melt-forged light alloy V-shaped head, Cr-Mo steel tube, extension 90mm,
+  length 150mm, quill 22.2mm, 610g; source_ref 363.
+- Enriched: 6666, retitled from `Sakae/Ringyo (SR) SR-MTS-110` to
+  `Sakae/Ringyo (SR) MTS-110`, search_text regenerated; melt-forged high-strength
+  light alloy head, four-bolt faceplate, extension 63mm, length 150mm,
+  quill 22.2mm, 580g; year_to 1980 -> 1983, source_ref 1 -> 363. Existing year_from
+  1980 retained: the undated fragment's NEW marking plus approximate external
+  dating is insufficient to assert a precise introduction year.
+- New: 10847 `Sakae/Ringyo (SR) CXC-T300, CX`, Cranksets, 1984-1984, source_ref 364:
+  triple crankset with detachable five-bolt chainrings, 110/74mm BCD. The ad's
+  24-53T range describes the CX line, so it was not assigned to this specific model.
+  Generic CX row 1747 (1986) was retained: the ad does not prove its configuration.
+- No bike_spec links, generator overrides, deletes or merges. MTS-101 row 6661
+  is a different model and unchanged. The fragment does not identify MTS-131.
+- SQL: `/private/tmp/sr-recovered-sources.sql`; compact listing:
+  `/private/tmp/sr-recovered-sources.json`. Transaction loaded successfully;
+  read-back verified the three rows, descriptions, years and source citations.
+  Source files remain at their cited public URLs; the app registers citations
+  and does not provide a document storage/upload facility.

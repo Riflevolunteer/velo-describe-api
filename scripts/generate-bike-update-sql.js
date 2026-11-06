@@ -3281,9 +3281,9 @@ const COMPONENT_OVERRIDES = {
     'laprade 606': [{ from: 1970, to: 1979, id: 5816 }], // PY 10 CP: Laprade Brevete 606 (1970-79)
     'simplex slj 4160': [{ from: 1978, to: 1978, id: 7340 }], // PX 10 LE: Simplex 4160 (1978)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
-    'campagnolo chorus': [{ from: 1987, to: 1991, id: 5742 }], // C0R2, Chorus (matcher took the mid-90s RS)
+    'campagnolo chorus': [{ from: 1987, to: 1991, id: 5742 }, { from: 1992, to: 1992, id: 7041 }], // C0R2 / SP-CH Chorus RS (1992 Bianchi Super Leggera; 1992 Road Range)
     'campagnolo athena alloy': [{ from: 1988, to: 1989, id: 5742 }], // 1989 Peugeot (FR) Dolomites: C0R2, as below
-    'campagnolo athena': [{ from: 1988, to: 1989, id: 5742 }, { from: 1990, to: 1991, id: 5736 }], // C0R2 (fitted to Athena; 1989 Bianchi Giro) / SP-10AT (v2)
+    'campagnolo athena': [{ from: 1988, to: 1989, id: 5742 }, { from: 1990, to: 1991, id: 5736 }, { from: 1992, to: 1992, id: 7049 }], // C0R2 / SP-10AT (v2) / SP-AT Athena RS (1992 Bianchi Giro; 1992 Road Range)
     'shimano deore xt': [{ from: 1989, to: 1993, id: 5892 }], // SP-M730
     'suntour xc pro': [{ from: 1990, to: 1992, id: 8046 }], // SP-XP00 (row dated 1992)
     'ritchey force directional': [{ from: 1990, to: 1993, id: 8407 }], // Force Directional Seatpost (Mountain)
