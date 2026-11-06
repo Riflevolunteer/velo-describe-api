@@ -2089,6 +2089,10 @@
   to 1998, so no year_to was extended. The '98 manual's interior is still
   unseen; BB-UN73 / BB-LP27 (121 / 120) and the 1998 range remain open.
 
+- Follow-up 2026-11-06: full 1998 and 1999 US consumer catalogues found and
+  ingested as sources 365 / 366 below. These are separate from this gallery
+  of 1997 dealer-manual pages. BB-LP27 is now attested; BB-UN73 remains absent.
+
 ## Cleanup 2026-10-27 (no catalogue): BR-1050 "dark anodized" duplicates
 
 - Deleted (user-approved) two velobase rows duplicating the catalogue-sourced
@@ -2099,3 +2103,94 @@
   955 "Shimano BR-1050, 105 Dark Anodized (47-57mm)" (Brakes, 1989-1989, bare,
   `7414ED0B-F833-4EA9-BAFF-B358C6CB475D`) -> 954 BR-1050-57. Neither had bike_spec
   links or COMPONENT_OVERRIDES entries. 953 now ends "326 / 328g measured."
+
+## Shimano Bicycle Components 1998, US catalogue — source 365, loaded 2026-11-06
+
+- Source: [Charlie Taylor archive](https://www.charlie-taylor.net/bikes/library/shimano/1998/00.htm).
+  Full scans at `1998/large/98Shimano<page-pair>.jpg`, cover `00`, spreads
+  `01-02` through `57-58`, final page `59`. Read all 31 images. Printed p59
+  states copyright December 1997, publication 1297; catalogue/model year is
+  1998. US edition (Shimano American Corporation / Canada warranty), country US.
+- 47 new components, IDs 10848-10894, and 105 existing-row updates. New group
+  327 DX (BMX) and 328 Nexave, both owned by Shimano. Added model-coded
+  Nexave T400 parts, XTR M951 controls / Rapidfire Remote / reverse-action
+  rear derailleurs and crank variants, later STX-RC controls and cranks,
+  DX MX66 hubs and single sprocket, plus named mount and gearing variants.
+- Bottom brackets: 120 BB-LP27 attested in Alivio and RSX tables, removing
+  the inferred-date qualifier; kept 1998-1998 and 357g actual weight.
+  Added 10848 BB-LP27-E as the separately listed E-type mounting version.
+  XT still lists BB-UN72/-E; no BB-UN73 anywhere. Do not re-check this
+  catalogue for UN73.
+- Starts moved earlier: 10074 ST-6500, 10075 FH/HB-6500, 10076 CS-6500 and
+  10077 PD-7700, all 1999 -> 1998. No valid earlier dates were moved later
+  merely because the parts appear here. Year extensions apply to explicitly
+  attested members of combined rows, not independently to every sibling code.
+- Preserved existing combined families: FD-6503 -> 2538 FD-6500 family,
+  FC-6503 -> 1847 FC-6500 family, HB-M738 -> 8670 HB-M737-A / HB-M738-A;
+  updated the first two titles to include their triple codes, with search_text.
+  CS-M900-I / CS-HG70-I map the existing 8-speed IG-compatible rows, not the
+  similarly named road cassettes. Explicit mount/cage differences remain
+  distinct. Seven-speed indexed SL-A400 is a new 300EX row, not the old
+  non-indexed Light Action 6182; FC-A300 round SG is not FC-A300-BP.
+- Corrected 9626 BR-M600-MX's description from "right lever only" to a
+  rear brake caliper with 20mm pad adjustment. Catalogued DX rows 9624 and
+  9626 moved from Campagnolo-owned BMX group 156 to Shimano group 327;
+  the other legacy group assignments need a separate review.
+- RD-MC34 9648 retains the conflicting capacities explicitly: 29T printed
+  in 1996-97, 39T in 1998. New BL-MC40's adjustment is described as
+  three-position in 1998, two-step in 1999; the final description retains
+  that edition difference. Independent measured weights were preserved.
+
+## Shimano Bicycle Components Vol. 99, US catalogue — source 366, loaded 2026-11-06
+
+- Source: [Charlie Taylor archive](https://www.charlie-taylor.net/bikes/library/shimano/1999/00.htm).
+  Full scans at `1999/large/99Shimano<page-pair>.jpg`, same 31-image layout
+  as 1998. Read all pages. Printed p59: copyright November 1998, publication
+  1198; catalogue/model year 1999, country US.
+- 71 new components, IDs 10895-10965, and 63 UPDATE operations, including
+  extending some rows inserted by the 1998 load. Added Shimano groups
+  329 Deore LX M570 Series and 330 Deore XT M750 Series. New rows cover the
+  XTR M952/M953, XT M750/M751 and LX M570/M571 ranges, Nexave T300, later
+  Nexus gear hubs / controls, current RSX parts marked New, separate pedals,
+  and remaining explicitly coded configurations. Cage variants and four- /
+  five-arm / downhill cranks stay separate; generic family references do
+  not create extra duplicate rows.
+- Bottom brackets: added 10895 BB-M952, 213g, alongside BB-M950; extended
+  119 BB-UN72/-E through 1999 from the XT specification table. BB-LP27 is
+  only an interchangeability/tool reference here, so its 1998 year_to was
+  not extended on that basis. BB-UN73 absent, including the installation
+  tool list. Its 121 row remains an unresolved inferred 1998 date.
+- Primary-source corrections: 10082 "Shimano CS-5500, 105" -> "Shimano
+  CS-HG70-9, 105 / Deore LX" (the printed manufacturer code; same existing
+  cassette, not a new row), including new search_text. 10075 FH-6500's
+  freehub body corrected from alloy to steel. 10076 CS-6500 corrected from
+  titanium/steel to steel sprockets with alloy carrier; the titanium drawing
+  explicitly belongs to CS-7700. 10083 CN-HG72 corrected to grey plates,
+  116 links. BB-5500 10080 now includes the steel adaptor and double/triple
+  spindle dimensions and weights.
+- Enriched 4451 RD-5500 with SS/GS capacities and weights while retaining
+  its 229g measured specimen, and 2530 FD-A417 while retaining 119.8g actual.
+  ST-6500 10074 uses SC-6500-SW external Flight Deck switches; new ST-6501
+  integrates the controls/sensors. Separate SL-MC38 6192 is the existing
+  shifter, not the integrated ST-MC38; retained the legacy Shifters category
+  on combined Nexus ST-7S20/ST-4S20 9678 rather than insert a duplicate.
+- A final five-row enrichment retained measured weights while expanding
+  BR-6500 1016, FC-1057 1784, HP-5500 3084, ST-A416 6367 and ST-A550 6368.
+  HP-5500 has conventional ball bearings (the sealed-cartridge symbol is
+  crossed out); HP-6500 and HP-7410 have cartridge bearings. ST-A416 is the
+  double-front RSX control; ST-A417 is the separately coded triple version.
+- Compatibility diagrams and tool lists contain older 7400 / 6400 / 105SC
+  and M950/M951 models; these references alone do not extend dates or create
+  rows. Explicit New labels and current specifications are distinguished
+  from those compatibility references. Uncoded photo-only products, shoes,
+  computers/sensors/switches, tools, binders and deflectors were not added.
+- Combined result: +118 rows, 119 pre-existing rows changed, component_detail
+  9950 -> 10068. Verified all 237 changed/new component rows field by field
+  against the reviewed final plan; no mismatches. No bike_spec writes.
+- Scratch evidence, full listing, before/after snapshots and rollback are in
+  `/private/tmp/shimano-catalogues/`. Applied `shimano-1998-ingest.sql` and
+  `shimano-1999-ingest.sql`, then `shimano-sparse-enrichment.sql`;
+  `rollback.sql` reverses all three. Source images,
+  OCR, page reviews, alias decisions and `verification.json` are retained
+  there. The partial 10-page Goatsurfer file was downloaded but not used
+  as evidence for either load.

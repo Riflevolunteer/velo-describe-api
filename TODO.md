@@ -32,6 +32,8 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 
 ## Open: component data follow-ups
 
+- Shimano BMX group ownership (found 2026-11-06): 18 older Shimano rows still use Campagnolo-owned group 156 "BMX". The 1998/99 catalogue pass moved only catalogued PD-M636 9624 and BR-M600-MX 9626 to new Shimano DX (BMX) group 327; review the remaining legacy assignments separately.
+
 - Era mismatches left after the 2026-10-30 pass (12 specs, 9 parts): 3141 Tange Falcon (1974) on 1986-87 Peugeot "sealed" x3 (probably a later sealed Falcon, no row); 3388 Normandy Luxe Competition gold label on 1974-75 Motobecane x2 (see Version rows). Single bike-earlier specs: 1398 Sedis Gold (1978) on 1975, 6899 Vittoria Pro L Slick (1990) on 1987, 1365 Everest Serie Special Oro (1985) on 1981, Nisi 9227 / 9228 / 9225 and 9126 Gipiemme Crono Sprint (1985) on 1982 Battaglin. Also: 35 descriptions sit at the 255-char limit (they end on full sentences).
 - Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Maxy II (Mighty Custom now has a second source, Palo Alto 1978-79) and the Nuovo Tipo C1264-1267 hubs (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
 - Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); the SunTour "syncro-shift" Cyclone II lever (Palo Alto 1981/82; no part number, no row). The 1981 Superbe brake is settled by years: CB-1000 ends 1978, so a 1981 Superbe is the Superbe Pro CB-3100 / 4100 family (reach unstated); nothing links to it.
@@ -250,12 +252,14 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ## Open: Shimano bottom bracket cleanup
 
-- 121 BB-UN73 and 120 BB-LP27 are in no manual we hold (1990-97 manuals; the disraeligears 1998 / 1999 / 2000 Shimano spare parts catalogues are derailleur-only, checked 2026-11-02). 2026-11-02: both redated to 1998-1998 by series sequence (UN70 1992 / UN71 1993-95 / UN72 1996-97; LP25 1995 / LP26 1996-97; VeloBase says LP27 "Late 1990's"; 120 was 1990, 121 undated), marked "date inferred" in the descriptions. Confirm or correct from a 1998 / 1999 Shimano dealer manual if one turns up.
+- 121 BB-UN73 still needs dated evidence. Its 1998-1998 dates were inferred on 2026-11-02 from the UN70 / UN71 / UN72 sequence (previously undated). The full 1998 and 1999 US consumer catalogues were loaded 2026-11-06 (sources 365 / 366); both specify BB-UN72/-E for XT and contain no UN73, including tool lists. Hunt a later dated dealer manual or service document; do not re-check these two catalogues. BB-LP27 120 is now attested in the 1998 catalogue, its inferred-date qualifier removed; BB-LP27-E 10848 added separately.
 - 2026-11-02: descriptions written for 120, 121, 124 BB-1055 and 141 BB-6500 from their VeloBase pages (spindle, threading, weight); 124's 1990-1992 dates stand.
 - Name collision: 12 Brakes rows carry BB- codes (Tourney / 600 / 500); no change planned.
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
 
 ## Done
+
+- 2026-11-06 Shimano 1998 / 1999 US catalogues (Charlie Taylor archive, sources 365 / 366; printed Dec 1997 / Nov 1998): +47 / +71 components, 119 pre-existing rows updated including final description enrichments, +4 Shimano groups. BB-LP27 now catalogue-backed; BB-LP27-E and BB-M952 added, BB-UN72/-E to 1999, UN73 still absent. Corrected CS-5500 -> CS-HG70-9, FH-6500 steel freehub body, CS-6500 steel sprockets and CN-HG72 plates/links. Component rows 9950 -> 10068; all 237 changed/new rows verified against the plan. No bike-spec changes. Full notes in shimano.md.
 
 - 2026-11-06 bottom bracket duplicate pass: reviewed 314 rows; merged SunTour 178 "XC Pro Grease Guard" into 8012 BB-XP00 (kept 1992-93; discarded erroneous 1980 bucket) and Campagnolo 37 "Record Triple Bearing (c. 1997)" into 10101 Record 9-speed (now 1997-99; preserved triple-bearing description and BB-31RECART / BB-33RECART codes). No linked specs or overrides; component_detail 9952 -> 9950, bottom brackets 314 -> 312. Source GUIDs and dating qualifications recorded in suntour.md / campagnolo.md.
 
