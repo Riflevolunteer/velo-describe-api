@@ -1906,6 +1906,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ from: 1989, to: 1989, id: 1055 }], // CT-XC10 cantilever
   },
   Headsets: {
+    'tioga expert cr': [{ from: 1993, to: 1993, id: 10839 }], // 1993 Bianchi: Tioga MTB Expert CR (Tioga 1992 catalogue, 10839 year_to 1992 -> 1993)
     // 2026-11-02 headset pass (judgement calls).
     'shimano deore ii': [{ from: 1989, to: 1989, id: 7228 }], // 1989 Raleigh Appalachian: HP-MT60, Deore (no MT62 headset row; the Deore II brochure uses MT60 codes, as the pedals)
     'shimano b 10': [{ from: 1986, to: 1986, id: 3114 }], // 1986 Peugeot PSV 10 M: read as Stronglight B10 (1982-86), the Peugeot headset; "Shimano" taken as a misprint
