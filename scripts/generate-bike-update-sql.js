@@ -2651,6 +2651,7 @@ const COMPONENT_OVERRIDES = {
     'cinelli 1 r': [{ from: 1976, to: 1979, id: 6492 }, { from: 1980, to: 1985, id: 6491 }],
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'ritchey force': [{ from: 1988, to: 1992, id: 8400 }], // Force Directional (Mountain)
+    'ritchey force comp': [{ bike: 'Grizzly', from: 1991, to: 1991, id: 8399 }], // 1991 Bianchi Grizzly (MTB): Force Comp (Mountain); bike-keyed so a road bike's bare "Force Comp" doesn't take the Mountain row (8401 is Road)
     'ritchey force comp ht butted': [{ from: 1989, to: 1992, id: 8399 }], // Force Comp (Mountain)
     'nitto mt 80aa': [{ from: 1989, to: 1990, id: 8579 }], // Nitto MT-80
     // 1985 Bianchi Squadra: the Technomic Aero is a later model than the plain
