@@ -847,3 +847,5 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   700 Super Plus -> 2127, 5-speed 700 -> 2113; Weinmann 610 -> 1136, 500 with QR -> 1125; 1985 PY 10 FC / PRO 10
   "Simplex alloy, expander binder" -> 5904 (SLJ tier). +33: 1985 31 -> 33, 1986 FR 81 -> 84, 1986 US 81 -> 109. Left:
   Huret Club 2 (Club II 1978-80 vs Sachs Club 1984), Simplex SX 640 (no row), and the no-row parts listed above.
+
+- 2026-11-06 crankset pass: 1989 Peugeot (FR) "TA alloy, cyclotouriste model, 32x42x52" -> 1856 Spécialités TA Cyclotouriste (1856 year_to 1983 -> 1989). +1. 1974 "Stronglight Competition 53, light alloy" left unlinked: 9501 Stronglight No. 53 (1974) now exists but describes chrome steel cranks.

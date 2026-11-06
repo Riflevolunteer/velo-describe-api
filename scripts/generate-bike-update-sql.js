@@ -2275,6 +2275,9 @@ const COMPONENT_OVERRIDES = {
     'ofmega super competizione colnago signed': [{ from: 1987, to: 1987, id: 1703 }], // 1987 Colnago: Super Competizione road, 2nd version
     'shimano tourney xt 50 45 28 175mm': [{ from: 1985, to: 1985, id: 2004 }], // 1985 Raleigh: Tourney XT (2004 year_to 1980 -> 1985; judgement call)
     'sr ctc 5dxc 52x42 teeth': [{ from: 1986, to: 1986, id: 8205 }], // 1986 Miyata: SR CTC-5DXC2, Custom DX double (8205 year_to 1982 -> 1986; judgement call)
+    // 2026-11-06 crankset pass.
+    'tourney alloy cotterless 40 52 chainwheel with alloy guard': [{ from: 1974, to: 1975, id: 9562 }], // 1975 Motobecane: Takagi Tourney (forged alloy cotterless double, alloy guards, 39-49T inner; 9562 year_to 1974 -> 1975)
+    'ta alloy cyclotouriste model 32x42x52': [{ from: 1989, to: 1989, id: 1856 }], // 1989 Peugeot (FR): Spécialités TA Cyclotouriste (1856 year_to 1983 -> 1989)
     'shimano ct10 48 38 28t': 7736, // 1993 Bianchi, from the Jul 1992 manual: Shimano FC-CT10, Altus C10
     'suntour fs e 52 42 32t': 8002, // 1993 Bianchi: SunTour CW-FS00-N, FS-E (52-42-32)
     'suntour xc comp md 42 32 20t': 7998, // 1993 Bianchi: SunTour CW-XC11, XC-Comp MD
