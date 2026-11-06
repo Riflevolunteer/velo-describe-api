@@ -2989,6 +2989,14 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // 2026-11-06 pedal pass: as the same model / group elsewhere.
+    'campagnolo alloy with reflector': [{ bike: 'Competition GS', from: 1977, to: 1977, id: 3688 }], // 1977 Raleigh Competition GS: Gran Sport 3700, as the 1978-81 Competition GS
+    'shimano deore xt sis': [{ from: 1988, to: 1988, id: 3967 }], // 1988 Colnago (FC-M730 crank): PD-M730, as the 1988 Raleigh Avanti
+    'shimano deore xt competition': [{ from: 1991, to: 1991, id: 3968 }], // 1991 Bianchi Signature: PD-M735, as the 1990 Signature 2 / 1991 Aranessa
+    'shimano sport lx': [{ from: 1989, to: 1989, id: 3976 }], // 1989 Bianchi Sport SX: PD-A450, as the 1989 Peugeot "Sport LX A 450"
+    'shimano spd': [{ from: 1993, to: 1993, id: 7666 }], // 1993 Bianchi Nth FS (XTR): PD-M737 SPD, as the 1993 Super Grizzly "SPD-737"
+    'ofmega quattro': [{ from: 1989, to: 1991, id: 3885 }], // 1989-91 Bianchi Campione d'Italia / Trofeo: Ofmega Vantage pedal; crank 1705 is "Vantage (Bianchi Quattro version)" (3885 year_to 1988 -> 1991; judgement call)
+    'shimano': [{ bike: 'PX 10 SH', from: 1985, to: 1985, id: 3961 }], // 1985 Peugeot PX 10 SH, 600EX crank / RD: PD-6207 (bare brand, bike-keyed; judgement call)
     // 1991 / 1992 Bianchi (JP) catalogues
     'campagnolo croce d\'aune': 3703, // B620-A
     'shimano 1055': 3955, // PD-1055
@@ -3063,7 +3071,7 @@ const COMPONENT_OVERRIDES = {
     'gipiemme cronospecial special': null,
     'gipiemme pista special': 3751, // Gipiemme Special (Pista)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
-    "campagnolo croce d'aune": [{ from: 1987, to: 1990, id: 3703 }], // B620-A
+    "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 3703 }], // B620-A (1991 Bianchi Mondiale added 2026-11-06; 3703 year_to 1990 -> 1991)
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'campagnolo super record strada': [{ from: 1974, to: 1988, id: 3716 }], // Barcellona: 4021
     'campagnolo record super leggeri': [{ from: 1971, to: 1988, id: 3709 }], // Super-Leggera: 1037/a Record Strada Superleggeri
@@ -3072,13 +3080,13 @@ const COMPONENT_OVERRIDES = {
     'sr sp100al alloy': 3922, // 1979 Raleigh Super Course: SP-100AL Silstar quill (1970-82)
     'sr sp100 alloy quill': 3922, // 1986 Raleigh Portage: same quill, row ends 1982 (a judgement)
     'sakae sp 150': 3925, // 1982 Peugeot PX 10 DU / PX 10 S / PSV 10 S: SP-150 (row 1970-80, the only SP-150 row)
-    'lyotard 36 rcm with reflector christophe toe clips and straps': null, // 1980 Peugeot (NL) PBN 10: not the 1950-70 "Lyotard 36" row, as 1977
+    'lyotard 36 rcm with reflector christophe toe clips and straps': [{ from: 1980, to: 1980, id: 3808 }], // 1980 Peugeot (NL) PBN 10: Lyotard 36 (1950-87), as the 1986-87 "Lyotard 36, RCM type" (null reversed 2026-11-06, user's call)
     'lyotard 136 race with reflectors toe clips and straps': 3801, // 1980 Peugeot (NL) PL 8 M: Lyotard 136R, as 1978
     'lyotard 136r with reflectors': 3801, // 1983 Peugeot (CA) UO 9 / PA 60: Lyotard 136R (type 1), as 1978-82
     'spidel 700 dural cage christophe toe clips and lapize straps': 3833, // 1980 Peugeot PRO 10 / PY 10 S: dural cage, as the 1979 'spidel 700 dural course'
     'lyotard 45 ca or atom 600 dural steel cage with christophe toe clips and lapize toe straps': null, // 1977 Peugeot (DE) PS 10/E, PSN 10/E: either / or; the matcher finds 9085 Lyotard 45, but the 45 CA is a different row (3811)
     'lyotard 136 race with toe clips and straps': 3801, // 1978 Peugeot (NL): Lyotard 136R
-    'lyotard 36 rcm with christophe toe clips and lapize toe straps': null, // 1977 Peugeot (DE): 36 RCM is not the 1950-70 "Lyotard 36" row the substring matcher finds; no RCM row
+    'lyotard 36 rcm with christophe toe clips and lapize toe straps': [{ from: 1977, to: 1977, id: 3808 }], // 1977 Peugeot (DE): Lyotard 36 (1950-87), as the 1986-87 "Lyotard 36, RCM type" (null reversed 2026-11-06, user's call)
     'lyotard 45 ca dural with christophe toe clips and lapize toe straps': 3811, // 1977 Peugeot (DE) PX 10/LE, PXN 10/E: Lyotard 45CA, as 1974
     'sr sp 250': [{ from: 1986, to: 1986, id: 3930 }], // 1986 Raleigh Grand Prix / Supercourse / Technium 480: Sakae/Ringyo SP-250 (undated)
     'sr sp 154 alloy quill': [{ from: 1986, to: 1986, id: 3927 }], // 1986 Raleigh Alyeska / Kodiak: Sakae/Ringyo SP-154 (row dated 1980)
