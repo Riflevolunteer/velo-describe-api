@@ -207,6 +207,7 @@ const REVIEWED_NOT_DUPLICATES = [
   [2043, 7239], // Atom vs Maillard Atom era: Atom (5 speed, black cogs) / Maillard Atom (5-speed)
   [2043, 8127], // Atom vs Maillard Atom era: Atom (5 speed, black cogs) / Maillard Atom 77 (5-speed)
   [2044, 7239], // Atom vs Maillard Atom era: Atom (5 speed, silver cogs) / Maillard Atom (5-speed)
+  [3827, 3990], // different pedals (kept 2026-11-06): Maillard 700 quill racing pedal / Spidel/Maillard 700 (platform), Spidel-badged
   [2574, 7313], // different part: Simplex SJ A103 / Simplex SJ A103 MB
   [2589, 2595], // Spidel badge variant: Simplex Super LJ / Spidel/Simplex Super LJ
   [2661, 2662], // different part: SunTour FD-XD00-GX, XCD 6000 / SunTour XCD 6000 (1990)
