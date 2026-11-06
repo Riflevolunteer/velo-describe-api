@@ -261,3 +261,7 @@ The generator's overrides for 1880 and 1893 still start at 1970 but only resolve
 - 1875 "Stronglight 100 LX" (years were NULL) dated 1985-1988: brochure floor as the 300 LX sibling, plus the
   dated 1987-88 Peugeot triples (ST 100 LXT).
 - Links +18 via Cranksets overrides (1986-88).
+
+## 1912 Stronglight 49D (DEPOSE) incised lettering merged (2026-11-06, crankset duplicate pass)
+
+- 1912 "Stronglight Stronglight 49D (DEPOSE) incised lettering" (VeloBase 0A84EDC5-3DB0-4B18-B4B0-A434E5DF550B, empty page, no specs) deleted into 1895 "Stronglight 49D (Depose)"; incised lettering noted as a variant on 1895. 1896 "49D (Marque Deposee)" stays a reviewed dating-marking row.
