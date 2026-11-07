@@ -1140,3 +1140,17 @@ Prompted by the new "DB year_from is earlier than the evidence" rule; checked ag
 - Neither row had bike_spec links, overrides or stored images. SQL and
   rollback: `/private/tmp/bottom-bracket-merges.sql` and
   `/private/tmp/bottom-bracket-merges-rollback.sql`.
+
+
+## Croce d'Aune Delta brake: 1992 Bianchi fitment — 2026-11-07
+
+- User-approved bike-catalogue correction: 567 "Campagnolo Delta, Croce d'
+  Aune" year_to 1991 -> 1992; source_ref 110 (1988 Dealer Parts Catalogue)
+  -> 359 (1992 Bianchi JP catalogue). Description and year_from 1988 retained.
+- Evidence: https://2velo.com/wp-content/uploads/2014/03/1992-catalog-p1911.jpg
+  Mondiale names the Croce d'Aune group and shows Delta-style calipers;
+  the 1991 Mondiale already links to 567. This attests fitment in 1992,
+  not continued manufacture; no 1992 Campagnolo range claim is made.
+- Bike spec 19633 -> 567, with a 1992-only Mondiale generator range.
+  Applied `/tmp/bianchi-1992-mondiale-brake-link.sql`; read-back verified,
+  rerun affected zero rows. All 81 CSVs compared: only this link changed.

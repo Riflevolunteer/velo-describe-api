@@ -156,6 +156,8 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ### Brakes (2026-11-07 pass)
 
+Latest 2026-11-07: 626 of 1013 linked (61.8%), after the approved 1981 Peugeot tandem pair and 1992 Bianchi Mondiale link; details in Done.
+
 2026-11-07: 623 of 1013 Brakes specs linked (61.5%; 620 before this pass). Linked the 1974-76 Raleigh Super Tourer Symetric / Symmetric values to model-level 8339 (733 / 813 / 1023), not a label-colour variant; year_from 1979 -> 1974 from the 1974 Raleigh catalogue. Nine component date corrections in total; see Done. Remaining era mismatches: 1983 Bianchi Rallye generic "Mafac cantilever" -> 10016 (1981-only, description specifies tandem dual-cable levers), and 1990 Bianchi Osprey / Nyala -> 8032 CT-X101 / 8038 CT-XT01 (1992-only; check generation/model codes against a 1990 manufacturer catalogue before widening). The 1982 Peugeot NL "605 side-pull" cells remain unlinked: the source prints Mafac, so the Weinmann identification still needs a clear photo.
 
 2026-11-02: 602 of 991 Brakes specs (label 18) linked (60.7%). By bike brand: Peugeot 244 / 475, Raleigh 140 / 214, Bianchi 96 / 121, Falcon 27 / 68, Colnago 49 / 56, Miyata 14 / 17. Most unlinked values are type or maker text ("Mafac centre-pull" 17, "Weinmann side-pull" 13, "Cantilever" 7, "Weinmann" 6, the Raleigh "Weinmann Alloy Side Pull with Extension Levers" and "Raleigh/Weinmann alloy centerpull" strings): leave.
@@ -260,6 +262,8 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
 
 ## Done
+
+- 2026-11-07 Bianchi Mondiale brake link (user-approved): 1992 "Campagnolo Croce d'Aune" [19633] -> 567 Delta Croce d'Aune. Component year_to 1991 -> 1992, source_ref 110 -> 359, from the 1992 Bianchi JP catalogue (Mondiale group named, Delta-style calipers pictured; fitment evidence, not a manufacturing-date claim). Added a 1992-only Mondiale override while retaining the 1988-91 range. All 81 CSVs compared: only this brake link changed. Applied `/tmp/bianchi-1992-mondiale-brake-link.sql`; rerun affected zero rows. Brakes 625 -> 626 of 1013 linked.
 
 - 2026-11-07 Peugeot tandem brake links (user-approved): 1981 TH 8 / TM 8 "Mafac cantilevers front, Maillard drum rear" [10989 / 11000] -> 845 MAFAC Cyclo-Tandem. Identification inferred from the same models explicitly naming Cyclo-Tandem in 1980 and 1982; original 1981 catalogue image 10 confirms front Mafac cantilevers and a rear Maillard drum. Added a 1981-only override scoped to TH 8 / TM 8; component dates unchanged, full brake text retained. All 81 CSVs compared: exactly these two links changed. Applied `/tmp/peugeot-1981-tandem-brake-links.sql`; rerun affected zero rows. Brakes 623 -> 625 of 1013 linked.
 

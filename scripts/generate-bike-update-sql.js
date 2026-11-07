@@ -1654,7 +1654,10 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 sis': [{ bike: 'Junior SIS 600', from: 1987, to: 1987, id: 972 }], // BR-6208, 600EX (1986-87)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'shimano santé': [{ from: 1988, to: 1989, id: 1008 }], // BR-5000
-    "campagnolo croce d'aune": [{ from: 1988, to: 1991, id: 567 }], // Delta, Croce d'Aune
+    "campagnolo croce d'aune": [
+      { from: 1988, to: 1991, id: 567 }, // Delta, Croce d'Aune
+      { from: 1992, to: 1992, bike: 'Mondiale', id: 567 }, // 1992 Bianchi JP: group named and Delta-style calipers pictured
+    ],
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'campagnolo super record short reach with special bianchi lightening': [{ from: 1975, to: 1985, id: 7005 }], // "bassi": 4061/1 short reach
     'universal competizione 77': [{ from: 1977, to: 1988, id: 1083 }], // Rekord/748: Universal Mod. 77

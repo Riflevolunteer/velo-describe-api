@@ -672,3 +672,22 @@
   /private/tmp/bianchi-1992-seatposts.sql; two rows affected and read-back
   confirmed both targets. No component changes. Live Seatpost coverage
   229 -> 231 of 728 specs (31.7%).
+
+
+## 1992 Mondiale Croce d'Aune brake link — 2026-11-07
+
+- User-approved: Brakes spec 19633, "Campagnolo Croce d'Aune", -> 567
+  Campagnolo Delta, Croce d'Aune. The 1989 and 1991 Mondiale already use 567.
+- Original 1992 Japanese catalogue scan re-read:
+  https://2velo.com/wp-content/uploads/2014/03/1992-catalog-p1911.jpg
+  names the Croce d'Aune component group and pictures Delta-style calipers.
+  The photo does not resolve internal pivots; model identification follows
+  the named group and continuity with 1991.
+- 567 year_to 1991 -> 1992, source_ref 110 -> 359. This is a 1992 bicycle
+  fitment attestation, not proof of manufacture in 1992. Description retained.
+- Brakes override retains 1988-1991 and adds a 1992-only Mondiale range.
+  All 81 CSVs compared: exactly this link changes (6076 -> 6077 generated
+  linked specs); no other component or bike-spec changes.
+- Applied `/tmp/bianchi-1992-mondiale-brake-link.sql` in a transaction:
+  one component date/provenance update and one spec link. Read-back passed;
+  rerun affected zero rows. Live brake coverage 625 -> 626 of 1013.
