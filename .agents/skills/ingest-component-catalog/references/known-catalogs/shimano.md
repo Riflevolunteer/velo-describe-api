@@ -2194,3 +2194,46 @@
   OCR, page reviews, alias decisions and `verification.json` are retained
   there. The partial 10-page Goatsurfer file was downloaded but not used
   as evidence for either load.
+
+## Positron-FH duplicate reconciled — 2026-11-07
+
+- User-approved deletion of **4525 Shimano Positron**, source_id
+  `D6C7A526-0B1A-443D-9832-DF2890BC39D8`, formerly source_ref 1,
+  dates 1980-1983 and bare description. Its original reference photo
+  https://www.velobase.com/CompImages/RDerailleur/032D864F-57DA-47FE-AAA8-5D1E75CB9229.jpeg
+  clearly shows the Positron FH marking, steel body, claw mounting and
+  short cage, matching **RD-PF10**, already represented by **7156
+  Shimano RD-PF10 / RD-PF20, Positron-FH**. This supersedes earlier notes
+  leaving the generic row unidentified or possibly Positron AX.
+- Re-read manufacturer evidence: Shimano June 1984 catalogue pp. 34-36,
+  including the September 1983 PF10/PF20 exploded sheet 8309-383C, at
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_june_1984_-_page_35.html
+  (image `00_main_images/shimano_bicycle_system_components_1984_page_35_main_image.jpg`).
+  PF10 short cage is 316g; PF20 middle cage 328g. PF40 has a different
+  light-alloy/steel body and FH400 label. Page 35's system diagram and
+  p. 36's P210/P240 specifications distinguish standard freewheel PPS
+  from freehub PPS-FH. These are separately identified models.
+- Survivor **7156 unchanged**: years **1981-1984**, source_ref **25**,
+  source_id `205241c1-bc3e-11f1-a2df-02fea3763e8d`. Do not move its start
+  to 1980: the retired row's VeloBase page only says 1980s, not 1980.
+  No independent weight or other additional facts needed transferring.
+- Existing bike-spec **4884**, 1983 Raleigh Silhouette 5 & 10, was
+  **unlinked rather than transferred**. Re-read Raleigh Spring 1983
+  Racers pp. 11-12: generic Positron gears, conventional Uniglide
+  14-28T five-speed freewheel and small-flange alloy hubs. The photograph
+  cannot confidently distinguish the non-FH variants. This supersedes
+  the earlier proposal to move this bike to 7156.
+- The generator's generic `shimano positron` override is now explicitly
+  null. Previously unlinked 1978 Record FFS/PPS and 1989 Peugeot Monaco
+  stay unlinked. No other generator reference to 4525 remained, and
+  preflight found no declared foreign keys to component_detail.
+- Applied `/tmp/positron-merge.sql` transaction: one bike link cleared,
+  one duplicate deleted. Readback confirmed 4525 absent, zero remaining
+  links to it, and unchanged survivor dates; second run affected zero
+  rows. All 81 CSVs compared: only Silhouette's rear link changed,
+  generated links 6090 -> 6089; post-deletion generation was identical.
+  Live rear coverage 753 -> **752 of 931**; **931 rear component rows**
+  remain, overall component_detail **10071 -> 10070**.
+- Evidence and review plan: `/tmp/positron-investigation.txt`,
+  `/tmp/positron-4525.jpg`, `/tmp/positron-pf10-ev.jpg`,
+  `/tmp/positron-1984-p34.jpg`, `/tmp/positron-1984-p36.jpg`.

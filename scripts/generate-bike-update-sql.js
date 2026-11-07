@@ -1112,9 +1112,10 @@ const COMPONENT_OVERRIDES = {
     'sun tour cyclone gt': 4738, // Super Course: SunTour 2812 99 01 / RD-1800, Cyclone GT (1976-82)
     'raleigh sun tour vgt': 4705, // Super Grand Prix / Grand Prix: RD-1500 V-GT Luxe version 2 (1978-82); v1 ended 1976
     'raleigh sun tour seven gt': 7788, // Record Ace: SunTour RD-2000, Seven GT (1978-85)
-    // Record FFS/PPS: the matcher exact-hits a bare velobase "Shimano Positron" (1980). The 1978 Positron could be the
-    // DG-200 Positron-II, DG-210 EM or DG-300 Positron-400 and the sheet says only "Positron", so no link.
-    'shimano positron': [{ to: 1979, id: null }, { bike: 'Monaco', from: 1989, to: 1989, id: null }, { from: 1980, id: 4525 }], // from 1980 keeps the 1983 Raleigh Silhouette on the bare velobase row
+    // "Positron" alone does not identify a model: leave the 1978 Record FFS/PPS and 1989 Monaco unlinked.
+    // The 1983 Silhouette also stays unlinked: its standard five-speed freewheel does not establish Positron-FH.
+    // Bare row 4525 was an RD-PF10, merged into 7156; do not transfer the old generic match to the FH family.
+    'shimano positron': null,
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
     'campagnolo record': [{ from: 1970, to: 1981, id: 4125 }, { from: 1982, to: 1984, id: 4126 }, { from: 1985, to: 1987, id: 4127 }], // 1020/A Nuovo Record v3 / v4 / v5 (DB dates)

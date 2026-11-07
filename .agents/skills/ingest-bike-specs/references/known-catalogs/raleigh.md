@@ -892,3 +892,33 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
   linked specs). Applied `/tmp/raleigh-weinmann-centrepull-links.sql` in
   a transaction: 12 rows affected. Read-back confirmed every target;
   rerun affected zero rows. Live brake coverage 627 -> 639 of 1013.
+
+## 1983 Silhouette Positron correction — 2026-11-07
+
+- User-approved: rear spec **4884**, Silhouette 5 & 10, value
+  **Shimano Positron**, component_id **4525 -> NULL**. Source 133 and
+  original spec value retained. This supersedes the earlier notes
+  deliberately keeping the Silhouette on the bare Positron row.
+- Re-read Spring 1983 UK Racers p. 11 model photograph/text and p. 12
+  specification table, from an accessible duplicate of the same catalogue:
+  https://www.jordan-maynard.org/wp-content/uploads/2019/09/Raleigh-catalogue-1983-Racers-V-CC-Library.pdf
+  Table says only Shimano Positron gears with stem-fitting levers;
+  Uniglide 14-28T five-speed freewheel, small-flange alloy hubs.
+- Generic component 4525 was positively identified from its own photo
+  as short-cage RD-PF10 Positron-FH and deleted as a duplicate of 7156.
+  **Do not transfer Silhouette to 7156**: Shimano June 1984 pp. 35-36
+  distinguishes the FH/freehub system from standard freewheel PPS.
+  Raleigh's bike photo lacks enough detail to choose P210 vs P240 or
+  another exact non-FH model confidently. Pending better identification,
+  retain the original text with no component link.
+- Generator `Rear Derailleurs` override `shimano positron` now explicitly
+  null; the earlier 1978 Record FFS/PPS and 1989 Peugeot Monaco nulls
+  are preserved. All 81 CSVs compared: exactly this one link changed
+  (6090 -> 6089 generated links); a post-deletion run was identical.
+  Applied `/tmp/positron-merge.sql` transaction and verified a second
+  run changed zero rows. The deleted component's UUID, survivor dates
+  and manufacturer evidence are recorded in the Shimano component notes.
+- Local source `/tmp/raleigh-1983-racers-investigation.pdf`, page renders
+  `/tmp/raleigh-1983-silhouette.jpg` and
+  `/tmp/raleigh-1983-silhouette-specs.jpg`, derailleur detail
+  `/tmp/raleigh-1983-rd-detail.jpg`.
