@@ -50,3 +50,25 @@
 - Regression: all other catalogs unchanged.
 
 - 2026-10-30: 1986 860 Record Corsa "Regina CXS 7-speed" left unlinked by decision (2169 CX/CX-S is the 6-speed only).
+
+
+## 860 Record Corsa brake link — 2026-11-07
+
+- User-approved inference: 1986 Brakes spec 2338 "Campagnolo Record Corsa"
+  -> 583 "Campagnolo 4061, Super Record (v2)". Supersedes the explicit
+  null recorded above. No component dates or descriptions changed.
+- Original four-page Ten Speed Drive brochure re-read, especially PDF p. 3:
+  https://velobase.com/CatalogScans/Cinelli/Cinelli_10_Speed_Drive.pdf
+  The 860 names the Record Corsa road group; no separate brake model or
+  dedicated 860 bike photograph is supplied. The red bicycle pictured
+  above the 860 text belongs to the 840 SLX Competition section.
+- Campagnolo 18 bis, printed p. 6, specifies Super Record-family brakes
+  while the 315/101 brake set is unavailable. Primary catalogue text:
+  https://ebykr.com/library/campagnolo-catalogue-18-bis/
+- Choosing 583 follows the existing early C-Record convention used for
+  De Rosa and Colnago; exact Cinelli caliper and reach remain inferred.
+  Generator override is limited to year 1986 and bike "860 Record Corsa".
+- Compared all 81 CSVs: only this brake link changed (6077 -> 6078 generated
+  linked specs). Applied `/tmp/cinelli-1986-record-corsa-brake-link.sql`,
+  one row affected, read-back confirmed 583, rerun affected zero rows.
+  Live brake coverage 626 -> 627 of 1013 specs.

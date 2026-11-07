@@ -1894,7 +1894,9 @@ const COMPONENT_OVERRIDES = {
     'shimano deore xt alloy cantilever shimano z levers with gum hoods': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 590, // Victory 415/102
-    'campagnolo record corsa': null, // Delta not yet shipping in 1986; Record Corsa groups were delivered with Super Record brakes, so no single right row
+    // 18 bis supplies Record Corsa with Super Record-family brakes while
+    // 315/101 is unavailable. User-approved inference, as the early C-Record mappings.
+    'campagnolo record corsa': [{ from: 1986, to: 1986, bike: '860 Record Corsa', id: 583 }],
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'campagnolo': [{ to: 1977, id: 573 }], // only Record 2040 pre-CPSC existed; 1974 Falcon Model 76
     // 1979 Peugeot (French catalogue).

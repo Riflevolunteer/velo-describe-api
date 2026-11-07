@@ -156,7 +156,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ### Brakes (2026-11-07 pass)
 
-Latest 2026-11-07: 626 of 1013 linked (61.8%), after the approved 1981 Peugeot tandem pair and 1992 Bianchi Mondiale link; details in Done.
+Latest 2026-11-07: 627 of 1013 linked (61.9%), after the approved 1981 Peugeot tandem pair, 1992 Bianchi Mondiale and 1986 Cinelli Record Corsa links; details in Done.
 
 2026-11-07: 623 of 1013 Brakes specs linked (61.5%; 620 before this pass). Linked the 1974-76 Raleigh Super Tourer Symetric / Symmetric values to model-level 8339 (733 / 813 / 1023), not a label-colour variant; year_from 1979 -> 1974 from the 1974 Raleigh catalogue. Nine component date corrections in total; see Done. Remaining era mismatches: 1983 Bianchi Rallye generic "Mafac cantilever" -> 10016 (1981-only, description specifies tandem dual-cable levers), and 1990 Bianchi Osprey / Nyala -> 8032 CT-X101 / 8038 CT-XT01 (1992-only; check generation/model codes against a 1990 manufacturer catalogue before widening). The 1982 Peugeot NL "605 side-pull" cells remain unlinked: the source prints Mafac, so the Weinmann identification still needs a clear photo.
 
@@ -262,6 +262,8 @@ Latest 2026-11-07: 626 of 1013 linked (61.8%), after the approved 1981 Peugeot t
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
 
 ## Done
+
+- 2026-11-07 Cinelli Record Corsa brake link (user-approved inference): 1986 860 Record Corsa "Campagnolo Record Corsa" [2338] -> 583 Campagnolo 4061 Super Record v2. Cinelli brochure p. 3 names the group but gives no separate brake identification or dedicated 860 photo; Campagnolo 18 bis p. 6 specifies Super Record-family brakes while 315/101 is unavailable. Uses the existing early C-Record mapping convention; exact caliper/reach remains inferred. Replaced the explicit null with a 1986-only, bike-scoped override; no component changes. All 81 CSVs compared: only this link changed. Applied `/tmp/cinelli-1986-record-corsa-brake-link.sql`; rerun affected zero rows. Brakes 626 -> 627 of 1013 linked.
 
 - 2026-11-07 Bianchi Mondiale brake link (user-approved): 1992 "Campagnolo Croce d'Aune" [19633] -> 567 Delta Croce d'Aune. Component year_to 1991 -> 1992, source_ref 110 -> 359, from the 1992 Bianchi JP catalogue (Mondiale group named, Delta-style calipers pictured; fitment evidence, not a manufacturing-date claim). Added a 1992-only Mondiale override while retaining the 1988-91 range. All 81 CSVs compared: only this brake link changed. Applied `/tmp/bianchi-1992-mondiale-brake-link.sql`; rerun affected zero rows. Brakes 625 -> 626 of 1013 linked.
 
