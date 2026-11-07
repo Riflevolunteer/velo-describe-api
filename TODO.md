@@ -259,6 +259,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ## Done
 
+- 2026-11-07 Gipiemme Sprint pedal: 3753 retitled "Sprint 300SA", years 1970-1988 -> 1982-1987 (Marostica 1982, 1985 guide, c. 1986-87 catalogue; see gipiemme.md).
 - 2026-11-07 Gipiemme pedal cleanup (monoblock vs cage, see gipiemme.md): 3747 -> Cronospecial 300AA, 3749 -> Cronosprint 300DD (year_from 1982 -> 1984), new 10966 Special 300BB and 10967 Cronosprint 300CA, 9512 300B1 from 1984, years on 3751 / 3752; +1 link (1978 Bianchi Rekord/748 pedals -> 3752).
 
 - 2026-11-06 Shimano 1998 / 1999 US catalogues (Charlie Taylor archive, sources 365 / 366; printed Dec 1997 / Nov 1998): +47 / +71 components, 119 pre-existing rows updated including final description enrichments, +4 Shimano groups. BB-LP27 now catalogue-backed; BB-LP27-E and BB-M952 added, BB-UN72/-E to 1999, UN73 still absent. Corrected CS-5500 -> CS-HG70-9, FH-6500 steel freehub body, CS-6500 steel sprockets and CN-HG72 plates/links. Component rows 9950 -> 10068; all 237 changed/new rows verified against the plan. No bike-spec changes. Full notes in shimano.md.

@@ -393,3 +393,8 @@
   `REVIEWED_NOT_DUPLICATES`.
 - Link added: 12537 1978 Bianchi Rekord/748 pedals "Gipiemme Bianchi special, alloy" -> 3752 (ranged override; as the same
   bike's hub cell -> 3352 600160; judgement call). The three 1982 Battaglin "Cronospecial / Special" cells stay null.
+- Follow-up, 3753 Sprint pedal (2026-11-07): retitled "Sprint" -> "Sprint 300SA", years 1970-1988 -> **1982-1987** (revert
+  values 1970 / 1988; `search_text` rewritten). Evidence: 1982 Battaglin Marostica "Gipiemme Sprint" pedals (already linked);
+  1985 guide (259, scan 24) Sprint 350 g, 17,700 lire; c. 1986-87 "GPM Sprint 300SA" (scan 008, cage road pedal); absent
+  from the 1970s binder (Dual-Sprint is 3750) and from 1988 (the Sprint name moves to DD 300, 3749). Judgement call: the
+  1982 Marostica "Sprint" is read as this pedal, not as Dual Sprint, the same way as its hubs (3353) and headset (3012).
