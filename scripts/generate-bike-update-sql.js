@@ -1626,6 +1626,12 @@ const COMPONENT_OVERRIDES = {
     'shimano at 50 cantilever front and rear': 1003, // 1987 Peugeot (US): Shimano BR-AT50, Exage Trail (Shimano exact-model links 2026-10-30)
     'mafac special tandem cantilevers front and rear maillard 80 mm rear drum': 845, // 1982 Peugeot TH 8 / TM 8: MAFAC Cyclo-Tandem (// linkCoverage pass 2026-10-30)
     'mafac "special cyclo tandem" cantilevers front and rear maillard rear drum brake': 845, // 1980 Peugeot TH 8 / TM 8
+    // 1981 Peugeot names front Mafac cantilevers; the same tandems explicitly
+    // specify Cyclo-Tandem in 1980 and 1982. The rear Maillard drum stays in the text.
+    'mafac cantilevers front maillard drum rear': [
+      { from: 1981, to: 1981, bike: 'TH 8', id: 845 },
+      { from: 1981, to: 1981, bike: 'TM 8', id: 845 },
+    ],
     'modelo speedy black side pull': 886, // 1987 Peugeot (US) Mont Cenis: Modolo Speedy (misprinted Modelo; black is a finish)
     'shimano at50 cantilever': 1003, // 1986 Raleigh Elkhorn: Shimano BR-AT50, Exage Trail
     'weinmann 570': 1129, // 1987 Peugeot (FR) table: Weinmann AG 570

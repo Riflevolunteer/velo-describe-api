@@ -849,3 +849,22 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   Huret Club 2 (Club II 1978-80 vs Sachs Club 1984), Simplex SX 640 (no row), and the no-row parts listed above.
 
 - 2026-11-06 crankset pass: 1989 Peugeot (FR) "TA alloy, cyclotouriste model, 32x42x52" -> 1856 Spécialités TA Cyclotouriste (1856 year_to 1983 -> 1989). +1. 1974 "Stronglight Competition 53, light alloy" left unlinked: 9501 Stronglight No. 53 (1974) now exists but describes chrome steel cranks.
+
+
+## 1981 tandem brake links — 2026-11-07
+
+- User-approved: TH 8 / TM 8 brake specs 10989 / 11000, "Mafac cantilevers
+  front, Maillard drum rear", linked to 845 MAFAC Cyclo-Tandem (1964-1982).
+- Original 1981 catalogue image 10 re-read: front Mafac cantilevers, rear
+  Maillard drum; TM 8 is the same equipment in the men's/mixte frame.
+  Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1981.html
+- Model identification is an inference: the same TH 8 / TM 8 explicitly
+  specify Special Cyclo-Tandem brakes in 1980 and 1982. The 1981 wording
+  does not name the model. The link represents the front Mafac brake;
+  the full combined text retains the Maillard rear drum information.
+- Generator override uses the exact normalized value, year 1981, and bike
+  names TH 8 / TM 8. No component date changes. All 81 CSVs regenerated
+  before/after: only these two links changed (6074 -> 6076 generated links).
+- Applied `/tmp/peugeot-1981-tandem-brake-links.sql`: two rows affected;
+  read-back confirmed both and rerun affected zero rows. Live Brakes
+  coverage 623 -> 625 of 1013 specs.
