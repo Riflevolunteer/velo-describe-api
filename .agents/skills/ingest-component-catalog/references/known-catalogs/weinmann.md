@@ -396,3 +396,24 @@
   mudguards, spanners.
 - Unresolved: which Carrera row is the 1979 model; whether 1119 is the black
   anodised 500.
+
+
+## Vainqueur 999 De Luxe colour-variant merge — 2026-11-07
+
+- User-approved merge: deleted 1111, "Weinmann AG Vainqueur 999 De Luxe
+  (1st version, 1 spring, pivot bolts, silver)", VeloBase source_id
+  `73144323-818F-4827-88B6-8526BEEA1D0F`, into 1110 (previously the same
+  title ending ", red)", source_id `8C67E3D2-496F-4A7E-B615-33CE702554C3`).
+- Both original photo sets inspected. Same single continuous return spring,
+  screw-in pivot bolts, flat-front yoke and printed arm lettering; colour
+  is the difference. The silver page explicitly describes silver, red and
+  blue anodising as finishes of the De Luxe.
+- Survivor title: "Weinmann AG Vainqueur 999 De Luxe (1st version, 1 spring,
+  pivot bolts)". Description records the construction and observed red /
+  silver finishes; search_text recomputed as "Weinmann AG Vainqueur 999 De
+  Luxe". Dates 1957-1962 and VeloBase source_ref 1 retained. Neither row had
+  bike links or generator overrides. Later two-spring 1112 kept separate.
+- Evidence: https://www.velobase.com/Pages/ViewComponent.aspx?ID=73144323-818F-4827-88B6-8526BEEA1D0F
+  and https://www.velobase.com/Pages/ViewComponent.aspx?ID=8C67E3D2-496F-4A7E-B615-33CE702554C3
+- Applied `/tmp/weinmann-999-deluxe-merge-2026-11-07.sql` in a transaction;
+  brake rows 760 -> 759. No new rows or source records.
