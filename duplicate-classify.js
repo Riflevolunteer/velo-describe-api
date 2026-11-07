@@ -228,6 +228,7 @@ const REVIEWED_NOT_DUPLICATES = [
   [3708, 3709], // different part: Campagnolo 1037, Record Strada / Campagnolo 1037/a, Record Strada Super
   [3989, 7247], // Spidel badge variant: Spidel/Atom/Maillard 600 / Maillard Atom 600 Sport
   [4281, 4299], // different part: Huret Super Success 2470 S / Huret Success 2460 / 2470
+  [4401, 8957], // different generations (kept 2026-11-08): Rival 2850-00 has upper limit screws; AR 41.1 D has lower screws and a revised body
   [4303, 4304], // finish variant, kept (cosmetic review 2026-10-28): Huret Jubilee 2200 / 2252 / 2240 (firs / Huret Jubilee 2200 / 2252 / 2240 (firs
   [4600, 4669], // Spidel badge variant: Simplex LJ1000 T / Spidel LJ1000 T (Simplex)
   [4650, 4670], // Spidel badge variant: Simplex SLJ5000 / Spidel SLJ5000 (Simplex)

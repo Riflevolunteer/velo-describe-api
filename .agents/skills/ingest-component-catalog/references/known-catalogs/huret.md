@@ -406,3 +406,67 @@
 See the full entry in [suntour.md](suntour.md). Huret rows unchanged except
 the Luxe rear derailleurs 4295 / 4296 / 4297 (descriptions: refs 2100 T /
 2100 ST, cages 2101 / 2101-C). Huret 2150 twin levers have no row.
+
+## Rival 2850-00 / AR 41.1 D generation review — 2026-11-08
+
+User approved the reviewed correction plan. **Keep 4401 and 8957 separate**;
+added `[4401, 8957]` to `REVIEWED_NOT_DUPLICATES`. This settles the earlier
+question of whether the two catalogue codes were merely a renumbering.
+
+Manufacturer sources re-read during the 2026-11-07 investigation:
+
+- Huret new 82, scan 1, printed November 1981 (314): 2850-00 early body,
+  limit screws above the outer plate, Huret badge, 250g, 30T max sprocket.
+  https://www.disraeligears.co.uk/site/huret_-_new_82_scan_1.html
+- Huret Derailleurs - Speedometers, September 1983, p. 8 (327): same
+  early 2850-00 body, Sachs-Huret badge, 250g, 30T max sprocket and 28T
+  total capacity. Badge alone still does not split the early model.
+  https://www.disraeligears.co.uk/site/00_main_images/huret_derailleurs_-_speedometers_1983_scan_8_main_image.jpg
+- Sachs April 1986, scan 3 (225): AR 41.1 D revised body with limit screws
+  below the outer plate, 36T max sprocket, 28T capacity, steel/light alloy;
+  long-cage version offered, MA 82.2 C levers and AV 62.1 D front.
+  https://www.disraeligears.co.uk/site/00_main_images/sachs_kettenschaltung_fur_rennen_touristik_off-road_-_1986_scan_03_main_image.jpg
+
+The original VeloBase reference attached to 4401 (`3327013B-0FD9-4754-A0A2-47738DB02F06`)
+says model 41/2 and 246g. Its photos show the later lower-screw body, including
+a rear view with an integrated spoke protector. This reference was incorrectly
+mixed with early-model catalogue specifications during prior enrichment.
+Both DB rows have image NULL, so no stored image needed changing. The old
+source_id remains a historical crawl/idempotency key; its photographs must
+not be treated as evidence for the early catalogue model. Compared original
+specimen photographs of 2850-00 and 41.1 D with/without the spoke protector;
+no additional row was justified by badge or protector alone.
+
+Applied exactly two guarded updates, with no title/search_text changes:
+
+| Row | Change |
+| --- | --- |
+| 4401, Sachs Huret Rival 2850-00 | Description now identifies early upper-screw body and the 250g manufacturer specification. Removed the misplaced 246g later-specimen report. Source_ref 314 -> 327, from re-read September 1983 p. 8. Dates remain 1982-1988. |
+| 8957, Sachs Huret AR 41.1 D, Rival | Description identifies the later lower-screw body, preserves its capacities, matching lever/front codes and long-cage option, and carries the 246g reported later specimen. Removed restrictive "first style" wording. Year_to 1986 -> 1988, source_ref 225 -> 319; year_from remains 1986. |
+
+The date extension comes from **1988 Peugeot**, not the 1986 Sachs brochure:
+PHE 20 Mont-Blanc spec **16715**, value `Huret Rival 41-1-D, white`, explicitly
+names the later code (source 319). Four other explicitly coded 1987 Peugeot
+specs (source 311) are **15240, 15278, 15297, 15316**. These existing catalogue
+transcriptions were checked in the DB; the Peugeot scan pages were not
+re-read in this review. The manufacturer remains the authority for the body
+and specifications; source_ref 319 records the source extending the date.
+No inferred 1985 introduction was adopted from specimen-page commentary.
+
+All **22** bike links remain exactly unchanged: **17** generic/finish-only
+Rival links to 4401 and **5** explicitly coded links to 8957. The generic
+1985-1988 links are unresolved identifications, not confirmation of early
+2850-00 production through 1988. Do not automatically move them to 8957 or
+shorten 4401's end year on absence from a partial leaflet; review bike photos
+or more specific specifications first. No bike-generator change was needed.
+
+Applied transactional `/tmp/rival-corrections.sql`: two updates; second run
+changed **zero rows**. Verified descriptions (190/230 characters), dates,
+source references and an exact before/after comparison of all 22 link IDs.
+Existing `node --test test/duplicate-classify.test.js` passed. Component count
+unchanged at **10070**. No new sources, inserts, deletes or merges.
+Scratch evidence/review plan: `/tmp/rival-investigation.txt`,
+`/tmp/rival-review-proposal.sql`, `/tmp/rival-1982-cover.jpg`,
+`/tmp/rival-1983-spec.jpg`, `/tmp/rival-1986-spec.jpg`,
+`/tmp/rival-4401.jpg`, `/tmp/rival-4401-extra-0.jpg` through `-3.jpg`,
+and `/tmp/rival-specimen-0.jpg` through `-2.jpg`.
