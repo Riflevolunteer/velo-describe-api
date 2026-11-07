@@ -220,6 +220,9 @@ const REVIEWED_NOT_DUPLICATES = [
   [8531, 8618], // different part: Nitto Mod. 185 / Nitto Mod. 185-H
   [2953, 2954], // finish variant, kept (cosmetic review 2026-10-28): Campagnolo C-Record (Century Finish) / Campagnolo 304/104, C-Record
   [3004, 3006], // different part: Gipiemme Crono Sprint 500CE (Economy) / Gipiemme Crono Sprint 500 BP
+  [3747, 10966], // different pedals (kept 2026-11-07): Gipiemme Cronospecial 300AA monoblock / Special 300BB cage (sold as Cronospecial 300BB c. 1986-87)
+  [3749, 10967], // different pedals (kept 2026-11-07): Gipiemme Cronosprint 300DD cage / Cronosprint 300CA monoblock
+  [3752, 10966], // renumbered part kept apart (2026-11-07): Gipiemme Special 600154 (1970s) / Special 300BB (1984-87)
   [3256, 3273], // different part: Campagnolo 1006, Gran Sport / Campagnolo 1006/A, Sport
   [3408, 8160], // different part: Mavic 580 CX / Mavic 580 CX Piste
   [3708, 3709], // different part: Campagnolo 1037, Record Strada / Campagnolo 1037/a, Record Strada Super

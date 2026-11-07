@@ -373,3 +373,23 @@
   1595; 6622 1982 Bianchi Nuovo Touring "Gipiemme triple" -> 1598 (judgement call); 6531 1981 Bianchi Rekord 748 "Gipiemme
   Corsa 42/52, Bianchi complete" -> 1595 (weakest). Left unlinked: the three 1982 Battaglin "Cronospecial / Special" pedals
   (explicit null, the cell names two parts; 3747 if reversed).
+
+## Pedal cleanup: monoblock vs cage (2026-11-07, re-read from the scans of 203 / 269 / 270 / 287)
+
+- Gipiemme made two kinds of pedal, and two rows had mixed them. **Monoblock** (moulded body, black platform, spindle leans
+  15% more): 1982-83 leaflet "cronospecial" = SRC 1983 500154 = Oct 1984 300AA (G2 photo) = 1988 AA 300 (p. 9, "professional
+  pista Cronospecial"); also 300AX Multiasse (3748) and Cronosprint 300CA (Oct 1984 G4, c. 1986-87 scan 007). **Cage**
+  (quill with black cage): 1970s 600154 / 600155; Special 300BB (Oct 1984 G3), sold as "Cronospecial 300BB" in the c. 1986-87
+  AA group (scans 004 code list, 008 photo); Cronosprint 300DD (Economy, G5; 1986-87) = DD 300 "Sprint" (1988); 300B1 (G6) =
+  AP 300 (1988).
+- Rows updated (revert values in brackets): 3747 retitled "Cronospecial" -> "Cronospecial 300AA", description no longer
+  claims 300BB, years 1982-1988 kept; 3749 retitled "Cronosprint" -> "Cronosprint 300DD", description now 300DD only (was
+  "300CA road and track, 300DD road"), `year_from` 1982 -> **1984** (the 1982 start was velobase's, with no source for 300DD before
+  Oct 1984); 9512 300B1 `year_from` 1986 -> 1984 and description; 3751 Special (Pista) NULL -> 1970-1982 (the 1982 Battaglin
+  "Pista Special" links to it); 3752 Special NULL -> 1970-1980 (the binder's decade bucket, as on 3750). `search_text` rewritten on the
+  two retitles.
+- Rows inserted (`source_ref` 269, 1984-1987): 10966 Special 300BB (group 29), 10967 Cronosprint 300CA (group 85). 300BB has a row
+  of its own rather than going into 3752 600154, per the renumbering precedent (1595 / 1587, 66 / 64). All three pairs are in
+  `REVIEWED_NOT_DUPLICATES`.
+- Link added: 12537 1978 Bianchi Rekord/748 pedals "Gipiemme Bianchi special, alloy" -> 3752 (ranged override; as the same
+  bike's hub cell -> 3352 600160; judgement call). The three 1982 Battaglin "Cronospecial / Special" cells stay null.

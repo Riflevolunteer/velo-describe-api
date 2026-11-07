@@ -3133,6 +3133,7 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin: either/or cell (Cronospecial or Special) names two parts, so no link; Pista Special is the Special (Pista) pedal.
     'gipiemme cronospecial special': null,
     'gipiemme pista special': 3751, // Gipiemme Special (Pista)
+    'gipiemme bianchi special alloy': [{ from: 1978, to: 1978, id: 3752 }], // 1978 Bianchi Rekord/748: Gipiemme Special 600154 (as its hub cell -> 3352 600160; judgement call)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 3703 }], // B620-A (1991 Bianchi Mondiale added 2026-11-06; 3703 year_to 1990 -> 1991)
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).

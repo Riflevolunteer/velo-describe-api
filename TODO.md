@@ -259,6 +259,8 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ## Done
 
+- 2026-11-07 Gipiemme pedal cleanup (monoblock vs cage, see gipiemme.md): 3747 -> Cronospecial 300AA, 3749 -> Cronosprint 300DD (year_from 1982 -> 1984), new 10966 Special 300BB and 10967 Cronosprint 300CA, 9512 300B1 from 1984, years on 3751 / 3752; +1 link (1978 Bianchi Rekord/748 pedals -> 3752).
+
 - 2026-11-06 Shimano 1998 / 1999 US catalogues (Charlie Taylor archive, sources 365 / 366; printed Dec 1997 / Nov 1998): +47 / +71 components, 119 pre-existing rows updated including final description enrichments, +4 Shimano groups. BB-LP27 now catalogue-backed; BB-LP27-E and BB-M952 added, BB-UN72/-E to 1999, UN73 still absent. Corrected CS-5500 -> CS-HG70-9, FH-6500 steel freehub body, CS-6500 steel sprockets and CN-HG72 plates/links. Component rows 9950 -> 10068; all 237 changed/new rows verified against the plan. No bike-spec changes. Full notes in shimano.md.
 
 - 2026-11-06 bottom bracket duplicate pass: reviewed 314 rows; merged SunTour 178 "XC Pro Grease Guard" into 8012 BB-XP00 (kept 1992-93; discarded erroneous 1980 bucket) and Campagnolo 37 "Record Triple Bearing (c. 1997)" into 10101 Record 9-speed (now 1997-99; preserved triple-bearing description and BB-31RECART / BB-33RECART codes). No linked specs or overrides; component_detail 9952 -> 9950, bottom brackets 314 -> 312. Source GUIDs and dating qualifications recorded in suntour.md / campagnolo.md.
