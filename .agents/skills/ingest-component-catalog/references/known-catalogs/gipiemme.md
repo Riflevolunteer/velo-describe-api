@@ -398,3 +398,12 @@
   1985 guide (259, scan 24) Sprint 350 g, 17,700 lire; c. 1986-87 "GPM Sprint 300SA" (scan 008, cage road pedal); absent
   from the 1970s binder (Dual-Sprint is 3750) and from 1988 (the Sprint name moves to DD 300, 3749). Judgement call: the
   1982 Marostica "Sprint" is read as this pedal, not as Dual Sprint, the same way as its hubs (3353) and headset (3012).
+- Follow-up, Sprint hubs and headset (2026-11-07; 1985 guide scans 21 / 35, c. 1986-87 scans 008 / 009, 1988 guide scans
+  27 / 44). Revert values in brackets.
+  - 3353 hubs retitled "Sprint" -> "Sprint 400SA", `year_from` 1980 -> **1982** (1988 kept), `search_text` rewritten. Evidence:
+    1982 Battaglin Marostica / Alessandro (linked), 1985 guide Sprint Strada 535 g 32-36 holes, c. 1986-87 400SA 36 holes,
+    1988 guide Sprint 540 g 36 holes (absent from the 1988 catalogue). The 1970s hub is Dual-Sprint 700160 (3350).
+  - The c. 1986-87 Sprint headset is "GPM Sprint 500CE" (scan 009) = 3004; the 1988 guide's Sprint headset (150 g, caged balls)
+    is the same part. 3004 `year_to` 1986 -> **1988**, description. 3012 "Sprint" (1980-1988, `source_ref` 262, bare) narrowed
+    to **1982-1982**, `source_ref` 268 (1982 Battaglin catalogue): the unnumbered Marostica Sprint headset, possibly the forerunner
+    of 500CE; kept apart rather than merged into 3004 (user's call). Not in the 1985 guide or the Oct 1984 catalogue.

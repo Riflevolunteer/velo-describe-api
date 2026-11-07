@@ -259,6 +259,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ## Done
 
+- 2026-11-07 Gipiemme Sprint hubs and headset: 3353 retitled "Sprint 400SA", 1980 -> 1982-1988; 3004 500CE year_to 1986 -> 1988 (Sprint headset in 1986-88); 3012 Sprint headset narrowed to 1982-1982 (Marostica only, source 268). See gipiemme.md.
 - 2026-11-07 Gipiemme Sprint pedal: 3753 retitled "Sprint 300SA", years 1970-1988 -> 1982-1987 (Marostica 1982, 1985 guide, c. 1986-87 catalogue; see gipiemme.md).
 - 2026-11-07 Gipiemme pedal cleanup (monoblock vs cage, see gipiemme.md): 3747 -> Cronospecial 300AA, 3749 -> Cronosprint 300DD (year_from 1982 -> 1984), new 10966 Special 300BB and 10967 Cronosprint 300CA, 9512 300B1 from 1984, years on 3751 / 3752; +1 link (1978 Bianchi Rekord/748 pedals -> 3752).
 
