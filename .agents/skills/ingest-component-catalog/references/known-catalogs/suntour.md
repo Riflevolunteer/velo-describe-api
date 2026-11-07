@@ -1268,3 +1268,61 @@ interchangeable cog chart, "new winner 2.jpg" operation manual; "PRINTED IN JAPA
   erroneous 1980-1980 bucket; no bike_spec links, overrides or stored images
   on either row. SQL and rollback: `/private/tmp/bottom-bracket-merges.sql`
   and `/private/tmp/bottom-bracket-merges-rollback.sql`.
+
+## XCD rear derailleur designs kept separate — 2026-11-08
+
+User approved the reviewed distinction between **4789 SunTour XCD 6000
+(1990)** and **4790 SunTour RD-XD00-GX, XCD 6000**. Added 4789 to
+`REVIEWED_VARIANTS` and the pair `[4789, 4790]` to `REVIEWED_NOT_DUPLICATES`:
+the latter also records the relationship now that 4790's coded title no
+longer groups with 4789. No merge or new component row.
+
+- 4789's original VeloBase reference `7C2E3966-D524-41DE-BC0C-FDD9B9E561E5`
+  has a grey alloy body, black outer plate marked **SUNTOUR XCD**, a revised
+  cable clamp and long cage; fields specify AccuShift, cable adjuster,
+  5mm Allen mounting and cable-fixing bolts. Photo:
+  https://www.velobase.com/CompImages/RDerailleur/ED6DC1BE-BFE5-4D2A-9AFA-0D5BE6922938.jpeg
+- 4790's reference `AEC4D908-707A-47E4-AFC6-BF092E12F066` has a different
+  body/clamp arrangement and **XCD 6000 ACCUSHIFT** lettering. Its cable
+  bolt is listed as 4mm Allen. Photo:
+  https://www.velobase.com/CompImages/RDerailleur/C47BACEC-29FF-4369-8CEC-112BA37CB0BD.jpeg
+- Corroborating manufacturer excerpt: 1988 English catalogue spread pp.
+  11-12 explicitly gives RD-XD00-GX, 296g and 40T capacity, supporting
+  4790's existing Japanese 1988 catalogue description/source 199:
+  https://www.equusbicycle.com/bike/suntour/catalog88/pdf/suntour88%20-%200007.pdf
+  No additional source/ingest for this corroborating excerpt.
+
+**Exact later model code remains unresolved.** VeloBase calls 4789
+RD-XD00, but the newly located 1990 catalogue lists the XCD RD-XD10-GXB
+(long) / RD-XD10-GTB (short) family. The photographed specimen has no
+readable model stamp; resemblance does not establish an exact suffix.
+Do not copy the RD-XD10 capacities/weights into 4789 or retitle it with an
+unverified code. The page's 1990 attribution and existing date bounds were
+left alone; no inferred introduction date was assigned.
+
+New source lead, **not ingested in full**: SunTour Bicycle Equipment Catalog
+1990, host dates printing to autumn 1989. Only pp. 11-14 were read this
+pass (11-12 XC Comp, 13-14 XCD). Manufacturer p. 13:
+https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1990_-_page_13.html
+It lists RD-XD10-GXB (305g, 40T total, 22T chainring difference) and GTB
+(261g, 34T total, 16T chainring difference), both 30T maximum sprocket on
+28mm dropout / full index mode, AccuShift Plus. These specifications belong
+to the catalogue's named models and were **not** loaded into 4789.
+Register this catalogue if a later review uses it to change identified
+components; no new data_source row was needed for this photo-only enrichment.
+
+Applied `/tmp/xcd-correction.sql`: one guarded description UPDATE on 4789,
+from `SunTour XCD 6000 (1990), Japan` to a 199-character description of the
+visible features and original reference fields. Kept source_ref **1**, the
+existing VeloBase source, title/search_text and **1990-1990** dates. 4790
+remains unchanged at **1988-1990**, source_ref **199**, with its existing
+296g manufacturer specification. No generator edits. Verified **18699**,
+1989 Bianchi Axis `SunTour XCD-6000`, still links to 4790; 4789 has no live
+bike links. Existing scoped generator choices remain unchanged.
+
+Readback passed; a second SQL run affected **zero rows**. Existing
+`node --test test/duplicate-classify.test.js` passed; component count
+unchanged at **10070**. Evidence/review plan `/tmp/xcd-investigation.txt`,
+original proposal `/tmp/xcd-review-proposal.sql`, images
+`/tmp/xcd-4789.jpg`, `/tmp/xcd-4790.jpg`, `/tmp/xcd-1988-p7.jpg`,
+`/tmp/xcd-1990-p13.jpg` and `/tmp/xcd-1990-p14.jpg`.

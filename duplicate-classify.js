@@ -109,6 +109,7 @@ const MERGE_CANDIDATE = new Set(['duplicate', 'cosmetic'])
 // case by case, none merged). buildGroups reports them as 'variant', so they stop showing as merge
 // candidates.
 const REVIEWED_VARIANTS = new Map([
+  [4789, 'later design: SunTour XCD (1990), revised body and cable clamp beside RD-XD00-GX 4790; exact later code unverified (kept 2026-11-08)'],
   [387, 'special edition: Modolo Speedy La Vie Claire (levers)'],
   [887, 'special edition: Modolo Speedy La Vie Claire (brakes)'],
   [5564, 'special edition: San Marco Rolls 1986 World Championship'],
@@ -232,6 +233,7 @@ const REVIEWED_NOT_DUPLICATES = [
   [4303, 4304], // finish variant, kept (cosmetic review 2026-10-28): Huret Jubilee 2200 / 2252 / 2240 (firs / Huret Jubilee 2200 / 2252 / 2240 (firs
   [4600, 4669], // Spidel badge variant: Simplex LJ1000 T / Spidel LJ1000 T (Simplex)
   [4650, 4670], // Spidel badge variant: Simplex SLJ5000 / Spidel SLJ5000 (Simplex)
+  [4789, 4790], // different designs (kept 2026-11-08): later XCD with revised body/cable clamp vs earlier RD-XD00-GX; titles no longer group together
   [5071, 8191], // different part: Mavic M 231 CD / Mavic M 231
   [5071, 9972], // different part (kept 2026-11-06): M 231 CD (hard anodised) / M 231 Ceramic (ceramic-coated braking surface)
   [8191, 9972], // different part (kept 2026-11-06): M 231 (neutral anodised) / M 231 Ceramic
