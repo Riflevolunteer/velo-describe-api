@@ -470,3 +470,86 @@ Scratch evidence/review plan: `/tmp/rival-investigation.txt`,
 `/tmp/rival-1983-spec.jpg`, `/tmp/rival-1986-spec.jpg`,
 `/tmp/rival-4401.jpg`, `/tmp/rival-4401-extra-0.jpg` through `-3.jpg`,
 and `/tmp/rival-specimen-0.jpg` through `-2.jpg`.
+
+## Elysee 5/6-speed and Elysee 7 systems — 2026-11-08
+
+User approved keeping **4396 Sachs Huret Elysee** and **4397 Sachs Huret
+Elysee 7** distinct and enriching their descriptions from newly found
+manufacturer documents. Added `[4396, 4397]` to `REVIEWED_NOT_DUPLICATES`;
+this closes the previously unreviewed near-name pair. No merge or deletion.
+
+### Manufacturer references
+
+Two catalogue-type `data_source` records added; dates remain **undated**,
+and country is NULL because a specific catalogue market was not established.
+These are manufacturer instructions/datasheets, not forum commentary.
+
+- **368 — Sachs-Huret Elysee installation instructions no. 514.8 F (undated)**.
+  https://www.velovintageagogo.com/t6468-sachs-huret-elysee-notice-de-montage
+  Four French pages, all read: original scans on
+  `https://i.servimg.com/u/f37/16/33/76/87/`, files `image13.jpg` (p. 1),
+  `image11.jpg` (p. 2), `image12.jpg` (p. 3), `image10.jpg` (p. 4).
+  P. 1 explicitly states the same derailleur supports **5 and 6 speeds**.
+  P. 2 explains switching the preselection box from its supplied six-speed
+  setting to five speeds, and requires the matching RGS-profile freewheel
+  and Sedisport GT7 chain. P. 3 shows the rear-mounted indexing/preselection
+  box clipped to the derailleur's mounting shafts. These match 4396's photo;
+  do not claim that all Elysee indexing is confined to the handlebar lever.
+  The p. 4 imprint is `891120`, Printed in France, but no unambiguous
+  publication date was established; no date correction was made from it.
+- **369 — Sachs-Huret Elysee Sport/Touring datasheet no. 520.1/1 DFE (undated)**.
+  https://www.velovintageagogo.com/t6469-sachs-huret-elysee-sport-touring-fiche-technique
+  Six pages, German/French/English, all read/skipped through for scope:
+  same image directory, `image18.jpg` (p. 1), `image21.jpg` (p. 2),
+  `image22.jpg` (p. 3), `image23.jpg` (p. 4), `image24.jpg` (p. 5),
+  `image25.jpg` (p. 6). P. 1 explicitly specifies **7 speeds**. P. 2:
+  Sport rear **AR 49.11 D**, forged light alloy/steel, metallic grey,
+  **275g specified**, **28T capacity**, **30-32T max freewheel**. Direct-fit
+  part `49 1185 403 001`, hanger version `49 1185 402 001`. Touring rear
+  AR 49.21 T is separately specified at 312g / 40T / 34T; its values were
+  not assigned to the short-cage 4397 specimen. No reliable date established
+  from the small print, so no catalogue year was invented.
+
+Only the two existing rear derailleur rows were reconciled. Other group
+components and the separately numbered Touring rear in the datasheet are
+outside this pair review; no complete groupset ingestion is claimed. Pp.
+3-6 provide system context: shifters, freewheel, chain, crank, BB, brakes,
+hubs and out-of-category fixing clips. No new component rows were added.
+
+### Applied rows and evidence boundaries
+
+- **4396**: old description `Sachs Huret Elysee, France` replaced with a
+  197-character description identifying the 5/6-speed system, dedicated
+  thumb shifter/transmission, rear-mounted indexing box, RGS freewheel and
+  GT7 chain. Source_ref **1 -> 368**. Original VeloBase source_id retained:
+  `3A3D22E9-D697-4E73-AB0D-9A8E87417DEB`; photo
+  `0D56DB30-4FD3-41F2-B0BC-68C8ADF9A92E` shows the plain Elysee badge,
+  black end cover and cylindrical transmission mounting shafts.
+- **4397**: old description `Sachs Huret Elysee 7, France, 293 grams (Actual)`
+  replaced with a 202-character description identifying short-cage Sport
+  AR 49.11 D and the manufacturer material/finish/capacity/weight figures.
+  **Preserved 293g measured specimen** alongside **275g specified**; do
+  not assume the difference is an error or invent an explanation for it.
+  Source_ref **1 -> 369**. Original VeloBase source_id retained:
+  `4A16D858-B5FD-44F1-B019-52A441B382CD`; photo
+  `4CE67AE8-57ED-4C90-A7B1-03466AA49354` shows red Elysee 7 markings,
+  light end cover and forked adapter attachment. VeloBase's date-code
+  interpretation `2090` was not needed for any new date change.
+- Both rows retain **1990-1990**, their titles/search_text, and **zero
+  bike-spec links**. No generator overrides refer to these IDs. No automatic
+  link was inferred for any generic Sachs/Huret bike spec.
+
+Applied transactional `/tmp/elysee-corrections.sql`: **2 source inserts,
+2 component updates**; second run affected **zero rows**. Verified all
+updated fields, source labels, description lengths and unchanged dates,
+search_text and link counts. Existing
+`node --test test/duplicate-classify.test.js` passed; `git diff --check`
+passed. Overall component count unchanged at **10070**.
+
+Scratch evidence: `/tmp/elysee-investigation.txt`,
+`/tmp/elysee-review-listing.json`, `/tmp/elysee-review-proposal.sql`,
+`/tmp/elysee-4396.html`, `/tmp/elysee-4397.html`,
+`/tmp/elysee-4396.jpg`, `/tmp/elysee-4397.jpg`,
+`/tmp/elysee-instruction-13.jpg`, `-11.jpg`, `-12.jpg`, `-10.jpg`,
+and `/tmp/elysee-sheet-18.jpg`, `-21.jpg`, `-22.jpg`, `-23.jpg`, `-24.jpg`,
+`-25.jpg`.
