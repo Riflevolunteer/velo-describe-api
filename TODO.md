@@ -156,7 +156,7 @@ Named parts with no row or no source yet (worth a search if a source turns up):
 
 ### Brakes (2026-11-07 pass)
 
-Latest 2026-11-07: 627 of 1013 linked (61.9%), after the approved 1981 Peugeot tandem pair, 1992 Bianchi Mondiale and 1986 Cinelli Record Corsa links; details in Done.
+Latest 2026-11-07: 639 of 1013 linked (63.1%), after the approved Peugeot tandem pair, Bianchi Mondiale, Cinelli Record Corsa and 12 Raleigh Weinmann centre-pull links; details in Done.
 
 2026-11-07: 623 of 1013 Brakes specs linked (61.5%; 620 before this pass). Linked the 1974-76 Raleigh Super Tourer Symetric / Symmetric values to model-level 8339 (733 / 813 / 1023), not a label-colour variant; year_from 1979 -> 1974 from the 1974 Raleigh catalogue. Nine component date corrections in total; see Done. Remaining era mismatches: 1983 Bianchi Rallye generic "Mafac cantilever" -> 10016 (1981-only, description specifies tandem dual-cable levers), and 1990 Bianchi Osprey / Nyala -> 8032 CT-X101 / 8038 CT-XT01 (1992-only; check generation/model codes against a 1990 manufacturer catalogue before widening). The 1982 Peugeot NL "605 side-pull" cells remain unlinked: the source prints Mafac, so the Weinmann identification still needs a clear photo.
 
@@ -262,6 +262,8 @@ Latest 2026-11-07: 627 of 1013 linked (61.9%), after the approved 1981 Peugeot t
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
 
 ## Done
+
+- 2026-11-07 Raleigh Weinmann centre-pull links (user-approved): 11 specs -> 7929 Vainqueur 999 family: 1972 Record DL 130 [9007], 1977 Grand Prix / Record Limited [4487 4503], 1978 Grand Prix / Record Ace / Record FFS-PPS / Super Grand Prix [5913 5933 5953 5893], 1979 Grand Prix / Record Ace [8135 8155], 1980 Grand Prix / Super Grand Prix [9166 9126]. 1979 Super Grand Prix [8115], explicitly short reach, -> 1138 Raleigh 610, as the existing Super Course mapping (610 inferred; black label not established). Seven year/bike-scoped generator overrides; no component changes. Re-read 1972 table, 1977 Record Limited brake close-up, 1978 / 1979 tables and 1980 table. All 81 CSVs compared: exactly these 12 links changed. Applied `/tmp/raleigh-weinmann-centrepull-links.sql` in a transaction; rerun affected zero rows. Brakes 627 -> 639 of 1013 linked.
 
 - 2026-11-07 Cinelli Record Corsa brake link (user-approved inference): 1986 860 Record Corsa "Campagnolo Record Corsa" [2338] -> 583 Campagnolo 4061 Super Record v2. Cinelli brochure p. 3 names the group but gives no separate brake identification or dedicated 860 photo; Campagnolo 18 bis p. 6 specifies Super Record-family brakes while 315/101 is unavailable. Uses the existing early C-Record mapping convention; exact caliper/reach remains inferred. Replaced the explicit null with a 1986-only, bike-scoped override; no component changes. All 81 CSVs compared: only this link changed. Applied `/tmp/cinelli-1986-record-corsa-brake-link.sql`; rerun affected zero rows. Brakes 626 -> 627 of 1013 linked.
 

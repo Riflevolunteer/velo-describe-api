@@ -1765,8 +1765,26 @@ const COMPONENT_OVERRIDES = {
     'weinmann 999 centerpull with q r levers': [{ to: 1976, id: 7929 }],
     'weinmann 999 centerpull with extension levers': [{ to: 1976, id: 7929 }],
     'campagnolo super record with lightened levers': 582, // 1975 Team Professional: Campagnolo 4061, Super Record v1 (1974-82)
-    // 1977 Raleigh (US). Grand Prix / Record Limited "Raleigh/Weinmann forged
-    // alloy centerpull" name no model, left unlinked.
+    // Raleigh US centre-pulls, reviewed 2026-11-07: use the Vainqueur 999
+    // family without guessing reach or badge. Scope to the reviewed bikes/years.
+    'weinmann center pull': [{ from: 1972, to: 1972, bike: 'Record DL 130', id: 7929 }],
+    'raleigh weinmann forged alloy centerpull with quick release levers': [{ from: 1977, to: 1977, bike: 'Grand Prix', id: 7929 }],
+    'raleigh weinmann forged alloy centerpull with extension levers': [{ from: 1977, to: 1977, bike: 'Record Limited', id: 7929 }],
+    'raleigh weinmann alloy center pull with qr and extension levers': [
+      { from: 1978, to: 1978, bike: 'Grand Prix', id: 7929 },
+      { from: 1978, to: 1978, bike: 'Super Grand Prix', id: 7929 },
+    ],
+    'raleigh weinmann alloy centerpull with extension levers': [
+      { from: 1978, to: 1979, bike: 'Record Ace', id: 7929 },
+      { from: 1978, to: 1978, bike: 'Record FFS/PPS', id: 7929 },
+    ],
+    'raleigh weinmann alloy centerpull with qr and extension levers': [
+      { from: 1979, to: 1980, bike: 'Grand Prix', id: 7929 },
+      { from: 1980, to: 1980, bike: 'Super Grand Prix', id: 7929 },
+    ],
+    // Short-reach 610 inference, as the already-linked 1977-78 Super Course;
+    // the catalogue does not establish the black-label detail of row 1138.
+    'raleigh weinmann short reach alloy centerpull with qr and extension levers': [{ from: 1979, to: 1979, bike: 'Super Grand Prix', id: 1138 }],
     'campagnolo record side pull': [{ to: 1978, id: 573 }], // Professional Mk V: Campagnolo 2040, Record (pre-CPSC)
     'campagnolo record short reach': [{ from: 1979, to: 1979, id: 575 }], // 1979 Raleigh Professional Mk V: Campagnolo 2040/1 Record short reach, post-CPSC row (1978-87)
     'campagnolo record short reach 47mm': [{ from: 1980, to: 1980, id: 575 }], // 1980 Raleigh Professional Mk V: 2040/1 short reach, as 1979

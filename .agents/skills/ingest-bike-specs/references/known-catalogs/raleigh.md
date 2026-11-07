@@ -865,3 +865,30 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
 - 2026-10-30 freewheels and rims: 1987 Maverick 18 Pro "Suntour Ultra 6 14-28T" -> 7870 WT-6500 Winner (Mountech bike); 1980 Professional Mk V "Mavic Professional with reinforcing ferrules" -> 5092 Montlhery Pro. +2. Left unlinked by decision: 1981 Professional "Atom 13/26 6 speed" (cog colour not printed), 1981 Criterium "Shimano Gold 13/28" (no row).
 - 2026-10-30 saddles: 1986 Prestige "Cinelli, suede SLX" -> 5338 Volare SLX (frame is 531, so SLX is the saddle); 1987 Maverick 18 Pro "Selle Italia padded black anatomic" -> 8759 Anatomic (row to 1987). +2. Left unlinked by decision: 1970 Gran Sport "Dunlop High Pressure Road Racing", 1986 IRC Roadlite tyres.
 - 2026-10-30: 1984 "Huret Club brazed-on" front (Pulsar 10, Quasar 12, Record Sprint 12, Team Cadet 10) left unlinked by decision: only the clamp-on 8489 Club AS row for 1984.
+
+
+## Weinmann centre-pull link pass — 2026-11-07
+
+- User-approved: 11 specs -> 7929 Vainqueur 999 (610 / 750), using the
+  family row without choosing an unspecified reach or Raleigh badge:
+  1972 Record DL 130 [9007]; 1977 Grand Prix / Record Limited [4487, 4503];
+  1978 Grand Prix / Record Ace / Record FFS/PPS / Super Grand Prix
+  [5913, 5933, 5953, 5893]; 1979 Grand Prix / Record Ace [8135, 8155];
+  1980 Grand Prix / Super Grand Prix [9166, 9126]. Supersedes the relevant
+  "left unlinked" notes in the catalogue sections above.
+- 1979 Super Grand Prix [8115] explicitly says short reach -> 1138 Raleigh
+  610, consistent with the existing 1977-78 Super Course mapping. The 610
+  identification is inferred; the catalogue does not establish the black
+  label in the component title. No component date or description changes.
+- Evidence re-read: original 1972 PDF table (p. 7); 1977 Record Limited
+  page/brake close-up; 1978 specification grid p. 27; 1979 grid reproduced
+  at Ebykr; original 1980 table p. 24. Relevant source URLs are in the
+  catalogue sections above; additional accessible reproductions:
+  https://ebykr.com/library/raleigh-1977-catalog-usa/
+  https://ebykr.com/library/raleigh-rampar-catalog-usa/
+  https://theheadbadge.com/wp-content/uploads/Raleigh-1980-US-24.jpg
+- Added seven exact-value generator overrides scoped by year and bike.
+  Compared all 81 CSVs: exactly these 12 links changed (6078 -> 6090 generated
+  linked specs). Applied `/tmp/raleigh-weinmann-centrepull-links.sql` in
+  a transaction: 12 rows affected. Read-back confirmed every target;
+  rerun affected zero rows. Live brake coverage 627 -> 639 of 1013.
