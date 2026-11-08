@@ -2237,3 +2237,11 @@
 - Evidence and review plan: `/tmp/positron-investigation.txt`,
   `/tmp/positron-4525.jpg`, `/tmp/positron-pf10-ev.jpg`,
   `/tmp/positron-1984-p34.jpg`, `/tmp/positron-1984-p36.jpg`.
+
+## Tourney TY10 start and 1987 Bianchi Strada rear link — 2026-11-08
+
+- Manufacturer evidence: https://www.shimano.com/en/100th/history/products/10.html explicitly dates TY10 to 1986 and TY20 SIS to 1990. data_source 370 (manufacturer).
+- component_detail 7607, Shimano RD-TY10-GS / RD-TY10-SS, Tourney: year_from 1990 -> 1986; year_to remains 1990 from the existing dealer-manual attestation. source_ref 77 -> 370. No title or description rewrite.
+- 1987 Bianchi STRADA rear bike_spec 1390: NULL -> 7607. This is an identification inferred from the friction Tourney series, date and drivetrain; the Bianchi table itself prints no model code. Front 1389 and shifters 1391 remain unresolved, without guessing TY20/SY20 models introduced later.
+- Generator override is restricted to STRADA in 1987; other years remain unlinked. Generation succeeded: 15 bikes, 300 specs, 161 links. Only the 1987 Bianchi CSV has the bare Shimano Tourney value; 1985 Raleigh Tourney XT is a separate crank override.
+- Applied /tmp/tourney-1987-repair.sql; readback confirmed 7607 dates 1986-1990, source_ref 370, and bike_spec 1390 linked. /tmp/components-missing-years.tsv records 47 currently linked components with missing dates, affecting 186 specs. These remain an evidence audit, not inferred production ranges.

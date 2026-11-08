@@ -1163,9 +1163,10 @@ const COMPONENT_OVERRIDES = {
     // 1986: RD-6207 600EX (as the 1986 Raleigh Competition FD-6207 / FC-6207; road bike, so the short cage; 2026-11-02).
     'shimano 600': [{ to: 1978, id: 4462 }, { from: 1986, to: 1986, id: 4470 }, { from: 1979, id: null }], // Shimano DC-200, 600
     'shimano 600 sis': 4471, // Shimano RD-6208, 600EX (SIS), 1986-87 (1987 Bianchi)
-    // 1987 Bianchi Strada: no 1980s Tourney rear derailleur row exists; the
-    // only hits are 1970s DB-300/DB-400, so block it.
-    'shimano tourney': null,
+    // 1987 Bianchi Strada: friction Tourney TY10 (7607), whose start is
+    // 1986 per Shimano's official Tourney history (previously dated 1990).
+    // TY20 SIS launched in 1990; the earlier DB-series is a different era.
+    'shimano tourney': [{ from: 1987, to: 1987, bike: 'STRADA', id: 7607 }],
     'simplex prestige': [{ from: 1900, to: 1979, id: 4583 }, { from: 1980, to: 1987, id: 4647 }], // Simplex Prestige (variant of AR637P/NI), 1971-1974; 1982 Peugeot (NL) PL 8 M: S001 T Prestige (1975-87)
     // 1973-76 Raleigh Gran Sport DL 160 "Simplex Maxi": the AR 642 Maxi-Prestige,
     // Simplex's only Maxi rear (long cage, wide range; 14-28 freewheel on the bike).
