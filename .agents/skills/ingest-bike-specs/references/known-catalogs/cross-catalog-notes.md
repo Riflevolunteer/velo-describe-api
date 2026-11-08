@@ -515,3 +515,10 @@ peugeot.md). Raleigh prints its ladies' versions in the gents' spec columns: loa
 1987 Ventura 12 (Gents + Lady's) rows; the 1971 DL-115L / DL-130L and 1973 DL 100L appear only in the text.
 Raleigh 1983 Medale 5 & 10 Ladies, Colnago 1986 Lady Sport and Falcon 1973-74 Models 69 / 71 were already
 loaded. Battaglin Turismo (mixte city) and Falcon 83 / 89 (utility, deleted with their men's 82 / 88) stay out.
+
+## Campagnolo brand-only spec links removed — 2026-11-08
+
+- Specs containing only Campagnolo no longer infer a component model from era or other groupset parts. Replaced six explicit overrides with null: hubs, brakes, headsets, cranksets, pedals and seatposts. Named values such as Campagnolo Record, Nuovo Record and Chorus retain their existing mappings.
+- Applied /tmp/campagnolo-brand-only-unlink.sql: 25 guarded updates clear component_id only, preserving catalog text and provenance. Previous links (bike_spec_id -> component_id): 306 -> 5749, 325 -> 5749, 344 -> 5749, 965 -> 5749, 1465 -> 7041, 2347 -> 573, 2356 -> 3708, 3763 -> 2963, 5069 -> 573, 5078 -> 3708, 7758 -> 3708, 7763 -> 5749, 7777 -> 3708, 7782 -> 5749, 8902 -> 5749, 8921 -> 5749, 8940 -> 5749, 9361 -> 3708, 9380 -> 3708, 12517 -> 3708, 12528 -> 5749, 17137 -> 3236, 17150 -> 5742, 19232 -> 1496, 19236 -> 3708. Rollback: /tmp/campagnolo-brand-only-rollback.sql; full before-state: /tmp/campagnolo-brand-only-before.tsv.
+- All 81 CSVs regenerated before and after (1052 bikes, 17711 specs). Exactly 25 mappings became NULL, all on the complete value Campagnolo; every other spec and mapping unchanged. Generated links 6090 -> 6065. Comparison: /tmp/compare-campagnolo-links.js and /tmp/campagnolo-brand-only-generation-diff.json. Database readback confirmed zero remaining linked brand-only Campagnolo specs.
+- This supersedes previous brand-only Campagnolo inferences in the individual catalog notes, including the Motobecane headset correction recorded on 2026-10-24 above.

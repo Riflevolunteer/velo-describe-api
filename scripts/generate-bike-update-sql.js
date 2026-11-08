@@ -1352,7 +1352,7 @@ const COMPONENT_OVERRIDES = {
     'shimano exage sport': [{ from: 1988, to: 1989, id: 3575 }], // 1989 Peugeot (NL) Aspin / Chamonix: HB-A450-R / F, Exage Sport
     'shimano deore xt quick release': [{ from: 1987, to: 1989, id: 3550 }], // 1989 Peugeot (NL) Europe Express: HB-M730, Deore XT M730
     'helicomatic quick release': [{ from: 1980, to: 1989, id: 3387 }], // 1989 Peugeot (NL) Anjou: Maillard Helicomatic
-    'campagnolo': [{ bike: 'Galibier', from: 1989, to: 1989, id: 3236 }], // 1989 Peugeot (NL) Galibier (Athena group): D300, Athena
+    'campagnolo': null, // brand alone does not identify a hub model
     'shimano new 600': [{ from: 1988, to: 1991, id: 3534 }], // 1988 Peugeot (FR) PX SIS: FH-6400 / HB-6400-F, 600 Ultegra
     'atom alloy small flange': 3183, // 1986 Falcon: Atom (low flange aluminum), as the Raleigh Atom small-flange keys
     'atom alloy small flange quick release': 3183, // 1986 Falcon Challenger / Strada
@@ -1917,8 +1917,7 @@ const COMPONENT_OVERRIDES = {
     // 18 bis supplies Record Corsa with Super Record-family brakes while
     // 315/101 is unavailable. User-approved inference, as the early C-Record mappings.
     'campagnolo record corsa': [{ from: 1986, to: 1986, bike: '860 Record Corsa', id: 583 }],
-    // 1974 Falcon (loaded as 1975 until 2026-10-08).
-    'campagnolo': [{ to: 1977, id: 573 }], // only Record 2040 pre-CPSC existed; 1974 Falcon Model 76
+    'campagnolo': null, // brand alone does not identify a brake model
     // 1979 Peugeot (French catalogue).
     'side pull': null, // generic; matcher hit Phillips Side-Pull
     'spidel competition centre pull': 1029, // Spidel (made by Mafac); the Mafac Competition rebadged
@@ -2015,9 +2014,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record pista': [{ to: 1985, id: 2966 }, { from: 1987, id: 7024 }], // 1040 to 1985; A0D0P from 1987
     'campagnolo veloce': 2970, // 1993 Bianchi: Campagnolo HS-01VL, Veloce (part-number retitle)
     'shimano 600': [{ from: 1983, to: 1987, id: 3090 }], // 1987 Bianchi: Shimano HP-6207, 600EX
-    // 1974 Motobecane. Not for the 1984 Peugeot PZ 10, a Super Record build (4041 would be the guess).
-    // 1039 Gran Sport / Record (2959) is the 1956-60 row; from 1960 the 1039 is Record Strada (2963).
-    campagnolo: [{ bike: 'PZ 10', id: null }, { to: 1959, id: 2959 }, { from: 1960, to: 1985, id: 2963 }],
+    campagnolo: null, // brand alone does not identify a headset model
     'stronglight competition': 3125, // Stronglight V4 Competition (later version, octagonal locknut, 1960-80); was the 1950-60 earlier version until the 1970 Peugeot pass
     // 1981 Kalkhoff (ambiguous with the Super Record Pista row).
     'campagnolo super record': 2968, // Campagnolo 4041, Super Record
@@ -2081,9 +2078,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc ltd 46 36 24t powerring': 1997, // CW-XL00
     'suntour xc pro 46 36 24t powerring': 1998, // CW-XP01
     'ofmega quattro 52 42t 170 mm': 1705, // Ofmega Vantage, Bianchi Quattro version
-    // 1978 Falcon San Remo Equipe 76: bare "Campagnolo Chainset"; 1049 was the only Campagnolo road crank
-    // by then (Gran Sport 3320 ended 1975, Super Record used the 1049 crank too).
-    'campagnolo': [{ from: 1978, to: 1978, id: 1496 }],
+    'campagnolo': null, // brand alone does not identify a crank model
     'steel cottered': null, // 1978 Falcon Black Arrow 74: generic; matcher hit the Raleigh-made Triumph crank (2007)
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano new dura ace 53x42 teeth sealed': [{ from: 1986, to: 1986, id: 1819 }], // FC-7400
@@ -3253,8 +3248,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo sl': 3716, // 4021 Super Record Strada (Superleggeri)
     // 1986 Cinelli groupset fan-out.
     'campagnolo record corsa': 3693, // 305/501, C-Record
-    // 1974 Falcon (loaded as 1975 until 2026-10-08).
-    'campagnolo': [{ to: 1985, id: 3708 }], // 1037 Record Strada, the only Campagnolo road pedal of the period
+    'campagnolo': null, // brand alone does not identify a pedal model
     'campagnolo track pattern': 3711, // 1038 Record Pista (silver finish, 1971-85)
     // 1979 Peugeot (French catalogue).
     'lyotard dural course with toe clips and straps': 3815, // Lyotard 460D (1970-80), the standard French dural quill
@@ -3361,10 +3355,7 @@ const COMPONENT_OVERRIDES = {
     // 1982 Raleigh (UK "Racing Formula" lightweights).
     'campagnolo nuovo record': [{ to: 1985, id: 5749 }], // Campagnolo 1044, Record
     'campagnolo gran sport': 5734, // Campagnolo 3800, Gran Sport
-    // Bare "Campagnolo": the 1044 Record for 70s catalogs; nothing to pick
-    // from in the 90s (Krono 1993), so blocked rather than wrong.
-    // 1984 Peugeot PZ 10 is a Super Record build (the 4051/1 would be the guess): blocked for that bike.
-    'campagnolo': [{ bike: 'PZ 10', id: null }, { bike: 'Galibier', from: 1989, to: 1989, id: 5742 }, { to: 1985, id: 5749 }, { bike: 'Krono / Chorus', id: 7041 }, { from: 1990, id: null }], // Campagnolo 1044, Record; 1993 Bianchi Krono / Chorus: SP-CH, Chorus RS (1992-95)
+    'campagnolo': null, // brand alone does not identify a seatpost model
     'campagnolo seat post': [{ to: 1985, id: 5749 }], // 1974 / 75 Motobecane, split out of the Saddle cells
     'campagnolo alloy': [{ to: 1985, id: 5749 }], // 1974 Raleigh: Campagnolo 1044, Record
     'campagnolo super nuovo record': [{ from: 1974, to: 1980, id: 5759 }], // 1974 Raleigh Team Professional: Campagnolo 4051, Super Record
