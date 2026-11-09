@@ -1,5 +1,44 @@
 # Colnago catalogs processed so far
 
+## 1992 Colnago — loaded (2026-11-09, source 375)
+
+- CSV: `bike_specs/1992_colnago_spec.csv`; reviewed SQL:
+  `/tmp/colnago-1992-review/1992_colnago.sql` (also `bike-update.sql`).
+  User approved the reviewed SQL, then loaded 4 bikes / 44 specs / 17 links.
+  Source 375, `1992 Colnago catalogue`. Re-run affected zero rows throughout.
+- Source: manufacturer brochure, cover explicitly `COLNAGO 92`, 8 pages.
+  Retrobike scan by fiks:
+  https://www.retrobike.co.uk/archive/1992-colnago-catalogue.866/
+  Readable scan mirror: https://ebykr.com/library/colnago-1992-catalog/;
+  inspected original cover and pp. 5-6 image files (not just the transcription).
+  Italian text; market unstated, so country left NULL.
+- Four complete MTBs with printed groups: Superlativ (H16 / P65, Shimano
+  XT STI), Fantastic (P65, Shimano DX STI), De Luxe (R14, Shimano Deore LX
+  STI), Maxim (H12, Shimano 400 STI). All name sloping chrome-moly frames,
+  reinforced forks and investment-cast safety dropouts. No sizes or weights
+  printed. Colour codes retained, not translated from photographs.
+- Loaded: 11 existing labels, 44 specs, 17 links. Follow existing Colnago group
+  fan-out to FD / RD / crank / post / brakes / levers / pedals plus Shifters;
+  original group wording preserved. Links are period group defaults, not
+  separately printed part codes: XT FD 2501 / RD 4493 / crank 7578 /
+  post 5892 / pedals 3968 / controls 7577; DX FD 2487 / RD 4480 /
+  crank 1809 / brakes 7660 / pedals 3964 / controls 6359; LX FD 2491 /
+  RD 4484 / crank 1807 / pedals 7584 / controls 7581.
+- STI controls represented by integrated-control rows on Shifters; no separate
+  BL model inferred. XT brakes ambiguous; LX BR-M550 (7582) ends in 1991,
+  so no LX brake link. DX/LX posts and every Maxim `400 STI` spec unlinked.
+  Pedals and XT post use group defaults as earlier Colnago ingests; exact OEM
+  part selection is a review judgement, not confirmed by brochure wording.
+- Held out: C35, Carbitubo, Master Piu Decor, Master Piu, Conic SLX,
+  Superpiu, Super 91, C35MTB and Altaquota: frame descriptions and illustrative
+  complete-bike photos only, no written build specification. No components
+  identified from photographs. Equipment page excluded from bike ingest.
+- Regression: regenerated all 82 CSVs before/after override additions;
+  every SQL statement outside 1992 Colnago identical. Total links 6080 ->
+  6097, exactly the 17 new links. Readback: Superlativ 11 specs / 6 links,
+  Fantastic 11 / 6, De Luxe 11 / 5, Maxim 11 / 0. No existing label order,
+  bike, component or specification rows changed during the load.
+
 Source for both: https://2velo.com/colnago-bicycle-catalogs/ (a WordPress
 gallery of 146 scanned pages in nine groups; images are served via
 i0.wp.com, `?w=1400` gives a readable scan). Only two groups carry component

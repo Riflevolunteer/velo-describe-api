@@ -581,6 +581,11 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1992 Colnago MTB groups, preserving the printed STI wording.
+    'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 2501 }],
+    'shimano dx sti': [{ bike: 'Fantastic', from: 1992, to: 1992, id: 2487 }],
+    'shimano deore lx sti': [{ bike: 'De Luxe', from: 1992, to: 1992, id: 2491 }],
+    'shimano 400 sti': null,
     'campagnolo c record': [{ to: 1991, id: 2283 }, { from: 1992, to: 1994, id: 2306 }], // C-Record (1985-91) / FD-01SRE, Record (C-Record renamed Record for 1992);/ 1992 Bianchi (JP): 1992-range row
     'campagnolo athena': [{ to: 1991, id: 2281 }, { from: 1992, to: 1994, id: 7044 }], // Athena (1988-91) / FD-01SAT, Athena RS;/ 1992 Bianchi (JP): 1992-range row
     'shimano 600 ultegra 8 speed': 2479, // 1992 Bianchi Virata: FD-6401 (8-speed generation, 1992-97)
@@ -899,6 +904,11 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // 1992 Colnago: contemporary triple-chainset group versions.
+    'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 4493 }],
+    'shimano dx sti': [{ bike: 'Fantastic', from: 1992, to: 1992, id: 4480 }],
+    'shimano deore lx sti': [{ bike: 'De Luxe', from: 1992, to: 1992, id: 4484 }],
+    'shimano 400 sti': null,
     'shimano light action l512sgs': [{ from: 1985, to: 1985, id: 10970 }], // 1985 Raleigh Kodiak: RD-L512-SGS, explicitly confirmed by Shimano E693A (August 1985)
     'gipiemme cronosprint': [{ from: 1982, to: 1982, id: 4260 }], // 1982 Battaglin Alessandro: Crono Sprint 801 CC (1982-86), rear of the 800CC set with the 802 DD front (2369) that Marostica links; not 4261 800DS (Economy set)
     'campagnolo athena': [{ to: 1991, id: 4092 }, { from: 1992, to: 1992, id: 4091 }], // Athena (1988-91) / Athena RS RD-01AT;/ 1992 Bianchi (JP): 1992-range row
@@ -1573,6 +1583,12 @@ const COMPONENT_OVERRIDES = {
     'shimano 105sc (1055)': 960, // BR-1055-49
     'shimano deore dx': 7660, // BR-M650 cantilever
     'shimano deore lx': 7582, // BR-M550 cantilever
+    // 1992 Colnago: printed group only. LX BR-M550 ends in 1991;
+    // XT has several cantilever models. Neither is resolved by the brochure.
+    'shimano dx sti': [{ bike: 'Fantastic', from: 1992, to: 1992, id: 7660 }],
+    'shimano xt sti': null,
+    'shimano deore lx sti': null,
+    'shimano 400 sti': null,
     'shimano deore xt u 2': 984, // BR-M733 U-II brake
     'suntour xc pro': 1056, // CT-XP00 / CT-XP20 cantilever
     // 2026-11-02 brake pass. Weinmann 500 / 570 on 1986-88 Peugeots, as the other years (8636 dated 1963-89, 1129 1985-89 from this pass).
@@ -2060,6 +2076,12 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // 1992 Colnago groups; ring sizes are not printed. Rows cover the
+    // contemporary group crank variants, without asserting tooth counts.
+    'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 7578 }],
+    'shimano dx sti': [{ bike: 'Fantastic', from: 1992, to: 1992, id: 1809 }],
+    'shimano deore lx sti': [{ bike: 'De Luxe', from: 1992, to: 1992, id: 1807 }],
+    'shimano 400 sti': null,
     // 2026-11-05 SRC Group 1983 catalogue (data_source 361): 600100 Special road crankset (42/52, 170mm) and 600100/3 Special triple still listed in 1983, so 1595 / 1598 reach 1983.
     'gipiemme special': [{ from: 1982, to: 1983, id: 1595 }], // 1982 Battaglin Giro d'Italia: Special 600100 (Strada)
     'gipiemme triple': [{ from: 1982, to: 1983, id: 1598 }], // 1982 Bianchi Nuovo Touring: Special 600100/3 triple (judgement call: the only Gipiemme triple on sale in 1982-83)
@@ -2985,6 +3007,12 @@ const COMPONENT_OVERRIDES = {
     ],
   },
   'Shifting Brake Levers': {
+    // 1992 Colnago: STI denotes the integrated Rapidfire controls;
+    // component rows cover their ST-M09x / M07x / M060 variants.
+    'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 7577 }],
+    'shimano dx sti': [{ bike: 'Fantastic', from: 1992, to: 1992, id: 6359 }],
+    'shimano deore lx sti': [{ bike: 'De Luxe', from: 1992, to: 1992, id: 7581 }],
+    'shimano 400 sti': null,
     // 1990 Bianchi Rapidfire shifters (the 1990 groups are M650 DX / M550 LX / M735 XT)
     'shimano deore dx rapidfire': [{ from: 1990, to: 1993, id: 6359 }], // ST-M070 / ST-M071
     'shimano deore lx rapidfire': [{ from: 1990, to: 1992, id: 7581 }], // ST-M060
@@ -2999,6 +3027,12 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1992 Colnago STI controls are represented by the integrated Shifters
+    // links; do not invent a separate BL model from the group name.
+    'shimano xt sti': null,
+    'shimano dx sti': null,
+    'shimano deore lx sti': null,
+    'shimano 400 sti': null,
     // 2026-11-06 brake lever pass: levers matched to the bike's linked brakes.
     'universal lightened': [{ from: 1978, to: 1978, id: 480 }], // 1978 Bianchi Rekord/748: Universal Mod.77 lever (706 extra light), brakes Mod. 77
     'shimano santé': [{ from: 1988, to: 1989, id: 447 }], // 1988 Colnago Super Krono / Santé bikes: BL-5001 (standard 97.5mm reach) over the short-reach BL-5002 (judgement call); brakes BR-5000-49
@@ -3081,6 +3115,12 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // 1992 Colnago: same group defaults as the contemporary Bianchi
+    // entries; the brochure gives no pedal code or SPD claim.
+    'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 3968 }],
+    'shimano dx sti': [{ bike: 'Fantastic', from: 1992, to: 1992, id: 3964 }],
+    'shimano deore lx sti': [{ bike: 'De Luxe', from: 1992, to: 1992, id: 7584 }],
+    'shimano 400 sti': null,
     // 2026-11-06 pedal pass: as the same model / group elsewhere.
     'campagnolo alloy with reflector': [{ bike: 'Competition GS', from: 1977, to: 1977, id: 3688 }], // 1977 Raleigh Competition GS: Gran Sport 3700, as the 1978-81 Competition GS
     'shimano deore xt sis': [{ from: 1988, to: 1988, id: 3967 }], // 1988 Colnago (FC-M730 crank): PD-M730, as the 1988 Raleigh Avanti
@@ -3260,6 +3300,11 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // 1992 Colnago: only XT has an established contemporary group post.
+    'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 5892 }],
+    'shimano dx sti': null,
+    'shimano deore lx sti': null,
+    'shimano 400 sti': null,
     // Shimano Dura-Ace EX seatpost row 10019 was merged into coded SP-7200 row 5899 on 2026-11-05;
     // 1986 Team Miyata catalog also lists Dura-Ace EX for the seatpost.
     'dura ace ex': [{ from: 1981, to: 1986, id: 5899 }], // Shimano SP-7200, Dura-Ace EX
