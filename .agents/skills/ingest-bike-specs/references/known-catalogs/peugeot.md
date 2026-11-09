@@ -868,3 +868,9 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 - Applied `/tmp/peugeot-1981-tandem-brake-links.sql`: two rows affected;
   read-back confirmed both and rerun affected zero rows. Live Brakes
   coverage 623 -> 625 of 1013 specs.
+
+## Puymorens six-speed Ultegra cassette links — 2026-11-09, user approved
+
+- Specs **15057**, 1987 PX SIS W 'Puymorens', `6-speed, Shimano 6400 cassette, 13x24`, and **16488**, 1988 PX SIS 'Puymorens', `6-speed, Shimano New 600 SIS`, -> new component **10971 Shimano CS-6400-6, 600 Ultegra (6sp)**, dates 1987-1988. Both have FH-6400 hub links; 1988 is a group/freehub-based identification. Original spec text, Freewheel label and source_ref unchanged.
+- Manufacturer evidence: R-3 service instructions (November 1987, source 372) name six-speed CS-6400; SL-BS50 S-1 instructions (September 1988, source 373) explicitly name CS-6400-6 with FH-6400-6 / FH-1051-6. URLs and component details are in Shimano catalogue notes. These replace the earlier missing-six-speed-row decision; seven-speed 1199 remains separate.
+- Added bike/year-specific Freewheels overrides; applied `/private/tmp/cassette-review-2026-11-09.sql` with two Bianchi links and Mavic correction. All 81 CSVs compared: exactly four links changed, 6066 -> 6070. Rerun zero rows. Freewheel-label coverage **332/845 (39.3%)**.

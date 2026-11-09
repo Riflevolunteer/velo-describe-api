@@ -42,17 +42,17 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 
 ## Open: link coverage (bike_spec -> component_id)
 
-**Live DB snapshot, 2026-11-09: 6,096 / 13,417 linkable specs (45.4%).** This uses the same non-linkable-label exclusions as `/linkCoverage`; it is a DB count, not the generator's CSV-only count. Brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`: the 2026-11-08 pass explicitly cleared 25 such links across six categories.
+**Live DB snapshot, 2026-11-09: 6,100 / 13,417 linkable specs (45.5%).** This uses the same non-linkable-label exclusions as `/linkCoverage`; it is a DB count, not the generator's CSV-only count. Brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`: the 2026-11-08 pass explicitly cleared 25 such links across six categories.
 
 | Spec category | Linked | Total | Coverage |
 | --- | ---: | ---: | ---: |
 | Bottom Bracket | 7 | 15 | 46.7% |
 | Brake Levers | 132 | 321 | 41.1% |
 | Brakes | 637 | 1013 | 62.9% |
-| Cassette | 40 | 45 | 88.9% |
+| Cassette | 42 | 45 | 93.3% |
 | Chain | 327 | 600 | 54.5% |
 | Crankset | 444 | 997 | 44.5% |
-| Freewheel | 330 | 845 | 39.1% |
+| Freewheel | 332 | 845 | 39.3% |
 | Front Derailleur | 733 | 895 | 81.9% |
 | Handlebars | 220 | 914 | 24.1% |
 | Headset | 243 | 564 | 43.1% |
@@ -83,7 +83,7 @@ Counts in older dated pass descriptions below are historical. The worklists have
 ### Calls from 2026-10-24 (leave until a catalogue or photo settles them)
 
 - Decided 2026-10-30, leave unlinked: 1982 Peugeot "Lightrace Luxe" headset (7; only 3032 Lightrace Grand Luxe, undated, and 3033 Super, 1984); 1981 Peugeot "Simplex SJA" front on PX 10 S, PSV 10, PFN 13 (3; neighbour years disagree: 102 / 222, triple 103 / 223); 1983 Peugeot "Maillard 700 Pro" hubs (3; large vs low flange, neighbour years do not say); 1982 Peugeot "Mafac Promotion" levers (3; four variants); 1990 Bianchi "Sedisport 270 black" (2; no 270 row).
-- No suitable row (source gaps): Reydel Profil (6), Hyperglide 7-speed cassettes other than CS-HG70 (9), Vittoria Flash M19, bare "Rapidfire Plus" on mixed-group 1993 MTBs.
+- No suitable row (source gaps): Reydel Profil (6), Vittoria Flash M19, bare "Rapidfire Plus" on mixed-group 1993 MTBs.
 
 Named parts with no suitable period row or no source yet (worth a search if a source turns up):
 - Headsets and bars: ITM Mondial bars, stems 100 / 200 / 300 / Pro and 201 seatpost; Kusuki WPR-B / WP-B bars and "WIN" stems; SR / Sakae 1983-87 seatposts (fluted, CLE-100; the Custom and CT stems were linked 2026-10-28; the 1993 SR range was added 2026-10-27 from the SR SunTour 1993 catalogue, but 1983-87 is still a gap); Kalloy SP-248; PIVO de Luxe stem; Modolo Flyer. Searches 2026-10-20 found nothing for Tange Seiki, ITM, Kusuki or SR 1983-87 (only eBay listings; Reminiscence slugs `sakae82`-`sakae87`, `sr83`, `sr87`, `itm*`, `kusuki*` 404).
@@ -94,10 +94,14 @@ Named parts with no suitable period row or no source yet (worth a search if a so
 
 ### Freewheels / cassettes (2026-10-26 pass, recounted 2026-11-02)
 
+**Cassette audit applied, 2026-11-09 (user-approved):** 82 component rows; Cassette-label coverage **42 / 45 (93.3%)** and another 15 Freewheel-labelled specs link to cassette components. No duplicate merge was justified: the grouped Campagnolo titanium pair is eight-speed versus nine-speed. Added CS-6400-6 **10971** and linked Peugeot Puymorens **15057 / 16488**; linked Bianchi Europa **1570** and Nyala **1723** to existing CS-HG50 **1195**; corrected Mavic CC9 **1193** title, search, description and dates to the documented 1999 attestation. Manufacturer sources **372 / 373 / 374** registered. Exactly four DB links and generated mappings changed across all 81 CSVs (6066 -> 6070); rerunning `/private/tmp/cassette-review-2026-11-09.sql` changed zero rows. Full evidence and prior metadata are in the Shimano / Mavic component notes and Peugeot / Bianchi bike notes.
+- **Remaining three unlinked Cassette specs:** 1989 Bianchi Sport SX **18494** (Sport LX, silver 13-24T seven-speed); 1989 Tangent **18682** (SunTour XC-9010, 13-28T seven-speed); 1993 Ocelot **1740** (six-speed 14-28T). Shimano's C20 chart specifies MF-HG20 freewheel for Ocelot's group, but the original Bianchi product table/fitment remains unverified, so its label/CSV was left unchanged.
+- **Further component review:** 1196 Uniglide five-speed, 1194 Regina XLR8, 1212 TA Kheops and 1213 Stronglight Titanium still lack complete dates. Vague 1196 / 1200 Uniglide records remain separate: photographed ranges differ and duplicate identity is unproven; 1200's 1970-1980 dates still need manufacturer evidence. Check 1984 Raleigh Road Ace 12 spec **6086** against the original table: seven listed sprockets versus six-speed 600 AX row 1197. No changes to these records.
+
 2026-11-02: 320 of 837 Freewheel specs (label 36) and 33 of 39 Cassette specs (label 48) linked, 353 of 876 together (40.3%). By bike brand (label 36): Peugeot 173 / 462, Raleigh 54 / 212, Bianchi 37 / 56, Colnago 32 / 45, Falcon 0 / 19 (tooth ranges only), Miyata 8 / 18. Nearly all unlinked values are a maker plus tooth range or a tooth range alone: leave. Leave unlinked (several rows fit or none matches): 1988 Peugeot Puymorens "6-speed, Shimano New 600 SIS" (FH-6400 freehub; only the 7-speed CS-6400-7 row exists) and 1987 "6-speed, Shimano 6400 cassette" (same); 1987 / 1989 Peugeot "Maillard 700 7-speed" x3 (2124 Compact Super and 8133 SH, both 1980-82); bare Peugeot "Maillard Normandy" (several Normandy rows); 1986 Miyata "SHIMANO UG 6 speed" x5 (the only UG row is the 600 MF-6150, 1978-84, and these are lower-tier bikes). New source gaps: Shimano Exage Sport freewheel (2, 1989 Peugeot); Sachs-Huret New Success 6 / 7-speed (3, 1987-89 Peugeot); Shimano Deore 6-speed freewheel (1987 Peugeot); CS-6400 6-speed cassette.
 
 - Decided 2026-10-30, leave unlinked: Atom 13/26 6 speed, 1981 Raleigh Professional [9341] (2050 black vs 2051 silver cogs, colour not printed); Shimano Gold 13/28 with 600 EX, 1981 Raleigh Criterium [9285] (no Gold freewheel row); Regina CXS 7-speed, 1986 Cinelli [2309] (2169 is the 6-speed only).
-- No suitable row: Shimano 105 freewheel / cassettes 1984-87 [1296 6134 8673 8695]; Hyperglide on CT10 / CT20 / AT10 1993 [1723 1740 1570]; Everest Special Cromo (4, already listed).
+- No suitable row: Shimano 105 freewheel / cassettes 1984-87 [1296 6134 8673 8695]; Everest Special Cromo (4, already listed).
 
 ### Seatposts (2026-10-26 pass, recounted 2026-11-02)
 
@@ -297,6 +301,8 @@ L512/Kodiak, 1987 Bianchi STRADA Tourney and Battaglin Cronosprint are resolved;
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
 
 ## Done
+
+- 2026-11-09 cassette fixes (user-approved): new **10971 CS-6400-6**, 1987-1988 attested in Shimano R-3/S-1 (sources 372/373), Peugeot **15057 / 16488** linked; Bianchi **1570 / 1723** -> **1195 CS-HG50** from 1993 p. 73 group compatibility. Mavic **1193** retitled CR601 / CC9 -> CC9, search updated, treated-steel description, dates **1990 -> 1999** (documented attestation, not proven launch/end year), source **374** from 1999 catalogue printed p. 24. No deletes/merges; no Ocelot relabelling. Applied `/private/tmp/cassette-review-2026-11-09.sql`: one component inserted, one rewritten, four specs linked, three sources inserted; rerun zero changes. All 81 CSVs compared: exactly four mappings changed, 6066 -> 6070. Live Cassette **42/45 (93.3%)**, Freewheel **332/845 (39.3%)**, overall **6100/13417 (45.5%)**. Full metadata/backups in brand catalogue notes.
 
 - 2026-11-09 component TODO reconciliation (read-only DB audit): refreshed all 19 linkable category counts, 6096 / 13417 linked (45.4%), and duplicate-report totals. Removed resolved Lyotard 36 RCM, Tioga Expert-CR, Tourney rear and Motobecane Tourney crank questions; corrected Duopar survivor IDs and loaded-catalogue leads. Added the current date/missing-date review queues. Database component rows: 10066; 25 descriptions at the 255-character limit; Shimano BMX ownership follow-up still affects 18 rows. Earlier dated coverage/pass figures in this history are not current totals.
 - 2026-11-09 Shimano L512 (user-approved): added 10970 RD-L512-SS / GS / SGS, 1985 only, source 371 from Shimano E693A (8508). Linked 1985 Raleigh Kodiak spec 3395 and added its 1985-only override. SQL rerun zero changes; all 81 CSVs regenerated with only that link changed. Rear coverage now 754 / 931 (81.0%). Commit fd94b26.

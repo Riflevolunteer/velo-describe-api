@@ -489,3 +489,10 @@ Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
   9982 T238, 9983 T261, 9984 "Mavic X BMX" (logo is an X with a superscript x; name uncertain);
   wheels 9985 Helium (1996), 9986 Cosmic Carbone (1996), 9987 Cosmic Expert, 9988 Cosmic Pro,
   9989 Crossland, 9990 Crossmax (1996). MA 40 (5077, to 1999) confirmed, unchanged.
+
+## CC9 cassette correction — 2026-11-09, user approved
+
+- Source **374**, `Mavic catalogue (1999), CC9 cassette page 24`: https://bikalog.org/api/view/Mavic/1999/mavic99.pdf, PDF page 12/printed p. 24. Only the CC9 section was reconciled, not the rest of the catalogue. Local source `/private/tmp/cassette-mavic99.pdf`, inspected render `/private/tmp/cassette-mavic99-p12.jpg`.
+- Retitled component **1193** from `Mavic CR601 / CC9 (9-speed)` to `Mavic CC9 (9-speed)`; search_text -> `Mavic CC9`. The original VeloBase UUID remains `3576A017-58A4-4C68-A960-07360890255E`; its page actually says late 1990s, so the stored 1990-1990 was a decade-bucket crawl artifact. **year_from moved later, 1990 -> 1999; year_to 1990 -> 1999**, using documented attestation only, not a proven launch/end year. Move earlier if a dated earlier source is recovered.
+- Replaced bare description with treated steel sprockets, ED 8/9-speed indexing, individually available cogs, 11-21T 193g / 12-23T 223g and the separate CC8 conversion kit. The specimen listing's aluminium material conflicts with the manufacturer's treated steel. CR601 is retained here as the old source name; it was not printed in the catalogue CC9 panel. source_ref **1 -> 374**.
+- No bike links or generator references to 1193; no merge/delete. Prior full-row backup `/private/tmp/cassette-before-mavic.tsv`. Applied guarded update within `/private/tmp/cassette-review-2026-11-09.sql`; rerun zero rows. Description 213 characters. All 81 bike CSVs compared; only the four separately approved Shimano links changed.

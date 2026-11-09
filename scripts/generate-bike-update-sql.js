@@ -3558,13 +3558,17 @@ const COMPONENT_OVERRIDES = {
       { bike: 'Peregrine', from: 1993, to: 1993, id: 7567 }, // Deore LX: CS-HG70
       { bike: 'Denali', from: 1993, to: 1993, id: 7567 }, // Deore DX: CS-HG70
     ],
-    'shimano hyperglide 13 28t 7 speed': [{ bike: 'Eros', from: 1993, to: 1993, id: 7567 }], // RX100: CS-HG70; the Europa (AT10) has no row
+    'shimano hyperglide 13 28t 7 speed': [{ bike: 'Eros', from: 1993, to: 1993, id: 7567 }, { bike: 'Europa', from: 1993, to: 1993, id: 1195 }], // RX100: CS-HG70; Altus A10: CS-HG50 per Shimano 1993 p.73 (group-based fitment)
+    'shimano hyperglide black 13 30t 7 speed': [{ bike: 'Nyala', from: 1993, to: 1993, id: 1195 }], // Altus C10: CS-HG50 per Shimano 1993 p.73; C20 Ocelot remains unresolved (MF-HG20 freewheel)
     'shimano hyperglide 13 30t 7 speed': [{ from: 1993, to: 1993, id: 1195 }], // Ibex / Osprey / Project 5 / Project 3, all Exage LT / ES: CS-HG50
     // 1989 Bianchi US catalogue (gringineer scans).
     'shimano hyperglide silver 13 28t 7 speed': [{ bike: 'Super Grizzly', from: 1989, to: 1989, id: 7641 }, { bike: 'Grizzly', from: 1989, to: 1989, id: 7630 }, { bike: 'Incline', from: 1989, to: 1989, id: 7630 }], // CS-M732 on the XT-II bike, CS-MT62 on Deore II / Mountain LX
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    // Six-speed Ultegra cassette, attested in Shimano R-3 (Nov 1987) and S-1 (Sep 1988); Peugeot retains its Freewheel spec label.
+    '6 speed shimano 6400 cassette 13x24': [{ bike: "PX SIS W 'Puymorens'", from: 1987, to: 1987, id: 10971 }],
+    '6 speed shimano new 600 sis': [{ bike: "PX SIS 'Puymorens'", from: 1988, to: 1988, id: 10971 }], // FH-6400 freehub / New 600 SIS: CS-6400-6, group-based fitment
     // 2026-11-06 group-matched cassettes (Freewheel label): bike-keyed, the cassette follows the bike's rear-derailleur group, as the 1989-93 Bianchi overrides in Cassettes.
     'cassette 7 speed hyperglide 13 30t': [
       { bike: 'Avanti', from: 1989, to: 1989, id: 7641 }, // 1989 Raleigh, Deore XT-II M732: CS-M732

@@ -691,3 +691,10 @@
 - Applied `/tmp/bianchi-1992-mondiale-brake-link.sql` in a transaction:
   one component date/provenance update and one spec link. Read-back passed;
   rerun affected zero rows. Live brake coverage 625 -> 626 of 1013.
+
+## 1993 Europa / Nyala cassette links — 2026-11-09, user approved
+
+- Specs **1570** Europa `Shimano Hyperglide 13-28T 7-speed` and **1723** Nyala `Shimano Hyperglide black 13-30T 7-speed` -> **1195 Shimano CS-HG50**. Group-based identifications: Europa has Altus A10, Nyala C10, both list CN-HG50 chains; Shimano's 1993 p. 73 explicitly specifies CS-HG50 for both groups. The Bianchi spec text itself does not print CS-HG50. Added bike-specific 1993-only overrides; no CSV values/labels or component dates changed.
+- Source chart: https://www.disraeligears.co.uk/site/00_main_images/shimano_bicycle_system_components_-_93_page_073_main_image.jpg (component source 84). This resolves the old CT10/AT10 cassette-source-gap claim for these two bikes.
+- Ocelot 1740 remains unlinked under Cassette: C20 specifies MF-HG20 in Shimano's chart; wait for original Bianchi table/fitment evidence before changing the label/CSV. The original 1993 Bianchi product tables still have not been recovered/verified (see source caveat above).
+- Applied `/private/tmp/cassette-review-2026-11-09.sql`, shared with two Peugeot links and Mavic correction. All 81 CSVs compared: exactly those four links changed, 6066 -> 6070. SQL rerun zero rows. Cassette-label coverage **42/45 (93.3%)**.
