@@ -22,7 +22,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/look.md](known-catalogs/look.md) — Look (4 entries)
 - [known-catalogs/universal.md](known-catalogs/universal.md) — Universal brakes (1 entry)
 - [known-catalogs/clb.md](known-catalogs/clb.md) — CLB (1 entry, 1989 GO! and Top Line brochures)
-- [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (3 entries)
+- [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (4 entries)
 - [known-catalogs/sakae-ringyo.md](known-catalogs/sakae-ringyo.md) — Sakae Ringyo / SR (7 entries)
 - [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (1 entry)
 - [known-catalogs/dia-compe.md](known-catalogs/dia-compe.md) — Dia-Compe (5 entries)
