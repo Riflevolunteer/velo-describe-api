@@ -443,3 +443,19 @@
   "Gipiemme Crono Sprint White Laser Aero, Italy"; search_text identical to title. No generator references to 5794.
 - Supersedes the preceding note that White Laser remained separate. Transactional idempotent SQL and deleted-row
   backup: `/private/tmp/gipiemme-white-laser-merge-2026-11-09.sql`.
+
+## Azzurra / Azzurro seatpost merge (2026-11-09, user approved)
+
+- Deleted 5785 "Gipiemme Azzurra" (`source_id` 420BAC11-C9BB-409D-803F-EA9CBE6F2A6E) into 9848
+  "Gipiemme Azzurro SB 600". VeloBase photos show the same silver saddle clamp, black neck and black-filled shaft
+  flutes as SB 600 on p. 12 of the 1988 catalogue. The photographed box says "serie azzurra"; the catalogue says
+  "AZZURRO". Visual identification and packaging evidence, not an explicit manufacturer cross-reference of both names.
+- Preserved the Azzurra alternative name and packaging wording in 9848's description. Kept the catalogue title,
+  25.2-27.2 mm range, 1988-1988 years, group 26 and search_text. `source_ref` 287 -> 1 for the VeloBase packaging evidence.
+- Deleted-row backup: brand 21, category 18, group 83, NULL years/image, source_ref 1, description
+  "Gipiemme Azzurra, Italy", search_text "Gipiemme Azzurra". Neither row had bike_spec links; no generator references
+  to either ID. This supersedes the blanket decision in the 1988 catalogue entry to keep all Azzurra rows separate
+  for this seatpost only; no conclusion about the other Azzurra components.
+- Sources: https://www.velobase.com/Pages/ViewComponent.aspx?ID=420BAC11-C9BB-409D-803F-EA9CBE6F2A6E and
+  https://www.disraeligears.co.uk/site/00_main_images/gipiemme_catalogue_1988_-_page_012_main_image.jpg.
+- Transactional idempotent SQL and removed-row backup: `/private/tmp/gipiemme-azzurra-seatpost-merge-2026-11-09.sql`.
