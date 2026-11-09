@@ -459,3 +459,21 @@
 - Sources: https://www.velobase.com/Pages/ViewComponent.aspx?ID=420BAC11-C9BB-409D-803F-EA9CBE6F2A6E and
   https://www.disraeligears.co.uk/site/00_main_images/gipiemme_catalogue_1988_-_page_012_main_image.jpg.
 - Transactional idempotent SQL and removed-row backup: `/private/tmp/gipiemme-azzurra-seatpost-merge-2026-11-09.sql`.
+
+## Azzurra / Azzurro pedal merge (2026-11-09, user approved)
+
+- Deleted 3746 "Gipiemme Azzurra" (`source_id` 7F8C73EF-A184-4CC7-AC91-D7D2848AE421) into 9841
+  "Gipiemme Azzurro SB 300". VeloBase photos show the matching road-pedal body, black cage and rivet pattern,
+  with packaging marked "serie azzurra"; the 1988 catalogue p. 9 names SB 300 "AZZURRO". Visual identification
+  and packaging evidence, not an explicit manufacturer cross-reference. Photographed axle finishes differ;
+  no assertion of identical axle material. Supersedes keeping these two pedal rows separate under Azzurra/Azzurro.
+- Survivor description preserves the Azzurra name and packaging wording. Title, search_text, group 26 and
+  1988-1988 years retained; source_ref 287 -> 1 for the VeloBase packaging evidence.
+- Deleted-row backup: brand 21, category 14, group 83, NULL years/image, source_ref 1;
+  description "Gipiemme Azzurra, Italy", search_text "Gipiemme Azzurra". Neither row had bike_spec links;
+  no numeric or named generator overrides for either row. No bike-spec links inferred.
+- Sources: https://www.velobase.com/Pages/ViewComponent.aspx?ID=7F8C73EF-A184-4CC7-AC91-D7D2848AE421 and
+  https://www.disraeligears.co.uk/site/00_main_images/gipiemme_catalogue_1988_-_page_009_main_image.jpg.
+- Applied transactional idempotent SQL and deleted-row backup:
+  `/private/tmp/gipiemme-azzurra-pedal-merge-2026-11-09.sql`. One survivor updated, one duplicate deleted,
+  zero bike-spec rows repointed. Other Gipiemme pedal records unchanged.
