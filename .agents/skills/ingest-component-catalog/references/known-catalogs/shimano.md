@@ -2245,3 +2245,11 @@
 - 1987 Bianchi STRADA rear bike_spec 1390: NULL -> 7607. This is an identification inferred from the friction Tourney series, date and drivetrain; the Bianchi table itself prints no model code. Front 1389 and shifters 1391 remain unresolved, without guessing TY20/SY20 models introduced later.
 - Generator override is restricted to STRADA in 1987; other years remain unlinked. Generation succeeded: 15 bikes, 300 specs, 161 links. Only the 1987 Bianchi CSV has the bare Shimano Tourney value; 1985 Raleigh Tourney XT is a separate crank override.
 - Applied /tmp/tourney-1987-repair.sql; readback confirmed 7607 dates 1986-1990, source_ref 370, and bike_spec 1390 linked. /tmp/components-missing-years.tsv records 47 currently linked components with missing dates, affecting 186 specs. These remain an evidence audit, not inferred production ranges.
+
+## Light Action RD-L512 source gap resolved — 2026-11-09
+
+- User approved `/private/tmp/rear-derailleur-l512-review-2026-11-09.sql`.
+- Original Shimano E693A sheet visually inspected, footer `8508-E693A` (August 1985): RD-L512-SS short, RD-L512-GS long and RD-L512-SGS super long cage, with direct-attachment and adapter-type bracket assemblies. Source: https://www.disraeligears.co.uk/site/shimano_light_action_l512_series_exploded_view_-_e693a_august_1985.html; local image `/private/tmp/shimano-l512-1985.jpg`.
+- Added component **10970**, `Shimano RD-L512-SS / RD-L512-GS / RD-L512-SGS, Light Action`, brand 51, category 15, group 141, dates **1985-1985** (attestation only), source_ref **371**, UUID `a70e7ad3-509c-4e84-a09b-68dc939e327d`. No existing L512 row found. Model-family treatment follows existing L522/L523 rows. No weight or capacity inferred from the exploded diagram.
+- Linked the explicitly coded 1985 Raleigh Kodiak rear spec **3395** to 10970 and added a 1985-only generator override for `shimano light action l512sgs`. Spec text and bike-catalogue provenance retained.
+- SQL inserted one source and one component and updated one spec; rerun changed zero rows. All 81 CSVs regenerated: only the Kodiak link changed (6065 -> 6066 generated links). Live rear coverage **754 / 931 (81.0%)**, 177 unlinked. Before/after SQL: `/private/tmp/l512-before-generator.sql`, `/private/tmp/l512-after-generator.sql`.

@@ -922,3 +922,9 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
   `/tmp/raleigh-1983-silhouette.jpg` and
   `/tmp/raleigh-1983-silhouette-specs.jpg`, derailleur detail
   `/tmp/raleigh-1983-rd-detail.jpg`.
+
+## 1985 Kodiak RD-L512 link — 2026-11-09, user approved
+
+- Rear spec 3395, `Shimano Light Action L512SGS`, linked to new component 10970, `Shimano RD-L512-SS / RD-L512-GS / RD-L512-SGS, Light Action` (1985 only). Shimano's original exploded view E693A, footer 8508, explicitly confirms the SGS model. Component source_ref 371; bike-spec text and original source unchanged.
+- Evidence: https://www.disraeligears.co.uk/site/shimano_light_action_l512_series_exploded_view_-_e693a_august_1985.html. Source and component details are in the Shimano component notes.
+- Added a 1985-only override for `shimano light action l512sgs`. All 81 CSVs regenerated: only the Kodiak link changed, 6065 -> 6066 generated links. Applied `/private/tmp/rear-derailleur-l512-review-2026-11-09.sql`; rerun zero rows. Live rear coverage 754 / 931 (81.0%), 177 unlinked.

@@ -899,6 +899,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    'shimano light action l512sgs': [{ from: 1985, to: 1985, id: 10970 }], // 1985 Raleigh Kodiak: RD-L512-SGS, explicitly confirmed by Shimano E693A (August 1985)
     'gipiemme cronosprint': [{ from: 1982, to: 1982, id: 4260 }], // 1982 Battaglin Alessandro: Crono Sprint 801 CC (1982-86), rear of the 800CC set with the 802 DD front (2369) that Marostica links; not 4261 800DS (Economy set)
     'campagnolo athena': [{ to: 1991, id: 4092 }, { from: 1992, to: 1992, id: 4091 }], // Athena (1988-91) / Athena RS RD-01AT;/ 1992 Bianchi (JP): 1992-range row
     'shimano 600 ultegra 8 speed': 4467, // 1992 Bianchi Virata: RD-6401 (8-speed generation, 1992-97)
