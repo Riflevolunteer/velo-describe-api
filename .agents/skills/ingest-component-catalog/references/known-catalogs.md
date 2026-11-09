@@ -48,6 +48,8 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/sansin.md](known-catalogs/sansin.md) — Sansin / SunShine hubs (2 entries)
 - [known-catalogs/wolber.md](known-catalogs/wolber.md) — Wolber (1 entry)
 - [known-catalogs/vredestein.md](known-catalogs/vredestein.md) — Vredestein (1 entry)
+- [known-catalogs/hutchinson.md](known-catalogs/hutchinson.md) — Hutchinson HP22 (1982 / 1986 / 1989 bike catalogue evidence)
+- [known-catalogs/panaracer.md](known-catalogs/panaracer.md) — Panaracer Timbuk II (1989 Raleigh catalogue evidence)
 - [known-catalogs/stronglight.md](known-catalogs/stronglight.md) — Stronglight (5 entries)
 - [known-catalogs/gipiemme.md](known-catalogs/gipiemme.md) — Gipiemme (10 entries)
 - [known-catalogs/takagi.md](known-catalogs/takagi.md) — Takagi (1 entry)

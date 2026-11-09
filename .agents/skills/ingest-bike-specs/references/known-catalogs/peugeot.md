@@ -635,6 +635,7 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 
 ## 1986 Peugeot — `1986_peugeot_spec.csv` (FR, data_source 309: 32 bikes, 428 specs, 81 linked) and `1986_peugeot_us_spec.csv` (US, data_source 310: 16 bikes, 310 specs, 81 linked)
 
+- Tyre follow-up (2026-11-09, done): original technical table image 6 confirms Hutchinson HP22 700 x 22 for P10LS / PH10LS and HP22 for PH13 / PH20M Jubilé (PH20M omits maker). Added 10972 HP22 (700 x 22C), 1982-1989 attested (earliest 700C proof Dawes 1982 p.18), source_ref 320, and linked 14337 / 14357 / 14377 / 14415. Generator entries bike/year scoped. The same row covers Mont Blanc 1989 NL below; 27-inch HP22 is a different size, not merged. Component Hutchinson notes preserve full source URLs and judgement.
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1986.html (34 images, loaded 2026-10-30).
   Images 1-13 (1000 px, bikeboompeugeot.com watermark): French "Gamme Course" (a01 cover, a02-a05 photos with
   captions, a06-a07 racing spec table, a08 back cover) and sport / ville pages (a09 photo, a10 and a13 town, a11-a12
@@ -760,6 +761,7 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 
 ## 1989 Peugeot (NL) — `1989_peugeot_spec.csv` (NL, data_source 320: 17 bikes, 301 specs, 61 linked)
 
+- Tyre follow-up (2026-11-09, done): original printed p.30 wheel table confirms Mont Blanc HP22 700 x 22C, two-tone with reflective sidewalls. Maker not printed; identified by HP22 code and the explicit Hutchinson 1982 / 1986 tables. Spec 17209 -> new 10972 HP22 (700 x 22C), with a 1989 Mont Blanc generator entry. HP22 no longer a source gap.
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1989.html (loaded 2026-10-31). 81 images: 48
   bibibike.forumserv.com (all 404, as 1988) and 33 Blogger (1140 px, PeugeotShow.com watermark; the last two URLs are the
   same file). It is the Dutch "Peugeot Cycles 1989" (Vanderhulst Nederland B.V., Veenendaal; guilder prices), NOT a French

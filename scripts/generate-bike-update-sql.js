@@ -3778,6 +3778,24 @@ const COMPONENT_OVERRIDES = {
     'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
+    // 2026-11-09 tyre pass: original Peugeot 1986/1989, Raleigh 1989 and Bianchi 1992 tables.
+    // HP22 also existed in 27-inch: keep these 700C identifications scoped to the reviewed bikes.
+    'hutchinson hp 22 700 x 22': [
+      { from: 1986, to: 1986, bike: 'P 10 LS', id: 10972 },
+      { from: 1986, to: 1986, bike: 'PH 10 LS', id: 10972 },
+    ],
+    'hutchinson hp 22': [{ from: 1986, to: 1986, bike: 'PH 13', id: 10972 }],
+    'hp 22': [{ from: 1986, to: 1986, bike: "PH 20 M 'Jubilé'", id: 10972 }], // maker omitted, same HP22 code
+    'two tone reflective sidewalls hp 22 700 x 22c': [{ from: 1989, to: 1989, bike: 'Mont Blanc', id: 10972 }],
+    'panaracer timbuk ii 26 x 2': [
+      { from: 1989, to: 1989, bike: 'Avanti', id: 10973 },
+      { from: 1989, to: 1989, bike: 'Appalachian', id: 10973 },
+      { from: 1989, to: 1989, bike: 'Ozark', id: 10973 },
+    ],
+    'vittoria formula 1 tubular': [
+      { from: 1992, to: 1992, bike: 'Virata', id: 6875 },
+      { from: 1992, to: 1992, bike: 'Alfana', id: 6875 },
+    ],
     'panaracer record': null, // 1991 Bianchi Virata / Alfana: the only row is the 27" P-27RD (6841, 1980)
     // 1989-90 Bianchi Vittoria Zefir: the only Zefir rows are 1996-99 (10242, 10241, 10558, La Bicicletta Guida '96 / '99); nothing shows the 1989 tyre is the same, so no link before 1996 (user's call 2026-11-06).
     'vittoria zefir "22"': [{ to: 1995, id: null }], // 1989 Super Leggera / Giro

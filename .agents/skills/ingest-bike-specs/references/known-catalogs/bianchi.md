@@ -591,6 +591,7 @@
 
 ## 1992 Bianchi (JP) — `1992_bianchi_spec.csv` (8 bikes, 96 specs, 30 linked)
 
+- Tyre follow-up (2026-11-09, done): printed pp.20-21 ([Virata](https://2velo.com/wp-content/uploads/2014/03/1992-catalog-p2011.jpg), [Alfana](https://2velo.com/wp-content/uploads/2014/03/1992-catalog-p2111.jpg)) confirms Vittoria Formula-1 tubular, specs 19675 / 19687 -> existing 6875 Competition Formula Uno. Singular normalized wording now has 1992 bike-scoped overrides; existing plural 1990 Pista rule stays. No new Vittoria row or date changes. Compound 1989 Formula 1 and Juniore stays unlinked; 1991 / 1992 Nuovo Pro still lacks enough evidence to distinguish 260 from R.T.
 - Source (2026-11-04): https://2velo.com/bianchi-bicycle-catalog-90s/ `1992-catalog-p1711` .. `p2311.jpg` (7 scans, 400 px; the
   labibleduvelo copy adds one accessory page), printed pp. 17-23 of a larger Japanese catalogue (yen); `data_source` 359, country JP.
   p17 "'92 Road" opener, p18-p21 road bikes with English spec blocks (PRICE / WEIGHT / SIZE / FRAME-FORK / HANDLE BAR-STEM /

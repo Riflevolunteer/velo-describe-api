@@ -555,8 +555,9 @@
   II / Deore II / Royal / Touriste Biopace triples, Ozark / Chinook split
   cantilever + U-brake cells, Ozark M450/452 hubs, Deore XT II / Deore II
   pedals, Deore II headset, Isca / Raleigh Lightweight / Anatomic saddles, SR /
-  Sakae posts and stems, Panaracer Timbuk II, Skinside CST and generic tyres,
+  Sakae posts and stems, Skinside CST and generic tyres,
   Tange headsets, MKS AR-3.
+- Tyre follow-up (2026-11-09, done): original printed p.14, [Ebykr scan p13](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1989-raleigh-lightweight-catalog-p13.webp), confirms Panaracer Timbuk II 26 x 2 for Avanti / Appalachian / Ozark. Added component 10973 (1989 attestation, source 323), linked specs 18183 / 18200 / 18217 with bike/year-scoped generator entries. Timbuk II is no longer an open source gap. No later reissue construction details imported.
 - Regression: every other CSV regenerates with an identical linked-spec list
   (compared component ids, not just counts).
 
