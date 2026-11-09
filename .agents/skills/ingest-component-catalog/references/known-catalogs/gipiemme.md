@@ -407,3 +407,39 @@
     is the same part. 3004 `year_to` 1986 -> **1988**, description. 3012 "Sprint" (1980-1988, `source_ref` 262, bare) narrowed
     to **1982-1982**, `source_ref` 268 (1982 Battaglin catalogue): the unnumbered Marostica Sprint headset, possibly the forerunner
     of 500CE; kept apart rather than merged into 3004 (user's call). Not in the 1985 guide or the Oct 1984 catalogue.
+
+## Sprint seatpost duplicate merges (2026-11-09, user approved)
+
+- Photo-based matches against the numbered Cronosprint records and the c. 1986-87 catalogue (source 270, scan 007):
+  - Deleted 5792 "Gipiemme Sprint (type 1)" (`source_id` A0817DA8-6176-4BF8-BEDE-4D0116C5A45C) into 5788
+    "Gipiemme Crono Sprint 600DD": matching black neck/clamp construction and deep dark flutes.
+  - Deleted 5793 "Gipiemme Sprint (type 2)" (`source_id` D65A8520-A832-43A7-86B5-5A0A960DE014) into 5789
+    "Gipiemme Crono Sprint 600BA (fluted)": matching silver neck construction, black clamp and shallow flutes.
+- These are visual identifications, not a manufacturer statement equating the names. The Sprint-branded boxes do not
+  establish a separate part. The catalogue separately illustrates 600DD, 600BA, 600CA and Sprint 600SS; no claim that
+  either deleted row represents 600SS. This supersedes the earlier unresolved 600SS-versus-5792/5793 item.
+- Both deleted rows were VeloBase-sourced (`source_ref` 1), brand 21, category 18, group 126, NULL years/image,
+  search text "Gipiemme Sprint", and description equal to title plus ", Italy". Neither had bike_spec links or numeric
+  generator overrides. Survivor metadata, dates and source_ref retained; 5789 keeps its two bike_spec links.
+- The bare "gipiemme sprint" seatpost override remains null: a bike spec without a code cannot distinguish 600DD
+  from 600BA. Updated its comment to reference the surviving IDs. No new bike-spec links inferred from these merges.
+- Sources: https://velobase.com/Pages/ViewComponent.aspx?ID=A0817DA8-6176-4BF8-BEDE-4D0116C5A45C and
+  https://velobase.com/Pages/ViewComponent.aspx?ID=D65A8520-A832-43A7-86B5-5A0A960DE014, compared to
+  https://velobase.com/Pages/ViewComponent.aspx?ID=DDFC5946-8B06-428C-BEC7-BAF8A4E0999F and
+  https://velobase.com/Pages/ViewComponent.aspx?ID=A6BDFCFB-E221-47D8-893E-03DF6F302F8C; catalogue illustration:
+  https://www.disraeligears.co.uk/site/00_main_images/catalogo_gipiemme_-_8_times_world_champions_scan_007_main_image.jpg.
+- 5790 600CA Aero and 5794 White Laser Aero remain separate (White Laser is a finish variant of 600CA; no merge applied).
+- Idempotent transactional SQL: `/private/tmp/gipiemme-seatpost-merges-2026-11-09.sql`.
+
+## White Laser seatpost finish merge (2026-11-09, user approved)
+
+- Deleted 5794 "Gipiemme Crono Sprint White Laser Aero" (`source_id` 9373E121-BD4F-47D3-A758-9C770BCC9846)
+  into 5790 "Gipiemme Crono Sprint 600CA Aero". White Laser is the white finish of 600CA; VeloBase explicitly gives
+  model 600CA and links the two as variations. Photos show the white-finished aero upper section and black clamp.
+  Source: https://velobase.com/Pages/ViewComponent.aspx?Enum=105&ID=9373e121-bd4f-47d3-a758-9c770bcc9846.
+- Added "Also offered in the white White Laser finish." to 5790's description; kept the measured 248 g at 26.8 mm,
+  catalogue specification, title, search_text, group and 1980-1990 years. `source_ref` 269 -> 1 for the VeloBase finish evidence.
+- Deleted-row backup: brand 21, category 18, group 86, years 1980-1990, image NULL, source_ref 1; description
+  "Gipiemme Crono Sprint White Laser Aero, Italy"; search_text identical to title. No generator references to 5794.
+- Supersedes the preceding note that White Laser remained separate. Transactional idempotent SQL and deleted-row
+  backup: `/private/tmp/gipiemme-white-laser-merge-2026-11-09.sql`.

@@ -3275,7 +3275,7 @@ const COMPONENT_OVERRIDES = {
     // Judgement calls, 2026-10-30 (user's go-ahead).
     'sakae super light alloy with adjusting clamp': 5852, // 1981 Raleigh Super Course: SR RY-P1SL III, Royal-P1 Super Light (1970-82, SR catalogue), not the 1970 velobase 5854
     'suntour alloy pillar and clamp': [{ bike: 'MB 2 Canyon Express', id: 5935 }], // 1984 Peugeot MB 2: SunTour SP-2000, XC (1984-85 ATB post)
-    'gipiemme sprint': null, // 1982 Battaglin: type 1 or type 2 (5792 / 5793, undated stubs), nothing to choose on
+    'gipiemme sprint': null, // 1982 Battaglin: bare Sprint cannot distinguish 600DD (5788) from 600BA (5789); former type 1 / 2 stubs merged into these rows
     'royal alloy': null, // 1983 Peugeot UO 9: SR Royal smooth (5850) or fluted (5851), finish not printed
     'simplex 6164 dural': 5904, // 1987 Peugeot (FR) Perthus / Santé: Simplex SLJ6164
     'campagnolo chorus aero': 5742, // 1987 Peugeot (FR) Chorus: C0R2 Chorus (styled)
