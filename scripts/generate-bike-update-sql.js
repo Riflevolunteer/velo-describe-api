@@ -1575,7 +1575,7 @@ const COMPONENT_OVERRIDES = {
     'weinmann symmetric': [{ from: 1974, to: 1976, id: 8339 }],
     'shimano 600 ultegra 8 speed': 966, // 1992 Bianchi Virata: BR-6400 (user call 2026-11-04, as the 1990-91 Viratas; BR-6403 967 also fits)
     'shimano 105sc': [{ from: 1990, to: 1992, id: 960 }], // BR-1055-49; 1992 Bianchi Alfana (the 1056 group starts 1993)
-    'shimano rx100': [{ from: 1989, to: 1993, id: 1007 }], // BR-A550-49 / -57; BR-A551 (8754) only from 1995
+    'shimano rx100': [{ from: 1989, to: 1993, id: 1007 }], // BR-A550-49 / -57; conflicting BR-A551 catalogue designation merged into this row (2026-11-12)
     // 1991 / 1992 Bianchi (JP) catalogues
     'campagnolo c record aero levers': 560, // Delta C-Record
     'campagnolo chorus aero levers': 565, // BR-02CH Monoplaner

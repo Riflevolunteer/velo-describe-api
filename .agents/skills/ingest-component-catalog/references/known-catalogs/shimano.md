@@ -2262,3 +2262,32 @@
 - Linked 1993 Bianchi Europa **1570** and Nyala **1723** to existing **1195 CS-HG50**. Shimano 1993 p. 73 explicitly specifies CS-HG50 for Altus A10 and C10; Bianchi's recorded groups and CN-HG50 chains support these bike-fitment inferences. Manufacturer chart re-read: https://www.disraeligears.co.uk/site/00_main_images/shimano_bicycle_system_components_-_93_page_073_main_image.jpg (source 84). No component dates changed for 1195. New overrides restricted to each bike in 1993.
 - Ocelot **1740** stays unlinked under Cassette: the C20 chart says MF-HG20 freewheel, but original Bianchi table/fitment has not been recovered to settle relabelling. Sport SX 18494 and Tangent 18682 remain unresolved. No merges of generic Uniglide 1196 / 1200; differing photographed ranges, no duplicate proof. 1200's dates remain weak.
 - Applied `/private/tmp/cassette-review-2026-11-09.sql` with the Mavic CC9 correction. Exactly four bike links changed, all 81 CSVs compared (6066 -> 6070 generated links), rerun zero affected rows. Live Cassette **42/45 (93.3%)**, Freewheel **332/845 (39.3%)**. Evidence/comparison: `/private/tmp/cassette-before-links.tsv`, `/private/tmp/cassette-after-links.tsv`, `/private/tmp/cassette-generator.diff`.
+
+
+## Cleanup 2026-11-12: RX100 BR-A551 / BR-A550 overlap
+
+- User reviewed and approved `/tmp/rx100-brake-review/merge-brakes.sql`.
+  Deleted 8754 "Shimano BR-A551, RX100", source_id
+  `4f84ca38-c561-11f1-a2df-02fea3763e8d`, 1995-1999, source_ref 353
+  (La Bicicletta Guida '99). Retained 1007 "Shimano BR-A550-49 /
+  BR-A550-57, RX100", source_id `F2B0D26E-D4FC-4416-A9ED-C76223D34E4B`,
+  1990-1999, source_ref 77. Its description already includes the duplicate's
+  reach options, dual-pivot construction and 348g specification, plus an
+  independent 369g average measured weight.
+- Evidence: Shimano's 1996 catalogue calls the RX100 brake BR-A550 on p53
+  but BR-A551 on p57 (49/57mm, anodized forged aluminium, 348g).
+  Official technical archive identifies BR-A550 (EV-BR-A550-1036A and
+  service documents). No independent technical distinction was established;
+  treated BR-A551 as conflicting catalogue nomenclature, not a separate
+  attested version. This supersedes retaining both records in earlier loads.
+  Sources:
+  https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_-_96_page_53.html
+  https://www.disraeligears.co.uk/site/00_main_images/shimano_bicycle_system_components_-_96_page_57_main_image.jpg
+  https://si.shimano.com/en/manual/search?model=BR-A550
+- Checked schema references and generator: only bike_spec uses component_id
+  outside component_detail; no bike links or override values referenced 8754.
+  Corrected the generator comment that previously described it as a separate
+  post-1995 model. No matching logic or date ranges changed.
+- Load: link migration affected zero rows; DELETE affected exactly one.
+  Readback: 1007 retains both bike links; 8754 absent. Full pre-merge snapshot:
+  `/tmp/rx100-brake-review/brake-rows-before.tsv`. No other RX100 rows changed.
