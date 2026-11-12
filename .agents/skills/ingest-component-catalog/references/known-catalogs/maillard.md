@@ -190,3 +190,21 @@
 - Links +14 (1976-88 Peugeot), generator overrides in Pedals; null for 1984 "700C" and 1989 "700 SS".
 - Still no rows: CX 500 / 550 / 650 / 700 pedals (~80 specs, 1984-89 Peugeot), Atom 500 RA (5, 1982),
   Maillard 650 alloy.
+
+## Maillard 700 hub refs from the cycle-fittings catalogue (source 49), 2026-11-12
+
+- Tonton Vélo t=7509 ("MAILLARD, 1978 catalogue", Ti Claude, Dec 2011,
+  31 scans Scan10004-10034) is the same M. Maillard, Incheville catalogue
+  as source 49, and the likely origin of its "1978" identification.
+  Pp. 16-17 (Maillard 700 light alloy racing hubs) give refs the first
+  ingest left out.
+- Descriptions rewritten, source_ref 1 -> 49, years and titles unchanged:
+  3393 "Maillard 700, Professional (large flange)": front 2098.01; rear
+  2099.01 (5-speed, 122 mm) / 2099.03 (5/6-speed, 122 mm) / 2099.04 (PRO,
+  126 mm). 3394 "(low flange)": front 2291.01; rear 2292.01 / .03 / .04,
+  same spacings; velobase 560 g kept. Both 28/32/36 hole, precision ground
+  bearings, quick release. Old descriptions: "Maillard 700, Professional
+  (large flange), France" / "... (low flange), France, 560 grams".
+- Not changed: the "Professional" title wording (the catalogue calls them
+  "Maillard 700"; PRO is only the 126 mm rear spacing), but a retitle would
+  also need search_text; left for a later pass.
