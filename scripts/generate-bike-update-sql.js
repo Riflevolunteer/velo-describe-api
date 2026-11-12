@@ -2020,7 +2020,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 6400': [{ from: 1987, to: 1994, id: 3087 }], // 1987 Peugeot (FR) Puymorens: HP-6400
     'stronglight a9h': 3112, // 1987 Peugeot (FR) table: A9 H(eadset), as 'stronglight a9'
     // 1982 Battaglin: Gipiemme Cronospecial headset (the 1985-88 row; the 1982 sheet is earlier) and the Pista Special headset.
-    'gipiemme cronospecial': [{ from: 1982, to: 1988, id: 9137 }], // Crono Special
+    'gipiemme cronospecial': [{ bike: 'Vuelta', from: 1982, to: 1982, id: null }, { from: 1982, to: 1988, id: 9137 }], // Vuelta: 9137 starts 1984; 600180 alternative starts 1983, so no established 1982 variant. Preserve prior catalogue picks.
     'gipiemme pista special': [{ from: 1980, to: 1988, id: 3008 }], // Special (Pista)
     'ofmega gran premio': 9160, // 1987 Bianchi Pista: Ofmega 3100, Gran Premio (row dated 1985)
     'spidel d8': 3117, // 1980 Peugeot PRO 10: Stronglight D8 Extra Leger (row dated 1981-83, as the 1979 S7 pick)
@@ -3184,6 +3184,9 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // 1982 Battaglin Vuelta: 3752 ends 1980; 10966 Special 300BB starts 1984, with no part code printed.
+    // The final entry preserves the existing matcher result for other bikes.
+    'gipiemme special': [{ bike: 'Vuelta', from: 1982, to: 1982, id: null }, { id: 3752 }],
     // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
     'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 3971 }],
     'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 3971 }],
@@ -3540,6 +3543,9 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1982 Battaglin Vuelta: 1383 Record Super Star ends 1980; bare Record does not establish Extra 50 Record.
+    // The final entry preserves the existing matcher result for other bikes.
+    'regina record': [{ bike: 'Vuelta', from: 1982, to: 1982, id: null }, { id: 1383 }],
     // 1987 Bianchi: its five specs call this "Regina C Record"; De Rosa's c. 1984 C-Record bike specifies a Regina CX-S chain, and Campagnolo's 1988 compatibility table lists CX-S for Record/Super Record. Map the Bianchi shorthand to Regina Extra CX / CX-S.
     'regina c record': [{ from: 1987, to: 1987, id: 1384 }],
     // 1991 / 1992 Bianchi (JP) catalogues
@@ -3881,7 +3887,7 @@ const COMPONENT_OVERRIDES = {
     // Perfect was SunTour's touring line (New Winner was the racing block).
     'sun tour wide ratio 14 18 23 30 34t': 2245, // SunTour 1100-1106 / PT-5000, Perfect (5-speed)
     // Freewheel link pass 2026-10-26 (from /linkCoverage).
-    'regina oro': 2194, // 1982 Battaglin: Regina Oro (6 speed), as the 1975 Motobecane / 1983 Raleigh
+    'regina oro': [{ bike: 'Vuelta', from: 1982, to: 1982, id: null }, { id: 2194 }], // Vuelta sheet gives no speed count or variant; preserve earlier catalogue picks.
     // 2194's description is "the Extra 6-speed in Oro quality"; 2182 is the 5-speed Extra Oro.
     'regina extra oro 6 speed': 2194, // 1978 Bianchi Specialissima Super-Leggera / Campione del Mondo CX
     'regina extra oro 6 speed or alloy 6 speed on request': 2194, // 1978 Bianchi Specialissima Barcellona: the standard fit
@@ -3913,6 +3919,9 @@ const COMPONENT_OVERRIDES = {
     'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
+    // 1982 Battaglin Vuelta: 9255 Trofeo 250 starts 1984; the sheet prints neither model number nor casing.
+    // The final entry preserves the existing matcher result for other bikes.
+    'vittoria trofeo': [{ bike: 'Vuelta', from: 1982, to: 1982, id: null }, { id: 9255 }],
     // 2026-11-09 tyre pass: original Peugeot 1986/1989, Raleigh 1989 and Bianchi 1992 tables.
     // HP22 also existed in 27-inch: keep these 700C identifications scoped to the reviewed bikes.
     'hutchinson hp 22 700 x 22': [

@@ -17,8 +17,8 @@
   Arena (Gipiemme Cronospecial, 1,125,000), Alessandro (Gipiemme Sprint-group, 615,000), Marostica (415,000), Super Pista
   (track, 685,000; no derailleurs, freewheel, brakes or bottle cage). Prices went into Extras with the Cobra bottle
   cage; toe clips and straps share one "Toe Clips" cell.
-- Left out: **Turismo** (mixte city bike: fenders, chain guard, dynamo, bell; out of scope) and **Vuelta** (price list
-  only, L. 600,000, no sheet, so no specs).
+- Left out: **Turismo** (mixte city bike: fenders, chain guard, dynamo, bell; out of scope) and initially **Vuelta** (price list
+  only in that scan; full sheet found and loaded 2026-11-12, below).
 - Transcribed as printed: brakes read "Gipiemme Modolo Professional / Kronos / Spidi / Sporting" (only Kronos has a
   single DB row, 870 Modolo Kronos, 1983-85); "Vittoria C.G.", "Nisi Solidal / Corsa / Ekip", "Regina Oro" chains
   and freewheels. The frame is stored as "Columbus S.L. / K.L. / Z / P.S.".
@@ -40,3 +40,47 @@
 - Several linked rows start after the catalogue (9137 headset 1985-88, 3351 hub 1985, 9227 / 9228 rims 1985+): the
   same parts, so a component pass could move their `year_from` earlier.
 - Regression: all 61 other catalogues regenerated with identical link counts.
+
+
+## 1982 Vuelta — added 2026-11-12 (bike 1185, existing source 268)
+
+- User explicitly requested loading the Vuelta. A fuller 17-page copy of the
+  same catalogue supplies its photo (PDF page 12) and written spec sheet
+  (page 13): https://www.bikecatalogs.com/document/2782, PDF at
+  https://www.bikecatalogs.com/download/2782?download=1. Embedded PDF source:
+  https://bulgier.net/pics/bike/Catalogs/Battaglin/. Last page explicitly
+  prints the same 1981-82 price list; this is not an additional model year.
+- Saved source PDF and rendered Vuelta sheet under `/tmp/battaglin-search/`.
+  Added Vuelta to `bike_specs/1982_battaglin_spec.csv` without changing the
+  six existing rows. CSV backup, one-model CSV and reviewed SQL:
+  `/tmp/battaglin-vuelta-review/1982_battaglin_before.csv`,
+  `1982_battaglin_spec.csv`, and `vuelta.sql` in that directory.
+- One Road Racing bike, 19 specs, seven links, all using existing labels and
+  source 268. Frame material preserved as "Columbus 3 Tubi"; price L. 600,000
+  and Cobra bottle cage in Extras; Christophe clips and Battaglin straps
+  share Toe Clips. No colours, sizes, gearing or individual part codes
+  inferred from the photograph.
+- Links: Gipiemme Special crank 1595 / rear derailleur 4264 / hubs 3352;
+  Cronosprint front derailleur 2369; Nisi Corsa Stretto rims 9228;
+  Cinelli 1/A stem 6489; Concor Supercorsa saddle 5547. All seven rows'
+  date ranges include 1982.
+- Explicit Vuelta/1982 null overrides withhold five initial matcher picks:
+  Cronospecial headset 9137 starts 1984 and alternative 10819 is dated 1983;
+  Special pedals 3752 end 1980 while 10966 starts 1984; Record chain 1383
+  ends 1980 and Extra 50 Record is not explicitly named; Oro freewheel 2194
+  assumes six speeds/variant not printed; Trofeo 250 tyre 9255 starts 1984
+  and the sheet gives no 250 code. Existing picks on other bikes preserved.
+  Seatpost, Spidi brakes, spokes, brand-only bars, clips and extras also text.
+- Regression before appending Vuelta: all 83 existing CSV outputs combined
+  byte-identical before/after overrides (1078 bikes / 18106 specs / 6253
+  links). Node syntax and git whitespace checks passed.
+- Load affected exactly one bike and 19 specs; no existing rows changed.
+  Re-run of all 88 statements affected zero rows. Readback confirmed bike
+  and all 19 specs use source 268. Battaglin now 7 bikes / 129 specs /
+  78 links, still all 1982. Earlier six bikes retain their prior counts.
+- Other-year search: a 2012 forum thread mentions 1983-84 sheets and a
+  purported 1987 catalogue, but the original documents were not located:
+  https://www.bikeforums.net/classic-vintage/850825-battaglin-history.html.
+  The July 1984 Bicisport advert was inspected; its text names component
+  brands without a bike model, so no bike was created from it:
+  https://www.disraeligears.co.uk/site/bicisport_1984_july_-_battaglin.html.
