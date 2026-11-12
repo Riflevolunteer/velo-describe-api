@@ -3308,6 +3308,10 @@ const COMPONENT_OVERRIDES = {
     'lyotard 136 with reflectors': [{ from: 1982, to: 1982, id: 3801 }],
     'lyotard 136': [{ from: 1989, to: 1989, id: 3801 }], // 1989 Peugeot: 3801 year_to 1983 -> 1989 (judgement call)
     'lyotard 79r lightweight with reflector christophe toe clips and straps': [{ from: 1982, to: 1982, id: 3819 }], // 1982 Peugeot: Lyotard 79 (1970-84); "R" unexplained (judgement call)
+    // 2026-11-12: Lyotard 77R (10979), from the Tonton Velo Lyotard catalogue (data_source 380).
+    'lyotard 77 r': [{ from: 1982, to: 1983, id: 10979 }], // 1982 Peugeot
+    'lyotard 77r with reflector toe clips and straps': [{ from: 1982, to: 1983, id: 10979 }], // 1982 Peugeot
+    'lyotard 77r with reflectors': [{ from: 1982, to: 1983, id: 10979 }], // 1983 Peugeot (CA)
     'sr sampson fxp 100 clipless': [{ from: 1989, to: 1989, id: 3934 }], // 1989 Bianchi: SR SP-Comp / FXP-100 (year_to 1988 -> 1989)
     'sr mtp 126': [{ from: 1989, to: 1989, id: 9755 }], // 1989 Bianchi: SR PL-MTP-126BL, Low Fat (year_from 1993 -> 1989; judgement call)
     'sakae sp 362 alloy platform': [{ from: 1984, to: 1984, id: 3932 }], // 1984 Raleigh: SR SP-362 (year_to 1980 -> 1984; judgement call)
