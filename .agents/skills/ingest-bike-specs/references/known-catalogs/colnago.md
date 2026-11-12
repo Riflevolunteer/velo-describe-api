@@ -39,6 +39,18 @@
   Fantastic 11 / 6, De Luxe 11 / 5, Maxim 11 / 0. No existing label order,
   bike, component or specification rows changed during the load.
 
+- Maxim linking follow-up (2026-11-12, user approved and applied): printed
+  "Shimano 400 STI" interpreted as Exage 400LX, not Deore LX. Six guarded
+  updates filled existing NULL links: FD-M400 7589, RD-M400 7588,
+  FC-M400-SG 7591, BR-M351 / M352 7590, PD-M350 7200, integrated
+  ST-M050 / M050-S controls 7585 on Shifters. Group-default picks, not
+  individually printed part codes. Seatpost and separate Brake Levers stay
+  unlinked. Generator overrides limited to Maxim / 1992. All 82 CSVs
+  regenerated before/after: only these six Maxim mappings changed, total
+  links 6097 -> 6103; 1992 Colnago now 23 links. Load affected exactly six
+  rows; database readback confirmed all six component IDs. Reviewed SQL:
+  `/tmp/colnago-maxim-review/maxim-links.sql`.
+
 Source for both: https://2velo.com/colnago-bicycle-catalogs/ (a WordPress
 gallery of 146 scanned pages in nine groups; images are served via
 i0.wp.com, `?w=1400` gives a readable scan). Only two groups carry component
