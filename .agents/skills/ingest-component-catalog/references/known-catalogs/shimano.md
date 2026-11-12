@@ -2291,3 +2291,18 @@
 - Load: link migration affected zero rows; DELETE affected exactly one.
   Readback: 1007 retains both bike links; 8754 absent. Full pre-merge snapshot:
   `/tmp/rx100-brake-review/brake-rows-before.tsv`. No other RX100 rows changed.
+
+
+## RX100 label clarification 2026-11-12
+
+- User requested explicitly labelling the short-cage A551. Retitled 10876
+  from "Shimano RD-A551, RX100" to "Shimano RD-A551-SS, RX100" and rebuilt
+  search_text as "Shimano RD-A551-SS RX100". Existing 28T capacity / 13T
+  front difference identifies the short-cage row. No dates, specifications,
+  IDs or provenance changed; source_ref remains 365 (1998 US catalogue).
+  Load affected one row; readback confirmed the title and search text.
+- Kept 4533 RD-A551-GS separate. 4532 already combines RD-A550-GS and
+  RD-A550-SS; no merge or split requested. Standard and white FC-A550
+  crank rows (1838 / 1839) retained: Shimano 1991 p39 explicitly offers
+  an optional white finish.
+- Applied SQL: `/tmp/rx100-brake-review/label-a551-short-cage.sql`.
