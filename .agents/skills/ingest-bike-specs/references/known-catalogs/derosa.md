@@ -74,3 +74,41 @@
   C-Record Friction (1985-91) by one-off UPDATE (crecord-era-fix.sql),
   since the Retro-Friction 2nd gen row starts 1987.
 
+
+## c. 1991 advertisements — `1991_derosa_spec.csv` (loaded 2026-11-12)
+
+- Source: https://labibleduvelocataloguesderosa.blogspot.com/p/de-rosa-1991.html,
+  two original De Rosa ads, archived as 1991. Local scans:
+  `/tmp/derosa-1991-scan0.jpg` and `/tmp/derosa-1991-scan1.jpg`;
+  transcription `/tmp/derosa-1991-transcription.json`.
+- Neither ad visibly prints a publication year or an official model name.
+  Keep 1991 as the archive-attributed year, not a confirmed printed date.
+  The headings "SLX C-Record" and "Extra-Light TIG" are descriptive variant
+  titles, not asserted De Rosa model names. Both photographs show complete
+  road bikes. No numerical sizes, colours, weights or gear counts supplied.
+- Ad 1 explicitly describes hand construction in Italy, made-to-measure
+  dimensions and angles, investment-cast lugs, double-butted Columbus SLX
+  and Campagnolo C/Record components. Ad 2 explicitly describes oversized
+  Columbus Extra-Light tubes, hand construction in the De Rosa workshop,
+  TIG welding, variable angles and unspecified Campagnolo components.
+  Do not copy the C-Record designation from ad 1 into ad 2.
+- CSV: 2 bikes, 10 existing labels, 13 specs, 6 component links. SLX C-Record
+  has 10 specs / 6 links; Extra-Light TIG has 3 specs / 0 links. Sizes on
+  ad 1 only; colours and weights blank on both. Market not explicitly
+  stated, so source country is NULL despite the Italian text/address.
+- Six ad-1 component entries are explicitly an inference from the named
+  C-Record group, following prior De Rosa group fan-outs: front 2283,
+  rear 4133 R010 (1990-91), crank 1482 (1987-94), brakes 560 Delta,
+  levers 214 Power Grade, headset 2954 304/104. Every selected row spans
+  1991. No shifter mode, hub configuration, pedal variant or post length
+  inferred; those fields remain absent. No specifications identified solely
+  from photographs. Ad 2's maker-only Campagnolo stays unlinked.
+- Generator and overrides unchanged; no cross-catalog regression required.
+  Generated and reviewed every link with `summarize-bike-sql.js`; CSV has
+  two rows, unique titles and consistent columns, no overlength cells.
+- User-approved load: `/tmp/derosa-1991-review.sql`; readable summary
+  `/tmp/derosa-1991-summary.txt`. Inserted one data_source, two bikes and
+  13 specs; six component links confirmed. Second execution affected zero
+  rows throughout. Read-back: 1984 = 3 bikes / 48 specs / 23 links;
+  1989 = 1 bike / 19 specs / 10 links; 1991 = 2 bikes / 13 specs / 6 links.
+  No existing bikes or component records changed.
