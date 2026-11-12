@@ -581,6 +581,19 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1991 Colnago: printed group defaults, scoped to this catalogue year.
+    // Gold uses the specific Delta Gold brake row; other links identify families.
+    // The unresolved Super Record 8V wording is held out of this ingest.
+    // No 6/7-speed Syncro or later Ergopower inferred for the 8V lever specs.
+    'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 2511 }],
+    'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 2511 }],
+    'campagnolo c record 8v syncro': [{ from: 1991, to: 1991, id: 2283 }],
+    'campagnolo c record syncro gold plated': [{ from: 1991, to: 1991, id: 2283 }],
+    'campagnolo chorus 8v syncro': [{ from: 1991, to: 1991, id: 2286 }],
+    'campagnolo olympus 8v': [{ from: 1991, to: 1991, id: 2302 }],
+    'campagnolo centaur 8v': [{ from: 1991, to: 1991, id: null }],
+    'shimano deore dx sti': [{ from: 1991, to: 1991, id: 2487 }],
+    'shimano deore xt sti': [{ from: 1991, to: 1991, id: 2501 }],
     // 1992 Colnago MTB groups, preserving the printed STI wording.
     'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 2501 }],
     'shimano dx sti': [{ bike: 'Fantastic', from: 1992, to: 1992, id: 2487 }],
@@ -906,6 +919,16 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
+    'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 4505 }],
+    'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 4505 }],
+    'campagnolo c record 8v syncro': [{ from: 1991, to: 1991, id: 4133 }],
+    'campagnolo c record syncro gold plated': [{ from: 1991, to: 1991, id: 4133 }],
+    'campagnolo chorus 8v syncro': [{ from: 1991, to: 1991, id: 4108 }],
+    'campagnolo olympus 8v': [{ from: 1991, to: 1991, id: 4128 }],
+    'campagnolo centaur 8v': [{ from: 1991, to: 1991, id: 4104 }],
+    'shimano deore dx sti': [{ from: 1991, to: 1991, id: 4480 }],
+    'shimano deore xt sti': [{ from: 1991, to: 1991, id: 4493 }],
     // 1992 Colnago: contemporary triple-chainset group versions.
     'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 4493 }],
     'shimano dx sti': [{ bike: 'Fantastic', from: 1992, to: 1992, id: 4480 }],
@@ -1570,6 +1593,16 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
+    'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 993 }],
+    'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 993 }],
+    'campagnolo c record 8v syncro': [{ from: 1991, to: 1991, id: 560 }],
+    'campagnolo c record syncro gold plated': [{ from: 1991, to: 1991, id: 579 }],
+    'campagnolo chorus 8v syncro': [{ from: 1991, to: 1991, id: 565 }],
+    'campagnolo olympus 8v': [{ from: 1991, to: 1991, id: 577 }],
+    'campagnolo centaur 8v': [{ from: 1991, to: 1991, id: 564 }],
+    'shimano deore dx sti': [{ from: 1991, to: 1991, id: 7660 }],
+    'shimano deore xt sti': [{ from: 1991, to: 1991, id: 985 }],
     // 1974-76 Raleigh Super Tourer: the model-level Symetric family, rather
     // than either colour-label variant. The bike catalogues attest it in 1974.
     'weinmann symetric side pull alloy': [{ from: 1974, to: 1976, id: 8339 }],
@@ -2078,6 +2111,17 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'shimano ultegra': [{ bike: 'Superpiù Ultegra', from: 1991, to: 1991, id: 1789 }, { bike: 'Conic SLX 91 Ultegra', from: 1991, to: 1991, id: 1789 }],
+    // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
+    'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 1820 }],
+    'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 1820 }],
+    'campagnolo c record 8v syncro': [{ from: 1991, to: 1991, id: 1482 }],
+    'campagnolo c record syncro gold plated': [{ from: 1991, to: 1991, id: 1482 }],
+    'campagnolo chorus 8v syncro': [{ from: 1991, to: 1991, id: 1487 }],
+    'campagnolo olympus 8v': [{ from: 1991, to: 1991, id: 1499 }],
+    'campagnolo centaur 8v': [{ from: 1991, to: 1991, id: 1486 }],
+    'shimano deore dx sti': [{ from: 1991, to: 1991, id: 1809 }],
+    'shimano deore xt sti': [{ from: 1991, to: 1991, id: 7578 }],
     // 1992 Colnago groups; ring sizes are not printed. Rows cover the
     // contemporary group crank variants, without asserting tooth counts.
     'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 7578 }],
@@ -2847,6 +2891,14 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
+    'shimano ultegra': [{ bike: 'Superpiù Ultegra', from: 1991, to: 1991, id: 6144 }, { bike: 'Conic SLX 91 Ultegra', from: 1991, to: 1991, id: 6144 }],
+    // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
+    'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 6166 }],
+    'campagnolo c record 8v syncro': [{ from: 1991, to: 1991, id: null }],
+    'campagnolo c record syncro gold plated': [{ from: 1991, to: 1991, id: null }],
+    'campagnolo chorus 8v syncro': [{ from: 1991, to: 1991, id: null }],
+    'campagnolo olympus 8v': [{ from: 1991, to: 1991, id: null }],
+    'campagnolo centaur 8v': [{ from: 1991, to: 1991, id: null }],
     'shimano 105sc (1055) sis': 6133, // 1991 Bianchi Alfana: SL-1055 105SC (6134 BCAI merged into 6133 2026-11-06), as the 1990 'shimano 105 sis'
     // 1991 / 1992 Bianchi (JP) catalogues
     'suntour xc ltd accushift plus top pull multimount': 6310, // SL-XL00 thumb
@@ -3009,6 +3061,10 @@ const COMPONENT_OVERRIDES = {
     ],
   },
   'Shifting Brake Levers': {
+    // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
+    'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 6365 }],
+    'shimano deore dx sti': [{ from: 1991, to: 1991, id: 6359 }],
+    'shimano deore xt sti': [{ from: 1991, to: 1991, id: 7577 }],
     // 1992 Colnago: STI denotes the integrated Rapidfire controls;
     // component rows cover their ST-M09x / M07x / M060 variants.
     'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 7577 }],
@@ -3029,6 +3085,17 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    'shimano ultegra': [{ bike: 'Superpiù Ultegra', from: 1991, to: 1991, id: 418 }, { bike: 'Conic SLX 91 Ultegra', from: 1991, to: 1991, id: 418 }],
+    // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
+    'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 436 }],
+    'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: null }],
+    'campagnolo c record 8v syncro': [{ from: 1991, to: 1991, id: 214 }],
+    'campagnolo c record syncro gold plated': [{ from: 1991, to: 1991, id: 214 }],
+    'campagnolo chorus 8v syncro': [{ from: 1991, to: 1991, id: 220 }],
+    'campagnolo olympus 8v': [{ from: 1991, to: 1991, id: 227 }],
+    'campagnolo centaur 8v': [{ from: 1991, to: 1991, id: null }],
+    'shimano deore dx sti': [{ from: 1991, to: 1991, id: null }],
+    'shimano deore xt sti': [{ from: 1991, to: 1991, id: null }],
     // 1992 Colnago STI controls are represented by the integrated Shifters
     // links; do not invent a separate BL model from the group name.
     'shimano xt sti': null,
@@ -3117,6 +3184,16 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
+    'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 3971 }],
+    'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 3971 }],
+    'campagnolo c record 8v syncro': [{ from: 1991, to: 1991, id: 3693 }],
+    'campagnolo c record syncro gold plated': [{ from: 1991, to: 1991, id: 3693 }],
+    'campagnolo chorus 8v syncro': [{ from: 1991, to: 1991, id: 3700 }],
+    'campagnolo olympus 8v': [{ from: 1991, to: 1991, id: null }],
+    'campagnolo centaur 8v': [{ from: 1991, to: 1991, id: null }],
+    'shimano deore dx sti': [{ from: 1991, to: 1991, id: 3964 }],
+    'shimano deore xt sti': [{ from: 1991, to: 1991, id: 3968 }],
     // 1992 Colnago: same group defaults as the contemporary Bianchi
     // entries; the brochure gives no pedal code or SPD claim.
     'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 3968 }],
@@ -3302,6 +3379,17 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    'shimano ultegra': [{ bike: 'Superpiù Ultegra', from: 1991, to: 1991, id: 5889 }, { bike: 'Conic SLX 91 Ultegra', from: 1991, to: 1991, id: 5889 }],
+    // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
+    'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 5893 }],
+    'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 5893 }],
+    'campagnolo c record 8v syncro': [{ from: 1991, to: 1991, id: 5737 }],
+    'campagnolo c record syncro gold plated': [{ from: 1991, to: 1991, id: 5737 }],
+    'campagnolo chorus 8v syncro': [{ from: 1991, to: 1991, id: 5742 }],
+    'campagnolo olympus 8v': [{ from: 1991, to: 1991, id: 5750 }],
+    'campagnolo centaur 8v': [{ from: 1991, to: 1991, id: 5740 }],
+    'shimano deore dx sti': [{ from: 1991, to: 1991, id: null }],
+    'shimano deore xt sti': [{ from: 1991, to: 1991, id: 5892 }],
     // 1992 Colnago: only XT has an established contemporary group post.
     'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 5892 }],
     'shimano dx sti': null,
@@ -3925,6 +4013,9 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // 1991 Colnago Krono: the catalogue names Aero, but the exact Aero row
+    // ends in 1988; do not substitute Aerodynamic / Aero Elite by name alone.
+    'ambrosio aero (spoked wheel option)': [{ from: 1991, to: 1991, id: null }],
     // 2026-11-06: Ukai 1980 catalogue rows (source 354), year_to 1980 -> 1986 from the 1986 Raleigh / Miyata catalogues.
     'ukai 20a 700c': [{ from: 1986, to: 1986, id: 5192 }], // 1986 Raleigh Competition / Supercourse / Grand Prix: Ukai Model 20A (No. 4094, 700x25C)
     'ukai model 20 a 700c hard anodized': [{ from: 1986, to: 1986, id: 5192 }], // 1986 Miyata 912

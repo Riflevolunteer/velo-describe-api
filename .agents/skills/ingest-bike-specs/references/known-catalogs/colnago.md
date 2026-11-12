@@ -332,3 +332,66 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
 - This resolves the catalogue-location lead from MTB Timeline's Olympus /
   Fantastic references: https://mtbtimeline.com/wiki/colnago/start.
   No CSV, SQL, data_source, bikes or specs created in this search pass.
+
+
+## 1991 Colnago — loaded 2026-11-12 (source 377)
+
+- CSV: `bike_specs/1991_colnago_spec.csv`; scratch copy and reproducible
+  builder `/tmp/colnago-1991-search/1991_colnago_spec.csv` / `build-csv.js`.
+  Reviewed SQL `/tmp/colnago-1991-search/1991-colnago-review.sql`;
+  summary `review-summary.txt`. No 1991 Colnago bikes were present at review.
+- 22 complete build variants, 351 specs, 148 links, 17 existing labels:
+  16 road/time-trial builds and six MTB builds. C35 Collection / Competition
+  each C-Record Gold or Dura-Ace 8V; Master Krono and Carbitubo Krono each
+  C-Record 8V / Dura-Ace 8V STI; Carbitubo Decor each C-Record / Dura-Ace;
+  Superpiu Ultegra / Chorus; Conic SLX Ultegra / Dura-Ace / Chorus / C-Record;
+  Olympus 91, Master Ibex Zaffiro DX / Smeraldo XT / Topazio Centaur,
+  Fantastic 91 Oversize DX and Superlativ 91 Oversize XT.
+- Confirmed Olympus uses Campagnolo Olympus 8V, not Euclid; the initial
+  search inventory above was provisional and is superseded. Fantastic DX
+  read across English/Italian text; German lettering is blurrier. No
+  components identified from photographs. Only securely legible colour codes
+  kept; omitted ambiguous Olympus R10/R16, Fantastic P55/P56 and Superpiu
+  044 code. Country left NULL: multilingual brochure, market unstated.
+- Excluded scans 06-08 as colour/frame/construction pages. Their named frame
+  material can support the corresponding complete bike (Conic SLX), without
+  inserting framesets. Explicit track alternatives on the Krono and Carbitubo
+  pages retained in Extras as previous Colnago ingests, not extra builds.
+  A possible fifth Conic "Super Record 8V" build in the English body conflicts
+  with the four-option heading and is not securely corroborated elsewhere:
+  retained in raw transcription uncertainty notes, excluded from CSV.
+- Group fan-out follows the established Colnago approach. Links are period
+  family defaults, not independently printed part codes. Gold C-Record uses
+  specific Delta Gold 579; other family links preserve the brochure's stated
+  gold finish/exceptions in Extras. C-Record FD 2283 / RD 4133 / crank 1482 /
+  brakes 560 / lever 214 / pedals 3693 / post 5737; Chorus FD 2286 / RD 4108 /
+  crank 1487 / brake 565 / lever 220 / pedals 3700 / post 5742.
+- Dura-Ace FD 2511 / RD 4505 / crank 1820 / brake 993 / post 5893;
+  plain 8V control default SL-7402 6166 + BL-7402 436, explicit STI ->
+  ST-7400 6365 on Shifters, separate Brake Levers unlinked. Ultegra auxiliary
+  overrides bike-scoped: crank 1789 / post 5889 / BL-6403 418 / SL-6400 6144.
+  Its FD 2478 / RD 4466 / brake 966 reuse existing overrides.
+- DX FD 2487 / RD 4480 / crank 1809 / brake 7660 / pedals 3964 / STI 6359;
+  XT FD 2501 / RD 4493 / crank 7578 / brake 985 / pedals 3968 / STI 7577 /
+  post 5892 where the text does not separately describe a Colnago-painted post.
+  Oversize models' painted posts stay descriptive. Cantilever wording supports
+  cantilever defaults over U-II options.
+- Olympus FD 2302 / standard LG RD 4128 / crank 1499 / post 5750 / brake 577 /
+  lever 227. Centaur RD 4104 / crank 1486 / post 5740 / brake 564;
+  FD/lever/pedal variants unresolved. Eight-speed Campagnolo shifters withheld
+  rather than linking explicitly 6/7-speed rows. Olympus shifters/pedals and
+  DX post unresolved. Unnumbered Look-type pedals retained without a model link.
+- Remaining plain text: bars/stems, Ambrosio or Ambrosio-Colnago rims, Alpina /
+  Formula spokes, Gommitalia tyres, San Marco/Concor saddles and alternatives.
+  Standard Rolls and Ambrosio Aero rows end before 1991: no wrong-era link or
+  guessed Aero Elite/Aerodynamic substitution. Regal -> 5561.
+- Full regeneration: all 82 prior catalogue outputs (43,958 SQL statements)
+  byte-identical after removing the newly added 1991 statements. 83 files
+  including this CSV. All 54 distinct proposed component IDs have compatible
+  year bounds. CSV has 22 unique models and no values over 255 characters.
+  JS syntax and whitespace checks passed. User approved loading on 2026-11-12.
+- Load created source 377, 22 bikes and 351 specs, including all 148 reviewed
+  links; no existing labels or bikes changed. Provenance readback confirmed
+  every new bike/spec points at source 377, country NULL. Re-ran all 930 SQL
+  statements: every INSERT/UPDATE affected zero rows. Colnago totals now
+  82 bikes / 1330 specs / 684 links across 1979, 1986-88, 1991 and 1992.
