@@ -72,3 +72,57 @@
   linked specs). Applied `/tmp/cinelli-1986-record-corsa-brake-link.sql`,
   one row affected, read-back confirmed 583, rerun affected zero rows.
   Live brake coverage 626 -> 627 of 1013 specs.
+
+## c. 1994 Cinelli — `1994_cinelli_spec.csv` (loaded 2026-11-12)
+
+- User selected the catalog posted as "1982 CINELLI CATALOG" at
+  https://saarf.london/2012/08/22/1982-cinelli-catalogue/ . This heading is
+  incorrect: spread 2 captions Seoul 1988 and spreads 9-10 mention the 1991
+  Compasso d'Oro. The 1982 on the cover credits Mario Schifano's artwork.
+  Working publication date 1994: the owner of an identical catalog labels
+  its cover, Laser spread, pursuit-team spread and historical Supercorsa
+  photo as 1994 at https://oli-roadworks.blogspot.com/2010/12/ . Stratos,
+  ErgoPower, STX S.E. and 8-speed XT are consistent. No printed publication
+  date found; retain this qualification when discussing the year.
+- Source: 22 JPEG spreads; table is spread 12, Italian model descriptions
+  spread 11, English spread 13, current model photos spreads 15-16 and
+  19-21. Copies `/tmp/cinelli-1982-{1..22}.jpg`. Bilingual Italian/English;
+  market not explicitly stated, so source country remains NULL.
+- Eight eligible bikes: road Genius Strada, Supercorsa, Unica, Proxima;
+  MTB Genius Soft Machine, Genius Machine, Argento Vivo, Velociraptor.
+  Passatore explicitly described as a hybrid: excluded. Frameset-only
+  pages 17-18/21, historical Supercorsa 1960 photo (spread 14), and Laser
+  historical montage (spread 9) do not create additional bike rows.
+- 19 existing labels, 145 specs, 43 component links. Prepared SQL:
+  `/tmp/cinelli-1994-review.sql`; readable component-title summary:
+  `/tmp/cinelli-1994-summary.txt`. User approved loading on 2026-11-12.
+- Source separately names shifters, brake levers, brakes, both derailleurs,
+  cranksets and pedals; no groupset fan-out added. RUOTA LIBERA is stored
+  as Cassette for these 7-/8-speed freehub groups. ErgoPower specified in
+  the model prose is carried on road Shifters; standalone brake-lever
+  matches are blocked where an integrated control is meant.
+- Era corrections: Record crank -> 7036 FC-01RE, not old 144-BCD 1496;
+  Record/Chorus brakes -> 7076/7077 1994 dual-pivot; XT eight-speed group
+  -> M737 crank 8669, front 2503, rear 8668, brakes 986, rear hub 3552.
+  STX S.E. crank/rear/control -> 1843/4537/6369; no guessing later STX or
+  Alivio rows dated 1995+. Chorus rear/post -> 7055/7041. Chorus ErgoPower
+  -> 6345 EC-12RE CG (also used for Chorus); Veloce -> 6349.
+- Variant judgments left unlinked: Record front/rear/ErgoPower (multiple
+  contemporary variants); Chorus front and Record/Chorus pedals; generic
+  Mavic Ceramic; Shamal (the matcher picked a 1997-98 12-HPW row);
+  Bontrager saddle with illegible suffix; Grammo Ahead (later 1996 row),
+  Oyster (DB starts 1996), other ambiguous cockpit/saddle/tyre/cassette
+  descriptions. Named Gamma rims use 4950 Gamma Strada, though its DB
+  year_to is 1992; this catalog attests the name later, with no component
+  date edits included in this draft.
+- Table reread corrections: Genius Machine pedals read SPD 737 like Soft
+  Machine, Proxima rim reads Gamma, Argento Vivo stem reads 3T Procrom
+  Ahead. Velociraptor saddle suffix remains omitted; uncertainty is kept
+  here rather than displayed as a bike spec.
+- Regression: regenerated all 83 pre-existing CSVs, compared every spec
+  tuple and component_id: all 18,125 existing specs unchanged. New-catalog
+  generation and `node --check` / `git diff --check` pass.
+- Loaded after user approval: one data_source, eight bikes and 145 specs
+  inserted; 43 specs link to components. Second execution affected zero
+  rows throughout. Read-back: 1986 = 6 bikes / 79 specs / 52 links;
+  1994 = 8 bikes / 145 specs / 43 links. No component rows changed.

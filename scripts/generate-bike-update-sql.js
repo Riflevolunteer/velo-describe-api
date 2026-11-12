@@ -783,7 +783,7 @@ const COMPONENT_OVERRIDES = {
     'suntour x 1 top pull': [{ from: 1990, to: 1990, id: 2655 }], // X-1 Chroma (1990)
     'suntour radius': [{ from: 1990, to: 1992, id: 2640 }], // FD-RA00-SSH clamp-on (Eros frame has no braze-on)
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
-    'campagnolo chorus': [{ to: 1991, id: 2286 }, { from: 1992, to: 1994, id: 7040 }], // FD-01FCH, Chorus (1987-91) / FD-01SCH Chorus RS (1992 Bianchi JP)
+    'campagnolo chorus': [{ from: 1994, to: 1994, id: null }, { to: 1991, id: 2286 }, { from: 1992, to: 1994, id: 7040 }], // FD-01FCH, Chorus (1987-91) / FD-01SCH Chorus RS (1992 Bianchi JP)
     'shimano 600 ultegra': 2478, // Shimano FD-6400, 600 Ultegra
     // 1982 Bianchi US racing brochure (saarf.london).
     'shimano 600 gs': 7435, // Shimano EC-600 / FD-6100, Shimano-600 (1977-82; the 600 GS group front)
@@ -798,7 +798,7 @@ const COMPONENT_OVERRIDES = {
     // "990/980" names the budget group; the DB's 1985-era front is the 980 (990 front exists only as the 1987+ century finish).
     'campagnolo 990 980': 2279, // Strada / Bambina: Campagnolo 980
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
-    'campagnolo record': [{ to: 1969, id: 2305 }, { from: 1970, to: 1977, id: 2297 }, { from: 1978, to: 1982, id: 2299 }, { from: 1983, to: 1985, id: 2300 }], // 1052/1 first body / second body / 1052/NT 3-hole narrow band / 0104007 clip-on
+    'campagnolo record': [{ from: 1994, to: 1994, id: null }, { to: 1969, id: 2305 }, { from: 1970, to: 1977, id: 2297 }, { from: 1978, to: 1982, id: 2299 }, { from: 1983, to: 1985, id: 2300 }], // 1052/1 first body / second body / 1052/NT 3-hole narrow band / 0104007 clip-on
     // 1986 Colnago Catalogo generale group fan-outs.
     'campagnolo super record 30nnale': 2313, // Regal 30nnale: same 1052/SR as the plain Super Record group
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
@@ -893,7 +893,7 @@ const COMPONENT_OVERRIDES = {
     'shimano model 105': 2466, // Shimano FD-A105, 105 Golden Arrow (1983-86)
     'shimano z204': 2543, // Shimano FD-Z204-HS
     'shimano z206': 2544, // Shimano FD-Z206-HS, Z-Series
-    'shimano deore xt': [{ bike: "VTT 4 L 'Alpine Express'", id: 2499 }, { bike: 'Europe Express', from: 1989, to: 1989, id: 2499 }, { to: 1989, id: 2497 }, { from: 1990, to: 1993, id: 2501 }], // FD-M700 (1983-86) / 1990 Bianchi: FD-M735
+    'shimano deore xt': [{ from: 1994, to: 1994, id: 2503 }, { bike: "VTT 4 L 'Alpine Express'", id: 2499 }, { bike: "Europe Express", from: 1989, to: 1989, id: 2499 }, { to: 1989, id: 2497 }, { from: 1990, to: 1993, id: 2501 }], // FD-M700 (1983-86) / 1990 Bianchi: FD-M735
     'suntour cyclone mkiii': 2629, // SunTour FD-3300, Cyclone (No. 61 / 62)
     'suntour superbe pro': [{ from: 1982, id: 2652 }], // FD-2000 endless band (1982-86 per Catalog No. 59 / No. 61); links the 1983 Bianchi
     'suntour ag tech': 2609, // SunTour FD-2800, AG Tech
@@ -919,6 +919,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
+    'shimano stx se': [{ from: 1994, to: 1994, id: 4537 }],
     // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
     'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 4505 }],
     'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 4505 }],
@@ -1126,7 +1128,7 @@ const COMPONENT_OVERRIDES = {
     'suntour x 1': [{ from: 1990, to: 1992, id: 4776 }], // RD-X101-GXB; matcher took the 1989 X-1 Chroma
     'suntour radius': [{ from: 1990, to: 1992, id: 4753 }], // RD-RA00-SSB
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
-    'campagnolo chorus': [{ to: 1991, id: 4108 }, { from: 1992, to: 1992, id: 4109 }], // Chorus (short cage), 1988-91 / RD-01CH (1992 Bianchi JP)
+    'campagnolo chorus': [{ from: 1994, to: 1994, id: 7055 }, { to: 1991, id: 4108 }, { from: 1992, to: 1992, id: 4109 }], // Chorus (short cage), 1988-91 / RD-01CH (1992 Bianchi JP)
     'shimano 600 ultegra': 4466, // Shimano RD-6400, 600 Ultegra
     // 1982 Bianchi US racing brochure (saarf.london).
     'shimano 600 gs': 7110, // Shimano DC-210 / RD-6101, 600 GS (1975-82)
@@ -1154,7 +1156,7 @@ const COMPONENT_OVERRIDES = {
     'shimano positron': null,
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
-    'campagnolo record': [{ from: 1970, to: 1981, id: 4125 }, { from: 1982, to: 1984, id: 4126 }, { from: 1985, to: 1987, id: 4127 }], // 1020/A Nuovo Record v3 / v4 / v5 (DB dates)
+    'campagnolo record': [{ from: 1994, to: 1994, id: null }, { from: 1970, to: 1981, id: 4125 }, { from: 1982, to: 1984, id: 4126 }, { from: 1985, to: 1987, id: 4127 }], // 1020/A Nuovo Record v3 / v4 / v5 (DB dates)
     // 1986 Colnago Catalogo generale group fan-outs.
     'campagnolo c record 180': 4096, // 0102050, C-Record first generation (1985-86), as 1986 Cinelli Record Corsa
     'campagnolo triomphe': 4155, // Triomphe (1st version, 1984-86); 0102057 leisure long cage is 1986-only and the Gentleman Sport runs a double
@@ -1284,7 +1286,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z503': 4545, // Shimano RD-Z503, Z-Series
     'shimano z503 gs': 4545, // Shimano RD-Z503, Z-Series
     'shimano z505gs': 4546, // Shimano RD-Z505, Z-Series
-    'shimano deore xt': [{ bike: "VTT 4 L 'Alpine Express'", id: 4491 }, { bike: 'Europe Express', from: 1989, to: 1989, id: 4491 }, { to: 1989, id: 4490 }, { from: 1990, to: 1993, id: 4493 }], // RD-M700 (Version 2, 1985-86) / 1990 Bianchi: RD-M735-SGS
+    'shimano deore xt': [{ from: 1994, to: 1994, id: 8668 }, { bike: "VTT 4 L 'Alpine Express'", id: 4491 }, { bike: "Europe Express", from: 1989, to: 1989, id: 4491 }, { to: 1989, id: 4490 }, { from: 1990, to: 1993, id: 4493 }], // RD-M700 (Version 2, 1985-86) / 1990 Bianchi: RD-M735-SGS
     'suntour cyclone mkiii': 4739, // SunTour RD-6000, Cyclone (S), No. 62 (Dec 1984)
     'suntour superbe pro': [{ to: 1983, id: 4766 }, { from: 1984, id: 4768 }], // 1979-83 row keeps the 1983 Bianchi pick; friction row 1983-86 for 1985 Raleigh
     // 1985 Raleigh Grand Prix: short-cage RD-4300. 1985 Bianchi Randonneur 700 runs a 50/45/34 triple with a 14-28 block, so the long-cage GT.
@@ -1355,7 +1357,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105sc (1055)': 3527, // FH-1055-HG / HB-1055-F
     'shimano deore dx': 3542, // FH-M650 / HB-M650-F
     'shimano deore lx': 3544, // FH-M550
-    'shimano deore xt': 3551, // FH-M732 / HB-M730-F
+    'shimano deore xt': [{ from: 1994, to: 1994, id: 3552 }, { id: 3551 }], // FH-M732 / HB-M730-F
     // 1978 Falcon San Remo Equipe 76: "Campagnolo L/F Q.R. Hubs" = Record high flange 1035.
     'campagnolo large flange quick release': [{ from: 1960, to: 1988, id: 3260 }],
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
@@ -1593,6 +1595,9 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
+    'campagnolo stratos': [{ from: 1994, to: 1994, id: 581 }],
+    'shimano deore xt': [{ from: 1994, to: 1994, id: 986 }],
     // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
     'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 993 }],
     'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 993 }],
@@ -1907,12 +1912,7 @@ const COMPONENT_OVERRIDES = {
     'super alfa': 1181, // Zeus Super Alfa 71
     // Without an override the only substring hit is the 1980s Record O.R.
     // 1973 Raleigh -> pre-CPSC 2040; 1990s (Bianchi 1993) -> BR-14RE dual pivot.
-    'campagnolo record': [
-      { to: 1977, id: 573 }, // Campagnolo 2040, Record (standard reach, pre-CPSC)
-      { from: 1978, to: 1986, id: 572 }, // Campagnolo 2040, Record (standard reach, post-CPSC)
-      { from: 1990, to: 1993, id: 7038 }, // BR-02RE, Record (1992-93); 1993 Bianchi MG Team was on BR-14RE (1995-2000)
-      { from: 1994, id: 578 }, // Campagnolo BR-14RE, Record (dual pivot with group name)
-    ],
+    'campagnolo record': [{ from: 1994, to: 1994, id: 7076 }, { to: 1977, id: 573 }, { from: 1978, to: 1986, id: 572 }, { from: 1990, to: 1993, id: 7038 }, { from: 1994, id: 578 }],
     // 1974 Motobecane.
     'universal 61 center pull': 1081, // Universal Mod. 61
     // 1975 Motobecane.
@@ -1942,7 +1942,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600': [{ to: 1983, id: 963 }, { from: 1984, to: 1985, id: null }, { from: 1986, to: 1987, id: 972 }, { from: 1988, id: null }], // centre-pull / BR-6208 600EX (1987 Bianchi Limited)
     'shimano at 50 cantilever': [{ from: 1985, id: 1003 }], // Shimano BR-AT50 (1987 Bianchi Volpe); from 1985 for the 1985 Raleigh (row widened 2026-10-30)
     // 1993 Bianchi. Bare "Chorus" substring-hits a 2000s 10-speed row.
-    'campagnolo chorus': [{ from: 1987, to: 1999, id: 565 }], // Campagnolo BR-02CH, Chorus Monoplaner (1988-93; from 1988 for the 1988 Bianchi); from 1987 for the 1987 Peugeot (FR) Chorus
+    'campagnolo chorus': [{ from: 1994, to: 1994, id: 7077 }, { from: 1987, to: 1999, id: 565 }], // Campagnolo BR-02CH, Chorus Monoplaner (1988-93; from 1988 for the 1988 Bianchi); from 1987 for the 1987 Peugeot (FR) Chorus
     'shimano ultegra': 966, // Shimano BR-6400, 600 Ultegra
     'shimano rx100 aero levers': 1007, // Shimano BR-A550, RX100
     'shimano xtr': 1018, // Shimano BR-M900, XTR M900
@@ -2111,6 +2111,10 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
+    'campagnolo veloce': [{ from: 1994, to: 1994, id: 7062 }],
+    'shimano deore xt': [{ from: 1994, to: 1994, id: 8669 }],
+    'shimano stx se': [{ from: 1994, to: 1994, id: 1843 }],
     'shimano ultegra': [{ bike: 'Superpiù Ultegra', from: 1991, to: 1991, id: 1789 }, { bike: 'Conic SLX 91 Ultegra', from: 1991, to: 1991, id: 1789 }],
     // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
     'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 1820 }],
@@ -2385,7 +2389,7 @@ const COMPONENT_OVERRIDES = {
     'shimano exage lt 46 36 26t': 7718, // Shimano FC-M320, Exage LT
     'shimano exage es 46 36 26t': 1834, // Shimano FC-M520, Exage ES
     // 1974 Motobecane.
-    'campagnolo record': 1496, // Campagnolo 1049, (Nuovo) Record Strada v4 (BCD 144)
+    'campagnolo record': [{ from: 1994, to: 1994, id: 7036 }, { id: 1496 }], // Campagnolo 1049, (Nuovo) Record Strada v4 (BCD 144)
     'stronglight 49 cotterless 42 52 alloy': 1895, // Stronglight 49D (Depose)
     // 1975 Motobecane.
     'campagnolo record 42 53': 1496,
@@ -2464,6 +2468,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
+    'bontrager': [{ from: 1994, to: 1994, id: null }],
+    'bontrager titanio': [{ from: 1994, to: 1994, id: null }],
     // 2026-11-06 Avocet on 1991-92 Bianchi, as the 1990 models (5258 year_to 1990 -> 1992, 5250 1990 -> 1991).
     'bianchi avocet leather racing i': [{ from: 1991, to: 1991, id: 5258 }], // 1991 Grizzly: Avocet Racing I, as the 1990 Grizzly "Avocet Leather Racing-1"
     'avocet racing i leather black': [{ from: 1992, to: 1992, id: 5258 }], // 1992 Virata / Alfana
@@ -2761,6 +2768,11 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
+    'cinelli titanio grammo': [{ from: 1994, to: 1994, id: 6497 }],
+    'cinelli grammo titanio ahead': [{ from: 1994, to: 1994, id: null }],
+    'cinelli x a': [{ from: 1994, to: 1994, id: 6503 }],
+    'cinelli oyster': [{ from: 1994, to: 1994, id: null }],
     'nitto dynamic iii 90 degree': null, // 1991 Bianchi Virata / Alfana: no Dynamic III row (8562 is the 1980 Dynamic, 6614 the 1989 Dynamic-2)
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'cinelli type 1e alloy': 6490, // Cinelli 1E (the only 1E row, dated 1980-86)
@@ -2935,7 +2947,7 @@ const COMPONENT_OVERRIDES = {
     'shimano santé': [{ from: 1987, to: 1989, id: 6190 }], // SL-5000
     'shimano deore xt sis': [{ from: 1987, to: 1989, id: 6159 }], // SL-M730
     'campagnolo chorus': [{ from: 1988, to: 1991, id: 7027 }], // A281, the only Chorus lever of the period
-    'shimano deore xt': [{ from: 1986, to: 1986, id: 6158 }], // 1986 Raleigh Crested Butte / Portage: SL-M700, Deore XT (1983-86)
+    'shimano deore xt': [{ from: 1994, to: 1994, id: null }, { from: 1986, to: 1986, id: 6158 }], // 1986 Raleigh Crested Butte / Portage: SL-M700, Deore XT (1983-86)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
     'huret new success alloy front and rear with ratchet levers': [{ from: 1987, to: 1990, id: 6110 }], // ARIS New Success (type 1) 1987-90; 6111 is a duplicate title
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
@@ -3061,6 +3073,11 @@ const COMPONENT_OVERRIDES = {
     ],
   },
   'Shifting Brake Levers': {
+    // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
+    'campagnolo record ergopower': [{ from: 1994, to: 1994, id: null }],
+    'campagnolo chorus ergopower': [{ from: 1994, to: 1994, id: 6345 }],
+    'campagnolo veloce ergopower': [{ from: 1994, to: 1994, id: 6349 }],
+    'shimano stx se': [{ from: 1994, to: 1994, id: 6369 }],
     // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
     'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 6365 }],
     'shimano deore dx sti': [{ from: 1991, to: 1991, id: 6359 }],
@@ -3085,6 +3102,9 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
+    'campagnolo chorus': [{ from: 1994, to: 1994, id: null }, { id: 220 }],
+    'campagnolo veloce': [{ from: 1994, to: 1994, id: null }],
     'shimano ultegra': [{ bike: 'Superpiù Ultegra', from: 1991, to: 1991, id: 418 }, { bike: 'Conic SLX 91 Ultegra', from: 1991, to: 1991, id: 418 }],
     // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
     'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 436 }],
@@ -3184,6 +3204,11 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
+    'campagnolo chorus': [{ from: 1994, to: 1994, id: null }, { id: 3700 }],
+    'campagnolo veloce': [{ from: 1994, to: 1994, id: 7069 }],
+    'shimano spd 737': [{ from: 1994, to: 1994, id: 7666 }],
+    'shimano spd m323': [{ from: 1994, to: 1994, id: null }],
     // 1982 Battaglin Vuelta: 3752 ends 1980; 10966 Special 300BB starts 1984, with no part code printed.
     // The final entry preserves the existing matcher result for other bikes.
     'gipiemme special': [{ bike: 'Vuelta', from: 1982, to: 1982, id: null }, { id: 3752 }],
@@ -3344,7 +3369,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super leggera pista': 3715, // Campagnolo 1038/a, Record Pista Superleggari (SL)
     // 1974 Motobecane. Without this the only substring hit is the 1983 50th
     // Anniversary pedal.
-    'campagnolo record': 3708, // Campagnolo 1037, Record Strada
+    'campagnolo record': [{ from: 1994, to: 1994, id: null }, { id: 3708 }], // Campagnolo 1037, Record Strada
     // 1981 Kalkhoff.
     'campagnolo super record': 3716, // Campagnolo 4021, Super Record Strada
     'dura ace ex': 3974, // Shimano PD-7200, Dura-Ace EX
@@ -3453,7 +3478,7 @@ const COMPONENT_OVERRIDES = {
     'laprade 606': [{ from: 1970, to: 1979, id: 5816 }], // PY 10 CP: Laprade Brevete 606 (1970-79)
     'simplex slj 4160': [{ from: 1978, to: 1978, id: 7340 }], // PX 10 LE: Simplex 4160 (1978)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
-    'campagnolo chorus': [{ from: 1987, to: 1991, id: 5742 }, { from: 1992, to: 1992, id: 7041 }], // C0R2 / SP-CH Chorus RS (1992 Bianchi Super Leggera; 1992 Road Range)
+    'campagnolo chorus': [{ from: 1994, to: 1994, id: 7041 }, { from: 1987, to: 1991, id: 5742 }, { from: 1992, to: 1992, id: 7041 }], // C0R2 / SP-CH Chorus RS (1992 Bianchi Super Leggera; 1992 Road Range)
     'campagnolo athena alloy': [{ from: 1988, to: 1989, id: 5742 }], // 1989 Peugeot (FR) Dolomites: C0R2, as below
     'campagnolo athena': [{ from: 1988, to: 1989, id: 5742 }, { from: 1990, to: 1991, id: 5736 }, { from: 1992, to: 1992, id: 7049 }], // C0R2 / SP-10AT (v2) / SP-AT Athena RS (1992 Bianchi Giro; 1992 Road Range)
     'shimano deore xt': [{ from: 1989, to: 1993, id: 5892 }], // SP-M730
@@ -4022,6 +4047,9 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
+    'campagnolo shamal': [{ from: 1994, to: 1994, id: null }],
+    'mavic ceramic': [{ from: 1994, to: 1994, id: null }],
     // 1991 Colnago Krono: the catalogue names Aero, but the exact Aero row
     // ends in 1988; do not substitute Aerodynamic / Aero Elite by name alone.
     'ambrosio aero (spoked wheel option)': [{ from: 1991, to: 1991, id: null }],
