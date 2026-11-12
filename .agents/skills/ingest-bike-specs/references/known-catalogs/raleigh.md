@@ -929,3 +929,8 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
 - Rear spec 3395, `Shimano Light Action L512SGS`, linked to new component 10970, `Shimano RD-L512-SS / RD-L512-GS / RD-L512-SGS, Light Action` (1985 only). Shimano's original exploded view E693A, footer 8508, explicitly confirms the SGS model. Component source_ref 371; bike-spec text and original source unchanged.
 - Evidence: https://www.disraeligears.co.uk/site/shimano_light_action_l512_series_exploded_view_-_e693a_august_1985.html. Source and component details are in the Shimano component notes.
 - Added a 1985-only override for `shimano light action l512sgs`. All 81 CSVs regenerated: only the Kodiak link changed, 6065 -> 6066 generated links. Applied `/private/tmp/rear-derailleur-l512-review-2026-11-09.sql`; rerun zero rows. Live rear coverage 754 / 931 (81.0%), 177 unlinked.
+
+## 1986 Grand Prix QS400N link — 2026-11-12, user approved
+
+- Products1986 printed p.4 (source209) explicitly names QS400N quick-release caliper,38–48mm,132g per caliper. New component10978,1986 only; spec8243 `Dia-compe QS 400N` linked from NULL. Exact generator override ranged1986. QS500N682 is a distinct43–57mm brake and was not used.
+- All85 CSVs compared: only this mapping and the1985 Bianchi DC400N mapping changed;6309->6311 generated links. Live DB comparison confirms the same two links. Idempotent SQL rerun zero changes.1985 Crested Butte crank3564 stays unlinked. Evidence/SQL: `/private/tmp/existing-source-review/`.

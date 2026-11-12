@@ -271,3 +271,15 @@
   "147g measured", 700 "350g pair actual"), and kept the 1994 dating notes
   (657, 681, 8083, 8108). 268 now reads "used as tandem stoker hoods".
   source_ref left unchanged (no new evidence). Specs and years untouched.
+
+## DC400N / QS400N held-source review — 2026-11-12 (proposed, not applied)
+
+- Re-read Products1986, source209, printed p.4 (`catalog/yoshigai86/1986dc_07.jpg`): DC400N is 38–48mm, 117g; QS400N is 38–48mm, 132g, quick release. Weights are per caliper. Printed p.5 (scan08) separately lists DC400N C/RIII,132g; do not conflate that centering version with QS400N.
+- Live DB has no exact DC400N/QS400N rows. 681 DC500N and682 QS500N are 43–57mm /128g and136g respectively, so leave them intact. Proposed two N-Series rows (brand73/category3/group123), source_ref209; DC400N1985–86 from 1985 Bianchi fitment (source144), QS400N1986 only. Proposed NULL links:5797 Rekord26,1985 and8243 Raleigh Grand Prix,1986. Generic679 “Dia-Compe400” is not positively identified as the N model and remains unchanged.
+- Prepared `/private/tmp/existing-source-review/dia-compe-proposed.sql` (two guarded inserts, two guarded NULL-link updates), not executed. After approval/application, resolve inserted ids and add exact year-ranged generator overrides (`dia compe dc400n`,1985–86; `dia compe qs 400n`,1986); compare all loaded CSVs and expect only those two mappings. No component ids allocated; no dates, coverage counts, links or generator overrides changed in this review.
+
+## DC400N / QS400N applied on user approval — 2026-11-12
+
+- Loaded the preceding proposed SQL: new10977 `Dia-Compe DC400N, N-brakes`,1985–86,38–48mm/117g per caliper; new10978 `Dia-Compe QS400N, N-brakes (quick release)`,1986,38–48mm/132g. Brand73/category3/group123; source_ref209. Stable source UUIDs:b1eadd5f-0a22-4225-8614-f2dc44209356 and ab9e7499-5cb7-48a0-9c86-b2f6f9c46c12 respectively.
+- Linked5797 (1985 Bianchi Rekord26)->10977;8243 (1986 Raleigh Grand Prix)->10978. DC400N first attestation is Bianchi source144; catalogue source209 supplies model/weight/reach. Generator overrides ranged1985–86 and1986 respectively. Existing679/681/682 unchanged.
+- All85 CSVs regenerated and compared against pre-load output: exactly two new mappings,6309->6311 generated links. Live snapshots across18,283 specs confirm only5797/8243 changed from NULL. Idempotent SQL rerun: zero affected rows. Files: `/private/tmp/existing-source-review/dia-compe-proposed.sql`, `before-generator.sql`, `after-generator.sql`, `generator.diff`, `before-links.tsv`, `after-links.tsv`.

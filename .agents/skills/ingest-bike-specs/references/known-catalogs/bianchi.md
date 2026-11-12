@@ -699,3 +699,8 @@
 - Source chart: https://www.disraeligears.co.uk/site/00_main_images/shimano_bicycle_system_components_-_93_page_073_main_image.jpg (component source 84). This resolves the old CT10/AT10 cassette-source-gap claim for these two bikes.
 - Ocelot 1740 remains unlinked under Cassette: C20 specifies MF-HG20 in Shimano's chart; wait for original Bianchi table/fitment evidence before changing the label/CSV. The original 1993 Bianchi product tables still have not been recovered/verified (see source caveat above).
 - Applied `/private/tmp/cassette-review-2026-11-09.sql`, shared with two Peugeot links and Mavic correction. All 81 CSVs compared: exactly those four links changed, 6066 -> 6070. SQL rerun zero rows. Cassette-label coverage **42/45 (93.3%)**.
+
+## 1985 Rekord26 DC400N link — 2026-11-12, user approved
+
+- Products1986 printed p.4 (source209) explicitly names DC400N,38–48mm,117g per caliper. New component10977,1985–86 (earlier attestation is this Bianchi sheet,source144); spec5797 `Dia-Compe DC400N` linked from NULL. Exact generator override ranged1985–86. DC500N681 is a distinct43–57mm brake and was not used.
+- All85 CSVs compared: only this mapping and the1986 Raleigh QS400N mapping changed. Live DB comparison confirms the same two links; no spec identities or values changed. SQL rerun zero changes. Evidence/SQL: `/private/tmp/existing-source-review/`.

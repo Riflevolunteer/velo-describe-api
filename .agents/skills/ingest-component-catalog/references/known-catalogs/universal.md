@@ -22,3 +22,9 @@
   from the drawings); 9703 lever 304 (1974, with the Super 68) absent here, where the 68 comes with 306; 1086 CX and
   1083 Mod. 77 already span 1978 (refs 97 / 98, 99/A / 99/P not added to their full descriptions); Mod. 125 (row 1075, 1976-1988)
   and Squadra absent. No inserts or deletes.
+
+## Sport ART.130/131 held-source review — 2026-11-12 (read-only)
+
+- Re-read source 339, printed pp.11–12 (blog scans15–16). 130 is small front, 43–56mm; 131 standard front, 44–62mm; 132 deep front and 133 standard rear, 56–72mm. 134 is front/rear, 65–83mm; 136/S and /D are left/right bracket versions. Thus 130/131 is not a front/rear pair.
+- 1981 Bianchi Super Turismo spec6595 “Universal ART.130/131” remains NULL. The catalogue drawing shares the double UNIVERSAL lettering of DB1069, but its VeloBase main photo (8F3C3AAD-4CE0-4121-9F42-B3B6A47EC166.jpeg) shows bare calipers without measurable reach/model markings. Arm lettering alone does not identify the numbered option. No new duplicate Sport row, no retitle/date widening or link to 1069/1071. Need measured reach/back markings or a Bianchi parts document.
+- Catalogue images and comparison photo: `/private/tmp/existing-source-review/`. No SQL applied.
