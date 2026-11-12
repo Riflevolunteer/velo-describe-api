@@ -51,6 +51,17 @@
   rows; database readback confirmed all six component IDs. Reviewed SQL:
   `/tmp/colnago-maxim-review/maxim-links.sql`.
 
+- De Luxe brake follow-up (2026-11-12, user approved and applied): linked
+  Brakes to 7695 BR-C510 / C510-B, using the BR-C510-B cantilever listed
+  for Deore LX in Shimano's 1992 catalogue. This supersedes the original
+  unlinked decision based on BR-M550 ending in 1991. Integrated brake levers
+  remain represented by 7581 ST-M060 / ST-M060-S on Shifters; separate Brake
+  Levers stays NULL. Override limited to De Luxe / 1992. All 82 CSVs compared:
+  only this brake mapping changed, total links 6103 -> 6104; 1992 Colnago
+  now 24 links. Load affected exactly one row; database readback confirmed
+  7695. Reviewed SQL: `/tmp/colnago-deluxe-review/de-luxe-brakes.sql`.
+  Period source: https://www.retromtb.pl/pdf/shimano92.pdf.
+
 Source for both: https://2velo.com/colnago-bicycle-catalogs/ (a WordPress
 gallery of 146 scanned pages in nine groups; images are served via
 i0.wp.com, `?w=1400` gives a readable scan). Only two groups carry component
