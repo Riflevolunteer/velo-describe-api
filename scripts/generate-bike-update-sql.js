@@ -2452,6 +2452,14 @@ const COMPONENT_OVERRIDES = {
     'stronglight 49 d dural triple 32 x 42 x 52': 1893, // Stronglight 49 Tri
     // 1974 Motobecane (Grand Touring). The steel cottered Nervar has no DB row.
     'nervar cotterless 40 52 alloy chainwheel rings with alloy guard': 1653, // Nervar (3-pin, alloy/cotterless)
+    // 2026-11-12: Nervar 2020 (10980) / 3020 (10981), from the Motobecane May 1985 spares catalogue (data_source 381).
+    'nervar 2020 forged alloy 42x52t': [{ from: 1987, to: 1987, id: 10980 }], // 1987 Peugeot P6 / P16 Iseran
+    'nervar 2020 42 x 52t alloy': [{ from: 1986, to: 1986, id: 10980 }], // 1986 Peugeot P 8 / P 18 C Avoriaz
+    'nervar 3020 42 x 52t': [{ from: 1984, to: 1984, id: 10981 }], // 1984 Peugeot PS 10 L / PGN 10
+    'nervar 3020 42 x 52t forged type': [{ from: 1986, to: 1986, id: 10981 }], // 1986 Peugeot PH 10 LE
+    'nervar 3020 forged alloy 42x52t': [{ from: 1987, to: 1987, id: 10981 }], // 1987 Peugeot PH 10 LE
+    'nervar 3020 42x52': [{ from: 1987, to: 1989, id: 10981 }], // 1987 Peugeot Comete, 1989 Cosmic
+    'nervar 2020 s sealed bb': null, // 1987 Peugeot P8 Avoriaz: "2020 S" (sealed BB) may be a separate variant; the 1985 catalogue has no S
     // 1982-83 Raleigh (Record Ace / Competition / Royal / Clubman / Rapide):
     // "SR Custom" 52/42 five-arm is the CTC-5DLA2 (SR No. 18; the other Custom
     // codes are 52x40 or riveted DX).
@@ -3312,6 +3320,7 @@ const COMPONENT_OVERRIDES = {
     'lyotard 77 r': [{ from: 1982, to: 1983, id: 10979 }], // 1982 Peugeot
     'lyotard 77r with reflector toe clips and straps': [{ from: 1982, to: 1983, id: 10979 }], // 1982 Peugeot
     'lyotard 77r with reflectors': [{ from: 1982, to: 1983, id: 10979 }], // 1983 Peugeot (CA)
+    'maillard atom 500 ra': [{ from: 1982, to: 1982, id: 10985 }], // 1982 Peugeot PF / PFN 10 (S), PFN 13: Atom 500RA, from the Motobecane May 1985 spares catalogue (data_source 381)
     'sr sampson fxp 100 clipless': [{ from: 1989, to: 1989, id: 3934 }], // 1989 Bianchi: SR SP-Comp / FXP-100 (year_to 1988 -> 1989)
     'sr mtp 126': [{ from: 1989, to: 1989, id: 9755 }], // 1989 Bianchi: SR PL-MTP-126BL, Low Fat (year_from 1993 -> 1989; judgement call)
     'sakae sp 362 alloy platform': [{ from: 1984, to: 1984, id: 3932 }], // 1984 Raleigh: SR SP-362 (year_to 1980 -> 1984; judgement call)

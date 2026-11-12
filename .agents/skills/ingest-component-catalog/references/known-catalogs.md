@@ -40,6 +40,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/nitto.md](known-catalogs/nitto.md) — Nitto (3 entries)
 - [known-catalogs/mks.md](known-catalogs/mks.md) — MKS / Mikashima pedals (1 entry, c. 1985)
 - [known-catalogs/lyotard.md](known-catalogs/lyotard.md) — Lyotard pedals (1 entry, c. 1977-81)
+- [known-catalogs/motobecane.md](known-catalogs/motobecane.md) — Motobécane dealer spares catalogues (1 entry, May 1985; Nervar, Maillard, Atax and others)
 - [known-catalogs/laprade.md](known-catalogs/laprade.md) — Laprade (1 entry)
 - [known-catalogs/michelin.md](known-catalogs/michelin.md) — Michelin (1 entry)
 - [known-catalogs/ofmega.md](known-catalogs/ofmega.md) — Ofmega (1 entry)
