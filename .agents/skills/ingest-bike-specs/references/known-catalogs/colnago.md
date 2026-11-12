@@ -299,3 +299,36 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
 - Original 1988 brochure transcription/scans:
   https://ebykr.com/library/colnago-1988-catalog-concept-ferrari/
   https://bikalog.org/api/view/Colnago/1988/colnago-1988.pdf
+
+
+## 1991 Colnago — located and inspected 2026-11-12; not yet ingested
+
+- Confirmed original manufacturer brochure, front cover explicitly "1991".
+  Source: https://labibleduvelocataloguescolnago1.blogspot.com/p/colnago-1991.html?m=0
+  Eleven images named `Colnago catalog 1991 (1).png` through `(11).png`:
+  front cover, nine double-page spreads, rear cover = 20 pages.
+  Inspected all eleven scans. Local images and source HTML:
+  `/tmp/colnago-1991-search/`; original image URLs saved in `scan-urls.txt`.
+  Images served by blogger.googleusercontent.com; web text extraction failed,
+  but ordinary HTML download exposed the scan URLs. Small type needs close
+  inspection/cross-checking when transcribing.
+- Page map (scan numbers, not printed pagination):
+  01 front cover; 02 C35 Collection / Competition;
+  03 Master Krono 26-28 / Carbitubo 91 Krono 26-28 Decor;
+  04 Carbitubo 91 Decor, C-Record and Dura-Ace builds;
+  05 Superpiu / Conic SLX 91 complete builds;
+  06 colour examples (frames only); 07 Conic SLX 91 / Masterpiu frames;
+  08 Master construction / Super 91 CR-MO frame;
+  09 Olympus 91 / Master Ibex (Zaffiro 91 DX-STI, Smeraldo 91 XT-STI,
+  Topazio 91 Centaur 8V); 10 Fantastic 91 Oversize / Superlativ 91 Oversize;
+  11 rear cover, 35th anniversary graphic 1954-1989. That graphic does not
+  override the explicit 1991 cover date.
+- Ingestable: written build prose, not just photographs, for road builds and
+  MTBs. Named component groups include C-Record, Dura-Ace 8V STI,
+  Chorus 8V, Ultegra, Super Record 8V, Euclid and Centaur, DX/XT STI.
+  Verify every exact group/model combination and auxiliary component from
+  original text before preparing CSV; this is an inspection inventory,
+  not a finished transcription. Exclude frame-only pages under current scope.
+- This resolves the catalogue-location lead from MTB Timeline's Olympus /
+  Fantastic references: https://mtbtimeline.com/wiki/colnago/start.
+  No CSV, SQL, data_source, bikes or specs created in this search pass.
