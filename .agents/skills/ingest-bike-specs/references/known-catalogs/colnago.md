@@ -62,6 +62,18 @@
   7695. Reviewed SQL: `/tmp/colnago-deluxe-review/de-luxe-brakes.sql`.
   Period source: https://www.retromtb.pl/pdf/shimano92.pdf.
 
+- Superlativ brake follow-up (2026-11-12, user approved and applied):
+  linked Brakes to 985 BR-M734 / BR-M734-M, using the BR-M734 cantilever
+  option in Shimano's 1992 catalogue as a group default. Colnago prints
+  only "Shimano XT STI", not an individual brake model; BR-M733 is the
+  alternative U-II option. This supersedes the original unresolved brake
+  decision. Integrated brake levers remain represented by 7577 on Shifters.
+  Override limited to Superlativ / 1992. All 82 CSVs compared: only this
+  brake mapping changed, total links 6104 -> 6105; 1992 Colnago now 25
+  links. Load affected exactly one row; readback confirmed 985.
+  Reviewed SQL: `/tmp/colnago-superlativ-review/superlativ-brakes.sql`.
+  Period source: https://vintagecannondale.com/cannondale/shimano/Shimano92.pdf.
+
 Source for both: https://2velo.com/colnago-bicycle-catalogs/ (a WordPress
 gallery of 146 scanned pages in nine groups; images are served via
 i0.wp.com, `?w=1400` gives a readable scan). Only two groups carry component

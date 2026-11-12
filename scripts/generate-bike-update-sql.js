@@ -1585,9 +1585,9 @@ const COMPONENT_OVERRIDES = {
     'shimano deore dx': 7660, // BR-M650 cantilever
     'shimano deore lx': 7582, // BR-M550 cantilever
     // 1992 Colnago: printed group defaults. Shimano's 1992 manual lists
-    // BR-C510-B for Deore LX; XT has several unresolved cantilever models.
+    // BR-C510-B for Deore LX and BR-M734 for the XT cantilever option.
     'shimano dx sti': [{ bike: 'Fantastic', from: 1992, to: 1992, id: 7660 }],
-    'shimano xt sti': null,
+    'shimano xt sti': [{ bike: 'Superlativ', from: 1992, to: 1992, id: 985 }], // BR-M734 cantilever group default, not the BR-M733 U-II option
     'shimano deore lx sti': [{ bike: 'De Luxe', from: 1992, to: 1992, id: 7695 }], // BR-C510 / C510-B; 1992 LX uses -B
     'shimano 400 sti': [{ bike: 'Maxim', from: 1992, to: 1992, id: 7590 }], // BR-M351 / M352, Exage 400LX
     'shimano deore xt u 2': 984, // BR-M733 U-II brake
