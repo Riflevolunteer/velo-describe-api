@@ -268,3 +268,34 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
 - 2velo 1997 group (61 pages): a frame catalogue. Nine framesets with tubing, sizes and Art Decor '97 paint codes (C-40, Ovaltitan, Monotitan, Master, Tecnos, Dream, Crystal, Altain, C-35); complete bikes are photo plates only. Dated by the 1997 champions spread (Museeuw world champion, Mapei-GB national champions) and Van Lierde's 1997 Ironman. Seven languages, no market. Drafted (22 specs, 0 links) but left out: frame-only rows from outside the 1970-1993 range. Draft CSV kept outside bike_specs/ so a batch run can't load it.
 
 - 2026-10-30: bare "Concor", "Concor Moda" and "Concor in MODA grid colours" saddles (1986-88, 23 specs) left unlinked by decision: by 1985 Concor is a family, not one model.
+
+
+## AL11 reconciliation — 2026-11-12 (no database changes)
+
+- Live readback supersedes the original "no DB rows" / "unidentified group"
+  notes above: 1986 Raid (304), 1986 Super Mountain Bike (307) and 1987
+  Super Mountain Bike (775) already have six correct AL11 derailleur links:
+  front 2458 FD-AL11 (1980-1987), rear 4446 RD-AL11 (1984-1987).
+  Generator overrides already cover "Shimano AL 11" and the Raid's
+  "Shimano FD. AL 11" wording. No backfill remains for these derailleurs.
+- 7164 SL-MT50 is titled AL-11 finger shifter, dated 1984-1986, from the
+  Shimano June 1984 dealer catalogue (source 26, p59). The three 1986-87
+  bikes have no Shifters spec line naming this component. Do not create one
+  by treating the derailleur/group wording as an individually specified
+  shifter. Other AL11-labelled crank, brake, lever, pedal and post lines
+  do not establish exact models; kept unlinked.
+- 1988 Master Mountainbike AL 11 SIS (742): all eight group-derived lines
+  remain unlinked. Original Colnago p27 explicitly says "AL 11 SIS" in
+  multiple languages, but gives no individual model codes. Known AL11
+  derailleur rows end in 1987; SL-MT50 ends in 1986. A later indexed AL11
+  version has not been established. Neither the SIS suffix nor the catalogue
+  year justifies extending these rows or substituting MS / Deore parts.
+  Corrected a generator comment which had asserted a later indexed AL11
+  version as fact. No matcher logic, overrides, CSVs, years or DB rows changed.
+- Scope checked: 27 AL11-valued specs on four bikes, six already linked,
+  21 unresolved. Next useful evidence is a period Colnago dealer build
+  sheet listing actual components for the 1988 model, or Shimano documentation
+  explicitly identifying the models sold under that wording.
+- Original 1988 brochure transcription/scans:
+  https://ebykr.com/library/colnago-1988-catalog-concept-ferrari/
+  https://bikalog.org/api/view/Colnago/1988/colnago-1988.pdf

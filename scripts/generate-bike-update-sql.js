@@ -762,7 +762,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xce top pull': [{ from: 1990, to: 1992, id: 2663 }], // FD-XE01, XCE
     'suntour xce 4050': [{ from: 1989, to: 1989, id: 2663 }], // 1989 Bianchi Forte / Volpe: FD-XE01, XCE (the 4050 level)
     // 1986-87 Colnago Super Mountain Bike / 1986 Raid "Shimano AL 11" group: FD-AL11 (1980-87 since 2026-11-01).
-    // The 1988 "AL 11 SIS" names a later indexed version with no row.
+    // The 1988 catalogue says "AL 11 SIS", but its actual indexed models
+    // remain unidentified; this wording does not establish a later AL11 version.
     'shimano al 11': [{ from: 1986, to: 1987, id: 2458 }],
     'shimano fd al 11': [{ from: 1986, to: 1986, id: 2458 }],
     'suntour xct': [{ from: 1990, to: 1992, id: 7962 }], // FD-XT02, XCT (row dated 1992)
