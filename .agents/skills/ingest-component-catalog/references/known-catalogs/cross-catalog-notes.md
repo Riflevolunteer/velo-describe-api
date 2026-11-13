@@ -508,6 +508,28 @@ Weinmann 1129 / 1130 570.
   row may be missing. Galli hubs are headed "Galli Maillard" (Maillard-made).
   The missing seat-post page.
 
+- **Ofmega re-check, 2026-11-13** (scans 4, 13, 16, 18, 20, 22, 25, 36). **Headset model numbers
+  were misread as 3xxx in the first pass; the scan prints Mod. 8080 Mistral, 8150 Ambassador, 8200
+  BMX, 8100 Gran Premio** (the same 8000 series as the 1979 R. J. Chicken catalogue). Retitled 9159
+  "Ofmega 3150, Ambassador" -> "Ofmega 8150, Ambassador" and 9160 "Ofmega 3100, Gran Premio" ->
+  "Ofmega 8100, Gran Premio" (search_text with them); 3064 Mistral description "Mod. 3050" -> 8080;
+  8787 "Ofmega 8200" -> "Ofmega 8200, BMX", year_to 1979 -> 1985, 1985 spec added (234 g, 27 / 32.6).
+  **Merged 8786 "Ofmega 8100, De Luxe"** (1979, source 181, source_id
+  7291398e-ca49-11f1-a2df-02fea3763e8d, no links or overrides; deleted, user approved) into 9160,
+  year_from 1985 -> 1979, De Luxe description folded in. Corrected 9158 Mundial BB 356 -> 355 g,
+  9161 CX Sealed Bearing front 205 -> 203 g. Described 90 Gran Premio BB ("7100 Basic" in 1985),
+  3442 Gran Premio hubs, 3881 CX pedals (2600, 357 g); 2419 Premier FD given the 1985 94 / 86 g
+  braze-on / clamp weights alongside the 1988 brochure's 90 g. 6094 Premier shifters (1st
+  generation) dated 1985-1985, 11.5 g each (the 1988 Premier levers, 35 g retro-friction, are 6095).
+  Added 11003 Super Corsa hubs (forged anodised alloy, 28-32-36; 1981-1985, 1981 from the
+  unlinked Colnago Sprint/81 spec "Ofmega Super Corsa, 36 holes", still to link) and 11004
+  "Ofmega 2150, BMX" crankset (170 mm, 42T, 380 g). Left alone: 9650 Gran Premio pedals (398 g
+  with steel cage here vs 8784's 1979 320 g silver anodised), Mundial crank 470 / 486 g vs 665 g
+  in 1988, Mistral RD / shifter generations, Super Competizione crank versions; no weight, not
+  added: Super Corsa R crank (possibly the 1981 Colnago "Super Corsa MC-130", unconfirmed),
+  Mundial L and BMX hubs 6170 / 6260 / 6163, 1090 BMX crank, Thompson 7155 BB. SQL: session
+  scratchpad `squadra/g85-ofmega.sql`.
+
 ## Ron Kitching "Everything Cycling" — Accessories, Tubulars and Sundries, June 1984 (disraeligears.co.uk, data_source 261)
 
 - `data_source` label "Ron Kitching Everything Cycling (1984)", country GB. Source:

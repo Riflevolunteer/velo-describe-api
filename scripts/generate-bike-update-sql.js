@@ -2030,7 +2030,7 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin: Gipiemme Cronospecial headset (the 1985-88 row; the 1982 sheet is earlier) and the Pista Special headset.
     'gipiemme cronospecial': [{ bike: 'Vuelta', from: 1982, to: 1982, id: null }, { from: 1982, to: 1988, id: 9137 }], // Vuelta: 9137 starts 1984; 600180 alternative starts 1983, so no established 1982 variant. Preserve prior catalogue picks.
     'gipiemme pista special': [{ from: 1980, to: 1988, id: 3008 }], // Special (Pista)
-    'ofmega gran premio': 9160, // 1987 Bianchi Pista: Ofmega 3100, Gran Premio (row dated 1985)
+    'ofmega gran premio': 9160, // 1987 Bianchi Pista: Ofmega 8100, Gran Premio (row dated 1979-85)
     'spidel d8': 3117, // 1980 Peugeot PRO 10: Stronglight D8 Extra Leger (row dated 1981-83, as the 1979 S7 pick)
     'spidel d 8': 3117, // 1981 Peugeot PRO 10
     'stronglight a9 alloy': 3112, // 1986 Peugeot (US) table: as 'stronglight a9'
