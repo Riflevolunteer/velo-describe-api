@@ -3169,8 +3169,10 @@ const COMPONENT_OVERRIDES = {
     'shimano ultegra aero': [{ from: 1988, to: 1990, id: 416 }], // BL-6401, 600 Ultegra (aero)
     'shimano 105 aero': [{ from: 1987, to: 1989, id: 406 }, { from: 1990, to: 1993, id: 411 }], // BL-1050 SLR 105 (1989 Bianchi Krono) / BL-1055, 105SC
     'shimano exage 400ex aero': [{ from: 1989, to: 1994, id: 441 }], // BL-A351, Exage Action / 400EX (aero)
-    'shimano deore xt 2 finger': [{ from: 1989, to: 1993, id: 430 }], // BL-M732 / M733
-    'shimano deore dx 2 finger': [{ from: 1989, to: 1993, id: 425 }], // BL-MT63 (2-finger)
+    // 1990 Bianchi Signature 2 / Peregrine print "2 finger" levers beside Rapidfire shifters: the
+    // ST-M091 / ST-M071 2-finger shift / brake pair is the lever, not a separate thumbshifter-era BL.
+    'shimano deore xt 2 finger': [{ bike: 'Signature 2', from: 1990, to: 1990, id: 7577 }, { from: 1989, to: 1993, id: 430 }], // BL-M732 / M733
+    'shimano deore dx 2 finger': [{ bike: 'Peregrine', from: 1990, to: 1990, id: 6359 }, { from: 1989, to: 1993, id: 425 }], // BL-MT63 (2-finger)
     'suntour xc pro 2 finger': [{ from: 1990, to: 1992, id: 469 }], // BL-XP00
     'suntour gpx aero': [{ from: 1989, to: 1991, id: 456 }], // BL-GP00, GPX (aero)
     'gpx aero': [{ from: 1989, to: 1991, id: 456 }], // BL-GP00, GPX (aero) — Axis
@@ -4361,8 +4363,9 @@ function matchComponent(valueText, componentRecords, excludeTitle, label, year, 
 // text names it (equal to, or a whole-word part of, the shifter text: "Campagnolo
 // Chorus" / "Campagnolo Chorus Ergopower"). This also applies over a Brake
 // Levers explicit null, which exists to block a standalone lever where an
-// integrated control is meant. Separate levers ("Deore XT 2 finger" next to
-// "Deore XT Rapidfire") don't match the text and are left alone.
+// integrated control is meant. Lever text that doesn't name the shifter is
+// left alone; when it is still the integrated part (1990 Bianchi "Deore XT
+// 2 finger" beside "Deore XT Rapidfire"), use COMPONENT_OVERRIDES.
 // Inputs are normalizeForMatch() values; returns the component_id or null.
 function integratedBrakeLeverLink(brakeValue, shifterValue, shifterComponentId, shifterCategory) {
   if (!brakeValue || !shifterValue || !shifterComponentId) return null;

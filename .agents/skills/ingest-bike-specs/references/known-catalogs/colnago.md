@@ -45,7 +45,7 @@
   FC-M400-SG 7591, BR-M351 / M352 7590, PD-M350 7200, integrated
   ST-M050 / M050-S controls 7585 on Shifters. Group-default picks, not
   individually printed part codes. Seatpost and separate Brake Levers stay
-  unlinked. Generator overrides limited to Maxim / 1992. All 82 CSVs
+  unlinked (superseded 2026-11-13: Brake Levers now carry the integrated control's id, see cross-catalog-notes). Generator overrides limited to Maxim / 1992. All 82 CSVs
   regenerated before/after: only these six Maxim mappings changed, total
   links 6097 -> 6103; 1992 Colnago now 23 links. Load affected exactly six
   rows; database readback confirmed all six component IDs. Reviewed SQL:
@@ -56,7 +56,7 @@
   for Deore LX in Shimano's 1992 catalogue. This supersedes the original
   unlinked decision based on BR-M550 ending in 1991. Integrated brake levers
   remain represented by 7581 ST-M060 / ST-M060-S on Shifters; separate Brake
-  Levers stays NULL. Override limited to De Luxe / 1992. All 82 CSVs compared:
+  Levers stays NULL (superseded 2026-11-13: Brake Levers now carry the integrated control's id, see cross-catalog-notes). Override limited to De Luxe / 1992. All 82 CSVs compared:
   only this brake mapping changed, total links 6103 -> 6104; 1992 Colnago
   now 24 links. Load affected exactly one row; database readback confirmed
   7695. Reviewed SQL: `/tmp/colnago-deluxe-review/de-luxe-brakes.sql`.
@@ -67,7 +67,7 @@
   option in Shimano's 1992 catalogue as a group default. Colnago prints
   only "Shimano XT STI", not an individual brake model; BR-M733 is the
   alternative U-II option. This supersedes the original unresolved brake
-  decision. Integrated brake levers remain represented by 7577 on Shifters.
+  decision. Integrated brake levers remain represented by 7577 on Shifters (superseded 2026-11-13: Brake Levers now carry the integrated control's id, see cross-catalog-notes).
   Override limited to Superlativ / 1992. All 82 CSVs compared: only this
   brake mapping changed, total links 6104 -> 6105; 1992 Colnago now 25
   links. Load affected exactly one row; readback confirmed 985.
@@ -368,7 +368,7 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
   crank 1487 / brake 565 / lever 220 / pedals 3700 / post 5742.
 - Dura-Ace FD 2511 / RD 4505 / crank 1820 / brake 993 / post 5893;
   plain 8V control default SL-7402 6166 + BL-7402 436, explicit STI ->
-  ST-7400 6365 on Shifters, separate Brake Levers unlinked. Ultegra auxiliary
+  ST-7400 6365 on Shifters, separate Brake Levers unlinked (superseded 2026-11-13: Brake Levers now carry the integrated control's id, see cross-catalog-notes). Ultegra auxiliary
   overrides bike-scoped: crank 1789 / post 5889 / BL-6403 418 / SL-6400 6144.
   Its FD 2478 / RD 4466 / brake 966 reuse existing overrides.
 - DX FD 2487 / RD 4480 / crank 1809 / brake 7660 / pedals 3964 / STI 6359;

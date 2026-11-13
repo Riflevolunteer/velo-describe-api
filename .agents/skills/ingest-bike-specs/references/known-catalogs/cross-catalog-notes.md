@@ -527,6 +527,9 @@ loaded. Battaglin Turismo (mixte city) and Falcon 83 / 89 (utility, deleted with
   whose Shifters link to a Shifting Brake Levers row were unlinked (1991 Colnago
   Dura-Ace 8V STI x4, 1991-92 MTB DX / XT / LX / 400 STI, 1994 Cinelli
   Stratos / Chorus / Veloce Ergopower and STX S.E.). Linked to the shifter's
-  component by a one-off UPDATE (16 rows) and the new generator fallback. The
-  1990 Signature 2 / Peregrine "2 finger" levers next to Rapidfire shifters are
-  separate parts and keep their BL links.
+  component by a one-off UPDATE (16 rows) and the new generator fallback.
+- 2026-11-13 follow-up: the 1990 Bianchi Signature 2 / Peregrine "2 finger"
+  Brake Levers moved 430 BL-M732 / M733 -> 7577 and 425 BL-MT63 -> 6359. Their
+  Rapidfire shifters are the ST-M091 / ST-M071 2-finger shift / brake pairs
+  (pair weights 550 g / 535 g), and the DB has no shift-only pods of that era.
+  Bike-scoped 1990 override ranges; the BL ranges stay for thumbshifter bikes.

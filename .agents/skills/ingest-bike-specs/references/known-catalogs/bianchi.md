@@ -704,3 +704,8 @@
 
 - Products1986 printed p.4 (source209) explicitly names DC400N,38–48mm,117g per caliper. New component10977,1985–86 (earlier attestation is this Bianchi sheet,source144); spec5797 `Dia-Compe DC400N` linked from NULL. Exact generator override ranged1985–86. DC500N681 is a distinct43–57mm brake and was not used.
 - All85 CSVs compared: only this mapping and the1986 Raleigh QS400N mapping changed. Live DB comparison confirms the same two links; no spec identities or values changed. SQL rerun zero changes. Evidence/SQL: `/private/tmp/existing-source-review/`.
+
+- 2026-11-13: 1990 Signature 2 / Peregrine Brake Levers ("Shimano Deore XT / DX
+  2 finger") relinked 430 -> 7577 ST-M090 / M091 / M092 and 425 -> 6359
+  ST-M070 / M071: beside Rapidfire shifters the 2-finger lever is the
+  integrated shift / brake pair. Bike-scoped 1990 overrides.
