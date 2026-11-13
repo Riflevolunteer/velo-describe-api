@@ -540,3 +540,12 @@ loaded. Battaglin Turismo (mixte city) and Falcon 83 / 89 (utility, deleted with
   1982 Mafac Promotion, 1991 Centaur, 1994 Record / Alivio), and parts with no
   DB row (Ofmega Super Competizione, Spidel professional, Universal AER levers,
   Dia-Compe GX-400 Aero, Shimano Z-324, AT 90, AL 11, Chang Star).
+- 2026-11-13 Shifters sweep: 190 of 374 unlinked. Linked 11 (1993 Bianchi
+  Rapidfire Plus x8 and Veloce Ergopower, 1987 / 1989 Peugeot ARIS);
+  generator links 6426 -> 6437. Held: 1991 Colnago 8V Syncro / Centaur /
+  Olympus (earlier decision: no 8-speed rows), 1985 Raleigh "PUB-M". The
+  rest are generic, earlier nulls, or parts with no right-era DB row
+  (SunTour Hero / DLN / 1986 Cyclone variants, Shimano Z105 / Z501 stem /
+  EM-30 / EM-50 / GMG, Simplex Prestige stem, Ofmega, AL 11). Two 1983
+  Bianchi Shifters cells read "Campagnolo (Super Record) brake levers":
+  probably a column slip, worth checking against the catalogue.

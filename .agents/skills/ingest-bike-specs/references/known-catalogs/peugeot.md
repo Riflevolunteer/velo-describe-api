@@ -886,3 +886,7 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 - 2026-11-13: 1982 TM 8 / TH 8 tandem Brake Levers "Mafac course (double
   cable on the right)" -> 357 MAFAC Course 419 / 429, as the 1979 tandems'
   "Mafac course"; the extra wording kept the existing override from matching.
+- 2026-11-13 Shifters sweep (user approved, judgement): 1987 PS 10B W
+  'Savoie' "ARIS indexing" -> 6110 ARIS New Success (type 1), and 1989 Mont
+  Blanc "Aris Index" -> 6108 Rival Aris Classic 3000, each matched to the
+  bike's linked ARIS rear derailleur series. Bike-scoped overrides.

@@ -709,3 +709,9 @@
   2 finger") relinked 430 -> 7577 ST-M090 / M091 / M092 and 425 -> 6359
   ST-M070 / M071: beside Rapidfire shifters the 2-finger lever is the
   integrated shift / brake pair. Bike-scoped 1990 overrides.
+- 2026-11-13 Shifters sweep (user approved): 1993 bare "Rapidfire Plus" now
+  links by each bike's rear derailleur group: Denali 6360 ST-M075 (DX),
+  Peregrine 7708 ST-M560 (LX), Ibex / Osprey / Project 3 7716 ST-M320
+  (Exage LT), Project 5 7713 ST-M520 (Exage ES), Super Grizzly / Nth FS 7667
+  ST-M900-8 (XTR). SBX / Veloce "Campagnolo Ergopower" -> 6349 EC-02VL Veloce.
+  Bike-scoped 1993 Shifters overrides. Supersedes "Rapidfire Plus (no rows)".

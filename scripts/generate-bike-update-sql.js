@@ -2965,6 +2965,21 @@ const COMPONENT_OVERRIDES = {
     // 1994 Cinelli Genius Machine / Soft Machine: 8-speed M737 group (crank 8669, rear 8668), so the 8-speed
     // 2-finger ST-M738 shift / brake set (user's call 2026-11-13; was null). Brake Levers follow via integratedBrakeLeverLink.
     'shimano deore xt': [{ from: 1994, to: 1994, id: 6364 }, { from: 1986, to: 1986, id: 6158 }], // 1986 Raleigh Crested Butte / Portage: SL-M700, Deore XT (1983-86)
+    // 2026-11-13 Shifters sweep (user approved): bare control names resolved from the same bike's linked rear derailleur.
+    // 1993 Bianchi "Rapidfire Plus": the 1993 pass had no Rapidfire Plus rows; each is that group's 1993 shift / brake set.
+    'rapidfire plus': [
+      { bike: 'Denali', from: 1993, to: 1993, id: 6360 }, // RD-M650 DX -> ST-M075
+      { bike: 'Peregrine', from: 1993, to: 1993, id: 7708 }, // RD-M560 LX -> ST-M560
+      { bike: 'Ibex', from: 1993, to: 1993, id: 7716 }, // RD-M320 Exage LT -> ST-M320
+      { bike: 'Osprey', from: 1993, to: 1993, id: 7716 },
+      { bike: 'Project 3', from: 1993, to: 1993, id: 7716 },
+      { bike: 'Project 5', from: 1993, to: 1993, id: 7713 }, // RD-M520 Exage ES -> ST-M520
+      { bike: 'Super Grizzly', from: 1993, to: 1993, id: 7667 }, // RD-M900 XTR -> ST-M900-8
+      { bike: 'Nth FS', from: 1993, to: 1993, id: 7667 },
+    ],
+    'campagnolo ergopower': [{ bike: 'SBX / Veloce', from: 1993, to: 1993, id: 6349 }], // 1993 Bianchi, RD-01VL Veloce: EC-02VL Veloce Ergopower
+    'aris indexing': [{ bike: "PS 10B W 'Savoie'", from: 1987, to: 1987, id: 6110 }], // 1987 Peugeot, ARIS New Success RD: ARIS New Success (type 1)
+    'aris index': [{ bike: 'Mont Blanc', from: 1989, to: 1989, id: 6108 }], // 1989 Peugeot, Sachs ARIS Rival RD: Rival Aris Classic 3000
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
     'huret new success alloy front and rear with ratchet levers': [{ from: 1987, to: 1990, id: 6110 }], // ARIS New Success (type 1) 1987-90; 6111 is a duplicate title
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
