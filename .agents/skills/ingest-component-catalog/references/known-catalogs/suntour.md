@@ -1300,8 +1300,9 @@ Do not copy the RD-XD10 capacities/weights into 4789 or retitle it with an
 unverified code. The page's 1990 attribution and existing date bounds were
 left alone; no inferred introduction date was assigned.
 
-New source lead, **not ingested in full**: SunTour Bicycle Equipment Catalog
-1990, host dates printing to autumn 1989. Only pp. 11-14 were read this
+Source lead at the time of this photo review: SunTour Bicycle Equipment Catalog
+1990, host dates printing to autumn 1989. **Subsequently ingested in full on
+2026-11-13, data_source 385; see the 1990 catalogue section below.** Only pp. 11-14 were read this
 pass (11-12 XC Comp, 13-14 XCD). Manufacturer p. 13:
 https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1990_-_page_13.html
 It lists RD-XD10-GXB (305g, 40T total, 22T chainring difference) and GTB
@@ -1326,3 +1327,221 @@ unchanged at **10070**. Evidence/review plan `/tmp/xcd-investigation.txt`,
 original proposal `/tmp/xcd-review-proposal.sql`, images
 `/tmp/xcd-4789.jpg`, `/tmp/xcd-4790.jpg`, `/tmp/xcd-1988-p7.jpg`,
 `/tmp/xcd-1990-p13.jpg` and `/tmp/xcd-1990-p14.jpg`.
+
+## SunTour Bicycle Equipment Catalog 1990, English — printed September 1989 (2026-11-13)
+
+- Full catalogue reconciled and loaded: `data_source` **385**, label `SunTour Bicycle Equipment Catalog 1990 (printed 09.1989)`. Source: https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1990.html. Front cover says 1990; rear cover says `Printed in JAPAN Sep./'89`. Maeda Japan and SunTour USA, English worldwide edition; market country unknown (`NULL`), not inferred from print location.
+- Read all 32 scans: front, pp.1–30, rear. Features/photo pages 1–9,11,19–21,23,25; specifications p.10,12–18,22,24,26–30; rear component system chart repeats the range. Excluded clothing, tools, cables, grips, binders, skewers, battery housing and lock rings. BEAST selector BT-SA00 specifications are retained inside transmission row 1978, without inventing a front-derailleur category assignment.
+- **122 added** (11010–11131), **68 existing updated**, including **27 date ranges** and **20 retitles**. No deletes, no merges, no bike links changed. SunTour rows 714 -> 836; all 344 pre-existing linked bike specs retained. Model year is 1990; do not move every part to 1989 just from printing date. No year_from moved later; no absence-based end-year caps.
+- Range fills the gap between the held 1988 and 1992 sources: XC-Pro, XC-Comp, XCD, newly designed X-1, Chroma, XCE/XCM/XCT, FT and AC2000/AC1000; road Superbe Pro, Sprint, GPX, Radius, Edge, Blaze, VX and Track. Many lower-tier entries are only model/code listings, with no numerical specifications; none were invented.
+- SQL and complete listing/readback: `/private/tmp/suntour-1990/suntour-1990.sql`, `catalogue-listing.tsv`, `reconciliation.txt`, `db-before.tsv`, `db-after.tsv`, `final-plan.json`. Exact readback checked every planned field, all untouched SunTour rows, and all existing bike links. Second SQL run affected **zero** source/component rows.
+
+### New rows
+
+| ID | Category | Title |
+|---|---|---|
+| 11010 | Shifters | SunTour BT-SB00, BEAST shift control switch |
+| 11011 | Bottom Brackets | SunTour BB-XC00-E, XC-Comp / XC-Pro normal type |
+| 11012 | Shifters | SunTour SL-XP00-R6R / SL-XP00-L, XC-Pro thumb shifters (6-speed) |
+| 11013 | Brake Levers | SunTour BL-XP00, XC-Pro normal lever |
+| 11014 | Cranksets | SunTour CW-XP10, XC-Pro full-size triple (1990) |
+| 11015 | Hubs | SunTour HB-XP00-F, XC-Pro front hub |
+| 11016 | Hubs | SunTour FH-XP00-7U, XC-Pro / XC-Comp 7-speed freehub |
+| 11017 | Hubs | SunTour FH-XP00-6R, XC-Pro / XC-Comp 6-speed freehub |
+| 11018 | Pedals | SunTour PL-XP00, XC-Pro pedals |
+| 11019 | Freewheels | SunTour FW-AL10-S7U, Alpha AccuShift Plus 7-speed freewheel |
+| 11020 | Headsets | SunTour HS-XP00-E / HS-XP00-O, XC-Pro headset |
+| 11021 | Front Derailleurs | SunTour FD-XC10-GXH, XC-Comp |
+| 11022 | Shifters | SunTour SL-XC10-R7U / SL-XC10-R6R / SL-XC10-L, XC-Comp thumb shifters |
+| 11023 | Cranksets | SunTour CW-XC10, XC-Comp |
+| 11024 | Hubs | SunTour HB-XC01-F, XC-Comp front hub |
+| 11025 | Hubs | SunTour HB-XC01-R, XC-Comp rear hub |
+| 11026 | Rear Derailleurs | SunTour RD-XD10-GTB, XCD (GT) |
+| 11027 | Shifters | SunTour SL-XD10-R7U / SL-XD10-R6R / SL-XD10-L, XCD thumb shifters |
+| 11028 | Brakes | SunTour CT-XD20, XCD self-energizing cantilever |
+| 11029 | Brakes | SunTour CT-XD11, XCD cantilever |
+| 11030 | Brake Levers | SunTour BL-XD10 / BL-XD10-S, XCD |
+| 11031 | Cranksets | SunTour CW-XD10, XCD |
+| 11032 | Bottom Brackets | SunTour BB-XD10-E, XCD |
+| 11033 | Pedals | SunTour PL-XD10, XCD |
+| 11034 | Hubs | SunTour FH-XD00-6R, XCD 6-speed freehub |
+| 11035 | Cassettes | SunTour CS-AP00-K6R, AccuShift Plus 6-speed |
+| 11036 | Hubs | SunTour HB-XD01-FQ, XCD front hub (quick release) |
+| 11037 | Hubs | SunTour HB-XD01-RQ, XCD rear hub (quick release) |
+| 11038 | Hubs | SunTour HB-XD11-FS, XCD front hub (solid axle) |
+| 11039 | Hubs | SunTour HB-XD11-RS, XCD rear hub (solid axle) |
+| 11040 | Freewheels | SunTour FW-AL10-K6R, AccuShift Plus 6-speed |
+| 11041 | Shifters | SunTour SL-X100-R7U / SL-X100-R6R / SL-X100-L, X-1 thumb shifters |
+| 11042 | Brakes | SunTour CT-X100, X-1 cantilever |
+| 11043 | Brake Levers | SunTour BL-X100-S, X-1 short |
+| 11044 | Cranksets | SunTour CW-X100, X-1 |
+| 11045 | Bottom Brackets | SunTour BB-X100-E, X-1 / XCE / XCT |
+| 11046 | Pedals | SunTour PL-X100, X-1 |
+| 11047 | Hubs | SunTour HB-AT00-FQ, ATB front hub (quick release) |
+| 11048 | Hubs | SunTour HB-AT00-RQ, ATB rear hub (quick release) |
+| 11049 | Hubs | SunTour HB-AT00-FS, ATB front hub (solid axle) |
+| 11050 | Hubs | SunTour HB-AT00-RS, ATB rear hub (solid axle) |
+| 11051 | Hubs | SunTour FH-AT00-7U, ATB 7-speed freehub |
+| 11052 | Hubs | SunTour FH-AT00-6R, Radius / Edge / X-1 6-speed freehub |
+| 11053 | Brakes | SunTour CT-CR00, X-1 Chroma cantilever |
+| 11054 | Brake Levers | SunTour BL-CR00 / BL-CR00-S, X-1 Chroma |
+| 11055 | Cranksets | SunTour CW-CR00, X-1 Chroma |
+| 11056 | Rear Derailleurs | SunTour RD-XE00-GXB, XCE |
+| 11057 | Front Derailleurs | SunTour FD-XE00-GXH, XCE |
+| 11058 | Shifters | SunTour SL-XE00-R7U / SL-XE00-R6R / SL-XE00-L, XCE thumb shifters |
+| 11059 | Brakes | SunTour CT-XE00, XCE cantilever |
+| 11060 | Brakes | SunTour BA-XE00, XCE brake caliper |
+| 11061 | Brake Levers | SunTour BL-XE00-S / BL-XE00, XCE |
+| 11062 | Pedals | SunTour PL-XE00, XCE |
+| 11063 | Shifters | SunTour SL-XM00-R7U / SL-XM00-R6R / SL-XM00-L, XCM thumb shifters |
+| 11064 | Brakes | SunTour CT-XM00, XCM cantilever |
+| 11065 | Brake Levers | SunTour BL-XM00, XCM |
+| 11066 | Cranksets | SunTour CW-XM00, XCM |
+| 11067 | Bottom Brackets | SunTour BB-XM00, XCM |
+| 11068 | Pedals | SunTour PL-XM00, XCM |
+| 11069 | Chains | SunTour CH-AP50, AccuShift Plus |
+| 11070 | Rear Derailleurs | SunTour RD-XT00-GX / RD-XT00-GXB, XCT |
+| 11071 | Rear Derailleurs | SunTour RD-XT10-GX / RD-XT10-GXB, XCT |
+| 11072 | Front Derailleurs | SunTour FD-XT00-GXH, XCT |
+| 11073 | Shifters | SunTour SL-XT00-R7U / SL-XT00-R6R / SL-XT00-L, XCT thumb shifters |
+| 11074 | Brakes | SunTour CT-XT00, XCT cantilever |
+| 11075 | Brake Levers | SunTour BL-XT00, XCT |
+| 11076 | Cranksets | SunTour CW-XT00, XCT |
+| 11077 | Pedals | SunTour PL-XT00, XCT |
+| 11078 | Rear Derailleurs | SunTour RD-A200-GX / RD-A200-GXB, AC2000 |
+| 11079 | Front Derailleurs | SunTour FD-A200-GXH, AC2000 |
+| 11080 | Shifters | SunTour SL-A200-CH6R / SL-A200-CHL, AC2000 thumb shifters |
+| 11081 | Shifters | SunTour SL-2001-CHR / SL-2001-CHL, AC2000 / AC1000 thumb shifters |
+| 11082 | Rear Derailleurs | SunTour RD-A100-GX / RD-A100-GXB, AC1000 |
+| 11083 | Front Derailleurs | SunTour FD-AT00-GXH, AC1000 |
+| 11084 | Shifters | SunTour SL-AT10-CHR / SL-AT10-CHL, AC1000 thumb shifters |
+| 11085 | Rear Derailleurs | SunTour RD-FT50-SSB, FT |
+| 11086 | Front Derailleurs | SunTour FD-FT50-SSH, FT |
+| 11087 | Front Derailleurs | SunTour FD-VX00-SSH, VX / FT |
+| 11088 | Shifters | SunTour SL-FT50-R7U / SL-FT50-R6R, FT handlebar shifters |
+| 11089 | Shifters | SunTour SL-FT60-B7U / SL-FT60-C7U / SL-FT60-B6R / SL-FT60-C6R, FT down-tube shifters |
+| 11090 | Brakes | SunTour BA-FT50, FT brake caliper |
+| 11091 | Brake Levers | SunTour BL-FT50, FT |
+| 11092 | Cranksets | SunTour CW-FT50-AL / CW-FT50-FE, FT single |
+| 11093 | Cranksets | SunTour CW-FT51-AL / CW-FT51-FE, FT double |
+| 11094 | Bottom Brackets | SunTour BB-FT50-E, FT |
+| 11095 | Brakes | SunTour DB-FT50, FT hub brake |
+| 11096 | Freewheels | SunTour FW-WT10-S6R, Winner Pro (6-speed) |
+| 11097 | Brake Levers | SunTour BL-SP10, Sprint |
+| 11098 | Shifters | SunTour SL-GP10-B / SL-GP10-C, GPX |
+| 11099 | Cranksets | SunTour CW-GP10, GPX |
+| 11100 | Bottom Brackets | SunTour BB-GP10-E / BB-GP10-F / BB-GP10-I, GPX |
+| 11101 | Hubs | SunTour FH-GP00-7U, GPX (7-speed freehub) |
+| 11102 | Hubs | SunTour FH-GP00-6R, GPX (6-speed freehub) |
+| 11103 | Brakes | SunTour BA-RA00-SF / BA-RA00-SR, Radius |
+| 11104 | Cranksets | SunTour CW-RA00, Radius |
+| 11105 | Bottom Brackets | SunTour BB-RA00-E, Radius |
+| 11106 | Hubs | SunTour HB-RA00-F / HB-RA00-R, Radius |
+| 11107 | Rear Derailleurs | SunTour RD-ED00-SSB, Edge |
+| 11108 | Front Derailleurs | SunTour FD-ED00-SSH, Edge |
+| 11109 | Cranksets | SunTour CW-ED00, Edge |
+| 11110 | Pedals | SunTour PL-ED00, Edge |
+| 11111 | Rear Derailleurs | SunTour RD-BE00-SSB, Blaze |
+| 11112 | Front Derailleurs | SunTour FD-BE00-SSH, Blaze |
+| 11113 | Shifters | SunTour SL-BE00-B7U / SL-BE00-C7U / SL-BE00-B6R / SL-BE00-C6R / SL-BE00-CP7U / SL-BE00-CP6R, Blaze / FT |
+| 11114 | Cranksets | SunTour CW-BE00, Blaze |
+| 11115 | Bottom Brackets | SunTour BB-BE00-E, Blaze |
+| 11116 | Pedals | SunTour PL-BE00, Blaze |
+| 11117 | Hubs | SunTour HB-BE00-F / HB-BE00-R, Blaze |
+| 11118 | Rear Derailleurs | SunTour RD-VX00-SSB, VX |
+| 11119 | Rear Derailleurs | SunTour RD-VX10-SSB, VX |
+| 11120 | Shifters | SunTour SL-VX00-B7U / SL-VX00-C7U / SL-VX00-B6R / SL-VX00-C6R / SL-VX00-CP7U / SL-VX00-CP6R, VX |
+| 11121 | Cranksets | SunTour CW-VX00, VX |
+| 11122 | Bottom Brackets | SunTour BB-VX00-E, VX |
+| 11123 | Pedals | SunTour PL-VX00, VX |
+| 11124 | Rear Derailleurs | SunTour RD-A200-SSB, AC2000 |
+| 11125 | Front Derailleurs | SunTour FD-A200-SSH, AC2000 |
+| 11126 | Shifters | SunTour SL-A200-B6R / SL-A200-C6R / SL-A200-CP6R, AC2000 |
+| 11127 | Shifters | SunTour SL-1500-CP, AC2000 / AC1000 |
+| 11128 | Rear Derailleurs | SunTour RD-A100-SSB, AC1000 |
+| 11129 | Front Derailleurs | SunTour FD-RT10-SSH, AC1000 |
+| 11130 | Shifters | SunTour SL-RT10-CP, AC1000 |
+| 11131 | Shifters | SunTour LD-286-C, AC1000 |
+
+### Existing rows changed
+
+IDs: 1978, 8012, 4786, 4785, 2659, 7967, 6316, 1057, 1056, 469, 1418, 3628, 1222, 1219, 2248, 5936, 4783, 7949, 1053, 3134, 1060, 1224, 2233, 1419, 8814, 4776, 7960, 4777, 2655, 4793, 2665, 1421, 4769, 2651, 2650, 6262, 7784, 4012, 2234, 5934, 4759, 2644, 7848, 7849, 1043, 1987, 8819, 4007, 8818, 5932, 4745, 6268, 3607, 3132, 4753, 2640, 2639, 8040, 8041, 8042, 3617, 7993, 6388, 6311, 6284, 8026, 8027, 8028.
+
+Date changes (old -> new):
+
+- 8012: `year_from` 1992 -> 1990.
+- 7967: `year_from` 1992 -> 1990.
+- 2248: `year_to` 1980 -> 1990.
+- 7949: `year_from` 1992 -> 1990.
+- 1053: `year_to` 1989 -> 1990.
+- 8814: `year_to` 1988 -> 1990.
+- 7960: `year_from` 1992 -> 1990.
+- 4777: `year_to` 1989 -> 1990.
+- 1421: `year_from` 1992 -> 1990.
+- 6262: `year_to` 1989 -> 1990.
+- 7784: `year_to` 1989 -> 1990.
+- 2234: `year_to` 1980 -> 1990.
+- 7848: `year_to` 1988 -> 1990.
+- 7849: `year_to` 1988 -> 1990.
+- 1987: `year_to` 1989 -> 1990.
+- 8819: `year_to` 1988 -> 1990.
+- 4007: `year_to` 1989 -> 1990.
+- 8818: `year_to` 1988 -> 1990.
+- 3132: `year_to` 1989 -> 1990.
+- 8040: `year_from` 1992 -> 1990.
+- 8041: `year_from` 1992 -> 1990.
+- 8042: `year_from` 1992 -> 1990.
+- 3617: `year_to` 1985 -> 1990.
+- 7993: `year_from` 1992 -> 1990.
+- 8026: `year_from` 1992 -> 1990.
+- 8027: `year_from` 1992 -> 1990.
+- 8028: `year_from` 1992 -> 1990.
+
+Retitles (old -> new; search_text rewritten with the same guarded update):
+
+- 1978: `SunTour / Browning Electronic Accushift Transmission` -> `SunTour BT-CW00, BEAST electronic transmission`.
+- 6316: `SunTour X-Press, XCD 6000` -> `SunTour SL-PP10-R7U / SL-PP10-R6R / SL-PP10-L, X-Press`.
+- 1057: `SunTour CT-XP10, XC Pro` -> `SunTour CT-XP10, XC-Pro SE`.
+- 3628: `SunTour XC Pro (Rear, Freewheel)` -> `SunTour HB-XP00-R, XC-Pro (rear freewheel hub)`.
+- 2233: `SunTour Alpha (7sp)` -> `SunTour FW-AL10-K7U, AccuShift Plus 7-speed`.
+- 4776: `SunTour RD-X101-GXB, X-1` -> `SunTour RD-X100-GXB / RD-X101-GXB, X-1`.
+- 4777: `SunTour X-1 Chroma` -> `SunTour RD-CR00-GXB, X-1 Chroma`.
+- 2655: `SunTour X-1 Chroma` -> `SunTour FD-CR00-GXH, X-1 Chroma`.
+- 4793: `SunTour RD-XM02-GXB, XCM` -> `SunTour RD-XM00-GXB / RD-XM02-GXB, XCM`.
+- 2665: `SunTour FD-XM02-GXH, XCM` -> `SunTour FD-XM00-GXH / FD-XM02-GXH, XCM`.
+- 6262: `SunTour SL-BC00-R6R / SL-BC00-R7U / SL-BC00-L, Superbe Pro (bar-con)` -> `SunTour SL-BC00-R6R / SL-BC00-R7U / SL-BC00-L / SL-BC01-R6R / SL-BC01-L, Superbe Pro (bar-con)`.
+- 4759: `SunTour RD-SP10, Sprint 9000 (index)` -> `SunTour RD-SP10-SSB, Sprint 9000 (index)`.
+- 7848: `SunTour FD-SP00-B, Sprint 9000` -> `SunTour FD-SP00-B / FD-SP00-SSB, Sprint 9000 (braze-on)`.
+- 8819: `SunTour BB-500, Sprint 9000` -> `SunTour BB-500-E / BB-500-F / BB-500-I, Sprint 9000`.
+- 6268: `SunTour Command (6 & 7 Speed)` -> `SunTour SL-CD00-R7U / SL-CD00-R6R / SL-CD00-L, Command (6 & 7-speed)`.
+- 6311: `SunTour SL-XP00-R7 / SL-XP00-L, XC-Pro (thumb)` -> `SunTour SL-XP00-R7U / SL-XP00-R7 / SL-XP00-L, XC-Pro thumb shifters (7-speed)`.
+- 6284: `SunTour SL-ED00-B7 / SL-ED00-B7F / SL-ED00-C7, Edge` -> `SunTour SL-ED00-B7U / -C7U / -B6R / -C6R / -B7 / -B7F / -C7, Edge`.
+- 8026: `SunTour BL-ED00-S / BL-ED00-N, Edge (Dia-Compe)` -> `SunTour BL-ED00 / BL-ED00-S / BL-ED00-N, Edge (Dia-Compe)`.
+- 8027: `SunTour BL-BE00-S / BL-BE00-N, Blaze (Dia-Compe)` -> `SunTour BL-BE00 / BL-BE00-S / BL-BE00-N, Blaze (Dia-Compe)`.
+- 8028: `SunTour BL-VX00-N, VX (Dia-Compe)` -> `SunTour BL-VX00 / BL-VX00-N, VX (Dia-Compe)`.
+
+### Identity and edition decisions
+
+- Prior 1992 reconciliation over-specified some original VeloBase identities: 4776 original model RD-X100/32T, 4793 RD-XM00 (1989–90), 2665 FD-XM00-GX (1989–90). Preserve the original source_id and represent both attested revisions explicitly in the existing row: X100/X101, XM00/XM02 rear and front; descriptions distinguish 1990 and 1992. No new duplicate rows for those early versions. Original GUIDs respectively EA3A02BB-AEC2-4613-9C7C-2862BDF56151, F341EA41-D775-4F78-B6FD-4EFFC480D4C4, F995CACC-BBB4-41E6-A751-57D2488463BA.
+- CW-XP10 in p.10 is full-size 46/36/24T (26T inner also listed), 742g, not 1992 Micro Drive 42/32/20T, 94/56mm. New full-size row is distinct from existing 1999. Printed 130/74mm BCD alongside 36T middle rings in XC-Pro/XC-Comp/XCD is questionable: retained in transcription, omitted from product descriptions pending clarification. Never silently substitute 110mm.
+- 6316 original VeloBase model field SL-PP10 (GUID 4889346A-5201-4DB7-AF56-66BBA945B150), now accurately numbered PP10. Distinct from 6312 SL-XP10. P.10 CL-XP00 six-speed X-Press / PP10-R7R labels resolve to p.12 PP10-R6R/R7U by identical stock numbers (33119561/33119571, left33119701); no new CL-labelled duplicate. Six-speed XP00 thumb set is separate from seven-speed6311.
+- FH-AT00-GR on p.15 is FH-AT00-6R on p.16/27: stock47669914,47669904,47669916,47669906 identical. One6R record. Catalogue ATB/road weights465g/468g are retained with spacing/listing context.
+- Original 2233 Alpha7 model FW-AL10-K7U, black (GUID EB3D983E-DCEA-4E09-B76E-6AADD9B896A6), updated instead of adding duplicate. Original2232 model FW-AL00-R6 AP, silver (EA2A035D-F897-4783-9043-7F3737F322D5), distinct from new AL10-K6R. New S7U is silver. P.10 S7U13–28T410g conflicts with repeated p.12 490g; use490g for ATB, keep valid road13–23T410g separately.
+- HS-XP00-E/O catalogue headset is new. Original3138 indexed VeloBase model HS-XP01 Grease Guard (GUID A3358349-9145-4404-8E47-5ED4F2F872F1), not XP00; later8044 is XP02. Preserve3138 unchanged.
+- RD-ED00 is distinct from generic4744, whose original model is RD-ED45-SSB (GUID5F2CD359-F582-4EC4-B63A-3220D1B86177). RD-XM00 is distinct from4795 originalRD-XM34.
+- Preserve differing specifications by edition: XC-Pro/Comp rear capacities/weights, front derailleur sizes, BB weights, brake weights, SP-XC00 330/332g versus earlier283g and recorded290g; Superbe Pro front weights reversed in1989vs1990; GPX headset263g1989vs125g1990; PL-TM00 477g1990vs476g1992. Kept independent measured weights, including RD-SB00198g average, RD-SP10197g, Radius261g and CW-7500657g. Shared source citations removed from descriptions unless needed to distinguish specifications.
+- Later family suffixes retained explicitly: 6311XP00R7U(1990)/R7(1992), 6284Edge6/7-speed codes versus1992B7/B7F/C7, and Edge/Blaze/VX lever base codes alongside1992S/N suffixes. This records edition families rather than asserting all versions identical.
+
+### Unresolved (not force-matched or inserted)
+
+Seven catalogue entries have possible existing specimen matches requiring stronger identity evidence:
+
+- p.13 `RD-XD10-GXB`: Unnumbered later long-cage 4789 may be this model; existing notes explicitly prohibit identifying it by photograph alone. Catalogue establishes code but identity remains unresolved.
+- p.13 `FD-XD10-GXH`: Unnumbered 2662 SunTour XCD 6000 (1990) may depict this model; inspect original reference/photo before retitling or adding a duplicate.
+- p.14 `FH-XD11-7U`: Existing unnumbered 3630 XCD 6000 freehub may be this or an earlier hub; inspect original reference before changing/adding.
+- p.15 `SL-PP00-R7U / SL-PP00-R6R / SL-PP00-L`: Unnumbered 6305 X-1 trigger style may be this model; inspect original reference before retitling or duplicating.
+- p.16 `SL-CR00-R7U / SL-CR00-R6R / SL-CR00-L`: Existing6306 originally X-1 thumb style, Chroma group and yellow accents, now retitled SL-X102 by 1992 pass. Original has no exact model field; hold likely duplicate.
+- p.16 `CW-XE00`: Existing2002 originally unnumbered XCE crank (50-40-28T,110/74BCD), now CW-XE01 after1992 pass; original has no exact model, hold potential duplicate.
+- p.27 `PL-RA00`: Review edition/code conflict before any change. Existing bare Radius row 1980-1990 has no exact code; catalogue family supports model naming, inspect if photo-only ambiguity matters. Original VeloBase source MODEL field blank, only Radius name, alloy body/cage, steel axle, platform 9/16x20. Exact RA00 identity unresolved; no new RA00 duplicate inserted.
+
+Original model-field recovery is matching corroboration; all applied component changes are supported by the1990 catalogue or explicitly preserve the already-held1992 specifications. Indexed original-reference URLs and details are saved in `original-model-review-11-20.txt` and `review-01-10.txt` in the scratchpad. No other catalogue was newly ingested during this pass.
