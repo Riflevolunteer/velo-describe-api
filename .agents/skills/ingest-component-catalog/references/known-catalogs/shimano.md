@@ -2312,3 +2312,11 @@
 - Corrects the TODO assumption that FC-M700 is a missing component row. June 1984 dealer catalogue (source 26), printed pp.16–17, explicitly pairs touring and off-road Deore XT with FC-6206; existing row 1797 is dated 1984–87. Printed p.107 lists Biopace 48/50T outer, 38/44T middle and 28T inner. The December 1983 sheets (source 344) cover derailleurs, brakes and hubs, not a crankset.
 - 1985 Raleigh Crested Butte spec 3564 says “Shimano XT cold forged alloy, 46/36/26 - 175mm”. Neither the group name nor those held pages establish this fitment as FC-6206; do not create FC-M700 or substitute later FC-M730. Leave NULL pending an original Raleigh photo or dated parts document. Row 1797 and all dates/links unchanged.
 - Read scans `shimano_bicycle_system_components_1984_page_16_main_image.jpg`, `_17_`, `_107_`; downloaded under `/private/tmp/existing-source-review/`. Review summary there is `review.md`. No SQL applied.
+
+
+## Shimano BB brake-code classification review — 2026-11-13
+
+- Closed the TODO prefix-collision question after checking the live DB and existing catalogue records. All 12 Shimano rows with BB codes in Brakes are legitimate period brake records: 964 BB-300; 969 BB-330 / BR-6200; 1010 BB-100 / BR-TC10; 1011 BB-110; 1012 BB-200; 1013 BB-210; 1014 BB-250 / BR-TS30 / BR-MX10; 7456 BB-400; 7457 BB-240; 7458 BB-230 / BR-TS40; 7459 BB-120 / BR-TC30; 7479 BB-500. A BB prefix alone is not a category identifier.
+- Visually checked the December 1974 catalogue, printed p.25: Model BB-210 Auto Adjust side-pull caliper. https://www.disraeligears.co.uk/site/a_complete_line_of_shimano_1975_page_25.html
+- Visually checked the May 1978 catalogue, printed p.21: BB-300 side-pull and BB-400 centre-pull, both Shimano-600; p.37: Tourney BB-240 / BB-230 side-pulls, Shimano-500 BB-500 centre-pull and Tourney BB-120 centre-pull; p.38: Tourney BB-100 centre-pull. https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_may_1978.html
+- No DB changes, retitles, merges, inserts or year changes. Existing qualifications on inferred later BR-code equivalents (especially 1014) remain; this review resolves the category/prefix question only. TODO moved to Done.
