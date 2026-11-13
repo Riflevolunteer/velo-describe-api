@@ -126,3 +126,9 @@
   inserted; 43 specs link to components. Second execution affected zero
   rows throughout. Read-back: 1986 = 6 bikes / 79 specs / 52 links;
   1994 = 8 bikes / 145 specs / 43 links. No component rows changed.
+
+## Proxima 1/E stem link — 2026-11-13, user approved
+
+- The c.1994 model table (source 378, spread 12) prints PIANTONE `CINELLI 1/E` for Proxima. Linked stem spec 20245 to existing component 6490 `Cinelli 1E`. Slash normalization produces `cinelli 1 e`, which needs its own generator key; added an override scoped to Proxima and working year 1994.
+- Component 6490 year_to extended 1986 -> 1994 from this fitment, source_ref 1 -> 378; year_from 1980 retained. The catalogue date remains c.1994, not a printed publication year. No new component, title or description changes. Handlebar spec 20244 also prints 1/E but remains NULL: the stem row cannot identify a handlebar.
+- Compared all 85 CSVs before/after: generated links 6330 -> 6331, only the Proxima stem mapping changes. Live DB snapshots across 18,283 specs confirm only 20245 changes from NULL to 6490; SQL rerun zero affected rows. Files: `/private/tmp/cinelli-proxima-1e/proposed.sql`, `before-generator.sql`, `after-generator.sql`, `generator.diff`, `before-links.tsv`, `after-links.tsv`.

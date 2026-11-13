@@ -306,6 +306,7 @@ Miyata Omnium / 912 gearing and GMG shifters do not establish RD-6207 versus RD-
 
 ## Open: held-source follow-ups
 
+
 Targeted reviews completed **2026-11-12**, against the held page images and live DB. Dia-Compe additions and links subsequently loaded on user approval (see Done). The unresolved identifications below remain open; earlier coverage snapshots have not been recounted.
 
 - **Universal ART. 130/131 — source found, bike identification unresolved**: source 339 printed pp.11–12 (scans 15–16) says **130 = small front, 43–56mm; 131 = standard front, 44–62mm; 133 = standard rear**. Thus `130/131` is not an established front/rear pair. Spec **6595**, 1981 Bianchi Super Turismo, stays unlinked. Row 1069 shares the double UNIVERSAL arm lettering, but its bare-caliper photo gives no numbered model or measured reach. Need a Bianchi parts document or measurements/back markings before a precise row/mapping; keep 1069 / 1071 unchanged.
@@ -322,6 +323,8 @@ Review evidence and proposed actions: `/private/tmp/existing-source-review/revie
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
 
 ## Done
+
+- **2026-11-13 Cinelli Proxima 1/E stem (user approved, +1 link)**: linked stem spec **20245** -> existing **6490 Cinelli 1E**. Source **378**, model-table stem `Cinelli 1/E`, working catalogue date **c.1994** (not a printed publication year). Extended component `year_to` **1986 -> 1994**, `source_ref` **1 -> 378**; `year_from` remains 1980. Added Proxima/1994-scoped generator override. All **85 CSVs** compared: **6330 -> 6331** generated links, only this mapping changes; live snapshot confirms the same sole NULL-link update. Handlebar **20244** remains unlinked. SQL rerun zero affected rows. SQL/evidence: `/private/tmp/cinelli-proxima-1e/`; Cinelli bike/component notes updated.
 
 - **2026-11-12 Motobécane May 1985 spares catalogue (user approved, +16 links)**: Velo Vintage à Gogo t26128, 38 unique pages, registered as data_source **381**. New rows **10980 Nervar 2020** (1985-87), **10981 Nervar 3020** (1984-89), **10982 / 10983 Nervar 2023 / 3023 (triple)**, **10984 Nervar 2010 / 2011** (1985), **10985 Maillard Atom 500RA** (pedal, 1982-85). Linked 4 Nervar 2020, 7 Nervar 3020 and 5 Atom 500 RA Peugeot specs; generator overrides added ("Nervar 2020 S sealed B.B." held null). year_to -> 1985 on 2112 700 Compact, 3387 Helicomatic hub (description expanded), 7243 Atom Sport, 3394 Maillard 700 small flange, 1877 Stronglight 103, 7769 Weinmann 144-1, 8765 Sedisport, 6834 Michelin Elan, 10007 Huret Rival braze-on. Generated links 6314 -> 6330. Notes in `known-catalogs/motobecane.md`.
 - **2026-11-12 Lyotard 77R (user approved, +3 links)**: Tonton Vélo Lyotard pedal catalogue (t=605, German / English, c. 1977-81) registered as data_source **380**. New **10979 Lyotard 77R** (Pedals, 1981-83). Linked **11279** (1982 Peugeot P 10), **11599** (1982 Peugeot NL H 10), **11728** (1983 Peugeot UO 5 Club). Year-ranged generator overrides added; generated links 6311 -> 6314, only those three. Existing Lyotard rows' years all cover the catalogue, unchanged. SQL: scratchpad `lyotard-tontonvelo.sql`; notes in `known-catalogs/lyotard.md`.

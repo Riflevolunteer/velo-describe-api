@@ -2815,6 +2815,8 @@ const COMPONENT_OVERRIDES = {
     'sr ah alloy': [{ from: 1980, to: 1986, id: 7902 }], // 1986 Raleigh Technium 440 USA
     // 1982 Battaglin: Cinelli 1/R is the 1R (1/Record); the early version ends 1979.
     'cinelli 1 r': [{ from: 1973, to: 1979, id: 6492 }, { from: 1980, to: 1985, id: 6491 }], // 1973 Cinelli catalogue attests the early 1/Record
+    // c. 1994 Cinelli model table: Proxima PIANTONE is 1/E, the existing 1E stem.
+    'cinelli 1 e': [{ bike: 'Proxima', from: 1994, to: 1994, id: 6490 }],
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'ritchey force': [{ from: 1988, to: 1992, id: 8400 }], // Force Directional (Mountain)
     'ritchey force comp': [{ bike: 'Grizzly', from: 1991, to: 1991, id: 8399 }], // 1991 Bianchi Grizzly (MTB): Force Comp (Mountain); bike-keyed so a road bike's bare "Force Comp" doesn't take the Mountain row (8401 is Road)
