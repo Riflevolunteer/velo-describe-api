@@ -522,7 +522,7 @@ Weinmann 1129 / 1130 570.
   braze-on / clamp weights alongside the 1988 brochure's 90 g. 6094 Premier shifters (1st
   generation) dated 1985-1985, 11.5 g each (the 1988 Premier levers, 35 g retro-friction, are 6095).
   Added 11003 Super Corsa hubs (forged anodised alloy, 28-32-36; 1981-1985, 1981 from the
-  unlinked Colnago Sprint/81 spec "Ofmega Super Corsa, 36 holes", still to link) and 11004
+  Bianchi Sprint/81 spec 6553 "Ofmega Super Corsa, 36 holes", linked by override) and 11004
   "Ofmega 2150, BMX" crankset (170 mm, 42T, 380 g). Left alone: 9650 Gran Premio pedals (398 g
   with steel cage here vs 8784's 1979 320 g silver anodised), Mundial crank 470 / 486 g vs 665 g
   in 1988, Mistral RD / shifter generations, Super Competizione crank versions; no weight, not

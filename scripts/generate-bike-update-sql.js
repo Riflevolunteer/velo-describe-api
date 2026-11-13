@@ -1463,6 +1463,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo chorus 36h': [{ from: 1987, to: 1991, id: 3249 }], // 722/101 Chorus freewheel hub (Regina freewheel)
     'campagnolo athena 36h': [{ from: 1988, to: 1991, id: 3236 }], // D300, Athena
     'ofmega pista 36h': [{ from: 1980, to: 1990, id: 3445 }], // Super Competizione Track (high flange), as 1987 Pista
+    'ofmega super corsa 36 holes': [{ from: 1981, to: 1985, id: 11003 }], // 1981 Bianchi Sprint/81: Ofmega Super Corsa hubs (Guida '85/86; row dated 1981 from this spec)
     // 1982 Bianchi US racing brochure (saarf.london).
     'campagnolo record pista': 3270, // Campagnolo 1036, Record Pista (high flange), as the 1983 Super Pista
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
