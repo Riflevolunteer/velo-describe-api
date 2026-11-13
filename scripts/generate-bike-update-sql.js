@@ -2723,6 +2723,9 @@ const COMPONENT_OVERRIDES = {
     "cinelli giro d'italia": 2801, // Cinelli 64 Giro D'Italia (70's model)
     // c.1994 Cinelli Supercorsa / Unica: explicit 26mm clamp selects the later Giro d'Italia row.
     'giro d’italia 26': [{ from: 1994, to: 1994, id: 2800 }],
+    // c. 1994 Cinelli MTBs (source 378), as the Giro d'Italia 26 / 1/E links: exact 3ttt ATB bar names, rows extended to 1994.
+    '3t extreme': [{ bike: 'Velociraptor', from: 1994, to: 1994, id: 8307 }], // 3ttt CEXT, Extreme
+    '3t procompe': [{ bike: 'Argento Vivo', from: 1994, to: 1994, id: 8331 }], // 3ttt CPRO, MTB Procompe
     // 1973 Falcon San Remo Model 94: bare "Cinelli", as the 1974 San Remo 94's Giro d'Italia bar. Bike-scoped:
     // the San Remo 96 / 98, Kalkhoff, Battaglin and other bare "Cinelli" bars have no precedent.
     cinelli: [{ bike: 'San Remo Model 94', from: 1973, to: 1973, id: 2801 }],

@@ -143,3 +143,13 @@
   brake set, matching the 8-speed M737 crank / rear); was an explicit 1994
   null. Their Brake Levers follow through integratedBrakeLeverLink. Caveat:
   an ST-M737 7-speed control may also exist for 1994; the DB has no row.
+
+## Velociraptor / Argento Vivo 3T bar links — 2026-11-13, user approved
+
+- Source 378, c.1994 model table: Velociraptor "3T Extreme" -> 8307 3ttt CEXT, Extreme and Argento Vivo "3T Procompe"
+  -> 8331 3ttt CPRO, MTB Procompe; each name matches one row. Bike-scoped 1994 overrides `3t extreme` / `3t procompe`,
+  as the Giro d'Italia 26 and 1/E links above.
+- Component year_to extended 1991 -> 1994 on both, source_ref 137 (3ttt c. 1991 Mathi catalogue, which titled / added
+  them) -> 378; year_from kept (8307 1989, 8331 1991). No title or description changes.
+- Generator links 6440 -> 6442, only these two handlebar mappings. Guarded SQL rerun affects 0 rows.
+- Left: Genius Machine / Soft Machine "3T Pro Light" and Genius Strada "Cinelli Eubios 26" (no rows).
