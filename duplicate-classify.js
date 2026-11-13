@@ -28,6 +28,9 @@ const COSMETIC_WORDS = /\b(black|white|silver|gold|red|blue|green|grey|gray|yell
 // stem and lever styles, knuckles, friction vs aero shifters, crank profile words and part codes (907AS).
 const CONFIG_WORDS = /\b(double|triple|single|pista|strada|road|track|cross|tandem|mtb|touring|left|right|lh|rh|front|rear|quick release|qr|braze[- ]?on|clincher|tubular|\d+[ -]?(speed|mm|t|bcd)|bcd|short|long|cage|compact|(high|low|large|small)[ -]?flange|flange|pieces?|mount|clamps?|band|tab|spiders?|arms?|pins?|flutes?|fluted|rails?|springs?|wires?|taper|cottered|cotterless|expander|steel|alloy|alu(minum|minium)?|titanium|cro-?moly|chromoly|leather|suede|forged|smooth|slotted|holes|drilled|pulleys?|inner|outer|aero|sidepull|quill|girder|ferrule|sleeved|speed indicator|grooved|straight|(longer|shorter) lever|plastic body|plugs?|(squared|rounded) base|races|flats|milled|(one|two|single|twin)[ -]bolts?|stops?|(narrow|wide) (enlarged )?cent(er|re) section|\d+ ?(sp|cogs?)|cassette|freewheel|700c|quick releases|bends?|eyelets?|perforated|styles?|adjustable|wood(en)?|knuckles|porteur|drop|city|cent(er|re)pull|tips?|tension|(non)?covered|replac?e?able|swedged|relieved|round(ed)? base|vertical|parallelogram|underslung|depression|integrated|slot|friction|aerodynamic|(chain)?rings?|guard|narrow|\d+ ?g|no\. ?\d+|\d{3,4}[a-z]{1,2})\b/i
 const GENERATION_WORDS = /\b(v\d|version|type \d|gen|generation|first|second|third|1st|2nd|3rd|early|earlier|later|late|new style|old style|mk ?\d|mark \d|prototype)\b/i
+// Tyre casing density, wheel dimensions and fractional inch fittings describe
+// construction or fitment, even when a qualifier contains only the measurement.
+const CONFIG_DIMENSIONS = /\b\d+\s*tpi\b|\b(?:650|700)c?\b|\b\d{3}\s*x\s*\d+(?:\.\d+)?\b|\b\d+(?:-\d+\/\d+|\/\d+)?\s*(?:"|inch(?:es)?\b)/i
 
 // Qualifiers in round or square brackets ("[black label]").
 const parentheticals = (title) => (title.match(/\(([^)]*)\)|\[([^\]]*)\]/g) || []).map(s => s.slice(1, -1).trim()).filter(Boolean)
@@ -96,7 +99,7 @@ function relate(row, survivor) {
   const theirs = new Set(parentheticals(survivor.title).map(fold))
   const difference = [...mine.filter(p => !theirs.has(fold(p))), ...[...theirs].filter(p => !mine.map(fold).includes(p))].join(' ')
   if (yearsDisjoint(row, survivor, true) || GENERATION_WORDS.test(difference)) return 'generation'
-  if (CONFIG_WORDS.test(difference)) return 'configuration'
+  if (CONFIG_WORDS.test(difference) || CONFIG_DIMENSIONS.test(difference)) return 'configuration'
   if (COSMETIC_WORDS.test(difference)) return 'cosmetic'
   // A bare title beside a qualified one ("Sugino GT" / "Sugino GT (triple)")
   // is not a spelling variant; leave it to a person.
@@ -109,6 +112,7 @@ const MERGE_CANDIDATE = new Set(['duplicate', 'cosmetic'])
 // case by case, none merged). buildGroups reports them as 'variant', so they stop showing as merge
 // candidates.
 const REVIEWED_VARIANTS = new Map([
+  [6277, 'finish model: LD-1600 Cyclone Black Series, listed separately from silver 6276 in SunTour No. 60 (1982); recorded 2026-11-13'],
   [4789, 'later design: SunTour XCD (1990), revised body and cable clamp beside RD-XD00-GX 4790; exact later code unverified (kept 2026-11-08)'],
   [387, 'special edition: Modolo Speedy La Vie Claire (levers)'],
   [887, 'special edition: Modolo Speedy La Vie Claire (brakes)'],
@@ -193,6 +197,38 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  // Decisions already recorded in TODO/catalogue notes, registered 2026-11-13.
+  [16, 17], // Cambio Rino: photographed English-thread cups vs Italian-thread complete set
+  [544, 545], // Bowden Touriste: different arm profiles and cable-anchor construction in source photos
+  [2122, 2131], // Sachs-Maillard: five-speed Normandy vs six-speed 13-24 freewheel
+  [2583, 2584], // Simplex AV 223: metal mounting clamp vs moulded mounting body; different constructions
+  [2518, 7434], // Shimano EA-200 code reuse: Dura-Ace EX vs earlier Dura-Ace front
+  [2641, 8253], // SunTour Seven: separate 1976 row kept by prior decision
+  [2644, 7848], // Sprint 9000 front: band clamp vs braze-on
+  [2436, 2443], // Huret Pilot 3080-00 vs Hi-Stepper 3080-00 S ATB cage
+  [2367, 9516], // Gipiemme Cronospecial 800AS vs Selectron 802 AE
+  [2365, 9854], // Gipiemme Azzurra (Simplex-made) vs Azzurro SB 802
+  [2295, 2300], // Campagnolo 0104007: four-hole vs three-hole cage
+  [2439, 8960], // ARIS New Success and AV 66.3 D: separately dated versions by prior decision
+  [2484, 7721], // Shimano FD-AT11 code reuse: 1979 Altus vs 1993 Altus
+  [6276, 6277], // Cyclone silver vs separately sold Black Series
+  [5973, 8812], // Campagnolo Syncro: renumbered version retained by prior decision
+  [6239, 6240], // Simplex SLJ5057 silver vs black, retained by prior decision
+  [6268, 6269], // SunTour Command: 6/7-speed vs 7/8-speed
+  [6302, 6303], // SunTour Superbe Pro friction vs indexed shifters
+  [6107, 6108], // Aris Classic: retained by prior review
+  [6161, 6162], // Dura-Ace Black Series vs L-284, retained by prior review
+  [9142, 9517], // Gipiemme Crono Special vs Selectron 870 SE
+  [6050, 9143], // Gipiemme Crono Sprint 870 DS vs Sprint, retained by prior review
+  [6334, 8854], // Zeus Gran Sport vs Ref. 11, retained by prior review
+  [6335, 8854], // Zeus Gran Sport 254g vs Ref. 11; 254g is not a single-lever weight
+  [6245, 6248], // Sturmey shifters retained by prior review
+  [10724, 10725], // OMAS 132 vs 132 ST: different seals, axle ranges and weights
+  [10728, 10729], // OMAS 130 vs 130 ST: different seals, axle ranges and weights
+  [5029, 10477], // Gipiemme Tecno 724 road vs M 724 MTB, different rim dimensions
+  [10474, 10475], // Gipiemme Tecno 716 PRO alloy vs C 716 PRO carbon rim
+  [10476, 10478], // Gipiemme Tecno 416 road vs M 416 MTB
+  [10476, 10518], // Gipiemme Tecno 416 alloy vs C 416 carbon rim
   [33, 40], // different part: Campagnolo Record Pista / Campagnolo 1046, Record Pista
   [660, 691], // different part: Dia-Compe 980 / Dia-Compe Gran Compe GC980
   [692, 9107], // different part: Dia-Compe Gran-Compe / Dia-Compe Gran Compe 710

@@ -51,6 +51,19 @@ test('fitting differences are configurations', () => {
   assert.strictEqual(relate(row('Zeus 2000 Titanium (Pista)'), row('Zeus 2000 Titanium (Strada)')), 'configuration')
 })
 
+test('casing density, wheel sizes and fractional inch fittings are configurations', () => {
+  const pairs = [
+    ['Schwalbe Blizzard Pro (37 Tpi)', 'Schwalbe Blizzard Pro (67 Tpi)'],
+    ['Schwalbe Stelvio Dual Compound', 'Schwalbe Stelvio Dual Compound (650)'],
+    ['Mavic Helium clincher (26")', 'Mavic Helium clincher (622x15)'],
+    ['FRM A-Set (1")', 'FRM A-Set (1-1/8")'],
+  ]
+  for (const [a, b] of pairs) {
+    assert.strictEqual(relate(row(a), row(b)), 'configuration')
+    assert.strictEqual(relate(row(b), row(a)), 'configuration')
+  }
+})
+
 test('flange, material and mounting differences are configurations', () => {
   assert.strictEqual(relate(row('Galli (low flange, GG skewer)'), row('Galli (high flange, GALLI skewer)')), 'configuration')
   assert.strictEqual(relate(row('Alas bottom bracket (titanium)'), row('Alas bottom bracket (steel)')), 'configuration')
