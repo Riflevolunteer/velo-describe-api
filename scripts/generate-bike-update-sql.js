@@ -2716,6 +2716,8 @@ const COMPONENT_OVERRIDES = {
     'aluminium race bend cables routed through the bar': [{ from: 1979, to: 1983, id: 2901 }],
     'aluminium race bike ribbon tape': [{ from: 1979, to: 1983, id: 2901 }],
     "cinelli giro d'italia": 2801, // Cinelli 64 Giro D'Italia (70's model)
+    // c.1994 Cinelli Supercorsa / Unica: explicit 26mm clamp selects the later Giro d'Italia row.
+    'giro d’italia 26': [{ from: 1994, to: 1994, id: 2800 }],
     // 1973 Falcon San Remo Model 94: bare "Cinelli", as the 1974 San Remo 94's Giro d'Italia bar. Bike-scoped:
     // the San Remo 96 / 98, Kalkhoff, Battaglin and other bare "Cinelli" bars have no precedent.
     cinelli: [{ bike: 'San Remo Model 94', from: 1973, to: 1973, id: 2801 }],

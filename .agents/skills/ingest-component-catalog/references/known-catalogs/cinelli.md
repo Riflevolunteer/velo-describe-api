@@ -103,3 +103,8 @@
 
 - Cinelli c.1994 bicycle catalogue, source 378, spread 12 model table: Proxima PIANTONE is `CINELLI 1/E`. Existing row 6490 `Cinelli 1E` matched by model; no insert, retitle or description rewrite. Extended year_to 1986 -> 1994, source_ref 1 -> 378; retained year_from 1980. This is later bike-fitment evidence; the catalogue's working date is c.1994, not an original printed publication year.
 - Linked bike stem spec 20245 -> 6490 with a Proxima/1994-scoped generator override for `cinelli 1 e`. Handlebar spec 20244 remains unlinked. Live before/after snapshots confirm the sole bike-link change; all 85 CSVs compared with only this mapping added (6330 -> 6331). SQL rerun zero changes. SQL/evidence: `/private/tmp/cinelli-proxima-1e/`.
+
+## Giro d’Italia 26 later bike-fitment attestation — 2026-11-13, user approved
+
+- Cinelli c.1994 bicycle catalogue, source 378, model table: the Unica and Supercorsa recorded `Giro d’Italia 26` handlebars identify existing row 2800 `Cinelli 64 Giro D'Italia (26.0 clamp)`. Extended year_to 1990 -> 1994, source_ref 1 -> 378; retained year_from 1990. This is later bike-fitment evidence, with the catalogue's c.1994 date a working attribution rather than a printed year. No new row or changes to earlier Giro variants.
+- Linked bike specs 20226 (Unica) and 20208 (Supercorsa) -> 2800. Exact generator override ranged to 1994. All 85 CSVs compared: only these two mappings added, 6331 -> 6333 generated links. Live DB snapshots confirm those two NULL-link changes only; SQL rerun zero affected rows. Files: `/private/tmp/cinelli-giro26/`.
