@@ -1872,6 +1872,11 @@ const COMPONENT_OVERRIDES = {
     'weinmann 999 de luxe center pull quick release': 7929,
     'weinmann 999 de luxe center pull': 7929,
     'weinmann 999 center pull': 7929,
+    // 2026-11-13 Brakes sweep (user approved).
+    'weinmann 999 de luxe or universal 61 center pull quick release': [{ bike: 'Grand Record', from: 1974, to: 1974, id: 7929 }], // 1974 Motobecane: first-listed option, as the other 1974-75 Motobecanes
+    // 1982 Peugeot (NL) PVN 10 / PXN 10, printed "Mafac 605": Mafac made no 605; the 1980 photo shows a Weinmann 605.
+    '605 side pull': [{ from: 1982, to: 1982, id: 8642 }],
+    '605 side pull with quick release and centring bolt forged dural anodised': [{ from: 1982, to: 1982, id: 8642 }],
     'weinmann centre pull': 7929,
     'weinmann centre pull 999': 7929,
     'weinmann centre pull with hooded levers': 7929,

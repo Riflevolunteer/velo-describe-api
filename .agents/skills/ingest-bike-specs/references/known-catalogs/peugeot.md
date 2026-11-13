@@ -890,3 +890,6 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   'Savoie' "ARIS indexing" -> 6110 ARIS New Success (type 1), and 1989 Mont
   Blanc "Aris Index" -> 6108 Rival Aris Classic 3000, each matched to the
   bike's linked ARIS rear derailleur series. Bike-scoped overrides.
+- 2026-11-13 Brakes sweep (user approved): 1982 NL PVN 10 / PXN 10 "605
+  side-pull" -> 8642 Weinmann AG 605 (1978-86). The catalogue misprints
+  "Mafac 605"; Mafac made no 605 and the 1980 photo shows a Weinmann 605.

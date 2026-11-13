@@ -125,3 +125,6 @@
 - 2026-10-30: 1975 Le Champion "GRAN-TURISMO tubulars" -> 9056 Vittoria Granturismo (the only Gran Turismo tubular row, 1974-78; user's call, maker not printed). +1.
 
 - 2026-11-06 crankset pass: 1975 "TOURNEY Alloy Cotterless 40-52 chainwheel with alloy guard" -> 9562 Takagi Tourney, Three Arrows (row added after the Tourney "left unlinked" note; forged alloy cotterless double with alloy guards, 39-49T inner). 9562 year_to 1974 -> 1975. +1. T.A. Professional still unlinked: rows exist as "Professionnel" (1858 5 vis / 1859 3 attaches, both 1970-84) but nothing picks between them.
+- 2026-11-13 Brakes sweep (user approved): 1974 Grand Record "WEINMANN 999 De
+  LUXE or UNIVERSAL 61, Center Pull, quick release" -> 7929, the first-listed
+  option, as the other 1974-75 Weinmann 999 bikes.

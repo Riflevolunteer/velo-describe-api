@@ -549,3 +549,8 @@ loaded. Battaglin Turismo (mixte city) and Falcon 83 / 89 (utility, deleted with
   EM-30 / EM-50 / GMG, Simplex Prestige stem, Ofmega, AL 11). Two 1983
   Bianchi Shifters cells read "Campagnolo (Super Record) brake levers":
   probably a column slip, worth checking against the catalogue.
+- 2026-11-13 Brakes sweep: 377 of 1049 unlinked. Linked 3 (1982 Peugeot 605
+  x2 -> 8642, 1974 Motobecane Grand Record -> 7929); generator 6437 -> 6440.
+  The 8 mixed front / rear cells (cantilever + U-brake etc.) are planned as a
+  Front Brake / Rear Brake split in TODO.md. The rest are generic, earlier
+  deliberate nulls, or parts with no / ambiguous rows.

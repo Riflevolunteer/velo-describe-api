@@ -29,6 +29,29 @@ Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as
 
 - Drop the inner DB-password encryption (decided 2026-10-29, not applied). `DB_PASSWORD` is a `SecureString` in SSM but its value is also an AES-CTR ciphertext decrypted by `decrypt.js` with the hard-coded key `d6F3Efeq`, so the second layer protects nothing. Steps: put the plain password in local `.env`, run `scripts/create-ssm-params.sh` to update SSM, change `index.js` and the six scripts (`db-query`, `component-diff`, `duplicate-report`, `load-sql`, `generate-bike-update-sql`, `summarize-bike-sql`) to use `config.db.password` directly, delete `decrypt.js` and `test/decrypt.test.js`, deploy and smoke-test `index.js`. Order matters: update SSM and deploy together, or prod gets a plain password it tries to decrypt. Also rotate the DB password afterwards, since the old ciphertext and key are in git history.
 
+- **Split mixed front / rear Brakes cells into Front Brake / Rear Brake specs** (plan, user approved 2026-11-13, not built). One `bike_spec` row can link one component, so the 8 cells below have stayed unlinked on purpose (Peugeot / Raleigh / Miyata passes). Each names a different front and rear brake:
+
+  | bike_id | Bike | Front | Rear |
+  |---|---|---|---|
+  | 945 | 1987 Peugeot Cannon Ball Express | BR-M730 981 | BR-M731 U-brake 982 |
+  | 946 | 1987 Peugeot Alpine Express | BR-MT60 978 | BR-MT61 U-brake 979 |
+  | 1021 | 1989 Peugeot Alpine Express | Exage Mountain cantilever (BR-M450 7212?) | Exage Mountain U-brake (BR-M451 7213 is 1988 only) |
+  | 1022 | 1989 Peugeot Europe Express | Deore XT cantilever (BR-M732 983) | Deore XT U-brake (BR-M733 984) |
+  | 897 | 1986 Peugeot Orient Express | Shimano AT-50 1003 | SunTour XC Sport chainstay (no row) |
+  | 1069 | 1989 Raleigh Ozark | BR-M454 999 | BR-M451 7213 (row 1988 only) |
+  | 1070 | 1989 Raleigh Chinook | BR-M350 7214 | BR-M450 7212 |
+  | 1105 | 1986 Miyata Ridge Runner | Dia-Compe NGC982 697 | SunTour XC (no row) |
+
+  Steps:
+  1. Generator: add `Front Brake` / `Rear Brake` to `LABEL_TO_CATEGORY` (both -> `Brakes`) and to `LABEL_ORDER` after `Brakes`; add `SPLIT_PART_HINTS` (`/\b(front|frt)\b/i`, `/\b(rear|rer)\b/i`). Decide whether a `Brakes` cell auto-splits (a `SPLIT_LABELS`-style rule only when both hints are present) or the CSVs carry explicit Front Brake / Rear Brake columns; explicit columns are safer, since "Cantilever front and rear" and "Dural front/rear CLB" must stay one Brakes spec.
+  2. CSVs (gitignored; back up to the scratchpad first): 1986 / 1987 / 1989 Peugeot, 1989 Raleigh, 1986 Miyata; move the 8 cells into the two new columns as printed, keeping maker wording.
+  3. Overrides: add Front Brake / Rear Brake entries (bike / year scoped) for halves the matcher can't reach; check the 1989 Exage Mountain and M451 dates against the Shimano 1989 catalogue before linking.
+  4. DB: the generator only inserts and back-fills, so delete the 8 old combined `Brakes` rows with a one-off guarded DELETE (bike_id + label + exact value_text) after the new rows load. Regenerate all CSVs before and after and confirm only these bikes change.
+  5. API / client: check `/bikedetail` and the client render the two new labels sensibly (sort order, label text).
+  - Out of scope: the 1985 Peugeot TM 9 G / TH 9 G and 1988 VTT 2 LF cantilever + drum cells (generic, nothing to link either way), and the 1987 Raleigh Zenith 10 / Granada 10 Gents / Lady's 610 / 733 cell (it splits by frame, not front / rear).
+
+- Possible duplicate brake rows (found 2026-11-13): 7929 "Weinmann AG Vainqueur 999 (610 / 750)" (1966-84) and 1136 "Weinmann AG 610 Vainqueur 999" (undated). Resolve before linking the 1987 Raleigh Zenith 10 / Granada 10 Weinmann 610 cells.
+
 ## Open: component data follow-ups
 
 - Shimano BMX group ownership (found 2026-11-06): 18 older Shimano rows still use Campagnolo-owned group 156 "BMX". Review the remaining legacy assignments against Shimano DX (BMX) group 327.
