@@ -23,11 +23,17 @@ for id in "$@"; do
   n=$((n+1)); f="$OUT/$(printf 'p%02d_%s.jpg' "$n" "$id")"
   [ -s "$f" ] && continue
   best=""
-  for t in 1 2 3 4 5; do
-    body=$(curl -s -m 60 "https://web.archive.org/cdx/search/cdx?url=velo-pages.com/main.php%3Fg2_view%3Dcore.DownloadItem%26g2_itemId%3D${id}&matchType=prefix&output=txt&fl=original,timestamp,mimetype,length&filter=mimetype:image/jpeg&filter=statuscode:200&limit=60")
-    if echo "$body" | grep -qi "temporarily offline\|too many requests"; then sleep $((t*10)); continue; fi
-    best=$(echo "$body" | grep '^http' | sort -k4 -n -r | head -1)
-    break
+  # Archived URLs carry extra parameters (g2_serialNumber=2 ...), which an exact-URL prefix query
+  # missed (2026-11-13), so match the item id as a whole parameter over main.php*, on both hosts.
+  for host in velo-pages.com www.velo-pages.com; do
+    for t in 1 2 3 4 5; do
+      body=$(curl -s -m 90 "https://web.archive.org/cdx/search/cdx?url=${host}/main.php*&output=txt&fl=original,timestamp,mimetype,length&filter=mimetype:image/jpeg&filter=statuscode:200&filter=original:.*g2_view%3Dcore.DownloadItem.*g2_itemId%3D${id}(%26.*)?\$&limit=60")
+      if echo "$body" | grep -qi "temporarily offline\|too many requests\|<html"; then sleep $((t*10)); continue; fi
+      best=$(echo "$body" | grep '^http' | sort -k4 -n -r | head -1)
+      break
+    done
+    [ -n "$best" ] && break
+    sleep 3
   done
   if [ -z "$best" ]; then echo "$id: no capture found (or the Archive is offline)"; sleep 3; continue; fi
   orig=$(echo "$best" | awk '{print $1}'); ts=$(echo "$best" | awk '{print $2}')
