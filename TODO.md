@@ -317,7 +317,8 @@ Review evidence and proposed actions: `/private/tmp/existing-source-review/revie
 
 ## Open: Shimano bottom bracket cleanup
 
-- 121 BB-UN73 still needs dated evidence. Its 1998-1998 dates were inferred on 2026-11-02 from the UN70 / UN71 / UN72 sequence (previously undated). The full 1998 and 1999 US consumer catalogues were loaded 2026-11-06 (sources 365 / 366); both specify BB-UN72/-E for XT and contain no UN73, including tool lists. Hunt a later dated dealer manual or service document; do not re-check these two catalogues.
+- 121 BB-UN73 still needs evidence for its introduction year. Its 1998-1998 dates were inferred on 2026-11-02 from the UN70 / UN71 / UN72 sequence (previously undated). The full 1998 and 1999 US consumer catalogues were loaded 2026-11-06 (sources 365 / 366); both specify BB-UN72/-E for XT and contain no UN73, including tool lists. Do not re-check these two catalogues.
+  - **2026-11-13 research:** Shimano's [2005 specifications, dated March 1, 2004](https://productinfo.shimano.com/pdfs/product/archive/2005_SPECIFICATION.pdf), list BB-UN73 in the Bottom Bracket (ATB / NEXAVE) table; the [2007 specifications](https://productinfo.shimano.com/pdfs/product/archive/2007_SPECIFICATION.pdf) also list it. These establish later availability and show that the inferred 1998-only range needs revision, but do not establish an introduction or discontinuation year. No DB dates changed in this review. Next: inspect a dated c.2000-2003 catalogue or service document to establish the earliest attestation; retain the introduction-year question as open.
 
 - Name collision: 12 Brakes rows carry BB- codes (Tourney / 600 / 500); no change planned.
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
