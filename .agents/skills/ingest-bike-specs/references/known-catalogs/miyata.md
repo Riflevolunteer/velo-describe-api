@@ -1,5 +1,59 @@
 # Miyata catalogs processed so far
 
+## 1979 Miyata — loaded (2026-11-13, source 386)
+
+- CSV: `bike_specs/1979_miyata_spec.csv`; approved SQL:
+  `/tmp/miyata-1979-review/1979_miyata.sql`; readable review:
+  `/tmp/miyata-1979-review/review.md`. User approved and loaded 9 bikes,
+  189 specs and 72 links; all 11 component date corrections applied.
+  Source 386, `1979 Miyata catalogue`, country US. Readback confirmed
+  totals and no specs without provenance. Full SQL rerun affected zero rows.
+- Source: https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/1979%20MIyata%20Catalogue.pdf
+  Nine-page manufacturer scan: specification chart on PDF p. 9; model prose
+  pp. 2-7. US edition stated by Toyoda America Inc., New York / Chicago /
+  Los Angeles on pp. 8-9. Cover and history/warranty pages have no additional
+  build specifications. Chart transcribed from full-size overlapping crops;
+  ignored handwritten prices and corrected OCR codes RND, CTD and KEC.
+- Nine complete bikes: Racing 1200 / 912; Touring 1000 / 800; Sports 710 /
+  600 / 400 / 310 / 200. Separate 1200 / 1000 frame-only offers excluded.
+  No junior, city or mixte models in this scan. 22 existing labels, 189
+  specs, 72 links. Only 1000 (15-speed) and 912 (12-speed) have
+  explicit speed counts; no gearing inferred for the other seven models.
+- Period/default judgments: 1200 New Dura-Ace -> EA-200 (7434) / DA-100
+  (7427), the 1977 generation on the stated freewheel build, rather than
+  the 1986 7400 mappings or EX-only freehub derailleur. Bare Dura-Ace
+  headset -> 3098, side-pulls -> first-generation 989, low-flange QR hubs
+  -> 3556; specific variants are not printed. Its Extra crank, brazed-on
+  shifters and unspecified-speed gold freewheel remain unlinked.
+- 912 600EX -> Arabesque FD 2480 / short-cage RD 4468 / clamp shifters
+  6147 / normal-reach brakes 969; clamp and reach are period defaults,
+  not printed part codes. Explicit low-flange freehub -> 3540; six-speed
+  cluster -> generic 600EX Uniglide cassette 1200 (retained under source
+  Freewheel label). Printed `600EXLD, 52x42` crank conflicts with the
+  LD row's gearing; preserved and unlinked.
+- SunTour VGT Luxe -> 4705 second version on 710 / 600 / 400, replacing
+  the automatic 4704 first version (ends 1976) only for these bikes.
+  Seven front -> 2641; Seven rear and Cyclone front stay unlinked because
+  period variants overlap. 1000's explicitly five-speed Pro-Compe -> 2242;
+  other Pro-Compe and Perfect clusters unlinked without speed counts.
+  VX shifter unlinked without clamp/braze evidence. PDL-M / PUB-10 /
+  Bar-Con use current 1978-era rows 6264 / 7796 / 7792; DLW -> 6283,
+  UB-10 -> 8057. 1000 PDL-S -> 8055, with year_to corrected 1975 -> 1979.
+- Exact named Sakae cranks and cockpit parts support year_from 1980 ->
+  1979 for 1757, 2910, 7874, 7875, 7876, 7878, 7888, 7902; Jaguar II
+  family 5234 likewise 1980 -> 1979. MKS Unique Custom Road name plus
+  forged-alloy / Cr-Mo construction matches 3869, year_from 1985 -> 1979.
+  All 11 guarded date corrections are included before the bike inserts in
+  the review SQL, without changing component provenance or descriptions.
+- Generic rims, MYT tyres, KEC / uncertain HKK chains, unspecified Dia-Compe
+  brakes/levers, generic saddles/posts and unidentifiable pedal models stay
+  plain text. Royal-PIESL II is the printed I/1 glyph; linked to 7907
+  RY-P1ESL II by the Extra Super Light name and titanium bolt specification.
+- Regression against all 85 pre-existing CSVs: zero removed or altered SQL
+  statements; precisely 470 new statements, all for 1979 Miyata. Total links
+  6446 -> 6518, exactly the 72 new links. Post-load Miyata totals:
+  1979 9 bikes / 189 specs / 72 links; 1986 18 / 395 / 156.
+
 ## 1986 Miyata — `1986_miyata_spec.csv` (18 bikes, 395 specs, 131 linked)
 
 - Source: SS Cycleworks bike museum scan
