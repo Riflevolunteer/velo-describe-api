@@ -18,6 +18,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/maillard.md](known-catalogs/maillard.md) — Maillard (4 entries)
 - [known-catalogs/huret.md](known-catalogs/huret.md) — Huret / Sachs-Huret (4 entries)
 - [known-catalogs/le-cyclo.md](known-catalogs/le-cyclo.md) — Le Cyclo (3 entries)
+- [known-catalogs/fiamme.md](known-catalogs/fiamme.md) — Fiamme (1 entry)
 - [known-catalogs/galli.md](known-catalogs/galli.md) — Galli (5 entries)
 - [known-catalogs/look.md](known-catalogs/look.md) — Look (4 entries)
 - [known-catalogs/universal.md](known-catalogs/universal.md) — Universal brakes (1 entry)
