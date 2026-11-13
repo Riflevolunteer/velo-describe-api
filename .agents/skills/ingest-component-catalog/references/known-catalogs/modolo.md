@@ -1,5 +1,79 @@
 # Modolo catalogs processed so far
 
+## Modolo Factory Price Lists — March 1986 (Velo Aficionado, 11 sheets), loaded 2026-11-13
+
+- `data_source` 387, label `Modolo Factory Price Lists (March 1986)`, country IT.
+  Source: https://velo-aficionado.squarespace.com/blog/modolo-brakes-quick-id-guide-factory-price-guides-and-1984-catalogue
+  Download manifest `/tmp/modolo-1986-review/manifest.json`; combined scan
+  `/tmp/modolo-1986-review/factory-guide.pdf`; listing/diff `review.md`, SQL
+  `modolo-1986.sql`, before/after snapshots and verification in that folder.
+  Sheets 1-9: brake factory list, explicitly March 1986; sheets 8-9 replace
+  November 1985. Sheet 10: dated March 1986 handlebar/stem price list.
+  Sheet 11: undated companion technical sheet; used for legible construction
+  and dimensions of independently named parts, never as dating evidence.
+  Available originals are only 700px wide: ambiguous tiny codes and weights
+  left unread. No 1984 catalogue or standalone brake-ID photographs ingested.
+- Added (all 1986-1986, source_ref 387, UUID source_ids): Handlebars
+  **11132 Modolo Professional, anatomic** (black/silver, Dural 1.4mm wall,
+  40-44cm c/c, group Professional 89), **11133 Modolo Speedy, anatomic**
+  (silver, Dural 1.6mm wall, 38-44cm c/c, group Speedy 90); Shifters
+  **11134 Modolo R0142, Orion** (complete nylon-bagged control, Q0022 bulk
+  pack). Finish, width and quill options grouped within model families.
+- Updated 28 existing rows (all source_ref -> 387), preserving independent
+  weights and later date evidence. Cockpit rows 2869 / 2870 bars and
+  6593 / 6594 / 6598 / 9473 / 9474 stems gain finishes, clamp choices,
+  construction and sizes. Earlier start years: 2869 Equipe bar, 6593 closed
+  Equipe stem, 9473 Speedy stem and 9474 Master SSC stem **1988 -> 1986**;
+  6594 hinged Equipe stem **NULL/NULL -> 1986/1986**.
+- **Later start:** 2870 Master SSC anatomic bar **1980 -> 1986**, year_to
+  1988 retained. The old 1980 was a retained Velobase bucket; Modolo's 1990
+  timeline explicitly dates anatomic bars to 1986, now supported by the
+  contemporary list. The 1988 secondary source supplied no earlier
+  attestation, and no existing bike specs reference 2870. This is not an
+  inference from absence in a partial catalogue.
+- **Dating conflict:** normal and hinged clamps are both priced in March
+  1986, despite the 1990 timeline dating openable clamps to 1987. Preserve
+  the earlier contemporary attestation; do not push these stems to 1987.
+- Brakes: 866 Sporting America year_to **1980 -> 1986**; 867 Corsa
+  **NULL -> 1986**; 870 Kronos, 872 Equipe, 888 Sporting **1985 -> 1986**;
+  889 Superprestige **1984 -> 1986**; 890 Team **1980 -> 1986**.
+  886 Speedy and 891 Master-Pro descriptions enriched, later end dates
+  retained. Complete caliper codes: Kronos R0010, Master-Pro R0116/R0117;
+  Speedy R0054/R0055 standard, R0056/R0057 compact. Reach, finishes and
+  supplied levers/transmissions recorded; no prices stored.
+- Brake levers: 369 tandem **NULL/NULL -> 1986/1986**; 377 Orion, 382 Corsa,
+  384 Master-Pro, 385 Professional, 389 Sporting year_to **1985 -> 1986**;
+  379 Sport, 380 Superprestige, 381 Team **1980 -> 1986**. Descriptions also
+  updated for 374 Kronos and 386 Speedy with their compatible end dates
+  retained. Shared Professional/Superprestige replacement codes R0017/R0018
+  recorded without merging separately marketed families on shared spares.
+  Shifter 6090 Kronos gets R0141, carbon-fibre construction and Q0021 pack.
+- Retitles (old -> new, search_text regenerated): 866 `Modolo America` ->
+  `Modolo Sporting America`; 870 `Modolo Kronos` -> `Modolo R0010, Kronos`;
+  369 `Modolo tandem` -> `Modolo Speedy, tandem right lever`;
+  381 `Modolo Team` -> `Modolo R0200 / R0201, Team`;
+  6090 `Modolo Kronos` -> `Modolo R0141, Kronos`;
+  6598 `Modolo professional` -> `Modolo Professional`.
+- Held: Professional brakes 880 (INTERN PAT) vs 892 (v2), Flash brakes
+  874/875 and drilled/non-drilled levers 371/372 cannot be distinguished by
+  price-list names alone. Standard Equipe R0198/R0199 and Aero Equipe
+  controls may overlap the existing KX90 lever family 370 (which covers
+  standard/aero/krono variants); no duplicate rows or later replacement
+  codes assigned without proof. A leather-covered Kronos anatomic bar is
+  named only on undated sheet 11: not equated to the dated leather-covered
+  Master SSC or given a guessed year. Cross brake 871 already compatible,
+  unchanged. No deletes or merges.
+- Out of scope: sheets 2-3 only cables, pads, packaging and small parts;
+  these and exploded sub-parts on sheets 4-8 not standalone components.
+  Complete separately sold brakes, brake levers and shifters on those sheets
+  were included. Tools, hoods, arms, bodies, pivots, fasteners excluded.
+- Verification: source inserted once, **3 components inserted / 28 updated**;
+  all 31 rows and every expected field read back correctly, all other Modolo
+  rows unchanged. Complete SQL rerun affected **zero rows**. Regenerated all
+  **86 bike CSVs** before/after: SQL identical, **6518 links** in both.
+  Added a bike/year-specific `gipiemme modolo kronos` -> 870 override for
+  1982 Battaglin Arena to preserve its existing match after the R0010 retitle.
+
 ## Modolo "Brakes 90" + "Accessori Ricambi" — 1990 (La Bible du Vélo blog, 12 images)
 
 - `data_source` 318, label "Modolo Brakes 90 catalogue (1990)", country IT.
