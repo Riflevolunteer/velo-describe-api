@@ -37,6 +37,12 @@ review step matters more than speed.
   UPDATE; the back-fill only fills NULLs. An explicit `null` id means "do not
   link" — for when the only substring hit is a wrong-era row and the DB has no
   right one (1987 "Shimano 600" brakes vs the 1970s centre-pull).
+- Integrated controls (STI, Ergopower): an unlinked Brake Levers spec takes
+  the same bike's Shifters link when that is a Shifting Brake Levers row and
+  the lever text equals, or is a whole-word part of, the shifter text
+  (`integratedBrakeLeverLink`; it also overrides a Brake Levers `null`). The
+  generator prints how many it linked. Don't add Shifting Brake Levers to the
+  'brake levers' LABEL_TO_CATEGORY entry: plain levers would hit STI rows.
 - Idempotency: bikes key on brand+title+year_from+source (a NULL `source_ref`
   also matches, so the back-fill can tag it); specs on bike+label+
   value_text. Re-runs skip existing rows and only back-fill `component_id`

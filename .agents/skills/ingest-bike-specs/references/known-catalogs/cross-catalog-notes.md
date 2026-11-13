@@ -522,3 +522,11 @@ loaded. Battaglin Turismo (mixte city) and Falcon 83 / 89 (utility, deleted with
 - Applied /tmp/campagnolo-brand-only-unlink.sql: 25 guarded updates clear component_id only, preserving catalog text and provenance. Previous links (bike_spec_id -> component_id): 306 -> 5749, 325 -> 5749, 344 -> 5749, 965 -> 5749, 1465 -> 7041, 2347 -> 573, 2356 -> 3708, 3763 -> 2963, 5069 -> 573, 5078 -> 3708, 7758 -> 3708, 7763 -> 5749, 7777 -> 3708, 7782 -> 5749, 8902 -> 5749, 8921 -> 5749, 8940 -> 5749, 9361 -> 3708, 9380 -> 3708, 12517 -> 3708, 12528 -> 5749, 17137 -> 3236, 17150 -> 5742, 19232 -> 1496, 19236 -> 3708. Rollback: /tmp/campagnolo-brand-only-rollback.sql; full before-state: /tmp/campagnolo-brand-only-before.tsv.
 - All 81 CSVs regenerated before and after (1052 bikes, 17711 specs). Exactly 25 mappings became NULL, all on the complete value Campagnolo; every other spec and mapping unchanged. Generated links 6090 -> 6065. Comparison: /tmp/compare-campagnolo-links.js and /tmp/campagnolo-brand-only-generation-diff.json. Database readback confirmed zero remaining linked brand-only Campagnolo specs.
 - This supersedes previous brand-only Campagnolo inferences in the individual catalog notes, including the Motobecane headset correction recorded on 2026-10-24 above.
+
+- 2026-11-13: integrated brake/shift levers. 16 Brake Levers specs on bikes
+  whose Shifters link to a Shifting Brake Levers row were unlinked (1991 Colnago
+  Dura-Ace 8V STI x4, 1991-92 MTB DX / XT / LX / 400 STI, 1994 Cinelli
+  Stratos / Chorus / Veloce Ergopower and STX S.E.). Linked to the shifter's
+  component by a one-off UPDATE (16 rows) and the new generator fallback. The
+  1990 Signature 2 / Peregrine "2 finger" levers next to Rapidfire shifters are
+  separate parts and keep their BL links.

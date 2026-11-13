@@ -4351,6 +4351,26 @@ function matchComponent(valueText, componentRecords, excludeTitle, label, year, 
   return null;
 }
 
+// An integrated brake/shift control (STI, Ergopower) is one part that fills
+// both the Shifters and Brake Levers specs, and catalogues often print both.
+// The shifter links to its Shifting Brake Levers row; the brake-lever value
+// can't, because 'brake levers' maps only to Brake Levers (widening it would
+// let a plain "Shimano 105" lever substring-hit an STI row). So: a Brake
+// Levers spec still unlinked after matching takes the same bike's shifter
+// component when that is a Shifting Brake Levers row and the brake-lever
+// text names it (equal to, or a whole-word part of, the shifter text: "Campagnolo
+// Chorus" / "Campagnolo Chorus Ergopower"). This also applies over a Brake
+// Levers explicit null, which exists to block a standalone lever where an
+// integrated control is meant. Separate levers ("Deore XT 2 finger" next to
+// "Deore XT Rapidfire") don't match the text and are left alone.
+// Inputs are normalizeForMatch() values; returns the component_id or null.
+function integratedBrakeLeverLink(brakeValue, shifterValue, shifterComponentId, shifterCategory) {
+  if (!brakeValue || !shifterValue || !shifterComponentId) return null;
+  if (shifterCategory !== 'Shifting Brake Levers') return null;
+  if (brakeValue === shifterValue || ` ${shifterValue} `.includes(` ${brakeValue} `)) return shifterComponentId;
+  return null;
+}
+
 function listInputFiles(argFiles) {
   if (argFiles.length) return argFiles;
   return fs
@@ -4507,6 +4527,38 @@ async function main() {
   }
   lines.push('');
 
+  // Match every spec first so a Brake Levers spec can borrow its bike's
+  // integrated shifter (see integratedBrakeLeverLink).
+  const categoryById = new Map(componentRecords.map((r) => [r.component_id, r.category]));
+  const specBikeKey = (spec) => `${spec.catalogue}|${spec.brand}|${spec.bikeTitle}|${spec.year}`;
+  const isLabel = (spec, names) => names.includes(spec.label.trim().toLowerCase());
+  for (const spec of specs) {
+    spec.matched = matchComponent(spec.valueText, componentRecords, spec.brand, spec.label, spec.year, spec.bikeTitle, brandNames);
+  }
+  const shiftersByBike = new Map();
+  for (const spec of specs) {
+    if (!isLabel(spec, ['shifter', 'shifters']) || !spec.matched) continue;
+    if (!shiftersByBike.has(specBikeKey(spec))) shiftersByBike.set(specBikeKey(spec), []);
+    shiftersByBike.get(specBikeKey(spec)).push(spec);
+  }
+  let integratedLeverCount = 0;
+  for (const spec of specs) {
+    if (spec.matched || !isLabel(spec, ['brake lever', 'brake levers'])) continue;
+    for (const shifter of shiftersByBike.get(specBikeKey(spec)) || []) {
+      const id = integratedBrakeLeverLink(
+        normalizeForMatch(spec.valueText),
+        normalizeForMatch(shifter.valueText),
+        shifter.matched.component_id,
+        categoryById.get(shifter.matched.component_id)
+      );
+      if (id) {
+        spec.matched = { component_id: id };
+        integratedLeverCount++;
+        break;
+      }
+    }
+  }
+
   lines.push('-- Bike specs');
   let linkedCount = 0;
   for (const spec of specs) {
@@ -4528,7 +4580,7 @@ async function main() {
     const valueText = sqlString(spec.valueText);
     const rawLabel = sqlString(spec.rawLabel);
 
-    const matched = matchComponent(spec.valueText, componentRecords, spec.brand, spec.label, spec.year, spec.bikeTitle, brandNames);
+    const matched = spec.matched;
     if (matched) linkedCount++;
     const componentIdSelect = matched ? String(matched.component_id) : 'NULL';
     const sourceRefSelect = dataSourceSubquery(spec.catalogue);
@@ -4562,6 +4614,9 @@ async function main() {
     `Wrote ${OUTPUT_SQL}: ${filesProcessed} file(s) processed, ${brands.size} brands, ` +
       `${labelSortOrder.size} spec labels, ${bikeCount} bikes, ${specCount} specs (${linkedCount} linked to a component)`
   );
+  if (integratedLeverCount) {
+    console.log(`Brake Levers linked to the bike's integrated shifter: ${integratedLeverCount}`);
+  }
   if (skippedFiles.length) {
     console.log(`Skipped (filename doesn't match <year>_<brand>_spec*.csv): ${skippedFiles.join(', ')}`);
   }
@@ -4570,7 +4625,11 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error(err.message || err);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err.message || err);
+    process.exit(1);
+  });
+}
+
+module.exports = { integratedBrakeLeverLink };
