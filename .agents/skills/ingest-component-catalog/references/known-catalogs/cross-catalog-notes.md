@@ -661,8 +661,9 @@ Weinmann 1129 / 1130 570.
   3c99a7f6-d3f3-11f1-a2df-02fea3763e8d, no links; deleted) into 9244 Vittoria Pavè (fabric-layer
   detail folded in). Added (1988-1988): 11005 Corsa CX Kevlar Antiscaldamento 240 g, 11006 Corsa CV
   270 g (herringbone), 11007 Crono CL 200 g (smooth), 11008 Trofeo Special 260 g (kept apart from
-  9255 Trofeo 250, user's call), 11009 Racing Team 240 g. Open: four 1991-92 Bianchi "Vittoria Nuovo
-  Pro" specs could link to 6893 Nuovo Pro 260 (would need year_to 1988 -> 1992); not done. SQL:
+  9255 Trofeo 250, user's call), 11009 Racing Team 240 g. Linked the same day (user's call): four 1991-92
+  Bianchi "Vittoria Nuovo Pro" specs (19427, 19445, 19651, 19663) -> 6893 Nuovo Pro 260 by override;
+  6893 year_to 1988 -> 1992. SQL:
   session scratchpad `squadra/g88-vittoria.sql`.
 
 ## La Bicicletta Guida '99 - Componenti (1999, 56 scans, disraeligears.co.uk), data_source id 353
