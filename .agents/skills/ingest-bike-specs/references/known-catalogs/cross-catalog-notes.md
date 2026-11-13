@@ -533,3 +533,10 @@ loaded. Battaglin Turismo (mixte city) and Falcon 83 / 89 (utility, deleted with
   Rapidfire shifters are the ST-M091 / ST-M071 2-finger shift / brake pairs
   (pair weights 550 g / 535 g), and the DB has no shift-only pods of that era.
   Bike-scoped 1990 override ranges; the BL ranges stay for thumbshifter bikes.
+- 2026-11-13 Brake Levers sweep: 194 of 356 unlinked. Linked 7 more (1982
+  Peugeot tandems -> 357, 1986 Raleigh Pursuit -> 8872, 1994 Cinelli XT
+  Shifters + Brake Levers -> 6364); 6419 -> 6426 generator links. The rest:
+  ~150 generic or brand-only cells, earlier deliberate nulls (1989 Bianchi,
+  1982 Mafac Promotion, 1991 Centaur, 1994 Record / Alivio), and parts with no
+  DB row (Ofmega Super Competizione, Spidel professional, Universal AER levers,
+  Dia-Compe GX-400 Aero, Shimano Z-324, AT 90, AL 11, Chang Star).

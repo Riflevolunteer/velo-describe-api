@@ -934,3 +934,6 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
 
 - Products1986 printed p.4 (source209) explicitly names QS400N quick-release caliper,38–48mm,132g per caliper. New component10978,1986 only; spec8243 `Dia-compe QS 400N` linked from NULL. Exact generator override ranged1986. QS500N682 is a distinct43–57mm brake and was not used.
 - All85 CSVs compared: only this mapping and the1985 Bianchi DC400N mapping changed;6309->6311 generated links. Live DB comparison confirms the same two links. Idempotent SQL rerun zero changes.1985 Crested Butte crank3564 stays unlinked. Evidence/SQL: `/private/tmp/existing-source-review/`.
+- 2026-11-13 (user's call): 1986 Pursuit Brake Levers "Dia-compe DC 630/165
+  (racing); Dia-compe DC 630/135 (touring)" -> 8872 Dia-Compe 163 / 165 / 169 /
+  195, the first-listed racing option (the touring 135 is 8105).

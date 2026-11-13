@@ -138,3 +138,8 @@
 - Source 378, c.1994 model table: the two recorded `Giro d’Italia 26` handlebar specs match existing component 2800 `Cinelli 64 Giro D'Italia (26.0 clamp)`. Linked 20226 (Unica) and 20208 (Supercorsa), previously NULL. Added the exact normalized override `giro d’italia 26`, ranged to working year 1994. Earlier Giro variants are not used or merged.
 - Component 2800 year_to extended 1990 -> 1994, source_ref 1 -> 378; retained year_from 1990. Catalogue working date is c.1994, not an original printed publication date. No new component, title, description or spec-value changes.
 - All 85 CSVs compared: generated links 6331 -> 6333, only these two handlebar mappings change. Live snapshots across 18,283 specs confirm only 20208/20226 change from NULL to 2800. Repeated SQL affects zero rows; loaded generation is identical to the reviewed output. SQL/evidence: `/private/tmp/cinelli-giro26/` (proposed.sql, generator.diff, before/after-generator.sql, before/after-links.tsv).
+- 2026-11-13 (user's call): Genius Machine / Genius Soft Machine "Shimano
+  Deore XT" Shifters -> 6364 ST-M738 (8-speed 2-finger Rapidfire Plus shift /
+  brake set, matching the 8-speed M737 crank / rear); was an explicit 1994
+  null. Their Brake Levers follow through integratedBrakeLeverLink. Caveat:
+  an ST-M737 7-speed control may also exist for 1994; the DB has no row.

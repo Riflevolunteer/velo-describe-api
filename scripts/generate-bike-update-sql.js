@@ -2962,7 +2962,9 @@ const COMPONENT_OVERRIDES = {
     'shimano santé': [{ from: 1987, to: 1989, id: 6190 }], // SL-5000
     'shimano deore xt sis': [{ from: 1987, to: 1989, id: 6159 }], // SL-M730
     'campagnolo chorus': [{ from: 1988, to: 1991, id: 7027 }], // A281, the only Chorus lever of the period
-    'shimano deore xt': [{ from: 1994, to: 1994, id: null }, { from: 1986, to: 1986, id: 6158 }], // 1986 Raleigh Crested Butte / Portage: SL-M700, Deore XT (1983-86)
+    // 1994 Cinelli Genius Machine / Soft Machine: 8-speed M737 group (crank 8669, rear 8668), so the 8-speed
+    // 2-finger ST-M738 shift / brake set (user's call 2026-11-13; was null). Brake Levers follow via integratedBrakeLeverLink.
+    'shimano deore xt': [{ from: 1994, to: 1994, id: 6364 }, { from: 1986, to: 1986, id: 6158 }], // 1986 Raleigh Crested Butte / Portage: SL-M700, Deore XT (1983-86)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
     'huret new success alloy front and rear with ratchet levers': [{ from: 1987, to: 1990, id: 6110 }], // ARIS New Success (type 1) 1987-90; 6111 is a duplicate title
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
@@ -3165,6 +3167,7 @@ const COMPONENT_OVERRIDES = {
     'mafac dural promotion': 355, // 1980 / 1982 Peugeot (NL) PBN 10: undrilled alloy lever on the promotion bracket = lever code 13x, Course 130 (the only one in the 1980 and c. 1982 catalogues)
     'mafac dural course drilled rubber hoods and adjusters': 357, // 1980 Peugeot (NL) PKN / PVN 10: MAFAC Course, as the 1979 tandems
     'dia compe 165': [{ from: 1986, to: 1986, id: 8872 }], // 1986 Raleigh Technium 440 USA: Dia-Compe 163 / 165 / 169 / 195 extension lever sets
+    'dia compe dc 630 165 (racing); dia compe dc 630 135 (touring)': [{ from: 1986, to: 1986, id: 8872 }], // 1986 Raleigh Pursuit: first-listed racing option (user's call 2026-11-13); 135 touring = 8105
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano ultegra aero': [{ from: 1988, to: 1990, id: 416 }], // BL-6401, 600 Ultegra (aero)
     'shimano 105 aero': [{ from: 1987, to: 1989, id: 406 }, { from: 1990, to: 1993, id: 411 }], // BL-1050 SLR 105 (1989 Bianchi Krono) / BL-1055, 105SC
@@ -3196,6 +3199,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo c record': [{ to: 1986, id: 212 }, { from: 1987, id: 214 }], // 0118065 first gen (row 1984-87 since 2026-11-06, as Cinelli / Colnago) / Corsa Record with Power Grade (1987-91)
     // 1979 Peugeot: the MAFAC 1976 catalogue names its forged racing lever "poignée course".
     'mafac course': 357, // MAFAC Course 419 / 429, Competition (the catalogue's CB/CS dural racing lever)
+    'mafac course (double cable on the right)': [{ from: 1982, to: 1982, id: 357 }], // 1982 TM 8 / TH 8 tandems: the 1979 tandems' lever, rear-brake cable doubled for the drum
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
     'campagnolo record': [{ to: 1984, id: 226 }], // 2030, Nuovo Record (1967-84); the bare "Campagnolo Record" row the matcher hits is 1994
     'campagnolo gran sport': 209, // 1040/1A, Nuovo Gran Sport (1970-84)
@@ -4635,4 +4639,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { integratedBrakeLeverLink };
+module.exports = { integratedBrakeLeverLink, normalizeForMatch };
