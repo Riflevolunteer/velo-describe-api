@@ -3273,6 +3273,32 @@ const COMPONENT_OVERRIDES = {
     'maillard 700; toe clips; straps': [{ from: 1987, to: 1987, id: 3827 }], // 1987 Peugeot PY MA W
     'maillard 700c with christophe toe clips': null, // 1984 Peugeot PY 10 FC: "700C" may be Course or a CX misprint
     'maillard 700 ss toe clips and straps': null, // 1989 Peugeot C 653 MAB Z: no SS row
+    // Maillard CXC brochure recovered 2026-11-13: source 382; exact named CX/CXC model values.
+    // Integral-cage 550 is 3828; separate-cage 650 restored as 3829 after correcting their earlier merge.
+    'maillard cx 550': [{ from: 1984, to: 1989, id: 3828 }],
+    'maillard atom cx700 aero toe clips and straps': [{ from: 1984, to: 1988, id: 10988 }],
+    'maillard cx650 aero toe clips and straps': [{ from: 1984, to: 1988, id: 3829 }],
+    'maillard palette cx 550 toe clips and straps': [{ from: 1984, to: 1989, id: 3828 }],
+    'maillard palette cx 500 toe clips and straps': [{ from: 1984, to: 1989, id: 10986 }],
+    'maillard cx650 christophe toe clips': [{ from: 1984, to: 1988, id: 3829 }],
+    'maillard cx550 christophe toe clips': [{ from: 1984, to: 1989, id: 3828 }],
+    'maillard cx 500 pallets; christophe toe clips and straps': [{ from: 1984, to: 1989, id: 10986 }],
+    'maillard cx 500 black pallets; toe clips and straps': [{ from: 1984, to: 1989, id: 10986 }],
+    'maillard cx 550 pallets; toe clips and straps': [{ from: 1984, to: 1989, id: 3828 }],
+    'atom cx 550; toe clips and straps': [{ from: 1984, to: 1989, id: 3828 }],
+    'maillard atom cx 700 pallets; toe clips and straps': [{ from: 1984, to: 1988, id: 10988 }],
+    'maillard cx 650 aero': [{ from: 1984, to: 1988, id: 3829 }],
+    'maillard cx 650': [{ from: 1984, to: 1988, id: 3829 }],
+    'maillard cx 550 aero': [{ from: 1984, to: 1989, id: 3828 }],
+    'maillard cx 550; toe clips; straps': [{ from: 1984, to: 1989, id: 3828 }],
+    'maillard cx 500; toe clips; straps': [{ from: 1984, to: 1989, id: 10986 }],
+    'maillard cx550': [{ from: 1984, to: 1989, id: 3828 }],
+    'maillard cx 500': [{ from: 1984, to: 1989, id: 10986 }],
+    'maillard cx 550 toe clips and straps': [{ from: 1984, to: 1989, id: 3828 }],
+    'maillard cx 700 toe clips and straps': [{ from: 1984, to: 1988, id: 10988 }],
+    'maillard cx 650 toe clips and straps': [{ from: 1984, to: 1988, id: 3829 }],
+    'maillard cx 550 platform toe clips and straps': [{ from: 1984, to: 1989, id: 3828 }],
+    'maillard cx 500 toe clips and straps': [{ from: 1984, to: 1989, id: 10986 }],
     // MKS Pedal Catalogue Edition 11 (c. 1985) retitled the MKS rows to "MKS <no.>, <name>", so the plain names no longer substring-match.
     'mks esquartz #2025': 3859, // 1985 Raleigh Prestige / Competition: No. 2025 is the Esquartz 102, not the 2023 Esquartz
     'mks sylvan road': 3865, // 1985 Bianchi Strada / Randonneur 700: MKS 2021, Sylvan Road

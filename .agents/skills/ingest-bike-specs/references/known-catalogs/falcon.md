@@ -196,3 +196,10 @@
 ## Scope pass — 2026-10-24
 
 - Deleted as utility bikes (user decision), with their 34 specs (none linked), and added to NON_ROAD_SKIP: 1973 Super Tourist Model 82 / 83 (all-rounder bars, Sturmey-Archer 3-speed, mattress saddle, Bluemels) and 1974 Tourist Model 82 / 83 (all-rounder bars, 5-speed with AW 3-speed option, mattress saddle, Bluemels, Endrick steel rims). Same pattern as the Super-Tourist De Luxe 88 / 89 dropped 2026-10-17. Ladies' drop-bar models (Black Diamond 71, Model 69) stay.
+
+
+## Maillard CXC 550 pedal link — 2026-11-13, user approved
+
+- 1986 Triathlon Competitor 12, Pedals spec 16141, exact value `Maillard CX 550`, linked NULL -> 3828 Maillard CXC 550. Source 382 is the recovered undated Maillard CXC manufacturer brochure: integral aluminium cage and adjustable bearings. Original bike-spec text and source_ref 317 unchanged.
+- The 1984-1989-scoped exact `maillard cx 550` override also serves the matching Peugeot specs. Component 3828 was retitled from generic `Maillard ATOM CXC`; its earlier incorrect merge with CXC 650 was corrected. Full component evidence and legacy date qualifications are in component Maillard notes.
+- Applied with 69 Peugeot links; all 85 CSVs and 18,283 live specs compared, exactly 70 approved NULL links changed and no other field changes. SQL rerun zero rows; npm test passed. SQL and validation: `/private/tmp/maillard-cxc-review-2026-11-13/`.
