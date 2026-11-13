@@ -610,6 +610,23 @@ Weinmann 1129 / 1130 570.
   posts, Selle Italia Personal, Gommitalia tubulars, Iscaselle Time / Record, Campagnolo Ghibli M 25
   (the DB has M23 rows covering 1988).
 
+- **Ofmega fine-print re-read, 2026-11-13** (disraeligears now serves these scans at 1560 px; Ofmega
+  tables on scans 5, 14, 19, 21, 22, 24, 26, 27, 31, 32, 44, 45, all legible). Descriptions written
+  on 20 rows the 2026-10-23 pass had only dated (boilerplate "Ofmega X, Italy" dropped; velobase
+  measured weights kept): BB 91 Linea / 92 Master / 95 Vantage (310 g); cranks 1698 Master 670 g,
+  1700 Mundial 665 g, 1686 Alpine LP 665 g; FD 2416 Master 90 g, 2420 Vantage 110 g; headsets 3060
+  Competizione 200 g, 3063 Master 190 g (velobase's 140 g is probably the Linea's figure), 3065 Super
+  Competizione 135 g; hub 3443 Master 560 g; pedals 3879 Master 410 g, 3882 Sintesi 410 g with clips,
+  3884 Super Competizione 360 g, 3885 Vantage 350 g; RD 4355 Master 210 g, 4360 Vantage 200 g;
+  shifters 6091 Master / 6096 Vantage 15 g each. 3438 Alpine LP hub year_from 1997 -> 1988 (600 g).
+  Added (1988-1988, source_ref 262): 10996 Linea shifters (indexed, 45 g each), 10997 Alpine MTB
+  shifters (80 g each), 10998 Alpine brake levers (137 g each), 10999 Super Corsa BB (310 g, burnished),
+  11000 Nuovo Competizione hubs (530 g), 11001 Mountain hubs (675 g), 11002 Linea headset (140 g).
+  Guide's 120 g roller-bearing "Mistral" headset = 10995 8010 SQ (Ofmega Squadra brochure, 384), not
+  3064. Still left alone: Competizione / Linea crank and FD versions, Mistral RD / shifter
+  generations, Ambassador headset (guide 215 g vs 9159's 160 g), Linea FD (125 g; rows 2414 / 2415
+  undated versions). No bike_spec links. SQL: session scratchpad `squadra/g88-ofmega.sql`.
+
 ## La Bicicletta Guida '99 - Componenti (1999, 56 scans, disraeligears.co.uk), data_source id 353
 
 - Label `La Bicicletta Guida '99, Componenti (1999)`, country IT. Source:
