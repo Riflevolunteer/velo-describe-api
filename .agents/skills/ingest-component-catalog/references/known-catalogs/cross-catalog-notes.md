@@ -590,8 +590,9 @@ Weinmann 1129 / 1130 570.
   `00_main_images/la_bicicletta_guida_1988_february_-_i_componenti_da_corsa_scan_NN_main_image.jpg`,
   01-54, only ~436 px wide: model names and weights legible, fine print marginal). The next edition
   of the '85/86 guide (data_source 259, above); same table format. Miche is printed as "FAC
-  MICHELIN" (the company F.A.C. Michelin). **The scans stop part-way through the Vittoria
-  tubulars**, so the rest of the tubular / clincher section is missing. Read 2026-10-23.
+  MICHELIN" (the company F.A.C. Michelin). The scans end with the Vittoria tubulars
+  (scans 53-54 run Pavé CG to Trofeo Special, 25 models; corrected 2026-11-13: at 436 px this
+  looked like a mid-list cut); any clincher section is missing. Read 2026-10-23.
 - Scan map: 1-3 stems; 4-5 rear derailleurs; 5-6 seat posts; 6-7 chains; 7-11 rims; 12-14
   brakes; 14-18 handlebars; 18-19 front derailleurs; 19-21 cranksets; 22-23 brake levers; 23-24
   shifters; 24-26 bottom brackets; 26-28 hubs; 29-32 pedals; 35-37 disc wheels; 37-39 freewheels;
@@ -648,6 +649,21 @@ Weinmann 1129 / 1130 570.
   3064. Still left alone: Competizione / Linea crank and FD versions, Mistral RD / shifter
   generations, Ambassador headset (guide 215 g vs 9159's 160 g), Linea FD (125 g; rows 2414 / 2415
   undated versions). No bike_spec links. SQL: session scratchpad `squadra/g88-ofmega.sql`.
+- **Vittoria tubulars re-read at 1560 px, 2026-11-13** (scans 53-54; columns casing / tread / weight,
+  no sizes or prices). 6900 Special Pro corrected: "220g in 1988" -> 220 g in 1985, **250 g** in 1988.
+  9430 Cronometro Seta CS and 9432 Cronometro CX year_to 1984 -> 1988 (Crono Seta CS 180 g, Crono CX
+  190 g). Descriptions on 6877 Corsa CG Seta, 6878 Corsa CL, 6885 Cronometro CS, 6893 Nuovo Pro
+  260, plus 1988 detail on 9428 Corsa CG (250 g, knurled), 6891 Mondiale ("Mondiale G / R"), 9246
+  Pavé Seta (butyl tube in 1988 vs latex elsewhere). **Retitled (user's call) 6879 "Vittoria Corsa CM
+  Servizio Corse" -> "Vittoria Corsa CR Servizio Corse" and 9429 "Vittoria Corsa Seta CM" -> "Vittoria
+  Corsa Seta CR"**: the guide prints CR (rigato, ribbed) where those rows had been dated; old names kept
+  here for matching. **Merged 9912 "Vittoria Pave CG"** (1983-84, source 294, source_id
+  3c99a7f6-d3f3-11f1-a2df-02fea3763e8d, no links; deleted) into 9244 Vittoria Pavè (fabric-layer
+  detail folded in). Added (1988-1988): 11005 Corsa CX Kevlar Antiscaldamento 240 g, 11006 Corsa CV
+  270 g (herringbone), 11007 Crono CL 200 g (smooth), 11008 Trofeo Special 260 g (kept apart from
+  9255 Trofeo 250, user's call), 11009 Racing Team 240 g. Open: four 1991-92 Bianchi "Vittoria Nuovo
+  Pro" specs could link to 6893 Nuovo Pro 260 (would need year_to 1988 -> 1992); not done. SQL:
+  session scratchpad `squadra/g88-vittoria.sql`.
 
 ## La Bicicletta Guida '99 - Componenti (1999, 56 scans, disraeligears.co.uk), data_source id 353
 
