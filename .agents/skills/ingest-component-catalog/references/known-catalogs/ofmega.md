@@ -57,3 +57,28 @@
   1980-90); Ofmega Competizione bike specs ("Ofmega Competizione" pedals, 2
   bikes) have no pedal row to link to, since the catalogue's quill pedals
   carry model numbers only.
+
+## Ofmega "Gruppo Squadra 002000" brochure — printed 1988 (8 scans, disraeligears.co.uk), data_source id 384
+
+- Source: https://www.disraeligears.co.uk/site/ofmega_-_gruppo_squadra.html (1560 px, legible).
+  Label `Ofmega Gruppo Squadra brochure (1988)`. Dated by the back cover's "PRINTED IN ITALY 1988"
+  (Italian sales F. Tagliabue & F. S.p.A., Milano). Found in the 2026-11-13 unhunted-brand sweep.
+- Pages: 1 cover, 2 group overview and code list, 3 crank / BB, 4 FD / levers, 5 RD, 6 hubs,
+  7 pedals / headset, 8 back cover. The group came out of the G.S. Atala-Ofmega pro team.
+- Code list: 2000 Pedaliera Mistral, 2250 SQ Serie movimento Squadra, 0520 SQ Gruppo cambio Premier
+  Squadra (RD 5020 SQ + FD 5120 SQ + levers 5224 / 5225; the overview prints "0520 SQ" for the whole
+  set), 6000 SQ Serie mozzi Squadra, 2620 Serie pedali Mistral, 8010 SQ Serie sterzo Mistral Squadra.
+- Applied 2026-11-13 (source_ref -> 384 on every changed row):
+  - 1699 Mistral crankset: description rewritten from the 2000 (610 g, 165-175, rings 41-44 / 52-54).
+    The Guida '96 (357) spec differs (600 g, 170-175, outer 51-54), so it is named inline. Years unchanged.
+  - 10723 "Ofmega Mistral SQ" BB = 2250 SQ: year_from 1996 -> 1988; description rewritten (310 g, 36 x 24),
+    with the Guida '96 spec inline (113 mm, 328 g). This settles the Guida '96 "Mistral SQ vs 93 Mistral"
+    possible duplicate: they are different versions (93 is the 2250 Mistral, 305 g, Guida '85/86). Keep both.
+  - 4359 Premier RD (5020 SQ, 210 g; the velobase 221 g kept), 2419 Premier FD (5120 SQ, 90 g),
+    6095 Premier shifters 2nd generation (5224 / 5225, retro-friction, 70 g pair): descriptions only.
+  - Inserted (1988-1988): 10993 "Ofmega 6000 SQ, Squadra" hubs, 520 g pair (not the 1996 Squadra hubs
+    10772 / 10777, 140 + 233 g); 10994 "Ofmega 2620, Mistral" road pedals, 360 g (only 3883 Mistral Pista
+    existed); 10995 "Ofmega 8010 SQ, Mistral Squadra" headset, roller bearings, 120 g (3064 Mistral is the
+    earlier 131 g headset).
+- No deletes. No bike_spec links: no loaded spec names a Squadra / Mistral part (the 1987 Colnago
+  "SQUADRA" is a bike model). SQL: session scratchpad `squadra/ofmega-squadra-1988.sql`.
