@@ -364,15 +364,15 @@ The three plausible Peugeot Spidel links remain unlinked.
 
 ### Tyres (step 1 audit, 2026-11-14)
 
-**Current: 237 / 973 linked (24.4%); 736 unlinked; 601 tyre components.**
-Baseline audited 2026-11-14 17:56 UTC; Michelin, OverDrive and Pistard corrections
+**Current: 234 / 973 linked (24.0%); 739 unlinked; 601 tyre components.**
+Baseline audited 2026-11-14 17:56 UTC; Michelin, OverDrive, Pistard and Ritmo corrections
 applied later that day. Current work and remaining IDs are maintained below; evidence
 and validation live in the relevant existing catalogue notes.
 The 2026-11-09 whole-DB coverage table above remains historical; this is the
-current tyre-only baseline. No DB changes made during this audit.
+current tyre-only baseline. The initial step 1 audit was read-only.
 
 - **Current date worklist after approved corrections, 2026-11-14:**
-  Four tyre specs remain outside recorded dates: 6767 Clement Ritmo LTX 55 (4536, Raleigh 1982);
+  Three tyre specs remain outside recorded dates:
   6889 Vittoria Giro del Mondo (7070, Bianchi 1990); 6899 Vittoria Pro L Slick
   (1138, Bianchi 1987); 9247 Vittoria Corsa (18313, Bianchi 1986). Review identity
   and original evidence before changing dates. The 16 linked specs with incomplete
@@ -381,6 +381,15 @@ current tyre-only baseline. No DB changes made during this audit.
   (1), 6886 Vittoria Flash M23 (1). Michelin's 26 flags are resolved; see the
   [Michelin notes](.agents/skills/ingest-component-catalog/references/known-catalogs/michelin.md).
   Select's 1986 date and the French catalogue dates retain their inference caveats.
+- **Intentional unlinked Ritmo identification (2026-11-14):** Raleigh
+  specs 4536 / 4621 / 4669 name plain Clement Ritmo, without evidence identifying
+  LTX 55 (6767). LTX 55 is a real photographed marking, but the Ten Speed Drive
+  1983 page used for its dates/255 g construction describes only plain Ritmo.
+  Unsupported links cleared and generator override set to null; 6767's
+  unsupported catalogue dates/construction withdrawn, photographic source restored.
+  [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/clement.md).
+  Need dated LTX 55 evidence and independent Raleigh fitment identification;
+  do not extend its dates from the plain name.
 - **Intentional unlinked identification:** 1983 Bianchi Super Pista spec 1023
   prints only Clement Pista; Guida distinguishes Pistard from numbered Pista
   tyres. Unsupported 6765 link cleared and override set to null on 2026-11-14.
@@ -397,7 +406,7 @@ current tyre-only baseline. No DB changes made during this audit.
   (source/continuity unresolved). These are candidates, not approved links.
 - **Structural baseline:** no dangling component/source references, wrong linked
   categories, exact duplicate tyre specs or component group ownership conflicts.
-  68/601 components have incomplete dates. Seven automatic duplicate groups are
+  69/601 components have incomplete dates. Seven automatic duplicate groups are
   classified as configurations/generations; no automatic merge recommendation,
   near-name or parenthetical pair. No merges proposed.
   Groups kept separate: Schwalbe Blizzard Pro 10225/10227/10541/10542 (TPI/bead),
@@ -641,6 +650,14 @@ Review evidence and proposed actions: `/private/tmp/existing-source-review/revie
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
 
 ## Done
+
+- **2026-11-14 Clement Ritmo correction applied (user approved):** cleared
+  specs 4536 / 4621 / 4669 -> 6767 and blocked regeneration. LTX 55 dates now
+  unknown; unsupported construction removed; photographic source 1 restored.
+  Coverage 234/973, date flags 4 -> 3; all 86 CSVs and live spec/component
+  snapshots checked, only approved fields changed; rerun zero.
+  [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/clement.md),
+  [SQL](docs/audits/clement-ritmo-2026-11-14.sql).
 
 - **2026-11-14 Clement Pistard correction applied (user approved):** cleared
   spec 1023 -> 6765 and set generator override to null; dates retained 1985–88.

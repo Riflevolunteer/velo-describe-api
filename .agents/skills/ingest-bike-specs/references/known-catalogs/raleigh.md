@@ -811,6 +811,15 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
   the same row the 1982/83 entries use (it is the only A124, dated 1983).
 - Tyres "Clement Ritmo Tubular" (1982 Team Replica, 1983 Team Replica and
   Road Ace) -> 6767 Clement Ritmo LTX 55, the only Ritmo row.
+  **Superseded 2026-11-14, user-approved correction applied.** Original 1982
+  brochure scan 3 and 1983 printed p.5 name plain Ritmo only. The physical LTX 55
+  label is real, but Ten Speed Drive 1983 printed p.13 (mirror PDF p.12)
+  does not identify that marking. Cleared specs 4536 / 4621 / 4669 and set
+  the override to explicit null, preserving CSV/spec text/source. Removed the
+  marked variant's unsupported catalogue dates/construction; restored source 1.
+  All 86 CSVs checked: only these three generated links removed; all live specs
+  compared: only their component_id fields changed. SQL rerun zero.
+  [Evidence and validation](../../../ingest-component-catalog/references/known-catalogs/clement.md).
 - Freewheel "Sun Tour Wide Ratio 14-18-23-30-34T" (1983 Royal 10 / Royale
   10) -> 2245 SunTour PT-5000 Perfect (5-speed). Judgment call: Perfect
   was the touring line and the 1983 Rapide already links to Perfect; New

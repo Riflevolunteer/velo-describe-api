@@ -4153,8 +4153,9 @@ const COMPONENT_OVERRIDES = {
     // 1986 Cinelli (Ten Speed Drive Imports).
     'clement 2001cf': 6740, // Clement CF 2001
     'clement 2001 cf': 6740, // Clement CF 2001
-    // 2026-10-08 link-gap pass. 1982/83 Raleigh Team Replica, 1983 Road Ace.
-    'clement ritmo tubular': 6767, // Clement Ritmo LTX 55 (only Ritmo row)
+    // 1982/83 Raleigh names plain Ritmo; no evidence identifies LTX 55.
+    // Preserve the photographed variant; leave fitment unidentified (2026-11-14).
+    'clement ritmo tubular': null,
     // 1983 Bianchi Super Pista: no model number/weight; the 1985/88 guides
     // distinguish Pistard from numbered Pista tyres. Leave unidentified (2026-11-14).
     'clement pista tubular': null,

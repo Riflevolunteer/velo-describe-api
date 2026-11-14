@@ -1,5 +1,51 @@
 # Clement catalogs processed so far
 
+## Ritmo / Raleigh correction — 2026-11-14 (user approved, applied)
+
+- [Applied SQL](../../../../../docs/audits/clement-ritmo-2026-11-14.sql).
+  Cleared all three links to 6767, set `clement ritmo tubular` to explicit null,
+  and withdrew 6767's unsupported catalogue dates/construction attribution.
+  Do not broaden the LTX 55 identity or infer its dates from the plain name.
+- Re-read the original [1982 Raleigh brochure, scan 3](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1982-raleigh-racing-formula-p03.webp),
+  source 132: Team Replica 12 says Clement Ritmo tubular tyres. The
+  [1983 technical table, printed p.5](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1983-raleigh-racers-catalog-p05.webp),
+  source 133, says Clement Ritmo Tubular for Team Replica 12 and Road Ace 12.
+  Neither gives LTX 55, weight, casing or tube construction. The 2026-10-08
+  mapping rationale, that 6767 was the only Ritmo row, does not identify a variant.
+- Re-read Ten Speed Drive 1983, printed p.13, using this [mirror PDF](https://www.bikecatalogs.com/download/6157?download=1)
+  (PDF page **12**, not 13; metadata identifies the same bulgier.net scan).
+  Under training road tubulars, plain Ritmo is 255 g cotton, mixed tread,
+  latex-butyl tube. It does **not** name LTX 55. Source 279 therefore does not
+  establish those specifications or the 1983 attestation for that marked variant.
+- The [physical tyre-label photograph](https://www.velobase.com/CompImages/Tire/01F9264D-2943-4799-906B-785CE69F3745.jpeg)
+  shows Ritmo LTX 55 clearly: keep that real identity/title. The [original entry](https://www.velobase.com/Pages/ViewComponent.aspx?ID=79A2BBF7-2A13-4C6B-891C-4FC0945D0D35&Enum=120)
+  has no dates. Photograph supports a tubular with black tread and tan
+  sidewalls; it does not date it or establish its weight/casing/tube.
+  Restored source_ref 1 (VeloBase), retaining the legacy source_id UUID.
+- The Guida 1985/1988 plain Ritmo entries (scans 39/50, already held and read
+  during the Pistard pass) list 270 g Clement tex, with different tube wording
+  between editions. They also do not name LTX 55. Weight differences do not
+  by themselves prove separate generations or identify Raleigh's fitment.
+  No new generic Ritmo row or link to another version is proposed.
+- Before application: 6767, `Clement Ritmo LTX 55`, dates 1983–1983, source 279,
+  description `Clement Ritmo LTX 55, Italy. Cotton training tubular, mixed tread
+  for reduced rolling resistance, latex-butyl inner tube, 255g`. Three links:
+  4536 / bike 239 / 1982 Team Replica 12 / source 132 / `Clement Ritmo tubular`;
+  4621 / bike 245 / 1983 Team Replica 12 / source 133 / `Clement Ritmo Tubular`;
+  4669 / bike 247 / 1983 Road Ace 12 / source 133 / same text. Guarded SQL
+  preserves the spec text/source and component title/search_text/source_id.
+- Applied component values: dates NULL/NULL, source 1, description
+  `Tubular tyre marked Ritmo LTX 55; black tread and tan sidewalls.`
+  First run affected three specs and one component; rerun zero. All 86 CSVs
+  regenerated before/after the override: only those three links removed; after
+  the component correction generation was identical to the post-override result.
+  Compared all 18,472 live specs and all 10,264 components: only those three
+  component_id fields and 6767's description/year_from/year_to/source_ref changed.
+  Coverage 237 -> 234/973 (24.0%), 739 unlinked; date flags 4 -> 3; 601 tyre
+  components, 69 with incomplete dates; 16 linked incomplete-date specs remain.
+  CSVs unchanged. Next evidence needed: a dated LTX 55 source or independent
+  Raleigh fitment detail distinguishing it.
+
 ## Pistard / Bianchi Super Pista review — 2026-11-14 (user approved, applied)
 
 - [Applied SQL](../../../../../docs/audits/clement-pistard-2026-11-14.sql): cleared

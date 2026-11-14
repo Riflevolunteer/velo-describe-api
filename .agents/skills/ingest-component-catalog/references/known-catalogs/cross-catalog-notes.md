@@ -941,6 +941,10 @@ Weinmann 1129 / 1130 570.
 - NULL -> 1983-1983 (bare velobase rows, descriptions added): 6767 Clement Ritmo
   LTX 55, 6759 Clement Mirage Servizio Course, 4890 Ambrosio 19 Extra Elite Aero
   dynamic.
+  **6767 attribution withdrawn 2026-11-14 (user approved):** this page says
+  plain Ritmo, not the photographed LTX 55 marking. Restored unknown dates and
+  photographic source 1, removed unsupported construction and cleared the three
+  Raleigh links. [Evidence/validation](clement.md).
 - year_to -> 1983: 6880 Vittoria Corsa CX Servizio Corse (1980), 6737 Clement
   Campionato del Mondo Seta (1981), 8972 Criterium Cotone (#12 Bis Criterium
   Cotton, 1981), 8970 Seta Tipo 3 (#3 Pista Seta, 1977), 6732 Sei Giorni (#8 Six
