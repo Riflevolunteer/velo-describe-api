@@ -58,7 +58,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/takagi.md](known-catalogs/takagi.md) — Takagi (1 entry)
 - [known-catalogs/tange.md](known-catalogs/tange.md) — Tange (1 entry)
 - [known-catalogs/kkt.md](known-catalogs/kkt.md) — KKT / Kyokuto (1 entry)
-- [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands: multi-brand retailer and importer catalogues (La Bicicletta Guida '96 and '99, Palo Alto, Bikecology, Holdsworth, Cyclo-Pedia, Ron Kitching, Ten Speed Drive, Bike Warehouse, Falcon 1970 parts), La Bicicletta guides, dedupe passes, velobase title-fixup conventions
+- [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands: multi-brand retailer and importer catalogues (La Bicicletta Guida '96 and '99, Brügelmann 1981, Palo Alto, Bikecology, Holdsworth, Cyclo-Pedia, Ron Kitching, Ten Speed Drive, Bike Warehouse, Falcon 1970 parts), La Bicicletta guides, dedupe passes, velobase title-fixup conventions
 - [known-catalogs/roto.md](known-catalogs/roto.md) — Roto (1 entry)
 - [known-catalogs/modolo.md](known-catalogs/modolo.md) — Modolo (3 entries, c. 1979, March 1986, 1990)
 - [known-catalogs/tioga.md](known-catalogs/tioga.md) — Tioga headsets and pedals (1 entry, 1992)

@@ -1283,3 +1283,52 @@ Weinmann 1129 / 1130 570.
 - 2026-11-06 remainder pass: extended `year_to` to 1980 (and `source_ref` to 360) for 9105 Dia-Compe Gran Compe Superbe (1978), 964 Shimano BB-300/600 (1979), 8056 SunTour PDL-M (1976), 8259 SunTour PC-6000 Pro-Compe (1979), 8260 SunTour US-6000 Winner Ultra-6 (1979), 8890 Sugino MCV / MCV Black, Mighty Victory (1976), and 9902 Sugino Mighty Custom/Victory bottom bracket (1979). The listings are current in the 1980 catalogue.
 - Added 10830 Galli Super Lite / Strong headset, dated 1980 from printed p. 21. The Mathauser finned brake shoes and replacement pads on printed p. 4 were removed: the database has no category for brake shoes/pads, and the broad Brakes category is not appropriate for these replacement parts. Updated 6640 Pivo tandem stoker stem with the rear-stem / front-seatpost fit and hex-nut binder detail from printed p. 23; `year_from` is now 1980.
 - For other entries confidently matched to existing rows with compatible descriptions and year coverage, no update was needed. Retail stock codes were not treated as manufacturer part numbers. Left unresolved: the ambiguous Dia-Compe 730G / 810G line, Idéale 90A versus the existing 90 Speciale Competition rows, and Sugino Mighty Custom Compe / Mity Compe / MCT and Maxy I / II wording versus existing Mighty / Super Maxy rows. Retailer-built wheelsets and the unidentified REG seat-pillar brand were not added as maker components.
+
+## Brügelmann Radsport-Shop catalogue — 1981 (rennrad-geschichten.de, Frankfurt mail-order retailer), data_source 388, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1981)", country DE. Source:
+  https://www.rennrad-geschichten.de/google81f6dbe480740ded-html/alte-kataloge/br%C3%BCgelmann/
+  ("Brügelmann 1981.pdf", `/app/download/...` 302 to jimcontent, `curl -L`; 120 pp, no text layer,
+  ~2352 px wide). Cover: "1981 - gültig bis Neuauflage 1982 - etwa März 1982". Same site has
+  1972-1982 (one PDF per year; 1972-77 have a partial OCR layer); 1985 / 1988 are in the Dropbox
+  folder noted in TODO.md (section PDFs).
+- Components: pp. 6-7 (brake shoes, levers), 9 (brakes), 12-13 (rims), 14-15 (light parts, Simplex
+  advert), 19-22 (chains, chainrings), 24-29 (stems, bars, Colnago parts, hubs, pedals), 32-35
+  (saddles, seatposts, derailleurs, shifters), 40-44 (tubulars, clinchers), 49-58 (headsets, BBs,
+  cranksets, freewheels, sprockets, rim x hub chart, Dura-Ace AX "nicht lieferbar"), 119 (weight
+  table "summer 1980"). Out of scope: clothing, tools, roof racks, nutrition, frames, books, bikes.
+- Order numbers (e.g. 14024-C175) are Brügelmann's; maker codes are almost never printed, so the
+  diff was by brand + model name. Retailer source: attests 1981, absence caps nothing.
+- Reading notes: p. 7 "10763-CARE modell RECORD / 10764-CASU modell SUPER" are unbranded in a box
+  of their own (prices fit Campagnolo Record / Super Record levers), not Carrera; "Carrera" on
+  pp. 7 / 9 is Weinmann's Carrera (Profi lever 10759-WCAR, brake "typ CARRERA 600"). p. 42 prints
+  "CHAMPIONAT du MONDE" and "GRAND PRIX DE NATION"; titles use the French spelling. Dourdoigne box:
+  "ridden by very many professionals, but under another name as the team contract requires".
+- Changed (source_ref -> this source):
+  - year_to -> 1981: 8376 MAFAC 2000 lever (1980), 475 Universal CX lever (1980), 501 Weinmann
+    Carrera lever (1980), 1340 Zeus 2000 chainring (1980), 1813 / 1814 Shimano GA-200 Dura-Ace black
+    and drilled (1979; p. 52 lists "Dura Ace in Schwarz" and "Schwarz gebohrt" beside Dura-Ace EX),
+    3097 UA-100 Dura-Ace black headset (1979), 3384 Maillard Normandy Luxe Competition high flange
+    (1978; label colour not shown), 5816 Laprade 606 (1979), 6755 Clement Gran Sport 65 (1977),
+    Canetti 9344 Tour de France / 9694 Criterium / 9347 Paris-Tours / 9697 Sport (1974-75),
+    9329 D'Alessandro Silk Imperforabile (1975), Hutchinson 9047 Corsa Leggero (1978) / 9048 Super
+    Corsa (1976) / 10071 Milano S. Remo (1970), Wolber 6909 Club Strada (1978) / 6921 Liberty
+    (1980) / 9024 Cross (1978) / 6947 W20 (1978), 1862 TA Criterium crankset (1962; p. 52 "modell
+    CRITERIUM" 1-, 2- or 3-fach, 150-185 mm).
+  - year_from -> 1981 (earlier than prior first attestation): 6777 Clement Super Condor (was
+    1983), 9267 Hutchinson Krono (was 1985; 1981 copy says hand-made 210 g, the 1985 row says silk
+    180 g), 9286 Selle Royal Contour (was 1985). 5531 Selle Royal Super Contour NULL/NULL ->
+    1981-1981.
+  - Description rewrites (bare velobase text): 501, 1340, 1862, 5531, 9286.
+- Added brands 700 Dourdoigne (Tyres) and 701 Nadax (Bottom Brackets). Added rows 11135-11155 (1981-1981, group NULL):
+  D'Alessandro Leone / Mondiale / Specialissimo / Super / Criterium Seta (silk; DB 9331 is the
+  Tergal Criterium, not extended); Continental Sonderklasse 175 / 220 / 240, Continental 165
+  (track); Dourdoigne tubular (245 g) / (210 g) / Paris-Roubaix / Grand Prix des Nations (silk) /
+  Championnat du Monde (track); CLB Titanium and Italia sidepulls; Sugino Astron crankset and
+  bottom bracket; Nadax Favorit cartridge BB; Selle Royal 2261 / 2068.
+- Not applied: Cobra saddles (5 cover variants; DB "Cobra" is a headset maker, not confirmed the
+  same firm); Hutchinson "Touristik" (descriptive copy, not a model name); Lion and Soyo tubulars
+  (no model name; DB has coded 1984 Lion / 1980 Soyo rows); Lyotard cross / platform pedals (number
+  not printed); Universal Pro-Super lever; Huret Jubilee and 3ttt Record Regolabile (version not
+  identifiable); Sedis "Sedicolor Gold" (1398 vs 8764); Mavic "Extra Legere OR"; Regina freewheels
+  (DB rows undated); the p. 57 built-wheel chart; generic or unbranded chainrings, chains and BBs.
