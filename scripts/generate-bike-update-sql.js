@@ -3056,14 +3056,15 @@ const COMPONENT_OVERRIDES = {
     "campagnolo croce d'aune": [{ from: 1988, to: 1988, id: 5970 }], // 1988 Colnago Masterpiù Croce d'Aune: Doppler 0271
     'campagnolo athena synchro': [{ from: 1989, to: 1989, id: 5971 }], // 1989 Peugeot (FR) Dolomites down-tube Synchro levers
     'suntour accushift plus command shifter': [{ from: 1990, to: 1990, id: 6268 }], // SunTour Command (6 & 7 speed)
-    // SL-XP10 X-Press (XC-Pro / XC-Comp) on Project 7 / Grizzly, and the under-bar levers on
-    // Nyala / Osprey; X-1 / XCT bikes have no 1990 row. One key: a second, unscoped entry for
-    // Nyala / Osprey further up this object was silently overridden by this one.
+    // SL-XP10 X-Press (XC-Pro / XC-Comp) on Project 7 / Grizzly (open: the 1990 catalogue
+    // lists SL-PP10 6316 for XC-Pro). Nyala (XCT) / Osprey (X-1) -> 6305 SL-PP00, the
+    // 1990 p.15 X-Press for X-1 / XCE / XCM / XCT (2026-11-14, user approved). One key: a
+    // second, unscoped entry further up this object was silently overridden by this one.
     'suntour accushift plus x press': [
       { bike: 'Project 7', from: 1990, to: 1990, id: 6312 },
       { bike: 'Grizzly', from: 1990, to: 1990, id: 6312 },
-      { bike: 'Nyala', from: 1990, to: 1990, id: 6312 },
-      { bike: 'Osprey', from: 1990, to: 1990, id: 6312 },
+      { bike: 'Nyala', from: 1990, to: 1990, id: 6305 },
+      { bike: 'Osprey', from: 1990, to: 1990, id: 6305 },
     ],
     'suntour radius accushift plus': [{ from: 1990, to: 1992, id: 6291 }], // SL-RA00, Radius
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).

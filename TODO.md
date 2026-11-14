@@ -509,9 +509,13 @@ The 2026-11-09 table above (754 / 931) is historical.
   undistinguished); Nyala front / brake / crank -> 11072 / 11074 / 11076.
   Forte crank 18618 (was 2002 CW-XE01) unlinked as well, 2026-11-14
   (`docs/audits/suntour-xce-crank-2026-11-14.sql`).
+  Nyala / Osprey X-Press shifters 7019 / 6999 -> 6305, retitled SL-PP00 (p.15
+  X-Press for X-1 / XCE / XCM / XCT), 2026-11-14
+  (`docs/audits/suntour-x-press-pp00-2026-11-14.sql`).
   Generator overrides already edited; diff is exactly these 7 specs. Still open:
-  Nyala X-Press shifter 7019 -> 6312 SL-XP10
-  versus p.17 SL-PP00, and 7513 group: the "BMX" group 156 owned by Campagnolo
+  1990 Bianchi Project 7 / Grizzly (XC-Pro) X-Press 6917 / 6938 -> 6312 SL-XP10
+  (the 1990 catalogue gives SL-PP10 6316 for XC-Pro; VeloBase dates XP10 from 1990,
+  so reconcile before repointing), and 7513 group: the "BMX" group 156 owned by Campagnolo
   holds 18 Shimano 1981 BMX rows across categories, so fix it as its own task.
 - **Date flags: 67 linked specs outside component dates, on 29 components.**
   Nearly all come from existing year-ranged or commented judgement overrides
