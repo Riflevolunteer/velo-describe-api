@@ -2650,6 +2650,10 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // 1975 Motobecane Grand Jubile: named PIVO Professional; Brügelmann
+    // 1973 p. 22 Pivo Profi, component 11169 (1973-78). Other Pivo cells
+    // specify a randonneur bend or combine front/rear bars; leave unresolved.
+    'pivo professional': [{ bike: 'Grand Jubile', from: 1975, to: 1975, id: 11169 }],
     'sakae ctd alloy': [{ bike: '912', from: 1979, to: 1979, id: 7888 }, { bike: '800', from: 1979, to: 1979, id: 7888 }, { bike: '710', from: 1979, to: 1979, id: 7888 }, { bike: '600', from: 1979, to: 1979, id: 7888 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sakae rnd alloy randonneur': [{ bike: '1000', from: 1979, to: 1979, id: 2910 }, { bike: '400', from: 1979, to: 1979, id: 2910 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sakae world custom ws 410 alloy': [{ bike: '1200', from: 1979, to: 1979, id: 7887 }], // 1979 Miyata: printed component; see catalogue review notes.

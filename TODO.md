@@ -162,6 +162,17 @@ The three plausible Peugeot Spidel links remain unlinked.
 
 ### Handlebars (2026-10-26 pass, recounted 2026-11-02)
 
+- **2026-11-14, user approved: 232/954 linked (+1).** 1975 Motobecane Grand
+  Jubile "PIVO Professional" [3910] -> 11169 Pivo Professional (bar), 1973-78,
+  newly attested by Brügelmann 1973 p. 22. One guarded NULL-only update; no
+  component changes. Bike/year-scoped override records the choice; all 86 CSVs
+  produce identical SQL before/after (6522 generated links; already auto-matched).
+  Grand Touring's Randonneur bend and Tandem's combined front/rear cell remain
+  unresolved. New Almarc 11171 is a 3ttt Merckx bar / Rekord-78 set (1980-81),
+  so it does not establish the two 1986 Cinelli Almarc bars. Remaining generic
+  values and named gaps below are unchanged. SQL/evidence:
+  `/private/tmp/handlebar-link-review-2026-11-14/`.
+
 2026-11-05: 220 of 914 Handlebars specs linked (24.1%; was 217 of 892). By bike brand: Peugeot 131 / 432, Raleigh 36 / 211, Bianchi 34 / 107, Colnago 0 / 54 (3ttt Colnago special / pantographed text and bare "ITM"), Falcon 7 / 51, Miyata 7 / 18. "MIYATA SIGNATURE Alloy" (4) is a house bar: leave. Leave unlinked: 1986 Miyata 100 "SR CTSD" (nearest is 7888 CTD, a different code); Miyata "SR RANDONNEUR Alloy" (3; RN-L / RN-S / RND / WR, nothing to choose on); 1989 Peugeot Cosmic "Franco Italia" (Philippe 2897 1970-82 or Milremo 2868 1984); 1989 Peugeot Anjou "CTA alloy randonneur bars" (2782 ATAX CTA is a racing bend); 1978 Peugeot "Atax Philippe, demi-course" (no demi-course row). New source gaps (named models with no row): H.L. DR-8 / DR-9 / Dirtdrop / MTB-110 / MTB Bulge / semi-rise (~10, 1987-90 Bianchi; no H.L. bar rows at all, the largest group), Kusuki KR-LB / BMT-3-26 and SR MTB-301 (1986 Miyata), SR MTB-204 (1986 Falcon), ITM Krono, Kusuki SMC-F (1989 Bianchi), Cinelli Almarc leather covered (2, 1986 Cinelli; not identified).
 
 - Rechecked 2026-11-13 (723 of 945 unlinked; no bar rows added since 11-05): linked 1994 Cinelli Velociraptor "3T Extreme" -> 8307 and Argento Vivo "3T Procompe" -> 8331 (year_to 1991 -> 1994; cinelli.md). Left: "3ttt / TTT Competizione" (1987, 1991-92 Bianchi; three bends), 1991-92 Bianchi "ITM Mondiale" (3; 9198 Mondial 90/A ends 1990 and names a model the cell does not), 1991 Bianchi Sakae MTB-220 / MTB-227 (only MTB-226SB, 1993), 1994 Cinelli "3T Pro Light" (2) and "Cinelli Eubios 26" (no rows), 1981 Bianchi "T.T.T. Rekord".

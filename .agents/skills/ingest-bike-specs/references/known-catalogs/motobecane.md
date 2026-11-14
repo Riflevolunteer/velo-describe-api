@@ -1,5 +1,20 @@
 # Motobecane catalogs processed so far
 
+## Pivo handlebar link — 2026-11-14, user approved
+
+- Linked 1975 Grand Jubile spec 3910, "PIVO Professional", to 11169 Pivo
+  Professional (bar), 1973-78. The newly ingested Brügelmann 1973 p. 22
+  lists Pivo Profi; later catalogues confirm the long reinforced sleeve.
+- Added a 1975 Grand Jubile-scoped generator override. Before/after generation
+  across all 86 CSVs is identical (6522 generated links): the current matcher
+  already resolves this newly added component; the override records the choice.
+- Applied the guarded NULL-only update in
+  `/private/tmp/handlebar-link-review-2026-11-14/proposed.sql`: one row affected.
+  No component or date changes. Handlebars now 232/954 linked.
+- Still unresolved: Grand Touring "PIVO Professional, Randonneur bend"
+  (the new road-bar row does not establish this bend); Tandem "PIVO Professional
+  front, comfort rear" (two different bars in one spec).
+
 ## 1974 Motobecane — `1974_motobecane_spec.csv` (7 bikes, 136 specs, 43 linked)
 
 - Source (added 2026-10-21): very likely VeloBase CatalogScans/Motobecane `1974_Motobecane_catalog.pdf` or `Motobecane1974.zip`, both titled "Motobécane - MBK 1974 US Catalog" (https://velobase.com/Pages/Resources/CatalogScans.aspx). Inferred from the title and year (the CSV has a page-reference column, as a scanned catalogue would), not confirmed. The index title states the market, so US is stated, not inferred.
