@@ -775,13 +775,13 @@ const COMPONENT_OVERRIDES = {
     'suntour xc comp top pull': [{ from: 1990, to: 1992, id: 7959 }], // FD-XC01, XC-Comp (only XC-Comp front row, dated 1992)
     'suntour xcd top pull': [{ from: 1990, to: 1990, id: 2662 }], // XCD 6000 (1990)
     'suntour xce top pull': [{ from: 1990, to: 1992, id: 2663 }], // FD-XE01, XCE
-    'suntour xce 4050': [{ from: 1989, to: 1989, id: 2663 }], // 1989 Bianchi Forte / Volpe: FD-XE01, XCE (the 4050 level)
+    'suntour xce 4050': [{ from: 1989, to: 1989, id: null }], // 1989 Bianchi Forte / Volpe: unlinked 2026-11-14 (user decision). SunTour 1990 catalogue (printed 09.1989) marks XCE '90 new (FD-XE00); FD-XE01 is the 1992 code; neither shown to be the 1989 part
     // 1986-87 Colnago Super Mountain Bike / 1986 Raid "Shimano AL 11" group: FD-AL11 (1980-87 since 2026-11-01).
     // The 1988 catalogue says "AL 11 SIS", but its actual indexed models
     // remain unidentified; this wording does not establish a later AL11 version.
     'shimano al 11': [{ from: 1986, to: 1987, id: 2458 }],
     'shimano fd al 11': [{ from: 1986, to: 1986, id: 2458 }],
-    'suntour xct': [{ from: 1990, to: 1992, id: 7962 }], // FD-XT02, XCT (row dated 1992)
+    'suntour xct': [{ from: 1990, to: 1990, id: 11072 }, { from: 1991, to: 1992, id: 7962 }], // 1990 Bianchi Nyala: FD-XT00-GXH (SunTour 1990 p.17, the only XCT front); FD-XT02 (1992)
     'suntour x 1 top pull': [{ from: 1990, to: 1990, id: 2655 }], // X-1 Chroma (1990)
     'suntour radius': [{ from: 1990, to: 1992, id: 2640 }], // FD-RA00-SSH clamp-on (Eros frame has no braze-on)
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
@@ -1124,9 +1124,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xc comp': [{ from: 1990, to: 1992, id: 4783 }], // RD-XC20-GXB
     'suntour xcd': [{ from: 1990, to: 1990, id: 4789 }], // XCD 6000 (1990)
     'suntour xce': [{ from: 1990, to: 1992, id: 4791 }], // RD-XE01-GXB
-    'suntour xce 4050': [{ from: 1989, to: 1989, id: 4791 }], // 1989 Bianchi Forte / Volpe
+    'suntour xce 4050': [{ from: 1989, to: 1989, id: null }], // 1989 Bianchi Forte / Volpe: unlinked 2026-11-14 (user decision). XCE is '90 new in the SunTour 1990 catalogue (RD-XE00 11056); RD-XE01 is the 1992 code; neither shown to be the 1989 part
     'shimano al 11': [{ from: 1986, to: 1987, id: 4446 }], // 1986-87 Colnago Super Mountain Bike: RD-AL11 (1984-87 since 2026-11-01)
-    'suntour xct': [{ from: 1990, to: 1992, id: 7952 }], // RD-XT02, XCT (row dated 1992)
+    'suntour xct': [{ from: 1990, to: 1990, id: null }, { from: 1991, to: 1992, id: 7952 }], // 1990 Bianchi Nyala: unlinked 2026-11-14, SunTour 1990 p.17 lists RD-XT00 (11070) and RD-XT10 (11071) without a distinguishing spec; RD-XT02 (1992)
     'suntour x 1': [{ from: 1990, to: 1992, id: 4776 }], // RD-X101-GXB; matcher took the 1989 X-1 Chroma
     'suntour radius': [{ from: 1990, to: 1992, id: 4753 }], // RD-RA00-SSB
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
@@ -1775,7 +1775,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore lx linear response': [{ from: 1990, to: 1991, id: 7582 }], // BR-M550 cantilever
     'shimano m200gs linear response': [{ from: 1990, to: 1992, id: 7598 }], // BR-M200 cantilever
     'suntour xc pro balance response system': [{ from: 1990, to: 1992, id: 1056 }], // CT-XP00 cantilever
-    'suntour xct balance response system': [{ from: 1990, to: 1992, id: 8038 }], // CT-XT01 (Dia-Compe; row dated 1992)
+    'suntour xct balance response system': [{ from: 1990, to: 1990, id: 11074 }, { from: 1991, to: 1992, id: 8038 }], // 1990 Nyala: CT-XT00 (SunTour 1990 p.17); CT-XT01 (Dia-Compe; 1992)
     'dia compe x 1 balance response system': [{ from: 1990, to: 1992, id: 8032 }], // SunTour CT-X101, X-1 (Dia-Compe; row dated 1992)
     'dia compe 986 balance response system': [{ from: 1980, to: 1990, id: 663 }], // Dia-Compe 986 cantilever
     'dia compe radius balance response system': [{ from: 1980, to: 1992, id: 1040 }], // SunTour BA-RA01-S, Radius (Dia-Compe)
@@ -2343,7 +2343,7 @@ const COMPONENT_OVERRIDES = {
     'shimano m201 alloy 48 38 28t': [{ from: 1990, to: 1991, id: 7600 }], // FC-M200 / M201, 200GS
     'suntour xc pro grease guard 48 38 26t': [{ from: 1990, to: 1992, id: 1998 }], // CW-XP01
     'suntour xc comp 48 38 26t': [{ from: 1990, to: 1992, id: 7999 }], // CW-XC01 (row dated 1992)
-    'sr xct 48 38 28t': [{ from: 1990, to: 1992, id: 8004 }], // SunTour CW-XT01 (Sakae Ringyo; row dated 1992)
+    'sr xct 48 38 28t': [{ from: 1990, to: 1990, id: 11076 }, { from: 1991, to: 1992, id: 8004 }], // 1990 Nyala: CW-XT00 48-38-28T (SunTour 1990 p.17); CW-XT01 (Sakae Ringyo; 1992)
     'sr x 1 48 38 26t': [{ from: 1990, to: 1992, id: 8000 }], // SunTour CW-X101 (row dated 1992)
     'sr radius 52 42t': [{ from: 1990, to: 1992, id: 8007 }], // SunTour CW-RA01, Radius (row dated 1992)
     'ofmega pista super competizione 48t': [{ from: 1980, to: 1990, id: 1702 }], // Super Competizione (pista)

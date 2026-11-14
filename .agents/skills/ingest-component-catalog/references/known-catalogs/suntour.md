@@ -1545,3 +1545,22 @@ Seven catalogue entries have possible existing specimen matches requiring strong
 - p.27 `PL-RA00`: Review edition/code conflict before any change. Existing bare Radius row 1980-1990 has no exact code; catalogue family supports model naming, inspect if photo-only ambiguity matters. Original VeloBase source MODEL field blank, only Radius name, alloy body/cage, steel axle, platform 9/16x20. Exact RA00 identity unresolved; no new RA00 duplicate inserted.
 
 Original model-field recovery is matching corroboration; all applied component changes are supported by the1990 catalogue or explicitly preserve the already-held1992 specifications. Indexed original-reference URLs and details are saved in `original-model-review-11-20.txt` and `review-01-10.txt` in the scratchpad. No other catalogue was newly ingested during this pass.
+
+### Bike-link follow-through, 2026-11-14 (user approved)
+
+Applied `docs/audits/suntour-1990-links-2026-11-14.sql`. The 1990 catalogue
+heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
+- 1990 Bianchi Nyala "SunTour XCT": the front, brake and crank links now go
+  to the 1990 rows 11072 FD-XT00-GXH, 11074 CT-XT00 and 11076 CW-XT00. They
+  previously pointed to the 1992 rows 7962 / 8038 / 8004. The rear 7018 was
+  on 7952 RD-XT02 and is now unlinked: p.17 lists RD-XT00 (11070) and RD-XT10
+  (11071) with no spec that tells them apart. Shifter 7019 -> 6312 SL-XP10 is
+  unchanged (p.17 lists SL-PP00 X-Press for XCT, so it still needs review).
+- 1989 Bianchi Forte / Volpe "SunTour XCE-4050": front 18615 / 18719 (was 2663)
+  and rear 18616 / 18720 (was 4791) are now unlinked. XE01 is the 1992 code
+  and XE00 is '90 new; neither is shown to be the 1989 part. Forte crank
+  18618 -> 2002 CW-XE01 is unchanged (CW-XE00 is still held as a possible
+  duplicate of 2002).
+- Generator overrides use null / 1990-scoped ranges for these values. The
+  generator diff across all 86 catalogues changed only these seven specs.
+  Readback was checked, and a rerun affected 0 rows.

@@ -483,6 +483,58 @@ Remaining era mismatches: 1983 Bianchi Rallye generic "Mafac cantilever" -> 1001
 
 ### Rear Derailleurs
 
+**Step 1 audit, 2026-11-14 18:57 UTC (read-only): 795 / 976 linked (81.5%); 181
+unlinked; 945 Rear Derailleur components, 180 used.** No DB or generator changes.
+Scratch snapshot/analysis: `/private/tmp/claude-501/-Users-acooper-dev-velo-describe-api/2cfb9527-8f37-4ca2-89ea-5d23d93dca07/scratchpad/rd-audit/`.
+The 2026-11-09 table above (754 / 931) is historical.
+
+- **Structural baseline:** no dangling component/source/group references, wrong
+  linked categories or exact duplicate specs. Two defects to fix:
+  9692 Simplex AR 642 P Maxi-Prestige description was cut off at 255 characters
+  (fixed 2026-11-14, see below); 7513 Shimano RD-MX10 sits in group "BMX",
+  which is owned by Campagnolo. 128/945 components have incomplete dates; 426
+  have VeloBase as current source; 498 have no group (informational).
+- **First priority, SunTour 1990 follow-through (step 8 never run).** The
+  2026-11-13 SunTour 1990 catalogue load (source 385) changed no bike links, and
+  its 13 new rear rows (11026-11128) are unused. Review: 1990 Bianchi Nyala
+  "SunTour XCT" (spec 7018) -> 7952 RD-XT02 (1992 only) while 1990 RD-XT00 11070
+  / RD-XT10 11071 now exist (which one is unresolved); 1989 Bianchi Forte / Volpe
+  "SunTour XCE-4050" (18616 / 18720) -> 4791 RD-XE01 (1992 code, known-wrong
+  1980 start) versus 11056 RD-XE00 (1990). Check the matching front derailleur,
+  shifter and crank links for the same bikes in the same pass.
+  **Applied 2026-11-14:** `docs/audits/suntour-1990-links-2026-11-14.sql`
+  (9 rows, readback checked, rerun 0; also repaired 9692; Rear Derailleur now
+  792 / 976). User decisions: XCE-4050 front/rear x4 unlinked
+  (XCE is '90 new; XE01 is the 1992 code); Nyala rear unlinked (XT00 / XT10
+  undistinguished); Nyala front / brake / crank -> 11072 / 11074 / 11076.
+  Generator overrides already edited; diff is exactly these 7 specs. Still open:
+  Forte crank 18618 -> 2002 CW-XE01 (same XE01 question; CW-XE00 held as a
+  possible duplicate of 2002), Nyala X-Press shifter 7019 -> 6312 SL-XP10
+  versus p.17 SL-PP00, and 7513 group: the "BMX" group 156 owned by Campagnolo
+  holds 18 Shimano 1981 BMX rows across categories, so fix it as its own task.
+- **Date flags: 67 linked specs outside component dates, on 29 components.**
+  Nearly all come from existing year-ranged or commented judgement overrides
+  (e.g. 4583 Simplex Prestige x8, 4622 SX440 GT x6, 4645 Criterium x5, 4096
+  C-Record x4, 4746 Hero x4, 4655 SLJ6600 x3). These are review flags, not errors.
+  No override found for 4561 Simplex Alpha T (1989-95) from 1987 Peugeot
+  "Alpha T/P" x4 (15509/15528/15547/15566), 4264 Gipiemme Special from 1987 Bianchi
+  Super Leggera (1190), 4712 Mountech GTL v2 (1985) from 1987 Raleigh Maverick
+  (8874) and 4770 SVX GT (1985) from 1986 Raleigh Technium 460 (8342): check
+  these four matcher links first. Linked components missing dates: 4649 SLJ
+  SX660 (2 specs), 4277 Duopar Eco v1 (1).
+- **Duplicate baseline:** 72 same-name groups (41 configuration, 78 generation
+  members), near/paren scans empty. One cosmetic flag: 4501 DA-100 / RD-7100
+  Dura-Ace (Black) vs 7427 (also in different groups, 137 "Dura-Ace 7100" vs 50
+  "Dura-Ace"). Precedent (Cyclone Black Series) is to register as a reviewed
+  variant rather than merge; align the group either way.
+- **Triage of the 181 unlinked:** 107 brand-only (75 bare "Simplex"), 15 none /
+  fixed gear, 51 actionable, 4 unbranded, 2 generic, 2 either/or. New candidates
+  not listed below: 1979 Miyata 310 / 200 "SUN TOUR Seven" (20424 / 20445; 4755
+  Seven 2320 1976-79 or 4756 RD-1900 1978-85, needs identification); 1994
+  Cinelli Genius Strada "Campagnolo Record" (20196; RD-11RE 1993-94 or RD-21RE
+  1994); 1994 Cinelli Velociraptor "Shimano Alivio" (20177; earliest row
+  RD-MC12 starts 1995).
+
 Miyata Omnium / 912 gearing and GMG shifters do not establish RD-6207 versus RD-6208. New Seven does not yet identify RD-1900. Generic Positron remains deliberately unlinked, including the 1983 Raleigh Silhouette.
 
 - Leave unlinked (variant or era unclear): 1986 Miyata "SHIMANO New 600 EX" x2 (RD-6207 short / GS, or RD-6208 SIS); 1988 Colnago "Shimano Santé" x2 and 1988 Raleigh "Shimano Santé, SIS indexed" (RD-5000 and RD-5001 both cover 1988; existing call); 1984 Peugeot "Huret Duopar" x2 (4302 titanium standard cage, 4400 Eco or 8173 titanium long cage); 1982 Battaglin "Gipiemme Sprint 610"; 1989 Peugeot "Simplex SOI T/SP" x3 / "SOI GT/SP" / "501 GT/SP" / "T/SP" (maybe S001N T / S002 GT misprints); 1988 Peugeot "Simplex SX A430 GT/SP" x2 (no SX430; SX440 GT v3?); 1981 Raleigh "Sun Tour V.T." (VX-T 4773?); 1986 Falcon "Suntour MT Tech" (4712 / 7785 / 4711); 1986 Miyata "SUNTOUR New SEVEN" (RD-1900 ends 1985); 1981 Peugeot "Simplex SX"; 1986 Colnago "Shimano Deore"; 1978 Peugeot "Simplex Criterium", 1978 / 1989 "Shimano Positron", 1986 Raleigh "Suntour Cyclone" (existing nulls).
