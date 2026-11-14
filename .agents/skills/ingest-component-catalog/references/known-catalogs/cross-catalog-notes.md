@@ -1455,3 +1455,42 @@ Weinmann 1129 / 1130 570.
   Rider front AV 69.1 T (DB has AV 62.1 T); Campagnolo Record chainring "designs" (frame-maker
   engraved finishes); disc wheels and "Hit" wheel packages; Brügelmann house tubulars and
   Pariba; groupsets.
+
+## Brügelmann Radsport-Shop catalogue — 1977 (rennrad-geschichten.de), data_source 392, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1977)", country DE. Source: same page
+  as the 1981 entry, "Brügelmann 1977.pdf" (84 pp, A4, all upright; the OCR text layer is
+  garbage). Cover "1977"; p. 3 "Katalogdruck im Dezember 1976", "unseren 77er Katalog"; p. 5
+  header "1977/8"; p. 21 weight table "Stand im Sommer 1976".
+- Components: pp. 5 (BBs), 8-9 (brakes, levers), 12 (rims), 17-19 (chains, chainrings), 22-23
+  (bars, stems), 25-26 (hubs, pedals), 30-33 (saddles, seatposts, derailleurs, shifters), 37-39
+  (tyres), 41 (headsets, bottom of page), 42-46 (BBs, cranksets, freewheels, sprockets, wheel
+  grid), 82 (lightweight parts). Out of scope: lights, bottles, racks, frames, tools, trainers,
+  clothing, nutrition, books, complete bikes.
+- Bars (p. 22): Pivo Standard (steel / alloy) and Profi (25 clamp); Cinelli Giro 405 / 425,
+  Merckx 425 / 445, Poulidor 425, track Pista-19 and Sprint-18; 3ttt Anquetil / Tour de France
+  400-430, Merckx 420, Coppi (large deep drop) and Motta (short deep drop) 420, Record
+  Superleggero 400 / 420, Junior 380, Schüler 390. Consistent with the 1975-76 bar list in TODO.md.
+- Changed (source_ref -> this source):
+  - year_from -> 1977 (19 rows; catalogue earlier than prior first attestation): 1398 Sedis Gold
+    (Sedicolor Gold; was 1978), 4501 Shimano DA-100 Dura-Ace black RD (was 1978), 5605 Ideale 2004
+    (was 1979), Continental Sonderklasse 11140 / 11141 / 11142 / 11143 (175 / 220 / 240 / 165, all
+    were 1981), Wolber 6914 Cross Super / 9029 Competition / 6919 Junior (Junior-Butyl) / 9028
+    Performance / 9026 Special Course (all were 1978), D'Alessandro 11135-11139 Leone / Mondiale /
+    Specialissimo / Super / Criterium Seta (were 1981), Dourdoigne 11146 Paris-Roubaix / 11147 Grand
+    Prix des Nations (were 1981).
+  - year_to -> 1977: 9319 Cinelli 18 Pista (1975; "Sprint-18"), 9082 Cinelli 19 Track (1976;
+    "Pista-19"), 8794 Simplex AV 3 Super-Competition front derailleur (1974), 6646 Pivo
+    Professional stem (1975; p. 23 "Profi" stem with Allen internal clamp, 85 / 100 / 120 mm).
+- Added: 11166 3ttt Coppi (1977-1982; also Brügelmann 1981 p. 25 and 1982 p. 25), 11167 3ttt
+  Motta (1977), 11168 Pivo Standard bar (1977) and 11169 "Pivo Professional (bar)" (1975-1977;
+  titled with "(bar)" because the stem 6646 shares the name; search_text "Pivo Professional"; 1977 p. 22 "Profi", long reinforced clamp section, 25 clamp;
+  year_from from the 1975 Brügelmann p. 22 "PIVO PROFI-Rennbügel mit langer Manschette" read on
+  2026-11-13, see TODO.md; best match for the 1975 Motobecane "Pivo Professional" spec). Pivo
+  Standard is steel or aluminium, 25 clamp. Other Pivo rows: 2904 deep drop bar, stems 6634-6646.
+- Not applied: Weinmann "Super" centre-pull / sidepull sets (vs 1147 734 Super, 1979); Sedis Delta
+  chain (vs 1402 Sedisport Delta, 1980); Maillard Course Dural and Regina Extra Criterium /
+  Standard freewheels; Huret Eco (vs 4276 Duopar Eco, 1980; front / rear unclear); Simplex Prestige
+  groups (DB rows are 1960s versions); Mavic "Titan blau" tubular rim; Fiamme "Leggerissimo";
+  Canetti Cross (vs 9350 Cross 160); Wolber Pro / Strada-Butyl / Corsa-Butyl; Pivo Course stem;
+  Ideale titanium-frame saddles; generic BBs, axles and chainrings.
