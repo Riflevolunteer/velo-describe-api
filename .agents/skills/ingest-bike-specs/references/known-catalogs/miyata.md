@@ -54,6 +54,60 @@
   6446 -> 6518, exactly the 72 new links. Post-load Miyata totals:
   1979 9 bikes / 189 specs / 72 links; 1986 18 / 395 / 156.
 
+## 1985 Miyata — loaded (2026-11-15, source 405, country NULL)
+
+- CSV: `bike_specs/1985_miyata_spec.csv` (scratchpad `build_miyata85.js`,
+  not kept). Review SQL prepends six guarded date fixes: 11151 Sugino Astron
+  year_to 1981 -> 1986 (also covers the already-linked 1986 Pista), 3860
+  MKS Esquartz 107 1983 -> 1985, 7192 SL-AT50 year_from 1986 -> 1985, 10846
+  SR MTS-100 and 6666 SR MTS-110 1984 -> 1985, 9543 Araya Model 5 1984 ->
+  1985.
+- Source: https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2085.pdf
+  (19 pp). Spec table pp. 17-18, read from 170 dpi crops. Country left
+  NULL: back cover has only the warranty ("some states" boilerplate),
+  "Manufactured by Miyata Industry Co., Ltd. Chigasaki" and "Printed in
+  Japan"; no edition code or distributor address.
+- Seventeen bikes: Professional Racing (Team Miyata, Pro Miyata -> "Racing";
+  Team Pista -> "Track"), Semi-Pro (912, 710, 310; Pista -> "Track"), Grand
+  Touring (1000, 610, 210 -> "Touring"), All Terrain (Ridge Runner, Terra
+  Runner OR, Street Runner -> "Mountain"), All Round Sports (110, 100, 90,
+  Sport-10). Skipped: Beach Runner (hi-ten, single 48T, DC-1020 side-pulls,
+  as the 1986 Shore Runner) and Sport Junior (24" wheels).
+- 210 column is cut by the scan's page gutter (left edge missing on p. 18,
+  absent from p. 17): kept only what is visible. Frame Size written "21",
+  23", 19-1/2"M (other sizes lost in the scan gutter)", brake model number
+  lost ("DIA-COMPE Cantilever", forced unlinked), weight blank, colours
+  "Zodiac Blue #B-154, Sandstone" (second code lost).
+- Overrides (bike-scoped, 1985 only): New Dura-Ace = 7400 on Team Miyata
+  (FD 2510, RD 4503, SL-7400 6164, MF-7400-6 2221, FC 1819, PD 3970, BR 991,
+  HB-7400 3560, HP 3099; post Dura-Ace EX 5899). Team Pista: Dura-Ace
+  headset and hub forced null (auto hit road 7400 rows; track 7500 ends 1984,
+  7600 starts 1986), MKS Unique Custom Track 10042, Nitto Pro AA 8560, D.I.D
+  maker row 1355 for DID-TRACK (as 1986). Pro Miyata: Superbe Pro crank
+  CW-5000 1991 (auto hit 1993 "Superbe"), PL-2000 4010, New Cyclone hub
+  BH-2200 3606, Ukai 20A 5192; plain "Superbe" rear forced null (auto hit
+  the 1980 Superbe II long cage). New 600 EX = 6207 as 1984 (912; 1000
+  5-speed and Terra Runner 6-speed MF-6207 2217). New Cyclone 710 -> FD-3300
+  2629 / RD-6000 4739 (as 1986). Deore XT-SP -> RD-M700-SP 4489; SLZ-408
+  6195; Z-Series FD-Z202 / Z204 / Z206, RD-Z501, SL-Z401, BR-Z570;
+  L512 SGS -> RD-L512 10970; AT-50 shifter 7192 (brake auto 1003). Pista:
+  Sylvan Track 10043, Sprint Track RH-4400 3612, B115 2876, Astron 11151.
+  Ridge Runner: NGC982 697, Ukai 7C 10470, XC-II 4015, Power Thumb 6307.
+  SR CT-P5E -> 5857, CT-P6 5861, SP-154 / SP-155, CTC-5DXC -> 8205 (as
+  1986), MTS-100 / MTS-110. 1000 "Levin sealed" forced null (auto hit the
+  MTB-225; kept on the Ridge Runner); Sugino GS-LP and VT forced null
+  (rows are GS 1980-82 / VT 1980).
+- Left unlinked: Superbe front and Superbe Pro shifter, Mountech front /
+  Mountech LL rear, Deore XT-GS front, L-513 / L-514 rears and L-412
+  shifters (no rows), top-mount SunTour shifters, Pro-Compe / UG clusters,
+  Dura-Ace UG / 600 UG / UG chains, Dura-Ace track crank and sprockets,
+  600 EX triple and 600 EX brakes, SunTour sealed hubs, SR CR-E posts,
+  Ukai 7Z / 16-A2, Araya 16-B (two rows) / 16-A3 / 18 / Aero DX, Sugino
+  TLP / TGT / TGT-LP, Miyata Signature cranks, Kusuki / Nitto 55F / B-801 /
+  SR MTB bars and stems, KKT RMX / RT-7 / M-33 pedals, Ariake saddles.
+- Regression: all 90 other CSVs regenerate byte-identical (after adding a
+  plain 11151 fallback to the Astron key so the 1986 Pista keeps its link).
+
 ## 1984 Miyata — loaded (2026-11-15, source 404, CA)
 
 - CSV: `bike_specs/1984_miyata_spec.csv` (scratchpad `build_miyata84.js`,
