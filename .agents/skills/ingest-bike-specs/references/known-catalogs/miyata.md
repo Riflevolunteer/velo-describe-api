@@ -54,6 +54,56 @@
   6446 -> 6518, exactly the 72 new links. Post-load Miyata totals:
   1979 9 bikes / 189 specs / 72 links; 1986 18 / 395 / 156.
 
+## 1981 Miyata — loaded (2026-11-14, source 402)
+
+- CSV: `bike_specs/1981_miyata_spec.csv` (scratchpad `build_miyata81.js`,
+  not kept). Review SQL prepends six guarded date fixes: year_to 1980 ->
+  1981 for 8055 PDL-S, 1200 Uniglide 600EX cassette, 3925 SR SP-150, 8251
+  SR CT-5RG; year_from 1982 -> 1981 for 8243 SR SP-450 and 8230 SR RY2
+  Royal 2 (printed "SR Royal II").
+- Source: https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/1981%20Miyata%20Catalog.pdf
+  (12 pp, real photo scan). Spec table "Technical Specifications 1981
+  Models" across pp. 10-11; p. 9 is frame-set geometry (framesets out of
+  scope); pp. 2-8 model prose with series headings. US edition: warranty
+  (p. 12) names Toyoda and "some states"; CPSC reflectors throughout. A
+  Canadian representative's business card (Willowdale, Ontario) is pasted
+  over the back-page address block; printed text is the US edition.
+- Nine bikes, Type from the series headings: Professional (Team Miyata,
+  Pro Miyata -> "Racing"), Semi-Pro (912, 710, 310 -> "Semi-Pro"), Touring
+  (1000, 610), All-Round Sports (210, 110 -> "Sports"). Ladies' 310S
+  (stagger), 210M (mixte) and 110L kept in the men's rows' Frame Size cells.
+  Skipped: Commuter / Commuter-L (Shimano 3-speed hub, racks, fenders,
+  chain case, dynamo: city).
+- Repairs: 310 column is cut by the page edge / gutter on p. 10. Visible
+  prefixes completed from the 210 / 610 / 710 wording and the text layer
+  (sizes 23" / 25", "Cr-Mo tubing, cutway lugs", PDL-M shifter, Pro-Compe
+  14-17-20-24-28, rest of hubs / saddle / brakes text); the 310 crank teeth
+  are lost, so the cell omits them. 310 colours may be incomplete. 1000
+  chain "1/2" x 2/32"" printed typo -> 3/32". "SUN TOUR VII" kept as
+  printed (= Seven).
+- Overrides (bike-scoped, 1981 only): Dura-Ace EX RD -> 4509 RD-7200 (the
+  auto hit 4508 is the 1984-85 last version); EX headset 3105, side-pull
+  997 (normal reach default), levers 439, cassette 1210; Dura-Ace AX crank
+  1826, pedals 3973, stem 6678. Pro Miyata: NGC 400 -> 694, 600 AX crank
+  1787 / pedals 3957, 600 EX shifter -> brazed-on 6150 (frame-set page:
+  "downtube shifter basement"); 912 600 EX shifter clamp-on 6147 (frame-set
+  page: "downtube stop"), LD crank 52x39 -> 7498 FC-6210 (gearing now
+  matches the LD row), Royal II stem 8230. 600EX headset 3089, hubs 3540,
+  cassette 1200, brakes 969, levers 419. SunTour: VX 2614, VX-S 4775, VGT
+  4705, Seven/VII 2641 / 4756, PDL-M / PDL-S / PUB-10 as 1980. SR: Custom
+  5RG -> 8251 (also the 610 triple), SI-5DRG-AH 7876, Super-Apex 5TG 1757,
+  CTD 7888, RND 2910, AH stem 7902, Custom P6 5861, SP-150 / SP-450.
+  Araya 16B 350g -> 4917; Gyro-Master small flange QR -> 8985 78-1.
+- Left unlinked: Dura-Ace EX FD (band 2518 vs brazed 2519) and hub (FH-7260
+  vs FH-7261); Team Miyata "aerodynamic shifter" (frame-set page says
+  Dura-Ace AX; A/B brazed types); Dura-Ace AX / 600 AX seat posts (several
+  types); SR Custom P5 (5857 / 5858); Cyclone front; Pro-Compe / Perfect
+  clusters; 600 UG chains (kept consistent with 1979-80); NGC 200H levers,
+  NITTO MDL-55, MKS Silvan Road, SR SP-350, Silstar 5DX AH / 5DX C, Silver
+  Win AH, KD-4L, Ariake 77xx saddles, KKT RT-E1 (no rows); Dia-Compe 610 /
+  500 / 730; 600 EX stem (no HS-6200 row).
+- Regression: all 87 other CSVs regenerate byte-identical.
+
 ## 1980 Miyata — loaded (2026-11-14, source 401)
 
 - CSV: `bike_specs/1980_miyata_spec.csv` (built by scratchpad
@@ -91,7 +141,7 @@
   both cover 1980); Dia-Compe 610 (656 vs GC610 689), #500, #730 (no
   period row); Tange New Falcon (3141 is 1974 only); RY-KM, S-WIN stems,
   KD-4L / KE-36 bars, MKS QR-K1, KKT pedals, Ariake 77-17, generic hubs.
-- Regression: all 87 other CSVs regenerate byte-identical.
+- Regression: all 86 other CSVs regenerate byte-identical.
 
 ## 1986 Miyata — `1986_miyata_spec.csv` (18 bikes, 395 specs, 131 linked)
 
