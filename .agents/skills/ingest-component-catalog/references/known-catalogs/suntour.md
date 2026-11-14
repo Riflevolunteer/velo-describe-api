@@ -1586,3 +1586,11 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   "XCE". XCM 8003 CW-XM01 / 8022 BL-XM01 / 8036 CT-XM01 / 8037 BA-XM00 moved from
   SR-owned 182 to SunTour 240 "XCM". The original groups keep their own brand's rows
   (703 Dia-Compe XCE, 1770 Sakae XCM). SQL: `docs/audits/group-ownership-2026-11-14.sql`.
+
+- 2026-11-14 rear derailleur dedupe (user approved): deleted 4733 "SunTour Cyclone
+  (Black Pivot Knuckles)" (VeloBase C0C55FDD-E9C6-48D9-8A76-312E08FC35EF; undated,
+  short cage, split-T "SunTour Cyclone" plate, no links). Merged into 4735 5902 /
+  RD-1700 Cyclone, whose description now notes the black-knuckle variant. Added a
+  Rear Derailleurs 'suntour cyclone' 1986 null override, because without 4733 the
+  1986 Raleigh Supercourse auto-matched 4734 Cyclone 3-Pully (1980). SQL:
+  `docs/audits/rear-derailleur-dedupe-2026-11-14.sql`.

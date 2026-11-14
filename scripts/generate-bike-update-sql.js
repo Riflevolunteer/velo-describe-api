@@ -1127,6 +1127,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xce 4050': [{ from: 1989, to: 1989, id: null }], // 1989 Bianchi Forte / Volpe: unlinked 2026-11-14 (user decision). XCE is '90 new in the SunTour 1990 catalogue (RD-XE00 11056); RD-XE01 is the 1992 code; neither shown to be the 1989 part
     'shimano al 11': [{ from: 1986, to: 1987, id: 4446 }], // 1986-87 Colnago Super Mountain Bike: RD-AL11 (1984-87 since 2026-11-01)
     'suntour xct': [{ from: 1990, to: 1990, id: null }, { from: 1991, to: 1992, id: 7952 }], // 1990 Bianchi Nyala: unlinked 2026-11-14, SunTour 1990 p.17 lists RD-XT00 (11070) and RD-XT10 (11071) without a distinguishing spec; RD-XT02 (1992)
+    'suntour cyclone': [{ from: 1986, to: 1986, id: null }], // 1986 Raleigh Supercourse: existing null (several Cyclone rears fit); was held only by matcher ambiguity until 4733 merged into 4735 (2026-11-14)
     'suntour mountech': [{ from: 1987, to: 1987, id: null }], // 1987 Raleigh Maverick 18 Pro: unlinked 2026-11-14; RD-4900 7785, RD-5500 4711 and RD-5500 v2 4712 all fit (as 1986 Falcon "MT Tech"); the matcher hit 4712 by title shape
     'suntour svx': [{ from: 1986, to: 1986, id: null }], // 1986 Raleigh Technium 460: unlinked 2026-11-14 (user decision); only SVX rear is 4770 SVX GT (RD-7400) and the bike does not print GT
     'suntour x 1': [{ from: 1990, to: 1992, id: 4776 }], // RD-X101-GXB; matcher took the 1989 X-1 Chroma
