@@ -357,6 +357,65 @@
   KD-4L / KE-36 bars, MKS QR-K1, KKT pedals, Ariake 77-17, generic hubs.
 - Regression: all 86 other CSVs regenerate byte-identical.
 
+## 1987 Miyata — loaded (2026-11-15, source 407, country NULL; partial 512 and 1000 kept by user call)
+
+- CSV: `bike_specs/1987_miyata_spec.csv`, built by scratchpad
+  `build_miyata87.js` from three Sonnet-subagent JSON transcriptions
+  (one per page, 200 dpi crops), spot-checked against the scan. Review SQL
+  prepends sixteen guarded date fixes (year_to -> 1987 for 2544, 3143
+  Tange G-Master (was 1980), 3961, 3966, 5475 Turbo Triathlon (was 1980),
+  5899, 6194, 7164, 7553, 7813 (was 1985), 8114; year_from 1989 -> 1987
+  for Nitto 8586 MT-5, 8587 MT-6, 8589 NTC-A, 8590 Young-II, 8592 NTR).
+- Source: https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2087.pdf
+  (30 pp). One fold-out spec table scanned in three overlapping pieces:
+  p. 26 (Carbon Fiber, Racing, Competitions/Fitness 912, 712), p. 28
+  (Fitness 512, 312, ATB), p. 27 (Touring, Sports; its right edge repeats
+  712). The Omnibus PDF (pp. 172-175) holds the same scans. Country NULL:
+  warranty boilerplate only, no edition code or distributor address.
+- Twenty-five bikes: Carbon Tech 5000 / 3000 / 1000, Aero Miyata, Team
+  Miyata, Omnium -> "Racing"; 912, 712, 512, 312 -> "Competition / Fitness"
+  (as 1986); 1000, 615 GT, 215 ST -> "Touring"; 112, 100, Triton, Nimbus,
+  Victor -> "Sports"; Ridge / Sky / Terra / Trail / Valley Runner, Path
+  Winder, Street Winder -> "Mountain" (Path / Street Winder kept like the
+  1986 City Runner: derailleurs, cantilevers, triples). No separate
+  Alumitech models here (that is its own 1987 catalogue on the selector).
+- Gutter losses: the 512 column lost its left half between p. 26 and p.
+  28, and the 1000 straddles p. 28's right edge and p. 27's left edge.
+  Kept only text visible or with a single completion from sibling columns
+  (e.g. "[SHI]MANO", "[AC]-2 crown", "[WO]LBER [Alpin]a"): 512 smallest
+  size / weight / crank gearing / brake-lever and hub model numbers
+  omitted; 1000 derailleurs, crank and brakes left blank, sizes and colour
+  from the p. 15 model blurb. Cluster teeth for the 1000 lost.
+- Cell splits: Derailleurs -> FD / RD / shifter by "FD .. RD .. SL" markers;
+  "Brake Set" -> Brakes + Brake Levers ("w/... levers"). Spelling fixes:
+  Champange, Gracier -> Glacier, SANSHIN -> SANSIN, Retension, "Chrom".
+- Overrides (bike-scoped, 1987 only): New Dura Ace = 7400 (FD 2510, RD
+  4503, SL-7400 6164, CS-7400-7 1204 for 7-speed, MF-7400-6 2221 on the
+  6-speed Aero, CN-7400 7231, FC 1819, PD 3970, BR 991, BL 434, FH-7400
+  7207, HP 3099); Aero's Superbe Pro hub -> BH-1600 3617 (auto hit the
+  generic pre-1981 row). New 600EX = SIS 6208 where a row exists (RD 4471,
+  SL 6149, MF-6208 2218, BR 972, BL 421, FH-6208 3539, CN-6208 7232) with
+  6207 for FD 2481 / HP 3090 / PD 3961 / FC-6207-BP 1799. New 105 = 1050
+  (FD 2462, RD 4449, SL 6130, FC 1778, PD 3953, FH 3523; brakes / levers
+  unlinked, 49 vs 57 and 1050 vs 1051). New Deore XT = M730 (FD 2499, RD
+  4491, SL 6159, CS 1201, FC 1810, PD 3967, BL 429, HB 3550); New Deore =
+  MT60 (FD 2496, RD 4487, SL 6157, BL 427). Z-012 -> MF-Z012 7209; Sansin
+  RE-60 9003 / CE-60 9007; Hatta Vesta 3020; XC-Sport 7000 FD 2660 / RD
+  4788 / levers 470; MS-series RD-M531 4523, SL-MS55 6127, SL-MS40 6126;
+  Light Action L-523 4518, L-532 4521, L-522 7553; BR-L490 1004; FC-B124
+  1776 / FC-B126 7560; BL-Z325 7225; LD-5100 PLG 6290; AX-50 2459.
+  Forced null: BR-Z570 on 312 / 112 / 100 (the only row ends 1986 and
+  bundles four models), Aero's split disc / ADX-4 rim cell, XC-Sport IC
+  shifter (integrated lever), DC-983D, SunTour "RD 2000".
+- Left unlinked: Alpha 3000 SS / GX (which is front is unclear), TY 60,
+  QS10, L-525 (cage not given), split front-canti / rear-centre-pull brake
+  cells, Wolber Aubisque / Alpina, National CX-Alpha, Ukai LA-14, Selle
+  Royal / Vetta saddles, Sansin Gyro master, SR / Sugino / Strong posts,
+  Nitto 55F / B-105F / B-126AA / B-811F / B-814F bars, Kusuki bars and
+  stems, SR and Sugino-less cranks (SUC / CTC / SXC / FXC), MKS PB-100 /
+  G-5000, Victor pedals, generic steel parts on Triton / Nimbus / Victor.
+- Regression: all 92 other CSVs regenerate byte-identical.
+
 ## 1986 Miyata — `1986_miyata_spec.csv` (18 bikes, 395 specs, 131 linked)
 
 - Source: SS Cycleworks bike museum scan
