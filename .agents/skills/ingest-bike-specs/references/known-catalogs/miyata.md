@@ -165,6 +165,63 @@
   AR-Road 2 / CR-2 / Model-33 / PT-7, SR SP-513; Ariake saddles (no rows).
 - Regression: all 89 other CSVs regenerate byte-identical.
 
+## 1983 Miyata — loaded (2026-11-15, source 406)
+
+- CSV: `bike_specs/1983_miyata_spec.csv` (scratchpad `build_miyata83.js`,
+  not kept). Review SQL prepends fifteen guarded date fixes: year_from
+  1984 -> 1983 for 660 Dia-Compe 980, 2654 FD-2900 / 4771 RD-4600 Trimec,
+  8087 Dia-Compe AC500, 8873 Dia-Compe 164G; year_to -> 1983 for 8983
+  Pro-Am 75-1, 1735 SR AEROX 5LA, 1200 Uniglide 600EX, 8250 SR CT-5LA-EL,
+  3926 SR SP-152 (was 1980), 1757 Super Apex-5TG, 2910 SR RND, 8252 SR
+  CT-5TG, 8200 SR CTC-5DRG2, 6283 SunTour LD-1000 DLW.
+- Source: https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2083.pdf
+  (20 pp). One spec strip at the foot of each model page, pp. 5-18 (one
+  model per page, order from the p. 4 "1983 Miyata Model Line" table).
+  Back cover: "Imported by: MIYATA BICYCLE OF AMERICA, INC., 2526 W. Pratt
+  Blvd, Elk Grove, ILL"; "Printed in Japan APR. 1983" -> country US.
+- Fourteen bikes, Type from the p. 4 series: Professional Racing (Aero /
+  Team / Pro Miyata, 1200), Semi-Pro (912, 710, 310), Grand Touring (1000,
+  610, 210 -> "Touring"), All-Round Sports (110, 100, 90 -> "Sports"),
+  Mountain Bike (Ridge Runner -> "Mountain"). No out-of-scope models.
+- Cell splits: "Handle" -> Handlebars + Stem ("X w/Y stem"); "Saddle" cell
+  -> Saddle + Seat Post ("w/... pillar"); "Derailleurs" -> front / rear /
+  shifter; "Brakes" -> Brakes + Brake Levers. No spoke row printed.
+- Repairs: Pro Miyata "Supberbe Pro" -> Superbe Pro, "Esquarts" ->
+  Esquartz. The 610 strip is cut at the page's left edge; text layer and
+  visible fragments give "SR CT-5TG", "x 47 x 32 teeth" and sizes
+  "-1/2", 21" / ", 25"", written as SR CT-5TG 52 x 47 x 32 teeth and
+  19-1/2", 21", 23", 25" (the 52 and 23" inferred from the 1982 610 and
+  the series pattern; flag if exactness matters).
+- Overrides (bike-scoped, 1983 only): Aero Miyata Dura-Ace AX (auto RD
+  4507 / BR 995 / bar 2917; FC 1826, PD 3973, FH-7370 3567, EX cassette
+  1210, CN-7100 7472). Team Miyata EX (auto RD 4509 / BR 997 / HP 3105;
+  FH-7260 3569, HS-7300 stem 6678, AX crank / pedals); EX front forced
+  null (band vs brazed, as 1981-82). Pro Miyata Superbe Pro (auto FD 2652
+  / RD 4766), AGC-300 686 / AGC250 279, Aero Mighty 1925, Esquartz 3858;
+  bare "SUNTOUR SUPERBE" hub forced null (auto hit generic row ending
+  1980; no flange given). 1200: Cyclone M2 rear 4742, NGC-400 694, Pro-Am
+  8983, AEROX 5LA 1735, Esquartz 102 3859. 912: 600EX Arabesque 2480 /
+  4468, cassette 1200, hub 3540, Royal-II 8230 (as 1982). 710: BL 2622 /
+  BL-GT 4731, 500G 9106. 310: A-105 = 105 Golden Arrow (2466 / 4452 /
+  6132), AC-500 -> 8087, SP-152 3926. 110: Trimec FD-2900 2654 / RD-4600
+  4771. Others: Cyclone M2GT 4743, ARX GT 4729, PDL-M 6264, LD-1000 6283,
+  Thumb shifter 6307, Dia-Compe 960 8096 / 980 660, 164 -> 8873, Perfect
+  PT5S / PT6S -> 2245 / 7813, SR CT-5LAEL / CT-5TG / CTC-5DRG2 / CTC-5DX /
+  Super-Apex 5TG, RND 2910, CT-P6 / CT-P6C 5861, Araya-5 9543. "DIA-COMPE
+  610" forced null (auto 656 vs Gran Compe 689, as 1979-82). The 710 500G
+  key gained a plain 9106 fallback so 1985 Bianchi keeps its auto link.
+- Left unlinked: Team Miyata shifter (none printed); Dura-Ace AX posts and
+  AX top-mount shifter; SunTour top-mount, Superbe, VX, UB10 (8057 ends
+  1982, 6288 starts 1984), Trimec top-mount shifters; Cyclone M2 front;
+  Superbe-Tech front and Mount-Tech rears (several rows); plain WINNER and
+  Pro-Compe clusters; 600EX-LD 52x42 (gearing conflict); 600UG / KEC / DID
+  Lanner / Suntour-Z chains (except Dura-Ace UG); NGC-200 / 200H, 144G /
+  161 / 165 / 280 levers; Dia-Compe 500; SR CT-P5 / P5A / P5B / P6B posts;
+  SR CTC-5SD2 (row is 5SD2AH); Sugino TAT; RH-4600 hub; MKS AR Road /
+  CR-2 / 33, SunTour Oval Black pedals; Ariake saddles; SR / CT / Royal /
+  AEROX stems; Nitto 55F / B92, SR SC-713 bars (no rows).
+- Regression: all 91 other CSVs regenerate byte-identical.
+
 ## 1982 Miyata — loaded (2026-11-14, source 403)
 
 - CSV: `bike_specs/1982_miyata_spec.csv` (scratchpad `build_miyata82.js`,

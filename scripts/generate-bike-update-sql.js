@@ -128,6 +128,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1980|miyata', 'US'], // Distributed by Toyoda America Inc., New York / Chicago / Los Angeles (chart footer p. 9)
   ['1981|miyata', 'US'], // US warranty text naming Toyoda ("some states"), CPSC reflectors; a Canadian rep's card is pasted over the back-page address
   ['1982|miyata', 'US'], // warranty p. 16 names TOYODA AMERICA, INC., New York / Chicago / Los Angeles
+  ['1983|miyata', 'US'], // back cover: Imported by Miyata Bicycle of America, Inc., Elk Grove IL; printed Apr. 1983
   ['1984|miyata', 'CA'], // back cover edition code "CAN", printed Nov. 1983; no US distributor address (1979-83 name Toyoda / Miyata Bicycle of America)
   // 1985|miyata: no edition marker or distributor address (warranty boilerplate only), country left NULL
   ['1986|miyata', 'US'], // Miyata Bicycle of America, Elk Grove Village IL (back cover)
@@ -587,6 +588,9 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'suntour trimec': [{ bike: '110', from: 1983, to: 1983, id: 2654 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'shimano a 105': [{ bike: '310', from: 1983, to: 1983, id: 2466 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'suntour bl': [{ bike: '710', from: 1983, to: 1983, id: 2622 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour new 7': [{ bike: 'Sport-10', from: 1985, to: 1985, id: 2641 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano fdz 204': [{ bike: '110', from: 1984, to: 1984, id: 2543 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'sun tour bl': [{ bike: '710', from: 1982, to: 1982, id: 2622 }, { bike: '610', from: 1982, to: 1982, id: 2622 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
@@ -756,7 +760,7 @@ const COMPONENT_OVERRIDES = {
     'huret new success': [{ from: 1985, to: 1986, id: 8960 }, { from: 1987, to: 1990, id: 2439 }], // Sachs Huret ARIS New Success (the only New Success front; undated)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 2462 }], // Competition / Triathlon: FD-1050 105
-    'shimano 600ex': [{ bike: '912', from: 1982, to: 1982, id: 2480 }, { bike: '912', from: 1980, to: 1980, id: 2480 }, { bike: '912', from: 1979, to: 1979, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // Road Ace / Record Ace: FD-6207 600EX (1984-87)
+    'shimano 600ex': [{ bike: '912', from: 1983, to: 1983, id: 2480 }, { bike: '912', from: 1982, to: 1982, id: 2480 }, { bike: '912', from: 1980, to: 1980, id: 2480 }, { bike: '912', from: 1979, to: 1979, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // Road Ace / Record Ace: FD-6207 600EX (1984-87)
     'sachs huret rider 2': [{ from: 1989, to: 1989, id: 8962 }], // 1989 Peugeot Lautaret / Lavandou: Sachs Huret AV 62.1 T, Rider / Duopar triple (2437 "Rider" merged in 2026-11-02)
     'sachs huret rider': 8962, // 1989 Peugeot Fun Star / US Express / Avoriaz: as above
     'huret rider': 8962, // 1986-88 Peugeot / Raleigh Teton: as above
@@ -873,7 +877,7 @@ const COMPONENT_OVERRIDES = {
     // (part number between brand and group), so substring never fires.
     'campagnolo super record': 2313, // Campagnolo 1052/SR (0104010), Super Record (clip-on)
     'campagnolo super record 12 speed': [{ from: 1975, to: 1988, id: 2313 }], // 1975-76 Raleigh Team Professional (row redated from 1979 to 1975, 2026-10-24)
-    'dura ace ex': 2518, // Shimano FD-7200, Dura-Ace EX (clamp)
+    'dura ace ex': [{ bike: 'Team Miyata', from: 1983, to: 1983, id: null }, { id: 2518 }], // Shimano FD-7200, Dura-Ace EX (clamp)
     'shimano 600 ax': 2476, // Shimano FD-6300, 600 AX (clamp)
     // 1983 Bianchi: the 80s (Nuovo) Gran Sport is the 3600/NT. The early-70s
     // Gran Sport front is the 2050 (Cat 17 p 54, group 2240), row 2316.
@@ -930,12 +934,17 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    'suntour trimec': [{ bike: '110', from: 1983, to: 1983, id: 4771 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'suntour cyclone m2gt': [{ bike: '1000', from: 1983, to: 1983, id: 4743 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'shimano a 105': [{ bike: '310', from: 1983, to: 1983, id: 4452 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'suntour bl gt': [{ bike: '710', from: 1983, to: 1983, id: 4731 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'suntour cyclone m2': [{ bike: '1200', from: 1983, to: 1983, id: 4742 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour new 7': [{ bike: 'Sport-10', from: 1985, to: 1985, id: 4756 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano l512 sgs': [{ bike: 'Terra Runner OR', from: 1985, to: 1985, id: 10970 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour superbe': [{ bike: 'Pro Miyata', from: 1985, to: 1985, id: null }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour seven': [{ bike: 'Sport-10', from: 1984, to: 1984, id: 4756 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano rdz 503': [{ bike: '110', from: 1984, to: 1984, id: 4545 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
-    'suntour arx gt': [{ bike: '210', from: 1984, to: 1984, id: 4729 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
+    'suntour arx gt': [{ bike: '210', from: 1983, to: 1983, id: 4729 }, { bike: '210', from: 1984, to: 1984, id: 4729 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour mountech gtl': [{ bike: '610', from: 1984, to: 1984, id: 4711 }, { bike: 'Ridge Runner', from: 1984, to: 1984, id: 4711 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano deore xt ex': [{ bike: '1000', from: 1984, to: 1984, id: 4488 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new 600 ex': [{ bike: '912', from: 1985, to: 1985, id: 4470 }, { bike: '912', from: 1984, to: 1984, id: 4470 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
@@ -1133,7 +1142,7 @@ const COMPONENT_OVERRIDES = {
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 4449 }], // Competition / Triathlon: RD-1050 105
     'shimano 600 ex': [{ from: 1981, to: 1981, id: 4468 }, { from: 1987, to: 1987, id: 4471 }], // 1981 Criterium: RD-6200 Arabesque short cage, 13/28T (1978-84; RD-6207 is 1984-86) // Road Ace: RD-6208 600EX SIS (1986-87)
-    'shimano 600ex': [{ bike: '912', from: 1982, to: 1982, id: 4468 }, { bike: '912', from: 1980, to: 1980, id: 4468 }, { bike: '912', from: 1979, to: 1979, id: 4468 }, { bike: 'Record Ace 12', from: 1987, to: 1987, id: 4470 }], // Record Ace: friction 600EX levers, so RD-6207 (row ends 1986) rather than the SIS-only RD-6208
+    'shimano 600ex': [{ bike: '912', from: 1983, to: 1983, id: 4468 }, { bike: '912', from: 1982, to: 1982, id: 4468 }, { bike: '912', from: 1980, to: 1980, id: 4468 }, { bike: '912', from: 1979, to: 1979, id: 4468 }, { bike: 'Record Ace 12', from: 1987, to: 1987, id: 4470 }], // Record Ace: friction 600EX levers, so RD-6207 (row ends 1986) rather than the SIS-only RD-6208
     // 1985 Raleigh (Marathon, Pursuit, Record, Teton): "SunTour HR", on 14-30 5/6-speed freewheels. Only the Honor
     // RD-1100 (1973-85, 28T / 14-30) fits by capacity and tier; no DB row is titled HR, so this is by abbreviation.
     'suntour hr': [{ from: 1985, to: 1985, id: 4702 }], // SunTour 2600 / RD-1100, Honor
@@ -1352,6 +1361,11 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    'shimano 600 ex': [{ bike: '912', from: 1983, to: 1983, id: 3540 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'sunshine pro am': [{ bike: '1200', from: 1983, to: 1983, id: 8983 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'suntour superbe': [{ bike: 'Pro Miyata', from: 1983, to: 1983, id: null }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dura ace ex freehub': [{ bike: 'Team Miyata', from: 1983, to: 1983, id: 3569 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dura ace ax freehub': [{ bike: 'Aero Miyata', from: 1983, to: 1983, id: 3567 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new 600 ex sealed w qr': [{ bike: '912', from: 1985, to: 1985, id: 7551 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour new cyclone sealed w qr': [{ bike: 'Pro Miyata', from: 1985, to: 1985, id: 3606 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new dura ace w qr': [{ bike: 'Team Miyata', from: 1985, to: 1985, id: 3560 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
@@ -1643,6 +1657,13 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'dia compe 980 canti lever': [{ bike: 'Ridge Runner', from: 1983, to: 1983, id: 660 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dia compe 610': [{ bike: '210', from: 1983, to: 1983, id: null }, { bike: '100', from: 1983, to: 1983, id: null }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dia compe 960 canti lever': [{ bike: '610', from: 1983, to: 1983, id: 8096 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dia compe ngc 960': [{ bike: '1000', from: 1983, to: 1983, id: 8096 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dia compe ac 500': [{ bike: '310', from: 1983, to: 1983, id: 8087 }, { bike: '110', from: 1983, to: 1983, id: 8087 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dia compe 500g': [{ bike: '710', from: 1983, to: 1983, id: 9106 }, { id: 9106 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dia compe agc 300': [{ bike: 'Pro Miyata', from: 1983, to: 1983, id: 686 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'dia compe ngc 982 mountain cantilever': [{ bike: 'Ridge Runner', from: 1985, to: 1985, id: 697 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'dia compe cantilever': [{ bike: '210', from: 1985, to: 1985, id: null }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano br z 570': [{ bike: '110', from: 1985, to: 1985, id: 959 }, { bike: '90', from: 1985, to: 1985, id: 959 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
@@ -1657,7 +1678,7 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace ax parapul': [{ bike: 'Aero Miyata', from: 1982, to: 1982, id: 995 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
     'dia compe #960 center pull cantilever type with quick release': [{ bike: '1000', from: 1981, to: 1981, id: 8096 }], // 1981 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano 600 ex side pull': [{ bike: '912', from: 1981, to: 1981, id: 969 }], // 1981 Miyata: printed component; see known-catalogs/miyata.md.
-    'dia compe ngc 400': [{ bike: 'Pro Miyata', from: 1985, to: 1985, id: 694 }, { bike: 'Pro Miyata', from: 1984, to: 1984, id: 694 }, { bike: 'Pro Miyata', from: 1981, to: 1981, id: 694 }], // 1981 Miyata: printed component; see known-catalogs/miyata.md.
+    'dia compe ngc 400': [{ bike: '1200', from: 1983, to: 1983, id: 694 }, { bike: '912', from: 1983, to: 1983, id: 694 }, { bike: 'Pro Miyata', from: 1985, to: 1985, id: 694 }, { bike: 'Pro Miyata', from: 1984, to: 1984, id: 694 }, { bike: 'Pro Miyata', from: 1981, to: 1981, id: 694 }], // 1981 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano dura ace ex side pull with quick release': [{ bike: 'Team Miyata', from: 1981, to: 1981, id: 997 }], // 1981 Miyata: printed component; see known-catalogs/miyata.md.
     // 1982 Battaglin Arena: preserve the catalogue alias after the 1986
     // factory list identifies the complete Kronos brake as R0010.
@@ -2197,6 +2218,15 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'sr ctc 5dx 52 x 42 teeth': [{ bike: '100', from: 1983, to: 1983, id: 8205 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'sr ctc 5drg2 52 x 42 teeth': [{ bike: '110', from: 1983, to: 1983, id: 8200 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'sr ctc 5drg2 52 x 47 x 36 teeth': [{ bike: '210', from: 1983, to: 1983, id: 8200 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'sr ct 5tg 52 x 47 x 32 teeth': [{ bike: '610', from: 1983, to: 1983, id: 8252 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'sr super apex 5tg 52 x 47 x 34 teeth': [{ bike: '1000', from: 1983, to: 1983, id: 1757 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'sr ct 5lael 52 x 42 teeth': [{ bike: '710', from: 1983, to: 1983, id: 8250 }, { bike: '310', from: 1983, to: 1983, id: 8250 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'sr aerox 5la 52 x 42 teeth': [{ bike: '1200', from: 1983, to: 1983, id: 1735 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'sugino mighty aero 52 x 42 teeth': [{ bike: 'Pro Miyata', from: 1983, to: 1983, id: 1925 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dura ace ax 52 x 42 teeth': [{ bike: 'Aero Miyata', from: 1983, to: 1983, id: 1826 }, { bike: 'Team Miyata', from: 1983, to: 1983, id: 1826 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'sugino vt 50x36 teeth sealed bb chromoly axle': [{ bike: 'Street Runner', from: 1985, to: 1985, id: null }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'sugino astron track 50 teeth': [{ bike: 'Pista', from: 1985, to: 1985, id: 11151 }, { id: 11151 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'sugino gs lp 52x42 teeth': [{ bike: '710', from: 1985, to: 1985, id: null }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
@@ -2742,6 +2772,7 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    'sr rnd': [{ bike: '1000', from: 1983, to: 1983, id: 2910 }, { bike: '610', from: 1983, to: 1983, id: 2910 }, { bike: '210', from: 1983, to: 1983, id: 2910 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'sr rnd randonneur alloy with cushion rubber grips': [{ bike: '1000', from: 1982, to: 1982, id: 2910 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
     'sr ctd alloy with cloth tape width: 390mm': [{ bike: '1200', from: 1982, to: 1982, id: 7888 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano dura ace ax with ogk plastic tape width: 400mm (for 520 560mm frames) 420mm (for 580 630mm)': [{ bike: 'Aero Miyata', from: 1982, to: 1982, id: 2917 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
@@ -2917,6 +2948,8 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    'royal ii alloy stem': [{ bike: '912', from: 1983, to: 1983, id: 8230 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dura ace ax stem': [{ bike: 'Team Miyata', from: 1983, to: 1983, id: 6678 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'sr mts 100 black anodized': [{ bike: 'Terra Runner OR', from: 1985, to: 1985, id: 10846 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'nitto pro aa': [{ bike: 'Team Pista', from: 1985, to: 1985, id: 8560 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'sr mts 110 alloy': [{ bike: 'Street Runner', from: 1985, to: 1985, id: 6666 }, { bike: 'Street Runner', from: 1984, to: 1984, id: 6666 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
@@ -3070,6 +3103,10 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
+    'suntour thumb shifter': [{ bike: 'Ridge Runner', from: 1983, to: 1983, id: 6307 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'suntour ld 1000 shifter': [{ bike: '90', from: 1983, to: 1983, id: 6283 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'suntour pdl m shifter': [{ bike: '610', from: 1983, to: 1983, id: 6264 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'a 105 top mount shifter': [{ bike: '310', from: 1983, to: 1983, id: 6132 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano at 50 shifter': [{ bike: 'Terra Runner OR', from: 1985, to: 1985, id: 7192 }, { bike: 'Street Runner', from: 1985, to: 1985, id: 7192 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new 600ex top mount shifter': [{ bike: '912', from: 1985, to: 1985, id: 6148 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new dura ace shifter': [{ bike: 'Team Miyata', from: 1985, to: 1985, id: 6164 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
@@ -3306,6 +3343,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    'dia compe 164 hooded lever': [{ bike: '90', from: 1983, to: 1983, id: 8873 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dia compe agc250 levers': [{ bike: 'Pro Miyata', from: 1983, to: 1983, id: 279 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'dia compe 164 levers': [{ bike: '100', from: 1985, to: 1985, id: 8873 }, { bike: '100', from: 1984, to: 1984, id: 8873 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano blz 304 levers': [{ bike: '110', from: 1984, to: 1984, id: 7181 }, { bike: '90', from: 1984, to: 1984, id: 7181 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'dia compe agc250 aero style lever w rubber pads': [{ bike: 'Pro Miyata', from: 1982, to: 1982, id: 279 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
@@ -3419,6 +3458,8 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    'sr sp 152': [{ bike: '310', from: 1983, to: 1983, id: 3926 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dura ace ax (dd)': [{ bike: 'Aero Miyata', from: 1983, to: 1983, id: 3973 }, { bike: 'Team Miyata', from: 1983, to: 1983, id: 3973 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'sr sp 154 alloy': [{ bike: '110', from: 1985, to: 1985, id: 3927 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour xc ii mountain oval cr mo spindle': [{ bike: 'Ridge Runner', from: 1985, to: 1985, id: 4015 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'sr sp 155': [{ bike: '610', from: 1985, to: 1985, id: 3928 }, { bike: '210', from: 1985, to: 1985, id: 3928 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
@@ -3429,7 +3470,7 @@ const COMPONENT_OVERRIDES = {
     'shimano new dura ace': [{ bike: 'Team Miyata', from: 1985, to: 1985, id: 3970 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour xc 2': [{ bike: 'Ridge Runner', from: 1984, to: 1984, id: 4015 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'mks silvan road': [{ bike: '1000', from: 1984, to: 1984, id: 3865 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
-    'mks esquartz': [{ bike: 'Pro Miyata', from: 1984, to: 1984, id: 3858 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
+    'mks esquartz': [{ bike: 'Pro Miyata', from: 1983, to: 1983, id: 3858 }, { bike: 'Pro Miyata', from: 1984, to: 1984, id: 3858 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'kkt pro ace': [{ bike: 'Team Miyata', from: 1984, to: 1984, id: 3769 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'mks silvan road alloy': [{ bike: '912', from: 1981, to: 1981, id: 3865 }, { bike: '1000', from: 1981, to: 1981, id: 3865 }], // 1981 Miyata: printed component; see known-catalogs/miyata.md.
     'mks sylvan road alloy': [{ bike: '912', from: 1982, to: 1982, id: 3865 }, { bike: '1000', from: 1982, to: 1982, id: 3865 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
@@ -3486,7 +3527,7 @@ const COMPONENT_OVERRIDES = {
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano new dura ace sealed': [{ from: 1986, to: 1986, id: 3970 }], // PD-7400
     'shimano new 600 ex sealed': [{ from: 1986, to: 1986, id: 3961 }], // PD-6207
-    'mks esquartz 102': [{ bike: '710', from: 1985, to: 1985, id: 3859 }, { bike: '912', from: 1984, to: 1984, id: 3859 }, { from: 1986, to: 1986, id: 3859 }], // MKS 2025, Esquartz 102
+    'mks esquartz 102': [{ bike: '1200', from: 1983, to: 1983, id: 3859 }, { bike: '710', from: 1985, to: 1985, id: 3859 }, { bike: '912', from: 1984, to: 1984, id: 3859 }, { from: 1986, to: 1986, id: 3859 }], // MKS 2025, Esquartz 102
     'mks sylvan track': [{ bike: 'Pista', from: 1985, to: 1985, id: 10043 }, { from: 1986, to: 1986, id: 10043 }], // MKS 2031, Sylvan Track
     'sr sp 155 sealed': [{ from: 1986, to: 1986, id: 3928 }], // SR SP-155
     'suntour xc ii sealed cr mo spindle': [{ from: 1986, to: 1986, id: 4015 }], // PL-5100, XC-II
@@ -3678,6 +3719,8 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    'sr ct p6c pillar': [{ bike: '210', from: 1983, to: 1983, id: 5861 }, { bike: '110', from: 1983, to: 1983, id: 5861 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'sr ct p6 pillar': [{ bike: '710', from: 1983, to: 1983, id: 5861 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'sr ct p6': [{ bike: '210', from: 1985, to: 1985, id: 5861 }, { bike: '110', from: 1985, to: 1985, id: 5861 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'sr ct p5e 220mm': [{ bike: 'Terra Runner OR', from: 1985, to: 1985, id: 5857 }, { bike: 'Street Runner', from: 1985, to: 1985, id: 5857 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'sr custom p5e': [{ bike: 'Street Runner', from: 1984, to: 1984, id: 5857 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
@@ -3851,6 +3894,7 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    'dura ace ug nickel finished': [{ bike: 'Aero Miyata', from: 1983, to: 1983, id: 7472 }, { bike: 'Team Miyata', from: 1983, to: 1983, id: 7472 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'did track silver': [{ bike: 'Team Pista', from: 1985, to: 1985, id: 1355 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour z gold black': [{ bike: '710', from: 1985, to: 1985, id: 7821 }, { bike: 'Ridge Runner', from: 1985, to: 1985, id: 7821 }, { bike: 'Pro Miyata', from: 1985, to: 1985, id: 7821 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano dura ace ug nickel finished': [{ bike: 'Team Miyata', from: 1984, to: 1984, id: 7472 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
@@ -4018,6 +4062,12 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    'suntour pt6s 14 32 teeth': [{ bike: '100', from: 1983, to: 1983, id: 7813 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'suntour pt6s 14 28 teeth': [{ bike: '110', from: 1983, to: 1983, id: 7813 }, { bike: '90', from: 1983, to: 1983, id: 7813 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'suntour pt5s 14 32 teeth': [{ bike: '210', from: 1983, to: 1983, id: 2245 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'shimano 600ug silver 13 24 teeth': [{ bike: '912', from: 1983, to: 1983, id: 1200 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dura ace ex ug gold 13 22 teeth': [{ bike: 'Team Miyata', from: 1983, to: 1983, id: 1210 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
+    'dura ace ex ug gold 13 20 teeth': [{ bike: 'Aero Miyata', from: 1983, to: 1983, id: 1210 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new 600 ex 6 speed 14 32 teeth': [{ bike: 'Terra Runner OR', from: 1985, to: 1985, id: 2217 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new 600ex 5 speed 14 28 teeth sealed': [{ bike: '1000', from: 1985, to: 1985, id: 2217 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour new winner 6 speed 13 21 teeth': [{ bike: 'Pro Miyata', from: 1985, to: 1985, id: 2238 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
@@ -4356,6 +4406,7 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    'araya 5 27" x 1 1 4"': [{ bike: '90', from: 1983, to: 1983, id: 9543 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'ukai 7c 26x175 anodized': [{ bike: 'Ridge Runner', from: 1985, to: 1985, id: 10470 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'ukai model 20 a 700c black anodized': [{ bike: '710', from: 1985, to: 1985, id: 5192 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'ukai model 20 a 700c black anodized polished side': [{ bike: '912', from: 1985, to: 1985, id: 5192 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
