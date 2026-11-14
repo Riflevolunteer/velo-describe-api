@@ -2,6 +2,188 @@
 
 Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as one-liners (full notes are in git history and the ingest skills' `known-catalogs/` files), open follow-ups that were buried in Done moved back to Open, stale numbers refreshed. Component TODOs reconciled with live DB, generator and catalogue notes on 2026-11-09. The coverage table below is the current snapshot; dated narrative records earlier decisions. Use live `/linkCoverage` for subsequent counts.
 
+## Database quality process (2026-11-14)
+
+Use this cycle for each catalogue or focused brand/category review:
+**Audit gaps -> source evidence -> extract -> reconcile -> review SQL -> load ->
+resolve duplicates -> link bikes -> validate -> record results.** Check for duplicates
+before inserting as well as after ingestion. A catalogue job includes its linking
+and validation follow-through; loading component rows alone leaves it unfinished.
+
+The objective is correct identities, useful descriptions and traceable evidence.
+Row count and link coverage measure progress, but a justified unlinked spec is a
+valid result. Fix wrong existing links before adding speculative new ones.
+
+### Step-by-step checklist
+
+1. **Choose a bounded problem and take a baseline.** Work on one catalogue,
+   brand or component category. Read its existing catalogue notes and unresolved
+   decisions first. Use live `/linkCoverage?unlinked=N`, read-only DB queries and
+   `scripts/duplicate-report.js` to record the affected rows, links, duplicate
+   candidates and date conflicts. Keep DB counts separate from generated CSV
+   counts, and compare like-for-like scopes before and after.
+
+2. **Classify the gaps before sourcing.** Put each actionable value into one of
+   these buckets so the next action addresses the actual problem:
+
+   | Finding | Next action |
+   | --- | --- |
+   | Suitable component exists, identification supported | Add/fix the link and generator mapping |
+   | Named model has no suitable row | Find a period source, then reconcile/ingest it |
+   | Several variants fit, or dates conflict | Seek the specific code, photo or specification that distinguishes them |
+   | Transcription, label or combined-cell problem | Repair source data/structure before matching |
+   | Generic, maker-only, house part or unresolved either/or | Record why it remains unlinked; revisit when new evidence arrives |
+
+   Prioritise proven errors and missing sources likely to resolve many named
+   specs. For example, one SR mid-1980s catalogue may address bars, stems,
+   seatposts and cranks. Avoid repeating a source hunt already recorded as empty
+   unless there is a new lead.
+
+3. **Source and register the evidence.** Prefer manufacturer catalogues, technical
+   sheets and parts books; use period importer/dealer catalogues and bike
+   catalogues to supplement them. Save the original scan and record its URL or
+   filename, edition, market, stated/estimated year and relevant pages. Check
+   `data_source` and the known-catalogue index before creating another source.
+   Record uncertainty and independent confirmation needed. A source's absence of
+   a part alone does not prove that the part did not exist then.
+
+4. **Extract into a reviewable inventory.** Capture printed maker, model/part
+   number, category, distinguishing specifications, page and evidence notes.
+   Check scans when OCR is uncertain. For bikes, repair CSV quoting, copied cells,
+   labels and combined components; back up the gitignored CSV before editing.
+   Apply the existing road-bike scope rules. Do not turn generic prose into an
+   invented component identity.
+
+5. **Reconcile with the DB before inserting.** Search by maker/category, part
+   number, spelling aliases and specifications, including differently named rows.
+   Classify each item as unchanged, an evidence-backed correction/enrichment, a
+   genuinely new component, a duplicate candidate or unresolved. Keep distinct
+   generations/configurations separate when their identity differs. Review brand,
+   category and group ownership too. A catalogue attests availability; it does
+   not by itself establish manufacture start/end dates. Check existing linked
+   bikes and year-ranged overrides before changing component dates.
+
+6. **Prepare and review the change set.** Follow the component/bike ingest skill
+   for that job. Produce guarded, idempotent SQL with expected affected counts,
+   source references, page evidence and unresolved calls. Capture the affected
+   rows' old values and a restoration plan before overwrites/merges. Check field
+   lengths, especially the 255-character descriptions. Present new rows,
+   corrections, date moves, merges and links for review; obtain approval before
+   applying the reviewed DB changes under the existing ingest workflow.
+
+7. **Load, then resolve evidence-backed duplicates in the affected scope.** Use
+   `scripts/load-sql.js` and verify actual affected counts. Review duplicates
+   exposed by the new evidence, using `duplicate-report.js --brand=<brand>` or
+   `--category=<category>`, plus `--near` and `--paren` where useful. Reports
+   propose candidates; they do not establish identity. Prefer an existing stable
+   ID when suitable, retain useful descriptions/provenance, and repoint every DB
+   reference and generator override before deleting the redundant row. Record
+   retired IDs/source IDs and why each pair was merged or kept separate. Keep
+   merges in reviewed SQL; do not merge on title similarity alone.
+
+8. **Run the bike-link follow-through.** Recheck unlinked specs for the changed
+   makers/categories after component identities are settled. Match model,
+   generation and distinguishing specifications, not just maker or bend name.
+   Use scoped overrides for decisions the matcher cannot safely make; an exact
+   automatic match may only need its existing NULL link back-filled. Handle
+   corrections to existing wrong links explicitly: normal regeneration fills
+   NULLs and will not overwrite them. Keep ambiguous or compound specs unlinked
+   until evidence or a deliberate spec split resolves them.
+
+9. **Validate the whole change, including existing links.** Compare generated
+   mappings before/after across all loaded CSVs after matcher/alias/split changes;
+   also do this after component additions, renames, merges or date changes that
+   can alter matching. New components can make an older unique match ambiguous.
+   Explain every changed mapping and compare approved mappings with live specs.
+   Check for dangling references, wrong categories/groups, duplicate specs,
+   unexpected row-count changes and date conflicts. Date conflicts are review
+   flags, not automatic errors or permission to widen dates. Re-run SQL to verify
+   zero further changes. If labels/API behaviour changed, check the affected
+   detail response/client display and run the relevant tests.
+
+10. **Record the result and close the loop.** Update the relevant brand's
+    known-catalogue notes (cross-catalog notes for multi-brand work), generator
+    decisions and this TODO. Record added/corrected/merged rows, links added/fixed,
+    unresolved cases with their next evidence needed, validation results and
+    dated coverage counts. Commit relevant code/documentation. Use durable
+    storage for source scans, approved SQL and before/after evidence; `/private/tmp`
+    paths are working artifacts, not a permanent audit archive. Feed the remaining
+    evidence gaps back into step 1. Complete the TODO housekeeping below in the
+    same task, before reporting the work finished.
+
+### TODO housekeeping (part of every task)
+
+Keep this file current as work happens, including sourcing, ingestion, linking,
+deduplication and API/client work. Update it when a result or decision is verified;
+do not wait for a separate cleanup session. Planned or approved work remains open
+until it is applied and validated.
+
+- **At the start:** find the existing item and read its latest decision/evidence.
+  Update that item instead of adding a second entry for the same work. If the task
+  is new, add one actionable item under the appropriate Open section.
+- **When work completes:** remove the completed part from Open and add a short,
+  dated outcome under Done, linking to the relevant catalogue notes or committed
+  artifact for detail. For partially completed work, leave only the remaining
+  action in Open and make its status explicit. Distinguish prepared SQL, approved
+  changes, applied DB changes and deployed code where applicable.
+- **When evidence changes a decision:** edit the current worklist and any affected
+  cross-references, source gaps or duplicate candidates. Supersede the old decision
+  explicitly in the detailed notes; preserve enough evidence to explain why it
+  changed. Keep rejected mappings and reviewed non-duplicates recorded so future
+  tasks do not repeat them without new evidence.
+- **When counts change:** refresh the affected category's current summary with
+  verified counts, date and scope. Update the overall coverage snapshot only after
+  re-querying its full scope; do not mix fresh category counts into an older dated
+  table or derive DB totals from generator counts. Label older snapshots as
+  historical and point to the newer affected-category result where needed.
+- **When a follow-up appears:** record the exact unresolved question, affected
+  models/IDs where useful, next action and evidence needed. Record an unsuccessful
+  source hunt with its scope/date and what new lead would justify repeating it.
+  Keep blocked or deferred work visible with its reason.
+- **Before finishing:** search this file for the affected model, component ID,
+  catalogue and task wording. Resolve contradictory current claims and stale
+  "no row"/"unlinked"/"not loaded" statements within the task's scope. Consolidate
+  duplicate open items, check links and Markdown, and include the documentation
+  update with the implementation when committing. No unrelated full-file rewrite
+  is needed.
+- **After a batch:** condense lengthy completed narratives into dated Done entries;
+  keep detailed evidence in the relevant known-catalogue notes. Preserve unresolved
+  questions and deliberate do-not-link decisions. A periodic tidy supplements
+  these per-task updates; it does not replace them.
+
+### Completion criteria and cadence
+
+- **Per catalogue:** changes reviewed/applied, duplicate candidates assessed,
+  affected bike links revisited, existing mappings checked, rerun clean, notes
+  updated, and affected TODO items/counts reconciled. A pass with zero new links
+  can still improve quality.
+- **After a batch of related catalogues:** review the whole affected category
+  for aliases, duplicates, date conflicts and generator/live-DB drift.
+- **Periodically, or after broad matching changes:** run a DB-wide integrity and
+  coverage audit. Keep separate counts for wrong links corrected, supported links
+  added, unresolved identifications, missing source/model rows, duplicate
+  candidates awaiting review and provenance gaps. Show date/scope with each metric.
+
+### Tooling to make this repeatable (not yet implemented)
+
+- [ ] **Durable per-job evidence archive:** define one location and naming
+  convention for scans, source/page inventory, approved SQL, old row values,
+  mapping diffs and outcomes. Keep credentials out of artifacts.
+- [ ] **One read-only quality report:** dangling component/source/group/brand
+  references, duplicate bike specs, category/group ownership conflicts, missing
+  provenance/dates and linked-bike date conflicts. Separate errors from review
+  candidates; the existing duplicate report remains a review aid.
+- [ ] **Reusable generator/live-DB comparison:** replace scratchpad-only scripts
+  with a maintained command showing links gained, lost or changed per spec,
+  scoped to already-loaded catalogues and preserving the current generated file.
+- [ ] **Persist link decisions and evidence:** implement the existing link-status
+  follow-up below so confirmed, inferred, ambiguous, missing-source and
+  intentionally unlinked cases can be distinguished and revisited deliberately.
+- [ ] **Multiple evidence references per component:** design a component/source
+  evidence table with page, supported facts and uncertainty. Current `source_ref`
+  records the last source that changed a component; it cannot retain every
+  catalogue attestation. Preserve that meaning until a migration is reviewed.
+
 ## Open: API and client
 
 - **Catalogue country follow-ups**: show country in the client (`velo-describe`) when two rows collide; optionally split the Peugeot 1971-74 CSVs per country (each mixes Dutch and French pages, currently set to FR). Inferred values (not stated by the source): Raleigh 1985, Motobecane 1974/75, Zeus 1973, Bianchi 1983/84. Decided 2026-10-30: keep the ISO country code for non-national editions (export catalogues, Dutch-language Belgian editions); the edition goes in the data_source label.
