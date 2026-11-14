@@ -54,6 +54,45 @@
   6446 -> 6518, exactly the 72 new links. Post-load Miyata totals:
   1979 9 bikes / 189 specs / 72 links; 1986 18 / 395 / 156.
 
+## 1980 Miyata — loaded (2026-11-14, source 401)
+
+- CSV: `bike_specs/1980_miyata_spec.csv` (built by scratchpad
+  `build_miyata80.js`, not kept). Review SQL prepends one guarded date fix:
+  8055 SunTour PDL-S year_to 1979 -> 1980.
+- Source: https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/1980%20Miyata%20Catalog.pdf
+  (9 pp). Spec chart "'80 Model Specification" on PDF p. 9; pp. 1-8 are
+  image-only model pages. Footer "Distributed by TOYODA AMERICA, INC. New
+  York, Chicago, Los Angeles" -> country US. The chart is an OCR
+  re-render (visible glyphs are OCR text over a blank background), so
+  misreads were corrected from context and the 1979 chart: GT-PS/CT-PS ->
+  CT-P5, AND -> RND, SORG/SOR -> 5DRG, SOX -> 5DX, AT-El/RT-Et -> RT-E1,
+  Apex-1\H -> Apex-AH, GYAO-MASTEA -> GYRO-MASTER, #960 / #610 / #730.
+  Handwritten prices on the scan ignored.
+- Eight bikes: 1000 (Touring), 912 (Racing), 710 / 610 / 310 / 210 / 110 /
+  110L (Sports, as 1979). 110L is the 19-1/2" loop-frame ladies' version of
+  the 110 (touring levers, mudguards, full SunTour Seven group): kept per
+  the ladies'/mixte rule. 310's 19-1/2" Mixte stays in its Frame Size cell.
+  No speed counts printed, so Gearing left empty.
+- Uncertain readings: 912 pedals print "; K T -TP Alloy" -> transcribed
+  "KKT TP Alloy", unlinked (candidate 3775 KKT T.P. Top Run, 1970-81, not
+  confirmed). 710 tyres "27" x 1A" with 100 lbs -> written 27" x 1" (the
+  1979 100-lb size); tyre is unlinked MYT anyway.
+- Overrides (all bike-scoped, 1980 only): 1979 choices carried forward
+  (600EX Arabesque 2480 / 4468 / 6147 / 969 / 3540 / cassette 1200; Seven FD
+  2641; PDL-M 6264, PUB-10 7796, UB-10 8057, PDL-S 8055; 500G 9106; 960
+  8096; 5DRG-AH 7876; Super Apex-5TG 1757; Jaguar II 5234; CTD 7888; RND
+  2910; SR-AH 7902; Apex-AH 7901; Quill-2K 3863; SP-300 3931). New for
+  1980: bare "VGT" -> 4705 RD-1500 (the global 4695 is the 1971-73 4900);
+  Seven rear -> 4756 RD-1900 (the 1976-79 4755 no longer overlaps); VXS ->
+  4775 RD-2500 VX (S).
+- Left unlinked: Cyclone front (four 3704 / FD-1300 rows cover 1980);
+  Pro-Compe / Perfect clusters (no speed count); 600EXLD 52x42 (same
+  conflict as 1979); 5DX-AH / 5DXC cranks (no row); CT-P5 (5857 and 5858
+  both cover 1980); Dia-Compe 610 (656 vs GC610 689), #500, #730 (no
+  period row); Tange New Falcon (3141 is 1974 only); RY-KM, S-WIN stems,
+  KD-4L / KE-36 bars, MKS QR-K1, KKT pedals, Ariake 77-17, generic hubs.
+- Regression: all 87 other CSVs regenerate byte-identical.
+
 ## 1986 Miyata — `1986_miyata_spec.csv` (18 bikes, 395 specs, 131 linked)
 
 - Source: SS Cycleworks bike museum scan

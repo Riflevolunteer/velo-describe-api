@@ -125,6 +125,7 @@ const CATALOGUE_COUNTRY = new Map([
   ['1970|falcon', 'GB'], ['1973|falcon', 'GB'], ['1974|falcon', 'GB'], ['1978|falcon', 'GB'], ['1986|falcon', 'GB'], // 1986: Falcon Cycles Ltd, Brigg; undated, IceniCAM files it c1992
   ['1986|cinelli', 'US'], // Ten Speed Drive Imports brochure
   ['1979|miyata', 'US'], // Toyoda America Inc., New York / Chicago / Los Angeles (scan pp. 8-9)
+  ['1980|miyata', 'US'], // Distributed by Toyoda America Inc., New York / Chicago / Los Angeles (chart footer p. 9)
   ['1986|miyata', 'US'], // Miyata Bicycle of America, Elk Grove Village IL (back cover)
   ['1982|battaglin', 'IT'], // Cicli Battaglin, Marostica (VI): Italian-language sheets and a 1981-82 lire price list
   ['1970|peugeot', 'NL'], // Dutch-market "Peugeot '70" (1971-74 mix NL + FR: left NULL until split)
@@ -582,7 +583,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
-    'sun tour seven': [{ bike: '710', from: 1979, to: 1979, id: 2641 }, { bike: '600', from: 1979, to: 1979, id: 2641 }, { bike: '400', from: 1979, to: 1979, id: 2641 }, { bike: '310', from: 1979, to: 1979, id: 2641 }, { bike: '200', from: 1979, to: 1979, id: 2641 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'sun tour seven': [{ bike: '210', from: 1980, to: 1980, id: 2641 }, { bike: '110', from: 1980, to: 1980, id: 2641 }, { bike: '110L', from: 1980, to: 1980, id: 2641 }, { bike: '710', from: 1979, to: 1979, id: 2641 }, { bike: '600', from: 1979, to: 1979, id: 2641 }, { bike: '400', from: 1979, to: 1979, id: 2641 }, { bike: '310', from: 1979, to: 1979, id: 2641 }, { bike: '200', from: 1979, to: 1979, id: 2641 }], // 1979 Miyata: printed component; see catalogue review notes.
     // 1991 Colnago: printed group defaults, scoped to this catalogue year.
     // Gold uses the specific Delta Gold brake row; other links identify families.
     // The unresolved Super Record 8V wording is held out of this ingest.
@@ -747,7 +748,7 @@ const COMPONENT_OVERRIDES = {
     'huret new success': [{ from: 1985, to: 1986, id: 8960 }, { from: 1987, to: 1990, id: 2439 }], // Sachs Huret ARIS New Success (the only New Success front; undated)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 2462 }], // Competition / Triathlon: FD-1050 105
-    'shimano 600ex': [{ bike: '912', from: 1979, to: 1979, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // Road Ace / Record Ace: FD-6207 600EX (1984-87)
+    'shimano 600ex': [{ bike: '912', from: 1980, to: 1980, id: 2480 }, { bike: '912', from: 1979, to: 1979, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // Road Ace / Record Ace: FD-6207 600EX (1984-87)
     'sachs huret rider 2': [{ from: 1989, to: 1989, id: 8962 }], // 1989 Peugeot Lautaret / Lavandou: Sachs Huret AV 62.1 T, Rider / Duopar triple (2437 "Rider" merged in 2026-11-02)
     'sachs huret rider': 8962, // 1989 Peugeot Fun Star / US Express / Avoriaz: as above
     'huret rider': 8962, // 1986-88 Peugeot / Raleigh Teton: as above
@@ -921,6 +922,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    'sun tour vxs': [{ bike: '310', from: 1980, to: 1980, id: 4775 }], // 1980 Miyata: printed component; see known-catalogs/miyata.md.
+    'sun tour seven': [{ bike: '210', from: 1980, to: 1980, id: 4756 }, { bike: '110', from: 1980, to: 1980, id: 4756 }, { bike: '110L', from: 1980, to: 1980, id: 4756 }], // 1980 Miyata: printed component; see known-catalogs/miyata.md.
     // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
     'shimano stx se': [{ from: 1994, to: 1994, id: 4537 }],
     // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
@@ -1105,7 +1108,7 @@ const COMPONENT_OVERRIDES = {
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 4449 }], // Competition / Triathlon: RD-1050 105
     'shimano 600 ex': [{ from: 1981, to: 1981, id: 4468 }, { from: 1987, to: 1987, id: 4471 }], // 1981 Criterium: RD-6200 Arabesque short cage, 13/28T (1978-84; RD-6207 is 1984-86) // Road Ace: RD-6208 600EX SIS (1986-87)
-    'shimano 600ex': [{ bike: '912', from: 1979, to: 1979, id: 4468 }, { bike: 'Record Ace 12', from: 1987, to: 1987, id: 4470 }], // Record Ace: friction 600EX levers, so RD-6207 (row ends 1986) rather than the SIS-only RD-6208
+    'shimano 600ex': [{ bike: '912', from: 1980, to: 1980, id: 4468 }, { bike: '912', from: 1979, to: 1979, id: 4468 }, { bike: 'Record Ace 12', from: 1987, to: 1987, id: 4470 }], // Record Ace: friction 600EX levers, so RD-6207 (row ends 1986) rather than the SIS-only RD-6208
     // 1985 Raleigh (Marathon, Pursuit, Record, Teton): "SunTour HR", on 14-30 5/6-speed freewheels. Only the Honor
     // RD-1100 (1973-85, 28T / 14-30) fits by capacity and tier; no DB row is titled HR, so this is by abbreviation.
     'suntour hr': [{ from: 1985, to: 1985, id: 4702 }], // SunTour 2600 / RD-1100, Honor
@@ -1249,7 +1252,7 @@ const COMPONENT_OVERRIDES = {
     // Shifter halves now live in the Shifters column (compound-cell split).
     // Plain "V.G.T." in the 1974 catalogue alongside a "V.G.T. LUX": the
     // pre-Luxe 4900 VGT (SunTour '73 Products), not the 1974 4902.
-    'sun tour vgt': 4695, // SunTour 4900, VGT (type 2C / 2D)
+    'sun tour vgt': [{ bike: '710', from: 1980, to: 1980, id: 4705 }, { bike: '610', from: 1980, to: 1980, id: 4705 }, { id: 4695 }], // SunTour 4900, VGT (type 2C / 2D)
     'sun tour vgt lux': 4704, // SunTour 4902, V-GT Luxe (version 1)
     // 1975 Motobecane.
     'huret jubilee wide ratio': 4303,
@@ -1324,7 +1327,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
-    'shimano 600ex freehub low flange with front & rear quick release': [{ bike: '912', from: 1979, to: 1979, id: 3540 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'shimano 600ex freehub low flange with front & rear quick release': [{ bike: '912', from: 1980, to: 1980, id: 3540 }, { bike: '912', from: 1979, to: 1979, id: 3540 }], // 1979 Miyata: printed component; see catalogue review notes.
     'shimano dura ace low flanged with front & rear quick release': [{ bike: '1200', from: 1979, to: 1979, id: 3556 }], // 1979 Miyata: printed component; see catalogue review notes.
     // 2026-11-06 hub pass: as the same model / wording in neighbouring years.
     'maillard normandy dural low flange simplex sx quick release': [{ from: 1980, to: 1980, id: 8137 }], // 1980 Peugeot (NL) PK 65 lady: Normandy small flange Q/R, as the PKN / PFN / PBN 10
@@ -1606,9 +1609,9 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin Arena: preserve the catalogue alias after the 1986
     // factory list identifies the complete Kronos brake as R0010.
     'gipiemme modolo kronos': [{ bike: 'Arena', from: 1982, to: 1982, id: 870 }],
-    'dia compe #500g side pull': [{ bike: '800', from: 1979, to: 1979, id: 9106 }, { bike: '710', from: 1979, to: 1979, id: 9106 }], // 1979 Miyata: printed component; see catalogue review notes.
-    'shimano 600ex side pull': [{ bike: '912', from: 1979, to: 1979, id: 969 }], // 1979 Miyata: printed component; see catalogue review notes.
-    'dia compe #960 center pull cantilever type': [{ bike: '1000', from: 1979, to: 1979, id: 8096 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'dia compe #500g side pull': [{ bike: '710', from: 1980, to: 1980, id: 9106 }, { bike: '800', from: 1979, to: 1979, id: 9106 }, { bike: '710', from: 1979, to: 1979, id: 9106 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'shimano 600ex side pull': [{ bike: '912', from: 1980, to: 1980, id: 969 }, { bike: '912', from: 1979, to: 1979, id: 969 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'dia compe #960 center pull cantilever type': [{ bike: '1000', from: 1980, to: 1980, id: 8096 }, { bike: '1000', from: 1979, to: 1979, id: 8096 }], // 1979 Miyata: printed component; see catalogue review notes.
     'shimano dura ace side pull': [{ bike: '1200', from: 1979, to: 1979, id: 989 }], // 1979 Miyata: printed component; see catalogue review notes.
     // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
     'campagnolo stratos': [{ from: 1994, to: 1994, id: 581 }],
@@ -2136,9 +2139,9 @@ const COMPONENT_OVERRIDES = {
   Cranksets: {
     'sakae silstar 5sd ii ah 52x40 teeth with alloy chain guard 165mm cranks (for 19 1 2" 21") 170mm cranks (for 23" 25" 27")': [{ bike: '400', from: 1979, to: 1979, id: 7878 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sakae apex 5sd ii ah 52x40 teeth with alloy chain guard 165mm cranks (for 19 1 2" 21") 170mm cranks (for 23" 25" 27")': [{ bike: '600', from: 1979, to: 1979, id: 7875 }], // 1979 Miyata: printed component; see catalogue review notes.
-    'sakae silstar 5drg ah 52x42 teeth 165mm cranks (for 19 1 2" 21") 170mm cranks (for 23" 25")': [{ bike: '710', from: 1979, to: 1979, id: 7876 }, { bike: '310', from: 1979, to: 1979, id: 7876 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'sakae silstar 5drg ah 52x42 teeth 165mm cranks (for 19 1 2" 21") 170mm cranks (for 23" 25")': [{ bike: '710', from: 1980, to: 1980, id: 7876 }, { bike: '310', from: 1980, to: 1980, id: 7876 }, { bike: '710', from: 1979, to: 1979, id: 7876 }, { bike: '310', from: 1979, to: 1979, id: 7876 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sakae apex 5rg ii 52x40 teeth 165mm cranks (for 19 1 2" 21") 170mm cranks (for 23" 25")': [{ bike: '800', from: 1979, to: 1979, id: 7874 }], // 1979 Miyata: printed component; see catalogue review notes.
-    'sakae super apex 5tg 52x47x34 teeth with 170mm forged alloy cranks': [{ bike: '1000', from: 1979, to: 1979, id: 1757 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'sakae super apex 5tg 52x47x34 teeth with 170mm forged alloy cranks': [{ bike: '1000', from: 1980, to: 1980, id: 1757 }, { bike: '1000', from: 1979, to: 1979, id: 1757 }], // 1979 Miyata: printed component; see catalogue review notes.
     // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
     'campagnolo veloce': [{ from: 1994, to: 1994, id: 7062 }],
     'shimano deore xt': [{ from: 1994, to: 1994, id: 8669 }],
@@ -2504,7 +2507,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
-    'ariake jaguar ii 77cdx padded': [{ bike: '800', from: 1979, to: 1979, id: 5234 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'ariake jaguar ii 77 is padded': [{ bike: '1000', from: 1980, to: 1980, id: 5234 }], // 1980 Miyata: printed component; see known-catalogs/miyata.md.
+    'ariake jaguar ii 77cdx padded': [{ bike: '912', from: 1980, to: 1980, id: 5234 }, { bike: '800', from: 1979, to: 1979, id: 5234 }], // 1979 Miyata: printed component; see catalogue review notes.
     'ariake jaguar ii 77is padded': [{ bike: '1000', from: 1979, to: 1979, id: 5234 }], // 1979 Miyata: printed component; see catalogue review notes.
     // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
     'bontrager': [{ from: 1994, to: 1994, id: null }],
@@ -2653,12 +2657,13 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    'sakae rnd alloy': [{ bike: '610', from: 1980, to: 1980, id: 2910 }], // 1980 Miyata: printed component; see known-catalogs/miyata.md.
     // 1975 Motobecane Grand Jubile: named PIVO Professional; Brügelmann
     // 1973 p. 22 Pivo Profi, component 11169 (1973-78). Other Pivo cells
     // specify a randonneur bend or combine front/rear bars; leave unresolved.
     'pivo professional': [{ bike: 'Grand Jubile', from: 1975, to: 1975, id: 11169 }],
-    'sakae ctd alloy': [{ bike: '912', from: 1979, to: 1979, id: 7888 }, { bike: '800', from: 1979, to: 1979, id: 7888 }, { bike: '710', from: 1979, to: 1979, id: 7888 }, { bike: '600', from: 1979, to: 1979, id: 7888 }], // 1979 Miyata: printed component; see catalogue review notes.
-    'sakae rnd alloy randonneur': [{ bike: '1000', from: 1979, to: 1979, id: 2910 }, { bike: '400', from: 1979, to: 1979, id: 2910 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'sakae ctd alloy': [{ bike: '912', from: 1980, to: 1980, id: 7888 }, { bike: '710', from: 1980, to: 1980, id: 7888 }, { bike: '310', from: 1980, to: 1980, id: 7888 }, { bike: '912', from: 1979, to: 1979, id: 7888 }, { bike: '800', from: 1979, to: 1979, id: 7888 }, { bike: '710', from: 1979, to: 1979, id: 7888 }, { bike: '600', from: 1979, to: 1979, id: 7888 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'sakae rnd alloy randonneur': [{ bike: '1000', from: 1980, to: 1980, id: 2910 }, { bike: '1000', from: 1979, to: 1979, id: 2910 }, { bike: '400', from: 1979, to: 1979, id: 2910 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sakae world custom ws 410 alloy': [{ bike: '1200', from: 1979, to: 1979, id: 7887 }], // 1979 Miyata: printed component; see catalogue review notes.
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'nitto 55f alloy': [{ from: 1986, to: 1986, id: 2878 }], // Mod. 55
@@ -2818,8 +2823,8 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
-    'sakae sr ah alloy': [{ bike: '912', from: 1979, to: 1979, id: 7902 }, { bike: '800', from: 1979, to: 1979, id: 7902 }, { bike: '710', from: 1979, to: 1979, id: 7902 }, { bike: '600', from: 1979, to: 1979, id: 7902 }, { bike: '400', from: 1979, to: 1979, id: 7902 }, { bike: '310', from: 1979, to: 1979, id: 7902 }, { bike: '200', from: 1979, to: 1979, id: 7902 }], // 1979 Miyata: printed component; see catalogue review notes.
-    'sakae apex ah forged alloy': [{ bike: '1000', from: 1979, to: 1979, id: 7901 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'sakae sr ah alloy': [{ bike: '710', from: 1980, to: 1980, id: 7902 }, { bike: '610', from: 1980, to: 1980, id: 7902 }, { bike: '310', from: 1980, to: 1980, id: 7902 }, { bike: '912', from: 1979, to: 1979, id: 7902 }, { bike: '800', from: 1979, to: 1979, id: 7902 }, { bike: '710', from: 1979, to: 1979, id: 7902 }, { bike: '600', from: 1979, to: 1979, id: 7902 }, { bike: '400', from: 1979, to: 1979, id: 7902 }, { bike: '310', from: 1979, to: 1979, id: 7902 }, { bike: '200', from: 1979, to: 1979, id: 7902 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'sakae apex ah forged alloy': [{ bike: '1000', from: 1980, to: 1980, id: 7901 }, { bike: '1000', from: 1979, to: 1979, id: 7901 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sakae new royal esl forged alloy with titanium bolt': [{ bike: '1200', from: 1979, to: 1979, id: 6662 }], // 1979 Miyata: printed component; see catalogue review notes.
     // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
     'cinelli titanio grammo': [{ from: 1994, to: 1994, id: 6497 }],
@@ -2958,13 +2963,13 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
-    'sun tour ub 10': [{ bike: '200', from: 1979, to: 1979, id: 8057 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'sun tour ub 10': [{ bike: '110', from: 1980, to: 1980, id: 8057 }, { bike: '110L', from: 1980, to: 1980, id: 8057 }, { bike: '200', from: 1979, to: 1979, id: 8057 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sun tour dlw': [{ bike: '310', from: 1979, to: 1979, id: 6283 }], // 1979 Miyata: printed component; see catalogue review notes.
-    'sun tour pub 10': [{ bike: '400', from: 1979, to: 1979, id: 7796 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'sun tour pub 10': [{ bike: '610', from: 1980, to: 1980, id: 7796 }, { bike: '210', from: 1980, to: 1980, id: 7796 }, { bike: '400', from: 1979, to: 1979, id: 7796 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sun tour bar con': [{ bike: '600', from: 1979, to: 1979, id: 7792 }], // 1979 Miyata: printed component; see catalogue review notes.
-    'sun tour pdl m': [{ bike: '710', from: 1979, to: 1979, id: 6264 }], // 1979 Miyata: printed component; see catalogue review notes.
-    'shimano 600ex': [{ bike: '912', from: 1979, to: 1979, id: 6147 }], // 1979 Miyata: printed component; see catalogue review notes.
-    'sun tour pdl s': [{ bike: '1000', from: 1979, to: 1979, id: 8055 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'sun tour pdl m': [{ bike: '710', from: 1980, to: 1980, id: 6264 }, { bike: '310', from: 1980, to: 1980, id: 6264 }, { bike: '710', from: 1979, to: 1979, id: 6264 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'shimano 600ex': [{ bike: '912', from: 1980, to: 1980, id: 6147 }, { bike: '912', from: 1979, to: 1979, id: 6147 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'sun tour pdl s': [{ bike: '1000', from: 1980, to: 1980, id: 8055 }, { bike: '1000', from: 1979, to: 1979, id: 8055 }], // 1979 Miyata: printed component; see catalogue review notes.
     'shimano ultegra': [{ bike: 'Superpiù Ultegra', from: 1991, to: 1991, id: 6144 }, { bike: 'Conic SLX 91 Ultegra', from: 1991, to: 1991, id: 6144 }],
     // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
     'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 6166 }],
@@ -3289,8 +3294,9 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    'sakae sp 300': [{ bike: '610', from: 1980, to: 1980, id: 3931 }], // 1980 Miyata: printed component; see known-catalogs/miyata.md.
     'sakae sp300 alloy': [{ bike: '912', from: 1979, to: 1979, id: 3931 }, { bike: '710', from: 1979, to: 1979, id: 3931 }], // 1979 Miyata: printed component; see catalogue review notes.
-    'mks quill 2k alloy': [{ bike: '1000', from: 1979, to: 1979, id: 3863 }, { bike: '800', from: 1979, to: 1979, id: 3863 }], // 1979 Miyata: printed component; see catalogue review notes.
+    'mks quill 2k alloy': [{ bike: '1000', from: 1980, to: 1980, id: 3863 }, { bike: '1000', from: 1979, to: 1979, id: 3863 }, { bike: '800', from: 1979, to: 1979, id: 3863 }], // 1979 Miyata: printed component; see catalogue review notes.
     'mks unique custom road forged alloy with cr mo steel spindle': [{ bike: '1200', from: 1979, to: 1979, id: 3869 }], // 1979 Miyata: printed component; see catalogue review notes.
     // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
     'campagnolo chorus': [{ from: 1994, to: 1994, id: null }, { id: 3700 }],
@@ -3855,6 +3861,7 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    'shimano 6 speed for 600ex freehub 13 28 teeth': [{ bike: '912', from: 1980, to: 1980, id: 1200 }], // 1980 Miyata: printed component; see known-catalogs/miyata.md.
     '6 speed for shimano 600ex freehub 13 28 teeth': [{ bike: '912', from: 1979, to: 1979, id: 1200 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sun tour pro compe 14 28 teeth gold': [{ bike: '1000', from: 1979, to: 1979, id: 2242 }], // 1979 Miyata: printed component; see catalogue review notes.
     // Six-speed Ultegra cassette, attested in Shimano R-3 (Nov 1987) and S-1 (Sep 1988); Peugeot retains its Freewheel spec label.
