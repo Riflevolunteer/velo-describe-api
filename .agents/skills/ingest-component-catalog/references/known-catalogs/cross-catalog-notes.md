@@ -1494,3 +1494,28 @@ Weinmann 1129 / 1130 570.
   groups (DB rows are 1960s versions); Mavic "Titan blau" tubular rim; Fiamme "Leggerissimo";
   Canetti Cross (vs 9350 Cross 160); Wolber Pro / Strada-Butyl / Corsa-Butyl; Pivo Course stem;
   Ideale titanium-frame saddles; generic BBs, axles and chainrings.
+
+## Brügelmann Radsport-Shop catalogue — 1978 (rennrad-geschichten.de), data_source 393, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1978)", country DE. Source: same page
+  as the 1981 entry, "Brügelmann 1978.pdf" (92 pp, all upright, no text layer). Cover "1978"; p. 3
+  "Katalogdruck im Dezember 1977", "78er Katalog"; p. 5 header "1978/9"; p. 80 "ab Februar 1978".
+  p. 23 weight table still "Stand im Sommer 1976" (reused from 1977; skipped).
+- Components: pp. 5, 8-9, 12, 19-21, 24-25, 27-28, 32-35, 40, 42-43, 47-51, 58, 81 (Colnago finish),
+  90. Skipped 13 (finish surcharges), 14 (tyre fitting), 23, 36-37 (cables, adjustment text).
+- Bars (p. 24) as 1977 but without the 3ttt Motta; Pivo Standard / Profi and Profi stem still listed.
+- Changed (source_ref -> this source):
+  - year_to -> 1978: 433 Shimano M-140 / MA-100 Dura-Ace lever (1977), 8794 Simplex AV 3
+    Super-Competition, 9319 Cinelli 18 Pista, 9082 Cinelli 19 Track, 11168 Pivo Standard, 11169
+    Pivo Professional (bar), 6646 Pivo Professional stem (all 1977).
+  - year_from -> 1978: 11149 CLB Titanium (was 1981; "490 g only, with Duralinox cables"), 3152
+    Tange LV-11 Levin headset (was 1980), 11144 / 11145 Dourdoigne 245 g / 210 g tubulars (was 1981;
+    printed as "45" / "10" with waffle, groove or check tread).
+  - year_from -> 1977: 11157 Dourdoigne Italia (was 1982): p. 43 calls it "the race tyre of the 1977
+    season"; 11148 Dourdoigne Championnat du Monde (track) (was 1981), on the user's call that the
+    1977-78 "Seide extra-leicht" silk time-trial / track tubular (c. 120 g; 1977 p. 37, 1978 p. 40)
+    is the same tyre; description now records the earlier name.
+- Added: 11170 D'Alessandro Cronometro (time-trial tubular, white road protector, 180 g), 1978.
+- Not applied: Maillard Course-Dural, Regina Extra Criterium / Standard
+  freewheels; Huret Eco; Simplex Prestige (1960s rows); Sedis Delta; Sakae racing crankset (vs
+  7873 SAX-5RG); Canetti Cross; Wolber W/20 (vs SL 20); the Italian Ergal headset (no maker).
