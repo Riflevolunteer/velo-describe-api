@@ -1369,3 +1369,48 @@ Weinmann 1129 / 1130 570.
   vs 10010 Sprint Anticrevaison; Wolber Junior Butyl vs 9586 Junior Tubeless; the Regina CX
   sprocket tables and replacement cogs; Cobra saddles (as 1981); generic axles, chainrings and
   Michelin sizes.
+
+## Brügelmann Radsport-Shop catalogue — 1985 (Dropbox section PDFs), data_source 390, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1985)", country DE. Source: the
+  Dropbox folder in TODO.md (rennrad-news thread 99574 p.5 #92), files "B 85 1" to "B 85 7"; cover
+  "AUSGABE 1985". Two-page spreads at 150 ppi (~2450 x 1750; jpx, no text layer); read as
+  left / right halves (~1224 px) at native resolution, below the skill's 1800 px but not
+  upscalable. Read sections 1 (pp. 6-53: special finishes / ICS gold, tyres, brakes), 2 (pp.
+  58-115: pedals, rims, chains, Shimano groups, stems / bars, hubs, saddles, seatposts,
+  derailleurs, shifters), 3 (pp. 122-149: headsets, cranksets, BBs, chainrings, freewheels,
+  wheels) and 6 (pp. 284-305: BMX / MTB). Sections 4 (frames), 5 (clothing, nutrition) and 7
+  (complete bikes) out of scope.
+- Maker codes are still rarely printed (Shimano BL-MX20 / BR-MX10 / PD-MX, Sugino HP-G2 / CT 175,
+  TTT "Modell 2000"); the MTB pages print none (no SR MTB-, Kusuki, ITM or H.L. codes).
+- Bars / stems (pp. 78-81, for the TODO handlebar hunt): 3ttt Merckx "Modello Competizione"
+  400-440, Merckx Superleggero 250 g 400 / 420 / 440, Tour de France 405 / 415, Aerodinamica
+  (Gimondi form), Randonneur, Jugend 360 / 380, leather-sewn Merckx bars (black / white, "fits
+  black TTT stem" 2000, also on p. 79 at 145 DM); Cinelli Poulidor 425, Merckx 425 / 445, round
+  track bar 415; stems 3ttt Campione 60-140 / Campione-Super 80-140 / 2000 (black, "aufklappbar")
+  / "Vorbau mit Idee" (new, unnamed), Cinelli Strada 70-140 / Strada-Extra 95-145 (and black),
+  SR 70 / 110 / 130 (~200 g). No ITM, no Franco Belge, no Almarc name. The Cinelli VIP-Garnitur
+  (59116-79CVIP, 248.50 DM) is a 3-piece set, not a single component.
+- Changed (source_ref -> this source):
+  - year_to -> 1985 (40 rows): 11153 Nadax Favorit, 475 Universal CX, 501 Weinmann Carrera
+    lever, 1100 Weinmann HP Turbo (1980), 11149 / 11150 CLB Titanium / Italia, 1177 Zeus 2000
+    brake (1980), 7929 Weinmann Vainqueur 999 (610 / 750), 7539 Shimano BL-MX20 and 1014 BR-MX10
+    (BMX), 1340 Zeus 2000 chainring, 1862 TA Criterium (also tandem / Schüler), 8811 Stronglight
+    104, 7475 Shimano Uniglide FG-100, 10020 Sturmey Archer S5, 3109 TA 3900 headset, 1244
+    Campagnolo 753/A Super Record chainring, 8842 TA 1205 cross ring, 7530 Shimano PD-MX10, 9993
+    Huret Super Allvit III (sold as Sachs-Huret), 4648 Simplex Selematic, 11154 / 11155 Selle
+    Royal 2261 / 2068, 11162 Swing, 7541 Shimano SP-MX20, 8899 Sugino HP-G2, 6933 Wolber Record
+    Route, 9047 / 10071 / 9049 Hutchinson, 9770 Clement Grinta, 6921 Wolber Liberty, 9029 Wolber
+    Competition, 11145 / 11147 Dourdoigne, 11161 Metzeler Rollux, 11159 Mitsuboshi Competition
+    III, 11140 / 11143 Continental Sonderklasse 175 / 165, 6788 Continental Super Sport (20 / 23 /
+    25 / 28-622).
+  - 6816 Hutchinson VIT 180 NULL/NULL -> 1985-1985. 11145 description notes the 1985 name
+    "Service Course".
+- Added: 11163 Continental Olympic (27 x 3/4 aramid tubular, 110 g), 1985-1985.
+- Not applied: Brügelmann house tubulars (225 / 280 / 315 GR, Touring; house brand, cf. the
+  no-house-brand-tyres rule); Pariba folding clinchers and Thun Coronado 2 crankset (brands not
+  in DB, low value); Lanner / D.I.D / Sedis / Regina Superstar chains; Simplex Randonnée /
+  Touring rear derailleurs (no code); Araya titanium tubular rim (vs 4920 Tita Ace); Mavic "P"
+  tubular rim; Ideale Modell 4; Cobra saddles (as 1981-82); Campagnolo / Colnago / ICS special
+  finishes; Triomphe / Victory / Record / Dura-Ace / Campagnolo 50th groupsets (no group category);
+  Clement Ritmo (still not tied to 6767 Ritmo LTX 55).
