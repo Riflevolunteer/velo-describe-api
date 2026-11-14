@@ -1519,3 +1519,27 @@ Weinmann 1129 / 1130 570.
 - Not applied: Maillard Course-Dural, Regina Extra Criterium / Standard
   freewheels; Huret Eco; Simplex Prestige (1960s rows); Sedis Delta; Sakae racing crankset (vs
   7873 SAX-5RG); Canetti Cross; Wolber W/20 (vs SL 20); the Italian Ergal headset (no maker).
+
+## Brügelmann Radsport-Shop catalogue — 1979 (rennrad-geschichten.de), data_source 394, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1979)", country DE. Source: same page
+  as the 1981 entry, "Brügelmann 1979.pdf" (100 pp, all upright, no text layer). Cover and p. 5
+  header "1979"; text "Saison 1979"; no print date found.
+- Components: pp. 5, 8-9, 12, 19-21, 24-25, 27-28, 32-35, 40-43, 47 (headsets only), 48-51, 62,
+  85 (Colnago finish), 94. Skipped 13 (finish surcharges), 37 (adjustment text; a Shimano
+  "EX-Kassetten" teaser without prices).
+- Bars / stems (pp. 24-25): Cinelli Giro, Poulidor, Merckx 425 / 445, Pista-19, Sprint-18; 3ttt as
+  1978 (Coppi still listed); Cinelli Corsa and Record stems ("limited supply, T.T.T. substituted");
+  no Pivo bars or stems (Pivo rows stay ending 1978).
+- Changed (source_ref -> this source):
+  - year_to -> 1979: 8794 Simplex AV 3, 9319 Cinelli 18 Pista, 9082 Cinelli 19 Track, 6162 Shimano
+    L-284 Dura-Ace double lever, 11170 D'Alessandro Cronometro (all 1978), 6810 Hutchinson Krono
+    Milano (1978; the 1979 "Krono" is hand-made 210 g, matching 6810 rather than 9267 Krono's silk
+    180 g; the 1981 pass moved 9267 to 1981 on a similar 210 g "Krono" line, worth revisiting).
+  - year_from -> 1979: 2120 Maillard 700 Sprint (was 1980), 9585 Wolber W 333 (was 1981), 9286 Selle
+    Royal Contour (was 1981; "steel frame, 350 g") and 5531 Super Contour (was 1981; "only 220 g").
+- No inserts.
+- Not applied: Mavic "Titan" blue / grey tubular rims (also 1977; 395 g; no DB match); Sedis Delta;
+  Maillard 700 Compact (name only "Maillard"); Huret Eco; Simplex Prestige and Regina Extra groups;
+  Campagnolo Record / Simplex Criterium shifters (DB rows are later or earlier versions); Canetti
+  Cross; Wolber W/20; Colnago-finish parts.
