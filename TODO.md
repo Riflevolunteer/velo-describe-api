@@ -361,18 +361,70 @@ The three plausible Peugeot Spidel links remain unlinked.
 - Decided 2026-10-30, leave unlinked: "Racing bend" / "Racing bend, light alloy", 1970-76 Peugeot x13 [7368 7507 7571 9539 9567 9698 9670 7274 7258 7314 7299 7448 7433] (no maker printed; 2901 Franco Belge 354 starts 1979); T.T.T. Record Competizione, 1978 Bianchi Campione del Mondo CX [12513] (DB splits it by bend: 2752 Gimondi / 2750 Merckx / 2777 TdF; none printed).
 - No suitable row: 3ttt special mod. Colnago (7); SR MTB-224 Power Bulge (5, 1990 Bianchi) and SR/Modolo anatomic (4); T.T.T. Rekord Standard / Record Standard (2, 1978 Bianchi; the 3ttt Record 1st version is ranged to 1975) and T.T.T. Franco Belge (2, 1975-76 Raleigh); Kusuki WP-B / WPR-B (7, already listed); ITM Mondial Pista and ITM Italia aero; H.L. racing / MTB bulge / semi-rise (5, 1987-90 Bianchi); SR CTB, SR CTR Randonneur (3, 1986 Raleigh); PIVO Professional (3, 1975 Motobecane); Belleri touring bar (2, 1981 Kalkhoff); Mountain Bike CMC-709 / MS-710 (1984 Peugeot MBs); Modolo Flyer; Corsa Strada model (3, 1981 Bianchi); Competición (2, 1973 Zeus).
 
-### Tyres (reviewed 2026-11-09)
+### Tyres (step 1 audit, 2026-11-14)
 
-**Current: 234 / 933 linked (25.1%); 699 unlinked.** By bike brand: Peugeot 142 / 415, Raleigh 23 / 214, Bianchi 49 / 140, Colnago 7 / 56, Battaglin 5 / 6, Motobecane 5 / 14, Cinelli 2 / 3, Zeus 1 / 6; Falcon 0 / 50, Miyata 0 / 18, Kalkhoff 0 / 8, De Rosa 0 / 3. Size-only, maker-only and house-brand text remains unlinked; Miyata's 17 own-brand tyre specs follow the no-house-brand-tyre-rows decision.
+**Current: 238 / 973 linked (24.5%); 735 unlinked; 601 tyre components.**
+Read-only snapshot 2026-11-14 17:56 UTC. [Full audit and prioritised worklist](docs/audits/tyres-2026-11-14.md)
+includes affected IDs, per-brand counts, existing evidence and duplicate review.
+The 2026-11-09 whole-DB coverage table above remains historical; this is the
+current tyre-only baseline. No DB changes made during this audit.
+
+- **Current date worklist after approved Michelin corrections, 2026-11-14:**
+  10 tyre specs remain outside recorded dates: 8384 Ritchey MegaBite OverDrive
+  (5, Bianchi 1990); 6765 Clement Pistard (1, Bianchi 1983); 6767 Clement Ritmo
+  LTX 55 (1, Raleigh 1982); 6889 Vittoria Giro del Mondo (1, Bianchi 1990);
+  6899 Vittoria Pro L Slick (1, Bianchi 1987); 9247 Vittoria Corsa (1, Bianchi
+  1986). Review identity and original evidence before changing dates. The 16
+  linked specs with incomplete component dates also remain open. Michelin's
+  26 flags are resolved; [applied evidence/SQL and validation](docs/audits/michelin-2026-11-14.md).
+  Select's 1986 date and the French catalogue dates retain their inference caveats.
+- **Then: review new-row link candidate.** 1973 Zeus Z 59 spec 59,
+  "D'Alessandro Mondiale Tubulars", now has a candidate: 11136 Mondiale,
+  1973–82 (Brügelmann 1973, source 399). Review model/source evidence before
+  preparing SQL. It is no longer a missing-row source hunt.
+- **Other held-evidence questions:** 1979 Miyata 1200 spec 20283 "NATIONAL
+  Panaracer tubular 230" versus 9097 Cycle Pro National tubular (branding
+  unresolved); 1987 Peugeot Challenge gumwalls x5 versus existing 6846 Peugeot
+  Challenge (source/continuity unresolved). These are candidates, not approved links.
+- **Structural baseline:** no dangling component/source references, wrong linked
+  categories, exact duplicate tyre specs or component group ownership conflicts.
+  68/601 components have incomplete dates. Seven automatic duplicate groups are
+  classified as configurations/generations; no automatic merge recommendation,
+  near-name or parenthetical pair. No merges proposed.
+- **Triage:** the classifier flags 209 unlinked specs for possible review, but
+  includes bare sizes, finishes and maker-only false positives. Generic and
+  house-part strings remain plain text. 61 Colnago Gommitalia/GommaItalia specs
+  lack sufficient model identification; their volume does not justify default links.
 
 Remaining named source gaps: CST C-740 / C-860 / C-861 (6, 1989-90 Bianchi), Vredestein Racer II (4, 1988 Raleigh), IRC Crosscountry (3) and Peak (1989 Bianchi), Michelin ATB Surmond (2, 1989 Peugeot) and Chevron gumwall (1983 Peugeot), Panaracer Cannonball Express and Cheng Shin Ridge Line III / Canyon Express (1986-87 Peugeot), National Trisport (1986 Miyata), Specialized Ground Control / Crossroads II (1988 Raleigh; 9910 Crossroads is 1983-84), Vittoria Oscar X (1989 Bianchi).
 
-Remaining variant questions from this pass: Vittoria Nuovo Pro on 1991 / 1992 Bianchi (four specs; 260 versus R.T. unresolved); bare Panaracer Smoke on 1993 Project 5 / Project 7 (two specs on 700C bikes, so do not use a 26-inch Smoke row). Smoke / Dart Comp and Kevlar compound cells need distinct front/rear and construction identification. Keep the compound 1989 Bianchi "Vittoria Formula 1 and Juniore tubulars" (6875 / 6890) unlinked.
+Remaining variant questions: Panaracer Smoke/Dart has 8 unlinked specs (bare
+Smoke x3 including 1994 Cinelli, combined Smoke/Dart Comp x4, Smoke Comp K x1).
+The 1993 Project 5 / Project 7 are 700C: do not use a 26-inch Smoke row.
+Identify front/rear and construction before splitting/linking combined cells.
+Keep the compound 1989 Bianchi "Vittoria Formula 1 and Juniore tubulars"
+(6875 / 6890) unlinked. Nuovo Pro x4 is already resolved to 6893 (see Done).
 
-- Rechecked 2026-11-13 (730 of 964 unlinked): no new links. Only two tyre rows were added since 11-09 (10972 HP22, already linked; 10973 Timbuk II, no spec names it). Not in the lists above, all left: 1994 Cinelli Genius Strada / Supercorsa "Vittoria CX tubular" (Corsa CX 6880 is the Bianchi precedent, but Cronometro / Special / Seta CX rows also fit, and the Cinelli pass left it as ambiguous); 1982 Battaglin "Vittoria Trofeo" (9255 Trofeo 250 starts 1984, battaglin.md); 1991 Bianchi "Panaracer Record" (only 6841 P-27RD, 1980); 1977 Peugeot "Peugeot Professionnel or Clement Criterium" (either/or). No row: Clement 88 Competition, Specialized Umma Gumma (1994 Cinelli), IRC Peak Sigma, Panaracer Smoke Comp K 26 x 2.1 (1991 Bianchi).
+- Also unresolved: 1994 Cinelli Genius Strada / Supercorsa "Vittoria CX tubular"
+  (several CX variants); 1982 Battaglin "Vittoria Trofeo" (9255 Trofeo 250 starts
+  1984; new 11008 Trofeo Special is 1988); 1991 Bianchi "Panaracer Record"
+  (only 6841 P-27RD, 1980); 1977 Peugeot "Peugeot Professionnel or Clement
+  Criterium" (either/or). No suitable row: Clement 88 Competition, Specialized
+  Umma Gumma, IRC Peak Sigma, Panaracer Smoke Comp K, 1994 Cinelli Sava Snake
+  [20185]. New Brügelmann tyre records and revised dates supersede the older
+  11-13 claim that only HP22/Timbuk II had been added; the audit lists all 27
+  additional tyre rows above ID 10973, currently unused by these specs.
 - Decided 2026-10-30, leave unlinked: Clement silk tubulars, extra-light, 1978 Bianchi Specialissima Barcellona [12481] (three road Seta Extra rows: 6738 / 8971 / 6761); Hutchinson Silk, 1971-72 Raleigh Professional / Pro Track x3 [9364 8919 8900] (no row fits: 9050 is a 1976-78 track tyre, 9266 is 1985).
 - Decided 2026-10-30, leave unlinked: Vittoria Seta / Seta original, 1985 Bianchi Super Leggera / Centenario [5693 5677] (three road Corsa Seta variants: 9248 / 9429 / 6877); Wolber Rallye, 1984 Bianchi Nuovo Racing [1036] (Rallye 19 / 20TKS / 22 / 23); Dunlop High Pressure Road Racing, 1970 Raleigh Gran Sport [7799] (6801 is 1940-60); IRC "Roadlite Ex" / Roadlite 100PSI skinwall, 1986 Raleigh Prestige / Technium 480 [8184 8325] (9099 is a 1978 27in Road Lite Z).
-- No suitable row: Peugeot Trophy tubulars (8, 1977-84 Peugeot incl. "Trophy tubulars"), Peugeot Professionnel tubulars, "Professional 225 g" and "Super Competition" tubulars (1981-83 Peugeot); Wolber Transalpino (2); Clement Meeting; Michelin Competition Slick 700 x 20C (1987 Bianchi); Vittoria Uni, Open Tubular, Zefir and Flash M19 (already listed); Vredestein Racer HP (already listed); Dunlop Sprite (3, 1970 Raleigh); D'Alessandro Leggerísimo Pista / Mondiale / Super-Cross (1973 Zeus); IRC Triathlete / Triathlon (3), IRC Featherlight; CST C-631 / Prolite (5); Panaracer Smoke / Dart Comp (6, already listed); Bianchi Dakar / Advantage-SL (5); Impere Seta tubeless.
+- No suitable period identification/row: Peugeot Trophy tubulars (8), Peugeot
+  Professionnel / Professional 225 g / Super Competition; Wolber Transalpino (2);
+  Clement Meeting; Michelin Competition Slick; Vittoria Uni / Open Tubular /
+  Zefir / Flash M19; Vredestein Racer HP (5, plus Racer II x4); Dunlop Sprite
+  (3); D'Alessandro Leggerísimo Pista / Super-Cross; IRC Triathlete/Triathlon
+  (5) / Featherlight; CST C-631 / Prolite (6, plus C-740/860/861 x6); Bianchi
+  Dakar / Advantage-SL; Impere Seta tubeless. Prioritise period CST and Vredestein
+  sources after the held-evidence checks. Earlier source hunts are recorded
+  under Open: source hunts; do not repeat them without a new lead.
 
 ### Pedals (2026-11-02 pass)
 
@@ -575,6 +627,27 @@ Review evidence and proposed actions: `/private/tmp/existing-source-review/revie
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
 
 ## Done
+
+- **2026-11-14 Michelin corrections applied (user approved):** 9498 Hi-Lite
+  Road / 6836 Hi-Lite Pro / 9499 Super Elan year_from -> 1986; 6830 BIB TS-20
+  year_to -> 1989; 6826 Select year_from -> 1986 (inferred catalogue date retained
+  explicitly). Five component rows updated with evidence/provenance. Spec 15681
+  corrected 700x70C [?] -> 700x20C in DB and backed-up CSV; generator override
+  replaced with the corrected bike/year-scoped value. Tyre date flags 36 -> 10;
+  coverage unchanged at 238/973. All 86 CSVs regenerated: only the intended
+  spec text changed, no component mappings; all 18,472 live specs compared:
+  only 15681.value_text changed. SQL rerun: zero rows affected.
+  [Review/evidence/SQL/validation](docs/audits/michelin-2026-11-14.md).
+
+- **2026-11-14 tyre step 1 audit (read-only):** 238/973 linked (24.5%), 735
+  unlinked, 601 components. No broken component/source references, wrong linked
+  categories, exact duplicate specs or group ownership conflicts; 36 date-conflict
+  specs (26 Michelin) and 16 linked specs with incomplete component dates remain
+  for review. Verified Bianchi Nuovo Pro x4 already linked to 6893; removed its
+  stale open status. New Mondiale 11136 makes Zeus spec 59 a link candidate,
+  not a missing-row hunt. Reconciled current tyre worklist; [audit report](docs/audits/tyres-2026-11-14.md)
+  records IDs, priorities, classifier limitations and seven non-merge duplicate
+  groups. No ingestion, linking, date changes or merges performed.
 
 - **2026-11-13 Maillard CXC brochure (user approved, +70 links):** recovered two undated manufacturer scans from Velo Vintage à Gogo t12976, registered as source **382**. Corrected the 2026-10-26 merge: **3828** is now CXC 550 (379g); restored **3829 CXC 650** with its original source GUID and 344g weight. Added **10986 CXC 500**, **10987 CXC 600**, **10988 CXC 700**, **10989 CXC 700 D**; 600/700 D remain undated. Retained the legacy 550 start-year bucket 1980 as unproven and the recovered 650 source's 1983 date; later bounds follow dated bike specifications. Linked **70 NULL Pedals specs on 70 bikes** (69 Peugeot / 1 Falcon): 500 x18, 550 x39, 650 x10, 700 x3. Added 25 exact value/year-scoped generator overrides. All **85 CSVs** checked: **6333 -> 6403** generated links, exactly these 70; read-back comparison across **18,283 specs** confirms only the approved links changed, live linked total **6363 -> 6433**. Pedals **413 -> 483 / 922 (52.4%)**. Five component rows inserted (including restored 3829), one rewritten; all other component and spec fields unchanged. SQL rerun affected zero rows; `npm test` passes. SQL, snapshots and validation: `/private/tmp/maillard-cxc-review-2026-11-13/`; component Maillard and bike Peugeot/Falcon notes updated.
 

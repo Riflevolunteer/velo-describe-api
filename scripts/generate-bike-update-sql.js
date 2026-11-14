@@ -4100,10 +4100,10 @@ const COMPONENT_OVERRIDES = {
     'michelin hilite road': 9498, // 1988 Peugeot (FR): Michelin Hi-Lite Road
     'michelin hilite road 700x20': 9498, // 1988 Peugeot (FR) PH 513 / PH 501
     'michelin hilite pro': 6836, // 1988 Peugeot (FR) PG SIS: Michelin Hi-Lite Pro
-    'michelin "hi lite pro" 700x70c [?]': 6836, // 1987 Peugeot (US) Mont Cenis: printed 700x70C (sic), Hi-Lite Pro
+    'michelin "hi lite pro" 700x20c': [{ bike: 'PSN 10 Mont Cenis', from: 1987, to: 1987, id: 6836 }], // Original US p.5 confirms 700x20C; replaces the 700x70C [?] transcription (2026-11-14).
     'michelin hi lite comp 700 x 20c': 6835, // 1986 Peugeot (US) table Galibier
-    'michelin hi lite pro 700 x 20c': 6836, // 1986 Peugeot (US) table Mont Cenis (row dated 1988 only)
-    'michelin hi lite road 700 x 23c': 9498, // 1986 Peugeot (US) table Triathlon / Ventoux (row dated 1988 only)
+    'michelin hi lite pro 700 x 20c': 6836, // 1986 Peugeot (US) table Mont Cenis; earlier fitment confirmed 2026-11-14.
+    'michelin hi lite road 700 x 23c': 9498, // 1986 Peugeot (US) table Triathlon / Ventoux; earlier fitment confirmed 2026-11-14.
     'michelin hi lite road 27 x 1 1 8"': 9498, // 1986 Peugeot (US) Tourmalet
     // 1975 Motobecane Le Champion: the only Gran Turismo tubular row (judgement call 2026-10-30; maker not printed).
     'gran turismo tubulars': [{ from: 1974, to: 1978, id: 9056 }], // Vittoria Granturismo

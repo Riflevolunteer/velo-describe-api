@@ -1,5 +1,31 @@
 # Michelin catalogs processed so far
 
+## Bike-catalogue date-conflict review — 2026-11-14 (user approved, applied)
+
+- [Evidence, source image URLs/hashes, before values and SQL](../../../../../docs/audits/michelin-2026-11-14.md)
+  are recorded in the repository audit. Applied five component UPDATEs and one
+  spec UPDATE; rerun affected zero rows.
+- Applied: 9498 Hi-Lite Road / 6836 Hi-Lite Pro / 9499 Super Elan year_from
+  1988 -> 1986; 6830 BIB TS-20 year_to 1985 -> 1989; 6826 Select year_from
+  1987 -> 1986, inferred from the existing catalogue attribution. Original
+  named-model links retained; all 26 Michelin date flags resolved.
+- Original Peugeot US 1986 table confirms Hi-Lite Pro 700 x 20C and Hi-Lite
+  Road 700 x 23C / 27 x 1-1/8. Peugeot FR tables attributed 1986/87 confirm
+  Super Elan and BIB TS20; Peugeot NL 1989 Cosmic confirms Michelin BIB TS20.
+  French catalogue dating is inferred by the archive. The undated Rekord 920
+  German sheet confirms Select 20-622 but its attribution to 1986 remains
+  inferred; no new independent dating evidence found.
+- Actual transcription correction applied: US 1987 Mont Cenis p.5 prints
+  700x20C, not the DB/CSV's 700x70C [?] (spec 15681). US Triathlon p.6 prints
+  700x19. CSV backed up and repaired; override replaced with corrected scoped
+  text. All 86 CSVs generated before/after: only that spec text changed; no
+  component mappings changed. Date updates leave generation unchanged. All
+  18,472 live specs compared: only 15681.value_text changed. Tyre flags 36 -> 10,
+  coverage unchanged at 238/973. source_ref: 9498 -> 310, 6836 -> 312,
+  9499 -> 309, 6830 -> 320, 6826 -> 324; earlier evidence retained in the report.
+- The existing 1988 700C-specific Hi-Lite Road casing/weight details are retained
+  with their size scope; no assumption that these also describe its 27-inch tyre.
+
 ## Michelin cycle tyres: Cycle Tyres leaflet (June 1983), trade price list (1 September 1979) and bicycle / moped / motorcycle tyres booklet, Edition 3 (c. 1980) — IceniCAM, data_source id 184
 
 - Sources, all from https://www.icenicam.org.uk/library/Michelin/ (the

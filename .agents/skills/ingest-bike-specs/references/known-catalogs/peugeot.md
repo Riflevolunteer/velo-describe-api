@@ -698,10 +698,20 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   Cannon Ball / Alpine / Canyon / Orient / US Express. Comete image is cut below SIZES (no colours).
 - Not loaded (US): CY10FC carbon frameset, City Express (ATB-style commuter, judged city), Pipeline 1 / 5 cruisers,
   P20 folding, Exerciser, C46 / M46 juniors.
+- Michelin follow-up (2026-11-14, user approved): re-read original US Mont Cenis
+  p.5 and corrected spec 15681 / CSV Tyres cell from `Michelin "Hi Lite Pro",
+  700x70C [?]` to `Michelin "Hi Lite Pro", 700x20C`. The old 70C was a transcription
+  error, not a printed typo. CSV backup in `/private/tmp/michelin-review-2026-11-14/`;
+  corrected bike/year-scoped generator override retains 6836. Michelin model/date
+  updates are documented in the component Michelin notes and repository audit.
+  All 86 CSVs compared: only this spec text changed, no component links. Live
+  18,472-spec comparison likewise changes only 15681.value_text; SQL rerun zero.
 - Repairs: FR brand capitals normalised to mixed case; "Huret 'New Success'" unquoted (so the 1987 ARIS range hits);
   P 18SA W sizes "50, 53 cm" (table prints 50-53; transcription had 63); US "Malliard" -> "Maillard"; Tourmalet
   shifter "[?]" dropped (SL-L422FA matches row 7555). Kept as printed with "[?]": Tourmalet derailleurs (illegible),
-  Mont Cenis tyres "700x70C", Anjou last size / tyres / pedals (watermark), Canyon Express colour code.
+  Anjou last size / tyres / pedals (watermark), Canyon Express colour code.
+  Mont Cenis's initially transcribed "700x70C" was corrected to the printed
+  "700x20C" on 2026-11-14 (see Michelin follow-up above).
 - Overrides (US): 105 SIS FD / RD / SL-1050, BR-1050 -> 953 (49 short reach), Deore XT M730 FD / RD / SL / FC / PD, SL-MT60,
   Weinmann 570 -> 1129, SP-6207, CN-6120 (range to 1987), Rigida 1521 -> 5154 AL 1521, Helicomatic wordings to 1987,
   "Huret ECO 5" (printed; = the 1986 Corbier's Eco S) -> front 8796 / rear 8485, "Shimano Z501, stem shifters" group cell

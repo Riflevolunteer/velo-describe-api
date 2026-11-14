@@ -1,0 +1,53 @@
+{
+  "status": "Before values retained for the user-approved application on 2026-11-14",
+  "components": [
+    {
+      "component_id": 6826,
+      "title": "Michelin Select",
+      "description": "Michelin Select, France",
+      "year_from": "1987",
+      "year_to": "1991",
+      "source_ref": 1
+    },
+    {
+      "component_id": 6830,
+      "title": "Michelin BIB TS-20",
+      "description": "Michelin BIB TS-20, France. Folding tyre with flexible bead cores, 700 x 20C (20-622) whitewall; narrow section, the lightest and fastest in the range at about 8.5oz; only for crochet rims",
+      "year_from": "1980",
+      "year_to": "1985",
+      "source_ref": 259
+    },
+    {
+      "component_id": 6836,
+      "title": "Michelin Hi-Lite Pro",
+      "description": "Michelin Hi-Lite Pro, France",
+      "year_from": "1988",
+      "year_to": "1988",
+      "source_ref": 262
+    },
+    {
+      "component_id": 9498,
+      "title": "Michelin Hi-Lite Road",
+      "description": "Michelin Hi-Lite Road, France. Clincher with triple-ply casing, diamond tread with centre band, 20 x 622 (220g) or 23 x 622 (235g)",
+      "year_from": "1988",
+      "year_to": "1988",
+      "source_ref": 262
+    },
+    {
+      "component_id": 9499,
+      "title": "Michelin Super Elan",
+      "description": "Michelin Super Elan, France. Clincher with reinforced nylon casing, diamond tread with centre band, 23 x 622, 300g",
+      "year_from": "1988",
+      "year_to": "1988",
+      "source_ref": 262
+    }
+  ],
+  "specs": [
+    {
+      "bike_spec_id": 15681,
+      "value_text": "Michelin \"Hi Lite Pro\", 700x70C [?]",
+      "component_id": 6836,
+      "source_ref": 312
+    }
+  ]
+}

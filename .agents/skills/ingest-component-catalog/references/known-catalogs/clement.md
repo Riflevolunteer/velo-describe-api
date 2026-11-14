@@ -35,6 +35,11 @@
 
 ## Falcon parts catalogue (1970) — see cross-catalog-notes.md (`data_source` 352)
 
+- Status correction from the 2026-11-14 tyre audit: the 1970 Raleigh
+  "Clement 'Seta' Silk" question above was superseded by the user's 2026-10-30
+  decision mapping it to 6748 Criterium Seta (recorded in the bike Raleigh notes
+  and generator). Do not reopen it as an unlinked source gap without new evidence.
+
 - UK importer list of 21 Clément tubulars by Tipo number with oz weights. Twelve rows moved
   year_from to 1970, 6774 Speciale Corsa dated, new 10068 Produzione (23) and 10069 Olimpic (21).
   Tipo 9 / 10 cotton track types left unresolved against 6735 "Seta 9" and 9259 "N. 10".

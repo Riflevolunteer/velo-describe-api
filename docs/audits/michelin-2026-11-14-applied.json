@@ -1,0 +1,32 @@
+{
+  "specsCompared": 18472,
+  "specChanges": [
+    {
+      "id": 15681,
+      "changes": [
+        "value_text"
+      ]
+    }
+  ],
+  "componentIds": [
+    6826,
+    6830,
+    6836,
+    9498,
+    9499
+  ],
+  "beforeTyres": [
+    {
+      "total": 973,
+      "linked": 238,
+      "date_flags": 36
+    }
+  ],
+  "afterTyres": [
+    {
+      "total": 973,
+      "linked": 238,
+      "date_flags": 10
+    }
+  ]
+}
