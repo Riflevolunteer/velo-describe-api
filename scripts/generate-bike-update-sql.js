@@ -4155,8 +4155,9 @@ const COMPONENT_OVERRIDES = {
     'clement 2001 cf': 6740, // Clement CF 2001
     // 2026-10-08 link-gap pass. 1982/83 Raleigh Team Replica, 1983 Road Ace.
     'clement ritmo tubular': 6767, // Clement Ritmo LTX 55 (only Ritmo row)
-    // 1983 Bianchi Super Pista: Pistard is Clement's track tubular.
-    'clement pista tubular': 6765, // Clement Pistard
+    // 1983 Bianchi Super Pista: no model number/weight; the 1985/88 guides
+    // distinguish Pistard from numbered Pista tyres. Leave unidentified (2026-11-14).
+    'clement pista tubular': null,
     // 1993 Bianchi MTBs, rows from the Ritchey 1992 catalogue. The CSV
     // spells HardDrive "Hardrive", so the substring match can't see it.
     'ritchey z max': 8382, // Nth FS: Ritchey MegaBite Z-Max

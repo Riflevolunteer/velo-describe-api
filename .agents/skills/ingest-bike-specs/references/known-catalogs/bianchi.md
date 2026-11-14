@@ -311,6 +311,13 @@
   via override. Judgment call: Pistard is Clement's track tubular and the
   only track-named Clement row. 1983: 50 -> 51 (the heading above said 47
   from an earlier load; the DB had 50 before this pass).
+  Review 2026-11-14: that rationale is superseded by the inspected Clement
+  range, which distinguishes Pistard from several numbered Pista tyres. The
+  Bianchi page gives no code/weight/casing. User approved clearing spec 1023's
+  link and setting the override to null; applied 2026-11-14. Printed spec text
+  and source retained; no CSV edit. All other generated/live mappings unchanged;
+  SQL rerun zero. Evidence and applied SQL are in the component Clement notes.
+  Do not widen Pistard's dates or guess another track model from this fitment.
 - 1987 PISTA Freewheel "Campagnolo 16T fixed cog": override ranged to 6380
   (763 steel sprocket) up to 1985 and `null` from 1986, so it stays
   unlinked — the 763 row ends 1985 and there is no later Campagnolo cog row.

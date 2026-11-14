@@ -364,16 +364,15 @@ The three plausible Peugeot Spidel links remain unlinked.
 
 ### Tyres (step 1 audit, 2026-11-14)
 
-**Current: 238 / 973 linked (24.5%); 735 unlinked; 601 tyre components.**
-Baseline audited 2026-11-14 17:56 UTC; Michelin and OverDrive corrections applied
-later that day. Current work and remaining IDs are maintained below; evidence
+**Current: 237 / 973 linked (24.4%); 736 unlinked; 601 tyre components.**
+Baseline audited 2026-11-14 17:56 UTC; Michelin, OverDrive and Pistard corrections
+applied later that day. Current work and remaining IDs are maintained below; evidence
 and validation live in the relevant existing catalogue notes.
 The 2026-11-09 whole-DB coverage table above remains historical; this is the
 current tyre-only baseline. No DB changes made during this audit.
 
-- **Current date worklist after approved Michelin/OverDrive corrections, 2026-11-14:**
-  Five tyre specs remain outside recorded dates: 6765 Clement Pistard
-  (spec 1023, Bianchi 1983); 6767 Clement Ritmo LTX 55 (4536, Raleigh 1982);
+- **Current date worklist after approved corrections, 2026-11-14:**
+  Four tyre specs remain outside recorded dates: 6767 Clement Ritmo LTX 55 (4536, Raleigh 1982);
   6889 Vittoria Giro del Mondo (7070, Bianchi 1990); 6899 Vittoria Pro L Slick
   (1138, Bianchi 1987); 9247 Vittoria Corsa (18313, Bianchi 1986). Review identity
   and original evidence before changing dates. The 16 linked specs with incomplete
@@ -382,6 +381,11 @@ current tyre-only baseline. No DB changes made during this audit.
   (1), 6886 Vittoria Flash M23 (1). Michelin's 26 flags are resolved; see the
   [Michelin notes](.agents/skills/ingest-component-catalog/references/known-catalogs/michelin.md).
   Select's 1986 date and the French catalogue dates retain their inference caveats.
+- **Intentional unlinked identification:** 1983 Bianchi Super Pista spec 1023
+  prints only Clement Pista; Guida distinguishes Pistard from numbered Pista
+  tyres. Unsupported 6765 link cleared and override set to null on 2026-11-14.
+  Need a model code, casing/weight or independent fitment evidence to identify it.
+  [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/clement.md).
 - **Then: review new-row link candidate.** 1973 Zeus Z 59 spec 59,
   "D'Alessandro Mondiale Tubulars", now has a candidate: 11136 Mondiale,
   1973–82 (Brügelmann 1973, source 399). Review model/source evidence before
@@ -637,6 +641,13 @@ Review evidence and proposed actions: `/private/tmp/existing-source-review/revie
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
 
 ## Done
+
+- **2026-11-14 Clement Pistard correction applied (user approved):** cleared
+  spec 1023 -> 6765 and set generator override to null; dates retained 1985–88.
+  Description corrected/enriched from both guides (250 g; tube details by year).
+  Coverage 237/973, date flags 5 -> 4; only intended generated/live link changed;
+  rerun zero. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/clement.md),
+  [SQL](docs/audits/clement-pistard-2026-11-14.sql).
 
 - **2026-11-14 Ritchey OverDrive correction applied (user approved):** 8384
   year_from 1991 -> 1990, source 150 -> 168 from Bianchi's dated catalogue.

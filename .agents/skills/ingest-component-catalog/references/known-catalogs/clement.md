@@ -1,5 +1,41 @@
 # Clement catalogs processed so far
 
+## Pistard / Bianchi Super Pista review — 2026-11-14 (user approved, applied)
+
+- [Applied SQL](../../../../../docs/audits/clement-pistard-2026-11-14.sql): cleared
+  spec 1023's unsupported link to 6765 and enriched/corrected Pistard's
+  description; retained component dates 1985–88 and source 262. Changed the
+  generator's `clement pista tubular` override from 6765 to explicit null.
+  Spec text/source and CSV unchanged. First run affected one spec and one
+  component row; rerun zero. Generation across all 86 CSVs changes only this
+  link; all 18,472 live specs compared, only 1023.component_id changed.
+- Re-read [Bianchi c.1983, Super Pista (10th scan)](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1983-bianchi-catalog-p10.jpg):
+  says Clement Pista tyres, without model number, casing, weight or Pistard name.
+  The catalogue is undated; c.1983 remains inferred from its 1982 medal reference.
+  This does not establish Pistard fitment or support extending 6765 to 1983.
+- [Guida 85/86 scan 39](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_1985_november_-_i_componenti_da_corsa_scan_39_main_image.jpg),
+  source 259: Pistard is Clement tex, studded tread, 250 g, 28in; bottom-group
+  footnote specifies butylised latex tubes. Several numbered track tyres are
+  separate rows. [Guida 88 scan 50](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_1988_february_-_i_componenti_da_corsa_scan_50_main_image.jpg),
+  source 262: Pistard again 250 g, Clement tex, studded tread, butyl tube;
+  N.1 Seta Extra Pista and N.8 bis Clement Pista are distinct entries.
+  [Scan 51](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_1988_february_-_i_componenti_da_corsa_scan_51_main_image.jpg)
+  also lists N.10 Clement Pista separately. The existing 220 g description
+  is contradicted by both guides; preserve the actual tube-spec difference
+  between editions rather than infer a generation change or duplicate row.
+- The held [1977 manufacturer track page](http://cyclespeugeot.web.fc2.com/catalog/clement1977/1977_clement_03.jpg),
+  source 232, independently lists multiple track models (Tipo 1, Tipo 3,
+  Sei Giorni 8 bis, Tipo 10). Thus the old rationale that Pistard was the
+  only track-named candidate is insufficient. Do not choose another numbered
+  model without distinguishing evidence from the Bianchi fitment.
+- Before application, 6765 had one bike link (1023), dates 1985–88, source 262,
+  description `Clement Pistard, Italy, 220 grams`. It now has no bike links;
+  description is `Tubular with Clement tex casing and studded tread, 28 in,
+  250 g. Tube: butylised latex in 1985; butyl in 1988.` Verified coverage
+  238 -> 237/973 and date flags 5 -> 4. The Clement Pista spec is intentionally
+  unlinked pending distinguishing model evidence; do not choose another track
+  model or widen Pistard's dates to increase coverage.
+
 ## Clement S.p.A. tubular and wired-on tyre leaflet (1977) (Reminiscence Part 95, 8 pages)
 
 - `data_source` 232, label "Clement Tubular and wired-on tyre leaflet (1977)". Source:
