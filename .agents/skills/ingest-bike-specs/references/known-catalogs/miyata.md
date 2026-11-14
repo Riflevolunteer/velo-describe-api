@@ -54,6 +54,63 @@
   6446 -> 6518, exactly the 72 new links. Post-load Miyata totals:
   1979 9 bikes / 189 specs / 72 links; 1986 18 / 395 / 156.
 
+## 1984 Miyata — loaded (2026-11-15, source 404, CA)
+
+- CSV: `bike_specs/1984_miyata_spec.csv` (scratchpad `build_miyata84.js`,
+  not kept). Review SQL prepends ten guarded date fixes: year_to -> 1984
+  for 1210 Dura-Ace EX cassette, 3769 KKT Pro Ace (Road), 1925 Sugino Aero
+  Mighty, 5927 Sugino SP-K, 8230 SR RY2 Royal 2, 1967 Sugino GT (triple),
+  10846 SR MTS-100, 6666 SR MTS-110, 9543 Araya Model 5 (was 1974: a long
+  stretch on a generic steel-rim name, flagged); year_from 1985 -> 1984 for
+  8873 Dia-Compe 164G.
+- Source: https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2084.pdf
+  (26 pp; the Rag & Bone selector names 1983+ files "Miyata Catalogue NN.pdf").
+  Spec table pp. 24-25, read from 170 dpi crops (text layer too jumbled to
+  use). Back cover: "Printed in Japan NOV. 1983" and edition code "CAN";
+  no distributor address (1979-83 print Toyoda / Miyata Bicycle of America)
+  -> country CA. The warranty's "some states" is shared boilerplate.
+- Sixteen bikes, Type from series headings: Professional Racing (Team
+  Miyata-SL, Team Miyata, Pro Miyata -> "Racing"), Semi-Pro (912, 710,
+  310), Grand Touring (1000, 610, 210 -> "Touring"), All Terrain (Ridge /
+  Terra / Street Runner -> "Mountain"; Street Runner kept like the 1986 City
+  Runner: triple, cantilevers), All-Round Sports (110, 100, 90, Sport-10).
+  Skipped: Sport Junior (24" wheels, children's), BMX-5000 / BMX-3000.
+  Mixte "M" sizes stay in Frame Size cells. HANDLE row split into
+  Handlebars (top) and Stem (bottom); HANDLE BAR TAPE -> Cable & Tape.
+- Repairs: "16phi" written 16mm; Street Runner stem "S MTS-110" -> SR
+  MTS-110; Ridge Runner tyre "26x2,125" -> 26x2.125.
+- Overrides (bike-scoped, 1984 only): New 600-EX = 6207 (FD 2481, RD 4470,
+  SL-6207 6148, FC-6207 1798, MF-6207 2217; hub auto 7551). Shimano 105 =
+  Golden Arrow (FD auto 2466, RD auto 4452, BR-S105 958 replacing the auto
+  1987-89 BR-1050 953, SL-A105 6132). Z-Series on the 110 (FD-Z204 2543,
+  RD-Z503 4545, SL-Z401 6194, BR-Z570 959, BL-Z304 7181). Deore XT-EX rear
+  -> RD-M700 4488. Dura-Ace EX on Team Miyata as 1981-82 (RD 4509, HP 3105,
+  BR 997, cassette 1210, FH-7260 3569, SP-7200 5899, CN-7100 7472).
+  Campagnolo on Team Miyata-SL: auto FD 2313 / RD 4152 / brakes 583 /
+  headset 2968 / post 5761; "Super Light" pedals -> 4021 Super Record
+  Strada 3716 (auto; Super Leggero); crank -> Strada Super Record 1509;
+  Record hub forced null (low vs high flange). SunTour: Mountech-GTL ->
+  RD-5500 4711 (not the 1985 v2 4712), ARX-GT 4729, Cyclone Mark-2 rear
+  4742, Sprint hub BH-2000 7808, Power Thumb 6307, MSM 7800, ARX shifter
+  6272, UB-10 -> LD-3000 6288 (as 1986), XC-2 pedals 4015, New Winner
+  6-speed 2238, Perfect 5 / 6 2245 / 7813. MKS Esquartz -> 3858 (auto hit
+  the 1983 Esquartz 107), Esquartz 102 3859, Silvan Road 3865. SR CT-P5E ->
+  5857 (as 1986), Custom P6 5861, Royal-2 8230. Araya 20A / 7X / 7XN.
+  Nitto Technomic-Aero -> 8563 Technomic (auto; no aero row).
+- Left unlinked: New Superbe front / rear and Superbe PRO shifter (Superbe
+  II vs Superbe Pro, 1984 name ambiguous); Cyclone Mark-2 and Mountech
+  fronts (two rows each); Dura-Ace EX front, Campagnolo / Dura-Ace EX /
+  top-mount / VX / DL-72 / Deore XT-106 shifters; plain Dura-Ace 52x42
+  crank (EX vs 7400 in 1984); New 600-EX brakes (49 vs 57 reach); Pro-Compe
+  6-speed and UG clusters; 600-UG chains; SunTour Sealed Bearing hubs;
+  Sugino TAT / TGT, SR SCC-100 / CRC-100 / CXC-300 / CXC-2300 / CTC-5DX /
+  CTC-5SD2 / SNS-5SG cranks; Dia-Compe DC-980 / DC-981 / GX-500N / DC-730,
+  NGC-200 / 200H, PN-157 / 161 / 280 / 281, 165 levers; Araya 16A3 / 18;
+  SR P5 / P5B / P6B posts; Tange New Falcon / Levin Sealed / Tange-ST; SR
+  Randonneur / Custom / SC-713 / MTB bars, Nitto 55F / B-902; MKS AR-Road /
+  AR-Road 2 / CR-2 / Model-33 / PT-7, SR SP-513; Ariake saddles (no rows).
+- Regression: all 89 other CSVs regenerate byte-identical.
+
 ## 1982 Miyata — loaded (2026-11-14, source 403)
 
 - CSV: `bike_specs/1982_miyata_spec.csv` (scratchpad `build_miyata82.js`,
