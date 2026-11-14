@@ -1414,3 +1414,44 @@ Weinmann 1129 / 1130 570.
   tubular rim; Ideale Modell 4; Cobra saddles (as 1981-82); Campagnolo / Colnago / ICS special
   finishes; Triomphe / Victory / Record / Dura-Ace / Campagnolo 50th groupsets (no group category);
   Clement Ritmo (still not tied to 6767 Ritmo LTX 55).
+
+## Brügelmann Radsport-Shop catalogue — 1988 (Dropbox section PDFs), data_source 391, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1988)", country DE. Source: the same
+  Dropbox folder as 1985, files "B 88 1" to "B 88 12"; cover "Ausgabe 1988" (also "NEU '88" on
+  Deore XT, "ab April 1988 lieferbar"). 150 ppi spreads read as halves, as 1985. Read sections 1
+  (groups, special finishes, wheelsets), 2 (tyres), 3 (brakes, levers, hubs), 4 (disc wheels,
+  rims, chains, bars / stems), 5 (hubs, pedals, saddles, seatposts, derailleurs, shifters,
+  headsets, cranksets, BBs, chainrings), 6 (freewheels, sprockets) and 9 (BMX). Sections 7
+  (frames), 8 (tools), 10-12 (clothing, care, complete bikes) out of scope.
+- Bars / stems (pp. 116-123, for the TODO handlebar hunt): 3ttt Moscow time-trial bar (305 g,
+  "neu"), Merckx form 370-460 (460 "neu"), Superleggero 405-460, Aero oval, leather bar (with
+  black Typ 2000 stem, 145 DM; bar alone 86 DM), French / Dutch sport bars; stems 3ttt Campione,
+  Elegance, 2000, length-adjustable; Cinelli Strada / Strada-Extra ("with black dot"), Poulidor,
+  track bar, unnamed 420 / 440 bar, VIP set; ATAX "Profi" (25 mm sleeve) and "Profi de Luxe"
+  (wide sleeve), retailer labels, not inserted; SR Sakae drilled Merckx bar (in-bar brake cables,
+  420 / 440) sold as a set with a Royal-2 stem, 88.95 DM (not tied to 7884 RY-978); unbranded MTB
+  bars / stems Rocky, Speedy, Highway, Country (Cr-Mo / Dural, 21.2 / 22.2 quills). Still no ITM,
+  H.L. or Kusuki.
+- Changed (source_ref -> this source):
+  - year_to -> 1988 (51 rows): 11153 Nadax Favorit; Weinmann levers 7769 No. 144, 7933 No. 162,
+    493 No. 185 (Carrera), 8655 No. 188-2; Modolo 882 Race (1980), 890 Team, 870 Kronos; 11149 /
+    11150 CLB; 8842 TA cross ring; 1381 Regina Extra 50 Record and 8765 Sedis Sedisport chains;
+    1862 TA Criterium; 1883 Stronglight 107; 2169 Regina CX / CX-S; 7475 Shimano Uniglide; Sachs
+    Huret 4419 Jubilee AR 44.1 D, 4402 New Success AR 47.1 D, 8960 AV 66.3 D, 8963 MA 85.2 E, 8958
+    Rider AR 46.1 T; 8498 Sachs Orbit; 10020 Sturmey Archer S5; 7243 Maillard Atom Sport hub;
+    7530 Shimano PD-MX10; 8153 Mavic Bleu SSC; 5136 Nisi Laser; 5656 / 5657 Ideale 90; 9173 3ttt
+    A 2000; 5979 Campagnolo 1012/3 bar-end shifters; 2822 Cinelli VIP-Set (1980 -> 1988; bare
+    description rewritten); tyres 6758 Clement Grifo Neve, 6762 Clement Paris-Roubaix, Hutchinson
+    9045 Supersprint / 9046 GTX-80 Corsa / 9047 / 9049 / 10071 / 6816, Wolber 6911 Corsa 80 /
+    6914 Cross Super / 6918 Invulnerable 84 / 6920 Leader 80 / 6921 Liberty / 6940 Strada 80,
+    Continental 6788 Super Sport / 6789 SuperSport Ultra, 11159 Mitsuboshi, 11161 Metzeler Rollux.
+  - 6915 Wolber Cross Super X NULL/NULL -> 1988-1988.
+- Added: 11164 3ttt Campione stem (1985-1988; also listed in the 1985 catalogue p. 80) and 11165 3ttt
+  Elegance stem (1988).
+- Not applied: Weinmann Delta Pro (vs 1098 Delta 531 Pro, read uncertain); Maillard Dural /
+  Helicomatic / Compact freewheels (names do not tie cleanly to 2113 / 2114 / 8131); Regina CX /
+  BX / America kits and sprocket grids; Shimano FF and Biopace (heading-only brand); Sachs Huret
+  Rider front AV 69.1 T (DB has AV 62.1 T); Campagnolo Record chainring "designs" (frame-maker
+  engraved finishes); disc wheels and "Hit" wheel packages; Brügelmann house tubulars and
+  Pariba; groupsets.
