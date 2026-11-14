@@ -1599,3 +1599,33 @@ Weinmann 1129 / 1130 570.
   rows already span 1976); Nisi Campione del Mondo (vs 9229, a 1985 code); 3ttt "Titan saddle" (vs
   8851 3ttt 50/1); Wolber Corsa / Pro / Strada (no clean row); Simplex Prestige and Regina Extra
   groups.
+
+## Brügelmann Radsport-Shop catalogue — 1975 (rennrad-geschichten.de), data_source 397, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1975)", country DE. Source: same page
+  as the 1981 entry, "Brügelmann 1975.pdf" (84 pp). The whole scan is upside down (every page
+  checked needed 180°; a thumbnail triage wrongly called 12 pages upright); pages were rendered and
+  rotated 180° before reading. Cover "1975", "6 Monate stabile Preise"; no print date.
+- Components: pp. 5, 8-9, 12, 17-18, 22-23, 25-27, 30-33, 37-39, 41-43, 45, 80 (Campagnolo Super
+  Record picture page, codes 1052/1, 4061, 1049/A, 4030, 4031 as labels, no prices). Nothing
+  orderable on 19-20, 34-35, 40, 51-52, 83.
+- Bars (p. 22): "Pivo Profi" with long sleeve (5380/PP, 25 clamp, 9.80 DM, no width; the direct
+  source for 11169's 1975 start), Pivo Standard steel / alloy, 3ttt Coppi (5380/TC, deep bend, 420)
+  and Motta (5380/TG, short reach, 420), plus Cinelli and other 3ttt bars as 1976-77.
+- Changed (source_ref -> this source):
+  - year_from -> 1975 (24 rows): 1398 Sedis Gold; 6733 Clement 70 (was 1976); 6766 Clement Record
+    Seta Extra (was 1977; "Record Seide Extra"); 6810 Hutchinson Krono Milano (was 1976); Wolber
+    6914 Cross Super / 6919 Junior / 9026 Special Course; 9046 Hutchinson 80-GTX Corsa ("GT X 80
+    Corsa"); 8376 MAFAC 2000 racing lever; D'Alessandro 11135-11139; Continental 11140-11143;
+    Dourdoigne 11146 / 11147 / 11148 (p. 37 "Silk extra light" taken as 11148's "Seide extra
+    leicht"; the p. 37 "Track 140 / 160" lines not tied); 3ttt 11166 Coppi and 11167 Motta; 11168
+    Pivo Standard (all were 1976 unless noted).
+  - year_to -> 1975: 6077 Huret Jubilee 1567 double lever (was 1973).
+- No inserts.
+- Not applied: Mafac 2000 / Racer and Shimano Dura-Ace centre-pull (velobase 1970 / 1952-69 rows,
+  version not identifiable); Huret Jubilee versions (4303 first version already spans 1975; 4304 /
+  4306 versions not identifiable); Simplex Criterium (vs 2566 LJ A200, 1977) and Prestige groups;
+  Zeus "Weltmeister" names (Spanish catalogue names in the DB); Sugino square-taper BBs (vs 8888 /
+  8889); Hutchinson Cross (vs 9049 Cross TR); Wolber Pro / Corsa / Strada / Renforce (no clean
+  row); Cinelli Pista / Sprint stem (vs 7097 2A and 6501 Pista Steel); Campagnolo Super Record p. 80
+  (picture labels; Super Record rows already start 1974).
