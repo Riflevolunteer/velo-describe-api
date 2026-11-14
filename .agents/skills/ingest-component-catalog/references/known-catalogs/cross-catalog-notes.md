@@ -1574,3 +1574,28 @@ Weinmann 1129 / 1130 570.
   covers); Nisi Speciale (vs 9225 Pista Speciale); Wolber Performance / Junior (covered by 9028 /
   6919); Simplex Prestige groups; Canetti Cross; SunTour Ultra-6 / Ultra-7 freewheels and Sedis
   Ultra-6 chain (already covered).
+
+## Brügelmann Radsport-Shop catalogue — 1976 (rennrad-geschichten.de), data_source 396, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1976)", country DE. Source: same page
+  as the 1981 entry, "Brügelmann 1976.pdf" (84 pp, all upright; partial garbled OCR layer). Cover
+  "1976"; p. 3 "Katalogdruck im Dezember 1975", "Katalog 1976"; p. 5 header "1976/7".
+- Components: pp. 5, 8-9, 12, 17-19, 22-23, 25-26, 30-33, 37-39, 41 (headsets), 42-45, 52 (wheel
+  grids only), 82. Skipped 68 (Mavic hub advert), 72 (Zeus 2000 Titanium bike), 80 (Dura-Ace
+  advert), 83 (small parts); complete derailleur groups not transcribed.
+- Bars (p. 22): Pivo Standard (steel / alloy) and "Pivo Profi 62207-PPRO, Rennbügel mit langer
+  Manschette", 25 clamp (confirms the TODO.md 1976 reference for 11169); 3ttt Coppi and Motta;
+  Cinelli Merckx 425 / 445 and others as 1977. Simplex Super L.J. "Tour 1975 winner" (gold "as
+  ridden by Thevenet").
+- Changed (source_ref -> this source): year_from -> 1976 (20 rows, all previously 1977 from the
+  1977 pass or its predecessors): 1398 Sedis Gold, 11168 Pivo Standard, 11166 3ttt Coppi, 11167
+  3ttt Motta, 4501 Shimano DA-100 Dura-Ace black RD, Continental Sonderklasse 11140 / 11141 /
+  11142 / 11143, Wolber 6914 Cross Super / 6919 Junior / 9026 Special Course, D'Alessandro
+  11135-11139, Dourdoigne 11146 Paris-Roubaix / 11147 Grand Prix des Nations / 11148 Championnat du
+  Monde (track; listed as "Seide extra leicht 120g").
+- No inserts, no year_to changes.
+- Not applied: Sedis Delta (vs 1402 Sedisport Delta 1980); Maillard Course-Dural; Campagnolo Record
+  hubs / headset / seatpost / shifters (matcher paired them with C-Record rows; the Nuovo / Record
+  rows already span 1976); Nisi Campione del Mondo (vs 9229, a 1985 code); 3ttt "Titan saddle" (vs
+  8851 3ttt 50/1); Wolber Corsa / Pro / Strada (no clean row); Simplex Prestige and Regina Extra
+  groups.
