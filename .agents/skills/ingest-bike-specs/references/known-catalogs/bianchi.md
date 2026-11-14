@@ -462,6 +462,15 @@
 
 ## 1990 Bianchi — `1990_bianchi_spec.csv` (26 bikes, 519 specs, 262 linked)
 
+- OverDrive evidence review (2026-11-14, user approved, applied): dated cover and
+  pp.21–22 confirm Ritchey Megabite Overdrive 26x2.0 on Signature 2 / Grizzly /
+  Peregrine / Sika / Osprey, specs 6906/6948/6969/6989/7009. Updated component
+  8384 year_from 1991 -> 1990, source_ref 150 -> this source 168; all links
+  retained. No CSV/generator changes needed. All 18,472 bike specs unchanged;
+  generation across 86 CSVs byte-identical; SQL rerun zero. See repository audit
+  `docs/audits/ritchey-overdrive-2026-11-14.md` for scan mirror, manufacturer
+  comparison, guarded SQL and the unknown casing/bead qualification.
+
 - Source: https://www.retrobike.co.uk/archive/1990-bianchi-catalogue.1676/
   ("1990 Bianchi Catalogo.pdf", 23 pp, Bianchi USA Inc., South San
   Francisco; the download needs a browser UA + cookie from the archive

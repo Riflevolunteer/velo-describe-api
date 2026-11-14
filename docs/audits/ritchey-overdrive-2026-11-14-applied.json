@@ -1,0 +1,49 @@
+{
+  "applied": "2026-11-14",
+  "before": {
+    "component_id": 8384,
+    "title": "Ritchey MegaBite OverDrive",
+    "description": "First tyre with a Vector Force Analysis tread; high-speed, low rolling resistance for fireroads and hardpack. 26x2.0 650g, 26x2.0 Kevlar 600g (66 tpi); WCS 26x2.0 Kevlar 530g, WCS 700x38c Kevlar 380g (127 tpi); 700x38c 450g.",
+    "year_from": "1991",
+    "year_to": "1992",
+    "source_ref": 150
+  },
+  "after": {
+    "component_id": 8384,
+    "title": "Ritchey MegaBite OverDrive",
+    "description": "First tyre with a Vector Force Analysis tread; high-speed, low rolling resistance for fireroads and hardpack. 26x2.0 650g, 26x2.0 Kevlar 600g (66 tpi); WCS 26x2.0 Kevlar 530g, WCS 700x38c Kevlar 380g (127 tpi); 700x38c 450g.",
+    "year_from": "1990",
+    "year_to": "1992",
+    "source_ref": 168
+  },
+  "specsCompared": 18472,
+  "specChanges": 0,
+  "overdriveLinkedSpecs": [
+    6906,
+    6948,
+    6969,
+    6989,
+    7009,
+    19567,
+    19585,
+    19602
+  ],
+  "beforeTyres": [
+    {
+      "total": 973,
+      "linked": 238,
+      "date_flags": 10
+    }
+  ],
+  "afterTyres": [
+    {
+      "total": 973,
+      "linked": 238,
+      "date_flags": 5
+    }
+  ],
+  "cataloguesRegenerated": 86,
+  "generatedSqlChanged": false,
+  "initialRowsAffected": 1,
+  "rerunRowsAffected": 0
+}

@@ -369,9 +369,9 @@ includes affected IDs, per-brand counts, existing evidence and duplicate review.
 The 2026-11-09 whole-DB coverage table above remains historical; this is the
 current tyre-only baseline. No DB changes made during this audit.
 
-- **Current date worklist after approved Michelin corrections, 2026-11-14:**
-  10 tyre specs remain outside recorded dates: 8384 Ritchey MegaBite OverDrive
-  (5, Bianchi 1990); 6765 Clement Pistard (1, Bianchi 1983); 6767 Clement Ritmo
+- **Current date worklist after approved Michelin/OverDrive corrections, 2026-11-14:**
+  Five tyre specs remain outside recorded dates: 6765 Clement Pistard
+  (1, Bianchi 1983); 6767 Clement Ritmo
   LTX 55 (1, Raleigh 1982); 6889 Vittoria Giro del Mondo (1, Bianchi 1990);
   6899 Vittoria Pro L Slick (1, Bianchi 1987); 9247 Vittoria Corsa (1, Bianchi
   1986). Review identity and original evidence before changing dates. The 16
@@ -627,6 +627,17 @@ Review evidence and proposed actions: `/private/tmp/existing-source-review/revie
 - Catalogue gaps that would settle the rest: 1979-80 general, 1983 general, 1985 general.
 
 ## Done
+
+- **2026-11-14 Ritchey OverDrive correction applied (user approved):** re-read the
+  Bianchi 1990 cover and pp.21–22 model/tyre spread from a mirror of the existing
+  Retrobike scan; matched Signature 2, Grizzly, Peregrine, Sika and Osprey to
+  OverDrive 26x2.0. Compared the later Ritchey manufacturer tyre listing.
+  Applied 8384 year_from 1991 -> 1990, source_ref 150 -> 168; year_to 1992
+  retained. Tyre date flags 10 -> 5; coverage unchanged at 238/973. All eight
+  OverDrive links and all 18,472 bike specs unchanged. Generation across all
+  86 CSVs byte-identical; SQL rerun affected zero rows. No casing/bead/WCS
+  inference or other component changes.
+  [Review/evidence/SQL](docs/audits/ritchey-overdrive-2026-11-14.md).
 
 - **2026-11-14 Michelin corrections applied (user approved):** 9498 Hi-Lite
   Road / 6836 Hi-Lite Pro / 9499 Super Elan year_from -> 1986; 6830 BIB TS-20

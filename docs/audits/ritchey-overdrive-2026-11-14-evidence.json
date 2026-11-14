@@ -1,0 +1,16 @@
+{
+  "reviewed": "2026-11-14",
+  "status": "User-approved correction applied and verified 2026-11-14",
+  "files": [
+    {
+      "file": "bianchi-bikecatalogs.pdf",
+      "url": "https://www.bikecatalogs.com/download/2797?download=1",
+      "sha256": "111e53e8742449d4e20742ca160af747b7f8e3565f2f1f6b58944e562d1f2e00"
+    },
+    {
+      "file": "ritchey-tyres.webp",
+      "url": "https://ebykr.com/wp-content/uploads/2026/11/ebykr-ritchey-component-catalog-1991-92-p02.webp",
+      "sha256": "93b0e42ec25c09202e59750a1aaace462293544de8471896fa48c758e2a118f6"
+    }
+  ]
+}

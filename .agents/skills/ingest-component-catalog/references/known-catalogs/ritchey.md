@@ -1,5 +1,24 @@
 # Ritchey catalogs processed so far
 
+## OverDrive 1990 Bianchi fitment review — 2026-11-14 (user approved, applied)
+
+- [Review, exact evidence URLs/hashes and guarded SQL](../../../../../docs/audits/ritchey-overdrive-2026-11-14.md).
+  Applied 8384 MegaBite OverDrive year_from 1991 -> 1990 and source_ref
+  150 -> 168; retained year_to 1992 and all eight bike links. One row affected;
+  SQL rerun zero. All 18,472 bike specs unchanged; full generation across 86
+  CSVs byte-identical. Tyre date flags 10 -> 5; coverage remains 238/973.
+- Bianchi's cover explicitly prints 1990; model/specification spread PDF
+  pp.21–22 lists OverDrive 26x2.0 on Signature 2, Grizzly, Peregrine, Sika and
+  Osprey (specs 6906/6948/6969/6989/7009). Project 7's intervening 700C row
+  was excluded. Retrobike currently blocks downloads; Bikecatalogs mirror's
+  23-page PDF identifies Retrobike 1676 as its source.
+- Compared the Ebykr/Equus Ritchey 1991–92 manufacturer tyre spread: OverDrive
+  is distinct from HardDrive/Z-Max and includes 26x2.0. This was a comparison,
+  not a new catalogue ingest or an assumed identical copy of source 150.
+- The correction resolves five date flags but establishes only 1990 availability
+  of the model, not a precise introduction or the Bianchi bikes' casing/bead/WCS
+  configuration. Existing 1991/92 variant details remain from the later sources.
+
 ## Ritchey Component Catalog (1992) — retrobike.co.uk archive 1629, data_source id 149
 
 - Source: https://www.retrobike.co.uk/archive/1992-ritchey-component-catalogue.1629/download
