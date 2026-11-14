@@ -2401,7 +2401,7 @@ const COMPONENT_OVERRIDES = {
     // 2026-11-02 crankset pass.
     'shimano 600 52 42 170mm': [{ from: 1986, to: 1986, id: 1798 }], // 1986 Raleigh: FC-6207, 600EX (plain double; judgement call)
     'shimano deore 2 48 38 28t': [{ from: 1989, to: 1989, id: 1809 }], // 1989 Bianchi: FC-MT60, as the 1989 Raleigh Appalachian 'Deore II Biopace'
-    'suntour xce 4050 48 38 28t': [{ from: 1989, to: 1989, id: 2002 }], // 1989 Bianchi Forte / Volpe: CW-XE01, XCE (as their XCE-4050 derailleurs)
+    'suntour xce 4050 48 38 28t': [{ from: 1989, to: 1989, id: null }], // 1989 Bianchi Forte: unlinked 2026-11-14, as its XCE-4050 derailleurs. CW-XE00 (48x38x28T) is '90 new in the SunTour 1990 catalogue; CW-XE01 (2002) is the 1992 code; neither shown to be the 1989 crank
     'ofmega super competizione colnago signed': [{ from: 1987, to: 1987, id: 1703 }], // 1987 Colnago: Super Competizione road, 2nd version
     'shimano tourney xt 50 45 28 175mm': [{ from: 1985, to: 1985, id: 2004 }], // 1985 Raleigh: Tourney XT (2004 year_to 1980 -> 1985; judgement call)
     'sr ctc 5dxc 52x42 teeth': [{ from: 1986, to: 1986, id: 8205 }], // 1986 Miyata: SR CTC-5DXC2, Custom DX double (8205 year_to 1982 -> 1986; judgement call)

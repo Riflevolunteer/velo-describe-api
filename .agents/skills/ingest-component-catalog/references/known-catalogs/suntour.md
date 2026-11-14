@@ -1559,8 +1559,10 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
 - 1989 Bianchi Forte / Volpe "SunTour XCE-4050": front 18615 / 18719 (was 2663)
   and rear 18616 / 18720 (was 4791) are now unlinked. XE01 is the 1992 code
   and XE00 is '90 new; neither is shown to be the 1989 part. Forte crank
-  18618 -> 2002 CW-XE01 is unchanged (CW-XE00 is still held as a possible
-  duplicate of 2002).
+  18618 (was 2002 CW-XE01) was unlinked later the same day on the same reasoning
+  (`docs/audits/suntour-xce-crank-2026-11-14.sql`). CW-XE00 is still held as a
+  possible duplicate of 2002, whose VeloBase specimen is unnumbered with 50-40-28
+  rings; VeloBase dates the XCE group from 1989.
 - Generator overrides use null / 1990-scoped ranges for these values. The
   generator diff across all 86 catalogues changed only these seven specs.
   Readback was checked, and a rerun affected 0 rows.

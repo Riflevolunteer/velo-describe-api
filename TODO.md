@@ -507,9 +507,10 @@ The 2026-11-09 table above (754 / 931) is historical.
   792 / 976). User decisions: XCE-4050 front/rear x4 unlinked
   (XCE is '90 new; XE01 is the 1992 code); Nyala rear unlinked (XT00 / XT10
   undistinguished); Nyala front / brake / crank -> 11072 / 11074 / 11076.
+  Forte crank 18618 (was 2002 CW-XE01) unlinked as well, 2026-11-14
+  (`docs/audits/suntour-xce-crank-2026-11-14.sql`).
   Generator overrides already edited; diff is exactly these 7 specs. Still open:
-  Forte crank 18618 -> 2002 CW-XE01 (same XE01 question; CW-XE00 held as a
-  possible duplicate of 2002), Nyala X-Press shifter 7019 -> 6312 SL-XP10
+  Nyala X-Press shifter 7019 -> 6312 SL-XP10
   versus p.17 SL-PP00, and 7513 group: the "BMX" group 156 owned by Campagnolo
   holds 18 Shimano 1981 BMX rows across categories, so fix it as its own task.
 - **Date flags: 67 linked specs outside component dates, on 29 components.**
