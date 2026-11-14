@@ -477,3 +477,11 @@
 - Applied transactional idempotent SQL and deleted-row backup:
   `/private/tmp/gipiemme-azzurra-pedal-merge-2026-11-09.sql`. One survivor updated, one duplicate deleted,
   zero bike-spec rows repointed. Other Gipiemme pedal records unchanged.
+
+- 2026-11-14 (rear derailleur date audit, user decision): 4264 Gipiemme Special
+  rear year_to 1985 -> 1987 from the 1987 Bianchi Super Leggera (hand-repaired cell
+  "C Record/B Special Gipiemme derailleur"; its front already links 2370, 1970-87).
+  The c. 1986-87 catalogue (270) shows no Special derailleur; its absence there was
+  not treated as an end date. VeloBase page: inline parallelogram, inner plate
+  "Gipiemme - Licence Simplex", 219 g. SQL:
+  `docs/audits/rear-derailleur-dates-2026-11-14.sql`.

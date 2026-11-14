@@ -709,3 +709,9 @@
 - Bike links +14 (1986-89 Peugeot): T x11, GT x3 (PH 513 / P 513 Vanoise triples). Peugeot prints GT only on
   triples and T / TSP on doubles, so the plain "SX 640", "white SX 640" and "SX 640 Triathlon, white" doubles
   went to the T (inference). Overrides in Rear Derailleurs, 1986-89.
+
+- 2026-11-14 (rear derailleur date audit, user approved): 4561 Alpha T
+  year_from 1989 -> 1987. The 1987 Peugeot (FR) catalogue prints "Simplex Alpha
+  T/P" on Bretagne / P 18SA W / Touraine / P 8SA W, which is the row's own T/P
+  10071 ref. source_ref stays 59; the description notes the 1987 fitment.
+  SQL: `docs/audits/rear-derailleur-dates-2026-11-14.sql`.

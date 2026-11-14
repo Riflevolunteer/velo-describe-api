@@ -519,8 +519,12 @@ The 2026-11-09 table above (754 / 931) is historical.
   No override found for 4561 Simplex Alpha T (1989-95) from 1987 Peugeot
   "Alpha T/P" x4 (15509/15528/15547/15566), 4264 Gipiemme Special from 1987 Bianchi
   Super Leggera (1190), 4712 Mountech GTL v2 (1985) from 1987 Raleigh Maverick
-  (8874) and 4770 SVX GT (1985) from 1986 Raleigh Technium 460 (8342): check
-  these four matcher links first. Linked components missing dates: 4649 SLJ
+  (8874) and 4770 SVX GT (1985) from 1986 Raleigh Technium 460 (8342).
+  **Resolved 2026-11-14** (`docs/audits/rear-derailleur-dates-2026-11-14.sql`,
+  user approved): 4561 year_from 1989 -> 1987 (exact T/P ref on 1987 Peugeot);
+  4264 year_to 1985 -> 1987 (1987 Bianchi); 8874 Mountech unlinked (RD-4900 /
+  RD-5500 / RD-5500 v2 fit, as the Falcon call); 8342 SVX unlinked (only SVX GT
+  RD-7400 exists, bike prints no GT). Rear Derailleur now 790 / 976. Linked components missing dates: 4649 SLJ
   SX660 (2 specs), 4277 Duopar Eco v1 (1).
 - **Duplicate baseline:** 72 same-name groups (41 configuration, 78 generation
   members), near/paren scans empty. One cosmetic flag: 4501 DA-100 / RD-7100

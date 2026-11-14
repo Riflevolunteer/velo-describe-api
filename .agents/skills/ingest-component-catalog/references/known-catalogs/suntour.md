@@ -1564,3 +1564,17 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
 - Generator overrides use null / 1990-scoped ranges for these values. The
   generator diff across all 86 catalogues changed only these seven specs.
   Readback was checked, and a rerun affected 0 rows.
+
+### Rear derailleur date audit, 2026-11-14 (user approved)
+
+- 4712 "Mountech GTL v2": VeloBase model field RD-5500 (more rigid double pulley
+  cage, standard guide pulley; specimen date code BK, c. 1985). It is a revision of
+  4711 RD-5500 MounTech (GTL), kept as its own row. 1987 Raleigh Maverick 18 Pro
+  "Suntour Mountech" (8874), previously linked to 4712 by the matcher's
+  title-shape hit, is now unlinked with a null override for 1987. RD-4900 7785,
+  4711 and 4712 all fit, the same call as the 1986 Falcon "MT Tech".
+- 4770 SVX GT: VeloBase model RD-7400, outer plate "SunTour SVX", 1985. No held
+  SunTour catalogue lists SVX. 1986 Raleigh Technium 460 "Suntour SVX" (8342) is
+  unlinked with a null override for 1986 (no GT printed; short-cage existence
+  unknown). The front 8341 -> 2653 FD-4300 SVX is unchanged.
+- SQL: `docs/audits/rear-derailleur-dates-2026-11-14.sql`.
