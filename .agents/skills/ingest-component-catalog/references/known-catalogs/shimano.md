@@ -2336,3 +2336,12 @@
   placed in SX by its MX10 code. 9625 BL-M600-MX -> 327 beside 9626; 7521 SL-2S21
   ungrouped like 7173 SG-2S10. Kept apart from 327, the 1998 DX revival
   (continuity not shown). SQL: `docs/audits/shimano-bmx-groups-2026-11-14.sql`.
+
+
+## Titlist rear derailleur renumbering merges — 2026-11-15 (user approved)
+
+- Supersedes the earlier convention of keeping D600 / DB-200 and D610 / DB-210 separately by code. Visually compared September 1972 p.2, June 1974 p.7 and December 1974 (1975 model year) p.14: matching drawings, alloy bodies, steel cages, 280g / 28T standard and 310g / 34T GS. VeloBase specimen photos agree; the two later catalogue rows had no separate specimen evidence.
+- Kept 4437, retitled from "Shimano D600, Titlist" to "Shimano D600 / DB-200, Titlist"; deleted 7100 "Shimano DB-200, Titlist" (source_id `2051eafc-bc3e-11f1-a2df-02fea3763e8d`). Kept specimen source_id `63220FCF-2A4C-4E59-8E7C-AFDCA097103D`.
+- Kept 4438, retitled from "Shimano D610, Titlist G.S." to "Shimano D610 / DB-210, Titlist GS"; deleted 7101 "Shimano DB-210, Titlist GS" (source_id `2051ebce-bc3e-11f1-a2df-02fea3763e8d`). Kept specimen source_id `1F1B4D31-EE12-43DB-9785-2453A431EB15`.
+- Rebuilt search_text; descriptions preserve D601 / D611 without hanger adaptor and add 14T front difference from the December 1974 catalogue. source_ref 65 -> 24. year_to 1974 -> 1976 preserves the combined existing ranges. Both remain 1970-1976: 1970 was a VeloBase decade bucket and 1976 was guessed in the original import; this merge does not establish either production bound. The Spring 1978 old-design parts sheet explicitly calls the item discontinued with replacement parts still available, so it does not extend complete-unit availability.
+- No bike links or generator overrides on any of the four IDs. Later, lighter DB-600 (4440) / DB-610 (7428) kept separate. Applied 2 updates + 2 deletes; readback correct, idempotency rerun 0 affected. SQL and original row values: `docs/audits/shimano-titlist-merges-2026-11-15.sql`. Review scans and specimen HTML/photos: `/private/tmp/titlist-review/`.
