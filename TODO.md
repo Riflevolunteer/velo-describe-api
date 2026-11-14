@@ -237,6 +237,14 @@ until it is applied and validated.
 
 ## Open: component data follow-ups
 
+- **Group ownership conflicts (found 2026-11-14 after the BMX group fix):** seven rows
+  sit in a group owned by another brand. SunTour XCM rows 8003 CW-XM01, 8022
+  BL-XM01-N, 8036 CT-XM01 and 8037 BA-XM00 are in 182 "XCM" (owned by SR). SunTour
+  XCE rows 8021 BL-XE01 and 8035 CT-XE01 are in 125 "XCE" (owned by Dia-Compe).
+  4056 Zeus Pista pedals are in 250 "Pista" (owned by Stronglight). Check whether
+  each group should belong to SunTour / Zeus or the rows should move, before any
+  change.
+
 - Shimano BMX group ownership (found 2026-11-06): 18 older Shimano rows still use Campagnolo-owned group 156 "BMX". Review the remaining legacy assignments against Shimano DX (BMX) group 327.
 
 - **Component dates audit, 2026-11-09:** 486 linked specs on 200 components fall outside the recorded component date range; 186 linked specs on 47 components have an incomplete date range. These are review candidates, not proven wrong identifications: distinguish catalogue attestation dates, later bike fitment, reused names and actual generation mismatches before changing dates or links. Full read-only snapshots: `/private/tmp/component-todo-audit-era-mismatches.tsv` and `/private/tmp/component-todo-audit-missing-dates.tsv`. The original narrow follow-up list now covers 12 specs on six parts: 3141 Tange Falcon (5), 3388 Normandy Luxe Competition (2), 1398 Sedis Gold (2), 6899 Vittoria Pro L Slick (1), 1365 Everest Serie Special Oro (1), 9126 Gipiemme Crono Sprint (1). 25 descriptions currently reach the 255-character limit (previously 35); inspect before assuming truncation.
@@ -516,8 +524,13 @@ The 2026-11-09 table above (754 / 931) is historical.
   page; 6312 SL-XP10 is the 1992 code), 2026-11-14
   (`docs/audits/suntour-x-press-pp10-2026-11-14.sql`).
   Generator overrides already edited; diff is exactly these 7 specs. Still open:
-  7513 group: the "BMX" group 156 owned by Campagnolo
-  holds 18 Shimano 1981 BMX rows across categories, so fix it as its own task.
+  Group 156 fixed 2026-11-14 (`docs/audits/shimano-bmx-groups-2026-11-14.sql`,
+  user approved): 1981 Shimano BMX rows moved to new Shimano groups 331
+  Shimano-DX (BMX, 1981) x9 and 332 Shimano-SX (BMX, 1981) x7 (7540 BL-MX10
+  "Shimano-BMX" in SX by its MX10 code); 9625 BL-M600-MX -> 327 DX (BMX); 7521
+  SL-2S21 ungrouped like its SG-2S10 hub. 156 keeps its five Campagnolo rows.
+  Seven other group-ownership conflicts remain DB-wide (see Open: component
+  data follow-ups).
 - **Date flags: 67 linked specs outside component dates, on 29 components.**
   Nearly all come from existing year-ranged or commented judgement overrides
   (e.g. 4583 Simplex Prestige x8, 4622 SX440 GT x6, 4645 Criterium x5, 4096

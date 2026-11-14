@@ -2327,3 +2327,12 @@
   variant, decided 2026-10-28). The duplicate classifier now honours that decision
   even though 7427 has become the survivor through its 1979 Miyata 1200 link. SQL:
   `docs/audits/dura-ace-black-rd-group-2026-11-14.sql`.
+
+- 2026-11-14 BMX group review (user approved), completing the follow-up left by
+  the 1998 pass. The 1981 BMX rows left Campagnolo-owned group 156 for new Shimano
+  groups 331 "Shimano-DX (BMX, 1981)" (7514, 7519, 7526, 7527, 7528, 7530, 7531,
+  7539, 7541; 1981-1988) and 332 "Shimano-SX (BMX, 1981)" (7513, 7515, 7520,
+  7529, 7532, 7533, 7540; 1981). 7540 BL-MX10 is titled "Shimano-BMX" and was
+  placed in SX by its MX10 code. 9625 BL-M600-MX -> 327 beside 9626; 7521 SL-2S21
+  ungrouped like 7173 SG-2S10. Kept apart from 327, the 1998 DX revival
+  (continuity not shown). SQL: `docs/audits/shimano-bmx-groups-2026-11-14.sql`.
