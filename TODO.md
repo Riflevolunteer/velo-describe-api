@@ -529,8 +529,11 @@ The 2026-11-09 table above (754 / 931) is historical.
 - **Duplicate baseline:** 72 same-name groups (41 configuration, 78 generation
   members), near/paren scans empty. One cosmetic flag: 4501 DA-100 / RD-7100
   Dura-Ace (Black) vs 7427 (also in different groups, 137 "Dura-Ace 7100" vs 50
-  "Dura-Ace"). Precedent (Cyclone Black Series) is to register as a reviewed
-  variant rather than merge; align the group either way.
+  "Dura-Ace"). **Resolved 2026-11-14 (user approved):** already kept as a
+  variant on 2026-10-28; the flag returned because the 1979 Miyata link made
+  7427 the survivor. `duplicate-classify.js` now applies a two-row pair's entry
+  whichever row survives (test added); DB-wide merge candidates 0. 4501 moved to
+  group 50 (`docs/audits/dura-ace-black-rd-group-2026-11-14.sql`).
 - **Triage of the 181 unlinked:** 107 brand-only (75 bare "Simplex"), 15 none /
   fixed gear, 51 actionable, 4 unbranded, 2 generic, 2 either/or. New candidates
   not listed below: 1979 Miyata 310 / 200 "SUN TOUR Seven" (20424 / 20445; 4755

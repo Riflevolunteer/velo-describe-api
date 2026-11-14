@@ -188,6 +188,18 @@ test('reviewed cosmetic rows report as kept variants, not merge candidates', () 
   assert.ok(!MERGE_CANDIDATE.has('variant'))
 })
 
+test('a reviewed pair stays a variant when the registered row becomes the survivor', () => {
+  const silver = row('Shimano DA-100 / RD-7100, Dura-Ace', { component_id: 7427, source_ref: 66, used: 1 })
+  const black = row('Shimano DA-100 / RD-7100, Dura-Ace (Black)', { component_id: 4501, source_ref: 396 })
+  const [group] = buildGroups([silver, black])
+  assert.strictEqual(group.survivor, silver)
+  assert.strictEqual(group.others[0].relation, 'variant')
+  // In a larger group the survivor's entry does not cover unreviewed rows.
+  const other = row('Shimano DA-100 / RD-7100, Dura-Ace (gold)', { component_id: 99998 })
+  const byId = Object.fromEntries(buildGroups([silver, black, other])[0].others.map(o => [o.row.component_id, o.relation]))
+  assert.strictEqual(byId[99998], 'cosmetic')
+})
+
 test('a reviewed exact-title pair reports as a kept variant', () => {
   const later = row('Simplex double (both levers on right)', { component_id: 6200, year_from: '1955', year_to: '1956' })
   const earlier = row('Simplex double (both levers on right)', { component_id: 6201, year_from: '1950', year_to: '1955' })

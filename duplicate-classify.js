@@ -549,7 +549,12 @@ function buildGroups(rows) {
     const others = members.filter(r => r !== survivor)
       .map(row => {
         const relation = relate(row, survivor)
-        const kept = (relation === 'cosmetic' || relation === 'duplicate' || relation === 'review') && REVIEWED_VARIANTS.has(row.component_id)
+        // A two-row group's entry describes the pair, so it still applies when a
+        // new bike link turns the registered row into the survivor (7427 / 4501,
+        // 2026-11-14). In larger groups only the registered row is kept.
+        const reviewed = REVIEWED_VARIANTS.has(row.component_id) ||
+          (members.length === 2 && REVIEWED_VARIANTS.has(survivor.component_id))
+        const kept = (relation === 'cosmetic' || relation === 'duplicate' || relation === 'review') && reviewed
         return { row, relation: kept ? 'variant' : relation }
       })
       .sort((a, b) => a.row.component_id - b.row.component_id)

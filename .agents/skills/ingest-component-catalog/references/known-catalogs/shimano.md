@@ -2320,3 +2320,10 @@
 - Visually checked the December 1974 catalogue, printed p.25: Model BB-210 Auto Adjust side-pull caliper. https://www.disraeligears.co.uk/site/a_complete_line_of_shimano_1975_page_25.html
 - Visually checked the May 1978 catalogue, printed p.21: BB-300 side-pull and BB-400 centre-pull, both Shimano-600; p.37: Tourney BB-240 / BB-230 side-pulls, Shimano-500 BB-500 centre-pull and Tourney BB-120 centre-pull; p.38: Tourney BB-100 centre-pull. https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_may_1978.html
 - No DB changes, retitles, merges, inserts or year changes. Existing qualifications on inferred later BR-code equivalents (especially 1014) remain; this review resolves the category/prefix question only. TODO moved to Done.
+
+- 2026-11-14 (rear derailleur audit, user approved): 4501 DA-100 / RD-7100
+  Dura-Ace (Black) moved from group 137 "Dura-Ace 7100" to 50 "Dura-Ace", beside
+  silver 7427 and the other Black Series rows. The pair stays separate (finish
+  variant, decided 2026-10-28). The duplicate classifier now honours that decision
+  even though 7427 has become the survivor through its 1979 Miyata 1200 link. SQL:
+  `docs/audits/dura-ace-black-rd-group-2026-11-14.sql`.
