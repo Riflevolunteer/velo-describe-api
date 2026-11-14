@@ -1664,3 +1664,39 @@ Weinmann 1129 / 1130 570.
   Mavic Gold rims (no separate rows); Hutchinson Milano-San Remo (10071 spans 1974); Huret, Simplex
   Criterium / Prestige and Campagnolo Record / Nuovo Record versions; Wolber Pro / Corsa / Strada /
   Renforce; Maillard Atom (7233 / 7234 from 1978; "Atom Standard" name only).
+
+## Brügelmann Radsport-Shop catalogue — 1973 (rennrad-geschichten.de), data_source 399, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1973)", country DE. Source: same page
+  as the 1981 entry, "Brügelmann 1973.pdf" (80 pp, all upright). Cover and p. 5 "1973"; p. 3 "für
+  1973 die festen Zusagen"; pp. 17-18 "Ende Februar 1973 lieferbar"; p. 64 "Record '73"; some
+  1972 references (p. 13 "lieferbar ab März/April 72", p. 80 letter).
+- Components: pp. 5, 8-9, 12-13, 17-18, 22-25, 28-30, 33, 35-37, 39-43, 68 (wheel grids only).
+- Zeus: no Zeus 2000 brake or lever on the full brake (p. 8) and lever (p. 9) pages; Zeus 2000
+  5- and 6-speed freewheels are "NEU" (p. 42); other Zeus parts under "Weltmeister" names. MAFAC
+  2000 brake "NEU, Liefertermin und Preis bei Katalogdruck noch unbestimmt" (p. 8). Other "NEU":
+  Mavic Extra Golden rim ("NEU 1972/73"), alloy wire-on rim, chromed Sedis chains, Pivo Profi bar,
+  Pivo stems "NEUES MODELL mit Inbus-Innenklemme".
+- Bars (p. 22): Pivo Profi 3382 (25 clamp, NEU) and 3382/cpl bar + stem; 3ttt Coppi 3384/C and Motta
+  3384/M (420); Cinelli Merckx, Poulidor, Pista, Sprint; 3ttt Anquetil, Record SL.
+- Changed (source_ref -> this source):
+  - year_from -> 1973 (27 rows, all were 1974-75): Clement 6733 70 / 6745 Criterium; Wolber 6919
+    Junior / 9026 Special Course / 9029 Competition / 9021 Route Renforce Noir / 6914 Cross Super
+    ("Stollen-Super"); 9085 Lyotard 45; 9329 D'Alessandro Silk Imperforabile and 11135-11139;
+    Canetti 9344 Tour de France / 9347 Paris-Tours / 9694 Criterium / 9697 Sport / 9349 100;
+    Continental 11140-11143; 11147 Dourdoigne GP des Nations; 3ttt 11166 Coppi / 11167 Motta; 11169
+    Pivo Professional (bar) (was 1975; "Pivo Profi", NEU).
+  - year_to -> 1973: 5317 Brooks B17 Competition (1970).
+  - **year_from moved later, 1970 -> 1973:** 1177 Zeus 2000 brake and 502 Zeus 2000 brake lever
+    (old value 1970, a velobase bucket; 502 last set by Zeus-104, 1980). Absent from Zeus-101
+    (1970) and from the full Brügelmann 1973 brake / lever pages; Brügelmann 1974 marks the lever
+    NEU and the brake "price not yet fixed"; earliest attestation is the 1973 Zeus bike catalogue
+    (bike_specs `1973_zeus_spec.csv`, Z 77 and Z 59 brakeset "Zeus 2000", both linked to 1177; no
+    COMPONENT_OVERRIDES entries). Not moved to 1974 because of that 1973 attestation.
+- No inserts.
+- Not applied: Pivo Professional stem 6646 (1970-1978; "NEUES MODELL" in 1973 suggests a later
+  start, but the stem name may predate the Allen-clamp model); Mavic Extra Golden / Légère /
+  Montlhéry / Sport rims (names do not map cleanly to 9104 / 5091 / 5109); Huret Jubilee and
+  Svelto, Simplex Criterium / Prestige and Campagnolo Record / Valentino / Gran Turismo versions;
+  Canetti Cross (vs 9350 Cross 160); Wolber Pro / Corsa / Strada; MAFAC 2000 / Racer brakes
+  (velobase 1970 rows, version not identifiable).
