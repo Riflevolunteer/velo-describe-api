@@ -237,13 +237,6 @@ until it is applied and validated.
 
 ## Open: component data follow-ups
 
-- **Group ownership conflicts (found 2026-11-14 after the BMX group fix):** seven rows
-  sit in a group owned by another brand. SunTour XCM rows 8003 CW-XM01, 8022
-  BL-XM01-N, 8036 CT-XM01 and 8037 BA-XM00 are in 182 "XCM" (owned by SR). SunTour
-  XCE rows 8021 BL-XE01 and 8035 CT-XE01 are in 125 "XCE" (owned by Dia-Compe).
-  4056 Zeus Pista pedals are in 250 "Pista" (owned by Stronglight). Check whether
-  each group should belong to SunTour / Zeus or the rows should move, before any
-  change.
 
 - Shimano BMX group ownership (found 2026-11-06): 18 older Shimano rows still use Campagnolo-owned group 156 "BMX". Review the remaining legacy assignments against Shimano DX (BMX) group 327.
 
@@ -529,8 +522,10 @@ The 2026-11-09 table above (754 / 931) is historical.
   Shimano-DX (BMX, 1981) x9 and 332 Shimano-SX (BMX, 1981) x7 (7540 BL-MX10
   "Shimano-BMX" in SX by its MX10 code); 9625 BL-M600-MX -> 327 DX (BMX); 7521
   SL-2S21 ungrouped like its SG-2S10 hub. 156 keeps its five Campagnolo rows.
-  Seven other group-ownership conflicts remain DB-wide (see Open: component
-  data follow-ups).
+  The seven other DB-wide group-ownership conflicts were fixed the same day
+  (`docs/audits/group-ownership-2026-11-14.sql`): SunTour XCE 8021 / 8035 -> 155,
+  XCM 8003 / 8022 / 8036 / 8037 -> 240, Zeus Pista pedals 4056 -> 161. DB-wide
+  brand / group-owner mismatches: 0.
 - **Date flags: 67 linked specs outside component dates, on 29 components.**
   Nearly all come from existing year-ranged or commented judgement overrides
   (e.g. 4583 Simplex Prestige x8, 4622 SX440 GT x6, 4645 Criterium x5, 4096

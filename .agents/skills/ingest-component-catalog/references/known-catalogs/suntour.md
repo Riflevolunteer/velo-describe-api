@@ -1580,3 +1580,9 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   unlinked with a null override for 1986 (no GT printed; short-cage existence
   unknown). The front 8341 -> 2653 FD-4300 SVX is unchanged.
 - SQL: `docs/audits/rear-derailleur-dates-2026-11-14.sql`.
+
+- 2026-11-14 group ownership (user approved): the 1992 Dia-Compe-made XCE parts
+  8021 BL-XE01 / 8035 CT-XE01 moved from Dia-Compe-owned group 125 to SunTour 155
+  "XCE". XCM 8003 CW-XM01 / 8022 BL-XM01 / 8036 CT-XM01 / 8037 BA-XM00 moved from
+  SR-owned 182 to SunTour 240 "XCM". The original groups keep their own brand's rows
+  (703 Dia-Compe XCE, 1770 Sakae XCM). SQL: `docs/audits/group-ownership-2026-11-14.sql`.
