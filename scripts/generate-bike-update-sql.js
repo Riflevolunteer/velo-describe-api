@@ -3056,13 +3056,14 @@ const COMPONENT_OVERRIDES = {
     "campagnolo croce d'aune": [{ from: 1988, to: 1988, id: 5970 }], // 1988 Colnago Masterpiù Croce d'Aune: Doppler 0271
     'campagnolo athena synchro': [{ from: 1989, to: 1989, id: 5971 }], // 1989 Peugeot (FR) Dolomites down-tube Synchro levers
     'suntour accushift plus command shifter': [{ from: 1990, to: 1990, id: 6268 }], // SunTour Command (6 & 7 speed)
-    // SL-XP10 X-Press (XC-Pro / XC-Comp) on Project 7 / Grizzly (open: the 1990 catalogue
-    // lists SL-PP10 6316 for XC-Pro). Nyala (XCT) / Osprey (X-1) -> 6305 SL-PP00, the
-    // 1990 p.15 X-Press for X-1 / XCE / XCM / XCT (2026-11-14, user approved). One key: a
-    // second, unscoped entry further up this object was silently overridden by this one.
+    // 1990 X-Press by group (SunTour 1990 catalogue, 2026-11-14, user approved): Project 7 /
+    // Grizzly (XC-Pro) -> 6316 SL-PP10, the p.10 XC-Pro X-Press (stock 33119571, as p.12);
+    // the earlier matcher link was 6312 SL-XP10, a 1992 code. Nyala (XCT) / Osprey (X-1) ->
+    // 6305 SL-PP00, the p.15 X-Press for X-1 / XCE / XCM / XCT. One key: a second, unscoped
+    // entry further up this object was silently overridden by this one.
     'suntour accushift plus x press': [
-      { bike: 'Project 7', from: 1990, to: 1990, id: 6312 },
-      { bike: 'Grizzly', from: 1990, to: 1990, id: 6312 },
+      { bike: 'Project 7', from: 1990, to: 1990, id: 6316 },
+      { bike: 'Grizzly', from: 1990, to: 1990, id: 6316 },
       { bike: 'Nyala', from: 1990, to: 1990, id: 6305 },
       { bike: 'Osprey', from: 1990, to: 1990, id: 6305 },
     ],
