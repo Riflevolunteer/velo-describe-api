@@ -1,4 +1,5 @@
--- APPLIED 2026-11-14, user approved. See ritchey-overdrive-2026-11-14.md.
+-- APPLIED 2026-11-14, user approved. Evidence/pages/validation:
+-- .agents/skills/ingest-component-catalog/references/known-catalogs/ritchey.md
 -- 1990 Bianchi USA catalogue: dated cover, PDF pp.21-22 specification spread.
 -- Signature 2 / Grizzly / Peregrine / Sika / Osprey explicitly specify
 -- Ritchey Megabite Overdrive 26x2.0; existing source 168.

@@ -2,9 +2,8 @@
 
 ## Bike-catalogue date-conflict review — 2026-11-14 (user approved, applied)
 
-- [Evidence, source image URLs/hashes, before values and SQL](../../../../../docs/audits/michelin-2026-11-14.md)
-  are recorded in the repository audit. Applied five component UPDATEs and one
-  spec UPDATE; rerun affected zero rows.
+- [Applied SQL with previous values](../../../../../docs/audits/michelin-2026-11-14.sql):
+  five component UPDATEs and one spec UPDATE; rerun affected zero rows.
 - Applied: 9498 Hi-Lite Road / 6836 Hi-Lite Pro / 9499 Super Elan year_from
   1988 -> 1986; 6830 BIB TS-20 year_to 1985 -> 1989; 6826 Select year_from
   1987 -> 1986, inferred from the existing catalogue attribution. Original
@@ -21,10 +20,26 @@
   text. All 86 CSVs generated before/after: only that spec text changed; no
   component mappings changed. Date updates leave generation unchanged. All
   18,472 live specs compared: only 15681.value_text changed. Tyre flags 36 -> 10,
-  coverage unchanged at 238/973. source_ref: 9498 -> 310, 6836 -> 312,
-  9499 -> 309, 6830 -> 320, 6826 -> 324; earlier evidence retained in the report.
+  coverage unchanged at 238/973. source_ref changes: 9498 262 -> 310,
+  6836 262 -> 312, 9499 262 -> 309, 6830 259 -> 320, 6826 1 -> 324.
 - The existing 1988 700C-specific Hi-Lite Road casing/weight details are retained
   with their size scope; no assumption that these also describe its 27-inch tyre.
+- Re-read source pages (2026-11-14): [Peugeot 1986](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1986.html),
+  French table images 6/7 (PH11 Super Elan; PH501/PH513/PGN10M and its GOLD
+  variant BIB TS20; Michelin maker in footnote), US table scans labelled
+  (18)/(19) (Mont Cenis Pro, Triathlon/Ventoux Road 700C, Tourmalet Road 27in).
+  [Peugeot FR 1987](https://www.bikeboompeugeot.com/Brochures%20France/Peugeot%201987%20France%20Brochure/Peugeot%201987%20France%20Brochures.htm),
+  Specifications 1/2 confirm all 11 flagged Road rows and both Aubisque Super
+  Elan rows; the archive explains that the French editions are undated.
+- [US 1987 Mont Cenis p.5](https://www.bikeboompeugeot.com/Brochures%20USA/Peugeot%201987%20USA%20Brochure/Peugeot%201987%20USA%20Brochure%20Page%205.jpg)
+  resolves the 70C typo; [Triathlon p.6](https://www.bikeboompeugeot.com/Brochures%20USA/Peugeot%201987%20USA%20Brochure/Peugeot%201987%20USA%20Brochure%20Page%206.jpg)
+  confirms Pro 700x19. [Peugeot NL 1989](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1989.html),
+  printed p.30 (table image 29), explicitly lists Michelin BIB TS20 for Cosmic.
+  [Bianchi DE sheet](https://labibleduvelocataloguesbianchi.blogspot.com/p/bianchi-1986.html),
+  `1986 bianchi.jpg`, confirms Rekord 920 Select 20-622; dating remains inferred.
+  Later manufacturer casing/weight information from sources 184/259/262 was
+  retained from the existing records/notes; those complete catalogues were not
+  re-read in this focused review. Raw scans/logs remain temporary working files.
 
 ## Michelin cycle tyres: Cycle Tyres leaflet (June 1983), trade price list (1 September 1979) and bicycle / moped / motorcycle tyres booklet, Edition 3 (c. 1980) — IceniCAM, data_source id 184
 

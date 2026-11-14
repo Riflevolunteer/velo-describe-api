@@ -1,14 +1,16 @@
--- APPLIED 2026-11-14 with user approval. Evidence: michelin-2026-11-14.md.
+-- APPLIED 2026-11-14 with user approval. Evidence/pages/validation:
+-- .agents/skills/ingest-component-catalog/references/known-catalogs/michelin.md
 -- Five component corrections, retaining all existing bike/component links.
 -- Dates are catalogue-fitment bounds, not manufacturing start/end dates.
 -- French Peugeot 1986/87 and Bianchi DE 1986 use existing catalogue
 -- attributions; their dates are not printed on the inspected pages.
--- Expected first run: five component rows and one bike_spec row affected.
 -- Verified first run: five component rows and one bike_spec row affected.
 -- Verified re-run: zero rows affected. Catalogue dating caveats retained.
 
 -- 1986 Peugeot US table (source 310), Triathlon/Ventoux/Tourmalet.
 -- Retain the 1988 700C casing/weight data and add the explicitly named 27in size.
+-- Previous description (for restoration):
+-- Michelin Hi-Lite Road, France. Clincher with triple-ply casing, diamond tread with centre band, 20 x 622 (220g) or 23 x 622 (235g)
 UPDATE component_detail
 SET year_from = '1986',
     description = 'Road clincher in 700C and 27 x 1-1/8 in. 700C versions: triple-ply casing, diamond tread with centre band, 20-622 (220 g) or 23-622 (235 g).',
@@ -17,6 +19,7 @@ WHERE component_id = 9498 AND title = 'Michelin Hi-Lite Road'
   AND year_from = '1988' AND year_to = '1988' AND source_ref = 262;
 
 -- 1986 Peugeot US Mont Cenis (source 310); 1987 US Triathlon confirms 700x19.
+-- Previous description: Michelin Hi-Lite Pro, France
 UPDATE component_detail
 SET year_from = '1986',
     description = 'Road clincher, offered in 700 x 19C and 700 x 20C.',
@@ -39,6 +42,7 @@ WHERE component_id = 6830 AND title = 'Michelin BIB TS-20'
 
 -- Provisional year: Rekord 920 German sheet is attributed to 1986, undated.
 -- Select 20-622 clincher identification is explicit; the catalogue year is inferred.
+-- Previous description: Michelin Select, France
 UPDATE component_detail
 SET year_from = '1986',
     description = 'Road clincher, offered in 20-622.',

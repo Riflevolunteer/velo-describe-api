@@ -66,7 +66,8 @@ valid result. Fix wrong existing links before adding speculative new ones.
 6. **Prepare and review the change set.** Follow the component/bike ingest skill
    for that job. Produce guarded, idempotent SQL with expected affected counts,
    source references, page evidence and unresolved calls. Capture the affected
-   rows' old values and a restoration plan before overwrites/merges. Check field
+   rows' old values and a restoration plan in SQL comments or catalogue notes
+   before overwrites/merges. Check field
    lengths, especially the 255-character descriptions. Present new rows,
    corrections, date moves, merges and links for review; obtain approval before
    applying the reviewed DB changes under the existing ingest workflow.
@@ -105,11 +106,14 @@ valid result. Fix wrong existing links before adding speculative new ones.
     known-catalogue notes (cross-catalog notes for multi-brand work), generator
     decisions and this TODO. Record added/corrected/merged rows, links added/fixed,
     unresolved cases with their next evidence needed, validation results and
-    dated coverage counts. Commit relevant code/documentation. Use durable
-    storage for source scans, approved SQL and before/after evidence; `/private/tmp`
-    paths are working artifacts, not a permanent audit archive. Feed the remaining
-    evidence gaps back into step 1. Complete the TODO housekeeping below in the
-    same task, before reporting the work finished.
+    dated coverage counts. For routine changes, keep the evidence/page URLs,
+    old/new values and a short validation result in existing catalogue notes,
+    plus one applied SQL file (currently `docs/audits/`). Update this TODO with
+    status and remaining actions. Downloads, snapshots, diffs and logs stay in
+    the temporary scratchpad; do not create separate per-task reports, manifests
+    or before/after JSON files unless explicitly requested or needed by maintained
+    tooling. Commit relevant code/documentation and feed remaining evidence gaps
+    back into step 1. Complete TODO housekeeping before reporting work finished.
 
 ### TODO housekeeping (part of every task)
 
@@ -166,9 +170,6 @@ until it is applied and validated.
 
 ### Tooling to make this repeatable (not yet implemented)
 
-- [ ] **Durable per-job evidence archive:** define one location and naming
-  convention for scans, source/page inventory, approved SQL, old row values,
-  mapping diffs and outcomes. Keep credentials out of artifacts.
 - [ ] **One read-only quality report:** dangling component/source/group/brand
   references, duplicate bike specs, category/group ownership conflicts, missing
   provenance/dates and linked-bike date conflicts. Separate errors from review
@@ -364,19 +365,22 @@ The three plausible Peugeot Spidel links remain unlinked.
 ### Tyres (step 1 audit, 2026-11-14)
 
 **Current: 238 / 973 linked (24.5%); 735 unlinked; 601 tyre components.**
-Read-only snapshot 2026-11-14 17:56 UTC. [Full audit and prioritised worklist](docs/audits/tyres-2026-11-14.md)
-includes affected IDs, per-brand counts, existing evidence and duplicate review.
+Baseline audited 2026-11-14 17:56 UTC; Michelin and OverDrive corrections applied
+later that day. Current work and remaining IDs are maintained below; evidence
+and validation live in the relevant existing catalogue notes.
 The 2026-11-09 whole-DB coverage table above remains historical; this is the
 current tyre-only baseline. No DB changes made during this audit.
 
 - **Current date worklist after approved Michelin/OverDrive corrections, 2026-11-14:**
   Five tyre specs remain outside recorded dates: 6765 Clement Pistard
-  (1, Bianchi 1983); 6767 Clement Ritmo
-  LTX 55 (1, Raleigh 1982); 6889 Vittoria Giro del Mondo (1, Bianchi 1990);
-  6899 Vittoria Pro L Slick (1, Bianchi 1987); 9247 Vittoria Corsa (1, Bianchi
-  1986). Review identity and original evidence before changing dates. The 16
-  linked specs with incomplete component dates also remain open. Michelin's
-  26 flags are resolved; [applied evidence/SQL and validation](docs/audits/michelin-2026-11-14.md).
+  (spec 1023, Bianchi 1983); 6767 Clement Ritmo LTX 55 (4536, Raleigh 1982);
+  6889 Vittoria Giro del Mondo (7070, Bianchi 1990); 6899 Vittoria Pro L Slick
+  (1138, Bianchi 1987); 9247 Vittoria Corsa (18313, Bianchi 1986). Review identity
+  and original evidence before changing dates. The 16 linked specs with incomplete
+  component dates also remain open: 6743 Clement Colnago (7), 6812 Peugeot Route
+  by Hutchinson (6), 6837 Michelin Hi-Lite Supercomp H.D. (1), 6846 Peugeot Challenge
+  (1), 6886 Vittoria Flash M23 (1). Michelin's 26 flags are resolved; see the
+  [Michelin notes](.agents/skills/ingest-component-catalog/references/known-catalogs/michelin.md).
   Select's 1986 date and the French catalogue dates retain their inference caveats.
 - **Then: review new-row link candidate.** 1973 Zeus Z 59 spec 59,
   "D'Alessandro Mondiale Tubulars", now has a candidate: 11136 Mondiale,
@@ -384,13 +388,19 @@ current tyre-only baseline. No DB changes made during this audit.
   preparing SQL. It is no longer a missing-row source hunt.
 - **Other held-evidence questions:** 1979 Miyata 1200 spec 20283 "NATIONAL
   Panaracer tubular 230" versus 9097 Cycle Pro National tubular (branding
-  unresolved); 1987 Peugeot Challenge gumwalls x5 versus existing 6846 Peugeot
-  Challenge (source/continuity unresolved). These are candidates, not approved links.
+  unresolved); 1987 Peugeot Challenge gumwalls x5 (15794/15813/15832/15851/15869)
+  versus existing 6846 Peugeot Challenge, already linked from 1983 spec 11710
+  (source/continuity unresolved). These are candidates, not approved links.
 - **Structural baseline:** no dangling component/source references, wrong linked
   categories, exact duplicate tyre specs or component group ownership conflicts.
   68/601 components have incomplete dates. Seven automatic duplicate groups are
   classified as configurations/generations; no automatic merge recommendation,
   near-name or parenthetical pair. No merges proposed.
+  Groups kept separate: Schwalbe Blizzard Pro 10225/10227/10541/10542 (TPI/bead),
+  Vredestein Slimline Sprint 8771/8772 (630/622 mm), Clement Seta 8970/6769
+  (track/less identified), Vittoria Record 9062/9067 (tubular/clincher),
+  Specialized TriCross 9909/10230 (generation), Schwalbe Stelvio 10228/10229
+  (wheel size), Dourdoigne 11144/11145 (weight configuration).
 - **Triage:** the classifier flags 209 unlinked specs for possible review, but
   includes bare sizes, finishes and maker-only false positives. Generic and
   house-part strings remain plain text. 61 Colnago Gommitalia/GommaItalia specs
@@ -628,27 +638,17 @@ Review evidence and proposed actions: `/private/tmp/existing-source-review/revie
 
 ## Done
 
-- **2026-11-14 Ritchey OverDrive correction applied (user approved):** re-read the
-  Bianchi 1990 cover and pp.21–22 model/tyre spread from a mirror of the existing
-  Retrobike scan; matched Signature 2, Grizzly, Peregrine, Sika and Osprey to
-  OverDrive 26x2.0. Compared the later Ritchey manufacturer tyre listing.
-  Applied 8384 year_from 1991 -> 1990, source_ref 150 -> 168; year_to 1992
-  retained. Tyre date flags 10 -> 5; coverage unchanged at 238/973. All eight
-  OverDrive links and all 18,472 bike specs unchanged. Generation across all
-  86 CSVs byte-identical; SQL rerun affected zero rows. No casing/bead/WCS
-  inference or other component changes.
-  [Review/evidence/SQL](docs/audits/ritchey-overdrive-2026-11-14.md).
+- **2026-11-14 Ritchey OverDrive correction applied (user approved):** 8384
+  year_from 1991 -> 1990, source 150 -> 168 from Bianchi's dated catalogue.
+  Tyre flags 10 -> 5; links unchanged; regeneration/rerun clean.
+  [Evidence/validation](.agents/skills/ingest-component-catalog/references/known-catalogs/ritchey.md),
+  [SQL](docs/audits/ritchey-overdrive-2026-11-14.sql).
 
-- **2026-11-14 Michelin corrections applied (user approved):** 9498 Hi-Lite
-  Road / 6836 Hi-Lite Pro / 9499 Super Elan year_from -> 1986; 6830 BIB TS-20
-  year_to -> 1989; 6826 Select year_from -> 1986 (inferred catalogue date retained
-  explicitly). Five component rows updated with evidence/provenance. Spec 15681
-  corrected 700x70C [?] -> 700x20C in DB and backed-up CSV; generator override
-  replaced with the corrected bike/year-scoped value. Tyre date flags 36 -> 10;
-  coverage unchanged at 238/973. All 86 CSVs regenerated: only the intended
-  spec text changed, no component mappings; all 18,472 live specs compared:
-  only 15681.value_text changed. SQL rerun: zero rows affected.
-  [Review/evidence/SQL/validation](docs/audits/michelin-2026-11-14.md).
+- **2026-11-14 Michelin corrections applied (user approved):** five component
+  date/provenance corrections and Mont Cenis spec 15681 70C -> 20C in DB/CSV/
+  override. Tyre flags 36 -> 10; coverage 238/973; regeneration/rerun clean.
+  [Evidence/qualification/validation](.agents/skills/ingest-component-catalog/references/known-catalogs/michelin.md),
+  [SQL](docs/audits/michelin-2026-11-14.sql).
 
 - **2026-11-14 tyre step 1 audit (read-only):** 238/973 linked (24.5%), 735
   unlinked, 601 components. No broken component/source references, wrong linked
@@ -656,9 +656,9 @@ Review evidence and proposed actions: `/private/tmp/existing-source-review/revie
   specs (26 Michelin) and 16 linked specs with incomplete component dates remain
   for review. Verified Bianchi Nuovo Pro x4 already linked to 6893; removed its
   stale open status. New Mondiale 11136 makes Zeus spec 59 a link candidate,
-  not a missing-row hunt. Reconciled current tyre worklist; [audit report](docs/audits/tyres-2026-11-14.md)
-  records IDs, priorities, classifier limitations and seven non-merge duplicate
-  groups. No ingestion, linking, date changes or merges performed.
+  not a missing-row hunt. Reconciled current tyre worklist above, including
+  priorities, classifier limitations and seven non-merge duplicate groups.
+  Subsequent Michelin/OverDrive fixes resolved 31 of the original 36 date flags.
 
 - **2026-11-13 Maillard CXC brochure (user approved, +70 links):** recovered two undated manufacturer scans from Velo Vintage à Gogo t12976, registered as source **382**. Corrected the 2026-10-26 merge: **3828** is now CXC 550 (379g); restored **3829 CXC 650** with its original source GUID and 344g weight. Added **10986 CXC 500**, **10987 CXC 600**, **10988 CXC 700**, **10989 CXC 700 D**; 600/700 D remain undated. Retained the legacy 550 start-year bucket 1980 as unproven and the recovered 650 source's 1983 date; later bounds follow dated bike specifications. Linked **70 NULL Pedals specs on 70 bikes** (69 Peugeot / 1 Falcon): 500 x18, 550 x39, 650 x10, 700 x3. Added 25 exact value/year-scoped generator overrides. All **85 CSVs** checked: **6333 -> 6403** generated links, exactly these 70; read-back comparison across **18,283 specs** confirms only the approved links changed, live linked total **6363 -> 6433**. Pedals **413 -> 483 / 922 (52.4%)**. Five component rows inserted (including restored 3829), one rewritten; all other component and spec fields unchanged. SQL rerun affected zero rows; `npm test` passes. SQL, snapshots and validation: `/private/tmp/maillard-cxc-review-2026-11-13/`; component Maillard and bike Peugeot/Falcon notes updated.
 

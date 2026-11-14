@@ -467,9 +467,9 @@
   Peregrine / Sika / Osprey, specs 6906/6948/6969/6989/7009. Updated component
   8384 year_from 1991 -> 1990, source_ref 150 -> this source 168; all links
   retained. No CSV/generator changes needed. All 18,472 bike specs unchanged;
-  generation across 86 CSVs byte-identical; SQL rerun zero. See repository audit
-  `docs/audits/ritchey-overdrive-2026-11-14.md` for scan mirror, manufacturer
-  comparison, guarded SQL and the unknown casing/bead qualification.
+  generation across 86 CSVs byte-identical; SQL rerun zero. Source URLs and
+  casing/bead qualification are in the component Ritchey notes; applied SQL is
+  `docs/audits/ritchey-overdrive-2026-11-14.sql`.
 
 - Source: https://www.retrobike.co.uk/archive/1990-bianchi-catalogue.1676/
   ("1990 Bianchi Catalogo.pdf", 23 pp, Bianchi USA Inc., South San

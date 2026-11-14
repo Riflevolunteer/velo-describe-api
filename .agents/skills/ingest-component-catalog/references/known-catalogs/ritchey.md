@@ -2,7 +2,7 @@
 
 ## OverDrive 1990 Bianchi fitment review — 2026-11-14 (user approved, applied)
 
-- [Review, exact evidence URLs/hashes and guarded SQL](../../../../../docs/audits/ritchey-overdrive-2026-11-14.md).
+- [Applied SQL](../../../../../docs/audits/ritchey-overdrive-2026-11-14.sql).
   Applied 8384 MegaBite OverDrive year_from 1991 -> 1990 and source_ref
   150 -> 168; retained year_to 1992 and all eight bike links. One row affected;
   SQL rerun zero. All 18,472 bike specs unchanged; full generation across 86
@@ -12,9 +12,17 @@
   Osprey (specs 6906/6948/6969/6989/7009). Project 7's intervening 700C row
   was excluded. Retrobike currently blocks downloads; Bikecatalogs mirror's
   23-page PDF identifies Retrobike 1676 as its source.
+- Scan URLs: [original Retrobike 1676](https://www.retrobike.co.uk/archive/1990-bianchi-catalogue.1676/),
+  [downloaded mirror](https://www.bikecatalogs.com/download/2797?download=1).
+  Inspected PDF cover (1990), pp.21–22 model/tyre spread and back cover (MB90,
+  Bianchi USA, South San Francisco). Matched the five rows by model order,
+  groups and rims across the spread. The three other retained links are Bianchi
+  1991 Peregrine/Sika/Osprey, specs 19567/19585/19602.
 - Compared the Ebykr/Equus Ritchey 1991–92 manufacturer tyre spread: OverDrive
   is distinct from HardDrive/Z-Max and includes 26x2.0. This was a comparison,
   not a new catalogue ingest or an assumed identical copy of source 150.
+  [Manufacturer comparison](https://ebykr.com/library/ritchey-component-catalog-1991-92/),
+  [printed pp.2–3 tyre spread](https://ebykr.com/wp-content/uploads/2026/11/ebykr-ritchey-component-catalog-1991-92-p02.webp).
 - The correction resolves five date flags but establishes only 1990 availability
   of the model, not a precise introduction or the Bianchi bikes' casing/bead/WCS
   configuration. Existing 1991/92 variant details remain from the later sources.
