@@ -1,5 +1,14 @@
 # Ritchey catalogs processed so far
 
+## Logic crank split — 2026-11-14 (user approved, applied)
+
+- The Guida '96 pass (source 357, 2026-11-04) had matched "RITCHEY Logic Road"
+  (scan 29, p.132: road, 170-180 mm, 39-53, 590 g, cold-forged) to 1721 and
+  overwritten its description. Split: new **11172 Ritchey Logic Road**
+  (Cranksets, 1996, source 357); 1721 Logic Crankset restored to 1991-1992,
+  source 150, MTB triple text below. No bike links on either.
+  [SQL](../../../../../docs/audits/guida96-close-name-2026-11-14.sql).
+
 ## OverDrive 1990 Bianchi fitment review — 2026-11-14 (user approved, applied)
 
 - [Applied SQL](../../../../../docs/audits/ritchey-overdrive-2026-11-14.sql).

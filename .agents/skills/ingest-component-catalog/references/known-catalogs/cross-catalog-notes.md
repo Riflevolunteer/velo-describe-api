@@ -842,6 +842,27 @@ Weinmann 1129 / 1130 570.
     Disc T vs 10360 Corima Disc; FRM Alu-Ergal / Carbon-Ergal front hubs vs 10303 Pro / 10305 Feather; FRM Ergal
     post vs 10161 Arretrato; Mavic "CXP Titane SUP UB Control" (probably CXP 30 Titane); OMAS 120 S / 120 D Big
     Sliding (identical specs); Ofmega Mistral SQ vs 93 Mistral.
+  - **Both lists above reviewed 2026-11-14 against the scans** (user approved; [SQL](../../../../../docs/audits/guida96-close-name-2026-11-14.sql)).
+    Printed page = scan + 103. **Split (wrong matches):** "RITCHEY Logic Road" crank (scan 29: 39-53, 590 g) -> new
+    11172; 1721 restored to the 1991-92 MTB Logic triple (year_to 1992, source 150, ritchey.md text). "MICHE Primato"
+    round post (scan 13: 325 g, length misprinted "23 mm"; Guida '99 p.101: 235 mm, 315 g) -> new 11173 (1996-99,
+    group 128); 9480 Primato Aero (Guida '88 aero post) restored to -1988, source 262. "AMBROSIO Road Racing"
+    tubular rim (scan 17: 20 mm, 390 g, 20-28 in; "Olimpic" not printed) -> new 11174; 9176 restored to -1988,
+    source 262 (inferred from the '88 match). **Merged:** 10563 Pro Lite 19 (scan 56, printed in full) into bare
+    velobase 6898 "Pro L 19\"" (retitled Vittoria Pro Lite 19, 1996, source 357; 10563 deleted, no links).
+    **Confirmed matches:** Vittoria "Corsa CX T.T." / "Open Corsa CX T.T." (scans 57-58; only "T.T." printed, but
+    "doppia mescola a durezza differenziata" = Twin Tread) -> 10441 / 10448; "Pista 6 Giorni CS" (22x28, 200-220 g)
+    -> 9252; "Hi Lite Competition" -> 6835 (bike specs say Comp / Competition); "CORIMA Eclipse" -> 10160 (the '99
+    guide prints "Ellipse", identical specs); "BROOKS Professional Team" (cuoio, price only) -> 5303; Tempo Crono
+    255 g -> 2818; both FRM CU2 Corsa entries (Campagnolo / Shimano drilling only) -> 10279; "SACHS New Success"
+    hubs (Maillard not named) -> 3509. **Kept apart, probable 1996 -> 1999 renames** (same specs, different printed
+    names, no links): Category One 10539 / Category Pro 10222; Disc T 10618 / Disc 10360; FRM Alu-Ergal 10762 / 10764
+    / Pro 10303, Carbon-Ergal 10763 / 10765 / Feather 10305. **Distinct:** FRM Ergal post 10635 (two bolts) /
+    Arretrato 10161 (setback); 10597 CXP Titane (clincher, no "30" printed) / 10607 CXP 30 Titane (tubular);
+    OMAS 120 S / 120 D (word-for-word identical print, separate letters); 10723 Mistral SQ (2250 SQ, source 384)
+    / 93. Pista CL 10570 has no Atlanta entry in '96, so it is kept apart from 10444 Atlanta Gold CL. New candidates:
+    6896 Pista CL Servizio Course vs 10570; 1570 FRM CU2 vs 10279 / 10280; not loaded: Mavic CXP 30 Argent
+    (clincher + tubular), OMAS 120 Big Sliding, FRM rear "Campagnolo Compatibile".
   - Skipped as ambiguous (45 in all), e.g. Selle Italia Flite (5488 / 5489), Selcof Team Titanio (5872 / 5874),
     Cinelli 64 Giro d'Italia (2800-2802), 3ttt Competizione / Grand Prix, Hutchinson Krono Competition (10217 /
     10218), Vittoria Zefir Kevlar, Crono Seta CS 150, Sachs New Success brake (942 / 943), Clement Criterium aperto
