@@ -54,7 +54,53 @@
   6446 -> 6518, exactly the 72 new links. Post-load Miyata totals:
   1979 9 bikes / 189 specs / 72 links; 1986 18 / 395 / 156.
 
-## 1981 Miyata — loaded (2026-11-14, source 402)
+## 1982 Miyata — loaded (2026-11-14, source 403)
+
+- CSV: `bike_specs/1982_miyata_spec.csv` (scratchpad `build_miyata82.js`,
+  not kept). Review SQL prepends eleven guarded date fixes: year_from ->
+  1982 for 686 Dia-Compe AGC300 (was 1984) and 3859 MKS Esquartz 102 (was
+  1984); year_to -> 1982 for 3150 Tange Ritzy, 6690 Sugino HP-GL, 1735 SR
+  AEC-100 AEROX (AE-5LA), 8250 SR CT-5LA-EL, 8252 SR CT-5TG (all were
+  1980), 8251 SR CT-5RG, 1200 Uniglide 600EX, 8983 SunShine Pro-Am 75-1,
+  8985 Gyromaster 78-1 (all were 1981).
+- Source: https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/1982%20Miyata%20Catalog.pdf
+  (16 pp, photo scan with a usable OCR text layer). Spec tables pp. 13-15
+  ("Technical Specifications 1982 Models"), transcribed from the text layer
+  and checked cell by cell against 160 dpi crops. US edition: warranty
+  p. 16 names TOYODA AMERICA, INC., New York / Chicago / Los Angeles.
+- Twelve bikes, Type from the series headings: Professional Racing (Aero
+  Miyata, Team Miyata, Pro Miyata, 1200 -> "Racing"), Semi-Pro (912, 710,
+  310), Grand Touring (1000, 610 -> "Touring"), All-Round Sports (210,
+  110SP, 110 -> "Sports"). Ladies' 310S / 210M / 110L stay in Frame Size
+  cells. Skipped: Commuter / Commuter-L (3-speed city).
+- Repairs: Aero Miyata key wrenches "(3, 4, 5, 5, 6mm)" -> (3, 4, 5, 6mm);
+  Team "ovel" -> oval, "Dra-Ace" -> Dura-Ace; 1000 chain "2/32" -> 3/32"
+  (same typo as 1981). 912 "SHIMANO SF ends" kept as printed.
+- Overrides (bike-scoped, 1982 only): Dura-Ace AX on Aero Miyata (RD 4507,
+  Parapull 995, levers 438, FH-7370 3567, HD-7300 2917, FC 1826, PD 3973,
+  HS 6678); Team keeps EX RD 4509 / brakes 997 / levers 439 / HP 3105 with
+  AX crank / pedals / stem. Pro Miyata: Superbe Pro (auto FD 2652, RD 4766),
+  Superbe small-flange hub -> RH-1000 8262 (the auto 3614 generic ends
+  1980), AGC300 686 / AGC250 279, Sugino Aero Mighty 1925, HP-GL 6690, MKS
+  Esquartz 3858, Tange Ritzy 3150. 1200: Cyclone Mark 2 rear -> RD-3500
+  4742, SR AEROX 5LA -> 1735, Esquartz 102 3859, Pro-Am 75-1 8983, NGC400
+  694. 1000 Cyclone Mark 2 GT -> RD-3700 4743. SunTour BL front -> FD-1900
+  2622, BL-GT -> RD-3300 4731, New Winner 6-cog -> NW-6000 2238. SR Custom
+  5LA-EL 8250 / 5RG 8251 / 5TG 8252. MKS Sylvan Road -> 2021 3865 (also
+  added for the 1981 912 / 1000 "Silvan Road", ranged 1981: back-fill only).
+- Left unlinked: Dura-Ace AX / EX front derailleurs (band / braze /
+  oval-tube variants); AX topmount and EX / SunTour top-mount / BL /
+  Superbe shifters (clamp vs brazed rows); Cyclone Mark 2 front (FD-2300 vs
+  FD-2400); bare SunTour "WINNER" clusters; 912 600 EX-LD 52x42 (gearing
+  conflict as 1979-80); Dura-Ace AX / 600AX / CT-P5A / Custom P5 posts;
+  Dura-Ace EX hub; NGC 200 / 200H, #144 / #144G / #165 levers; SR CTC 5DX /
+  Silstar 5DX C cranks (several CTC rows); DID Lanner chains, Ariake 80N-DX
+  / 77xx saddles, NITTO 55F / MDL-55F, MKS AR Road / CR-2, SR AEROX / Royal
+  KM / Custom / Silver Win stems, KD-4L bars (no rows).
+- Regression: all 87 other CSVs regenerate byte-identical except 1981
+  Miyata, which gains exactly the two Sylvan Road back-fills.
+
+## 1981 Miyata — loaded (2026-11-14, source 402; 70 -> 72 links after the 1982 Sylvan Road back-fill)
 
 - CSV: `bike_specs/1981_miyata_spec.csv` (scratchpad `build_miyata81.js`,
   not kept). Review SQL prepends six guarded date fixes: year_to 1980 ->
