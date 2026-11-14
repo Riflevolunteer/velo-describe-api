@@ -1332,3 +1332,40 @@ Weinmann 1129 / 1130 570.
   not printed); Universal Pro-Super lever; Huret Jubilee and 3ttt Record Regolabile (version not
   identifiable); Sedis "Sedicolor Gold" (1398 vs 8764); Mavic "Extra Legere OR"; Regina freewheels
   (DB rows undated); the p. 57 built-wheel chart; generic or unbranded chainrings, chains and BBs.
+
+## Brügelmann Radsport-Shop catalogue — 1982 (rennrad-geschichten.de), data_source 389, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1982)", country DE. Source: same page
+  as the 1981 entry, "Brügelmann 1982.pdf" (164 pp, no text layer). Cover "1932-1982" (50 years
+  Brügelmann), no validity line; p. 161 weight table "Stand im Sommer 1981".
+- Components: pp. 6-8 (brakes, levers, drum hubs "Vorankündigung"), 12-15 (rims, Mavic 18 mm,
+  Assos 16 mm aero, narrow tubulars), 19-21 (chains, chainrings), 24-28, 33-35 (stems, bars, hubs,
+  pedals, saddles), 36-42 (seatposts incl. Swing sprung post, Colnago / Gios-Torino / Coppi
+  finish parts, derailleurs, shifters), 45-50 (tyres), 55-64 (headsets, BBs, cranksets,
+  freewheels, Regina CX), 74-75 (Shimano Dura-Ace AX / 600 AX), 87, 90-91 (BMX), 152-158 (Simplex
+  Selematic advert, Sachs-Huret Commander / Orbit "Voran-Ankündigung", Metzeler Rollux, Ideale 75
+  Mixte, Regina Futura "NEU"), 161 (weight table). Skipped 17, 54, 65, 150 (how-to / spokes).
+- Changed (source_ref -> this source):
+  - year_to -> 1982 (48 rows), mostly rows the 1981 pass dated: 475, 501, 1082 Universal Super 68,
+    1340, 1813, 1814, 1862, 2182 Regina Extra Oro, 3097, 3384, 4648 Simplex Selematic 5, 5104
+    Mavic OR 7, 5531, 5599 Ideale 2001, 5605 Ideale 2004, 5816, 6731 / 6733 Clement 50 / 70, 6921,
+    6947, 7475 Shimano Uniglide FG-100, 7498 Shimano FC-6210 600 EX, 8376, 9023 Wolber Team Corsa,
+    9046-9049 Hutchinson, 9582 Wolber Performance Soie, 9585 Wolber W 333, 9993 Huret Super Allvit
+    III, 10020 Sturmey Archer S5, 10071, and 1981 inserts 11136, 11140-11150, 11153-11155.
+  - year_from -> 1982: 9770 Clement Grinta (was 1983; "NEU"), 6759 Clement Mirage Servizio Course
+    (was 1983; printed "Mirage", Clementex, 240 g), 9173 3ttt A 2000 stem (was 1985; black,
+    90-130), 3858 MKS 2023 Esquartz (was 1983; integrated alloy toe hook, medium / long).
+  - **year_from moved later:** 2745 3ttt Aero 1980 -> 1982 (and year_to 1982): "NEU!" in 1982,
+    absent from the 1981 bar range; the old value was a velobase "early 1980s" bucket. Retitled
+    from "3ttt Aero - early 1980´s" to "3ttt Aero" (search_text "3ttt Aero").
+  - 6753 Clement Folgore NULL/NULL -> 1982-1982, description now TX time-trial 17/18 mm, 130-150 g.
+- Added brands 702 Mitsuboshi, 703 Kenda, 704 Metzeler (Tyres) and 705 Swing (Seat Posts). Added rows 11156-11162 (1982-1982,
+  group NULL): Clement Corallo; Dourdoigne Italia (pro-team model) and Dourdoigne silk tubular
+  (185 g, p. 15 "Seide Tergal"); Mitsuboshi Competition III and Kenda Pro Star K50 (BMX 20 x
+  1.75); Metzeler Rollux (reflective sidewall); Swing suspension seat post.
+- Not applied: Modolo aero brake ("NEU", c. 400 DM, preorder; no model named); Mavic gold / black
+  bars (bend not given; 351 / 352 rows); Assos 16 mm aero rim (4935 vs 4936); Lanner and D.I.D
+  chains; Canetti "Criterium Super Course" (9694 is the Tergal Criterium); Hutchinson Super Sprint
+  vs 10010 Sprint Anticrevaison; Wolber Junior Butyl vs 9586 Junior Tubeless; the Regina CX
+  sprocket tables and replacement cogs; Cobra saddles (as 1981); generic axles, chainrings and
+  Michelin sizes.
