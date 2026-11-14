@@ -1543,3 +1543,34 @@ Weinmann 1129 / 1130 570.
   Maillard 700 Compact (name only "Maillard"); Huret Eco; Simplex Prestige and Regina Extra groups;
   Campagnolo Record / Simplex Criterium shifters (DB rows are later or earlier versions); Canetti
   Cross; Wolber W/20; Colnago-finish parts.
+
+## Brügelmann Radsport-Shop catalogue — 1980 (rennrad-geschichten.de), data_source 395, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1980)", country DE. Source: same page
+  as the 1981 entry, "Brügelmann 1980.pdf" (108 pp, no text layer; p. 62 hub chart rotated 90°).
+  Cover "1980" with "Gültig bis Neuausgabe 81 - etwa März 1981" (read from a thumbnail); p. 107
+  weight table "Stand im Sommer 1979"; text "in der Saison 1980".
+- Components: pp. 7, 9, 12-13, 19-21, 24-28, 31 (Gios-Torino parts on the pumps page), 32-35,
+  40-43, 46 (headsets), 47-51, 62. Skipped 14-15 (lightweight small parts), 37-39 (Dura-Ace group
+  illustration, exploded diagrams), 44, 103 (finish surcharges), 108 (back cover).
+- Bars / stems (pp. 24-25): the "ALMARC" box is already in 1980 (3ttt Merckx bar on Rekord-78 stem,
+  leather-wrapped, black; TODO.md dates it from 1981 p. 24); 3ttt Coppi still listed; generic
+  French bar "Pivo, Guidon, Philippe" and a dural "Profi" bar with engraved centre sleeve (no maker
+  printed; not tied to 11169).
+- Changed (source_ref -> this source):
+  - year_to -> 1980: 8794 Simplex AV 3, 6162 Shimano L-284 Dura-Ace levers, 11170 D'Alessandro
+    Cronometro, 6810 Hutchinson Krono Milano (all 1979), 2506 / 2507 Shimano E-404 / EA-100
+    Dura-Ace front derailleur and black version (1979), 433 Shimano M-140 / MA-100 Dura-Ace lever
+    (1978), 1777 Shimano FFS front freewheel crankset (1978; listed as "FFS Alu / Stahl").
+  - year_from -> 1980: 11153 Nadax Favorit and 11150 CLB Italia (both were 1981).
+- Added brand 706 Almarc (Handlebars) and row 11171 "Almarc leather-covered bar", 1980-1981 (1980
+  p. 24 and 1981 p. 24 "ALMARC" boxes: hand-sewn leather on a 3ttt Merckx bar, sold with a 3ttt
+  Rekord-78 stem, 90-130 mm; 99.90 DM in 1981). Kept apart from brand 491 "Cerchi Almarc" (rims
+  only, row 4974); same firm not confirmed. The 1986 Cinelli spec "Cinelli Almarc leather covered"
+  (bike_specs, Ten Speed Drive) is the natural link target; not linked here.
+- Not applied: Shimano FFS bottom brackets (vs 7144 / 7145, the Dura-Ace / 600 BB sets); Shimano
+  PPS click / double levers (vs 6152 Adamas AX and 7157 PPS-FH, both 1981); Campagnolo GS braze-on
+  front (vs 7007 Record braze-on); Campagnolo Super Record brake (4061 v2 from 1983; v1 presumably
+  covers); Nisi Speciale (vs 9225 Pista Speciale); Wolber Performance / Junior (covered by 9028 /
+  6919); Simplex Prestige groups; Canetti Cross; SunTour Ultra-6 / Ultra-7 freewheels and Sedis
+  Ultra-6 chain (already covered).
