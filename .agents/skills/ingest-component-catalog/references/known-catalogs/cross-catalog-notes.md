@@ -1700,3 +1700,29 @@ Weinmann 1129 / 1130 570.
   Svelto, Simplex Criterium / Prestige and Campagnolo Record / Valentino / Gran Turismo versions;
   Canetti Cross (vs 9350 Cross 160); Wolber Pro / Corsa / Strada; MAFAC 2000 / Racer brakes
   (velobase 1970 rows, version not identifiable).
+
+## Brügelmann Radsport-Shop catalogue — 1972 (rennrad-geschichten.de), data_source 400, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1972)", country DE. Source: same page
+  as the 1981 entry, "Brügelmann 1972.pdf" (76 pp, all upright). No year on the cover; dated from
+  the contents: p. 5 header "1972", p. 12 "1971 = 3 neue Modelle; 1972 = das gleiche Programm",
+  "lieferbar ab Febr./März 1972" (p. 58), "etwa März/April 72" (p. 47), Saison-Einführungspreis
+  "bis zum 30.6.1972" (p. 66), Merckx 1971 world champion (p. 35). p. 75 is a later Continental
+  advert insert (skipped).
+- Components: pp. 5, 8-9, 12-13, 17-19, 22-25, 28-33, 35-37, 39-43, 68 (wheel grids only).
+- No Zeus 2000 parts anywhere (Zeus only as Weltmeister hubs, Strasse / Bahn pedals, patent
+  seatpost, "Profi" derailleurs and groups, Rennsteuersatz); no "Pivo Profi" (only generic "Pivo
+  o.ä." bars), consistent with its 1973 "NEU"; 3ttt Coppi (2387, 40 / 42 cm) and Motta (2388, 40 cm)
+  listed. No D'Alessandro tubulars.
+- Changed (source_ref -> this source): year_from -> 1972 (23 rows, all were 1973 unless noted):
+  Clement 6733 70 / 6745 Criterium / 6766 Record Seta Extra (was 1975; "Record mit weissem
+  Protektor"); Wolber 6914 Cross Super / 6919 Junior / 9021 Route Renforce Noir / 9026 Special
+  Course / 9029 Competition; 9085 Lyotard 45; Canetti 9344 Tour de France / 9347 Paris-Tours /
+  9349 100 / 9697 Sport; 10974 Cinelli Nitor ("Unica / Nitor Patent-Sattelstütze"); Continental
+  11140-11143; Dourdoigne 11144 / 11145 (245 g / 210 g; were 1974) and 11147 GP des Nations; 3ttt
+  11166 Coppi and 11167 Motta.
+- No inserts, no year_to changes.
+- Not applied: Mavic Extra / Légère / Montlhéry / Sport rims (names do not map cleanly); Simplex
+  Criterium / Prestige, Huret Svelto and Campagnolo Record / Valentino / Gran Turismo versions;
+  Wolber Pro (vs 6923 Neo Pro, 1978); MAFAC Racer (velobase 1952-69 version); Sedis "Sedis /
+  Peugeot" chain (vs 1398 Sedis Gold).
