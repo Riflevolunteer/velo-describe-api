@@ -1629,3 +1629,38 @@ Weinmann 1129 / 1130 570.
   8889); Hutchinson Cross (vs 9049 Cross TR); Wolber Pro / Corsa / Strada / Renforce (no clean
   row); Cinelli Pista / Sprint stem (vs 7097 2A and 6501 Pista Steel); Campagnolo Super Record p. 80
   (picture labels; Super Record rows already start 1974).
+
+## Brügelmann Radsport-Shop catalogue — 1974 (rennrad-geschichten.de), data_source 398, 2026-11-14
+
+- `data_source` label "Brügelmann Radsport-Shop catalogue (1974)", country DE. Source: same page
+  as the 1981 entry, "Brügelmann 1974.pdf" (80 pp, all upright). Cover "1974"; p. 3 "Radsport-
+  Katalog 1974"; p. 8 Shimano brakes "Lieferzusage per Februar 74" and the Campagnolo brake
+  "im Herbst '73 vorgestellt"; p. 24 "ab Mai 1974 lieferbar"; p. 49 "Der Preis gilt ab 1. Februar
+  1974". So printed late 1973 for the 1974 season.
+- Components: pp. 5, 8-9, 12-13, 17-18, 22-25, 28-30, 33, 35-37, 39-43. Skipped 7 (dynamo wheels),
+  19, 31-32 (diagrams), 50 (wheel grids), 78-79 (B-72 small parts / weights).
+- "NEU" markers (first-sale evidence, kept here; not used to move dates later): MAFAC 2000 lever
+  (p. 9), Zeus 2000 brake levers (p. 9, no price; the p. 8 Zeus 2000 brake "price not yet fixed"),
+  Mavic Légère-Gold and Extra Légère-Gold rims ("1974 NEU", p. 12), gold-anodised French bar (p.
+  22), French racing stem (p. 23), Perrin Maillard hubs and Zeus superlight track hubs ("ab Mai
+  1974", p. 24), time-trial plate pedal (p. 25), 3ttt patent seatpost (p. 29), Simplex Super L.J.
+  "Modell 74 Gold" ("GANZ NEU", p. 30), Dourdoigne GP des Nations reinforced (p. 37), Stronglight
+  S5 headset ("NEUES MODELL", p. 39). Campagnolo Nuovo Gran Sport and Super Record rear mechs (p.
+  33) "new model, not yet deliverable", c. 45 / 125 DM; Shimano Dura-Ace crankset not yet
+  available (p. 40).
+- Bars (p. 22): 3ttt Coppi (4384/C) and Motta (4384/M), Pivo Profi (4382, 4382/1), Pivo Standard
+  ("Pivo o.ä."), Cinelli, a gold-anodised French bar (NEU).
+- Changed (source_ref -> this source): year_from -> 1974 (23 rows; all were 1975 unless noted):
+  8376 MAFAC 2000 lever ("Neu"), Clement 6733 70 / 6745 Criterium, Wolber 6919 Junior / 9026
+  Special Course / 9029 Competition (was 1977), 9085 Lyotard 45, D'Alessandro 9329 Silk
+  Imperforabile and 11136-11139, 9344 Canetti Tour de France, Continental 11140-11143, Dourdoigne
+  11144 / 11145 handmade tubulars (were 1978) and 11147 Grand Prix des Nations, 3ttt 11166 Coppi /
+  11167 Motta, 11168 Pivo Standard.
+- No inserts, no year_to changes.
+- Not applied: Zeus 2000 lever 502 (1970, last set by Zeus-104 1980) and brake 1177 are "NEU" /
+  "price not fixed" in 1974, which argues for a later year_from, but 1972-73 Brügelmann and the
+  Zeus notes have not been checked for it; Stronglight S5 3122 (1973, from Stronglight no. 22,
+  1974) left as is despite "NEUES MODELL"; Simplex Super L.J. 74 Gold (vs undated 4649 SLJ SX660);
+  Mavic Gold rims (no separate rows); Hutchinson Milano-San Remo (10071 spans 1974); Huret, Simplex
+  Criterium / Prestige and Campagnolo Record / Nuovo Record versions; Wolber Pro / Corsa / Strada /
+  Renforce; Maillard Atom (7233 / 7234 from 1978; "Atom Standard" name only).
