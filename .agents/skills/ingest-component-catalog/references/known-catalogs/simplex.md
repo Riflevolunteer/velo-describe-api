@@ -756,3 +756,14 @@ identify the 1980s rear specs.
 - Validation: 1 + 2 + 4 rows as planned; rerun 0; no dangling references. All 93 CSVs regenerated: only the PHE 13
   mapping changed (4624 -> 4622), matching live. The six SX440 date flags cleared; scoped `duplicate-report` no longer
   lists SX440 pairs (component_detail 10399 -> 10395).
+
+## Rear derailleur provenance switch — 2026-11-15 (user approved)
+
+- `source_ref` 1 (VeloBase) -> the last Simplex catalogue to change the row (ingestion order on 2026-10-01: 1984 (55),
+  then July 1978 (57), then September 1981 (58)): 4620 SX410 GT, 4629 SX610 GT, 4631 SX610 T -> 58 (enriched by the
+  Sept 1981 pass); 4621 SX410 T -> 58 (Sept 1981 added its 1984-label note); 4603 LJ4000 CP (version 2) -> 57 (last
+  enriched by the 1978 pass). Descriptions unchanged: their dated weights distinguish editions.
+- Kept on VeloBase: 4652 SLJ5500 GT (its 219 g matches no 1981 / 1984 SLJ 5500; changed only by follow-up merges), the
+  SX440 survivors 4622 / 4625 (VeloBase data only), and the bare pre-1975 specimen rows. 57 Simplex rear rows remain
+  VeloBase-sourced.
+- Validation: 5 rows, rerun 0; all 93 CSVs regenerated with identical output; `quality-report` exit 0.
