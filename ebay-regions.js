@@ -3,7 +3,7 @@
 // Browse site, and the request filters every site to listings that ship
 // there (deliveryCountry). Home site first, then the others in order.
 //
-// Chosen from the 2026-10-28 coverage run (TODO.md): for every buyer, GB,
+// Chosen from the 2026-10-28 coverage run (README.md): for every buyer, GB,
 // US, FR and DE add the most listings the home site doesn't have, because
 // that's where vintage parts are listed locally; IT fills the 5th slot where
 // the home site is one of those four. SG scored high too, but only because
