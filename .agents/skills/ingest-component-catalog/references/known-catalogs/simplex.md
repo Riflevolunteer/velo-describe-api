@@ -767,3 +767,22 @@ identify the 1980s rear specs.
   SX440 survivors 4622 / 4625 (VeloBase data only), and the bare pre-1975 specimen rows. 57 Simplex rear rows remain
   VeloBase-sourced.
 - Validation: 5 rows, rerun 0; all 93 CSVs regenerated with identical output; `quality-report` exit 0.
+
+## Front derailleur audit fixes — 2026-11-15 (user approved; audit items 1-5)
+
+- Generator: FD `'simplex super competition'` 8794 range 1971-76 -> 1971-80 (8794 AV 3 has run 1971-80 since the 1980
+  cross-catalogue pass); spec 10092 (1978 Peugeot PA 60) NULL -> 8794.
+- Merged/deleted: 2589 "Simplex Super LJ" (VeloBase, bare, undated, group 229,
+  `F5E8D89F-54E0-45A5-8039-8CC8B535D9AB`) -> 2587 SLJ A500, the "Super LJ, AV.326" front of the 1975 product sheets.
+  Its 5 links (1974-76 Peugeot PX 10 LE / PX 60 / PY 10, all doubles) moved; 2587 `year_to` 1975 -> 1976 (1976 PY 10
+  fitment); new FD override `'simplex super lj'` 1973-76 -> 2587 (the bare title had matched 2589 by exact title).
+  This supersedes the 1979 parts-book note that 2589 was "too generic to map". 2590 / 2591 "Super LJ (2nd version?
+  ...)" (1970, 0 links) left pending a VeloBase photo check.
+- Dates from explicit Peugeot model prints (fitment evidence; `source_ref` unchanged, fitment appended): 2578 SX A32
+  `year_from` 1984 -> 1983; 2585 SA02 and 2586 SA12 `year_to` 1981 -> 1982; 2567 LJ A302 1978 -> 1979; 7263 SLJ A422
+  1984 -> 1986; 7283 SLJ A522 1978-84 -> 1977-88. 2582 "Simplex Alpha" NULL -> 1989-1989 (1989 Touraine only).
+- Title: 2545 gained its closing bracket ("... alloy knob, Italian made)"); description "..., Italian made, Italy" ->
+  "... alloy knob), Italy".
+- Validation: 15 rows as planned (6 spec, 9 component updates, 1 delete); rerun 0; no dangling references. All 93 CSVs
+  regenerated: only the 5 Super LJ links (2589 -> 2587) and the PA 60 back-fill changed. `quality-report` has no
+  findings on the touched rows. Simplex front specs 241 / 313 linked (was 240).

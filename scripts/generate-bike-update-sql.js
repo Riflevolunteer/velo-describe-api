@@ -584,7 +584,7 @@ const COMPONENT_OVERRIDES = {
     // 2026-11-02 front derailleur pass.
     'gipiemme cronosprint': [{ from: 1982, to: 1982, id: 2369 }], // 1982 Battaglin Marostica: Crono Sprint 802 DD (1982-86)
     'raleigh shimano 400': [{ from: 1978, to: 1978, id: 2453 }], // 1978 Raleigh Record: EC-400, Shimano-400 (1977-79)
-    'simplex sx32': [{ from: 1986, to: 1986, id: 2578 }], // 1986 Peugeot PH 13: SX A32 double (1984-89)
+    'simplex sx32': [{ from: 1986, to: 1986, id: 2578 }], // 1986 Peugeot PH 13: SX A32 double (1983-89)
     'simplex spidel': [{ from: 1981, to: 1981, id: 7283 }], // 1981 Peugeot (CH) PY 10 S: SLJ A522, as the 1981 PY 10 S "Spidel SLJ" (judgement call)
     'alfa junior': [{ from: 1973, to: 1973, id: 2682 }], // 1973 Zeus Z 41: the Alfa front, as "Alfa 72" (judgement call)
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
@@ -642,7 +642,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc sport': 2660, // 1986 Raleigh: SunTour FD-XS00, XC Sport 7000
     'suntour xc sport front': 2660, // 1986 Peugeot (US): FD-XS00, XC Sport 7000
     'sun tour sl alloy': 2605, // 1981 Raleigh: SunTour FD-1700, NSL (New SL)
-    'simplex sa 02': 2585, // 1982 Peugeot: Simplex SA02, Serie SA (1975-81) (Simplex spacing links 2026-10-30)
+    'simplex sa 02': 2585, // 1982 Peugeot: Simplex SA02, Serie SA (1975-82) (Simplex spacing links 2026-10-30)
     'huret rider 3 pl': 8962, // 1987 Peugeot (FR) Saint-Bernard: Sachs Huret Rider / Duopar triple front (// linkCoverage pass 2026-10-30)
     'suntour lepree': 2637, // 1986 Raleigh Technium 480: SunTour FD-3400, LePree
     'huret rival av: 62 1d': 8961, // 1987 Peugeot (FR) table: Sachs Huret AV 62.1 D, Rival (part number printed)
@@ -689,27 +689,27 @@ const COMPONENT_OVERRIDES = {
     'simplex sja 103': 2574, // Simplex SJ A103 (1979-89); PKN 13 triple
     'simplex sj 103': 2574, // PF 60 prints "SJ 103"; the triple front is the SJ A103
     'simplex sxa22': 2577, // Simplex SX A22
-    'spidel slj a522': 7283, // Simplex SLJ A522 (1978-84), Spidel-badged on the PRO 10 / PY 10 S
+    'spidel slj a522': 7283, // Simplex SLJ A522 (1977-88), Spidel-badged on the PRO 10 / PY 10 S
     'simplex slja522': 7283,
     'simplex sja 222': 2575, // 1982 Peugeot: Simplex SJ A222 (1981-85)
     // 1984 Peugeot (FR table / GB spec): model numbers printed run together
     'simplex sja222': 2575,
     'simplex sja222cx': 2575, // PH 12 braze-on; no CX row
-    'simplex slja422': 7263, // Simplex SLJ A422 (1981-84)
+    'simplex slja422': 7263, // Simplex SLJ A422 (1981-86)
     'simplex slja 422': 7263, // 1986 Peugeot (FR) table PRO 10
     'simplex sx a 33': 7312, // 1986 Peugeot (FR) table PH 513 / PH 13 triples
     'simplex sxa32 (parallelogram)': 2578, // 1986 Peugeot (FR) table
-    'simplex sxa32': 2578, // Simplex SX A32 (1984-89)
+    'simplex sxa32': 2578, // Simplex SX A32 (1983-89)
     'simplex sxa33': 7312, // PH 13 triple: Simplex SX A33 (1984-89)
-    'simplex sja 422': 7263, // 1983 Peugeot (CA) PY 14 / PX 14: Simplex SLJ A422 (1981-84); "SJA-422" is the SLJ A422
-    'simplex sx a 32': 2578, // 1983 Peugeot (CA): Simplex SX A32 (row dated 1984-89, a year early: the only row)
+    'simplex sja 422': 7263, // 1983 Peugeot (CA) PY 14 / PX 14: Simplex SLJ A422 (1981-86); "SJA-422" is the SLJ A422
+    'simplex sx a 32': 2578, // 1983 Peugeot (CA): Simplex SX A32 (row now 1983-89 from this fitment)
     'simplex sx a 52': 2580, // 1983 Peugeot (CA) PA 60: Simplex SX A52 (1975-83)
     'simplex sja 223': 2576, // 1982 Peugeot PFN 13 triple: SJ A223
     'simplex sja 222 cx': 2575, // 1982 Peugeot (NL) PH 12: braze-on CX version of the SJ A222 (no CX row)
-    'spidel slja 422': 7263, // 1982 Peugeot PY 10 S: Simplex SLJ A422 (1981-84), Spidel-badged
+    'spidel slja 422': 7263, // 1982 Peugeot PY 10 S: Simplex SLJ A422 (1981-86), Spidel-badged
     'simplex lja302': 2567, // 1978 Peugeot (NL): Simplex LJ A302
     'simplex slja 502': [{ from: 1978, to: 1981, id: 7281 }], // 1978 Peugeot (NL) PX 10 LE / PY 10 EC / PY 10 CP: SLJ A502 (1978-81)
-    'simplex slja 522': [{ from: 1977, to: 1986, id: 7283 }], // 1977 Peugeot (DE) PY 10/CP: SLJ A522 (the only row, dated 1978-84; a judgement, one year early); 1986 Peugeot (FR) PY 10 FC too
+    'simplex slja 522': [{ from: 1977, to: 1986, id: 7283 }], // 1977 Peugeot (DE) PY 10/CP: SLJ A522 (row now 1977-88 from Peugeot fitment); 1986 Peugeot (FR) PY 10 FC too
     'sun tour vx': [{ bike: '710', from: 1981, to: 1981, id: 2614 }, { bike: '310', from: 1981, to: 1981, id: 2614 }, { bike: '610', from: 1981, to: 1981, id: 2614 }, { from: 1979, to: 1980, id: 2614 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour FD-1600, VX (1978-84)
     'shimano z202': [{ bike: 'Nimbus', from: 1987, to: 1987, id: 2542 }, { from: 1986, to: 1986, id: 2542 }], // 1986 Raleigh Marathon / Pursuit: FD-Z202-HS, Z-Series (1984-88)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
@@ -733,7 +733,8 @@ const COMPONENT_OVERRIDES = {
     // 1970 Peugeot (Dutch-market catalogue).
     'simplex criterium': [{ from: 1964, to: 1975, id: 2583 }], // Simplex Prestige Criterium AV 223 (no other Criterium front before the 1977 LJ A200)
     // 1974 Peugeot (Dutch catalogue): PA 60 front; also back-fills the 1973 PX 10.
-    'simplex super competition': [{ from: 1971, to: 1976, id: 8794 }], // Simplex AV 3, Super-Competition (1971)
+    'simplex super competition': [{ from: 1971, to: 1980, id: 8794 }], // Simplex AV 3, Super-Competition (1971-80; range to 1980 adds the 1978 PA 60, 2026-11-15)
+    'simplex super lj': [{ from: 1973, to: 1976, id: 2587 }], // SLJ A500, the Super LJ front (bare VeloBase 2589 merged in, 2026-11-15)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace': [{ from: 1990, to: 1993, id: 2511 }], // FD-7403 (8sp HG)
     'shimano ultegra': [{ from: 1988, to: 1991, id: 2478 }], // FD-6400, 600 Ultegra (1989-90 Bianchi; the matcher took a 1990 "Ultegra Tripple" velobase row)
@@ -873,11 +874,11 @@ const COMPONENT_OVERRIDES = {
     'campagnolo victory': 2318, // Victory (1984-86)
     'campagnolo record corsa': 2283, // C-Record (1985-90)
     // 1979 Peugeot (French catalogue).
-    'simplex slja 302': 2567, // Simplex LJ A302 (1978); SLJA is the Spidel-badged name
+    'simplex slja 302': 2567, // Simplex LJ A302 (1978-79); SLJA is the Spidel-badged name
     'simplex lja 302': 2567, // Simplex LJ A302
     'simplex sx a 22': 2577, // Simplex SX A22 (1977-83)
     'simplex sxa 22': 2577, // Simplex SX A22
-    'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-81)
+    'simplex sa 12': 2586, // Simplex SA12, Serie SA (1975-82)
     'shimano deore sis': [{ from: 1987, to: 1989, id: 2496 }], // 1987 Colnago Master Mountain Bike: FD-MT60, the SIS Deore group (1987-89)
     // 1989 Bianchi US catalogue (gringineer scans).
     'shimano deore xt 2': [{ from: 1989, to: 1989, id: 2500 }], // FD-M732, Deore XT-II
