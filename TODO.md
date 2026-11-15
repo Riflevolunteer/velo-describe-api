@@ -69,13 +69,12 @@ Evidence and exact affected specs are in the
 - Drop the inner DB-password encryption (decided 2026-10-29, not applied). `DB_PASSWORD` is a `SecureString` in SSM but its value is also an AES-CTR ciphertext decrypted by `decrypt.js` with the hard-coded key `d6F3Efeq`, so the second layer protects nothing. Steps: put the plain password in local `.env`, run `scripts/create-ssm-params.sh` to update SSM, change `index.js` and the six scripts (`db-query`, `component-diff`, `duplicate-report`, `load-sql`, `generate-bike-update-sql`, `summarize-bike-sql`) to use `config.db.password` directly, delete `decrypt.js` and `test/decrypt.test.js`, deploy and smoke-test `index.js`. Order matters: update SSM and deploy together, or prod gets a plain password it tries to decrypt. Also rotate the DB password afterwards, since the old ciphertext and key are in git history.
 
 - **Remaining brake identifications after the front/rear split (2026-11-15):**
-  selective labels and the eight-bike migration are applied (see the linked
-  cross-catalog notes below). Six
-  halves remain deliberately unlinked:
-  - 1986 Peugeot Orient Express (897) rear SunTour XC Sport chainstay and 1986
-    Miyata Ridge Runner (1105) rear SunTour XC: need model-specific evidence.
+  - Obtain a sharp original 1986 Miyata Ridge Runner rear-brake photo or parts
+    code for **22585**, distinguishing XC CB-6100 from XC Sport CB-6600 by
+    external bow spring versus internal coil construction.
   - 1989 Peugeot Alpine Express (1021) rear Exage Mountain U: manufacturer
-    offers BR-M452 / BR-M453; bike table gives no code.
+    offers BR-M452 / BR-M453; also check the still-available BR-M451 against
+    Alpine-specific parts/marking evidence before choosing a row.
   - 1989 Peugeot Europe Express (1022), front and rear Deore XT: establish
     BR-M730 / M732 and BR-M731 / M733 generations from photos/parts evidence.
   - 1989 Raleigh Chinook (1070) rear: original table prints M450 U-brake,

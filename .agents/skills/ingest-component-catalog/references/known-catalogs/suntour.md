@@ -1,5 +1,35 @@
 # SunTour catalogs processed so far
 
+## XC Sport CB-6600 early evidence — 2026-11-15, read-only review
+
+- Manufacturer *Inside Line*, **Vol.5 No.2, Fall 1985**, hosted by MOMBAT:
+  [cover](https://mombatbicycles.com/85XCSport1.jpg),
+  [printed p.2](https://mombatbicycles.com/85XCSport2.jpg),
+  [printed p.3](https://mombatbicycles.com/85XCSport3.jpg), visually checked.
+  P.3 explicitly identifies the **XC Sport CB-6600 roller-cam caliper** and
+  separate **CB-6700 lever**. Internal coil spring replaces the original XC
+  external bow spring; additional pad-height adjustment and Delrin rollers
+  are specified. This is pre-release/announcement evidence, not proof of
+  commercial availability in 1985. No data_source row registered yet.
+- This supersedes the assumption that a 1986 XC Sport brake cannot be
+  reconciled with **1058 CB-6600 XC Sport 7000** solely because that row started
+  in 1987. Source 310's 1986 Peugeot Orient Express explicitly specifies the
+  XC Sport chainstay rear. **Applied on user approval, 2026-11-15:**
+  **22583 NULL -> 1058**, year_from
+  **1987 -> 1986**, source_ref **91 -> 310**, year_to **1988** and description
+  unchanged, with an exact 1986 Orient Express override. No row insertion or
+  merge. Original values above are the restoration baseline. Transaction
+  affected one component and one spec; rerun zero changes. All 93 loaded CSVs
+  compared: only 22583's generated mapping gained a link. Live readback and
+  scoped quality checks clean, all nine test files pass. Temporary SQL and
+  comparison files removed. Full six-half review and validation are recorded
+  in the bike skill's cross-catalog notes; only unresolved actions remain in TODO.
+- Do not automatically apply this identification to the 1986 Miyata Ridge
+  Runner **22585**: its source 349 p.11 says XC without Sport and shows a
+  seatstay-mounted rear. The scan does not establish the external-bow versus
+  internal-coil construction/code. Keep 1052 CB-6100 versus 1058 open until a
+  sharper original-bike view or parts code is available.
+
 ## SunTour road catalogue 1989 (pp 7-8, 13-14, system chart) and Japanese Superbe page c. 1983 (equusbicycle.com, 6 scans)
 
 - Source: https://equusbicycle.com/bike/suntour/suntourscans.html.

@@ -1652,7 +1652,7 @@ const COMPONENT_OVERRIDES = {
     // Selective front/rear CSV columns, 2026-11-15. Keep printed codes and
     // wording; explicit NULLs preserve unresolved identities after the split.
     'shimano at 50 front with at 50 levers': [{ bike: 'Orient Express', from: 1986, to: 1986, id: 1003 }],
-    'suntour xc sport chainstay mount rear': [{ bike: 'Orient Express', from: 1986, to: 1986, id: null }],
+    'suntour xc sport chainstay mount rear': [{ bike: 'Orient Express', from: 1986, to: 1986, id: 1058 }], // XC Sport CB-6600: SunTour Inside Line, Fall 1985 p.3; Peugeot US 1986 fitment.
     'shimano "new" deore xt frt: br m730 cantilevers': [{ bike: 'Cannon Ball Express', from: 1987, to: 1987, id: 981 }],
     'shimano "new" deore xt rer: br m731 u brake': [{ bike: 'Cannon Ball Express', from: 1987, to: 1987, id: 982 }],
     'shimano deore frt: br m60 cantilevers': [{ bike: 'Alpine Express', from: 1987, to: 1987, id: 978 }], // Printed M60 / M61; Deore models BR-MT60 / MT61.

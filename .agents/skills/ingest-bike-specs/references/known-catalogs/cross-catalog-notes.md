@@ -618,9 +618,10 @@ Evidence and unresolved identifications:
   suggestion is not established for this bike. Europe Express front/rear stay
   NULL between BR-M730 / M732 and BR-M731 / M733 generations. Unnumbered group
   text does not justify the old plan's automatic 983 / 984 picks.
-- The 1986 Orient Express SunTour XC Sport chainstay rear and Miyata Ridge
-  Runner SunTour XC rear still need exact model evidence. Do not choose later
-  XC Sport 7000 or older CB-6100 solely from XC wording.
+- At the split, the 1986 Orient Express SunTour XC Sport chainstay rear and
+  Miyata Ridge Runner SunTour XC rear still needed exact model evidence. The
+  follow-up below now identifies Orient Express's CB-6600; Ridge Runner remains
+  unresolved. Do not choose older CB-6100 solely from XC wording.
 - Other source records: Peugeot US 1986/1987 (310/312, original pages in Peugeot
   notes), Miyata 1986 (349, SS Cycleworks PDF pp.22-23 in Miyata notes).
   Generic cantilever/drum cells and frame-dependent 1987 Raleigh Zenith/Granada
@@ -650,3 +651,95 @@ Validation:
   position hints, scoped overrides and unresolved-match protection. Temporary
   SQL, snapshots, comparison output/helpers, page scans and CSV backups are
   removed after validation; original values and decisions are retained above.
+
+### Remaining split-brake evidence review — 2026-11-15 (read-only)
+
+Live baseline: six NULL position specs on five bikes, IDs **22583, 22585,
+22591, 22593, 22594, 22595**. No DB, CSV or generator changes made in this
+review. This supplements the original split; it does not reverse its
+deliberate NULLs without evidence.
+
+- **Orient Express 1986 rear, 22583:** newly recovered manufacturer evidence
+  identifies the named XC Sport roller cam as **CB-6600**, existing **1058**.
+  SunTour *Inside Line*, **Vol.5 No.2, Fall 1985**, printed pp.1–3, hosted by
+  MOMBAT: [cover](https://mombatbicycles.com/85XCSport1.jpg),
+  [p.2](https://mombatbicycles.com/85XCSport2.jpg),
+  [p.3](https://mombatbicycles.com/85XCSport3.jpg). All three visually checked.
+  P.3 explicitly names **CB-6600 Roller Cam Power Brakes**, internal coil
+  spring rather than the XC external bow spring, Delrin rollers and extra
+  pad-height adjustment. It names the separate **CB-6700 levers**. This
+  establishes the code independently of the bike's group wording or year.
+  Existing 1058 is titled XC Sport 7000, but the same CB-6600 code/construction
+  was already announced before 1986. Reviewed repair, subsequently applied:
+  **22583 NULL -> 1058** with
+  exact 1986 Orient Express override; **1058 year_from 1987 -> 1986**,
+  source_ref **91 -> 310**, using the existing 1986 Peugeot fitment as
+  positive availability evidence. Keep year_to **1988**, description and all
+  other fields. Do not use the pre-release announcement alone as proof of
+  commercial availability in 1985. The bulletin is not yet registered in
+  data_source (queried for Inside Line/85XCSport); evidence URLs live here and
+  in SunTour notes. Application and validation are recorded below.
+- **Ridge Runner 1986 rear, 22585:** re-read source 349's [original PDF](https://sscycleworks.com/galleries/bike-museum/1986-miyata-catalog-compressed.pdf),
+  PDF/printed p.11: prose names SunTour XC and the photo shows the brake at
+  the **seatstays**. A larger render/crop does not establish the spring/roller
+  construction or model marking. The new bulletin explicitly distinguishes
+  original XC external-bow construction from XC Sport internal coil springs;
+  obtain a sharper original-bike brake view before choosing **1052 CB-6100**
+  versus **1058 CB-6600**. Retain NULL and do not assume the Orient match also
+  applies here.
+- **Europe Express 1989 front/rear, 22594/22595:** inspected original source
+  320 model photo and rear-brake detail, `cycles peugeot 1989 (24).jpg`,
+  [catalogue host](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1989.html).
+  Printed p.24 explicitly describes a *shark vin* (chainstay protector), and
+  the close-up shows a Deore XT U-brake. Neither readable model marking nor a
+  source-backed unique generation distinction was established. Keep NULL
+  between **981/983 BR-M730/M732** front and **982/984 BR-M731/M733** rear.
+  A 2026 auction of a claimed-original 1989 Europe Express describes M730
+  front, but is not factory evidence for this Dutch catalogue bike; do not
+  treat drivetrain codes, a seller's originality claim or a Shark Fin/Tooth
+  accessory alone as brake-generation proof.
+- **Alpine Express 1989 rear, 22591:** source 320 printed p.22 / image (22)
+  confirms the bike photograph and Exage Mountain fitment, but its side view
+  does not establish the rear code. The Aug 1988 manual offers M452/M453;
+  keep that ambiguity open. Do not exclude **7213 BR-M451** solely because
+  it was omitted from that manual: the separate original 1989 Ozark fitment
+  already proves later availability. Need an Alpine-specific marking or
+  parts list before choosing 7213 / 7628 / 976.
+- **Chinook 1989 rear, 22593:** an independent complete scan of the same
+  [Raleigh manufacturer catalogue](https://ebykr.com/library/raleigh-1989-lightweight-catalog/)
+  confirms the table still says M450 U and the model prose says U rear.
+  This confirms the printed contradiction, not the intended correction.
+  Shimano's [BR-M451 service sheet](https://si.shimano.com/en/pdfs/si/P-94/SI-P-94-000-00-ENG.pdf)
+  names BR-M451 with BL-M450 levers; that is a possible source of family/code
+  confusion, not proof Chinook fitted M451. Preserve the value and NULL until
+  independently identified.
+
+Retrieval limits: Retrobike's XT 1989 PDF and direct shell downloads of
+Shimano's BR-M733 drawing returned 403; the Shimano drawing remained available
+through the document browser. Do not repeat the same blocked downloads without
+a new retrieval lead. Task-created scans, renders and HTML were removed after
+recording URLs/pages; the SQL retained for approval was removed after the
+application below.
+
+### Orient Express CB-6600 application — 2026-11-15, user approved
+
+- Existing Rear Brake spec **22583**, bike **897**, label **52**, source
+  **310**, exact value `SunTour XC Sport, chainstay mount rear`: component_id
+  **NULL -> 1058**. Added the exact **1986 Orient Express** generator override.
+  Preserved source/value/spec ID, CSVs and the already-linked AT-50 front.
+- Component **1058** year_from **1987 -> 1986**, source_ref **91 -> 310**;
+  year_to **1988**, title, description, source_id and all other fields unchanged.
+  To restore, set spec component_id back to NULL only guarded by its current
+  1058, identity/value/source; restore component year_from/source_ref to 1987/91
+  guarded by the new 1986/310 and unchanged 1988 end. No component insert/merge.
+- Actual generator comparison through integrated matching across **93 loaded
+  CSVs / 20,600 specs**: exactly this one NULL -> 1058 mapping changed;
+  generated links **7,326 -> 7,327**. `bike-update.sql` was untouched. The
+  earlier review's other five NULL halves remain NULL in both generated and
+  live data. Verified the new override does not apply to other bikes or years.
+- Guarded transactional SQL affected **one component and one spec**; rerun
+  affected **zero**. Live readback confirms 1986–1988, both source references
+  310, one Rear Brake spec and correct target. Consistent-snapshot quality
+  checks found **zero findings** on 1058 and all its linked specs. `npm test`
+  passed all nine test files and `git diff --check` passed. Temporary SQL,
+  comparison script and snapshots removed after validation.

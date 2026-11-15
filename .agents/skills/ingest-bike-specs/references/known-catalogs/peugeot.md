@@ -635,6 +635,17 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 
 ## 1986 Peugeot — `1986_peugeot_spec.csv` (FR, data_source 309: 32 bikes, 428 specs, 81 linked) and `1986_peugeot_us_spec.csv` (US, data_source 310: 16 bikes, 310 specs, 81 linked)
 
+- Orient Express rear-brake follow-up, 2026-11-15 (user approved): spec
+  **22583 NULL -> 1058 CB-6600**, exact 1986 bike-scoped override. SunTour
+  Inside Line Vol.5 No.2, Fall 1985 p.3 explicitly identifies XC Sport as
+  CB-6600; the 1986 bike fitment extends its start **1987 -> 1986** and sets
+  source_ref **91 -> 310** (year_to 1988 and description unchanged). No CSV
+  or spec-value/ID changes; existing AT-50 front retained. All 93 loaded CSVs
+  compared: only this link gained. Live readback and scoped integrity checks
+  clean; SQL rerun zero changes; all nine test files pass. Source URLs,
+  restoration baseline and the other unresolved halves are in cross-catalog
+  notes and the component SunTour notes.
+
 - Mavic hub follow-up, 2026-11-15 (user approved): US PX spec **14700**
   `Mavic 506 RD` **NULL -> 3397 Mavic 500 RD**; same correction on US 1987
   PX 10 spec **15661**. Original Peugeot US 1986 table image (18)/b18.jpg and
