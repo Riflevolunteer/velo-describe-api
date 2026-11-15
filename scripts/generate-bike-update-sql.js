@@ -1017,9 +1017,9 @@ const COMPONENT_OVERRIDES = {
     'sun tour gt': 7789, // 1981 Raleigh: SunTour RD-1200, GT
     'suntour lepree': 7827, // 1986 Raleigh Technium: SunTour RD-6700, Le Pree (GT), the only 1980s LePree rear
     'suntour xc sport rear': 4788, // 1986 Peugeot (US): SunTour RD-XS00, XC Sport 7000
-    'simplex sx 660': 4649, // 1982 Peugeot: Simplex SLJ SX660, Super LJ (undated row) (Simplex spacing links 2026-10-30)
+    'simplex sx 660': 4649, // 1982 Peugeot: Simplex SLJ SX660, Super LJ (dated 1982-84 from this fitment, 2026-11-15)
     'simplex sx660': 4649, // 1984 Peugeot
-    'simplex s 001 t p': 4647, // 1983 Peugeot: Simplex S001 T, Prestige (1975-87)
+    'simplex s 001 t p': 4647, // 1983 Peugeot: Simplex S001 T, Prestige (1975-89)
     'shimano light action l522gs': 7553, // 1986 Raleigh: Shimano RD-L522, Light Action (Shimano exact-model links 2026-10-30)
     'shimano light action l523': 4518, // 1986 Raleigh: Shimano RD-L523, Light Action
     'huret rider': 8958, // 1986 Raleigh Teton: Sachs Huret AR 46.1 T, Rider, the only dated Rider rear (// linkCoverage pass 2026-10-30)
@@ -1064,7 +1064,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sx410 gtsp': 4620, // SX410 GT
     'simplex slj5500cp': 7309, // SLJ5500 CP
     'simplex slga550cp': 7309, // GB table misprint of SLJA 5500 CP
-    'simplex slj6600tsp': 4655, // PY 10 FC: SLJ6600 T (1981-84)
+    'simplex slj6600tsp': 4655, // PY 10 FC: SLJ6600 T (1981-88)
     'simplex slj660tsp': 4655, // GB table PX 10 DU: misprint of SLJ 6600 TSP
     'simplex slj 6600 tsp': 4655, // 1985 Peugeot PY 10 FC (p. 3 caption)
     'shimano rd 6207': 4470, // 1985 Peugeot PX 10 SH: RD-6207, 600EX
@@ -1121,9 +1121,9 @@ const COMPONENT_OVERRIDES = {
     // RD-1100 (1973-85, 28T / 14-30) fits by capacity and tier; no DB row is titled HR, so this is by abbreviation.
     'suntour hr': [{ from: 1985, to: 1985, id: 4702 }], // SunTour 2600 / RD-1100, Honor
     // Peugeot 1970-72 (Dutch catalogues): two velobase rows share the title.
-    'simplex criterium': [{ from: 1965, to: 1970, id: 4644 }, { from: 1971, to: 1976, id: 4645 }], // Simplex Criterium 1965-70 / 1971-76 (row dated 1971-73; the 1974-76 Dutch catalogues still list it)
+    'simplex criterium': [{ from: 1965, to: 1970, id: 4644 }, { from: 1971, to: 1976, id: 4645 }], // Simplex Criterium 1965-70 / AR 637 NI Criterium 1971-76 (row dated 1971-74; the 1975-76 Dutch catalogues still list it)
     // 1974 Peugeot (Dutch catalogue): PX 10 LE / PX 60, captioned "Achterderailleur Simplex Super LJ".
-    'simplex super lj': [{ from: 1971, to: 1978, id: 4650 }], // Simplex SLJ5000 (1971-78), the Super LJ rear; 4649 SX660 is undated
+    'simplex super lj': [{ from: 1971, to: 1978, id: 4650 }], // Simplex SLJ5000 (1971-78), the Super LJ rear; 4649 SX660 is 1982-84
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano dura ace': [{ from: 1990, to: 1996, id: 4505 }], // RD-7402 (8sp); matcher took Dura-Ace EX
     'shimano ultegra': [{ from: 1988, to: 1991, id: 4466 }], // RD-6400, 600 Ultegra (1989-90 Bianchi); matcher took 1997 RD-6500
@@ -1221,7 +1221,7 @@ const COMPONENT_OVERRIDES = {
     // 1986 per Shimano's official Tourney history (previously dated 1990).
     // TY20 SIS launched in 1990; the earlier DB-series is a different era.
     'shimano tourney': [{ from: 1987, to: 1987, bike: 'STRADA', id: 7607 }],
-    'simplex prestige': [{ from: 1900, to: 1979, id: 4583 }, { from: 1980, to: 1987, id: 4647 }], // Simplex Prestige (variant of AR637P/NI), 1971-1974; 1982 Peugeot (NL) PL 8 M: S001 T Prestige (1975-87)
+    'simplex prestige': [{ from: 1900, to: 1979, id: 4583 }, { from: 1980, to: 1987, id: 4647 }], // Simplex Prestige (variant of AR637P/NI), 1971-1974; 1982 Peugeot (NL) PL 8 M: S001 T Prestige (1975-89)
     // 1973-76 Raleigh Gran Sport DL 160 "Simplex Maxi": the AR 642 Maxi-Prestige,
     // Simplex's only Maxi rear (long cage, wide range; 14-28 freewheel on the bike).
     'new simplex maxi': [{ from: 1973, to: 1976, id: 9692 }], // Simplex AR 642 P, Maxi-Prestige
@@ -1316,7 +1316,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo gran sport rear': 4118, // 1970 Falcon 78 / 80 (5-speed, no front mech): 1012/4 Gran Sport (1955-73)
     'campagnolo valentino rear': 4162, // 1970 Falcon E.C.74 (5-speed): 2170 Valentino Extra, as bare 'campagnolo valentino'
     // 1979 Peugeot (French catalogue).
-    'simplex slj 5500 cp': 7309, // Simplex SLJ5500 CP (1979-84)
+    'simplex slj 5500 cp': 7309, // Simplex SLJ5500 CP (1979-86)
     'simplex sx 410 t': 4621, // Simplex SX410 T (1977-85)
     'simplex sx 410 tsp': 4621, // TSP variant not in DB; SX410 T is the same gear
     'simplex 410 tsp': 4621, // as above (PK 60 wording)

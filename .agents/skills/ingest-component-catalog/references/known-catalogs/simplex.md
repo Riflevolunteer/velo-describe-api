@@ -722,3 +722,17 @@ identify the 1980s rear specs.
   year_from 1989 -> 1987. The 1987 Peugeot (FR) catalogue prints "Simplex Alpha
   T/P" on Bretagne / P 18SA W / Touraine / P 8SA W, which is the row's own T/P
   10071 ref. source_ref stays 59; the description notes the 1987 fitment.
+
+## Rear derailleur audit fixes — 2026-11-15 (user approved; audit items 1, 3, 4)
+
+- `year_to` widened from explicit Peugeot model prints (fitment evidence, not a production claim, as 4561 Alpha T on
+  2026-11-14); `source_ref` unchanged, fitment appended to each description: 4647 S001 T, Prestige 1987 -> 1989 (1988 PH 8
+  SL / PH 18 SL / PH 50 S "S001T", 1989 Dauphiné "SO 01 T"; the 1989 catalogue lists S002 only); 7308 SX1 T 1984 -> 1986
+  (1986 P 10 L, PH 20 M "SX1T/SP"); 7309 SLJ5500 CP 1984 -> 1986 (1986 PRO 10, PY 10 M); 4655 SLJ6600 T 1984 -> 1988
+  (PY 10 FC 1985, 1986, 1988).
+- 4649 "SLJ SX660, Super LJ": NULL dates -> 1982-1984 from the 1982 / 1984 Peugeot PH 12 "SX 660" only. Identity still
+  open (SX 6xx series or SLJ6600 4654 / 4655); title kept until a Simplex source prints SX 660.
+- 4645 retitled "Simplex Criterium" -> "Simplex AR 637 NI, Criterium" (`search_text` "Simplex AR 637 NI Criterium";
+  description lead updated). 4644 keeps "Simplex Criterium" (1965-70 spans AR 537 NI and AR 637 NI).
+- Validation: 6 guarded updates, rerun 0. All 93 CSVs regenerated before/after: output identical (no mapping change).
+  `quality-report` has no findings on the six rows (8 date flags and the 4649 missing-date flag cleared).
