@@ -253,6 +253,14 @@
   same blog also has 1984 and 1987 Gipiemme pages (covered by `data_source` 269 / 270 from disraeligears).
 
 
+## gipiemme.com maker archive (checked 2026-11-15): its "1982" is also the c. 1986-87 catalogue
+
+- https://gipiemme.com/en/catalog/ links PDFs for Gipiemme 1979-2018 and Nisi 1975 / 1977 / 1980 / 1985. The
+  "GIPIEMME-Catalogo-1982.pdf" (14 pp) has the "8 times world champions" cover and post-1984 codes (100AA, 800AES),
+  i.e. `data_source` 270 (compared page by page 2026-11-15: the same 14-scan set as disraeligears, identical blank
+  inside cover and back page, so not a separate source; do not re-ingest); the "1979" file is a 3-page Special / Dual-Sprint brochure without codes. No genuine 1982
+  catalogue is known. Remaining comparisons and the Nisi plan are in TODO (source hunts).
+
 ## Gipiemme catalogue 1988 (24 scans, disraeligears.co.uk), `data_source` 287
 
 - Label `Gipiemme catalogue (1988)`, country IT. Source: https://www.disraeligears.co.uk/site/gipiemme_-_catalogue_1988.html
