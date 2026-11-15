@@ -903,6 +903,16 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
   a transaction: 12 rows affected. Read-back confirmed every target;
   rerun affected zero rows. Live brake coverage 627 -> 639 of 1013.
 
+- **2026-11-15 read-only follow-up:** live specs 4727 (1983 Royale 10) and
+  6357 (1984 Royal 10) already link to 7929 via their 610/750 wordings; this
+  supersedes the older catalogue sections' unlinked statements. Re-read original
+  1987 UK table p.15: Zenith 10 / Granada 10 specify 610/610 for Gents and 610
+  front / 733 Symmetric rear for Lady's. Specs 8781 / 8804 transcribe that
+  correctly and remain NULL pending deliberate frame-variant/spec representation.
+  A merge of the generic 999 family and specific 610 rows does not resolve this.
+  Full component evidence is in the Weinmann catalogue notes. No DB or generator
+  changes in this review.
+
 ## 1983 Silhouette Positron correction — 2026-11-07
 
 - User-approved: rear spec **4884**, Silhouette 5 & 10, value

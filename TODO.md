@@ -79,12 +79,23 @@ after validation; retain what is still needed for unfinished work or review.
   5. API / client: check `/bikedetail` and the client render the two new labels sensibly (sort order, label text).
   - Out of scope: the 1985 Peugeot TM 9 G / TH 9 G and 1988 VTT 2 LF cantilever + drum cells (generic, nothing to link either way), and the 1987 Raleigh Zenith 10 / Granada 10 Gents / Lady's 610 / 733 cell (it splits by frame, not front / rear).
 
-- Possible duplicate brake rows (found 2026-11-13): 7929 "Weinmann AG Vainqueur 999 (610 / 750)" (1966-84) and 1136 "Weinmann AG 610 Vainqueur 999" (undated). Resolve before linking the 1987 Raleigh Zenith 10 / Granada 10 Weinmann 610 cells.
+- **Weinmann centre-pull follow-ups after read-only review, 2026-11-15:** keep
+  family row 7929 (1966-1985, 81 links) separate from the specific 610 row 1136
+  (1966-1987 after approved enrichment, two 1986 Peugeot links) and 750 row
+  1148 (1970-1980, no links).
+  The October 1981 catalogue p.8 confirms distinct 610 (49-61mm) and 750
+  (57-75mm) reach configurations. **Remaining:** decide a deliberate frame-variant/
+  spec representation for the 1987 combined equipment before linking.
+  The 1983-84 Raleigh 610/750 specs 4727 / 6357 are already
+  linked to 7929. The original 1987 table p.15 confirms Zenith 10 / Granada 10
+  specs 8781 / 8804 combine Gents 610/610 and Lady's 610-front/733-rear equipment;
+  retain NULL until a deliberate frame-variant/spec representation is reviewed.
+  The identity review made no DB changes; the subsequent approved 1136 enrichment
+  is applied and validated (see Done). No matcher changes. See the
+  [Weinmann notes](.agents/skills/ingest-component-catalog/references/known-catalogs/weinmann.md).
 
 ## Open: component data follow-ups
 
-
-- Shimano BMX group ownership (found 2026-11-06): 18 older Shimano rows still use Campagnolo-owned group 156 "BMX". Review the remaining legacy assignments against Shimano DX (BMX) group 327.
 
 - **Component dates audit, 2026-11-09:** 486 linked specs on 200 components fall outside the recorded component date range; 186 linked specs on 47 components have an incomplete date range. These are review candidates, not proven wrong identifications: distinguish catalogue attestation dates, later bike fitment, reused names and actual generation mismatches before changing dates or links. Full read-only snapshots: `/private/tmp/component-todo-audit-era-mismatches.tsv` and `/private/tmp/component-todo-audit-missing-dates.tsv`. The original narrow follow-up list now covers 12 specs on six parts: 3141 Tange Falcon (5), 3388 Normandy Luxe Competition (2), 1398 Sedis Gold (2), 6899 Vittoria Pro L Slick (1), 1365 Everest Serie Special Oro (1), 9126 Gipiemme Crono Sprint (1). 25 descriptions currently reach the 255-character limit (previously 35); inspect before assuming truncation.
 - Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Maxy II and the Nuovo Tipo C1264/C1265 identification (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
@@ -456,7 +467,7 @@ Miyata Omnium / 912 gearing and GMG shifters do not establish RD-6207 versus RD-
   - **t6476 is a dead lead**: Motobécane "Catalogue pièces de rechange Vélos-Cross" no. 7176, Sept 1982, 13 legible scans (800 px). BMX / youth models only (MX 252 / 152 / 102, BX 20 / 14, VX 601 / 50, MX 32 / 21, 41 MX), Motobécane part numbers with generic text; only maker names are Maillard Helico rear hub / sprocket, a Shimano RD and a Selle Royal saddle. Do not re-check.
   - **Rigida: no catalogue.** New dated evidence: **Motobécane "Pièces de rechange bicyclettes" 1979, n° 51196** (Tonton Vélo f=8 t=53482, 88 MB PDF attachment id=419434, 3057 px scans; an earlier edition than held source 381): p.28 "Roue 700 C jante Rigida 13/20 dural à pneu moyeu Normandy à blocage" (PD 28083), p.20 a bare "Jante 700 C dural à pneu 36 trous Rigida", so 13/20 = 1320 attested 1979 (no weight). Bikecology 1981 (ebykr) names 13-20, the narrower 13-19 and "Rigida Alu"; Bike Warehouse 1980 (held) has RI-1320-Z, 13 mm double-wall. Nothing for Chrolux / Jade / Saphir. Eliminated: IceniCAM library (no Rigida / Viscount / Kitching / Freewheel / Holdsworth folders), labibleduvelo (no Rigida or Viscount blog), bikalog, velovintageagogo (search + all f28 titles), Tonton Vélo f=8 (all titles; t20999 is an early steel-rim advert), ebykr full text. Browser-only: classicrendezvous Rigida page (AL-1320 photo), bikeforums 591298 / 1149705 / 763100.
   - **Viscount: no catalogue.** Fuji 1989 (ebykr) "Viscount 2296 vinyl" on the Thrill 24, dating 2296 to 1989; Fuji 1987-90 and Puch 1986 / 1988 (ebykr) give other numbers (2216, 2218, 2222, 2026, 2200, 2325, 2827, SOFlex, Emerald, "anatomic"), Bianchi 1987 "Viscount Nuovo". eBay titles confirm "Terra" / "Terra Nova" as Viscount MTB saddles (undated, Taiwan). Nothing names 2285. **Best lead for Viscount and Rigida: the 1984-89 Ron Kitching "Everything Cycling" catalogues** (the June 1984 accessories / tubulars edition is held as data_source 261 and lists no Rigida / Viscount; no 1985-89 edition scanned online; retrobike threads 159101 (a member has Spring 1989 and a 1984 set + 1985 price list) and 21901; Otley Cycle Club holds the Ron Kitching library; Warwick Modern Records Centre holds Freewheel catalogues; retrobike 435965 "1983 Freewheel catalogue"). Needs a person to ask / visit.
-  - **Ofmega: the 1985 / 1988 La Bicicletta Guida componenti are already held** (259 / 262, Ofmega rows loaded both times). Note the '88 scans on disraeligears are now 1560 px (the 2026-10-23 read had ~436 px), so the fine print can be re-read if a Guida '88 value needs it. **New: Ofmega "Gruppo Squadra" brochure, 8 pp, "PRINTED IN ITALY 1988"** (https://www.disraeligears.co.uk/site/ofmega_-_gruppo_squadra.html; distributor F. Tagliabue, Milano): 2000 Mistral crank 610 g, 2250 SQ BB 310 g, 5020 SQ Premier Squadra RD 210 g (index prints "0520 SQ"), 5120 SQ FD 90 g, 5224 / 5225 levers 70 g/set, 6000 SQ hubs 520 g, 2620 Mistral pedals 360 g, 8010 SQ headset 120 g. Not yet reconciled with the DB (`ingest-component-catalog` candidate, small). Also on disraeligears, unread: Bicisport Apr 1985 "Il nuovo gruppo Ofmega" test, La Bicicletta Apr / May 1984 Mistral adverts; equusbicycle `components/Ofmega.jpg` (undated c. 1984-86, 612 px, codes 0520 Premier / 2660 Sintesi / 0505 Mistral). Still unsourced: "Vantage Quattro", "Super Corsa MC-130", "Nuovo Mondial" (the guides spell it Mundial). Browser-only: classicrendezvous (bot wall), bikeforums 182250.
+  - **Ofmega: the 1985 / 1988 La Bicicletta Guida componenti are already held** (259 / 262, Ofmega rows loaded both times). Note the '88 scans on disraeligears are now 1560 px (the 2026-10-23 read had ~436 px), so the fine print can be re-read if a Guida '88 value needs it. **New: Ofmega "Gruppo Squadra" brochure, 8 pp, "PRINTED IN ITALY 1988"** (https://www.disraeligears.co.uk/site/ofmega_-_gruppo_squadra.html; distributor F. Tagliabue, Milano): 2000 Mistral crank 610 g, 2250 SQ BB 310 g, 5020 SQ Premier Squadra RD 210 g (index prints "0520 SQ"), 5120 SQ FD 90 g, 5224 / 5225 levers 70 g/set, 6000 SQ hubs 520 g, 2620 Mistral pedals 360 g, 8010 SQ headset 120 g. Already reconciled 2026-11-13 (source 384): descriptions and dates corrected, three component rows added, no bike links; see [Ofmega notes](.agents/skills/ingest-component-catalog/references/known-catalogs/ofmega.md). Also on disraeligears, unread: Bicisport Apr 1985 "Il nuovo gruppo Ofmega" test, La Bicicletta Apr / May 1984 Mistral adverts; equusbicycle `components/Ofmega.jpg` (undated c. 1984-86, 612 px, codes 0520 Premier / 2660 Sintesi / 0505 Mistral). Still unsourced: "Vantage Quattro", "Super Corsa MC-130", "Nuovo Mondial" (the guides spell it Mundial). Browser-only: classicrendezvous (bot wall), bikeforums 182250.
   - **Vittoria: tubulars covered by 259 / 262; no clincher source 1982-93** (Rally, Competizione, Techno, Randonneur, Zaffiro). IceniCAM has a 1954 cutting only; disraeligears' Vittoria items are the derailleur maker.
   - **Panaracer / Panasonic: little.** panasonicbikemuseum.info has the USA catalogues' "Tires and Tubes" pages for 1982 (`/wp-content/uploads/1982TiresTubes.jpg`) and 1983 (`1983tiretubes.jpg`), ~970 px: P-230 / P-270 / P-300 tubulars, Racing Extra, Skin Side, Gumwall with weights / PSI / sizes, but no model names (no Tour Guard, Super Sport etc.); site also has USA 1979-89 and EU 1991 / 1993 catalogue pages, unread. bikalog `panaracer_asb.pdf` is German c. 1996-97 (too late). Browser-only: retrobike 461262.
 
@@ -564,6 +575,25 @@ Review evidence and proposed actions: `/private/tmp/existing-source-review/revie
 
 ## Done
 
+- **2026-11-15 Weinmann 1136 enrichment applied (user approved):** description
+  expanded to the 49-61mm alloy centre-pull construction, twin springs, Delrin
+  bushes and 610 arm codes; NULL dates -> 1966-1987 as model/availability bounds,
+  source_ref 1 -> 162. Manufacturer Model 1966 / October 1981 parts books and
+  1987 Raleigh fitment evidence recorded in the
+  [Weinmann notes](.agents/skills/ingest-component-catalog/references/known-catalogs/weinmann.md).
+  One row affected; exact readback correct, two Peugeot links unchanged, mixed
+  Raleigh specs still NULL; rerun zero. Temporary SQL removed after validation.
+- **2026-11-15 Weinmann 610/750/999 read-only review:** checked live rows and
+  links, generator overrides, October 1981 catalogue p.8, original 1987 Raleigh
+  table p.15 and 610 specimen photos. Family/reach overlap is not a demonstrated
+  duplicate; retain the separate records. Corrected the stale 1983-84 unlinked
+  claim; specific 610 enrichment subsequently applied (above); frame-dependent
+  1987 specs remain open.
+- **2026-11-15 Quality worklist review:** proposed Weinmann 610/750/999 brakes
+  as the next bounded review. Removed the stale open Shimano BMX group item
+  (resolved 2026-11-14; [notes](.agents/skills/ingest-component-catalog/references/known-catalogs/shimano.md))
+  and corrected the already-reconciled Ofmega Squadra source status. Coverage
+  figures remain their dated snapshots; no live DB recount in this review.
 - **2026-11-15 Scratchpad housekeeping:** added cleanup during work and after
   validation, with pending-review/resume files retained only while needed. Added
   a root `AGENTS.md` reminder so housekeeping applies to all repository work.

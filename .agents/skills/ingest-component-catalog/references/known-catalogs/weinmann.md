@@ -417,3 +417,105 @@
   and https://www.velobase.com/Pages/ViewComponent.aspx?ID=8C67E3D2-496F-4A7E-B615-33CE702554C3
 - Applied `/tmp/weinmann-999-deluxe-merge-2026-11-07.sql` in a transaction;
   brake rows 760 -> 759. No new rows or source records.
+
+## 610 / 750 / Vainqueur 999 identity review — 2026-11-15 (read-only)
+
+- Live baseline: 7929 is the catalogue family row, dated 1966-1985, source_ref
+  390 (Brügelmann 1985), with 81 bike links. Specific 610 row 1136 has NULL dates,
+  source_ref 1, and two links: 1986 Peugeot US P 8 / P 18 C Avoriaz specs 14826 /
+  14846. Specific 750 row 1148 is dated 1970-1980, source_ref 94, with no links.
+  Raleigh-badged 610 row 1138 has six links and dates 1970-1983; 1150 Raleigh
+  750 has none. Rows 499 / 500 are Brake Levers, not competing caliper records.
+- Re-read the October 1981 manufacturer catalogue (source 162), printed p.8,
+  scan `WEINMANN VÉLOS 1981 (7).jpg` at
+  https://labibleduvelocataloguesweinmann.blogspot.com/p/weinmann-1981.html .
+  It explicitly distinguishes 610 reach 49-61mm and 750 reach 57-75mm; inner /
+  outer arms are 1009.610 / 1008.610 versus 1011.750 / 1010.750. Shared parts
+  include Delrin bushes 1229, springs 1490.750L/R and cable carrier 1243. Front
+  and rear centre bolts are listed separately; 610 and 750 are reach options,
+  not inherently front-only and rear-only identities.
+- Inspected 1136's original specimen photo (black oval Weinmann 610 Vainqueur
+  999 labels, two-spring mounted-pivot design):
+  https://www.velobase.com/Pages/ViewComponent.aspx?ID=0BFCF661-99CE-4E38-A381-D3987CB956A5
+  (main photo `712AFD89-6BE1-4151-930F-FD07616C52C3.jpeg`). Also inspected
+  1138's Raleigh/Weinmann 610 badge and matching general construction:
+  https://www.velobase.com/Pages/ViewComponent.aspx?ID=F30E9AB4-FBAF-4A60-98D0-FFCC44CF1142
+  (main photo `8902B297-1570-4C4D-81D0-5D47269C647D.jpeg`). No evidence here
+  establishes a separate Raleigh mechanical generation; existing badge-specific
+  mapping decisions were not changed in this review.
+- Decision: **retain 7929 / 1136 / 1148 as family versus specific reach records**.
+  The original TODO's possible-duplicate wording overstated the overlap.
+  Merging 1136 into 7929 would discard the 610 identification from the two
+  Peugeot links. Keep separate without interpreting them as different generations.
+- Live check supersedes the older unlinked statements: 1983 Raleigh Royale 10
+  spec 4727 and 1984 Royal 10 spec 6357 already link to 7929, and exact
+  year-ranged generator overrides exist for both wordings.
+- Re-read original 1987 Raleigh UK printed p.15, scan
+  `1987raleighcat_uk_15_lg.jpg` at
+  https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1987_3.html .
+  Zenith 10 and Granada 10 each state 610/610 for Gents and 610 front plus 733
+  Symmetric rear for Lady's. Live specs 8781 / 8804 reproduce this correctly and
+  remain NULL. A single link cannot represent both frame configurations; this
+  requires a deliberate variant/spec representation before linking, rather
+  than a duplicate merge or a front/rear-only split of the existing combined cell.
+- Proposal at the end of this first review (superseded by the source research below):
+  enrich 1136 with the manufacturer 610 specifications and
+  establish traceable availability bounds. Its NULL dates are an evidence gap;
+  the 1981 catalogue and 1986 Peugeot fitment do not establish production start /
+  end, and earlier held catalogue attestations need checking before choosing a
+  lower bound. No SQL prepared or applied; no component, link or generator
+  changes. Downloaded review files were temporary and removed after recording
+  these page references and findings.
+
+## Row 1136 source-backed enrichment — 2026-11-15 (user approved, applied)
+
+- Re-read source 161, the c.1975 Delaware Mercantile manufacturer parts book,
+  https://labibleduvelocataloguesweinmann.blogspot.com/p/weinmann-1975.html ,
+  printed p.2 (scan 2) and p.8 (scan 8, `WEINMANN CATALOGUE 1975 (8).jpg`).
+  P.2 lists 610-Front and 610-Rear as complete brakes. P.8 explicitly labels
+  the pictured two-spring, Delrin-bushed 610/750 construction **MODEL 1966**;
+  610 arms are 1008.610-66 outer / 1009.610-66 inner, with bearings 1229,
+  springs 1490.750 L/R, bridge 1234.1 and cable carrier 1243. This matches the
+  construction of 1136's specimen, rather than the earlier incised-lettering
+  generations 1105-1107. The book's c.1975 edition date is estimated, but the
+  Model 1966 designation is printed in the source itself.
+- Re-read source 162 printed p.8: the 610 reach is 49-61mm, distinct from the
+  750's 57-75mm. It lists the same pivot-bearing, spring and cable-carrier
+  construction, with 610 arms numbered 1008.610 / 1009.610. Retain both black
+  and red label variants already recorded; the catalogue does not date each
+  label colour independently.
+- Later evidence: source 310's 1986 Peugeot US Avoriaz specs 14826 / 14846 name
+  Weinmann 610 and already link to 1136. Source 224, original 1987 Raleigh UK
+  table p.15 (re-read in the preceding review), explicitly specifies Weinmann
+  610 for Zenith 10 / Granada 10. This attests the model in 1987, without
+  identifying a particular label colour or justifying links for combined frame
+  variants. No discontinuation year is established.
+- **Applied single-row change:** retained the title, category, brand, group,
+  source_id, search_text and two existing bike links. Set year_from NULL ->
+  1966 from the explicit manufacturer model designation, year_to NULL -> 1987
+  from dated bike fitment, and source_ref 1 -> 162 as the manufacturer source
+  used for the specification enrichment. Interpret 1966-1987 as documented
+  model/availability bounds, not exact manufacture dates or a label-specific
+  production run. Earlier generic 610 mentions alone do not establish this
+  construction before Model 1966.
+- Applied description (191 characters):
+  `Alloy centre-pull caliper, 49-61mm reach; front or rear mounting. Two return springs, Delrin pivot bushes (1229), cable carrier 1243; arms 1008.610/1009.610. Variants: black label; red label.`
+- Original values for restoration: description
+  `Weinmann AG 610 Vainqueur 999, Switzerland. Variants: black label; red label.`;
+  year_from NULL, year_to NULL, source_ref 1. Source_id remains
+  `0BFCF661-99CE-4E38-A381-D3987CB956A5`.
+- Read-only preflight confirmed
+  the exact old-value guard selects row 1136, the description is 191/255
+  characters, source 162 exists and the current bike-link count is two.
+- Applied on user approval through `scripts/load-sql.js`: one UPDATE, one row
+  affected. Readback confirmed the description, 1966-1987 dates and source 162,
+  with ID/title/category/brand/group/source_id/search_text unchanged. Bike specs
+  14826 / 14846 remain linked to 1136 with their original values; mixed 1987
+  Raleigh specs 8781 / 8804 remain NULL. Rerunning the guarded SQL affected zero
+  rows. No new components, merges, generator changes or bike-link updates.
+- The generator's component fetch and matcher use ID/title/category, not these
+  description/date/source fields; all matching inputs are unchanged. Recorded
+  date bounds retain the model/availability caveats above. Temporary SQL was
+  deleted after successful readback and rerun, and its now-empty task directory
+  removed. Downloaded HTML/scans had already been removed after recording the
+  evidence here; old/new values and restoration details remain in these notes.
