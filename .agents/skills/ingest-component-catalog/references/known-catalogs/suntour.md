@@ -1626,3 +1626,20 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   RD-1700 Cyclone, whose description now notes the black-knuckle variant. Added a
   Rear Derailleurs 'suntour cyclone' 1986 null override, because without 4733 the
   1986 Raleigh Supercourse auto-matched 4734 Cyclone 3-Pully (1980).
+
+## Rear derailleur audit fixes — 2026-11-15 (user approved; audit items 1-3)
+
+- Wrong link corrected: spec 3693 (1974 Motobecane Mirage "SUN TOUR V.G.T.") 4695 4900 VGT (1971-73) -> 4704 4902
+  V-GT Luxe (1974-76). The '74 Products catalogue shows the 4902 replacing the 385 g 4900 and the 1975 catalogue calls
+  the 4902 "VGT"; the same bike prints "V.G.T. Luxe" in 1975. Bike-scoped 1974 Mirage entry added to `'sun tour vgt'`.
+- 4791 RD-XE01-GXB, XCE: VeloBase `year_from` placeholder 1980 -> 1992 (1992-1992). The 1990 catalogue (source 385)
+  marks XCE new for 1990 as RD-XE00 (11056); XE01 is the 1992 code. Supersedes the 1992 note's "no earlier bound".
+  Front 2663 and crank 2002 XCE still carry the 1980 placeholder.
+- Dates from explicit model prints (fitment evidence; no 1986 SunTour catalogue held; descriptions unchanged): `year_to`
+  1985 -> 1986 on 4778 RD-6300 XC (1986 Raleigh Elkhorn), 7827 RD-6700 Le Pree GT (Technium 480), 4739 RD-6000 Cyclone
+  S (Miyata 710 "New Cyclone"), 4723 RD-4400 aR II GT (Miyata 100 "AR-GT"), 4725 RD-4200 aR II (Technium 440);
+  `year_from` 1987 -> 1986 on 4788 RD-XS00 XC Sport 7000 (Miyata Terra Runner, Peugeot Orient Express) and 4746 Hero
+  (Version 1) (four 1986 Raleigh); 4705 RD-1500 VGT `year_to` 1982 -> 1983 (1983 Raleigh Royal / Royale "VGT Large
+  Capacity"). All were existing override picks.
+- Validation: 1 spec + 9 rows; rerun 0. All 93 CSVs regenerated: only the Mirage mapping changed (4695 -> 4704).
+  `quality-report` has no findings on the touched rows (14 date flags cleared).

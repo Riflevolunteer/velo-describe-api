@@ -1110,7 +1110,7 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 640 gt': [{ from: 1986, to: 1989, id: 10053 }],
     'simplex sx 640 gt sp': [{ from: 1986, to: 1989, id: 10053 }],
     'sun tour vx gt': [{ from: 1979, to: 1980, id: 4707 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour RD-2400, VX (GT) (1977-84)
-    'suntour hero': [{ from: 1986, to: 1986, id: 4746 }], // 1986 Raleigh Record / Sportif / Capri / Grand Mesa: SunTour Hero (Version 1); a judgement, the row is dated 1987, one year later (Version 2 is undated)
+    'suntour hero': [{ from: 1986, to: 1986, id: 4746 }], // 1986 Raleigh Record / Sportif / Capri / Grand Mesa: SunTour Hero (Version 1), now 1986-87 from this fitment (Version 2 is undated)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
     // 1985-86: AR 47.1 D (1986 Peugeot (US) Triathlon / Galibier).
     'huret new success': [{ from: 1985, to: 1986, id: 4402 }, { from: 1987, to: 1988, id: 4412 }], // 1988 Peugeot Mont Cenis too. Sachs Huret ARIS New Success 1st Gen. (the only row dated 1987; 4402 is 1985, 4403 the 1980 touring)
@@ -1155,7 +1155,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105': [{ bike: "A 500A W 'Galaxie'", from: 1987, to: 1987, id: 4449 }, { bike: 'Junior 105', from: 1987, to: 1987, id: 4449 }, { bike: 'Sirocco 12', from: 1987, to: 1987, id: 4449 }, { bike: 'Ventura 12', from: 1987, to: 1987, id: 4449 }, { to: 1988, id: 4452 }, { from: 1989, to: 1989, id: 4449 }, { from: 1990, to: 1992, id: 4455 }], // Corsa / Record Sprint: RD-A105, 105 Golden Arrow (1983-85) / 1989 Bianchi Krono: RD-1050 / 1990 Bianchi: RD-1055 105SC / 1987 Peugeot (FR) Galaxie: RD-1050 (SIS)
     'suntour cyclone ii': 4742, // Competition: SunTour RD-3500, Cyclone Mark-II (1981-85)
     'sun tour cyclone ii gt wide ratio': 4743, // Royal: SunTour RD-3700, Cyclone Mark-II (GT)
-    'suntour ar': 4725, // Sirocco: SunTour RD-4200, AR (aR II) (1982-85)
+    'suntour ar': 4725, // Sirocco: SunTour RD-4200, AR (aR II) (1982-86)
     'sun tour ar': 4725, // Quasar / Zenith
     'sun tour arx': 4727, // Clubman: SunTour RD-4300, ARX
     'huret eco duopar': 4276, // Weekender: Huret Duopar Eco 2690-01 (VeloBase 4277 "Version 1" merged in, 2026-11-15); the matcher hit the plain Eco
@@ -1165,7 +1165,7 @@ const COMPONENT_OVERRIDES = {
     'huret titanium bodied duopar': 8173, // Huret Duopar 2648 / 2654 (titanium, long cage); Sachs Huret DuoPar (titanium) 4398 merged into it 2026-11-02
     // 1978 Raleigh (US, ebykr scan).
     'sun tour cyclone gt': [{ bike: '1000', from: 1979, to: 1979, id: 4738 }, { bike: '800', from: 1979, to: 1979, id: 4738 }, { id: 4738 }], // Super Course: SunTour 2812 99 01 / RD-1800, Cyclone GT (1976-82)
-    'raleigh sun tour vgt': 4705, // Super Grand Prix / Grand Prix: RD-1500 V-GT Luxe version 2 (1978-82); v1 ended 1976
+    'raleigh sun tour vgt': 4705, // Super Grand Prix / Grand Prix: RD-1500 V-GT Luxe version 2 (1978-83); v1 ended 1976
     'raleigh sun tour seven gt': 7788, // Record Ace: SunTour RD-2000, Seven GT (1978-85)
     // "Positron" alone does not identify a model: leave the 1978 Record FFS/PPS and 1989 Monaco unlinked.
     // The 1983 Silhouette also stays unlinked: its standard five-speed freewheel does not establish Positron-FH.
@@ -1261,7 +1261,7 @@ const COMPONENT_OVERRIDES = {
     // Shifter halves now live in the Shifters column (compound-cell split).
     // Plain "V.G.T." in the 1974 catalogue alongside a "V.G.T. LUX": the
     // pre-Luxe 4900 VGT (SunTour '73 Products), not the 1974 4902.
-    'sun tour vgt': [{ bike: '610', from: 1982, to: 1982, id: 4705 }, { bike: '610', from: 1981, to: 1981, id: 4705 }, { bike: '710', from: 1980, to: 1980, id: 4705 }, { bike: '610', from: 1980, to: 1980, id: 4705 }, { id: 4695 }], // SunTour 4900, VGT (type 2C / 2D)
+    'sun tour vgt': [{ bike: '610', from: 1982, to: 1982, id: 4705 }, { bike: '610', from: 1981, to: 1981, id: 4705 }, { bike: '710', from: 1980, to: 1980, id: 4705 }, { bike: '610', from: 1980, to: 1980, id: 4705 }, { bike: 'Mirage', from: 1974, to: 1974, id: 4704 }, { id: 4695 }], // SunTour 4900, VGT (type 2C / 2D); 1974 Mirage -> 4902 V-GT Luxe (replaced the 4900 in 1974, 2026-11-15)
     'sun tour vgt lux': 4704, // SunTour 4902, V-GT Luxe (version 1)
     // 1975 Motobecane.
     'huret jubilee wide ratio': 4303,
