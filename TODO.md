@@ -87,7 +87,6 @@ after validation; retain what is still needed for unfinished work or review.
 
 ## Open: component data follow-ups
 
-
 - **Component dates and metadata review:** use `node scripts/quality-report.js` for current IDs and reasons. See [scope, evidence and validation](README.md#checking-database-quality). Review identity/source evidence before changing links or dates; inspect the flagged descriptions before assuming truncation. Flagged dates are review candidates, not proven wrong identifications: distinguish catalogue attestation dates, later bike fitment, reused names and actual generation mismatches before changing dates or links. Narrow follow-up list: 3141 Tange Falcon (5 specs), 3388 Normandy Luxe Competition (2), 1398 Sedis Gold (2), 6899 Vittoria Pro L Slick (1), 1365 Everest Serie Special Oro (1), 9126 Gipiemme Crono Sprint (1).
 - Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Maxy II and the Nuovo Tipo C1264/C1265 identification (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
 - Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); the SunTour "syncro-shift" Cyclone II lever (Palo Alto 1981/82; no part number, no row).
@@ -97,16 +96,15 @@ after validation; retain what is still needed for unfinished work or review.
 
 Brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
-`/linkCoverage?unlinked=N` is the live worklist.
+`/linkCoverage?unlinked=N` is the live worklist. Leave-unlinked calls and reviewed cases are in [link decisions](.agents/skills/ingest-bike-specs/references/link-decisions.md); do not relink them without new evidence.
 
 ### Open after the 2026-11-01 passes
 
 - Judgement call: Biopace 48/38/28 on the 1988 Raleigh Ozark II / Royal [18009 18045] and 1989 Royal ("Shimano Biopace 48/38/28t"; derailleurs "Wide Ratio, indexed shift" / "Shimano SIS indexed", the Royal page only says "a BIO-PACE chainset"): no group printed, FC-B124, FC-M450, FC-M350 all fit.
 - Source gaps, no row (all spellings counted; the 2026-11-01 web sweep in "source hunts" found nothing): Simplex SX 620 rear (5, 1987-88 Peugeot), Nervar "2020 S sealed B.B." (2020 / 3020 crankset rows and links are already loaded), Solida 52D (3), MKS AR-3 (6, 1987-89 Raleigh; not in MKS Edition 11 c. 1985 either, so later), SR CRH-310 hubs (5, 1986 Raleigh), Strong NS-3 (3, 1990 Bianchi), Vredestein Racer II (4, 1988 Raleigh).
 
-### Calls from 2026-10-24 (leave until a catalogue or photo settles them)
+### Source gaps (no suitable row)
 
-- Decided 2026-10-30, leave unlinked: 1982 Peugeot "Lightrace Luxe" headset (7; only 3032 Lightrace Grand Luxe, undated, and 3033 Super, 1984); 1981 Peugeot "Simplex SJA" front on PX 10 S, PSV 10, PFN 13 (3; neighbour years disagree: 102 / 222, triple 103 / 223); 1983 Peugeot "Maillard 700 Pro" hubs (3; large vs low flange, neighbour years do not say); 1982 Peugeot "Mafac Promotion" levers (3; four variants); 1990 Bianchi "Sedisport 270 black" (2; no 270 row).
 - No suitable row (source gaps): Reydel Profil (6), Vittoria Flash M19. (Bare "Rapidfire Plus" on the 1993 Bianchi MTBs resolved 2026-11-13 by each bike's rear derailleur group, 8 links.)
 
 Named parts with no suitable period row or no source yet (worth a search if a source turns up):
@@ -124,14 +122,13 @@ Named parts with no suitable period row or no source yet (worth a search if a so
 - **Remaining freewheel identifications:** 1987 / 1989 Peugeot "Maillard 700 7-speed" x3 (2124 Compact Super and 8133 SH both dated 1980-82); bare Peugeot "Maillard Normandy" (several rows); 1986 Miyata "SHIMANO UG 6 speed" x5 (600 MF-6150 is 1978-84 and these are lower-tier bikes). Brand plus tooth range, tooth range alone and either/or specs stay unlinked where they cannot identify a model.
 - **Remaining freewheel source gaps:** Shimano Exage Sport (two 1989 Peugeot specs); Sachs-Huret New Success six/seven-speed (three 1987-89 Peugeot specs); Shimano Deore six-speed (1987 Peugeot).
 
-- Decided 2026-10-30, leave unlinked: Atom 13/26 6 speed, 1981 Raleigh Professional [9341] (2050 black vs 2051 silver cogs, colour not printed); Shimano Gold 13/28 with 600 EX, 1981 Raleigh Criterium [9285] (no Gold freewheel row); Regina CXS 7-speed, 1986 Cinelli [2309] (2169 is the 6-speed only).
 - No suitable row: Shimano 105 freewheel / cassettes 1984-87 [1296 6134 8673 8695]; Everest Special Cromo (4, already listed).
 
 ### Seatposts
 
 SR work is in [the source worklist](#sr-sakae-next-work).
 
-Leave unlinked: the three plausible Peugeot Spidel links; 1980 Peugeot "SR Laprade, fluted, lightweight" (five SR Laprade rows: 5857 / 5858 / 5859 / 5860 / 5862); Peugeot "Stronglight" / "Strong alloy" text (8, maker only); 1986 Falcon "Suntour QR-120" (a seat bolt, not a post). Remaining SR source gaps: CT-P5E; CRE / CR-E / CRE-100 (keep separate from CLE-100 11308); SRE-100/105; MTE-110 (not MTE-100 5849). See the scoped SR worklist for current evidence. Also no row: Mori Stainless Clad (1986 Miyata); Kalloy SP-243 / SP-250 (1989 Bianchi, with the SP numbers below).
+- Remaining SR source gaps: CT-P5E; CRE / CR-E / CRE-100 (keep separate from CLE-100 11308); SRE-100/105; MTE-110 (not MTE-100 5849). See the scoped SR worklist for current evidence. Also no row: Mori Stainless Clad (1986 Miyata); Kalloy SP-243 / SP-250 (1989 Bianchi, with the SP numbers below).
 
 - Source gaps (left 2026-10-30): 1982 Peugeot PH 12 "Simplex Dural, 24 mm" (no 24 mm Simplex post) and 1976 PY 10 "Simplex dural, anodised" (8375 SLJ 3639 is polished, 7305 SLJ4164 starts 1978).
 - Biggest pot: 1987 Raleigh "Sakae fluted alloy with single Allen bolt adjustment" x10 + "SR fluted alloy..." Royal 18 [8836]. The 1983-84 catalogues print the same wording with "CT-P5" (-> 5857), but 1987 drops the model and the 1984 Sirocco was a CT-P6; part of the SR 1983-87 source gap.
@@ -139,36 +136,27 @@ Leave unlinked: the three plausible Peugeot Spidel links; 1980 Peugeot "SR Lapra
 
 ### Rims
 
-Leave unlinked (several rows fit): Miyata "ARAYA 16-B" (four 16B rows); 1989 Bianchi "Campagnolo Omega Super hard anodized" (4957 / 4961 / 4958 all cover 1989); "Ambrosio Elite anodized" (Extra Elite / Super Elite / Aero Elite); "Araya RM alloy" (RM series); 1989 Peugeot "Mavic 190 NE" (DB has 190FB and 195NE); 1988 Peugeot "Mavic 400" x2 (model not identified); 1989 Bianchi "Crono 700 and Hypothesis 26" (two rims in one cell); Raleigh 1989 "Alesa alloy / hollow section" (12) and "Nisi Sprint / High Pressure" (maker, no model). New source gaps (named models with no row): Ukai LA-14 (3) / 7Z, Weinmann Aero Alloy (6, 1988 Raleigh) and 425 X, Sumo 7X (3, 1986-87 Peugeot), Velotech by Mavic (3, 1986-89 Peugeot), Araya 14G, Rigida Jade / Saphir / CTX 10, Wolber Alpine.
+- New source gaps (named models with no row): Ukai LA-14 (3) / 7Z, Weinmann Aero Alloy (6, 1988 Raleigh) and 425 X, Sumo 7X (3, 1986-87 Peugeot), Velotech by Mavic (3, 1986-89 Peugeot), Araya 14G, Rigida Jade / Saphir / CTX 10, Wolber Alpine.
 
-- Also several rows fit: 1991-92 Bianchi Proto / X-4 "Campagnolo Sigma" (4; tubulars 4970 Sigma Strada, 7032 Sigma 20 Strada, 7031 Sigma Pave, 4969 Sigma Crono all cover 1991), 1994 Cinelli Supercorsa "Campagnolo Omega" (4955 / 4957 / 4961), 1991 Colnago Krono "Ambrosio Aero (spoked-wheel option)" (4; 4892 Aero, 9481 Aerodynamic, 9482 Aero Elite). Either/or and two-rim cells stay unlinked: "Campagnolo Victory or Ambrosio Metamorphosis" (Victory Strada vs Crono also open), "Mavic Monthlery / Sport or Pellet", "Martano Strada (tubular) / Araya 20A smoked", "FIR Tour or Ambrosio Giro d'Italia". Still no row: Araya RM-18T, Ukai LA-14 / EX-17 / 22A / 7Z, Weinmann 716E / 425 X / Aero, Sumo 7X / 14F, Rigida Jade / Saphir / CTX 10, Wolber Alpine, Velotech, FiR Mase Lega / MT 222 / MT 240.
 - No suitable row: Akront 700c / Pista (4, 1973 Zeus); Ambrosio California (3) and disc wheels; FiR Tour, MTB Pro, tri-spoke (3); Martano G-P80, Pro; Mavic Sprint (3, ferrule / tubular wording); Rigida Jade (3), Saphir (2); Sumo 14F; Ukai 22A, EX-17 (2); Weinmann 116, 716E (2), and the 1987 Raleigh "hollow section 700c eyeletted" (5, model not printed).
 
 ### Saddles
 
-Leave unlinked: the Colnago Concor family (decided 2026-10-30); 1987 Peugeot Galaxie "Mondial silver" (Mundialita or an Iscaselle Mondial); the 1993 Bianchi house saddles (9200 supersoft, Hi-density, Gelfoam); 1982 Peugeot "Ideale 'Donna'" (no Donna row); "Viscount mtn / MTB anatomic" (5, maker only). New source gaps (named models with no row): Vetta Maxi (3, 1986 Miyata 2, 1987 Peugeot), ISCA Aero Airline (3, 1986 Falcon), Ariake 77C-DX, Kashimax GTV, Italmanubri 635-S (2), Royal 6275, Falcon "AK 2603".
+- New source gaps (named models with no row): Vetta Maxi (3, 1986 Miyata 2, 1987 Peugeot), ISCA Aero Airline (3, 1986 Falcon), Ariake 77C-DX, Kashimax GTV, Italmanubri 635-S (2), Royal 6275, Falcon "AK 2603".
 
-- Left by user's call: 1994 Cinelli Genius Machine / Soft Machine "Bontrager Titanio" (5540 Selle San Marco Bontrager Ti is dated 1990 only) and "San Marco Rolls" on the 1994 Cinelli Supercorsa and 1991 Colnago x4 (5563 Rolls ends 1988; extending it would reverse the Colnago no-wrong-era decision); 1994 Genius Strada "San Marco Rolls Tit." (no titanium Rolls row). Either/or: "Selle Italia Super Turbo or Turbo", "Brooks Professional or Ideale 90", "Ideale 2002 or treated leather". No row: San Marco Tuono (1994 Cinelli), Bontrager E 40, Isca Record Lycra / Competition / Nabuk, Raleigh G.T. Mk IV / Mk V, Selle Royal Racing / Leather Racing.
-- Decided 2026-10-30, leave unlinked: Brooks B-15 / B15, 1970-72 Raleigh Super Course / Gran Sport [7819 9403 8958 8977] (every B15 row is 1950s-dated; needs a 1970s Brooks catalogue); bare "Concor" (16), "Concor Moda" (4) and "Concor in MODA grid colours" (3), 1986-88 Colnago: Concor is a family by 1985 (Supercorsa, Profil, Max, Bufalo, Confort, SL versions), not one model.
-- Decided 2026-10-30, leave unlinked: San Marco Gilux race, 1978 Peugeot PS / PSN 10 [9987 9968] (5555 GI-LUX 311 undated, 5556 GI-LUX 312 from 1980); Selle Italia CX / Sella Italia CX, 1982 / 1984 Peugeot [11116 12301] (no Selle Italia CX row; 5524 Selle Royal CX only if the maker is misprinted).
 - No suitable row: Brooks CR3 (3); Concor Mountain-Pro / Mountain-Pro (4); Gallet 30 / 31 / 31 race / 33 / course (5); Gauthier Rilsan race (2, already listed); Isca 406 (3), 407 (3), Competition; Reydel Profil (7); Royal 463/2; San Marco Luxe race; Selle Italia Aero II (3); Tenor (3); Viscount 2285 / 2296 / Terra / Touring 2200 / Nuovo micro-adjust / anatomical mountain (8); Italia Corsa, Bianchi Corsa.
 
 ### Stems
 
-Leave unlinked: "CTA" on the 1989 Peugeot Alpine Express / VTT Express MTBs (6452 is the aero road CTA); "Atax or CTA" (6, either / or). New source gaps (named models with no row): J.Y. M4P / M3P pulley (5, 1989 Bianchi); Kalloy KA-60/80/100 (3) and KA-222P (1989 Bianchi; possibly the undated 6570 Kalloy AL-222, no evidence); H.L. HS-P (2); SR AEROX (2) and CPS-80 (1986 Miyata), SR MTS-131 (1987 Peugeot); Kusuki S-Win (2, 1986 Miyata, alongside the Kusuki "WIN" below) and Rocky 2 / Rocky II (2); Falcon "Aero alloy Model 200" (5, no maker printed).
+- New source gaps (named models with no row): J.Y. M4P / M3P pulley (5, 1989 Bianchi); Kalloy KA-60/80/100 (3) and KA-222P (1989 Bianchi; possibly the undated 6570 Kalloy AL-222, no evidence); H.L. HS-P (2); SR AEROX (2) and CPS-80 (1986 Miyata), SR MTS-131 (1987 Peugeot); Kusuki S-Win (2, 1986 Miyata, alongside the Kusuki "WIN" below) and Rocky 2 / Rocky II (2); Falcon "Aero alloy Model 200" (5, no maker printed).
 
-- Left by user's call: 1994 Cinelli "Cinelli Grammo Titanio Ahead" (2; 6497 Grammo Titanium 1993-2000 covers the year but is undifferentiated, 10137 Road Ahead starts 1996). No row: 3T Procrom Ahead, 3T Procurve (1994 Cinelli). 1991 Bianchi "Nitto Dynamic III" stays on its do-not-link override (bianchi.md).
 - Judgement call: Sakae Royal forged alloy, 1987 Randonneur 18 [8848] (no Royal row reaches 1987). Bare "Alloy AH", 1985 Raleigh Pursuit [3503], set do-not-link 2026-10-30.
-- Decided 2026-10-30, leave unlinked: Sakae RY / RY 70 mm / RY 80-90 mm, 1985 Bianchi Randonneur 700 / Rekord 26 / Speciale-II [5779 5796 5746] (only 1974 RY-70 / 90 / 110 and 1982 RY2 rows); TTT Grand Prix, 1970-71 Raleigh Professional Mk II / III [7753 9356] (only 1960 / 1964 / undated Gran Prix *Special* rows).
 - No suitable row: 3ttt special mod. Colnago (7, 1979 Colnago); Kusuki "WIN" AH / alloy (8, already listed) and Rocky III adjustable; Philippe Professionnel / Professional (5, 1975 Motobecane and 1978 Peugeot; only Philippe Competition 1980 exists); PIVO De Luxe (3, already listed); KL alloy (3, 1987 Bianchi); G.B. Classic Line (2, 1981 Raleigh); JY M3 / M3 low rise (2, 1990 Bianchi MTBs); ITM Pro and ITM forged laser etched (1990 Bianchi); Modolo Flyer (already listed); De Rosa pantographed; Nitto Technomic Aero (existing do-not-link).
 
 ### Handlebars
 
-- Leave unlinked: 1975 Motobecane Grand Touring Randonneur bend and Tandem combined front/rear cell; the two 1986 Cinelli Almarc bars (11171 Almarc is a 1980-81 3ttt Merckx / Rekord-78 set, not these).
-"MIYATA SIGNATURE Alloy" (4) is a house bar: leave. Leave unlinked: 1986 Miyata 100 "SR CTSD" (nearest is 7888 CTD, a different code); Miyata "SR RANDONNEUR Alloy" (3; RN-L / RN-S / RND / WR, nothing to choose on); 1989 Peugeot Cosmic "Franco Italia" (Philippe 2897 1970-82 or Milremo 2868 1984); 1989 Peugeot Anjou "CTA alloy randonneur bars" (2782 ATAX CTA is a racing bend); 1978 Peugeot "Atax Philippe, demi-course" (no demi-course row). New source gaps (named models with no row): H.L. DR-8 / DR-9 / Dirtdrop / MTB-110 / MTB Bulge / semi-rise (~10, 1987-90 Bianchi; no H.L. bar rows at all, the largest group), Kusuki KR-LB / BMT-3-26 and SR MTB-301 (1986 Miyata), SR MTB-204 (1986 Falcon), ITM Krono, Kusuki SMC-F (1989 Bianchi), Cinelli Almarc leather covered (2, 1986 Cinelli; not identified).
+- New source gaps (named models with no row): H.L. DR-8 / DR-9 / Dirtdrop / MTB-110 / MTB Bulge / semi-rise (~10, 1987-90 Bianchi; no H.L. bar rows at all, the largest group), Kusuki KR-LB / BMT-3-26 and SR MTB-301 (1986 Miyata), SR MTB-204 (1986 Falcon), ITM Krono, Kusuki SMC-F (1989 Bianchi), Cinelli Almarc leather covered (2, 1986 Cinelli; not identified).
 
-- Leave unlinked: "3ttt / TTT Competizione" (1987, 1991-92 Bianchi; three bends), 1991-92 Bianchi "ITM Mondiale" (3; 9198 Mondial 90/A ends 1990 and names a model the cell does not), 1991 Bianchi Sakae MTB-220 / MTB-227 (only MTB-226SB, 1993), 1994 Cinelli "3T Pro Light" (2) and "Cinelli Eubios 26" (no rows), 1981 Bianchi "T.T.T. Rekord".
-- Decided 2026-10-30, leave unlinked: "Racing bend" / "Racing bend, light alloy", 1970-76 Peugeot x13 [7368 7507 7571 9539 9567 9698 9670 7274 7258 7314 7299 7448 7433] (no maker printed; 2901 Franco Belge 354 starts 1979); T.T.T. Record Competizione, 1978 Bianchi Campione del Mondo CX [12513] (DB splits it by bend: 2752 Gimondi / 2750 Merckx / 2777 TdF; none printed).
 - No suitable row: 3ttt special mod. Colnago (7); SR MTB-224 Power Bulge (5, 1990 Bianchi) and SR/Modolo anatomic (4); T.T.T. Rekord Standard / Record Standard (2, 1978 Bianchi; the 3ttt Record 1st version is ranged to 1975) and T.T.T. Franco Belge (2, 1975-76 Raleigh); Kusuki WP-B / WPR-B (7, already listed); ITM Mondial Pista and ITM Italia aero; H.L. racing / MTB bulge / semi-rise (5, 1987-90 Bianchi); SR CTB, SR CTR Randonneur (3, 1986 Raleigh); PIVO Professional (3, 1975 Motobecane); Belleri touring bar (2, 1981 Kalkhoff); Mountain Bike CMC-709 / MS-710 (1984 Peugeot MBs); Modolo Flyer; Corsa Strada model (3, 1981 Bianchi); Competición (2, 1973 Zeus).
 
 ### Tyres
@@ -183,20 +171,6 @@ Leave unlinked: "CTA" on the 1989 Peugeot Alpine Express / VTT Express MTBs (645
   (1), 6886 Vittoria Flash M23 (1). Michelin's 26 flags are resolved; see the
   [Michelin notes](.agents/skills/ingest-component-catalog/references/known-catalogs/michelin.md).
   Select's 1986 date and the French catalogue dates retain their inference caveats.
-- **Intentional unlinked Ritmo identification (2026-11-14):** Raleigh
-  specs 4536 / 4621 / 4669 name plain Clement Ritmo, without evidence identifying
-  LTX 55 (6767). LTX 55 is a real photographed marking, but the Ten Speed Drive
-  1983 page used for its dates/255 g construction describes only plain Ritmo.
-  Unsupported links cleared and generator override set to null; 6767's
-  unsupported catalogue dates/construction withdrawn, photographic source restored.
-  [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/clement.md).
-  Need dated LTX 55 evidence and independent Raleigh fitment identification;
-  do not extend its dates from the plain name.
-- **Intentional unlinked identification:** 1983 Bianchi Super Pista spec 1023
-  prints only Clement Pista; Guida distinguishes Pistard from numbered Pista
-  tyres. Unsupported 6765 link cleared and override set to null on 2026-11-14.
-  Need a model code, casing/weight or independent fitment evidence to identify it.
-  [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/clement.md).
 - **Then: review new-row link candidate.** 1973 Zeus Z 59 spec 59,
   "D'Alessandro Mondiale Tubulars", now has a candidate: 11136 Mondiale,
   1973–82 (Brügelmann 1973, source 399). Review model/source evidence before
@@ -206,20 +180,6 @@ Leave unlinked: "CTA" on the 1989 Peugeot Alpine Express / VTT Express MTBs (645
   unresolved); 1987 Peugeot Challenge gumwalls x5 (15794/15813/15832/15851/15869)
   versus existing 6846 Peugeot Challenge, already linked from 1983 spec 11710
   (source/continuity unresolved). These are candidates, not approved links.
-- **Structural baseline:** no dangling component/source references, wrong linked
-  categories, exact duplicate tyre specs or component group ownership conflicts.
-  69/601 components have incomplete dates. Seven automatic duplicate groups are
-  classified as configurations/generations; no automatic merge recommendation,
-  near-name or parenthetical pair. No merges proposed.
-  Groups kept separate: Schwalbe Blizzard Pro 10225/10227/10541/10542 (TPI/bead),
-  Vredestein Slimline Sprint 8771/8772 (630/622 mm), Clement Seta 8970/6769
-  (track/less identified), Vittoria Record 9062/9067 (tubular/clincher),
-  Specialized TriCross 9909/10230 (generation), Schwalbe Stelvio 10228/10229
-  (wheel size), Dourdoigne 11144/11145 (weight configuration).
-- **Triage:** the classifier flags 209 unlinked specs for possible review, but
-  includes bare sizes, finishes and maker-only false positives. Generic and
-  house-part strings remain plain text. 61 Colnago Gommitalia/GommaItalia specs
-  lack sufficient model identification; their volume does not justify default links.
 
 Remaining named source gaps: CST C-740 / C-860 / C-861 (6, 1989-90 Bianchi), Vredestein Racer II (4, 1988 Raleigh), IRC Crosscountry (3) and Peak (1989 Bianchi), Michelin ATB Surmond (2, 1989 Peugeot) and Chevron gumwall (1983 Peugeot), Panaracer Cannonball Express and Cheng Shin Ridge Line III / Canyon Express (1986-87 Peugeot), National Trisport (1986 Miyata), Specialized Ground Control / Crossroads II (1988 Raleigh; 9910 Crossroads is 1983-84), Vittoria Oscar X (1989 Bianchi).
 
@@ -236,11 +196,7 @@ Keep the compound 1989 Bianchi "Vittoria Formula 1 and Juniore tubulars"
   (only 6841 P-27RD, 1980); 1977 Peugeot "Peugeot Professionnel or Clement
   Criterium" (either/or). No suitable row: Clement 88 Competition, Specialized
   Umma Gumma, IRC Peak Sigma, Panaracer Smoke Comp K, 1994 Cinelli Sava Snake
-  [20185]. New Brügelmann tyre records and revised dates supersede the older
-  11-13 claim that only HP22/Timbuk II had been added; the audit lists all 27
-  additional tyre rows above ID 10973, currently unused by these specs.
-- Decided 2026-10-30, leave unlinked: Clement silk tubulars, extra-light, 1978 Bianchi Specialissima Barcellona [12481] (three road Seta Extra rows: 6738 / 8971 / 6761); Hutchinson Silk, 1971-72 Raleigh Professional / Pro Track x3 [9364 8919 8900] (no row fits: 9050 is a 1976-78 track tyre, 9266 is 1985).
-- Decided 2026-10-30, leave unlinked: Vittoria Seta / Seta original, 1985 Bianchi Super Leggera / Centenario [5693 5677] (three road Corsa Seta variants: 9248 / 9429 / 6877); Wolber Rallye, 1984 Bianchi Nuovo Racing [1036] (Rallye 19 / 20TKS / 22 / 23); Dunlop High Pressure Road Racing, 1970 Raleigh Gran Sport [7799] (6801 is 1940-60); IRC "Roadlite Ex" / Roadlite 100PSI skinwall, 1986 Raleigh Prestige / Technium 480 [8184 8325] (9099 is a 1978 27in Road Lite Z).
+  [20185].
 - No suitable period identification/row: Peugeot Trophy tubulars (8), Peugeot
   Professionnel / Professional 225 g / Super Competition; Wolber Transalpino (2);
   Clement Meeting; Michelin Competition Slick; Vittoria Uni / Open Tubular /
@@ -253,118 +209,45 @@ Keep the compound 1989 Bianchi "Vittoria Formula 1 and Juniore tubulars"
 
 ### Pedals
 
-Most unlinked values are toe-clip / reflector text ("Course with toe clips and straps" 17, "Sports pedals with reflectors" 10), Raleigh house pedals (717, 501, 917, "Raleigh ball bearing"), the Maillard CX / Atom source gap (see source hunts) and Colnago group fan-out ("Shimano AL 11", "Shimano Santé"): leave.
-- Leave unlinked (several rows fit or either / or): 1982 Battaglin "Gipiemme Cronospecial / Special" (existing do-not-link: 3747 Cronospecial and 3752 Special are separate pedals); 1972 Raleigh "Campagnolo Pista" (3711 / 3715, both 1971+); 1980 Raleigh "Sun Tour Superbe" (PL-1000 Custom or PL-4000 Pro); 1981 Peugeot "Atom 450" x2 (450RA or 450RN); 1981-82 Peugeot "Spidel 700" / "700 RA" x4 (Spidel 700 rows end 1980; Spidel badge variants kept apart); Bianchi "Ofmega Pista" (Master or Mistral Pista) and "Ofmega Competizione" (not the Super Competizione).
 - No suitable row: H.K. / VP VP-330 / 331 / 333 / 389 / 382S / 230 and VP500 (~10, 1984-90; the largest); HTI-A1 / HTI-P15 / HTI-851 (6); SR SP-452 (3), SP-513 / SP513C (2), SP-518 (2), SP-153 (2), MP 150, Lowfat Pro and CTP-170 (1990-93 Bianchi); MKS AR-5, PB-20, NT-1 (1986 Miyata), C 5000 ATB and AR-3 (6, already listed; none in the MKS Edition 11 catalogue); Tioga Surefoot-6 (4, 1993 Bianchi); Union 632 (2, 1984 Raleigh); Lyotard 77R (3) and 90.
 
 ### Shifters
 
-Most unlinked values are generic or system text ("Simplex" 8, "stem shifters" 6, "Handlebar stem power shifters" 8, the 1983-84 Raleigh "Direct Fit / Clip Fit / Alloy Ratchet Levers", "SIS levers", "Aris Index"): leave.
-- Leave unlinked (several rows fit): 1983-84 Raleigh "Shimano 600 AX Top Mounted Direct Fit Levers" x2 (SL-6310 or SL-6311 braze-on); 1986 Raleigh "Suntour Cyclone" (6278 / 7826 / 6279); 1989 Bianchi "SunTour GPX AccuShift" (6286 B / 6287 C); 1989 Bianchi "SunTour XCE-4050" (6285 SL-4050 is titled Edge, the road group); 1987 Raleigh "Huret Rival ... black ratchet levers" (6108 is the indexed Aris); 1974 Motobecane "Simplex Prestige stem shifter" (stem row 6226 is 1964-65).
 - No suitable row: Shimano 1993 Rapidfire Plus for XTR / Deore DX / Deore LX / Exage LT / ES (8, 1993 Bianchi; only Altus C10 7733 exists); Shimano Z501 stem shifters (3, 1987 Peugeot), 532 / 525 SIS (1987 Bianchi), EM-30 / EM-50 (1985-86 Raleigh), Z105, Deore XT-II bar-con SIS (1989 Bianchi); Simplex ICL Index (1989 Peugeot); SunTour PUB-M, DLN, Hero (1985-86 Raleigh).
 
 ### Brake Levers
 
-Most unlinked Peugeot values name no model ("Double levers" 21, "Course levers" 13, "Weinmann" 8, "CLB" 7, "Drilled course levers with rubber hoods" 7, the 1987-88 "Road grips, double lever" strings): leave.
-- Leave unlinked: 1982 Peugeot "Mafac course (double cable on the right)" x2 (the plain "mafac course" override goes to 357 Course 419 / 429, but a two-cable lever may not be that part; not applied 2026-11-02); 1989 Bianchi "Shimano Sport LX aero" (BL-A450 / A451 / A452 / A453 all Exage Sport); 1982 Peugeot "Mafac Promotion" x3 (344 / 345 / 346 plus the dural Promotion = Course 130 decision) and "Mafac, drilled" x2; 1989 Bianchi "Dia-Compe 250S aero" (AC250 / AGC250, no 250S) and "SunTour XCE-4050" (455 is the Edge road lever); 1986 Raleigh "DC 630/165 (racing); DC 630/135 (touring)" (two levers in one cell).
 - No suitable row: Modolo Quattro aero (2, 1989-90 Bianchi); Shimano Z-324 dual levers (2, 1986 Miyata; only Z325 / Z326); Universal AER (2, 1986-87 Colnago); Dia-Compe GX-400 Aero (1986 Miyata) and DC 630 (1986 Raleigh); Shimano AT 90 (1987 Peugeot); Spidel professional (2, 1982 Peugeot); Chang Star (1990 Bianchi).
 
 ### Crankset
 
-Most unlinked Peugeot values are material / tooth text ("Dural square taper, 42 x 52T", "Steel, 46T") or the Solida / Nervar source gap (priority list item 2); most Raleigh values are the house "Exclusive Alloy Cotterless" and "Raleigh/SR alloy 5 pin" sets: leave.
-- Leave unlinked: 1990 Bianchi "SR alloy XCT/GXC 48/38/28T" (8004 CW-XT01 XCT is 1992 and "GXC" is unexplained; not applied 2026-11-02); Motobecane "T.A. PROFESSIONAL" x2 (TA 1690 / 1693 / Professional 3-arm); 1986 Peugeot "Thun Coronado" (1444 / 1445 / 1446); 1987 Peugeot "Mavic anodised" (630 or 635); 1993 Bianchi "Sugino Mighty" (MTB Mighty rows are 1995).
 - No suitable row: the SR 1986 crank range (~27 specs: SAC-310 / SAC-100 / SAC-T310, SUC-310 / SUC-100 / SUC-T310, FX-T310 / FXC T310 / T301, AXC T301 / T310, CXC 101, CRCT310, CTC 612, CTC-5SG, SXC-T310; 1986 Falcon / Raleigh / Miyata and 1989 Bianchi; the same mid-1980s SR catalogue gap as the seatposts and stems); Sugino TVP, TNFVP, AL-WB, LP, XE300, Astron track and the 1981 Bianchi "Sugino Corsa" sets; Ofmega Premier (2), Nuovo Competizione, Junior (and Super Corsa MC-130, already listed); Stronglight 5470 (2, 1983 Peugeot); Haubtmann 100 / triple (3, 1986-88 Peugeot); Peyrard 3020 (3, 1984 Peugeot; probably the Nervar 3020); Gipiemme America 87; SunTour Alpha-5000; Thun Gamma Gold.
 
 ### Brakes
 
 Remaining era mismatches: 1983 Bianchi Rallye generic "Mafac cantilever" -> 10016 (1981-only, description specifies tandem dual-cable levers), and 1990 Bianchi Osprey / Nyala -> 8032 CT-X101 / 8038 CT-XT01 (1992-only; check generation/model codes against a 1990 manufacturer catalogue before widening). The 1982 Peugeot NL "605 side-pull" cells remain unlinked: the source prints Mafac, so the Weinmann identification still needs a clear photo.
 
-Most unlinked values are type or maker text ("Mafac centre-pull" 17, "Weinmann side-pull" 13, "Cantilever" 7, "Weinmann" 6, the Raleigh "Weinmann Alloy Side Pull with Extension Levers" and "Raleigh/Weinmann alloy centerpull" strings): leave.
-- Leave unlinked: 1986 Miyata "SHIMANO New 600 EX" x2 (BR-6207-49 short or -57 long reach); 1989 Peugeot "CLB / GL 47-60" / "CLB 47-60, white" (three GL 47-60 version rows 613 / 614 / 615, all undated); 1982 Battaglin "Gipiemme Modolo Professional" (880 v1 1976-80 or 892 v2 1985) and "Gipiemme Modolo Spidi"; 1987 Peugeot "Dia Compe G.500 Q.R." (678 G-N series or 9106 500G); 1982 Peugeot "Mafac Competition Sport" x2 and 1970-72 "Mafac Course" x3; 1981 / 1984 Peugeot "CLB Competition" (608 is 1950-70); remaining front/rear MTB halves are listed in the brake-identification worklist above.
 - No suitable row: Dia-Compe 984 / 984D (3, 1989 Bianchi), RT 400 (1986 Raleigh); Modolo Quattro (2, 1989-90 Bianchi) and Start (1987); Lee Chi cantilever (3, 1988-89 Peugeot); Chang Star 500 / cantilever; Polygon AF-500; SunTour Alpha-5000; Universal ART. 130/131 (1981 Bianchi; held-source review below confirms two front options, identification still open); Altenburger 53 S3 (1987 Peugeot).
 
 ### Rear Derailleurs
 
-- **Structural baseline:** no dangling component/source/group references, wrong
-  linked categories or exact duplicate specs. Two defects to fix:
-  9692 Simplex AR 642 P Maxi-Prestige description was cut off at 255 characters
-  (fixed 2026-11-14, see below); 7513 Shimano RD-MX10 sits in group "BMX",
-  which is owned by Campagnolo. 128/945 components have incomplete dates; 426
-  have VeloBase as current source; 498 have no group (informational).
-- **SunTour 1990 follow-through — applied 2026-11-14.** The 2026-11-13
-  catalogue load (source 385) added 13 rear derailleur rows (11026-11128) but
-  changed no bike links. Follow-through was applied and read back: 9 rows,
-  rerun produced 0 changes; Rear Derailleur coverage became 792 / 976. Nyala
-  front / brake / crank specs link to 11072 / 11074 / 11076. XCE-4050 front
-  and rear specs on the 1989 Bianchi Forte / Volpe remain unlinked: XCE is
-  marked new for 1990 and XE01 is a 1992 code, so neither identifies the 1989
-  parts. Forte crank 18618 also remains unlinked. X-Press shifters 7019 / 6999
-  link to 6305 SL-PP00; Project 7 / Grizzly shifters 6917 / 6938 link to 6316
-  SL-PP10. Generator overrides match the applied changes.
-  **Open:** 1990 Bianchi Nyala rear derailleur spec 7018 remains unlinked because
-  the catalogue lists both RD-XT00 (11070) and RD-XT10 (11071) without evidence
-  to distinguish them. Revisit only if a bike photo, period parts document or
-  other source identifies which model the Nyala used.
-  Group 156 fixed 2026-11-14 (user approved): 1981 Shimano BMX rows moved to new Shimano groups 331
-  Shimano-DX (BMX, 1981) x9 and 332 Shimano-SX (BMX, 1981) x7 (7540 BL-MX10
-  "Shimano-BMX" in SX by its MX10 code); 9625 BL-M600-MX -> 327 DX (BMX); 7521
-  SL-2S21 ungrouped like its SG-2S10 hub. 156 keeps its five Campagnolo rows.
-  The seven other DB-wide group-ownership conflicts were fixed the same day: SunTour XCE 8021 / 8035 -> 155,
-  XCM 8003 / 8022 / 8036 / 8037 -> 240, Zeus Pista pedals 4056 -> 161. DB-wide
-  brand / group-owner mismatches: 0.
-- **Date flags: 67 linked specs outside component dates, on 29 components.**
-  Nearly all come from existing year-ranged or commented judgement overrides
-  (e.g. 4583 Simplex Prestige x8, 4622 SX440 GT x6, 4645 Criterium x5, 4096
-  C-Record x4, 4746 Hero x4, 4655 SLJ6600 x3). These are review flags, not errors.
-  No override found for 4561 Simplex Alpha T (1989-95) from 1987 Peugeot
-  "Alpha T/P" x4 (15509/15528/15547/15566), 4264 Gipiemme Special from 1987 Bianchi
-  Super Leggera (1190), 4712 Mountech GTL v2 (1985) from 1987 Raleigh Maverick
-  (8874) and 4770 SVX GT (1985) from 1986 Raleigh Technium 460 (8342).
-  **Resolved 2026-11-14** (user approved): 4561 year_from 1989 -> 1987 (exact T/P ref on 1987 Peugeot);
-  4264 year_to 1985 -> 1987 (1987 Bianchi); 8874 Mountech unlinked (RD-4900 /
-  RD-5500 / RD-5500 v2 fit, as the Falcon call); 8342 SVX unlinked (only SVX GT
-  RD-7400 exists, bike prints no GT). Rear Derailleur now 790 / 976. Linked components missing dates: none (4649 SLJ SX660 dated 1982-84 and 4277 Duopar
-  Eco v1 merged into 4276 on 2026-11-15).
-- **Duplicate baseline:** 72 same-name groups (41 configuration, 78 generation
-  members), near/paren scans empty. One cosmetic flag: 4501 DA-100 / RD-7100
-  Dura-Ace (Black) vs 7427 (also in different groups, 137 "Dura-Ace 7100" vs 50
-  "Dura-Ace"). **Resolved 2026-11-14 (user approved):** already kept as a
-  variant on 2026-10-28; the flag returned because the 1979 Miyata link made
-  7427 the survivor. `duplicate-classify.js` now applies a two-row pair's entry
-  whichever row survives (test added); DB-wide merge candidates 0. 4501 moved to
-  group 50.
-- **Triage of the 181 unlinked:** 107 brand-only (75 bare "Simplex"), 15 none /
-  fixed gear, 51 actionable, 4 unbranded, 2 generic, 2 either/or. New candidates
-  not listed below: 1979 Miyata 310 / 200 "SUN TOUR Seven" (20424 / 20445; 4755
-  Seven 2320 1976-79 or 4756 RD-1900 1978-85, needs identification); 1994
-  Cinelli Genius Strada "Campagnolo Record" (20196; RD-11RE 1993-94 or RD-21RE
-  1994); 1994 Cinelli Velociraptor "Shimano Alivio" (20177; earliest row
-  RD-MC12 starts 1995).
+- **Open:** 1990 Bianchi Nyala rear derailleur spec 7018 remains unlinked because the 1990 SunTour catalogue lists both RD-XT00 (11070) and RD-XT10 (11071) without evidence to distinguish them. Revisit only if a bike photo, period parts document or other source identifies which model the Nyala used.
+- **Candidates to identify:** 1979 Miyata 310 / 200 "SUN TOUR Seven" (20424 / 20445; 4755 Seven 2320 1976-79 or 4756 RD-1900 1978-85); 1994 Cinelli Genius Strada "Campagnolo Record" (20196; RD-11RE 1993-94 or RD-21RE 1994); 1994 Cinelli Velociraptor "Shimano Alivio" (20177; earliest row RD-MC12 starts 1995).
 
-Miyata Omnium / 912 gearing and GMG shifters do not establish RD-6207 versus RD-6208. New Seven does not yet identify RD-1900. Generic Positron remains deliberately unlinked, including the 1983 Raleigh Silhouette.
-
-- Leave unlinked (variant or era unclear): 1986 Miyata "SHIMANO New 600 EX" x2 (RD-6207 short / GS, or RD-6208 SIS); 1988 Colnago "Shimano Santé" x2 and 1988 Raleigh "Shimano Santé, SIS indexed" (RD-5000 and RD-5001 both cover 1988; existing call); 1984 Peugeot "Huret Duopar" x2 (4302 titanium standard cage, 4400 Eco or 8173 titanium long cage); 1982 Battaglin "Gipiemme Sprint 610"; 1989 Peugeot "Simplex SOI T/SP" x3 / "SOI GT/SP" / "501 GT/SP" / "T/SP" (maybe S001N T / S002 GT misprints); 1988 Peugeot "Simplex SX A430 GT/SP" x2 (no SX430; SX440 GT v3?); 1981 Raleigh "Sun Tour V.T." (VX-T 4773?); 1986 Falcon "Suntour MT Tech" (4712 / 7785 / 4711); 1986 Miyata "SUNTOUR New SEVEN" (RD-1900 ends 1985); 1981 Peugeot "Simplex SX"; 1986 Colnago "Shimano Deore"; 1978 Peugeot "Simplex Criterium", 1978 / 1989 "Shimano Positron", 1986 Raleigh "Suntour Cyclone" (existing nulls).
 - No suitable row: Simplex SX 620 / SX 620 TSP (5, 1987-88 Peugeot; already a source gap), Super Criterium (1973 Peugeot); Shimano RD-M535 (2, 1987 Peugeot), Z513GS / Z105 (1986 Raleigh); SunTour SU-2 (1985 Raleigh), Quattro (3, 1989-91 Bianchi); Ofmega Super Competizione rear (1988 Colnago).
 
 - Further unlinked identifications: 1981 Kalkhoff bare Shimano 600 (three specs); 1988 Colnago AL 11 SIS. Do not classify these as missing component rows.
 
 ### Front Derailleurs
 
-Leave: bare "Simplex" (1979-89 Peugeot), other brand-only text, "None" / fixed gear and prose ("Huret or Simplex parallelogram", "Wide Ratio, indexed shift", "Shimano SIS indexed"): leave.
-- Leave unlinked (variant or era unclear): 1981 Kalkhoff "Shimano 600" x3 (FD-6100 or FD-6200; existing null); 1981 Peugeot "Simplex SJA" x3 (SJ A102 / A103 / A222 / A223); 1986 Peugeot "Simplex SLJA 22" (SLJ A422 or A522); 1984 Raleigh "Suntour Cyclone II" and "Sun Tour Cyclone II GT Wide Ratio" (FD-2300 or FD-2400); 1986 Raleigh "Suntour Cyclone" (existing null); 1987 Raleigh "Suntour Mountech" and 1986 Falcon "Suntour MT Tech" (FD-2700 v1 / v2, both dated 1984-85); 1989 Bianchi "SunTour GPX" (GP00-SSB braze-on or -SSH clamp); 1986 Miyata "SUNTOUR Sprint" (FD-3900 Sprint starts 1987; would need a year_from move); 1974 Raleigh "Campagnolo Super Nuovo Record, 12 speed" (1052/SR 2313 starts 1975, early SR groups may have used the 1052/1); 1984 Peugeot "Campagnolo 1052/1" (2297 ends 1977; the 1984 clip-on is 2300); 1986 Falcon "Shimano 'Z'" x4 (Z202 / Z204 / Z206); 1988 Colnago "Shimano AL 11 SIS" (existing note: later indexed version, no row); 1986 Colnago "Shimano Deore" (DE10 or M700).
 - No suitable row: Shimano FD-M236 (2, 1987 Peugeot), Light Action FD-L525 / L532 (1987 Bianchi), 1987 Tourney, Z105 (1986 Raleigh); SunTour Alpha-5000, Quattro (2, 1989-90 Bianchi); Simplex Foret front (2, 1989 Peugeot), SX 432 (1987 Peugeot); Huret Luxe front (4, 1970-71 Raleigh); Ofmega Super Competizione front (1988 Colnago); Campagnolo Velox front (1974 Falcon).
-- **SunTour front derailleur audit, 2026-11-15.** Baseline: 95 rows, 28 used, 14 VeloBase-only source, 35 ungrouped, 3 undated (2619 a-4050, 2653 FD-4300 SVX, 2618 Vany). 145 SunTour front specs: 112 linked, 33 unlinked (4 brand-only or house: bare "SunTour" x2, "Raleigh/Sun Tour" x2; the rest recorded: Miyata Cyclone / Cyclone Mark 2 x9 and Raleigh Cyclone II x3 (several rows), Mountech x3, Miyata Superbe / New Superbe / Superbe-Tech / Sprint, Alpha 3000 SS, Alpha-5000, GPX, Quattro x3, XCE-4050 x2, FD 3000GT). No wrong-category links. Applied 2026-11-15 (user approved): 2663 XCE XE01 dated 1992; seven fitment widenings; 2653 SVX dated 1986; 1987 Campione d'Italia Cyclone 7000 relinked 2631 -> 2630 FD-CL10-B. See suntour.md. Open:
-  1. **Leave / revisit with a source:** 2600 / 2611 / 2612 a-3000 fronts (VeloBase, 1980, 0 links): the alpha series is a 1987 range, but no held source lists an alpha front, so the 1980 dates stay flagged; 2618 Vany, 2619 a-4050 undated (0 links); 2652 / 8268 Superbe Pro mounting (open item below).
-- **Huret / Sachs Huret front derailleur audit, 2026-11-15.** Baseline: 48 rows (brands 139 / 171), 13 used, 25 VeloBase-only source, 38 ungrouped, 3 undated (2386, 2377, 2439). 105 Huret / Sachs front specs: 92 linked, 13 unlinked (9 brand-only or prose; 4 Huret Luxe 1970-71 Raleigh, recorded: no row). No wrong-category links. Scoped `duplicate-report`: 18 pairs, all pre-1975 VeloBase specimen versions with 0 links (600 / 700 / lever / Success-Duopar CPSC / bare "Sachs Huret"); `--near` empty. Applied 2026-11-15 (user approved): four 42x52 doubles unlinked from triple 8962 (scoped null overrides); 8961 / 8962 to 1989, 2379 to 1988, 2439 dated 1987-89; 2394 retitled Allvit. See huret.md. Huret / Sachs front specs now 88 / 105 linked. Open:
+- **Huret / Sachs Huret front derailleurs:**
   1. **Rider double front (source gap):** 1987 Manosque "Huret Rider", 1989 Avoriaz "Sachs-Huret Rider", Lautaret / Lavandou "Sachs-Huret Rider 2" (42x52 doubles) have no row; find a 1987-89 Sachs-Huret catalogue listing it.
-  - Leave: the 1986-88 plain "Huret Rival" fronts on 8488 Rival 1086-00 (1982-87; six 1988 links outside its dates) belong to the open 8961 / 8488 Rival question below, not a date widening; 1984 Raleigh "Huret ECO-S" fronts -> 8489 Club AS (the Eco S set's front, recorded); 2386 / 2377 undated VeloBase rows (0 links).
-- **Simplex front derailleur audit, 2026-11-15.** Baseline: 66 rows, 19 used, 30 VeloBase-only source, 54 ungrouped, 2 undated (2582 Alpha, 2589 Super LJ). 313 Simplex front specs: 240 linked, 73 unlinked (65 brand-only or prose: 61 bare "Simplex", "Huret or Simplex parallelogram" x2, "Simplex parallelogram", "Huret Luxe - Gents, Simplex - Ladies"). No wrong-category links. Scoped `duplicate-report`: 23 pairs, all pre-1962 VeloBase specimen variants with 0 links, plus the Super LJ trio below; `--near` / `--paren` empty. Items 1-5 applied 2026-11-15 (Super Competition range to 1980 and the 1978 PA 60 link; 2589 Super LJ merged into 2587 SLJ A500; six fitment date widenings; 2582 Alpha dated 1989; 2545 title), see simplex.md. Simplex front specs now 241 / 313 linked. Open:
+- **Simplex front derailleurs:**
   1. **2590 / 2591 "Super LJ (2nd version? front / rear control arm)"** (VeloBase, 1970, 0 links) predate Super LJ (c. 1971); check the VeloBase photos, then fold into 2587 / 7282 or retitle.
-  - Leave: 2583 Prestige Criterium AV 223 unranged override (user decision 2026-10-28, simplex.md); Simplex Foret front (2, no row), "Simplex SJA" x3, "SLJA 22", SX 432 (recorded above).
-- **Campagnolo front derailleur audit, 2026-11-15.** Baseline: 56 rows, 20 used, 15 VeloBase-only source, 2 ungrouped (10093 Racing Triple; 10505 Veloce / Mirage spans two groups, correct). Items 1, 3 and 5 (1993 Record FD era fix, 1992 Mondiale Croce d'Aune link, title hygiene) applied 2026-11-15, see campagnolo.md; 1994 Cinelli Genius Record front linked to 7059 and Supercorsa Chorus kept null (user calls, cinelli.md). Campagnolo front specs now 184 / 195 linked. Proposed, open:
+- **Campagnolo front derailleurs:**
   1. **Date flags (review, not errors):** 2318 Victory (1984-86) from 1987 Peugeot PSN 10, 1987 Colnago Junior Victory, 1987 Bianchi Nuovo Alloro "New Victory", 1988 Bianchi Giro; 2314 Triomphe from 1987 Peugeot PX; 2279 980 from 1987 Colnago Junior Special; 2300 0104007 (1982-85) from 1986 Cinelli 840 SLX (its VeloBase description says 1982-1987). Nuovo Victory / Triomphe were current in the November 1986 brochure (source 196); no separate Nuovo front row. Options: widen `year_to` with bike-catalogue fitment evidence (Victory 1988, Triomphe / 980 1987, 2300 1986) or leave flagged. 2283 C-Record from the 1984 De Rosa is explained (late-1984 brochure for 1985, as the 4096 rear).
   2. **Identity:** 2295 "Record 0104007 (1978, 4-hole)" (VeloBase only, 0 links) carries the part number the catalogues put on the 1982-85 clip-on 2300, overlapping 2299 1052/NT 1978-82; check the VeloBase photo before merging into 2299 / 2300 or retitling as a 4-hole variant. Add 2297 / 2305 (1052/1 bodies, kept apart 2026-09-28) to `REVIEWED_NOT_DUPLICATES`.
-  - Leave: 6 bare "Campagnolo" (1973-78 Falcon); 1974 Raleigh SNR and 1984 Peugeot 1052/1 (above); 1991 Colnago Topazio "Centaur 8V" (20048; only the Century grey row 2285 exists, standard-finish second-generation Centaur front is a source gap).
 
 ### Hubs
 
@@ -378,12 +261,11 @@ Leave: bare "Simplex" (1979-89 Peugeot), other brand-only text, "None" / fixed g
 ### Bottom Brackets
 
 Only the 1973 Zeus, 1978 Bianchi and 1981 Kalkhoff catalogues carry a BB column; everything else folds the BB into the crankset cell.
-- Leave unlinked: 1973 Zeus Z 66 "Zeus Ciclo-Cross" (the "Ciclo-Cross" chainguard came on both the Criterium 2027 and the Gran Sport 2030 cranks, so the BB could be 188 Ref.33 or 190 Ref.34); 1981 Kalkhoff "Sakae 42/52" x3 / "Sakae 40/52" x2 (chainring text, no BB model).
 - No suitable row: Zeus Alfa BB, "Alfa (Duralinox)" / "Alfa (Steel)" (1973 Z 46 / Z 41; only the Ref.36 Alfa chainring set 8145 exists).
 
 ### Headsets
 
-Brand-only text: "Stronglight" 7 (1985 Peugeot), bare "Tange" ~20, Bianchi "GPM, alloy", 1993 Bianchi "AheadSet" 3 / "Mavic headset": leave. New source gaps: Lightrace (Gourgaud) on 1977-84 Peugeots (18: "Lightrace Luxe" 7, "Lightrace" 5, "non-loosening" 3, "competition", "Gourgaud Lightrace" 2; the DB has only 3032 Grand Luxe, undated, and 3033 Super, 1984; a Gourgaud / Lightrace catalogue or a dated Peugeot spares list would settle Luxe vs Grand Luxe); Tange Unique / Unique X "Loose-Proof" / Unique FE (5, 1988-89 Raleigh); Tange MES sealed (4, 1986 Miyata); Tange 230 SLP (1987 Peugeot); Falcon "HP-01G" (maker unknown).
+- New source gaps: Lightrace (Gourgaud) on 1977-84 Peugeots (18: "Lightrace Luxe" 7, "Lightrace" 5, "non-loosening" 3, "competition", "Gourgaud Lightrace" 2; the DB has only 3032 Grand Luxe, undated, and 3033 Super, 1984; a Gourgaud / Lightrace catalogue or a dated Peugeot spares list would settle Luxe vs Grand Luxe); Tange Unique / Unique X "Loose-Proof" / Unique FE (5, 1988-89 Raleigh); Tange MES sealed (4, 1986 Miyata); Tange 230 SLP (1987 Peugeot); Falcon "HP-01G" (maker unknown).
 
 - No suitable row: Tange TH-305 / TH-305C / TH 305 (6, 1984-90) and TH-108; Tange MX 600M; Shimano 600 AX (1981 Kalkhoff; no 600 AX headset row, 3089 HP-6200 600EX Arabesque 1978-84 is the nearest but AX may have had its own); Nikyo; YST steel CP; Zeus Alfa (2, 1973).
 
@@ -409,7 +291,7 @@ Brand-only text: "Stronglight" 7 (1985 Peugeot), bare "Tange" ~20, Bianchi "GPM,
   3. **Questionable VeloBase rows, 0 links:** 4153 "Super Record 4001, Modified Cicli Bombardieri" (a shop-modified specimen, not a catalogue part; candidate to fold into 4149 / 4151 with its 185 g as a note, or delete) and 4077 'Campagnolo "Campagnolo" model' (1963, no other data; check the VeloBase page before keeping).
   Follow-up seen during the audit: DB-wide `duplicate-report.js --merge` (2026-11-15) lists 14 pairs, all older VeloBase-only rows with 0-8 links: duplicate 6028 / 6029 Favorit (Single lever); cosmetic Simplex Tour de France 4634 / 4641 / 4642 / 4643 (Simplex SX440 T 4626 / 4627 merged 2026-11-15, see simplex.md), Simplex Competition front 2556 / 2557, Nervar 1657 / 1659, Pelissier 3457-3459, Belleri 2791-2794, Weinmann Symetric 1103 / 1104, Campagnolo 0304 cranks 1472 / 1473 (Bianchi-labelled). This supersedes the 2026-11-14 "DB-wide merge candidates 0" note; review each as merge or registered variant.
   Checked and fine: Nuovo Record v3-v5, Super Record, Gran Sport / Nuovo Gran Sport, Victory / S3, 1990-94 RD-xx links all agree with year-scoped overrides; 1985 Bianchi "990/980" -> 4088 990 is the recorded rear reading (bianchi.md). Scratch for this audit was deleted; re-run the queries in the rows / specs / `quality-report` scope to reproduce.
-- Rear derailleur review: verify the later XCD model code (VeloBase says RD-XD00; 1990 catalogue lists RD-XD10 variants). (4302 resolved 2026-11-14: the VeloBase 2648 specimen moved to 8173, see below.)
+- Rear derailleur review: verify the later XCD model code (VeloBase says RD-XD00; 1990 catalogue lists RD-XD10 variants).
 - **Huret Rival identification:** 1988 Peugeot PXR 80 spec **16963** is deliberately **NULL** with a scoped generator guard after the approved 2026-11-15 correction. It needs **34T** capacity; do not use 28T rows **4401** or short-cage **8957**. Obtain a sharper original-bike photo or period parts/fitment document to identify its cage and generation before linking/adding a row. The other **16** generic Rival links remain unresolved; keep 4401 / 8957 distinct and do not move links by year or finish alone. Exact IDs, source checks, prior retrieval failures and validation are in the [Huret review](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#generic-rival-bike-link-review--2026-11-15-pxr-80-correction-applied).
 - **Rear derailleur dedupe pass, 2026-11-14 (user approved):** shared-code, code-stripped-name and uncoded-VeloBase-in-coded-row scans of all 945 rows found only labelled versions, cage and finish siblings. Two fixes: the Huret Duopar titanium provenance (VeloBase GUID 15AB95B3, a 2648 specimen with 255 g, moved from 4302 2600 / 2640 to 8173 2648 / 2654; 4302 new UUID; 8173's synthetic 0311fc96-c102-11f1-a2df-02fea3763e8d retired) and 4733 SunTour Cyclone (Black Pivot Knuckles, VeloBase C0C55FDD-E9C6-48D9-8A76-312E08FC35EF) merged into 4735 RD-1700. Rows 945 -> 944. Added a 1986 'suntour cyclone' rear null override to keep the Supercourse decision once the ambiguity went.
 - Front derailleur duplicates, still open (2026-11-02 review):
@@ -530,7 +412,6 @@ Brand-only text: "Stronglight" 7 (1985 Peugeot), bare "Tange" ~20, Bianchi "GPM,
 - **Windsor 1979** (radiolabworks.com, 7 pp): a bike catalogue for a Mexico City brand, low link yield, not ingested.
 
 ## Open: held-source follow-ups
-
 
 Targeted reviews completed **2026-11-12**, against the held page images and live DB. Dia-Compe additions and links subsequently loaded on user approval (see [Dia-Compe notes](.agents/skills/ingest-component-catalog/references/known-catalogs/dia-compe.md)). The unresolved identifications below remain open; earlier coverage snapshots have not been recounted.
 

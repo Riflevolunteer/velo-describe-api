@@ -131,12 +131,12 @@ valid result. Fix wrong existing links before adding speculative new ones.
 10. **Record the result and close the loop.** Update the relevant brand's
     known-catalogue notes (cross-catalog notes for multi-brand work), generator
     decisions and `TODO.md`. Record added/corrected/merged rows, links added/fixed,
-    unresolved cases with their next evidence needed, validation results and
-    dated coverage counts. For routine changes, keep the evidence/page URLs,
+    unresolved cases with their next evidence needed and validation results in
+    the notes. For routine changes, keep the evidence/page URLs,
     old/new values and a short validation result in existing catalogue notes.
     Keep prepared and applied SQL in the temporary scratchpad; do not retain or
-    commit audit SQL in the repository. Update `TODO.md` with status and remaining
-    actions. Downloads, snapshots, diffs and logs also stay in the temporary
+    commit audit SQL in the repository. Update `TODO.md` with remaining actions only
+    (no counts, status narratives or decisions; see the housekeeping table). Downloads, snapshots, diffs and logs also stay in the temporary
     scratchpad; do not create separate per-task reports, manifests
     or before/after JSON files unless explicitly requested or needed by maintained
     tooling. Commit relevant code/documentation and feed remaining evidence gaps
@@ -147,7 +147,7 @@ valid result. Fix wrong existing links before adding speculative new ones.
 
 - **Per catalogue:** changes reviewed/applied, duplicate candidates assessed,
   affected bike links revisited, existing mappings checked, rerun clean, notes
-  updated, and affected TODO items/counts reconciled. A pass with zero new links
+  updated, and affected TODO items reconciled. A pass with zero new links
   can still improve quality.
 - **After a batch of related catalogues:** review the whole affected category
   for aliases, duplicates, date conflicts and generator/live-DB drift.

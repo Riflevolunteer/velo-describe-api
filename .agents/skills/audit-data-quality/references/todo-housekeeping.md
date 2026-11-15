@@ -5,6 +5,27 @@ ingestion, linking, deduplication and API/client work. Update it when a result o
 decision is verified; do not wait for a separate cleanup session. Planned or approved work remains open
 until it is applied and validated.
 
+## TODO.md holds only things to do
+
+Every entry must name a next action: something to build, check, decide, find or
+apply, with the IDs and the evidence needed where useful. Test each line before
+writing it: "is there something someone should do next?" If not, it does not go
+in TODO.
+
+Never put these in `TODO.md`; put them where they belong instead:
+
+| Not a TODO | Where it goes |
+| --- | --- |
+| Link counts, coverage tables, audit baselines ("N / M linked", "95 rows, 28 used") | Nowhere: query `/linkCoverage` or run `node scripts/quality-report.js` when needed |
+| Completed work: "applied", "fixed", "resolved", "merged", "rechecked, no change" | The relevant catalogue notes; git history has the rest |
+| Leave-unlinked / do-not-link decisions, "several rows fit", user's calls | `.agents/skills/ingest-bike-specs/references/link-decisions.md` |
+| Reviewed non-duplicates and kept-apart pairs | The brand's catalogue notes and `REVIEWED_*` in the generator |
+| Source-hunt logs and dead ends ("searched X, nothing found") | The brand's catalogue notes (`known-catalogs/<brand>.md`) |
+| Evidence, old/new values, catalogue contents | The brand's catalogue notes |
+
+A failed hunt leaves at most one TODO line: what is still wanted and which new
+lead would justify another search, pointing at the notes for what was tried.
+
 Follow these instructions during repository work: at the start, as results are
 verified, and before the final response. They do not run as a background job and
 do not require a separate user invocation.
@@ -23,21 +44,23 @@ do not require a separate user invocation.
 - **When evidence changes a decision:** edit the current worklist and any affected
   cross-references, source gaps or duplicate candidates. Supersede the old decision
   explicitly in the detailed notes; preserve enough evidence to explain why it
-  changed. Keep rejected mappings and reviewed non-duplicates recorded so future
-  tasks do not repeat them without new evidence.
-- **When counts change:** refresh the affected category's current summary with
-  verified counts, date and scope. Update the overall coverage snapshot only after
-  re-querying its full scope; do not mix fresh category counts into an older dated
-  table or derive DB totals from generator counts. Label older snapshots as
-  historical and point to the newer affected-category result where needed.
+  changed. Keep rejected mappings, leave-unlinked calls and reviewed non-duplicates
+  recorded in the notes (see the table above) so future tasks do not repeat
+  them without new evidence.
+- **When counts change:** do not record them in TODO. Report counts in the
+  task's reply or the catalogue notes if they matter; live numbers come from
+  `/linkCoverage` and `scripts/quality-report.js`.
 - **When a follow-up appears:** record the exact unresolved question, affected
   models/IDs where useful, next action and evidence needed. Record an unsuccessful
-  source hunt with its scope/date and what new lead would justify repeating it.
+  source hunt (scope, date, dead ends) in the brand's catalogue notes; keep only
+  the remaining want and the lead that would justify repeating it in TODO.
   Keep blocked or deferred work visible with its reason.
 - **Before finishing:** search `TODO.md` for the affected model, component ID,
   catalogue and task wording. Resolve contradictory current claims and stale
   "no row"/"unlinked"/"not loaded" statements within the task's scope. Consolidate
-  duplicate open items, check links and Markdown, and include the documentation
+  duplicate open items. Check every line you added or touched against the table
+  above: no counts, no "applied / resolved / decided / leave unlinked" records,
+  no hunt logs. Check links and Markdown, and include the documentation
   update with the implementation when committing. No unrelated full-file rewrite
   is needed.
 - **After a batch:** remove completed narratives once their lasting evidence and

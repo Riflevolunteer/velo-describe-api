@@ -270,6 +270,9 @@ in the notes and message so the reasoning survives.
   ("why is Zeus Gigante the road hub?") have an answer. Read only the brand
   file(s) relevant to the catalog at hand, plus `cross-catalog-notes.md` for
   matcher/generator-wide fixes.
+- `references/link-decisions.md` lists leave-unlinked calls by spec category
+  (several rows fit, era unclear, either/or, maker-only, user's call). Check it
+  before proposing a link for an unlinked spec, and record new calls there.
 - Sibling API routes (`/bikeBrands`, `/bikesbybrand`, `/bikedetail`,
   `/searchBikes`) read these tables; `bike.created_at` and
   `bike_spec.updated_at` are DB defaults, nothing to set.
