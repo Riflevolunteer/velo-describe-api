@@ -1,5 +1,13 @@
 # Simplex catalogs processed so far
 
+## Prestige front override decision — 2026-10-28
+
+The user retained the unranged `simplex prestige: 2583` front override, including
+1970-82 specs beyond row 2583's 1964-75 dates; no later Prestige front row was
+identified. This is a recorded exception, not evidence to widen the component's
+dates. The rear override remains limited to bikes through 1979; it does not
+identify the 1980s rear specs.
+
 ## Simplex "Dérailleurs - spécialités" catalogue (24 images, September 1981, via disraeligears.co.uk)
 
 - `data_source` 58. Source:

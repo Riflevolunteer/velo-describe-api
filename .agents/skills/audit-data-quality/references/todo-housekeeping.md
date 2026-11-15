@@ -12,11 +12,14 @@ do not require a separate user invocation.
 - **At the start:** find the existing item and read its latest decision/evidence.
   Update that item instead of adding a second entry for the same work. If the task
   is new, add one actionable item under the appropriate Open section.
-- **When work completes:** remove the completed part from Open and add a short,
-  dated outcome under Done, linking to the relevant catalogue notes or committed
-  artifact for detail. For partially completed work, leave only the remaining
-  action in Open and make its status explicit. Distinguish prepared SQL, approved
-  changes, applied DB changes and deployed code where applicable.
+- **When work completes:** record lasting outcomes, evidence, material old/new
+  values and validation in the relevant existing catalogue or project notes, then
+  remove the completed task from `TODO.md`. Keep TODO for open work and unresolved
+  questions; do not maintain a Done section or a separate completed-work archive.
+  Git history records committed task chronology. For partially completed work,
+  leave only the remaining action and make its status explicit. Distinguish
+  prepared SQL, approved changes, applied DB changes and deployed code where
+  applicable.
 - **When evidence changes a decision:** edit the current worklist and any affected
   cross-references, source gaps or duplicate candidates. Supersede the old decision
   explicitly in the detailed notes; preserve enough evidence to explain why it
@@ -37,10 +40,11 @@ do not require a separate user invocation.
   duplicate open items, check links and Markdown, and include the documentation
   update with the implementation when committing. No unrelated full-file rewrite
   is needed.
-- **After a batch:** condense lengthy completed narratives into dated Done entries;
-  keep detailed evidence in the relevant known-catalogue notes. Preserve unresolved
-  questions and deliberate do-not-link decisions. A periodic tidy supplements
-  these per-task updates; it does not replace them.
+- **After a batch:** remove completed narratives once their lasting evidence and
+  decisions are in the relevant existing notes. Preserve unresolved questions in
+  TODO and deliberate do-not-link decisions in the notes, with a TODO follow-up
+  only when there is an actionable next step. A periodic tidy supplements these
+  per-task updates; it does not replace them.
 
 ## Scratchpad cleanup
 

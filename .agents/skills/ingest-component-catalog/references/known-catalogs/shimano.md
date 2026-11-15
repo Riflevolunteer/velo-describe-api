@@ -2319,7 +2319,7 @@
 - Closed the TODO prefix-collision question after checking the live DB and existing catalogue records. All 12 Shimano rows with BB codes in Brakes are legitimate period brake records: 964 BB-300; 969 BB-330 / BR-6200; 1010 BB-100 / BR-TC10; 1011 BB-110; 1012 BB-200; 1013 BB-210; 1014 BB-250 / BR-TS30 / BR-MX10; 7456 BB-400; 7457 BB-240; 7458 BB-230 / BR-TS40; 7459 BB-120 / BR-TC30; 7479 BB-500. A BB prefix alone is not a category identifier.
 - Visually checked the December 1974 catalogue, printed p.25: Model BB-210 Auto Adjust side-pull caliper. https://www.disraeligears.co.uk/site/a_complete_line_of_shimano_1975_page_25.html
 - Visually checked the May 1978 catalogue, printed p.21: BB-300 side-pull and BB-400 centre-pull, both Shimano-600; p.37: Tourney BB-240 / BB-230 side-pulls, Shimano-500 BB-500 centre-pull and Tourney BB-120 centre-pull; p.38: Tourney BB-100 centre-pull. https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_may_1978.html
-- No DB changes, retitles, merges, inserts or year changes. Existing qualifications on inferred later BR-code equivalents (especially 1014) remain; this review resolves the category/prefix question only. TODO moved to Done.
+- No DB changes, retitles, merges, inserts or year changes. Existing qualifications on inferred later BR-code equivalents (especially 1014) remain; this review resolves the category/prefix question only.
 
 - 2026-11-14 (rear derailleur audit, user approved): 4501 DA-100 / RD-7100
   Dura-Ace (Black) moved from group 137 "Dura-Ace 7100" to 50 "Dura-Ace", beside
@@ -2385,3 +2385,27 @@
 - Merged 2455 "Shimano ED-200, Thunder Bird GPO" (source_id `5EF2CB4E-3EF4-4FB4-94FD-68A6C00617AF`, 1975-1975, source_ref 24; its VeloBase image is a catalogue crop) into actual-specimen row 2461. Retitled from "Shimano E111, Thunder Bird G.T.O." to "Shimano E111 / E112 / E113 / E114 / ED-200, Thunder Bird GTO / GPO". Preserved source_id `600877C0-7DBA-4D74-B05B-B09C7BB9EC54`; year_to 1974 -> 1975, year_from stays 1972, source_ref 65 -> 24. Description carries six-hole steel cage, 16T, 185g, fitting codes and GPO name by June 1974.
 - Both renumberings remain explicitly inferred. September 1972 p.4, June 1974 p.11 and December 1974 / 1975-model p.18 show matching construction, weight and fitting choices. Upper inlet: E101/E111 1in, E103/E113 1-1/8in; lower: E102/E112 1in, E104/E114 1-1/8in. Both ED-code families offer all four fittings. The GTO specimen's six-hole cage is already pictured in the 1974 GPO and 1975 ED-200 drawings; VeloBase's five-hole GPO versus six-hole GTO claim does not distinguish these records.
 - Rebuilt both search_text values. No bike links or generator overrides on any of the four IDs. Applied 2 updates + 2 deletes; readback correct and rerun 0 affected. Specimen HTML/photos and 1974 p.11: `/private/tmp/thunder-bird-front-review/`; other scans: `/private/tmp/titlist-front-review/`.
+
+## BR-M451 later fitment and selective brake split — 2026-11-15 (approved plan, applied)
+
+- Re-read original 1989 Raleigh Lightweights printed p.14, scan
+  `Raleigh Lightweights 1989-page-013.jpg`:
+  https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1989.html .
+  Ozark explicitly specifies M454 cantilever front / M451 U rear. Updated
+  7213 BR-M451 year_to 1988 -> 1989 and source_ref 48 -> 323; year_from 1988,
+  title, description, search_text, source_id and all other fields unchanged.
+  This supersedes the earlier decision to leave this row ending 1988 based on
+  its absence from the Aug 1988 Exage manual. The later bike fitment establishes
+  availability, not manufacture through 1989 or an exact discontinuation year.
+  To restore: set year_to=1988 and source_ref=48 guarded by ID 7213 and the new
+  1989/323 values. One guarded component UPDATE applied; readback correct;
+  rerun zero. The new Ozark Rear Brake spec links to this existing row.
+- Re-read Aug 1988 Exage manual, source 78, pp.11-12: Exage Mountain offers
+  BR-M450 cantilever and BR-M452 / M453 U options. Therefore 1989 Peugeot
+  Alpine Express's unnumbered U rear remains NULL; its front links to 7212.
+  The Chinook's printed M450 U rear also stays NULL because the manufacturer
+  identifies M450 as a cantilever. Do not substitute M451 from the type alone.
+- The wider split added no component rows, merges or speculative identities.
+  See the bike skill's cross-catalog notes, "Selective Front Brake / Rear Brake
+  specs", for all eight bikes, original values, ten new links and six unresolved
+  halves. Temporary SQL and scans removed after validation.

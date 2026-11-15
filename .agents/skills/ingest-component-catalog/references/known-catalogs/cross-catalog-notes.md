@@ -1,5 +1,47 @@
 # Cross-catalog notes catalogs processed so far
 
+## Retired component identities and merge evidence
+
+These identifiers preserve provenance for rows removed during the October and
+November 2026 duplicate reviews. They identify retired rows, not new merge
+candidates. Existing manufacturer notes and reviewed-pair registries retain the
+other decisions.
+
+### 2026-11-06 reviewed merges
+
+| Retired component | Survivor | Retired VeloBase source_id | Identity evidence / retained facts |
+| --- | --- | --- | --- |
+| 1661 Nervar outline-N, gold | 1660 | 18605603-9D08-46FD-B826-00EEFCC0D7A1 | Colour variant; 1663 triple retained separately. |
+| 1662 Nervar outline-N, red | 1660 | 995B9697-3101-4D0C-B730-84A978A3AC19 | Colour variant. |
+| 1664 Nervar outline-N, white | 1660 | 6A85D297-F4DE-4CAA-8769-A6E65679A3F6 | Colour variant. |
+| 3740 Galli silver quill | 3739 Galli (quill) | 0C9E3131-8693-4AB9-A7B4-4113B482A9F4 | Black/silver finishes treated as variants; survivor formerly titled black quill. |
+| 6632 Philippe Mil Remo alloy, name on top | 6631 Philippe Mil Remo alloy | 92684A12-4700-410F-AF08-264A58553D43 | Matching alloy/plastic-insert construction, 25.4/22.0 dimensions, conical expander and late-1960s/early-1970s dating; insert position retained as a variant. |
+| 9497 Campagnolo Doppler | 5970 Campagnolo 0271/0272/0273 C-Record Doppler | d01ac0fe-cef8-11f1-a2df-02fea3763e8d | Guida '88 duplicate of the survivor's already-described Doppler codes; retired source_id is a catalogue-row ID, not VeloBase. |
+| 6134 Shimano SL-1055-BCAI 105SC | 6133 SL-1055-FCAI / BCAI | B48D04FE-B586-4671-BE8F-D69E5728D24A | Combined clamp/braze-on variants; retained 102 g clamp weight. Two 1990-91 Bianchi Alfana specs and generator overrides repointed. |
+| 6208 Simplex LJ retro-friction | 7295 Simplex LJ4012 | 284271E2-EE52-474D-A4B1-8632B7BD3A8F | Model field LJ4012; black Delrin Simplex-logo lever photos and catalogue scan: 4012 clamp 28/28.6 mm, 4014 clamp 25.4 mm, 89 g. Cross-hatched extra photo likely stray. VeloBase 1975-83 dating noted; catalogue year_to 1981 retained. |
+| 6138 Shimano 600 | 7114 LB-180 / SL-QB11 QB-Lever DX | 44B16F2F-F024-4CB0-9879-0126A42DA03D | Alloy levers with black rubber pads; model field SL-6100, text LB-180 (1978), SL-QB11 (1980), SL-6100 (1982). Not 6137 LB-600's one-way-clutch construction. Catalogue year_to 1981 retained; bare pre-1986 Shimano 600 override changed to NULL. |
+
+Apart from 6134's two repointed specs, the retired rows above had no bike specs;
+the Nervar rows, 6208 and 9497 also had no generator overrides.
+
+### 2026-10-26 near-name merges
+
+The original record retained only these deleted source_id prefixes. Do not
+reconstruct full source IDs from them.
+
+| Retired component | Survivor | Retired source_id prefix |
+| --- | --- | --- |
+| 1175 | 1181 | F8B2F67E |
+| 2701 | 2694 | 16031640 |
+| 6756 | 6757 | 00BDD9AA |
+| 6783 | 6784 | 41D74A64 |
+| 5177 | 5180 | 58FFA5FB |
+| 5151 | 5154 | 3C335747 |
+| 7246 | 3662 | b315c43c |
+| 683 | 8092 | D6ADDFCB |
+| 2699 | 2700 | F9669FE1 |
+| 1385 | 1382 | 399E621E |
+
 ## Cross-catalog notes
 
 - The Nuovo Record 1020/A rows are dated per version in the DB (v3 1970-81,

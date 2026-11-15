@@ -1,5 +1,15 @@
 # Nitto catalogs processed so far
 
+## Bike fitment evidence retained from the 2026-11-05 linking review
+
+- 1986 Miyata Ridge Runner / Terra Runner `NITTO 804 AA Alloy` specs link to
+  **10815 Nitto B-804 AA**. The [1986 Koga catalogue](https://www.koga.com/files/7/0/4/Koga_Brochure_1986.pdf)
+  identifies B-804 AA as a special ATB aluminium bar.
+- 1989 Bianchi Equinox `Nitto heat treated Dirtdrop` links to **8607 Nitto
+  RM-013-14S**, the 1989 Nitto No. 11 catalogue row. The
+  [1987 Bridgestone MB-1 review](https://sheldonbrown.com/bridgestone/pdfs/bstoneMB11987.pdf)
+  corroborates the DirtDrop's heat-treated alloy construction.
+
 ## Nitto Handle Works catalogue No. 6 (1980) — cyclespeugeot.web.fc2.com, data_source id 158
 
 - Source: http://cyclespeugeot.web.fc2.com/reminiscence/nitto80.html ("The

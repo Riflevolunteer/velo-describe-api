@@ -308,6 +308,8 @@ const LABEL_TO_CATEGORY = {
   brakes: ['Brakes'],
   brakeset: ['Brakes'],
   brakesets: ['Brakes'],
+  'front brake': ['Brakes'],
+  'rear brake': ['Brakes'],
   'brake lever': ['Brake Levers'],
   'brake levers': ['Brake Levers'],
   saddle: ['Saddles'],
@@ -389,6 +391,8 @@ function expandLabel(label) {
 // Words that tie one part of a split cell to one of its labels, so
 // "Simplex rear, Huret front" or "tubulars, rims" still land correctly.
 const SPLIT_PART_HINTS = {
+  'Front Brake': /\b(front|frt)\b/i,
+  'Rear Brake': /\b(rear|rer)\b/i,
   'Front Derailleur': /\bfront\b/i,
   'Rear Derailleur': /\brear\b/i,
   Rims: /\brims?\b/i,
@@ -499,7 +503,7 @@ const LABEL_ALIASES = {
 // in first-seen order. bike_spec_label.sort_order is set from this.
 const LABEL_ORDER = [
   'Frame Material', 'Fork', 'Lugs', 'Headset', 'Handlebars', 'Stem', 'Shifters',
-  'Brakes', 'Brake Levers', 'Front Derailleur', 'Rear Derailleur', 'Gearing', 'Crankset', 'Bottom Bracket',
+  'Brakes', 'Front Brake', 'Rear Brake', 'Brake Levers', 'Front Derailleur', 'Rear Derailleur', 'Gearing', 'Crankset', 'Bottom Bracket',
   'Chain', 'Freewheel', 'Cassette', 'Pedals', 'Toe Clips', 'Saddle', 'Seatpost',
   'Hubs', 'Spokes', 'Rims', 'Tyres', 'Cable & Tape', 'Fenders', 'Chain Guard',
   'Groupset / Components', 'Other Features', 'Extras',
@@ -1691,6 +1695,23 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // Selective front/rear CSV columns, 2026-11-15. Keep printed codes and
+    // wording; explicit NULLs preserve unresolved identities after the split.
+    'shimano at 50 front with at 50 levers': [{ bike: 'Orient Express', from: 1986, to: 1986, id: 1003 }],
+    'suntour xc sport chainstay mount rear': [{ bike: 'Orient Express', from: 1986, to: 1986, id: null }],
+    'shimano "new" deore xt frt: br m730 cantilevers': [{ bike: 'Cannon Ball Express', from: 1987, to: 1987, id: 981 }],
+    'shimano "new" deore xt rer: br m731 u brake': [{ bike: 'Cannon Ball Express', from: 1987, to: 1987, id: 982 }],
+    'shimano deore frt: br m60 cantilevers': [{ bike: 'Alpine Express', from: 1987, to: 1987, id: 978 }], // Printed M60 / M61; Deore models BR-MT60 / MT61.
+    'shimano deore rer: br m61 u brake': [{ bike: 'Alpine Express', from: 1987, to: 1987, id: 979 }],
+    'shimano exage mountain': [{ bike: 'Alpine Express', from: 1989, to: 1989, id: 7212 }], // BR-M450 cantilever; Aug 1988 Exage manual pp.11-12.
+    'shimano exage mountain; rear u brake': [{ bike: 'Alpine Express', from: 1989, to: 1989, id: null }], // 1989 chart offers BR-M452 / M453; no model in bike text.
+    'shimano deore xt; rear deore xt u brake': [{ bike: 'Europe Express', from: 1989, to: 1989, id: null }], // BR-M731 / M733 generation not identified.
+    'shimano m454 cantilever front': [{ bike: 'Ozark', from: 1989, to: 1989, id: 999 }],
+    "shimano m451 'u' brake rear": [{ bike: 'Ozark', from: 1989, to: 1989, id: 7213 }], // Exact Raleigh code attests BR-M451 through 1989.
+    'shimano m350 cantilever front': [{ bike: 'Chinook', from: 1989, to: 1989, id: 7214 }],
+    "shimano m450 'u' brake rear": [{ bike: 'Chinook', from: 1989, to: 1989, id: null }], // Printed M450 conflicts with manufacturer cantilever type; do not link to 7212.
+    'dia compe ngc 982 front': [{ bike: 'Ridge Runner', from: 1986, to: 1986, id: 697 }],
+    'suntour xc rear': [{ bike: 'Ridge Runner', from: 1986, to: 1986, id: null }],
     'shimano at 50': [{ bike: '615 GT', from: 1987, to: 1987, id: 1003 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano at 50 alloy cantilever brakes': [{ bike: 'Path Winder', from: 1987, to: 1987, id: 1003 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'dia compe dc 983d': [{ bike: 'Valley Runner', from: 1987, to: 1987, id: null }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
@@ -1730,7 +1751,7 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace side pull': [{ bike: '1200', from: 1979, to: 1979, id: 989 }], // 1979 Miyata: printed component; see catalogue review notes.
     // c. 1994 Cinelli: named table components; null blocks ambiguous or wrong-era matches.
     'campagnolo stratos': [{ from: 1994, to: 1994, id: 581 }],
-    'shimano deore xt': [{ from: 1994, to: 1994, id: 986 }],
+    'shimano deore xt': [{ bike: 'Europe Express', from: 1989, to: 1989, id: null }, { from: 1994, to: 1994, id: 986 }], // Unnumbered 1989 front: BR-M730 / M732 generation unresolved.
     // 1991 Colnago group defaults; unnumbered/ambiguous controls stay unlinked.
     'shimano dura ace 8v': [{ from: 1991, to: 1991, id: 993 }],
     'shimano dura ace 8v sti': [{ from: 1991, to: 1991, id: 993 }],
@@ -5063,4 +5084,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { integratedBrakeLeverLink, normalizeForMatch };
+module.exports = { integratedBrakeLeverLink, normalizeForMatch, expandLabel, splitCellValue, matchComponent };

@@ -956,3 +956,20 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
 - 2026-11-13 (user's call): 1986 Pursuit Brake Levers "Dia-compe DC 630/165
   (racing); Dia-compe DC 630/135 (touring)" -> 8872 Dia-Compe 163 / 165 / 169 /
   195, the first-listed racing option (the touring 135 is 8105).
+
+## Selective front/rear brake specs — 2026-11-15 (approved plan, applied)
+
+- Original 1989 table re-read: Ozark printed p.14 explicitly names M454 front /
+  M451 U rear; Chinook p.15 names M350 front / M450 U rear. Explicit position
+  columns replace the two combined NULL Brakes cells in `1989_raleigh_spec.csv`.
+  Ozark -> 999 / 7213; Chinook front -> 7214, rear NULL because M450 is a
+  cantilever in the manufacturer chart. Preserve the conflicting printed text
+  until independent evidence identifies or corrects it.
+- BR-M451 7213 availability/source corrected to year_to 1989, source_ref 323
+  from this exact Raleigh fitment (old 1988 / 48); component Shimano notes
+  record the caveat and restoration values. Two combined specs replaced by
+  four position specs, three linked. The 1987 Zenith/Granada frame-dependent
+  cells remain unchanged under Brakes. Other Raleigh values are unchanged.
+- Original/replacement values and IDs, source pages and full regression/API
+  validation are in [cross-catalog notes](cross-catalog-notes.md), "Selective
+  Front Brake / Rear Brake specs".

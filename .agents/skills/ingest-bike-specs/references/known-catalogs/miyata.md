@@ -474,3 +474,14 @@
   FH-7400-ATB row); Sansin Gyro-Master (Sunshine 3601 vs RE-40 9000);
   Araya 16-B (two rows); all Ukai rims, Tange MES, Miyata tyres and
   Miyata Signature parts (no DB rows).
+
+## Selective front/rear brake specs — 2026-11-15 (approved plan, applied)
+
+- 1986 Ridge Runner (bike 1105) now has explicit Front Brake / Rear Brake CSV
+  columns: `DIA COMPE NGC 982 front` -> 697; `SUNTOUR XC rear` stays NULL pending
+  exact model evidence. Replaced combined NULL spec 18966 with two position
+  rows, preserving the original source 349 and wording. No other Miyata value
+  or component changed, and shared brake cells retain Brakes.
+- See [cross-catalog notes](cross-catalog-notes.md), "Selective Front Brake /
+  Rear Brake specs", for the full original value, new row IDs, validation and
+  the CSV repair. Temporary SQL and backups removed after validation.

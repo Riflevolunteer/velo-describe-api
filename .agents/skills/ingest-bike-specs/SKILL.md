@@ -28,6 +28,13 @@ review step matters more than speed.
   `IGNORED_LABELS` drop source-document columns (Catalog Page).
 - A spec row is inserted only for a non-empty cell. "None" / "Not Specified" is
   stored as-is; the UI normalizes it at display time.
+- Different front/rear brake models use explicit `Front Brake` / `Rear Brake`
+  CSV columns; both match the `Brakes` component category and display after
+  `Brakes`. Empty position cells create no rows. Ordinary shared brake text
+  stays under `Brakes`; do not auto-split phrases such as "front and rear" or
+  reach pairs such as "610/750". Use the existing Brakes overrides with exact
+  value/bike/year scope for supported halves, and NULL for unresolved halves.
+  A front/rear split does not resolve equipment that varies by frame style.
 - Linking: only labels with a `LABEL_TO_CATEGORY` entry are matched, exact
   title first, then whole-word substring in either direction, deduped by
   normalized title. Ambiguous (>1 candidate) means no link. A single-word title

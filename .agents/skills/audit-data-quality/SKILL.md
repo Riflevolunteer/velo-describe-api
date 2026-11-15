@@ -24,8 +24,9 @@ and validation follow-through before reporting it finished.
   `references/known-catalogs.md` index; use cross-catalog notes for work spanning
   brands.
 - Read and follow [TODO and scratchpad housekeeping](references/todo-housekeeping.md)
-  at the start, as results are verified and before finishing a task. Keep current work and dated results in
-  [TODO.md](../../../TODO.md).
+  at the start, as results are verified and before finishing a task. Keep open work
+  in [TODO.md](../../../TODO.md), and lasting results and evidence in the relevant
+  existing catalogue or project notes.
 
 Use this cycle for each catalogue or focused brand/category review:
 **Audit gaps -> source evidence -> extract -> reconcile -> review SQL -> load ->

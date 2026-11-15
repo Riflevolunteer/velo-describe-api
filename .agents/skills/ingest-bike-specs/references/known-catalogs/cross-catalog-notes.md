@@ -1,5 +1,11 @@
 # Cross-catalog notes catalogs processed so far
 
+## Freewheel identification policy — 2026-10-28
+
+The user declined maker-plus-speed-count defaults such as Maillard 5-speed
+1979-82 -> 8125 because they guess the model. Leave tooth-range-only, brand-only
+and unresolved either/or specs unlinked until evidence identifies a model.
+
 ## Nuovo Record rear-derailleur ranges (corrected 2026-09-27)
 
 While reading this catalog the DB's own dating for the 1020/A rows came up:
@@ -554,3 +560,93 @@ loaded. Battaglin Turismo (mixte city) and Falcon 83 / 89 (utility, deleted with
   The 8 mixed front / rear cells (cantilever + U-brake etc.) are planned as a
   Front Brake / Rear Brake split in TODO.md. The rest are generic, earlier
   deliberate nulls, or parts with no / ambiguous rows.
+
+
+## Selective Front Brake / Rear Brake specs — 2026-11-15 (approved plan, applied)
+
+Implemented the 2026-11-13 plan with explicit position columns in
+`1986_peugeot_us_spec.csv`, `1987_peugeot_us_spec.csv`, `1989_peugeot_spec.csv`
+(NL), `1989_raleigh_spec.csv` and `1986_miyata_spec.csv`. Only eight combined
+Brakes cells were emptied and split; blank position columns create no specs on
+other bikes. Shared descriptions ("Cantilever front and rear", "Dural front/rear
+CLB", "Weinmann 610/750") remain a single Brakes spec.
+
+Both position labels match the Brakes category. Order: Brakes -> Front Brake
+(label 51, order 8) -> Rear Brake (52, order 9) -> Brake Levers. Existing label
+IDs/titles are unchanged; 21 later orders moved by two. Position hints accept
+front/frt and rear/rer; ordinary Brakes cells do not auto-split. Exact bike/year
+overrides preserve printed wording, including Peugeot's BR M60 / M61
+abbreviations, identified as Deore BR-MT60 / MT61.
+
+Original values and retired/new IDs for restoration:
+All original rows below had label_id 18, raw_label Brakes and component_id NULL.
+Replacements have raw_label Front Brake / Rear Brake and retain source_ref.
+To reverse, restore the old rows from this table, retire only their new rows,
+and revert the eight CSV cells/overrides. Restore BR-M451's old values from the
+Shimano notes. CSVs are gitignored; this table also records their repaired values.
+
+| Bike ID / bike | Source | Retired spec / original Brakes value | New Front Brake spec / value / component | New Rear Brake spec / value / component |
+| --- | --- | --- | --- | --- |
+| 897: 1986 Peugeot Orient Express | 310 | 14965: SunTour XC Sport, chainstay mount rear, Shimano AT-50 front with AT-50 levers | 22582: Shimano AT-50 front with AT-50 levers -> 1003 | 22583: SunTour XC Sport, chainstay mount rear -> NULL |
+| 945: 1987 Peugeot Cannon Ball Express | 312 | 15897: Shimano "New" Deore XT, Frt: BR M730 cantilevers, Rer: BR M731 U brake | 22588: Shimano "New" Deore XT, Frt: BR M730 cantilevers -> 981 | 22589: Shimano "New" Deore XT, Rer: BR M731 U brake -> 982 |
+| 946: 1987 Peugeot Alpine Express | 312 | 15917: Shimano Deore, Frt: BR M60 cantilevers, Rer: BR M61 U brake | 22586: Shimano Deore, Frt: BR M60 cantilevers -> 978 | 22587: Shimano Deore, Rer: BR M61 U brake -> 979 |
+| 1021: 1989 Peugeot Alpine Express | 320 | 17345: Shimano Exage Mountain; rear U-brake | 22590: Shimano Exage Mountain -> 7212 | 22591: Shimano Exage Mountain; rear U-brake -> NULL |
+| 1022: 1989 Peugeot Europe Express | 320 | 17362: Shimano Deore XT; rear Deore XT U-brake | 22594: Shimano Deore XT -> NULL | 22595: Shimano Deore XT; rear Deore XT U-brake -> NULL |
+| 1069: 1989 Raleigh Ozark | 323 | 18220: Shimano M454 cantilever front, M451 'U' brake rear | 22596: Shimano M454 cantilever front -> 999 | 22597: Shimano M451 'U' brake rear -> 7213 |
+| 1070: 1989 Raleigh Chinook | 323 | 18237: Shimano M350 cantilever front, M450 'U' brake rear | 22592: Shimano M350 cantilever front -> 7214 | 22593: Shimano M450 'U' brake rear -> NULL |
+| 1105: 1986 Miyata Ridge Runner | 349 | 18966: DIA COMPE NGC 982 front, SUNTOUR XC rear | 22584: DIA COMPE NGC 982 front -> 697 | 22585: SUNTOUR XC rear -> NULL |
+
+Evidence and unresolved identifications:
+
+- Original 1989 Raleigh UK Lightweights, printed pp.14-15, scans
+  `Raleigh Lightweights 1989-page-013.jpg` and `...014.jpg`, re-read at
+  https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1989.html :
+  Ozark explicitly names M454 front / M451 U rear. BR-M451 availability was
+  extended 1988 -> 1989, source_ref 48 -> 323, on that exact fitment evidence;
+  no other component fields changed. The manufacturer chart's omission alone
+  does not establish discontinuation. Chinook really prints M350 front / M450 U
+  rear: link the front; keep the rear NULL because BR-M450 is a cantilever.
+  Do not silently substitute M451 or link the U description to 7212.
+- Original 1989 Peugeot NL table pp.30-31, image `cycles peugeot 1989 (31).jpg`,
+  re-read at https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1989.html :
+  Alpine Express specifies Exage Mountain front / Exage Mountain U rear;
+  Europe Express specifies Deore XT with Deore XT U rear. No exact codes.
+- Shimano Exage sales manual printed 08.1988, source 78, pp.11-12, re-read at
+  https://www.disraeligears.co.uk/site/shimano_-_the_new_system_component_family_for_every_riding_style.html :
+  Exage Mountain offers BR-M450 cantilever and BR-M452 / M453 U options.
+  Alpine front -> 7212; rear NULL between 7628 / 976. The old plan's M451
+  suggestion is not established for this bike. Europe Express front/rear stay
+  NULL between BR-M730 / M732 and BR-M731 / M733 generations. Unnumbered group
+  text does not justify the old plan's automatic 983 / 984 picks.
+- The 1986 Orient Express SunTour XC Sport chainstay rear and Miyata Ridge
+  Runner SunTour XC rear still need exact model evidence. Do not choose later
+  XC Sport 7000 or older CB-6100 solely from XC wording.
+- Other source records: Peugeot US 1986/1987 (310/312, original pages in Peugeot
+  notes), Miyata 1986 (349, SS Cycleworks PDF pp.22-23 in Miyata notes).
+  Generic cantilever/drum cells and frame-dependent 1987 Raleigh Zenith/Granada
+  610/733 cells were not split.
+
+Validation:
+
+- All 93 CSVs compared with the same read-only component snapshot: generated
+  specs 20,592 -> 20,600; generated links 7,303 -> 7,313. Exactly eight NULL
+  Brakes specs replaced by sixteen position specs (ten linked, six NULL), with
+  zero other mapping changes. Every unrelated CSV field compared equal.
+- Guarded transaction: two labels inserted, 21 display orders adjusted, one
+  component year/source update, sixteen specs inserted, eight exact old NULL
+  specs deleted only after both reviewed replacements existed. Rerun: zero
+  changes for every statement. No foreign keys reference the retired specs.
+- Full live snapshots: every unrelated spec, bike, source, brand and component
+  unchanged; only component 7213 year_to/source_ref changed. Live total specs
+  20,592 -> 20,600 and links 7,331 -> 7,341 (distinct from generator counts).
+  Brakes now 736/1,148; Front Brake 7/8; Rear Brake 3/8. Combined brake scope
+  746/1,164 versus 736/1,156 before. Keep older whole-DB snapshots historical.
+- Deployed `/bikedetail`: all eight bikes and two unsplit controls checked,
+  including a 1987 Raleigh frame-variant bike. Correct labels, order, values,
+  links and no duplicate Brakes rows. Existing client BikeDetailScreen / SpecRow
+  render returned labels and optional links dynamically; no API/client change
+  or store build needed. No device screenshot taken.
+- `npm test` passes, including category isolation, unchanged shared cells,
+  position hints, scoped overrides and unresolved-match protection. Temporary
+  SQL, snapshots, comparison output/helpers, page scans and CSV backups are
+  removed after validation; original values and decisions are retained above.

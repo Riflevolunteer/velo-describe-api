@@ -903,3 +903,20 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 - 2026-11-13 Brakes sweep (user approved): 1982 NL PVN 10 / PXN 10 "605
   side-pull" -> 8642 Weinmann AG 605 (1978-86). The catalogue misprints
   "Mafac 605"; Mafac made no 605 and the 1980 photo shows a Weinmann 605.
+
+## Selective front/rear brake specs — 2026-11-15 (approved plan, applied)
+
+- Repaired five combined cells in 1986 US, 1987 US and 1989 NL CSVs using
+  explicit Front Brake / Rear Brake columns. Both 1987 Cannon Ball Express
+  brakes link to 981 / 982 and Alpine Express to 978 / 979, preserving printed
+  M60 / M61 abbreviations for the Deore MT60 / MT61 models. 1986 Orient Express
+  front -> 1003; SunTour XC Sport chainstay rear remains NULL.
+- 1989 Alpine Express front -> 7212 BR-M450; rear stays NULL because the
+  manufacturer offers BR-M452 / M453 U options without a code in the bike
+  table. Europe Express front and rear remain NULL between Deore XT generations.
+  No unspecified group-to-generation mapping was forced.
+- Five original NULL Brakes rows replaced by ten position rows (six linked).
+  Other Peugeot cells are unchanged. Original source text, retired/new IDs,
+  exact repaired CSV values and regression/API validation are recorded in
+  [cross-catalog notes](cross-catalog-notes.md), "Selective Front Brake / Rear
+  Brake specs". Existing generic and frame-dependent cells retain Brakes.
