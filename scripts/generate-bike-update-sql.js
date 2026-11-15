@@ -867,7 +867,7 @@ const COMPONENT_OVERRIDES = {
     'shimano z206': 2544, // Shimano FD-Z206-HS, Z-Series
     'shimano deore xt': [{ from: 1994, to: 1994, id: 2503 }, { bike: "VTT 4 L 'Alpine Express'", id: 2499 }, { bike: "Europe Express", from: 1989, to: 1989, id: 2499 }, { to: 1989, id: 2497 }, { from: 1990, to: 1993, id: 2501 }], // FD-M700 (1983-86) / 1990 Bianchi: FD-M735
     'suntour cyclone mkiii': 2629, // SunTour FD-3300, Cyclone (No. 61 / 62)
-    'suntour superbe pro': [{ from: 1982, id: 2652 }], // FD-2000 endless band (1982-86 per Catalog No. 59 / No. 61); links the 1983 Bianchi
+    'suntour superbe pro': [{ from: 1982, id: 2652 }], // FD-2000 endless band (1982-86 per No. 59 / No. 61). Mounting inferred from group-only text: five linked bikes still need photos/fitment evidence (suntour.md, 2026-11-15).
     'suntour ag tech': 2609, // SunTour FD-2800, AG Tech
     // 1986 Cinelli groupset fan-out.
     'campagnolo victory': 2318, // Victory (1984-86)
@@ -1027,6 +1027,10 @@ const COMPONENT_OVERRIDES = {
     'shimano z501': 4544, // 1986 Raleigh Pursuit: Shimano RD-Z501, Z-Series
     'huret rival ar: 41 1d': 8957, // 1987 Peugeot (FR) table: Sachs Huret AR 41.1 D, Rival (part number printed)
     'huret rival white ar: 41 1d': 8957, // 1987 Peugeot (FR) table Triathlon: as above
+    'huret rival': [
+      { bike: 'PXR 80', from: 1988, to: 1988, id: null }, // Spec 16963: 50/40/30 + 14-28 needs 34T; 4401 and short-cage 8957 are rated 28T. Cage/generation unresolved (huret.md, 2026-11-15).
+      { id: undefined }, // Preserve normal matching for other bikes/years; an unmatched override range would instead force NULL.
+    ],
     'shimano rd 105': [{ from: 1987, to: 1989, id: 4449 }], // 1987 Peugeot (FR) Aspin: RD-1050, 105 SIS
     'shimano deore rd mt60sp sis gt': 4487, // 1987 Peugeot (FR) Normandie: RD-MT60, Deore
     'simplex sx 440 gt sp': 4622, // 1987 Peugeot (FR) table: as 'sx440 gt sp'
@@ -4280,7 +4284,7 @@ const COMPONENT_OVERRIDES = {
     'sun tour ultra 6 13 14 15 18 21 24t': 2240, // Clubman: SunTour NW-6500, New Winner Ultra 6 (same block as 1983)
     'suntour ultra 6 silver 14 16 18 21 24 28t': 7812, // Record Ace: SunTour US-6500, Perfect Ultra-6 (14T start rules out NW-6500; 28T top is beyond the row's 14-26T, nearest fit)
     'regina oro 13 14 15 16 17 18t': 2194, // Team Replica: Regina Oro (6 speed)
-    'shimano 600 ax cassette 13 14 15 16 17 19 21t': 1197, // Road Ace: Shimano AX, 600 AX (Cassettes row)
+    'shimano 600 ax cassette 13 14 15 16 17 19 21t': 1197, // 1984 Road Ace: preserve printed text; p.5 gives six ratios matching 13-14-15-17-19-21T (extra 16T likely print error). Retain AX family link; reviewed 2026-11-15, raleigh.md.
     // 1978 Raleigh (US, ebykr scan).
     'raleigh sun tour perfect 14 28t': 2245, // Super Course: SunTour 1100-1106 / PT-5000, Perfect (5-speed)
     'raleigh sun tour perfect 14 34t': 2245, // Super Grand Prix / Grand Prix / Record Ace, as the 1983 Royal

@@ -2409,3 +2409,73 @@
   See the bike skill's cross-catalog notes, "Selective Front Brake / Rear Brake
   specs", for all eight bikes, original values, ten new links and six unresolved
   halves. Temporary SQL and scans removed after validation.
+
+## BB-UN73 unsupported dating — evidence review 2026-11-15
+
+- Before correction, row **121**, `Shimano BB-UN73`, had **1998-1998**, source_ref **1**,
+  VeloBase GUID `746BA547-D186-4942-90B5-A285B69332A7`, and **zero bike links**.
+  Its original description was `Shimano BB-UN73, Japan. Sealed cartridge bottom
+  bracket, successor to BB-UN72 (1996-97); English 1.370 x 24 (velobase). Date
+  inferred from the UN70 / UN71 / UN72 sequence; no catalogue seen.`
+  Those dates came from our 2026-11-02 sequence inference, not manufacturer
+  dating; the VeloBase record itself lists years N/A. They are not defensible
+  as a supported production/availability range.
+- **New introduction lead:** [Sheldon Brown / John Allen, Raleigh threading
+  and interchangeability](https://www.sheldonbrown.com/raleigh26.html), section
+  "Shimano UN72 With Phil Wood Rings", explicitly reports UN72 being replaced
+  by UN73 for **model year 2003**, explaining the change from a removable
+  right mounting ring to threads integral with the cartridge shell. This is
+  a named technical author's report, not a recovered 2003 Shimano launch
+  document. Keep that distinction when describing the start year.
+- Re-downloaded, text-checked and visually read the official Shimano archive:
+  - [2005 specifications, printed/PDF p.66](https://productinfo.shimano.com/pdfs/product/archive/2005_SPECIFICATION.pdf#page=66),
+    Bottom Bracket (ATB / NEXAVE), page dated **March 1, 2004**.
+  - [2007 specifications, printed/PDF p.59](https://productinfo.shimano.com/pdfs/product/archive/2007_SPECIFICATION.pdf#page=59),
+    Bottom Bracket (ATB), page dated **February 20, 2006**.
+  Both explicitly list **BB-UN73**, hollow non-splined spindle and BC1.37
+  threads; the latter specifies steel spindle material. Both show 110 / 113mm
+  spindles for 68 / 73mm shells and 122.5mm for a 68mm shell. These are
+  positive manufacturer attestations for the **2005 / 2007 model-year** books;
+  distinguish them from their earlier page revision dates and later PDF
+  creation timestamps. The later listing disproves the recorded 1998-only
+  range; it does not establish when production ended.
+- **Applied 2026-11-15, user approved:** changed **1998-1998 -> 2003-2007** as an
+  evidence-based model-year availability range, explicitly recording **2003
+  as reported by Brown/Allen** and **2007 as the latest manufacturer catalogue
+  attestation checked, not discontinuation**. Source_ref **1 -> 408**, new
+  catalogue source `Shimano Specifications (2007 model year, revised 2006-02-20)`,
+  citation `https://productinfo.shimano.com/pdfs/product/archive/2007_SPECIFICATION.pdf#page=59`.
+  The Brown/Allen introduction report remains separately cited above; it is
+  not a fact established by the manufacturer's 2007 table.
+- Replaced the sequence-derived description (including the unsupported
+  "1996-97" chronology and "no catalogue seen" claim) with **231 characters**:
+  `Sealed square-taper cartridge BB; hollow steel spindle, BC1.37 threads,
+  68/73mm shells. 110/113mm axles for both shell widths; 122.5mm for 68mm.
+  MY2003 introduction reported; 2007 is latest checked attestation, not
+  discontinuation.` Title, component/GUID, brand/category/group and search_text
+  are unchanged. No bike links or source CSVs were changed. Manufacturer
+  confirmation of the introduction and a positive discontinuation statement
+  remain open; do not turn these availability bounds into proven production dates.
+- Validation: transactional guarded source INSERT plus component UPDATE each
+  affected **one row**; second run affected **zero rows**. Readback confirmed
+  source **408**, dates, description/length and zero bikes linked to 121.
+  Compared all **20,600 live bike_spec/component links** unchanged. Re-generated
+  **20,600 spec INSERT mappings from 93 local CSVs** in memory before/after:
+  **zero mapping changes**, preserving existing `bike-update.sql`. No matcher
+  or component identity changes. Restoration, only if deliberately justified:
+  guard row 121 by its current 2003/2007 dates, new description and source 408,
+  restore the original 1998/1998 description/source 1 above, and preserve its
+  stable IDs. The bibliography source can remain registered for its evidence.
+- **Research scope / do not repeat:** the already-reviewed 1998/1999 consumer
+  catalogues were not reopened. Searches covered c.2000-2003 manufacturer and
+  service-document leads; no earlier dated Shimano UN73 listing recovered.
+  Guessed official `2003_SPECIFICATION.pdf` / `2004_SPECIFICATION.pdf` paths
+  were not retrievable (2004 returned 404 via curl). The Disraeli 2003 spare
+  parts index is only six derailleur sheets, not a full bottom-bracket book.
+  Search hits for **TL-UN73** refer to a tool and do not attest **BB-UN73**.
+  Seller/weight-list entries labelled 2002 were not accepted as verified
+  manufacturer launch evidence. A dated 2002/2003 Shimano catalogue/service
+  page naming the actual BB is the useful next lead, not another model-number
+  sequence inference. Official PDF downloads/renders were discarded after
+  their page references and findings were recorded. Correction SQL, comparison
+  script and baseline snapshots removed after readback and idempotency validation.

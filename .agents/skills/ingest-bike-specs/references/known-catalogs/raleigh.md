@@ -715,6 +715,33 @@
   "Shimano 600 EX with Aero Cover" headset, previously unlinked, now 3090
   via the new key; regenerated and back-filled, 1983: 100 -> 101.
 
+### Road Ace 12 cassette discrepancy — reviewed 2026-11-15
+
+- Live spec **6086**, bike **339**, source **148**, is linked to **1197**
+  Shimano AX, 600 AX (Cassettes, 1981-84). Its stored text and the CSV both
+  read `Shimano 600 AX Cassette 13-14-15-16-17-19-21T`.
+- Re-read the original [printed p.5 scan](https://ebykr.com/wp-content/uploads/2026/08/ebykr-1984-raleigh-catalog-p05-scaled.webp),
+  Road Ace column. It really prints all seven tooth counts: this is not a CSV
+  transcription error. The same column calls the model Road Ace **12**, gives
+  a **52/42T** double and only six gear ratios per chainring:
+  **42T: 87-81-76-67-60-54**, **52T: 108-100-94-83-74-67** gear inches.
+- Those ratios agree with **13-14-15-17-19-21T**, using the table's nominal
+  27-inch wheel convention. A 16T sprocket would add approximately **71 / 88**
+  gear inches; neither appears in this column. The adjacent Competition 12
+  column repeats the same seven-count/six-ratio inconsistency. This supports
+  an extra **16T printed in error**, rather than seven-speed equipment.
+  The physical tooth sequence remains an inference from internally consistent
+  gearing evidence, not a directly verified original bicycle.
+- **Decision:** retain the faithfully transcribed seven-count source text and
+  existing **1197** family link; do not invent a seven-speed 600 AX row or
+  silently remove 16T from the source text. The separately linked FH-6361
+  freehub row **3532** describes the six-speed 600 AX system. The prior TODO
+  suspicion of a wrong link is superseded by this source review.
+- Validation: live spec/component readback, original scan, CSV and generator
+  override checked; ratios recalculated for both rings. No DB values, CSV
+  cells, component dates or matcher behaviour changed; only the existing
+  override comment was clarified. The source/ratio question is closed.
+
 ## 1985 Raleigh — `1985_raleigh_spec.csv` (19 bikes, 371 specs, 92 linked)
 
 - Source (added 2026-10-21): https://www.sheldonbrown.com/retroraleighs/catalogs/1985/ , titled "1985 Raleigh USA Bicycle Catalogue" (scans by Gary, HTML by Sheldon Brown, January 2007; cover, four range pages and a specifications page, no printer or form number). The title states the US market, so US is stated, not inferred.

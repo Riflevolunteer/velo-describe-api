@@ -842,6 +842,41 @@
   Pro FD could link (override in generate-bike-update-sql.js starts 1984);
   4766 keeps its 1983 Bianchi link.
 
+### FD-2000 / FD-2050 mounting and retained VeloBase identifier — 2026-11-15 review
+
+- Visually re-read [No. 59 printed p.9](https://www.disraeligears.co.uk/site/suntour_catalog_no_59_-_page_9.html),
+  source **127**. **FD-2000** has an endless stainless band, 28.6mm round /
+  35 x 21mm aero tube fitment, 14T capacity and 82g weight. **FD-2050** is
+  separately illustrated with braze-on mounting, 14T capacity and 92g including
+  the adapter. These confirm the mounting distinction in existing rows
+  **2652** and **8268**; do not rename FD-2000 as braze-on or merge the two.
+- Re-fetched the [VeloBase page](https://velobase.com/Pages/ViewComponent.aspx?ID=24650D30-1421-47DE-9984-EC432D3F7E78)
+  retained as 2652's `source_id`. Its title is "SunTour FD2000, Superbe Pro",
+  model field "FD2000 Braze on", clamp style "Braze-on Tab", years 1984-86;
+  no component photo was available to establish a specimen identity. Its
+  mounting metadata conflicts with the manufacturer's model definitions.
+  Do not use this page to overturn the catalogue-backed endless-band identity,
+  or assign its unphotographed entry to 8268 as a proven FD-2050 specimen.
+- The previous TODO's apparent title/description conflict is resolved in favour
+  of the manufacturer catalogue. Live 2652 already has the correct endless-band
+  title/description and catalogue `source_ref` **192** (No. 60); the VeloBase
+  GUID is a retained historical identifier, not its current primary source.
+  No identifier, description, source_ref or dates were changed in this review.
+  The 78g measured-weight attribution from retired row **2649** remains as
+  recorded in the No. 60 merge notes below; it is not a weight established by
+  the conflicting braze-on page.
+- **Still open: mounting identification for five linked bikes.** Live specs
+  **920** (1983 Bianchi Professional), **3299** (1985 Raleigh Prestige),
+  **8179** (1986 Raleigh Prestige), **20864** (1982 Pro Miyata), **21809**
+  (1983 Pro Miyata) all link to 2652 but print only SunTour Superbe Pro, without
+  model code or mounting. The generic generator override therefore remains an
+  inferred mounting choice. Need an original model photo showing band/boss or
+  a period parts/fitment document before confirming or changing each link.
+  A catalogue's separate FD-2050 listing alone does not identify these bikes.
+- Validation: live rows 2652 / 8268 and all five linked spec texts read back;
+  original manufacturer illustrations and mounting specifications checked.
+  No DB/CSV changes, merges, date moves or matcher behaviour changes applied.
+
 ## SunTour Catalog, Japanese domestic edition — printed 04.1979 (cyclespeugeot.web.fc2.com, 48 JPGs)
 
 - `data_source` 128, label "SunTour Catalog, Japanese edition (printed 04.1979)".

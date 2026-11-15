@@ -769,6 +769,19 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   Mondia-Lita, Sakae, Sugino, Lee Chi, generic cells.
 - Regression: all 69 other catalogues' link counts unchanged.
 
+- **PXR 80 rear correction, applied 2026-11-15 (user approved):** spec **16963**,
+  bike **1000**, source **319**, retains `Huret Rival` but its component link
+  changed **4401 -> NULL**. Original p.20 specifies 50/40/30 and 14-28, requiring
+  **34T** capacity; 4401 and the later short-cage 8957 are documented at 28T.
+  Added an exact **PXR 80 / 1988** rear NULL override, preserving normal matching
+  elsewhere. One DB row affected, rerun zero; source text/provenance and all
+  other 21 Rival links verified unchanged. All 93 local CSVs / 20,600 generated
+  specs compared unchanged (this spec already generated NULL from ambiguity);
+  the explicit guard prevents future relinking. Tests pass. Need generation
+  and cage evidence before selecting a replacement. Full source evidence,
+  original values and validation are in the
+  [Huret review](../../../ingest-component-catalog/references/known-catalogs/huret.md#generic-rival-bike-link-review--2026-11-15-pxr-80-correction-applied).
+
 ## 1989 Peugeot (NL) — `1989_peugeot_spec.csv` (NL, data_source 320: 17 bikes, 301 specs, 61 linked)
 
 - Tyre follow-up (2026-11-09, done): original printed p.30 wheel table confirms Mont Blanc HP22 700 x 22C, two-tone with reflective sidewalls. Maker not printed; identified by HP22 code and the explicit Hutchinson 1982 / 1986 tables. Spec 17209 -> new 10972 HP22 (700 x 22C), with a 1989 Mont Blanc generator entry. HP22 no longer a source gap.

@@ -471,6 +471,84 @@ Scratch evidence/review plan: `/tmp/rival-investigation.txt`,
 `/tmp/rival-4401.jpg`, `/tmp/rival-4401-extra-0.jpg` through `-3.jpg`,
 and `/tmp/rival-specimen-0.jpg` through `-2.jpg`.
 
+### Generic Rival bike-link review — 2026-11-15, PXR 80 correction applied
+
+Baseline readback found **17** generic/finish-only rear specs on **4401** and
+**5** explicitly coded specs on **8957**. After the approved PXR 80 correction
+below, **16** remain on 4401 and **5** on 8957. The earlier generation distinction and the decision to
+keep the two rows separate remain supported by the original manufacturer
+pages, visually re-read in this review: September 1983 p.8 (2850-00, upper
+limit screws, 30T maximum sprocket / 28T total capacity) and April 1986 scan 3
+(AR 41.1 D, lower screws, 36T maximum sprocket / 28T total capacity, with a
+long-cage option separately mentioned). Their URLs are in the prior entry.
+
+Before correction, the generic links were:
+
+| Catalogue | Specs on 4401 |
+| --- | --- |
+| 1985 Peugeot FR | 13958 |
+| 1986 Peugeot FR | 14439 |
+| 1986 Peugeot US | 14782, 14801 |
+| 1987 Peugeot FR | 15123, 15143, 15182 |
+| 1987 Peugeot US | 15744, 15762 |
+| 1987 Raleigh UK | 8783, 8806 |
+| 1988 Peugeot FR | 16412, 16584, 16604, 16624, 16662, 16963 |
+
+**Capacity evidence: 1988 Peugeot PXR 80, spec 16963, bike 1000, source 319.**
+The [original French catalogue](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1988.html)
+printed p.20 confirms Stronglight 100 **30 x 40 x 50T**, Helicomatic **14/28**
+and **15-speed Huret-Rival**. Required total capacity is
+`(50 - 30) + (28 - 14) = 34T`, exceeding the documented **28T** on its former
+2850-00 row. The later short-cage 8957 is also rated 28T, so repointing solely
+on year would not resolve the capacity conflict. Printed p.18 includes the
+PXR 80 model photo, but at the available 1000px page width the derailleur is
+too small to identify the limit-screw arrangement or cage version reliably.
+
+**Correction applied 2026-11-15, user approved:** changed 16963's `component_id`
+**4401 -> NULL** using a transactional UPDATE guarded by spec/bike/label IDs,
+raw label, exact value, prior component and source. Exactly **one row** changed;
+rerun changed **zero**. The spec retains bike **1000**, label **17**, raw label
+`Rear Derailleur`, value `Huret Rival` and source **319**. `updated_at` changed
+from **2026-11-02 18:59:27 UTC** to **2026-11-15 10:29:19 UTC** through MySQL's
+normal link-change timestamp. All other **21** Rival links are unchanged.
+
+Added a Rear Derailleurs NULL override for `Huret Rival`, scoped to **PXR 80 /
+1988**. An explicit undefined fallback preserves normal matching for every
+other bike/year. Need a sharper original-bike photo or period parts document
+establishing generation and cage/capacity before selecting/adding a row.
+This replaces the initial unapproved proposal and supersedes treating the
+PXR 80 link as merely the generic-generation question retained on November 8.
+No component dates/definitions or CSV source text changed. Restoration, only
+if deliberately justified later: restore 16963's 4401 link while it is still
+NULL and retains the same bike/label/text/source, and remove the scoped override;
+keep the normal new `updated_at` timestamp rather than restoring the old one.
+
+**Other 16 links:** remain unresolved, with no new supported replacement.
+Compared their live crank/freewheel specifications. Raleigh Zenith / Granada
+have 50/36 and 14-28 (28T required), compatible with either documented short
+cage. The Peugeot road gearings with stated ranges likewise do not distinguish
+the generations; several other entries omit their tooth range. Inspected the
+original [1987 Raleigh](https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1987_3.html)
+p.11 Zenith/Granada photos and 1988 Peugeot pp.10-11 Aravis, Galibier,
+Mont-Faron and Ventoux photos; none resolves the limit screws at the available
+scan size. The 1987 Peugeot US model-page proxy attempts (image positions
+33-35 on the held index) returned two 404s and a timeout, not usable photos.
+Do not infer early production through 1988 from these unresolved links, or
+move these links to 8957 on year/white finish alone.
+
+Validation: read back the target and compared all 22 relevant spec/link IDs
+against the captured baseline: only 16963 changed. Re-generated **20,600** spec
+INSERT mappings from all **93 local catalogue CSVs** in memory using the same
+component snapshot before/after: **zero changed mappings**; PXR 80 already
+generated NULL from ambiguity, and the new override makes the decision durable
+if a candidate becomes unique. The existing `bike-update.sql` was preserved.
+Regression tests cover both tempting generations, scope boundaries and the
+unaffected front/coded rear decisions; `npm test` passed. Fresh live Rear
+Derailleur coverage is **875 / 1,074 (81.5%)**, with **942** category components.
+The PXR 80 identification and other 16 generic links remain in TODO. Temporary
+SQL, snapshots, comparison scripts and original review downloads/crops were
+removed after readback and idempotency validation.
+
 ## Elysee 5/6-speed and Elysee 7 systems — 2026-11-08
 
 User approved keeping **4396 Sachs Huret Elysee** and **4397 Sachs Huret
