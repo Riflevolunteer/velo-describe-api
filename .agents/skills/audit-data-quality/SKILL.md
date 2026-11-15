@@ -158,9 +158,13 @@ valid result. Fix wrong existing links before adding speculative new ones.
 
 ## Available tools and planned work
 
-Use the existing read-only queries, `/linkCoverage` and
-`scripts/duplicate-report.js` for baselines and validation. The consolidated
-read-only integrity report and reusable generator/live-DB comparison are still
-planned in [TODO.md](../../../TODO.md#open-database-quality-tooling); do not assume
-those commands exist. Keep temporary comparison scripts and output in the
-scratchpad, preserving the current generated SQL file when comparing catalogues.
+Use `node scripts/quality-report.js` for consolidated read-only integrity,
+provenance and date checks (`--json` for every finding, `--limit=0` for full text;
+exit 2 means data errors, exit 1 means command/query failure). Review candidates
+are not proven wrong links. The command uses a read-only consistent DB snapshot;
+see the repository README for checked relationships and catalogue exceptions.
+Use `/linkCoverage`, read-only queries and `scripts/duplicate-report.js` for
+coverage and component identity reviews. The reusable generator/live-DB comparison
+remains planned in [TODO.md](../../../TODO.md#open-database-quality-tooling).
+Keep temporary comparison scripts and output in the scratchpad, preserving the
+current generated SQL file when comparing catalogues.

@@ -16,10 +16,6 @@ after validation; retain what is still needed for unfinished work or review.
 
 ## Open: database quality tooling
 
-- [ ] **One read-only quality report:** dangling component/source/group/brand
-  references, duplicate bike specs, category/group ownership conflicts, missing
-  provenance/dates and linked-bike date conflicts. Separate errors from review
-  candidates; the existing duplicate report remains a review aid.
 - [ ] **Reusable generator/live-DB comparison:** replace scratchpad-only scripts
   with a maintained command showing links gained, lost or changed per spec,
   scoped to already-loaded catalogues and preserving the current generated file.
@@ -92,7 +88,7 @@ after validation; retain what is still needed for unfinished work or review.
 ## Open: component data follow-ups
 
 
-- **Component dates audit, 2026-11-09:** 486 linked specs on 200 components fall outside the recorded component date range; 186 linked specs on 47 components have an incomplete date range. These are review candidates, not proven wrong identifications: distinguish catalogue attestation dates, later bike fitment, reused names and actual generation mismatches before changing dates or links. Full read-only snapshots: `/private/tmp/component-todo-audit-era-mismatches.tsv` and `/private/tmp/component-todo-audit-missing-dates.tsv`. The original narrow follow-up list now covers 12 specs on six parts: 3141 Tange Falcon (5), 3388 Normandy Luxe Competition (2), 1398 Sedis Gold (2), 6899 Vittoria Pro L Slick (1), 1365 Everest Serie Special Oro (1), 9126 Gipiemme Crono Sprint (1). 25 descriptions currently reach the 255-character limit (previously 35); inspect before assuming truncation.
+- **Component dates and metadata review:** use `node scripts/quality-report.js` for current IDs and reasons. The whole-DB 2026-11-15 report has 421 linked-date review flags, 1,553 components with incomplete dates, 35 broad Freewheel-label reviews and 24 descriptions at the length limit; see [scope, evidence and validation](README.md#checking-database-quality). Review identity/source evidence before changing links or dates; inspect the flagged descriptions before assuming truncation. **Historical linked-only audit, 2026-11-09:** 486 linked specs on 200 components fall outside the recorded component date range; 186 linked specs on 47 components have an incomplete date range. These are review candidates, not proven wrong identifications: distinguish catalogue attestation dates, later bike fitment, reused names and actual generation mismatches before changing dates or links. Full read-only snapshots: `/private/tmp/component-todo-audit-era-mismatches.tsv` and `/private/tmp/component-todo-audit-missing-dates.tsv`. The original narrow follow-up list now covers 12 specs on six parts: 3141 Tange Falcon (5), 3388 Normandy Luxe Competition (2), 1398 Sedis Gold (2), 6899 Vittoria Pro L Slick (1), 1365 Everest Serie Special Oro (1), 9126 Gipiemme Crono Sprint (1). The earlier description review counted 25 at the 255-character limit (previously 35); the 2026-11-15 report supersedes that count.
 - Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Maxy II and the Nuovo Tipo C1264/C1265 identification (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
 - Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); the SunTour "syncro-shift" Cyclone II lever (Palo Alto 1981/82; no part number, no row).
 - Campagnolo hub 1253: check Cat 17 p.54 against row 3232 ("1253 kidney-bean at 1972 only", still current in 1974); needs the page image.

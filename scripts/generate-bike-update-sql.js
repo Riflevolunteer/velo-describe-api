@@ -297,65 +297,8 @@ function buildSearchText(title, brand) {
 // spec is only compared to Freewheels components, not also Chains — without
 // this a lot of period spec text ends up ambiguous across categories that
 // happen to share a brand's naming (Regina made both chains and freewheels).
-// Labels not listed here fall back to matching against every component.
-// Both singular and plural (and, for two-word categories, spaced/unspaced)
-// forms are listed explicitly — headers across these catalogs aren't
-// consistent about which they use (e.g. "Stem" vs "Stems", "Seatpost" vs
-// "Seat Posts"), and a missing form here means that column silently never
-// gets matched at all (matchComponent returns null for any unmapped label).
-const LABEL_TO_CATEGORY = {
-  brake: ['Brakes'],
-  brakes: ['Brakes'],
-  brakeset: ['Brakes'],
-  brakesets: ['Brakes'],
-  'front brake': ['Brakes'],
-  'rear brake': ['Brakes'],
-  'brake lever': ['Brake Levers'],
-  'brake levers': ['Brake Levers'],
-  saddle: ['Saddles'],
-  saddles: ['Saddles'],
-  chain: ['Chains'],
-  chains: ['Chains'],
-  'chain type': ['Chains'],
-  freewheel: ['Freewheels'],
-  freewheels: ['Freewheels'],
-  handlebar: ['Handlebars'],
-  handlebars: ['Handlebars'],
-  tyre: ['Tyres'],
-  tyres: ['Tyres'],
-  tire: ['Tyres'],
-  tires: ['Tyres'],
-  'tire configuration': ['Tyres'],
-  pedal: ['Pedals'],
-  pedals: ['Pedals'],
-  // Hub gears (Sturmey-Archer, Sachs Torpedo) are their own DB category.
-  hub: ['Hubs', 'Geared Hubs'],
-  hubs: ['Hubs', 'Geared Hubs'],
-  crankset: ['Cranksets'],
-  cranksets: ['Cranksets'],
-  headset: ['Headsets'],
-  headsets: ['Headsets'],
-  'front derailleur': ['Front Derailleurs'],
-  'front derailleurs': ['Front Derailleurs'],
-  'rear derailleur': ['Rear Derailleurs'],
-  'rear derailleurs': ['Rear Derailleurs'],
-  rim: ['Rims'],
-  rims: ['Rims'],
-  'wheel rims & spokes': ['Rims'],
-  stem: ['Stems'],
-  stems: ['Stems'],
-  seatpost: ['Seat Posts'],
-  seatposts: ['Seat Posts'],
-  'seat post': ['Seat Posts'],
-  'seat posts': ['Seat Posts'],
-  // Integrated levers (STI, Ergopower) live in their own DB category.
-  shifter: ['Shifters', 'Shifting Brake Levers'],
-  shifters: ['Shifters', 'Shifting Brake Levers'],
-  cassette: ['Cassettes'],
-  cassettes: ['Cassettes'],
-  'bottom bracket': ['Bottom Brackets'],
-  'bottom brackets': ['Bottom Brackets'],
-};
+// Shared with the read-only quality report; unmapped labels are not matched.
+const { LABEL_TO_CATEGORY } = require('../spec-categories');
 
 // Maps a raw CSV header to one or more canonical bike_spec_labels. Most
 // entries here are true splits: a single "Derailleur(s)" column describes
