@@ -1189,7 +1189,7 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
     // Ranged on the DB rows (2026-10-09, 1989 De Rosa): first gen 1985-86, A010 2nd gen 1987-89, R010 1990-91. The 1987 Bianchi
     // Mondiale / X4 rows had been left on the first gen; fixed by one-off UPDATE.
-    'campagnolo c record': [{ to: 1986, id: 4096 }, { from: 1987, to: 1989, id: 4098 }, { from: 1990, to: 1991, id: 4133 }, { from: 1992, to: 1992, id: 4134 }], // 1992: RD-01RE, Record (1992 Bianchi JP)
+    'campagnolo c record': [{ to: 1987, id: 4096 }, { from: 1988, to: 1989, id: 4098 }, { from: 1990, to: 1991, id: 4133 }, { from: 1992, to: 1992, id: 4134 }], // 1992: RD-01RE, Record (1992 Bianchi JP); 1987 season = 0102050 first gen (Feb 1987 Record brochure; A010 from the Nov 1987 brochure, 1988 season)
     // SunTour AccuShift leaflets (c. 1987): pin retitled 1987 Bianchi links
     'suntour cyclone 7000': 4740, // SunTour RD-CL10-SS, Cyclone 7000
     'suntour alpha 5000': 4721, // SunTour RD-5000-SS, alpha-5000

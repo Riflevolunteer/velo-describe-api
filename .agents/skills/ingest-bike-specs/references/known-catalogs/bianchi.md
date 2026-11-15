@@ -339,6 +339,10 @@
   (1987-94), 4 rows, one-off UPDATE (crecord-era-fix.sql). Still 148
   linked. Levers, FD, hubs, headset, pedals, seatpost, shifters (5970,
   1987-91) were already period-correct.
+- **Superseded 2026-11-15 for the rear derailleur:** the February 1987 Campagnolo Record brochure (source 414) shows the
+  first-style 0102050, and A010 first appears in the November 1987 (1988-season) brochure, so the 1987 X4 / Mondiale rears
+  (1110 / 1130) moved back 4098 -> 4096 (4096 `year_to` -> 1987); see campagnolo.md. The crank move (1483 -> 1482) is still
+  to be checked the same way.
 
 - 2026-10-10 (Nitto No. 6, 1980 ingest): 1985 Bambina Stem "Nitto Technomic,
   60 mm" -> 8563 Nitto Technomic (generic match; 8563 year_to 1985). Overrides

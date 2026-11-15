@@ -1398,3 +1398,25 @@ All new rows have the catalogue-attested range 2000–2000 (availability, not pr
 - Validation: 9 statements, 9 rows; rerun 0. Generator over all CSVs: 20,584 mappings before and after, only change
   1992 Bianchi Mondiale rear NULL -> 4112 (linked 7,323 -> 7,324). `quality-report.js` 0 errors; 4108's 1987 date
   conflict cleared. `npm test` passed. Rear Derailleur coverage 876 / 1,074.
+
+## Campagnolo "Record" brochure — February 1987 (Disraeli Gears, 16 scans), data_source 414; C-Record rear generation in 1987, 2026-11-15 (user approved)
+
+- Label `Campagnolo "Record" brochure (February 1987)`, country IT. Source:
+  https://www.disraeligears.co.uk/site/campagnolo_-_record_february_1987_version.html (`00_main_images/campagnolo_-_record_scan_NN_main_image.jpg`,
+  1560 x 2215). English; back page (scan 16) "Printed in Italy February 1987", Campagnolo S.p.A. Vicenza / SARL / Corporation
+  addresses. Read for the rear derailleur only: scan 3 Record history and victories, scan 4 Record group photo, scan 5 crank /
+  pedals / posts, scan 15 Record Pista. No catalogue numbers on the pages read; the rest unread.
+- Scan 4 shows the first-style C-Record rear: winged-hub shield logo on the outer parallelogram plate (Disraeli Gears' 1st-style
+  marker; 2nd-style A010 has the script logo, a cut-out at the tension pulley and a brass nut at the p-pivot, dated from 1988).
+  With n. 18 bis (Dec 1986, source 9) and Record News Winter 1987 (source 197), 0102050 was current for the 1987 season; A010 is
+  first attested in the November 1987 Record brochure (source 16), a 1988-season document.
+- Applied: 4096 "0102050, C-Record (first generation)" `year_to` 1986 -> 1987, `source_ref` 9 -> 414, description rewritten (old:
+  "Campagnolo 0102050, C-Record (first generation), Italy. Cat. n. 18 bis (Dec 1986): 0102050."). 4098 A010 keeps 1987-89.
+  1987 Bianchi X4 / Mondiale rear specs 1110 / 1130 moved 4098 -> 4096, reversing the date-only 2026-10-09 "C-Record era fix"
+  (bianchi.md) for the rear derailleur. Rear override `'campagnolo c record'` now `to: 1987 -> 4096`, `1988-89 -> 4098`.
+- Validation: 3 statements (1 / 1 / 2 rows), rerun 0. Generator over all CSVs: 20,584 mappings, only the two 1987 Bianchi rear
+  specs changed (4098 -> 4096), matching live. `quality-report.js` 0 errors; 4096's remaining date flag is the 1984 De Rosa
+  (documented late-1984 brochure for 1985). `npm test` passed.
+- Open: the same 2026-10-09 fix moved the 1987 Bianchi C-Record crank 1483 -> 1482 by date alone; check it (and other C-Record
+  parts) against this brochure. Disraeli Gears lists n. 18 bis printings 04/1985 and 12/1985, while source 9 records our copy's
+  back cover as "12/86"; re-read that page, since 1986 `year_to` values were set from it.
