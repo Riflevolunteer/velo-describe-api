@@ -3775,6 +3775,9 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // Exact SR codes: Fuji 1989 pp.33/35, Miyata 1986 p.23, Bianchi 1989/90 tables.
+    'sr mte 300': [{ from: 1986, to: 1989, id: 11307 }],
+    'sr cle 100': [{ from: 1989, to: 1990, id: 11308 }],
     'sr ct p6c pillar': [{ bike: '210', from: 1983, to: 1983, id: 5861 }, { bike: '110', from: 1983, to: 1983, id: 5861 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'sr ct p6 pillar': [{ bike: '710', from: 1983, to: 1983, id: 5861 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'sr ct p6': [{ bike: '210', from: 1985, to: 1985, id: 5861 }, { bike: '110', from: 1985, to: 1985, id: 5861 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.

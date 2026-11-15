@@ -394,3 +394,207 @@
   read-back verified the three rows, descriptions, years and source citations.
   Source files remain at their cited public URLs; the app registers citations
   and does not provide a document storage/upload facility.
+
+## Mid-1980s source-gap review — 2026-11-15 (read-only)
+
+### Full catalogue recovery
+
+- Reviewed the overlapping 2026-11-02, 11-06 and 11-13 searches first. No complete
+  No.19 (September 1983), No.23 (August 1988), or intervening No.20–22 scan
+  recovered. This describes the searches, not proof no scan exists online.
+  No DB/source/link/matcher changes or SQL prepared in this review.
+- Edition dates remain collector reports in [BikeForums posts 4 and 7](https://www.bikeforums.net/classic-vintage/1123283-sakae-ringyo-sr-when-did-they-start.html).
+  Hummer reports seeing No.19; T-Mar cites No.19 and No.23. No download for
+  either is supplied there. Don Buska is not established as the later-catalogue
+  holder. Requesting scans from a confirmed holder remains an offline action;
+  nobody contacted during this review.
+- [Velo-Pages album 58555](https://www.velo-pages.com/main.php?g2_itemId=58555)
+  still returns HTTP 500 (curl outside sandbox). Previous review identifies
+  the 20-page 1983 album. Its capture 20241230193714 supplied thumbnails only.
+  The 2026-11-13 Wayback check found no display capture for 58566/58568 and
+  only a 150px thumbnail for 58567. Those archive searches were not repeated
+  today; failed retrieval does not establish permanent loss.
+- Readable MTS-100/MTS-110 fragment (BikeForums post 724 / MTB Timeline) is
+  already source 363, CX advertisement source 364, pedal fragments source 355.
+  These are processed evidence, not new recovery leads.
+- [South Salem 1982 PDF](https://sscycleworks.com/galleries/bike-museum/1982-Sakae-Catalog.pdf)
+  returned HTTP 200, 1,442,488 bytes, 12 pages. Cover checked visually:
+  CATALOG No. P-7. Another mirror of source 122, not No.19. The Japanese
+  [collector post 582416](https://butoboso0217.livedoor.blog/archives/582416.html)
+  was already identified as P-7 despite its approximate 1983 attribution.
+- Targeted English/Japanese searches covered missing editions and 1983–89 scans
+  plus MTE-300/110, CRE/CLE-100, SAC/SUC-310 and CRH-310. VeloBase/Equus
+  results still expose processed editions. SR Bicycles/Windsor and modern
+  industrial Sakae catalogues are false matches. Previous searches also covered
+  bikalog, fc2 mirrors, Retrobike, Flickr, bmxmuseum and Internet Archive.
+  Do not repeat the broad hunt without a new scan, holder or recovery endpoint.
+- Previous paid leads: Cycle Sports (Yaesu) annual directories, November 1985
+  parts/manual issue, 1987 practical catalogue and 1990 all-catalogue. Prior
+  auction photos did not show SR pages. Availability/contents not reverified
+  today; these remain acquisition leads, not sources ready for ingestion.
+
+### Accessible evidence and remaining limits
+
+- [Fuji 1989, Edition No.19](https://ebykr.com/library/fuji-1989-catalog/),
+  scan page 33 (unfoliated), checked against the [2440px original image](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1989-fuji-catalog-p33.webp).
+  Mt. Fuji lists Sakae MTE-300, micro-adjust, 300mm; Sundance/Suncrest list
+  Sakae CLE-100, micro-adjust, black, 300mm. Q/R seat-pin wording is bicycle
+  fitment, not proof of an accessory included with the post. Ace lists CMB 300
+  Modolo-type bar with alloy centre and CTS 100 alloy black stem. These four
+  exact codes were absent from the pre-load SR snapshot. Older differently
+  named rows were subsequently reconciled below; this research pass alone did
+  not establish earlier dates.
+- Fuji 1988 transcription p.34 says SR MTE 300mm, potentially family plus
+  length; do not normalize that automatically to model MTE-300. Fuji 1986 is
+  incomplete and its transcription gives no CRE/MTE match. Neither absence
+  establishes a production-date boundary.
+- [Schwinn 1985 transcription](https://bikehistory.org/catalogs/1985.html)
+  lists CRE-100 alloy micro-adjust, 26.6 x 190mm on Super Sport/Voyageur SP;
+  SAC310 on World Sport; CTC-5SG on Sprint; CXC-T310 on LeTour Luxe. Previously
+  known fitment evidence, not a new maker catalogue. The Super Sport image
+  there is a bike photograph without the printed specification block; verify
+  the block from a full scan before loading.
+- Held 1986 Raleigh/Miyata catalogues underpin existing exact-code CSV values.
+  Raleigh US PDF at threespeedhub was accessible to the web reader but curl
+  reset on both hosts today; its table was not visually verified in this pass.
+- CRE-100, bare CRE/CR-E and CLE-100 are not established aliases. Withdraw the
+  old TODO assumption that they are probably one model. Also keep CT-P5E apart
+  from CT-P5 5857 and MTE-300/110 apart from MTE-100 5849 pending a crosswalk.
+  Generic fluted posts do not identify a numbered version.
+- No new primary specifications recovered for CRH-310/MTH-100 hubs, MTS-131/
+  CPS-80 stems or the full SAC/SUC/FXC/AXC/CXC crank range. Trek 1985/1987
+  and Koga-Miyata 1986 fitment leads from the earlier handlebar review remain
+  useful partial sources, not complete SR range catalogues.
+
+### Pre-load gap baseline and follow-up
+
+Live DB snapshot, 2026-11-15, all bike years: spec text naming SR, Sakae or Ringyo
+as whole words; counted rows, including generic/ambiguous text, not distinct models or
+promised recoverable links. Six component labels only:
+
+| Spec label | All | Linked | Unlinked |
+|---|---|---|---|
+| Seatpost | 163 | 63 | 100 |
+| Crankset | 134 | 39 | 95 |
+| Handlebars | 109 | 46 | 63 |
+| Stem | 145 | 96 | 49 |
+| Pedals | 60 | 33 | 27 |
+| Hubs | 12 | 0 | 12 |
+| Total | 623 | 277 | 346 |
+
+- Excludes makerless codes, MIYATA SIGNATURE-only text and Extras/Bottom
+  Bracket/Toe Clips; not a whole-category coverage refresh.
+- Exact unlinked values include SR CLE-100 (6), SR MTE-300 (5), CT-P5E
+  spellings (17), CRE/CRE 100 (3), SRE-100 (2), SRE-105 (2), MTE-110 (2).
+  These current counts supersede the old named SR seatpost estimates.
+- This research pass led to the applied four-model reconciliation below.
+  Full-range catalogue recovery remains parked pending a new lead.
+- No DB or CSV edits. Temporary downloads/images removed after recording
+  source URLs, observations and scope here.
+
+## Four SR models from Fuji 1989 — applied 2026-11-15, source 412
+
+- Scope: four exact model codes, not a whole Fuji bike-catalogue ingestion.
+  Applied four component inserts, source 412, 11 NULL-only seatpost backfills
+  and two exact year-bounded generator overrides. No existing component
+  rewrites, date corrections, deletes, merges, CSV changes or bike inserts.
+- Created source 412, label `Fuji Edition No. 19 bicycle catalogue (1989)`;
+  citation `https://ebykr.com/library/fuji-1989-catalog/ (scan pp.33,35; SR component fitments only)`.
+  Market US, verified from Fuji America addresses on back-cover scan p.40;
+  printed in Japan is the printing location. Existing category-brand
+  registrations already cover all three categories; none added.
+- All four use brand 49, group NULL, fresh UUID load keys and generated search
+  text. Their source_ref is 412; earlier/later attestations below
+  additionally use existing sources 349 (Miyata 1986), 407 (Miyata 1987), 325
+  (Bianchi 1989) and 168 (Bianchi 1990). Ranges attest availability, not
+  introduction or discontinuation. No catalogue weight, diameter, forging or
+  clamp-size claim inferred where the pages do not state it.
+
+| ID | Title suffix (all Sakae/Ringyo (SR)) | Category | Applied years | Description |
+|---|---|---|---|---|
+| 11307 | MTE-300 | Seat Posts | 1986–1989 | Micro-adjust seatpost; 300mm ATB fitment. |
+| 11308 | CLE-100 | Seat Posts | 1989–1990 | Micro-adjust seatpost for road, touring and ATB fitments; black finish listed, 300mm in the ATB specification. |
+| 11309 | CMB-300 | Handlebars | 1989–1989 | Modolo-type road drop handlebar with alloy centre section. |
+| 11310 | CTS-100 | Stems | 1989–1989 | Alloy road/touring stem; black finish listed. |
+
+### Evidence and identity decisions
+
+- Fuji original [scan p.33](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1989-fuji-catalog-p33.webp)
+  gives MTE-300 on Mt. Fuji, CLE-100 on Sundance/Suncrest, CMB 300 and CTS 100
+  on Ace. [Scan p.35](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1989-fuji-catalog-p35.webp)
+  also gives CLE-100 on Saratoga/Del Rey and CTS-100 on Saratoga. These scans
+  were rechecked visually. Only the ATB CLE fitment specifies 300mm; no 220mm
+  road length is established here. QR/Allen seat-pin text describes bike fitment,
+  not a specific accessory sold with the post. CMB-200 on Saratoga is a
+  different code and outside these four models.
+- [Miyata 1986 scan](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2086.pdf),
+  PDF p.23, checked visually: both Ridge Runner and Terra Runner explicitly
+  list SR MTE-300. This supports year_from 1986 rather than relying on Fuji
+  1989 alone. The already-ingested 1987 Ridge Runner also names it.
+- [Bianchi 1989 source](https://www.gringineer.com/blogs/default-blog/1989-bianchi-catalog),
+  original table images `img-2486-2.jpg` / `img-2487-2.jpg`, checked visually:
+  CLE-100 on Limited, Brava, Sport SX; MTE-300 on Super Grizzly and Equinox.
+- Bianchi 1990 source 168, PDF p.22, rechecked from the previously downloaded
+  scan: CLE-100 on Virata, Alfana, Eros (also three out-of-scope flat-bar bikes,
+  not proposed for loading/backfill). [Catalogue location](https://www.retrobike.co.uk/archive/1990-bianchi-catalogue.1676/).
+  This supports CLE year_to 1990; Fuji alone only attests 1989.
+- Full DB snapshot searched across titles/descriptions and all brands: no exact
+  occurrence of the four codes before loading. SR increased 248 -> 252 components. Compared
+  all SR seatpost, bar and stem rows; no evidence-backed alias found.
+  Keep MTE-100 5849, unnamed fluted 5847 and Royal 5850/5851 separate; do not
+  transfer their measurements to MTE-300/CLE-100. Keep CRE/CR-E/CRE-100 distinct.
+- CMB-300 is not assigned to CTD 7888, C-87 2909, BR-CMB-201 9741 or
+  BR-FMB-200-DM 9742. CTS-100 is not assigned to CT 8234, Aero 6657 or
+  HP-CTS-320BL 9745. Different codes/thin generic descriptions do not establish
+  equivalence. No generic SR/Modolo bar or generic alloy stem links proposed.
+
+### Applied links and validation
+
+| Target | Spec IDs (previously NULL) | Bikes |
+|---|---|---|
+| MTE-300 | 18970, 18991, 22277, 18560, 18664 | Miyata 1986 Ridge Runner/Terra Runner, 1987 Ridge Runner; Bianchi 1989 Super Grizzly/Equinox |
+| CLE-100 | 18434, 18455, 18497, 7148, 7169, 7211 | Bianchi 1989 Limited/Brava/Sport SX; 1990 Virata/Alfana/Eros |
+
+- No current live specs or CSV values name exact CMB-300/CTS-100. All 11
+  seatpost backfills preserve bike/spec source_ref, labels and values.
+- Installed exact Seat Posts overrides: `sr mte 300` -> 11307, range 1986–89;
+  `sr cle 100` -> 11308, range 1989–90. Parenthesized `(SR)` in titles
+  prevents automatic substring matching to plain `SR`. General matching and
+  normalization unchanged; these are the only generator changes.
+- Preflight confirmed the reviewed component snapshot, generator and 11 NULL
+  target specs unchanged. Load affected exactly one source, four components
+  and 11 specs. Identical SQL rerun affected zero rows on every statement.
+- Readback verified every planned field on 11307–11310, source 412 and all
+  11 links with valid category/brand/group/source registrations and compatible
+  bike years. All 10,390 pre-existing component records remained unchanged.
+- Actual generation using the applied DB snapshot and installed generator
+  matches the reviewed simulation across all 93 CSVs: 1,199 bikes, 20,600
+  specs, mapped 7,313 -> 7,324. Exactly the 11 named NULL seatpost mappings
+  changed; all others unchanged. Root `bike-update.sql` untouched.
+- Actual duplicate report matches simulation: three SR configuration pairs,
+  zero near or parenthetical-name pairs; no new/removed pairs. Existing
+  1760/1761, 5850/5851 and 5859/5860 stay apart, as do the manually reviewed
+  generic/code candidates above.
+- Maximum new description length 110 characters; titles/search text fit 255.
+  No CSV edits, old component changes, deletes, merges or new bike rows.
+- Fresh live category snapshots, 2026-11-15 (whole label, all bike years):
+
+| Spec label | Linked / all | Unlinked | Component rows |
+|---|---|---|---|
+| Seatpost | 282 / 873 (32.3%) | 591 | 309 |
+| Handlebars | 260 / 1,055 (24.6%) | 795 | 437 |
+| Stem | 346 / 931 (37.2%) | 585 | 502 |
+
+- Scoped maker-word snapshot (same six labels/all years as the pre-load table):
+  623 specs, 288 linked, 335 unlinked; SR Seatpost alone 74/163 linked, 89
+  unlinked. Other maker-label counts unchanged. This task adds exactly 11 links,
+  two seatposts, one bar and one stem; differences from older full-category
+  snapshots include intervening work and must not be wholly attributed here.
+- Restoration: remove only the two overrides above, clear only the 11 listed
+  spec links if they still point to 11307/11308 (original values were NULL),
+  then remove the new component rows only after checking all references and
+  source 412 only when unused. Bike/spec original source_refs remain 349,
+  407, 325 or 168 as appropriate.
+- Source URLs/pages, decisions, applied IDs, material old/new values and
+  validation recorded here. Disposable SQL, scans, scripts, snapshots and logs
+  removed after validation; no dependency on task scratch files remains.
