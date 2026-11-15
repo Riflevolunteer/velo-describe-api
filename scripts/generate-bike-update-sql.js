@@ -770,7 +770,7 @@ const COMPONENT_OVERRIDES = {
     // "990/980" names the budget group; the DB's 1985-era front is the 980 (990 front exists only as the 1987+ century finish).
     'campagnolo 990 980': 2279, // Strada / Bambina: Campagnolo 980
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
-    'campagnolo record': [{ from: 1994, to: 1994, id: null }, { to: 1969, id: 2305 }, { from: 1970, to: 1977, id: 2297 }, { from: 1978, to: 1982, id: 2299 }, { from: 1983, to: 1985, id: 2300 }], // 1052/1 first body / second body / 1052/NT 3-hole narrow band / 0104007 clip-on
+    'campagnolo record': [{ from: 1994, to: 1994, id: 7059 }, { to: 1969, id: 2305 }, { from: 1970, to: 1977, id: 2297 }, { from: 1978, to: 1982, id: 2299 }, { from: 1983, to: 1985, id: 2300 }], // 1994 Cinelli Genius Strada -> FD-11SRE (2026-11-15, user call) / 1052/1 first body / second body / 1052/NT 3-hole narrow band / 0104007 clip-on
     // 1986 Colnago Catalogo generale group fan-outs.
     'campagnolo super record 30nnale': 2313, // Regal 30nnale: same 1052/SR as the plain Super Record group
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).

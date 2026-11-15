@@ -107,8 +107,8 @@
   STX S.E. crank/rear/control -> 1843/4537/6369; no guessing later STX or
   Alivio rows dated 1995+. Chorus rear/post -> 7055/7041. Chorus ErgoPower
   -> 6345 EC-12RE CG (also used for Chorus); Veloce -> 6349.
-- Variant judgments left unlinked: Record front/rear/ErgoPower (multiple
-  contemporary variants); Chorus front and Record/Chorus pedals; generic
+- Variant judgments left unlinked: Record rear/ErgoPower (multiple
+  contemporary variants; Record front linked 2026-11-15, below); Chorus front and Record/Chorus pedals; generic
   Mavic Ceramic; Shamal (the matcher picked a 1997-98 12-HPW row);
   Bontrager saddle with illegible suffix; Grammo Ahead (later 1996 row),
   Oyster (DB starts 1996), other ambiguous cockpit/saddle/tyre/cassette
@@ -153,3 +153,14 @@
   them) -> 378; year_from kept (8307 1989, 8331 1991). No title or description changes.
 - Generator links 6440 -> 6442, only these two handlebar mappings. Guarded SQL rerun affects 0 rows.
 - Left: Genius Machine / Soft Machine "3T Pro Light" and Genius Strada "Cinelli Eubios 26" (no rows).
+
+## Genius Strada Record front — 2026-11-15, user call
+
+- Spec 20195 (1994 Genius Strada "Campagnolo Record") NULL -> 7059 FD-11SRE. The
+  Campagnolo front derailleur audit ended FD-01SRE 2306 at 1992 (1993 Range: FD-11
+  replaces FD-01), leaving 7059 the only 1994 Record road front; its note covers the
+  FD-11FRE clip-on. FD override `'campagnolo record'` 1994 range null -> 7059.
+- Supercorsa "Campagnolo Chorus" front (20213) stays null by decision: 7060 FD-11SCH
+  and 2287 FD-02FCH adjustable clamp both fit 1994.
+- Regenerated all 93 CSVs: only this link changed. Rerun affected 0 rows.
+
