@@ -35,6 +35,20 @@ after validation; retain what is still needed for unfinished work or review.
   records the last source that changed a component; it cannot retain every
   catalogue attestation. Preserve that meaning until a migration is reviewed.
 
+## Open: Mavic quality follow-ups
+
+Evidence and exact affected specs are in the
+[Mavic audit](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#general-quality-audit--2026-11-15-read-only).
+
+- [ ] Verify the period 506 RD pair-code table and Peugeot fitment for
+  unlinked specs 14700 / 15661 against existing hub row 3397.
+- [ ] Reconcile the Reflex, T217, T261 and CXP 30 broad/finish rim rows listed
+  in the audit against the 1996/1997/1999 scans and the variant policy; prepare
+  supported merges or narrower descriptions after establishing identity.
+- [ ] Verify Open Pro dates/identities 5099 / 5100 / 10183 and the 31.8 mm
+  870 front derailleur 2410 against maker/specimen evidence; source dates for
+  the undated legacy rows listed in the audit, prioritising linked 192 rim 5050.
+
 ## Open: API and client
 
 - **Catalogue country follow-ups**: show country in the client (`velo-describe`) when two rows collide; optionally split the Peugeot 1971-74 CSVs per country (each mixes Dutch and French pages, currently set to FR). Inferred values (not stated by the source): Raleigh 1985, Motobecane 1974/75, Zeus 1973, Bianchi 1983/84. Decided 2026-10-30: keep the ISO country code for non-national editions (export catalogues, Dutch-language Belgian editions); the edition goes in the data_source label.

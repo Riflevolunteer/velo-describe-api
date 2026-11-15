@@ -186,6 +186,26 @@
 
 - Source (added 2026-10-21, PROBABLE, not confirmed against the spec pages): retrobike.co.uk archive "1993 Bianchi Catalogue" (https://www.retrobike.co.uk/archive/1993-bianchi-catalogue.1672/, file name "Catalogo Bianchi 1993.pdf"). Its cover is hand-marked "93" and the text says "28 different models of Road, Mountain and Cross-Terrain bicycles", weights in lbs, a Reparto Corse mountain bike with Genius Nivacrom tubing, "In 1993" and "108 years": an English, US-style catalogue consistent with this CSV. The download truncates on every attempt (1.4-2.6 MB, no PDF trailer), so only the cover, history, a blueprint spread and two further pages were recovered (images carved from the Flate/DCT streams); the product spec pages could not be read and the tables were not compared. Not the same as the Japanese-edition "Bianchi 1993" on labibleduvelocataloguesbianchi.blogspot.com/p/bianchi-1993.html (yen prices, Giro / MMX / EL models), which has not been ingested. Market stays US as stated by the user.
 
+- **Source recovery update, 2026-11-15:** the complete 31-page USA catalogue is
+  now available from [Upcycles](https://upcycles.cc/blogs/catalog-archive/1993-bianchi-catalog-usa)
+  ([PDF](https://cdn.shopify.com/s/files/1/0786/6705/5385/files/1993_Bianchi_catalog_-_USA.pdf?v=1751937419)).
+  Visually verified PDF pp.24–25 for Nth FS / Super Grizzly / Grizzly rim
+  specifications. This supersedes the missing-table caveat for those three
+  values only; other product tables still need comparison with the CSV.
+  Nth FS prints `Mavic 231 hard anodized` (5071 CD supported); Super Grizzly
+  and Grizzly print `Mavic 231 silver anodized` (standard 8191, existing CD
+  links wrong). The earlier finish stripping and all-three-CD mapping below
+  are superseded by this evidence. The reviewed repair covers the finishes,
+  two relinks, scoped overrides and 8191 year_to extension together. **Applied
+  on user approval, 2026-11-15:** restored the three finish values in CSV/live
+  specs, retained 1607 -> 5071 and corrected 1624 / 1658 -> 8191; extended
+  8191 through 1993 (source 47). Replaced the unqualified override with an
+  ambiguity guard and 1993 bike-scoped finish mappings. Compared all 93 loaded
+  CSVs: only these three values and two links changed. Live IDs preserved,
+  one Rims spec per bike, SQL rerun zero changes, scoped quality check clean,
+  and all nine test files pass. Exact IDs, source pages and old/new values:
+  [Mavic coating evidence](../../../ingest-component-catalog/references/known-catalogs/mavic.md#bianchi-m-231-coating-evidence--2026-11-15-read-only-review).
+
 - Six " / "-paired columns split in the CSV: Fork/Headset, Drivetrain/
   Shifters (→ Derailleurs + Shifters; a slash-less cell fills both),
   Saddle/Seatpost, Hubset/Spokes, Freewheel/Chain (→ Cassette + Chain: 20 of

@@ -4635,7 +4635,14 @@ const COMPONENT_OVERRIDES = {
     'mavic ma40': 5077, // Mavic MA 40
     // 1993 Bianchi.
     'campagnolo omicron': 4962, // Campagnolo Omicron Strada Polished (three finishes)
-    'mavic 231': 5071, // Mavic M 231 CD
+    // 1993 USA catalogue PDF pp.24-25: Nth FS hard anodized; the two
+    // Grizzlies silver anodized. Preserve the finish when normalizing CSVs.
+    'mavic 231': null, // Standard, CD and Ceramic cannot be distinguished by the bare model.
+    'mavic 231 hard anodized': [{ from: 1993, to: 1993, bike: 'Nth FS', id: 5071 }],
+    'mavic 231 silver anodized': [
+      { from: 1993, to: 1993, bike: 'Super Grizzly', id: 8191 },
+      { from: 1993, to: 1993, bike: 'Grizzly', id: 8191 },
+    ],
     "fir tour or ambrosio giro d'italia": null, // either/or spec; don't pick one
     // 1985 Raleigh (Sheldon Brown scan).
     'araya 16a 5 alloy 27 x 1 3 8 36 hole front 40 hole rear': 4916, // Araya 16A (box style alloy clincher)

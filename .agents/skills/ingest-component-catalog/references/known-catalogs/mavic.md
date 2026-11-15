@@ -1,5 +1,166 @@
 # Mavic catalogs processed so far
 
+## General quality audit — 2026-11-15 (read-only)
+
+Scope: all live Mavic components (brand 31), all their bike links, and all
+spec values containing Mavic. No component, link, date or generator changes
+were applied. This was a structural/identity triage with targeted scan checks,
+not a fresh extraction of every catalogue or verification of every specimen.
+
+- Live baseline: **243 components**, **94 linked specs**; **182 Mavic-text specs**,
+  of which **88 unlinked** (includes generic maker text, alternatives and Extras;
+  this is not a count of missing models). **44 components** retain source_ref 1
+  (VeloBase only); no component lacks a source reference or description.
+- Ran the existing quality-report snapshot reader and checks, then scoped
+  findings to Mavic components, linked/Mavic-text specs, owned groups and
+  category-brand entries. **No structural errors or linked date conflicts**;
+  **12 incomplete-date findings**: 3406, 4344, 5044, 5050, 5064, 5081, 5095,
+  5096, 5101, 5106, 6823, 6975. Missing dates remain unknown, not inferred.
+- `duplicate-report.js --brand=Mavic`: 13 grouped pairs (7 configuration,
+  4 generation, 2 variant), no automatic merge/review candidates.
+  `--near --reviewed`: seven already-reviewed kept-apart pairs; no new near
+  candidates. `--paren --reviewed`: zero. These reports miss the manually
+  identified naming/coverage overlaps below and do not close them.
+
+### Findings and next evidence
+
+1. **Coating specificity in existing bike links (resolved by source review and
+   user-approved repair below):** specs **1607**
+   (1993 Bianchi Nth FS), **1624** (Super Grizzly), **1658** (Grizzly) all said
+   only `Mavic 231` and linked to **5071 M 231 CD** through the unscoped
+   `mavic 231` Rims override. Mavic's [90/91 p.27 scan](https://www.disraeligears.co.uk/site/00_main_images/mavic_trade_catalogue_9091_page_27_main_image.jpg)
+   explicitly distinguishes neutral-anodised **8191 M 231** from hard-anodised
+   **5071 M 231 CD**; **9972 Ceramic** is also a separate row. The scan was
+   visually checked. At audit time the CSV lacked the coating and the original
+   1993 Bianchi product tables were unverified (see the bike catalogue notes).
+   This initially flagged insufficient evidence for CD. The recovered Bianchi
+   tables below now confirm 1607's CD identification and contradict the CD
+   links on 1624/1658. The latter now use standard row 8191. The 2026-11-04
+   extension of 5071 to 1993 is now supported specifically by Nth FS.
+2. **Existing-row mapping opportunity:** specs **14700** (1986 Peugeot PX)
+   and **15661** (1987 PX 10), `Mavic 506 RD`, remain NULL. Existing **3397
+   Mavic 500 RD** explicitly describes the 506 RD hub pair and covers those
+   years. Classify as a candidate mapping to an existing configuration/family,
+   rather than a missing model requiring insertion; verify the period pair-code
+   table and Peugeot fitment before preparing scoped mappings.
+3. **Description/source discrepancy (corrected below):** **1643 Mavic 637 (MTB)**
+   ended `170/175/180 mm, 680/690/700 g.` Its cited source **121**,
+   [90/91 p.31 scan](https://www.disraeligears.co.uk/site/00_main_images/mavic_trade_catalogue_9091_page_31_main_image.jpg),
+   visually reads **660/680/700 g** for those lengths. The user-approved
+   correction is applied and validated in the entry below. No bike links use
+   this row.
+4. **Dates need identity-specific evidence:** **5099 Open Pro (1986)** and
+   **5100 Open Pro SUP Maxtal (1980–90)** are VeloBase-only rows alongside
+   **10183 Open Pro Argent SUP UB Control (1999)**. Their dates and relationship
+   need a maker/specimen crosswalk, not automatic extension/merging. Likewise
+   **2410 870 SSC 31.8 mm (1984–92)** starts four years before **2409 870 SSC
+   (1988–92)**, whose 1988 introduction is recorded above. Find positive
+   31.8 mm version evidence before changing either identity/date. None of these
+   rows has a bike link.
+5. **Manual rim-overlap queue missed by automatic grouping:** compare
+   **9975 Reflex tubular / 10197 Argent / 10198 Blu** (375 g); **9981 T217 /
+   10184 T217 Argent / 10185 T217 CD** (470 g); **9983 T261 / 10182 T261
+   Argent** (540 g); **5062 CXP 30 tubular / 10199 CXP 30 Argent** (465 g).
+   Existing broad descriptions already include some of the separately inserted
+   finishes. Reconcile the 1996/1997/1999 scans and the variant policy to decide
+   whether to merge or narrow the broad row. These are candidates, not proven
+   duplicates; no links use these rows. Keep the already-reviewed **10597 CXP
+   Titane clincher / 10607 CXP 30 Titane tubular** distinction recorded in
+   cross-catalog-notes.md.
+
+Previously recorded questions remain evidence gaps: Sprint, Velotech, Titan,
+190 NE versus 190FB/195NE, bare 400, 630 lettering, early rim identities and
+the conflicting 310 headset weights. Rechecked 1986–87 p.22: it does print
+82 g for 311/312; this does not resolve the 1984 102 g discrepancy. Earlier
+historical entries saying 5089/5090 probably duplicate should be read against
+their current polished versus silver-anodised descriptions; no merge supported
+by this pass. Old claims that 5097 ends in 1989 or that Helium has no row are
+historical: 5097 now ends in 1993 and Helium is represented by 9985/10376/10377.
+
+Validation: read-only inventory/source/link queries, consistent-snapshot
+quality checks and all three duplicate modes. No regeneration was necessary
+because mappings and component records were unchanged. Task-created scripts
+and downloaded page copies were removed after recording the source URLs here.
+
+## Bianchi M 231 coating evidence — 2026-11-15, read-only review
+
+- New source recovery: [Upcycles, 1993 Bianchi USA catalogue](https://upcycles.cc/blogs/catalog-archive/1993-bianchi-catalog-usa),
+  [complete PDF](https://cdn.shopify.com/s/files/1/0786/6705/5385/files/1993_Bianchi_catalog_-_USA.pdf?v=1751937419).
+  Retrieved intact (18,861,771 bytes, 31 PDF pages). It has the same hand-marked
+  93 cover and dealer annotations as the previously truncated source. Visually
+  checked **PDF pages 24–25** (no printed page number visible), not the whole
+  catalogue. This supplies the missing original-bike evidence for the three
+  specs; no further specimen-photo hunt is needed for their factory rim finish.
+- **Nth FS, spec 1607, bike 104:** PDF p.24 prints **Mavic 231 hard anodized**.
+  This supports its existing **5071 M 231 CD** link, using Mavic 90/91 p.27's
+  explicit hard-anodised CD versus neutral-anodised standard distinction.
+- **Super Grizzly, spec 1624, bike 105:** PDF p.24 prints **Mavic 231 silver
+  anodized**. **Grizzly, spec 1658, bike 107:** PDF p.25 prints the same.
+  Their former **5071 CD links were wrong**; the supported target is **8191
+  M 231**, the standard neutral/silver-anodised version. The product photos
+  show silver rims as corroboration; the printed specification is decisive.
+- Root cause: the 1993 CSV cleanup explicitly removed rim finish words and
+  collapsed different specifications to `Mavic 231`; the unscoped override
+  then assigned all three to CD. This supersedes the audit's earlier
+  ambiguity and the original all-three-CD mapping in the Bianchi bike notes.
+- **Reviewed repair (subsequently applied below):** restore `Mavic 231 hard anodized` for
+  1607/Nth FS and `Mavic 231 silver anodized` for 1624/Super Grizzly and
+  1658/Grizzly in both CSV and existing live spec values (UPDATE in place,
+  preserve spec IDs; regeneration alone would insert duplicate specs).
+  Keep 1607 -> 5071; relink 1624/1658 **5071 -> 8191**. Add 1993 bike-scoped
+  overrides for the restored values and replace the unqualified `mavic 231`
+  -> 5071 override with an ambiguity guard. Compare all loaded CSV mappings.
+- **Associated date correction (subsequently applied below):** 8191 was **1990–1991**,
+  source_ref **121**. Extend only year_to **1991 -> 1993**, source_ref
+  **121 -> 47**, using these original 1993 fitments; keep its description and
+  year_from. 5071 remains **1990–1993**, source_ref **121**. No new component
+  row or merge is needed. This is availability evidence, not proof of an end
+  of production in 1993.
+- The pre-repair readback showed all three specs saying `Mavic 231`, source_ref
+  **47**, and linking to **5071**. No DB, CSV or generator changes were
+  made during this review. Original source URLs and page references are retained
+  here; task-created PDF/text/renders were deleted after review.
+
+### Application and validation — 2026-11-15, user approved
+
+- Applied the reviewed repair in place: **1607** now `Mavic 231 hard anodized`
+  -> **5071**; **1624 / 1658** now `Mavic 231 silver anodized` -> **8191**.
+  Source_ref **47**, raw label, bike/spec IDs and one Rims spec per bike were
+  preserved. Restored exactly these three cells in `1993_bianchi_spec.csv`.
+- **8191** year_to **1991 -> 1993**, source_ref **121 -> 47**; year_from
+  **1990**, description and identity unchanged. These old values and the
+  original `Mavic 231` -> 5071 assignments above provide the restoration
+  baseline. No component insert/delete/merge and no loss/gain of links.
+- Generator now uses 1993 bike-scoped finish mappings for these three bikes;
+  bare `mavic 231` is explicitly ambiguous. Verified it stays NULL even with
+  only one candidate, and the finish overrides do not apply to other bikes
+  or years. The earlier all-three-CD mapping is superseded.
+- Compared the actual generator's preprocessing, matching and integrated-lever
+  results for **93 loaded CSVs / 20,600 specs** before/after: exactly the three
+  expected value changes and two target changes, **7,324 generated links** in
+  both snapshots. Existing `bike-update.sql` was untouched. These are generated
+  CSV counts, not a claim that every generated mapping agrees with live DB.
+- Guarded transactional SQL affected **one component and three specs**;
+  rerun affected **zero**. Live readback matches all three generated results;
+  scoped consistent-snapshot quality checks found **zero findings** on 5071,
+  8191 and every spec linked to them. `npm test` passed all nine test files;
+  `git diff --check` passed. Temporary SQL, CSV backup, comparison script and
+  snapshots were removed after validation.
+
+## 637 crank description correction — 2026-11-15, user approved
+
+- Component **1643 Mavic 637 (MTB)**: corrected the weight sequence for
+  **170/175/180 mm** from **680/690/700 g** to **660/680/700 g**, matching
+  source **121**, [90/91 printed p.31](https://www.disraeligears.co.uk/site/00_main_images/mavic_trade_catalogue_9091_page_31_main_image.jpg).
+- Only that sequence changed. Full original description for restoration:
+  `Mavic 637 (MTB), France. ATB crankset: oval 26/28 small ring with five torque positions (round 24/26/28 available), 36/38 middle, 46/48 large, Zicral rings; 9/16 x 20; 170/175/180 mm, 680/690/700 g.`
+  Restore it only with a guard matching the corrected description.
+- Guarded SQL updated exactly one row; live readback confirmed the corrected
+  **198-character** description, source_ref **121**, years **1990–1991** and
+  **zero bike links**. Rerun affected zero rows. Titles, dates and mapping inputs
+  did not change, so catalogue regeneration was unnecessary. Temporary SQL was
+  removed after validation.
+
 ## Mavic Rims & "1000 SSC Group" advertisement (1988) — retrobike.co.uk archive, data_source id 106
 
 **Not a full despiece catalogue.** The archive entry's `/download` link only
