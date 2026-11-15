@@ -128,6 +128,7 @@ const REVIEWED_VARIANTS = new Map([
   [887, 'special edition: Modolo Speedy La Vie Claire (brakes)'],
   [5564, 'special edition: San Marco Rolls 1986 World Championship'],
   [7427, 'finish model: Dura-Ace DA-100 silver beside the Black Series 4501'],
+  [4106, 'finish model: Campagnolo Chorus short cage, graphite finish (1990-91, estimated) beside 4108; recorded 2026-11-15'],
   [4880, 'finish model: Alesa 913 Hard Anodized'],
   [2118, 'dating marking: Maillard Normandy cog lettered Normandy'],
   [2119, 'dating marking: Maillard Normandy body lettered Normandy on backside'],

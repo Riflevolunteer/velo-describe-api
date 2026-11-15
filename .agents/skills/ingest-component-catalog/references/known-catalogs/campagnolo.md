@@ -1378,3 +1378,23 @@ All new rows have the catalogue-attested range 2000–2000 (availability, not pr
 | 11247 | Pedals | 60 | Campagnolo PD00-DA, Daytona Pro-Fit |
 | 11248 | Wheel(sets) | 68 | Campagnolo WH99-BOTF / WH99-BOTR, Bora (9/10-speed) |
 | 11249 | Wheel(sets) | 71 | Campagnolo WH99-NUTF / WH99-NUTR / WH99-NUCF / WH99-NUCR, Nucleon |
+
+## Rear derailleur audit fixes — 2026-11-15 (user approved; audit items 1, 2, 6, 7)
+
+- 4108 Chorus (short cage): `year_from` 1988 -> 1987, `source_ref` 112 -> 311 (1987 Peugeot catalogue: PY CA W 'Chorus'
+  lists the full Chorus group, rear derailleur included; spec 14999 already linked). Matches 2286 FD-01FCH (1987-91).
+- 4112 Croce d' Aune (Short Cage): `year_to` 1991 -> 1992, `source_ref` 113 -> 359 (1992 Bianchi catalogue, Mondiale
+  page https://2velo.com/wp-content/uploads/2014/03/1992-catalog-p1911.jpg, as for brake 567 on 2026-11-07); fitment
+  evidence, not a 1992 range claim. Spec 19636 (1992 Mondiale rear) NULL -> 4112; rear override now 1988-1992.
+- Retitles (`source_ref` unchanged; old titles for matching later sources): 4104 "Campagnolo RD-02CE Centaur" ->
+  "Campagnolo RD-02CE, Centaur"; 4098 "Campagnolo A010 Corsa Record 2nd Gen." -> "Campagnolo A010, C-Record (second
+  generation)" (`search_text` -> "Campagnolo A010 C-Record"; description keeps "also called Corsa Record"); 4137
+  "Campagnolo RD-31RE, Record (1995-1997)" -> "Campagnolo RD-31RE, Record" (row stays 1995-1995; VeloBase title claimed
+  1995-97, unverified); 4138 "Campagnolo Record Titanium 8-speed (1996)", 7070 "Campagnolo Stratos rear derailleur
+  (1994)", 7078 "Campagnolo Mirage rear derailleur (1995)" lose the bracketed year. Descriptions' leading title text
+  updated to match.
+- 4106 Chorus (short cage, graphite finish) registered in `REVIEWED_VARIANTS` as a finish model beside 4108 (dates
+  1990-91 remain the earlier estimate).
+- Validation: 9 statements, 9 rows; rerun 0. Generator over all CSVs: 20,584 mappings before and after, only change
+  1992 Bianchi Mondiale rear NULL -> 4112 (linked 7,323 -> 7,324). `quality-report.js` 0 errors; 4108's 1987 date
+  conflict cleared. `npm test` passed. Rear Derailleur coverage 876 / 1,074.

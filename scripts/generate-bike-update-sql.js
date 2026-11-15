@@ -1047,7 +1047,7 @@ const COMPONENT_OVERRIDES = {
     // "Spidel SLJ 5500 CP" in 1980 and 1982 (PY 10 S).
     'spidel slj': [{ from: 1979, to: 1984, id: 7309 }], // Simplex SLJ5500 CP
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
-    "campagnolo croce d'aune": [{ from: 1988, to: 1991, id: 4112 }], // short cage on road racing bikes
+    "campagnolo croce d'aune": [{ from: 1988, to: 1992, id: 4112 }], // short cage on road racing bikes; + 1992 Bianchi Mondiale (4112 year_to 1991 -> 1992, 2026-11-15)
     'shimano deore xt sis': [{ from: 1987, to: 1989, id: 4491 }], // RD-M730 (the matcher hit the bare undated Deore XT row 4496)
     'simplex s 061': 4616, // 1981 Peugeot PSV / PK / PF / PFN 10: Simplex S061 T (1981-90)
     'simplex s061 tsp': 4616, // 1982 Peugeot: no TSP row, S061 T is the same gear
