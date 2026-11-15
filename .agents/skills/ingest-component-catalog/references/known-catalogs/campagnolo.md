@@ -1117,8 +1117,7 @@ Prompted by the new "DB year_from is earlier than the evidence" rule; checked ag
   18F51D39-7888-45FF-BCC9-809A15390351) deleted as a duplicate of 4957 Omega Strada Hardox (P0171/P0172, 395/430 g; the
   1995 range calls it Omega 20). No bike_spec links or overrides. 4957 retitled "Omega 20 (Omega Strada Hardox)",
   search_text "Campagnolo Omega 20" (old title "Campagnolo Omega Strada Hardox"). Delete again if a crawl reinserts it.
-- Unresolved: Eurus 1997, Nucleon,
-  K2 / Kilimangiaro rims (p26, undated ~1995-96) named only, not added.
+- Unresolved: Eurus 1997 and K2 / Kilimangiaro rims (p26, undated ~1995-96) named only, not added. Nucleon was not added during this press pass; subsequently reconciled and loaded from the 2000 parts book as 11249 (source 410, below).
 
 ## Falcon parts catalogue (1970) — see cross-catalog-notes.md (`data_source` 352)
 
@@ -1154,3 +1153,228 @@ Prompted by the new "DB year_from is earlier than the evidence" rule; checked ag
 - Bike spec 19633 -> 567, with a 1992-only Mondiale generator range.
   Applied `/tmp/bianchi-1992-mondiale-brake-link.sql`; read-back verified,
   rerun affected zero rows. All 81 CSVs compared: only this link changed.
+
+## Spare Parts and Tools Catalogue (2000) — applied 2026-11-15, source 410
+
+- Source: https://bikalog.org/api/view/Campagnolo/2000/campagnolo-2000sp.pdf, 109 PDF pages, multilingual IT/EN/FR/DE. Front cover explicitly says 2000; prepress marks include January 2000 on the front and October 2001 on the back. Use the stated 2000 edition as availability evidence, not production boundaries or proof that every service part first appeared then. Country/market remains NULL.
+- Applied on user approval: **74 new components (49 chainrings, 25 other components), 40 existing-row updates, source 410 and Daytona group 333**. All mutation counts matched the approved plan. No deletes, merges, bike writes or generator changes. 34 existing year_to values extend to 2000; no year_from changes. Electron 4947 and Shamal 4968 move from Rims to Wheel(sets). 4968 receives only a category/source correction; its 1997–98 dates remain unchanged.
+- Applied with exact old-value guards and restoration values captured before writes. Component IDs 11176–11249 were added; the row/code/page inventory is below. Existing IDs and UUIDs were retained. Rerun affected zero rows in all mutation categories. SQL, source download and review/validation scratch artifacts were removed after validation; public source/page evidence and material old/new values are retained here.
+- Extraction: 181 records across PDF 7–44, 48–56, 58–66, 74–78 and 81, including left/right, tooth-range and front/rear configurations. Consolidated complete cassette configurations and paired controls/hubs/wheels in the SQL; no duplicate row per ratio or handedness where one existing pair/family suffices. Chainrings are individually identified, separately supplied components, so their 49 distinct codes remain separate.
+- Skipped: PDF 1–6 cover/index; 45–47 quick releases; 57 lockrings; 67–68 pedal repair parts/cleats; 69–73 cables, computers and miscellaneous parts; 79–80 wheel-hub repair parts; 82–83 Shamal Pista repair parts; 84–109 tools, glossary, dealer lists, notes/back cover. Do not promote cup, axle, crank-arm, clamp or bearing callouts to complete assembly identities.
+- Visually checked suspicious code distinctions: PDF10 BB-RE213/214 and BB-CH213/214 identify cups, not extra BBs; PDF66 PD-RE/CH/DA201/202 identify pedal bodies and 203/204 axles, not extra pedal models. PDF13 shows FC-RE039 across the merged 9/10-speed table columns (also used by Chorus); FC-RE042 is the 9-speed 42T inner and FC-RE142 the 10-speed version. FC-AT352 is Daytona/Racing Triple; Veloce uses FC-MI352. Printed bolt/ring tables establish the listed options, not every possible cross-product as a sold fitted combination.
+- Added source specifications are separated from retained independent facts: pre-existing weights/materials/dimensions and historical part names remain from their prior sources unless contradicted. The 2000 diagrams generally provide codes and service layout, not new measured weights. In particular, 4139 retains its earlier VeloBase titanium/223 g evidence; the 2000 heading says Record 9 Speed. 10101 retains the separately curated prior BB-31RECART/33RECART facts as a 1999 listing, while the 2000 assembly headings print BB99-RE02IT/BC; no manufacturer cross-reference chart is claimed.
+
+### Existing rows updated
+
+| ID | Printed page | Old title | Resulting title | Dates before -> after | Prior source |
+|---|---|---|---|---|---|
+| 10128 | 1 | Campagnolo Record headset (threaded, 9-speed era) | Campagnolo HS00-RE, Record headset | 1999–1999 -> 1999–2000 | 353 |
+| 10129 | 1 | Campagnolo Record Threadless headset | Campagnolo HS00-RETH, Record Threadless (1 inch) | 1999–1999 -> 1999–2000 | 353 |
+| 10130 | 2 | Campagnolo Chorus headset (threaded, 9-speed era) | Campagnolo HS00-CH, Chorus headset | 1999–1999 -> 1999–2000 | 353 |
+| 10131 | 2 | Campagnolo Chorus Threadless headset | Campagnolo HS00-CHTH, Chorus Threadless | 1999–1999 -> 1999–2000 | 353 |
+| 5758 | 3 | Campagnolo Record Titanium | Campagnolo SP99-RE272T, Record Titanium | 1999–2000 -> 1999–2000 | 1 |
+| 10101 | 4 | Campagnolo Record 9-speed bottom bracket | Campagnolo BB99-RE02IT / BB99-RE02BC, Record | 1997–1999 -> 1997–2000 | 353 |
+| 10102 | 4 | Campagnolo Chorus 9-speed bottom bracket | Campagnolo BB99-CH02IT / BB99-CH02BC, Chorus | 1999–1999 -> 1999–2000 | 353 |
+| 10094 | 7 | Campagnolo Record 9-speed crankset | Campagnolo Record 9/10-speed crankset | 1999–1999 -> 1999–2000 | 353 |
+| 10095 | 9 | Campagnolo Chorus 9-speed crankset | Campagnolo Chorus 9/10-speed crankset | 1999–1999 -> 1999–2000 | 353 |
+| 10096 | 12 | Campagnolo Veloce 9-speed crankset | Campagnolo Veloce 9-speed crankset | 1999–1999 -> 1999–2000 | 353 |
+| 10098 | 13 | Campagnolo Veloce Triple crankset | Campagnolo Veloce Triple crankset | 1999–1999 -> 1999–2000 | 353 |
+| 10099 | 11 | Campagnolo Racing Triple crankset | Campagnolo Racing Triple crankset | 1996–1999 -> 1996–2000 | 357 |
+| 4139 | 15 | Campagnolo Record Titanium 9-speed | Campagnolo RD00-RE209, Record Titanium 9-speed | 1997–2000 -> 1997–2000 | 1 |
+| 10084 | 15 | Campagnolo Chorus 9-speed | Campagnolo RD00-CH209, Chorus 9-speed | 1999–1999 -> 1999–2000 | 353 |
+| 10088 | 18 | Campagnolo Racing Triple 9-speed | Campagnolo RD00-RA309, Racing Triple 9-speed | 1999–1999 -> 1999–2000 | 353 |
+| 10086 | 20 | Campagnolo Veloce 9-speed | Campagnolo RD99-VL209, Veloce 9-speed | 1999–1999 -> 1999–2000 | 353 |
+| 4166 | 20 | Campagnolo RD99-VL309, Veloce Triple | Campagnolo RD99-VL309, Veloce Triple | 1998–2000 -> 1998–2000 | 1 |
+| 10087 | 21 | Campagnolo Mirage 9-speed | Campagnolo RD99-MI209, Mirage 9-speed | 1999–1999 -> 1999–2000 | 353 |
+| 10091 | 22 | Campagnolo Record 9-speed (braze-on / clamp) | Campagnolo Record 9/10-speed (braze-on / clamp) | 1999–1999 -> 1999–2000 | 353 |
+| 10090 | 23 | Campagnolo Chorus 9-speed (braze-on / clamp) | Campagnolo Chorus 9-speed (braze-on / clamp) | 1999–1999 -> 1999–2000 | 353 |
+| 10093 | 24 | Campagnolo Racing Triple (braze-on / clamp) | Campagnolo Racing Triple (braze-on / clamp) | 1996–1999 -> 1996–2000 | 357 |
+| 6343 | 27 | Campagnolo Record 9-speed Ergopower (Carbon BB-System) | Campagnolo EP99-RE09R / EP99-RE09L, Record Ergopower (9-speed) | 1998–2000 -> 1998–2000 | 1 |
+| 10117 | 30 | Campagnolo Veloce 9-speed Ergopower | Campagnolo EP00-VL09R / EP00-VL09L, Veloce Ergopower (9-speed) | 1999–1999 -> 1999–2000 | 353 |
+| 10118 | 31 | Campagnolo Mirage 9-speed Ergopower | Campagnolo EP00-MI09R / EP00-MI09L, Mirage Ergopower (9-speed) | 1999–1999 -> 1999–2000 | 353 |
+| 10112 | 33 | Campagnolo Chorus dual-pivot brakes (9-speed era) | Campagnolo BR00-CH, Chorus dual-pivot brakes (9-speed era) | 1999–1999 -> 1999–2000 | 353 |
+| 10114 | 35 | Campagnolo Veloce dual-pivot brakes | Campagnolo BR00-VL, Veloce dual-pivot brakes | 1999–1999 -> 1999–2000 | 353 |
+| 10119 | 36 | Campagnolo Record 9-speed down-tube shifters | Campagnolo SL99-RE09CG, Record 9-speed down-tube shifters | 1999–1999 -> 1999–2000 | 353 |
+| 10120 | 37 | Campagnolo 9-speed bar-end shifters | Campagnolo SL99-BE09CG, 9-speed bar-end shifters | 1999–1999 -> 1999–2000 | 353 |
+| 10135 | 38 | Campagnolo Record aero brake levers (9-speed era) | Campagnolo BL99-RECG, Record aero brake levers (9-speed era) | 1999–1999 -> 1999–2000 | 353 |
+| 10106 | 42 | Campagnolo Record 9-speed front hub | Campagnolo Record 9-speed front hub | 1999–1999 -> 1999–2000 | 353 |
+| 10107 | 44-45 | Campagnolo Chorus 9-speed hubs | Campagnolo Chorus hubs (9/10-speed rear) | 1999–1999 -> 1999–2000 | 353 |
+| 10109 | 48 | Campagnolo Veloce 9-speed hubs | Campagnolo Veloce 9-speed hubs | 1999–1999 -> 1999–2000 | 353 |
+| 10110 | 48 | Campagnolo Mirage 9-speed hubs | Campagnolo Mirage 9-speed hubs | 1999–1999 -> 1999–2000 | 353 |
+| 1188 | 52 | Campagnolo Record Titanium/Steel Exa-Drive Mk2 (9sp), Record 9-speed | Campagnolo Record Titanium/Steel Exa-Drive Mk2 (9sp), Record 9-speed | 1998–2000 -> 1998–2000 | 1 |
+| 10121 | 56 | Campagnolo Chorus 9-speed cassette | Campagnolo Chorus 9-speed cassette | 1999–1999 -> 1999–2000 | 353 |
+| 10055 | 60 | Campagnolo Pro-Fit, Record | Campagnolo PD00-RE, Record Pro-Fit | 1998–1999 -> 1998–2000 | 353 |
+| 10133 | 60 | Campagnolo Pro-Fit, Chorus | Campagnolo PD00-CH, Chorus Pro-Fit | 1999–1999 -> 1999–2000 | 353 |
+| 4947 | 72 | Campagnolo Electron (Climb-Dynamic) | Campagnolo WH99-ELCF / WH99-ELCR, Electron (Climb-Dynamic) | 1998–1998 -> 1998–2000 | 343 |
+| 4968 | 69 | Campagnolo Shamal 12-HPW | Campagnolo Shamal 12-HPW | 1997–1998 -> 1997–1998 | 343 |
+| 6963 | 70 | Campagnolo Vento | Campagnolo WH99-VECF / WH99-VECR, Vento | 1994–1999 -> 1994–2000 | 353 |
+
+### Original values for restoration
+
+Dates/titles/sources are in the preceding table. The original categories were unchanged except 4947/4968, both Rims (16). Resulting category for both is Wheel(sets) (24). Group/brand/UUID of existing rows are unchanged. Original descriptions and search text:
+
+| ID | Original description | Original search_text |
+|---|---|---|
+| 10128 | 1in threaded headset, anodized alloy, lubrication hole, 104g. | Campagnolo Record headset |
+| 10129 | 1in threadless headset, alloy, lubrication hole, carbon top cap, 110g. | Campagnolo Record Threadless headset |
+| 10130 | 1in threaded headset, light alloy, anodized, 106g. | Campagnolo Chorus headset |
+| 10131 | 1in threadless headset, light alloy, self-centring bearings, 119g. | Campagnolo Chorus Threadless headset |
+| 5758 | Campagnolo Record Titanium, Italy, 195 grams (Spec) | Campagnolo Record Titanium |
+| 10101 | Triple-bearing cartridge bottom bracket, hollow steel axle 102mm, alloy cups and carbon-fibre composite body; BB-31RECART Italian or BB-33RECART BSC; 190g. | Campagnolo Record 9-speed bottom bracket |
+| 10102 | Cartridge bottom bracket, steel axle 102mm, alloy cups and body, Italian or English, 220g. | Campagnolo Chorus 9-speed bottom bracket |
+| 10094 | Alloy crankset, 170 / 172.5 / 175mm, 39-52 / 39-53 / 42-52T, 632g with rings. | Campagnolo Record 9-speed crankset |
+| 10095 | Alloy crankset, 170 / 172.5 / 175mm, 39-52 / 42-52 / 39-53T, 667g with rings. | Campagnolo Chorus 9-speed crankset |
+| 10096 | Alloy crankset, 170 / 172.5 / 175mm, 39-52 / 42-52 / 39-53T, 650g with rings. | Campagnolo Veloce 9-speed crankset |
+| 10098 | Alloy triple crankset, 170 / 175mm, 30-42-52T, 740g with rings. | Campagnolo Veloce Triple crankset |
+| 10099 | Alloy triple crankset, 170 / 175mm, 30-40-50 / 32-42-52T, 735g with rings. | Campagnolo Racing Triple crankset |
+| 4139 | Campagnolo Record Titanium 9-speed, Italy, 223 grams | Campagnolo Record Titanium 9-speed |
+| 10084 | 9-speed rear derailleur, aluminium alloy, anodized, max sprocket 26T, total capacity 27T, 243g. | Campagnolo Chorus 9-speed |
+| 10088 | 9-speed triple rear derailleur, aluminium alloy and steel, anodized, max sprocket 28T, total capacity 37T, 261g. | Campagnolo Racing Triple 9-speed |
+| 10086 | 9-speed rear derailleur, aluminium alloy and steel, anodized, max sprocket 28T, total capacity 27T, 251g. | Campagnolo Veloce 9-speed |
+| 4166 | Campagnolo RD99-VL309, Veloce Triple, Italy, 268 grams (Spec),2000 Campagnolo Catalog | Campagnolo RD99-VL309 Veloce Triple |
+| 10087 | 9-speed rear derailleur, aluminium alloy and steel, anodized, max sprocket 28T, total capacity 26T, 271g. | Campagnolo Mirage 9-speed |
+| 10091 | Front derailleur, aluminium alloy body, chromed steel cage, 15T capacity, 54T max; braze-on 89g, clamp 102g. | Campagnolo Record 9-speed |
+| 10090 | Front derailleur, aluminium alloy body, chromed steel cage, 15T capacity, 54T max; braze-on 87g, clamp 100g. | Campagnolo Chorus 9-speed |
+| 10093 | Triple front derailleur, anodized alloy body, chromed steel cage, 22T capacity; braze-on 98g, clamp 114g. | Campagnolo Racing Triple |
+| 6343 | Campagnolo Record 9-speed Ergopower (Carbon BB-System), Italy. Carbon-lever Ergopower of the 1998-2000 Record 9-speed group. | Campagnolo Record 9-speed Ergopower |
+| 10117 | 9-speed Ergopower, alloy levers, steel-pivot body, triple compatible, 387g pair. | Campagnolo Veloce 9-speed Ergopower |
+| 10118 | 9-speed Ergopower, alloy levers, steel-pivot body, triple compatible, 400g pair. | Campagnolo Mirage 9-speed Ergopower |
+| 10112 | Dual-pivot caliper, alloy and steel, aluminium pad holders, 380g pair with pads. | Campagnolo Chorus dual-pivot brakes |
+| 10114 | Dual-pivot caliper, alloy, steel pivot, 390g pair with pads. | Campagnolo Veloce dual-pivot brakes |
+| 10119 | Indexed 9-speed down-tube levers, alloy, steel pivots, 74g pair. | Campagnolo Record 9-speed down-tube shifters |
+| 10120 | Indexed 9-speed bar-end levers for time trial, cyclocross and triathlon, alloy, steel pivots, 163g pair. | Campagnolo 9-speed bar-end shifters |
+| 10135 | Aero brake levers for down-tube shifting, aluminium alloy, black rubber hoods, 267g pair. | Campagnolo Record aero brake levers |
+| 10106 | Front hub, 7075 alloy body and axle, 100mm, 28/32/36H, 181g with QR. | Campagnolo Record 9-speed front hub |
+| 10107 | 7075 alloy body and axle, alloy freewheel body; front 100mm, 32/36H, 205g; rear 9-speed, 130mm, 326g (with QR). | Campagnolo Chorus 9-speed hubs |
+| 10109 | Alloy body, steel axle; front 100mm, 32/36H, 216g; rear 9-speed, 130mm, alloy freewheel body, 458g (with QR). | Campagnolo Veloce 9-speed hubs |
+| 10110 | Alloy body, steel axle, cartridge bearings; front 100mm, 32/36H, 229g; rear 9-speed, 130mm, 460g (with QR). | Campagnolo Mirage 9-speed hubs |
+| 1188 | Campagnolo Record Titanium/Steel Exa-Drive Mk2 (9sp), Record 9-speed, Italy | Campagnolo Record Titanium/Steel Exa-Drive Mk2 Record 9-speed |
+| 10121 | Steel sprockets on a 7075 alloy carrier, no lockring, 12-21 / 12-23 / 13-23 / 13-26T, 197g (12-21T). | Campagnolo Chorus 9-speed cassette |
+| 10055 | Campagnolo Pro-Fit, Record, Italy. Clipless pedal with release-force indicator window, safety wings and wide shoe support; 266 g per pair against 430 g for the 1997 Record pedal. | Campagnolo Pro-Fit Record |
+| 10133 | Clipless road pedal, alloy and steel, adjustable cones and cups, float cleat, 325g pair. | Campagnolo Pro-Fit Chorus |
+| 4947 | Campagnolo Electron, Italy. Climb-Dynamic low-profile wheel, sister of the Proton: light, laterally stiff, asymmetric rear rim; tubular or clincher. | Campagnolo Electron |
+| 4968 | Campagnolo Shamal 12-HPW, Italy. 12-spoke Shamal on H.P.W. (High Performance Wheel) hubs: adjustable bearings, improved dish, Titanium version; 9-speed ready. Successor to the 16-spoke Shamal of 1992-96. | Campagnolo Shamal 12-HPW |
+| 6963 | Campagnolo Vento, Italy 1994 range: Vento 20-spoke clincher 28 in, 930/1190 g, 8-sp steel body. 1995 range: Vento 28 in clincher, 930 / 1190 g. 1997: Vento 16-HPW, 16 spokes on H.P.W. hubs, 9-speed ready. | Campagnolo Vento |
+
+### New identities added
+
+| Category | Count | Scope |
+|---|---|---|
+| Chainrings | 49 | Printed FC-RE/CH/AT/MI/VL/RA/PI/TH/RETH/CHTH codes; different speed, tooth and matching-inner-ring variants kept distinct |
+| Rear Derailleurs | 6 | Record/Chorus 10-speed standard and L codes; Daytona double and Triple 9-speed |
+| Front Derailleurs | 3 | Chorus 10-speed; Daytona double and Triple |
+| Shifting Brake Levers | 3 | Paired Record/Chorus 10-speed and Daytona 9-speed Ergopower |
+| Cassettes | 4 | Record 10-speed, Record Titanium 10-speed, Chorus 10-speed, dedicated Ghibli nine-sprocket/10-speed-spacing sets |
+| Wheel(sets) | 2 | WH99 Bora 9/10-speed tubulars; Nucleon tubular/clincher variants |
+| Other | 7 | Record oversize threadless headset, Record Carbon post, Daytona crankset/brakes/hubset/Pro-Fit pedals, 10-speed bar-end shifters |
+
+### Unresolved identities — no speculative rows/links
+
+| Printed page | Model | Existing candidates | Decision / next evidence needed |
+|---|---|---|---|
+| 3 | SP00-CH272 Chorus post | 5743, 7041 | Complete code is printed, but relationship to earlier Chorus RS post requires a physical/code crosswalk; do not insert a second possible identity. |
+| 5 | BB00-AH11IT/BC and BB00-AH15IT/BC, AC-H | 10103, 10509 | 111/115.5 mm AC-H named assemblies may overlap uncoded Athena/Racing Triple cartridges; lengths alone do not prove a new identity. |
+| 5 | BB00-AS11IT/BC, AC-S | 10104, 10105, 10508 | 111 mm AC-S relationship to existing Veloce/Mirage cartridges unresolved; do not duplicate by new code alone. |
+| 6 | BB99-REPIIT/BC, Record Pista | 23, 40 | Complete assembly codes printed; continuity with older Record Pista cup-and-cone rows not established. |
+| 8 | Record Pista crankset | 1484, 1485, 1505 | 2000 printed lengths 165/170 mm, rings 47-52T, 3 mm rings for 1/8 in chain; no complete-set code establishing continuity with C-Record Pista versions. |
+| 21 | RD99-MI309 Mirage Triple | 4122 | Existing title RD09-MI3 is reportedly from 1999 but is not the printed RD99-MI309 code; verify the specimen/version before renaming or adding. |
+| 26 | Mirage double / Triple | 2317, 2294, 10505 | Shared Veloce/Mirage family and existing FD11-SM13 Triple code need a crosswalk before extending or splitting. |
+| 28 | EP00-CH09R/L Chorus 9-speed | 6340, 7092 | Earlier Chorus carbon generations lack complete codes. Keep 2000 code assignment unresolved until the body/generation is established. |
+| 32 | BR00-RE Record | 578 | Existing BR-14RE is a specifically coded earlier brake. The 2000 family code alone does not establish unchanged construction or a renumbering. |
+| 43 | Record 9/10-speed rear | 3268 | Current Record Exa-Drive 9-speed row already covers 1999-2006. No assembly code printed; leave construction/version details unchanged. |
+| 49-50 | Record Pista front/rear | 3242, 3243, 3270, 3271 | No assembly codes or sufficient identification to establish continuity with older small/high flange track hubs; do not invent separate dated duplicates. |
+| 54 | Record MK2 Titanium 9-speed | 1187, 1188 | Printed as a separate family from standard Record MK2. Do not fold it into 1188 titanium/steel; 1187 describes the original 1997 titanium version, so MK1/MK2 continuity remains unproven. |
+| 58 | ED-C 9-speed (ED-Z compatible) | 10122, 10123, 10124 | Loose-sprocket combination table is not explicitly assigned to one retail group. Do not map by tooth ranges or manufacture a model identity. |
+| 59 | CS99-RE0823 / RE0833 / RE0836, Record 8-speed | 1186 | Three complete 8-speed set codes printed; relationship to older uncoded Record Exa-Drive 8-speed row is not established by speed/ranges alone. |
+| 69 | WH99-SMTF / SMTR / SMCF / SMCR, Shamal | 4968, 6961, 6962 | 2000 tubular/clincher complete wheels may continue 12-HPW but exact generation not established. Category correction of 4968 is supported separately; no date/code assignment. |
+| 75 | WH00-SMPTF / WH00-SMPTR, Shamal Pista | 10513 | 2000 complete 28-inch tubular track wheels; continuity with the 1996 Shamal 12 track identity needs confirmation before adding or extending. |
+
+### Validation before and after application
+
+- Live Campagnolo row count: **657 -> 731**, verified 2026-11-15. All 40 existing rows selected for changes have zero live bike links. New group Daytona absent in that snapshot. Existing category-brand associations already cover every proposed category; no new associations needed.
+- Simulated the 74 additions, retitles and two category moves through the current generator over all 93 CSVs. Full generated SQL is byte-identical to the pre-change baseline: 1,199 bikes, 20,600 specs, 7,313 mapped. These are generated CSV counts, not live DB totals or a refreshed coverage snapshot. Root `bike-update.sql` untouched. No linking override change or bike SQL warranted.
+- Description lengths checked: maximum 203 characters, under the 255-character column limit; titles and generated search text checked too. Retitles regenerate search_text with the maintained helper. No application code changed.
+- Offline duplicate simulation: no new pairs or merge/review candidates; generation pairs 31 -> 30, configuration 16 -> 16, cosmetic 2 -> 2. One old grouping disappears after a supported retitle; this is report grouping, not a deletion. Existing cosmetic pairs 4106/4108 (older Chorus graphite/standard) and 1472/1473 (Gran Sport/Bianchi marking) are outside the 2000 offering identities and remain untouched; no automatic merge is authorised by a report.
+- Actual post-load validation: all 114 affected rows matched the approved titles, descriptions, years, categories, groups, brand, UUIDs and search text; every source_ref is 410. All category/brand/group/category-brand references are valid; descriptions at most 203 characters. Zero live bike links on affected rows, so no link fills or corrections were warranted. All 93 CSVs regenerated against the actual DB: full SQL byte-identical to the pre-load baseline. No root generated file overwritten. SQL rerun changed zero rows, including source/group inserts.
+- Actual duplicate report agrees with the simulation: generation 31 -> 30, configuration 16 -> 16, cosmetic 2 -> 2; no new pairs. The former 7077/10112 generation pair drops out of title grouping after 10112 gains its printed BR00-CH code; the earlier 1994 Chorus row is kept distinct, with no deletion or merge. Existing two cosmetic candidates remain outside this 2000 scope.
+
+### New component IDs and catalogue evidence
+
+All new rows have the catalogue-attested range 2000–2000 (availability, not production limits), brand 11 and source 410. Daytona components use new group 333; shared components retain NULL group. No new category-brand associations were needed.
+
+| ID | Category | Printed page | Title |
+|---|---|---|---|
+| 11176 | Headsets | 1 | Campagnolo HS00-RETHOS, Record Threadless (1 1/8 inch) |
+| 11177 | Seat Posts | 3 | Campagnolo SP00-RE272C, Record Carbon |
+| 11178 | Cranksets | 10 | Campagnolo Daytona crankset |
+| 11179 | Chainrings | 7 | Campagnolo FC-RE039, 39T chainring |
+| 11180 | Chainrings | 7 | Campagnolo FC-RE042, 42T chainring |
+| 11181 | Chainrings | 7 | Campagnolo FC-RE142, 42T chainring (10-speed) |
+| 11182 | Chainrings | 7 | Campagnolo FC-RE152, Record 52-tooth chainring |
+| 11183 | Chainrings | 7 | Campagnolo FC-RE252, Record 52-tooth chainring, 10-speed |
+| 11184 | Chainrings | 7 | Campagnolo FC-RE352, Record 52-tooth chainring |
+| 11185 | Chainrings | 7 | Campagnolo FC-RE452, Record 52-tooth chainring, 10-speed |
+| 11186 | Chainrings | 7 | Campagnolo FC-RE153, Record 53-tooth chainring |
+| 11187 | Chainrings | 7 | Campagnolo FC-RE253, Record 53-tooth chainring, 10-speed |
+| 11188 | Chainrings | 8 | Campagnolo FC-PI047, Record Pista 47-tooth chainring |
+| 11189 | Chainrings | 8 | Campagnolo FC-PI048, Record Pista 48-tooth chainring |
+| 11190 | Chainrings | 8 | Campagnolo FC-PI049, Record Pista 49-tooth chainring |
+| 11191 | Chainrings | 8 | Campagnolo FC-PI050, Record Pista 50-tooth chainring |
+| 11192 | Chainrings | 8 | Campagnolo FC-PI051, Record Pista 51-tooth chainring |
+| 11193 | Chainrings | 8 | Campagnolo FC-PI052, Record Pista 52-tooth chainring |
+| 11194 | Chainrings | 9 | Campagnolo FC-CH152, Chorus 52-tooth chainring |
+| 11195 | Chainrings | 9 | Campagnolo FC-CH252, Chorus 52-tooth chainring, 10-speed |
+| 11196 | Chainrings | 9 | Campagnolo FC-CH352, Chorus 52-tooth chainring |
+| 11197 | Chainrings | 9 | Campagnolo FC-CH452, Chorus 52-tooth chainring, 10-speed |
+| 11198 | Chainrings | 9 | Campagnolo FC-CH153, Chorus 53-tooth chainring |
+| 11199 | Chainrings | 9 | Campagnolo FC-CH253, Chorus 53-tooth chainring, 10-speed |
+| 11200 | Chainrings | 10 | Campagnolo FC-AT152, Daytona 52-tooth chainring |
+| 11201 | Chainrings | 10 | Campagnolo FC-AT352, 52T chainring |
+| 11202 | Chainrings | 10 | Campagnolo FC-AT153, Daytona 53-tooth chainring |
+| 11203 | Chainrings | 11 | Campagnolo FC-RA630, Racing Triple 30-tooth chainring |
+| 11204 | Chainrings | 11 | Campagnolo FC-RA040, Racing Triple 40-tooth chainring |
+| 11205 | Chainrings | 11 | Campagnolo FC-RA042, Racing Triple 42-tooth chainring |
+| 11206 | Chainrings | 11 | Campagnolo FC-RA050, Racing Triple 50-tooth chainring |
+| 11207 | Chainrings | 12 | Campagnolo FC-MI039, Veloce 39-tooth chainring |
+| 11208 | Chainrings | 12 | Campagnolo FC-MI042, Veloce 42-tooth chainring |
+| 11209 | Chainrings | 12 | Campagnolo FC-VL152, Veloce 52-tooth chainring |
+| 11210 | Chainrings | 12 | Campagnolo FC-MI153, Veloce 53-tooth chainring |
+| 11211 | Chainrings | 13 | Campagnolo FC-MI730, Veloce Triple 30-tooth chainring |
+| 11212 | Chainrings | 13 | Campagnolo FC-VL142, Veloce Triple 42-tooth chainring |
+| 11213 | Chainrings | 13 | Campagnolo FC-MI352, 52-tooth chainring |
+| 11214 | Chainrings | 14 | Campagnolo FC-TH155, Chrono/Triathlon 55-tooth chainring |
+| 11215 | Chainrings | 14 | Campagnolo FC-RETH155, Record Chrono/Triathlon 55-tooth chainring |
+| 11216 | Chainrings | 14 | Campagnolo FC-CHTH155, Chorus Chrono/Triathlon 55-tooth chainring |
+| 11217 | Chainrings | 14 | Campagnolo FC-TH255, Chrono/Triathlon 55-tooth chainring |
+| 11218 | Chainrings | 14 | Campagnolo FC-RETH255, Record Chrono/Triathlon 55-tooth chainring |
+| 11219 | Chainrings | 14 | Campagnolo FC-CHTH255, Chorus Chrono/Triathlon 55-tooth chainring |
+| 11220 | Chainrings | 14 | Campagnolo FC-TH154, Chrono/Triathlon 54-tooth chainring |
+| 11221 | Chainrings | 14 | Campagnolo FC-RETH154, Record Chrono/Triathlon 54-tooth chainring |
+| 11222 | Chainrings | 14 | Campagnolo FC-CHTH154, Chorus Chrono/Triathlon 54-tooth chainring |
+| 11223 | Chainrings | 14 | Campagnolo FC-TH254, Chrono/Triathlon 54-tooth chainring |
+| 11224 | Chainrings | 14 | Campagnolo FC-RETH254, Record Chrono/Triathlon 54-tooth chainring |
+| 11225 | Chainrings | 14 | Campagnolo FC-CHTH254, Chorus Chrono/Triathlon 54-tooth chainring |
+| 11226 | Chainrings | 14 | Campagnolo FC-TH144, Chrono/Triathlon 44-tooth chainring |
+| 11227 | Chainrings | 14 | Campagnolo FC-TH142, Chrono/Triathlon 42-tooth chainring |
+| 11228 | Rear Derailleurs | 16 | Campagnolo RD00-RE210, Record 10-speed rear derailleur |
+| 11229 | Rear Derailleurs | 16 | Campagnolo RD00-RE210L, Record 10-speed rear derailleur, L variant |
+| 11230 | Rear Derailleurs | 17 | Campagnolo RD00-CH210, Chorus 10-speed rear derailleur |
+| 11231 | Rear Derailleurs | 17 | Campagnolo RD00-CH210L, Chorus 10-speed rear derailleur, L variant |
+| 11232 | Rear Derailleurs | 19 | Campagnolo RD00-DA209, Daytona 9-speed rear derailleur |
+| 11233 | Rear Derailleurs | 19 | Campagnolo RD00-DA309, Daytona Triple 9-speed rear derailleur |
+| 11234 | Front Derailleurs | 23 | Campagnolo Chorus 10-speed front derailleur |
+| 11235 | Front Derailleurs | 25 | Campagnolo Daytona front derailleur |
+| 11236 | Front Derailleurs | 25 | Campagnolo Daytona Triple front derailleur |
+| 11237 | Shifting Brake Levers | 27 | Campagnolo EP00-RE10R / EP00-RE10L, Record Ergopower (10-speed) |
+| 11238 | Shifting Brake Levers | 28 | Campagnolo EP00-CH10R / EP00-CH10L, Chorus Ergopower (10-speed) |
+| 11239 | Shifting Brake Levers | 29 | Campagnolo EP00-DA09R / EP00-DA09L, Daytona Ergopower (9-speed) |
+| 11240 | Brakes | 34 | Campagnolo BR00-DA, Daytona |
+| 11241 | Shifters | 37 | Campagnolo SL00-BE10CG, Bar-end (10-speed) |
+| 11242 | Hubs | 46-47 | Campagnolo Daytona hubs (9-speed rear) |
+| 11243 | Cassettes | 53 | Campagnolo Record 10-speed cassette |
+| 11244 | Cassettes | 55 | Campagnolo Record Titanium 10-speed cassette |
+| 11245 | Cassettes | 57 | Campagnolo Chorus 10-speed cassette |
+| 11246 | Cassettes | 59 | Campagnolo CS00-GH0919 / CS00-GH0911, Ghibli sprocket set |
+| 11247 | Pedals | 60 | Campagnolo PD00-DA, Daytona Pro-Fit |
+| 11248 | Wheel(sets) | 68 | Campagnolo WH99-BOTF / WH99-BOTR, Bora (9/10-speed) |
+| 11249 | Wheel(sets) | 71 | Campagnolo WH99-NUTF / WH99-NUTR / WH99-NUCF / WH99-NUCR, Nucleon |

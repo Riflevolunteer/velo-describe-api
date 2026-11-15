@@ -11,7 +11,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 
 - [known-catalogs/brooks.md](known-catalogs/brooks.md) — Brooks (1 entry)
 - [known-catalogs/ideale.md](known-catalogs/ideale.md) — Ideale saddles, brand 580 Tron & Berthet (1 entry)
-- [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (37 entries)
+- [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (38 entries; includes 2000 parts book)
 - [known-catalogs/shimano.md](known-catalogs/shimano.md) — Shimano (30 entries)
 - [known-catalogs/suntour.md](known-catalogs/suntour.md) — SunTour (17 entries)
 - [known-catalogs/simplex.md](known-catalogs/simplex.md) — Simplex (9 entries)
@@ -64,6 +64,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/modolo.md](known-catalogs/modolo.md) — Modolo (3 entries, c. 1979, March 1986, 1990)
 - [known-catalogs/tioga.md](known-catalogs/tioga.md) — Tioga headsets and pedals (1 entry, 1992)
 - [known-catalogs/ukai.md](known-catalogs/ukai.md) — Ukai / Yanagihara Industrial rims (1 entry, 1980)
+- [known-catalogs/edco.md](known-catalogs/edco.md) — EDCO touring group (1 entry, c. 1994)
 
 When a new brand shows up for the first time, create
 `known-catalogs/<brand-slug>.md` for it (title `# <Brand> catalogs processed
