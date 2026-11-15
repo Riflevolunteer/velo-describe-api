@@ -714,13 +714,13 @@ const COMPONENT_OVERRIDES = {
     'shimano z202': [{ bike: 'Nimbus', from: 1987, to: 1987, id: 2542 }, { from: 1986, to: 1986, id: 2542 }], // 1986 Raleigh Marathon / Pursuit: FD-Z202-HS, Z-Series (1984-88)
     // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
     // 1985-86: AV 66.3 D (1986 Peugeot (US) Triathlon / Galibier); 1987-90: ARIS.
-    'huret new success': [{ from: 1985, to: 1986, id: 8960 }, { from: 1987, to: 1990, id: 2439 }], // Sachs Huret ARIS New Success (the only New Success front; undated)
+    'huret new success': [{ from: 1985, to: 1986, id: 8960 }, { from: 1987, to: 1990, id: 2439 }], // Sachs Huret ARIS New Success (the only New Success front; dated 1987-89 from fitment, ARIS from 1987)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 2462 }], // Competition / Triathlon: FD-1050 105
     'shimano 600ex': [{ bike: '912', from: 1983, to: 1983, id: 2480 }, { bike: '912', from: 1982, to: 1982, id: 2480 }, { bike: '912', from: 1980, to: 1980, id: 2480 }, { bike: '912', from: 1979, to: 1979, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // Road Ace / Record Ace: FD-6207 600EX (1984-87)
-    'sachs huret rider 2': [{ from: 1989, to: 1989, id: 8962 }], // 1989 Peugeot Lautaret / Lavandou: Sachs Huret AV 62.1 T, Rider / Duopar triple (2437 "Rider" merged in 2026-11-02)
-    'sachs huret rider': 8962, // 1989 Peugeot Fun Star / US Express / Avoriaz: as above
-    'huret rider': 8962, // 1986-88 Peugeot / Raleigh Teton: as above
+    'sachs huret rider 2': [{ from: 1989, to: 1989, id: null }], // 1989 Peugeot Lautaret / Lavandou: 42x52 doubles; 8962 is the triple AV 62.1 T and no double Rider front row exists (unlinked 2026-11-15)
+    'sachs huret rider': [{ bike: "P 10 S Z 'Avoriaz'", from: 1989, to: 1989, id: null }, { id: 8962 }], // 1989 Peugeot Fun Star / US Express (triples): AV 62.1 T Rider / Duopar; Avoriaz is a 42x52 double (unlinked 2026-11-15)
+    'huret rider': [{ bike: "P 15C W 'Manosque'", from: 1987, to: 1987, id: null }, { id: 8962 }], // 1986-88 Peugeot / Raleigh Teton triples: as above; 1987 Manosque is a 42x52 double (unlinked 2026-11-15)
     'shimano 600 ex': [{ from: 1981, to: 1981, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // 1981 Criterium: EC-630 / FD-6200 Arabesque (1978-84; FD-6207 is 1984-87) // Road Ace: FD-6207 600EX (1984-87)
     'sun tour spirt': 2601, // 1981 Royale: SunTour 3700 / FD-1000 Spirt (1973-85)
     'sun tour spirt pub': 2601, // 1981 Record: as Royale

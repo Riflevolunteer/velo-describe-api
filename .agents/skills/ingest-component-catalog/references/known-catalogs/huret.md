@@ -664,3 +664,22 @@ and `/tmp/elysee-sheet-18.jpg`, `-21.jpg`, `-22.jpg`, `-23.jpg`, `-24.jpg`,
   set", drop parallelogram, plastic / steel, long cage; type 2 blank), 4409 Rival 7000 (model "RD R7000", ARIS, slant
   parallelogram, short cage, 28T wrap), 4404-4406 Aris Classic 1500 / 2500 / 3000 (ARIS touring, long cage); none gives
   production years.
+
+## Front derailleur audit fixes — 2026-11-15 (user approved; audit items 1-3)
+
+- Wrong links corrected: 8962 "AV 62.1 T, Rider / Duopar (triple)" was linked from four 42x52 doubles; set NULL
+  (old value 8962): 15470 1987 Peugeot P 15C W Manosque "Huret Rider" (Solida 52D 42x52, 10-speed), 17763 1989 P 10 S Z
+  Avoriaz "Sachs-Huret Rider" (42x52, 12-speed), 17782 P 10 SA Z Lautaret and 17858 P 15 Z Lavandou "Sachs-Huret Rider
+  2" (42x52, 10-speed). Scoped null overrides keep them unlinked ('sachs huret rider 2' 1989; bike-scoped Avoriaz and
+  Manosque entries on 'sachs huret rider' / 'huret rider'). No double Rider front row exists (front 2437 "Rider" was
+  merged into 8962 on 2026-11-02); "Rider 2" probably names the double. Source gap: a 1987-89 Sachs-Huret catalogue
+  listing the Rider double front.
+- Dates from explicit Peugeot prints (fitment evidence; descriptions unchanged): 8961 AV 62.1 D Rival `year_to` 1986 ->
+  1989 (1987-89 Peugeot print "AV: 62-1D" / "62-1-D"); 8962 AV 62.1 T `year_to` 1986 -> 1989 (genuine triples: 1987
+  Saint-Bernard "Rider 3 PL" 30x40x50, 1988 VTT Fun, 1989 Fun Star / US Express 28x38x48); 2379 Club II `year_to` 1987
+  -> 1988 (1988 P 15, PE 10 LS "Club 2"; description is at 255). 2439 ARIS New Success front NULL -> 1987-89 from
+  fitment, matching the rear 4412 decision (ARIS from 1987).
+- Retitled: 2394 "Huret Alvit" -> "Huret Allvit" (`search_text` and description too), Huret's spelling as rear 4290.
+- Validation: 4 specs + 5 rows; rerun 0. All 93 CSVs regenerated: only the four unlinks changed (7328 -> 7324 linked);
+  the retitle changed no mapping. `quality-report` has no findings on the touched rows. Huret / Sachs front specs 88 / 105
+  linked (92 before; the 4 removed links were wrong).
