@@ -2325,8 +2325,11 @@ const COMPONENT_OVERRIDES = {
     'sugino vp 50x44x28 teeth': [{ from: 1986, to: 1986, id: 1970 }], // VP (triple), not the plain VP row
     // 1986-88 Peugeot: Peugeot drops the "LX" of Stronglight's mid-80s LX range (c. 1985 brochure: 100 LX, 300 LX,
     // 400 LXT, 200 LX on the cover). "200" = 1889 200 LX; the triples' "100" = 1875 100 LX (ST 100 LXT).
+    // The Sept 1986 Stronglight catalogue also lists standard ST200D (11312) / ST100D-T (11311). Only the 1986 US
+    // catalogue contrasts wording ("200, deluxe" on the Triathlon vs plain "200, 42 x 52" on Galibier / Ventoux), so
+    // that plain wording is the standard 200; the rest stay on LX as undecided (see stronglight.md).
     'stronglight 200 anodised': [{ from: 1986, to: 1988, id: 1889 }],
-    'stronglight 200 42 x 52': [{ from: 1986, to: 1988, id: 1889 }],
+    'stronglight 200 42 x 52': [{ from: 1986, to: 1986, id: 11312 }],
     'stronglight 200 deluxe 42 x 52': [{ from: 1986, to: 1988, id: 1889 }],
     'stronglight 200 42x52': [{ from: 1986, to: 1988, id: 1889 }],
     'stronglight 200 white 42x52': [{ from: 1986, to: 1988, id: 1889 }],

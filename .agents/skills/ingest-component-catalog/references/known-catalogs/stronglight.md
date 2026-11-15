@@ -265,3 +265,42 @@ The generator's overrides for 1880 and 1893 still start at 1970 but only resolve
 ## 1912 Stronglight 49D (DEPOSE) incised lettering merged (2026-11-06, crankset duplicate pass)
 
 - 1912 "Stronglight Stronglight 49D (DEPOSE) incised lettering" (VeloBase 0A84EDC5-3DB0-4B18-B4B0-A434E5DF550B, empty page, no specs) deleted into 1895 "Stronglight 49D (Depose)"; incised lettering noted as a variant on 1895. 1896 "49D (Marque Deposee)" stays a reviewed dating-marking row.
+
+## Stronglight catalogue, printed September 1986 (22 scans, labibleduvelocataloguesstronlight.blogspot.com), data_source 413, 2026-11-15
+
+- Label `Stronglight catalogue (September 1986)`, country FR. Source:
+  https://labibleduvelocataloguesstronlight.blogspot.com/p/stronlight-1986.html (blog title "STRONLIGHT 1986"; Blogger
+  images, `/s1600/` gives 1162-1193 x 1600). FR / EN / DE. Back cover (scan 21) imprint "Imprimerie J. Haubtmann - 42270
+  St-Priest-en-Jarez, Septembre 1986", photographers Coussirat and Delpech; Stronglight, 54 bd Fauriat, BP 222, 42005
+  St-Etienne, tel 77 25 48 68, Spidel logo; COBAPRESS precision forging. No catalogue number printed. Scan order: 1 cover,
+  2 photo, 3 "Le pédalier" intro, 4 chain-line / thread table, 5 107 + 107 Tri, 6 101, 7 100, 8 200, 9 Delta adjustable BB,
+  10 JPTOUR / JP65 / JPCOMP / JP650 / JP651 / sealing sleeve, 11 "La direction" photo, 12 headset stack table, 13 Delta +
+  A9, 14 B10 + C11, 15 seatpost photo, 16 TS Delta / TS 200 / TS 80, 17 tools photo, 18 OT710 / OT730, 19 tools CL85-96,
+  OT22, 720 bis, extra-light bolts BL590D / 591D / 61D / 62D, 20 PRDELTA / PR300 pedals, 21 back cover, 22 photo.
+  Out of scope: tools, bolts, sealing sleeve, chain-line table (113 piste ... 134.5 MTB axles).
+- Compared with source 194 (c. 1985-89 brochure): new here are the standard (non-LX) 100 and 200, the 101, the
+  JPTOUR / JP65 / JPCOMP cup-and-cone sets, the C11 headset ("nouveau, extra-léger"), TS Delta and TS 80 posts and the
+  needle-bearing pedals ("nouvelle gamme"); the Delta headset is also marked "nouveau, étanche". Absent here (no caps
+  applied): Delta crankset, 300 LX, Bio Strong 400 LXT, the 100 LX / 107 tandems, JD X12 / X12 VTT, Delta hubs, TS 300.
+- Rows inserted (5, 1986-1986, `source_ref` 413): 11311 100 (ST100D / ST100T, standard, 170mm, vibration-polished,
+  914g / 980g), 11312 200 (ST200D, standard, 880g), 11313 JP65 (luxe), 11314 TS 80, 11315 Delta pedal PRDELTA (steel
+  axle, 310g / pair; 3994 "Delta Titanium" velobase row kept separate).
+- Rows updated (16, `source_ref` 413): `year_to` -> 1986 on 1876 101 (was 1982), 1884 107 triple, 1916 107 Pista,
+  156 JP650, 157 JP651, 8806 JPDELTA1, 3112 A9 (France locknut), 3127 Delta headset, 8809 TS 200 (all were 1985),
+  9505 330 (was 1982), 155 Competition 65 (was 1984); descriptions rewritten on 1876, 1884 (third ring 28-36T on pins
+  in 1982, 28-38T on BL106T bolts at 86mm in 1986), 1916, 1875 100 LX, 1889 200 LX, 9505, 155, 3127, 3128 C11 (59g),
+  3995, 5921, 8809 (diameters 25.2-27.4mm c. 1985, 24-27.4mm in 1986). No titles changed, so no `search_text` rewrites.
+- `year_from` moved later (old values for reverting): 3995 PR300, Pista 1980 -> 1986 (velobase decade value; the catalogue
+  calls the needle-bearing pedals a "nouvelle gamme"); 5921 Delta seatpost 1980 -> 1986 (velobase decade value; absent
+  from source 194, which lists TS 200 / TS 300; earliest attestation this catalogue). Both `year_to` 1980 -> 1986. No
+  links or overrides on either.
+- Judgement calls: JPTOUR = 9505 "330" (axle AX330, cups CF331 / CR332 / CE333) and JPCOMP = 155 "Competition ref. 65"
+  (axle AX65, cups 661 / 671 / 681), codes put in descriptions, not titles. 1875 / 1889 weights 914g / 980g / 880g
+  read as "with BB", as established for the 107 (884g vs 610g crank-only). The catalogue's 100 / 200 shows only silver
+  anodised finishes; white is not attested. 3128 keeps its velobase "Super Competition" title (not printed here).
+  3112 A9 is linked on 1987-89 Peugeots beyond its new 1986 `year_to`; not extended (bike evidence, outside this pass).
+- Peugeot links (user decision 2026-11-15): only the 1986 US catalogue contrasts wording ("Stronglight 200, deluxe" on
+  the Triathlon vs plain "Stronglight 200, 42 x 52" on PGN 10 Galibier / PH 501 Ventoux), so those two plain specs
+  (bike_spec 14761, 14780) moved 1889 -> 11312; override `'stronglight 200 42 x 52'` now 1986-1986 -> 11312. The other
+  13 "200" specs (1986 FR "anodised", 1987 plain / "White", 1988 "anodised" / "polished" / "white") and the three
+  1987-88 "100" triples stay on 1889 / 1875 LX as before: standard vs LX is undecided for them.
