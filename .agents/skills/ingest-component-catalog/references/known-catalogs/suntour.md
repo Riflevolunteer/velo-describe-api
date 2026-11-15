@@ -1539,7 +1539,7 @@ Seven catalogue entries have possible existing specimen matches requiring strong
 - p.13 `RD-XD10-GXB`: Unnumbered later long-cage 4789 may be this model; existing notes explicitly prohibit identifying it by photograph alone. Catalogue establishes code but identity remains unresolved.
 - p.13 `FD-XD10-GXH`: Unnumbered 2662 SunTour XCD 6000 (1990) may depict this model; inspect original reference/photo before retitling or adding a duplicate.
 - p.14 `FH-XD11-7U`: Existing unnumbered 3630 XCD 6000 freehub may be this or an earlier hub; inspect original reference before changing/adding.
-- p.15 `SL-PP00-R7U / SL-PP00-R6R / SL-PP00-L`: Unnumbered 6305 X-1 trigger style may be this model; inspect original reference before retitling or duplicating. **Resolved 2026-11-14 (user approved):** the VeloBase page gives group X-1, model "X-press", 1990, 7sp AccuShift Plus; the only 1990 X-1 X-Press is PP00. 6305 is retitled `SunTour SL-PP00-R7U / SL-PP00-R6R / SL-PP00-L, X-Press (X-1 / XCE / XCM / XCT)` with source 385. The 1990 Bianchi Nyala (XCT) and Osprey (X-1) X-Press shifters moved from 6312 SL-XP10 to it. SQL: `docs/audits/suntour-x-press-pp00-2026-11-14.sql`. Follow-up the same day: 1990 Project 7 / Grizzly (XC-Pro) moved from 6312 to 6316 SL-PP10. p.10, the XC-Pro page, lists SL-PP10 (stock 33119571, as p.12), and 6312's 1990 start is VeloBase-only. SQL: `docs/audits/suntour-x-press-pp10-2026-11-14.sql`.
+- p.15 `SL-PP00-R7U / SL-PP00-R6R / SL-PP00-L`: Unnumbered 6305 X-1 trigger style may be this model; inspect original reference before retitling or duplicating. **Resolved 2026-11-14 (user approved):** the VeloBase page gives group X-1, model "X-press", 1990, 7sp AccuShift Plus; the only 1990 X-1 X-Press is PP00. 6305 is retitled `SunTour SL-PP00-R7U / SL-PP00-R6R / SL-PP00-L, X-Press (X-1 / XCE / XCM / XCT)` with source 385. The 1990 Bianchi Nyala (XCT) and Osprey (X-1) X-Press shifters moved from 6312 SL-XP10 to it. Follow-up the same day: 1990 Project 7 / Grizzly (XC-Pro) moved from 6312 to 6316 SL-PP10. p.10, the XC-Pro page, lists SL-PP10 (stock 33119571, as p.12), and 6312's 1990 start is VeloBase-only.
 - p.16 `SL-CR00-R7U / SL-CR00-R6R / SL-CR00-L`: Existing6306 originally X-1 thumb style, Chroma group and yellow accents, now retitled SL-X102 by 1992 pass. Original has no exact model field; hold likely duplicate.
 - p.16 `CW-XE00`: Existing2002 originally unnumbered XCE crank (50-40-28T,110/74BCD), now CW-XE01 after1992 pass; original has no exact model, hold potential duplicate.
 - p.27 `PL-RA00`: Review edition/code conflict before any change. Existing bare Radius row 1980-1990 has no exact code; catalogue family supports model naming, inspect if photo-only ambiguity matters. Original VeloBase source MODEL field blank, only Radius name, alloy body/cage, steel axle, platform 9/16x20. Exact RA00 identity unresolved; no new RA00 duplicate inserted.
@@ -1548,7 +1548,7 @@ Original model-field recovery is matching corroboration; all applied component c
 
 ### Bike-link follow-through, 2026-11-14 (user approved)
 
-Applied `docs/audits/suntour-1990-links-2026-11-14.sql`. The 1990 catalogue
+The 1990 catalogue
 heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
 - 1990 Bianchi Nyala "SunTour XCT": the front, brake and crank links now go
   to the 1990 rows 11072 FD-XT00-GXH, 11074 CT-XT00 and 11076 CW-XT00. They
@@ -1559,8 +1559,7 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
 - 1989 Bianchi Forte / Volpe "SunTour XCE-4050": front 18615 / 18719 (was 2663)
   and rear 18616 / 18720 (was 4791) are now unlinked. XE01 is the 1992 code
   and XE00 is '90 new; neither is shown to be the 1989 part. Forte crank
-  18618 (was 2002 CW-XE01) was unlinked later the same day on the same reasoning
-  (`docs/audits/suntour-xce-crank-2026-11-14.sql`). CW-XE00 is still held as a
+  18618 (was 2002 CW-XE01) was unlinked later the same day on the same reasoning. CW-XE00 is still held as a
   possible duplicate of 2002, whose VeloBase specimen is unnumbered with 50-40-28
   rings; VeloBase dates the XCE group from 1989.
 - Generator overrides use null / 1990-scoped ranges for these values. The
@@ -1579,18 +1578,16 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   SunTour catalogue lists SVX. 1986 Raleigh Technium 460 "Suntour SVX" (8342) is
   unlinked with a null override for 1986 (no GT printed; short-cage existence
   unknown). The front 8341 -> 2653 FD-4300 SVX is unchanged.
-- SQL: `docs/audits/rear-derailleur-dates-2026-11-14.sql`.
 
 - 2026-11-14 group ownership (user approved): the 1992 Dia-Compe-made XCE parts
   8021 BL-XE01 / 8035 CT-XE01 moved from Dia-Compe-owned group 125 to SunTour 155
   "XCE". XCM 8003 CW-XM01 / 8022 BL-XM01 / 8036 CT-XM01 / 8037 BA-XM00 moved from
   SR-owned 182 to SunTour 240 "XCM". The original groups keep their own brand's rows
-  (703 Dia-Compe XCE, 1770 Sakae XCM). SQL: `docs/audits/group-ownership-2026-11-14.sql`.
+  (703 Dia-Compe XCE, 1770 Sakae XCM).
 
 - 2026-11-14 rear derailleur dedupe (user approved): deleted 4733 "SunTour Cyclone
   (Black Pivot Knuckles)" (VeloBase C0C55FDD-E9C6-48D9-8A76-312E08FC35EF; undated,
   short cage, split-T "SunTour Cyclone" plate, no links). Merged into 4735 5902 /
   RD-1700 Cyclone, whose description now notes the black-knuckle variant. Added a
   Rear Derailleurs 'suntour cyclone' 1986 null override, because without 4733 the
-  1986 Raleigh Supercourse auto-matched 4734 Cyclone 3-Pully (1980). SQL:
-  `docs/audits/rear-derailleur-dedupe-2026-11-14.sql`.
+  1986 Raleigh Supercourse auto-matched 4734 Cyclone 3-Pully (1980).

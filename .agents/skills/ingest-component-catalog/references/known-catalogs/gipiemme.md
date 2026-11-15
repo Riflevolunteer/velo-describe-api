@@ -483,5 +483,4 @@
   "C Record/B Special Gipiemme derailleur"; its front already links 2370, 1970-87).
   The c. 1986-87 catalogue (270) shows no Special derailleur; its absence there was
   not treated as an end date. VeloBase page: inline parallelogram, inner plate
-  "Gipiemme - Licence Simplex", 219 g. SQL:
-  `docs/audits/rear-derailleur-dates-2026-11-14.sql`.
+  "Gipiemme - Licence Simplex", 219 g.

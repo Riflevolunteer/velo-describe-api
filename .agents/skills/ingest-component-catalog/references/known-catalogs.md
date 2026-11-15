@@ -1,9 +1,10 @@
 # Component catalogs processed so far
 
 One entry per catalog: source, what it added or dropped versus the previous
-printing, and exactly which `component_detail` rows changed. All changes
-were applied live via idempotent SQL kept in the session scratchpad; nothing
-in the repo records them except this file and the brand files below.
+printing, and exactly which `component_detail` rows changed. Keep evidence,
+old/new values and validation results in these notes, following the
+[shared quality process](../../audit-data-quality/SKILL.md). Prepared and applied
+SQL stays in the temporary scratchpad and is not retained in the repository.
 
 Split by brand to keep each run's context small — **read only the brand
 file(s) relevant to the catalog you're ingesting**, not all of them:

@@ -2325,8 +2325,7 @@
   Dura-Ace (Black) moved from group 137 "Dura-Ace 7100" to 50 "Dura-Ace", beside
   silver 7427 and the other Black Series rows. The pair stays separate (finish
   variant, decided 2026-10-28). The duplicate classifier now honours that decision
-  even though 7427 has become the survivor through its 1979 Miyata 1200 link. SQL:
-  `docs/audits/dura-ace-black-rd-group-2026-11-14.sql`.
+  even though 7427 has become the survivor through its 1979 Miyata 1200 link.
 
 - 2026-11-14 BMX group review (user approved), completing the follow-up left by
   the 1998 pass. The 1981 BMX rows left Campagnolo-owned group 156 for new Shimano
@@ -2335,7 +2334,7 @@
   7529, 7532, 7533, 7540; 1981). 7540 BL-MX10 is titled "Shimano-BMX" and was
   placed in SX by its MX10 code. 9625 BL-M600-MX -> 327 beside 9626; 7521 SL-2S21
   ungrouped like 7173 SG-2S10. Kept apart from 327, the 1998 DX revival
-  (continuity not shown). SQL: `docs/audits/shimano-bmx-groups-2026-11-14.sql`.
+  (continuity not shown).
 
 
 ## Titlist rear derailleur renumbering merges — 2026-11-15 (user approved)
@@ -2344,7 +2343,7 @@
 - Kept 4437, retitled from "Shimano D600, Titlist" to "Shimano D600 / DB-200, Titlist"; deleted 7100 "Shimano DB-200, Titlist" (source_id `2051eafc-bc3e-11f1-a2df-02fea3763e8d`). Kept specimen source_id `63220FCF-2A4C-4E59-8E7C-AFDCA097103D`.
 - Kept 4438, retitled from "Shimano D610, Titlist G.S." to "Shimano D610 / DB-210, Titlist GS"; deleted 7101 "Shimano DB-210, Titlist GS" (source_id `2051ebce-bc3e-11f1-a2df-02fea3763e8d`). Kept specimen source_id `1F1B4D31-EE12-43DB-9785-2453A431EB15`.
 - Rebuilt search_text; descriptions preserve D601 / D611 without hanger adaptor and add 14T front difference from the December 1974 catalogue. source_ref 65 -> 24. year_to 1974 -> 1976 preserves the combined existing ranges. Both remain 1970-1976: 1970 was a VeloBase decade bucket and 1976 was guessed in the original import; this merge does not establish either production bound. The Spring 1978 old-design parts sheet explicitly calls the item discontinued with replacement parts still available, so it does not extend complete-unit availability.
-- No bike links or generator overrides on any of the four IDs. Later, lighter DB-600 (4440) / DB-610 (7428) kept separate. Applied 2 updates + 2 deletes; readback correct, idempotency rerun 0 affected. SQL and original row values: `docs/audits/shimano-titlist-merges-2026-11-15.sql`. Review scans and specimen HTML/photos: `/private/tmp/titlist-review/`.
+- No bike links or generator overrides on any of the four IDs. Later, lighter DB-600 (4440) / DB-610 (7428) kept separate. Applied 2 updates + 2 deletes; readback correct, idempotency rerun 0 affected. Review scans and specimen HTML/photos: `/private/tmp/titlist-review/`.
 
 
 ## Dura-Ace EX late rear derailleur clarification — 2026-11-15 (user approved)
@@ -2352,7 +2351,7 @@
 - Retitled 4508 from "Shimano Dura-Ace EX - Last version" to "Shimano RD-7200, Dura-Ace EX (late version)"; search_text rebuilt to "Shimano RD-7200 Dura-Ace EX". Replaced the bare description with short-cage friction, 26T maximum sprocket, revised two-part pivot seals, freely rotating cable fittings, curved inner hatch plate and lower pulley spoke protector; retained the 206g measured weight and original VeloBase source_id `B6BF8317-2C6F-4EB4-B3B7-CBDA15F5AA79`.
 - year_from 1984 -> 1983: the Disraeli Gears fourth-style specimen is date-coded HK (November 1983), with matching late construction. Source: https://www.disraeligears.co.uk/site/shimano_dura-ace_ex_7200_4th_style_derailleur.html . This establishes availability by 1983, not an exact production start. Existing year_to 1985 retained, not newly established.
 - source_ref 1 -> 26: Shimano June 1984 dealer catalogue p.24 names RD-7200 and shows the late seals and cage. Also reviewed the separate 334E exploded drawing (indexed as March 1984, printed 8402 / dated February 13). Scans and VeloBase specimen HTML/photos saved in `/private/tmp/dura-ace-ex-review/`.
-- Kept 4509 DA-200 / RD-7200 as the broader 1978-1984 EX record: its VeloBase gallery mixes earlier and later specimens. Its six bike links span 1981-1984 and identify EX without a version; no link or generator override changed. No merge or delete. Applied 1 update; readback correct and idempotency rerun 0. SQL and original values: `docs/audits/dura-ace-ex-late-version-2026-11-15.sql`.
+- Kept 4509 DA-200 / RD-7200 as the broader 1978-1984 EX record: its VeloBase gallery mixes earlier and later specimens. Its six bike links span 1981-1984 and identify EX without a version; no link or generator override changed. No merge or delete. Applied 1 update; readback correct and idempotency rerun 0.
 
 
 ## Ultegra FD-6503 overlap merge — 2026-11-15 (user approved)
@@ -2360,7 +2359,7 @@
 - Merged/deleted 2539 "Shimano Ultegra Tripple" (source_id `EE140C8F-CDCE-4F9E-AE0B-BD31779A6EF9`, source_ref 1, original description "Shimano Ultegra Tripple, Japan", years 1990-1990) into 2538 "Shimano FD-6500 / FD-6503, Ultegra". The specimen is stamped FD-6503 and has a braze-on mount. Its VeloBase dating is actually late 1990s, not 1990.
 - Preserved the combined family established during the 1998 catalogue import; FD-6500 double and FD-6503 triple remain distinct configurations within that family. Updated 2538's description to state FD-6503 triple includes braze-on, preserving the existing FD-6500 double specifications. Retained 1998-1999 dates, source_ref 365, title, search_text and source_id `861EB2DC-F4E5-4020-8664-87199C94AE95`. Discarded the duplicate's 1990 placeholder instead of widening the family to that year.
 - Evidence: original 2539 specimen photos and model field; original 2538 record was FD-6500 double before catalogue expansion; Shimano SI-6C80D-001 lists FD-6500 for double and FD-6503 for triple (https://si.shimano.com/en/pdfs/si/6C80D/SI-6C80D-001-ENG.pdf). Review files: `/private/tmp/shimano-front-duplicates/`.
-- Neither row had bike_spec links or generator overrides. Applied 1 update + 1 delete; readback correct, rerun 0 affected. SQL and original row values: `docs/audits/ultegra-front-merge-2026-11-15.sql`.
+- Neither row had bike_spec links or generator overrides. Applied 1 update + 1 delete; readback correct, rerun 0 affected.
 
 
 ## Titlist front derailleur specimen repair and merge — 2026-11-15 (user approved)
@@ -2369,7 +2368,7 @@
 - Moved VeloBase specimen source_id `7F74795E-4637-4100-950F-3151A1F41DF6` from 2451 to existing 7111 "Shimano EB-100, Titlist". Retired 7111's synthetic `205213ef-bc3e-11f1-a2df-02fea3763e8d`. All 7111 catalogue facts, 1975-1976 years and source_ref 24 retained.
 - Kept 2451 as the catalogue EB-200 row; retitled from "Shimano EB-200, Titlist" to "Shimano EB-200, Uniglide Titlist", rebuilt search_text, and assigned the correct specimen source_id `AB2F52F2-41E5-4D01-8A0C-754E9E021A44` from 2452. Rewrote the description with the distinguishing steel/satin nickel body and cage, alloy clamp, rectangular openings, 14T, 28.6mm and 133g specified / 135g measured. Removed the misplaced 140g spec figure. Retained 1977-1979 years and source_ref 68.
 - Deleted 2452 "Shimano Uniglide Titlist" (old description "Shimano Uniglide Titlist, Japan, 135 grams (Actual)", 1970-1970, source_ref 1) after transferring its specimen and weight. Discarded its 1970 decade bucket. Temporary UUIDs used inside the transaction do not remain in the DB. No bike links or generator overrides on any of the three IDs. Separate E302/E304 row 7376 not merged here.
-- Applied 4 updates + 1 delete; readback correct for both specimen assignments and duplicate removal, rerun 0 affected. SQL and original values: `docs/audits/titlist-front-specimens-2026-11-15.sql`. Specimen HTML/photos: `/private/tmp/shimano-front-duplicates/`; catalogue scans: `/private/tmp/titlist-front-review/`.
+- Applied 4 updates + 1 delete; readback correct for both specimen assignments and duplicate removal, rerun 0 affected. Specimen HTML/photos: `/private/tmp/shimano-front-duplicates/`; catalogue scans: `/private/tmp/titlist-front-review/`.
 
 
 ## Early Titlist front derailleur renumbering merge — 2026-11-15 (user approved)
@@ -2377,7 +2376,7 @@
 - Merged catalogue-only 7376 "Shimano E302, Titlist" into specimen-backed 7111 "Shimano EB-100, Titlist", retitled "Shimano E302 / E304 / EB-100, Titlist" and rebuilt search_text. Preserved specimen source_id `7F74795E-4637-4100-950F-3151A1F41DF6` from the preceding correction. Retired 7376's synthetic source_id `46936e68-bde6-11f1-a2df-02fea3763e8d` (source_ref 271, old years 1972-1974).
 - Renumbering is explicitly inferred, not confirmed by an old-code/new-code factory cross-reference. September 1972 p.4 lists E302 (1in clamp) / E304 (1-1/8in), both lower inlet, alloy body, steel cage, 140g. June 1974 p.10 shows E304; December 1974 / 1975-model p.18 shows the matching round-hole design as EB-100, 16T, 140g, both clamp sizes. February 1973 p.12 lists E304 mechanism 584 9002 and chain guide 584 9003; a matching EB-100 exploded list was not located.
 - Description retains the clamp distinctions, inferred status, and the historical E304 Dura-Ace listing in December 1972 / Titlist from February 1973; notes that June 1974 lists only E304. Source_ref remains 24. year_from 1975 -> 1972 follows the September 1972 catalogue; existing year_to 1976 retained (originally guessed in the 1975 catalogue import, not newly established).
-- Neither row had bike_spec links or generator overrides. Applied 1 update + 1 delete; readback correct, rerun 0 affected. SQL and original values: `docs/audits/titlist-early-front-merge-2026-11-15.sql`. Scans: `/private/tmp/titlist-front-review/`. Later steel-body EB-200 2451 remains separate.
+- Neither row had bike_spec links or generator overrides. Applied 1 update + 1 delete; readback correct, rerun 0 affected. Scans: `/private/tmp/titlist-front-review/`. Later steel-body EB-200 2451 remains separate.
 
 
 ## Thunder Bird front derailleur renumbering merges — 2026-11-15 (user approved)
@@ -2385,4 +2384,4 @@
 - Merged catalogue-only 7377 "Shimano E101, Thunder Bird" (synthetic source_id `469511e8-bde6-11f1-a2df-02fea3763e8d`, 1972-1974, source_ref 60) into specimen-backed 2454, retitled from "Shimano ED-100 Thunder Bird" to "Shimano E101 / E102 / E103 / E104 / ED-100, Thunder Bird". Preserved specimen source_id `6E29EC72-FCEB-46DF-9E51-C7186A4DCC88`; year_from 1975 -> 1972, year_to stays 1975, source_ref stays 24. Description carries steel construction, solid cage, 16T, 190g and every inlet/clamp code.
 - Merged 2455 "Shimano ED-200, Thunder Bird GPO" (source_id `5EF2CB4E-3EF4-4FB4-94FD-68A6C00617AF`, 1975-1975, source_ref 24; its VeloBase image is a catalogue crop) into actual-specimen row 2461. Retitled from "Shimano E111, Thunder Bird G.T.O." to "Shimano E111 / E112 / E113 / E114 / ED-200, Thunder Bird GTO / GPO". Preserved source_id `600877C0-7DBA-4D74-B05B-B09C7BB9EC54`; year_to 1974 -> 1975, year_from stays 1972, source_ref 65 -> 24. Description carries six-hole steel cage, 16T, 185g, fitting codes and GPO name by June 1974.
 - Both renumberings remain explicitly inferred. September 1972 p.4, June 1974 p.11 and December 1974 / 1975-model p.18 show matching construction, weight and fitting choices. Upper inlet: E101/E111 1in, E103/E113 1-1/8in; lower: E102/E112 1in, E104/E114 1-1/8in. Both ED-code families offer all four fittings. The GTO specimen's six-hole cage is already pictured in the 1974 GPO and 1975 ED-200 drawings; VeloBase's five-hole GPO versus six-hole GTO claim does not distinguish these records.
-- Rebuilt both search_text values. No bike links or generator overrides on any of the four IDs. Applied 2 updates + 2 deletes; readback correct and rerun 0 affected. SQL includes original row values: `docs/audits/thunder-bird-front-merges-2026-11-15.sql`. Specimen HTML/photos and 1974 p.11: `/private/tmp/thunder-bird-front-review/`; other scans: `/private/tmp/titlist-front-review/`.
+- Rebuilt both search_text values. No bike links or generator overrides on any of the four IDs. Applied 2 updates + 2 deletes; readback correct and rerun 0 affected. Specimen HTML/photos and 1974 p.11: `/private/tmp/thunder-bird-front-review/`; other scans: `/private/tmp/titlist-front-review/`.

@@ -5,6 +5,11 @@ description: Read a scanned manufacturer component catalog (PDF or a folder of p
 
 # Ingest a component catalog
 
+Use [audit-data-quality](../audit-data-quality/SKILL.md) for the shared baseline,
+evidence, duplicate review, bike-link validation and result-recording process.
+Apply its checks within the requested scope; a listing or read-only review does
+not authorize loading data.
+
 A manufacturer catalog is evidence about components: which part numbers
 existed, what they were called, and which years they were on sale.
 `component_detail` is populated from several sources — a velobase crawl and a
@@ -211,8 +216,10 @@ them). Classify each catalog item as:
 
 ## 4. Apply as idempotent SQL
 
-Write one `.sql` file per catalog in the scratchpad, then
-`node scripts/load-sql.js <file>` and verify with `scripts/db-query.js`.
+Prepare one `.sql` file per catalog in the scratchpad. After review and approval
+of the change set, run `node scripts/load-sql.js <file>` and verify with
+`scripts/db-query.js`. Keep prepared and applied SQL in the temporary scratchpad;
+do not commit audit SQL to the repository.
 
 - `UPDATE ... WHERE component_id = N AND year_to < Y` style guards so a
   re-run is a no-op.
@@ -284,8 +291,9 @@ adjusted, rows deleted/merged and why (include the deleted row's id and
 source_id, so a later catalog that seems to reintroduce it can be recognised
 as the same part), and anything left unresolved. Only read/touch that one
 brand file, not the others — this is what keeps each run's context small.
-Nothing in the repo changes for a catalog, so there is normally nothing to
-commit; the SQL stays in the scratchpad.
+Update `TODO.md` and include the relevant catalogue notes with any code changes
+when committing. Keep SQL, downloads, transcription files and temporary reports
+in the scratchpad; do not retain audit SQL in the repository.
 
 ## Gotchas
 

@@ -714,4 +714,3 @@
   year_from 1989 -> 1987. The 1987 Peugeot (FR) catalogue prints "Simplex Alpha
   T/P" on Bretagne / P 18SA W / Touraine / P 8SA W, which is the row's own T/P
   10071 ref. source_ref stays 59; the description notes the 1987 fitment.
-  SQL: `docs/audits/rear-derailleur-dates-2026-11-14.sql`.

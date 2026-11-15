@@ -316,7 +316,7 @@
   Bianchi page gives no code/weight/casing. User approved clearing spec 1023's
   link and setting the override to null; applied 2026-11-14. Printed spec text
   and source retained; no CSV edit. All other generated/live mappings unchanged;
-  SQL rerun zero. Evidence and applied SQL are in the component Clement notes.
+  SQL rerun zero. Evidence and correction details are in the component Clement notes.
   Do not widen Pistard's dates or guess another track model from this fitment.
 - 1987 PISTA Freewheel "Campagnolo 16T fixed cog": override ranged to 6380
   (763 steel sprocket) up to 1985 and `null` from 1986, so it stays
@@ -475,8 +475,7 @@
   8384 year_from 1991 -> 1990, source_ref 150 -> this source 168; all links
   retained. No CSV/generator changes needed. All 18,472 bike specs unchanged;
   generation across 86 CSVs byte-identical; SQL rerun zero. Source URLs and
-  casing/bead qualification are in the component Ritchey notes; applied SQL is
-  `docs/audits/ritchey-overdrive-2026-11-14.sql`.
+  casing/bead qualification are in the component Ritchey notes.
 
 - Source: https://www.retrobike.co.uk/archive/1990-bianchi-catalogue.1676/
   ("1990 Bianchi Catalogo.pdf", 23 pp, Bianchi USA Inc., South San

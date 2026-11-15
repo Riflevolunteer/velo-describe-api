@@ -2,7 +2,7 @@
 
 ## Ritmo / Raleigh correction — 2026-11-14 (user approved, applied)
 
-- [Applied SQL](../../../../../docs/audits/clement-ritmo-2026-11-14.sql).
+- Applied changes:
   Cleared all three links to 6767, set `clement ritmo tubular` to explicit null,
   and withdrew 6767's unsupported catalogue dates/construction attribution.
   Do not broaden the LTX 55 identity or infer its dates from the plain name.
@@ -48,7 +48,7 @@
 
 ## Pistard / Bianchi Super Pista review — 2026-11-14 (user approved, applied)
 
-- [Applied SQL](../../../../../docs/audits/clement-pistard-2026-11-14.sql): cleared
+- Applied changes: cleared
   spec 1023's unsupported link to 6765 and enriched/corrected Pistard's
   description; retained component dates 1985–88 and source 262. Changed the
   generator's `clement pista tubular` override from 6765 to explicit null.

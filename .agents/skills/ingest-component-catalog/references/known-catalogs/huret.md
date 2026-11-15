@@ -560,5 +560,4 @@ and `/tmp/elysee-sheet-18.jpg`, `-21.jpg`, `-22.jpg`, `-23.jpg`, `-24.jpg`,
   15AB95B3-AA4E-41C1-968A-31796C9789E3 is a specimen with model field 2648 (255 g
   with bolt), so the GUID and the weight moved to 8173. 4302 now has
   a59372f3-e065-11f1-a2df-02fea3763e8d; 8173's previous synthetic id
-  0311fc96-c102-11f1-a2df-02fea3763e8d is retired. SQL:
-  `docs/audits/rear-derailleur-dedupe-2026-11-14.sql`.
+  0311fc96-c102-11f1-a2df-02fea3763e8d is retired.

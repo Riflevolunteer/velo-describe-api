@@ -2,173 +2,19 @@
 
 Cleaned up 2026-10-21, and twice on 2026-10-28: finished work moved to "Done" as one-liners (full notes are in git history and the ingest skills' `known-catalogs/` files), open follow-ups that were buried in Done moved back to Open, stale numbers refreshed. Component TODOs reconciled with live DB, generator and catalogue notes on 2026-11-09. The coverage table below is the current snapshot; dated narrative records earlier decisions. Use live `/linkCoverage` for subsequent counts.
 
-## Database quality process (2026-11-14)
+## Database quality
 
-Use this cycle for each catalogue or focused brand/category review:
-**Audit gaps -> source evidence -> extract -> reconcile -> review SQL -> load ->
-resolve duplicates -> link bikes -> validate -> record results.** Check for duplicates
-before inserting as well as after ingestion. A catalogue job includes its linking
-and validation follow-through; loading component rows alone leaves it unfinished.
+The shared [audit-data-quality skill](.agents/skills/audit-data-quality/SKILL.md)
+contains the catalogue/brand/category quality process, validation rules and
+completion criteria. Both ingest skills use it.
 
-The objective is correct identities, useful descriptions and traceable evidence.
-Row count and link coverage measure progress, but a justified unlinked spec is a
-valid result. Fix wrong existing links before adding speculative new ones.
+Keep this TODO current for every task, including API/client work: follow
+[TODO and scratchpad housekeeping](.agents/skills/audit-data-quality/references/todo-housekeeping.md).
+Planned or approved work stays open until applied and validated.
+Remove task-created temporary files as they become unnecessary and finish cleanup
+after validation; retain what is still needed for unfinished work or review.
 
-### Step-by-step checklist
-
-1. **Choose a bounded problem and take a baseline.** Work on one catalogue,
-   brand or component category. Read its existing catalogue notes and unresolved
-   decisions first. Use live `/linkCoverage?unlinked=N`, read-only DB queries and
-   `scripts/duplicate-report.js` to record the affected rows, links, duplicate
-   candidates and date conflicts. Keep DB counts separate from generated CSV
-   counts, and compare like-for-like scopes before and after.
-
-2. **Classify the gaps before sourcing.** Put each actionable value into one of
-   these buckets so the next action addresses the actual problem:
-
-   | Finding | Next action |
-   | --- | --- |
-   | Suitable component exists, identification supported | Add/fix the link and generator mapping |
-   | Named model has no suitable row | Find a period source, then reconcile/ingest it |
-   | Several variants fit, or dates conflict | Seek the specific code, photo or specification that distinguishes them |
-   | Transcription, label or combined-cell problem | Repair source data/structure before matching |
-   | Generic, maker-only, house part or unresolved either/or | Record why it remains unlinked; revisit when new evidence arrives |
-
-   Prioritise proven errors and missing sources likely to resolve many named
-   specs. For example, one SR mid-1980s catalogue may address bars, stems,
-   seatposts and cranks. Avoid repeating a source hunt already recorded as empty
-   unless there is a new lead.
-
-3. **Source and register the evidence.** Prefer manufacturer catalogues, technical
-   sheets and parts books; use period importer/dealer catalogues and bike
-   catalogues to supplement them. Save the original scan and record its URL or
-   filename, edition, market, stated/estimated year and relevant pages. Check
-   `data_source` and the known-catalogue index before creating another source.
-   Record uncertainty and independent confirmation needed. A source's absence of
-   a part alone does not prove that the part did not exist then.
-
-4. **Extract into a reviewable inventory.** Capture printed maker, model/part
-   number, category, distinguishing specifications, page and evidence notes.
-   Check scans when OCR is uncertain. For bikes, repair CSV quoting, copied cells,
-   labels and combined components; back up the gitignored CSV before editing.
-   Apply the existing road-bike scope rules. Do not turn generic prose into an
-   invented component identity.
-
-5. **Reconcile with the DB before inserting.** Search by maker/category, part
-   number, spelling aliases and specifications, including differently named rows.
-   Classify each item as unchanged, an evidence-backed correction/enrichment, a
-   genuinely new component, a duplicate candidate or unresolved. Keep distinct
-   generations/configurations separate when their identity differs. Review brand,
-   category and group ownership too. A catalogue attests availability; it does
-   not by itself establish manufacture start/end dates. Check existing linked
-   bikes and year-ranged overrides before changing component dates.
-
-6. **Prepare and review the change set.** Follow the component/bike ingest skill
-   for that job. Produce guarded, idempotent SQL with expected affected counts,
-   source references, page evidence and unresolved calls. Capture the affected
-   rows' old values and a restoration plan in SQL comments or catalogue notes
-   before overwrites/merges. Check field
-   lengths, especially the 255-character descriptions. Present new rows,
-   corrections, date moves, merges and links for review; obtain approval before
-   applying the reviewed DB changes under the existing ingest workflow.
-
-7. **Load, then resolve evidence-backed duplicates in the affected scope.** Use
-   `scripts/load-sql.js` and verify actual affected counts. Review duplicates
-   exposed by the new evidence, using `duplicate-report.js --brand=<brand>` or
-   `--category=<category>`, plus `--near` and `--paren` where useful. Reports
-   propose candidates; they do not establish identity. Prefer an existing stable
-   ID when suitable, retain useful descriptions/provenance, and repoint every DB
-   reference and generator override before deleting the redundant row. Record
-   retired IDs/source IDs and why each pair was merged or kept separate. Keep
-   merges in reviewed SQL; do not merge on title similarity alone.
-
-8. **Run the bike-link follow-through.** Recheck unlinked specs for the changed
-   makers/categories after component identities are settled. Match model,
-   generation and distinguishing specifications, not just maker or bend name.
-   Use scoped overrides for decisions the matcher cannot safely make; an exact
-   automatic match may only need its existing NULL link back-filled. Handle
-   corrections to existing wrong links explicitly: normal regeneration fills
-   NULLs and will not overwrite them. Keep ambiguous or compound specs unlinked
-   until evidence or a deliberate spec split resolves them.
-
-9. **Validate the whole change, including existing links.** Compare generated
-   mappings before/after across all loaded CSVs after matcher/alias/split changes;
-   also do this after component additions, renames, merges or date changes that
-   can alter matching. New components can make an older unique match ambiguous.
-   Explain every changed mapping and compare approved mappings with live specs.
-   Check for dangling references, wrong categories/groups, duplicate specs,
-   unexpected row-count changes and date conflicts. Date conflicts are review
-   flags, not automatic errors or permission to widen dates. Re-run SQL to verify
-   zero further changes. If labels/API behaviour changed, check the affected
-   detail response/client display and run the relevant tests.
-
-10. **Record the result and close the loop.** Update the relevant brand's
-    known-catalogue notes (cross-catalog notes for multi-brand work), generator
-    decisions and this TODO. Record added/corrected/merged rows, links added/fixed,
-    unresolved cases with their next evidence needed, validation results and
-    dated coverage counts. For routine changes, keep the evidence/page URLs,
-    old/new values and a short validation result in existing catalogue notes,
-    plus one applied SQL file (currently `docs/audits/`). Update this TODO with
-    status and remaining actions. Downloads, snapshots, diffs and logs stay in
-    the temporary scratchpad; do not create separate per-task reports, manifests
-    or before/after JSON files unless explicitly requested or needed by maintained
-    tooling. Commit relevant code/documentation and feed remaining evidence gaps
-    back into step 1. Complete TODO housekeeping before reporting work finished.
-
-### TODO housekeeping (part of every task)
-
-Keep this file current as work happens, including sourcing, ingestion, linking,
-deduplication and API/client work. Update it when a result or decision is verified;
-do not wait for a separate cleanup session. Planned or approved work remains open
-until it is applied and validated.
-
-- **At the start:** find the existing item and read its latest decision/evidence.
-  Update that item instead of adding a second entry for the same work. If the task
-  is new, add one actionable item under the appropriate Open section.
-- **When work completes:** remove the completed part from Open and add a short,
-  dated outcome under Done, linking to the relevant catalogue notes or committed
-  artifact for detail. For partially completed work, leave only the remaining
-  action in Open and make its status explicit. Distinguish prepared SQL, approved
-  changes, applied DB changes and deployed code where applicable.
-- **When evidence changes a decision:** edit the current worklist and any affected
-  cross-references, source gaps or duplicate candidates. Supersede the old decision
-  explicitly in the detailed notes; preserve enough evidence to explain why it
-  changed. Keep rejected mappings and reviewed non-duplicates recorded so future
-  tasks do not repeat them without new evidence.
-- **When counts change:** refresh the affected category's current summary with
-  verified counts, date and scope. Update the overall coverage snapshot only after
-  re-querying its full scope; do not mix fresh category counts into an older dated
-  table or derive DB totals from generator counts. Label older snapshots as
-  historical and point to the newer affected-category result where needed.
-- **When a follow-up appears:** record the exact unresolved question, affected
-  models/IDs where useful, next action and evidence needed. Record an unsuccessful
-  source hunt with its scope/date and what new lead would justify repeating it.
-  Keep blocked or deferred work visible with its reason.
-- **Before finishing:** search this file for the affected model, component ID,
-  catalogue and task wording. Resolve contradictory current claims and stale
-  "no row"/"unlinked"/"not loaded" statements within the task's scope. Consolidate
-  duplicate open items, check links and Markdown, and include the documentation
-  update with the implementation when committing. No unrelated full-file rewrite
-  is needed.
-- **After a batch:** condense lengthy completed narratives into dated Done entries;
-  keep detailed evidence in the relevant known-catalogue notes. Preserve unresolved
-  questions and deliberate do-not-link decisions. A periodic tidy supplements
-  these per-task updates; it does not replace them.
-
-### Completion criteria and cadence
-
-- **Per catalogue:** changes reviewed/applied, duplicate candidates assessed,
-  affected bike links revisited, existing mappings checked, rerun clean, notes
-  updated, and affected TODO items/counts reconciled. A pass with zero new links
-  can still improve quality.
-- **After a batch of related catalogues:** review the whole affected category
-  for aliases, duplicates, date conflicts and generator/live-DB drift.
-- **Periodically, or after broad matching changes:** run a DB-wide integrity and
-  coverage audit. Keep separate counts for wrong links corrected, supported links
-  added, unresolved identifications, missing source/model rows, duplicate
-  candidates awaiting review and provenance gaps. Show date/scope with each metric.
-
-### Tooling to make this repeatable (not yet implemented)
+## Open: database quality tooling
 
 - [ ] **One read-only quality report:** dangling component/source/group/brand
   references, duplicate bike specs, category/group ownership conflicts, missing
@@ -503,27 +349,21 @@ The 2026-11-09 table above (754 / 931) is historical.
   "SunTour XCE-4050" (18616 / 18720) -> 4791 RD-XE01 (1992 code, known-wrong
   1980 start) versus 11056 RD-XE00 (1990). Check the matching front derailleur,
   shifter and crank links for the same bikes in the same pass.
-  **Applied 2026-11-14:** `docs/audits/suntour-1990-links-2026-11-14.sql`
-  (9 rows, readback checked, rerun 0; also repaired 9692; Rear Derailleur now
+  **Applied 2026-11-14:** (9 rows, readback checked, rerun 0; also repaired 9692; Rear Derailleur now
   792 / 976). User decisions: XCE-4050 front/rear x4 unlinked
   (XCE is '90 new; XE01 is the 1992 code); Nyala rear unlinked (XT00 / XT10
   undistinguished); Nyala front / brake / crank -> 11072 / 11074 / 11076.
-  Forte crank 18618 (was 2002 CW-XE01) unlinked as well, 2026-11-14
-  (`docs/audits/suntour-xce-crank-2026-11-14.sql`).
+  Forte crank 18618 (was 2002 CW-XE01) unlinked as well, 2026-11-14.
   Nyala / Osprey X-Press shifters 7019 / 6999 -> 6305, retitled SL-PP00 (p.15
-  X-Press for X-1 / XCE / XCM / XCT), 2026-11-14
-  (`docs/audits/suntour-x-press-pp00-2026-11-14.sql`).
+  X-Press for X-1 / XCE / XCM / XCT), 2026-11-14.
   Project 7 / Grizzly (XC-Pro) X-Press 6917 / 6938 -> 6316 SL-PP10 (p.10 XC-Pro
-  page; 6312 SL-XP10 is the 1992 code), 2026-11-14
-  (`docs/audits/suntour-x-press-pp10-2026-11-14.sql`).
+  page; 6312 SL-XP10 is the 1992 code), 2026-11-14.
   Generator overrides already edited; diff is exactly these 7 specs. Still open:
-  Group 156 fixed 2026-11-14 (`docs/audits/shimano-bmx-groups-2026-11-14.sql`,
-  user approved): 1981 Shimano BMX rows moved to new Shimano groups 331
+  Group 156 fixed 2026-11-14 (user approved): 1981 Shimano BMX rows moved to new Shimano groups 331
   Shimano-DX (BMX, 1981) x9 and 332 Shimano-SX (BMX, 1981) x7 (7540 BL-MX10
   "Shimano-BMX" in SX by its MX10 code); 9625 BL-M600-MX -> 327 DX (BMX); 7521
   SL-2S21 ungrouped like its SG-2S10 hub. 156 keeps its five Campagnolo rows.
-  The seven other DB-wide group-ownership conflicts were fixed the same day
-  (`docs/audits/group-ownership-2026-11-14.sql`): SunTour XCE 8021 / 8035 -> 155,
+  The seven other DB-wide group-ownership conflicts were fixed the same day: SunTour XCE 8021 / 8035 -> 155,
   XCM 8003 / 8022 / 8036 / 8037 -> 240, Zeus Pista pedals 4056 -> 161. DB-wide
   brand / group-owner mismatches: 0.
 - **Date flags: 67 linked specs outside component dates, on 29 components.**
@@ -534,8 +374,7 @@ The 2026-11-09 table above (754 / 931) is historical.
   "Alpha T/P" x4 (15509/15528/15547/15566), 4264 Gipiemme Special from 1987 Bianchi
   Super Leggera (1190), 4712 Mountech GTL v2 (1985) from 1987 Raleigh Maverick
   (8874) and 4770 SVX GT (1985) from 1986 Raleigh Technium 460 (8342).
-  **Resolved 2026-11-14** (`docs/audits/rear-derailleur-dates-2026-11-14.sql`,
-  user approved): 4561 year_from 1989 -> 1987 (exact T/P ref on 1987 Peugeot);
+  **Resolved 2026-11-14** (user approved): 4561 year_from 1989 -> 1987 (exact T/P ref on 1987 Peugeot);
   4264 year_to 1985 -> 1987 (1987 Bianchi); 8874 Mountech unlinked (RD-4900 /
   RD-5500 / RD-5500 v2 fit, as the Falcon call); 8342 SVX unlinked (only SVX GT
   RD-7400 exists, bike prints no GT). Rear Derailleur now 790 / 976. Linked components missing dates: 4649 SLJ
@@ -547,7 +386,7 @@ The 2026-11-09 table above (754 / 931) is historical.
   variant on 2026-10-28; the flag returned because the 1979 Miyata link made
   7427 the survivor. `duplicate-classify.js` now applies a two-row pair's entry
   whichever row survives (test added); DB-wide merge candidates 0. 4501 moved to
-  group 50 (`docs/audits/dura-ace-black-rd-group-2026-11-14.sql`).
+  group 50.
 - **Triage of the 181 unlinked:** 107 brand-only (75 bare "Simplex"), 15 none /
   fixed gear, 51 actionable, 4 unbranded, 2 generic, 2 either/or. New candidates
   not listed below: 1979 Miyata 310 / 200 "SUN TOUR Seven" (20424 / 20445; 4755
@@ -599,7 +438,7 @@ Miyata Omnium / 912 gearing and GMG shifters do not establish RD-6207 versus RD-
 - **Near-pair follow-up, 2026-11-13:** OMAS 120 S Big Sliding 10681 / 120 D Big Sliding 10682: closed 2026-11-14, kept apart; Guida '96 scan 52 prints both word for word identically (1", 98 g, L. 39.000), only the letter differs. Kept apart and registered: Gipiemme Tecno 724 / M 724 and 416 / M 416 (road / MTB); 716 PRO / C 716 PRO and 416 / C 416 (alloy / carbon rims). No linked specs on these candidates.
 - Bare Gipiemme Sprint bike-spec identification remains ambiguous; keep other Azzurra components separate without independent evidence.
 - Rear derailleur review: verify the later XCD model code (VeloBase says RD-XD00; 1990 catalogue lists RD-XD10 variants). Identify which Rival generation the 17 generic bike specs on 4401 specify. (4302 resolved 2026-11-14: the VeloBase 2648 specimen moved to 8173, see below.)
-- **Rear derailleur dedupe pass, 2026-11-14 (user approved, `docs/audits/rear-derailleur-dedupe-2026-11-14.sql`):** shared-code, code-stripped-name and uncoded-VeloBase-in-coded-row scans of all 945 rows found only labelled versions, cage and finish siblings. Two fixes: the Huret Duopar titanium provenance (VeloBase GUID 15AB95B3, a 2648 specimen with 255 g, moved from 4302 2600 / 2640 to 8173 2648 / 2654; 4302 new UUID; 8173's synthetic 0311fc96-c102-11f1-a2df-02fea3763e8d retired) and 4733 SunTour Cyclone (Black Pivot Knuckles, VeloBase C0C55FDD-E9C6-48D9-8A76-312E08FC35EF) merged into 4735 RD-1700. Rows 945 -> 944. Added a 1986 'suntour cyclone' rear null override to keep the Supercourse decision once the ambiguity went.
+- **Rear derailleur dedupe pass, 2026-11-14 (user approved):** shared-code, code-stripped-name and uncoded-VeloBase-in-coded-row scans of all 945 rows found only labelled versions, cage and finish siblings. Two fixes: the Huret Duopar titanium provenance (VeloBase GUID 15AB95B3, a 2648 specimen with 255 g, moved from 4302 2600 / 2640 to 8173 2648 / 2654; 4302 new UUID; 8173's synthetic 0311fc96-c102-11f1-a2df-02fea3763e8d retired) and 4733 SunTour Cyclone (Black Pivot Knuckles, VeloBase C0C55FDD-E9C6-48D9-8A76-312E08FC35EF) merged into 4735 RD-1700. Rows 945 -> 944. Added a 1986 'suntour cyclone' rear null override to keep the Supercourse decision once the ambiguity went.
 - Front derailleur duplicates, still open (2026-11-02 review):
   - 2652 FD-2000 Superbe Pro's `source_id` 24650D30 is VeloBase's "FD2000 Braze on" page (no photos), but its title and description say endless band; FD-2050 braze-on is 8268. Open: how 8961 AV 62.1 D (now holding the early-1980s VeloBase AV 62.10D) sits with 8488 Rival 1086-00 (1982-87).
   - These kept-apart pairs are now in `REVIEWED_NOT_DUPLICATES` (2026-11-13): 7434 vs 2518 (EA-200 code reuse, shimano.md); 8253 vs 2641 (1976 Seven, own row by decision); 2644 FD-3900-SSH (clamp / endless band) vs 7848 FD-SP00-B (braze-on, same Sprint 9000 front; 2644 could be retitled "Sprint 9000"); 2436 Pilot 3080-00 triple (bright chrome) vs 2443 Hi-Stepper 3080-00 S (satin cage, ATB); 2367 Cronospecial 800AS vs 9516 Crono Special 802 AE (Selectron); 2365 Azzurra (Simplex-made) vs 9854 Azzurro SB 802; 2295 0104007 4-hole vs 2300 3-hole; 2439 ARIS New Success vs 8960 AV 66.3 D (year-ranged on purpose); 2484 EF-100 / FD-AT11 (1979) vs 7721 FD-AT10 / FD-AT11 (1993), code reuse. Also closed from source photos: keep 2584 Prestige Senior apart from 2583 Criterium (moulded mounting body versus metal mounting clamp). Still open: 2457 FD-A350 (photo exists, model inscription not established); 2377 Challenger (photo exists, bolt-on clamp; compare numbered Challenger versions); 2442 AV 62.10 Avant (two VeloBase photos recovered, replacing the earlier "no data" note; exact relationship to Rival still unproven).
@@ -725,6 +564,17 @@ Review evidence and proposed actions: `/private/tmp/existing-source-review/revie
 
 ## Done
 
+- **2026-11-15 Scratchpad housekeeping:** added cleanup during work and after
+  validation, with pending-review/resume files retained only while needed. Added
+  a root `AGENTS.md` reminder so housekeeping applies to all repository work.
+- **2026-11-15 Database quality skill:** moved the shared process and TODO
+  housekeeping into [audit-data-quality](.agents/skills/audit-data-quality/SKILL.md),
+  and linked both ingest skills. Quality tooling remains open above.
+- **2026-11-15 Audit SQL cleanup:** removed the 20 repository audit SQL files
+  and their links. Prepared and applied SQL stays in the temporary scratchpad;
+  catalogue notes retain evidence, decisions and validation results. Updated the
+  skills and ignore rules accordingly.
+
 - **2026-11-14 Guida '96 close-name / duplicate review (user approved):** checked
   all 20 pass-2 flags against the scans (plus Guida '99 seat posts). Split three
   wrong matches: new 11172 Ritchey Logic Road crank (1721 restored to the
@@ -734,35 +584,30 @@ Review evidence and proposed actions: `/private/tmp/existing-source-review/revie
   6898. Thirteen matches confirmed; Category One/Pro, Disc T/Disc, FRM
   Ergal/Pro-Feather kept apart as probable renames. Links unchanged (generation
   6510 across 86 CSVs, byte-identical; live specs identical); rerun zero;
-  `npm test` passes. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md),
-  [SQL](docs/audits/guida96-close-name-2026-11-14.sql).
+  `npm test` passes. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md).
 
 - **2026-11-14 Clement Ritmo correction applied (user approved):** cleared
   specs 4536 / 4621 / 4669 -> 6767 and blocked regeneration. LTX 55 dates now
   unknown; unsupported construction removed; photographic source 1 restored.
   Coverage 234/973, date flags 4 -> 3; all 86 CSVs and live spec/component
   snapshots checked, only approved fields changed; rerun zero.
-  [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/clement.md),
-  [SQL](docs/audits/clement-ritmo-2026-11-14.sql).
+  [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/clement.md).
 
 - **2026-11-14 Clement Pistard correction applied (user approved):** cleared
   spec 1023 -> 6765 and set generator override to null; dates retained 1985–88.
   Description corrected/enriched from both guides (250 g; tube details by year).
   Coverage 237/973, date flags 5 -> 4; only intended generated/live link changed;
-  rerun zero. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/clement.md),
-  [SQL](docs/audits/clement-pistard-2026-11-14.sql).
+  rerun zero. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/clement.md).
 
 - **2026-11-14 Ritchey OverDrive correction applied (user approved):** 8384
   year_from 1991 -> 1990, source 150 -> 168 from Bianchi's dated catalogue.
   Tyre flags 10 -> 5; links unchanged; regeneration/rerun clean.
-  [Evidence/validation](.agents/skills/ingest-component-catalog/references/known-catalogs/ritchey.md),
-  [SQL](docs/audits/ritchey-overdrive-2026-11-14.sql).
+  [Evidence/validation](.agents/skills/ingest-component-catalog/references/known-catalogs/ritchey.md).
 
 - **2026-11-14 Michelin corrections applied (user approved):** five component
   date/provenance corrections and Mont Cenis spec 15681 70C -> 20C in DB/CSV/
   override. Tyre flags 36 -> 10; coverage 238/973; regeneration/rerun clean.
-  [Evidence/qualification/validation](.agents/skills/ingest-component-catalog/references/known-catalogs/michelin.md),
-  [SQL](docs/audits/michelin-2026-11-14.sql).
+  [Evidence/qualification/validation](.agents/skills/ingest-component-catalog/references/known-catalogs/michelin.md).
 
 - **2026-11-14 tyre step 1 audit (read-only):** 238/973 linked (24.5%), 735
   unlinked, 601 components. No broken component/source references, wrong linked

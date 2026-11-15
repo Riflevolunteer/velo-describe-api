@@ -334,4 +334,4 @@ doesn't match the existing double-ring "w/ Ciclo-Cross Chainguard" rows).
 
 - 2026-11-14 group ownership (user approved): 4056 Zeus Pista pedals moved from
   Stronglight-owned group 250 "Pista" to Zeus 161 "Pista" (with the 5711 saddle and
-  1342 chainring bolts). SQL: `docs/audits/group-ownership-2026-11-14.sql`.
+  1342 chainring bolts).

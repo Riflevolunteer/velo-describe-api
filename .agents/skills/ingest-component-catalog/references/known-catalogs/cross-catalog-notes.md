@@ -842,7 +842,7 @@ Weinmann 1129 / 1130 570.
     Disc T vs 10360 Corima Disc; FRM Alu-Ergal / Carbon-Ergal front hubs vs 10303 Pro / 10305 Feather; FRM Ergal
     post vs 10161 Arretrato; Mavic "CXP Titane SUP UB Control" (probably CXP 30 Titane); OMAS 120 S / 120 D Big
     Sliding (identical specs); Ofmega Mistral SQ vs 93 Mistral.
-  - **Both lists above reviewed 2026-11-14 against the scans** (user approved; [SQL](../../../../../docs/audits/guida96-close-name-2026-11-14.sql)).
+  - **Both lists above reviewed 2026-11-14 against the scans** (user approved).
     Printed page = scan + 103. **Split (wrong matches):** "RITCHEY Logic Road" crank (scan 29: 39-53, 590 g) -> new
     11172; 1721 restored to the 1991-92 MTB Logic triple (year_to 1992, source 150, ritchey.md text). "MICHE Primato"
     round post (scan 13: 325 g, length misprinted "23 mm"; Guida '99 p.101: 235 mm, 315 g) -> new 11173 (1996-99,

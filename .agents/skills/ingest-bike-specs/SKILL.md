@@ -5,6 +5,11 @@ description: Ingest a vintage bike catalog spec CSV from bike_specs/ into the bi
 
 # Ingest bike specs
 
+Use [audit-data-quality](../audit-data-quality/SKILL.md) for the shared baseline,
+evidence, duplicate review, bike-link validation and result-recording process.
+Apply its checks within the requested scope; a listing or read-only review does
+not authorize loading data.
+
 Turns one catalog CSV into idempotent SQL, gets it reviewed, then loads it. The
 generator (`scripts/generate-bike-update-sql.js`) does the mechanical work; the
 value you add is catching bad source data before it's loaded and deciding which
@@ -240,11 +245,15 @@ file run through `load-sql.js`, then regenerate and load:
   it's a matcher/generator fix spanning brands) — see
   `references/known-catalogs.md` for the index.
 
-### 6. Commit
+### 6. Record and commit
 
-Commit generator changes (overrides, aliases, splits, ignore list) with a
-message that names the catalog and the notable mappings. CSV repairs can't be
-committed; describe them in the message so the reasoning survives.
+Complete the shared quality skill's validation and TODO housekeeping. Record the
+repairs, evidence and link decisions in the relevant known-catalogue notes. Keep
+prepared and applied SQL in the temporary scratchpad; do not commit audit SQL.
+Include the notes, TODO updates and generator changes (overrides, aliases, splits,
+ignore list) when committing, with a message naming
+the catalog and notable mappings. CSV repairs can't be committed; describe them
+in the notes and message so the reasoning survives.
 
 ## Reference
 

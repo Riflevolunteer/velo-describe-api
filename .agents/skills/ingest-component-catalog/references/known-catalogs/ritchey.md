@@ -7,11 +7,10 @@
   overwritten its description. Split: new **11172 Ritchey Logic Road**
   (Cranksets, 1996, source 357); 1721 Logic Crankset restored to 1991-1992,
   source 150, MTB triple text below. No bike links on either.
-  [SQL](../../../../../docs/audits/guida96-close-name-2026-11-14.sql).
 
 ## OverDrive 1990 Bianchi fitment review — 2026-11-14 (user approved, applied)
 
-- [Applied SQL](../../../../../docs/audits/ritchey-overdrive-2026-11-14.sql).
+- Applied changes:
   Applied 8384 MegaBite OverDrive year_from 1991 -> 1990 and source_ref
   150 -> 168; retained year_to 1992 and all eight bike links. One row affected;
   SQL rerun zero. All 18,472 bike specs unchanged; full generation across 86

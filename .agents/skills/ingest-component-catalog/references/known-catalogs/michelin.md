@@ -2,7 +2,7 @@
 
 ## Bike-catalogue date-conflict review — 2026-11-14 (user approved, applied)
 
-- [Applied SQL with previous values](../../../../../docs/audits/michelin-2026-11-14.sql):
+- Applied changes:
   five component UPDATEs and one spec UPDATE; rerun affected zero rows.
 - Applied: 9498 Hi-Lite Road / 6836 Hi-Lite Pro / 9499 Super Elan year_from
   1988 -> 1986; 6830 BIB TS-20 year_to 1985 -> 1989; 6826 Select year_from
