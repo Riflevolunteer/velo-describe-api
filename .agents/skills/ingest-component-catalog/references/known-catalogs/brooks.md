@@ -39,7 +39,10 @@
 - No Brooks catalogue for 1960-2011 was found. The labibleduvelocataloguesbrooks
   blog's links (cdn.brooksengland.com 1926, 1933, 1935, 1957, 2012-2015 PDFs)
   are dead (Brooks moved to Shopify). ebykr has Brooks catalogues 1890-1938,
-  adverts 1947-59 and a one-page Bikecology 1981 retailer sheet.
+  adverts 1947-59 and a one-page Bikecology 1981 retailer sheet. Rechecked
+  2026-11-15: still no 1960-90 source. saddlewax.com once posted a 1971 Brooks
+  price list and a 1973 Raleigh saddle catalogue, but only thumbnails survive on
+  Wayback and the site is gone (see TODO source hunts for the dead ends).
 
 ## Brooks "Cycle Saddles" leaflet — 1959 (bulgier.net, data_source 243)
 
