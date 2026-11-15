@@ -5,6 +5,8 @@
 // `node scripts/validate-ebay-categories.js` before changing anything here:
 // Browse silently ignores a category id that isn't in the marketplace's tree,
 // so a stale id would quietly turn a narrow search into an unfiltered one.
+// Browse also accepts only one `category_ids` value per call, and Vintage
+// Cycling (158999 / 56197) exists only on the US tree, so it is not used here.
 
 // Sporting Goods > Cycling > Bicycle Components & Parts
 const BICYCLE_PARTS = '57262'

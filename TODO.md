@@ -1,6 +1,6 @@
 # TODO
 
-Open work and unresolved questions only. Lasting evidence and decisions belong in the existing catalogue or project notes; Git history records committed task history. The coverage table is a dated 2026-11-09 snapshot. Use live `/linkCoverage` for current counts.
+Open work and unresolved questions only. Lasting evidence and decisions belong in the existing catalogue or project notes; Git history records committed task history. Use live `/linkCoverage` for current link counts.
 
 ## Database quality
 
@@ -19,9 +19,17 @@ after validation; retain what is still needed for unfinished work or review.
 - [ ] **Reusable generator/live-DB comparison:** replace scratchpad-only scripts
   with a maintained command showing links gained, lost or changed per spec,
   scoped to already-loaded catalogues and preserving the current generated file.
-- [ ] **Persist link decisions and evidence:** implement the existing link-status
-  follow-up below so confirmed, inferred, ambiguous, missing-source and
-  intentionally unlinked cases can be distinguished and revisited deliberately.
+- [ ] **Persist link decisions and evidence:** distinguish confirmed, inferred,
+  ambiguous, missing-source and intentionally unlinked cases so they can be
+  revisited deliberately. Today `COMPONENT_OVERRIDES` `null` entries live only in
+  the generator, so decided values (e.g. "Selle Royal Aero Black") still list as
+  actionable in `/linkCoverage`. Leaning towards a nullable `bike_spec.link_status`
+  the generator writes.
+- [ ] **Next step per actionable value in `/linkCoverage`:** count
+  `component_detail` rows for the detected brand in that category sharing the
+  model word; >= 1 -> `next: "override"` with up to 3 candidates, 0 ->
+  `next: "source_hunt"`. Compare brand and model text with spaces stripped:
+  "LePree" / "Le Pree" (SunTour) made the LePree shifters look like a source gap.
 - [ ] **Multiple evidence references per component:** design a component/source
   evidence table with page, supported facts and uncertainty. Current `source_ref`
   records the last source that changed a component; it cannot retain every
@@ -30,7 +38,6 @@ after validation; retain what is still needed for unfinished work or review.
 ## Open: API and client
 
 - **Catalogue country follow-ups**: show country in the client (`velo-describe`) when two rows collide; optionally split the Peugeot 1971-74 CSVs per country (each mixes Dutch and French pages, currently set to FR). Inferred values (not stated by the source): Raleigh 1985, Motobecane 1974/75, Zeus 1973, Bianchi 1983/84. Decided 2026-10-30: keep the ISO country code for non-national editions (export catalogues, Dutch-language Belgian editions); the edition goes in the data_source label.
-- **Show the data source in the client** at the bottom of bike spec and component views. Render the `source_label` and `source_type` fields from `/bikedetail` and `/componentdetail`. 85% of components are `source_type = 'velobase'`, so consider showing catalogue sources only. Possible follow-up: on component pages list the catalogues whose bikes fitted the part (`bike_spec` -> `bike` -> `data_source`).
 - **Bike images** (plan only, nothing built):
   1. per catalogue, crop each bike's picture from the page scans, name `<brand>_<model>_<year>.webp` (slugified, `_2` suffix for repeats), webp at quality ~80, long edge capped ~1200px (maybe a ~400px thumbnail)
   2. upload to S3 behind CloudFront (not a public bucket), keys `bikes/<file>.webp`, idempotent; decide with `provision-ec2.sh` / `deploy.sh`
@@ -38,7 +45,6 @@ after validation; retain what is still needed for unfinished work or review.
   4. return `image_url` from `/bikedetail` and the list endpoints
   5. client: `expo-image` on the detail screen, no image when null (needs a store build, so keep it optional)
   - Open: copyright for scanned pictures (show `source_label` at minimum, consider only publishing images from sources that allow it); cropping method (by hand, script, or Claude returning boxes); pilot on one small catalogue (Cinelli or De Rosa) before the 130-bike Bianchi set.
-- **eBay category ladder follow-ups** (client already sends `componentId` and `region`): (a) inspect search results and check `getTopListings ... rung=` log lines per category and marketplace, and settle the Shifting Brake Levers (177824 vs 100245) and Single Sprockets (177809 vs 177811) judgement calls; (b) run `scripts/validate-ebay-categories.js` weekly via GitHub Actions (cron + `workflow_dispatch`, Node 20, secrets `MARKETPLACE_URL`, `MARKETPLACE_CLIENT_ID`, `MARKETPLACE_CLIENT_SECRET`, `MARKETPLACE_DEVID`; no DB needed; note scheduled workflows are disabled after 60 days without repo activity). Key facts to keep: tyres, tubes and wheelsets sit under 185023, not 57262; Vintage Cycling 158999 / 56197 exist only on the US tree; Browse accepts one `category_ids` value and silently ignores ids not in that marketplace's tree.
 
 ## Open: bikes to load
 
@@ -89,38 +95,9 @@ after validation; retain what is still needed for unfinished work or review.
 
 ## Open: link coverage (bike_spec -> component_id)
 
-**Live DB snapshot, 2026-11-09: 6,110 / 13,417 linkable specs (45.5%).** This uses the same non-linkable-label exclusions as `/linkCoverage`; it is a DB count, not the generator's CSV-only count. Brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
-
-| Spec category | Linked | Total | Coverage |
-| --- | ---: | ---: | ---: |
-| Bottom Bracket | 7 | 15 | 46.7% |
-| Brake Levers | 132 | 321 | 41.1% |
-| Brakes | 637 | 1013 | 62.9% |
-| Cassette | 42 | 45 | 93.3% |
-| Chain | 327 | 600 | 54.5% |
-| Crankset | 444 | 997 | 44.5% |
-| Freewheel | 332 | 845 | 39.3% |
-| Front Derailleur | 733 | 895 | 81.9% |
-| Handlebars | 220 | 914 | 24.1% |
-| Headset | 243 | 564 | 43.1% |
-| Hubs | 387 | 796 | 48.6% |
-| Pedals | 386 | 887 | 43.5% |
-| Rear Derailleur | 754 | 931 | 81.0% |
-| Rims | 284 | 939 | 30.2% |
-| Saddle | 284 | 861 | 33.0% |
-| Seatpost | 219 | 728 | 30.1% |
-| Shifters | 162 | 340 | 47.6% |
-| Stem | 283 | 793 | 35.7% |
-| Tyres | 234 | 933 | 25.1% |
+Brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
 Counts in older dated pass descriptions below are historical. The worklists have been reconciled against completed work and current records; remaining source/variant questions are still open. `/linkCoverage?unlinked=N` is the live worklist.
-
-### Tooling
-
-- **Next step per actionable value** (add to `/linkCoverage`): count `component_detail` rows for the detected brand in that category sharing the model word; >= 1 -> `next: "override"` with up to 3 candidates, 0 -> `next: "source_hunt"`.
-- **Persist do-not-link decisions**: `COMPONENT_OVERRIDES` `null` entries live only in the generator, so values decided on (e.g. "Selle Royal Aero Black") still list as actionable. Leaning towards a nullable `bike_spec.link_status` the generator writes.
-- The generic word list is a judgement call: check the unbranded bucket now and then for words to add.
-- Brand spellings split across rows hide candidates: "LePree" / "Le Pree" (SunTour) made the LePree shifters look like a source gap. A candidate search should compare with spaces stripped.
 
 ### Open after the 2026-11-01 passes
 
@@ -220,8 +197,7 @@ Whole Handlebars label, all bike years; older dated snapshots below are historic
 **Current tyre-only snapshot, 2026-11-15: 237 / 1,074 linked (22.1%); 837 unlinked; 614 tyre components.**
 Fresh live DB counts after Ritchey 2000 (14 tyre additions, zero link changes);
 changes since the previous snapshot also include intervening work.
-The 2026-11-14 snapshot (234/973 linked, 739 unlinked, 601 components) and the
-2026-11-09 whole-DB table above are historical. The initial step 1 audit was
+The 2026-11-14 snapshot (234/973 linked, 739 unlinked, 601 components) is historical. The initial step 1 audit was
 read-only at 2026-11-14 17:56 UTC; Michelin, OverDrive, Pistard and Ritmo corrections
 followed that day. Remaining date-review work below retains its 2026-11-14 audit
 scope; evidence and validation live in the relevant catalogue notes.
@@ -346,7 +322,6 @@ identification. Evidence and validation are in the Huret notes.
 **Historical step 1 audit, 2026-11-14 18:57 UTC (read-only): 795 / 976 linked (81.5%); 181
 unlinked; 945 Rear Derailleur components, 180 used.** No DB or generator changes.
 Scratch snapshot/analysis: `/private/tmp/claude-501/-Users-acooper-dev-velo-describe-api/2cfb9527-8f37-4ca2-89ea-5d23d93dca07/scratchpad/rd-audit/`.
-The 2026-11-09 table above (754 / 931) is historical.
 
 - **Structural baseline:** no dangling component/source/group references, wrong
   linked categories or exact duplicate specs. Two defects to fix:

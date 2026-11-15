@@ -19,6 +19,8 @@
 
 // Materials, finishes, part nouns and catalogue boilerplate. A value made only
 // of these (plus brands and sizes) names nothing more specific than its maker.
+// The list is a judgement call: check the `unbranded` bucket now and then for
+// words that belong here.
 const GENERIC_WORDS = new Set(`
   alloy alloys alu aluminium aluminum dural duralumin duralinox light lightweight steel chrome chromed
   plated cp nickel stainless cromo chromoly crmo black silver white gold grey gray red blue brown green anodised
