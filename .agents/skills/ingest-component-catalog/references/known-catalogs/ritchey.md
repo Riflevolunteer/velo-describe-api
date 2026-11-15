@@ -232,3 +232,193 @@
   Sport, FD seatposts, Logic headset/saddle (all absent here, present in
   1991 as established lines — so 1989 or 1990); whether the 1988 "Alloy
   Bulge Bar" is 8406.
+
+## Component catalogue (2000) — applied 2026-11-15, source 411
+
+- Source: https://bikalog.org/api/view/Ritchey/2000/ritchey00.pdf. Twelve PDF
+  sheets, generally two original pages per sheet; cover explicitly says 2000.
+  English international edition; no specific market established (country NULL).
+  Scan has cover then printed p.4, pp.5–8, 10–17, 20–25, 28–29 and back cover.
+  Printed pp.2–3, 9, 18–19 and 26–27 are absent; some bottom tables are cropped.
+  No road-tyre or road-cockpit offerings inferred from missing pages.
+- Inventory: 64 visible component offerings/configurations, with no manufacturer
+  part numbers. Frames, tubing, forks, grips/bar ends, pads, cleats, spokes,
+  QR hardware and rim tape have no suitable component category and are excluded.
+  The 2x9 Pro Race Kit is a shifter/conversion kit; compact cranks are explicitly
+  sold separately, so it is not inserted as a complete crankset.
+- **Applied:** 57 new rows (11250–11306), three existing-row updates, source 411 and
+  three category-brand associations (252/13 Hubs, 252/14 Pedals, 252/19 Shifters).
+  No deletes, merges, bike writes, group additions or matcher changes. All new
+  group IDs remain NULL, consistent with existing Ritchey rows. Hubs/pedals
+  already have 1999 components but lacked those category-brand associations.
+- Source label: `Ritchey component catalogue (2000)`. All 60 affected rows
+  reference source 411. Ritchey component count increased from 71 to 128.
+
+### Existing rows updated
+
+| ID | Printed page | Change | Dates before -> applied |
+|---|---|---|---|
+| 8390 Tom Slick | 7 | Add 26x1.0 Pro/Comp 340/375 g, retain 26x1.4 360/450 g; preserve earlier 700x38c and casing data | 1991–1999 -> 1991–2000 |
+| 10386 Wing Pro | 24 | Add Wing crossbrace/shock absorption and gel details; 2000 weight 260 g, preserve 1999 listing 230 g explicitly | 1999–1999 -> 1999–2000 |
+| 10340 Logic WCS Road | 17 | Retitle `Ritchey Road WCS pedals`, regenerate search text; DSR, 5-degree float, needle bearings, low 7 mm axle-centre distance, MTB-cleat compatibility; 2000 238 g vs 1999 235 g | 1999–1999 -> 1999–2000 |
+
+- All three changed source 353 -> 411 and have no live bike links. No year_from moves.
+  Catalogue weight changes are specification listings, not new measurements.
+- Original 8390 description: `Smooth-rolling slick for MTB or road with inverted
+  wedge cuts, VFA technology. 26x1.4 450g (60/66 tpi), 26x1.4 Kevlar 360g
+  (127 tpi), 700x38c 450g (60 tpi).` Title/search text `Ritchey Tom Slick`.
+- Original 10386 description: `Cover: black leather; shell: nylon; rails:
+  manganese steel; padding: differentiated-density polyurethane; colour:
+  black; 230g`. Title/search text `Ritchey Wing Pro`.
+- Original 10340 title/search text `Ritchey Logic WCS Road`, description
+  `Forged polished aluminium body, CrMo axle; 235g`. IDs, UUIDs, brand,
+  category and group of all existing rows remain unchanged. Original ranges are
+  in the table above; their previous source_ref was 353.
+
+### New identities and generation decisions
+
+| Category | New rows | Printed pages / scope |
+|---|---|---|
+| Tyres | 14 | 4–7, 10: Z-Max Millennium, Z.E.D., SpeedMax and Alpha/Omega MTB variants, SpeedMax Cross, Max Cross, AlphaBite Trailmix, MudMax, AlphaBite, BMX Alpha/Omega, Black Mamba, BMX Z-Max |
+| Wheel(sets) | 3 | 11: Zero Mountain WCS/Pro and visible Zero Road WCS; no unseen cropped row reconstructed |
+| Hubs | 5 | 12–13: Disc Z-Hub Pro, Mountain WCS/Pro, Road WCS/Pro |
+| Rims | 10 | 14–15: OCR/Rock Mountain WCS/Pro/Comp, OCR Pro/Rock Pro/OCR Comp 700, Disc-OCR |
+| Brakes | 1 | 16: Linear Logic Pro, 184 g |
+| Pedals | 2 | 17: Comp V2, 360 g; Pro Mountain, 310 g |
+| Handlebars | 5 | 20: 5-degree Mountain WCS/Pro/Comp and Rizer Pro/HD |
+| Stems | 3 | 20–21: threadless alloy Mountain Pro/Comp and Fatbone |
+| Headsets | 6 | 22–23: Logic WCS cartridge, Scuzzy Logic Pro/Comp, Logic Pro/Comp threadless, Logic Threaded |
+| Saddles | 2 | 24: Wing WCS (vanadium, 240 g) and Wing Comp (steel, vinyl/Kevlar, 300 g) |
+| Seat Posts | 3 | 24: Pro/Comp Mountain and Pro Road |
+| Cranksets | 2 | 25: V-Pro 104/64 PCD, 633 g; Logic Compact Mountain 94/58 PCD, 625 g |
+| Shifters | 1 | 25: 2x9 Racing System Pro Race Kit, with rings/cog/lockring/grips; crank not included |
+
+- All new ranges are 2000–2000, except base SpeedMax **1996–2000**, since p.5
+  explicitly dates its introduction to 1996. No earlier date is inferred for
+  Alpha/Omega or BMX designs from that statement. These are attestations,
+  not manufacture start/end boundaries.
+- Z-Max Millennium is kept as a separately marketed anniversary offering from
+  the early MegaBite Z-Max 8382, with its own WCS/Pro/Comp specifications. BMX
+  wheel-size offerings are kept distinct. No automatic 8382 date widening or
+  inference of a 1990 introduction from “10th anniversary”; prior 1991 evidence
+  and early tyre specifications remain intact. The WCS marketing text mentions
+  carbon fibre and reinforced-Kevlar blue-coated casing; it does not establish
+  cotton casing or a carbon-fibre bead, so neither claim is added.
+- The 2000 5-degree flat bars differ from the earlier ProLite/ForceLite/Force FD
+  4/6/9-degree offerings. New Pro uses 2014-T6, not the early EA70 ProLite alloy.
+  Threadless removable-faceplate alloy stems are distinct from the old chromoly
+  quill FD/Comp stems. New post lengths/tiers are not assigned to the old
+  210/240/300/330 mm generic FD rows.
+- The modern threaded Logic has 5/32-inch upper balls and 35 mm stack, whereas
+  older 3078/8417 have 1/8-inch upper balls and 33 mm stack. Cartridge Logic WCS
+  differs from 10403/10404's older ball/roller WCS constructions. Do not merge
+  merely on Logic/WCS branding.
+- New Z-Hubs have named Mountain/Road/Disc identities and specified 6061 flanges,
+  unlike the generic 1999 WCS rows with 7075 flanges and differing weights/axles.
+  Keep these constructions separate. Mountain OLD is printed 100/136 mm;
+  do not silently turn 136 into 135. Pro Road seatpost table lists diameter
+  27.2 mm but references weight at 27.0; no additional diameter is inferred.
+- Disc-OCR is positively identified by its heading, disc use, reversible
+  orientation and anti-pinch lip. Its suspect Pro Aero/622-14/rear table is not
+  used to assign dimensions, weight or a Pro Aero model identity.
+
+### Applied new component IDs
+
+All rows below use source 411 and group NULL; ranges are 2000–2000 except
+SpeedMax 11252, whose range is 1996–2000. Pages refer to printed pagination.
+
+| ID | Category | Page | Title |
+|---|---|---|---|
+| 11250 | Tyres | 4 | Ritchey Z-Max Millennium |
+| 11251 | Tyres | 4 | Ritchey Z.E.D. |
+| 11252 | Tyres | 5 | Ritchey SpeedMax |
+| 11253 | Tyres | 5 | Ritchey SpeedMax Alpha (MTB) |
+| 11254 | Tyres | 5 | Ritchey SpeedMax Omega (MTB) |
+| 11255 | Tyres | 6 | Ritchey SpeedMax Cross |
+| 11256 | Tyres | 6 | Ritchey Max Cross |
+| 11257 | Tyres | 6 | Ritchey AlphaBite Trailmix |
+| 11258 | Tyres | 7 | Ritchey MudMax |
+| 11259 | Tyres | 7 | Ritchey AlphaBite |
+| 11260 | Tyres | 10 | Ritchey SpeedMax Alpha (BMX) |
+| 11261 | Tyres | 10 | Ritchey SpeedMax Omega (BMX) |
+| 11262 | Tyres | 10 | Ritchey Black Mamba |
+| 11263 | Tyres | 10 | Ritchey Z-Max BMX |
+| 11264 | Wheel(sets) | 11 | Ritchey Zero Mountain WCS |
+| 11265 | Wheel(sets) | 11 | Ritchey Zero Mountain Pro |
+| 11266 | Wheel(sets) | 11 | Ritchey Zero Road WCS |
+| 11267 | Hubs | 12 | Ritchey Disc Z-Hub Pro |
+| 11268 | Hubs | 13 | Ritchey Z-Hub Mountain WCS |
+| 11269 | Hubs | 13 | Ritchey Z-Hub Mountain Pro |
+| 11270 | Hubs | 13 | Ritchey Z-Hub Road WCS |
+| 11271 | Hubs | 13 | Ritchey Z-Hub Road Pro |
+| 11272 | Rims | 14 | Ritchey Mountain OCR WCS |
+| 11273 | Rims | 14 | Ritchey Mountain Rock WCS |
+| 11274 | Rims | 14 | Ritchey Mountain OCR Pro |
+| 11275 | Rims | 14 | Ritchey Mountain Rock Pro |
+| 11276 | Rims | 14 | Ritchey Mountain OCR Comp |
+| 11277 | Rims | 14 | Ritchey Mountain Rock Comp |
+| 11278 | Rims | 15 | Ritchey Disc-OCR |
+| 11279 | Rims | 15 | Ritchey OCR Pro 700 |
+| 11280 | Rims | 15 | Ritchey Rock Pro 700 |
+| 11281 | Rims | 15 | Ritchey OCR Comp 700 |
+| 11282 | Brakes | 16 | Ritchey Linear Logic Pro |
+| 11283 | Pedals | 17 | Ritchey Comp V2 |
+| 11284 | Pedals | 17 | Ritchey Pro Mountain |
+| 11285 | Handlebars | 20 | Ritchey WCS Mountain Bar (5 degree) |
+| 11286 | Handlebars | 20 | Ritchey Pro Mountain Bar (5 degree) |
+| 11287 | Handlebars | 20 | Ritchey Comp Mountain Bar (5 degree) |
+| 11288 | Handlebars | 20 | Ritchey Rizer Bar Pro |
+| 11289 | Handlebars | 20 | Ritchey Rizer Bar HD |
+| 11290 | Stems | 20 | Ritchey Mountain Stem Pro |
+| 11291 | Stems | 20 | Ritchey Mountain Stem Comp |
+| 11292 | Stems | 21 | Ritchey Fatbone Mountain Stem |
+| 11293 | Headsets | 22 | Ritchey Logic WCS (cartridge) |
+| 11294 | Headsets | 22 | Ritchey Scuzzy Logic Pro |
+| 11295 | Headsets | 22 | Ritchey Scuzzy Logic Comp |
+| 11296 | Headsets | 23 | Ritchey Logic Pro (threadless) |
+| 11297 | Headsets | 23 | Ritchey Logic Comp (threadless) |
+| 11298 | Headsets | 23 | Ritchey Logic Threaded (5/32 inch upper bearing) |
+| 11299 | Saddles | 24 | Ritchey Wing WCS |
+| 11300 | Saddles | 24 | Ritchey Wing Comp |
+| 11301 | Seat Posts | 24 | Ritchey Pro Mountain Seatpost |
+| 11302 | Seat Posts | 24 | Ritchey Comp Mountain Seatpost |
+| 11303 | Seat Posts | 24 | Ritchey Pro Road Seatpost |
+| 11304 | Cranksets | 25 | Ritchey V-Pro Crank |
+| 11305 | Cranksets | 25 | Ritchey Logic Compact Mountain |
+| 11306 | Shifters | 25 | Ritchey 2x9 Racing System, Pro Race Kit |
+
+### Unresolved identities — unchanged
+
+| Model | Existing candidates | Evidence needed |
+|---|---|---|
+| Fuzzy Logic Pro | 10402 | Existing 1999 Fuzzy Logic Threadless 86/92 g lacks tier; 2000 Pro 103/110 g needs version/construction crosswalk |
+| Fuzzy Logic Comp | 10402 | Same generic older row; 2000 Comp 112/120 g is not assigned or inserted speculatively |
+| Comp Road seatpost | 10169, 8408 | Determine whether 250 mm/250 g Comp relates to 1999 Expert Road 250 mm/220 g or earlier FD Road; names/weights alone insufficient |
+| Pro Aero / Aero OCR Road rims | 10190, 10191 | Resolve OCR front/rear table contradiction and 400 g older vs 430/440 g listings before renaming or dating |
+
+### Applied validation (2026-11-15)
+
+- Load committed 57 component inserts, three updates, one source and three
+  category-brand associations. Rerunning identical SQL made zero mutations.
+  No deletes, merges, group additions, bike writes or code changes.
+- Readback verified every planned field on all 60 affected rows, source 411,
+  new IDs and all three associations. All brand/category/group/source references
+  valid. Ritchey now has 128 components, up from 71.
+- All 60 affected rows have zero live bike links. The pre-load baseline had 47
+  live specs either linked to Ritchey or mentioning the maker; this ingestion
+  does not reassign any early-bike links.
+- Actual generation over all 93 CSVs is byte-identical before/after: 1,199 bikes,
+  20,600 specs, 7,313 mapped. These are generated counts, not live DB coverage.
+  Root `bike-update.sql` untouched; no backfill or matcher override needed.
+- Actual duplicate report agrees with simulation: configuration pairs 5 -> 7,
+  review 1 -> 1; no new near pairs or merge/review candidates. New pairs
+  11253/11260 and 11254/11261 are SpeedMax Alpha/Omega MTB/BMX sizes, kept as
+  distinct configurations. Existing review 10312/10328 is a 1999 front 100 mm /
+  rear 130 mm pair, kept apart; this source gives no crosswalk for the older hubs.
+- Descriptions/titles/search text checked below 255 characters; maximum new
+  description 232. Guarded SQL passed readback and zero-mutation rerun.
+- Fresh live tyre-only snapshot: 237/1,074 linked (22.1%), 837 unlinked, 614
+  components. This task adds 14 tyre rows and changes zero links; differences
+  from the historical 2026-11-14 snapshot include other intervening work.
+- Source, decisions, original values, applied IDs and validation retained here;
+  disposable download, SQL, scripts, snapshots and logs removed after validation.

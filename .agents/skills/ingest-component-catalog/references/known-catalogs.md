@@ -33,7 +33,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/regina.md](known-catalogs/regina.md) — Regina (3 entries)
 - [known-catalogs/3ttt.md](known-catalogs/3ttt.md) — 3ttt (5 entries)
 - [known-catalogs/mafac.md](known-catalogs/mafac.md) — MAFAC (6 catalogues: c. 1976, 1964, 1978, 1979 poster, 1980, c. 1982)
-- [known-catalogs/ritchey.md](known-catalogs/ritchey.md) — Ritchey (3 entries)
+- [known-catalogs/ritchey.md](known-catalogs/ritchey.md) — Ritchey (4 entries; 2000 applied, source 411)
 - [known-catalogs/araya.md](known-catalogs/araya.md) — Araya (1 entry)
 - [known-catalogs/ta.md](known-catalogs/ta.md) — Spécialités TA (1 entry)
 - [known-catalogs/sugino.md](known-catalogs/sugino.md) — Sugino (1 entry)
