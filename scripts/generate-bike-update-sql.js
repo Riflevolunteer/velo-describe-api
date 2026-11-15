@@ -957,7 +957,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc ltd': 4784, // RD-XL00-GXB
     // 2026-11-02 rear derailleur pass.
     'simplex sx 440 gt': [{ from: 1988, to: 1988, id: 4622 }], // 1988 Peugeot: SX440 GT (VeloBase v1-v3 merged into 4622, 2026-11-15)
-    'sachs huret rider': [{ from: 1989, to: 1989, id: 8958 }], // 1989 Peugeot: AR 46.1 T Rider, the only dated Rider rear, as 'huret rider' (judgement call)
+    'sachs huret rider': [{ from: 1989, to: 1989, id: 8958 }], // 1989 Peugeot: AR 46.1 T Rider (1986-89), the only dated Rider rear, as 'huret rider' (judgement call)
     'shimano fd al 11': [{ from: 1986, to: 1986, id: 4446 }], // 1986 Colnago: RD column prints "FD. AL 11"; RD-AL11, as the 1986-87 'shimano al 11'
     'simplex spidel': [{ from: 1981, to: 1981, id: 7309 }], // 1981 Peugeot (CH) PY 10 S: SLJ5500 CP, as the 1981 PY 10 S "Spidel SLJ" (judgement call)
     'sun tour alloy vx': [{ from: 1981, to: 1981, id: 4774 }], // 1981 Raleigh: RD-2200, VX (front FD-1600 VX)
@@ -1001,7 +1001,7 @@ const COMPONENT_OVERRIDES = {
     'simplex so 01 t': [{ from: 1989, to: 1989, id: 4647 }], // 1989 Peugeot (FR) Dauphine: S001 T, as the 1988 PH 50 S "S00 IT"
     'shimano exage sport lx': [{ from: 1988, to: 1989, id: 4516 }], // 1989 Peugeot (NL) Aspin / Chamonix: RD-A450, Exage Sport
     'shimano exage mountain': [{ from: 1988, to: 1989, id: 7182 }], // 1989 Peugeot (NL) Alpine Express: RD-M450-GS / SGS
-    'sachs rival': [{ from: 1989, to: 1990, id: 4417 }], // 1989 Peugeot (NL) Mont Blanc: Sachs Huret ARIS Rival (row dated 1990)
+    'sachs rival': [{ from: 1989, to: 1990, id: 4417 }], // 1989 Peugeot (NL) Mont Blanc: Sachs Huret ARIS Rival (1989-90)
     'shimano r 552 0s': [{ from: 1989, to: 1990, id: 7605 }], // 1989 Peugeot (NL) Hudson, printed "R-552-0s": RD-R552-GS / SS
     'suntour xcm': [{ from: 1989, to: 1992, id: 4793 }], // 1989 Peugeot (NL) VTT Express "Suntour XCM Index": RD-XM02-GXB (the matcher hit 4795, dated 1980)
     // 1988 Peugeot (FR): the 1988 range, "Shimano 105 NEW" = the 1050 series, "Shimano New 600" = 6400 600 Ultegra.
@@ -1158,7 +1158,7 @@ const COMPONENT_OVERRIDES = {
     'suntour ar': 4725, // Sirocco: SunTour RD-4200, AR (aR II) (1982-85)
     'sun tour ar': 4725, // Quasar / Zenith
     'sun tour arx': 4727, // Clubman: SunTour RD-4300, ARX
-    'huret eco duopar': 4277, // Weekender: Huret Duopar Eco (Version 1); the matcher hit the plain Eco
+    'huret eco duopar': 4276, // Weekender: Huret Duopar Eco 2690-01 (VeloBase 4277 "Version 1" merged in, 2026-11-15); the matcher hit the plain Eco
     'huret eco s': 8485, // Pulsar / Team Cadet / Stratos / Medale: Sachs Huret Eco S 2830-00 (June 1984 catalogue); was the plain Eco 4301
     // Classic: the DB's titanium Duopar rows are the 1976 2600 series and the 1980 Sachs Huret DuoPar; the 1984 touring
     // Duopar is the Sachs-era part.

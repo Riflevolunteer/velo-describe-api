@@ -639,3 +639,28 @@ and `/tmp/elysee-sheet-18.jpg`, `-21.jpg`, `-22.jpg`, `-23.jpg`, `-24.jpg`,
   with bolt), so the GUID and the weight moved to 8173. 4302 now has
   a59372f3-e065-11f1-a2df-02fea3763e8d; 8173's previous synthetic id
   0311fc96-c102-11f1-a2df-02fea3763e8d is retired.
+
+## Rear derailleur audit fixes — 2026-11-15 (user approved; audit items 1, 2, 4; item 3 decided)
+
+- Merged/deleted: 4277 "Huret Duopar Eco (Version 1)" (VeloBase, undated, 280 g,
+  `42FE7685-2CF0-4168-9D48-082F8D20D4A0`) -> 4276 Duopar Eco 2690-01. Its VeloBase page (read 2026-11-15) shows a
+  Huret-badged long cage with 34T max cog, matching 4276's 12 x 34; the Sachs Huret ATB 4400 (VeloBase model "2690 H /
+  2690 GC") takes 36T and has a Sachs Huret plate. Spec 6450 (1984 Raleigh Weekender 15 "Huret ECO Duopar") 4277 ->
+  4276; override `'huret eco duopar'` -> 4276; 4276 `year_to` 1983 -> 1984 from that fitment (280 g noted).
+- Dates from explicit Peugeot prints (fitment evidence): 4417 ARIS Rival `year_from` 1990 -> 1989 (1989 Mont Blanc
+  "Sachs Rival Aris Index", PHE 20 Z "Sachs-Huret Aris Rival"); 8958 AR 46.1 T Rider `year_to` 1988 -> 1989 (1989 Fun
+  Star / US Express); 8958's description now leads with its title.
+- Retitled: 4415 "Sachs Huret ARIS New Success 3d Gen." -> "... 3rd Gen." (`search_text` too).
+- New Success 1987-89 (user decision, 2026-11-15): keep the plain "Huret New Success" / "Sachs-Huret New Success" rears
+  on 4412 ARIS New Success 1st Gen. for 1987-89 (1987 Peugeot PS 10B Savoie, 1987 Raleigh Randonneur 18, 1988 PJ 10 B
+  Mont Cenis, 1989 Savoie), treating them as ARIS from 1987. This supersedes the April 1986 note's reason ("4402 now
+  ends 1986"): the 1988 Brügelmann pass (source 391) extended 4402 AR 47.1 D to 1988, so those specs no longer
+  distinguish the two by date. Revisit if a 1987-88 Sachs-Huret catalogue shows which style was fitted. The 1988 and
+  1989 links stay outside 4412's VeloBase 1987 date (review flags).
+- Validation: 6 rows as planned (1 spec, 4 component updates incl. 4276, 1 delete); rerun 0; no dangling
+  references. All 93 CSVs regenerated: only the Weekender mapping changed (4277 -> 4276). `quality-report` has no
+  findings on the touched rows; the 4417 x2 and 8958 x2 date flags cleared.
+- VeloBase pages also read (no change): 4410 / 4411 Rider type 1 / 2 (no dates or codes; type 1 "Budget Sachs Huret
+  set", drop parallelogram, plastic / steel, long cage; type 2 blank), 4409 Rival 7000 (model "RD R7000", ARIS, slant
+  parallelogram, short cage, 28T wrap), 4404-4406 Aris Classic 1500 / 2500 / 3000 (ARIS touring, long cage); none gives
+  production years.
