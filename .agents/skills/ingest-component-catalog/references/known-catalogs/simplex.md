@@ -736,3 +736,23 @@ identify the 1980s rear specs.
   description lead updated). 4644 keeps "Simplex Criterium" (1965-70 spans AR 537 NI and AR 637 NI).
 - Validation: 6 guarded updates, rerun 0. All 93 CSVs regenerated before/after: output identical (no mapping change).
   `quality-report` has no findings on the six rows (8 date flags and the 4649 missing-date flag cleared).
+
+## SX440 version-row merge — 2026-11-15 (user approved)
+
+- Evidence: the six VeloBase pages (read 2026-11-15) have no "differences" text or photo captions; only logo markings
+  differ (GT v1 "Z2" inside the outer plate and "Made in France" inner, v2 / v3 "SIMPLEX" outer; T v3's only text is
+  "Variant locations for 'Simplex' on derailleur"). The T v3 white page repeats T v1's 240 / 257 g weights. Cycling,
+  21 November 1985 (source 341) describes one 440 range (standard and long-arm GT). Disraeli Gears has no SX440
+  specimen page (guessed URLs 404). Same basis as the 1989 Alpha T / SX Foret merges.
+- Survivors (IDs, UUIDs and `source_ref` 1 kept): 4622 "Simplex SX440 GT (version 1)" 1985-86 -> "Simplex SX440 GT"
+  1985-89 (1989 Peugeot Anjou "SX 440 GR/SP" fitment); 4625 "Simplex SX440 T (version 1)" 1985-86 -> "Simplex SX440 T"
+  1985-88. Descriptions rewritten from the VeloBase data (cage, markings, weights, all-white city group).
+- Retired (deleted): 4623 GT v2 1986-87 (`A6B17180-5977-41DC-BDE2-2283ABA56CBF`), 4624 GT v3 1987-88
+  (`81A9DC2A-92DB-41C5-BFAB-E0259BB0C7B8`), 4626 T v3 1987-88, 260 g spec (`D2010942-2CBA-423A-B98C-A250663F90BB`),
+  4627 T v3 white 1987-88 (`3AC13803-8615-4F1B-BD42-C6042EBEF7A8`). Their old titles were the version labels; old
+  descriptions were bare title + country + weight.
+- Links: spec 16733 (1988 Peugeot PHE 13 "SX 440 GT") 4624 -> 4622; generator `'simplex sx 440 gt'` 1988 -> 4622.
+  4622 now has 8 links (1986-89 Peugeot), 4625 none.
+- Validation: 1 + 2 + 4 rows as planned; rerun 0; no dangling references. All 93 CSVs regenerated: only the PHE 13
+  mapping changed (4624 -> 4622), matching live. The six SX440 date flags cleared; scoped `duplicate-report` no longer
+  lists SX440 pairs (component_detail 10399 -> 10395).

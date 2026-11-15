@@ -955,7 +955,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105sc (1055)': 4455, // RD-1055
     'suntour xc ltd': 4784, // RD-XL00-GXB
     // 2026-11-02 rear derailleur pass.
-    'simplex sx 440 gt': [{ from: 1988, to: 1988, id: 4624 }], // 1988 Peugeot: SX440 GT version 3 (1987-88)
+    'simplex sx 440 gt': [{ from: 1988, to: 1988, id: 4622 }], // 1988 Peugeot: SX440 GT (VeloBase v1-v3 merged into 4622, 2026-11-15)
     'sachs huret rider': [{ from: 1989, to: 1989, id: 8958 }], // 1989 Peugeot: AR 46.1 T Rider, the only dated Rider rear, as 'huret rider' (judgement call)
     'shimano fd al 11': [{ from: 1986, to: 1986, id: 4446 }], // 1986 Colnago: RD column prints "FD. AL 11"; RD-AL11, as the 1986-87 'shimano al 11'
     'simplex spidel': [{ from: 1981, to: 1981, id: 7309 }], // 1981 Peugeot (CH) PY 10 S: SLJ5500 CP, as the 1981 PY 10 S "Spidel SLJ" (judgement call)
@@ -1060,7 +1060,7 @@ const COMPONENT_OVERRIDES = {
     'simplex s 061 tsp': 4616, // 1986 Peugeot (FR) table PH 11: S061 T
     'simplex s061t tsp': 4616, // 1986 Peugeot (FR) table PH 15 T
     'simplex sx1t sp': 7308, // 1986 Peugeot (FR) table P 10 L / PH 20 M: SX1 T
-    'simplex sx440 gt sp': 4622, // 1986 Peugeot (FR) table PH 153 T: SX440 GT version 1 (1985-86)
+    'simplex sx440 gt sp': 4622, // 1986 Peugeot (FR) table PH 153 T: SX440 GT (1985-89)
     'simplex sx410 gtsp': 4620, // SX410 GT
     'simplex slj5500cp': 7309, // SLJ5500 CP
     'simplex slga550cp': 7309, // GB table misprint of SLJA 5500 CP
