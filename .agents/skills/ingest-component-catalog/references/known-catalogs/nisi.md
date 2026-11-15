@@ -2,7 +2,7 @@
 
 Earlier Nisi rows came from velobase and the La Bicicletta guides (`data_source` 259 / 262 / 357; see
 cross-catalog-notes.md). The maker archive at https://gipiemme.com/en/catalog/ (Nisi became part of Gipiemme) also
-holds `NISI-Catalogo-1975 / 1980 / 1985.pdf`; see the end of this file.
+holds `NISI-Catalogo-1975 / 1980.pdf`; see the end of this file.
 
 ## Nisi "Cerchi in lega leggera di alluminio" catalogue (c. 1977, gipiemme.com), `data_source` 415
 
@@ -42,9 +42,36 @@ holds `NISI-Catalogo-1975 / 1980 / 1985.pdf`; see the end of this file.
 - Does not cover the unlinked 1973-76 Raleigh "Nisi Sprint Alloy" / "High Pressure Alloy" specs (probably export
   clinchers).
 
+## Nisi "Cerchi per biciclette in lega leggera di alluminio" catalogue (c. 1985, gipiemme.com), `data_source` 416
+
+- Label `Nisi Cerchi per biciclette in lega leggera di alluminio catalogue (c. 1985)`, country IT. Source:
+  https://gipiemme.com/wp-content/uploads/2023/11/NISI-Catalogo-1985.pdf (20 pp, 1237 x 1762, Italian / English).
+  Officine Meccaniche Nisi S.n.c., Moncalieri, tel (011) 6061613 (the later 7-digit number); Studio Lainer, printed by
+  Sarig, Torino. **Undated;** maker label 1985, supported by "da quarant'anni" (forty years of rim making) and by the
+  1985 La Bicicletta guide (259), which prints the same codes.
+- Pages: 1 cover; 2, 18 blank; 3-6 company / process (knurled tube bed, joint, drilling); 7 Corsa cronometro (00.200 /
+  00.210 Sludi 290 / 320) and Corsa cross (00.220 Super corsa TN NT); 8 Corsa strada (00.215 Countach 350 / 20, 00.217
+  Solidal 350 / 20 hard anodised, 00.218 Ekip 410 / 21 hard anodised, 00.230, 00.240, 00.130, 00.250 Corsa stretto 430
+  / **20**, 00.260); 9 symbols; 10 Pista 00.100-00.130 (weights are with fitted washers; eyelets add about 30 g);
+  11 Mixer 00.420 aero profile 400 / 19; 12 Corsa bambino 00.800-00.840 (all Pista / Corsa / Laser / Mixer rims 700C);
+  13 / 14 Laser 00.219 410 / 19 and Laser leggero 00.219 L 350 / 19, aero profile, fitted washers only; 15 Sport smooth
+  (00.400-00.510) and shaped profile (00.610 / 00.620); 16 Sport viaggio 00.600 and Mod. W 00.700-00.770 (new: 00.750 /
+  00.760 / 00.770 W 28 5/8, 26 3/8, 24 3/8); 17 Strada Bambino 00.900-00.950; 19 export page; 20 back cover.
+- English captions fix the c. 1977 wording: "svasato" = countersunk, "ranelle (applicate)" = (fitted) washers,
+  "boccole" = eyelets.
+- New vs c. 1977: Countach, Solidal, Ekip, Laser, Laser leggero, Mixer, three W sizes. Dropped: none.
+- Applied 2026-11-15 (user approved; 14 rows, `source_ref` 416): **5132 Countach (no eyelets) NULL -> 1985-1985**;
+  **5133 Countach (with eyelets) `year_from` 1996 -> 1985** (judgement: the two VeloBase specimen rows taken as the
+  fitted-washer and eyelet builds the catalogue offers). Descriptions with codes / specs: 5144 Solidal (00217, keeps
+  VeloBase 424 g), 5136 Laser (00219), 9230 Laser Leggero (00219 L), 5140 Mixer (00420; 1985 400 g / 19 mm vs 1996 425 g /
+  18 mm), 9227 Ekip. Wording corrected (countersunk, washers vs eyelets) on 9224, 9225, 9226, 5146, 9228, 5142, 5143.
+  No title, `year_to` or link changes; codes not added to titles (would narrow eBay `search_text`).
+- Left alone: 5137 Laser (with eyelets) (1985 sells Laser with fitted washers only); 5138 M20 Pista Speciale (00.120 and
+  00.130 are separate here too); 5145 / 5147 as above. Not inserted (user's earlier choice): 00.120, 00.130, 00.400,
+  00.600, 00.700-00.770, 00.900-00.950.
+
 ## Other Nisi files on gipiemme.com (read 2026-11-15, not ingested)
 
 - "1975": undated 6-page lettered-code price list (art. 101a-401e, the same lire prices as the c. 1977 list), Moncalieri
   tel 661613; covers the same range minus Sludi. Kept as corroboration only.
 - "1980": a one-page advert (Corsa pista / strada, Sport, Bambino; Solidal and Countach logos), no codes.
-- "1985": 20-page catalogue, not read.
