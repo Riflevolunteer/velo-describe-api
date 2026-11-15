@@ -681,7 +681,7 @@ const COMPONENT_OVERRIDES = {
     ],
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     'shimano santé': [{ from: 1987, to: 1989, id: 2533 }], // FD-5000, Sante
-    "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 2288 }],
+    "campagnolo croce d'aune": [{ from: 1987, to: 1992, id: 2288 }], // + 1992 Bianchi Mondiale (2288 year_to 1991 -> 1992, 2026-11-15)
     'shimano deore xt sis': [{ from: 1987, to: 1990, id: 2499 }], // FD-M730
     // 1980 Peugeot (FR leaflet / NL Peugeotboek): the SJA / SXA names run together or spaced
     'simplex sja 102': 2573, // Simplex SJ A102 (1979-89)
@@ -806,7 +806,7 @@ const COMPONENT_OVERRIDES = {
     // band for 80s ones (Bianchi). 1978-81 had the 1052/NT, not yet needed.
     'campagnolo nuovo record': [
       { to: 1977, id: 2297 }, // Campagnolo 1052/1, Record (second body, 1970-1977)
-      { from: 1978, to: 1981, id: 2299 }, // Campagnolo Record 1052/NT (1978 - 1982, 3-hole narrow band)
+      { from: 1978, to: 1981, id: 2299 }, // Campagnolo 1052/NT, Record (3-hole narrow band)
       { from: 1982, id: 2300 }, // Campagnolo 0104007, Nuovo Record (clip-on, 3-hole standard band)
     ],
     'new huret jubilee': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }], // Huret Jubilee 500: 5-hole cage (1972-76) / 4-hole (1977-80); 1973 Huret catalogue
@@ -847,7 +847,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sis': 2462, // Shimano FD-1050, 105
     'shimano dura ace sis 7': 2510, // Shimano FD-7400, Dura-Ace 7400
     // 1993 Bianchi. A comma-less Drivetrain cell fills both derailleurs.
-    'campagnolo record 8 speed ergopower': 2306, // Campagnolo FD-01SRE, Record (91-94)
+    'campagnolo record 8 speed ergopower': [{ to: 1992, id: 2306 }, { from: 1993, id: 7059 }], // FD-01SRE / FD-11SRE (1993 Range: FD-11 replaces FD-01; 2026-11-15)
     'campagnolo chorus 8 speed ergopower': [{ to: 1992, id: 2286 }, { from: 1993, id: 7060 }], // 1993 Bianchi era fix: FD-11SCH (was 2286 for every year)
     'campagnolo chorus 8 speed downtube shift levers': [{ to: 1992, id: 2286 }, { from: 1993, id: 7060 }], // 1993 Bianchi era fix: FD-11SCH (was 2286 for every year)
     'campagnolo veloce': [{ to: 1992, id: 2317 }, { from: 1993, id: 7061 }], // 1993 Bianchi era fix: FD-01SVL (was 2317 for every year)

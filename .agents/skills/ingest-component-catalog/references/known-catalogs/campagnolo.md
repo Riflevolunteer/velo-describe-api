@@ -1420,3 +1420,21 @@ All new rows have the catalogue-attested range 2000–2000 (availability, not pr
 - Open: the same 2026-10-09 fix moved the 1987 Bianchi C-Record crank 1483 -> 1482 by date alone; check it (and other C-Record
   parts) against this brochure. Disraeli Gears lists n. 18 bis printings 04/1985 and 12/1985, while source 9 records our copy's
   back cover as "12/86"; re-read that page, since 1986 `year_to` values were set from it.
+
+## Front derailleur audit fixes — 2026-11-15 (user approved; audit items 1, 3, 5)
+
+- 1993 era fix (1993 Product Range, source 20: FD-11SRE / FD-11SCH replace FD-01): 2306 FD-01SRE `year_to` 1994 -> 1992
+  and retitled "Campagnolo FD-01SRE, Record (91-94)" -> "Campagnolo FD-01SRE, Record (braze-on)" (FD-01FRE clip-on in its
+  note); 7040 FD-01SCH `year_to` 1994 -> 1992. Spec 1424 (1993 Bianchi MG/Bianchi Team "Record 8-speed Ergopower")
+  2306 -> 7059 FD-11SRE; generator FD key `'campagnolo record 8 speed ergopower'` now 2306 to 1992 / 7059 from 1993, as
+  the Chorus FD and Record RD keys. Source refs unchanged. 7044 FD-01SAT stays 1992-94 (no Athena FD-11 in 1993).
+- 2288 Croce d'Aune front: `year_to` 1991 -> 1992, `source_ref` 110 -> 359 (1992 Bianchi catalogue, Mondiale page
+  https://2velo.com/wp-content/uploads/2014/03/1992-catalog-p1911.jpg; fitment evidence, not a 1992 range claim, as
+  4112 / 567 / 1489). Spec 19635 NULL -> 2288; front override now 1987-1992.
+- Retitles (old titles for matching later sources; descriptions' leading text updated): 2288 / 2289 "Croce d' Aune" ->
+  "Croce d'Aune" (+ `search_text`); 2278 "Campagnolo, 50th Anniversary" -> "Campagnolo 50th Anniversary"; 2299
+  "Campagnolo Record 1052/NT (1978 - 1982, 3-hole narrow band)" -> "Campagnolo 1052/NT, Record (3-hole narrow band)"
+  (`search_text` "Campagnolo 1052/NT Record"); 7071 / 7079 drop "(1994)" / "(1995)". Rear 4112 keeps "Croce d' Aune".
+- Validation: 10 guarded statements, 8 component + 2 spec rows; rerun 0. All 93 CSVs regenerated before/after: only
+  the two intended links changed (7325 -> 7326 linked). `quality-report` has no findings on the touched rows.
+  Campagnolo front specs now 183 / 195 linked.
