@@ -780,7 +780,7 @@ const COMPONENT_OVERRIDES = {
     'compe v': 2603, // Europa: SunTour 3701 / FD-1100, Compe-V (5-hole)
     'compe v on 10 speed': 2603, // Stratos
     'shimano at10 x sis': 7721, // 1993 Bianchi "AT10-X" spelling of the AT10 SIS entry below
-    'suntour cyclone 7000': 2631, // SunTour Cyclone 7000 (White) FD (1987 Bianchi)
+    'suntour cyclone 7000': 2630, // SunTour FD-CL10-B, Cyclone 7000 (1987 Bianchi; was the white-finish VeloBase row 2631 until 2026-11-15)
     // SunTour No. 61 retitles (bare "Vx" / "ARx" rows now carry codes): keep existing links
     'suntour vx': 2614, // SunTour FD-1600, VX (1981 Kalkhoff)
     'suntour arx': 2621, // SunTour FD-2600, ARX (1985 Raleigh)

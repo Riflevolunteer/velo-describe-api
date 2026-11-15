@@ -1643,3 +1643,20 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   Capacity"). All were existing override picks.
 - Validation: 1 spec + 9 rows; rerun 0. All 93 CSVs regenerated: only the Mirage mapping changed (4695 -> 4704).
   `quality-report` has no findings on the touched rows (14 date flags cleared).
+
+## Front derailleur audit fixes — 2026-11-15 (user approved; audit items 1-4)
+
+- 2663 FD-XE01-GXH, XCE: VeloBase `year_from` placeholder 1980 -> 1992 (1992-1992), as rear 4791; the 1990 catalogue
+  introduces XCE as FD-XE00 (11057). Crank 2002 XCE still carries the 1980 placeholder.
+- Dates from explicit model prints (fitment evidence; no 1986 SunTour catalogue held; descriptions unchanged): `year_to`
+  1985 -> 1986 on 2620 FD-2500 AR (1986 Miyata 100, Raleigh Technium 440), 2629 FD-3300 Cyclone (Miyata 710 "New
+  Cyclone"), 2637 FD-3400 LePree (Technium 480), 2641 FD-1400 Seven (Miyata Sport 10); `year_from` 1987 -> 1986 on 2636
+  Hero (four 1986 Raleigh) and 2660 FD-XS00 XC Sport 7000 (Miyata Terra Runner, Peugeot Orient Express, Raleigh
+  Elkhorn); 2609 FD-2800 AG Tech `year_from` 1984 -> 1983 (1983 Miyata Ridge Runner "AG-TECH"). These match the rear
+  widenings the same day.
+- 2653 FD-4300 SVX: NULL dates -> 1986-1986 from the 1986 Raleigh Technium 460 fitment only.
+- Relinked (user decision): spec 1309 (1987 Bianchi Campione d'Italia "SunTour Cyclone 7000") 2631 "Cyclone 7000
+  (White)" (VeloBase finish variant) -> 2630 FD-CL10-B, the catalogue row; FD override `'suntour cyclone 7000'` -> 2630.
+  2631 is kept as the white-finish variant (both 107 g); this closes the 1987 leaflet note's "2631 vs 2630" left item.
+- Validation: 9 rows + 1 spec; rerun 0. All 93 CSVs regenerated: only the Campione d'Italia front changed (2631 ->
+  2630). `quality-report` has no findings on the touched rows.
