@@ -1358,7 +1358,7 @@ Weinmann 1129 / 1130 570.
   ("Brügelmann 1981.pdf", `/app/download/...` 302 to jimcontent, `curl -L`; 120 pp, no text layer,
   ~2352 px wide). Cover: "1981 - gültig bis Neuauflage 1982 - etwa März 1982". Same site has
   1972-1982 (one PDF per year; 1972-77 have a partial OCR layer); 1985 / 1988 are in the Dropbox
-  folder noted in TODO.md (section PDFs).
+  folder noted in source-hunts.md (section PDFs).
 - Components: pp. 6-7 (brake shoes, levers), 9 (brakes), 12-13 (rims), 14-15 (light parts, Simplex
   advert), 19-22 (chains, chainrings), 24-29 (stems, bars, Colnago parts, hubs, pedals), 32-35
   (saddles, seatposts, derailleurs, shifters), 40-44 (tubulars, clinchers), 49-58 (headsets, BBs,
@@ -1440,7 +1440,7 @@ Weinmann 1129 / 1130 570.
 ## Brügelmann Radsport-Shop catalogue — 1985 (Dropbox section PDFs), data_source 390, 2026-11-14
 
 - `data_source` label "Brügelmann Radsport-Shop catalogue (1985)", country DE. Source: the
-  Dropbox folder in TODO.md (rennrad-news thread 99574 p.5 #92), files "B 85 1" to "B 85 7"; cover
+  Dropbox folder in source-hunts.md (rennrad-news thread 99574 p.5 #92), files "B 85 1" to "B 85 7"; cover
   "AUSGABE 1985". Two-page spreads at 150 ppi (~2450 x 1750; jpx, no text layer); read as
   left / right halves (~1224 px) at native resolution, below the skill's 1800 px but not
   upscalable. Read sections 1 (pp. 6-53: special finishes / ICS gold, tyres, brakes), 2 (pp.
@@ -1537,7 +1537,7 @@ Weinmann 1129 / 1130 570.
 - Bars (p. 22): Pivo Standard (steel / alloy) and Profi (25 clamp); Cinelli Giro 405 / 425,
   Merckx 425 / 445, Poulidor 425, track Pista-19 and Sprint-18; 3ttt Anquetil / Tour de France
   400-430, Merckx 420, Coppi (large deep drop) and Motta (short deep drop) 420, Record
-  Superleggero 400 / 420, Junior 380, Schüler 390. Consistent with the 1975-76 bar list in TODO.md.
+  Superleggero 400 / 420, Junior 380, Schüler 390. Consistent with the 1975-76 bar list in source-hunts.md.
 - Changed (source_ref -> this source):
   - year_from -> 1977 (19 rows; catalogue earlier than prior first attestation): 1398 Sedis Gold
     (Sedicolor Gold; was 1978), 4501 Shimano DA-100 Dura-Ace black RD (was 1978), 5605 Ideale 2004

@@ -20,7 +20,7 @@ Never put these in `TODO.md`; put them where they belong instead:
 | Completed work: "applied", "fixed", "resolved", "merged", "rechecked, no change" | The relevant catalogue notes; git history has the rest |
 | Leave-unlinked / do-not-link decisions, "several rows fit", user's calls | `.agents/skills/ingest-bike-specs/references/link-decisions.md` |
 | Reviewed non-duplicates and kept-apart pairs | The brand's catalogue notes and `REVIEWED_*` in the generator |
-| Source-hunt logs and dead ends ("searched X, nothing found") | The brand's catalogue notes (`known-catalogs/<brand>.md`) |
+| Source-hunt logs and dead ends ("searched X, nothing found") | `.agents/skills/ingest-component-catalog/references/source-hunts.md`, or the brand's `known-catalogs/<brand>.md` for a one-brand hunt |
 | Evidence, old/new values, catalogue contents | The brand's catalogue notes |
 
 A failed hunt leaves at most one TODO line: what is still wanted and which new
@@ -52,7 +52,7 @@ do not require a separate user invocation.
   `/linkCoverage` and `scripts/quality-report.js`.
 - **When a follow-up appears:** record the exact unresolved question, affected
   models/IDs where useful, next action and evidence needed. Record an unsuccessful
-  source hunt (scope, date, dead ends) in the brand's catalogue notes; keep only
+  source hunt (scope, date, dead ends) in `source-hunts.md` or the brand's catalogue notes; keep only
   the remaining want and the lead that would justify repeating it in TODO.
   Keep blocked or deferred work visible with its reason.
 - **Before finishing:** search `TODO.md` for the affected model, component ID,
