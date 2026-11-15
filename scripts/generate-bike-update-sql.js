@@ -1336,6 +1336,12 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    // Peugeot USA fitment; Mavic 1986-87 p.16 identifies the 506 RD rear
+    // within the 500 RD road hub family already represented by 3397.
+    'mavic 506 rd': [
+      { bike: 'PX', from: 1986, to: 1986, id: 3397 },
+      { bike: 'PX 10', from: 1987, to: 1987, id: 3397 },
+    ],
     'sansin re 60 sealed (f) qr (r) nut': [{ bike: 'Sky Runner', from: 1987, to: 1987, id: 9003 }, { bike: 'Terra Runner', from: 1987, to: 1987, id: 9003 }, { bike: 'Trail Runner', from: 1987, to: 1987, id: 9003 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new deore xt qr': [{ bike: 'Ridge Runner', from: 1987, to: 1987, id: 3550 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'sansin re 60 sealed qr': [{ bike: '615 GT', from: 1987, to: 1987, id: 9003 }, { bike: '215 ST', from: 1987, to: 1987, id: 9003 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.

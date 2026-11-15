@@ -38,11 +38,11 @@ not a fresh extraction of every catalogue or verification of every specimen.
    links on 1624/1658. The latter now use standard row 8191. The 2026-11-04
    extension of 5071 to 1993 is now supported specifically by Nth FS.
 2. **Existing-row mapping opportunity:** specs **14700** (1986 Peugeot PX)
-   and **15661** (1987 PX 10), `Mavic 506 RD`, remain NULL. Existing **3397
-   Mavic 500 RD** explicitly describes the 506 RD hub pair and covers those
-   years. Classify as a candidate mapping to an existing configuration/family,
-   rather than a missing model requiring insertion; verify the period pair-code
-   table and Peugeot fitment before preparing scoped mappings.
+   and **15661** (1987 PX 10), `Mavic 506 RD`, were NULL. Existing **3397
+   Mavic 500 RD** includes the 506 RD rear configuration and covers those
+   years. The source review below now confirms both proposed mappings to
+   3397; both links and scoped generator overrides are now applied and validated
+   in the entry below.
 3. **Description/source discrepancy (corrected below):** **1643 Mavic 637 (MTB)**
    ended `170/175/180 mm, 680/690/700 g.` Its cited source **121**,
    [90/91 p.31 scan](https://www.disraeligears.co.uk/site/00_main_images/mavic_trade_catalogue_9091_page_31_main_image.jpg),
@@ -81,6 +81,56 @@ Validation: read-only inventory/source/link queries, consistent-snapshot
 quality checks and all three duplicate modes. No regeneration was necessary
 because mappings and component records were unchanged. Task-created scripts
 and downloaded page copies were removed after recording the source URLs here.
+
+## Peugeot 506 RD hub identification — 2026-11-15, read-only review
+
+- Visually checked source **119**, [Mavic 1986–87 printed p.16](https://www.disraeligears.co.uk/site/00_main_images/mavic_-_trade_catalogue_1986-1987_page_16_main_image.jpg):
+  heading **500 RD Hubs**, front **500 RD**, 100 mm; rear **506 RD**,
+  **126 mm**, 24/28/32/36/40 holes, **280 g steel QR / 260 g alloy QR**.
+  Footnote offers the rear in 5-speed 121 mm width. Thus 506 RD is the road
+  rear configuration within the existing 500 RD family; the audit's earlier
+  wording calling 506 RD a pair code was inaccurate. The source does not
+  justify inferring which skewer material Peugeot fitted.
+- Source **310**, [1986 Peugeot page](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1986.html),
+  image **CATALOGUES CYCLES PEUGEOT 1986 (18)** / `b18.jpg`, US specification
+  table: **PX** column explicitly prints **Mavic 506 RD** under Hubs and a
+  six-sprocket Maillard 700 Super Plus 13/14/15/17/19/21 freewheel. Original
+  table visually checked. Before repair: **14700**, bike **884**, year **1986**,
+  label **12 Hubs**, source_ref **310**, value `Mavic 506 RD`, component NULL.
+- Source **312**, [1987 Peugeot USA printed p.4](https://www.bikeboompeugeot.com/Brochures%20USA/Peugeot%201987%20USA%20Brochure/Peugeot%201987%20USA%20Brochure%20Page%204.jpg):
+  **PX10** sidebar explicitly prints **Mavic 506 RD**, with the same six-cog
+  freewheel. Visually checked. The old Blogger `lh3` proxy returned 404;
+  BikeBoomPeugeot provides a working original scan. Before repair: **15661**, bike
+  **933**, title **PX 10**, year **1987**, label **12 Hubs**, source_ref
+  **312**, value `Mavic 506 RD`, component NULL.
+- **Supported proposal:** link both existing specs **NULL -> 3397 Mavic 500
+  RD**. This family record already covers the 126 mm 506 rear and is dated
+  **1975–1991**, source_ref **121**. No insert, rename, year widening, CSV
+  value/label change or split is needed. Do not substitute 8159 550 RD (its
+  rear is 556 RD), 3400 510 (516 rear), or 3408 580 CX (80 mm front).
+- **Applied on user approval, 2026-11-15:** specs **14700 / 15661 NULL ->
+  3397**. Added `mavic 506 rd` Hubs overrides scoped to **1986 PX / 1987
+  PX 10**. Values, CSVs, source references 310/312, component dates and all
+  existing IDs were preserved. Guarded transactional SQL affected exactly
+  **two specs**; rerun **zero**. Restoration is component_id 3397 -> NULL on
+  only 14700/15661, guarded by bike 884/933, label 12, source 310/312 and
+  exact `Mavic 506 RD` value.
+- Compared the actual generator through matching/integrated controls across
+  **93 loaded CSVs / 20,600 specs**: exactly those two mappings changed,
+  generated links **7,324 -> 7,326**. No other value/target changes;
+  `bike-update.sql` was untouched. Live readback confirms both targets, dates
+  within 1975–1991 and no duplicate specs. Scoped consistent-snapshot quality
+  checks on 3397 and all its linked specs found **zero findings**. Verified
+  overrides do not match other bikes/years. `npm test` passed all nine test
+  files and `git diff --check` passed. Temporary SQL/comparison files removed
+  after validation.
+- Separate description issue noticed during identification: 3397 currently
+  ends `Pairs 505 RD, 506 RD.` The 1986–87 table labels 506 RD as the rear,
+  so that wording needs a source-aware review; it is not grounds to create a
+  duplicate hub row. Component-description changes were not part of the
+  approved link repair and remain open.
+  Downloaded HTML/scans and temporary image indexes were removed after recording
+  evidence; the SQL retained for approval was removed after application.
 
 ## Bianchi M 231 coating evidence — 2026-11-15, read-only review
 

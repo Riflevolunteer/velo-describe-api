@@ -40,8 +40,8 @@ after validation; retain what is still needed for unfinished work or review.
 Evidence and exact affected specs are in the
 [Mavic audit](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#general-quality-audit--2026-11-15-read-only).
 
-- [ ] Verify the period 506 RD pair-code table and Peugeot fitment for
-  unlinked specs 14700 / 15661 against existing hub row 3397.
+- [ ] Review 3397's `Pairs 505 RD, 506 RD` description wording against the
+  maker's rear-hub table; [evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#peugeot-506-rd-hub-identification--2026-11-15-read-only-review).
 - [ ] Reconcile the Reflex, T217, T261 and CXP 30 broad/finish rim rows listed
   in the audit against the 1996/1997/1999 scans and the variant policy; prepare
   supported merges or narrower descriptions after establishing identity.

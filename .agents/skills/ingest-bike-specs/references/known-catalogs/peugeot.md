@@ -635,6 +635,16 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 
 ## 1986 Peugeot — `1986_peugeot_spec.csv` (FR, data_source 309: 32 bikes, 428 specs, 81 linked) and `1986_peugeot_us_spec.csv` (US, data_source 310: 16 bikes, 310 specs, 81 linked)
 
+- Mavic hub follow-up, 2026-11-15 (user approved): US PX spec **14700**
+  `Mavic 506 RD` **NULL -> 3397 Mavic 500 RD**; same correction on US 1987
+  PX 10 spec **15661**. Original Peugeot US 1986 table image (18)/b18.jpg and
+  US 1987 p.4 name 506 RD; Mavic 1986–87 p.16 identifies it as the 126 mm
+  rear in the 500 RD family. Added exact bike/year Hubs overrides; no CSV,
+  component/date/source or spec-ID changes. All 93 loaded CSVs compared:
+  exactly these two links gained; live readback and scoped quality checks
+  clean, rerun zero changes, all nine test files pass. Detailed source URLs
+  and restoration values are in the component Mavic notes.
+
 - Tyre follow-up (2026-11-09, done): original technical table image 6 confirms Hutchinson HP22 700 x 22 for P10LS / PH10LS and HP22 for PH13 / PH20M Jubilé (PH20M omits maker). Added 10972 HP22 (700 x 22C), 1982-1989 attested (earliest 700C proof Dawes 1982 p.18), source_ref 320, and linked 14337 / 14357 / 14377 / 14415. Generator entries bike/year scoped. The same row covers Mont Blanc 1989 NL below; 27-inch HP22 is a different size, not merged. Component Hutchinson notes preserve full source URLs and judgement.
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1986.html (34 images, loaded 2026-10-30).
   Images 1-13 (1000 px, bikeboompeugeot.com watermark): French "Gamme Course" (a01 cover, a02-a05 photos with
