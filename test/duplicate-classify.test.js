@@ -88,6 +88,52 @@ test('the survivor is the most used row, then a catalogue row', () => {
   assert.strictEqual(buildGroups([velobase, catalogue])[0].survivor, catalogue)
 })
 
+test('all within-group pairs include duplicates that do not contain the survivor', () => {
+  const survivor = row('Regina Extra (6 speed)', { component_id: 2175, used: 10 })
+  const a = row('Regina Extra (7 speed, silver)', { component_id: 2177, year_from: 1980 })
+  // Historical 2178 was already merged; reconstruct the missed comparison.
+  const b = row('Regina Extra (7 speed, silver)', { component_id: 2178, year_from: 1980 })
+  const [group] = buildGroups([b, survivor, a])
+  assert.strictEqual(group.survivor, survivor)
+  assert.deepStrictEqual(group.pairs.map(p => [p.a.component_id, p.b.component_id, p.relation]), [
+    [2175, 2177, 'configuration'], [2175, 2178, 'configuration'], [2177, 2178, 'duplicate']
+  ])
+  assert.deepStrictEqual(buildGroups([a, b, survivor])[0].pairs, group.pairs)
+})
+
+test('shared speed and fitting qualifiers do not hide finish-only differences', () => {
+  for (const [a, b, expected] of [
+    ['Regina (6 speed, gold)', 'Regina (6-speed, silver)', 'cosmetic'],
+    ['Regina (6sp gold)', 'Regina (6 speed silver)', 'cosmetic'],
+    ['Regina (6 speed, gold)', 'Regina (5 speed, gold)', 'configuration'],
+    ['Regina (6 speed, gold)', 'Regina (5 speed, silver)', 'configuration'],
+    ['Regina (6 speed, gold)', 'Regina (gold) (6 speed)', 'duplicate'],
+    ['Hub (low flange, gold)', 'Hub (low flange; silver)', 'cosmetic'],
+    ['Regina (6 speed, gold)', 'Regina (gold)', 'configuration'],
+  ]) {
+    assert.strictEqual(relate(row(a), row(b)), expected, `${a} / ${b}`)
+    assert.strictEqual(relate(row(b), row(a)), expected, `${b} / ${a}`)
+  }
+  assert.strictEqual(relate(
+    row('Regina (6 speed, gold)', { year_from: 1970 }),
+    row('Regina (6 speed, silver)', { year_from: 1980 })
+  ), 'generation')
+})
+
+test('reviewed Regina finishes stay apart in larger groups regardless of survivor', () => {
+  const gold = row('Regina Corsa (6 speed, gold)', { component_id: 2163, used: 10 })
+  const silver = row('Regina Corsa (6 speed, silver)', { component_id: 2164 })
+  const five = row('Regina Corsa (5 speed)', { component_id: 99997 })
+  const [group] = buildGroups([five, silver, gold])
+  assert.strictEqual(group.pairs.find(p => p.a === gold && p.b === silver).relation, 'variant')
+})
+
+test('explicit kept-apart pair decisions apply to same-title groups', () => {
+  const a = row('Example (gold)', { component_id: 16 })
+  const b = row('Example (silver)', { component_id: 17 })
+  assert.strictEqual(buildGroups([a, b])[0].pairs[0].relation, 'variant')
+})
+
 test('rows differing in brand or category never group', () => {
   const rows = [row('Mavic MA 40'), row('Mavic MA 40', { category_id: 2 }), row('Mavic MA 40', { brand_id: 2 })]
   assert.strictEqual(buildGroups(rows).length, 0)
@@ -194,10 +240,12 @@ test('a reviewed pair stays a variant when the registered row becomes the surviv
   const [group] = buildGroups([silver, black])
   assert.strictEqual(group.survivor, silver)
   assert.strictEqual(group.others[0].relation, 'variant')
-  // In a larger group the survivor's entry does not cover unreviewed rows.
+  // In a larger group the reviewed endpoint stays protected. Comparisons
+  // between the other, unreviewed endpoints remain visible.
   const other = row('Shimano DA-100 / RD-7100, Dura-Ace (gold)', { component_id: 99998 })
-  const byId = Object.fromEntries(buildGroups([silver, black, other])[0].others.map(o => [o.row.component_id, o.relation]))
-  assert.strictEqual(byId[99998], 'cosmetic')
+  const [larger] = buildGroups([silver, black, other])
+  assert.strictEqual(larger.others.find(o => o.row === other).relation, 'variant')
+  assert.strictEqual(larger.pairs.find(p => p.a === black && p.b === other).relation, 'cosmetic')
 })
 
 test('a reviewed exact-title pair reports as a kept variant', () => {

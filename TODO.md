@@ -16,13 +16,6 @@ after validation; retain what is still needed for unfinished work or review.
 
 ## Open: database quality tooling
 
-- [ ] **Duplicate-report comparison gaps:** compare members within a group,
-  including pairs that do not contain the survivor. Mixed parentheticals such as
-  `(6 speed, gold)` currently classify as configuration before cosmetic checks;
-  distinguish speed changes from finish-only differences without automatically
-  merging reviewed variants. Add regression cases for both gaps. The historical
-  Regina 2177 / 2178 pair was already merged; it is an example of a missed pair,
-  not an outstanding merge.
 - [ ] **One read-only quality report:** dangling component/source/group/brand
   references, duplicate bike specs, category/group ownership conflicts, missing
   provenance/dates and linked-bike date conflicts. Separate errors from review
@@ -354,24 +347,20 @@ The 2026-11-09 table above (754 / 931) is historical.
   (fixed 2026-11-14, see below); 7513 Shimano RD-MX10 sits in group "BMX",
   which is owned by Campagnolo. 128/945 components have incomplete dates; 426
   have VeloBase as current source; 498 have no group (informational).
-- **First priority, SunTour 1990 follow-through (step 8 never run).** The
-  2026-11-13 SunTour 1990 catalogue load (source 385) changed no bike links, and
-  its 13 new rear rows (11026-11128) are unused. Review: 1990 Bianchi Nyala
-  "SunTour XCT" (spec 7018) -> 7952 RD-XT02 (1992 only) while 1990 RD-XT00 11070
-  / RD-XT10 11071 now exist (which one is unresolved); 1989 Bianchi Forte / Volpe
-  "SunTour XCE-4050" (18616 / 18720) -> 4791 RD-XE01 (1992 code, known-wrong
-  1980 start) versus 11056 RD-XE00 (1990). Check the matching front derailleur,
-  shifter and crank links for the same bikes in the same pass.
-  **Applied 2026-11-14:** (9 rows, readback checked, rerun 0; also repaired 9692; Rear Derailleur now
-  792 / 976). User decisions: XCE-4050 front/rear x4 unlinked
-  (XCE is '90 new; XE01 is the 1992 code); Nyala rear unlinked (XT00 / XT10
-  undistinguished); Nyala front / brake / crank -> 11072 / 11074 / 11076.
-  Forte crank 18618 (was 2002 CW-XE01) unlinked as well, 2026-11-14.
-  Nyala / Osprey X-Press shifters 7019 / 6999 -> 6305, retitled SL-PP00 (p.15
-  X-Press for X-1 / XCE / XCM / XCT), 2026-11-14.
-  Project 7 / Grizzly (XC-Pro) X-Press 6917 / 6938 -> 6316 SL-PP10 (p.10 XC-Pro
-  page; 6312 SL-XP10 is the 1992 code), 2026-11-14.
-  Generator overrides already edited; diff is exactly these 7 specs. Still open:
+- **SunTour 1990 follow-through — applied 2026-11-14.** The 2026-11-13
+  catalogue load (source 385) added 13 rear derailleur rows (11026-11128) but
+  changed no bike links. Follow-through was applied and read back: 9 rows,
+  rerun produced 0 changes; Rear Derailleur coverage became 792 / 976. Nyala
+  front / brake / crank specs link to 11072 / 11074 / 11076. XCE-4050 front
+  and rear specs on the 1989 Bianchi Forte / Volpe remain unlinked: XCE is
+  marked new for 1990 and XE01 is a 1992 code, so neither identifies the 1989
+  parts. Forte crank 18618 also remains unlinked. X-Press shifters 7019 / 6999
+  link to 6305 SL-PP00; Project 7 / Grizzly shifters 6917 / 6938 link to 6316
+  SL-PP10. Generator overrides match the applied changes.
+  **Open:** 1990 Bianchi Nyala rear derailleur spec 7018 remains unlinked because
+  the catalogue lists both RD-XT00 (11070) and RD-XT10 (11071) without evidence
+  to distinguish them. Revisit only if a bike photo, period parts document or
+  other source identifies which model the Nyala used.
   Group 156 fixed 2026-11-14 (user approved): 1981 Shimano BMX rows moved to new Shimano groups 331
   Shimano-DX (BMX, 1981) x9 and 332 Shimano-SX (BMX, 1981) x7 (7540 BL-MX10
   "Shimano-BMX" in SX by its MX10 code); 9625 BL-M600-MX -> 327 DX (BMX); 7521
@@ -446,7 +435,7 @@ Miyata Omnium / 912 gearing and GMG shifters do not establish RD-6207 versus RD-
 
 - Bottom brackets (photo review 2026-11-13): keep Cambio Rino 16 / 17 apart: 16 photographs cups stamped English 1.37 x 24; 17 is an Italian 36 x 24 complete set with a 121mm square-taper axle. Sugino Super Mighty Pista 162 / MS-68 163 remains unresolved: 163 has an identified 109mm MS-68 / NJS axle and marked cups; 162's photograph does not establish the same code or NJS specification. Earlier catalogue assignment of 162 to Super Mighty track was a judgement. OMAS 130 / 130 ST and 132 / 132 ST kept apart (different seals, dimensions and weights); these decisions are now in `REVIEWED_NOT_DUPLICATES`.
 
-`node scripts/duplicate-report.js` (read-only; `--merge`, `--used`, `--relation=`, `--brand=`, `--category=`, `--json`, `--near` for cross-brand / renamed pairs, `--paren` for a model name hidden in another row's parentheticals, `--reviewed` with either for pairs already kept apart; logic and tests in `duplicate-classify.js` / `test/duplicate-classify.test.js`) groups `component_detail` rows by brand + category + title ignoring parentheticals and tags each extra row against a survivor as duplicate / cosmetic / configuration / generation / review / variant. **2026-11-13 report:** duplicate 0, cosmetic 0, configuration 486, generation 354, review 0, variant 21. No database changes were made by this audit. The report is a candidate finder, not an exhaustive duplicate verdict. Method for a merge: repoint `bike_spec.component_id` and any generator override, keep the row with the weight / wider years, fold the other's facts into its description, delete the extra guarded by id + title. A `review` row with a VeloBase `source_id` can often be settled from its photos (`velobase.com/Pages/ViewComponent.aspx?ID=<source_id>`); image GUIDs differ from component GUIDs, so read the page's photo links.
+`node scripts/duplicate-report.js` (read-only; `--merge`, `--used`, `--relation=`, `--brand=`, `--category=`, `--json`, `--near` for cross-brand / renamed pairs, `--paren` for a model name hidden in another row's parentheticals, `--reviewed` with either for pairs already kept apart; logic and tests in `duplicate-classify.js` / `test/duplicate-classify.test.js`) groups `component_detail` rows by brand + category + title ignoring parentheticals and classifies every unordered pair as duplicate / cosmetic / configuration / generation / review / variant. Filters and totals apply to pairs; see [report semantics](README.md#reviewing-duplicate-components). **Historical 2026-11-13 report (survivor-relative row counts, not current pair counts):** duplicate 0, cosmetic 0, configuration 486, generation 354, review 0, variant 21. No database changes were made by this audit. The report is a candidate finder, not an exhaustive duplicate verdict. Method for a merge: repoint `bike_spec.component_id` and any generator override, keep the row with the weight / wider years, fold the other's facts into its description, delete the extra guarded by id + title. A `review` row with a VeloBase `source_id` can often be settled from its photos (`velobase.com/Pages/ViewComponent.aspx?ID=<source_id>`); image GUIDs differ from component GUIDs, so read the page's photo links.
 - **Report follow-ups closed 2026-11-13:** FRM A-Set 10395 / 10396 (1-inch / 1-1/8-inch), Schwalbe Blizzard Pro 10225 / 10227 (37 / 67 TPI), Schwalbe Stelvio 10228 / 10229 (700C / 650C) and Mavic Helium clincher 10376 / 10377 (26-inch / 622x15) now classify as configurations. Added recognition of casing density, wheel dimensions and inch fittings; compared the saved DB report before/after: only these four classifications changed. No linked specs on these rows. The manual research questions below remain open despite zero automatic merge/review flags.
 - **Near-pair follow-up, 2026-11-13:** OMAS 120 S Big Sliding 10681 / 120 D Big Sliding 10682: closed 2026-11-14, kept apart; Guida '96 scan 52 prints both word for word identically (1", 98 g, L. 39.000), only the letter differs. Kept apart and registered: Gipiemme Tecno 724 / M 724 and 416 / M 416 (road / MTB); 716 PRO / C 716 PRO and 416 / C 416 (alloy / carbon rims). No linked specs on these candidates.
 - Bare Gipiemme Sprint bike-spec identification remains ambiguous; keep other Azzurra components separate without independent evidence.

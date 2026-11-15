@@ -1,9 +1,9 @@
-// Groups component_detail rows that look like the same part and says how each
-// extra row relates to the one worth keeping, so scripts/duplicate-report.js
-// can list what is safe to merge and what is a real variant. Rows share a group
+// Groups component_detail rows that look like the same part and compares every
+// pair, so scripts/duplicate-report.js can list merge candidates and variants.
+// A candidate still needs review before merging. Rows share a group
 // when brand, category and the title agree once parentheticals, accents,
 // punctuation and spacing are ignored ("Weinmann AG 500 (hex socket center
-// bolt, red)" and "Weinmann AG 500"). Each non-survivor row is then one of:
+// bolt, red)" and "Weinmann AG 500"). Each pair is then one of:
 //
 //   duplicate      same part: identical title and no year conflict
 //   cosmetic       differs only by colour, lettering, label, washer or finish
@@ -89,15 +89,25 @@ function pickSurvivor(rows) {
   })[0]
 }
 
+// Compare qualifier clauses rather than whole parentheticals. Shared speed counts
+// must not hide a finish difference: (6 speed, gold) / (6-speed, silver).
+function qualifierParts(title) {
+  return parentheticals(title).flatMap(p => fold(p)
+    .replace(/\b(\d+)\s*[- ]?\s*(?:speeds?|sp)\b/g, ', $1 speed,')
+    .split(/[,;]/).map(s => s.trim().replace(/\s+/g, ' ')).filter(Boolean))
+}
+
 // How `row` relates to `survivor`.
 function relate(row, survivor) {
   if (fullKey(row.title) === fullKey(survivor.title)) {
     return yearsDisjoint(row, survivor) ? 'generation' : 'duplicate'
   }
-  // What tells the two titles apart: parentheticals only one of them carries.
-  const mine = parentheticals(row.title)
-  const theirs = new Set(parentheticals(survivor.title).map(fold))
-  const difference = [...mine.filter(p => !theirs.has(fold(p))), ...[...theirs].filter(p => !mine.map(fold).includes(p))].join(' ')
+  const mine = qualifierParts(row.title)
+  const theirs = qualifierParts(survivor.title)
+  const difference = [...mine.filter(p => !theirs.includes(p)), ...theirs.filter(p => !mine.includes(p))].join(' ')
+  if (!difference && fullKey(dropParentheticals(row.title)) === fullKey(dropParentheticals(survivor.title))) {
+    return yearsDisjoint(row, survivor) ? 'generation' : 'duplicate'
+  }
   if (yearsDisjoint(row, survivor, true) || GENERATION_WORDS.test(difference)) return 'generation'
   if (CONFIG_WORDS.test(difference) || CONFIG_DIMENSIONS.test(difference)) return 'configuration'
   if (COSMETIC_WORDS.test(difference)) return 'cosmetic'
@@ -546,19 +556,26 @@ function buildGroups(rows) {
   for (const members of byKey.values()) {
     if (members.length < 2) continue
     const survivor = pickSurvivor(members)
-    const others = members.filter(r => r !== survivor)
-      .map(row => {
-        const relation = relate(row, survivor)
-        // A two-row group's entry describes the pair, so it still applies when a
-        // new bike link turns the registered row into the survivor (7427 / 4501,
-        // 2026-11-14). In larger groups only the registered row is kept.
-        const reviewed = REVIEWED_VARIANTS.has(row.component_id) ||
-          (members.length === 2 && REVIEWED_VARIANTS.has(survivor.component_id))
-        const kept = (relation === 'cosmetic' || relation === 'duplicate' || relation === 'review') && reviewed
-        return { row, relation: kept ? 'variant' : relation }
-      })
+    const pairs = []
+    const sorted = [...members].sort((a, b) => a.component_id - b.component_id)
+    for (let i = 0; i < sorted.length; i++) {
+      for (let j = i + 1; j < sorted.length; j++) {
+        const a = sorted[i]
+        const b = sorted[j]
+        const relation = relate(a, b)
+        // Pair decisions and row-level kept variants survive any survivor change.
+        // Protecting a reviewed row does not suppress other pairs in the group.
+        const reviewed = REVIEWED.has(reviewedKey(a.component_id, b.component_id)) ||
+          REVIEWED_VARIANTS.has(a.component_id) || REVIEWED_VARIANTS.has(b.component_id)
+        const kept = ['cosmetic', 'duplicate', 'review'].includes(relation) && reviewed
+        pairs.push({ a, b, relation: kept ? 'variant' : relation })
+      }
+    }
+    // Retain the original survivor-relative view for callers; the report uses pairs.
+    const others = pairs.filter(p => p.a === survivor || p.b === survivor)
+      .map(p => ({ row: p.a === survivor ? p.b : p.a, relation: p.relation }))
       .sort((a, b) => a.row.component_id - b.row.component_id)
-    groups.push({ survivor, others })
+    groups.push({ survivor, others, pairs })
   }
   return groups.sort((a, b) => b.others.length - a.others.length || a.survivor.component_id - b.survivor.component_id)
 }

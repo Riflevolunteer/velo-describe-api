@@ -1,15 +1,15 @@
 // Reports component_detail rows that look like the same part (see
-// duplicate-classify.js): one survivor per group, each extra row tagged
-// duplicate / cosmetic / configuration / generation / review / variant, with how many
-// bike_specs would need repointing if it were merged away. Read-only; merging
+// duplicate-classify.js): every unordered pair within each group is tagged
+// duplicate / cosmetic / configuration / generation / review / variant.
+// Counts are pair comparisons, not distinct rows or a merge plan. Read-only; merging
 // is a separate reviewed .sql file run through scripts/load-sql.js.
 //
 //   node scripts/duplicate-report.js                      summary + all groups
 //   node scripts/duplicate-report.js --merge              only merge candidates (duplicate, cosmetic)
-//   node scripts/duplicate-report.js --relation=review    only groups with that relation
+//   node scripts/duplicate-report.js --relation=review    only pairs with that relation
 //   node scripts/duplicate-report.js --brand=Weinmann     brand title contains text
 //   node scripts/duplicate-report.js --category=Brakes    category title contains text
-//   node scripts/duplicate-report.js --used               only groups where a non-survivor is linked from a bike_spec
+//   node scripts/duplicate-report.js --used               only pairs with a bike_spec on either endpoint
 //   node scripts/duplicate-report.js --json               machine-readable
 //   node scripts/duplicate-report.js --near               cross-brand / renamed pairs (findNearPairs) instead of groups;
 //                                                         takes --brand, --category, --used, --reason=code|name|brand, --json;
@@ -113,34 +113,39 @@ conn.query(sql, (err, rows) => {
   let groups = buildGroups(rows);
   if (flags.brand) groups = groups.filter((g) => has(g.survivor.brand, flags.brand));
   if (flags.category) groups = groups.filter((g) => has(g.survivor.category, flags.category));
-  if (flags.relation) groups = groups.filter((g) => g.others.some((o) => o.relation === flags.relation));
-  if (flags.merge) groups = groups.filter((g) => g.others.some((o) => MERGE_CANDIDATE.has(o.relation)));
-  if (flags.used) groups = groups.filter((g) => g.others.some((o) => o.row.used > 0));
+  groups = groups.map((g) => ({ ...g, pairs: g.pairs.filter((p) =>
+    (!flags.relation || p.relation === flags.relation) &&
+    (!flags.merge || MERGE_CANDIDATE.has(p.relation)) &&
+    (!flags.used || p.a.used > 0 || p.b.used > 0)
+  ) })).filter((g) => g.pairs.length);
 
-  // Totals count every extra row in the listed groups, whatever the filter.
+  // Count only displayed pairs. A component can occur in several comparisons;
+  // these totals must not be interpreted as rows to delete or links to repoint.
   const tally = {};
   for (const g of groups) {
-    for (const o of g.others) {
-      const t = (tally[o.relation] = tally[o.relation] || { rows: 0, repoint: 0 });
-      t.rows += 1;
-      t.repoint += o.row.used;
+    for (const p of g.pairs) {
+      const t = (tally[p.relation] = tally[p.relation] || { pairs: 0 });
+      t.pairs += 1;
     }
   }
 
   if (flags.json) {
-    console.log(JSON.stringify({ summary: tally, groups }, null, 2));
+    console.log(JSON.stringify({ summary: tally, groups: groups.map(({ others, ...g }) => g) }, null, 2));
     return;
   }
 
   console.log(`${groups.length} groups, ${rows.length} component_detail rows scanned`);
   for (const rel of ['duplicate', 'cosmetic', 'configuration', 'generation', 'review', 'variant']) {
     const t = tally[rel];
-    if (t) console.log(`  ${rel.padEnd(13)} ${String(t.rows).padStart(4)} rows, ${t.repoint} bike_specs on them`);
+    if (t) console.log(`  ${rel.padEnd(13)} ${String(t.pairs).padStart(4)} pairs`);
   }
   console.log('');
   for (const g of groups) {
     console.log(`${g.survivor.brand} / ${g.survivor.category}`);
-    console.log(`  keep      ${describe(g.survivor)}`);
-    for (const o of g.others) console.log(`  ${o.relation.padEnd(13)} ${describe(o.row)}`);
+    for (const p of g.pairs) {
+      console.log(`  ${p.relation}`);
+      console.log(`    ${describe(p.a)}`);
+      console.log(`    ${describe(p.b)}`);
+    }
   }
 });

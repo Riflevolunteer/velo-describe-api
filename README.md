@@ -35,6 +35,36 @@ wipe-before-reload step that only made sense for that crawl and had become
 actively destructive to catalogue-only data — see git history if you need any
 of it back).
 
+## Reviewing duplicate components
+
+`node scripts/duplicate-report.js` is read-only. It groups rows by brand,
+category and title without parentheticals, then compares every unordered pair
+within each group, including pairs that exclude the preferred survivor.
+`--merge` shows duplicate/cosmetic candidates; `--relation=`, `--used`,
+`--brand=` and `--category=` narrow the results. Combined filters must match
+the same pair; `--used` checks bike links on either endpoint. Candidates need
+evidence review before any merge.
+
+Text output identifies both endpoints. JSON groups contain `survivor` and
+`pairs: [{a, b, relation}]`; summary entries contain `{pairs: N}`. Counts are
+comparisons, so one row may occur in several pairs. They are not counts of
+distinct components, proposed deletions or links to repoint. This replaces the
+old survivor-relative JSON `others` and summary `rows`/`repoint` fields.
+`buildGroups` retains its survivor-relative `others` view for code callers.
+The separate `--near` and `--paren` modes retain their existing pair output.
+
+Shared qualifier clauses and speed counts are removed before classifying the
+difference: `(6 speed, gold)` versus `(6-speed, silver)` is cosmetic, while
+different speed counts are configurations. Disjoint dates remain generations.
+Recorded kept-apart pairs and rows in `REVIEWED_VARIANTS` stay protected from
+merge recommendations whichever endpoint is preferred, including in larger
+groups; other pairs in those groups are still compared.
+
+Validated 2026-11-15 with classifier regressions (including the historical,
+already-merged Regina 2177/2178 example) and CLI tests using fixed query results
+for pair output, combined filters, counts and reviewed variants. This tooling
+change does not establish new live DB duplicate counts or apply any merges.
+
 ## TODO
 
 See [TODO.md](TODO.md).
