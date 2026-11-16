@@ -1516,6 +1516,25 @@ VeloBase pages (ViewComponent.aspx?ID=<source_id>) give a model field for most b
   bike CSVs changed only specs 3320, 6910, 6931, matching the DB; no dangling bike_spec
   references; no quality-report findings; SunTour duplicate report unchanged.
 
+## Placeholder rows and SunTour Quattro — 2026-11-16 review
+
+- 6255 "SunTour (1980's)" shifter (VeloBase 7DF320F2): no model field; top-mount friction
+  down-tube lever, aluminium, "1979 - Mid 1980's", OEM on a Sekai SX 2000 with V-GT Luxe and
+  ARX. Could be any top-mount lever, so it is not an identity. No links.
+- 5931 "SunTour (internal binder type)" seat post (FA0C0437): no model, years N/A;
+  cam-action post for aluminium Schwinn Paramounts with no external binder. No links.
+- 6258 "SunTour Quattro" shifters (BFA80E6B): 7-speed AccuShift, clamp-on down-tube,
+  aluminium, "Late 1980's". VeloBase's notes: Quattro was a SunTour run made for the Bianchi
+  Campione d'Italia from 1989 (Cyclone 7000 in 1987-88), never an official SunTour group and
+  absent from SunTour catalogues. This supersedes the earlier TODO reading that Quattro was only
+  a Bianchi label for some other SunTour model. Links 18470 (1989 Campione d'Italia), 7184 (1990
+  Campione d'Italia), 19492 (1991 Trofeo) are kept. The matching Quattro derailleurs (FD 18468
+  / 7182 / 19490, RD 18469 / 7183 / 19491) have no rows.
+- **Applied 2026-11-16 (user approved):** deleted 6255 and 5931 (old values above); 6258
+  description rewritten from VeloBase (old "SunTour Quattro, Japan"), year_from 1980 -> 1989,
+  source_ref stays 1. Validation: 3 rows, rerun 0, all 93 bike CSVs regenerate identically,
+  Quattro links unchanged, no dangling bike_spec references, no quality-report findings.
+
 ## Sprint (non-index) / Cyclone stub check — 2026-11-16
 
 - 4002 PL-5300 Cyclone: Edition No. 62 (source 348) printed p.8, alloy body, black steel

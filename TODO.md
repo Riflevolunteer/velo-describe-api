@@ -109,10 +109,8 @@ Evidence and exact affected specs are in the
 - **SunTour VeloBase stub rows** (description only "<title>, Japan[, N grams]"; mostly source 1). Prepare reviewed SQL, apply only after approval:
   1. *Rewrite from held catalogues* (coded rows whose model is in a loaded SunTour edition). Not in any held SunTour edition: 1046 CB-4700 Superbe Pro long reach and 2613 FD-3200 Le Tech (see suntour.md); want a VeloBase photo or another period source naming them. 3611 HB-SL01-R is not in the 1992 or 1993 catalogues (the SL rear there is freehub 7989 FH-SL01): check its VeloBase photo and merge into 7989 if it is a freehub, otherwise find a source. 171 BB-5000 "Sprint" (1980-1980 import date) is in no held catalogue and is not BB-500 8819 (VeloBase specimen: 9 balls, Campagnolo taper; BB-500 has 11 balls, Superbe taper): find a 1986-87 SunTour catalogue covering the non-index Sprint group before dating or describing it.
   2. *Uncoded stubs with no coded row to merge into*: 1335 / 1336 / 1337 Superbe chainrings and 4006 "Radius" pedal (1990 Bianchi Eros): find a catalogue page with their codes (VeloBase evidence in suntour.md). 3138 HS-XP01 still carries VeloBase 1980-1990 dates; date it if a 1991 SunTour catalogue turns up. 2662 is already tracked under Edition No. 89 p.13.
-  3. *Generic placeholders, 0 links*: propose deleting 6255 "SunTour (1980's)" shifter and 5931 "SunTour (internal binder type)" seat post unless a VeloBase photo identifies a model.
-  4. *6258 "SunTour Quattro" shifter* (3 Bianchi links, 1980-1991): Quattro is probably Bianchi's group label (see Rear Derailleurs). Find the actual SunTour lever, then relink or null the links and retire the row.
-  5. *Imported decade dates* (1980-1980, 1970-1980, 1980-1990, NULL) on the stubs above: correct from catalogue years as each row is rewritten. Do not widen dates on stubs that remain unsourced.
-  6. *1989 Bianchi Tangent Brakes "SunTour XC-9010"* (spec 18675) links 1055 CT-XC10, which Edition No. 89 calls rear only: decide whether to keep it, null it as a combined front/rear spec, or point it at 1054 CT-XC00.
+  3. *Imported decade dates* (1980-1980, 1970-1980, 1980-1990, NULL) on the stubs above: correct from catalogue years as each row is rewritten. Do not widen dates on stubs that remain unsourced.
+  4. *1989 Bianchi Tangent Brakes "SunTour XC-9010"* (spec 18675) links 1055 CT-XC10, which Edition No. 89 calls rear only: decide whether to keep it, null it as a combined front/rear spec, or point it at 1054 CT-XC00.
 - Campagnolo hub 1253: check Cat 17 p.54 against row 3232 ("1253 kidney-bean at 1972 only", still current in 1974); needs the page image.
 
 ## Open: link coverage (bike_spec -> component_id)
@@ -268,13 +266,13 @@ Remaining era mismatches: 1983 Bianchi Rallye generic "Mafac cantilever" -> 1001
 - **Open:** 1990 Bianchi Nyala rear derailleur spec 7018 remains unlinked because the 1990 SunTour catalogue lists both RD-XT00 (11070) and RD-XT10 (11071) without evidence to distinguish them. Revisit only if a bike photo, period parts document or other source identifies which model the Nyala used.
 - **Candidates to identify:** 1979 Miyata 310 / 200 "SUN TOUR Seven" (20424 / 20445; 4755 Seven 2320 1976-79 or 4756 RD-1900 1978-85); 1994 Cinelli Genius Strada "Campagnolo Record" (20196; RD-11RE 1993-94 or RD-21RE 1994); 1994 Cinelli Velociraptor "Shimano Alivio" (20177; earliest row RD-MC12 starts 1995).
 
-- No suitable row: Simplex SX 620 / SX 620 TSP (5, 1987-88 Peugeot; already a source gap), Super Criterium (1973 Peugeot); Shimano RD-M535 (2, 1987 Peugeot), Z513GS / Z105 (1986 Raleigh); SunTour SU-2 (1985 Raleigh), Quattro (3, 1989-91 Bianchi; absent from SunTour Edition No. 89, so probably Bianchi's own "Quattro" group label: find a Bianchi-side source naming the actual SunTour model); Ofmega Super Competizione rear (1988 Colnago).
+- No suitable row: Simplex SX 620 / SX 620 TSP (5, 1987-88 Peugeot; already a source gap), Super Criterium (1973 Peugeot); Shimano RD-M535 (2, 1987 Peugeot), Z513GS / Z105 (1986 Raleigh); SunTour SU-2 (1985 Raleigh), Quattro (3, 1989-91 Bianchi; a SunTour-made run sold only to Bianchi, per VeloBase 6258, so no SunTour catalogue lists it: add a row only from a specimen photo or code); Ofmega Super Competizione rear (1988 Colnago).
 
 - Further unlinked identifications: 1981 Kalkhoff bare Shimano 600 (three specs); 1988 Colnago AL 11 SIS. Do not classify these as missing component rows.
 
 ### Front Derailleurs
 
-- No suitable row: Shimano FD-M236 (2, 1987 Peugeot), Light Action FD-L525 / L532 (1987 Bianchi), 1987 Tourney, Z105 (1986 Raleigh); SunTour Quattro (2, 1989-90 Bianchi; see the rear-derailleur Quattro note); Simplex Foret front (2, 1989 Peugeot), SX 432 (1987 Peugeot); Huret Luxe front (4, 1970-71 Raleigh); Ofmega Super Competizione front (1988 Colnago); Campagnolo Velox front (1974 Falcon).
+- No suitable row: Shimano FD-M236 (2, 1987 Peugeot), Light Action FD-L525 / L532 (1987 Bianchi), 1987 Tourney, Z105 (1986 Raleigh); SunTour Quattro (3, 1989-91 Bianchi; see the rear-derailleur Quattro note); Simplex Foret front (2, 1989 Peugeot), SX 432 (1987 Peugeot); Huret Luxe front (4, 1970-71 Raleigh); Ofmega Super Competizione front (1988 Colnago); Campagnolo Velox front (1974 Falcon).
 - **Huret / Sachs Huret front derailleurs:**
   1. **Rider double front (source gap):** 1987 Manosque "Huret Rider", 1989 Avoriaz "Sachs-Huret Rider", Lautaret / Lavandou "Sachs-Huret Rider 2" (42x52 doubles) have no row; find a 1987-89 Sachs-Huret catalogue listing it.
 - **Simplex front derailleurs:**
