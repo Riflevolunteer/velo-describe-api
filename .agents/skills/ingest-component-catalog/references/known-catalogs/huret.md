@@ -185,6 +185,61 @@ PXR 80 front photo/parts specification showing its cage and clamp. Preserve
 the current links pending that review. Temporary page copies were removed;
 documentation passed `git diff --check`. No SQL was prepared or applied.
 
+## Raleigh Randonneur long-cage identification — 2026-11-16
+
+The original 1987 UK Raleigh **p.13** includes a dedicated rear-mechanism
+close-up in its left-hand detail strip, not just the complete-bike photograph.
+Read at the original scan size and compared with the VeloBase specimen photos
+for **4403 AR47.1T** and **4413 AR47.2T**. This resolves the earlier rear-cage
+identity question: the catalogue depicts the **earlier AR47.1T Touring, 4403**.
+The code is identified by construction/photo comparison, not printed in the
+Raleigh specification table.
+
+- [Original catalogue page](https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1987_3.html),
+  source **224**, p.13: its transmission text explicitly specifies long cage.
+  The detail photograph shows the straight parallelogram, horizontal New
+  Success badge, and long slotted outer cage with a broad loop around the
+  lower pulley. These match 4403's specimen, rather than the slanted ARIS body
+  on 4413. The same p.13 scan is also available at
+  [Ebykr](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1987-raleigh-handbuilt-lightweights-catalog-p13.webp);
+  it is a duplicate of the same 1000px-wide scan, not independent higher
+  resolution evidence. Enlarging the detail added no image information.
+- Independently photographed [AR47.1T specimen](https://www.disraeligears.co.uk/site/sachs-huret_new_success_touring_derailleur_471t.html)
+  and its [full-size image](https://www.disraeligears.co.uk/site/00_main_images/sachs-huret_new_success_touring_derailleur_main_image.jpg)
+  show the matching construction. The alternative
+  [AR47.2T specimen](https://www.disraeligears.co.uk/site/sachs-huret_new_success_aris_touring_472t_derailleur.html)
+  has the visibly different slant parallelogram and ARIS styling. Their
+  reported 1985/1988 specimen date stamps are not used to set component
+  production dates or to choose Raleigh equipment by year alone.
+- Corroborating owner evidence: [Rolf's Randonneur account](https://norway2015peterandrolf.wordpress.com/equipment/)
+  calls its New Success mechs original; the [drive-side photograph](https://norway2015peterandrolf.wordpress.com/wp-content/uploads/2015/05/p1020919.jpg)
+  shows the same long-cage shape. This is a restored/modified bicycle with a
+  later drivetrain; the page also uses both 1986 and 1987 labels. It supports
+  the construction comparison, not exact model-year proof. The CycleChat
+  [1987-owner account](https://www.cyclechat.net/threads/which-derailleur-for-7-speed.276957/)
+  reports original friction-ratchet levers but its photos show replacement
+  Shimano equipment; no exact Huret code is derived from that thread.
+
+**Prepared correction, awaiting user approval:** rear spec **8852**, bike
+**497**, Randonneur 18 (1987), `Huret New Success`, **4412 → 4403**. Retain
+source **224**, raw label, value and all component identities/date bounds.
+The old link came from the broad ARIS-from-1987 override; the new evidence
+supports a bike/year-specific exception before that rule, preserving Peugeot
+Savoie / Mont Cenis mappings. Shifter **8849** on 6110 and front **8851** on
+2439 remain separate exact-fitment questions; this rear comparison does not
+by itself identify their codes.
+
+Guarded SQL is retained at
+`/private/tmp/raleigh-cage-review-2026-11-16/raleigh-cage-fix.sql` for review
+and later application. The restoration is 4403 → 4412 on that same spec,
+with its bike/label/source/value guards. The dry-run guard matches exactly
+one live row. The prepared generator change was checked across all **94 CSVs**
+and **20,845 generated specs**: only the Randonneur rear mapping changes;
+the linked count remains **7,544**. The original generated SQL was restored.
+No DB writes or component changes have been made. SQL must still be applied,
+read back and rerun for idempotency after approval. Only that SQL is retained
+as task scratch material; disposable downloads/comparison files were removed.
+
 ## New Success shifter six/seven-speed compatibility — 2026-11-16 review
 
 **Speed compatibility is resolved:** MA 85.5 E, the indexed right lever in
@@ -245,6 +300,8 @@ review 4403 AR47.1T versus 4413 AR47.2T using period fitment evidence before
 changing either the shifter or rear link. A year or ratchet wording alone
 does not distinguish those generations. Leave current links unchanged for
 review, rather than recording the Raleigh as a confirmed MA85.5E fitment.
+The [subsequent rear-detail comparison](#raleigh-randonneur-long-cage-identification--2026-11-16)
+resolves the rear as 4403; that one-link correction is prepared for approval.
 
 **Proposed enrichment, not applied:** retain 6110's current title, search
 text, 1987–1990 dates and three links. After recovering/registering the maker

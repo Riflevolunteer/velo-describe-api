@@ -1121,9 +1121,14 @@ const COMPONENT_OVERRIDES = {
     'simplex sx 640 gt sp': [{ from: 1986, to: 1989, id: 10053 }],
     'sun tour vx gt': [{ from: 1979, to: 1980, id: 4707 }], // 1979-80 Raleigh Super Course / Touring 14: SunTour RD-2400, VX (GT) (1977-84)
     'suntour hero': [{ from: 1986, to: 1986, id: 4746 }], // 1986 Raleigh Record / Sportif / Capri / Grand Mesa: SunTour Hero (Version 1), now 1986-87 from this fitment (Version 2 is undated)
-    // 1987 Raleigh Randonneur 18 "Huret New Success": the 1987 ARIS-era rows (several New Success rows span 1980-96, so the matcher nulls the bare name).
-    // 1985-86: AR 47.1 D (1986 Peugeot (US) Triathlon / Galibier).
-    'huret new success': [{ from: 1985, to: 1986, id: 4402 }, { from: 1987, to: 1988, id: 4412 }], // 1988 Peugeot Mont Cenis too. Sachs Huret ARIS New Success 1st Gen. (the only row dated 1987; 4402 is 1985, 4403 the 1980 touring)
+    // 1987 Raleigh Randonneur: p.13's long-cage close-up matches AR47.1T
+    // (4403), with the straight parallelogram and loop around the lower pulley.
+    // Keep the approved Peugeot ARIS mapping; year alone does not identify it.
+    'huret new success': [
+      { bike: 'Randonneur 18', from: 1987, to: 1987, id: 4403 },
+      { from: 1985, to: 1986, id: 4402 }, // 1986 Peugeot (US) Triathlon / Galibier: AR47.1D
+      { from: 1987, to: 1988, id: 4412 }, // Peugeot Savoie / Mont Cenis: prior ARIS decision
+    ],
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 4449 }], // Competition / Triathlon: RD-1050 105
     'shimano 600 ex': [{ from: 1981, to: 1981, id: 4468 }, { from: 1987, to: 1987, id: 4471 }], // 1981 Criterium: RD-6200 Arabesque short cage, 13/28T (1978-84; RD-6207 is 1984-86) // Road Ace: RD-6208 600EX SIS (1986-87)
