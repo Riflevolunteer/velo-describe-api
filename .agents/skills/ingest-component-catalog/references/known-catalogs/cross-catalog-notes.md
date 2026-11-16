@@ -900,8 +900,12 @@ Weinmann 1129 / 1130 570.
     hubs (Maillard not named) -> 3509. **That hub confirmation is superseded by the
     [2026-11-16 configuration review](huret.md#new-success-hub-configurations--2026-11-16-review):**
     3509's original VeloBase specimen is 126 mm, whereas scan 36 / p.139 prints
-    a 130 mm eight-speed rear. The DB still needs the proposed configuration split
-    and date/provenance repair; the two early Peugeot links remain unchanged.
+    a 130 mm eight-speed rear. The user-approved correction is applied: 3509
+    restored to the 126 mm VeloBase specimen (source 1, exact dates NULL);
+    source-357 front **11426** and 130 mm/eight-speed rear **11427** added,
+    each attested in 1996. Guida '99 has no New Success entry at the corresponding
+    front/rear alphabetical positions, so no 1999 extension. The two early
+    Peugeot links and all generated mappings remain unchanged; SQL rerun zero.
     **Kept apart, probable 1996 -> 1999 renames** (same specs, different printed
     names, no links): Category One 10539 / Category Pro 10222; Disc T 10618 / Disc 10360; FRM Alu-Ergal 10762 / 10764
     / Pro 10303, Carbon-Ergal 10763 / 10765 / Feather 10305. **Distinct:** FRM Ergal post 10635 (two bolts) /

@@ -2,19 +2,20 @@
 
 ## New Success hub configurations — 2026-11-16 review
 
-Read-only follow-up to the shifter compatibility review. Component **3509** is
+Follow-up to the shifter compatibility review; correction subsequently approved
+and applied on 2026-11-16. Component **3509** is
 under Sachs (brand 98), rather than Sachs Huret (171), but supplies the two
 Peugeot New Success hub links discussed in this audit.
 
 - The original [VeloBase specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=135983bd-ce4d-4a99-b1ae-892f21640453)
-  is explicitly a **126 mm rear, threaded-freewheel, 36-hole, low-flange hub**,
+  is explicitly a **126 mm rear, freewheel, 36-hole, low-flange hub**,
   with an aluminium shell and steel axle. Its dating is approximate: late
   1980s to an unknown end. The retained `source_id` is
   `135983BD-CE4D-4A99-B1AE-892F21640453`.
-- The current row instead describes the later guide's paired front/rear
+- At the review baseline the row instead described the later guide's paired front/rear
   configuration: `Sachs New Success aluminium alloy hubs, sport design; front
   100 mm, 18-28-32-36 holes, sealed cartridge bearings; rear 130 mm, 8-speed,
-  24-28-32-36 holes, polished.` Current years are **1980–1996**, `source_ref`
+  24-28-32-36 holes, polished.` Old years were **1980–1996**, `source_ref`
   **357**, title/search text `Sachs-Maillard New Success`, category 13, group NULL.
   The 1980 lower bound is not what the original source says; the 1996 evidence
   describes a different rear spacing and cannot establish this specimen's end.
@@ -32,22 +33,45 @@ Peugeot New Success hub links discussed in this audit.
   **17497** (seven-speed 13x24) remain NULL. This supports investigating the
   early configuration; speed count alone does not prove a hub link wrong, and
   neither bike's generic hub text establishes its precise spacing or drilling.
-  Keep the existing links during this review. The generator's year-scoped
+  Both existing links were retained in the correction. The generator's year-scoped
   overrides also point both hub texts to 3509 (lines identifiable by those texts).
-- Reconciliation checked all New Success titles and Sachs/Galli hub rows:
+- Before insertion, reconciliation checked all New Success titles and Sachs/Galli hub rows:
   **3341** is the separately branded Galli specimen, not a replacement for these
-  Peugeot links. No separate Sachs 130 mm/eight-speed New Success row exists.
+  Peugeot links. No separate Sachs 130 mm/eight-speed New Success row existed.
 
-**Proposed correction, not applied:** preserve stable ID 3509 and its original
-specimen UUID; restore its 126 mm description and VeloBase provenance (source 1).
-Replace the imported exact dates with NULL bounds and preserve the approximate
-late-1980s dating in prose; the 1987/1989 bike fitments remain separate evidence,
-not established manufacturing endpoints. Reconcile the later guide entries as
-separate front/rear records under source 357, checking the recorded Guida '99
-match before assigning any later attestation. Then validate every generated
-mapping and both live bike links, guarding against name-only matches crossing
-configurations. No DB, source registration or generator changes in this review;
-no SQL prepared. Downloaded guide scans were disposable audit scratch files.
+**Applied correction (user approved):**
+
+| Row | Change |
+| --- | --- |
+| **3509**, Sachs-Maillard New Success | Preserved ID, title/search text, specimen UUID, brand/category and NULL group. Restored VeloBase provenance **357 → 1**; dates **1980–1996 → NULL/NULL**. Description: `Sachs-Maillard New Success rear freewheel hub, 126 mm spacing, 36 holes, low flange; aluminium shell and steel axle. Approximate dating: late 1980s; exact years unknown.` |
+| **11426**, Sachs New Success front hub | Added under source **357**, group **92** (Sachs New Success), brand 98/category 13. Aluminium alloy, 100 mm, 18/28/32/36 holes, sport design, sealed cartridge bearing; printed p.137. |
+| **11427**, Sachs New Success rear hub (130 mm, 8-speed) | Added under source **357**, group **92**, brand 98/category 13. Aluminium alloy, 130 mm, eight-speed, 24/28/32/36 holes, sport design, polished; printed p.139. No cassette interface inferred. |
+
+New source UUIDs: 11426 `3c8f3bd0-5a85-40da-ab5b-5b7896bafcc6`;
+11427 `6c5f4cd8-1b58-4518-a9d8-81f499e241a8`. Search text was generated
+with the maintained helper (`Sachs New Success front hub` / `Sachs New Success rear hub`).
+Both new rows have **1996–1996**, recording this catalogue attestation rather
+than established manufacturing endpoints. Checked Guida '99's alphabetical
+positions on [front-hub scan 31 / p.122](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_31_main_image.jpg)
+and [rear-hub scan 33 / p.124](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_33_main_image.jpg)
+(also rear continuation scan 34): Rudelli proceeds to Shimano without a Sachs
+New Success entry. This supplies no 1999 attestation and does not prove an end
+of production. The 1987/1989 bike fitments likewise remain separate evidence,
+not manufacturing endpoints for 3509.
+
+Validation: exactly one component update and two inserts; guarded SQL rerun
+**zero**. Complete component snapshots differ only in those approved changes;
+all **20,845 live specs**, **1,211 bikes** and source records are unchanged.
+All **94 CSVs** regenerated (**20,845 generated specs**, **7,544 linked**): the
+entire generated SQL is byte-identical before/after. The original generated
+file was restored after comparison. A fresh Sachs/New Success hub-spec search
+returns only the two retained Peugeot links; no new supported links remain.
+Sachs hub duplicate, near and parenthetical reports all return zero candidates.
+The integrity report has zero errors; the only finding on these rows is the
+expected incomplete-date review for 3509's intentionally unknown exact years.
+Generator override comments explain the retained early identity; matching
+behaviour is unchanged. Temporary SQL, snapshots and downloads were removed
+after readback, mapping comparison and idempotency validation.
 
 ## Rival fronts 1086-00 / AV62.1D — 2026-11-16 evidence review
 
@@ -429,9 +453,10 @@ manufacturer production-date confirmation. Main findings and proposed work:
    Sachs crank 1730 is the later Campagnolo-made model, so its name alone is
    not a supported 1987/1989 match. The old TODO saying the 1987 New Success
    hub is unlinked was stale: **15096** and **17495** already link Sachs
-   hub **3509**. That row's description is now the 1996 130mm/eight-speed
-   configuration (source 357). The [subsequent hub configuration review](#new-success-hub-configurations--2026-11-16-review)
-   confirms that its original specimen is 126 mm; correction remains pending.
+   hub **3509**. At this audit baseline its description carried the 1996
+   130mm/eight-speed configuration (source 357). The [subsequent hub configuration review](#new-success-hub-configurations--2026-11-16-review)
+   confirmed that its original specimen is 126 mm; the approved correction
+   restored 3509 and recorded the later hubs separately as 11426 / 11427.
 
 The broader link search includes Huret-branded specs, links into brand 171
 whose text omits the maker, and the newly loaded 1984 Motobecane catalogue.

@@ -1412,6 +1412,8 @@ const COMPONENT_OVERRIDES = {
     'normandy with quick release': [{ from: 1970, to: 1972, id: 3390 }], // 1970-72 Raleigh Super Course DL 100: Normandy Sport, as the 1973 Super Course
     'gipiemme normal flange 32 holes': [{ from: 1981, to: 1981, id: 3352 }], // 1981 Bianchi Rekord 748: Gipiemme Special 600160 (small built-in flanges, 32 holes; 1970-83 from the SRC 1983 catalogue)
     'gipiemme bianchi special alloy normal flange 32 hole': [{ from: 1978, to: 1978, id: 3352 }], // 1978 Bianchi Rekord/748: Gipiemme Special 600160
+    // Retain the early 126 mm specimen (3509); later 1996 front/rear hubs
+    // 11426/11427 are separate configurations. See huret.md's hub review.
     'huret new success': [{ from: 1987, to: 1987, id: 3509 }], // 1987 Peugeot Savoie: Sachs-Maillard New Success
     'sachs huret "new success"': [{ from: 1989, to: 1989, id: 3509 }], // 1989 Peugeot (FR) Savoie
     'sanshin ax 20 sealed alloy small flange': [{ from: 1986, to: 1986, id: 9015 }], // 1986 Peugeot (US) Canyon Express: Sansin AX-20 Off-Roader nut type (9015 year_from 1987 -> 1986)
