@@ -460,6 +460,7 @@
 - CRE-100, bare CRE/CR-E and CLE-100 are not established aliases. Withdraw the
   old TODO assumption that they are probably one model. Also keep CT-P5E apart
   from CT-P5 5857 and MTE-300/110 apart from MTE-100 5849 pending a crosswalk.
+  (CT-P5E part superseded 2026-11-16: own row 11316, see the CT-P5E section below.)
   Generic fluted posts do not identify a numbered version.
 - No new primary specifications recovered for CRH-310/MTH-100 hubs, MTS-131/
   CPS-80 stems or the full SAC/SUC/FXC/AXC/CXC crank range. Trek 1985/1987
@@ -598,3 +599,46 @@ promised recoverable links. Six component labels only:
 - Source URLs/pages, decisions, applied IDs, material old/new values and
   validation recorded here. Disposable SQL, scans, scripts, snapshots and logs
   removed after validation; no dependency on task scratch files remains.
+
+## SR CT-P5E from Panasonic USA 1986 — applied 2026-11-16, source 417
+
+- **Evidence.** In the Panasonic Bicycles USA 1986 spec table (`panda27`, printed
+  p.29; rechecked visually by crop), the same Saddle row prints "SR CT-P5" on Pro
+  Touring and "SR CT-P5E" on DX 3000, DX 2000, Track 4000 and Touring Deluxe.
+  Panasonic 1985 and 1987 split the same way, with CT-P5 on the dearer models.
+  CT-P5E is therefore its own catalogue code, not a spelling of CT-P5 5857. This
+  supersedes the 1984-86 Miyata overrides that sent CT-P5E to 5857. Full
+  transcription: `../../../ingest-bike-specs/references/known-catalogs/panasonic.md`.
+- **Source.** 417, `Panasonic Bicycles catalogue, USA (1986)`, US, citing
+  panasonicbikemuseum.info (spec tables pp.28-31).
+- **New row.** 11316 `Sakae/Ringyo (SR) CT-P5E, Custom-P5E`:
+  - Brand 49, Seat Posts 18, group 294 Custom (as 5857), years 1984-1988.
+  - source_id `3a0c6e3a-d261-4256-a3df-253ac0600dca`, search text
+    `Sakae/Ringyo CT-P5E Custom-P5E`.
+  - Description: "Micro-adjusting alloy seat post; a separate code from CT-P5
+    (Custom-P5). 220mm and 250mm fitments listed."
+  - The years come from bike fitment: 1984 Miyata "SR Custom P5E" through the 1988
+    Raleigh "Sakae CTP-5E". They are not introduction or end dates. No weight or
+    diameter is claimed.
+- **Links.** 31 specs:
+  - Moved from 5857 (13): 21323 21531 21592 21509 21548 21679 21657 19055 18862
+    18926 18839 18880 19012 (1984-86 Miyata).
+  - Filled from NULL (18): 8357 8337 8316 (1986 Raleigh Technium; 8357 prints
+    "CPT5E"), 1293 1333 (1987 Bianchi), 22255 22233 22445 22211 22343 22365
+    (1987 Miyata), and 17941 18013 17959 17995 18049 17923 17977 (1988 Raleigh).
+  - 5857 is otherwise unchanged; its 1980-89 range still rests on its other links.
+- **Generator.**
+  - `sr ct p5e`, `sr ct p5e 220mm` and `sr custom p5e` now point at 11316 (they were
+    year-ranged to 5857).
+  - Added `sr cpt5e alloy micro adjust`, `sr ctp5e alloy micro adjust`,
+    `sr ctp 5e alloy micro adjust` and `sakae ctp 5e alloy`.
+- **Validation.**
+  - Preflight: 13 targets on 5857, 18 NULL, no existing CT-P5E row or source.
+  - Load: 1 / 1 / 31 rows. The identical rerun affected 0 rows.
+  - Readback matches every planned field.
+  - Regeneration against the live DB: linked specs 7341 -> 7359. All 31 diff hunks
+    are the CT-P5E specs, and no other mapping changed. Root `bike-update.sql` was
+    not left behind.
+  - duplicate-report (Sakae, Seat): no group, near or parenthetical pair involves
+    11316. `quality-report` has no 11316 flag.
+

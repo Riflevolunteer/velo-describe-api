@@ -93,7 +93,7 @@
   L512 SGS -> RD-L512 10970; AT-50 shifter 7192 (brake auto 1003). Pista:
   Sylvan Track 10043, Sprint Track RH-4400 3612, B115 2876, Astron 11151.
   Ridge Runner: NGC982 697, Ukai 7C 10470, XC-II 4015, Power Thumb 6307.
-  SR CT-P5E -> 5857, CT-P6 5861, SP-154 / SP-155, CTC-5DXC -> 8205 (as
+  SR CT-P5E -> 5857 (superseded 2026-11-16: 11316 SR CT-P5E), CT-P6 5861, SP-154 / SP-155, CTC-5DXC -> 8205 (as
   1986), MTS-100 / MTS-110. 1000 "Levin sealed" forced null (auto hit the
   MTB-225; kept on the Ridge Runner); Sugino GS-LP and VT forced null
   (rows are GS 1980-82 / VT 1980).
@@ -149,7 +149,7 @@
   6272, UB-10 -> LD-3000 6288 (as 1986), XC-2 pedals 4015, New Winner
   6-speed 2238, Perfect 5 / 6 2245 / 7813. MKS Esquartz -> 3858 (auto hit
   the 1983 Esquartz 107), Esquartz 102 3859, Silvan Road 3865. SR CT-P5E ->
-  5857 (as 1986), Custom P6 5861, Royal-2 8230. Araya 20A / 7X / 7XN.
+  5857 (as 1986; superseded 2026-11-16: 11316 SR CT-P5E), Custom P6 5861, Royal-2 8230. Araya 20A / 7X / 7XN.
   Nitto Technomic-Aero -> 8563 Technomic (auto; no aero row).
 - Left unlinked: New Superbe front / rear and Superbe PRO shifter (Superbe
   II vs Superbe Pro, 1984 name ambiguous); Cyclone Mark-2 and Mountech
@@ -513,7 +513,7 @@
   Perfect 6-speed 7813. Others: Sugino VP triple 1970, Sansin RE-60 9003,
   HB-AQ11 7137, Tange MA-60, MKS Esquartz 102 / Sylvan Track, SR SP-155,
   XC-II PL-5100, Dia-Compe GX-400 -> GX-N 8082, 164 levers -> 164G 8873,
-  Araya 20A 4922, SR CT-P5E -> CT-P5 5857, Sugino SPK -> SP-K 5927, Nitto
+  Araya 20A 4922, SR CT-P5E -> CT-P5 5857 (superseded 2026-11-16: 11316 SR CT-P5E), Sugino SPK -> SP-K 5927, Nitto
   55F -> Mod. 55, Olympiad B115, B-804 AA -> 10815 for Ridge Runner / Terra Runner (1986 catalog says NITTO 804 AA Alloy; Koga 1986 identifies B-804 AA as a special ATB aluminium bar), D.I.D maker row 1355 for "DID TRACK".
 - Left unlinked on purpose: New 600 EX rear derailleur, brakes and
   freewheel (6207 vs SIS 6208 both cover 1986; nothing in the text

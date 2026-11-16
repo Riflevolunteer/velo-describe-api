@@ -3796,8 +3796,8 @@ const COMPONENT_OVERRIDES = {
     'sr ct p6c pillar': [{ bike: '210', from: 1983, to: 1983, id: 5861 }, { bike: '110', from: 1983, to: 1983, id: 5861 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'sr ct p6 pillar': [{ bike: '710', from: 1983, to: 1983, id: 5861 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'sr ct p6': [{ bike: '210', from: 1985, to: 1985, id: 5861 }, { bike: '110', from: 1985, to: 1985, id: 5861 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
-    'sr ct p5e 220mm': [{ bike: 'Terra Runner OR', from: 1985, to: 1985, id: 5857 }, { bike: 'Street Runner', from: 1985, to: 1985, id: 5857 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
-    'sr custom p5e': [{ bike: 'Street Runner', from: 1984, to: 1984, id: 5857 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
+    'sr ct p5e 220mm': 11316, // 1985 Miyata: SR CT-P5E, Custom-P5E (separate code from CT-P5; Panasonic USA 1985-87, source 417)
+    'sr custom p5e': 11316, // 1984 Miyata Street Runner: SR CT-P5E, Custom-P5E
     'sr custom p6': [{ bike: '210', from: 1984, to: 1984, id: 5861 }, { bike: 'Terra Runner', from: 1984, to: 1984, id: 5861 }, { bike: '110', from: 1984, to: 1984, id: 5861 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano dura ace ex': [{ bike: 'Carbon Tech 5000', from: 1987, to: 1987, id: 5899 }, { bike: 'Carbon Tech 3000', from: 1987, to: 1987, id: 5899 }, { bike: 'Team Miyata', from: 1987, to: 1987, id: 5899 }, { bike: 'Team Miyata', from: 1985, to: 1985, id: 5899 }, { bike: 'Team Pista', from: 1985, to: 1985, id: 5899 }, { bike: 'Team Miyata', from: 1984, to: 1984, id: 5899 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
     'sr custom p6 alloy 268 dia x 180mm': [{ bike: '610', from: 1982, to: 1982, id: 5861 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
@@ -3827,7 +3827,7 @@ const COMPONENT_OVERRIDES = {
     // 1986 Team Miyata catalog also lists Dura-Ace EX for the seatpost.
     'dura ace ex': [{ from: 1981, to: 1986, id: 5899 }], // Shimano SP-7200, Dura-Ace EX
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
-    'sr ct p5e': [{ bike: '710', from: 1985, to: 1985, id: 5857 }, { bike: '310', from: 1985, to: 1985, id: 5857 }, { bike: 'Pista', from: 1985, to: 1985, id: 5857 }, { bike: '610', from: 1985, to: 1985, id: 5857 }, { from: 1986, to: 1986, id: 5857 }], // CT-P5, Custom-P5 (1980-86)
+    'sr ct p5e': 11316, // 1985-87 Miyata, 1987 Bianchi, "SR CT P5E": SR CT-P5E, Custom-P5E (not CT-P5 5857)
     'sugino spk': [{ bike: 'Pro Miyata', from: 1984, to: 1984, id: 5927 }, { from: 1986, to: 1986, id: 5927 }], // SP-K
     // Finish only: the matcher found it inside 'Cinelli chrome seat pillar' (Raleigh 1970-76).
     chrome: null,
@@ -3850,13 +3850,17 @@ const COMPONENT_OVERRIDES = {
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'campagnolo record strada': [{ from: 1969, to: 1985, id: 5749 }], // Super-Leggera: 1044 Record
     // 1986 Raleigh: SR CT-P5 (Sakae Laprade). 5857 is the later version (1980-82) vs 5858 early;
-    // the CT-P5E cells stay unlinked (no E row).
+    // The CT-P5E cells link to 11316 SR CT-P5E (Technium 440 prints "CPT5E", a transposition).
+    'sr cpt5e alloy micro adjust': 11316,
+    'sr ctp5e alloy micro adjust': 11316,
+    'sr ctp 5e alloy micro adjust': 11316,
     'sr ctp 5 laprade alloy micro adjust': 5857,
     'sr cpt 5 laprade micro adjust': 5857,
     'sr laprade ctp5 alloy micro adjust': 5857,
     // 1988-89 Raleigh "Sakae CTP-5" (2026-11-02): 5857 CT-P5 year_to 1986 -> 1989.
     'sakae ctp 5 alloy': [{ from: 1988, to: 1988, id: 5857 }],
     'sakae ctp 5 alloy micro adjust': [{ from: 1989, to: 1989, id: 5857 }],
+    'sakae ctp 5e alloy': 11316, // 1988 Raleigh: SR CT-P5E, Custom-P5E
     // 1986 Miyata: SR CT-P6 / CT-P6C (5861 year_to 1982 -> 1986; judgement call 2026-11-02).
     'sr ct p 6': [{ from: 1986, to: 1986, id: 5861 }],
     'sp laprade alloy micro adjust': 5857, // Grand Prix, by the same catalogue's rule

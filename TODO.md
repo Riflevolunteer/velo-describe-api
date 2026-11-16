@@ -143,11 +143,11 @@ Named parts with no suitable period row or no source yet (worth a search if a so
 
 SR work is in [the source worklist](#sr-sakae-next-work).
 
-- Remaining SR source gaps: CT-P5E; CRE / CR-E / CRE-100 (keep separate from CLE-100 11308); SRE-100/105; MTE-110 (not MTE-100 5849). See the scoped SR worklist for current evidence. Also no row: Mori Stainless Clad (1986 Miyata); Kalloy SP-243 / SP-250 (1989 Bianchi, with the SP numbers below).
+- Remaining SR source gaps: CRE / CR-E / CRE-100 (keep separate from CLE-100 11308); SRE-100/105; MTE-110 (not MTE-100 5849). See the scoped SR worklist for current evidence. Also no row: Mori Stainless Clad (1986 Miyata); Kalloy SP-243 / SP-250 (1989 Bianchi, with the SP numbers below).
 
 - Source gaps (left 2026-10-30): 1982 Peugeot PH 12 "Simplex Dural, 24 mm" (no 24 mm Simplex post) and 1976 PY 10 "Simplex dural, anodised" (8375 SLJ 3639 is polished, 7305 SLJ4164 starts 1978).
 - Biggest pot: 1987 Raleigh "Sakae fluted alloy with single Allen bolt adjustment" x10 + "SR fluted alloy..." Royal 18 [8836]. The 1983-84 catalogues print the same wording with "CT-P5" (-> 5857), but 1987 drops the model and the 1984 Sirocco was a CT-P6; part of the SR 1983-87 source gap.
-- No suitable row: Kalloy SP-248 / micro-adjust (8) and bare SP-200 / 241 / 242 / 251 (5, likely Kalloy numbers); SR CRE / CR-E / CRE-100 (not CLE-100 11308); SR CT-P5E (5, existing do-not-link); SR MTE 110 (MTE-100 5849 is 1980); Strong NS-3 (3); ITM 201 (3); Gipiemme Quattro; Ofmega Premier / Super Competizione; Shimano Santé (2); Shimano Deore 1986; Control Tech; Zeus Alfa; Simplex Competition (8, plus 2 either/or with Laprade 505).
+- No suitable row: Kalloy SP-248 / micro-adjust (8) and bare SP-200 / 241 / 242 / 251 (5, likely Kalloy numbers); SR CRE / CR-E / CRE-100 (not CLE-100 11308); SR MTE 110 (MTE-100 5849 is 1980); Strong NS-3 (3); ITM 201 (3); Gipiemme Quattro; Ofmega Premier / Super Competizione; Shimano Santé (2); Shimano Deore 1986; Control Tech; Zeus Alfa; Simplex Competition (8, plus 2 either/or with Laprade 505).
 
 ### Rims
 
@@ -338,8 +338,8 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 - **SR / Sakae remaining evidence gaps:** seek exact catalogue/specimen evidence for the unresolved codes below. [Processed sources, rejected aliases and current results](.agents/skills/ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#four-sr-models-from-fuji-1989--applied-2026-11-15-source-412).
   - **Full 1983-88 maker catalogue recovery parked:** No.19 (Sep 1983) and No.23 (Aug 1988) reported, no complete scan recovered; No.20–22 unseen. Velo-Pages 58555 still HTTP 500 on 2026-11-15. Reopen for a new holder/scan/recovery endpoint; repeated broad searches have yielded no full-range source.
-  - **Next available partial evidence:** verify original Schwinn 1985 CRE-100 / SAC310 / CTC-5SG / CXC-T310 specification blocks, then reconcile the exact codes. Trek 1985/1987 and Koga-Miyata 1986 bar-code leads remain in the handlebar worklist. Do not repeat processed sources listed in the notes.
-  - **Keep unresolved:** CRE/CR-E/CRE100 identification (do not alias to CLE-100 11308); CT-P5E versus CT-P5 5857; MTE-110 identification (keep MTE-100 5849 and MTE-300 11307 separate); SRE-100/105; full SAC/SUC/FXC/AXC/CXC range; CRH-310/MTH-100 hubs; MTS-131/CPS-80; MTB-224/CTB/CTR/CTSD. Seek exact model/specimen crosswalks; generic names or later fitment do not identify an earlier configuration.
+  - **Next available partial evidence:** Panasonic 1985-89 original scans now attest CRE-100, SAC-310, CTC-5SG, CXC-300, SXC(-T)310, CTC-532 / 680 and CTB (see the Panasonic item under Japanese and Taiwanese makers); Schwinn 1985 remains for CTC-5SG / CXC-T310 corroboration. Trek 1985/1987 and Koga-Miyata 1986 bar-code leads remain in the handlebar worklist. Do not repeat processed sources listed in the notes.
+  - **Keep unresolved:** CRE/CR-E/CRE100 identification (do not alias to CLE-100 11308); MTE-110 identification (keep MTE-100 5849 and MTE-300 11307 separate); SRE-100/105; full SAC/SUC/FXC/AXC/CXC range; CRH-310/MTH-100 hubs; MTS-131/CPS-80; MTB-224/CTB/CTR/CTSD. Seek exact model/specimen crosswalks; generic names or later fitment do not identify an earlier configuration.
 
 ### French makers 1977-89 (mostly Peugeot specs)
 
@@ -356,11 +356,16 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 ### Japanese and Taiwanese makers
 
 - **Tange headsets 1984-90** (TH-305 / 305C, TH-108, MES sealed, Unique / Unique X / Unique FE, 230 SLP, MX 600M): Cycle Sports (Yaesu) parts directories on Yahoo Auctions Japan (1985, 1987, 1990; paid, also covers SR), retrobike "Tange Catalogues" archive (browser only), a 1985-90 US distributor catalogue; check the 1985-87 Trek, Puch and Panasonic fitment tables.
-- **Bars and stems 1985-92** (H.L. DR-8 / DR-9 / Dirtdrop / semi-rise / HS-P; SR MTB-220 / 224 / 227, CTB, CTR, CTSD; Kusuki KR-LB / SMC-F; ITM Mondial / Krono / Italia aero; Franco Italia; ATAX CTA randonneur; CMC-709 / MS-710): Brügelmann 1986-87 and 1989-92 (rennrad-news threads 136208, 99574), an offline Taipei Cycle Show or Taiwan Bicycle Exporters' Guide. Check the Koga-Miyata 1986 p.19 Kusuki image and the Fuji 1988-91 transcriptions against scans (fitment leads in the log).
+- **Bars and stems 1985-92** (H.L. DR-8 / DR-9 / Dirtdrop / semi-rise / HS-P; SR MTB-220 / 224 / 227, CTB, CTR, CTSD; Kusuki KR-LB / SMC-F; ITM Mondial / Krono / Italia aero; Franco Italia; ATAX CTA randonneur; CMC-709 / MS-710): Brügelmann 1986-87 and 1989-92 (not online; ask the forum holders named in the log), an offline Taipei Cycle Show or Taiwan Bicycle Exporters' Guide. Check the Koga-Miyata 1986 p.19 Kusuki image and the Fuji 1988-91 transcriptions against scans (fitment leads in the log).
 - **MKS pedals and Kusuki bars / stems 1979-87** (Miyata: MKS QR-K1, AR-Road / AR-Road 2, PT-7, AR-5, NT-1, PB-20, PB-100, G-5000; Kusuki WP-B / WP-RB, KD-LB / KR-LB, BMT, Win Sigma, S-Win, RK-90, Rocky 2): acquire Cycle Sports (Yaesu) "オールカタログ" annuals c. 1980-88 (also cover SR); otherwise an MKS edition c. 1980 or 1986-87. [Hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - **VP Components pedals c. 1984-90** (VP-230 / 330 / 331 / 333 / 382S / 389, VP500; 9 specs): a VP pedal catalogue or importer page c. 1989-90; VP needs a component_brand row first.
 - **Dia-Compe 1987-93** (BL-08 aero, 250S aero, GX-400 Aero, DC 630, 984 / 984D): retrobike threads 306479 and 361996 (a poster has the 1992 catalogue; browser only), eBay 800322888787 (1989/90 MTB brochure, photos not retrieved).
-- **Panaracer:** read the panasonicbikemuseum.info USA 1979-89 and EU 1991 / 1993 catalogue pages.
+- **Panasonic USA 1985-89 fitment evidence (read 2026-11-16, [panasonic.md](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md)):** decide, then prepare SQL for review:
+  1. Fitment-backed rows (Fuji 1989 / source 412 pattern) for the SR, Kusuki, MKS PB-20, Dia-Compe DC-280 / 281 and Sugino TGT codes listed there.
+  2. Link misses on existing rows: Araya 18 4921, MKS RT-7 10832 (1985), Sugino SP-KC 5928.
+  3. Identity calls: KKT RT-E1 vs 3773, Dia-Compe 730 vs 8929, Sansin ET-Q / ET-QS, Kusuki WP-RB / bare "WIN".
+
+  Also decide whether to load Panasonic as a bike brand (transcriptions in `/private/tmp/panasonic-1985-89/`). The 1977-84 and 1990-95 catalogues are unread.
 
 ### Italian makers
 
