@@ -1,5 +1,125 @@
 # Huret catalogs processed so far
 
+## Sachs Huret brand quality audit — 2026-11-16, read-only
+
+Scope: **Sachs Huret, brand 171**, all categories. Huret 139 and Sachs 98
+were checked for neighbouring identities and cross-brand bike links, not folded
+into the component totals. No DB, CSV or matcher changes were made.
+
+| Category | Components | Components used | Bike-spec links | VeloBase-only source |
+| --- | ---: | ---: | ---: | ---: |
+| Brakes | 1 | 0 | 0 | 1 |
+| Cranksets | 1 | 0 | 0 | 1 |
+| Front derailleurs | 19 | 8 | 45 | 10 |
+| Rear derailleurs | 29 | 10 | 74 | 16 |
+| Shifters | 20 | 2 | 5 | 9 |
+| Total | 70 | 20 | 124 | 37 |
+
+Used a consistent read-only snapshot with the shared quality-report checks:
+**zero structural errors**, including dangling references, category/group
+conflicts, reversed ranges and duplicate bike specs in scope. Every component
+has a valid source and category/brand association. Eight components lack dates
+(944, 4404–4406, 4409–4411, 6103); 34 descriptions are under 70 characters;
+45 components have no group. These metadata gaps do not establish bad links.
+
+All **37 VeloBase-only source pages** were retrieved successfully and their
+model/date/system fields read. These remain specimen evidence; they are not
+manufacturer production-date confirmation. Main findings and proposed work:
+
+1. **Imported decade dates masquerade as exact years.** Seventeen rows have
+   approximate source dates compressed into exact DB bounds:
+
+   | IDs | Source date wording | Stored bounds |
+   | --- | --- | --- |
+   | 1731, 2432, 2445, 4420, 6113 | Late 1980's, open end | 1980–1980 |
+   | 2433, 2438, 6106, 6114 | 1980's | 1980–1980 |
+   | 2441, 4403 | Mid 1980's | 1980–1980 |
+   | 2434 | 1990's, open end | 1990–1990 |
+   | 2444 | Early 1990's, open end | 1990–1990 |
+   | 4413 | 1990's | 1990–1990 |
+   | 4414 | Early 1990's | 1990–1990 |
+   | 4415 | Mid 1990's | 1990–1990 |
+   | 6104 | 1970's–1980's | 1970–1980 |
+
+   All seventeen have zero bike-spec links. Preserve the source's uncertainty
+   when preparing corrections; do not substitute invented exact introduction
+   years or assume a decade label establishes continuous production.
+   Six more source pages give an explicit start with unknown end, while the
+   DB repeats the start as the end: **2440** (1989), **2442** (1985), **4407**
+   (1984), **4412** (1987), **4416** (1996), **4418** (1990).
+   An attested year can be a conservative availability bound, but is not a
+   discontinuation date. **4417** is a separate case: VeloBase says 1990's,
+   but the approved 1989 Peugeot fitment remains positive evidence for its
+   earlier start; do not undo that correction from the vague specimen label.
+
+2. **Useful model codes missing from titles/descriptions.** Source fields give
+   2445 **AV 62.2D**; 4403 **AR 47.1T**; 4409 **RD R7000**;
+   4412 **47.2D**; 4413 **AR 47.2T**; 4414 **RN500 / 54.01D**;
+   4415 **RNS00**; 4416 **RNS50**; 4420 **AR 41.3 D**;
+   6108 **MA82.4/3E**; 6110 **MA85.5/4E**. Treat these as specimen-page
+   transcriptions pending review, particularly the similar RN500/RNS00
+   spellings. No renames, merges or new aliases have been applied.
+   [4403 specimen](https://velobase.com/ViewComponent.aspx?ID=D8601937-0FD6-48D8-8DC4-CF98D64B2861)
+   identifies a long-cage friction New Success, 36T maximum sprocket / 42T
+   wrap, with approximate mid-1980s dating, contradicting the precise 1980
+   reading. April 1986 manufacturer scan 3 explicitly offers a long-cage New
+   Success, but does not print the touring code: it cannot independently
+   establish AR 47.1T's exact production endpoints.
+
+3. **Descriptions conceal important configurations.** The
+   [944 specimen page](https://velobase.com/ViewComponent.aspx?ID=EB4FE66D-362B-4644-9009-2A94529CB64B)
+   reports Modolo manufacture / Master SLK 90 identity. The
+   [6110 specimen](https://velobase.com/ViewComponent.aspx?ID=46733377-2BA5-459B-B965-CDBB581772AC)
+   is a seven-speed ARIS downtube braze-on shifter; 6108's page says eight-speed
+   ARIS; 6113 describes indexed Rival Sport with selectable modes, whereas
+   6114 is retro-friction. Preserve these differences. Both six-speed 1987
+   bikes using 6110 need configuration evidence: **8849**, Raleigh Randonneur
+   18 (ratchet wording; freewheel 8855), and **15103**, Peugeot Savoie
+   (ARIS indexing; six-speed freewheel 15098). Their links are review
+   candidates, not proven wrong: the source page alone does not establish
+   whether the lever supports both spacings. The 1989 Savoie 17501 has a
+   seven-speed freewheel. Existing rear/front ARIS-from-1987 decisions do not
+   independently prove the exact lever configuration. The old note below
+   suggesting a 6110/6111 duplicate review is obsolete: **6111 is absent**
+   from the live DB; no new merge is required or inferred here.
+
+4. **Eight live link/date flags, already known identity questions.** Six
+   1988 front specs point to 8488 (ends 1987): **16411, 16583, 16603, 16623,
+   16661, 16962**. Resolve 1086-00 versus AV 62.1 D from code/construction
+   evidence before changing the date or repointing. Re-read the
+   [April 1986 manufacturer scan 3](https://www.disraeligears.co.uk/site/00_main_images/sachs_kettenschaltung_fur_rennen_touristik_off-road_-_1986_scan_03_main_image.jpg):
+   it identifies the Rival front as AV 62.1 D, but does not cross-reference
+   1086-00. The other two flags are rear specs **16509** (1988) / **17500**
+   (1989) on 4412 (1987 only); retain the approved November 15 ARIS decision
+   while seeking a dated generation source. Rider double specs **15470,
+   17763, 17782, 17858** and PXR 80 rear **16963** remain correctly NULL
+   under the documented guards. No new supported link was identified.
+
+5. **Duplicate and missing-model review.** Full Huret-family duplicate report:
+   14 groups / 34 pairs, all classified configurations, generations or a
+   reviewed variant; no automatic merge candidates. Near and parenthetical
+   reports each return zero. This does not close manual 8488/8961/2442 or
+   Rider specimen questions. Indexed 6113 and retro-friction 6114 remain
+   distinct configurations. Two New Success crank specs (**15100, 17498**)
+   and three freewheels (**15098, 17459, 17497**) remain unlinked. Adjacent
+   Sachs crank 1730 is the later Campagnolo-made model, so its name alone is
+   not a supported 1987/1989 match. The old TODO saying the 1987 New Success
+   hub is unlinked was stale: **15096** and **17495** already link Sachs
+   hub **3509**. That row's description is now the 1996 130mm/eight-speed
+   configuration (source 357); an early-specimen/configuration check is still
+   needed before treating those later dimensions as the 1987/1989 fitment.
+
+The broader link search includes Huret-branded specs, links into brand 171
+whose text omits the maker, and the newly loaded 1984 Motobecane catalogue.
+Its unlinked Duopar, S PP, Challenger S. and Rival cases remain covered by
+[the recorded link decisions](../../../ingest-bike-specs/references/link-decisions.md#1984-motobecane-loaded-2026-11-16).
+Maker-only text, either/or cells, spoke protectors and dropout mentions were
+not counted as missing named models. `/linkCoverage` was unavailable on
+localhost; equivalent read-only snapshot queries were used rather than
+starting the API. No generated/live mapping comparison was needed because
+component records and matching rules were unchanged. Temporary audit output
+and fetched copies were removed after recording these findings.
+
 ## Huret "Accessoires Cycles, Cyclomoteurs, Motos" — 1973 (disraeligears.co.uk, 28 scans)
 
 - `data_source` 95, label "Huret Accessoires Cycles Cyclomoteurs Motos
@@ -378,8 +498,9 @@
   4398) likewise; 4403 "New Success touring" (1980, velobase) is probably a
   misdated long-cage New Success but this source cannot correct it; the
   Pilot front 8487 / 2436 and levers 8492 were not mentioned and keep 1984.
-  6110 and 6111 ("ARIS New Success (type 1)", identical title and years, 84 g
-  spec vs 70 g) look like duplicates, untouched.
+  Historical duplicate note: 6110 and 6111 ("ARIS New Success (type 1)",
+  84 g spec vs 70 g) looked alike then. Superseded by the 2026-11-16 live
+  check: 6111 no longer exists; there is no current pair to merge.
 - Bike side: this printing says plain "New Success" (no ARIS). The 1987
   Raleigh Randonneur 18 "Huret New Success" is linked to ARIS rows (4412 /
   2439 / 6110, dated 1987+); 4402 now ends 1986, so 1987 stays on the ARIS

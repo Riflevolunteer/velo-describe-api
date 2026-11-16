@@ -102,6 +102,9 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Shifters
 
+- Sachs Huret audit 2026-11-16: six-speed bike links 8849 / 15103 to
+  seven-speed-labelled ARIS lever 6110 need compatibility evidence before
+  a mapping change; see the [brand audit](../../ingest-component-catalog/references/known-catalogs/huret.md#sachs-huret-brand-quality-audit--2026-11-16-read-only).
 - Most unlinked values are generic or system text ("Simplex" 8, "stem shifters" 6, "Handlebar stem power shifters" 8, the 1983-84 Raleigh "Direct Fit / Clip Fit / Alloy Ratchet Levers", "SIS levers", "Aris Index"): leave.
 - Leave unlinked (several rows fit): 1983-84 Raleigh "Shimano 600 AX Top Mounted Direct Fit Levers" x2 (SL-6310 or SL-6311 braze-on); 1986 Raleigh "Suntour Cyclone" (6278 / 7826 / 6279); 1989 Bianchi "SunTour GPX AccuShift" (6286 B / 6287 C); 1989 Bianchi "SunTour XCE-4050" (6285 SL-4050 is titled Edge, the road group); 1987 Raleigh "Huret Rival ... black ratchet levers" (6108 is the indexed Aris); 1974 Motobecane "Simplex Prestige stem shifter" (stem row 6226 is 1964-65).
 
@@ -130,6 +133,10 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Front Derailleurs
 
+- Sachs Huret audit 2026-11-16: retain the four Rider-double NULL guards
+  (15470, 17763, 17782, 17858); AV 62.1 T 8962 is the triple configuration.
+  The six 1988 Rival front links on 8488 remain identity reviews, not evidence
+  to widen dates automatically; see the [brand audit](../../ingest-component-catalog/references/known-catalogs/huret.md#sachs-huret-brand-quality-audit--2026-11-16-read-only).
 - Leave: bare "Simplex" (1979-89 Peugeot), other brand-only text, "None" / fixed gear and prose ("Huret or Simplex parallelogram", "Wide Ratio, indexed shift", "Shimano SIS indexed"): leave.
 - Leave unlinked (variant or era unclear): 1981 Kalkhoff "Shimano 600" x3 (FD-6100 or FD-6200; existing null); 1981 Peugeot "Simplex SJA" x3 (SJ A102 / A103 / A222 / A223); 1986 Peugeot "Simplex SLJA 22" (SLJ A422 or A522); 1984 Raleigh "Suntour Cyclone II" and "Sun Tour Cyclone II GT Wide Ratio" (FD-2300 or FD-2400); 1986 Raleigh "Suntour Cyclone" (existing null); 1987 Raleigh "Suntour Mountech" and 1986 Falcon "Suntour MT Tech" (FD-2700 v1 / v2, both dated 1984-85); 1989 Bianchi "SunTour GPX" (GP00-SSB braze-on or -SSH clamp); 1986 Miyata "SUNTOUR Sprint" (FD-3900 Sprint starts 1987; would need a year_from move); 1974 Raleigh "Campagnolo Super Nuovo Record, 12 speed" (1052/SR 2313 starts 1975, early SR groups may have used the 1052/1); 1984 Peugeot "Campagnolo 1052/1" (2297 ends 1977; the 1984 clip-on is 2300); 1986 Falcon "Shimano 'Z'" x4 (Z202 / Z204 / Z206); 1988 Colnago "Shimano AL 11 SIS" (existing note: later indexed version, no row); 1986 Colnago "Shimano Deore" (DE10 or M700).
 - SunTour a-3000 fronts (reviewed 2026-11-16): Sutherland's 6th ed., PDF pp.217–218, confirms FD-3000-SS / GT / GX. VeloBase identifies 2611 as GT and 2612 as GX; 2600 lacks a precise code, and its sole photo does not establish SS. 1987 Miyata Triton front 22519 stays NULL pending an SS specimen/drawing crosswalk to 2600. The DB's 1980 dates came from VeloBase's `1980's`, not a dated 1980 source; do not use those dates to infer a separate generation. See the [SunTour front review](../../ingest-component-catalog/references/known-catalogs/suntour.md#alpha-3000-front-identification--2026-11-16).
