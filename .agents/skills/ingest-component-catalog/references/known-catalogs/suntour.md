@@ -1527,6 +1527,32 @@ original proposal `/tmp/xcd-review-proposal.sql`, images
   above, now in 4706's title); Scrambler II and LV-3 pages not transcribed into rows; BH-1600 / BH-1800
   7993 vs 3617 overlap untouched. Doubtful small-print stock codes were not used
   in any description.
+- **VeloBase stub rewrite (applied 2026-11-16, user approved).** 22 rows whose
+  description was only "<title>, Japan[, N grams]" were rewritten from this edition
+  (pdf pages; printed = pdf - 1) and set to source_ref 427 (old source_ref 1, or 86
+  for 1038 / 1983 / 2633 / 1426, 199 for 3631 / 4021). Edge p.17: 455 BL-ED45, 1038
+  BA-ED45-S, 1983 CW-ED45, 2633 FD-ED45-SSH. Blaze p.18: 453 BL-BE34, 1035 BA-BE34-S,
+  1981 CW-BE34. Cyclone 7000 p.20: 1420 SP-6100 (351g; VeloBase 346g), 6281. XC 9000
+  pp.24-27: 467 BL-XC00, 1054 CT-XC00, 1055 CT-XC10 (SE, rear only), 1996 CW-XC00,
+  3624, 4016 PL-XC10, 4781 RD-XC10-GXB, 4782 RD-XC10-SSB, 6309, 6695 MS-1400, 1426
+  SP-6000 (345g; VeloBase 352g; printed on the XC 9000 page). XCD 6000 pp.28-29: 4021
+  PL-XD00, 3631.
+  - Retitled (old titles): 3624 "FH-XC10-R6, XC 9000" -> FH-XC10-U7 / FH-XC10-R6, XC
+    9000 (freehub); 6309 "SL-XC00-R7U, XC 9000" -> SL-XC00-R7U / -R6R / -L, XC 9000
+    thumb shifters; 3631 "HB-XD00, XCD 6000 (freewheel)" -> HB-XD00-F / HB-XD00-R;
+    6281 "SL-CL20, Cyclone 7000 (White)" -> SL-CL20-BS / SL-CL20-CS, Cyclone 7000
+    (White). search_text on 3624 / 6309 dropped the speed suffix (SunTour FH-XC10 /
+    SL-XC00 XC 9000).
+  - Years: 6695 year_to 1988 -> 1989 (still listed). 467, 4781, 6281 keep year_from
+    1988 (1988 English catalogue lists BL-XC00, RD-XC10-GX, SL-CL20 as new).
+  - Conflicts kept: 1054 CT-XC00 VeloBase 570g vs catalogue 230 g/pr (570g is
+    probably the roller-cam BA-XC00, 552 g/pr); 6281 catalogue shows grey finish,
+    VeloBase specimen is white, "(White)" kept in the title. 1423 CH-AP02 is not in
+    this edition (Sprint chain here is SP-6200).
+  - Review flag, not changed: 1989 Bianchi Tangent Brakes "SunTour XC-9010" (spec
+    18675) links 1055 CT-XC10, which this edition calls rear only.
+  - Validation: 22 rows affected, rerun 0; all 93 bike CSVs regenerated with
+    identical output before/after; quality-report has no findings on these ids.
 
 ## SunTour Bicycle Equipment Catalog 1990, English — printed September 1989 (2026-11-13)
 
