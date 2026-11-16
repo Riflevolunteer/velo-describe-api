@@ -2,6 +2,57 @@
 
 ## Rival fronts 1086-00 / AV62.1D — 2026-11-16 evidence review
 
+### PXR 80 targeted fitment hunt — 2026-11-16 follow-up
+
+Recovered the original archive assets, which were missing from the current
+blog image sequence, and visually read:
+
+- French catalogue [PXR 80 portrait, p.18](https://www.bikeboompeugeot.com/Brochures%20France/Peugeot%201988%20France%20Adult%20Brochure/Peugeot%201988%20France%20Brochure%20PH50S,%20PH8SL,%20P8LS,%20PX80,%20PXR80.jpg)
+  and [specification table, p.20](https://www.bikeboompeugeot.com/Brochures%20France/Peugeot%201988%20France%20Adult%20Brochure/Peugeot%201988%20France%20Brochure%20Specifications%204.jpg):
+  Stronglight **100, 30/40/50**, Helicomatic **14/28**, **15-speed Huret-Rival**.
+  The table supplies no front/rear model code. The portrait is only 1000px
+  wide; the front cage/markings remain too small to distinguish the candidates.
+- [German 1988 touring brochure, P18/PX80/PXR80 page](https://bikeboompeugeot.com/Brochures%20Germany/Peugeot%201988%20Germany%20Brochure/Peugeot%201988%20Germany%20Sport%20Brochure%20P18,PX80,%20PXR80.jpg):
+  PXR 80 **Normandie**, Stronglight **99 triple, 50/40/30**, five-speed
+  Helicomatic **14/17/20/24/28**, Sachs-Huret Rival 15-speed transmission.
+  No precise front code is printed. Its 1000px-wide photograph also fails
+  to resolve the cage. The German 99 versus French 100 crank specification
+  is a market difference, not grounds to overwrite French spec 16961.
+  Retained the archive's 1988 assignment without claiming a new date finding.
+
+Specimen leads checked and excluded from original-fitment identification:
+
+- [BikeForums 605036](https://www.bikeforums.net/touring/605036-peugeot-pxr80.html),
+  posts 1/19: owner reports German purchase in 1985/86 and Pilot front /
+  Duopar Eco rear; this is an earlier/different configuration. Attachments
+  **127100–127102** returned 403, so no specimen image identification is
+  claimed. Do not transfer its Pilot attribution to the 1988 French bike.
+- [BikeForums 1229463](https://www.bikeforums.net/classic-vintage/1229463-1988-peugeot-pxr80-my-new-all-roadie.html):
+  owner explicitly describes Shimano replacements for the drivetrain;
+  its photographed parts cannot establish original Huret fitment.
+- [Kleinanzeigen 3401412297](https://www.kleinanzeigen.de/s-anzeige/peugeot-randonneur-pxr80/3401412297-217-5067):
+  indexed listing describes a modified **four-chainring** drivetrain.
+  Live page redirects to category results; three image addresses recovered
+  from the indexed original listing return 404. Category-result thumbnails
+  were discarded as unrelated, not used as specimen evidence.
+- [Gogo PX80 1985](https://www.velovintageagogo.com/t24089-peugeot-px80-1985):
+  different PX80 model, with an expressly questioned Shimano front;
+  not evidence for PXR80 Rival identity. Further targeted French/German
+  model-name searches yielded no readable original front code or parts list.
+
+**Outcome:** the original triple and gearing are freshly corroborated, but
+no defensible exact front model was established. Live readback still has
+16962 -> 8488, 16963 -> NULL, 16961 -> 1875, 16960 -> 8130, all source 319.
+No links, dates, descriptions, CSVs or generator rules changed. Front 20T /
+rear 34T requirements and the 1086-00 rating conflict remain as below.
+Consolidated the PXR front/rear follow-up in TODO. Reopen for a readable
+code/cage photo from an original 1988 French specimen, a period Peugeot
+parts specification, or a maker crosswalk that resolves these candidates;
+do not repeat the sources above without new material. Temporary copies
+were removed after recording direct source URLs; `git diff --check` passed.
+
+### Manufacturer and component comparison
+
 Reviewed the six 1988 front links **16411, 16583, 16603, 16623, 16661,
 16962** on 8488, plus candidates 8961, 2442, 2445, 10006 and 10007.
 No DB, source CSV, matching rule or link changes were made. A shared name
@@ -51,9 +102,10 @@ dealer **98358**, a braze-on Rival, and **89963**, a separate Rider triple.
 It supplies no 1086-00 / AV62.1D band-front crosswalk, so it does not close
 this question. Exact-code web searches found no new manufacturer crosswalk.
 Do not repeat these checks without a new document or specimen lead.
-The PXR gearing above was checked against the stored specs and the earlier
-Peugeot review; no freshly recovered PXR technical-table image is claimed
-here (the current blog image filenames do not correspond to printed pages).
+In the initial comparison, PXR gearing was checked against stored specs and
+the earlier Peugeot review. The follow-up above subsequently recovered and
+visually verified the original technical table; that supersedes the initial
+retrieval gap. The blog image filenames do not correspond to printed pages.
 
 Next evidence needed: a dated Sachs/Huret code crosswalk or a clear original
 PXR 80 front photo/parts specification showing its cage and clamp. Preserve
