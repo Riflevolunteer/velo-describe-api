@@ -1477,6 +1477,29 @@ original proposal `/tmp/xcd-review-proposal.sql`, images
 - Left: 6290 PLG LD-5100 (1988) vs Edition 89 LS-5700 / LS-5800 (TODO); 7861
   RD-5000-GT not listed in 1988 (kept at 1987).
 
+## Sprint (non-index) / Cyclone stub check — 2026-11-16
+
+- 4002 PL-5300 Cyclone: Edition No. 62 (source 348) printed p.8, alloy body, black steel
+  plate, Cr-Mo spindle, 60mm plate, 398g pair. Not in the 1988 English catalogue (Cyclone
+  7000 pedal there is PL-CL10).
+- 1042 CB-7600: 1988 English catalogue (source 428) p.7 lists CB-7600 short reach 40-50mm
+  and CB-8600 normal reach 47-57mm, grey satin anodized, thrust bearing, 306g pair
+  (CB-7600). VeloBase specimen (FAF00499-5EFB-482E-8F97-ACC73C7B1699): front arm marked
+  "Suntour Sprint", back "4000 (Max 50 - 40mm Min)", 316g, years 1985-1987. Kept in group
+  66 Sprint (non-index, 1985-87) rather than 147 Sprint 9000; years left 1985-1988.
+- 171 BB-5000 "Sprint": VeloBase (6D2C11CE-62B5-4841-8D67-03FE587A3E06) gives Mid 1980's,
+  cups marked "SunTour Japan 1.37x24T BB", 1/4in x 9 balls per side, Campagnolo square
+  taper, 109mm. The 1988 Sprint bottom bracket is BB-500 (p.13; 8819: Superbe taper, 11
+  balls, 298g), so not the same part. Not in No. 61 / 62, the 1985 Japanese No. 63 or
+  1988-89 sources. Left unchanged.
+- **Applied 2026-11-16 (user approved):** 4002 description rewritten, source_ref 91 -> 348
+  (old: "SunTour PL-5300, Cyclone, Japan, 398 grams"); 1042 "SunTour CB-7600, Sprint" ->
+  "SunTour CB-7600, Sprint (short reach)", description rewritten, source_ref 199 -> 428
+  (old: "SunTour CB-7600, Sprint, Japan, 316 grams"). Years, groups and search_text
+  unchanged; VeloBase year_from 1984 / 1985 kept although neither is in No. 61. Both bike
+  links are override-pinned by id. Validation: 2 rows, rerun 0, all 93 bike CSVs
+  regenerate identically, no quality-report findings.
+
 ## SunTour Bicycle Component Catalog Edition No. 89 — printed 09.1988 (2026-11-16)
 
 - Source: [RadioLabWorks PDF](https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf)
