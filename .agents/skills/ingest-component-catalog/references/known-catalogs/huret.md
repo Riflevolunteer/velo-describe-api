@@ -1,5 +1,24 @@
 # Huret catalogs processed so far
 
+## New Success brake 944 Modolo attribution — 2026-11-16, user approved
+
+Enriched **944**, Sachs Huret ARIS New Success, from its existing
+[VeloBase specimen source](https://velobase.com/Pages/ViewComponent.aspx?ID=eb4fe66d-362b-4644-9009-2a94529cb64b),
+which explicitly identifies Modolo manufacture and the Sachs-branded
+Master SLK 90 model.
+
+- Old description: `Sachs Huret ARIS New Success, France`.
+- New description (96 characters): `Sachs Huret ARIS New Success brakes, manufactured by Modolo; Sachs-branded Modolo Master SLK 90.`
+- All other fields retained, including title/search text, NULL date bounds,
+  brand 171, category 3, group 131, source 1 and specimen UUID
+  `EB4FE66D-362B-4644-9009-2A94529CB64B`. No new component or merge.
+- Validation: exactly one guarded description update; rerun zero. Readback
+  matches the intended text and every other original field. Matcher-input
+  fingerprints (IDs/titles/categories of all 10,498 components) and all
+  20,845 bike-spec links are unchanged; 944 has no bike links. A description
+  edit does not affect matching, so CSV regeneration was unnecessary.
+  Temporary SQL, baseline and verification script removed after validation.
+
 ## New Success hub configurations — 2026-11-16 review
 
 Follow-up to the shifter compatibility review; correction subsequently approved
@@ -403,8 +422,9 @@ title, preserving the original following
 country/weight text. Apply restoration only against the exact corrected
 values, with the original GUID/source/ownership guards. Temporary SQL,
 baseline/readback snapshots and comparison helpers were removed after
-validation. Modolo attribution, richer configuration descriptions, six-speed
-lever compatibility and dated generation evidence remain separate follow-ups.
+validation. Modolo attribution is now recorded in the approved 944 enrichment
+above; six/seven-speed lever compatibility was resolved in its separate review.
+Richer configuration descriptions and dated generation evidence remain follow-ups.
 
 ## Sachs Huret brand quality audit — 2026-11-16, read-only
 
@@ -474,7 +494,9 @@ manufacturer production-date confirmation. Main findings and proposed work:
 
 3. **Descriptions conceal important configurations.** The
    [944 specimen page](https://velobase.com/ViewComponent.aspx?ID=EB4FE66D-362B-4644-9009-2A94529CB64B)
-   reports Modolo manufacture / Master SLK 90 identity. The
+   reports Modolo manufacture / Master SLK 90 identity; the approved
+   [944 description enrichment](#new-success-brake-944-modolo-attribution--2026-11-16-user-approved)
+   above now records it. The
    [6110 specimen](https://velobase.com/ViewComponent.aspx?ID=46733377-2BA5-459B-B965-CDBB581772AC)
    is a seven-speed ARIS downtube braze-on shifter; 6108's page says eight-speed
    ARIS; 6113 describes indexed Rival Sport with selectable modes, whereas
