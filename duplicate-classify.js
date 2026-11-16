@@ -304,6 +304,8 @@ const REVIEWED_NOT_DUPLICATES = [
   [2891, 9413], // rebrand kept apart (user decision 2026-11-02): Philippe Franco-Americain 358 (1982) / ATAX Franco-America (1984)
   [2902, 9414], // rebrand kept apart (user decision 2026-11-02): Philippe Tour de France 357 (1982) / ATAX Tour de France (1984)
   [4019, 4020], // SunTour PL-XP01: steel axle (305 g/pr) vs VeloBase titanium-axle specimen (256 g/pr), 2026-11-16
+  [4778, 4779], // SunTour RD-6300 XC: standard vs VeloBase three-pulley cage, 2026-11-16
+  [4751, 7827], // SunTour RD-6700 Le Pree: VeloBase three-pulley cage vs GT long cage, 2026-11-16
 ]
 const reviewedKey = (a, b) => `${Math.min(a, b)}|${Math.max(a, b)}`
 const REVIEWED = new Set(REVIEWED_NOT_DUPLICATES.map(([a, b]) => reviewedKey(a, b)))

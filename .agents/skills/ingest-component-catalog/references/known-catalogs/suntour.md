@@ -1516,6 +1516,32 @@ VeloBase pages (ViewComponent.aspx?ID=<source_id>) give a model field for most b
   bike CSVs changed only specs 3320, 6910, 6931, matching the DB; no dangling bike_spec
   references; no quality-report findings; SunTour duplicate report unchanged.
 
+## VeloBase model-field pass — 2026-11-16 (user approved, applied)
+
+VeloBase pages for the 53 remaining stub rows were read for model / marking fields.
+
+- **Merged (deleted, no links):** 2232 "SunTour Alpha (6sp)" (Freewheels, 1980-1990, VeloBase
+  model FW-AL00-R6, marked AP GF) into 7866 FW-AL00-R6; 4750 "SunTour LePree (standard cage)
+  version 1" (1980-1980, group 236, model RD-6100, 28T max / 30T wrap, versions told apart
+  by photo only) into 4749 RD-6100. Deleted source_ids: 2232 `EA2A035D-F897-4783-9043-7F3737F322D5`,
+  4750 `E85A7086-131B-4852-8668-5ABD15D1F3FE` (both source_ref 1, "<title>, Japan").
+- **Retitled with VeloBase codes, descriptions rewritten** (old titles): 4688 "New Skitter
+  (version 2A)" -> 2200; 4690 "Grand-Prix (type 3)" -> 2300; 4691 "Echo (type 1)" -> 2600
+  (code later reused for Honor 4702); 4692 "Competition (type 1)" -> 2800; 4693 / 4694 "V
+  (version 2A / 2C)" -> 2901; 4713 "Love (version 2)" -> RD-LV00; 4765 "Superbe II
+  (long-cage friction)" -> RD-5800, Superbe II (long cage); 4751 "LePree 3 Pulley System" ->
+  RD-6700, Le Pree (3-pulley); 4779 "XC (triple pulley)" -> RD-6300, XC (3-pulley); 4734
+  "Cyclone 3-Pully" -> Cyclone (3-pulley); 6303 "Superbe Pro (6, 7 index)" -> SL-SB01-B,
+  Superbe Pro (index). search_text changed only on the three 3-pulley rows.
+- **Date:** 2617 SL (Black) 1972 -> 1975 (specimen inner plate 4532, RL date code = Dec
+  1975); description now says it is a finish variant of 2616.
+- **Kept apart:** the three-pulley rows from their standard rows (4778 / 4779, 4751 / 7827
+  registered in `REVIEWED_NOT_DUPLICATES`; the duplicate report still lists them as
+  generation pairs). Not changed: 2662 (VeloBase FD-XD00-GX vs the 1990 FD-XD10, open), 2631,
+  4712 (earlier decisions); unsourced decade dates on 4765 / 4751 / 4779 / 4734.
+- Validation: 15 rows, rerun 0; all 93 bike CSVs regenerate identically; no dangling
+  bike_spec references; no quality-report findings.
+
 ## Placeholder rows and SunTour Quattro — 2026-11-16 review
 
 - 6255 "SunTour (1980's)" shifter (VeloBase 7DF320F2): no model field; top-mount friction
