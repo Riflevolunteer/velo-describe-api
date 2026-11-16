@@ -4471,6 +4471,14 @@ const COMPONENT_OVERRIDES = {
       { from: 1992, to: 1992, bike: 'Alfana', id: 6875 },
     ],
     'panaracer record': null, // 1991 Bianchi Virata / Alfana: the only row is the 27" P-27RD (6841, 1980)
+    // Panaracer rows from Panasonic catalogues (2026-11-16, sources 417 / 424-426); see known-catalogs/panasonic.md.
+    'panaracer 270g tubular': [{ bike: 'Professional', from: 1983, to: 1983, id: 11371 }], // 1983 Bianchi: Record, the only 270 g Panaracer tubular
+    // Smoke 11368 is 26 x 2.1: link only the 26-inch 1994 Cinelli; the 1993 Bianchi Project 5 / 7 are 700C.
+    'panaracer smoke': [{ bike: 'Argento Vivo', from: 1994, to: 1994, id: 11368 }],
+    // Combined front/rear cells: front/rear use unproven (Panasonic prints only "Dart/Smoke"); Comp K is a Kevlar-bead version with no row.
+    'panaracer smoke dart comp kevlar': null,
+    'panaracer smoke dart comp': null,
+    'panaracer smoke comp k 26 x 21': null,
     // 1989-90 Bianchi Vittoria Zefir: the only Zefir rows are 1996-99 (10242, 10241, 10558, La Bicicletta Guida '96 / '99); nothing shows the 1989 tyre is the same, so no link before 1996 (user's call 2026-11-06).
     'vittoria zefir "22"': [{ to: 1995, id: null }], // 1989 Super Leggera / Giro
     'vittoria zefir 700 x 20c': [{ to: 1995, id: null }], // 1989 Campione D'Italia

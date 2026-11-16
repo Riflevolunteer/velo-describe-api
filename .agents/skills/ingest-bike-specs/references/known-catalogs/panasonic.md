@@ -103,3 +103,50 @@ FL-270S.
   derailleurs with Z401 stem shifters); Tange Levin "sealed" and Araya 16-B
   variants (several rows fit); the 1987 Raleigh "Light Action wide ratio" (no
   code).
+
+## Panaracer tyres (1985 / 1986 tables, 1989-95 European catalogues), applied 2026-11-16
+
+- **Tyre tables:** `1985cat23` and `panda30` print Panasonic / Panaracer models with
+  sizes, weights and pressures. 1985: Touring Type 10 and 7-B (gumwall / open side,
+  Kevlar breaker), 7-B / Swift folding, tubulars Course 300 g and Record 270 g,
+  extra-light tubes. 1986: Touring Gumwall, Dual Skin Side, Tour Guard Gumwall / Skin
+  (Kevlar), Vertex 700x23C semi-bald 220 g, Swift folding, tubulars Rapide (track)
+  150 g, Record (road) 270 g, Course (road) 300 g, Tour Guard 24 (triathlon) 240 g,
+  Ibex 26x2.00 900 g, Ridge Line 26x1.50 550 g. The 1979 and 1981 US tables
+  (`1979tirestubes`, `1981FitandTires`) were also read; 1982-83 print no model names.
+- **European catalogues** (same site: 1989 EU, 1990 / 1992 / 1993 / 1995 DE, 1991 NL;
+  verbatim tyre lines were transcribed to the session scratchpad, not kept).
+  - Front / rear is printed only for Headwall front with Khartoum rear (1990) and
+    Timbuk-II front with Khartoum rear (1991-92).
+  - Smoke 26x2.1 appears on its own in 1991-92.
+  - Smoke Lite Comp 26x1.9 appears in 1992, and as Smoke Lite in 1993.
+  - 1993 prints the one entry "SMOKE DART/SMOKE" 26x2.1 (body text "Smoke-Dart-HC"),
+    and 1995 prints "DART-II/SMOKE-II". Neither says which tyre goes front.
+  - Also printed: IBEX / IBEX-II 26x2.00 (1989-93), Khartoum and Khartoum 38 Special
+    700C, RidgeLine-2 700x35C, Hi-Road, Road Runner, Tecnova II 700x18C (1992), and
+    "Light Extra" 700x20C road tyres.
+  - Not found: Cannonball Express, Canyon Express, Ridge Line III, Leger, Trisport,
+    CX-Alpha.
+- **Sources:** 424 `Panasonic Bicycles catalogue, Netherlands (1991)`; 425 `... Germany
+  (1992)`; 426 `... Germany (1993)`. The 1993 date comes from the back page "PRINTED IN
+  JAPAN 93G"; the 1991 date from its text; 1992 is the site label.
+- **Rows inserted:**
+  - 11368 Smoke (26 x 2.1), 1991-1994 (the 1994 end comes from Cinelli fitment).
+  - 11369 Dart (26 x 2.1), 1993.
+  - 11370 Smoke Lite Comp (26 x 1.9), 1992-1993.
+  - 11371 Record (tubular, 270 g), 1983-1986, `source_ref` 417. The 1983 start comes
+    from the Bianchi Professional spec, matched by weight; it is a different tyre from
+    6841 "Record P-27RD", a 27-inch clincher.
+- **Rows widened from fitment:**
+  - 10973 Timbuk II: `year_to` 1989 -> 1992, description now notes the folding version
+    and its front use. Revert: 1989, "Mountain-bike tyre, 26 x 2 inches.", `source_ref` 323.
+  - 6842 Tecnova: `year_to` 1990 -> 1992. Revert: 1990, `source_ref` 1.
+- **Links (bike-scoped overrides):**
+  - 20167, 1994 Cinelli Argento Vivo "Panaracer Smoke" -> 11368.
+  - 931, 1983 Bianchi Professional "Panaracer 270g tubular" -> 11371.
+- **Kept unlinked (`null` overrides):**
+  - The 1993 Bianchi Smoke/Dart Comp (Kevlar) cells x4: front/rear use is unproven.
+  - The 1991 Grizzly "Smoke Comp K": Kevlar bead, no row.
+  - The 1993 Project 5 / 7 bare "Smoke": 700C bikes.
+  - The 1991 Bianchi "Panaracer Record": tubular or clincher unknown.
+  - The 1987 "MIYATA IBEX": house brand.

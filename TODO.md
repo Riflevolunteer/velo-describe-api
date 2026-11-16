@@ -125,7 +125,7 @@ Brand-only, size/material-only, either/or and house-part specs can correctly rem
 Named parts with no suitable period row or no source yet (worth a search if a source turns up):
 - Headsets and bars: ITM Mondial bars, stems 100 / 200 / 300 / Pro and 201 seatpost; Kusuki WP-RB bars and bare "WIN" stems; SR / Sakae 1983-87 seatposts (unidentified fluted models); Kalloy SP-248; PIVO de Luxe stem; Modolo Flyer. Searches 2026-10-20 found nothing for Tange Seiki, ITM, Kusuki or SR 1983-87 (only eBay listings; Reminiscence slugs `sakae82`-`sakae87`, `sr83`, `sr87`, `itm*`, `kusuki*` 404).
 - Derailleurs, brakes, chains: Simplex Competition crankset and seatpost, Super Criterium and Prestige stem shifters (no source on hand); Everest Special Cromo freewheel (needs an Italian Everest catalogue). Find a second source for the Regina Super Corsa Oro identification (see cross-catalog-notes.md).
-- Tyres and rims: Vittoria Open Tubular Flash M19 and Zefir 700x20C, Panaracer Smoke / Dart Comp, Rigida Jade / Saphir, Ukai EX-17, FIR Tour / Pulsar, Dia-Compe 500G; the five Raleigh "Vredestein 700 x 20C Racer HP" specs (no Racer HP in the 1979 trade list); Raleigh "Mavic Sprint" (3, no row).
+- Tyres and rims: Vittoria Open Tubular Flash M19 and Zefir 700x20C, Rigida Jade / Saphir, Ukai EX-17, FIR Tour / Pulsar, Dia-Compe 500G; the five Raleigh "Vredestein 700 x 20C Racer HP" specs (no Racer HP in the 1979 trade list); Raleigh "Mavic Sprint" (3, no row).
 - Peugeot gaps: San Marco Gilux race, Gauthier Rilsan, Sedis 1977-78 chains. Lyotard: 13 specs unlinked (5 Motobecane, 6 + 2 Peugeot 1977 DE); the only source found is an undated US-importer leaflet (bikeboompeugeot.com Lyotard Pedal Brochure.jpg) with 14F, 23, 36F, 45, 45CA and 460 but none of the models the specs name.
 - Raleigh: ET-QS hubs (3, in neither Sansin catalogue); 1986 Sansin "alloy sealed large flange" hubs; Sakae / SR 1983-87.
 
@@ -198,10 +198,11 @@ SR work is in [the source worklist](#sr-sakae-next-work).
 
 Remaining named source gaps: CST C-740 / C-860 / C-861 (6, 1989-90 Bianchi), Vredestein Racer II (4, 1988 Raleigh), IRC Crosscountry (3) and Peak (1989 Bianchi), Michelin ATB Surmond (2, 1989 Peugeot) and Chevron gumwall (1983 Peugeot), Panaracer Cannonball Express and Cheng Shin Ridge Line III / Canyon Express (1986-87 Peugeot), National Trisport (1986 Miyata), Vittoria Oscar X (1989 Bianchi).
 
-Remaining variant questions: Panaracer Smoke/Dart has 8 unlinked specs (bare
-Smoke x3 including 1994 Cinelli, combined Smoke/Dart Comp x4, Smoke Comp K x1).
-The 1993 Project 5 / Project 7 are 700C: do not use a 26-inch Smoke row.
-Identify front/rear and construction before splitting/linking combined cells.
+Remaining variant questions: the 1993 Bianchi Smoke/Dart Comp (Kevlar) cells x4
+need evidence of which tyre is front before splitting them onto Smoke 11368 / Dart
+11369 (Panasonic prints only "Dart/Smoke"); Smoke Comp K (1991 Grizzly) needs a
+Kevlar-bead row; the 1993 Project 5 / 7 bare "Smoke" are 700C (no 700C Smoke
+found). See [Panasonic notes](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md#panaracer-tyres-1985--1986-tables-1989-95-european-catalogues-applied-2026-11-16).
 Keep the compound 1989 Bianchi "Vittoria Formula 1 and Juniore tubulars"
 (6875 / 6890) unlinked.
 
@@ -210,7 +211,7 @@ Keep the compound 1989 Bianchi "Vittoria Formula 1 and Juniore tubulars"
   1984; new 11008 Trofeo Special is 1988); 1991 Bianchi "Panaracer Record"
   (only 6841 P-27RD, 1980); 1977 Peugeot "Peugeot Professionnel or Clement
   Criterium" (either/or). No suitable row: Clement 88 Competition, Specialized
-  Umma Gumma, IRC Peak Sigma, Panaracer Smoke Comp K, 1994 Cinelli Sava Snake
+  Umma Gumma, IRC Peak Sigma, 1994 Cinelli Sava Snake
   [20185].
 - No suitable period identification/row: Peugeot Trophy tubulars (8), Peugeot
   Professionnel / Professional 225 g / Super Competition; Wolber Transalpino (2);
