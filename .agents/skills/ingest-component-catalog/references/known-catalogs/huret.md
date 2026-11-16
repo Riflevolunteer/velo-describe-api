@@ -204,6 +204,45 @@ PXR 80 front photo/parts specification showing its cage and clamp. Preserve
 the current links pending that review. Temporary page copies were removed;
 documentation passed `git diff --check`. No SQL was prepared or applied.
 
+## Raleigh shifter and front provenance follow-up — 2026-11-16
+
+Read-only follow-up after the rear-cage correction. Compared the original
+1987 Raleigh p.13 lever area with the full-resolution [owner photograph](https://norway2015peterandrolf.wordpress.com/wp-content/uploads/2015/05/p1020919.jpg),
+the [April 1986 maker sheet, scan 3](https://www.disraeligears.co.uk/site/00_main_images/sachs_kettenschaltung_fur_rennen_touristik_off-road_-_1986_scan_03_main_image.jpg)
+which explicitly identifies **MA85.2E** (8963), and 6110's VeloBase
+specimen photos (GUID `46733377-2BA5-459B-B965-CDBB581772AC`). The latter
+show the indexed right lever's ARIS/New Success selector markings.
+The owner picture provides a clearer view of the lever blades, but the
+right-hand ring is oblique and does not establish a readable code/selector.
+The catalogue's lever area remains too small. Similar blade profiles and
+the earlier rear cannot identify the exact control pair.
+
+Also compared the actual pre-ARIS braze-on lever specimen in this
+[New Success group gallery](https://www.velosaloon.com/products/nos-sachs-huret-new-success-gear-shifting-group-set-rear-and-front-derailleur-gear-lever-shifter-from-1985),
+photos **DSC_0069 / 0070 / 0071**: recessed blades and folding-ring fasteners.
+These are specimen construction evidence, not proof of its seller-assigned
+date or of Raleigh fitment; no MA85.2E inscription was established from them.
+The Headbadge mirror explicitly offers the same 1000px-wide catalogue scans,
+so it supplies no higher-resolution lever evidence. The product JSON endpoint
+returned 429; no conclusion depends on that unavailable response.
+
+**8849 remains on 6110**, as the prior decision requires, pending a readable
+original right-lever code/selector or a period Raleigh parts crosswalk to
+8963 / 6110. No evidence-backed repoint was found; do not repeat these image
+comparisons without new distinguishing material.
+
+**Confirmed stale metadata, correction proposed:** front **2439** still says
+`Sachs Huret ARIS New Success, France. Dated from 1987-89 Peugeot / Raleigh fitment only (ARIS from 1987, as rear 4412).`
+The Raleigh/rear-4412 rationale is superseded by the approved rear correction
+to **4403**. Its Peugeot front links **15101 / 17499** and the independently
+indexed shifter specs **15103 / 17501** remain; retain the existing Peugeot
+decision. Proposed description: `Sachs Huret ARIS New Success, France. Dated from 1987-89 Peugeot fitment only; exact Raleigh Randonneur front variant remains unresolved.`
+Keep all identity/date/source fields and the existing front links while
+seeking a code/photo for Raleigh front **8851**. This is a description/provenance
+explanation repair, not a claim that the exact Raleigh front is identified.
+No SQL prepared or DB/generator changes made. Temporary images were removed
+after recording the evidence and outstanding distinguishing requirements.
+
 ## Raleigh Randonneur long-cage identification — 2026-11-16
 
 The original 1987 UK Raleigh **p.13** includes a dedicated rear-mechanism
