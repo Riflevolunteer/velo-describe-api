@@ -162,7 +162,8 @@
   NGC-200 / 200H, PN-157 / 161 / 280 / 281, 165 levers; Araya 16A3 / 18;
   SR P5 / P5B / P6B posts; Tange New Falcon / Levin Sealed / Tange-ST; SR
   Randonneur / Custom / SC-713 / MTB bars, Nitto 55F / B-902; MKS AR-Road /
-  AR-Road 2 / CR-2 / Model-33 / PT-7, SR SP-513; Ariake saddles (no rows).
+  AR-Road 2 / PT-7, SR SP-513; Ariake saddles (no rows). CR-2 / Model-33
+  linked 2026-11-16 after the MKS rows were widened (see mks.md).
 - Regression: all 89 other CSVs regenerate byte-identical.
 
 ## 1983 Miyata — loaded (2026-11-15, source 406)

@@ -48,3 +48,4 @@
   weight disagrees and 3870 "Unique Pedal (road, alloy cage)" may be the same part; AR-3 (1987-89 Raleigh)
   still has no source; not in this edition: AR-2, AR-8, Esquartz 107, Mapstage, Radius 7000, Royal Nouvo
   Track, RX-1, New Quill, Unique (pista black alloy plates), Unique (short cage track).
+- **Fitment widening, 2026-11-16 (user-approved):** the Edition 11 date is soft, so dated bike catalogues set the start years. 10046 CR-2 1985 -> 1982-1985 (1982-84 Miyata 310 / 210 / 110 "MKS CR-2"); 10831 33 1985 -> 1983-1986 (1983 Miyata 100 / 90 "MKS 33", 1984 "MKS Model-33", 1985 100 "MKS M-33 Chrome Plated"). Ten specs linked, with generator overrides. The 1979 Miyata 400 "MKS-33" stays unlinked (a four-year gap with no source between).

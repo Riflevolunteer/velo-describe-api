@@ -3584,7 +3584,11 @@ const COMPONENT_OVERRIDES = {
     'shimano spd': [{ from: 1993, to: 1993, id: 7666 }], // 1993 Bianchi Nth FS (XTR): PD-M737 SPD, as the 1993 Super Grizzly "SPD-737"
     'ofmega quattro': [{ from: 1989, to: 1991, id: 3885 }], // 1989-91 Bianchi Campione d'Italia / Trofeo: Ofmega Vantage pedal; crank 1705 is "Vantage (Bianchi Quattro version)" (3885 year_to 1988 -> 1991; judgement call)
     'mks rt 7 chrome plated': [{ from: 1986, to: 1986, id: 10832 }], // 1986 Miyata 90: MKS 9004, RT-7 (Edition 11 p. 4, added 2026-11-06)
-    'mks 33': [{ from: 1986, to: 1986, id: 10831 }], // 1986 Miyata 100: MKS 6001, 33 (Edition 11 p. 4, added 2026-11-06)
+    'mks 33': [{ from: 1983, to: 1983, id: 10831 }, { from: 1986, to: 1986, id: 10831 }], // 1983 / 1986 Miyata 100 / 90: MKS 6001, 33 (Edition 11 p. 4, added 2026-11-06)
+    'mks model 33': [{ from: 1984, to: 1984, id: 10831 }], // 1984 Miyata 100 / 90: MKS 6001, 33 (row widened to 1983 from Miyata fitment, 2026-11-16)
+    'mks m 33 chrome plated': [{ from: 1985, to: 1985, id: 10831 }], // 1985 Miyata 100: MKS 6001, 33
+    'mks cr 2': [{ from: 1982, to: 1984, id: 10046 }], // 1982-84 Miyata: MKS 2024, CR-2 (row widened to 1982 from Miyata fitment, 2026-11-16)
+    'mks cr 2 alloy': [{ from: 1982, to: 1982, id: 10046 }], // 1982 Miyata 210: MKS 2024, CR-2
     'shimano': [{ bike: 'PX 10 SH', from: 1985, to: 1985, id: 3961 }], // 1985 Peugeot PX 10 SH, 600EX crank / RD: PD-6207 (bare brand, bike-keyed; judgement call)
     // 1991 / 1992 Bianchi (JP) catalogues
     'campagnolo croce d\'aune': 3703, // B620-A
