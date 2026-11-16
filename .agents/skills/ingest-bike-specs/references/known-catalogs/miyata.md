@@ -404,8 +404,10 @@
   4788 / levers 470; MS-series RD-M531 4523, SL-MS55 6127, SL-MS40 6126;
   Light Action L-523 4518, L-532 4521, L-522 7553; BR-L490 1004; FC-B124
   1776 / FC-B126 7560; BL-Z325 7225; LD-5100 PLG 6290; AX-50 2459.
-  Forced null: BR-Z570 on 312 / 112 / 100 (the only row ends 1986 and
-  bundles four models), Aero's split disc / ADX-4 rim cell, XC-Sport IC
+  BR-Z570 on 312 / 112 / 100 -> 959 (linked 2026-11-16, after the Aug 1986
+  Shimano Complete Line confirmed BR-Z570 for the 1987 model year; 959 now
+  runs 1983-1987; one Shimano entry covering four reaches, as for the 1984-86 links).
+  Forced null: Aero's split disc / ADX-4 rim cell, XC-Sport IC
   shifter (integrated lever), DC-983D, SunTour "RD 2000".
 - Left unlinked at ingestion: Alpha 3000 SS / GX (see the Triton review below), TY 60,
   QS10, L-525 (cage not given), split front-canti / rear-centre-pull brake

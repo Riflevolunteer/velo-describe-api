@@ -1670,7 +1670,7 @@ const COMPONENT_OVERRIDES = {
     'shimano at 50': [{ bike: '615 GT', from: 1987, to: 1987, id: 1003 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano at 50 alloy cantilever brakes': [{ bike: 'Path Winder', from: 1987, to: 1987, id: 1003 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'dia compe dc 983d': [{ bike: 'Valley Runner', from: 1987, to: 1987, id: null }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
-    'shimano br z570': [{ bike: '100', from: 1987, to: 1987, id: null }, { bike: '312', from: 1987, to: 1987, id: null }, { bike: '112', from: 1987, to: 1987, id: null }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
+    'shimano br z570': [{ bike: '100', from: 1987, to: 1987, id: 959 }, { bike: '312', from: 1987, to: 1987, id: 959 }, { bike: '112', from: 1987, to: 1987, id: 959 }], // 1987 Miyata: BR-Z570 Z-Series row, still in the Aug 1986 (1987 model year) Complete Line.
     'shimano l490': [{ bike: '512', from: 1987, to: 1987, id: 1004 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new 600ex gmg': [{ bike: 'Omnium', from: 1987, to: 1987, id: 972 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new 600ex': [{ bike: 'Carbon Tech 1000', from: 1987, to: 1987, id: 972 }, { bike: '912', from: 1987, to: 1987, id: 972 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.

@@ -1031,6 +1031,11 @@
   BL-1050 / 1051 (202 / 252g), 3523 / 3524 FH / HB-1050 (415 / 218g), 3083
   HP-1050 (129g), 3953 PD-1050 (280g), 1404 CN-6130.
 - No new rows, no deletes. Out of scope: TL-CN20, SM-DG11 / DG16.
+- **Z-Series year_to 1986 -> 1987 (2026-11-16):** scan 22 still prints
+  RD-Z505 / -GS, SL-Z408 (BA / FB / FA / FC) and BR-Z570 / Z640 / Z720 /
+  Z790 with the Jan 1986 specs, so 4546, 6195 and 959 now end 1987
+  (descriptions cite Aug 1986). 959 then linked to the 1987 Miyata 312 / 112 /
+  100 "SHIMANO BR-Z570" specs (22250 / 22484 / 22506).
 
 ## Shimano "Bicycle System Components — The Complete Line", US edition — printed 12.1986 (disraeligears.co.uk, 28 scans)
 
