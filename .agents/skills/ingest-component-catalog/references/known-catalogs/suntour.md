@@ -1584,6 +1584,83 @@ VeloBase pages for the 53 remaining stub rows were read for model / marking fiel
   links are override-pinned by id. Validation: 2 rows, rerun 0, all 93 bike CSVs
   regenerate identically, no quality-report findings.
 
+## Remaining placeholder descriptions — 2026-11-16 read-only review
+
+The request referred to 30 placeholders. A fresh live query found **36** descriptions
+beginning with their exact title plus `, Japan` and containing no full stop: the
+remaining imported title/country/weight stubs, including longer weight annotations.
+This is a reproducible current scope, not a claim to reconstruct the earlier 30-row
+selection. All 36 retain source_ref **1**. Each original VeloBase page was
+retrieved again on 2026-11-16 using
+`https://velobase.com/Pages/ViewComponent.aspx?ID=<component_detail.source_id>`.
+The initial review made no database changes; the subsequent user-approved
+description updates below were applied on 2026-11-16. No generator changes.
+
+**Applied 2026-11-16 (user approved):** description-only enrichment for every row
+below, replacing the imported `<title>, Japan[, weight]` descriptions. Guarded SQL
+checked the ID, brand, source_ref, original source UUID and binary old description.
+First application affected **36 rows**; rerun affected **zero**. Descriptions are at
+most 249 characters. Exact live readback verified every description and all other
+SunTour columns/rows against the pre-application snapshot: titles, search_text,
+years, categories, groups, source UUIDs and source_ref stayed unchanged. VeloBase
+remains the evidence source; its specifications are not promoted to
+manufacturer-confirmed facts. Reviewed SQL, baseline and validation scratch files
+were removed after validation.
+
+| ID | Evidence recovered / applied enrichment |
+| --- | --- |
+| 171 | BB-5000: 109mm steel axle, Campagnolo taper, nine 1/4in balls/side, English cups. Keep separate from BB-500's Superbe taper / eleven balls; precise dates still unsupported. |
+| 1046 | Superbe arm lettering, rear marking 4700, 47-57mm reach, Dia-Compe manufacture, quick release, 325g average. Code is present on VeloBase; a period catalogue crosswalk remains wanted. Do not silently change the current Superbe Pro title/group. |
+| 1335 | Sugino-made first-generation Superbe rings, 144 BCD, 42-56T, 3/32in, S-[teeth] stamp, actual 155g 54/44T. |
+| 1336 | Superbe Pro black/gold edition rings, black anodizing, 144 BCD, 42-53T, threaded keeper pin, actual 123g 52/42T. |
+| 1337 | Superbe Pista ring, 144 BCD, 1/8in chain, SunTour Superbe [teeth] Japan NJS marking. |
+| 1980 | Sugino-made ARX double, alloy, unfluted 170mm arms, square taper, 9/16in pedals; no model number. |
+| 1989 | Superbe double, 53/39T; right arm SR Suntour Superbe, reverse SR Suntour 172,5 Taiwan. Do not repeat Japan as specimen manufacture location from the generic country field, or copy an uncertain BB length. |
+| 1990 | Superbe Comp triple, 130/74 BCD, 170/175mm, alloy, square taper; inner ring mounted with long bolts/spacers. Double and triple remain separate. |
+| 2231 | AP-marked six-sprocket black steel freewheel, four-prong removal, French/Italian threads listed, 13-18 / 13-28, actual 336g. AP marking alone does not identify a particular FW-AL generation; keep undated. |
+| 2241 | YE Suntour Perfect marking, six sprockets, gold, English thread, two-prong removal, 16-21T, actual 419g. VeloBase's aluminium-cog / AccuShift fields need corroboration; do not assert them as fact or merge by the Perfect name. |
+| 2600 | Alpha 3000 double, first specimen with cable stop, nickel-plated cage, 28.6mm clamp, 8mm wrench cable bolt. |
+| 2611 | VeloBase model **FD-3000-GT**, later Alpha 3000 double without cable stop. This code is missing from the DB title; preserve suffix as reported pending period confirmation. |
+| 2612 | VeloBase model **FD-3000-GX**, later Alpha 3000 triple without cable stop. Retain the double/triple distinction and keep separate from 2646 Superbe FD-3000. |
+| 2613 | FD-3200, Le Tech triple, 28.6mm clamp, nickel-plated cage, 8mm wrench clamp/cable bolts, no cable stop, 100g specification. |
+| 2618 | Vany double, steel cage, pivot-arm design; Suntour Vany JAPAN clamp marking; no numbered model or date. |
+| 2631 | VeloBase model FD-CL10-SS-H, white Cyclone 7000, 18T capacity, 107g; page also describes -SS-B and lists both clamp/braze-on mounting. This is not enough to choose a merge into 7855 hinged or 2630 braze-on. Existing decision moving spec 1309 to 2630 remains unchanged. |
+| 2636 | Hero double, chrome steel cage, 28.6mm clamp, 8mm wrench bolts, no stop. Page transcribes marking as SUNTOUR HERE; retain that attribution rather than inventing a model. |
+| 2662 | VeloBase FD-XD00-GX, triple, 28.6mm, 5mm Allen bolts, 18T. Existing conflict with the 1990 catalogue's FD-XD10 remains unresolved. |
+| 3130 | HS-400, sealed, aluminium/steel, steel crown/upper head race, twenty 3/16in balls per race, English/Italian or French threading. No dates. |
+| 3131 | Alpha 3040 steel headset, twenty 5/32in balls per race, 26.4mm crown race, 25.4mm x 24TPI; Suntour Alpha Japan cup. Page says unknown start to late 1990s, not a precise 1990 attestation. Keep current dates pending evidence. |
+| 3611 | **Photo confirms cassette freehub**, SL decal, low flange, QR; fields specify 126mm and 32/36 holes. VeloBase model HB-SL01-R conflicts with catalogue FH-SL01. Photo `https://velobase.com/CompImages/Hubs/FF46824B-F2D7-46E2-823D-3779EB814BEC.jpeg` inspected. The earlier photo-check action is complete: compare its generation/cassette with 7989 FH-SL01-7 before merging; no threaded-rear-hub source hunt is needed. |
+| 4006 | Radius platform pedal, alloy body/cage, steel axle, 9/16in thread; still no numbered catalogue identity. |
+| 4686 | Wide version 1A, steel direct pull, medium cage, bolt-on, no adjuster, Suntour 4 marking, 28T max, 314g spec. |
+| 4687 | Wide version 1D's structured fields are empty. Inspected photo `https://velobase.com/CompImages/RDerailleur/3C22D54F-781F-4C4E-AFAB-5E5C43DAD2C6.jpeg`: toothed mounting washer, exposed cylindrical spring, curved metal cage. Describe that specimen; do not copy 1A's capacities. Page lists 310g spec and 1956-63. |
+| 4696 | Checker, short cage, alloy/steel, AccuShift/friction, adjuster, 26T max, 309g spec; inner marking VIA DF. **DF corresponds to June 1987** under the recorded SunTour date-code table. This is specimen evidence against literal 1980, not an introduction/end-year bound; defer date SQL pending corroboration. |
+| 4697 | Competition type 2, steel short cage, claw, 24T max, 256g spec; type-specific knuckle lettering. Keep apart from type 1. |
+| 4700 | VeloBase model **MRC-50**, SMS Max; Bridgestone collaboration, cable/cam indexing, claw, short cage, 34T max, actual 451g. Code absent from DB title. |
+| 4712 | VeloBase model **RD-5500**, second-version Mountech GTL, long cage, standard replacement guide pulley, 34T / 38T wrap; contributor reports BK specimen (November 1985). Keep separate from earlier Tech-pulley 4711; do not copy earlier specifications. |
+| 4717 | U, claw, medium cage, friction, adjuster, 30T / 28T wrap, actual 349g including hanger but excluding dropout bolt; retain the existing second-example 354g too. |
+| 4718 | Vista-branded, SunTour-made VG T, alloy, medium cage, friction, adjuster, VISTA / VG T markings. Page reports 257g, 34T / 36T. No brand reassignment or merge proposed. |
+| 4746 | Hero version 1, steel, claw, friction, short cage, adjuster, 30T max, 353g spec attributed by VeloBase to Disraeli Gears. Existing fitment range is not replaced by its page's 1987 attribution. |
+| 4747 | Hero version 2, alloy/steel, short cage, 5mm Allen mount, adjuster, Blue Line-like revision. Date still unknown. |
+| 6261 | AX-5000 handlebar shifters, six-speed AccuShift/friction. Page's five-speed indexing note is explicitly uncertain. |
+| 6292 | Seven stem/headset levers, aluminium, power shift lever marking; right retro-friction, left friction, lollipop cable heads. No exact catalogue code. |
+| 6314 | ST-ES01 ErgoTec, AP-MD ES01 marking, spring-return thumb/finger controls, 7/8-speed AccuShift, actual 263g including uncut cables, 1994 attribution. |
+| 6693 | Ole alloy quill stem, 25.4mm clamp, 22.0mm quill, wedge, 5mm Allen expander/binder; no numbered model. |
+
+**Validation / limits:** the only live bike links on these rows are Hero fronts
+8444 / 8464 / 8484 / 8583 -> 2636, Hero rears 8445 / 8465 / 8485 / 8584 -> 4746,
+and Radius pedals 7207 -> 4006. All nine remain unchanged. The whole-DB quality
+report returned zero errors; among the reviewed IDs it flags only the five undated
+rows 2231 / 2241 / 2618 / 3130 / 4747. These are review findings, not permission to
+invent dates. SunTour duplicate report has seven groups / eleven pairs; its near
+report has zero candidates. Alpha 3000 configuration differences and existing
+Wide/Hero/specimen generations are preserved; no new merge is established by title
+similarity. Preflight checked every source guard against the baseline. Application
+and exact readback passed; row count remained 10496, every live bike mapping was
+unchanged, and rerun affected zero rows. Description-only edits do not change the
+generator's matching inputs, so catalogue regeneration was unnecessary. The five
+missing-date findings remain open evidence questions; no date corrections or merges
+were included.
+
 ## SunTour Bicycle Component Catalog Edition No. 89 — printed 09.1988 (2026-11-16)
 
 - Source: [RadioLabWorks PDF](https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf)
