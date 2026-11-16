@@ -435,12 +435,13 @@
 
 ## 1987 Raleigh (UK) — `1987_raleigh_spec.csv` (13 bikes, 294 specs, 38 linked)
 
-- **Randonneur rear correction prepared, 2026-11-16:** p.13's dedicated
+- **Randonneur rear correction applied, 2026-11-16 (user approved):** p.13's dedicated
   mechanism close-up identifies the straight-parallelogram long-cage
-  AR47.1T Touring **4403**, rather than short-cage ARIS 4412. Prepared
+  AR47.1T Touring **4403**, rather than short-cage ARIS 4412. Repointed
   spec **8852 → 4403**, retaining source 224, plus a bike/year-specific
-  override; awaiting user approval/application. All 94 CSVs compared: only
-  that mapping changes. See the [identification and pending SQL](../../../ingest-component-catalog/references/known-catalogs/huret.md#raleigh-randonneur-long-cage-identification--2026-11-16).
+  override. All 94 CSVs compared: only that mapping changes. Live readback
+  confirms the new link and all other specs unchanged; SQL rerun zero,
+  integrity report zero errors. See the [identification and validation](../../../ingest-component-catalog/references/known-catalogs/huret.md#raleigh-randonneur-long-cage-identification--2026-11-16).
 - **Earlier New Success review, 2026-11-16:** re-read p.15 Randonneur specifications
   and p.13 portrait/transmission text. The six-speed range is compatible
   with indexed MA85.5E, as the Sachs maker sheets establish, but Raleigh's

@@ -220,8 +220,8 @@ Raleigh specification table.
   reports original friction-ratchet levers but its photos show replacement
   Shimano equipment; no exact Huret code is derived from that thread.
 
-**Prepared correction, awaiting user approval:** rear spec **8852**, bike
-**497**, Randonneur 18 (1987), `Huret New Success`, **4412 → 4403**. Retain
+**Applied correction, user approved:** rear spec **8852**, bike
+**497**, Randonneur 18 (1987), `Huret New Success`, **4412 → 4403**. Retained
 source **224**, raw label, value and all component identities/date bounds.
 The old link came from the broad ARIS-from-1987 override; the new evidence
 supports a bike/year-specific exception before that rule, preserving Peugeot
@@ -229,16 +229,17 @@ Savoie / Mont Cenis mappings. Shifter **8849** on 6110 and front **8851** on
 2439 remain separate exact-fitment questions; this rear comparison does not
 by itself identify their codes.
 
-Guarded SQL is retained at
-`/private/tmp/raleigh-cage-review-2026-11-16/raleigh-cage-fix.sql` for review
-and later application. The restoration is 4403 → 4412 on that same spec,
-with its bike/label/source/value guards. The dry-run guard matches exactly
-one live row. The prepared generator change was checked across all **94 CSVs**
+Restoration, if needed: 4403 → 4412 on that same spec, guarded on bike 497,
+label 17, source 224 and value `Huret New Success`. The reviewed SQL updated
+exactly **one** live row; rerun **zero**. The generator change was checked across all **94 CSVs**
 and **20,845 generated specs**: only the Randonneur rear mapping changes;
 the linked count remains **7,544**. The original generated SQL was restored.
-No DB writes or component changes have been made. SQL must still be applied,
-read back and rerun for idempotency after approval. Only that SQL is retained
-as task scratch material; disposable downloads/comparison files were removed.
+Live readback confirms 8852 → 4403 and all **20,844 other specs unchanged**,
+including shifter 8849 and front 8851. Candidate component records and
+component/bike/source counts are unchanged. The integrity report has zero
+errors and no findings on the corrected bike spec. Temporary SQL and the
+application snapshot/check script were removed after validation; the earlier
+disposable downloads/comparison files were already removed.
 
 ## New Success shifter six/seven-speed compatibility — 2026-11-16 review
 
@@ -294,14 +295,14 @@ For Raleigh, visually re-read original [1987 UK catalogue](https://labibleduvelo
 with the stored ratchet wording and six-speed range; it does not name ARIS
 or a lever code. The p.13 photo does not resolve the shifter code/selector
 at this scan size. Its transmission paragraph explicitly says **long cage**
-New Success, while rear spec **8852** currently links short-cage **4412**.
+New Success, while rear spec **8852** then linked short-cage **4412**.
 This adds a concrete cage question to the prior ARIS-from-1987 decision:
 review 4403 AR47.1T versus 4413 AR47.2T using period fitment evidence before
 changing either the shifter or rear link. A year or ratchet wording alone
 does not distinguish those generations. Leave current links unchanged for
 review, rather than recording the Raleigh as a confirmed MA85.5E fitment.
 The [subsequent rear-detail comparison](#raleigh-randonneur-long-cage-identification--2026-11-16)
-resolves the rear as 4403; that one-link correction is prepared for approval.
+resolves the rear as 4403; that user-approved one-link correction is applied.
 
 **Proposed enrichment, not applied:** retain 6110's current title, search
 text, 1987–1990 dates and three links. After recovering/registering the maker
@@ -907,11 +908,12 @@ and fetched copies were removed after recording these findings.
   Historical duplicate note: 6110 and 6111 ("ARIS New Success (type 1)",
   84 g spec vs 70 g) looked alike then. Superseded by the 2026-11-16 live
   check: 6111 no longer exists; there is no current pair to merge.
-- Bike side: this printing says plain "New Success" (no ARIS). The 1987
-  Raleigh Randonneur 18 "Huret New Success" is linked to ARIS rows (4412 /
-  2439 / 6110, dated 1987+); 4402 now ends 1986, so 1987 stays on the ARIS
-  rows (the only 1987-dated ones). Revisit if a 1987 Sachs-Huret catalogue
-  shows which style Raleigh fitted.
+- Historical bike-side reasoning, superseded: this printing says plain
+  "New Success" (no ARIS). The 1987 Raleigh was originally placed on ARIS
+  rows 4412 / 2439 / 6110 because of their dates. The November 15 review
+  below invalidated that date-only distinction, and the approved November 16
+  [Raleigh detail-photo correction](#raleigh-randonneur-long-cage-identification--2026-11-16)
+  replaces its rear with 4403 AR47.1T. Front/shifter exact codes remain open.
 
 ## Sachs-Huret 1985 — not retrievable (checked 2026-10-20)
 
@@ -1183,7 +1185,10 @@ and `/tmp/elysee-sheet-18.jpg`, `-21.jpg`, `-22.jpg`, `-23.jpg`, `-24.jpg`,
   Mont Cenis, 1989 Savoie), treating them as ARIS from 1987. This supersedes the April 1986 note's reason ("4402 now
   ends 1986"): the 1988 Brügelmann pass (source 391) extended 4402 AR 47.1 D to 1988, so those specs no longer
   distinguish the two by date. Revisit if a 1987-88 Sachs-Huret catalogue shows which style was fitted. The 1988 and
-  1989 links stay outside 4412's VeloBase 1987 date (review flags).
+  1989 links stayed outside 4412's VeloBase 1987 date (review flags at that time).
+  **Raleigh exception, user approved 2026-11-16:** the detail-photo review
+  above now identifies and links Randonneur rear 8852 to 4403 AR47.1T;
+  the Peugeot decisions remain unchanged.
 - Validation: 6 rows as planned (1 spec, 4 component updates incl. 4276, 1 delete); rerun 0; no dangling
   references. All 93 CSVs regenerated: only the Weekender mapping changed (4277 -> 4276). `quality-report` has no
   findings on the touched rows; the 4417 x2 and 8958 x2 date flags cleared.
