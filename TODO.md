@@ -105,8 +105,7 @@ Evidence and exact affected specs are in the
 - **Component dates and metadata review:** use `node scripts/quality-report.js` for current IDs and reasons. See [scope, evidence and validation](README.md#checking-database-quality). Review identity/source evidence before changing links or dates; inspect the flagged descriptions before assuming truncation. Flagged dates are review candidates, not proven wrong identifications: distinguish catalogue attestation dates, later bike fitment, reused names and actual generation mismatches before changing dates or links. Narrow follow-up list: 3141 Tange Falcon (5 specs), 3388 Normandy Luxe Competition (2), 1398 Sedis Gold (2), 6899 Vittoria Pro L Slick (1), 1365 Everest Serie Special Oro (1), 9126 Gipiemme Crono Sprint (1).
 - Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Maxy II and the Nuovo Tipo C1264/C1265 identification (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
 - Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); the SunTour "syncro-shift" Cyclone II lever (Palo Alto 1981/82; no part number, no row).
-- **SunTour Edition No. 89 follow-ups** (source 427, see [suntour.md](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#suntour-bicycle-component-catalog-edition-no-89--printed-091988-2026-11-16)): (1) compare 3630 "XCD 6000 (freehub)" (unnumbered, 1988-90) with the new FH-XD10 row and the 1990 FH-XD11 before merging or retitling; (2) decide whether 6290 LD-5100 PLG (150 g) is the 1989 LS-5700 / LS-5800 PLG pair (150 g/pr) and widen or retitle; (3) transcribe the Scrambler II (pdf p.40) and LV-3 (p.41) pages into rows, and check whether 7956-7958 RD-SR21 (1992) succeed RD-SR10; (4) re-read pdf p.34's RD-2000-GX (Code 25469907) against p.33's RD-2001-GX before adding it to 4706.
-- Reconcile SunTour's English **"Through 1988" specification catalogue** at equusbicycle.com/bike/suntour/catalog88/pdf/ (only spreads 0005 / 0007 read, for the Alpha 3000 front): target the Alpha-5000 front derailleur, brakes, crankset and hubs (no suitable row in the source-gap lists) and English 1988 dates beside source 199.
+- **SunTour Edition No. 89 follow-ups** (source 427, see [suntour.md](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#suntour-bicycle-component-catalog-edition-no-89--printed-091988-2026-11-16)): (1) compare 3630 "XCD 6000 (freehub)" (unnumbered, 1988-90) with the new FH-XD10 row and the 1990 FH-XD11 before merging or retitling; (2) decide whether 6290 LD-5100 PLG (the 1988 English catalogue's PLG code, 150 g) was renumbered LS-5700 / LS-5800 in Edition No. 89 (150 g/pr), e.g. from a stamped 1989 specimen, before widening or retitling; (3) transcribe the Scrambler II (pdf p.40) and LV-3 (p.41) pages into rows, and check whether 7956-7958 RD-SR21 (1992) succeed RD-SR10.
 - Campagnolo hub 1253: check Cat 17 p.54 against row 3232 ("1253 kidney-bean at 1972 only", still current in 1974); needs the page image.
 
 ## Open: link coverage (bike_spec -> component_id)
@@ -249,13 +248,13 @@ Keep the compound 1989 Bianchi "Vittoria Formula 1 and Juniore tubulars"
 
 ### Crankset
 
-- No suitable row: the rest of the SR 1986 crank range (SAC-100 / SAC-T310, SUC-310 / SUC-100 / SUC-T310, FX-T310 / FXC T310 / T301, AXC T301 / T310, CXC 101, CRCT310, CTC 612; SAC-310, SXC(-T)310, CTC-5SG / 532 / 680 and CXC-300 now have rows 11317-11323; 1986 Falcon / Raleigh / Miyata and 1989 Bianchi; the same mid-1980s SR catalogue gap as the seatposts and stems); Sugino TVP, TNFVP, AL-WB, LP, XE300, Astron track and the 1981 Bianchi "Sugino Corsa" sets; Ofmega Premier (2), Nuovo Competizione, Junior (and Super Corsa MC-130, already listed); Stronglight 5470 (2, 1983 Peugeot); Haubtmann 100 / triple (3, 1986-88 Peugeot); Peyrard 3020 (3, 1984 Peugeot; probably the Nervar 3020); Gipiemme America 87; SunTour Alpha-5000; Thun Gamma Gold.
+- No suitable row: the rest of the SR 1986 crank range (SAC-100 / SAC-T310, SUC-310 / SUC-100 / SUC-T310, FX-T310 / FXC T310 / T301, AXC T301 / T310, CXC 101, CRCT310, CTC 612; SAC-310, SXC(-T)310, CTC-5SG / 532 / 680 and CXC-300 now have rows 11317-11323; 1986 Falcon / Raleigh / Miyata and 1989 Bianchi; the same mid-1980s SR catalogue gap as the seatposts and stems); Sugino TVP, TNFVP, AL-WB, LP, XE300, Astron track and the 1981 Bianchi "Sugino Corsa" sets; Ofmega Premier (2), Nuovo Competizione, Junior (and Super Corsa MC-130, already listed); Stronglight 5470 (2, 1983 Peugeot); Haubtmann 100 / triple (3, 1986-88 Peugeot); Peyrard 3020 (3, 1984 Peugeot; probably the Nervar 3020); Gipiemme America 87; Thun Gamma Gold.
 
 ### Brakes
 
 Remaining era mismatches: 1983 Bianchi Rallye generic "Mafac cantilever" -> 10016 (1981-only, description specifies tandem dual-cable levers), and 1990 Bianchi Osprey / Nyala -> 8032 CT-X101 / 8038 CT-XT01 (1992-only; check generation/model codes against a 1990 manufacturer catalogue before widening). The 1982 Peugeot NL "605 side-pull" cells remain unlinked: the source prints Mafac, so the Weinmann identification still needs a clear photo.
 
-- No suitable row: Dia-Compe 984 / 984D (3, 1989 Bianchi), RT 400 (1986 Raleigh); Modolo Quattro (2, 1989-90 Bianchi) and Start (1987); Lee Chi cantilever (3, 1988-89 Peugeot); Chang Star 500 / cantilever; Polygon AF-500; SunTour Alpha-5000; Universal ART. 130/131 (1981 Bianchi; held-source review below confirms two front options, identification still open); Altenburger 53 S3 (1987 Peugeot).
+- No suitable row: Dia-Compe 984 / 984D (3, 1989 Bianchi), RT 400 (1986 Raleigh); Modolo Quattro (2, 1989-90 Bianchi) and Start (1987); Lee Chi cantilever (3, 1988-89 Peugeot); Chang Star 500 / cantilever; Polygon AF-500; Universal ART. 130/131 (1981 Bianchi; held-source review below confirms two front options, identification still open); Altenburger 53 S3 (1987 Peugeot).
 
 ### Rear Derailleurs
 
@@ -268,7 +267,7 @@ Remaining era mismatches: 1983 Bianchi Rallye generic "Mafac cantilever" -> 1001
 
 ### Front Derailleurs
 
-- No suitable row: Shimano FD-M236 (2, 1987 Peugeot), Light Action FD-L525 / L532 (1987 Bianchi), 1987 Tourney, Z105 (1986 Raleigh); SunTour Alpha-5000, Quattro (2, 1989-90 Bianchi; see the rear-derailleur Quattro note); Simplex Foret front (2, 1989 Peugeot), SX 432 (1987 Peugeot); Huret Luxe front (4, 1970-71 Raleigh); Ofmega Super Competizione front (1988 Colnago); Campagnolo Velox front (1974 Falcon).
+- No suitable row: Shimano FD-M236 (2, 1987 Peugeot), Light Action FD-L525 / L532 (1987 Bianchi), 1987 Tourney, Z105 (1986 Raleigh); SunTour Quattro (2, 1989-90 Bianchi; see the rear-derailleur Quattro note); Simplex Foret front (2, 1989 Peugeot), SX 432 (1987 Peugeot); Huret Luxe front (4, 1970-71 Raleigh); Ofmega Super Competizione front (1988 Colnago); Campagnolo Velox front (1974 Falcon).
 - **Huret / Sachs Huret front derailleurs:**
   1. **Rider double front (source gap):** 1987 Manosque "Huret Rider", 1989 Avoriaz "Sachs-Huret Rider", Lautaret / Lavandou "Sachs-Huret Rider 2" (42x52 doubles) have no row; find a 1987-89 Sachs-Huret catalogue listing it.
 - **Simplex front derailleurs:**
@@ -404,7 +403,7 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 ### Other brakes, tyres and components
 
-- **Brakes with no source:** Modolo Quattro / Start, CLB GL 47-60 and Competition aerodynamic (a c. 1980 CLB catalogue is partly photographed on eBay 305827471354), Altenburger S3 / 53 S3, Lee Chi cantilevers, Chang Star 500, Polygon AF-500, SunTour Alpha-5000.
+- **Brakes with no source:** Modolo Quattro / Start, CLB GL 47-60 and Competition aerodynamic (a c. 1980 CLB catalogue is partly photographed on eBay 305827471354), Altenburger S3 / 53 S3, Lee Chi cantilevers, Chang Star 500, Polygon AF-500.
 - **Tioga 1992-94:** a catalogue for the Surefoot-6 pedals (4 specs, 1993 Bianchi).
 - **Brügelmann follow-ups:** Cobra saddles, Mavic "Titan" rims, Hutchinson Krono 9267 vs 6810.
 - **Shimano 1979-80, 1983 and 1985 general catalogues:** low priority; the held June 1984 dealer catalogue spans 1983-85 and the remaining gaps are mostly ambiguous spec text.

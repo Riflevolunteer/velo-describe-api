@@ -1395,6 +1395,57 @@ original proposal `/tmp/xcd-review-proposal.sql`, images
 `/tmp/xcd-4789.jpg`, `/tmp/xcd-4790.jpg`, `/tmp/xcd-1988-p7.jpg`,
 `/tmp/xcd-1990-p13.jpg` and `/tmp/xcd-1990-p14.jpg`.
 
+## SunTour component catalogue, English edition — ©SunTour November 1987, the 1988 range (2026-11-16)
+
+- Source: [equusbicycle.com catalog88](https://www.equusbicycle.com/bike/suntour/catalog88/pdf/)
+  ("Through 1988" is the Equus page title), eight two-page spreads `suntour88 -
+  0001..0008.pdf` with a usable text layer. Back cover: Maeda / SunTour USA and
+  European distributors, "Designed and Published by Ron Kitching Ltd, Printed in
+  England by Lund Humphries ©SunTour November, 1987". UK English edition of the 1988
+  range. `data_source` **428**, label `SunTour Bicycle Component Catalogue, English
+  edition (©SunTour November 1987)`. Spreads: 1 back / front cover; 2 AccuShift
+  philosophy and compatibility chart; 3 Superbe Pro (pp.5-6); 4 Sprint / Cyclone
+  intro; 5 Sprint 9000, Cyclone 7000, Alpha 5000 / 4050 / 3040 / 2000 road (pp.7-8);
+  6 XC intro; 7 XC 9000 / 9010, XCD 6000, XC Sport 7000, XCD 4050, Alpha 2000 / 3040
+  ATB (pp.11-12); 8 SVX, Seven, RT1000, AT1000, non-index levers, headsets, bottom
+  brackets, freewheels, chains (pp.13-14). Not in scope: head binder HL-3000,
+  QR-170, tool TA-320.
+- Marked New for 1988: Alpha 4050 / 3040 / 2000 (road and ATB), XCD 4050, XCD 6000,
+  XC-9010 RD-XC10-GX, BL-XC00, CL-XC01, SL-XS00-CH, SL-BC00, SL-CL20, SP-SU00-S,
+  RT1000 and AT1000 (non-index), SL-DL10, SL-PL10 (L10), PLG LD-5100.
+- **Alpha 5000 in 1988 is derailleurs only:** RD-5000-SS (278g), RD-5000-GX
+  (301g), FD-5000-SS (100g). No alpha-5000 brakes, crank or hubs exist in the range
+  (the 1987 Bianchi Sport SX hubs are Sansin RE-60a, 9010).
+- **Supersedes Edition No. 89 readings:** RD-2000-SS / GX are the 1988 Alpha 2000
+  codes (Edition 89 p.34's RD-2000-GX is a leftover), RD-2001 the 1989 ones. SVX
+  RD-7300 / RD-7400 (no -GT suffix) and RT1000 / AT1000 are listed non-index here;
+  the Edition 89 transcription called RD-7300 AccuShift, so the descriptions now
+  carry both editions. 6376 CL-XD10 matches CL-XD00 (518g pair, identical) and
+  6373 CL-XC10 (1987) is left as the earlier note had it.
+- **8 added** (1988-1988 unless shown): 11418 FD-5000-SS, Alpha 5000 (1987-1988,
+  1987 from the Sport SX fitment and the c. 1987 alpha-5000 group); XCD 4050 11419
+  BA-4150 (cantilever), 11420 BL-4050, 11421 CL-4050, 11422 PL-4050; 11423
+  RD-SN00-SS / GT, Seven (non-index); 11424 SL-DL10-BS / CS; 11425 SL-PL10-BS / CS.
+- **Retitled** (old titles): 2615 "FD-SN00, SunTour 7" -> FD-SN00, Seven; 2619 + -SSB
+  / -GXB; 11392 / 11391 / 11386 / 11084 + the 1988 single codes SL-4050-CH /
+  SL-3040-CH / SL-2000-CH / SL-AT10-CH; 11390 + -SSB / -GXB; 4706 + RD-2000-SS /
+  RD-2000-GX; 4770 "RD-7400-GT, SVX GT" -> RD-7400 / RD-7400-GT, SVX (long cage);
+  8816 "CT-XD10, XCD 6000 (cantilever)" -> BA-XD10 / CT-XD10; 6376 "CL-XD10, XCD
+  6000 (Combination Lever)" -> CL-XD00 / CL-XD10. Descriptions rewritten on 1034,
+  2615, 2619, 4706, 4770, 6290, 6372, 11129, 11382, 11386-11389, 11391, 11393,
+  11415 (1988 vs 1989 weights / index status kept where they differ).
+- **Years:** year_from 1989 -> 1988 on 2619, 6285, 6274, 6372, 11084, 11129,
+  11382, 11386, 11387, 11388, 11389, 11390, 11391, 11392, 11393, 11415. year_to ->
+  1988 on 4721 RD-5000-SS and 7862 RD-5000-GX (1987), 2615 FD-SN00 (1987), 7792
+  LD-1400 Bar-Con (1985). **year_from moved later:** 1034 BA-4050 "XCD 4050"
+  1980-1980 -> 1988-1988 (VeloBase placeholder; XCD 4050 is new for 1988 and
+  Edition 89's XCD 4050 page has no brake).
+- **Bike link (user approved):** 1987 Bianchi Sport SX "Derailleurs: SunTour
+  Alpha-5000" front 1329 -> 11418 (Front Derailleurs override). Regenerating all
+  93 bike catalogues changed only that spec; SQL re-run added nothing.
+- Left: 6290 PLG LD-5100 (1988) vs Edition 89 LS-5700 / LS-5800 (TODO); 7861
+  RD-5000-GT not listed in 1988 (kept at 1987).
+
 ## SunTour Bicycle Component Catalog Edition No. 89 — printed 09.1988 (2026-11-16)
 
 - Source: [RadioLabWorks PDF](https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf)
@@ -1472,8 +1523,8 @@ original proposal `/tmp/xcd-review-proposal.sql`, images
   (1990); 6290 LD-5100 PLG vs the 1989 PLG LS-5700 / LS-5800 (both 150g); 6376
   CL-XD10 (1988 JP code) kept apart from 11417; 1989 Brava "SunTour GPX" front and
   "GPX AccuShift" shifters still unlinked (SSB / SSH, B / C rows, text does not
-  choose); p.34 prints an RD-2000-GX (Code 25469907) beside p.33's RD-2001-GX, not
-  added; Scrambler II and LV-3 pages not transcribed into rows; BH-1600 / BH-1800
+  choose); p.34's RD-2000-GX is the 1988 Alpha 2000 code (see the 1988 English entry
+  above, now in 4706's title); Scrambler II and LV-3 pages not transcribed into rows; BH-1600 / BH-1800
   7993 vs 3617 overlap untouched. Doubtful small-print stock codes were not used
   in any description.
 

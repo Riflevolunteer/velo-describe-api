@@ -536,6 +536,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'suntour alpha 5000': [{ from: 1987, to: 1987, id: 11418 }], // 1987 Bianchi Sport SX "Derailleurs: SunTour Alpha-5000" front: FD-5000-SS (1988 English catalogue, source 428; 1987 from this fitment)
     'shimano ax 50': [{ bike: 'Victor', from: 1987, to: 1987, id: 2459 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano z 204gs': [{ bike: 'Trail Runner', from: 1987, to: 1987, id: 2543 }, { bike: 'Valley Runner', from: 1987, to: 1987, id: 2543 }, { bike: 'Path Winder', from: 1987, to: 1987, id: 2543 }, { bike: '615 GT', from: 1987, to: 1987, id: 2543 }, { bike: '215 ST', from: 1987, to: 1987, id: 2543 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour xc sport 7000 ic': [{ bike: 'Terra Runner', from: 1987, to: 1987, id: 2660 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
