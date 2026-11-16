@@ -4050,7 +4050,9 @@ const COMPONENT_OVERRIDES = {
     'sugino spkc': 5928, // 1986 Raleigh Crested Butte: Sugino SP-KC
     'sugino sp kvc 230mm': 5928, // 1986 Raleigh Elkhorn: "KVC" a typo of the 1985 "SP KC 230mm"
     'simplex slj 4164 dural silver anodised 266mm': 7305, // 1977 Peugeot (DE) PY 10/CP: Simplex SLJ4164, row 1978-81, a year early
-    // Judgement calls 2026-10-30. Bare "Cronosprint": the main group's post (Aero and Economy were named groups).
+    // 1987 Bianchi Mondiale table names no code; 600BA / 600CA Aero / 600DD remain distinct.
+    'gipiemme cronosprint anodized': [{ bike: 'MONDIALE', from: 1987, to: 1987, id: null }],
+    // Judgement call 2026-10-30: bare Cronosprint uses the main group; distinct from the qualified Mondiale value.
     'gipiemme cronosprint': [{ from: 1980, to: 1991, id: 5789 }], // 1987 Bianchi Giro / Super Leggera: Crono Sprint 600BA (fluted)
     // Peugeot Simplex material-only posts, picked by the bike's Simplex tier: SX group -> SX 1500, SLJ group -> SLJ6164.
     // 1982 PH 12 "Simplex Dural, 24 mm" and 1976 PY 10 "dural, anodised" stay unlinked.
@@ -4098,8 +4100,15 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin Vuelta: 1383 Record Super Star ends 1980; bare Record does not establish Extra 50 Record.
     // The final entry preserves the existing matcher result for other bikes.
     'regina record': [{ bike: 'Vuelta', from: 1982, to: 1982, id: null }, { id: 1383 }],
-    // 1987 Bianchi: its five specs call this "Regina C Record"; De Rosa's c. 1984 C-Record bike specifies a Regina CX-S chain, and Campagnolo's 1988 compatibility table lists CX-S for Record/Super Record. Map the Bianchi shorthand to Regina Extra CX / CX-S.
-    'regina c record': [{ from: 1987, to: 1987, id: 1384 }],
+    // 1987 Bianchi, original table PDF p.15: X4 = CX silver; Mondiale / Super Leggera /
+    // Trofeo / Nuovo Alloro = Corsa silver. Supersedes the inferred "Regina C Record" transcription.
+    'regina cx silver': [{ bike: 'X4', from: 1987, to: 1987, id: 1384 }],
+    'regina corsa silver': [
+      { bike: 'MONDIALE', from: 1987, to: 1987, id: 1376 },
+      { bike: 'SUPER LEGGERA', from: 1987, to: 1987, id: 1376 },
+      { bike: 'TROFEO', from: 1987, to: 1987, id: 1376 },
+      { bike: 'NUOVO ALLORO', from: 1987, to: 1987, id: 1376 },
+    ],
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano cn hg70 grey black': 7568,
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
@@ -4638,6 +4647,8 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    'bianchi speciale': [{ bike: 'X4', from: 1987, to: 1987, id: null }], // 1987 table: house rim; no maker/model identified
+
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "lc 40: wolber super champion 27x1; lc 41: mavic module e 700 c": [{ bike: "Le Champion", from: 1984, to: 1984, id: null }],
     "pl 40: wolber super champion 27x1; pl 41: mavic module e anodized 700 c": [{ bike: "Prolight", from: 1984, to: 1984, id: null }],

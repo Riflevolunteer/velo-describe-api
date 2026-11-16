@@ -1419,7 +1419,8 @@ All new rows have the catalogue-attested range 2000–2000 (availability, not pr
   (documented late-1984 brochure for 1985). `npm test` passed.
 - Follow-up reviewed 2026-11-17 below: source 9's `12/86` imprint is confirmed; the early crank
   is attested in February 1987, but the two Bianchi crank generations remain unidentified. The date
-  enrichment was approved, applied and validated on 2026-11-17 (below); source-table discrepancies still need review.
+  enrichment and Bianchi table repairs were approved, applied and validated on 2026-11-17 (below);
+  crank generations and the Mondiale post variant remain unresolved.
 
 ## Front derailleur audit fixes — 2026-11-15 (user approved; audit items 1, 3, 5)
 
@@ -1500,6 +1501,12 @@ All new rows have the catalogue-attested range 2000–2000 (availability, not pr
 - Previous description (for restoration): `Campagnolo C-Record, Italy, 652 grams,53/42; w/ self-extracting crank bolts Cat. n. 18 bis (Dec 1986): 306/101, 135 BCD, screw with incorporated extractor 2350001.`
 - New description: `Campagnolo 306/101, C-Record, Italy. Engraved shield near spider, 135 mm BCD; 652 g (53/42), self-extracting bolts 2350001. Cat. n. 18 bis (12/1986); Record brochure (02/1987), scans 4/5/13. Availability evidence, not a production end date.`
 - Applied SQL and disposable maker scans were removed after readback/idempotency validation.
-  `/private/tmp/crecord-review-2026-11-16/` retains only `bianchi4.jpg` / `bianchi15.jpg` for the
-  unresolved Bianchi source-table/photo review. The original user-held Bianchi PDF is preserved
-  in Downloads; all maker source URLs/page references above allow recovery without temporary files.
+  The Bianchi p.4/p.15 source renders were subsequently removed after the table corrections below
+  were validated. The original user-held Bianchi PDF is preserved in Downloads; all maker source
+  URLs/page references above allow recovery without temporary files.
+
+- Bianchi table follow-up applied and validated 2026-11-17 (user approved): see
+  [equipment-table repairs](../../../ingest-bike-specs/references/known-catalogs/bianchi.md#1987-equipment-table-repairs--2026-11-17-applied-and-validated)
+  for the repaired local CSV, generator and eight spec updates (including the other three chains
+  affected by the same transcription). Rerun zero, exact readback, unchanged unrelated link drift,
+  zero integrity errors. The 1483 component enrichment above remains applied and validated.

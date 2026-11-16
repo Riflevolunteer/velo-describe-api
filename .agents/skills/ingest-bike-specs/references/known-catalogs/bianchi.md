@@ -173,7 +173,7 @@
   HL, KL, TH-305, HTI-A1, CST, UCP), Regina Pista chain, Gipiemme
   Cronosprint posts (three variants), 3ttt Competizione bars (three bends),
   ITM Mondial bars and ITM 100-300 stems (no rows), Extras.
-- 2026-11-06: the five 1987 "Regina C Record" chains -> 1384 Regina Extra
+- 2026-11-06 (superseded by the 2026-11-17 table repairs below): the five 1987 "Regina C Record" chains -> 1384 Regina Extra
   CX / CX-S (1980-90). The c. 1984 De Rosa C-Record catalogue specifies a
   Regina CX-S chain; Campagnolo's 1988 compatibility table lists Regina CX-S
   for Record and Super Record. This supports the shared 1987 Bianchi wording:
@@ -787,5 +787,73 @@ these specific table entries with a blanket group name. The February 1987 manufa
 confirms family availability, not exact Bianchi fitment. The Bianchi review changed no CSV, spec links or generator fields. The subsequently approved
 1483 date/source/description enrichment was applied and validated 2026-11-17; see component
 notes for old/new values and validation. SQL and disposable maker scans were removed afterwards.
-`/private/tmp/crecord-review-2026-11-16/` retains only the p.4/p.15 Bianchi renders for the unresolved
-source discrepancies. Original PDF and source URLs remain available as recorded above.
+The p.4/p.15 renders were removed after the equipment-table repairs below were validated.
+The original user-held PDF and source URLs remain available as recorded above.
+
+## 1987 equipment-table repairs — 2026-11-17, applied and validated
+
+Source 46, VeloBase `1987Bianchi.pdf`, PDF p.15 equipment table (bike names on p.14),
+https://velobase.com/Pages/Resources/CatalogScans.aspx . Original held at
+`/Users/acooper/Downloads/1987Bianchi.pdf`; the temporary p.4 / p.15 renders were removed after
+application and validation. The original PDF remains available for unresolved fitment questions.
+
+Use the explicit equipment table for stored spec text. P.4's blanket C-Record group description
+and customised complete-bike photographs do not override a separately named seatpost, chain or
+rim in the table. This records the source conflict rather than pretending the catalogue gives
+one consistent account of every part. The photographs do not establish a Cronosprint part code.
+
+The local gitignored CSV, generator mappings and live DB specs are corrected as below (user
+approved 2026-11-17). All rows retain source_ref 46 and their original spec IDs.
+
+| Spec | Bike / field | Old text / link | Applied text / link |
+| --- | --- | --- | --- |
+| 1113 | X4 seatpost | Campagnolo C Record / 5737 | Campagnolo Super Record / 5761 |
+| 1133 | Mondiale seatpost | Campagnolo C Record / 5737 | Gipiemme Cronosprint anodized / NULL |
+| 1117 | X4 chain | Regina C Record / 1384 | Regina CX silver / 1384 |
+| 1137 | Mondiale chain | Regina C Record / 1384 | Regina Corsa silver / 1376 |
+| 1197 | Super Leggera chain | Regina C Record / 1384 | Regina Corsa silver / 1376 |
+| 1217 | Trofeo chain | Regina C Record / 1384 | Regina Corsa silver / 1376 |
+| 1237 | Nuovo Alloro chain | Regina C Record / 1384 | Regina Corsa silver / 1376 |
+| 1119 | X4 rims | Campagnolo / NULL | Bianchi Speciale / NULL |
+
+- 5761 is the existing period 4051/1 Nuovo Super Record single-bolt post, already the generator's
+  1981+ Super Record choice (1980-1988); do not substitute the older two-bolt 5759.
+- Cronosprint 5789 600BA fluted, 5790 600CA Aero and 5788 600DD are distinct, period-plausible
+  posts. The qualified Mondiale text gets an explicit scoped NULL. Existing bare Cronosprint
+  mappings for Giro / Super Leggera are separate recorded decisions and have not changed.
+- The table names CX for X4 and Corsa for the other four chains. Existing 1384 CX / CX-S and
+  1376 Extra 50 Corsa retain these identities; manufacturer catalogues distinguish CX-S / Corsa
+  (Regina notes, sources 138 / 190). `silver` is retained as the table's finish, not used to replace
+  the printed model with generic 8799 50 Silver or 1386 Silver BX. No component metadata changed.
+- `Bianchi Speciale` remains a house rim, explicitly NULL; the p.4 prose calls it Bianchi Black
+  and Silver Pro. Neither description identifies a Campagnolo model/manufacturer.
+- The earlier five-chain "C Record means CX-S" inference is superseded. All five inaccurate CSV
+  values were removed, and the obsolete `regina c record` override was replaced by exact named,
+  bike/year-scoped CX/Corsa mappings. Crank links 1107 / 1127 have not changed and remain unresolved.
+
+Validation before DB application: CSV round-trip comparison found only the eight cells above
+changed. Using one live component snapshot, all 94 loaded CSVs / 20,845 generated specs were
+compared before/after; exactly these eight identities/texts changed, with five link replacements,
+one removed link and two retained links. Generated linked specs 7,544 -> 7,543. A simulated snapshot
+with the eight reviewed SQL updates restores exact CSV/DB identity pairing: no missing rows or
+ambiguous identities, and the same unrelated baseline of 6 gains / 33 losses / 0 changed targets.
+The full test suite and `git diff --check` passed. This preparatory comparison was a simulation;
+actual application and live validation follow below.
+
+Applied 2026-11-17 on user approval: eight guarded UPDATEs inside one transaction affected eight
+spec rows; rerun affected zero. Readback confirmed the eight text/link pairs above, the original
+spec IDs and source_ref 46. Compared every selected spec field to the saved pre-apply snapshot:
+only these eight reviewed value/link pairs changed; bike and component snapshot records were
+unchanged. No rows inserted/deleted. Live catalogue: 15 bikes / 300 specs, 164 linked (one fewer
+because the incorrect Mondiale C-Record post was unlinked).
+
+Live generator comparison after application covered all 94 loaded catalogues / 20,845 specs:
+no missing or ambiguous identities, and the same pre-existing unrelated 6 gains / 33 losses /
+0 changed targets as before this repair. Whole-DB quality report: zero errors; remaining review
+findings are not new repair approvals. SQL, CSV/generator backups, snapshots, helper scripts and
+both sets of temporary source renders were removed after validation. Old/new values and the
+original source/page references above preserve the correction evidence without scratch files.
+
+Remaining identity questions are the two crank generations (1107 / 1127, still linked to 1482)
+and a numbered Cronosprint fitment for Mondiale (1133 deliberately NULL). Do not reopen the
+house-rim manufacturer or substitute a seatpost variant without new distinguishing evidence.

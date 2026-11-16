@@ -41,9 +41,19 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Seatposts
 
+- 1987 Bianchi Mondiale, corrected table value `Gipiemme Cronosprint anodized` (spec 1133):
+  NULL replacing the incorrect C-Record link 5737, applied/validated 2026-11-17. Source 46,
+  PDF p.15, names no code. 5789 600BA, 5790 600CA Aero and 5788 600DD remain plausible; the p.4
+  complete-bike photo / group prose does not establish a numbered Cronosprint variant. The
+  existing bare Cronosprint mapping on Giro / Super Leggera is a separate prior decision.
+
 - Leave unlinked: the three plausible Peugeot Spidel links; 1980 Peugeot "SR Laprade, fluted, lightweight" (five SR Laprade rows: 5857 / 5858 / 5859 / 5860 / 5862); Peugeot "Stronglight" / "Strong alloy" text (8, maker only); 1986 Falcon "Suntour QR-120" (a seat bolt, not a post).
 
 ## Rims
+
+- 1987 Bianchi X4 `Bianchi Speciale` (spec 1119): corrected wording applied/validated 2026-11-17,
+  NULL retained. Source 46 PDF p.15 and p.4's Bianchi Black and Silver Pro prose name
+  a house rim, without identifying a Campagnolo maker/model. Do not infer one from C-Record.
 
 - Leave unlinked (several rows fit): Miyata "ARAYA 16-B" (four 16B rows); 1989 Bianchi "Campagnolo Omega Super hard anodized" (4957 / 4961 / 4958 all cover 1989); "Ambrosio Elite anodized" (Extra Elite / Super Elite / Aero Elite); "Araya RM alloy" (RM series); 1989 Peugeot "Mavic 190 NE" (DB has 190FB and 195NE); 1988 Peugeot "Mavic 400" x2 (model not identified); 1989 Bianchi "Crono 700 and Hypothesis 26" (two rims in one cell); Raleigh 1989 "Alesa alloy / hollow section" (12) and "Nisi Sprint / High Pressure" (maker, no model).
 - Also several rows fit: 1991-92 Bianchi Proto / X-4 "Campagnolo Sigma" (4; tubulars 4970 Sigma Strada, 7032 Sigma 20 Strada, 7031 Sigma Pave, 4969 Sigma Crono all cover 1991), 1994 Cinelli Supercorsa "Campagnolo Omega" (4955 / 4957 / 4961), 1991 Colnago Krono "Ambrosio Aero (spoked-wheel option)" (4; 4892 Aero, 9481 Aerodynamic, 9482 Aero Elite). Either/or and two-rim cells stay unlinked: "Campagnolo Victory or Ambrosio Metamorphosis" (Victory Strada vs Crono also open), "Mavic Monthlery / Sport or Pellet", "Martano Strada (tubular) / Araya 20A smoked", "FIR Tour or Ambrosio Giro d'Italia". Still no row: Araya RM-18T, Ukai LA-14 / EX-17 / 22A / 7Z, Weinmann 716E / 425 X / Aero, Sumo 7X / 14F, Rigida Jade / Saphir / CTX 10, Wolber Alpine, Velotech, FiR Mase Lega / MT 222 / MT 240.

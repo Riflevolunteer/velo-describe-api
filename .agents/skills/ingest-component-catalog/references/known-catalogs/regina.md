@@ -157,10 +157,14 @@
 - Not inserted: the Stelvio group parts, the Strada shifters, the Enduro crank,
   front derailleur and shifters, Regina bottom brackets (there are no Regina BB
   rows) and the Hollow Pin chain (no specification given).
-- Does not resolve the unlinked bike specs "Regina C Record" chain (5 bikes;
-  the Campagnolo-branded C-Record chain made by Regina, so a Campagnolo catalogue
-  is the place to look) and "Regina Extra Super Corsa 1/2 x 3/32" (3 bikes; it
-  may be 1376, "Gran Sport Super Corsa" in c. 1970, but that is an override
-  choice, not a catalogue finding).
+- **Bianchi chain source-gap assumption superseded 2026-11-17:** the five 1987
+  "Regina C Record" values were transcription/inference errors, not evidence of a
+  Campagnolo-branded chain requiring a source hunt. Original Bianchi PDF p.15 prints
+  CX silver for X4 and Corsa silver for Mondiale / Super Leggera / Trofeo / Nuovo Alloro.
+  Corrected values/link choices are applied and validated; see the
+  [Bianchi table repairs](../../../ingest-bike-specs/references/known-catalogs/bianchi.md#1987-equipment-table-repairs--2026-11-17-applied-and-validated).
+- This source pass did not itself settle "Regina Extra Super Corsa 1/2 x 3/32"
+  (3 bikes; 1376, "Gran Sport Super Corsa" in c. 1970, was an override choice,
+  not a finding of this catalogue).
 - Out of scope: spokes and nipples, chain spare links, rivet extractors and
   freewheel removers, the race service case, speed ratio tables.
