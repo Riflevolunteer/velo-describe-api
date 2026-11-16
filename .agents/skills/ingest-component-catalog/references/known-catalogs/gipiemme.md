@@ -259,7 +259,49 @@
   "GIPIEMME-Catalogo-1982.pdf" (14 pp) has the "8 times world champions" cover and post-1984 codes (100AA, 800AES),
   i.e. `data_source` 270 (compared page by page 2026-11-15: the same 14-scan set as disraeligears, identical blank
   inside cover and back page, so not a separate source; do not re-ingest); the "1979" file is a 3-page Special / Dual-Sprint brochure without codes. No genuine 1982
-  catalogue is known. The hunt is logged in [source-hunts.md](../source-hunts.md); remaining comparisons are in TODO.
+  catalogue is known. The hunt is logged in [source-hunts.md](../source-hunts.md).
+- **Rest of the archive compared 2026-11-16** (read-only, transcriptions by subagent; files
+  `wp-content/uploads/2023/11/GIPIEMME-Catalogo-<label>.pdf`, plain curl):
+  - "1984" (13 pp) = held `data_source` 269. Same cover, divider, G1-G6 ("10/84") and rear cover; the four extra pages
+    are a yellow multilingual welcome letter (p.2, undated) and three blanks (pp.3, 11, 12). Nothing new; do not re-ingest.
+  - "1991" (26 pp) = held `data_source` 288, Iscaselle Gipiemme Catalogo N° 7, the **same surviving printed pages** (1,
+    3-11, 17-25, 32, 37-40; pdf repeats p.3 and p.19). Fills none of the missing pages; pdf p.11 is a photo-only
+    Azzurro-type crankset that may be printed p.16 (inferred, no text). No saddles, so the Isca 406 / 407 gap stays.
+  - "1989-Forcellini" (18 pp): ISCA dropout catalogue (X180-X184 sets, X8185 / X8186 screws), undated. Out of scope.
+  - "1987" (4 pp): Spanish-language Cronospecial poster with a "Kit Seleccion Gipiemme" table, undated; '86 world
+    championships (Colorado Springs), Giro delle Regioni 86 and Montello 85 results and the Via Nazionale 46, Vancimuglio
+    address put it at c. 1987. Codes 100AA, 200AB, 300AB, 400AB, 500AA, 600AA, 700AP (brakes and levers), 800AS, 906CC,
+    950AS, 360AS toe clip, 1600BB spokes; kit items 1300-1800 are third-party (Cinelli Volare SLX, 3TTT R84 / CSL,
+    Ambrosio Metamorphosis, Clement Solo). **300AB, 400AB and 700AP have no DB row**: probably the Special / Cronospecial
+    300BB / 400BB / 700AA renumbered as 200BB became 200AB (kit table names 300AB / 400AB "model SPECIAL"), unconfirmed.
+    **Poster read at full size 2026-11-16: left unchanged.** The photos (QR small-flange hubs, quill pedals, sidepull
+    brakes) cannot show whether these are renumbers. The 1987-MINI leaflet introduces *new* sealed Special hubs, so
+    400AB may be that new hub rather than 400BB renamed. The c. 1986-87 catalogue (270) still prints 300BB / 400BB /
+    700AA. The poster is undated and cites the same 1986 results as 270, so it gives no firmer `year_to` either. Reopen
+    only with a code crosswalk or a dated 1987 price list.
+  - "1987-MINI" (4 pp): undated "Novità / '86 world champion" leaflet for new sealed Special hubs (M34.7x1 / ISO, 32 or
+    36 holes, small flange), Bagarre (roller-bearing lower race) / Classic / Cronospecial (labyrinth) headsets and a
+    sealed Special BB. No part numbers, so nothing to match by code.
+  - "1989" (4 pp): Iscaselle Gipiemme Tecno composite five-spoke wheel leaflet, **undated** (8-speed 135 mm cassette and
+    7-speed 130 mm screw-on versions suggest c. 1990-92). Code table p.4: X351 front / X352 rear + size/rim digits, MTB
+    (23 mm), Strada tubular and clincher (20 mm), Pista (120 / 126.5 mm); weights not printed. No DB row for this
+    five-spoke Tecno.
+  - "1994" (5 pp): undated "NEW" brochure, Tecno 416 (1050 / 850 g), Tecno M 416 (1180 / 870 g), saddles Pluma (Ti, 155 g,
+    270 x 132), Plus (leather / Ti, 190 g, 270 x 150), Sintra (fibre / Cr-Mo, 225 g, 265 x 140). Filename year unverified.
+  - "1995" (30 pp, English): **cover printed "GIPIEMME 1995"**, ISCA S.p.A., no part numbers. Saddles Pluma Ti, Plus Ti /
+    Cromoly, Sintra Ti / Cromoly, Dakar Ti (pp.9-14); Tecno wheels C416, 416, C946, 946, C944, 944, C934, 934, 948, 935,
+    M935 (pp.15-25); rims R416 (550 g, checked at 300 dpi; the subagent read 350) and RC416 carbon (400 g)
+    (pp.26-27). Wheel weights and the Dakar figures (180 g, 270 x 129mm) re-read by hand.
+  - **1995 applied 2026-11-16 (user approved), `data_source` 423** `Gipiemme catalogue (1995)`, country IT.
+    `year_from` **moved earlier 1996 -> 1995** (revert value 1996) on 10476 Tecno 416, 10518 Tecno C 416, 10519 Tecno
+    948, 10520 Tecno C 934, 10514 R 416, 10485 Pluma, 10486 Plus, 10487 Sintra; all now `source_ref` 423. The saddle
+    descriptions were rewritten to name both editions (1996 Guida: Kevlar body, 240 x 132 Pluma, Plus 270 x 152 Ti 236 g,
+    Sintra 271 x 135 Ti 275 g; 1995: polythene body, leather, Pluma 270 x 132, Plus 270 x 140 Ti 170 / Cr-Mo 180 g,
+    Sintra 278 x 135 Ti 165 / Cr-Mo 175 g); Cromoly versions folded into those rows, not inserted. Inserted 11361-11367
+    (1995-1995, no group): Tecno 946, C 944, 944, 934, 935, M 935 wheelsets and the RC 416 carbon rim.
+    Judgement call: 5376 "Iscaselle Dakar Titanio" (brand Iscaselle kept) taken as the 1995 "new" Dakar Titanium;
+    years 1990-1990 -> 1995-1995, description rewritten (revert: 1990 / 1990, "Iscaselle Dakar Titanio, Italy",
+    `source_ref` 1). No bike_spec links or generator overrides on any touched row.
 
 ## Gipiemme catalogue 1988 (24 scans, disraeligears.co.uk), `data_source` 287
 

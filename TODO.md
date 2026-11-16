@@ -382,7 +382,7 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 ### Italian makers
 
-- **Gipiemme 1980-83:** a genuine early-1980s brochure (velo-pages albums 1482 / 69471 survive only as thumbnails). Compare the maker's "1984" PDF (13 pp) with held 269, and its 1987-MINI / 1989 / 1991 / 1994-95 PDFs with 270 / 287 / 288.
+- **Gipiemme 1980-83:** a genuine early-1980s brochure (velo-pages albums 1482 / 69471 survive only as thumbnails).
 - **Ofmega:** still unsourced Vantage Quattro, Super Corsa MC-130, Nuovo Mondial; read the disraeligears Bicisport Apr 1985 group test and La Bicicletta Apr / May 1984 Mistral adverts.
 - **Vittoria clinchers 1982-93** (Rally, Competizione, Techno, Randonneur, Zaffiro): no lead yet.
 - **Campagnolo catalogues 1976-81 and 1983-84** (mainly dating, e.g. 1976 / 1984 "Super Record" hubs); record the May 1984 La Bicicletta Victory range advert (disraeligears) as 1984 evidence.
