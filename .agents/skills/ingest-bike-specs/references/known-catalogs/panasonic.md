@@ -1,6 +1,6 @@
 # Panasonic bicycle catalogues (USA 1985-89), read 2026-11-16
 
-These have been read for component evidence. No bikes are loaded. Database changes so far: CT-P5E (source 417), then 12 SR and 6 Kusuki rows (sources 418-421), all marked below.
+These have been read for component evidence. No bikes are loaded. Database changes so far: CT-P5E (source 417), then 12 SR and 6 Kusuki rows (sources 418-421), then MKS PB-20, Sugino TGT and the Dia-Compe 280 / 281 links, all marked below.
 
 ## Source
 
@@ -50,9 +50,8 @@ Each would get an exact link if a row were added.
 | Kusuki WPR-B randonneur bar (1985-89) — **applied, 11330** (WP-RB still open) | 3 exact (1985 Raleigh). The 1987 Miyata "WP-RB" x2 is probably a transposition; that is a judgement. |
 | Kusuki KD-LB (1986), BMT-II-26B (1987) — **applied, 11331 / 11332** | 1 / 1 (1987 Miyata) |
 | Kusuki S-WIN(-AH) stem (1985-89), WIN Σ (1985-89) — **applied, 11333 / 11334** | 3 / 5 (1986-87 Miyata). The 1985 Raleigh bare "WIN" AH x8 could be either and is not settled. |
-| MKS PB-20 pedal (1985-86) | 1 (1986 Miyata City Runner) |
-| Dia-Compe DC-280 / DC-281 MTB levers (1985) | 1 / 1 (1985 Miyata) |
-| Sugino TGT triple (1986) | 3 (1984-85 Miyata: TGT, TGT-LP) |
+| MKS PB-20 pedal (1985-86) — **applied, 11335** | 1 (1986 Miyata City Runner) |
+| Sugino TGT triple (1986) — **applied, 11336** (TGT-LP still open) | 3 (1984-85 Miyata: TGT, TGT-LP) |
 | Sansin ET-Q hubs (1986, "sealed mechanism") | The 3 1985 Raleigh "ET-QS" are probably the same model, but that is not proven. |
 
 Kusuki had only two component rows (Winpista, Medalilion 1000) before the
@@ -65,6 +64,10 @@ FL-270S.
 ## Existing rows: unlinked specs and date evidence
 
 - **Link misses (row exists):**
+  - Dia-Compe 280 8112 / 281 8113 (1984-86). The 1985 Miyata Ridge Runner "DC-280"
+    and Street Runner "DC-281" specs miss them. Panasonic prints "DC-280" / "DC-281" in
+    1985 and "No.280" / "No.281" in 1986-87 for the same MTB levers, so the 2026-11-16
+    "no row" listing was wrong. **Applied 2026-11-16** (21632 -> 8112, 21675 -> 8113).
   - Araya **18** 4921 (1982-93). "ARAYA Model 18 / Model-18" x5 on 1984-85
     Miyata; Panasonic prints "Araya Model 18" in 1985-86.
   - MKS RT-7 10832 (1985-86). Two 1985 Miyata "MKS RT-7 Chrome Plated" specs miss

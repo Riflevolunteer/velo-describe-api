@@ -2239,6 +2239,9 @@ const COMPONENT_OVERRIDES = {
   },
   Cranksets: {
     // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
+    'sugino tgt 50x40x28 teeth sealed bb chromoly axle': 11336,
+    'sugino tgt 52x44x28 teeth': 11336,
+    'sugino tgt lp 52x44x28 teeth sealed bb': null, // 1985 Miyata 610 TGT-LP: LP variant not shown to be plain TGT 11336 (open in TODO)
     'sr sac 310 42 52t x 170 alloy cotterless': 11317,
     'sr sac 310 forged alloy outer ring 52 40': 11317,
     'sr sac 310 one piece alloy with alloy outer ring 170mm 52 40': 11317,
@@ -3540,6 +3543,8 @@ const COMPONENT_OVERRIDES = {
     'dia compe agc 250': 279, // Dia-Compe AGC250, Aero Compe
     'dia compe 152 gum hoods': 271, // Dia-Compe 152 (Double Slot Drilled)
     'dia compe 281 levers': 8113, // Dia-Compe 281 / 281M, mountain bike levers (1986 catalogue)
+    'dia compe dc 280 levers': 8112, // 1985 Miyata Ridge Runner; Panasonic 1985 "DC-280" = 1986 "No.280"
+    'dia compe dc 281 levers': 8113, // 1985 Miyata Street Runner; Panasonic 1985 "DC-281" = 1986-87 "No.281"
     'shimano z levers with gum hoods': 410, // Shimano BL-Z306-105, 105 Golden Arrow
     'shimano deore sis': [{ from: 1987, to: 1989, id: 427 }], // 1987 Colnago Master Mountain Bike: BL-MT60, Deore MT60 Series
     // 1989 Bianchi US catalogue (gringineer scans).
@@ -3551,6 +3556,7 @@ const COMPONENT_OVERRIDES = {
   },
   Pedals: {
     // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
+    'mks pb 20': 11335,
     'sr sp 518fb cr mo spindle': 11328,
     'shimano mx 15': [{ bike: 'Sky Runner', from: 1987, to: 1987, id: 3966 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new deore xt': [{ bike: 'Ridge Runner', from: 1987, to: 1987, id: 3967 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.

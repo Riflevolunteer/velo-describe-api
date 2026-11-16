@@ -227,3 +227,17 @@ OPC-SC and RT / BT cranks, 4 No.66 and DZF cranks, SP-K, HP-G5 and OPC-A5 / A4.
   (TGT is the triple, row 1967). The row ends 1982 and the bikes are 1984; the catalogue is c. 1982-83. 1937's description now says double (DGT).
 - "Sugino TPX" (8875, 1987 Raleigh bike 498) -> 1957 Sugino PX ("PX (TPX)"); not from Vol. 56, the link was simply missing.
 - Both are in `COMPONENT_OVERRIDES` (Cranksets) so a regenerate gives the same links.
+
+## Sugino TGT from Panasonic USA 1986 — applied 2026-11-16, source 417
+
+- New row **11336 Sugino TGT** (Cranksets, 1984-1986): "Triple crankset; 46/36/26, 50/40/28 and
+  52/44/28 fitments listed, with sealed bottom bracket." Panasonic 1986 ATB prints "Sugino TGT
+  46/36/26T". Links: 21228 (1984 Miyata 610), 21649 (1985 Miyata Terra Runner OR).
+  Bike-catalogue fitment only, as with Fuji 1989 (source 412); see
+  `../../../ingest-bike-specs/references/known-catalogs/panasonic.md`.
+- Kept apart: "SUGINO TGT-LP" (21583, 1985 Miyata 610) is left unlinked with a `null` key; the LP
+  variant is not shown to be the plain TGT. Open in TODO.
+  - Validation: load 2 rows / 5 links, identical rerun 0 rows, readback matched.
+    Regeneration gives exactly these 5 links. A first pass found the generic matcher
+    also linking "SUGINO TGT-LP" by substring; it is now blocked by a `null` key.
+    duplicate-report (plain, `--near`, `--paren`) and `quality-report` raise nothing.

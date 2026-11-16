@@ -224,7 +224,7 @@ Keep the compound 1989 Bianchi "Vittoria Formula 1 and Juniore tubulars"
 
 ### Pedals
 
-- No suitable row: H.K. / VP VP-330 / 331 / 333 / 389 / 382S / 230 and VP500 (~10, 1984-90; the largest); HTI-A1 / HTI-P15 / HTI-851 (6); SR SP-452 (3), SP-513 / SP513C (2), SP-518 (2; SP-518FB is 11328, identity not shown), SP-153 (2), MP 150, Lowfat Pro and CTP-170 (1990-93 Bianchi); MKS AR-5, PB-20, NT-1 (1986 Miyata), C 5000 ATB and AR-3 (6, already listed; none in the MKS Edition 11 catalogue); Tioga Surefoot-6 (4, 1993 Bianchi); Union 632 (2, 1984 Raleigh); Lyotard 77R (3) and 90.
+- No suitable row: H.K. / VP VP-330 / 331 / 333 / 389 / 382S / 230 and VP500 (~10, 1984-90; the largest); HTI-A1 / HTI-P15 / HTI-851 (6); SR SP-452 (3), SP-513 / SP513C (2), SP-518 (2; SP-518FB is 11328, identity not shown), SP-153 (2), MP 150, Lowfat Pro and CTP-170 (1990-93 Bianchi); MKS AR-5, NT-1 (1986 Miyata; PB-20 is now 11335), C 5000 ATB and AR-3 (6, already listed; none in the MKS Edition 11 catalogue); Tioga Surefoot-6 (4, 1993 Bianchi); Union 632 (2, 1984 Raleigh); Lyotard 77R (3) and 90.
 
 ### Shifters
 
@@ -357,12 +357,12 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 - **Tange headsets 1984-90** (TH-305 / 305C, TH-108, MES sealed, Unique / Unique X / Unique FE, 230 SLP, MX 600M): Cycle Sports (Yaesu) parts directories on Yahoo Auctions Japan (1985, 1987, 1990; paid, also covers SR), retrobike "Tange Catalogues" archive (browser only), a 1985-90 US distributor catalogue; check the 1985-87 Trek, Puch and Panasonic fitment tables.
 - **Bars and stems 1985-92** (H.L. DR-8 / DR-9 / Dirtdrop / semi-rise / HS-P; SR MTB-220 / 224 / 227, CTR, CTSD; Kusuki KR-LB / SMC-F; ITM Mondial / Krono / Italia aero; Franco Italia; ATAX CTA randonneur; CMC-709 / MS-710): Brügelmann 1986-87 and 1989-92 (not online; ask the forum holders named in the log), an offline Taipei Cycle Show or Taiwan Bicycle Exporters' Guide. Check the Koga-Miyata 1986 p.19 Kusuki image and the Fuji 1988-91 transcriptions against scans (fitment leads in the log).
-- **MKS pedals and Kusuki bars / stems 1979-87** (Miyata: MKS QR-K1, AR-Road / AR-Road 2, PT-7, AR-5, NT-1, PB-20, PB-100, G-5000; Kusuki KR-LB, BMT-3-26, RK-90, Rocky 2; WP-B / WPR-B / KD-LB / BMT-II-26B / S-WIN / WIN Σ now have rows 11329-11334): acquire Cycle Sports (Yaesu) "オールカタログ" annuals c. 1980-88 (also cover SR); otherwise an MKS edition c. 1980 or 1986-87. [Hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
+- **MKS pedals and Kusuki bars / stems 1979-87** (Miyata: MKS QR-K1, AR-Road / AR-Road 2, PT-7, AR-5, NT-1, PB-100, G-5000; Kusuki KR-LB, BMT-3-26, RK-90, Rocky 2; WP-B / WPR-B / KD-LB / BMT-II-26B / S-WIN / WIN Σ now have rows 11329-11334): acquire Cycle Sports (Yaesu) "オールカタログ" annuals c. 1980-88 (also cover SR); otherwise an MKS edition c. 1980 or 1986-87. [Hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - **VP Components pedals c. 1984-90** (VP-230 / 330 / 331 / 333 / 382S / 389, VP500; 9 specs): a VP pedal catalogue or importer page c. 1989-90; VP needs a component_brand row first.
 - **Dia-Compe 1987-93** (BL-08 aero, 250S aero, GX-400 Aero, DC 630, 984 / 984D): retrobike threads 306479 and 361996 (a poster has the 1992 catalogue; browser only), eBay 800322888787 (1989/90 MTB brochure, photos not retrieved).
 - **Panasonic USA 1985-89 fitment evidence (read 2026-11-16, [panasonic.md](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md)):** decide, then prepare SQL for review:
   1. **Kusuki identity calls left from the SR / Kusuki load:** WP-RB (1987 Miyata 215 ST / 615 GT) vs WPR-B 11330; bare "WIN" AH (1985 Raleigh x8) vs S-WIN 11333 / WIN Σ 11334; "KUSUKI SIGMA Alloy" (1985 Miyata 912) vs 11334; brandless "S-WIN-AH" (1980 Miyata 210 / 110) vs 11333, which would move its year_from to 1980.
-  2. Fitment-backed rows for MKS PB-20, Dia-Compe DC-280 / 281 and Sugino TGT.
+  2. **Identity calls left from the MKS / Sugino / Dia-Compe load:** Sugino "TGT-LP" (1985 Miyata 610, blocked by a `null` key) vs TGT 11336; Dia-Compe "PN-280" x2 / "PN-281" (1984 Miyata) vs 8112 / 8113; "DIA-COMPE 280 mountain lever" (1983 Miyata Ridge Runner) vs 8112 (from 1984).
   3. Link misses on existing rows: Araya 18 4921, MKS RT-7 10832 (1985), Sugino SP-KC 5928.
   4. Identity calls: KKT RT-E1 vs 3773, Dia-Compe 730 vs 8929, Sansin ET-Q / ET-QS.
 

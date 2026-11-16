@@ -49,3 +49,16 @@
   still has no source; not in this edition: AR-2, AR-8, Esquartz 107, Mapstage, Radius 7000, Royal Nouvo
   Track, RX-1, New Quill, Unique (pista black alloy plates), Unique (short cage track).
 - **Fitment widening, 2026-11-16 (user-approved):** the Edition 11 date is soft, so dated bike catalogues set the start years. 10046 CR-2 1985 -> 1982-1985 (1982-84 Miyata 310 / 210 / 110 "MKS CR-2"); 10831 33 1985 -> 1983-1986 (1983 Miyata 100 / 90 "MKS 33", 1984 "MKS Model-33", 1985 100 "MKS M-33 Chrome Plated"). Ten specs linked, with generator overrides. The 1979 Miyata 400 "MKS-33" stays unlinked (a four-year gap with no source between).
+
+## MKS PB-20 from Panasonic USA 1985-86 — applied 2026-11-16, source 417
+
+- New row **11335 MKS PB-20** (Pedals, 1985-1986, no part number known): "Pedal; black finish with
+  reflectors listed." Panasonic 1985 City Bike / Villager DX and 1986 RTB / City Bike print
+  "MKS PB-20 black with reflectors". Link: 19026 (1986 Miyata City Runner).
+  Bike-catalogue fitment only, as with Fuji 1989 (source 412); see
+  `../../../ingest-bike-specs/references/known-catalogs/panasonic.md`.
+  Generator key `mks pb 20`.
+  - Validation: load 2 rows / 5 links, identical rerun 0 rows, readback matched.
+    Regeneration gives exactly these 5 links. A first pass found the generic matcher
+    also linking "SUGINO TGT-LP" by substring; it is now blocked by a `null` key.
+    duplicate-report (plain, `--near`, `--paren`) and `quality-report` raise nothing.

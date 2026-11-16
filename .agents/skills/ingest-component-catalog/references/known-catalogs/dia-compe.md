@@ -283,3 +283,18 @@
 - Loaded the preceding proposed SQL: new10977 `Dia-Compe DC400N, N-brakes`,1985–86,38–48mm/117g per caliper; new10978 `Dia-Compe QS400N, N-brakes (quick release)`,1986,38–48mm/132g. Brand73/category3/group123; source_ref209. Stable source UUIDs:b1eadd5f-0a22-4225-8614-f2dc44209356 and ab9e7499-5cb7-48a0-9c86-b2f6f9c46c12 respectively.
 - Linked5797 (1985 Bianchi Rekord26)->10977;8243 (1986 Raleigh Grand Prix)->10978. DC400N first attestation is Bianchi source144; catalogue source209 supplies model/weight/reach. Generator overrides ranged1985–86 and1986 respectively. Existing679/681/682 unchanged.
 - All85 CSVs regenerated and compared against pre-load output: exactly two new mappings,6309->6311 generated links. Live snapshots across18,283 specs confirm only5797/8243 changed from NULL. Idempotent SQL rerun: zero affected rows. Files: `/private/tmp/existing-source-review/dia-compe-proposed.sql`, `before-generator.sql`, `after-generator.sql`, `generator.diff`, `before-links.tsv`, `after-links.tsv`.
+
+## DC-280 / DC-281 lever links from Panasonic USA 1985-87 — applied 2026-11-16
+
+- Panasonic USA 1985 prints "DC-280" / "DC-281 MTB levers", and 1986-87 prints "No.280" /
+  "No.281" for the same bikes' levers. So the codes are 280 (8112) and 281 / 281M (8113),
+  dated 1984-86 from Ron Kitching 1984 (261). Neither row changed.
+- Links: 21632 (1985 Miyata Ridge Runner "DC-280") -> 8112; 21675 (1985 Miyata Street Runner
+  "DC-281") -> 8113. Generator keys `dia compe dc 280 levers` / `dia compe dc 281 levers`.
+- Open (TODO): "PN-280" x2 / "PN-281" (1984 Miyata; the same bikes print DC- in 1985); "DIA-COMPE
+  280 mountain lever" (1983 Miyata Ridge Runner, before 8112's 1984). Optional: Panasonic 1987
+  City Bike "No. 281" would support 8113 year_to 1987; no linked bike needs it.
+  - Validation: load 2 rows / 5 links, identical rerun 0 rows, readback matched.
+    Regeneration gives exactly these 5 links. A first pass found the generic matcher
+    also linking "SUGINO TGT-LP" by substring; it is now blocked by a `null` key.
+    duplicate-report (plain, `--near`, `--paren`) and `quality-report` raise nothing.
