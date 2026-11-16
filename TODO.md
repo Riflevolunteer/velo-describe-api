@@ -116,7 +116,7 @@ Brand-only, size/material-only, either/or and house-part specs can correctly rem
 ### Open after the 2026-11-01 passes
 
 - Judgement call: Biopace 48/38/28 on the 1988 Raleigh Ozark II / Royal [18009 18045] and 1989 Royal ("Shimano Biopace 48/38/28t"; derailleurs "Wide Ratio, indexed shift" / "Shimano SIS indexed", the Royal page only says "a BIO-PACE chainset"): no group printed, FC-B124, FC-M450, FC-M350 all fit.
-- Source gaps, no row (all spellings counted; the 2026-11-01 web sweep in the source-hunt log found nothing): Simplex SX 620 rear (5, 1987-88 Peugeot), Nervar "2020 S sealed B.B." (2020 / 3020 crankset rows and links are already loaded), Solida 52D (3), MKS AR-3 (6, 1987-89 Raleigh; not in MKS Edition 11 c. 1985 either, so later), SR CRH-310 hubs (5, 1986 Raleigh), Strong NS-3 (3, 1990 Bianchi), Vredestein Racer II (4, 1988 Raleigh).
+- Source gaps, no row (all spellings counted; the 2026-11-01 web sweep in the source-hunt log found nothing): Simplex SX 620 rear (5, 1987-88 Peugeot), Nervar "2020 S sealed B.B." (2020 / 3020 crankset rows and links are already loaded), Solida 52D (3), SR CRH-310 hubs (5, 1986 Raleigh), Strong NS-3 (3, 1990 Bianchi), Vredestein Racer II (4, 1988 Raleigh).
 
 ### Source gaps (no suitable row)
 
@@ -143,7 +143,7 @@ Named parts with no suitable period row or no source yet (worth a search if a so
 
 SR work is in [the source worklist](#sr-sakae-next-work).
 
-- Remaining SR source gaps: bare CRE / CR-E (CRE-100 is now 11324; keep both apart from CLE-100 11308); SRE-100/105; MTE-110 (not MTE-100 5849). See the scoped SR worklist for current evidence. Also no row: Mori Stainless Clad (1986 Miyata); Kalloy SP-243 / SP-250 (1989 Bianchi, with the SP numbers below).
+- Remaining SR source gaps: bare CRE / CR-E (CRE-100 is now 11324; keep both apart from CLE-100 11308); SRE-100 (SRE-105 is now 11343); MTE-110 (not MTE-100 5849). See the scoped SR worklist for current evidence. Also no row: Mori Stainless Clad (1986 Miyata); Kalloy SP-243 / SP-250 (1989 Bianchi, with the SP numbers below).
 
 - Source gaps (left 2026-10-30): 1982 Peugeot PH 12 "Simplex Dural, 24 mm" (no 24 mm Simplex post) and 1976 PY 10 "Simplex dural, anodised" (8375 SLJ 3639 is polished, 7305 SLJ4164 starts 1978).
 - Biggest pot: 1987 Raleigh "Sakae fluted alloy with single Allen bolt adjustment" x10 + "SR fluted alloy..." Royal 18 [8836]. The 1983-84 catalogues print the same wording with "CT-P5" (-> 5857), but 1987 drops the model and the 1984 Sirocco was a CT-P6; part of the SR 1983-87 source gap.
@@ -157,7 +157,7 @@ SR work is in [the source worklist](#sr-sakae-next-work).
 
 ### Saddles
 
-- New source gaps (named models with no row): Vetta Maxi (3, 1986 Miyata 2, 1987 Peugeot), ISCA Aero Airline (3, 1986 Falcon), Ariake 77C-DX, Kashimax GTV, Italmanubri 635-S (2), Royal 6275, Falcon "AK 2603".
+- New source gaps (named models with no row): ISCA Aero Airline (3, 1986 Falcon), Ariake 77C-DX, Kashimax GTV, Italmanubri 635-S (2), Royal 6275, Falcon "AK 2603".
 
 - No suitable row: Brooks CR3 (3); Concor Mountain-Pro / Mountain-Pro (4); Gallet 30 / 31 / 31 race / 33 / course (5); Gauthier Rilsan race (2, already listed); Isca 406 (3), 407 (3), Competition; Reydel Profil (7); Royal 463/2; San Marco Luxe race; Selle Italia Aero II (3); Tenor (3); Viscount 2285 / 2296 / Terra / Touring 2200 / Nuovo micro-adjust / anatomical mountain (8); Italia Corsa, Bianchi Corsa.
 
@@ -165,7 +165,7 @@ SR work is in [the source worklist](#sr-sakae-next-work).
 
 - New source gaps (named models with no row): J.Y. M4P / M3P pulley (5, 1989 Bianchi); Kalloy KA-60/80/100 (3) and KA-222P (1989 Bianchi; possibly the undated 6570 Kalloy AL-222, no evidence); H.L. HS-P (2); SR AEROX (2) and CPS-80 (1986 Miyata), SR MTS-131 (1987 Peugeot); Kusuki Rocky 2 / Rocky II (2); Falcon "Aero alloy Model 200" (5, no maker printed).
 
-- Judgement call: Sakae Royal forged alloy, 1987 Randonneur 18 [8848] (no Royal row reaches 1987). Bare "Alloy AH", 1985 Raleigh Pursuit [3503], set do-not-link 2026-10-30.
+- Judgement call: Sakae Royal forged alloy, 1987 Randonneur 18 [8848]: 8230 RY2 Royal 2 now runs 1981-1988 (Nashbar 1988 "Royal II"), but "Royal forged" does not name the II; decide whether to link. Bare "Alloy AH", 1985 Raleigh Pursuit [3503], set do-not-link 2026-10-30.
 - No suitable row: 3ttt special mod. Colnago (7, 1979 Colnago); Kusuki "WIN" AH / alloy (8, already listed) and Rocky III adjustable; Philippe Professionnel / Professional (5, 1975 Motobecane and 1978 Peugeot; only Philippe Competition 1980 exists); PIVO De Luxe (3, already listed); KL alloy (3, 1987 Bianchi); G.B. Classic Line (2, 1981 Raleigh); JY M3 / M3 low rise (2, 1990 Bianchi MTBs); ITM Pro and ITM forged laser etched (1990 Bianchi); Modolo Flyer (already listed); De Rosa pantographed; Nitto Technomic Aero (existing do-not-link).
 
 ### Handlebars
@@ -182,7 +182,7 @@ SR work is in [the source worklist](#sr-sakae-next-work).
   (1138, Bianchi 1987); 9247 Vittoria Corsa (18313, Bianchi 1986). Review identity
   and original evidence before changing dates. The 16 linked specs with incomplete
   component dates also remain open: 6743 Clement Colnago (7), 6812 Peugeot Route
-  by Hutchinson (6), 6837 Michelin Hi-Lite Supercomp H.D. (1), 6846 Peugeot Challenge
+  by Hutchinson (6), 6846 Peugeot Challenge
   (1), 6886 Vittoria Flash M23 (1). Michelin's 26 flags are resolved; see the
   [Michelin notes](.agents/skills/ingest-component-catalog/references/known-catalogs/michelin.md).
   Select's 1986 date and the French catalogue dates retain their inference caveats.
@@ -196,7 +196,7 @@ SR work is in [the source worklist](#sr-sakae-next-work).
   versus existing 6846 Peugeot Challenge, already linked from 1983 spec 11710
   (source/continuity unresolved). These are candidates, not approved links.
 
-Remaining named source gaps: CST C-740 / C-860 / C-861 (6, 1989-90 Bianchi), Vredestein Racer II (4, 1988 Raleigh), IRC Crosscountry (3) and Peak (1989 Bianchi), Michelin ATB Surmond (2, 1989 Peugeot) and Chevron gumwall (1983 Peugeot), Panaracer Cannonball Express and Cheng Shin Ridge Line III / Canyon Express (1986-87 Peugeot), National Trisport (1986 Miyata), Specialized Ground Control / Crossroads II (1988 Raleigh; 9910 Crossroads is 1983-84), Vittoria Oscar X (1989 Bianchi).
+Remaining named source gaps: CST C-740 / C-860 / C-861 (6, 1989-90 Bianchi), Vredestein Racer II (4, 1988 Raleigh), IRC Crosscountry (3) and Peak (1989 Bianchi), Michelin ATB Surmond (2, 1989 Peugeot) and Chevron gumwall (1983 Peugeot), Panaracer Cannonball Express and Cheng Shin Ridge Line III / Canyon Express (1986-87 Peugeot), National Trisport (1986 Miyata), Vittoria Oscar X (1989 Bianchi).
 
 Remaining variant questions: Panaracer Smoke/Dart has 8 unlinked specs (bare
 Smoke x3 including 1994 Cinelli, combined Smoke/Dart Comp x4, Smoke Comp K x1).
@@ -216,7 +216,7 @@ Keep the compound 1989 Bianchi "Vittoria Formula 1 and Juniore tubulars"
   Professionnel / Professional 225 g / Super Competition; Wolber Transalpino (2);
   Clement Meeting; Michelin Competition Slick; Vittoria Uni / Open Tubular /
   Zefir / Flash M19; Vredestein Racer HP (5, plus Racer II x4); Dunlop Sprite
-  (3); D'Alessandro Leggerísimo Pista / Super-Cross; IRC Triathlete/Triathlon
+  (3); D'Alessandro Leggerísimo Pista / Super-Cross; IRC Triathlete
   (5) / Featherlight; CST C-631 / Prolite (6, plus C-740/860/861 x6); Bianchi
   Dakar / Advantage-SL; Impere Seta tubeless. Prioritise period CST and Vredestein
   sources after the held-evidence checks. Earlier source hunts are in the
@@ -224,7 +224,7 @@ Keep the compound 1989 Bianchi "Vittoria Formula 1 and Juniore tubulars"
 
 ### Pedals
 
-- No suitable row: H.K. / VP VP-330 / 331 / 333 / 389 / 382S / 230 and VP500 (~10, 1984-90; the largest); HTI-A1 / HTI-P15 / HTI-851 (6); SR SP-452 (3), SP-513 / SP513C (2), SP-518 (2; SP-518FB is 11328, identity not shown), SP-153 (2), MP 150, Lowfat Pro and CTP-170 (1990-93 Bianchi); MKS AR-5, NT-1 (1986 Miyata; PB-20 is now 11335), C 5000 ATB and AR-3 (6, already listed; none in the MKS Edition 11 catalogue); Tioga Surefoot-6 (4, 1993 Bianchi); Union 632 (2, 1984 Raleigh); Lyotard 77R (3) and 90.
+- No suitable row: H.K. / VP VP-330 / 331 / 333 / 389 / 382S / 230 and VP500 (~10, 1984-90; the largest); HTI-A1 / HTI-P15 / HTI-851 (6); SP-513 / SP513C (2), SP-518 (2; SP-518FB is 11328, identity not shown), SP-153 (2), MP 150, Lowfat Pro and CTP-170 (1990-93 Bianchi); MKS AR-5, NT-1 (1986 Miyata; PB-20 is now 11335), C 5000 ATB; Tioga Surefoot-6 (4, 1993 Bianchi); Union 632 (2, 1984 Raleigh); Lyotard 77R (3) and 90.
 
 ### Shifters
 
@@ -339,7 +339,7 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 - **SR / Sakae remaining evidence gaps:** seek exact catalogue/specimen evidence for the unresolved codes below. [Processed sources, rejected aliases and current results](.agents/skills/ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#four-sr-models-from-fuji-1989--applied-2026-11-15-source-412).
   - **Full 1983-88 maker catalogue recovery parked:** No.19 (Sep 1983) and No.23 (Aug 1988) reported, no complete scan recovered; No.20–22 unseen. Velo-Pages 58555 still HTTP 500 on 2026-11-15. Reopen for a new holder/scan/recovery endpoint; repeated broad searches have yielded no full-range source.
   - **Next available partial evidence:** Panasonic 1985-89 rows are loaded (see `sakae-ringyo.md`); Schwinn 1985 remains for CXC-T310 and the rest of the crank range. Trek 1985/1987 and Koga-Miyata 1986 bar-code leads remain in the handlebar worklist. Do not repeat processed sources listed in the notes.
-  - **Keep unresolved:** CRE/CR-E/CRE100 identification (do not alias to CLE-100 11308); MTE-110 identification (keep MTE-100 5849 and MTE-300 11307 separate); SRE-100/105; the rest of the SAC/SUC/FXC/AXC/CXC range; CRH-310/MTH-100 hubs; MTS-131/CPS-80; MTB-224/CTR/CTSD. Seek exact model/specimen crosswalks; generic names or later fitment do not identify an earlier configuration.
+  - **Keep unresolved:** CRE/CR-E/CRE100 identification (do not alias to CLE-100 11308); MTE-110 identification (keep MTE-100 5849 and MTE-300 11307 separate); SRE-100; the rest of the SAC/SUC/FXC/AXC/CXC range; CRH-310/MTH-100 hubs; MTS-131/CPS-80; MTB-224/CTR/CTSD. Seek exact model/specimen crosswalks; generic names or later fitment do not identify an earlier configuration.
 
 ### French makers 1977-89 (mostly Peugeot specs)
 
@@ -350,19 +350,11 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 ### Dealer and mail-order catalogues
 
-- **Read Bike Nashbar Spring 1988 (68 pp, scanned PDF on Google Drive, not ingested) and prepare evidence:** download method and sampled pages are in the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md). Check each hit against the DB before proposing rows or links:
-  - Sakae Custom P5 (p.53) vs the 1987 Raleigh "Sakae fluted alloy, single Allen bolt" seatposts. The 1983-84 wording maps to CT-P5 5857; this needs an identity call, not an automatic link.
-  - Sakae MTE (p.53) vs the MTE-110 gap.
-  - Royal II stem (p.52) vs the 1987 Randonneur "Sakae Royal forged".
-  - Sakae SX / FX cranks (pp.45-46).
-  - SR pedals SP-102, SP-122 and SP-519 (p.44).
-  - MKS AR-3 (p.37 spec, 1988).
-  - Dia-Compe 730 GX (p.48) vs the open "Dia-Compe 730 vs 8929" call; AC-250 Aero levers (p.37).
-  - Vetta Maxi Anatomic (p.50).
-  - Specialized Crossroads II and Ground Control S, IRC Triathlon (p.66).
-  - SunTour Alpha 5000 (p.37).
-
-  The house-bike spec pages (pp.35, 37, 39) could also go to `ingest-bike-specs`. Read the pages not yet checked (pp.1-34, 54-61, 65, 67-68) at the same time.
+- **Link pass for the Bike Nashbar Spring 1988 rows (source 422; loaded 2026-11-16, see [cross-catalog notes](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md)):** regenerate links and decide these:
+  - New rows for named gaps: Vetta Maxi Anatomic 11337 (Vetta Maxi x3, 1986 Miyata / 1987 Peugeot); SR SP-452 11342 (3); SR SRE-105 11343; MKS AR-3 11344 (6, 1987-89 Raleigh); MKS PB-100 11345 (Miyata); Tange Unique 11346 (bare "Unique" only; keep Unique X "Loose-Proof" / Unique FE apart); Specialized Crossroads II 11347 and Ground Control 11349 / Ground Control S 11348 (1988 Raleigh); IRC Triathlon 11359 (IRC Triathlon x5).
+  - Widened rows to recheck: SunTour Ole RD / FD / shifters / headset / crank (4752 / 2638 / 6289 / 3133 / 1985, now from 1988); Dia-Compe 8082 GX-N and 678 G-N (to 1988; G-400N / GX-400 specs); AC250 8102 (to 1988).
+  - Evidence only, no change made: Sakae Custom P5 (p.53, "fluted pillar, micro-adjust, 6 mm Allen bolt") vs the 1987 Raleigh "Sakae fluted alloy, single Allen bolt" seatposts (5857 CT-P5 covers 1980-89; identity call). Sakae MTE (p.53, 300 mm) vs MTE-110. Sakae CRE seatpost on the 1988 Nashbar 4050 road bike (bare CRE stays unresolved).
+- **Load the 12 Nashbar 1988 house bikes (pp.30-40) with `ingest-bike-specs`:** transcriptions in the session scratchpad `nashbar88/out/bikes.json` will not survive; re-read the pages from the logged download. Decide first whether Nashbar is a bike brand. The specs name further gap parts: SR MTS-300 / MTS-130 stems, SR 104 bar, MKS MR-1000, Tange FL-270S, Shimano AT-55, Specialized Lamda saddle, Panaracer Ridge Line III, Kusuki Ole stem, Dia-Compe 983D / N500A / 290 levers.
 - **Other US dealer / mail-order catalogues 1985-92 (Performance, later Nashbar issues, QBP, J&B, Colorado Cyclist):** no script-readable scans. Next leads are browser-only: bikeforums thread 1214636 (Performance Fall/Winter 1985-86), the bikeforums "Official Vintage Bicycle Manufacturer Catalog List", retrobike thread 431743, and the disraeligears La Bicicletta Guida '87 / '89-'95 index.
 
 ### UK retail catalogues (need a person to ask or visit)
@@ -375,16 +367,16 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 ### Japanese and Taiwanese makers
 
-- **Tange headsets 1984-90** (TH-305 / 305C, TH-108, MES sealed, Unique / Unique X / Unique FE, 230 SLP, MX 600M): Cycle Sports (Yaesu) parts directories on Yahoo Auctions Japan (1985, 1987, 1990; paid, also covers SR), retrobike "Tange Catalogues" archive (browser only), a 1985-90 US distributor catalogue; check the 1985-87 Trek, Puch and Panasonic fitment tables.
+- **Tange headsets 1984-90** (TH-305 / 305C, TH-108, MES sealed, Unique X / Unique FE (bare Unique is now 11346), 230 SLP, MX 600M): Cycle Sports (Yaesu) parts directories on Yahoo Auctions Japan (1985, 1987, 1990; paid, also covers SR), retrobike "Tange Catalogues" archive (browser only), a 1985-90 US distributor catalogue; check the 1985-87 Trek, Puch and Panasonic fitment tables.
 - **Bars and stems 1985-92** (H.L. DR-8 / DR-9 / Dirtdrop / semi-rise / HS-P; SR MTB-220 / 224 / 227, CTR, CTSD; Kusuki KR-LB / SMC-F; ITM Mondial / Krono / Italia aero; Franco Italia; ATAX CTA randonneur; CMC-709 / MS-710): Brügelmann 1986-87 and 1989-92 (not online; ask the forum holders named in the log), an offline Taipei Cycle Show or Taiwan Bicycle Exporters' Guide. Check the Koga-Miyata 1986 p.19 Kusuki image and the Fuji 1988-91 transcriptions against scans (fitment leads in the log).
-- **MKS pedals and Kusuki bars / stems 1979-87** (Miyata: MKS QR-K1, AR-Road / AR-Road 2, PT-7, AR-5, NT-1, PB-100, G-5000; Kusuki KR-LB, BMT-3-26, RK-90, Rocky 2; WP-B / WPR-B / KD-LB / BMT-II-26B / S-WIN / WIN Σ now have rows 11329-11334): acquire Cycle Sports (Yaesu) "オールカタログ" annuals c. 1980-88 (also cover SR); otherwise an MKS edition c. 1980 or 1986-87. [Hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
+- **MKS pedals and Kusuki bars / stems 1979-87** (Miyata: MKS QR-K1, AR-Road / AR-Road 2, PT-7, AR-5, NT-1, G-5000 (PB-100 is now 11345); Kusuki KR-LB, BMT-3-26, RK-90, Rocky 2; WP-B / WPR-B / KD-LB / BMT-II-26B / S-WIN / WIN Σ now have rows 11329-11334): acquire Cycle Sports (Yaesu) "オールカタログ" annuals c. 1980-88 (also cover SR); otherwise an MKS edition c. 1980 or 1986-87. [Hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - **VP Components pedals c. 1984-90** (VP-230 / 330 / 331 / 333 / 382S / 389, VP500; 9 specs): a VP pedal catalogue or importer page c. 1989-90; VP needs a component_brand row first.
 - **Dia-Compe 1987-93** (BL-08 aero, 250S aero, GX-400 Aero, DC 630, 984 / 984D): retrobike threads 306479 and 361996 (a poster has the 1992 catalogue; browser only), eBay 800322888787 (1989/90 MTB brochure, photos not retrieved).
 - **Panasonic USA 1985-89 fitment evidence (read 2026-11-16, [panasonic.md](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md)):** decide, then prepare SQL for review:
   1. **Kusuki identity calls left from the SR / Kusuki load:** WP-RB (1987 Miyata 215 ST / 615 GT) vs WPR-B 11330; bare "WIN" AH (1985 Raleigh x8) vs S-WIN 11333 / WIN Σ 11334; "KUSUKI SIGMA Alloy" (1985 Miyata 912) vs 11334; brandless "S-WIN-AH" (1980 Miyata 210 / 110) vs 11333, which would move its year_from to 1980.
   2. **Identity calls left from the MKS / Sugino / Dia-Compe load:** Sugino "TGT-LP" (1985 Miyata 610, blocked by a `null` key) vs TGT 11336; Dia-Compe "PN-280" x2 / "PN-281" (1984 Miyata) vs 8112 / 8113; "DIA-COMPE 280 mountain lever" (1983 Miyata Ridge Runner) vs 8112 (from 1984).
   3. Link misses on existing rows: Araya 18 4921, MKS RT-7 10832 (1985), Sugino SP-KC 5928.
-  4. Identity calls: KKT RT-E1 vs 3773, Dia-Compe 730 vs 8929, Sansin ET-Q / ET-QS.
+  4. Identity calls: KKT RT-E1 vs 3773, Dia-Compe 730 (Nashbar 1988 prints 730 GX, long reach 52-72mm: the GX-N series 8082, GX730N, not the 1964 Dia-Weinmann 8929), Sansin ET-Q / ET-QS.
 
   Also decide whether to load Panasonic as a bike brand (transcriptions in `/private/tmp/panasonic-1985-89/`). The 1977-84 and 1990-95 catalogues are unread.
 

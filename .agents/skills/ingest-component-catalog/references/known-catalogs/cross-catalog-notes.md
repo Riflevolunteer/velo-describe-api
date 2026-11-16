@@ -1793,3 +1793,63 @@ Weinmann 1129 / 1130 570.
   Criterium / Prestige, Huret Svelto and Campagnolo Record / Valentino / Gran Turismo versions;
   Wolber Pro (vs 6923 Neo Pro, 1978); MAFAC Racer (velobase 1952-69 version); Sedis "Sedis /
   Peugeot" chain (vs 1398 Sedis Gold).
+
+## Bike Nashbar catalogue — Spring 1988 (Google Drive scan, data_source 422), 2026-11-16
+
+- `data_source` label "Bike Nashbar catalogue (Spring 1988)", country US. Source: Google Drive
+  file `1a93988JbJO2Sn9v8pOBZB5U4Z4plTAdh`, linked from whentriathlonwasbetter.com/blog/bike-nashbar;
+  download method in the source-hunt log (2026-11-16). 68 pages, ScanSnap scan from 2024, no text
+  layer; read visually at 150 dpi (crops at 160-170 dpi for tables). © 1988 Bike Nashbar,
+  Youngstown OH, the successor of Bike Warehouse (sources 246 / 315 / 360). Printed page = PDF page.
+- Components: pp. 28-29 (Campagnolo Croce d'Aune group, Vetta Gel), 42-53 (shifters,
+  derailleurs, pedals, cranks, chainrings, BBs, freewheels, chains, brakes, levers, saddles,
+  bars, stems, seatposts), 60-61 (hubs, headsets), 63-67 (wheels, rims, tyres). House bikes with
+  full spec lists: pp. 30-40 (not loaded; see TODO). Out of scope: 1-27 clothing, shoes,
+  helmets, computers, bags, trainers; 41 frames; 51 cages and bottles; 54-59 locks, lights,
+  books, racks, tools; 62 pumps; 68.
+- Stock numbers are retailer codes. Some carry the maker's number (SH-FD6400, SR-P5, DC-730G),
+  others do not (VA-4050, SR-PD122); none is used as a part number. Retailer source: attests 1988,
+  absence caps nothing; "NEW" means new to Nashbar.
+- Not taken: Nashbar house rims, tyres, hubs and prebuilt wheels (UC13, US13, US14, UT17,
+  UA20, UC19; Sport / Road tyres), and the HED disc wheel.
+- Most Shimano, Campagnolo, SunTour, Look, Sedis, Regina, Ritchey, Michelin, Vittoria and
+  Cinelli matches already cover 1988; no change.
+- Changed (source_ref -> 422, 30 rows):
+  - **year_to -> 1988:** 3864 MKS RX-1 (1980); 3922 SR SP-100AL / BL Silstar (1986);
+    8082 Dia-Compe GX-N series (1986); 678 G-N series (1986; Dia-Compe G-400N on the Road
+    Alpha / Aero Sprint); 662 Dia-Compe 983 (1980; Terra Alpha spec); 8102 AC250 Aero levers
+    (1986; Road Alpha spec); 5255 Avocet Touring II and 9118 Touring WII (1983; "Model II,
+    Women's or Men's Touring"); 5495 Selle Italia Lady Turbo (1980); 7887 SR WS World Custom
+    (1982); 11132 Modolo Professional anatomic (1986); 8230 SR RY2 Royal 2 (1984; printed
+    "Royal II", 135 mm, 290 g); 7902 SR SR-AH (1986); 4971 Campagnolo Victory Crono (1986);
+    9920 Wolber Pro SP1 (1985); 6867 Specialized Touring-X, 6865 Touring-II, 6868 Turbo S and
+    9909 TriCross (1983 / 1984); 9011 Sansin CE-80 Ole (1987; "Sansin Ole" hubs on the Ole bike).
+  - **year_from moved earlier to 1988 (earlier attestation):** 5249 Avocet R20 GelFlex (1990;
+    "GelFlex 20", Men's Racing); 5683 Vetta Gel (1990; p.27 "new Vetta gel saddles"); SunTour
+    Ole 4752 RD, 2638 FD, 6289 braze-on levers, 3133 sealed headset and 1985 Sugino-made crank
+    (all 1989; the p.36 Ole bike has "SunTour's New Ole Accushift System"). No year_from moved later.
+  - **Undated rows dated:** 667 Dia-Compe 990 U-brake 1988-1988 (Tour XCD 6000 spec);
+    3156 Tange Levin CDS 1988-1988 (Road Alpha spec); 6837 Michelin Hi-Lite Supercomp H.D.
+    1988-1993. The catalogue text misprints it "Super Coupe HD", but the photo label reads
+    "HI-LITE SUPERCOMP H.D. 700x20C". 1993 is from the linked 1993 Bianchi Gatorade spec.
+  - **Descriptions rewritten** (old values were velobase bare titles): 3864, 667, 3156, 6837.
+- Added (24 rows, 11337-11360, 1988-1988, group NULL): Vetta Maxi Anatomic, Anatomic, ATB;
+  SR 519 ATB pedal, Sharktooth ATB pedal; SR SP-452 (Terra Alpha spec only), SRE-105 (4050 MTB
+  spec only); MKS AR-3 (Road Alpha spec only), PB-100 (City Alpha spec only); Tange Unique (Terra
+  Alpha and 4050 road specs only); Specialized Crossroads II, Ground Control S, Ground Control,
+  Hardpack, Fat Boy, Turbo LS, Turbo LR, Turbo R/K4, Turbo VS, Turbo VR, Commuter II, Touring
+  II K4; IRC Triathlon, All-Terrain. The fitment-only rows have short descriptions.
+- Identifications made: Nashbar "500 GX / 730 GX" (500 short reach 43-57, 730 long reach 52-72,
+  595 / 617 g with levers) is the GX-N series 8082 (GX500N 43-57, GX730N 53-71). The p.48 brake
+  chart prints 52-72 against the 500 GX, a chart error. Possible duplicate to review: 653
+  "Dia-Compe 500 GX" (velobase, 1980, bare) vs GX500N in 8082. 8230 Royal 2 = "Royal II".
+- Not applied: Vetta Racing VA-200 vs 5681 "Vetta 200" (stock code only), Touring VA-4050;
+  Sugino Aero Tour vs 1964 Sugino AT (1980-82, 710 g vs 733 g, 28-44-48T; "AT" may be Aero Tour,
+  unproven); Sugino 75 BB / rings and Avocet FasGrip rows (undated, stock text adds nothing
+  datable); Sakae SX / FX cranks (SXC-310 / SXC-T310 / FX SLP already cover 1988; bare 1762 SX
+  left); Dia-Compe Royal Gran Compe brakeset / levers 1988 (40-50 mm reach, 579 g; no RGC code
+  printed); Sakae CTS, MTS ATB and MTE stems / posts, ATB bars; Regina "America" steel
+  freewheel; Matrix ISO C; Wolber Type 58 / Arc-en-ciel; Cyclepro Longrider; Panaracer
+  and National tubulars by weight; Swallow Montello; Sedistraveler and DID Lanner chains;
+  Scott DH, Mavic SSC and Tioga bars / T-Bone stem; Sugino carbon seatpost; Specialized
+  sealed hubs; Vittoria Pro L tubular (vs 6899 Pro L Slick).
