@@ -16,9 +16,11 @@ after validation; retain what is still needed for unfinished work or review.
 
 ## Open: database quality tooling
 
-- [ ] **Reusable generator/live-DB comparison:** replace scratchpad-only scripts
-  with a maintained command showing links gained, lost or changed per spec,
-  scoped to already-loaded catalogues and preserving the current generated file.
+- [ ] **Review generator/live-DB link drift:** use
+  `node scripts/compare-bike-links.js --json` and the recorded link decisions
+  before changing mappings. Prioritise proposed matches for either/or saddle
+  spec 7624 and D'Alessandro tyre specs 44 / 59; reconcile stored links absent
+  from generator output against the relevant catalogue notes.
 - [ ] **Persist link decisions and evidence:** distinguish confirmed, inferred,
   ambiguous, missing-source and intentionally unlinked cases so they can be
   revisited deliberately. Today `COMPONENT_OVERRIDES` `null` entries live only in

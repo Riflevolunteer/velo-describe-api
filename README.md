@@ -114,6 +114,7 @@ failure. There is no repair mode.
 | --- | --- |
 | `scripts/quality-report.js` | Structural integrity and metadata/date review candidates |
 | `scripts/duplicate-report.js` | Possible duplicate component identities and variants |
+| `scripts/compare-bike-links.js` | Current generator matches versus stored bike-spec links |
 | `/linkCoverage` | Linked/unlinked bike specs and identification priorities |
 
 Validated against fixture cases, the existing test suite and the live database
@@ -124,6 +125,58 @@ labels and 24 descriptions at the length limit. No missing provenance, dangling
 references, exact duplicate bike specs, ownership conflicts or reversed date
 ranges were found. This is a dated whole-DB quality snapshot, not a new link
 coverage calculation or a conclusion that all identities are correct.
+
+## Comparing generated and stored bike links
+
+Run `node scripts/compare-bike-links.js` to compare the current generator's
+proposed component links with the live database. It shares CSV parsing,
+model exclusions, overrides, matching, cell splitting, integrated-control
+fallbacks and stored-value truncation with `generate-bike-update-sql.js`.
+It never generates or overwrites `bike-update.sql` and never changes the DB.
+
+```sh
+node scripts/compare-bike-links.js --limit=5
+node scripts/compare-bike-links.js --json
+node scripts/compare-bike-links.js bike_specs/1986_miyata_spec.csv --limit=0
+```
+
+The default scans local `bike_specs/*.csv`, selecting only catalogue sources
+that already have bikes in the DB. Positional CSV paths narrow that selection.
+Unloaded CSVs are skipped before reading their contents. JSON lists selected
+sources/files, skipped files and loaded catalogue sources without a selected
+CSV. A loaded catalogue without a local CSV cannot be compared. Bikes without
+catalogue provenance are outside this report; use `quality-report.js` for
+missing provenance.
+
+The DB reads use a single repeatable-read, read-only transaction. Each generated
+bike is paired by catalogue source, brand, title and year, then each spec by
+canonical label and exact stored value. Country editions remain separate.
+Missing bikes/specs on either side and duplicate identities are reported as
+`missing_in_db`, `missing_in_csv` or `ambiguous`, separately from link changes.
+These findings count bikes or specs as identified by `entity`; a missing or
+ambiguous bike is reported once, without comparing its specs. Title, label or
+value differences appear as missing identities rather than guessed matches.
+
+`gained` means a stored NULL now has a proposed match; `lost` means a stored
+link has no proposed match; `changed` means two different component IDs.
+Details include bike/spec IDs, original value and both component identities.
+These are review candidates, not approved corrections. In particular, normal
+SQL generation only fills NULL links: it does not apply reported losses or
+replace existing links. `compared` includes uniquely paired specs only, and
+`unchanged` includes both unchanged links and specs still unlinked.
+
+Text defaults to 20 examples per finding kind; `--limit=0` shows all.
+`--json` always includes every finding and timestamps. Exit 0 means the
+comparison completed, even with differences; exit 1 means an input/query failure.
+The command fails rather than returning partial findings on a query error.
+
+Validated **2026-11-16** against fixtures and the full test suite, then against
+94 live loaded catalogues: 20,845 uniquely paired specs, 20,806 unchanged,
+6 proposed gains, 33 proposed losses and no changed targets or missing/ambiguous
+identities. These are dated observations, not approved mapping changes. The
+refactored generator's SQL was byte-identical to its prior implementation across
+all local CSVs using the same live component snapshot; the comparison preserved
+the existing `bike-update.sql` checksum.
 
 ## Reviewing duplicate components
 

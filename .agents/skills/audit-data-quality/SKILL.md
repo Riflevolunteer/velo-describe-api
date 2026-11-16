@@ -164,7 +164,11 @@ exit 2 means data errors, exit 1 means command/query failure). Review candidates
 are not proven wrong links. The command uses a read-only consistent DB snapshot;
 see the repository README for checked relationships and catalogue exceptions.
 Use `/linkCoverage`, read-only queries and `scripts/duplicate-report.js` for
-coverage and component identity reviews. The reusable generator/live-DB comparison
-remains planned in [TODO.md](../../../TODO.md#open-database-quality-tooling).
-Keep temporary comparison scripts and output in the scratchpad, preserving the
-current generated SQL file when comparing catalogues.
+coverage and component identity reviews. Use `node scripts/compare-bike-links.js`
+for the maintained generator/live-DB comparison over loaded catalogue CSVs
+(`--json`, `--limit=0`, or positional CSV paths to narrow scope). It shares the
+SQL generator's matching pipeline, uses a read-only consistent DB snapshot and
+preserves the current generated SQL file. Gained/lost/changed mappings and
+missing/ambiguous CSV/DB identities require review; the report applies no changes.
+See the repository README for scope, count and exit-code semantics. Keep any
+temporary comparison output in the scratchpad.
