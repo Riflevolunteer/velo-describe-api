@@ -231,17 +231,24 @@ original right-lever code/selector or a period Raleigh parts crosswalk to
 8963 / 6110. No evidence-backed repoint was found; do not repeat these image
 comparisons without new distinguishing material.
 
-**Confirmed stale metadata, correction proposed:** front **2439** still says
+**Stale metadata corrected, user approved:** front **2439** previously said
 `Sachs Huret ARIS New Success, France. Dated from 1987-89 Peugeot / Raleigh fitment only (ARIS from 1987, as rear 4412).`
 The Raleigh/rear-4412 rationale is superseded by the approved rear correction
 to **4403**. Its Peugeot front links **15101 / 17499** and the independently
 indexed shifter specs **15103 / 17501** remain; retain the existing Peugeot
-decision. Proposed description: `Sachs Huret ARIS New Success, France. Dated from 1987-89 Peugeot fitment only; exact Raleigh Randonneur front variant remains unresolved.`
-Keep all identity/date/source fields and the existing front links while
+decision. Applied description (137 characters): `Sachs Huret ARIS New Success, France. Dated from 1987-89 Peugeot fitment only; exact Raleigh Randonneur front variant remains unresolved.`
+Retained all identity/date/source fields and the existing front links while
 seeking a code/photo for Raleigh front **8851**. This is a description/provenance
 explanation repair, not a claim that the exact Raleigh front is identified.
-No SQL prepared or DB/generator changes made. Temporary images were removed
-after recording the evidence and outstanding distinguishing requirements.
+Exactly **one** guarded description update; rerun **zero**. Readback confirms
+the new text and every other field unchanged, including the 1987–1989 bounds,
+source 1 and specimen UUID `7545C46D-BBE5-475F-9364-975DB00DF404`.
+Matching-input fingerprints across all **10,498 components** are unchanged;
+all **20,845 live specs** are byte-equivalent to the application baseline,
+including front links **8851 / 15101 / 17499**. Description text is not a
+matcher input, so no CSV regeneration was necessary. No generator changes.
+Temporary SQL, baseline and verification script removed after readback and
+idempotency validation; review images were already removed.
 
 ## Raleigh Randonneur long-cage identification — 2026-11-16
 
