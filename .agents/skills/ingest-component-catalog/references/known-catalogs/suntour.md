@@ -1123,8 +1123,10 @@
   velobase, source_id 0CF5012B-3AE4-4E2E-9EAC-E26ACA5CF042, source_ref 1, no years,
   description "SunTour a-3000, Japan", no bike links, no override). A bare placeholder
   beside the 1987 alpha-3000 levers 7863 / 7864; it might instead have been a shifter
-  of the 1980 a-3000 generation (front derailleurs 2600 / 2611 / 2612 are dated 1980),
-  which has no source. If a later source shows a 1980 a-3000 shifter, insert it fresh.
+  from a different a-3000 run, which has no source. The front records' 1980
+  dates are imported decade placeholders, not evidence of a 1980 generation
+  (see the 2026-11-16 front review). If a later source establishes a distinct
+  earlier a-3000 shifter, reconcile it before inserting a replacement.
 
 ## SunTour "Component Catalog '88 New Line-up", Japanese edition (12 images, 1988, Reminiscence Part 32)
 
@@ -1690,3 +1692,35 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   2631 is kept as the white-finish variant (both 107 g); this closes the 1987 leaflet note's "2631 vs 2630" left item.
 - Validation: 9 rows + 1 spec; rerun 0. All 93 CSVs regenerated: only the Campione d'Italia front changed (2631 ->
   2630). `quality-report` has no findings on the touched rows.
+
+
+## Alpha 3000 front identification — 2026-11-16
+
+- Sutherland’s Handbook for Bicycle Mechanics, sixth edition (1995),
+  [PDF p.217](https://paulinoposada.github.io/bike/documents/epdf.pub_sutherlands-handbook-for-bicycle-mechanics.pdf#page=217):
+  FD-3000-SS is an a-3000 front, 28.6 mm clamp, 2–18T chainring difference.
+  PDF p.218 distinguishes FD-3000-GT (6–22T) and FD-3000-GX (6–24T).
+  This is a specification crosswalk, not proof of production boundaries.
+- Retained VeloBase specimen identifiers, inspected during the Triton review:
+  [2600 a-3000](https://velobase.com/Pages/ViewComponent.aspx?ID=F92717AF-D46C-4584-8C8D-55F2992DBD93),
+  [2611 FD-3000-GT](https://velobase.com/Pages/ViewComponent.aspx?ID=1287C1CB-CCA4-45F4-AE1A-11C77F9AD5B1),
+  [2612 FD-3000-GX](https://velobase.com/Pages/ViewComponent.aspx?ID=B9E240CA-07D7-4202-AADA-5175C3DB805B).
+  These pages say `1980’s`, not precisely 1980 as imported into the DB.
+  2600 has a built-in housing stop; its
+  [sole specimen photo](https://velobase.com/CompImages/FDerailleur/913C48B2-5D34-4944-986B-66E5285D726E.jpeg)
+  shows the a-3000 group marking but no SS code or reverse cage markings.
+  2611/2612 are described as later specimens without housing stops. No
+  exact SS crosswalk to 2600 is established; no new duplicate row inserted,
+  no date/description/title changes made.
+- 1987 Miyata Triton front spec 22519 remains NULL pending a marked SS
+  specimen or manufacturer drawing. Its catalogue SS wording is valid for
+  a front; the existence of RD-3000-SS 4709 does not make it a transcription
+  error. Rear 22520 was approved and linked NULL -> RD-3000-GX 7865, with a
+  1987 Triton override; live readback and rerun validated, all 93 CSVs compared
+  with only that rear mapping changed. See the Miyata notes for application.
+- Retrieval: short-form VeloBase URLs failed through web open, but search
+  returned the full specimen metadata; direct download recovered 2600’s page
+  and photo. Sutherland PDF screenshot requests failed; its searchable text
+  provided the tables. Narrow SS-code and Triton fitment searches found no
+  marked SS specimen. Reopen with a model-stamped specimen/manufacturer
+  drawing rather than repeating those broad searches. Temporary files removed.

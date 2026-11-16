@@ -407,7 +407,7 @@
   Forced null: BR-Z570 on 312 / 112 / 100 (the only row ends 1986 and
   bundles four models), Aero's split disc / ADX-4 rim cell, XC-Sport IC
   shifter (integrated lever), DC-983D, SunTour "RD 2000".
-- Left unlinked: Alpha 3000 SS / GX (which is front is unclear), TY 60,
+- Left unlinked at ingestion: Alpha 3000 SS / GX (see the Triton review below), TY 60,
   QS10, L-525 (cage not given), split front-canti / rear-centre-pull brake
   cells, Wolber Aubisque / Alpina, National CX-Alpha, Ukai LA-14, Selle
   Royal / Vetta saddles, Sansin Gyro master, SR / Sugino / Strong posts,
@@ -415,6 +415,45 @@
   stems, SR and Sugino-less cranks (SUC / CTC / SXC / FXC), MKS PB-100 /
   G-5000, Victor pedals, generic steel parts on Triton / Nimbus / Victor.
 - Regression: all 92 other CSVs regenerate byte-identical.
+
+### Triton Alpha 3000 derailleur review — 2026-11-16
+
+- Baseline bike 1303, source 407: front spec 22519 `SUNTOUR ALPHA 3000 SS`
+  and rear spec 22520 `SUNTOUR ALPHA 3000 GX` both had NULL component IDs.
+  The original PDF linked above, scan p. 27, prints SS on the first line and
+  GX on the second in the Triton derailleur cell; the CSV preserves that order.
+  This supersedes the ingestion note's blanket uncertainty about both links.
+- Rear candidate **7865**, `SunTour RD-3000-GX, alpha-3000 (ATB)`, is an exact
+  series/cage match, dated 1987 with leaflet source 91. The automatic matcher
+  returns NULL because neither normalized full string contains the other:
+  the DB title adds `RD-3000-GX` and `(ATB)`, and puts GX before alpha-3000.
+  User approved the rear link: **22520 NULL -> 7865 applied**, with a matching
+  1987 Triton-scoped override. Guarded SQL matched spec, bike, source, value,
+  label and target identity/category/year; reversal is to set 22520 back to
+  NULL only while its component remains 7865.
+- **4709**, `RD-3000-SS`, is also a rear derailleur, so it cannot fill front
+  spec 22519. Front candidates **2600 / 2611 / 2612** are a-3000 versions
+  (2612 triple), all still dated 1980 in the DB. Follow-up found that **SS is
+  also a valid front designation**: Sutherland's Handbook, 6th ed. (1995),
+  PDF p.217 lists a-3000 **FD-3000-SS**, 28.6 mm clamp and 2–18T chainring
+  difference. PDF p.218 distinguishes FD-3000-GT (6–22T) and GX (6–24T).
+  [Reference scan](https://paulinoposada.github.io/bike/documents/epdf.pub_sutherlands-handbook-for-bicycle-mechanics.pdf).
+  Thus the initial concern that SS was necessarily rear wording is superseded.
+- VeloBase's retained specimen pages identify **2611 as FD-3000-GT** and
+  **2612 as FD-3000-GX**. **2600** names only a-3000, a double with a housing
+  stop; its sole photo shows the group marking but no SS model code or reverse
+  cage markings. It is a candidate for SS, not a proven crosswalk. The pages
+  say `1980's`, not the exact 1980 used by the DB. No component dates, titles
+  or front link were changed. See the SunTour notes for specimen URLs/photo.
+- Next evidence: a marked FD-3000-SS specimen or manufacturer drawing to
+  compare with 2600 before renaming it or adding a potentially duplicate row.
+  Front 22519 remains NULL; the Triton's 52/42 double alone does not prove
+  the exact specimen/version. Do not swap the specs.
+- Validation: live readback confirms rear 22520 -> 7865 in Rear Derailleurs,
+  front 22519 NULL; SQL rerun affected 0 rows. All **93 CSVs** regenerated:
+  only the Triton rear mapping changed, NULL -> 7865. Component row counts
+  unchanged; generator syntax check passed. Task-generated SQL/comparisons
+  removed after validation.
 
 ## 1986 Miyata — `1986_miyata_spec.csv` (18 bikes, 395 specs, 131 linked)
 

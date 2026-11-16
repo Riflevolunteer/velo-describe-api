@@ -1194,6 +1194,7 @@ const COMPONENT_OVERRIDES = {
     // SunTour AccuShift leaflets (c. 1987): pin retitled 1987 Bianchi links
     'suntour cyclone 7000': 4740, // SunTour RD-CL10-SS, Cyclone 7000
     'suntour alpha 5000': 4721, // SunTour RD-5000-SS, alpha-5000
+    'suntour alpha 3000 gx': [{ bike: 'Triton', from: 1987, to: 1987, id: 7865 }], // 1987 Miyata, scan p. 27: RD-3000-GX; the SS text in the front spec remains unresolved.
     'suntour vx': 4774, // SunTour RD-2200, VX (1981 Kalkhoff)
     'suntour ag tech': 4710, // SunTour RD-5000, AG-Tech (1985 Raleigh)
     'suntour ar gt': 4723, // SunTour RD-4400, AR (aR II GT), 1984 (1985 Raleigh)
