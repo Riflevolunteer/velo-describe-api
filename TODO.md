@@ -157,7 +157,17 @@ SR work is in [the source worklist](#sr-sakae-next-work).
 
 ### Saddles
 
-- New source gaps (named models with no row): ISCA Aero Airline (3, 1986 Falcon), Ariake 77C-DX, Kashimax GTV, Italmanubri 635-S (2), Royal 6275, Falcon "AK 2603".
+- **Ariake saddles, decide (no maker source found 2026-11-16; [hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md)):** whether to add fitment-only rows from the 1979-86 Miyata catalogues (sources 386, 401-407, 349), as the Panasonic SR / Kusuki rows were. Candidate rows, each with its Miyata wording and years:
+  - 77-17, quilted vinyl, padded (1979-84, x11; "81-L" ladies' noted)
+  - 77-17-IS, padded (1979-80, x5)
+  - 77P-17, anatomic, vinyl top (1981-83, x9)
+  - 77CP-DX, anatomic, padded (1981-84, x13)
+  - 77NP-DX, anatomic, suede top (1981-83, x3)
+  - 77AP-DX, anatomic, leather top (1981, x1)
+  - 80N-DX, nubuck leather top (1982-83, x8)
+  - 77C-DX, vinyl (1985-86, x2)
+  Jaguar-II 77CDX / 77IS are already linked to 5234; do not fold the other 77 codes into it without evidence.
+- New source gaps (named models with no row): ISCA Aero Airline (3, 1986 Falcon), Kashimax GTV, Italmanubri 635-S (2), Royal 6275, Falcon "AK 2603".
 
 - No suitable row: Brooks CR3 (3); Concor Mountain-Pro / Mountain-Pro (4); Gallet 30 / 31 / 31 race / 33 / course (5); Gauthier Rilsan race (2, already listed); Isca 406 (3), 407 (3), Competition; Reydel Profil (7); Royal 463/2; San Marco Luxe race; Selle Italia Aero II (3); Tenor (3); Viscount 2285 / 2296 / Terra / Touring 2200 / Nuovo micro-adjust / anatomical mountain (8); Italia Corsa, Bianchi Corsa.
 
