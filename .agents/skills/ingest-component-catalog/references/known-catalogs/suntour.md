@@ -1724,3 +1724,39 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   provided the tables. Narrow SS-code and Triton fitment searches found no
   marked SS specimen. Reopen with a model-stamped specimen/manufacturer
   drawing rather than repeating those broad searches. Temporary files removed.
+
+### Additional SS source checks — 2026-11-16
+
+- Live readback still has 2600 / 2611 / 2612 at imported 1980 dates and Triton
+  front 22519 NULL. This follow-up made no DB or generator changes.
+- Original [Miyata 1987 catalogue](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2087.pdf),
+  scan p.18: inspected the Triton product photograph and a crop of its front
+  derailleur. The component is visible but too small to read a model code or
+  establish the housing-stop/cage details needed to identify 2600. Scan p.19
+  carries the Triton description but mainly Nimbus/Victor photographs; it
+  does not provide a closer Triton component view.
+- Recovered SunTour's English **Through 1988** specification spreads at
+  [Equus PDF 000005](https://www.equusbicycle.com/bike/suntour/catalog88/pdf/suntour88%20-%200005.pdf)
+  (road Alpha) and
+  [000007](https://www.equusbicycle.com/bike/suntour/catalog88/pdf/suntour88%20-%200007.pdf)
+  (ATB/touring). These show the later FD-3040 family, not a numbered
+  FD-3000-SS illustration. This does not prove when the earlier model ended.
+- The [RadioLabWorks file labelled 1988 / No.89](https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf)
+  is Edition No.89; PDF p.3 explicitly calls it the new **1989** product line
+  and describes the 1988 Tour. Cover and introduction checked; it is not a
+  newly recovered 1987 catalogue. No full-range reconciliation attempted.
+- [SunTour front-derailleur instructions](https://www.bikecatalogs.com/download/2652),
+  visually inspected: lists XP00/XC10/XL00/X100/CR00/XE01/XM01/XT01/XU00/TP00
+  fronts, not Alpha 3000. Its generic adjustment drawings cannot identify SS.
+- A further [double-ring Alpha 3000 specimen](https://rebike-art.gr/stock-house-Stock-Vintage/suntour-alpha-3000-bicycle-286-mm-bottom-pull-double-ring-front-derailleur.html?limit=75)
+  has one available high-resolution photograph (product 334-13); the visible
+  group label gives no SS code and the listing provides no numbered model.
+  It does not establish a crosswalk to the retained VeloBase specimen.
+- The 1987 dealer catalogue link from Sheldon Brown still returns HTTP 500
+  (velo-pages album 12478); earlier Wayback recovery, recorded under source
+  185 above, lacks its front-specification page. Target a new full-resolution
+  copy of that page or an SS-stamped specimen/box with cage and cable-stop
+  views. Further SS-code spelling/Japanese and image searches yielded no
+  such evidence. Downloaded PDFs, HTML and image crops were removed after
+  recording these URLs and findings; no source rows or speculative duplicates
+  were created.

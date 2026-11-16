@@ -454,6 +454,13 @@
   only the Triton rear mapping changed, NULL -> 7865. Component row counts
   unchanged; generator syntax check passed. Task-generated SQL/comparisons
   removed after validation.
+- Further front sourcing on 2026-11-16: the Triton photograph on scan p.18
+  is too small to establish the cage/housing-stop version. Recovered later
+  SunTour specification sheets and an additional double-ring specimen also
+  lack a usable SS crosswalk. See the [additional SunTour source checks](../../../ingest-component-catalog/references/known-catalogs/suntour.md#additional-ss-source-checks--2026-11-16).
+  Front 22519 remains NULL; next target is a full-resolution 1987 dealer
+  front-specification page or a marked SS specimen/box with cage and cable
+  attachment views. No additional DB/generator changes.
 
 ## 1986 Miyata — `1986_miyata_spec.csv` (18 bikes, 395 specs, 131 linked)
 
