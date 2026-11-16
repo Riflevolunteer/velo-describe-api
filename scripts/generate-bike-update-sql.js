@@ -2238,6 +2238,21 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
+    'sr sac 310 42 52t x 170 alloy cotterless': 11317,
+    'sr sac 310 forged alloy outer ring 52 40': 11317,
+    'sr sac 310 one piece alloy with alloy outer ring 170mm 52 40': 11317,
+    'sr sac 310 one piece alloy with alloy rings 170mm 52 40': 11317,
+    'sr sac 310 one piece forged': 11317,
+    'sr sac 310 36 50t x 170 alloy cotterless': 11317,
+    'sr sxc t310 48 38 28': 11318,
+    'sr sxc t310 48 38 28t': 11318,
+    'sr sxc 310 52 42': 11319,
+    'sr ctc 532 52 42': 11320,
+    'sr ctc 5sg 52x42 teeth': 11321,
+    'sr cxc 300 50x36 teeth': 11322,
+    'sr cxc 300 52x42 teeth': 11322,
+    'sr ctc680 40x52t 170mm': 11323,
     'shimano fc b124 bio pace 48 38 28 tange fr s sealed': [{ bike: 'Sky Runner', from: 1987, to: 1987, id: 1776 }, { bike: 'Trail Runner', from: 1987, to: 1987, id: 1776 }, { bike: '615 GT', from: 1987, to: 1987, id: 1776 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new deore xt bio pace 48 38 28 new 600ex sealed': [{ bike: 'Ridge Runner', from: 1987, to: 1987, id: 1810 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano fc b126 bio pace tange fr s sealed': [{ bike: '512', from: 1987, to: 1987, id: 7560 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
@@ -2801,6 +2816,18 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
+    'sr ctb alloy with alloy sleeve': 11325,
+    'sr mtb 301': 11326,
+    'sr mtb 301 chrome plated': 11326,
+    'sr mtb 301 steel': 11326,
+    'sr mtb 200 alloy': 11327,
+    'kusuki light alloy wp b': 11329,
+    'kusuki wp b alloy': 11329,
+    'kusuki wp b light alloy': 11329,
+    'kusuki wpr b randonneur style': 11330,
+    'kusuki kd lb': 11331,
+    'kusuki bmt ii 26b steel': 11332,
     'sr rnd': [{ bike: '1000', from: 1983, to: 1983, id: 2910 }, { bike: '610', from: 1983, to: 1983, id: 2910 }, { bike: '210', from: 1983, to: 1983, id: 2910 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'sr rnd randonneur alloy with cushion rubber grips': [{ bike: '1000', from: 1982, to: 1982, id: 2910 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
     'sr ctd alloy with cloth tape width: 390mm': [{ bike: '1200', from: 1982, to: 1982, id: 7888 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
@@ -2977,6 +3004,9 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
+    'kusuki s win alloy': 11333,
+    'kusuki win σ': 11334,
     'nitto triathlon': [{ bike: 'Omnium', from: 1987, to: 1987, id: 8592 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'nitto young ii black': [{ bike: 'Carbon Tech 1000', from: 1987, to: 1987, id: 8590 }, { bike: '912', from: 1987, to: 1987, id: 8590 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'nitto ntc a gmg': [{ bike: 'Aero Miyata', from: 1987, to: 1987, id: 8589 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
@@ -3520,6 +3550,8 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
+    'sr sp 518fb cr mo spindle': 11328,
     'shimano mx 15': [{ bike: 'Sky Runner', from: 1987, to: 1987, id: 3966 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new deore xt': [{ bike: 'Ridge Runner', from: 1987, to: 1987, id: 3967 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new 105 w toe clips': [{ bike: '712', from: 1987, to: 1987, id: 3953 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
@@ -3790,6 +3822,8 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
+    'sr cre 100 micro adjust': 11324,
     // Exact SR codes: Fuji 1989 pp.33/35, Miyata 1986 p.23, Bianchi 1989/90 tables.
     'sr mte 300': [{ from: 1986, to: 1989, id: 11307 }],
     'sr cle 100': [{ from: 1989, to: 1990, id: 11308 }],

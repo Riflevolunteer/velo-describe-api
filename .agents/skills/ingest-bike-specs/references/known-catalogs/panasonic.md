@@ -1,6 +1,6 @@
 # Panasonic bicycle catalogues (USA 1985-89), read 2026-11-16
 
-These have been read for component evidence. No bikes are loaded. The only database change so far is CT-P5E (below).
+These have been read for component evidence. No bikes are loaded. Database changes so far: CT-P5E (source 417), then 12 SR and 6 Kusuki rows (sources 418-421), all marked below.
 
 ## Source
 
@@ -39,24 +39,24 @@ Each would get an exact link if a row were added.
 | Code (Panasonic years) | Unlinked specs naming it |
 |---|---|
 | SR CT-P5E seat post (1985-87) | **Applied 2026-11-16:** row 11316, source 417. 31 specs linked, 13 of them moved off CT-P5 5857. See `sakae-ringyo.md`. |
-| SR SAC-310 crank (1987-88) | 6 (1986 Falcon / Raleigh) |
-| SR SXC-T310 (1989) / SXC-310 (1989) | 4 / 1 (1987 Miyata, 1989 Bianchi) |
-| SR CTC-532 (1988-89), CTC-5SG (1985-88), CXC-300 (1985-86), CTC-680 (1989) | 2 / 1 / 2 / 1 |
-| SR CRE-100 seat post (1987-88) | 1 exact (1986 Raleigh Portage "SR CRE 100"). Bare CRE / CR-E x8 are still not proven to be the same post. |
-| SR CTB bar (1987-89) | 1 (1986 Raleigh Competition) |
-| SR MTB-301 bar (1985-86), MTB-200 (1985) | 3 / 1 (1984-86 Miyata) |
-| SR SP-518FB pedal (1988) | 1 (1986 Miyata Trail Runner) |
-| Kusuki WP-B bar (1985-86) | 8 (1985 Raleigh x4, 1985 / 87 Miyata x4) |
-| Kusuki WPR-B randonneur bar (1985-89) | 3 exact (1985 Raleigh). The 1987 Miyata "WP-RB" x2 is probably a transposition; that is a judgement. |
-| Kusuki KD-LB (1986), BMT-II-26B (1987) | 1 / 1 (1987 Miyata) |
-| Kusuki S-WIN(-AH) stem (1985-89), WIN Σ (1985-89) | 3 / 5 (1986-87 Miyata). The 1985 Raleigh bare "WIN" AH x8 could be either and is not settled. |
+| SR SAC-310 crank (1987-88) — **applied, 11317** | 6 (1986 Falcon / Raleigh) |
+| SR SXC-T310 (1989) / SXC-310 (1989) — **applied, 11318 / 11319** | 4 / 1 (1987 Miyata, 1989 Bianchi) |
+| SR CTC-532 (1988-89), CTC-5SG (1985-88), CXC-300 (1985-86), CTC-680 (1989) — **applied, 11320-11323** | 2 / 1 / 2 / 1 |
+| SR CRE-100 seat post (1987-88) — **applied, 11324** | 1 exact (1986 Raleigh Portage "SR CRE 100"). Bare CRE / CR-E x8 are still not proven to be the same post. |
+| SR CTB bar (1987-89) — **applied, 11325** | 1 (1986 Raleigh Competition) |
+| SR MTB-301 bar (1985-86), MTB-200 (1985) — **applied, 11326 / 11327** | 3 / 1 (1984-86 Miyata) |
+| SR SP-518FB pedal (1988) — **applied, 11328** | 1 (1986 Miyata Trail Runner) |
+| Kusuki WP-B bar (1985-86) — **applied, 11329** | 8 (1985 Raleigh x4, 1985 / 87 Miyata x4) |
+| Kusuki WPR-B randonneur bar (1985-89) — **applied, 11330** (WP-RB still open) | 3 exact (1985 Raleigh). The 1987 Miyata "WP-RB" x2 is probably a transposition; that is a judgement. |
+| Kusuki KD-LB (1986), BMT-II-26B (1987) — **applied, 11331 / 11332** | 1 / 1 (1987 Miyata) |
+| Kusuki S-WIN(-AH) stem (1985-89), WIN Σ (1985-89) — **applied, 11333 / 11334** | 3 / 5 (1986-87 Miyata). The 1985 Raleigh bare "WIN" AH x8 could be either and is not settled. |
 | MKS PB-20 pedal (1985-86) | 1 (1986 Miyata City Runner) |
 | Dia-Compe DC-280 / DC-281 MTB levers (1985) | 1 / 1 (1985 Miyata) |
 | Sugino TGT triple (1986) | 3 (1984-85 Miyata: TGT, TGT-LP) |
 | Sansin ET-Q hubs (1986, "sealed mechanism") | The 3 1985 Raleigh "ET-QS" are probably the same model, but that is not proven. |
 
-Kusuki has only two component rows (Winpista, Medalilion 1000), so the whole
-mid-1980s Kusuki bar and stem range is missing. Other codes printed with no row
+Kusuki had only two component rows (Winpista, Medalilion 1000) before the
+2026-11-16 load; see `kusuki.md` in the component notes. Other codes printed with no row
 and no current unlinked spec: SR CTC-504, CTC-T532, CT-P6B, MTB-100, MTS-120,
 SP-467; Kusuki BMT-24 / BMT-28 / BMTL-F600 / RK-3; MKS G-6000 / AR-2 (row 3855 is
 1980 only); Suzue MTB-SS; Strong PM-30; Sugino SP-KCL / VP-110 / SVT; Tange

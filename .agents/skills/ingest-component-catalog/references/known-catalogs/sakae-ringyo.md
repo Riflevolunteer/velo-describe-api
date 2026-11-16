@@ -642,3 +642,49 @@ promised recoverable links. Six component labels only:
   - duplicate-report (Sakae, Seat): no group, near or parenthetical pair involves
     11316. `quality-report` has no 11316 flag.
 
+## Twelve SR models from Panasonic USA 1985-89 — applied 2026-11-16, sources 417-421
+
+- **Pattern.** Bike-catalogue fitment only, as with Fuji 1989 (source 412).
+  Each code is printed in a Panasonic Bicycles USA spec table and named exactly
+  in already-loaded bike specs. Years span the earliest to the latest of those
+  catalogues; they are not introduction or end dates. Descriptions repeat only
+  printed fitment text. No weights or dimensions are inferred, and group is NULL.
+- **Sources.** 417 USA (1986), 418 (1985), 419 (1987), 420 (1988), 421 (1989),
+  all US, citing panasonicbikemuseum.info. The transcriptions and page index are
+  in `../../../ingest-bike-specs/references/known-catalogs/panasonic.md`.
+
+| ID | Title suffix (all Sakae/Ringyo (SR)) | Category | Years | Source | Linked specs |
+|---|---|---|---|---|---|
+| 11317 | SAC-310 | Cranksets | 1986-1988 | 419 | 16116 8379 8358 8338 8400 16289 (1986 Falcon / Raleigh) |
+| 11318 | SXC-T310 | Cranksets | 1987-1989 | 421 | 22399 22378 (1987 Miyata), 18722 18701 (1989 Bianchi) |
+| 11319 | SXC-310 | Cranksets | 1987-1989 | 421 | 22524 |
+| 11320 | CTC-532 | Cranksets | 1987-1989 | 420 | 22568 22546 |
+| 11321 | CTC-5SG | Cranksets | 1985-1988 | 417 | 19115 |
+| 11322 | CXC-300 | Cranksets | 1984-1986 | 417 | 21314 21335 |
+| 11323 | CTC-680 | Cranksets | 1987-1989 | 421 | 15968 (1987 Peugeot US) |
+| 11324 | CRE-100 | Seat Posts | 1986-1988 | 419 | 8256 (1986 Raleigh Portage) |
+| 11325 | CTB | Handlebars | 1986-1989 | 419 | 8193 (1986 Raleigh Competition) |
+| 11326 | MTB-301 | Handlebars | 1984-1986 | 417 | 19034 21680 21324 |
+| 11327 | MTB-200 | Handlebars | 1984-1985 | 418 | 21302 |
+| 11328 | SP-518FB | Pedals | 1986-1988 | 420 | 19005 |
+
+- **Identity decisions.**
+  - CRE-100 links only the exact "SR CRE 100"; bare CRE / CR-E stay unlinked and
+    are not aliased to 11324 or CLE-100 11308.
+  - CXC-300 (double) is kept apart from 10847 CXC-T300 (triple).
+  - SP-518FB is kept apart from bare SP-518 (2 specs, unlinked).
+  - CTC-T532 and CTC-504 (Panasonic only, no specs) are not added.
+- **Validation.**
+  - Preflight: all 45 target specs NULL; no existing row with these codes under any
+    brand. 8209 CTB-5DXC1 is a crankset, so no conflict with the CTB bar.
+  - Load: 4 sources, 18 rows, 45 specs. The identical rerun affected 0 rows.
+  - Readback: every planned field matched, and exactly the 45 planned specs are on
+    11317-11334.
+  - Regeneration: linked specs 7359 -> 7404. All 41 diff hunks are these links,
+    and every replaced line was NULL.
+  - duplicate-report (Sakae, Kusuki; plain, `--near`, `--paren`) and
+    `quality-report` raise nothing on the new ids.
+- **Generator.** Exact keys for every linked spelling, under a "Panasonic USA
+  1985-89 fitment rows" comment in Cranksets / Seat Posts / Handlebars / Pedals /
+  Stems. The "(SR)" in the titles stops substring matching, so these keys are needed.
+
