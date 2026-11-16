@@ -150,3 +150,18 @@ FL-270S.
   - The 1993 Project 5 / 7 bare "Smoke": 700C bikes.
   - The 1991 Bianchi "Panaracer Record": tubular or clincher unknown.
   - The 1987 "MIYATA IBEX": house brand.
+
+## 1992 German catalogue spec table (diffed 2026-11-16, no DB changes)
+
+- `Panasonic_1992_DE_Page_12-scaled.jpg` is the only spec page: a two-page "Technische
+  Daten" spread for 20 models (MC Team-MC 3500, CB 5000-2000, South Street, PR6000-1000,
+  Triathlon Ltd). The text "1992 wartet auf das Team ..." dates it.
+- Mostly Shimano, from XTR / XT / DX / LX down to 300LX, 500CX / 200CX, and on the road
+  bikes Dura-Ace 7400, 600 Ultegra, 105SC, RX100 and 500EX / 300EX. Also Araya rims,
+  Ritchey bars / stems / posts, Nitto, Mavic GP-4, Selle Italia Turbo and Panaracer tyres.
+- A script diff of its part codes against all unlinked 1985-95 specs found only two
+  codes in common, both printed **without a maker**:
+  - "MTB-110 580mm black" bars, matching the 1989 Bianchi "H.L. MTB-110" x4.
+  - "SP-243 alloy black" posts, matching the 1989 Bianchi "KA SP-243".
+  Neither is enough to add a row. That yield is too low to justify reading the 1990,
+  1991, 1993 and 1995 tables blind.

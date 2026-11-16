@@ -379,7 +379,7 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
   3. Link misses on existing rows: Araya 18 4921, MKS RT-7 10832 (1985), Sugino SP-KC 5928.
   4. Identity calls: KKT RT-E1 vs 3773, Dia-Compe 730 (Nashbar 1988 prints 730 GX, long reach 52-72mm: the GX-N series 8082, GX730N, not the 1964 Dia-Weinmann 8929), Sansin ET-Q / ET-QS.
 
-  Also decide whether to load Panasonic as a bike brand (transcriptions in `/private/tmp/panasonic-1985-89/`). The 1977-84 and 1990-95 catalogues are unread.
+  Also decide whether to load Panasonic as a bike brand (transcriptions in `/private/tmp/panasonic-1985-89/`). The 1977-84 catalogues are unread for components; of 1990-95 only the 1992 DE spec table has been diffed (low yield, see panasonic.md), so read the others only for a specific code.
 
 ### Italian makers
 
