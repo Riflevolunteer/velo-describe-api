@@ -1,5 +1,82 @@
 # Huret catalogs processed so far
 
+## New Success shifter six/seven-speed compatibility — 2026-11-16 review
+
+**Speed compatibility is resolved:** MA 85.5 E, the indexed right lever in
+6110's MA85.5/4E pair, supports **six and seven speeds**. The earlier
+seven-speed-only concern came from an incomplete VeloBase system label.
+This supersedes that concern in the brand audit below. No DB, CSV, link or
+generator changes were made during this investigation.
+
+Manufacturer evidence located:
+
+- [Sachs-Huret New Success ARIS technical sheet 501.1 DFE](https://velopedia.online/Document/Show/1291),
+  indexed as 1987, two pages, print code **870940**. Section **2.1** gives
+  MA85.5E right with selectable six/seven-speed indexing; section **2.2**
+  gives MA85.4E left with retro-friction, both for Italian braze-on bosses.
+  The listed weights are 48g right / 42g left. Its range also includes a
+  clamp-mounted pair, **MA85.4C**; do not infer the E mounting from a model
+  name alone. The printed product table includes six- and seven-speed ARIS
+  freewheels. Separate lever codes explain the combined MA85.5/4E label.
+- [Sachs ARIS installation instructions 510.8 D](https://velopedia.online/Document/Show/1284),
+  indexed as 1987, four pages, print code **870920**. Section **4.2**, figure
+  **14**, explicitly tells the installer to select 6 for a six-sprocket
+  freewheel and 7 for seven sprockets. This corroborates the variable
+  indexing mechanism; no substitution of a different shifter is implied.
+- Corroborating technical reference: Sutherland's Handbook, sixth edition
+  (1995), [PDF page 188](https://paulinoposada.github.io/bike/documents/epdf.pub_sutherlands-handbook-for-bicycle-mechanics.pdf#page=188),
+  Sachs-Huret indexed-lever table: MA85.5 with AR47.2D/T and regular
+  six-speed or narrow seven-speed ARIS freewheels. This table groups later
+  Rival levers too; it does not override the original sheet's warning about
+  New Success/Rival shifter interchangeability for its contemporary parts.
+
+**Retrieval limitation:** the manufacturer's text was read from the search
+service's indexed OCR of the original documents, including the English,
+French and German compatibility statements. Live Velopedia document and
+preview-image downloads returned **404**, consistent with its displayed
+data-loss notice. No maker scan or figure 14 was visually inspected. The
+handbook text was accessible, but its screenshot failed. The matching
+statements in the two manufacturer documents establish the compatibility
+finding; keep this retrieval limit explicit for later source registration.
+Neither document is currently registered in `data_source`. Do not claim a
+locally held scan or silently adopt an exact manufacturing date.
+
+Live bike-spec readback and conclusions:
+
+| Bike / shifter spec | Evidence | Result |
+| --- | --- | --- |
+| 1987 Peugeot Savoie, 15103 | Explicit ARIS indexing; six-speed New Success freewheel 15098 | Six-speed operation fits 6110's indexed lever system; the count is no reason to unlink it. The bike text does not independently print the mounting suffix. |
+| 1989 Peugeot Savoie, 17501 | Indexed New Success; seven-speed New Success freewheel 17497 | Seven-speed operation also fits; retain the link. |
+| 1987 Raleigh Randonneur 18, 8849 | New Success with ratchet levers; six-speed 14/16/18/21/24/28 freewheel 8855 | Six sprockets are compatible, but exact ARIS-versus-earlier-friction lever identity remains unresolved. |
+
+For Raleigh, visually re-read original [1987 UK catalogue](https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1987_3.html)
+**p.15** (spec table) and **p.13** (Randonneur portrait). The table agrees
+with the stored ratchet wording and six-speed range; it does not name ARIS
+or a lever code. The p.13 photo does not resolve the shifter code/selector
+at this scan size. Its transmission paragraph explicitly says **long cage**
+New Success, while rear spec **8852** currently links short-cage **4412**.
+This adds a concrete cage question to the prior ARIS-from-1987 decision:
+review 4403 AR47.1T versus 4413 AR47.2T using period fitment evidence before
+changing either the shifter or rear link. A year or ratchet wording alone
+does not distinguish those generations. Leave current links unchanged for
+review, rather than recording the Raleigh as a confirmed MA85.5E fitment.
+
+**Proposed enrichment, not applied:** retain 6110's current title, search
+text, 1987–1990 dates and three links. After recovering/registering the maker
+sheet, change its description/source_ref to record the selectable right
+lever, retro-friction left and mounting. Suggested description (under 255
+characters): `New Success ARIS downtube braze-on levers: MA85.5E right with
+selectable 6/7-speed indexing, MA85.4E left with retro-friction; Italian
+bosses. 90g pair specified (48g right + 42g left); earlier listing reports
+84g.` Preserve the existing 84g listing as separate evidence rather than
+inventing a reason for its difference from the manufacturer pair total.
+
+The audit's broad six-speed compatibility TODO was replaced by the narrower
+Raleigh identity question; Peugeot no longer needs compatibility evidence.
+Temporary catalogue copies were removed after recording page URLs and
+findings. No SQL was prepared or loaded, so no idempotency or generator
+comparison was needed. Documentation passed `git diff --check`.
+
 ## Imported dates and model codes corrected — 2026-11-16, user approved
 
 User approved correcting the imported dates and adding the model codes from

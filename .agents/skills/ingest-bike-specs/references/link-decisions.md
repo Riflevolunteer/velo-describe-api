@@ -102,9 +102,13 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Shifters
 
-- Sachs Huret audit 2026-11-16: six-speed bike links 8849 / 15103 to
-  seven-speed-labelled ARIS lever 6110 need compatibility evidence before
-  a mapping change; see the [brand audit](../../ingest-component-catalog/references/known-catalogs/huret.md#sachs-huret-brand-quality-audit--2026-11-16-read-only).
+- Sachs Huret compatibility review 2026-11-16: manufacturer sheets 501.1 DFE
+  and 510.8 D establish that 6110's MA85.5E right lever selects six or seven
+  speeds; MA85.4E left is retro-friction. Supersedes the earlier seven-speed-only
+  concern. Retain Peugeot 15103 / 17501. Raleigh 8849's six-speed range is
+  compatible, but its ratchet wording does not establish the exact ARIS lever;
+  retain the existing link pending code/photographic evidence. See the
+  [sources and retrieval limits](../../ingest-component-catalog/references/known-catalogs/huret.md#new-success-shifter-sixseven-speed-compatibility--2026-11-16-review).
 - Most unlinked values are generic or system text ("Simplex" 8, "stem shifters" 6, "Handlebar stem power shifters" 8, the 1983-84 Raleigh "Direct Fit / Clip Fit / Alloy Ratchet Levers", "SIS levers", "Aris Index"): leave.
 - Leave unlinked (several rows fit): 1983-84 Raleigh "Shimano 600 AX Top Mounted Direct Fit Levers" x2 (SL-6310 or SL-6311 braze-on); 1986 Raleigh "Suntour Cyclone" (6278 / 7826 / 6279); 1989 Bianchi "SunTour GPX AccuShift" (6286 B / 6287 C); 1989 Bianchi "SunTour XCE-4050" (6285 SL-4050 is titled Edge, the road group); 1987 Raleigh "Huret Rival ... black ratchet levers" (6108 is the indexed Aris); 1974 Motobecane "Simplex Prestige stem shifter" (stem row 6226 is 1964-65).
 

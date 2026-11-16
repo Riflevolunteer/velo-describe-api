@@ -435,6 +435,15 @@
 
 ## 1987 Raleigh (UK) — `1987_raleigh_spec.csv` (13 bikes, 294 specs, 38 linked)
 
+- **New Success review, 2026-11-16:** re-read p.15 Randonneur specifications
+  and p.13 portrait/transmission text. The six-speed range is compatible
+  with indexed MA85.5E, as the Sachs maker sheets establish, but Raleigh's
+  ratchet wording does not distinguish it from earlier friction levers.
+  Spec 8849 remains on 6110 pending exact lever evidence. P.13 explicitly
+  specifies a long-cage New Success rear; review 8852's current short-cage
+  4412 link against 4403 AR47.1T / 4413 AR47.2T. This qualifies the prior
+  ARIS-from-1987 decision; no links changed. See the
+  [Huret compatibility review](../../../ingest-component-catalog/references/known-catalogs/huret.md#new-success-shifter-sixseven-speed-compatibility--2026-11-16-review).
 - Source: https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1987_3.html
   (24 scans). Pp. 1-16 are the TI Raleigh Ltd, Nottingham "Handbuilt
   Lightweights" catalogue ("100 Years of Winning 1887-1987", UK edition ->
