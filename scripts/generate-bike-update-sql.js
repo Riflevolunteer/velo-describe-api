@@ -627,7 +627,7 @@ const COMPONENT_OVERRIDES = {
     'sachs rival': [{ from: 1989, to: 1989, id: 2440 }], // 1989 Peugeot (NL) Mont Blanc "Sachs Rival Aris Index": Sachs Huret ARIS Rival (1989)
     'sachs huret': [{ from: 1989, to: 1989, id: null }], // 1989 Peugeot (NL) Avoriaz: bare brand; the matcher hit the 1980 brand row
     'shimano ax 55': [{ from: 1983, to: 1990, id: 2459 }], // 1989 Peugeot (NL) Hudson: FD-AX50 / FD-AX55
-    'suntour xcm': [{ from: 1989, to: 1992, id: 2665 }], // 1989 Peugeot (NL) VTT Express: FD-XM02-GXH, XCM
+    'suntour xcm': [{ from: 1989, to: 1989, id: 11411 }, { from: 1990, to: 1992, id: 2665 }], // 1989 Peugeot (NL) VTT Express: FD-XM34-GXH, XCM 3040 (SunTour Edition No. 89, the 1989 line); FD-XM00 / XM02 from 1990
     // 1988 Peugeot (FR): the 1988 range, "Shimano 105 NEW" = the 1050 series, "Shimano New 600" = 6400 600 Ultegra.
     'huret rival 62 1 d white': 8961, // PHE 20 Mont-Blanc: Sachs Huret AV 62.1 D, Rival (part number printed)
     'huret rival pilot finish': 8488, // A 400 Comète: Rival 1086-00, as the 1987 Comète
@@ -746,7 +746,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc comp top pull': [{ from: 1990, to: 1992, id: 7959 }], // FD-XC01, XC-Comp (only XC-Comp front row, dated 1992)
     'suntour xcd top pull': [{ from: 1990, to: 1990, id: 2662 }], // XCD 6000 (1990)
     'suntour xce top pull': [{ from: 1990, to: 1992, id: 2663 }], // FD-XE01, XCE
-    'suntour xce 4050': [{ from: 1989, to: 1989, id: null }], // 1989 Bianchi Forte / Volpe: unlinked 2026-11-14 (user decision). SunTour 1990 catalogue (printed 09.1989) marks XCE '90 new (FD-XE00); FD-XE01 is the 1992 code; neither shown to be the 1989 part
+    'suntour xce 4050': [{ from: 1989, to: 1989, id: 11396 }], // 1989 Bianchi Forte / Volpe: FD-XE45-GXH, XCE 4050 (SunTour Edition No. 89, the 1989 line; relinked 2026-11-16)
     // 1986-87 Colnago Super Mountain Bike / 1986 Raid "Shimano AL 11" group: FD-AL11 (1980-87 since 2026-11-01).
     // The 1988 catalogue says "AL 11 SIS", but its actual indexed models
     // remain unidentified; this wording does not establish a later AL11 version.
@@ -1003,7 +1003,7 @@ const COMPONENT_OVERRIDES = {
     'shimano exage mountain': [{ from: 1988, to: 1989, id: 7182 }], // 1989 Peugeot (NL) Alpine Express: RD-M450-GS / SGS
     'sachs rival': [{ from: 1989, to: 1990, id: 4417 }], // 1989 Peugeot (NL) Mont Blanc: Sachs Huret ARIS Rival (1989-90)
     'shimano r 552 0s': [{ from: 1989, to: 1990, id: 7605 }], // 1989 Peugeot (NL) Hudson, printed "R-552-0s": RD-R552-GS / SS
-    'suntour xcm': [{ from: 1989, to: 1992, id: 4793 }], // 1989 Peugeot (NL) VTT Express "Suntour XCM Index": RD-XM02-GXB (the matcher hit 4795, dated 1980)
+    'suntour xcm': [{ from: 1989, to: 1989, id: 4795 }, { from: 1990, to: 1992, id: 4793 }], // 1989 Peugeot (NL) VTT Express "Suntour XCM Index": RD-XM34-GXB, XCM 3040 (Edition No. 89); RD-XM00 / XM02 from 1990
     // 1988 Peugeot (FR): the 1988 range, "Shimano 105 NEW" = the 1050 series, "Shimano New 600" = 6400 600 Ultegra.
     'huret rival 41 1 d white': 8957, // PHE 20 Mont-Blanc: Sachs Huret AR 41.1 D, Rival (part number printed)
     'simplex slj 66': 4655, // PY 10 FC: printed truncated "SLJ 66", the SLJ 6600 as the 1984-85 PY 10 FC
@@ -1136,7 +1136,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc comp': [{ from: 1990, to: 1992, id: 4783 }], // RD-XC20-GXB
     'suntour xcd': [{ from: 1990, to: 1990, id: 4789 }], // XCD 6000 (1990)
     'suntour xce': [{ from: 1990, to: 1992, id: 4791 }], // RD-XE01-GXB
-    'suntour xce 4050': [{ from: 1989, to: 1989, id: null }], // 1989 Bianchi Forte / Volpe: unlinked 2026-11-14 (user decision). XCE is '90 new in the SunTour 1990 catalogue (RD-XE00 11056); RD-XE01 is the 1992 code; neither shown to be the 1989 part
+    'suntour xce 4050': [{ from: 1989, to: 1989, id: 11395 }], // 1989 Bianchi Forte / Volpe: RD-XE45-GXB, XCE 4050 (SunTour Edition No. 89, the 1989 line; relinked 2026-11-16)
     'shimano al 11': [{ from: 1986, to: 1987, id: 4446 }], // 1986-87 Colnago Super Mountain Bike: RD-AL11 (1984-87 since 2026-11-01)
     'suntour xct': [{ from: 1990, to: 1990, id: null }, { from: 1991, to: 1992, id: 7952 }], // 1990 Bianchi Nyala: unlinked 2026-11-14, SunTour 1990 p.17 lists RD-XT00 (11070) and RD-XT10 (11071) without a distinguishing spec; RD-XT02 (1992)
     'suntour cyclone': [{ from: 1986, to: 1986, id: null }], // 1986 Raleigh Supercourse: existing null (several Cyclone rears fit); was held only by matcher ambiguity until 4733 merged into 4735 (2026-11-14)
@@ -1337,6 +1337,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    'suntour xce 4050': [{ from: 1989, to: 1989, id: 11403 }], // 1989 Bianchi Volpe: HB-AT45, the XCE 4050 hubs on the Edition No. 89 ATB chart
     // Peugeot USA fitment; Mavic 1986-87 p.16 identifies the 506 RD rear
     // within the 500 RD road hub family already represented by 3397.
     'mavic 506 rd': [
@@ -2574,7 +2575,7 @@ const COMPONENT_OVERRIDES = {
     // 2026-11-02 crankset pass.
     'shimano 600 52 42 170mm': [{ from: 1986, to: 1986, id: 1798 }], // 1986 Raleigh: FC-6207, 600EX (plain double; judgement call)
     'shimano deore 2 48 38 28t': [{ from: 1989, to: 1989, id: 1809 }], // 1989 Bianchi: FC-MT60, as the 1989 Raleigh Appalachian 'Deore II Biopace'
-    'suntour xce 4050 48 38 28t': [{ from: 1989, to: 1989, id: null }], // 1989 Bianchi Forte: unlinked 2026-11-14, as its XCE-4050 derailleurs. CW-XE00 (48x38x28T) is '90 new in the SunTour 1990 catalogue; CW-XE01 (2002) is the 1992 code; neither shown to be the 1989 crank
+    'suntour xce 4050 48 38 28t': [{ from: 1989, to: 1989, id: 11401 }], // 1989 Bianchi Forte: CW-XE45 48T round / 38T / 28T oval (SunTour Edition No. 89)
     'ofmega super competizione colnago signed': [{ from: 1987, to: 1987, id: 1703 }], // 1987 Colnago: Super Competizione road, 2nd version
     'shimano tourney xt 50 45 28 175mm': [{ from: 1985, to: 1985, id: 2004 }], // 1985 Raleigh: Tourney XT (2004 year_to 1980 -> 1985; judgement call)
     'sr ctc 5dxc 52x42 teeth': [{ bike: '90', from: 1985, to: 1985, id: 8205 }, { from: 1986, to: 1986, id: 8205 }], // 1986 Miyata: SR CTC-5DXC2, Custom DX double (8205 year_to 1982 -> 1986; judgement call)
@@ -3394,6 +3395,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010 barcon accushift': [{ from: 1989, to: 1989, id: 6262 }], // SL-BC00, Superbe Pro (bar-con)
     'suntour xcd 6000 barcon accushift': [{ from: 1989, to: 1989, id: 6262 }],
     'suntour xce 4050 barcon accushift': [{ from: 1989, to: 1989, id: 6262 }],
+    'suntour xce 4050 accushift': [{ from: 1989, to: 1989, id: 11397 }], // 1989 Bianchi Forte: SL-XE45 thumb shifters (Edition No. 89)
     // 1989 Peugeot (FR): indexed Simplex levers match the SX Index; scope to these bikes so generic Simplex specs stay unlinked.
     'simplex indexed': [
       { bike: "P 501 B Z 'Ventoux'", from: 1989, to: 1989, id: 7361 },
@@ -3437,6 +3439,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    'suntour xce 4050': [{ from: 1989, to: 1989, id: 11398 }], // 1989 Bianchi Forte: BL-XE45, XCE 4050 (Edition No. 89)
     // 1982-84 Miyata plain NGC-200 levers -> 8861 (widened to 1982 from this fitment, 2026-11-16). NGC 200H stays unlinked (not among 8861's codes).
     'dia compe ngc 200 levers': [{ from: 1983, to: 1984, id: 8861 }],
     'dia compe ngc 200 hooded levers w rubber pads': [{ from: 1982, to: 1982, id: 8861 }],

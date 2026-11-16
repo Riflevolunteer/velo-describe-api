@@ -1395,6 +1395,88 @@ original proposal `/tmp/xcd-review-proposal.sql`, images
 `/tmp/xcd-4789.jpg`, `/tmp/xcd-4790.jpg`, `/tmp/xcd-1988-p7.jpg`,
 `/tmp/xcd-1990-p13.jpg` and `/tmp/xcd-1990-p14.jpg`.
 
+## SunTour Bicycle Component Catalog Edition No. 89 — printed 09.1988 (2026-11-16)
+
+- Source: [RadioLabWorks PDF](https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf)
+  (filename says "1988 #89"), 45 scanned pages, no text layer. Cover "Edition No.89";
+  p.2 intro calls it the '89 product line (Steve Bauer, 1988 Tour); back cover
+  "Printed in JAPAN Sep./'88", Maeda Osaka / SunTour USA. `data_source` **427**,
+  label `SunTour Bicycle Component Catalog Edition No. 89 (printed 09.1988)`. Model
+  year 1989. Supersedes the partial road pages held as source 86.
+- Pages (pdf numbering; printed = pdf - 1): 1-3 cover / intro; 4-7 road and ATB
+  system charts (codes only); 8-11 Superbe Pro + Track; 12-13 Sprint 9000;
+  14-15 GPX; 16 Olé; 17 Edge 4050; 18 Blaze 3040; 19 Alpha 2000 / 1500 / RT1000
+  road; 20 Cyclone 7000; 21 Alpha 4050 / 3040 / 2000 / SVX derailleurs; 22-23
+  freewheels; 24-27 XC 9000; 28-29 XCD 6000; 30 XCE 4050; 31 XCE 4051 front index;
+  32 XCM 3040; 33 Alpha 2000 / 1500 / AT1000 ATB; 34 XCD 4050 / Alpha 3040 / 2000
+  ATB; 35-38 accessories, PLG / PUB-10 / UB-10 / DLW levers, dropouts, quick
+  releases; 39 tools; 40 Scrambler II; 41 LV-3; 42-43 Original Goods; 44-45 back
+  cover (duplicate scan). Transcribed by three subagents; pp.7, 20, 29 and 30
+  checked at full size. Out of scope: dropouts, tools, accessories, apparel.
+- '89 new groups: Olé, Edge 4050, Blaze 3040, XCE 4050, XCE 4051 (front index),
+  XCM 3040; Alpha 2000 / 1500 (marked NEW); new parts BL-SP10, BA-SP00-S,
+  Bar-Con SL-BC00, FH-XD10 freehubs, FW-XC00-R6, CL-XC01 / XC02-U7, CL-XD01 /
+  XD02-U7, CT-XD10. Absent (dropped by 1989): XC Sport 7000, alpha-5000,
+  alpha-3000. **No SunTour Quattro anywhere**: the 1989-91 Bianchi "SunTour
+  Quattro" derailleurs are not a SunTour catalogue name in this edition.
+- **Code reuse, not continuity:** the Alpha 1500 RD-1500 / FD-1500, Alpha 2000
+  FD-2000 and the Cyclone standard-reach CB-6100 reuse codes of different older
+  parts (4705 RD-1500 V-GT, 2645 FD-1500 Superbe, 2652 FD-2000 Superbe Pro, 1052
+  XC roller-cam CB-6100). New rows were added; the old rows were not extended.
+- **46 added** (11372-11417, all 1989-1989, source 427): 11372 BL-OL00; 11373 BA-OL00-1 / -2;
+  11374 BB-OL00-J; 11375 SL-ED45-B7U / C7U; 11376 BB-ED45; 11377 HB-ED45-F / R;
+  11378 RD-BE34-SSB / SS; 11379 FD-BE34-SSH; 11380 HB-BE34-F / R; 11381 RD-1500
+  Alpha 1500 (SSB / SS / GXB / GX); 11382 RD-RT10-SSB / SS; 11383 FD-2000-SSH / GXH
+  Alpha 2000; 11384 FD-1500-SSH / GXH Alpha 1500; 11385 SL-2000-CP; 11386
+  SL-2000-CHR / CHL; 11387 RD-AT10-GXB / GX; 11388 FD-AT10-GXH; 11389 RD-3040-SS /
+  GX; 11390 FD-3040-SS / GX; 11391 SL-3040-CHR / CHL; 11392 SL-4050-CHR / CHL;
+  11393 RD-7300 SVX; 11394 CB-6100 Cyclone (standard reach); XCE 4050 11395
+  RD-XE45-GXB, 11396 FD-XE45-GXH, 11397 SL-XE45, 11398 BL-XE45, 11399 BA-XE45-C,
+  11400 CT-XE45, 11401 CW-XE45, 11402 BB-XE45, 11403 HB-AT45 (FQ / RQ / FS / RS; the
+  XCE and XCM hubs per the p.7 chart), 11404 PL-XE45; XCE 4051 11405 SL-XE46-L3,
+  11406 FD-XE46-GXH, 11407 CW-XE46; XCM 3040 11408 SL-XM34, 11409 BL-XM34, 11410
+  CW-XM34, 11411 FD-XM34-GXH, 11412 CT-XM34; 11413 FW-XC00-R6; 11414 FH-HC10-U7 /
+  R6 cassettes; 11415 HB-XD10-F / R (bolt-on); 11416 FH-XD10-U7 / R6; 11417 CL-XD01 /
+  CL-XD02-U7.
+- **Retitled** (old titles): 4752 "SunTour Ole" -> RD-OL00-SSB; 6289 "LS-OL00-BS/CC"
+  (Bike Nashbar 1988 spelling) -> SL-OL00-BS / SL-OL00-CS; 3133 "HS-OL00-J" -> + -F / -C;
+  4005 "SunTour (MKS) Ole" -> PL-OL00, Ole (MKS); 4744 "SunTour Accushift Edge (4050,
+  Accushift Plus)" -> RD-ED45-SSB, Edge 4050 (matches its VeloBase model field);
+  6285 "SL-4050, Edge" -> SL-4050-BS / -CS, Edge 4050 (6-speed); 6274
+  "SL-3040-BS/CS, Blaze" -> + SL-3040-CP / SL-3041-CP; 4795 "XCM Accushift 3040" ->
+  RD-XM34-GXB, XCM 3040; 4770 "SVX GT" -> RD-7400-GT; 4720 "Accushift alpha-4050"
+  -> RD-4050-SS / RD-4050-GX; 2619 "a-4050, 4050" (FD) -> FD-4050-SS / -BS / -GX;
+  4706 "Accushift alpha-2000" -> RD-2001-SSB / SS / GXB / GX (its 297g VeloBase
+  weight kept, type unknown); 11129 FD-RT10-SSH "AC1000" -> RT1000 / AC1000; 11127
+  SL-1500-CP -> + Alpha 1500; 11130 SL-RT10-CP -> + RT1000; 11084 SL-AT10 -> + AT1000;
+  8816 "BA-XD10, XCD 6000 (cantilever)" -> CT-XD10 (164g 1988 JP vs 230g pr here);
+  6372 "CL-XC02-U7" -> CL-XC01 / CL-XC02-U7. Descriptions also rewritten on 1985
+  CW-OL00, 2638 FD-OL00, 3609 HB-OL00, 2653 FD-4300.
+- **Years:** year_to -> 1989 on 167, 7852, 454, 7853, 7855, 8815, 7854, 3625, 6288,
+  7835, 7837, 2235, 7817, 8284, 4003, 4741, 4740, 8817, 7866, 7851, 6281, 1420,
+  7869, 7868, 7867, 7872, 7871, 7870, 1047, 4770 (1985), 2653 (1986), 4720 (1988),
+  8816 (1988). year_from -> 1989 (earlier) on 11097 BL-SP10, 11129, 11127, 11130,
+  11084 (all 1990 before). **year_from moved later:** 4795 1980 -> 1989 and 2619
+  NULL -> 1989 (VeloBase placeholders; '89 new group); 4793 RD-XM00 / XM02 and 2665
+  FD-XM00 / XM02 1989 -> 1990 (the 1989 XCM is XM34; their own descriptions date
+  XM00 to 1990); 4005 PL-OL00 1980 -> 1988 (Bike Nashbar Spring 1988 already lists
+  Olé although this edition calls it '89 new). 7817 FT-3050 / FS-1500 / MF-1000
+  year_to 1989 rests on FS-1500 and MF-1000 only.
+- **Bike links (user approved):** 1989 Bianchi Forte 18614 -> 11398, 18615 -> 11396,
+  18616 -> 11395, 18617 -> 11397, 18618 -> 11401; Volpe 18719 -> 11396, 18720 ->
+  11395, 18728 -> 11403; 1989 Peugeot (NL) VTT Express 17373 2665 -> 11411, 17374
+  4793 -> 4795. Generator overrides updated; regenerating all 93 bike catalogues
+  changed only these ten specs, no other output references the new ids, and the
+  retitled rows' generated links equal the DB. SQL re-run affected no rows.
+- **Left / open:** 3630 unnumbered XCD freehub vs FH-XD10 (new 1989) / FH-XD11
+  (1990); 6290 LD-5100 PLG vs the 1989 PLG LS-5700 / LS-5800 (both 150g); 6376
+  CL-XD10 (1988 JP code) kept apart from 11417; 1989 Brava "SunTour GPX" front and
+  "GPX AccuShift" shifters still unlinked (SSB / SSH, B / C rows, text does not
+  choose); p.34 prints an RD-2000-GX (Code 25469907) beside p.33's RD-2001-GX, not
+  added; Scrambler II and LV-3 pages not transcribed into rows; BH-1600 / BH-1800
+  7993 vs 3617 overlap untouched. Doubtful small-print stock codes were not used
+  in any description.
+
 ## SunTour Bicycle Equipment Catalog 1990, English — printed September 1989 (2026-11-13)
 
 - Full catalogue reconciled and loaded: `data_source` **385**, label `SunTour Bicycle Equipment Catalog 1990 (printed 09.1989)`. Source: https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1990.html. Front cover says 1990; rear cover says `Printed in JAPAN Sep./'89`. Maeda Japan and SunTour USA, English worldwide edition; market country unknown (`NULL`), not inferred from print location.
