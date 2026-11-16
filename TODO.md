@@ -348,9 +348,29 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 - **Lightrace / Gourgaud headsets 1977-84** (Luxe vs Grand Luxe, about 19 Peugeot specs): same Peugeot spares-list lead.
 - **Motobécane non-illustrated spares editions 1983-87:** Velo Vintage à Gogo poster MAFAC 2000 says he has them (not posted). Unopened there: t29374 / t29375 Peugeot 1979 / 1980 tariffs, t12991 Cologne 1984 show report.
 
+### Dealer and mail-order catalogues
+
+- **Read Bike Nashbar Spring 1988 (68 pp, scanned PDF on Google Drive, not ingested) and prepare evidence:** download method and sampled pages are in the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md). Check each hit against the DB before proposing rows or links:
+  - Sakae Custom P5 (p.53) vs the 1987 Raleigh "Sakae fluted alloy, single Allen bolt" seatposts. The 1983-84 wording maps to CT-P5 5857; this needs an identity call, not an automatic link.
+  - Sakae MTE (p.53) vs the MTE-110 gap.
+  - Royal II stem (p.52) vs the 1987 Randonneur "Sakae Royal forged".
+  - Sakae SX / FX cranks (pp.45-46).
+  - SR pedals SP-102, SP-122 and SP-519 (p.44).
+  - MKS AR-3 (p.37 spec, 1988).
+  - Dia-Compe 730 GX (p.48) vs the open "Dia-Compe 730 vs 8929" call; AC-250 Aero levers (p.37).
+  - Vetta Maxi Anatomic (p.50).
+  - Specialized Crossroads II and Ground Control S, IRC Triathlon (p.66).
+  - SunTour Alpha 5000 (p.37).
+
+  The house-bike spec pages (pp.35, 37, 39) could also go to `ingest-bike-specs`. Read the pages not yet checked (pp.1-34, 54-61, 65, 67-68) at the same time.
+- **Other US dealer / mail-order catalogues 1985-92 (Performance, later Nashbar issues, QBP, J&B, Colorado Cyclist):** no script-readable scans. Next leads are browser-only: bikeforums thread 1214636 (Performance Fall/Winter 1985-86), the bikeforums "Official Vintage Bicycle Manufacturer Catalog List", retrobike thread 431743, and the disraeligears La Bicicletta Guida '87 / '89-'95 index.
+
 ### UK retail catalogues (need a person to ask or visit)
 
-- **Ron Kitching "Everything Cycling" 1984-89 and Freewheel catalogues:** best lead for Rigida rims (Chrolux, Jade, Saphir, CTX 10), Viscount saddles (2285, 2296, Terra / MTB anatomic) and the 1970s Brooks range. Holders: retrobike 159101 / 21901 members, Otley Cycle Club (Kitching library), Warwick Modern Records Centre (Freewheel), retrobike 435965 (1983 Freewheel).
+- **Ron Kitching "Everything Cycling" 1984-89 and Freewheel catalogues:** best lead for Rigida rims (Chrolux, Jade, Saphir, CTX 10), Viscount saddles (2285, 2296, Terra / MTB anatomic) and the 1970s Brooks range. Next actions:
+  - Ask Otley Cycle Club (John Barnett / Trevor Howe, through the club contact form) which 1980s Everything Cycling editions are on display in its Ron Kitching Library, and whether they can be photographed.
+  - Read Warwick MRC record NCM/1/1403, and ask the MRC for its 1983 Freewheel scan.
+  - Other holders: retrobike 159101 / 21901 members, retrobike 435965 / 3405983 (1983 / 1989 Freewheel).
 - **Brooks 1960-90** (B15 x4, CR3 x3; dates for 5303 / 5304 / 5310 / 5315 / 5282 / 10057): a 1970s UK retailer catalogue, or the saddlewax.com owner's 1971 price list and 1973 Raleigh saddle catalogue scans.
 
 ### Japanese and Taiwanese makers
