@@ -1650,6 +1650,10 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1984-85 Miyata "DC-" spellings (2026-11-16): 980 = 660 (plain 980 cantilever, as the 1983 / 1986-87 links; 691 is the buffed GC980), 981 = 661.
+    'dia compe dc 980': [{ from: 1984, to: 1984, id: 660 }],
+    'dia compe dc 981': [{ from: 1984, to: 1985, id: 661 }],
+    'dia compe dc 981 cantilever': [{ from: 1984, to: 1985, id: 661 }],
     // Selective front/rear CSV columns, 2026-11-15. Keep printed codes and
     // wording; explicit NULLs preserve unresolved identities after the split.
     'shimano at 50 front with at 50 levers': [{ bike: 'Orient Express', from: 1986, to: 1986, id: 1003 }],
@@ -3433,6 +3437,10 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1982-84 Miyata plain NGC-200 levers -> 8861 (widened to 1982 from this fitment, 2026-11-16). NGC 200H stays unlinked (not among 8861's codes).
+    'dia compe ngc 200 levers': [{ from: 1983, to: 1984, id: 8861 }],
+    'dia compe ngc 200 hooded levers w rubber pads': [{ from: 1982, to: 1982, id: 8861 }],
+    'dia compe ngc 200 hooded levers quick release w rubber pads': [{ from: 1982, to: 1982, id: 8861 }],
     'dia compe 204qc levers': [{ bike: '215 ST', from: 1987, to: 1987, id: 8868 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'dia compe 284 ii levers': [{ bike: 'Valley Runner', from: 1987, to: 1987, id: 8114 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano at 50 levers': [{ bike: 'Trail Runner', from: 1987, to: 1987, id: 448 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
@@ -4026,6 +4034,18 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1980-85 Miyata 600 UG chains (2026-11-16 rows-already-exist pass): pin-plate colour picks the row.
+    // Gold = 7451 CN-6110 (golden pin plates); silver = 7473 CN-6120 (satin nickel pin plates).
+    'shimano 1 2\" x 3 32\" 600ug gold black': [{ from: 1980, to: 1985, id: 7451 }],
+    'shimano 600 ug gold 1 2\" x 3 32\"': [{ from: 1980, to: 1985, id: 7451 }],
+    'shimano 600 ug gold black 1 2\" x 3 32\"': [{ from: 1980, to: 1985, id: 7451 }],
+    'shimano 600 ug gold': [{ from: 1980, to: 1985, id: 7451 }],
+    'shimano 600ug gold': [{ from: 1980, to: 1985, id: 7451 }],
+    'shimano 600ug gold black': [{ from: 1980, to: 1985, id: 7451 }],
+    'shimano 600ug gold 1 2\" x 3 32\"': [{ from: 1980, to: 1985, id: 7451 }],
+    'shimano 600 ug silver 1 2\" x 3 32\"': [{ from: 1980, to: 1985, id: 7473 }],
+    'shimano 600 ug silver': [{ from: 1980, to: 1985, id: 7473 }],
+    'shimano 600ug silver': [{ from: 1980, to: 1985, id: 7473 }],
     'shimano dura ace narrow type': [{ bike: 'Carbon Tech 5000', from: 1987, to: 1987, id: 7231 }, { bike: 'Carbon Tech 3000', from: 1987, to: 1987, id: 7231 }, { bike: 'Aero Miyata', from: 1987, to: 1987, id: 7231 }, { bike: 'Team Miyata', from: 1987, to: 1987, id: 7231 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'dura ace ug nickel finished': [{ bike: 'Aero Miyata', from: 1983, to: 1983, id: 7472 }, { bike: 'Team Miyata', from: 1983, to: 1983, id: 7472 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'did track silver': [{ bike: 'Team Pista', from: 1985, to: 1985, id: 1355 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
@@ -4040,8 +4060,8 @@ const COMPONENT_OVERRIDES = {
     'shimano cn hg70 grey black': 7568,
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano dura ace ug nickel finish': [{ from: 1986, to: 1986, id: 7231 }], // CN-7400
-    'shimano 600 ug silver black': [{ bike: 'Ridge Runner', from: 1987, to: 1987, id: 7232 }, { bike: 'Carbon Tech 1000', from: 1987, to: 1987, id: 7232 }, { bike: 'Omnium', from: 1987, to: 1987, id: 7232 }, { bike: '912', from: 1987, to: 1987, id: 7232 }, { bike: '712', from: 1987, to: 1987, id: 7232 }, { bike: 'Sky Runner', from: 1987, to: 1987, id: 7232 }, { bike: '615 GT', from: 1987, to: 1987, id: 7232 }, { bike: '1000', from: 1987, to: 1987, id: 7232 }, { from: 1986, to: 1986, id: 7232 }], // CN-6208 (UG)
-    'shimano 600 ug gold black': [{ from: 1986, to: 1986, id: 7232 }], // CN-6208 (UG)
+    'shimano 600 ug silver black': [{ bike: 'Ridge Runner', from: 1987, to: 1987, id: 7232 }, { bike: 'Carbon Tech 1000', from: 1987, to: 1987, id: 7232 }, { bike: 'Omnium', from: 1987, to: 1987, id: 7232 }, { bike: '912', from: 1987, to: 1987, id: 7232 }, { bike: '712', from: 1987, to: 1987, id: 7232 }, { bike: 'Sky Runner', from: 1987, to: 1987, id: 7232 }, { bike: '615 GT', from: 1987, to: 1987, id: 7232 }, { bike: '1000', from: 1987, to: 1987, id: 7232 }, { from: 1986, to: 1986, id: 7232 }, { from: 1980, to: 1985, id: 7473 }], // CN-6208 (UG); 1980-85 = CN-6120 (silver pin plates)
+    'shimano 600 ug gold black': [{ from: 1986, to: 1986, id: 7232 }, { from: 1980, to: 1985, id: 7451 }], // CN-6208 (UG); 1980-85 = CN-6110 (gold pin plates)
     'did track': [{ bike: 'Pista', from: 1985, to: 1985, id: 1355 }, { from: 1986, to: 1986, id: 1355 }], // D.I.D maker row; no model rows
     // 1986 Bianchi (DE catalogue pages): Specialissima X4 (C Record) and Rekord 920 (Victory).
     'regina silver': [{ from: 1985, to: 1987, id: 1386 }], // Rekord 920: Regina Extra "Silver BX", paired with the BX Silver freewheel

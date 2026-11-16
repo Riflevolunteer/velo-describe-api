@@ -534,3 +534,23 @@
 - See [cross-catalog notes](cross-catalog-notes.md), "Selective Front Brake /
   Rear Brake specs", for the full original value, new row IDs, validation and
   the CSV repair. Temporary SQL and backups removed after validation.
+
+## Rows-already-exist link pass — 2026-11-16 (approved, applied)
+
+This supersedes the "left unlinked" notes above for these values. 35 specs were
+linked through bike-year-ranged overrides and guarded per-spec UPDATEs.
+Regenerating all 93 CSVs changed only these specs (7438 -> 7473 linked).
+
+- **600 UG chains, 1980-85 (24).** The printed pin-plate colour picks the row:
+  - "Gold" / "Gold/Black" x18 -> 7451 QA-400 / CN-6110 (golden pin plates).
+  - "Silver" / "Silver/Black" x6 -> 7473 QA-410 / CN-6120 (satin nickel pin plates).
+  - The existing 1986-87 CN-6208 entries for `shimano 600 ug gold black` / `silver
+    black` keep their ranges; the 1980-85 ranges were added to the same keys.
+- **"DIA-COMPE DC-980", 1984 x3 -> 660** Dia-Compe 980, the plain cantilever, as
+  the 1983 / 1986-87 links. 691 GC980 is the buffed Gran Compe version.
+- **"DC-981", 1984-85 x3 -> 661**, the only 981 row.
+- **Plain NGC-200 levers, 1982-84 x5 -> 8861** NGC200 / 210 / 212. 8861
+  `year_from` moved 1984 -> 1982 from this fitment, `source_ref` 261 -> 403.
+  Revert: 1984 / 261.
+- **Still unlinked:** NGC 200H x4 (1981-84). 200H is not one of 8861's printed
+  codes.
