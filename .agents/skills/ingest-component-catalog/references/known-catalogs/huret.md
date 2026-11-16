@@ -1,5 +1,91 @@
 # Huret catalogs processed so far
 
+## Imported dates and model codes corrected — 2026-11-16, user approved
+
+User approved correcting the imported dates and adding the model codes from
+the audit below. Applied **26 guarded component updates**, overlapping
+**23 date corrections** and **11 retitles**. No components, sources or bike
+specs were inserted/deleted; component IDs, VeloBase GUIDs, brand/category/group
+ownership, source_ref **1**, weights and country text were preserved.
+
+**Date representation:** for the audit's seventeen approximate-date rows
+(1731, 2432, 2433, 2434, 2438, 2441, 2444, 2445, 4403, 4413, 4414, 4415,
+4420, 6104, 6106, 6113, 6114), both exact bounds are now **NULL**. Their
+descriptions retain the corresponding approximate date in the audit table
+below, in the form `Approximate dating: mid-1980s; exact years unknown.`
+This removes false precision without treating an approximate decade as an
+exact availability interval.
+
+For **2440, 2442, 4407, 4412, 4416, 4418**, the recorded start remains
+**1989, 1985, 1984, 1987, 1996, 1990**, respectively; the duplicated end
+year is now **NULL**. Descriptions state the known starting year and unknown
+end. These are source/availability bounds, not newly established manufacture
+endpoints. The 1988/1989 date-conflict flags on 4412 consequently disappear
+because its end is unknown; the earlier ARIS bike-identity decision remains
+a reviewed inference, not new confirmation of that exact generation's dates.
+The approved 4417 1989–1990 fitment range was not changed.
+
+| ID | Previous title | New title |
+| --- | --- | --- |
+| 2445 | Sachs Huret Rival Sport | Sachs Huret AV 62.2D, Rival Sport |
+| 4403 | Sachs Huret New Success touring | Sachs Huret AR 47.1T, New Success Touring |
+| 4409 | Sachs Huret Rival 7000 | Sachs Huret RD R7000, Rival 7000 |
+| 4412 | Sachs Huret ARIS New Success 1st Gen. | Sachs Huret 47.2D, ARIS New Success (1st generation) |
+| 4413 | Sachs Huret ARIS New Success 1st Gen. Touring | Sachs Huret AR 47.2T, ARIS New Success Touring (1st generation) |
+| 4414 | Sachs Huret ARIS New Success 2nd Gen. | Sachs Huret RN500 / 54.01D, ARIS New Success (2nd generation) |
+| 4415 | Sachs Huret ARIS New Success 3rd Gen. | Sachs Huret RNS00, ARIS New Success (3rd generation) |
+| 4416 | Sachs Huret ARIS New Success 4th Gen. | Sachs Huret RNS50, ARIS New Success (4th generation) |
+| 4420 | Sachs Huret Rival Sport | Sachs Huret Rival Sport, AR 41.3 D |
+| 6108 | Sachs Huret Rival Aris Classic 3000 | Sachs Huret MA82.4/3E, Rival ARIS Classic 3000 |
+| 6110 | Sachs Huret ARIS New Success (type 1) | Sachs Huret MA85.5/4E, ARIS New Success (type 1) |
+
+Descriptions now lead with the coded title where retitled; every retitle
+also regenerated `search_text` with `ebaySearchText(title, 'Sachs Huret')`.
+The spelling check confirmed that the source pages themselves distinguish
+[4414 RN500 / 54.01D](https://www.velobase.com/Pages/ViewComponent.aspx?ID=66BECFCD-9CF5-4302-B240-062F1DD6B822)
+from
+[4415 RNS00](https://velobase.com/Pages/ViewComponent.aspx?ID=A1D454BA-50D7-4F11-8DCC-EAD51F35ED6B).
+They are recorded literally as specimen-page codes; no manufacturer crosswalk
+or equivalence between those spellings was inferred. Other code evidence
+is the model field on each row's unchanged VeloBase `source_id`, using
+`https://velobase.com/ViewComponent.aspx?ID=<source_id>`; the prior audit
+records the extracted codes and the 4403/6110 page URLs.
+
+4420 keeps its existing name before the added code. Preflight found that
+putting the code first made six generic `Huret Rival` CSV values uniquely
+match early 4401 solely by removing a substring candidate. Keeping the name
+prefix preserves the unresolved generation ambiguity and requires no new
+matcher override. Final comparison across **94 local CSVs / 20,876 generated
+spec INSERT mappings** found **zero changed mappings**. Generation ran in
+memory against the same before/after component set; the existing
+`bike-update.sql` was preserved and no generated catalogue SQL was loaded.
+
+Validation: first load updated exactly **26 rows**, rerun updated **zero**.
+Readback exactly matched every planned field; all **10,470 other component
+rows** and **20,845 stored bike specs** were unchanged, including all **124
+Sachs Huret component links**. Component total remains **10,496**. Shared
+quality checks find **zero structural errors**; the only newly introduced
+review flags are **23 incomplete-date flags**, deliberately exposing the
+unknown bounds. Six Rival front date flags remain, as recorded below.
+Post-change duplicate merge, near and parenthetical reports each found zero
+candidates. Existing Huret Rival link and duplicate-classifier tests passed;
+descriptions are at most **140 characters**. Documentation passed
+`git diff --check`.
+
+Restoration, only if deliberately requested later: the audit table retains
+the seventeen old numeric date pairs; the six open-ended rows previously
+repeated their current start in `year_to`. Restore old titles from the table
+above. Old `search_text` equalled the old title on each retitled row except
+6110, where it was `Sachs Huret ARIS New Success`. To restore descriptions,
+remove the newly appended approximate-date / known-start sentence and its
+added separator punctuation, then replace the leading new title with the old
+title, preserving the original following
+country/weight text. Apply restoration only against the exact corrected
+values, with the original GUID/source/ownership guards. Temporary SQL,
+baseline/readback snapshots and comparison helpers were removed after
+validation. Modolo attribution, richer configuration descriptions, six-speed
+lever compatibility and dated generation evidence remain separate follow-ups.
+
 ## Sachs Huret brand quality audit — 2026-11-16, read-only
 
 Scope: **Sachs Huret, brand 171**, all categories. Huret 139 and Sachs 98
