@@ -173,6 +173,23 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 - Leave unlinked: 1973 Zeus Z 66 "Zeus Ciclo-Cross" (the "Ciclo-Cross" chainguard came on both the Criterium 2027 and the Gran Sport 2030 cranks, so the BB could be 188 Ref.33 or 190 Ref.34); 1981 Kalkhoff "Sakae 42/52" x3 / "Sakae 40/52" x2 (chainring text, no BB model).
 
+## 1978 Motobecane US catalogue (loaded 2026-11-17)
+
+- Hold SR SI5SD2 / AX5SD2 / SAX5RG2 unlinked: no exact AH/E or early5RG2
+  crosswalk. Takagi TourneySP is not assumed plain Tourney9562; SRP3 is not
+  assumed CT-P3. Lyotard36R/45A and OlympicRacing64 lack supported exact
+  configurations; bare KKT stays text.
+- Le Champion/Team Champion Maillard Atom700/Racing alloy clusters are
+  five-speed in printed gear tables: never link **7233**, a single freewheel.
+  Maillard/Maeda alternatives remain combined and NULL.
+- Sprintour's plain Shimano600 does not establish6100 versus6200 Arabesque.
+  UniglideGold chains lack a code; do not inherit1990 CN-UG30. CinelliRecordI
+  stem lacks a code/logo crosswalk; Campagnolo alloy posts do not distinguish
+  1044/4051. ItaliaCriterium skin leather does not distinguish buffalo/other
+  leather versions; LeaderII lacks a row. PelletArc-En-Ciel needs an explicit
+  maker crosswalk. Generic house parts stay text. See the Motobecane notes
+  for source and approved/proposed status; these NULLs do not authorize inserts.
+
 ## Circa 1976 Motobecane catalogue (loaded 2026-11-17)
 
 - Grand Record's `NORMANDY LUXE Competition` does not establish a gold/red

@@ -1,5 +1,83 @@
 # Motobecane catalogs processed so far
 
+## 1978 US catalogue — loaded 2026-11-17
+
+- [Original Flickr album](https://www.flickr.com/photos/stronglight/albums/72157714839758201/).
+  Model year is printed in technical introduction scan **03** (1978 line);
+  scan **02** explicitly states the **U.S. market**. CSV:
+  `bike_specs/1978_motobecane_us_spec.csv`; source **431**,
+  `1978 Motobecane (US) catalogue`, country US. Before loading, live preflight
+  found no matching source or existing 1978 Motobecane bikes.
+- Scans: 01 cover detail, 02 warranty/market, 03 technical/year introduction,
+  04 Nomade, 05 Mirage, 06 Super Mirage, 07 Grand Touring, 08 Grand Jubile,
+  09 Sprintour, 10 Grand Record, 11 Le Champion and Team Champion,
+  [12](https://www.flickr.com/photos/stronglight/50040395532/) and
+  [13](https://www.flickr.com/photos/stronglight/50040394597/) specifications.
+  All nine are complete adult drop-bar bikes; ladies'/mixte options remain
+  in shared model entries. Le Champion/Team Champion are complete bikes also
+  offered as framesets: no separate frameset rows. No out-of-scope models.
+- Transcribed tables and checked all model captions. Nomade crank is **SI
+  5SD2**, not 51; Team Champion has **Cinelli66 bars** and a literally named
+  **Record I stem with recessed bolt**, resolving the table's misleading
+  attachment of66 to the stem. Preserve unverified suffixes **SAX5RG2**,
+  **AX5SD2**, **CGIII**, **SRP3**, and printed LeaderII/SuperLegeria spellings.
+  Split saddle/seatpost, brakes/levers and derailleur/shifter cells.
+- Nomade's caption says plural **Derailleurs: Huret ECO**, supporting front
+  **8796** and rear **4399**. CompeV/VGT on Mirage/Super Mirage separates
+  front **2603** from rear **4705**; Grand Touring SL/VGT separates front
+  **2616** from rear **4705**, following manufacturer naming. The 1978 VGT
+  matches RD-1500, replacing automatic obsolete4900 **4695**. No front
+  specifications invented from the other bikes' rear-only names.
+- Reviewed crosswalks: Campagnolo4030 crank/BB bundle → 1049/A Super Record
+  **1509** (Catalogue17 crosswalk), 4061 brakes **582**, supplied pre-1983
+  4062 levers **232**, 1037A pedals **3709**, 1039 headset **2963**, 1020 rear
+  **4125**. Stronglight105B → 105Bis **1880**; early Cinelli66 **2809**;
+  Pivo bar **11169**, Philippe351 **2895**; Maillard700 low-flange **3394**;
+  Rigida13/20 27-inch **9894**; Weinmann124A **7776**, 256 **7928**, 999
+  **7929**, 605 **8642**, Carrera **1167**; ItaliaSuperleggera **5504**.
+  Plain Weinmann500 uses family **8636**, not washer variant1122.
+- Rejected automatic **7233 Maillard Atom** for both high-end clusters:
+  7233 is a single freewheel, but their portrait gear tables print five
+  sprockets. Both remain NULL pending a supported 700/Racing alloy crosswalk.
+  Sprintour's black five-speed Uniglide14–28 → FG-100 **7475**; its plain
+  Shimano600 rear stays NULL (6100 versus contemporary Arabesque). Other
+  deliberate NULLs are in the shared link-decision notes.
+- User approved the reviewed SQL with "apply". Inserted **nine bikes,
+  177 specs, 51 links**, using **21 existing labels**, and one new source.
+  No component inserts/deletes/merges, existing bike/spec rewrites or new
+  labels. Citation records album URL, printed year/market and scan numbers.
+- Applied one guarded component correction: **4399 Huret Eco**, earliest
+  attestation `year_from` **1980 → 1978**, retaining `year_to=1990`.
+  Old source **156** → **431**. Title,
+  description and search text unchanged. This supersedes c.1980 as earliest
+  evidence, not absence from the full 1976 manufacturer catalogue; it does
+  not establish an introduction date. Restoration: year_from1980/source156.
+- Validation: all **20,999** prior generated spec INSERTs across95 existing
+  CSVs unchanged; exactly177 new. All linked IDs reviewed by category/title/
+  dates: sole conflict 4399 covered by the guarded update. Unique models,
+  all cells within255 characters. Existing front/rear-brake, Huret Rival and
+  integrated-lever tests pass; syntax/whitespace checks pass.
+- Applied all **470 statements**: source **431**, bikes **1326–1334** and
+  specs **22997–23173** inserted, exactly one source citation enriched and
+  one component date/source updated. No existing bikes/specs, brands or labels
+  changed. Rerunning the same SQL affected **zero rows** in every table.
+- Direct readback matches **all 177 approved SQL specs** by bike, canonical
+  and raw label, value, component ID (including NULL) and source 431.
+  Generator/live comparison independently matches all 177, without missing,
+  ambiguous or changed entries. All new bikes/specs have source 431; the source
+  has country US and the full original album citation. Huret 4399 now has
+  year_from 1978, year_to 1990, source 431.
+- Quality report: **zero whole-DB structural errors**, no review findings in
+  the nine bikes, their specs or corrected component. No duplicate specs or
+  source gaps found. No component identities were inserted, so no new component
+  duplicate candidates were introduced; no merges were necessary. Existing
+  unrelated review candidates remain outside this task.
+- Live Motobecane catalogue totals: 1974 US 6 bikes/117 specs/44 links;
+  1975 US 8/154/65; c.1976 US 8/154/56; 1978 US 9/177/51;
+  1984 GB 12/245/62. Removed task downloads, compact transcriptions, SQL and
+  reports after validation; the maintained CSV and original source URLs above
+  retain the transcription/provenance. Shared `bike-update.sql` was restored.
+
 ## Circa 1976 US catalogue — loaded 2026-11-17
 
 - Source: [Stronglight Flickr album](https://www.flickr.com/photos/stronglight/albums/72157602026900257/),

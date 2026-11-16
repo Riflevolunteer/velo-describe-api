@@ -1,5 +1,23 @@
 # Huret catalogs processed so far
 
+## 1978 Motobecane Eco attestation — applied 2026-11-17, user approved
+
+- [1978 US Motobecane catalogue](https://www.flickr.com/photos/stronglight/albums/72157714839758201/),
+  Nomade portrait scan04 and specification scan12 explicitly name Huret ECO;
+  caption says plural derailleurs. Scan03 prints1978; scan02 statesUS market.
+  Existing front8796 already covers1977–1987. Rear4399 is the existing plain
+  Eco2490-01 identity, including the formerly separate Huret-badged4301.
+- Applied guarded `year_from` **1980 → 1978** on **4399**, `year_to=1990`
+  unchanged, old source **156** → **431**, the new Motobecane catalogue.
+  No title/description/search-text change or component insert. This earlier
+  attestation supersedes c.1980 as the earliest source in the historical notes
+  below; the absence from the full1976 catalogue still stands. Earliest
+  attestation is not a manufacture/launch date. Exactly one component row
+  updated; direct readback confirms 1978–1990/source 431, SQL rerun changes
+  zero rows. The quality report has no findings on 4399 or the newly loaded
+  catalogue. Full application/validation details are in the Motobecane
+  bike-catalogue notes.
+
 ## New Success brake 944 Modolo attribution — 2026-11-16, user approved
 
 Enriched **944**, Sachs Huret ARIS New Success, from its existing

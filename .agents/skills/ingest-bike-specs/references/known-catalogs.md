@@ -12,7 +12,7 @@ that touched more than one brand) live separately:
 - [known-catalogs/bianchi.md](known-catalogs/bianchi.md) — Bianchi (13 entries)
 - [known-catalogs/battaglin.md](known-catalogs/battaglin.md) — Battaglin (1 entry)
 - [known-catalogs/raleigh.md](known-catalogs/raleigh.md) — Raleigh (8 entries)
-- [known-catalogs/motobecane.md](known-catalogs/motobecane.md) — Motobecane (3 entries)
+- [known-catalogs/motobecane.md](known-catalogs/motobecane.md) — Motobecane (1974, 1975, c.1976, 1978 US, 1984 GB)
 - [known-catalogs/kalkhoff.md](known-catalogs/kalkhoff.md) — Kalkhoff (1 entry)
 - [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (1 entry)
 - [known-catalogs/colnago.md](known-catalogs/colnago.md) — Colnago (2 entries)

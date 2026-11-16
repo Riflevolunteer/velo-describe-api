@@ -534,6 +534,9 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'sun tour compe v': [{ from: 1978, to: 1978, id: 2603 }],
+    'sun tour sl': [{ from: 1978, to: 1978, id: 2616 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "motobecane simplex slja 522": [{ bike: "Team Champion", from: 1984, to: 1984, id: 7283 }],
     "huret high stepper": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 2443 }],
@@ -894,6 +897,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'campagnolo 1020 nuovo record': [{ from: 1978, to: 1978, id: 4125 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "huret duopar titanium": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 8173 }],
     "huret duopar eco (pdf p7)": [{ bike: "Super Mirage", from: 1984, to: 1984, id: null }],
@@ -1230,7 +1235,7 @@ const COMPONENT_OVERRIDES = {
     // (An uncovered year falls through to the matcher, so the null range is
     // needed to actually block it.)
     // 1986: RD-6207 600EX (as the 1986 Raleigh Competition FD-6207 / FC-6207; road bike, so the short cage; 2026-11-02).
-    'shimano 600': [{ to: 1978, id: 4462 }, { from: 1986, to: 1986, id: 4470 }, { from: 1979, id: null }], // Shimano DC-200, 600
+    'shimano 600': [{ bike: 'Sprintour', from: 1978, to: 1978, id: null }, { to: 1978, id: 4462 }, { from: 1986, to: 1986, id: 4470 }, { from: 1979, id: null }], // Shimano DC-200, 600
     'shimano 600 sis': 4471, // Shimano RD-6208, 600EX (SIS), 1986-87 (1987 Bianchi)
     // 1987 Bianchi Strada: friction Tourney TY10 (7607), whose start is
     // 1986 per Shimano's official Tourney history (previously dated 1990).
@@ -1275,7 +1280,7 @@ const COMPONENT_OVERRIDES = {
     // Shifter halves now live in the Shifters column (compound-cell split).
     // Plain "V.G.T." in the 1974 catalogue alongside a "V.G.T. LUX": the
     // pre-Luxe 4900 VGT (SunTour '73 Products), not the 1974 4902.
-    'sun tour vgt': [{ bike: '610', from: 1982, to: 1982, id: 4705 }, { bike: '610', from: 1981, to: 1981, id: 4705 }, { bike: '710', from: 1980, to: 1980, id: 4705 }, { bike: '610', from: 1980, to: 1980, id: 4705 }, { bike: 'Mirage', from: 1974, to: 1974, id: 4704 }, { id: 4695 }], // SunTour 4900, VGT (type 2C / 2D); 1974 Mirage -> 4902 V-GT Luxe (replaced the 4900 in 1974, 2026-11-15)
+    'sun tour vgt': [{ bike: 'Mirage', from: 1978, to: 1978, id: 4705 }, { bike: 'Super Mirage', from: 1978, to: 1978, id: 4705 }, { bike: 'Grand Touring', from: 1978, to: 1978, id: 4705 }, { bike: '610', from: 1982, to: 1982, id: 4705 }, { bike: '610', from: 1981, to: 1981, id: 4705 }, { bike: '710', from: 1980, to: 1980, id: 4705 }, { bike: '610', from: 1980, to: 1980, id: 4705 }, { bike: 'Mirage', from: 1974, to: 1974, id: 4704 }, { id: 4695 }], // SunTour 4900, VGT (type 2C / 2D); 1974 Mirage -> 4902 V-GT Luxe (replaced the 4900 in 1974, 2026-11-15)
     'sun tour vgt lux': 4704, // SunTour 4902, V-GT Luxe (version 1)
     // 1975 Motobecane.
     'huret jubilee wide ratio': 4303,
@@ -1350,6 +1355,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'maillard 700 low flange quick release': [{ from: 1978, to: 1978, id: 3394 }],
     'suntour xce 4050': [{ from: 1989, to: 1989, id: 11403 }], // 1989 Bianchi Volpe: HB-AT45, the XCE 4050 hubs on the Edition No. 89 ATB chart
     // Peugeot USA fitment; Mavic 1986-87 p.16 identifies the 506 RD rear
     // within the 500 RD road hub family already represented by 3397.
@@ -1667,6 +1674,10 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'weinmann vainqueur 999 center pull quick release': [{ from: 1978, to: 1978, id: 7929 }],
+    'weinmann carrera side pull': [{ from: 1978, to: 1978, id: 1167 }],
+    'campagnolo 4061 super record with gum hood': [{ from: 1978, to: 1978, id: 582 }],
     // c.1976 Motobecane Grand Record, specification p.15: explicitly Model 999.
     'weinmann 999 center pull quick release de luxe fitting': [{ bike: 'Grand Record', from: 1976, to: 1976, id: 7929 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
@@ -1991,7 +2002,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo veloce': 587, // Campagnolo BR-02VL, Veloce Monoplaner
     'shimano deore xt alloy cantilever': 980, // 1985 Raleigh: Shimano BR-MC70, Deore XT M700 (1983-86, first-gen XT)
     // 1974 Motobecane. 1122 is the only Weinmann 500 variant dated before 1980.
-    'weinmann 500 side pull': [{ from: 1987, to: 1987, id: 8636 }, { id: 1122 }], // Weinmann AG 500 (earlier, red center bolt washer, cap nut); 1987 Peugeot (FR) table: the 8636 base row, as the 1982-89 "Weinmann 500" (was do-not-link until 2026-11-02)
+    'weinmann 500 side pull': [{ bike: 'Sprintour', from: 1978, to: 1978, id: 8636 }, { from: 1987, to: 1987, id: 8636 }, { id: 1122 }], // Weinmann AG 500 (earlier, red center bolt washer, cap nut); 1987 Peugeot (FR) table: the 8636 base row, as the 1982-89 "Weinmann 500" (was do-not-link until 2026-11-02)
     // Weinmann UK leaflet c. 1970: model-level Vainqueur 999 (610 / 750) row, 1970-75 (1973-75 bikes).
     // The 999 was Weinmann's only centre-pull then, so bare "Weinmann centre pull" links too (user decision 4A).
     // "999 De LUXE or UNIVERSAL 61" left unlinked (two makes).
@@ -2137,6 +2148,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ from: 1989, to: 1989, id: 1055 }], // CT-XC10 cantilever
   },
   Headsets: {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'campagnolo 1039': [{ from: 1978, to: 1978, id: 2963 }],
     'suntour xc pro': [{ from: 1990, to: 1990, id: 11020 }], // 1990 Bianchi Project 7 / Grizzly: HS-XP00, the 1990 catalogue XC-Pro headset (3138 is VeloBase HS-XP01)
     // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
     // Unique X "Loose-Proof" and Unique FE are separate Tange models; 11346 is bare Unique only.
@@ -2271,6 +2284,9 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'campagnolo 4030 42 x 53': [{ from: 1978, to: 1978, id: 1509 }],
+    'stronglight 105b 42 x 53 interchangeable': [{ from: 1978, to: 1978, id: 1880 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "campagnolo super record 42x53": [{ bike: "Le Champion", from: 1984, to: 1984, id: 1509 }],
     "stronglight 99 34x47x52": [{ bike: "Grand Touring", from: 1984, to: 1984, id: null }],
@@ -2704,6 +2720,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'italia super legeria skin leather top': [{ from: 1978, to: 1978, id: 5504 }],
     // c.1976 Motobecane p.15: treated Special, not the basic 80 with built-in adjustment.
     'ideale 80 special (treated)': [{ bike: 'Grand Jubile', from: 1976, to: 1976, id: 5652 }],
     // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
@@ -2860,6 +2878,10 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'pivo professional soft stitched sleeves': [{ from: 1978, to: 1978, id: 11169 }],
+    'philippe professional soft stitched sleeves': [{ from: 1978, to: 1978, id: 2895 }],
+    'cinelli 66 cotton tape': [{ from: 1978, to: 1978, id: 2809 }],
     // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
     'sr ctb alloy with alloy sleeve': 11325,
     'sr mtb 301': 11326,
@@ -3213,6 +3235,9 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'sun tour stem power shifters': [{ from: 1978, to: 1978, id: 6263 }],
+    'sun tour down tube power shifters': [{ from: 1978, to: 1978, id: 8056 }],
     'shimano slz 401': [{ bike: 'Nimbus', from: 1987, to: 1987, id: 6194 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano sl z 401 stem shifter': [{ bike: '100', from: 1987, to: 1987, id: 6194 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour ld 5100plg': [{ bike: 'Street Winder', from: 1987, to: 1987, id: 6290 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
@@ -3469,6 +3494,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'campagnolo drilled levers with gum hoods': [{ from: 1978, to: 1978, id: 232 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "campagnolo record drilled levers": [{ bike: "Le Champion", from: 1984, to: 1984, id: 226 }],
     'suntour xce 4050': [{ from: 1989, to: 1989, id: 11398 }], // 1989 Bianchi Forte: BL-XE45, XCE 4050 (Edition No. 89)
@@ -3605,6 +3632,8 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'campagnolo 1037a with reflectors christophe toe clips and straps': [{ from: 1978, to: 1978, id: 3709 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "maillard platform cx 500": [{ bike: "Prolight", from: 1984, to: 1984, id: 10986 }],
     "platform maillard cx 500": [{ bike: "Grand Jubilee", from: 1984, to: 1984, id: 10986 }],
@@ -3888,6 +3917,8 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'campagnolo alloy seat post': [{ from: 1978, to: 1978, id: null }], // No code to distinguish Record 1044 from Super Record 4051.
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "ctp5 seat post": [{ bike: "Prolight", from: 1984, to: 1984, id: 5857 }],
     "sr ctp5e seat post w quick release": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 11316 }],
@@ -4275,6 +4306,10 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'maillard atom 700 14 x 24 black': [{ from: 1978, to: 1978, id: null }],
+    'maillard atom racing alloy 14 x 21': [{ from: 1978, to: 1978, id: null }],
+    'uniglide 14 x 28 black': [{ from: 1978, to: 1978, id: 7475 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "maillard atom 77 (6) 13x22": [{ bike: "Le Champion", from: 1984, to: 1984, id: null }],
     "helicomatic (6) 13x22": [{ bike: "Prolight", from: 1984, to: 1984, id: 8131 }],
@@ -4653,6 +4688,10 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
+    'rigida 13 20 alloy': [{ from: 1978, to: 1978, id: 9894 }],
+    'weinmann 124 a': [{ from: 1978, to: 1978, id: 7776 }],
+    'weinmann 256 alloy': [{ from: 1978, to: 1978, id: 7928 }],
     'bianchi speciale': [{ bike: 'X4', from: 1987, to: 1987, id: null }], // 1987 table: house rim; no maker/model identified
 
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
