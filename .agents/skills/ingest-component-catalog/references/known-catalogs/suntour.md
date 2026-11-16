@@ -401,6 +401,23 @@
   year_from = 1980 left on XCE (4791 / 2663 / 2002), AT 3632, Radius 2639
   / 2640 / 1040, HC-100 6388, 1220 — wrong, but this catalogue gives no
   earlier bound.
+- **Stub check, 2026-11-16** (pp.21-26 re-read for VeloBase stub rows): p.26
+  Blaze lists RD-BE02-SSB (code 23879921) with no specifications, so 4732 can
+  only get the code. SL (p.23) has front HB-SL01-F (3610) but a rear freehub
+  FH-SL01-7 (7989), **no HB-SL01-R**, so 3611 is unattested here. CH-AP02 is on
+  none of the 1992 road pages: Superbe Pro uses CH-AP01 (p.21), SL uses CH-AP11
+  (p.23), and Edge / Blaze / VX / RT use CH-AP20 (pp.25-26). The SR SunTour 1993
+  catalogue (source 278) spec chart p.14 lists "CH-AP02, CH-AP01" under XC-Pro (MD)
+  and XC-Pro at 321g (116 links), and p.4 names CH-AP02 among the PowerFlo
+  chains. Its text layer has no HB-SL01 or BE02.
+- **Applied 2026-11-16 (user approved):** 4732 RD-BE02-SSB description rewritten
+  from p.26 (code only), source_ref 1 -> 98, year_from 1990 -> 1992; 2623 FD-BE02-SSH
+  year_from 1990 -> 1992 (the 1990 catalogue's Blaze parts are BE00: 11111 / 11112).
+  1423 "SunTour CH-AP02, Sprint" (1988-1993, group 66 Sprint, VeloBase
+  `581F6286-4B3F-4854-8385-9EAFFD9FB7F9`, "Japan, 325 grams") -> "SunTour CH-AP02,
+  XC-Pro", 1993-1993, group 71, source_ref 278, search_text "SunTour CH-AP02 XC-Pro",
+  description from the 1993 chart. Validation: 3 rows, rerun 0, all 93 bike CSVs
+  regenerate identically, no quality-report findings. None of the three had bike links.
 - Bike links (1993 Bianchi): Volpe "SunTour FS-E Top Pull" -> 7951
   RD-FE00-GXB (rear) and 7968 FD-TP05-GXH Top-Pull Lite (front; the system
   chart on p. 28 puts TP05 under FS-E), "FS-E 52/42/32T" -> 8002
