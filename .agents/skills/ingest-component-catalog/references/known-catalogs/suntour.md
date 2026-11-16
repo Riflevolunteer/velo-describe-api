@@ -255,6 +255,20 @@
   bike_spec links or overrides) into 7817 FT-3050 / FS-1500 / MF-1000. 8261
   said MF-1000 was "new for 1978"; 7817 stays 1979-1985 because of its other
   two parts.
+- **Stub check, 2026-11-16:** re-read printed pp.3-6 for the VeloBase stub rows.
+  LD-4650 (p.3, braze-on, 51g), CW-5000 / CW-5050 (p.4, 657g) and Superbe FD-3000
+  (p.6, clamp band, 90g) are listed. **Applied 2026-11-16 (user approved):** stub
+  descriptions on 6301, 1991 and 2646 rewritten from these pages, source_ref 1 -> 348;
+  titles, years and search_text unchanged (old: "SunTour LD-4650, Superbe Pro, Japan, 51
+  grams"; "SunTour CW-5000, Superbe Pro, Japan, 676 grams (avg)"; "SunTour FD-3000,
+  Superbe II (endless band), Japan, 95.5 grams (avg)"). VeloBase year_from 1983 / 1984
+  on LD-4650 / CW-5000 kept, although neither is in No. 61's Superbe Pro list (linked
+  bikes are 1985-86). Validation: 3 rows, rerun 0, all 93 bike CSVs regenerate
+  identically, no quality-report findings. **Not found:** 1046 CB-4700 "Superbe Pro (long reach)" (Superbe Pro
+  calipers here are CB-3500 / CB-4000 sets only; earlier code diffs of 1978, 1979 JP,
+  No. 59-61 found no CB-4700 either) and 2613 FD-3200 "Le Tech" (not in No. 61-62, and
+  not on the No. 63 Japanese Le Pree / Superbe Tech spread, `1985suntour08.jpg`, which
+  shows FD-3400, FD-2700 and FD-2800 only).
 - Left: 2647 FD-2000 (clamp); out of scope HL-1000 head lock-up, MC-1000 seat
   clamp, QR-170 / QR-180, EF / EP dropouts, SD spoke discs, accessories, tools.
 
