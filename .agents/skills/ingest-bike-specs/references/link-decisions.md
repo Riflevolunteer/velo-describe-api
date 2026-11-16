@@ -115,4 +115,6 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Headsets
 
+- **Decided 2026-11-16, leave unlinked:** Tange "Unique X Loose-Proof" (1988 Raleigh Ozark II, 1989 Touriste) and "Unique FE" (1988 Raleigh Ritmo). 11346 Tange Unique is the bare model (Nashbar 1988). The 1989 Ozark / Chinook "Unique Loose-Proof" are linked to it, reading Loose-Proof as a feature. Generator `null` overrides.
+
 - Brand-only text: "Stronglight" 7 (1985 Peugeot), bare "Tange" ~20, Bianchi "GPM, alloy", 1993 Bianchi "AheadSet" 3 / "Mavic headset": leave.

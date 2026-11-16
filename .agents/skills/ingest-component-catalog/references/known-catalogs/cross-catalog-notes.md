@@ -1853,3 +1853,22 @@ Weinmann 1129 / 1130 570.
   and National tubulars by weight; Swallow Montello; Sedistraveler and DID Lanner chains;
   Scott DH, Mavic SSC and Tioga bars / T-Bone stem; Sugino carbon seatpost; Specialized
   sealed hubs; Vittoria Pro L tubular (vs 6899 Pro L Slick).
+- **Link pass, 2026-11-16 (user-approved):** 27 bike specs linked by guarded per-spec UPDATE, not the
+  whole-catalogue back-fill. Generator overrides were added under "Bike Nashbar Spring 1988 rows".
+  - Rows widened from dated bike-catalogue fitment (source_ref kept at 422): 11337 Vetta Maxi
+    Anatomic 1986-1988 (1986-87 Miyata 1000 / Ridge Runner "VETTA MAXI Crosta", where crosta is the
+    split-leather cover; 1987 Peugeot US Alpine Express); 11338 Vetta Anatomic 1987-1988 (1987 Miyata
+    Triton / Nimbus "Anatomic Vinyl", 1987 Peugeot Normandie); 11342 SR SP-452 1985-1988 (1985 Raleigh
+    Seneca "bear trap", 1986-87 Miyata Terra Runner); 11343 SRE-105 1987-1988 (1987 Miyata 215 ST /
+    112); 11344 MKS AR-3 1987-1989 (1987-89 Raleigh, six specs); 11345 MKS PB-100 1987-1988 (1987 Miyata
+    112 / 100); 11346 Tange Unique 1988-1989 (1989 Raleigh Ozark / Chinook "Unique Loose-Proof");
+    11359 IRC Triathlon 1987-1992 (1987 Bianchi Brava, 1992 Premio).
+  - Also linked: 11347 Crossroads II (1988 Raleigh Ozark II; replaces the earlier `null` override) and
+    11349 Ground Control (1988 Avanti).
+  - Kept unlinked with `null` overrides: Tange "Unique X Loose-Proof" (1988 Ozark II, 1989 Touriste)
+    and "Unique FE" (1988 Ritmo). These are separate models, which the substring matcher had been
+    auto-linking to bare Unique.
+  - Not linked: IRC "Triathlete" x3 (a different name).
+  - Validation: all 93 catalogues were regenerated with the old and new generator. Only 1985 Raleigh,
+    1986 / 1987 Miyata and 1987-89 Raleigh changed link counts, all explained. Every new link falls
+    within its row's dates.

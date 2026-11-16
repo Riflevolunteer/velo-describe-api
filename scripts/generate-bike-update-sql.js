@@ -2109,6 +2109,10 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ from: 1989, to: 1989, id: 1055 }], // CT-XC10 cantilever
   },
   Headsets: {
+    // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
+    // Unique X "Loose-Proof" and Unique FE are separate Tange models; 11346 is bare Unique only.
+    'tange unique x "loose proof"': null,
+    'tange unique fe': null,
     'hatta vesta sealed black': [{ bike: '712', from: 1987, to: 1987, id: 3020 }, { bike: 'Sky Runner', from: 1987, to: 1987, id: 3020 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'hatta vesta sealed': [{ bike: '512', from: 1987, to: 1987, id: 3020 }, { bike: '312', from: 1987, to: 1987, id: 3020 }, { bike: '615 GT', from: 1987, to: 1987, id: 3020 }, { bike: '215 ST', from: 1987, to: 1987, id: 3020 }, { bike: 'Terra Runner', from: 1987, to: 1987, id: 3020 }, { bike: 'Trail Runner', from: 1987, to: 1987, id: 3020 }, { bike: 'Valley Runner', from: 1987, to: 1987, id: 3020 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new 600ex': [{ bike: 'Carbon Tech 1000', from: 1987, to: 1987, id: 3090 }, { bike: 'Omnium', from: 1987, to: 1987, id: 3090 }, { bike: '912', from: 1987, to: 1987, id: 3090 }, { bike: '1000', from: 1987, to: 1987, id: 3090 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
@@ -2668,6 +2672,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
+    'vetta maxi anatomic': 11337, // 1987 Peugeot Alpine Express
+    'vetta maxi crosta': 11337, // 1986-87 Miyata 1000 / Ridge Runner (crosta = split-leather cover)
     'selle italia mundialita suede': [{ bike: '710', from: 1985, to: 1985, id: 5497 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'ariake jaguar ii 77 is padded': [{ bike: '1000', from: 1980, to: 1980, id: 5234 }], // 1980 Miyata: printed component; see known-catalogs/miyata.md.
     'ariake jaguar ii 77cdx padded': [{ bike: '912', from: 1980, to: 1980, id: 5234 }, { bike: '800', from: 1979, to: 1979, id: 5234 }], // 1979 Miyata: printed component; see catalogue review notes.
@@ -3555,6 +3562,11 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
+    'alloy bear trap sr sp 452': 11342, // 1985 Raleigh Seneca
+    'sr sp 452': 11342, // 1987 Miyata Terra Runner
+    'sr sp 452 cr mo spindle': 11342, // 1986 Miyata Terra Runner
+    'mks ar3 alloy touring platform': 11344, // 1987 Raleigh Zenith / Granada / Royal 18
     // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
     'mks pb 20': 11335,
     'sr sp 518fb cr mo spindle': 11328,
@@ -3828,6 +3840,8 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
+    'sr sre 105': 11343, // 1987 Miyata 215 ST / 112; SRE-100 stays a gap
     // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
     'sr cre 100 micro adjust': 11324,
     // Exact SR codes: Fuji 1989 pp.33/35, Miyata 1986 p.23, Bianchi 1989/90 tables.
@@ -4465,7 +4479,7 @@ const COMPONENT_OVERRIDES = {
     'vittoria super criterium': 6884, // Criterium Super
     'vittoria criterium': [{ from: 1992, to: 1992, id: 6884 }], // 1992 Bianchi JP: the same Mondiale tyre the 1991 table calls Super Criterium; 9061 Criterium ends 1981
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
-    'specialized crossroads ii 26 x 15': null, // Ozark II: Crossroads II; the only row is the 1983-84 original
+    'specialized crossroads ii 26 x 15': 11347, // 1988 Raleigh Ozark II: Crossroads II (Nashbar 1988, source 422); not the 1983-84 original 9910
     '700 x 25c': null, // bare size (1984 Peugeot FR / GB, 1989 Peugeot FR): the matcher hit the Wolber 700 x 25C Tandem row
     'michelin hi lite competition 700 x 20c': 6835, // 1989 Peugeot (NL) Galibier: Hi-Lite Comp
     'michelin hilite road': 9498, // 1988 Peugeot (FR): Michelin Hi-Lite Road
