@@ -1477,6 +1477,45 @@ original proposal `/tmp/xcd-review-proposal.sql`, images
 - Left: 6290 PLG LD-5100 (1988) vs Edition 89 LS-5700 / LS-5800 (TODO); 7861
   RD-5000-GT not listed in 1988 (kept at 1987).
 
+## Uncoded VeloBase stubs vs coded rows — 2026-11-16 review
+
+VeloBase pages (ViewComponent.aspx?ID=<source_id>) give a model field for most bare rows:
+
+- 3138 "XC Pro" headset (A3358349): model **HS-XP01**, Grease Guard, 20 x 3/16in balls,
+  37mm stack. Distinct from 1990 HS-XP00 (11020) and 1992 HS-XP02 (8044). Its two links
+  (1990 Bianchi Project 7 / Grizzly "SunTour XC-Pro") belong on 11020, the XC-Pro headset in
+  the 1990 catalogue. Years 1980-1990 left (unsourced; XP01 is probably 1991).
+- 6280 "Cyclone 5000/7000/9000" shifter (86C13EBA): model **SL-CL10-B**, braze-on, 80g =
+  7851. No links; the only reference was a `'suntour cyclone 7000 barcon'` override for the
+  non-road-skipped 1987 Volpe, which pointed a bar-con at a down-tube lever.
+- 6294 "Sprint" shifter (3D51F27D): model **LD-4850**, braze-on friction, mid-late 1980s, =
+  7849 LD-4800 / LD-4850. Its link is the 1985 Raleigh Competition "SunTour Sprint, down
+  tube", so 7849 year_from needs 1987 -> 1985 (fitment, non-index Sprint era).
+- 3614 "Superbe" hub (F93775A4): model **RH-1000**, low flange, body stamped SUPERBE, 383g
+  avg = 8262 RH-1000. Supersedes the No. 61 note above: 383g is a single hub, not a pair
+  (8262 prints 548g a pair).
+- 4794 "XC-Master (1991)" (916A66BE): model **RD-XM01-GXB**, outer plate "SunTour
+  XC-Master", citing the 1991 catalogue p.14 (not held). Distinct from 4793 (XM00 / XM02).
+- 4020 PL-XP01 titanium (76C51DEA): titanium axle, 256g actual; kept apart from 4019
+  (steel axle, 305g pair) and registered in `REVIEWED_NOT_DUPLICATES`.
+- No coded row to merge into: 1335 Superbe chainrings (6A1211EB: first-generation, Sugino-made,
+  stamped S-<teeth>, 144 BCD), 1336 Superbe Pro Black rings (DA35D6CE: black / gold edition,
+  144 BCD), 1337 Superbe Pista ring (50586F06: NJS, 1/8in), 4006 Radius pedal (7F329AE0: no
+  model field, platform, late 1980s - early 1990s; the 1990 catalogue lists no Radius pedal).
+- **Applied 2026-11-16 (user approved):** bike_spec 6910 / 6931 3138 -> 11020 and 3320 6294 ->
+  7849; 3138 retitled "SunTour HS-XP01, XC-Pro (Grease Guard)" (old "SunTour XC Pro"), 4794
+  "SunTour RD-XM01-GXB, XCM (XC-Master)" (old "SunTour XC-Master (1991)"), 4020 "SunTour
+  PL-XP01, XC-Pro (Grease Guard, titanium axle)" (old "SunTour PL-XP01 XC Pro Grease Guard
+  Titanium"), descriptions rewritten from VeloBase; 7849 year_from 1987 -> 1985 and LD-4850
+  Sprint note added. **Deleted:** 6294 "SunTour Sprint" (Shifters, 1980-1985, group 66,
+  3D51F27D-E5A7-4B35-A07F-97D933DD0B2A), 6280 "SunTour Cyclone 5000/7000/9000" (Shifters,
+  1988-1989, group 146, 86C13EBA-F63E-44D5-A572-FEBB22DBA828, 80g), 3614 "SunTour Superbe"
+  (Hubs, 1970-1980, group 67, F93775A4-BFB2-4DFC-9C74-A6E6CA285012, 383g avg). Generator:
+  Headsets 'suntour xc pro' 1990 -> 11020, Shifters 'suntour sprint down tube' 1985 -> 7849,
+  'suntour cyclone 7000 barcon' -> null. Validation: 10 rows, rerun 0; regenerating all 93
+  bike CSVs changed only specs 3320, 6910, 6931, matching the DB; no dangling bike_spec
+  references; no quality-report findings; SunTour duplicate report unchanged.
+
 ## Sprint (non-index) / Cyclone stub check — 2026-11-16
 
 - 4002 PL-5300 Cyclone: Edition No. 62 (source 348) printed p.8, alloy body, black steel

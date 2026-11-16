@@ -2115,6 +2115,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ from: 1989, to: 1989, id: 1055 }], // CT-XC10 cantilever
   },
   Headsets: {
+    'suntour xc pro': [{ from: 1990, to: 1990, id: 11020 }], // 1990 Bianchi Project 7 / Grizzly: HS-XP00, the 1990 catalogue XC-Pro headset (3138 is VeloBase HS-XP01)
     // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
     // Unique X "Loose-Proof" and Unique FE are separate Tange models; 11346 is bare Unique only.
     'tange unique x "loose proof"': null,
@@ -3365,7 +3366,8 @@ const COMPONENT_OVERRIDES = {
     'c record levers': 5970,
     'campagnolo c record syncro': 5973, // 1988 Mondiale: was an exact-title match until 5973 got its 0211-0213 numbers (2026-11-06)
     'shimano 105 sis': [{ to: 1989, id: 6130 }, { from: 1990, to: 1993, id: 6133 }], // SL-1050 105 (6sp) / SL-1055 105SC (1990 Bianchi Alfana)
-    'suntour cyclone 7000 barcon': 6280, // SunTour Cyclone 5000/7000/9000
+    'suntour cyclone 7000 barcon': null, // 1987 Volpe (non-road skip): no Cyclone 7000 bar-con row; 6280 was a down-tube SL-CL10-B, merged into 7851
+    'suntour sprint down tube': [{ from: 1985, to: 1985, id: 7849 }], // 1985 Raleigh Competition: LD-4850 (VeloBase 6294 merged into 7849)
     // 1993 Bianchi (down-tube and thumb shifters).
     'campagnolo chorus 8 speed downtube shift levers': 5976, // Campagnolo Chorus Friction - Graphite finish
     'shimano rx100 gs sis': 6189, // Shimano SL-A550, RX100
