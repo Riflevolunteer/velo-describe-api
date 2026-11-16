@@ -1,5 +1,54 @@
 # Huret catalogs processed so far
 
+## New Success hub configurations — 2026-11-16 review
+
+Read-only follow-up to the shifter compatibility review. Component **3509** is
+under Sachs (brand 98), rather than Sachs Huret (171), but supplies the two
+Peugeot New Success hub links discussed in this audit.
+
+- The original [VeloBase specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=135983bd-ce4d-4a99-b1ae-892f21640453)
+  is explicitly a **126 mm rear, threaded-freewheel, 36-hole, low-flange hub**,
+  with an aluminium shell and steel axle. Its dating is approximate: late
+  1980s to an unknown end. The retained `source_id` is
+  `135983BD-CE4D-4A99-B1AE-892F21640453`.
+- The current row instead describes the later guide's paired front/rear
+  configuration: `Sachs New Success aluminium alloy hubs, sport design; front
+  100 mm, 18-28-32-36 holes, sealed cartridge bearings; rear 130 mm, 8-speed,
+  24-28-32-36 holes, polished.` Current years are **1980–1996**, `source_ref`
+  **357**, title/search text `Sachs-Maillard New Success`, category 13, group NULL.
+  The 1980 lower bound is not what the original source says; the 1996 evidence
+  describes a different rear spacing and cannot establish this specimen's end.
+- The later specifications were checked directly in **La Bicicletta Guida '96**:
+  [scan 34, printed p.137](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_34_main_image.jpg)
+  lists the 100 mm front, 18/28/32/36 holes, sealed cartridge and sport design;
+  [scan 36, printed p.139](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_36_main_image.jpg)
+  lists the 130 mm rear, eight speeds, 24/28/32/36 holes and polished finish.
+  The rear entry does **not** identify a cassette interface; do not invent one.
+  This supersedes the 2026-11-14 cross-catalogue review's confirmation of both
+  guide entries as the same configuration as 3509.
+- Live links are exactly **15096**, 1987 Peugeot Savoie (bike 904, source 311),
+  `Huret New Success`, and **17495**, 1989 Peugeot Savoie (bike 1030, source 321),
+  `Sachs-Huret "New Success"`. Their freewheel specs **15098** (six-speed) and
+  **17497** (seven-speed 13x24) remain NULL. This supports investigating the
+  early configuration; speed count alone does not prove a hub link wrong, and
+  neither bike's generic hub text establishes its precise spacing or drilling.
+  Keep the existing links during this review. The generator's year-scoped
+  overrides also point both hub texts to 3509 (lines identifiable by those texts).
+- Reconciliation checked all New Success titles and Sachs/Galli hub rows:
+  **3341** is the separately branded Galli specimen, not a replacement for these
+  Peugeot links. No separate Sachs 130 mm/eight-speed New Success row exists.
+
+**Proposed correction, not applied:** preserve stable ID 3509 and its original
+specimen UUID; restore its 126 mm description and VeloBase provenance (source 1).
+Replace the imported exact dates with NULL bounds and preserve the approximate
+late-1980s dating in prose; the 1987/1989 bike fitments remain separate evidence,
+not established manufacturing endpoints. Reconcile the later guide entries as
+separate front/rear records under source 357, checking the recorded Guida '99
+match before assigning any later attestation. Then validate every generated
+mapping and both live bike links, guarding against name-only matches crossing
+configurations. No DB, source registration or generator changes in this review;
+no SQL prepared. Downloaded guide scans were disposable audit scratch files.
+
 ## Rival fronts 1086-00 / AV62.1D — 2026-11-16 evidence review
 
 ### PXR 80 targeted fitment hunt — 2026-11-16 follow-up
@@ -381,8 +430,8 @@ manufacturer production-date confirmation. Main findings and proposed work:
    not a supported 1987/1989 match. The old TODO saying the 1987 New Success
    hub is unlinked was stale: **15096** and **17495** already link Sachs
    hub **3509**. That row's description is now the 1996 130mm/eight-speed
-   configuration (source 357); an early-specimen/configuration check is still
-   needed before treating those later dimensions as the 1987/1989 fitment.
+   configuration (source 357). The [subsequent hub configuration review](#new-success-hub-configurations--2026-11-16-review)
+   confirms that its original specimen is 126 mm; correction remains pending.
 
 The broader link search includes Huret-branded specs, links into brand 171
 whose text omits the maker, and the newly loaded 1984 Motobecane catalogue.

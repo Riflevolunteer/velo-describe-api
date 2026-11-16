@@ -897,7 +897,12 @@ Weinmann 1129 / 1130 570.
     -> 9252; "Hi Lite Competition" -> 6835 (bike specs say Comp / Competition); "CORIMA Eclipse" -> 10160 (the '99
     guide prints "Ellipse", identical specs); "BROOKS Professional Team" (cuoio, price only) -> 5303; Tempo Crono
     255 g -> 2818; both FRM CU2 Corsa entries (Campagnolo / Shimano drilling only) -> 10279; "SACHS New Success"
-    hubs (Maillard not named) -> 3509. **Kept apart, probable 1996 -> 1999 renames** (same specs, different printed
+    hubs (Maillard not named) -> 3509. **That hub confirmation is superseded by the
+    [2026-11-16 configuration review](huret.md#new-success-hub-configurations--2026-11-16-review):**
+    3509's original VeloBase specimen is 126 mm, whereas scan 36 / p.139 prints
+    a 130 mm eight-speed rear. The DB still needs the proposed configuration split
+    and date/provenance repair; the two early Peugeot links remain unchanged.
+    **Kept apart, probable 1996 -> 1999 renames** (same specs, different printed
     names, no links): Category One 10539 / Category Pro 10222; Disc T 10618 / Disc 10360; FRM Alu-Ergal 10762 / 10764
     / Pro 10303, Carbon-Ergal 10763 / 10765 / Feather 10305. **Distinct:** FRM Ergal post 10635 (two bolts) /
     Arretrato 10161 (setback); 10597 CXP Titane (clincher, no "30" printed) / 10607 CXP 30 Titane (tubular);
