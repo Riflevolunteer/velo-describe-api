@@ -1,5 +1,65 @@
 # Huret catalogs processed so far
 
+## Rival fronts 1086-00 / AV62.1D — 2026-11-16 evidence review
+
+Reviewed the six 1988 front links **16411, 16583, 16603, 16623, 16661,
+16962** on 8488, plus candidates 8961, 2442, 2445, 10006 and 10007.
+No DB, source CSV, matching rule or link changes were made. A shared name
+and later date still do not establish a safe merge or six-link repoint.
+
+Visually re-read three original manufacturer pages:
+
+- [November 1981 new-82 leaflet, sheet 1](https://www.disraeligears.co.uk/site/00_main_images/huret_-_new_82_scan_1_main_image.jpg),
+  source 314: Rival **1086-00**, 150g, stated maximum chainwheel difference
+  **26T**. Its illustration has an additional small opening at the cage
+  tip ahead of the larger rectangular cutouts. Rival S 1056-00 is separately
+  listed at 118g with a detachable aluminium mechanism.
+- [September 1983 catalogue, p.8](https://www.disraeligears.co.uk/site/00_main_images/huret_derailleurs_-_speedometers_1983_scan_8_main_image.jpg),
+  source 327: same **1086-00**, steel, 150g, 28/28.6mm band, but capacity
+  now **16T or less**. This is a real contradiction between the printed
+  specifications, not an OCR correction or a proven explanation of two
+  generations. The drawings alone do not resolve it.
+- [April 1986 catalogue, scan 3](https://www.disraeligears.co.uk/site/00_main_images/sachs_kettenschaltung_fur_rennen_touristik_off-road_-_1986_scan_03_main_image.jpg),
+  source 225: identifies **AV62.1D** as the Rival front; the small photo
+  differs in cage detailing but gives neither its capacity nor an old-code
+  crosswalk. Do not infer that it is 1086-00 merely renumbered. The 110g
+  figure in 8961 is from its retained VeloBase specimen evidence, not this
+  maker sheet.
+
+**Separate the five doubles from the PXR 80.** Live readback gives 42/52
+for Comète, Aravis, Galibier, Mont Faron and Ventoux: a 10T difference,
+within either printed 1086-00 rating. Their unresolved question is exact
+model/generation, not an established capacity error. PXR 80 front **16962**
+is paired with crank spec **16961**, Stronglight 100 **30/40/50**: a **20T**
+difference, exceeding the later 16T rating while fitting the earlier 26T
+claim. Therefore it needs a triple/cage identification as well as a date
+review. This is a review flag, not proof authorizing an unlink, because the
+manufacturer evidence conflicts. Do not simply widen 8488 to 1988 or move
+it to the expressly double AV62.1D 8961.
+
+Re-read [VeloBase Rival triple](https://velobase.com/ViewComponent.aspx?ID=CAD9D9EB-C753-4C5D-8802-B3FA53029F3F)
+(2438): explicitly described as triple, but no numbered model or capacity
+is supplied. It is a candidate to identify, not a justified replacement.
+2445 carries the AV62.2D Rival Sport code; the source does not authorize
+treating it as an alias for AV62.1D. The approximately dated specimen records do not independently
+establish the PXR's 1988 fitment.
+
+Targeted additional source check: source **381**, Motobecane May 1985
+spares, [p.17](https://i.servimg.com/u/f70/20/23/69/69/20231609.jpg) and
+[p.18](https://i.servimg.com/u/f70/20/23/69/69/20231610.jpg), lists/draws
+dealer **98358**, a braze-on Rival, and **89963**, a separate Rider triple.
+It supplies no 1086-00 / AV62.1D band-front crosswalk, so it does not close
+this question. Exact-code web searches found no new manufacturer crosswalk.
+Do not repeat these checks without a new document or specimen lead.
+The PXR gearing above was checked against the stored specs and the earlier
+Peugeot review; no freshly recovered PXR technical-table image is claimed
+here (the current blog image filenames do not correspond to printed pages).
+
+Next evidence needed: a dated Sachs/Huret code crosswalk or a clear original
+PXR 80 front photo/parts specification showing its cage and clamp. Preserve
+the current links pending that review. Temporary page copies were removed;
+documentation passed `git diff --check`. No SQL was prepared or applied.
+
 ## New Success shifter six/seven-speed compatibility — 2026-11-16 review
 
 **Speed compatibility is resolved:** MA 85.5 E, the indexed right lever in

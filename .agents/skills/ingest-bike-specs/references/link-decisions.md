@@ -137,6 +137,13 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Front Derailleurs
 
+- Rival front review 2026-11-16: retain the existing links while seeking
+  code/construction evidence. PXR 80 **16962** needs a triple/cage check:
+  its 30/40/50 rings require 20T, while manufacturer sheets conflict on
+  1086-00 (26T in 1981, 16T in 1983). Neither an automatic unlink nor a
+  repoint to double 8961 is justified by that conflict alone. The other five
+  1988 flagged fronts have 42/52 doubles. See the
+  [Rival evidence review](../../ingest-component-catalog/references/known-catalogs/huret.md#rival-fronts-1086-00--av621d--2026-11-16-evidence-review).
 - Sachs Huret audit 2026-11-16: retain the four Rider-double NULL guards
   (15470, 17763, 17782, 17858); AV 62.1 T 8962 is the triple configuration.
   The six 1988 Rival front links on 8488 remain identity reviews, not evidence
