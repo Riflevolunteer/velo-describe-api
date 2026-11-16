@@ -63,6 +63,11 @@ Evidence and exact affected specs are in the
 ## Open: bikes to load
 
 - **Bikecology 5th edition, April 1976** complete-bike pages (pp. 87-111) as an `ingest-bike-specs` job.
+- **Motobecane 1984 City-Becane:** settle whether this city/off-road model
+  belongs in scope before preparing any additional ingestion. Retain
+  `/private/tmp/motobecane-1984-ingest-2026-11-16/` for the source scan,
+  transcription and CSV construction helper while that decision is pending.
+  [Catalogue evidence](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#1984-uk-distributor-edition--loaded-2026-11-16).
 
 ## Open: code and data hygiene
 
@@ -416,7 +421,7 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 ### Archives with unread material
 
 - **velo-pages.com via Wayback** (`scripts/velo-pages-wayback.sh`, method in the log): SunTour advert 03-1975, Detto Pietro 1970s, Shimano Dura-Ace EX 1978, Stronglight 1958, Simplex and Barelli adverts, OMAS 1978 (item 12973), Sedis 1971; bike clusters Falcon Merckx 1973 / 1974, Original Plastic Bike 1973, Bottecchia 1973.
-- **bikalog.org:** bike catalogues not loaded (Koga Miyata 1980-2001, Nishiki 1987, Motobecane 1984, Raleigh 1991, Colnago 1989 C35, Bianchi road 1985 / 1986); component PDFs ready to read: Universal 1996, Panaracer / Michelin / IRC 1999, Campagnolo 2001 and the 2000 Record 10-speed brochure.
+- **bikalog.org:** bike catalogues not loaded (Koga Miyata 1980-2001, Nishiki 1987, Raleigh 1991, Colnago 1989 C35, Bianchi road 1985 / 1986); component PDFs ready to read: Universal 1996, Panaracer / Michelin / IRC 1999, Campagnolo 2001 and the 2000 Record 10-speed brochure.
 - **Palo Alto remaining identifications:** Regina chain / freewheel names, Fiamme / Super Champion clinchers and Sugino Maxy II; see `cross-catalog-notes.md`.
 
 ## Open: held-source follow-ups

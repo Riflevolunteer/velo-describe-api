@@ -4,6 +4,33 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## 1984 Motobecane (loaded 2026-11-16)
+
+- Le Champion LC40/LC41 and Prolight PL40/PL41 list alternative rim/tyre
+  packages. Preserve both in each spec and leave NULL; the single Module E or
+  Michelin BIB TS20 substring is not a link for the whole combined value.
+- Team Champion `Cinelli Giro d’Italia 66`, `Stronglight D 9`, `Simplex 6600`
+  and `Mavic SSC black` remain NULL: contradictory bar name/code, no D9 row,
+  unspecified rear cage and a wrong-era plain SSC row respectively. Prolight
+  `Simplex 610` does not distinguish T/GT. Do not infer these variants from year.
+- Le Champion Atom 77 is six-speed; row 8127 is five-speed and generic 7233
+  is a single-speed freewheel. Both are unsuitable. Grand Touring and Super
+  Mirage print 34T Helicomatic clusters; 8131 documents a 32T maximum.
+- Grand Touring Stronglight 99 is a triple; do not use double row 1906.
+  Super Mirage's portrait explicitly says Duopar Eco, but 4276 / 4400 need
+  identity reconciliation before a link. Plain Huret Duopar on Grand Touring
+  and Interclub does not establish the titanium/Eco variant. Huret S PP,
+  Challenger S. and bare Rival fronts also need clearer variant evidence.
+- Grand Jubilee and Jubilee Sport print Michelin BIB TS23 **27x1**; 6831 is
+  700x23C. Retain the source wording and leave NULL pending evidence of the
+  27-inch fitment or a catalogue correction. Brand-only, generic/house parts,
+  unnamed shifters, unspecified Maillard hubs/freewheels, RS saddles and
+  Michelin-or-Hutchinson tyres stay unlinked. No model inferred from fitment.
+- Interclub's combined rear Weinmann 999 and Maillard drum cannot have one
+  component link. Its combined front/rear tandem crank and bar specs stay NULL.
+  See [catalogue notes](known-catalogs/motobecane.md#1984-uk-distributor-edition--loaded-2026-11-16)
+  for evidence, applied links, availability updates and retained source files.
+
 ## Mixed calls (2026-10-30)
 
 - Decided 2026-10-30, leave unlinked: 1982 Peugeot "Lightrace Luxe" headset (7; only 3032 Lightrace Grand Luxe, undated, and 3033 Super, 1984); 1981 Peugeot "Simplex SJA" front on PX 10 S, PSV 10, PFN 13 (3; neighbour years disagree: 102 / 222, triple 103 / 223); 1983 Peugeot "Maillard 700 Pro" hubs (3; large vs low flange, neighbour years do not say); 1982 Peugeot "Mafac Promotion" levers (3; four variants); 1990 Bianchi "Sedisport 270 black" (2; no 270 row).

@@ -536,6 +536,9 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    "motobecane simplex slja 522": [{ bike: "Team Champion", from: 1984, to: 1984, id: 7283 }],
+    "huret high stepper": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 2443 }],
     'suntour alpha 5000': [{ from: 1987, to: 1987, id: 11418 }], // 1987 Bianchi Sport SX "Derailleurs: SunTour Alpha-5000" front: FD-5000-SS (1988 English catalogue, source 428; 1987 from this fitment)
     'shimano ax 50': [{ bike: 'Victor', from: 1987, to: 1987, id: 2459 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano z 204gs': [{ bike: 'Trail Runner', from: 1987, to: 1987, id: 2543 }, { bike: 'Valley Runner', from: 1987, to: 1987, id: 2543 }, { bike: 'Path Winder', from: 1987, to: 1987, id: 2543 }, { bike: '615 GT', from: 1987, to: 1987, id: 2543 }, { bike: '215 ST', from: 1987, to: 1987, id: 2543 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
@@ -893,6 +896,12 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    "huret duopar titanium": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 8173 }],
+    "huret duopar eco (pdf p7)": [{ bike: "Super Mirage", from: 1984, to: 1984, id: null }],
+    "campagnolo record 1020": [{ bike: "Le Champion", from: 1984, to: 1984, id: 4126 }],
+    "motobecane simplex 6600": [{ bike: "Team Champion", from: 1984, to: 1984, id: null }],
+    "simplex 610": [{ bike: "Prolight", from: 1984, to: 1984, id: null }],
     'shimano l 522 ss': [{ bike: '100', from: 1987, to: 1987, id: 7553 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano l 532 sis': [{ bike: '112', from: 1987, to: 1987, id: 4521 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour rd 2000': [{ bike: 'Street Winder', from: 1987, to: 1987, id: null }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
@@ -1157,8 +1166,8 @@ const COMPONENT_OVERRIDES = {
     'suntour cyclone ii': 4742, // Competition: SunTour RD-3500, Cyclone Mark-II (1981-85)
     'sun tour cyclone ii gt wide ratio': 4743, // Royal: SunTour RD-3700, Cyclone Mark-II (GT)
     'suntour ar': 4725, // Sirocco: SunTour RD-4200, AR (aR II) (1982-86)
-    'sun tour ar': 4725, // Quasar / Zenith
-    'sun tour arx': 4727, // Clubman: SunTour RD-4300, ARX
+    'sun tour ar': [{ bike: 'Mirage', from: 1984, to: 1984, id: 4723 }, { id: 4725 }], // 1984 Motobecane's 32T requires AR-GT; Quasar / Zenith retain RD-4200.
+    'sun tour arx': [{ bike: 'Jubilee Sport', from: 1984, to: 1984, id: 4729 }, { id: 4727 }], // 1984 Motobecane's 28T exceeds RD-4300's 26T limit; Clubman retains RD-4300.
     'huret eco duopar': 4276, // Weekender: Huret Duopar Eco 2690-01 (VeloBase 4277 "Version 1" merged in, 2026-11-15); the matcher hit the plain Eco
     'huret eco s': 8485, // Pulsar / Team Cadet / Stratos / Medale: Sachs Huret Eco S 2830-00 (June 1984 catalogue); was the plain Eco 4301
     // Classic: the DB's titanium Duopar rows are the 1976 2600 series and the 1980 Sachs Huret DuoPar; the 1984 touring
@@ -1652,6 +1661,11 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    "weinmann super carrera 400 recessed nuts front and rear": [{ bike: "Team Champion", from: 1984, to: 1984, id: 1168 }],
+    "weinmann 506 w wheel guides and quick release": [{ bike: "Grand Jubilee", from: 1984, to: 1984, id: 7764 }],
+    "weinmann 506 quick release front and rear recessed front nut": [{ bike: "Jubilee Sport", from: 1984, to: 1984, id: 7764 }],
+    "weinmann vainqueur 999 centerpull w quick release recessed front nut": [{ bike: "Grand Touring", from: 1984, to: 1984, id: 7929 }],
     // 1984-85 Miyata "DC-" spellings (2026-11-16): 980 = 660 (plain 980 cantilever, as the 1983 / 1986-87 links; 691 is the buffed GC980), 981 = 661.
     'dia compe dc 980': [{ from: 1984, to: 1984, id: 660 }],
     'dia compe dc 981': [{ from: 1984, to: 1985, id: 661 }],
@@ -2249,6 +2263,9 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    "campagnolo super record 42x53": [{ bike: "Le Champion", from: 1984, to: 1984, id: 1509 }],
+    "stronglight 99 34x47x52": [{ bike: "Grand Touring", from: 1984, to: 1984, id: null }],
     // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
     'sugino tgt 50x40x28 teeth sealed bb chromoly axle': 11336,
     'sugino tgt 52x44x28 teeth': 11336,
@@ -2658,7 +2675,7 @@ const COMPONENT_OVERRIDES = {
     'nervar 3020 42 x 52t': [{ from: 1984, to: 1984, id: 10981 }], // 1984 Peugeot PS 10 L / PGN 10
     'nervar 3020 42 x 52t forged type': [{ from: 1986, to: 1986, id: 10981 }], // 1986 Peugeot PH 10 LE
     'nervar 3020 forged alloy 42x52t': [{ from: 1987, to: 1987, id: 10981 }], // 1987 Peugeot PH 10 LE
-    'nervar 3020 42x52': [{ from: 1987, to: 1989, id: 10981 }], // 1987 Peugeot Comete, 1989 Cosmic
+    'nervar 3020 42x52': [{ bike: 'Grand Jubilee', from: 1984, to: 1984, id: 10981 }, { bike: 'Jubilee Sport', from: 1984, to: 1984, id: 10981 }, { bike: 'Mirage Sport', from: 1984, to: 1984, id: 10981 }, { from: 1987, to: 1989, id: 10981 }], // 1984 Motobecane table; 1987 Peugeot Comete, 1989 Cosmic.
     'nervar 2020 s sealed bb': null, // 1987 Peugeot P8 Avoriaz: "2020 S" (sealed BB) may be a separate variant; the 1985 catalogue has no S
     // 1982-83 Raleigh (Record Ace / Competition / Royal / Clubman / Rapide):
     // "SR Custom" 52/42 five-arm is the CTC-5DLA2 (SR No. 18; the other Custom
@@ -3442,6 +3459,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    "campagnolo record drilled levers": [{ bike: "Le Champion", from: 1984, to: 1984, id: 226 }],
     'suntour xce 4050': [{ from: 1989, to: 1989, id: 11398 }], // 1989 Bianchi Forte: BL-XE45, XCE 4050 (Edition No. 89)
     // 1982-84 Miyata plain NGC-200 levers -> 8861 (widened to 1982 from this fitment, 2026-11-16). NGC 200H stays unlinked (not among 8861's codes).
     'dia compe ngc 200 levers': [{ from: 1983, to: 1984, id: 8861 }],
@@ -3576,6 +3595,11 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    "maillard platform cx 500": [{ bike: "Prolight", from: 1984, to: 1984, id: 10986 }],
+    "platform maillard cx 500": [{ bike: "Grand Jubilee", from: 1984, to: 1984, id: 10986 }],
+    "alloy platform maillard cx 500": [{ bike: "Jubilee Sport", from: 1984, to: 1984, id: 10986 }],
+    "sr mtp 110 alloy": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 10473 }],
     // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
     'alloy bear trap sr sp 452': 11342, // 1985 Raleigh Seneca
     'sr sp 452': 11342, // 1987 Miyata Terra Runner
@@ -3854,6 +3878,11 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    "ctp5 seat post": [{ bike: "Prolight", from: 1984, to: 1984, id: 5857 }],
+    "sr ctp5e seat post w quick release": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 11316 }],
+    "ctp 6 seat post": [{ bike: "Grand Touring", from: 1984, to: 1984, id: 5861 }],
+    "alloy ctp 6 seat post": [{ bike: "Super Mirage", from: 1984, to: 1984, id: 5861 }],
     // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
     'sr sre 105': 11343, // 1987 Miyata 215 ST / 112; SRE-100 stays a gap
     // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
@@ -4040,6 +4069,10 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    "sedisport chain": [{ from: 1984, to: 1984, id: 8765 }],
+    "sedisport silver chain": [{ from: 1984, to: 1984, id: 8765 }],
+    "sedisport black chain": [{ from: 1984, to: 1984, id: 8765 }],
     // 1980-85 Miyata 600 UG chains (2026-11-16 rows-already-exist pass): pin-plate colour picks the row.
     // Gold = 7451 CN-6110 (golden pin plates); silver = 7473 CN-6120 (satin nickel pin plates).
     'shimano 1 2\" x 3 32\" 600ug gold black': [{ from: 1980, to: 1985, id: 7451 }],
@@ -4223,6 +4256,12 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    "maillard atom 77 (6) 13x22": [{ bike: "Le Champion", from: 1984, to: 1984, id: null }],
+    "helicomatic (6) 13x22": [{ bike: "Prolight", from: 1984, to: 1984, id: 8131 }],
+    "helicomatic (6) 13x26": [{ bike: "Grand Jubilee", from: 1984, to: 1984, id: 8131 }],
+    "maillard helicomatic (6) 13x28": [{ bike: "Jubilee Sport", from: 1984, to: 1984, id: 8131 }],
+    "maillard helicomatic (6) 13x32": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 8131 }],
     'suntour pn 6000 brown 6 speed 14 28t': [{ bike: 'Street Winder', from: 1987, to: 1987, id: 7813 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour pn 6000 brown 6 speed 14 30t': [{ bike: 'Triton', from: 1987, to: 1987, id: 7813 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour pt 6000 brown 6 speed 14 30t': [{ bike: 'Terra Runner', from: 1987, to: 1987, id: 7813 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
@@ -4475,6 +4514,11 @@ const COMPONENT_OVERRIDES = {
     'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
+    // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    "lc 40: hutchinson corsa senior tubulars; lc 41: michelin bib ts 20": [{ bike: "Le Champion", from: 1984, to: 1984, id: null }],
+    "pl 40: hutchinson corsa senior tubulars; pl 41: michelin bib ts 20": [{ bike: "Prolight", from: 1984, to: 1984, id: null }],
+    "clement criterium 12 bis tubulars": [{ bike: "Team Champion", from: 1984, to: 1984, id: 8972 }],
+    "michelin bib ts 23 27x1": [{ bike: "Grand Jubilee", from: 1984, to: 1984, id: null }, { bike: "Jubilee Sport", from: 1984, to: 1984, id: null }],
     // 1982 Battaglin Vuelta: 9255 Trofeo 250 starts 1984; the sheet prints neither model number nor casing.
     // The final entry preserves the existing matcher result for other bikes.
     'vittoria trofeo': [{ bike: 'Vuelta', from: 1982, to: 1982, id: null }, { id: 9255 }],
@@ -4589,6 +4633,13 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    "lc 40: wolber super champion 27x1; lc 41: mavic module e 700 c": [{ bike: "Le Champion", from: 1984, to: 1984, id: null }],
+    "pl 40: wolber super champion 27x1; pl 41: mavic module e anodized 700 c": [{ bike: "Prolight", from: 1984, to: 1984, id: null }],
+    "mavic ssc black": [{ bike: "Team Champion", from: 1984, to: 1984, id: null }],
+    "weinmann a 124 concave": [{ bike: "Grand Touring", from: 1984, to: 1984, id: 7776 }],
+    "weinmann a 129 concave 700 c": [{ bike: "Interclub", from: 1984, to: 1984, id: 5208 }],
+    "alloy rigida 1320 27x1": [{ bike: "Mirage Sport", from: 1984, to: 1984, id: 9894 }],
     'araya mod 18 27x1 1 4 36 40h anodized': [{ bike: '215 ST', from: 1987, to: 1987, id: 4921 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     '(r) araya alloy disk wheel (f) adx 4 26" sha': [{ bike: 'Aero Miyata', from: 1987, to: 1987, id: null }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'araya 5 27" x 1 1 4"': [{ bike: '90', from: 1983, to: 1983, id: 9543 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.

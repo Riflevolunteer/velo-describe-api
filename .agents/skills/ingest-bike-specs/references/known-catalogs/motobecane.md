@@ -1,5 +1,106 @@
 # Motobecane catalogs processed so far
 
+## 1984 UK distributor edition — loaded 2026-11-16
+
+- CSV: `bike_specs/1984_motobecane_gb_spec.csv`. Loaded 12 bikes, 245
+  specs across 25 existing labels, with 62 component links. No new
+  component identities or spec labels. City-Becane is held pending the user's
+  scope decision; its transcription remains available for adding it later.
+- **Market correction to the search below:** despite VeloBase's US index
+  title and the CPSC specification body, PDF p.1 explicitly states import and
+  distribution in the UK by Cycles Stratton (UK) Ltd., Nutbourne, Chichester.
+  The imprint reads December 1983; p.4 and other portraits explicitly identify
+  the 1984 range. Use country **GB**, source label
+  `1984 Motobecane (GB) catalogue`, source **429**. No source or 1984 bikes
+  existed before this ingestion. New bike IDs **1306–1317**, spec IDs
+  **22598–22842**.
+- Evidence: [original PDF](https://velobase.com/CatalogScans/Motobecane/1984_Motobecane_catalog.pdf),
+  p.10 specification spread, checked against portraits/captions on pp.2–9.
+  Cover, production, warranty and rider prose on pp.1–3/6 were not turned into
+  bike specifications. Model spelling follows the scan: **Grand Jubilee** and
+  **Jubilee Sport**. Ladies' sizes/colours remain in the shared model entries;
+  these are not duplicate bikes. Prolight is a complete bicycle, not a frameset.
+- Split the source's combined blocks into individual canonical spec columns.
+  Front/rear derailleur assignments use the distinct named models, not a blind
+  copy of a rear name into the front slot. Mirage and Nomade do not name their
+  front models, so no front spec was invented. Interclub retains CLB front
+  cantilever (portrait p.8) and a combined rear spec for Weinmann 999 plus
+  Maillard drum; neither half receives a speculative component link.
+- Printed ambiguities preserved: `Cinelli Giro d’Italia 66` conflicts with
+  Cinelli's 64/66 naming; `Stronglight D 9` is not silently changed to A9;
+  Mt. Becane's fork is literally `Tandem type`; Super Mirage's table gives
+  26.6 lb while its portrait p.7 gives 26.8 lb (CSV follows the table).
+  Mirage's partly obscured hub table is supplemented only by the p.7 caption
+  explicitly identifying Maillard hubs and front quick release.
+- Supported mappings include Nervar 3020 → 10981, Maillard CX500 → 10986,
+  Stronglight 107 → 1883, Super Record crank → 1509, Simplex SLJA522 → 7283,
+  SJA102 → 2573, Hi-Stepper → 2443, titanium Duopar → 8173, SR MTP110 →
+  10473 and SR CTP5/5E/6 → 5857/11316/5861. Plain Sedisport chains map to
+  the named Sedisport row 8765 without adding an unprinted Delta treatment.
+- Reviewed mappings: Le Champion's Record 1020 uses the period Nuovo
+  Record v4 row 4126 (not obsolete steel Record 4131), with front 2300 and
+  drilled lever 226. Mirage's 32T selects AR-GT 4723; Jubilee Sport's 28T
+  exceeds standard ARX 4727's 26T limit and selects ARX-GT 4729. Helicomatic
+  clusters up to 32T use existing original-equipment 600 SH row 8131, following
+  the established Maillard/Peugeot crosswalk. Printed 34T clusters remain NULL
+  because that row's documented range stops at 32T.
+- Applied guarded `year_to` extensions to **1984**, attesting catalogue
+  availability rather than manufacture endpoints; `year_from` stays unchanged.
+  Old `year_to / source_ref`: Ofmega CX **1692: 1983 / 1**; Atom 440
+  **3662: 1980 / 49**; Super Champion Gentleman **5183: 1983 / 294**;
+  Weinmann A129 **5208: 1981 / 246**; Clement Criterium Cotone / Tipo 12 bis
+  **8972: 1983 / 352**; Rigida 1320 27x1 **9894: 1981 / 360**.
+  New `source_ref` is **429**. These existing identities
+  match the printed model/configuration; no new duplicate rows are proposed.
+  Keep the Gentleman rows 5183, 5217 (GTA), 5218 (GTA2), A129 finish row 5207,
+  and Rigida 700C row 9895 distinct: no evidence of duplicate identities here.
+- Validation before load: all **20,600** existing generated spec statements
+  are unchanged across all pre-existing CSVs; this file contributes exactly
+  245 additional statements. All 62 proposed links were reviewed by title,
+  category, dates and distinguishing specs. Six date conflicts are covered by
+  the guarded updates above. Existing front/rear-brake, Huret Rival and
+  integrated-lever test files pass; `git diff --check` passes.
+- User approved application with "apply". First run inserted one source,
+  12 bikes and 245 specs, and updated exactly the six components above;
+  no existing bikes/specs, brands or labels changed. Re-running all 635
+  statements affected **zero rows** in every table.
+- Live readback matches **all 245** approved values, labels and component IDs,
+  including NULLs; regenerating their links against live component records
+  also matches all 245. All specs have source 429 and all six corrected
+  components have year_to 1984/source 429. The shared quality report finds
+  **no errors or review findings in the loaded catalogue or six updated
+  components**, including no duplicate specs, provenance gaps, category
+  mismatches or linked date conflicts. Whole-DB structural errors: zero;
+  unrelated existing review candidates remain. Live Motobecane totals:
+  1974 US 6 bikes/117 specs/44 links; 1975 US 8/154/65;
+  1984 GB 12/245/62. These are DB counts, not the old generated-file headings.
+- Retained only for the pending City-Becane scope decision:
+  `/private/tmp/motobecane-1984-ingest-2026-11-16/catalogue.pdf`, `table.json`,
+  `transcription-notes.md` and `make-csv.py`. These preserve the source scan,
+  full 13-model transcription and CSV construction. Applied SQL, summary,
+  validation helper, disposable renders and regression SQL were removed
+  after readback/idempotency checks. The pre-task `bike-update.sql` was restored.
+
+### Initial search (superseded market identification)
+
+- Recommended next source: [1984 US catalogue, VeloBase PDF](https://velobase.com/CatalogScans/Motobecane/1984_Motobecane_catalog.pdf).
+  Downloaded and visually checked PDF pp. 9–10: ten scanned spreads in total;
+  the last spread contains a readable 13-model specification table, including
+  road, touring, tandem and mountain equipment. Named parts include Simplex
+  SLJ A 522, Campagnolo 980, Stronglight 107 SP / 99, Nervar 3020,
+  Weinmann 405 / 506 and Maillard Helicomatic. These are printed identities
+  to reconcile, not approved component mappings.
+- The [VeloBase catalogue index](https://www.velobase.com/Pages/Resources/CatalogScans.aspx)
+  labels it US and the table includes CPSC equipment; the actual UK distributor
+  imprint above supersedes that market identification. PDF p. 9 calls the
+  mountain bike the 1984 model. Review City-Becane against the scope rules
+  before extraction; the catalogue includes it alongside Mt. Becane.
+- Other indexed options: 1976 US, 1978 and 1979 US. The existing processed
+  catalogue notes cover 1974 and 1975 only. The 1984 edition is recommended
+  to extend coverage into another decade, rather than on an assumed link rate.
+- This initial search made no CSV, SQL or DB changes; subsequent preparation
+  and retained review files are recorded above.
+
 ## Pivo handlebar link — 2026-11-14, user approved
 
 - Linked 1975 Grand Jubile spec 3910, "PIVO Professional", to 11169 Pivo
