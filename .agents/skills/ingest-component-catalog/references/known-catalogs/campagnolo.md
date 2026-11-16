@@ -1417,9 +1417,9 @@ All new rows have the catalogue-attested range 2000–2000 (availability, not pr
 - Validation: 3 statements (1 / 1 / 2 rows), rerun 0. Generator over all CSVs: 20,584 mappings, only the two 1987 Bianchi rear
   specs changed (4098 -> 4096), matching live. `quality-report.js` 0 errors; 4096's remaining date flag is the 1984 De Rosa
   (documented late-1984 brochure for 1985). `npm test` passed.
-- Open: the same 2026-10-09 fix moved the 1987 Bianchi C-Record crank 1483 -> 1482 by date alone; check it (and other C-Record
-  parts) against this brochure. Disraeli Gears lists n. 18 bis printings 04/1985 and 12/1985, while source 9 records our copy's
-  back cover as "12/86"; re-read that page, since 1986 `year_to` values were set from it.
+- Follow-up reviewed 2026-11-17 below: source 9's `12/86` imprint is confirmed; the early crank
+  is attested in February 1987, but the two Bianchi crank generations remain unidentified. The date
+  enrichment was approved, applied and validated on 2026-11-17 (below); source-table discrepancies still need review.
 
 ## Front derailleur audit fixes — 2026-11-15 (user approved; audit items 1, 3, 5)
 
@@ -1438,3 +1438,68 @@ All new rows have the catalogue-attested range 2000–2000 (availability, not pr
 - Validation: 10 guarded statements, 8 component + 2 spec rows; rerun 0. All 93 CSVs regenerated before/after: only
   the two intended links changed (7325 -> 7326 linked). `quality-report` has no findings on the touched rows.
   Campagnolo front specs now 183 / 195 linked.
+
+## C-Record crank and 1987 Bianchi follow-up — 2026-11-17, read-only review
+
+- Scope: current crank rows 1482 / 1483 and their bike links; 1987 Bianchi X4 / Mondiale C-Record
+  specifications; February 1987 Record brochure (source 414), source 9's original imprint and the
+  November 1987 Record brochure (source 16). Initial review made no data changes; the subsequently
+  approved 1483 enrichment is applied and validated below. No CSV or generator changes.
+- **Imprint settled:** recovered https://velobase.com/CatalogScans/Campagnolo/Campy1986_Catalog18bis.zip,
+  inspected `Campy1986_Catalog18bis/n18_55.jpg`. The vertical right-margin printer line clearly ends
+  `12/86`. Source 9's December 1986 dating is correct for this exact copy. Disraeli Gears' other
+  printings do not contradict it; do not redraft source 9 as 1985 or alter other dates on that basis.
+  This closes the imprint check recorded in the 2026-11-15 rear-derailleur review above.
+- **Physical crank distinction:** retained VeloBase specimens are
+  https://velobase.com/Pages/ViewComponent.aspx?ID=F9D3301A-7F48-4698-A44B-49AC8228AB22 (1483;
+  engraved winged shield nearer the spider) and
+  https://velobase.com/Pages/ViewComponent.aspx?ID=532FA429-4CD0-48D8-90CD-1F60ECB92A3D (1482;
+  painted shield farther down the arm). Both use self-extracting bolts and 135 mm BCD: those features
+  and the Bianchi 53/42 ratio do not distinguish them. Do not merge the rows or use the bolt alone
+  as a generation marker. VeloBase dates are secondary metadata, not a demonstrated production boundary.
+- **Early crank attested in 1987:** source 414's scans 4 / 5 / 13 show the shield nearer the spider,
+  consistent with 1483's engraved-logo specimen. Scan 13 describes Avional construction, hidden fifth
+  ring attachment, incorporated extractor and 39-57T rings; scan 16 explicitly prints February 1987.
+  Source page: https://www.disraeligears.co.uk/site/campagnolo_-_record_february_1987_version.html ;
+  images `https://www.disraeligears.co.uk/site/00_main_images/campagnolo_-_record_scan_NN_main_image.jpg`.
+  Approved and applied 2026-11-17: 1483 `year_to` 1986 -> 1987, `source_ref` 9 -> 414, description enriched with its physical
+  identity and attestation. This is an availability bound, not proof of discontinuation in 1987.
+- Source 16 recovered from https://velobase.com/CatalogScans/Campagnolo/Campy1987_Record.zip:
+  `09.jpg` shows the lower shield position, consistent with 1482; `14.jpg` lists A040, 135 mm width,
+  incorporated extractor. A040 numbering alone is not proof of a distinct crank generation.
+  Retain 1482's existing range pending stronger introduction/production-boundary evidence.
+- **Bianchi crank fitment unresolved:** the original VeloBase `1987Bianchi.pdf` (held in Downloads;
+  source/index https://velobase.com/Pages/Resources/CatalogScans.aspx) PDF p.15 names C Record 53/42T
+  for X4 and Mondiale; X4 adds pantographed/anodized rings. PDF p.4 photographs both complete bikes,
+  but their small/custom-marked cranks do not establish engraved versus painted shield. Current specs
+  1107 / 1127 still link 1482. This supersedes the October note's assertion that the earlier row was
+  proved wrong-era: 1987 itself does not identify either row. Do not automatically reverse to 1483;
+  obtain a distinguishing original close-up or period Bianchi parts crosswalk, or review deliberately
+  unlinking these two specs. The existing generator's 1987 cutoff is not new identity evidence.
+- **Other scoped parts:** source 414 scans 4 / 6 / 7 show the earlier rear and retro-friction lever
+  mechanism (second balancing friction system), supporting availability of the families behind
+  4096 / 5970. Scans 4 / 5 / 12 / 14 show the familiar C-Record front, headset, pedals, hubs and
+  aero post families; this does not establish every Bianchi mounting, length or version. No further
+  exact bike-link change follows from the maker brochure alone. In particular it lists 130/180 mm
+  posts, so a generic group name cannot establish the 130 mm variant.
+- **New original-table discrepancies:** Bianchi PDF p.15 prints X4 seatpost `Campagnolo Super Record`
+  and Mondiale `Gipiemme Cronosprint anodized`, while CSV/live specs 1113 / 1133 both say
+  `Campagnolo C Record` and link 5737. Its chain cells are X4 `CX silver` and Mondiale `Corsa silver`
+  (Regina from the paired freewheel/chain context), while specs 1117 / 1137 both say `Regina C Record`
+  and link 1384. X4's rim is `Bianchi Speciale`, while 1119 says `Campagnolo` (NULL link).
+  Correct transcription and explicitly resolve any conflict with the p.4 group/photo description
+  before choosing component variants; see the Bianchi follow-up below. These are stronger immediate
+  data-quality leads than a speculative crank-generation swap.
+- **Application and validation, 2026-11-17 (user approved):** one guarded component UPDATE affected
+  one row; rerun affected zero. Readback: 1483 years 1985-1987, source 414, description exactly as
+  below (240 characters). 1482 remains 1987-1994/source 110. Their existing bike-link counts remain
+  10 / 20 respectively; no spec rows or generator mappings were written. Whole-DB quality report:
+  zero structural errors. Maintained generator/live-DB comparison before/after: 94 catalogues,
+  20,845 compared specs; unchanged baseline of 20,806 unchanged, 6 gains, 33 losses, no changed
+  targets, missing identities or ambiguities. These pre-existing differences are not approved fixes.
+- Previous description (for restoration): `Campagnolo C-Record, Italy, 652 grams,53/42; w/ self-extracting crank bolts Cat. n. 18 bis (Dec 1986): 306/101, 135 BCD, screw with incorporated extractor 2350001.`
+- New description: `Campagnolo 306/101, C-Record, Italy. Engraved shield near spider, 135 mm BCD; 652 g (53/42), self-extracting bolts 2350001. Cat. n. 18 bis (12/1986); Record brochure (02/1987), scans 4/5/13. Availability evidence, not a production end date.`
+- Applied SQL and disposable maker scans were removed after readback/idempotency validation.
+  `/private/tmp/crecord-review-2026-11-16/` retains only `bianchi4.jpg` / `bianchi15.jpg` for the
+  unresolved Bianchi source-table/photo review. The original user-held Bianchi PDF is preserved
+  in Downloads; all maker source URLs/page references above allow recovery without temporary files.

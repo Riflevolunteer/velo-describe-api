@@ -361,8 +361,8 @@
   1987-91) were already period-correct.
 - **Superseded 2026-11-15 for the rear derailleur:** the February 1987 Campagnolo Record brochure (source 414) shows the
   first-style 0102050, and A010 first appears in the November 1987 (1988-season) brochure, so the 1987 X4 / Mondiale rears
-  (1110 / 1130) moved back 4098 -> 4096 (4096 `year_to` -> 1987); see campagnolo.md. The crank move (1483 -> 1482) is still
-  to be checked the same way.
+  (1110 / 1130) moved back 4098 -> 4096 (4096 `year_to` -> 1987); see campagnolo.md. The crank move (1483 -> 1482) was
+  reviewed below on 2026-11-17; neither crank generation is established by the Bianchi source.
 
 - 2026-10-10 (Nitto No. 6, 1980 ingest): 1985 Bambina Stem "Nitto Technomic,
   60 mm" -> 8563 Nitto Technomic (generic match; 8563 year_to 1985). Overrides
@@ -759,3 +759,33 @@
   (Exage LT), Project 5 7713 ST-M520 (Exage ES), Super Grizzly / Nth FS 7667
   ST-M900-8 (XTR). SBX / Veloce "Campagnolo Ergopower" -> 6349 EC-02VL Veloce.
   Bike-scoped 1993 Shifters overrides. Supersedes "Rapidfire Plus (no rows)".
+
+## 1987 X4 / Mondiale C-Record review — 2026-11-17
+
+The [component evidence review](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#c-record-crank-and-1987-bianchi-follow-up--2026-11-17-read-only-review)
+confirms the early engraved-shield crank was still shown in February 1987 and the exact n.18 bis
+copy really is dated 12/86. The 2026-10-09 assertion that 1483 was wrong-era is superseded:
+1987 is not sufficient evidence to move 1107 / 1127 either way. The October assertion that both
+seatpost links were already correct is also superseded by the original-table discrepancies below. Both remain on 1482 pending a
+clear original marking/parts crosswalk or a deliberate unlink decision. No matcher changes.
+
+The original `1987Bianchi.pdf` at VeloBase CatalogScans (local Downloads copy), PDF p.4 bike
+photos and pp.14-15 specification spread were checked. P.15's first two rows are X4 / Mondiale.
+Their explicit table values differ from the loaded CSV/live records:
+
+| Spec | Bike / field | Stored text / link | Original table / next action |
+| --- | --- | --- | --- |
+| 1113 | X4 seatpost | Campagnolo C Record / 5737 | Campagnolo Super Record; reconcile with p.4 group/photo before selecting a post variant. |
+| 1133 | Mondiale seatpost | Campagnolo C Record / 5737 | Gipiemme Cronosprint anodized; preserve the named model and resolve its multiple post variants before linking. |
+| 1117 | X4 chain | Regina C Record / 1384 | CX silver in the Regina freewheel/chain cell; review correcting stored text and whether current CX-family link remains appropriate. |
+| 1137 | Mondiale chain | Regina C Record / 1384 | Corsa silver in the Regina freewheel/chain cell; identify independently of CX before linking. |
+| 1119 | X4 rims | Campagnolo / NULL | Bianchi Speciale; retain the house-part wording without inferring the manufacturer. |
+
+The complete-bike/group prose on p.4 is not a per-part code list; the photographs show customised
+parts and do not settle all variants. Record any source conflict explicitly instead of replacing
+these specific table entries with a blanket group name. The February 1987 manufacturer brochure
+confirms family availability, not exact Bianchi fitment. The Bianchi review changed no CSV, spec links or generator fields. The subsequently approved
+1483 date/source/description enrichment was applied and validated 2026-11-17; see component
+notes for old/new values and validation. SQL and disposable maker scans were removed afterwards.
+`/private/tmp/crecord-review-2026-11-16/` retains only the p.4/p.15 Bianchi renders for the unresolved
+source discrepancies. Original PDF and source URLs remain available as recorded above.
