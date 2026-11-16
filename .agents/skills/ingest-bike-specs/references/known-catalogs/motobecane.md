@@ -1,5 +1,81 @@
 # Motobecane catalogs processed so far
 
+## Circa 1976 US catalogue — loaded 2026-11-17
+
+- Source: [Stronglight Flickr album](https://www.flickr.com/photos/stronglight/albums/72157602026900257/),
+  specification scans [14](https://www.flickr.com/photos/stronglight/1386178520/)
+  and [15](https://www.flickr.com/photos/stronglight/1386192018/), checked
+  against portraits pp.3, 9, 11 and 13. The album is explicitly **c.1976**,
+  dated by its uploader from the optional Cyclone GT. No printed year has
+  been established: the CSV's 1976 is an estimated catalogue year, not a
+  verified imprint date. US market is inferred from repeated C.P.S.C. equipment
+  statements and inch sizes; the back cover provides no distributor address.
+- New CSV: `bike_specs/1976_motobecane_us_spec.csv`. Eight complete bikes:
+  Nomade, Nomade Sprint, Super Mirage, Grand Touring, Grand Jubile, Grand
+  Record, Le Champion and Team Champion. The actual portrait and table spell
+  **Grand Jubile**, despite the uploader's Jubilee caption. Excluded Nobly/10:
+  upright Tourist bars, fenders, carrier and kickstand; a town bike, including
+  its men's version. Nomade's touring-bar mixte version remains in the shared
+  road model under the established ladies'/mixte rule. No framesets included.
+  Cover, factory photos, intervening illustrations and the unrelated modern
+  Weinmann lever-cover photograph are not specification sources.
+- Transcribed anew, rather than copying the 1975 CSV. Notable differences:
+  Vitus Grand Touring, Nomade Sprint/Super Mirage, AX5 and alternative 49D
+  cranks, treated Idéale 80 Special, Olympic pedals, Sedicolor chain and
+  Michelin Elan tyres. Split rims/tyres, saddle/seatpost and brake/lever text.
+  Stem/down-tube shifter descriptions have their own column. VGT Luxe and
+  the Jubile/Cyclone GT alternative describe rear models only: no front
+  specifications invented. Nuovo Record and Challenger group entries provide
+  the named front/rear specifications under the existing convention.
+- User approved the reviewed SQL with "apply". Inserted one source
+  **430** (`1976 Motobecane (US) catalogue`), eight bikes **1318–1325**,
+  154 specs using 21 existing labels, 56 links; no component inserts, merges,
+  deletions or changes to existing bike/spec values. Source citation includes
+  the CSV, Flickr album and approximate dating.
+- Link review corrected automatic Idéale 80 **5648** to treated Speciale
+  Competition **5652**; added Pivo Professional bar **11169** and explicit
+  Grand Record Weinmann 999 **7929**. Existing period mappings include
+  Nuovo Record rear **4125**, front **2297**, VGT Luxe **4704**, Campagnolo
+  Record crank **1496**, hubs **3259/3260**, and Michelin Elan **6834**.
+- Applied component update: Sedis Sedicolor **8764**, `year_from` **1979 →
+  1976**, retaining `year_to=1979`; old source **177** → **430** through the
+  guarded date update. This is an approximate
+  earliest catalogue attestation, not a claimed introduction date; description,
+  title and search text remain unchanged. No other component date changes.
+- Deliberate NULLs: unqualified Normandy Luxe Competition does not identify
+  gold-label **3388** versus red-label variants; Regina Oro 13–21 does not
+  establish six-speed **2194**. AX5 lacks the suffix needed to choose a
+  configuration; Tourney/Tourney Luxe lacks a sufficient code; alternative
+  crank, pedal, freewheel and rear-derailleur equipment remains combined and
+  unlinked. T.A. Professional, Pivo Randonneur and generic/house parts retain
+  established uncertainty. See shared link decisions.
+- Validation before review: compared all 20,845 prior generated spec INSERT
+  statements across the 94 pre-existing CSVs; **none changed**, exactly 154
+  added. All 56 proposed links reviewed by category, title and date; the sole
+  date conflict is Sedicolor, covered by the proposed guarded update. All
+  labels already exist. Live preflight finds no 1976 Motobecane bikes or
+  source for this album before loading.
+- Applied all 427 statements: exactly one source, eight bikes and 154 specs
+  **22843–22996** inserted, one citation enriched and one component date/source
+  updated. No new brands/labels or changes to existing bikes/specs. Rerunning
+  the same SQL affected **zero rows** in every table.
+- Direct readback matches all **154 approved SQL specs**, including bike,
+  canonical/raw label, value, component ID (including NULLs) and source 430.
+  The maintained generator/live comparison independently matches all 154
+  with no missing, ambiguous or changed entries. Sedicolor is now 1976–1979,
+  source 430. All new bikes/specs have source 430 and country US through it.
+  Quality report: zero whole-DB structural errors; no review findings in the
+  eight bikes, their specs or corrected component. Existing unrelated review
+  candidates remain. No components were inserted, so no new component duplicate
+  identities were created; no duplicate bike/spec rows were found.
+- Existing front/rear-brake, Huret Rival and integrated-lever tests pass;
+  generator syntax and `git diff --check` pass. Catalogue counts after load:
+  1974 US 6 bikes/117 specs/44 links; 1975 US 8/154/65;
+  circa 1976 US 8/154/56; 1984 GB 12/245/62.
+- Removed the task's temporary downloads, construction helper, SQL and reports
+  after validation; the maintained CSV and source URLs above preserve the
+  transcription and provenance. Shared `bike-update.sql` was restored.
+
 ## 1984 UK distributor edition — loaded 2026-11-16
 
 - CSV: `bike_specs/1984_motobecane_gb_spec.csv`. Loaded 12 bikes, 245

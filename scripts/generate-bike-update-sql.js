@@ -1600,7 +1600,8 @@ const COMPONENT_OVERRIDES = {
     // 1974 Motobecane. Bare "Normandy Luxe Competition" is ambiguous between
     // the gold- and red-label rows; the road bikes took the high-flange gold.
     // 1982 Peugeot PFN 10 S: the red label (3389, 1970-80) is the later hub.
-    'normandy luxe competition': [{ to: 1979, id: 3388 }, { from: 1980, id: 3389 }],
+    // c.1976 Motobecane names the family without identifying the gold/red-label variant.
+    'normandy luxe competition': [{ bike: 'Grand Record', from: 1976, to: 1976, id: null }, { to: 1979, id: 3388 }, { from: 1980, id: 3389 }],
     'normandy sport with quick release': 3390,
     'campagnolo record': [{ bike: 'Team Miyata-SL', from: 1984, to: 1984, id: null }, { to: 1987, id: 3260 }, { from: 1990, id: 3265 }], // 1035 high flange (to 1987, covers 1986 Cinelli) / Record 8sp
     // Same text on a track bike (1974 Raleigh Professional Track, no Q/R ->
@@ -1666,6 +1667,8 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // c.1976 Motobecane Grand Record, specification p.15: explicitly Model 999.
+    'weinmann 999 center pull quick release de luxe fitting': [{ bike: 'Grand Record', from: 1976, to: 1976, id: 7929 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "weinmann super carrera 400 recessed nuts front and rear": [{ bike: "Team Champion", from: 1984, to: 1984, id: 1168 }],
     "weinmann 506 w wheel guides and quick release": [{ bike: "Grand Jubilee", from: 1984, to: 1984, id: 7764 }],
@@ -2701,6 +2704,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    // c.1976 Motobecane p.15: treated Special, not the basic 80 with built-in adjustment.
+    'ideale 80 special (treated)': [{ bike: 'Grand Jubile', from: 1976, to: 1976, id: 5652 }],
     // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
     'vetta maxi anatomic': 11337, // 1987 Peugeot Alpine Express
     'vetta maxi crosta': 11337, // 1986-87 Miyata 1000 / Ridge Runner (crosta = split-leather cover)
@@ -2881,7 +2886,7 @@ const COMPONENT_OVERRIDES = {
     // 1975 Motobecane Grand Jubile: named PIVO Professional; Brügelmann
     // 1973 p. 22 Pivo Profi, component 11169 (1973-78). Other Pivo cells
     // specify a randonneur bend or combine front/rear bars; leave unresolved.
-    'pivo professional': [{ bike: 'Grand Jubile', from: 1975, to: 1975, id: 11169 }],
+    'pivo professional': [{ bike: 'Grand Jubile', from: 1975, to: 1976, id: 11169 }],
     'sakae ctd alloy': [{ bike: '912', from: 1980, to: 1980, id: 7888 }, { bike: '710', from: 1980, to: 1980, id: 7888 }, { bike: '310', from: 1980, to: 1980, id: 7888 }, { bike: '912', from: 1979, to: 1979, id: 7888 }, { bike: '800', from: 1979, to: 1979, id: 7888 }, { bike: '710', from: 1979, to: 1979, id: 7888 }, { bike: '600', from: 1979, to: 1979, id: 7888 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sakae rnd alloy randonneur': [{ bike: '1000', from: 1980, to: 1980, id: 2910 }, { bike: '1000', from: 1979, to: 1979, id: 2910 }, { bike: '400', from: 1979, to: 1979, id: 2910 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sakae world custom ws 410 alloy': [{ bike: '1200', from: 1979, to: 1979, id: 7887 }], // 1979 Miyata: printed component; see catalogue review notes.
@@ -4466,7 +4471,8 @@ const COMPONENT_OVERRIDES = {
     'suntour alpha 5000 14 28t': 7866, // SunTour FW-AL00-R6, Alpha freewheel (AccuShift leaflet c. 1987)
     'shimano 600 14 24t': [{ from: 1986, to: 1989, id: 2218 }], // 1987 Bianchi: Shimano MF-6208-6, 600EX SIS
     'simplex 14 24t': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
-    'regina oro 13 21': 2194, // Regina Oro (6 speed) — 1975 Motobecane
+    // c.1976 Motobecane does not state six speeds: do not inherit the older catalogue's pick.
+    'regina oro 13 21': [{ bike: 'Team Champion', from: 1976, to: 1976, id: null }, { id: 2194 }], // Regina Oro (6 speed) — 1975 Motobecane
     // 1987 Bianchi.
     'regina cx 13 23t': 2168, // Regina CX (6 speed)
     'shimano dura ace 13 23t': 2222, // Shimano MF-7400, Dura-Ace (7sp) — paired with SIS-7

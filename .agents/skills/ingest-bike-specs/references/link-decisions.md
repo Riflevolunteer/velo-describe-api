@@ -173,6 +173,22 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 - Leave unlinked: 1973 Zeus Z 66 "Zeus Ciclo-Cross" (the "Ciclo-Cross" chainguard came on both the Criterium 2027 and the Gran Sport 2030 cranks, so the BB could be 188 Ref.33 or 190 Ref.34); 1981 Kalkhoff "Sakae 42/52" x3 / "Sakae 40/52" x2 (chainring text, no BB model).
 
+## Circa 1976 Motobecane catalogue (loaded 2026-11-17)
+
+- Grand Record's `NORMANDY LUXE Competition` does not establish a gold/red
+  label: hold NULL rather than extending gold-label 3388's dates from the
+  family name. Team Champion's `REGINA ORO 13-21` does not establish six-speed
+  2194; hold NULL pending speed/configuration evidence. These guards are scoped
+  to 1976 and their respective bikes; older catalogue decisions remain intact.
+- Preserve Grand Jubile's Huret Jubile / SunTour Cyclone GT rear and
+  Stronglight 49D / SR AX5 crank alternatives without selecting one. Preserve
+  Atom/Maeda freewheel and Union/Lyotard pedal alternatives likewise. Bare
+  SR AX5 does not select AX-5LA / MA / RG / SD variants; Tourney / Tourney
+  Luxe, Olympic pedals and Philippe Professional stems lack sufficient
+  model/configuration evidence for a link. Generic/house parts, plain Sedis,
+  unnumbered Super Champion/Weinmann rims and SR alloy posts remain text.
+  These are intentional unresolved identifications, not component inserts.
+
 ## Headsets
 
 - **Decided 2026-11-16, leave unlinked:** Tange "Unique X Loose-Proof" (1988 Raleigh Ozark II, 1989 Touriste) and "Unique FE" (1988 Raleigh Ritmo). 11346 Tange Unique is the bare model (Nashbar 1988). The 1989 Ozark / Chinook "Unique Loose-Proof" are linked to it, reading Loose-Proof as a feature. Generator `null` overrides.
