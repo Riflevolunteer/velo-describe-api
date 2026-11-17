@@ -6,6 +6,7 @@ const loadEnv = require('./load-env');
 const { BICYCLE_PARTS, categoryLadder } = require('./ebay-categories');
 const { EBAY_REGIONS, REGION_MARKETPLACES, mergeRegionListings } = require('./ebay-regions');
 const { buildBrandIndex, classifyValue, ACTIONABLE_CLASSES, CLASS_ORDER } = require('./link-classify');
+const { buildLinkPriority } = require('./link-priority');
 
 const decrypt = require('./decrypt');
 
@@ -510,7 +511,8 @@ const NON_LINKABLE_SPEC_LABELS = new Set([
 // materials, sizes, brand-only and house values are just counted per class in
 // `classes`. Values that differ only in case, accents or punctuation are one
 // entry, with the spellings in `variants`. ?unlinked=N sets how many values per
-// category (default 10, max 50, 0 omits the list). Read-only aggregate SQL.
+// category (default 10, max 50, 0 omits the list). Each listed value includes
+// a review hint and up to three existing candidates; no links are changed.
 app.get('/linkCoverage', function (req, res, next) {
   const unlinkedLimit = req.query.unlinked === undefined ? 10 : Number(req.query.unlinked)
   if (!Number.isInteger(unlinkedLimit) || unlinkedLimit < 0 || unlinkedLimit > 50) {
@@ -559,10 +561,12 @@ app.get('/linkCoverage', function (req, res, next) {
     `SELECT DISTINCT bs.label_id, cd.category_id FROM bike_spec bs
        join component_detail cd on cd.component_id=bs.component_id`)
   const brandCategoriesPromise = unlinkedLimit === 0 ? skip : query('SELECT DISTINCT brand_id, category_id FROM component_detail')
+  const componentsPromise = unlinkedLimit === 0 ? skip : query(
+    'SELECT component_id, brand_id, category_id, title, year_from, year_to FROM component_detail')
 
   Promise.all([cellsPromise, bikesPromise, unlinkedPromise, brandsPromise, titleWordsPromise, bikeBrandsPromise,
-    labelCategoriesPromise, brandCategoriesPromise]).then(([cellRows, bikeRows, unlinkedRows, brandRows, titleWordRows,
-    bikeBrandRows, labelCategoryRows, brandCategoryRows]) => {
+    labelCategoriesPromise, brandCategoriesPromise, componentsPromise]).then(([cellRows, bikeRows, unlinkedRows, brandRows, titleWordRows,
+    bikeBrandRows, labelCategoryRows, brandCategoryRows, componentRows]) => {
     // SUM() comes back from the mysql driver as a DECIMAL string.
     const cells = cellRows.map(r => ({
       brand_id: r.brand_id, brand: r.brand, label_id: r.label_id, label: r.label,
@@ -616,6 +620,7 @@ app.get('/linkCoverage', function (req, res, next) {
     // Same weakest-first order as `categories`, so the first entry is the
     // category most worth working on next.
     const brandIndex = buildBrandIndex(brandRows, bikeBrandRows.map(r => r.title), titleWordRows)
+    const linkPriority = buildLinkPriority(componentRows, brandIndex)
     const labelCategories = new Map()
     for (const r of labelCategoryRows) {
       if (!labelCategories.has(r.label_id)) labelCategories.set(r.label_id, [])
@@ -656,6 +661,7 @@ app.get('/linkCoverage', function (req, res, next) {
           })
           .sort((a, b) => b.bikes - a.bikes || a.value_text.localeCompare(b.value_text))
           .slice(0, unlinkedLimit)
+          .map(v => ({ ...v, ...linkPriority(v.value_text, v.brands, labelCategories.get(c.label_id) || []) }))
         const ordered = Object.fromEntries(CLASS_ORDER.filter(k => classes[k]).map(k => [k, classes[k]]))
         return { label_id: c.label_id, label: c.label, classes: ordered, values: listed }
       })

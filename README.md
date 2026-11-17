@@ -117,6 +117,20 @@ failure. There is no repair mode.
 | `scripts/compare-bike-links.js` | Current generator matches versus stored bike-spec links |
 | `/linkCoverage` | Linked/unlinked bike specs and identification priorities |
 
+`/linkCoverage?unlinked=N` includes `next`, `candidate_count` and up to three
+`candidates` (component ID, title and date bounds) on each listed value.
+`next: "override"` means existing rows share the detected maker, component
+category and model text; `next: "source_hunt"` means this heuristic found none.
+Maker and model comparisons ignore spaces, including SunTour / Sun Tour and
+LePree / Le Pree. Candidates are ordered by ID, and the count includes matches
+beyond the three examples. They need identity, generation and fitment review
+before any mapping; date bounds are displayed rather than used to exclude rows.
+Unbranded values and labels without known component categories cannot produce
+candidates, so a source-hunt hint is not proof that a component row is missing.
+`unlinked=0` skips both classification and candidate queries. This endpoint is
+read-only and does not apply overrides or change links. Validated with classifier
+and route fixtures; live deployment remains separate from local code changes.
+
 Validated against fixture cases, the existing test suite and the live database
 on **2026-11-15 at 10:57 UTC**: 10,258 components, 1,199 bikes and 20,600 specs;
 **0 structural errors**, 2,033 review findings: 1,553 components with incomplete

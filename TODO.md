@@ -28,11 +28,6 @@ after validation; retain what is still needed for unfinished work or review.
   the generator, so decided values (e.g. "Selle Royal Aero Black") still list as
   actionable in `/linkCoverage`. Leaning towards a nullable `bike_spec.link_status`
   the generator writes.
-- [ ] **Next step per actionable value in `/linkCoverage`:** count
-  `component_detail` rows for the detected brand in that category sharing the
-  model word; >= 1 -> `next: "override"` with up to 3 candidates, 0 ->
-  `next: "source_hunt"`. Compare brand and model text with spaces stripped:
-  "LePree" / "Le Pree" (SunTour) made the LePree shifters look like a source gap.
 - [ ] **Multiple evidence references per component:** design a component/source
   evidence table with page, supported facts and uncertainty. Current `source_ref`
   records the last source that changed a component; it cannot retain every
