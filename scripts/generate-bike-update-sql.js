@@ -901,8 +901,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo 1020 nuovo record': [{ from: 1978, to: 1978, id: 4125 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "huret duopar titanium": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 8173 }],
-    "huret duopar eco (pdf p7)": [{ bike: "Super Mirage", from: 1984, to: 1984, id: null }],
-    "huret duopar eco (pdf p9)": [{ bike: "City-Becane", from: 1984, to: 1984, id: null }], // Catalogue names Eco; 4276 / 4400 identity remains unresolved.
+    // Portraits pp.7/9 name Eco; keep citation evidence in catalogue notes.
+    "huret duopar eco": [{ bike: "Super Mirage", from: 1984, to: 1984, id: null }, { bike: "City-Becane", from: 1984, to: 1984, id: null }], // 4276 / 4400 identity remains unresolved.
     "campagnolo record 1020": [{ bike: "Le Champion", from: 1984, to: 1984, id: 4126 }],
     "motobecane simplex 6600": [{ bike: "Team Champion", from: 1984, to: 1984, id: null }],
     "simplex 610": [{ bike: "Prolight", from: 1984, to: 1984, id: null }],
@@ -1692,6 +1692,8 @@ const COMPONENT_OVERRIDES = {
     // c.1976 Motobecane Grand Record, specification p.15: explicitly Model 999.
     'weinmann 999 center pull quick release de luxe fitting': [{ bike: 'Grand Record', from: 1976, to: 1976, id: 7929 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
+    // Interclub p.8 names the maker/construction, not the 1951 Cyclotouriste model.
+    'clb cantilever': [{ bike: 'Interclub', from: 1984, to: 1984, id: null }],
     "weinmann super carrera 400 recessed nuts front and rear": [{ bike: "Team Champion", from: 1984, to: 1984, id: 1168 }],
     "weinmann 506 w wheel guides and quick release": [{ bike: "Grand Jubilee", from: 1984, to: 1984, id: 7764 }],
     "weinmann 506 quick release front and rear recessed front nut": [{ bike: "Jubilee Sport", from: 1984, to: 1984, id: 7764 }],

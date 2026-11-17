@@ -7,11 +7,16 @@ test('1984 Motobecane Eco portraits do not resolve the overlapping Duopar rows',
     [{ component_id: 4276, title: 'Huret Duopar Eco', category: 'Rear Derailleurs' }],
     [{ component_id: 4400, title: 'Sachs Huret Duopar Eco 2690-00 H / GC', category: 'Rear Derailleurs' }],
   ]) {
-    for (const [value, bike] of [['Huret Duopar Eco (PDF p.7)', 'Super Mirage'], ['Huret Duopar Eco (PDF p.9)', 'City-Becane']]) {
-      assert.equal(matchComponent(value, records, null, 'Rear Derailleur', 1984, bike), null)
+    for (const bike of ['Super Mirage', 'City-Becane']) {
+      assert.equal(matchComponent('Huret Duopar Eco', records, null, 'Rear Derailleur', 1984, bike), null)
     }
   }
   assert.equal(matchComponent('Huret Club', [], null, 'Front Derailleur', 1984, 'City-Becane').component_id, 2379)
+})
+
+test('Interclub generic CLB cantilever remains unresolved after removing the page citation', () => {
+  const records = [{ component_id: 604, title: 'CLB Cantilever Sport 1951, Cyclotouriste', category: 'Brakes' }]
+  assert.equal(matchComponent('CLB cantilever', records, null, 'Front Brake', 1984, 'Interclub'), null)
 })
 
 test('generic 1980-83 Super Record rear specs cannot select the atypical PAT. 80 specimen', () => {

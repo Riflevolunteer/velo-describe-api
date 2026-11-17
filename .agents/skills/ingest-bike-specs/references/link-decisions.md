@@ -34,6 +34,13 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## 1984 Motobecane (loaded 2026-11-16)
 
+- Citation cleanup applied and validated 2026-11-17: clean `Huret Duopar Eco` values for
+  Super Mirage **22811** and City-Becane **23182** retain scoped NULL guards.
+  Interclub front **22829**, clean `CLB cantilever`, also stays NULL: maker and
+  construction do not identify **604**, the 1951 Cyclotouriste model. Mirage
+  hubs **22738** remain NULL; its p.7 caption names Maillard and front quick
+  release without identifying a numbered hub. Page evidence belongs in the
+  catalogue notes/ignored page column, independently of these link decisions.
 - City-Becane (bike 1335, loaded 2026-11-17): the p.9 portrait
   identifies Duopar Eco, while p.10 says Duopar/Club. Keep rear spec 23182 NULL until
   4276 / 4400 are reconciled; the explicit NULL guard prevents a unique 4276

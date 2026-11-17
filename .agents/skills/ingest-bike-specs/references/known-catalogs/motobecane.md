@@ -1,5 +1,23 @@
 # Motobecane catalogs processed so far
 
+## Embedded PDF citations — applied and validated 2026-11-17
+
+- User reported PDF page references appearing in displayed Motobecane specs. Pre-cleanup read-only query found exactly four 1984/source-429 spec values with embedded PDF citations, all unlinked. The cause was citation text entered in component cells of `bike_specs/1984_motobecane_gb_spec.csv`, not API formatting or component descriptions.
+
+| Spec / bike | Previous value | Applied value | Evidence retained |
+|---|---|---|---|
+| 23182 / 1335 City-Becane, Rear Derailleur | Huret Duopar Eco (PDF p.9) | Huret Duopar Eco | Original portrait PDF p.9; specification spread p.10 |
+| 22811 / 1316 Super Mirage, Rear Derailleur | Huret Duopar Eco (PDF p.7) | Huret Duopar Eco | Original portrait PDF p.7; specification spread p.10 |
+| 22829 / 1317 Interclub, Front Brake | CLB cantilever (PDF p.8) | CLB cantilever | Original portrait PDF p.8; specification spread p.10 |
+| 22738 / 1312 Mirage, Hubs | Maillard alloy hubs; quick release front (PDF p.7 caption) | Maillard alloy hubs; quick release front | Original caption PDF p.7; specification spread p.10 |
+
+- Local CSV repair removes only the four citation suffixes from spec cells and retains/adds their page evidence in the ignored `Catalog Page` column. Original scan URL and detailed evidence remain in the 1984 entry below. The old citation-bearing strings remain documented here for restoration; the underlying parts descriptions and source distinction are unchanged.
+- Generator's two citation-bearing Duopar Eco NULL keys become one clean-value key with separate 1984 Super Mirage/City-Becane scopes; both remain unresolved against 4276/4400. Interclub's clean generic CLB value needs an explicit 1984/bike-specific NULL guard: without it, the matcher selects **604 CLB Cantilever Sport 1951, Cyclotouriste**, an unsupported identification. Mirage's clean hub text remains NULL. Updated regression tests cover the cleaned Duopar values and the CLB trap.
+- **User-approved and applied:** four guarded `bike_spec.value_text` UPDATEs only, preserving spec/bike IDs, labels, source429 and NULL links. The first execution affected exactly four rows; the idempotency rerun affected **zero rows**. Direct guarded UPDATEs preserved IDs instead of regenerating/inserting changed values. No component, bike, label, source or other spec changed.
+- Validation: shared-generator before/after across **96 loaded catalogues / 21,196 specs** changes exactly those four displayed values, no bike fields or component mappings. Overlaying the four proposed live text edits restores exactly the existing generator/live findings (same 15 pre-existing lost mappings); no new finding. Updated `test/quality-link-decisions.test.js` passes. This supersedes the earlier citation-bearing CSV examples below while preserving their source evidence and unlinked calls.
+- Actual post-load readback matches all four approved values with the same IDs, NULL components and source429. Comparing every live spec against the pre-load snapshot found exactly the four intended value changes and no other field changes. There are **zero duplicate specs** in source429 and **zero remaining PDF/page citations in live Motobecane spec values**. Actual shared-generator/live comparison across **96 catalogues / 21,196 specs** reproduces the baseline exactly (same 15 pre-existing lost mappings, no gains/new changes or identity mismatches), validating CSV/live parity.
+- Source evidence, old/new values, IDs and validation remain here. Temporary SQL, CSV backup, baseline, scripts and reports were removed after successful readback, zero-change rerun and mapping/duplicate validation. The maintained cleaned CSV remains in `bike_specs/`; it is gitignored as usual. No note depends on the deleted scratch directory.
+
 ## 1978 US catalogue — loaded 2026-11-17
 
 - [Original Flickr album](https://www.flickr.com/photos/stronglight/albums/72157714839758201/).
