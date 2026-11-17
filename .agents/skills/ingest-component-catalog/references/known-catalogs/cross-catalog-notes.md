@@ -1899,3 +1899,88 @@ Configuration distinctions retained from the classifier review: FRM A-Set
 10225 / 10227 in 37 / 67 TPI; Stelvio 10228 / 10229 in 700C / 650C size;
 Mavic Helium clincher 10376 / 10377 in 26-inch / 622x15 wheel dimensions.
 These distinctions do not establish new merge candidates.
+
+
+### Favorit single-lever review — 2026-11-17
+
+User approved, applied and validated 2026-11-17. Manual candidate **6028 / 6029**
+is retained as two photographed lever constructions, registered in
+`REVIEWED_NOT_DUPLICATES`. The old exact-title duplicate flag is not evidence
+that the narrow covered lever and broad bare blade are interchangeable variants.
+No merge/delete, component insertion or bike-link change was needed.
+
+Source_ref 1, original VeloBase owner `jenda` specimen pages (both added/updated
+2015-04-01), with all three full-size photographs for each inspected:
+
+- **6028**, GUID `1FD9CA89-428E-4C36-8F8C-A36D7480F6F0`:
+  https://velobase.com/Pages/ViewComponent.aspx?ID=1FD9CA89-428E-4C36-8F8C-A36D7480F6F0 .
+  Main `11DC0A2C-A844-42C7-9CDB-AAEA3AB5BB8D.jpeg`, detail
+  `423ED72C-E5F8-4B22-917E-7B06C12AE8C4.jpeg`, underside
+  `9239BA19-EEB2-4F5D-BEAB-6F013DECA092.jpeg`: narrow metal lever with textured
+  black Favorit grip, black knurled tension knob, clamp-on downtube mounting.
+  Source weight 48 g actual for the single-lever assembly.
+- **6029**, GUID `6F2A22CE-720D-474E-B40F-EC4A128766DA`:
+  https://velobase.com/Pages/ViewComponent.aspx?ID=6F2A22CE-720D-474E-B40F-EC4A128766DA .
+  Main `84BF1865-1126-4EE4-B2CB-50B2455ECA70.jpeg`, details
+  `EA381512-D75B-4B89-9B69-410889534BD4.jpeg` and
+  `F96E4447-0E41-42FC-9BEB-7A231DF07D45.jpeg`: broad, dished, rounded bare
+  alloy blade, black knurled tension knob, clamp-on downtube mounting.
+  Source weight 45 g actual for the single-lever assembly.
+
+Photo URLs use `https://velobase.com/CompImages/Shifter/<filename>`.
+The distinction is the lever profile/construction, not the 3 g weight difference
+or the source's approximate dates. Do not assume that the broad dished blade is
+simply the narrow lever with a missing plastic grip. No manufacturer part number
+is established. Source dating is only `1980's - Early 1990's` for 6028 and
+`1990's - Early 2000's` for 6029; retain existing DB ranges 1980–1990 / 1990–2000
+without treating them as proven production boundaries or generation evidence.
+
+Adjacent 6026, GUID `49CA6E7A-05DA-4D30-8C9E-46C6D1B95FB9`, was checked:
+its original main photo `32B94EEB-64E1-4BCC-B516-7E4EEFD1DC3C.jpeg` shows a
+complete two-lever clamp assembly, versus the single-lever assemblies under review.
+6027 is separately identified as headset-mounted; neither is a merge target in
+this review. The live Favorit shifter inventory also contains 6025 and coded 6030
+2/10; no change to these adjacent records follows from the two specimen photos.
+
+Applied updates, preserving brand_id 75, category_id 19, group_id NULL,
+source_ref 1, source_id above, original dates and image NULL:
+
+| ID | Old title / description | Applied title / description |
+| --- | --- | --- |
+| 6028 | `Favorit (Single lever)` / `Favorit (Single lever), Czechoslovakia, 48 grams (Actual)` | `Favorit (single lever, black grip)` / `Clamp-on downtube friction shifter with a narrow metal lever and textured black Favorit grip, plus a black knurled tension knob. 48 g (actual, single-lever assembly).` |
+| 6029 | `Favorit (Single lever)` / `Favorit (Single lever), Czechoslovakia, 45 grams (Actual)` | `Favorit (single lever, bare alloy blade)` / `Clamp-on downtube friction shifter with a broad, dished, rounded alloy lever blade and black knurled tension knob. 45 g (actual, single-lever assembly).` |
+
+Descriptions are 166 / 152 characters. Both search_text values are recomputed
+with `scripts/search-text.js` and remain `Favorit`, their original value.
+
+Pre-apply validation: neither row has a live bike_spec reference or explicit
+generator override. Read-only Favorit duplicate report flags the old same-title
+pair as a duplicate; the registry now classifies it as a reviewed variant. One
+live component/bike snapshot, all 96 local CSVs / 21,176 generated specs compared
+before/after simulated retitles: exact identity of every generated spec and match,
+zero changed mappings. `npm test` passes all 12 test files and `git diff --check`
+passes. No speculative new bike link is justified by these generic specimen names.
+
+Applied two guarded component UPDATEs in one transaction: two affected rows;
+rerun zero. Full-row readback of all six Favorit shifter records matches the
+original snapshot plus exactly these two title/description updates; dates, source
+identities, category/group/brand assignments, search_text and adjacent records
+are unchanged. Snapshot comparison confirms every live bike, spec and catalogue
+source record is unchanged. Neither reviewed component has a bike link. All 96
+CSVs / 21,176 generated specs were checked again after application: exact equality
+to the original plan, zero changed mappings.
+
+The live duplicate report no longer flags 6028 / 6029 as merge candidates. With
+the revised, different titles, its existing touching-date-range heuristic labels
+the pair `generation` rather than `variant`. This report label is not new evidence
+of a production transition: the source dates remain approximate and the keep-apart
+decision rests on the photographed lever constructions. The explicit reviewed-pair
+registry also protects them if a later report would otherwise propose a merge.
+
+Old/new values above retain restoration information: reverting would require
+restoring the two original titles/descriptions under guards for these applied
+values, and revisiting the reviewed-pair decision. The completed TODO action was
+removed; the remaining manual candidates stay open. Task SQL, snapshots, helper
+scripts and source HTML/photo copies were removed after successful validation;
+source URLs and exact photo filenames above preserve the evidence. `git diff
+--check` passes; the existing test suite passed before application.
