@@ -101,8 +101,10 @@ Evidence and exact affected specs are in the
   labelled section/model crosswalk for the earlier unnamed Super Champion
   16–22mm, 495/480g and Fiamme Yellow Label 500/485g clinchers; reopen the rim
   search with that material. See the [identity evidence and remaining limits](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#palo-alto-identity-review--applied-and-validated-2026-11-17).
-- Identify Ideale 88 / Titanium and OMAS sealed hubs from Bikecology 1980
-  using model codes or distinguishing construction evidence.
+- Identify Ideale 88 / Titanium from Bikecology 1980 using model codes or
+  distinguishing construction evidence. For its OMAS sealed hubs, obtain an
+  axle/material/code crosswalk or distinguishing specimen before matching
+  101/S or titanium-axle 3450; see the [OMAS page review](.agents/skills/ingest-component-catalog/references/known-catalogs/omas.md#identity-decision).
 - **SunTour Edition No. 89 follow-ups** (source 427, see [suntour.md](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#suntour-bicycle-component-catalog-edition-no-89--printed-091988-2026-11-16)): (1) compare 3630 "XCD 6000 (freehub)" (unnumbered, 1988-90) with the new FH-XD10 row and the 1990 FH-XD11 before merging or retitling; (2) decide whether 6290 LD-5100 PLG (the 1988 English catalogue's PLG code, 150 g) was renumbered LS-5700 / LS-5800 in Edition No. 89 (150 g/pr), e.g. from a stamped 1989 specimen, before widening or retitling; (3) transcribe the Scrambler II (pdf p.40) and LV-3 (p.41) pages into rows, and check whether 7956-7958 RD-SR21 (1992) succeed RD-SR10.
 - **SunTour identity/date follow-ups** ([evidence and description validation](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#remaining-placeholder-descriptions--2026-11-16-read-only-review)):
   1. *Catalogue identity checks:* obtain a period crosswalk for 1046 CB-4700 (VeloBase specimen marked Superbe / 4700) and 2613 FD-3200 Le Tech. Compare 3611's confirmed cassette-freehub photo and 126mm specification with 7989 FH-SL01-7 before a merge/date decision; resolve the imported HB code. Find a 1986-87 non-index Sprint source for 171 BB-5000 before dating it; keep separate from BB-500 8819 (different taper and ball count).
@@ -397,12 +399,10 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 ### Archives with unread material
 
-- **Velo-Pages recovered component scans:** inventory/reconcile Stronglight 1958
-  and OMAS 1978 printed p.4 (101/S Big Sliding hubs); compare the inventoried Dura-Ace EX
-  brochure with current descriptions. Triage the remaining Detto Pietro pages
-  for any supported component categories. Retain
-  `/private/tmp/velo-pages-unread-2026-11-17/` scans and capture inventories until
-  these reviews are complete, then clean up. See the [recovery and reading
+- **Velo-Pages recovered component scans:** compare the inventoried Dura-Ace EX
+  brochure with current descriptions; triage the remaining Detto Pietro pages
+  for supported component categories. Recover scans from the logged captures
+  (the earlier temporary cache is gone). See the [recovery and reading
   evidence](.agents/skills/ingest-component-catalog/references/source-hunts.md#log).
 - **Velo-Pages remaining recovery:** seek a new readable scan/holder for Sedis
   May 1971 (album 6165) and OMAS 1978's missing pages; check the recovery log

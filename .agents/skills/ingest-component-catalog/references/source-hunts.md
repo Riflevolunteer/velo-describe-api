@@ -4,6 +4,24 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ## Log
 
+- **Stronglight / OMAS recovery resumed, 2026-11-17:** the earlier
+  `/private/tmp/velo-pages-unread-2026-11-17/` cache no longer exists; historical
+  retention statements below describe the original session, not current files.
+  Recovered Stronglight 11510/11513/11516/11519/11522/11525 from their 2021
+  display captures and OMAS 12999 from the recorded 2016 capture. All seven
+  manufacturer pages visually read; no new full-resolution source found or
+  claimed. [Stronglight inventory and applied changes](known-catalogs/stronglight.md#recovered-catalogue-attributed-1958--applied-and-validated-2026-11-17)
+  record source **444**, three crank description enrichments and three new
+  chainring identities **11527–11529**, applied after user approval. Exact
+  readback and zero-change SQL rerun passed; the actual comparison over all
+  21,196 loaded CSV specs matches the baseline with no new mapping differences.
+  Duplicate reports have no new candidate. [OMAS identity review](known-catalogs/omas.md#identity-decision)
+  records 101/S, 101S/A and 101S/P without inferring axle material or equating
+  the 475g heading with titanium-axle 3450. No OMAS DB changes. Removed
+  this task's recovered scans, SQL, scripts and preflight after validation;
+  source/page evidence and old/new values remain in brand notes. Dura-Ace EX and Detto
+  Pietro remain separate reviews and their scans need recovering if required.
+
 - **Palo Alto identity follow-through, 2026-11-17:** original retailer pages
   and the complete local Regina C-78 scan resolve standard Black / undrilled
   Oro / drilled Record Oro as 1376/1382/1381. Corrected 1391's titanium-pin
@@ -33,7 +51,7 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 - **Velo-Pages Wayback recovery, 2026-11-17 (read-only):** recovered and JPEG-validated 44 images from the unread component clusters. Files and the original URL/timestamp capture inventory are retained in `/private/tmp/velo-pages-unread-2026-11-17/` for pending transcription/reconciliation; no DB changes. CDX `collapse=urlkey` inventories covered both host variants through canonicalisation. The broad image query used `main.php*` plus a whole-parameter item-ID filter, including optional trailing parameters; prefix queries `main.php?g2_itemId=1297` and `...=130` checked the OMAS neighbourhood. Small captures were excluded from downloads; byte size alone was only triage, with actual JPEG dimensions checked after download.
   - **OMAS album 12973**, [archived index](https://web.archive.org/web/20100213060626/http://www.velo-pages.com:80/main.php?g2_itemId=12973), lists 28 items (covers and printed pp.1–24). Only printed **p.4**, image **12999**, survived at readable display size in the checked catalogue range: **456×640**, [2016 capture](https://web.archive.org/web/20160602080025id_/http://velo-pages.com/main.php?g2_view=core.DownloadItem&g2_itemId=12999&g2_serialNumber=2). Visually read: **MOZZI serie BIG SLIDING, ART.101/S**, **101S/A front**, **101S/P rear**, printed **475 g** heading. It is a numbered hub/service-parts page; do not assume it identifies the unnumbered Bikecology sealed hubs. Other recovered catalogue image addresses are thumbnail-sized in the CDX inventory, not readable page scans. The album supplies the 1978 attribution; this page has no independently established printed year. Items 13068/13074 are outside the catalogue and must not be counted as its surviving pages. Seek a new full scan/holder for the missing pages rather than repeating these thumbnail queries.
   - **Shimano Dura-Ace EX brochure:** originals **6973 / 6977**, both **1275×1650**, plus their **6975 / 6979** 495×640 display copies recovered. Both original sheets fully read; inventory in [Shimano notes](known-catalogs/shimano.md#dura-ace-ex-introduction-brochure--wayback-read-2026-11-17). Neighbour **6982** is a separate *Bicycle System Components* cover, not a third EX brochure sheet. The archive's 1978 attribution is not a printed date on these two sheets.
-  - **Stronglight 1958:** six display scans **11510 / 11513 / 11516 / 11519 / 11522 / 11525**, each **492×640**, recovered. Sampled 11510 is printed p.2, **49D cotterless dural crank/double-chainwheel** with specification text. Archived HTML for original page item11508 confirms the album title and a former 1200×1560 option; that option's existence does not establish an archived original. Full inventory/reconciliation remains undone.
+  - **Stronglight 1958:** six display scans **11510 / 11513 / 11516 / 11519 / 11522 / 11525**, each **492×640**, recovered. Sampled 11510 is printed p.2, **49D cotterless dural crank/double-chainwheel** with specification text. Archived HTML for original page item11508 confirms the album title and a former 1200×1560 option; that option's existence does not establish an archived original. Subsequently all six pages inventoried and reconciled as source444; three description enrichments and chainring rows11527–11529 applied and validated in the review above. Reviewed image downloads removed after validation.
   - **SunTour:** recovered **12410 / 12413 / 12416 / 12431 / 12434 / 12437 / 12440 / 12446 / 12449 / 12455 / 12458 / 12467 / 12470**, long edge640. This is a mixed document cluster, not one March1975 advert: 12410 advertises the March16–19,1975 National Bicycle Show; **12413** is Sean Morris, *Anatomy Of A Winner*, **January1976 p.27**, a Winner freewheel service article; 12416 is a Cyclone advert and12431 a range advert. **Subsequently all reviewed and supported changes ingested as sources436–438**, with full inventory in SunTour notes and the later entries above. Images removed after validation; page-level identification is complete for the recovered cluster.
   - **Detto Pietro:** recovered **6606 / 6609 / 6612 / 6613 / 6615 / 6618 / 6621 / 6624 / 6638**. Most have long edge640; 6613 and6638 have long edge1500. Sampled 6606 is Art.10 Allievi footwear and6638 Art.35 /35/2 /35/4 winter/cyclocross footwear. These sampled pages are outside supported component categories; do not invent component rows. The rest have not been fully inventoried.
   - **Simplex adverts:** **25482 / 25488 / 25489 / 25493 / 25496** recovered. **Barelli adverts:** **26607 / 26611 / 26614 / 26615 / 26619** recovered; the maker's product name is Supreme (supersedes the initial sampling note's Superme transcription). **Subsequently all ten reviewed**, with supported Barelli enrichment applied as sources439/440; see the completed entry above and brand notes. Dates remain archive attributions, not independently printed publication dates. Reviewed downloads removed after validation.

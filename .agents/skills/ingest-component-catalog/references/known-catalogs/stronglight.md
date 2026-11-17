@@ -1,5 +1,77 @@
 # Stronglight catalogs processed so far
 
+## Recovered catalogue attributed 1958 — applied and validated 2026-11-17
+
+Six recovered English-language display scans, printed **pp. 2–7**, 492×640.
+The pages do not print a year; **1958 is the Velo-Pages album attribution**,
+not an established introduction or discontinuation date. Registered source
+**444**, label `Stronglight catalogue (c. 1958, Velo-Pages attribution)`,
+country FR. This is a partial catalogue: no claims from missing
+pages or absence comparisons with later full ranges.
+
+| Page / image ID / Wayback capture | Category | Printed inventory and reconciliation |
+| --- | --- | --- |
+| 2 / 11510 / 20210818101734 | Cranksets | **49D**, forged hardened light-alloy cotterless cranks and dural double chainwheels; double or track, British pedal threads, 6½, 6¾ or 7in. Enrich existing **1895** with family construction, keeping its incised DEPOSE variant note; no marking/date inference for separate **1896**. |
+| 2, 6 / 11510, 11522 / 20210818101734, 20210818105850 | Chainrings | **No.12** outer, 49/50/51/52T, supplied with screws; **No.12 bis** inner, 44/45/46/47/48T, without screws; ½×3/32 chain. Both missing. Later **1322 Type 49** explicitly replaces no.12 in catalogue no.22; **1317 No.63** is a later inner with another range. Preserve those rows separately. |
+| 3 / 11513 / 20210818101836 | Bottom Brackets | Cotterless axle table: **32C** single 113mm, **32R** double 120mm, **97** double 117mm, **97 TRI** triple 125.5mm. The supplied double uses 32R; single/triple alternatives are noted in prose. Existing **9956 No.97** is a complete BB set with 127–134mm axles from source 297; this axle-only page does not establish matching complete-kit identity or justify changing its dates/specification. |
+| 4–5 / 11516, 11519 / 20210818101853, 20210818102042 | Cranksets | **Type 57 Super-Competition**, independently interchangeable five-bolt rings, 6½, 6¾ or 7in; complete assembly about 28oz. Enrich **1900**, preserving measured 575g for 170mm/50–47T, bolts included, dust caps excluded. Page 5 is an assembly drawing. No explicit track variant: **1901** unchanged. |
+| 4, 6 / 11516, 11522 / 20210818101853, 20210818105850 | Chainrings | **Type57**, dural, inner/outer interchangeable; 40 and 44–54T for ½×3/32 chain, five special screw/washer/bush sets per assembly. Missing; one interchangeable-ring identity, no invented inner/outer variants or maker part number. |
+| 7 / 11525 / 20210818105939 | Cranksets | **Competition No. 55**, solid-forged high-resistance steel, heavy-section 3-arm cottered arms for single/double chainwheels, 6½, 6¾ or 7in; about 20oz/pair. Steel double chainwheel 45–54T, about 16oz, also fits No. 54. Enrich **1899**; replace duplicated 567g Spec with maker 20oz. The mere No. 54 mention does not establish another version or date. |
+
+Out of component scope: extractor tools, fitting instructions, loose screw,
+washer and bush refs 10 /12ter /57, and service hardware. The six images
+include all recovered pages; no headset page or complete No.34 BB page.
+Archived image URL template (substitute capture and ID from table):
+`https://web.archive.org/web/<capture>id_/http://www.velo-pages.com/main.php?g2_view=core.DownloadItem&g2_itemId=<ID>&g2_serialNumber=2`.
+
+### Applied change set and restoration values
+
+**Applied after user approval.** Guarded transaction inserted one source,
+updated three descriptions and inserted three chainrings. New ring dates
+1958–1958 mean archive-attributed attestation only. Existing titles,
+search_text, dates, IDs and bike links are unchanged on existing rows.
+Source references **1→444** on 1895 / 1899 / 1900. Old descriptions for restoration:
+
+- **1895 old**, source1: `Stronglight 49D (Depose), France. Variants: DEPOSE lettering incised (merged 1912).`
+- **1899 old**, source1: `Stronglight Competition No. 55, France, 567 grams (Spec), Crankarms Only`
+- **1900 old**, source1: `Stronglight 57 Super Competition, France, 575 grams (Actual),for 170 length, 50/47 Chainrings, with bolts but without dust caps`
+
+Applied descriptions:
+
+- **1895:** `Stronglight 49D, France. Forged, hardened light-alloy cotterless cranks, double or track; 6.5, 6.75 or 7in, British pedal thread. Outer ring 12, inner 12 bis; exposed fixing screws. DEPOSE lettering includes incised variants (merged 1912).`
+- **1899:** `Stronglight Competition No. 55, France. Solid-forged high-resistance steel, heavy-section 3-arm cottered cranks for single or double rings; 6.5, 6.75 or 7in. About 20oz per pair of arms. Chromed steel double chainwheel, 1/2x3/32, 45-54T; about 16oz.`
+- **1900:** `Stronglight 57 Super Competition, France. Cotterless alloy cranks with five-bolt independent, interchangeable inner/outer rings, 40 and 44-54T for 1/2x3/32 chain; 6.5, 6.75 or 7in. About 28oz complete; 575g measured, 170mm, 50/47T, bolts but no dust caps.`
+- **11527**, `Stronglight No. 12, Type 49D outer chainring`: `Dural outer chainring for Stronglight Type 49D double chainwheels, 1/2x3/32 chain; 49, 50, 51 or 52T. Supplied with fixing screws; ring-to-crank screw/bush ref. 10, ring-to-ring screw/washer/bush ref. 12 ter.`
+- **11528**, `Stronglight No. 12 bis, Type 49D inner chainring`: `Dural inner chainring for Stronglight Type 49D double chainwheels, 1/2x3/32 chain; 44, 45, 46, 47 or 48T. Supplied without screws; ring-to-ring fixing set ref. 12 ter.`
+- **11529**, `Stronglight Type 57 chainring`: `Dural chainring for Stronglight Type 57 Super Competition cranks, five-bolt fixing; inner and outer rings interchangeable. For 1/2x3/32 chain; 40, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 or 54T; five special fixing sets per assembly.`
+
+All three new rows: brand 54, category 5 Chainrings, group NULL, dates
+1958–1958, source 444. Source UUIDs respectively
+`64114c96-64ef-4c1f-822b-879ce750d375`,
+`5449e76e-9eb5-4fc2-bc33-f09d408fc518`,
+`cb325f31-e8ef-4781-92b3-0bd8db58b379`.
+
+Updated descriptions are 239 / 249 / 255 characters; new descriptions 208 / 167 / 232,
+all within 255. New titles/search_text generated with maintained search-text
+helper; stable UUID load keys and brand/category/title guards on inserts.
+Stronglight exact duplicate report has only configuration/generation/variant
+pairs; near report has no candidates. Do not merge 49D marking variants.
+Full prospective matcher comparison adds the three chainring identities in
+memory: **21,196 comparisons, no changed findings or mappings**; baseline has 15
+unrelated existing losses, no gains/changed mappings. Related live bike review
+finds no supported new link; the either/or 1976 Motobécane 49D/AX5 remains unlinked.
+
+Validation: live field-by-field readback matches all six intended changes;
+every other Stronglight/OMAS field and row matches the preflight snapshot.
+Actual post-load comparison matches the prospective result and baseline
+across all 21,196 loaded-CSV comparisons. Existing 15 unrelated losses remain;
+no new gains, losses, changed mappings or bike writes. Exact and near duplicate
+reports match the pre-task candidates; no new merge candidate. Changed rows'
+brand/category/source references and description lengths pass integrity checks.
+Rerunning all nine SQL statements changes zero rows. Removed the completed
+TODO action and task-created scans, SQL, scripts and preflight snapshot after
+validation. Source/page URLs and full old/new values are retained here.
+
 ## Stronglight "Les voies de la performance / The road to performance" brochure (12 pages, c. 1985-89, VeloBase archive)
 
 - `data_source` 194, label `Stronglight "Les voies de la performance"
@@ -53,7 +125,7 @@
   it in 1979 while the DB has 1981-83). The VeloBase index also names
   Stronglight no. 24 (1978), no. 27 (1984) and a 1958 catalogue, but only
   the 1980s PDF and no. 26 zip have download links. The velo-pages "Stronglight
-  catalog (1958)" (~11505-11526, 6 images) is still unused, see TODO.
+  catalog (1958)" (~11505-11526, 6 images) is now reconciled; see the applied change set above.
 
 ## Stronglight "Catalogue n° 26" (16 scans, 1982, VeloBase archive)
 
@@ -103,7 +175,7 @@
     and earlier cranks, P3 Tandem, JDX94.
   - Catalogues no. 24 (1978), no. 27 (1984) and a 1958 catalogue are named on
     the VeloBase index but have no download link; the velo-pages "Stronglight
-    catalog (1958)" (~11505-11526, 6 images) is still unused, see TODO.
+    catalog (1958)" (~11505-11526, 6 images) is now reconciled; see the applied change set above.
 
 ## Stronglight "Catalogue n° 22" (19 scans, c. 1974, labibleduvelocataloguesstronlight.blogspot.com)
 

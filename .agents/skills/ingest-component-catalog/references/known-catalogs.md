@@ -57,7 +57,8 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/vredestein.md](known-catalogs/vredestein.md) — Vredestein (1 entry)
 - [known-catalogs/hutchinson.md](known-catalogs/hutchinson.md) — Hutchinson HP22 (1982 / 1986 / 1989 bike catalogue evidence)
 - [known-catalogs/panaracer.md](known-catalogs/panaracer.md) — Timbuk II fitment evidence; Panaracer USA 1997 tyre/rim brochure (source 433)
-- [known-catalogs/stronglight.md](known-catalogs/stronglight.md) — Stronglight (6 entries)
+- [known-catalogs/stronglight.md](known-catalogs/stronglight.md) — Stronglight; includes recovered c. 1958 pages, source 444
+- [known-catalogs/omas.md](known-catalogs/omas.md) — OMAS 1978-attributed Big Sliding hub page; identity review, no DB changes
 - [known-catalogs/gipiemme.md](known-catalogs/gipiemme.md) — Gipiemme (10 entries)
 - [known-catalogs/takagi.md](known-catalogs/takagi.md) — Takagi (1 entry)
 - [known-catalogs/tange.md](known-catalogs/tange.md) — Tange (1 entry)
