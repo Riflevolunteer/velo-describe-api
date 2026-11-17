@@ -1,5 +1,13 @@
 # Falcon catalogs processed so far
 
+## Eddy Merckx brochure (c. 1973) — loaded 2026-11-17
+
+- [Archive album 27333](https://web.archive.org/web/20110521080322/http://velo-pages.com/main.php?g2_itemId=27333): four 497×640 pages, display IDs **27394 / 27398 / 27401 / 27404**, serial 2, captures 20130609060341 / 20130609065323 / 20130609084424 / 20130609061320. First/last panels carry specs; middle panels are rider photo/cover. No printed year; 1973 is archive attribution. Country unknown. The [February 16, 1974 Cycling advert](https://classiclightweights.net/belgium/eddy-merckx/) repeats the range and resolves soft size fractions; it is corroboration, not another load.
+- CSV `1973_falcon_spec_merckx.csv`: nine adults, models **100/102/104/106/108/109/110/111/114**; ladies 109/111 separate, 19.5-inch/26-inch adult options retained. Junior Racer **112** excluded (18-inch frame, 24-inch wheels). Shared specs expanded; missing equipment left blank. Brand **Falcon**, titles prefixed **Eddy Merckx**. Separate filename metadata prevents collision with source139’s ordinary Falcon catalogue.
+- Applied after approval: source **445**, bikes **1336–1344**, **92 specs / 15 links**. Models 100/102: explicit Record crank→1496, large-flange QR hubs→3260, Nuovo Record front/rear→2297/4125; Brooks Professional→5303, Weinmann centre-pull→7929 follow existing decisions. Bare Cinelli stems on 100/102/104 explicitly NULL; no inferred 1A. Other maker-only/generic equipment remains unlinked. No component/date changes.
+- Exact bike/spec/source/link readback passed; no duplicate bikes/specs. All 251 SQL statements rerun with zero changes. All 13 test files pass; **21,288** loaded-spec comparisons reproduce the original 15 unrelated losses with no new differences. Existing labels/order reused. Completed TODO action and task-created scans/SQL/scripts/transcriptions/preflight removed; maintained CSV retained.
+- Recovery correction: Velo-Pages **27335**, “Falcon sales literature (1974)”, is the ordinary **Model 76** press sheet already covered by the 1974 load. Road-test images 27470/27478 are magazine articles, not brochure pages.
+
 ## 1986 Falcon — `1986_falcon_spec.csv` (19 bikes, 402 specs, 64 linked; data_source 317, GB)
 
 - Source: IceniCAM On-Line Library, https://www.icenicam.org.uk/library/Falcon/Catalogue_c1992.pdf

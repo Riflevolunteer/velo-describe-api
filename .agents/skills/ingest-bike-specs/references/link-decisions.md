@@ -131,6 +131,8 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Stems
 
+- Falcon–Merckx c.1973 models 100/102/104: bare `Cinelli` stays NULL; no stem model is specified. Scoped guards preserve other Falcon choices. [Brochure evidence](known-catalogs/falcon.md#eddy-merckx-brochure-c-1973--loaded-2026-11-17).
+
 - Leave unlinked: "CTA" on the 1989 Peugeot Alpine Express / VTT Express MTBs (6452 is the aero road CTA); "Atax or CTA" (6, either / or).
 - Left by user's call: 1994 Cinelli "Cinelli Grammo Titanio Ahead" (2; 6497 Grammo Titanium 1993-2000 covers the year but is undifferentiated, 10137 Road Ahead starts 1996). No row: 3T Procrom Ahead, 3T Procurve (1994 Cinelli). 1991 Bianchi "Nitto Dynamic III" stays on its do-not-link override (bianchi.md).
 - Decided 2026-10-30, leave unlinked: Sakae RY / RY 70 mm / RY 80-90 mm, 1985 Bianchi Randonneur 700 / Rekord 26 / Speciale-II [5779 5796 5746] (only 1974 RY-70 / 90 / 110 and 1982 RY2 rows); TTT Grand Prix, 1970-71 Raleigh Professional Mk II / III [7753 9356] (only 1960 / 1964 / undated Gran Prix *Special* rows).

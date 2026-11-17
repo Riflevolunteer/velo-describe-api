@@ -103,7 +103,18 @@ function dataSourceSubquery(label) {
 
 // A country token in the filename makes a distinct source ("1976 Raleigh (GB)
 // catalogue"); files without one keep the original label so loaded rows still match.
-function catalogueLabel(year, brand, fileCountry) {
+// Separate same-year brochures without inventing another bike brand or market.
+const CATALOGUE_EDITIONS = new Map([
+  ['1973_falcon_spec_merckx.csv', {
+    label: 'Falcon Eddy Merckx brochure (c. 1973)',
+    citation: 'https://web.archive.org/web/20110521080322/http://velo-pages.com/main.php?g2_itemId=27333',
+    country: null, // English manufacturer address does not establish the market.
+  }],
+]);
+
+function catalogueLabel(year, brand, fileCountry, filename) {
+  const edition = filename && CATALOGUE_EDITIONS.get(path.basename(filename));
+  if (edition) return edition.label;
   return fileCountry ? `${year} ${brand} (${fileCountry}) catalogue` : `${year} ${brand} catalogue`;
 }
 
@@ -1362,6 +1373,10 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    'q r l f campagnolo hubs': [
+      { bike: 'Eddy Merckx Competition Model 100', from: 1973, to: 1973, id: 3260 },
+      { bike: 'Eddy Merckx Super Competition Model 102', from: 1973, to: 1973, id: 3260 },
+    ], // Falcon-Merckx brochure: explicit large-flange quick-release road hubs.
     'suntour xc pro': [
       { bike: 'Grizzly', from: 1991, to: 1991, id: null }, // Spec 19546: generic group name cannot identify rear threaded HB-XP00-R; Bianchi p.9 prints no hub code.
       { id: undefined }, // Preserve normal matching outside this reviewed bike/year.
@@ -2300,6 +2315,10 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'campagnolo record cotterless chainwheel & cranks': [
+      { bike: 'Eddy Merckx Competition Model 100', from: 1973, to: 1973, id: 1496 },
+      { bike: 'Eddy Merckx Super Competition Model 102', from: 1973, to: 1973, id: 1496 },
+    ], // Explicit Record road double with Nuovo Record gearing; not the unnamed cotterless sets.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'campagnolo 4030 42 x 53': [{ from: 1978, to: 1978, id: 1509 }],
     'stronglight 105b 42 x 53 interchangeable': [{ from: 1978, to: 1978, id: 1880 }],
@@ -3176,7 +3195,12 @@ const COMPONENT_OVERRIDES = {
     'cinelli 1a': 6489, // Team Replica: Cinelli 1A (winged "C" logo), as the 1983 'cinelli no 1a'
     // 1973-74 Falcon San Remo: bare "Cinelli" stem, the 1A of the Cinelli Milano logo era (1972-78). Ranged
     // so the 1984 Peugeot PZ 10's bare "Cinelli" stays unlinked.
-    cinelli: [{ from: 1972, to: 1974, id: 6487 }],
+    cinelli: [
+      { bike: 'Eddy Merckx Competition Model 100', from: 1973, to: 1973, id: null },
+      { bike: 'Eddy Merckx Super Competition Model 102', from: 1973, to: 1973, id: null },
+      { bike: "Eddy Merckx Giro D'Italia Model 104", from: 1973, to: 1973, id: null },
+      { from: 1972, to: 1974, id: 6487 },
+    ], // Merckx brochure names no stem model; preserve the older San Remo decisions.
     // 1986 Colnago: "attacco 3TTT mod. 84 nero" = the black AR84N (1986-91), not the silver AR84.
     '3ttt mod 84': 8296, // 3ttt AR84N, Mod. 84 (black)
     // 1983 Raleigh (UK "Racers" catalogue, Spring 1983).
@@ -5077,9 +5101,10 @@ function buildCataloguePlan(files, componentRecords, brandNames) {
     }
     const { year, brand, fileCountry } = parsed;
     brands.add(brand);
-    const catalogue = catalogueLabel(year, brand, fileCountry);
-    const country = fileCountry || CATALOGUE_COUNTRY.get(`${year}|${brand.toLowerCase()}`) || null;
-    catalogSources.set(catalogue, { filename, country });
+    const edition = CATALOGUE_EDITIONS.get(filename);
+    const catalogue = catalogueLabel(year, brand, fileCountry, filename);
+    const country = edition ? edition.country : fileCountry || CATALOGUE_COUNTRY.get(`${year}|${brand.toLowerCase()}`) || null;
+    catalogSources.set(catalogue, { filename, country, ...(edition && { citation: edition.citation }) });
 
     const rows = parseCsv(fs.readFileSync(file, 'utf8'));
     const [header, ...dataRows] = rows;
@@ -5187,7 +5212,7 @@ function renderCatalogueSql(plan) {
   lines.push('');
 
   lines.push('-- Data sources (one per source CSV)');
-  for (const [label, { filename, country }] of catalogSources) lines.push(dataSourceLookupInsert(label, filename, country));
+  for (const [label, { filename, country, citation = filename }] of catalogSources) lines.push(dataSourceLookupInsert(label, citation, country));
   lines.push('');
 
   lines.push('-- Bike spec labels (sort_order = first-seen order across processed files)');

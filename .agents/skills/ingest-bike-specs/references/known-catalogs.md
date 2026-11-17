@@ -17,7 +17,7 @@ that touched more than one brand) live separately:
 - [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (1 entry)
 - [known-catalogs/colnago.md](known-catalogs/colnago.md) — Colnago (2 entries)
 - [known-catalogs/derosa.md](known-catalogs/derosa.md) — De Rosa (1 entry)
-- [known-catalogs/falcon.md](known-catalogs/falcon.md) — Falcon (3 entries)
+- [known-catalogs/falcon.md](known-catalogs/falcon.md) — Falcon, including Eddy Merckx c.1973 (source 445)
 - [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (5 entries)
 - [known-catalogs/zeus.md](known-catalogs/zeus.md) — Zeus (1 entry)
 - [known-catalogs/miyata.md](known-catalogs/miyata.md) — Miyata (9 entries)

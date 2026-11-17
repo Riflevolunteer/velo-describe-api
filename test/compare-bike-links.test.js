@@ -92,6 +92,48 @@ test('shared pipeline handles combined cells, integrated levers and stored trunc
   } finally { fs.rmSync(dir, { recursive: true }) }
 })
 
+test('same-year Falcon Merckx brochure keeps its own provenance in generation and comparison', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'velo-merckx-test-'))
+  try {
+    const file = path.join(dir, '1973_falcon_spec_merckx.csv')
+    fs.writeFileSync(file, 'Model,Type,Saddle\nEddy Merckx Competition Model 100,Road Racing,Plastic\n')
+    const plan = generator.buildCataloguePlan([file], [], new Set())
+    const label = 'Falcon Eddy Merckx brochure (c. 1973)'
+    assert.equal(plan.bikes[0].brand, 'Falcon')
+    assert.equal(plan.bikes[0].catalogue, label)
+    assert.equal(plan.catalogSources.get(label).country, null)
+    assert.match(generator.renderCatalogueSql(plan), /g2_itemId=27333/)
+    assert.equal(generator.catalogueLabel('1973', 'Falcon', null), '1973 Falcon catalogue')
+    assert.equal(generator.catalogueLabel('1973', 'Falcon', 'GB'), '1973 Falcon (GB) catalogue')
+    const report = buildReport([file], {
+      components: [], brandNames: new Set(), specs: [],
+      sources: [{ source_id: 1, label: '1973 Falcon catalogue' }, { source_id: 2, label }],
+      bikes: [{ bike_id: 1, source_ref: 2, title: plan.bikes[0].title, brand: 'Falcon', year_from: '1973' }],
+    })
+    assert.equal(report.scope.length, 1)
+    assert.equal(report.scope[0].source_id, 2)
+    assert.equal(report.summary.missing_in_db, 1)
+  } finally { fs.rmSync(dir, { recursive: true }) }
+})
+
+test('Merckx links explicit Record equipment and blocks the generic Cinelli stem inheritance', () => {
+  const rows = [
+    { component_id: 6487, title: 'Cinelli 1A (Cinelli Milano logo)', category: 'Stems' },
+    { component_id: 3260, title: 'Campagnolo 1035, Record (high flange)', category: 'Hubs' },
+    { component_id: 1496, title: 'Campagnolo 1049, Record Strada', category: 'Cranksets' },
+  ]
+  const match = (value, label, bike, year = 1973) => generator.matchComponent(value, rows, null, label, year, bike)
+  for (const bike of ['Eddy Merckx Competition Model 100', 'Eddy Merckx Super Competition Model 102']) {
+    assert.equal(match('Q/R L/F Campagnolo Hubs', 'Hubs', bike).component_id, 3260)
+    assert.equal(match('Campagnolo Record cotterless chainwheel & cranks.', 'Crankset', bike).component_id, 1496)
+    assert.equal(match('Cinelli.', 'Stem', bike), null)
+    assert.equal(match('Q/R L/F Campagnolo Hubs', 'Hubs', bike, 1972), null)
+  }
+  assert.equal(match('Cinelli', 'Stem', "Eddy Merckx Giro D'Italia Model 104"), null)
+  assert.equal(match('Cinelli', 'Stem', 'San Remo Model 94').component_id, 6487)
+  assert.equal(match('Q/R L/F Campagnolo Hubs', 'Hubs', 'Other model'), null)
+})
+
 test('snapshot is read-only and rolls back on failed queries', async () => {
   for (const fail of [false, true]) {
     const queries = []

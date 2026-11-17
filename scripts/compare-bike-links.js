@@ -117,7 +117,7 @@ function buildReport(files, snapshot) {
   for (const file of files) {
     const parsed = parseFilename(path.basename(file))
     if (!parsed) throw new Error(`Invalid catalogue CSV filename: ${file}`)
-    const label = catalogueLabel(parsed.year, parsed.brand, parsed.fileCountry)
+    const label = catalogueLabel(parsed.year, parsed.brand, parsed.fileCountry, path.basename(file))
     const sources = sourcesByLabel.get(sourceKey(label)) || []
     if (sources.length > 1) throw new Error(`Ambiguous loaded catalogue source: ${label}`)
     if (!sources.length) skippedFiles.push({ file, reason: 'catalogue_not_loaded' })
