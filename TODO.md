@@ -34,7 +34,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Decide Nashbar brand treatment, then load its Spring 1988 house bikes, pp.30–40; re-read the scans.
 - Decide Panasonic brand treatment, then ingest the 1985–89 US bikes from [recorded sources](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md).
 - Load La Bicicletta’s May 1984 racing-bike buyer’s guide.
-- Recover Original Plastic Bike 1973 and Bottecchia 1973 through the [Wayback recovery log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - Assess the bikalog backlog: Koga-Miyata 1980–2001, Nishiki 1987, Raleigh 1991, Colnago C35 1989, Bianchi road 1985/1986.
 
 ## Waiting for distinguishing evidence

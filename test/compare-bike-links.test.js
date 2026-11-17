@@ -134,6 +134,67 @@ test('Merckx links explicit Record equipment and blocks the generic Cinelli stem
   assert.equal(match('Q/R L/F Campagnolo Hubs', 'Hubs', 'Other model'), null)
 })
 
+test('Bottecchia keeps the printed edition date and does not invent a chain from the combined heading', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'velo-bottecchia-test-'))
+  try {
+    const file = path.join(dir, '1972_bottecchia_us_spec.csv')
+    fs.writeFileSync(file, 'Model,Freewheel & Chain\nProfessionale,Quintuple REGINA ORO\n')
+    const plan = generator.buildCataloguePlan([file], [
+      { component_id: 2182, title: 'Regina Extra Oro 5 speed', category: 'Freewheels' },
+      { component_id: 2194, title: 'Regina Extra Oro 6 speed', category: 'Freewheels' },
+    ], new Set(['regina']))
+    const label = 'Bottecchia US catalogue (September 1972)'
+    assert.equal(plan.bikes[0].year, '1972')
+    assert.equal(plan.bikes[0].catalogue, label)
+    assert.equal(plan.catalogSources.get(label).country, 'US')
+    assert.match(generator.renderCatalogueSql(plan), /archive: 1973; printed BOTT\. USA III/)
+    assert.equal(plan.specs.length, 1)
+    assert.equal(plan.specs[0].label, 'Freewheel')
+    assert.equal(plan.specs[0].rawLabel, 'Freewheel & Chain')
+    assert.equal(plan.specs[0].matched.component_id, 2182)
+    assert.equal(generator.catalogueLabel('1972', 'Bottecchia', 'US'), '1972 Bottecchia (US) catalogue')
+  } finally { fs.rmSync(dir, { recursive: true }) }
+})
+
+test('Bottecchia group links stay scoped and incomplete model descriptions cannot select variants', () => {
+  const group = 'GRUPPO CAMPAGNOLO NUOVO RECORD'
+  const records = [
+    { component_id: 2297, category: 'Front Derailleurs', title: 'Campagnolo 1052/1 Record' },
+    { component_id: 4125, category: 'Rear Derailleurs', title: 'Campagnolo 1020/A Nuovo Record' },
+    { component_id: 1496, category: 'Cranksets', title: 'Campagnolo 1049 Nuovo Record Strada' },
+    { component_id: 2963, category: 'Headsets', title: 'Campagnolo 1039 Record Strada' },
+    { component_id: 30, category: 'Bottom Brackets', title: 'Campagnolo 1046/a Nuovo Record Strada' },
+    { component_id: 3708, category: 'Pedals', title: 'Campagnolo 1037 Record Strada' },
+    { component_id: 3259, category: 'Hubs', title: 'Campagnolo Nuovo Record' },
+    { component_id: 5749, category: 'Seat Posts', title: 'Campagnolo Nuovo Record' },
+    { component_id: 3233, category: 'Hubs', title: 'Campagnolo Nuovo Tipo' },
+    { component_id: 4120, category: 'Rear Derailleurs', title: 'Campagnolo Gran Turismo' },
+    { component_id: 4162, category: 'Rear Derailleurs', title: 'Campagnolo Valentino Extra' },
+    { component_id: 99999, category: 'Front Derailleurs', title: 'Campagnolo Gran Turismo' },
+  ]
+  const match = (value, label, bike, year = 1972) => generator.matchComponent(value, records, null, label, year, bike)
+  for (const [label, id] of Object.entries({ 'Front Derailleur': 2297, 'Rear Derailleur': 4125,
+    Crankset: 1496, Headset: 2963, 'Bottom Bracket': 30, Pedals: 3708 })) {
+    assert.equal(match(group, label, 'Professionale').component_id, id)
+    assert.equal(match(group, label, 'Other model'), null)
+    assert.equal(match(group, label, 'Professionale', 1973), null)
+  }
+  assert.equal(match(group, 'Hubs', 'Professionale'), null)
+  assert.equal(match(group, 'Seatpost', 'Professionale'), null)
+  assert.equal(match('CAMPAGNOLO NUOVO TIPO large flange with quick release', 'Hubs', "Giro d'Italia"), null)
+  for (const bike of ['Gran Turismo', 'Special', 'Lady Special']) {
+    assert.equal(match('CAMPAGNOLO NUOVO TIPO, large flange, quick release', 'Hubs', bike), null)
+  }
+  const turismo = 'CAMPAGNOLO GRAN TURISMO with derailleur - 10 speed'
+  assert.equal(match(turismo, 'Rear Derailleur', 'Gran Turismo').component_id, 4120)
+  assert.equal(match(turismo, 'Front Derailleur', 'Gran Turismo'), null)
+  for (const bike of ['Special', 'Lady Special']) {
+    const value = 'CAMPAGNOLO VALENTINO EXTRA with derailleur - 10 speed'
+    assert.equal(match(value, 'Rear Derailleur', bike).component_id, 4162)
+    assert.equal(match(value, 'Front Derailleur', bike), null)
+  }
+})
+
 test('snapshot is read-only and rolls back on failed queries', async () => {
   for (const fail of [false, true]) {
     const queries = []

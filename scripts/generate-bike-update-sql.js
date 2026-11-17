@@ -105,6 +105,11 @@ function dataSourceSubquery(label) {
 // catalogue"); files without one keep the original label so loaded rows still match.
 // Separate same-year brochures without inventing another bike brand or market.
 const CATALOGUE_EDITIONS = new Map([
+  ['1972_bottecchia_us_spec.csv', {
+    label: 'Bottecchia US catalogue (September 1972)',
+    citation: 'https://web.archive.org/web/20110522004035/http://velo-pages.com/main.php?g2_itemId=27995 (archive: 1973; printed BOTT. USA III - 50.000-9/72)',
+    country: 'US',
+  }],
   ['1973_falcon_spec_merckx.csv', {
     label: 'Falcon Eddy Merckx brochure (c. 1973)',
     citation: 'https://web.archive.org/web/20110521080322/http://velo-pages.com/main.php?g2_itemId=27333',
@@ -426,6 +431,7 @@ const LABEL_ALIASES = {
   'chain type': 'Chain',
   cranksets: 'Crankset',
   freewheels: 'Freewheel',
+  'freewheel & chain': 'Freewheel', // Bottecchia: "Quintuple Regina Oro" identifies the freewheel; chain unspecified.
   'gear cluster': 'Freewheel',
   saddles: 'Saddle',
   'seat posts': 'Seatpost',
@@ -545,6 +551,11 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // Bottecchia US III, September 1972: grouped Nuovo Record equipment on pp.2–3.
+    'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 2297 }],
+    // These rear-mech names do not identify the accompanying front derailleur.
+    'campagnolo gran turismo with derailleur 10 speed': [{ bike: 'Gran Turismo', from: 1972, to: 1972, id: null }],
+    'campagnolo valentino extra with derailleur 10 speed': [{ bike: 'Special', from: 1972, to: 1972, id: null }, { bike: 'Lady Special', from: 1972, to: 1972, id: null }],
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'sun tour compe v': [{ from: 1978, to: 1978, id: 2603 }],
     'sun tour sl': [{ from: 1978, to: 1978, id: 2616 }],
@@ -908,6 +919,10 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // Bottecchia US III, September 1972, pp.2–7; keep the named rear equipment distinct.
+    'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 4125 }],
+    'campagnolo gran turismo with derailleur 10 speed': [{ bike: 'Gran Turismo', from: 1972, to: 1972, id: 4120 }],
+    'campagnolo valentino extra with derailleur 10 speed': [{ bike: 'Special', from: 1972, to: 1972, id: 4162 }, { bike: 'Lady Special', from: 1972, to: 1972, id: 4162 }],
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'campagnolo 1020 nuovo record': [{ from: 1978, to: 1978, id: 4125 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
@@ -1373,6 +1388,10 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    // Bottecchia US III: gruppo gives no flange; Nuovo Tipo gives no hole shape (3232/3233).
+    'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: null }],
+    'campagnolo nuovo tipo large flange with quick release': [{ bike: "Giro d'Italia", from: 1972, to: 1972, id: null }],
+    'campagnolo nuovo tipo large flange quick release': [{ bike: 'Gran Turismo', from: 1972, to: 1972, id: null }, { bike: 'Special', from: 1972, to: 1972, id: null }, { bike: 'Lady Special', from: 1972, to: 1972, id: null }],
     'q r l f campagnolo hubs': [
       { bike: 'Eddy Merckx Competition Model 100', from: 1973, to: 1973, id: 3260 },
       { bike: 'Eddy Merckx Super Competition Model 102', from: 1973, to: 1973, id: 3260 },
@@ -2179,6 +2198,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ bike: 'Tangent', from: 1989, to: 1989, id: null }],
   },
   Headsets: {
+    'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 2963 }], // Bottecchia US III: Record Strada.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'campagnolo 1039': [{ from: 1978, to: 1978, id: 2963 }],
     'suntour xc pro': [{ from: 1990, to: 1990, id: 11020 }], // 1990 Bianchi Project 7 / Grizzly: HS-XP00, the 1990 catalogue XC-Pro headset (3138 is VeloBase HS-XP01)
@@ -2303,6 +2323,7 @@ const COMPONENT_OVERRIDES = {
     'hatta vesta alloy': [{ from: 1989, to: 1989, id: 3020 }], // as bare "Hatta Vesta"
   },
   'Bottom Brackets': {
+    'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 30 }], // Bottecchia US III: Nuovo Record Strada.
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'campagnolo record': [{ from: 1967, to: 1988, id: 30 }], // Super-Leggera: 'movimento Record' -> 1046/a Nuovo Record (Strada)
     // 1973 Zeus. Bare 'Zeus Criterium' row 186 was merged into 188 (Zeus catalogue 102 dedupe, 2026-10-04).
@@ -2315,6 +2336,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 1496 }], // Bottecchia US III: road Nuovo Record, contemporary 1049 v4.
     'campagnolo record cotterless chainwheel & cranks': [
       { bike: 'Eddy Merckx Competition Model 100', from: 1973, to: 1973, id: 1496 },
       { bike: 'Eddy Merckx Super Competition Model 102', from: 1973, to: 1973, id: 1496 },
@@ -3684,6 +3706,7 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 3708 }], // Bottecchia US III: Record Strada.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'campagnolo 1037a with reflectors christophe toe clips and straps': [{ from: 1978, to: 1978, id: 3709 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
@@ -3969,6 +3992,7 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: null }], // Bottecchia US III: no post variant specified.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'campagnolo alloy seat post': [{ from: 1978, to: 1978, id: null }], // No code to distinguish Record 1044 from Super Record 4051.
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
@@ -4364,6 +4388,7 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    'quintuple regina oro': [{ bike: 'Professionale', from: 1972, to: 1972, id: 2182 }], // Bottecchia US III: five-speed Extra Oro, not six-speed 2194.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'maillard atom 700 14 x 24 black': [{ from: 1978, to: 1978, id: null }],
     'maillard atom racing alloy 14 x 21': [{ from: 1978, to: 1978, id: null }],

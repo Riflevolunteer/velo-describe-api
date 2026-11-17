@@ -4,6 +4,10 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## Bottecchia US September 1972
+
+- Professionale’s grouped Nuovo Record hubs/seatpost lack flange/post variant; Nuovo Tipo large-flange QR hubs do not distinguish 3232 kidney-bean from 3233 round holes. Giro d’Italia’s plain Record gear wording does not establish Nuovo Record; Gran Turismo/Valentino Extra identify only the rear mechanism. Keep these unresolved links NULL, along with generic Simplex/Unica and unnamed equipment. [Source and applied mappings](known-catalogs/bottecchia.md).
+
 ## Ariake frame-dependent saddles (reviewed 2026-11-17)
 
 - 1982 Miyata 110 spec 21066 prints `ARIAKE 77-17, quilted vinyl top,
