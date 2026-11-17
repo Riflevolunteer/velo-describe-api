@@ -51,8 +51,8 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Rims
 
-- Reviewed 2026-11-17, **DB unlink pending approval**: 1982 Battaglin Alessandro
-  spec **12943**, `Nisi Corsa`, currently links to **5131 Corsa Toro (no eyelets)**.
+- Applied/validated 2026-11-17, **user approved**: 1982 Battaglin Alessandro
+  spec **12943**, `Nisi Corsa`, unlinked **5131 Corsa Toro (no eyelets) -> NULL**.
   Original Alessandro sheet prints no Toro/code/eyelet construction. Scoped
   Alessandro/1982 NULL override now prevents that unsupported assignment from
   recurring if 5131 becomes the only candidate. Need a numbered parts list or
@@ -67,9 +67,9 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Hubs
 
-- Reviewed 2026-11-17, **DB unlink pending approval**: 1991 Bianchi Grizzly
-  spec **19546**, `SunTour XC-Pro`, currently links to **3628 HB-XP00-R**,
-  specifically a threaded rear freewheel hub. Original Japanese table p.9
+- Applied/validated 2026-11-17, **user approved**: 1991 Bianchi Grizzly
+  spec **19546**, `SunTour XC-Pro`, unlinked **3628 HB-XP00-R -> NULL**.
+  The former link specified a threaded rear freewheel hub. Original Japanese table p.9
   prints the group name, without a front/rear code. Stored cluster **19547 ->
   1222** is a cassette inference, not independent proof of a hub code. Scoped
   Grizzly/1991 NULL override prevents a unique future hit selecting a hub

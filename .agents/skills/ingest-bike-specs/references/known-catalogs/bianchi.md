@@ -633,7 +633,7 @@
   Deore DX crank (no FC-M650 row), Deore XT "Competition" pedals, SunTour Quattro FD / RD, Modolo Quattro brakes, Campagnolo Sigma
   and Omega XL rims (only Strada / clincher rows), Vittoria Nuovo Pro (only the 1984-88 Nuovo Pro 260 and 1996 R.T. rows).
 
-### Grizzly hub review — 2026-11-17, correction pending approval
+### Grizzly hub review — 2026-11-17, correction applied
 
 Re-read [original Japanese specification table p.9](https://2velo.com/wp-content/uploads/2014/03/1991-catalog-p0911.jpg).
 The Grizzly row names SunTour XC-Pro hubs and a SunTour 12-28T seven-speed
@@ -642,7 +642,7 @@ independently establish threaded versus cassette construction. Enlargement of
 the 400px scan aids reading but supplies no missing model number.
 
 Live bike **1147**, source **358**, hub spec **19546** (`Hubs`, raw label `Hubs`,
-`SunTour XC-Pro`) links to **3628 HB-XP00-R**, a specific threaded rear hub.
+`SunTour XC-Pro`) formerly linked to **3628 HB-XP00-R**, a specific threaded rear hub.
 Cluster **19547**, `SunTour 12-28T 7-speed`, links to cassette **1222 CS-AP00-S7U**.
 The links are incompatible if both refer to the rear wheel; neither generic
 group text nor the previously inferred cassette mapping identifies a numbered hub.
@@ -651,18 +651,23 @@ was re-read from the held scan: it distinguishes HB-XP00-R's BC 1.37x24 thread
 from FH-XP00-7U / -6R freehubs and their CS-AP00 cassettes. It does not identify
 the 1991 Japanese bike's fitment. Do not infer 11016 or extend its 1990 dates.
 
-**Proposed: 19546 component_id 3628 -> NULL**, preserving text, labels, sources
+**Applied 2026-11-17, user approved: 19546 component_id 3628 -> NULL**, preserving text, labels, sources
 and all component records. Scoped Grizzly/1991 NULL guard added; normal matching
-outside that bike/year preserved. No DB change applied in this review. Keep
+outside that bike/year preserved. Keep
 19547's existing link pending independent mechanism/model evidence; this review
 does not establish it as correct. Need a period Bianchi parts list or original
 front/rear hub markings. Restoration if later justified: guarded NULL -> 3628
 on the same spec/bike/source/text, and revise the scoped guard.
 
-Prepared SQL is tracked in TODO. Full fixed-snapshot comparison across 96 loaded
-catalogues / 21,176 specs showed no generated mapping or finding changes; tests
-passed. This supersedes treating the stored cassette link as proof of the actual
-mechanism in the earlier cross-catalog drift triage.
+Full fixed-snapshot comparison across 96 loaded catalogues / 21,176 specs showed
+no generated mapping or finding changes from the guards; tests passed. Application
+changed this spec and Battaglin 12943 only, two rows total; rerun changed zero.
+Readback confirmed the original text, label/raw label and source 358; cluster
+19547 remains on 1222. Quality check found zero structural errors; remaining
+generator/live losses are the 16 Huret Rival specs. Completed unlink task removed
+from TODO; hub/cluster identification evidence remains open. Temporary SQL removed
+after validation. This supersedes treating the stored cassette link as proof of
+the actual mechanism in the earlier cross-catalog drift triage.
 
 ## 1992 Bianchi (JP) — `1992_bianchi_spec.csv` (8 bikes, 96 specs, 30 linked)
 

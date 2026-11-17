@@ -42,7 +42,7 @@
 - Regression: all 61 other catalogues regenerated with identical link counts.
 
 
-## Alessandro Nisi Corsa review — 2026-11-17, correction pending approval
+## Alessandro Nisi Corsa review — 2026-11-17, correction applied
 
 Re-read [the original Alessandro specification sheet](https://saarf.london/wp-content/uploads/2014/02/05a1.jpg),
 from the catalogue linked above. Cerchi / Rims prints only **Nisi Corsa**:
@@ -53,16 +53,21 @@ contains several numbered road rims (see Nisi maker notes); later **10608 Corsa
 Toro** also differs in construction. A compatible date alone selects neither.
 
 Live bike **759**, source **268**, spec **12943**, label/raw label `Rims`,
-value `Nisi Corsa`, currently links to **5131**. **Proposed: 5131 -> NULL**;
-no replacement row, component/date change, CSV edit or DB mutation in this review.
+value `Nisi Corsa`: **5131 -> NULL applied, user approved**.
+No replacement row, component/date change or CSV edit.
 Scoped Alessandro/1982 NULL override prevents a unique candidate reviving the
 unsupported assignment; matching elsewhere is preserved. Need a period numbered
 parts list or identifiable original rim. Restoration only if justified: guarded
 NULL -> 5131 for the same spec/bike/source/label/text, and revise the guard.
 
-This supersedes the initial "worth a second look" auto-link note above. Guarded
-SQL remains tracked in TODO for approval. All 96 loaded catalogues / 21,176 specs
-produce identical mappings/findings after both new guards; regression tests pass.
+This supersedes the initial "worth a second look" auto-link note above. Before
+application, all 96 loaded catalogues / 21,176 specs produced identical generated
+mappings/findings after both new guards; regression tests passed. Application
+changed this spec and Grizzly 19546 only, two rows total; rerun changed zero.
+Readback confirmed the original text, label/raw label and source 268. Quality
+check found zero structural errors; remaining generator/live losses are the
+16 Huret Rival specs. Completed unlink task removed from TODO; identification
+evidence remains open. Temporary SQL removed after validation.
 
 ## 1982 Vuelta — added 2026-11-12 (bike 1185, existing source 268)
 

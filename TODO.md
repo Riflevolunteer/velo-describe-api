@@ -22,12 +22,6 @@ after validation; retain what is still needed for unfinished work or review.
   code/construction and Bianchi spec 19546's actual front/rear hub codes; seek
   independent evidence for Grizzly cluster spec 19547's cassette identification.
   See the [bounded review](.agents/skills/ingest-bike-specs/references/known-catalogs/cross-catalog-notes.md#todo-link-drift-review--2026-11-17).
-- [ ] **Review and apply proposed unsupported-link removals:** 1991 Bianchi
-  Grizzly hub spec 19546 (3628 -> NULL) and 1982 Battaglin Alessandro rim
-  spec 12943 (5131 -> NULL). Guarded SQL awaits approval at
-  `/private/tmp/velo-quality-next-20261117.PYurIN/pending-unlinks.sql`, retained
-  for application/review. After approval, verify readback/idempotency, rerun
-  quality and link checks, update catalogue notes and remove temporary SQL.
 - [ ] **Persist link decisions and evidence:** distinguish confirmed, inferred,
   ambiguous, missing-source and intentionally unlinked cases so they can be
   revisited deliberately. Today `COMPONENT_OVERRIDES` `null` entries live only in

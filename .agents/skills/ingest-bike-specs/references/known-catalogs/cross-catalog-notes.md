@@ -785,7 +785,8 @@ ambiguous identities. Every remaining finding was identical to baseline.
 wrong candidates, broader competing titles and bike/year scope. SQL generation
 was not invoked; existing `bike-update.sql` was not overwritten.
 
-Remaining losses are unresolved identity questions, not approved removals:
+At the initial review, remaining losses were unresolved identity questions;
+subsequent approved removals are recorded below:
 
 - **16 generic Huret Rival rear specs on 4401**: 13958, 14439, 14782, 14801,
   15123, 15143, 15182, 15744, 15762, 8783, 8806, 16412, 16584, 16604, 16624,
@@ -794,10 +795,10 @@ Remaining losses are unresolved identity questions, not approved removals:
   review; do not force the matcher back onto 4401 merely to eliminate drift.
 - **12943**, 1982 Battaglin Alessandro `Nisi Corsa`: 5131 versus later 10608
   Corsa Toro constructions; plain Corsa does not establish eyelets/construction.
-  Subsequent source review below proposes clearing the unsupported 5131 link.
+  Subsequent source review below led to the approved 5131 -> NULL correction.
 - **19546**, 1991 Bianchi Grizzly `SunTour XC-Pro`: stored 3628 is a threaded
   rear freewheel hub, whereas this bike's cluster is mapped as a cassette.
-  Subsequent source review below proposes clearing the unsupported hub link;
+  Subsequent source review below led to the approved 3628 -> NULL correction;
   the cassette mapping itself is inferred, not independent mechanism evidence.
 
 Two NULL backfills **applied 2026-11-17, user approved**:
@@ -827,12 +828,12 @@ unresolved losses listed above; no missing or ambiguous identities. Completed
 backfill tasks removed from TODO, including the older Zeus candidate entry.
 SQL and all task scratch files removed after validation.
 
-### Next drift questions — 2026-11-17, link removals pending approval
+### Next drift questions — 2026-11-17, link removals applied
 
 Re-read original Bianchi p.9, SunTour 1990 p.10 and Battaglin Alessandro sheet;
 source URLs and identity/restoration details are in `bianchi.md` (Grizzly hub
-review) and `battaglin.md` (Nisi Corsa review). These support proposed
-**19546: 3628 -> NULL** and **12943: 5131 -> NULL**, pending user approval.
+review) and `battaglin.md` (Nisi Corsa review). **User approved and applied**:
+**19546: 3628 -> NULL** and **12943: 5131 -> NULL**.
 No numbered replacement is established. In particular, Grizzly's stored cassette
 link is an inference, so it cannot justify choosing a specific freehub.
 
@@ -843,15 +844,21 @@ Fixed read-only snapshot comparison across 96 loaded catalogues / 21,176 specs
 was identical before/after: zero gains or changed targets, 18 unresolved losses,
 no missing/ambiguous identities. `npm test` passed all eleven test files.
 Read-only preflight matched exactly the two intended rows with the complete
-SQL guards; no DB writes were made. Generator SQL was not invoked.
+SQL guards before application. Generator SQL was not invoked.
 
 Checked all generic Rival bikes' stored gearing: no further proven capacity
 conflict; six have incomplete tooth ranges. Exact follow-ups recorded in Huret
 notes and TODO; no generation/cage identification made and no Rival links changed.
 
-Guarded transactional SQL, expected one row per UPDATE, old values and restoration
-instructions retained for approval at
-`/private/tmp/velo-quality-next-20261117.PYurIN/pending-unlinks.sql`.
-TODO retains review/application and the actual identity evidence still needed.
-Other task scratch (downloads and comparison inputs) removed after recording
-source URLs and validation; only the pending SQL is retained.
+Guarded transactional SQL changed exactly two `bike_spec` rows; rerun changed
+zero. Readback confirmed both NULLs, original values/labels/sources, and Grizzly
+cluster 19547 still on 1222. Restoration details and old links are recorded in
+the brand notes above; restore only if deliberately justified by new evidence.
+
+Post-application quality check at **08:47 UTC**: zero structural errors and the
+same 1,948 review findings by check (1,563 incomplete dates, 326 date conflicts,
+35 broad Freewheel labels, 24 descriptions at limit). All 96 loaded catalogues /
+21,176 specs compared: 21,160 unchanged, zero gains or changed targets, and
+16 remaining losses, all generic Rival rears; no missing/ambiguous identities.
+Completed application task removed from TODO; the actual identity evidence
+still needed remains open. SQL and all task scratch removed after validation.
