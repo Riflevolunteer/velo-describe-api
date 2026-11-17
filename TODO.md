@@ -7,7 +7,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
 - Design multiple component evidence references, preserving `source_ref` as the last source that changed a row.
 - Review current metadata/date flags with `node scripts/quality-report.js`; verify identities before changing dates or links.
-- Review manual merge candidates: Simplex 4634/4641–4643, 2556/2557; Nervar 1657/1659; Pelissier 3457–3459; Belleri 2791–2794; Weinmann 1103/1104; Campagnolo 1472/1473.
 - Inspect Simplex fronts 2590/2591 against 2587/7282; inspect Campagnolo 2295 against 2299/2300; register the reviewed 2297/2305 distinction. [Specimen notes](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#reviewed-specimen-and-variant-distinctions).
 - Transcribe SunTour Edition No.89 Scrambler II/LV-3, PDF pp.40–41; compare RD-SR10 with 7956–7958. [SunTour notes](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md).
 
@@ -41,6 +40,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
 
+- **Manual duplicate identities:** obtain comparable bend/clamp dimensions or model codes for Belleri 2791/2792/2793, shell dimensions/model evidence for Pelissier 3457/3459, and reach/model measurements for Weinmann 1103/1104. [Review](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#manual-merge-candidate-review--2026-11-17).
 - **Spidel pedals:** obtain a period 700 RA cage-material/code crosswalk or coded Peugeot fitment for specs 10671/10691/11032/11053. [Group-box review](.agents/skills/ingest-component-catalog/references/known-catalogs/maillard.md#spidel-700-ra-group-box-review--2026-11-17-read-only).
 - **Mavic:** obtain CXP30 specimen/edition weight attribution, dated Open Pro 5099/5100 decals/finishes and a dated 31.8 mm specification for 870 clamp 2410. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md).
 - **Huret/Sachs Huret:** recover sheet 501.1 DFE for description enrichment; obtain coded fitment/specimens for New Success, Rival, Rider, Duopar/Eco and Avant, plus dated ARIS evidence. [Exact cases](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md).

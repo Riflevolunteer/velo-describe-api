@@ -1,5 +1,15 @@
 # Campagnolo catalogs processed so far
 
+## Gran Sport Bianchi-marked crank consolidation — 2026-11-17
+
+User approved and applied **1473 -> 1472**, retaining the Bianchi-marked outer
+ring and 608 g actual 53/42 specimen weight in 1472's description. Dates remain
+1980–1985, source_ref 8 and the stable 1472 identity are unchanged. Spec 1045
+and the generic Gran Sport generator override now use 1472; rerun changed zero
+rows, all loaded mappings and DB integrity validated, and all 13 test files passed.
+This supersedes historical references below to 1473 as a separate live row.
+[Evidence, exact old/new fields and validation](cross-catalog-notes.md#campagnolo-1473---1472--applied-and-validated-2026-11-17).
+
 ## Campagnolo Catalogo N. 12 — late 1953 (Campy1953_catalog12.pdf, 28 pp)
 
 - Italian, Vicenza. Lugano 1953 world championship page dates it. Rod-shift

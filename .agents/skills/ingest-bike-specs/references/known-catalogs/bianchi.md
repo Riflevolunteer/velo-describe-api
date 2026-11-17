@@ -86,6 +86,13 @@ API listing, PDF and two page renders removed after documenting these findings.
 
 ## 1984 Bianchi — `1984_bianchi_spec.csv` (6 bikes, 77 specs, 24 linked)
 
+- Gran Sport consolidation, 2026-11-17, user approved: Campione d'Italia
+  Crankset spec **1045** (`Campagnolo Gran Sport`) moved **1473 -> 1472**.
+  Bianchi-marked chainrings and the 608 g actual specimen fact survive in the
+  consolidated component description; the generic catalogue value does not
+  establish that ring marking on this particular bike. All other bike/spec
+  fields and links unchanged; full loaded mapping comparison validated.
+
 - Source (added 2026-10-21): ebykr.com "Bianchi Catalog of about 1984" (https://ebykr.com/library/bianchi-1984-catalog/), 9 pages in English, published in Italy by Bianchi; scans from Mark Bulgier's archive (bulgier.net/pics/bike/Catalogs/Bianchi-84/, posted 2001, also on 2velo.com). It carries no year; ebykr estimates 1984 from the Super Pista text citing a 1983 World Championship gold medal. Its models are exactly the six loaded. The catalogue names no export market, so IT is the publisher's country, still an inference for the intended market.
 
 - Looser translation than 1983. Repairs: Frame → Frame Material, "Fork

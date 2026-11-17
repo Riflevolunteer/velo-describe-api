@@ -2718,9 +2718,8 @@ const COMPONENT_OVERRIDES = {
     // align with the 1983 pick. Gran Sport crank: DB has a Bianchi-labelled row.
     'campagnolo record pista': 1505, // Campagnolo 1051, Record Pista (144bcd)
     'gipiemme pista': 1593,
-    // Year split stands in for brand: the only 1983+ user is the 1984 Bianchi
-    // (Bianchi-labelled row); the 1982 Raleigh takes the plain 0304.
-    'campagnolo gran sport': [{ from: 1978, to: 1982, id: 1472 }, { from: 1983, id: 1473 }], // Campagnolo 0304, (Nuovo) Gran Sport (144 BCD)
+    // Plain and Bianchi-marked 0304 cranksets share the consolidated family row.
+    'campagnolo gran sport': [{ from: 1978, id: 1472 }], // 0304 Gran Sport, including Bianchi-marked chainring variant merged from 1473
     'campagnolo nuovo record': [{ from: 1967, to: 1987, id: 1496 }], // 1982 Raleigh Team Replica: Campagnolo 1049, (Nuovo) Record Strada v4
     // 1987 Bianchi. "Master Gran Premio" substring-hit Master; the catalog
     // names the Gran Premio.

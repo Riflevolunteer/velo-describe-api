@@ -1,6 +1,204 @@
 # Cross-catalog notes catalogs processed so far
 
+## Manual merge candidate review — 2026-11-17
+
+Reviewed all **19 rows / seven groups** from the manual TODO against live DB
+fields, all 19 original specimen listings and their main photographs. The
+read-only duplicate report initially proposed **12 cosmetic pair comparisons**;
+these were candidates, not proof of identity. None of the 19 rows has a stored
+component image. Only 1472/1473 have bike links (eight/one). All other candidates
+have zero links and no generator overrides referencing their IDs.
+
+### Original evidence
+
+The links below preserve every specimen UUID. Dimensions and dating from these
+listings are owner reports, not independently measured manufacturer specifications.
+Main photos were inspected directly; additional photo links were inventoried
+but not exhaustively inspected. No manufacturing date was established by this review.
+
+| Component/source | Observed or reported distinguishing evidence |
+| --- | --- |
+| [1103](https://www.velobase.com/Pages/ViewComponent.aspx?ID=64C7220F-3605-49BC-8630-A69B8ABBE6E4) | Black-label Symetric; source lists long reach/max 75 mm, photograph lacks pads. |
+| [1104](https://www.velobase.com/Pages/ViewComponent.aspx?ID=C7A5BFBD-24A3-42A3-AF2D-9B4F50442F66) | Red-label Symetric pair; source lists standard reach without measurements. |
+| [1472](https://www.velobase.com/Pages/ViewComponent.aspx?ID=DF8B9AD3-4872-48FF-AC3E-CF96516AD7C4) | Maker illustration labelled 0304; Gran Sport, 144 BCD, G.S. crank markings. |
+| [1473](https://www.velobase.com/Pages/ViewComponent.aspx?ID=969DB898-AE0D-4E72-A14E-ACF1DEA0181F) | Same Gran Sport crank family with B-marked outer ring; 608 g actual, 53/42 including dustcaps. |
+| [1657](https://www.velobase.com/Pages/ViewComponent.aspx?ID=2A73237F-5DD8-4677-9EC5-B7E64869E406) | 122 mm BCD reported; main photo is bare arms/spider; listed 420 g has no comparable assembly basis. |
+| [1659](https://www.velobase.com/Pages/ViewComponent.aspx?ID=C50B7A4C-44F7-4D13-A59A-75D4A82E6AE3) | 128 mm BCD reported; main photo includes both rings; white finish, 590 g. |
+| [2556](https://www.velobase.com/Pages/ViewComponent.aspx?ID=DFF00D8A-0E7A-4411-87AA-5F05913C9DEE) | Three-point-star badge, plastic-knob lever, photographed on bike. |
+| [2557](https://www.velobase.com/Pages/ViewComponent.aspx?ID=803B4C67-0BEB-4F8A-9863-0554E89C1B24) | Wreath badge, plastic-knob lever, photographed loose with wrapper. |
+| [2791](https://www.velobase.com/Pages/ViewComponent.aspx?ID=8BDFB085-9217-4A30-92E8-1E72F783EDD6) | Polished drop bar, BF diamond marking; reported 25.0 mm clamp, 40 cm. |
+| [2792](https://www.velobase.com/Pages/ViewComponent.aspx?ID=B89B3BBF-5FD8-4A49-9D44-14F7B7630ACC) | Anodised drop bar, BF wreath marking; reported 25.0 mm clamp, 39/42 cm. |
+| [2793](https://www.velobase.com/Pages/ViewComponent.aspx?ID=BCBAD111-9D59-421D-B7A1-48B202E61A81) | Black anodised drop bar; reported 40 cm, no clamp dimension. |
+| [2794](https://www.velobase.com/Pages/ViewComponent.aspx?ID=AF9B7E8F-6983-4B4B-B988-367619AF4C07) | Clearly flat/riser bar; reported 25.4 mm clamp. |
+| [3457](https://www.velobase.com/Pages/ViewComponent.aspx?ID=0A2D4D5C-5558-42B8-9AA8-3AF38C3C9955) | Front/rear steel hub set; no oil port, twin birds/CP. |
+| [3458](https://www.velobase.com/Pages/ViewComponent.aspx?ID=85C489AE-1AB4-4B65-A261-7034D1DA4602) | Front/rear set with visible oil ports and retaining clips; rear reported 115 mm/36H. |
+| [3459](https://www.velobase.com/Pages/ViewComponent.aspx?ID=36C772EF-237C-4DAF-9EC7-C2F7A25CC9AF) | Boxed front/rear set, no oil port, Pelissier wording; 36H reported. |
+| [4634](https://www.velobase.com/Pages/ViewComponent.aspx?ID=7723400E-AD8C-479F-AED4-6A3BA3936965) | Star badge and JUY patent inscription; source attributes version 4J. |
+| [4641](https://www.velobase.com/Pages/ViewComponent.aspx?ID=3A1A0875-8AD7-4627-B54B-6AFAA79F4BCA) | No pivot badge in main photo, winged SIMPLEX arm; source tentatively 4F, plastic pulleys possibly replaced. |
+| [4642](https://www.velobase.com/Pages/ViewComponent.aspx?ID=06070CA5-F48A-4273-B416-F1EC5E284D91) | Wreath badge and JUY patent inscription; source attributes version 4I; 215 g actual. |
+| [4643](https://www.velobase.com/Pages/ViewComponent.aspx?ID=CE38C972-85EE-4634-ADA2-877012CDD5FF) | Wreath badge, winged SIMPLEX arm; boxed specimen; 368.5 g is a source specification, not a measured equivalent. |
+
+### Decisions and remaining discriminants
+
+- **Simplex 2556/2557:** retain star/wreath badge versions, consistent with the
+  existing treatment of dating markings (including Competition 2551). Both use
+  plastic lever knobs; a shared family name does not establish identical dated
+  versions. Retain current 1959–61 / 1960–61 ranges as legacy source claims,
+  not newly verified production boundaries.
+- **Simplex 4634/4641/4642/4643:** retain the distinct star/wreath/plain-pivot
+  and JUY/winged-SIMPLEX marking configurations. The source's 4F/4I/4J
+  attributions are secondary identifications, not newly verified catalogue codes.
+  In particular, 4641's owner warns that its plastic pulleys may be replacements.
+  Do not merge generations by treating pulley material or overlapping broad
+  source date ranges as identity proof. Preserve the independent 215 g measured
+  fact on 4642; do not average it with the other source weights.
+- **Nervar 1657/1659:** keep apart on the conflicting **122/128 mm BCD**
+  reports. The main photos compare bare arms against a complete white crankset,
+  so **420/590 g is not independent proof of a construction difference**.
+  A finish-only merge is unsupported until the bolt circles are measured or
+  identified by model. The white listing's informal 1985 city-group claim does
+  not by itself authorise changing its legacy 1980 bucket.
+- **Pelissier:** all three photographs show front/rear sets; axle position does
+  not distinguish these records. Keep **3458** apart from **3457/3459** because
+  of its visible oil ports and retaining clips. **3457/3459** remain unresolved:
+  CP versus Pelissier lettering is insufficient for a merge of otherwise uncoded
+  shells without comparable shell/flange dimensions, axle/bearing construction
+  or a manufacturer model crosswalk. The illustrated box is not a dated code
+  crosswalk. No date changes from the broad 1909–1940/1930 claims.
+- **Belleri:** keep flat/riser **2794** apart from all three drop bars.
+  **2791/2792/2793** remain unresolved: material/family and nominal width do
+  not identify the bend; the black row lacks a clamp measurement, and the
+  available photographs have different viewpoints. Need comparable reach/drop,
+  clamp/sleeve dimensions or a model designation. Do not merge on finish alone.
+- **Weinmann 1103/1104:** unresolved, despite black/red labels. The first source
+  reports long reach/max 75 mm, the second standard reach without dimensions;
+  photographs do not supply a scale. Manufacturer source 85 distinguishes
+  Symetric **733/813/1023**, already represented by family row **8339**, so
+  family identity alone cannot assign both specimens to one reach. Do not merge
+  these into each other or into the broad family row until reach/model is
+  established. Source comments speculate late-1970s/early-1980s versus c.1973;
+  neither proves a replacement for the legacy 1970/1970 dates.
+
+The proven/retained distinctions above are registered as **11 exact pairs**
+in `REVIEWED_NOT_DUPLICATES`, rather than protecting an entire row and hiding
+unreviewed pairings. Only the three flagged rear-Simplex pairs plus its
+JUY/winged-arm pair are registered; already classified generation comparisons
+remain generations. Belleri drop/drop, Pelissier no-port/no-port and Weinmann
+comparisons stay visible for later evidence. Registry changes affect reporting,
+not component matching or any database rows.
+
+### Supported consolidation recommendation — subsequently approved and applied
+
+The application record below supersedes the preparation status in this original
+review. The evidence and restoration values remain applicable.
+
+**1473 -> 1472 Campagnolo 0304 Gran Sport** is the one supported merge under
+the established policy of folding ordinary marking variants into their family.
+Both records explicitly identify 0304 / 144 BCD and share G.S. crank construction;
+1473's outer ring bears Bianchi B markings. Its owner calls the exact ring
+provenance uncertain (possibly a cropped Record 753 or 753/GS); do not turn that
+suggestion into an asserted separate Campagnolo model. Preserve the B-marked
+configuration and its measured weight rather than discarding those facts.
+
+Keep survivor 1472's UUID `DF8B9AD3-4872-48FF-AC3E-CF96516AD7C4`,
+title/search text, brand 11/category 7/group 4, source_ref 8 and 1980–1985
+dates. Retire 1473's UUID `969DB898-AE0D-4E72-A14E-ACF1DEA0181F`
+only after reference/mapping checks and approval. Source 8's 1985 discontinuation
+note remains applicable; this review supplies no new production boundaries.
+Recommended consolidated description (check schema length at preparation):
+
+> 144 mm BCD alloy double crankset with fluted arms and spider. Variants include a Bianchi-marked outer ring; that 53/42 specimen weighs 608 g including dustcaps. Listed unavailable, replaced by Victory, in the 1985 catalogue.
+
+Exact old descriptions, for a future guarded change/restoration:
+
+- **1472:** `Campagnolo 0304, (Nuovo) Gran Sport (144 BCD), Italy Marked no more available, replaced by the Victory range, in Catalogue n. 18 (1985).`
+- **1473:** `Campagnolo 0304, (Nuovo) Gran Sport (144 BCD; bianchi labeled), Italy, 608 grams (Actual),for 53/42; incl. dustcaps`
+
+Both have search text `Campagnolo 0304 Gran Sport`, dates 1980–1985 and the
+same brand/category/group; 1473 has source_ref 1. Its sole bike reference is
+**spec 1045**, 1984 Bianchi Campione d'Italia, `Campagnolo Gran Sport`.
+Redirecting it to the broader family avoids implying that this generic text
+proves B-marked rings. The eight current 1472 specs are
+**5854/8076/5222/9067/9322/4546/4635/5732** and should remain on 1472.
+The ranged Cranksets override `campagnolo gran sport` currently chooses 1472
+through 1982 and 1473 from 1983; consolidate it onto 1472 while checking all
+loaded CSV mappings. Other explicit Gran Sport overrides already use 1472.
+Before application, verify all references, simulate the complete mapping delta,
+preserve source provenance in these notes, prepare guarded/idempotent SQL and
+obtain review of that concrete change set. **No mutation SQL prepared/applied.**
+
+The original manual-review TODO has been replaced with the concrete Campagnolo
+preparation task and the remaining dimension/model evidence gaps. No DB, source,
+CSV or bike-link changes. Task specimen HTML/photo downloads were removed after
+recording URLs and findings.
+
+Validation: `node --test test/duplicate-classify.test.js` and `git diff --check`
+passed. Live `duplicate-report.js --merge` scans the same **10,597 component
+rows**, now reporting **five cosmetic comparisons in four groups**: Pelissier
+3457/3459, Belleri 2791/2793 and 2792/2793, Weinmann 1103/1104, Campagnolo
+1472/1473. Exactly seven previously flagged comparisons disappeared; four
+additional registered pairs protect reviewed distinctions outside that initial
+cosmetic list. No matcher changes or catalogue remapping. Full mapping simulation
+remains part of the pending Campagnolo change preparation.
+
+
 ## Retired component identities and merge evidence
+
+### Campagnolo 1473 -> 1472 — applied and validated 2026-11-17
+
+Applied on the user's explicit approval of the preceding recommendation.
+Guarded transactional SQL updated **1472's description**, moved **spec 1045**
+from 1473 to 1472 and deleted **1473**. Exactly one row changed in each operation;
+rerun changed **zero component/spec rows**. The temporary assertion table forced
+rollback on unexpected affected counts. Schema/reference inspection found
+component_id only in component_detail and bike_spec; neither candidate had an
+image. No other reference required migration.
+
+Survivor **1472** retains UUID `DF8B9AD3-4872-48FF-AC3E-CF96516AD7C4`,
+title `Campagnolo 0304, (Nuovo) Gran Sport (144 BCD)`, search text
+`Campagnolo 0304 Gran Sport`, source_ref **8**, brand **11**, category **7**,
+group **4**, dates **1980–1985**, image NULL. Its exact new description is
+**224 characters**:
+
+> 144 mm BCD alloy double crankset with fluted arms and spider. Variants include a Bianchi-marked outer ring; that 53/42 specimen weighs 608 g including dustcaps. Listed unavailable, replaced by Victory, in the 1985 catalogue.
+
+The supporting specimen UUID/URL and its uncertain ring provenance are retained
+in the review above; source 8 still supplies the maker's model/discontinuation
+evidence. No catalogue/source row was inserted or altered.
+
+Retired **1473**, UUID `969DB898-AE0D-4E72-A14E-ACF1DEA0181F`, had exact title
+`Campagnolo 0304, (Nuovo) Gran Sport (144 BCD; bianchi labeled)`, source_ref **1**,
+image NULL, the same search text/brand/category/group/dates as the survivor.
+Its exact old description and survivor's old description are recorded above.
+For deliberate restoration, reinsert this complete retired identity before
+moving spec 1045 back, and restore the survivor description guarded by the new
+description/UUID. Spec **1045** retains bike **73**, label **38**, value
+`Campagnolo Gran Sport`, source_ref **43**; only component_id changed. Restore
+the old generator override ranges **1978–1982 -> 1472 / 1983 onward -> 1473**
+only if deliberately reversing the merge.
+
+The generator now maps bare `campagnolo gran sport` to **1472 from 1978 onward**,
+retaining the old lower limit. Other Gran Sport overrides were already on 1472.
+The existing eight survivor links stayed unchanged; total survivor usage is
+nine. Simulation over all **98 loaded catalogue CSVs / 21,382 paired specs**
+found exactly one generated target change: 1984 Bianchi Campione d'Italia,
+Crankset `Campagnolo Gran Sport`, **1473 -> 1472**. No gained/lost mappings.
+
+Live validation at **2026-11-17T18:19:50.790Z** matched that simulation exactly.
+Generator/live comparison retains **21,367 unchanged**, the same **15 pre-existing
+losses**, zero gains/changed targets/missing/ambiguous identities. Whole-DB quality
+is unchanged: **0 structural errors**, **1,964 review findings** (1,578 incomplete
+dates, 326 linked date conflicts, 35 broad Freewheel labels, 25 descriptions at
+limit). Exact full-row comparisons of both candidates and every bike_spec, plus
+all quality-report tables, found only the approved description/link/deletion.
+The component count fell **10,597 -> 10,596**. The duplicate report now retains
+only the four unresolved Pelissier/Belleri/Weinmann comparisons; the Gran Sport
+pair is gone. `npm test`: **13 files passed**. `git diff --check` passed.
+
+Removed the completed Campagnolo preparation task from TODO; the other manual
+candidate evidence gaps remain open. No source CSV or generated SQL file was
+changed. Task SQL, snapshot/report files and throwaway validation scripts were
+removed after validation; restoration fields and lasting evidence remain here.
 
 These identifiers preserve provenance for rows removed during the October and
 November 2026 duplicate reviews. They identify retired rows, not new merge

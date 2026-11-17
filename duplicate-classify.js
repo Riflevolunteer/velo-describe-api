@@ -208,6 +208,18 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  // Manual specimen review, 2026-11-17; cross-catalog-notes.md.
+  [1657, 1659], // Nervar: conflicting 122/128 mm BCD; bare-arm vs complete-set weights are not comparable
+  [2556, 2557], // Simplex Competition: star vs wreath dating badges, retained as versions
+  [4634, 4642], // Tour de France: star vs wreath badge, separate documented versions
+  [4634, 4643], // Tour de France: star/JUY vs wreath/winged SIMPLEX arm
+  [4641, 4643], // Tour de France: plain pivot vs wreath badge; possible replacement pulleys on 4641
+  [4642, 4643], // Tour de France: JUY patent inscription vs winged SIMPLEX arm
+  [3457, 3458], // Pelissier: no oil port vs oil port and retaining clip
+  [3458, 3459], // Pelissier: oil port/clip vs no oil port; not just CP/Pelissier lettering
+  [2791, 2794], // Belleri: drop bar vs flat/riser bar
+  [2792, 2794], // Belleri: drop bar vs flat/riser bar
+  [2793, 2794], // Belleri: black drop bar vs flat/riser bar
   [11428, 11429], // Ariake 77-17 vs 77-17-IS: separate codes in 1979/80 Miyata tables; miyata.md, 2026-11-17
   // Decisions already recorded in TODO/catalogue notes, registered 2026-11-13.
   [16, 17], // Cambio Rino: photographed English-thread cups vs Italian-thread complete set
