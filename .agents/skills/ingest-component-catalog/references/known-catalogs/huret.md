@@ -1090,7 +1090,7 @@ and `/tmp/rival-specimen-0.jpg` through `-2.jpg`.
 
 The later **1987 US Ventoux detail recovered** section below supersedes the
 "no supported replacement" finding for spec 15762 only; its photo-supported
-correction is prepared, pending approval. The other fifteen fits remain unresolved.
+correction is applied and validated, user approved. The other fifteen fits remain unresolved.
 
 Follow-up 2026-11-17: checked stored crank/cluster text for all 16 remaining
 generic Rival rears on 4401. Ten provide both tooth ranges; calculated required
@@ -1178,7 +1178,7 @@ The PXR 80 identification and other 16 generic links remain in TODO. Temporary
 SQL, snapshots, comparison scripts and original review downloads/crops were
 removed after readback and idempotency validation.
 
-#### 1987 US Ventoux detail recovered — 2026-11-17, correction pending approval
+#### 1987 US Ventoux detail recovered — 2026-11-17, correction applied
 
 New usable evidence: fetched the original BikeBoomPeugeot US model pages directly,
 avoiding the failed Blogger proxy endpoints recorded above. [1987 US p.11](https://www.bikeboompeugeot.com/Brochures%20USA/Peugeot%201987%20USA%20Brochure/Peugeot%201987%20USA%20Brochure%20Page%2011.jpg)
@@ -1191,7 +1191,7 @@ puts both screws above the plate. This is a photo-supported identification by
 comparison; Peugeot's text prints `Huret rival white`, not the numbered code.
 The 52/42 and 13-24 gearing needs 21T capacity, compatible with the 28T row.
 
-**Proposed correction: spec 15762, bike 938, 1987 PH 501 Ventoux (US),
+**Applied, user approved: spec 15762, bike 938, 1987 PH 501 Ventoux (US),
 4401 -> 8957.** Existing label ID 17/raw label `Rear Derailleur`, exact value
 `Huret Rival, white`, source 312 and bike source 312 stay unchanged. Original
 updated_at was 2026-11-02 18:59:27 UTC. No component dates/definitions change;
@@ -1227,16 +1227,21 @@ Other evidence checked in this pass:
 
 Validation: fixed read-only snapshot over 96 loaded catalogues / 21,176 specs;
 only generated spec 15762 changed (NULL -> 8957). All other findings identical;
-pending live correction, report shows fifteen losses plus this changed target.
+before the live correction, report showed fifteen losses plus this changed target.
 All eleven test files pass, covering the new scope and existing PXR 80 NULL,
 front and coded-rear decisions. Read-only preflight matched exactly one row
-under all SQL guards. No DB writes; existing generated SQL file preserved.
+under all SQL guards. Existing generated SQL file preserved.
 
-Prepared transactional SQL retained for approval/application at
-`/private/tmp/huret-rival-review-20261117.sD9W7A/pending-ventoux-rival.sql`.
-TODO keeps it open until applied/read back and rerun clean. Downloads, crops,
-indexes and comparison scratch removed after recording source URLs and results;
-only that pending SQL remains. No changes proposed for the other fifteen links.
+Approved transactional SQL changed exactly one row; second run changed zero.
+Readback confirmed **15762 -> 8957**, same bike/label/raw label/text/source 312;
+PXR 80 spec 16963 remains NULL. Post-application quality report at **08:59 UTC**:
+zero structural errors; same 1,948 review findings by check (1,563 incomplete
+dates, 326 linked date conflicts, 35 broad Freewheel labels, 24 descriptions at
+limit). All 96 loaded catalogues / 21,176 specs compared: 21,161 unchanged,
+zero gains or changed targets, fifteen remaining losses, no missing/ambiguous
+identities. No component definitions/dates changed. Completed application task
+removed from TODO; the remaining identity/evidence actions stay open. SQL,
+downloads, crops, indexes and comparison scratch removed after validation.
 
 ## Elysee 5/6-speed and Elysee 7 systems — 2026-11-08
 
