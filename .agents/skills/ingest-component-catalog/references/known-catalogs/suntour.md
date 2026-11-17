@@ -1,5 +1,17 @@
 # SunTour catalogs processed so far
 
+## Palo Alto Cyclone II lever identity — 2026-11-17
+
+Palo Alto 1981/82 printed p.32 (image 19), retailer 32-101, is existing
+**6282 LD-2300 Top-Mount (Symmetric)**. Its centrally paired slotted levers,
+endless clamp, recessed Allen bolts and automatic Synchro-Shift trim match the
+coded manufacturer photograph in [No.59 p.4](https://www.disraeligears.co.uk/site/suntour_catalog_no_59_-_page_4.html).
+LD-2350 **6266** is the separately pictured braze-on version; ordinary Cyclone
+side-mounted friction levers are separately sold as 32-104/105 on the retailer
+page. This supersedes the former no-row claim. Existing 6282 already has the
+correct specifications, 1981–85 dates and maker source 127: no DB change or new
+source. [Full evidence and scan-page correction](cross-catalog-notes.md#palo-alto-identity-review--applied-and-validated-2026-11-17).
+
 ## XC Sport CB-6600 early evidence — 2026-11-15, read-only review
 
 - Manufacturer *Inside Line*, **Vol.5 No.2, Fall 1985**, hosted by MOMBAT:

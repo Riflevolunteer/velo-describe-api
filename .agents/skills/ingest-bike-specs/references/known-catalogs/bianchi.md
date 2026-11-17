@@ -586,9 +586,36 @@
 - Source: https://labibleduvelocataloguesbianchi.blogspot.com/p/bianchi-1978.html (5 scans at 960px, no larger copy served: clothing page, Barcellona, Super-Turismo, Rekord 748 / 746 / 745, Specialissima Super-Leggera / Professionale and Campione del Mondo CX). Italian text, no prices: `data_source` 263, country IT inferred. Model codes in titles as 1973 ("Rekord/748 (00.4.60)").
 - CSV written by hand from enlarged crops, translated to English as 1973. "flange normali" -> "normal flange", "bassi" -> "short reach", "a richiesta" sizes -> "Made to measure". Packed gross weights ("peso lordo") not recorded.
 - Scope: Super-Turismo 10 velocita (00.4.47) left out as a city bike (T.T.T. "Rekord Inglese" upright bars, fenders, ESGE rack, kickstand, chain guard, lights), as the 1973 Ghisallo. Specialissima Professionale (00.5.11) kept as a bare row: the catalogue shows it with the Super-Leggera and only says packaging and weight are as 00.4.30.
-- New overrides (all ranged): Super Record cranks -> 1509 1049/A, Record Strada crank -> 1496; Super Record "bassi" brakes -> 7005 4061/1 short reach; Universal Competizione/77 -> 1083 Mod. 77, Competizione CX -> 1086 CX; "normal flange" Record hubs -> 3259 1034 low flange; Super Record Strada pedals -> 3716 4021, Record Super Leggeri -> 3709 1037/a; Record Strada seatpost -> 5749; Record BB -> 30 1046/a; Regina Extra Oro chain -> 1385; Regina Extra Oro 5-speed -> 2182, Extra 5-speed -> 8171. "Mavic special" set to null (substring hit Service des Courses 5108). No other catalogue's link count changed.
+- New overrides (all ranged): Super Record cranks -> 1509 1049/A, Record Strada crank -> 1496; Super Record "bassi" brakes -> 7005 4061/1 short reach; Universal Competizione/77 -> 1083 Mod. 77, Competizione CX -> 1086 CX; "normal flange" Record hubs -> 3259 1034 low flange; Super Record Strada pedals -> 3716 4021, Record Super Leggeri -> 3709 1037/a; Record Strada seatpost -> 5749; Record BB -> 30 1046/a; Regina Extra Oro chain -> 1382 (originally 1385, merged into 1382 on 2026-10-26); Regina Extra Oro 5-speed -> 2182, Extra 5-speed -> 8171. "Mavic special" set to null (substring hit Service des Courses 5108). No other catalogue's link count changed.
 - Judgement calls kept: Super Record front -> 2313 1052/SR although the row starts 1979 (see TODO); "Ambassador" headset -> 9159 Ofmega 3150 Ambassador; bare "Campagnolo" CX pedals / seatpost via the existing 3708 / 5749 overrides.
-- Left unlinked: T.T.T. bars and posts, Clement tubulars, Regina "Extra Oro 50 Record" chain (Extra 50 Oro vs Extra 50 Record), Regina Extra Oro 6-speed (no row), Campagnolo "Sport" headset, Bianchi / Gipiemme house parts.
+- Left unlinked in the original pass: T.T.T. bars and posts, Clement tubulars,
+  Regina chains (resolved below), Regina Extra Oro 6-speed (subsequently linked
+  to existing 2194; the old no-row claim is superseded), Campagnolo "Sport"
+  headset, Bianchi / Gipiemme house parts.
+
+## 1978 Regina chain identities — 2026-11-17, applied and validated
+
+Re-read the [original catalogue](https://labibleduvelocataloguesbianchi.blogspot.com/p/bianchi-1978.html):
+scan 2 specifies `Regina Extra Tipo ORO 50 RECORD alleggerita` for Barcellona;
+scan 5 gives the same for Super-Leggera and `Regina Extra Super Corsa ORO` for
+Campione del Mondo CX. Regina C-78 p.5 distinguishes gold drilled 50 Record
+from ordinary gold 50 Oro. Palo Alto 1976 p.13 separately lists plain and
+drilled Super Corsa Oro, and 1979/80 p.20 calls the drilled chain Record Oro.
+This resolves the original chain ambiguity; see [maker/retailer construction
+evidence](../../../ingest-component-catalog/references/known-catalogs/regina.md#palo-alto-chain-identities-and-titanio-correction--2026-11-17-applied-and-validated).
+
+| Spec | Bike | Original stored value | Applied link |
+| --- | --- | --- | --- |
+| 12482 | Specialissima Barcellona (00.4.02) | Regina Extra Oro 50 Record, lightened | NULL →1381 Extra 50 Record |
+| 12503 | Specialissima Super-Leggera (00.4.30) | Regina Extra Oro 50 Record, lightened | NULL →1381 Extra 50 Record |
+| 12523 | Campione del Mondo CX (00.4.31) | Regina Extra Super Corsa Oro | NULL →1382 Extra 50 Oro |
+
+Added exact-value, 1978-only Chains overrides; preserved all value strings,
+CSVs, bikes and source 263. Guarded updates affected exactly these three rows;
+readback passed and rerun changed zero. The all-loaded-CSV comparison gained
+only these links before application; afterwards all 21,196 comparisons and
+15 pre-existing unrelated loss findings equal the pre-task baseline. All 13
+test files pass. Task-created SQL, scan downloads and comparisons removed.
 
 ## Judgement calls — 2026-10-30
 

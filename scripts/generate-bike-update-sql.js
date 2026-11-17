@@ -4199,6 +4199,9 @@ const COMPONENT_OVERRIDES = {
     'did': null, // 1987 Bianchi Sport SX: brand only; the hit is the bare D.I.D brand row 1355
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'regina extra oro': [{ from: 1970, to: 1980, id: 1382 }], // Rekord/748, /746: Regina Extra 50 Oro (1385 "Extra Oro (center drilled)" merged into it 2026-10-26)
+    // 1978 Bianchi: maker C-78 p.5 and Palo Alto 1976 p.13 distinguish gold drilled Record from undrilled Oro.
+    'regina extra oro 50 record lightened': [{ from: 1978, to: 1978, id: 1381 }],
+    'regina extra super corsa oro': [{ from: 1978, to: 1978, id: 1382 }],
     'union': null, // 1981 Kalkhoff: brand only; Union 486 is a model the catalogue doesn't name
     'sedissport 108 links delta treated': 1402, // 1980 Peugeot (NL): Sedis Sedisport Delta (1980)
     'sedisport 114 links delta treated': 1402, // 1982 Peugeot PBN / PFN / PKN / PVN / PXN 10: as the 108-link Delta

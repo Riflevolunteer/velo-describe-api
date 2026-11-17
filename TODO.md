@@ -94,8 +94,16 @@ Evidence and exact affected specs are in the
 - **Sachs Huret description enrichment:** recover/register technical sheet 501.1 DFE (Velopedia 1291; live download 404), then review the proposed 6110 description/source update recording selectable six/seven-speed MA85.5E right and retro-friction MA85.4E left; see the [compatibility evidence and retrieval limits](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#new-success-shifter-sixseven-speed-compatibility--2026-11-16-review). Enrich the other indexed/retro-friction shifter descriptions without merging configurations. Seek a manufacturer code crosswalk for RN500 / 54.01D (4414) and RNS00 (4415), and dated model evidence for approximately dated specimens.
 - **Sachs Huret New Success fitment:** identify Randonneur front **8851** and shifter **8849** (MA85.5E versus earlier MA85.2E) from a readable original code/selector photo or period Raleigh parts crosswalk. Reopen the image hunt only with new distinguishing material; see the [shifter comparison and front-provenance notes](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#raleigh-shifter-and-front-provenance-follow-up--2026-11-16).
 - **Component dates and metadata review:** use `node scripts/quality-report.js` for current IDs and reasons. See [scope, evidence and validation](README.md#checking-database-quality). Review identity/source evidence before changing links or dates; inspect the flagged descriptions before assuming truncation. Flagged dates are review candidates, not proven wrong identifications: distinguish catalogue attestation dates, later bike fitment, reused names and actual generation mismatches before changing dates or links. Narrow follow-up list: 3141 Tange Falcon (5 specs), 3388 Normandy Luxe Competition (2), 1398 Sedis Gold (2), 6899 Vittoria Pro L Slick (1), 1365 Everest Serie Special Oro (1), 9126 Gipiemme Crono Sprint (1).
-- Need a second source: Regina Gran Sport Super Corsa Oro chain, Sugino Maxy II and the Nuovo Tipo C1264/C1265 identification (Bikecology 1976); the Regina Super Corsa Oro chains and the Fiamme / Super Champion clincher rims (Palo Alto 1976). See cross-catalog-notes.md.
-- Not mapped yet: Ideale 88 / Titanium and OMAS sealed hubs (Bikecology 1980); the SunTour "syncro-shift" Cyclone II lever (Palo Alto 1981/82; no part number, no row).
+- Check Bikecology 1976 CH6/CH6a chain construction against the confirmed
+  undrilled Oro / drilled Record crosswalk; obtain independent evidence for
+  its Sugino Maxy II and Nuovo Tipo C1264/C1265 identities.
+- Verify source 117's original C/7 109/E provision for splined bodies on request
+  against Palo Alto's splined Oro five-/six-speed freewheels. Seek a period
+  labelled section/model crosswalk for the earlier unnamed Super Champion
+  16–22mm, 495/480g and Fiamme Yellow Label 500/485g clinchers; reopen the rim
+  search with that material. See the [identity evidence and remaining limits](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#palo-alto-identity-review--applied-and-validated-2026-11-17).
+- Identify Ideale 88 / Titanium and OMAS sealed hubs from Bikecology 1980
+  using model codes or distinguishing construction evidence.
 - **SunTour Edition No. 89 follow-ups** (source 427, see [suntour.md](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#suntour-bicycle-component-catalog-edition-no-89--printed-091988-2026-11-16)): (1) compare 3630 "XCD 6000 (freehub)" (unnumbered, 1988-90) with the new FH-XD10 row and the 1990 FH-XD11 before merging or retitling; (2) decide whether 6290 LD-5100 PLG (the 1988 English catalogue's PLG code, 150 g) was renumbered LS-5700 / LS-5800 in Edition No. 89 (150 g/pr), e.g. from a stamped 1989 specimen, before widening or retitling; (3) transcribe the Scrambler II (pdf p.40) and LV-3 (p.41) pages into rows, and check whether 7956-7958 RD-SR21 (1992) succeed RD-SR10.
 - **SunTour identity/date follow-ups** ([evidence and description validation](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#remaining-placeholder-descriptions--2026-11-16-read-only-review)):
   1. *Catalogue identity checks:* obtain a period crosswalk for 1046 CB-4700 (VeloBase specimen marked Superbe / 4700) and 2613 FD-3200 Le Tech. Compare 3611's confirmed cassette-freehub photo and 126mm specification with 7989 FH-SL01-7 before a merge/date decision; resolve the imported HB code. Find a 1986-87 non-index Sprint source for 171 BB-5000 before dating it; keep separate from BB-500 8819 (different taper and ball count).
@@ -119,7 +127,7 @@ Brand-only, size/material-only, either/or and house-part specs can correctly rem
 
 Named parts with no suitable period row or no source yet (worth a search if a source turns up):
 - Headsets and bars: ITM Mondial bars, stems 100 / 200 / 300 / Pro and 201 seatpost; Kusuki WP-RB bars and bare "WIN" stems; SR / Sakae 1983-87 seatposts (unidentified fluted models); Kalloy SP-248; PIVO de Luxe stem; Modolo Flyer. Searches 2026-10-20 found nothing for Tange Seiki, ITM, Kusuki or SR 1983-87 (only eBay listings; Reminiscence slugs `sakae82`-`sakae87`, `sr83`, `sr87`, `itm*`, `kusuki*` 404).
-- Derailleurs, brakes, chains: Simplex Competition crankset and seatpost, Super Criterium and Prestige stem shifters (no source on hand); Everest Special Cromo freewheel (needs an Italian Everest catalogue). Find a second source for the Regina Super Corsa Oro identification (see cross-catalog-notes.md).
+- Derailleurs, brakes, chains: Simplex Competition crankset and seatpost, Super Criterium and Prestige stem shifters (no source on hand); Everest Special Cromo freewheel (needs an Italian Everest catalogue).
 - Tyres and rims: Vittoria Open Tubular Flash M19 and Zefir 700x20C, Rigida Jade / Saphir, Ukai EX-17, FIR Tour / Pulsar, Dia-Compe 500G; the five Raleigh "Vredestein 700 x 20C Racer HP" specs (no Racer HP in the 1979 trade list); Raleigh "Mavic Sprint" (3, no row).
 - Peugeot gaps: San Marco Gilux race, Gauthier Rilsan, Sedis 1977-78 chains. Lyotard: 13 specs unlinked (5 Motobecane, 6 + 2 Peugeot 1977 DE); the only source found is an undated US-importer leaflet (bikeboompeugeot.com Lyotard Pedal Brochure.jpg) with 14F, 23, 36F, 45, 45CA and 460 but none of the models the specs name.
 - Raleigh: ET-QS hubs (3, in neither Sansin catalogue); 1986 Sansin "alloy sealed large flange" hubs; Sakae / SR 1983-87.
@@ -261,7 +269,7 @@ Remaining era mismatches: 1983 Bianchi Rallye generic "Mafac cantilever" -> 1001
 
 ### Chains
 
-- Open: Regina Gran Sport Super Corsa Oro / Extra Black naming and independent source confirmation; Sedis 1977-78 chain identifications.
+- Obtain period evidence for Sedis 1977–78 chain identifications.
 
 ### Bottom Brackets
 
@@ -406,7 +414,6 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
   Polish IRC tyre sheets indexed 1999. See the free-component shortlist in the
   [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - **bikalog.org bike-catalogue backlog:** review Koga Miyata 1980-2001, Nishiki 1987, Raleigh 1991, Colnago 1989 C35 and Bianchi road 1985 / 1986 for future bike ingestion.
-- **Palo Alto remaining identifications:** Regina chain / freewheel names, Fiamme / Super Champion clinchers and Sugino Maxy II; see `cross-catalog-notes.md`.
 
 ## Open: held-source follow-ups
 

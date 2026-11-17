@@ -1,5 +1,57 @@
 # Regina catalogs processed so far
 
+## Palo Alto chain identities and Titanio correction — 2026-11-17, applied and validated
+
+- Recovered the complete 16-page **1978 Catalogo C-78**, existing source 138,
+  from the user-provided `Downloads/Campagnolo_other_Vintage_Catalogs/1978ReginaExtra.pdf`.
+  This fills the old Wayback gaps (pp.2–4, 9, 12–15); it is the same edition,
+  not a new source. The one-page `1978ReginaKit.pdf` and four-page
+  `Downloads/ReginaExtra_1970s.pdf` add no missing retail-name crosswalk.
+- Maker pp.4–5: standard 50 Corsa; gold undrilled 50 Oro; gold 50 Record with
+  a hole in every outer plate; fully nickel-plated 50 Record S; 50 Titanio
+  has titanium plates and other components as 50 Record. P.4 gives the chain
+  families’ 0.26 / 0.23 / 0.18kg/m respectively. Titanium pins are not specified.
+- [Palo Alto 1976](https://labibleduvelodivers.blogspot.com/p/revue-2-1976.html)
+  p.13 (image 28) explicitly separates Extra Black C-01, Super Corsa Oro C-02
+  and **Super Corsa Oro (Drilled out) C-03**, with slimmer brass-plated plates
+  and a hole in each link. The 1979/80 p.20 original
+  `Downloads/PaloAlto 79-80/79-80Catalog0023.jpg` calls the drilled version
+  **Record Oro**, contrasting it with standard Oro; Titanium has titanium
+  sideplates and hardened pins. The 1981/82 p.28 (image 23) confirms the drilled,
+  bevelled Record Oro. Thus standard Black →1376, ordinary Oro →1382,
+  drilled Oro / Record Oro →1381, Titanium →1391. **8334 Record S** is nickel,
+  not the gold retail Record Oro. Retailer measured masses/link counts differ;
+  the positive construction distinctions establish identity.
+- Applied **1381**: appended `Palo Alto name: Record Oro.` to its existing
+  description, source_ref **391 →293**. Rest of description, title,
+  search_text and 1970–1988 dates unchanged. **1391**: replaced
+  `Regina Extra 50 Titanio, Italy, 250 grams (Actual). 1/2 x 3/32 racing chain, all-titanium plates and pins, 0.18 kg/m; sold as the Record III Titanium.`
+  with `Regina Extra 50 Titanio, Italy, 250g measured. 1/2 x 3/32 racing chain; titanium plates, other components as 50 Record, with hardened pins; 0.18kg/m. Also sold as Record III Titanium.`
+  Source_ref **247 →138**; title/search_text and 1970–1980 dates unchanged.
+  No assumption about hardened-pin material was added. Other chains unchanged.
+- Applied the confirmed 1978 Bianchi chain links **12482 / 12503 →1381** and
+  **12523 →1382** from NULL, preserving source 263 and original value strings.
+  Exact-value 1978-only overrides and [Bianchi evidence](../../../ingest-bike-specs/references/known-catalogs/bianchi.md#1978-regina-chain-identities--2026-11-17-applied-and-validated)
+  preserve these choices on regeneration. No broad Record / Oro matching rule.
+- **Splined Oro freewheels remain unresolved:** Palo Alto 1979/80 p.18,
+  1981/82 p.26 and c.1983/84 p.30 offer splined 5-/6-speed Super Corsa Oro
+  bodies (French-thread specials two-prong). C-78 pp.8–12 explicitly list
+  splines for Tripla Sport and show a two-notch normal remover. Source 117's
+  older notes mention splines on request; the original 12-page C/7 109/E
+  must be checked for the scope of that option before deciding whether the
+  retail bodies fit 2182/2194 or a later BX family. C-78 gives identical
+  ratio-specific Corsa/Oro weights, so mass alone cannot decide. Palo Alto 1976
+  pp.11–12 separately shows the earlier two-prong offering.
+- Targeted source 117 retrieval: recorded Retrobike download returned 403;
+  guessed VeloBase Resource_Tools download returned 404, exact-filename search
+  found no usable copy. This is an access limit, not evidence against splined
+  Oro. Reopen with the original 12-page scan or a period body/model crosswalk.
+- Live readback correct, guarded SQL rerun zero changes. All-loaded-CSV
+  comparison gained only the three intended Bianchi links before application;
+  final findings equal the pre-task baseline (15 unrelated losses, no new
+  losses or target changes). All 13 test files pass. Task-created downloads,
+  renders, SQL and snapshots removed; original Downloads files preserved.
+
 ## Regina Extra catalogue C/7 109/E, English edition (c. 1970) — retrobike.co.uk archive 1184, data_source id 117
 
 - Source: https://www.retrobike.co.uk/archive/1970-regina-catalogue.1184/download
@@ -35,7 +87,8 @@
   1950-52; catalogue says standard bodies have 2 notches, splined on
   request — unclear whether 2173 "wide 2 prong" is the 1970 part); 1381
   "50 Record ORO" and 1383 "Record Super Star" (no "Record" in the
-  catalogue; 1381 probably = 1382); 1377 "Extra Super Racing" (catalogue's
+  catalogue; the initial1381≈1382 suspicion is superseded by C-78's drilled
+  Record versus undrilled Oro distinction, confirmed above); 1377 "Extra Super Racing" (catalogue's
   «super racing» = the oro racing chain type, too indirect to merge);
   moped chains (54, 90 R, ASA 41/35, 120-122) and moped freewheels
   0090-0092 XY99 out of scope.
@@ -50,7 +103,8 @@
   (1978)", folder 90 "Regina"), read through the Wayback Machine. 16 pages:
   page 1 = item 5935, pages 2-16 = 5940 + 3(N-2); display image = item+2 at
   `g2_serialNumber=2` (453x640). Archived: cover, printed pp. 5, 6, 7, 8, 10,
-  11 and back cover; pp. 2-4, 9, 12-15 never were. Page 08's own item (5958,
+  11 and back cover; pp. 2-4, 9, 12-15 were not recovered through Wayback
+  (the complete local copy was subsequently reviewed above). Page 08's own item (5958,
   serial 2) is the 1237x1749 original, the only full-res scan archived.
   Cover "CATALOGO C-78" dates it. Back cover: Società Italiana Catene
   Calibrate Regina S.p.A., Viale Fulvio Testi 186, Cinisello Balsamo. IT/EN.

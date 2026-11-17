@@ -202,6 +202,14 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Chains
 
+- Confirmed and applied 2026-11-17: 1978 Bianchi **12482 / 12503**,
+  `Regina Extra Oro 50 Record, lightened` →**1381 50 Record**; **12523**,
+  `Regina Extra Super Corsa Oro` →**1382 50 Oro**. Original Bianchi scans
+  and maker/retailer construction evidence distinguish drilled gold Record
+  from ordinary undrilled Oro. Exact-value 1978-only overrides supersede the
+  earlier ambiguity; no generic Oro/Record fallback. See the
+  [evidence and validation](known-catalogs/bianchi.md#1978-regina-chain-identities--2026-11-17-applied-and-validated).
+
 - Decided 2026-11-17: 1986 Falcon Sierra / Everest specs **16332 / 16352**,
   `Black`, stay NULL. Colour alone establishes neither maker nor model. An
   explicit Chains `black` NULL guard prevents the unique substring candidate

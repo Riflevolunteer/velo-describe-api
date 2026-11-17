@@ -141,12 +141,101 @@ Left as weaker suspects: SunTour XCD 6000 bare vs coded rows (7 categories),
 1413 Dura-Ace 7400 chain, SunTour 2619 a-4050 vs 2633 Edge 4050 FD,
 Weinmann 1129 / 1130 570.
 
+## Palo Alto ingestion status review — 2026-11-17
+
+Reviewed the existing ingestion notes and live source registry when the user asked about ingesting Palo Alto. All five recorded editions are already processed:
+
+| Edition | Source | Existing component review |
+| --- | --- | --- |
+| 1976 | 245 | Printed pp.1–30, read and ingested 2026-10-21 |
+| 1978–79 | 292 | Component sections transcribed/reconciled, ingested 2026-10-30 |
+| 1979–80 | 293 | Component pp.1–33, ingested 2026-10-30 |
+| 1981/82 | 248 | Component sections within pp.2–37, read and ingested 2026-10-21 |
+| c.1983–84 | 294 | Undated edition, conservative dating and component reconciliation recorded 2026-10-30 |
+
+All five source rows remain in the live DB with current component references and US market codes. No bike rows are assigned to these sources; they were processed as component retail catalogues. Current source-reference counts are not original ingestion totals, because source_ref records the last source that changed a component. Original source URLs, page maps, changes and decisions remain in the edition entries below.
+
+The former TODO entry under archives with unread material was misleading: it described unresolved identities from already-read sources. Consolidated its remaining actions with the component-source follow-up instead of treating any edition as a new load. This initial status check did not re-read scans or change DB rows; the subsequent identity review below supersedes its open Regina-chain, narrow Super Champion clincher and Cyclone II questions. The 1978–79 pass found Mighty Custom as a second source but no Maxy II; the Maxy II question belongs to the earlier Bikecology evidence.
+
+## Palo Alto identity review — applied and validated 2026-11-17
+
+Re-read the relevant retailer scans against existing maker evidence. No new source,
+component, merge or date change. The five editions above remain processed sources.
+
+- **Regina chains:** [1976 p.13](https://labibleduvelodivers.blogspot.com/p/revue-2-1976.html),
+  image 28, distinguishes C-01 Extra Black, C-02 undrilled Super Corsa Oro and
+  C-03 Super Corsa Oro **(Drilled out)**. The latter has slimmer brass-plated
+  plates and a hole in each link. [1979/80 p.20](https://velobase.com/Pages/Resources/CatalogScans.aspx)
+  (`PaloAlto 79-80/79-80Catalog0023.jpg`) calls these Supercorsa Black, Oro
+  and Record Oro respectively; 1981/82 p.28, image 23, confirms the same
+  drilled/bevelled Record Oro construction. Regina C-78 pp.4–5 distinguishes
+  standard **1376 50 Corsa**, undrilled gold **1382 50 Oro**, drilled gold
+  **1381 50 Record**, and nickel-plated **8334 50 Record S**. Thus Black →1376,
+  ordinary Oro →1382 and drilled Oro/Record Oro →1381. Measured weights and
+  differently stated link counts do not override the construction evidence.
+  Corrected Titanio **1391** to titanium plates with Record-type remaining
+  components/hardened pins. Exact DB changes and full local maker PDF recovery
+  are in [Regina notes](regina.md#palo-alto-chain-identities-and-titanio-correction--2026-11-17-applied-and-validated).
+  This supersedes the blanket chain ambiguity recorded in the edition entries.
+- **Bike follow-through:** the original 1978 Bianchi scan confirms lightened
+  Oro 50 Record on Barcellona/Super-Leggera and ordinary Super Corsa Oro on
+  Campione del Mondo CX. Applied **12482 / 12503 NULL →1381**, **12523 NULL →1382**,
+  with exact-value, 1978-only generator overrides. Original strings and source 263
+  remain intact; see [Bianchi notes](../../../ingest-bike-specs/references/known-catalogs/bianchi.md#1978-regina-chain-identities--2026-11-17-applied-and-validated).
+- **SunTour Cyclone II synchro-shift:** [1981/82 p.32](https://labibleduvelodivers.blogspot.com/p/revue-1981.html),
+  image 19, retailer 32-101, photographs the paired central top-mount levers with
+  endless clamp and recessed Allen fixings. The coded photo/specification in
+  [SunTour No.59 p.4](https://www.disraeligears.co.uk/site/suntour_catalog_no_59_-_page_4.html)
+  identifies **6282 LD-2300**: same blade apertures, body, clamp and Synchro-Shift
+  construction, 69g, 28.6mm round / 35×21mm aero fitting. **6266 LD-2350** is
+  separately pictured as the braze-on version; ordinary Cyclone side-mounted
+  levers are separately offered by Palo Alto as 32-104/105. Existing 6282 already
+  has the correct description, 1981–85 dates and maker source 127; no DB change.
+  This supersedes the former no-part-number/no-row claim.
+- **Named Super Champion clinchers:** 1979/80 p.15 (`79-80Catalog0018.jpg`),
+  1981/82 p.16 (image 36) and c.1983/84 p.18 (PDF 20) identify the narrow
+  14–20mm, 27×1 485g / 700C×1 470g rim as **5183 Gentleman**. These do not
+  select the later **5184 Gentleman81** merely by catalogue year. The last
+  edition separately names **5178 Model 58**, with retailer weights 505/520g;
+  preserve the maker-specific 555/565g already held. Both existing date ranges
+  cover the evidence; no DB changes.
+- **Remaining identity limits:** earlier unnamed Super Champion standard
+  16–22mm clinchers (27×1¼ 495g / 700C480g; 1976 p.9, 1979/80 p.15,
+  1981/82 p.16) still lack a model/profile crosswalk between Model 58/60 and
+  other candidates. Fiamme Yellow Label **clinchers** on 1976 p.9 (image 32)
+  are 500/485g with an open-well single-wall section. The same page's Ergal
+  yellow-label 290g and red-label 360g rims are explicitly tubular. Colour and
+  approximate mass do not identify the clincher as a tubular or as c.1985
+  Elan 9192 / box-section Sport 10992. No generic duplicate row was created.
+  Seek a period labelled section drawing or stamped specimen crosswalk.
+- **Regina freewheel limit:** 1979/80 p.18, 1981/82 p.26 (image 25) and
+  c.1983/84 p.30 (PDF 32) explicitly offer **splined** Super Corsa Oro5/6-speed
+  bodies; French-thread specials use two prongs. The inspected C-78 maker
+  pages list splines for Tripla Sport only, while source 117's older notes
+  mention splined bodies on request with unclear scope. Verify that original
+  provision before assigning the retail offering to 2182/2194 or a later BX
+  variant. This is unresolved, not proof that splined Oro is a new model.
+
+Scan references corrected: the old uniform1981/82 `53 − image` rule is wrong.
+Verified image 36=p.16, 25=p.26, 23=p.28 and 22/21/20/19=pp.29/30/31/32;
+use the printed page on each scan rather than a uniform offset.
+
+Validation: two component updates and three NULL-link fills applied; exact live
+readback passed, SQL rerun affected zero rows. Before application the all-loaded-CSV
+comparison showed exactly those three gains and no new losses/target changes.
+After application, all 21,196 compared mappings and the 15 pre-existing unrelated
+loss findings match the pre-task baseline. All 13 test files pass. TODO retains
+only concrete unresolved work. Task-created page downloads, renders, SQL and
+comparison snapshots were removed after recording evidence; user Downloads
+originals and maintained CSVs are preserved.
+
 ## Palo Alto Bicycles catalogue — 1981/82 (blogspot "Catalogues divers: Revue 1981", data_source 248)
 
 - `data_source` label "Palo Alto Bicycles catalogue (1981/82)", country US. Source:
   https://labibleduvelodivers.blogspot.com/p/revue-1981.html (54 images at 1276 x 1650,
   "CATALOGUES VELOS 1981 (n)", numbered from the back: image 54 = cover "1981/82
-  catalog", 53 = index; printed page n = image 53 - n). Palo Alto Bicycles, 171
+  catalog", 53 = index; printed-page offsets vary: image 36=p.16 and image 19=p.32,
+  verified in the 2026-11-17 identity review). Palo Alto Bicycles, 171
   University Ave, Palo Alto CA; the next edition of the Palo Alto Bicycle Shop 1976
   catalogue (data_source 245). Gram weights for nearly everything. Components are
   pp. 2-37; clothing (4-7), tools (13, 23), Palo Alto-built wheels (14), spokes (15),
@@ -172,11 +261,11 @@ Weinmann 1129 / 1130 570.
   saddles; Galli Brunito brake; Sugino Super Mighty Custom (kept apart from 9080 Mighty
   Custom, 1976: the Super Mighty series is the 1978 rename); Wolber steel-belted clincher.
 - Judgement: the catalogue's SunTour "Cyclone II" is our Cyclone Mark-II (RD-3500,
-  RD-3700, FD-2300, 1981-85), already covered; its "syncro-shift" Cyclone II lever has no
-  row and was not added (no part number). SR "Model G" bar = 8220 Foursir-G (1980-82),
+  RD-3700, FD-2300, 1981-85), already covered; its "syncro-shift" Cyclone II lever was
+  identified as existing 6282 LD-2300 on 2026-11-17 (evidence above). SR "Model G" bar = 8220 Foursir-G (1980-82),
   unchanged. Not applied: the SunTour "Superbe" brake (CB-1000 1977-78 vs Superbe Pro
-  CB-4100 / 3100 1979+, unclear); Regina Record Oro / Oro / Black chains (no unambiguous
-  row); Avocet "W20" 5257 left as is. Duplicate noticed: two bare "Specialized
+  CB-4100 / 3100 1979+, unclear); Regina chains were initially held, now identified
+  as 1381 / 1382 / 1376 respectively (review above); Avocet "W20" 5257 left as is. Duplicate noticed: two bare "Specialized
   Touring-II" rows (6865 with 265 g avg, 6866 bare), a merge candidate.
 
 ## Bikecology catalogue — 1980 (blogspot "Catalogues divers: Revue 1980", data_source 247)
@@ -319,8 +408,8 @@ Weinmann 1129 / 1130 570.
 - category_brand links added for Alas (Bottom Brackets, Cranksets, Headsets) and Weyless
   (Hubs, Seat Posts): the Bikecology 1976 load had added Weyless hub and seat post rows
   without them, so the brand-by-category lists would not have shown them.
-- Not applied: Regina Super Corsa Oro and Extra Black chains (names do not map onto
-  our "Extra 50" / "Oro" rows), Fiamme Red / Yellow Label rims and Super Champion
+- Initially held: Regina Super Corsa Oro and Extra Black chains (resolved by the
+  2026-11-17 construction crosswalk above). Other holds: Fiamme Red / Yellow Label rims and Super Champion
   clinchers (no single matching row), Shimano Tourney hubs, Phil Wood medium-flange hub,
   Lyotard 23 Platform (ambiguous between the Marcel Berthet rows), Cinelli 65 / 66 bars and
   the M-71 pedal (existing rows are the 1980s versions or already well described), the
@@ -1088,12 +1177,14 @@ Weinmann 1129 / 1130 570.
   the pre-Super-Mighty model; 935g vs 900g on 1963); "Record Seta" with no brand; new rows for Record Road /
   Track Black pedals (finish variants), Christophe toe clips (no category), Cyclo Pan kits, SunTour
   "Standard" levers; the agents' claim that no Ti chain exists (1391 Extra 50 Titanio does).
-- Still ambiguous (38 records, not loaded): Regina Supercorsa Black / Oro / Record Oro chains and Super Corsa
-  Oro 5 / 6-speed freewheels (Extra 50 family, no proof), Super Champion 27x1 / 27x1 1/4 / 700C clinchers
-  and Rigida 16-22 clinchers and Fiamme Yellow Label clinchers (no model names that match the DB), Cyclone
-  front derailleurs, Cinelli 1/A stems by logo era, Stronglight / TA ring variants.
-- Closed TODO gap: Sugino Mighty Custom (a second source; Maxy II is not in this catalogue). Not closed:
-  Regina Super Corsa Oro chains, Fiamme / Super Champion clinchers.
+- Original ambiguous inventory included Regina chains, freewheels and clinchers.
+  The 2026-11-17 review above supersedes the blanket chain/clincher hold:
+  the chain construction crosswalk is established and the named narrow
+  Gentleman is 5183. Remaining holds include the later splined Super Corsa Oro
+  freewheels, earlier unnamed standard Super Champion and Fiamme Yellow Label
+  clinchers, Rigida 16–22 clinchers, Cyclone front variants, Cinelli 1/A logo-era
+  variants and Stronglight / TA ring variants.
+- Sugino Mighty Custom provides a second source; Maxy II is not in this catalogue.
 
 
 
@@ -1104,7 +1195,10 @@ Weinmann 1129 / 1130 570.
   16 new), reviewed by hand; this time the corrected plan was loaded without a separate go-ahead (noted to the user).
 - Changed (old values for reverting). `year_to` -> 1979 on 15 rows: 9892 Avocet Model I (high flange) (1978-1978); 9893 Avocet Model III (1978-1978); 8260 SunTour US-6000, Winner Ultr (1978-1978); 2243 SunTour Pro-Compe (Ultra-6) (1978-1978); 9896 Cyclo Alloy (5 speed, custom (1978-1978); 9897 Avocet Seat Post (1978-1978); 2801 Cinelli 64 Giro D'Italia (70 (1970-1978); 2809 Cinelli 66 Campione del Mond (1960-1978); 9069 Galli 75 (1976-1978); 8883 Sugino MCVS / MCVD, Super Mi (1978-1978); 9899 Sugino Mighty Custom (1978-1978); 9900 Sugino Mighty Victory (1978-1978); 9901 Spécialités TA bottom bracke (1978-1978); 9902 Sugino Mighty Custom/Victory (1978-1978); 9903 Clement Elvezia 75 (1978-1978). `year_from` -> 1979 (earlier) on 5 rows: 5187 Super Champion Performance (1980-1981); 9123 Sugino Super Mighty Custom (1981-1981); 9119 Avocet Racing IIT (1981-1981); 6863 Specialized Touring Turbo (1980-1981); 6868 Specialized Turbo S (1980-1981). Fill 1979/1979 on []. Descriptions enriched on 11 rows (ids [3259, 3260, 4125, 5749, 6667, 7886, 9068, 8883, 6861, 6863, 6868]); old text was never shortened. New rows (1979-1979): Cyclo Alloy (6 speed, custom), Specialized Racing 700C x 1.
 - Rejected on review: matches to the Avocet hubs "(by Ofmega)" 3189 / 3190 / 3191 again, Avocet Professional headset -> Model II 2937, Avocet sealed BB -> Model I (4), Rigida 14-20 mm rims -> the 13-19 rows 9894 / 9895 and a generic Rigida 27 x 1 1/4 row 5153; new rows for BB spindles and cup sets (sub-parts), Palo Alto house tubulars (retailer house brand, TODO policy question), the Rigida 700C x 1 1/4, SR Laprade seat post (Laprade brand already has rows) and Avocet chainrings for double / triple (no model name).
-- Still ambiguous (43, not loaded): Regina chains and freewheels again, Cyclone front derailleur variants, Cinelli 1/A stems, Super Champion and Fiamme clinchers.
+- Original ambiguity included Regina chains/freewheels and clinchers. The
+  2026-11-17 review above resolves the chain construction identities and narrow
+  Gentleman 5183; later splined Oro freewheels, unnamed standard Super Champion
+  and Fiamme clinchers remain held, alongside Cyclone front and Cinelli 1/A variants.
 
 
 ## Palo Alto Bicycles catalogue — c. 1983-84 (VeloBase `palo_alto_1984.pdf`, 52-page scan with noisy OCR), 2026-10-30
@@ -1118,7 +1212,11 @@ Weinmann 1129 / 1130 570.
 - `year_to` -> 1983 on 35 rows (old values): 5254 Avocet Touring I (later) (was 1970-1981); 5256 Avocet Touring WI (was 1970-1981); 5255 Avocet Touring II (was 1978-1981); 9118 Avocet Touring WII (was 1978-1981); 9117 Avocet Touring III (was 1978-1981); 9120 Avocet Racing WI (was 1978-1981); 9121 Avocet Racing WII (was 1978-1981); 5258 Avocet Racing I (was 1978-1981); 5253 Avocet Racing II (was 1970-1981); 5251 Avocet Racing III (was 1970-1981); 5183 Super Champion Gentleman (was 1970-1981); 5180 Super Champion Arc en Ciel (was 1960-1981); 2937 Avocet Model II (was 1981-1982); 3671 Avocet Model III Platform  (was 1980-1981); 3669 Avocet Model I (was 1980-1981); 3670 Avocet Model II (was 1981-1982); 3922 Sakae/Ringyo (SR) SP-100AL (was 1970-1982); 8240 Sakae/Ringyo (SR) SP-11, S (was 1982-1982); 1856 Spécialités TA Cyclotouris (was 1962-1981); 1453 Avocet Racing (was 1981-1982); 1454 Avocet Touring Triple (was 1981-1981); 4 Avocet Model I (was 1981-1981); 9901 Spécialités TA bottom brac (was 1978-1979); 1244 Campagnolo 753/A, Super Re (was 1970-1980); 2243 SunTour Pro-Compe (Ultra-6 (was 1978-1979); 8765 Sedis Sedisport (was 1979-1981); 6861 Specialized Touring (was 1976-1981); 6865 Specialized Touring-II (was 1980-1980); 6862 Specialized Touring K4 (was 1980-1980); 6869 Specialized Ultralight (was 1980-1981); 6868 Specialized Turbo S (was 1979-1981); 6863 Specialized Touring Turbo (was 1979-1981); 6867 Specialized Touring-X (was 1980-1981); 6860 Specialized Expedition (was 1980-1980); 6763 Clement Paris - Roubaix Se (was 1976-1981).
 - Descriptions enriched on 15 rows (ids [2968, 3671, 3708, 3716, 5761, 6860, 6861, 6862, 6863, 6865, 6867, 6868, 6869, 8765, 9771]), none shortened. New rows (1983-1984): Specialized Saturne rim, Ritchey Bullmoose bar / stem, Specialized TriCross, Crossroads and Street Stomper tyres, Vittoria Pave CG tubular.
 - Rejected: matches of the Avocet hubs to the "(by Ofmega)" rows 3189 / 3191 (again) and a Campagnolo front derailleur to the 1985+ 7012; new rows for SR Laprade 250 mm, Avocet headsets Model 20 / 30 (likely the DB's Model II / III), Shimano XT hubs and 600 XT chainset (no model numbers), Sugino Aero Tour A/T cranks (DB has "Sugino AT"), A/T bottom bracket and chainrings, Avocet chainrings.
-- Still ambiguous (29, not loaded): Regina chains and freewheels, Cyclone and Campagnolo generation variants; no help for Fiamme / Super Champion clinchers or Sugino Maxy II.
+- Original holds included Regina chains/freewheels and rim identities. The
+  2026-11-17 review above resolves ordinary Oro chain 1382 and explicitly named
+  Gentleman 5183 / Model 58 5178 on p.18. This does not identify earlier unnamed
+  standard Super Champion or Fiamme Yellow Label clinchers. Later splined Oro
+  freewheels and Cyclone/Campagnolo generation variants remain held; no Maxy II.
 
 ## Dedupe 2026-10-30: Cambio Rino Aereo crankset
 
