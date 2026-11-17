@@ -40,15 +40,63 @@ supported by their profiles, weight, colour or construction. They are now an
 evidence-backed consolidation candidate. Recommend retaining **10182**, consistent
 with the existing finish-specific T217 treatment, preserving the 1997 attestation
 and moving its year_from **1996 -> 1995**. This is availability evidence, not
-a production start date. A guarded change set, reference checks, mapping comparison
-and user review remain necessary before applying; **no mutation SQL was prepared or run**.
+a production start date. The subsequently approved and validated consolidation
+is recorded below.
+
+### T261 consolidation — 2026-11-18, applied and validated
+
+User approved the guarded consolidation. The transaction registered
+the 1995 maker page as a source, updated survivor 10182 from 1996–1999 / source
+374 to 1995–1999 / source 449, and deleted 9983 after guarded identity and
+reference checks. Its existing description preserves the shared 26 mm outside
+width, silver finish, 540 g, double eyelets, 36/40/48 holes and 28–35 mm tyre
+range. The 1995 page attests 36 holes; the 1997 catalogue (source 307) attests
+36/40/48, and source 374 is the 1999 evidence. 1995 is availability, not a
+proven introduction date. No ERD is inferred.
+
+Live readback: 9983 source_id `515a7f7c-d479-11f1-a2df-02fea3763e8d`, source
+307, title `Mavic T261`, description `Mavic T261, France. 700c double-wall rim
+for heavy loads and fat tyres, 540 g, 36/40/48 holes, for 28-35 mm tyres; silver.
+Trekking and touring.`, 1997–1997. Survivor 10182 source_id
+`9ec99d48-3ec3-4071-94a6-aea18d295175`, source 374, title `Mavic T 261 Argent`,
+description `700c (622) alloy trekking rim; 26 mm outside width, double wall,
+double stainless eyelets, silver anodised; 540 g, 36/40/48 holes, for 28-35 mm
+tyres. Touring and heavy loads.`, 1996–1999. Both have brand 31, category 16,
+NULL group and image, and search text matching their titles. These values support
+restoration; any reversal must recreate 9983 with its original ID and source ID,
+restore 10182's dates/source and account for subsequent references first.
+
+Preflight: no `bike_spec` references to either ID, no other table has a
+`component_id` column, and neither ID is in generator code. One consistent
+read-only snapshot and all 98 available CSVs yielded 21,382 generated specs;
+removing 9983 in simulation changed no component matches. The approved transaction
+inserted one source, updated one survivor and deleted one duplicate; readback
+confirmed source 449 and survivor 10182, and no bike references. A rolled-back
+rerun affected zero rows in all three statements. A post-application comparison
+of the same 98 CSVs and 21,382 specs against the reconstructed old component
+inventory found zero changed matches. Temporary SQL and helpers were removed.
 
 ### Other waiting cases
 
-- **9975 / 10197 / 10198 Reflex tubular:** visually rechecked 1997 road spread 3.
-  It lists silver, blue, CD and CD Ceramic; 375 g, Ceramic 390 g, 28/32/36 holes.
-  Removing broad 9975 still loses CD/Ceramic representation. This is a remaining
-  representation decision, not evidence that all finishes are duplicates.
+- **9975 / 10197 / 10198 Reflex tubular, representation review 2026-11-18:**
+  The 1997 maker road spread 3 and 1999 maker p.21 list silver, blue, CD and
+  CD Ceramic; 375 g, Ceramic 390 g, 28/32/36 holes. Keep the finish-specific
+  silver **10197** and blue **10198** rows. Prepare separate CD and CD Ceramic
+  tubular rows from the manufacturer evidence, with 1997–1999 availability
+  bounds (both editions attest the options), preserving the 375/390 g distinction.
+  Existing 10596 and 10599 are clinchers, not substitutes. After the new rows
+  are reviewed and applied, retire broad **9975** only after confirming all
+  four finishes and its source 307 evidence are preserved, checking references,
+  and comparing generated mappings; generic bike specs must not be arbitrarily
+  assigned a finish. Until then keep 9975 and all three rows unchanged. This
+  follows the existing T217 treatment, where the family row was removed after
+  its silver, CD and ceramic options were represented individually.
+  Live readback: 9975 1997–1997 source 307 (all four finishes); 10197 silver
+  1996–1999 source 374; 10198 blue 1996–1999 source 357. The three have no
+  stored images, bike links or generator ID references. The later 1999 maker
+  evidence supplies 21 mm, Maxtal, SUP and UB Control; the manufacturer's
+  family-wide drilling does not alone prove each finish was offered in every
+  hole count. No DB or generator change was made in this review.
 - **5062 / 10199 / 10607 CXP30 tubular:** that same maker spread explicitly
   prints **465 g for both silver and titanium-colour tubular options**, versus
   520 g for the clincher. This supports the known maker specification but does
