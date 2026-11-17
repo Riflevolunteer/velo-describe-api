@@ -46,7 +46,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/lyotard.md](known-catalogs/lyotard.md) — Lyotard pedals (1 entry, c. 1977-81)
 - [known-catalogs/motobecane.md](known-catalogs/motobecane.md) — Motobécane dealer spares catalogues (1 entry, May 1985; Nervar, Maillard, Atax and others)
 - [known-catalogs/laprade.md](known-catalogs/laprade.md) — Laprade (1 entry)
-- [known-catalogs/michelin.md](known-catalogs/michelin.md) — Michelin (1 entry)
+- [known-catalogs/michelin.md](known-catalogs/michelin.md) — Michelin (1983 leaflet and earlier lists; Polish Wildgripper 1999/undated sheets, sources 434/435)
 - [known-catalogs/ofmega.md](known-catalogs/ofmega.md) — Ofmega (1 entry)
 - [known-catalogs/sedis.md](known-catalogs/sedis.md) — Sedis (1 entry)
 - [known-catalogs/selle-italia.md](known-catalogs/selle-italia.md) — Selle Italia (1 entry)
@@ -64,7 +64,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands: multi-brand retailer and importer catalogues (La Bicicletta Guida '96 and '99, Brügelmann 1972-82 / 1985 / 1988, Palo Alto, Bikecology, Holdsworth, Cyclo-Pedia, Ron Kitching, Ten Speed Drive, Bike Warehouse, Bike Nashbar Spring 1988, Falcon 1970 parts), La Bicicletta guides, dedupe passes, velobase title-fixup conventions
 - [known-catalogs/roto.md](known-catalogs/roto.md) — Roto (1 entry)
 - [known-catalogs/modolo.md](known-catalogs/modolo.md) — Modolo (3 entries, c. 1979, March 1986, 1990)
-- [known-catalogs/tioga.md](known-catalogs/tioga.md) — Tioga headsets and pedals (1 entry, 1992)
+- [known-catalogs/tioga.md](known-catalogs/tioga.md) — Tioga 1992 headsets/pedals and broader stems/bars/drivetrain/seatposts (source 362); missing tyre pages documented
 - [known-catalogs/ukai.md](known-catalogs/ukai.md) — Ukai / Yanagihara Industrial rims (1 entry, 1980)
 - [known-catalogs/edco.md](known-catalogs/edco.md) — EDCO touring group (1 entry, c. 1994)
 

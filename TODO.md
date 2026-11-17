@@ -213,7 +213,7 @@ for the exact identity/configuration evidence still needed.
 
 ### Pedals
 
-- No suitable row: H.K. / VP VP-330 / 331 / 333 / 389 / 382S / 230 and VP500 (~10, 1984-90; the largest); HTI-A1 / HTI-P15 / HTI-851 (6); SP-513 / SP513C (2), SP-518 (2; SP-518FB is 11328, identity not shown), SP-153 (2), MP 150, Lowfat Pro and CTP-170 (1990-93 Bianchi); MKS AR-5, NT-1 (1986 Miyata; PB-20 is now 11335), C 5000 ATB; Tioga Surefoot-6 (4, 1993 Bianchi); Union 632 (2, 1984 Raleigh); Lyotard 77R (3) and 90.
+- No suitable row: H.K. / VP VP-330 / 331 / 333 / 389 / 382S / 230 and VP500 (~10, 1984-90; the largest); HTI-A1 / HTI-P15 / HTI-851 (6); SP-513 / SP513C (2), SP-518 (2; SP-518FB is 11328, identity not shown), SP-153 (2), MP 150, Lowfat Pro and CTP-170 (1990-93 Bianchi); MKS AR-5, NT-1 (1986 Miyata; PB-20 is now 11335), C 5000 ATB; Union 632 (2, 1984 Raleigh); Lyotard 77R (3) and 90.
 
 ### Shifters
 
@@ -374,14 +374,17 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 ### Other brakes, tyres and components
 
 - **Brakes with no source:** Modolo Quattro / Start, CLB GL 47-60 and Competition aerodynamic (a c. 1980 CLB catalogue is partly photographed on eBay 305827471354), Altenburger S3 / 53 S3, Lee Chi cantilevers, Chang Star 500, Polygon AF-500.
-- **Tioga 1992-94:** a catalogue for the Surefoot-6 pedals (4 specs, 1993 Bianchi).
+- **Tioga 1992-94 source gaps:** find a dated Surefoot-6 source for the 1993
+  Bianchi pedals; recover printed tyre pp.20-25 from a new complete 1992 scan or
+  holder. See [missing pages and checked copies](.agents/skills/ingest-component-catalog/references/known-catalogs/tioga.md#broader-1992-inventory--applied-and-validated-2026-11-17)
+  before repeating an archive search.
 - **Brügelmann follow-ups:** Cobra saddles, Mavic "Titan" rims, Hutchinson Krono 9267 vs 6810.
 - **Shimano 1979-80, 1983 and 1985 general catalogues:** low priority; the held June 1984 dealer catalogue spans 1983-85 and the remaining gaps are mostly ambiguous spec text.
 
 ### Archives with unread material
 
 - **velo-pages.com via Wayback** (`scripts/velo-pages-wayback.sh`, method in the log): SunTour advert 03-1975, Detto Pietro 1970s, Shimano Dura-Ace EX 1978, Stronglight 1958, Simplex and Barelli adverts, OMAS 1978 (item 12973), Sedis 1971; bike clusters Falcon Merckx 1973 / 1974, Original Plastic Bike 1973, Bottecchia 1973.
-- **bikalog.org component inventory:** reconcile the Campagnolo 2001 range catalogue and Spare Parts & Tools book with the processed 2000 rows, and compare the 2000 Record 10-speed introduction with held evidence. Secondary: establish issuer/date and reconcile the Polish Michelin / IRC tyre sheets indexed 1999. See the free-component shortlist in the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
+- **bikalog.org component inventory:** reconcile the Campagnolo 2001 range catalogue and Spare Parts & Tools book with the processed 2000 rows, and compare the 2000 Record 10-speed introduction with held evidence. Secondary: establish issuer/date and reconcile the Polish IRC tyre sheets indexed 1999. See the free-component shortlist in the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - **bikalog.org bike-catalogue backlog:** review Koga Miyata 1980-2001, Nishiki 1987, Raleigh 1991, Colnago 1989 C35 and Bianchi road 1985 / 1986 for future bike ingestion.
 - **Palo Alto remaining identifications:** Regina chain / freewheel names, Fiamme / Super Champion clinchers and Sugino Maxy II; see `cross-catalog-notes.md`.
 
