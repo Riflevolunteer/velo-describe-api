@@ -1088,6 +1088,10 @@ and `/tmp/rival-specimen-0.jpg` through `-2.jpg`.
 
 ### Generic Rival bike-link review — 2026-11-15, PXR 80 correction applied
 
+The later **1987 US Ventoux detail recovered** section below supersedes the
+"no supported replacement" finding for spec 15762 only; its photo-supported
+correction is prepared, pending approval. The other fifteen fits remain unresolved.
+
 Follow-up 2026-11-17: checked stored crank/cluster text for all 16 remaining
 generic Rival rears on 4401. Ten provide both tooth ranges; calculated required
 capacity is 18-28T (Raleigh Zenith/Granada are exactly 28T). No additional
@@ -1173,6 +1177,66 @@ Derailleur coverage is **875 / 1,074 (81.5%)**, with **942** category components
 The PXR 80 identification and other 16 generic links remain in TODO. Temporary
 SQL, snapshots, comparison scripts and original review downloads/crops were
 removed after readback and idempotency validation.
+
+#### 1987 US Ventoux detail recovered — 2026-11-17, correction pending approval
+
+New usable evidence: fetched the original BikeBoomPeugeot US model pages directly,
+avoiding the failed Blogger proxy endpoints recorded above. [1987 US p.11](https://www.bikeboompeugeot.com/Brochures%20USA/Peugeot%201987%20USA%20Brochure/Peugeot%201987%20USA%20Brochure%20Page%2011.jpg)
+has a dedicated white Rival derailleur close-up at bottom right, roughly
+180 x 175 pixels within the 1000 x 650 scan. Its two limit screws sit **below**
+the outer plate; revised body and compact cage match the **AR 41.1 D** illustrated
+in [Sachs April 1986 scan 3](https://www.disraeligears.co.uk/site/00_main_images/sachs_kettenschaltung_fur_rennen_touristik_off-road_-_1986_scan_03_main_image.jpg).
+The early 2850-00 drawing in [Huret September 1983 p.8](https://www.disraeligears.co.uk/site/00_main_images/huret_derailleurs_-_speedometers_1983_scan_8_main_image.jpg)
+puts both screws above the plate. This is a photo-supported identification by
+comparison; Peugeot's text prints `Huret rival white`, not the numbered code.
+The 52/42 and 13-24 gearing needs 21T capacity, compatible with the 28T row.
+
+**Proposed correction: spec 15762, bike 938, 1987 PH 501 Ventoux (US),
+4401 -> 8957.** Existing label ID 17/raw label `Rear Derailleur`, exact value
+`Huret Rival, white`, source 312 and bike source 312 stay unchanged. Original
+updated_at was 2026-11-02 18:59:27 UTC. No component dates/definitions change;
+8957 already covers 1986-1988. If deliberately restoring later, guard the same
+identity/text/source and current 8957, set back to 4401 and revise its override;
+retain the normal new updated_at timestamp.
+
+Added a Rear Derailleurs override for that exact value, bike and 1987 only,
+with undefined fallback preserving normal matching elsewhere. Do not apply the
+identification to French white Rivals or other years by colour/model name alone.
+
+Other evidence checked in this pass:
+
+- [1987 US Comète p.9](https://www.bikeboompeugeot.com/Brochures%20USA/Peugeot%201987%20USA%20Brochure/Peugeot%201987%20USA%20Brochure%20Page%209.jpg):
+  whole-bike rear too small to distinguish screws/cage; sidebar still prints
+  only six-speed Helicomatic, without tooth range (15744).
+- [1986 US pp.6-7](https://www.bikeboompeugeot.com/Brochures%20USA/Peugeot%201986%20USA%20Brochure/Peugeot%201986%20USA%20Brochure%20Page%207.jpg):
+  Ventoux has a whole-bike photograph; Tourmalet has a smaller, oblique detail.
+  Neither was sufficient in this review to select a body generation. Do not
+  extend the 1987 Ventoux finding to 14782 or 14801.
+- 1988 French originals on BikeBoomPeugeot: specifications 1 / 2 (printed
+  pp.6 / 15), and model pp.10-11. Comète, Aravis, Galibier and Mont-Faron rows
+  omit sprocket ranges; complete-bike photos do not resolve the screws. Source
+  index: https://www.bikeboompeugeot.com/Brochures%20France/Peugeot%201988%20France%20Adult%20Brochure/Peugeot%201988%20France%20Brochures.htm.
+  These French brochure dates are archive estimates, as the index explains;
+  no bike/source dates were changed in this pass.
+- Original 1986 French table images 6-7, fetched at Blogger `s0` from the
+  [existing source index](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1986.html):
+  PH 501 still names Thun Coronado without chainring range. Thus all six
+  incomplete-capacity cases remain open for new parts/fitment evidence, not
+  another reading of these same tables. Raleigh photos had already been
+  checked without distinguishing detail; no new Raleigh identification.
+
+Validation: fixed read-only snapshot over 96 loaded catalogues / 21,176 specs;
+only generated spec 15762 changed (NULL -> 8957). All other findings identical;
+pending live correction, report shows fifteen losses plus this changed target.
+All eleven test files pass, covering the new scope and existing PXR 80 NULL,
+front and coded-rear decisions. Read-only preflight matched exactly one row
+under all SQL guards. No DB writes; existing generated SQL file preserved.
+
+Prepared transactional SQL retained for approval/application at
+`/private/tmp/huret-rival-review-20261117.sD9W7A/pending-ventoux-rival.sql`.
+TODO keeps it open until applied/read back and rerun clean. Downloads, crops,
+indexes and comparison scratch removed after recording source URLs and results;
+only that pending SQL remains. No changes proposed for the other fifteen links.
 
 ## Elysee 5/6-speed and Elysee 7 systems — 2026-11-08
 

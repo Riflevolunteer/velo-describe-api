@@ -701,6 +701,20 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 
 ## 1987 Peugeot — `1987_peugeot_spec.csv` (FR, data_source 311: 33 bikes, 651 specs, 152 linked) and `1987_peugeot_us_spec.csv` (US, data_source 312: 18 bikes, 340 specs, 108 linked)
 
+- Rival photo follow-up 2026-11-17, **DB correction pending approval**: original
+  [US Ventoux p.11](https://www.bikeboompeugeot.com/Brochures%20USA/Peugeot%201987%20USA%20Brochure/Peugeot%201987%20USA%20Brochure%20Page%2011.jpg)
+  includes a dedicated white rear-derailleur close-up with limit screws below
+  the outer plate and the compact cage, matching Sachs April 1986 AR 41.1 D.
+  Proposed spec **15762**, bike **938**, **4401 -> 8957**, preserving exact value
+  `Huret Rival, white`, source **312**, labels and component dates/definitions.
+  This is identification from the photograph; the code is not printed in Peugeot's
+  text. Exact bike/1987 Rear Derailleurs override added; other white Rivals remain
+  unresolved. Fixed-snapshot comparison across all 96 loaded catalogues changes
+  only that generated link; all tests pass. Detailed comparison, other reviewed
+  pages, SQL status and restoration guards are in the Huret notes under
+  **1987 US Ventoux detail recovered**. The 1987 US Comète page still omits its
+  freewheel tooth range; no new ratio or generation inferred for that bike.
+
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1987.html (76 images, loaded 2026-10-30; a few
   proxy fetches failed first time and succeeded on retry). Images 1-26: French "Bicyclettes Peugeot 1987"
   (cycles-peugeot.com watermark), printed pp. 1-26 only: contents p. 2, Course photo pages pp. 3-18 with captions,

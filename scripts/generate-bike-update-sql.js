@@ -1041,6 +1041,10 @@ const COMPONENT_OVERRIDES = {
     'shimano z501': 4544, // 1986 Raleigh Pursuit: Shimano RD-Z501, Z-Series
     'huret rival ar: 41 1d': 8957, // 1987 Peugeot (FR) table: Sachs Huret AR 41.1 D, Rival (part number printed)
     'huret rival white ar: 41 1d': 8957, // 1987 Peugeot (FR) table Triathlon: as above
+    'huret rival white': [
+      { bike: 'PH 501 Ventoux', from: 1987, to: 1987, id: 8957 }, // US p.11 derailleur close-up: lower limit screws, revised AR 41.1 D body; spec 15762.
+      { id: undefined }, // Other generic/finish-only Rival fits remain unresolved.
+    ],
     'huret rival': [
       { bike: 'PXR 80', from: 1988, to: 1988, id: null }, // Spec 16963: 50/40/30 + 14-28 needs 34T; 4401 and short-cage 8957 are rated 28T. Cage/generation unresolved (huret.md, 2026-11-15).
       { id: undefined }, // Preserve normal matching for other bikes/years; an unmatched override range would instead force NULL.
