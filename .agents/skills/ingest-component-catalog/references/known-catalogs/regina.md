@@ -1,5 +1,37 @@
 # Regina catalogs processed so far
 
+## Splined Oro comparison — 2026-11-18, read-only
+
+Recovered a readable 12-page [Regina C/7 109/E](https://velobase.com/CatalogScans/ReginaExtra_1970s_2.pdf)
+copy of the edition represented by source 117. The cover prints the catalogue
+code; this VeloBase copy has no Specialized distributor stamp, so its physical
+copy is distinct from the Retrobike copy in the source citation. Neither the
+cover code nor the archive's approximate 1970 label establishes a dated
+production boundary.
+
+Printed p.4 groups the regular multiple freewheels in one table and marks
+four-, five- and six-speed entries as available in Oro quality. The footnote
+states that multiple freewheels with splined bodies are available on request;
+the standard supply has two notches unless otherwise requested. Figure 2 shows
+a splined multiple freewheel. Page 9's separate footnote offers the splined
+removal lever on request; it is a tool provision as well, not a statement that
+the body is always splined. The general p.4 option in the same table as the Oro
+entries supports splined-body Oro as an available configuration in this edition;
+it is not confined to three-speed Tripla Sport. This supersedes the earlier
+uncertainty about source 117's scope. The C-78 page's Tripla Sport statement
+remains specific to that later catalogue and does not erase the C/7 option.
+
+Palo Alto 1979/80 p.18, 1981/82 p.26 and c.1983/84 p.30 explicitly offer
+splined Super Corsa Oro in five and six speeds, with two-prong French-thread
+specials. These retail listings are consistent with the earlier maker's
+documented Oro/body options, but the catalogue gives no model crosswalk from
+those later units to **2182/2194** versus **2179/2180/2195 BX**. A shared
+splined remover does not identify the exact body generation or model. Keep the
+existing family rows and do not create a new model, merge them, alter dates, or
+select a bike link on this evidence alone. A dated parts code or identified
+specimen crosswalk is still needed to assign the later retail bodies more
+precisely. No database changes followed this review.
+
 ## Bikecology 1976 chain identities — applied and validated 2026-11-17
 
 Re-read [Bikecology fifth edition, April 1976](https://labibleduvelodivers.blogspot.com/p/doc-1976.html),
@@ -85,7 +117,8 @@ after validation; user Downloads originals and maintained CSVs preserved.
   **12523 →1382** from NULL, preserving source 263 and original value strings.
   Exact-value 1978-only overrides and [Bianchi evidence](../../../ingest-bike-specs/references/known-catalogs/bianchi.md#1978-regina-chain-identities--2026-11-17-applied-and-validated)
   preserve these choices on regeneration. No broad Record / Oro matching rule.
-- **Splined Oro freewheels remain unresolved:** Palo Alto 1979/80 p.18,
+- **Historical splined Oro review (superseded on source-117 scope by the
+  2026-11-18 comparison above):** Palo Alto 1979/80 p.18,
   1981/82 p.26 and c.1983/84 p.30 offer splined 5-/6-speed Super Corsa Oro
   bodies (French-thread specials two-prong). C-78 pp.8–12 explicitly list
   splines for Tripla Sport and show a two-notch normal remover. Source 117's
@@ -94,10 +127,11 @@ after validation; user Downloads originals and maintained CSVs preserved.
   retail bodies fit 2182/2194 or a later BX family. C-78 gives identical
   ratio-specific Corsa/Oro weights, so mass alone cannot decide. Palo Alto 1976
   pp.11–12 separately shows the earlier two-prong offering.
-- Targeted source 117 retrieval: recorded Retrobike download returned 403;
+- Earlier source 117 retrieval: recorded Retrobike download returned 403;
   guessed VeloBase Resource_Tools download returned 404, exact-filename search
   found no usable copy. This is an access limit, not evidence against splined
-  Oro. Reopen with the original 12-page scan or a period body/model crosswalk.
+  Oro. A VeloBase copy of that 12-page edition was subsequently recovered;
+  see the comparison above for its scope and the remaining crosswalk question.
 - Live readback correct, guarded SQL rerun zero changes. All-loaded-CSV
   comparison gained only the three intended Bianchi links before application;
   final findings equal the pre-task baseline (15 unrelated losses, no new

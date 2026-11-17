@@ -406,7 +406,8 @@ component, merge or date change. The five editions above remain processed source
   approximate mass do not identify the clincher as a tubular or as c.1985
   Elan 9192 / box-section Sport 10992. No generic duplicate row was created.
   Seek a period labelled section drawing or stamped specimen crosswalk.
-- **Regina freewheel limit:** 1979/80 p.18, 1981/82 p.26 (image 25) and
+- **Regina freewheel limit (source-117 scope superseded by the 2026-11-18
+  [Regina comparison](regina.md#splined-oro-comparison--2026-11-18-read-only)):** 1979/80 p.18, 1981/82 p.26 (image 25) and
   c.1983/84 p.30 (PDF 32) explicitly offer **splined** Super Corsa Oro5/6-speed
   bodies; French-thread specials use two prongs. The inspected C-78 maker
   pages list splines for Tripla Sport only, while source 117's older notes

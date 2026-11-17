@@ -48,6 +48,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/motobecane.md](known-catalogs/motobecane.md) — Motobécane dealer spares catalogues (1 entry, May 1985; Nervar, Maillard, Atax and others)
 - [known-catalogs/laprade.md](known-catalogs/laprade.md) — Laprade (1 entry)
 - [known-catalogs/michelin.md](known-catalogs/michelin.md) — Michelin (1983 leaflet and earlier lists; Polish Wildgripper 1999/undated sheets, sources 434/435)
+- [known-catalogs/irc.md](known-catalogs/irc.md) — IRC Polish-market 1999 catalogue, inventoried and reconciled; proposed changes pending
 - [known-catalogs/ofmega.md](known-catalogs/ofmega.md) — Ofmega (1 entry)
 - [known-catalogs/sedis.md](known-catalogs/sedis.md) — Sedis (1 entry)
 - [known-catalogs/selle-italia.md](known-catalogs/selle-italia.md) — Selle Italia (1 entry)
