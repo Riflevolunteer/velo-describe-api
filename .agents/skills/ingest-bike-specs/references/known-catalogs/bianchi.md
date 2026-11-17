@@ -802,8 +802,9 @@ The [component evidence review](../../../ingest-component-catalog/references/kno
 confirms the early engraved-shield crank was still shown in February 1987 and the exact n.18 bis
 copy really is dated 12/86. The 2026-10-09 assertion that 1483 was wrong-era is superseded:
 1987 is not sufficient evidence to move 1107 / 1127 either way. The October assertion that both
-seatpost links were already correct is also superseded by the original-table discrepancies below. Both remain on 1482 pending a
-clear original marking/parts crosswalk or a deliberate unlink decision. No matcher changes.
+seatpost links were already correct is also superseded by the original-table discrepancies below. At that review stage both remained on 1482 pending a
+clear original marking/parts crosswalk or a deliberate unlink decision. The deliberate
+unlink is now applied below; the initial review made no matcher changes.
 
 The original `1987Bianchi.pdf` at VeloBase CatalogScans (local Downloads copy), PDF p.4 bike
 photos and pp.14-15 specification spread were checked. P.15's first two rows are X4 / Mondiale.
@@ -890,6 +891,67 @@ findings are not new repair approvals. SQL, CSV/generator backups, snapshots, he
 both sets of temporary source renders were removed after validation. Old/new values and the
 original source/page references above preserve the correction evidence without scratch files.
 
-Remaining identity questions are the two crank generations (1107 / 1127, still linked to 1482)
-and a numbered Cronosprint fitment for Mondiale (1133 deliberately NULL). Do not reopen the
+The later crank review below deliberately unlinks 1107 / 1127 because the generation
+is unresolved. A numbered Cronosprint fitment for Mondiale (1133 deliberately NULL)
+also remains unidentified. Do not reopen the
 house-rim manufacturer or substitute a seatpost variant without new distinguishing evidence.
+
+
+## 1987 crank generation links — 2026-11-17, applied and validated
+
+Reviewed the remaining source-46 fitment item against the recorded original-source
+review above and current live rows. No new source hunt: the February 1987 maker
+brochure (source 414, scans 4/5/13, imprint scan 16) attests the early engraved-shield
+crank in 1987. The Bianchi source-46 `1987Bianchi.pdf` pp.4/15 does not distinguish
+that specimen from the later painted-shield version. The previous generator cutoff
+is therefore insufficient evidence for these two exact fitments.
+
+User approved and applied 2026-11-17:
+
+| Spec / bike | Stored text | Old link | Applied link |
+| --- | --- | --- | --- |
+| 1107 / 78 X4 | Campagnolo C Record 53/42T | 1482 | NULL |
+| 1127 / 79 MONDIALE | Campagnolo C Record 53/42T | 1482 | NULL |
+
+Both specs retain label_id 38, raw_label Crankset and source_ref 46. Their bikes
+retain brand_id 2, year 1987 and source_ref 46. No text, component or CSV change.
+Component 1482 retains GUID `532FA429-4CD0-48D8-90CD-1F60ECB92A3D`, years
+1987–1994/source 110; alternative 1483 retains GUID
+`F9D3301A-7F48-4698-A44B-49AC8228AB22`, years 1985–1987/source 414. Neither a
+substitution nor a merge is justified. Reopen only with an original fitment close-up
+showing the shield position/style or a period Bianchi parts crosswalk identifying
+the generation; tooth count and self-extracting bolts do not distinguish it.
+
+The local generator now has bike/year-scoped NULL guards for these exact values,
+before its existing year-based fallbacks. Existing mappings outside these two
+fitments are retained. The old comment asserting a proven 1987 boundary is superseded.
+Mondiale seatpost 1133 remains deliberately NULL under the already applied decision:
+no code distinguishes 5789 600BA, 5790 600CA or 5788 600DD. Seek a new original,
+Mondiale-specific code or distinguishing fitment photograph before reopening it;
+repeating generic Cronosprint catalogue searches supplies no new identity evidence.
+
+The two SQL UPDATEs guarded each original spec/bike/text/link/source identity in
+one transaction. Restoring the old assignments would require setting component_id
+back to 1482 for these exact NULL identities and revisiting their generator guards;
+that would restore unsupported fitments and is not the current decision.
+
+Pre-apply validation: one live snapshot, all 96 local CSVs / 21,176 generated specs,
+exactly the two intended 1482-to-NULL mapping changes and no other generated spec
+changes. The selected source-46 catalogue has 300 specs: before application the
+new plan differs only on 1107/1127; simulating those two NULL updates yields 300
+unchanged, no missing/ambiguous identities and no link differences. Regression
+coverage checks each candidate alone, both candidates, and the bike/year scope.
+`npm test` passes all 12 test files; `git diff --check` passes.
+
+Application affected exactly two bike_spec rows; rerun affected zero. Live readback
+confirmed 1107 / 1127 are NULL with the same text, raw labels, source_ref 46 and
+bike identities above; seatpost 1133 remains NULL. Compared all snapshot spec
+identities/texts/links to the pre-apply snapshot: exactly those two component_id
+fields changed, with no inserted/deleted specs. Snapshot bike, source and component
+identity records were unchanged. The live source-46 comparison now has 300/300
+unchanged mappings, no missing/ambiguous identities and no link differences.
+Rechecking all 96 CSVs / 21,176 specs against the original plan again found only
+the two reviewed link removals. The completed TODO action was removed; unknown
+identities and reopening evidence remain in these notes and link-decisions.md.
+Task SQL, snapshots, validation outputs and helper scripts were removed after
+successful validation; the user-held source PDF remains available.

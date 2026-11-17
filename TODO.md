@@ -300,10 +300,6 @@ comparisons until their identities are settled.
 - **SunTour XCE crank specimen:** identify the original uncoded reference behind
   2002 from a readable marking or independent XE00/XE01 crosswalk before merging.
   [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#xce-crank-dating-and-tangent-brake-link-review--2026-11-17-applied-and-validated).
-- **1987 Bianchi fitment:** identify crank specs 1107 / 1127 from original
-  markings/parts evidence or review deliberately unlinking them; obtain a coded
-  fitment/photo for Cronosprint post 1133 before choosing 600BA / 600CA / 600DD.
-  See [Bianchi evidence](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#1987-equipment-table-repairs--2026-11-17-applied-and-validated).
 - **Campagnolo Super Record:** compare photos/markings for 4151 “2nd gen,
   ver.1” and 4149 “PAT. 80” before a merge/version decision. Review shop-modified
   specimen 4153 and bare 4077 against their VeloBase pages before retaining,

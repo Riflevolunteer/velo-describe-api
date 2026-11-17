@@ -168,6 +168,15 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Crankset
 
+- Applied/validated 2026-11-17, user approved: 1987 Bianchi X4 /
+  Mondiale crank specs **1107 / 1127**, `Campagnolo C Record 53/42T`,
+  **1482 -> NULL**. Source 46 pp.4/15 gives no distinguishing generation marking;
+  source 414 still shows early engraved-shield 1483 in February 1987. Year and
+  ratio cannot select between 1482/1483. Scoped generator guards prevent
+  relinking; live rows are NULL and SQL rerun changes zero. Reopen only with original
+  fitment markings or a Bianchi parts crosswalk. See the
+  [Bianchi evidence](known-catalogs/bianchi.md#1987-crank-generation-links--2026-11-17-applied-and-validated).
+
 - Most unlinked Peugeot values are material / tooth text ("Dural square taper, 42 x 52T", "Steel, 46T") or the Solida / Nervar source gap (priority list item 2); most Raleigh values are the house "Exclusive Alloy Cotterless" and "Raleigh/SR alloy 5 pin" sets: leave.
 - Leave unlinked: 1990 Bianchi "SR alloy XCT/GXC 48/38/28T" (8004 CW-XT01 XCT is 1992 and "GXC" is unexplained; not applied 2026-11-02); Motobecane "T.A. PROFESSIONAL" x2 (TA 1690 / 1693 / Professional 3-arm); 1986 Peugeot "Thun Coronado" (1444 / 1445 / 1446); 1987 Peugeot "Mavic anodised" (630 or 635); 1993 Bianchi "Sugino Mighty" (MTB Mighty rows are 1995).
 

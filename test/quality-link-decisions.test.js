@@ -2,6 +2,20 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('1987 Bianchi C-Record cranks require generation evidence even with a unique candidate', () => {
+  const early = { component_id: 1483, title: 'Campagnolo C-Record', category: 'Cranksets' }
+  const late = { component_id: 1482, title: 'Campagnolo C-Record (1987-1994)', category: 'Cranksets' }
+  for (const records of [[early], [late], [early, late]]) {
+    for (const bike of ['X4', 'MONDIALE']) {
+      assert.equal(matchComponent('Campagnolo C Record 53/42T', records, null, 'Crankset', 1987, bike), null)
+      // Keep the reviewed guard bounded to these two bikes and this catalogue year.
+      assert.equal(matchComponent('Campagnolo C Record 53/42T', records, null, 'Crankset', 1986, bike).component_id, 1483)
+      assert.equal(matchComponent('Campagnolo C Record 53/42T', records, null, 'Crankset', 1988, bike).component_id, 1482)
+    }
+    assert.equal(matchComponent('Campagnolo C Record 53/42T', records, null, 'Crankset', 1987, 'Other bike').component_id, 1482)
+  }
+})
+
 test('Tangent combined XC-9010 brakes cannot select the rear-only SE component', () => {
   for (const records of [
     [{ component_id: 1055, title: 'SunTour XC-9010', category: 'Brakes' }],

@@ -2586,9 +2586,15 @@ const COMPONENT_OVERRIDES = {
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'campagnolo nuovo record with 52 42t super record rings': 1496, // Team Replica: 1049 Nuovo Record Strada v4 (1983 key carried "170mm cranks")
     'shimano 600 ax fully detachable 52 42t': 1787, // Road Ace: Shimano FC-6300, 600 AX
-    // C-Record crank: 306/101 1985-86, then the 1987-94 row. The matcher exact-hit the first on every year; 1987 Bianchi fixed by one-off UPDATE.
+    // Retain existing year-based decisions outside the reviewed Bianchi exceptions below.
+    // 1483 is attested in February 1987 too: year alone does not establish that generation boundary.
     'campagnolo c record': [{ to: 1986, id: 1483 }, { from: 1987, id: 1482 }],
-    'campagnolo c record 53 42t': [{ to: 1986, id: 1483 }, { from: 1987, id: 1482 }], // 1987 Bianchi Mondiale / X4
+    'campagnolo c record 53 42t': [
+      // Source 46, 1987 Bianchi PDF pp.4/15: no distinguishing shield marking or parts code.
+      { bike: 'X4', from: 1987, to: 1987, id: null },
+      { bike: 'MONDIALE', from: 1987, to: 1987, id: null },
+      { to: 1986, id: 1483 }, { from: 1987, id: 1482 },
+    ],
     // 1978 Raleigh (US, ebykr scan).
     'campagnolo nuovo record cotterless 42 51t': [{ to: 1987, id: 1496 }], // Professional Mk V: 1049 Nuovo Record Strada v4
     'campagnolo nuovo record cotterless 42 52t 170mm': [{ to: 1979, id: 1496 }], // 1979 Raleigh Professional Mk V: 1049 Nuovo Record Strada v4, as 1978's 42/51T
