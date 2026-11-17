@@ -2153,7 +2153,10 @@ const COMPONENT_OVERRIDES = {
     'shimano sport lx': [{ from: 1989, to: 1989, id: 7211 }], // BR-A450, Exage Sport / Sport LX
     'suntour gpx': [{ from: 1989, to: 1989, id: 1039 }], // BA-GP00-S
     'suntour blaze': [{ from: 1989, to: 1989, id: 1035 }], // BA-BE34-S
-    'suntour xc 9010': [{ from: 1989, to: 1989, id: 1055 }], // CT-XC10 cantilever
+    // Tangent's combined brakes cell names the group only. Edition No. 89
+    // p.25 distinguishes standard CT-XC00 from rear-only SE CT-XC10; neither
+    // identifies the whole cell. Preserve the catalogue text without a link.
+    'suntour xc 9010': [{ bike: 'Tangent', from: 1989, to: 1989, id: null }],
   },
   Headsets: {
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.

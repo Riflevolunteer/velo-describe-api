@@ -2,6 +2,18 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('Tangent combined XC-9010 brakes cannot select the rear-only SE component', () => {
+  for (const records of [
+    [{ component_id: 1055, title: 'SunTour XC-9010', category: 'Brakes' }],
+    [{ component_id: 1054, title: 'SunTour CT-XC00, XC9000', category: 'Brakes' },
+      { component_id: 1055, title: 'SunTour CT-XC10, XC9000', category: 'Brakes' }]
+  ]) {
+    assert.equal(matchComponent('SunTour XC-9010', records, null, 'Brakes', 1989, 'Tangent'), null)
+  }
+  // Other categories retain their independently reviewed group mappings.
+  assert.equal(matchComponent('SunTour XC-9010', [], null, 'Rear Derailleur', 1989, 'Tangent').component_id, 4781)
+})
+
 test('unidentified Grizzly hubs and Alessandro rims stay unlinked even with one candidate', () => {
   for (const [value, label, category, year, bike, id, title] of [
     ['SunTour XC-Pro', 'Hubs', 'Hubs', 1991, 'Grizzly', 3628, 'SunTour HB-XP00-R, XC-Pro (rear freewheel hub)'],

@@ -173,6 +173,14 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Brakes
 
+- Applied/validated 2026-11-17, user approved: 1989 Bianchi Tangent Brakes
+  spec **18675**, `SunTour XC-9010`, **1055 -> NULL**. Source325 table p.18
+  names the group for the combined brakes. SunTour Edition No.89 printed
+  p.25 (PDF p.26) identifies 1055 CT-XC10 as rear-only SE, alongside standard
+  CT-XC00 (1054). Neither code identifies the whole combined cell. Preserve
+  wording and leave NULL; Tangent/1989 generator guard prevents relinking.
+  See [SunTour evidence and validation](../../ingest-component-catalog/references/known-catalogs/suntour.md#xce-crank-dating-and-tangent-brake-link-review--2026-11-17-applied-and-validated).
+
 - Most unlinked values are type or maker text ("Mafac centre-pull" 17, "Weinmann side-pull" 13, "Cantilever" 7, "Weinmann" 6, the Raleigh "Weinmann Alloy Side Pull with Extension Levers" and "Raleigh/Weinmann alloy centerpull" strings): leave.
 - Leave unlinked: 1986 Miyata "SHIMANO New 600 EX" x2 (BR-6207-49 short or -57 long reach); 1989 Peugeot "CLB / GL 47-60" / "CLB 47-60, white" (three GL 47-60 version rows 613 / 614 / 615, all undated); 1982 Battaglin "Gipiemme Modolo Professional" (880 v1 1976-80 or 892 v2 1985) and "Gipiemme Modolo Spidi"; 1987 Peugeot "Dia Compe G.500 Q.R." (678 G-N series or 9106 500G); 1982 Peugeot "Mafac Competition Sport" x2 and 1970-72 "Mafac Course" x3; 1981 / 1984 Peugeot "CLB Competition" (608 is 1950-70); remaining front/rear MTB halves are listed in the brake-identification worklist above.
 

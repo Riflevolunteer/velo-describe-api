@@ -2040,7 +2040,8 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   the 4902 "VGT"; the same bike prints "V.G.T. Luxe" in 1975. Bike-scoped 1974 Mirage entry added to `'sun tour vgt'`.
 - 4791 RD-XE01-GXB, XCE: VeloBase `year_from` placeholder 1980 -> 1992 (1992-1992). The 1990 catalogue (source 385)
   marks XCE new for 1990 as RD-XE00 (11056); XE01 is the 1992 code. Supersedes the 1992 note's "no earlier bound".
-  Front 2663 and crank 2002 XCE still carry the 1980 placeholder.
+  At that point front 2663 and crank 2002 still carried the 1980 placeholder;
+  corrected subsequently in the front audit and 2026-11-17 crank review below.
 - Dates from explicit model prints (fitment evidence; no 1986 SunTour catalogue held; descriptions unchanged): `year_to`
   1985 -> 1986 on 4778 RD-6300 XC (1986 Raleigh Elkhorn), 7827 RD-6700 Le Pree GT (Technium 480), 4739 RD-6000 Cyclone
   S (Miyata 710 "New Cyclone"), 4723 RD-4400 aR II GT (Miyata 100 "AR-GT"), 4725 RD-4200 aR II (Technium 440);
@@ -2053,7 +2054,8 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
 ## Front derailleur audit fixes — 2026-11-15 (user approved; audit items 1-4)
 
 - 2663 FD-XE01-GXH, XCE: VeloBase `year_from` placeholder 1980 -> 1992 (1992-1992), as rear 4791; the 1990 catalogue
-  introduces XCE as FD-XE00 (11057). Crank 2002 XCE still carries the 1980 placeholder.
+  introduces XCE as FD-XE00 (11057). The remaining crank 2002 placeholder
+  was subsequently corrected in the 2026-11-17 review below.
 - Dates from explicit model prints (fitment evidence; no 1986 SunTour catalogue held; descriptions unchanged): `year_to`
   1985 -> 1986 on 2620 FD-2500 AR (1986 Miyata 100, Raleigh Technium 440), 2629 FD-3300 Cyclone (Miyata 710 "New
   Cyclone"), 2637 FD-3400 LePree (Technium 480), 2641 FD-1400 Seven (Miyata Sport 10); `year_from` 1987 -> 1986 on 2636
@@ -2134,3 +2136,57 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   such evidence. Downloaded PDFs, HTML and image crops were removed after
   recording these URLs and findings; no source rows or speculative duplicates
   were created.
+
+## XCE crank dating and Tangent brake-link review — 2026-11-17, applied and validated
+
+User approved both guarded updates; applied and read back on 2026-11-17.
+The generator guard is local and tested; application deployment is unchanged.
+Temporary SQL was removed after readback and a zero-change rerun.
+Restoration, if required: restore 2002 year_from=1980 only with its current
+title/source98 guard; restore 18675 component_id=1055 only with the original
+Tangent/1989/source325/Brakes/value guards, and review the generator decision.
+
+- **2002, SunTour CW-XE01, XCE:** applied `year_from` 1980 -> 1992;
+  retain `year_to` 1992 and source_ref 98. The 1992 catalogue printed p.17,
+  item 12 explicitly lists CW-XE01, 48/38/28T, 170/175mm:
+  https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1992_-_page_17.html.
+  This records the earliest held attestation of the coded XE01, not a proven
+  production start or discontinuation. 1990 printed p.16 lists CW-XE00,
+  48/38/28T, 165/170/175mm instead; it does not attest XE01.
+  Earlier notes leaving 1980 as a bucket are superseded for the current
+  catalogue identity only; XCE 4050/4051 parts are already attested in 1989.
+- The retained original VeloBase reference
+  `4CBE56FE-8B0F-42EF-9F7D-79FFA5840768` was re-read, including its photo:
+  https://www.velobase.com/Pages/ViewComponent.aspx?ID=4CBE56FE-8B0F-42EF-9F7D-79FFA5840768.
+  Its model field is blank; it lists 50/40/28T, 170mm and 110/74mm BCD, with
+  broad late-1980s/early-1990s dates. That specimen does not independently
+  identify XE00 or XE01. No merge, speculative new row, title or description
+  change is proposed; exact specimen identity needs a readable model marking
+  or independent crosswalk. 2002 has no live bike links or generator override.
+- **1989 Bianchi Tangent spec 18675**, Brakes `SunTour XC-9010`: applied
+  component_id **1055 -> NULL**, keeping wording and source 325. Original
+  Bianchi US table p.18, image `img-2487-2`, prints the group plus GPX aero
+  levers under BRAKESET, without front/rear model codes:
+  https://www.gringineer.com/blogs/default-blog/1989-bianchi-catalog.
+  SunTour Edition No.89 PDF p.26 / printed p.25 explicitly distinguishes
+  CT-XC10 (62699911), SE mechanism, **rear only**, from standard CT-XC00
+  (62699901):
+  https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf.
+  A rear-only row cannot identify this combined brake entry. Do not replace
+  it with the standard row or infer a front/rear split from group membership.
+  A Tangent/1989 NULL override prevents reintroducing this unsupported link.
+- Pre-application validation: all **96** held CSVs / **21,176** generated
+  specs compared using the live component/brand rows and old/new generator.
+  Exactly one mapping changes: Tangent Brakes 1055 -> NULL. No other spec
+  content/mapping changes. These are generated counts, not live DB coverage.
+  Full `npm test` passes, including a regression against a unique rear-only
+  candidate and unchanged independently reviewed derailleur mapping.
+  Application affected exactly one component and one bike spec; readback
+  confirms 2002=1992-1992/source98 with no bike links and 18675=NULL.
+  SQL rerun affected zero rows. Post-application generator/live-DB comparison
+  for source325: all 398 specs agree, no missing/ambiguous identities or
+  gained/lost/changed mappings. No components inserted, deleted or merged.
+- XCD rear **4789** remains deliberately uncoded: the held 1990 catalogue
+  and its specifications have already been reviewed. Reopen with a readable
+  specimen code or an independent manufacturer crosswalk; do not repeat the
+  catalogue comparison as though it supplies the missing specimen identity.

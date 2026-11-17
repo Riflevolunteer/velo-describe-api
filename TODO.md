@@ -106,7 +106,6 @@ Evidence and exact affected specs are in the
   1. *Catalogue identity checks:* obtain a period crosswalk for 1046 CB-4700 (VeloBase specimen marked Superbe / 4700) and 2613 FD-3200 Le Tech. Compare 3611's confirmed cassette-freehub photo and 126mm specification with 7989 FH-SL01-7 before a merge/date decision; resolve the imported HB code. Find a 1986-87 non-index Sprint source for 171 BB-5000 before dating it; keep separate from BB-500 8819 (different taper and ball count).
   2. *Uncoded specimens*: find period codes for 1335 / 1336 / 1337 Superbe chainrings, 4006 Radius pedal, 1980 ARX crank, 1989 / 1990 Superbe cranks, 6292 Seven levers and 6693 Ole stem. Resolve 2631's clamp/braze-on ambiguity from its specimen before any merge with 7855 / 2630. Resolve 2231 AP and 2241 Perfect YE using stamped codes; verify YE material/indexing rather than copying contradictory fields. 2662 is already tracked under Edition No. 89 p.13.
   3. *Imported dates*: seek dated model evidence for 3130 HS-400, 3131 Alpha 3040, 2618 Vany, 6261 AX-5000 and 4696 Checker. Date 3138 HS-XP01 if a 1991 catalogue turns up.
-  4. *1989 Bianchi Tangent Brakes "SunTour XC-9010"* (spec 18675) links 1055 CT-XC10, which Edition No. 89 calls rear only: decide whether to keep it, null it as a combined front/rear spec, or point it at 1054 CT-XC00.
 
 ## Open: link coverage (bike_spec -> component_id)
 
@@ -302,9 +301,9 @@ comparisons until their identities are settled.
   109 mm MS-68 / NJS axle and marked cups before merging. Retain comparison
   photos `/private/tmp/dup-sugino-162.jpg` and `/private/tmp/dup-sugino-163.jpg`
   while this identity review is pending.
-- **SunTour XCE crank 2002:** resolve the imported 1980 date and possible
-  CW-XE00 / CW-XE01 overlap against the 1990/1992 catalogues and specimen.
-  See [SunTour notes](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md).
+- **SunTour XCE crank specimen:** identify the original uncoded reference behind
+  2002 from a readable marking or independent XE00/XE01 crosswalk before merging.
+  [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#xce-crank-dating-and-tangent-brake-link-review--2026-11-17-applied-and-validated).
 - **Simplex 4649:** find a manufacturer source printing SX 660 before
   retitling it as an SX 6xx or SLJ6600 variant. Identify the 1978 Peugeot PA 60
   Criterium rear from period evidence; the name alone does not establish AR 637 NI.
@@ -320,8 +319,9 @@ comparisons until their identities are settled.
   4641–4643 and 2556 / 2557; Nervar 1657 / 1659; Pelissier 3457–3459;
   Belleri 2791–2794; Weinmann 1103 / 1104; Campagnolo 1472 / 1473 as merges
   or registered variants, using current report results and source evidence.
-- **SunTour XCD rear:** verify the later RD-XD00 versus RD-XD10 model code
-  against the 1990 catalogue and specimen.
+- **SunTour XCD rear 4789:** obtain a readable specimen code or independent
+  manufacturer crosswalk before assigning RD-XD00 / RD-XD10; the held 1990
+  catalogue comparison is already exhausted (see SunTour notes).
 - **Gipiemme Sprint:** obtain independent fitment evidence to identify bare
   Sprint bike specs before selecting a numbered row.
 - **Other front identities:** identify the inscription on 2457 FD-A350;
