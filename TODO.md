@@ -383,9 +383,8 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 ### Archives with unread material
 
-- **Velo-Pages recovered component scans:** inventory/reconcile Stronglight 1958,
-  Simplex and Barelli adverts, and OMAS
-  1978 printed p.4 (101/S Big Sliding hubs); compare the inventoried Dura-Ace EX
+- **Velo-Pages recovered component scans:** inventory/reconcile Stronglight 1958
+  and OMAS 1978 printed p.4 (101/S Big Sliding hubs); compare the inventoried Dura-Ace EX
   brochure with current descriptions. Triage the remaining Detto Pietro pages
   for any supported component categories. Retain
   `/private/tmp/velo-pages-unread-2026-11-17/` scans and capture inventories until

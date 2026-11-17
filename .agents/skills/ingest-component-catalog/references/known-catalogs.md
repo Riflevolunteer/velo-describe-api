@@ -15,6 +15,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/shimano.md](known-catalogs/shimano.md) — Shimano (30 entries)
 - [known-catalogs/suntour.md](known-catalogs/suntour.md) — SunTour (34 entries)
 - [known-catalogs/simplex.md](known-catalogs/simplex.md) — Simplex (9 entries)
+- [known-catalogs/barelli.md](known-catalogs/barelli.md) — Barelli Supreme pedals, Velo-Pages adverts and flyer (sources 439/440)
 - [known-catalogs/weinmann.md](known-catalogs/weinmann.md) — Weinmann (8 entries)
 - [known-catalogs/maillard.md](known-catalogs/maillard.md) — Maillard (4 entries)
 - [known-catalogs/huret.md](known-catalogs/huret.md) — Huret / Sachs-Huret (4 entries)

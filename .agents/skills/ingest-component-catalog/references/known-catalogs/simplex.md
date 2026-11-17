@@ -1,5 +1,19 @@
 # Simplex catalogs processed so far
 
+## Velo-Pages adverts — reviewed 2026-11-17, no DB changes
+
+User requested ingestion of the five recovered adverts. All five were visually read, their archived page titles checked, and the relevant existing component families queried. Dates below are Velo-Pages attributions, not printed dates independently established from the sheets. No model reference is readable in these adverts, so pictured parts alone do not establish a numbered identity or production boundary.
+
+| Recovered image / archived page | Archive attribution | Evidence and decision |
+| --- | --- | --- |
+| 25482 / [25480](https://web.archive.org/web/20111101000000/http://www.velo-pages.com/main.php?g2_itemId=25480) | May 1972 | Rear derailleur, twin down-tube controls and pushrod front illustrated. General quality promotion; no numbered model, weight or capacity. No new row or change to the numbered Prestige/SX/LJ families. |
+| 25488 / [25486](https://web.archive.org/web/20111101000000/http://www.velo-pages.com/main.php?g2_itemId=25486) | June 1974 | Racing photograph with rear/front derailleurs and twin controls. The diagrams corroborate the period range but do not distinguish cage, mounting or model-code variants sufficiently for updates. |
+| 25489 / [25489](https://web.archive.org/web/20111101000000/http://www.velo-pages.com/main.php?g2_itemId=25489) | December 1974 | Presidio Bicycle Shop advert: uncoded Simplex seat post, **9oz**, US$18. Non-fluted pillar drawing and generic name do not uniquely distinguish 8375 SLJ3639, uncoded 5902 SLJ or other earlier posts; do not convert the advertised weight into an exact manufacturer figure for a chosen row. No inferred 1974 start or merge. |
+| 25493 / [25491](https://web.archive.org/web/20111101000000/http://www.velo-pages.com/main.php?g2_itemId=25491) | April 1977 | Leisure/touring range promotion: rear/front derailleurs, controls, QR skewers and seat post. Components have no printed model references or quantitative specifications. QR hardware is outside supported component categories. |
+| 25496 / [25494](https://web.archive.org/web/20111101000000/http://www.velo-pages.com/main.php?g2_itemId=25494) | April 1978 | Touring transmission photograph and general range/capacity marketing. No exact numbered model/configuration established; no capacity or date copied to a particular row. |
+
+Compared the numbered LJ1000/LJ4000/SLJ5000, SX A52, SLJ A500 and S3952 families, plus all existing Simplex seat-post rows. Retained the maker-catalogue identifications and descriptions; no independently supported additions, corrections, source-reference replacements or bike mappings arose. No SQL or new source row was needed solely to record generic corroboration. This closes these five adverts' unread work; reopen a component identification only with new distinguishing evidence. Removed the recovered images and task metadata after recording the source locations. The decisions do not create additional source-hunt tasks.
+
 ## Prestige front override decision — 2026-10-28
 
 The user retained the unranged `simplex prestige: 2583` front override, including
