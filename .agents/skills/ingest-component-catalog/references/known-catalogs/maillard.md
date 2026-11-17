@@ -1,5 +1,66 @@
 # Maillard catalogs processed so far
 
+## Spidel 700 RA group-box review — 2026-11-17, read-only
+
+Checked both original attachments from [Tonton Vélo topic 10923](https://forum.tontonvelo.com/viewtopic.php?t=10923):
+
+- [Attachment 71574](https://forum.tontonvelo.com/download/file.php?id=71574)
+  is a colour group-board illustration, explicitly captioned **pédales Spidel
+  700 RA**. The pictured pedal is a conventional quill design with a bright
+  cage and cylindrical body. The page has no visible date, issue number or
+  publisher attribution. It confirms the model designation, but gives no cage
+  material, weight, thread or RA/RN/RC key. Do not derive material from its colour.
+- [Attachment 74807](https://forum.tontonvelo.com/download/file.php?id=74807)
+  is printed **p.35**, **Un mariage réussi**. The uploader identifies it as
+  **Le Cycle no.119, early 1986**; neither issue number nor date is visible
+  in this single-page scan. It discusses Sedac's distribution of Maillard,
+  Simplex, Stronglight and Mafac in Spidel groups. The small lower-left group
+  is 600 (the accompanying text specifies Maillard diabolo pedals and a
+  Stronglight B10 headset); the large group is 700, with newer-looking pedals
+  and black crankset. **It does not print 700 RA against those pedals.**
+  The large-board pedal has a broad body and perforated cage, unlike the
+  conventional quill pedal in attachment 71574. No exact CXC submodel is
+  established by this image.
+
+These are **two different illustrations**, not one dated, captioned 700 RA
+group box. Supersedes the TODO's conflated wording: the reported Le Cycle
+date cannot be transferred to the undated colour board or used to extend a
+particular 1970–1980 specimen row to 1986.
+
+Compared original specimen listings and main photographs for **3833**, UUID
+`9D35F262-6C11-46F1-A050-D922D4769CDE`, black alloy cages, and **3991**, UUID
+`4CC081F5-1574-4D7F-BAFC-EF35F0221E17`, chrome-plated steel cages. The first
+has black cages with elongated openings; the second has more scalloped/open
+cage edges and chrome faces. Neither specimen page supplies a photographed
+**700 RA** marking or a period code-to-material crosswalk. General quill-body
+similarity and a bright finish on the group board cannot choose one of them.
+Do not infer RA means alloy by analogy with another model, default to the
+steel-cage row by colour, or map to platform **3990**, Galli **3741/3742**,
+Atom **3665**, or generic Maillard **3827** just to bypass badge/variant ambiguity.
+
+Live specs remain NULL:
+
+| Spec | Bike | Year | Printed/stored pedal value |
+| --- | --- | --- | --- |
+| 10671 | 601 PRO 10 | 1981 | Spidel 700 |
+| 10691 | 602 PY 10 S | 1981 | Spidel 700 |
+| 11032 | 625 PRO 10 | 1982 | Spidel 700 RA |
+| 11053 | 626 PY 10 S | 1982 | Spidel 700 RA |
+
+The 1981/1982 local Peugeot CSVs agree with those stored values. Both candidate
+rows still have legacy 1970–1980 dates and source_ref 1. Existing 1979/1980
+explicit **dural** links (2560/2579/10156/10178 -> 3833) are outside this
+unresolved RA identification and remain unchanged. A dated code/material
+table, labelled boxed specimen, or original Peugeot detail identifying cage
+construction is the next useful evidence. A bare family attestation does not
+justify a new RA component or a finish-specific date extension.
+
+No DB/source registration, CSV, matcher or link changes. The two scans, enlarged
+pedal crop and candidate listing/photo downloads were removed after recording
+their URLs and findings. The completed inspection was removed from TODO;
+only the specific missing crosswalk remains waiting for new evidence. See the
+Pedals section of the bike-link decisions for the retained NULL-link call.
+
 ## Maillard cycle fittings catalogue (Maillard_Cycle_fittings_catalogue.pdf, 34 pages, scan, no text layer)
 
 - No printed date anywhere in the catalogue itself. Only soft internal

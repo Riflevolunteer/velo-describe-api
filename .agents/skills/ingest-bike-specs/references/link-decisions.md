@@ -183,6 +183,14 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Pedals
 
+- Rechecked 2026-11-17: Peugeot 1981 PRO 10/PY 10 S `Spidel 700`
+  (10671/10691) and 1982 `Spidel 700 RA` (11032/11053) remain unlinked.
+  The colour board explicitly names 700 RA but is undated and gives no cage
+  material; the separate Le Cycle no.119 p.35 image does not label its pedal
+  700 RA. Neither chooses black-alloy 3833 versus chrome-steel 3991 or dates
+  either exact variant. Preserve existing explicit-dural links to 3833.
+  [Evidence and next discriminant](../../ingest-component-catalog/references/known-catalogs/maillard.md#spidel-700-ra-group-box-review--2026-11-17-read-only).
+
 - Most unlinked values are toe-clip / reflector text ("Course with toe clips and straps" 17, "Sports pedals with reflectors" 10), Raleigh house pedals (717, 501, 917, "Raleigh ball bearing"), the Maillard CX / Atom source gap (see source hunts) and Colnago group fan-out ("Shimano AL 11", "Shimano Santé"): leave.
 - Leave unlinked (several rows fit or either / or): 1982 Battaglin "Gipiemme Cronospecial / Special" (existing do-not-link: 3747 Cronospecial and 3752 Special are separate pedals); 1972 Raleigh "Campagnolo Pista" (3711 / 3715, both 1971+); 1980 Raleigh "Sun Tour Superbe" (PL-1000 Custom or PL-4000 Pro); 1981 Peugeot "Atom 450" x2 (450RA or 450RN); 1981-82 Peugeot "Spidel 700" / "700 RA" x4 (Spidel 700 rows end 1980; Spidel badge variants kept apart); Bianchi "Ofmega Pista" (Master or Mistral Pista) and "Ofmega Competizione" (not the Super Competizione).
 

@@ -16,8 +16,9 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Check Koga-Miyata 1986 MTB-204/BMT-3-26/Rockey-2 and Trek 1987 pp.13–14 MTB-209/MTB-210/FX-200 against existing rows and fitment. [Source leads](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - Review remaining Kusuki, Sugino TGT-LP, Dia-Compe PN-280/281/730, KKT RT-E1 and Sansin ET-Q/ET-QS identities using [Panasonic evidence](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md).
 - Decide variant representation for Raleigh Zenith/Granada specs 8781/8804. [Weinmann evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/weinmann.md).
-- Check the Le Cycle no.119 group box for Peugeot Spidel 700 RA pedal identification. [Source log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - Review Guida ’96 pass 3 and remaining FRM/OMAS/Mavic identities. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md).
+- Prepare and review the Mavic T261 9983/10182 consolidation and 1995 availability correction using the recovered maker profile. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#t261-profile-crosswalk--2026-11-17-read-only).
+- Review finish-specific representation for Mavic Reflex tubular 9975/10197/10198 while preserving the documented CD/Ceramic options. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#other-waiting-cases).
 - Recover the logged Dura-Ace EX and Detto Pietro scans; compare EX descriptions and triage supported Detto categories. [Recovery log](.agents/skills/ingest-component-catalog/references/source-hunts.md#log).
 - Establish issuer/date and reconcile the Polish IRC sheets indexed 1999. [Source log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - Check Regina source 117’s splined-body provision against Palo Alto’s splined Oro freewheels. [Identity review](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#palo-alto-identity-review--applied-and-validated-2026-11-17).
@@ -40,7 +41,8 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
 
-- **Mavic:** obtain profile/weight/finish evidence for Reflex/T261/CXP30 overlaps, Open Pro 5099/5100 and 870 clamp 2410. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md).
+- **Spidel pedals:** obtain a period 700 RA cage-material/code crosswalk or coded Peugeot fitment for specs 10671/10691/11032/11053. [Group-box review](.agents/skills/ingest-component-catalog/references/known-catalogs/maillard.md#spidel-700-ra-group-box-review--2026-11-17-read-only).
+- **Mavic:** obtain CXP30 specimen/edition weight attribution, dated Open Pro 5099/5100 decals/finishes and a dated 31.8 mm specification for 870 clamp 2410. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md).
 - **Huret/Sachs Huret:** recover sheet 501.1 DFE for description enrichment; obtain coded fitment/specimens for New Success, Rival, Rider, Duopar/Eco and Avant, plus dated ARIS evidence. [Exact cases](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md).
 - **SunTour:** obtain code/construction/date evidence for the remaining XCD/XCE, Superbe, Sprint, FD-3000-SS and uncoded specimens; resolve FH-XD10/11 and LD-5100/LS-5700/5800 identities. [Exact cases](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md).
 - **Campagnolo:** obtain the remaining 2000/2001 code/version crosswalks and early front-derailleur date evidence. [Exact cases](.agents/skills/ingest-component-catalog/references/known-catalogs/campagnolo.md).

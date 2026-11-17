@@ -1,5 +1,75 @@
 # Mavic catalogs processed so far
 
+## T261 profile crosswalk — 2026-11-17, read-only
+
+Reopened the waiting evidence item using a newly recovered **1995 maker
+catalogue** on Disraeli Gears. Its [cover](https://www.disraeligears.co.uk/site/00_main_images/mavic_1995_page_1_main_image.jpg)
+visibly prints **1995**; use that edition year, not the archive's tentative
+1994 publication date. The cover has a Jaropa/Leiden distributor sticker;
+the inspected tables are in English. No matching 1995 Mavic source label or
+`mavic_1995` citation currently exists in `data_source`. This is a focused
+evidence review, not ingestion of the full catalogue or source registration.
+
+### T261 identity is now supported
+
+[Printed p.17](https://www.disraeligears.co.uk/site/00_main_images/mavic_1995_page_17_main_image.jpg)
+explicitly identifies **T261 SBP**, ETRTO **622 x 20 mm (700C)**, rim width
+**26 mm**, double stainless eyelets, **540 g**, silver colour SBP and 36 holes.
+The section drawing independently labels **20 mm inside / 26 mm outside**,
+15.4 mm height. Thus 20 and 26 can describe the same profile; this is direct
+manufacturer evidence, superseding the earlier requirement not to assume the
+measurement basis. Do not use the table's anomalous `rim end spoke 547` entry
+as a validated 700c ERD.
+
+Reopened the original [1997 maker spread 4](https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1997.html),
+using its Blogger image at original `/s0/` resolution and an enlarged profile
+crop. The top T261 dimension reads **26**, rather than the earlier transcribed
+23; the adjacent T238 profile is labelled 23. T261 is silver, 540 g,
+36/40/48 holes, for 28–35 mm tyres. The clear 1995 numbered section and the
+already verified 1999 maker p.22 independently support 26 mm outside width.
+The earlier 23 mm reading is superseded; it does not establish a different
+generation. The 1995 edition only lists 36 holes, so preserve the later
+36/40/48 options with their edition attribution.
+
+Live readback: **9983** is the 1997 silver T261 family row (1997–1997,
+source 307); **10182** is T 261 Argent (1996–1999, source 374), already
+described as 26 mm outside, 540 g, silver, double wall/eyelets, 36/40/48 holes.
+Both have zero bike links and no component image; neither ID occurs in
+`scripts/` or the bike-ingest reference decisions. No identity distinction is
+supported by their profiles, weight, colour or construction. They are now an
+evidence-backed consolidation candidate. Recommend retaining **10182**, consistent
+with the existing finish-specific T217 treatment, preserving the 1997 attestation
+and moving its year_from **1996 -> 1995**. This is availability evidence, not
+a production start date. A guarded change set, reference checks, mapping comparison
+and user review remain necessary before applying; **no mutation SQL was prepared or run**.
+
+### Other waiting cases
+
+- **9975 / 10197 / 10198 Reflex tubular:** visually rechecked 1997 road spread 3.
+  It lists silver, blue, CD and CD Ceramic; 375 g, Ceramic 390 g, 28/32/36 holes.
+  Removing broad 9975 still loses CD/Ceramic representation. This is a remaining
+  representation decision, not evidence that all finishes are duplicates.
+- **5062 / 10199 / 10607 CXP30 tubular:** that same maker spread explicitly
+  prints **465 g for both silver and titanium-colour tubular options**, versus
+  520 g for the clincher. This supports the known maker specification but does
+  not explain 10607's **1996 dealer 520 g** or 5062's independent **500 g
+  specimen**. Preserve those separate attributions pending edition/specimen
+  evidence; no merge or weight overwrite is justified by this recheck alone.
+- [1995 p.15](https://www.disraeligears.co.uk/site/00_main_images/mavic_1995_page_15_main_image.jpg)
+  distinguishes **Open 4 CD / Open SUP / Reflex clincher**; it does not identify
+  either Open Pro specimen 5099/5100. Do not transfer those models' dates or
+  the 430 g Reflex clincher weight to the later tubular rows. Open Pro and
+  31.8 mm 870 limits remain as documented below; no new dated specimen/clamp
+  evidence recovered in this bounded pass.
+
+Additional inspected 1995 pages: p.6 hubs, p.12 MTB rims, p.14 road rims,
+p.16 tubulars; these were navigation/context, not a full reconciliation.
+Only read-only DB queries ran. No component, source, bike, CSV or matcher changed.
+TODO moved T261 and the Reflex representation decision to actionable review;
+only CXP30, Open Pro and the 870 clamp remain waiting for distinguishing evidence.
+Task-created downloads and the enlarged crop were removed after recording these
+source/page references; maintained scans and unrelated scratchpads were untouched.
+
 ## Mavic 192 availability — 2026-11-17, applied and validated
 
 Focused follow-up for previously undated **5050 Mavic 192**, UUID
@@ -186,6 +256,10 @@ values and remaining evidence limits are retained above.
 
 ## Rim maker-source follow-up — 2026-11-17, applied and validated
 
+The later T261 crosswalk at the top supersedes this section's unresolved
+1997 23 mm reading and its T261 evidence requirement. Applied changes below
+remain historical records.
+
 Recovered the [1999 GB maker catalogue](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf)
 (13 PDF pages, two printed pages per PDF page). Existing source **374** cites
 this exact PDF; its old label restricted it to the previously reviewed CC9 p.24.
@@ -340,6 +414,10 @@ regeneration required. Completed task removed from TODO and temporary SQL remove
 after validation. The rim identity questions below remain open.
 
 ### Rim overlaps — no merge proposed from this pass
+
+Historical review: the later maker-source follow-up and T261 crosswalk above
+supersede the current-state claims below about 10182/10197 descriptions, the
+T217 overlap and the unresolved T261 profile. Retain this earlier evidence trail.
 
 The [1997 maker catalogue](https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1997.html)
 spreads **3** (road) and **4** (MTB/trekking) distinguish tubular/clincher Reflex
