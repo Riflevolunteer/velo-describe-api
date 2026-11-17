@@ -297,3 +297,20 @@ of those older temporary files.
   21,176 generated specs found zero spec content or mapping changes.
   Keep the uncoded specimen separate; review identity again only with a
   readable axle code/length or an independent specimen crosswalk.
+
+## SP-KC fitment and missing-link follow-through — applied 2026-11-17
+
+- **5928**, SP-KC (fluted; measurement ruler): dates **NULL / NULL → 1985–1987**,
+  source_ref **1 → 419**. [Raleigh 1985 specification scan](https://www.sheldonbrown.com/retroraleighs/catalogs/1985/images/specifications.jpg)
+  (source 44) explicitly names SP-KC; [Panasonic 1987 p.28](https://panasonicbikemuseum.info/wp-content/uploads/1987catSpecs1Page28.jpg)
+  names SP-KC 230mm micro-adjust on DX-6000, separately from SP-KCL on
+  DX-5000 / DX-4000. Availability attestations, not production endpoints.
+- Description changed from `Sugino SP-KC (fluted; measurement ruler), Japan`
+  to `Micro-adjusting seat post with fluted shaft and measurement scale; 230mm
+  fitment listed. Japan.` Title/search text unchanged. Keep SP-K 5927 and
+  SP-KCL identities distinct. Old dates/source/description above allow restoration.
+- Linked **22103 / 22189** (1987 Miyata Carbon Tech 1000 / 912, p.26 `SPK-C
+  w/scale`) through bike/year-scoped overrides. All existing 1985–86 Raleigh
+  links remain within the new range. Readback, all-96-catalogue comparison and
+  zero-change SQL rerun passed. Quality removed exactly 5928's missing-date
+  review and added no findings; full batch evidence is in bike `panasonic.md`.

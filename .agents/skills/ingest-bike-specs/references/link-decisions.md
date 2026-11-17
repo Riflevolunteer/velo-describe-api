@@ -14,6 +14,14 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
   NULL guards prevent that substring match. No separate 81-L row or speculative
   split is needed for this review. See known-catalogs/miyata.md for source URLs.
 
+## Nashbar follow-through on Miyata (reviewed 2026-11-17)
+
+- GX-400 Aero lever **18835** is not caliper series 8082 / 678. Its matching
+  GX-400 caliper spec 18834 is already linked; keep the lever NULL pending a
+  lever code/source. DC-983D brakes **22360 / 22462** are not established aliases
+  of bare 983 row 662 by the 1988 Nashbar source. Retain both NULL until a D-code
+  crosswalk is found. See component cross-catalog-notes.md, Nashbar follow-through.
+
 ## 1984 Motobecane (loaded 2026-11-16)
 
 - City-Becane (bike 1335, loaded 2026-11-17): the p.9 portrait

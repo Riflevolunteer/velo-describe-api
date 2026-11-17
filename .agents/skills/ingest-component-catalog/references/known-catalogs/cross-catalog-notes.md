@@ -1882,6 +1882,27 @@ Weinmann 1129 / 1130 570.
     1986 / 1987 Miyata and 1987-89 Raleigh changed link counts, all explained. Every new link falls
     within its row's dates.
 
+### Nashbar widened-row follow-through — 2026-11-17, review complete
+
+- Rechecked all loaded bike specs against Ole 4752 / 2638 / 6289 / 3133 / 1985:
+  no specs use those components or name Ole. Their earlier-1988 attestation is
+  already recorded in both Nashbar and SunTour Edition No.89 evidence; there is
+  no outstanding Ole backfill. This does not close the separate Nashbar bike load.
+- Dia-Compe **8082 / 678** are brake caliper series, not brake-lever identities.
+  Miyata 710's 1986 GX-400 brake **18834** already links to 8082; its GX-400 Aero
+  lever **18835** correctly remains NULL. Extending caliper dates cannot identify
+  that lever. Keep the existing Dia-Compe lever-source hunt.
+- Miyata 1987 DC-983D brakes **22360 / 22462** remain NULL: row **662** is bare
+  983 and Nashbar's Terra Alpha wording does not establish a D-suffix crosswalk.
+  Fold this specific source need into the existing Dia-Compe hunt rather than
+  repeating the completed widened-row check.
+- Nashbar p.53 Custom P5 is useful candidate evidence for the 1987 Raleigh
+  fluted/Allen-bolt wording, but does not distinguish it from all CT-P6 fitments.
+  Generic Nashbar MTE and the 4050 bike's bare CRE do not identify MTE-110 or
+  prove a CRE/CRE-100 alias. Those open identities are consolidated in the
+  existing SR worklist and seatpost items. No new mappings or date changes
+  are supported for them, and no unsuccessful hunt is added as a separate task.
+
 ## Reviewed specimen and variant distinctions
 
 Identity evidence from the November 2026 reviews; consult brand notes and the generator registries before reopening.

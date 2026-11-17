@@ -3736,7 +3736,7 @@ const COMPONENT_OVERRIDES = {
     'shimano sport lx': [{ from: 1989, to: 1989, id: 3976 }], // 1989 Bianchi Sport SX: PD-A450, as the 1989 Peugeot "Sport LX A 450"
     'shimano spd': [{ from: 1993, to: 1993, id: 7666 }], // 1993 Bianchi Nth FS (XTR): PD-M737 SPD, as the 1993 Super Grizzly "SPD-737"
     'ofmega quattro': [{ from: 1989, to: 1991, id: 3885 }], // 1989-91 Bianchi Campione d'Italia / Trofeo: Ofmega Vantage pedal; crank 1705 is "Vantage (Bianchi Quattro version)" (3885 year_to 1988 -> 1991; judgement call)
-    'mks rt 7 chrome plated': [{ from: 1986, to: 1986, id: 10832 }], // 1986 Miyata 90: MKS 9004, RT-7 (Edition 11 p. 4, added 2026-11-06)
+    'mks rt 7 chrome plated': [{ from: 1985, to: 1986, id: 10832 }], // Miyata 90 / Sport-10; MKS 9004, RT-7 (Edition 11 p.4).
     'mks 33': [{ from: 1983, to: 1983, id: 10831 }, { from: 1986, to: 1986, id: 10831 }], // 1983 / 1986 Miyata 100 / 90: MKS 6001, 33 (Edition 11 p. 4, added 2026-11-06)
     'mks model 33': [{ from: 1984, to: 1984, id: 10831 }], // 1984 Miyata 100 / 90: MKS 6001, 33 (row widened to 1983 from Miyata fitment, 2026-11-16)
     'mks m 33 chrome plated': [{ from: 1985, to: 1985, id: 10831 }], // 1985 Miyata 100: MKS 6001, 33
@@ -4110,6 +4110,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo 272mm': [{ to: 1985, id: 5749 }], // 1971 Raleigh Professional Mk III / International: 1044 Record
     'sun tour superbe fluted 270mm': 5933, // 1980 Raleigh Superbe: SunTour SP-1000, Superbe (Fluted)
     'sugino spkc': 5928, // 1986 Raleigh Crested Butte: Sugino SP-KC
+    'sugino spk c w scale': [{ bike: 'Carbon Tech 1000', from: 1987, to: 1987, id: 5928 }, { bike: '912', from: 1987, to: 1987, id: 5928 }], // Miyata p.26: SP-KC measurement scale; Panasonic 1987 p.28 prints SP-KC separately from SP-KCL.
     'sugino sp kvc 230mm': 5928, // 1986 Raleigh Elkhorn: "KVC" a typo of the 1985 "SP KC 230mm"
     'simplex slj 4164 dural silver anodised 266mm': 7305, // 1977 Peugeot (DE) PY 10/CP: Simplex SLJ4164, row 1978-81, a year early
     // 1987 Bianchi Mondiale table names no code; 600BA / 600CA Aero / 600DD remain distinct.
@@ -4739,6 +4740,9 @@ const COMPONENT_OVERRIDES = {
     "weinmann a 129 concave 700 c": [{ bike: "Interclub", from: 1984, to: 1984, id: 5208 }],
     "alloy rigida 1320 27x1": [{ bike: "Mirage Sport", from: 1984, to: 1984, id: 9894 }],
     'araya mod 18 27x1 1 4 36 40h anodized': [{ bike: '215 ST', from: 1987, to: 1987, id: 4921 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
+    'araya model 18': [{ bike: '110', from: 1984, to: 1984, id: 4921 }, { bike: '100', from: 1984, to: 1984, id: 4921 }], // Miyata p.25; Model 18 is Araya 18, not a different model.
+    'araya model 18 anodized': [{ bike: '310', from: 1985, to: 1985, id: 4921 }], // Miyata p.17.
+    'araya model 18 27x1 1 4': [{ bike: '110', from: 1985, to: 1985, id: 4921 }, { bike: '100', from: 1985, to: 1985, id: 4921 }], // Miyata p.18.
     '(r) araya alloy disk wheel (f) adx 4 26" sha': [{ bike: 'Aero Miyata', from: 1987, to: 1987, id: null }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'araya 5 27" x 1 1 4"': [{ bike: '90', from: 1983, to: 1983, id: 9543 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'ukai 7c 26x175 anodized': [{ bike: 'Ridge Runner', from: 1985, to: 1985, id: 10470 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.

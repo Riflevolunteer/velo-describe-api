@@ -62,3 +62,16 @@
     Regeneration gives exactly these 5 links. A first pass found the generic matcher
     also linking "SUGINO TGT-LP" by substring; it is now blocked by a `null` key.
     duplicate-report (plain, `--near`, `--paren`) and `quality-report` raise nothing.
+
+## RT-7 catalogue fitment follow-through — applied 2026-11-17
+
+- MKS 9004 RT-7 **10832**: year_from **1985 → 1984**, year_to stays 1986,
+  source_ref **340 → 404**. The [1984 Miyata catalogue](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2084.pdf)
+  p.25 names RT-7 on BMX-3000; the excluded bike was not ingested. Sport-10 on
+  that page instead says PT-7 and is not aliased. Maker construction, 97mm and
+  400g facts from Edition 11 remain unchanged; the new lower bound attests
+  catalogue availability, not introduction. Revert date/source to 1985 / 340.
+- Linked **21736 / 21758** (1985 Miyata 90 / Sport-10, p.18 RT-7 Chrome Plated)
+  and extended the existing 1986-only matching range to 1985–1986. Readback,
+  all-96-catalogue comparison and zero-change SQL rerun passed as part of the
+  source-hunt batch; full validation/evidence is in bike notes `panasonic.md`.

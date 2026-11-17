@@ -63,18 +63,21 @@ FL-270S.
 
 ## Existing rows: unlinked specs and date evidence
 
-- **Link misses (row exists):**
+- **Existing-row link review** (the three Araya / RT-7 / SP-KC misses below
+  were subsequently applied and validated 2026-11-17; detailed evidence at the end):
   - Dia-Compe 280 8112 / 281 8113 (1984-86). The 1985 Miyata Ridge Runner "DC-280"
     and Street Runner "DC-281" specs miss them. Panasonic prints "DC-280" / "DC-281" in
     1985 and "No.280" / "No.281" in 1986-87 for the same MTB levers, so the 2026-11-16
     "no row" listing was wrong. **Applied 2026-11-16** (21632 -> 8112, 21675 -> 8113).
-  - Araya **18** 4921 (1982-93). "ARAYA Model 18 / Model-18" x5 on 1984-85
-    Miyata; Panasonic prints "Araya Model 18" in 1985-86.
-  - MKS RT-7 10832 (1985-86). Two 1985 Miyata "MKS RT-7 Chrome Plated" specs miss
-    because the override is 1986-only. Panasonic attests RT-7 in 1986.
-  - Sugino SP-KC 5928 (undated). Two 1987 Miyata "SUGINO SPK-C w/scale" specs miss
-    the `sugino spkc` override. Panasonic 1987 DX-6000 has SP-KC, which gives 5928 a
-    1987 date.
+  - Araya **18** 4921 (1982–93): five 1984–85 Miyata Model 18 specs linked
+    2026-11-17. Panasonic prints Model 18 in 1985–86; the scoped overrides now
+    cover the Model / Model- punctuation and anodised wording.
+  - MKS RT-7 **10832** (now 1984–86): the two 1985 Miyata Chrome Plated specs
+    linked 2026-11-17 after widening the 1986-only override. The earlier date
+    comes from the 1984 Miyata BMX-3000 fitment; Panasonic attests RT-7 in 1986.
+  - Sugino SP-KC **5928** (now 1985–87): the two 1987 Miyata `SPK-C w/scale`
+    specs linked 2026-11-17. The dates and description use the earlier Raleigh
+    fitment plus the 1987 Panasonic SP-KC specification, separately from SP-KCL.
 - **Identity questions Panasonic informs but does not settle:**
   - KKT "RT-E1" x10 (1979-82 Miyata) against 3773 RT-E (1974). Panasonic 1985
     prints both "RT-E" and "RT-E II", so RT-E1 is probably the plain RT-E.
@@ -165,3 +168,56 @@ FL-270S.
   - "SP-243 alloy black" posts, matching the 1989 Bianchi "KA SP-243".
   Neither is enough to add a row. That yield is too low to justify reading the 1990,
   1991, 1993 and 1995 tables blind.
+
+## Source-hunt follow-through — 2026-11-17, applied and validated
+
+The three existing-row link misses were matcher omissions, not missing sources
+or component identities. User approved application with "apply"; all nine
+previously NULL specs below now link to the reviewed existing components.
+
+| Component | Supported specs | Evidence |
+| --- | --- | --- |
+| Araya 18 **4921** | 21338 / 21359 (1984 110 / 100); 21525 (1985 310); 21694 / 21716 (1985 110 / 100) | Miyata 1984 PDF p.25; 1985 pp.17–18 print Model-18 / Model 18, including anodised and 27×1¼ wording. Panasonic 1985 DX2000 / Touring Deluxe likewise print Model 18. Existing row covers these dimensions; retain TM-18 (8452) separately. |
+| MKS 9004 RT-7 **10832** | 21736 / 21758 (1985 90 / Sport-10) | Miyata 1985 p.18 explicitly prints RT-7 Chrome Plated, matching already-linked 1986 values. The override was restricted to 1986. MKS Edition 11 p.4 is the code/identity source (340). |
+| Sugino SP-KC **5928** | 22103 / 22189 (1987 Carbon Tech 1000 / 912) | Miyata 1987 p.26 prints SPK-C w/scale. Panasonic 1987 p.28 DX-6000 prints SP-KC 230mm micro-adjust; adjacent DX-5000 / 4000 print SP-KCL, which is not aliased. The existing row independently identifies its fluted shaft and measurement ruler. |
+
+Source files rechecked:
+
+- [Miyata 1984](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2084.pdf), p.25, source 404.
+- [Miyata 1985](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2085.pdf), pp.17–18, source 405.
+- [Miyata 1987](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2087.pdf), p.26, source 407.
+- [Panasonic 1987 p.28 scan](https://panasonicbikemuseum.info/wp-content/uploads/1987catSpecs1Page28.jpg), source 419.
+- [Raleigh 1985 specification scan](https://www.sheldonbrown.com/retroraleighs/catalogs/1985/images/specifications.jpg), source 44.
+
+Applied two component corrections along with the nine guarded NULL links:
+
+- **10832** year_from **1985 → 1984**, year_to remains 1986, source_ref
+  **340 → 404**. Miyata 1984 p.25 positively names MKS RT-7 on BMX-3000;
+  Sport-10 instead says PT-7, which remains distinct. This uses component
+  fitment evidence without adding the excluded BMX bike. Retain all maker
+  description facts from MKS Edition 11. Availability bound, not introduction.
+- **5928** NULL / NULL dates → **1985–1987**, source_ref **1 → 419**.
+  Raleigh's 1985 Portage / Kodiak / Crested Butte / Elkhorn explicitly name
+  SP-KC (some other rows print SP-CK); Panasonic and Miyata attest it in 1987.
+  Description is now `Micro-adjusting seat post with fluted shaft and
+  measurement scale; 230mm fitment listed. Japan.` Keep its title/search text.
+  Old description, for restoration: `Sugino SP-KC (fluted; measurement ruler), Japan`.
+  These are attested availability bounds, not production endpoints.
+
+Validation: first SQL run changed exactly nine spec links and two component
+rows. Readback verified every approved component field and mapping, with all
+other bike/spec mappings, component identities and row counts unchanged. SQL
+rerun affected zero rows in all eleven updates. The generator comparison across
+all 96 loaded catalogues (21,196 specs) now has zero gained/changed/missing/
+ambiguous mappings, with the same fifteen pre-existing lost mappings and
+21,181 unchanged. All 13 test files pass; no new test file was added for these
+data mappings. No competing RT-7 or SP-KC row was found; retain Sugino SP-K 5927
+and Araya TM-18 8452 separately.
+
+Whole-DB quality errors remain zero; reviews fall 1,951 → 1,950. The only
+finding removed is incomplete_dates for 5928 (1,566 → 1,565); date conflicts
+remain 326, broad freewheel labels 35 and descriptions at limit 24. No new
+finding was introduced. Temporary SQL, downloaded scans, snapshots and review
+helpers were removed after readback and idempotency validation. Existing shared
+Panasonic TSVs remain needed for the separate pending bike-brand/ingestion
+decision in TODO.
