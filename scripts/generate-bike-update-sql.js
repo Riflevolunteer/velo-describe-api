@@ -2149,6 +2149,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore lx m system': 977, // Shimano BR-M560 / BR-M561, Deore LX (M-System)
     'shimano exage es m system': 1002, // Shimano BR-M520 / BR-M521, Exage ES (M-System)
     'dia compe xce cantilevers 287 levers': 703, // Dia-Compe XCE
+    'dia compe 984': [{ from: 1989, to: 1989, id: 11549 }], // 1989 Bianchi Axis; 1990 MTB brochure (source 448), 984 panel; 984D remains unidentified.
     'dia compe 987 ss 7 brs': 652, // Dia-Compe 987
     // 1985 Raleigh (Sheldon Brown scan).
     // 1985 Raleigh: the CSV "Brakes" cells were split into caliper (here) and
@@ -3567,6 +3568,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    'dia compe 250s aero': [{ from: 1989, to: 1989, id: 275 }], // 1989 Bianchi Axis; Dia-Compe March 1989 guide p.1, AC250S/BRS300
+    'dia compe bl 08 aero': [{ from: 1989, to: 1989, id: 11536 }], // 1989 Bianchi Volpe; Dia-Compe March 1989 guide p.2, BL08/BRS Blaze
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'campagnolo drilled levers with gum hoods': [{ from: 1978, to: 1978, id: 232 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.

@@ -4,6 +4,16 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## 1989 Bianchi Dia-Compe 984D (reviewed 2026-11-17)
+
+- Forte **18613** and Volpe **18717**, `Dia-Compe 984D`, remain NULL. The US
+  1990 MTB brochure (©1989), source 448, explicitly describes **984**, with
+  Ratchet Dial and Rotational Dish adjustments, but does not print **984D** or
+  establish that the D suffix is interchangeable. It supports Axis **18696**
+  `Dia-Compe 984` -> new **11549**, applied on user approval; it does not
+  support extending that link to the D-suffix specs. Seek explicit maker/model
+  identification before linking those two. [Evidence](../../ingest-component-catalog/references/known-catalogs/dia-compe.md#mtb-brochure--ebay-800322888787-photo-inventory-reviewed-2026-11-17).
+
 ## Bottecchia US September 1972
 
 - Professionale’s grouped Nuovo Record hubs/seatpost lack flange/post variant; Nuovo Tipo large-flange QR hubs do not distinguish 3232 kidney-bean from 3233 round holes. Giro d’Italia’s plain Record gear wording does not establish Nuovo Record; Gran Turismo/Valentino Extra identify only the rear mechanism. Keep these unresolved links NULL, along with generic Simplex/Unica and unnamed equipment. [Source and applied mappings](known-catalogs/bottecchia.md).
@@ -211,8 +221,15 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Brake Levers
 
+- Applied on user approval, 2026-11-17: 1989 Bianchi Axis spec **18697**
+  `Dia-Compe 250S aero` -> **275 AC250S/BRS300**; Volpe **18718**
+  `Dia-Compe BL-08 aero` -> **11536 BL08/BL08C**. Printed March 1989 maker
+  guide, pp.1–2 (source 447), names both codes. Exact value overrides apply
+  only in 1989. This supersedes the earlier 250S no-row decision; do not use
+  AC250/AGC250 instead. [Evidence](../../ingest-component-catalog/references/known-catalogs/dia-compe.md#march-1989-product-guide--ebay-144913620478-applied-2026-11-17).
+
 - Most unlinked Peugeot values name no model ("Double levers" 21, "Course levers" 13, "Weinmann" 8, "CLB" 7, "Drilled course levers with rubber hoods" 7, the 1987-88 "Road grips, double lever" strings): leave.
-- Leave unlinked: 1982 Peugeot "Mafac course (double cable on the right)" x2 (the plain "mafac course" override goes to 357 Course 419 / 429, but a two-cable lever may not be that part; not applied 2026-11-02); 1989 Bianchi "Shimano Sport LX aero" (BL-A450 / A451 / A452 / A453 all Exage Sport); 1982 Peugeot "Mafac Promotion" x3 (344 / 345 / 346 plus the dural Promotion = Course 130 decision) and "Mafac, drilled" x2; 1989 Bianchi "Dia-Compe 250S aero" (AC250 / AGC250, no 250S) and "SunTour XCE-4050" (455 is the Edge road lever); 1986 Raleigh "DC 630/165 (racing); DC 630/135 (touring)" (two levers in one cell).
+- Leave unlinked: 1982 Peugeot "Mafac course (double cable on the right)" x2 (the plain "mafac course" override goes to 357 Course 419 / 429, but a two-cable lever may not be that part; not applied 2026-11-02); 1989 Bianchi "Shimano Sport LX aero" (BL-A450 / A451 / A452 / A453 all Exage Sport); 1982 Peugeot "Mafac Promotion" x3 (344 / 345 / 346 plus the dural Promotion = Course 130 decision) and "Mafac, drilled" x2; 1989 Bianchi "SunTour XCE-4050" (455 is the Edge road lever); 1986 Raleigh "DC 630/165 (racing); DC 630/135 (touring)" (two levers in one cell).
 
 ## Chains
 

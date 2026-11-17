@@ -71,7 +71,7 @@ Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agen
 
 - Seek a new free Yaesu 1984–87 or SR No.19–23 scan/holder lead; paid acquisition remains deferred. Obtain Schwinn 1985’s printed CXC-T310 block if available.
 - Seek maker/importer evidence for Tange, VP/HTI pedals, H.L./Kalloy/Kusuki/ITM bars/stems and the remaining named Japanese/Taiwanese gaps.
-- Recover the logged Dia-Compe 1987–93 catalogue leads; seek dated Tioga Surefoot-6 evidence and missing 1992 tyre pp.20–25.
+- Obtain a straight-on [Dia-Compe MTB brochure Short Stop panel](.agents/skills/ingest-component-catalog/references/known-catalogs/dia-compe.md#mtb-brochure--ebay-800322888787-photo-inventory-reviewed-2026-11-17) to confirm the obscured lever codes; seek 984D identification. Recover March 1989 pp.4–8/11–14 and the full right edge of p.3 from a new scan. Seek dated Tioga Surefoot-6 evidence and missing 1992 tyre pp.20–25.
 - Read the logged Ofmega Mistral adverts/group test and Campagnolo May 1984 Victory advert; seek Gipiemme 1980–83, Vittoria 1982–93 and Bianchi 1974–77/1979–80/1991–99 sources.
 - Inspect CLB catalogue photos in eBay 305827471354; seek period evidence for the remaining named brake and Sedis 1977–78 chain gaps.
 - Revisit Brügelmann’s Cobra saddles, Mavic Titan and Hutchinson Krono identities using held evidence; seek missing 1986–87/1989–92 editions through a new holder.

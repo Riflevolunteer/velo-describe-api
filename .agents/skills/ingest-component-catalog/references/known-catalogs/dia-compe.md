@@ -1,5 +1,360 @@
 # Dia-Compe catalogs processed so far
 
+## MTB brochure — eBay 800322888787, photo inventory reviewed 2026-11-17
+
+Source: https://www.ebay.com/itm/800322888787, English US brochure, cover
+“FOR EVERY PART OF YOUR RIDE”, Dia-Compe Inc., Fletcher, North Carolina.
+**Dating verified from the supplied back panel: ©1989 Dia-Compe Inc., with
+“For 1990” in the range introduction.** Treat as the 1990 range, published
+©1989; copyright alone does not establish every model's availability in 1989.
+This supersedes the initial one-photo review's uncertain seller-only dating.
+**Applied on explicit user approval, 2026-11-17, source 448.** Six new records
+11545–11550, four enrichments and one link were written with expected affected
+counts, then validated for mapping preservation, duplicates and idempotency. Before
+application there was no matching source by Dia-Compe label or listing citation.
+
+Preserve these five user-provided originals in `/Users/acooper/Desktop/`:
+
+| File | Supplied photo | Coverage |
+| --- | --- | --- |
+| `s-l1600 (1).webp` | 1, repeated from first upload | X-1 / 286 / 986; ruler obscures left captions and right prose cropped |
+| `s-l1600.webp` | 2 | Dated back panel and oblique Short Stop panel |
+| `s-l1600 (4).webp` | 3 | 984 panel; XCExpert / XCMaster / XCT levers and brakes; partial cover |
+| `s-l1600 (3).webp` | 4 | Front cover; no additional model specifications |
+| `s-l1600 (2).webp` | 5 | Clearer XCExpert / XCMaster / XCT brake specifications |
+
+This is a partial photographic recovery, not six gallery originals or an
+unobscured complete brochure. The Short Stop panel needs a straight-on view for
+all model numbers and text. In the following inventory, 1990 is the range year,
+not a claimed manufacturing start. Existing dates remain unless separately justified.
+
+| Category | Identity / title | Readable manufacturer specifications | Applied reconciliation |
+| --- | --- | --- | --- |
+| Brake Levers | Dia-Compe 286, Short Stop (X-1) | Cold-forged lightweight alloy; natural wrist/finger/lever alignment; one-finger to full-fisted action; direct force angles for modulation. | Added 11545, 1990–1990. DB component ID 286 is unrelated SVX. |
+| Brake Levers | Dia-Compe 292, Short Stop | Visible 292 code; replaceable lever; BRS spring-assisted return with three-position tension adjustment; continuous micro-position reach adjustment. | Added 11546, 1990–1990. No inferred clamp size or weight. |
+| Brake Levers | Short Stop, middle pictured model (possible 290; code needs clearer view) | Quick action with BRS spring-assisted return; compatibility with contemporary handlebar designs. | Do not allocate an inferred model number or merge with 292. |
+| Brake Levers | Short Stop, lower pictured model (apparent 288; confirm code in straight-on photo) | Continuous pivot alignment and non-slip die-cast clamp. | New-model candidate; defer exact numbered record until code is unambiguous. |
+| Brake Levers | Dia-Compe XCExpert, standard / Short Stop | Custom reach adjustment, non-slip die-cast clamp, continuous pivot alignment; explicitly available in standard and Short Stop sizing. | Added 11547, 1990–1990. Standard/Short Stop are documented variants, not inferred numeric codes. |
+| Brake Levers | Dia-Compe XCMaster (XCM) | Custom reach adjustment, non-slip die-cast clamp and continuous pivot alignment. | Enriched 267 title/description, retained 1989–1990; source 1 -> 448. |
+| Brake Levers | Dia-Compe XCT | BRS spring-assisted return, strong composite construction, reach adjustment and continuous pivot alignment. | Added 11548, 1990–1990. |
+| Brakes | Dia-Compe 986, X-1 cantilever | Super-low-profile inboard design for heel clearance; independent arm spring-tension adjustment. Obscured caption shows 151 grams; unit basis is not readable. | Enriched 663 title/description with X-1/low profile, retained 1980–1994 and leaflet facts; source 218 -> 448; omitted uncertain weight. |
+| Brakes | Dia-Compe 984, cantilever | Low profile for heel clearance; Ratchet Dial individual arm spring adjustment; Rotational Dish toe-in/out and rim-angle adjustment; direct-mount one-piece composite brake pads; compatible with Short Stop levers. | Added 11549, 1989–1990 from the 1989 Bianchi Axis fitment plus this 1990 range. Does not establish a 984D alias. |
+| Brakes | Dia-Compe XCExpert (XCE), cantilever | Lightweight die-cast aluminium, spring-tension adjustment, low-profile inboard design, direct-mount one-piece composite pads, Rotational Dish toe/rim-angle adjustment. | Enriched 703 title/description, retained 1980–1990; source 1 -> 448. |
+| Brakes | Dia-Compe XCMaster (XCM), cantilever | Lightweight die-cast aluminium, spring-tension adjustment, low-profile inboard design, direct-mount one-piece composite pads, Rotational Dish toe/rim-angle adjustment. | Enriched 676 title/description, retained 1989–1990; source 1 -> 448. |
+| Brakes | Dia-Compe XCT, cantilever | Non-delaminating composite construction, low-profile inboard design, Rotational Dish toe adjustment and direct-mount one-piece composite pads. | Added 11550, 1990–1990. Arms are composite, not aluminium. |
+
+The dated introduction calls X-1, XCExpert, XCMaster and XCT new; this is not
+sufficient to discard independent 1989 fitments or narrow existing decade dates
+without checking the earlier evidence. The standard/Short Stop XCExpert lever
+variants may share one documented family row, consistent with other lever families.
+Cable/casing and separate brake shoes are outside maintained component categories.
+The cropped X-1 prose is not a basis for reconstructing a complete BRS configuration.
+
+### Applied links and validation
+
+Registered source **448**, label `Dia-Compe Mountain Bike brake brochure, US
+edition (1990 range; copyright 1989)`, country **US**. Exact citation:
+`https://www.ebay.com/itm/800322888787 (five user-supplied photos; For 1990; copyright 1989; Short Stop panel partly obscured).`
+All ten changed/added components reference 448. New rows use brand 73, category
+2 (levers) or 3 (brakes), NULL group and NULL image. Existing dates, source UUIDs,
+brand/category/group/image remain unchanged. Four retitles update search text
+with the shared helper. No merges or deletes; no CSV edits.
+
+Linked **18696**, bike **1093**, 1989 Bianchi **Axis**, `Dia-Compe 984`,
+**NULL -> 11549**; installed an exact 1989-only Brakes override. The two
+`Dia-Compe 984D` specs **18613** (Forte) and **18717** (Volpe) remain NULL;
+the brochure does not establish the suffix. No specs were linked to the four
+enriched rows before this load. The pre-insert brand/category/alias review found
+no matching records for the six additions.
+
+Validation: load affected one source, six inserts, four updates and one bike
+link, exactly as approved; field-by-field readback matched the proposed values.
+Comparing generated mappings before/after over **98 loaded CSVs / 21,382 specs**
+found exactly one change, Axis Brakes NULL -> 11549. All other mappings and spec
+identities stayed unchanged. Generator/live comparison retained **21,367 equal
+mappings, 15 pre-existing losses**, and no gains/changed/identity discrepancies
+after the live fill. Full quality report remained **zero errors / 1,962 reviews**
+(1,576 incomplete dates, 326 linked date conflicts, 35 broad freewheel labels,
+25 descriptions at the limit). Dia-Compe exact, near and parenthetical duplicate
+reports returned **zero candidates**. All **13 test files passed**. Rerunning the
+same 14-statement transaction affected **zero rows** in every mutation category.
+Maximum written description length was 205/255. Temporary SQL, snapshots and
+reports were removed after recording these results; user-supplied originals remain.
+
+### Stable identities and restoration data
+
+| New ID | Identity | Source UUID |
+| --- | --- | --- |
+| 11545 | 286 Short Stop (X-1) lever | 86680e13-9ef1-45e7-95b1-5df62a945547 |
+| 11546 | 292 Short Stop lever | cb4a5a80-d445-40c5-affb-32d1159be23e |
+| 11547 | XCExpert standard / Short Stop levers | de171e46-e197-476d-a1ab-0438f052716c |
+| 11548 | XCT brake levers | bb9b96dc-1a29-4297-987b-db12bbd62db4 |
+| 11549 | 984 cantilever | c41552f7-9c0a-4943-bc10-19620e942e62 |
+| 11550 | XCT cantilever | da7d2e61-e62e-4aeb-98c6-9d24bd6c10e0 |
+
+| Existing ID | Old title | Old dates (retained) | Old source_ref | Old search_text | Retained source UUID |
+| --- | --- | --- | --- | --- | --- |
+| 267 | Dia-Compe XCM | 1989–1990 | 1 | Dia-Compe XCM | BEDC9B05-23CE-4934-AD90-2A4C2DCD9FFB |
+| 663 | Dia-Compe 986 (cantilever) | 1980–1994 | 218 | Dia-Compe 986 | 0B04C0F6-26F7-4A81-80D7-B126BF546279 |
+| 676 | Dia-Compe XCM | 1989–1990 | 1 | Dia-Compe XCM | A3E16AC3-F237-4B3A-BE1F-2D0D246504C3 |
+| 703 | Dia-Compe XCE | 1980–1990 | 1 | Dia-Compe XCE | 7931285E-35D9-4002-9D73-543BA032D799 |
+
+Old descriptions: 267 and 676 `Dia-Compe XCM, Japan`; 703 `Dia-Compe XCE, Japan`.
+663's full old description:
+
+`Dia-Compe 986 (cantilever), Japan. MTB cantilever with spring tension adjustable on each arm (986.15 adjuster, gold right / silver left springs), lever force 0.5-3.0 kgf; 1242 straddle bridge, 1276-300W cable; for 26in rims 23-32mm wide. N986 in 1994.`
+
+Applied titles: 267/676 `Dia-Compe XCM, XCMaster`, 703 `Dia-Compe XCE, XCExpert`,
+663 `Dia-Compe 986, X-1 (cantilever)`. Their new search text is respectively
+`Dia-Compe XCM XCMaster`, `Dia-Compe XCE XCExpert`, `Dia-Compe 986 X-1`.
+To reverse, first recheck new references, restore 18696's NULL link and remove
+the 1989 984 override; restore these four rows' old title/description/search/source
+values using the UUIDs, remove new rows only once unreferenced, and remove source
+448 only if no references remain. Date bounds need no restoration.
+
+What this adds over the March 1989 partial guide: a verified 1990 MTB range,
+explicit 984 specifications, the X-1/286 pairing, and named XCExpert/XCMaster/XCT
+brake and lever specifications. It does not fill the missing March guide pages,
+prove 984 = 984D, or supply a readable complete Short Stop model panel.
+
+## March 1989 Product Guide — eBay 144913620478, applied 2026-11-17
+
+**Applied and validated on explicit user approval, 2026-11-17; source 447.**
+User supplied [the listing](https://www.ebay.com/itm/144913620478), titled
+Vintage Dia-Compe Bicycle Product Guide 1989. Recovered all **seven seller
+photographs** at original `/s-l1600.webp` resolution. Back cover positively
+prints **Mar.1989**, Printed in Japan, Yoshigai Kikai Kinzoku / Dia-Compe Inc. /
+Dia-Compe Taiwan addresses. English cover bears a Downeast Bicycle Specialists,
+Athens, Maine stamp; this is a US dealer copy, but the intended market is not
+explicitly stated, so source country is NULL. Registered the unique source
+`Dia-Compe Product Guide, English edition (March 1989; partial eBay photos)`.
+Exact citation: `https://www.ebay.com/itm/144913620478 (7 photos; printed Mar.1989; cover, pp.1-3,9-10,15-18, rear; p.3 clipped).`
+
+This is **partial**, not a recovered complete catalogue. Visible: cover,
+**p.1**, **pp.2–3** (right edge of p.3 clipped), **pp.9–10**, **pp.15–18**,
+rear cover. Missing detailed product pages **4–8 and 11–14**. Pages 15–17 contain
+brake accessories/tools outside maintained categories and a brake-size chart;
+no accessory rows proposed. Page 18 is a system chart, useful corroboration but
+insufficient for invented specifications or blanket earlier dates for the ATB
+families. Do not claim that the missing ATB pages have been transcribed.
+
+Original photo URLs use `https://i.ebayimg.com/images/g/<key>/s-l1600.webp`:
+
+| Listing photo | Key | Contents |
+| --- | --- | --- |
+| 1 | SiMAAeSwdpZpU~mW | English cover |
+| 2 | MiMAAOSw6vdjzuyi | p.1 and facing BRS feature page |
+| 3 | 5yEAAOSw7e5jzuyh | pp.2–3, right edge clipped |
+| 4 | FEUAAOSwFexjzuyi | pp.9–10 |
+| 5 | oUgAAOSwdVhjzuyh | pp.15–16 |
+| 6 | lDAAAOSwELZjzuyj | pp.17–18 |
+| 7 | EfoAAOSwZIljzuyj | Rear cover, printed March 1989 |
+
+### Applied reconciliation
+
+**15 existing rows**, retaining all unrelated fields and measured facts:
+
+- **275:** `Dia-Compe BRS 300` -> `Dia-Compe AC250S, BRS300`; unknown dates ->
+  **1989–1989**. P.1 explicitly pairs AC250S with BRS300, 24.0 mm, return
+  spring, 121 g each. Original [specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=75BB67DD-6258-493D-8837-FEC9BE8791D7)
+  photograph `FE7AA9C4-1165-435D-8754-8BA44DB9C3E1.jpeg` matches the BRS300
+  lever shape. Identification is a visual/family inference, not a photographed
+  AC250S inscription. Keep its **239 g** as the original unqualified specimen
+  listing weight; do not call it a measured per-lever manufacturer figure.
+- **667:** `Dia-Compe 990` -> `Dia-Compe AD990`, **1988–1988 -> 1988–1989**.
+  Its [original specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=BD68270A-360A-4D94-96D6-424C772379FF)
+  photo `6857B326-E7E0-44FC-8EF7-A733B27B291E.jpeg` visibly labels AD-990 and
+  matches p.9. Replace old `U-brake, epoxy painted.` with the clear-anodised
+  sealed-spring/OPC11 specification, pivot-to-pad stroke 39 mm +/-3 mm, 230 g.
+  This is an existing identity, not a new AD990 insertion.
+- **276 BRS500 levers:** start **1994 -> 1989**, retain 1994 end; describe
+  BL50/BL50K standard and BL52/BL52K compact in 1989, 122 g each. The later
+  BL50/BA55 family evidence remains distinct from the earlier brake design.
+- **669 Olé:** unknown dates -> **1989–1989**; p.3 OLE400 39–49 mm/146 g,
+  OLE500 45–57 mm/154 g. Preserve original white specimen's source-listed
+  140 g without pretending it proves a particular reach/model. These dates
+  attest the generic family, not that exact white specimen's manufacture.
+- Extend end years to **1989** on **278 AGC251, 285 RGC200, 8100 RGC220,
+  698 RC-II400/500, 700 RGC400, 701 RGC500, 8088 MX901, 8092 FS880L–883L,
+  8115 183 family, 8116 128/Tech-6 family, 8117 MX120–124 family**.
+  These are availability attestations for the named members, not proof that
+  every grouped finish/drilling/configuration survived. Detailed inventory
+  retains which members are actually printed. Only **700** additionally needs
+  a description rewrite: p.1 BRS400 RGC400 is **168 g**, p.3 standalone RGC400
+  **158 g**, versus 164 g in 1986 and the independent 350 g measured pair.
+  Preserve the internal 1989 discrepancy with its page/system context.
+
+**15 new model/variant records**, all attested **1989–1989**, group NULL:
+
+| Page | Category | New model(s) |
+| --- | --- | --- |
+| 1 | Brakes | BA50/BA50K BRS500, single-pivot, 38–44 mm, 195 g |
+| 2 | Brakes | BA20 BRS200; BA10 BRS Edge; BA08 BRS Blaze, each 40–52 mm/150 g |
+| 2 | Brake Levers | BL20/BL22 BRS200; BL10/BL12 BRS Edge, standard/compact, 107 g each |
+| 2 | Brake Levers | BL08/BL08C BRS Blaze, standard/compact, 120 g each |
+| 1 | Brake Levers | AGC252 compact, 24.0 mm, shares the printed 118 g AGC251/252 figure |
+| 3 | Brake Levers | RC200 107 g; RC220 compact 105 g, both 24.0 mm |
+| 9 | Brakes | FS884QL/FS884Q/FS884L/FS884 Bulldog family, 68–86 mm, QR 200 g/non-QR 151 g |
+| 10 | Brakes | FS883, adjuster/QR, 68–86 mm, 200 g |
+| 9 | Brake Levers | 129/Tech-8 hinged clamp, 22.2 mm |
+| 9 | Brake Levers | 182S-II/Tech-77 hinged clamp, 22.2 mm, 91 g |
+| 10 | Brake Levers | MX-77 hinged clamp, 22.2 mm, 91 g |
+
+All stored descriptions fit varchar(255); maximum **206 characters**.
+Retitles include search_text. All changed/new rows have source_ref **447**;
+old values and UUIDs remain in the restoration record below. No deletion or merge.
+
+### Kept separate or unresolved
+
+- **674 BRS500 / BA55** main photo is dual-pivot; the 1989 BA50 is single-pivot.
+  No forced 1989 date on the later design. Likewise the new BA20 is not the
+  later BA27 associated with **671 BRS200**.
+- **672 generic BRS300** remains unchanged: its original photo was not usable
+  in this pass, so no assumed model/generation crosswalk to **698 RC-II**.
+- **668 Alpha II (White)** retains 1988: p.3's silver Alpha II400/500 family
+  does not establish that white finish in 1989. **659 884D** remains distinct
+  from the explicitly coded FS884 configurations.
+- Broad **8948 BRS lever** and **8951 BMX lever** rows remain unchanged; a
+  dated individual member does not date every member of those 1994 groups.
+- **8089 MX900/1000** already extends to 1994; the 1989 page's 196 g MX1000
+  figure does not silently replace the earlier 195 g figure. No change.
+- OLE272 compact entry is clipped; do not complete its suffix or insert a
+  guessed code. Missing detailed ATB pages remain wanted, including their
+  earlier SS/Advantage information. The road pages do not resolve all the
+  previously logged 1987–93 gaps.
+
+### Mapping simulation and preflight
+
+Prepared guarded transactional SQL and an override snippet, then applied them
+on user approval. The working files were removed after the actual validation
+recorded below; these notes retain the evidence and restoration details.
+
+Simulation over **98 loaded CSVs / 21,382 paired specs** found exactly two
+NULL-link gains, no losses or changed existing targets:
+
+- **18697**, bike **1093**, 1989 Bianchi **Axis**, `Dia-Compe 250S aero` -> **275**.
+- **18718**, bike **1094**, 1989 Bianchi **Volpe**, `Dia-Compe BL-08 aero` -> the
+  new BL08/BL08C row **11536**.
+
+Installed overrides are exact value/year **1989** only. Date moves, additions
+and retitles produced no other changed mappings. Offline duplicate/near-pair
+simulation found no new flagged comparisons among reconciled Dia-Compe rows.
+Cross-brand code/name checks included SunTour Blaze's own identities; no
+cross-brand merge or renaming is inferred from OEM branding alone.
+
+Read-only preflight matched all **15 full old component guards**, both NULL
+spec guards and source absence; schema lengths passed. Simulated quality has
+**0 errors / 1,962 review findings**, versus **0 / 1,964** before: only the
+incomplete-date findings for **275/669** disappear. No new date conflicts or
+other findings. Actual-ID substitution, override installation, readback, full
+mapping/quality comparison and zero-change rerun are complete, as recorded below.
+
+No physical catalogue purchased or seller contacted.
+
+### Applied validation and restoration record — 2026-11-17
+
+The user approved and the guarded transaction applied **one source (447),
+15 existing-row updates, 15 inserts (11530–11544), and two NULL bike links**.
+Exactly the expected counts changed. Transaction rerun changed **zero source,
+component or bike-spec rows**; only temporary assertions ran again.
+
+All 30 component rows matched their approved full expected fields. UUIDs, images
+and unrelated fields on the existing rows were preserved. The two retitles
+include their search text: **275** `Dia-Compe AC250S BRS300`, **667**
+`Dia-Compe AD990`. Every changed/added row has source_ref **447**; new rows
+have dates **1989–1989**, brand **73**, group NULL and image NULL. Source 447
+is unique, source_type catalogue, country NULL, with the exact label/citation
+specified above; no other source row changed.
+
+Actual new identities:
+
+| ID | Model | Source UUID |
+| --- | --- | --- |
+| 11530 | BA50 / BA50K, BRS500 | `8bce3bc7-a8b1-4af1-9bac-2927b5455292` |
+| 11531 | BA20, BRS200 | `09beed6a-bdf0-4ae0-b868-fa0e713407da` |
+| 11532 | BA10, BRS Edge | `6e02fef9-397c-4350-b965-5abf9a31bc64` |
+| 11533 | BA08, BRS Blaze | `eed7be84-5d8c-4ec3-a1a4-d1badf41aec4` |
+| 11534 | BL20 / BL22, BRS200 | `04b1576d-dad5-44f0-87df-8171fd36d081` |
+| 11535 | BL10 / BL12, BRS Edge | `92bf19a0-d197-4261-a18f-10ea2dc3163f` |
+| 11536 | BL08 / BL08C, BRS Blaze | `5176170a-62e1-4dfe-9392-ab451770999c` |
+| 11537 | AGC252, Aero Gran Compe (compact) | `ef1fc607-9bd7-49a6-884d-abcc10971514` |
+| 11538 | RC200, Royal Compe II | `06255686-c43e-49e7-a027-ee92796ecbfb` |
+| 11539 | RC220, Royal Compe II (compact) | `3448be98-e390-43ef-a87b-9964ff36ec45` |
+| 11540 | FS884QL / FS884Q / FS884L / FS884, Bulldog | `35cba008-92ef-4137-8182-a88d24b91b97` |
+| 11541 | FS883, Freestyle | `9974a9d0-4652-4c03-b81e-da7b1ab0c7a5` |
+| 11542 | 129 / Tech-8 | `385858db-6477-4d34-9e80-9a989047f85c` |
+| 11543 | 182S-II / Tech-77 | `0f1ac89b-5bbe-496c-988f-b7f3ee186140` |
+| 11544 | MX-77 | `19c4488c-30a6-40e5-992b-ff90516e220e` |
+
+The actual links are **18697 -> 275** (1989 Bianchi Axis) and **18718 -> 11536**
+(1989 Bianchi Volpe). Both bike specs retain label 50, source_ref 325, raw label
+`Brake Levers`, original value and bike ID (1093/1094). Their `updated_at`
+fields advanced automatically; both previously held
+`2026-10-31T20:17:57.000Z`. Exact value overrides are restricted to 1989.
+
+Live validation at **2026-11-17T22:30:07.702Z** compared all **98 loaded CSVs /
+21,382 paired specs**. The generated plan differs from baseline only in those
+two NULL-to-component gains. Current generator/live-DB summary remains 21,367
+unchanged and the same 15 pre-existing losses, with zero gains/changed targets/
+missing/ambiguous identities. The unchanged count also includes NULL-to-NULL
+matches, so it does not measure the number of linked specs.
+
+Whole-DB quality: **0 structural errors / 1,962 review findings**, exactly two
+fewer than baseline, solely the incomplete dates on 275/669. Other findings are
+unchanged: 1,576 incomplete dates, 326 linked date conflicts, 35 broad Freewheel
+labels, 25 descriptions at limit. Full quality-table comparisons verified only
+the expected component/source/spec changes; no other row/value changes. The
+live Dia-Compe duplicate report gives **zero groups/candidates**. Earlier
+offline near-pair simulation also found no newly introduced flagged pairs.
+`npm test` passed all **13 test files**; `git diff --check` passed.
+No source CSV or generated `bike-update.sql` changed.
+
+For deliberate restoration only, use exact current UUID/source guards and
+the old values below. Existing rows retained brand/category/group/image/UUID;
+restore only fields this ingestion changed. Both retitled rows' old search text
+equalled their old title: **275** `Dia-Compe BRS 300`, **667** `Dia-Compe 990`.
+Their UUIDs are in the identity evidence above. All other titles/search text
+were unchanged.
+
+| Existing ID | Old year_from–year_to | Old source_ref |
+| --- | --- | --- |
+| 275 | NULL–NULL | 1 |
+| 276 | 1994–1994 | 218 |
+| 700 | 1984–1986 | 261 |
+| 669 | NULL–NULL | 1 |
+| 667 | 1988–1988 | 422 |
+| 278 | 1986–1986 | 102 |
+| 285 | 1980–1986 | 102 |
+| 8100 | 1986–1986 | 102 |
+| 698 | 1986–1986 | 102 |
+| 701 | 1980–1986 | 102 |
+| 8088 | 1986–1986 | 102 |
+| 8092 | 1986–1986 | 102 |
+| 8115 | 1986–1986 | 102 |
+| 8116 | 1986–1986 | 102 |
+| 8117 | 1986–1986 | 102 |
+
+Exact overwritten descriptions:
+
+- **275:** `Dia-Compe BRS 300, Japan, 239 grams`
+- **276:** `Dia-Compe BRS 500, Japan BRS500 lever BL-50 in 1994.`
+- **700:** `Side-pull caliper, cold forged, buffed and clear anodized, static quick release, forged brake shoe, 39-49mm reach, 164g; 350g pair actual (velobase). Colours B&G, AL, BL, SMB, HD, SG.`
+- **669:** `Dia-Compe Olé, Japan, 140 grams`
+- **667:** `U-brake, epoxy painted.`
+
+Descriptions of the other ten existing rows were unchanged. To reverse the two
+bike links, guard their exact current bike/label/value/source/target and restore
+component_id NULL; remove the two 1989 generator overrides. Remove a newly
+inserted row only after checking/repointing any subsequent usage, guarded by its
+UUID and source 447. Do not remove source 447 while referenced. No restoration
+was run.
+
+The completed ingestion task was removed from TODO. Missing **pp.4–8/11–14 and
+the clipped p.3 edge** remain an acquisition task. The temporary SQL, source
+photographs, snapshots, inventory and validation scripts were removed after
+validation; durable evidence, provenance and restoration values remain here.
+
+
 ## Dia-Compe "Products 1986" — 1986 (bmxmuseum.com/reference/6026, 25 scans, incomplete)
 
 - `data_source` 102, label "Dia-Compe Products 1986 catalogue (1986)".

@@ -682,8 +682,23 @@ test files pass. Task-created SQL, scan downloads and comparisons removed.
 - Picks (all ranged 1989): Deore XT-II M732 group (FD 2500, RD 4492, SL 6160, BR-M732 983, BL 430, FC-M730 1810, hubs 3551, chain 7642), Deore II MT62 (FD 2490, RD 4482, SL 6156, BR 975, BL-MT63 425, hubs 3543), Mountain LX M452 (FD 2528, RD 4524, SL-M453 6183, BR-M452 7628, BL-M451 7632, FC 1836, hubs 7629), Exage Country M250, Exage Action A350/A351 + Exage Motion A250 (Strada LX), Sport LX A452 + SL-A453 7-speed, SunTour Edge 4050 / Blaze BE34 / GPX / XC 9010 / XCD 6000 (FD-XD00 2661, RD-XD00 4790 instead of the "(1990)" rows). Cassettes bike-keyed: 13-28T -> CS-M732 7641 (Super Grizzly), CS-MT62 7630 (Grizzly, Incline); 13-23T -> CS-6400-7 1199 (Limited).
 - Existing overrides ranged: FD / RD 'shimano 105' now Golden Arrow to 1988, FD-1050 2462 / RD-1050 4449 for 1989 (Krono); Brake Levers 'shimano 105 aero' BL-1050 406 for 1987-89; Cranksets 'shimano 105 52 42t' FC-1050 1778 for 1987-89; FD / RD 'shimano ultegra' from 1988; Seat Posts 'campagnolo athena' C0R2 5742 for 1988-89; Cassettes 'shimano hyperglide silver 12 28t 7 speed' CS-M732 for 1989 (Equinox). Athena Synchro-2 shifters -> null (matcher took the 1992 Ergopower row). Super Mundialita stays on 5497 (existing 1985-90 decision).
 - 2026-11-05 handlebar: Equinox “Nitto heat treated Dirtdrop” -> 8607 RM-013-14S (1989 Nitto No. 11 lists the heat-treated MTB drop bar; the 1987 MB-1 review identifies Nitto / Bridgestone DirtDrop as heat-treated alloy).
-- Left unlinked: SunTour XCE-4050 (only 1992 Dia-Compe XCE rows, dated "1980-1992"), SunTour / Shimano barcons, GPX FD and shifters (B / C variants), Croce d'Aune Synchro-2, Sport LX levers / pedals, Quattro derailleurs, Modolo / Ofmega / Gipiemme Quattro, Dia-Compe 984 / 250S / BL-08, Viscount, SR / KA posts and stems, H.K. / H.T.I. / SR pedals, Vittoria / IRC / C.S.T. tyres, Sedisport 270, Tange TH headsets, Ukai 21A, Campagnolo Omega Super.
+- Left unlinked: SunTour XCE-4050 (only 1992 Dia-Compe XCE rows, dated "1980-1992"), SunTour / Shimano barcons, GPX FD and shifters (B / C variants), Croce d'Aune Synchro-2, Sport LX levers / pedals, Quattro derailleurs, Modolo / Ofmega / Gipiemme Quattro, Dia-Compe 984D, Viscount, SR / KA posts and stems, H.K. / H.T.I. / SR pedals, Vittoria / IRC / C.S.T. tyres, Sedisport 270, Tange TH headsets, Ukai 21A, Campagnolo Omega Super.
+- March 1989 Dia-Compe guide follow-through, user approved and applied
+  2026-11-17: Axis **18697** `Dia-Compe 250S aero` -> **275 AC250S/BRS300**;
+  Volpe **18718** `Dia-Compe BL-08 aero` -> **11536 BL08/BL08C**, both formerly
+  NULL. Source 447 pp.1–2 supports these named lever families. Exact 1989
+  overrides installed; all other specs retain their targets. Full comparison
+  over 98 loaded CSVs found precisely these two gains; SQL rerun changed zero.
 - Regression: all other catalogues regenerated with the old and new generator; SQL byte-identical.
+
+- 1990 Dia-Compe MTB brochure (©1989), source **448**, user approved and
+  applied 2026-11-17: Axis Brakes **18696**, `Dia-Compe 984`, **NULL -> 11549**,
+  new 984 cantilever, dates **1989–1990** (1989 attestation is this bike catalogue).
+  Exact 1989-only generator override installed. Forte **18613** and Volpe
+  **18717**, `Dia-Compe 984D`, remain NULL: the brochure prints no D suffix.
+  All 98 loaded CSVs / 21,382 generated mappings compared before/after; only
+  the Axis brake mapping changed. Existing live comparison discrepancies unchanged;
+  SQL rerun zero changes. [Component evidence and restoration data](../../../ingest-component-catalog/references/known-catalogs/dia-compe.md#mtb-brochure--ebay-800322888787-photo-inventory-reviewed-2026-11-17).
 
 ## 1991 Bianchi (JP) — `1991_bianchi_spec.csv` (14 bikes, 247 specs, 123 linked)
 
