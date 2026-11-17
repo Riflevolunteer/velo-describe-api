@@ -23,12 +23,6 @@ after validation; retain what is still needed for unfinished work or review.
   Corsa construction for Battaglin spec 12943; reconcile Bianchi Grizzly hub
   spec 19546's rear-freewheel-hub link 3628 with its cassette specification.
   See the [bounded review](.agents/skills/ingest-bike-specs/references/known-catalogs/cross-catalog-notes.md#todo-link-drift-review--2026-11-17).
-- [ ] **Review and apply pending bike links:** Zeus Z 59 tyre spec 59 -> 11136
-  D'Alessandro Mondiale; 1986 Miyata Pista crank spec 18873 -> 11151 Sugino
-  Astron. Guarded SQL awaits approval in
-  `/private/tmp/velo-quality-20261117.vcDEoq/pending-bike-links.sql`; retained
-  for review/application. Verify expected affected rows, rerun for idempotency,
-  then rerun quality/link reports and remove the temporary SQL after validation.
 - [ ] **Persist link decisions and evidence:** distinguish confirmed, inferred,
   ambiguous, missing-source and intentionally unlinked cases so they can be
   revisited deliberately. Today `COMPONENT_OVERRIDES` `null` entries live only in
@@ -219,10 +213,6 @@ SR work is in [the source worklist](#sr-sakae-next-work).
   (1), 6886 Vittoria Flash M23 (1). Michelin's 26 flags are resolved; see the
   [Michelin notes](.agents/skills/ingest-component-catalog/references/known-catalogs/michelin.md).
   Select's 1986 date and the French catalogue dates retain their inference caveats.
-- **Then: review new-row link candidate.** 1973 Zeus Z 59 spec 59,
-  "D'Alessandro Mondiale Tubulars", now has a candidate: 11136 Mondiale,
-  1973–82 (Brügelmann 1973, source 399). Review model/source evidence before
-  preparing SQL. It is no longer a missing-row source hunt.
 - **Other held-evidence questions:** 1979 Miyata 1200 spec 20283 "NATIONAL
   Panaracer tubular 230" versus 9097 Cycle Pro National tubular (branding
   unresolved); 1987 Peugeot Challenge gumwalls x5 (15794/15813/15832/15851/15869)

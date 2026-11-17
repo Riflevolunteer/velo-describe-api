@@ -747,8 +747,9 @@ application below.
 ## TODO link drift review — 2026-11-17
 
 Bounded review of the open generator/live-DB drift task, using the maintained
-reports and existing catalogue decisions. No DB writes or component definition/date
-changes in this pass. Baseline quality report at 08:31 UTC: zero structural errors;
+reports and existing catalogue decisions. Initial review made no DB writes; the two
+subsequently approved backfills are recorded below. No component definition/date
+changes. Baseline quality report at 08:31 UTC: zero structural errors;
 1,948 review findings (1,563 incomplete dates, 326 linked date conflicts, 35 broad
 Freewheel labels and 24 descriptions at the field limit). These are dated findings,
 not proof that all stored identities are correct.
@@ -797,7 +798,7 @@ Remaining losses are unresolved identity questions, not approved removals:
   rear freewheel hub, whereas this bike's cluster is mapped as a cassette.
   Establish the actual front/rear hub/freehub configuration before correction.
 
-Two proposed NULL backfills are prepared, **not applied**:
+Two NULL backfills **applied 2026-11-17, user approved**:
 
 - **59 -> 11136**, Zeus Z 59, `D'Alessandro Mondiale Tubulars`: exact named
   model, compatible 1973 availability (Brügelmann 1973, source 399); no competing
@@ -806,9 +807,20 @@ Two proposed NULL backfills are prepared, **not applied**:
   implements the existing Astron generator/catalogue decision and pending Nashbar
   follow-up. The row already spans 1981-1986; no date extension required.
 
-Guarded transactional SQL with expected counts, old values and restoration
-instructions is retained at
-`/private/tmp/velo-quality-20261117.vcDEoq/pending-bike-links.sql` for review and
-application. TODO keeps this pending action open; rerun/readback and scratch
-cleanup remain required after approval. Baseline/comparison scratch was removed
-after validation; the SQL is the only retained task scratch file.
+The guarded transactional SQL changed exactly two `bike_spec` rows; its second
+run changed zero. Readback confirmed spec **59**, bike **4**, source **33**,
+Tyres `D'Alessandro Mondiale Tubulars`, changed **NULL -> 11136**; spec **18873**,
+bike **1101**, source **349**, Crankset `SUGINO Astron track 50 teeth`, changed
+**NULL -> 11151**. Sources, text, labels, bikes and component dates/definitions
+were preserved. Specs **44 / 7624 / 16332 / 16352** remain NULL.
+
+Restoration, only if deliberately justified: set each component link back to
+NULL guarded by the same spec/bike/source/label/exact text, expected current
+component (11136 or 11151), and bike title/year (Z 59/1973 or Pista/1986).
+
+Post-application quality check at **08:39 UTC**: zero structural errors and the
+same 1,948 review findings by check. All 96 loaded catalogues / 21,176 specs
+compared: 21,158 unchanged, zero gains or changed targets, and the same 18
+unresolved losses listed above; no missing or ambiguous identities. Completed
+backfill tasks removed from TODO, including the older Zeus candidate entry.
+SQL and all task scratch files removed after validation.
