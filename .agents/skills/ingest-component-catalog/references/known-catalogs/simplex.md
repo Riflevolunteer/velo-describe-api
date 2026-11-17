@@ -791,8 +791,16 @@ identify the 1980s rear specs.
   `F5E8D89F-54E0-45A5-8039-8CC8B535D9AB`) -> 2587 SLJ A500, the "Super LJ, AV.326" front of the 1975 product sheets.
   Its 5 links (1974-76 Peugeot PX 10 LE / PX 60 / PY 10, all doubles) moved; 2587 `year_to` 1975 -> 1976 (1976 PY 10
   fitment); new FD override `'simplex super lj'` 1973-76 -> 2587 (the bare title had matched 2589 by exact title).
-  This supersedes the 1979 parts-book note that 2589 was "too generic to map". 2590 / 2591 "Super LJ (2nd version?
-  ...)" (1970, 0 links) left pending a VeloBase photo check.
+  This supersedes the 1979 parts-book note that 2589 was "too generic to map". The pending photo check of 2590 / 2591
+  identifies two Super LJ layouts, both distinct from the documented A500/A503 catalogue rows 2587 / 7282: the
+  front-control-arm specimen (VeloBase GUID `9d15e353-44a5-4cff-a9f0-9bfead23cd7b`) has a riveted front cable arm
+  and hollow clamp axle serving as a cable guide; the rear-control-arm specimen (GUID
+  `139ea311-999c-4590-a89c-c7f5a143991a`) has a riveted rear arm and an integrated cable stop. Both pages describe
+  Super LJ construction variants, not the A500/A503 model designations; retain the specimen rows without merging.
+  The VeloBase page itself cautions that these are one of several variations. Evidence: [front-arm specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=9d15e353-44a5-4cff-a9f0-9bfead23cd7b),
+  [rear-arm specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=139ea311-999c-4590-a89c-c7f5a143991a),
+  [A500 AV.326](https://velobase.com/Pages/ViewComponent.aspx?ID=741d2375-64f3-469c-9dea-7720ac4af7ed),
+  and [A503](https://velobase.com/Pages/ViewComponent.aspx?ID=3475ee29-c9b1-4a25-bc95-9bf6b7434423).
 - Dates from explicit Peugeot model prints (fitment evidence; `source_ref` unchanged, fitment appended): 2578 SX A32
   `year_from` 1984 -> 1983; 2585 SA02 and 2586 SA12 `year_to` 1981 -> 1982; 2567 LJ A302 1978 -> 1979; 7263 SLJ A422
   1984 -> 1986; 7283 SLJ A522 1978-84 -> 1977-88. 2582 "Simplex Alpha" NULL -> 1989-1989 (1989 Touraine only).

@@ -7,7 +7,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
 - Design multiple component evidence references, preserving `source_ref` as the last source that changed a row.
 - Review current metadata/date flags with `node scripts/quality-report.js`; verify identities before changing dates or links.
-- Inspect Simplex fronts 2590/2591 against 2587/7282; inspect Campagnolo 2295 against 2299/2300; register the reviewed 2297/2305 distinction. [Specimen notes](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#reviewed-specimen-and-variant-distinctions).
 - Transcribe SunTour Edition No.89 Scrambler II/LV-3, PDF pp.40–41; compare RD-SR10 with 7956–7958. [SunTour notes](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md).
 
 <a id="sr-sakae-next-work"></a>

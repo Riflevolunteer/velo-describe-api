@@ -1448,6 +1448,21 @@ All new rows have the catalogue-attested range 2000–2000 (availability, not pr
   the two intended links changed (7325 -> 7326 linked). `quality-report` has no findings on the touched rows.
   Campagnolo front specs now 183 / 195 linked.
 
+## Record front derailleur specimen comparison — 2026-11-18
+
+Compared retained specimens 2295 / 2299 / 2300. Keep all three configurations
+distinct: 2295 (0104007, 1978 specimen) has a four-hole outer cage; 2299
+(1052/NT) has a three-hole cage with a narrow straight clamp band; 2300
+(0104007 / later standard-band configuration) has a three-hole cage with a
+standard band. The three-hole rows are not duplicates of the four-hole row,
+and the clamp-width distinction separates 2299 from 2300. VeloBase pages:
+[2295, 0104007 four-hole](https://velobase.com/Pages/ViewComponent.aspx?ID=d6566c27-a564-4fd4-a756-6aea9e52b615),
+[2299, 1052/NT narrow band](https://velobase.com/Pages/ViewComponent.aspx?ID=b83cce69-5737-415a-a16f-c9ec8c4d96c1),
+[2300, 0104007 standard band](https://velobase.com/Pages/ViewComponent.aspx?ID=9787be9f-16d6-4f73-9c3c-302f783978b3).
+These are specimen/configuration distinctions; the source page's broad date
+ranges are not independent proof of production boundaries. No database values
+or bike links changed.
+
 ## C-Record crank and 1987 Bianchi follow-up — 2026-11-17, read-only review
 
 - Scope: current crank rows 1482 / 1483 and their bike links; 1987 Bianchi X4 / Mondiale C-Record

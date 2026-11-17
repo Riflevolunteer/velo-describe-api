@@ -215,6 +215,10 @@ const REVIEWED_NOT_DUPLICATES = [
   [4634, 4643], // Tour de France: star/JUY vs wreath/winged SIMPLEX arm
   [4641, 4643], // Tour de France: plain pivot vs wreath badge; possible replacement pulleys on 4641
   [4642, 4643], // Tour de France: JUY patent inscription vs winged SIMPLEX arm
+  [2295, 2299], // Campagnolo Record: four-hole cage vs three-hole narrow-band specimen
+  [2295, 2300], // Campagnolo Record: four-hole vs three-hole outer cage
+  [2299, 2300], // Campagnolo Record: narrow vs standard clamp band
+  [2297, 2305], // Campagnolo Record 1052/1: second body (1970-77) vs first body (1960-69), distinct documented runs
   [3457, 3458], // Pelissier: no oil port vs oil port and retaining clip
   [3458, 3459], // Pelissier: oil port/clip vs no oil port; not just CP/Pelissier lettering
   [2791, 2794], // Belleri: drop bar vs flat/riser bar
