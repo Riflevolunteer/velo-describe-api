@@ -312,7 +312,14 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 ### Identity questions from held catalogues
 
 - **Ritchey 2000 identity follow-ups:** obtain construction/version evidence for Fuzzy Logic Pro and Comp vs 10402; Comp Road seatpost vs 10169/8408; road Pro Aero/Aero OCR rims vs 10190/10191. Resolve tier/weight and OCR front/rear contradictions before inserting, renaming or widening dates. See [the four unresolved identities](.agents/skills/ingest-component-catalog/references/known-catalogs/ritchey.md#unresolved-identities--unchanged); missing/cropped pages do not support inferred specifications.
-- **Campagnolo 2000 identity follow-ups:** obtain code/specimen crosswalks for the 16 unresolved cases in the [catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/campagnolo.md#unresolved-identities--no-speculative-rowslinks): Chorus post SP00-CH272, AC-H/AC-S and Pista BBs/crank/hubs, RD99-MI309 vs 4122, Chorus EP00-CH09R/L vs 6340/7092, BR00-RE vs 578, Mirage fronts, Record rear hub, MK2 Titanium 9-speed / ED-C / CS99-RE08 cassettes, and WH99 Shamal / WH00 Shamal Pista. Keep existing identities and do not insert speculative duplicates.
+- **Campagnolo 2000/2001 identity follow-ups:** obtain code/specimen crosswalks
+  for Chorus SP00-CH272, AC-H and BB99 Pista BBs, older Pista crank/hub variants,
+  RD99-MI309 vs 4122, Chorus EP00-CH09R/L vs 6340/7092, BR00-RE vs 578,
+  Veloce/Mirage fronts and BR01-MI, Record rear hub, MK2 Titanium nine-speed /
+  ED-C / CS99-RE08 cassettes, WH00 Shamal Pista and Ghibli wheels. Establish
+  C9-chain continuity and Barcelona/Montreal rim profiles/codes before choosing
+  existing rows or new generations. See the [2001 evidence and remaining
+  identities](.agents/skills/ingest-component-catalog/references/known-catalogs/campagnolo.md#remaining-identities--no-speculative-rows-or-links).
 - **EDCO headset / BB identities:** see [EDCO notes](.agents/skills/ingest-component-catalog/references/known-catalogs/edco.md). Need a code chart or specimen measurements to assign its 108 g / 37 mm headset to 2987/2988/2990, and axle/variant identification to reconcile its 119 mm / 292 g BB with 53/54 (122 mm specimen notes, 291 g). Keep these rows unchanged until identified; no duplicate inserts by name alone.
 - Identify **Nisi 5138** M20 Pista Speciale against 00120 / 00130 and verify **5145** Sport Toro Stretto weight from a specimen or VeloBase photo; see [Nisi evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/nisi.md).
 - **Spidel 700 RA pedals:** check whether the Le Cycle no. 119 Spidel 700 group box (Tonton Vélo t=10923, in the log) is enough to link the unlinked Peugeot "Spidel 700 RA" specs (see peugeot.md).
@@ -395,7 +402,9 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
   before repeating thumbnail-only queries. Recover the bike clusters
   Falcon Merckx 1973 / 1974, Original Plastic Bike 1973 and Bottecchia 1973 using
   `scripts/velo-pages-wayback.sh` and the source-hunt log before ingestion.
-- **bikalog.org component inventory:** reconcile the Campagnolo 2001 range catalogue and Spare Parts & Tools book with the processed 2000 rows, and compare the 2000 Record 10-speed introduction with held evidence. Secondary: establish issuer/date and reconcile the Polish IRC tyre sheets indexed 1999. See the free-component shortlist in the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
+- **bikalog.org component inventory:** establish issuer/date and reconcile the
+  Polish IRC tyre sheets indexed 1999. See the free-component shortlist in the
+  [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - **bikalog.org bike-catalogue backlog:** review Koga Miyata 1980-2001, Nishiki 1987, Raleigh 1991, Colnago 1989 C35 and Bianchi road 1985 / 1986 for future bike ingestion.
 - **Palo Alto remaining identifications:** Regina chain / freewheel names, Fiamme / Super Champion clinchers and Sugino Maxy II; see `cross-catalog-notes.md`.
 

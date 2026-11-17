@@ -11,7 +11,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 
 - [known-catalogs/brooks.md](known-catalogs/brooks.md) — Brooks (1 entry)
 - [known-catalogs/ideale.md](known-catalogs/ideale.md) — Ideale saddles, brand 580 Tron & Berthet (1 entry)
-- [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (38 entries; includes 2000 parts book)
+- [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (includes 2000 parts book and 2001 range/parts reconciliation, sources 441–443)
 - [known-catalogs/shimano.md](known-catalogs/shimano.md) — Shimano (30 entries)
 - [known-catalogs/suntour.md](known-catalogs/suntour.md) — SunTour (34 entries)
 - [known-catalogs/simplex.md](known-catalogs/simplex.md) — Simplex (9 entries)

@@ -1274,7 +1274,6 @@ Dates/titles/sources are in the preceding table. The original categories were un
 |---|---|---|---|
 | 3 | SP00-CH272 Chorus post | 5743, 7041 | Complete code is printed, but relationship to earlier Chorus RS post requires a physical/code crosswalk; do not insert a second possible identity. |
 | 5 | BB00-AH11IT/BC and BB00-AH15IT/BC, AC-H | 10103, 10509 | 111/115.5 mm AC-H named assemblies may overlap uncoded Athena/Racing Triple cartridges; lengths alone do not prove a new identity. |
-| 5 | BB00-AS11IT/BC, AC-S | 10104, 10105, 10508 | 111 mm AC-S relationship to existing Veloce/Mirage cartridges unresolved; do not duplicate by new code alone. |
 | 6 | BB99-REPIIT/BC, Record Pista | 23, 40 | Complete assembly codes printed; continuity with older Record Pista cup-and-cone rows not established. |
 | 8 | Record Pista crankset | 1484, 1485, 1505 | 2000 printed lengths 165/170 mm, rings 47-52T, 3 mm rings for 1/8 in chain; no complete-set code establishing continuity with C-Record Pista versions. |
 | 21 | RD99-MI309 Mirage Triple | 4122 | Existing title RD09-MI3 is reportedly from 1999 but is not the printed RD99-MI309 code; verify the specimen/version before renaming or adding. |
@@ -1286,7 +1285,6 @@ Dates/titles/sources are in the preceding table. The original categories were un
 | 54 | Record MK2 Titanium 9-speed | 1187, 1188 | Printed as a separate family from standard Record MK2. Do not fold it into 1188 titanium/steel; 1187 describes the original 1997 titanium version, so MK1/MK2 continuity remains unproven. |
 | 58 | ED-C 9-speed (ED-Z compatible) | 10122, 10123, 10124 | Loose-sprocket combination table is not explicitly assigned to one retail group. Do not map by tooth ranges or manufacture a model identity. |
 | 59 | CS99-RE0823 / RE0833 / RE0836, Record 8-speed | 1186 | Three complete 8-speed set codes printed; relationship to older uncoded Record Exa-Drive 8-speed row is not established by speed/ranges alone. |
-| 69 | WH99-SMTF / SMTR / SMCF / SMCR, Shamal | 4968, 6961, 6962 | 2000 tubular/clincher complete wheels may continue 12-HPW but exact generation not established. Category correction of 4968 is supported separately; no date/code assignment. |
 | 75 | WH00-SMPTF / WH00-SMPTR, Shamal Pista | 10513 | 2000 complete 28-inch tubular track wheels; continuity with the 1996 Shamal 12 track identity needs confirmation before adding or extending. |
 
 ### Validation before and after application
@@ -1605,3 +1603,234 @@ for inventing replacement dates. `git diff --check` passes.
 The completed TODO action was removed. Task SQL, snapshots, helper scripts, source
 page downloads and inspected photo copies were removed after validation. Original
 source URLs/photo filenames and old/new values above retain the evidence.
+
+## Bikalog Campagnolo 2001 range and parts books — applied and validated 2026-11-17
+
+- **441**, *Campagnolo Range Catalogue (2001), English edition*: https://bikalog.org/api/view/Campagnolo/2001/campagnolo-2001.pdf, 40 PDF pages (many two-page spreads). Full supported component range transcribed, including visually checked PDF33–38 specification tables and PDF32 rims; narrative/component sections PDF5–24 and 28–32. Covers, decorative pages, computer-only, warranty and dealer material excluded from component rows.
+- **442**, *Campagnolo Spare Parts and Tools Catalogue (2001)*: https://bikalog.org/api/view/Campagnolo/2001/campagnolo-2001sp.pdf, 104 PDF pages. Cover states 2001; printed component page = PDF page minus 6. Complete components and separately supplied chainrings inventoried from PDF7–45,49–63,72–75,78 and 81. Compatibility tables PDF36–37 read visually. QR46–48, pedal repair 64–65, cables 66–67, computer 68–69, small repairs 70–71, wheel-hub repairs 76–77/79–80/82–83, tools/dealers 84–104 excluded as complete component identities. CN-RE100 is a chain joining part, not a whole chain. Repair body/cup/axle/cage/arm codes were not promoted to whole assembly models.
+- **443**, *Campagnolo Record 10-speed introduction brochure (2000)*: https://bikalog.org/api/view/Campagnolo/2000/campagnolo-2000-record10spd.pdf, five PDF pages; narrative/specification spreads PDF3–4 fully checked. It already attests 13–29 cassettes, long-cage Record/Chorus 10-speed rear derailleurs and anti-friction front-cage inserts. These are not first appearances in 2001. Its PDF4 explicitly names **Exa-Drive MK2**, refining existing 2000 cassette titles, and supports the C10 chain earlier than 2001.
+- All three are registered as catalogue sources, country NULL: edition language does not establish a national market. Primary source_ref for joint range/parts reconciliation is 442; the SC-S and C10 changes use 441, and the three older cassette title clarifications use 443. Source_ref still means last source to change the row; unchanged earlier maker facts and other attestations remain in these notes.
+
+### Identity and evidence decisions
+
+- The manufacturer positively distinguishes **2001 nine-speed** rear/Ergopower indexing from 1997–2000. New RD01 and EP01 configurations are separate rows, not aliases or automatic date extensions of RD99/RD00/EP99/EP00 nine-speed components. In printed 30–31/PDF36–37, old nine-speed rear adjustment is at the upper body and 2001 at the lower body;2001 nine-speed Ergo has a 9 speed mark. Conversion ratchets:1997/98 nine-speed Ergo to 2001 rear EC-RE064;1999/2000 Ergo to 2001 rear EC-RE063;2001 Ergo to older nine-speed rear EC-RE313. These are repair parts, not complete controls. SL99 nine-speed down-tube/bar-end shifters remain sold but explicitly target 2000 and earlier nine-speed rears.
+- Original 2000 spares PDF33/34 really prints **EP00-RE10L / EP00-CH10L**. The 2001 book instead supplies **EP99-RE09L / EP00-CH09L** as shared complete left controls. Earlier titles remain valid and retained; descriptions preserve both dated supply listings. Daytona 2001 ten-speed pairs EP01-DA10R with EP00-DA09L; matching 10L codes were not invented.
+- **Ultra-Drive versus Exa-Drive MK2:** the 2001 maker narrative positively describes evolved tooth profiling/machining. Kept the eight 2001 UD speed/group/material families distinct from the 2000 MK2 offerings; shared individual sprocket codes alone do not collapse a complete generation. The 2000 Record/Chorus steel-family weights 192/224g versus 2001 figures 188/220g remain separate edition evidence. Record titanium remains 156g. All cassette nominal weight configurations and supplied-without-lockring qualifications are preserved.
+- Exact unchanged assembly/chainring codes support availability through 2001; this is not a measured production endpoint. All 49 previously inserted chainring codes are reused, not inserted again. Daytona 2001 ten-speed uses existing Chorus outer chainrings; added compatibility to those ring descriptions. No component year_from moved later and no row with a later year_to was shortened.
+- New Hiddenset construction, Pro-Fit PLUS pedal design, differential rear brake architecture and Daytona ten-speed are independently distinguished from older rows. Record/Chorus 10-speed RD00 codes continue with detailed specifications. The new Pista BB is cartridge construction, distinct from the older cup-and-cone candidates; the older BB99 Pista identity question is not automatically resolved by the later BB01 code.
+- **5758 Record Titanium → Chorus attestation:** range narrative explicitly moves the earlier Record 195g titanium post into standard Chorus; add SP01-CH272T in the description and extend 2001, retaining its earlier SP99-RE272T title/group. This is not a duplicate seatpost insertion. AC-S alloy cups/solid 111mm/299g resolves 10104; SC-S steel cups/111or 115.5mm/358g resolves 10105. AC-H remains separate and unresolved.
+- **Proton resolved:** the [1999 guide scan 40, printed 132](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_40_main_image.jpg), source 353, positively names earlier Proton with steel axles,22/24 round spokes and 684/1026g front/rear. The hub text refers to Proton 98. Preserve 10056 dates 1998–99 and identify this earlier construction. The old press PDF40 explicitly names Nucleon/Electron/Proton, but its 1998 sporting-result caption alone is not publication dating. Its former broad tubular-or-clincher wording is historical evidence, not disproved merely by a selective 1999 clincher listing. The 2001 WH01Proton has alloy axles and 685/965g, positively supporting a separate coded generation. Original user-provided `/Users/acooper/Downloads/Campagnolo_other_Vintage_Catalogs/CampagnoloPress.pdf` was read only and preserved.
+- Shamal road WH99’s 14 front/16 rear spokes distinguish earlier 12-HPW and 16/16-spoke rows, resolving that held identity without a merge. Its exact codes already occur in 2000, so the new row has 2000–2001 attestation. Shamal Pista remains held. Repair-kit spare-spoke quantities were not mistaken for complete-wheel spoke counts.
+- Source conflicts retained: RecordCarbon post 160g narrative versus 180g table; Nucleon 1520g narrative versus 1540g tubular/1580g clincher table totals; Ghibli 130mm narrative versus 132mm table OLD; Record 177.5/180mm arms listed in service book while complete long-size range table is ten-speed-only. New rows/specs use clearly identified configurations; these conflicts do not justify arbitrary identity/date changes.
+
+### Applied component inventory
+
+Added **40 components**, IDs **11487–11526**, and updated **93 existing rows**. No deletes, merges, bike writes, generator changes or new component groups. Existing Racing Triple grouping remains NULL rather than inventing a group. All new rows use UUID source IDs, brand 11 and existing category-brand associations.
+
+| ID | Category | Catalogue-attested dates | Source | Title / specifications | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| 11487 | Chains | 2000–2001 | 441 | Campagnolo C10, Record Ultra-Drive chain — 10-speed chain, 114 links; Floating Link Action, chrome-nickel-PTFE finish, Perma-Link permanent closure. 279g. Used with Record, Chorus and Daytona 10-speed drivetrains. | range PDF 6/11/17/33/34/35, record2000 PDF 3/4 |
+| 11488 | Headsets | 2001–2001 | 442 | Campagnolo HS01-REHI, Record Hiddenset (1 inch) — Integrated headset for 1-inch unthreaded fork; internal frame bearing seats, 5.9mm stack, carbon cover and alloy fixing screw. 75g. | spares PDF 8 |
+| 11489 | Headsets | 2001–2001 | 442 | Campagnolo HS01-REHIOS, Record Hiddenset (1 1/8 inch) — Integrated headset for 1-1/8-inch unthreaded fork; internal frame bearing seats, 5.9mm stack, carbon cover and alloy fixing screw. 75g. | spares PDF 8 |
+| 11490 | Seat Posts | 2001–2001 | 442 | Campagnolo SP01-DA272, Daytona seat post — Steel seatpost tube, light-alloy saddle head shared with Record/Chorus, 27.2mm diameter x 250mm length, Daytona marking; 230g. | spares PDF 10 |
+| 11491 | Bottom Brackets | 2001–2001 | 442 | Campagnolo BB01-REPIIT / BB01-REPIBC, Record Pista — Cartridge track bottom bracket, symmetric hollow 111mm axle, composite/light-alloy cartridge, alloy cups; without sealings. Italian or English thread; 220g. | spares PDF 11 |
+| 11492 | Rear Derailleurs | 2001–2001 | 442 | Campagnolo RD01-RE209, Record 9-speed — New-generation 9-speed rear, carbon outer plate, lightened inner plate, titanium hanger/pivot bolt; 11–26T, 27T capacity, 14T front difference; 190g. | spares PDF 21 |
+| 11493 | Rear Derailleurs | 2001–2001 | 442 | Campagnolo RD01-CH209, Chorus 9-speed — New-generation 9-speed rear, lightened upper body; 11–26T, 27T capacity, 14T front difference; 211g. | spares PDF 22 |
+| 11494 | Rear Derailleurs | 2001–2001 | 442 | Campagnolo RD01-RA309, Racing T 9-speed — New-generation 9-speed triple rear, lightened upper body; 11–29T, 35T capacity, 22T front difference; 214g. | spares PDF 22 |
+| 11495 | Rear Derailleurs | 2001–2001 | 442 | Campagnolo RD01-DA210, Daytona 10-speed — Daytona 10-speed rear; 11–29T, 30T total capacity, 14T front difference; 223g. | spares PDF 23 |
+| 11496 | Rear Derailleurs | 2001–2001 | 442 | Campagnolo RD01-DA209, Daytona 9-speed — New-generation 9-speed rear; 11–29T, 30T capacity, 14T front difference; 223g. | spares PDF 23 |
+| 11497 | Rear Derailleurs | 2001–2001 | 442 | Campagnolo RD01-DA309, Daytona Triple 9-speed — New-generation 9-speed triple rear; 11–29T, 37T capacity, 22T front difference; 229g. | spares PDF 23 |
+| 11498 | Rear Derailleurs | 2001–2001 | 442 | Campagnolo RD01-VL209, Veloce 9-speed — New-generation 9-speed rear; 11–29T, 30T capacity, 14T front difference; 250g. | spares PDF 24 |
+| 11499 | Rear Derailleurs | 2001–2001 | 442 | Campagnolo RD01-VL309, Veloce Triple 9-speed — New-generation 9-speed triple rear; 11–29T, 37T capacity, 22T front difference; 255g. | spares PDF 24 |
+| 11500 | Rear Derailleurs | 2001–2001 | 442 | Campagnolo RD01-MI209, Mirage 9-speed — New-generation 9-speed rear; 11–29T, 30T capacity, 14T front difference, black-chromed cage plate; 269g. | spares PDF 25 |
+| 11501 | Rear Derailleurs | 2001–2001 | 442 | Campagnolo RD01-MI309, Mirage Triple 9-speed — New-generation 9-speed triple rear; 11–29T, 37T capacity, 22T front difference, black-chromed cage plate; 274g. | spares PDF 25 |
+| 11502 | Shifting Brake Levers | 2001–2001 | 442 | Campagnolo EP01-RE09R / EP99-RE09L, Record Ergopower (9-speed) — 9-speed Ergopower pair with 2001-generation index geometry; composite levers/body, ball bearings; Ergo Brain ready, double/triple front control; 342g pair. Complete RH EP01-RE09R, LH EP99-RE09L. | spares PDF 31 |
+| 11503 | Shifting Brake Levers | 2001–2001 | 442 | Campagnolo EP01-CH09R / EP00-CH09L, Chorus Ergopower (9-speed) — 9-speed Ergopower pair with 2001-generation index geometry; composite body, anodised alloy levers, ball bearings; Ergo Brain ready, double/triple front control; 365g pair. Complete RH EP01-CH09R, LH EP00-CH09L. | spares PDF 32 |
+| 11504 | Shifting Brake Levers | 2001–2001 | 442 | Campagnolo EP01-DA09R / EP00-DA09L, Daytona Ergopower (9-speed) — 9-speed Ergopower pair with 2001-generation index geometry; composite body, anodised alloy levers; Ergo Brain ready, double/triple front control; 399g pair. Complete RH EP01-DA09R, LH EP00-DA09L. | spares PDF 33 |
+| 11505 | Shifting Brake Levers | 2001–2001 | 442 | Campagnolo EP01-DA10R / EP00-DA09L, Daytona Ergopower (10-speed) — 10-speed Ergopower pair with 2001-generation index geometry; composite body, anodised alloy levers; Ergo Brain ready, double/triple front control; 399g pair. Complete RH EP01-DA10R, LH EP00-DA09L. | spares PDF 33 |
+| 11506 | Shifting Brake Levers | 2001–2001 | 442 | Campagnolo EP01-VL09R / EP01-VL09L, Veloce Ergopower (9-speed) — 9-speed Ergopower pair with 2001-generation index geometry; composite body, anodised alloy levers; Ergo Brain ready, double/triple front control; 402g pair. Complete RH EP01-VL09R, LH EP01-VL09L. | spares PDF 34 |
+| 11507 | Shifting Brake Levers | 2001–2001 | 442 | Campagnolo EP01-MI09R / EP00-MI09L, Mirage Ergopower (9-speed) — 9-speed Ergopower pair with 2001-generation index geometry; composite body/composite levers; Ergo Brain ready, double/triple front control; 406g pair. Complete RH EP01-MI09R, LH EP00-MI09L. | spares PDF 35 |
+| 11508 | Brake Levers | 2001–2001 | 442 | Campagnolo BL01-RECGC, Record Carbon brake levers — Carbon/composite aero brake-lever assembly, 105g pair; non-Ergopower controls for separate shifting. Complete model BL01-RECGC; distinct from the earlier aluminium BL99-RECG. | spares PDF 45, range PDF 33 |
+| 11509 | Brakes | 2001–2001 | 442 | Campagnolo BR01-RED, Record-D differentiated brakes — Differentiated road calipers: dual-pivot front with lighter single-pivot rear, 39-50mm reach, orbital pad adjustment, stainless ball bearings, alloy/titanium small parts; 308g pair. | spares PDF 38, range PDF 33 |
+| 11510 | Brakes | 2001–2001 | 442 | Campagnolo BR01-CH, Chorus brakes — Traditional dual-pivot front/rear calipers, 39-50mm reach, orbital pad adjustment, 380g pair. New Record-derived geometry and drop-forgings; steel replaces some Record titanium/alloy small parts. | spares PDF 39, range PDF 11/34 |
+| 11511 | Brakes | 2001–2001 | 442 | Campagnolo BR01-CHD, Chorus-D differentiated brakes — Differentiated calipers with Record-derived geometry/drop-forgings: dual-pivot front and lighter single-pivot rear, 39-50mm reach, orbital pad adjustment; 340g pair. | spares PDF 39, range PDF 11/34 |
+| 11512 | Brakes | 2001–2001 | 442 | Campagnolo BR01-DA, Daytona brakes — Road caliper assembly, 39-50mm reach, orbital pad adjustment, 376g pair. 2001 pads shared with Record and Chorus; complete code BR01-DA. | spares PDF 40, range PDF 35 |
+| 11513 | Brakes | 2001–2001 | 442 | Campagnolo BR01-VL, Veloce brakes — Road calipers, 39-50mm reach, 368g pair. New separate longer/narrower pads and matte black-anodised light-alloy pad holders with orbital adjustment; complete code BR01-VL. | spares PDF 41, range PDF 19/36 |
+| 11514 | Wheel(sets) | 2000–2001 | 442 | Campagnolo WH99-SMTF / SMTR / SMCF / SMCR, Shamal (14/16-spoke) — 28in high-profile alloy wheels, 9/10-speed, 14 front/16 rear spokes, 20mm width, 100/130mm OLD. Tubular WH99-SMTF/SMTR 880/1060g; clincher SMCF/SMCR 900/1075g. Distinct from earlier 12-HPW and 16/16-spoke models. | spares PDF 73, range PDF 31/38 |
+| 11515 | Pedals | 2001–2001 | 442 | Campagnolo PD01-RE, Record Pro-Fit Plus — Pro-Fit Plus clipless pedals, alloy body, titanium axle, composite fixing nut, 3 sealed bearings, floating cleats standard/fixed optional; 266g pair. New wider support, plate and springs; ErgoBrain magnet compatible. | spares PDF 63, range PDF 6/11/16/33 |
+| 11516 | Pedals | 2001–2001 | 442 | Campagnolo PD01-CH, Chorus Pro-Fit Plus — Pro-Fit Plus clipless pedals, alloy body, steel axle, composite fixing nut, 3 sealed bearings, floating cleats standard/fixed optional; 316g pair. New wider support, plate and springs; ErgoBrain magnet compatible. | spares PDF 63, range PDF 6/11/16/34 |
+| 11517 | Pedals | 2001–2001 | 442 | Campagnolo PD01-DA, Daytona Pro-Fit Plus — Pro-Fit Plus clipless pedals, steel axle, double-bearing system, composite axle nut, adjustable release, floating cleats standard/fixed optional; 325g pair. Wider support/new plate and springs; ErgoBrain magnet compatible. | spares PDF 63, range PDF 6/11/16/35 |
+| 11518 | Cassettes | 2001–2001 | 442 | Campagnolo Record Ultra-Drive (10-speed, steel/titanium) — 2001 Ultra-Drive tooth-profile cassette, steel/titanium on alloy carrier; 11-21,11-23,12-25,13-26 or13-29T. Preassembled large-cog pairs, CS-601–605 spacers. 188g for11-23 with lockring; sold without lockring. | spares PDF 55, range PDF 5/11/16/19/33 |
+| 11519 | Cassettes | 2001–2001 | 442 | Campagnolo Record Ultra-Drive Titanium (10-speed) — 2001 Ultra-Drive titanium-labelled cassette, alloy carrier, preassembled pairs, CS-601–605 spacers;11-23,12-25,13-26 or13-29T. 156g for11-23 with lockring; sold without lockring.11T top shares steel9S-011. | spares PDF 56, range PDF 5/11/16/19/33 |
+| 11520 | Cassettes | 2001–2001 | 442 | Campagnolo Record Ultra-Drive (9-speed, steel/titanium) — 2001 Ultra-Drive steel/titanium cassette on alloy carrier;11-23,12-21,12-23,13-23 or13-26T per parts book, with preassembled large-cog clusters.191g for12-23 with lockring; sold without lockring. | spares PDF 57, range PDF 5/11/16/19/33 |
+| 11521 | Cassettes | 2001–2001 | 442 | Campagnolo Chorus Ultra-Drive (10-speed) — 2001 Ultra-Drive nickel-chromed steel cassette on alloy carrier;11-23,12-25,13-26 or13-29T, preassembled large pairs, CS-601–605 spacers.220g for11-23 with lockring; sold without lockring. | spares PDF 58, range PDF 5/11/16/19/34 |
+| 11522 | Cassettes | 2001–2001 | 442 | Campagnolo Chorus Ultra-Drive (9-speed) — 2001 Ultra-Drive nickel-chromed steel cassette on alloy carrier;12-21,12-23,13-23 or13-26T per parts book, with preassembled clusters.197g for12-21 with lockring; sold without lockring. Range table also lists11-23T. | spares PDF 59, range PDF 5/11/16/19/34 |
+| 11523 | Cassettes | 2001–2001 | 442 | Campagnolo Daytona Ultra-Drive (10-speed) — Ultra-Drive10-speed steel cassette with one alloy carrier and macro-spacers;11-23,12-25,13-26 or13-29T;233g for11-23 with lockring, sold without lockring. CS-601/602/606/607 spacers. | spares PDF 60, range PDF 5/11/16/19/35 |
+| 11524 | Cassettes | 2001–2001 | 442 | Campagnolo Veloce Ultra-Drive (9-speed) — 2001 Ultra-Drive chromed steel9-speed cassette, loose sprockets with CS-102 spacers;12-23,13-23,13-26 or13-28T.231g for12-23 with lockring; sold without lockring. | spares PDF 61, range PDF 5/11/16/19/36 |
+| 11525 | Cassettes | 2001–2001 | 442 | Campagnolo Mirage Ultra-Drive (9-speed) — 2001 Ultra-Drive galvanised steel9-speed cassette, Veloce UD-compatible ratios12-23,13-23,13-26 or13-28T.231g for12-23 with lockring; sold without lockring. | spares PDF 61, range PDF 5/11/16/19/36 |
+| 11526 | Wheel(sets) | 2001–2001 | 442 | Campagnolo WH01-PRCF / WH01-PRCR, Proton (alloy axle) — 2001 Proton clincher wheels, 28in, light-alloy axles, traditional nipples, 20mm rim width; 22 front/24 rear spokes, asymmetric rear rim, 100/130mm OLD. 685g front, 965g rear; 1650g pair. Distinct from earlier steel-axle Proton. | spares PDF 78, range PDF 30/38 |
+
+### Existing rows: changes and restoration evidence
+
+| ID | Prior → current source | Applied fields | Evidence |
+| --- | --- | --- | --- |
+| 4947 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 75, range PDF 30/38 |
+| 5758 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 10 |
+| 10056 | 353 → 353 | title: Campagnolo Proton (Climb-Dynamic) → Campagnolo Proton (Climb-Dynamic, steel axle); search_text: Campagnolo Proton → Campagnolo Proton; description enriched (old/new below) | guida1999 PDF 132 |
+| 10091 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 26 |
+| 10093 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 27 |
+| 10094 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 13 |
+| 10095 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 15 |
+| 10096 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 18 |
+| 10098 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 19 |
+| 10099 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 17 |
+| 10101 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 11 |
+| 10102 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 11 |
+| 10104 | 353 → 442 | title: Campagnolo Veloce 9-speed bottom bracket → Campagnolo BB00-AS11IT / BB00-AS11BC, AC-S (Veloce); year_to: 1999 → 2001; search_text: Campagnolo Veloce 9-speed bottom bracket → Campagnolo BB00-AS11IT BB00-AS11BC AC-S; description enriched (old/new below) | spares PDF 12 |
+| 10105 | 353 → 441 | title: Campagnolo Mirage 9-speed bottom bracket → Campagnolo SC-S, cartridge bottom bracket; year_to: 1999 → 2001; search_text: Campagnolo Mirage 9-speed bottom bracket → Campagnolo SC-S cartridge bottom bracket; description enriched (old/new below) | range PDF 35/36 |
+| 10106 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 49, range PDF 7/33 |
+| 10107 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 49/50, range PDF 12/34 |
+| 10109 | 410 → 442 | title: Campagnolo Veloce 9-speed hubs → Campagnolo Veloce hubs (9/10-speed rear); year_to: 2000 → 2001; search_text: Campagnolo Veloce 9-speed hubs → Campagnolo Veloce hubs; description enriched (old/new below) | spares PDF 51, range PDF 20/36 |
+| 10110 | 410 → 442 | title: Campagnolo Mirage 9-speed hubs → Campagnolo Mirage hubs (9/10-speed rear); year_to: 2000 → 2001; search_text: Campagnolo Mirage 9-speed hubs → Campagnolo Mirage hubs; description enriched (old/new below) | spares PDF 51, range PDF 23/36 |
+| 10119 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 43, range PDF 37 |
+| 10120 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 44, range PDF 37 |
+| 10128 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 7 |
+| 10129 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 7 |
+| 10130 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 9 |
+| 10131 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 9 |
+| 11176 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 7 |
+| 11177 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 10 |
+| 11178 | 410 → 442 | title: Campagnolo Daytona crankset → Campagnolo Daytona 9/10-speed crankset; year_to: 2000 → 2001; search_text: Campagnolo Daytona crankset → Campagnolo Daytona 9/10-speed crankset; description enriched (old/new below) | spares PDF 16 |
+| 11179 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 13/15/16 |
+| 11180 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 13/15/16 |
+| 11181 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 13/15/16 |
+| 11182 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 13 |
+| 11183 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 13 |
+| 11184 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 13 |
+| 11185 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 13 |
+| 11186 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 13 |
+| 11187 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 13 |
+| 11188 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 14 |
+| 11189 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 14 |
+| 11190 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 14 |
+| 11191 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 14 |
+| 11192 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 14 |
+| 11193 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 14 |
+| 11194 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 15 |
+| 11195 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 15/16 |
+| 11196 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 15 |
+| 11197 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 15/16 |
+| 11198 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 15 |
+| 11199 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 15/16 |
+| 11200 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 16 |
+| 11201 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 16/17 |
+| 11202 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 16 |
+| 11203 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 17 |
+| 11204 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 17 |
+| 11205 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 17 |
+| 11206 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 17 |
+| 11207 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 18 |
+| 11208 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 18 |
+| 11209 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 18 |
+| 11210 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 18 |
+| 11211 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 19 |
+| 11212 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 19 |
+| 11213 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 18/19 |
+| 11214 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11215 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11216 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11217 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11218 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11219 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11220 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11221 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11222 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11223 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11224 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11225 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11226 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11227 | 410 → 442 | year_to: 2000 → 2001 | spares PDF 20 |
+| 11228 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 21 |
+| 11229 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 21 |
+| 11230 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 22 |
+| 11231 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 22 |
+| 11234 | 410 → 442 | title: Campagnolo Chorus 10-speed front derailleur → Campagnolo Chorus 9/10-speed front derailleur; year_to: 2000 → 2001; search_text: Campagnolo Chorus 10-speed front derailleur → Campagnolo Chorus 9/10-speed front derailleur; description enriched (old/new below) | spares PDF 26 |
+| 11235 | 410 → 442 | title: Campagnolo Daytona front derailleur → Campagnolo Daytona 9/10-speed front derailleur; year_to: 2000 → 2001; search_text: Campagnolo Daytona front derailleur → Campagnolo Daytona 9/10-speed front derailleur; description enriched (old/new below) | spares PDF 28 |
+| 11236 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 29 |
+| 11237 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 31 |
+| 11238 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 32 |
+| 11241 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 44, range PDF 37 |
+| 11242 | 410 → 442 | title: Campagnolo Daytona hubs (9-speed rear) → Campagnolo Daytona hubs (9/10-speed rear); year_to: 2000 → 2001; search_text: Campagnolo Daytona hubs → Campagnolo Daytona hubs; description enriched (old/new below) | spares PDF 49/50, range PDF 35 |
+| 11243 | 410 → 443 | title: Campagnolo Record 10-speed cassette → Campagnolo Record 10-speed cassette (Exa-Drive MK2); search_text: Campagnolo Record 10-speed cassette → Campagnolo Record 10-speed cassette | record2000 PDF 4 |
+| 11244 | 410 → 443 | title: Campagnolo Record Titanium 10-speed cassette → Campagnolo Record Titanium 10-speed cassette (Exa-Drive MK2); search_text: Campagnolo Record Titanium 10-speed cassette → Campagnolo Record Titanium 10-speed cassette | record2000 PDF 4 |
+| 11245 | 410 → 443 | title: Campagnolo Chorus 10-speed cassette → Campagnolo Chorus 10-speed cassette (Exa-Drive MK2); search_text: Campagnolo Chorus 10-speed cassette → Campagnolo Chorus 10-speed cassette | record2000 PDF 4 |
+| 11246 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 62, range PDF 37 |
+| 11248 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 72, range PDF 31/38 |
+| 11249 | 410 → 442 | year_to: 2000 → 2001; description enriched (old/new below) | spares PDF 74, range PDF 29/38 |
+
+Previous and replacement descriptions for all description rewrites (other old fields are in the table above):
+
+- **4947** previous: `Complete Electron Climb-Dynamic wheel family with asymmetric rear rim. 2000 clincher models: WH99-ELCF front, WH99-ELCR rear, 28 inch, 9/10-speed rear; 1998 source also offered tubulars.` New: `WH99-ELCF/ELCR Electron clincher wheels, 28in, 9/10-speed; alloy 20mm asymmetric rear rim, 22/24 spokes, 100/130mm OLD, 680g front/940g rear (2001). Earlier 1998 source also offered tubulars.`
+- **5758** previous: `Titanium Record seatpost; SP99-RE272T; 195 g.` New: `Titanium seatpost, 195g. Earlier Record code SP99-RE272T; now standard Chorus as SP01-CH272T. Polished titanium tube, shared alloy head; 27.2mm x 250mm. Record-to-Chorus transition stated in 2001 range narrative.`
+- **10056** previous: `Campagnolo Proton, Italy. Climb-Dynamic low-profile wheel, sister of the Electron: asymmetric rear rim, tubular or clincher.` New: `Climb-Dynamic clincher wheels, steel axles and Chorus quick releases; HPW hubs described as derived from Proton 98. 700C, 20mm rim width; front 22/rear 24 round spokes; asymmetric rear rim. 684g front, 1026g rear (1999 guide).`
+- **10091** previous: `Record front derailleur for 9/10-speed; braze-on or 28.6/32/35 mm band. Earlier 9-speed spec: alloy body, chromed steel cage, 15T capacity, max 54T; 89 g braze-on / 102 g clamp.` New: `Record 9/10-speed double front, alloy body/chromed steel cage; 15T capacity, max 54T; braze-on or 28.6/32/35mm band.2001:91g/104g; earlier 9s:89g/102g. Lightened cage with anti-friction insert; adjustable spring.`
+- **10093** previous: `Triple front derailleur, anodized alloy body, chromed steel cage, 22T capacity; braze-on 98g, clamp 114g. Band options 28.6/32/35 mm.` New: `Triple front, anodised alloy body/chromed steel cage, 22T capacity, max 52T; braze-on or 28.6/32/35mm band. Earlier braze-on 98g, 2001 range 107g; clamp 114g.`
+- **10094** previous: `Alloy crankset, 170/172.5/175 mm; 39/52, 42/52 or 39/53T. Shared crank arms for 9/10-speed; speed-specific chainrings; earlier 9-speed listing 632 g with rings.` New: `Alloy 9/10-speed crankset; 170/172.5/175mm, 39/52, 42/52 or 39/53T. Shared arms, speed-specific rings; 632g with rings. 2001 service table also lists 177.5/180mm arms; range table lists these complete-set lengths for 10s only.`
+- **10096** previous: `Alloy double crankset; 170/172.5/175 mm; 39/52, 42/52 or 39/53T; 650 g with rings.` New: `Alloy 9-speed double crankset; 170/172.5/175mm; 39/52, 42/52 or 39/53T ring options. Earlier listing 650g with rings; 2001 range 659g. Exa-Drive; 111mm BB axle.`
+- **10098** previous: `Alloy triple crankset; 170/175 mm; 30/42/52T; 740 g with rings.` New: `Alloy 9-speed triple crankset; 170/175mm, 30/42/52T. Earlier listing 740g with rings; 2001 range 731g.111mm BB axle, or 115.5mm with 32/35mm seat tube.`
+- **10104** previous: `Cartridge bottom bracket, steel axle 111mm, alloy cups, Italian or English, 299g.` New: `AC-S cartridge bottom bracket, solid 111mm steel axle, alloy cups, Italian or English thread; 299g. Named AC-S assembly in 2001 spares; construction and weight match the earlier Veloce 9-speed listing.`
+- **10105** previous: `Cartridge bottom bracket, galvanized steel cups, steel axle 111mm (double) or 115.5mm (triple), Italian or English, 358g.` New: `Sealed cartridge bottom bracket, solid steel axle, galvanised steel cups. Italian or English; 111mm for double or triple with 28.6mm seat tube, 115.5mm for triple with 32/35mm seat tube. 358g (111mm).`
+- **10106** previous: `Front hub, 7075 alloy body and axle, 100mm, 28/32/36H, 181g with QR. Front hub also listed in 2000.` New: `Record front hub, 7075 alloy body/axle, adjustable bearings and lubrication port; 100mm OLD, 28/32/36H. 181g with QR (32H nominal); front assembly continues in 2001.`
+- **10107** previous: `Chorus hubset; 2000 rear listed for 9/10-speed. 7075 alloy body/axle, alloy freehub; front 100 mm, 32/36H, 205 g; rear 130 mm, 326 g with QR (1999 specifications).` New: `Chorus 9/10-speed rear hubset, 7075 alloy body/axle and alloy freehub, adjustable bearings; 32/36H, 100/130mm OLD. 2001 weights with QR: 180g front/326g rear; 1999 front specification was 205g.`
+- **10109** previous: `Alloy body, steel axle; front 100mm, 32/36H, 216g; rear 9-speed, 130mm, alloy freewheel body, 458g (with QR). Rear assembly also listed in 2000.` New: `Veloce hubs, alloy body, steel axle, sealed bearings, alloy freehub, 32/36H, 100/130mm OLD; 9/10-speed rear. With QR: 2001 front 241g/rear458g; 1999 front 216g/rear458g.`
+- **10110** previous: `Alloy body, steel axle, cartridge bearings; front 100mm, 32/36H, 229g; rear 9-speed, 130mm, 460g (with QR). Rear assembly also listed in 2000.` New: `Mirage hubs, alloy body, steel axle, sealed cartridge bearings, alloy freehub; 32/36H,100/130mm OLD,9/10-speed rear. With QR: 2001 front226g/rear447g;1999 front229g/rear460g.`
+- **10119** previous: `SL99-RE09CG; Indexed 9-speed down-tube levers, alloy, steel pivots, 74g pair.` New: `SL99-RE09CG indexed 9-speed down-tube controls, alloy levers and steel pivots, 74g pair. Compatible only with 2000 range and earlier 9-speed rear derailleurs; not native to the 2001 9-speed rear geometry.`
+- **10120** previous: `SL99-BE09CG; Indexed 9-speed bar-end levers for time trial, cyclocross and triathlon, alloy, steel pivots, 163g pair.` New: `SL99-BE09CG indexed 9-speed bar-end controls for TT, cyclocross and triathlon; alloy, steel pivots, 163g pair. Compatible only with 2000 range and earlier 9-speed rear derailleurs; distinct from SL00-BE10CG.`
+- **11177** previous: `Carbon Record seatpost; shares saddle-clamp service parts with the titanium Record post.` New: `Record Carbon post, composite tube and shared alloy saddle head, 27.2mm x 250mm. 2001 technical table: 180g; narrative: 160g. Shares head repair parts with the titanium post.`
+- **11178** previous: `Double crankset; 170/172.5/175 mm; 39/52, 42/52 or 39/53T; separate left/right arm service codes FC-DA716 through FC-DA721.` New: `Alloy double crankset; 170/172.5/175mm, 39/52, 42/52 or 39/53T; 646g. Shared 9/10-speed FC-DA716–721 service arms; 10s uses FC-RE039/142 inners and Chorus FC-CH252/452/253 outers.`
+- **11179** previous: `39-tooth inner chainring for Record/Chorus 9- and 10-speed and Daytona doubles.` New: `39-tooth inner chainring for Record, Chorus and Daytona 9/10-speed doubles; one shared code across both speed columns.`
+- **11181** previous: `42-tooth inner chainring for Record/Chorus 10-speed doubles.` New: `42-tooth inner chainring for Record, Chorus and Daytona 10-speed doubles.`
+- **11195** previous: `52-tooth ring for 39-tooth inner ring, 10-speed.` New: `52-tooth ring for 39-tooth inner ring, 10-speed; shared by Chorus and Daytona 10-speed.`
+- **11197** previous: `52-tooth ring for 42-tooth inner ring, 10-speed.` New: `52-tooth ring for 42-tooth inner ring, 10-speed; shared by Chorus and Daytona 10-speed.`
+- **11199** previous: `53-tooth ring for 39-tooth inner ring, 10-speed.` New: `53-tooth ring for 39-tooth inner ring, 10-speed; shared by Chorus and Daytona 10-speed.`
+- **11228** previous: `Record rear derailleur, 10-speed.; Standard model code as printed.` New: `Record 10-speed rear, carbon outer cage plate, lightened inner plate, titanium hanger/pivot bolt; 11–26T, 27T capacity, 14T max front difference; 187g. Standard complete code.`
+- **11229** previous: `Record rear derailleur, 10-speed; L variant as printed.; L model suffix as printed.` New: `Record 10-speed rear, medium-cage/L code; carbon outer plate, lightened inner plate, titanium hanger/pivot bolt; 13–29T, 30T capacity, 14T max front difference; 193g.`
+- **11230** previous: `Chorus rear derailleur, 10-speed.; Standard model code as printed.` New: `Chorus 10-speed rear, lightened upper body; 11–26T, 27T capacity, 14T max front difference; 209g. Standard complete code.`
+- **11231** previous: `Chorus rear derailleur, 10-speed; L variant as printed.; L model suffix as printed.` New: `Chorus 10-speed rear, medium-cage/L code, lightened upper body; 13–29T, 30T capacity, 14T max front difference; 215g.`
+- **11234** previous: `Front derailleur for Chorus 10-speed; braze-on and 28.6/32/35 mm band mountings illustrated separately from the 9-speed cage.` New: `Chorus 9/10-speed double front, 15T capacity, max 54T; lightened cage with anti-friction insert. Braze-on 89g or 28.6/32/35mm band 102g.`
+- **11235** previous: `Double front derailleur; braze-on and 28.6/32 mm band mountings illustrated.` New: `Daytona 9/10-speed double front, 15T capacity, max 54T; lightened cage with anti-friction insert. Braze-on 93g or 28.6/32/35mm clamp 106g.`
+- **11236** previous: `Triple front derailleur; braze-on and 28.6/32 mm band mountings illustrated.` New: `Daytona 9-speed triple front, 22T capacity, max 52T. Braze-on 107g or 28.6/32mm clamp 114g; shared service diagram with Veloce double butdistincttriple cage.`
+- **11237** previous: `Record 10-speed integrated brake/shift lever pair; right EP00-RE10R, left EP00-RE10L. Separate from the 9-speed pair.` New: `Record 10-speed Ergopower pair, 342g; composite levers/body, ball bearings, Ergo Brain ready. RH EP00-RE10R; 2000 complete LH EP00-RE10L, 2001 service complete LH EP99-RE09L. Separate from new-generation 9s pair.`
+- **11238** previous: `Chorus 10-speed integrated brake/shift lever pair; right EP00-CH10R, left EP00-CH10L. Separate from the 9-speed pair.` New: `Chorus 10-speed Ergopower pair, 365g; composite body, anodised alloy levers, ball bearings, Ergo Brain ready. RH EP00-CH10R; 2000 complete LH EP00-CH10L, 2001 service complete LH EP00-CH09L. Separate from new-generation 9s pair.`
+- **11241** previous: `10-speed bar-end shifting lever set for Chrono/Triathlon use; separate from SL99-BE09CG 9-speed.` New: `SL00-BE10CG indexed 10-speed bar-end control set for Chrono/Triathlon use, 163g pair. Distinct from the SL99-BE09CG 9-speed version, whose rear-derailleur compatibility ends with the 2000 generation.`
+- **11242** previous: `Daytona front and 9-speed rear hubs, individually illustrated as complete hub offerings; no complete assembly codes printed.` New: `Daytona front and 9/10-speed rear hubs, light-alloy body/axle and freehub, adjustable bearings; 32/36H, 100/130mm OLD; 186g front/332g rear with QR (32H nominal). No complete assembly codes printed.`
+- **11246** previous: `Dedicated sets for the 2000 Ghibli wheel: nine sprockets with 10-speed spacing; CS00-GH0919 11-19T or CS00-GH0911 11-21T.` New: `CS00-GH0919 11-19T or CS00-GH0911 11-21T dedicated Ghibli wheel sets: nine sprockets at 10-speed spacing, steel/titanium, 165g. Not an ordinary 9-speed cassette; 2001 specifications refer to Ghibli 132mm OLD.`
+- **11248** previous: `Complete 28-inch tubular road wheels; WH99-BOTF front and WH99-BOTR 9/10-speed rear.` New: `WH99-BOTF/BOTR 28in tubular wheels, 9/10-speed rear. Carbon 50mm-profile rim with aluminium braking surface, 19mm width; 14 front/16 rear spokes, 100/130mm OLD; 725g front, 905g rear (2001).`
+- **11249** previous: `Complete 28-inch wheels; WH99-NUTF/NUTR tubular front/rear or WH99-NUCF/NUCR clincher front/rear; 9/10-speed rear.` New: `WH99-NUTF/NUTR tubular or NUCF/NUCR clincher, 28in, 9/10-speed. Alloy 20mm rim, asymmetric rear, 22/24 spokes, 100/130mm OLD. Front/rear: tubular 645/895g; clincher 670/910g (2001).`
+
+### Remaining identities — no speculative rows or links
+
+Earlier 2000 holds remain unless explicitly resolved above, including SP00-CH272, BB99 Pista, RD99-MI309, EP00-CH09 and the older MK2 Titanium/ED-C cassette crosswalks. Seek a coded specimen or independent maker crosswalk for the following additional or continuing questions.
+
+| Subject | Existing candidates | Evidence / remaining distinction |
+| --- | --- | --- |
+| AC-H 111 / 115.5mm | 10103, 10509 | The dimensions and cartridge materials do not yet identify an uncoded Athena/Racing Triple specimen. A group/code or physical crosswalk is needed. |
+| Record Pista crankset | 1484, 1485, 1505 | The 165/170mm arms, ring callouts and 592g range figure do not establish continuity with an older C-Record complete crankset. |
+| Veloce / Mirage double and Mirage Triple fronts | 2317, 2294, 10505 | Whole assemblies are uncoded. Repair body/cage numbers and the new Mirage black-chromed finish do not identify an earlier complete specimen. |
+| BR01-MI Mirage brakes | 10115 | Compare the uncoded 1999 390g assembly with the newly styled 2001 380g offering before assigning BR01-MI or inserting a possible duplicate. |
+| BR00-RE traditional Record brakes | 578 | The 2001 book repeats BR00-RE, but provides no positive crosswalk to the earlier specifically coded BR-14RE specimen. |
+| WH00-SMPTF / SMPTR Shamal Pista | 10513 | Complete codes continue, but the reviewed range does not establish actual wheel spoke counts. Repair-kit quantities include spares and are not wheel specifications. |
+| Record rear hub | 3268 | The earlier Exa-Drive nine-speed specimen already spans 1999–2006. A service-family heading does not prove the same physical version. |
+| Record Pista hubs | 3242, 3243, 3270, 3271 | No complete assembly codes. The 240/331g, 100/120mm high-flange specification alone does not distinguish the older specimens. |
+| Record eight-speed CS99 sets | 1186 | CS99-RE0823/0833/0836 repeat the 2000 codes. The 2001 262g 12–23T offering is not a demonstrated crosswalk to the older uncoded 240g 13–21T row. |
+| Record C9 Ultra-Drive chain | 10126 | The earlier nickel-chrome/PTFE Record nine-speed chain may overlap the 2001 C9, 114-link/300g model. An explicit earlier code or construction crosswalk is needed before a rename or separate generation. |
+| C-BA01SA Barcelona tubular rim | 4946 | 2001 specifies 15mm profile, 395g and polygonal 6082-T6 construction. The older high-profile claim is thin legacy evidence; compare profile/code before deciding whether this is continuity or a new version. |
+| C-MO11SA Montreal clincher rim | 4953 | 2001 specifies 19mm profile, 420g and 622x20 construction. The earlier Montreal 76 row has 826g measured per pair. Name suffixes and weight alone do not identify another generation. |
+| Ghibli road / track wheels | 6956, 6957, 6958, 7016, 7017 | No complete assembly crosswalk; road 995g and nine-cog/ten-speed spacing may differ from the earlier seven-speed wheel. Resolve the 130mm narrative versus 132mm table OLD; track 120mm/995g is not unique identity proof. Dedicated sprockets 11246 are recorded separately. |
+
+### Validation and cleanup
+
+- Exact old-value guards were used for every update. The three main loads affected exactly the reviewed 39 inserts/92 updates; the targeted Proton follow-up added one component and updated 10056, yielding 40/93. Readback verified every planned field, source, title/search text and retained old field; all untouched Campagnolo rows matched the saved baseline. All descriptions fit 255 characters. Each SQL file reran with zero inserted/updated rows.
+- Before application, the shared generator/live comparison was simulated against all loaded catalogues; both the main change and Proton follow-up preserved mappings. The actual final report also exactly matches the baseline apart from timestamps:21,196 comparisons,21,181 unchanged and the same 15 pre-existing lost-link findings. All 40 new components have zero linked specs; no independently identified new fitment arose in the loaded bike catalogues, which predate this offering. Existing linked-spec counts on changed rows stayed unchanged.
+- Final duplicate summary: {"generation": {"pairs": 31}, "configuration": {"pairs": 18}, "variant": {"pairs": 1}, "cosmetic": {"pairs": 1}}. No new duplicate/cosmetic pair.
+- Task-created PDFs, renderings, extraction/proposal inventories, SQL and validation snapshots were removed after their lasting evidence, old/new values and outcomes were recorded here. The original user-provided press PDF was preserved. No pending SQL or review artifact is required to resume the remaining identity questions.
