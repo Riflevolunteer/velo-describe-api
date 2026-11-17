@@ -27,4 +27,44 @@
 
 - Re-read source 339, printed pp.11–12 (blog scans15–16). 130 is small front, 43–56mm; 131 standard front, 44–62mm; 132 deep front and 133 standard rear, 56–72mm. 134 is front/rear, 65–83mm; 136/S and /D are left/right bracket versions. Thus 130/131 is not a front/rear pair.
 - 1981 Bianchi Super Turismo spec6595 “Universal ART.130/131” remains NULL. The catalogue drawing shares the double UNIVERSAL lettering of DB1069, but its VeloBase main photo (8F3C3AAD-4CE0-4121-9F42-B3B6A47EC166.jpeg) shows bare calipers without measurable reach/model markings. Arm lettering alone does not identify the numbered option. No new duplicate Sport row, no retitle/date widening or link to 1069/1071. Need measured reach/back markings or a Bianchi parts document.
-- Catalogue images and comparison photo: `/private/tmp/existing-source-review/`. No SQL applied.
+- Source pages are identified above; the earlier disposable catalogue images and comparison photo are no longer retained. No SQL applied.
+
+## Bianchi 130/131 fitment follow-up — 2026-11-17 (no DB changes)
+
+- Live readback: spec **6595**, bike **363** (1981 Super Turismo, source **165**),
+  still reads `Universal ART. 130/131` with component NULL. Rows **1069 / 1071**
+  remain unidentified Sport specimens with no bike links; no dates, titles,
+  descriptions or mappings were changed in this review.
+- Visually rechecked the original manufacturer's printed **pp.11–12**, blog
+  scans **15–16**. P.11 explicitly labels 130 small front (43–56mm), 131 normal
+  front (44–62mm), and 132 deep front / 133 normal rear (56–72mm). P.12 shares
+  spring 241/a between 130/131 but distinguishes front and rear centre bolts;
+  shared parts do not turn 130/131 into a front/rear model pair.
+- The original saarf host returned HTTP 429. Found an [alternate copy of the
+  same Bianchi 1981 US brochure](https://bikalog.org/api/view/Bianchi/1981/bianchi-1981.pdf):
+  PDF **p.4** visibly prints ART. **130/131**, confirming the maintained CSV
+  transcription. The Super Turismo portrait on **p.3** has no legible model
+  marking, measured reach or separate front/rear identification. It cannot
+  establish which numbered calipers were fitted. The alternate host is not a
+  second independent fitment attestation or a reason for another source row.
+- **New independent period listing:** [Holdsworthy Bike-Riders Aids 1967–68](https://ebykr.com/library/holdsworth-1967-68-aids-catalog/),
+  printed **p.35**, [scan 19, right page](https://ebykr.com/wp-content/uploads/2026/11/ebykr-holdsworth-1967-68-aids-catalog-p19-scaled.webp),
+  identifies a Universal Sport set as **131/133**, with the smaller front and
+  deeper rear. This corroborates the manufacturer's positional distinction.
+  It raises a concrete possible Bianchi catalogue error, but does not prove
+  that the 1981 bike used this set; do not change 130/131 to 131/133 by inference.
+- Targeted English/Italian code and Super Turismo searches found the above
+  catalogue and restoration/forum leads, but no Bianchi dealer parts list or
+  original numbered fitment evidence. Rivendell 2001 no.8/9 reproduces the same
+  Universal reach drawing and adds no Bianchi identification; restored-bike
+  photos are not factory-equipment proof. The separate 1996 Universal MTB
+  catalogue lead was not pursued for this 1981 Sport identity question.
+- Result: preserve the combined text and NULL link. No unsupported split,
+  numbered duplicate component inserts, retitling/date widening of 1069/1071,
+  or CSV correction. The remaining action is to establish Bianchi's intended
+  codes/positions from a period Bianchi parts/correction document or an original
+  bike's numbered calipers and measured reaches. The duplicate missing-row
+  mention was removed from TODO; one precise fitment action remains.
+- Source URLs/pages and conclusions are retained here; this task's downloaded
+  scans, source HTML and helpers were removed after the review. The old
+  `/private/tmp/existing-source-review/` directory was empty and was not altered.

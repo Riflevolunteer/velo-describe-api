@@ -14,6 +14,16 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
   NULL guards prevent that substring match. No separate 81-L row or speculative
   split is needed for this review. See known-catalogs/miyata.md for source URLs.
 
+## 1981 Bianchi Universal brake codes (reviewed 2026-11-17)
+
+- Super Turismo spec **6595**, `Universal ART. 130/131`, remains NULL. The
+  source scan confirms that wording, but Universal labels 130 and 131 as two
+  front options; a period retailer instead offers 131/133 as its front/rear set.
+  Do not guess a positional split, correct the source to 131/133, or map it to
+  unnumbered Sport specimen 1069 / 1071 from arm lettering alone. Revisit with
+  Bianchi-specific parts/correction evidence or original marked/measured calipers.
+  See component `known-catalogs/universal.md` for the source scans and distinction.
+
 ## Nashbar follow-through on Miyata (reviewed 2026-11-17)
 
 - GX-400 Aero lever **18835** is not caliper series 8082 / 678. Its matching

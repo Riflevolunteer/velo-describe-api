@@ -231,7 +231,7 @@ found). See [Panasonic notes](.agents/skills/ingest-bike-specs/references/known-
 
 Remaining era mismatches: 1983 Bianchi Rallye generic "Mafac cantilever" -> 10016 (1981-only, description specifies tandem dual-cable levers), and 1990 Bianchi Osprey / Nyala -> 8032 CT-X101 / 8038 CT-XT01 (1992-only; check generation/model codes against a 1990 manufacturer catalogue before widening). The 1982 Peugeot NL "605 side-pull" cells remain unlinked: the source prints Mafac, so the Weinmann identification still needs a clear photo.
 
-- No suitable row: Dia-Compe 984 / 984D (3, 1989 Bianchi), RT 400 (1986 Raleigh); Modolo Quattro (2, 1989-90 Bianchi) and Start (1987); Lee Chi cantilever (3, 1988-89 Peugeot); Chang Star 500 / cantilever; Polygon AF-500; Universal ART. 130/131 (1981 Bianchi; held-source review below confirms two front options, identification still open); Altenburger 53 S3 (1987 Peugeot).
+- No suitable row: Dia-Compe 984 / 984D (3, 1989 Bianchi), RT 400 (1986 Raleigh); Modolo Quattro (2, 1989-90 Bianchi) and Start (1987); Lee Chi cantilever (3, 1988-89 Peugeot); Chang Star 500 / cantilever; Polygon AF-500; Altenburger 53 S3 (1987 Peugeot).
 
 ### Rear Derailleurs
 
@@ -383,7 +383,7 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 ## Open: held-source follow-ups
 
-- **Universal ART. 130/131 — source found, bike identification unresolved**: source 339 printed pp.11–12 (scans 15–16) says **130 = small front, 43–56mm; 131 = standard front, 44–62mm; 133 = standard rear**. Thus `130/131` is not an established front/rear pair. Spec **6595**, 1981 Bianchi Super Turismo, stays unlinked. Row 1069 shares the double UNIVERSAL arm lettering, but its bare-caliper photo gives no numbered model or measured reach. Need a Bianchi parts document or measurements/back markings before a precise row/mapping; keep 1069 / 1071 unchanged.
+- Resolve **1981 Bianchi Super Turismo brake spec 6595** from a period Bianchi parts/correction document or original marked/measured calipers: establish whether its printed **130/131** means alternatives or an error for a front/rear set such as **131/133**, then identify matching DB rows before linking or splitting. [Universal evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/universal.md#bianchi-130131-fitment-follow-up--2026-11-17-no-db-changes).
 - **1985 Raleigh Crested Butte XT crank [3564] — identification, not an FC-M700 source gap**: source 26 printed pp.16–17 pairs Deore XT touring/off-road with **FC-6206**, already row **1797** (1984–87). Printed p.107 gives Biopace **48/50 outer, 38/44 middle, 28 inner**, not the Raleigh's **46/36/26**. Source 344's eight sheets contain no crankset. Leave the spec NULL until an original Raleigh photo or period parts document identifies it; do not infer FC-M700 or substitute later FC-M730.
 - **La Bicicletta Guida '96 broader backlog**: review pass 3 entries (MF Components, Tioga, MBS, Syncros) after checking current brands (low link yield, as loaded bike catalogues stop at 1994); new candidates from that review: 6896 Pista CL Servizio Course vs 10570 Pista CL, 1570 FRM CU2 vs 10279 / 10280; reconcile Mavic CXP 30 Argent clincher coverage with 5063 before adding a row; unloaded entries OMAS 120 Big Sliding, FRM rear "Campagnolo Compatibile". See [catalogue evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md).
 

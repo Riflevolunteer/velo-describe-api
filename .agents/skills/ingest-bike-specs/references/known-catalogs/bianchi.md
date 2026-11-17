@@ -427,6 +427,17 @@
 - Regression: all 28 catalogues regenerated; only the 31 new 1981 links
   changed.
 
+### Universal 130/131 follow-up — 2026-11-17
+
+- The [alternate original 1981 US brochure scan](https://bikalog.org/api/view/Bianchi/1981/bianchi-1981.pdf)
+  p.4 confirms `Universal ART. 130/131` on Super Turismo; p.3's portrait supplies
+  no numbered front/rear identification. Spec **6595** stays NULL and the CSV
+  remains unchanged. Universal's own catalogue defines both codes as front
+  options; a newly checked Holdsworthy 1967–68 listing gives **131/133** for a
+  Sport front/rear set. That is a possible catalogue-error lead, not permission
+  to correct Bianchi's text. Full source pages, rejected inferences and the
+  remaining evidence needed are in component notes `known-catalogs/universal.md`.
+
 ## 1982 Bianchi — `1982_bianchi_spec.csv` (6 bikes, 56 specs, 21 linked)
 
 - Source: https://saarf.london/2014/02/18/bianchi-racing-catalog-1982/
