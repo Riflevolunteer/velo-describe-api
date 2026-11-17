@@ -29,7 +29,9 @@
   SP-2C 228 / 238 g against the velobase 241 / 233 g averages); BBs 163 MS-68 and
   162 Super Mighty Pista (undated -> 1978), 161 Mighty MW-68 1980 -> 1978.
   **Judgements:** 1976 as NJX-1 / DJX-1 by the "fix chainring" wording, 1960 as
-  MCX-2l by the 144 BCD, 162 as the Super Mighty track BB.
+  MCX-2l by the 144 BCD, 162 as the Super Mighty track BB. The last
+  attribution and its 1978 dating were withdrawn in the 2026-11-17
+  specimen review below because no model code or axle length identifies 162.
 - New (7 rows, 1978-1978, group NULL): 8883 "MCVS / MCVD, Super Mighty Victory",
   8884 "Maxy Junior Sports" (42-44T, cranks 125 / 152), 8885 "FC" (cycle
   soccer, 24T), 8886 "MCS Demi-fond" (53-120T), 8887 "MCS Cross-country"
@@ -241,3 +243,57 @@ OPC-SC and RT / BT cranks, 4 No.66 and DZF cranks, SP-K, HP-G5 and OPC-A5 / A4.
     Regeneration gives exactly these 5 links. A first pass found the generic matcher
     also linking "SUGINO TGT-LP" by substring; it is now blocked by a `null` key.
     duplicate-report (plain, `--near`, `--paren`) and `quality-report` raise nothing.
+
+
+## Uncoded bottom bracket 162 vs MS-68 163 — 2026-11-17, applied and validated
+
+User approved the correction; applied and read back on 2026-11-17.
+Task-created SQL and the downloaded manufacturer scan were removed after
+readback, mapping comparison and the zero-change rerun. Earlier specimen
+inputs were preserved; the source URLs below retain the evidence independently
+of those older temporary files.
+
+- **162:** original VeloBase record and sole photograph give a steel
+  square-taper axle, English 1.370 x 24 cups and 1/4in / 9 balls per side;
+  cup text SUGINO MADE IN JAPAN. Its axle marking and length fields are blank,
+  no date is supplied, and the low-resolution original does not establish
+  MS-68 or NJS markings. The source calls it Super Mighty Pista, but does
+  not supply the identifying code/dimensions needed to establish that name.
+  https://www.velobase.com/Pages/ViewComponent.aspx?ID=4740DDE8-37C6-4834-A1E7-4421BC7F49DD
+- **163:** independent reference explicitly reports 109mm, MS-68 and NJS
+  axle markings, and Sugino / 1.37 x 24T / NJS cups. Retain this identified
+  model unchanged, with its measured weights and existing catalogue dates.
+  No evidence establishes that 162 is the same configuration, so no merge
+  is proposed. Reopen that question only with a readable axle code/length
+  or an independent specimen-to-catalogue crosswalk.
+  https://www.velobase.com/Pages/ViewComponent.aspx?ID=12E2EBFE-2A3A-4E2E-A088-82920EB054B8
+- The 1978 catalogue p.4 shows MS-68, MW-68/70 and MT-68/70 shafts plus
+  multiple hanger/cup choices. It cannot identify 162's uncoded specimen.
+  The initial catalogue import explicitly recorded 162's track assignment
+  as a judgement; this correction withdraws that unsupported identity,
+  dating and catalogue provenance. No axle code is assigned.
+  https://cyclespeugeot.web.fc2.com/catalog/sugino78/sugino78_04.jpg
+- Applied **162** fields: title `Sugino bottom bracket (uncoded specimen)`;
+  year_from/year_to **1978/1978 -> NULL/NULL**; source_ref **210 -> 1**;
+  search text `Sugino bottom bracket`; preserve GUID
+  `4740DDE8-37C6-4834-A1E7-4421BC7F49DD`, brand55/category1, NULL group/image.
+  New 196-character description:
+  `English 1.370 x 24 cups; steel square-taper axle; 1/4in x 9 balls per side. Cups marked SUGINO MADE IN JAPAN. Model and axle length unverified; identification as track MS-68 / NJS not established.`
+- Restoration fields: old title/search text `Sugino Super Mighty Pista`;
+  description `Sugino Super Mighty Pista, Japan. Track bottom bracket set of the Super Mighty series`;
+  dates1978-1978/source_ref210. Restore only those fields on the original
+  GUID if new identification evidence warrants it. No deletes, inserts,
+  new sources or generator edits were made.
+- Validation before application: both rows have zero bike links and no
+  generator overrides. All **96 CSVs / 21,176 generated specs** compared
+  with the live component rows and the proposed 162 title: zero spec
+  content or mapping changes. Counts are generated, not live coverage.
+  Description fits varchar(255). Application affected exactly one component.
+  Readback checked every field on 162 against the approved change and every
+  field on 163 against its full original row: 163 is unchanged. Both retain
+  their original GUIDs, categories, brands and NULL image fields; neither
+  has a bike link. SQL rerun affected zero rows. Post-application comparison
+  of the live records with reconstructed originals across all 96 CSVs /
+  21,176 generated specs found zero spec content or mapping changes.
+  Keep the uncoded specimen separate; review identity again only with a
+  readable axle code/length or an independent specimen crosswalk.

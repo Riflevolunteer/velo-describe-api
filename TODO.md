@@ -297,10 +297,6 @@ and generator registries; automatic reports do not exhaust the manual queue.
 Retain `/private/tmp/duplicate-review-2026-11-13/` for pending manual photo
 comparisons until their identities are settled.
 
-- **Sugino bottom brackets 162 / 163:** establish whether 162 shares 163's
-  109 mm MS-68 / NJS axle and marked cups before merging. Retain comparison
-  photos `/private/tmp/dup-sugino-162.jpg` and `/private/tmp/dup-sugino-163.jpg`
-  while this identity review is pending.
 - **SunTour XCE crank specimen:** identify the original uncoded reference behind
   2002 from a readable marking or independent XE00/XE01 crosswalk before merging.
   [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#xce-crank-dating-and-tangent-brake-link-review--2026-11-17-applied-and-validated).
