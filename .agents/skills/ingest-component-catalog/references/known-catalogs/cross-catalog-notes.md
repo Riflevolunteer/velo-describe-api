@@ -1199,23 +1199,91 @@ originals and maintained CSVs are preserved.
     each attested in 1996. Guida '99 has no New Success entry at the corresponding
     front/rear alphabetical positions, so no 1999 extension. The two early
     Peugeot links and all generated mappings remain unchanged; SQL rerun zero.
-    **Kept apart, probable 1996 -> 1999 renames** (same specs, different printed
-    names, no links): Category One 10539 / Category Pro 10222; Disc T 10618 / Disc 10360; FRM Alu-Ergal 10762 / 10764
-    / Pro 10303, Carbon-Ergal 10763 / 10765 / Feather 10305. **Distinct:** FRM Ergal post 10635 (two bolts) /
+    **Kept apart, possible 1996 -> 1999 renames** (different printed names,
+    no links): Category One 10539 / Category Pro 10222; Disc T 10618 / Disc 10360;
+    FRM Alu-Ergal 10762 / 10764 / Pro 10303, Carbon-Ergal 10763 / 10765 / Feather
+    10305. The later FRM review below supersedes the earlier claim of identical
+    specs for the hub comparisons. **Distinct:** FRM Ergal post 10635 (two bolts) /
     Arretrato 10161 (setback); 10597 CXP Titane (clincher, no "30" printed) / 10607 CXP 30 Titane (tubular);
     OMAS 120 S / 120 D (word-for-word identical print, separate letters); 10723 Mistral SQ (2250 SQ, source 384)
     / 93. Pista CL 10570 has no Atlanta entry in '96, so it is kept apart from 10444 Atlanta Gold CL. New candidates:
     6896 Pista CL Servizio Course vs 10570; 1570 FRM CU2 vs 10279 / 10280; not loaded: Mavic CXP 30 Argent
-    (clincher + tubular), OMAS 120 Big Sliding, FRM rear "Campagnolo Compatibile".
+    (clincher + tubular). The FRM Campagnolo-compatible rear and OMAS 120 Big
+    Sliding listings are represented in 10766 and 3068 respectively (see the
+    2026-11-18 review below).
   - Skipped as ambiguous (45 in all), e.g. Selle Italia Flite (5488 / 5489), Selcof Team Titanio (5872 / 5874),
     Cinelli 64 Giro d'Italia (2800-2802), 3ttt Competizione / Grand Prix, Hutchinson Krono Competition (10217 /
     10218), Vittoria Zefir Kevlar, Crono Seta CS 150, Sachs New Success brake (942 / 943), Clement Criterium aperto
     / Solo (merged multi-size entries).
 - Merged 2026-11-04 (user request): 10569 "Vittoria Corsa CX" (1996-1996, source_id 8a5cdbd9-d895-11f1-a2df-02fea3763e8d, no bike links) deleted into 6880 Vittoria Corsa CX Servizio Corse (1980-99, the 'vittoria corsa cx' override target); 6880's bare velobase text rewritten with the guide's sizes (19x28, 21x28, 19x26 in, 7-9 bar, 240-260 g; velobase 252 g avg kept), source_ref -> 357.
-- **Not done (a possible pass 3):** ~124 entries for brands not in component_brand: MF Components 21, Tioga 8, MBS 7,
+- **Not done (a possible pass 3):** ~124 entries were initially attributed to brands absent from component_brand: MF Components 21, Tioga 8, MBS 7,
   Syncros, WR Compositi, Bestialine, Hope, Poggipolini, Sipav, SDG (4 each), F.R.O. Castagnino 6, Titec, Taya,
   Yaban, Race Face, L.L.S., Tec Components (3 each) and ~25 more with 1-2. Out-of-scope sections (bottles, cages,
   QRs, bolts, tubes, tape, toe clips, straps, spokes, nipples, aerobars, tubing, groupset summaries) not ingested.
+
+### Guida '96 pass 3 triage — 2026-11-18
+
+The earlier missing-brand claim is stale for Tioga: brand 699 now exists, but
+its live inventory has no tyre rows. [Scan 22 / p.125](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_22_main_image.jpg)
+was visually checked and lists Mongrel, Bloodhound, City Ranger, City Slicker,
+Proline S, Proline F, Proline SK and Proline SR. These are candidates for
+reconciliation, not yet loaded or verified absent under another brand/name.
+The remaining brand estimates predate current DB inventory and are not a
+validated transcription. An OCR candidate index and page text, plus the reviewed
+Tioga scan transcription, are retained under `/tmp/guida96-pass3/` to resume
+the unfinished pass. OCR may miss names, combine columns or include out-of-scope
+accessories; scan-by-scan visual review and DB reconciliation remain necessary.
+
+### Guida '96 follow-up: OMAS headset identity — 2026-11-18
+
+Scan 52 / printed p.155 lists 120 Big Sliding as aluminium, ground steel races,
+25.4 mm x 24 tpi, 98 g and silver or black. Live 3068 already carries that
+source-357 listing and its 98 g alongside the earlier specimen's independent
+89 g measurement. The earlier statement that the entry was not loaded is
+superseded. Its generic title and earlier specimen do not independently prove
+that the specimen is marked 120; no retitle or duplicate insertion follows.
+The same page separately names 120 S and 120 D, rows 10681 / 10682, with
+identical printed specifications and prices. Keep them apart on the separate
+designations; their exact pair is registered in `REVIEWED_NOT_DUPLICATES`.
+Live checks found no bike links to 3066, 3068 or 10680–10682. The distinct
+unresolved 1978 101/S hub axle question remains in OMAS notes.
+
+### Guida '96 follow-up: FRM identities — 2026-11-18
+
+[Scan 28 / p.131](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_28_main_image.jpg)
+lists CU2 Corsa Campagnolo and Shimano ring compatibility separately, both
+400 g without chainrings, 7075 T6 and 170/172.5/175/177.5 mm. Row 10279
+represents the without-rings family; 10280 is the 1999 with-rings listing.
+The original [1570 specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=B291A8BF-03C9-4964-8F10-5ADBE8F43CE8)
+has two rings and a five-arm spider, but the image does not establish the
+ring compatibility, date or a crosswalk to either record. Keep it separate;
+do not infer identity from the shared CU2 name.
+
+[Scan 35 / p.138](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_35_main_image.jpg)
+lists the 260 g rear carbon/Ergal hub with a Marchisio Campagnolo-compatible
+freehub and 16/32/36-hole options. Live 10766 already represents this entry,
+source 357, 1996; the former claim it was not loaded is superseded. Its
+description's 16–36 phrasing does not specify the printed discrete options.
+Do not merge it with 10304 on 260 g and carbon construction alone: 10304
+does not identify a Campagnolo freehub. No DB change was made in this review.
+The earlier "same specs" claim for Carbon-Ergal / Feather is also superseded:
+1996 front 10763 is 88 g, while 1999 Feather front 10305 is 70 g and has fewer
+listed drilling options; rear 10765 has no rear counterpart in 10305. Alu-Ergal
+10762/10764 and Pro 10303 have close front/rear weights but no manufacturer
+crosswalk, and the latter combines positions. Keep these rows separate pending
+model-specific evidence.
+
+### Guida '96 follow-up: Mavic rim identities — 2026-11-18
+
+Live readback confirms that the previously missing CXP 30 Argent tubular is
+10199, and the separate clincher 10597 / tubular 10607 titanium-colour rows
+remain present. T217 family 9981 and T261 family 9983 have since been
+consolidated after preserving their respective finish/profile evidence; see
+the Mavic notes for applied changes. Keep CXP 30 family 5062, silver 10199
+and titanium 10607 separate while resolving the dealer's 520 g tubular claim
+against the maker's 465 g and the independent 500 g specimen. The Reflex
+family 9975 must remain until CD and Ceramic tubular options are represented;
+that work has its own current action. No Mavic DB change followed this review.
 
 ## La Bicicletta, July 1984 - Guida all'acquisto: le bici da turismo (8 scans, disraeligears.co.uk), read 2026-10-24, not ingested
 

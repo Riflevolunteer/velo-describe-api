@@ -208,6 +208,7 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  [10681, 10682], // OMAS 120 S / 120 D: separately named in Guida '96; identical printed specs do not establish equivalence
   // Manual specimen review, 2026-11-17; cross-catalog-notes.md.
   [1657, 1659], // Nervar: conflicting 122/128 mm BCD; bare-arm vs complete-set weights are not comparable
   [2556, 2557], // Simplex Competition: star vs wreath dating badges, retained as versions
