@@ -1,5 +1,57 @@
 # Regina catalogs processed so far
 
+## Bikecology 1976 chain identities — applied and validated 2026-11-17
+
+Re-read [Bikecology fifth edition, April 1976](https://labibleduvelodivers.blogspot.com/p/doc-1976.html),
+existing source **244**: contents image 2 identifies chains on printed p.28,
+image 30 (`BICYCLE CATALOG 1976 (30).jpg`). The names and photographs explicitly
+distinguish the three constructions, agreeing with Regina C-78 p.5 (source 138,
+original `Downloads/Campagnolo_other_Vintage_Catalogs/1978ReginaExtra.pdf`) and
+Palo Alto 1976 p.13. No new source or component is needed.
+
+| Retail code / name | Printed construction | Existing identity |
+| --- | --- | --- |
+| CH5 Extra Black | No special bevelling, machining or gold plating; 112 links | **1376 50 Corsa** |
+| CH6 Gran Sport Super Corsa Oro | Black/gold alternating plates, machined pins and bevelled connecting-plate edges; 114 links | **1382 50 Oro**, undrilled gold outer plates |
+| CH6a Gran Sport Super Corsa Oro Drilled Out | Same as CH6, adding one small lightening hole in each plate; 114 links | **1381 50 Record**, drilled gold outer plates |
+
+The drilled photographs and explicit adjacent descriptions establish the split;
+the retailer's CH numbers are not maker model numbers. Do not merge ordinary Oro
+with drilled Record, map the latter to nickel-plated 8334 Record S, or infer a
+different identity from pack link counts. This closes the previously held
+Bikecology CH5/CH6/CH6a naming question.
+
+Applied description enrichments, source_ref **190→244** on 1376/1382 and
+**293→244** on 1381. Titles, search_text, IDs and dates remain unchanged
+(1376:1970–1992; 1382:1970–1992; 1381:1970–1988). Description lengths 224/223/227
+respect the 255-character limit. Existing maker dimensions, loads, weights and
+BC construction facts were preserved; the retailer supplies the added aliases.
+
+- **1376 old:** `Regina Extra 50 Corsa (c. 1970: Gran Sport Super Corsa), Italy. Standard 1/2 x 3/32 narrow derailleur chain (ISO 082) for 5/6-speed: 12.70mm pitch, 2.38mm inside, 8.1mm riveted width, 1000kg, 0.26kg/m, n.7 outer link`
+- **1376 new:** `Regina Extra 50 Corsa, Italy. Also sold as Gran Sport Super Corsa / Extra Black. Standard 1/2 x 3/32 derailleur chain (ISO 082), 5/6-speed; 12.70mm pitch, 2.38mm inside, 8.1mm riveted width, 1000kg, 0.26kg/m; n.7 outer link.`
+- **1382 old:** `Regina Extra 50 Oro, Italy, 415 grams. 1/2 x 3/32 narrow chain (ISO 082), dimensions of the 50, selected parts, finer finish, exclusive "BC" riveted bushes, gold outer plates; 2.38mm inside, 10.6mm overall, 1000kg, 0.26kg/m.`
+- **1382 new:** `Regina Extra 50 Oro, Italy, 415g. Also sold as Gran Sport Super Corsa Oro. Undrilled gold outer plates, selected parts, finer finish, BC riveted bushes; 1/2 x 3/32 (ISO 082), 2.38mm inside, 10.6mm overall, 1000kg, 0.26kg/m.`
+- **1381 old:** `Regina Extra 50 Record, Italy, 390 grams. 1/2 x 3/32 racing chain: "BC" riveted bushes, high-quality materials, lightening hole in every outer plate, gold outer plates. Palo Alto name: Record Oro.`
+- **1381 new:** `Regina Extra 50 Record, Italy, 390g. Also sold as Record Oro / Gran Sport Super Corsa Oro Drilled Out. 1/2 x 3/32 racing chain; BC riveted bushes, high-quality materials, lightening hole in every outer plate, gold outer plates.`
+
+Bike follow-through found **9342**, 1981 Canadian Raleigh Professional, still
+NULL for `Regina D'Oro ½" x 3/32"`. The original Canadian specification panel
+confirms this ordinary pre-BX Oro name; applied **NULL→1382** with an exact-value,
+Professional/1981-only override. Original value, bike and source 230 unchanged.
+[Raleigh evidence](../../../ingest-bike-specs/references/known-catalogs/raleigh.md#1981-professional-regina-chain--applied-and-validated-2026-11-17).
+Maker-only/either-or Regina specs and the previously reviewed Battaglin Record
+choices were left intact; this adds no broad Record/Oro fallback.
+
+Validation: exactly three component updates and one link fill; SQL rerun zero
+changes. Field-by-field live comparison confirms only the stated descriptions,
+source references and 9342's link changed. Exact and near Regina-chain duplicate
+reports have no candidates; the three identities remain separate. Across all
+21,196 loaded-CSV comparisons, the only pre-application gain was 9342→1382;
+final findings match the baseline (15 unrelated losses, no new target changes).
+All 13 test files pass. TODO's completed chain clause removed, other Bikecology
+questions preserved. Task-created scans, render, SQL and comparison files removed
+after validation; user Downloads originals and maintained CSVs preserved.
+
 ## Palo Alto chain identities and Titanio correction — 2026-11-17, applied and validated
 
 - Recovered the complete 16-page **1978 Catalogo C-78**, existing source 138,

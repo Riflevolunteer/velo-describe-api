@@ -455,8 +455,14 @@ originals and maintained CSVs are preserved.
   post, Mavic Elan rim, Hutchinson Supersprint / 80-GTX Corsa / Corsa Leggero /
   Super Corsa / Cross TR / Special Seta (9045-9050), Michelin Falco / Nibbio /
   Fifty / High Speed (9051-9054).
-- Not applied (no row or not enough evidence): Regina "Gran Sport Super Corsa Oro"
-  CH6 / CH6a and "Extra Black" CH5 chains, HKK chains (no brand row), Everest
+- Regina chain hold superseded 2026-11-17: printed p.28 (image 30) explicitly
+  distinguishes CH5 Extra Black→1376, CH6 undrilled Oro→1382 and CH6a Oro
+  Drilled Out→1381. Maker C-78 p.5 corroborates the construction split.
+  Enriched the three existing descriptions, source_ref→244, and linked the
+  original 1981 Raleigh Professional D'Oro spec 9342→1382 with a scoped override.
+  No new identities or dates; live readback, zero-change rerun, full mapping
+  comparison and all 13 test files passed. [Exact changes and evidence](regina.md#bikecology-1976-chain-identities--applied-and-validated-2026-11-17).
+- Other original holds (no row or not enough evidence): HKK chains (no brand row), Everest
   superlight CH8, Renold track chain, Sugino Mighty Custom SU2 / Maxy 5 / Maxy II
   SU3 (the DB has Maxy 3-bolt and Maxy 5-arm, not the same), Ideale 90TB / 90IR vs
   our "90 Speciale Competition", Cinelli bars HSI 63 / 65, Tange "Levin HS TL" (maybe

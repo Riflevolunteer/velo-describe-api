@@ -202,6 +202,11 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Chains
 
+- Confirmed and applied 2026-11-17: 1981 Canadian Raleigh Professional chain
+  **9342**, `Regina D'Oro ½" x 3/32"`, NULL→**1382 Extra50 Oro**. Original
+  panel and pre-BX ordinary Oro identity support the link; exact-value,
+  Professional/1981-only override. [Evidence and validation](known-catalogs/raleigh.md#1981-professional-regina-chain--applied-and-validated-2026-11-17).
+
 - Confirmed and applied 2026-11-17: 1978 Bianchi **12482 / 12503**,
   `Regina Extra Oro 50 Record, lightened` →**1381 50 Record**; **12523**,
   `Regina Extra Super Corsa Oro` →**1382 50 Oro**. Original Bianchi scans

@@ -391,6 +391,23 @@
   Shimano Gold and Sun Tour freewheels, rims, plain hubs, generic saddles.
 - Regression: all 43 other CSVs regenerate with unchanged link counts.
 
+## 1981 Professional Regina chain — applied and validated 2026-11-17
+
+Regina follow-through from the Bikecology 1976 review found Canadian Professional
+spec **9342** still NULL for `Regina D'Oro ½" x 3/32"`. Visually re-read the
+[original Canadian specification panel](https://theheadbadge.com/wp-content/uploads/1981-Raleigh-Canada-13.jpg)
+(Professional column, Chain row): ordinary D'Oro in 1981 is **1382 Extra 50 Oro**,
+matching the earlier Raleigh D'Oro choices. No drilled Record, nickel Record S
+or later Oro BX identity is specified. The Bikecology/maker construction
+crosswalk is in [Regina notes](../../../ingest-component-catalog/references/known-catalogs/regina.md#bikecology-1976-chain-identities--applied-and-validated-2026-11-17).
+
+Applied **9342 NULL→1382** on bike 522, preserving the exact value and source 230.
+Added an exact-value, Professional/1981-only Chains override; no CSV rewrite or
+general fraction-normalisation change. Guarded SQL rerun zero; live readback
+correct. Across all 21,196 comparisons the only gain before application was this
+link; final findings equal the pre-task baseline. All 13 test files pass.
+Task-created original-panel download, SQL and comparison files removed.
+
 ## 1986 Raleigh (US) — `1986_raleigh_spec.csv` (21 bikes, 424 specs, 52 linked)
 
 - Source: https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1986.html

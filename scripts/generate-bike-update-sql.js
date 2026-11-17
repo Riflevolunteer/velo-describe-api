@@ -4277,6 +4277,7 @@ const COMPONENT_OVERRIDES = {
     '1 2" x 3 32" regina oro': 1382, // Regina Extra 50 Oro
     '1 2" x 3 32" regina d\'oro gold': 1382, // 1974 Raleigh Professional Mk IV: Regina Extra 50 Oro
     '1 2" x 3 32" regina d\'oro': 1382, // 1975 Raleigh Team Professional / Professional Mk IV
+    'regina d\'oro ½" x 3 32"': [{ bike: 'Professional', from: 1981, to: 1981, id: 1382 }], // Canadian Raleigh original specs: ordinary pre-BX Oro, not drilled Record.
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
     'renolds': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
     // 1989 Bianchi US catalogue (gringineer scans).
