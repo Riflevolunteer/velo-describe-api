@@ -2473,6 +2473,12 @@
   guard row 121 by its current 2003/2007 dates, new description and source 408,
   restore the original 1998/1998 description/source 1 above, and preserve its
   stable IDs. The bibliography source can remain registered for its evidence.
+- **Worklist reconciliation 2026-11-17:** live readback confirms row 121
+  still has 2003–2007 availability bounds, source 408, the qualified description
+  above and no bike links. Database cleanup is complete; the remaining request
+  is a source hunt for manufacturer-confirmed introduction/discontinuation
+  evidence, now grouped with the other source hunts in TODO. No new source lead
+  was identified in this reconciliation, so the recorded searches were not repeated.
 - **Research scope / do not repeat:** the already-reviewed 1998/1999 consumer
   catalogues were not reopened. Searches covered c.2000-2003 manufacturer and
   service-document leads; no earlier dated Shimano UN73 listing recovered.
