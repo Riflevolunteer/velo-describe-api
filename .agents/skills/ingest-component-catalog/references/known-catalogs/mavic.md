@@ -1,5 +1,110 @@
 # Mavic catalogs processed so far
 
+## Open Pro and 870 date review — 2026-11-17, applied and validated
+
+Focused review of live **5099 / 5100 / 10183 / 2409 / 2410**, their original
+specimen listings, and manufacturer evidence. None has bike links; none of
+these component IDs occurs in generator overrides or reviewed duplicate
+pairs. **5050 Mavic 192** still has one bike link and unknown dates; its sourcing
+remains a separate open action, outside this application.
+
+### Supported correction: silver Open Pro 10183
+
+- [Yeti 1998 catalogue](https://www.mtb-kataloge.de/Bikekataloge/PDF/Yeti/1998.pdf):
+  cover visibly prints **1998**. PDF **p.11**, specification table, final column
+  **Road Project Ultegra**, names silver **Mavic Open-Pro, SUP/UB Control, 32H**.
+  This is exact finish/model fitment evidence supporting **year_from 1999 ->
+  1998** for the existing silver row. It attests availability, not the launch
+  year. Do not use the PDF's later conversion metadata as its catalogue date.
+- [Mavic GB 1999 catalogue](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf),
+  existing source **374**, printed **p.20 / PDF p.10**: Open Pro classic
+  clincher, Maxtal, SUP and double eyelets, UB Control or Ceramic braking;
+  **700c 425 g**, **650 390 g**, Ceramic 445 g. Silver is separately offered
+  alongside royal blue, CD and CD Ceramic. Profile drawing gives **19.6 mm
+  outside width**, 18.4 mm height; drilling 28/32/36. The existing row's 15 mm
+  size is the internal dimension (622x15), not a conflicting outside width.
+- Dealer source **353**, Guida '99 p.104 (scan 16), previously transcribed 410 g.
+  The maker positively supplies 425 g for the 700c rim, so use that specification
+  and clarify SUP as the welded joint and UB Control as brake-track machining.
+  This does not reinterpret the independent specimen weights on 5099/5100.
+
+Applied on explicit user approval: registered supporting `Yeti catalogue (1998)`
+as source **432** (country US, dated cover and p.11 citation; source lookup
+found no existing Yeti row), then updated **10183** only:
+**1999–1999 -> 1998–1999**, source_ref **353 -> 374**, description:
+
+> 700c (622x15) Maxtal clincher rim; 19.6 mm outside width, SUP welded joint, UB Control machined braking surfaces, double stainless eyelets, silver anodised; 425 g, 28/32/36 holes. Road racing and training.
+
+The **205-character** replacement cites the primary maker through source_ref;
+Yeti remains separately registered as the evidence for 1998. The current schema
+cannot attach both source records to the component; these notes retain the
+fact-to-source distinction. Title/search text, UUID, year_to, group/category and
+bike links remain unchanged. No merge, insertion of a component or bike mapping
+was made. The SQL used exact old-field guards and idempotent source registration.
+Read-only preflight: one matching component guard, existing primary source 374,
+no existing Yeti label; description within 255. Transaction changed **one source
+and one component**; rerun changed **zero rows**. Exact live readback confirmed
+the 205-character replacement, source_ref 374, dates 1998–1999, unchanged remaining
+component fields and zero bike links. The supporting Yeti source is unique and
+has the expected catalogue type, citation and US country.
+
+Restoration baseline, **10183**, UUID `0b858f12-09e1-4a40-acfa-8e3b6cd7e304`,
+brand 31, category 16, group NULL, title `Mavic Open Pro Argent Sup-UB Control`,
+search text `Mavic Open Pro Argent Sup-UB Control`, years **1999–1999**,
+source_ref **353**. Exact old description:
+
+> Maxtal alloy; 700; 15 mm; 28-32-36 holes; for training and competition, double inox ferrule, SUP and UB Control machining, silver anodized; 410g
+
+Restore only deliberately, guarded by the approved new fields. Do not delete a
+registered supporting source without checking all later references.
+
+### Remaining identity/date limits
+
+- **5099**, UUID `D12D1B63-2FD3-4768-99D0-4893540FE62A`, currently **1986–1986**,
+  and **5100**, UUID `BC13D5D1-C194-4514-9C50-970AF52F7D60`, **1980–1990**,
+  both remain source_ref 1. Original specimen pages:
+  [5099](https://www.velobase.com/Pages/ViewComponent.aspx?ID=D12D1B63-2FD3-4768-99D0-4893540FE62A),
+  [5100](https://www.velobase.com/Pages/ViewComponent.aspx?ID=BC13D5D1-C194-4514-9C50-970AF52F7D60).
+  Visually inspected their main photos: 5099 shows blue rims; 5100 a dark rim
+  with an OPEN PRO / MAXTAL S.6000 / SUP decal. S6000 wording alone therefore
+  does **not** establish two different alloy generations. The listings' broad
+  date claims do not date those exact specimens. Keep the independent 440 g
+  average and 888 g actual pair records; do not force either into silver 10183
+  or arbitrarily recast 5100's black finish as CD. Need dated decal/finish
+  evidence and an early range source before replacing dates or merging rows.
+- The [Mavic technical manual 2004](https://racingdepot.no/userfiles/image/MSC/MTech%202004.pdf),
+  printed pp.30–31, still lists Open Pro and describes 6000-series rim alloy
+  generally. That is family evidence, not a date for these particular specimens;
+  no new source record or date extension is proposed from it. Broad web searches
+  also return retrospective 1986 introduction claims; none recovered a dated
+  early maker page connecting that claim to these photographed configurations.
+- **2410**, UUID `1AD12D23-794E-437B-AE09-9C9C996DAE18`, **1984–1992**,
+  source_ref 1: its [specimen listing](https://www.velobase.com/Pages/ViewComponent.aspx?ID=1AD12D23-794E-437B-AE09-9C9C996DAE18)
+  describes a later 31.8 mm clamp supplied with reducing shims and a missing
+  green/yellow clamp sticker. The single photo confirms the body/cage appearance
+  but supplies no dated code or clamp measurement.
+  [88/89 p.34](https://www.disraeligears.co.uk/site/00_main_images/mavic_catalogue_88-89_page_34_main_image.jpg)
+  lists 870 as the 110 g clamp-on triple without a diameter;
+  [90/91 p.22](https://www.disraeligears.co.uk/site/00_main_images/mavic_trade_catalogue_9091_page_22_main_image.jpg)
+  explicitly says **28 mm collar**. Neither identifies the 31.8 mm version.
+  Do not copy generic row 2409's 1988 start onto 2410 or merge the clamp variants.
+  Need a dated maker/dealer 31.8 mm specification or dated boxed specimen.
+
+Validation at **2026-11-17T11:26:04.049Z**: all **96 loaded catalogue CSVs /
+21,176 paired specs** compared. Generated/live mappings were identical to the
+pre-application baseline: 21,161 unchanged, zero gains/changed targets, the same
+15 pre-existing losses and no missing/ambiguous identities. Whole-DB quality
+findings were identical: **0 structural errors**, 1,952 review findings
+(1,567 incomplete dates, 326 linked date conflicts,
+35 broad Freewheel labels, 24 descriptions at limit).
+The Mavic duplicate review retained the previously classified pairs; no new
+merge candidates were introduced. No code, matcher, CSV or generated SQL changed;
+validation used actual data readback, catalogue comparison and idempotency.
+Completed application steps removed from TODO; the specific unresolved identities
+and undated legacy sourcing remain open. All task-created temporary SQL, scripts,
+baselines, scans and renders were removed after validation. Source URLs, old/new
+values and remaining evidence limits are retained above.
+
 ## Rim maker-source follow-up — 2026-11-17, applied and validated
 
 Recovered the [1999 GB maker catalogue](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf)

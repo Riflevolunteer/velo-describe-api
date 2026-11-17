@@ -44,9 +44,10 @@ Evidence and exact affected specs are in the
   465 g tubular and attribute 5062's independent 500 g specimen weight before
   choosing survivors. Resolve Reflex CD/Ceramic representation before removing
   broad tubular row 9975. See the [maker-source follow-up](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#rim-maker-source-follow-up--2026-11-17-applied-and-validated).
-- [ ] Verify Open Pro dates/identities 5099 / 5100 / 10183 and the 31.8 mm
-  870 front derailleur 2410 against maker/specimen evidence; source dates for
-  the undated legacy rows listed in the audit, prioritising linked 192 rim 5050.
+- [ ] Find dated decal/finish evidence for Open Pro **5099 / 5100**, and a dated
+  **31.8 mm 870** specification or boxed specimen for **2410**, before changing
+  their dates or merging identities. Source dates for the undated Mavic legacy
+  rows, prioritising linked **192 rim 5050**. See the [date review](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#open-pro-and-870-date-review--2026-11-17-applied-and-validated).
 
 ## Open: API and client
 
