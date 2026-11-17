@@ -55,7 +55,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/wolber.md](known-catalogs/wolber.md) — Wolber (1 entry)
 - [known-catalogs/vredestein.md](known-catalogs/vredestein.md) — Vredestein (1 entry)
 - [known-catalogs/hutchinson.md](known-catalogs/hutchinson.md) — Hutchinson HP22 (1982 / 1986 / 1989 bike catalogue evidence)
-- [known-catalogs/panaracer.md](known-catalogs/panaracer.md) — Panaracer Timbuk II (1989 Raleigh catalogue evidence)
+- [known-catalogs/panaracer.md](known-catalogs/panaracer.md) — Timbuk II fitment evidence; Panaracer USA 1997 tyre/rim brochure (source 433)
 - [known-catalogs/stronglight.md](known-catalogs/stronglight.md) — Stronglight (6 entries)
 - [known-catalogs/gipiemme.md](known-catalogs/gipiemme.md) — Gipiemme (10 entries)
 - [known-catalogs/takagi.md](known-catalogs/takagi.md) — Takagi (1 entry)

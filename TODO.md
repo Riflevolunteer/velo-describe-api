@@ -187,11 +187,12 @@ SR work is in [the source worklist](#sr-sakae-next-work).
 
 Remaining named source gaps: CST C-740 / C-860 / C-861 (6, 1989-90 Bianchi), Vredestein Racer II (4, 1988 Raleigh), IRC Crosscountry (3) and Peak (1989 Bianchi), Michelin ATB Surmond (2, 1989 Peugeot) and Chevron gumwall (1983 Peugeot), Panaracer Cannonball Express and Cheng Shin Ridge Line III / Canyon Express (1986-87 Peugeot), National Trisport (1986 Miyata), Vittoria Oscar X (1989 Bianchi).
 
-Remaining variant questions: the 1993 Bianchi Smoke/Dart Comp (Kevlar) cells x4
-need evidence of which tyre is front before splitting them onto Smoke 11368 / Dart
-11369 (Panasonic prints only "Dart/Smoke"); Smoke Comp K (1991 Grizzly) needs a
-Kevlar-bead row; the 1993 Project 5 / 7 bare "Smoke" are 700C (no 700C Smoke
-found). See [Panasonic notes](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md#panaracer-tyres-1985--1986-tables-1989-95-european-catalogues-applied-2026-11-16).
+Remaining variant questions: obtain period Comp/construction and fitment evidence
+for the 1993 Bianchi Smoke/Dart Comp (Kevlar) cells before splitting/linking them
+to Smoke 11368 / Dart 11369; identify the 1991 Grizzly Smoke Comp K Kevlar-bead
+variant and the 700C Smoke fitted to 1993 Project 5 / 7. See the
+[Panaracer review](.agents/skills/ingest-component-catalog/references/known-catalogs/panaracer.md#panaracer-usa-tyre-and-rim-brochure-1997--applied-and-validated-2026-11-17)
+for the exact identity/configuration evidence still needed.
 
 - Also unresolved: 1994 Cinelli Genius Strada / Supercorsa "Vittoria CX tubular"
   (several CX variants); 1982 Battaglin "Vittoria Trofeo" (9255 Trofeo 250 starts
@@ -321,7 +322,7 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 - **SR / Sakae remaining evidence gaps:** seek exact catalogue/specimen evidence for the unresolved codes below. [Processed sources, rejected aliases and current results](.agents/skills/ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#four-sr-models-from-fuji-1989--applied-2026-11-15-source-412).
   - **Full 1983-88 maker catalogue recovery parked:** No.19 (Sep 1983) and No.23 (Aug 1988) reported, no complete scan recovered; No.20–22 unseen. Velo-Pages 58555 still HTTP 500 on 2026-11-15. Reopen for a new holder/scan/recovery endpoint; repeated broad searches have yielded no full-range source.
-  - **Next available partial evidence:** Panasonic 1985-89 rows are loaded (see `sakae-ringyo.md`); Schwinn 1985 remains for CXC-T310 and the rest of the crank range. Trek 1985/1987 and Koga-Miyata 1986 bar-code leads remain in the handlebar worklist. Do not repeat processed sources listed in the notes.
+  - **Next partial-source work:** reconcile the Koga-Miyata 1986 SR MTB-204 bar against current rows and Falcon fitment; inspect Trek 1987 pp.13-14 for MTB-209 / MTB-210 / FX-200; obtain the printed Schwinn 1985 CXC-T310 specification block before proposing a row. See the 2026-11-17 shortlist in the source-hunt log and the handlebar worklist; do not repeat processed sources listed in the SR notes.
   - **Keep unresolved:** CRE/CR-E/CRE100 identification (do not alias to CLE-100 11308); MTE-110 identification (keep MTE-100 5849 and MTE-300 11307 separate); SRE-100; the rest of the SAC/SUC/FXC/AXC/CXC range; CRH-310/MTH-100 hubs; MTS-131/CPS-80; MTB-224/CTR/CTSD. Seek exact model/specimen crosswalks; generic names or later fitment do not identify an earlier configuration.
 
 ### French makers 1977-89 (mostly Peugeot specs)
@@ -340,16 +341,18 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 - **Ron Kitching "Everything Cycling" 1984-89 and Freewheel catalogues:** best lead for Rigida rims (Chrolux, Jade, Saphir, CTX 10), Viscount saddles (2285, 2296, Terra / MTB anatomic) and the 1970s Brooks range. Next actions:
   - Ask Otley Cycle Club (John Barnett / Trevor Howe, through the club contact form) which 1980s Everything Cycling editions are on display in its Ron Kitching Library, and whether they can be photographed.
-  - Read Warwick MRC record NCM/1/1403, and ask the MRC for its 1983 Freewheel scan.
+  - Confirm the edition years held under Warwick MRC record NCM/1/1403 through its catalogue interface or archivist, and ask the MRC for its 1983 Freewheel scan.
   - Other holders: retrobike 159101 / 21901 members, retrobike 435965 / 3405983 (1983 / 1989 Freewheel).
 - **Brooks 1960-90** (B15 x4, CR3 x3; dates for 5303 / 5304 / 5310 / 5315 / 5282 / 10057): a 1970s UK retailer catalogue, or the saddlewax.com owner's 1971 price list and 1973 Raleigh saddle catalogue scans.
 
 ### Japanese and Taiwanese makers
 
 - **Shimano BB-UN73 (121):** find a dated 2002/2003 Shimano catalogue/service page confirming its introduction and a positive manufacturer discontinuation statement; reopen only with a new manufacturer-document lead. [Evidence and already-checked sources](.agents/skills/ingest-component-catalog/references/known-catalogs/shimano.md#bb-un73-unsupported-dating--evidence-review-2026-11-15).
-- **Tange headsets 1984-90** (TH-305 / 305C, TH-108, MES sealed, Unique X / Unique FE (bare Unique is now 11346), 230 SLP, MX 600M): Cycle Sports (Yaesu) parts directories on Yahoo Auctions Japan (1985, 1987, 1990; paid, also covers SR), retrobike "Tange Catalogues" archive (browser only), a 1985-90 US distributor catalogue; check the 1985-87 Trek, Puch and Panasonic fitment tables.
-- **Bars and stems 1985-92** (H.L. DR-8 / DR-9 / Dirtdrop / semi-rise / HS-P; SR MTB-220 / 224 / 227, CTR, CTSD; Kusuki KR-LB / SMC-F; ITM Mondial / Krono / Italia aero; Franco Italia; ATAX CTA randonneur; CMC-709 / MS-710): Brügelmann 1986-87 and 1989-92 (not online; ask the forum holders named in the log), an offline Taipei Cycle Show or Taiwan Bicycle Exporters' Guide. Check the Koga-Miyata 1986 p.19 Kusuki image and the Fuji 1988-91 transcriptions against scans (fitment leads in the log).
-- **MKS pedals and Kusuki bars / stems 1979-87** (Miyata: MKS QR-K1, AR-Road / AR-Road 2, PT-7, AR-5, NT-1, G-5000 (PB-100 is now 11345); Kusuki KR-LB, BMT-3-26, RK-90, Rocky 2; WP-B / WPR-B / KD-LB / BMT-II-26B / S-WIN / WIN Σ now have rows 11329-11334): acquire Cycle Sports (Yaesu) "オールカタログ" annuals c. 1980-88 (also cover SR); otherwise an MKS edition c. 1980 or 1986-87. [Hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
+- **Tange headsets 1984-90** (TH-305 / 305C, TH-108, MES sealed, Unique X / Unique FE (bare Unique is now 11346), 230 SLP, MX 600M): obtain the headset pages through the [Yaesu acquisition task](#yaesu-next-work), retrobike "Tange Catalogues" archive (browser only), or a 1985-90 US distributor catalogue; check the 1985-87 Trek, Puch and Panasonic fitment tables.
+- **Bars and stems 1985-92** (H.L. DR-8 / DR-9 / Dirtdrop / semi-rise / HS-P; SR MTB-220 / 224 / 227, CTR, CTSD; Kusuki KR-LB / SMC-F; ITM Mondial / Krono / Italia aero; Franco Italia; ATAX CTA randonneur; CMC-709 / MS-710): Brügelmann 1986-87 and 1989-92 (not online; ask the forum holders named in the log), an offline Taipei Cycle Show or Taiwan Bicycle Exporters' Guide. Reconcile Koga-Miyata 1986 p.19 BMT-3-26 / Rockey-2 with current rows and Miyata Rocky II / 2 fitment before proposing inserts or aliases; check the Fuji 1988-91 transcriptions against scans (fitment leads and verified Koga pages in the source-hunt log).
+<a id="yaesu-next-work"></a>
+
+- **Yaesu free-source recovery — deferred pending a new scan/holder lead:** seek freely available contents/index and SR / Tange / MKS / Kusuki pages from ALL CATALOG 84/85, the November 1985 parts manual or 実用カタログ’87 (November 1986). Reopen only for new free material; see the [2026-11-17 acquisition hunt](.agents/skills/ingest-component-catalog/references/source-hunts.md) for exact targets, holdings and exhausted searches. Paid acquisition is deferred by user preference.
 - **VP Components pedals c. 1984-90** (VP-230 / 330 / 331 / 333 / 382S / 389, VP500; 9 specs): a VP pedal catalogue or importer page c. 1989-90; VP needs a component_brand row first.
 - **Dia-Compe 1987-93** (BL-08 aero, 250S aero, GX-400 Aero lever 18835, DC 630, 983D brakes 22360 / 22462, 984 / 984D): retrobike threads 306479 and 361996 (a poster has the 1992 catalogue; browser only), eBay 800322888787 (1989/90 MTB brochure, photos not retrieved).
 - **Panasonic USA 1985-89 fitment evidence (read 2026-11-16, [panasonic.md](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md)):** decide, then prepare SQL for review:
@@ -378,7 +381,8 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 ### Archives with unread material
 
 - **velo-pages.com via Wayback** (`scripts/velo-pages-wayback.sh`, method in the log): SunTour advert 03-1975, Detto Pietro 1970s, Shimano Dura-Ace EX 1978, Stronglight 1958, Simplex and Barelli adverts, OMAS 1978 (item 12973), Sedis 1971; bike clusters Falcon Merckx 1973 / 1974, Original Plastic Bike 1973, Bottecchia 1973.
-- **bikalog.org:** bike catalogues not loaded (Koga Miyata 1980-2001, Nishiki 1987, Raleigh 1991, Colnago 1989 C35, Bianchi road 1985 / 1986); component PDFs ready to read: Universal 1996, Panaracer / Michelin / IRC 1999, Campagnolo 2001 and the 2000 Record 10-speed brochure.
+- **bikalog.org component inventory:** reconcile the Campagnolo 2001 range catalogue and Spare Parts & Tools book with the processed 2000 rows, and compare the 2000 Record 10-speed introduction with held evidence. Secondary: establish issuer/date and reconcile the Polish Michelin / IRC tyre sheets indexed 1999. See the free-component shortlist in the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
+- **bikalog.org bike-catalogue backlog:** review Koga Miyata 1980-2001, Nishiki 1987, Raleigh 1991, Colnago 1989 C35 and Bianchi road 1985 / 1986 for future bike ingestion.
 - **Palo Alto remaining identifications:** Regina chain / freewheel names, Fiamme / Super Champion clinchers and Sugino Maxy II; see `cross-catalog-notes.md`.
 
 ## Open: held-source follow-ups
