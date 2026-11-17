@@ -433,6 +433,21 @@
   (PC-110/150 new), WE-100 colour casing (new) and W- cables, outer
   bands, tools XA/XB/XC, small parts.
 
+## Dura-Ace EX introduction brochure — Wayback read 2026-11-17
+
+- Archive title: *Shimano Dura-Ace EX brochure (1978)*. Two original sheets recovered, **1275×1650** each: [6973](https://web.archive.org/web/20151208001923id_/http://www.velo-pages.com/main.php?g2_view=core.DownloadItem&g2_itemId=6973&g2_serialNumber=3), [6977](https://web.archive.org/web/20151208003436id_/http://www.velo-pages.com/main.php?g2_view=core.DownloadItem&g2_itemId=6977&g2_serialNumber=3). Their 495×640 display copies are6975/6979. Neither sheet prints a publication date or component part numbers; 1978 remains archive attribution. Neighbour6982 is a separate *Bicycle System Components* cover.
+- Fully read inventory (printed names; codes below are comparison candidates from the processed December1978 catalogue, not codes printed in this brochure):
+
+| Sheet | Category | Printed item | Supported specifications | Existing comparison candidates |
+| --- | --- | --- | --- | --- |
+| 6973 | Brakes | Dura Ace EX Brakeset | Reduced pivot-to-pad distance; triangular arm arch; pivot-bolt flats/star washer; horizontal-plane cam quick release. | 997 BA-200 / BR-7200 and 998 BA-220 / BR-7210; this sheet does not distinguish their reach. |
+| 6973 | Rear Derailleurs | Dura Ace EX Rear Derailleur | All alloy, 174g, 24T largest rear sprocket, 13T front difference; synchro-line cable control; 3/6mm Allen-head bolts; accepts six-speed block. | 4509 DA-200 / RD-7200 early version; do not transfer to late version 4508. |
+| 6977 | Cranksets | Dura Ace EX Crankset | 75-S duralumin chainrings, inner bridge removed; new rings fit earlier cranks; 39T inner through 55T outer. | 1828 GA-300 / FC-7200. |
+| 6977 | Front Derailleurs | Dura Ace EX Front Derailleur | Trapezoidal movement, solid steel cage plates, alloy body/hinge plate, right-side bolts; optional braze-on mounting. | 2518 EA-200 / FD-7200 and 2519 EA-210 / FD-7210; both mountings described, not one identity. |
+| 6977 | Brake Levers | Dura Ace EX Brake Levers | Smaller-hand shape, drilled wet-weather grip, Allen-bolt clamp assembly. | 439 MA-200 / BL-7200. |
+
+- Read-only source inventory; no live DB diff or changes. The processed December1978 catalogue already records the EX generation and code crosswalk below, so this recovery does not by itself establish new rows or justify altered production dates. Check current descriptions before proposing enrichment. Original scans remain in `/private/tmp/velo-pages-unread-2026-11-17/` for that comparison.
+
 ## Shimano "Bicycle System Components" — printed 12.1978 (disraeligears.co.uk, 76 images)
 
 - `data_source` 68. Source:

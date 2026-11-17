@@ -383,7 +383,19 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 ### Archives with unread material
 
-- **velo-pages.com via Wayback** (`scripts/velo-pages-wayback.sh`, method in the log): SunTour advert 03-1975, Detto Pietro 1970s, Shimano Dura-Ace EX 1978, Stronglight 1958, Simplex and Barelli adverts, OMAS 1978 (item 12973), Sedis 1971; bike clusters Falcon Merckx 1973 / 1974, Original Plastic Bike 1973, Bottecchia 1973.
+- **Velo-Pages recovered component scans:** inventory/reconcile Stronglight 1958,
+  Simplex and Barelli adverts, and OMAS
+  1978 printed p.4 (101/S Big Sliding hubs); compare the inventoried Dura-Ace EX
+  brochure with current descriptions. Triage the remaining Detto Pietro pages
+  for any supported component categories. Retain
+  `/private/tmp/velo-pages-unread-2026-11-17/` scans and capture inventories until
+  these reviews are complete, then clean up. See the [recovery and reading
+  evidence](.agents/skills/ingest-component-catalog/references/source-hunts.md#log).
+- **Velo-Pages remaining recovery:** seek a new readable scan/holder for Sedis
+  May 1971 (album 6165) and OMAS 1978's missing pages; check the recovery log
+  before repeating thumbnail-only queries. Recover the bike clusters
+  Falcon Merckx 1973 / 1974, Original Plastic Bike 1973 and Bottecchia 1973 using
+  `scripts/velo-pages-wayback.sh` and the source-hunt log before ingestion.
 - **bikalog.org component inventory:** reconcile the Campagnolo 2001 range catalogue and Spare Parts & Tools book with the processed 2000 rows, and compare the 2000 Record 10-speed introduction with held evidence. Secondary: establish issuer/date and reconcile the Polish IRC tyre sheets indexed 1999. See the free-component shortlist in the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - **bikalog.org bike-catalogue backlog:** review Koga Miyata 1980-2001, Nishiki 1987, Raleigh 1991, Colnago 1989 C35 and Bianchi road 1985 / 1986 for future bike ingestion.
 - **Palo Alto remaining identifications:** Regina chain / freewheel names, Fiamme / Super Champion clinchers and Sugino Maxy II; see `cross-catalog-notes.md`.
