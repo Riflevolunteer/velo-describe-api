@@ -1,5 +1,92 @@
 # Mavic catalogs processed so far
 
+## Hub description and rim overlap review — 2026-11-17
+
+Focused follow-up to the open audit actions; no DB changes applied. Read live
+rows and bike usage, source records, the current duplicate report, the original
+1986-87 / 90-91 hub tables, 1997 road/trekking rim spreads and 1996/1999 guide
+rim listings. This is not a new catalogue ingestion or approval of merges.
+
+### 3397 Mavic 500 RD — description correction pending approval
+
+[90/91 p.10](https://www.disraeligears.co.uk/site/00_main_images/mavic_trade_catalogue_9091_page_10_main_image.jpg),
+the row's cited source **121**, explicitly distinguishes front **500 RD**,
+100 mm, **230 g steel QR / 215 g alloy QR**, from rear **506 RD**, 126 mm,
+**280 / 260 g**. It describes polished forged dural, a light alloy axle and
+adjustable sealed cartridge bearings. [1986-87 p.16](https://www.disraeligears.co.uk/site/00_main_images/mavic_-_trade_catalogue_1986-1987_page_16_main_image.jpg),
+source **119**, gives the same weights and a footnote offering a 121 mm
+five-speed rear. Neither checked table calls 506 RD a pair code. The existing
+description's front 236/212 g and rear 286/261 g do not match its cited 90/91
+table; its separately listed 121 mm weights are not supported by those pages.
+
+Live before value, **3397**, brand 31, category 13, source_ref 121,
+title/search_text `Mavic 500 RD`, years 1975-1991:
+
+> Mavic 500 RD, France, 462 grams. Sealed adjustable annular-bearing hub, forged body, steel or dural QR. Front 100 mm 236/212 g; rear 5-sp 121 mm 275/250 g, 6/7-sp 126 mm 286/261 g. Pairs 505 RD, 506 RD.
+
+Proposed replacement, **231 characters**:
+
+> Mavic 500 RD, France, 462 grams. Forged polished-alloy body, alloy axle, adjustable sealed cartridge bearings. Steel/alloy QR: front 500 RD, 100 mm, 230/215 g; rear 506 RD, 126 mm, 280/260 g. A 121 mm 5-speed rear was also offered.
+
+The independent existing 462 g record is retained without inventing a skewer,
+front/rear or pair attribution. Correcting the catalogue specification does not
+establish what that specimen measurement represents. Preserve source_ref **121**,
+title/search_text, dates and both existing bike links **14700 / 15661**.
+Only description changes; no numbered hub insertion, rename or link correction.
+Restoration, only if deliberately justified: restore the exact old description
+above on 3397, guarded by title/brand/category/source and the exact new text.
+
+Prepared SQL, expected one row then zero on rerun, retained for approval at
+`/private/tmp/mavic-quality-20261117.vs57u6/pending-hub-description.sql`.
+Read-only preflight matched exactly the intended row and confirmed length 231
+within 255. Live readback also confirmed both Peugeot `Mavic 506 RD` specs still
+use 3397. No code change or test suite run needed for this text-only proposal;
+generator component matching reads ID/title/category, not description. After
+approval, readback/idempotency, link and quality validation remain required.
+
+### Rim overlaps — no merge proposed from this pass
+
+The [1997 maker catalogue](https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1997.html)
+spreads **3** (road) and **4** (MTB/trekking) distinguish tubular/clincher Reflex
+and CXP 30, list coating/colour options, and show T261 only in silver. Broad
+rows and finish-specific rows overlap in coverage, but that alone does not
+identify which record should absorb a construction or edition difference.
+
+**T261 9983 / 10182** needs a more specific crosswalk before merging:
+
+- [Guida '96 scan 16, printed p.119](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_16_main_image.jpg),
+  source **357**: T 261 Argent, 700C, **26 mm**, 540 g, 36/40/48 holes,
+  silver anodised, double stainless eyelets, hybrid/tandem use.
+- 1997 maker spread 4: T261, **23 mm in the profile drawing**, 540 g,
+  36/40/48 holes, recommended 28-35 mm tyres, double-wall profile, silver.
+- [Guida '99 scan 16, printed p.104](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_16_main_image.jpg),
+  source **353**: T 261 Argent, 622, **20 mm**, 540 g, 36/40/48 holes,
+  double wall/stainless eyelets, silver anodised, trekking/touring/tandem.
+
+10182 currently carries the 1999 20 mm/double-wall wording and a 1996-1999
+range but source_ref **357**. Thus the older-source attribution does not support
+all its description as written. Do not silently interpret 26/23/20 as outside
+versus inside measurements or assert a generation change; obtain a numbered
+profile/specimen crosswalk or manufacturer clarification first. Both rows have
+zero bike links; neither appears in generator overrides. Kept unchanged.
+
+Reflex **9975 / 10197 / 10198**, T217 **9981 / 10184 / 10185** and tubular CXP 30
+**5062 / 10199** also remain open for construction/edition reconciliation.
+Guida '96 scan 16 prints 22 mm for T217 whereas '99 scan 16 gives 17 mm;
+the '97 drawing gives 22 mm. Guida '96 scan 17 places CXP 30 in the tubular
+section but prints 520 g, unlike the maker's 465 g tubular / 520 g clincher.
+Guida '99 scan 17 separately lists the 465 g tubular. These conflicts need
+explicit reconciliation, not an automatic merge or a guessed measurement basis.
+No correction made to 10197's hard-anodised wording: Guida '99 scan 17 itself
+prints that wording for Argent, so it is not a proved transcription error.
+
+Current `duplicate-report --brand=Mavic` still gives 13 pairs (7 configuration,
+4 generation, 2 variant) and does not flag these broad/finish overlaps. Schema
+inspection found component_id only in component_detail and bike_spec; usage was
+checked, but no deletion is prepared. Original existing source files were left
+alone. Task-created downloads/indexes removed after recording URLs and findings;
+only the pending description SQL is retained. TODO records remaining actions.
+
 ## General quality audit — 2026-11-15 (read-only)
 
 Scope: all live Mavic components (brand 31), all their bike links, and all
