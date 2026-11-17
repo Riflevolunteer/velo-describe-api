@@ -1,12 +1,91 @@
 # Mavic catalogs processed so far
 
+## Mavic 192 availability — 2026-11-17, applied and validated
+
+Focused follow-up for previously undated **5050 Mavic 192**, UUID
+`9C8D3033-58F1-4595-A889-BD4C4E97D79D`, brand 31, category 16 (Rims), group
+NULL, source_ref **1**, title/search text `Mavic 192`, old description
+`Mavic 192, France`, year_from/year_to both **NULL**. No component image or
+explicit generator override; the existing exact model match supplies its link.
+
+The only live bike use is spec **1556**, bike **101**, **1993 Bianchi Eros**,
+Rims `Mavic 192`, source **47**, component **5050**. No other loaded spec names
+Mavic 192. Read the original [1993 USA Bianchi catalogue](https://cdn.shopify.com/s/files/1/0786/6705/5385/files/1993_Bianchi_catalog_-_USA.pdf?v=1751937419),
+**PDF p.22**, Eros **TIRES / RIMS** table: **Mavic 192 silver anodized**,
+paired with Bianchi Advantage-SL Road 700x28C tyres. The hub entry is RX100 32H.
+This confirms the existing model link and supplies positive **1993 availability**.
+It does not establish first manufacture or discontinuation. The table also notes
+650C wheels on the smallest frame sizes; do not infer a single wheel size for
+every Eros or use that footnote as a complete Mavic dimensional specification.
+Only the Eros rim entry was reviewed for this task, not all specifications.
+
+The original [VeloBase specimen listing](https://www.velobase.com/Pages/ViewComponent.aspx?ID=9C8D3033-58F1-4595-A889-BD4C4E97D79D)
+reports an aluminium 700c (622 mm) clincher, 19 mm outside width, single eyelets,
+32 holes and 611 mm ERD; its main photo visibly shows the **192** decal and
+single eyelets. It has no stated year. Retain dimensions/drilling as specimen
+facts, not facts printed by Bianchi. Do not infer years from decal styling, assert
+that Bianchi's 32H hub proves all 192 drillings, or copy the listing's seam-joint
+field without independent construction evidence. The photo URL is
+[the original uploaded specimen](https://www.velobase.com/CompImages/Rims/96962DBF-E69C-4299-8064-BA60EFFD834B.jpeg).
+
+Neighbouring **5049 190FB** and **5045 195NE** have distinct model numbers;
+no duplicate/merge is supported. The 192 is present as its own named model in
+both the specimen and the original bike table. No new component or finish-specific
+row is required, and a generic 192 record should not be retitled silver-only.
+
+Applied on explicit user approval with guarded transactional SQL:
+
+- **5050:** year_from/year_to **NULL/NULL -> 1993/1993**, source_ref **1 -> 47**,
+  retaining title, search text, UUID, category/group and the existing bike link.
+  Stored **141-character** description:
+
+  > Aluminium clincher road rim, offered in silver anodised. A 700c (622 mm) specimen has 19 mm outside width, single eyelets and 32 spoke holes.
+
+- **Source 47:** replaced its stale probable/truncated-download citation with the
+  recovered complete PDF URL and an explicit limited-verification statement:
+  Eros rim PDF p.22 and the previously verified Nth FS / Super Grizzly / Grizzly
+  rim entries pp.24–25. Other tables remain not fully checked. Preserve label
+  `1993 Bianchi catalogue`, country US and source ID. The replacement is **230
+  characters**, within the actual varchar(255) citation limit. Exact old citation:
+
+  > 1993_bianchi_spec.csv, probably from retrobike.co.uk/archive/1993-bianchi-catalogue.1672/ ("Catalogo Bianchi 1993.pdf"; not confirmed against the spec pages, download truncated)
+
+Read-only preflight matched exactly one component guard, one source guard and
+spec **1556** on the expected bike/value/source/target. Both replacement strings
+fit their 255-character fields. Approved transaction changed **one component
+and one source citation**; rerun changed **zero rows**. Exact live readback
+confirmed 1993/1993, source_ref 47, the 141-character component description and
+230-character citation. Every other component/source field and the complete
+Eros spec **1556 -> 5050** remained unchanged. No CSV, mapping or title changes.
+Source CSV still says `Mavic 192`; it correctly names the linked model, while
+the evidence here preserves the finish. Restoration, only if deliberately
+justified, uses the exact old component/citation above guarded by the applied
+new fields; retain 1556 -> 5050.
+
+Validation at **2026-11-17T11:50:16.235Z** compared all **96 loaded catalogue CSVs /
+21,176 paired specs**. Mappings were identical to baseline: 21,161 unchanged,
+zero gains or changed targets, the same 15 pre-existing losses and no missing
+or ambiguous identities. Whole-DB quality: **0 structural errors**,
+**1,951 review findings** (1,566 incomplete dates,
+326 linked date conflicts, 35 broad Freewheel labels,
+24 descriptions at limit). The **only** finding removed was 5050's
+incomplete-date flag; every other finding was identical to baseline. The named
+192 remains separate from 190FB and 195NE; no duplicate or component insertion.
+No code changed or generator SQL was invoked; direct readback, mapping comparison,
+quality and idempotency validated this data-only correction.
+
+Completed 192 application task removed from TODO; no production-boundary hunt
+was added without a new lead. Source URLs, exact old/new values and evidence limits
+remain here. Task-created SQL, scripts, baseline, original PDF download and
+Eros-page/specimen copies were removed after validation.
+
 ## Open Pro and 870 date review — 2026-11-17, applied and validated
 
 Focused review of live **5099 / 5100 / 10183 / 2409 / 2410**, their original
 specimen listings, and manufacturer evidence. None has bike links; none of
 these component IDs occurs in generator overrides or reviewed duplicate
-pairs. **5050 Mavic 192** still has one bike link and unknown dates; its sourcing
-remains a separate open action, outside this application.
+pairs. At this review, **5050 Mavic 192** had one bike link and unknown dates;
+the subsequent 192 review above documents the applied 1993 attestation.
 
 ### Supported correction: silver Open Pro 10183
 

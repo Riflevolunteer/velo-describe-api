@@ -46,8 +46,8 @@ Evidence and exact affected specs are in the
   broad tubular row 9975. See the [maker-source follow-up](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#rim-maker-source-follow-up--2026-11-17-applied-and-validated).
 - [ ] Find dated decal/finish evidence for Open Pro **5099 / 5100**, and a dated
   **31.8 mm 870** specification or boxed specimen for **2410**, before changing
-  their dates or merging identities. Source dates for the undated Mavic legacy
-  rows, prioritising linked **192 rim 5050**. See the [date review](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#open-pro-and-870-date-review--2026-11-17-applied-and-validated).
+  their dates or merging identities. Source dates for the remaining undated Mavic
+  legacy rows. See the [date review](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#open-pro-and-870-date-review--2026-11-17-applied-and-validated).
 
 ## Open: API and client
 

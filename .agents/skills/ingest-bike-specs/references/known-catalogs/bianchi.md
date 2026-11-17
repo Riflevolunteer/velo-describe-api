@@ -192,6 +192,16 @@
   Visually verified PDF pp.24–25 for Nth FS / Super Grizzly / Grizzly rim
   specifications. This supersedes the missing-table caveat for those three
   values only; other product tables still need comparison with the CSV.
+  **2026-11-17, Eros rim also visually verified on PDF p.22:** the table prints
+  `Mavic 192 silver anodized`, confirming spec **1556 -> 5050** and documenting
+  1993 availability for that otherwise undated model. Component dating/description
+  and source 47 citation corrections were applied on user approval and validated:
+  5050 now records 1993 availability, source 47, an enriched description; the
+  existing spec 1556 is unchanged. SQL rerun changed zero rows; all catalogue
+  mappings stayed unchanged and only 5050's incomplete-date finding disappeared.
+  See the [192 review](../../../ingest-component-catalog/references/known-catalogs/mavic.md#mavic-192-availability--2026-11-17-applied-and-validated).
+  This extends verification to this rim entry only, not every Eros field or every
+  catalogue table.
   Nth FS prints `Mavic 231 hard anodized` (5071 CD supported); Super Grizzly
   and Grizzly print `Mavic 231 silver anodized` (standard 8191, existing CD
   links wrong). The earlier finish stripping and all-three-CD mapping below
