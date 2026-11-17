@@ -60,6 +60,11 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Saddles
 
+- Guard added 2026-11-17: 1973 Peugeot PX 10 spec **7624**, `Brooks Professional
+  or Ideale 90`, stays NULL under an explicit generator override. This enforces
+  the existing either/or decision even when Brooks Professional 10057 is the
+  sole substring candidate; it does not choose one of the alternatives.
+
 - Leave unlinked: the Colnago Concor family (decided 2026-10-30); 1987 Peugeot Galaxie "Mondial silver" (Mundialita or an Iscaselle Mondial); the 1993 Bianchi house saddles (9200 supersoft, Hi-density, Gelfoam); 1982 Peugeot "Ideale 'Donna'" (no Donna row); "Viscount mtn / MTB anatomic" (5, maker only).
 - Left by user's call: 1994 Cinelli Genius Machine / Soft Machine "Bontrager Titanio" (5540 Selle San Marco Bontrager Ti is dated 1990 only) and "San Marco Rolls" on the 1994 Cinelli Supercorsa and 1991 Colnago x4 (5563 Rolls ends 1988; extending it would reverse the Colnago no-wrong-era decision); 1994 Genius Strada "San Marco Rolls Tit." (no titanium Rolls row). Either/or: "Selle Italia Super Turbo or Turbo", "Brooks Professional or Ideale 90", "Ideale 2002 or treated leather". No row: San Marco Tuono (1994 Cinelli), Bontrager E 40, Isca Record Lycra / Competition / Nabuk, Raleigh G.T. Mk IV / Mk V, Selle Royal Racing / Leather Racing.
 - Decided 2026-10-30, leave unlinked: Brooks B-15 / B15, 1970-72 Raleigh Super Course / Gran Sport [7819 9403 8958 8977] (every B15 row is 1950s-dated; needs a 1970s Brooks catalogue); bare "Concor" (16), "Concor Moda" (4) and "Concor in MODA grid colours" (3), 1986-88 Colnago: Concor is a family by 1985 (Supercorsa, Profil, Max, Bufalo, Confort, SL versions), not one model.
@@ -79,6 +84,12 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 - Decided 2026-10-30, leave unlinked: "Racing bend" / "Racing bend, light alloy", 1970-76 Peugeot x13 [7368 7507 7571 9539 9567 9698 9670 7274 7258 7314 7299 7448 7433] (no maker printed; 2901 Franco Belge 354 starts 1979); T.T.T. Record Competizione, 1978 Bianchi Campione del Mondo CX [12513] (DB splits it by bend: 2752 Gimondi / 2750 Merckx / 2777 TdF; none printed).
 
 ## Tyres
+
+- Guard added 2026-11-17: 1973 Zeus Z 66 spec **44**, `D'Alessandro Super-Cross
+  Tubulars`, stays NULL. The existing 11138 `D'Alessandro Super` is a grooved/mixed
+  tread tubular; no recorded evidence establishes Super-Cross as that model.
+  A substring alone does not justify dropping the Cross qualifier. Revisit with
+  an explicit maker model crosswalk or identifiable original fitment evidence.
 
 - **Intentional unlinked Ritmo identification (2026-11-14):** Raleigh
   specs 4536 / 4621 / 4669 name plain Clement Ritmo, without evidence identifying
@@ -129,6 +140,14 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 - Most unlinked Peugeot values name no model ("Double levers" 21, "Course levers" 13, "Weinmann" 8, "CLB" 7, "Drilled course levers with rubber hoods" 7, the 1987-88 "Road grips, double lever" strings): leave.
 - Leave unlinked: 1982 Peugeot "Mafac course (double cable on the right)" x2 (the plain "mafac course" override goes to 357 Course 419 / 429, but a two-cable lever may not be that part; not applied 2026-11-02); 1989 Bianchi "Shimano Sport LX aero" (BL-A450 / A451 / A452 / A453 all Exage Sport); 1982 Peugeot "Mafac Promotion" x3 (344 / 345 / 346 plus the dural Promotion = Course 130 decision) and "Mafac, drilled" x2; 1989 Bianchi "Dia-Compe 250S aero" (AC250 / AGC250, no 250S) and "SunTour XCE-4050" (455 is the Edge road lever); 1986 Raleigh "DC 630/165 (racing); DC 630/135 (touring)" (two levers in one cell).
+
+## Chains
+
+- Decided 2026-11-17: 1986 Falcon Sierra / Everest specs **16332 / 16352**,
+  `Black`, stay NULL. Colour alone establishes neither maker nor model. An
+  explicit Chains `black` NULL guard prevents the unique substring candidate
+  **10740 Sachs SC 40 Black** (1996) being assigned to these 1986 bikes.
+  Named chains such as SC 40 Black remain matchable by their actual names.
 
 ## Crankset
 

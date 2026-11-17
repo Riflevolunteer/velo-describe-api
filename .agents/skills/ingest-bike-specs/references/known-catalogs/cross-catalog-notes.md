@@ -743,3 +743,72 @@ application below.
   checks found **zero findings** on 1058 and all its linked specs. `npm test`
   passed all nine test files and `git diff --check` passed. Temporary SQL,
   comparison script and snapshots removed after validation.
+
+## TODO link drift review — 2026-11-17
+
+Bounded review of the open generator/live-DB drift task, using the maintained
+reports and existing catalogue decisions. No DB writes or component definition/date
+changes in this pass. Baseline quality report at 08:31 UTC: zero structural errors;
+1,948 review findings (1,563 incomplete dates, 326 linked date conflicts, 35 broad
+Freewheel labels and 24 descriptions at the field limit). These are dated findings,
+not proof that all stored identities are correct.
+
+Generator corrections:
+
+- Enforced existing NULL decision on Peugeot PX 10 saddle **7624**, `Brooks
+  Professional or Ideale 90`; added NULL guards on Zeus Z 66 tyre **44**,
+  `D'Alessandro Super-Cross Tubulars`, and Falcon chain specs **16332 / 16352**,
+  `Black`. Reasons are in `../link-decisions.md`. Suppressing these proposed
+  matches preserves the stored NULLs; no links were deleted.
+- Restored reviewed 1987 Peugeot tyre mappings: **15097, 15118, 15138, 15157,
+  15177, 15196, 15216, 15235, 15254, 15273, 15292 -> 9498 Hi-Lite Road**;
+  **15699 -> 6836 Hi-Lite Pro**; **15719 -> 6835 Hi-Lite Comp**. Exact wording
+  and 1987 scope distinguish these from the broader `Michelin Hi Lite` **10530**,
+  which made substring matching ambiguous. Existing Peugeot 1987 FR/US notes
+  record the named tyre identifications and source tables; no new model inferred.
+- Restored **2294 -> 4913 Ambrosio Montreal Durex**, exact 1986 Cinelli 840
+  SLX Competition wording. The original Cinelli notes explicitly record the
+  Durex match; broader `Ambrosio Montreal` **10606** must not displace it.
+- Restored **18750 -> 5899 Shimano SP-7200, Dura-Ace EX**, 1986 Team Miyata.
+  Later bike-scoped overrides omitted 1986, forcing NULL despite the prior
+  stored pick. Added 1986 to the existing Team Miyata range; other bikes remain
+  excluded. See Miyata's original 1986 pp.22-23 transcription/decisions.
+
+Validation: compared every loaded local CSV against one fixed read-only DB
+snapshot (96 catalogues, 21,176 uniquely paired specs). Exactly 19 generated
+mappings changed: four unsupported proposals became NULL; fifteen previously
+stored/reviewed links were reproduced again. Findings went from six gains / 33
+losses to two gains / 18 losses; zero changed targets, missing identities or
+ambiguous identities. Every remaining finding was identical to baseline.
+`npm test` passed all eleven test files, including regression cases for unique
+wrong candidates, broader competing titles and bike/year scope. SQL generation
+was not invoked; existing `bike-update.sql` was not overwritten.
+
+Remaining losses are unresolved identity questions, not approved removals:
+
+- **16 generic Huret Rival rear specs on 4401**: 13958, 14439, 14782, 14801,
+  15123, 15143, 15182, 15744, 15762, 8783, 8806, 16412, 16584, 16604, 16624,
+  16662. Earlier/later bodies and cage variants remain distinct. Preserve stored
+  links pending the manufacturer/photo review documented in Huret's generic-link
+  review; do not force the matcher back onto 4401 merely to eliminate drift.
+- **12943**, 1982 Battaglin Alessandro `Nisi Corsa`: 5131 versus later 10608
+  Corsa Toro constructions; plain Corsa does not establish eyelets/construction.
+- **19546**, 1991 Bianchi Grizzly `SunTour XC-Pro`: stored 3628 is a threaded
+  rear freewheel hub, whereas this bike's cluster is mapped as a cassette.
+  Establish the actual front/rear hub/freehub configuration before correction.
+
+Two proposed NULL backfills are prepared, **not applied**:
+
+- **59 -> 11136**, Zeus Z 59, `D'Alessandro Mondiale Tubulars`: exact named
+  model, compatible 1973 availability (Brügelmann 1973, source 399); no competing
+  Mondiale component row. Bike provenance is Zeus No.102 (1973), source 33.
+- **18873 -> 11151**, 1986 Miyata Pista, `SUGINO Astron track 50 teeth`:
+  implements the existing Astron generator/catalogue decision and pending Nashbar
+  follow-up. The row already spans 1981-1986; no date extension required.
+
+Guarded transactional SQL with expected counts, old values and restoration
+instructions is retained at
+`/private/tmp/velo-quality-20261117.vcDEoq/pending-bike-links.sql` for review and
+application. TODO keeps this pending action open; rerun/readback and scratch
+cleanup remain required after approval. Baseline/comparison scratch was removed
+after validation; the SQL is the only retained task scratch file.

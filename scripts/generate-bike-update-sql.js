@@ -2778,6 +2778,7 @@ const COMPONENT_OVERRIDES = {
     'sella italia turbo': [{ from: 1980, to: 1990, id: 5508 }], // 1985 Peugeot PY 10 FC (p. 3 caption)
     'selle royal': null, // 1981 Kalkhoff: brand only (brand row 5521 deleted 2026-10-23)
     'ideale 2002 or treated leather': null, // 1976 PY 10: either / or, as the 1973 PX 10 either/or saddle (left unlinked)
+    'brooks professional or ideale 90': null, // 1973 PX 10: two alternatives, not a Brooks Professional identification (spec 7624).
     // 1987 Raleigh Randonneur 18: "Brooks Professional, honey finish, pre-softened" -> 5295 Brooks Professional pre-softened (velobase dates the row 2000, treated as a misdate; the catalogue itself shows the saddle in 1987).
     'brooks professional honey finish pre softened': [{ from: 1987, to: 1990, id: 5295 }],
     // 1987 Raleigh (UK): brand + descriptor only; the matcher falls back to the bare Selle Royal brand row (5521).
@@ -3937,7 +3938,7 @@ const COMPONENT_OVERRIDES = {
     'sr ct p5e 220mm': 11316, // 1985 Miyata: SR CT-P5E, Custom-P5E (separate code from CT-P5; Panasonic USA 1985-87, source 417)
     'sr custom p5e': 11316, // 1984 Miyata Street Runner: SR CT-P5E, Custom-P5E
     'sr custom p6': [{ bike: '210', from: 1984, to: 1984, id: 5861 }, { bike: 'Terra Runner', from: 1984, to: 1984, id: 5861 }, { bike: '110', from: 1984, to: 1984, id: 5861 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
-    'shimano dura ace ex': [{ bike: 'Carbon Tech 5000', from: 1987, to: 1987, id: 5899 }, { bike: 'Carbon Tech 3000', from: 1987, to: 1987, id: 5899 }, { bike: 'Team Miyata', from: 1987, to: 1987, id: 5899 }, { bike: 'Team Miyata', from: 1985, to: 1985, id: 5899 }, { bike: 'Team Pista', from: 1985, to: 1985, id: 5899 }, { bike: 'Team Miyata', from: 1984, to: 1984, id: 5899 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
+    'shimano dura ace ex': [{ bike: 'Carbon Tech 5000', from: 1987, to: 1987, id: 5899 }, { bike: 'Carbon Tech 3000', from: 1987, to: 1987, id: 5899 }, { bike: 'Team Miyata', from: 1986, to: 1987, id: 5899 }, { bike: 'Team Miyata', from: 1985, to: 1985, id: 5899 }, { bike: 'Team Pista', from: 1985, to: 1985, id: 5899 }, { bike: 'Team Miyata', from: 1984, to: 1984, id: 5899 }], // Restore the reviewed 1986 Team Miyata SP-7200 pick (spec 18750); see known-catalogs/miyata.md.
     'sr custom p6 alloy 268 dia x 180mm': [{ bike: '610', from: 1982, to: 1982, id: 5861 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
     'sr custom p6 268 dia x 180mm anodized alloy milled part black': [{ bike: '710', from: 1982, to: 1982, id: 5861 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
     'sr custom p6 length: 180mm anodized alloy black': [{ bike: '710', from: 1981, to: 1981, id: 5861 }], // 1981 Miyata: printed component; see known-catalogs/miyata.md.
@@ -4112,6 +4113,7 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    'black': null, // Colour alone names no maker/model; 1986 Falcon specs 16332/16352 must not inherit 1996 Sachs SC 40 Black.
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "sedisport chain": [{ from: 1984, to: 1984, id: 8765 }],
     "sedisport silver chain": [{ from: 1984, to: 1984, id: 8765 }],
@@ -4569,6 +4571,7 @@ const COMPONENT_OVERRIDES = {
     'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
+    "d'alessandro super cross tubulars": null, // 1973 Zeus Z 66: Super-Cross is not established as plain Super (11138); spec 44 stays unidentified.
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "lc 40: hutchinson corsa senior tubulars; lc 41: michelin bib ts 20": [{ bike: "Le Champion", from: 1984, to: 1984, id: null }],
     "pl 40: hutchinson corsa senior tubulars; pl 41: michelin bib ts 20": [{ bike: "Prolight", from: 1984, to: 1984, id: null }],
@@ -4621,6 +4624,10 @@ const COMPONENT_OVERRIDES = {
     'michelin "hi lite pro" 700x20c': [{ bike: 'PSN 10 Mont Cenis', from: 1987, to: 1987, id: 6836 }], // Original US p.5 confirms 700x20C; replaces the 700x70C [?] transcription (2026-11-14).
     'michelin hi lite comp 700 x 20c': 6835, // 1986 Peugeot (US) table Galibier
     'michelin hi lite pro 700 x 20c': 6836, // 1986 Peugeot (US) table Mont Cenis; earlier fitment confirmed 2026-11-14.
+    // Preserve reviewed 1987 Peugeot matches when the broader Michelin Hi Lite (10530) also substring-matches.
+    'michelin hi lite road 700 x 20 c': [{ from: 1987, to: 1987, id: 9498 }],
+    '700x19 michelin hi lite pro': [{ bike: 'Triathlon', from: 1987, to: 1987, id: 6836 }],
+    '700x20c michelin hi lite comp': [{ bike: 'Galaxie', from: 1987, to: 1987, id: 6835 }],
     'michelin hi lite road 700 x 23c': 9498, // 1986 Peugeot (US) table Triathlon / Ventoux; earlier fitment confirmed 2026-11-14.
     'michelin hi lite road 27 x 1 1 8"': 9498, // 1986 Peugeot (US) Tourmalet
     // 1975 Motobecane Le Champion: the only Gran Turismo tubular row (judgement call 2026-10-30; maker not printed).
@@ -4688,6 +4695,7 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    'ambrosio montreal durex tubular': [{ bike: '840 SLX Competition', from: 1986, to: 1986, id: 4913 }], // Reviewed Cinelli pick; broad Montreal 10606 does not identify the Durex version.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'rigida 13 20 alloy': [{ from: 1978, to: 1978, id: 9894 }],
     'weinmann 124 a': [{ from: 1978, to: 1978, id: 7776 }],

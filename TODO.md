@@ -18,9 +18,17 @@ after validation; retain what is still needed for unfinished work or review.
 
 - [ ] **Review generator/live-DB link drift:** use
   `node scripts/compare-bike-links.js --json` and the recorded link decisions
-  before changing mappings. Prioritise proposed matches for either/or saddle
-  spec 7624 and D'Alessandro tyre specs 44 / 59; reconcile stored links absent
-  from generator output against the relevant catalogue notes.
+  before changing mappings. Identify the generation/cage of generic Huret Rival
+  rears still on 4401 (see the Huret generic-link review); establish the Nisi
+  Corsa construction for Battaglin spec 12943; reconcile Bianchi Grizzly hub
+  spec 19546's rear-freewheel-hub link 3628 with its cassette specification.
+  See the [bounded review](.agents/skills/ingest-bike-specs/references/known-catalogs/cross-catalog-notes.md#todo-link-drift-review--2026-11-17).
+- [ ] **Review and apply pending bike links:** Zeus Z 59 tyre spec 59 -> 11136
+  D'Alessandro Mondiale; 1986 Miyata Pista crank spec 18873 -> 11151 Sugino
+  Astron. Guarded SQL awaits approval in
+  `/private/tmp/velo-quality-20261117.vcDEoq/pending-bike-links.sql`; retained
+  for review/application. Verify expected affected rows, rerun for idempotency,
+  then rerun quality/link reports and remove the temporary SQL after validation.
 - [ ] **Persist link decisions and evidence:** distinguish confirmed, inferred,
   ambiguous, missing-source and intentionally unlinked cases so they can be
   revisited deliberately. Today `COMPONENT_OVERRIDES` `null` entries live only in
@@ -263,7 +271,7 @@ Keep the compound 1989 Bianchi "Vittoria Formula 1 and Juniore tubulars"
 ### Crankset
 
 - Find period identity/configuration evidence for Peugeot New Success crank specs **15100** (1987) and **17498** (1989); compare with the later Campagnolo-made Sachs 1730 before proposing a row or link. See the [Sachs Huret audit](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#sachs-huret-brand-quality-audit--2026-11-16-read-only).
-- No suitable row: the rest of the SR 1986 crank range (SAC-100 / SAC-T310, SUC-310 / SUC-100 / SUC-T310, FX-T310 / FXC T310 / T301, AXC T301 / T310, CXC 101, CRCT310, CTC 612; SAC-310, SXC(-T)310, CTC-5SG / 532 / 680 and CXC-300 now have rows 11317-11323; 1986 Falcon / Raleigh / Miyata and 1989 Bianchi; the same mid-1980s SR catalogue gap as the seatposts and stems); Sugino TVP, TNFVP, AL-WB, LP, XE300, Astron track and the 1981 Bianchi "Sugino Corsa" sets; Ofmega Premier (2), Nuovo Competizione, Junior (and Super Corsa MC-130, already listed); Stronglight 5470 (2, 1983 Peugeot); Haubtmann 100 / triple (3, 1986-88 Peugeot); Peyrard 3020 (3, 1984 Peugeot; probably the Nervar 3020); Gipiemme America 87; Thun Gamma Gold.
+- No suitable row: the rest of the SR 1986 crank range (SAC-100 / SAC-T310, SUC-310 / SUC-100 / SUC-T310, FX-T310 / FXC T310 / T301, AXC T301 / T310, CXC 101, CRCT310, CTC 612; SAC-310, SXC(-T)310, CTC-5SG / 532 / 680 and CXC-300 now have rows 11317-11323; 1986 Falcon / Raleigh / Miyata and 1989 Bianchi; the same mid-1980s SR catalogue gap as the seatposts and stems); Sugino TVP, TNFVP, AL-WB, LP, XE300 and the 1981 Bianchi "Sugino Corsa" sets; Ofmega Premier (2), Nuovo Competizione, Junior (and Super Corsa MC-130, already listed); Stronglight 5470 (2, 1983 Peugeot); Haubtmann 100 / triple (3, 1986-88 Peugeot); Peyrard 3020 (3, 1984 Peugeot; probably the Nervar 3020); Gipiemme America 87; Thun Gamma Gold.
 
 ### Brakes
 
@@ -383,7 +391,6 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 - **Nashbar 1988 follow-ups after the 2026-11-16 link pass** ([notes](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md)):
   - Decide: Sakae Custom P5 (p.53, "fluted pillar, micro-adjust, 6 mm Allen bolt") vs the 1987 Raleigh "Sakae fluted alloy, single Allen bolt" seatposts (5857 CT-P5 covers 1980-89; identity call). Sakae MTE (p.53, 300 mm) vs MTE-110. Sakae CRE seatpost on the 1988 Nashbar 4050 road bike (bare CRE stays unresolved).
   - Recheck the widened rows against their unlinked specs: SunTour Ole (4752 / 2638 / 6289 / 3133 / 1985, now from 1988); Dia-Compe 8082 GX-N and 678 G-N (to 1988) vs the 1986 Miyata "GX-400 Aero" lever and the 1987 Miyata "DC-983D" brakes (662 is bare 983).
-  - Apply the pending override 'sugino astron track 50 teeth' -> 11151 on the 1986 Miyata Pista (spec 18873, still NULL; left out of the Nashbar pass).
 - **Load the 12 Nashbar 1988 house bikes (pp.30-40) with `ingest-bike-specs`:** transcriptions in the session scratchpad `nashbar88/out/bikes.json` will not survive; re-read the pages from the logged download. Decide first whether Nashbar is a bike brand. The specs name further gap parts: SR MTS-300 / MTS-130 stems, SR 104 bar, MKS MR-1000, Tange FL-270S, Shimano AT-55, Specialized Lamda saddle, Panaracer Ridge Line III, Kusuki Ole stem, Dia-Compe 983D / N500A / 290 levers.
 - **Other US dealer / mail-order catalogues 1985-92 (Performance, later Nashbar issues, QBP, J&B, Colorado Cyclist):** no script-readable scans. Next leads are browser-only: bikeforums thread 1214636 (Performance Fall/Winter 1985-86), the bikeforums "Official Vintage Bicycle Manufacturer Catalog List", retrobike thread 431743, and the disraeligears La Bicicletta Guida '87 / '89-'95 index.
 
