@@ -43,20 +43,13 @@ after validation; retain what is still needed for unfinished work or review.
 Evidence and exact affected specs are in the
 [Mavic audit](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#general-quality-audit--2026-11-15-read-only).
 
-- [ ] Review/apply 3397's source-verified hub description correction: identify
-  front 500 RD / rear 506 RD, correct their steel/alloy-QR weights, and remove
-  the unsupported pair wording. Guarded SQL awaits approval at
-  `/private/tmp/mavic-quality-20261117.vs57u6/pending-hub-description.sql`, retained
-  for review/application. Verify one changed row, readback and zero-change rerun,
-  check the existing bike links and quality report, then remove temporary SQL.
-  See [source comparison and old/new wording](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#hub-description-and-rim-overlap-review--2026-11-17).
 - [ ] Reconcile the Reflex, T217, T261 and CXP 30 broad/finish rim rows listed
   in the audit against the 1996/1997/1999 scans and the variant policy; prepare
   supported merges or narrower descriptions after establishing identity. Resolve
   T261 widths (1996 guide 26 mm / 1997 maker drawing 23 mm / 1999 guide 20 mm)
   and 10182's mixed-edition description/source before merging it with 9983;
   establish whether the differences reflect measurement basis, print errors or
-  a different construction. See the source comparison linked above.
+  a different construction. See the [source comparison](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#hub-description-and-rim-overlap-review--2026-11-17).
 - [ ] Verify Open Pro dates/identities 5099 / 5100 / 10183 and the 31.8 mm
   870 front derailleur 2410 against maker/specimen evidence; source dates for
   the undated legacy rows listed in the audit, prioritising linked 192 rim 5050.

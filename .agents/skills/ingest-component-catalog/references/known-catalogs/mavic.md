@@ -2,12 +2,13 @@
 
 ## Hub description and rim overlap review — 2026-11-17
 
-Focused follow-up to the open audit actions; no DB changes applied. Read live
+Focused follow-up to the open audit actions. Initial review made no DB writes;
+the approved description correction below is now applied and validated. Read live
 rows and bike usage, source records, the current duplicate report, the original
 1986-87 / 90-91 hub tables, 1997 road/trekking rim spreads and 1996/1999 guide
 rim listings. This is not a new catalogue ingestion or approval of merges.
 
-### 3397 Mavic 500 RD — description correction pending approval
+### 3397 Mavic 500 RD — description correction applied, user approved
 
 [90/91 p.10](https://www.disraeligears.co.uk/site/00_main_images/mavic_trade_catalogue_9091_page_10_main_image.jpg),
 the row's cited source **121**, explicitly distinguishes front **500 RD**,
@@ -24,25 +25,29 @@ title/search_text `Mavic 500 RD`, years 1975-1991:
 
 > Mavic 500 RD, France, 462 grams. Sealed adjustable annular-bearing hub, forged body, steel or dural QR. Front 100 mm 236/212 g; rear 5-sp 121 mm 275/250 g, 6/7-sp 126 mm 286/261 g. Pairs 505 RD, 506 RD.
 
-Proposed replacement, **231 characters**:
+Applied replacement, **231 characters**:
 
 > Mavic 500 RD, France, 462 grams. Forged polished-alloy body, alloy axle, adjustable sealed cartridge bearings. Steel/alloy QR: front 500 RD, 100 mm, 230/215 g; rear 506 RD, 126 mm, 280/260 g. A 121 mm 5-speed rear was also offered.
 
 The independent existing 462 g record is retained without inventing a skewer,
 front/rear or pair attribution. Correcting the catalogue specification does not
-establish what that specimen measurement represents. Preserve source_ref **121**,
+establish what that specimen measurement represents. Preserved source_ref **121**,
 title/search_text, dates and both existing bike links **14700 / 15661**.
-Only description changes; no numbered hub insertion, rename or link correction.
+Only description changed; no numbered hub insertion, rename or link correction.
 Restoration, only if deliberately justified: restore the exact old description
 above on 3397, guarded by title/brand/category/source and the exact new text.
 
-Prepared SQL, expected one row then zero on rerun, retained for approval at
-`/private/tmp/mavic-quality-20261117.vs57u6/pending-hub-description.sql`.
 Read-only preflight matched exactly the intended row and confirmed length 231
-within 255. Live readback also confirmed both Peugeot `Mavic 506 RD` specs still
-use 3397. No code change or test suite run needed for this text-only proposal;
-generator component matching reads ID/title/category, not description. After
-approval, readback/idempotency, link and quality validation remain required.
+within 255. Approved transactional SQL changed **one component row**; second run
+changed **zero**. Readback confirmed the exact 231-character value, source 121,
+title/search_text, 1975-1991 dates and both Peugeot `Mavic 506 RD` links
+**14700 / 15661 -> 3397** unchanged. Quality report at **09:08 UTC** found zero
+structural errors and the same 1,948 review findings by check (1,563 incomplete
+dates, 326 linked date conflicts, 35 broad Freewheel labels, 24 descriptions at
+limit). No code change or test suite run needed for this text-only update;
+generator component matching reads ID/title/category, not description, so no
+regeneration required. Completed task removed from TODO and temporary SQL removed
+after validation. The rim identity questions below remain open.
 
 ### Rim overlaps — no merge proposed from this pass
 
@@ -84,8 +89,8 @@ Current `duplicate-report --brand=Mavic` still gives 13 pairs (7 configuration,
 4 generation, 2 variant) and does not flag these broad/finish overlaps. Schema
 inspection found component_id only in component_detail and bike_spec; usage was
 checked, but no deletion is prepared. Original existing source files were left
-alone. Task-created downloads/indexes removed after recording URLs and findings;
-only the pending description SQL is retained. TODO records remaining actions.
+alone. Task-created downloads/indexes and applied SQL removed after recording
+URLs, findings and validation. TODO records remaining identity actions.
 
 ## General quality audit — 2026-11-15 (read-only)
 
@@ -211,11 +216,13 @@ and downloaded page copies were removed after recording the source URLs here.
   overrides do not match other bikes/years. `npm test` passed all nine test
   files and `git diff --check` passed. Temporary SQL/comparison files removed
   after validation.
-- Separate description issue noticed during identification: 3397 currently
-  ends `Pairs 505 RD, 506 RD.` The 1986–87 table labels 506 RD as the rear,
-  so that wording needs a source-aware review; it is not grounds to create a
+- Separate description issue noticed during identification: 3397 then
+  ended `Pairs 505 RD, 506 RD.` The 1986–87 table labels 506 RD as the rear,
+  which prompted a source-aware wording review; it was not grounds to create a
   duplicate hub row. Component-description changes were not part of the
-  approved link repair and remain open.
+  approved link repair. The subsequent user-approved 2026-11-17 description
+  correction above resolves the wording and source-weight discrepancies;
+  the two bike links remain unchanged.
   Downloaded HTML/scans and temporary image indexes were removed after recording
   evidence; the SQL retained for approval was removed after application.
 
