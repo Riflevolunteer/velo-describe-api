@@ -111,3 +111,14 @@ evidence remains open. Temporary SQL removed after validation.
   The July 1984 Bicisport advert was inspected; its text names component
   brands without a bike model, so no bike was created from it:
   https://www.disraeligears.co.uk/site/bicisport_1984_july_-_battaglin.html.
+
+
+## 1982 Super Record rear link — 2026-11-17, applied and validated
+
+User approved **12880**, Campagnolo model, source 268: **4149 → NULL**. The printed
+family name `Campagnolo Super Record` does not identify late first-generation PAT.80
+specimen 4149 rather than second-generation 4151. Generator guard prevents
+reassignment; text/raw label/source remain unchanged. No forced replacement link
+or CSV change. Reopen only with distinguishing original fitment evidence. See the
+[component review](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#super-record-and-early-campagnolo-specimen-review--2026-11-17)
+for source photographs, the full correction set and successful live validation.

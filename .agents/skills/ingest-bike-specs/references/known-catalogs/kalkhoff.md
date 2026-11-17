@@ -18,7 +18,8 @@
   brand and group), so nothing Shimano links by substring — every Dura-Ace EX
   and 600 AX part is an override. "Shimano 600 AX" otherwise substring-hits
   plain "Shimano 600" (wrong).
-- 1981 choices: Super Record rear → 4001 PAT. 80, front → 1052/SR, brakes →
+- Original 1981 choices (rear 4149 superseded below): Super Record rear →
+  4001 PAT. 80, front → 1052/SR, brakes →
   4061 v1, headset → 4041, bottom bracket → 4031 second gen (bare substring
   hit a titanium 1st-gen row), seat post → 4051 Campagnolo Script, pedals →
   4021 Strada, crank → 1049/A; Cinelli "Super Record" stem → 1R (1/Record);
@@ -33,3 +34,14 @@
   Tange, Maillard, SunTour hubs/pedals, tyres, "SR" stems. Toe Clips has no
   component category.
 
+
+
+## 1981 Super Record rear link — 2026-11-17, applied and validated
+
+User approved **782**, Professional 13 S, source 41: **4149 → NULL**. Generic
+`Campagnolo Super Record` does not establish the late first-generation PAT.80
+specimen rather than second-generation 4151. This supersedes the earlier year-based
+pick; text/raw label/source remain unchanged. The generator guard prevents
+reassignment, pending distinguishing original fitment evidence. See the
+[component review](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#super-record-and-early-campagnolo-specimen-review--2026-11-17)
+for source photographs, the full correction set and successful live validation.

@@ -2,6 +2,21 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('generic 1980-83 Super Record rear specs cannot select the atypical PAT. 80 specimen', () => {
+  const early = { component_id: 4149, title: 'Campagnolo 4001, Super Record, PAT. 80 (first generation)', category: 'Rear Derailleurs' }
+  const later = { component_id: 4151, title: 'Campagnolo 4001, Super Record (2nd gen, ver.1)', category: 'Rear Derailleurs' }
+  for (const records of [[early], [later], [early, later]]) {
+    for (const value of ['Campagnolo Super Record', 'Campagnolo Super Rekord']) {
+      for (const year of [1980, 1981, 1982, 1983]) {
+        assert.equal(matchComponent(value, records, null, 'Rear Derailleur', year, 'Super Corsa'), null)
+      }
+      assert.equal(matchComponent(value, records, null, 'Rear Derailleur', 1979, 'Other').component_id, 4148)
+      assert.equal(matchComponent(value, records, null, 'Rear Derailleur', 1984, 'Other').component_id, 4152)
+      assert.equal(matchComponent(value, [], null, 'Front Derailleur', 1981, 'Other').component_id, 2313)
+    }
+  }
+})
+
 test('1987 Bianchi C-Record cranks require generation evidence even with a unique candidate', () => {
   const early = { component_id: 1483, title: 'Campagnolo C-Record', category: 'Cranksets' }
   const late = { component_id: 1482, title: 'Campagnolo C-Record (1987-1994)', category: 'Cranksets' }

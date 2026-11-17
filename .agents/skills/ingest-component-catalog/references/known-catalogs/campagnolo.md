@@ -1510,3 +1510,98 @@ All new rows have the catalogue-attested range 2000–2000 (availability, not pr
   for the repaired local CSV, generator and eight spec updates (including the other three chains
   affected by the same transcription). Rerun zero, exact readback, unchanged unrelated link drift,
   zero integrity errors. The 1483 component enrichment above remains applied and validated.
+
+
+## Super Record and early Campagnolo specimen review — 2026-11-17
+
+User approved, applied and validated 2026-11-17. Scope: TODO specimens 4149 / 4151,
+modified 4153 and bare 4077, with adjacent first-generation 4148 checked for context.
+Retain all four stable identities; 4149 and 4151 are different constructions, not
+duplicates. The pair is registered in `duplicate-classify.js` so later comparisons
+preserve the decision. No merge/delete or new source/component was needed.
+
+Evidence is source 1's original specimen pages and full-size owner photographs:
+
+| ID / retained VeloBase GUID | Evidence and decision |
+| --- | --- |
+| 4149 / D505A6CB-2FFC-46C6-BE6B-EB4697DD9FE1 | [Original page](https://velobase.com/Pages/ViewComponent.aspx?ID=D505A6CB-2FFC-46C6-BE6B-EB4697DD9FE1). Main `050D9FB8-0F48-43C9-88A3-22283202D604.jpeg`, reverse `FD73D676-0E20-40F3-8F10-F25A91EACF49.jpeg`: textured CAMPAGNOLO SUPER RECORD outer link and older cage, unlike 4151's signature plate. Owner explicitly describes an unmodified late PAT. 80 example of the older design. Retain as the separately recorded atypical dated specimen, in the same first-generation family as 4148, not a universal 1980–1983 variant. |
+| 4151 / 72C70FC7-3747-41AC-BFEE-0F6B61BFF558 | [Original page](https://velobase.com/Pages/ViewComponent.aspx?ID=72C70FC7-3747-41AC-BFEE-0F6B61BFF558). Main `863CAB5D-9B6A-46C0-A19A-5126A859E921.jpeg`, detail `5A25403E-D9D3-4D11-B54F-0EEA2D57741E.jpeg`: signature-logo outer link, revised cage, replaceable spring anchored by a screw. Model field 4001 / 0102018. Keep distinct from 4149; do not infer a new date boundary. |
+| 4153 / A56155ED-FC6C-456B-8812-0A4C72EDA55B | [Original page](https://velobase.com/Pages/ViewComponent.aspx?ID=A56155ED-FC6C-456B-8812-0A4C72EDA55B). Owner describes a Cicli Bombardieri clearance-screw modification for sprockets over 28T, actual 185 g. The current page has **no specimen photo** (`NoImgs.jpg`); attribution is reported, not visually confirmed in this pass. Retain the documented modified specimen separately from standard stock parts. The source only says early–late 1980s; that does not establish exact manufacture/modification dates. |
+| 4077 / 1E3E59A9-E17C-4953-BA6A-DEBE661F7284 | [Original page](https://velobase.com/Pages/ViewComponent.aspx?ID=1E3E59A9-E17C-4953-BA6A-DEBE661F7284). Main `748AE033-6D7B-407B-8726-850E15B40F2D.jpeg`, reverse `8B0D6B76-414E-44DE-B760-B06A82494C62.jpeg`: CAMPAGNOLO outer link, plain inner link/cage and different adjustment screws. Owner reports one replaced pulley. This is a photographed identity, not a placeholder to delete or automatically merge into Gran Sport 4118 / Record 4131. Source says 1963–unknown, not a 1963 production end. Its material field is disputed in the page's pending report; do not repeat the aluminium claim. |
+
+Photo URLs are `https://velobase.com/CompImages/RDerailleur/<filename>` above.
+4148's context page, GUID `730A5EB4-32A7-467E-B519-70AC5DAB88B6`, describes the
+ordinary first-generation family. Its 1974–1979 metadata does not disprove the
+separately photographed late PAT. 80 specimen. Broader web searches surfaced
+collector histories and another PAT.80 specimen of the later design; they do not
+replace these original rows' own photographs or prove a universal generation from
+the date stamp. No new exact introduction/discontinuation date is asserted.
+
+Applied metadata corrections (all retain brand 11, category 15, source_ref 1,
+source_id above and original group assignments: NULL for 4077; 16 for the others):
+
+| ID | Old title / description | Applied title / description | Date correction |
+| --- | --- | --- | --- |
+| 4077 | Title `Campagnolo "Campagnolo" model`; description `Campagnolo "Campagnolo" model, Italy` | Same title; `Gran Sport-style rear derailleur with CAMPAGNOLO on the outer link, unmarked inner link and cage, and different adjustment screws. The photographed specimen has one replacement pulley.` | year_from 1963 retained; year_to 1963 → NULL (source explicitly unknown). |
+| 4149 | Title `Campagnolo 4001, Super Record, PAT. 80`; description `Campagnolo 4001, Super Record, PAT. 80, Italy, 184 grams (Actual)` | Title `Campagnolo 4001, Super Record, PAT. 80 (first generation)`; description `First-generation Super Record specimen with textured CAMPAGNOLO SUPER RECORD outer plate and earlier cage profile; B-knuckle stamped PAT. 80. 184 g (actual).` | year_from 1980 retained as specimen dating; unsupported year_to 1983 → NULL. |
+| 4151 | Title `Campagnolo 4001, Super Record (2nd gen, ver.1)`; description `Campagnolo 4001, Super Record (2nd gen, ver.1), Italy, 180 grams` | Same title; `Second-generation Super Record with signature-logo outer plate, revised pulley cage and bolt-mounted replaceable parallelogram spring. Model 4001 / 0102018; 180 g.` | Existing 1978–1984 retained, not independently redated. |
+| 4153 | Title `Campagnolo Super Record 4001, Modified Cicli Bombardieri`; description `Campagnolo Super Record 4001, Modified Cicli Bombardieri, Italy, 185 grams (Actual)` | Same title; `Reported Cicli Bombardieri modification: added adjustment screw increases pulley-to-sprocket clearance for climbing sprockets over 28T. 185 g (actual). Modification date unverified.` | 1980–1980 → NULL/NULL; the source gives only decade buckets. |
+
+4149's retitle also recomputes search_text with `scripts/search-text.js`, which
+retains the original `Campagnolo 4001 Super Record PAT. 80`. Descriptions are
+184 / 157 / 163 / 181 characters respectively. Measured weights and all stable
+identifiers survive. No component row is added or removed.
+
+Bike-link follow-through: earlier ingestion notes selected 4149 from the general
+1980–1983 year override. None of these stored values identifies PAT. 80 or the
+photographed first-generation configuration. Applied **4149 → NULL**, preserving
+the unresolved generation instead of selecting 4151, for:
+
+| Spec / bike ID | Catalogue source | Bike / stored text |
+| --- | --- | --- |
+| 782 / 55 | 41, 1981 Kalkhoff | Professional 13 S / Campagnolo Super Record |
+| 985 / 69 | 42, 1983 Bianchi | Super Leggera / Campagnolo Super Record |
+| 6492 / 357 | 165, 1981 Bianchi | Super Corsa / Campagnolo Super Rekord |
+| 6647 / 368 | 166, 1982 Bianchi | Super Corsa / Campagnolo Super Record |
+| 12880 / 756 | 268, 1982 Battaglin | Campagnolo / Campagnolo Super Record |
+
+All retain label_id 17, source_ref and original text/bike identity. The stored
+raw labels are Derailleurs for 782 / 985 / 6492, Rear Derailleur for the other two.
+No live bike uses 4077, 4149, 4151 or 4153. The generator now makes the generic
+1980–1983 rear decision NULL; other years and separately reviewed front/group
+mappings remain unchanged. This withdraws the unsupported PAT.80 fitment, not the
+catalogue's Super Record family identification. Reopen only with a distinguishing
+original bicycle photo or period parts crosswalk. Earlier Kalkhoff/Bianchi picks
+are historical and superseded by this approved withdrawal.
+
+Applied four fully guarded component UPDATEs and five guarded spec unlinks in
+one transaction. Actual affected rows: four components and five specs; rerun zero
+for both tables. The old values and source identities above preserve restoration
+information: a reviewed reversal would restore those exact component fields and
+set the five exact NULL spec identities back to 4149, also revisiting the generator
+guard. That would restore unsupported fitments and is not the current decision.
+
+Pre-apply validation, one live snapshot: all 96 local CSVs / 21,176 generated specs
+compared before/after the simulated retitle and generator guard. Exactly the five
+4149-to-NULL mappings above change; no other generated spec changes. Simulated
+application across the five affected catalogues gives 562/562 unchanged mappings,
+no missing/ambiguous identities and no link differences. Regression checks include
+either candidate alone, both candidates, Record/Rekord aliases, range boundaries
+and the unchanged front-derailleur mapping. All 12 test files pass.
+
+Post-apply validation: exact full-row readback of all six reviewed/adjacent
+components matches the original rows plus the four approved corrections; 4148 and
+4152 are unchanged. All five affected specs retain their raw labels, text, sources
+and bike identities, with only component_id cleared (timestamps are DB-managed).
+Comparison of every spec in the saved live snapshot found exactly those five link
+removals, with no inserted/deleted specs; snapshot bike and source records were
+unchanged. All 96 CSVs / 21,176 generated specs were checked again against the
+original plan: exactly the same five reviewed mapping changes. Live comparison
+across the five affected catalogues gives 562/562 unchanged mappings, no link
+changes/gains/losses and no missing/ambiguous identities. Whole-DB quality report:
+zero integrity errors; missing dates remain explicit review flags, not evidence
+for inventing replacement dates. `git diff --check` passes.
+
+The completed TODO action was removed. Task SQL, snapshots, helper scripts, source
+page downloads and inspected photo copies were removed after validation. Original
+source URLs/photo filenames and old/new values above retain the evidence.

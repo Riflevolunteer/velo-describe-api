@@ -395,7 +395,8 @@
   the 1974 Motobecane `'3ttt record'` -> 2771 (1st Version, 1970) override
   ranged `{ to: 1975 }` so the 1981 plain "T.T.T. Rekord" bar/stem stay
   unlinked.
-- Picks: Super Record by existing overrides (RD 4149 PAT. 80 for 1980-83,
+- Original picks (rear 4149 superseded by the 2026-11-17 review below): Super Record
+  by existing overrides (RD 4149 PAT. 80 for 1980-83,
   brakes 582 v1, FD 2313, headset 2968, pedals 3716) plus crank 1509 (1049/A
   Strada Super Record, "special engraving"); Nuovo Record FD 2299 / RD 4125
   by matcher; Nuovo Gran Sport FD 2276 / RD 4085 (as 1983 Gran Sport);
@@ -431,7 +432,8 @@
   Campagnolo Super Record equipment" fanned to FD / RD / crank / brakes /
   levers / pedals / seatpost (as 1979 Colnago); Super Leggera's "Nuovo and
   Super Record" kept as a groupset value only (undecidable per part).
-- Picks: Super Record and Nuovo Record by existing ranges (1982 -> FD 2300
+- Original picks (Super Record rear 4149 superseded below): Super Record and
+  Nuovo Record by existing ranges (1982 -> FD 2300
   0104007, RD 4126 v4; SR levers 232, brakes 582, seatpost 5761, RD 4149);
   Gran Sport brakes 554; Record Pista crank 1505 / headset 2966; Cinelli #2
   -> 5332; Mavic OR 10 -> 5103. New overrides: Universal 77 -> 1083;
@@ -955,3 +957,16 @@ the two reviewed link removals. The completed TODO action was removed; unknown
 identities and reopening evidence remain in these notes and link-decisions.md.
 Task SQL, snapshots, validation outputs and helper scripts were removed after
 successful validation; the user-held source PDF remains available.
+
+
+## 1981–1983 Super Record rear links — 2026-11-17, applied and validated
+
+User approved clearing unsupported PAT.80 specimen 4149 from rear specs **6492**
+(1981 Super Corsa, source 165), **6647** (1982 Super Corsa, source 166) and **985**
+(1983 Super Leggera, source 42). All three now NULL, retaining text/raw labels and
+sources. Earlier year-based 4149 picks above are superseded: the generic group
+name does not distinguish this late first-generation specimen from second-gen
+4151. Generator guard prevents reassignment; no forced replacement link or CSV
+change. Reopen only with original distinguishing fitment evidence. See the
+[component review](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#super-record-and-early-campagnolo-specimen-review--2026-11-17)
+for specimen/photo evidence, the complete five-catalogue change and live validation.

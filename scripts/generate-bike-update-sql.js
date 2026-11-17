@@ -1291,7 +1291,9 @@ const COMPONENT_OVERRIDES = {
     'huret challenger': 4273, // Huret Challenger 2400 / 2440 / 2448 / 2454 (1975 Motobecane; pinned after 1975 catalogue retitle)
     'sun tour vgt luxe': [{ bike: '710', from: 1979, to: 1979, id: 4705 }, { bike: '600', from: 1979, to: 1979, id: 4705 }, { bike: '400', from: 1979, to: 1979, id: 4705 }, { id: 4704 }],
     // 1981 Kalkhoff. "600 AX" otherwise substring-matches plain "Shimano 600".
-    'campagnolo super record': [{ to: 1979, id: 4148 }, { from: 1980, to: 1983, id: 4149 }, { from: 1984, id: 4152 }], // 4001 1st gen (1974-79; 1979 Colnago); PAT. 80 for 1981 Kalkhoff; 4001 2nd gen ver. 2 (1984-87) for 1986 Cinelli
+    // 4149 is a late first-generation PAT. 80 specimen, not the generic 1980-83 design.
+    // Without fitment markings/photos, plain Super Record cannot choose it over second-gen 4151.
+    'campagnolo super record': [{ to: 1979, id: 4148 }, { from: 1980, to: 1983, id: null }, { from: 1984, id: 4152 }],
     'dura ace ex': 4509, // Shimano RD-7200, Dura-Ace EX
     'shimano 600 ax': 4465, // Shimano RD-6300, 600 AX
     // 1983 Bianchi (3500 Nuovo Gran Sport); 1973 Bianchi Special -> the

@@ -195,6 +195,14 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Rear Derailleurs
 
+- Applied/validated 2026-11-17, user approved: generic 1980–1983
+  `Campagnolo Super Record` / `Super Rekord` does not identify the late
+  first-generation PAT.80 specimen 4149 rather than second-generation 4151.
+  **4149 → NULL** for specs **782 / 985 / 6492 / 6647 / 12880**;
+  live rows are NULL and the generator guard prevents reassignment. Reopen only with
+  original fitment markings/photos or a period parts crosswalk. See the
+  [specimen review](../../ingest-component-catalog/references/known-catalogs/campagnolo.md#super-record-and-early-campagnolo-specimen-review--2026-11-17).
+
 - Reviewed 2026-11-17: **1978 Peugeot NL PA60 rear 10093**, `Simplex Criterium`,
   deliberately remains NULL. The original PA60 specification names no code;
   the full-bike photograph is the PR60, while the separate generic derailleur

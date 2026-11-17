@@ -306,6 +306,7 @@ const REVIEWED_NOT_DUPLICATES = [
   [4019, 4020], // SunTour PL-XP01: steel axle (305 g/pr) vs VeloBase titanium-axle specimen (256 g/pr), 2026-11-16
   [4778, 4779], // SunTour RD-6300 XC: standard vs VeloBase three-pulley cage, 2026-11-16
   [4751, 7827], // SunTour RD-6700 Le Pree: VeloBase three-pulley cage vs GT long cage, 2026-11-16
+  [4149, 4151], // Super Record: textured first-generation PAT. 80 specimen vs signature-logo second generation, 2026-11-17
 ]
 const reviewedKey = (a, b) => `${Math.min(a, b)}|${Math.max(a, b)}`
 const REVIEWED = new Set(REVIEWED_NOT_DUPLICATES.map(([a, b]) => reviewedKey(a, b)))

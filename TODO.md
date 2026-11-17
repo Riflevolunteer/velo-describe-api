@@ -300,10 +300,6 @@ comparisons until their identities are settled.
 - **SunTour XCE crank specimen:** identify the original uncoded reference behind
   2002 from a readable marking or independent XE00/XE01 crosswalk before merging.
   [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#xce-crank-dating-and-tangent-brake-link-review--2026-11-17-applied-and-validated).
-- **Campagnolo Super Record:** compare photos/markings for 4151 “2nd gen,
-  ver.1” and 4149 “PAT. 80” before a merge/version decision. Review shop-modified
-  specimen 4153 and bare 4077 against their VeloBase pages before retaining,
-  folding into a documented row or deleting.
 - **Manual merge candidates:** review Favorit 6028 / 6029; Simplex 4634 /
   4641–4643 and 2556 / 2557; Nervar 1657 / 1659; Pelissier 3457–3459;
   Belleri 2791–2794; Weinmann 1103 / 1104; Campagnolo 1472 / 1473 as merges
