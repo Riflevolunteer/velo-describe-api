@@ -1,5 +1,32 @@
 # Bianchi catalogs processed so far
 
+## Bikalog 1985/1986 backlog check — 2026-11-17
+
+Reconciled the vague TODO against live catalogue sources and Bikalog's API index.
+Already loaded: **1985 Japan**, source **144**, nine current bikes (the earlier
+ten-bike ingestion included the subsequently excluded Bambina); **1986 DE**,
+source **324**, two bikes; **1988 US**, source **167**, six bikes. The last is
+the Bikalog `Bianchi/1986/bianchi-1986-roadmodels.pdf` already identified below
+as misdated: the same C-4/Mondiale/Super Leggera/Pista/Giro/Limited scans, with
+Chorus Syncro, Ultegra and the 1986–1987 championship reference. No separate
+1986 import is needed from that host.
+
+Downloaded [Bikalog's 1985 file](https://bikalog.org/api/view/Bianchi/1985/bianchi-1985-roadmodels.pdf):
+**five pages**, English, different from the two-page Japanese range sheet.
+Cover, “The second hundred years begin” introduction, Racing Series divider
+and Professional-series spread, with **Pista / Centenario** photographs.
+Its text layer contains introductory prose and model names, **no specification
+tables**. Visually checked the cover and final photo page. No market imprint
+or printed year was established; 1985 is the archive attribution, compatible
+with the centenary theme, not a newly verified exact edition date. Do not infer
+component codes from these bike photographs or treat this fragment as a complete
+unloaded specification catalogue. Remaining action: recover the missing spec
+pages before deciding whether this edition supplies additional bike data.
+
+Removed the duplicate 1986/vague 1985 bike-loading backlog wording and recorded
+the precise acquisition need instead. No DB, CSV or matcher changes. Task-created
+API listing, PDF and two page renders removed after documenting these findings.
+
 ## 1940 Bianchi — `1940_bianchi_specs.csv` (17 bikes, 153 specs, 3 linked)
 
 - Source (added 2026-10-21): very likely VeloBase CatalogScans `Bianchi_1940.pdf`, "1940 Bianchi Catalog" (17.8 MB; https://velobase.com/Pages/Resources/CatalogScans.aspx). Inferred from the matching title and year, not confirmed: no download is on disk and the notes never named the file. No market is stated.

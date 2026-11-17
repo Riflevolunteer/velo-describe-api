@@ -35,7 +35,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Decide Nashbar brand treatment, then load its Spring 1988 house bikes, pp.30–40; re-read the scans.
 - Decide Panasonic brand treatment, then ingest the 1985–89 US bikes from [recorded sources](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md).
 - Load La Bicicletta’s May 1984 racing-bike buyer’s guide.
-- Assess the bikalog backlog: Koga-Miyata 1980–2001, Nishiki 1987, Raleigh 1991, Colnago C35 1989, Bianchi road 1985/1986.
+- Assess the bikalog backlog: Koga-Miyata 1980–2001, Nishiki 1987, Raleigh 1991, Colnago C35 1989.
 
 ## Waiting for distinguishing evidence
 
@@ -62,6 +62,7 @@ Reopen these when the specified material becomes available; existing ambiguity a
 
 Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md) before searching. Reopen exhausted hunts only for a new source/holder lead.
 
+- Recover specification pages for the English Bianchi road catalogue indexed 1985; Bikalog holds only a five-page introductory/photo fragment. [Edition review](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#bikalog-19851986-backlog-check--2026-11-17).
 - Seek 1979–89 Peugeot/Motobécane spares lists for Maillard, Solida/Nervar and Lightrace; inspect the logged unopened tariffs/show report.
 - Check Ron Kitching/Freewheel holdings at Otley and Warwick MRC for Rigida, Viscount and Brooks; retain the saddlewax Brooks lead.
 - Check the logged Performance/Nashbar/QBP/J&B/Colorado Cyclist browser-only leads for 1985–92 distributor evidence.
