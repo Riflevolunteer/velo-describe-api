@@ -977,3 +977,36 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   exact repaired CSV values and regression/API validation are recorded in
   [cross-catalog notes](cross-catalog-notes.md), "Selective Front Brake / Rear
   Brake specs". Existing generic and frame-dependent cells retain Brakes.
+
+
+## PA60 Criterium rear identity review — 2026-11-17
+
+- Source239, 1978 Dutch brochure, original spread (BikeBoomPeugeot Pg8/Pg9):
+  https://www.bikeboompeugeot.com/Brochures%20Netherlands/Peugeot%201978%20Nederland%20Brochure/Peugeot%201978%20Nederland%20Brochure.htm
+  Pg8 explicitly says PA60 is derived from PR60 with listed differences,
+  including front Super Competition and rear Criterium. The PR60 is explicitly
+  SX410T; that code is not carried over to the PA60 because its rear is one
+  of the listed differences. Pg9's complete bicycle is the gold PR60. The
+  Pg8 generic derailleur close-up has no PA60 label or readable model code.
+  Neither picture establishes which numbered Criterium was fitted to PA60.
+- Live **10093** remains `Simplex Criterium`, NULL, source239. Keep the wording;
+  do not identify it as AR637 NI 4645, extend that row's dates from this name,
+  or insert a duplicate component from the generic label. The name's later
+  use elsewhere in the Simplex range prevents a unique inference by name.
+- A new image-search lead, OBAN Cycles' PA60 advertised as 1978,
+  https://obancycles.fr/portfolio/pa60, explicitly describes a rebuilt urban
+  gravel conversion, with 12 speeds, changed cockpit and restored equipment.
+  It does not establish original 1978 NL rear fitment. The owner/forum leads
+  found in the bounded search similarly lacked a coded, independently dated
+  original 1978 NL configuration; no evidence from them was used for mapping.
+- Existing rear `simplex criterium` override covers 1965-70 (4644) and
+  1971-76 (4645), returning NULL outside those ranges. Checked actual matcher
+  behaviour with a unique generic Criterium row, a unique AR637 NI row and
+  both rows together: PA60/1978 stays NULL in every case. The prior 1976
+  mapping remains 4645. No code, CSV or DB changes were necessary.
+- This closes the generic TODO request as a reviewed leave-unlinked decision,
+  not as a completed model identification. Reopen only with a PA60-specific
+  period part-code crosswalk or demonstrably original 1978 NL specimen
+  photographs identifying the mechanism and mounting; repeating the held
+  name-only catalogue or a restoration listing cannot supply that evidence.
+  Task-created downloaded HTML/scans were removed after recording these URLs.

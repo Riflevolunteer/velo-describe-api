@@ -835,7 +835,7 @@ comparison and the zero-change rerun; the source image URLs below retain evidenc
   Post-application reconstruction of the original title versus the live
   component set over all 96 CSVs / 21,176 generated specs found zero spec
   content or mapping changes.
-- The separate PA60 issue remains open: live **10092** (Front Derailleur)
-  links to AV3 8794 as recorded in the 2026-11-15 front audit, but **10093**
-  (Rear Derailleur) `Simplex Criterium` is still NULL. The front correction
-  does not identify the rear as AR637 NI and must not close that question.
+- PA60 front **10092** remains linked to AV3 8794; rear **10093**,
+  `Simplex Criterium`, remains NULL. The separate period-source review on
+  2026-11-17 records it as deliberately unlinked, not an AR637 NI identity.
+  See [PA60 evidence and reopening criteria](../../../ingest-bike-specs/references/known-catalogs/peugeot.md#pa60-criterium-rear-identity-review--2026-11-17).

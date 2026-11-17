@@ -186,6 +186,16 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Rear Derailleurs
 
+- Reviewed 2026-11-17: **1978 Peugeot NL PA60 rear 10093**, `Simplex Criterium`,
+  deliberately remains NULL. The original PA60 specification names no code;
+  the full-bike photograph is the PR60, while the separate generic derailleur
+  close-up is not identified as PA60 fitment. Criterium alone does not prove
+  AR637 NI (4645) or a later LJ model. Existing year-ranged override already
+  blocks 1978, including when only one candidate remains; 1976 mapping stays.
+  Reopen with an original PA60-specific part-code document or a demonstrably
+  original, sufficiently detailed 1978 NL specimen. Restored examples do not
+  supply that evidence. See [source review](known-catalogs/peugeot.md#pa60-criterium-rear-identity-review--2026-11-17).
+
 - Superseded 2026-11-16 (user approved): the 1989 Bianchi Forte / Volpe "XCE-4050" specs now link to the XE45 series. SunTour Edition No. 89 (the 1989 line, source 427) prints XCE 4050 as RD-XE45-GXB 11395, FD-XE45-GXH 11396, SL-XE45 11397, BL-XE45 11398, CW-XE45 11401 (48 / 38 / 28T, as Forte's crank) and HB-AT45 hubs 11403. The earlier unlink only rejected the 1990 XE00 and 1992 XE01 rows.
 - Leave unlinked: 1987 Bianchi Sport SX "SunTour Alpha-5000 Balance Response System" brakeset (1324) and "SunTour Alpha-5000 52/42T" crankset (1327). The 1988 English SunTour catalogue (source 428) lists alpha-5000 as rear and front derailleurs only, and the AccuShift leaflets as derailleurs, levers and freewheel, so these are not SunTour alpha-5000 parts. Its hubs already go to Sansin RE-60a (9010) and its front to FD-5000-SS 11418.
 - 1989 Peugeot (NL) VTT Express "Suntour XCM" front / rear: FD-XM34-GXH 11411 and RD-XM34-GXB 4795 (XCM 3040 in Edition No. 89). XM00 / XM02 (2665 / 4793) start in 1990.
