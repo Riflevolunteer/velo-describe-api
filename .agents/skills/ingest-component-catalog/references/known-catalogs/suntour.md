@@ -1746,12 +1746,55 @@ were included.
   4793 -> 4795. Generator overrides updated; regenerating all 93 bike catalogues
   changed only these ten specs, no other output references the new ids, and the
   retitled rows' generated links equal the DB. SQL re-run affected no rows.
+- **Edition No.89 pp.40–41, Scrambler II / LV-3 transcription (2026-11-18):**
+  PDF pp.40–41 (printed pp.39–40) were inspected from the full-size scan. On
+  p.40, Scrambler II rear derailleur **RD-SR10-GT** is indexed, with black-finished
+  aluminium alloy and carbon-fiber composite body, steel cage, 28T largest sprocket in index mode (28 mm dropout),
+  34T total capacity / 18T chainring difference, 290 g without bracket; codes
+  25519921 without bracket and 25519901 with bracket. **RD-SR10-SS** is also
+  indexed, same listed material, 28T maximum / 28 mm dropout, 28T total capacity /
+  12T chainring difference, 260 g without bracket; codes 25509921 without
+  bracket and 25509901 with bracket. Thus the catalogue treats GT and SS as
+  separate capacity configurations, not merely bracket variants. Page 41's
+  separate LV-3 rear derailleur is RD-LV00, code 22319901, steel black-finished
+  body, 22T largest sprocket, 8T capacity (3-speed only), 473 g.
+  Source PDF: https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf .
+  Live DB comparison: 7956 is 1992 RD-SR21-SSB/SSZ, 28T maximum, 28T
+  capacity, 255 g; 7957 is RD-SR21-GTB/GTZ, 28T maximum, 34T capacity,
+  275 g; 7958 is RD-SR21-GXB/GXZ, 32T maximum, 40T capacity, 283 g.
+  The SS and GT capacities match the 1989 RD-SR10 configurations, but the
+  model codes, 1989 weights and AccuShift designation differ from the 1992
+  AccuShift Plus Lite rows. Page 40 does not list an RD-SR10 GX. Do not
+  equate or merge these generations solely on matching capacities. A live title
+  search found no RD-SR10 row. No DB changes were made.
+
+  Other p.40 Scrambler II items (1989 availability): FD-4200 front derailleur,
+  22T capacity, 160 g; SL-SR10-CT/BT double downtube levers, six-speed right
+  and three-speed left index, 96/80 g; SL-SR11-CT/BT double downtube levers,
+  six-speed indexed right and friction left, 94/78 g; SL-SR16-CT/BT single
+  six-speed downtube lever, 76/60 g; SL-SR20-CH handlebar levers, six-speed
+  right and three-speed left index, 130 g/pair; SL-SR30-CC five-speed and
+  SL-SR40-CC six-speed top-tube levers, listed 270 g/pair; FW-AL00-R6
+  six-speed freewheel, 13–21/24/28/32T options; TZ-6000 chain, 116 links,
+  358 g. CT denotes clamp and BT braze-on in the downtube listings.
+
+  Other p.41 LV-3 items: SL-LV00 handlebar indexed lever in black or white,
+  116 g; SL-LV10 with brake bracket, black or white, 100 g; HB-LV00 steel
+  small-flange front/rear hubs, 28/36 holes, 93/115 mm locknut widths,
+  180/393 g; CW-LV00 steel cotterless 165 mm crankset, 36T oval, black or
+  white, 1060 g; FW-LV00 three-speed 14/17/22T freewheel, M30 x 1 thread,
+  214 g; TZ-6000 chain, 116 links, listed here as 338 g. Accessories outside
+  component categories: DG-LV00 derailleur guard, SD-LV00 freewheel
+  protector and SD-LV10 spoke disc. Row 4713 identifies RD-LV00 and records
+  a 26T maximum, while this edition prints 22T; preserve both as separate
+  source claims pending clarification. The two page-specific TZ-6000 weights
+  also differ; neither figure is corrected from this comparison.
 - **Left / open:** 3630 unnumbered XCD freehub vs FH-XD10 (new 1989) / FH-XD11
   (1990); 6290 LD-5100 PLG vs the 1989 PLG LS-5700 / LS-5800 (both 150g); 6376
   CL-XD10 (1988 JP code) kept apart from 11417; 1989 Brava "SunTour GPX" front and
   "GPX AccuShift" shifters still unlinked (SSB / SSH, B / C rows, text does not
   choose); p.34's RD-2000-GX is the 1988 Alpha 2000 code (see the 1988 English entry
-  above, now in 4706's title); Scrambler II and LV-3 pages not transcribed into rows; BH-1600 / BH-1800
+  above, now in 4706's title); BH-1600 / BH-1800
   7993 vs 3617 overlap untouched. Doubtful small-print stock codes were not used
   in any description.
 - **VeloBase stub rewrite (applied 2026-11-16, user approved).** 22 rows whose

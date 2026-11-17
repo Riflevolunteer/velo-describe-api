@@ -456,8 +456,9 @@
   Zenith 10 and Granada 10 each state 610/610 for Gents and 610 front plus 733
   Symmetric rear for Lady's. Live specs 8781 / 8804 reproduce this correctly and
   remain NULL. A single link cannot represent both frame configurations; this
-  requires a deliberate variant/spec representation before linking, rather
-  than a duplicate merge or a front/rear-only split of the existing combined cell.
+  is retained as the combined, unlinked source text (decision 2026-11-18;
+  see Raleigh bike catalogue notes). A front/rear-only split cannot represent
+  which rear brake belongs to which frame, and a duplicate merge cannot resolve it.
 - Proposal at the end of this first review (superseded by the source research below):
   enrich 1136 with the manufacturer 610 specifications and
   establish traceable availability bounds. Its NULL dates are an evidence gap;

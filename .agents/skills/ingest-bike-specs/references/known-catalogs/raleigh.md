@@ -968,7 +968,15 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
   supersedes the older catalogue sections' unlinked statements. Re-read original
   1987 UK table p.15: Zenith 10 / Granada 10 specify 610/610 for Gents and 610
   front / 733 Symmetric rear for Lady's. Specs 8781 / 8804 transcribe that
-  correctly and remain NULL pending deliberate frame-variant/spec representation.
+  correctly and remain NULL. Decision 2026-11-18: retain each combined Brakes
+  spec as the representation of the catalogue's shared model column. Its text
+  explicitly assigns the 610/610 pair to Gents and 610/733 to Lady's. A single
+  component link cannot express the conditional rear brake, and a front/rear
+  split alone still cannot attach the rear component to the right frame. Do not
+  create separate bikes without a representation for the frame variants and
+  evidence for their other differences. Revisit linking if the data model can
+  qualify specifications by frame variant; retain source 224 and the original
+  text. Live readback confirmed both original values and NULL links.
   A merge of the generic 999 family and specific 610 rows does not resolve this.
   Full component evidence is in the Weinmann catalogue notes. No DB or generator
   changes in this review.

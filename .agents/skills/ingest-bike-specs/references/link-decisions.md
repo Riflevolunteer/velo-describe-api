@@ -20,6 +20,11 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Ariake frame-dependent saddles (reviewed 2026-11-17)
 
+1987 Raleigh Zenith / Granada brake specs 8781 / 8804 likewise retain the
+combined source text and NULL component link: Gents has 610 front and rear,
+Lady's has 610 front and 733 rear. A rear link requires a frame qualifier;
+see the Raleigh catalogue notes for the decision and source.
+
 - 1982 Miyata 110 spec 21066 prints `ARIAKE 77-17, quilted vinyl top,
   padded; 81-L for ladies` (PDF p.15, source 403). 1983 Miyata 90 spec 22019
   prints `ARIAKE 77-17 (81L for Mixte)` (p.17, source 406). Each stored bike

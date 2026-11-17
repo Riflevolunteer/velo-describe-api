@@ -7,13 +7,12 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
 - Design multiple component evidence references, preserving `source_ref` as the last source that changed a row.
 - Review current metadata/date flags with `node scripts/quality-report.js`; verify identities before changing dates or links.
-- Transcribe SunTour Edition No.89 Scrambler II/LV-3, PDF pp.40–41; compare RD-SR10 with 7956–7958. [SunTour notes](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md).
+- Reconcile SunTour Edition No.89 Scrambler II / LV-3 page inventory with existing rows, including missing RD-SR10 GT/SS and RD-LV00 4713's conflicting 22T/26T maximum. [SunTour evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#suntour-bicycle-component-catalog-edition-no-89--printed-091988-2026-11-16).
 
 <a id="sr-sakae-next-work"></a>
 
 - Check Koga-Miyata 1986 MTB-204/BMT-3-26/Rockey-2 and Trek 1987 pp.13–14 MTB-209/MTB-210/FX-200 against existing rows and fitment. [Source leads](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - Review remaining Kusuki, Sugino TGT-LP, Dia-Compe PN-280/281/730, KKT RT-E1 and Sansin ET-Q/ET-QS identities using [Panasonic evidence](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md).
-- Decide variant representation for Raleigh Zenith/Granada specs 8781/8804. [Weinmann evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/weinmann.md).
 - Review Guida ’96 pass 3 and remaining FRM/OMAS/Mavic identities. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md).
 - Prepare and review the Mavic T261 9983/10182 consolidation and 1995 availability correction using the recovered maker profile. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#t261-profile-crosswalk--2026-11-17-read-only).
 - Review finish-specific representation for Mavic Reflex tubular 9975/10197/10198 while preserving the documented CD/Ceramic options. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#other-waiting-cases).
