@@ -1,5 +1,111 @@
 # Mavic catalogs processed so far
 
+## Rim maker-source follow-up — 2026-11-17, applied and validated
+
+Recovered the [1999 GB maker catalogue](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf)
+(13 PDF pages, two printed pages per PDF page). Existing source **374** cites
+this exact PDF; its old label restricted it to the previously reviewed CC9 p.24.
+Visually checked the cover, technology pp.6–7 and rim pp.20–22; this is a
+focused reconciliation, not ingestion of the rest of the catalogue.
+
+Printed **p.22 / PDF p.11** draws T217 at **22 mm outside width**, 470 g,
+480 g Ceramic, 36/40/48 holes across the family, silver/CD/CD Ceramic finishes,
+22–28 mm recommended tyres. T261 is **26 mm outside width**, 540 g,
+36/40/48 holes, silver, 28–35 mm tyres. The dealer guide's 17/20 mm dimensions
+are not safe to present as outside widths: their measurement basis is unstated.
+This does not prove a generation change or establish what those figures measure.
+The earlier 1997 T261 drawing reading of 23 mm remains uncertain at the recovered
+scan resolution; the new 1999 maker drawing positively supports 26 mm for that
+edition. No T261 merge is proposed on that basis alone.
+
+Printed **p.21 / PDF p.11** explicitly distinguishes Reflex silver/royal blue/CD/
+CD Ceramic, 375 g (390 g Ceramic), 28/32/36 holes, 21 mm wide, Maxtal, SUP and
+UB Control. Technology p.6 distinguishes the welded SUP joint from machined
+UB Control braking surfaces and identifies CD as hard anodising. Thus **10197**
+can safely say silver anodised rather than its dealer-derived hard anodised
+wording. The old transcription was faithful to Guida '99 p.106; this is a
+manufacturer-led correction, not a claim that the transcription was wrong.
+
+Applied on explicit user approval with guarded transactional SQL:
+
+- **10182:** replace the 20 mm description with explicit 26 mm outside width,
+  retaining 540 g, silver, double wall/eyelets, drilling and touring use.
+- **10184 / 10185 / 10186:** replace unqualified 17 mm with 22 mm outside width;
+  distinguish silver / hard CD / hard CD with ceramic braking. Preserve each
+  row's existing drilling (the maker's family-wide 48-hole option does not prove
+  that every finish had it), 470/470/480 g and 1996–1999 dates. Carry SUP weld,
+  22–28 mm tyre range and touring use into the surviving descriptions.
+- **10197:** replace hard anodised with silver anodised; clarify SUP as a weld;
+  retain 375 g, 21 mm, Maxtal, double eyelets and 28/32/36 drilling.
+- Those five rows changed **source_ref 357 -> 374**; no title/search text or date
+  changes. Stored descriptions are 175/209/198/217/166 characters respectively.
+- **9981**, source UUID `51565ae2-d479-11f1-a2df-02fea3763e8d`: removed the
+  redundant T217 family row after preserving its specifications in existing
+  silver **10184**, CD **10185**, Ceramic **10186**. All three finish rows exist;
+  no new row or arbitrary silver mapping was needed. Before removal, 9981 had no
+  image or bike links and none of these IDs occurs in generator overrides or reviewed
+  duplicate decisions. Preserve the separately sold finishes. The
+  deletion guarded the UUID, original fields, no image and no bike usage.
+- Relabelled existing source **374** to `Mavic Rims & Wheels catalogue, GB edition
+  (1999)`; preserve citation, source ID and existing CC9 provenance. No new source.
+
+Read-only preflight matched exactly one row for each of the six component guards.
+The approved transaction changed **five descriptions/source references**, removed
+**one unused component** and relabelled **one source**. Rerun changed **zero rows**.
+Exact live readback confirmed all five new descriptions/source references and all
+other surviving fields unchanged, 9981 absent, zero affected bike links, and the
+correct source label with its citation preserved.
+
+Fixed-snapshot simulation and actual before/after comparisons found **zero changed
+generated mappings** across all 96 loaded local CSVs / 21,176 paired specs.
+Generator/live-DB comparison remained 21,161 unchanged, zero gains/changed targets,
+and the same 15 pre-existing losses; no missing or ambiguous identities.
+Quality findings were identical to the immediate pre-application baseline:
+**zero structural errors**, 1,952 review findings (1,567 incomplete dates,
+326 linked date conflicts, 35 broad Freewheel labels, 24 descriptions at limit).
+The Mavic duplicate report retained its same 13 classified pairs (7 configuration,
+4 generation, 2 reviewed variants); no automatic merge candidates. Generator SQL
+was not invoked and `bike-update.sql` was untouched. No code changed, so no test
+suite run was needed; data readback, mappings, integrity and idempotency were
+validated directly.
+
+Other overlaps remain open: 9975 includes four Reflex finishes while 10197/10198
+only cover two, so removing it would lose CD/Ceramic representation. T261 needs
+the profile crosswalk above. CXP 30 has a separate titanium tubular **10607**,
+whose 520 g dealer figure conflicts with the maker's 465 g; **5062** also carries
+an independent 500 g specimen record. Do not merge those into silver **10199**
+without resolving identity/weight attribution. The 1999 maker lists 28/32/36
+tubular drilling (1997 and the dealer guide also offer 24); retain edition-specific
+evidence rather than silently dropping 24. Its clincher is separately 550 g in
+1999 versus 520 g in 1997. No CXP dates or weights changed in this application.
+
+TODO reconciled, including the stale claim that the CXP 30 Argent tubular has no
+row (10199 exists). Completed application steps removed; only remaining identity
+questions stay open. Task-created SQL, baselines, scripts, downloads and renders
+were removed after validation; evidence URLs and restoration details remain here.
+
+### Restoration baseline
+
+The five surviving rows retained title/search text, dates 1996–1999 and UUID;
+their previous source_ref was 357. Restore only deliberately, guarded by the
+approved new description and source 374. Exact previous descriptions:
+
+- **10182:** `Alloy; 622; 20 mm; 36-40-48 holes; for trekking, touring, tandem; double wall, double inox ferrule, silver anodized; 540g`
+- **10184:** `Alloy; 622; 17 mm; 36-40-48 holes; trekking, touring, tandem, double wall, double inox ferrule, SUP weld and UB Control machining, silver anodized; 470g`
+- **10185:** `Alloy; 622; 17 mm; 36-40 holes; trekking, touring, tandem, double wall, double ferrule, SUP weld and UB Control machining; 470g`
+- **10186:** `Alloy; 622; 17 mm; 36-40 holes; trekking, touring, tandem, double wall, double inox ferrule, hard anodizing, ceramic braking surfaces, SUP weld and UB Control machining; 480g`
+- **10197:** `Special Maxtal alloy; 700c; 21 mm; 28-32-36 holes; hard anodized, SUP machining, UB Control sides, double inox ferrule, competition and training; 375g`
+
+Retired-row restoration baseline, if ever independently justified: **9981**,
+brand **31**, category **16 (Rims)**, group/image NULL, title/search text
+`Mavic T217`, years **1997–1997**, source_ref **307**, source UUID
+`51565ae2-d479-11f1-a2df-02fea3763e8d`. Exact original description:
+
+> Mavic T217, France. 700c trekking rim, SUP joint, Ceramic or UB Control braking, 470 g (Ceramic 480 g), 36/40 holes, for 22-28 mm tyres; CD, CD Ceramic or silver. Touring and tandems.
+
+Source 374 previously had label `Mavic catalogue (1999), CC9 cassette page 24`;
+its citation remains the same 1999 PDF URL above.
+
 ## Hub description and rim overlap review — 2026-11-17
 
 Focused follow-up to the open audit actions. Initial review made no DB writes;

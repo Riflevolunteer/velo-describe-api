@@ -38,13 +38,12 @@ after validation; retain what is still needed for unfinished work or review.
 Evidence and exact affected specs are in the
 [Mavic audit](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#general-quality-audit--2026-11-15-read-only).
 
-- [ ] Reconcile the Reflex, T217, T261 and CXP 30 broad/finish rim rows listed
-  in the audit against the 1996/1997/1999 scans and the variant policy; prepare
-  supported merges or narrower descriptions after establishing identity. Resolve
-  T261 widths (1996 guide 26 mm / 1997 maker drawing 23 mm / 1999 guide 20 mm)
-  and 10182's mixed-edition description/source before merging it with 9983;
-  establish whether the differences reflect measurement basis, print errors or
-  a different construction. See the [source comparison](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#hub-description-and-rim-overlap-review--2026-11-17).
+- [ ] Reconcile the remaining Reflex / T261 / CXP 30 family overlaps: establish
+  the T261 1997 profile dimension against the 1999 maker's 26 mm drawing before
+  merging 9983 / 10182; cross-check CXP 30 Titane 10607's 520 g against the maker's
+  465 g tubular and attribute 5062's independent 500 g specimen weight before
+  choosing survivors. Resolve Reflex CD/Ceramic representation before removing
+  broad tubular row 9975. See the [maker-source follow-up](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#rim-maker-source-follow-up--2026-11-17-applied-and-validated).
 - [ ] Verify Open Pro dates/identities 5099 / 5100 / 10183 and the 31.8 mm
   870 front derailleur 2410 against maker/specimen evidence; source dates for
   the undated legacy rows listed in the audit, prioritising linked 192 rim 5050.
@@ -403,7 +402,7 @@ Still-wanted sources and the next lead for each. Searches already made, dead end
 
 - **Universal ART. 130/131 — source found, bike identification unresolved**: source 339 printed pp.11–12 (scans 15–16) says **130 = small front, 43–56mm; 131 = standard front, 44–62mm; 133 = standard rear**. Thus `130/131` is not an established front/rear pair. Spec **6595**, 1981 Bianchi Super Turismo, stays unlinked. Row 1069 shares the double UNIVERSAL arm lettering, but its bare-caliper photo gives no numbered model or measured reach. Need a Bianchi parts document or measurements/back markings before a precise row/mapping; keep 1069 / 1071 unchanged.
 - **1985 Raleigh Crested Butte XT crank [3564] — identification, not an FC-M700 source gap**: source 26 printed pp.16–17 pairs Deore XT touring/off-road with **FC-6206**, already row **1797** (1984–87). Printed p.107 gives Biopace **48/50 outer, 38/44 middle, 28 inner**, not the Raleigh's **46/36/26**. Source 344's eight sheets contain no crankset. Leave the spec NULL until an original Raleigh photo or period parts document identifies it; do not infer FC-M700 or substitute later FC-M730.
-- **La Bicicletta Guida '96 broader backlog**: review pass 3 entries (MF Components, Tioga, MBS, Syncros) after checking current brands (low link yield, as loaded bike catalogues stop at 1994); new candidates from that review: 6896 Pista CL Servizio Course vs 10570 Pista CL, 1570 FRM CU2 vs 10279 / 10280; unloaded entries Mavic CXP 30 Argent (clincher + tubular), OMAS 120 Big Sliding, FRM rear "Campagnolo Compatibile". See [catalogue evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md).
+- **La Bicicletta Guida '96 broader backlog**: review pass 3 entries (MF Components, Tioga, MBS, Syncros) after checking current brands (low link yield, as loaded bike catalogues stop at 1994); new candidates from that review: 6896 Pista CL Servizio Course vs 10570 Pista CL, 1570 FRM CU2 vs 10279 / 10280; reconcile Mavic CXP 30 Argent clincher coverage with 5063 before adding a row; unloaded entries OMAS 120 Big Sliding, FRM rear "Campagnolo Compatibile". See [catalogue evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md).
 
 Review evidence and proposed actions: `/private/tmp/existing-source-review/review.md`; page images in the same directory. Catalogue notes retain the page references so the findings do not depend on temporary files surviving.
 
