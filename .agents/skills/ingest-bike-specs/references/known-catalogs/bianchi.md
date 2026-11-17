@@ -633,6 +633,37 @@
   Deore DX crank (no FC-M650 row), Deore XT "Competition" pedals, SunTour Quattro FD / RD, Modolo Quattro brakes, Campagnolo Sigma
   and Omega XL rims (only Strada / clincher rows), Vittoria Nuovo Pro (only the 1984-88 Nuovo Pro 260 and 1996 R.T. rows).
 
+### Grizzly hub review — 2026-11-17, correction pending approval
+
+Re-read [original Japanese specification table p.9](https://2velo.com/wp-content/uploads/2014/03/1991-catalog-p0911.jpg).
+The Grizzly row names SunTour XC-Pro hubs and a SunTour 12-28T seven-speed
+cluster. It prints no hub code; the table's FREE AND CHAIN heading does not
+independently establish threaded versus cassette construction. Enlargement of
+the 400px scan aids reading but supplies no missing model number.
+
+Live bike **1147**, source **358**, hub spec **19546** (`Hubs`, raw label `Hubs`,
+`SunTour XC-Pro`) links to **3628 HB-XP00-R**, a specific threaded rear hub.
+Cluster **19547**, `SunTour 12-28T 7-speed`, links to cassette **1222 CS-AP00-S7U**.
+The links are incompatible if both refer to the rear wheel; neither generic
+group text nor the previously inferred cassette mapping identifies a numbered hub.
+[SunTour 1990 p.10](https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1990_-_page_10.html)
+was re-read from the held scan: it distinguishes HB-XP00-R's BC 1.37x24 thread
+from FH-XP00-7U / -6R freehubs and their CS-AP00 cassettes. It does not identify
+the 1991 Japanese bike's fitment. Do not infer 11016 or extend its 1990 dates.
+
+**Proposed: 19546 component_id 3628 -> NULL**, preserving text, labels, sources
+and all component records. Scoped Grizzly/1991 NULL guard added; normal matching
+outside that bike/year preserved. No DB change applied in this review. Keep
+19547's existing link pending independent mechanism/model evidence; this review
+does not establish it as correct. Need a period Bianchi parts list or original
+front/rear hub markings. Restoration if later justified: guarded NULL -> 3628
+on the same spec/bike/source/text, and revise the scoped guard.
+
+Prepared SQL is tracked in TODO. Full fixed-snapshot comparison across 96 loaded
+catalogues / 21,176 specs showed no generated mapping or finding changes; tests
+passed. This supersedes treating the stored cassette link as proof of the actual
+mechanism in the earlier cross-catalog drift triage.
+
 ## 1992 Bianchi (JP) — `1992_bianchi_spec.csv` (8 bikes, 96 specs, 30 linked)
 
 - Tyre follow-up (2026-11-09, done): printed pp.20-21 ([Virata](https://2velo.com/wp-content/uploads/2014/03/1992-catalog-p2011.jpg), [Alfana](https://2velo.com/wp-content/uploads/2014/03/1992-catalog-p2111.jpg)) confirms Vittoria Formula-1 tubular, specs 19675 / 19687 -> existing 6875 Competition Formula Uno. Singular normalized wording now has 1992 bike-scoped overrides; existing plural 1990 Pista rule stays. No new Vittoria row or date changes. Compound 1989 Formula 1 and Juniore stays unlinked. The Nuovo Pro ambiguity recorded here was subsequently resolved by the existing user-approved 1991–92 -> 6893 Nuovo Pro 260 override: specs 19427 / 19445 / 19651 / 19663 verified linked in the 2026-11-14 read-only tyre audit, with component dates now 1984–92. R.T. rows remain distinct; this audit made no DB changes.

@@ -794,9 +794,11 @@ Remaining losses are unresolved identity questions, not approved removals:
   review; do not force the matcher back onto 4401 merely to eliminate drift.
 - **12943**, 1982 Battaglin Alessandro `Nisi Corsa`: 5131 versus later 10608
   Corsa Toro constructions; plain Corsa does not establish eyelets/construction.
+  Subsequent source review below proposes clearing the unsupported 5131 link.
 - **19546**, 1991 Bianchi Grizzly `SunTour XC-Pro`: stored 3628 is a threaded
   rear freewheel hub, whereas this bike's cluster is mapped as a cassette.
-  Establish the actual front/rear hub/freehub configuration before correction.
+  Subsequent source review below proposes clearing the unsupported hub link;
+  the cassette mapping itself is inferred, not independent mechanism evidence.
 
 Two NULL backfills **applied 2026-11-17, user approved**:
 
@@ -824,3 +826,32 @@ compared: 21,158 unchanged, zero gains or changed targets, and the same 18
 unresolved losses listed above; no missing or ambiguous identities. Completed
 backfill tasks removed from TODO, including the older Zeus candidate entry.
 SQL and all task scratch files removed after validation.
+
+### Next drift questions — 2026-11-17, link removals pending approval
+
+Re-read original Bianchi p.9, SunTour 1990 p.10 and Battaglin Alessandro sheet;
+source URLs and identity/restoration details are in `bianchi.md` (Grizzly hub
+review) and `battaglin.md` (Nisi Corsa review). These support proposed
+**19546: 3628 -> NULL** and **12943: 5131 -> NULL**, pending user approval.
+No numbered replacement is established. In particular, Grizzly's stored cassette
+link is an inference, so it cannot justify choosing a specific freehub.
+
+Added scoped NULL guards for Grizzly/1991 `SunTour XC-Pro` hubs and
+Alessandro/1982 `Nisi Corsa` rims, with normal matching preserved outside each
+bike/year. Regression tests cover a unique candidate and scope boundaries.
+Fixed read-only snapshot comparison across 96 loaded catalogues / 21,176 specs
+was identical before/after: zero gains or changed targets, 18 unresolved losses,
+no missing/ambiguous identities. `npm test` passed all eleven test files.
+Read-only preflight matched exactly the two intended rows with the complete
+SQL guards; no DB writes were made. Generator SQL was not invoked.
+
+Checked all generic Rival bikes' stored gearing: no further proven capacity
+conflict; six have incomplete tooth ranges. Exact follow-ups recorded in Huret
+notes and TODO; no generation/cage identification made and no Rival links changed.
+
+Guarded transactional SQL, expected one row per UPDATE, old values and restoration
+instructions retained for approval at
+`/private/tmp/velo-quality-next-20261117.PYurIN/pending-unlinks.sql`.
+TODO retains review/application and the actual identity evidence still needed.
+Other task scratch (downloads and comparison inputs) removed after recording
+source URLs and validation; only the pending SQL is retained.

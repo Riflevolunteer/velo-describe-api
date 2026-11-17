@@ -1355,6 +1355,10 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    'suntour xc pro': [
+      { bike: 'Grizzly', from: 1991, to: 1991, id: null }, // Spec 19546: generic group name cannot identify rear threaded HB-XP00-R; Bianchi p.9 prints no hub code.
+      { id: undefined }, // Preserve normal matching outside this reviewed bike/year.
+    ],
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'maillard 700 low flange quick release': [{ from: 1978, to: 1978, id: 3394 }],
     'suntour xce 4050': [{ from: 1989, to: 1989, id: 11403 }], // 1989 Bianchi Volpe: HB-AT45, the XCE 4050 hubs on the Edition No. 89 ATB chart
@@ -4695,6 +4699,10 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    'nisi corsa': [
+      { bike: 'Alessandro', from: 1982, to: 1982, id: null }, // Spec 12943: original sheet prints no Toro/code/eyelet configuration; do not select 5131 by substring.
+      { id: undefined },
+    ],
     'ambrosio montreal durex tubular': [{ bike: '840 SLX Competition', from: 1986, to: 1986, id: 4913 }], // Reviewed Cinelli pick; broad Montreal 10606 does not identify the Durex version.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'rigida 13 20 alloy': [{ from: 1978, to: 1978, id: 9894 }],

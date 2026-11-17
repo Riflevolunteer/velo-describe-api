@@ -16,13 +16,18 @@ after validation; retain what is still needed for unfinished work or review.
 
 ## Open: database quality tooling
 
-- [ ] **Review generator/live-DB link drift:** use
+- [ ] **Resolve remaining rim/hub link identities:** use
   `node scripts/compare-bike-links.js --json` and the recorded link decisions
-  before changing mappings. Identify the generation/cage of generic Huret Rival
-  rears still on 4401 (see the Huret generic-link review); establish the Nisi
-  Corsa construction for Battaglin spec 12943; reconcile Bianchi Grizzly hub
-  spec 19546's rear-freewheel-hub link 3628 with its cassette specification.
+  before changing mappings. Identify Battaglin spec 12943's Nisi rim
+  code/construction and Bianchi spec 19546's actual front/rear hub codes; seek
+  independent evidence for Grizzly cluster spec 19547's cassette identification.
   See the [bounded review](.agents/skills/ingest-bike-specs/references/known-catalogs/cross-catalog-notes.md#todo-link-drift-review--2026-11-17).
+- [ ] **Review and apply proposed unsupported-link removals:** 1991 Bianchi
+  Grizzly hub spec 19546 (3628 -> NULL) and 1982 Battaglin Alessandro rim
+  spec 12943 (5131 -> NULL). Guarded SQL awaits approval at
+  `/private/tmp/velo-quality-next-20261117.PYurIN/pending-unlinks.sql`, retained
+  for application/review. After approval, verify readback/idempotency, rerun
+  quality and link checks, update catalogue notes and remove temporary SQL.
 - [ ] **Persist link decisions and evidence:** distinguish confirmed, inferred,
   ambiguous, missing-source and intentionally unlinked cases so they can be
   revisited deliberately. Today `COMPONENT_OVERRIDES` `null` entries live only in
@@ -335,7 +340,7 @@ Only the 1973 Zeus, 1978 Bianchi and 1981 Kalkhoff catalogues carry a BB column;
   Checked and fine: Nuovo Record v3-v5, Super Record, Gran Sport / Nuovo Gran Sport, Victory / S3, 1990-94 RD-xx links all agree with year-scoped overrides; 1985 Bianchi "990/980" -> 4088 990 is the recorded rear reading (bianchi.md). Scratch for this audit was deleted; re-run the queries in the rows / specs / `quality-report` scope to reproduce.
 - Rear derailleur review: verify the later XCD model code (VeloBase says RD-XD00; 1990 catalogue lists RD-XD10 variants).
 - **Peugeot PXR 80 Rival front/rear identification:** obtain a readable original **1988 French** part-code/cage photograph or period Peugeot parts specification for front **16962** (20T chainring difference; 1086-00 has conflicting 26T/16T maker ratings) and rear **16963** (34T required; distinguish the correct long cage). Reopen only for new specimen/parts evidence or a maker crosswalk; processed catalogues, modified/earlier specimens and failed photo retrievals are in the [targeted fitment hunt](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#pxr-80-targeted-fitment-hunt--2026-11-16-follow-up).
-- **Other generic Huret Rival rear links:** identify 4401 / 8957 generations from original photos or explicitly coded fitment evidence before changing links; year or finish alone does not distinguish them. Affected specs and prior checks are in the [generic Rival review](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#generic-rival-bike-link-review--2026-11-15-pxr-80-correction-applied).
+- **Other generic Huret Rival rear links:** identify 4401 / 8957 generations from original photos or explicitly coded fitment evidence before changing links; year or finish alone does not distinguish them. Obtain missing gear ranges for rear specs **14439 / 15744 / 16412 / 16584 / 16604 / 16624** before treating their capacity as checked. Affected specs and prior checks are in the [generic Rival review](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#generic-rival-bike-link-review--2026-11-15-pxr-80-correction-applied).
 - **Rear derailleur dedupe pass, 2026-11-14 (user approved):** shared-code, code-stripped-name and uncoded-VeloBase-in-coded-row scans of all 945 rows found only labelled versions, cage and finish siblings. Two fixes: the Huret Duopar titanium provenance (VeloBase GUID 15AB95B3, a 2648 specimen with 255 g, moved from 4302 2600 / 2640 to 8173 2648 / 2654; 4302 new UUID; 8173's synthetic 0311fc96-c102-11f1-a2df-02fea3763e8d retired) and 4733 SunTour Cyclone (Black Pivot Knuckles, VeloBase C0C55FDD-E9C6-48D9-8A76-312E08FC35EF) merged into 4735 RD-1700. Rows 945 -> 944. Added a 1986 'suntour cyclone' rear null override to keep the Supercourse decision once the ambiguity went.
 - Front derailleur duplicates, still open (2026-11-02 review):
   - **Superbe Pro front mounting identification (reviewed 2026-11-15):** specs 920 (1983 Bianchi Professional), 3299 / 8179 (1985 / 1986 Raleigh Prestige), 20864 / 21809 (1982 / 1983 Pro Miyata) link to endless-band FD-2000 **2652**, but their text only names the group. Obtain original photos or period fitment documents to distinguish it from braze-on FD-2050 **8268** before confirming/changing each link. The manufacturer model/mounting distinction is established; the retained VeloBase page's conflicting metadata is not grounds to rename the row or repoint bikes. See [SunTour evidence and identifier review](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#fd-2000--fd-2050-mounting-and-retained-velobase-identifier--2026-11-15-review).

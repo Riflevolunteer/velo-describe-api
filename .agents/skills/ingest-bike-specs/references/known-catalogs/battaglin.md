@@ -42,6 +42,28 @@
 - Regression: all 61 other catalogues regenerated with identical link counts.
 
 
+## Alessandro Nisi Corsa review — 2026-11-17, correction pending approval
+
+Re-read [the original Alessandro specification sheet](https://saarf.london/wp-content/uploads/2014/02/05a1.jpg),
+from the catalogue linked above. Cerchi / Rims prints only **Nisi Corsa**:
+no Toro suffix, part number, dimensions or eyelet construction. The earlier
+automatic pick **5131 Corsa Toro (no eyelets)** was based on a unique substring,
+not a supported configuration identification. Nisi's contemporary Corsa range
+contains several numbered road rims (see Nisi maker notes); later **10608 Corsa
+Toro** also differs in construction. A compatible date alone selects neither.
+
+Live bike **759**, source **268**, spec **12943**, label/raw label `Rims`,
+value `Nisi Corsa`, currently links to **5131**. **Proposed: 5131 -> NULL**;
+no replacement row, component/date change, CSV edit or DB mutation in this review.
+Scoped Alessandro/1982 NULL override prevents a unique candidate reviving the
+unsupported assignment; matching elsewhere is preserved. Need a period numbered
+parts list or identifiable original rim. Restoration only if justified: guarded
+NULL -> 5131 for the same spec/bike/source/label/text, and revise the guard.
+
+This supersedes the initial "worth a second look" auto-link note above. Guarded
+SQL remains tracked in TODO for approval. All 96 loaded catalogues / 21,176 specs
+produce identical mappings/findings after both new guards; regression tests pass.
+
 ## 1982 Vuelta — added 2026-11-12 (bike 1185, existing source 268)
 
 - User explicitly requested loading the Vuelta. A fuller 17-page copy of the

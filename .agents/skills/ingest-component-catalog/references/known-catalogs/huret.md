@@ -1088,6 +1088,16 @@ and `/tmp/rival-specimen-0.jpg` through `-2.jpg`.
 
 ### Generic Rival bike-link review — 2026-11-15, PXR 80 correction applied
 
+Follow-up 2026-11-17: checked stored crank/cluster text for all 16 remaining
+generic Rival rears on 4401. Ten provide both tooth ranges; calculated required
+capacity is 18-28T (Raleigh Zenith/Granada are exactly 28T). No additional
+greater-than-28T conflict was established from these stored specifications.
+Six cannot be checked fully: rear specs **14439, 15744, 16412, 16584, 16604,
+16624** omit chainring or sprocket ranges. These are not verified compatible.
+No source photos were newly recovered; capacity compatibility does not resolve
+upper/lower-screw body or cage identity. Preserve these existing links pending
+new generation/cage evidence; no DB/matcher changes for Rival in this pass.
+
 Baseline readback found **17** generic/finish-only rear specs on **4401** and
 **5** explicitly coded specs on **8957**. After the approved PXR 80 correction
 below, **16** remain on 4401 and **5** on 8957. The earlier generation distinction and the decision to

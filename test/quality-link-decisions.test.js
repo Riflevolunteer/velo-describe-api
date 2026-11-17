@@ -2,6 +2,22 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('unidentified Grizzly hubs and Alessandro rims stay unlinked even with one candidate', () => {
+  for (const [value, label, category, year, bike, id, title] of [
+    ['SunTour XC-Pro', 'Hubs', 'Hubs', 1991, 'Grizzly', 3628, 'SunTour HB-XP00-R, XC-Pro (rear freewheel hub)'],
+    ['SunTour XC-Pro', 'Hubs', 'Hubs', 1991, 'Grizzly', 99999, 'SunTour XC-Pro'],
+    ['Nisi Corsa', 'Rims', 'Rims', 1982, 'Alessandro', 5131, 'Nisi Corsa Toro (no eyelets)'],
+  ]) {
+    const records = [{ component_id: id, title, category }]
+    assert.equal(matchComponent(value, records, null, label, year, bike), null)
+    // The null decision is bounded; it must not suppress normal matching elsewhere.
+    if (value === 'Nisi Corsa' || title === 'SunTour XC-Pro') {
+      assert.equal(matchComponent(value, records, null, label, year + 1, bike).component_id, id)
+      assert.equal(matchComponent(value, records, null, label, year, 'Other bike').component_id, id)
+    }
+  }
+})
+
 test('unresolved alternatives, colour and qualified tyre names do not inherit a unique substring hit', () => {
   for (const [value, category, label, year, bike, id, title] of [
     ['Brooks Professional or Ideale 90', 'Saddles', 'Saddle', 1973, 'PX 10', 10057, 'Brooks Professional'],

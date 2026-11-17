@@ -51,12 +51,29 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## Rims
 
+- Reviewed 2026-11-17, **DB unlink pending approval**: 1982 Battaglin Alessandro
+  spec **12943**, `Nisi Corsa`, currently links to **5131 Corsa Toro (no eyelets)**.
+  Original Alessandro sheet prints no Toro/code/eyelet construction. Scoped
+  Alessandro/1982 NULL override now prevents that unsupported assignment from
+  recurring if 5131 becomes the only candidate. Need a numbered parts list or
+  identifiable original rim; see Battaglin's Nisi Corsa review.
+
 - 1987 Bianchi X4 `Bianchi Speciale` (spec 1119): corrected wording applied/validated 2026-11-17,
   NULL retained. Source 46 PDF p.15 and p.4's Bianchi Black and Silver Pro prose name
   a house rim, without identifying a Campagnolo maker/model. Do not infer one from C-Record.
 
 - Leave unlinked (several rows fit): Miyata "ARAYA 16-B" (four 16B rows); 1989 Bianchi "Campagnolo Omega Super hard anodized" (4957 / 4961 / 4958 all cover 1989); "Ambrosio Elite anodized" (Extra Elite / Super Elite / Aero Elite); "Araya RM alloy" (RM series); 1989 Peugeot "Mavic 190 NE" (DB has 190FB and 195NE); 1988 Peugeot "Mavic 400" x2 (model not identified); 1989 Bianchi "Crono 700 and Hypothesis 26" (two rims in one cell); Raleigh 1989 "Alesa alloy / hollow section" (12) and "Nisi Sprint / High Pressure" (maker, no model).
 - Also several rows fit: 1991-92 Bianchi Proto / X-4 "Campagnolo Sigma" (4; tubulars 4970 Sigma Strada, 7032 Sigma 20 Strada, 7031 Sigma Pave, 4969 Sigma Crono all cover 1991), 1994 Cinelli Supercorsa "Campagnolo Omega" (4955 / 4957 / 4961), 1991 Colnago Krono "Ambrosio Aero (spoked-wheel option)" (4; 4892 Aero, 9481 Aerodynamic, 9482 Aero Elite). Either/or and two-rim cells stay unlinked: "Campagnolo Victory or Ambrosio Metamorphosis" (Victory Strada vs Crono also open), "Mavic Monthlery / Sport or Pellet", "Martano Strada (tubular) / Araya 20A smoked", "FIR Tour or Ambrosio Giro d'Italia". Still no row: Araya RM-18T, Ukai LA-14 / EX-17 / 22A / 7Z, Weinmann 716E / 425 X / Aero, Sumo 7X / 14F, Rigida Jade / Saphir / CTX 10, Wolber Alpine, Velotech, FiR Mase Lega / MT 222 / MT 240.
+
+## Hubs
+
+- Reviewed 2026-11-17, **DB unlink pending approval**: 1991 Bianchi Grizzly
+  spec **19546**, `SunTour XC-Pro`, currently links to **3628 HB-XP00-R**,
+  specifically a threaded rear freewheel hub. Original Japanese table p.9
+  prints the group name, without a front/rear code. Stored cluster **19547 ->
+  1222** is a cassette inference, not independent proof of a hub code. Scoped
+  Grizzly/1991 NULL override prevents a unique future hit selecting a hub
+  construction without evidence. See Bianchi's Grizzly hub review.
 
 ## Saddles
 
