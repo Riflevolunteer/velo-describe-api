@@ -4,6 +4,16 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## Ariake frame-dependent saddles (reviewed 2026-11-17)
+
+- 1982 Miyata 110 spec 21066 prints `ARIAKE 77-17, quilted vinyl top,
+  padded; 81-L for ladies` (PDF p.15, source 403). 1983 Miyata 90 spec 22019
+  prints `ARIAKE 77-17 (81L for Mixte)` (p.17, source 406). Each stored bike
+  spec spans frame-dependent alternatives; keep the full text and component NULL.
+  A single 77-17 link would omit the ladies'/mixte alternative. Exact generator
+  NULL guards prevent that substring match. No separate 81-L row or speculative
+  split is needed for this review. See known-catalogs/miyata.md for source URLs.
+
 ## 1984 Motobecane (loaded 2026-11-16)
 
 - Le Champion LC40/LC41 and Prolight PL40/PL41 list alternative rim/tyre

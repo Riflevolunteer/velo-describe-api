@@ -208,6 +208,7 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  [11428, 11429], // Ariake 77-17 vs 77-17-IS: separate codes in 1979/80 Miyata tables; miyata.md, 2026-11-17
   // Decisions already recorded in TODO/catalogue notes, registered 2026-11-13.
   [16, 17], // Cambio Rino: photographed English-thread cups vs Italian-thread complete set
   [544, 545], // Bowden Touriste: different arm profiles and cable-anchor construction in source photos

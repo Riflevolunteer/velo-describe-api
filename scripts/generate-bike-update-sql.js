@@ -2739,6 +2739,11 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    // Miyata 1979-80: full 77-17-IS code distinguishes it from 77-17; see miyata.md.
+    'ariake 77 17 is padded': [{ bike: '912', from: 1979, to: 1979, id: 11429 }, { bike: '710', from: 1979, to: 1980, id: 11429 }, { bike: '600', from: 1979, to: 1979, id: 11429 }, { bike: '610', from: 1980, to: 1980, id: 11429 }],
+    // Miyata frame-dependent alternatives: one component link cannot represent both saddles.
+    'ariake 77 17 quilted vinyl top padded; 81 l for ladies': null, // 1982 110, p.15
+    'ariake 77 17 (81l for mixte)': null, // 1983 90, p.17
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'italia super legeria skin leather top': [{ from: 1978, to: 1978, id: 5504 }],
     // c.1976 Motobecane p.15: treated Special, not the basic 80 with built-in adjustment.

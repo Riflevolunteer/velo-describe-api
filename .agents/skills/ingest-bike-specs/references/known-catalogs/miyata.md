@@ -1,5 +1,60 @@
 # Miyata catalogs processed so far
 
+## Ariake saddle fitment review — applied and validated (2026-11-17)
+
+Reviewed the original Miyata saddle entries against the loaded CSVs and live
+specs. User approved and applied the eight rows and 50 links on 2026-11-17.
+This supersedes historical missing-row observations below. No maker
+catalogue or Jaguar crosswalk has been found; these are bike-fitment identities.
+Year bounds are earliest/latest attestations in this catalogue set, not
+production dates. Existing sources are reused; source 407 (1987) is not needed.
+
+| Component ID / title | Description | Attested years | Primary source | PDF evidence |
+| --- | --- | --- | --- | --- |
+| 11428 Ariake 77-17 | Quilted vinyl top, padded. | 1979–84 | 386 | 1979 p.9; 1980 p.9; 1981 p.11; 1982 p.15; 1983 p.17; 1984 p.25 |
+| 11429 Ariake 77-17-IS | Padded saddle. | 1979–80 | 386 | 1979 p.9; 1980 p.9 |
+| 11430 Ariake 77P-17 | Anatomically styled, vinyl top, padded. | 1981–83 | 402 | 1981 pp.10–11; 1982 pp.14–15; 1983 pp.15–16 |
+| 11431 Ariake 77CP-DX | Anatomically styled, padded. | 1981–84 | 402 | 1981 pp.10–11; 1982 pp.13–14; 1983 pp.9–12,14; 1984 pp.24–25 |
+| 11432 Ariake 77NP-DX | Anatomically styled, suede top, padded. | 1981–83 | 402 | 1981 p.10; 1983 pp.13,18 |
+| 11433 Ariake 77AP-DX | Anatomically styled, leather top, padded. | 1981 | 402 | 1981 p.10 |
+| 11434 Ariake 80N-DX | Nubuck leather top, padded. | 1982–83 | 403 | 1982 p.13; 1983 pp.5–8 |
+| 11435 Ariake 77C-DX | Vinyl saddle. | 1985–86 | 405 | 1985 p.17; 1986 p.22 |
+
+Source URLs and edition details are recorded in the year sections below.
+1979's scan separates bare 77-17-IS from explicitly named Jaguar-II 77IS and
+77CDX. Retain that distinction; 1985–86 bare 77C-DX is not an evidenced alias
+for Jaguar II 5234. Leave Jaguar 5233 and Jaguar II 5234 unchanged. 1980's
+reconstructed chart explicitly gives 77-17 for 110L as well as 110; there is no
+81-L alternative printed there.
+
+Applied eight new brand 525 / Saddles 17 rows with UUID load keys, catalogue
+provenance, generated search text and no group; filled 50 previously NULL links
+using exact spec/bike/year/source/value guards. Readback verified every component
+field and each changed spec against the approved proposal; all other specs and
+the existing Jaguar rows/links are unchanged. The five descriptive 77-17-IS specs
+use a bike/year override to 11429 because adding both 77-17 titles makes substring
+matching ambiguous.
+Frame-dependent alternatives 21066 (1982 110) and 22019 (1983 90) stay NULL;
+see [link decisions](../link-decisions.md). Generator guards and regression tests
+cover the alternative specs, full-code selection and separation from Jaguar II.
+Dry run across all 96 loaded catalogue CSVs changes exactly the intended 50
+mappings: 77-17 ×9, 77-17-IS ×5, 77P-17 ×9, 77CP-DX ×13, 77NP-DX ×3,
+77AP-DX ×1, 80N-DX ×8 and 77C-DX ×2; no losses or replacements. The two
+alternative specs remain NULL. Baseline generator/live comparison has 21,176
+paired specs, 21,161 unchanged and 15 pre-existing lost mappings. All 13 test
+files pass, including the new alternative/code-separation regression tests.
+
+SQL rerun affected zero rows. Final generator/live comparison across all 96
+catalogues retains the same 15 pre-existing lost mappings, with zero gained or
+changed mappings and no missing/ambiguous spec identities. Whole-database quality
+checks remain at zero errors and the same 1,951 review findings (1,566 incomplete
+dates, 326 date conflicts, 35 broad freewheel labels, 24 descriptions at limit);
+the new rows and links introduce no findings. Duplicate groups have no candidates.
+Near-pair review flags only 11428 / 11429: 1979 p.9 and 1980 p.9 list 77-17
+and 77-17-IS separately, so they are retained and registered in
+`REVIEWED_NOT_DUPLICATES`. No merges or date corrections were needed.
+Temporary SQL, scans, snapshots and review scripts were removed after validation.
+
 ## 1979 Miyata — loaded (2026-11-13, source 386)
 
 - CSV: `bike_specs/1979_miyata_spec.csv`; approved SQL:
