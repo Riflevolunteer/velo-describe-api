@@ -2,6 +2,18 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('1984 Motobecane Eco portraits do not resolve the overlapping Duopar rows', () => {
+  for (const records of [
+    [{ component_id: 4276, title: 'Huret Duopar Eco', category: 'Rear Derailleurs' }],
+    [{ component_id: 4400, title: 'Sachs Huret Duopar Eco 2690-00 H / GC', category: 'Rear Derailleurs' }],
+  ]) {
+    for (const [value, bike] of [['Huret Duopar Eco (PDF p.7)', 'Super Mirage'], ['Huret Duopar Eco (PDF p.9)', 'City-Becane']]) {
+      assert.equal(matchComponent(value, records, null, 'Rear Derailleur', 1984, bike), null)
+    }
+  }
+  assert.equal(matchComponent('Huret Club', [], null, 'Front Derailleur', 1984, 'City-Becane').component_id, 2379)
+})
+
 test('generic 1980-83 Super Record rear specs cannot select the atypical PAT. 80 specimen', () => {
   const early = { component_id: 4149, title: 'Campagnolo 4001, Super Record, PAT. 80 (first generation)', category: 'Rear Derailleurs' }
   const later = { component_id: 4151, title: 'Campagnolo 4001, Super Record (2nd gen, ver.1)', category: 'Rear Derailleurs' }

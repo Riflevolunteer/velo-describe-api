@@ -16,6 +16,13 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## 1984 Motobecane (loaded 2026-11-16)
 
+- City-Becane (bike 1335, loaded 2026-11-17): the p.9 portrait
+  identifies Duopar Eco, while p.10 says Duopar/Club. Keep rear spec 23182 NULL until
+  4276 / 4400 are reconciled; the explicit NULL guard prevents a unique 4276
+  substring match from choosing prematurely. The front plain Club uses the
+  existing Club II 2379 crosswalk. Weinmann 431 26×1.75 remains NULL: row 7780
+  is documented as BMX with no 26-inch size crosswalk. Generic cantilevers,
+  ratchet shifter, maker-only saddle and unnamed tyre model remain unlinked.
 - Le Champion LC40/LC41 and Prolight PL40/PL41 list alternative rim/tyre
   packages. Preserve both in each spec and leave NULL; the single Module E or
   Michelin BIB TS20 substring is not a link for the whole combined value.

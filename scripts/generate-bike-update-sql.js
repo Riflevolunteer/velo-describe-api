@@ -902,6 +902,7 @@ const COMPONENT_OVERRIDES = {
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "huret duopar titanium": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 8173 }],
     "huret duopar eco (pdf p7)": [{ bike: "Super Mirage", from: 1984, to: 1984, id: null }],
+    "huret duopar eco (pdf p9)": [{ bike: "City-Becane", from: 1984, to: 1984, id: null }], // Catalogue names Eco; 4276 / 4400 identity remains unresolved.
     "campagnolo record 1020": [{ bike: "Le Champion", from: 1984, to: 1984, id: 4126 }],
     "motobecane simplex 6600": [{ bike: "Team Champion", from: 1984, to: 1984, id: null }],
     "simplex 610": [{ bike: "Prolight", from: 1984, to: 1984, id: null }],
@@ -3946,7 +3947,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo alloy seat post': [{ from: 1978, to: 1978, id: null }], // No code to distinguish Record 1044 from Super Record 4051.
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "ctp5 seat post": [{ bike: "Prolight", from: 1984, to: 1984, id: 5857 }],
-    "sr ctp5e seat post w quick release": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 11316 }],
+    "sr ctp5e seat post w quick release": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 11316 }, { bike: "City-Becane", from: 1984, to: 1984, id: 11316 }],
     "ctp 6 seat post": [{ bike: "Grand Touring", from: 1984, to: 1984, id: 5861 }],
     "alloy ctp 6 seat post": [{ bike: "Super Mirage", from: 1984, to: 1984, id: 5861 }],
     // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
@@ -4341,7 +4342,7 @@ const COMPONENT_OVERRIDES = {
     "helicomatic (6) 13x22": [{ bike: "Prolight", from: 1984, to: 1984, id: 8131 }],
     "helicomatic (6) 13x26": [{ bike: "Grand Jubilee", from: 1984, to: 1984, id: 8131 }],
     "maillard helicomatic (6) 13x28": [{ bike: "Jubilee Sport", from: 1984, to: 1984, id: 8131 }],
-    "maillard helicomatic (6) 13x32": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 8131 }],
+    "maillard helicomatic (6) 13x32": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 8131 }, { bike: "City-Becane", from: 1984, to: 1984, id: 8131 }],
     'suntour pn 6000 brown 6 speed 14 28t': [{ bike: 'Street Winder', from: 1987, to: 1987, id: 7813 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour pn 6000 brown 6 speed 14 30t': [{ bike: 'Triton', from: 1987, to: 1987, id: 7813 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour pt 6000 brown 6 speed 14 30t': [{ bike: 'Terra Runner', from: 1987, to: 1987, id: 7813 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.

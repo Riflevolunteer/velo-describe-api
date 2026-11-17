@@ -63,11 +63,6 @@ Evidence and exact affected specs are in the
 ## Open: bikes to load
 
 - **Bikecology 5th edition, April 1976** complete-bike pages (pp. 87-111) as an `ingest-bike-specs` job.
-- **Motobecane 1984 City-Becane:** settle whether this city/off-road model
-  belongs in scope before preparing any additional ingestion. Retain
-  `/private/tmp/motobecane-1984-ingest-2026-11-16/` for the source scan,
-  transcription and CSV construction helper while that decision is pending.
-  [Catalogue evidence](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#1984-uk-distributor-edition--loaded-2026-11-16).
 
 ## Open: code and data hygiene
 
@@ -307,7 +302,7 @@ comparisons until their identities are settled.
 - **Other generic Huret Rival rear links:** identify remaining 4401 / 8957 generations from original photos or explicitly coded fitment evidence; year or finish alone does not distinguish them. Obtain missing gear ranges for rear specs **14439 / 15744 / 16412 / 16584 / 16604 / 16624** from new period parts/fitment evidence before treating their capacity as checked; the reviewed catalogue tables omit them. Affected specs and checked pages are in the [generic Rival review](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#generic-rival-bike-link-review--2026-11-15-pxr-80-correction-applied).
 - **Superbe Pro front mounting identification (reviewed 2026-11-15):** specs 920 (1983 Bianchi Professional), 3299 / 8179 (1985 / 1986 Raleigh Prestige), 20864 / 21809 (1982 / 1983 Pro Miyata) link to endless-band FD-2000 **2652**, but their text only names the group. Obtain original photos or period fitment documents to distinguish it from braze-on FD-2050 **8268** before confirming/changing each link. The manufacturer model/mounting distinction is established; the retained VeloBase page's conflicting metadata is not grounds to rename the row or repoint bikes. See [SunTour evidence and identifier review](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#fd-2000--fd-2050-mounting-and-retained-velobase-identifier--2026-11-15-review).
 - Huret: obtain a period crosswalk or coded specimen to distinguish 8961 AV62.1D from 8488 Rival 1086-00 for front specs **16411, 16583, 16603, 16623, 16661**. Review the manufacturer capacity conflict from a new maker document before changing definitions; see the [source comparison](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#rival-fronts-1086-00--av621d--2026-11-16-evidence-review). PXR 80 front/rear work is consolidated in its dedicated item above.
-- Identify the 1984 Peugeot Duopar rear specs **12163 / 13762** and Motobecane **22790 / 22811 / 22832** from cage/material/code evidence; reconcile 4276 / 4400 for the explicitly named Super Mirage Eco before linking. Resolve Motobecane fronts **22710** Rival, **22810** S PP and **22831** Challenger S. from variant evidence. See the Huret audit and existing Motobecane link decisions.
+- Identify the 1984 Peugeot Duopar rear specs **12163 / 13762** and Motobecane **22790 / 22811 / 22832** from cage/material/code evidence; reconcile 4276 / 4400 for the explicitly named Super Mirage Eco and City-Becane Eco **23182** before linking. Resolve Motobecane fronts **22710** Rival, **22810** S PP and **22831** Challenger S. from variant evidence. See the Huret audit and existing Motobecane link decisions.
 
 ## Open: source hunts
 

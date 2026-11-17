@@ -158,8 +158,8 @@
 
 - CSV: `bike_specs/1984_motobecane_gb_spec.csv`. Loaded 12 bikes, 245
   specs across 25 existing labels, with 62 component links. No new
-  component identities or spec labels. City-Becane is held pending the user's
-  scope decision; its transcription remains available for adding it later.
+  component identities or spec labels. These figures describe the initial load;
+  City-Becane was subsequently loaded and validated (2026-11-17, below).
 - **Market correction to the search below:** despite VeloBase's US index
   title and the CPSC specification body, PDF p.1 explicitly states import and
   distribution in the UK by Cycles Stratton (UK) Ltd., Nutbourne, Chichester.
@@ -228,12 +228,59 @@
   unrelated existing review candidates remain. Live Motobecane totals:
   1974 US 6 bikes/117 specs/44 links; 1975 US 8/154/65;
   1984 GB 12/245/62. These are DB counts, not the old generated-file headings.
-- Retained only for the pending City-Becane scope decision:
-  `/private/tmp/motobecane-1984-ingest-2026-11-16/catalogue.pdf`, `table.json`,
-  `transcription-notes.md` and `make-csv.py`. These preserve the source scan,
-  full 13-model transcription and CSV construction. Applied SQL, summary,
-  validation helper, disposable renders and regression SQL were removed
-  after readback/idempotency checks. The pre-task `bike-update.sql` was restored.
+- **City-Becane included as Mountain — loaded and validated 2026-11-17.**
+  PDF p.9 presents it alongside Mt. Becane and explicitly describes use in
+  off-road conditions and on city streets. The photograph and p.10 table show
+  26×2.125 tyres, cantilever brakes, derailleur gearing, a chrom-moly Inexternal
+  frame and no city accessories. The table gives 12 speeds, 32.5 lb and sizes
+  18 / 19½ / 22 inches. User approved including it as
+  `Mountain`, based on construction/equipment and the off-road wording. Preflight
+  found twelve existing 1984/source-429 models and no City-Becane row. P.9 identifies its rear as
+  Duopar Eco; the p.10 table prints Duopar/Club. Preserve that source distinction
+  in the CSV: rear `Huret Duopar Eco (PDF p.9)`, front `Huret Club`. The rear
+  stays NULL pending the existing 4276 / 4400 reconciliation.
+- **City-Becane application:** user approved SQL with "apply". Inserted bike
+  **1335** and specs **23174–23193**, across 20 existing labels, reusing GB
+  catalogue source **429**. The local CSV now includes it directly
+  before Mt. Becane; all twelve prior CSV rows are unchanged. No new component,
+  brand, source or label rows and no component date/description changes.
+  Six links: front Huret Club → **2379** (existing plain-Club/Club II
+  crosswalk, sold as Club from 1982), Nervar 3020 → **10981** (40×50 is within
+  the row's ring ranges), black Sedisport → **8765**, six-speed Helicomatic
+  13–32 → **8131**, SR CTP5E → **11316**, Helicomatic hub → **3387**. Every
+  linked component includes 1984 in its recorded availability. Seatpost and
+  cluster overrides extend the existing Mt. Becane decisions to City-Becane.
+- Unlinked text remains for the printed Tange AW27 headset, Espace chrome bar,
+  Polygon 10440 stem, handlebar ratchet shifter, generic cantilevers, Duopar Eco
+  rear, Shimano Fold-Fit pedals, maker-only `Sella Italia` saddle, Weinmann
+  431 26×1.75 rims and Hutchinson 26×2.125 tyres, plus frame/fork/gearing/extras.
+  Existing rim 7780 is sourced as 431 BMX without a documented 26-inch size;
+  no fitment/size equivalence is established here. Do not infer a brake model
+  or promote the generic shifter/saddle wording into a component identity.
+  The p.10 fork wording `Tandem type` is retained literally.
+- City-Becane readback matches every approved bike field, all 20 spec values,
+  raw labels, provenance references and six component IDs, including all fourteen
+  NULL mappings. Rear Duopar Eco is spec **23182**, retained NULL pending the
+  existing 4276 / 4400 identity review. All prior bike/spec rows, all component
+  identities and the source record are unchanged. Catalogue 429 now has
+  **13 bikes / 265 specs / 68 links**.
+- First SQL load: 50 statements, exactly one bike and twenty specs inserted;
+  the six links were set on insertion. Full rerun affected zero rows in every
+  statement. No brand, source, label, component or other table count changed.
+  All 13 test files pass; the existing quality-link-decisions test now covers
+  the City-Becane and Super Mirage Eco guards without another test file.
+- Generator comparison across all 96 loaded catalogues: all 21,176 prior
+  generated specs unchanged, exactly twenty new City-Becane specs. After load,
+  21,196 paired specs, 21,181 unchanged and the same fifteen pre-existing lost
+  mappings; zero gained/changed/missing/ambiguous identities. Whole-DB quality
+  findings are identical to the baseline: zero errors and 1,951 reviews
+  (1,566 incomplete dates, 326 date conflicts, 35 broad freewheel labels,
+  24 descriptions at limit). No new finding involves City-Becane.
+- Temporary SQL, snapshots, CSV backup and helpers were removed after validation,
+  together with the four original 1984-ingestion scratch files retained solely
+  for City-Becane. The maintained thirteen-model CSV is preserved. Source URL,
+  pages and the reconstruction evidence remain in these notes; no pending
+  City-Becane ingestion or retained scratch dependency remains.
 
 ### Initial search (superseded market identification)
 
@@ -247,8 +294,8 @@
 - The [VeloBase catalogue index](https://www.velobase.com/Pages/Resources/CatalogScans.aspx)
   labels it US and the table includes CPSC equipment; the actual UK distributor
   imprint above supersedes that market identification. PDF p. 9 calls the
-  mountain bike the 1984 model. Review City-Becane against the scope rules
-  before extraction; the catalogue includes it alongside Mt. Becane.
+  mountain bike the 1984 model. City-Becane is presented alongside Mt. Becane;
+  its scope was subsequently approved on 2026-11-17 as recorded above.
 - Other indexed options: 1976 US, 1978 and 1979 US. The existing processed
   catalogue notes cover 1974 and 1975 only. The 1984 edition is recommended
   to extend coverage into another decade, rather than on an assumed link rate.
