@@ -1838,7 +1838,9 @@
 - 7408 B700 disc brake: description only, adds rear B-700, front B-701 and
   disc hub H-190 (source_ref -> 178).
 - Inserted (1974-1974, UUID source_id, group_id NULL): 8766 L-293 / L-294 /
-  L-296 Unishift (one-way clutch; successor LB-200 Uni Shift 7119, 1975),
+  L-296 Unishift (one-way clutch; later LB-200 code). This catalogue-only
+  row 8766 and LB-200 row 7119 were consolidated into specimen 6129 in the
+  approved 2026-11-17 review below. Other insertions:
   8767 L-545 / L-546 New Long Stem (long blades, 7/8in; L-535 / L-536 short
   versions are already in 7385), 8768 D-290 Lark Mini (mini-cycle, about
   190g), 8769 H-900 Combi 4-speed / Unit hub, 8770 D-702 mini-cycle disc
@@ -2484,3 +2486,71 @@
   sequence inference. Official PDF downloads/renders were discarded after
   their page references and findings were recorded. Correction SQL, comparison
   script and baseline snapshots removed after readback and idempotency validation.
+
+
+## Unishift specimen and catalogue consolidation — 2026-11-17, applied and validated
+
+User approved the consolidation; applied and read back on 2026-11-17.
+The guarded SQL and task-created comparison scans were removed after validation.
+Original specimen reference:
+https://www.velobase.com/Pages/ViewComponent.aspx?ID=A8E88184-B947-41FD-8815-4C53908E80C1.
+Restoration fields and retired GUIDs are retained below.
+
+- Re-read 6129's original VeloBase fields and photograph (source_id
+  `A8E88184-B947-41FD-8815-4C53908E80C1`): double down-tube clamp set,
+  aluminium levers, rubber tips marked Unishift, recessed round fixing points,
+  pressed Shimano clamp bridge; recorded actual weight 99g. Its imported
+  1980-1980 dates derive from an imprecise decade field, not a dated model.
+- Compared Japanese Shimano 1974 printed p.5 (L-293 single, L-294 double
+  down-tube, L-296 stem), JBM July 1974 p.20 (L-294 1-1/8in, L-298 0.833in)
+  and December 1974 / 1975-model catalogue p.20 (LB-200, single/double,
+  1-1/8in down-tube and 0.833in stem). The same distinctive illustrated
+  Uni Shift design has rubber tips, the small recessed lever fixing points,
+  pressed bridge and one-way-clutch mechanism. The 1975 page distinguishes
+  it from LB-300 Super Shifter (special cam) and LB-400 Fingertip (spiral
+  balance spring). No independent construction/generation difference was
+  found between these Unishift records. Consolidation as a renumbered family
+  is an inference from the matching manufacturer illustrations/specifications,
+  not a newly discovered explicit manufacturer crosswalk.
+  Sources:
+  https://cyclespeugeot.web.fc2.com/catalog/shimano74/1974shimano_05.jpg
+  https://www.disraeligears.co.uk/site/jbm_-_japans_top_bicycle_parts_makers_page_20.html
+  https://www.disraeligears.co.uk/site/a_complete_line_of_shimano_1975_page_20.html
+- Preserved specimen row **6129** and its VeloBase GUID, brand51,
+  category19, NULL group/image. New title:
+  `Shimano L-293 / L-294 / L-296 / L-298 / LB-200, Unishift`.
+  Dates **1974-1979**, source_ref **24**. 1974 is directly attested; retain
+  7119's existing 1979 upper bound, which is not a newly proven discontinuation.
+  Original 6129 title/search text `Shimano unishift`, description
+  `Shimano unishift, Japan, 99 grams (Actual)`, dates 1980-1980, source_ref1.
+  New search text is generated with the maintained search-text helper.
+- Applied 218-character description:
+  `One-way clutch friction levers, alloy with rubber tips and special spring. 1974: L-293 single/L-294 double down-tube 1-1/8in, L-296 stem 7/8in, L-298 0.833in; 1975: LB-200 family. Double down-tube specimen: 99g actual.`
+  Edition references distinguish earlier/later code sets and mounting options.
+- Retired **7119**, `Shimano LB-200, Uni Shift`, GUID
+  `205227f5-bc3e-11f1-a2df-02fea3763e8d`, dates1975-1979, source_ref24;
+  description was `Shimano LB-200, Uni Shift, Japan. One-way clutch down-tube shift lever with special spring, light alloy, 1-1/8 in. 1975 catalogue.`
+  Retired **8766**, `Shimano L-293 / L-294 / L-296 / L-298, Unishift`, GUID
+  `81c32295-ca41-11f1-a2df-02fea3763e8d`, dates1974-1974, source_ref271;
+  description was `One-way clutch friction shift lever: L-293 single and L-294 double for the down tube (1-1/8in), L-296 double for the handlebar stem (7/8in), L-298 double for the 0.833in tube. Succeeded by LB-200 Uni Shift in 1975`.
+  All existing codes, mounting distinctions and measured weight are retained.
+  For restoration, reinsert these exact IDs/GUIDs with brand51/category19,
+  NULL group/image and search text generated from their old titles; restore
+  6129's original fields above. No data_source rows are removed.
+- Pre-application checks: all three rows have zero live bike links, NULL
+  stored images and no generator overrides or reviewed-pair registrations.
+  Schema inspection found bike_spec as the only other component_id column.
+  Simulated consolidation across all **96 CSVs / 21,176 generated specs**:
+  zero changes to spec content or mappings. These are generated counts, not
+  live DB coverage. Description fits varchar(255). SQL DELETE self-join syntax
+  verified with EXPLAIN only; no writes. Expected one UPDATE and two DELETEs;
+  deletion guards require the enriched survivor and no bike references.
+- Application affected one updated component and two deleted catalogue rows.
+  Readback checked every survivor field: title, 218-character description,
+  search text, 1974-1979 dates, source_ref24, original specimen GUID and
+  unchanged brand/category/group/image. Both retired IDs are absent, with
+  zero bike references to any of the three IDs. The affected model/code
+  search returns only 6129. Rerun affected zero rows.
+  Post-application reconstruction of the original three rows versus the
+  live consolidated component set across all 96 CSVs / 21,176 generated
+  specs found zero spec content or mapping changes. No bike links changed.
