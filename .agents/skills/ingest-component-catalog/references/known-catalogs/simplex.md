@@ -730,8 +730,9 @@ identify the 1980s rear specs.
   SL / PH 18 SL / PH 50 S "S001T", 1989 Dauphiné "SO 01 T"; the 1989 catalogue lists S002 only); 7308 SX1 T 1984 -> 1986
   (1986 P 10 L, PH 20 M "SX1T/SP"); 7309 SLJ5500 CP 1984 -> 1986 (1986 PRO 10, PY 10 M); 4655 SLJ6600 T 1984 -> 1988
   (PY 10 FC 1985, 1986, 1988).
-- 4649 "SLJ SX660, Super LJ": NULL dates -> 1982-1984 from the 1982 / 1984 Peugeot PH 12 "SX 660" only. Identity still
-  open (SX 6xx series or SLJ6600 4654 / 4655); title kept until a Simplex source prints SX 660.
+- 4649 "SLJ SX660, Super LJ": NULL dates -> 1982-1984 from the 1982 / 1984 Peugeot PH 12 "SX 660" only. The
+  identity question left open here was subsequently resolved from the actual SX 660 maker stamping in the
+  2026-11-17 review below; no SX610/SLJ6600 cross-identification was made.
 - 4645 retitled "Simplex Criterium" -> "Simplex AR 637 NI, Criterium" (`search_text` "Simplex AR 637 NI Criterium";
   description lead updated). 4644 keeps "Simplex Criterium" (1965-70 spans AR 537 NI and AR 637 NI).
 - Validation: 6 guarded updates, rerun 0. All 93 CSVs regenerated before/after: output identical (no mapping change).
@@ -786,3 +787,55 @@ identify the 1980s rear specs.
 - Validation: 15 rows as planned (6 spec, 9 component updates, 1 delete); rerun 0; no dangling references. All 93 CSVs
   regenerated: only the 5 Super LJ links (2589 -> 2587) and the PA 60 back-fill changed. `quality-report` has no
   findings on the touched rows. Simplex front specs 241 / 313 linked (was 240).
+
+
+## SX660 manufacturer-marking review — 2026-11-17, applied and validated
+
+User approved the metadata correction; applied and read back on 2026-11-17.
+Task-created SQL and marking photographs were removed after readback, mapping
+comparison and the zero-change rerun; the source image URLs below retain evidence.
+
+- The original specimen's **outer link visibly carries SX 660**, above the
+  orange Simplex badge. The reverse photograph reads PRESTIGE SIMPLEX /
+  SUPER L.J. These are markings on the part, independent of the contributor's
+  combined model field SLJ SX660. They establish SX660 as an actual marked
+  model; a missing listing in the held retail catalogues does not justify
+  changing it to SX610 or SLJ6600. Super LJ remains supported as the inner
+  marking, rather than as an inferred SLJ6600 part-number prefix.
+  Original reference:
+  https://www.velobase.com/Pages/ViewComponent.aspx?ID=A0D293F5-0F66-4B70-8857-1EF38057E2CD
+  Outer marking photo:
+  https://www.velobase.com/CompImages/RDerailleur/8A370844-710B-4E59-91E4-03BD230C70C6.jpeg
+  Inner marking photo:
+  https://www.velobase.com/CompImages/RDerailleur/936D29C5-CFB5-4A30-8FB5-F195F344D17C.jpeg
+- Applied row **4649** title `Simplex SLJ SX660, Super LJ` ->
+  `Simplex SX660, Super LJ`; search_text `Simplex SLJ SX660 Super LJ` ->
+  `Simplex SX660 Super LJ`. Retain original GUID
+  `A0D293F5-0F66-4B70-8857-1EF38057E2CD`, source_ref1, group229, brand177,
+  category15, NULL image, actual 266g and fitment-derived 1982-1984 dates.
+  New description:
+  `Short-cage friction rear derailleur with cable adjuster. Outer link marked SX 660 / Simplex; inner link marked PRESTIGE SIMPLEX SUPER L.J. 266g actual. Dated from Peugeot PH12 fitment.`
+  Old description for restoration:
+  `Simplex SLJ SX660, Super LJ, France, 266 grams (Actual). Dated from 1982 / 1984 Peugeot PH 12 fitment only.`
+  Restore only title, search text and description on this GUID if needed.
+- Keep the independent SX610 and SLJ6600 records; this review establishes
+  the specimen's own code, not a model crosswalk, capacity or production
+  boundary. Do not copy another model's catalogue capacities or weight.
+  Existing PH12 specs **11465** (1982 NL/source254) and **12035** (1984 FR/
+  source257) already print SX 660 / SX660 and link to 4649. Both stay linked;
+  no source CSV edits or generator changes are needed.
+- Pre-application validation: simulated the retitle against live component
+  and brand rows over **96 CSVs / 21,176 generated specs**. Zero changes to
+  spec content or mappings, including the two PH12 links. These are generated
+  counts, not live coverage. Description is below 255 characters. Expected
+  one component UPDATE, no inserts, deletes, dates, groups or link changes.
+  Application affected exactly one component. Readback checked every field
+  on 4649 against the approved row and confirmed all fields on 4654/4655
+  unchanged. PH12 links 11465/12035 remain 4649. Rerun affected zero rows.
+  Post-application reconstruction of the original title versus the live
+  component set over all 96 CSVs / 21,176 generated specs found zero spec
+  content or mapping changes.
+- The separate PA60 issue remains open: live **10092** (Front Derailleur)
+  links to AV3 8794 as recorded in the 2026-11-15 front audit, but **10093**
+  (Rear Derailleur) `Simplex Criterium` is still NULL. The front correction
+  does not identify the rear as AR637 NI and must not close that question.

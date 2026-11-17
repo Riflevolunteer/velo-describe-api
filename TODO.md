@@ -300,9 +300,8 @@ comparisons until their identities are settled.
 - **SunTour XCE crank specimen:** identify the original uncoded reference behind
   2002 from a readable marking or independent XE00/XE01 crosswalk before merging.
   [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#xce-crank-dating-and-tangent-brake-link-review--2026-11-17-applied-and-validated).
-- **Simplex 4649:** find a manufacturer source printing SX 660 before
-  retitling it as an SX 6xx or SLJ6600 variant. Identify the 1978 Peugeot PA 60
-  Criterium rear from period evidence; the name alone does not establish AR 637 NI.
+- **1978 Peugeot PA 60 rear 10093:** obtain a period photo or parts crosswalk
+  to identify its Criterium model; the name alone does not establish AR 637 NI.
 - **1987 Bianchi fitment:** identify crank specs 1107 / 1127 from original
   markings/parts evidence or review deliberately unlinking them; obtain a coded
   fitment/photo for Cronosprint post 1133 before choosing 600BA / 600CA / 600DD.

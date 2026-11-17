@@ -507,11 +507,16 @@
   substring match; cleared, and 'clb competition' ranged to <= 1979 / 'clb competition aerodynamic' -> null.
 - Left unlinked: Atom 500 RA, Sakae SP 150, Spidel 700 RA, Lyotard 77R pedals; Lightrace headsets; Reydel
   Profil, Selle Italia CX, Royal 463/2 saddles; Solida 5270A, Sakae Custom cranks; Maillard Helicomatic
-  and 6-speed Normandy freewheels; Maillard 700 SH hubs; SX 660 (only the undated SLJ SX660 row); CLB
+  and 6-speed Normandy freewheels; Maillard 700 SH hubs; CLB
   Competition (1950-70 rows), Ofmega pedals; Mafac Promotion levers (variants).
 - Regression: all 53 other catalogues' link counts unchanged. A duplicate-key scan of COMPONENT_OVERRIDES
   found three older duplicates, left alone: Shifters 'suntour accushift plus x press' and 'suntour superbe
   pro', Pedals 'sr sp12 platform alloy'.
+
+- SX660 follow-through verified 2026-11-17: 1982 NL PH12 rear spec 11465
+  links to 4649, now `Simplex SX660, Super LJ`. Its photographed outer link
+  carries SX 660; the earlier missing/undated-row hold above is superseded.
+  See the [Simplex marking review](../../../ingest-component-catalog/references/known-catalogs/simplex.md#sx660-manufacturer-marking-review--2026-11-17-applied-and-validated).
 
 ## 1983 Peugeot — `1983_peugeot_spec.csv` (CA, data_source 255: 11 bikes, 133 specs, 43 linked) and `1983_peugeot_nl_spec.csv` (NL, data_source 256: 21 bikes, 182 specs, 25 linked)
 
