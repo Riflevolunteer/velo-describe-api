@@ -1,5 +1,9 @@
 # Sakae Ringyo (SR) catalogs processed so far
 
+## MTP-100 10472 — German Motobecane 1986 fitment, applied 2026-11-19
+
+Source465, printed p.9, fits sealed-bearing MTP1009/16 to T50 Tracker. The SR manufacturer sheet identifies MTP100's sealed bearings/threading and distinguishes cup-and-cone MTP110/10473; the bike panel does not print a maker. Extended10472 `year_to` **1985→1986**, retaining `year_from1983`; `source_ref355→465`. The earlier1985 endpoint below was an interpretation of an undated mid-1980s chart, not a documented discontinuation. No change to10473. Duplicate review found no candidate involving10472; bike-link readback, zero-change rerun and integrity checks pass. [Catalogue evidence, restoration values and validation](../../../ingest-bike-specs/references/known-catalogs/motobecane.md#german-1986-catalogue--dating-and-source-verification-2026-11-18).
+
 ## Sakae Ringyo (SR) "Sakae Bicycle Parts" Catalog No. P-5 — Aug 1980 (cyclespeugeot.web.fc2.com, 12pp)
 
 - `data_source` 123, label "Sakae Ringyo (SR) Sakae Bicycle Parts Catalog No. P-5

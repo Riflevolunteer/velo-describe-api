@@ -15,7 +15,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Bike catalogues
 
-- Verify the dating and transcribe the German Motobecane catalogue indexed 1986, then investigate remaining 1970–90 edition gaps using the [recorded source leads](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#19701990-gap-source-leads--2026-11-18).
+- Investigate remaining Motobecane 1970–90 edition gaps using the [recorded source leads](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#19701990-gap-source-leads--2026-11-18).
 - Decide Panasonic brand treatment, then ingest the 1985–89 US bikes from [recorded sources](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md).
 - Load La Bicicletta’s May 1984 racing-bike buyer’s guide.
 - Assess the bikalog backlog: Koga-Miyata 1980–2001, Nishiki 1987, Raleigh 1991, Colnago C35 1989.

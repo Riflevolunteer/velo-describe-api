@@ -1,5 +1,9 @@
 # Michelin catalogs processed so far
 
+## Elan 6834 — German Motobecane 1986 fitment, applied 2026-11-19
+
+Source465, printed p.15, explicitly fits Michelin Elan700x23C to C352E Super-Mirage. Extended `year_to` **1985→1986**, retaining `year_from1975`; `source_ref381→465`. This attests catalogue availability, not a manufacture endpoint. Old source/date values above permit restoration. Duplicate review found no candidate involving6834; bike-link readback, zero-change rerun and integrity checks pass. [Catalogue evidence and validation](../../../ingest-bike-specs/references/known-catalogs/motobecane.md#german-1986-catalogue--dating-and-source-verification-2026-11-18).
+
 ## Wildgripper Polish product/range sheets — applied and validated 2026-11-17
 
 - [Source PDF, two sheets](https://bikalog.org/api/view/Michelin/1999/michelin.pdf), fully read visually, with text layer used only as assistance. Sheet 1 names **Harfa-Harryson** as Polish distributor and prints **New '99** on Hot S, Country, Comp S and Comp. Use 1999 as an attestation for its six named models, not an inferred manufacturing interval. Sheet 2 is a Polish Wildgripper range table with a **1998 Bibendum emblem**; its publication year and issuer are unprinted. The emblem does not establish publication in 1998, and the shared archive path does not prove the two sheets are one edition. Keep the 13 sheet-2-only identities' years NULL.

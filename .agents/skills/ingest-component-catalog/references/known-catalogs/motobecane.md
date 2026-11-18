@@ -1,5 +1,9 @@
 # Motobécane catalogs processed so far
 
+## Nervar 2010/2011 10984 — German 1986 fitment, applied 2026-11-19
+
+German Motobecane1986 source465, printed p.13, names Nervar2010 chrome double40x52 on BC121 Nomade. Extended10984 `year_to` **1985→1986**, retaining `year_from1985`; `source_ref381→465`. The maker identity/specification remains supported by the May1985 parts catalogue below; this later bike catalogue extends observed availability. No model2011-specific fitment is claimed. The old source/date values permit restoration. Duplicate review found no candidate involving10984; bike-link readback, zero-change rerun and integrity checks pass. [Catalogue evidence and validation](../../../ingest-bike-specs/references/known-catalogs/motobecane.md#german-1986-catalogue--dating-and-source-verification-2026-11-18).
+
 ## Motobécane dealer spare parts catalogue, "Gamme 1985, Série course, Pays France", édition mai 1985 (Velo Vintage à Gogo t26128) — data_source 381
 
 - Source: velovintageagogo.com/t26128 ("extrait catalogue officiel

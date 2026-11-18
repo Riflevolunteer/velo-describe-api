@@ -4,6 +4,18 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## German Motobecane 1986 — prepared link review, 2026-11-19
+
+Applied as reviewed on2026-11-19, source465; all deliberately unlinked values read backNULL.
+
+- C662E SuperRecord's printed CampagnoloTRIUMPH equipment supports selected Triomphe identities, not a SuperRecord group. Front plain/LX, rear first-style/S3 and hub flange variants are not distinguished by this preview; leave those linksNULL. The bare Turbo saddle likewise does not select a cosmetic/version specimen.
+- C502 LeChampion's uncoded HuretNewSuccess fitment does not establish the exact AV66.3D/AR47.1D pair versus other documented versions. Explicit scoped NULLs suppress the current automatic picks8960/4402. Its bare StronglightA9 does not supply locknut/version evidence; its unqualified MichelinHi-Lite does not select Comp/Pro/Road or the1996 HiLite10530.
+- C153S JubiléSport's **Shimano105NEW** lacks an exact generation/part-code crosswalk: explicit scoped NULLs for headset, brakes, crank, front/rear derailleurs and cassette prevent guessing GoldenArrow or later1050 parts. Keep the source's combined MICHELIN/HUTCHINSONHP22 tyre wording unlinked.
+- C352E Super-Mirage's HuretPILOTE/RIVAL wording lacks explicit front/rear assignment. KC152/KC152D's bareHuret does not supply a model, and their Rigida13/20 lacks a tyre diameter selecting700C versus27-inch; keep thoseNULL. ThunBetaII has no suitable identified row. No hub maker is inferred from C352E's cluster-only Naben line.
+- Plain/compound Atom/Normandy, uncoded HelicoSport/HelicoSeal variants, unqualified Maillard700/700SH clusters, WeinmannA129 finish/version, Symetric cosmetic variants, unnumbered cantilevers, generic/tandemTA cranks and unidentified house equipment remain literal text. New source/variant evidence is required before choosing a component; this review does not create a generic rematching task.
+
+[Loaded catalogue, source pages and validation](known-catalogs/motobecane.md#german-1986-catalogue--dating-and-source-verification-2026-11-18).
+
 ## Performance 1985–86 component follow-through (2026-11-18)
 
 New Dia-Compe 730G **11696** does not identify the bare 730 Miyata values as G,
