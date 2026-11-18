@@ -153,6 +153,7 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Saddles
 
+- c.1977 Motobecane US: Grand Record Brooks Professional remains NULL without rivet/version evidence. Mirage/Super Mirage/Grand Touring VGT Luxe stays NULL across the 1976/1978 generation-date gap; no date extension inferred. Le Champion Record racing brakes lack reach/CPSC version, and Le Champion/Team Champion generic Campagnolo posts lack Record/Super Record identification. Alternatives and generic values remain text; detailed source/mapping evidence in the Motobecane catalogue notes.
 - c.1973 Motobecane US: Grand Touring table/portrait disagree on padded versus Ideal 80 saddle and SunTour VGT versus Huret Lux rear. Preserve both attributed values with NULL links. Mirage Simplex Prestige front/rear lacks variant evidence; three Stronglight Competition headsets lack locknut evidence; Grand Record/Le Champion Brooks Professional lacks Team Professional rivet evidence. Scoped NULL guards preserve these decisions without changing other catalogue mappings. Revisit only with distinguishing edition-specific evidence.
 - Guard added 2026-11-17: 1973 Peugeot PX 10 spec **7624**, `Brooks Professional
   or Ideale 90`, stays NULL under an explicit generator override. This enforces

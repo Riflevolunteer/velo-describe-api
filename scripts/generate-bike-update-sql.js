@@ -105,6 +105,11 @@ function dataSourceSubquery(label) {
 // catalogue"); files without one keep the original label so loaded rows still match.
 // Separate same-year brochures without inventing another bike brand or market.
 const CATALOGUE_EDITIONS = new Map([
+  ['1977_motobecane_us_spec.csv', {
+    label: 'Motobecane US catalogue (c. 1977)',
+    citation: '1977_motobecane_us_spec.csv; https://www.bikecatalogs.com/download/3784; original scans http://bulgier.net/pics/bike/Catalogs/Motobecane/77/; archive attribution c.1977, no printed year established; US market explicit PDF p.2; specification tables pp.10-11, checked against portraits pp.4-9.',
+    country: 'US',
+  }],
   ['1973_motobecane_us_spec.csv', {
     label: 'Motobecane US catalogue (c. 1973)',
     citation: '1973_motobecane_us_spec.csv; https://www.bikecatalogs.com/download/3780; archive attribution c.1973, no printed year established; US dealer stamp PDF p.8; specifications p.8, portraits pp.4-7. Grand Touring portrait/table conflict on saddle and rear derailleur preserved.',
@@ -924,6 +929,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    "huret eco or suntour seven gt": [{"bike":"Nomade","from":1977,"to":1977,"id":null}], // c.1977 Motobecane US, specifications pp.10-11.
+    "suntour vgt luxe": [{"bike":"Mirage","from":1977,"to":1977,"id":null},{"bike":"Super Mirage","from":1977,"to":1977,"id":null},{"bike":"Grand Touring","from":1977,"to":1977,"id":null}], // c.1977 Motobecane US, specifications pp.10-11.
+    "suntour cyclone gt": [{"bike":"Grand Jubile","from":1977,"to":1977,"id":4738}], // c.1977 Motobecane US, specifications pp.10-11.
     // c.1973 Motobecane: portrait and table conflict; retain both, choose neither.
     'suntour vgt wide ratio (table); huret lux wide ratio (portrait)': [{ bike: 'Grand Touring', from: 1973, to: 1973, id: null }],
     // Bottecchia US III, September 1972, pp.2–7; keep the named rear equipment distinct.
@@ -1726,6 +1734,8 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    "campagnolo record side pull racing": [{"bike":"Le Champion","from":1977,"to":1977,"id":null}], // Reach / CPSC version not established by c.1977 Motobecane text.
+    "weinmann 999 center pull de luxe quick release fittings": [{"bike":"Grand Record","from":1977,"to":1977,"id":7929}], // c.1977 Motobecane US, specifications pp.10-11.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'weinmann vainqueur 999 center pull quick release': [{ from: 1978, to: 1978, id: 7929 }],
     'weinmann carrera side pull': [{ from: 1978, to: 1978, id: 1167 }],
@@ -2345,6 +2355,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    "campagnolo record 42x53 with guard": [{"bike":"Le Champion","from":1977,"to":1977,"id":1496},{"bike":"Team Champion","from":1977,"to":1977,"id":1496}], // c.1977 Motobecane US, specifications pp.10-11.
     'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 1496 }], // Bottecchia US III: road Nuovo Record, contemporary 1049 v4.
     'campagnolo record cotterless chainwheel & cranks': [
       { bike: 'Eddy Merckx Competition Model 100', from: 1973, to: 1973, id: 1496 },
@@ -2801,7 +2812,7 @@ const COMPONENT_OVERRIDES = {
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'italia super legeria skin leather top': [{ from: 1978, to: 1978, id: 5504 }],
     // c.1976 Motobecane p.15: treated Special, not the basic 80 with built-in adjustment.
-    'ideale 80 special (treated)': [{ bike: 'Grand Jubile', from: 1976, to: 1976, id: 5652 }],
+    'ideale 80 special (treated)': [{ bike: 'Grand Jubile', from: 1976, to: 1977, id: 5652 }],
     // Bike Nashbar Spring 1988 rows (source 422, 2026-11-16); see known-catalogs/cross-catalog-notes.md.
     'vetta maxi anatomic': 11337, // 1987 Peugeot Alpine Express
     'vetta maxi crosta': 11337, // 1986-87 Miyata 1000 / Ridge Runner (crosta = split-leather cover)
@@ -2896,7 +2907,7 @@ const COMPONENT_OVERRIDES = {
     'brooks b17 leather': 5315, // Brooks B17 Champion Standard
     // Brooks c. 1991-95 brochure: the plain Professional (normal rivets, 10057) and the large-rivet
     // Team Professional (5303) are separate; the 1981 Bikecology sheet already has both rivet sizes.
-    'brooks professional': [{ bike: 'Le Champion', from: 1973, to: 1973, id: null }, { to: 1980, id: 5303 }, { from: 1981, id: 10057 }], // Team Professional / Professional
+    'brooks professional': [{ bike: 'Grand Record', from: 1977, to: 1977, id: null }, { bike: 'Le Champion', from: 1973, to: 1973, id: null }, { to: 1980, id: 5303 }, { from: 1981, id: 10057 }], // Team Professional / Professional
     'brooks professional team special leather': 5304, // Brooks Team Professional "Team Special"
     'brooks professional leather team special': 5304, // 1974 Raleigh word order
     'brooks professional team special': 5304, // 1975 Raleigh
@@ -2957,6 +2968,9 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    "philippe professional cotton tape": [{"bike":"Grand Record","from":1977,"to":1977,"id":2895},{"bike":"Le Champion","from":1977,"to":1977,"id":2895}], // c.1977 Motobecane US, specifications pp.10-11.
+    "pivo professional cotton tape": [{"bike":"Grand Jubile","from":1977,"to":1977,"id":11169}], // c.1977 Motobecane US, specifications pp.10-11.
+    "pivo professional randonneur bend cotton tape": [{"bike":"Grand Touring","from":1977,"to":1977,"id":11169}], // c.1977 Motobecane US, specifications pp.10-11.
     // Koga-Miyata 1986 / Trek 1987 reviewed fitments; separate SR and H.L. MTB-210.
     'sr mtb 204 alloy': [{ bike: 'Terra Runner OR', from: 1985, to: 1985, id: 11690 }],
     'sr mtb 204': [{ bike: 'K2', from: 1986, to: 1986, id: 11690 }],
@@ -3726,6 +3740,7 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    "campagnolo record with reflectors": [{"bike":"Team Champion","from":1977,"to":1977,"id":3708}], // c.1977 Motobecane US, specifications pp.10-11.
     'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 3708 }], // Bottecchia US III: Record Strada.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'campagnolo 1037a with reflectors christophe toe clips and straps': [{ from: 1978, to: 1978, id: 3709 }],
@@ -4158,7 +4173,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo nuovo record': [{ to: 1985, id: 5749 }], // Campagnolo 1044, Record
     'campagnolo gran sport': 5734, // Campagnolo 3800, Gran Sport
     'campagnolo': null, // brand alone does not identify a seatpost model
-    'campagnolo seat post': [{ to: 1985, id: 5749 }], // 1974 / 75 Motobecane, split out of the Saddle cells
+    'campagnolo seat post': [{ bike: 'Le Champion', from: 1977, to: 1977, id: null }, { bike: 'Team Champion', from: 1977, to: 1977, id: null }, { to: 1985, id: 5749 }], // c.1977 does not distinguish Record / Super Record; retain earlier catalogue decisions.
     'campagnolo alloy': [{ to: 1985, id: 5749 }], // 1974 Raleigh: Campagnolo 1044, Record
     'campagnolo super nuovo record': [{ from: 1974, to: 1980, id: 5759 }], // 1974 Raleigh Team Professional: Campagnolo 4051, Super Record
     'shimano dura ace': [{ from: 1990, to: 1993, id: 5893 }, { from: 1994, id: 5895 }], // SP-7400-A / SP-7410 — 1993 Bianchi
@@ -4210,6 +4225,7 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    "sedicolor gold and black": [{"bike":"Grand Record","from":1977,"to":1977,"id":8764}], // c.1977 Motobecane US, specifications pp.10-11.
     'black': null, // Colour alone names no maker/model; 1986 Falcon specs 16332/16352 must not inherit 1996 Sachs SC 40 Black.
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "sedisport chain": [{ from: 1984, to: 1984, id: 8765 }],
@@ -4409,6 +4425,7 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    "atom 14x26": [{"bike":"Le Champion","from":1977,"to":1977,"id":2044}], // c.1977 Motobecane US, specifications pp.10-11.
     'quintuple regina oro': [{ bike: 'Professionale', from: 1972, to: 1972, id: 2182 }], // Bottecchia US III: five-speed Extra Oro, not six-speed 2194.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'maillard atom 700 14 x 24 black': [{ from: 1978, to: 1978, id: null }],
