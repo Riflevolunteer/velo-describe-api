@@ -105,6 +105,11 @@ function dataSourceSubquery(label) {
 // catalogue"); files without one keep the original label so loaded rows still match.
 // Separate same-year brochures without inventing another bike brand or market.
 const CATALOGUE_EDITIONS = new Map([
+  ['1979_motobecane_us_spec.csv', {
+    label: '1979 Motobecane (US) catalogue',
+    citation: '1979_motobecane_us_spec.csv; https://www.bikecatalogs.com/download/3786; original https://velobase.com/CatalogScans/Motobecane/1979_Motobecane_catalog.pdf; printed 1979 range PDF p.16, warranty effective July 1 1978; US audience/CPSC pp.2,16; specifications pp.13-14, portraits pp.3-12.',
+    country: 'US',
+  }],
   ['1977_motobecane_us_spec.csv', {
     label: 'Motobecane US catalogue (c. 1977)',
     citation: '1977_motobecane_us_spec.csv; https://www.bikecatalogs.com/download/3784; original scans http://bulgier.net/pics/bike/Catalogs/Motobecane/77/; archive attribution c.1977, no printed year established; US market explicit PDF p.2; specification tables pp.10-11, checked against portraits pp.4-9.',
@@ -561,6 +566,12 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "suntour compe v": [{"bike":"Mirage","from":1979,"to":1979,"id":2603},{"bike":"Super Mirage","from":1979,"to":1979,"id":2603},{"bike":"Inter Club","from":1979,"to":1979,"id":2603}],
+    "shimano altus lt": [{"bike":"Grand Sprint","from":1979,"to":1979,"id":2485}],
+    "suntour sl": [{"bike":"Grand Touring","from":1979,"to":1979,"id":null}],
+    "suntour cyclone gt": [{"bike":"Grand Jubile","from":1979,"to":1979,"id":null}],
+    "shimano altus st rs": [{"bike":"Nomade Sprint","from":1979,"to":1979,"id":null}],
     // Bottecchia US III, September 1972: grouped Nuovo Record equipment on pp.2–3.
     'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 2297 }],
     // These rear-mech names do not identify the accompanying front derailleur.
@@ -758,7 +769,7 @@ const COMPONENT_OVERRIDES = {
     'sachs huret rider 2': [{ from: 1989, to: 1989, id: null }], // 1989 Peugeot Lautaret / Lavandou: 42x52 doubles; 8962 is the triple AV 62.1 T and no double Rider front row exists (unlinked 2026-11-15)
     'sachs huret rider': [{ bike: "P 10 S Z 'Avoriaz'", from: 1989, to: 1989, id: null }, { id: 8962 }], // 1989 Peugeot Fun Star / US Express (triples): AV 62.1 T Rider / Duopar; Avoriaz is a 42x52 double (unlinked 2026-11-15)
     'huret rider': [{ bike: "P 15C W 'Manosque'", from: 1987, to: 1987, id: null }, { id: 8962 }], // 1986-88 Peugeot / Raleigh Teton triples: as above; 1987 Manosque is a 42x52 double (unlinked 2026-11-15)
-    'shimano 600 ex': [{ from: 1981, to: 1981, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // 1981 Criterium: EC-630 / FD-6200 Arabesque (1978-84; FD-6207 is 1984-87) // Road Ace: FD-6207 600EX (1984-87)
+    'shimano 600 ex': [{"bike":"Grand Record","from":1979,"to":1979,"id":2480}, { from: 1981, to: 1981, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // 1981 Criterium: EC-630 / FD-6200 Arabesque (1978-84; FD-6207 is 1984-87) // Road Ace: FD-6207 600EX (1984-87)
     'sun tour spirt': 2601, // 1981 Royale: SunTour 3700 / FD-1000 Spirt (1973-85)
     'sun tour spirt pub': 2601, // 1981 Record: as Royale
     // 1986 Raleigh (US) Supercourse: bare "Suntour Cyclone"; no row dated 1986 (FD-3300 / FD-3700 end 1985, Cyclone 7000 starts 1987).
@@ -929,9 +940,14 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "suntour v gt luxe": [{"bike":"Mirage","from":1979,"to":1979,"id":4705},{"bike":"Super Mirage","from":1979,"to":1979,"id":4705},{"bike":"Grand Touring","from":1979,"to":1979,"id":4705},{"bike":"Inter Club","from":1979,"to":1979,"id":4705}],
+    "shimano altus lt": [{"bike":"Grand Sprint","from":1979,"to":1979,"id":4477}],
+    "huret driver": [{"bike":"Nomade","from":1979,"to":1979,"id":null}],
+    "shimano altus st rs": [{"bike":"Nomade Sprint","from":1979,"to":1979,"id":null}],
     "huret eco or suntour seven gt": [{"bike":"Nomade","from":1977,"to":1977,"id":null}], // c.1977 Motobecane US, specifications pp.10-11.
     "suntour vgt luxe": [{"bike":"Mirage","from":1977,"to":1977,"id":null},{"bike":"Super Mirage","from":1977,"to":1977,"id":null},{"bike":"Grand Touring","from":1977,"to":1977,"id":null}], // c.1977 Motobecane US, specifications pp.10-11.
-    "suntour cyclone gt": [{"bike":"Grand Jubile","from":1977,"to":1977,"id":4738}], // c.1977 Motobecane US, specifications pp.10-11.
+    "suntour cyclone gt": [{"bike":"Grand Jubile","from":1979,"to":1979,"id":4738}, {"bike":"Grand Jubile","from":1977,"to":1977,"id":4738}], // c.1977 Motobecane US, specifications pp.10-11.
     // c.1973 Motobecane: portrait and table conflict; retain both, choose neither.
     'suntour vgt wide ratio (table); huret lux wide ratio (portrait)': [{ bike: 'Grand Touring', from: 1973, to: 1973, id: null }],
     // Bottecchia US III, September 1972, pp.2–7; keep the named rear equipment distinct.
@@ -1180,7 +1196,7 @@ const COMPONENT_OVERRIDES = {
     ],
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano new 105 sis': [{ from: 1987, to: 1987, id: 4449 }], // Competition / Triathlon: RD-1050 105
-    'shimano 600 ex': [{ from: 1981, to: 1981, id: 4468 }, { from: 1987, to: 1987, id: 4471 }], // 1981 Criterium: RD-6200 Arabesque short cage, 13/28T (1978-84; RD-6207 is 1984-86) // Road Ace: RD-6208 600EX SIS (1986-87)
+    'shimano 600 ex': [{"bike":"Grand Record","from":1979,"to":1979,"id":4468}, { from: 1981, to: 1981, id: 4468 }, { from: 1987, to: 1987, id: 4471 }], // 1981 Criterium: RD-6200 Arabesque short cage, 13/28T (1978-84; RD-6207 is 1984-86) // Road Ace: RD-6208 600EX SIS (1986-87)
     'shimano 600ex': [{ bike: '912', from: 1983, to: 1983, id: 4468 }, { bike: '912', from: 1982, to: 1982, id: 4468 }, { bike: '912', from: 1980, to: 1980, id: 4468 }, { bike: '912', from: 1979, to: 1979, id: 4468 }, { bike: 'Record Ace 12', from: 1987, to: 1987, id: 4470 }], // Record Ace: friction 600EX levers, so RD-6207 (row ends 1986) rather than the SIS-only RD-6208
     // 1985 Raleigh (Marathon, Pursuit, Record, Teton): "SunTour HR", on 14-30 5/6-speed freewheels. Only the Honor
     // RD-1100 (1973-85, 28T / 14-30) fits by capacity and tier; no DB row is titled HR, so this is by abbreviation.
@@ -1237,7 +1253,7 @@ const COMPONENT_OVERRIDES = {
     'shimano positron': null,
     // 1985 Bianchi Japan range sheet (Piaggio Japan).
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
-    'campagnolo record': [{ from: 1994, to: 1994, id: null }, { from: 1970, to: 1981, id: 4125 }, { from: 1982, to: 1984, id: 4126 }, { from: 1985, to: 1987, id: 4127 }], // 1020/A Nuovo Record v3 / v4 / v5 (DB dates)
+    'campagnolo record': [{ bike: 'Team Champion', from: 1979, to: 1979, id: null }, { from: 1994, to: 1994, id: null }, { from: 1970, to: 1981, id: 4125 }, { from: 1982, to: 1984, id: 4126 }, { from: 1985, to: 1987, id: 4127 }], // 1020/A Nuovo Record v3 / v4 / v5 (DB dates)
     // 1986 Colnago Catalogo generale group fan-outs.
     'campagnolo c record 180': 4096, // 0102050, C-Record first generation (1985-86), as 1986 Cinelli Record Corsa
     'campagnolo triomphe': 4155, // Triomphe (1st version, 1984-86); 0102057 leisure long cage is 1986-only and the Gentleman Sport runs a double
@@ -1403,6 +1419,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "front and rear campagnolo gran sport low flange with quick release": [{"bike":"Le Champion","from":1979,"to":1979,"id":9212}],
+    "front and rear campagnolo 1034 record low flange": [{"bike":"Team Champion","from":1979,"to":1979,"id":3259}],
     // Bottecchia US III: gruppo gives no flange; Nuovo Tipo gives no hole shape (3232/3233).
     'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: null }],
     'campagnolo nuovo tipo large flange with quick release': [{ bike: "Giro d'Italia", from: 1972, to: 1972, id: null }],
@@ -1734,6 +1753,18 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "weinmann 730 side pull": [{"bike":"Nomade Sprint","from":1979,"to":1979,"id":8637}],
+    "weinmann vainqueur 999 center pull with quick release": [{"bike":"Grand Touring","from":1979,"to":1979,"id":7929},{"bike":"Grand Jubile","from":1979,"to":1979,"id":7929}],
+    "weinmann 506 side pull with quick release": [{"bike":"Grand Sprint","from":1979,"to":1979,"id":7764}],
+    "shimano 600 x side pull with quick release": [{"bike":"Grand Record","from":1979,"to":1979,"id":null}],
+    "campagnolo gran sport with quick release": [{"bike":"Le Champion","from":1979,"to":1979,"id":null}],
+    "campagnolo 4051 super record with quick release": [{"bike":"Team Champion","from":1979,"to":1979,"id":null}],
+    "motobecane center pull": [{"bike":"Nomade","from":1979,"to":1979,"id":null}],
+    "weinmann vainqueur 993 center pull with quick release": [{"bike":"Mirage","from":1979,"to":1979,"id":null}],
+    "weinmann vainqueur 925 center pull with quick release": [{"bike":"Super Mirage","from":1979,"to":1979,"id":null}],
+    "center pull": [{"bike":"Inter Club","from":1979,"to":1979,"id":null}],
+    "center pull with maillard drum brake": [{"bike":"Inter Club","from":1979,"to":1979,"id":null}],
     "campagnolo record side pull racing": [{"bike":"Le Champion","from":1977,"to":1977,"id":null}], // Reach / CPSC version not established by c.1977 Motobecane text.
     "weinmann 999 center pull de luxe quick release fittings": [{"bike":"Grand Record","from":1977,"to":1977,"id":7929}], // c.1977 Motobecane US, specifications pp.10-11.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
@@ -2355,6 +2386,11 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "shimano 400 selecta b 39x52 double chainwheel alloy chain guard": [{"bike":"Nomade Sprint","from":1979,"to":1979,"id":7500}],
+    "shimano 600 ex 40x52 double chainwheel": [{"bike":"Grand Record","from":1979,"to":1979,"id":1793}],
+    "campagnolo 4030 super record 42x53 double chainwheel": [{"bike":"Team Champion","from":1979,"to":1979,"id":1509}],
+    "campagnolo gran sport 42x53 double chainwheel": [{"bike":"Le Champion","from":1979,"to":1979,"id":null}],
     "campagnolo record 42x53 with guard": [{"bike":"Le Champion","from":1977,"to":1977,"id":1496},{"bike":"Team Champion","from":1977,"to":1977,"id":1496}], // c.1977 Motobecane US, specifications pp.10-11.
     'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 1496 }], // Bottecchia US III: road Nuovo Record, contemporary 1049 v4.
     'campagnolo record cotterless chainwheel & cranks': [
@@ -2802,6 +2838,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "italia super leggera suede top": [{"bike":"Team Champion","from":1979,"to":1979,"id":null}],
     // c.1973 Motobecane: conflicting saddle descriptions, not optional equipment.
     'racing padded delux (table); ideal 80 leather racing saddle (portrait)': [{ bike: 'Grand Touring', from: 1973, to: 1973, id: null }],
     // Miyata 1979-80: full 77-17-IS code distinguishes it from 77-17; see miyata.md.
@@ -2968,6 +3006,8 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "cinelli 66 cotton tape and plugs": [{"bike":"Team Champion","from":1979,"to":1979,"id":2809}],
     "philippe professional cotton tape": [{"bike":"Grand Record","from":1977,"to":1977,"id":2895},{"bike":"Le Champion","from":1977,"to":1977,"id":2895}], // c.1977 Motobecane US, specifications pp.10-11.
     "pivo professional cotton tape": [{"bike":"Grand Jubile","from":1977,"to":1977,"id":11169}], // c.1977 Motobecane US, specifications pp.10-11.
     "pivo professional randonneur bend cotton tape": [{"bike":"Grand Touring","from":1977,"to":1977,"id":11169}], // c.1977 Motobecane US, specifications pp.10-11.
@@ -3341,6 +3381,8 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "shimano lb 180 downtube shifters": [{"bike":"Grand Sprint","from":1979,"to":1979,"id":7114}],
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'sun tour stem power shifters': [{ from: 1978, to: 1978, id: 6263 }],
     'sun tour down tube power shifters': [{ from: 1978, to: 1978, id: 8056 }],
@@ -3600,6 +3642,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "safety levers": [{"bike":"Nomade","from":1979,"to":1979,"id":null},{"bike":"Mirage","from":1979,"to":1979,"id":null},{"bike":"Super Mirage","from":1979,"to":1979,"id":null},{"bike":"Grand Touring","from":1979,"to":1979,"id":null}],
     'dia compe 250s aero': [{ from: 1989, to: 1989, id: 275 }], // 1989 Bianchi Axis; Dia-Compe March 1989 guide p.1, AC250S/BRS300
     'dia compe bl 08 aero': [{ from: 1989, to: 1989, id: 11536 }], // 1989 Bianchi Volpe; Dia-Compe March 1989 guide p.2, BL08/BRS Blaze
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
@@ -3740,6 +3784,10 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "sr sp100bl alloy barrel and black cage with toe clips and reflectors": [{"bike":"Grand Jubile","from":1979,"to":1979,"id":3922},{"bike":"Grand Record","from":1979,"to":1979,"id":3922}],
+    "campagnolo gran sport alloy christophe toe clips and reflectors": [{"bike":"Le Champion","from":1979,"to":1979,"id":3688}],
+    "campagnolo 1037 a record alloy barrel and black cage christophe z toe clips and straps": [{"bike":"Team Champion","from":1979,"to":1979,"id":3709}],
     "campagnolo record with reflectors": [{"bike":"Team Champion","from":1977,"to":1977,"id":3708}], // c.1977 Motobecane US, specifications pp.10-11.
     'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 3708 }], // Bottecchia US III: Record Strada.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
@@ -4027,6 +4075,10 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "sr ctp6 alloy built in carrier with recessed bolt": [{"bike":"Grand Touring","from":1979,"to":1979,"id":5861}],
+    "sr ctp6 alloy 262x150 built in carrier": [{"bike":"Grand Sprint","from":1979,"to":1979,"id":5861}],
+    "campagnolo 4051 super record 255x180 built in carrier with recessed bolt": [{"bike":"Team Champion","from":1979,"to":1979,"id":5759}],
     'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: null }], // Bottecchia US III: no post variant specified.
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'campagnolo alloy seat post': [{ from: 1978, to: 1978, id: null }], // No code to distinguish Record 1044 from Super Record 4051.
@@ -4690,6 +4742,8 @@ const COMPONENT_OVERRIDES = {
     'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "700c clement super gentleman 90 lbs high pressure presta valve": [{"bike":"Le Champion","from":1979,"to":1979,"id":null}],
     "d'alessandro super cross tubulars": null, // 1973 Zeus Z 66: Super-Cross is not established as plain Super (11138); spec 44 stays unidentified.
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "lc 40: hutchinson corsa senior tubulars; lc 41: michelin bib ts 20": [{ bike: "Le Champion", from: 1984, to: 1984, id: null }],
@@ -4814,6 +4868,12 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
+    "27 x 1 1 8 inch weinmann a124 alloy with eyelets and spoke protector": [{"bike":"Super Mirage","from":1979,"to":1979,"id":7776}],
+    "27 x 1 1 4 inch rigida 13 20 alloy with spoke protector": [{"bike":"Grand Jubile","from":1979,"to":1979,"id":9894}],
+    "700c rigida 13 20 alloy with spoke protector": [{"bike":"Grand Record","from":1979,"to":1979,"id":9895},{"bike":"Le Champion","from":1979,"to":1979,"id":9895}],
+    "700c pellet arc en ciel alloy chrome plated spokes with spoke protectors": [{"bike":"Team Champion","from":1979,"to":1979,"id":5180}],
+    "27 x 1 1 4 inch pellet competition alloy with spoke protector": [{"bike":"Grand Sprint","from":1979,"to":1979,"id":5176}],
     'nisi corsa': [
       { bike: 'Alessandro', from: 1982, to: 1982, id: null }, // Spec 12943: original sheet prints no Toro/code/eyelet configuration; do not select 5131 by substring.
       { id: undefined },
