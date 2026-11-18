@@ -4,6 +4,14 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## 1986 Peugeot Orient Express Rocky II stem
+
+Spec **14964**, `Rocky II, alloy`, remains unlinked: its bike catalogue cell
+does not name the maker. Kusuki Rockey-2 / Rocky 2 is supported on other 1986
+Koga and Miyata bikes, but that does not identify Peugeot's stem. Seek maker
+or marked-specimen evidence before linking. Raleigh Seneca's explicitly Kusuki
+Rocky III adjustable is a separate model. [Fitment review](../../ingest-component-catalog/references/source-hunts.md#log).
+
 ## Material-only seatposts (reviewed 2026-11-18)
 
 Generic `Aluminium` does not identify a seatpost model. The Guida '96 pass 3

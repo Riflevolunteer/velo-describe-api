@@ -1,5 +1,9 @@
 # Miyata catalogs processed so far
 
+## SR and Kusuki ATB fitments — 2026-11-18
+
+After user approval, linked the 1985 Terra Runner OR handlebar spec 21658 to SR MTB-204 11690, and the 1986 Trail Runner handlebar/stem specs 19013/19014 to Kusuki BMT-3-26 11691 and Rockey-2 11692. Koga's 1986 brochure corroborates the latter pair and spells the stem Rockey-2; Miyata spells it Rocky 2. All were previously NULL. [Source and validation](../../../ingest-component-catalog/references/source-hunts.md#log).
+
 ## Ariake saddle fitment review — applied and validated (2026-11-17)
 
 Reviewed the original Miyata saddle entries against the loaded CSVs and live

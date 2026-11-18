@@ -2947,6 +2947,11 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // Koga-Miyata 1986 / Trek 1987 reviewed fitments; separate SR and H.L. MTB-210.
+    'sr mtb 204 alloy': [{ bike: 'Terra Runner OR', from: 1985, to: 1985, id: 11690 }],
+    'sr mtb 204': [{ bike: 'K2', from: 1986, to: 1986, id: 11690 }],
+    'kusuki bmt 3 26 alloy': [{ bike: 'Trail Runner', from: 1986, to: 1986, id: 11691 }],
+    'hl mtb 210': null, // H.L. and SR share a number, not a proven identity
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
     'pivo professional soft stitched sleeves': [{ from: 1978, to: 1978, id: 11169 }],
     'philippe professional soft stitched sleeves': [{ from: 1978, to: 1978, id: 2895 }],
@@ -3139,6 +3144,9 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    // 1986 Miyata / Koga: named Kusuki Rocky 2; maker-free Rocky II remains unresolved.
+    'kusuki rocky 2 alloy black': [{ bike: 'Trail Runner', from: 1986, to: 1986, id: 11692 }],
+    'rocky ii alloy': null,
     // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
     'kusuki s win alloy': 11333,
     'kusuki win σ': 11334,

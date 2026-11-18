@@ -113,3 +113,20 @@ test('1986 Team Miyata SP-7200 restores the stored decision without selecting ot
   assert.equal(matchComponent('SHIMANO Dura-Ace EX', records, null, 'Seatpost', 1986, 'Team Miyata').component_id, 5899)
   assert.equal(matchComponent('SHIMANO Dura-Ace EX', records, null, 'Seatpost', 1986, 'Other'), null)
 })
+
+test('1985–86 SR and Kusuki fitments link without conflating H.L. or generic Rocky', () => {
+  const rows = [
+    { component_id: 11690, title: 'Sakae/Ringyo (SR) MTB-204', category: 'Handlebars' },
+    { component_id: 11691, title: 'Kusuki BMT-3-26', category: 'Handlebars' },
+    { component_id: 11692, title: 'Kusuki Rockey-2', category: 'Stems' },
+    { component_id: 11694, title: 'Sakae/Ringyo (SR) MTB-210', category: 'Handlebars' },
+  ]
+  const match = (value, label, year, bike) => matchComponent(value, rows, null, label, year, bike)
+  assert.equal(match('SR MTB-204 Alloy', 'Handlebars', 1985, 'Terra Runner OR').component_id, 11690)
+  assert.equal(match('SR MTB-204', 'Handlebars', 1986, 'K2').component_id, 11690)
+  assert.equal(match('KUSUKI BMT-3-26 Alloy', 'Handlebars', 1986, 'Trail Runner').component_id, 11691)
+  assert.equal(match('KUSUKI ROCKY 2 Alloy Black', 'Stem', 1986, 'Trail Runner').component_id, 11692)
+  assert.equal(match('H.L. MTB 210', 'Handlebars', 1987, '830'), null)
+  assert.equal(match('Rocky II, alloy', 'Stem', 1986, 'Orient Express'), null)
+  assert.equal(match('Kusuki Rocky III adjustable, alloy', 'Stem', 1986, 'Seneca'), null)
+})

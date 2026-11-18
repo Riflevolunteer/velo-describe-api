@@ -10,7 +10,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 <a id="sr-sakae-next-work"></a>
 
-- Check Koga-Miyata 1986 MTB-204/BMT-3-26/Rockey-2 and Trek 1987 pp.13–14 MTB-209/MTB-210/FX-200 against existing rows and fitment. [Source leads](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 - Review remaining Kusuki, Sugino TGT-LP, Dia-Compe PN-280/281/730, KKT RT-E1 and Sansin ET-Q/ET-QS identities using [Panasonic evidence](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md).
 
 ## Product and infrastructure

@@ -1,5 +1,9 @@
 # Falcon catalogs processed so far
 
+## 1986 K2 SR handlebar — 2026-11-18
+
+After user approval, linked previously NULL spec 16365 `SR MTB-204` to component 11690, corroborated by the 1986 Koga brochure. [Source and validation](../../../ingest-component-catalog/references/source-hunts.md#log).
+
 ## Eddy Merckx brochure (c. 1973) — loaded 2026-11-17
 
 - [Archive album 27333](https://web.archive.org/web/20110521080322/http://velo-pages.com/main.php?g2_itemId=27333): four 497×640 pages, display IDs **27394 / 27398 / 27401 / 27404**, serial 2, captures 20130609060341 / 20130609065323 / 20130609084424 / 20130609061320. First/last panels carry specs; middle panels are rider photo/cover. No printed year; 1973 is archive attribution. Country unknown. The [February 16, 1974 Cycling advert](https://classiclightweights.net/belgium/eddy-merckx/) repeats the range and resolves soft size fractions; it is corroboration, not another load.
