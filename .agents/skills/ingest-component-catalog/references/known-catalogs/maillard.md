@@ -85,6 +85,39 @@ restored rows have search_text generated from their titles: `Maillard 700` /
 `Maillard 700 RN`. Applied SQL, snapshots, downloads and other task scratch files
 were removed after validation; lasting evidence and restoration details are here.
 
+## Spidel 700 RA acquisition lead — 2026-11-19, read-only
+
+Rechecked live 3827/3830/3833/3991 and Peugeot specs
+10671/10691/11032/11053. The four specs remain NULL; the existing explicit-dural
+links remain separate from this unresolved RA identification. No component,
+date, source or bike-link changes are supported by this pass.
+
+The missing January 1979 article now has a concrete holding lead:
+
+- [Vélocyclo's CMP discussion](https://www.velocyclo.fr/forum/de-1941-a-1980/mercier-cadre-cmp-1975/paged/2/)
+  identifies January 1979 as **Le Cycle no.42**, with scans of a different
+  article on pp.18–21. The retrieved page does not contain the Spidel article;
+  the issue number is reported by the uploader, not verified from a cover.
+- The [Bicycle Culture Center foreign-language library catalogue](https://cycle-info.bpaj.or.jp/file_upload/100080/_main/100080_01.pdf),
+  dated 2026-08-01, **printed p.28 / PDF p.29**, lists **BDC 704, registration
+  30831, old registration 200938**, a bound item including **Le Cycle
+  nos.42–45 (1979)** alongside Les Cahiers du Cycle and L'Officiel du Cycle
+  nos.40–41 (1978). This confirms a catalogued holding, not the article's
+  contents or a downloadable issue. The separately recorded Tonton Vélo
+  reference identifies the wanted article as **“SPIDEL un an après”, pp.34–37**.
+- The Center's [library information](https://cycle-info.bpaj.or.jp/library-catalog/)
+  and [membership/use rules](https://cycle-info.bpaj.or.jp/assembly/) describe
+  member access to back issues and paid copying; a remote copy service was not
+  established. No contact, purchase or membership registration was made.
+
+Targeted searches for the article title, January 1979 issue and 700 RA still
+returned the already reviewed forum references and modern restoration/sale
+descriptions, not a period RA material key. The 1979 R. J. Chicken catalogue
+search hit is the existing source recorded below, not a newly recovered source.
+STC's RC/RN key remains valid but cannot be transferred to RA. Recovering the
+article may help; its ability to distinguish cage materials remains unproven.
+The task-created forum HTML was removed after recording the holding and URLs.
+
 ## Spidel 700 STC code/material review — 2026-11-18, read-only
 
 Recovered the [STC catalogue attributed to 1978](https://forum.tontonvelo.com/viewtopic.php?t=39556),
