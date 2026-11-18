@@ -1,5 +1,25 @@
 # Cross-catalog notes catalogs processed so far
 
+## Waiting evidence triage — 2026-11-18 (read-only)
+
+**Superseded for Nuovo Tipo by the [visual reconciliation](campagnolo.md#bikecology-nuovo-tipo-reconciliation--2026-11-18-applied-and-validated):** maker and retailer scans now inspected, existing identities confirmed, p.54 specimen check completed, description enrichment approved, applied and validated.
+
+The initial triage located the C1264–C1267 versus 1251/1253 crosswalk in
+search-indexed maker text and an alternate transcription. The VeloBase PDF
+exceeded the web fetch size limit and the Campy Only PDF returned 403, so
+that first pass did not visually verify it. The subsequent reconciliation
+recovered and inspected the maker page images through Ebykr, completed the
+p.54 specimen comparison and checked live rows. Use the linked applied
+record for the verified identities, sources, restoration values and checks.
+
+Other bounded candidates are original-specimen comparisons for SunTour
+3630 (FH-XD10/11), 6290 (LD-5100 versus LS-5700/5800), and Nisi 5138/5145.
+Their existing catalogue distinctions are recorded in the brand notes;
+this triage found no new identifying evidence for those specimens. Huret
+501.1 DFE remains an exact scan-recovery task: indexed OCR is already known
+and is not a newly recovered scan. Manual Belleri/Pelissier/Weinmann
+candidates still require comparable measurements/model evidence.
+
 ## Manual merge candidate review — 2026-11-17
 
 Reviewed all **19 rows / seven groups** from the manual TODO against live DB
@@ -668,7 +688,7 @@ originals and maintained CSVs are preserved.
   3152 LV-11), Fiamme Red / Gold / Yellow Label tubulars, Tahei and Lambertini
   saddles, Belri bar and stem, Dura-Ace track hubs H740 / H840 / H741 / H841 (the
   numbers do not match our HS-741 / H-741 rows and HA-300 may be the same hub),
-  Campagnolo Nuovo Tipo C1264-C1267 (we hold the 1251 / 1253 pair numbers). Out of
+  Campagnolo Nuovo Tipo C1264-C1267 (hold superseded by the [visual reconciliation](campagnolo.md#bikecology-nuovo-tipo-reconciliation--2026-11-18-applied-and-validated): individual codes of existing 1251/1253 pairs, not missing identities). Out of
   scope: the Bikecology-built wheels (Hosteller, Tourist, Olympiad, Elan, ...), tubes,
   juvenile tyres, spokes, pumps, forks, tape and plugs, clothing and shoes.
 

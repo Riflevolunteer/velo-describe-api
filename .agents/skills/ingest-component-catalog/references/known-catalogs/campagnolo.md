@@ -1,5 +1,92 @@
 # Campagnolo catalogs processed so far
 
+## Bikecology Nuovo Tipo reconciliation — 2026-11-18 (applied and validated)
+
+Visually inspected Campagnolo No.17 printed pp.54/61 and Bikecology April
+1976 printed p.41 (image 43), plus both original large-flange specimen
+photographs and 3232's box photograph. This completes the earlier p.54
+inspection task and supersedes the C1264–C1267 identity hold in the April
+1976 cross-catalog notes. User approved the two description/source updates;
+both are applied and validated below.
+
+### Evidence and identities
+
+- Maker source **6**, [printed p.61](https://ebykr.com/wp-content/uploads/2026/10/ebykr-campagnolo-catalogue-17-p69.webp):
+  **1251** is the small-flange QR pair, **1264/1265** its front/rear;
+  **1253** is the large-flange QR pair, **1266/1267** its front/rear.
+  The photographed large-flange hubs have round cutouts, appearing oval
+  in perspective. [Printed p.54](https://ebykr.com/wp-content/uploads/2026/10/ebykr-campagnolo-catalogue-17-p62.webp)
+  depicts that same round-hole construction, not the kidney-bean specimen.
+- Retailer source **244**, [April 1976 catalogue](https://labibleduvelodivers.blogspot.com/p/doc-1976.html),
+  printed **p.41**, file `BICYCLE CATALOG 1976 (43).jpg`: explicitly lists
+  C1264/C1265/C1266/C1267 individually and C1251/C1253 as pairs. Both are
+  QR, five-speed, silver, English/French/Italian thread options, 100 mm
+  front/120 mm rear OLD, 36/36h offered. Listed front/rear weights are
+  **227/291g small flange**, **255/326g large flange**. These are retailer
+  listings, not newly measured specimen weights. The large-flange photo
+  matches the round-hole construction. The retailer C prefix does not
+  establish another manufacturer model.
+- Existing **3230** already represents 1251 with 1264/1265; existing
+  **3233** represents round-hole 1253 with 1266/1267. No new individual-hub
+  rows or pair duplicates are warranted under the existing hubset model.
+- Keep **3232** separate. Its [original specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=13613D0A-8B52-4120-8DEB-6A5A69F2D766)
+  has unmistakable broad curved kidney-bean openings, unlike [3233](https://www.velobase.com/Pages/ViewComponent.aspx?ID=B30B0713-8C02-47FA-B8D8-8DB2C57D0223).
+  The box says Nuovo Tipo / large flanges but provides no dated variant
+  crosswalk. Its listing's Motobecane-only and 1972 claims remain secondary;
+  neither inspected catalogue establishes them or extends its dates.
+  Retain legacy **1972/1972**, source **1**, unchanged; this is not proof
+  of a one-year production run. No automatic follow-up source hunt.
+- Solid-axle **3229/3231**, with their distinct 1260–1263 codes, are outside
+  the QR offering and remain unchanged.
+
+### Applied description enrichment and restoration values
+
+Only **description** and **source_ref** changed on 3230/3233. All titles,
+search text, dates, UUIDs, brands, categories and groups remain unchanged.
+Source 244 is already registered. Moving source_ref records the last source
+used to change the row, without discarding the evidence history here.
+
+| Row | Retained dates | Old source_ref → applied | Applied description |
+|---|---|---|---|
+| 3230, 1251 small flange | 1960–1986 | 462 → 244 | Small-flange QR hub pair; 1264 front/1265 rear; hollow axles 1001/4,1256; skewers 1310/1311; 24-40h; OLD 100/120mm; 5-speed; English/French/Italian threads; silver; listed front/rear 227/291g; Italy. |
+| 3233, 1253 round-hole large flange | 1967–1985 | 352 → 244 | Large-flange round-hole QR hub pair; 1266 front/1267 rear; 36/36h or 32/40h; OLD 100/120mm; 5-speed; English/French/Italian threads; silver; listed front/rear 255/326g; Italy. |
+
+Old **3230** description: `Campagnolo 1251, Nuovo Tipo small-flange quick-release hubs, 1264 front and 1265 rear, hollow spindles 1001/4 and 1256, skewers 1310/1311, 24 to 40 holes, Italy.`
+Old **3233** description: `Campagnolo 1253, Nuovo Tipo large-flange quick-release hubs, 1266 front and 1267 rear, 36/36 or 32/40 holes, Italy.`
+Restore those descriptions and source_ref 462/352, guarded on the applied
+descriptions/source 244, if later reverting. Prior drilling/axle/skewer facts
+are retained; 36/36h is the 1976 retailer's offering, not a restriction on
+all other catalogue configurations.
+
+### Validation
+
+- Live part/name search found only the existing five relevant Nuovo Tipo
+  rows. Dates already cover 1976 for 3230/3233. No title/date/identity changes.
+- 3230 has four bike links: specs **954/4459/4549/4642**; 3229/3231/3232/3233
+  have none. Four Bottecchia 1972 large-flange QR specs
+  **23315/23330/23345/23360** stay NULL: neither bike wording nor these
+  catalogues identifies their photographed variant. Existing NULL overrides
+  and other Nuovo Tipo overrides remain unchanged.
+- Campagnolo/Hubs duplicate report retains 3232/3233 as a configuration
+  pair, with no proposed merge. No new component is being inserted.
+- Full generator/live baseline: **23,168 specs**, 23,153 unchanged,
+  15 lost mappings, zero gained/changed/missing/ambiguous; the existing
+  losses are outside this hub task. The post-load comparison over all **107
+  loaded catalogues** has identical scope, files, summary and findings to
+  the baseline. No matcher input fields changed.
+- Applied descriptions are **199/175 characters**, below 255. Guarded SQL
+  checks exact old descriptions, sources, dates, titles, brand and category;
+  `scripts/load-sql.js` affected exactly **two rows**, then **zero** on rerun.
+  Readback confirmed both descriptions, source **244**, and retained dates,
+  titles, UUIDs, search text, brand/category/group. Source 244 resolves to the
+  registered April 1976 catalogue. Component count remains **10,764**.
+- Exact bike-spec readback confirms **954/4459/4549/4642 → 3230** and
+  **23315/23330/23345/23360 → NULL**. No bike writes, new rows, merges,
+  date changes or generator changes. 3229/3231/3232 remain unchanged.
+- Evidence URLs and restoration values are retained above. Task downloads,
+  prepared/applied SQL and before/after comparison scratch files were removed
+  after successful readback, zero-change rerun and mapping comparison.
+
 ## Gran Sport Bianchi-marked crank consolidation — 2026-11-17
 
 User approved and applied **1473 -> 1472**, retaining the Bianchi-marked outer
