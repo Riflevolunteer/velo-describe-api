@@ -1789,6 +1789,31 @@ were included.
   a 26T maximum, while this edition prints 22T; preserve both as separate
   source claims pending clarification. The two page-specific TZ-6000 weights
   also differ; neither figure is corrected from this comparison.
+- **Live reconciliation of pp.40–41, 2026-11-18 (read-only):** visually
+  rechecked both pages and searched SunTour titles and descriptions by model,
+  Love and Scrambler. Source 427 is already registered. No DB changes.
+  | Page item | Live match or proposed treatment |
+  | --- | --- |
+  | RD-SR10-GT / SS | No matching row found; separate 1989 GT and SS candidates. 1992 RD-SR21 rows 7957 / 7956 are distinct; 7958 is a later GX, not a page item. Bracket codes are configurations, not separate derailleur models. |
+  | FD-4200 | No matching SunTour front derailleur found; candidate, with outerless/outered codes 29509941 / 29509931. RD-4200 4725 is a rear derailleur and LD-4200 7835 a lever. |
+  | SL-SR10-CT/BT, SL-SR11-CT/BT, SL-SR16-CT/BT, SL-SR20-CH, SL-SR30-CC and SL-SR40-CC | No matching model rows found. Distinguish double indexed-left, double friction-left, single downtube, handlebar, and five-/six-speed top-tube configurations; the top-tube feature text says six-speed even though SR30 is explicitly labelled five-speed. |
+  | FW-AL00-R6 | Existing 7866; 1987–89 includes this page. The page supplies 13–21/24/28/32T ranges and weights. |
+  | TZ-6000 | Existing 7821; 1980–89 includes this page. Both pages list the same 116-link codes but 358g and 338g respectively. Scrambler page calls the chain “Ultra size”, while 7821 says regular and not Ultra 6/7; do not infer interchangeability or overwrite that limitation without further evidence. |
+  | RD-LV00 | Existing 4713, 1987–89, source 1 (VeloBase), no bike links at review. Edition No.89 explicitly specifies 22T largest sprocket, 8T total capacity, three-speed only, 473g; the existing 26T maximum remains a conflicting VeloBase claim, and 485g is an independent measured average. Do not represent 26T as the catalogue specification or infer separate versions. |
+  | SL-LV00 / SL-LV10 | No matching model rows found; separate handlebar levers, the latter with brake bracket. |
+  | HB-LV00 | No matching model found; front and rear are distinguishable products, 93/115mm and 180/393g respectively. |
+  | CW-LV00 / FW-LV00 | No matching model rows found; respectively 36T oval steel crankset and 14/17/22T three-speed M30 freewheel. |
+
+  LV-3 guard and discs are outside the component categories. The catalogue
+  attests the 1989 product line; it does not establish production endpoints.
+  Searches also found the earlier RD-1600 Love 8073, distinct from RD-LV00.
+  No exact model names or 4713 overrides were found in bike CSVs or the
+  generator; 7821 had 19 live bike links and 7866 one at review.
+- **Applied and validated, 2026-11-18:** after approval added 11551/11552 RD-SR10-GT/SS; 11553 FD-4200; 11554–11559 SL-SR10, SR11, SR16, SR20, SR30 and SR40; 11560/11561 SL-LV00/LV10; 11562/11563 HB-LV00 front/rear; 11564 CW-LV00; 11565 FW-LV00. All use source 427, SunTour brand 56 and the appropriate categories, with 1989/1989 as the attested catalogue year, not proven production limits. Updated 4713 preserves 1987–89 and the measured 485g, attributes the 22T/26T claims, and adds 8T/3-speed and 473g from No.89. Updated 7866 adds the four printed freewheel ranges and weights. TZ-6000 7821 remains unchanged because catalogue weights and Ultra/regular wording conflict. No merges, retitles, bike writes or existing date changes. SR30 retains the conflicting five-speed model label and six-speed feature text. Earlier RD-SR21 configurations remain distinct.
+
+  Before 4713 had source 1 and description: “Love rear derailleur, version 2: steel, AccuShift positive click, single sprung pivot (Allvit-derived) for basic city and children's bikes, bolt-on, short cage, 26T max; outer plate SUNTOUR LOVE; 485 g avg. VeloBase model RD-LV00.” Before 7866 had source 427 and description: “SunTour FW-AL00-R6, Alpha freewheel (6-speed), Japan, c. 1987 AccuShift leaflet: alpha 6-speed regular freewheel for AccuShift, alpha-5000 road and ATB groups, TZ-6000 Z chain”. Restore these values if reverting the description updates; check bike references and generator overrides before removing any added rows.
+
+  Readback verified the 15 inserts and two updates, categories and source references; rerun affected zero rows. Duplicate reports found no merge or near candidates. A live search found no bike specs naming the new models; no links were added. Actual generator/live comparison across 98 loaded catalogues and 21,382 specs exactly matched the pre-load baseline: the existing 15 lost matches concern Huret Rival 4401, outside this task. SQL and comparison scratch files removed after validation.
 - **Left / open:** 3630 unnumbered XCD freehub vs FH-XD10 (new 1989) / FH-XD11
   (1990); 6290 LD-5100 PLG vs the 1989 PLG LS-5700 / LS-5800 (both 150g); 6376
   CL-XD10 (1988 JP code) kept apart from 11417; 1989 Brava "SunTour GPX" front and

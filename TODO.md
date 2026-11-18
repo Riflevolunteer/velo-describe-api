@@ -7,7 +7,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
 - Design multiple component evidence references, preserving `source_ref` as the last source that changed a row.
 - Review current metadata/date flags with `node scripts/quality-report.js`; verify identities before changing dates or links.
-- Reconcile SunTour Edition No.89 Scrambler II / LV-3 page inventory with existing rows, including missing RD-SR10 GT/SS and RD-LV00 4713's conflicting 22T/26T maximum. [SunTour evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#suntour-bicycle-component-catalog-edition-no-89--printed-091988-2026-11-16).
 
 <a id="sr-sakae-next-work"></a>
 
@@ -15,7 +14,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Review remaining Kusuki, Sugino TGT-LP, Dia-Compe PN-280/281/730, KKT RT-E1 and Sansin ET-Q/ET-QS identities using [Panasonic evidence](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md).
 - Complete Guida ’96 pass 3: visually review and reconcile missing-brand candidates, starting with the eight Tioga tyres on scan 22. OCR index and reviewed Tioga transcription retained at `/tmp/guida96-pass3/` for resuming; [catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#guida-96-pass-3-triage--2026-11-18).
 - Prepare and review Mavic Reflex tubular CD and CD Ceramic rows, then retire family row 9975 only after preserving all four finishes and checking references and mappings. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#other-waiting-cases).
-- Recover the logged Dura-Ace EX and Detto Pietro scans; compare EX descriptions and triage supported Detto categories. [Recovery log](.agents/skills/ingest-component-catalog/references/source-hunts.md#log).
 - Prepare and review the 1999 Polish IRC catalogue change set, preserving the conflicting 1996/1999 Paperlite Plus weights and checking Triathlon 11359 and distinct tyre configurations. [Inventory and evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/irc.md#polish-irc-catalogue-1999--reviewed-2026-11-18).
 
 ## Product and infrastructure
