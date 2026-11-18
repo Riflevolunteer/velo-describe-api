@@ -392,3 +392,10 @@ see the Raleigh catalogue notes for the decision and source.
 - **Decided 2026-11-16, leave unlinked:** Tange "Unique X Loose-Proof" (1988 Raleigh Ozark II, 1989 Touriste) and "Unique FE" (1988 Raleigh Ritmo). 11346 Tange Unique is the bare model (Nashbar 1988). The 1989 Ozark / Chinook "Unique Loose-Proof" are linked to it, reading Loose-Proof as a feature. Generator `null` overrides.
 
 - Brand-only text: "Stronglight" 7 (1985 Peugeot), bare "Tange" ~20, Bianchi "GPM, alloy", 1993 Bianchi "AheadSet" 3 / "Mavic headset": leave.
+
+## 1981 Motobecane US (reviewed 2026-11-18)
+
+- Source457, specification tables PDF pp.14–15. [Catalogue evidence and validation](known-catalogs/motobecane.md#1981-us--loaded-and-validated-2026-11-18).
+- Interclub SunTour Perfect lacks a speed/model variant; suppress the accidental six-speed YE match2241. Weinmann610 plus Atom drum is compound rear equipment and stays unlinked; MAFAC cantilever front is supported separately. Prolight Simplex6000 lacks T/GT distinction. Grand Jubile's explicitly printed front SX410GT/SP is retained but names a rear code, so no front identity is inferred. Campagnolo1020 and Simplex6000 rear-only cells do not supply missing front model names.
+- Grand Record Rigida13/20 lacks wheel size; do not infer700C9895 from the preceding year's catalogue. Shimano600EX brakes lack reach; GranSport cranks/brakes, Cinelli66 and SuperRecord post lack distinguishing versions. SuperGentlemen and ParisRoubaix tyre descriptions lack safe construction/version attribution. No guessed variant links.
+- Retain unresolved printed SR/Nervar crank codes, Selecta-like equipment, Belleri2016 and Professionnel bars/stems, SRCustom/house stems/posts, unnumbered Vainqueur and731 brakes, S571/A256 rims, Shimano400/600/800 mixed hubs, unnumbered Normandy/Atom hubs, generic levers, black/Uniglide chains, uncoded freewheels, house saddles and tyres as faithful text. Existing candidates do not establish the exact printed identity/configuration; maker, broad model family or year alone does not settle these. The scoped NULLs prevent current speculative automatic hits; these decisions do not create new hunt tasks.
