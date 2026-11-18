@@ -15,7 +15,7 @@ Keep these current NULL links until new distinguishing evidence appears:
   KR-LB, BMTL-II-26FE, RK-90 and SMC-F likewise lack exact model evidence;
   Rocky III is not the documented Rockey-2. Generic Kusuki values lack a model.
 - Sugino **21583 TGT-LP** is not established as plain TGT. Preserve its
-  explicit NULL generator key through the proposed 1967/11336 GT/TGT merge.
+  explicit NULL generator key after the applied 11336→1967 GT/TGT merge.
 - Dia-Compe **21277/21297 PN-280** and **21319 PN-281** lack a manufacturer
   PN/DC prefix crosswalk. Panasonic's numbered 280/281 confirms families only.
   The 1980–85 Dia-Compe 730 specs lack a generation bridge to 1964 row 8929;
@@ -28,7 +28,8 @@ Keep these current NULL links until new distinguishing evidence appears:
 
 These are completed review decisions, not pending generic rematching tasks.
 [Exact IDs, scan pages, exclusions and evidence needed](known-catalogs/panasonic.md#remaining-identity-review--2026-11-18-read-only).
-The supported Sugino GT/TGT duplicate correction remains a separate open action.
+The Sugino GT/TGT duplicate correction was subsequently applied and validated:
+[11336 consolidated into 1967](known-catalogs/panasonic.md#sugino-gttgt-consolidation--applied-and-validated-2026-11-18).
 
 ## 1986 Peugeot Orient Express Rocky II stem
 

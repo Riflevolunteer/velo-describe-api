@@ -51,7 +51,7 @@ Each would get an exact link if a row were added.
 | Kusuki KD-LB (1986), BMT-II-26B (1987) — **applied, 11331 / 11332** | 1 / 1 (1987 Miyata) |
 | Kusuki S-WIN(-AH) stem (1985-89), WIN Σ (1985-89) — **applied, 11333 / 11334** | 3 / 5 (1986-87 Miyata). The 1985 Raleigh bare "WIN" AH x8 could be either and is not settled. |
 | MKS PB-20 pedal (1985-86) — **applied, 11335** | 1 (1986 Miyata City Runner) |
-| Sugino TGT triple (1986) — **applied, 11336** (GT/TGT duplicate correction proposed below; TGT-LP unlinked) | 3 (1984-85 Miyata: TGT, TGT-LP) |
+| Sugino TGT triple (1986) — **applied as 11336; consolidated into 1967 on 2026-11-18** (TGT-LP unlinked) | 3 (1984-85 Miyata: TGT, TGT-LP) |
 | Sansin ET-Q hubs (1986, "sealed mechanism") | The 1985 Raleigh "ET-QS" spelling remains unlinked; sealed/QR features do not establish an alias. |
 
 Kusuki had only two component rows (Winpista, Medalilion 1000) before the
@@ -231,6 +231,8 @@ Miyata specification scans and current component rows/links. **No DB, CSV or
 generator mappings changed.** The supported correction is a GT/TGT duplicate;
 the suffix and spelling hypotheses below remain unproven. This clarifies the
 earlier “probably” comments: they remain hypotheses rather than established aliases.
+The GT/TGT consolidation was subsequently applied and validated below; the
+other identities retain their reviewed leave-unlinked decisions.
 
 ### Sugino GT / TGT: duplicate correction supported; TGT-LP separate
 
@@ -243,11 +245,11 @@ This is source **291**, estimated c.1982–83; there is no newly discovered
 printed date. Panasonic 1986 printed p.30, ATB, explicitly lists
 **Sugino TGT 46/36/26T**. That combination is covered by the maker table.
 
-Live rows **1967 Sugino GT (triple)** (1980–84, source 291) and **11336
+At review, rows **1967 Sugino GT (triple)** (1980–84, source 291) and **11336
 Sugino TGT** (1984–86, source 417) therefore describe the same named triple;
 no distinguishing generation or construction is documented in either row.
 The 2026-11-16 insertion overlooked 1967's explicit TGT identification.
-**Proposed, not applied:** retain stable ID 1967; consolidate 11336 into it;
+**Reviewed plan (subsequently applied below):** retain stable ID 1967; consolidate 11336 into it;
 extend year_to **1984 → 1986** as attested availability; preserve the maker
 specifications and Panasonic/Miyata fitment evidence. Repoint **21228**
 (1984 Miyata 610, 52/44/28) and **21649** (1985 Terra Runner OR, 50/40/28)
@@ -353,3 +355,66 @@ do not borrow an RE/CE/AE series row or invent an ET-Q/ET-QS combined row.
   decisions in `../link-decisions.md`; reopen with the specific distinguishing
   evidence above. Temporary review downloads/renders were removed after recording
   the source URLs; the separate OMAS recovery deliverables were preserved.
+
+
+## Sugino GT/TGT consolidation — applied and validated 2026-11-18
+
+Applied the reviewed consolidation on the user's instruction to consolidate
+the Sugino change set. Manufacturer Vol.56 spread 2 explicitly identifies
+GT as model TGT; Panasonic 1986 printed p.30 supplies the later availability
+attestation. Full source URLs and the identity reasoning are in the review above.
+
+- Retained **1967 Sugino GT (triple)**, brand 55 / category 7 / group NULL.
+  Title, search_text `Sugino GT`, image NULL, source UUID
+  `FCC017CF-F92B-419F-8ECA-EADF570D7406` and year_from 1980 are unchanged.
+  The inherited lower bound remains weak and is not a claimed introduction.
+- Changed year_to **1984 → 1986**, source_ref **291 → 417**, and description
+  to the following 190-character consolidated specification. Source 417 is the
+  last source changing availability; maker source 291 remains the evidence for
+  GT/TGT nomenclature, lengths, ring choices and reference weight.
+
+  `GT (TGT) triple crankset; 165-177.5mm; outer 46-53T, middle 36-46T, inner 24-40T. 770g reference, 170mm 52/40. Fitments: 46/36/26, 48/40/34, 50/40/28, 52/44/28; sealed bottom bracket. Japan.`
+
+- Repointed **21228 / 21649**, the only references to 11336, from 11336 to 1967.
+  **21292** remains on 1967. Repointed both exact TGT generator overrides.
+  **21583 TGT-LP remains NULL**, including its explicit generator guard;
+  DGT double 1937, GT-BMX 8894, GLP 1936 and ALP 1927 remain separate.
+- Removed duplicate **11336 Sugino TGT** only after its references were moved.
+  Metadata inspection found no foreign keys into component_detail and no other
+  table with a component_id reference besides bike_spec. There is no residual
+  live bike_spec reference to 11336 and no generator mapping targeting it.
+
+### Restoration values
+
+Before the merge, 1967's description was:
+`Sugino GT (triple), Japan, 770 grams, 170mm arms with 52 x 40 rings. Touring and 10-speed crank GT (TGT), triple, 165-177.5mm, outer 46-53T, centre 36-46T, inner 24-40T.`
+Restore year_to 1984 and source_ref 291 with that description to reverse its
+field edits; all its other fields were retained.
+
+Deleted 11336 had title `Sugino TGT`, description
+`Triple crankset; 46/36/26, 50/40/28 and 52/44/28 fitments listed, with sealed bottom bracket.`,
+years 1984–1986, brand 55, category 7, group NULL, image NULL,
+search_text `Sugino TGT`, source_ref 417 and source UUID
+`2c78a58a-97e5-4291-a35c-71355c565511`. A reversal must recreate that explicit
+ID/UUID before repointing only 21228/21649 back to 11336 and restoring the two
+TGT generator keys. Keep 21292 on 1967 and 21583 NULL.
+
+### Validation
+
+The guarded transaction affected exactly one retained component, two spec links
+and one duplicate deletion. The identical SQL rerun affected zero rows in every
+mutation. Before/after snapshots confirm no other component field, bike spec,
+bike, source, category, brand or group changed; total components fell by one
+(10760→10759), with all 23168 bike specs retained.
+
+All 107 loaded catalogues were compared: 23168 specs, 23153 generator/live matches,
+zero gained/changed/missing/ambiguous mappings and the identical 15 pre-existing
+lost mappings. All 13 test files passed. Whole-DB quality stayed at zero errors
+and 1983 review findings, with the exact same findings before/after. Sugino near
+and parenthesis duplicate searches report no candidates; the standard report's
+GT double/triple configuration distinction remains intentional and is documented
+by the maker's DGT/TGT codes. No additional duplicate is merged on that report.
+
+Removed the completed TODO action. Temporary SQL, snapshots and validation logs
+were removed after readback, the idempotency check and result recording. The
+separate OMAS recovered documents were preserved.

@@ -2531,8 +2531,8 @@ const COMPONENT_OVERRIDES = {
     "campagnolo super record 42x53": [{ bike: "Le Champion", from: 1984, to: 1984, id: 1509 }],
     "stronglight 99 34x47x52": [{ bike: "Grand Touring", from: 1984, to: 1984, id: null }],
     // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
-    'sugino tgt 50x40x28 teeth sealed bb chromoly axle': 11336,
-    'sugino tgt 52x44x28 teeth': 11336,
+    'sugino tgt 50x40x28 teeth sealed bb chromoly axle': 1967, // GT (TGT) triple; 11336 consolidated into 1967, see known-catalogs/panasonic.md.
+    'sugino tgt 52x44x28 teeth': 1967,
     'sugino tgt lp 52x44x28 teeth sealed bb': null, // 1985 Miyata 610 TGT-LP: LP/plain-TGT identity unproven; reviewed decision in known-catalogs/panasonic.md
     'sr sac 310 42 52t x 170 alloy cotterless': 11317,
     'sr sac 310 forged alloy outer ring 52 40': 11317,

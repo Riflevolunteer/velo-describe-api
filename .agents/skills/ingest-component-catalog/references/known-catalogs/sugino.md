@@ -232,6 +232,9 @@ OPC-SC and RT / BT cranks, 4 No.66 and DZF cranks, SP-K, HP-G5 and OPC-A5 / A4.
 
 ## Sugino TGT from Panasonic USA 1986 — applied 2026-11-16, source 417
 
+The separately inserted 11336 was consolidated into existing GT/TGT 1967 on
+2026-11-18; see the applied consolidation below. This section records the earlier load.
+
 - New row **11336 Sugino TGT** (Cranksets, 1984-1986): "Triple crankset; 46/36/26, 50/40/28 and
   52/44/28 fitments listed, with sealed bottom bracket." Panasonic 1986 ATB prints "Sugino TGT
   46/36/26T". Links: 21228 (1984 Miyata 610), 21649 (1985 Miyata Terra Runner OR).
@@ -318,6 +321,22 @@ of those older temporary files.
 
 ## Panasonic identity review — 2026-11-18 (read-only)
 
-**Correction proposed, not applied:** manufacturer Vol.56 photo spread 2 explicitly labels **GT, Model TGT**. Existing **1967 GT (triple)** and **11336 TGT** are duplicate identities; retain 1967, preserve the manufacturer/fitment evidence, extend year_to 1984→1986 and repoint specs 21228/21649 plus both generator TGT keys. Keep 21292 on 1967, DGT 1937 and GT-BMX 8894 separate. **TGT-LP 21583 remains NULL**: its suffix is not bridged by matching gearing or sealed-BB wording. This supersedes the earlier failure to recognize 1967 when inserting 11336.
+**Reviewed correction (subsequently applied below):** manufacturer Vol.56 photo spread 2 explicitly labels **GT, Model TGT**. Existing **1967 GT (triple)** and **11336 TGT** are duplicate identities; retain 1967, preserve the manufacturer/fitment evidence, extend year_to 1984→1986 and repoint specs 21228/21649 plus both generator TGT keys. Keep 21292 on 1967, DGT 1937 and GT-BMX 8894 separate. **TGT-LP 21583 remains NULL**: its suffix is not bridged by matching gearing or sealed-BB wording. This supersedes the earlier failure to recognize 1967 when inserting 11336.
 
 [Primary scans, exact affected IDs and review limits](../../../ingest-bike-specs/references/known-catalogs/panasonic.md#remaining-identity-review--2026-11-18-read-only). No database or generator changes were made.
+
+
+## GT/TGT duplicate consolidated — 2026-11-18
+
+Applied **11336 → 1967** on user instruction. Retained 1967's title, identity UUID,
+search_text, brand/category/group, image and inherited 1980 lower bound; extended
+year_to 1984→1986, changed source_ref 291→417, and combined maker specifications
+with the documented triple/BB fitments. Repointed only specs 21228/21649 and both
+exact TGT generator keys. Deleted 11336; 21292 remains on 1967 and TGT-LP 21583
+remains NULL. DGT 1937 and GT-BMX 8894 remain distinct.
+
+[Full retained/deleted row restoration values, description, source evidence and validation](../../../ingest-bike-specs/references/known-catalogs/panasonic.md#sugino-gttgt-consolidation--applied-and-validated-2026-11-18).
+Readback found only the approved changes; SQL rerun was a no-op; all 107 loaded
+catalogues retain the same generator/live comparison, all 13 tests pass, and
+whole-DB quality has zero errors with unchanged review findings. The completed
+TODO action and disposable merge scratch were removed.

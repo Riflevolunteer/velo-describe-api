@@ -8,10 +8,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Design multiple component evidence references, preserving `source_ref` as the last source that changed a row.
 - Review current metadata/date flags with `node scripts/quality-report.js`; verify identities before changing dates or links.
 
-<a id="sr-sakae-next-work"></a>
-
-- Consolidate Sugino GT/TGT duplicate **11336 → 1967**, preserving maker/fitment evidence, extending the upper availability bound to 1986 and repointing DB/generator references; validate the merge and keep TGT-LP unlinked. [Reviewed correction](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md#remaining-identity-review--2026-11-18-read-only).
-
 ## Product and infrastructure
 
 - Show catalogue country in the client where rows collide; assess splitting mixed-country Peugeot 1971–74 CSVs.
@@ -60,6 +56,7 @@ Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agen
 - Check Ron Kitching/Freewheel holdings at Otley and Warwick MRC for Rigida, Viscount and Brooks; retain the saddlewax Brooks lead.
 - Check the logged Performance/Nashbar/QBP/J&B/Colorado Cyclist browser-only leads for 1985–92 distributor evidence.
 
+<a id="sr-sakae-next-work"></a>
 <a id="yaesu-next-work"></a>
 
 - Seek a new free Yaesu 1984–87 or SR No.19–23 scan/holder lead; paid acquisition remains deferred. Obtain Schwinn 1985’s printed CXC-T310 block if available.
