@@ -4056,12 +4056,19 @@ const COMPONENT_OVERRIDES = {
     'mks sylvan track': [{ bike: 'Pista', from: 1985, to: 1985, id: 10043 }, { from: 1986, to: 1986, id: 10043 }], // MKS 2031, Sylvan Track
     'sr sp 155 sealed': [{ from: 1986, to: 1986, id: 3928 }], // SR SP-155
     'suntour xc ii sealed cr mo spindle': [{ from: 1986, to: 1986, id: 4015 }], // PL-5100, XC-II
-    // Maillard 700 quill pedal: 3827 holds the folded colour variants (2026-11-01), 1970-89 since Peugeot prints plain
-    // "Maillard 700" beside "CX 700" through 1988. Plain values match the title; these need keys.
+    // STC p.18 separates RC chrome steel from RN black aluminium. Restored 3830 holds RN;
+    // 3827 is the silver-cage specimen. Plain 700 and "super light" do not choose a cage.
     'maillard 700 dural with christophe toe clips and lapize toe straps': 3833, // 1977 Peugeot (DE) PY 10/CP: dural = the alloy-cage row, as 'spidel 700 dural course'
-    'maillard 700rn': [{ from: 1983, to: 1983, id: 3827 }], // 1983 Peugeot PY 14 / PX 14: RN = black cage (as Atom 450RN / 600RN)
-    'maillard 700; toe clips and straps': [{ from: 1986, to: 1988, id: 3827 }], // 1986 Peugeot PY 10 M / PRO 10, 1988 PY 10 P
-    'maillard 700; toe clips; straps': [{ from: 1987, to: 1987, id: 3827 }], // 1987 Peugeot PY MA W
+    'maillard 700 with toe clips and straps': null, // Cage material/code unspecified
+    'maillard 700 super light precision bearings christophe toe clips and straps': null, // Cage material/code unspecified
+    'maillard 700 super light strap length to choice': null, // Cage material/code unspecified
+    'maillard 700 with zycral toe clips': null, // Cage material/code unspecified
+    'maillard 700': null, // Cage material/code unspecified
+    'maillard 700 toe clips and straps': null, // Cage material/code unspecified
+    'maillard 700 christophe toe clips and straps': null, // Cage material/code unspecified
+    'maillard 700rn': [{ from: 1983, to: 1983, id: 3830 }], // STC p.18: RN = black anodised aluminium cage; 1983 Peugeot PY 14 / PX 14
+    'maillard 700; toe clips and straps': null, // Cage material/code unspecified
+    'maillard 700; toe clips; straps': null, // Cage material/code unspecified
     'maillard 700c with christophe toe clips': null, // 1984 Peugeot PY 10 FC: "700C" may be Course or a CX misprint
     'maillard 700 ss toe clips and straps': null, // 1989 Peugeot C 653 MAB Z: no SS row
     // Maillard CXC brochure recovered 2026-11-13: source 382; exact named CX/CXC model values.

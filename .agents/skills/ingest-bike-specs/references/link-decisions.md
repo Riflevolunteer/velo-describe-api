@@ -254,6 +254,18 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Pedals
 
+- Rechecked 2026-11-18: STC p.18 explicitly identifies Maillard 700 RC as
+  chrome-steel cage and RN as black aluminium cage, but does not name RA or
+  establish RA/RN equivalence. Retain the four Spidel NULL links and explicit
+  dural links below. **Applied and validated:** restored unbadged Maillard
+  RN 3830 for coded specs 11640/11651, narrowed 3827 to its silver specimen
+  and cleared fifteen unsupported family-only links. Explicit NULL generator
+  decisions prevent uncoded 700 / `super light` / toe-clip wording from choosing
+  a cage variant. Keep Spidel-badged specimens separate; silver finish does not
+  establish RC or RA.
+  [Exact applied set](../../ingest-component-catalog/references/known-catalogs/maillard.md#maillard-700-colour-merge-reconciliation--2026-11-18-applied-and-validated).
+  [New primary evidence and exact source lead](../../ingest-component-catalog/references/known-catalogs/maillard.md#spidel-700-stc-codematerial-review--2026-11-18-read-only).
+
 - Rechecked 2026-11-17: Peugeot 1981 PRO 10/PY 10 S `Spidel 700`
   (10671/10691) and 1982 `Spidel 700 RA` (11032/11053) remain unlinked.
   The colour board explicitly names 700 RA but is undated and gives no cage

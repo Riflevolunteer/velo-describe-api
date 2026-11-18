@@ -1,5 +1,150 @@
 # Maillard catalogs processed so far
 
+## Maillard 700 colour-merge reconciliation — 2026-11-18, applied and validated
+
+Reviewed the existing TODO against live rows, all affected bike links, the
+original VeloBase records for 3827/3830/3831/3832/3833/3991, all four gallery
+photos on 3827/3833/3991, and STC p.18. The 2026-11-01 assumption that the
+merged cage differences were cosmetic is not supported. **The following
+component, generator and bike-link corrections were approved and applied.** This
+supersedes the earlier colour-only merge assumption.
+
+| Row | Applied reconciliation |
+| --- | --- |
+| 3827 | Retitled `Maillard 700` to `Maillard 700 (silver cage)`; removed the black-cage specimens from its description. Restored year_to **1989 -> 1980**, the original weak VeloBase bound: the later generic bike fitments did not identify this silver specimen. Kept year_from 1970 and source_ref 1. |
+| 3830 | Restored the vacant ID and original UUID `753B5F3D-A179-49BF-BE79-7339576BC9C0` as **Maillard 700 RN**, black anodised aluminium cage. Brand 273, Pedals 14, group 263. Dates **1978–1983**, attested by the externally dated STC catalogue and coded 1983 Peugeot fitments; not manufacture endpoints. Registered STC p.18 as **source 463**, country NULL. |
+| 3831 / 3832 | Keep retired: black-cap/black-cage 3831 belongs with the restored RN configuration; red-cap/silver-cage 3832 stays with the silver specimen. Dust-cap colour alone does not need a row. |
+| 3833 / 3991 | Keep separate, unchanged. These are Spidel-badged specimen records. Do not use the RN identification to settle their unprinted suffixes or RA fitments. |
+
+The RN identity is inferred from the specimen's Maillard 700 identification,
+black cage and the manufacturer's explicit code/material key, rather than a
+photographed RN inscription. [3830's original main photo](https://www.velobase.com/CompImages/Pedals/D3104700-DEDE-4F80-9F86-3B1C158F3C2D.jpeg)
+shows a Maillard red cap; [3831's photo](https://www.velobase.com/CompImages/Pedals/4C08E81B-5B6E-4345-9D1D-75D13E189FEE.jpeg)
+has a black cap. The existing Spidel specimen 3833 remains distinct by badge;
+no merge into it was made.
+
+The silver identity cannot safely be expanded to **RC**. Its
+[original record](https://www.velobase.com/Pages/ViewComponent.aspx?ID=9808EBBB-1B08-4FA9-A650-F18D0970BC95)
+claims aluminium cage/body and 445 g; STC's RC description cannot be assigned
+from silver colour alone. Its
+[fourth gallery photo](https://www.velobase.com/CompImages/Pedals/F6A3D21B-7BB4-4247-B828-A51B9E9AEE3C.jpeg)
+shows silver pedals on a Maillard 700 box with an apparently handwritten **RA**.
+That is a new lead, not a factory-printed material key or proof the pedals and
+box originally belonged together. Preserve the listed weight with that specimen
+only. 3991's four photos show dark outer cage faces and bright worn/inner faces,
+despite its chrome-steel title; neither this appearance nor its listing proves
+an RA/RC suffix.
+
+Applied bike-link corrections:
+
+- **11640 / 11651**, 1983 Peugeot PY 14 / PX 14, explicit `Maillard 700RN`:
+  **3827 -> restored 3830**.
+- **9615 / 10060 / 10079 / 10651 / 10711 / 11878 / 11896 / 14566 / 14582 /
+  15026 / 16479 / 22610 / 24550 / 24570 / 24885**: **3827 -> NULL**.
+  These are Peugeot and Motobécane 1976–1988 family-only values; `super light`,
+  precision bearings and toe-clip brand/material do not establish cage material.
+  Added exact NULL generator decisions and redirected the existing 1983 RN override.
+- Existing explicit-dural links to 3833, the four unresolved Spidel 700/RA specs,
+  CXC links, 700C and 700 SS decisions remain unchanged.
+
+Applied descriptions (160 / 179 characters):
+
+- 3827: `Quill racing pedal with aluminium body and silver-finish cage; black or red Maillard dust cap. Original specimen listed at 445 g; cage material not established.`
+- 3830: `Quill road pedal with black anodised aluminium cage, machined aluminium body, steel axle with 7 mm internal hex, ground annular bearings, removable cap and direct toe-clip fixing.`
+
+Read-only baseline and offline rehearsal: **107 loaded catalogues, 23,168
+specs**. Exactly the listed 17 mappings change: two RN redirects and fifteen
+unsupported links removed. No gained links, other changed mappings, missing
+identities or ambiguities. Simulated post-application retains only the baseline's
+15 unrelated Huret 4401 differences. Same-brand Maillard Pedals duplicate report
+has no groups; near report has only the two previously reviewed cross-brand
+pairs. No deletion or additional duplicate merge was made.
+
+Live validation: one source inserted, one component restored, one component
+rewritten and exactly 17 bike links updated. Component total **10,764 -> 10,765**.
+Readback matches every approved component field and link; affected spec fields
+are unchanged apart from component_id and automatic updated_at. All other live
+component titles and bike mappings match the saved baseline, including the five
+explicit-dural links and four Spidel NULL decisions. Full comparison again covers
+107 catalogues / 23,168 specs: 23,153 unchanged, only the same 15 pre-existing
+Huret 4401 differences, no gained/changed/missing/ambiguous mappings. SQL rerun
+affected **zero rows**. Post-load duplicate report: no same-brand groups; one
+existing reviewed cross-brand 600 pair, no new merge candidate. `npm test`
+passes all 13 suites. Local `/componentdetail?id=3827` and `id=3830` return HTTP
+200 with the corrected titles and source labels (Velobase / STC 463).
+
+Restoration values: before this correction, 3827 title/search_text were both
+`Maillard 700`, dates 1970–1989, source_ref 1, description
+`Maillard 700, France. Quill racing pedal, 445g. Variants: black dust cap with serrations / silver cage; red cap / black cage; black cap / black cage; red cap / silver cage.`
+Its UUID remains `9808EBBB-1B08-4FA9-A650-F18D0970BC95`; brand/category/group
+273/14/263 unchanged. All 17 spec IDs listed above previously linked to 3827.
+3830 was absent. To restore, first return those links and the old 3827 fields,
+remove restored 3830 only after its references are clear, and remove source 463
+only if unreferenced; reverse the generator changes from git. Both retitled and
+restored rows have search_text generated from their titles: `Maillard 700` /
+`Maillard 700 RN`. Applied SQL, snapshots, downloads and other task scratch files
+were removed after validation; lasting evidence and restoration details are here.
+
+## Spidel 700 STC code/material review — 2026-11-18, read-only
+
+Recovered the [STC catalogue attributed to 1978](https://forum.tontonvelo.com/viewtopic.php?t=39556),
+28 scans, including the separately supplied p.26. The occasionally cited topic
+39533 is a broken/wrong reference; use 39556. The cover has no printed year;
+internal references to 1978 models support the uploader's dating, without
+establishing a publication date. Reviewed the pedal page at full resolution;
+this was a focused evidence check, not a full STC ingestion.
+
+**Printed p.18, [original scan](https://forum.tontonvelo.com/download/file.php?id=303772):**
+Maillard 700 **RC = chrome-plated steel cage**, **RN = black anodised aluminium
+cage**. Both have a machined aluminium-alloy body, treated steel spindle with
+7 mm internal hex, ground annular bearings, removable cap and direct toe-clip
+attachment. Printed weights: RC **225 g**, RN **175 g**; the page does not
+explicitly say per pedal or pair, so do not replace existing pair weights with
+these numbers without clarifying the basis. The page bears the Spidel logo.
+It does **not** list RA, explain an RA/RN equivalence or identify a Peugeot
+fitment. This is a direct RC/RN material key for the quill 700, not a key for
+the later aerodynamic CXC family.
+
+This advances the earlier group-board review but does not resolve RA. Live
+3833 (black alloy) and 3991 (chrome steel) still have their original titles,
+descriptions, source_ref 1 and 1970–1980 dates. The four Peugeot specs in the
+table below remain NULL. Existing 3833 links include 1977 Maillard 700 explicitly
+described as dural (9721), in addition to the four 1979/1980 dural links already
+recorded below. No exact-variant date extension follows from a generic 700 name.
+
+The new source prompted the review and correction above of the
+**2026-11-01 colour-only merge**. At the start of this hunt, **3827** combined
+silver/black cages and several dust-cap colours under one **445 g** description.
+Its black-cage predecessors were 3830 (red cap,
+UUID `753B5F3D-A179-49BF-BE79-7339576BC9C0`) and 3831 (black cap,
+UUID `4DA6D166-8568-4C05-99E7-819B48D8A405`). Their original VeloBase pages
+and main photos were recovered: 3830 has no material field; 3831 lists
+aluminium alloy in a combined body/cage field. Photos show black quill cages,
+but no photographed RN code. The period source proves the material distinction
+was real; it does not by itself assign every merged specimen. Those specimens
+and affected RN/generic links were reconciled in the applied section above.
+The earlier analogy to Atom 450RN/600RN is superseded by this direct 700 evidence;
+do not treat cage material as merely a colour variant.
+
+Other new leads checked:
+
+- [Motobécane 1982 general spares tariff](https://motobecane.s3.eu-west-1.amazonaws.com/document/telechargement/tg1982.pdf),
+  printed p.191 (PDF p.193): retailer item **95946**, pair of Maillard 700
+  pedals, without suffix or cage material. Printed p.201 (PDF p.203) lists
+  **97195, série Spidel**, without a component breakdown. Neither supplies an RA
+  crosswalk. Do not use price to choose a cage.
+- A [forum reference](https://forum.tontonvelo.com/viewtopic.php?start=20&t=25518)
+  identifies **Le Cycle, January 1979, pp.34–37, “SPIDEL un an après”**.
+  The original article scan was not recovered; this is a specific acquisition
+  lead, not inspected primary evidence or a proven material key.
+- The [2023 PY10CP restoration account](https://peugeotpy10cpprestige.blogspot.com/2023/07/1978-peugeot-py10cp-prestige.html)
+  names 700 RA but supplies no period cage-material/code key. Reposts and sale
+  descriptions repeating that specification are not independent confirmation.
+
+This initial sourcing pass made no DB, data_source, CSV, generator or bike-link
+changes; the subsequent approved correction is recorded above. Evidence and
+remaining actions recorded here and in TODO; task-created downloads/renders removed.
+
 ## Spidel 700 RA group-box review — 2026-11-17, read-only
 
 Checked both original attachments from [Tonton Vélo topic 10923](https://forum.tontonvelo.com/viewtopic.php?t=10923):
@@ -237,6 +382,9 @@ Pedals section of the bike-link decisions for the retained NULL-link call.
 
 
 ## Cleanup 2026-11-01 (no catalogue): Maillard 700 pedal colour variants folded
+
+The cage-colour assumption and RN links in this historical entry are superseded
+by the applied 2026-11-18 reconciliation above; dust-cap colours remain cosmetic.
 
 - 3827 "Maillard 700 (black dust cap with serrations, silver cage)" (1970-80, 445g) retitled "Maillard 700",
   variants listed in its description, group 263 "Maillard 700", year_to 1980 -> 1989: the 1981-88 Peugeot
