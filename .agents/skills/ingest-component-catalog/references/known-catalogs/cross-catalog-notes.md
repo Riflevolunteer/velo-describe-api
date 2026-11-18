@@ -654,8 +654,11 @@ originals and maintained CSVs are preserved.
   HDA, SU, HSI ...) beside the makers' numbers, AW / SW weights and 1976 USD prices.
   Components are pp. 1-55 (table of contents on the second image); the rest is
   clothing, shoes, bags, camping, complete bikes (Ron Cooper, Mondia, Bob Jackson,
-  Masi, Windsor, Niko, Rossin; pp. 87-111, an `ingest-bike-specs` job), tools,
+  Masi, Windsor, Niko, Rossin; pp. 87-111), tools,
   lighting and books. Read 2026-10-21: every component page (pp. 1-55).
+- User decision, 2026-11-18: do not load bikes from Bikecology catalogues.
+  Removed the April 1976 complete-bike ingestion task; component evidence work
+  remains in scope.
 - Dated items inside it: new for 1976 Cyclone shift levers, Maxy 5 crank, Sunshine
   small-flange hubs, Elan clincher wheel (from May), Sunshine Super Pro Am stem
   (June); introduced 1975 TTT Record stem, Rally rear derailleur, Weinmann 500 de
@@ -2267,9 +2270,12 @@ that work has its own current action. No Mavic DB change followed this review.
 - Components: pp. 28-29 (Campagnolo Croce d'Aune group, Vetta Gel), 42-53 (shifters,
   derailleurs, pedals, cranks, chainrings, BBs, freewheels, chains, brakes, levers, saddles,
   bars, stems, seatposts), 60-61 (hubs, headsets), 63-67 (wheels, rims, tyres). House bikes with
-  full spec lists: pp. 30-40 (not loaded; see TODO). Out of scope: 1-27 clothing, shoes,
+  full spec lists: pp. 30-40 (not loaded; excluded by the user decision below). Out of scope: 1-27 clothing, shoes,
   helmets, computers, bags, trainers; 41 frames; 51 cages and bottles; 54-59 locks, lights,
   books, racks, tools; 62 pumps; 68.
+- User decision, 2026-11-18: do not load Nashbar house-brand bikes. Removed the
+  Spring 1988 house-bike ingestion and brand-treatment task. Manufacturer
+  component evidence from Nashbar catalogues remains in scope.
 - Stock numbers are retailer codes. Some carry the maker's number (SH-FD6400, SR-P5, DC-730G),
   others do not (VA-4050, SR-PD122); none is used as a part number. Retailer source: attests 1988,
   absence caps nothing; "NEW" means new to Nashbar.
@@ -2341,7 +2347,8 @@ that work has its own current action. No Mavic DB change followed this review.
 - Rechecked all loaded bike specs against Ole 4752 / 2638 / 6289 / 3133 / 1985:
   no specs use those components or name Ole. Their earlier-1988 attestation is
   already recorded in both Nashbar and SunTour Edition No.89 evidence; there is
-  no outstanding Ole backfill. This does not close the separate Nashbar bike load.
+  no outstanding Ole backfill. Nashbar house-bike ingestion was subsequently
+  excluded by the user decision above.
 - Dia-Compe **8082 / 678** are brake caliper series, not brake-lever identities.
   Miyata 710's 1986 GX-400 brake **18834** already links to 8082; its GX-400 Aero
   lever **18835** correctly remains NULL. Extending caliper dates cannot identify

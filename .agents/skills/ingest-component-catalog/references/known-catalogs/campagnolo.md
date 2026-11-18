@@ -1,5 +1,84 @@
 # Campagnolo catalogs processed so far
 
+## Victory LX rear reconciliation — 2026-11-18, applied and validated
+
+Re-read source **196**, the English *Nuovo Victory / Nuovo Triomphe* brochure:
+[original ZIP](https://velobase.com/CatalogScans/Campagnolo/Campy1986_Victory_Triomphe.zip),
+[archive](https://www.disraeligears.co.uk/site/campagnolo_-_nuovo_victory_nuovo_triomphe_november_1986_version.html),
+[LX page](https://www.disraeligears.co.uk/site/campagnolo_-_nuovo_victory_nuovo_triomphe_november_1986_version_scan_4.html).
+Inspected ZIP scans **01, 03, 04 and 08** for context, LX specification and
+dating; scan 08 explicitly prints **November 1986**. The ZIP still lacks 02.jpg;
+the relevant LX page **04.jpg** is present and legible. This is a focused rear
+derailleur reconciliation, not another ingestion of the entire brochure.
+
+The LX page explicitly names the front/rear set and shows the **shield-logo,
+long-cage rear**, Phillips limit screws, engraved main pivot-bolt heads and no
+early plastic thread-lock insert. It specifies a heat-treated aluminium-alloy
+cage, **38T total capacity**, **32T maximum sprocket**, and operation with a
+**12T sprocket**. Its **23T front-change** figure belongs to the front changer;
+do not call that the rear's chainring capacity or assume all maxima can be
+combined. No rear part code or weight is printed.
+
+Pre-load Campagnolo rear inventory, code/name/description aliases and group
+212 found **no existing LX rear row**. Compared the neighbouring identities:
+
+| Existing row | Evidence / decision |
+| --- | --- |
+| 4172, 0102047 early Leisure | Plastic insert, slotted screws, plain pivot heads; retain the already corrected 1984–1986 row and source 464 |
+| 4168, G010-SM Victory | Existing short-cage model; retain its identity, dates and four links |
+| 4169, Victory S3 | Original main specimen is script-logo **short cage**; retain its identity, dates and five links |
+| 4078, Rally Racing | Original main specimen has different slant-parallelogram construction, body return spring and cable barrel adjuster; not the LX photo |
+| 2319, LX front | Correct companion already exists in Victory LX group 212; no metadata or date change needed |
+
+Comparison images: [4169 main](https://www.velobase.com/CompImages/RDerailleur/EAF6F3F9-62BE-4148-8C40-86C5D09311DA.jpeg),
+[4078 main](https://www.velobase.com/CompImages/RDerailleur/46ABFCB1-012A-4A9D-9185-8E2F38B07C17.jpeg),
+[shield-logo LX](https://www.disraeligears.co.uk/site/00_main_images/campagnolo_victory_lx_3rd_style_lx_victory_lx_derailleur_main_image.jpg),
+[script-logo long-cage specimen](https://www.disraeligears.co.uk/site/00_main_images/campagnolo_victory_lx_4th_style_g010-lg_victory_lx_s3_derailleur_main_image.jpg).
+The modern archive's proposed **G010-LG** code is explicitly uncertain; do not
+promote it to a manufacturer-proved code. Its measured specimen weight and
+tentative 1987 chronology are not assigned to the brochure model. The recovered
+1988 dealer-parts PDF (source 110) has no usable text layer and its opening
+scope page lists Athena/Chorus/Croce d'Aune/Record; no primary LX code crosswalk
+was established from it. This does not establish absence from the whole PDF.
+
+**Approved and applied: one insert, no updates/deletes/source registrations.**
+
+- New row **11703**, **`Campagnolo Victory LX (shield logo)`**, brand 11, category 15
+  (Rear Derailleurs), existing group **212 (Victory LX)**, source **196**.
+- Dates **1986–1986** record this brochure attestation, not production endpoints.
+  Search text **`Campagnolo Victory LX`**; UUID
+  **`cdeada59-df78-4d47-84b9-6aafd6fc7a97`**.
+- Description (196 characters): `Long-cage friction rear derailleur with a shield logo, Phillips limit screws and engraved pivot bolts. Heat-treated alloy cage; 38T total capacity, 12-32T sprockets. Part of the LX front/rear set.`
+- Existing generic Victory/New Victory bike specifications do not identify LX
+  hardware. No loaded derailleur spec explicitly names this LX model, and no
+  fitment/link or generator override change was made. Do not redirect the
+  existing short-cage links merely because this long-cage row is added.
+
+Read-only before/after simulation across **107 loaded catalogues / 23,168
+specs** preserved the exact summary and finding list: 23,153 unchanged plus
+the same 15 pre-existing unrelated Huret 4401 differences, with no new mapping
+differences or ambiguities. The scoped duplicate baseline had no merge
+candidates; the distinct LX construction above supplies the new-row decision.
+Post-load mapping validation reproduced the exact same summary and finding
+list. Full metadata and image-hash readback verified **every existing component
+unchanged**; all live bike_spec rows (including timestamps) and data_source
+rows were also unchanged. Row 11703 matched every approved field. SQL rerun
+inserted **zero** rows.
+
+Recorded **4168/11703**, **4169/11703** and **4172/11703** in
+`REVIEWED_NOT_DUPLICATES` for short/long cage and early/LX hardware distinctions.
+The scoped rear-derailleur duplicate summary was unchanged and proposed no
+pair involving 11703; the near-pair report was empty. All **13 test suites
+passed**. Local `/componentdetail` checks confirmed 11703's title, dates,
+description, search text, source 196 and Victory LX group, and retained the
+existing metadata/source/group on 2319 and 4172. The temporary API was stopped.
+
+Task-created SQL, snapshots and downloaded comparison images were removed
+after validation. Source URLs, the inserted UUID and exact component fields
+are retained above. Rollback would remove only row 11703 / UUID
+`cdeada59-df78-4d47-84b9-6aafd6fc7a97` after checking references; no existing
+component fields or source registrations need restoring.
+
 ## Victory Leisure 4172 style comparison — 2026-11-18, applied and validated
 
 Read all four scans of the [early French Victory leaflet](https://www.disraeligears.co.uk/site/campagnolo_-_victory.html),
@@ -33,7 +112,7 @@ Moved group_id **212 (Victory LX) -> 18 (Victory)** to match the early identity;
 the two groups were checked live before preparing this ownership correction.
 Registered the undated French leaflet with the attributed date and advert URL
 as **source 464**, country NULL; source_ref **196 -> 464**. No new component or
-merge was made. The later LX rear requires separate reconciliation with source 196.
+merge was made. The separate later LX rear insertion using source 196 is recorded above.
 
 Applied description (170 characters): `Long-cage friction rear derailleur with headless slotted limit screws, a plastic thread-locking insert in the outer plate and plain pivot-bolt heads. Listed weight 179 g.`
 Search text is `Campagnolo 0102047 Victory Leisure`.
@@ -1210,7 +1289,8 @@ its own `data_source`.
   biggest sprocket 32T; its "Cat. n. 18 bis" citation was dropped as a pure
   citation of the old source), hubs 3280 / 3281 Victory and 3277 / 3278
   Triomphe (24/28/32/36/40-hole options; Victory also 6- or 7-speed
-  spacings). 4172 is matched to the LX set by the 38T capacity (long cage);
+  spacings). The original 4172/LX identification by capacity alone is superseded
+  by the 2026-11-18 style comparison and separate LX insertion above;
   the Triomphe leisure rear 7015 was left alone because the brochure's 32T
   Triomphe figure is the corsa cage. The 130 mm Victory/Triomphe seatpost was
   already in 5764 (416/101).

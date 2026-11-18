@@ -208,6 +208,9 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  [4168, 11703], // Victory LX review 2026-11-18: existing short-cage Victory versus the brochure's long-cage LX; campagnolo.md
+  [4169, 11703], // Victory S3 short-cage specimen versus shield-logo long-cage LX
+  [4172, 11703], // Early Leisure plastic insert/slotted screws/plain bolts versus later LX Phillips screws/engraved bolts
   [4356, 4357], // Mistral specimen review 2026-11-18: fixed cable stop versus round barrel adjuster; ofmega.md
   [6092, 6093], // Mistral specimen review 2026-11-18: smooth versus raised cable-entry bosses, as well as embossed/printed lettering
   [6094, 6095], // Premier specimen review 2026-11-18: narrow silver solid blades/D-ring adjusters versus broad black ribbed solid blades; ofmega.md
