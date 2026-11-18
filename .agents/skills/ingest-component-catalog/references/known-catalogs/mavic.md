@@ -1,14 +1,15 @@
 # Mavic catalogs processed so far
 
-## CXP30 and Open Pro weight attribution — 2026-11-19, read-only
+## CXP30 and Open Pro weight attribution — 2026-11-19, applied
 
 Reviewed live **5062/5063/10199/10607** (CXP30) and **5099/5100/10183**
 (Open Pro), all ten photographs on the original5062/5099/5100 listings, the
 1997 maker road spread, 1999 GB maker pp.20–21, and Guida1996 p.120 /
 Guida1999 p.106. All seven rows have zero bike links; no generator override
 references these component IDs. The current Mavic duplicate report flags only
-5062/5063 among them, correctly as tubular/clincher configurations. No database,
-source, matcher, duplicate-registry or bike-link changes were made.
+5062/5063 among them, correctly as tubular/clincher configurations. The initial
+review was read-only; the two description corrections below were subsequently
+approved and applied. No source, matcher, duplicate-registry or bike-link changes.
 
 ### Two description corrections are supported
 
@@ -18,7 +19,7 @@ source, matcher, duplicate-registry or bike-link changes were made.
   entries, not an average of two independently weighed rims. This supersedes
   the earlier notes' treatment of440g as an independent specimen mean. Preserve
   **445g as a reported actual weight** and keep435g separately attributed as a
-  specification; neither establishes a dated production variant. Proposed
+  specification; neither establishes a dated production variant. Applied
   replacement description (165 characters):
   `Mavic Open Pro, France. Reported actual weight 445 g; separately listed specification 435 g. Clincher rim with welded joint and double eyelets; blue/silver finishes.`
 - **CXP30 tubular5062:** [the original listing](https://www.velobase.com/Pages/ViewComponent.aspx?ID=FB4424AC-C610-462B-8174-56506478D1AA)
@@ -30,11 +31,42 @@ source, matcher, duplicate-registry or bike-link changes were made.
   claimed** for a CXP30 tubular. This makes weighing basis a concrete remaining
   question; it does not prove these entries describe the same physical rim,
   that500g includes inserts, or that473+inserts equals a catalogue value.
-  Proposed replacement description (210 characters):
+  Applied replacement description (210 characters):
   `700c aero tubular rim, SUP joint, UB Control brake tracks and profiled inserts; 465 g maker specification (1997), 24/28/32/36 holes, silver or titanium. A separate 500 g listing has no stated measurement basis.`
 
-These are review proposals, not applied changes. No SQL prepared. Keep titles,
-dates and identities separate from this weight-attribution correction.
+### Applied corrections and validation
+
+User approved with “apply”. Two guarded `component_detail.description` UPDATEs
+changed exactly **two rows**; the idempotency rerun changed **zero rows**.
+Exact readback confirms both descriptions above and every other column unchanged,
+including titles, search text, source UUIDs, provenance, image, category/group,
+date bounds and zero bike references. Source_ref remains357 on5062 and1 on5099;
+the distinct maker/listing weight attributions are documented above. Both new
+descriptions fit255 characters. No new component/source rows or identity merges.
+
+Generator/live comparison across108 loaded catalogue CSVs /23,380 specs is
+identical before/after:23,365 unchanged, zero gains or changed targets and the
+same15 pre-existing lost matches; no missing/ambiguous rows. The comparison
+findings themselves match exactly, not just counts. Whole-DB quality findings
+also match exactly: zero errors and the same1,985 review findings. Only description
+text changed, so no code tests were added or repeated. `git diff --check` passes.
+
+Restoration values, captured before application (restore only deliberately,
+guarded by the applied descriptions above):
+
+- **5062**, UUID `FB4424AC-C610-462B-8174-56506478D1AA`, source_ref357,
+  title `Mavic CXP 30 (tubular)`, search text `Mavic CXP 30`, dates1996–1997,
+  brand31/category16/groupNULL. Previous description:
+  `Mavic CXP 30 (tubular), France, 500 grams. Deep-section aero tubular, SUP joint, UB Control sidewalls, 465 g, 24/28/32/36 holes, 700c; silver or titanium. Road racing and triathlon.`
+- **5099**, UUID `D12D1B63-2FD3-4768-99D0-4893540FE62A`, source_ref1,
+  title/search text `Mavic Open Pro`, dates1986–1986,
+  brand31/category16/groupNULL. Previous description:
+  `Mavic Open Pro, France, 440 grams (avg)` (the space before `(avg)` isU+00A0).
+
+The completed correction action was removed from TODO; the distinct1996
+edition/measurement and decal/finish dating gaps below remain open. Applied SQL,
+restoration snapshot, validation helper and comparison/quality baselines were
+removed after exact readback and the zero-change rerun. No pending review SQL.
 
 ### Edition/identity limits that remain
 
@@ -70,10 +102,11 @@ dates and identities separate from this weight-attribution correction.
   valid and separate. The official product-sheet endpoint returned403; no
   new technical-sheet dating claim is made.
 
-Source URLs, exact weight qualifiers and proposals are retained here; specimen
+Source URLs, exact weight qualifiers and applied descriptions are retained here; specimen
 HTML/photos, maker/dealer downloads, page renders and duplicate-report scratch
-files were removed after review. No tests were needed for this documentation-only
-review; `git diff --check` and TODO/anchor reconciliation were checked.
+files were removed after the initial review. That review touched documentation
+only; the later database validation is recorded above. `git diff --check` and
+TODO/anchor reconciliation were checked.
 
 ## T261 profile crosswalk — 2026-11-17, read-only
 
