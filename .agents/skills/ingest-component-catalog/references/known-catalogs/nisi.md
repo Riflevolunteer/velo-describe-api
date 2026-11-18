@@ -1,5 +1,94 @@
 # Nisi catalogs processed so far
 
+## 5138/5145 original-specimen review — 2026-11-18 (applied and validated)
+
+Completed the bounded original-gallery comparison against maker sources
+415/416. No general source hunt or speculative new model insertion. The
+earlier 5138 combined-name hold below is superseded by this reconciliation;
+5145's exact coded identity/weight still needs physical or labelled evidence.
+
+- **5138**, [original listing](https://www.velobase.com/Pages/ViewComponent.aspx?ID=1B17904A-B6A3-4FAA-AC46-933972520C7B):
+  all five photographs inspected. The primary gallery includes packaging
+  explicitly labelled **PISTA SPECIALE gr.280** (28 holes); a separate
+  packaged pair reads **PISTA M-20**, 32 holes. These are different labelled
+  specimens, not evidence for one combined “M20 Pista Speciale 280g” model.
+  Main photograph `A96B3238-B50B-4617-A950-4B37B63B53B8.jpeg`, weight-label
+  photograph `E8FC45F0-6372-4FB2-896C-B087370E3AA4.jpeg`, and M-20 label
+  photograph `95F2987B-622B-4049-8DB8-3A1CD05A1D80.jpeg`, all under
+  `https://www.velobase.com/CompImages/Rims/`. The remaining two photos show
+  the rim bed and separately packaged rims; none provides a measured weight.
+- Visually re-read [c.1977 maker PDF p.2](https://gipiemme.com/wp-content/uploads/2023/11/NISI-Catalogo-1977.pdf#page=2)
+  and [c.1985 maker PDF p.10](https://gipiemme.com/wp-content/uploads/2023/11/NISI-Catalogo-1985.pdf#page=10):
+  **00120 Pista Speciale 280g/19mm**, **00130 Pista m.20 350g/20mm**. This
+  supports retaining stable 5138 for its primary **280g Pista Speciale**
+  specimen, retitled `Nisi 00120, Pista Speciale`. Do not assign that weight
+  to the separately labelled M-20. Retain M-20's existence/evidence here;
+  no new 00130 row was added, consistent with the earlier no-insert choice.
+  The listing's 19.5mm width and mixed drillings are not used to choose a
+  model; the actual package name/weight and maker table provide the match.
+- **5145**, [original listing](https://www.velobase.com/Pages/ViewComponent.aspx?ID=5A1AC8D3-60DF-438A-BD15-6016A21D7BE8):
+  all three photographs inspected (`460D3504-EDFC-46EE-B63D-5CD939A2B77B.jpeg`,
+  `FAA7EF22-26E7-47AD-B4DD-935E646AFFD2.jpeg`,
+  `47E803BD-E615-464C-A661-7CA241C9DBE4.jpeg`, same Rims directory).
+  They show a built clincher wheel, knurled sides, Schrader valve and NISI
+  TORO stamping; no model code, scale or weight measurement. The page reports
+  27in/630mm, 36H, 24mm outer width, 13mm height, aluminium and polished finish.
+  Crucially it explicitly calls **580g (Spec)** and says the model name was
+  **deduced from catalogue scans**, with only NISI TORO stamped on the rim.
+  The figure is not reported as measured; its exact copied source is unknown.
+- Maker [c.1977 PDF p.4](https://gipiemme.com/wp-content/uploads/2023/11/NISI-Catalogo-1977.pdf#page=4)
+  and [c.1985 PDF p.15](https://gipiemme.com/wp-content/uploads/2023/11/NISI-Catalogo-1985.pdf#page=15)
+  distinguish 00410 Sport Toro Stretto 520g/24mm and 00510 Super Sport Stretto
+  600g/24mm; earlier lettered-code list has a 580g Super Sport listing.
+  Shared width/profile and a borrowed weight cannot identify this loose
+  specimen or justify replacing 580 with 520/600. Keep 5145's current title
+  and dates; mark attribution/weight as unconfirmed in its description.
+
+### Applied changes and restoration
+
+**5138:** title/search text `Nisi M20 Pista Speciale` →
+`Nisi 00120, Pista Speciale` / `Nisi 00120 Pista Speciale`; source_ref
+**262 → 416**. Retain **1970–1988**, UUID and all ownership fields.
+Old description: `Nisi M20 Pista Speciale, Italy, 280 grams (Spec), weight per rim.`
+Applied description (**144 characters**): `Alloy tubular track rim, 00120 Pista Speciale; 280g, 19mm, smooth countersunk drilling with washers. Distinct from 00130 Pista m.20 (350g/20mm).`
+
+**5145:** description/source only, source_ref **259 → 1** (original specimen);
+retain **1970–1985**, title/search text, UUID and ownership fields.
+Old description: `Nisi Sport Toro Stretto, Italy, 580 grams (Spec)`
+Applied description (**232 characters**): `Uncoded polished alloy clincher rim, 27in/630mm, 36H; reported 24mm wide, 13mm high; Schrader drilling, knurled sides. Stamped NISI TORO; Sport Toro Stretto attribution tentative. Listed 580g is unverified, not reported as measured.`
+
+Restore the exact old fields above, guarded on the applied new fields,
+if reverting. Retained legacy date ranges are not newly established
+production boundaries. Earlier catalogue date evidence remains recorded
+here when source_ref changes to the latest source used for enrichment.
+
+- Live search found no existing 00120/00130 row beyond this uncoded target;
+  no duplicate insert needed. Nisi duplicate report has three generation
+  and three configuration pairs; none involves 5138/5145.
+- Both targets have **zero bike links**. Live search found no bike specs
+  explicitly naming Nisi M20, Sport Toro, Super Sport or Pista Speciale.
+  The existing `nisi pista special` override remains **9225**, 00110/230g.
+- Read-only before/proposed-title simulation over **107 loaded catalogues**,
+  **23,168 specs**, returned identical reports: 23,153 unchanged, 15 existing
+  unrelated lost mappings, zero gained/changed/missing/ambiguous. No generator
+  SQL was written. The override comment was clarified without changing code.
+- User approved the change set. Guarded SQL affected exactly **two rows**,
+  then **zero** on rerun. Exact readback verified both descriptions, lengths,
+  5138's title/search text and source **416**, 5145's source **1**, both
+  retained date ranges, UUIDs, brand **509**, category **16** and NULL groups.
+  Sources resolve correctly; both rows retain zero bike links. Component
+  count remains **10,764**. No inserts, merges, date changes or bike writes.
+- Actual post-load mapping comparison across **107 loaded catalogues** and
+  **23,168 specs** has identical scope, files, summary and findings to the
+  saved baseline. Duplicate report remains three generation and three
+  configuration pairs, with no pair involving either target. No new mapping
+  or duplicate ambiguity introduced.
+- Downloads, renders, specimen HTML, simulation script, duplicate output,
+  applied SQL and before/after mapping files removed after successful
+  readback, zero-change rerun and mapping comparison. Durable evidence and
+  restoration values remain above. Only 5145's missing physical/model
+  evidence remains waiting; the original-photo review is complete.
+
 Earlier Nisi rows came from velobase and the La Bicicletta guides (`data_source` 259 / 262 / 357; see
 cross-catalog-notes.md). The maker archive at https://gipiemme.com/en/catalog/ (Nisi became part of Gipiemme) also
 holds `NISI-Catalogo-1975 / 1980.pdf`; see the end of this file.

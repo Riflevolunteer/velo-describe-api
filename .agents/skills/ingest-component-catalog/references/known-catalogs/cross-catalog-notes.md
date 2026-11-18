@@ -12,10 +12,16 @@ recovered and inspected the maker page images through Ebykr, completed the
 p.54 specimen comparison and checked live rows. Use the linked applied
 record for the verified identities, sources, restoration values and checks.
 
-Other bounded candidates are original-specimen comparisons for SunTour
-3630 (FH-XD10/11), 6290 (LD-5100 versus LS-5700/5800), and Nisi 5138/5145.
-Their existing catalogue distinctions are recorded in the brand notes;
-this triage found no new identifying evidence for those specimens. Huret
+The later SunTour reviews supersede the initial candidate list:
+[6290's PLG handed-code reconciliation](suntour.md#plg-6290-handed-code-reconciliation--2026-11-18-applied-and-validated)
+is applied and validated. [3630's specimen/Axis review](suntour.md#xcd-freehub-3630-specimen-and-axis-review--2026-11-18-description-correction-applied)
+and description correction are complete; exact FH-XD10/FH-XD11 identity
+still needs a specimen code, comparable body/spacing measurements or coded
+fitment. Neither is an unread original-photo task. The subsequent
+[Nisi 5138/5145 specimen review](nisi.md#51385145-original-specimen-review--2026-11-18-applied-and-validated)
+identified mixed Pista Speciale/M-20 packaging and established that 5145's
+weight is an unmeasured specification claim; both corrections are applied
+and validated. Only 5145's physical/model evidence remains missing. Huret
 501.1 DFE remains an exact scan-recovery task: indexed OCR is already known
 and is not a newly recovered scan. Manual Belleri/Pelissier/Weinmann
 candidates still require comparable measurements/model evidence.

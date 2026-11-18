@@ -1,5 +1,163 @@
 # SunTour catalogs processed so far
 
+## XCD freehub 3630 specimen and Axis review — 2026-11-18 (description correction applied)
+
+**Exact generation remains unresolved.** Compared the original specimen,
+Edition No.89 and the 1990 catalogue, then re-read the original 1989 Bianchi
+Axis table. None supplies the missing specimen-to-code crosswalk. Do not
+retitle/merge 3630 into 11416 or assign FH-XD11 from the shared XCD branding.
+The completed photo comparison supersedes the old instruction merely to
+inspect the original reference; new evidence must supply a code or measured
+construction/cassette distinction.
+
+### Evidence
+
+- [3630 original listing](https://www.velobase.com/Pages/ViewComponent.aspx?ID=DAFB66FD-BC5E-4B30-BF80-58D3AD65720D),
+  source **1**, leaves Model and Rear Spacing blank; reports cassette,
+  36 holes, low flange, aluminium shells and steel axles. Its sole full-size
+  [photograph](https://www.velobase.com/CompImages/Hubs/866015BC-C994-430B-876F-1612E3FCF5CA.jpeg)
+  shows front/rear grey shells, SUNTOUR XCD markings, hollow axles with
+  separate quick releases and an exposed rear cassette body. No numbered
+  model/date stamp, scale, fitted cassette or measured spacing. The thumbnail
+  is the same photograph, not another view. Similar shell shape/colour is
+  insufficient to distinguish generations or six/seven-speed bodies.
+- Source **427**, [Edition No.89 PDF p.29 / printed p.28](https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf#page=29),
+  visually read: NEW **FH-XD10-U7** (7-speed) and **FH-XD10-R6** (6-speed),
+  32/36H, 130mm, QR, grey forged alloy shell and black Cr-Mo axle. Listed
+  710/690g include the pictured cassette offering; they are not bare-hub
+  measurements to compare directly with 1990. Existing **11416** represents
+  both configurations. Sprocket references are **FH-HC10** (black XCD sets),
+  represented by **11414**. HB-XD00 and HB-XD10 are separate freewheel hubs.
+- Source **385**, [1990 printed p.14](https://www.disraeligears.co.uk/site/00_main_images/suntour_bicycle_equipment_catalog_1990_-_page_14_main_image.jpg),
+  visually read: **FH-XD11-7U**, 32/36H, 130/135mm, 470g at 36H/130mm,
+  QR-RA00-R; cassette **CS-AP00-K7U**, listed silver. Separate **FH-XD00-6R**,
+  32/36H, 130mm, 465g, cassette CS-AP00-K6R black, already **11034**. Do not
+  infer the seven-speed model from a bare freehub photo or substitute the
+  six-speed row. 3630's original page does not attest any of these codes.
+- Source **325**, original [Bianchi 1989 table, img-2487-2](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/img-2487-2.jpg?v=1764982612),
+  visually read: Axis hubset **Suntour XCD-6010**, stainless spokes; separate
+  cassette **Suntour 13-28T 7-speed cassette**, chain Suntour GPX. Neither
+  FH code nor CS-AP00 code is printed. This rules out a screw-on-freewheel
+  interpretation of the bike, but does not establish the loose specimen's
+  generation or prove an exact cassette code. Retain the current broad hub
+  link **18707 → 3630** and existing cassette link **18703 → 1224**; the
+  latter is an existing mapping, not independent proof of 3630's compatibility.
+  Current 1224 says black while the 1990 maker table says silver; do not use
+  that stored colour claim to resolve the specimen. No cassette change is
+  proposed from this hub review.
+
+### Applied description correction and validation
+
+The old 3630 description asserted `for the CS-AP00-K7U cassette` without
+that identification in its specimen evidence. User approved removing that
+assertion and describing the observed/reported hub set, retaining uncertainty.
+Retained title/search text, **1988–1990**, UUID, source **1** and all links.
+The legacy dates are retained, not newly verified production boundaries.
+
+Old description: `SunTour XCD 6000 (freehub), Japan. XCD 6000 hub set with a cassette freehub body (aluminium shell), for the CS-AP00-K7U cassette; the freewheel version is 3631 HB-XD00.`
+
+Applied description (**201 characters**): `XCD low-flange quick-release hub set; grey aluminium shells, steel axles, 36 holes and a rear cassette body; SUNTOUR XCD shell markings. Exact model code, rear spacing and cassette fitment unconfirmed.`
+
+- Read-only part/name query confirms distinct **3631**, **11034**, **11036–11039**,
+  **11415/11416**; no separate coded FH-XD11 row found. This does not justify
+  inserting one while 3630's identity is unresolved. SunTour/Hubs duplicate
+  report has one configuration pair, with no candidate involving 3630.
+- Live baseline: 3630 has only Axis spec **18707**; 11416 has no bike links.
+  The Axis cassette spec **18703 → 1224** is separate. The existing 1989
+  `suntour xcd 6010` override remains unchanged. No identity/matcher fields
+  changed. Description is not read by the matcher; no regeneration was
+  needed for this description-only correction.
+- Guarded SQL affected exactly **one row**, then **zero** on rerun. Readback
+  verified the exact description, length **201**, retained title/search text,
+  UUID, **1988–1990** dates and source **1**. Component count remains
+  **10,764**. Exact bike-spec readback confirms **18707 → 3630** and
+  **18703 → 1224**, with original text and source **325** retained.
+  No CSV, generator, source, date, identity or bike-link changes.
+  Restore the exact old description above, guarded on the applied text
+  and retained identity/source/dates, if reverting.
+- Maker scans, HTML, specimen/Bianchi downloads and duplicate output removed
+  after this review; durable URLs and evidence are recorded above. Reopen the
+  identity only for a specimen code, comparable body/spacing measurements or
+  a coded original XCD-6010 fitment/parts source.
+  Applied SQL was removed after successful readback and zero-change rerun.
+
+## PLG 6290 handed-code reconciliation — 2026-11-18 (applied and validated)
+
+The LD-5100 versus LS-5700/LS-5800 question is resolved at the PLG pair/family
+level: the 1989 codes identify **right and left levers**, not two competing
+complete sets. Retain existing canonical title `SunTour LD-5100, PLG` and
+stable ID **6290**; the later handed codes are recorded in its description.
+User approved and applied the update below. No new component, merge, retitle
+or bike-link change.
+
+### Visually inspected evidence
+
+- Source **428**, [1988-range spread 8, printed p.13](https://www.equusbicycle.com/bike/suntour/catalog88/pdf/suntour88%20-%200008.pdf):
+  PLG non-index **LD-5100**, handlebar thumbshift, power control R.H./L.H.,
+  22.2mm clamp, 150g. The nearby photograph is labelled **PL10**, not PLG;
+  do not use that down-tube lever photo as a PLG construction comparison.
+- Source **427**, [Edition No.89 PDF p.36 / printed p.35](https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf#page=36):
+  PLG **LS-5700 right** (31359921), **LS-5800 left** (31359931), alloy
+  handles, black plastic hoods, chromium-plated steel clamps, Power Ratchet,
+  handlebar mounting, 7/8in (22.2mm), **150g/pair**. No NEW marker on this
+  offering. Absence of that marker alone is not continuity proof.
+- [Original specimen listing](https://www.velobase.com/Pages/ViewComponent.aspx?ID=60DD3362-5238-48B3-AA9E-470213416012)
+  and all four attachments inspected. Photos
+  `8963B964-96A2-410F-99E1-21F1A7ABE830.jpeg`,
+  `98AC71DF-6239-464E-9CF7-E29C45DA3399.jpeg`, and
+  `85E141F6-C40F-4AD5-93B9-50D10660B635.jpeg` under
+  `https://www.velobase.com/CompImages/Shifter/` show the same PLG design
+  as No.89: black Suntour hood, exposed alloy lever neck with black ribbed
+  tip, round silver tension fitting with winged adjuster, matching cable
+  outlet and chrome clamp arrangement. Visible TAIWAN marking is not a date
+  or model code; do not assert Japan as specimen manufacture location.
+  The fourth attachment, `DCA644AB-0928-4BD8-9E40-295EDA373DFD.jpeg`, is an
+  unattributed catalogue-table crop explicitly giving LD-5100 for L/R,
+  Power, 22.2mm and 150g. Its unknown edition is not separate dated evidence.
+- The combination of PLG family designation, handed-code table, matching
+  visible construction and matching dimensions/control/weight supports one
+  family record through the 1989 catalogue. This is a reconciliation
+  inference, not a factory statement that every internal service part is
+  interchangeable or that every LD-5100 specimen carries LS markings.
+
+### Applied update and validation
+
+One guarded update: **year_to 1988 → 1989**, **source_ref 428 → 427**;
+retain **year_from 1987**, title/search text and all other identities.
+1989 is catalogue availability, not a proven production endpoint. The
+1987 Miyata fitment independently supports retaining the earlier start.
+
+Old description: `Non-index handlebar thumbshift levers, power control right and left, 22.2mm clamp, 150g.`
+
+Applied description (**195 characters**): `PLG non-index handlebar thumbshift pair; LD-5100 (1988), LS-5700 right/LS-5800 left (1989); Power Ratchet; 22.2mm clamps; alloy levers, black plastic hoods, chrome-plated steel clamps; 150g/pair.`
+
+Restoration: return that exact old description, year_to 1988 and source_ref
+428, guarded on the applied new values. UUID remains
+`60DD3362-5238-48B3-AA9E-470213416012`.
+
+- Live part/name/description search found no existing LS-5700/LS-5800
+  component or another PLG shifter row. SunTour/Shifters duplicate report
+  returned no candidate groups. No duplicate insert is warranted.
+- Sole matching live bike spec is **22396**, 1987 Miyata Street Winder,
+  `SUNTOUR LD 5100PLG`, source **407**, linked to **6290**. Existing exact
+  bike/year override retains it. No unlinked named-code candidate was found.
+- Generator/live baseline over loaded catalogues: **23,168** compared,
+  **23,153** unchanged, **15** pre-existing lost mappings, zero gained,
+  changed, missing or ambiguous. Post-load comparison across **107 loaded
+  catalogues** exactly matches the baseline scope, files, summary and findings.
+  Changed fields (description, dates, source_ref) are not read by
+  `readComponentRecords`; title/category/ID remain unchanged.
+- Applied SQL affected exactly **one row**, then **zero** on rerun.
+  Readback confirms the exact description, **1987–1989**, source **427**,
+  retained title/search text/UUID and the one existing link. Source 427
+  resolves to the registered Edition No.89 catalogue. Component count
+  remains **10,764**. No bike or generator writes.
+- Exact bike readback confirms **22396 → 6290**, retaining its stored
+  value, source **407**, Street Winder identity and **1987** year.
+- Downloads, renders, duplicate report, applied SQL and before/after mapping
+  files removed after successful readback, zero-change rerun and comparison.
+  Durable evidence and restoration values remain above.
+
 ## Palo Alto Cyclone II lever identity — 2026-11-17
 
 Palo Alto 1981/82 printed p.32 (image 19), retailer 32-101, is existing
@@ -1486,7 +1644,7 @@ original proposal `/tmp/xcd-review-proposal.sql`, images
 - **Bike link (user approved):** 1987 Bianchi Sport SX "Derailleurs: SunTour
   Alpha-5000" front 1329 -> 11418 (Front Derailleurs override). Regenerating all
   93 bike catalogues changed only that spec; SQL re-run added nothing.
-- Left: 6290 PLG LD-5100 (1988) vs Edition 89 LS-5700 / LS-5800 (TODO); 7861
+- Former 6290 PLG LD-5100 versus LS-5700/LS-5800 hold superseded by the [applied handed-code reconciliation](#plg-6290-handed-code-reconciliation--2026-11-18-applied-and-validated); 7861
   RD-5000-GT not listed in 1988 (kept at 1987).
 
 ## Uncoded VeloBase stubs vs coded rows — 2026-11-16 review
@@ -1815,7 +1973,7 @@ were included.
 
   Readback verified the 15 inserts and two updates, categories and source references; rerun affected zero rows. Duplicate reports found no merge or near candidates. A live search found no bike specs naming the new models; no links were added. Actual generator/live comparison across 98 loaded catalogues and 21,382 specs exactly matched the pre-load baseline: the existing 15 lost matches concern Huret Rival 4401, outside this task. SQL and comparison scratch files removed after validation.
 - **Left / open:** 3630 unnumbered XCD freehub vs FH-XD10 (new 1989) / FH-XD11
-  (1990); 6290 LD-5100 PLG vs the 1989 PLG LS-5700 / LS-5800 (both 150g); 6376
+  (1990); 6376
   CL-XD10 (1988 JP code) kept apart from 11417; 1989 Brava "SunTour GPX" front and
   "GPX AccuShift" shifters still unlinked (SSB / SSH, B / C rows, text does not
   choose); p.34's RD-2000-GX is the 1988 Alpha 2000 code (see the 1988 English entry
@@ -2059,7 +2217,7 @@ Seven catalogue entries have possible existing specimen matches requiring strong
 
 - p.13 `RD-XD10-GXB`: Unnumbered later long-cage 4789 may be this model; existing notes explicitly prohibit identifying it by photograph alone. Catalogue establishes code but identity remains unresolved.
 - p.13 `FD-XD10-GXH`: Unnumbered 2662 SunTour XCD 6000 (1990) may depict this model; inspect original reference/photo before retitling or adding a duplicate.
-- p.14 `FH-XD11-7U`: Existing unnumbered 3630 XCD 6000 freehub may be this or an earlier hub; inspect original reference before changing/adding.
+- p.14 `FH-XD11-7U`: Existing unnumbered 3630 XCD 6000 freehub may be this or an earlier hub. [Original specimen and Axis review](#xcd-freehub-3630-specimen-and-axis-review--2026-11-18-description-correction-applied) completed 2026-11-18: no exact code recovered; need specimen code/measurements or coded fitment before changing/adding.
 - p.15 `SL-PP00-R7U / SL-PP00-R6R / SL-PP00-L`: Unnumbered 6305 X-1 trigger style may be this model; inspect original reference before retitling or duplicating. **Resolved 2026-11-14 (user approved):** the VeloBase page gives group X-1, model "X-press", 1990, 7sp AccuShift Plus; the only 1990 X-1 X-Press is PP00. 6305 is retitled `SunTour SL-PP00-R7U / SL-PP00-R6R / SL-PP00-L, X-Press (X-1 / XCE / XCM / XCT)` with source 385. The 1990 Bianchi Nyala (XCT) and Osprey (X-1) X-Press shifters moved from 6312 SL-XP10 to it. Follow-up the same day: 1990 Project 7 / Grizzly (XC-Pro) moved from 6312 to 6316 SL-PP10. p.10, the XC-Pro page, lists SL-PP10 (stock 33119571, as p.12), and 6312's 1990 start is VeloBase-only.
 - p.16 `SL-CR00-R7U / SL-CR00-R6R / SL-CR00-L`: Existing6306 originally X-1 thumb style, Chroma group and yellow accents, now retitled SL-X102 by 1992 pass. Original has no exact model field; hold likely duplicate.
 - p.16 `CW-XE00`: Existing2002 originally unnumbered XCE crank (50-40-28T,110/74BCD), now CW-XE01 after1992 pass; original has no exact model, hold potential duplicate.

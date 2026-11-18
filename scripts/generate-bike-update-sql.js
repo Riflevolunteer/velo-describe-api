@@ -5180,8 +5180,8 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin: Nisi rims printed without their five-digit codes (rows 00250 and 00218).
     'nisi corsa stretto': [{ from: 1982, to: 1988, id: 9228 }],
     'nisi ekip': [{ from: 1982, to: 1985, id: 9227 }],
-    // 1982 Battaglin Super Pista: Nisi 00110 Pista Speciale, the five-digit row as the other 1982 Battaglin
-    // Nisi overrides (row dated 1985-88), not the duplicate 5138 M20.
+    // 1982 Battaglin Super Pista: retain the established 00110 Pista Speciale (230g) choice,
+    // distinct from the maker's 00120 Pista Speciale (280g) and 00130 Pista m.20 (350g).
     'nisi pista special': [{ from: 1982, to: 1988, id: 9225 }],
     // 1987 Bianchi: Ambrosio Super Elite (1985-88), which the other 1987 Bianchis print in full.
     'ambrosio elite': [{ from: 1985, to: 1988, id: 4909 }],
