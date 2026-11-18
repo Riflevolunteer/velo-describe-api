@@ -5,10 +5,10 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Ready to work
 
 - Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
-- Design multiple component evidence references, preserving `source_ref` as the last source that changed a row.
 
 ## Product and infrastructure
 
+- Design multiple component evidence references, preserving `source_ref` as the last source that changed a row.
 - Show catalogue country in the client where rows collide; assess splitting mixed-country Peugeot 1971–74 CSVs.
 - Plan a Cinelli/De Rosa bike-image pilot: inspect the existing blob column, settle rights/cropping, then design storage/API/client delivery.
 - Remove the extra DB-password encryption, coordinate SSM/plaintext application deployment, smoke-test and rotate the password.
