@@ -118,6 +118,51 @@ STC's RC/RN key remains valid but cannot be transferred to RA. Recovering the
 article may help; its ability to distinguish cage materials remains unproven.
 The task-created forum HTML was removed after recording the holding and URLs.
 
+**Issue-recovery follow-through, 2026-11-19:** no public article scan recovered.
+Checked Internet Archive metadata by title/date (1975–1982), then by cycling
+subjects and Spidel without a date restriction; the returned records did not
+identify this magazine issue. Mémoire du Cycle's
+[Le Cycle collection](https://cyclememory.org/fr/search-coll-list.php?collectionID=773)
+lists only four issues (1964, 1966 and 1971); its separate L'Officiel collection
+also does not list January 1979. Targeted title/date/number searches, image
+search and indexed dealer/marketplace searches found no usable scan or verified
+exact-issue sale. The Journaux-collection site could not be fetched; that is not
+evidence of absent stock. The known Tonton Vélo PZ10 reference supplies a short
+quotation, not the article scan.
+
+**Additional acquisition route: BnF reproduction request.** The
+[BnF magazine record](https://catalogue.bnf.fr/ark:/12148/cb34356547z),
+ISSN **0184-1238**, shelfmark **4-JO-31045**, has a printed holding explicitly
+labelled **1978–1979** (conservation unit 2, Littérature et art / D4,
+location L 4.20-A). Its public holdings panel offers reproduction under
+conditions for that unit. This verifies the bound-period holding, not issue
+completeness or the article's contents. The
+[quote form](https://achatsreproduction.bnf.fr/views/vel/demande_devis.jsf)
+accepts article title, date and pagination; submission requires a BnF account.
+No request or order was submitted and no price or delivery time was established.
+Use the printed shelfmark, not the accompanying PER DVD-70 holding.
+
+The [predecessor title record](https://catalogue.bnf.fr/ark:/12148/cb343779409)
+dates L'Officiel du cycle through 1979. An older 2016 BCC catalogue transcription
+assigns no.42 to L'Officiel and nos.43–45 to Le Cycle, whereas the current BCC
+catalogue assigns nos.42–45 to Le Cycle. Therefore search/request under both
+titles and ask for the cover or masthead to verify the issue designation.
+
+Prepared request text (not sent):
+
+> Bonjour, je recherche une reproduction numérique lisible de l'article
+> « SPIDEL un an après », signalé aux pages 34 à 37 du numéro de janvier 1979
+> de Le Cycle, numéro 42 à confirmer (titre éventuellement encore L'Officiel
+> du cycle). Votre catalogue indique la cote 4-JO-31045, volume 1978–1979.
+> Pourriez-vous vérifier la présence de cet article et établir un devis pour
+> ces quatre pages, ainsi que la couverture ou le sommaire permettant de
+> confirmer le titre, le numéro et la date ? Merci de conserver lisibles les
+> légendes et références des composants, notamment les pédales Maillard/Spidel.
+
+Archive metadata, catalogue HTML, JavaScript and the anonymous catalogue cookie
+file created for this recovery attempt were removed after recording the routes.
+The RA material decision and all DB/generator mappings remain unchanged.
+
 ## Spidel 700 STC code/material review — 2026-11-18, read-only
 
 Recovered the [STC catalogue attributed to 1978](https://forum.tontonvelo.com/viewtopic.php?t=39556),
