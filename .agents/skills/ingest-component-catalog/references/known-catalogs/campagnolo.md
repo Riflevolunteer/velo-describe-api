@@ -1,5 +1,93 @@
 # Campagnolo catalogs processed so far
 
+## Victory Leisure 4172 style comparison — 2026-11-18, applied and validated
+
+Read all four scans of the [early French Victory leaflet](https://www.disraeligears.co.uk/site/campagnolo_-_victory.html),
+the May 1984 advert/close-up below, and all five images in 4172's original
+VeloBase gallery. The leaflet is undated (1984 is external attribution); its
+[Leisure page](https://www.disraeligears.co.uk/site/00_main_images/campagnolo_-_victory_scan_03_main_image.jpg)
+explicitly identifies group 268's long-cage rear as **0102047**. It photographs
+the early plastic thread-locking insert beside the slotted limit screws.
+
+| Evidence/specimen | Distinguishing construction | Conclusion |
+| --- | --- | --- |
+| May 1984 advert, early leaflet, 4172 main image | Plastic insert in the outer plate; slotted limit screws; plain main pivot-bolt heads | Same early Leisure configuration; a visual identification supported by the leaflet's code |
+| 4172 gallery's three red-background photos | No plastic insert; slotted screws and plain pivot-bolt heads | Another revision; these photos do not define the main specimen |
+| November 1986 Nuovo Victory/LX source 196 | Phillips-head limit screws and engraved pivot-bolt heads, illustrated by the later LX style | Later configuration; do not transfer its 38T total / 32T maximum / 12T minimum claims to the early specimen |
+
+Original [main photo](https://www.velobase.com/CompImages/RDerailleur/E9813E13-6759-45DC-9928-6252C04EE7A7.jpeg)
+and [red-background specimen](https://www.velobase.com/CompImages/RDerailleur/9B8A356A-B4F6-4C37-BF76-57A8F7BC14F4.jpeg).
+The earlier sourcing note's tentative “later-looking shield” interpretation is
+superseded: the emblem alone does not distinguish these revisions. The insert,
+limit screws and bolt-head engraving are the useful discriminants. The three
+archive specimen style photos were also checked against those features; their
+tentative dates are not independent primary dating evidence.
+
+**Approved and applied:** retained ID/UUID 4172, retitled to
+`Campagnolo 0102047, Victory Leisure (plastic insert)`, regenerated search_text,
+rewrote its description around the observed construction and listed 179 g,
+removed the later LX capacity assertion, and moved year_from **1985 -> 1984**
+from the period advert plus coded leaflet comparison. Retained year_to 1986 as
+the legacy upper bound, not a demonstrated final year for this exact revision.
+Moved group_id **212 (Victory LX) -> 18 (Victory)** to match the early identity;
+the two groups were checked live before preparing this ownership correction.
+Registered the undated French leaflet with the attributed date and advert URL
+as **source 464**, country NULL; source_ref **196 -> 464**. No new component or
+merge was made. The later LX rear requires separate reconciliation with source 196.
+
+Applied description (170 characters): `Long-cage friction rear derailleur with headless slotted limit screws, a plastic thread-locking insert in the outer plate and plain pivot-bolt heads. Listed weight 179 g.`
+Search text is `Campagnolo 0102047 Victory Leisure`.
+
+4172 has no bike links. The joint five-row Ofmega/Victory load changed exactly
+the reviewed five component rows and one source, with no other component
+metadata or bike-spec changes. Full comparison covers 107 loaded catalogues /
+23,168 specs with no new mapping differences; the four existing 4168 Victory
+links are unchanged. SQL rerun affected zero rows, all 13 test suites passed,
+and local component detail returned the correct title, source 464 and Victory
+group. No Campagnolo rear-derailleur merge candidates were reported. This
+completes the advert/leaflet style correction; task scratch files were removed.
+
+Restoration values: title `Campagnolo Victory (long cage "Leisure gear")`;
+description `Campagnolo Victory (long cage "Leisure gear"), Italy, 179 grams. 0102047 Victory leisure gear, the rear derailleur of the LX set: gear-change capacity 38T, biggest sprocket 32T, takes 12T sprockets.`;
+year_from 1985, year_to 1986, group_id 212, source_ref 196, search_text
+`Campagnolo Victory`. UUID `5EE30396-84D1-4017-B767-7858F2FE8D77`, brand 11 and
+category 15 were unchanged. Restore those old fields before removing source
+464, and remove that source only if no other row references it.
+
+## Victory Leisure advert recovered — May 1984, reviewed 2026-11-18
+
+Recovered and visually read the full advert (1560 px wide) and its original
+derailleur close-up from the recorded source-hunt lead:
+[La Bicicletta May 1984 archive page](https://www.disraeligears.co.uk/site/la_bicicletta_1984_may_-_campagnolo.html),
+[full scan](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_1984_may_-_campagnolo_main_image.jpg),
+[rear-derailleur close-up](https://www.disraeligears.co.uk/site/00_additional_images/la_bicicletta_1984_may_-_campagnolo_additional_image_01.jpg).
+The May 1984 date is the archive's issue attribution; no dated masthead or page
+number is visible on this isolated advert.
+
+The copy and group-board caption explicitly promote **Victory leisure**.
+The fitted derailleur has a long pulley cage. The range table lists Super
+Record and Nuovo Record for corsa/pista, Victory for corsa/leisure, Gran Sport
+for corsa and Triomphe for corsa/leisure. This establishes advertised group
+availability in the attributed issue, not the manufacture endpoints or exact
+specifications of every component sold under those group names. No component
+part numbers, capacity figures, weights or variant dimensions are printed.
+
+Read-only live comparison: **4172**, Victory long-cage Leisure, is dated
+1985–1986 and described using the November 1986 Nuovo Victory/LX brochure
+(source 196). Its original VeloBase specimen is UUID
+`5EE30396-84D1-4017-B767-7858F2FE8D77`. Initial emblem-based caution was
+superseded by the insert/screw/bolt comparison above: the main image is the
+early configuration, and later revisions also occur in its gallery. Row 4172
+has no bike links; short-cage **4168** already starts in 1984. The subsequent
+comparison used the advert, the
+[early Victory leaflet](https://www.disraeligears.co.uk/site/campagnolo_-_victory.html)
+and the actual 4172 gallery to establish which style its 0102047 identity covers.
+The leaflet was read in that subsequent comparison, not this sourcing pass.
+
+No DB, source-registration, CSV, matcher or bike-link changes. The acquisition
+action was removed from TODO; the applied correction is recorded above.
+Task-created source downloads were removed after recording the stable URLs.
+
 ## Bikecology Nuovo Tipo reconciliation — 2026-11-18 (applied and validated)
 
 Visually inspected Campagnolo No.17 printed pp.54/61 and Bikecology April

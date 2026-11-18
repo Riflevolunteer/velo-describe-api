@@ -208,6 +208,11 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  [4356, 4357], // Mistral specimen review 2026-11-18: fixed cable stop versus round barrel adjuster; ofmega.md
+  [6092, 6093], // Mistral specimen review 2026-11-18: smooth versus raised cable-entry bosses, as well as embossed/printed lettering
+  [6094, 6095], // Premier specimen review 2026-11-18: narrow silver solid blades/D-ring adjusters versus broad black ribbed solid blades; ofmega.md
+  [6094, 11702], // Premier silver solid blades versus 5224/5325 long cut-out retro-friction blades
+  [6095, 11702], // Premier black solid blades versus 5224/5325 long cut-out retro-friction blades
   [11652, 11655], // Guida '96: Poggipolini High Profile front hubs, carbon/ergal versus ergal construction
   [11669, 11670], // Guida '96: MF Cronoradiale 030 aluminium versus carbon wheelsets
   [10681, 10682], // OMAS 120 S / 120 D: separately named in Guida '96; identical printed specs do not establish equivalence

@@ -882,7 +882,10 @@ originals and maintained CSVs are preserved.
   9161 CX Sealed Bearing front 205 -> 203 g. Described 90 Gran Premio BB ("7100 Basic" in 1985),
   3442 Gran Premio hubs, 3881 CX pedals (2600, 357 g); 2419 Premier FD given the 1985 94 / 86 g
   braze-on / clamp weights alongside the 1988 brochure's 90 g. 6094 Premier shifters (1st
-  generation) dated 1985-1985, 11.5 g each (the 1988 Premier levers, 35 g retro-friction, are 6095).
+  generation) dated 1985-1985, 11.5 g each. **2026-11-18 review:** the guide does
+  not picture/code the lever specimen, and the 1988 cut-out retro-friction
+  levers are not specimen 6095. These specimen assignments are superseded by
+  the [applied Premier reconciliation](ofmega.md#premier-test-and-specimen-reconciliation--2026-11-18-applied-and-validated).
   Added 11003 Super Corsa hubs (forged anodised alloy, 28-32-36; 1981-1985, 1981 from the
   Bianchi Sprint/81 spec 6553 "Ofmega Super Corsa, 36 holes", linked by override) and 11004
   "Ofmega 2150, BMX" crankset (170 mm, 42T, 380 g). Left alone: 9650 Gran Premio pedals (398 g
