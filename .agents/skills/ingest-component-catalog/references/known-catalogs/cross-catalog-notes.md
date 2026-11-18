@@ -26,6 +26,55 @@ and validated. Only 5145's physical/model evidence remains missing. Huret
 and is not a newly recovered scan. Manual Belleri/Pelissier/Weinmann
 candidates still require comparable measurements/model evidence.
 
+## Manual duplicate additional-photo review — 2026-11-19
+
+User requested a fresh look at the remaining Belleri, Pelissier and Weinmann
+cases. Read-only live checks cover **seven candidate rows**, plus the retained
+flat-bar/oil-port/family comparators2794/3458/8339. All seven candidates still
+have **zero bike links** and no generator references. Inspected **all22 current
+full-size specimen photographs**, extending the earlier main-photo review.
+Original specimen page URLs remain in the evidence table below.
+
+| Case | Additional evidence | Decision / remaining discriminant |
+| --- | --- | --- |
+| Belleri2791/2792/2793 | Four photos on2791, three on2792, two on2793. **2791 carries both a BF diamond and a wreath/shield stamp on the same bar**;2792 also has a wreath/shield stamp.2793 has an oval Belleri sticker and a faint shield-type engraving, but no readable model code or clamp measurement. | “Diamond” and “wreath” are not mutually exclusive model identifiers. This supersedes any interpretation of the row titles as proof of separate models, but does not establish equal bend/clamp construction. Keep all three unresolved pending comparable reach/drop, clamp/sleeve measurements or a maker model crosswalk. |
+| Pelissier3457/3459 | Two photos on3457, three on3459.3457 shows CP shell initials;3459 shows Pelissier shell wording **and a CP-branded box** labelled steel/extra-light/French racing hub. Neither set supplies a measured shell/flange/cone comparison or a numbered model. | CP branding on the box does not equate the shell variants. Both remain unresolved; retain3458 separately for its visible oil ports/retaining clips. |
+| Weinmann1103/1104 | Three photos on1103, five on1104, including rear/side and mechanism views. No readable733/813/1023 stamp or measurement scale found. The owner fields still say long-reach/max75mm versus unmeasured standard reach. | Keep both unresolved; photographs cannot supply reliable millimetre reach or distinguish a cosmetic change from different reach versions. Do not merge into family8339. |
+
+Key images, inspected directly: Belleri2791's
+[both-marks close-up](https://www.velobase.com/CompImages/Handlebars/6BA46899-FCDF-42DE-8BEE-95E46C2A0643.jpeg),
+[wider stamp view](https://www.velobase.com/CompImages/Handlebars/44382E2F-AD7F-4BA6-99E5-0240E4535681.jpeg),
+Pelissier3459's
+[CP box and hubs](https://www.velobase.com/CompImages/Hubs/A87E62C7-5418-4BFA-9C02-B27F612E95FC.jpeg),
+Weinmann1103's
+[rear view](https://www.velobase.com/CompImages/Brakes/8D7E9BD8-A66E-41F4-AF1C-811EEF64B565.jpeg)
+and1104's
+[rear view](https://www.velobase.com/CompImages/Brakes/2DFFC456-5F0D-466A-AC61-106819981766.jpeg).
+Photo numbers here mean counts, not inferred product generations.
+
+New period-source lead: the reproduced maker advertisement in
+[L'Officiel du cycle, 1 October1955, p.170](https://ebykr.com/library/pelissier-1955-advertisement-moyeux/)
+([original Gallica page](https://gallica.bnf.fr/ark:/12148/bd6t54207485x/f168),
+[inspected scan](https://ebykr.com/wp-content/uploads/2026/11/ebykr-1955-lofficiel-pelissier-advertisement-moyeux-p170-scaled.webp))
+lists **Plume, C.P. and Plume-Sport** and explicitly says the company was founded
+in1909. That is a company-founding date, not specimen3458's manufacture start.
+It supplies no shell-mark/model/dimension crosswalk for3457/3459, so no identity
+or date changes follow. Direct Gallica image retrieval returned403; the maker
+advertisement reproduction was visually read. The newly checked
+[July1931 Pelissier advertisement](https://ebykr.com/library/pelissier-cycling-1931-07-advertisement/)
+is a derailleur advertisement, not a hub identification sheet. The separately
+indexed1952 CharlesPelissier bicycle catalogue does not itself identify the hub
+manufacturer's steel specimens. These are not grounds to repeat a general hunt.
+
+Live `duplicate-report.js --brand=<brand> --merge --json` retains four cosmetic
+candidate comparisons:2791/2793,2792/2793,3457/3459 and1103/1104. These labels
+remain candidates, not proof of identity. **No defensible merge or date revision
+established; no DB, source, generator, registry or bike-link changes made.**
+The existing TODO now names the precise measurements/coded evidence still needed;
+no extra rematching task was added. Task HTML,22 photos, comparison sheets,
+advertisement copies, reports, helpers and temporary image dependencies were
+removed after recording the source URLs and findings.
+
 ## Manual merge candidate review — 2026-11-17
 
 Reviewed all **19 rows / seven groups** from the manual TODO against live DB
