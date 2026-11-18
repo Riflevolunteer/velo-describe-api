@@ -54,7 +54,7 @@ Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agen
 - Recover specification pages for the English Bianchi road catalogue indexed 1985; Bikalog holds only a five-page introductory/photo fragment. [Edition review](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#bikalog-19851986-backlog-check--2026-11-17).
 - Seek 1979–89 Peugeot/Motobécane spares lists for Maillard, Solida/Nervar and Lightrace; inspect the logged unopened tariffs/show report.
 - Check Ron Kitching/Freewheel holdings at Otley and Warwick MRC for Rigida, Viscount and Brooks; retain the saddlewax Brooks lead.
-- Check the logged Performance/Nashbar/QBP/J&B/Colorado Cyclist browser-only leads for 1985–92 distributor evidence.
+- Check the remaining Nashbar editions/QBP/J&B/Colorado Cyclist leads for 1985–92 distributor evidence. [Hunt record](.agents/skills/ingest-component-catalog/references/source-hunts.md#log).
 
 <a id="sr-sakae-next-work"></a>
 <a id="yaesu-next-work"></a>

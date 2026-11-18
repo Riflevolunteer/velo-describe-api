@@ -660,3 +660,19 @@ validation; durable evidence, provenance and restoration values remain here.
 Miyata 1984 really prints PN-280/PN-281; Panasonic No.280/281 does not explain the prefix, so **21277/21297/21319 remain NULL**. Panasonic 1986 attests 730 alloy side-pull, but provides no generation bridge to 1964 mixed row 8929; Weinmann 8637 and Dia-Compe 7300 steel in 8097 are different alternatives. Keep the 1980–85 Miyata 730 specs NULL rather than widening 8929.
 
 [Primary scans, exact affected IDs and review limits](../../../ingest-bike-specs/references/known-catalogs/panasonic.md#remaining-identity-review--2026-11-18-read-only). No database or generator changes were made.
+
+
+## Performance Fall/Winter 1985–86 recovered reference — 2026-11-18
+
+Printed p.35 explicitly sells **730 G**, retailer SKU **53-0950**, and its
+reach chart gives **52–72mm**; **500 G**, 53-0900, is 43–57mm. This is useful
+period G-version evidence for the earlier bare 730 review, but does not
+establish 730=730G, 730G=730GX, a link to 1964 row 8929, or equivalence to
+steel 7300 in 8097. No DB or generator changes were made.
+
+[Original photograph, compilation, exact recovered coverage and remaining limits](cross-catalog-notes.md#performance-bicycle-shop-fallwinter-198586--readable-pages-recovered-2026-11-18). Component reconciliation is a separate pending task.
+
+
+## Performance 1985–86 reconciliation — applied 2026-11-18, source 462
+
+Added **11696 Dia-Compe 730G**, 1985–86, 52–72mm; extended existing 500G 9106 through 1986. The plain 730/730GX aliases remain unproven and unlinked. [Exact old/new values, retired/new UUIDs and validation](cross-catalog-notes.md#performance-fallwinter-198586-reconciliation--applied-2026-11-18). Readback matched, SQL rerun changed zero rows, all 107 loaded catalogues retained their mappings, all 13 tests passed and whole-DB quality stayed unchanged with zero errors.

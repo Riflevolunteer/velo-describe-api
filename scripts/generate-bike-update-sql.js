@@ -2483,6 +2483,9 @@ const COMPONENT_OVERRIDES = {
     'hatta vesta alloy': [{ from: 1989, to: 1989, id: 3020 }], // as bare "Hatta Vesta"
   },
   'Bottom Brackets': {
+    // Ofmega 7000 is shared by both groups; 94 consolidated into 88 (Performance 1985-86 review).
+    'ofmega competizione': [{ from: 1979, to: 1986, id: 88 }],
+    'ofmega super competizione': [{ from: 1979, to: 1986, id: 88 }],
     'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 30 }], // Bottecchia US III: Nuovo Record Strada.
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
     'campagnolo record': [{ from: 1967, to: 1988, id: 30 }], // Super-Leggera: 'movimento Record' -> 1046/a Nuovo Record (Strada)

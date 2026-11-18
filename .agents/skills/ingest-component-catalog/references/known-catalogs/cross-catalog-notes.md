@@ -2430,3 +2430,333 @@ removed; the remaining manual candidates stay open. Task SQL, snapshots, helper
 scripts and source HTML/photo copies were removed after successful validation;
 source URLs and exact photo filenames above preserve the evidence. `git diff
 --check` passes; the existing test suite passed before application.
+
+
+## Performance Bicycle Shop Fall/Winter 1985–86 — readable pages recovered 2026-11-18
+
+**Source recovery and page triage only; no DB queries, source registration,
+component changes, bike loading or generator changes in this pass.** The earlier
+four-image lead understated the available material: twelve distinct catalogue
+photographs are publicly linked by contributor `embankmentlb` in posts 1 and 8
+of [Bike Forums thread 1214636](https://www.bikeforums.net/classic-vintage/1214636-performance-fall-winter-1985-86-a.html),
+posted 5 October 2020. The separate screenshot of the Performance blog in post 4
+is not a thirteenth catalogue page and was excluded.
+
+### Edition, files and readability
+
+- The recovered cover explicitly prints **Performance Bicycle Shop,
+  Fall/Winter 1985–86**. Use that edition label, rather than silently assigning
+  all components a single 1986 publication date. The handwritten 8-30-85 and
+  price on the cover are owner annotations, not a printed imprint.
+- **US market:** English, dollar prices, North Carolina toll-free ordering
+  information and the Reno, Nevada warehouse notice. These establish the
+  retailer's market; they do not make the goods US-manufactured.
+- All twelve original CDN downloads have valid JPEG signatures and decode at
+  **1128×1504 px**, 289604–414656 bytes. The CDN URL path says 2000x1504, but
+  that is not their actual decoded width. Most body text and technical tables
+  are readable. Perspective, page curvature, glare and clipped footers remain;
+  use original-resolution crops to verify fine codes before any data change.
+- Retained requested source files: twelve unmodified originals in
+  `/private/tmp/performance-1985-86-recovery-20261118/originals/` and
+  `/private/tmp/performance-1985-86-recovery-20261118/performance-fall-winter-1985-86-recovered-pages.pdf`.
+  The PDF is a convenient compilation of **12 sheets representing the cover
+  and 14 interior pages**, not a complete catalogue or 15 separate PDF pages.
+  Three sideways two-page photographs were rotated for the PDF; originals
+  remain unmodified. No enhancement or invented missing text was used.
+- PDF size **4494532 bytes**, SHA-256 `aac5e54443868b21da1778b96b7bc7ea39cd52f99adaabc1b28a9c67b20f2b1d`. All 12 sheets render successfully.
+
+### Page inventory and original image links
+
+Original suffixes below refer to `performance-1985-86-NN.jpg`. PDF order places
+the readable numbered pages in order; the accessory and custom-bicycle sheets
+have clipped/unreadable folios and are positioned by subject context only.
+Those placements are not new assertions of printed page numbers.
+
+| PDF sheet | Original suffix | Printed page(s) | Readable contents / triage | Original CDN image |
+| --- | --- | --- | --- | --- |
+| 1 | 01 | cover | Printed edition; cover only. No complete-bike identity inferred from cover photographs. | [image 01](https://cimg6.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/cb8220a4_eb15_4c64_bef3_85cb351ff9d2_e3e83e9a806faaa9238d1fc6f3ec4d8eee9caf4e.jpeg) |
+| 2 | 05 | 12 | Cycling shoes: Performance, Detto Pietro, Diadora, Duegi. Outside component-table scope. | [image 05](https://cimg2.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/8d9bb7c2_ac61_4c04_8578_947f278d98ff_4e314764f959d78bcb0a51d3dd12f2b836993337.jpeg) |
+| 3 | 06 | folio clipped | Lights/generators, mirrors, bottles and cages; accessory page, not component ingestion. Apparent folio 25 is not relied on. | [image 06](https://cimg4.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/5a5cc740_5cbd_4134_bea5_99e5ea3db34b_08f59aaf7671b7357af7dd652558bdc21036d94b.jpeg) |
+| 4 | 02 | 28 | Performance Campione and Blue Ridge framesets; dimensions and Record-headset wording. Framesets excluded from bike loading. | [image 02](https://cimg7.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/428a740e_2e73_4aea_99ff_89a8eb061729_e6caa8d1b3b783d08bfeca124ad731d2d207b54c.jpeg) |
+| 5 | 03 | 29 | Eddy Merckx, De Rosa, Pinarello, Ciocc and Guerciotti framesets; no complete-bike specs. | [image 03](https://cimg8.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/40b6ef43_7b20_44cc_a7d9_1de8d678586d_8c501db33faee50a8178e33af9d32af716549e14.jpeg) |
+| 6 | 04 | folio not captured | Custom bicycle assembly, seven component-package options and custom-built wheel service. Generic packages are not seven named bike models. | [image 04](https://cimg9.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/e97263ae_6bf2_4ccf_9e2f_66a7aa82dff2_a1d34fc1b1854be406d8ca0dd1767b53a0d5e4a9.jpeg) |
+| 7 | 07 | 32 | Hubs: Campagnolo Record/Tipo, Phil Wood, Specialized, Suzue, Ofmega Competizione/CX, SunTour Cyclone, Shimano 600EX; spokes/skewers also present. | [image 07](https://cimg7.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/23596d13_ad66_4500_a43c_2ef197ba0e01_b6c1d6ccd35d83c680a88ef6e1aa90efee84ac56.jpeg) |
+| 8 | 08 | 35 | Brakes: Modolo Master Pro/Professional/Speedy; Campagnolo Super/Nuovo Record; SunTour Superbe/Cyclone; Shimano 600EX; Dia-Compe Aero Gran Compe, 500G, 730G. Reach chart. | [image 08](https://cimg9.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/9f5ae206_919d_4140_ada7_38cdd069420b_c2fb5ed208e4f80c46fa1752e932b978dc2e1754.jpeg) |
+| 9 | 09 | 37 | SunTour Pro and Dia-Compe Aero Gran Compe lever sets. Also tape, grips, hoods, cables, shoes and pads. | [image 09](https://cimg0.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/7fc2b502_b50d_491b_8505_55ac5d7e19a2_f38f3be80667ca8455c7d1cd8959c7c24121b843.jpeg) |
+| 10 | 10 | 38–39 | Saddles: Selle Italia, Selle San Marco, Brooks, Selle Royal, Avocet, PearlIzumi. Posts: Campagnolo Super/Nuovo Record, 3TTT, SR Laprade and SR; covers/binders also present. | [image 10](https://cimg2.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/1b3d77e2_d7a8_4134_adbe_eba5571aafba_c99612553b53efd2102ca4e56405b93476d17341.jpeg) |
+| 11 | 11 | 40–41 | Cranks, BBs and chains: Campagnolo, SunTour, Ofmega, Specialized, Sugino Aero Tour, Shimano 600EX, Phil Wood, Regina, Sedisport. | [image 11](https://cimg3.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/5ef360fa_4561_40e2_9424_a80559319c8d_adc1db4a63482da83c020dd2f0633bf523420b7c.jpeg) |
+| 12 | 12 | 42–43 | Front/rear derailleurs and shift levers: Campagnolo, SunTour, Shimano, Huret, Modolo. Includes the Cyclone/ARX/AR touring variants and Huret touring entries. | [image 12](https://cimg5.ibsrv.net/gimg/bikeforums.net-vbulletin/2000x1504/612ef6a5_8ae9_4ee6_9a1e_9c62debe2839_35e739298778f6c73077fd870eb999ae037f43b1.jpeg) |
+
+### Evidence worth reconciling next
+
+- Printed **p.35** explicitly names **Dia-Compe 730G**, retailer order code
+  **53-0950**, with **52–72mm** reach in the chart. 500G, 53-0900, is 43–57mm.
+  The text describes 730G as the longer-reach counterpart to 500G. This is a
+  dated 1985–86 retailer reference to the G version, not proof that every bare
+  Miyata 730 is G, that 730G is 730GX, or that 1964 mixed Dia-Weinmann row 8929
+  and 1986 steel 7300 in 8097 are interchangeable. Keep the earlier bare 730
+  identity decision until those distinctions are checked against maker evidence.
+- **p.32** supplies named sealed/loose-bearing hub descriptions and weights;
+  **pp.38–39** supply saddle/post construction, sizes and weights;
+  **pp.40–41** supply crank/BB specifications; **pp.42–43** supply drivetrain
+  variants. These are useful dated retailer corroboration, but this recovery
+  has not diffed them against current component rows or reviewed bike links.
+- Performance order numbers such as 53-0950 are retailer SKUs, not automatically
+  manufacturer part numbers. Generic Record, SR, LaPrade or Aero Gran Compe
+  wording must not be assigned a more specific manufacturer code by guesswork.
+
+### Coverage limits and additional leads checked
+
+The recovered numbered leaves are 12, 28–29, 32, 35, 37–43, plus two interior
+sheets with unverified folios and the cover. This is visibly partial: for
+example, 33–34 and 36 are absent as full readable leaves. Slivers of facing
+pages are not recovered leaves. The full catalogue's final page count is
+unknown. The promised Performance Superbe page in the thread's final reply
+was not subsequently present in that single-page thread. Do not create bike
+specs from the frameset pages or a component-package column.
+
+Exact-edition/full-PDF/archive searches located this thread and related
+material, not a complete public scan. The primary
+[Performance blog's Fall 1985 clothing retrospective](https://performancebikeblog.wordpress.com/2015/10/21/back-to-the-future-cycling-clothing-from-the-fall-1985-performance-bicycle-catalog/)
+has five clothing/helmet images, outside this component recovery; they were
+not downloaded or asserted to complete this same Fall/Winter edition.
+[Thread 1213476, first page](https://www.bikeforums.net/classic-vintage/1213476-performance-bikes-get-no-respect.html)
+now opens and chiefly discusses 1992 bikes/catalogue evidence; its later-page
+and print URLs did not open in the checked web route. No claim to exhaustively
+review all three pages or recover a new 1985–86 edition from that thread.
+The Local Reporter 2020 article is a contextual retrospective, not a full scan;
+patent references mentioning a 1985–86 trainer page are citations, not recovered
+catalogue leaves. No new full-copy holder was confirmed. The 2020 contributor
+is a historical holder lead, not proof of current possession. No outreach,
+purchase or paid acquisition occurred.
+
+The page recovery/triage is complete. Reopen missing-page acquisition only for
+a new readable scan or a holder confirming the edition. The component
+reconciliation is applied and validated in the following entry. Disposable previews, PDF intermediates and
+recovery scripts were removed; requested originals and compiled PDF were kept.
+
+
+<a id="performance-fallwinter-198586-reconciliation--prepared-2026-11-18"></a>
+
+## Performance Fall/Winter 1985–86 reconciliation — applied 2026-11-18
+
+**Applied on user approval, 2026-11-18, source 462; readback and validation passed.**
+Reconciled the recovered component leaves against a live snapshot before loading
+the reviewed change set. Existing bike links were unchanged. Full source URLs, page order, printed edition and
+recovery limitations are in the preceding recovery entry. The scan is a US
+Fall/Winter 1985–86 retailer catalogue, not proof of manufacture start/end dates.
+All extended upper bounds of 1986 mean attested seasonal availability. No lower
+date bound is moved later; inherited decade-style lower bounds remain qualified.
+
+The 118-entry inventory, guarded SQL, exact-field proposal, baseline and
+comparison files were retained through approval, application and validation,
+then removed as disposable reconciliation scratch. Material old/new values,
+retired identity and new IDs/UUIDs remain below. Requested original photographs
+and the compiled PDF remain in the separate recovery directory described above.
+
+### Applied change set
+
+- One US catalogue source, label
+  `Performance Bicycle Shop Fall/Winter 1985-86 catalogue (US)`; citation points
+  to the original thread and the exact recovered component pages. Source ID **462**.
+- **Six components**, 1985–86, group NULL; **one new brand**, Pearl Izumi **723**.
+  Pearl Izumi is distinct from French leather-saddle maker LF Pearl 550.
+  Category/brand associations are guarded. Retail order numbers below are SKUs,
+  not manufacturer part numbers or titles.
+- **26 existing component updates**, including 22 upper availability extensions
+  and 12 description enrichments (overlapping). Each retains its original
+  identity UUID. Source_ref changed to 462 only where fields changed. No manufacturer dimension or measured weight is silently replaced by
+  a retailer figure; differing weight references and their basis are retained.
+- **One duplicate consolidation**,94 → 88, described below. Neither row had existing bike links. No bike link changed.
+
+| New component | Page / retailer SKU | Supported specification |
+| --- | --- | --- |
+| Dia-Compe 730G | 35 / 53-0950 | Side-pull brake set, 52-72mm reach; longer-reach counterpart to 500G, with drilled levers, gum hoods and quick release. Set includes calipers, levers, cables and housing. Japan. |
+| Performance leather saddle (Selle Italia) | 38 / 41-1500 | Leather-covered saddle co-designed with Selle Italia; firm shell with foam padding. Listed weight 396g. |
+| Pearl Izumi Flolite 100 | 39 / 41-1200 | Italian-made sport/touring saddle with smooth black leather cover and Flolite cushioning between leather and shell. Softer ride than model 200. Listed weight 456g. |
+| Pearl Izumi Flolite 200 | 39 / 41-1210 | Italian-made sport/touring saddle with smooth black leather cover and Flolite cushioning between leather and shell. Firmer ride than model 100. Listed weight 456g. |
+| Pearl Izumi Flolite 300 | 39 / 41-1220 | Italian-made racing saddle with Flolite cushioning, buffalo-leather cover, forged alloy rails and tension-adjustment screw. Listed weight 350g. |
+| Sedis Sedistraveler, All-Terrain | 41 / 75-1025 | All-terrain derailleur chain with lateral flexibility for wide-range gearing and quicker changes. Listed weight 378g. France. |
+
+### Existing rows: exact corrections and restoration
+
+All changed rows below acquired source_ref 462. Old source_ref,
+old/new date endpoints and description strings in the following tables retain
+the values needed to reverse the proposal. Fields absent from the change list
+remain unchanged, including each retained identity UUID. Retired 94 and the six
+new identity UUIDs are recorded below.
+
+| ID / retained title | Page | Old source_ref | Applied field changes |
+| --- | --- | --- | --- |
+| 3230 Campagnolo 1251, Nuovo Tipo (small flange) | 32 | 342 | year_to: `1985` → `1986` |
+| 3259 Campagnolo 1034, Record (Low Flange) | 32 | 342 | description: old/new below |
+| 3441 Ofmega Competizione | 32 | 1 | year_to: `1985` → `1986`; description: old/new below |
+| 9161 Ofmega CX Sealed Bearing | 32 | 259 | year_to: `1985` → `1986`; description: old/new below |
+| 3606 SunTour BH-2200, Cyclone | 32 | 90 | year_to: `1985` → `1986` |
+| 9112 Phil Wood tandem hub | 32 | 247 | year_to: `1980` → `1986` |
+| 9106 Dia-Compe 500G | 35 | 246 | year_to: `1985` → `1986`; description: old/new below |
+| 1982 SunTour CW-7000, Cyclone | 40-41 | 90 | year_to: `1985` → `1986` |
+| 1692 Ofmega CX | 40-41 | 429 | year_to: `1984` → `1986`; description: old/new below |
+| 1693 Ofmega CX (triple) | 40-41 | 259 | year_to: `1985` → `1986`; description: old/new below |
+| 7818 SunTour SA-100 / SS-100 series, sealed bottom bracket | 40 | 192 | year_to: `1985` → `1986` |
+| 100 Phil Wood (Cartridge Bearing) | 40-41 | 248 | year_to: `1981` → `1986`; description: old/new below |
+| 93 Ofmega Mistral | 41 | 262 | description: old/new below |
+| 167 SunTour BB-400, Cyclone | 40-41 | 427 | description: old/new below |
+| 2443 Sachs Huret Hi-Stepper 3080-00 S | 42-43 | 327 | year_to: `1984` → `1986` |
+| 4742 SunTour RD-3500, Cyclone Mark-II | 42-43 | 90 | year_to: `1985` → `1986` |
+| 4743 SunTour RD-3700, Cyclone Mark-II (GT) | 42-43 | 90 | year_to: `1985` → `1986` |
+| 4729 SunTour RD-4500, ARX (GT) | 42-43 | 127 | year_to: `1985` → `1986` |
+| 2621 SunTour FD-2600, ARX | 42-43 | 90 | year_to: `1985` → `1986` |
+| 2632 SunTour FD-2300, Cyclone Mk-II | 42-43 | 90 | year_to: `1985` → `1986` |
+| 5748 Campagnolo 1044, Nuovo Record (Superleggero) | 38-39 | 7 | year_to: `1984` → `1986`; description: old/new below |
+| 5503 Selle Italia Super Turbo | 39 | 259 | description: old/new below |
+| 462 SunTour CB-3200, Superbe Pro (brake lever, dual slot drilled) | 37 | 128 | year_to: `1985` → `1986` |
+| 5254 Avocet Touring I (later) | 38 | 294 | year_to: `1983` → `1986` |
+| 5256 Avocet Touring WI | 38 | 294 | year_to: `1983` → `1986` |
+| 88 Ofmega Competizione | 41 + source 181 pp.20-24 | 181 | title: `Ofmega Competizione` → `Ofmega 7000, Competizione / Super Competizione`; group_id: `33` → `None`; year_to: `1980` → `1986`; description: old/new below; search_text: `Ofmega Competizione` → `Ofmega 7000 Competizione Super Competizione` |
+
+| ID | Old description | Applied description |
+| --- | --- | --- |
+| 3259 | Campagnolo 1034, Record (Low Flange), Italy, 518.5 grams (avg). Small-flange quick-release road hubs, 1034/A front and 1034/P rear, 28, 32 or 36 holes, 5 or 6 speed. Some examples are engraved SU. | Small-flange QR road hubs, 1034/A front and 1034/P rear; heat-treated Cr-Mo axles; 28/32/36 holes, 5/6 speed. Listed pair 523g; legacy average 518.5g. Some examples engraved SU. Italy. |
+| 3441 | Ofmega Competizione, Italy. Variants: colour anodized. | Small-flange alloy QR hubs, ground and polished bearing surfaces and races, 32/36 holes, 5/6 speed; internal parts interchangeable with Campagnolo. Listed pair 518g. Colour-anodized variants also recorded. Italy. |
+| 9161 | Forged, anodised alloy sealed-bearing hubs, 203 g front, 276 g rear, 28-32-36 holes. | Forged anodised alloy hubs with sealed cartridges, quick release and alloy six-speed axle; small flange, 28/32/36 holes. Existing specified weights: 203g front, 276g rear; retailer pair 475g. |
+| 9106 | Dia-Compe 500G, Japan. Side-pull set, silver anodised, drilled levers with hoods; the 730 and 810 are the same family in other reaches. | Silver-anodised side-pull brake set, 43-57mm reach, drilled levers, gum hoods and quick release. Supplied with calipers, levers, cables and housing. The 730G is the longer-reach counterpart. Japan. |
+| 1692 | Ofmega CX, Italy, 588 grams (avg) | Forged alloy double crankset, 170/172.5/175mm; 41-54T rings interchangeable with Campagnolo, Avocet and others. Listed 565g at 170mm 52/42; legacy average 588g. Italy. |
+| 1693 | Ofmega CX (triple), Italy, 640 grams | Forged alloy triple crankset, 170/172.5/175mm; third ring mounts directly to drilled spider, 24-40T even-tooth inner rings. Listed 651g at 170mm 50/45/28; legacy reference weight 640g. Italy. |
+| 100 | Phil Wood (Cartridge Bearing), United States. Sealed-bearing bottom bracket set, 290 g, English, French or Italian thread; weighs the same as the Campagnolo Nuovo Record. | Sealed-bearing BB, English/French/Italian/Swiss threads; double or triple, axle styles 1-4 by crank; dedicated installation tool required. Listed 278g in 1985-86; earlier listing 290g. United States. |
+| 93 | Ofmega Mistral, Italy. Mod. 2250 Mistral bottom bracket: case-hardened, ground nickel-chrome steel, 305g | Mod.2250 Mistral BB: case-hardened, ground nickel-chrome steel; ground and polished spindle/cup tracks, retained bearings with eleven balls per side; English or Italian thread. Existing listed weight 305g. Italy. |
+| 167 | SunTour BB-400, Cyclone, Japan. Bottom bracket set, Cr-Mo axle, steel cups, 1.37 x 24T English (French, Italian available), 68 / 70mm, 295g (No. 62, Dec 1984). | BB-400 Cyclone: hollow Cr-Mo spindle, steel cups, plastic seals; English 1.37x24T, French or Italian, 68/70mm shells. Manufacturer specified weight 295g. Japan. |
+| 5748 | Campagnolo 1044, Nuovo Record (Superleggero), Italy, 299 grams (Actual) | 1044 Nuovo Record Superleggero two-bolt alloy seatpost; 180mm, diameters 26.8/27.0/27.2mm. Retailer listed weight 275g; legacy measured weight 299g. Italy. |
+| 5503 | Selle Italia Super Turbo, Italy, 393 grams (Spec),via BikePro.com info | Leather-covered saddle with chromed-steel rails, offered in black, royal, burgundy and ivory. Retailer listed weight 375g; legacy specified weight 393g. Italy. |
+| 88 | Ofmega Competizione, Italy, 320 grams (Actual),Italian, 116.5 mm, with grease guard and crank bolts. Model 7000 set (nickelled chrome steel, ball races, 68mm shells) also fitted to the Super Competizione | 7000 BB shared by Competizione and Super Competizione: Ni-Cr steel, selected/ground ball races, 68mm shells; English/Italian/French threads, double/triple axle options. Legacy measured Italian specimen: 116.5mm, 320g, grease guard and crank bolts. |
+
+### Ofmega 7000 duplicate
+
+Prior manufacturer evidence **source 181**, R.J.Chicken 7 November 1979, explicitly
+assigns model 7000 to both Competizione and Super Competizione BBs. Existing
+88 and94 descriptions both identify that shared model; the distinct group
+labels do not establish distinct physical components. Performance p.41 supplies
+the later Competizione availability and shared double/triple threading options.
+This merge is supported by source 181 as well as the new retailer, rather than
+by similar names alone.
+
+Retained **88**, retitled to `Ofmega 7000, Competizione / Super Competizione`, kept
+its UUID and measured 320g/116.5mm Italian specimen facts, set group NULL because
+the part is shared, extended year_to 1980→1986 and preserved the primary
+description facts from 94. The inherited 1970 lower bound remains weak legacy information,
+not a new claim of a 1970 introduction. Deleted 94 after the retained row was updated and references were checked. Neither row had bike-spec links before the merge; the retained row still has none.
+No pre-existing generator override required migration.
+
+Added exact **Bottom Brackets** generator aliases for
+`ofmega competizione` and `ofmega super competizione`→88, ranged 1979–1986,
+matching the positive dated evidence. The retitle also updated search_text alongside title. Do not broaden crankset/hub aliases or merge either crank generation.
+
+Deleted-row restoration values (retired 94):
+- `component_id`: `94`
+- `brand_id`: `33`
+- `category_id`: `1`
+- `group_id`: `39`
+- `title`: `Ofmega Super Competizione`
+- `description`: `Ofmega Super Competizione, Italy. Model 7000 bottom bracket set, nickelled chrome steel with ball races, selected and ground bearings, for 68mm shells; supplied with the Super Competition and Competition chainwheel sets`
+- `year_from`: `1979`
+- `year_to `: `1985`
+- `image`: `None`
+- `search_text`: `Ofmega Super Competizione`
+- `source_id`: `DD845BFC-5B8F-4FC6-A3D9-39D254351E9D`
+- `source_ref`: `259`
+
+### Confirmations and deliberate exclusions
+
+The 118-row inventory covers individual hub/brake/lever/saddle/post/crank/BB/
+chain/front-derailleur/shifter/rear-derailleur listings, splitting meaningful
+normal/short, double/triple and numbered variants. Retail SKUs for spares do
+not become new component models. The component-package sheet and frameset
+pp.28–29 are context only: their generic series names do not identify additional
+generations, and no frameset or package column becomes a bike. Shoes, lights,
+mirrors, bottles, cages, tape, covers, tools, cable sets, skewers and spare
+chainrings/pads outside the requested assembled-component reconciliation were
+not ingested. Source-page absence establishes no production endpoint.
+
+Existing factory descriptions cover the confirmed Shimano 600EX, Campagnolo,
+Modolo and SunTour models; no broad rewrite is proposed for every repeated
+catalogue listing. In particular, the complete brake-kit weights on p.35
+(calipers, levers, cables and housing) are not compared as though they were
+bare-caliper weights. Where retailer reach/capacity differs from the maker,
+the maker value is retained. Examples: SunTour ARX front 15T vs manufacturer 18T,
+Cyclone MkII rear 26T vs maker 28T, and the Huret Rival 28/30 figures.
+
+Unresolved cases are documented in the inventory, rather than automatically
+creating another generic source-hunt task:
+
+- The new **730G** does not establish a bare 730 alias, a 730GX alias, or a link
+  to the 1964 mixed Dia-Weinmann row 8929 or steel 7300 in 8097. Those Miyata
+  values remain unlinked. Existing 500G 9106 links were already correct.
+- Phil Wood's 540g retailer hub pair cannot safely widen the older 400g/57mm
+  standard-flange row 3478 without construction evidence. Specialized hub
+  variants and Suzue's codeless hubsets lack the exact specimen/model bridge.
+- Modolo Professional 880/892, the Superbe short-reach brake generations,
+  AGC250/AGC251 levers, Concor subfamilies, Turbo Hinault variants, codeless
+  Selle Royal Touring saddles and the plain SR post remain distinct/unresolved.
+- Specialized crank variants need a flag/version specimen comparison.
+  Sugino Aero Tour double/triple is not automatically merged with 1964,
+  whose existing description explicitly identifies the TAT **triple**.
+  Likewise, the codeless Sugino AT BB is not guessed to be the Maxy set.
+- Mountech FD v1/v2 and GTL rears remain separate. The retailer's 42T largest
+  cog claim for GTL conflicts with maker 34T; this does not justify widening
+  or overwriting either existing model. Huret Duopar variants and several
+  mount-specific shifters/fronts also lack a unique code/construction bridge.
+- Pearl Izumi 100/200/300 are explicitly numbered models, not aliases to LF
+  Pearl. The Performance/Selle Italia saddle is genuinely retailer branded
+  under existing Performance brand 651. Named Sedistraveler does not establish
+  an alias to generic Sachs-Sedis ATB 1397 or Sedisport/Delta rows.
+- Motobecane's early bare Ofmega CX hub values remain unresolved: this later
+  cartridge-hub listing does not independently bridge their construction back
+  to 1981–82. The CX **cranks** already have their own separate positive links.
+
+### Validation and assigned identities
+
+The first guarded transaction affected exactly 26 existing components, inserted
+six components, deleted duplicate 94, registered source 462 and brand 723, and
+added two category/brand relationships (Saddles for Performance 651 and Pearl
+Izumi 723). No bike spec was updated. Retained 88's UUID is unchanged;
+retired 94's complete restoration values are recorded above.
+
+| New ID | Component | Identity UUID |
+| --- | --- | --- |
+| 11696 | Dia-Compe 730G | `84032ac2-9e8a-43d5-8a04-70f6ec5920fe` |
+| 11697 | Performance leather saddle (Selle Italia) | `641ede83-140b-4fd5-80de-2eea129b88a0` |
+| 11698 | Pearl Izumi Flolite 100 | `6d618201-ac16-4e69-9755-320502c5e426` |
+| 11699 | Pearl Izumi Flolite 200 | `3c8fe51e-8e60-4824-89dc-4a86d6f11dc6` |
+| 11700 | Pearl Izumi Flolite 300 | `e40f1dd5-1a74-4cd6-a4d4-c54a6fc9d8a5` |
+| 11701 | Sedis Sedistraveler, All-Terrain | `84e8024e-c807-48c1-9b2f-01af42a7b9d7` |
+
+Actual readback matched every approved field, source, brand and category.
+Only the 26 approved retained component rows changed; 94 was the only deletion
+and these six identities were the only additions. No other component, bike,
+bike spec, category, group or existing brand/source identity changed. The new
+source's country is US and its citation matches the approved edition reference.
+Components 10759→10764; all 23168 bike specs retained with unchanged values/links.
+
+The identical 45-statement SQL rerun affected **zero rows** in every mutation,
+including source/brand/category associations, updates, inserts and deletion.
+No remaining bike-spec reference to 94 or generator override targeting 94 exists.
+The two exact Ofmega 7000 aliases are ranged 1979–1986 and target 88.
+
+The actual generator/live comparison covers **107 loaded catalogues / 23168
+specs**: 23153 unchanged matches, zero gained/changed/missing/ambiguous mappings,
+and the identical 15 pre-existing lost mappings. All 13 test files passed.
+Whole-DB quality remains **zero errors / 1983 review findings** with the exact
+same findings before and after (no added or removed finding).
+
+Ofmega standard/near/parenthesis duplicate checks and focused near-name checks
+for Dia-Compe, Pearl, Performance and Sedis have no candidate involving 88 or
+the six new IDs. LF Pearl and the explicitly numbered Flolite variants remain
+separate; the generic Sachs-Sedis ATB placeholder is not merged by guesswork.
+The reviewed unlinked decisions above remain unchanged; in particular the new
+730G creates no bare 730 or 730GX mapping and the early Ofmega CX hub specs remain
+unlinked. These are evidence limits, not unfinished linking work.
+
+Removed the completed application TODO. No generic follow-up task was added
+for an intentionally unlinked or unresolved variant. Removed SQL, snapshots,
+inventory CSV, temporary helpers and logs after validation; the requested
+recovered originals/PDF and the separate OMAS recovery documents were preserved.

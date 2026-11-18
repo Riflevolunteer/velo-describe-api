@@ -82,3 +82,8 @@
     earlier 131 g headset).
 - No deletes. No bike_spec links: no loaded spec names a Squadra / Mistral part (the 1987 Colnago
   "SQUADRA" is a bike model). SQL: session scratchpad `squadra/ofmega-squadra-1988.sql`.
+
+
+## Performance 1985–86 reconciliation — applied 2026-11-18, source 462
+
+Consolidated shared 7000 BB **94→88**, retaining the measured 320g/116.5mm specimen, preserving identity UUID and making group NULL for the shared groups. Competizione/CX hubs and CX double/triple cranks received the approved availability/detail updates. [Exact old/new values, retired/new UUIDs and validation](cross-catalog-notes.md#performance-fallwinter-198586-reconciliation--applied-2026-11-18). Readback matched, SQL rerun changed zero rows, all 107 loaded catalogues retained their mappings, all 13 tests passed and whole-DB quality stayed unchanged with zero errors.
