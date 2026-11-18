@@ -238,7 +238,7 @@ OPC-SC and RT / BT cranks, 4 No.66 and DZF cranks, SP-K, HP-G5 and OPC-A5 / A4.
   Bike-catalogue fitment only, as with Fuji 1989 (source 412); see
   `../../../ingest-bike-specs/references/known-catalogs/panasonic.md`.
 - Kept apart: "SUGINO TGT-LP" (21583, 1985 Miyata 610) is left unlinked with a `null` key; the LP
-  variant is not shown to be the plain TGT. Open in TODO.
+  variant is not shown to be the plain TGT. Reviewed leave-unlinked decision below.
   - Validation: load 2 rows / 5 links, identical rerun 0 rows, readback matched.
     Regeneration gives exactly these 5 links. A first pass found the generic matcher
     also linking "SUGINO TGT-LP" by substring; it is now blocked by a `null` key.
@@ -314,3 +314,10 @@ of those older temporary files.
   links remain within the new range. Readback, all-96-catalogue comparison and
   zero-change SQL rerun passed. Quality removed exactly 5928's missing-date
   review and added no findings; full batch evidence is in bike `panasonic.md`.
+
+
+## Panasonic identity review — 2026-11-18 (read-only)
+
+**Correction proposed, not applied:** manufacturer Vol.56 photo spread 2 explicitly labels **GT, Model TGT**. Existing **1967 GT (triple)** and **11336 TGT** are duplicate identities; retain 1967, preserve the manufacturer/fitment evidence, extend year_to 1984→1986 and repoint specs 21228/21649 plus both generator TGT keys. Keep 21292 on 1967, DGT 1937 and GT-BMX 8894 separate. **TGT-LP 21583 remains NULL**: its suffix is not bridged by matching gearing or sealed-BB wording. This supersedes the earlier failure to recognize 1967 when inserting 11336.
+
+[Primary scans, exact affected IDs and review limits](../../../ingest-bike-specs/references/known-catalogs/panasonic.md#remaining-identity-review--2026-11-18-read-only). No database or generator changes were made.

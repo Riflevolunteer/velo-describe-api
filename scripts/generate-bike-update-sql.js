@@ -2533,7 +2533,7 @@ const COMPONENT_OVERRIDES = {
     // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
     'sugino tgt 50x40x28 teeth sealed bb chromoly axle': 11336,
     'sugino tgt 52x44x28 teeth': 11336,
-    'sugino tgt lp 52x44x28 teeth sealed bb': null, // 1985 Miyata 610 TGT-LP: LP variant not shown to be plain TGT 11336 (open in TODO)
+    'sugino tgt lp 52x44x28 teeth sealed bb': null, // 1985 Miyata 610 TGT-LP: LP/plain-TGT identity unproven; reviewed decision in known-catalogs/panasonic.md
     'sr sac 310 42 52t x 170 alloy cotterless': 11317,
     'sr sac 310 forged alloy outer ring 52 40': 11317,
     'sr sac 310 one piece alloy with alloy outer ring 170mm 52 40': 11317,

@@ -29,7 +29,7 @@ Medalilion 1000.
   - WPR-B: "Randonneur alloy".
   - S-WIN: Panasonic prints "S-WIN-AH alloy", Miyata "S-Win Alloy".
   - WIN Σ: Panasonic prints both "WIN Σ" and "WINΣ".
-- **Left unlinked (open in TODO):**
+- **Left unlinked (reviewed again 2026-11-18; decision below):**
   - "WP-RB" (1987 Miyata 215 ST / 615 GT). Probably WPR-B with the letters swapped.
   - Bare "WIN" AH (1985 Raleigh x8): S-WIN or WIN Σ is not printed.
   - "KUSUKI SIGMA Alloy" (1985 Miyata 912).
@@ -49,3 +49,10 @@ Medalilion 1000.
 - **Generator.** Exact keys for every linked spelling, under a "Panasonic USA
   1985-89 fitment rows" comment in Cranksets / Seat Posts / Handlebars / Pedals /
   Stems. The "(SR)" in the titles stops substring matching, so these keys are needed.
+
+
+## Panasonic identity review — 2026-11-18 (read-only)
+
+WP-RB/WPR-B, Sigma/WINΣ, bare WIN AH, earlier brandless S-WIN / Silver Win and the other named code variants remain unlinked. Panasonic does not explicitly establish the aliases. Existing BMT-3-26 **11691** and Rockey-2 **11692** are not new-row gaps.
+
+[Primary scans, exact affected IDs and review limits](../../../ingest-bike-specs/references/known-catalogs/panasonic.md#remaining-identity-review--2026-11-18-read-only). No database or generator changes were made.

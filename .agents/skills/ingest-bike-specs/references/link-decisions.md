@@ -4,6 +4,32 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## Panasonic-informed identities (reviewed 2026-11-18)
+
+Keep these current NULL links until new distinguishing evidence appears:
+
+- Kusuki WP-RB **22446/22468** versus WPR-B 11330; Sigma **21489** versus
+  WINΣ 11334; bare Raleigh WIN / WIN AH versus S-WIN-AH 11333 / WINΣ 11334;
+  brandless 1980 S-WIN-AH / S-WIN60-AH and 1981–82 Silver Win AH versus 11333.
+  Matching use, similar spelling and common material do not establish those aliases.
+  KR-LB, BMTL-II-26FE, RK-90 and SMC-F likewise lack exact model evidence;
+  Rocky III is not the documented Rockey-2. Generic Kusuki values lack a model.
+- Sugino **21583 TGT-LP** is not established as plain TGT. Preserve its
+  explicit NULL generator key through the proposed 1967/11336 GT/TGT merge.
+- Dia-Compe **21277/21297 PN-280** and **21319 PN-281** lack a manufacturer
+  PN/DC prefix crosswalk. Panasonic's numbered 280/281 confirms families only.
+  The 1980–85 Dia-Compe 730 specs lack a generation bridge to 1964 row 8929;
+  Weinmann 8637 and steel 7300 in 8097 are unsuitable alternatives.
+- KKT **RT-E1** (ten 1979–82 Miyata specs) is not explicitly equated to
+  RT-E 3773. Panasonic prints RT-E and RT-E II separately; it supplies no
+  E1/E alias. The 1980 Miyata chart's OCR-normalized codes need original evidence.
+- Sansin **3448/3468/3488 ET-QS** is not proven identical to Panasonic's
+  ET-Q merely because both are sealed quick-release hubs.
+
+These are completed review decisions, not pending generic rematching tasks.
+[Exact IDs, scan pages, exclusions and evidence needed](known-catalogs/panasonic.md#remaining-identity-review--2026-11-18-read-only).
+The supported Sugino GT/TGT duplicate correction remains a separate open action.
+
 ## 1986 Peugeot Orient Express Rocky II stem
 
 Spec **14964**, `Rocky II, alloy`, remains unlinked: its bike catalogue cell

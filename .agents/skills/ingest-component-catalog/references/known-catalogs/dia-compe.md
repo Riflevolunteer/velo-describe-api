@@ -646,10 +646,17 @@ validation; durable evidence, provenance and restoration values remain here.
   dated 1984-86 from Ron Kitching 1984 (261). Neither row changed.
 - Links: 21632 (1985 Miyata Ridge Runner "DC-280") -> 8112; 21675 (1985 Miyata Street Runner
   "DC-281") -> 8113. Generator keys `dia compe dc 280 levers` / `dia compe dc 281 levers`.
-- Open (TODO): "PN-280" x2 / "PN-281" (1984 Miyata; the same bikes print DC- in 1985); "DIA-COMPE
+- Reviewed unlinked below: "PN-280" x2 / "PN-281" (1984 Miyata; the same bikes print DC- in 1985); "DIA-COMPE
   280 mountain lever" (1983 Miyata Ridge Runner, before 8112's 1984). Optional: Panasonic 1987
   City Bike "No. 281" would support 8113 year_to 1987; no linked bike needs it.
   - Validation: load 2 rows / 5 links, identical rerun 0 rows, readback matched.
     Regeneration gives exactly these 5 links. A first pass found the generic matcher
     also linking "SUGINO TGT-LP" by substring; it is now blocked by a `null` key.
     duplicate-report (plain, `--near`, `--paren`) and `quality-report` raise nothing.
+
+
+## Panasonic identity review — 2026-11-18 (read-only)
+
+Miyata 1984 really prints PN-280/PN-281; Panasonic No.280/281 does not explain the prefix, so **21277/21297/21319 remain NULL**. Panasonic 1986 attests 730 alloy side-pull, but provides no generation bridge to 1964 mixed row 8929; Weinmann 8637 and Dia-Compe 7300 steel in 8097 are different alternatives. Keep the 1980–85 Miyata 730 specs NULL rather than widening 8929.
+
+[Primary scans, exact affected IDs and review limits](../../../ingest-bike-specs/references/known-catalogs/panasonic.md#remaining-identity-review--2026-11-18-read-only). No database or generator changes were made.

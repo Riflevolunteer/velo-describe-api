@@ -1,5 +1,12 @@
 # Sedis catalogs processed so far
 
+## May 1971 recovery search — 2026-11-18 (no new readable copy)
+
+- Scoped to the catalogue indexed *Sedis catalog (05-1971)*, not a general Sedis ingestion. The earlier Velo-Pages album 6165 inventory and 150×150-only capture result are in the [source-hunt log](../source-hunts.md#log). No old thumbnail or CDX recovery queries were repeated.
+- Searched exact 1971/05-1971/May 1971/mai 1971 catalogue/brochure wording, French bicycle-chain terminology, alternate catalogue archives and holder/listing leads (including IceniCAM, Ebykr, Flickr, French collector-site searches and AbeBooks publisher results). **No new readable copy or confirmed holder of the May 1971 edition was located.** VeloBase results lead to the same exhausted Velo-Pages album. IceniCAM returns the already-processed 7 November 1979 R.J.Chicken section. Ebykr's located Sedis material consists of 1950s/1960s advertisements rather than this catalogue. Current Sedis/manufacturer-distributor results concern industrial-chain catalogues; a modern ISO 9001/2008 catalogue is not 1971 evidence. A search listing for an undated c. 1970 four-page brochure does not establish possession of the 16-item May 1971 catalogue and was not counted as recovery.
+- No document recovered, no outreach or purchases, and no database/CSV/generator changes. Reopen only for a new readable scan or a holder specifically confirming this edition and its product pages. The original archive attribution still does not prove a printed May 1971 date. Search scratch removed after logging; no new Sedis file retained.
+
+
 ## R. J. Chicken & Sons trade catalogue, Sedis section — 7 November 1979 (Chains_from_R_J_Chicken_catalogue_1979-11-07.pdf, 8 pp, scan, no text layer), data_source id 177
 
 - Source: https://www.icenicam.org.uk/library/Sedis/Chains_from_R_J_Chicken_catalogue_1979-11-07.pdf

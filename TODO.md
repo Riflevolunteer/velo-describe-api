@@ -10,7 +10,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 <a id="sr-sakae-next-work"></a>
 
-- Review remaining Kusuki, Sugino TGT-LP, Dia-Compe PN-280/281/730, KKT RT-E1 and Sansin ET-Q/ET-QS identities using [Panasonic evidence](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md).
+- Consolidate Sugino GT/TGT duplicate **11336 → 1967**, preserving maker/fitment evidence, extending the upper availability bound to 1986 and repointing DB/generator references; validate the merge and keep TGT-LP unlinked. [Reviewed correction](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md#remaining-identity-review--2026-11-18-read-only).
 
 ## Product and infrastructure
 
@@ -69,4 +69,4 @@ Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agen
 - Inspect CLB catalogue photos in eBay 305827471354; seek period evidence for the remaining named brake and Sedis 1977–78 chain gaps.
 - Revisit Brügelmann’s Cobra saddles, Mavic Titan and Hutchinson Krono identities using held evidence; seek missing 1986–87/1989–92 editions through a new holder.
 - Seek a new dated manufacturer lead for Shimano BB-UN73; use [checked sources](.agents/skills/ingest-component-catalog/references/known-catalogs/shimano.md).
-- Recover Sedis May 1971 and missing OMAS 1978 pages only from a new readable scan/holder. [Recovery limits](.agents/skills/ingest-component-catalog/references/source-hunts.md#log).
+- Recover Sedis May 1971 only from a new readable scan or confirmed holder; verify the recovered OMAS PDF/image set against the catalogue indexed 1978 before claiming complete edition coverage. [Recovery evidence and files](.agents/skills/ingest-component-catalog/references/known-catalogs/omas.md#readable-alternate-catalogue-scans-recovered--2026-11-18); [Sedis limits](.agents/skills/ingest-component-catalog/references/known-catalogs/sedis.md#may-1971-recovery-search--2026-11-18-no-new-readable-copy).

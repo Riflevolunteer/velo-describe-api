@@ -47,12 +47,12 @@ Each would get an exact link if a row were added.
 | SR MTB-301 bar (1985-86), MTB-200 (1985) — **applied, 11326 / 11327** | 3 / 1 (1984-86 Miyata) |
 | SR SP-518FB pedal (1988) — **applied, 11328** | 1 (1986 Miyata Trail Runner) |
 | Kusuki WP-B bar (1985-86) — **applied, 11329** | 8 (1985 Raleigh x4, 1985 / 87 Miyata x4) |
-| Kusuki WPR-B randonneur bar (1985-89) — **applied, 11330** (WP-RB still open) | 3 exact (1985 Raleigh). The 1987 Miyata "WP-RB" x2 is probably a transposition; that is a judgement. |
+| Kusuki WPR-B randonneur bar (1985-89) — **applied, 11330** (WP-RB reviewed below; unlinked) | 3 exact (1985 Raleigh). The 1987 Miyata "WP-RB" spelling remains unlinked; see the reviewed decision below. |
 | Kusuki KD-LB (1986), BMT-II-26B (1987) — **applied, 11331 / 11332** | 1 / 1 (1987 Miyata) |
 | Kusuki S-WIN(-AH) stem (1985-89), WIN Σ (1985-89) — **applied, 11333 / 11334** | 3 / 5 (1986-87 Miyata). The 1985 Raleigh bare "WIN" AH x8 could be either and is not settled. |
 | MKS PB-20 pedal (1985-86) — **applied, 11335** | 1 (1986 Miyata City Runner) |
-| Sugino TGT triple (1986) — **applied, 11336** (TGT-LP still open) | 3 (1984-85 Miyata: TGT, TGT-LP) |
-| Sansin ET-Q hubs (1986, "sealed mechanism") | The 3 1985 Raleigh "ET-QS" are probably the same model, but that is not proven. |
+| Sugino TGT triple (1986) — **applied, 11336** (GT/TGT duplicate correction proposed below; TGT-LP unlinked) | 3 (1984-85 Miyata: TGT, TGT-LP) |
+| Sansin ET-Q hubs (1986, "sealed mechanism") | The 1985 Raleigh "ET-QS" spelling remains unlinked; sealed/QR features do not establish an alias. |
 
 Kusuki had only two component rows (Winpista, Medalilion 1000) before the
 2026-11-16 load; see `kusuki.md` in the component notes. Other codes printed with no row
@@ -80,7 +80,7 @@ FL-270S.
     fitment plus the 1987 Panasonic SP-KC specification, separately from SP-KCL.
 - **Identity questions Panasonic informs but does not settle:**
   - KKT "RT-E1" x10 (1979-82 Miyata) against 3773 RT-E (1974). Panasonic 1985
-    prints both "RT-E" and "RT-E II", so RT-E1 is probably the plain RT-E.
+    prints both "RT-E" and "RT-E II"; neither explicitly establishes the RT-E1 alias.
   - Dia-Compe 730 x2 (1984-85 Miyata) against 8929 "500 / 730 / 810" (1964).
     Panasonic 1986-87 still lists a "730 alloy side-pull".
   - Araya 16A[3] (1985-86) against the Miyata "Model 16-A3" x5; 4916 Araya 16A has
@@ -218,6 +218,138 @@ Whole-DB quality errors remain zero; reviews fall 1,951 → 1,950. The only
 finding removed is incomplete_dates for 5928 (1,566 → 1,565); date conflicts
 remain 326, broad freewheel labels 35 and descriptions at limit 24. No new
 finding was introduced. Temporary SQL, downloaded scans, snapshots and review
-helpers were removed after readback and idempotency validation. Existing shared
-Panasonic TSVs remain needed for the separate pending bike-brand/ingestion
-decision in TODO.
+helpers were removed after readback and idempotency validation.
+The separate bike-brand/ingestion decision remains in TODO. The earlier
+`/private/tmp/panasonic-1985-89/` directory was absent at the 2026-11-18 review;
+re-transcribe from the recorded URLs before ingestion.
+
+
+## Remaining identity review — 2026-11-18 (read-only)
+
+Reviewed the remaining named identity questions against the Panasonic scans,
+Miyata specification scans and current component rows/links. **No DB, CSV or
+generator mappings changed.** The supported correction is a GT/TGT duplicate;
+the suffix and spelling hypotheses below remain unproven. This clarifies the
+earlier “probably” comments: they remain hypotheses rather than established aliases.
+
+### Sugino GT / TGT: duplicate correction supported; TGT-LP separate
+
+The manufacturer photo spread explicitly captions **SUGINO GT, Model TGT**:
+[Vol.56 spread 2](https://equusbicycle.com/bike/sugino/pdf/suginobrochure56%202.pdf).
+Its [specification spread](https://equusbicycle.com/bike/sugino/pdf/suginobrochure56%201.pdf)
+lists TGT as a triple, 165 / 170 / 175 / 177.5mm, outer 46–53T, centre
+36–46T and inner 24–40T (discrete choices, not every intervening tooth count).
+This is source **291**, estimated c.1982–83; there is no newly discovered
+printed date. Panasonic 1986 printed p.30, ATB, explicitly lists
+**Sugino TGT 46/36/26T**. That combination is covered by the maker table.
+
+Live rows **1967 Sugino GT (triple)** (1980–84, source 291) and **11336
+Sugino TGT** (1984–86, source 417) therefore describe the same named triple;
+no distinguishing generation or construction is documented in either row.
+The 2026-11-16 insertion overlooked 1967's explicit TGT identification.
+**Proposed, not applied:** retain stable ID 1967; consolidate 11336 into it;
+extend year_to **1984 → 1986** as attested availability; preserve the maker
+specifications and Panasonic/Miyata fitment evidence. Repoint **21228**
+(1984 Miyata 610, 52/44/28) and **21649** (1985 Terra Runner OR, 50/40/28)
+from 11336 to 1967, keeping **21292** (1984 Terra Runner, GT 48/40/34) on 1967.
+Update both generator TGT overrides when applying, inspect all references,
+and validate readback/idempotency and regeneration. Keep the DGT double
+**1937** and GT-BMX **8894** separate. The inherited 1980 lower bound was
+not independently established by this review and is not a claimed introduction.
+
+Miyata 1985 PDF p.17 explicitly prints **TGT-LP, 52×44×28, sealed B.B.**
+for 610 (**21583**). Panasonic prints plain TGT; neither that matching ring
+combination nor the common sealed-BB wording establishes the LP variant's
+identity. GLP 1936 and ALP 1927 are different printed codes and provide no
+TGT-LP crosswalk either. Keep its explicit NULL generator override. No expansion of “LP”
+is established here.
+
+### Kusuki: model distinctions still matter
+
+- **WP-RB → WPR-B 11330:** Miyata 1987 PDF p.27 prints WP-RB Randonneur
+  (**22446 / 22468**); Panasonic 1986 p.29 Touring Deluxe prints WPR-B,
+  Randonneur alloy. Maker, use and letters fit a transposition hypothesis,
+  but neither source explicitly equates the spellings or gives dimensions.
+  Keep unlinked pending a maker code/bend/clamp crosswalk.
+- **SIGMA → WINΣ 11334:** Miyata 1985 p.17 prints KUSUKI SIGMA Alloy
+  (**21489**). Panasonic 1986 p.29 explicitly prints WINΣ. The Sigma name
+  is suggestive, but neither source establishes that bare Sigma is the full
+  WINΣ model rather than another stem. Keep unlinked pending that bridge.
+- **Bare WIN AH:** Raleigh 1985's eight WIN values (**3311 / 3330 / 3349 /
+  3368 / 3387 / 3406 / 3443 / 3463**) do not distinguish S-WIN-AH 11333
+  from WINΣ 11334. Panasonic 1986 pp.29–30 prints both as separate stems.
+- **Earlier S-WIN / Silver Win:** brandless 1980 Miyata S-WIN-AH /
+  S-WIN60-AH (**20586 / 20607 / 20628**) and 1981–82 Silver Win AH
+  (**20796 / 20817 / 21048 / 21069**) lack a contemporaneous maker/model
+  bridge to 11333. The 1980 chart is an OCR re-render, as recorded in
+  `miyata.md`; it is not original-raster proof of the exact spelling.
+  Do not move 11333's lower bound to 1980 on this evidence.
+- **Other named gaps:** KR-LB (**19102**) is not proven KD-LB 11331;
+  BMTL-II-26FE (**22344**) is not proven BMT-II-26B 11332; RK-90
+  (**22345 / 22367**) is not proven Panasonic RK-3; adjustable Rocky III
+  (**8537**) is separate from documented Rockey-2 **11692**; SMC-F
+  (**18548**) has no model bridge in these tables. BMT-3-26 **11691**
+  and Rockey-2 **11692** already exist, so neither is a new-row gap.
+  Maker/material-only Kusuki values remain insufficient for a model link.
+
+### Dia-Compe: PN prefix and period 730 remain unresolved
+
+Miyata 1984 PDF p.25 visibly prints **PN-280** for Ridge Runner / Terra
+Runner (**21277 / 21297**) and **PN-281** for Street Runner (**21319**).
+These are not transcription fixes to DC-. Panasonic 1986 p.30 ATB lists
+**No.280 MTB levers**; p.31 RTB / City Bike lists **No.281 MTB levers**.
+That corroborates the underlying numbered MTB lever families, but does not
+explain PN-. The same Miyata models' DC-280 / DC-281 in 1985 are supporting
+context, not a maker prefix crosswalk. Leave PN values NULL against
+**8112 / 8113**; do not alias to GC280 **8111** either.
+
+The 730 gap also includes **20600 / 20621** (1980 Miyata), **20810**
+(1981), **21402** (1984) and **21761** (1985); the old “x2” snapshot was
+incomplete. Panasonic 1986 p.31 explicitly says **730 alloy side-pull** on
+Tourist-10 / -5 / -3 (front only on -3). This is evidence for a period Dia-Compe
+730 identity, not a generation bridge to the 1964 mixed Dia-Weinmann row
+**8929**. Weinmann **8637** is a different maker; Dia-Compe **8097**
+includes **7300 steel**, a different code/material. Keep all these links
+NULL until a period maker specification or comparable marked specimen can
+distinguish the 730 generation. Do not widen 8929 to cover these bikes.
+
+### KKT RT-E1: no demonstrated E1/E bridge
+
+[Panasonic 1985 printed p.12](https://panasonicbikemuseum.info/wp-content/uploads/1985cat11.jpg)
+prints **KKT RT-E** on Sport 1000 and **RT-E II** on Sport LX;
+[p.13](https://panasonicbikemuseum.info/wp-content/uploads/1985cat12.jpg)
+also prints RT-E II on Sport / Sport 500. These are distinct printed codes.
+The ten 1979–82 Miyata RT-E1 values (**20450 / 20429 / 20597 / 20618 /
+20576 / 20555 / 20807 / 20786 / 21059 / 21038**) still lack a maker
+crosswalk to 1974 RT-E **3773**. Neither the digit 1 nor an inferred Roman I
+is explicitly identified as the unsuffixed model. In particular, some 1980
+spellings were context-normalized from the OCR re-render; Panasonic cannot
+validate those historical transcriptions. Keep unlinked and retain 3773's
+dates until comparable construction/dimensions or maker nomenclature is available.
+
+### Sansin ET-Q / ET-QS: sealed is not an alias
+
+Panasonic 1986 p.29 DX 3000 / DX 2000 / Touring Deluxe and p.30 Sport 1000
+print **ET-Q, sealed mechanism, alloy small flange with Q.R.** Raleigh 1985
+prints **ET-QS, 36-hole sealed, Q.R. front and rear** (**3448 / 3468 / 3488**).
+Their features are compatible, but the common sealed/QR wording does not
+establish that the S suffix is optional. The existing Sansin 1981 and 1987
+maker notes supply no ET-Q / ET-QS crosswalk. Keep the Raleigh specs NULL;
+do not borrow an RE/CE/AE series row or invent an ET-Q/ET-QS combined row.
+
+### Sources and review limits
+
+- Panasonic 1986 sources: [p.29](https://panasonicbikemuseum.info/wp-content/uploads/panda27.jpg),
+  [p.30](https://panasonicbikemuseum.info/wp-content/uploads/panda28.jpg),
+  [p.31](https://panasonicbikemuseum.info/wp-content/uploads/panda29.jpg), source 417.
+- Miyata primary scans: [1984](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2084.pdf),
+  [1985](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2085.pdf),
+  [1987](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2087.pdf).
+  Page references above are PDF pages; the 1987 WP-RB table is printed p.26.
+- [Raleigh 1985 specification scan](https://www.sheldonbrown.com/retroraleighs/catalogs/1985/images/specifications.jpg).
+- Checked live component identities, descriptions, dates, source citations,
+  competing 730 rows and all three current GT/TGT links. No write SQL was executed
+  and no link gains are claimed. The other questions are reviewed leave-unlinked
+  decisions in `../link-decisions.md`; reopen with the specific distinguishing
+  evidence above. Temporary review downloads/renders were removed after recording
+  the source URLs; the separate OMAS recovery deliverables were preserved.

@@ -50,3 +50,10 @@ sell skewers, quick seat pins and axle sets, which have no component category.
   either catalogue, so probably an OEM or earlier part), the 1986 "alloy sealed large flange
   36" (Elkhorn, Seneca) and 1986 Alyeska "alloy, large flange QR sealed 36 / rear 40" (could be
   RE-50, AE-10A or AX-10A, the wording does not say).
+
+
+## Panasonic identity review — 2026-11-18 (read-only)
+
+Panasonic 1986 pp.29–30 attests **ET-Q**, sealed mechanism, alloy small flange, quick release. Raleigh 1985 **ET-QS** specifies 36 holes, sealed and QR front/rear. These features fit but do not prove the suffix optional. Keep **3448/3468/3488 NULL** and do not combine ET-Q/ET-QS into an inferred model. Existing 1981/1987 maker evidence supplies no crosswalk.
+
+[Primary scans, exact affected IDs and review limits](../../../ingest-bike-specs/references/known-catalogs/panasonic.md#remaining-identity-review--2026-11-18-read-only). No database or generator changes were made.
