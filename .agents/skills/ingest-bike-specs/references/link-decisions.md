@@ -153,6 +153,7 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Saddles
 
+- c.1973 Motobecane US: Grand Touring table/portrait disagree on padded versus Ideal 80 saddle and SunTour VGT versus Huret Lux rear. Preserve both attributed values with NULL links. Mirage Simplex Prestige front/rear lacks variant evidence; three Stronglight Competition headsets lack locknut evidence; Grand Record/Le Champion Brooks Professional lacks Team Professional rivet evidence. Scoped NULL guards preserve these decisions without changing other catalogue mappings. Revisit only with distinguishing edition-specific evidence.
 - Guard added 2026-11-17: 1973 Peugeot PX 10 spec **7624**, `Brooks Professional
   or Ideale 90`, stays NULL under an explicit generator override. This enforces
   the existing either/or decision even when Brooks Professional 10057 is the

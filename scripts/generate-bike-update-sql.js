@@ -105,6 +105,11 @@ function dataSourceSubquery(label) {
 // catalogue"); files without one keep the original label so loaded rows still match.
 // Separate same-year brochures without inventing another bike brand or market.
 const CATALOGUE_EDITIONS = new Map([
+  ['1973_motobecane_us_spec.csv', {
+    label: 'Motobecane US catalogue (c. 1973)',
+    citation: '1973_motobecane_us_spec.csv; https://www.bikecatalogs.com/download/3780; archive attribution c.1973, no printed year established; US dealer stamp PDF p.8; specifications p.8, portraits pp.4-7. Grand Touring portrait/table conflict on saddle and rear derailleur preserved.',
+    country: 'US',
+  }],
   ['1972_bottecchia_us_spec.csv', {
     label: 'Bottecchia US catalogue (September 1972)',
     citation: 'https://web.archive.org/web/20110522004035/http://velo-pages.com/main.php?g2_itemId=27995 (archive: 1973; printed BOTT. USA III - 50.000-9/72)',
@@ -820,7 +825,7 @@ const COMPONENT_OVERRIDES = {
     'shimano ct20': 7739, // Shimano FD-CT20, Altus C20
     'shimano exage lt top pull dual sis': 7715, // Shimano FD-M320 / FD-M321, Exage LT
     'shimano exage es top pull dual sis': 7712, // Shimano FD-M520 / FD-M521, Exage ES
-    'simplex prestige': 2583, // Simplex Prestige Criterium AV 223
+    'simplex prestige': [{ bike: 'Mirage', from: 1973, to: 1973, id: null }, { id: 2583 }], // Simplex Prestige Criterium AV 223
     // Bare "Shimano 600" substring-hits EC-600 "Shimano-600" (1977-78). Fine
     // to 1978; from 1979 it could be FD-6100 or FD-6200 600EX, so no link.
     // 1986: FD-6207 600EX is the only 600 front (as the 1986 Raleigh "Shimano 600" crank -> FC-6207; 2026-11-02).
@@ -919,6 +924,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // c.1973 Motobecane: portrait and table conflict; retain both, choose neither.
+    'suntour vgt wide ratio (table); huret lux wide ratio (portrait)': [{ bike: 'Grand Touring', from: 1973, to: 1973, id: null }],
     // Bottecchia US III, September 1972, pp.2–7; keep the named rear equipment distinct.
     'gruppo campagnolo nuovo record': [{ bike: 'Professionale', from: 1972, to: 1972, id: 4125 }],
     'campagnolo gran turismo with derailleur 10 speed': [{ bike: 'Gran Turismo', from: 1972, to: 1972, id: 4120 }],
@@ -1272,7 +1279,7 @@ const COMPONENT_OVERRIDES = {
     // 1986 per Shimano's official Tourney history (previously dated 1990).
     // TY20 SIS launched in 1990; the earlier DB-series is a different era.
     'shimano tourney': [{ from: 1987, to: 1987, bike: 'STRADA', id: 7607 }],
-    'simplex prestige': [{ from: 1900, to: 1979, id: 4583 }, { from: 1980, to: 1987, id: 4647 }], // Simplex Prestige (variant of AR637P/NI), 1971-1974; 1982 Peugeot (NL) PL 8 M: S001 T Prestige (1975-89)
+    'simplex prestige': [{ bike: 'Mirage', from: 1973, to: 1973, id: null }, { from: 1900, to: 1979, id: 4583 }, { from: 1980, to: 1987, id: 4647 }], // Simplex Prestige (variant of AR637P/NI), 1971-1974; 1982 Peugeot (NL) PL 8 M: S001 T Prestige (1975-89)
     // 1973-76 Raleigh Gran Sport DL 160 "Simplex Maxi": the AR 642 Maxi-Prestige,
     // Simplex's only Maxi rear (long cage, wide range; 14-28 freewheel on the bike).
     'new simplex maxi': [{ from: 1973, to: 1976, id: 9692 }], // Simplex AR 642 P, Maxi-Prestige
@@ -2114,6 +2121,7 @@ const COMPONENT_OVERRIDES = {
     // 1973 Raleigh -> pre-CPSC 2040; 1990s (Bianchi 1993) -> BR-14RE dual pivot.
     'campagnolo record': [{ from: 1994, to: 1994, id: 7076 }, { to: 1977, id: 573 }, { from: 1978, to: 1986, id: 572 }, { from: 1990, to: 1993, id: 7038 }, { from: 1994, id: 578 }],
     // 1974 Motobecane.
+    'universal 61 center pull with quick release': [{ bike: 'Le Champion', from: 1973, to: 1973, id: 1081 }], // c.1973 Motobecane, table p.8: named model.
     'universal 61 center pull': 1081, // Universal Mod. 61
     // 1975 Motobecane.
     'universal mod 68 side pull racing': 1082, // Universal Super 68
@@ -2292,7 +2300,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo veloce': 2970, // 1993 Bianchi: Campagnolo HS-01VL, Veloce (part-number retitle)
     'shimano 600': [{ from: 1983, to: 1987, id: 3090 }], // 1987 Bianchi: Shimano HP-6207, 600EX
     campagnolo: null, // brand alone does not identify a headset model
-    'stronglight competition': 3125, // Stronglight V4 Competition (later version, octagonal locknut, 1960-80); was the 1950-60 earlier version until the 1970 Peugeot pass
+    'stronglight competition': [{ bike: 'Grand Touring', from: 1973, to: 1973, id: null }, { bike: 'Grand Record', from: 1973, to: 1973, id: null }, { bike: 'Le Champion', from: 1973, to: 1973, id: null }, { id: 3125 }], // Stronglight V4 Competition (later version, octagonal locknut, 1960-80); was the 1950-60 earlier version until the 1970 Peugeot pass
     // 1981 Kalkhoff (ambiguous with the Super Record Pista row).
     'campagnolo super record': 2968, // Campagnolo 4041, Super Record
     // 1983 Bianchi. Bare "Nuovo Record" substring-hits the Alleggerita
@@ -2783,6 +2791,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    // c.1973 Motobecane: conflicting saddle descriptions, not optional equipment.
+    'racing padded delux (table); ideal 80 leather racing saddle (portrait)': [{ bike: 'Grand Touring', from: 1973, to: 1973, id: null }],
     // Miyata 1979-80: full 77-17-IS code distinguishes it from 77-17; see miyata.md.
     'ariake 77 17 is padded': [{ bike: '912', from: 1979, to: 1979, id: 11429 }, { bike: '710', from: 1979, to: 1980, id: 11429 }, { bike: '600', from: 1979, to: 1979, id: 11429 }, { bike: '610', from: 1980, to: 1980, id: 11429 }],
     // Miyata frame-dependent alternatives: one component link cannot represent both saddles.
@@ -2886,13 +2896,13 @@ const COMPONENT_OVERRIDES = {
     'brooks b17 leather': 5315, // Brooks B17 Champion Standard
     // Brooks c. 1991-95 brochure: the plain Professional (normal rivets, 10057) and the large-rivet
     // Team Professional (5303) are separate; the 1981 Bikecology sheet already has both rivet sizes.
-    'brooks professional': [{ to: 1980, id: 5303 }, { from: 1981, id: 10057 }], // Team Professional / Professional
+    'brooks professional': [{ bike: 'Le Champion', from: 1973, to: 1973, id: null }, { to: 1980, id: 5303 }, { from: 1981, id: 10057 }], // Team Professional / Professional
     'brooks professional team special leather': 5304, // Brooks Team Professional "Team Special"
     'brooks professional leather team special': 5304, // 1974 Raleigh word order
     'brooks professional team special': 5304, // 1975 Raleigh
     'brooks professional best butt leather with copper rivets': 5303, // 1977 Raleigh Professional Mk V: copper rivets = standard Team Professional, not the polished-rivet Team Special
     'brooks professional best butt leather': 5303, // 1977 Raleigh Competition GS: Brooks Team Professional
-    'brooks professional leather': [{ to: 1980, id: 5303 }, { from: 1981, id: 10057 }], // 1974 Raleigh International / 1989 Randonneur
+    'brooks professional leather': [{ bike: 'Grand Record', from: 1973, to: 1973, id: null }, { to: 1980, id: 5303 }, { from: 1981, id: 10057 }], // 1974 Raleigh International / 1989 Randonneur
     'brooks b17 narrow leather': 5310, // 1974 Raleigh: Brooks B17 Champion Narrow
     // 1974 Motobecane (the seat post aside is not part of the saddle).
     'brooks professional with alloy seat post': 5303,
