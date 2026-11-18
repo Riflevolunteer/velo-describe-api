@@ -208,6 +208,8 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  [11652, 11655], // Guida '96: Poggipolini High Profile front hubs, carbon/ergal versus ergal construction
+  [11669, 11670], // Guida '96: MF Cronoradiale 030 aluminium versus carbon wheelsets
   [10681, 10682], // OMAS 120 S / 120 D: separately named in Guida '96; identical printed specs do not establish equivalence
   // Manual specimen review, 2026-11-17; cross-catalog-notes.md.
   [1657, 1659], // Nervar: conflicting 122/128 mm BCD; bare-arm vs complete-set weights are not comparable

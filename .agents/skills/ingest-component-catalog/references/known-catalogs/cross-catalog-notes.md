@@ -1217,7 +1217,7 @@ originals and maintained CSVs are preserved.
     10218), Vittoria Zefir Kevlar, Crono Seta CS 150, Sachs New Success brake (942 / 943), Clement Criterium aperto
     / Solo (merged multi-size entries).
 - Merged 2026-11-04 (user request): 10569 "Vittoria Corsa CX" (1996-1996, source_id 8a5cdbd9-d895-11f1-a2df-02fea3763e8d, no bike links) deleted into 6880 Vittoria Corsa CX Servizio Corse (1980-99, the 'vittoria corsa cx' override target); 6880's bare velobase text rewritten with the guide's sizes (19x28, 21x28, 19x26 in, 7-9 bar, 240-260 g; velobase 252 g avg kept), source_ref -> 357.
-- **Not done (a possible pass 3):** ~124 entries were initially attributed to brands absent from component_brand: MF Components 21, Tioga 8, MBS 7,
+- **Historical pass 3 estimate:** ~124 entries were initially attributed to brands absent from component_brand: MF Components 21, Tioga 8, MBS 7,
   Syncros, WR Compositi, Bestialine, Hope, Poggipolini, Sipav, SDG (4 each), F.R.O. Castagnino 6, Titec, Taya,
   Yaban, Race Face, L.L.S., Tec Components (3 each) and ~25 more with 1-2. Out-of-scope sections (bottles, cages,
   QRs, bolts, tubes, tape, toe clips, straps, spokes, nipples, aerobars, tubing, groupset summaries) not ingested.
@@ -1225,15 +1225,69 @@ originals and maintained CSVs are preserved.
 ### Guida '96 pass 3 triage — 2026-11-18
 
 The earlier missing-brand claim is stale for Tioga: brand 699 now exists, but
-its live inventory has no tyre rows. [Scan 22 / p.125](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_22_main_image.jpg)
+its inventory then had no tyre rows. [Scan 22 / p.125](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_22_main_image.jpg)
 was visually checked and lists Mongrel, Bloodhound, City Ranger, City Slicker,
-Proline S, Proline F, Proline SK and Proline SR. These are candidates for
-reconciliation, not yet loaded or verified absent under another brand/name.
-The remaining brand estimates predate current DB inventory and are not a
-validated transcription. An OCR candidate index and page text, plus the reviewed
-Tioga scan transcription, are retained under `/tmp/guida96-pass3/` to resume
-the unfinished pass. OCR may miss names, combine columns or include out-of-scope
-accessories; scan-by-scan visual review and DB reconciliation remain necessary.
+Proline S, Proline F, Proline SK and Proline SR. Subsequent visual review,
+reconciliation and the approved load are recorded below. The earlier brand
+estimates and OCR candidates were not themselves validated transcriptions.
+
+### Guida '96 pass 3 — applied and validated 2026-11-18
+
+The indexed missing-brand candidates were visually reviewed against the scans
+and reconciled with live brands and components. The review also found two
+entries omitted by the OCR index on scan 13: the second, carbon-fibre Titec
+seatpost and WR 95. WR 95 has a saddle clamp aligned with the shaft; the
+Italian word *stelo* denotes the shaft, not steel. Its weight is not stated.
+An unnamed MF Components roller-bearing headset on scan 52 lacks a model and
+is not represented by an invented named row. The MBS aero extension, MF spoke,
+SIPAV bar tape and other unsupported accessories are outside component scope.
+The Hope mention on scan 46 is part of existing FiR Zeus wheelset 10620.
+
+After approval, inserted 89 components, 16 missing brands and 38
+brand/category associations. Source 357 is already
+registered; 1996–1996 expresses this catalogue's attestation, not proven
+production limits. The 89 consist of 7 stems, 8 seatposts, 6 chains, 3 rims,
+5 handlebars, 6 cranksets, 10 bottom brackets, 23 hubs, 5 wheelsets, 6 saddles,
+2 headsets and 8 Tioga tyres. Descriptive titles distinguish the unnamed
+Titec/F.R.O. variants without asserting that those words are printed model names.
+The same-name Poggipolini High Profile front hubs are kept separate because the
+scan explicitly specifies carbon/ergal and all-ergal constructions. Do not
+infer a difference between Proline S and F beyond their printed names.
+
+MySQL EXPLAIN passed all 151 insert statements. Simulation across 98 loaded
+catalogues and 21,382 specs initially exposed 15 false matches from a generic
+`Aluminium` seatpost to the proposed Titec row. The generator now explicitly
+keeps that material-only value unlinked; the unchanged live baseline and a
+repeat simulation showed no mapping changes. Exact readback matched all 89
+approved rows and source 357; SQL rerun affected zero rows. The actual comparison
+across the same 98 catalogues / 21,382 specs exactly matched the baseline,
+including 15 pre-existing Huret Rival 4401 lost matches. No bike links or merges
+were applied and there are no dangling bike references. Duplicate review kept
+Poggipolini High Profile carbon/ergal 11652 and ergal 11655 separate, and MF
+Cronoradiale 030 Al 11669 and Carbon 030 11670 separate; both pairs are recorded
+in `REVIEWED_NOT_DUPLICATES`. Other reported pairs are front/rear configurations.
+The full test suite passed. Task-generated review SQL and scratch outputs were
+removed after validation; the original user-provided OCR index was preserved.
+
+**Inserted inventory (source 357):**
+
+- Bestialine: 11636 Bestialine ST 7561; 11646 Bestialine SE 7403-01 (front); 11658 Bestialine SE 7275 02 (rear); 11659 Bestialine Silent (rear).
+- F.R.O. Castagnino: 11601 F.R.O. Castagnino Dragon Stem; 11608 F.R.O. Castagnino Steel; 11630 F.R.O. Castagnino Tipsy; 11631 F.R.O. Castagnino Titan; 11637 F.R.O. Castagnino Quasar B.B.; 11680 F.R.O. Castagnino Viper; 11681 F.R.O. Castagnino Rans.
+- Hope Technology: 11638 Hope Technology Titanium B.B.; 11647 Hope Technology Lightweight (front); 11648 Hope Technology Ultralight (front); 11660 Hope Technology Ti Glide (rear).
+- L.L.S.: 11639 L.L.S. Movimento Centrale; 11661 L.L.S. T96 Ergal (rear); 11662 L.L.S. T96 Titanio (rear).
+- MBS: 11602 MBS Shark; 11603 MBS Shark Apribile; 11625 MBS Pista Crono; 11626 MBS Corsa 1 Canale; 11627 MBS Corsa 2 Canali; 11628 MBS Corsa Ergo 1 Canale; 11629 MBS Corsa Ergo 2 Canali.
+- MF Components: 11604 MF Components Al Custom; 11605 MF Components G-R; 11609 MF Components AL; 11622 MF Components Maxi 30; 11623 MF Components Fly; 11624 MF Components Maxi Carbon; 11632 MF Components 01; 11640 MF Components Custom; 11641 MF Components 01; 11642 MF Components 02; 11643 MF Components 03; 11649 MF Components New Big (front); 11650 MF Components Champion (front); 11651 MF Components Cronoradiale (front); 11663 MF Components Champion (rear); 11664 MF Components New Big (rear); 11665 MF Components Cronoradiale (rear); 11666 MF Components Attack Silent (rear); 11669 MF Components Cronoradiale 030 Al; 11670 MF Components Cronoradiale Carbon 030.
+- Poggipolini: 11652 Poggipolini High Profile (carbon/ergal, front); 11653 Poggipolini Low Profile (front); 11654 Poggipolini Titanio (front); 11655 Poggipolini High Profile (ergal, front).
+- Race Face: 11633 Race Face Turbine IB STD; 11634 Race Face Turbine Lop Compact; 11635 Race Face Turbine LP STD.
+- SDG: 11674 SDG Comp Ventura; 11675 SDG S7000 Ti; 11676 SDG S2000 Ti; 11677 SDG Comp Ti.
+- Sipav Bike Line: 11671 Sipav Bike Line Mexico/Monolithic; 11672 Sipav Bike Line Moskva/Excel Box; 11673 Sipav Bike Line Atlanta/Primato; 11678 Sipav Bike Line Top Line Flash.
+- Syncros: 11606 Syncros Altura; 11610 Syncros Hardcore; 11611 Syncros Pro Series; 11644 Syncros Proseries Altura.
+- TEC Components: 11645 TEC Components titanium bottom bracket; 11656 TEC Components Ciccio Bomba (front); 11667 TEC Components Ciccio Bomba (rear).
+- Taya: 11616 Taya Bridge; 11617 Taya Relief; 11618 Taya Pro Extreme.
+- Tioga: 11682 Tioga Mongrel; 11683 Tioga Bloodhound; 11684 Tioga City Ranger; 11685 Tioga City Slicker; 11686 Tioga Proline S; 11687 Tioga Proline F; 11688 Tioga Proline SK; 11689 Tioga Proline SR.
+- Titec: 11612 Titec Aluminium; 11613 Titec Carbon C191; 11679 Titec KTI.
+- WR Compositi: 11607 WR Compositi Corsa; 11614 WR Compositi WR 94; 11615 WR Compositi WR 95; 11657 WR Compositi Standard (front); 11668 WR Compositi Standard (rear).
+- Yaban: 11619 Yaban VG 80; 11620 Yaban VG 7401; 11621 Yaban VG 90 S2.
 
 ### Guida '96 follow-up: OMAS headset identity — 2026-11-18
 

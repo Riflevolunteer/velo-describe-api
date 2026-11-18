@@ -1,5 +1,11 @@
 # Tioga catalogs processed so far
 
+## Guida '96 tyres — applied and validated, 2026-11-18
+
+[Scan 22 / printed p.125](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_22_main_image.jpg), source 357, was visually rechecked. After user approval, added 11682 Mongrel (cross, 700x38c, 535g), 11683 Bloodhound (cross, 700x38c, 473g), 11684 City Ranger (700x35c), 11685 City Slicker (smooth, 700x32c, 535g), and 11686–11689 Proline S/F/SK/SR (nylon casing, 700x18/20/23/25). Added the Tyres association for existing Tioga brand 699. Source 357 was reused; 1996 is attestation, not a production boundary. No unstated bead, weight or Proline S/F difference was invented. The Proline SK listing describes an optional folding configuration rather than establishing a separate model; SR is folding and amber.
+
+Readback matched all eight rows; the consolidated rerun changed zero rows. The actual generator/live comparison across 98 loaded catalogues and 21,382 bike specs exactly matched the baseline, including 15 pre-existing Huret Rival 4401 lost matches. No new bike links; duplicate candidates were reviewed in the cross-catalogue notes.
+
 ## Tioga components catalogue (1992) — bikalog.org, data_source "Tioga components catalogue (1992)", 2026-11-06
 
 - Source: https://bikalog.org/api/view/Tioga/1992/Tioga92.pdf (30 pp scan, OCR text layer too rough to transcribe; read visually).

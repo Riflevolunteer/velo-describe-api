@@ -4,6 +4,13 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## Material-only seatposts (reviewed 2026-11-18)
+
+Generic `Aluminium` does not identify a seatpost model. The Guida '96 pass 3
+simulation found 15 1982–84 Peugeot values that would otherwise substring-match
+the proposed unnamed Titec aluminium post; an explicit generator guard keeps
+them unlinked. Named Titec values remain eligible for model matching.
+
 ## 1989 Bianchi Dia-Compe 984D (reviewed 2026-11-17)
 
 - Forte **18613** and Volpe **18717**, `Dia-Compe 984D`, remain NULL. The US

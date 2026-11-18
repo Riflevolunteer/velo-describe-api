@@ -4145,6 +4145,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super nuovo record': [{ from: 1974, to: 1980, id: 5759 }], // 1974 Raleigh Team Professional: Campagnolo 4051, Super Record
     'shimano dura ace': [{ from: 1990, to: 1993, id: 5893 }, { from: 1994, id: 5895 }], // SP-7400-A / SP-7410 — 1993 Bianchi
     alloy: null, // generic word; substring-hits "Titan alloy"
+    aluminium: null, // material alone does not identify a Titec or other seatpost
     // 1981 Kalkhoff.
     'campagnolo super record': [{ to: 1980, id: 5759 }, { from: 1981, id: 5761 }], // 4051 two-bolt to 1980; 4051/1 single-bolt 1980-85 (1981 Kalkhoff row 780 re-pointed 2026-09-28, 1986 Cinelli)
     'shimano 600 ax': 5886, // Shimano SP-6300, 600 AX

@@ -84,19 +84,52 @@ inventory found zero changed matches. Temporary SQL and helpers were removed.
   silver **10197** and blue **10198** rows. Prepare separate CD and CD Ceramic
   tubular rows from the manufacturer evidence, with 1997–1999 availability
   bounds (both editions attest the options), preserving the 375/390 g distinction.
-  Existing 10596 and 10599 are clinchers, not substitutes. After the new rows
-  are reviewed and applied, retire broad **9975** only after confirming all
-  four finishes and its source 307 evidence are preserved, checking references,
-  and comparing generated mappings; generic bike specs must not be arbitrarily
-  assigned a finish. Until then keep 9975 and all three rows unchanged. This
-  follows the existing T217 treatment, where the family row was removed after
-  its silver, CD and ceramic options were represented individually.
+  Existing 10596 and 10599 are clinchers, not substitutes. The subsequent
+  approved finish split and retirement of 9975 are recorded below; generic
+  bike specs must not be arbitrarily assigned a finish. This follows the
+  existing T217 treatment, where the family row was removed after its silver,
+  CD and ceramic options were represented individually.
   Live readback: 9975 1997–1997 source 307 (all four finishes); 10197 silver
   1996–1999 source 374; 10198 blue 1996–1999 source 357. The three have no
   stored images, bike links or generator ID references. The later 1999 maker
   evidence supplies 21 mm, Maxtal, SUP and UB Control; the manufacturer's
   family-wide drilling does not alone prove each finish was offered in every
   hole count. No DB or generator change was made in this review.
+- **Reflex finish split applied and validated, 2026-11-18:** directly rechecked
+  [1997 maker spread 3](https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1997.html)
+  and [1999 maker catalogue](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf)
+  PDF p.11 / printed p.21. Both list CD, CD Ceramic, blue and silver tubular
+  Reflex; 375g and 390g ceramic. The 1999 page supplies Maxtal, SUP, double
+  eyelets, 21mm section, and 28/32/36 family drilling. Prepared two distinct
+  1997–1999 source 374 rows: `Mavic Reflex CD (tubular)` (375g, UB Control) and
+  `Mavic Reflex CD Ceramic (tubular)` (390g, ceramic braking surface). The
+  drilling is explicitly described as family-wide, not each finish's proven
+  availability. CD/ceramic clinchers 10596/10599 are distinct and unchanged.
+  Retained silver 10197 and blue 10198; the original 1997 family evidence remains
+  source 307 and this catalogue note after retirement of 9975.
+
+  After user approval, guarded SQL inserted CD 11566 (source ID
+  `dc283eae-aa79-44c8-80de-bb1f5aa18f4a`) and CD Ceramic 11567 (source ID
+  `e4d071b9-7ca2-46e7-89e5-bd2049199c0b`), then deleted 9975 after checking
+  the intact family row, existing finish IDs, both new rows and no bike
+  references. The retired row had source ID `514a08de-d479-11f1-a2df-02fea3763e8d`,
+  title `Mavic Reflex (tubular)`, description `Mavic Reflex (tubular), France.
+  700c tubular, SUP joint and UB Control sidewalls, 375 g (Ceramic 390 g),
+  28/32/36 holes; CD, CD Ceramic, blue or silver. Competition and training.`,
+  1997–1997, brand 31, category 16, NULL group and image, source 307 and
+  search text `Mavic Reflex`. Restore it with its original ID and fields if
+  reversing the split, after checking references and generator overrides.
+  A fresh read found no bike specs for 9975, 10197, 10198 or
+  generic Reflex; `bike_spec` is the only other table with a `component_id`
+  column and no declared FK points at component_detail. No affected IDs occur
+  in generator code or bike-link decisions. Mavic merge and near reports found
+  no candidates. MySQL `EXPLAIN` passed for all three prepared DML statements.
+  Readback confirmed all four finishes and absence of 9975; rerun made zero
+  changes. There are no dangling bike-component references. Post-load Mavic
+  merge and near reports found no candidates. The actual generator/live
+  comparison across 98 loaded catalogues / 21,382 specs exactly matched the
+  pre-load baseline, including 15 unrelated Huret Rival 4401 lost matches;
+  no bike links changed. Temporary SQL and comparison files were removed.
 - **5062 / 10199 / 10607 CXP30 tubular:** that same maker spread explicitly
   prints **465 g for both silver and titanium-colour tubular options**, versus
   520 g for the clincher. This supports the known maker specification but does
@@ -375,9 +408,8 @@ was not invoked and `bike-update.sql` was untouched. No code changed, so no test
 suite run was needed; data readback, mappings, integrity and idempotency were
 validated directly.
 
-Other overlaps remain open: 9975 includes four Reflex finishes while 10197/10198
-only cover two, so removing it would lose CD/Ceramic representation. T261 needs
-the profile crosswalk above. CXP 30 has a separate titanium tubular **10607**,
+The Reflex finish split and T261 crosswalk were subsequently completed as
+recorded above. CXP 30 has a separate titanium tubular **10607**,
 whose 520 g dealer figure conflicts with the maker's 465 g; **5062** also carries
 an independent 500 g specimen record. Do not merge those into silver **10199**
 without resolving identity/weight attribution. The 1999 maker lists 28/32/36
@@ -491,8 +523,8 @@ versus inside measurements or assert a generation change; obtain a numbered
 profile/specimen crosswalk or manufacturer clarification first. Both rows have
 zero bike links; neither appears in generator overrides. Kept unchanged.
 
-Reflex **9975 / 10197 / 10198**, T217 **9981 / 10184 / 10185** and tubular CXP 30
-**5062 / 10199** also remain open for construction/edition reconciliation.
+The Reflex and T217 reviews were subsequently completed as recorded above;
+tubular CXP 30 **5062 / 10199** remains open for edition reconciliation.
 Guida '96 scan 16 prints 22 mm for T217 whereas '99 scan 16 gives 17 mm;
 the '97 drawing gives 22 mm. Guida '96 scan 17 places CXP 30 in the tubular
 section but prints 520 g, unlike the maker's 465 g tubular / 520 g clincher.
@@ -565,7 +597,9 @@ not a fresh extraction of every catalogue or verification of every specimen.
    (1988–92)**, whose 1988 introduction is recorded above. Find positive
    31.8 mm version evidence before changing either identity/date. None of these
    rows has a bike link.
-5. **Manual rim-overlap queue missed by automatic grouping:** compare
+5. **Historical manual rim-overlap queue missed by automatic grouping:** the
+   Reflex, T217 and T261 entries were subsequently resolved as recorded above;
+   the original queue was to compare
    **9975 Reflex tubular / 10197 Argent / 10198 Blu** (375 g); **9981 T217 /
    10184 T217 Argent / 10185 T217 CD** (470 g); **9983 T261 / 10182 T261
    Argent** (540 g); **5062 CXP 30 tubular / 10199 CXP 30 Argent** (465 g).

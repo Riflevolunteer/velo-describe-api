@@ -2,6 +2,12 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('a material-only seatpost does not match an unnamed Titec model', () => {
+  const rows = [{ component_id: 1, title: 'Titec Aluminium', category: 'Seat Posts' }]
+  assert.equal(matchComponent('Aluminium', rows, null, 'Seatpost', 1984, 'PH 12'), null)
+  assert.equal(matchComponent('Titec Aluminium', rows, null, 'Seatpost', 1996, 'Other').component_id, 1)
+})
+
 test('1984 Motobecane Eco portraits do not resolve the overlapping Duopar rows', () => {
   for (const records of [
     [{ component_id: 4276, title: 'Huret Duopar Eco', category: 'Rear Derailleurs' }],
