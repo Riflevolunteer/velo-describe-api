@@ -105,6 +105,11 @@ function dataSourceSubquery(label) {
 // catalogue"); files without one keep the original label so loaded rows still match.
 // Separate same-year brochures without inventing another bike brand or market.
 const CATALOGUE_EDITIONS = new Map([
+  ['1982_motobecane_us_spec.csv', {
+    label: '1982 Motobecane (US) catalogue',
+    citation: '1982_motobecane_us_spec.csv; https://www.bikecatalogs.com/download/3789; original scans http://bulgier.net/pics/bike/Catalogs/Motobecane/82/; printed MOTOBECANE 1982 specification table PDF p.14; US market explicit p.12; specifications pp.14-15, portraits pp.3-13. Grand Record rear-derailleur conflict and Mirage Sport weight discrepancy retained in catalogue notes.',
+    country: 'US',
+  }],
   ['1981_motobecane_us_spec.csv', {
     label: '1981 Motobecane (US) catalogue',
     citation: '1981_motobecane_us_spec.csv; https://www.bikecatalogs.com/download/3788; original scans https://bulgier.net/pics/bike/Catalogs/Motobecane/81/; printed copyright 1981 and warranty effective January 1 1981 PDF p.2; US market Motobecane America NJ address and CPSC p.2; specifications pp.14-15, portraits pp.3-13. Table/portrait conflicts retained in catalogue notes.',
@@ -576,6 +581,15 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    "suntour black line": [{"bike":"Jubilee Sport","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "huret aero (table); shimano adamas ax componentry (portrait)": [{"bike":"Profil","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "motobecane simplex 6600": [{"bike":"Team Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "motobecane simplex 6000": [{"bike":"Prolight","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "campagnolo record 1020": [{"bike":"Le Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "sja102": [{"bike":"Grand Record","from":1982,"to":1982,"id":2573}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "motobecane simplex sx610 gt sp": [{"bike":"Grand Jubilee","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "motobecane huret rival": [{"bike":"Randonnee","from":1982,"to":1982,"id":null},{"bike":"Mirage Sport","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "suntour spirit": [{"bike":"Nomade II","from":1982,"to":1982,"id":2601}], // 1982 Motobecane US, pp.14-15; brand notes.
     'simplex sx410gt sp': [{bike: 'Grand Jubile', from: 1981, to: 1981, id: null}], // Printed front/rear cell names a rear code; front unresolved.
     "suntour blue line": [{"bike":"Jubile Sport","from":1981,"to":1981,"id":2622}], // 1981 Motobecane US, pp.14-15; brand notes.
     "suntour spirt": [{"bike":"Nomade 1","from":1981,"to":1981,"id":2601}], // 1981 Motobecane US, pp.14-15; brand notes.
@@ -583,7 +597,7 @@ const COMPONENT_OVERRIDES = {
     "suntour compe vx": [{"bike":"Grand Touring","from":1981,"to":1981,"id":2614},{"bike":"Grand Touring","from":1980,"to":1980,"id":2614},{"bike":"Super Touring","from":1980,"to":1980,"id":2614}],
     "shimano600ex": [{"bike":"Grand Record","from":1980,"to":1980,"id":2480}],
     // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
-    "suntour compe v": [{"bike":"Super Mirage","from":1981,"to":1981,"id":2603},{"bike":"Super Mirage","from":1980,"to":1980,"id":2603}, {"bike":"Mirage","from":1979,"to":1979,"id":2603},{"bike":"Super Mirage","from":1979,"to":1979,"id":2603},{"bike":"Inter Club","from":1979,"to":1979,"id":2603}],
+    "suntour compe v": [{"bike":"Super Mirage","from":1982,"to":1982,"id":2603},{"bike":"Interclub","from":1982,"to":1982,"id":2603},{"bike":"Super Mirage","from":1981,"to":1981,"id":2603},{"bike":"Super Mirage","from":1980,"to":1980,"id":2603}, {"bike":"Mirage","from":1979,"to":1979,"id":2603},{"bike":"Super Mirage","from":1979,"to":1979,"id":2603},{"bike":"Inter Club","from":1979,"to":1979,"id":2603}],
     "shimano altus lt": [{"bike":"Grand Sprint","from":1980,"to":1980,"id":2485}, {"bike":"Grand Sprint","from":1979,"to":1979,"id":2485}],
     "suntour sl": [{"bike":"Grand Touring","from":1979,"to":1979,"id":null}],
     "suntour cyclone gt": [{"bike":"Grand Jubile","from":1980,"to":1980,"id":null}, {"bike":"Grand Jubile","from":1979,"to":1979,"id":null}],
@@ -894,7 +908,7 @@ const COMPONENT_OVERRIDES = {
     'huret jubilee': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }],
     // 1975 Motobecane.
     'huret jubilee wide ratio': [{ to: 1976, id: 2396 }, { from: 1977, id: 2395 }],
-    'huret challenger': 2388, // Huret Challenger 950 / 951 (hinged clamping band)
+    'huret challenger': [{"bike":"Grand Touring","from":1982,"to":1982,"id":null}, {id: 2388}], // Huret Challenger 950 / 951 (hinged clamping band)
     // 1981 Kalkhoff. Shimano rows are titled "Shimano FD-7200, Dura-Ace EX"
     // (part number between brand and group), so substring never fires.
     'campagnolo super record': 2313, // Campagnolo 1052/SR (0104010), Super Record (clip-on)
@@ -956,12 +970,18 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    "suntour black line": [{"bike":"Jubilee Sport","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "huret aero (table); shimano adamas ax componentry (portrait)": [{"bike":"Profil","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "motobecane simplex 6000": [{"bike":"Prolight","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "motobecane simplex sx610 sp (table); motobecane simplex 6000 (portrait)": [{"bike":"Grand Record","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "motobecane huret rival": [{"bike":"Randonnee","from":1982,"to":1982,"id":null},{"bike":"Mirage Sport","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "suntour honor gt": [{"bike":"Nomade II","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     "simplex 6000": [{"bike":"Prolight","from":1981,"to":1981,"id":null}], // 1981 Motobecane US, pp.14-15; brand notes.
     "simplex sx410gt sp": [{"bike":"Grand Jubile","from":1981,"to":1981,"id":4620}], // 1981 Motobecane US, pp.14-15; brand notes.
     "suntour blue line": [{"bike":"Jubile Sport","from":1981,"to":1981,"id":7787}], // 1981 Motobecane US, pp.14-15; brand notes.
     "suntour honor": [{"bike":"Nomade 1","from":1981,"to":1981,"id":4702}], // 1981 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
-    "suntour vxgt": [{"bike":"Super Mirage","from":1981,"to":1981,"id":4707},{"bike":"Grand Touring","from":1981,"to":1981,"id":4707},{"bike":"Super Mirage","from":1980,"to":1980,"id":4707},{"bike":"Grand Touring","from":1980,"to":1980,"id":4707},{"bike":"Super Touring","from":1980,"to":1980,"id":4707}],
+    "suntour vxgt": [{"bike":"Super Mirage","from":1982,"to":1982,"id":4707},{"bike":"Interclub","from":1982,"to":1982,"id":4707},{"bike":"Super Mirage","from":1981,"to":1981,"id":4707},{"bike":"Grand Touring","from":1981,"to":1981,"id":4707},{"bike":"Super Mirage","from":1980,"to":1980,"id":4707},{"bike":"Grand Touring","from":1980,"to":1980,"id":4707},{"bike":"Super Touring","from":1980,"to":1980,"id":4707}],
     "shimano600ex": [{"bike":"Grand Record","from":1980,"to":1980,"id":4468}],
     // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
     "suntour v gt luxe": [{"bike":"Mirage","from":1979,"to":1979,"id":4705},{"bike":"Super Mirage","from":1979,"to":1979,"id":4705},{"bike":"Grand Touring","from":1979,"to":1979,"id":4705},{"bike":"Inter Club","from":1979,"to":1979,"id":4705}],
@@ -982,9 +1002,9 @@ const COMPONENT_OVERRIDES = {
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "huret duopar titanium": [{ bike: "Mt. Becane", from: 1984, to: 1984, id: 8173 }],
     // Portraits pp.7/9 name Eco; keep citation evidence in catalogue notes.
-    "huret duopar eco": [{ bike: "Super Mirage", from: 1984, to: 1984, id: null }, { bike: "City-Becane", from: 1984, to: 1984, id: null }], // 4276 / 4400 identity remains unresolved.
-    "campagnolo record 1020": [{"bike":"Le Champion","from":1981,"to":1981,"id":4125},{"bike":"Team Champion","from":1981,"to":1981,"id":4125},{ bike: "Le Champion", from: 1984, to: 1984, id: 4126 }],
-    "motobecane simplex 6600": [{ bike: "Team Champion", from: 1984, to: 1984, id: null }],
+    "huret duopar eco": [{"bike":"Grand Touring","from":1982,"to":1982,"id":null},{ bike: "Super Mirage", from: 1984, to: 1984, id: null }, { bike: "City-Becane", from: 1984, to: 1984, id: null }], // 4276 / 4400 identity remains unresolved.
+    "campagnolo record 1020": [{"bike":"Le Champion","from":1982,"to":1982,"id":4126},{"bike":"Le Champion","from":1981,"to":1981,"id":4125},{"bike":"Team Champion","from":1981,"to":1981,"id":4125},{ bike: "Le Champion", from: 1984, to: 1984, id: 4126 }],
+    "motobecane simplex 6600": [{"bike":"Team Champion","from":1982,"to":1982,"id":null},{ bike: "Team Champion", from: 1984, to: 1984, id: null }],
     "simplex 610": [{ bike: "Prolight", from: 1984, to: 1984, id: null }],
     'shimano l 522 ss': [{ bike: '100', from: 1987, to: 1987, id: 7553 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano l 532 sis': [{ bike: '112', from: 1987, to: 1987, id: 4521 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
@@ -1442,6 +1462,11 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    "ofmega cx with quick release front and rear": [{"bike":"Prolight","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "maillard helico sport with quick release front and rear": [{"bike":"Grand Record","from":1982,"to":1982,"id":3387}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "maillard 700 professional with quick release front and rear": [{"bike":"Team Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "campagnolo record with quick release front and rear": [{"bike":"Le Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "adamas ax with quick release front and rear": [{"bike":"Profil","from":1982,"to":1982,"id":3541}], // 1982 Motobecane US, pp.14-15; brand notes.
     "campagnolo record 1034 front and rear small flange quick release ss spokes": [{"bike":"Team Champion","from":1981,"to":1981,"id":3259}], // 1981 Motobecane US, pp.14-15; brand notes.
     "campagnolo grand sport 1251 front and rear small flange quick release": [{"bike":"Le Champion","from":1981,"to":1981,"id":9212}], // 1981 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
@@ -1781,7 +1806,13 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
-    "weinmann 610 and atom drum": [{"bike":"Interclub","from":1981,"to":1981,"id":null}], // Compound rear brakes; no single identity.
+    "adamas ax aerodynamic powerful brakes": [{"bike":"Profil","from":1982,"to":1982,"id":974}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "weinmann super carrera 400 side pull recessed nut front and rear": [{"bike":"Team Champion","from":1982,"to":1982,"id":1168}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "weinmann 506 side pull recessed front nut": [{"bike":"Jubilee Sport","from":1982,"to":1982,"id":7764}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "weinmann 405 side pull recessed nut front and rear": [{"bike":"Prolight","from":1982,"to":1982,"id":1117}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "weinmann 405 side pull with wheel guide recessed nut front and rear": [{"bike":"Grand Record","from":1982,"to":1982,"id":1117}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "mafac competition center pull with wheel guide recessed front nut": [{"bike":"Grand Jubilee","from":1982,"to":1982,"id":825}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "weinmann 610 and atom drum": [{"bike":"Interclub","from":1982,"to":1982,"id":null},{"bike":"Interclub","from":1981,"to":1981,"id":null}], // Compound rear brakes; no single identity.
 
 
     "shimano 600ex front recessed nut": [{"bike":"Grand Record","from":1981,"to":1981,"id":null}], // 1981 Motobecane US, pp.14-15; brand notes.
@@ -2290,6 +2321,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ bike: 'Tangent', from: 1989, to: 1989, id: null }],
   },
   Headsets: {
+    "stronglight v4": [{"bike":"Grand Record","from":1982,"to":1982,"id":3125}], // 1982 Motobecane US, pp.14-15; brand notes.
     "shimano 600 ex": [{"bike":"Grand Record","from":1981,"to":1981,"id":3089}], // 1981 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
     "shimano 600ex": [{"bike":"Grand Record","from":1980,"to":1980,"id":3089}],
@@ -2432,6 +2464,9 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    "adamas ax aerodynamic cotterless alloy crank 42x52 alloy chainwheel": [{"bike":"Profil","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "stronglight 99 forged alloy cotterless crank 36x47x52 alloy chainwheel": [{"bike":"Grand Touring","from":1982,"to":1982,"id":1906}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "campagnolo super record 42x53 chainwheel forged alloy": [{"bike":"Le Champion","from":1982,"to":1982,"id":1509}], // 1982 Motobecane US, pp.14-15; brand notes.
     "campagnolo super record 4030 42x53": [{"bike":"Team Champion","from":1981,"to":1981,"id":1509}], // 1981 Motobecane US, pp.14-15; brand notes.
     "shimano 600ex 40x52 cotterless": [{"bike":"Grand Record","from":1981,"to":1981,"id":1793}], // 1981 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
@@ -2890,6 +2925,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    "turbo white skin top": [{"bike":"Team Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
     "italia criterium suede": [{"bike":"Le Champion","from":1980,"to":1980,"id":5485}],
     "super leggera suede top": [{"bike":"Team Champion","from":1980,"to":1980,"id":null}],
@@ -3443,7 +3479,7 @@ const COMPONENT_OVERRIDES = {
     "brazed downtube shifters": [{"bike":"Grand Record","from":1981,"to":1981,"id":6150}], // 1981 Motobecane US, pp.14-15; brand notes.
     "pub10 stem ratchet gears": [{"bike":"Nomade 2","from":1981,"to":1981,"id":7796}], // 1981 Motobecane US, pp.14-15; brand notes.
     "pub10 stem shifters": [{"bike":"Nomade 1","from":1981,"to":1981,"id":7796}], // 1981 Motobecane US, pp.14-15; brand notes.
-    "vx (ld1900) downtube shifters": [{"bike":"Super Mirage","from":1981,"to":1981,"id":6265}], // 1981 Motobecane US, pp.14-15; brand notes.
+    "vx (ld1900) downtube shifters": [{"bike":"Super Mirage","from":1982,"to":1982,"id":6265},{"bike":"Super Mirage","from":1981,"to":1981,"id":6265}], // 1981 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
     "pub10 stem ratchet shifters": [{"bike":"Super Mirage","from":1980,"to":1980,"id":7796},{"bike":"Grand Touring","from":1980,"to":1980,"id":7796}],
     "suntour vx (ld1900) downtube shifters": [{"bike":"Super Touring","from":1980,"to":1980,"id":6265},{"bike":"Grand Jubile","from":1980,"to":1980,"id":6265}],
@@ -3851,10 +3887,15 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    "campagnolo record with reflectors christophe toe clips and straps": [{"bike":"Le Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "adamas ax aerodynamic with reflectors toe clips and straps": [{"bike":"Profil","from":1982,"to":1982,"id":3962}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "sr sp150 alloy racing type with reflectors toe clips and straps": [{"bike":"Jubilee Sport","from":1982,"to":1982,"id":3925}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "maillard ra500 alloy racing type with reflectors toe clips and straps": [{"bike":"Grand Record","from":1982,"to":1982,"id":10985}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "maillard ra500 alloy racing type with reflectors": [{"bike":"Grand Touring","from":1982,"to":1982,"id":10985},{"bike":"Mirage Sport","from":1982,"to":1982,"id":10985}], // 1982 Motobecane US, pp.14-15; brand notes.
     "campagnolo 1037 a with reflectors; christophe z toe clips and straps": [{"bike":"Team Champion","from":1981,"to":1981,"id":3709}], // 1981 Motobecane US, pp.14-15; brand notes.
     "campagnolo grand sport with reflectors; christophe toe clips and straps": [{"bike":"Le Champion","from":1981,"to":1981,"id":3688}], // 1981 Motobecane US, pp.14-15; brand notes.
     "sr sp150 with reflectors toe clips and straps": [{"bike":"Grand Jubile","from":1981,"to":1981,"id":3925},{"bike":"Jubile Sport","from":1981,"to":1981,"id":3925}], // 1981 Motobecane US, pp.14-15; brand notes.
-    "sr sp100al with reflectors toe clips and straps": [{"bike":"Grand Record","from":1981,"to":1981,"id":3922}], // 1981 Motobecane US, pp.14-15; brand notes.
+    "sr sp100al with reflectors toe clips and straps": [{"bike":"Grand Jubilee","from":1982,"to":1982,"id":3922},{"bike":"Grand Record","from":1981,"to":1981,"id":3922}], // 1981 Motobecane US, pp.14-15; brand notes.
     "sr sp100al with reflectors": [{"bike":"Grand Touring","from":1981,"to":1981,"id":3922}], // 1981 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
     "atom440 with reflectors": [{"bike":"Super Touring","from":1980,"to":1980,"id":3662}],
@@ -4153,6 +4194,10 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    "ctp5 alloy seat post simplex binder bolt": [{"bike":"Prolight","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "ctp5 alloy seat post recessed allen binder bolt": [{"bike":"Grand Record","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "ctp5 alloy seat post allen binder bolt": [{"bike":"Grand Jubilee","from":1982,"to":1982,"id":null},{"bike":"Le Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "ctp6 alloy seat post allen binder bolt": [{"bike":"Super Mirage","from":1982,"to":1982,"id":5861},{"bike":"Grand Touring","from":1982,"to":1982,"id":5861},{"bike":"Jubilee Sport","from":1982,"to":1982,"id":5861}], // 1982 Motobecane US, pp.14-15; brand notes.
     "campagnolo super record seat post allen recessed binder bolt": [{"bike":"Team Champion","from":1981,"to":1981,"id":null}], // 1981 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
     "ctp6 seat post recessed binder bolt": [{"bike":"Grand Touring","from":1980,"to":1980,"id":5861},{"bike":"Super Touring","from":1980,"to":1980,"id":5861},{"bike":"Grand Sprint","from":1980,"to":1980,"id":5861}],
@@ -4361,6 +4406,7 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    "sedisport or uniglide": [{"bike":"Jubilee Sport","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
     "sedisport standard": [{"bike":"Grand Touring","from":1980,"to":1980,"id":8765},{"bike":"Super Touring","from":1980,"to":1980,"id":8765},{"bike":"Grand Jubile","from":1980,"to":1980,"id":8765}],
     "sedicolor gold and black": [{"bike":"Grand Record","from":1977,"to":1977,"id":8764}], // c.1977 Motobecane US, specifications pp.10-11.
@@ -4441,7 +4487,7 @@ const COMPONENT_OVERRIDES = {
     'sedisport silver': [{ from: 1980, id: 1402 }], // 1986 Peugeot (US) table: colour variant of 'sedisport', as 'sedisport black'
     // Bare "Sedisport": two rows now exist (8765 Sedis Sedisport 1979, 1402 Sedisport Delta 1980), so the matcher sees an ambiguity. 1402 is the pick already in the DB for
     // the 1984 Raleigh and 1987 Bianchi (Delta replaced the plain Sedisport from 1980), so 1980+ stays on it; earlier years keep the matcher result.
-    'sedisport': [{"bike":"Grand Touring","from":1981,"to":1981,"id":8765},{"bike":"Grand Jubile","from":1981,"to":1981,"id":8765},{"bike":"Grand Record","from":1981,"to":1981,"id":8765},{"bike":"Le Champion","from":1981,"to":1981,"id":8765},{"bike":"Prolight","from":1981,"to":1981,"id":8765},{"bike":"Team Champion","from":1981,"to":1981,"id":8765},{ from: 1980, id: 1402 }],
+    'sedisport': [{"bike":"Super Mirage","from":1982,"to":1982,"id":8765},{"bike":"Grand Touring","from":1982,"to":1982,"id":8765},{"bike":"Grand Jubilee","from":1982,"to":1982,"id":8765},{"bike":"Mirage Sport","from":1982,"to":1982,"id":8765},{"bike":"Grand Record","from":1982,"to":1982,"id":8765},{"bike":"Le Champion","from":1982,"to":1982,"id":8765},{"bike":"Prolight","from":1982,"to":1982,"id":8765},{"bike":"Team Champion","from":1982,"to":1982,"id":8765},{"bike":"Grand Touring","from":1981,"to":1981,"id":8765},{"bike":"Grand Jubile","from":1981,"to":1981,"id":8765},{"bike":"Grand Record","from":1981,"to":1981,"id":8765},{"bike":"Le Champion","from":1981,"to":1981,"id":8765},{"bike":"Prolight","from":1981,"to":1981,"id":8765},{"bike":"Team Champion","from":1981,"to":1981,"id":8765},{ from: 1980, id: 1402 }],
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano cn 6400 silver': [{ from: 1988, to: 1993, id: 1406 }], // CN-6400
     'shimano cn hg90 silver': [{ from: 1990, to: 1993, id: 7566 }], // CN-HG90
@@ -4563,6 +4609,9 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    "suntour perfect 5 cogs 14 17 22 27 32": [{"bike":"Interclub","from":1982,"to":1982,"id":2245}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "suntour perfect 6 cogs 14 17 20 23 26 32": [{"bike":"Super Mirage","from":1982,"to":1982,"id":7813}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "maillard 700 course racing 6 cogs 13 14 15 16 17 18": [{"bike":"Team Champion","from":1982,"to":1982,"id":2114}], // 1982 Motobecane US, pp.14-15; brand notes.
     "suntour perfect": [{"bike":"Interclub","from":1981,"to":1981,"id":null}], // 1981 Motobecane US, pp.14-15; brand notes.
     "atom 14x26": [{"bike":"Le Champion","from":1977,"to":1977,"id":2044}], // c.1977 Motobecane US, specifications pp.10-11.
     'quintuple regina oro': [{ bike: 'Professionale', from: 1972, to: 1972, id: 2182 }], // Bottecchia US III: five-speed Extra Oro, not six-speed 2194.
@@ -4829,6 +4878,11 @@ const COMPONENT_OVERRIDES = {
     'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
+    "michelin 27x1 bib sport hp gumwall": [{"bike":"Mirage Sport","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "michelin bib 25 27x1": [{"bike":"Super Mirage","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "clement super gentleman": [{"bike":"Prolight","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "michelin bib ts20 700c": [{"bike":"Grand Record","from":1982,"to":1982,"id":6830}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "michelin bib ts20": [{"bike":"Le Champion","from":1982,"to":1982,"id":6830}], // 1982 Motobecane US, pp.14-15; brand notes.
     "puncture free paris roubaix tubulars": [{"bike":"Team Champion","from":1981,"to":1981,"id":null}], // 1981 Motobecane US, pp.14-15; brand notes.
     "clement super gentlemen": [{"bike":"Le Champion","from":1981,"to":1981,"id":null},{"bike":"Prolight","from":1981,"to":1981,"id":null}], // 1981 Motobecane US, pp.14-15; brand notes.
     "clement gentlemen": [{"bike":"Grand Record","from":1981,"to":1981,"id":8973}], // 1981 Motobecane US, pp.14-15; brand notes.
@@ -4844,7 +4898,7 @@ const COMPONENT_OVERRIDES = {
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "lc 40: hutchinson corsa senior tubulars; lc 41: michelin bib ts 20": [{ bike: "Le Champion", from: 1984, to: 1984, id: null }],
     "pl 40: hutchinson corsa senior tubulars; pl 41: michelin bib ts 20": [{ bike: "Prolight", from: 1984, to: 1984, id: null }],
-    "clement criterium 12 bis tubulars": [{ bike: "Team Champion", from: 1984, to: 1984, id: 8972 }],
+    "clement criterium 12 bis tubulars": [{"bike":"Team Champion","from":1982,"to":1982,"id":8972},{ bike: "Team Champion", from: 1984, to: 1984, id: 8972 }],
     "michelin bib ts 23 27x1": [{ bike: "Grand Jubilee", from: 1984, to: 1984, id: null }, { bike: "Jubilee Sport", from: 1984, to: 1984, id: null }],
     // 1982 Battaglin Vuelta: 9255 Trofeo 250 starts 1984; the sheet prints neither model number nor casing.
     // The final entry preserves the existing matcher result for other bikes.
@@ -4964,6 +5018,12 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    "mavic module e2 700c rims small spoke protector": [{"bike":"Prolight","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "mavic ssc black anodized heat treated rims stainless steel aci spokes chromed nipples": [{"bike":"Team Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "rigida 13 20 alloy rims huret spoke protector": [{"bike":"Jubilee Sport","from":1982,"to":1982,"id":9894},{"bike":"Grand Record","from":1982,"to":1982,"id":9895}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "rigida 13 20 alloy rims spoke protector": [{"bike":"Grand Jubilee","from":1982,"to":1982,"id":9894}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "weinmann a124 concave alloy 27x1 1 4 rims": [{"bike":"Interclub","from":1982,"to":1982,"id":7776}], // 1982 Motobecane US, pp.14-15; brand notes.
+    "weinmann a124 concave alloy rims spoke protector": [{"bike":"Grand Touring","from":1982,"to":1982,"id":7776}], // 1982 Motobecane US, pp.14-15; brand notes.
     "arc en ciel small spoke protector": [{"bike":"Team Champion","from":1981,"to":1981,"id":5180}], // 1981 Motobecane US, pp.14-15; brand notes.
     "rigida 13 20 plastic spoke protector": [{"bike":"Grand Record","from":1981,"to":1981,"id":null}], // 1981 Motobecane US, pp.14-15; brand notes.
     "rigida 13 20 spoke protector": [{"bike":"Jubile Sport","from":1981,"to":1981,"id":9894}], // 1981 Motobecane US, pp.14-15; brand notes.

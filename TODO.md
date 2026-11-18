@@ -20,7 +20,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Bike catalogues
 
-- Verify and transcribe further missing 1970–90 Motobecane editions, beginning with 1982, using the [recorded source leads](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#19701990-gap-source-leads--2026-11-18).
+- Verify and transcribe further missing 1970–90 Motobecane editions, beginning with 1983, using the [recorded source leads](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#19701990-gap-source-leads--2026-11-18).
 - Load Bikecology April 1976 complete bikes, pp.87–111.
 - Decide Nashbar brand treatment, then load its Spring 1988 house bikes, pp.30–40; re-read the scans.
 - Decide Panasonic brand treatment, then ingest the 1985–89 US bikes from [recorded sources](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md).
