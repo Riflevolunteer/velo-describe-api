@@ -1,5 +1,80 @@
 # Mavic catalogs processed so far
 
+## CXP30 and Open Pro weight attribution — 2026-11-19, read-only
+
+Reviewed live **5062/5063/10199/10607** (CXP30) and **5099/5100/10183**
+(Open Pro), all ten photographs on the original5062/5099/5100 listings, the
+1997 maker road spread, 1999 GB maker pp.20–21, and Guida1996 p.120 /
+Guida1999 p.106. All seven rows have zero bike links; no generator override
+references these component IDs. The current Mavic duplicate report flags only
+5062/5063 among them, correctly as tubular/clincher configurations. No database,
+source, matcher, duplicate-registry or bike-link changes were made.
+
+### Two description corrections are supported
+
+- **Open Pro5099:** [the original weight list](https://www.velobase.com/Pages/ViewComponent.aspx?ID=D12D1B63-2FD3-4768-99D0-4893540FE62A)
+  explicitly contains **435g Spec** and **445g Actual**, both submitted by
+  ThermionicScott. Its displayed440g is the arithmetic average of those two
+  entries, not an average of two independently weighed rims. This supersedes
+  the earlier notes' treatment of440g as an independent specimen mean. Preserve
+  **445g as a reported actual weight** and keep435g separately attributed as a
+  specification; neither establishes a dated production variant. Proposed
+  replacement description (165 characters):
+  `Mavic Open Pro, France. Reported actual weight 445 g; separately listed specification 435 g. Clincher rim with welded joint and double eyelets; blue/silver finishes.`
+- **CXP30 tubular5062:** [the original listing](https://www.velobase.com/Pages/ViewComponent.aspx?ID=FB4424AC-C610-462B-8174-56506478D1AA)
+  says **500g** without an Actual/Spec qualifier or weighing photograph. Do not
+  describe it as an independently measured500g specimen. Its photographs show
+  a silver tubular, SUP/UB Control decal, loose profiled inserts/tool, and
+  fitting instructions. [Damon Rinard's measurement table](https://sheldonbrown.com/rinard/weights.htm)
+  independently distinguishes **473g actual without washers** from **500g
+  claimed** for a CXP30 tubular. This makes weighing basis a concrete remaining
+  question; it does not prove these entries describe the same physical rim,
+  that500g includes inserts, or that473+inserts equals a catalogue value.
+  Proposed replacement description (210 characters):
+  `700c aero tubular rim, SUP joint, UB Control brake tracks and profiled inserts; 465 g maker specification (1997), 24/28/32/36 holes, silver or titanium. A separate 500 g listing has no stated measurement basis.`
+
+These are review proposals, not applied changes. No SQL prepared. Keep titles,
+dates and identities separate from this weight-attribution correction.
+
+### Edition/identity limits that remain
+
+- The [1997 manufacturer road spread](https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1997.html),
+  inspected at original `/s0/` resolution, prints **465g tubular**, silver or
+  titanium, 24/28/32/36H, versus **520g clincher**. [1999 GB maker p.21](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf)
+  again gives465g tubular, silver/28/32/36H, versus550g clincher. Preserve the
+  edition-specific drilling and clincher weights.
+- [Guida1996, scan17 / p.120](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_17_main_image.jpg)
+  explicitly places **both Argent and Titane CXP30 under tubulars and prints
+  520g for each**. This is not merely a titanium-versus-silver difference.
+  [Guida1999, scan17 / p.106](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_17_main_image.jpg)
+  separately prints465g for the silver tubular and550g for its clincher.
+  A contemporaneous1996 maker specification or a measured bare-rim/inserts
+  comparison is still needed to explain the dealer discrepancy. Do not infer
+  an engineering revision, delete10607's edition-specific520g, or merge the
+  generic/silver/titanium rows solely from these weights.
+- **Open Pro5099/5100:** all three5099 photos show blue rims and a red/yellow/
+  silver OPEN PRO decal with SUP/UB Control/Maxtal logos. The5100 photo set
+  includes a loose dark rim with MAXTAL S.6000/OPEN PRO wording and a built-wheel
+  view with a different large yellowSUP layout. Do not assume all photographs
+  show a single physical specimen. S6000 alone does not distinguish alloy
+  generations. Preserve5100's independently reported **888g actual pair**;
+  do not replace it with a per-rim catalogue weight or merge it into silver10183.
+- **Dating:** [1999 GB maker p.20](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf)
+  lists Royal Blue alongside Silver/CD/CDCeramic, 18.4mm height and19.6mm
+  outside width, 425g700c /390g650c /445gCeramic. This corroborates a blue
+  Open Pro option in1999, but does not date5099's exact decal or identify5100's
+  dark finish as CD. The1997 maker spread instead names OpenSUP and Reflex;
+  absence of the OpenPro name there is not proof of nonexistence. No recovered
+  dated maker/decal crosswalk supports replacing the specimen rows' legacy
+  1986 /1980–1990 claims. Earlier1998 silver Yeti evidence for10183 remains
+  valid and separate. The official product-sheet endpoint returned403; no
+  new technical-sheet dating claim is made.
+
+Source URLs, exact weight qualifiers and proposals are retained here; specimen
+HTML/photos, maker/dealer downloads, page renders and duplicate-report scratch
+files were removed after review. No tests were needed for this documentation-only
+review; `git diff --check` and TODO/anchor reconciliation were checked.
+
 ## T261 profile crosswalk — 2026-11-17, read-only
 
 Reopened the waiting evidence item using a newly recovered **1995 maker
@@ -133,8 +208,9 @@ inventory found zero changed matches. Temporary SQL and helpers were removed.
 - **5062 / 10199 / 10607 CXP30 tubular:** that same maker spread explicitly
   prints **465 g for both silver and titanium-colour tubular options**, versus
   520 g for the clincher. This supports the known maker specification but does
-  not explain 10607's **1996 dealer 520 g** or 5062's independent **500 g
-  specimen**. Preserve those separate attributions pending edition/specimen
+  not explain 10607's **1996 dealer 520 g** or 5062's **500 g listing with
+  unspecified measurement basis** (qualifier corrected in the2026-11-19 review
+  above). Preserve those separate attributions pending edition/specimen
   evidence; no merge or weight overwrite is justified by this recheck alone.
 - [1995 p.15](https://www.disraeligears.co.uk/site/00_main_images/mavic_1995_page_15_main_image.jpg)
   distinguishes **Open 4 CD / Open SUP / Reflex clincher**; it does not identify
@@ -256,7 +332,8 @@ the subsequent 192 review above documents the applied 1993 attestation.
 - Dealer source **353**, Guida '99 p.104 (scan 16), previously transcribed 410 g.
   The maker positively supplies 425 g for the 700c rim, so use that specification
   and clarify SUP as the welded joint and UB Control as brake-track machining.
-  This does not reinterpret the independent specimen weights on 5099/5100.
+  The2026-11-19 review above subsequently separated5099's435g Spec/445g Actual
+  aggregation;5100 retains its independent888g actual pair report.
 
 Applied on explicit user approval: registered supporting `Yeti catalogue (1998)`
 as source **432** (country US, dated cover and p.11 citation; source lookup
@@ -298,8 +375,9 @@ registered supporting source without checking all later references.
   Visually inspected their main photos: 5099 shows blue rims; 5100 a dark rim
   with an OPEN PRO / MAXTAL S.6000 / SUP decal. S6000 wording alone therefore
   does **not** establish two different alloy generations. The listings' broad
-  date claims do not date those exact specimens. Keep the independent 440 g
-  average and 888 g actual pair records; do not force either into silver 10183
+  date claims do not date those exact specimens. The2026-11-19 review above
+  supersedes the earlier440g interpretation with435g Spec/445g Actual;
+  retain5100's888g actual pair report. Do not force either into silver 10183
   or arbitrarily recast 5100's black finish as CD. Need dated decal/finish
   evidence and an early range source before replacing dates or merging rows.
 - The [Mavic technical manual 2004](https://racingdepot.no/userfiles/image/MSC/MTech%202004.pdf),
@@ -411,7 +489,8 @@ validated directly.
 The Reflex finish split and T261 crosswalk were subsequently completed as
 recorded above. CXP 30 has a separate titanium tubular **10607**,
 whose 520 g dealer figure conflicts with the maker's 465 g; **5062** also carries
-an independent 500 g specimen record. Do not merge those into silver **10199**
+an unqualified500g listing, not a verified actual measurement (see2026-11-19
+review above). Do not merge those into silver **10199**
 without resolving identity/weight attribution. The 1999 maker lists 28/32/36
 tubular drilling (1997 and the dealer guide also offer 24); retain edition-specific
 evidence rather than silently dropping 24. Its clincher is separately 550 g in
