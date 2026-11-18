@@ -105,6 +105,11 @@ function dataSourceSubquery(label) {
 // catalogue"); files without one keep the original label so loaded rows still match.
 // Separate same-year brochures without inventing another bike brand or market.
 const CATALOGUE_EDITIONS = new Map([
+  ['1985_motobecane_spec.csv', {
+    label: '1985 Motobecane catalogue',
+    citation: '1985_motobecane_spec.csv; https://www.bikecatalogs.com/download/3793; original http://equusbicycle.com/bike/motobecane/catalog85/index.html; six-page general catalogue, printed 1985 edition in descriptions pp.2,3,5; specifications p.6, portraits pp.2-5; archive attributes US edition but market not established by the printed pages, country left NULL; distinct from undated French Course-Training brochure download/3792.',
+    country: null,
+  }],
   ['1983_motobecane_us_spec.csv', {
     label: '1983 Motobecane (US) catalogue',
     citation: '1983_motobecane_us_spec.csv; https://www.bikecatalogs.com/download/3790; original scans http://bulgier.net/pics/bike/Catalogs/Motobecane/83/; Volume 2, cover 1983 p.1, copyright 1983 p.2, specification summary p.14; US market explicit p.4, Motobecane/SMC Melville NY p.16; carried-forward warranty effective January 1 1981 is not catalogue year; tables pp.14-15, portraits pp.3-13.',
@@ -586,6 +591,8 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    "huret eco system": [{"bike":"Nomade","from":1985,"to":1985,"id":8796},{"bike":"Le Velo","from":1985,"to":1985,"id":8796}], // 1985 Motobecane general catalogue p.6; brand notes.
+    "huret rival system": [{"bike":"Mirage","from":1985,"to":1985,"id":null}], // 1985 Motobecane general catalogue p.6; brand notes.
     "motobecane huret rival system": [{"bike":"Mirage Sport","from":1983,"to":1983,"id":null}], // 1983 Motobecane US Volume2, pp.14-15; brand notes.
     "suntour black line": [{"bike":"Jubilee Sport","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     "huret aero (table); shimano adamas ax componentry (portrait)": [{"bike":"Profil","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
@@ -976,6 +983,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    "huret eco system": [{"bike":"Nomade","from":1985,"to":1985,"id":4399},{"bike":"Le Velo","from":1985,"to":1985,"id":4399}], // 1985 Motobecane general catalogue p.6; brand notes.
+    "huret rival system": [{"bike":"Mirage","from":1985,"to":1985,"id":null}], // 1985 Motobecane general catalogue p.6; brand notes.
+    "campagnolo triomphe corsa system": [{"bike":"Grand Record","from":1985,"to":1985,"id":4155}], // 1985 Motobecane general catalogue p.6; brand notes.
     "motobecane huret rival system": [{"bike":"Mirage Sport","from":1983,"to":1983,"id":null}], // 1983 Motobecane US Volume2, pp.14-15; brand notes.
     "suntour black line": [{"bike":"Jubilee Sport","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     "huret aero (table); shimano adamas ax componentry (portrait)": [{"bike":"Profil","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
@@ -1469,6 +1479,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    "campagnolo triomphe small flange alloy with quick release stainless steel spokes": [{"bike":"Grand Record","from":1985,"to":1985,"id":3277}], // 1985 Motobecane general catalogue p.6; brand notes.
     "maillard helicomatic cassette type with quick release front and rear": [{"bike":"Jubilee Sport","from":1983,"to":1983,"id":3387}], // 1983 Motobecane US Volume2, pp.14-15; brand notes.
     "ofmega cx with quick release front and rear": [{"bike":"Prolight","from":1983,"to":1983,"id":null},{"bike":"Prolight","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     "maillard helico sport with quick release front and rear": [{"bike":"Grand Record","from":1983,"to":1983,"id":3387},{"bike":"Grand Record","from":1982,"to":1982,"id":3387}], // 1982 Motobecane US, pp.14-15; brand notes.
@@ -1814,6 +1825,7 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    "campagnolo triomphe alloy side pull with quick release tire guides recessed allen bolts": [{"bike":"Grand Record","from":1985,"to":1985,"id":585}], // 1985 Motobecane general catalogue p.6; brand notes.
     "adamas ax aerodynamic powerful brakes": [{"bike":"Profil","from":1982,"to":1982,"id":974}], // 1982 Motobecane US, pp.14-15; brand notes.
     "weinmann super carrera 400 side pull recessed nut front and rear": [{"bike":"Team Champion","from":1983,"to":1983,"id":1168},{"bike":"Team Champion","from":1982,"to":1982,"id":1168}], // 1982 Motobecane US, pp.14-15; brand notes.
     "weinmann 506 side pull recessed front nut": [{"bike":"Jubilee Sport","from":1983,"to":1983,"id":7764},{"bike":"Jubilee Sport","from":1982,"to":1982,"id":7764}], // 1982 Motobecane US, pp.14-15; brand notes.
@@ -2472,6 +2484,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    "campagnolo triomphe 170mm forged alloy 42x53t chain ring": [{"bike":"Grand Record","from":1985,"to":1985,"id":1515}], // 1985 Motobecane general catalogue p.6; brand notes.
     "sn5dx alloy cotterless 42x52 alloy chainwheel with built in alloy chain guard (table); shimano marked crank in portrait": [{"bike":"Mirage","from":1983,"to":1983,"id":null}], // 1983 Motobecane US Volume2, pp.14-15; brand notes.
     "nervar 3020 forged alloy cotterless crank 42x52 alloy chainwheel": [{"bike":"Jubilee Sport","from":1983,"to":1983,"id":10981},{"bike":"Mirage Sport","from":1983,"to":1983,"id":10981}], // 1983 Motobecane US Volume2, pp.14-15; brand notes.
     "adamas ax aerodynamic cotterless alloy crank 42x52 alloy chainwheel": [{"bike":"Profil","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
@@ -3313,6 +3326,7 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    "cosmos alloy; stem lengths vary with frame sizes": [{"bike":"Mirage","from":1985,"to":1985,"id":9204},{"bike":"Nomade","from":1985,"to":1985,"id":9204}], // 1985 Motobecane general catalogue p.6; brand notes.
     // 1986 Miyata / Koga: named Kusuki Rocky 2; maker-free Rocky II remains unresolved.
     'kusuki rocky 2 alloy black': [{ bike: 'Trail Runner', from: 1986, to: 1986, id: 11692 }],
     'rocky ii alloy': null,
@@ -3486,6 +3500,7 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
+    "campagnolo shift levers": [{"bike":"Grand Record","from":1985,"to":1985,"id":null}], // 1985 Motobecane general catalogue p.6; brand notes.
     "brazed downtube shifters": [{"bike":"Grand Record","from":1981,"to":1981,"id":6150}], // 1981 Motobecane US, pp.14-15; brand notes.
     "pub10 stem ratchet gears": [{"bike":"Nomade 2","from":1981,"to":1981,"id":7796}], // 1981 Motobecane US, pp.14-15; brand notes.
     "pub10 stem shifters": [{"bike":"Nomade 1","from":1981,"to":1981,"id":7796}], // 1981 Motobecane US, pp.14-15; brand notes.
@@ -3754,6 +3769,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    "forged alloy levers": [{"bike":"Grand Record","from":1985,"to":1985,"id":233}], // 1985 Motobecane general catalogue p.6; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
     // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
     "safety levers": [{"bike":"Mirage","from":1980,"to":1980,"id":null},{"bike":"Super Mirage","from":1980,"to":1980,"id":null},{"bike":"Grand Touring","from":1980,"to":1980,"id":null}, {"bike":"Nomade","from":1979,"to":1979,"id":null},{"bike":"Mirage","from":1979,"to":1979,"id":null},{"bike":"Super Mirage","from":1979,"to":1979,"id":null},{"bike":"Grand Touring","from":1979,"to":1979,"id":null}],
@@ -4205,6 +4221,8 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    "ctp6 alloy": [{"bike":"Mirage","from":1985,"to":1985,"id":5861}], // 1985 Motobecane general catalogue p.6; brand notes.
+    "campagnolo triomphe aero look micro adjust with single adjusting bolt": [{"bike":"Grand Record","from":1985,"to":1985,"id":5764}], // 1985 Motobecane general catalogue p.6; brand notes.
     "ctp5 alloy seat post simplex binder bolt": [{"bike":"Prolight","from":1983,"to":1983,"id":null},{"bike":"Prolight","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     "ctp5 alloy seat post recessed allen binder bolt": [{"bike":"Grand Record","from":1983,"to":1983,"id":null},{"bike":"Grand Record","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     "ctp5 alloy seat post allen binder bolt": [{"bike":"Grand Jubilee","from":1983,"to":1983,"id":null},{"bike":"Le Champion","from":1983,"to":1983,"id":null},{"bike":"Grand Jubilee","from":1982,"to":1982,"id":null},{"bike":"Le Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
@@ -4423,7 +4441,7 @@ const COMPONENT_OVERRIDES = {
     "sedicolor gold and black": [{"bike":"Grand Record","from":1977,"to":1977,"id":8764}], // c.1977 Motobecane US, specifications pp.10-11.
     'black': null, // Colour alone names no maker/model; 1986 Falcon specs 16332/16352 must not inherit 1996 Sachs SC 40 Black.
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
-    "sedisport chain": [{ from: 1984, to: 1984, id: 8765 }],
+    "sedisport chain": [{"bike":"Grand Record","from":1985,"to":1985,"id":8765},{"bike":"Mirage","from":1985,"to":1985,"id":8765},{"bike":"Nomade","from":1985,"to":1985,"id":8765},{"bike":"Le Velo","from":1985,"to":1985,"id":8765},{ from: 1984, to: 1984, id: 8765 }],
     "sedisport silver chain": [{ from: 1984, to: 1984, id: 8765 }],
     "sedisport black chain": [{ from: 1984, to: 1984, id: 8765 }],
     // 1980-85 Miyata 600 UG chains (2026-11-16 rows-already-exist pass): pin-plate colour picks the row.
@@ -4890,6 +4908,7 @@ const COMPONENT_OVERRIDES = {
     'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
+    "tubular wolber corsa 265gm": [{"bike":"Grand Record","from":1985,"to":1985,"id":6911}], // 1985 Motobecane general catalogue p.6; brand notes.
     "michelin bib sport 27x1 hp gumwall": [{"bike":"Mirage Sport","from":1983,"to":1983,"id":null}], // 1983 Motobecane US Volume2, pp.14-15; brand notes.
     "michelin 27x1 bib sport hp gumwall": [{"bike":"Mirage Sport","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     "michelin bib 25 27x1": [{"bike":"Super Mirage","from":1983,"to":1983,"id":null},{"bike":"Super Mirage","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
@@ -5031,6 +5050,8 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    "rigida 27 inch alloy (15 21)": [{"bike":"Mirage","from":1985,"to":1985,"id":5154}], // 1985 Motobecane general catalogue p.6; brand notes.
+    "wolber 700c arc en ciel anodized 345gm": [{"bike":"Grand Record","from":1985,"to":1985,"id":5180}], // 1985 Motobecane general catalogue p.6; brand notes.
     "mavic module e2 700c rims small spoke protector": [{"bike":"Prolight","from":1983,"to":1983,"id":null},{"bike":"Prolight","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     "mavic ssc black anodized heat treated rims stainless steel aci spokes chromed nipples": [{"bike":"Team Champion","from":1983,"to":1983,"id":null},{"bike":"Team Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     "rigida 13 20 alloy rims huret spoke protector": [{"bike":"Grand Record","from":1983,"to":1983,"id":9895},{"bike":"Jubilee Sport","from":1982,"to":1982,"id":9894},{"bike":"Grand Record","from":1982,"to":1982,"id":9895}], // 1982 Motobecane US, pp.14-15; brand notes.
