@@ -1,5 +1,486 @@
 # Cross-catalog notes catalogs processed so far
 
+<a id="branford-complete-component-catalogue--prepared-2026-11-19"></a>
+
+## Branford complete component catalogue — applied and validated 2026-11-19
+
+**Applied and validated after explicit user approval.** New components **11793–11819**,
+Aerosport brand **725**, Grip Shift brand **726**.
+The earlier [tyre pass](#branford-tyre-tables-reconciliation--applied-2026-11-19)
+remains applied. Reused source **471**, label “Branford Bike Spring/Summer catalogue
+(1990)”, US, and expanded its citation to include the remaining component pages.
+[Original PDF](https://timslife.com/brancat/Catalogs/bb1990-01.pdf), printed
+1990 Spring/Summer, 36 PDF pages, retained at
+`/tmp/branford-acquisition-20261119/branford-1990-spring-summer.pdf`.
+This is period retailer evidence of configurations/availability, not proof of
+manufacturing introduction or discontinuation. Retailer Part # codes are not
+promoted to maker model codes.
+
+### Coverage
+
+All 36 PDF pages are accounted for. Components: pp.12–13 hubs/posts/aero bars/
+wheels/shifters; p.14 custom component-package matrix; pp.15–18 Campagnolo and
+Shimano; p.19 bars/stems; p.20 saddles/pedals; p.21 freewheels/chains;
+pp.22–23 tyres (already applied); pp.24–25 rims/custom wheels; p.26 replacement
+chainrings/service parts; PDF p.34 Cinelli geometry chart. Pages 1–11,27–33,35–36
+contain blank/editorial/order material, clothing, frames/forks, tools, transport,
+care/accessories or electronics outside existing component categories. Page33's
+introductory brand mentions add no independently identifiable component.
+Custom bike-build matrices are combinations of chosen parts, not factory bicycle
+models; no bike catalogue or manufacturer wheelset is invented from them.
+
+The complete non-tyre inventory has **213 mentions**, including repeated package
+choices/configurations, **not 213 unique components**. Its full page/specification/
+disposition ledger is retained below. The source PDF is retained. Task extraction,
+SQL, helper and snapshot files were removed after readback, the zero-change rerun
+and mapping/duplicate validation; material prior values remain in these notes.
+
+### Applied changes
+
+**27 new components, 30 existing-row updates, two new brands, seven category/
+brand registrations, one source-citation expansion.** No merges, deletions,
+CSV edits, generator changes or bike-spec writes. New brands: **Aerosport**
+(printed heading; also AEROSPORTS on photographed branding; not Aerospoke) and
+**Grip Shift**. Existing maker mappings: Profile for Speed → Profile Design94;
+Sun Metal → Sun517; HED → HED.664. Grip Shift ownership is not inferred from this
+retailer page. New category registrations: American Classic/Seat Posts,
+Profile Design/Seat Posts and Handlebars, Aerosport/Handlebars and Seat Posts and
+Wheel(sets), Grip Shift/Shifters.
+
+New rows use source471 and fixed UUID load keys. Dates express attestation;
+all are1990–1990 except Accel1989–1990, explicitly described as used in1989 racing.
+
+| ID / title | Category / group | Pages | Dates | Fixed UUID | Applied description |
+| --- | --- | --- | --- | --- | --- |
+| 11793 American Classic Classic Seatpost (alloy) | Seat Posts / NULL | 12 | 1990–1990 | ef24cf58-d472-44da-a23e-97335c35eb90 | Heat-treated alloy post, one-bolt micro-adjust cradle; 200mm/168g or reinforced 300mm/290g. Diameters 25.0/26.0/26.6/27.0/27.2/27.4mm; silver anodised or gloss-black epoxy finish. |
+| 11794 Profile Design Aero Pro SP | Seat Posts / NULL | 12 | 1990–1990 | 8af77cd0-eb44-47c5-a0db-8a9443ab6373 | Forward-offset aero seatpost; moves saddle up to50mm forward for aero-bar use, allowing up to90deg effective seat angle. Silver; 26.8/27.0/27.2mm. USA. |
+| 11795 Aerosport Carbon TT | Handlebars / NULL | 12 | 1990–1990 | 2c093b4f-2beb-4542-adf7-a4dc9aaa8a85 | Carbon-fibre time-trial handlebar, 40cm, 120g; internal cable routing, accepts clip-on bars; gloss-black wrapped carbon finish. |
+| 11796 Aerosport Carbon Ultra-light | Seat Posts / NULL | 12 | 1990–1990 | 8f55ae3c-87fc-4772-915d-9af31ee6c3db | Carbon-fibre seatpost, 300mm, 135g; one-bolt saddle adjustment, can be cut to length.25.0/26.8/27.0/27.2mm; flat-black carbon-wrap finish. |
+| 11797 Aerosport Trialist | Wheel(sets) / NULL | 13 | 1990–1990 | 8806b241-c7f5-426d-ada3-a99f822d0c68 | Compression disc with Kevlar faces/Nomex honeycomb core; sealed high-flange alloy QR hub, replaceable hard-anodised 6061 rim.700C rear 1040g, black/white; 26in front/rear 830g, white; tubular. |
+| 11798 Aerosport Accel | Wheel(sets) / NULL | 13 | 1989–1990 | dff9a6c9-92a8-4969-8875-8b5ac12d6871 | Tensioned Kevlar disc for road/track, front/rear options; natural finish. Listed weights:700C710g, 26in525g, 24in408g. Used by top finishers at the1989 World Triathlete Championships. |
+| 11799 HED CX Pro | Wheel(sets) / NULL | 13,25 | 1990–1990 | d95afb3c-b52a-4374-b7dd-aa248f116b97 | Carbon-rim wheel built with American Classic hub and DT bladed spokes; 840g.16 spokes for mass starts/rear, 12 for time trials/triathlon.700C and 26in listed. USA. |
+| 11800 Grip Shift Pro | Shifters / NULL | 13,18 | 1990–1990 | 4e06e56a-968a-4dfc-a1ec-2eccbc27e605 | Indexed twist shifter with smaller profile and 20% less rotation; replaceable foam grips in six colours. Fits all bar types; cables/instructions included. Order by bar type, rear derailleur and 6/7/8-speed configuration. |
+| 11801 Profile Design Aero I | Handlebars / NULL | 19 | 1990–1990 | d5ebc076-3647-4dba-b34a-bc3a37490a60 | Aero bar with flattened drops, pre-drilled for Swift Shift; softer, thicker armrests. Flat black, 425g; fits stems with supplied shims. USA. |
+| 11802 Profile Design Aero II | Handlebars / NULL | 19 | 1990–1990 | 96a36a19-3ea0-4e23-a3d3-7e137bf8f118 | Clip-on aero bar; 7/8/9in c/c widths, flat black, 411g. Softer armcups, lower-position shape, pre-drilled for Swift Shift; deluxe cups, hardware and instructions included. USA. |
+| 11803 Profile Design Aero III | Handlebars / NULL | 19 | 1990–1990 | 74e1fd27-0e3d-470f-b408-046eabe00295 | Professional time-trial aero bar; five hand positions, adjustable deluxe armrests, pre-drilled for Swift Shift. Neon yellow, 480g; fits stems with supplied shims. USA. |
+| 11804 Profile Design Dave Scott Pro | Handlebars / NULL | 19 | 1990–1990 | 4493d67b-c9ed-4da6-bfe6-d9391f02f168 | Time-trial aero bar with airfoil-bladed main bar, adjustable extension and deluxe armrests; Swift Shift included. Height, angle and length adjustable; flat black. USA. |
+| 11805 Assos 16 | Rims / NULL | 24,25 | 1990–1990 | a8c51d87-6209-43e6-aa8c-a035343a785b | Tubular aero rim, 16mm, 290g, 28/32 holes; matte black. Heat-treated aluminium-magnesium triangular extrusion, special alloy nipple system; drilled for specified spoke patterns. Switzerland. |
+| 11806 Assos 18 | Rims / NULL | 24,25 | 1990–1990 | 974703aa-b362-47fc-a693-edb413b9acfa | Tubular aero rim, 18mm, 310g, 32 holes; matte black. Heat-treated aluminium-magnesium triangular extrusion and special alloy nipple system; drilled for specified spoke patterns. Switzerland. |
+| 11807 Sun Mistral 19A | Rims / NULL | 24,25 | 1990–1990 | 91c1ebf5-592b-42c7-8125-83bc64a55447 | Aero tubular rim, 19mm, 310g, 24/28/32 holes; grey. Extruded 6063 aluminium-magnesium-silicon alloy, T6, machined and hard anodised; epoxy-bonded joint.700C wheel builds offered. |
+| 11808 Sun Mistral 17A | Rims / NULL | 24,25 | 1990–1990 | 14cb87f6-abfe-46b1-a4ba-7509c72d2319 | Aero tubular rim, 17mm, grey: standard290g/24-28-32h; 26in250g/18-24-28h; 24in230g/24h.6063 alloy, T6, hard anodised, epoxy-bonded joint. Standard size used in 700C builds. |
+| 11809 Sun Mistral 13L | Rims / NULL | 24,25 | 1990–1990 | 2abb3d7e-5c0a-412d-95c8-ddc6361fc423 | Box-section clincher rim, 19mm, 400g, 32/36 holes; grey. Extruded 6063 aluminium-magnesium-silicon alloy, T6, machined/hard anodised; epoxy-bonded joint. |
+| 11810 Sun Mistral 14A | Rims / NULL | 24 | 1990–1990 | f4b8c92a-1210-4b6e-bc3b-ed3ba2693a26 | Sun Metal Mistral alloy rim marked14-A in the product photograph. Cross-section illustrated beside13-L, 19-A and 17-A; weight, dimensions and drilling are not specified. |
+| 11811 Campagnolo Sigma Pave Chromium | Rims / NULL | 24,25 | 1990–1990 | eefbd35c-245c-4879-bb6b-683f999385f4 | Tubular box-section rim, 22mm, 365g, 32 holes; chromium finish. Supplied for rough-road wheel builds. |
+| 11812 Campagnolo Delta XL Strada | Rims / NULL | 24,25 | 1990–1990 | 8ee5b474-3d46-4008-9b58-68df4a9451a2 | Clincher box-section rim, 22mm, 375g, 32 holes; chromium finish. Listed for rough-road/fast-riding wheel builds. |
+| 11813 Campagnolo C-Record Century Delta | Brakes / 76 | 15 | 1990–1990 | 755d1a9f-c9e7-4b85-b5d6-429cb97debb3 | C-Record Century Delta brakeset with levers and cables; hand-finished and polished, gunmetal bluish-grey anodised finish. Limited-quantity offering. |
+| 11814 Campagnolo C-Record Century front derailleur | Front Derailleurs / 76 | 15 | 1990–1990 | 9cf6e611-bf18-413b-a752-d76e0b1b30f5 | C-Record Century front derailleur, braze-on mounting; hand-finished/polished gunmetal bluish-grey anodised finish. Limited-quantity offering. |
+| 11815 Campagnolo C-Record Century rear derailleur | Rear Derailleurs / 76 | 15 | 1990–1990 | 6957bdb4-1564-49a4-812b-14f7e056679a | C-Record Century rear derailleur; hand-finished/polished gunmetal bluish-grey anodised finish. Limited-quantity offering; precise maker model code not printed. |
+| 11816 Campagnolo C-Record road chainrings | Chainrings / 76 | 15,17,26 | 1990–1990 | dd618f34-df5c-47df-ab60-bb9eb50114fa | Replacement road chainrings for C-Record; 39-54T options. Service list specifically offers39/42/52/53/54T; outer rings also offered with custom hand engraving. |
+| 11817 Campagnolo Croce d'Aune / Chorus chainrings | Chainrings / NULL | 16 | 1990–1990 | ed6e5480-f184-43ca-ac99-201b3ef2db50 | Replacement chainrings listed jointly for Croce d'Aune and Chorus, 39-54T options; other tooth counts available with complete cranksets at extra cost. |
+| 11818 Campagnolo Athena road chainrings | Chainrings / 5 | 17,26 | 1990–1990 | 581b08ff-b31d-4335-b67e-e6765281c118 | Replacement road chainrings for Athena; 42-53T options. Service list specifically offers42/52/53T. |
+| 11819 Sedis Sport Track | Chains / NULL | 21 | 1990–1990 | c9c03e4d-84e5-4287-88f7-0514c7457a34 | Track chain for 1/8in-width cogs; bevelled plates, fully heat treated; 370g. France. |
+
+### Existing rows: applied values
+
+Every changed row received source_ref471 in its guarded update. Unchanged
+corroborations keep their existing provenance. Only3179 is retitled (old title
+and search_text “American Classic”, applied “American Classic Classic Hubs”);
+its search_text is regenerated with the maintained helper. No year_from moves
+later. Other titles, UUIDs, maker/category/group and unlisted fields stay fixed.
+
+| ID / title | Old dates → applied | Prior source_ref | Pages | Applied description |
+| --- | --- | --- | --- | --- |
+| 3179 American Classic | 1980–1980 → 1980–1990 | 1 | 12 | Replaceable sealed-bearing alloy QR hubs; front 200g/rear 250g; 12/16/18/24/28/36 holes. Silver anodised or gloss-black epoxy; 135mm MTB version. Pair or individual hubs; black cam-action skewers offered. |
+| 1481 Campagnolo C-Record Century | 1991–1992 → 1990–1992 | 1 | 15 | C-Record Century crankset; hand-finished/polished gunmetal bluish-grey anodised arms.170/172.5mm; 42x52 or42x53T, other rings optional. Limited-quantity offering. |
+| 1487 Campagnolo Chorus | 1988–1991 → 1988–1991 | 110 | 16,17 | Chorus double, 135BCD, 170/172.5/175mm, 39-54T; 20mm pedal collar; 706/101, C040(C071/C072).692.5g avg measured. Silver-speckled graphite option sold as Chorus Carbon in 1990; 170/172.5mm with 42x52/53T. |
+| 4106 Campagnolo Chorus (short cage, graphite finish) | 1990–1991 → 1990–1991 | 1 | 17 | Short-cage Chorus rear derailleur in silver-speckled graphite finish, sold as Chorus Carbon; 198g listed. Part of the limited-quantity graphite-finish group. |
+| 565 Campagnolo BR-02CH, Chorus Monoplaner | 1987–1993 → 1987–1993 | 311 | 16,17 | BR-02CH Chorus Monoplaner; 395g; 715/100, C500(C051/C052). 1993 reach 40.75-51.2mm. Standard or silver-speckled graphite finish; latter sold as Chorus Carbon with levers/cables in 1990. |
+| 7031 Campagnolo P0071, Sigma Pave | 1991–1992 → 1990–1992 | 17 | 24 | P0071 Sigma Pave:22mm Hardox tubular, 365g, 32/36h, patented double eyelets; 7075T6 in 1992.1990 retail list:22mm, 365g, 32h, grey box section. Dropped from1993 range. |
+| 4970 Campagnolo Sigma Strada | 1987–1993 → 1987–1993 | 343 | 24,25 | P0091 Sigma Strada, 22mm Hardox tubular; manufacturer335g, legacy380g listing.1990 retailer:330g, 28/32h, grey box section; used for racing, criteriums and training. |
+| 4957 Campagnolo Omega 20 (Omega Strada Hardox) | 1988–1995 → 1988–1995 | 22 | 24,25 | Omega20/Omega Strada Hardox; hard-anodised rim.1991 P0171 tubular395g/P0172 clincher430g.1990 Omega Strada Box clincher:20mm, 430g, 32h, matte black.1995 range retains395g tubular/430g clincher. |
+| 4961 Campagnolo Omega Strada "V Profile" | 1988–1995 → 1988–1995 | 22 | 24,25 | Omega Strada V-profile rim; 1991 P0451 tubular395g/P0222 clincher440g, no eyelets.1990 Omega Strada Aero clincher:20mm, 440g, 32h, matte black. Legacy measured average417.5g. |
+| 2802 Cinelli 64 Giro d'Italia (80's model) | 1980–1988 → 1980–1990 | 23 | 19,34 | Mod.64 Giro d'Italia road bar; 142mm drop/78mm reach.38/40cm in 1982, 42cm added c.1984; 1990 lists38/40/42cm and 335g.40cm specimen measured 324g. |
+| 2804 Cinelli 65 Criterium | 1973–1999 → 1973–1999 | 376 | 19,34 | Mod.65 Criterium road bar; earlier maker specs 147mm drop/77mm reach; 38/40cm, 42cm added c.1984.1990 chart:156mm drop/110mm reach, 38/40/42cm, 335g listed.305.5g avg measured; 65/AIR is separate. |
+| 2812 Cinelli 67 Pista | 1980–1996 → 1980–1996 | 357 | 19,34 | Mod.67 Pista track bar, 39cm.1990: 172mm drop/110mm reach, 335g; used with 2A stem. Later1996 maker listing:163mm drop/83mm reach. |
+| 2816 Cinelli 62 Los Angeles | 1980–1999 → 1980–1999 | 353 | 19 | Mod.62 Los Angeles, formerly L. A.84/Texas; cold-bent drawn alloy tube, 40/42cm.1990 LA84 listing:330g; for triathlon/time trials with clip-ons and 24/26in front wheels; horns can be cut to length. |
+| 6489 Cinelli 1A (winged "C" logo) | 1978–1988 → 1978–1990 | 262 | 19 | 1A alloy road stem, winged-C family; 293g avg measured.1982: 22/22.2mm quill, 7-14.5cm.1990: 26.4mm bar clamp, silver, 7-14cm extension, 292g listed. Printed increment wording is inconsistent. |
+| 7097 Cinelli 2A, Pista | 1978–1996 → 1978–1996 | 357 | 19 | 2A alloy track stem; 26.4mm bar clamp, silver; 1990 lengths10/11/12cm, 292g. Earlier listings offer10-13cm. Alloy successor to the steel pista stem. |
+| 6502 Cinelli XA | 1980–2000 → 1980–2000 | 357 | 19 | XA 6000-T6 alloy road stem, steel expander/stainless bolt; 22.2mm quill, 73deg.1990: 26.4mm bar clamp, 80-130mm, satin silver, 274g.1996: 90-135mm, 280g(110mm), black optional. |
+| 5495 Selle Italia L. Turbo (Lady Turbo) | 1980–1988 → 1980–1990 | 422 | 20 | Lady/Women's Turbo: wider back, shorter nose, extra padding, dense urethane pad and buffalo-hide cover; black suede or smooth white.352g measured specimen. |
+| 5563 Selle San Marco Rolls | 1980–1988 → 1980–1990 | 262 | 20 | Rolls saddle; water-buffalo hide over nylon shell/dense urethane pad, hand-polished22kt-gold trim. Black suede or smooth white.1990 retailer267g; prior listing 360g. |
+| 3838 Mavic 646 LMS, SSC | 1990–1991 → 1990–1991 | 121 | 20 | 646 LMS/SSC Look-cleat pedal; sealed/needle bearings, adjustable tension, 9/16x20.1990 dealer:carbon/alu body, 440g pair, 0-10deg lateral float, 32deg cornering. Maker:480g pair, 0-5deg heel movement; legacy496g listing. |
+| 3792 LOOK Carbon PP76 | 1988–1990 → 1988–1990 | 334 | 20 | PP76 Carbon: carbon lever, Calypso alloy body, shortened cold-forged axle, sealed needle/ball bearings; 29deg lean, 0.7-1.2m/kg, black cleat. 217g listed; 439g avg pair measured; 1990 dealer 434g pair, red. Violet PP76/V also offered in 1990. |
+| 10035 LOOK PP96 Carbo Pro | 1990–1990 → 1990–1990 | 334 | 20 | PP96 Carbo Pro; Calypso alloy body, profiled carbon lever, red epoxy, cold-forged axle, ball bearings/labyrinth seal; 200g, 32deg lean, 0.7-1.2m/kg tension. New red ARC cleat gives9deg float; black cleat gives fixed position. |
+| 2156 Regina Extra America (6 speed) | 1980–1980 → 1980–1990 | 1 | 21 | America 6-speed freewheel; matte-silver cogs, splined removal; 375g listed. Syncro compatible; recommended with Regina CX chain. A 15-20T range is listed. |
+| 2160 Regina Extra America Superleggera (6 speed) | 1988–1988 → 1988–1990 | 262 | 21 | America Superleggera 6-speed freewheel; heat-treated alloy cogs on standard America body, black, 275g listed. For light competition wheels; Regina50SL hollow-pin chain recommended. |
+| 2072 Campagnolo aluminum (6 speed) | 1980–1988 → 1980–1990 | 262 | 21 | Six-speed alloy freewheel; heat-treated alloy cogs/body, splined sprockets, 12-28T.1990 retailer175g; 156g measured specimen. Recommended with Regina CX/CXS chain. |
+| 2075 Campagnolo 7 speed narrow | 1988–1991 → 1988–1991 | 110 | 21 | Servizio Corsa Compact 7-speed alloy freewheel; 1990 listed as7-speed narrow, heat-treated alloy cogs/body, 175g family listing. Specimen144g measured with 13-19T. Recommended with Regina CX/CXS chain. |
+| 1401 Sedis Pro | NULL–NULL → 1990–1990 | 1 | 21 | Sedis Sport Pro chain; fully heat treated, nickel plated, bevelled inner plates; for Maillard/SunTour ultra or standard-spaced freewheels.340g listed. France. |
+| 8765 Sedis Sedisport | 1979–1988 → 1979–1990 | 391 | 21 | Sedisport 1/2x3/32 derailleur chain, 114/116links; gold/black/silver, hardened pins, 335g earlier listing; ultra/standard freewheels.1990 Sport Black:surface-heat-treated bevelled inner plates, 330g. |
+| 1384 Regina CX / CX-S | 1980–1992 → 1980–1992 | 190 | 21 | CX/CX-S nickel-plated, fully heat-treated chains; shaped plates, chromized pins.1990 CX339g/CXS325g; CXS curved backplates for ultra7.317.5g avg measured; 1992 CX-S 7.2mm overall, 0.23kg/m, compact7/8-speed. |
+| 1390 Regina Extra Superleggera SL | 1980–1992 → 1980–1992 | 190 | 21 | 50S. L. narrow chain; hollow pins, bevelled heat-treated plates, for Regina alloy6/7-speed freewheels.1990 retailer272g; prior240g listing.1992: 7.2mm overall, 0.19kg/m. Italy. |
+| 1290 Shimano Dura-Ace 7400 | 1985–1998 → 1985–1998 | 1 | 18,26 | Dura-Ace7400 road chainrings; replacement round rings offered 39/42/52/53/54T; general ordering range 39-54T. Distinct from older Dura-Ace and later7700/track rings. |
+
+### Identity and specification decisions
+
+- American Classic3179 is a bare maker-only hub record; enrich its Classic hub
+  family and retain its earlier1980 bucket start. The page says sold since1987;
+  that does not prove a manufacturing introduction. Skewers are replacement
+  hardware, not an independent complete hub.
+- HED CX Pro is an840g built spoked carbon-rim wheel with American Classic hub
+  and DT blades, not disc-wheel6969. Aerosport Accel weights read700C710g,
+  26in525g,24in408g. Trialist configurations are700C rear1040g and26in830g.
+- C-Record Century is explicitly offered in1990; extend crank1481 back from1991
+  and add the named Century Delta/FD/RD configurations. Do not backdate unnamed
+  Century hubs/headsets3239/2953 or conflate Century with990 Century2280/4089 or
+  Centaur2285/4105. No unprinted maker RD code is invented.
+- “Chorus Carbon” is a silver-speckled graphite finish, not carbon-fibre
+  construction. Fold crank/brake options into1487/565 and enrich existing
+  graphite RD4106; preserve692.5g measured crank average and exact1993 brake
+  reach40.75–51.2mm. The graphite front is not sufficiently coded to identify
+  Croce graphite2289 versus Chorus2286: no duplicate front is inserted.
+  Hand engraving/pantographs are custom finishes, not independent components.
+- Cinelli64 maps to1980s26.4 family2802; retain324g actual versus335g retail.
+  Generic66 does not distinguish logo variants2806/2808. Extend1A6489 family
+  evidence without claiming a photographed winged-C logo. Correct2A7097's
+  mislabelled22.2mm bar clamp to the explicitly printed26.4mm; retain earlier
+  10–13cm and distinguish1990 lengths10/11/12cm. XA6502 has26.4mm clamp here,
+  not the separate26.0mm6503 configuration. LA84/Los Angeles/Texas already
+  crosswalks to2816; CI-62 is still a retailer SKU.
+- The1990 geometry chart gives65 reach110/drop156 and67 reach110/drop172mm;
+  retain earlier maker65 reach77/drop147 and later1996 maker67 reach83/drop163
+  as dated differences. The inconsistent1A increment wording is not silently
+  converted into a claimed set of extension lengths.
+- The Rolls page does not print the maker; name and characteristic gold trim
+  identify Selle San Marco5563. Preserve prior360g separately from267g retail.
+  Named Women's Turbo supports5495 and its352g actual, with no new weight
+  inferred. Generic Turbo263g does not distinguish5508/5509/5518; no change.
+- Mavic646 retains maker480g/pair and0–5deg heel movement separately from dealer
+  440g/pair and0–10deg lateral float; weight/measurement conventions may differ.
+  Keep legacy496g. Carbon-lever red PP76 maps to3792, preserving217g listed,
+  439g measured pair and violet PP76/V; dealer434g/pair is separate. Plain3791
+  is not resolved. PP96 maps to10035, not PP196/PP296. PP66 maker245g versus
+  dealer530g/pair is retained as a unit/version difference without overwriting.
+- Sigma Pave Hardox7031 is attested1990 before the1991 maker table. Chromium
+  Pave is a separately listed finish. Delta XL Strada22mm375g chromium remains
+  distinct from old Delta Strada Chromium4959(450g) and Omega XL Hardox4958;
+  do not assume an unprinted cross-name alias. Sun Mistral14-A is a named
+  photograph-only rim; no price, dimensions, weight or drilling are inferred.
+- Regina ordinary6-speed2156 and SL6-speed2160 can be enriched. Seven-speed
+  legacy2157 has a speculative Superleggera qualifier; the ordinary/SL7 and
+  later1992SL2203 crosswalk remains unresolved. Preserve Campagnolo alloy6
+  2072's156g actual versus175g retail and Compact7 narrow2075's144g actual,
+  13–19T. Normal7-speed2073 is unchanged. Maillard Super Course is not a printed
+  700/Plus crosswalk for2125/2127; unbranded West German track cogs gain no maker.
+- Sedis Pro1401 has no prior dates/links: set the attested1990 only. Sedisport
+  8765 retains gold/silver/black variants and earlier335g versus Sport Black330g.
+  Sport Track is370g for1/8in-width cogs; the retailer's “pitch” wording is not
+  converted into an incorrect1/8in chain pitch. Regina CX/CXS1384 and50SL1390
+  retain measured/earlier weights and1992 dimensions alongside1990 figures.
+- Road chainring families are explicitly sold: C-Record39–54T, Croce/Chorus
+  39–54T, Athena42–53T, Dura-Ace7400 replacements39/42/52/53/54T. Do not assign
+  old144BCD Campagnolo753 or later2000 nine/ten-speed identities to these rows,
+  and do not invent unprinted BCDs or manufacturer codes. Swift Shift is a
+  lever-mounting/cable kit, not an independently complete shifter.
+- Previously recorded tyre identity limits and dates remain unchanged.
+
+### Validation
+
+The approved guarded file executed **69 statements**: one source-citation update,
+two brand inserts, seven category/brand inserts,30 component updates and27 inserts,
+plus transaction boundaries. Counts matched exactly. Source471 was reused;
+component rows increased10856→10883. Exact readback matched all57 changed/new
+rows, including descriptions, dates, identity/group, search text and provenance.
+All other component fields/rows and all bikes/specs matched the saved baseline.
+New/retitled search text matches the maintained helper; maximum description242
+characters. A complete rerun affected **zero rows** in every table.
+
+The actual generator/live comparison across **108 loaded CSVs /23,380 specs**
+exactly reproduces the baseline:23365 unchanged and15 pre-existing Huret Rival
+lost matches; no gained/changed mapping, missing spec or ambiguity. Direct before/
+after generator plans also show zero mapping changes. All110 existing links to
+changed rows were checked. No new supported bike link or override emerged, and
+no bike data was written. Prior tyre additions11791/11792 and Oscar X link18354
+remain intact.
+
+Post-load grouped/near/parenthetical duplicate checks expose **no new pair** in
+the57-row affected scope. The existing pairs remain generation, configuration or
+variant distinctions:2800/2802,2801/2802;4106/4107,4106/4108;6487/6489,6488/6489;
+2072/2073;2156/2157;2811/2812;5563/5564;6502/6503. No merge/delete was needed.
+Maker/category/group references and date ordering pass. The single existing
+linked-date flag remains bike_spec14997 (1987 Peugeot PY CA W 'Chorus',
+Campagnolo Chorus42x52 →1487, currently1988–1991); the1990 retailer adds no
+new1987 date evidence, so neither that link nor the bounds were altered.
+No new date conflict appeared.
+
+### Exact prior descriptions
+
+For restoration, retain the old dates/source refs above and these old descriptions.
+Existing UUID, maker/category/group and unlisted fields were not changed.
+The sole former title/search_text was3179 “American Classic”, recorded above.
+
+| ID | Prior description |
+| --- | --- |
+| 3179 | American Classic, United States |
+| 1481 | Campagnolo C-Record Century, Italy |
+| 1487 | Campagnolo Chorus, Italy, 692.5 grams (avg) Chorus brochure (Apr 1988): 706/101, 135 BCD, 170/172.5/175, rings 39-54, 20 mm pedal collar. DPC88: C040 (C071/C072). |
+| 4106 | Campagnolo Chorus (short cage, graphite finish), Italy, 198 grams |
+| 565 | Campagnolo BR-02CH, Chorus Monoplaner, Italy, 395 grams Chorus brochure (Apr 1988): 715/100 brake subgroup, Mono-Planer System. DPC88: C500 (C051/C052). 1993 Range: BR-02CH Monoplaner, 40.75-51.2 mm. |
+| 7031 | Campagnolo P0071, Sigma Pave, Italy, 365 grams (Spec). 22 mm tubular rim, Hardox anodised, 32/36 h, double patented eyelets. Rims catalogue Jan 1991. 1992 Rims Range: 7075 T6. Dropped from the 1993 Range. |
+| 4970 | Campagnolo Sigma Strada, Italy, 380 grams, P0091, 22 mm Hardox tubular, 335 g. |
+| 4957 | Campagnolo Omega Strada Hardox, Italy, 395-430 grams. Hard-anodised clincher rim. Jan 1991 rims catalogue: P0171 tubular 395 g, P0172 clincher 430 g. 1995 range: Omega 20 tubular 395 g and clincher 430 g; Omega 19 and Omega V continue. |
+| 4961 | Campagnolo Omega Strada "V Profile", Italy, 417.5 grams (avg) Jan 1991 rims catalogue: P0451 tubular 395 g, P0222 clincher 440 g, no eyelets. |
+| 2802 | Cinelli 64 Giro d'Italia (80's model), Italy, 324 grams (Actual), for 64-40. Drop 142mm, reach 78mm; 38 or 40 cm in the 1982 Il Grande Ciclismo brochure, 38, 40 or 42 cm in its c. 1984 printing. |
+| 2804 | Cinelli 65 Criterium, Italy, 305.5 grams (avg). Drop 147mm, reach 77mm; 38 or 40 cm in the 1982 Il Grande Ciclismo brochure, 38, 40 or 42 cm in its c. 1984 printing. The 65/AIR Criterium Ovalizzata is the Cinelli Aero. |
+| 2812 | Cinelli 67 Pista, Italy. Track bar, 39 cm, drop 163mm, reach 83mm. |
+| 2816 | Cinelli 62 Los Angeles, Italy. Mod. 62 drop bar in drawn, cold-bent alloy tube, 40 or 42 cm; listed as Mod. 62 Texas in a copy of the Il Grande Ciclismo brochure, as Los Angeles (formerly L.A. 84) in La Bicicletta Guida 88. |
+| 6489 | Cinelli 1A (winged "C" logo), Italy, 293 grams (avg) 1982 Cinelli brochure: 22 and 22.2 mm, 7 to 14.5 cm. |
+| 7097 | Cinelli 2A, Pista, Italy. Alloy track stem, 22.2 mm bar clamp, 10 to 13 cm; the alloy successor to the steel pista stem. Il Grande Ciclismo brochure, 1982. |
+| 6502 | 6000-T6 aluminium alloy road stem with steel expander and stainless bolt, silver anodised (black optional), 90-135 mm extension, 22.2 mm quill, 73 degree, 280 g (110 mm). |
+| 5495 | Selle Italia L. Turbo (Lady Turbo), Italy, 352 grams (Actual) |
+| 5563 | Selle San Marco Rolls, Italy, 360 grams |
+| 3838 | Mavic 646 LMS, SSC, France, 496 grams. Clipless pedal on the Look cleat with the Mavic float system: 0-5 degrees of heel movement, adjustable by degree or lockable; needle and sealed bearings; 9/16 x 20, 480 g the pair. |
+| 3792 | LOOK Carbon PP76, France, 217 g (439 g avg pair measured). Competition pedal, carbon lever, "calypso" alloy body, shortened cold-forged axle on needle / ball bearings, sealed, 29 deg lean, 0.7-1.2 m/kg; red, violet (PP 76/V) in 1990. |
+| 10035 | LOOK PP96 Carbo Pro, France, 200 g. Fourth-generation Look pedal, new design: Calypso alloy body, profiled carbon lever, red epoxy, cold-forged axle on ball bearings, labyrinth seal, 32 deg lean, 0.7-1.2 m/kg; black cleat or new red ARC cleat. |
+| 2156 | Regina Extra America (6 speed), Italy |
+| 2160 | Regina Extra America Superleggera (6 speed), Italy |
+| 2072 | Campagnolo aluminum (6 speed), Italy, 156 grams (Actual). Six sprockets splined on the freewheel body, any range from 12 to 28T. |
+| 2075 | Campagnolo 7 speed narrow, Italy, 144 grams (Actual), 13-19t. The Servizio Corsa Compact 7-speed of the 1988 dealer catalogue. |
+| 1401 | Sedis Pro, France |
+| 8765 | Sedis Sedisport, France. Derailleur chain, 1/2" x 3/32", 114 or 116 links. Gold, black or silver finish, hardened pins, 335 g; for narrow-spaced (ultra) and standard freewheels. |
+| 1384 | Regina CX / CX-S, Italy, 317.5 grams (avg). Narrow index chain with shaped plates and chromized pins for compact 7 and 8 speed freewheels; 50 CX-S 7.2mm overall, 0.23kg/m (1992). |
+| 1390 | Regina Extra Superleggera SL, Italy, 240 grams. Listed in 1992 as the 50 S.L.: 7.2mm overall, 0.19kg/m. |
+| 1290 | Shimano Dura-Ace 7400, Japan |
+
+Prior source471 citation: https://timslife.com/brancat/Catalogs/bb1990-01.pdf (printed/PDF pp.22-23; cover: 1990 Spring/Summer). Oscar X also attested in 1989 Bianchi catalogue, source325, Mondiale specification table.
+
+Applied source471 citation: https://timslife.com/brancat/Catalogs/bb1990-01.pdf (1990 Spring/Summer; 36 PDF pages; components pp.12-26, bar chart PDF p.34). Oscar X also attested in 1989 Bianchi, source325, Mondiale specification table.
+
+<details>
+<summary>Complete non-tyre page inventory and dispositions (213 mentions)</summary>
+
+Printed specifications below are retailer claims; repeated package choices are
+retained as mentions. Numeric IDs now refer to applied database rows. Generic
+package names and unresolved identities retain their reviewed limits.
+
+| Page | Maker / model | Category | Printed specifications | Disposition / IDs |
+| --- | --- | --- | --- | --- |
+| 12 | American Classic Classic Hubs | Hubs | {"drillings":[12,16,18,24,28,36],"front_weight_g":200,"rear_weight_g":250,"finish":["silver anodized","gloss black epoxy powder coat"],"mountain_version":"135 mm"}; Pair described as light, replaceable-bearing hubs; front/rear drilling variants. SKU shown as AC-FH-(drilling, road/mt. bike, color). | updated 3179;  |
+| 12 | American Classic Classic Hubs | Hubs | {"configuration":"single hub; front or rear","drilling":"not stated","finish":"not stated"}; Single hub listing, front or rear. SKU shown as AC-FH-(drilling, color). | updated 3179;  |
+| 12 | American Classic Classic Skewers | Hubs | {"position":["front","rear"],"color":"black"}; Cam-action quick-release skewer; fits all hubs. | out_of_scope ; Replacement/mounting hardware, not a separate complete component. |
+| 12 | American Classic Classic Seatpost | Seat Posts | {"lengths_mm":[200,300],"diameters_mm":[25,26,26.6,27,27.2,27.4],"weight_g":168,"300mm_note":"4 inches taller; thicker wall; 290 g"}; Heat-treated alloy, one-bolt micro-adjusting cradle; silver or gloss-black tough epoxy powdercoat. | added 11793;  |
+| 12 | Profile for Speed Aero Pro SP Seatpost | Seat Posts | {"diameters_mm":[26.8,27,27.2],"silver":true}; Seatpost offsets saddle forward up to 50 mm to allow extended aero bars; tube angle up to 90 degrees; made in USA. | added 11794;  |
+| 12 | Aerosport Carbon TT Handlebars | Handlebars | {"width_cm":40,"finish":"gloss black wrapped carbon fiber"}; Carbon time-trial bars, internal cable routing; accepts all clip-on bars; 120 g. | added 11795;  |
+| 12 | Aerosport Carbon Ultra-light Seatpost | Seat Posts | {"diameters_mm":[25,26.8,27,27.2],"length_mm":300,"weight_g":135,"finish":"flat black carbon wrap"}; Carbon seatpost with one-bolt saddle adjustment; extra-long post can be custom-cut. | added 11796;  |
+| 13 | Aerosport Trialist Compression Disc Wheel | Wheel(sets) | {"wheel_size":"700C","tire":"tubular","position":"rear","colors":["black","high-gloss white"],"weight_g":1040}; Compression disc wheel; bonded to alloy quick-release road hub; replaceable heat-treated hard-anodized rim. | added 11797;  |
+| 13 | Aerosport Trialist Compression Disc Wheel | Wheel(sets) | {"wheel_size":"26 inch","tire":"tubular","position":["front","rear"],"color":"high-gloss white","weight_g":830}; Compression disc wheel. | added 11797;  |
+| 13 | Aerosport Accel Tensioned Disc Wheel | Wheel(sets) | {"sizes_and_weights":"700C710g;26in525g;24in408g; front/rear,road/track"}; Tensioned Kevlar disc wheel; road or track versions. | added 11798;  |
+| 13 | Campagnolo Khamsin-Compression Disc Wheel | Wheel(sets) | {"wheel_sizes":["700C","26 inch"],"position":["front","rear"],"use":["road","track"],"color":"white"}; Disc wheel with interchangeable hub axle setup for road/track; heat-treated alloy rim and open-bearing Campagnolo hub. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 13 | HED CX Pro | Wheel(sets) | {"spoke_counts":[16,12],"weight_g":840,"rim":"carbon fiber"}; HED CX wheel: 16 spokes for mass-start/rear wheels; 12 spokes for time-trial/triathlon wheels; fully built with American Classic hub and DT bladed spokes. | added 11799;  |
+| 13 | Grip Shift Grip Shift Pro | Shifters | {"speeds":[6,7,8],"colors":6}; Indexed twist shifters with cables and instructions; 20% less rotation than prior design; fits all handlebars. | added 11800;  |
+| 14 | Campagnolo C Record Engraved | Cranksets | {}; Package table names these crank/BB groups. | custom_finish ; Optional hand engraving/pantograph styles; source does not establish a new mechanical component identity. |
+| 14 | Campagnolo C Record | Cranksets | {}; Package table names these crank/BB groups. | family_corroboration 1482,1485; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Croce D’Aune | Cranksets | {}; Package table names these crank/BB groups. | family_corroboration 1489,1490; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Dura-Ace | Cranksets | {}; Package table names these crank/BB groups. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Chorus | Cranksets | {}; Package table names these crank/BB groups. | unchanged 1487; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 14 | Campagnolo Athena | Cranksets | {}; Package table names these crank/BB groups. | unchanged 1479; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 14 | Multiple brands 600 Ultegra | Cranksets | {}; Package table names these crank/BB groups. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 105 | Cranksets | {}; Package table names these crank/BB groups. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands SGR/Mavic 646 | Pedals | {}; Named pedal selections in component-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Mavic 646 | Pedals | {}; Named pedal selections in component-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Dura-Ace Clipless | Pedals | {}; Named pedal selections in component-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Look 66 | Pedals | {}; Named pedal selections in component-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 105 Clipless | Pedals | {}; Named pedal selections in component-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 600 Ultegra Clipless | Pedals | {}; Named pedal selections in component-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo C Record Engraved | Front Derailleurs | {}; Package matrix identifies group only. | custom_finish ; Optional hand engraving/pantograph styles; source does not establish a new mechanical component identity. |
+| 14 | Campagnolo C Record | Front Derailleurs | {}; Package matrix identifies group only. | unchanged 2283; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 14 | Campagnolo Croce D’Aune | Front Derailleurs | {}; Package matrix identifies group only. | family_corroboration 2288,2289; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Dura-Ace | Front Derailleurs | {}; Package matrix identifies group only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Chorus | Front Derailleurs | {}; Package matrix identifies group only. | family_corroboration 2286,2287; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Athena | Front Derailleurs | {}; Package matrix identifies group only. | unchanged 2281; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 14 | Multiple brands 600 Ultegra | Front Derailleurs | {}; Package matrix identifies group only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 105 | Front Derailleurs | {}; Package matrix identifies group only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo C Record Engraved | Shifters | {}; Package matrix identifies group/shift type only. | custom_finish ; Optional hand engraving/pantograph styles; source does not establish a new mechanical component identity. |
+| 14 | Campagnolo C Record | Shifters | {}; Package matrix identifies group/shift type only. | family_corroboration 5969,5970,5971; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Croce D’Aune | Shifters | {}; Package matrix identifies group/shift type only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Dura-Ace | Shifters | {}; Package matrix identifies group/shift type only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Chorus Friction | Shifters | {}; Package matrix identifies group/shift type only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 600 Ultegra 7sp | Shifters | {}; Package matrix identifies group/shift type only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 105 7sp | Shifters | {}; Package matrix identifies group/shift type only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Delta Engraved | Brakes | {}; Package matrix identifies group only. | custom_finish ; Optional hand engraving/pantograph styles; source does not establish a new mechanical component identity. |
+| 14 | Multiple brands Delta | Brakes | {}; Package matrix identifies group only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Croce D’Aune | Brakes | {}; Package matrix identifies group only. | unchanged 567; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 14 | Multiple brands Dura-Ace SLR | Brakes | {}; Package matrix identifies group only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Chorus | Brakes | {}; Package matrix identifies group only. | unchanged 565; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 14 | Campagnolo Athena | Brakes | {}; Package matrix identifies group only. | family_corroboration 557,558; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 600 Ultegra | Brakes | {}; Package matrix identifies group only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 105 | Brakes | {}; Package matrix identifies group only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo C Record Engraved | Seat Posts | {}; Package matrix identifies group only. | custom_finish ; Optional hand engraving/pantograph styles; source does not establish a new mechanical component identity. |
+| 14 | Campagnolo C Record | Seat Posts | {}; Package matrix identifies group only. | family_corroboration 5737,5738; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Croce D’Aune | Seat Posts | {}; Package matrix identifies group only. | unchanged 5742; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 14 | Multiple brands Dura-Ace | Seat Posts | {}; Package matrix identifies group only. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Chorus | Seat Posts | {}; Package matrix identifies group only. | unchanged 5742; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 14 | Campagnolo Athena | Seat Posts | {}; Package matrix identifies group only. | family_corroboration 5736,5742; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Chorus | Seat Posts | {}; Package matrix identifies group only. | unchanged 5742; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 14 | Selle San Marco Rolls | Saddles | {}; Named saddle option in the custom component package matrix. | updated 5563; Maker inferred from named Rolls and characteristic gold-trim construction; page itself does not print maker. |
+| 14 | Multiple brands Turbo | Saddles | {}; Named saddle option in the custom component package matrix. | unresolved 5508,5509,5518; Unlabelled Turbo listing and263g claim do not distinguish existing Turbo/early/SLG variants. |
+| 14 | Selle San Marco Rolls | Saddles | {}; Named saddle choices in wheel-package matrix. | updated 5563; Maker inferred from named Rolls and characteristic gold-trim construction; page itself does not print maker. |
+| 14 | Multiple brands Turbo | Saddles | {}; Named saddle choices in wheel-package matrix. | unresolved 5508,5509,5518; Unlabelled Turbo listing and263g claim do not distinguish existing Turbo/early/SLG variants. |
+| 14 | Campagnolo C Record | Hubs | {}; Named hub/group choices in wheel-package matrix. | family_corroboration 3240,3241,3242,3243; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Croce D’Aune | Hubs | {}; Named hub/group choices in wheel-package matrix. | unchanged 3251; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 14 | Multiple brands Dura-Ace Cassette 8 | Hubs | {}; Named hub/group choices in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Chorus | Hubs | {}; Named hub/group choices in wheel-package matrix. | family_corroboration 3249,3250; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Campagnolo Athena | Hubs | {}; Named hub/group choices in wheel-package matrix. | family_corroboration 3236,3237; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 600 Cassette 7sp | Hubs | {}; Named hub/group choices in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 105 | Hubs | {}; Named hub/group choices in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Record Pave | Rims | {}; Named rims in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Strada Hardbox | Rims | {}; Named rims in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Mistral 17-A | Rims | {}; Named rims in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Sun Metal Mistral 19-A | Rims | {}; Named rims in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Sun Metal Mistral 13-L | Rims | {}; Named rims in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Continental Comp. 240 | Tyres | {}; Named tires in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Continental Sprinter | Tyres | {}; Named tires in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Continental Sprinter 250 | Tyres | {}; Named tires in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Continental Super Sport 18 | Tyres | {}; Named tires in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Continental Super Sport 20 | Tyres | {}; Named tires in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Regina America 7sp | Freewheels | {}; Named freewheel/cassette selections in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Maillard 6 or 7sp | Freewheels | {}; Named freewheel/cassette selections in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Dura-Ace Cassette 8sp | Freewheels | {}; Named freewheel/cassette selections in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 600 Cassette 7sp | Freewheels | {}; Named freewheel/cassette selections in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 105 Cassette 7sp | Freewheels | {}; Named freewheel/cassette selections in wheel-package matrix. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Regina CXS | Chains | {}; Package table lists chain choices; no item codes or detail. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Sedis Pro | Chains | {}; Package table lists chain choices; no item codes or detail. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands Dura-Ace | Chains | {}; Package table lists chain choices; no item codes or detail. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 600 | Chains | {}; Package table lists chain choices; no item codes or detail. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 14 | Multiple brands 105 | Chains | {}; Package table lists chain choices; no item codes or detail. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 15 | Campagnolo Century Crankset | Cranksets | {"arm_lengths_mm":[170,172.5],"chainring_teeth":["42-52","42-53"]}; C Record Century group; bluish-gray anodized metal finish. Other chainring sizes available at surcharge. | updated 1481;  |
+| 15 | Campagnolo Century Delta Brakeset | Brakes | {}; Century Delta brakeset supplied with levers and cables. | added 11813;  |
+| 15 | Campagnolo Century Front Derailleur | Front Derailleurs | {"mount":"braze-on"}; Century group front derailleur. | added 11814;  |
+| 15 | Campagnolo Century Rear Derailleur | Rear Derailleurs | {}; Century group rear derailleur. | added 11815;  |
+| 15 | Campagnolo C Record Crankset | Cranksets | {"arm_lengths_mm":[165,170,172.5,175,180],"chainring_teeth":["42-52","42-53"]}; Crankset; other chainring sizes available at surcharge. | family_corroboration 1482,1485; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 15 | Campagnolo C Record Chainrings | Chainrings | {"teeth_range":[39,54]}; Replacement/alternate C Record chainrings. | added 11816;  |
+| 15 | Campagnolo C Record Bottom Bracket | Bottom Brackets | {"threadings":["British","Italian"]}; Bottom bracket. | unchanged 23; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 15 | Campagnolo C Record Rear Derailleur | Rear Derailleurs | {};  | unchanged 4133; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 15 | Campagnolo C Record Front Derailleur | Front Derailleurs | {"mounts":["braze-on","clamp-on"]};  | unchanged 2283; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 15 | Campagnolo C Record Synchro II Shift Levers | Shifters | {"insert":"with or without"}; Synchro II shift levers; insert option. | family_corroboration 5969,5970,5971; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 15 | Campagnolo C Record Retro-Friction Deluxe Shift Levers | Shifters | {}; Retro-friction deluxe shift levers. | family_corroboration 5969,5970,5971; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 15 | Campagnolo SGR Clipless Pedals | Pedals | {}; Clipless pedals supplied with cleats and hardware. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 15 | Campagnolo C Record Hubset | Hubs | {"drillings":[28,32]}; Hubset sold as pair. | family_corroboration 3240,3241,3242,3243; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 15 | Campagnolo C Record Delta Brakes | Brakes | {}; Delta brakes supplied with levers and cables. | family_corroboration 560,579; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 15 | Campagnolo C Record Seatpost | Seat Posts | {"diameters_mm":[25,26.8,27,27.2]};  | family_corroboration 5737,5738; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 15 | Campagnolo C Record Headset | Headsets | {"threadings":["British","Italian"]};  | unchanged 2954; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 16 | Campagnolo Croce D’Aune Crankset | Cranksets | {"arm_lengths_mm":[170,172.5],"chainring_teeth":["42-52","42-53"]}; Other chainring sizes available at surcharge. | family_corroboration 1489,1490; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 16 | Campagnolo Croce D’Aune / Chorus Chainrings | Chainrings | {"teeth_range":[39,54]};  | added 11817;  |
+| 16 | Campagnolo Croce D’Aune Bottom Bracket | Bottom Brackets | {"threadings":["British","Italian"]};  | unchanged 27; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 16 | Campagnolo Croce D’Aune Rear Derailleur | Rear Derailleurs | {}; Twin-axle design, described as very fast shifting. | family_corroboration 4111,4112; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 16 | Campagnolo Croce / Chorus / Athena Front Derailleur | Front Derailleurs | {"mounts":["braze-on","clamp-on"]}; Shared listing for Croce, Chorus and Athena groups. | family_corroboration 2286,2287; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 16 | Campagnolo Croce / Chorus / Athena Standard Friction Shift Levers | Shifters | {"mount":"braze-on only"};  | family_corroboration 5976,7027; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 16 | Campagnolo Croce D’Aune Hubset | Hubs | {"drilling":32};  | unchanged 3251; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 16 | Campagnolo Croce D’Aune Delta Brakes | Brakes | {"style":"Croce"}; Croce-style Delta brakes. | unchanged 567; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 16 | Campagnolo Croce D’Aune / Chorus / Athena Seatpost | Seat Posts | {"diameters_mm":[25,26.8,27,27.2]};  | unchanged 5742; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 16 | Campagnolo Croce D’Aune / Chorus Headset | Headsets | {}; Shared headset listing. | unchanged 7028; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 16 | Campagnolo Chorus Crankset | Cranksets | {"arm_lengths_mm":[170,172.5,175],"chainring_teeth":["42-52","42-53"]}; Other chainring sizes available at surcharge. | unchanged 1487; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 16 | Campagnolo Chorus Bottom Bracket | Bottom Brackets | {"threadings":["British","Italian"]};  | unchanged 25; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 16 | Campagnolo Chorus Rear Derailleur | Rear Derailleurs | {"design":"two-position; A&B"};  | family_corroboration 4106,4107,4108; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 16 | Campagnolo Chorus Hubset | Hubs | {"drilling":32};  | family_corroboration 3249,3250; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 16 | Campagnolo Chorus Brakes | Brakes | {}; Sidepull brakes supplied with levers and cables. | unchanged 565; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 17 | Campagnolo Chorus Carbon Crankset | Cranksets | {"arm_lengths_mm":[170,172.5],"chainring_teeth":["42-52","42-53"]}; Chorus group version with silver-speckled graphite finish. | updated 1487;  |
+| 17 | Campagnolo Chorus Carbon Brakeset | Brakes | {}; Brakes supplied with levers and cables; silver-speckled graphite finish. | updated 565,220; Graphite finish added to existing Monoplaner family; levers already record graphite option. |
+| 17 | Campagnolo Chorus Carbon Rear Derailleur | Rear Derailleurs | {};  | updated 4106;  |
+| 17 | Campagnolo Chorus Carbon Front Derailleur | Front Derailleurs | {"mount":"braze-on only"};  | unresolved 2286,2289; Finish/shared-front offering does not supply exact code/group crosswalk to existing Croce graphite front2289; no duplicate front inserted. |
+| 17 | Campagnolo Athena Chainrings | Chainrings | {"teeth_range":[42,53]};  | added 11818;  |
+| 17 | Campagnolo Athena Bottom Bracket | Bottom Brackets | {"threadings":["British","Italian"]};  | family_corroboration 21,22; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 17 | Campagnolo Athena Rear Derailleur | Rear Derailleurs | {};  | unchanged 4092; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 17 | Campagnolo Croce / Chorus / Athena Front Derailleur | Front Derailleurs | {"mounts":["braze-on","clamp-on"]};  | family_corroboration 2286,2287; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 17 | Campagnolo Croce / Chorus / Athena Standard Friction Shift Levers | Shifters | {"mount":"braze-on only"};  | family_corroboration 5976,7027; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 17 | Campagnolo Athena Hubset | Hubs | {"drilling":32};  | family_corroboration 3236,3237; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 17 | Campagnolo Athena Brakes | Brakes | {}; Brakes supplied with levers and cables. | family_corroboration 557,558; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 17 | Campagnolo Croce D’Aune / Chorus / Athena Seatpost | Seat Posts | {"diameters_mm":[25,26.8,27,27.2]};  | unchanged 5742; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 17 | Campagnolo Athena Headset | Headsets | {}; Headset listing, SKU text appears truncated. | unchanged 2952; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 17 | Campagnolo C Record Engraved Seatpost | Seat Posts | {"diameter_mm":27.2}; Hand engraved; engraving styles include Campagnolo, Somec or Maza. | custom_finish ; Optional hand engraving/pantograph styles; source does not establish a new mechanical component identity. |
+| 17 | Campagnolo C Record Engraved Rear Derailleur | Rear Derailleurs | {}; Hand engraved; style choice Campagnolo, Somec or Maza. | custom_finish ; Optional hand engraving/pantograph styles; source does not establish a new mechanical component identity. |
+| 17 | Campagnolo C Record Engraved Front Derailleur | Front Derailleurs | {"mount":"braze-on only"}; Hand engraved. | custom_finish ; Optional hand engraving/pantograph styles; source does not establish a new mechanical component identity. |
+| 17 | Campagnolo C Record Engraved Deluxe Retro-Friction Shift Levers | Shifters | {"mount":"braze-on only"}; Anatomically curved, hand-engraved levers. | custom_finish ; Optional hand engraving/pantograph styles; source does not establish a new mechanical component identity. |
+| 17 | Campagnolo C Record Engraved Delta Brakes | Brakes | {}; Delta brakes and levers; custom hand engraving. | custom_finish ; Optional hand engraving/pantograph styles; source does not establish a new mechanical component identity. |
+| 17 | Campagnolo C Record Engraved Crankset | Cranksets | {"arm_length_mm":170,"chainrings":"42/53"}; Custom hand engraving; engraving styles include Campagnolo, Somec or Maza. | custom_finish ; Optional hand engraving/pantograph styles; source does not establish a new mechanical component identity. |
+| 17 | Campagnolo C Record Engraved Outer Ring | Chainrings | {"teeth":[52,53]}; Hand engraved outer chainring. | custom_finish ; Custom hand engraving of existing outer rings; not a distinct maker model. |
+| 18 | Shimano Dura-Ace Crankset | Cranksets | {"arm_lengths_mm":[170,172.5,175],"chainring_teeth":["42-52","42-53"],"speeds":[7,8]}; New/improved 1990 group described with hyperglide cassettes and superglide chainrings; available 7- or 8-speed. | family_corroboration 1820,1823; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 18 | Shimano Dura-Ace Chainrings | Chainrings | {"teeth_range":[39,54]}; Superglide chainrings. | updated 1290; 7400-series road replacement rings, no shop-code-to-maker-code inference. |
+| 18 | Shimano Dura-Ace Bottom Bracket | Bottom Brackets | {"threadings":["British","Italian"]};  | family_corroboration 132,7196; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 18 | Shimano Dura-Ace Rear Derailleur | Rear Derailleurs | {"speeds":[6,7,8]};  | unchanged 4505; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 18 | Shimano Dura-Ace Front Derailleur | Front Derailleurs | {"mounts":["braze-on","clamp-on"]};  | unchanged 2511; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 18 | Shimano Dura-Ace Shift Levers | Shifters | {"speeds":[7,8]};  | family_corroboration 6164,6165,6166; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 18 | Shimano Dura-Ace Clipless Pedals | Pedals | {}; LOOK-style clipless pedals, supplied with cleats. | family_corroboration 3970,3971; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 18 | Shimano Dura-Ace Hubset | Hubs | {"versions":["standard freewheel, 32 hole","cassette, 7 or 8 speed, 32 hole"]};  | family_corroboration 3560,3561,3562,3563,3565,7207,7208; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 18 | Shimano Dura-Ace SLR Sidepull Brakes | Brakes | {};  | family_corroboration 991,992; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 18 | Shimano Dura-Ace Seatpost | Seat Posts | {"shape":"round","diameter_mm":27.2};  | family_corroboration 5893,5894; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 18 | Shimano Dura-Ace Headset | Headsets | {};  | family_corroboration 3099,3103; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 18 | Shimano 600 Ultegra Crankset | Cranksets | {"arm_length_mm":172.5,"chainrings":"Biopace 42-52/53"}; 600 Ultegra group crankset. | family_corroboration 1788,1789,1790; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 18 | Shimano 600 Ultegra Bottom Bracket | Bottom Brackets | {"threadings":["British","Italian"]};  | unchanged 125; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 18 | Shimano 600 Ultegra Rear Derailleur | Rear Derailleurs | {};  | unchanged 4466; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 18 | Shimano 600 Ultegra Front Derailleur | Front Derailleurs | {"mounts":["braze-on","clamp-on"]};  | unchanged 2478; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 18 | Shimano 600 Ultegra Shift Levers | Shifters | {"speeds":7,"type":"indexed"};  | unchanged 6144; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 18 | Shimano 600 Ultegra Clipless Pedals | Pedals | {}; LOOK-style clipless pedals. | family_corroboration 3958,3959,3979; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 18 | Shimano 600 Ultegra Hubset | Hubs | {"version":"7-speed cassette"};  | family_corroboration 3534,7565; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 18 | Shimano 600 Ultegra Brakes | Brakes | {}; Complete with levers and cables. | unchanged 966; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 18 | Shimano 600 Ultegra Headset | Headsets | {};  | family_corroboration 3087,3088; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 19 | Profile Aero I | Handlebars | [{"finish":"flat black","weight_g":425,"fit":"all stems; shims included"}]; Redesigned flattened drops for improved power and handling; pre-drilled for Swift Shift; improved softer, thicker arm rests. | added 11801;  |
+| 19 | Profile Aero II Clip-on | Handlebars | [{"width_in":"7, 8, 9 (center-to-center)","weight_g":411,"finish":"flat black","fit":"invertible; pre-drilled for Swift Shift; cups and hardware included"}]; Clip-on aero bars; 22% lighter; supplied with deluxe cups, hardware and instructions. | added 11802;  |
+| 19 | Profile Aero II Replacement Bars | Handlebars | [{"width_in":"7, 8, 9","finish":"flat black","supply":"bar only"}]; Replacement bars for Aero II; upgrade for Swift Shift or width change. | out_of_scope ; Replacement/mounting hardware, not a separate complete component. |
+| 19 | Profile Aero III | Handlebars | [{"weight_g":480,"finish":"neon yellow","fit":"all stems; shims included"}]; Time-trial bar with five hand positions, adjustable deluxe armrests and Swift Shift drilling; USA. | added 11803;  |
+| 19 | Profile Dave Scott Pro | Handlebars | [{"finish":"flat black","adjustability":"height, angle and extension length adjustable"}]; Aero system with ultralight stem, airfoil-bladed main bar, adjustable extension bar, deluxe armrests and Swift Shift; USA. | added 11804;  |
+| 19 | Cinelli Model 64 | Handlebars | [{"width_cm":[38,40,42],"weight_g":335,"reach_cm":7.8,"drop_cm":14.2}]; Casual riding bar with small drops and generous space on top; Italy. | updated 2802;  |
+| 19 | Cinelli Model 65 | Handlebars | [{"width_cm":[38,40,42],"weight_g":335,"reach_cm":11,"drop_cm":15.6}]; Criterium bar designed mainly for riding on the drops; moderate drop and shallow curve-like top; Italy. | updated 2804;  |
+| 19 | Cinelli Model 66 | Handlebars | [{"width_cm":[40,42,44],"weight_g":340,"reach_cm":9,"drop_cm":15.6}]; Deep-drop road racing/touring bar with generous space on top and multiple hand positions; Italy. | unchanged 2806; Generic66 corroboration; source does not resolve logo variants, so no variant-specific weight/date update. |
+| 19 | Cinelli Model 67 | Handlebars | [{"width_cm":39,"weight_g":335,"reach_cm":11,"drop_cm":17.2}]; Track bar, deep drop and fully curved top; intended for use with 2-A track stem; Italy. | updated 2812;  |
+| 19 | Cinelli LA 84 | Handlebars | [{"width_cm":[40,42],"weight_g":330,"fit":"clip-on bars and 24- or 26-inch front wheels"}]; Long-horn time-trial bar, originally used in 1984 Olympics; horns designed to be cut to size; Italy. | updated 2816;  |
+| 19 | Cinelli 1-A | Stems | [{"length_cm":"7–14 in even-centimeter increments (printed; stated endpoints conflict with increment rule)","weight_g":292,"clamp_diameter_mm":26.4,"finish":"silver satin"}]; Popular lightweight stem with solid creak-free clamping mechanism; sizes stated as even-centimeter increments. | updated 6489;  |
+| 19 | Cinelli 2-A | Stems | [{"length_cm":[10,11,12],"weight_g":292,"clamp_diameter_mm":26.4,"finish":"silver"}]; Like 1-A with a 2 cm deeper drop for track use. | updated 7097;  |
+| 19 | Cinelli XA | Stems | [{"length_cm":[8,9,10,11,12,13],"weight_g":274,"clamp_diameter_mm":26.4,"finish":"soft satin silver anodized"}]; Trim aerodynamic stem, creak-free vs recessed-bolt 1-R; lengths in 1 cm increments. | updated 6502;  |
+| 20 | Selle Italia Turbo | Saddles | [{"weight_g":263,"cover":"buffalo hide","finish":"suede black or smooth white"}]; Racing saddle with aero shape, padded nose and durable buffalo hide cover; Italy. | unresolved 5508,5509,5518; Unlabelled Turbo listing and263g claim do not distinguish existing Turbo/early/SLG variants. |
+| 20 | Selle Italia Women's Turbo | Saddles | [{"cover":"buffalo hide","finish":"suede black or smooth white","fit":"wider rear, extra padding, shorter nose"}]; Women's Turbo with dense urethane pad and anatomically shaped wider back; Italy implied by adjacent line. | updated 5495; Named women's Turbo form; maker inferred, not printed on page. |
+| 20 | Selle San Marco Rolls | Saddles | [{"weight_g":267,"cover":"full-grain water buffalo hide","shell":"resilient nylon","padding":"dense shock-absorbing urethane","trim":"hand-polished 22 kt gold accents","finish":"suede black or smooth white"}]; Premium saddle with resilient nylon shell, dense urethane pad and buffalo-hide cover; Italy. | updated 5563; Maker inferred from named Rolls and characteristic gold-trim construction; page itself does not print maker. |
+| 20 | Mavic 646 | Pedals | [{"weight_g":440,"rotation_deg":"0–10 lateral pedal-body adjustment","body":"carbon composite/aluminum","bearings":"sealed, maintenance-free","release_tension":"adjustable","cleats":"standard LOOK cleats included","cornering_deg":32}]; Clipless pedal; France. | updated 3838;  |
+| 20 | LOOK 96 | Pedals | [{"cleat":"red included; accepts standard black cleats without rotation","rotation_deg":9,"release_tension":"adjustable","cornering_deg":32}]; Clipless pedal, lighter/slimmer/easier to use than earlier model; France. | updated 10035;  |
+| 20 | LOOK 76 | Pedals | [{"weight_g":434,"turn_angle_deg":29,"clip":"carbon fiber","body":"light alloy","cleats":"black included","release_tension":"adjustable"}]; Clipless pedal with sealed bearings; France. | updated 3792;  |
+| 20 | LOOK 66 | Pedals | [{"weight_g":530,"body":"white alloy","clip":"red Delrin","turn_angle_deg":29,"cleats":"black included","release_tension":"adjustable"}]; Classic white clipless pedal, complete with black cleats; France. | unchanged 3789; Maker245g and retailer530g listed weight bases differ; preserve maker row without replacing it. |
+| 20 | Campagnolo SGR | Pedals | []; Campagnolo SGR pedals are said to be listed with Campagnolo gruppos. | unchanged 3694; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
+| 20 | Shimano Dura-Ace | Pedals | []; Shimano Dura-Ace pedals said to be listed with Shimano gruppos. | family_corroboration 3970,3971; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 20 | Shimano 600 Ultegra | Pedals | []; Shimano 600 Ultegra pedals said to be listed with Shimano gruppos. | family_corroboration 3958,3959; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 21 | Maillard Super Course | Freewheels | [{"speed":6,"weight_g":350,"finish":"bright silver, heat-treated cro-mo cogs","removal":"two-prong Suntour-style"},{"speed":7,"variant":"Ultra 7"}]; Durable freewheel; recommended with Sedis PRO chain; not recommended for Syncro shifters. | unresolved 2125,2127; Super Course is not a printed700 code or Plus crosswalk; no arbitrary merger/date assignment. |
+| 21 | Regina America | Freewheels | [{"speed":6,"weight_g":375},{"speed":7,"variant":"Ultra 7"},{"speed":6,"range":"15–20 teeth"}]; Matte silver cogs with simple splined removal system; 7-speed version compatible with Regina CXS chain; Italy. | partially updated 2156,2157; Update ordinary6-speed2156; do not resolve ambiguous7-speed2157 from its speculative Superleggera qualifier. |
+| 21 | Regina America SL | Freewheels | [{"speed":6,"weight_saving_g":100,"body":"traditional America body","weight_g":275},{"speed":7,"variant":"Ultra 7"}]; Aluminum alloy upgrade with over 100 g saved; intended for special-occasion lightweight wheels; Italy. | partially updated 2160,2157,2203; Update6-speed SL2160;7-speed legacy2157/1992SL2203 crosswalk remains unresolved. |
+| 21 | Campagnolo Record (alloy freewheel; catalog heading Campagnolo) | Freewheels | [{"speed":6,"weight_g":175},{"speed":7,"variant":"narrow; spare cogs sold separately"}]; Alloy freewheel with furnace-heat-treated cogs and body; high-mileage life claim; Italy. | updated 2072,2075; Standalone6 and7-speed-narrow configurations; preserve normal7-speed2073 separately. |
+| 21 | Shimano Dura-Ace | Freewheels | [{"speed":6,"weight_g":410},{"speed":7}]; Twisted-tooth freewheel intended for Dura-Ace chain and SIS components; semi-sealed to block dirt and water; Japan. | family_corroboration 2221,2222; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 21 | Shimano Dura-Ace cassette | Cassettes | [{"speed":6},{"speed":7},{"speed":8}]; Heat-treated cro-moly steel cassette for Ultegra or Dura-Ace hubs; 8-speed cassette requires 8-speed hub; 6/7-speed cassettes interchangeable. | family_corroboration 1204,1205,1208,7561; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 21 | Sedis Sport Pro | Chains | [{"weight_g":340,"plates":"fully heat-treated and nickel-plated","compatibility":"Maillard and Sun Tour freewheels; Ultra or regularly spaced freewheels"}]; Special beveled inner plates mesh well with listed freewheels; France. | updated 1401;  |
+| 21 | Sedis Sport Black | Chains | [{"weight_g":330,"plates":"beveled inner plates, surface heat-treated"}]; Economy chain recommended with economy freewheel; France. | updated 8765;  |
+| 21 | Regina CX | Chains | [{"weight_g":339,"finish":"nickel plated, fully heat treated"}]; For Regina or Campagnolo six-speed freewheels; Italy. | updated 1384;  |
+| 21 | Regina CXS | Chains | [{"weight_g":325,"speed":7,"plates":"special curved backplates"}]; Seven-speed ultra freewheel chain; recommended with Regina or Campagnolo 6/7-speed freewheels; Italy. | updated 1384;  |
+| 21 | Sedis Sport Track | Chains | [{"weight_g":370,"pitch_in":"1/8","plates":"beveled, fully heat treated"}]; Track chain for 1/8-inch pitch cogs; France. | added 11819;  |
+| 21 | Regina 50 SL | Chains | [{"weight_g":272,"pin":"hollow; saves about 70 g","plates":"beveled, heat treated"}]; Chain for Regina alloy freewheels; compatible with Regina SL or seven-speed freewheels; Italy. | updated 1390;  |
+| 21 | Shimano Dura-Ace | Chains | [{"weight_g":345,"finish":"nickel plated, fully heat treated"}]; For Shimano twisted-tooth freewheels and cassettes; Japan. | family_corroboration 1412,1413,1414; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 21 | Unspecified Steel heat-treated track cog | Single Sprockets | [{"pitch_in":"3/32","teeth":"13–21","use":"road chain"},{"pitch_in":"1/8","teeth":"12–20"}]; Heat-treated hardened-steel track cogs; intended for track hubs and also road hubs when coasting is not required; West Germany. | unresolved ; Steel track cogs are unbranded; West Germany does not establish a maker. |
+| 24 | ASSOS 16 | Rims | [{"type":"tubular","width_mm":16,"weight_g":290,"drilling":[28,32],"section":"aero","finish":"matte black"}]; Aluminum-magnesium alloy tubular rim; specially shaped/extruded and heat-treated; drilled for specific spoke patterns. | added 11805;  |
+| 24 | ASSOS 18 | Rims | [{"type":"tubular","width_mm":18,"weight_g":310,"drilling":[32],"section":"aero","finish":"matte black"}]; Aluminum-magnesium alloy tubular rim; drilled for specific spoke patterns. | added 11806;  |
+| 24 | Campagnolo Sigma Pave Chromium | Rims | [{"type":"tubular","width_mm":22,"weight_g":365,"drilling":[32],"section":"box","finish":"chromium"}]; Tubular rim; table groups under Campagnolo. | added 11811;  |
+| 24 | Campagnolo Sigma Pave Hardox | Rims | [{"type":"tubular","width_mm":22,"weight_g":365,"drilling":[32],"section":"box","finish":"gray"}]; Tubular rim; table groups under Campagnolo. | updated 7031;  |
+| 24 | Campagnolo Sigma Strada | Rims | [{"type":"tubular","width_mm":22,"weight_g":330,"drilling":[28,32],"section":"box","finish":"gray"}]; Tubular rim; table groups under Campagnolo. | updated 4970;  |
+| 24 | Sun Metal Mistral 19A | Rims | [{"type":"tubular","width_mm":19,"weight_g":310,"drilling":[24,28,32],"section":"aero","finish":"gray"}]; Extruded 6063 aluminum-magnesium-silicon alloy, T6 heat treated, machined and ultra-hard anodized; epoxy bonded rim joint. | added 11807;  |
+| 24 | Sun Metal Mistral 17A | Rims | [{"type":"tubular","diameter_in":700,"width_mm":17,"weight_g":290,"drilling":[24,28,32],"section":"aero","finish":"gray"},{"type":"tubular","diameter_in":26,"width_mm":17,"weight_g":250,"drilling":[18,24,28],"section":"aero","finish":"gray"},{"type":"tubular","diameter_in":24,"width_mm":17,"weight_g":230,"drilling":[24],"section":"aero","finish":"gray"}]; Sun Metal tubular rim family, extruded 6063 aluminum-magnesium-silicon alloy, T6 heat treated, machined and ultra-hard anodized; epoxy bonded joint. | added 11808;  |
+| 24 | Campagnolo Omega Strada Box | Rims | [{"type":"clincher","width_mm":20,"weight_g":430,"drilling":[32],"section":"box","finish":"matte black"}]; Clincher rim. | updated 4957;  |
+| 24 | Campagnolo Omega Strada Aero | Rims | [{"type":"clincher","width_mm":20,"weight_g":440,"drilling":[32],"section":"aero","finish":"matte black"}]; Clincher rim. | updated 4961;  |
+| 24 | Campagnolo Delta XL Strada | Rims | [{"type":"clincher","width_mm":22,"weight_g":375,"drilling":[32],"section":"box","finish":"chromium"}]; Clincher rim. | added 11812;  |
+| 24 | Sun Metal Mistral 13L | Rims | [{"type":"clincher","width_mm":19,"weight_g":400,"drilling":[32,36],"section":"box","finish":"gray"}]; Clincher rim; Sun Metal alloy rim family. | added 11809;  |
+| 25 | Branford Bike (retailer-built; component makers listed below) Handbuilt wheel packages | Wheel(sets) | [{"type":"tubular 700C","rim":"HED CX Pro","hub":"Classic","spokes":"DT Blades","drilling":"F 12/16, R 16","lacing":"F radial, R radial/1-cross","usage":"triathlon/time trial","price":"$388.00 each"},{"type":"tubular 700C","rim":"ASSOS 16mm","hub":"Classic","spokes":"DT Blades","drilling":"28/28","lacing":"F radial, R radial/1-cross","usage":"triathlon/time trial","price":"$349.88 pair"},{"type":"tubular 700C","rim":"ASSOS 16mm","hub":"Classic","spokes":"DT 14/15/14","drilling":"32/32","lacing":"3-cross/3-cross","usage":"smooth-road racing","price":"$319.88 pair"},{"type":"tubular 700C","rim":"ASSOS 18mm","hub":"Classic","spokes":"DT 14/15/14","drilling":"32/32","lacing":"3-cross/3-cross","usage":"rough-road racing","price":"$319.88 pair"},{"type":"tubular 700C","rim":"Campagnolo Sigma Pave (Chromium or Hardox)","hub":"Classic or C Record","spokes":"DT 14/15/14","drilling":"32/32","lacing":"3-cross/3-cross","usage":"rough road","price":"$299.88 pair"},{"type":"tubular 700C","rim":"Campagnolo Sigma Strada","hub":"Classic or C Record","spokes":"DT 14/15/14","drilling":"32/32","lacing":"3-cross/3-cross","usage":"road racing, criteriums, training","price":"$279.88 pair"},{"type":"tubular 700C","rim":"Sun Metal Mistral 17-A","hub":"Classic","spokes":"DT Blades","drilling":"F 18/24, R 24/28","lacing":"F radial, R radial/1-cross","usage":"triathlon/time trial","price":"$249.88 pair"},{"type":"tubular 700C","rim":"Sun Metal Mistral 17-A","hub":"Classic","spokes":"DT 14/15/14","drilling":"32/32","lacing":"3-cross/3-cross","usage":"smooth-road racing, criteriums","price":"$219.88 pair"},{"type":"tubular 700C","rim":"Sun Metal Mistral 19-A","hub":"Classic or Chorus","spokes":"DT 14/15/14","drilling":"32/32","lacing":"3-cross/3-cross","usage":"rough roads, training","price":"$199.88 pair"},{"type":"tubular 24 or 26 inch","rim":"HED CX Pro 26-inch","hub":"Classic","spokes":"DT Blades","drilling":"F 12/16, R 16","lacing":"F radial, R radial/1-cross","usage":"triathlon/time trial","price":"$388.88 each"},{"type":"tubular 24 or 26 inch","rim":"Sun Metal Mistral 17-A, 24 or 26 inch","hub":"Classic","spokes":"DT Blades","drilling":"F 18/24, R 24","lacing":"F radial, R radial/1-cross","usage":"triathlon/time trial","price":"$119.88 each"},{"type":"clincher","rim":"Campagnolo Omega Box","hub":"Classic or Chorus","spokes":"DT 14/15/14","drilling":"32/32","lacing":"3-cross/3-cross","usage":"rough roads, training","price":"$179.88 pair"},{"type":"clincher","rim":"Campagnolo Omega Aero","hub":"Classic or Chorus","spokes":"DT 14/15/14","drilling":"32/32","lacing":"3-cross/3-cross","usage":"racing, training","price":"$189.88 pair (OCR/table print appears 'or'; likely pair price)"},{"type":"clincher","rim":"Campagnolo Delta XL","hub":"Classic or Chorus","spokes":"DT 14/15/14","drilling":"32/32","lacing":"3-cross/3-cross","usage":"rough roads, fast riding","price":"$229.88 pair"},{"type":"clincher","rim":"Sun Metal Mistral 13L","hub":"Classic or Chorus","spokes":"DT 14/15/14","drilling":"32/32","lacing":"3-cross/3-cross","usage":"rough roads, general riding","price":"$159.88 pair"}]; Retailer handbuilt package configurations; catalog states custom/rebuilt wheels can be made from customer-selected components at $17.50 labor per wheel. | retailer_builds ; Retain original component combinations; do not invent manufacturer wheelset identities from custom builds. |
+| 26 | Campagnolo C Record chainrings | Chainrings | [{"teeth":[39,42,52,53,54],"availability":"in stock; other sizes special order"}]; Replacement chainrings for Campagnolo C Record; page states 39, 42, 52, 53 and 54 tooth sizes in stock. | added 11816;  |
+| 26 | Campagnolo Athena chainrings | Chainrings | [{"teeth":[42,52,53],"availability":"in stock; other sizes special order"}]; Replacement chainrings for Campagnolo Athena; page states 42, 52 and 53 tooth sizes in stock. | added 11818;  |
+| 26 | Shimano Dura-Ace chainrings | Chainrings | [{"teeth":[39,42,52,53,54],"shape":"round","availability":"in stock; other sizes special order"}]; Replacement round chainrings for Shimano Dura-Ace; page states 39, 42, 52, 53 and 54 tooth sizes in stock. | updated 1290; 7400-series road replacement rings, no shop-code-to-maker-code inference. |
+| 17 | Campagnolo Athena Crankset | Cranksets | {"arm_lengths_mm":[170,172.5],"rings":"42x52/53T"}; Athena double crankset; other rings at surcharge. | family_corroboration ; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
+| 24 | Sun Metal Mistral 14A | Rims | {"photo_marking":"14-A"}; Named in the rim cross-section product photograph; not in the price table. | added 11810;  |
+
+</details>
+
 ## Branford tyre tables reconciliation — applied 2026-11-19
 
 **Applied and validated after explicit user approval.** Source **471**;
@@ -7,8 +488,9 @@ Oscar X **11791**, Flash M21mm **11792**. Scope: printed/PDF pp.22–23 of
 [Branford Bike Spring/Summer 1990](https://timslife.com/brancat/Catalogs/bb1990-01.pdf).
 Both pages were visually read together: p.22 gives models/specifications; p.23
 continues the same rows with casing construction and comments. The cover dates
-the US retailer catalogue. Other Branford component pages and Colorado Cyclist
-sheets remain separate work.
+the US retailer catalogue. The other Branford pages are now covered by the
+[applied full-catalogue reconciliation](#branford-complete-component-catalogue--applied-and-validated-2026-11-19);
+Colorado Cyclist sheets remain separate work.
 
 Applied: one catalogue source, **two tyre additions, ten existing-row updates
 and one bike-spec link**. No existing titles/search text change, no merges or
