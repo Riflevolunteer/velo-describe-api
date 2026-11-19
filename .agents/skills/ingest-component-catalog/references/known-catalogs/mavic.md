@@ -4,20 +4,20 @@
 
 Source: [36-page PDF](https://www.bikecatalogs.com/download/3659), mirrored from
 [Disraeli Gears](https://www.disraeligears.co.uk/site/mavic_catalogue_1994.html).
-Cover explicitly prints CATALOGUE1994 F: edition1994, French market. This is
-separate from ZMS brochure/source305. Registered source **480**, `Mavic Catalogue, French edition (1994)`, countryFR,
+Cover explicitly prints CATALOGUE 1994 F: edition 1994, French market. This is
+separate from ZMS brochure/source 305. Registered source **480**, `Mavic Catalogue, French edition (1994)`, countryFR,
 after confirming no equivalent full-edition source existed.
 
 Read all product tables pp.8–31, technology/finish pp.4–6 and cover/index.
-Pp.16–17:3G/Comete and complete cartridge hubs;18–21:ZMS8000/800;
-22–31:hubs, cranks, BBs, headsets, brakes, derailleurs, shifters and aero bars.
+Pp.16–17: 3G/Comete and complete cartridge hubs; 18–21: ZMS8000/800;
+22–31: hubs, cranks, BBs, headsets, brakes, derailleurs, shifters and aero bars.
 Exclude cover/blank/index pp.1–3, rim photo p.7, tools/consumables p.32,
 blank notes/blank pp.33–35, imprint/address p.36 and exploded-diagram spares.
 Complete replacement hub cartridges are included as Hubs, not loose spares.
 
-Applied55 existing updates and14 additions on explicit user approval; no merges
+Applied 55 existing updates and 14 additions on explicit user approval; no merges
 or deletions. Catalogue
-years are attestations, not launch/end dates. New rows use1994–1994 and fresh
+years are attestations, not launch/end dates. New rows use 1994–1994 and fresh
 stable UUIDs. Existing later end attestations and independent actual/average
 weights are preserved. Only changed rows acquire this catalogue's source_ref.
 Original changed fields are retained in the restoration baseline below.
@@ -25,32 +25,32 @@ Task SQL and comparison scratch files were removed after successful validation.
 
 Important decisions:
 
-- Retitle6970 from `Mavic 3G Carbon (tri-spoke rear)` to `Mavic 3G Carbon`,
+- Retitle 6970 from `Mavic 3G Carbon (tri-spoke rear)` to `Mavic 3G Carbon`,
  with corresponding search_text. The same wheel works front/rear through
- cartridge changes; bare700/650 wheels weigh760/700g. Add1994 attestation.
-- Enrich6972 Comete with1994 990g bare700c tubular/18mm rim, preserving its
- earlier and1997 configurations. Do not conflate bare and complete weights.
--3399 501 maker table explicitly gives130mm rear convertible to127mm by
- removing a3mm spacer; old description's126mm is corrected.3404 571/2 gains
+ cartridge changes; bare 700/650 wheels weigh 760/700g. Add 1994 attestation.
+- Enrich 6972 Comete with 1994 990g bare 700c tubular/18mm rim, preserving its
+ earlier and 1997 configurations. Do not conflate bare and complete weights.
+- 3399 501 maker table explicitly gives 130mm rear convertible to 127mm by
+ removing a 3mm spacer; old description's 126mm is corrected. 3404 571/2 gains
  detailed front/rear construction and weights; HG is a separate coded row.
--1192 cassette retains earlier4.8/5.0mm pitch as earlier specifications;
-1994 specifies4.85mm.9973 ZMS800 gains materials and240g derailleur/95g
- controls weights.4348 and6088 are kept separate: no specimen identity proof
- warrants merging them or assigning6088 the1994 controls weight/generation.
--631/2 p.24 is explicitly a new offset-arm generation, also named in p.18
- group composition. Add it separately; keep generic631 row1645 and its
- earlier730/835g configurations/reported723g. No invented632 code.
--8193 Paris-Roubaix SSC21.5mm is width, not height; height12.7mm.
--5102 Open SUP CD loses the Ceramic configuration from its description;
- existing10598 independently represents Ceramic. No merge.
--316/317 headsets print155/145g in1994 versus145/155g in the c.1990 manual:
- keep both with edition qualifiers. Likewise qualify differing305,870/872,
-840/841 and821 weights and rim-edition weights without inventing revisions.
-- Keep generic217 row9977 as a family with later1997 data; add explicit217D
- SBP/TIB double-eyelet450g configurations separately from single-eyelet410g.
--2410's31.8mm clamp remains unsupported. No CXP30/Open Pro appears. Do not
- date650c Mach2 Ceramic5083 from the700c Ceramic column. Other protected
- configurations5083/9971/9972/10185/10186/8149 are unchanged.
+- 1192 cassette retains earlier 4.8/5.0mm pitch as earlier specifications;
+1994 specifies 4.85mm. 9973 ZMS 800 gains materials and 240g derailleur/95g
+ controls weights. 4348 and 6088 are kept separate: no specimen identity proof
+ warrants merging them or assigning 6088 the 1994 controls weight/generation.
+- 631/2 p.24 is explicitly a new offset-arm generation, also named in p.18
+ group composition. Add it separately; keep generic 631 row 1645 and its
+ earlier 730/835g configurations/reported 723g. No invented 632 code.
+- 8193 Paris-Roubaix SSC 21.5mm is width, not height; height 12.7mm.
+- 5102 Open SUP CD loses the Ceramic configuration from its description;
+ existing 10598 independently represents Ceramic. No merge.
+- 316/317 headsets print 155/145g in 1994 versus 145/155g in the c.1990 manual:
+ keep both with edition qualifiers. Likewise qualify differing 305, 870/872,
+840/841 and 821 weights and rim-edition weights without inventing revisions.
+- Keep generic 217 row 9977 as a family with later 1997 data; add explicit 217D
+ SBP/TIB double-eyelet 450g configurations separately from single-eyelet 410g.
+- 2410's 31.8mm clamp remains unsupported. No CXP30/Open Pro appears. Do not
+ date 650c Mach 2 Ceramic 5083 from the 700c Ceramic column. Other protected
+ configurations 5083/9971/9972/10185/10186/8149 are unchanged.
 
 ### Applied additions and material changes
 
@@ -132,49 +132,49 @@ each applied description and preservation of other fields.
 
 ### Application and validation
 
-Applied at **2026-11-19T19:35:52Z**, source480. Loader affected exactly one source,
-55 existing components and14 component inserts. A second execution affected
+Applied at **2026-11-19T19:35:52Z**, source 480. Loader affected exactly one source,
+55 existing components and 14 component inserts. A second execution affected
 zero sources, updates or inserts. No merges/deletions or bike-link writes.
 
-Full-row readback verified all55 updates and14 additions against the approved
+Full-row readback verified all 55 updates and 14 additions against the approved
 fields, including country/source, UUIDs, titles/search text, categories/groups,
-dates and untruncated descriptions. All192 other pre-existing Mavic rows were
+dates and untruncated descriptions. All 192 other pre-existing Mavic rows were
 unchanged in every exported component field. No dangling bike-component links;
-all41 live specs using affected records retained their exact targets.
+all 41 live specs using affected records retained their exact targets.
 
-Actual post-load generator/live comparison covered109 loaded catalogues /
+Actual post-load generator/live comparison covered 109 loaded catalogues /
 23,410 paired specs. Its complete summary and findings were identical to the
-immediate pre-load baseline:23,395 unchanged, the same15 pre-existing lost
+immediate pre-load baseline: 23,395 unchanged, the same 15 pre-existing lost
 matches, zero gains, changed targets or missing/ambiguous identities. Thus no
 new links or matcher/CSV changes were needed for these catalogue additions.
-The3G retitle and all new titles were included in both simulation and actual
-comparison. Longest stored replacement description245 characters, within255.
+The 3G retitle and all new titles were included in both simulation and actual
+comparison. Longest stored replacement description 245 characters, within 255.
 
-The ordinary Mavic duplicate report retained the same13 pair identities and
-classifications (6 configuration,5 generation,2 reviewed variants). Near-name
+The ordinary Mavic duplicate report retained the same 13 pair identities and
+classifications (6 configuration, 5 generation, 2 reviewed variants). Near-name
 review exposed two additional pairs, both explicitly separate interfaces:
 
-- **3404 /12101**, p.23:571/2 Mavic CB cassette interface versus571/2 HG
+- **3404 / 12101**, p.23: 571/2 Mavic CB cassette interface versus 571/2 HG
  Hyperglide interface. Same mechanical family, separately sold interfaces;
  keep separate, no merge.
-- **12104 /12105**, p.17:AR572/2 Mavic cassette cartridge versusAR572/2 HG
+- **12104 / 12105**, p.17: AR 572/2 Mavic cassette cartridge versus AR 572/2 HG
  Hyperglide cartridge. Keep separate, no merge.
 
 Recorded both pairs in `REVIEWED_NOT_DUPLICATES` in `duplicate-classify.js`.
 The follow-up near report had zero unresolved Mavic candidates. Existing
 reviewed pairs remain separate. No matching rules or API logic changed.
 
-The completed1994 application action was removed from TODO;1995 and the later
+The completed 1994 application action was removed from TODO; 1995 and the later
 catalogue backlog remain. Removed this task's scan download, renders, SQL,
 transcriptions, review table, query snapshots, validation scripts and reports
 after retaining source/page URLs, IDs, decisions and original values here.
 
 ### Restoration baseline
 
-Only restore deliberately, guarded by the applied source480 and approved new
-fields above. These JSON lines record the original changed fields for all55
+Only restore deliberately, guarded by the applied source 480 and approved new
+fields above. These JSON lines record the original changed fields for all 55
 updated rows (source_ref, description, and dates/title/search_text where changed).
-New rows12095–12108 and source480 are independently evidenced catalogue data;
+New rows 12095–12108 and source 480 are independently evidenced catalogue data;
 restoring an older row does not imply deleting those records.
 
 ```jsonl
@@ -386,33 +386,33 @@ confirmed available editions still needing a full reconciliation:
 
 | Edition | Available source | Work already recorded | Remaining scope |
 | --- | --- | --- | --- |
-| 1999 GB Rims & Wheels | [Complete scan](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf) | Source374, CC9 and selected road/touring rim corrections | Inventory and reconcile all remaining product panels, including wheels, MTB rims and hubs |
+| 1999 GB Rims & Wheels | [Complete scan](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf) | Source 374, CC9 and selected road/touring rim corrections | Inventory and reconcile all remaining product panels, including wheels, MTB rims and hubs |
 | 1999 Mektronic launch catalogue | [Archive listing](https://www.bikecatalogs.com/document/3661) | No equivalent source or ingestion entry found | Obtain and inspect the separate launch catalogue, then reconcile its supported components |
-| 2000 GB catalogue | [24-page PDF](https://www.bikecatalogs.com/download/3662) | Source478, Open Pro p.14 date correction only | Reconcile the rest of the catalogue |
-| 2001 USA retailer catalogue | [28-page PDF](https://www.bikecatalogs.com/download/3663) | Source479, Open Pro p.22 date correction only | Reconcile the rest of the catalogue |
+| 2000 GB catalogue | [24-page PDF](https://www.bikecatalogs.com/download/3662) | Source 478, Open Pro p.14 date correction only | Reconcile the rest of the catalogue |
+| 2001 USA retailer catalogue | [28-page PDF](https://www.bikecatalogs.com/download/3663) | Source 479, Open Pro p.22 date correction only | Reconcile the rest of the catalogue |
 
 The 1994 and 1995 full catalogues are now applied and validated above.
 Remaining order: 1999 GB/Mektronic, 2000, 2001. Earlier full
 editions can refine existing component identities and dates before moving
 through the later wheel ranges. This is a work order, not approval of an
 unreviewed DB change set. The historical sections below record substantial
-reconciliation for84/85,86/87,88/89,90/91 and1997, plus the earlier catalogues
+reconciliation for 84/85, 86/87, 88/89, 90/91 and 1997, plus the earlier catalogues
 and smaller leaflets; none needs reopening solely because its present-day
 source_ref usage is low.
 
 Checked the archive descriptions of three additional listings directly:
 
 - [1992 Components Catalog](https://www.bikecatalogs.com/document/2529)
-  is explicitly the six-page trilingual **Les92** leaflet, matching source304
+  is explicitly the six-page trilingual **Les 92** leaflet, matching source 304
   and the processed inventory below. Do not add it as a new full catalogue.
-- The1999 Mektronic listing describes a19-page launch catalogue; it is
-  distinct from the1999 GB Rims & Wheels source374. Listing metadata and
+- The 1999 Mektronic listing describes a 19-page launch catalogue; it is
+  distinct from the 1999 GB Rims & Wheels source 374. Listing metadata and
   source absence were checked; the launch PDF itself is not yet transcribed.
 - [2009 Bike Systems ES](https://www.bikecatalogs.com/document/5801)
   is also listed, with no matching registered source/ingestion record. Its
-  description says26 pages rebuilt from Scribd renders and dates it from the
+  description says 26 pages rebuilt from Scribd renders and dates it from the
   title. It remains a later-period candidate requiring edition/scope checks;
-  it is not part of the recommended1994–2001 batch. The linked2002 technical
+  it is not part of the recommended 1994–2001 batch. The linked 2002 technical
   manual and undated service sheets are supplementary technical sources,
   not automatically additional complete component-catalogue ingestions.
 
@@ -471,9 +471,9 @@ were discarded after validation; original URLs/page evidence are retained above.
 ## CXP30 and Open Pro weight attribution — 2026-11-19, applied
 
 Reviewed live **5062/5063/10199/10607** (CXP30) and **5099/5100/10183**
-(Open Pro), all ten photographs on the original5062/5099/5100 listings, the
-1997 maker road spread, 1999 GB maker pp.20–21, and Guida1996 p.120 /
-Guida1999 p.106. All seven rows have zero bike links; no generator override
+(Open Pro), all ten photographs on the original 5062/5099/5100 listings, the
+1997 maker road spread, 1999 GB maker pp.20–21, and Guida 1996 p.120 /
+Guida 1999 p.106. All seven rows have zero bike links; no generator override
 references these component IDs. The current Mavic duplicate report flags only
 5062/5063 among them, correctly as tubular/clincher configurations. The initial
 review was read-only; the two description corrections below were subsequently
@@ -481,24 +481,24 @@ approved and applied. No source, matcher, duplicate-registry or bike-link change
 
 ### Two description corrections are supported
 
-- **Open Pro5099:** [the original weight list](https://www.velobase.com/Pages/ViewComponent.aspx?ID=D12D1B63-2FD3-4768-99D0-4893540FE62A)
+- **Open Pro 5099:** [the original weight list](https://www.velobase.com/Pages/ViewComponent.aspx?ID=D12D1B63-2FD3-4768-99D0-4893540FE62A)
   explicitly contains **435g Spec** and **445g Actual**, both submitted by
-  ThermionicScott. Its displayed440g is the arithmetic average of those two
+  ThermionicScott. Its displayed 440g is the arithmetic average of those two
   entries, not an average of two independently weighed rims. This supersedes
-  the earlier notes' treatment of440g as an independent specimen mean. Preserve
-  **445g as a reported actual weight** and keep435g separately attributed as a
+  the earlier notes' treatment of 440g as an independent specimen mean. Preserve
+  **445g as a reported actual weight** and keep 435g separately attributed as a
   specification; neither establishes a dated production variant. Applied
   replacement description (165 characters):
   `Mavic Open Pro, France. Reported actual weight 445 g; separately listed specification 435 g. Clincher rim with welded joint and double eyelets; blue/silver finishes.`
-- **CXP30 tubular5062:** [the original listing](https://www.velobase.com/Pages/ViewComponent.aspx?ID=FB4424AC-C610-462B-8174-56506478D1AA)
+- **CXP30 tubular 5062:** [the original listing](https://www.velobase.com/Pages/ViewComponent.aspx?ID=FB4424AC-C610-462B-8174-56506478D1AA)
   says **500g** without an Actual/Spec qualifier or weighing photograph. Do not
-  describe it as an independently measured500g specimen. Its photographs show
+  describe it as an independently measured 500g specimen. Its photographs show
   a silver tubular, SUP/UB Control decal, loose profiled inserts/tool, and
   fitting instructions. [Damon Rinard's measurement table](https://sheldonbrown.com/rinard/weights.htm)
   independently distinguishes **473g actual without washers** from **500g
   claimed** for a CXP30 tubular. This makes weighing basis a concrete remaining
   question; it does not prove these entries describe the same physical rim,
-  that500g includes inserts, or that473+inserts equals a catalogue value.
+  that 500g includes inserts, or that 473+inserts equals a catalogue value.
   Applied replacement description (210 characters):
   `700c aero tubular rim, SUP joint, UB Control brake tracks and profiled inserts; 465 g maker specification (1997), 24/28/32/36 holes, silver or titanium. A separate 500 g listing has no stated measurement basis.`
 
@@ -508,30 +508,30 @@ User approved with “apply”. Two guarded `component_detail.description` UPDAT
 changed exactly **two rows**; the idempotency rerun changed **zero rows**.
 Exact readback confirms both descriptions above and every other column unchanged,
 including titles, search text, source UUIDs, provenance, image, category/group,
-date bounds and zero bike references. Source_ref remains357 on5062 and1 on5099;
+date bounds and zero bike references. Source_ref remains 357 on 5062 and 1 on 5099;
 the distinct maker/listing weight attributions are documented above. Both new
-descriptions fit255 characters. No new component/source rows or identity merges.
+descriptions fit 255 characters. No new component/source rows or identity merges.
 
-Generator/live comparison across108 loaded catalogue CSVs /23,380 specs is
-identical before/after:23,365 unchanged, zero gains or changed targets and the
-same15 pre-existing lost matches; no missing/ambiguous rows. The comparison
+Generator/live comparison across 108 loaded catalogue CSVs / 23,380 specs is
+identical before/after: 23,365 unchanged, zero gains or changed targets and the
+same 15 pre-existing lost matches; no missing/ambiguous rows. The comparison
 findings themselves match exactly, not just counts. Whole-DB quality findings
-also match exactly: zero errors and the same1,985 review findings. Only description
+also match exactly: zero errors and the same 1,985 review findings. Only description
 text changed, so no code tests were added or repeated. `git diff --check` passes.
 
 Restoration values, captured before application (restore only deliberately,
 guarded by the applied descriptions above):
 
-- **5062**, UUID `FB4424AC-C610-462B-8174-56506478D1AA`, source_ref357,
-  title `Mavic CXP 30 (tubular)`, search text `Mavic CXP 30`, dates1996–1997,
-  brand31/category16/groupNULL. Previous description:
+- **5062**, UUID `FB4424AC-C610-462B-8174-56506478D1AA`, source_ref 357,
+  title `Mavic CXP 30 (tubular)`, search text `Mavic CXP 30`, dates 1996–1997,
+  brand 31/category 16/groupNULL. Previous description:
   `Mavic CXP 30 (tubular), France, 500 grams. Deep-section aero tubular, SUP joint, UB Control sidewalls, 465 g, 24/28/32/36 holes, 700c; silver or titanium. Road racing and triathlon.`
-- **5099**, UUID `D12D1B63-2FD3-4768-99D0-4893540FE62A`, source_ref1,
-  title/search text `Mavic Open Pro`, dates1986–1986,
-  brand31/category16/groupNULL. Previous description:
+- **5099**, UUID `D12D1B63-2FD3-4768-99D0-4893540FE62A`, source_ref 1,
+  title/search text `Mavic Open Pro`, dates 1986–1986,
+  brand 31/category 16/groupNULL. Previous description:
   `Mavic Open Pro, France, 440 grams (avg)` (the space before `(avg)` isU+00A0).
 
-The completed correction action was removed from TODO; the distinct1996
+The completed correction action was removed from TODO; the distinct 1996
 edition/measurement and decal/finish dating gaps below remain open. Applied SQL,
 restoration snapshot, validation helper and comparison/quality baselines were
 removed after exact readback and the zero-change rerun. No pending review SQL.
@@ -541,41 +541,41 @@ removed after exact readback and the zero-change rerun. No pending review SQL.
 - The [1997 manufacturer road spread](https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1997.html),
   inspected at original `/s0/` resolution, prints **465g tubular**, silver or
   titanium, 24/28/32/36H, versus **520g clincher**. [1999 GB maker p.21](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf)
-  again gives465g tubular, silver/28/32/36H, versus550g clincher. Preserve the
+  again gives 465g tubular, silver/28/32/36H, versus 550g clincher. Preserve the
   edition-specific drilling and clincher weights.
-- [Guida1996, scan17 / p.120](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_17_main_image.jpg)
+- [Guida 1996, scan 17 / p.120](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_17_main_image.jpg)
   explicitly places **both Argent and Titane CXP30 under tubulars and prints
   520g for each**. This is not merely a titanium-versus-silver difference.
-  [Guida1999, scan17 / p.106](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_17_main_image.jpg)
-  separately prints465g for the silver tubular and550g for its clincher.
-  A contemporaneous1996 maker specification or a measured bare-rim/inserts
+  [Guida 1999, scan 17 / p.106](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_17_main_image.jpg)
+  separately prints 465g for the silver tubular and 550g for its clincher.
+  A contemporaneous 1996 maker specification or a measured bare-rim/inserts
   comparison is still needed to explain the dealer discrepancy. Do not infer
-  an engineering revision, delete10607's edition-specific520g, or merge the
+  an engineering revision, delete 10607's edition-specific 520g, or merge the
   generic/silver/titanium rows solely from these weights.
-- **Open Pro5099/5100:** all three5099 photos show blue rims and a red/yellow/
-  silver OPEN PRO decal with SUP/UB Control/Maxtal logos. The5100 photo set
+- **Open Pro 5099/5100:** all three 5099 photos show blue rims and a red/yellow/
+  silver OPEN PRO decal with SUP/UB Control/Maxtal logos. The 5100 photo set
   includes a loose dark rim with MAXTAL S.6000/OPEN PRO wording and a built-wheel
   view with a different large yellowSUP layout. Do not assume all photographs
   show a single physical specimen. S6000 alone does not distinguish alloy
-  generations. Preserve5100's independently reported **888g actual pair**;
-  do not replace it with a per-rim catalogue weight or merge it into silver10183.
+  generations. Preserve 5100's independently reported **888g actual pair**;
+  do not replace it with a per-rim catalogue weight or merge it into silver 10183.
 - **Dating:** [1999 GB maker p.20](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf)
-  lists Royal Blue alongside Silver/CD/CDCeramic, 18.4mm height and19.6mm
-  outside width, 425g700c /390g650c /445gCeramic. This corroborates a blue
-  Open Pro option in1999, but does not date5099's exact decal or identify5100's
-  dark finish as CD. The1997 maker spread instead names OpenSUP and Reflex;
+  lists Royal Blue alongside Silver/CD/CDCeramic, 18.4mm height and 19.6mm
+  outside width, 425g 700c / 390g 650c / 445g Ceramic. This corroborates a blue
+  Open Pro option in 1999, but does not date 5099's exact decal or identify 5100's
+  dark finish as CD. The 1997 maker spread instead names OpenSUP and Reflex;
   absence of the OpenPro name there is not proof of nonexistence. No recovered
   dated maker/decal crosswalk supports replacing the specimen rows' legacy
-  1986 /1980–1990 claims. Earlier1998 silver Yeti evidence for10183 remains
-  valid and separate. The official product-sheet endpoint returned403; no
+  1986 / 1980–1990 claims. Earlier 1998 silver Yeti evidence for 10183 remains
+  valid and separate. The official product-sheet endpoint returned 403; no
   new technical-sheet dating claim is made.
 
 ### Open Pro decal-date search — 2026-11-19
 
-Checked search results for dated maker evidence for specimen rows5099/5100. The
+Checked search results for dated maker evidence for specimen rows 5099/5100. The
 [Mavic technical-manual Open Pro sheet](https://technicalmanual.mavic.com/tech-mavic/technical_manual/data/docs/products/2_107.pdf)
 describes specifications but does not date the pictured decals or establish
-the dark finish on specimen5100. Decal sellers and current NOS listings show
+the dark finish on specimen 5100. Decal sellers and current NOS listings show
 variant imagery but provide no reliable dated crosswalk. No identity or year
 change is supported; the open question remains exactly as described above.
 
@@ -610,13 +610,13 @@ Neither inspected Open-family table names Open Pro. In particular, **Open SUP
 Ceramic is not printed as Open Pro Ceramic**. These pages therefore do not
 substantiate the earlier conversational suggestion that Open Pro Ceramic was
 confirmed around 1994–95. They also do not independently establish a launch
-year or date either specimen5099/5100. Both editions show large yellow SUP
+year or date either specimen 5099/5100. Both editions show large yellow SUP
 decals on Reflex clinchers, demonstrating why the large SUP layout in one
 5100 photograph is insufficient to identify its model. No specimen is
 reclassified from that resemblance.
 
 At that stage, the useful next evidence remained a dated maker/dealer photograph or decal
-crosswalk matching the actual OPEN PRO/Maxtal markings on5099/5100; prioritise
+crosswalk matching the actual OPEN PRO/Maxtal markings on 5099/5100; prioritise
 1998–2001 material around the already documented 1998/1999 attestations.
 No DB, source, bike link, CSV or generator changes were made. TODO retains
 only that unresolved identification action. Task PDF downloads, empty text
@@ -636,21 +636,21 @@ rim panels; other components were outside this focused review.
   pictures a blue Open Pro with an oval yellow MAVIC logo, short red/silver
   `MAXTAL S.6000 / OPEN PRO` label and a separate large yellow SUP decal.
   Colours explicitly listed: Silver, Black Mavic, Blue France, CD and Ceramic.
-  The 700/650 weights are425/390g; profile18.4mm high,19.6mm wide;
+  The 700/650 weights are 425/390g; profile 18.4mm high, 19.6mm wide;
   28/32/36 drilling, Maxtal, SUP, double eyelets and UB Control or Ceramic.
 - **2001 printed/PDF p.22:** [road/touring-rim page](https://www.disraeligears.co.uk/site/mavic_retailer_catalog_2001_-_page_22.html)
   pictures a blue Open Pro with the longer red/silver label: oval yellow
   MAVIC, black OPEN/yellow field, red PRO and the small technology marks
   extending along the silver end. It repeats Maxtal/SUP/double eyelets,
-  UB Control or Ceramic and425g700/390g650. The blue swatch lists32/36 holes;
-  other swatches include28/32/36. Swatches alone do not name each dark finish.
+  UB Control or Ceramic and 425g 700/390g 650. The blue swatch lists 32/36 holes;
+  other swatches include 28/32/36. Swatches alone do not name each dark finish.
 
-Compared all three original5099 photographs and the two relevant5100
+Compared all three original 5099 photographs and the two relevant 5100
 photographs directly against these maker images:
 
 | Specimen | Dated visual match | Interpretation |
 | --- | --- | --- |
-| 5099 blue | 2001 p.22, long combined decal | Matches blue finish and distinctive red/silver label layout; evidence for this appearance in2001 |
+| 5099 blue | 2001 p.22, long combined decal | Matches blue finish and distinctive red/silver label layout; evidence for this appearance in 2001 |
 | 5100 dark | 2000 p.14, short main decal plus separate SUP | Matches main label layout and the separate SUP treatment shown in the built-wheel photo; Black Mavic is explicitly offered alongside CD |
 
 Original comparison photographs:
@@ -658,23 +658,23 @@ Original comparison photographs:
 [5100 main-label close-up](https://www.velobase.com/CompImages/Rims/1A6E852F-F470-4FBB-A4F7-6C784BC5A9E8.jpeg),
 [5100 built wheel](https://www.velobase.com/CompImages/Rims/8E27912B-F5BF-4E3A-898F-A631B3EC9850.jpeg).
 The maker comparison now explains why a large separate SUP label is compatible
-with an Open Pro, although it still cannot prove that all5100 photographs
-depict the same physical rims. Do not relabel5100 as CD just from its darkness.
+with an Open Pro, although it still cannot prove that all 5100 photographs
+depict the same physical rims. Do not relabel 5100 as CD just from its darkness.
 
 These are dated attestations of decal appearances, not manufacture dates,
-launch years, or proof that one decal replaced the other exclusively in2001.
-They support reviewing the legacy dates5099 **1986** and5100 **1980–1990**
+launch years, or proof that one decal replaced the other exclusively in 2001.
+They support reviewing the legacy dates 5099 **1986** and 5100 **1980–1990**
 against appearance attestations **2001** and **2000**, respectively. A date
 correction would need a live-row/source/link preflight and reviewed change
-set; no SQL is prepared or applied in this evidence-only pass. Preserve5099's
-445g actual versus435g reported specification, and5100's888g actual pair;
-the maker425g must not replace these independent measurements. No merge with
-silver10183 is proposed.
+set; no SQL is prepared or applied in this evidence-only pass. Preserve 5099's
+445g actual versus 435g reported specification, and 5100's 888g actual pair;
+the maker 425g must not replace these independent measurements. No merge with
+silver 10183 is proposed.
 
-The previously checked1999 maker p.20 remains the Royal Blue/specification
-attestation, while the1998 Yeti table attests silver. Targeted searches of
-Bike Catalogs, Bikalog, RetroMTB and Retrobike did not recover a complete1998
-maker scan; none is claimed inspected. The2000/2001 photographs provide the
+The previously checked 1999 maker p.20 remains the Royal Blue/specification
+attestation, while the 1998 Yeti table attests silver. Targeted searches of
+Bike Catalogs, Bikalog, RetroMTB and Retrobike did not recover a complete 1998
+maker scan; none is claimed inspected. The 2000/2001 photographs provide the
 new distinguishing evidence sought in TODO, whose remaining action is now
 to review date corrections. No DB/source/link/CSV/generator changes were made.
 Task downloads, specimen HTML/photos and rendered pages were removed after
@@ -693,9 +693,9 @@ neither endpoint claims introduction or discontinuation.
 | 5100 Mavic Open Pro SUP (Maxtal, 622x15) | 1980 / 1990 | 2000 / 2000 | 1 -> 478 |
 
 Both **year_from values moved later**, on the dated maker photograph evidence:
-2001 USA p.22 for5099; 2000 GB p.14 for5100. Full1994/1995 Open-family tables
-and the previously reviewed1997 range instead name Open4/Open SUP/Reflex;
-the1998 silver fitment and1999 Royal Blue family attestations do not identify
+2001 USA p.22 for 5099; 2000 GB p.14 for 5100. Full 1994/1995 Open-family tables
+and the previously reviewed 1997 range instead name Open 4/Open SUP/Reflex;
+the 1998 silver fitment and 1999 Royal Blue family attestations do not identify
 these particular decal appearances. Revisit if an earlier exact visual
 attestation is recovered. No launch/end-year inference is intended.
 
@@ -708,18 +708,18 @@ Registered sources after confirming no existing equivalent source records:
 
 Live preflight found no bike links to either component and no generator
 overrides or link decisions referencing these IDs (unrelated SunTour PL-5100
-text is not a component5100 reference). Guarded transactions inserted one
+text is not a component 5100 reference). Guarded transactions inserted one
 source and updated one component each. Exact full-row readback confirmed
 that only year_from, year_to and source_ref changed: titles, search text,
 UUIDs, brand/category/group, image and descriptions were retained, including
-5099's445g actual/435g reported specification and5100's888g actual pair.
+5099's 445g actual/435g reported specification and 5100's 888g actual pair.
 Neither row was merged or reclassified as CD. Restoration, if deliberately
 justified, uses the old years/source_ref in the table guarded by the applied
 new values; leave the registered catalogue evidence intact.
 
 Rerunning both SQL files affected zero sources and zero components. The
-generator/live comparison over **109 loaded catalogues /23,410 paired specs**
-was identical before and after, including the same15 pre-existing lost-match
+generator/live comparison over **109 loaded catalogues / 23,410 paired specs**
+was identical before and after, including the same 15 pre-existing lost-match
 findings; zero gains or target changes, no missing/ambiguous identities.
 No bike links, CSVs, matcher or API code changed. Completed TODO action was
 removed; no new search task was added without a new lead. The task's two SQL
@@ -865,7 +865,7 @@ inventory found zero changed matches. Temporary SQL and helpers were removed.
   prints **465 g for both silver and titanium-colour tubular options**, versus
   520 g for the clincher. This supports the known maker specification but does
   not explain 10607's **1996 dealer 520 g** or 5062's **500 g listing with
-  unspecified measurement basis** (qualifier corrected in the2026-11-19 review
+  unspecified measurement basis** (qualifier corrected in the 2026-11-19 review
   above). Preserve those separate attributions pending edition/specimen
   evidence; no merge or weight overwrite is justified by this recheck alone.
 - [1995 p.15](https://www.disraeligears.co.uk/site/00_main_images/mavic_1995_page_15_main_image.jpg)
@@ -988,8 +988,8 @@ the subsequent 192 review above documents the applied 1993 attestation.
 - Dealer source **353**, Guida '99 p.104 (scan 16), previously transcribed 410 g.
   The maker positively supplies 425 g for the 700c rim, so use that specification
   and clarify SUP as the welded joint and UB Control as brake-track machining.
-  The2026-11-19 review above subsequently separated5099's435g Spec/445g Actual
-  aggregation;5100 retains its independent888g actual pair report.
+  The 2026-11-19 review above subsequently separated 5099's 435g Spec/445g Actual
+  aggregation; 5100 retains its independent 888g actual pair report.
 
 Applied on explicit user approval: registered supporting `Yeti catalogue (1998)`
 as source **432** (country US, dated cover and p.11 citation; source lookup
@@ -1031,9 +1031,9 @@ registered supporting source without checking all later references.
   Visually inspected their main photos: 5099 shows blue rims; 5100 a dark rim
   with an OPEN PRO / MAXTAL S.6000 / SUP decal. S6000 wording alone therefore
   does **not** establish two different alloy generations. The listings' broad
-  date claims do not date those exact specimens. The2026-11-19 review above
-  supersedes the earlier440g interpretation with435g Spec/445g Actual;
-  retain5100's888g actual pair report. Do not force either into silver 10183
+  date claims do not date those exact specimens. The 2026-11-19 review above
+  supersedes the earlier 440g interpretation with 435g Spec/445g Actual;
+  retain 5100's 888g actual pair report. Do not force either into silver 10183
   or arbitrarily recast 5100's black finish as CD. Need dated decal/finish
   evidence and an early range source before replacing dates or merging rows.
 - The [Mavic technical manual 2004](https://racingdepot.no/userfiles/image/MSC/MTech%202004.pdf),
@@ -1145,7 +1145,7 @@ validated directly.
 The Reflex finish split and T261 crosswalk were subsequently completed as
 recorded above. CXP 30 has a separate titanium tubular **10607**,
 whose 520 g dealer figure conflicts with the maker's 465 g; **5062** also carries
-an unqualified500g listing, not a verified actual measurement (see2026-11-19
+an unqualified 500g listing, not a verified actual measurement (see 2026-11-19
 review above). Do not merge those into silver **10199**
 without resolving identity/weight attribution. The 1999 maker lists 28/32/36
 tubular drilling (1997 and the dealer guide also offer 24); retain edition-specific
@@ -1946,7 +1946,7 @@ Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
 ## Bike-Pro Publications catalogue, Mavic rear derailleurs (1996) — labibleduvelocataloguesmavic "MAVIC 1996", data_source id 306
 
 - Source: https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1996.html: 2 images proxied from
-  bibibike.forumserv.com. Image 1 (1024 x 543, "1996-4d2ced7.png") is a US retailer's text, "(c) 1996
+  bibibike.forumserv.com. Image 1 (1024 x 543, "1996-4d2ced 7.png") is a US retailer's text, "(c) 1996
   Bike-Pro Publications", on the 840 double / 841 triple road rears and the 845 ATB rear. Image 2
   ("mavic_helium-1996") is an owner's photo of red Helium hubs and rims, not a document, not used; the
   DB has no Helium rows.
