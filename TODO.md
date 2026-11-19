@@ -5,6 +5,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Ready to work
 
 - Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
+- Prepare the distinct [CLB Competition 46.57 / set 101250](.agents/skills/ingest-component-catalog/references/known-catalogs/clb.md#catalogue-photo-review--ebay-305827471354-2026-11-19-read-only) and [Dia-Compe Alpha-5000](.agents/skills/ingest-component-catalog/references/known-catalogs/dia-compe.md#alpha-5000-brake-identity--2026-11-19-read-only) additions; review the Alpha-5000 maker correction and brake assembly match for Bianchi spec 1324.
 
 ## Product and infrastructure
 
@@ -63,7 +64,7 @@ Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agen
 - Obtain a straight-on [Dia-Compe MTB brochure Short Stop panel](.agents/skills/ingest-component-catalog/references/known-catalogs/dia-compe.md#mtb-brochure--ebay-800322888787-photo-inventory-reviewed-2026-11-17) to confirm the obscured lever codes; seek 984D identification. Recover March 1989 pp.4–8/11–14 and the full right edge of p.3 from a new scan. Seek dated Tioga Surefoot-6 evidence and missing 1992 tyre pp.20–25.
 - Recover a readable Gipiemme 1980/1982 brochure or coded 1980–83 importer list from a new scan/holder lead; use the [checked sources and recovery targets](.agents/skills/ingest-component-catalog/references/known-catalogs/gipiemme.md#198083-source-hunt--2026-11-19-read-only).
 - Seek Vittoria 1982–93 and Bianchi 1974–77/1979–80/1991–99 sources.
-- Inspect CLB catalogue photos in eBay 305827471354; seek period evidence for the remaining named brake and Sedis 1977–78 chain gaps.
+- Obtain a new maker/importer sheet or coded original fitment for Modolo Quattro/Start, Altenburger S3/53S3, Lee Chi cantilevers, Chang Star 500/cantilever and Polygon AF-500; obtain variant/aero evidence for the remaining CLB Peugeot fitments and a period silver-Sedicolor key for Sedis 9719. Use the [reviewed sources and exact evidence limits](.agents/skills/ingest-component-catalog/references/source-hunts.md#named-brake-and-sedis-follow-up--2026-11-19-read-only) before reopening the hunt.
 - Revisit Brügelmann’s Cobra saddles, Mavic Titan and Hutchinson Krono identities using held evidence; seek missing 1986–87/1989–92 editions through a new holder.
 - Seek a new dated manufacturer lead for Shimano BB-UN73; use [checked sources](.agents/skills/ingest-component-catalog/references/known-catalogs/shimano.md).
 - Recover Sedis May 1971 only from a new readable scan or confirmed holder; verify the recovered OMAS PDF/image set against the catalogue indexed 1978 before claiming complete edition coverage. [Recovery evidence and files](.agents/skills/ingest-component-catalog/references/known-catalogs/omas.md#readable-alternate-catalogue-scans-recovered--2026-11-18); [Sedis limits](.agents/skills/ingest-component-catalog/references/known-catalogs/sedis.md#may-1971-recovery-search--2026-11-18-no-new-readable-copy).

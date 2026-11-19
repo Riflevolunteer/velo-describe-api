@@ -1,5 +1,34 @@
 # Sedis catalogs processed so far
 
+## Peugeot 1977–78 chain evidence review — 2026-11-19 (read-only)
+
+- The remaining **named** gap is 1977 PY10/CP spec **9719**, `Sedis Color
+  silver 1/2 x 3/32, 108 links`. Existing **8764 Sedicolor** is already
+  **1976–80**, source **456**: the [circa 1976 Motobecane ingestion](../../../ingest-bike-specs/references/known-catalogs/motobecane.md#circa-1976-us-catalogue--loaded-2026-11-17)
+  extended its start using source 430 (estimated catalogue year); a later source
+  extended its end. The 1979-only insertion below is historical, not its current
+  date range. **1398 Gold** is now 1975–80 and **8765 Sedisport** 1979–88.
+- Live 1977 Peugeot plain `Sedis 1/2 x 3/32, 108 links` specs (including
+  **9738/9909/13266**) lack a model code. The 1978 108-link entries (including
+  **9929/10132**) and 110-link **13286** likewise name no model.
+  Dimensions and fitted length do not identify
+  **8763 4D**; a longer retail chain can be shortened for installation.
+- The [7 November 1979 Chicken sheet](https://www.icenicam.org.uk/library/Sedis/Chains_from_R_J_Chicken_catalogue_1979-11-07.pdf),
+  printed p.32/PDF p.4, identifies 4D in 112/114 links and the coloured 116-link
+  4DS line as **gold and dark blue**. It does not identify the earlier silver
+  Sedis Color offering. Do not collapse it into Gold 1398 or infer 4D from the
+  absence of gold links. The 1978 Motobecane named gold/black Sedicolor spec
+  **23165** is already linked to 8764; this is not another unresolved chain gap.
+- Targeted English/French catalogue, Sedicolor/argent/silver and 4D/1977–78
+  searches found no new readable period model/finish key. Industrial-chain
+  catalogues, the later 1979 sheet and retrospective Sedisport introduction
+  stories do not supply the missing Peugeot crosswalk. The separately logged
+  May 1971 recovery was not repeated.
+
+No DB/CSV/generator changes. Retain the Peugeot NULLs pending a period
+silver-Sedicolor/model key or coded original fitment; plain-brand values are
+intentional non-identifications, not an instruction to create a generic row.
+
 ## May 1971 recovery search — 2026-11-18 (no new readable copy)
 
 - Scoped to the catalogue indexed *Sedis catalog (05-1971)*, not a general Sedis ingestion. The earlier Velo-Pages album 6165 inventory and 150×150-only capture result are in the [source-hunt log](../source-hunts.md#log). No old thumbnail or CDX recovery queries were repeated.

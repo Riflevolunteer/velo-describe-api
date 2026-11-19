@@ -326,6 +326,13 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Chains
 
+- Reviewed 2026-11-19: 1977 Peugeot silver **Sedis Color 9719** remains NULL:
+  the 1979 importer sheet's gold/dark-blue 4DS does not establish that finish.
+  Plain 1977–78 Sedis 108/110-link entries likewise do not identify 4D from
+  dimensions or installed length alone. Sedicolor 8764 already covers 1976–80;
+  do not treat named 1978 Motobecane 23165 (already linked) as a gap.
+  [Evidence limits](../../ingest-component-catalog/references/known-catalogs/sedis.md#peugeot-197778-chain-evidence-review--2026-11-19-read-only).
+
 - Confirmed and applied 2026-11-17: 1981 Canadian Raleigh Professional chain
   **9342**, `Regina D'Oro ½" x 3/32"`, NULL→**1382 Extra50 Oro**. Original
   panel and pre-BX ordinary Oro identity support the link; exact-value,
@@ -393,7 +400,7 @@ see the Raleigh catalogue notes for the decision and source.
   supply that evidence. See [source review](known-catalogs/peugeot.md#pa60-criterium-rear-identity-review--2026-11-17).
 
 - Superseded 2026-11-16 (user approved): the 1989 Bianchi Forte / Volpe "XCE-4050" specs now link to the XE45 series. SunTour Edition No. 89 (the 1989 line, source 427) prints XCE 4050 as RD-XE45-GXB 11395, FD-XE45-GXH 11396, SL-XE45 11397, BL-XE45 11398, CW-XE45 11401 (48 / 38 / 28T, as Forte's crank) and HB-AT45 hubs 11403. The earlier unlink only rejected the 1990 XE00 and 1992 XE01 rows.
-- Leave unlinked: 1987 Bianchi Sport SX "SunTour Alpha-5000 Balance Response System" brakeset (1324) and "SunTour Alpha-5000 52/42T" crankset (1327). The 1988 English SunTour catalogue (source 428) lists alpha-5000 as rear and front derailleurs only, and the AccuShift leaflets as derailleurs, levers and freewheel, so these are not SunTour alpha-5000 parts. Its hubs already go to Sansin RE-60a (9010) and its front to FD-5000-SS 11418.
+- Leave unlinked pending reconciliation: 1987 Bianchi Sport SX "SunTour Alpha-5000 Balance Response System" brakeset (1324) and "SunTour Alpha-5000 52/42T" crankset (1327). The 1988 English SunTour catalogue (source 428) lists alpha-5000 as rear and front derailleurs only, and the AccuShift leaflets as derailleurs, levers and freewheel, so these are not SunTour alpha-5000 parts. **Brake maker identified 2026-11-19:** the original Bianchi brake cell omits SunTour and a specimen is visibly marked DIA-COMPE / α-5000. No Alpha-5000 brake row exists; prepare its reconciliation and review the CSV maker/assembly before linking 1324. [New evidence](../../ingest-component-catalog/references/known-catalogs/dia-compe.md#alpha-5000-brake-identity--2026-11-19-read-only). No change applied; the crank was outside this brake review. Its hubs already go to Sansin RE-60a (9010) and its front to FD-5000-SS 11418.
 - 1989 Peugeot (NL) VTT Express "Suntour XCM" front / rear: FD-XM34-GXH 11411 and RD-XM34-GXB 4795 (XCM 3040 in Edition No. 89). XM00 / XM02 (2665 / 4793) start in 1990.
 - Miyata Omnium / 912 gearing and GMG shifters do not establish RD-6207 versus RD-6208. New Seven does not yet identify RD-1900. Generic Positron remains deliberately unlinked, including the 1983 Raleigh Silhouette.
 - Leave unlinked (variant or era unclear): 1986 Miyata "SHIMANO New 600 EX" x2 (RD-6207 short / GS, or RD-6208 SIS); 1988 Colnago "Shimano Santé" x2 and 1988 Raleigh "Shimano Santé, SIS indexed" (RD-5000 and RD-5001 both cover 1988; existing call); 1984 Peugeot "Huret Duopar" x2 (4302 titanium standard cage, 4400 Eco or 8173 titanium long cage); 1982 Battaglin "Gipiemme Sprint 610"; 1989 Peugeot "Simplex SOI T/SP" x3 / "SOI GT/SP" / "501 GT/SP" / "T/SP" (maybe S001N T / S002 GT misprints); 1988 Peugeot "Simplex SX A430 GT/SP" x2 (no SX430; SX440 GT v3?); 1981 Raleigh "Sun Tour V.T." (VX-T 4773?); 1986 Falcon "Suntour MT Tech" (4712 / 7785 / 4711); 1986 Miyata "SUNTOUR New SEVEN" (RD-1900 ends 1985); 1981 Peugeot "Simplex SX"; 1986 Colnago "Shimano Deore"; 1978 Peugeot "Simplex Criterium", 1978 / 1989 "Shimano Positron", 1986 Raleigh "Suntour Cyclone" (existing nulls).

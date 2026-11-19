@@ -1,5 +1,33 @@
 # Dia-Compe catalogs processed so far
 
+## Alpha-5000 brake identity — 2026-11-19 (read-only)
+
+- [1987 Bianchi catalogue](https://velobase.com/CatalogScans/1987Bianchi.pdf),
+  PDF p.14, Sport SX brakeset cell prints **Alpha-5000 Balance Response System
+  with aero levers**; it does **not** print SunTour in that cell. The current
+  spec **1324** carries an inferred SunTour maker and remains unlinked. This
+  revises the earlier “maker still unknown” limit without applying a CSV fix.
+- [Specimen listing 257765092776](https://www.ebay.com/itm/257765092776): the
+  [pair photo](https://i.ebayimg.com/images/g/4xMAAeSwhLRqCi~~/s-l1600.jpg) and
+  [close-up](https://i.ebayimg.com/images/g/LAwAAeSwX8RqCjAA/s-l1600.jpg)
+  visibly carry both **DIA-COMPE** and **α-5000** on the arms. These physical
+  markings establish maker/model independently of the seller's title. They do
+  not establish manufacture year, original Bianchi fitment or the lever model.
+- [Sutherland's Handbook, sixth edition (1995)](https://paulinoposada.github.io/bike/documents/epdf.pub_sutherlands-handbook-for-bicycle-mechanics.pdf),
+  PDF p.401, tabulates α-5000/model **400**, 39–51mm reach (centre 45mm), left
+  cable. Its separate Alpha II/αII-400 entry must not be merged into α-5000.
+  This is a later technical cross-reference, **not** a 1987 manufacturer sheet;
+  the 400 stamp was not independently read on the reviewed specimen photos.
+- Live brake-row/title/alias review found no Alpha-5000 row; **668 Alpha II
+  (White)**, dated 1988, is a separate identity. Prepare a Dia-Compe Alpha-5000
+  candidate using Bianchi's 1987 attestation and the marked specimen, and review
+  spec 1324's maker text and assembly match before a link. Do not assign aero
+  lever codes, inferred specimen dates, or Alpha II identity. The unrelated
+  Alpha-5000 crank spec **1327** is outside this brake review.
+
+No source registered, SQL prepared or DB/CSV/generator changes applied. Downloads
+and renders removed after review; the source URLs above are the recovery inputs.
+
 ## MTB brochure — eBay 800322888787, photo inventory reviewed 2026-11-17
 
 Source: https://www.ebay.com/itm/800322888787, English US brochure, cover

@@ -4,6 +4,54 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ## Log
 
+### Named brake and Sedis follow-up — 2026-11-19 (read-only)
+
+- **CLB:** all six unique original photos in eBay 305827471354 inspected,
+  including the previously unread GL-family exploded page. GL47.60 parts are
+  now readable, but the self-adhesive badges do not establish exact identity
+  with inset-badge row 614, and no white 1989 fitment is shown. Competition
+  **46.57 / set 101250** is distinct from GL47.60 and old Competition 608.
+  The conventional lever 843 does not identify the Peugeot PH12 aero assembly.
+  Seller year 1980 remains only a lower limit from the legal page's May 1980
+  reference. [Photo inventory and codes](known-catalogs/clb.md#catalogue-photo-review--ebay-305827471354-2026-11-19-read-only).
+- **Alpha-5000:** original 1987 Bianchi PDF p.14 names BRS/aero brakes without
+  a SunTour maker; a specimen visibly marked **DIA-COMPE / α-5000** supplies
+  the missing maker identification. No existing Alpha-5000 brake row found;
+  Alpha II is separate. Later Sutherland sixth-edition/1995 chart gives model
+  400, not a period manufacturer code confirmation. [Evidence and proposed
+  reconciliation](known-catalogs/dia-compe.md#alpha-5000-brake-identity--2026-11-19-read-only).
+- **Altenburger:** newly read [Pro Velo no.7](https://provelo.fahrradzukunft.de/pdf/pro-velo-07.pdf),
+  imprint December **1986** (PDF p.3), printed pp.10–11/PDF pp.12–13, describes
+  an asymmetrical-pivot **Monolever** prototype, planned early-1988 launch. It
+  does not print S3/53S3 or identify Peugeot's 1987–89 brake fitments; do not
+  map that prototype or its projected date onto specs **15633/16861/17733**.
+- **Later technical comparison:** [Sutherland sixth edition](https://paulinoposada.github.io/bike/documents/epdf.pub_sutherlands-handbook-for-bicycle-mechanics.pdf),
+  copyright 1995/PDF p.3, has multiple Chang Star “500” families on PDF p.400:
+  **CT500** (43–57mm), **Gran Star 500 / GS500-160** (47–57mm), **Pro-Star
+  500 / P500** (43–57mm). Bare Chang Star 500 spec **1384** does not select
+  one. Lee Chi's multiple cantilever constructions (PDF p.390) do not identify
+  uncoded Peugeot fitment; its side-pull chart (p.403) does not resolve them.
+  CLB's chart (p.401) keeps Competition46–57 and GL47.60 separate. Modolo's
+  chart (p.404) does not give Quattro or Start; do not substitute Q-Exe by name.
+- **Other hunts:** targeted maker/model/catalogue searches for Modolo Quattro
+  (specs **7180/18466/19487**) and Start (**1304**), Altenburger S3/53S3,
+  Lee Chi Peugeot cantilevers, Chang Star 500/cantilever and Polygon AF-500
+  (**1364**) found no new readable period maker/importer model key. Bianchi's
+  1987 table already attests Start anodised aero kit, Polygon AF-500 QR/hooded
+  levers and Chang Star 500 QR/extensions/hoods; it does not select caliper
+  variants or supply their maker codes. Seller labels, restored bikes and
+  modern forum hierarchies were not used as period specification evidence.
+- **Sedis:** the named remaining case is silver Sedis Color **9719**, not a
+  general absence of Sedicolor in 1977–78: 8764 already covers 1976–80 and
+  1978 Motobecane 23165 is linked. No new period silver-finish/model crosswalk
+  found. Plain 108/110-link Peugeot entries remain intentionally unidentified.
+  [Current baseline and limits](known-catalogs/sedis.md#peugeot-197778-chain-evidence-review--2026-11-19-read-only).
+
+Read-only evidence review: no DB, source, CSV or generator writes, purchases or
+outreach. Only the Competition and Alpha-5000 reconciliation moves to ready work;
+reopen the other hunts for a new period sheet or coded original-fitment lead.
+Task-owned downloads/renders removed after recording their source URLs.
+
 - **Sedis/OMAS readable-source review — 2026-11-18:** no repeat of exhausted Velo-Pages thumbnail/CDX queries. **OMAS alternate manufacturer scans recovered** from [Classic Rendezvous, 26-page PDF](https://classicrendezvous.com/wp-content/uploads/2023/05/O.M.A.S.pdf) and four 2000 px [Frameteller image copies](https://www.frameteller.it/author/manuel/page/6/). PDF p.6 matches the 101/S/475 g page content formerly represented only by image 12999 and now exposes readable axle-material captions. Other hub/headset/crank/wheel pages are readable. CR labels the PDF early 1980s; Frameteller captions 1978, credits CR and also mentions 1980. No printed date or exhaustive 28-item album crosswalk established: do not claim a proven complete 1978 edition. [OMAS recovery notes](known-catalogs/omas.md#readable-alternate-catalogue-scans-recovered--2026-11-18) record URLs, dimensions, hash and retained recovered files in `/private/tmp/sedis-omas-recovery-20261118/`. This supersedes the general OMAS statement below that a new readable source is still needed; precise edition/coverage review remains. **Sedis May 1971 remains unrecovered**: targeted exact-edition/French-chain/archive/holder searches found no new readable copy or confirmed holder; the 1979 Chicken section, modern industrial catalogues and unrelated older adverts are not substitutes. [Sedis search limits](known-catalogs/sedis.md#may-1971-recovery-search--2026-11-18-no-new-readable-copy). Recovery-only: no DB work, source registration, outreach or purchase. Disposable HTML/renders removed; requested OMAS documents retained.
 
 
@@ -175,7 +223,7 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 - **Brake catalogue hunt, 2026-11-07** (no DB writes during that hunt): then-named gaps included Dia-Compe 984 / 984D (3 specs, 1989 Bianchi; plain 984 subsequently resolved by source 448 below, D-suffix still open), Modolo Quattro (3, 1989-91 Bianchi) / Start (1, 1987), CLB GL 47-60 (2, 1989 Peugeot) / Competition-aerodynamic (1982-84), Altenburger S3 / 53 S3 (3, 1987-89 Peugeot), Lee Chi (5, 1988-89 Peugeot), Chang Star (3), Polygon AF-500 and SunTour Alpha-5000 (1 each). Shimano reach choices and mixed front/rear cells remain identification/schema questions.
 
-  - **CLB catalogue listed as 1980, partial original photos**: https://www.ebay.com/itm/305827471354. Inspected the contents/legal page (36 pp, cites act 80-335 of 12 May 1980, so >= that date) and Competition 46.57 page: set 101250, AS13 GL treated alloy, Professional anodised lever 843, hood 844, reach 46-57mm, exploded parts. Potential evidence for the later Competition family; do not force a link to 1950-70 row 608 or assume this is the 47-60. High-res photos `/tmp/clb-1980-spread.jpg` and `/tmp/clb-1980-chart.jpg`, URLs https://i.ebayimg.com/images/g/tEIAAOSwNwhnBZXG/s-l1600.jpg and https://i.ebayimg.com/images/g/K1sAAOSwJ7hnBZXJ/s-l1600.jpg. Only these two interior photos inspected; no full catalogue acquired.
+  - **CLB catalogue listed as 1980, partial original photos**: https://www.ebay.com/itm/305827471354. Initially inspected only the contents/legal page and Competition 46.57 page. **Superseded by the six-photo review on 2026-11-19 above**, which also reads the GL exploded page. [Current inventory, direct image URLs and dating/identity limits](known-catalogs/clb.md#catalogue-photo-review--ebay-305827471354-2026-11-19-read-only). No full catalogue acquired.
   - **Dia-Compe 1990 MTB brochure, ©1989 — applied source 448**: https://www.ebay.com/itm/800322888787, seller title "Vintage NOS 1989/90 Dia-Compe Mountain Bike Brake Brochure!". Direct US/UK/indexed listing requests and Yomla mirror returned 403; web opens failed. **User subsequently supplied five original photos on 2026-11-17:** cover, back panel and overlapping interior views. Back explicitly says “For 1990” and ©1989. Read: 286 / 986 X-1, 984, XCExpert, XCMaster, XCT and part of the Short Stop panel; [applied inventory, validation and restoration data](known-catalogs/dia-compe.md#mtb-brochure--ebay-800322888787-photo-inventory-reviewed-2026-11-17). User approved six new components, four enrichments and one exact 1989 Bianchi Axis 984 link; applied and validated with no unintended mapping changes. This supersedes the earlier unrecovered/seller-dated status. Still need a straight-on Short Stop panel for obscured codes; 984D is not printed and both D-suffix specs remain unlinked. BL-08 / 250S were resolved independently by source 447 (March 1989 Product Guide).
   - **Modolo 1988 page checked**: https://labibleduvelocataloguesmodolo.blogspot.com/p/modolo-1988.html is one magazine photo/caption of a Hydromax hydraulic brake (`/tmp/modolo-1988-scan.jpg`), not a full catalogue and no Quattro / Start evidence. Existing 1990 catalogue and c. 1979 leaflet remain the useful held sources. No usable period catalogue found this pass for Altenburger S3, Lee Chi cantilevers, Chang Star 500, Polygon AF-500 or Alpha-5000 brakes.
   - **Held-source review completed 2026-11-12**: Dia-Compe DC400N / QS400N are explicitly separate models in Products 1986 printed p.4 (source 209); two exact rows and two links loaded on user approval (see [Dia-Compe notes](known-catalogs/dia-compe.md)). Universal 130 / 131 are both front options, so the Bianchi wording still needs identification. See "Open: held-source follow-ups" below; no new catalogue hunt is needed to establish these model specifications.
