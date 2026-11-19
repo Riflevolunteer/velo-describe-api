@@ -6,7 +6,9 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ### Branford remaining editions — downloaded and triaged 2026-11-19
 
-**Subsequent 1995/96 reconciliation, 2026-11-19:** [applied and validated after approval](known-catalogs/cross-catalog-notes.md#branford-199596-component-catalogue--applied-and-validated-2026-11-19), source473: 49 additions **12022–12070**, 55 updates, four makers and ten category/brand registrations. Readback and the zero-change rerun passed; all bike mappings are unchanged. Actual eligible listings are pp.20–29; p.30 is tyre care and p.48 is the index, not a component matrix. This supersedes the OCR-only/no-SQL qualification below for 1995/96. The 1994/95 and attributed1987 inventories remain pending.
+**Subsequent 1994/95 reconciliation, 2026-11-19:** [Applied reconciliation, inventory and page ledger](known-catalogs/cross-catalog-notes.md#branford-199495-component-inventory--visually-reviewed-2026-11-19). Cover and eligible component boxes visually read on pp.20–22,24–27,44,46; p.45 is tyre care. This supersedes the acquisition-stage OCR-only qualification for those boxes. User-approved application is validated as source474:17 additions12071–12087,23 updates,Kingsbury766 and three category registrations. Exact readback and zero-change rerun passed; every bike spec/generated mapping is unchanged. The original PDF remains available.
+
+**Subsequent 1995/96 reconciliation, 2026-11-19:** [applied and validated after approval](known-catalogs/cross-catalog-notes.md#branford-199596-component-catalogue--applied-and-validated-2026-11-19), source473: 49 additions **12022–12070**, 55 updates, four makers and ten category/brand registrations. Readback and the zero-change rerun passed; all bike mappings are unchanged. Actual eligible listings are pp.20–29; p.30 is tyre care and p.48 is the index, not a component matrix. This supersedes the OCR-only/no-SQL qualification below for 1995/96. The subsequent1994/95 reconciliation is linked above; attributed1987 still awaits its inventory.
 
 Read-only source and component-coverage triage, at the user's request for more
 Branford catalogues to ingest. **Components only; no bikes.** All three
@@ -52,7 +54,7 @@ before adding or extending any row. The same page contains Mavic road/ATB
 rims and Campagnolo Shamal/Vento/Bora; their existing dated variants need
 configuration checks, not blanket duplicate insertion.
 
-**Second:1994–95.** OCR identifies the main component material at PDF20–27
+**Second:1994–95, historical acquisition triage (now superseded by the inventory above).** OCR identifies the main component material at PDF20–27
 and tyre tables at44–46. Visually checked PDF27 has Kingsbury aluminium/Ti
 seatposts, Top Line Road and ATB Super-Light/Heavy-Duty cranks, Onza Buzz Saw
 stainless chainrings and distinct road/ATB Grip Shift compatibility options.
@@ -83,7 +85,7 @@ triage demonstrates no new bike-link resolution and does not authorize a load.
 
 Disposable OCR, renders, snapshots and download helpers were removed after
 recording this evidence; the three PDF originals remain for the pending
-inventories. No full visual reading, SQL preparation or ingestion is claimed.
+inventories. No full visual reading, SQL preparation or ingestion was claimed by that acquisition triage; subsequent inventory/application stages are linked above.
 
 ### Branford and Colorado Cyclist online scans recovered — 2026-11-19
 

@@ -52,7 +52,7 @@ Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agen
 
 - Recover specification pages for the English Bianchi road catalogue indexed 1985; Bikalog holds only a five-page introductory/photo fragment. [Edition review](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#bikalog-19851986-backlog-check--2026-11-17).
 - Seek a newly posted 1979–89 Peugeot/Motobécane spares list for Maillard, Solida/Nervar and Lightrace. [Reviewed tariff limits and prior leads](.agents/skills/ingest-component-catalog/references/source-hunts.md#peugeothelium-tariffs--all-pages-reviewed-2026-11-19).
-- Inventory and reconcile Branford 1994/95 and the archive-attributed 1987 fragment; retain `/tmp/branford-edition-triage-20261119/` as the source input. [Verified PDFs and triage](.agents/skills/ingest-component-catalog/references/source-hunts.md#branford-remaining-editions--downloaded-and-triaged-2026-11-19).
+- Inventory and reconcile the archive-attributed Branford1987 fragment; retain `/tmp/branford-edition-triage-20261119/bb1987.pdf` as the source input. [Verified PDFs](.agents/skills/ingest-component-catalog/references/source-hunts.md#branford-remaining-editions--downloaded-and-triaged-2026-11-19).
 - Seek other Nashbar/QBP/J&B/Colorado Cyclist editions only when a new scan lead appears. [Prior acquisition work](.agents/skills/ingest-component-catalog/references/source-hunts.md#branford-and-colorado-cyclist-online-scans-recovered--2026-11-19).
 
 <a id="sr-sakae-next-work"></a>

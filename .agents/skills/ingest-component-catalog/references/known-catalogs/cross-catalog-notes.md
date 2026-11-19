@@ -1,6 +1,373 @@
+## Branford 1994/95 component inventory — visually reviewed 2026-11-19
+
+**Applied and validated after the user’s “apply” instruction.** Source **474**, Kingsbury **766**; **17 additions12071–12087**, **23 existing-row updates**, three category/brand registrations. No bike-spec or matcher changes, merges or deletions. The listing below was the preceding inventory stage; its live comparison and validated results are now recorded here.
+
+Source: [Branford Bike Vol.18 Issue2, 1994–1995](https://timslife.com/brancat/Catalogs/bb18-2_1994.pdf), 48 pages, 50,075,372 bytes, retained original `/tmp/branford-edition-triage-20261119/bb18-2_1994.pdf`. Cover visually verifies 1994–1995 and ordering through 31 December 1995. Every inventory row below has **edition year 1994/95**, an availability window, not an asserted manufacturing start/end. Printed folios agree with PDF numbers on inspected component pages. Titles preserve printed identities; shop stock codes are not promoted to maker model codes. A slash of weights is recorded as a list where the source is not explicit about correspondence.
+
+### Page ledger and exclusions
+
+All 48 pages were triaged from their searchable layer/index. Visually read cover and component boxes on pp.20–22,24–27,44,46; visually checked p.45 to exclude its storage rims and tyre-care products. Page23 was reviewed through its complete OCR: bearings, axles/cones/skewers, brake pads/hoods and other replacement hardware, with no eligible complete component.
+
+| Pages | Scope |
+| --- | --- |
+| 1 | Cover/date verified. |
+| 2–15 | Clothing, socks, glasses, personal/safety accessories; excluded. |
+| 16–19 | Merlin/Colnago/Iron Horse/Ritchey frames and bicycle history; no bikes or frame/fork ingestion in this job. |
+| 20 | Complete-group offers and group-level technical context, recorded below without fabricating maker model codes. |
+| 21 | Main complete-component matrix, wheels and chains; inventoried. |
+| 22 | Eight chainring listings inventoried; cables/housing/crimps, crank hardware/covers, stack spacers and catalogue adverts excluded. |
+| 23 | Replacement hardware, bearings, axles, skewers, pads, hoods; excluded. |
+| 24 | Ritchey stems/handlebars inventoried; Logic Expert and WCS bar ends excluded. |
+| 25 | Profile bars/stem inventoried; XC Sierra/Vario bar ends and SwiftShift shifter relocation mount excluded (not a complete shifter). |
+| 26 | Ritchey headsets/posts/brakes/levers inventoried; skewers and Logic pads excluded. |
+| 27 | Onza rings, Top Line cranks, Grip Shift shifters, Syncros/Kingsbury posts inventoried; Steve's Cool skewers excluded. |
+| 28–43 | Trainers, lights, cleaners/lubricants, decals/bottles/tape, computers/HR monitors, books/gifts and tools; excluded. |
+| 44 | Road tubular/clincher tyres inventoried; tubes, rim tape, sealants excluded. |
+| 45 | Tyre-care/tubes/strips/glue/patches/gauge and storage rims; excluded, no riding rim listing. |
+| 46 | Hybrid/MTB tyres inventoried. |
+| 47–48 | Order form and index/contact material; excluded. |
+
+### Group-level evidence, p.20
+
+Campagnolo offers Record and Chorus in Ergo Power/dual-pivot or conventional-lever/dual-pivot 8-speed configurations, and Athena in Ergo Power or conventional-lever 8-speed configurations. Included categories: derailleurs, brake/shift levers, calipers, hubs, cassette, crankset, chain, BB and headset. “New Since '94” explicitly lists EXA-Drive across groups, Record carbon-composite Ergo shells, Record/Chorus dual pivot and all 8-speed; this is retailer phrasing, not a reason to overwrite maker-established introduction dates.
+
+Shimano offers Dura-Ace, 600 Ultegra, 105SC and RX100 in STI/dual-pivot or conventional-lever/dual-pivot 8-speed configurations. Its “New Since '94” list names sealed-cartridge Dura-Ace/Ultegra headsets, 8-speed Hyperglide and Super SLR. No individual model codes are supplied.
+
+Ritchey Logic Mountain mixes Logic with Shimano DX 7-speed. Comp and Pro Mountain mix Comp/Logic with Shimano XT 8-speed/Grip Shift and Ritchey clipless pedals. WCS Mountain mixes WCS with XT 8-speed/Grip Shift or XT Top Mount and Ritchey clipless pedals. These are assemblage offers, not proof that each uncoded pictured part belongs to a particular existing generation.
+
+### Reconciliation and application — 2026-11-19
+
+**Applied and validated** following the user’s “apply” instruction. The live comparison produced **17 additions, 23 updates, Kingsbury registration and three category/brand registrations**; no deletes, merges, existing retitles, group/ownership edits, CSV or matcher changes. All new rows have the edition availability window **1994–1995**. No start date is moved later. Source label: **Branford Bike catalogue Vol.18 Issue2 (1994/95)**, US; citation: https://timslife.com/brancat/Catalogs/bb18-2_1994.pdf ; cover:1994-1995, Vol.18 Issue2; orders through1995-12-31; 48 PDF pages; components20-27,44,46.
+
+Updates retain stable IDs, UUIDs, maker/category/group, title, search text and image. Restoring an update requires setting its exact old description/years/source_ref below, guarded against its applied values and after reviewing any later links. New rows can be identified by their load UUIDs below; remove downstream references before any future restoration deletion. Exact readback and a zero-change rerun passed. Temporary SQL, snapshots, comparison reports and helpers were removed after recording this evidence; no audit SQL is committed.
+
+#### New identities
+
+| Page | Maker / category | Title | Description | Load UUID |
+| --- | --- | --- | --- | --- |
+| 27 | Kingsbury / Seat Posts | **12071** Kingsbury Aluminium Seatpost | Aluminium post with dual Allen-bolt clamp, 230g average. 220mm: 25.0/26.4/26.6/26.8/27.0/27.2/27.4mm; 330mm: 26.6/26.8/27.0/27.2mm. | 72acf75a-de44-4a48-a6ff-c621b326e5ef |
+| 27 | Kingsbury / Seat Posts | **12072** Kingsbury Titanium Seatpost | Titanium post with dual Allen-bolt clamp, 200g average; 27.2mm diameter, 225 or 350mm length. | 94b8ab60-c8a7-4f36-a09b-8fc21d9aadfe |
+| 27 | Topline / Cranksets | **12073** Topline ATB Super-Light | Machined/drilled aluminium ATB crank arms, 350g/pair, 180lb rider limit; 9/16in pedals; silver/black/blue. Bolt patterns: Shimano 94/58 or 110/74, Micro Drive 94/56, HyperDrive 94/58, TNT 110/56mm as printed. | c2a46c5b-05a4-4a11-a552-8bb4623ca578 |
+| 27 | Topline / Cranksets | **12074** Topline ATB Heavy Duty | Machined/drilled aluminium ATB crank arms, 420g/pair; 9/16in pedals; silver/black/blue. Bolt patterns: Shimano 94/58 or 110/74, Micro Drive 94/56, HyperDrive 94/58, TNT 110/56mm as printed. | b13978cf-350f-4045-af8a-a5bc191a36e8 |
+| 27 | Onza / Chainrings | **12075** Onza Buzz Saw | Precision-machined stainless-steel chainrings; 74 or 110mm bolt patterns, 24/26/34/36 teeth; made in USA. | 9ac182a2-ff4c-45e9-8e6c-13dbfd53f14a |
+| 25 | Profile Design / Handlebars | **12076** Profile Design Aero II XL | Clip-on aero bar, 440g; width 4-8in, length 9.3-13.6in; sizing bridges and reversible pad brackets. 6061-T1 tubing, T6 brackets/extensions; black/gunmetal blue; SwiftShift compatible; made in USA. | 68f7138d-18da-47e2-8ac4-fe6bd774d396 |
+| 25 | Profile Design / Handlebars | **12077** Profile Design AirWave | One-piece aero handlebar, 625g; armrest width 5.5/6.5/7.5in, adjustable length 2.7-10.6in; SwiftShift compatible; made in USA. | 9c90c378-660b-481b-b251-c5bd402bab5c |
+| 25 | Profile Design / Handlebars | **12078** Profile Design Hammer | 6061-T4 aluminium drop bar, bulged 26.0mm centre, two grip shims; 40/42cm shallow or 42/44cm deep, centre-to-centre; gunmetal blue, laser-etched graphics; 312g; made in USA. | 94611b2c-729c-4d03-90ac-6000dd24a7e4 |
+| 25 | Profile Design / Stems | **12079** Profile Design Pursuit | TIG-welded double-butted chromoly road quill stem; recessed expansion bolt, aerated clamp, titanium finish; 26.0mm clamp, -10deg; 90-140mm in 10mm steps, 195g average. | d369a55a-e4bc-4737-9fb3-11af119c0179 |
+| 24 | Ritchey / Stems | **12080** Ritchey WCS ATB Stem | Heat-treated butted chromoly quill stem, WCS anodised finish; 120/130/140/150mm, +10deg, 25.4mm bar clamp; nominal 1in or 1-1/8in sizes; 140g listed average. | 7eb091be-2f52-419f-81db-f72d55123504 |
+| 24 | Ritchey / Stems | **12081** Ritchey ForceLite Threadless ATB Stem | Threadless stem, satin finish; 120/130/140/150mm, reversible +/-4deg; 1in or 1-1/8in steerer, 25.4mm bar clamp; 180g average. | 4559bb0d-c573-4764-ab81-6bedd27912b5 |
+| 46 | Ritchey / Tyres | **12082** Ritchey WCS Z-Max Severe Condition | Front/rear MTB tyre with deeper tread for severe conditions; folding Kevlar bead, blackwall; 26x2.1, 560g. | 26e52efb-f8d3-4402-bbd2-ea9263c5f868 |
+| 46 | Ritchey / Tyres | **12083** Ritchey Mad-Max | Front/rear MTB tyre; steel bead, blackwall; 26x2.1, 660g. | 6f833fa2-b748-4dc2-8442-44cee4f1873b |
+| 46 | Ritchey / Tyres | **12084** Ritchey Climb-Max | Rear MTB tyre designed for climbing; steel bead, blackwall; 26x2.1, 650g. | b9d2a9cf-603d-43d3-9404-dc6226a96c06 |
+| 22 | Campagnolo / Chainrings | **12085** Campagnolo Record EXA-Drive outer road chainrings | EXA-Drive outer road chainrings for the 8-speed Record group, 52 or 53 teeth. Separately listed from Chorus/Athena outer rings and shared 39/42T inner rings. | 087fe451-94ca-4a6f-9e13-f11759459017 |
+| 22 | Campagnolo / Chainrings | **12086** Campagnolo Chorus / Athena EXA-Drive outer road chainrings | Outer road chainrings for the 8-speed Chorus and Athena groups, 52/53/54 teeth. EXA-Drive group context; separately listed from Record outer rings and shared 39/42T inner rings. | 887f1c87-9e17-4e13-bf91-83e7d036f3ee |
+| 22 | Shimano / Chainrings | **12087** Shimano 600 Ultegra road chainrings | Replacement road chainrings for the 8-speed 600 Ultegra group; 39/40/42T inner and 52/53T outer rings. Distinct from earlier 600EX chainrings. | 8e28280d-a190-4958-9e7b-68105dd2e5bf |
+
+#### Existing rows: complete before/after values
+
+| ID / unchanged title | Page | Years before → after | Old description | Applied description | Old source_ref | Reason |
+| --- | --- | --- | --- | --- | --- | --- |
+| 12026 Ritchey WCS ATB Brake Levers | 26 | 1995–1996 → 1994–1996 | Cold-forged 6061-T6 three-finger ATB brake levers; WCS anodised finish, supplied with cables and housing; 180g per pair. | Cold-forged 6061-T6 three-finger ATB brake levers; WCS anodised finish, supplied with cables and housing; 180g per pair. | 473 | Same named model and distinguishing specifications; earlier retailer attestation. |
+| 12029 Ritchey WCS Cantilevers | 26 | 1995–1996 → 1994–1996 | Cold-forged 6061-T6 cantilevers, brass bushings, dual spring-tension adjustment and Logic pads; front and rear offered, WCS anodised finish; 150g/pr as listed. | Cold-forged 6061-T6 cantilevers, brass bushings, dual spring-tension adjustment and Logic pads; front and rear offered, WCS anodised finish; 150g/pr as listed. | 473 | Same named model and distinguishing specifications; earlier retailer attestation. |
+| 12043 Ritchey WCS ATB Seatpost | 26 | 1995–1996 → 1994–1996 | Directional quad-butted post, titanium fixing bolt, forged clamp and cradle, hard WCS anodising; 330mm, 26.4/26.6/26.8/27.0/27.2mm, 225g. | Directional quad-butted post, titanium fixing bolt, forged clamp and cradle, hard WCS anodising; 330mm, 26.4/26.6/26.8/27.0/27.2mm, 225g. | 473 | Same named model and distinguishing specifications; earlier retailer attestation. |
+| 12047 Ritchey CompLite ATB Handlebar | 24 | 1995–1996 → 1994–1996 | Drawn 2014-T6 aluminium flat ATB bar; 4-degree bend, 560mm, silver, 150g. | Drawn 2014-T6 aluminium flat ATB bar; 4-degree bend, 560mm, silver, 150g. | 473 | Same named model and distinguishing specifications; earlier retailer attestation. |
+| 10404 Ritchey Pro WCS | 26 | 1995–1999 → 1994–1999 | Threaded 7075 alloy headset, needle and inverted upper bearings; WCS Ti-anodised finish, 37mm stack, 1in 82g or 1-1/8in 92g. Later listing describes ball cages and rollers. | Threaded 7075 alloy headset, needle and inverted upper bearings; WCS Ti-anodised finish, 37mm stack, 1in 82g or 1-1/8in 92g. Later listing describes ball cages and rollers. | 473 | Same named model and distinguishing specifications; earlier retailer attestation. |
+| 12064 Continental Competition Pro 1 | 46 | 1995–1996 → 1994–1996 | 26x2.125 MTB tyre; folding bead 650g or steel bead 700g. Dedicated Competition Pro 1 off-road model; separate from Competition road tubular. | 26x2.125 MTB tyre; folding bead 650g or steel bead 700g. Dedicated Competition Pro 1 off-road model; separate from Competition road tubular. | 473 | Same named model and distinguishing specifications; earlier retailer attestation. |
+| 12065 Continental Competition Pro 2 | 46 | 1995–1996 → 1994–1996 | 26x2.125 MTB tyre; folding bead 600g or steel bead 650g. Dedicated Competition Pro 2 off-road model; separate from Competition road tubular. | 26x2.125 MTB tyre; folding bead 600g or steel bead 650g. Dedicated Competition Pro 2 off-road model; separate from Competition road tubular. | 473 | Same named model and distinguishing specifications; earlier retailer attestation. |
+| 12067 Continental Cross Country Pro | 46 | 1995–1996 → 1994–1996 | 26x1.9 MTB tyre; folding bead 530g or steel bead 580g. | 26x1.9 MTB tyre; folding bead 530g or steel bead 580g. | 473 | Same named model and distinguishing specifications; earlier retailer attestation. |
+| 11257 Ritchey AlphaBite Trailmix | 46 | 1995–2000 → 1994–2000 | 700x35/40 hybrid on/off-road tyre, connected centre tread, Trail Mix compound; steel bead, non-folding, Comp440/470g. | 700x35/40 hybrid on/off-road tyre, connected centre tread, Trail Mix compound; steel bead, non-folding, Comp440/470g. | 473 | Same named model and distinguishing specifications; earlier retailer attestation. |
+| 10414 Continental Giro | 44 | 1995–1999 → 1994–1999 | Road/training tubular, two-ply cotton casing, 160tpi, rubber compound and ribbed tread; 22x28in, 300g, max120psi. | Road/training tubular, two-ply cotton casing, 160tpi, rubber compound and ribbed tread; 22x28in, 300g, max120psi. | 473 | Same named model and distinguishing specifications; earlier retailer attestation. |
+| 10639 Ritchey Pro WCS seat post | 26 | 1995–1996 → 1994–1996 | 2014-T6 alloy Force Directional seatpost, strategically thinned walls, hard WCS anodising; 230mm, 26.6/26.8/27.0/27.2mm; 195g. | 2014-T6 Force Directional alloy road post, hard WCS anodising, 230mm, 195g. 1994/95: quad-butted, titanium fixing bolt, forged clamp/cradle, 26.4-27.2mm. 1995/96: 26.6/26.8/27.0/27.2mm. | 473 | Same WCS road post; adds clamp/bolt construction and earlier diameter range. |
+| 10697 Ritchey Pro WCS Road | 24 | 1996–1996 → 1994–1996 | Heat-treated CrMo steel road stem, WCS colour, 90-140 mm extension, 22.2 mm quill, 80 degree, 230 g. | Heat-treated butted chromoly road quill stem, WCS anodised; 90-140mm in 10mm steps, 0 or -10deg, 22.2mm quill and 26.0mm bar clamp; 230g average. | 357 | Matching material, dimensions, weight and finish; adds 0deg option. |
+| 10401 Ritchey Expert | 26 | 1995–1999 → 1994–1999 | Threaded steel headset, 1/8in upper and 3/16in lower balls, 33mm stack; silver. 1995/96 Logic Expert: 1in 130g, 1-1/8 and 1-1/4in 140g as printed. Later Expert listing: 1in, 130g. | Threaded steel Logic Expert headset, 1/8in upper and 3/16in lower balls, 33mm stack. 1994/95: black satin, steel locknut; 1/1-1/8/1-1/4in, 130/140/150g. 1995/96: silver, 130/140/140g as printed. Later Expert: 1in, 130g. | 473 | Preserve differing edition finishes and oversize weights. |
+| 10713 Profile Design Breeze | 25 | 1996–1996 → 1994–1996 | Aluminium alloy clip-on aero bar with armrests adjustable in width from 10 to 25 cm, 425 g. | Alloy clip-on aero bar. 1994/95: 6061-T6, width 8-9in, fixed length 10.25in, black, 482g, made in USA. 1996 maker listing: armrests adjustable 10-25cm, 425g. | 357 | Same named clip-on family; retain edition-specific weights and adjustment dimensions. |
+| 10714 Profile Design Airstryke | 25 | 1996–1996 → 1994–1996 | 6061-T6 aluminium alloy clip-on aero bar, armrest width adjustable 10-25 cm, extensions adjustable up to 60 mm, anatomic padded armrests, black or silver, 490 g. | 6061-T6 alloy clip-on aero bar, 490g; black/silver. Spring-loaded pop-up armrests pivot +/-15deg; SwiftShift compatible. 1994/95: width 5-8in, length 10.3-12.6in. 1996: width 10-25cm, extension adjustment 60mm; padded armrests. | 357 | Same material, mechanism and weight; preserve edition geometry. |
+| 8399 Ritchey Force Comp (Mountain) | 24 | 1989–1992 → 1989–1995 | Butted "supertubing" chromoly, second heat treatment; exceeds JIS by 300%. Won the 1989 NORBA Worlds, 1990-91 Worlds medals. 120-160mm (170 in 1991) at 10 deg, 130 at 20, 120/140 at 30 (1992); 22.2 or 25.4 OS quill; satin chrome; 290g (150mm). | Butted twice-heat-treated CrMo,satin chrome,290g(150mm); JIS+300%,1989 NORBA/1990-91 Worlds.1991/92:120-160mm(170 in1991),10deg;130mm20deg;120/140mm30deg(1992);22.2/25.4mm quill.1994/95 ForceLite:120-150mm10deg or130mm20deg. | 150 | Page intro explicitly calls this Force Comp while listing heading says ForceLite; same construction, 290g and geometry. |
+| 12066 Continental Leader Pro | 46 | 1995–1996 → 1994–1996 | 26x2 MTB tyre; folding bead 530g or steel bead 580g. | 26x2 MTB tyre for controlled high-speed cornering. 1994/95: folding 480g or steel bead 530g. 1995/96: folding 530g or steel bead 580g. | 473 | Retain different edition masses rather than overwrite the later listing. |
+| 8382 Ritchey MegaBite Z-Max | 46 | 1991–1993 → 1991–1995 | MegaBite tread, Vector Force Analysis; new for 1991 as 26x2.1 640g / Kevlar 590g (60 tpi) and WCS Kevlar 26x2.1 530g, 26x2.35 600g (127 tpi). 1992: 26x2.1 660g, 26x2.35 700g, WCS 26x1.9 485g, 24x2.0 600g, 20x2.0 460g, 20x1.75 400g. | VFA MegaBite Z-Max, new1991. 1991 2.1:640/K590g(60tpi);WCS2.1/2.35:530/600g(127tpi). 1992 steel2.1/2.35:660/700g; WCS1.9:485g,24x2:600g,20x2:460g,20x1.75:400g. 1994/95 26in WCS1.7/1.9/2.1:410/475/550g; steel2.1/2.35:600/690g. | 150 | Same main Z-Max tread, distinct from separately offered Severe Condition, Mad-Max and Climb-Max. |
+| 6788 Continental Super Sport | 44 | 1980–1996 → 1980–1996 | Steel-bead road clincher, three-ply polyamide. 1990 Super Sport 20/25: 330g, max120psi. 1995/96: 700x20/23/25, 275/285/295g listed, max110psi. Earlier size-unspecified specimen measured215.8g. | Steel-bead road clincher, 3-ply polyamide. 1990 Super Sport20/25:330g,120psi. 1994/95:700x20/23/25,275/285/295g,130psi; 1995/96 same sizes/weights,110psi. Earlier size-unspecified specimen measured215.8g. | 473 | Retain different edition pressure ratings and measured weight. |
+| 6837 Michelin Hi-Lite Supercomp H.D. | 44 | 1988–1993 → 1988–1995 | Folding clincher, Kevlar bead, 700x20c only, 215g, 125 psi, 518/630 tpi; twice the sidewall cords and three times the cords under the tread of its nearest rival. | Folding Kevlar-bead clincher. 1988/93:700x20,215g,125psi,518/630tpi; twice sidewall and three times under-tread cords of nearest rival. 1994/95:18/20/23mm,2480 threads/dm,205/215/225g listed,110psi. | 422 | Same Supercomp H.D. family with edition-qualified size/pressure differences. |
+| 6835 Michelin Hi-Lite Comp | 44 | 1980–1996 → 1980–1996 | Clincher, 650x20, 700x20 and 700x23; nylon casing with reinforcing plies; slick tread; high mileage, for touring; 200-225 g. | Road clincher. 1994/95:folding Hi-Lite Comp,700x20/23,1160 threads/dm,205/235g listed,110psi. 1996 maker:650x20,700x20/23,reinforced nylon casing,slick tread,200-225g; high-mileage touring. | 357 | Adds dealer configuration while retaining later maker construction. |
+| 1290 Shimano Dura-Ace 7400 | 22 | 1985–1998 → 1985–1998 | Dura-Ace7400 road chainrings; replacement round rings offered 39/42/52/53/54T; general ordering range 39-54T. Distinct from older Dura-Ace and later7700/track rings. | Dura-Ace7400 road chainrings; replacement round rings39/42/52/53/54T; general39-54T range. 1994/95 also offers55/56T and SGX53A/53B. Distinct from older Dura-Ace, later7700 and track rings. | 471 | Adds supported tooth counts/SGX options within the existing 7400 road-ring family. |
+| 8389 Ritchey Road Force | 44 | 1991–1996 → 1991–1996 | Vector Force Analysis road tyre, parabolic grooves. Clincher 700x20/24/28, wire 66tpi or Kevlar 127tpi. 1991 wire/Kevlar: 210/170,220/190,260/220g; 1992: 220/180,230/200,270/220g. 1995/96 max130psi. Tubular 700x21 250g cotton/latex,120psi. | VFA road tyre, parabolic grooves;700x20/24/28,wire66tpi/Kevlar127tpi. 1991 wire/K:210/170,220/190,260/220g;1992:220/180,230/200,270/220g. 1994/95 20/24:wire220/235g105psi,K180/200g115psi;1995/96 max130psi. Tubular700x21,cotton/latex250g120psi. | 473 | Adds 1994/95 tyre pressure and width-qualified weights without discarding existing data. |
+
+#### Identity decisions and unchanged/held listings
+
+- **Profile Aero II XL** is kept apart from 11802 Aero II: earlier Aero II has discrete 7/8/9in widths, 411g and fixed-type armcups; the XL has sizing bridges, 4–8in adjustment, adjustable 9.3–13.6in length and reversible pad brackets. The explicitly described XL configuration is inserted, without extending the earlier model. Hammer, AirWave and Pursuit have no maker/category/model alias or numbered equivalent in the live snapshot. Pursuit is CrMo with titanium finish.
+- **Topline** reuses maker261. Road2006 is unchanged at 345g; the independently offered Super-Light/Heavy Duty ATB arms are distinct at 350g/420g, with the Super-Light180lb limit. They are separate source-described models, not duplicates of Road2006. Printed Micro Drive/TNT bolt-pattern figures are retained as printed, not normalised to an assumed standard.
+- **Kingsbury** has no existing maker/model alias or matching post. Aluminium and titanium are independently offered and retain their distinct diameters/lengths and 230g/200g average masses. **Onza Buzz Saw** is a new category for existing Onza764, with stainless construction/74-or-110mm pattern; neither current pedal row is related.
+- **Ritchey ForceLite ATB** enriches8399 Force Comp Mountain: the page introduction explicitly calls it Force Comp; construction, finish, 290g and geometry agree. Preserve the earlier title and the ForceLite alias in its description. **ForceLite Road** remains unassigned against8401 Force Comp Road/8402 FD Road/10154 CompLite Road: same geometry alone does not resolve the name/weight lineage. WCS Road10697 matches material, geometry and230g. WCS ATB and ForceLite Threadless have no corresponding early stem; they remain distinct from later removable-faceplate2000 stems11290–11292. The source’s140g WCS ATB mass is retained as a listed figure.
+- **Ritchey headsets:** Logic Comp8417 unchanged; Pro WCS10404 has matching needle/inverted bearings,37mm stack and82/92g; Expert10401 is the expressly tier-labelled Expert, while old Logic3078 retains its original identity. Expert finish and oversized weights differ by edition; keep black130/140/150g versus later silver130/140/140g. Do not merge on shared geometry.
+- **Ritchey bars/posts/brakes:** ProLite8404 and WCS8403 already cover the date/spec; unchanged. CompLite12047, WCS ATB levers12026, WCS cantilevers12029 and WCS ATB post12043 gain1994 attestation. Road WCS10639 adds the quad-butting/titanium bolt/clamp details. Logic brakes8415/levers8416 already cover the edition; their historical weights remain intact.
+- **Ritchey tyres:** normal WCS/steel Z-Max mentions update8382; Severe Condition is a separately offered deeper tread and is kept separate. Mad-Max/Climb-Max are separately offered front/rear versus climbing-rear models and differ from the later narrow MudMax11258. **Moab Bite** is not assigned to12063 Moby Bite: the earlier slickrock/commuter name/620g versus later name/650g lacks a crosswalk. Tom Slick8390 and Cross-Bite8391 already cover these sizes/beads/weights; no redundant updates. Alfa-Bite maps to11257 AlphaBite Trailmix by model,compound,sizes,steel bead and440/470g.
+- **Tyres:** Continental GP6782 already carries sizes/construction/masses; the source’s duplicated18/20/20 width remains in the inventory and does not alter the independent existing18/20/23 range. Sprinter2506787 unchanged. Competition GP26/GP/240 are held against10415; the prior road-tubular crosswalk limitation remains. Giro10414 and MTB Pro1/Pro2/CrossCountry12064/12065/12067 gain1994 attestation. Leader Pro12066 retains both editions’ different weights. Super Sport6788 retains both pressure ratings and215.8g measured. Hi-Lite Comp6835 and Supercomp HD6837 preserve their maker/earlier facts while gaining the dealer-specific dimensions/pressure. **Hi-Lite Road II** remains unassigned to9498 Hi-Lite Road without an exact version crosswalk. Avocet FasGrip is held against6719/6720/6722/6723: prose says Time Trial but the table omits the code, and the model-specific widths/casing identity is not settled.
+- **Chains/cassettes:** Shimano HG-90 8-speed is existing7671 (not7-speed1202), unchanged; Ultegra HG-91 is7665, unchanged. Dura-Ace cassette1208 already covers this family. Sedis SL/Campagnolo Contax has no secure exact chain identity; Sedis ATB remains held against1397/11701/12056/12057 because the uncoded label alone does not choose a generation. Shimano Dura-Ace/XTR HG is likewise not used to choose a coded chain by group name alone.
+- **Chainrings:** Dura-Ace listings expand existing7400-family1290 with55/56T and53A/53B SGX; do not create repeated rows for individual tooth options. 600 Ultegra has a distinct8-speed road family, not earlier600EX1285. Campagnolo EXA-Drive group context onp.20 and separate Record versus Chorus/Athena outer offers onp.22 establish two outer-ring families distinct from1990 pre-EXA11816–11818 and2000/2001 coded9/10-speed rings11179 onward. The shared39/42T inner listing remains held because it does not distinguish the earlier C-Record ring family from the later shared family; do not insert another generic inner.
+- **Wheels:** Campagnolo Vento front/rear are already6963’s documented earlier20-spoke version, unchanged. Bora front/rear are covered by6954, unchanged. Shamal’s combined clincher/tubular790/1040g figures are not assigned separately to6961/6962; retain the maker-specific variants. Spinergy Rev-X front/rear/clincher/tubular mentions remain held against11952–11957; no source-proven version crosswalk or separately qualified axle weights.
+- **Grip Shift:** all five road/ATB compatibility options remain unassigned to11800 Pro or later SRAM records: shop order codes are not maker model codes. No new generically named shifter rows.
+- **Other p.21 group-only matrix entries** (cranks,BBs,headsets,hubs,derailleurs,downtube/STI/Ergo levers and brakes) provide group-level availability but no additional model code,reach,cage,axle length or version evidence. Existing coded families were checked by maker/category/group and dates. No generic placeholders are inserted, and no exact dated variant is extended merely because its group is named. ISO threaded headset wording is not propagated across all generations. The105SC headset3086 already covers its standard-bearing construction; the cartridge Ultegra3088/Dura-Ace3100 are already date-compatible. Shimano8-speed Dura-Ace bar-end6146 already covers the configuration; unchanged. Campagnolo Chorus BB26 and Athena BB7048 are already compatible with the standard-bearing offers.
+
+#### Baseline and validation
+
+Before load:11134 components,23380 live specs. Generator/live comparison across every loaded local catalogue:23365 unchanged,15 pre-existing lost proposals, no gained/changed proposals,missing identities or ambiguity. Existing affected duplicate-report pair8399/8401 is road/mountain configuration, retained. Applied and validated: exactly17 inserts and23 updates, source474, maker766, and associations766/18(Kingsbury/Seat Posts),764/5(Onza/Chainrings),94/22(Profile Design/Stems). Identical SQL rerun affected zero rows in every table. Exact field readback passed for every planned new/updated row; all other existing components are byte-for-byte unchanged. All descriptions fit255 characters (largest changed/new description243). Stable titles/search text/images and maker/category/group/UUID fields on existing rows are unchanged; affected references are valid.
+
+All23380 live specs are identical before/after, and the complete generator/live report over **108 loaded catalogues** is identical, including the same15 pre-existing lost proposals. Nine existing specs on affected rows remain unchanged:1453,1606,14758,15719,17138,25176,6912,6933,19537. No new date flag or dangling link was introduced. No supported new links were found; the remaining maker-only Ritchey seatpost19545 cannot be identified from these later WCS variants. Full normal/near/parenthetical duplicate classification over the live snapshots introduced no new or changed candidate pair. Manual comparisons retain the source-distinct Topline ATB models, Kingsbury material versions and Profile XL configuration; existing8399/8401 remains a mountain/road configuration pair. No destructive reconciliation was needed.
+
+### Complete component listings by category
+
+#### Bottom Brackets
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Campagnolo Record | Cartridge; Italian or British threading; no maker code printed. | 1994/95 |
+| 21 | Campagnolo Chorus | Standard; Italian or British threading; no maker code printed. | 1994/95 |
+| 21 | Campagnolo Athena | Standard; Italian or British threading; no maker code printed. | 1994/95 |
+| 21 | Shimano Dura-Ace | Cartridge; Italian or British threading; no maker code printed. | 1994/95 |
+| 21 | Shimano 600 Ultegra | Cartridge; Italian or British threading; no maker code printed. | 1994/95 |
+| 21 | Shimano 105SC/RX100 (SLP) | Cartridge; Italian or British threading; no maker code printed. | 1994/95 |
+
+#### Brake Levers
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 26 | Ritchey WCS | Cold-forged 6061-T6, three-finger contoured wedge profile with index-finger harbour; 180g/pair; cables and black housing; WCS anodised. | 1994/95 |
+| 26 | Ritchey Logic | Cold-forged 6061-T6, three-finger contoured wedge profile with index-finger harbour; 180g/pair; cables and black housing; black/silver. | 1994/95 |
+
+#### Brakes
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Campagnolo Record Extra | Caliper pair without levers; dual pivot. | 1994/95 |
+| 21 | Campagnolo Chorus | Caliper pair without levers; dual pivot. | 1994/95 |
+| 21 | Campagnolo Athena | Caliper pair without levers; pivot type unstated. | 1994/95 |
+| 21 | Shimano Dura-Ace Dual Pivot | Sold in complete STI brakeset; no caliper maker code printed. | 1994/95 |
+| 21 | Shimano 600 Ultegra Dual Pivot | Sold in complete STI brakeset; no caliper maker code printed. | 1994/95 |
+| 21 | Shimano 105SC Dual Pivot | Sold in complete STI brakeset; no caliper maker code printed. | 1994/95 |
+| 21 | Shimano RX100 Dual Pivot | Sold in complete STI brakeset; no caliper maker code printed. | 1994/95 |
+| 26 | Ritchey WCS Cantilevers | Cold-forged 6061-T6, 150g/pair; Logic pads. Brass-bushed pivots, dual 2mm Allen spring adjustment, WCS anodised. | 1994/95 |
+| 26 | Ritchey Logic Cantilevers | Cold-forged 6061-T6, 150g/pair; Logic pads. Single 2mm Allen adjustment, black/silver. | 1994/95 |
+
+#### Cassettes
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Campagnolo Steel EXA | 8-speed; 12–21/12–23/13–21/13–23/13–26. | 1994/95 |
+| 21 | Shimano Dura-Ace | 8-speed; 12–21/12–23/13–23/12–25/13–26. | 1994/95 |
+| 21 | Shimano HG-90, 600 Ultegra | 8-speed; 12–21/12–23/13–23/12–25/13–26. | 1994/95 |
+| 21 | Shimano 105SC/RX100 | 8-speed; 11–21 super compact. | 1994/95 |
+
+#### Chainrings
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 22 | Campagnolo Record EXA-Drive | 52/53 teeth; retailer order code is not a maker part number. | 1994/95 |
+| 22 | Campagnolo All Groups | 39/42 teeth; retailer order code is not a maker part number. | 1994/95 |
+| 22 | Campagnolo Chorus/Athena | 52/53/54 teeth; retailer order code is not a maker part number. | 1994/95 |
+| 22 | Shimano Dura-Ace | 39/42 teeth; retailer order code is not a maker part number. | 1994/95 |
+| 22 | Shimano Dura-Ace | 52/53/54/55/56 teeth; retailer order code is not a maker part number. | 1994/95 |
+| 22 | Shimano Dura-Ace SGX | 53A/53B; retailer order code is not a maker part number. | 1994/95 |
+| 22 | Shimano 600 Ultegra | 39/40/42 teeth; retailer order code is not a maker part number. | 1994/95 |
+| 22 | Shimano 600 Ultegra | 52/53 teeth; retailer order code is not a maker part number. | 1994/95 |
+| 27 | Onza Buzz Saw | Precision-machined stainless steel; 74 or 110mm bolt pattern, 24/26/34/36 teeth; USA. | 1994/95 |
+
+#### Chains
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Shimano Dura-Ace/XTR HG | Separate chain listing; no further specification printed. | 1994/95 |
+| 21 | Shimano Ultegra HG-91 | Separate chain listing; no further specification printed. | 1994/95 |
+| 21 | Sedis SL/Campagnolo Contax | Separate chain listing; no further specification printed. | 1994/95 |
+| 21 | Sedis ATB | Separate chain listing; no further specification printed. | 1994/95 |
+
+#### Cranksets
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Campagnolo Record | Arms and chainrings; 172.5/175/180mm; offered combinations 39/52,39/53,42/52,42/53. | 1994/95 |
+| 21 | Campagnolo Chorus | Arms and chainrings; 170/172.5/175mm; offered combinations 39/52,39/53,42/52,42/53. | 1994/95 |
+| 21 | Campagnolo Athena | Arms and chainrings; 170/172.5mm; offered combinations 39/52,39/53,42/52,42/53. | 1994/95 |
+| 21 | Shimano Dura-Ace | Arms and chainrings; 172.5/175/180mm; offered combinations 39/53,42/52,42/53. | 1994/95 |
+| 21 | Shimano 600 Ultegra | Arms and chainrings; 172.5/175mm; offered combinations 39/53,42/52,42/53. | 1994/95 |
+| 21 | Shimano 105SC | Arms and chainrings; 172.5/175mm; offered combinations 39/53,42/52,42/53. | 1994/95 |
+| 21 | Shimano RX100 | Arms and chainrings; 170/175mm; offered combinations 39/53,42/52,42/53. | 1994/95 |
+| 27 | Top Line Road | Machined/drilled aluminium arms; 345g/pair, Campagnolo- or Shimano-compatible chainring patterns; 9/16in pedals; polished silver. | 1994/95 |
+| 27 | Top Line ATB Super-Light | Machined/drilled aluminium arms; 350g/pair; 180lb rider limit; 9/16in pedals; silver/black/blue. ATB bolt patterns printed: Shimano 94–58 or 110–74, Micro Drive 94–56, HyperDrive 94–58, TNT 110–56mm; preserve as printed pending identity checks. | 1994/95 |
+| 27 | Top Line ATB Heavy Duty | Machined/drilled aluminium arms; 420g/pair; 9/16in pedals; silver/black/blue. ATB bolt patterns printed: Shimano 94–58 or 110–74, Micro Drive 94–56, HyperDrive 94–58, TNT 110–56mm; preserve as printed pending identity checks. | 1994/95 |
+
+#### Front Derailleurs
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Campagnolo Record | Clamp or braze-on; no maker code printed. | 1994/95 |
+| 21 | Campagnolo Chorus/Athena | Clamp or braze-on; no maker code printed. | 1994/95 |
+| 21 | Shimano Dura-Ace | Clamp or braze-on; no maker code printed. | 1994/95 |
+| 21 | Shimano 600 Ultegra | Clamp or braze-on; no maker code printed. | 1994/95 |
+| 21 | Shimano 105SC | Clamp or braze-on; no maker code printed. | 1994/95 |
+| 21 | Shimano RX100 | Clamp or braze-on; no maker code printed. | 1994/95 |
+
+#### Handlebars
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 24 | Ritchey CompLite | Seamless 2014-T6 alloy, 4deg, 560mm, silver, 150g. | 1994/95 |
+| 24 | Ritchey ProLite | Butted Easton EA70, 4deg, 560mm, black/silver, 140g. | 1994/95 |
+| 24 | Ritchey ProLite WCS | Butted Easton EA70, 4deg, 560mm, hard platinum WCS anodised, 123g. | 1994/95 |
+| 25 | Profile Breeze | 6061-T6, 482g; width 8–9in; fixed length 10.25in; black; clip-on. Made in USA. | 1994/95 |
+| 25 | Profile Aero II XL | 440g; width 4–8in; length 9.3–13.6in; sizing bridges; reversible pad brackets; 6061-T1 tubing, T6 brackets/extensions; black/gunmetal blue; SwiftShift compatible. Made in USA. | 1994/95 |
+| 25 | Profile AirStryke | 490g; 6061-T6; width 5–8in, length 10.3–12.6in; spring-loaded pop-up armrests pivot +/-15deg; black/silver; SwiftShift compatible. Made in USA. | 1994/95 |
+| 25 | Profile AirWave | One-piece aero bar, 625g; width 5.5/6.5/7.5in, length 2.7–10.6in; SwiftShift compatible. Made in USA. | 1994/95 |
+| 25 | Profile Hammer | 6061-T4, 312g; bulged 26.0mm centre, two grip shims; 40/42cm shallow or 42/44cm deep, centre-to-centre; gunmetal blue, laser graphics. Made in USA. | 1994/95 |
+
+#### Headsets
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Campagnolo Record | ISO threaded; standard bearing; no maker code printed. | 1994/95 |
+| 21 | Campagnolo Chorus | ISO threaded; standard bearing; no maker code printed. | 1994/95 |
+| 21 | Campagnolo Athena | ISO threaded; standard bearing; no maker code printed. | 1994/95 |
+| 21 | Shimano Dura-Ace | ISO threaded; cartridge bearings; no maker code printed. | 1994/95 |
+| 21 | Shimano 600 Ultegra | ISO threaded; cartridge bearings; no maker code printed. | 1994/95 |
+| 21 | Shimano 105SC | ISO threaded; standard bearing; no maker code printed. | 1994/95 |
+| 26 | Ritchey Pro WCS | CNC 7075 cups, needle bearings, inverted top bearing; 37mm stack; 1in/1-1/8in, 82/92g; rubber seals, WCS anodised. | 1994/95 |
+| 26 | Ritchey Logic Comp | Sealed; 3/16in lower and 1/8in top bearings; 33mm stack; duralumin locknut, black satin; 1in, 110g. | 1994/95 |
+| 26 | Ritchey Logic Expert | 3/16in lower and 1/8in top bearings; 33mm stack; steel locknut, black satin; 1in/1-1/8in/1-1/4in, 130/140/150g. | 1994/95 |
+
+#### Hubs
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Campagnolo Record | Hub pair; 8-speed rear cassette, 28/32/36 holes. | 1994/95 |
+| 21 | Campagnolo Chorus | Hub pair; 8-speed rear cassette, 28/32/36 holes. | 1994/95 |
+| 21 | Campagnolo Athena | Hub pair; 8-speed rear cassette, 28/32/36 holes. | 1994/95 |
+| 21 | Shimano Dura-Ace | Hub pair; 8-speed rear cassette, 28/32/36 holes. | 1994/95 |
+| 21 | Shimano 600 Ultegra | Hub pair; 8-speed rear cassette, 28/32/36 holes. | 1994/95 |
+| 21 | Shimano 105SC | Hub pair; 8-speed rear cassette, 28/32/36 holes. | 1994/95 |
+| 21 | Shimano RX100 | Hub pair; 8-speed rear cassette, 28/32/36 holes. Super-compact option. | 1994/95 |
+
+#### Rear Derailleurs
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Campagnolo Record | Listed under 7/8-speed; no cage, capacity or maker code printed. | 1994/95 |
+| 21 | Campagnolo Chorus | Listed under 7/8-speed; no cage, capacity or maker code printed. | 1994/95 |
+| 21 | Campagnolo Athena | Listed under 7/8-speed; no cage, capacity or maker code printed. | 1994/95 |
+| 21 | Shimano Dura-Ace | Listed under 7/8-speed; no cage, capacity or maker code printed. | 1994/95 |
+| 21 | Shimano 600 Ultegra | Listed under 7/8-speed; no cage, capacity or maker code printed. | 1994/95 |
+| 21 | Shimano 105SC | Listed under 7/8-speed; no cage, capacity or maker code printed. | 1994/95 |
+| 21 | Shimano RX100 | Listed under 7/8-speed; no cage, capacity or maker code printed. | 1994/95 |
+
+#### Seat Posts
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 26 | Ritchey Pro WCS Road | Directional quad-butted, titanium fixing bolt, forged clamp/cradle; hard WCS anodised; 26.4–27.2mm; 230mm, 195g. | 1994/95 |
+| 26 | Ritchey Pro WCS ATB | Directional quad-butted, titanium fixing bolt, forged clamp/cradle; hard WCS anodised; 26.4–27.2mm; 330mm, 225g. | 1994/95 |
+| 27 | Syncros Titanium | 180g average, adjustable clamp; 27.2mm (other diameters on request); 225/330mm. | 1994/95 |
+| 27 | Kingsbury Aluminium | Dual Allen clamp; 230g average; 220mm in 25.0/26.4/26.6/26.8/27.0/27.2/27.4mm, 330mm in 26.6/26.8/27.0/27.2mm. | 1994/95 |
+| 27 | Kingsbury Titanium | Dual Allen clamp; 200g average; 27.2mm, 225/350mm. | 1994/95 |
+
+#### Shifters
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Campagnolo Downtube | All groups; no maker code printed. | 1994/95 |
+| 21 | Shimano Dura-Ace Downtube | No maker code printed; 8-speed group context. | 1994/95 |
+| 21 | Shimano 600 Ultegra Downtube | No maker code printed; 8-speed group context. | 1994/95 |
+| 21 | Shimano 105SC Downtube | No maker code printed; 8-speed group context. | 1994/95 |
+| 21 | Shimano RX100 Downtube | No maker code printed; 8-speed group context. | 1994/95 |
+| 21 | Shimano Dura-Ace Bar End | Explicitly 8-speed; no maker code printed. | 1994/95 |
+| 27 | Grip Shift ATB/Cross | Shimano 6- or 7-speed; GS-SL-C. Retailer codes retained only as ordering evidence; no maker model code. | 1994/95 |
+| 27 | Grip Shift ATB | Shimano 7- or 8-speed; GS-SL-A; lighter/more responsive than ATB/Cross. Retailer codes retained only as ordering evidence; no maker model code. | 1994/95 |
+| 27 | Grip Shift Road 7 | Shimano 7-speed Ultegra/105/RX100; GS-SL-R7. Retailer codes retained only as ordering evidence; no maker model code. | 1994/95 |
+| 27 | Grip Shift Road 8 | Shimano 8-speed Ultegra/105; GS-SL-R8. Retailer codes retained only as ordering evidence; no maker model code. | 1994/95 |
+| 27 | Grip Shift Road Dura-Ace | Shimano 7/8-speed Dura-Ace; GS-SL-DA. Retailer codes retained only as ordering evidence; no maker model code. | 1994/95 |
+
+#### Shifting Brake Levers
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Campagnolo Record Ergo Power | Carbon shell; 8-speed group context; no maker code printed. | 1994/95 |
+| 21 | Campagnolo Chorus Ergo Power | 8-speed group context; no maker code printed. | 1994/95 |
+| 21 | Campagnolo Athena Ergo Power | 8-speed group context; no maker code printed. | 1994/95 |
+| 21 | Shimano Dura-Ace STI | 8-speed; also offered as STI/dual-pivot complete brakeset bundle. | 1994/95 |
+| 21 | Shimano 600 Ultegra STI | 8-speed; also offered as STI/dual-pivot complete brakeset bundle. | 1994/95 |
+| 21 | Shimano 105SC STI | 8-speed; also offered as STI/dual-pivot complete brakeset bundle. | 1994/95 |
+| 21 | Shimano RX100 STI | 8-speed; also offered as STI/dual-pivot complete brakeset bundle. | 1994/95 |
+
+#### Stems
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 24 | Ritchey WCS ATB | Heat-treated butted CrMo; 120/130/140/150mm, +10deg; 1in or 1-1/8in, 25.4mm clamp; WCS anodised, 140g. | 1994/95 |
+| 24 | Ritchey ForceLite ATB | 120/130/140/150mm +10deg or 130mm +20deg; 1in/1-1/8in; 25.4mm; satin chrome, 290g. Introductory prose calls it Force Comp; listing says ForceLite. | 1994/95 |
+| 24 | Ritchey ForceLite Threadless | 120/130/140/150mm, reversible +/-4deg; 1in/1-1/8in, 25.4mm, satin, 180g. | 1994/95 |
+| 24 | Ritchey WCS Road | Heat-treated butted CrMo, WCS anodised, 230g; 90–140mm in 10mm steps, 0 or -10deg, 22.2mm quill/26.0mm clamp. | 1994/95 |
+| 24 | Ritchey ForceLite Road | Satin chrome, 260g; shared road specification 90–140mm in 10mm steps, 0 or -10deg, 22.2mm quill/26.0mm clamp. | 1994/95 |
+| 25 | Profile Pursuit | TIG-welded double-butted CrMo, recessed expansion bolt, aerated clamp; titanium finish (not titanium construction); 195g, 26.0mm, -10deg; 90–140mm in 10mm steps. | 1994/95 |
+
+#### Tyres
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 44 | Continental Competition GP26 | Tubular; 26in, 19mm; 5-ply polyamide, 220g, 170psi; TT/triathlon. | 1994/95 |
+| 44 | Continental Competition GP | Tubular; 19mm; 5-ply polyamide, 225g, 170psi; racing/triathlon. | 1994/95 |
+| 44 | Continental Competition 240 | Tubular; 22mm; 5-ply polyamide, 240g, 170psi; racing/wet/rough roads. | 1994/95 |
+| 44 | Continental Sprinter 250 | Tubular; 22mm; 3-ply polyamide, 250g, 170psi; racing/training. | 1994/95 |
+| 44 | Continental Giro | Tubular; 22mm; 2-ply cotton, 300g, 120psi; training/fast riding. | 1994/95 |
+| 44 | Continental Grand Prix | Folding clincher; 3-ply polyamide, 140psi; table prints widths 18/20/20 and weights 165/170/190g. Duplicate width retained as source ambiguity; do not silently infer 23mm. | 1994/95 |
+| 44 | Michelin Super Comp H.D. | Folding clincher; 18/20/23mm, 2480 threads/dm, 205/215/225g listed, 110psi. | 1994/95 |
+| 44 | Avocet FasGrip | Folding clincher; 20/23mm, 66tpi, 215/225g listed, 115psi; prose heading says Fast Grip Time Trial. | 1994/95 |
+| 44 | Ritchey Road Force (folding) | Clincher; 20/24mm, 127tpi, 180/200g listed, 115psi. | 1994/95 |
+| 44 | Continental Super Sport | Steel-bead clincher; 20/23/25mm, 3-ply polyamide, 275/285/295g listed, 130psi. | 1994/95 |
+| 44 | Michelin Hi-Lite Comp | Folding clincher; 20/23mm, 1160 threads/dm, 205/235g listed, 110psi. | 1994/95 |
+| 44 | Ritchey Road Force (steel) | Clincher; 20/24mm, 66tpi, 220/235g listed, 105psi. | 1994/95 |
+| 44 | Michelin Hi-Lite Road II | Clincher; 20/23mm, 720 threads/dm, 220/235g listed, 110psi. | 1994/95 |
+| 46 | Ritchey WCS Z Max | Folding Kevlar bead; front/rear, blackwall; 26x1.7 410g, 26x1.9 475g, 26x2.1 550g. | 1994/95 |
+| 46 | Ritchey Z Max (steel) | Front/rear, blackwall; 26x2.1 600g, 26x2.35 690g. | 1994/95 |
+| 46 | Ritchey WCS Z Max Severe Condition | Folding Kevlar bead, deeper tread; front/rear, blackwall; 26x2.1, 560g. | 1994/95 |
+| 46 | Ritchey Mad-Max | Steel bead, front/rear, blackwall; 26x2.1, 660g. | 1994/95 |
+| 46 | Ritchey Climb-Max | Steel bead, rear climbing tyre, blackwall; 26x2.1, 650g. | 1994/95 |
+| 46 | Ritchey Alfa-Bite Trail Mix | Steel bead, hybrid/touring; 700x35 440g or 700x40 470g. | 1994/95 |
+| 46 | Ritchey Cross Bite (folding) | Skinwall, 26x1.1, 330g, 90psi; pavement/rough-road. | 1994/95 |
+| 46 | Ritchey Cross Bite (steel) | Skinwall; 26x1.9 490g or 700x38 450g. | 1994/95 |
+| 46 | Ritchey Moab Bite | Steel bead, blackwall, slickrock/commuting; 26x2.1, 620g. | 1994/95 |
+| 46 | Ritchey Tom Slick (folding) | Kevlar bead; 26x1.4, 360g; high-wear centre, inverted edge wedges. | 1994/95 |
+| 46 | Ritchey Tom Slick (steel) | Skinwall, 26x1.4, 450g. | 1994/95 |
+| 46 | Continental Competition Pro 1 | Coarse/hard ground; 26x2.125; folding 650g or steel bead 700g. | 1994/95 |
+| 46 | Continental Competition Pro 2 | Softer ground, angular profile; 26x2.125; folding 600g or steel bead 650g. | 1994/95 |
+| 46 | Continental Leader Pro | High-speed cornering; 26x2.0; folding 480g or steel bead 530g. | 1994/95 |
+| 46 | Continental Cross Country Pro | All-purpose trail/road; 26x1.9; folding 530g or steel bead 580g. | 1994/95 |
+
+#### Wheel(sets)
+
+| Page | Printed identity / inventory title | Description | Edition year |
+| --- | --- | --- | --- |
+| 21 | Campagnolo Shamal front clincher | 16 radial spokes, Record hubs; front 790g/rear 1040g. | 1994/95 |
+| 21 | Campagnolo Shamal front tubular | 16 radial spokes, Record hubs; front 790g/rear 1040g. | 1994/95 |
+| 21 | Campagnolo Shamal rear clincher | 16 radial spokes, Record hubs; front 790g/rear 1040g. | 1994/95 |
+| 21 | Campagnolo Shamal rear tubular | 16 radial spokes, Record hubs; front 790g/rear 1040g. | 1994/95 |
+| 21 | Campagnolo Vento front clincher | 20 radial spokes, Athena hubs; weight unstated. | 1994/95 |
+| 21 | Campagnolo Vento rear clincher | 20 radial spokes, Athena hubs; weight unstated. | 1994/95 |
+| 21 | Campagnolo Bora front tubular | 16 radial spokes; carbon-fibre rims; weight unstated. | 1994/95 |
+| 21 | Campagnolo Bora rear tubular | 16 radial spokes; carbon-fibre rims; weight unstated. | 1994/95 |
+| 21 | Spinergy Rev-X front clincher | Four pairs tensioned carbon-fibre spokes; sealed hubs, heat-treated rims; printed 839g/each is not separately qualified by axle; rear Shimano 8-speed compatible. | 1994/95 |
+| 21 | Spinergy Rev-X front tubular | Four pairs tensioned carbon-fibre spokes; sealed hubs, heat-treated rims; printed 738g/each is not separately qualified by axle; rear Shimano 8-speed compatible. | 1994/95 |
+| 21 | Spinergy Rev-X rear clincher | Four pairs tensioned carbon-fibre spokes; sealed hubs, heat-treated rims; printed 839g/each is not separately qualified by axle; rear Shimano 8-speed compatible. | 1994/95 |
+| 21 | Spinergy Rev-X rear tubular | Four pairs tensioned carbon-fibre spokes; sealed hubs, heat-treated rims; printed 738g/each is not separately qualified by axle; rear Shimano 8-speed compatible. | 1994/95 |
+
+### What this edition establishes
+
+The detailed Profile Hammer/Pursuit, Kingsbury aluminium/titanium, and Top Line ATB Super-Light/Heavy Duty boxes are concrete reconciliation targets. Top Line road and ATB masses are distinct: 345g versus 350g/420g per pair; the Super-Light has an explicit 180lb limit. Pursuit is CrMo with titanium finish. Kingsbury titanium lengths are 225/350mm, unlike the aluminium 220/330mm options. Preserve those distinctions.
+
+Profile Aero II **XL** must be compared by dimensions/construction with existing Aero II entries; the suffix alone does not prove either identity or distinctness. Grip Shift options are compatibility-specific and lack maker model codes. Campagnolo/Shimano group labels do not establish an exact model-code or generation crosswalk. Spinergy Rev-X lists 839g clincher/738g tubular “each” without separate front/rear masses; do not copy a single axle-qualified weight from another edition over this ambiguity.
+
+Compared with the already processed 1995/96 inventory, this edition has a dense group matrix and dedicated Ritchey/Profile pages, and can supply an earlier attestation for shared products. No disappearance, manufacturing-end or exact new-row count is inferred from differences in retailer selection. The Continental GP width table prints 18/20/20; retain the error explicitly until corroborated. Continental Competition GP/240 crosswalks remain governed by the existing tyre decisions rather than name similarity.
+
+The preceding inventory contains150 listing mentions (bead variants combined where described together); these are not150 new components. Live reconciliation is now applied and validated above. Inventory and application scratch files were removed after validation; the original PDF remains in the held-source directory. Unresolved identities are evidence decisions above, not pending speculative inserts.
+
 ## Branford 1995/96 component catalogue — applied and validated 2026-11-19
 
-**Applied and validated after explicit user approval.** Added components **12022–12070**, updated **55 existing rows**, registered source **473**, brands **Kooka762, Ringlé763, Onza764, Kore765**, and ten category/brand pairs. This completes the component reconciliation for this edition. No bicycle rows, bike-spec writes, CSV or matcher edits, merges or deletions. The earlier 1994/95 and archive-attributed 1987 sources remain separate work.
+**Applied and validated after explicit user approval.** Added components **12022–12070**, updated **55 existing rows**, registered source **473**, brands **Kooka762, Ringlé763, Onza764, Kore765**, and ten category/brand pairs. This completes the component reconciliation for this edition. No bicycle rows, bike-spec writes, CSV or matcher edits, merges or deletions. The earlier1994/95 edition is now reconciled above; archive-attributed1987 remains separate pending work.
 
 [Original 48-page PDF](https://timslife.com/brancat/Catalogs/bb19-2_1995.pdf), 57,698,585 bytes; retained at `/tmp/branford-edition-triage-20261119/bb19-2_1995.pdf`. Cover: **1995/96, Vol.19 No.2**, orders through **31 December 1996**. This is period retailer availability/configuration evidence, not manufacturing introduction/discontinuation evidence. New rows use **1995–1996** as the edition availability window; existing earlier/later independent attestations are retained. Retailer stock codes are not maker part numbers.
 
@@ -494,7 +861,7 @@ Readback verified **all 49 new and 55 updated components** against the approved 
 - Full maker/category, model-code and spelling/ownership-alias searches preceded insertion. Applied group/near/parenthetical duplicate checks match the reviewed simulation exactly: **four configuration/generation pairs, three existing near-code pairs, zero parenthetical-name pairs**, retained for the independently documented distinctions above. No new unreviewed affected candidates.
 - Preflight rechecked **55 exact before-images**, absence of the **49 new UUIDs/model identities**, brand/source absence, actual field limits, and **119 EXPLAIN plans** before loading. Snapshot checks were READ ONLY; MySQL required EXPLAIN DML outside that transaction after rollback. Maximum applied component description **239** characters, source citation **148**, new eBay search text **45**; exact readback confirms all values fit.
 
-The original three acquired Branford PDFs remain in `/tmp/branford-edition-triage-20261119/`; 1994/95 and attributed1987 still await their own inventories. After application, exact readback, mapping/date/duplicate validation and the zero-change rerun, the completed 1995/96 task's temporary SQL, transcriptions, snapshots, reports and helpers were removed. The full page ledger, source inventory, new IDs/load UUIDs, prior values and identity decisions above are the lasting evidence. No audit SQL is committed.
+The original three acquired Branford PDFs remain in `/tmp/branford-edition-triage-20261119/`; the1994/95 reconciliation is now applied/validated above; attributed1987 still awaits its inventory. After application, exact readback, mapping/date/duplicate validation and the zero-change rerun, the completed 1995/96 task's temporary SQL, transcriptions, snapshots, reports and helpers were removed. The full page ledger, source inventory, new IDs/load UUIDs, prior values and identity decisions above are the lasting evidence. No audit SQL is committed.
 
 ## Colorado Cyclist components — applied and validated 2026-11-19
 
