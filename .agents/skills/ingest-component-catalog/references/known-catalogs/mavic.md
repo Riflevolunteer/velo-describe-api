@@ -380,6 +380,87 @@ restoring these.
 {"component_id": 12099, "description": "Silver SBP 700c trekking clincher,622x17,23mm wide,14.6mm high,PSP profile,single stainless eyelets;36h,500g. Distinct from26in M231."}
 ```
 
+## Rims & Wheels catalogue, GB edition (1999) — full reconciliation, applied and validated
+
+Source: [13-page PDF](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf),
+two printed pages per PDF page (printed p = 2×PDF−1 / 2×PDF). Reused existing
+source **374**; no duplicate source. All pages read; small print checked from
+200–400 dpi crops. The partial OCR text layer is unreliable for figures.
+
+Product pages: MTB wheels pp.10–12 (Crossmax, Crossmax Disc, Crosslink,
+Crosslink Disc, Deemax), DH/XC MTB rims pp.12–13, MX 601 hub p.14, BMX rims and
+XIXIX wheels p.15, road wheels pp.16–19 (Classics Pro/Elite, Cosmic Equipe/Elite,
+Helium, Cosmic Carbone, Comète road/track, Io), road rims pp.20–21, trekking
+rims p.22, MR 601 hub p.23, CC9 p.24, CC8 kit / Kit HG/CC9 / disc adapters p.25.
+Skipped: pp.1–9 (cover, teams, neutral service, technology, manufacturing,
+service). Out of scope: BR 601, BR 601 Composite, BX 601 Composite skewers;
+disc adapters, CC8 kit, Kit HG/CC9. Earlier targeted corrections (CC9, Open Pro
+p.20, Reflex p.21, T217/T261 p.22) were not reopened.
+
+New versus 1997: the MTB rims are renumbered D321 Disc, D521, X317 Disc, X517,
+X222, X138 (none of 121/217/220/221/238 is listed); "New" markers on CXP 23,
+T223, XIXIX, Open Pro 650 and a second BMX rim. Absent versus 1997: Crossland
+9989, Cosmic Expert 9987, Cosmic Pro 9988, T238 9982; their caps are unchanged.
+
+Applied 2026-11-19 (user approved), all `source_ref` 374:
+
+- Inserted (1999–1999, group NULL, UUID source_id): wheels **12110** Crossmax
+  Disc, **12111** Crosslink, **12112** Crosslink Disc, **12113** Deemax,
+  **12114** XIXIX, **12115** Classics Pro, **12116** Classics Elite, **12117**
+  Cosmic Elite, **12118** Io; rims **12119** D321 Disc, **12120** D521, **12121**
+  X317 Disc, **12122** X517, **12123** X222, **12124** X138, **12125** CXP 23,
+  **12126** T138, **12127** T223; hubs **12128** MR 601, **12129** MX 601.
+- `year_to` 1997 → 1999 with descriptions: 9990 Crossmax, 9984 X BMX
+  (1999 390 g; 1997 375 g), 5063 CXP 30 clincher (1999 550 g, 28/32/36,
+  silver), 6972 Comète (track disc with screw-on freewheel).
+- Description only: 9986 Cosmic Carbone 571 rear **795 → 995 g** (maker
+  prints 995 for clincher and tubular); 9985 Helium adds maker weights
+  (700c tubular 650/850, clincher 700/900, 650 clincher 675/875); 10377
+  Helium clincher (622x15) 650/850 → 700/900 g — the dealer guide's figure is
+  the maker's tubular weight.
+- Retitled **10375** `Mavic Cosmic Equipe clincher` → `Mavic Cosmic Equipe`
+  (search text likewise); the maker sells clincher 830/1060 and tubular
+  780/1010 g.
+- No `year_from` moved later; no merges or deletes.
+
+Unresolved, no change made:
+
+- Second BMX rim (p.15, "New"): 406x21 480 g / 507x21 600 g, 32/36/48h,
+  black 20in / silver 24in, 31 mm wide; the logo (black block, X shape,
+  yellow "Y") is illegible even at 400 dpi, so no row was inserted.
+- X222 has 1997 **220** (9978)'s spec (410 g, silver/steel grey, UB Control)
+  and X138 has **238** (9980)'s (450 g, entry level, 32/36h, silver); T138
+  (510 g) is close to T238 9982 (500 g). Inserted as new rows because the
+  numbers differ; a source naming the renumbering would justify merging.
+- Cosmic Equipe (830/1060 g, 18/20 spokes) matches 1997 Cosmic Expert 9987
+  (835/1060 g); D521's "1996 and 1997 World Champion" may tie it to 121 9976.
+- 3406 `Mavic 601` (velobase, no years) could be MR 601 or MX 601; left alone.
+- 10378 Cosmic Carbon clincher stays a configuration row beside 9986, as
+  Helium 10376/10377 stay beside 9985.
+
+Validation: every guard matched one row in preflight; the rerun affected zero
+rows. Before/after Mavic readback: exactly the 8 planned rows changed and the 20
+inserts were added; longest description 254 characters. `compare-bike-links.js`:
+109 catalogues, 23,410 specs, 23,395 unchanged, 0 gained/changed, the same 15
+Huret Rival losses. Quality report: 0 errors; no finding names a touched row.
+Mavic duplicate report still has 13 pairs; CXP 30 5062/5063 is now labelled
+generation rather than configuration because 5063's range extended (still
+tubular vs clincher, kept apart). No touched row has bike links or generator
+overrides.
+
+Restoration baseline (old values; inserts 12110–12129 can be deleted by id):
+
+```jsonl
+{"component_id": 9990, "source_ref": 307, "year_to": 1997, "description": "Mavic Crossmax, France. Top MTB wheels: thin-walled oversize SUP Ceramic rim, FTS hub, sealed cartridge bearings; front 26 spokes radial, 650 g; rear 28, crossed three drive side, 850 g (no skewers); new skewer, wheel bag. Atlanta 1996."}
+{"component_id": 9984, "source_ref": 307, "year_to": 1997, "description": "Mavic X BMX (logo \"X\" with a superscript x), France. 20 in (406 x 21) BMX rim, SUP joint, UB Control, double wall, double eyelets, 28 mm wide, 375 g, 32/36 holes; Ceramic version; black."}
+{"component_id": 5063, "source_ref": 307, "year_to": 1997, "description": "Mavic CXP 30 (clincher), France. Deep-section aero clincher, \"cousin to the Cosmic\", SUP joint, UB Control sidewalls, 520 g, 24/28/32/36 holes, 700c, for 18-23 mm tyres; titanium or silver."}
+{"component_id": 6972, "source_ref": 480, "year_to": 1997, "description": "Composite lenticular disc. 1985-91: front 650 950 g, rear 700 1140 g. 1994: 700c tubular, 18 mm rim, 990 g without interchangeable hub cartridge. 1997: alloy SUP UB Control rim, FTS hub; road 1300 g, track tubular 980 g."}
+{"component_id": 9986, "source_ref": 449, "description": "Carbon-fibre fairing on an alloy rim, 16 profiled spokes (radial front, 1-cross rear); tubular or clincher. 1995: 700c or 26in, HG cartridge, 870/1140 g. Later: 50 mm fairing, SUP UB Control rim, FTS hub, HG or ED; 700c 880/1090 g, 650c 730/795 g."}
+{"component_id": 9985, "source_ref": 353, "description": "Mavic Helium, France. Light road wheels: red SUP UB Control rims, FTS hub, sealed cartridge bearings; 26 straight-pull radial front, 28 rear crossed three drive side; 700c tubular or clincher, HG or ED; 650 g / 850 g. Pro launch July 1996."}
+{"component_id": 10375, "source_ref": 353, "title": "Mavic Cosmic Equipe clincher", "search_text": "Mavic Cosmic Equipe clincher", "description": "Maxtal alloy rim; 700x13; 18/20 spokes; road; clincher, black anodised rim, FTS freehub HG and ED 9v (Mavic CC9), composite quick release, carry bag; 830/1060 g"}
+{"component_id": 10377, "source_ref": 353, "description": "Alloy rim; 622x15; 26/28 spokes; road racing; double-wall clincher rim, welded and milled SUP and UB Control, red anodised, double bushing, FTS freehub HG and ED 9v, high-leverage quick release; 650/850 g"}
+```
+
 ## Catalogue backlog and scope review — 2026-11-19
 
 Compared the existing reconciliation notes with live `data_source` records
@@ -391,13 +472,12 @@ confirmed available editions still needing a full reconciliation:
 
 | Edition | Available source | Work already recorded | Remaining scope |
 | --- | --- | --- | --- |
-| 1999 GB Rims & Wheels | [Complete scan](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf) | Source 374, CC9 and selected road/touring rim corrections | Inventory and reconcile all remaining product panels, including wheels, MTB rims and hubs |
 | 1999 Mektronic launch catalogue | [Archive listing](https://www.bikecatalogs.com/document/3661) | No equivalent source or ingestion entry found | Obtain and inspect the separate launch catalogue, then reconcile its supported components |
 | 2000 GB catalogue | [24-page PDF](https://www.bikecatalogs.com/download/3662) | Source 478, Open Pro p.14 date correction only | Reconcile the rest of the catalogue |
 | 2001 USA retailer catalogue | [28-page PDF](https://www.bikecatalogs.com/download/3663) | Source 479, Open Pro p.22 date correction only | Reconcile the rest of the catalogue |
 
-The 1994 and 1995 full catalogues are now applied and validated above.
-Remaining order: 1999 GB/Mektronic, 2000, 2001. Earlier full
+The 1994, 1995 and 1999 GB full catalogues are now applied and validated above.
+Remaining order: 1999 Mektronic, 2000, 2001. Earlier full
 editions can refine existing component identities and dates before moving
 through the later wheel ranges. This is a work order, not approval of an
 unreviewed DB change set. The historical sections below record substantial
@@ -1083,8 +1163,8 @@ remain historical records.
 Recovered the [1999 GB maker catalogue](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf)
 (13 PDF pages, two printed pages per PDF page). Existing source **374** cites
 this exact PDF; its old label restricted it to the previously reviewed CC9 p.24.
-Visually checked the cover, technology pp.6–7 and rim pp.20–22; this is a
-focused reconciliation, not ingestion of the rest of the catalogue.
+Visually checked the cover, technology pp.6–7 and rim pp.20–22; this was a
+focused reconciliation (the rest was reconciled later; see the 1999 GB section).
 
 Printed **p.22 / PDF p.11** draws T217 at **22 mm outside width**, 470 g,
 480 g Ceramic, 36/40/48 holes across the family, silver/CD/CD Ceramic finishes,
@@ -1988,7 +2068,7 @@ Pinto figures against 21.5 mm in Bikecology 1980 (source_ref left on 247).
 
 ## CC9 cassette correction — 2026-11-09, user approved
 
-- Source **374**, `Mavic catalogue (1999), CC9 cassette page 24`: https://bikalog.org/api/view/Mavic/1999/mavic99.pdf, PDF page 12/printed p. 24. Only the CC9 section was reconciled, not the rest of the catalogue. Local source `/private/tmp/cassette-mavic99.pdf`, inspected render `/private/tmp/cassette-mavic99-p12.jpg`.
+- Source **374**, `Mavic catalogue (1999), CC9 cassette page 24`: https://bikalog.org/api/view/Mavic/1999/mavic99.pdf, PDF page 12/printed p. 24. Only the CC9 section was reconciled here; the rest of the catalogue was reconciled 2026-11-19 (see the 1999 GB section). Local source `/private/tmp/cassette-mavic99.pdf`, inspected render `/private/tmp/cassette-mavic99-p12.jpg`.
 - Retitled component **1193** from `Mavic CR601 / CC9 (9-speed)` to `Mavic CC9 (9-speed)`; search_text -> `Mavic CC9`. The original VeloBase UUID remains `3576A017-58A4-4C68-A960-07360890255E`; its page actually says late 1990s, so the stored 1990-1990 was a decade-bucket crawl artifact. **year_from moved later, 1990 -> 1999; year_to 1990 -> 1999**, using documented attestation only, not a proven launch/end year. Move earlier if a dated earlier source is recovered.
 - Replaced bare description with treated steel sprockets, ED 8/9-speed indexing, individually available cogs, 11-21T 193g / 12-23T 223g and the separate CC8 conversion kit. The specimen listing's aluminium material conflicts with the manufacturer's treated steel. CR601 is retained here as the old source name; it was not printed in the catalogue CC9 panel. source_ref **1 -> 374**.
 - No bike links or generator references to 1193; no merge/delete. Prior full-row backup `/private/tmp/cassette-before-mavic.tsv`. Applied guarded update within `/private/tmp/cassette-review-2026-11-09.sql`; rerun zero rows. Description 213 characters. All 81 bike CSVs compared; only the four separately approved Shimano links changed.
