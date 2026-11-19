@@ -4212,7 +4212,7 @@ const COMPONENT_OVERRIDES = {
     'lyotard 45 ca with toe clips and straps': 3811, // 1974 Peugeot PX 10 LE / PX 60: Lyotard 45CA (1930-80)
     'rubber block': null, // 1971 Peugeot sports bikes: generic, not the Roger Piel row
     // 1990 Bianchi US catalogue (retrobike archive 1676).
-    'shimano dura ace clipless': [{ from: 1988, to: 1993, id: 3971 }], // PD-7401
+    'shimano dura ace clipless': [{ from: 1987, to: 1993, id: 3971 }], // PD-7401; Dec 1987 introduction and Branford 1987 availability
     'shimano 105 clipless': [{ from: 1990, to: 1995, id: 3955 }], // PD-1055, 105SC
     'shimano deore xt': [{ from: 1987, to: 1989, id: 3967 }, { from: 1990, to: 1995, id: 3968 }], // 1989 Peugeot (NL) Europe Express: PD-M730; PD-M735
     'shimano deore dx': [{ from: 1990, to: 1993, id: 3964 }], // PD-M650

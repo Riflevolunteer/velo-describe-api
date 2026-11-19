@@ -1,3 +1,244 @@
+## Branford 1987 component fragment — reconciliation 2026-11-19
+
+**Applied and validated for the user-requested ingestion, source 475.** The complete inventory has **67 listing mentions**: 38 mentions support **36 existing-row updates**, six mentions are already covered, and 23 lack a secure exact variant or maker crosswalk. No new component, brand, group or category association is needed. No retitles, merges, deletions or bike-spec writes were made.
+
+Source: [original 12-page fragment](https://timslife.com/brancat/Catalogs/bb1987.pdf), 3,781,926 bytes, retained at `/tmp/branford-edition-triage-20261119/bb1987.pdf`. The archive filename and handwritten annotations on PDF pages 1 and 3 attribute it to **1987**; no original cover/imprint survives. PDF page 3 independently prints **“New for 1987”** for Dura-Ace aero levers. This supports the attribution but is not an exact issue/printing date. Ignore the 2026 PDF creation date. US retailer availability is the dating evidence; do not interpret it as production start/end or infer discontinued parts from this incomplete fragment.
+
+Source **475**: **Branford Bike component catalogue fragment (attributed 1987)**; country US. Citation: https://timslife.com/brancat/Catalogs/bb1987.pdf ;12 PDF pages; no cover; archive/handwritten1987 attribution, printed New for1987 on aero Dura-Ace levers; US retailer.
+
+All 12 pages were triaged through OCR. Eligible component boxes were visually read on PDF 1–6, 8–10 and 12; pages 7 and 11 were excluded after complete OCR review. The image reading corrected OCR omissions/misreadings: C-Record road crank **638g**, Shimano LOOK **410g/pair**, freewheel stock-combination table on PDF 2, and the Delta/Cobalto distinction on PDF 3. Handwritten blue figures beside prices are annotations, not maker codes or original product specifications.
+
+### Page ledger
+
+| PDF page | Printed folio | Contents / exclusions |
+| --- | --- | --- |
+| 1 | 13 | Hubs and Regina CX-Track chain inventoried; anonymous track sprockets held. Axles, cones, lockrings, skewers, springs and bearings excluded. |
+| 2 | 14 | Freewheels, stock-combination table, spare sprocket offers and AIR RAD caption inventoried. No separate chain listing on this page. |
+| 3 | Not legible / handwritten 1987 | Brake sets and separate levers inventoried; pads, hoods, cables/housing excluded. |
+| 4 | 20 | Cranksets, BBs and road replacement chainrings inventoried; spare OMAS bearings excluded. |
+| 5 | Cropped | Platform, Shimano LOOK and white LOOK pedals inventoried. |
+| 6 | 21 | Black LOOK pedal inventoried; adjacent pedal photographs repeat PDF 5. Caps, repair kits and replacement cleats excluded. |
+| 7 | Cropped | Crank dust covers, bolts, BB retainers and tools only; excluded. |
+| 8 | 22 | Front/rear derailleurs inventoried; cables/housing excluded. |
+| 9 | Cropped | Four threaded headsets inventoried. |
+| 10 | Cropped | C-Record/Super Record and two American Classic length offers inventoried. |
+| 11 | Cropped | Toe clips and straps only; excluded. |
+| 12 | Cropped | Friction, retrofriction and SIS/Syncro shifters inventoried; conversion insert is hardware, not another shifter. |
+
+### Freewheel combination table, PDF 2
+
+The original OCR omitted this table. Six-speed Maillard, Regina and Campagnolo stock ranges are 13-14-15-16-17-18, 13-14-15-16-18-20, 13-14-15-17-19-21, 13-15-17-19-21-23 and 13-15-17-20-23-26; Shimano omits only the 13-20 combination. Regina additionally offers 15-16-17-18-19-20. Seven-speed Maillard/Regina/Shimano offer 12-13-14-15-16-17-18, 13-14-15-16-17-18-19, 13-14-15-16-17-18-20 and 13-14-15-16-17-19-21. Campagnolo seven-speed combinations are N/A in the table despite the text offering a call-for-price seven-speed family. Custom 6/7 combinations: Maillard surcharge, Regina no, Shimano surcharge, Campagnolo call. This is stock selection, not a complete maker range.
+
+### Reviewed change set and restoration evidence
+
+All 36 changed rows have source_ref **475**, this fragment as their last modifying source. Titles, UUIDs, search text, images, maker/category/group ownership remain unchanged. No existing start date moves later. Maillard 2125 receives its first supported availability window, **1987–1987**, without claiming a manufacture start/end. Restoration means setting description, years and source_ref to the exact old values below, guarded against the applied after-values and after reviewing any later links. Exact readback and an identical zero-change SQL rerun passed. Temporary SQL, renders, OCR, snapshots, duplicate/comparison reports and helpers were removed after recording the lasting evidence here. The original PDF remains available at the held-source path above. No audit SQL is committed.
+
+| ID / unchanged title | PDF page | Years before → after | Old description | Applied description | Old source_ref | Reason |
+| --- | --- | --- | --- | --- | --- | --- |
+| 3179 American Classic Classic Hubs | 1 | 1980–1990 → 1980–1990 | Replaceable sealed-bearing alloy QR hubs; front 200g/rear 250g; 12/16/18/24/28/36 holes. Silver anodised or gloss-black epoxy; 135mm MTB version. Pair or individual hubs; black cam-action skewers offered. | Heat-treated alloy QR hubs, replaceable sealed bearings; front200g/rear250g. 1987:24/28/32/36h,silver,factory-slotted pair option. 1990:12/16/18/24/28/36h,silver/black epoxy,135mm MTB; black cam-action skewers offered. | 471 | Same200/250g Classic hub family; adds32-hole and factory-slot options, retaining later options by edition. |
+| 3241 Campagnolo 322/101, C-Record | 1 | 1985–1991 → 1985–1991 | Campagnolo 322/101, C-Record, Italy, 595 grams Record brochure (Nov 1987): A300, blind-cap QR. DPC88: A300 (A031/A032), 24/28/32 h. | Low-flange C-Record road QR hubs,322/101/A300(A031/A032),blind dust caps and improved skewer. 24/28/32h; 1987 retailer:6-speed,572g/pair. Legacy595g listing retained separately. | 110 | Photograph identifies low-flange road hubs; preserve differing weights. |
+| 8798 Regina Extra 51 CX-Pista | 1 | 1992–1992 → 1987–1992 | Regina Extra 51 CX-Pista, Italy. 1/2 x 1/8 chain (51 series: 12.70mm pitch, 7.75mm rollers), 9.1mm overall, 0.28kg/m, listed in 1992 with the 51 Sport and 53 Turismo. | CX-Pista track chain, nickel-plated and heat-treated. 51 series:1/2x1/8in,12.70mm pitch,7.75mm rollers. 1992 maker:9.1mm overall,0.28kg/m,listed beside51 Sport/53 Turismo. | 190 | Printed CX-Track matches the dedicated CX-Pista track identity, not road CX/CXS1384; earlier attestation. |
+| 2125 Maillard 700 Course Super | 2 | NULL–NULL → 1987–1987 | Maillard 700 Course Super, France | 700 Super Course freewheel family,6/7-speed options; lighter smooth-running body,heat-treated interchangeable cogs,two-prong removal. Standard6:13-18/20/21/23/26;7:12-18 or13-19/20/21. France. | 1 | This source explicitly prints700 and Super Course; enrich generic Course Super family, without selecting the5-speed2126 or Plus2127. |
+| 2156 Regina Extra America (6 speed) | 2 | 1980–1990 → 1980–1990 | America 6-speed freewheel; matte-silver cogs, splined removal; 375g listed. Syncro compatible; recommended with Regina CX chain. A 15-20T range is listed. | America6-speed freewheel; heat-treated interchangeable cogs,splined removal,matte silver,375g listed. 1987 stock ranges13-18/20/21/23/26 or15-20. Later listing:Syncro-compatible,recommended Regina CX chain. Italy. | 471 | Adds six-speed stock ranges and construction; no Superleggera claim. |
+| 2072 Campagnolo aluminum (6 speed) | 2 | 1980–1990 → 1980–1990 | Six-speed alloy freewheel; heat-treated alloy cogs/body, splined sprockets, 12-28T.1990 retailer175g; 156g measured specimen. Recommended with Regina CX/CXS chain. | Six-speed alloy freewheel; heat-treated alloy cogs/body,splined sprockets,12-28T. 1987 stock ranges13-18/20/21/23/26. 1990 retailer175g;156g measured specimen. Recommended Regina CX/CXS chain. | 471 | Six-speed light-alloy identity is clear; retain old measurements and later range. |
+| 560 Campagnolo Delta C-Record | 3 | 1986–1993 → 1986–1993 | Campagnolo Delta C-Record, Italy, 480 grams Cat. n. 18 bis (Dec 1986): 0116070/71, set 315/101, not yet available; groups shipped with SR brakes. Record brochure (Nov 1987): subgroup A500D, shipping. DPC88: A500D (A051D/A052D). | Delta brakes:articulated8-arm stainless linkage,Avional alloy shoe levers,conical toe-in washers,lever quick release. 1987 retailer725g complete set;legacy480g listing. Announced Dec1986,shipping Nov1987;315/101,0116070/71,A500D. | 110 | Adds mechanism and qualified complete-set weight; preserves chronology and legacy weight without inventing its unit basis. |
+| 561 Campagnolo Cobalto | 3 | 1987–1988 → 1987–1988 | Campagnolo Cobalto, Italy | Cobalto side-pull brakes with blue cobalt gem-capped centrebolt; heat-treated sculpted arms,chromed springs,soft shoes,satin anodised. Supplied with aero levers for normal or concealed routing;607g complete set. | 262 | Blue gem identifies the Cobalto identity even though retailer calls it New Record C. |
+| 991 Shimano BR-7400, Dura-Ace | 3 | 1985–1991 → 1985–1991 | Shimano BR-7400, Dura-Ace, Japan. BR-7400-49 short 49 type side-pull, forged alloy arch, double lock nut, eccentric click and quick release, tyre guide, CAD design, 355g front and rear (Jan 1985). 382g measured. | BR-7400-49 short side-pull calipers,forged alloy arches,double locknut,eccentric click/QR,tyre guides,CAD;355g F/R maker,382g measured. 1987 retailer complete set with drilled conventional-routing levers:586g,silver/black. | 72 | Qualifies complete-brakeset mass separately from caliper/maker/measured figures. |
+| 886 Modolo Speedy | 3 | 1979–1988 → 1979–1988 | Speedy Stratos side-pull brakes, compact 40-52 or standard 46-58 mm reach; silver, black, red or blue. Calipers R0054/R0055 standard, R0056/R0057 compact. Complete sets include levers and transmissions; measured weight 315 g. | Speedy Stratos side-pulls,compact40-52 or standard46-58mm;silver/black/red/blue. R0054/55 standard,R0056/57 compact. Complete with levers/transmissions;measured specimen315g. 1987 set:drilled levers,anatomical hoods,sintered pads,538g. | 387 | Complete Speedy family identity; retains measured weight without recasting its basis. |
+| 435 Shimano BL-7401, Dura-Ace | 3 | 1987–1988 → 1987–1988 | Shimano BL-7401, Dura-Ace, Japan. Aero brake lever with cable under the bar tape, anatomical design, one-step cable attachment, 23.8 or 24.2mm, light alloy anodized, 254g pair (Aug 1986, new; replaces BL-7300). | BL-7401 aero lever,new for1987;under-tape/through-bar routing,anatomical hood,one-step cable attachment;23.8/24.2mm,anodised alloy. Aug1986 maker:254g/pair,replaces BL-7300. 1987 retailer:210g/pair. | 74 | Retain different maker/dealer pair masses rather than overwrite authoritative maker figure. |
+| 1507 Campagnolo 4151, Super Record Pista | 4 | 1974–1985 → 1974–1987 | Campagnolo 4151, Super Record Pista, Italy | 4151 Super Record Pista track crankset;165/170mm arms,42-54T ring;570g without bottom bracket. | 1 | Explicitly offered Super Record track set; extends retailer availability beyond the legacy1985 endpoint. |
+| 1819 Shimano FC-7400, Dura-Ace | 4 | 1985–1988 → 1985–1988 | Shimano FC-7400, Dura-Ace, Japan. CAD-designed cold-forged double, inner 39-46T, outer 48-54T (46 / 54T from March 1985), 165-175mm, 637g (42-52T, 170mm); BB-7400 (Jan 1985). 648g measured. | CAD cold-forged road double;165-175mm,inner39-46T,outer48-54T(46/54 added Mar1985);BB-7400. 1985 maker:637g(170mm,42-52). 1987 retailer:627g,170/172.5mm,42-52/53. Measured648g. | 72 | Preserves maker specification and independent measured weight while recording retailer mass. |
+| 30 Campagnolo 1046/a, Nuovo Record (Strada) | 4 | 1960–1988 → 1960–1988 | Campagnolo 1046/a, Nuovo Record (Strada), Italy, 299 grams (avg) | Nuovo Record Strada cup-and-cone BB;heat-treated steel spindle/cups with precision hardened races;British,French or Italian threads. 315g listed;legacy measured average299g. | 262 | Adds material/thread and dealer mass to the existing road BB; track listing not folded into this row. |
+| 11816 Campagnolo C-Record road chainrings | 4 | 1990–1990 → 1987–1990 | Replacement road chainrings for C-Record; 39-54T options. Service list specifically offers39/42/52/53/54T; outer rings also offered with custom hand engraving. | Replacement road chainrings for C-Record; 39-54T options. Service list specifically offers39/42/52/53/54T; outer rings also offered with custom hand engraving. | 471 | Pre-EXA C-Record road replacement-ring family,39-54T; same range, earlier availability. |
+| 1244 Campagnolo 753/A, Super Record Road | 4 | 1970–1985 → 1970–1987 | Campagnolo 753/A, Super Record Road, Italy. 144 mm bolt circle, 42-55T; 38.5 grams (Actual) for a 42-tooth inner, 87 grams for an outer. | Super Record Road753/A chainrings,144mm bolt circle,42-55T maker range;1987 replacement offer42-54T. Measured42T inner38.5g,52T outer87g. | 390 | Source-specific Super Record replacement rings; retains maker range and independent measurements. |
+| 3693 Campagnolo 305/501, C-Record | 5 | 1985–1991 → 1985–1991 | Campagnolo 305/501, C-Record, Italy Cat. n. 18 bis (Dec 1986): 305/501 corsa and track (group pages misprint 305/101). Record brochure (Nov 1987): A600-L. DPC88: A600-AM (A601-AM/A602-AM). | 305/501 C-Record wide-platform aero pedals,heat-treated steel spindle;alloy toe-clips and leather straps,375g/pair listed. Road/track model,also A600-L/A600-AM(A601-AM/A602-AM);group-page305/101 is a misprint. | 110 | Platform construction and photograph identify305/501, distinct from Ergonomic or TBS quill pedals. |
+| 3970 Shimano PD-7400, Dura-Ace | 5 | 1985–1993 → 1985–1993 | Shimano PD-7400, Dura-Ace, Japan. 34 degree road clearance, compound needle and cup-and-cone bearings, nickel Cr-Mo axle, sealed, steel or alloy back plates, 372g pair with L toe clip (Jan 1985). 415g measured. | PD-7400 road platform,34deg clearance,compound needle/cup-and-cone bearings,NiCrMo axle,sealed;steel/alloy backplates. Maker372g/pair with L clip;measured415g. 1987 retailer306g/pair with steel clips/nylon straps offered;weight basis unclear. | 72 | Keep all conflicting figures and accessory-basis qualification. |
+| 3971 Shimano PD-7401, Dura-Ace 7400 | 5 | 1988–1996 → 1987–1996 | Clipless step-in road pedal (non-SPD), takes Look or Shimano clipless cleats, nickel chrome-moly spindle, anodized aluminium body, 416g (+92g with cleats); introduced Dec 1987 | Look-compatible Dura-Ace clipless road pedal,capless silver-grey anodised alloy body,NiCrMo spindle;made in France,34deg cornering. 1987 retailer410g/pair;maker416g(+92g cleats). Introduced Dec1987. | 277 | Named Shimano LOOK with matching photograph/construction; calendar1987 is also independently supported by recorded December1987 introduction. |
+| 3788 LOOK PP65 | 5 | 1984–1987 → 1984–1987 | LOOK PP65, France, 258 grams (Actual), each pedal. Look-System clipless pedal, white body with black cover; by 1987 "a proven classic", the pedal Bernard Hinault won on in 1985; with the AP 65 shoe. | White-body/black-cover Look-System clipless pedal;adjustable spring retention,twist-heel release,adjustable cleat supplied;518g/pair listed. Measured258g each. Hinault1985 winning pedal;paired AP65 shoe. | 331 | Adds retention/cleat details; preserves measured weight and known shoe association. |
+| 3790 LOOK Competition PP75 | 6 | 1987–1987 → 1987–1987 | LOOK Competition PP75, France, 484 grams (Spec), 469 g actual without cleats. Light, aerodynamic top Look-System pedal designed with Bernard Hinault: automatic entry by foot pressure, instant release by twisting the heel; with the AP 76 shoe. | Competition PP75 black Look-System pedal,developed with Hinault;slimmer aerodynamic body than white model,fixed maximum spring tension,pressure entry/twist-heel release;484g/pair listed,469g measured without cleats;AP76 shoe. | 331 | Source gives the exact black Competition mass and distinguishing non-adjustable tension. |
+| 4096 Campagnolo 0102050, C-Record (first generation) | 8 | 1985–1987 → 1985–1987 | Campagnolo 0102050, C-Record (first generation), Italy. Winged-hub shield logo on the outer parallelogram plate, no cut-out at the tension pulley, ball-bearing pulleys; replaced by the script-logo A010 for 1988. | First-generation0102050 rear:winged-hub shield outer plate,no tension-pulley cut-out. Third spring at hanger bolt,aero cage/jockey covers,pulleys with12 bearing balls;209g listed. Replaced by script-logo A010 for1988. | 414 | Photograph shows the shield-logo first generation; do not apply the configuration to script-logo4098. |
+| 4504 Shimano RD-7401, Dura-Ace (6/7sp) | 8 | 1987–1988 → 1987–1988 | Shimano RD-7401, Dura-Ace (6/7sp), Japan. 6 and 7-speed SIS rear, double Servo-Panta, Centeron pulley, ceramic pulley bushings, sealed, double spoke barrier, 12-26T, 26T capacity, 205g, colour-anodized bracket (Aug 1986, new). 208.5g avg. | RD-7401,6/7-speed SIS;double Servo-Panta,Centeron guide,ceramic pulley bushings,sealed,double spoke barrier;12-26T,26T capacity,colour-anodised bracket. Aug1986 maker205g;measured208.5g avg. 1987 retailer192g. | 74 | Explicit6/7-speed configuration; preserve maker/measured figures, not assigned to six-only4503 or later8-speed4505. |
+| 2283 Campagnolo C-Record | 8 | 1985–1991 → 1985–1991 | Campagnolo C-Record, Italy, 103 grams Cat. n. 18 bis (Dec 1986): 0104018 clip-on, 0104019 braze-on. Record brochure (Nov 1987): A100 braze-on, A022 clip-on 28.5 mm, A023 adjustable 28-33 mm. DPC88: A021 braze-on, A022 clip-on. | C-Record front,carbon-nitrided cage,fine adjustment screws,heat-treated NiCr steel double hinge. Clip0104018/A022(28.5mm),braze0104019/A021/A100;A023 adjustable28-33mm. 1987 retailer80g;legacy103g listing. | 110 | Adds cage/linkage detail and dealer mass, retaining coded attachment options. |
+| 2510 Shimano FD-7400-B / FD-7400-F, Dura-Ace | 8 | 1985–1989 → 1985–1989 | Shimano FD-7400-B / FD-7400-F, Dura-Ace, Japan. Band / brazed-on front derailleur, 15T, 93g (band), 28.6mm; dished-out inner plate, bridged guide, sealed, Helicoil, 5 degree adjusting bolts (Jan 1985). 94.75g avg measured. | SIS band/braze-on front;15T,28.6mm,dished inner plate,bridged guide,sealed,Helicoil,5deg adjusters. 1985 maker93g band;measured94.75g avg. 1987 retailer97g,polished chrome/grey anodised. | 81 | Same first-generation Dura-Ace front construction; preserve independently stated weights. |
+| 2954 Campagnolo 304/104, C-Record | 9 | 1985–1991 → 1985–1991 | Campagnolo 304/104, C-Record, Italy, 152 grams Record brochure (Nov 1987): A0D0, SELFORM membrane. DPC88: A0D0. | 304/104 C-Record(A0D0) threaded headset;hardened steel races pressed into aerodynamic alloy body,SELFORM membrane;British/Italian. 1987 retailer99g;legacy152g listing. | 110 | Construction and model family match; legacy mass is retained as a conflicting listing, not reclassified as measured. |
+| 2968 Campagnolo 4041, Super Record | 9 | 1970–1988 → 1970–1988 | Campagnolo 4041, Super Record, Italy, 134.67 grams (avg). Available in French, English and Italian threads. Satin finished aluminium alloy with pressed-in steel races. | 4041 Super Record threaded headset;satin alloy cups with pressed-in precision steel races,solid steel crown/top head-tube races. French/English/Italian threads;135g listed,134.67g measured average. | 294 | Adds race construction and dealer weight without losing independent French threading or measured average. |
+| 2971 Campagnolo 404/000, Victory | 9 | 1984–1986 → 1984–1987 | Campagnolo 404/000, Victory, Italy | 404/000 Victory threaded headset,all-steel construction with hardened precision races;British or Italian;175g listed. | 1 | Explicit Victory steel headset attestation extends1986 endpoint to retailer1987 availability. |
+| 3099 Shimano HP-7400, Dura-Ace | 9 | 1985–1994 → 1985–1994 | Shimano HP-7400, Dura-Ace, Japan. Road head parts, alloy cup and nut, bearing steel inserts, titanium-plated lower cone, composite-radius race, O-ring sealed, 113g; BC 1 x 24 or French M25 x 1.0 (Jan 1985). 114g measured. | HP-7400 threaded headset;alloy cups/nut,pressed bearing-steel races,titanium-coated lower crown cone,composite-radius race,O-ring seals. BC1x24 or French M25x1.0. Maker113g;measured114g;1987 retailer116g,English/Italian. | 72 | Retain maker sizes/weight and measured value; add qualified dealer116g. |
+| 5738 Campagnolo A0R2, C-Record (aero, long) | 10 | 1986–1991 → 1986–1991 | Campagnolo C-Record (Aero type, 210mm), Italy, 230 grams (Actual) Cat. n. 18 bis (Dec 1986): 316/101 180 mm styled, 316/102 130 mm circular. Record brochure (Nov 1987): A0R2/A0R2-S. DPC88: A0R2 (parts page A0R1). | Aerodynamic polished alloy post with tapered elliptical mid-section and single-bolt clamp;A0R2,316/101. 1987:180mm,25.0/27.0/27.2mm,218g. Legacy specimen described as210mm,230g measured. | 110 | 180mm aero offering belongs to the long/styled family, not the130mm short/circular options; preserve legacy specimen dimensions. |
+| 5761 Campagnolo 4051/1, Nuovo Super Record | 10 | 1980–1988 → 1980–1988 | Campagnolo 4051/1, Nuovo Super Record, Italy, 224.5 grams (avg). Upper found polished or semi-polished; 26.2 to 27.2 mm. Fluted aluminium alloy, fine satin finish, single bolt adjust, 180 mm long. | 4051/1 Nuovo Super Record fluted alloy single-bolt post,180mm;polished/semi-polished head,fine satin finish. Maker range26.2-27.2mm;1987 retailer25.0/26.4/26.8/27.0/27.2mm,220g. Legacy measured average224.5g. | 294 | Explicit fluted/single-bolt construction; retain differing maker/dealer diameters and measured weight. |
+| 11793 American Classic Classic Seatpost (alloy) | 10 | 1988–1990 → 1987–1990 | Heat-treated alloy post, one-bolt micro-adjust cradle; 200mm/168g or reinforced 300mm/290g. Diameters 25.0/26.0/26.6/27.0/27.2/27.4mm; silver anodised or gloss-black epoxy finish. | Heat-treated alloy,micro-adjust head;silver/gloss-black epoxy. 1987:200mm150g(25/26.4/26.8/27/27.2mm),280mm180g(25/27/27.2mm). 1990:200mm168g or reinforced300mm290g;25/26/26.6/27/27.2/27.4mm. | 472 | Same Classic alloy family; keep early280mm separate from later300mm option and weights by edition. |
+| 5970 Campagnolo 0271 / 0272 / 0273, C-Record Doppler (retro-friction) | 12 | 1987–1991 → 1987–1991 | Campagnolo 0271 / 0272 / 0273, C-Record Doppler (retro-friction), Italy. Record brochure (Nov 1987): Doppler 0271 braze-on, 0272 clip-on, 0273 top-of-tube. DPC88: A271/A272/A273 Doppler. Guida '88: top-tube clamp-on. | Doppler retrofriction C-Record levers,0271 braze-on/0272 clip-on/0273 top-tube(A271/A272/A273);internal springs/bearings. 1987 retailer braze-on70g. Distinct from plain friction0281-0283. | 110 | Explicit retrofriction mechanism selects Doppler rather than plain friction5969. |
+| 6164 Shimano SL-7400 (BCAI / FCAI / FCBI), Dura-Ace SIS (6sp) | 12 | 1985–1991 → 1985–1991 | Shimano SL-7400 (BCAI / FCAI / FCBI), Dura-Ace SIS (6sp), Japan. SIS index lever with one-touch SIS / friction switch, 72g (BCAI band A), FCAI brazed A, FCBI brazed B; C = Italian 5mm bolt (Jan 1985). 62g measured. | 6-speed downtube SIS/friction lever,one-touch selector;BCAI band A,FCAI braze A,FCBI braze B(C:Italian5mm bolt). 1985 maker72g band;measured62g. 1987 retailer52g,attachment/weight basis unqualified. | 82 | Six-speed identity matches; do not overwrite attachment-specific maker or measured weights with dealer52g. |
+| 6165 Shimano SL-7401 (FAI / BCAI / FCAI / FCBI), Dura-Ace SIS (7sp) | 12 | 1987–1992 → 1987–1992 | Shimano SL-7401 (FAI / BCAI / FCAI / FCBI), Dura-Ace SIS (7sp), Japan. 7-speed SIS / friction down-tube lever, sealed, non-loosening, 65g (FCAI), 28.6mm; FAI brazed A M4.5, BCAI band A, FCAI / FCBI Italian brazed A / B (Aug 1986, new). | 7-speed downtube SIS/friction lever,sealed,non-loosening;28.6mm. FAI braze A M4.5,BCAI band A,FCAI/FCBI Italian braze A/B. Aug1986 maker65g FCAI;1987 retailer52g,attachment/weight basis unqualified. | 83 | Seven-speed identity matches; preserve mount-specific weights/options. |
+| 5973 Campagnolo 0211 / 0212 / 0213, C-Record Syncro | 12 | 1987–1988 → 1987–1988 | Campagnolo 0211 / 0212 / 0213, C-Record Syncro, Italy, 65 grams. Record brochure (Nov 1987): Syncro 0211/0212/0213, 6-7 speed. DPC88: A221/A222/A223 Syncro, 6 or 7 sp insert. | Original Syncro indexed downtube levers,0211/0212/0213(A221/A222/A223);6/7-speed inserts;stainless/brass internals,secondary selector lever. 1987 retailer98g;legacy65g listing. | 110 | First Syncro with secondary selector and conversion insert; do not assign to Syncro II5971. |
+
+### Identity decisions and limits
+
+- **Maillard 2125:** this fragment now prints **700 Super Course**, superseding the earlier 1990-only limitation that “Super Course” lacked a printed 700 identifier. Course Super/Super Course word order is treated as the same named model family, offered here in six/seven speeds. Enrich the existing uncoded family, without claiming a specific specimen-speed identification. Keep **2126 five-speed** and **2127 Plus** distinct; neither a five-speed variant nor Plus is identified by this source. Existing Peugeot Super Plus links 14702/15663 remain on 2127. No free-standing unnamed sprocket rows are inserted.
+- **Regina:** CX-Track is dedicated track-chain identity **8798 Extra 51 CX-Pista**, distinct from road CX/CX-S 1384. The earlier nickel/heat-treatment facts enrich 8798; its 1992 maker dimensions stay qualified by that edition. Six-speed America 2156 gains construction/stock ranges. Seven-speed America remains held against **2157/2158**: no material/SL identifier resolves the speculative Superleggera title or later S generation. Campagnolo seven-speed is held against **2073/2075** because no normal/compact width is given; six-speed alloy 2072 is secure. Shimano MF-7400-6/7 **2221/2222** already carry the relevant Uniglide construction, speed and ranges; unchanged.
+- **Hubs:** American Classic **3179** has exactly the 200/250g sealed-bearing family; add factory-slot and 32-hole offers rather than create another hub row. The C-Record road photograph shows low flanges, so **3241** gains the six-speed 572g pair listing while retaining its legacy 595g. Generic Record road **3259/3260** is already covered; do not assign the common 523g to the separate high-flange row. Track offers lack flange identifiers: **3242/3243** and **3270/3271** remain unassigned. Anonymous steel track cogs have no maker. AIR RAD has only a caption, no version/specifications, so no fabricated complete-wheel identity.
+- **Brakes/levers:** blue cobalt gem positively identifies **561 Cobalto**. **560 Delta** is the existing production family, not prototype 562; keep 725g complete-set mass separate from the unqualified legacy 480g and retain December 1986 announcement/November 1987 shipping evidence. Source assertions about eight linkage arms are retailer construction text. Super Record reach/generation is insufficient for **583/7005**. Modolo Equipe’s uncoded hard-anodised/aero offer does not securely select **872/873 KX90**; no arbitrary extension. Speedy **886** is an existing aggregate family, enriched with its 538g complete-set offer and retained 315g measured specimen. Its La Vie Claire edition **887** remains distinct. C-Record aero levers lack Power Grade identification (**212/214**); Aero Gran Compe lacks **AGC250/AGC251 (279/278)** code, so neither family is guessed. Dura-Ace **435 BL-7401**, explicitly new for 1987, retains maker/dealer masses separately.
+- **Cranks/BBs/rings:** the 1987 C-Record road transition **1482/1483**, track **1484/1485**, and Super Record road arm/logo variants **1509/1510/1512** are held; generic names and the small photograph do not justify selecting a specimen generation. The explicitly named Super Record track family **1507** gains 1987 availability and 165/170mm, 42–54T, 570g. Dura-Ace **1819 FC-7400** matches the pre-low-profile double and retains 637g maker/648g measured alongside 627g retailer. C-Record road/track BB **7014/23** and generic Campy track BB **40/41/42** lack the axle/variant discriminator. Road Nuovo Record **30** gains construction/315g while retaining its 299g measured average; Dura-Ace BB **132** already has 314g/threadings. OMAS is held against **96/98/10724**: serviceable steel-axle 295g does not identify a coded Big Sliding variant or establish identity with the bare 224g measured specimen. Pre-EXA C-Record rings **11816** gain 1987; Super Record 144mm **1244** extends to 1987 and keeps actual ring weights. Dura-Ace ring family **1290** already covers this narrower offer.
+- **Pedals:** the photograph/platform construction selects **3693 C-Record 305/501**, not Ergonomic/TBS quill variants. **3970 PD-7400** retains maker/measured masses and a separately qualified retailer 306g whose accessory basis is unclear. **3971 PD-7401** is the silver-grey capless Shimano LOOK pictured here; moving its availability start from 1988 to 1987 is also consistent with its independently recorded December 1987 introduction. The exact `shimano dura ace clipless` generator override moves **1988 → 1987**, retaining the 1993 end. Generic Dura-Ace platform selections are unchanged. White **3788 PP65** and black fixed-tension **3790 PP75** are distinct; measured masses and known shoe associations remain intact.
+- **Derailleurs:** the rear photograph shows the **shield-logo first C-Record generation 4096**, not script-logo 4098. Super Record **4151/4152** and Nuovo Record **4126/4127** remain held because no rivet/spring discriminator is shown. Explicit 6/7-speed Dura-Ace selects **4504 RD-7401**, not six-only 4503 or later eight-speed 4505. C-Record front **2283** and Dura-Ace **2510** gain construction and separately qualified retailer masses. Super Record clamp/braze **2313/7012** already carry the relevant construction/attachment family; unchanged.
+- **Headsets/posts:** Victory **2971** gains 1987 availability; C-Record **2954**, Super Record **2968** and Dura-Ace **3099** preserve distinct maker/legacy/retailer masses. Aero long C-Record **5738** records its offered 180mm and retains the legacy 210mm/230g specimen, rather than silently rewriting the specimen or assigning the short/cylindrical post. Fluted single-bolt Super Record **5761** keeps maker/dealer diameter ranges and measured average. American Classic **11793** gains 1987; its early 200/280mm, 150/180g offers are retained separately from later 200/300mm, 168/290g. The manufacturer’s personal names do not establish an alias to the separately branded Kingsbury posts.
+- **Shifters:** explicitly retrofriction C-Record selects **5970 Doppler**, not plain-friction 5969. Original **5973 Syncro** is distinguished from Syncro II 5971 by its secondary selector and conversion insert. Generic Super Record friction options remain held against **5993/6000/6001**; 38g alone does not prove a mechanism/code. Six/seven-speed Dura-Ace **6164/6165** retain mounting-specific maker/measured masses; the retailer’s unqualified 52g is not treated as a new measurement or applied to a particular attachment.
+
+### Source inventory and disposition
+
+Each row has the edition hint **1987 (archive-attributed)**. These are listing mentions, not a count of distinct inserted rows. Repeated length/speed offers can enrich one model-family row.
+
+#### Bottom Brackets
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 34 / 4 | Campagnolo New Record C | Heat-treated CrMo track-style spindle, hardened alloy cups/pressed steel races; for road/track C Record; British/Italian,225g. | held; 23, 7014 |
+| 35 / 4 | Campagnolo Nuovo Record road | Heat-treated steel spindle and cups, hardened precision races; British/French/Italian,315g. | update; 30 |
+| 36 / 4 | Campagnolo Track | Track BB offer without code/material or dimensions; not assumed identical to Nuovo/Super/C Record. | held; 40, 41, 42 |
+| 37 / 4 | Shimano Dura-Ace | Separate BB for adjacent crank listing,314g. | unchanged; 132 |
+| 38 / 4 | OMAS sealed-bearing steel spindle | Serviceable/repackable replaceable sealed bearings; hardened steel spindle, heat-treated alloy cups adjustable for centring; Campagnolo/Dura-Ace/SunTour, normal/track; British/Italian,295g. | held; 96, 98, 10724 |
+
+#### Brake Levers
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 26 / 3 | Campagnolo New Record C Aero | Normal/under-tape/through-bar routing; wider aero lever,235g/pair. Power Grade or generation not specified. | held; 212, 214 |
+| 27 / 3 | Dia-Compe Aero Gran Compe | Hard-anodised lever, nylon pivot washers, steel pin, cast-alloy housing; black or gum hoods; concealed routing. No model code. | held; 278, 279 |
+| 28 / 3 | Shimano Dura-Ace Aero | Printed New for1987; under-tape or through-bar cables;210g/pair. | update; 435 |
+
+#### Brakes
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 20 / 3 | Campagnolo Record C Delta | Eight stainless linkage arms, heat-treated Avional aluminium-magnesium shoe levers; conical toe-in washers, quick release on levers and internally ribbed anatomical hoods;725g complete brakeset. | update; 560 |
+| 21 / 3 | Campagnolo New Record C (blue centre gem) | Heat-treated sculpted side-pull arms, chromed springs, soft shoes, satin anodised; blue cobalt gem-capped centrebolt; conventional or concealed cable levers;607g complete set. | update; 561 |
+| 22 / 3 | Campagnolo Super Record | Heat-treated arms, cam-action QR, drilled levers with conventional routing;605g complete set; reach/version unprinted. | held; 583, 7005 |
+| 23 / 3 | Shimano Dura-Ace | Heat-treated arms, CrMo centrebolt, ball-bearing pivots, cam QR; silver/black; drilled conventional-routing levers;586g complete set. | update; 991 |
+| 24 / 3 | Modolo Equipe with Aero routing | Hard-anodised black calipers and levers, short reach only;555g complete set. | held; 872, 873 |
+| 25 / 3 | Modolo Speedy | Drilled levers, anatomical hoods, sintered pads;538g complete set. | update; 886 |
+
+#### Chainrings
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 39 / 4 | Campagnolo New Record C road spare rings | 39–54T replacement chainrings. | update; 11816 |
+| 40 / 4 | Campagnolo Super Record road spare rings | 42–54T replacement chainrings. | update; 1244 |
+| 41 / 4 | Shimano Dura-Ace spare rings | 42–53T replacement chainrings. | unchanged; 1290 |
+
+#### Chains
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 6 / 1 | Regina CX-Track | Track chain, heat-treated and nickel plated; no width/code printed. | update; 8798 |
+
+#### Cranksets
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 29 / 4 | Campagnolo New Record C road | Elliptical arms, wider swept spider, hardened alloy rings, hand-polished/satin anodised;170/172.5/175mm,42 with52/53 rings,638g without BB. | held; 1482, 1483 |
+| 30 / 4 | Campagnolo New Record C Track | Elliptical arms, dished spider, hardened alloy rings, satin anodised;165/170mm,40–54T,605g without BB. | held; 1484, 1485 |
+| 31 / 4 | Campagnolo Super Record road | 165/167.5/170/172.5/175/180mm,42 with52/53 rings,591g without BB; arm/logo variant unspecified. | held; 1509, 1510, 1512 |
+| 32 / 4 | Campagnolo Super Record Track | 165/170mm,42–54T,570g without BB. | update; 1507 |
+| 33 / 4 | Shimano Dura-Ace | Heat-treated arms/rings,170/172.5mm,42 with52/53 rings,627g; British/Italian BB. | update; 1819 |
+
+#### Freewheels
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 9 / 2 | Maillard 700 Super Course 6-speed | Newly designed lighter/smoother body, heat-treated interchangeable cogs, two-prong removal; France. Shop codes MA-76/MA-77 are not maker numbers. | update; 2125 |
+| 10 / 2 | Regina America 6-speed | Stronger body, smoother races, heat-treated interchangeable cogs, splined removal; Italy. Shop codes RE-A6/RE-A7. | update; 2156 |
+| 11 / 2 | Campagnolo Super Record 6-speed | Heat-treated light-alloy body and cogs. 6-speed listed normally;7-speed call for price, individual table combinations N/A. | update; 2072 |
+| 12 / 2 | Shimano Dura-Ace 6-speed | SIS-compatible, twisted Uniglide tooth form, semi-sealed body; Dura-Ace chain recommended. | unchanged; 2221 |
+| 13 / 2 | Maillard 700 Super Course 7-speed | Newly designed lighter/smoother body, heat-treated interchangeable cogs, two-prong removal; France. Shop codes MA-76/MA-77 are not maker numbers. | update; 2125 |
+| 14 / 2 | Regina America 7-speed | Stronger body, smoother races, heat-treated interchangeable cogs, splined removal; Italy. Shop codes RE-A6/RE-A7. | held; 2157, 2158 |
+| 15 / 2 | Campagnolo Super Record 7-speed | Heat-treated light-alloy body and cogs. 6-speed listed normally;7-speed call for price, individual table combinations N/A. | held; 2073, 2075 |
+| 16 / 2 | Shimano Dura-Ace 7-speed | SIS-compatible, twisted Uniglide tooth form, semi-sealed body; Dura-Ace chain recommended. | unchanged; 2222 |
+
+#### Front Derailleurs
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 51 / 8 | Campagnolo C Record front | Carbon-nitrided cage, fine adjustment screws, heat-treated NiCr steel double hinge;80g; clamp/braze-on. | update; 2283 |
+| 52 / 8 | Campagnolo Super Record front | 90g; clamp/braze-on. | unchanged; 2313, 7012 |
+| 53 / 8 | Shimano Dura-Ace front | Polished chrome and grey anodised,97g; clamp/braze-on. | update; 2510 |
+
+#### Headsets
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 54 / 9 | Campagnolo New Record C | Pressed-in hardened steel races in aerodynamic alloy body; British/Italian,99g. | update; 2954 |
+| 55 / 9 | Campagnolo Super Record | Satin alloy cups with pressed-in steel races; solid steel crown/top head-tube races; British/Italian,135g. | update; 2968 |
+| 56 / 9 | Campagnolo Victory | All-steel construction/hardened precision races; British/Italian,175g. | update; 2971 |
+| 57 / 9 | Shimano Dura-Ace | Alloy cups, pressed steel races, titanium-coated crown race, plastic seals; British/Italian,116g. | update; 3099 |
+
+#### Hubs
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 1 / 1 | American Classic road hubs | Heat-treated alloy, thick flanges, replaceable sealed ball bearings; front200g/rear250g; 24/28/32/36 holes, silver, QR; factory-slotted pair and individual hubs offered. | update; 3179 |
+| 2 / 1 | Campagnolo New Record C road hubs | Improved dust covers and skewer, aerodynamic finish; 24/28/32 holes,6-speed,572g/pair; photograph shows low flange. | update; 3241 |
+| 3 / 1 | Campagnolo Record road hubs | Small or high flange; user-replaceable bearings/cones/races,28/32/36 holes,523g/pair generic listing; individual front/rear also sold. | unchanged; 3259, 3260 |
+| 4 / 1 | Campagnolo New Record C Track hubs | 24/28/32 holes,584g/pair; flange type not specified. | held; 3242, 3243 |
+| 5 / 1 | Campagnolo Record Track hubs | 28/32/36 holes; flange type not specified. | held; 3270, 3271 |
+
+#### Pedals
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 42 / 5 | Campagnolo New Record C platform | Wide aero platform, steel spindle, alloy clips and leather straps;375g/pair. | update; 3693 |
+| 43 / 5 | Shimano Dura-Ace platform | Steel clips and nylon straps;306g/pair; accessories weight basis unqualified. | update; 3970 |
+| 44 / 5 | Shimano LOOK | Silver-grey, France; streamlined black-Look-derived design, capless,34deg cornering;410g/pair. | update; 3971 |
+| 45 / 5 | LOOK toeclipless white | White body, black cover; twist release, adjustable spring tension, cleats included;518g/pair. | update; 3788 |
+| 46 / 6 | LOOK Competition black | Black version,484g/pair, about1oz lighter than white; aerodynamic body; highest fixed spring tension, non-adjustable. | update; 3790 |
+
+#### Rear Derailleurs
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 47 / 8 | Campagnolo C Record rear | Third spring around hanger screw, aero cage and jockey covers, pulley bearings with12 balls;209g; shield-logo photograph. | update; 4096 |
+| 48 / 8 | Campagnolo Super Record rear | Replaceable brass bushings, chromed manganese springs and titanium bolts;182g; exact spring/rivet version unprinted. | held; 4151, 4152 |
+| 49 / 8 | Campagnolo Nuovo Record rear | Like Super Record without titanium bolts;199g; exact spring/rivet version unprinted. | held; 4126, 4127 |
+| 50 / 8 | Shimano Dura-Ace rear | SIS,6/7-speed;192g; code unprinted. | update; 4504 |
+
+#### Seat Posts
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 58 / 10 | Campagnolo New Record C aero | Polished tapered elliptical post, one-bolt clamp;180mm,25.0/27.0/27.2mm,218g. | update; 5738 |
+| 59 / 10 | Campagnolo Super Record fluted | Polished round fluted single-bolt post;180mm,25.0/26.4/26.8/27.0/27.2mm,220g. | update; 5761 |
+| 60 / 10 | American Classic standard | Heat-treated aluminium alloy, micro-adjust top, silver or gloss-black epoxy;200mm,150g;25.0/26.4/26.8/27.0/27.2mm. | update; 11793 |
+| 61 / 10 | American Classic extra-long | Same alloy/micro-adjust family;280mm,180g;25.0/27.0/27.2mm; silver/black. | update; 11793 |
+
+#### Shifters
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 62 / 12 | Campagnolo New Record C retrofriction | Internal springs/bearings, braze-on,70g; no maker code. | update; 5970 |
+| 63 / 12 | Campagnolo Super Record braze-on | Friction shifter,38g; no maker code or retrofriction mechanism specified. | held; 5993, 6000, 6001 |
+| 64 / 12 | Campagnolo Super Record clamp-on | Friction shifter,38g generic listing; no maker code. | held; 5993, 6001 |
+| 65 / 12 | Shimano Dura-Ace SIS6 | SIS/friction,6-speed;52g generic listing; no code. | update; 6164 |
+| 66 / 12 | Shimano Dura-Ace SIS7 | SIS/friction,7-speed;52g generic listing; no code. | update; 6165 |
+| 67 / 12 | Campagnolo Record C Syncro | Stainless/brass internal parts, secondary selector lever,6-speed with7-speed conversion insert;98g, maker code not printed. | update; 5973 |
+
+#### Single Sprockets
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 7 / 1 | Unattributed track cogs, 1/8in | Heat-treated steel track cogs,12–20 teeth; maker unprinted. | held; no secure identity |
+| 8 / 1 | Unattributed track cogs, 3/32in | Heat-treated steel track cogs,13–21 teeth, for road chain; maker unprinted. | held; no secure identity |
+| 17 / 2 | Maillard 700 Super Course spare cogs | Interchangeable cogs separately offered; no maker code or individual teeth specified in the spare-cog line. | held; no secure identity |
+| 18 / 2 | Campagnolo Super Record spare freewheel cogs | Alloy cogs separately offered; no individual tooth or maker-code crosswalk. | held; no secure identity |
+
+#### Wheel(sets)
+
+| Mention / PDF page | Printed identity | Description | Disposition / DB IDs |
+| --- | --- | --- | --- |
+| 19 / 2 | AIR RAD disc wheel | Photograph caption only; no specification, front/rear or configuration printed. | held; no secure identity |
+
+### Baseline and validation
+
+Before load: **11,151 components**, **23,380 live specs**. All 108 loaded local catalogue CSVs compare with the live database: 23,365 unchanged proposals and 15 pre-existing lost proposals, no gained/changed proposals or missing/ambiguous identities. There are **202 existing bike-spec links on the 36 affected component rows**. Validation passed: exactly 36 component updates and one source insert; identical SQL rerun affected zero rows in every table. Exact before/after field readback passed for every update, with all other component fields and rows unchanged. Source country/citation, maker/category/group references and description lengths passed; maximum changed description length is 242 characters. Normal, near and parenthetical duplicate-classifier pair sets and classifications are identical before/after. Reviewed pairs retained: production/prototype Delta 560/562; Speedy/La Vie Claire 886/887; six/seven-speed Campagnolo 2072/2073; Maillard generic/five-speed 2125/2126; Regina six/seven-speed 2156/2157. All 202 existing links on affected components are unchanged, and all 23,380 live bike specs are byte-for-byte identical. The complete generator/live report over all 108 loaded local catalogues is identical, including the same 15 pre-existing lost proposals; no new gained/lost/changed mapping, missing identity or ambiguity. No new date conflict or dangling reference. The exact clipless range edit introduces no current mapping change; generic Dura-Ace values retain their platform mapping. Existing `test/quality-link-decisions.test.js` passed. A scoped scan of unlinked specs found no newly supportable fitment: e.g. bare Maillard 700 Course24882 does not identify Super Course, while Peugeot Super Plus14702/15663 stays on2127. No ambiguous shifter, crank or hub is forced into a later/earlier generation.
+
 ## Branford 1994/95 component inventory — visually reviewed 2026-11-19
 
 **Applied and validated after the user’s “apply” instruction.** Source **474**, Kingsbury **766**; **17 additions12071–12087**, **23 existing-row updates**, three category/brand registrations. No bike-spec or matcher changes, merges or deletions. The listing below was the preceding inventory stage; its live comparison and validated results are now recorded here.
@@ -367,7 +608,7 @@ The preceding inventory contains150 listing mentions (bead variants combined whe
 
 ## Branford 1995/96 component catalogue — applied and validated 2026-11-19
 
-**Applied and validated after explicit user approval.** Added components **12022–12070**, updated **55 existing rows**, registered source **473**, brands **Kooka762, Ringlé763, Onza764, Kore765**, and ten category/brand pairs. This completes the component reconciliation for this edition. No bicycle rows, bike-spec writes, CSV or matcher edits, merges or deletions. The earlier1994/95 edition is now reconciled above; archive-attributed1987 remains separate pending work.
+**Applied and validated after explicit user approval.** Added components **12022–12070**, updated **55 existing rows**, registered source **473**, brands **Kooka762, Ringlé763, Onza764, Kore765**, and ten category/brand pairs. This completes the component reconciliation for this edition. No bicycle rows, bike-spec writes, CSV or matcher edits, merges or deletions. The earlier 1994/95 and archive-attributed 1987 editions are now reconciled above.
 
 [Original 48-page PDF](https://timslife.com/brancat/Catalogs/bb19-2_1995.pdf), 57,698,585 bytes; retained at `/tmp/branford-edition-triage-20261119/bb19-2_1995.pdf`. Cover: **1995/96, Vol.19 No.2**, orders through **31 December 1996**. This is period retailer availability/configuration evidence, not manufacturing introduction/discontinuation evidence. New rows use **1995–1996** as the edition availability window; existing earlier/later independent attestations are retained. Retailer stock codes are not maker part numbers.
 
@@ -861,7 +1102,7 @@ Readback verified **all 49 new and 55 updated components** against the approved 
 - Full maker/category, model-code and spelling/ownership-alias searches preceded insertion. Applied group/near/parenthetical duplicate checks match the reviewed simulation exactly: **four configuration/generation pairs, three existing near-code pairs, zero parenthetical-name pairs**, retained for the independently documented distinctions above. No new unreviewed affected candidates.
 - Preflight rechecked **55 exact before-images**, absence of the **49 new UUIDs/model identities**, brand/source absence, actual field limits, and **119 EXPLAIN plans** before loading. Snapshot checks were READ ONLY; MySQL required EXPLAIN DML outside that transaction after rollback. Maximum applied component description **239** characters, source citation **148**, new eBay search text **45**; exact readback confirms all values fit.
 
-The original three acquired Branford PDFs remain in `/tmp/branford-edition-triage-20261119/`; the1994/95 reconciliation is now applied/validated above; attributed1987 still awaits its inventory. After application, exact readback, mapping/date/duplicate validation and the zero-change rerun, the completed 1995/96 task's temporary SQL, transcriptions, snapshots, reports and helpers were removed. The full page ledger, source inventory, new IDs/load UUIDs, prior values and identity decisions above are the lasting evidence. No audit SQL is committed.
+The original three acquired Branford PDFs remain in `/tmp/branford-edition-triage-20261119/`; the1994/95 reconciliation is now applied/validated above; the attributed 1987 reconciliation is also applied and validated above. After application, exact readback, mapping/date/duplicate validation and the zero-change rerun, the completed 1995/96 task's temporary SQL, transcriptions, snapshots, reports and helpers were removed. The full page ledger, source inventory, new IDs/load UUIDs, prior values and identity decisions above are the lasting evidence. No audit SQL is committed.
 
 ## Colorado Cyclist components — applied and validated 2026-11-19
 
@@ -1655,7 +1896,7 @@ package names and unresolved identities retain their reviewed limits.
 | 20 | Campagnolo SGR | Pedals | []; Campagnolo SGR pedals are said to be listed with Campagnolo gruppos. | unchanged 3694; Existing1990-compatible identity; printed facts add no supported change to the stronger existing record. |
 | 20 | Shimano Dura-Ace | Pedals | []; Shimano Dura-Ace pedals said to be listed with Shimano gruppos. | family_corroboration 3970,3971; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
 | 20 | Shimano 600 Ultegra | Pedals | []; Shimano 600 Ultegra pedals said to be listed with Shimano gruppos. | family_corroboration 3958,3959; Group-level/uncoded listing; preserve existing coded generations/configurations rather than assign shop SKU as maker number. |
-| 21 | Maillard Super Course | Freewheels | [{"speed":6,"weight_g":350,"finish":"bright silver, heat-treated cro-mo cogs","removal":"two-prong Suntour-style"},{"speed":7,"variant":"Ultra 7"}]; Durable freewheel; recommended with Sedis PRO chain; not recommended for Syncro shifters. | unresolved 2125,2127; Super Course is not a printed700 code or Plus crosswalk; no arbitrary merger/date assignment. |
+| 21 | Maillard Super Course | Freewheels | [{"speed":6,"weight_g":350,"finish":"bright silver, heat-treated cro-mo cogs","removal":"two-prong Suntour-style"},{"speed":7,"variant":"Ultra 7"}]; Durable freewheel; recommended with Sedis PRO chain; not recommended for Syncro shifters. | held in the 1990 pass against2125/2127; that source lacks a printed700/Plus crosswalk. The later1987 fragment(source475) explicitly identifies and enriches2125; the1990 offer/Plus crosswalk remains unresolved. |
 | 21 | Regina America | Freewheels | [{"speed":6,"weight_g":375},{"speed":7,"variant":"Ultra 7"},{"speed":6,"range":"15–20 teeth"}]; Matte silver cogs with simple splined removal system; 7-speed version compatible with Regina CXS chain; Italy. | partially updated 2156,2157; Update ordinary6-speed2156; do not resolve ambiguous7-speed2157 from its speculative Superleggera qualifier. |
 | 21 | Regina America SL | Freewheels | [{"speed":6,"weight_saving_g":100,"body":"traditional America body","weight_g":275},{"speed":7,"variant":"Ultra 7"}]; Aluminum alloy upgrade with over 100 g saved; intended for special-occasion lightweight wheels; Italy. | partially updated 2160,2157,2203; Update6-speed SL2160;7-speed legacy2157/1992SL2203 crosswalk remains unresolved. |
 | 21 | Campagnolo Record (alloy freewheel; catalog heading Campagnolo) | Freewheels | [{"speed":6,"weight_g":175},{"speed":7,"variant":"narrow; spare cogs sold separately"}]; Alloy freewheel with furnace-heat-treated cogs and body; high-mileage life claim; Italy. | updated 2072,2075; Standalone6 and7-speed-narrow configurations; preserve normal7-speed2073 separately. |

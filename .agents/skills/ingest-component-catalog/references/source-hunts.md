@@ -6,9 +6,11 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ### Branford remaining editions — downloaded and triaged 2026-11-19
 
+**1987 fragment subsequently ingested, 2026-11-19:** [Applied reconciliation, full inventory and evidence limits](known-catalogs/cross-catalog-notes.md#branford-1987-component-fragment--reconciliation-2026-11-19), source **475**. All 12 pages triaged, ten component pages visually read; 67 listing mentions support 36 existing-row updates, no new component rows. Exact readback and zero-change rerun passed. All 23,380 bike specs and the 108-catalogue generator report remain unchanged; no new duplicate pair or date conflict. The attributed dating is retained, with a printed “New for1987” lever description as corroboration. The three held Branford editions below are now reconciled.
+
 **Subsequent 1994/95 reconciliation, 2026-11-19:** [Applied reconciliation, inventory and page ledger](known-catalogs/cross-catalog-notes.md#branford-199495-component-inventory--visually-reviewed-2026-11-19). Cover and eligible component boxes visually read on pp.20–22,24–27,44,46; p.45 is tyre care. This supersedes the acquisition-stage OCR-only qualification for those boxes. User-approved application is validated as source474:17 additions12071–12087,23 updates,Kingsbury766 and three category registrations. Exact readback and zero-change rerun passed; every bike spec/generated mapping is unchanged. The original PDF remains available.
 
-**Subsequent 1995/96 reconciliation, 2026-11-19:** [applied and validated after approval](known-catalogs/cross-catalog-notes.md#branford-199596-component-catalogue--applied-and-validated-2026-11-19), source473: 49 additions **12022–12070**, 55 updates, four makers and ten category/brand registrations. Readback and the zero-change rerun passed; all bike mappings are unchanged. Actual eligible listings are pp.20–29; p.30 is tyre care and p.48 is the index, not a component matrix. This supersedes the OCR-only/no-SQL qualification below for 1995/96. The subsequent1994/95 reconciliation is linked above; attributed1987 still awaits its inventory.
+**Subsequent 1995/96 reconciliation, 2026-11-19:** [applied and validated after approval](known-catalogs/cross-catalog-notes.md#branford-199596-component-catalogue--applied-and-validated-2026-11-19), source473: 49 additions **12022–12070**, 55 updates, four makers and ten category/brand registrations. Readback and the zero-change rerun passed; all bike mappings are unchanged. Actual eligible listings are pp.20–29; p.30 is tyre care and p.48 is the index, not a component matrix. This supersedes the OCR-only/no-SQL qualification below for 1995/96. The subsequent1994/95 reconciliation is linked above; the attributed 1987 reconciliation is also linked above.
 
 Read-only source and component-coverage triage, at the user's request for more
 Branford catalogues to ingest. **Components only; no bikes.** All three
@@ -24,7 +26,7 @@ was made in the original triage.
 | [1994–1995, Vol.18 Issue2](https://timslife.com/brancat/Catalogs/bb18-2_1994.pdf) | 48 / 50,075,372 | Cover explicitly prints1994–1995 and order-through31December1995. |
 | [1995/96, Vol.19 No.2](https://timslife.com/brancat/Catalogs/bb19-2_1995.pdf) | 48 / 57,698,585 | Cover explicitly prints1995/96 and order-through31December1996. |
 
-Retained originals for the pending component inventories:
+Retained original scans for the completed reconciliations linked above:
 - /tmp/branford-edition-triage-20261119/bb1987.pdf
 - /tmp/branford-edition-triage-20261119/bb18-2_1994.pdf
 - /tmp/branford-edition-triage-20261119/bb19-2_1995.pdf
@@ -37,7 +39,7 @@ The1987 layer is noisier but selected scans are readable. Visually inspected:
 comes from page-by-page OCR/index triage, **not a full visual transcription**.
 Use PDF page numbers in a future inventory until printed folios are checked.
 
-**Recommended first:1995/96.** Its main component block is PDF20–30:
+**Historical first recommendation:1995/96 (now applied above).** Its main component block is PDF20–30:
 cranks/BBs, headsets, brakes, pedals, saddles/posts, bars/stems, hubs/cassettes,
 rims/wheels and tyre tables. Strongest sampled missing-maker/model-title
 candidates are Kooka ATB Racing cranks and titanium BB(PDF20), Ringlé
@@ -65,12 +67,12 @@ Hammer/Pursuit have no current maker/model-title match; existing Breeze10713
 (1996) and AeroII11802(1990) require variant/date checks. Those PDF25 names
 remain OCR leads until the individual scan boxes are visually reconciled.
 
-**Third:archive-attributed1987.** A compact, mostly component-only fragment,
+**Historical third recommendation:archive-attributed1987 (now applied above).** A compact, mostly component-only fragment,
 with hubs, freewheels/chains, brakes, cranks, pedals, derailleurs, headsets,
 posts and shifters. Likely value is earlier availability/specification evidence
 for already represented Campagnolo/Shimano and American Classic products.
 PDF10 explicitly offers American Classic200/280mm posts at150/180g, versus
-current11793's1988–1990 attestation and later200/300mm specifications.
+then-current11793's1988–1990 attestation and later200/300mm specifications.
 Keep the lengths/weights by edition; do not silently turn280 into300.
 PDF2 OCR names Maillard700 Super Course6/7-speed, potentially relevant to
 generic Course Super2125–2127, but no maker-code/variant crosswalk is yet
@@ -111,7 +113,7 @@ unlinked editions from that introductory text.
 
 | Edition / direct file | Acquisition status |
 | --- | --- |
-| [1987 photocopied pages](https://timslife.com/brancat/Catalogs/bb1987.pdf) | Downloaded12-page component fragment; selected scans/OCR triaged. Archive/handwritten1987 attribution; no cover. See the [current triage](#branford-remaining-editions--downloaded-and-triaged-2026-11-19). |
+| [1987 photocopied pages](https://timslife.com/brancat/Catalogs/bb1987.pdf) | Ingested as source475 after the full inventory;36 updates, no additions. Archive/handwritten1987 attribution, with printed New for1987 corroboration; no cover. See the [applied reconciliation](known-catalogs/cross-catalog-notes.md#branford-1987-component-fragment--reconciliation-2026-11-19). |
 | [1990 Spring/Summer](https://timslife.com/brancat/Catalogs/bb1990-01.pdf) | Downloaded, 78,878,255 bytes, 36 PDF pages: 32-page catalogue plus four service/chart/order pages. Cover explicitly prints 1990 Spring/Summer. |
 | [1994/1995, volume 18 no.2](https://timslife.com/brancat/Catalogs/bb18-2_1994.pdf) | Downloaded48-page PDF; cover/date range visually verified and component sections triaged. See the [current triage](#branford-remaining-editions--downloaded-and-triaged-2026-11-19). |
 | [1995/1996, volume 19 no.2](https://timslife.com/brancat/Catalogs/bb19-2_1995.pdf) | Components [applied and validated](known-catalogs/cross-catalog-notes.md#branford-199596-component-catalogue--applied-and-validated-2026-11-19), source473; 48-page original retained. |
