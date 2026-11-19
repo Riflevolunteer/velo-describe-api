@@ -5,7 +5,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Ready to work
 
 - Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
-- Compare the recovered undated Sachs ATB brochure's AR41.4T, AV62.2T and MA82.8G/9G/10G with later Rival 7000/Classic specimens, then prepare any supported additions or enrichment. [Source, initial reconciliation and retained PDF](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#recovered-sachs-composants-atb-brochure--undated).
+- Review/apply the [Sachs Rival ATB additions and specimen enrichment](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#rival-atb-versus-rival-7000classic--2026-11-19-prepared-only) in `/private/tmp/huret-evidence-2026-11-19/sachs-atb-proposed.sql`; after approval, validate readback, idempotency, duplicates and bike mappings.
 
 ## Product and infrastructure
 
