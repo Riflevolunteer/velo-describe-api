@@ -84,6 +84,12 @@ references below are **bound PDF sheet numbers**, not invented catalogue pages.
 | 7 | Wheel matrix: ArayaCTL370/CT19, Campagnolo Lambda/Omega/VictoryStrada, MavicMA40/Open4CD/GL330/Mach2CD, MatrixISOAero, WolberTXAero; Mavic556RD/PhilWood and other hub columns. |
 | 8 | Nishiki Altron/Linear clearance bikes, ShimanoPD-7401 and LookPP-76; computers. |
 
+**Component reconciliation applied/validated2026-11-19, source472:** all eight sheets
+were reviewed for component evidence. User explicitly excludes loading bikes.
+[Applied component changes and validation](known-catalogs/cross-catalog-notes.md#colorado-cyclist-components--applied-and-validated-2026-11-19).
+Four additions and14 updates passed readback/idempotency checks, with no bike
+load or mapping changes. Do not repeat this inventory as an unread-source acquisition.
+
 Original PNG URLs, in bound order:
 
 1. https://cimg4.ibsrv.net/gimg/bikeforums.net-vbulletin/1082x1412/screenshot_2025_11_02_at_12_36_44_pm_5bce9c09412991509d01c2d171dc80abcabe9337.png

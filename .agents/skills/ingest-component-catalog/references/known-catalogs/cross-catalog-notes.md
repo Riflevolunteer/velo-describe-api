@@ -1,6 +1,349 @@
+## Colorado Cyclist components — applied and validated 2026-11-19
+
+**Applied after user approval and validated.** Components only: **4 additions,
+14 existing-row updates and one catalogue source**, data_source **472**.
+New component IDs **12018,12019,12020,12021**.
+At the user's explicit direction, none of the50 bikes from the broader draft
+was loaded. No bike,bike_brand,bike_spec,bike_spec_label,CSV,matcher or registry
+writes were made. The rejected bike preparation was removed; no bike-loading
+follow-up remains. Original source scans/PDF are preserved.
+
+All eight recovered sheets were reviewed for component evidence, including
+parts named in printed build/clearance specifications. Sheet8 can identify
+the leather Vetta Racing200 without requiring its Nishiki bike to be loaded.
+[Original source](https://www.bikeforums.net/classic-vintage/1316218-colorado-cyclist-catalog-1988-a.html);
+[direct scans and recovered PDF](../source-hunts.md#branford-and-colorado-cyclist-online-scans-recovered--2026-11-19).
+The eight-sheet public fragment does not establish completeness of the
+original edition. Sheet numbers refer to recovered order, not printed pages.
+
+### Dating and scope
+
+Keep **attributed1988**: the uploader supplies that year; sheet5 prints an
+offer/prices through20January1989, which is not a publication date. Reader
+handwriting and the unverified franking/postage imprint do not establish an
+edition date. Both Nishiki clearance models are explicitly1987; that is
+component-fitment evidence, not permission to change the catalogue attribution.
+New component1988–1988 dates attest availability, not production boundaries.
+No existing year_from moves later. No new brands/category_brand pairs,
+merges/deletes, bike writes or source changes to existing catalogue records
+were made. Source472 has US market provenance.
+
+### Evidence and cleanup
+
+Fixed UUIDs and allocated IDs below identify the loaded rows; prior scalar
+values remain in the restoration table. Source URLs, edition qualifications,
+sheet ledger and full reviewed descriptions are retained here. SQL, baselines,
+OCR and temporary review/validation files were removed after exact readback
+and the zero-change rerun. The previously requested bound PDF and originals
+remain at /tmp/colorado-cyclist-acquisition-20261119/.
+
+### Sheet ledger
+
+| Sheet | Component scope / decision |
+| --- | --- |
+| 1 | Cover photographs; no model/spec identity inferred from photos. |
+| 2 | Fitting/order advice only. |
+| 3 | Fitting advice, Cinelli64/66 comparison, custom substitution policy. Reader handwriting dated1989 is not an edition imprint. |
+| 4 | Frames and build-package headings reviewed for named-component evidence; complete bikes and framesets excluded from loading at user request. |
+| 5 | Geometry, prices and six-group component matrix reviewed; named component evidence retained, no complete-bike or bike-spec ingestion. |
+| 6 | All identifiable parts/tyres, closeouts and six price columns reviewed. Tubes, glue/inflators, cleats, cages, pumps, stands, racks, looseforks, spokes/nipples, straps, covers, tools, trainer/rollers excluded from component categories. |
+| 7 | All13 rim choices,9 hub columns,2 wheel specials reviewed. Frame-onlyOlmo excluded; stand/pump/helmet/shoe/glove ads excluded. Retailer wheel assemblies not independent manufacturer models. |
+| 8 | Two explicitly1987 Nishiki clearance bikes reviewed for component evidence, including Vetta Racing200. Only the component evidence and coded pedals are in scope; no bike rows. Computers and optional Uni-disk cover excluded. |
+
+### Component additions
+
+| ID / title | Maker / category | Sheet | Dates | UUID | Description |
+| --- | --- | --- | --- | --- | --- |
+| 12018 Specialized Turbo S K4 | 53 Specialized / Tyres | 6 | 1988–1988 | e740f421-f806-422b-9fe5-3e84a9989590 | Kevlar-belted road clincher, offered separately from the unbelted Turbo S; sold with an ultralight inner tube. |
+| 12019 Specialized Turbo R | 53 Specialized / Tyres | 6 | 1988–1988 | 02e2911b-b32e-4071-8549-a110e34223cc | Road clincher in700x19 or700x25, offered separately from the Kevlar-belted Turbo R K4; sold with an ultralight inner tube. |
+| 12020 Matrix ISO Aero | 507 Matrix / Rims | 7 | 1988–1988 | 40a60fe7-872c-4cff-8450-a3d237d6440c | Aero tubular rim, available separately or in retailer-built wheels with a choice of hubs and DT stainless spokes. |
+| 12021 Rigida Score | 512 Rigida / Rims | 6 | 1988–1988 | 58ef7caa-bc4c-4db3-9e36-8045a829dc19 | Clincher rim,28 spoke holes. |
+
+The Turbo S K4 and unbelted Turbo R are separately listed alongside Turbo S
+and Turbo R K4; neither is an invented weight-based model. Do not conflate
+Turbo R with the separately named Turbo LR. Matrix ISO Aero is a **tubular**
+in sheet7, while the bare Matrix ISO in the Chorus wheel special and customer
+choice table is a clincher and does not establish ISO C-II5040. Rigida Score
+is explicitly named; no matching Score row exists among the Rigida models.
+
+### Existing-component updates and restoration values
+
+All unlisted fields remain fixed, including UUID, brand/category/group and image.
+Every change set the component source to Colorado Cyclist472 in
+the same before-image-guarded UPDATE. Both retitles also regenerate search_text.
+The recorded prior values support restoration if later evidence contradicts
+the proposal.
+
+| ID / sheet / reason | Applied changes | Full prior scalar values |
+| --- | --- | --- |
+| 1401 / 6 / Named Sedis Pro available in the attributed1988 sheet; preserve independent1990 material/spec detail. | {"year_from":"1988","source_ref":472} | {"component_id":1401,"brand_id":216,"title":"Sedis Pro","description":"Sedis Sport Pro chain; fully heat treated, nickel plated, bevelled inner plates; for Maillard/SunTour ultra or standard-spaced freewheels.340g listed. France.","year_from":"1990","year_to":"1990","category_id":6,"group_id":null,"search_text":"Sedis Pro","source_id":"15FA5760-7B25-4F69-9A8D-6535FF2D5F9E","source_ref":471}; image presence=0 |
+| 11793 / 6 / Exact200/300mm American Classic post offering,25/27.2mm; preserve later full specifications. | {"year_from":"1988","source_ref":472} | {"component_id":11793,"brand_id":355,"title":"American Classic Classic Seatpost (alloy)","description":"Heat-treated alloy post, one-bolt micro-adjust cradle; 200mm/168g or reinforced 300mm/290g. Diameters 25.0/26.0/26.6/27.0/27.2/27.4mm; silver anodised or gloss-black epoxy finish.","year_from":"1990","year_to":"1990","category_id":18,"group_id":null,"search_text":"American Classic Classic Seatpost","source_id":"ef24cf58-d472-44da-a23e-97335c35eb90","source_ref":471}; image presence=0 |
+| 8311 / 6 / Distinct computer-ready TTT stem; no other such stem in current inventory. | {"year_from":"1988","source_ref":472} | {"component_id":8311,"brand_id":61,"title":"3ttt AR84 Computer Ready","description":"3ttt AR84 Computer Ready stem. Laser-drilled to route a cycle-computer wire under the head and down the fork; small Allen screw holds the head jaws open. 90/100/110mm. RJC cat. S90K-S110K. Italy","year_from":"1989","year_to":"1989","category_id":22,"group_id":null,"search_text":"3ttt AR84 Computer Ready","source_id":"491a0683-c28a-11f1-a2df-02fea3763e8d","source_ref":136}; image presence=0 |
+| 6985 / 6 / Enrich bare Sugino75 Tyranno row and extend attested availability. | {"year_to":"1988","description":"75 Tyranno disc wheel, alloy/honeycomb construction for tubular tyres;3lb listed. Japan.","source_ref":472} | {"component_id":6985,"brand_id":55,"title":"Sugino 75 Tyranno","description":"Sugino 75 Tyranno, Japan","year_from":"1987","year_to":"1987","category_id":24,"group_id":104,"search_text":"Sugino 75 Tyranno","source_id":"D8BA74EE-C578-4023-AC21-25A00E999BD3","source_ref":1}; image presence=0 |
+| 5226 / 7 / ExactTX/Profil/Aero words and clincher section; preserve measured weight. | {"year_from":"1988","year_to":"1988","title":"Wolber TX Profil Aero","description":"TX Profil aero clincher rim, offered separately or in handbuilt wheels;700C named in the Cyclone-hub wheelset.457.5g average measured. France.","search_text":"Wolber TX Profil Aero","source_ref":472} | {"component_id":5226,"brand_id":522,"title":"Wolber TX Profil","description":"Wolber TX Profil, France, 457.5 grams (avg)","year_from":null,"year_to":null,"category_id":16,"group_id":null,"search_text":"Wolber TX Profil","source_id":"5E5173A1-F90A-4B70-8E33-6EE02E01F3D8","source_ref":1}; image presence=0 |
+| 575 / 6 / Short-reach Nuovo Record still offered in this catalogue; preserve post-CPSC row identity. | {"year_to":"1988","source_ref":472} | {"component_id":575,"brand_id":11,"title":"Campagnolo 2040/1, Record (short reach, post-CPSC)","description":"Campagnolo 2040/1, Record (short reach, post-CPSC), Italy, 332 grams (Actual),pair (cleaned & w/o grease)","year_from":"1978","year_to":"1987","category_id":3,"group_id":12,"search_text":"Campagnolo 2040/1 Record","source_id":"2E83607D-E755-4D41-8FC9-8532C7C25B90","source_ref":1}; image presence=0 |
+| 5681 / 8 / Exact200 model and Racing/leather qualifiers; extend old1980 decade-bucket end without moving its start. | {"year_to":"1988","title":"Vetta Racing 200","description":"Racing200 road saddle with leather cover. Italy.","search_text":"Vetta Racing 200","source_ref":472} | {"component_id":5681,"brand_id":585,"title":"Vetta 200","description":"Vetta 200, Italy","year_from":"1980","year_to":"1980","category_id":17,"group_id":null,"search_text":"Vetta 200","source_id":"D1672D46-0E21-48BB-9A6E-52798FCD0DF8","source_ref":1}; image presence=0 |
+| 1390 / 6 / Add explicit black finish, retain independent weight and dimension evidence. | {"description":"50S.L. narrow chain; hollow pins, bevelled heat-treated plates, for Regina alloy6/7-speed freewheels. Black finish offered in1988.1990 retailer272g; prior240g listing.1992:7.2mm overall,0.19kg/m. Italy.","source_ref":472} | {"component_id":1390,"brand_id":190,"title":"Regina Extra Superleggera SL","description":"50S. L. narrow chain; hollow pins, bevelled heat-treated plates, for Regina alloy6/7-speed freewheels.1990 retailer272g; prior240g listing.1992: 7.2mm overall, 0.19kg/m. Italy.","year_from":"1980","year_to":"1992","category_id":6,"group_id":null,"search_text":"Regina Extra Superleggera SL","source_id":"09DA031A-BCA6-4D35-8F94-929652D8A1B6","source_ref":471}; image presence=0 |
+| 2869 / 6 / Preserve conflicting maker/retailer width ranges by edition. | {"description":"Anatomic Dural aluminium bar, uniform1.6mm wall; hard-oxidised finish.1986 maker:38–44cm centre-to-centre. Attributed1988 retailer: dark anodised,36–44cm.","source_ref":472} | {"component_id":2869,"brand_id":91,"title":"Modolo Equipe","description":"Anatomic Dural aluminium bar, uniform 1.6 mm wall; hard-oxidised finish. Sizes 38-44 cm centre-to-centre.","year_from":"1986","year_to":"1990","category_id":11,"group_id":null,"search_text":"Modolo Equipe","source_id":"39668AA4-B128-469B-8370-9D5CDA302D2A","source_ref":387}; image presence=0 |
+| 278 / 6 / Add listed colour options without asserting hood versus blade colour. | {"description":"Aero brake lever, anatomical design, buffed and clear anodized,24.0mm clamp,118g;236g pair previously listed. Offered in white, black or silver in1988.","source_ref":472} | {"component_id":278,"brand_id":73,"title":"Dia-Compe AGC251, Aero Gran Compe","description":"Aero brake lever, anatomical design, buffed and clear anodized, 24.0mm clamp, 118g; 236g pair (velobase).","year_from":"1986","year_to":"1989","category_id":2,"group_id":78,"search_text":"Dia-Compe AGC251 Aero Gran Compe","source_id":"4E6866D8-F429-48BD-A198-A63E2D43088B","source_ref":447}; image presence=0 |
+| 5508 / 6 / Preserve later construction/weight; distinguish earlier available colours. | {"description":"Rilsan shell with steel rails, short frame, Flex Control padding and leather cover.1988: white/black/yellow;1996:black.340g catalogue,358.75g average measured.","source_ref":472} | {"component_id":5508,"brand_id":570,"title":"Selle Italia Turbo","description":"Rilsan shell with steel rails, short frame, Flex Control padding, leather cover, black. 340 g catalogue (358.75 g average measured in database).","year_from":"1980","year_to":"1996","category_id":17,"group_id":null,"search_text":"Selle Italia Turbo","source_id":"D02B1916-FFC9-49A8-B951-A1568452739F","source_ref":357}; image presence=0 |
+| 5561 / 6 / Enrich bare model with printed colour choices; retain independent weight. | {"description":"Regal saddle, black or white;395g listed. Italy.","source_ref":472} | {"component_id":5561,"brand_id":572,"title":"Selle San Marco Regal","description":"Selle San Marco Regal, Italy, 395 grams","year_from":"1970","year_to":"2000","category_id":17,"group_id":null,"search_text":"Selle San Marco Regal","source_id":"FB3A5F8B-C1BC-4BB2-B249-34CB46F9736F","source_ref":1}; image presence=0 |
+| 5303 / 6 / Add explicit presoftened finish, retain independently recorded construction/colour variants. | {"description":"Presoftened butt-leather saddle, copper-plated nose, cambered back plate, chamfered skirt, large copper rivets, chrome frame;532g,160x260mm. Black/antique brown on chrome; honey on copper(BZL232/324/312). England.","source_ref":472} | {"component_id":5303,"brand_id":529,"title":"Brooks Team Professional","description":"Brooks Team Professional, England. Butt-leather saddle with copper-plated nose, cambered back plate, chamfered skirt, large copper rivets, chrome frame; 532 g. 160 x 260mm; black or antique brown on chrome, honey on copper (BZL 232 / 324 / 312).","year_from":"1970","year_to":"2000","category_id":17,"group_id":null,"search_text":"Brooks Team Professional","source_id":"5FAEA016-7344-4A95-A856-89C76D9E92CA","source_ref":345}; image presence=0 |
+| 9920 / 6 / Add stated Poly belt while retaining prior construction/use and weight. | {"description":"Poly-belted tubular, reinforced Pro84 for puncture resistance and rough roads;37threads/cm,21.7mm,90–105psi,255g. France.","source_ref":472} | {"component_id":9920,"brand_id":522,"title":"Wolber Pro SP1","description":"Wolber Pro SP1, France. Tubular, a reinforced version of the Pro 84, puncture resistant and suited to rough roads; 37 threads per cm, 21.7mm section, 90-105 psi, 255g.","year_from":"1985","year_to":"1988","category_id":23,"group_id":null,"search_text":"Wolber Pro SP1","source_id":"71a889cf-d3fa-11f1-a2df-02fea3763e8d","source_ref":422}; image presence=0 |
+
+Three year_from extensions: Sedis Pro1401 and American Classic11793
+1990→1988; 3ttt Computer Ready8311 1989→1988. Wolber5226's null dates become
+1988–1988. year_to extends Sugino6985 and Nuovo Record5751987→1988 and
+Vetta5681's weak1980 bucket end→1988; its1980 start is retained. Vetta200 is
+retitled **Vetta Racing200**, adding the leather-cover evidence from the
+explicitly1987 Linear. Wolber TX Profil is retitled **Wolber TX Profil Aero**,
+preserving457.5g measured. Modolo retains the1986 maker38–44cm range alongside
+this retailer's36–44cm; it is not silently widened as a manufacturer claim.
+Dia-Compe white/black/silver is retained without guessing hood versus blade
+colour. Earlier/later Selle Italia colours and all independent measured weights
+are preserved. No new introduction year is inferred from a “new” caption.
+
+### Existing bike-link and duplicate follow-through
+
+The component changes preserve all existing23,380 generated mappings across
+108 loaded CSVs, including the baseline23,365 unchanged/15 pre-existing
+HuretRival lost matches. All82 existing links to the changed component rows
+remain intact, with no date conflicts before or after. No new supported
+backfill or override emerges from the component evidence.
+
+No new duplicate pair appears in grouped,near or parenthetical reports.
+Existing Turbo5508/5509 generation,5508/5510 configuration and short-reach
+575/576 generation pairs remain unchanged. Separately listed tyres and rim
+identities are explained above; retailer-built wheels are not new manufacturer
+wheel models. No registry or matcher edits are needed.
+
+### Application and validation
+
+The approved21-statement transaction affected exactly **1 data_source insert,
+14 component_detail updates and4 component_detail inserts**. Readback matched
+every proposed field/UUID; the other11067 existing component rows and
+all existing catalogue source records are unchanged. Source472 uses a226-character
+citation within its255-character limit; complete dating/pagination qualifications
+remain above. A guarded citation correction affected one source row; its rerun
+and the full component SQL rerun each affected **zero rows**. Maximum component
+description213characters; all six new/retitled search strings use the maintained
+helper. Brands, categories, groups and category_brand counts are unchanged;
+the four new components have valid category/brand/group references and existing
+category_brand membership.
+
+Post-load actual generator comparison across108 loaded CSVs/23,380 specs has
+**zero changed mappings**. The23,365 unchanged/15 pre-existing HuretRival
+lost-match baseline is preserved. All1349 existing bike rows and23380
+stored specs in the baseline are unchanged, with no bike brand or label changes.
+All82 affected existing links remain fixed and have no date conflict. No new
+duplicate group/near/parenthetical pair was introduced; the three existing
+generation/configuration pairs noted above remain distinct. No new supported
+NULL backfill emerged, and no bike was loaded.
+
+### Full component mention inventory
+
+182 reviewed mentions, including named parts,72 group-table cells,
+six component-price columns and three retailer wheel-build listings. Counts
+are mentions, not distinct products. No117-model wheelset multiplication from
+the13×9 matrix: rims/hubs are component evidence and assembled wheel packages
+remain retailer builds.
+
+<details>
+<summary>Every extracted mention and its reconciliation</summary>
+
+| Ref / sheet | Category / printed identity | Decision / candidate IDs | Specification / reason |
+| --- | --- | --- | --- |
+| 1 / 3 | Handlebars / Cinelli 64 standard-drop bar | unchanged / 2802 | Standard drop; less reach than deep Cinelli66; stock widths38/40/42cm. |
+| 2 / 3 | Handlebars / Cinelli 66 deep-drop bar | unchanged / 2806 | Deep drop; about1.5in more reach than standard bar; stock widths40/42cm. |
+| 3 / 6 | Tyres / Panaracer Technova Kevlar-belted | unchanged / 6842 | Clincher700x20/25, Kevlar-belted; sold with ultralight tube. |
+| 4 / 6 | Tyres / Specialized K-4 | held / 6862,11358 | Kevlar-belted clincher700x25/28; ultralight tube. K-4 is not a complete model identity; Touring K4 and Touring II K4 are not proven crosswalks. |
+| 5 / 6 | Tyres / Specialized Turbo S K-4 | added / 12018 | Clincher with Kevlar belt; sold with an ultralight tube. Listed separately from the unbelted Turbo S. |
+| 6 / 6 | Tyres / Specialized Turbo R K-4 | unchanged / 11354 | Kevlar-belted clincher, sold with ultralight tube. |
+| 7 / 6 | Tyres / Specialized Turbo S | unchanged / 6868 | Clincher700x25; sold with ultralight tube. |
+| 8 / 6 | Tyres / Specialized Turbo R | added / 12019 | Clincher700x25 or700x19; sold with ultralight tube. Listed separately from Turbo R K-4. |
+| 9 / 6 | Tyres / Specialized Turbo VS | unchanged / 11355 | Clincher700x25, sold with ultralight tube. |
+| 10 / 6 | Tyres / Specialized Turbo VR | unchanged / 11356 | Clincher700x25, sold with ultralight tube. |
+| 11 / 6 | Tyres / Michelin Hi-Light Pro | unchanged / 6836 | Clincher700x19, sold with ultralight tube. |
+| 12 / 6 | Tyres / Michelin Hi-Light Comp | unchanged / 6835 | Clincher700x20/23, sold with ultralight tube. |
+| 13 / 6 | Tyres / Michelin Hi-Light Super Comp HD | unchanged / 6837 | Clincher, sold with ultralight tube. |
+| 14 / 6 | Tyres / Hutchinson Super Sprint Ribbed | unchanged / 9045 | Ribbed tubular. |
+| 15 / 6 | Tyres / Cycle Pro or Panaracer 240 gram | held /  | Kevlar-belted tubular,240g. Retailer offers two possible makers; no named model or maker-specific mapping. |
+| 16 / 6 | Tyres / Cycle Pro or Panaracer Kevlar-belted 270/280 gram | held / 9113,11371 | Kevlar-belted tubular270/280g. Possible maker/weight alternatives; weight alone does not prove Cycle Pro270 or Panaracer Record270. |
+| 17 / 6 | Tyres / Panaracer 240 Slick | held /  | Kevlar-belted slick tubular240g. Descriptive weight/tread listing lacks a model crosswalk. |
+| 18 / 6 | Tyres / Panaracer 200 slick | held /  | Slick tubular200g. Descriptive weight/tread listing lacks a model crosswalk. |
+| 19 / 6 | Tyres / Wolber Invulnerable Steel-belted | unchanged / 6918 | Steel-belted tubular. |
+| 20 / 6 | Tyres / Wolber Pro SP 1 Poly-belted | updated / 9920 | Poly-belted tubular255g. |
+| 21 / 6 | Tyres / Vittoria Mondiale | unchanged / 6891 | Tubular290g. |
+| 22 / 6 | Tyres / Vittoria Special Pro-Cotton-Latex tube | unchanged / 6900 | Cotton tubular with latex tube250g. |
+| 23 / 6 | Tyres / Vittoria Nuovo Pro-Cotton | unchanged / 6893 | Cotton tubular260g. |
+| 24 / 6 | Tyres / Vittoria Corsa CX Cotton | unchanged / 6880 | Cotton tubular240g. |
+| 25 / 6 | Tyres / Vittoria Corsa CG Cotton | unchanged / 9428 | Cotton tubular250g. |
+| 26 / 6 | Freewheels / Suntour New Winner Pro Ultra-7 | held / 2237,2234,7867 | Ultra seven-speed. Retailer combines New Winner and Winner Pro family names; cannot choose NW/WP identity. |
+| 27 / 6 | Freewheels / Suntour New Winner Pro Ultra-6 | held / 2240,7868 | Ultra six-speed. Retailer combines New Winner and Winner Pro family names; cannot choose NW/WP identity. |
+| 28 / 6 | Freewheels / Suntour New Winner Pro Standard 6 | held / 2238,2246 | Standard six-speed. Retailer combines New Winner and Winner Pro family names; cannot choose NW/WP identity. |
+| 29 / 6 | Freewheels / Shimano Dura Ace SIS seven-speed Freewheel | unchanged / 2222 | Seven-speed SIS threaded freewheel. |
+| 30 / 6 | Cassettes / Shimano Dura Ace SIS seven-speed Cassette | unchanged / 1204 | Seven-speed SIS cassette. |
+| 31 / 6 | Cassettes / Shimano Ultegra SIS seven-speed Cassette | unchanged / 1199 | Seven-speed SIS cassette. |
+| 32 / 6 | Freewheels / Shimano 600 EX six-speed Freewheel | held / 2217,2218 | Six-speed threaded freewheel; generic generation evidence only. No SIS or maker code printed to select MF6207 versus MF6208. |
+| 33 / 6 | Shifters / Mavic Retrofriction braze-on | unchanged / 8165 | Braze-on retrofriction shift levers. |
+| 34 / 6 | Shifters / Campagnolo Chorus Friction | unchanged / 7027 | Friction shift levers. |
+| 35 / 6 | Shifters / Campagnolo C-Record Retrofriction | unchanged / 5970 | Retrofriction shift levers. C-Record Doppler5970 is the existing explicitly retro-friction model, distinct from plain friction5969 and indexed Syncro. |
+| 36 / 6 | Shifters / Campagnolo Syncro 1 Shifter braze-on | held / 5973,8812 | First Syncro, braze-on; closeout. Syncro1/first-version numbering is not enough to distinguish reviewed first/second Syncro production versions. |
+| 37 / 6 | Chains / Sedisport Black | unchanged / 8765 | Black finish. |
+| 38 / 6 | Chains / Sedisport Silver | unchanged / 8765 | Silver finish. |
+| 39 / 6 | Chains / Sedis Pro | updated / 1401 | Named Pro chain offered in attributed1988 catalogue. |
+| 40 / 6 | Chains / Shimano Uniglide Narrow | held / 7450,7614,7615 | Narrow Uniglide chain. No chain code; no unsupported UG20/UG30/UG50 selection. |
+| 41 / 6 | Chains / Dura Ace chain | held / 1412,1413,7231 | Dura-Ace chain. No code, plating or version. |
+| 42 / 6 | Chains / Regina 50 SL Black | updated / 1390 | Black finish. |
+| 43 / 6 | Handlebars / Cinelli64 38/40/42cm | unchanged / 2802 | 64 in38/40/42cm. |
+| 44 / 6 | Handlebars / Cinelli66 40/42cm | unchanged / 2806 | 66 in40/42cm. |
+| 45 / 6 | Handlebars / Cinelli65 40cm | unchanged / 2804 | 65 in40cm. |
+| 46 / 6 | Handlebars / TTT Competition Gimondi | unchanged / 2752 | Competition, Gimondi bend. |
+| 47 / 6 | Handlebars / TTT Competition Merckx | unchanged / 2750 | Competition, Merckx bend. |
+| 48 / 6 | Handlebars / Modolo Equipe Dark Anodized | updated / 2869 | Dark anodised,36–44cm listed. |
+| 49 / 6 | Stems / Cinelli1-A Silver70–130 | unchanged / 6489 | Silver,70–130mm. |
+| 50 / 6 | Stems / CinelliX-A80–130 | unchanged / 6502 | 80–130mm. |
+| 51 / 6 | Stems / TTT Computer ready stem | updated / 8311 | Computer-ready stem offered in attributed1988 catalogue. |
+| 52 / 6 | Stems / TTT Model84 | unchanged / 6424 | Model84. |
+| 53 / 6 | Stems / TTT A R Record | unchanged / 6404 | AR Record. |
+| 54 / 6 | Brake Levers / Dia-Compe AGC-251 White/Black/Silver | updated / 278 | White, black or silver offered finishes. |
+| 55 / 6 | Brake Levers / Shimano Light-Action Aero | held / 7223,7224 | Aero lever. No BL-L330/L331 code or version. |
+| 56 / 6 | Brake Levers / Shimano Ultegra Aero | held / 416,7217 | Aero lever. No code to resolve overlapping BL-6400/BL-6401 variants. |
+| 57 / 6 | Brake Levers / CAMPY Cobalto Aero Brake Levers | held / 212,214,231 | Aero brake levers sold as a pair. Cobalto is a brake-set name here; no exact lever generation/code crosswalk. |
+| 58 / 6 | Seat Posts / Dura Ace 27.2/25.0 | held / 5893,5894 | 25.0/27.2mm offered. No A/B head version code. |
+| 59 / 6 | Seat Posts / Shimano Ultegra27.2/25.0 | held / 5889,5890 | 25.0/27.2mm offered. No A/B head version code. |
+| 60 / 6 | Seat Posts / American Classic200mm | updated / 11793 | 200mm, offered in25.0/27.2mm. |
+| 61 / 6 | Seat Posts / American Classic300mm | updated / 11793 | 300mm, offered in25.0/27.2mm. |
+| 62 / 6 | Brakes / Shimano105Aero short or normal | held / 953,954 | Short or normal reach. Two separately coded reaches; no single-row mapping or new identity. |
+| 63 / 6 | Brakes / Campagnolo Delta short reach | held / 560,567 | Short-reach Delta brake set. No C-Record/Croce or version code; individual group columns differ. |
+| 64 / 6 | Brakes / Campagnolo Nuovo Record short reach | updated / 575 | Short-reach. |
+| 65 / 6 | Brakes / Campagnolo Super Record short-reach recessed | held / 583,7005 | Short reach, recessed mounting. Uncoded listing does not resolve the V2 versus numbered4061/1 configuration; no change was proposed or applied to either row. |
+| 66 / 6 | Saddles / Vetta Gel Racing | held / 5683 | Black. Existing generic Vetta Gel5683 does not establish Racing versus Women configuration. |
+| 67 / 6 | Saddles / Vetta Gel Women | held / 5683 | Black, women-specific. Existing generic Vetta Gel5683 does not establish Racing versus Women configuration. |
+| 68 / 6 | Saddles / Selle Italia Turbo White/Black/Yellow | updated / 5508 | White, black or yellow. |
+| 69 / 6 | Saddles / Brooks Team Pro Presoftened Black/Honey | updated / 5303 | Presoftened; black or honey. |
+| 70 / 6 | Saddles / San Marco Rolls Black/White | unchanged / 5563 | Black or white. |
+| 71 / 6 | Saddles / San Marco Regal Black/White | updated / 5561 | Black or white. |
+| 72 / 6 | Wheel(sets) / Sugino75 Tyranno Disc Wheel | updated / 6985 | Alloy/honeycomb/tubular,3lb. |
+| 73 / 6 | Rims / Rigida Score clincher rim | added / 12021 | Clincher,28hole, closeout. Named clincher model absent from all existing Rigida entries. |
+| 74 / 6 | Rims / Super Champion Professional tubular hard-anodized | held / 9581 | Tubular, hard-anodized,32hole, closeout. Existing Professional302 row lacks a tubular/profile crosswalk and differs in drilling; retain the explicit listing without changing an uncertain configuration. |
+| 75 / 6 | Stems / Dura-Ace Handlebar stem | held / 6677 | 80–130mm, closeout. No HS code/generation; do not infer only from current date. |
+| 76 / 7 | Rims / Araya CTL370 | unchanged / 8426 | clincher rim; available separately or built with listed hubs. |
+| 77 / 7 | Rims / Araya CT19 | unchanged / 4928 | clincher rim; available separately or built with listed hubs. |
+| 78 / 7 | Rims / Campagnolo Strada Hardox | held / 4951,4957,4958 | clincher rim. Incomplete model name; wheel matrix omits Lambda/Omega/Strada model crosswalk. |
+| 79 / 7 | Rims / Campagnolo Strada Omega Hardox Aero | unchanged / 4961 | clincher rim; available separately or built with listed hubs. |
+| 80 / 7 | Rims / Mavic MA-40 | unchanged / 5077 | clincher rim; available separately or built with listed hubs. |
+| 81 / 7 | Rims / Mavic Open4CD | unchanged / 5097 | clincher rim; available separately or built with listed hubs. |
+| 82 / 7 | Rims / Wolber Profil TX Aero | updated / 5226 | clincher rim; available separately or built with listed hubs. |
+| 83 / 7 | Rims / Araya ADX-4 | unchanged / 4927 | tubular rim; available separately or built with listed hubs. |
+| 84 / 7 | Rims / Campagnolo Victory Strada | unchanged / 4972 | tubular rim; available separately or built with listed hubs. |
+| 85 / 7 | Rims / Matrix Iso Aero | added / 12020 | Tubular aero rim, rim-only or built-wheel sale. |
+| 86 / 7 | Rims / Mavic GP-4 | unchanged / 5069 | tubular rim; available separately or built with listed hubs. |
+| 87 / 7 | Rims / Mavic GL-330 | unchanged / 5067 | tubular rim; available separately or built with listed hubs. |
+| 88 / 7 | Rims / Mavic Mach2CD Aero | unchanged / 8149 | tubular rim; available separately or built with listed hubs. |
+| 89 / 7 | Hubs / Shimano600EX | held / 3537,3538,3539,7551 | Built-wheel hub-column choice. Only a printed family/role column; verify configuration/codes before linking or changing rows. |
+| 90 / 7 | Hubs / Shimano600Ultegra with cogs | unchanged / 3534 | Built-wheel hub-column choice. Existing3534 covers the600Ultegra6/7-speed hubset; seven-speed cogs are independently represented. |
+| 91 / 7 | Hubs / ShimanoDura-Ace threaded | unchanged / 3560 | Built-wheel hub-column choice. Existing3560 explicitly represents the period threaded freewheel hubset. |
+| 92 / 7 | Hubs / ShimanoDura-Ace Cassette with cogs | unchanged / 7207,7208 | Built-wheel hub-column choice. Existing7207/7208 rear/front Uniglide hub rows cover this cassette-build choice; do not collapse the two rows. |
+| 93 / 7 | Hubs / CampagnoloChorus | unchanged / 3249 | Built-wheel hub-column choice. Period Chorus722/1013249 is represented; the1990 FH-00CH3250 is a later row. |
+| 94 / 7 | Hubs / CampagnoloNuovoRecord | held / 3258,3259,3260 | Built-wheel hub-column choice. Only a printed family/role column; verify configuration/codes before linking or changing rows. |
+| 95 / 7 | Hubs / CampagnoloC-Record | held / 3240,3241 | Built-wheel hub-column choice. Only a printed family/role column; verify configuration/codes before linking or changing rows. |
+| 96 / 7 | Hubs / Mavic556RD | unchanged / 8159 | Built-wheel hub-column choice. Rear556RD is explicitly described within the existing550RD family8159; no new hub row. |
+| 97 / 7 | Hubs / PhilWood | held / 3476,3478 | Built-wheel hub-column choice. Only a printed family/role column; verify configuration/codes before linking or changing rows. |
+| 98 / 7 | Wheel(sets) / Handbuilt rim/hub matrix | retailer_builds /  | 13 rim choices by9 hub choices; DT stainless spokes,2x/3x,14/15g. Individual makers remain component identities; do not invent117 manufacturer wheel models. |
+| 99 / 7 | Wheel(sets) / Suntour Cyclone/Wolber700TXProfil Aero special | retailer_builds /  | Cyclone hubs32H, DT stainless14/15g spokes, Wolber700TXProfilAero clincher rims. Retailer-built wheelset. |
+| 100 / 7 | Wheel(sets) / CampagnoloChorus/MatrixIso special | retailer_builds /  | Chorus32H hubs,14g spokes, MatrixIso clincher rims. Retailer-built wheelset; bare MatrixIso does not establish ISO C-II. |
+| 101 / 7 | Rims / Matrix Iso clincher | held / 5040 | Clincher in32H Chorus wheelset. Bare ISO is not a proven ISO C-II code crosswalk. |
+| 102 / 8 | Pedals / Shimano PD-7401 | unchanged / 3971 | Clipless pedal. |
+| 103 / 8 | Pedals / Look Carbon PP-76 | unchanged / 3792 | Carbon pedal. |
+| 104 / 8 | Saddles / Vetta Racing200 leather | updated / 5681 | Racing200 leather saddle; explicitly fitted to1987 Nishiki Linear offered for clearance. |
+| 105 / 5 | Front Derailleurs / Shimano600Ultegra / Ultegra | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 106 / 5 | Rear Derailleurs / Shimano600Ultegra / Ultegra SIS7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 107 / 5 | Shifters / Shimano600Ultegra / Ultegra SIS7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 108 / 5 | Cassettes / Shimano600Ultegra / Ultegra SIS7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 109 / 5 | Hubs / Shimano600Ultegra / Ultegra | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 110 / 5 | Brakes / Shimano600Ultegra / Ultegra Aero | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 111 / 5 | Headsets / Shimano600Ultegra / Ultegra | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 112 / 5 | Pedals / Shimano600Ultegra / Ultegra w/ToeClips | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 113 / 5 | Cranksets / Shimano600Ultegra / Ultegra | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 114 / 5 | Bottom Brackets / Shimano600Ultegra / Ultegra | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 115 / 5 | Seat Posts / Shimano600Ultegra / SR Laprade | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 116 / 5 | Chains / Shimano600Ultegra / Uniglide | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 117 / 5 | Front Derailleurs / ShimanoDuraAce / DuraAce | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 118 / 5 | Rear Derailleurs / ShimanoDuraAce / DuraAce SIS7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 119 / 5 | Shifters / ShimanoDuraAce / DuraAce SIS7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 120 / 5 | Cassettes / ShimanoDuraAce / DuraAce SIS7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 121 / 5 | Hubs / ShimanoDuraAce / DuraAce | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 122 / 5 | Brakes / ShimanoDuraAce / DuraAce w/BL-7401 | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 123 / 5 | Headsets / ShimanoDuraAce / DuraAce | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 124 / 5 | Pedals / ShimanoDuraAce / DuraAce w/ToeClips | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 125 / 5 | Cranksets / ShimanoDuraAce / DuraAce | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 126 / 5 | Bottom Brackets / ShimanoDuraAce / DuraAce | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 127 / 5 | Seat Posts / ShimanoDuraAce / AmericanClassic | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 128 / 5 | Chains / ShimanoDuraAce / DuraAce | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 129 / 5 | Front Derailleurs / CampagnoloAthena / Athena | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 130 / 5 | Rear Derailleurs / CampagnoloAthena / Athena | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 131 / 5 | Shifters / CampagnoloAthena / Athena | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 132 / 5 | Freewheels / CampagnoloAthena / SuntourWinner7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 133 / 5 | Hubs / CampagnoloAthena / Athena | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 134 / 5 | Brakes / CampagnoloAthena / Athena | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 135 / 5 | Headsets / CampagnoloAthena / Athena | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 136 / 5 | Pedals / CampagnoloAthena / Athena w/ToeClips | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 137 / 5 | Cranksets / CampagnoloAthena / Athena | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 138 / 5 | Bottom Brackets / CampagnoloAthena / Athena | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 139 / 5 | Seat Posts / CampagnoloAthena / Athena | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 140 / 5 | Chains / CampagnoloAthena / Sedisport | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 141 / 5 | Front Derailleurs / CampagnoloChorus / Chorus | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 142 / 5 | Rear Derailleurs / CampagnoloChorus / Chorus | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 143 / 5 | Shifters / CampagnoloChorus / Chorus | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 144 / 5 | Freewheels / CampagnoloChorus / SuntourWinner7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 145 / 5 | Hubs / CampagnoloChorus / Chorus | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 146 / 5 | Brakes / CampagnoloChorus / Chorus | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 147 / 5 | Headsets / CampagnoloChorus / Chorus | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 148 / 5 | Pedals / CampagnoloChorus / Chorus w/ToeClips | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 149 / 5 | Cranksets / CampagnoloChorus / Chorus | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 150 / 5 | Bottom Brackets / CampagnoloChorus / Chorus | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 151 / 5 | Seat Posts / CampagnoloChorus / Chorus | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 152 / 5 | Chains / CampagnoloChorus / Sedisport | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 153 / 5 | Front Derailleurs / CampagnoloCrocedAune / Croce d'Aune | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 154 / 5 | Rear Derailleurs / CampagnoloCrocedAune / Croce Syncro7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 155 / 5 | Shifters / CampagnoloCrocedAune / Croce Syncro7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 156 / 5 | Freewheels / CampagnoloCrocedAune / SuntourWinner7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 157 / 5 | Hubs / CampagnoloCrocedAune / Croce d'Aune | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 158 / 5 | Brakes / CampagnoloCrocedAune / Croce d'Aune | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 159 / 5 | Headsets / CampagnoloCrocedAune / Croce d'Aune | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 160 / 5 | Pedals / CampagnoloCrocedAune / Croce d'Aune w/ToeClips | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 161 / 5 | Cranksets / CampagnoloCrocedAune / Croce d'Aune | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 162 / 5 | Bottom Brackets / CampagnoloCrocedAune / Croce d'Aune | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 163 / 5 | Seat Posts / CampagnoloCrocedAune / Croce d'Aune | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 164 / 5 | Chains / CampagnoloCrocedAune / Sedisport | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 165 / 5 | Front Derailleurs / CampagnoloCRecord / C-Record | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 166 / 5 | Rear Derailleurs / CampagnoloCRecord / C-Record Syncro7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 167 / 5 | Shifters / CampagnoloCRecord / C-Record Syncro7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 168 / 5 | Freewheels / CampagnoloCRecord / SuntourWinner7-spd | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 169 / 5 | Hubs / CampagnoloCRecord / C-Record | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 170 / 5 | Brakes / CampagnoloCRecord / Cobalto | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 171 / 5 | Headsets / CampagnoloCRecord / C-Record | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 172 / 5 | Pedals / CampagnoloCRecord / C-Record w/ToeClips | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 173 / 5 | Cranksets / CampagnoloCRecord / C-Record | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 174 / 5 | Bottom Brackets / CampagnoloCRecord / C-Record | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 175 / 5 | Seat Posts / CampagnoloCRecord / C-Record | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 176 / 5 | Chains / CampagnoloCRecord / Sedisport | group_corroboration /  | Custom bicycle specification table. Group/family corroboration; no component identity is inferred solely from this cell. |
+| 177 / 6 | multiple / ShimanoDuraAce threaded component/group price column | price_corroboration /  | FD braze/clamp, RD, shifters, hubs28/32/36, brakes, headsetEnglish/Italian, BBEnglish/Italian, crank165/170/172.5; pedal; Shimano7-speed sprockets/chain, Campagnolo25/27.2mm posts. Price column alone supplies no additional model code; do not create anonymous parts. |
+| 178 / 6 | multiple / ShimanoDuraAce cassette component/group price column | price_corroboration /  | FD braze/clamp, RD, shifters, hubs28/32/36, brakes, headsetEnglish/Italian, BBEnglish/Italian, crank165/170/172.5; pedal; Shimano7-speed sprockets/chain, Campagnolo25/27.2mm posts. Price column alone supplies no additional model code; do not create anonymous parts. |
+| 179 / 6 | multiple / Shimano600Ultegra component/group price column | price_corroboration /  | FD braze/clamp, RD, shifters, hubs28/32/36, brakes, headsetEnglish/Italian, BBEnglish/Italian, crank165/170/172.5; pedal; Shimano7-speed sprockets/chain, Campagnolo25/27.2mm posts. Price column alone supplies no additional model code; do not create anonymous parts. |
+| 180 / 6 | multiple / CampagnoloCRecord Syncro2 Cobalto component/group price column | price_corroboration /  | FD braze/clamp, RD, shifters, hubs28/32/36, brakes, headsetEnglish/Italian, BBEnglish/Italian, crank165/170/172.5; pedal; Shimano7-speed sprockets/chain, Campagnolo25/27.2mm posts. Price column alone supplies no additional model code; do not create anonymous parts. |
+| 181 / 6 | multiple / CampagnoloCrocedAune Syncro2 component/group price column | price_corroboration /  | FD braze/clamp, RD, shifters, hubs28/32/36, brakes, headsetEnglish/Italian, BBEnglish/Italian, crank165/170/172.5; pedal; Shimano7-speed sprockets/chain, Campagnolo25/27.2mm posts. Price column alone supplies no additional model code; do not create anonymous parts. |
+| 182 / 6 | multiple / CampagnoloChorus Syncro2 component/group price column | price_corroboration /  | FD braze/clamp, RD, shifters, hubs28/32/36, brakes, headsetEnglish/Italian, BBEnglish/Italian, crank165/170/172.5; pedal; Shimano7-speed sprockets/chain, Campagnolo25/27.2mm posts. Price column alone supplies no additional model code; do not create anonymous parts. |
+
+</details>
+
+
 # Cross-catalog notes catalogs processed so far
 
 <a id="branford-complete-component-catalogue--prepared-2026-11-19"></a>
+
+
 
 ## Branford complete component catalogue — applied and validated 2026-11-19
 
@@ -490,7 +833,7 @@ Both pages were visually read together: p.22 gives models/specifications; p.23
 continues the same rows with casing construction and comments. The cover dates
 the US retailer catalogue. The other Branford pages are now covered by the
 [applied full-catalogue reconciliation](#branford-complete-component-catalogue--applied-and-validated-2026-11-19);
-Colorado Cyclist sheets remain separate work.
+The [Colorado Cyclist component reconciliation](#colorado-cyclist-components--applied-and-validated-2026-11-19) is also applied; bike loading was declined.
 
 Applied: one catalogue source, **two tyre additions, ten existing-row updates
 and one bike-spec link**. No existing titles/search text change, no merges or
@@ -1924,8 +2267,9 @@ https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_com
 
 The1996 pass3 is already applied (89 additions, see its section below), so do
 not recommend it again as pending. Colorado Cyclist's eight acquired sheets
-remain the smaller1988-attributed alternative, particularly sheets6–8; its
-January1989 offer deadline does not establish a precise publication date.
+were the smaller1988-attributed alternative at this check; their component
+reconciliation is now [applied as source472](#colorado-cyclist-components--applied-and-validated-2026-11-19), with bike loading declined.
+The January1989 offer deadline does not establish a precise publication date.
 
 ### Guida '99 remaining entries — applied and validated 2026-11-19
 
