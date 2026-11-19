@@ -291,13 +291,13 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Shifters
 
-- Sachs Rival ATB brochure review, 2026-11-19: proposed MA82.8G is explicitly
+- Sachs Rival ATB brochure review, 2026-11-19: added 11706 MA82.8G is explicitly
   a six-speed handlebar indexed lever, MA82.9G its left friction control and
   MA82.10G an Orbit-hub alternative. Champagne spec17290's `Aris Index; thumb
   shifters on the ladies' model` supplies no maker code or matching system
   configuration, so keep it NULL. The 1987 Raleigh black-ratchet Rival values
   likewise do not identify these indexed ATB controls. No generator/link change
-  is proposed; the [specimen comparison and SQL review](../../ingest-component-catalog/references/known-catalogs/huret.md#rival-atb-versus-rival-7000classic--2026-11-19-prepared-only)
+  was needed; the [applied specimen comparison](../../ingest-component-catalog/references/known-catalogs/huret.md#rival-atb-versus-rival-7000classic--2026-11-19-applied-and-validated)
   records the distinctions from the later Classic/Rival controls.
 - Sachs Huret compatibility review 2026-11-16: manufacturer sheets 501.1 DFE
   and 510.8 D establish that 6110's MA85.5E right lever selects six or seven

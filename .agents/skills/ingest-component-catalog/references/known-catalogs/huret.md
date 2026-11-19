@@ -2,9 +2,10 @@
 
 ## Manufacturer-source recovery and specimen follow-up — 2026-11-19, read-only
 
-New evidence recovered below; **no DB/source registration, component, CSV,
-generator or bike-link changes**. This is a focused evidence review, not a full
-ingestion of the newly located brochure or either magazine.
+The recovery stage below was read-only. The subsequent user-approved
+[ATB application](#rival-atb-versus-rival-7000classic--2026-11-19-applied-and-validated)
+registered its source and added/enriched components. Neither magazine nor the
+rest of the brochure was fully ingested; no CSV, generator or bike-link changes.
 
 ### 501.1 DFE recovery limits and paper leads
 
@@ -67,8 +68,9 @@ Other brochure content includes Rival ATB hubs, RGS freewheel, Sedisport ATB
 chain and 48/38/28 mixed round/oval triple, VT5000/HT5020/Orbit HT drum hubs,
 and Torpedo Pentasport. These were not fully reconciled with the DB here.
 
-No explicit AR41.4T, AV62.2T or MA82.8G/9G/10G title/description match was
-found among live Huret/Sachs-family rows. Initial specimen reconciliation:
+At the recovery stage, no explicit AR41.4T, AV62.2T or MA82.8G/9G/10G
+title/description match was found among live Huret/Sachs-family rows.
+Initial specimen reconciliation:
 
 - Front **2440** is explicitly a double in its original VeloBase record;
   its main photo has a different cable arm from the brochure's triple.
@@ -83,20 +85,20 @@ found among live Huret/Sachs-family rows. Initial specimen reconciliation:
   levers. The existing handlebar **8965/8966** are thumb ratchet controls
   MA86.1G/E, not the six-speed indexed MA82.8G system. No equivalence follows.
 
-The [Rival 7000/Classic comparison below](#rival-atb-versus-rival-7000classic--2026-11-19-prepared-only)
+The [Rival 7000/Classic comparison below](#rival-atb-versus-rival-7000classic--2026-11-19-applied-and-validated)
 supersedes the initial pending reconciliation: five coded ATB additions and
-seven specimen-description updates are prepared, not approved or applied.
+seven specimen-description updates were approved, applied and validated.
 This brochure's triple ATB front cannot resolve the Rider double specs or
-establish the 1988 PXR80's original Rival front. The recovered PDF at
-`/private/tmp/huret-evidence-2026-11-19/sachs-huret-atb.pdf` is retained with the
-proposed SQL for review/application; it is not registered as a data source.
+establish the 1988 PXR80's original Rival front. The brochure is now source
+**466**; the original PDF URL is recorded above. Disposable inspection copies
+and applied SQL were removed after validation.
 
-### Rival ATB versus Rival 7000/Classic — 2026-11-19, prepared only
+### Rival ATB versus Rival 7000/Classic — 2026-11-19, applied and validated
 
 Rechecked the brochure's PDF pp.1–3, live component/source records and the
-original VeloBase specimen pages/photos. A global search of titles and
-descriptions, normalising spaces, periods and hyphens, finds none of AR41.4T,
-AV62.2T or MA82.8G/9G/10G. More importantly, the specimen configurations do not
+original VeloBase specimen pages/photos. Before insertion, a global search of
+titles and descriptions, normalising spaces, periods and hyphens, found none
+of AR41.4T, AV62.2T or MA82.8G/9G/10G. The specimen configurations do not
 establish equivalence:
 
 | Comparison | Evidence and result |
@@ -104,7 +106,7 @@ establish equivalence:
 | AR41.4T versus [4409 RD R7000](https://velobase.com/ViewComponent.aspx?ID=9F2722C1-80AF-46C9-9489-09B5A46E3B8E) | R7000 specimen is short-cage, ARIS/friction, with 28T chain wrap; the brochure rear has the extended ATB anti-jam cage and 40T capacity. Keep separate. |
 | AR41.4T versus [4404 Classic 1500](https://velobase.com/ViewComponent.aspx?ID=CD487872-05BE-4774-A7BD-900864C35F26), [4405 Classic 2500](https://velobase.com/ViewComponent.aspx?ID=3E92CFEE-8A9B-4000-BC05-3D25414B9E17), [4406 Classic 3000](https://velobase.com/ViewComponent.aspx?ID=93876484-0C40-4C43-AD95-F27A05BCB4C8) | All are recorded as long-cage touring ARIS/friction rears. Main photos plus 1500 rear and 3000 reverse views show different cage profiles from the brochure's extended flat-neck ATB cage. No maker-code crosswalk; similar family construction does not identify AR41.4T. No merge or code transfer. |
 | AR41.4T versus [4418 Classic 2000](https://velobase.com/ViewComponent.aspx?ID=68EF50F1-709A-4B0B-A7A1-1797DA3F657E) | Specimen has a short cage and its own Classic 2000 marking; page specifies six speeds. Shared speed count does not identify the ATB rear. |
-| AV62.2T versus [2444 Rival 7000 front](https://velobase.com/ViewComponent.aspx?ID=11C583E3-2952-4C3B-AFFF-931F30DF2CDD) | The specimen page calls it a double and pictures it on a double; its mechanism has a black upper section and 5mm Allen cable fixing. Brochure shows a metal-band triple mechanism with a different cable arm. Do not assign AV62.2T to 2444 or transfer the brochure's 26T/150g specification. The proposed enrichment omits the specimen's double claim because using a front on a double does not prove it cannot handle a triple. |
+| AV62.2T versus [2444 Rival 7000 front](https://velobase.com/ViewComponent.aspx?ID=11C583E3-2952-4C3B-AFFF-931F30DF2CDD) | The specimen page calls it a double and pictures it on a double; its mechanism has a black upper section and 5mm Allen cable fixing. Brochure shows a metal-band triple mechanism with a different cable arm. Do not assign AV62.2T to 2444 or transfer the brochure's 26T/150g specification. The enrichment omits the specimen's double claim because using a front on a double does not prove it cannot handle a triple. |
 | AV62.2T versus generic 2432/2433 | 2432's photo shows a cut-out cage and its page describes a partly plastic clamp; 2433 is a low-band, four-cut-out double. Neither matches the brochure's solid-cage metal-band configuration. Initial exclusions of 2438/2440/2445 above still apply. |
 | MA82.8G/9G/10G versus [6107 ARIS Classic](https://velobase.com/ViewComponent.aspx?ID=12B2AE27-B5D5-440C-B91F-1E7F4CFA6F79), 6108 and 6110 | 6107 is a six-speed aluminium downtube braze-on lever set; its package photo corroborates the mounting. 6108/6110 are also downtube controls. The brochure controls mount on the handlebar; 8965/8966 are the separately coded MA86.1 ratchet controls. No suitable existing handlebar row found among all Sachs-family shifters. |
 
@@ -121,31 +123,29 @@ reasons to equate its parts with the six-speed French brochure. This German
 file's publication date was not established; no date or part-code crosswalk
 was inferred, and it is not being registered or ingested in this change set.
 
-Prepared SQL:
-`/private/tmp/huret-evidence-2026-11-19/sachs-atb-proposed.sql`.
-Expected first application: **one source, five component insertions and seven
+User approved and applied **one source, five component insertions and seven
 description updates**. No existing titles, dates, search text, groups, IDs or
-bike links change; no merges/deletions. The source is proposed as
+bike links changed; no merges/deletions. Registered **data_source 466** as
 `Sachs Composants ATB brochure, French edition (undated)`, French market, with
 the original PDF URL and pages in its citation. All new rows use brand 171,
 NULL group and NULL year bounds; do not invent a publication year from the
 upload path or the seven-speed announcement.
 
-| Proposed addition | Category | Description content supported by French pp.2–3 |
+| Added component | Category | Description content supported by French pp.2–3 |
 | --- | --- | --- |
-| Sachs Huret AR41.4T, Rival ATB ARIS | Rear Derailleurs | Long cage, alloy/steel, metallic grey, 360g, slant parallelogram, Cable Saver, anti-jam cage, 40T total / 34T maximum sprocket. |
-| Sachs Huret AV62.2T, Rival ATB ARIS (triple) | Front Derailleurs | Metal band clamp, triple, alloy/steel, metallic grey, 150g, 26T maximum chainring difference. |
-| Sachs Huret MA82.8G, Rival ATB ARIS (right) | Shifters | Right handlebar thumb lever, six-speed indexing, steel/resin; used with AR41.4T. Seven-speed is only announced as in preparation. |
-| Sachs Huret MA82.9G, Rival ATB ARIS (left) | Shifters | Left handlebar friction control, steel/resin, paired with MA82.8G. |
-| Sachs Huret MA82.10G, Rival ATB ARIS (Orbit left) | Shifters | Alternative left handlebar control for Orbit hub, steel/resin; not the MA82.9G front-derailleur control. Its indexing/friction mode is not stated. |
+| **11704** Sachs Huret AR41.4T, Rival ATB ARIS | Rear Derailleurs | Long cage, alloy/steel, metallic grey, 360g, slant parallelogram, Cable Saver, anti-jam cage, 40T total / 34T maximum sprocket. |
+| **11705** Sachs Huret AV62.2T, Rival ATB ARIS (triple) | Front Derailleurs | Metal band clamp, triple, alloy/steel, metallic grey, 150g, 26T maximum chainring difference. |
+| **11706** Sachs Huret MA82.8G, Rival ATB ARIS (right) | Shifters | Right handlebar thumb lever, six-speed indexing, steel/resin; used with AR41.4T. Seven-speed is only announced as in preparation, not stored as available. |
+| **11707** Sachs Huret MA82.9G, Rival ATB ARIS (left) | Shifters | Left handlebar friction control, steel/resin, paired with MA82.8G. |
+| **11708** Sachs Huret MA82.10G, Rival ATB ARIS (Orbit left) | Shifters | Alternative left handlebar control for Orbit hub, steel/resin; not the MA82.9G front-derailleur control. Its indexing/friction mode is not stated. |
 
 The control column gives **91g once**, without distinguishing the individual
-variants or specifying a pair; no per-control weight is proposed.
+variants or specifying a pair; no per-control weight was assigned.
 
-Existing specimen descriptions would be enriched from their own VeloBase
+Existing specimen descriptions were enriched from their own VeloBase
 pages, retaining source_ref 1 and all date fields:
 
-| IDs | Old description | Proposed added detail |
+| IDs | Old description | Added detail |
 | --- | --- | --- |
 | 4404 / 4405 / 4406 | Their respective title followed by `, France` | Long-cage touring rear, ARIS or friction, cable adjuster, 5mm Allen mounting / 8mm cable fixing. No shared weight, capacity or alloy-only construction inferred. |
 | 4409 | `Sachs Huret RD R7000, Rival 7000, France` | Short cage, slant parallelogram, aluminium alloy, ARIS or friction, cable adjuster, 28T chain wrap; 5mm Allen mounting/cable bolts. |
@@ -153,20 +153,34 @@ pages, retaining source_ref 1 and all date fields:
 | 4418 | `Sachs Huret Classic 2000, France. Known from 1990; end date unknown.` | Six-speed rear with cable adjuster; existing known-start sentence kept. |
 | 6107 | `Sachs Huret ARIS Classic, France` | Aluminium downtube levers, standard braze-on mounting, six-speed ARIS. No MA82.8G code or handlebar compatibility inferred. |
 
-Read-only preflight: all seven existing rows have zero stored bike links.
-In-memory comparison across **108 local CSVs / 23,380 generated spec mappings**,
-with the five proposed coded titles added, found **zero changed mappings**;
-the existing generated SQL was preserved. The broader live unlinked-spec
-review found no coded/unambiguous ATB fitment. Champagne's generic ARIS/thumb
-lever wording is insufficient (see link decisions). Prepared descriptions are
-under 255 characters; SQL uses fixed UUIDs, title-code insertion guards and
-exact old-description/ownership/date guards. It includes restoration values.
-No DB writes or SQL execution/idempotency test has occurred. After approval,
-load, read back, rerun for zero changes, check duplicates and rerun affected
-link/quality validation before closing the application task.
+Validation: first load inserted exactly **one source / five components** and
+updated exactly **seven descriptions**; rerun inserted/updated **zero**.
+Full readback matched every approved value, including search text and NULL
+group/date fields. All **10,760 other existing components**, every other
+tracked source/ownership table and all **23,380 stored bike specs** were
+unchanged. In-memory generation across **108 local CSVs / 23,380 spec mappings**
+found **zero changed mappings**; the existing `bike-update.sql` hash was
+unchanged. The new rows and all seven enriched rows have no stored bike links.
+The live unlinked-spec review found no coded/unambiguous ATB fitment;
+Champagne's generic ARIS/thumb wording remains insufficient (link decisions).
 
-Only the original French PDF and proposed SQL are retained for pending review;
-comparison-page downloads, renders and the preparation helper were disposable.
+Shared quality checks find **zero structural errors**. The only new review
+findings are five deliberately incomplete-date flags, one per new row.
+Sachs Huret merge, near and parenthetical duplicate reports each found **zero
+candidates**, both before and after. Descriptions are at most **198 characters**.
+No CSV, generator or link changes were needed.
+
+Restoration, only if requested: old descriptions are in the table above;
+restore them only against the exact enriched text and unchanged specimen IDs
+and source_ref 1. Inserted UUIDs for 11704–11708 respectively are
+`4db95623-cdef-4ae3-a4ef-e93df2e4e97e`,
+`928093ca-9ff0-4cc2-bc56-e5505ccd870b`,
+`2cc1a2e5-8d90-42a9-9b21-48b14b0abfbc`,
+`0afc730f-7e85-465a-a882-1771e8f1817d`,
+`e0917516-b3cd-4c0e-9988-7cef6e4b5b5f`.
+Check references/mappings before removing an added row; remove source 466 only
+if unreferenced. The applied SQL, temporary snapshots/helper and downloaded
+inspection PDF were removed after validation; source URLs/pages remain above.
 
 ### Avant and Rider specimen comparisons
 
@@ -192,7 +206,8 @@ Live readback retains 8849 -> 6110, 8851 -> 2439, 8852 -> 4403;
 15470/17763/17782/17858 -> NULL. Exact codes/fitment remain the missing
 discriminants. All disposable magazine PDFs/renders, HTML, photos and archive
 indexes from this pass were removed after recording the URLs and findings;
-only the ATB brochure above remains for pending reconciliation.
+the ATB brochure was retained for the subsequent comparison/application above
+and removed once that follow-up was validated.
 
 ## 1978 Motobecane Eco attestation — applied 2026-11-17, user approved
 

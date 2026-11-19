@@ -5,7 +5,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Ready to work
 
 - Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
-- Review/apply the [Sachs Rival ATB additions and specimen enrichment](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#rival-atb-versus-rival-7000classic--2026-11-19-prepared-only) in `/private/tmp/huret-evidence-2026-11-19/sachs-atb-proposed.sql`; after approval, validate readback, idempotency, duplicates and bike mappings.
 
 ## Product and infrastructure
 
