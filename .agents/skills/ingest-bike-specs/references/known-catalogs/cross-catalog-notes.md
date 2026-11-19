@@ -1,5 +1,9 @@
 # Cross-catalog notes catalogs processed so far
 
+## Bike source scope — user decision 2026-11-19
+
+Do not ingest bikes from distributor or retailer catalogues or mixed-brand buyer’s guides. These sources remain usable for component evidence. The user removed the La Bicicletta May 1984 racing-bike buyer’s guide from the worklist under this rule. Manufacturer bike catalogues hosted by archives such as Bikalog remain in scope.
+
 ## Freewheel identification policy — 2026-10-28
 
 The user declined maker-plus-speed-count defaults such as Maillard 5-speed
