@@ -561,6 +561,111 @@ comparison only; other components not audited.`):
 {"component_id":12127,"year_to":1999,"source_ref":374}
 ```
 
+## Retailer catalogue, USA edition (2001) — full reconciliation, applied and validated
+
+Source: [28-page PDF](https://www.bikecatalogs.com/download/3663), 300 ppi
+scans with no text layer; printed page = PDF page. Reused existing source
+**479**; its citation no longer says other components were not audited. Product
+pages 8–12, 16–23 and 27 were transcribed from 300 dpi half-page crops. Weights
+that differ from 2000 were re-checked at full size: Ksyrium, Cosmic Carbone
+SSC, Classics SSC, Crossmax UST and MA3.
+
+Product pages: UST wheels pp.8–9, Crossride p.10, MTB rims p.11, Deemax and
+downhill rims p.12, Mektronic p.16, SSC gruppo components p.17, SSC wheels
+pp.18–19, Cosmos p.20, Cosmic Elite and freehub compatibility p.21, road and
+touring rims p.22, track wheels p.23, M10 cassette p.27. Skipped: cover, what's
+new/contents pp.2–3, technology pp.4–5, UST explainer pp.6–7, photo p.13,
+gruppo intro pp.14–15, service/info/tyre pressures pp.24–26 and back cover.
+Out of scope: computer board/speed sensor, disc brake adapters, wheel bags.
+The Open Pro p.22 correction recorded above was not reopened.
+
+New in 2001 (p.2 "What's new"): the FTS L freehub (−40 g) on the SSC wheels;
+Classics becomes SSC with Ceramic braking; three new UST wheels (Crossmax UST
+Disc, Crossroc UST, Crossroc UST Disc); also Crossride Ceramic, Cosmos, X618 and
+the M10 9/10-speed cassette (M10/ED10 freehub bodies replace M9). Absent versus
+2000: Helium, Classics Pro, Classics Elite, Crossmax, Crossmax Disc, Crosslink
+Disc, T223, all BMX products, and the SSC chain and headset. Absence only caps
+attestation; none was shortened.
+
+Applied 2026-11-20 (user approved), all `source_ref` 479:
+
+- Inserted (2001–2001, UUID source_id): wheels **12147** Crossmax UST Disc,
+  **12148** Crossroc UST Disc, **12149** Crossroc UST, **12150** Crossride
+  Ceramic, **12151** Classics SSC, **12152** Cosmos; rim **12153** X618;
+  cassette **12154** M10 cassette.
+- `year_to` 2000 → 2001 only: 12133 Crossride, 12113 Deemax, 12118 Io, 12125
+  CXP 33, Reflex 10197/10198/11566/11567, 12135 T221, 12134 T519, 12136 X221,
+  12137 F519, 12122 X517, 12121 X317 Disc, 12119 D321 Disc, 12120 D521, 4344
+  Mektronic rear derailleur, 12139/12140 Mektronic levers, SSC 12141 crankset,
+  12142 bottom bracket, 12143 brakes, 12146 front derailleur.
+- `year_to` → 2001 with description: 12132 Crossmax UST (2000 690/890 g, 2001
+  710/860 g); 12130 Ksyrium SSC (2001 FTS L, M10/ED10, clincher 740/885 g,
+  tubular 700/860 g); 12131 Cosmic Carbone SSC (2001 clincher 880/1050 g,
+  tubular 885/1100 g); 12117 Cosmic Elite (2001 M10); 6972 Comète
+  (1997–2001); 5081 MA3 (2000 490 g, 2001 470 g).
+- SSC group rows keep their `(2000)` title suffix, which marks the generation
+  start as in `Ksyrium Elite (2002)`.
+- No `year_from` moved later; no merges or deletes.
+
+Printed contradictions, resolved as stated:
+
+- Cosmic Elite: BENEFITS says 24/28 spokes, TECHNICAL FEATURES 20 front and
+  rear. 20 is kept; the description mentions the 24/28 text.
+- Crossride Ceramic: TECHNICAL FEATURES say UB Control (apparently copied from
+  Crossride); BENEFITS and the icon say Ceramic, which the row follows.
+- Crossroc UST: USE calls it a "disc wheel", but it has no disc mount and
+  carries the UB Control icon; described as the rim-brake version of 12148.
+
+Unresolved, no change made: the MTB rim colour chips (pp.11–12) are too small
+to read reliably, so those rows got date changes only. The T519 photo decal may
+read "509". Classics SSC 12151 succeeds Classics Pro 12115 but stays a separate
+row (new name, Ceramic braking, FTS L).
+
+Validation: every guard matched one row in preflight; the rerun affected zero
+rows. Before/after Mavic readback: exactly the 29 planned component rows changed
+and 8 were added; longest description 254 characters. `compare-bike-links.js`:
+109 catalogues, 23,410 specs, 23,395 unchanged, 0 gained/changed, the same 15
+Huret Rival losses. Quality report: 0 errors; no finding names a touched row.
+Mavic duplicate report: still 13 pairs; only the existing Comète / Comète ±
+variant pair involves a touched row. No touched row has bike links or generator
+overrides.
+
+Restoration baseline (old values; inserts 12147–12154 can be deleted by id;
+source 479's old citation ended `printed/PDF p.22 blue Open Pro decal comparison
+only; other components not audited.`):
+
+```jsonl
+{"component_id":4344,"year_to":2000,"source_ref":478}
+{"component_id":5081,"year_to":2000,"source_ref":478,"description":"700c road clincher, double wall, eyeleted, UB Control; 20.2 mm wide, 16 mm high; 490 g, 32/36 holes, for 19-23 mm tyres; silver, Helium red or CD."}
+{"component_id":6972,"year_to":2000,"source_ref":478,"description":"Composite lenticular disc. 1985-91: front 650 950 g, rear 700 1140 g. 1994: 700c tubular, 18 mm rim, 990 g without hub cartridge. 1997-2000: SUP rim; road rear FTS, UB Control, 1300 g; track rear 980 g, screw-on freewheel; clincher or tubular."}
+{"component_id":10197,"year_to":2000,"source_ref":478}
+{"component_id":10198,"year_to":2000,"source_ref":478}
+{"component_id":11566,"year_to":2000,"source_ref":478}
+{"component_id":11567,"year_to":2000,"source_ref":478}
+{"component_id":12113,"year_to":2000,"source_ref":478}
+{"component_id":12117,"year_to":2000,"source_ref":478,"description":"Aero road clincher wheels: black-anodised 30 mm SUP rim, profiled eyelets, UB Control; hub with integrated freewheel, sealed bearings, HG/CC9 (2000 M9); 20 flat spokes, radial front, rear crossed 2 drive side; quick release; front 850 g, rear 1095 g."}
+{"component_id":12118,"year_to":2000,"source_ref":478}
+{"component_id":12119,"year_to":2000,"source_ref":478}
+{"component_id":12120,"year_to":2000,"source_ref":478}
+{"component_id":12121,"year_to":2000,"source_ref":478}
+{"component_id":12122,"year_to":2000,"source_ref":478}
+{"component_id":12125,"year_to":2000,"source_ref":478}
+{"component_id":12130,"year_to":2000,"source_ref":478,"description":"Road wheels, clincher or tubular: black-anodised Maxtal SUP rim, Fore drilling (no rim tape), UB Control; FTS hub, QRM sealed bearings, M9 freehub; Zicral straight-pull spokes, integrated alloy nipples, 18 radial front, 20 Isopulse rear; 700/900 g."}
+{"component_id":12131,"year_to":2000,"source_ref":478,"description":"Aero road wheels, clincher or tubular: SUP alloy rim with 50 mm unidirectional carbon segments, integrated nipples; FTS hub, QRM bearings, M9 freehub; flat spokes, 16 radial front, 20 rear crossed 2 drive side; 700c 880/1090 g, 650 tubular 730/995 g."}
+{"component_id":12132,"year_to":2000,"source_ref":478,"description":"Tubeless UST MTB cross-country wheels: black-anodised Maxtal SUP rim, Fore drilling, Ceramic 2 sidewalls; FTS hub, QRM bearings, HG; Zicral straight-pull spokes, alloy nipples, 18 radial front, 20 Isopulse rear; front 690 g, rear 890 g. UST tyres only."}
+{"component_id":12133,"year_to":2000,"source_ref":478}
+{"component_id":12134,"year_to":2000,"source_ref":478}
+{"component_id":12135,"year_to":2000,"source_ref":478}
+{"component_id":12136,"year_to":2000,"source_ref":478}
+{"component_id":12137,"year_to":2000,"source_ref":478}
+{"component_id":12139,"year_to":2000,"source_ref":478}
+{"component_id":12140,"year_to":2000,"source_ref":478}
+{"component_id":12141,"year_to":2000,"source_ref":478}
+{"component_id":12142,"year_to":2000,"source_ref":478}
+{"component_id":12143,"year_to":2000,"source_ref":478}
+{"component_id":12146,"year_to":2000,"source_ref":478}
+```
+
 ## Catalogue backlog and scope review — 2026-11-19
 
 Compared the existing reconciliation notes with live `data_source` records
@@ -573,10 +678,9 @@ confirmed available editions still needing a full reconciliation:
 | Edition | Available source | Work already recorded | Remaining scope |
 | --- | --- | --- | --- |
 | 1999 Mektronic launch catalogue | [Archive listing](https://www.bikecatalogs.com/document/3661) | No equivalent source or ingestion entry found | Obtain and inspect the separate launch catalogue, then reconcile its supported components |
-| 2001 USA retailer catalogue | [28-page PDF](https://www.bikecatalogs.com/download/3663) | Source 479, Open Pro p.22 date correction only | Reconcile the rest of the catalogue |
 
-The 1994, 1995, 1999 GB and 2000 GB full catalogues are now applied and validated above.
-Remaining order: 1999 Mektronic, 2001. Earlier full
+The 1994, 1995, 1999 GB, 2000 GB and 2001 USA full catalogues are now applied and validated above.
+Remaining: the 1999 Mektronic launch catalogue. Earlier full
 editions can refine existing component identities and dates before moving
 through the later wheel ranges. This is a work order, not approval of an
 unreviewed DB change set. The historical sections below record substantial
@@ -889,7 +993,8 @@ Registered sources after confirming no existing equivalent source records:
   `https://www.bikecatalogs.com/download/3662; cover 2000 GB, printed/PDF p.14 Open Pro decal and finish comparison only; other components not audited.` Citation since
   widened by the 2000 GB full reconciliation above.
 - **479**, `Mavic retailer catalogue, USA edition (2001)`, countryUS, citation:
-  `https://www.bikecatalogs.com/download/3663; cover 2001 USA, printed/PDF p.22 blue Open Pro decal comparison only; other components not audited.`
+  `https://www.bikecatalogs.com/download/3663; cover 2001 USA, printed/PDF p.22 blue Open Pro decal comparison only; other components not audited.` Citation since
+  widened by the 2001 USA full reconciliation above.
 
 Live preflight found no bike links to either component and no generator
 overrides or link decisions referencing these IDs (unrelated SunTour PL-5100

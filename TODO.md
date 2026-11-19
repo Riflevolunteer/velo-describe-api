@@ -5,7 +5,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Ready to work
 
 - Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
-- Reconcile the remaining Mavic 1999 Mektronic and 2001 USA ranges; use the [catalogue backlog and existing source IDs](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#catalogue-backlog-and-scope-review--2026-11-19) to avoid repeating targeted corrections or registering duplicate sources.
+- Reconcile the separate Mavic 1999 Mektronic launch catalogue; use the [catalogue backlog and existing source IDs](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#catalogue-backlog-and-scope-review--2026-11-19) to avoid repeating targeted corrections or registering duplicate sources.
 
 ## Product and infrastructure
 
