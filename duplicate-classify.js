@@ -306,6 +306,8 @@ const REVIEWED_NOT_DUPLICATES = [
   [3752, 10966], // renumbered part kept apart (2026-11-07): Gipiemme Special 600154 (1970s) / Special 300BB (1984-87)
   [3256, 3273], // different part: Campagnolo 1006, Gran Sport / Campagnolo 1006/A, Sport
   [3408, 8160], // different part: Mavic 580 CX / Mavic 580 CX Piste
+  [3404, 12101], // Mavic 1994 p.23: 571/2 Mavic CB cassette interface / 571/2 HG Hyperglide interface.
+  [12104, 12105], // Mavic 1994 p.17: AR 572/2 Mavic cassette cartridge / AR 572/2 HG Hyperglide cartridge.
   [3708, 3709], // different part: Campagnolo 1037, Record Strada / Campagnolo 1037/a, Record Strada Super
   [3989, 7247], // Spidel badge variant: Spidel/Atom/Maillard 600 / Maillard Atom 600 Sport
   [4281, 4299], // different part: Huret Super Success 2470 S / Huret Success 2460 / 2470

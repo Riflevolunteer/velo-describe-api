@@ -1,5 +1,426 @@
 # Mavic catalogs processed so far
 
+## Full French catalogue (1994) — applied and validated
+
+Source: [36-page PDF](https://www.bikecatalogs.com/download/3659), mirrored from
+[Disraeli Gears](https://www.disraeligears.co.uk/site/mavic_catalogue_1994.html).
+Cover explicitly prints CATALOGUE1994 F: edition1994, French market. This is
+separate from ZMS brochure/source305. Registered source **480**, `Mavic Catalogue, French edition (1994)`, countryFR,
+after confirming no equivalent full-edition source existed.
+
+Read all product tables pp.8–31, technology/finish pp.4–6 and cover/index.
+Pp.16–17:3G/Comete and complete cartridge hubs;18–21:ZMS8000/800;
+22–31:hubs, cranks, BBs, headsets, brakes, derailleurs, shifters and aero bars.
+Exclude cover/blank/index pp.1–3, rim photo p.7, tools/consumables p.32,
+blank notes/blank pp.33–35, imprint/address p.36 and exploded-diagram spares.
+Complete replacement hub cartridges are included as Hubs, not loose spares.
+
+Applied55 existing updates and14 additions on explicit user approval; no merges
+or deletions. Catalogue
+years are attestations, not launch/end dates. New rows use1994–1994 and fresh
+stable UUIDs. Existing later end attestations and independent actual/average
+weights are preserved. Only changed rows acquire this catalogue's source_ref.
+Original changed fields are retained in the restoration baseline below.
+Task SQL and comparison scratch files were removed after successful validation.
+
+Important decisions:
+
+- Retitle6970 from `Mavic 3G Carbon (tri-spoke rear)` to `Mavic 3G Carbon`,
+ with corresponding search_text. The same wheel works front/rear through
+ cartridge changes; bare700/650 wheels weigh760/700g. Add1994 attestation.
+- Enrich6972 Comete with1994 990g bare700c tubular/18mm rim, preserving its
+ earlier and1997 configurations. Do not conflate bare and complete weights.
+-3399 501 maker table explicitly gives130mm rear convertible to127mm by
+ removing a3mm spacer; old description's126mm is corrected.3404 571/2 gains
+ detailed front/rear construction and weights; HG is a separate coded row.
+-1192 cassette retains earlier4.8/5.0mm pitch as earlier specifications;
+1994 specifies4.85mm.9973 ZMS800 gains materials and240g derailleur/95g
+ controls weights.4348 and6088 are kept separate: no specimen identity proof
+ warrants merging them or assigning6088 the1994 controls weight/generation.
+-631/2 p.24 is explicitly a new offset-arm generation, also named in p.18
+ group composition. Add it separately; keep generic631 row1645 and its
+ earlier730/835g configurations/reported723g. No invented632 code.
+-8193 Paris-Roubaix SSC21.5mm is width, not height; height12.7mm.
+-5102 Open SUP CD loses the Ceramic configuration from its description;
+ existing10598 independently represents Ceramic. No merge.
+-316/317 headsets print155/145g in1994 versus145/155g in the c.1990 manual:
+ keep both with edition qualifiers. Likewise qualify differing305,870/872,
+840/841 and821 weights and rim-edition weights without inventing revisions.
+- Keep generic217 row9977 as a family with later1997 data; add explicit217D
+ SBP/TIB double-eyelet450g configurations separately from single-eyelet410g.
+-2410's31.8mm clamp remains unsupported. No CXP30/Open Pro appears. Do not
+ date650c Mach2 Ceramic5083 from the700c Ceramic column. Other protected
+ configurations5083/9971/9972/10185/10186/8149 are unchanged.
+
+### Applied additions and material changes
+
+The following table records applied component IDs and old/new dates. Description
+changes on rows with unchanged years are included too; full readback verified
+each applied description and preservation of other fields.
+
+| Page | ID | Component | Old years | Applied years |
+| --- | --- | --- | --- | --- |
+|8|5074|Mavic MA 2|1986–1999|1986–1999|
+|8|8177|Mavic MA 2 Argent|1986–1991|1986–1994|
+|8|5077|Mavic MA 40|1980–1999|1980–1999|
+|8|5085|Mavic Module 3D Argent|1980–1991|1980–1994|
+|8|5048|Mavic Module 3 CD|1980–1991|1980–1994|
+|8|5086|Mavic Module 4|1984–1991|1984–1994|
+|9|5050|Mavic 192|1993–1993|1993–1994|
+|9|5097|Mavic Open 4 CD|1988–1996|1988–1996|
+|9|5107|Mavic Reflex|1995–1997|1994–1997|
+|9|10595|Mavic Reflex Titane SUP UB Control|1995–1996|1994–1996|
+|9|5101|Mavic Open S.U.P. SBP|NULL–NULL|1994–1994|
+|9|5102|Mavic Open SUP CD|1996–1999|1994–1999|
+|9|10598|Mavic Open SUP CD Ceramic|1995–1996|1994–1996|
+|10|5092|Mavic Montlhéry Pro|1960–1991|1960–1994|
+|10|5069|Mavic GP 4|1979–1997|1979–1997|
+|10|5067|Mavic GL330|1984–1991|1984–1994|
+|10|5066|Mavic G.E.L. 280|1980–1991|1980–1994|
+|11|5082|Mavic Mach 2 CD 2|1990–1996|1990–1996|
+|11|12058|Mavic Mach 2 Ceramic (700c)|1995–1996|1994–1996|
+|11|8193|Mavic Paris-Roubaix SSC|1988–1997|1988–1997|
+|12|12059|Mavic 230 SBP (26in)|1995–1996|1994–1996|
+|12|12060|Mavic 230 TIB (26in)|1995–1996|1994–1996|
+|12|8191|Mavic M 231|1990–1993|1990–1994|
+|12|5071|Mavic M 231 CD|1990–1996|1990–1996|
+|12|5072|Mavic M 261|1990–1996|1990–1996|
+|12|8192|Mavic M 261 CD|1990–1991|1990–1994|
+|12|12095|Mavic M 261 SBP Ceramic|new|1994–1994|
+|12|9970|Mavic M 281|1991–1991|1991–1994|
+|13|9977|Mavic 217|1995–1997|1994–1997|
+|13|12096|Mavic 217 D SBP|new|1994–1994|
+|13|12097|Mavic 217 D TIB|new|1994–1994|
+|13|12098|Mavic 117 SUP SBP (26in)|new|1994–1994|
+|13|12061|Mavic 117 SUP CD (26in)|1995–1996|1994–1996|
+|13|12062|Mavic 117 SUP CD Ceramic (26in)|1995–1996|1994–1996|
+|13|9976|Mavic 121|1995–1997|1994–1997|
+|14|12099|Mavic T 231 SBP|new|1994–1994|
+|14|10182|Mavic T 261 Argent|1995–1999|1994–1999|
+|15|10184|Mavic T217 Argent SUP UB Control|1996–1999|1994–1999|
+|15|12100|Mavic T 217 TIB|new|1994–1994|
+|25|8194|Mavic 610 URD|1990–1994|1990–1994|
+|25|83|Mavic 616 RD|1990–1991|1990–1994|
+|26|3049|Mavic 305|1990–1994|1990–1994|
+|26|3046|Mavic 315|1990–1999|1990–1999|
+|26|3047|Mavic 316 (for 1 1/8" steerer)|1990–1990|1990–1994|
+|26|3048|Mavic 317 (for 1 1/4" steerer)|1990–1990|1990–1994|
+|27|856|Mavic 451|1991–1994|1991–1994|
+|28|2407|Mavic 860|1984–1991|1984–1994|
+|28|2411|Mavic 862, SSC|1984–1994|1984–1994|
+|28|2409|Mavic 870, SSC|1988–1992|1988–1994|
+|28|8187|Mavic 872, SSC|1988–1991|1988–1994|
+|29|4340|Mavic 840|1990–1996|1990–1996|
+|29|4341|Mavic 841|1990–1996|1990–1996|
+|29|6087|Mavic 821|1990–1994|1990–1994|
+|30|2863|Mavic 355|1986–1991|1986–1994|
+|31|2864|Mavic Kit 357|1990–1991|1990–1994|
+|16|6970|Mavic 3G Carbon|1992–1992|1992–1994|
+|17|6972|Mavic Comète|1985–1997|1985–1997|
+|22|3399|Mavic 501|1992–1997|1992–1997|
+|23|3404|Mavic 571/2|1993–1995|1993–1995|
+|23|12101|Mavic 571/2 HG|new|1994–1994|
+|23|1192|Mavic 571|1991–1994|1991–1994|
+|20|9973|Mavic ZMS 800|1994–1994|1994–1994|
+|17|12102|Mavic AV 502|new|1994–1994|
+|17|12103|Mavic AR 502|new|1994–1994|
+|17|12104|Mavic AR 572/2|new|1994–1994|
+|17|12105|Mavic AR 572/2 HG|new|1994–1994|
+|17|12106|Mavic AV 522|new|1994–1994|
+|17|12107|Mavic AR 522|new|1994–1994|
+|24|12108|Mavic 631/2|new|1994–1994|
+
+### Application and validation
+
+Applied at **2026-11-19T19:35:52Z**, source480. Loader affected exactly one source,
+55 existing components and14 component inserts. A second execution affected
+zero sources, updates or inserts. No merges/deletions or bike-link writes.
+
+Full-row readback verified all55 updates and14 additions against the approved
+fields, including country/source, UUIDs, titles/search text, categories/groups,
+dates and untruncated descriptions. All192 other pre-existing Mavic rows were
+unchanged in every exported component field. No dangling bike-component links;
+all41 live specs using affected records retained their exact targets.
+
+Actual post-load generator/live comparison covered109 loaded catalogues /
+23,410 paired specs. Its complete summary and findings were identical to the
+immediate pre-load baseline:23,395 unchanged, the same15 pre-existing lost
+matches, zero gains, changed targets or missing/ambiguous identities. Thus no
+new links or matcher/CSV changes were needed for these catalogue additions.
+The3G retitle and all new titles were included in both simulation and actual
+comparison. Longest stored replacement description245 characters, within255.
+
+The ordinary Mavic duplicate report retained the same13 pair identities and
+classifications (6 configuration,5 generation,2 reviewed variants). Near-name
+review exposed two additional pairs, both explicitly separate interfaces:
+
+- **3404 /12101**, p.23:571/2 Mavic CB cassette interface versus571/2 HG
+ Hyperglide interface. Same mechanical family, separately sold interfaces;
+ keep separate, no merge.
+- **12104 /12105**, p.17:AR572/2 Mavic cassette cartridge versusAR572/2 HG
+ Hyperglide cartridge. Keep separate, no merge.
+
+Recorded both pairs in `REVIEWED_NOT_DUPLICATES` in `duplicate-classify.js`.
+The follow-up near report had zero unresolved Mavic candidates. Existing
+reviewed pairs remain separate. No matching rules or API logic changed.
+
+The completed1994 application action was removed from TODO;1995 and the later
+catalogue backlog remain. Removed this task's scan download, renders, SQL,
+transcriptions, review table, query snapshots, validation scripts and reports
+after retaining source/page URLs, IDs, decisions and original values here.
+
+### Restoration baseline
+
+Only restore deliberately, guarded by the applied source480 and approved new
+fields above. These JSON lines record the original changed fields for all55
+updated rows (source_ref, description, and dates/title/search_text where changed).
+New rows12095–12108 and source480 are independently evidenced catalogue data;
+restoring an older row does not imply deleting those records.
+
+```jsonl
+{"component_id":5074,"source_ref":353,"description":"Mavic MA 2, France, 444 grams (avg). Polished touring clincher for 19-25 mm tyres, double eyelet, good price/quality; 700c or 27 x 1 1/4, 32/36/40 holes, 430/435 g; 460 g, 32/36 in 1997 (\"flash brillant\"). Variants: Red/Green Label."}
+{"component_id":8177,"source_ref":121,"description":"Mavic MA 2 Argent, France. Silver-anodised clincher for 19-25 mm tyres, double eyelet, for sport bikes and top-range touring; 700c or 27 x 1 1/4, 32/36 holes, 430/435 g.","year_to":1991}
+{"component_id":5077,"source_ref":473,"description":"Hard-anodised anthracite box-section clincher, 20.5mm, double stainless eyelets, 19-25mm tyres. Maker sizes: 700c, 27in, 571, 28-40 holes, 430/435/395g. 1995/96: 700c, 32/36 holes, 460g."}
+{"component_id":5085,"source_ref":121,"description":"Mavic Module 3D Argent, France. Silver-anodised 22 mm touring clincher for 25-28 mm tyres, very strong double eyelets; 36/40 holes; 700c 530 g, 27 x 1 1/4 535 g, 650B 490 g (480 g in the 1984 catalogue).","year_to":1991}
+{"component_id":5048,"source_ref":121,"description":"Mavic Module 3 CD (M3 CD), France. Hard-anodised anthracite 22 mm touring and cyclo-camping clincher for 22-28 mm tyres, double eyelet (stainless from 1988); 700c or 27 x 1 1/4, 36/40 holes, 530/535 g.","year_to":1991}
+{"component_id":5086,"source_ref":121,"description":"Mavic Module 4, France, 596 grams (Actual). Very strong clincher for 28-35 mm tyres, double eyelet, for touring, tandems and raids; 700c, 27 x 1 1/4, 650B, 650A, 36/40 holes (also 48 in 700c from 1988), 550/560/520/530 g.","year_to":1991}
+{"component_id":5050,"source_ref":47,"description":"Aluminium clincher road rim, offered in silver anodised. A 700c (622 mm) specimen has 19 mm outside width, single eyelets and 32 spoke holes.","year_to":1993}
+{"component_id":5097,"source_ref":473,"description":"Hard-anodised aero clincher, 17mm, 18-23mm tyres, stainless double eyelets. 622: 28-36 holes; 571: 28/32. 1988/89: 395/360g; 1990/91: 420/385g. 1995/96: 700c, 28/32/36, 430g."}
+{"component_id":5107,"source_ref":473,"description":"700c clincher, SUP joint, UB Control sidewalls, 28/32/36 holes. 1995/96 silver SBP: 430g. 1997: 410g, 18-23mm tyres, CD/CD Ceramic/blue/silver; measured average 394g. Reflex tubular is separate.","year_from":1995}
+{"component_id":10595,"source_ref":473,"description":"700c alloy clincher, 19mm, 28/32/36 holes, titanium-colour anodising, double stainless eyelets, SUP joint and UB Control braking. 1995/96 TIB listing: 480g; 1996 maker listing: 410g.","year_from":1995}
+{"component_id":5101,"source_ref":1,"description":"Mavic Open S.U.P. SBP, France","year_from":null,"year_to":null}
+{"component_id":5102,"source_ref":357,"description":"Mavic Open SUP CD, France. 700c clincher with the SUP welded and milled joint, 470 g (Ceramic 480 g), 32/36 holes, for 18-23 mm tyres; CD or CD Ceramic. Road racing and training.","year_from":1996}
+{"component_id":10598,"source_ref":473,"description":"700c alloy clincher, 19mm, 28/32/36 holes, SUP joint, hard CD anodising, ceramic braking flanks and double stainless eyelets; 480g.","year_from":1995}
+{"component_id":5092,"source_ref":121,"description":"Mavic Montlhéry Pro, France, 399 grams (avg). Polished 700c tubular rim, 20 mm, double eyelet; replacement and retail builds for racing, training and sportive riding; 24-40 holes, 395 g.","year_to":1991}
+{"component_id":5069,"source_ref":307,"description":"Mavic GP 4, France, 401 grams (avg). Hard-anodised 700c tubular, the amateur racer's rim for the worst conditions; 20 mm, double eyelet (stainless from 1988), 24-40 holes, 395 g. Reissued by 1997 (\"is back\"): CD, 32/36, 480 g. Variants: Red Label."}
+{"component_id":5067,"source_ref":121,"description":"Mavic GL330, France. Hard-anodised tubular, lighter than the GP 4, for road racing, time trials and triathlon; 20 mm, double eyelet (stainless from 1988); 700c 24-36 holes 330 g, 650 (26 in) 310 g, 600 (24 in) 290 g. Variants: Red Label.","year_to":1991}
+{"component_id":5066,"source_ref":121,"description":"Mavic G.E.L. 280, France, 295 grams (avg). Hard-anodised 700c tubular, 0.8 mm walls, for time trials, hill climbs, triathlon and extra-light wheels; double eyelet (stainless from 1988), 28-36 holes, 280 g.","year_to":1991}
+{"component_id":5082,"source_ref":473,"description":"Mavic Mach 2 CD 2, France. Aero tubular, 19 mm, double eyelet (two-piece stainless, recessed head) for easier lacing and even tension, flash-bright plus 50 micron hard anodising; 700 24-36 holes 470 g, 650 437 g, 600 24/28 holes 396 g."}
+{"component_id":12058,"source_ref":473,"description":"700c aero tubular rim with ceramic finish, 32/36 holes; 470g.","year_from":1995}
+{"component_id":8193,"source_ref":307,"description":"Mavic Paris-Roubaix SSC, France. The pro peloton's tubular: finest alloys, close tolerances, hard-anodised to 80 microns, stainless exposed double eyelets; 21.5 mm high, 700c, 24-40 holes (28/32/36 by 1997), 400 g."}
+{"component_id":12059,"source_ref":473,"description":"26in MTB clincher rim, 23mm wide, silver SBP finish, 28/32/36 holes; 380g.","year_from":1995}
+{"component_id":12060,"source_ref":473,"description":"26in MTB clincher rim, 23mm wide, titanium-colour TIB finish, 28/32/36 holes; 380g.","year_from":1995}
+{"component_id":8191,"source_ref":47,"description":"Mavic M 231, France. P.S.P.-profile ATB clincher (pyramidal braking flanks angled 3 degrees for cantilevers), tyres up to 37 mm, single stainless eyelet, neutral anodised; 559, 28-32-36 holes, 410 g.","year_to":1993}
+{"component_id":5071,"source_ref":473,"description":"Mavic M 231 CD, France. P.S.P.-profile ATB clincher (pyramidal braking flanks angled 3 degrees for cantilevers), tyres up to 37 mm, single stainless eyelet, flash-bright plus 50 micron hard anodising; 559, 28-32-36 holes, 410 g."}
+{"component_id":5072,"source_ref":473,"description":"P.S.P.-profile ATB clincher, 26in, 26mm, cantilever-angled braking flanks, double stainless eyelets, neutral/silver anodised. 1990/91: 28/32/36h, 460g. 1995/96 261 SBP: 32/36h, 480g."}
+{"component_id":8192,"source_ref":121,"description":"Mavic M 261 CD, France. The M 261 P.S.P. profile with flash-bright plus 50 micron hard anodising: cantilever-angled flanks, stainless exposed double eyelets, all tyre types; 559, 28-32-36 holes, 460 g.","year_to":1991}
+{"component_id":9970,"source_ref":303,"description":"Mavic M 281, France. P.S.P.-profile ATB clincher (braking flanks angled for cantilevers), 28 mm wide, 26 in, 36 holes, 520 g, for 44-55 mm tyres.","year_to":1991}
+{"component_id":9977,"source_ref":473,"description":"26in cross-country MTB rim, 22mm, SUP joint and UB Control, 28/32/36h. 1995/96 TIB: 410g. 1997: 410g, Ceramic 420g, CD double-eyelet 440g; CD also 40h for tandems, silver/Sunset/CD/CD Ceramic.","year_from":1995}
+{"component_id":12061,"source_ref":473,"description":"26in MTB clincher rim, 23mm wide, SUP joint and hard CD anodising, 28/32/36 holes; 450g.","year_from":1995}
+{"component_id":12062,"source_ref":473,"description":"26in MTB clincher rim, 23mm wide, SUP joint, hard CD anodising and ceramic braking flanks, 28/32/36 holes; 460g.","year_from":1995}
+{"component_id":9976,"source_ref":473,"description":"26in downhill MTB rim, 28mm wide, SUP joint; CD or CD Ceramic. 1995/96 CD Ceramic: 36h, 530g. 1997: 32/36h, 530g; CD version recommended for disc brakes.","year_from":1995}
+{"component_id":10182,"source_ref":449,"description":"700c (622) alloy trekking rim; 26 mm outside width, double wall, double stainless eyelets, silver anodised; 540 g, 36/40/48 holes, for 28-35 mm tyres. Touring and heavy loads.","year_from":1995}
+{"component_id":10184,"source_ref":374,"description":"700c (622) alloy trekking rim; 22 mm outside width, double wall, double stainless eyelets, SUP welded joint, UB Control braking, silver anodised; 470 g, 36/40/48 holes, for 22-28 mm tyres. Touring and tandems.","year_from":1996}
+{"component_id":8194,"source_ref":305,"description":"Mavic 610 URD, France. Threadless sealed BB, successor to the 610 RD: silver-anodised dural body, tempered steel axle, hard-anodised fixing rings with plastic washers; track 110 290 g, 114 300 g, 116 305 g, triple 119 310 g, 123 315 g."}
+{"component_id":83,"source_ref":121,"description":"Mavic 616 RD, France, 317 grams. ATB bottom bracket: the 610 URD with a widened shell putting the bearings outboard; symmetrical axles 124 mm 350 g, 134 mm 360 g.","year_to":1991}
+{"component_id":3049,"source_ref":305,"description":"Mavic 305, France, 116 grams. Road headset with an allen-key locking ring instead of a lock nut and washer, stainless races and balls, plastic seals; 25 x 100 119 g, 25.4 x 24 118 g."}
+{"component_id":3046,"source_ref":121,"description":"Mavic 315, France. ATB version of the 305 headset with a taller upper race for more steerer thread contact, allen-key locking ring, stainless races and balls; 25.4 x 24, 128 g (125 g in the 1991 catalogue)."}
+{"component_id":3047,"source_ref":302,"description":"Mavic 316, France. ATB headset for 1 1/8in steerers on the 305 / 315 design: 28.6 x 26 thread, head race 34.0 mm, crown race 30.0 mm, stack height 38-44 mm adjustable, allen-key locking ring, 145 g.","year_to":1990}
+{"component_id":3048,"source_ref":302,"description":"Mavic 317, France. ATB headset for 1 1/4in steerers on the 305 / 315 design: 31.8 x 26 thread, head race 37.0 mm, crown race 33.0 mm, stack height 38-44 mm adjustable, allen-key locking ring, 155 g.","year_to":1990}
+{"component_id":856,"source_ref":305,"description":"Mavic 451, France, 755 grams (Spec), pair including cables. Road side-pull brake tested in the 1991 Tour de France: return springs hidden in the arms, adjustable spring tension; used with the 451 levers."}
+{"component_id":2407,"source_ref":121,"description":"Mavic 860, France. Service Course version of the 810: clamp-on, hard-anodised links, finer precision and finish, 100 g.","year_to":1991}
+{"component_id":2411,"source_ref":305,"description":"Mavic 862, SSC, France, 91 grams. Service Course version of the 812: Italian-type braze-on front, hard-anodised links, 90 g."}
+{"component_id":2409,"source_ref":120,"description":"Mavic 870, SSC, France. Racing triple front, clamp-on: the 860 with a triple cage, hard-anodised wear parts, case-hardened matt-chromed cage, 110 g.","year_to":1992}
+{"component_id":8187,"source_ref":121,"description":"Mavic 872, SSC, France. Racing triple front for an Italian-type braze-on: the 862 with a triple cage, hard-anodised wear parts, 100 g.","year_to":1991}
+{"component_id":4340,"source_ref":306,"description":"Mavic 840, France, 234 grams (Actual). Short-cage racing rear: body and links forged 2014 alloy, C.N.D. black body, silver links; needle-bearing nylon jockeys; bolted, fully rebuildable; 6/7/8-speed, indexed with the 821 or friction with the 820, 230 g."}
+{"component_id":4341,"source_ref":306,"description":"Mavic 841, France, 243 grams. Medium-cage version of the 840 for triples, same body, links and bolts: sprockets up to 30 t, 32 t total capacity; 6/7/8-speed, indexed with the 821, 235 g."}
+{"component_id":6087,"source_ref":305,"description":"Mavic 821, France. Down-tube levers for the 840/841: retrofriction left and 6/7-speed indexed right, forged silver-anodised alloy, pre-stretched cables and anti-compression housing; 77 g."}
+{"component_id":2863,"source_ref":121,"description":"Mavic 355, France. Aero drop bar with an inclined top for low-profile time-trial bikes, two cable passages for classic brake levers, anthracite hard-anodised; 40/42 cm, 300/310 g.","year_to":1991}
+{"component_id":2864,"source_ref":121,"description":"Mavic Kit 357, France. Aero extension kit: hard-anodised dural U bar, two foam-covered alloy elbow rests, brackets and hardware; adjustable angle and reach, fits normal bends or the 355, also usable on an ATB; 560 g.","year_to":1991}
+{"component_id":6970,"source_ref":1,"description":"Mavic 3G Carbon (tri-spoke rear), France","year_to":1992,"title":"Mavic 3G Carbon (tri-spoke rear)"}
+{"component_id":6972,"source_ref":307,"description":"Mavic Comète, France. Composite lenticular disc, carbon faces over a rigid foam core. 1985-91: carbon-braid rim, sealed-bearing hubs, front 650 950 g, rear 700 1140 g. 1997: alloy SUP UB Control rim, FTS hub, road 1300 g, track tubular 980 g."}
+{"component_id":3399,"source_ref":307,"description":"Mavic 501, France, 245 grams (Spec), front; 290 g rear (with skewers). Road hub, anodised alloy, sealed adjustable cartridge bearings: rear 130 mm (reducible to 126), flanges 45 mm apart for even 8-speed tension; front 100 mm; 28/32/36 holes."}
+{"component_id":3404,"source_ref":305,"description":"Mavic 571/2, France. Second-generation 571 road freehub, 32 holes in the ZMS 8000 group with the 571 CB 12/23 cogs."}
+{"component_id":1192,"source_ref":305,"description":"Mavic 571, France. 8-speed cassette for the 571 / 577 freehubs: tempered chromed steel cogs with hook-shaped teeth (Mavic patent), 13-28 T on spacers locked by a threaded 12, 13 or 14 T first cog; 4.8 mm spacing (5.0 mm on the 577)."}
+{"component_id":9973,"source_ref":305,"description":"Mavic ZMS 800, France. First microprocessor-controlled rear derailleur (Zap Mavic System): two bar zap buttons, microprocessor in the bar end; upper jockey drives a cam and rack, a solenoid locks the shift; 0.1 s shifts, self-indexing."}
+```
+
+## Full English catalogue (1995) — applied and validated
+
+Source: [24-page PDF](https://www.bikecatalogs.com/download/3660), a mirror of
+the Disraeli Gears scans (cover prints 1995; Jaropa/Leiden distributor
+sticker). Reused existing source **449**, `Mavic catalogue (1995)`; no
+duplicate source registered. All 24 pages read; tables pp. 10–17 and
+component pages pp. 18–23 spot-checked at full size against the transcription.
+
+Product pages: p. 6 (575 hub teaser), 10 (Comète disc and AR hub units),
+11 (Cosmic and Cosmic Carbon wheels), 12–13 (MTB rims 230/231/261,
+121/117/217), 14–17 (road, tubular and trekking rims), 18 (ZAP 8000
+derailleur and controls), 19 (575 and 501 hubs), 20 (631/2 crankset, 610 BB),
+21 (610 URD lengths, headsets 305/315/316/317, 451 brake), 22 (front
+derailleurs 860/862/870/872; tools list skipped), 23 (821 levers, 355 bar,
+357 kit). Skipped: cover/intro/history/contents pp. 1–3, technology text
+pp. 4–5 and 7–9 (other than the NEW markers), back cover p. 24.
+
+New versus 1994: **575 road hubs** (NEW, pp. 6/19) and the **Cosmic**
+aluminium and **Cosmic Carbon** wheels (NEW, pp. 4/7/11; absent from the full
+1994 catalogue). Dropped versus 1994: Module 4, Montlhéry Pro, GEL 280,
+M 281, T 231, 217 D, M 261 SBP Ceramic, 3G Carbon, AV 502/AV 522 and the
+non-HG AR 572/2 cartridges, 571/2 hubs, 571 cassette, 616 BB, generic 631
+crank, 840/841 rear derailleurs. Absence only caps attestation; no rows were
+shortened. Printed anomalies kept out of the DB: p. 17 Module 3 CD ETRTO
+`630x15 (700C)` (p. 14 says 622x15), Paris-Roubaix SSC `rim end spoke 700`,
+and the garbled 316/317 thread diameters `11.8x26`/`11.4x26`.
+
+Decisions:
+
+- Same-spec 1995 attestations extend `year_to` 1994 → 1995 and change
+  edition qualifiers to "1994/95" (rims 8191, 8192, 12098, 8177, 5085, 5048,
+  5050, 5101, 5067, 12100; Comète hub units 12103, 12105, 12107; 9973; 12108;
+  8194; headsets 3049, 3047, 3048; brake 856; front derailleurs 2407, 2411,
+  2409, 8187; 6087; 2863; 2864).
+- Years unchanged, description qualifiers updated: 9977, 5074 (630x13 MA 2 is
+  32/36h in 1995, 36h in 1994), 5097, 5107, 10595, 5069, 5082 (the 1995
+  26in Mach 2 column is the existing 650/586 mm OD configuration), 8193, 10184.
+- `year_from` moved **earlier** 1996 → 1995: 10625 Cosmic Alu UB Control and
+  9986 Cosmic Carbone (now carries the 1995 700c/26in, HG, 870/1140 g figures;
+  the later FTS/ED/50 mm details are qualified as later). No `year_from` moved
+  later.
+- 9973 keeps its `Mavic ZMS 800` title; its description records that 1995
+  names it the ZAP 8000 derailleur. 4348 and 6088 stay separate as in 1994.
+- Inserted **12109 `Mavic 575`** (Hubs, 1995–1995, group NULL, mirrors 3399):
+  front 140 g, rear 275 g, each excluding an 85 g "locknut".
+- Not changed: 5083 Mach 2 Ceramic (650c); 365 451 lever (a lever is pictured
+  on p. 21 but not named); 3404 571/2 keeps its pre-existing `year_to` 1995
+  even though the full 1995 catalogue lists only 501/575 hubs.
+
+### Application and validation
+
+Applied 2026-11-19: 38 guarded updates and 1 insert, all setting
+`source_ref` 449. Re-runs affected zero rows. A full before/after Mavic
+readback changed exactly the 38 planned rows and added only 12109. Every
+description is 255 characters or fewer (longest 247). `compare-bike-links.js`
+matched the 1994 post-load baseline: 109 catalogues, 23,410 specs, 23,395
+unchanged, 0 gained/changed, and the same 15 pre-existing Huret Rival losses.
+The Mavic duplicate report kept the same 13 pairs (6 configuration,
+5 generation, 2 variant); near and parenthetical reports show 0 pairs. None of
+the changed IDs carries a year-ranged generator override.
+
+### Description spacing normalisation — 2026-11-19, applied
+
+The 1994 load (source 480) and one earlier pedal row stored descriptions with
+spaces dropped before numbers ("tyres up to37mm", "1990/91:410g;1994"). The
+1995 rewrites above fixed the rows they touched. A separate formatting-only pass
+rewrote 20 more rows (3838, 5066, 5071, 5072, 5086, 5092, 5102, 9970, 9976,
+10182, 10598, 12058–12062, 12095–12097, 12099), each guarded on its exact old
+text, with `source_ref` unchanged. 20 rows were affected and a re-run affected
+0. The remaining pattern hits are only unit style (`20.5mm`, `193g`), shared
+across sources, or velobase commas with no following space (4343, 6974, 6823);
+these were not changed.
+
+### Restoration baseline
+
+Original values of every changed field (the 1995 load first, then the spacing
+pass). 12109 is independently evidenced catalogue data and is not removed by
+restoring these.
+
+```jsonl
+{"component_id": 856, "source_ref": 480, "year_to": 1994}
+{"component_id": 2407, "source_ref": 480, "year_to": 1994}
+{"component_id": 2409, "source_ref": 480, "description": "Clamp-on triple front derailleur with forged anodised 2014 alloy body, hard-anodised black links and case-hardened matt-chromed steel cage. 1994 specification 120 g; 1988 specification 110 g.", "year_to": 1994}
+{"component_id": 2411, "source_ref": 480, "year_to": 1994}
+{"component_id": 2863, "source_ref": 480, "year_to": 1994}
+{"component_id": 2864, "source_ref": 480, "year_to": 1994}
+{"component_id": 3047, "source_ref": 480, "description": "ATB threaded headset, 1 1/8 in x 26; cups 34 mm, crown 30 mm, adjustable stack 38-44 mm. Allen locking ring, anodised alloy cups and stainless races/balls. 1994 specification 155 g; c.1990 manual 145 g.", "year_to": 1994}
+{"component_id": 3048, "source_ref": 480, "description": "ATB threaded headset, 1 1/4 in x 26; cups 37 mm, crown 33 mm, adjustable stack 38-44 mm. Allen locking ring, anodised alloy cups and stainless races/balls. 1994 specification 145 g; c.1990 manual 155 g.", "year_to": 1994}
+{"component_id": 3049, "source_ref": 480, "description": "Road threaded headset with 2.5 mm allen locking ring, anodised 2030 alloy cups, stainless races/balls and plastic/labyrinth seals. 25.4 x 24, crown 26.4 mm, cups 30.2 mm; 108 g in 1994, earlier 118/119 g; reported specimen 116 g.", "year_to": 1994}
+{"component_id": 5048, "source_ref": 480, "description": "Hard-CD anthracite touring clincher, 22mm wide, double stainless eyelets. Earlier 700c/27in: 36/40h, 530/535g. 1994 622x15: 36/40h, 505g; 22-28mm tyres. For touring and cyclo-camping.", "year_to": 1994}
+{"component_id": 5050, "source_ref": 480, "description": "Aluminium clincher, 19mm wide, single stainless eyelets. A silver-anodised 700c specimen has32 holes. 1994 maker: clear-anodised 622x13, 36h, 470g, 15.5mm high; for19-25mm tyres.", "year_to": 1994}
+{"component_id": 5067, "source_ref": 480, "description": "Hard-CD tubular, double stainless eyelets; road racing, time trials and triathlon. Earlier:700/650/600,24-36h,330/310/290g. 1994:700/633mm outside diameter,20mm wide,13mm high,32h,330g. Red label variant.", "year_to": 1994}
+{"component_id": 5069, "source_ref": 480, "description": "Hard-CD road tubular, double eyelets; measured average401g. Earlier:20mm,24-40h,395g. 1994:700/633mm outside diameter,20.5mm wide,14.5mm high,32/36h,480g; 1997 reissue also480g. Red label variant."}
+{"component_id": 5074, "source_ref": 480, "description": "Clincher, double eyelets; 19-25mm tyres. Earlier: 700c/27in, 32/36/40h, 430/435g. 1994 FB: 622x13, 32/36h, 460g or 630x13, 36h, 465g; 20.5mm wide, 14mm high. Measured average 444g. Red/Green labels."}
+{"component_id": 5082, "source_ref": 480, "description": "Hard-CD aero tubular, 19mm wide, double stainless eyelets. Earlier:700 24-36h/470g,650 437g,600 24/28h/396g. 1994:18.9mm high;700(633mm OD)32/36h,470g or650(586mm OD)28/32h,437g."}
+{"component_id": 5085, "source_ref": 480, "description": "Silver-anodised touring clincher, 22mm wide, double stainless eyelets. Earlier 700c/27in/650B: 36/40h, 530/535/490g (650B 480g in 1984). 1994 622x15 SBP: 36h, 505g, 22-28mm tyres.", "year_to": 1994}
+{"component_id": 5097, "source_ref": 480, "description": "Hard-CD clincher, 19mm wide, 17.2mm high, double stainless eyelets; 18-23mm tyres. 1988/89: 395/360g; 1990/91: 420/385g. 1994 622/571x13: 430/395g, 28/32/36h."}
+{"component_id": 5101, "source_ref": 480, "description": "Silver SBP aluminium clincher, 622x13, 19mm wide and high, double stainless eyelets, SUP welded joint; 28/32/36h, 470g, for18-23mm tyres.", "year_to": 1994}
+{"component_id": 5107, "source_ref": 480, "description": "700c clincher, SUP joint, UB Control, double eyelets, 28/32/36h. 1994 SBP: 622x13, 18.5mm wide, 17.8mm high, 430g. 1997: 410g, CD/CD Ceramic/blue/silver, 18-23mm tyres. Measured average394g; tubular separate."}
+{"component_id": 6087, "source_ref": 480, "description": "Down-tube shifters for 840/841: retrofriction left, indexed right, forged silver-anodised 2014 alloy; supplied with pre-stretched PTFE-coated stainless cables and anti-compression housing. 1994 weight 130 g/pair; earlier specification 77 g.", "year_to": 1994}
+{"component_id": 8177, "source_ref": 480, "description": "Silver-anodised touring clincher, double stainless eyelets; 19-25mm tyres. Earlier 700c/27in: 430/435g, 32/36h. 1994 SBP: 622x13, 32/36h, 460g; 20.5mm wide, 14mm high.", "year_to": 1994}
+{"component_id": 8187, "source_ref": 480, "description": "Triple front derailleur for Italian-type braze-on mount; forged anodised 2014 alloy body, hard-anodised black links and case-hardened matt-chromed steel cage. 1994 specification 110 g; 1988 specification 100 g.", "year_to": 1994}
+{"component_id": 8191, "source_ref": 480, "description": "Silver-anodised PSP-profile MTB clincher,559x17,23mm wide,14.6mm high; single stainless eyelets,28/32/36h, cantilever-angled braking flanks, tyres up to37mm. 1990/91:410g;1994 SBP:440g.", "year_to": 1994}
+{"component_id": 8192, "source_ref": 480, "description": "Hard-CD PSP-profile MTB clincher,559x20,26mm wide,15.4mm high, double stainless eyelets, cantilever-angled braking flanks. Earlier flash-bright plus50-micron anodising:28/32/36h,460g;1994:32/36h,480g.", "year_to": 1994}
+{"component_id": 8193, "source_ref": 480, "description": "Professional hard-CD tubular, selected alloys and close tolerances;80-micron anodising, double stainless eyelets. 21.5mm wide,12.7mm high,700/633mm outside diameter,400g. Earlier24-40h;1994 and1997:28/32/36h."}
+{"component_id": 8194, "source_ref": 480, "year_to": 1994}
+{"component_id": 9973, "source_ref": 480, "description": "Zap electronic 8-speed rear derailleur: alloy body, hard-treated aluminium column, Delrin guide, Kevlar-composite cage. Upper jockey powers cam/rack shifting; two bar switches and bar-end processor/battery. Derailleur 240 g, controls 95 g.", "year_to": 1994}
+{"component_id": 9977, "source_ref": 480, "description": "26in MTB clincher,22mm wide,SUP,UB Control. 1994 SBP/TIB:559x17,19.5mm high,single stainless eyelets,28/32/36h,410g. 1997:410g,Ceramic420g,CD double-eyelet440g (also40h);silver/Sunset/CD/CD Ceramic. D variants separate."}
+{"component_id": 9986, "source_ref": 353, "description": "Mavic Cosmic Carbone, France. 50 mm carbon fairing on an SUP UB Control alloy rim, integrated nipples, 16 flat spokes, FTS hub; tubular or clincher, HG or ED; 700c 880/1090 g, 650c 730/795 g. Atlanta 1996 gold (Pascal Richard).", "year_from": 1996}
+{"component_id": 10184, "source_ref": 480, "description": "Silver-anodised 700c trekking clincher,622x17,22mm wide,19.5mm high,SUP welded joint,UB Control,double stainless eyelets;470g,22-28mm tyres. 1994 SBP:32/36h;later36/40/48h. Touring and tandems."}
+{"component_id": 10595, "source_ref": 480, "description": "Titanium-colour clincher, SUP, UB Control, double stainless eyelets, 28/32/36h. 1994 maker: 622x13, 18.5mm wide, 17.8mm high, 430g. 1995/96 dealer:19mm,480g; 1996 maker:410g. For18-23mm tyres."}
+{"component_id": 10625, "source_ref": 357, "year_from": 1996}
+{"component_id": 12098, "source_ref": 480, "description": "Silver SBP 26in MTB clincher,559x17,23mm wide,19mm high, single stainless eyelets, SUP welded joint and PSP profile;28/32/36h,450g.", "year_to": 1994}
+{"component_id": 12100, "source_ref": 480, "description": "Titanium-colour TIB 700c trekking clincher,622x17,22mm wide,19.5mm high,double stainless eyelets,SUP welded joint and UB Control braking surfaces;32/36h,470g. Distinct from26in217.", "year_to": 1994}
+{"component_id": 12103, "source_ref": 480, "year_to": 1994}
+{"component_id": 12105, "source_ref": 480, "year_to": 1994}
+{"component_id": 12107, "source_ref": 480, "year_to": 1994}
+{"component_id": 12108, "source_ref": 480, "year_to": 1994}
+{"component_id": 3838, "description": "646 LMS/SSC Look-cleat pedal; sealed/needle bearings, adjustable tension, 9/16x20.1990 dealer:carbon/alu body, 440g pair, 0-10deg lateral float, 32deg cornering. Maker:480g pair, 0-5deg heel movement; legacy496g listing."}
+{"component_id": 5066, "description": "Hard-CD tubular, 20mm wide, double stainless eyelets; time trials, hill climbs and triathlon, 0.8mm walls. Earlier:700c,28-36h,280g. 1994:700/633mm outside diameter,13mm high,28/32h,280g. Measured average295g."}
+{"component_id": 5071, "description": "Hard-CD PSP-profile MTB clincher,559x17,23mm wide,14.6mm high; single stainless eyelets,28/32/36h,3-degree braking flanks, tyres up to37mm. Earlier flash-bright plus50-micron hard anodising:410g;1994:440g."}
+{"component_id": 5072, "description": "Silver-anodised PSP-profile MTB clincher,559x20,26mm wide,15.4mm high, cantilever-angled braking flanks, double stainless eyelets. 1990/91:28/32/36h,460g. 1994-96 SBP:32/36h,480g."}
+{"component_id": 5086, "description": "Touring/tandem clincher, double eyelets; 28-35mm tyres. Earlier 700c/27in/650B/650A: 36/40h (700c also48h), 550/560/520/530g. 1994 622x19 SBP: 26mm wide, 36/40/48h, 570g. Reported actual weight596g."}
+{"component_id": 5092, "description": "Bright-anodised tubular for road racing, training and sportive use. Earlier:20mm, 24-40h, 395g. 1994:700/633mm outside diameter,20.5mm wide,14.5mm high, double stainless eyelets,32/36h,480g. Measured average399g."}
+{"component_id": 5102, "description": "Hard-CD aluminium clincher, 622x13, 19mm wide and high, double stainless eyelets, SUP welded joint; 28/32/36h, 470g, for18-23mm tyres. Road racing and training; Ceramic version is separate."}
+{"component_id": 9970, "description": "Silver-anodised PSP-profile MTB clincher,559x21,28mm wide,17.2mm high, double stainless eyelets,36h; cantilever-angled braking flanks,44-55mm tyres. 1991:520g;1994 SBP:550g."}
+{"component_id": 9976, "description": "26in downhill MTB clincher,28mm wide,SUP joint;CD or CD Ceramic. 1994 CD Ceramic:559x21,18mm high,double stainless eyelets,32/36h,530g. 1995/96 Ceramic:36h,530g. 1997:32/36h,530g;CD recommended for disc brakes."}
+{"component_id": 10182, "description": "Silver-anodised 700c trekking clincher,622x20,26mm wide,15.4mm high, PSP profile, double stainless eyelets;540g,28-35mm tyres. 1994/95 SBP:36h;later36/40/48h. Touring and heavy loads."}
+{"component_id": 10598, "description": "Hard-CD aluminium clincher with Ceramic braking surfaces, 622x13, 19mm wide and high, double stainless eyelets, SUP welded joint; 28/32/36h, 480g, for18-23mm tyres."}
+{"component_id": 12058, "description": "700c aero tubular, silver SBP anodising with Ceramic braking surfaces, 633mm outside diameter,19mm wide,18.9mm high, double stainless eyelets;32/36h,470g."}
+{"component_id": 12059, "description": "Silver SBP 26in MTB clincher,559x17,23mm wide,16.2mm high, PSP profile, single stainless eyelets;28/32/36h,380g. For ultralight bicycles."}
+{"component_id": 12060, "description": "Titanium-colour TIB 26in MTB clincher,559x17,23mm wide,16.2mm high, PSP profile, single stainless eyelets;28/32/36h,380g. For ultralight bicycles."}
+{"component_id": 12061, "description": "Hard-CD 26in MTB clincher,559x17,23mm wide,19mm high, single stainless eyelets, SUP welded joint and PSP profile;28/32/36h,450g."}
+{"component_id": 12062, "description": "Hard-CD 26in MTB clincher with Ceramic braking surfaces,559x17,23mm wide,19mm high, single stainless eyelets, SUP welded joint and PSP profile;28/32/36h,460g."}
+{"component_id": 12095, "description": "Silver SBP 26in MTB clincher with Ceramic braking surfaces,559x20,26mm wide,15.4mm high,PSP profile,double stainless eyelets;32/36h,480g."}
+{"component_id": 12096, "description": "Silver SBP 26in MTB clincher,559x17,22mm wide,19.5mm high, double stainless eyelets, SUP welded joint and UB Control braking surfaces;28/32/36h,450g. D version; single-eyelet217 is separate."}
+{"component_id": 12097, "description": "Titanium-colour TIB 26in MTB clincher,559x17,22mm wide,19.5mm high, double stainless eyelets, SUP welded joint and UB Control braking surfaces;28/32/36h,450g. D version; single-eyelet217 is separate."}
+{"component_id": 12099, "description": "Silver SBP 700c trekking clincher,622x17,23mm wide,14.6mm high,PSP profile,single stainless eyelets;36h,500g. Distinct from26in M231."}
+```
+
+## Catalogue backlog and scope review — 2026-11-19
+
+Compared the existing reconciliation notes with live `data_source` records
+and the [Bike Catalogs Mavic archive](https://www.bikecatalogs.com/brand/mavic).
+A source registration, or a component currently citing it, does not establish
+that its whole catalogue was ingested: source_ref tracks the latest change,
+and later corrections can supersede earlier provenance. The following are
+confirmed available editions still needing a full reconciliation:
+
+| Edition | Available source | Work already recorded | Remaining scope |
+| --- | --- | --- | --- |
+| 1999 GB Rims & Wheels | [Complete scan](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf) | Source374, CC9 and selected road/touring rim corrections | Inventory and reconcile all remaining product panels, including wheels, MTB rims and hubs |
+| 1999 Mektronic launch catalogue | [Archive listing](https://www.bikecatalogs.com/document/3661) | No equivalent source or ingestion entry found | Obtain and inspect the separate launch catalogue, then reconcile its supported components |
+| 2000 GB catalogue | [24-page PDF](https://www.bikecatalogs.com/download/3662) | Source478, Open Pro p.14 date correction only | Reconcile the rest of the catalogue |
+| 2001 USA retailer catalogue | [28-page PDF](https://www.bikecatalogs.com/download/3663) | Source479, Open Pro p.22 date correction only | Reconcile the rest of the catalogue |
+
+The 1994 and 1995 full catalogues are now applied and validated above.
+Remaining order: 1999 GB/Mektronic, 2000, 2001. Earlier full
+editions can refine existing component identities and dates before moving
+through the later wheel ranges. This is a work order, not approval of an
+unreviewed DB change set. The historical sections below record substantial
+reconciliation for84/85,86/87,88/89,90/91 and1997, plus the earlier catalogues
+and smaller leaflets; none needs reopening solely because its present-day
+source_ref usage is low.
+
+Checked the archive descriptions of three additional listings directly:
+
+- [1992 Components Catalog](https://www.bikecatalogs.com/document/2529)
+  is explicitly the six-page trilingual **Les92** leaflet, matching source304
+  and the processed inventory below. Do not add it as a new full catalogue.
+- The1999 Mektronic listing describes a19-page launch catalogue; it is
+  distinct from the1999 GB Rims & Wheels source374. Listing metadata and
+  source absence were checked; the launch PDF itself is not yet transcribed.
+- [2009 Bike Systems ES](https://www.bikecatalogs.com/document/5801)
+  is also listed, with no matching registered source/ingestion record. Its
+  description says26 pages rebuilt from Scribd renders and dates it from the
+  title. It remains a later-period candidate requiring edition/scope checks;
+  it is not part of the recommended1994–2001 batch. The linked2002 technical
+  manual and undated service sheets are supplementary technical sources,
+  not automatically additional complete component-catalogue ingestions.
+
+No DB changes or new catalogue transcriptions were made in this scope review.
+The full-reconciliation action is recorded once in TODO. The three temporary
+archive-description HTML files were removed after their URLs and distinctions
+were recorded here.
+
 ## Brügelmann Titan and Bleu SSC — 2026-11-19, applied
 
 Reviewed the already registered dealer sources 392 (1977), 394 (1979),
@@ -148,6 +569,161 @@ removed after exact readback and the zero-change rerun. No pending review SQL.
   1986 /1980–1990 claims. Earlier1998 silver Yeti evidence for10183 remains
   valid and separate. The official product-sheet endpoint returned403; no
   new technical-sheet dating claim is made.
+
+### Open Pro decal-date search — 2026-11-19
+
+Checked search results for dated maker evidence for specimen rows5099/5100. The
+[Mavic technical-manual Open Pro sheet](https://technicalmanual.mavic.com/tech-mavic/technical_manual/data/docs/products/2_107.pdf)
+describes specifications but does not date the pictured decals or establish
+the dark finish on specimen5100. Decal sellers and current NOS listings show
+variant imagery but provide no reliable dated crosswalk. No identity or year
+change is supported; the open question remains exactly as described above.
+
+### 1994/1995 scans recovered and inspected — 2026-11-19
+
+Downloaded both Bike Catalogs PDFs successfully on retry:
+[1994, 36 pages](https://www.bikecatalogs.com/download/3659) and
+[1995, 24 pages](https://www.bikecatalogs.com/download/3660). Their metadata
+identifies the Disraeli Gears scans as the source; these are mirrors, not
+independent evidence. The 1994 cover visibly prints `CATALOGUE 1994 F`;
+use the edition year rather than the archive's tentative 1993 publication date.
+The 1995 edition date was already checked in the T261 review below.
+
+Visually inspected the relevant tables at full size:
+[1994 printed/PDF p.9](https://www.disraeligears.co.uk/site/mavic_catalogue_1994_-_page_9.html)
+and [1995 printed/PDF p.15](https://www.disraeligears.co.uk/site/mavic_1995_-_page_15.html).
+Both list the following configurations (weights are printed averages):
+
+| Family | Finish/configuration | Weight | Distinguishing detail |
+| --- | --- | --- | --- |
+| Open 4 CD | Hard CD, 622x13 / 571x13 | 430 / 395 g | 17.2 mm height, 19 mm outer width |
+| Reflex clincher | Silver SBP / titanium colour TIB, 622x13 | 430 g each | SUP and UB Control; 17.8 mm height, 18.5 mm width |
+| Open SUP | Silver SBP / hard CD, 622x13 | 470 g each | SUP; 19 mm height and width |
+| Open SUP Ceramic | Hard CD with Ceramic, 622x13 | 480 g | SUP; 19 mm height and width |
+
+All these 700C configurations list double stainless eyelets and 28/32/36
+drillings. The 1995 p.14 companion road-clincher table lists MA2, MA40,
+Module 3 and 192; the 1994 contents and rim illustrations were used for
+navigation. This was a focused Open Pro comparison, not a full catalogue audit.
+
+Neither inspected Open-family table names Open Pro. In particular, **Open SUP
+Ceramic is not printed as Open Pro Ceramic**. These pages therefore do not
+substantiate the earlier conversational suggestion that Open Pro Ceramic was
+confirmed around 1994–95. They also do not independently establish a launch
+year or date either specimen5099/5100. Both editions show large yellow SUP
+decals on Reflex clinchers, demonstrating why the large SUP layout in one
+5100 photograph is insufficient to identify its model. No specimen is
+reclassified from that resemblance.
+
+At that stage, the useful next evidence remained a dated maker/dealer photograph or decal
+crosswalk matching the actual OPEN PRO/Maxtal markings on5099/5100; prioritise
+1998–2001 material around the already documented 1998/1999 attestations.
+No DB, source, bike link, CSV or generator changes were made. TODO retains
+only that unresolved identification action. Task PDF downloads, empty text
+extractions and page renders were removed after recording these stable URLs.
+
+### Open Pro decal matches in 2000/2001 maker catalogues — 2026-11-19, evidence review
+
+Supersedes the preceding claim that no dated maker/decal crosswalk had been
+recovered. Downloaded the [2000 GB catalogue, 24 pages](https://www.bikecatalogs.com/download/3662)
+and [2001 USA retailer catalogue, 28 pages](https://www.bikecatalogs.com/download/3663).
+Both covers visibly print those edition years; the PDFs reproduce Disraeli
+Gears scans. Do not substitute their PDF conversion dates or the archive's
+estimated previous-autumn publication dates. Read the contents to locate the
+rim panels; other components were outside this focused review.
+
+- **2000 printed/PDF p.14:** [road-rim page](https://www.disraeligears.co.uk/site/mavic_2000_-_page_14.html)
+  pictures a blue Open Pro with an oval yellow MAVIC logo, short red/silver
+  `MAXTAL S.6000 / OPEN PRO` label and a separate large yellow SUP decal.
+  Colours explicitly listed: Silver, Black Mavic, Blue France, CD and Ceramic.
+  The 700/650 weights are425/390g; profile18.4mm high,19.6mm wide;
+  28/32/36 drilling, Maxtal, SUP, double eyelets and UB Control or Ceramic.
+- **2001 printed/PDF p.22:** [road/touring-rim page](https://www.disraeligears.co.uk/site/mavic_retailer_catalog_2001_-_page_22.html)
+  pictures a blue Open Pro with the longer red/silver label: oval yellow
+  MAVIC, black OPEN/yellow field, red PRO and the small technology marks
+  extending along the silver end. It repeats Maxtal/SUP/double eyelets,
+  UB Control or Ceramic and425g700/390g650. The blue swatch lists32/36 holes;
+  other swatches include28/32/36. Swatches alone do not name each dark finish.
+
+Compared all three original5099 photographs and the two relevant5100
+photographs directly against these maker images:
+
+| Specimen | Dated visual match | Interpretation |
+| --- | --- | --- |
+| 5099 blue | 2001 p.22, long combined decal | Matches blue finish and distinctive red/silver label layout; evidence for this appearance in2001 |
+| 5100 dark | 2000 p.14, short main decal plus separate SUP | Matches main label layout and the separate SUP treatment shown in the built-wheel photo; Black Mavic is explicitly offered alongside CD |
+
+Original comparison photographs:
+[5099 close-up](https://www.velobase.com/CompImages/Rims/7A572DC0-8788-4AAE-97CD-546D19943BD3.jpeg),
+[5100 main-label close-up](https://www.velobase.com/CompImages/Rims/1A6E852F-F470-4FBB-A4F7-6C784BC5A9E8.jpeg),
+[5100 built wheel](https://www.velobase.com/CompImages/Rims/8E27912B-F5BF-4E3A-898F-A631B3EC9850.jpeg).
+The maker comparison now explains why a large separate SUP label is compatible
+with an Open Pro, although it still cannot prove that all5100 photographs
+depict the same physical rims. Do not relabel5100 as CD just from its darkness.
+
+These are dated attestations of decal appearances, not manufacture dates,
+launch years, or proof that one decal replaced the other exclusively in2001.
+They support reviewing the legacy dates5099 **1986** and5100 **1980–1990**
+against appearance attestations **2001** and **2000**, respectively. A date
+correction would need a live-row/source/link preflight and reviewed change
+set; no SQL is prepared or applied in this evidence-only pass. Preserve5099's
+445g actual versus435g reported specification, and5100's888g actual pair;
+the maker425g must not replace these independent measurements. No merge with
+silver10183 is proposed.
+
+The previously checked1999 maker p.20 remains the Royal Blue/specification
+attestation, while the1998 Yeti table attests silver. Targeted searches of
+Bike Catalogs, Bikalog, RetroMTB and Retrobike did not recover a complete1998
+maker scan; none is claimed inspected. The2000/2001 photographs provide the
+new distinguishing evidence sought in TODO, whose remaining action is now
+to review date corrections. No DB/source/link/CSV/generator changes were made.
+Task downloads, specimen HTML/photos and rendered pages were removed after
+recording the source URLs; documentation whitespace checks passed.
+
+### Open Pro date corrections — 2026-11-19, applied and validated
+
+Applied the user's approved correction using the specimen/decal comparisons
+above. This supersedes the earlier pending-review status and retention of
+the legacy dates. Each single-year range records an attested appearance;
+neither endpoint claims introduction or discontinuation.
+
+| Component | Old year_from/year_to | New year_from/year_to | Old/new source_ref |
+| --- | --- | --- | --- |
+| 5099 Mavic Open Pro | 1986 / 1986 | 2001 / 2001 | 1 -> 479 |
+| 5100 Mavic Open Pro SUP (Maxtal, 622x15) | 1980 / 1990 | 2000 / 2000 | 1 -> 478 |
+
+Both **year_from values moved later**, on the dated maker photograph evidence:
+2001 USA p.22 for5099; 2000 GB p.14 for5100. Full1994/1995 Open-family tables
+and the previously reviewed1997 range instead name Open4/Open SUP/Reflex;
+the1998 silver fitment and1999 Royal Blue family attestations do not identify
+these particular decal appearances. Revisit if an earlier exact visual
+attestation is recovered. No launch/end-year inference is intended.
+
+Registered sources after confirming no existing equivalent source records:
+
+- **478**, `Mavic catalogue, GB edition (2000)`, countryGB, citation:
+  `https://www.bikecatalogs.com/download/3662; cover 2000 GB, printed/PDF p.14 Open Pro decal and finish comparison only; other components not audited.`
+- **479**, `Mavic retailer catalogue, USA edition (2001)`, countryUS, citation:
+  `https://www.bikecatalogs.com/download/3663; cover 2001 USA, printed/PDF p.22 blue Open Pro decal comparison only; other components not audited.`
+
+Live preflight found no bike links to either component and no generator
+overrides or link decisions referencing these IDs (unrelated SunTour PL-5100
+text is not a component5100 reference). Guarded transactions inserted one
+source and updated one component each. Exact full-row readback confirmed
+that only year_from, year_to and source_ref changed: titles, search text,
+UUIDs, brand/category/group, image and descriptions were retained, including
+5099's445g actual/435g reported specification and5100's888g actual pair.
+Neither row was merged or reclassified as CD. Restoration, if deliberately
+justified, uses the old years/source_ref in the table guarded by the applied
+new values; leave the registered catalogue evidence intact.
+
+Rerunning both SQL files affected zero sources and zero components. The
+generator/live comparison over **109 loaded catalogues /23,410 paired specs**
+was identical before and after, including the same15 pre-existing lost-match
+findings; zero gains or target changes, no missing/ambiguous identities.
+No bike links, CSVs, matcher or API code changed. Completed TODO action was
+removed; no new search task was added without a new lead. The task's two SQL
+files and before/after comparison reports were removed after validation.
 
 Source URLs, exact weight qualifiers and applied descriptions are retained here; specimen
 HTML/photos, maker/dealer downloads, page renders and duplicate-report scratch
