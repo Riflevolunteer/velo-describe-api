@@ -1,5 +1,171 @@
 # Cross-catalog notes catalogs processed so far
 
+## Branford tyre tables reconciliation — applied 2026-11-19
+
+**Applied and validated after explicit user approval.** Source **471**;
+Oscar X **11791**, Flash M21mm **11792**. Scope: printed/PDF pp.22–23 of
+[Branford Bike Spring/Summer 1990](https://timslife.com/brancat/Catalogs/bb1990-01.pdf).
+Both pages were visually read together: p.22 gives models/specifications; p.23
+continues the same rows with casing construction and comments. The cover dates
+the US retailer catalogue. Other Branford component pages and Colorado Cyclist
+sheets remain separate work.
+
+Applied: one catalogue source, **two tyre additions, ten existing-row updates
+and one bike-spec link**. No existing titles/search text change, no merges or
+deletes, no CSV or generator changes. Tyres23 category registrations already
+exist for Vittoria104, Continental639 and Wolber522. The new source is a US catalogue, label
+“Branford Bike Spring/Summer catalogue (1990)”.
+
+### Extracted table
+
+The printed Part # entries are retailer SKUs, not established maker codes.
+Diameter is not inferred where only width is printed. Weights/pressures are
+retailer specifications, not independent measurements.
+
+| Maker / model | Retailer SKU | Weight / width / max psi | Casing | Reconciliation |
+| --- | --- | --- | --- | --- |
+| Continental Sprinter | CO-SP- | 250g / 22mm / 170 | 3-ply polyamide | 6787 |
+| Continental Comp 240 | CO-CO-240 | 240g / 22mm / 170 | 5-ply polyamide | Hold: Competition10415 crosswalk |
+| Continental Comp GP | CO-CO-GP | 225g / 19mm / 170 | 5-ply polyamide | Hold: Competition10415 crosswalk |
+| Continental Comp GP 26in | CO-CO-GP26 | 220g / 19mm / 170 | 5-ply polyamide | Hold: Competition10415 crosswalk |
+| Continental Comp GP 24in | CO-CO-GP24 | 200g / 19mm / 170 | 5-ply polyamide | Hold: Competition10415 crosswalk |
+| Continental Special Class | CO-SP-175 | 175g / 22mm / 170 | 3-ply Egyptian cotton | 11140 |
+| Vittoria Mondiale | VI-CT-MO | 290g / 24mm / 110 | 2-ply cotton | 6891 |
+| Vittoria Olympic | VI-CT-OL | 310g / 24mm / 110 | 2-ply cotton | Hold: Olimpionico10562 crosswalk |
+| Vittoria Special Pro | VI-CT-SP | 230g / 23mm / 120 | 3-ply cotton | 6900 |
+| Vittoria Special Pro 26in | VI-CT-SP26 | 210g / 23mm / 120 | 3-ply cotton | 6900 |
+| Vittoria Corsa CX/CG | VI-CT-CX/CG | 240g / 21mm / 120 | 4-ply cotton | 9428 specs; 6881 photo availability only |
+| Wolber Classic | WO-CT-CC | 290g / 24mm / 105 | 2-ply cotton | 6908 |
+| Wolber Invulnerable | WO-CT-IN | 280g / 22mm / 110 | 2-ply cotton and steel mesh | 6918 |
+| Continental Super Sport Ultra-18 | CO-FC-S18 | 210g / 18mm / 135 | 3-ply polyamide | 6789 |
+| Continental Super Sport Ultra-23 | CO-FC-S23 | 220g / 23mm / 125 | 3-ply polyamide | 6789 |
+| Continental Super Sport 20 | CO-CC-20 | 330g / 25mm / 120 | 3-ply polyamide | 6788 |
+| Continental Super Sport 25 | CO-CC-25 | 330g / 25mm / 120 | 3-ply polyamide | 6788 |
+| Vittoria Oscar X | VI-CC-OS | 195g / 19mm / 150 | 3-ply Egyptian cotton | 11791; linked18354 |
+| Vittoria Flash M | VI-CC-FL | 215g / 21mm / 125 | 2-ply Egyptian cotton | 11792 |
+
+### Added rows
+
+| Title / fixed UUID | Dates | Description |
+| --- | --- | --- |
+| 11791 Vittoria Oscar X / 68b991d5-c157-421c-9207-d00f24f9ee99 | 1989–1990 | Folding racing clincher; 3-ply Egyptian cotton casing, 19mm, 195g, max 150psi. Fast and responsive; made in Italy. |
+| 11792 Vittoria Flash M (21mm) / 473dd62d-5ba5-4c50-96ab-b9f7d377b195 | 1990–1990 | Folding training/fast-riding clincher; 2-ply Egyptian cotton casing, 21mm, 215g, max 125psi. Made in Italy. |
+
+Both use maker104/category23 and NULL group. Maintained search-text helper output:
+Oscar X -> “Vittoria Oscar X”; Flash M (21mm) -> “Vittoria Flash M” (parenthetical
+qualifiers omitted by the helper). Dates express attestation, not manufacture.
+
+**Earlier Oscar X evidence:** [1989 Bianchi catalogue](https://www.gringineer.com/blogs/default-blog/1989-bianchi-catalog),
+source325; [original specification table img-2486-2.jpg](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/img-2486-2.jpg?v=1764982608)
+downloaded and visually checked. Mondiale explicitly lists Vittoria Oscar X.
+That supplies1989 for Oscar X11791 and supports bike_spec18354
+(bike1076,1989 Mondiale), NULL ->11791. CSV and DB exact values agree.
+Preserve bike/spec provenance. The new exact title matches automatically;
+no override is needed.
+
+### Existing rows
+
+All ten receive the new Branford source_ref in the same guarded update.
+Unchanged matches retain their sources. Exact prior values are preserved below;
+the table records the applied descriptions and date changes.
+
+| ID / title | Applied date change | Former source | Applied description/evidence |
+| --- | --- | --- | --- |
+| 6787 Continental Sprinter 250 | year_from 1999 -> 1990 | 353 | Tubular; 3-ply polyamide casing, 22mm, 250g, max 170psi. Puncture-resistant racing/training tyre with low rolling resistance. |
+| 6788 Continental Super Sport | year_to 1988 -> 1990 | 391 | Clincher; Super Sport 20/25 versions have 3-ply polyamide casing, steel beads, 330g and max 120psi; 25 model is 25mm. For training/rough roads. Earlier specimen measured 215.8g, size unspecified. |
+| 6789 Continental SuperSport Ultra | year_to 1988 -> 1990 | 391 | Folding clincher, 3-ply polyamide casing. Ultra-18: 18mm, 210g, max 135psi; Ultra-23: 23mm, 220g, max 125psi. Fast, responsive racing/training tyre; West Germany. |
+| 11140 Continental Sonderklasse 175 | year_to 1985 -> 1990 | 400 | Track/time-trial tubular for smooth surfaces. 1990 Special Class: 3-ply Egyptian cotton, 22mm, 175g, max 170psi. Earlier Sonderklasse 175 listings: approx 210g (200/220g). |
+| 6891 Vittoria Mondiale | year_to 1988 -> 1990 | 262 | Cotton vulcanized training tubular, ribbed tread, butyl tube; 290g listed (earlier 390g listing). Mondiale G/R knurled or ribbed in 1988; 1990: 2-ply cotton, 24mm, max 110psi, for training/general riding. |
+| 6900 Vittoria Special Pro | year_to 1988 -> 1990 | 262 | Cotton tubular, latex tube, file/knurled tread; 230g/21.5mm (1983), 220g (1985), 250g (1988, twisted cotton/ultralight tube). 1990: 3-ply cotton, 23mm, max 120psi; 230g standard or 210g in 26in, for racing/triathlon. |
+| 6881 Vittoria Corsa CX Squadre Prof | year_to 1980 -> 1990 | 1 | Photo explicitly reads Corsa CX Squadre Prof; preserve old description and220g measured weight. No table240g assigned to this variant. |
+| 9428 Vittoria Corsa CG | unchanged | 262 | Light cotton racing tubular, mixed tread, 240g. 1988: double-twisted cotton, ultralight tube, knurled tread, 250g. 1990: 4-ply cotton, 21mm, 240g, max 120psi; CG recommended for the rear. |
+| 6908 Wolber Classic 290 | unchanged | 1 | Training/rough-road tubular; 2-ply cotton casing, 24mm, 290g, max 105psi. Durable, comfortable and puncture resistant; earlier specimen averaged 322g. |
+| 6918 Wolber Invulnerable 84 | year_to 1988 -> 1990 | 391 | Steel-belted tubular; fine stainless-steel mesh under tread, 2-ply cotton, mixed tread; 22mm, 280g, max 110psi. Training/racing; earlier 285g specification and reported roughly 3x ordinary tubular puncture-free mileage. |
+
+No year_from moves later. Other endpoints stay unchanged, including Sprinter250
+year_to1999, CG9428 dates1983–1996 and Classic6908 dates1980–1990.
+
+### Identity decisions and limits
+
+- The four Continental Comp entries may overlap1999 Competition10415, already
+  described with22mm/240g and19x26/210g. Abbreviated retailer names do not
+  establish a maker model/generation crosswalk. Do not create parallel rows or
+  backdate10415 on name/weight resemblance. Extracted configurations remain
+  evidence pending a maker crosswalk.
+- Olympic24mm/310g/2-ply could be related to1996 Olimpionico10562
+  (23mm,300–320g). English/Italian names alone do not establish the same
+  configuration. Keep10562 unchanged; do not add a possible duplicate.
+- Special Class is the English rendering of Sonderklasse; reconcile the175
+  track/time-trial identity to11140. Preserve older approx210g/200–220g figures
+  separately from the1990 retailer175g specification.
+- Super Sport20 is printed25mm, exactly like Super Sport25. Record the
+  inconsistency; do not assert a width for model20 in6788. Keep the independently
+  measured215.8g specimen distinct from the1990 steel-bead330g configurations.
+- CX/CG share a240g/21mm/4-ply row; p.23 recommends CX front and CG rear.
+  They are not aliases. Enrich CG9428; keep generic CX6880 and Kevlar11005
+  unchanged. The photograph explicitly reads Corsa CX Squadre Prof, supporting
+ 6881 availability through1990 only; retain its220g measured figure.
+- Special Pro6900 remains one named family encompassing the separately stocked
+  standard230g and26in210g tyres, both23mm here. Retain the earlier1983/85/88
+  weight/configuration evidence.
+- Flash M21mm/215g remains separate from Flash M23 row6886 (326g, NULL years)
+  and unlinked1993 Bianchi Flash M19 specs1487/1504/1521. Keep6886 and its Virata
+  link1538 unchanged; no M19/M23 alias or link.
+- The photograph and steel-mesh text identify Invulnerable84. Preserve the older
+ 285g specification and reported roughly3x puncture-free mileage alongside
+ 1990 280g/22mm. Classic6908 retains322g measured average alongside290g listed.
+- Generic and mismatched values stay unlinked. Existing unrelated Corsa-CG,
+  Modiale and Pista-CS generator/live discrepancies are outside this change.
+
+### Prior values
+
+These are the exact former descriptions and dates for restoration/reference.
+Existing titles, search text, maker/category/group and UUIDs did not change.
+
+| ID | Old dates | Old source_ref | Old description |
+| --- | --- | --- | --- |
+| 6787 | 1999–1999 | 353 | Continental Sprinter 250, Germany, 250 grams |
+| 6788 | 1980–1988 | 391 | Continental Super Sport, Germany, 215.8 grams (Actual) |
+| 6789 | 1980–1988 | 391 | Continental SuperSport Ultra, Germany |
+| 11140 | 1972–1985 | 400 | Tubular, approx 210 g; also sold as the Continental 175 track tubular (200/220 g) |
+| 6891 | 1976–1988 | 262 | Cotton vulcanized training tubular, ribbed tread, butyl tube, 290 g listed (velobase: 390 g); the lightest inexpensive training tubular of the range. Mondiale G / R (knurled or ribbed) in 1988. |
+| 6900 | 1983–1988 | 262 | Cotton racing / training tubular, latex tube, file tread, 21.5mm; 230 g as the New Special Pro in 1983, 220 g in 1985, 250 g in 1988 (twisted cotton, ultralight tube, knurled tread). |
+| 6881 | 1980–1980 | 1 | Vittoria Corsa CX Squadre Prof, Italy, 220 grams (Actual),weighed on kitchen scales so could be some variation |
+| 9428 | 1983–1996 | 262 | Light cotton tubular for maximum wear and grip, mixed tread, 240 g. 1988: double-twisted cotton casing, ultralight tube, knurled tread, 250 g. |
+| 6908 | 1980–1990 | 1 | Wolber Classic 290, France, 322 grams (avg) |
+| 6918 | 1980–1988 | 391 | Wolber Invulnerable 84, France, 285 grams (Spec). Steel-belted tubular, the first tyre with a fine stainless steel mesh under the tread; about three times the puncture-free mileage of ordinary tubulars; mixed tread. |
+
+### Applied validation
+
+The16-statement transaction inserted one source and two components, updated
+exactly ten existing components and linked bike_spec18354. Source471 is
+catalogue/US with the approved label/citation. All selected fields on the ten
+existing rows and both new rows match the reviewed proposal exactly; descriptions
+are at most219 characters. The Oscar link retains source325 and all prior fields
+apart from component_id and the automatic updated_at timestamp.
+
+Before/after generator comparison across108 loaded CSVs /23,380 specs found
+exactly one gain:1989 Bianchi Mondiale “Vittoria Oscar X”, NULL ->11791.
+All other generated mappings are unchanged, and a complete live bike-spec
+comparison found only18354 changed. The pre-existing15 generator/live
+discrepancies are unchanged; no CSV, matcher or override change was needed.
+
+Post-load exact-title and near-duplicate checks found no candidate involving
+11791/11792. Existing held-apart rows6880/6886/10415/10562/11005 and M19/M23 bike
+specs1487/1504/1521/1538 match the pre-application snapshot exactly. Counts rose
+by precisely one source and two components. The second complete SQL run
+affected **zero rows** in every table.
+
+Read-only baseline covered195 tyre rows for the three makers, including
+unexpected-category/title checks. The19-row printed inventory, identity
+decisions, old/new values and UUIDs above preserve the lasting evidence.
+Temporary SQL, proposal/snapshots, duplicate reports, simulation and verification
+helpers in `/tmp/branford-tyres-reconciliation-20261119/` were removed after
+successful readback and zero-change rerun. The Bianchi table comparison download
+was also discarded; its original URL remains above. The acquired Branford
+source PDF remains at
+`/tmp/branford-acquisition-20261119/branford-1990-spring-summer.pdf`.
+
 ## Cologne press report reconciliation — applied 2026-11-19
 
 Reconciled all three recovered magazine pages58–60 from

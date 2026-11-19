@@ -4,6 +4,130 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ## Log
 
+### Branford and Colorado Cyclist online scans recovered — 2026-11-19
+
+The Branford tyre tables have subsequently been fully read and
+[reconciled, applied and validated](known-catalogs/cross-catalog-notes.md#branford-tyre-tables-reconciliation--applied-2026-11-19):
+source471, Oscar X11791 and Flash M21mm11792, ten existing-row updates and
+the1989 Bianchi Mondiale Oscar X link18354. All other bike mappings are unchanged.
+This supersedes the p.23 OCR-only qualification below for those tyre pages;
+other component pages remain acquisition/triage evidence only.
+
+The original acquisition stage involved no DB queries/writes, source registration,
+component diff, SQL, bike CSV or generator changes. **Recovered source:
+Branford Bike Spring/Summer 1990.** This is a freely downloadable period
+retailer catalogue with specifications, not a contact-only holding.
+
+**Branford:** former owner Tim Brockett's [paper-catalogue archive](https://timslife.com/brancat/PDF_Catalogs.php)
+provides a new concrete lead. The live HTML lists four PDF links, despite prose
+referring to five complete catalogues and a printer's proof; do not invent
+unlinked editions from that introductory text.
+
+| Edition / direct file | Acquisition status |
+| --- | --- |
+| [1987 photocopied pages](https://timslife.com/brancat/Catalogs/bb1987.pdf) | Link verified in live archive HTML; PDF not downloaded/read; completeness not established. |
+| [1990 Spring/Summer](https://timslife.com/brancat/Catalogs/bb1990-01.pdf) | Downloaded, 78,878,255 bytes, 36 PDF pages: 32-page catalogue plus four service/chart/order pages. Cover explicitly prints 1990 Spring/Summer. |
+| [1994/1995, volume 18 no.2](https://timslife.com/brancat/Catalogs/bb18-2_1994.pdf) | Link and 48-page attribution from live archive HTML only; PDF not downloaded/read. |
+| [1995/1996, volume 19 no.2](https://timslife.com/brancat/Catalogs/bb19-2_1995.pdf) | Link and 48-page attribution from live archive HTML only; PDF not downloaded/read. |
+
+1990 PDF retained at
+`/tmp/branford-acquisition-20261119/branford-1990-spring-summer.pdf`
+for pending inventory/reconciliation. `pdfinfo` reports 36 unencrypted pages;
+`pdftotext` yields a substantial OCR layer. Poppler warns “Invalid number of
+shared object groups” but text extraction and sampled page rendering succeed.
+The cover and printed/PDF pp.19 and22 were visually checked. OCR/index triage
+identified these targets; it is **not** a complete visual inventory:
+
+- p.12: American Classic hubs/skewers/200mm and300mm posts; Profile Aero Pro SP
+  post; Aerosport carbon bars/post. Dimensions/weights in OCR need visual checks.
+- pp.15–18: Campagnolo Record C, Croce/Chorus, Chorus Graphite/Athena and Shimano
+  Dura-Ace/600 Ultegra, per the catalogue index; not visually reconciled.
+- p.19 (visually verified): Profile Aero I, Aero II clip-on, Aero III, Dave Scott
+  Pro and Swift Shift; Cinelli64/65/66/67/LA84 bars and1-A/2-A/XA stems, with
+  widths, weights and dimensions. LA84's retailer SKU is CI-62: do not treat a
+  shop stock code as an independently established maker model number.
+- p.20 saddles/pedals; p.21 freewheels/chains; pp.24–25 rims/handbuilt wheels,
+  per index/OCR. p.24 names Sun Metal Mistral, ASSOS and Campagnolo rims.
+- pp.22–23 tyre tables have been read and reconciled as recorded above. p.22
+  confirms Continental, Vittoria and Wolber model/weight/width/pressure rows:
+  Vittoria Mondiale290g, Olympic310g, Special Pro230g, Special Pro26in210g,
+  Corsa CX/CG240g, Oscar X195g and Flash M215g. CX/CG shares a table row;
+  do not infer the two tyres are aliases. p.23 was visually verified and gives
+  casing construction, prices and the CX-front/CG-rear recommendation. Retailer specs attest
+  sale/configuration in1990, not manufacturing boundaries or maker confirmation.
+- pp.1–11 and26–36 were only text/index-triaged, apart from the cover; clothing,
+  frames, accessories, service and charts are outside this first component pass.
+
+**Colorado Cyclist:** the [public thread1316218](https://www.bikeforums.net/classic-vintage/1316218-colorado-cyclist-catalog-1988-a.html)
+posted by shdwfx on2November2025 supplies eight readable sheets. All eight
+original PNGs were downloaded and visually inspected. The poster calls it1988;
+sheet5 prints prices/offer through20January1989 and sheet8 calls a bike a best
+buy of1988. There is no separately verified dated edition imprint: retain
+**attributed1988**, with the printed January1989 offer deadline, pending exact
+dating. Do not use “new” captions to set introduction years.
+
+Retained originals `/tmp/colorado-cyclist-acquisition-20261119/pages/01.png`
+through `08.png` and bound deliverable
+`/tmp/colorado-cyclist-acquisition-20261119/colorado-cyclist-attributed-1988.pdf`
+(eight pages in posted order). No printed page numbers were identified:
+references below are **bound PDF sheet numbers**, not invented catalogue pages.
+
+| Sheet | Readable contents |
+| --- | --- |
+| 1 | Cover/bike photographs. |
+| 2–3 | Bike fitting, Cinelli64/66 discussion and custom-build substitution policy. |
+| 4–5 | Masi, Tommasini, Gios and Vitus frames; geometry/custom-build group tables; offer deadline20January1989. |
+| 6 | Tyres, freewheels, chains, bars/stems, levers, seatposts, brakes, saddles; individual/group price table. TTT Model84/Record and computer-ready stem, ModoloEquipe bar, American Classic200/300mm posts, Dia-CompeAGC-251 lever. Codes/configurations need comparison before row changes. |
+| 7 | Wheel matrix: ArayaCTL370/CT19, Campagnolo Lambda/Omega/VictoryStrada, MavicMA40/Open4CD/GL330/Mach2CD, MatrixISOAero, WolberTXAero; Mavic556RD/PhilWood and other hub columns. |
+| 8 | Nishiki Altron/Linear clearance bikes, ShimanoPD-7401 and LookPP-76; computers. |
+
+Original PNG URLs, in bound order:
+
+1. https://cimg4.ibsrv.net/gimg/bikeforums.net-vbulletin/1082x1412/screenshot_2025_11_02_at_12_36_44_pm_5bce9c09412991509d01c2d171dc80abcabe9337.png
+2. https://cimg5.ibsrv.net/gimg/bikeforums.net-vbulletin/1084x1408/screenshot_2025_11_02_at_12_36_56_pm_22d62f76ff55287683ea9c16d6a729d8dcf1030a.png
+3. https://cimg6.ibsrv.net/gimg/bikeforums.net-vbulletin/1088x1414/screenshot_2025_11_02_at_12_37_05_pm_bcb2363ae94935aca6664fde1a68aa840d899b65.png
+4. https://cimg8.ibsrv.net/gimg/bikeforums.net-vbulletin/1078x1398/screenshot_2025_11_02_at_12_37_16_pm_144d8189f14f2ff92e1562b2d58b8bf79728c018.png
+5. https://cimg9.ibsrv.net/gimg/bikeforums.net-vbulletin/1088x1406/screenshot_2025_11_02_at_12_37_30_pm_4984d4e056d5e1222903fa3de43a880ca309113c.png
+6. https://cimg0.ibsrv.net/gimg/bikeforums.net-vbulletin/1084x1408/screenshot_2025_11_02_at_12_37_40_pm_ba4c247466da20debb0db477430f8f134c108017.png
+7. https://cimg2.ibsrv.net/gimg/bikeforums.net-vbulletin/1084x1408/screenshot_2025_11_02_at_12_37_48_pm_7cd2990cf32793dba0792b0a0c1798fefad794fe.png
+8. https://cimg3.ibsrv.net/gimg/bikeforums.net-vbulletin/1086x1406/screenshot_2025_11_02_at_12_37_58_pm_d19a9fcd61666d7d141ee6c37ccee70e0970d601.png
+
+This supersedes the earlier “no Colorado Cyclist scans found” status for this
+specific recovered item. It does not establish a complete multi-edition archive.
+Fresh QBP/J&B searches found no downloadable period catalogue; patent citations
+and sales listings are not recovered scans. The remaining hunt needs a new scan
+lead, not another broad rerun. No outreach, purchase or login was needed.
+
+### Peugeot/Helium tariffs — all pages reviewed 2026-11-19
+
+This supersedes the earlier HTML-only/unopened status. All eight public original
+JPEGs were downloaded and visually read, then bound into two four-page PDFs.
+These are French-market **complete-bicycle tariffs**, with a small amount of
+bike equipment detail, not manufacturer component/spares catalogues.
+
+| Printed identity | Forum | Original JPEGs, pages1–4 |
+| --- | --- | --- |
+| Cycles Peugeot Tarif Bicyclettes no.332, **7November1979** | https://www.velovintageagogo.com/t29374- | https://i.servimg.com/u/f21/19/39/72/05/img_2284.jpg through img_2287.jpg |
+| Cycles Peugeot Tarif Bicyclettes no.334, **2June1980** | https://www.velovintageagogo.com/t29375- | https://i.servimg.com/u/f21/19/39/72/05/img_2288.jpg through img_2291.jpg |
+
+Both list Peugeot and Helium complete models, colours, frame sizes, speed counts,
+wheel sizes and French-franc prices. Road listings include Reynolds/Vitus frame
+descriptions and some named tyres (Michelin Elan, and Wolber Sport in1979).
+Blumel guards and generic quick-release/drum-brake details also occur.
+**No Maillard, Solida/Nervar or Lightrace component model/part-number evidence
+was found.** Bike model codes and generic speed counts do not identify those
+components. No component reconciliation or additional bike-ingestion task is
+justified by the spares hunt alone.
+
+Retain acquired bike-reference deliverables in
+`/tmp/peugeot-tariff-acquisition-20261119/`:
+originals `1979/01.jpg`–`04.jpg` and `1980/01.jpg`–`04.jpg`;
+`peugeot-helium-tariff-1979-11-07.pdf` and
+`peugeot-helium-tariff-1980-06-02.pdf`. Both PDFs validate as four pages.
+HTML and disposable renders/OCR were removed after recording evidence.
+The outstanding spares hunt requires a newly posted spares list, not rereading
+these tariffs or another contact-only proposal.
+
 ### Free online source recovered: Cologne component report — 2026-11-19
 
 Subsequently [reconciled, applied and validated](known-catalogs/cross-catalog-notes.md#cologne-press-report-reconciliation--applied-2026-11-19): source470, two description enrichments and Bouchet Manolo11790/maker724; existing dates and all bike mappings unchanged. Acquisition-only status below records the earlier recovery stage.
@@ -43,14 +167,16 @@ Retained bound deliverable:
 `/tmp/online-source-triage-20261119/cologne-1984-component-report.pdf` (three
 pages, ordered58/59/60). All three originals were opened and read; the bound
 PDF was validated with pdfinfo. HTML downloads were discarded after recording
-URLs and attribution here. Retain scans/PDF for the pending reconciliation.
+URLs and attribution here. The reconciliation is now applied (see above);
+retain the acquired scans/PDF as source deliverables.
 
 Also resolved the current canonical URLs and original image links for1979/1980
 Peugeot/Helium tariffs:
 `https://www.velovintageagogo.com/t29374-` and `/t29375-`; four originals each
 at `https://i.servimg.com/u/f21/19/39/72/05/img_2284.jpg` through`img_2291.jpg`.
-Only forumHTML/image inventory was checked, **not all eight scanned pages**;
-these remain tariff/colour-list leads, not established component specifications.
+The initial HTML-only review is superseded by the
+[complete eight-page tariff review](#peugeothelium-tariffs--all-pages-reviewed-2026-11-19)
+above: dated bike tariffs recovered, without the wanted component part numbers.
 Fresh Nashbar/Freewheel public-PDF searches produced no additional downloadable
 component catalogue; do not substitute the referenced1991/92 clothing patent
 citations or Nashbar house-bike history for a recovered component source.
@@ -377,7 +503,7 @@ Task-owned downloads/renders removed after recording their source URLs.
 - **Velo Vintage à Gogo probe, 2026-11-12** (web, no DB writes). velovintageagogo.com (Forumactif) is scriptable with plain curl; topic titles crawled for "Vieux papelards" (f28, 387 topics) and "Matos vintage" (f22, 681). Images are on i.servimg.com (send a velovintageagogo referer).
   - **Ingested 2026-11-12 (data_source 381, see [Motobécane notes](known-catalogs/motobecane.md)): Motobécane dealer spares catalogue, "séries courses", May 1985** (t26128 "extrait catalogue officiel MOTOBECANE Agent séries courses mai 1985", poster MAFAC 2000; 40 scans `https://i.servimg.com/u/f70/20/23/69/69/<id>.jpg`, ids 20231584-20231631 with gaps; a few look duplicated; pp. 28-29 also posted alone in t26131 / t26132). Contents page lists Pédalier acier p.10, **Pédalier NERVAR 2010-2011 p.11, NERVAR 2020-3020 p.14** (exploded views, "ensemble 3020 Lg 170 BSC 42x52", dural chainring tables 46-52T, 170 mm 9/16" and 14 x 1.25 cranks); stems **Atax ASC 75 / 90 / 105, PSC 90** and **CTA 90 / 110** dural Ø25 (with bike-model fitment grid); Maillard 700 PF hubs, Atom Sport hub, Hélicomatic Sport 36T hub; **Maillard 700 Helicomatic (SHA-SHF sprockets) and 700 Compact (MS/MT/MB/MR/MA sprockets, French 34.7 x 1 or BSC body) 6/7-speed freewheels**; Rigida 13/20 rim, Arc-en-ciel tubular rim; Huret Rider / Rival, Simplex SX 610/SP; LAM / Weinmann levers, Weinmann 405 brakes; "Aéro" / "RS Aéro" saddles; Hutchinson / Michelin Elan / Wolber Strada tyres; Sedisport chain; pedals p.16. Dated 1985 evidence for the Nervar 2020 / 3020 gap (~12 Peugeot specs), Atax stems, Maillard 700 Compact (2112 / 2124 end 1982) and Helicomatic. **Remaining:** the non-illustrated 1983-87 editions MAFAC 2000 says he has (not posted); Thun Beta II crankset and Bardon / Thun headsets not added (no brand rows, no specs). The same poster says he has the non-illustrated 1983-87 editions; also t6476 Motobécane spares "Vélos-Cross" 1982 (13 servimg images, f37/16/33/76/87/motobe*.jpg).
   - **Shop price lists (corroboration only)**, t12990 from Miroir du Cyclisme: La Roue d'Or 1982 (MdC no. 326: Ofmega Compétition crankset, Gipiemme Cronos Aéro, Ofmega Sintési pedals, CLB Professionnel, Galli Critérium) and Barelli, Croix, April 1984 (**Spidel CXC D pedals 275 F**, a dated 1984 attestation for the CXC range; Stronglight 106 / 107, Modolo Speedy / Equip noirs, Huret Jubilee / Duopar / Success, Wolber / Barum / Hutchinson tubulars).
-  - Checked, nothing usable: t29770 (just a link to velo-pages), t1065 (Tange tubing chart copied from equusbicycle), t10111 (Nervar triple discussion, photos only), t21465 (Lyotard dating chat). Not opened: t12991 Cologne 1984 show report (images missing), t29374 / t29375 Peugeot 1979 / 1980 tariffs (colour codes and prices), t26131 / 26132 (subset of t26128). No Maillard CXC / Sachs-Maillard or Solida catalogue found.
+  - Checked, nothing usable: t29770 (just a link to velo-pages), t1065 (Tange tubing chart copied from equusbicycle), t10111 (Nervar triple discussion, photos only), t21465 (Lyotard dating chat). The former unopened/missing-image status for t12991 and t29374/t29375 is superseded by the Cologne recovery/application and full tariff review above. t26131 / 26132 are a subset of t26128. No Maillard CXC / Sachs-Maillard or Solida catalogue found.
   - **t946 "catalogue PEUGEOT 1984" checked 2026-11-13**: 21 servimg scans (800 px, `https://i.servimg.com/u/f81/17/89/24/41/<name>.jpg`: catalo10, pub_ca10, py10fc10, page_310 ... page_211, dernie10; posted May 2013 by caskaboulon). It is the same French "A la rencontre de la liberté" 1984 catalogue as held data_source 257 (cover identical; p. 23 racing recap table matches row for row), at lower resolution than the labibleduvelo copy. Nothing new; do not re-check. (Tonton Vélo has no topic 946; the "t946" lead was always Velo Vintage à Gogo.)
 
 - **velo-pages.com** (Gallery2 photo site) was 500ing site-wide on 2026-10-17, so only the Wayback copy is usable; method: CDX-search the domain for archived images over ~15 KB, cluster by `g2_itemId`, resolve the title from the nearest archived HTML page. Fiamme 1985 is processed (source 383; see fiamme.md). **The 2026-11-17 recovery above supersedes the former unread manufacturer-cluster list:** it records recovered SunTour, Detto Pietro, Shimano EX, Stronglight, Simplex, Barelli and OMAS material, the fully read EX sheets and the Sedis thumbnail limit. Falcon Merckx brochure 1973 (album 27333) is loaded as source 445, nine bikes; see the bike Falcon notes for evidence and validation. The 1974 sales-literature album 27335 is an ordinary Model 76 press sheet already covered by the Falcon load. Bottecchia album 27995 recovered and loaded as source 446: printed US edition III, September 1972 (archive attribution 1973); see the bike Bottecchia notes. Original Plastic Bike 1973 (~27603-27639) remains unread; user declined an active task. Magazine features and restoration or for-sale photo sets are corroboration only, not manufacturer catalogue evidence. Modolo 1979 and 1983 brochures and the 1977 Lyotard album remain thumbnail-only in the earlier checks.

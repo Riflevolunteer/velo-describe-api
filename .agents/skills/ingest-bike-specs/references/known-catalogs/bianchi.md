@@ -677,6 +677,14 @@ test files pass. Task-created SQL, scan downloads and comparisons removed.
 
 ## 1989 Bianchi — `1989_bianchi_spec.csv` (19 bikes, 398 specs, 167 linked)
 
+- **Branford tyre follow-through, applied 2026-11-19:** Mondiale tyre spec **18354**
+  `Vittoria Oscar X`, formerly NULL, now links to **11791**. The original
+  `img-2486-2.jpg` specification table was visually rechecked; Branford1990
+  pp.22–23 supplies the tyre construction/size details. New Oscar X dates
+  1989–1990, source471; existing bike/spec source325 is preserved. Automatic
+  exact-name matching needs no override. All other mappings are unchanged.
+  [Applied component evidence and validation](../../../ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#branford-tyre-tables-reconciliation--applied-2026-11-19).
+
 - Source (2026-10-31): https://www.gringineer.com/blogs/default-blog/1989-bianchi-catalog, 19 photographed pages (no page text; the cdn.shopify.com `img-2470-1` ... `img-2487-2` files plus the lead `img-1540-1`). US edition: footer "Bianchi bicycles, for the U.S. market, are produced at F.I.V. Edoardo Bianchi, Treviglio", edge code "MB89 Bianchi (R) USA, Inc.", Minnesota dealer stamp, lbs. `data_source` 325, country US. No prices.
 - Layout: one page per top model (full spec strip), two-up pages with short strips, geometry on p16, full spec tables on p17-p18 (used as the master; they agree with the per-model strips). Krono (time trial) has its own page but is missing from the tables, so its row comes from p04. Sections are not printed; category = Road / Mountain / Cross-Terrain plus Professional / Competition / Performance by position.
 - Scope: Equinox, Tangent, Axis, Volpe ("Cross-Terrain", 700x35C) loaded (user, 2026-10-31): in 1989 they are drop-bar (Dirtdrop / DR-9 bars, aero levers, barcons), unlike the flat-bar 1990 versions that were held out. **Skipped:** Broadway (26 x 1.62", 5-speed, 19" mixte option; user agreed to skip as a city/ATB commuter) and Advantage (flat-bar 700x35C hybrid). Neither was put in the CSV.

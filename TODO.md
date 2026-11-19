@@ -44,15 +44,16 @@ Reopen these when the specified material becomes available; existing ambiguity a
 - **Raleigh cranks:** identify Crested Butte 3564 and the unnamed Biopace 48/38/28 sets, including 18009/18045 and 1989 Royal, from original photos/parts codes. [Raleigh notes](.agents/skills/ingest-bike-specs/references/known-catalogs/raleigh.md).
 - **Other bike fitment:** obtain codes for Seven 20424/20445, Record 20196, Alivio 20177 and Nyala 7018; identify Kalkhoff’s bare Shimano 600 and Colnago AL11 SIS; identify Gipiemme Sprint and fronts 2457/2377/2442. [Prior decisions](.agents/skills/ingest-bike-specs/references/link-decisions.md).
 - **Clusters:** verify the original mechanism/model for Bianchi 18494/18682/1740; obtain dated evidence for Uniglide 1196/1200, XLR8 1194, Kheops 1212 and Stronglight Titanium 1213.
-- **Tyres:** obtain period model/construction evidence for the remaining dated-fitment conflicts and Smoke/Dart Comp variants. [Panaracer](.agents/skills/ingest-component-catalog/references/known-catalogs/panaracer.md); [prior decisions](.agents/skills/ingest-bike-specs/references/link-decisions.md#tyres).
+- **Tyres:** obtain period model/construction evidence for the remaining dated-fitment conflicts and Smoke/Dart Comp variants; obtain a maker crosswalk for Continental Comp 240/Comp GP versus 10415 and Vittoria Olympic versus 10562. [Branford identity limits](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#branford-tyre-tables-reconciliation--applied-2026-11-19); [Panaracer](.agents/skills/ingest-component-catalog/references/known-catalogs/panaracer.md); [prior decisions](.agents/skills/ingest-bike-specs/references/link-decisions.md#tyres).
 
 ## Source acquisition
 
 Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md) before searching. Reopen exhausted hunts only for a new source/holder lead. Prioritise free, directly retrievable scans; UK archive/contact-only holdings are not actionable for the user.
 
 - Recover specification pages for the English Bianchi road catalogue indexed 1985; Bikalog holds only a five-page introductory/photo fragment. [Edition review](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#bikalog-19851986-backlog-check--2026-11-17).
-- Seek 1979–89 Peugeot/Motobécane spares lists for Maillard, Solida/Nervar and Lightrace; inspect the remaining Peugeot/Helium 1979/1980 tariff pages from the [recovered links](.agents/skills/ingest-component-catalog/references/source-hunts.md#free-online-source-recovered-cologne-component-report--2026-11-19).
-- Check the remaining Nashbar editions/QBP/J&B/Colorado Cyclist leads for 1985–92 distributor evidence. [Hunt record](.agents/skills/ingest-component-catalog/references/source-hunts.md#log).
+- Seek a newly posted 1979–89 Peugeot/Motobécane spares list for Maillard, Solida/Nervar and Lightrace. [Reviewed tariff limits and prior leads](.agents/skills/ingest-component-catalog/references/source-hunts.md#peugeothelium-tariffs--all-pages-reviewed-2026-11-19).
+- Inventory and reconcile the remaining Branford Bike Spring/Summer 1990 components pp.12–21/24–25; compare the Colorado Cyclist component sheets separately. [Recovered PDFs, page targets and provenance](.agents/skills/ingest-component-catalog/references/source-hunts.md#branford-and-colorado-cyclist-online-scans-recovered--2026-11-19).
+- Check Branford's 1987 photocopies and 1994/95–1995/96 direct PDF leads; seek other Nashbar/QBP/J&B/Colorado Cyclist editions only when a new scan lead appears. [Acquisition record](.agents/skills/ingest-component-catalog/references/source-hunts.md#branford-and-colorado-cyclist-online-scans-recovered--2026-11-19).
 
 <a id="sr-sakae-next-work"></a>
 <a id="yaesu-next-work"></a>
@@ -61,7 +62,7 @@ Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agen
 - Seek maker/importer evidence for Tange, VP/HTI pedals, H.L./Kalloy/Kusuki/ITM bars/stems and the remaining named Japanese/Taiwanese gaps.
 - Obtain a straight-on [Dia-Compe MTB brochure Short Stop panel](.agents/skills/ingest-component-catalog/references/known-catalogs/dia-compe.md#mtb-brochure--ebay-800322888787-photo-inventory-reviewed-2026-11-17) to confirm the obscured lever codes; seek 984D identification. Recover March 1989 pp.4–8/11–14 and the full right edge of p.3 from a new scan. Seek dated Tioga Surefoot-6 evidence and missing 1992 tyre pp.20–25.
 - Recover a readable Gipiemme 1980/1982 brochure or coded 1980–83 importer list from a new scan/holder lead; use the [checked sources and recovery targets](.agents/skills/ingest-component-catalog/references/known-catalogs/gipiemme.md#198083-source-hunt--2026-11-19-read-only).
-- Seek Vittoria 1982–93 and Bianchi 1974–77/1979–80/1991–99 sources.
+- Seek Vittoria 1982–93 maker catalogues and Bianchi 1974–77/1979–80/1991–99 sources.
 - Obtain a new maker/importer sheet or coded original fitment for Modolo Quattro/Start, Altenburger S3/53S3, Lee Chi cantilevers, Chang Star 500/cantilever and Polygon AF-500; obtain variant/aero evidence for the remaining CLB Peugeot fitments and a period silver-Sedicolor key for Sedis 9719. Use the [reviewed sources and exact evidence limits](.agents/skills/ingest-component-catalog/references/source-hunts.md#named-brake-and-sedis-follow-up--2026-11-19-read-only) before reopening the hunt.
 - Revisit Brügelmann’s Cobra saddles, Mavic Titan and Hutchinson Krono identities using held evidence; seek missing 1986–87/1989–92 editions through a new holder.
 - Seek a new dated manufacturer lead for Shimano BB-UN73; use [checked sources](.agents/skills/ingest-component-catalog/references/known-catalogs/shimano.md).
