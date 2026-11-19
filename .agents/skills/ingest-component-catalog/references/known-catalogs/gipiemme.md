@@ -46,10 +46,10 @@
     `COMPONENT_OVERRIDES`): no page of this binder shows them.
   - The Crono Special, Crono Sprint, Azzurra / Azzurro and White Laser lines are
     all newer than this binder.
-- Unresolved: a date for the binder; the missing derailleur, brake, lever and shifter
-  pages (the other Gipiemme sources named in the VeloBase index, "1982
-  Catalog", "1980's era brochures" and "Catalogs & Ads 1978-1984", were not
-  looked at).
+- Unresolved: a date for the binder and its missing derailleur, brake, lever and
+  shifter coverage. The other VeloBase-indexed sources were subsequently checked
+  below: the Equus brochures are processed, the "1982 Catalog" is misdated, and
+  the remaining early velo-pages brochures have no readable recovered scans.
 
 ## Gipiemme freewheel and "Cronospecial" pedal brochures (4 scans, c. 1982-83, equusbicycle.com)
 
@@ -77,15 +77,12 @@
 - Left alone: 2107 "Crono Sprint (gold)" and 2108 "(silver)" freewheels, which
   are finishes in velobase and cannot be tied to a steel code; 3749 Cronosprint
   pedals (not in the leaflet).
-- Still unresolved, and why: the derailleurs, brakes and levers (about 30 bare
-  Gipiemme rows) have no source. The other two Gipiemme entries in VeloBase's
-  index are velo-pages albums: "Gipiemme 1982 Catalog" (album
-  `g2_itemId=1483`, page items 1505-1546, the 2020 Wayback copy only has
-  thumbnails of about 5 KB) and "Catalogs & Ads 1978-1984" (`g2_itemId=65`).
-  velo-pages.com is down site-wide, and on 2026-10-18 the Wayback Machine itself
-  answered "Temporarily Offline", so full-size scans could not be checked. Retry
-  the CDX search for images over about 15 KB in items 1505-1546 when Wayback is
-  back.
+- This leaflet supplies no derailleur, brake or lever coverage. The initial
+  2026-10-18 Wayback outage was superseded by the 2026-10-28 checks below:
+  velo-pages album 1483 is the misdated c. 1986–87 catalogue, subsequently
+  processed as source 270, and album 65's early brochures remain unreadable.
+  The later source reviews below replace the original broad "no source" gap
+  claim; do not repeat its old CDX retry merely because Wayback is available.
 
 ## Gipiemme "Gruppi completi e componenti" catalogue (9 scans, October 1984, disraeligears.co.uk)
 
@@ -534,3 +531,46 @@
   The c. 1986-87 catalogue (270) shows no Special derailleur; its absence there was
   not treated as an end date. VeloBase page: inline parallelogram, inner plate
   "Gipiemme - Licence Simplex", 219 g.
+
+## 1980–83 source hunt — 2026-11-19 (read-only)
+
+No additional readable, genuinely 1980–83 manufacturer catalogue recovered.
+The maker's mislabelled "1982" PDF remains the c. 1986–87 catalogue (270);
+the SRC 1983 pages (361) and Equus brochures (203) are already covered above.
+New dated magazine material and a closer look at an existing retailer source:
+
+| Source / page | Evidence checked on the scan | Reconciliation |
+| --- | --- | --- |
+| [Bicycle Motocross Action, February 1980](https://oldschoolmags.com/mags/BMXA_8002.pdf), printed p.18, PDF p.10 (two-page spread) | Product feature pictures a Gipiemme double crankset and names forged-aluminium Track (1/2 × 1/8 in) and Special (1/2 × 3/32 in) versions. Track: 170 mm, 42–45T; Special: 167.5 / 170 / 172.5 / 175 / 177.5 mm, 39–60T. US contact is Team Chicago. Cover and page footer confirm February 1980. | Period confirmation of the families; no maker codes printed. Special 600100 (1595) already spans 1978–83 with coded binder/SRC evidence. Do not add the feature's whole size range to that code without a crosswalk. |
+| [Bicycle Motocross Action, August 1980](https://oldschoolmags.com/mags/BMXA_8008.pdf), printed p.23, PDF p.12 | Team Chicago advert pictures a BMX pedal with removable cages and describes sealed bearings; cover and page footer confirm August 1980. No model name or part number. | BMX advert, not evidence for the road Sprint 300SA (3753) or Cronospecial monoblock codes. No component insertion or date change proposed. |
+| [Bikecology, Summer 1981](https://ebykr.com/library/bikecology-1981-catalog/), p.33, existing source 227; [page image](https://ebykr.com/wp-content/uploads/2026/11/ebykr-1981-bikecology-catalog-p33.webp) | Sprint small-flange QR hub pairs, 36 holes, English/Italian threading, measured pair weight 515 g; front with 120 mm five-speed rear (retailer 30-225-7) or 125 mm six-speed rear (30-227-3). Flange spoke-hole circles stated as 41 / 46 mm. | Attests the Sprint hub name in 1981, but gives no Gipiemme code. Retailer stock numbers are not maker codes. Do not move 3353 Sprint 400SA's 1982 start to 1981 solely from the shared name, or assume a renumber of 3350 Dual Sprint 700160. Ebykr republishes the held catalogue, not a new edition/source. |
+
+Other leads checked:
+
+- The [Bike Forums Modolo/Gipiemme grades thread](https://www.bikeforums.net/classic-vintage/1306091-modolo-gipiemme-grades.html)
+  points back to the already exhausted velo-pages Gipiemme folder (album 65),
+  not another surviving catalogue. Direct access failed; its indexed link text
+  identifies that same album.
+- The [Rennrad-News Gipiemme thread](https://www.rennrad-news.de/forum/threads/gipiemme-gpm-gipiemme-gpm-gipiemme-eine-italienische-sch%C3%B6nheit.137974/)
+  indexes attachments named `Page 00-A.jpg` / `Page 01.jpg` etc. under a user's
+  "1982: CRONO" heading, and page 13 calls a specimen 700AA "1982". Direct page
+  access returns 403; neither the attachment contents nor that dating were
+  verified. These are leads only, not independent period attestations.
+- Ebykr's [Battaglin catalogue labelled about 1981](https://ebykr.com/library/battaglin-catalog-about-1981/)
+  repeats the Marostica Sprint 610 rear and Vuelta Cronospecial headset values
+  in the held 1982 Battaglin material. The website's approximate date supplies
+  no manufacturer code key or independent reason to change the held dating.
+
+Live readback confirmed 1595 Special 600100 (1978–83), 3353 Sprint 400SA
+(1982–88), 3753 Sprint 300SA (1982–87) and the existing Sprint seatpost records.
+No DB writes, source registrations, SQL or generator changes. None of the new
+pages distinguishes the bare Sprint seatpost variants or identifies the
+Battaglin Sprint 610 rear derailleur. The existing leave-unlinked decisions
+stand. Downloads and page renders were disposable inspection copies and removed
+after recording the URLs and page locations here.
+
+Reopen the manufacturer hunt with a newly readable scan or holder for the
+velo-pages 1980 brochure (album 1482, pages 1495 / 1499 / 1502) or 1982 brochure
+(69471), or a dated 1980–83 importer price list with maker codes. Do not repeat
+the exhausted archive-thumbnail or mislabelled catalogue searches without new
+evidence.
