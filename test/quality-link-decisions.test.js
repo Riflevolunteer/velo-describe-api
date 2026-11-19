@@ -2,6 +2,21 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('1986 Motobecane New 105 resolves both derailleurs without changing later or unrelated bikes', () => {
+  const records = [
+    { component_id: 2462, title: 'Shimano FD-1050-B / FD-1050-F, 105', category: 'Front Derailleurs' },
+    { component_id: 2466, title: 'Shimano FD-A105, 105 Golden Arrow', category: 'Front Derailleurs' },
+    { component_id: 4449, title: 'Shimano RD-1050, 105', category: 'Rear Derailleurs' },
+    { component_id: 4452, title: 'Shimano RD-A105, 105 Golden Arrow', category: 'Rear Derailleurs' },
+  ]
+  for (const [label, id] of [['Front Derailleur', 2462], ['Rear Derailleur', 4449]]) {
+    assert.equal(matchComponent('Shimano 105 NEW', records, null, label, 1986, 'C153S Jubilé Sport').component_id, id)
+    assert.equal(matchComponent('Shimano 105 NEW', records, null, label, 1986, 'Other'), null)
+    assert.equal(matchComponent('Shimano 105 NEW', records, null, label, 1985, 'C153S Jubilé Sport'), null)
+    assert.equal(matchComponent('Shimano 105 NEW', records, null, label, 1988, 'A 500 Galaxie').component_id, id)
+  }
+})
+
 test('a material-only seatpost does not match an unnamed Titec model', () => {
   const rows = [{ component_id: 1, title: 'Titec Aluminium', category: 'Seat Posts' }]
   assert.equal(matchComponent('Aluminium', rows, null, 'Seatpost', 1984, 'PH 12'), null)

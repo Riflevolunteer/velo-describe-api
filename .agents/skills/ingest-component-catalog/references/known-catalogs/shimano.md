@@ -1013,6 +1013,15 @@
 
 ## Shimano "Bicycle System Components — The Complete Line" — printed 08.1986 (disraeligears.co.uk, 24 scans)
 
+- **Calendar-year date re-review, applied 2026-11-19:** original scans14–17
+  and24 confirm the New105/1050 parts and an explicit ©Aug.1986 imprint.
+  The former 1987-model-year interpretation below is not the earliest
+  calendar-year attestation. Twelve guarded year_from1987→1986 updates were
+  applied with source74, with no year_to/title/description changes; see the
+  [Motobecane correction review](../../../ingest-bike-specs/references/known-catalogs/motobecane.md#1986-german-105-and-triomphe-link-corrections--applied-2026-11-19)
+  for exact IDs, old sources, link scope and validation. Readback verified all
+  twelve rows and an immediate rerun changed zero rows.
+
 - `data_source` 74. Source:
   https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_august_1986.html
   (images `shimano_bicycle_system_components_1986_scan_01..24`). Rear cover

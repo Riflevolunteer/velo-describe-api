@@ -601,9 +601,8 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
-    "shimano 105 new": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: null }], // 105 NEW lacks a component code/generation crosswalk; German 1986 p.13.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
-    "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":null}],
+    "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":2314}], // Standard Triomphe double; LX is the triple set. German 1986 pp.10-11.
     "simplex sja222; braze on (portrait)": [{"bike":"C551","from":1985,"to":1985,"id":2575}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
     "simplex 6600 aérodynamique": [{"bike":"Spécial Pro","from":1985,"to":1985,"id":null}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
     "huret eco system": [{"bike":"Nomade","from":1985,"to":1985,"id":8796},{"bike":"Le Velo","from":1985,"to":1985,"id":8796}], // 1985 Motobecane general catalogue p.6; brand notes.
@@ -739,7 +738,7 @@ const COMPONENT_OVERRIDES = {
     'huret rival pilot finish': 8488, // A 400 Comète: Rival 1086-00, as the 1987 Comète
     'simplex slj a 522': 7283, // PY 10 FC: Simplex SLJ A522
     'simplex sja 302': 2549, // PG 10 T Triathlon: SJ A302 (row dated 1989-95 from a later catalogue; printed here in 1988)
-    'shimano 105 new': [{ from: 1987, to: 1989, id: 2462 }], // A 500 Galaxie: FD-1050, 105
+    'shimano 105 new': [{ bike: 'C153S Jubilé Sport', from: 1986, to: 1986, id: 2462 }, { from: 1987, to: 1989, id: 2462 }], // German 1986 p.13 / Shimano Aug 1986 scan 16: FD-1050; later A 500 Galaxie unchanged.
     'huret duopar': [{ from: 1986, to: 1986, id: 8962 }], // 1986 Falcon Cotswold: Sachs Huret AV 62.1 T, Rider / Duopar (triple), the 1986 Duopar front
     'sun tour superbe': 2645, // 1980 Raleigh: SunTour FD-1500, Superbe (SunTour linking pass 2026-10-30)
     'sun tour alloy vx': 2614, // 1981 Raleigh: SunTour FD-1600, VX
@@ -998,7 +997,6 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
-    "shimano 105 new": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: null }], // 105 NEW lacks a component code/generation crosswalk; German 1986 p.13.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":null}],
     "simplex sr610 sp": [{"bike":"C551","from":1985,"to":1985,"id":null}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
@@ -1158,7 +1156,7 @@ const COMPONENT_OVERRIDES = {
     // 1988 Peugeot (FR): the 1988 range, "Shimano 105 NEW" = the 1050 series, "Shimano New 600" = 6400 600 Ultegra.
     'huret rival 41 1 d white': 8957, // PHE 20 Mont-Blanc: Sachs Huret AR 41.1 D, Rival (part number printed)
     'simplex slj 66': 4655, // PY 10 FC: printed truncated "SLJ 66", the SLJ 6600 as the 1984-85 PY 10 FC
-    'shimano 105 new': [{ from: 1987, to: 1989, id: 4449 }], // A 500 Galaxie: RD-1050, 105
+    'shimano 105 new': [{ bike: 'C153S Jubilé Sport', from: 1986, to: 1986, id: 4449 }, { from: 1987, to: 1989, id: 4449 }], // German 1986 p.13 / Shimano Aug 1986 scan 16: RD-1050; later A 500 Galaxie unchanged.
     'shimano new 600': [{ from: 1988, to: 1991, id: 4466 }], // PX SIS Puymorens: RD-6400, 600 Ultegra
     'shimano new 600 sis': [{ from: 1988, to: 1991, id: 4466 }], // PG SIS: RD-6400, 600 Ultegra
     'huret duopar': [{"bike":"TT21","from":1985,"to":1985,"id":null},{ from: 1986, to: 1986, id: 8959 }], // 1986 Falcon Cotswold: Sachs Huret AR 40.1 T, Duopar (1986)
@@ -1499,6 +1497,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    'campagnolo triumph front and rear': [{ bike: 'C662E Super Record', from: 1986, to: 1986, id: 3277 }], // German 1986 pp.10-11: named Triomphe, pictured low flanges; not 921/000 high flange.
     "front atom; rear helicosport": [{"bike":"D21","from":1985,"to":1985,"id":3387},{"bike":"DM21","from":1985,"to":1985,"id":3387},{"bike":"CT2","from":1985,"to":1985,"id":3387},{"bike":"CTM2","from":1985,"to":1985,"id":3387}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
     "hélicosport": [{"bike":"C441","from":1985,"to":1985,"id":3387},{"bike":"C331","from":1985,"to":1985,"id":3387},{"bike":"C231","from":1985,"to":1985,"id":3387},{"bike":"C221","from":1985,"to":1985,"id":3387}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
     "campagnolo triomphe small flange alloy with quick release stainless steel spokes": [{"bike":"Grand Record","from":1985,"to":1985,"id":3277}], // 1985 Motobecane general catalogue p.6; brand notes.
@@ -1847,7 +1846,6 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
-    "shimano 105 new": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: null }], // 105 NEW lacks a component code/generation crosswalk; German 1986 p.13.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":585}],
     "weinmann super carrera 400": [{"bike":"Spécial Pro","from":1985,"to":1985,"id":1168}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
@@ -2040,7 +2038,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore xt rear deore xt u brake': [{ from: 1987, to: 1989, id: 981 }], // 1989 Peugeot (NL) Europe Express: BR-M730, as the M730 derailleurs
     // 1988 Peugeot (FR): the 1988 range.
     'shimano new 600': [{ from: 1988, to: 1993, id: 966 }], // PX SIS / PG SIS: BR-6400, 600 Ultegra
-    'shimano 105 new': [{ from: 1987, to: 1989, id: 953 }], // A 500 Galaxie: BR-1050-49, as the 1987 Galaxie
+    'shimano 105 new': [{ bike: 'C153S Jubilé Sport', from: 1986, to: 1986, id: null }, { from: 1987, to: 1989, id: 953 }], // C153S: 1050 family known, reach unresolved; later A 500 Galaxie remains BR-1050-49.
     'shimano deore cantilever front rear': [{ from: 1987, to: 1989, id: 978 }], // VTT 4 L Alpine Express: BR-MT60, Deore (as the 1987 Canyon Express)
     'dia compe alloy 981 cantilever': 661, // 1986 Falcon Everest: Dia-Compe 981 (1980-86)
     'shimano br at50 cantilever alloy': 1003, // 1986 Falcon K2: BR-AT50, Exage Trail (1985-93); catalogue misprints "BRATSO"
@@ -2367,7 +2365,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ bike: 'Tangent', from: 1989, to: 1989, id: null }],
   },
   Headsets: {
-    "shimano 105 new": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: null }], // 105 NEW lacks a component code/generation crosswalk; German 1986 p.13.
+    "shimano 105 new": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: 3083 }], // German 1986 p.13 New 105; Shimano Aug 1986 scan 16: HP-1050.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":2969}],
     "stronglight v4": [{"bike":"Grand Record","from":1983,"to":1983,"id":3125},{"bike":"Grand Record","from":1982,"to":1982,"id":3125}], // 1982 Motobecane US, pp.14-15; brand notes.
@@ -2516,7 +2514,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
-    "shimano 105 new double 42 x 52t": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: null }], // 105 NEW lacks a component code/generation crosswalk; German 1986 p.13.
+    "shimano 105 new double 42 x 52t": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: 1778 }], // German 1986 p.13 New 105; Shimano Aug 1986 scan 17: FC-1050, 42/52T option.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":1515}],
     "stronglight 200": [{"bike":"C502 Le Champion","from":1986,"to":1986,"id":11312}],
@@ -4657,7 +4655,7 @@ const COMPONENT_OVERRIDES = {
     'suntour gpx silver': [{ from: 1989, to: 1989, id: 7783 }], // CH-GP00
   },
   Cassettes: {
-    "shimano 105 new cassette 6 speed 14 15 17 19 21 24t": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: null }], // 105 NEW lacks a component code/generation crosswalk; German 1986 p.13.
+    "shimano 105 new cassette 6 speed 14 15 17 19 21 24t": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: null }], // 1050 family known; cassette text does not identify a separate loaded cassette model. German 1986 p.13.
     'shimano new deore xt 6 speed 13 30t': [{ bike: 'Ridge Runner', from: 1987, to: 1987, id: 1201 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new dura ace 7 speed 13 21t': [{ bike: 'Carbon Tech 5000', from: 1987, to: 1987, id: 1204 }, { bike: 'Carbon Tech 3000', from: 1987, to: 1987, id: 1204 }, { bike: 'Team Miyata', from: 1987, to: 1987, id: 1204 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     // 2026-11-06 group-matched cassettes: bike-keyed by the rear-derailleur group.

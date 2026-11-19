@@ -177,6 +177,100 @@ specs / 35 links. All translated cells fit 255 characters; residual German
 prose search is clear. All 13 test files pass. Readback and the zero-change
 rerun completed successfully as recorded above.
 
+## 1986 German 105 and Triomphe link corrections — applied 2026-11-19
+
+User reported the 1986 Shimano 105 date gap and missing Campagnolo TRIUMPH
+links. Read-only live audit confirmed the stored NULLs and the 1985/1987 gap
+between the main Golden Arrow / 1050 records. Dates do not automatically gate
+the generic matcher: the immediate blockers were explicit/scoped overrides,
+including duplicate New 105 keys whose later object entries shadowed earlier
+entries. The corrections below were approved, applied and validated.
+
+**Evidence re-read:** source465's public Velopedia previews (record1352,
+same retrieval recipe above), cover p.1, C662E portrait/detail pp.10–11 and
+C153S p.13. Cover explicitly says Programme86. C153S repeatedly names
+SHIMANO105NEW, double42/52T and six-speed cassette. This is matched to the
+contemporary named New105 family, not inferred from the bare number105 alone.
+Shimano source74's original [August1986 catalogue](https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_august_1986.html),
+scans14–17 and24, were visually checked: scans14–15 explicitly introduce
+New105; scan16 codes RD/FD/SL/HP/PD-1050; scan17 codes FC/BB/BR/FH-1050 and
+BL-1050/1051; scan24 prints ©Aug.1986. Code-to-bike links remain a named-family
+crosswalk, since the bicycle panel does not print the component numbers.
+Original images follow `00_main_images/shimano_bicycle_system_components_1986_scan_NN_main_image.jpg`.
+
+**Applied date corrections:** the twelve existing rows below moved
+year_from **1987→1986**, recording maker-documented calendar-year availability.
+This is not an asserted manufacture start; the former 1987 model-year
+interpretation cannot erase the explicit August1986 attestation.
+All year_to values stay1989 except PD-1050/3953, which stays1988.
+Set source_ref74 alongside the guarded date change. Every other field was retained.
+
+| ID | Component | Previous source_ref |
+| --- | --- | --- |
+| 122 | Shimano BB-1050, 105 | 81 |
+| 406 | Shimano BL-1050, SLR 105 | 74 |
+| 407 | Shimano BL-1051, SLR 105 | 74 |
+| 953 | Shimano BR-1050-49, 105 (short 49 type) | 81 |
+| 954 | Shimano BR-1050-57, 105 (long 57 type) | 81 |
+| 1778 | Shimano FC-1050, 105 | 81 |
+| 2462 | Shimano FD-1050-B / FD-1050-F, 105 | 74 |
+| 3083 | Shimano HP-1050, 105 | 74 |
+| 3523 | Shimano FH-1050, 105 | 81 |
+| 3953 | Shimano PD-1050, 105 | 74 |
+| 4449 | Shimano RD-1050, 105 | 74 |
+| 6130 | Shimano SL-1050 (BCAI / BCBI / FCAI / FCBI / FAI), 105 SIS (6sp) | 74 |
+
+**Applied link fills**, all previously NULL, source465:
+
+| Spec | Bike | Label | Linked component |
+| --- | --- | --- | --- |
+| 25207 | C153S Jubilé Sport | Headset | 3083 HP-1050 |
+| 25211 | C153S Jubilé Sport | Crankset | 1778 FC-1050 |
+| 25215 | C153S Jubilé Sport | Front Derailleur | 2462 FD-1050 |
+| 25216 | C153S Jubilé Sport | Rear Derailleur | 4449 RD-1050 |
+| 25180 | C662E Super Record | Front Derailleur | 2314 standard Triomphe |
+| 25177 | C662E Super Record | Hubs | 3277 low-flange Triomphe 922/000 |
+
+TRIUMPH was already correctly mapped for the Campagnolo headset, brakes,
+crank and pedals. The front's former LX hold was too broad: this is a double
+with a six-speed rear, whereas2319 is the LX triple-set front. P.11's front
+detail and p.10's small-flange hub portrait support the standard front and
+922/000 pair; the latter attribution uses visible flange construction,
+not a printed maker code. No global Triumph spelling alias is introduced.
+Scoped bike/year rules preserve the source wording and the reviewed identities.
+
+**Still deliberately NULL:** Triomphe rear25181 cannot choose4155 versus4157
+from the available portrait; 105 brakes25210 cannot choose39–49 versus47–57mm;
+cassette25221 has no established separately loaded model crosswalk. Do not
+link a Cassettes spec to the FH-1050 hub assembly. Those are remaining evidence
+decisions, not automatic new hunt tasks.
+
+**Implementation/validation:** consolidated the front/rear/brake
+New105 keys into their existing range entries; kept later1987–89 choices.
+Full comparison across108 loaded catalogues/23,380specs adds exactly the six
+links above; all15 pre-existing lost findings are identical, with no new lost,
+changed, missing or ambiguous mappings. Existing13 test files pass, including
+a new regression for both 1986 derailleurs, wrong-bike/year exclusions and
+preserved later-year matches. No component identity is added/merged/retitled;
+no CSV, displayed value, bike, label or existing non-NULL link is changed.
+
+**Applied readback:** guarded SQL affected exactly twelve component rows and
+six bike_spec rows. Readback checked every field of the twelve components
+(including image hashes) and all212 source465 specs: only the approved
+year_from/source_ref and six NULL→ID changes occurred. Source465 now has
+12 bikes / 212 specs / **41 links**, up from35. The three explicit holds above
+remainNULL. No component identities or duplicate pairs were introduced.
+
+Post-load comparison across all108 loaded catalogues/23,380specs has zero
+gained/changed/missing/ambiguous findings; all15 pre-existing lost findings,
+catalogue scopes and file coverage match the original baseline exactly.
+An immediate rerun affected **zero component rows and zero spec rows**.
+The completed TODO and task scratch were removed after validation; URLs,
+page evidence and retrieval instructions above preserve the sources.
+For restoration, the previous year_from was1987 for all twelve rows and
+previous source_ref values are in the table; the six listed links wereNULL.
+Check the current values against this applied state before restoring anything.
+
 ## MBK bicycle catalogue backlog — source review 2026-11-19
 
 User switched from component work to considering Motobécane/MBK bike ingests.
