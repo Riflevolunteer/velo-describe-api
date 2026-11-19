@@ -5,7 +5,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Ready to work
 
 - Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
-- Prepare the [Dia-Compe Alpha-5000](.agents/skills/ingest-component-catalog/references/known-catalogs/dia-compe.md#alpha-5000-brake-identity--2026-11-19-read-only) addition; review the Alpha-5000 maker correction and brake assembly match for Bianchi spec 1324.
 
 ## Product and infrastructure
 

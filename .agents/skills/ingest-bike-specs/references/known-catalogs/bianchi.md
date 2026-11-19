@@ -166,6 +166,8 @@ API listing, PDF and two page renders removed after documenting these findings.
 
 ## 1987 Bianchi — `1987_bianchi_spec.csv` (16 bikes, 320 specs, 144 linked)
 
+- 2026-11-19 applied: the earlier automatic SunTour prefix on SPORT SX Brakeset was unsupported. [Alpha-5000 reconciliation and validation](../../../ingest-component-catalog/references/known-catalogs/dia-compe.md#alpha-5000--applied-2026-11-19) added Dia-Compe11710/source468 and corrected/linked spec1324 in place, retaining bike89/spec source46. The CSV and DB now say `Dia-Compe Alpha-5000 Balance Response System with aero levers`. Crank1327 is unchanged/NULL. All300 current catalogue specs match generated values/links; no duplicates, zero-change SQL rerun; exactly one mapping gain across108 catalogue CSVs.
+
 - Source (added 2026-10-21): VeloBase CatalogScans `1987Bianchi.pdf`, "1987 Bianchi" (2.39 MB; https://velobase.com/Pages/Resources/CatalogScans.aspx), downloaded 2026-10-19 (the browser's download origin confirms it). The index states no market; US is the user's call (2026-10-19).
 
 - Richest catalog: full parts lists with model numbers, but six columns pair

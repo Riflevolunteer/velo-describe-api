@@ -28,6 +28,64 @@
 No source registered, SQL prepared or DB/CSV/generator changes applied. Downloads
 and renders removed after review; the source URLs above are the recovery inputs.
 
+## Alpha-5000 — applied 2026-11-19
+
+Following the read-only review above, rechecked Bianchi PDF p.14 and the marked
+specimen close-up. The SPORT SX brake cell explicitly says Alpha-5000 Balance
+Response System with aero levers and omits SunTour. Specimen markings establish
+DIA-COMPE / α-5000 independently of seller dating. Sutherland sixth edition
+(1995), PDF p.401, lists α-5000/model400 separately from Alpha II, with left
+cable, 45mm slot centre and39–51mm reach. Technical data are a later handbook
+cross-reference, not a manufacturer catalogue or a1995 availability record.
+The original source URLs are in the preceding review.
+
+| Applied field | Value |
+| --- | --- |
+| Category / brand | Brakes (3) / Dia-Compe (73) |
+| Title | Dia-Compe Alpha-5000 |
+| Description | Short-reach side-pull road brake with Balance Response System (BRS); model 400, 39-51mm reach (45mm centre), left cable entry. Paired with aero levers on the Sport SX. |
+| Years / group | 1987–1987 (fitment attestation only); NULL group |
+| Search text | Dia-Compe Alpha-5000 |
+| UUID | a1d85268-a28c-4e66-ab3a-04f65672d87e |
+| Manual source 468 | Dia-Compe Alpha-5000 identity review (1987 fitment) |
+
+Component **11710**, source **468**, applied after explicit user approval.
+The composite manual source cites Bianchi p.14, specimen listing257765092776
+and Sutherland p.401; countryNULL. It explicitly distinguishes evidence roles
+rather than registering a fictitious maker catalogue. Bike/spec source46
+continues to identify the Bianchi catalogue. No Alpha-5000 component
+or matching reconciliation source existed before loading. Brand/category/code/alias review
+included Alpha II668, generic400679, BRS families and other makers' Alpha rows;
+none is an established duplicate to overwrite/merge. No separate lever row,
+aero lever code, specimen year or Alpha II alias is proposed.
+
+Applied one guarded source insert, one guarded component insert and one
+guarded update to spec1324 (bike89/source46), preserving its ID and raw
+Brakeset label. Old text/link: `SunTour Alpha-5000 Balance Response System`,
+NULL; new: `Dia-Compe Alpha-5000 Balance Response System with aero levers`,
+**11710**. Bike/spec provenance remains source46. This identifies the named
+caliper within the printed brakeset; its accompanying aero lever model remains
+unspecified. Crank1327 remains untouched/NULL, including its original text and
+timestamp. Years1987–1987 record the fitment attestation, not introduction,
+discontinuation or1995 availability. No existing component dates changed.
+
+The gitignored CSV `bike_specs/1987_bianchi_spec.csv` has exactly that one cell
+corrected. Readback verified the new component title,167-character description,
+brand/category, years, NULL group, search text, UUID and source metadata, plus
+the exact spec1324 correction and unchanged crank1327. Exactly one live bike
+spec links to11710. Fresh shared-generator/live comparison of the1987 CSV:
+**300 unchanged**, zero gained/lost/changed/missing/ambiguous, zero duplicate
+specs. Full comparison against the pre-load generator baseline:108 CSVs /
+23,380 mappings, **exactly one gain** (SPORT SX Brakes1324 →11710), no other
+changes. Automatic matching is sufficient; no generator changes were needed.
+Dia-Compe exact and near duplicate reports both returned zero candidates.
+The second SQL load affected **zero** source/component/spec rows.
+
+SQL, pre-change CSV, baseline/preview snapshots and temporary helper scripts
+were removed after successful readback and rerun. Downloads had already been
+removed after verification. Original evidence URLs, UUID, old/new values and
+validation above retain the result.
+
 ## MTB brochure — eBay 800322888787, photo inventory reviewed 2026-11-17
 
 Source: https://www.ebay.com/itm/800322888787, English US brochure, cover
