@@ -904,6 +904,29 @@ removed after exact readback and the zero-change rerun. No pending review SQL.
   valid and separate. The official product-sheet endpoint returned 403; no
   new technical-sheet dating claim is made.
 
+### CXP30 weight and 870 clamp evidence search — 2026-11-20, no change
+
+Read-only follow-up on the TODO item; no DB change, so no validation run.
+
+- **870 clamp:** the [1995 maker catalogue](https://www.bikecatalogs.com/download/3660)
+  p.22 lists 860 "double with clamp fitting, 100 g" and 870 "triple with clamp
+  fitting, 120 g", with no diameter. With 1994 (no 31.8 mm version), 88/89 (no
+  diameter) and 90/91 ("28 mm collar"), no recovered maker edition names a
+  31.8 mm 870. The c.1990 USA technical manual (source 302) has no front
+  derailleur section. A web search found only the existing VeloBase specimen
+  listing for 2410 and undated marketplace units, mostly labelled 28.6 mm.
+  The earlier decision to keep 2410's velobase 1984–1992 dates until positive
+  31.8 mm evidence exists still stands.
+- **CXP30 1996 figure:** no 1996 Mavic maker catalogue or technical manual was
+  found. Bike Catalogs lists no 1996 edition, and Bike-Pro 1996 (source 306)
+  covers rear derailleurs only. Web results give only built-wheel weights
+  (Rinard's 938/1170 g CXP30 wheels, rim type unstated), modern CXP Pro 30
+  figures, and forum recollections dating the rim to c.1996. None explains
+  Guida 1996's 520 g tubular.
+- **Unchecked lead:** a Retrobike thread announcing new Mavic catalogues and
+  manuals in its archive (`retrobike.co.uk/threads/new-mavic-catalog-and-manuals-added-to-the-archive.427093`)
+  returned HTTP 403 to automated fetches. Its editions are unknown.
+
 ### Open Pro decal-date search — 2026-11-19
 
 Checked search results for dated maker evidence for specimen rows 5099/5100. The
