@@ -281,8 +281,13 @@ Decisions:
 - Inserted **12109 `Mavic 575`** (Hubs, 1995–1995, group NULL, mirrors 3399):
   front 140 g, rear 275 g, each excluding an 85 g "locknut".
 - Not changed: 5083 Mach 2 Ceramic (650c); 365 451 lever (a lever is pictured
-  on p. 21 but not named); 3404 571/2 keeps its pre-existing `year_to` 1995
-  even though the full 1995 catalogue lists only 501/575 hubs.
+  on p. 21 but not named).
+- Follow-up, user approved: capped 3404 571/2 `year_to` 1995 → 1994
+  (`source_ref` 480 → 449). The full 1995 catalogue lists only 501/575 road
+  hubs; the 1995 end came from a source before 305 and was carried
+  unchanged through the ZMS brochure and 1994 passes. 3404 has no bike links
+  or generator overrides; restore with `year_to = 1995, source_ref = 480`.
+  Re-run affected 0 rows; bike-link comparison unchanged.
 
 ### Application and validation
 
