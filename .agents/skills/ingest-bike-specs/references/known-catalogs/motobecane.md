@@ -136,6 +136,47 @@
 - Direct retrieval of both old URLs redirects from `www.velopedia.online` to the bare host and returns **404**. PDF screenshots and the old preview image also fail. The current homepage serves a replacement application. Indexed OCR is badly damaged in some panels, especially pp.13/15; it is insufficient for a faithful full CSV. The recovered current previews supersede this initial extraction limitation; do not restart that recovery task. Do not repeat the dating hunt solely because the archive title was previously uncertain.
 - Preflight found no German1986 catalogue source or Motobecane bikes with year_from1986. The subsequent approved load and exact validation are recorded above; the earlier no-load result is superseded.
 
+## German 1986 English translation — applied 2026-11-19
+
+The source-465 load above left the touring/tandem/MTB prose and several colour
+and tyre values in German. English normalization is applied in the DB and maintained
+`bike_specs/1986_motobecane_de_spec.csv`: 53 spec values and five bike colours.
+Most changes concern EXD102 Super-Tour, EGT40 Grand Touring, ETT22 Tandem
+Interclub and T50 Tracker; C153S tyre wording and KC152 colour are also covered.
+Model/maker names, codes, dimensions, ratios and catalogue ambiguities remain.
+Examples: `Sportsattel` → `Sport saddle`, `Nachtblau` → `Night blue`,
+`Feinrasterung-Schalthebel` → `Fine-ratchet shifters` (not an invented indexed
+model); LM is expanded to alloy. The mixed Michelin/Hutchinson tyre text is
+preserved. Compound brake and wheel descriptions retain their original scope.
+
+After explicit user approval, 60 transactional statements applied **53 spec
+text updates and five bike colour updates**, matching IDs, source 465, old
+values and component IDs. The second load affected **zero rows**. No rows were
+inserted/deleted and no links or provenance changed. Bikes/spec IDs remain
+1444–1455 / 25166–25377. Colour updates: bike1450 `Elektron-Blau` → `Electron
+blue`; 1452 `Diamant-Silber` → `Diamond silver`; 1453/1455 `Nachtblau` → `Night
+blue`; 1454 `Weiß` → `White`. These correct the partial translation in the
+original load above. Source465 remains the German-market catalogue.
+
+Direct snapshot/readback comparison verified every field across all12 bikes
+and212 specs: exactly53 value_text and five colors changes, plus automatic
+spec updated_at timestamps; all other fields and all35 links unchanged. No
+duplicate specs. Shared generator/live comparison for the maintained CSV:
+**212 unchanged; zero gained/lost/changed/missing/ambiguous**. Do not restore
+German values from an older CSV: value-based spec insertion would duplicate
+rows. The maintained CSV is gitignored; the English values and generator
+keys must be kept together. SQL, backups, baseline/preview snapshots,
+translation dictionary and temporary helpers were removed after validation.
+
+Two English override keys retain the reviewed Stronglight 100 triple 11311 and
+Sakae CT-P5E 11316 links; German keys remain compatible. A bike/year-scoped NULL
+for EXD102's generic `Sport saddle` prevents the translation alone from linking
+unrelated component 8860. Full before/after generated comparison: 108 CSVs,
+23,380 spec mappings, **zero link changes**; source465 remains 12 bikes / 212
+specs / 35 links. All translated cells fit 255 characters; residual German
+prose search is clear. All 13 test files pass. Readback and the zero-change
+rerun completed successfully as recorded above.
+
 ## 1970–1990 gap source leads — 2026-11-18
 
 - [User-supplied c.1973 US scan](https://www.bikecatalogs.com/download/3780) is now loaded; see the validated entry above. No printed year established; the [Ebykr index](https://ebykr.com/library/motobecane-catalog-about-1973/) corroborates *about* 1973, not an imprint date. The Michigan dealer stamp supports US distribution.

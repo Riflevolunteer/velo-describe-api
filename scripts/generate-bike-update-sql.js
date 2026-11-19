@@ -2521,6 +2521,7 @@ const COMPONENT_OVERRIDES = {
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":1515}],
     "stronglight 200": [{"bike":"C502 Le Champion","from":1986,"to":1986,"id":11312}],
     "stronglight 100; lm 3 fach kettenblatt 30 40 50 zähne": [{"bike":"EGT40 Grand Touring","from":1986,"to":1986,"id":11311}],
+    "stronglight 100; alloy triple chainrings 30 40 50t": [{"bike":"EGT40 Grand Touring","from":1986,"to":1986,"id":11311}], // English translation of the same reviewed fitment.
     "nervar 2010 chromed double 40 x 52t": [{"bike":"BC121 Nomade","from":1986,"to":1986,"id":10984}],
     "nervar 2010 40 52 dents; matte chrome (portrait)": [{"bike":"BC121","from":1985,"to":1985,"id":10984}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
     "nervar 2011 42 52 dents": [{"bike":"C221","from":1985,"to":1985,"id":10984}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
@@ -2991,6 +2992,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    'sport saddle': [{ bike: 'EXD102 Super-Tour', from: 1986, to: 1986, id: null }], // Generic translation of Sportsattel; no maker/model identity.
     "italia turbo": [{"bike":"Spécial Pro","from":1985,"to":1985,"id":null}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
     "turbo white skin top": [{"bike":"Team Champion","from":1983,"to":1983,"id":null},{"bike":"Team Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
@@ -4282,6 +4284,7 @@ const COMPONENT_OVERRIDES = {
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "laprade ctp 5 e dural 254 x 200": [{"bike":"C352E Super-Mirage","from":1986,"to":1986,"id":11316}],
     "sakae ctp 5 e mit schnellverschluß": [{"bike":"T50 Tracker","from":1986,"to":1986,"id":11316}],
+    "sakae ctp 5 e with quick release": [{"bike":"T50 Tracker","from":1986,"to":1986,"id":11316}], // English translation of the same reviewed fitment.
     "laprade ctp 6": [{"bike":"EGT40 Grand Touring","from":1986,"to":1986,"id":5861}],
     "laprade sr ctp5e; diameter 266x180 integral clamp (portrait)": [{"bike":"C441","from":1985,"to":1985,"id":11316}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
     "laprade sr ctp5": [{"bike":"C551","from":1985,"to":1985,"id":5857}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.

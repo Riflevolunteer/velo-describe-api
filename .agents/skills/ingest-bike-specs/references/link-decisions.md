@@ -6,6 +6,8 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 
 ## German Motobecane 1986 — prepared link review, 2026-11-19
 
+- EXD102 Super-Tour `Sportsattel` / English `Sport saddle` is generic and stays NULL. Translation alone exposed substring candidate 8860; there is no maker/model evidence for that identity. Scoped bike/year exclusion preserves the reviewed decision.
+
 Applied as reviewed on2026-11-19, source465; all deliberately unlinked values read backNULL.
 
 - C662E SuperRecord's printed CampagnoloTRIUMPH equipment supports selected Triomphe identities, not a SuperRecord group. Front plain/LX, rear first-style/S3 and hub flange variants are not distinguished by this preview; leave those linksNULL. The bare Turbo saddle likewise does not select a cosmetic/version specimen.
