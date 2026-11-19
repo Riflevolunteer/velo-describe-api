@@ -79,4 +79,67 @@ to reconcile/prepare the distinct Competition candidate with the date limitation
 explicit; GL variant-specific enrichment and bike links need further evidence.
 Photo downloads removed after review; original URLs above preserve the evidence.
 
-Scratchpad: `/tmp/clb-1989-1.pdf` through `-4.pdf`; transcription `/tmp/clb-1989-listing.json`; pre-change snapshot `/tmp/clb-existing.tsv`; exact before/after diff `/tmp/clb-1989-diff.json`; guarded transactional SQL `/tmp/clb-1989-ingest.sql`. Applied 1 source insert, 4 updates and 2 inserts; verified readback, description lengths 208-233 characters, generated new search_text, and a second load affected **zero** rows. Component count 10069 -> 10071. SQL and scans remain outside the repository.
+## Competition 46.57 / set 101250 — applied 2026-11-19
+
+The prepared addition was applied after explicit user approval: component
+**11709**, source **467**. One source and one component were inserted.
+The [Competition photograph](https://i.ebayimg.com/images/g/K1sAAOSwJ7hnBZXJ/s-l1600.jpg)
+was inspected again. Its printed page number is not visible. This is a partial
+catalogue source, not a complete-range ingestion.
+
+| Applied field | Value |
+| --- | --- |
+| Title | CLB 101250, Competition 46.57 |
+| Brand / category | CLB (70) / Brakes (3) |
+| Years / group | NULL / NULL; no group assignment |
+| Description | Side-pull, 46-57mm reach, AS13 GL treated alloy. Set 101250: Professional anodised 843 levers (23.5mm), CLB PRO 844 handrests (natural/black), low-friction cables, box and four spare blocks. Cable release with rubber snap ring. |
+| Search text | CLB 101250 Competition 46.57 |
+| UUID | fe214f28-f5fe-42be-b6b3-e8df4c626979 |
+| Source 467 | CLB technical catalogue (undated, not before May 1980) |
+| Citation | https://www.ebay.com/itm/305827471354 |
+
+**101250 is the complete set code**, not an individual caliper code. The model
+is 46.57. The legal notice establishes only a printing lower bound of 12 May
+1980, not a component introduction or availability year; both component years
+remain NULL. Catalogue market is unverified (English text alone is insufficient),
+so source 467 country is NULL.
+
+Live reconciliation found no 101250/46.57 row across all CLB components or the
+cross-brand code/title search. Existing 608 is the 1950–70 Competition; GL
+612–615, Professionnel and other CLB models were reviewed as separate identities.
+No merge or overwrite was needed. Before application, the only registered CLB
+catalogue source was 367 (the 1989 brochures), which does not represent these
+photographs. Source 467 now records this partial technical catalogue.
+Readback verified title, description, brand/category, NULL years/group, UUID,
+search text and provenance. Description length is 227 characters; search text
+comes from the maintained helper. The guarded second load affected **zero**
+source and component rows. No existing values were overwritten. The post-load
+CLB duplicate report raised no candidate involving 11709; existing lever/GL
+variant pairs remain outside this addition and were not merged.
+
+Live Competition specs 11470 (1982 PH12 aerodynamic) and 12040 (1984 PH12,
+generic Competition) remain NULL; no live spec points to 608. The prior-review
+ID 11789 was not returned as a current Competition value and is not an update
+target. The conventional 843 lever does not identify the aerodynamic assembly,
+nor do the photographed set/reach establish the generic earlier fitment.
+Keep the generator's existing era restriction and aero exclusion. No separate
+843 lever insertion is proposed because its correspondence with existing
+Professionnel specimens is not established.
+
+Validation used a read-only consistent DB snapshot and simulated the proposed
+row in memory: **108 catalogue CSVs / 23,380 generated spec mappings**, zero
+mapping changes. Both PH12 values remain NULL. The SQL's component insertion
+guard matched zero existing rows, as expected. This is a before/after generator
+simulation, not a claim that all generated mappings agree with the live DB.
+The existing generator emitted its usual overlength-value warnings for PR 65
+Lady Extras and Royal/Randonneur 18 Frame Material in both runs.
+
+Post-application validation repeated the comparison with/without live row 11709
+in a read-only consistent snapshot: 108 CSVs / 23,380 mappings, **zero changes**.
+Live PH12 specs 11470/12040 remain NULL; no live spec points to 608 or 11709.
+Application changed only the new source and component records. No bike links,
+CSVs or generator rules were changed. The prepared/applied SQL and temporary
+validation script were removed after validation; source URLs and applied
+values above retain the evidence.
+
+Scratchpad for the separate **1989** ingest: `/tmp/clb-1989-1.pdf` through `-4.pdf`; transcription `/tmp/clb-1989-listing.json`; pre-change snapshot `/tmp/clb-existing.tsv`; exact before/after diff `/tmp/clb-1989-diff.json`; guarded transactional SQL `/tmp/clb-1989-ingest.sql`. Applied 1 source insert, 4 updates and 2 inserts; verified readback, description lengths 208-233 characters, generated new search_text, and a second load affected **zero** rows. Component count 10069 -> 10071. SQL and scans remain outside the repository.
