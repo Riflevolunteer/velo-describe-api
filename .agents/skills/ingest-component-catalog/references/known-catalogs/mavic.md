@@ -1,5 +1,52 @@
 # Mavic catalogs processed so far
 
+## Brügelmann Titan and Bleu SSC — 2026-11-19, applied
+
+Reviewed the already registered dealer sources 392 (1977), 394 (1979),
+389 (1982), and maker sources 301 (1979), 240 (c.1980). The initial review was
+read-only; the user subsequently approved the one-row date/source correction,
+which is now applied and validated.
+
+- [Brügelmann 1977 p.12](https://s01335cf0ecfff54f.jimcontent.com/download/version/1451656901/module/6124979962/name/Bru%CC%88gelmann%2B1977.pdf#page=12): `71225-MBLU`, blue Mavic rim formerly offered to professionals, 20 mm, 395 g, 109 DM. The dealer explicitly prints `Material=Titan`; the small-hole table calls it titanium BLAU (`71238-MS08`, 24/28 holes). This is a dealer claim, not verified titanium construction. The catalogue was printed in December 1976 for the 1977 edition; use 1977 availability, not an invented 1976 introduction.
+- [Brügelmann 1979 p.12](https://s01335cf0ecfff54f.jimcontent.com/download/version/1451656901/module/6124978862/name/Bru%CC%88gelmann%2B1979.pdf#page=12): Titan-Mavic, 20 mm, 395 g, former professional-only offering; `91206-TIBL` blue and `91207-TIGR` grey, both 109 DM. All these codes are retailer references, not maker model numbers.
+- [Brügelmann 1982 pp.12–13](https://s01335cf0ecfff54f.jimcontent.com/download/version/1451656901/module/6124977062/name/Br%C3%BCgelmann%2B1982.pdf#page=13): p.12 still calls the small-hole offering titanium (24/28/32), referring to p.13 for its main code/price. P.13 describes the premium group as hardened aluminium, then names `21226-TIAR` ARGENT, 395 g/20 mm/119 DM; `21224-TIBL` BLEU, 395 g/20 mm/128 DM; and `21221-TIPR` PARIS-ROUBAIX, matt grey, 400 g/21.5 mm/158 DM. GP4 has its own separate `21207-MGP4` entry, grey hardened aluminium, 395 g/20 mm/39.80 DM. This resolves the previous bare “Titan blau” hold as an identifiable blue offering, while documenting inconsistent dealer material terminology.
+- [Mavic 1979](https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1979.html), scan 5 / printed p.4: Bleu SSC, Argent 12 SSC and GP4 each have 20 mm profiles and 395 g specifications; Grise SSC Paris-Roubaix has a distinct 21.5 mm profile and 400 g. Scan 6 / printed p.5 distinguishes the professional Grise SSC from the amateur GP4. The [c.1980 maker table](https://www.disraeligears.co.uk/site/00_main_images/mavic_-_catalogue_1980_page_8_main_image.jpg) repeats these distinctions. Neither maker table supplies a Titan alias. Original 1979 scan URLs are linked from the catalogue page as `MAVIC 1979 (5)` and `(6)`; both were visually read at full size.
+
+**Applied correction:** existing **8153 Mavic Bleu SSC**, previously **1979–1988**,
+source_ref **391**, source_id `13bbb82f-c0fd-11f1-a2df-02fea3763e8d`, is now
+**1977–1988**, source_ref **392**. The blue colour, 20 mm/395 g specification,
+professional positioning, dealer's continuing TIBL reference and explicit 1982
+BLEU name support identifying the 1977 blue offering as this existing model.
+This is an identity inference, not an explicit maker crosswalk. Keep the maker
+title and current alloy/deep-blue/20 mm/double-eyelet/395 g description; do not
+add titanium construction, invent a separate Titan component or merge rows.
+Restoration values are year_from 1979 and source_ref 391, conditional on the
+row still matching the approved new state. Other fields remain unchanged.
+
+The **grey 1979 Titan remains unassigned**: it might denote Argent 12 SSC,
+Grise SSC Paris-Roubaix or another specification, and 395 g alone cannot
+settle that identity. GP4 is separately sold in the later dealer table, so
+do not use Titan as a general GP4 alias. Keep 8154 Argent 12 SSC, 5112
+Paris-Roubaix SSC, 5069 GP4 and the uncoded legacy SSC records 5108/5114
+unchanged. Reopen grey only for a dealer/maker code crosswalk or identifiable
+label/profile/material evidence tied to `91207-TIGR`.
+
+Validation: searched all live Mavic rim titles/descriptions and
+the six candidate IDs; no separate Titan row exists. SELECT found no
+Titan-named Mavic bike specs and no links to 8153/8154/5112/5108/5114; the GP4
+links all remain on 5069. No generator reference to 8153 or Mavic Titan was
+found. Source labels/citations for 392/389/301 were verified. Immediately before
+loading, readback confirmed 8153 still matched the reviewed title, source_id,
+1979–1988 dates and source_ref 391, with zero bike links. The guarded UPDATE
+affected exactly one row; readback verified 1977–1988, source_ref 392 / Brügelmann
+1977, the unchanged description and zero bike links. Repeating the same UPDATE
+affected zero rows. Before/after `compare-bike-links.js --json` reports covered
+108 loaded catalogues and 23,380 specs; scope, files, summaries and all findings
+were identical, including the 15 pre-existing lost-match findings. No bike link,
+generator, title, description, component insert/delete/merge or unrelated source
+was changed. Task-only SQL/comparison JSON, downloaded scans and page renders
+were discarded after validation; original URLs/page evidence are retained above.
+
 ## CXP30 and Open Pro weight attribution — 2026-11-19, applied
 
 Reviewed live **5062/5063/10199/10607** (CXP30) and **5099/5100/10183**
@@ -722,7 +769,8 @@ not a fresh extraction of every catalogue or verification of every specimen.
    Titane clincher / 10607 CXP 30 Titane tubular** distinction recorded in
    cross-catalog-notes.md.
 
-Previously recorded questions remain evidence gaps: Sprint, Velotech, Titan,
+Previously recorded questions remain evidence gaps: Sprint, Velotech, grey Titan
+(the blue offering is reviewed in the 2026-11-19 Titan/Bleu section above),
 190 NE versus 190FB/195NE, bare 400, 630 lettering, early rim identities and
 the conflicting 310 headset weights. Rechecked 1986–87 p.22: it does print
 82 g for 311/312; this does not resolve the 1984 102 g discrepancy. Earlier

@@ -4559,6 +4559,118 @@ that work has its own current action. No Mavic DB change followed this review.
 - Added 10830 Galli Super Lite / Strong headset, dated 1980 from printed p. 21. The Mathauser finned brake shoes and replacement pads on printed p. 4 were removed: the database has no category for brake shoes/pads, and the broad Brakes category is not appropriate for these replacement parts. Updated 6640 Pivo tandem stoker stem with the rear-stem / front-seatpost fit and hex-nut binder detail from printed p. 23; `year_from` is now 1980.
 - For other entries confidently matched to existing rows with compatible descriptions and year coverage, no update was needed. Retail stock codes were not treated as manufacturer part numbers. Left unresolved: the ambiguous Dia-Compe 730G / 810G line, Idéale 90A versus the existing 90 Speciale Competition rows, and Sugino Mighty Custom Compe / Mity Compe / MCT and Maxy I / II wording versus existing Mighty / Super Maxy rows. Retailer-built wheelsets and the unidentified REG seat-pillar brand were not added as maker components.
 
+## Hutchinson Krono attribution — 1979/1981 versus 1985, read-only review 2026-11-19
+
+- **Applied and validated later on 2026-11-19 following the user's approval.** The initial review was read-only; the date/source corrections below are now live.
+- Re-read the original scans, not just the previous ingestion notes:
+  - [Brügelmann 1979, printed/PDF p.43](https://s01335cf0ecfff54f.jimcontent.com/download/version/1451656901/module/6124978862/name/Bru%CC%88gelmann%2B1979.pdf#page=43): retailer reference `94327-HKRO`, model KRONO, 210 g, 56.50 DM, in the handmade Hutchinson series alongside Leggero-Corsa 270 g and Super-Corsa 250 g.
+  - [Brügelmann 1981, printed/PDF p.40](https://s01335cf0ecfff54f.jimcontent.com/download/version/1451656901/module/6124978262/name/Bru%CC%88gelmann%2B1981.pdf#page=40): retailer reference `14119-HKRO`, KRONO, 210 g, 56.50 DM, in the same handmade series with the same neighbouring models/weights. Both editions qualify weights as approximate/nonbinding. Neither listing prints Milano, casing material, width or tube material; the retailer references are not maker codes.
+  - [La Bicicletta Guida '85/86, scan 40](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_1985_november_-_i_componenti_da_corsa_scan_40_main_image.jpg): Hutchinson KRONO, silk/latex, double anti-puncture ply, 180 g, section 20 mm. This independently confirms the specification and 1985 attestation behind row 9267; registered source 259, November 1985. No claim of introduction in 1985.
+- **Supersedes the 1981 attribution to 9267 below:** the 1981 210 g listing does not establish an earlier date for the specific 180 g, 20 mm silk version. Its model, handmade-series context, weight and price instead continue the 1979 offering already matched to 6810. Extending that existing match to 1981 is an inference; these pages do not independently prove the Milano suffix or cotton construction. Keep the two version records separate; no merge, retitle, description rewrite or additional component is supported by this review.
+- Read-only baseline on 2026-11-19 and subsequently approved/applied corrections:
+
+  | Component | Previous dates / source_ref | Applied dates / source_ref | Reason |
+  | --- | --- | --- | --- |
+  | 6810 Hutchinson Krono Milano | 1975–1980 / 397 | 1975–1981 / 388 | Continue the existing 1979/1980 match through the consistent 1981 210 g listing. |
+  | 9267 Hutchinson Krono | 1981–1985 / 388 | 1985–1985 / 259 | Withdraw the unsupported 1981 silk-version attestation and restore the original 1985 baseline, verified against Guida scan 40. |
+
+- Existing descriptions read back: 6810 is the 210 g, 22 mm cotton road tubular with ribbed tread, gum rubber and 100–115 psi; 9267 is the 180 g, 20 mm silk/latex tubular with double anti-puncture ply. These distinguish the stored versions; do not transfer details between them. The preceding 1981 ingestion commit `10c47fc` records 9267's old start year as 1985, consistent with the re-read guide. The source changes above accompanied the guarded date updates under the last-source-to-change-row rule. Titles and descriptions were unchanged.
+- Application/validation: re-read both rows immediately before loading and confirmed the reviewed dates/source references; neither had any `bike_spec.component_id` references. Repository search found no generator overrides for either ID or Krono name. Exactly two guarded UPDATEs affected two component rows; readback confirmed the applied dates, source labels and unchanged descriptions, with zero bike links to either row. Repeating the SQL affected zero rows. `compare-bike-links.js --json` before/after covered 108 loaded catalogues and 23,380 specs; scope, files, summaries and every finding were identical. The 15 pre-existing generator/live-DB lost-match findings were unaffected; this change caused no mapping changes. No component insert/delete/merge or bike/generator edit was needed. A future early-date claim for 9267 needs a dated source identifying the silk/180 g/20 mm version. For restoration, the table retains previous dates/source references; restore only after checking that the rows still match the applied values. Task-only downloads, renders, SQL and comparison JSON were discarded after validation and evidence recording.
+
+## Cobra saddle brand and versions — 2026-11-19, applied
+
+Reviewed the Cobra offerings in Brügelmann 1981/1982/1985. Following user
+approval, six component rows **12088–12093** and the Saddles category
+association were inserted and validated. This supersedes the earlier
+brand-identity hold below.
+
+**Brand evidence:** [1981 printed/PDF p.32](https://s01335cf0ecfff54f.jimcontent.com/download/version/1451656901/module/6124978262/name/Bru%CC%88gelmann%2B1981.pdf#page=32)
+prints the registered Cobra ITALY logo over the saddle range. The original
+[2978 Corsa Extra Leggera headset specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=ACB8C0D4-471D-441C-B4CD-2DBCA56562B2)
+has [boxed packaging](https://www.velobase.com/CompImages/Headsets/1D315CF1-250B-4984-A308-684E9AB8218E.jpeg)
+with the same distinctive snake-headed C, cursive Cobra wordmark, registration
+symbol and ITALY legend. The logo is especially clear again on 1985 p.100.
+This supports using existing Italian Cobra **brand 335**; it does not identify
+the underlying saddle factory or prove that Cobra manufactured every branded
+part itself. No new brand or brand merge was needed. Original headset detail
+photo `052AE1A2-EFFD-4A4E-8CC2-5909FA5DA2B7.jpeg` was also inspected.
+
+The Spanish **5363 GES Cobra** is a separate existing model/brand attribution,
+not an Italian Cobra saddle equivalent. Its [original specimen page](https://www.velobase.com/Pages/ViewComponent.aspx?ID=C890BAC8-2119-436E-B62C-07480457A027)
+and photo `7BC96E77-F771-44AA-AAE4-8E9D8B969319.jpeg` were inspected; no evidence
+establishes a cross-brand identity. Keep it and Cobra headsets 2978/2979/2980
+unchanged. Public searches found no additional period saddle maker crosswalk;
+Classic Rendezvous's Cobra detail page was a bot wall. The matching original
+packaging and period catalogue logos supply the actual brand evidence.
+
+**Page evidence and listing:** 1981 p.32 (source 388),
+[1982 printed/PDF p.34](https://s01335cf0ecfff54f.jimcontent.com/download/version/1451656901/module/6124977062/name/Br%C3%BCgelmann%2B1982.pdf#page=34)
+(source 389), and [1985 section PDF archive](https://www.dropbox.com/sh/x646ycsiuna0k8l/AADpyJvsSwygU-eMF94Zv29Na?dl=1)
+(source 390), file `B 85 2 Licht, Felge, G-Traeger, Ketten, Gruppen, Vorbau, Lenker, Naben, Pedale, Sattel, Schaltung.pdf`,
+PDF p.24 = printed pp.100–101; Cobra table on printed p.100. The surrounding
+1985 saddle spread pp.98–99 was checked too. The three editions' printed
+references are retailer order codes, not maker model numbers. All inserted
+titles below are descriptive labels, not invented maker model names.
+
+| Inserted Cobra racing saddle ID / version | Attested years | Catalogue evidence / distinguishing specification | source_ref |
+| --- | --- | --- | --- |
+| 12088 smooth calfskin | 1981–1985 | `13225-COGL`, `23238-COGL`, `52855-100CGL`; smooth calfskin cover; no rail material, weight or padding claim added. | 390 |
+| 12089 padded calfskin | 1981–1982 | `13209-COPG`, `23222-COPG`; padding beneath smooth calfskin cover. | 389 |
+| 12090 padded suede | 1981–1982 | `13220-COPW`, `23233-COPW`; padding beneath suede cover. | 389 |
+| 12091 lightweight nubuck, Ergal rails | 1981–1985 | `13213-LLLL`, `23226-LLLL`, `52828-100LLL`; premium nubuck cover, Ergal rails; 220–240 g in 1981/82, about 220 g in 1985. | 390 |
+| 12092 padded coloured suede | 1981–1982 | `13206-SAFA`, `23213-SAFA`; separately offered premium padded suede version, cornflower blue, light blue, ochre/brown or grey. One row covers its colours. | 389 |
+| 12093 foam-padded nubuck, Ergal rails | 1982–1985 | `23227-LLLP`, `52833-100LLP`; foam-padded version of the preceding lightweight saddle; 320 g in 1982, about 280 g in 1985. Ergal/nubuck are inherited from the explicit ditto/version wording. | 390 |
+
+The 1985 `52835-100CPO` entry says only padded leather, unlike the separately
+specified calfskin/suede versions in 1981/82. Do not use it to extend either
+specific version beyond 1982 or insert a seventh overlapping generic record.
+Preserve both dated weight specifications for the lightweight versions rather
+than averaging them or choosing one as an actual measurement. Dates above are
+attested availability bounds, not production endpoints. Earlier/later editions
+were not used to infer absence or dates. No individual shell material, rail
+diameter, maker number or extra model name is established here.
+
+**Reconciliation/application:** before loading, Cobra 335 had only three
+Headsets records, no Saddles records; category_brand had only Headsets/335
+(category 12).
+All live Cobra brand/name/description saddle candidates were checked, including
+5363. No Cobra-named saddle specs, links to the four reviewed existing IDs or
+generator overrides for them were found. Added Saddles **category 17 / brand 335**
+once, and six distinct, independently sold configurations, group NULL, with
+UUID source_id values and `search_text` from `scripts/search-text.js`.
+The padded suede and premium coloured-suede entries are kept separate because
+the catalogue offers them independently under distinct codes/prices; colours
+within the latter are grouped. Do not treat this shared-title family as proof
+of duplicates. No existing component updates, retitles, deletes, merges,
+generator matcher edits or bike-link writes were made. The duplicate decision
+registry now records **12091/12093** as reviewed non-duplicates: lightweight
+nubuck/Ergal versus the separately offered foam-padded version. This preserves
+the catalogue construction/weight distinction without changing general rules.
+
+The seven guarded inserts affected exactly six component rows and one category
+association; repeating the SQL affected zero rows in either table. Inserted
+UUIDs, in table order: `26e0b376-a8c8-4fb0-996a-3806848f00c0`,
+`4cdef33a-8957-4d0a-ba98-f843f4d7d66c`, `ac838e71-173c-40c6-ac7e-4f0fa3bc91a8`,
+`756f6f52-c343-45f8-943d-4e4e63102fe3`, `ea18da98-b7e9-4370-ba20-de25e205e04e`,
+`f0c47b35-400a-4cbe-949b-4599a10a1a39`.
+Readback verified all six IDs, titles, descriptions, dates, source IDs/references,
+brand/category, NULL group and generated search text; descriptions were 51–136
+characters, all below 255, and all six rows had zero bike links. Source
+388/389/390 labels/citations were verified during preparation. Before/after
+`compare-bike-links.js --json` covered 108 loaded catalogues and 23,380 specs;
+scope, files, summaries and every finding were identical, including the 15
+pre-existing lost-match findings. No Cobra-named saddle spec needs linking.
+The three duplicate modes were checked: no near or parenthetical-name pairs;
+all 15 same-title-family pairs were reviewed. After recording 12091/12093,
+the report shows 11 configuration, three generation and one reviewed variant
+pairs, with no merge candidates or unresolved review pairs. These classifications
+are report heuristics, not new claims of production generations. Existing
+duplicate-classifier/report tests passed (two test files). For restoration,
+check current links/overrides before removing only these UUID rows and their
+reviewed-pair entry; remove the category association only if unused. Task-only
+SQL, comparison/duplicate JSON, downloaded scans, archive, HTML and renders
+were discarded after validation; provenance is retained above.
+
 ## Brügelmann Radsport-Shop catalogue — 1981 (rennrad-geschichten.de, Frankfurt mail-order retailer), data_source 388, 2026-11-14
 
 - `data_source` label "Brügelmann Radsport-Shop catalogue (1981)", country DE. Source:
@@ -4592,7 +4704,7 @@ that work has its own current action. No Mavic DB change followed this review.
     CRITERIUM" 1-, 2- or 3-fach, 150-185 mm).
   - year_from -> 1981 (earlier than prior first attestation): 6777 Clement Super Condor (was
     1983), 9267 Hutchinson Krono (was 1985; 1981 copy says hand-made 210 g, the 1985 row says silk
-    180 g), 9286 Selle Royal Contour (was 1985). 5531 Selle Royal Super Contour NULL/NULL ->
+    180 g; this attribution is superseded by the [2026-11-19 review and applied correction](#hutchinson-krono-attribution--19791981-versus-1985-read-only-review-2026-11-19)), 9286 Selle Royal Contour (was 1985). 5531 Selle Royal Super Contour NULL/NULL ->
     1981-1981.
   - Description rewrites (bare velobase text): 501, 1340, 1862, 5531, 9286.
 - Added brands 700 Dourdoigne (Tyres) and 701 Nadax (Bottom Brackets). Added rows 11135-11155 (1981-1981, group NULL):
@@ -4601,8 +4713,7 @@ that work has its own current action. No Mavic DB change followed this review.
   (track); Dourdoigne tubular (245 g) / (210 g) / Paris-Roubaix / Grand Prix des Nations (silk) /
   Championnat du Monde (track); CLB Titanium and Italia sidepulls; Sugino Astron crankset and
   bottom bracket; Nadax Favorit cartridge BB; Selle Royal 2261 / 2068.
-- Not applied: Cobra saddles (5 cover variants; DB "Cobra" is a headset maker, not confirmed the
-  same firm); Hutchinson "Touristik" (descriptive copy, not a model name); Lion and Soyo tubulars
+- Not applied: Cobra saddles (the brand hold is superseded by the [2026-11-19 Cobra review](#cobra-saddle-brand-and-versions--2026-11-19-applied); six additions are applied and validated); Hutchinson "Touristik" (descriptive copy, not a model name); Lion and Soyo tubulars
   (no model name; DB has coded 1984 Lion / 1980 Soyo rows); Lyotard cross / platform pedals (number
   not printed); Universal Pro-Super lever; Huret Jubilee and 3ttt Record Regolabile (version not
   identifiable); Sedis "Sedicolor Gold" (1398 vs 8764); Mavic "Extra Legere OR"; Regina freewheels
@@ -4642,7 +4753,7 @@ that work has its own current action. No Mavic DB change followed this review.
   bars (bend not given; 351 / 352 rows); Assos 16 mm aero rim (4935 vs 4936); Lanner and D.I.D
   chains; Canetti "Criterium Super Course" (9694 is the Tergal Criterium); Hutchinson Super Sprint
   vs 10010 Sprint Anticrevaison; Wolber Junior Butyl vs 9586 Junior Tubeless; the Regina CX
-  sprocket tables and replacement cogs; Cobra saddles (as 1981); generic axles, chainrings and
+  sprocket tables and replacement cogs; Cobra saddles (as 1981; brand identity subsequently supported and additions applied in the [2026-11-19 Cobra review](#cobra-saddle-brand-and-versions--2026-11-19-applied)); generic axles, chainrings and
   Michelin sizes.
 
 ## Brügelmann Radsport-Shop catalogue — 1985 (Dropbox section PDFs), data_source 390, 2026-11-14
@@ -4686,7 +4797,7 @@ that work has its own current action. No Mavic DB change followed this review.
   no-house-brand-tyres rule); Pariba folding clinchers and Thun Coronado 2 crankset (brands not
   in DB, low value); Lanner / D.I.D / Sedis / Regina Superstar chains; Simplex Randonnée /
   Touring rear derailleurs (no code); Araya titanium tubular rim (vs 4920 Tita Ace); Mavic "P"
-  tubular rim; Ideale Modell 4; Cobra saddles (as 1981-82); Campagnolo / Colnago / ICS special
+  tubular rim; Ideale Modell 4; Cobra saddles (as 1981-82; brand identity subsequently supported and three versions attested here in the [2026-11-19 Cobra review](#cobra-saddle-brand-and-versions--2026-11-19-applied)); Campagnolo / Colnago / ICS special
   finishes; Triomphe / Victory / Record / Dura-Ace / Campagnolo 50th groupsets (no group category);
   Clement Ritmo (still not tied to 6767 Ritmo LTX 55).
 
@@ -4766,7 +4877,7 @@ that work has its own current action. No Mavic DB change followed this review.
 - Not applied: Weinmann "Super" centre-pull / sidepull sets (vs 1147 734 Super, 1979); Sedis Delta
   chain (vs 1402 Sedisport Delta, 1980); Maillard Course Dural and Regina Extra Criterium /
   Standard freewheels; Huret Eco (vs 4276 Duopar Eco, 1980; front / rear unclear); Simplex Prestige
-  groups (DB rows are 1960s versions); Mavic "Titan blau" tubular rim; Fiamme "Leggerissimo";
+  groups (DB rows are 1960s versions); Mavic "Titan blau" tubular rim (subsequently identified with the existing blue offering in the [2026-11-19 review](mavic.md#brügelmann-titan-and-bleu-ssc--2026-11-19-applied); earlier dating applied and validated); Fiamme "Leggerissimo";
   Canetti Cross (vs 9350 Cross 160); Wolber Pro / Strada-Butyl / Corsa-Butyl; Pivo Course stem;
   Ideale titanium-frame saddles; generic BBs, axles and chainrings.
 
@@ -4810,11 +4921,11 @@ that work has its own current action. No Mavic DB change followed this review.
   - year_to -> 1979: 8794 Simplex AV 3, 9319 Cinelli 18 Pista, 9082 Cinelli 19 Track, 6162 Shimano
     L-284 Dura-Ace double lever, 11170 D'Alessandro Cronometro (all 1978), 6810 Hutchinson Krono
     Milano (1978; the 1979 "Krono" is hand-made 210 g, matching 6810 rather than 9267 Krono's silk
-    180 g; the 1981 pass moved 9267 to 1981 on a similar 210 g "Krono" line, worth revisiting).
+    180 g; the 1981 pass moved 9267 to 1981 on a similar 210 g "Krono" line; see the [2026-11-19 attribution review and applied corrections](#hutchinson-krono-attribution--19791981-versus-1985-read-only-review-2026-11-19)).
   - year_from -> 1979: 2120 Maillard 700 Sprint (was 1980), 9585 Wolber W 333 (was 1981), 9286 Selle
     Royal Contour (was 1981; "steel frame, 350 g") and 5531 Super Contour (was 1981; "only 220 g").
 - No inserts.
-- Not applied: Mavic "Titan" blue / grey tubular rims (also 1977; 395 g; no DB match); Sedis Delta;
+- Not applied: Mavic "Titan" blue / grey tubular rims (also 1977; 395 g; the former no-match assessment is superseded for blue by the [2026-11-19 review](mavic.md#brügelmann-titan-and-bleu-ssc--2026-11-19-applied); grey remains unassigned); Sedis Delta;
   Maillard 700 Compact (name only "Maillard"); Huret Eco; Simplex Prestige and Regina Extra groups;
   Campagnolo Record / Simplex Criterium shifters (DB rows are later or earlier versions); Canetti
   Cross; Wolber W/20; Colnago-finish parts.

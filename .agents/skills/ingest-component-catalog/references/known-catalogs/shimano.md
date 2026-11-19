@@ -2509,6 +2509,18 @@
   script and baseline snapshots removed after readback and idempotency validation.
 
 
+## BB-UN73 2003 manual acquisition lead — 2026-11-19, read-only
+
+Followed a new archive-index lead for the remaining manufacturer dating task;
+the previous 1998/1999 catalogue checks and rejected 2002 seller/weight-list
+dates were not reopened. No component or source rows were changed.
+
+- [VeloRoad thread 10321](https://veloroad.spb.ru/forum/viewtopic.php?f=14&t=10321), post by `andrey` dated 2007-01-23, lists BB-UN73 among the contents of a claimed 1999–2004 Shimano spare-parts collection. Its actual public archive link is `http://www.vast-arp.spb.ru/mozgj/ShimanoRoad.rar`, which returned HTTP 404. The model list is a holder/index claim, not a recovered maker page and not introduction evidence. No replacement archive was recovered.
+- A more specific acquisition target is now verified from original document photographs: **Shimano 2003 Bicycle Components Trade Sales & Support Manual**, **English (U)**. [eBay item 326426841815](https://www.ebay.com/itm/326426841815), seller Hobby Time Seattle, exposes the [dated cover](https://i.ebayimg.com/images/g/wfUAAOSwvtRnnnJw/s-l1600.jpg) and [warranty/imprint page](https://i.ebayimg.com/images/g/3EEAAOSwtYFnnnJx/s-l1600.jpg). Both were visually read: cover says 2003; warranty/imprint page says **© Aug. 2002 Shimano Inc.**, printed in Japan. This is the manual's publication/imprint evidence, not proof that BB-UN73 appears inside it or that the part launched in August 2002.
+- [MOMBAT's literature inventory](https://mombatbicycles.com/MOMBAT/PartsForSalePages/literature.html), **LIT170**, lists a **2003 Shimano dealer support catalogue, about 212 pages**, bundled with 2001 support and 2003 XTR/disc-brake documents. Treat this as a separately listed potential physical copy; the exact edition match, continuing availability and BB-UN73 contents have not been verified. The XTR/disc-brake books alone are not substitutes for the general bottom-bracket range. No purchase, enquiry or other contact was made. These paid/holder leads do not establish a free scan.
+- Next useful evidence is the actual **BB-UN73 specification or new-product page**, together with the dated cover/imprint, from the 2003 manual or another dated manufacturer source. A full general manual scan or a page supplied by a confirmed holder would justify reopening. Its presence would confirm availability; an explicit new/introduction statement is needed to call the year a maker-confirmed launch. A positive maker withdrawal statement is separately required to establish discontinuation. No page number or unseen product claim has been inferred from the cover.
+- Read-only live check: **121** remains **2003–2007**, source_ref **408**, with zero bike links and the existing qualified description: `Sealed square-taper cartridge BB; hollow steel spindle, BC1.37 threads, 68/73mm shells. 110/113mm axles for both shell widths; 122.5mm for 68mm. MY2003 introduction reported; 2007 is latest checked attestation, not discontinuation.` The new lead changes the acquisition action, not those values. No SQL or mapping regeneration was needed. The broad source-lead search TODO is replaced by this concrete page-recovery target; the underlying manufacturer-date question remains unresolved. Task-only thread HTML and the two document photographs were discarded after recording the URLs and limits here.
+
 ## Unishift specimen and catalogue consolidation — 2026-11-17, applied and validated
 
 User approved the consolidation; applied and read back on 2026-11-17.

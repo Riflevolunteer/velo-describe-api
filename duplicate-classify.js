@@ -208,6 +208,9 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  // Cobra: lightweight nubuck/Ergal versus the separately sold foam-padded version.
+  // Bruegelmann 1982 p34 (220-240g / 320g), 1985 p100 (about 220g / 280g); kept 2026-11-19.
+  [12091, 12093],
   [11827, 11828], // Guida '99 scan 07: Sintesi Diagram / Diagram 2, separate headings and -16/-17 degree angles; cross-catalog-notes.md
   [11881, 11882], // Guida '99 scan 14: Connex 905 nickel-plated steel / 905 Inox stainless steel
   [4168, 11703], // Victory LX review 2026-11-18: existing short-cage Victory versus the brochure's long-cage LX; campagnolo.md

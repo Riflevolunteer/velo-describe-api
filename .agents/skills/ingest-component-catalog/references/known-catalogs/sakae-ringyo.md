@@ -454,10 +454,11 @@ Source465, printed p.9, fits sealed-bearing MTP1009/16 to T50 Tracker. The SR ma
   establishes a production-date boundary.
 - [Schwinn 1985 transcription](https://bikehistory.org/catalogs/1985.html)
   lists CRE-100 alloy micro-adjust, 26.6 x 190mm on Super Sport/Voyageur SP;
-  SAC310 on World Sport; CTC-5SG on Sprint; CXC-T310 on LeTour Luxe. Previously
-  known fitment evidence, not a new maker catalogue. The Super Sport image
-  there is a bike photograph without the printed specification block; verify
-  the block from a full scan before loading.
+  SAC310 on World Sport; CTC-5SG on Sprint; CXC-T310 on LeTour Luxe. These were
+  transcription leads at this stage. The original printed pp.30–31 were
+  subsequently recovered on 2026-11-19; the targeted CXC-T310 review and
+  applied addition are recorded below. This is bicycle-maker fitment
+  evidence, not an SR range catalogue or a Schwinn bike ingestion.
 - Held 1986 Raleigh/Miyata catalogues underpin existing exact-code CSV values.
   Raleigh US PDF at threespeedhub was accessible to the web reader but curl
   reset on both hosts today; its table was not visually verified in this pass.
@@ -691,4 +692,56 @@ promised recoverable links. Six component labels only:
 - **Generator.** Exact keys for every linked spelling, under a "Panasonic USA
   1985-89 fitment rows" comment in Cranksets / Seat Posts / Handlebars / Pedals /
   Stems. The "(SR)" in the titles stops substring matching, so these keys are needed.
+
+## Schwinn 1985 CXC-T310 printed specification — 2026-11-19, applied
+
+- **Primary evidence recovered:** Fleet Velo's [1981–90 Schwinn index](https://fleetvelo.com/SchwinnCat/flschwinn_1981_1990/index2.html),
+  original [printed p.30](https://fleetvelo.com/SchwinnCat/flschwinn_1981_1990/1985Ltwt30.JPG)
+  and [printed p.31](https://fleetvelo.com/SchwinnCat/flschwinn_1981_1990/1985Ltwt31.JPG),
+  visually checked at their original 1222/1219 × 1600 resolution. The spread
+  is headed “Technical Specifications 1985 Models”. Le Tour Luxe's p.31
+  crankset cell reads SR CXC-T310, 170mm, 30/46/50T, forged alloy with alloy
+  chainrings. This resolves the printed-block acquisition task; bikehistory's
+  transcription is no longer the sole evidence for this exact code.
+- **Added 12094:** Cranksets; `Sakae/Ringyo (SR) CXC-T310`;
+  `Forged alloy triple crankset with alloy chainrings; 170mm, 30/46/50T.`
+  (69 characters); years 1985–1985, meaning an attestation rather than
+  production boundaries. Brand 49, category 7, group NULL;
+  generated search text `Sakae/Ringyo CXC-T310`.
+- **Pre-load reconciliation:** no existing CXC-T310 title under normalized hyphen/space
+  spellings. Keep 10847 CXC-T300 (1984 triple), 11322 CXC-300 (double), and
+  11318 SXC-T310 (1987–89 triple) unchanged: the printed code is different and
+  there is no manufacturer crosswalk establishing equivalence. Generic CX
+  1747's [original specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=0EC2B326-BC02-4BD6-96EF-0E41EE629F48)
+  and its [single photo](https://www.velobase.com/CompImages/Crankset/BD37A1C3-AA79-40DC-9A6C-1FCE7690F64F.jpeg)
+  show a CX triple but no model code; this cannot identify it as either coded
+  triple. No merger or CX alias was added. BCD, weight and an introduction
+  or discontinuation date are not inferred.
+- **Applied after user approval:** registered source 476,
+  `Schwinn Lightweight Bicycles catalogue, USA (1985)` (catalogue, US,
+  citation to printed p.31), and added component 12094 with UUID
+  `44b754c9-e1c3-4018-b420-ef8ee81c4e06`. Load affected exactly one source
+  and one component; no updates, merges or deletes. The guards checked both
+  the fixed UUID and normalized code. The existing category/brand pairing
+  was reused. Reversal requires checking references before removing 12094,
+  then removing source 476 only if unused.
+- **Validation:** readback matched title, all 69 description characters,
+  1985–1985, brand/category/group, generated search text, UUID, source label,
+  citation and US market. Exactly one category/brand pairing exists; the new
+  component has no bike-spec references. The identical SQL rerun affected zero
+  rows in both tables. Sakae crankset duplicate reports (plain, `--near`,
+  `--paren`) expose no candidate involving 12094; the plain report's one
+  existing configuration pair is unrelated, and near/parenthetical reports
+  are empty.
+- **Bike-link follow-through:** the live query found no CXC-T310 spec value
+  and no links to 1747 or 10847. The six existing links to 11318 and 11322
+  remain untouched. Full pre/post comparisons across 108 loaded catalogues
+  and 23,380 specs match in scope, file selection, summary and findings:
+  23,365 unchanged, 15 pre-existing lost findings, zero gained/changed or
+  missing/ambiguous rows. No bikes, CSVs, overrides or links changed.
+- **Housekeeping:** removed the completed TODO action and reconciled the
+  source-hunt cross-reference. Task SQL, comparison reports and downloaded
+  review images/HTML were removed after validation; primary evidence remains
+  at the URLs above. This was a targeted crank-code check, not a full
+  reconciliation of the catalogue's other component specifications.
 
