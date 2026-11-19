@@ -778,13 +778,11 @@ add titanium construction, invent a separate Titan component or merge rows.
 Restoration values are year_from 1979 and source_ref 391, conditional on the
 row still matching the approved new state. Other fields remain unchanged.
 
-The **grey 1979 Titan remains unassigned**: it might denote Argent 12 SSC,
-Grise SSC Paris-Roubaix or another specification, and 395 g alone cannot
-settle that identity. GP4 is separately sold in the later dealer table, so
-do not use Titan as a general GP4 alias. Keep 8154 Argent 12 SSC, 5112
-Paris-Roubaix SSC, 5069 GP4 and the uncoded legacy SSC records 5108/5114
-unchanged. Reopen grey only for a dealer/maker code crosswalk or identifiable
-label/profile/material evidence tied to `91207-TIGR`.
+The grey 1979 Titan was left unassigned here; the 2026-11-20 follow-up below
+resolves it as Argent 12 SSC from the 1978/1980/1981 tables. GP4 is
+separately sold in the later dealer table, so do not use Titan as a general
+GP4 alias. 5112 Paris-Roubaix SSC, 5069 GP4 and the uncoded legacy SSC
+records 5108/5114 remain unchanged.
 
 Validation: searched all live Mavic rim titles/descriptions and
 the six candidate IDs; no separate Titan row exists. SELECT found no
@@ -801,6 +799,46 @@ were identical, including the 15 pre-existing lost-match findings. No bike link,
 generator, title, description, component insert/delete/merge or unrelated source
 was changed. Task-only SQL/comparison JSON, downloaded scans and page renders
 were discarded after validation; original URLs/page evidence are retained above.
+
+### Grey Titan `91207-TIGR` identified as Argent 12 SSC — 2026-11-20, applied
+
+Read the registered Brügelmann editions not used above (1978, 1980, 1981),
+plus 1979 again, at 200 dpi:
+
+- [1978 p.12](https://s01335cf0ecfff54f.jimcontent.com/download/version/1451656901/module/6124979162/name/Bru%CC%88gelmann%2B1978.pdf#page=12)
+  (source 393, printed December 1977): `81225-MTIT`, "DIE BLAUE-MAVIC-TITAN-FELGE
+  (jetzt auch in silbergrau)", originally for professionals, 395 g/20 mm,
+  109 DM. One code covers blue and the new silver-grey finish.
+- [1979 p.12](https://s01335cf0ecfff54f.jimcontent.com/download/version/1451656901/module/6124978862/name/Bru%CC%88gelmann%2B1979.pdf#page=12)
+  (source 394): TITAN-MAVIC-FELGE, 20 mm/395 g; `91206-TIBL` "in BLAU" and
+  `91207-TIGR` "in GRAU", 109 DM each.
+- [1980 p.13](https://s01335cf0ecfff54f.jimcontent.com/download/version/1451656901/module/6124978662/name/Bru%CC%88gelmann%2B1980.pdf#page=13)
+  (source 395): "die MAVIC TITAN/MAGNESIUM felgen", `01308-TIAR` "ARGENT" hell
+  glanzpoliert 395/20 119 DM, `01309-TIBL` "BLEU" 395/20 128 DM, and
+  `01310-TIPR` "PARIS-ROUBAIX" mattgrau 400/21.5 158 DM, marked "NEU — die
+  Erfolgsfelge der Saison '79". GP4 is separate (`01307-MGP4`, 39 DM).
+- [1981 p.13](https://s01335cf0ecfff54f.jimcontent.com/download/version/1451656901/module/6124978262/name/Bru%CC%88gelmann%2B1981.pdf#page=13)
+  (source 388): the same three as `11226-TIAR`, `11224-TIBL`, `11221-TIPR`,
+  now called "Hartaluminiumfelgen".
+
+The blue code continues every year (MBLU → MTIT → TIBL). The grey `TIGR`
+disappears in 1980 as `TIAR` Argent appears with the same 395 g/20 mm spec and
+family heading. Paris-Roubaix is flagged as new in 1980 with a different
+400 g/21.5 mm profile, and GP4 has its own code and price class, so neither is
+`TIGR`. Mavic 1979 (source 301) gives Argent 12 SSC 20 mm and 395 g. This is a
+dealer-code identity inference, not a maker crosswalk; "Titan" remains a dealer
+material claim, not added to the row.
+
+Applied (user approved): **8154** `Mavic Argent 12 SSC`, source_id
+`13bdb709-c0fd-11f1-a2df-02fea3763e8d`, `year_from` 1979 → **1978**,
+source_ref 242 → **393**. Title, search text and description unchanged.
+Restore with `year_from = 1979, source_ref = 242`, guarded on the new state.
+
+Validation: preflight matched one row; the rerun affected zero rows. 8154 has
+no bike links and no generator or duplicate-registry references.
+`compare-bike-links.js`: 23,395 of 23,410 specs unchanged, 0 gained/changed,
+the same 15 Huret Rival losses. Quality report: 0 errors; no finding names
+8154. Mavic duplicate report still has 13 pairs.
 
 ## CXP30 and Open Pro weight attribution — 2026-11-19, applied
 
@@ -1704,8 +1742,8 @@ not a fresh extraction of every catalogue or verification of every specimen.
    Titane clincher / 10607 CXP 30 Titane tubular** distinction recorded in
    cross-catalog-notes.md.
 
-Previously recorded questions remain evidence gaps: Sprint, Velotech, grey Titan
-(the blue offering is reviewed in the 2026-11-19 Titan/Bleu section above),
+Previously recorded questions remain evidence gaps: Sprint, Velotech (grey and
+blue Titan are since resolved in the Titan/Bleu section above),
 190 NE versus 190FB/195NE, bare 400, 630 lettering, early rim identities and
 the conflicting 310 headset weights. Rechecked 1986–87 p.22: it does print
 82 g for 311/312; this does not resolve the 1984 102 g discrepancy. Earlier
