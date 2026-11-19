@@ -15,7 +15,8 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Bike catalogues
 
-- Investigate remaining Motobecane 1970–90 edition gaps using the [recorded source leads](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#19701990-gap-source-leads--2026-11-18).
+- Verify the date and bike-brand treatment of the MBK Course brochure attributed to 1991, then prepare its road-bike ingest from the [inspected scans](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#mbk-bicycle-catalogue-backlog--source-review-2026-11-19).
+- Recover Motobecane/MBK 1970–72 and 1987–90 editions with dated adult-bike specifications; use the [recorded gap leads](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#19701990-gap-source-leads--2026-11-18) and [MBK source limits](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#mbk-bicycle-catalogue-backlog--source-review-2026-11-19).
 - Decide Panasonic brand treatment, then ingest the 1985–89 US bikes from [recorded sources](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md).
 - Assess the bikalog backlog: Koga-Miyata 1980–2001, Nishiki 1987, Raleigh 1991, Colnago C35 1989.
 
@@ -62,6 +63,6 @@ Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agen
 - Recover a readable Gipiemme 1980/1982 brochure or coded 1980–83 importer list from a new scan/holder lead; use the [checked sources and recovery targets](.agents/skills/ingest-component-catalog/references/known-catalogs/gipiemme.md#198083-source-hunt--2026-11-19-read-only).
 - Seek Vittoria 1982–93 maker catalogues and Bianchi 1974–77/1979–80/1991–99 sources.
 - Obtain a new maker/importer sheet or coded original fitment for Modolo Quattro/Start, Altenburger S3/53S3, Lee Chi cantilevers, Chang Star 500/cantilever and Polygon AF-500; obtain variant/aero evidence for the remaining CLB Peugeot fitments and a period silver-Sedicolor key for Sedis 9719. Use the [reviewed sources and exact evidence limits](.agents/skills/ingest-component-catalog/references/source-hunts.md#named-brake-and-sedis-follow-up--2026-11-19-read-only) before reopening the hunt.
-- Seek missing Brügelmann 1986–87/1989–92 editions through a new holder.
+- Recover complete Brügelmann 1986–87/1989–92 scans or dated component pages: pursue a restored Velopedia 1990 entry/confirmed shareable copy and the 1992 joglo page lead; reopen the other years only for a new scan or confirmed holder. Use the [checked sources and evidence limits](.agents/skills/ingest-component-catalog/references/source-hunts.md#brügelmann-missing-editions--2026-11-19-source-hunt).
 - Recover the BB-UN73 specification/new-product page from Shimano’s 2003 Trade Sales & Support Manual (English U, August 2002 imprint), preferably through a free scan or confirmed holder; use the [verified manual target and acquisition leads](.agents/skills/ingest-component-catalog/references/known-catalogs/shimano.md#bb-un73-2003-manual-acquisition-lead--2026-11-19-read-only) before another search. Seek positive manufacturer withdrawal evidence separately.
 - Recover Sedis May 1971 only from a new readable scan or confirmed holder; use the [reviewed source limits](.agents/skills/ingest-component-catalog/references/known-catalogs/sedis.md#may-1971-recovery-search--2026-11-18-no-new-readable-copy) before reopening the hunt.

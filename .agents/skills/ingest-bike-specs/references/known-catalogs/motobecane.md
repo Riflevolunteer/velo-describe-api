@@ -177,6 +177,76 @@ specs / 35 links. All translated cells fit 255 characters; residual German
 prose search is clear. All 13 test files pass. Readback and the zero-change
 rerun completed successfully as recorded above.
 
+## MBK bicycle catalogue backlog — source review 2026-11-19
+
+User switched from component work to considering Motobécane/MBK bike ingests.
+Read-only live check confirms editions grouped c.1973 through 1986, including
+separate 1985 general and French c.1984–85 sources; no later MBK bike source
+was returned. This is edition coverage, not proof that every model/market is
+represented. The 1984 GB source currently has 13 bikes; use live queries rather
+than the older 12-bike snapshot below. No source, bike, component, CSV or
+generator changes were made in this review.
+
+**New accessible collection:** TobecOnline thread 10627, “Les vélos”,
+[page 2](https://www.tobeconline.fr/forum/viewtopic.php?t=10627&start=10) and
+[page 3](https://www.tobeconline.fr/forum/viewtopic.php?t=10627&start=20),
+posted by jack177071. The web reader initially returned 403 on the www host;
+ordinary curl fetched the HTML and original public attachments successfully.
+Attachment URLs below omit disposable forum session IDs.
+
+- **Best next road-ingest candidate: brochure attributed to 1991, Course.**
+  Four photographs, attachments
+  [6571 cover](https://www.tobeconline.fr/forum/download/file.php?id=6571),
+  [6572](https://www.tobeconline.fr/forum/download/file.php?id=6572),
+  [6573](https://www.tobeconline.fr/forum/download/file.php?id=6573) and
+  [6574](https://www.tobeconline.fr/forum/download/file.php?id=6574), all
+  downloaded and visually checked. The three spreads show ten complete road
+  bikes: Record Max C977, Super Record C477, Trainer C207/C207D, Super Leader
+  C147/C147D, Leader C137, Super Sprint C127/C127D and Sprint C117. The D
+  models are explicit mixte road partners. Printed prose names equipment such
+  as Campagnolo Athena, Shimano 300 EX, Sachs 3500 and SunTour; these require
+  normal model/category/era reconciliation, not automatic whole-group links.
+  Equipment coverage is short portrait prose, not a complete specification
+  table; no parts may be filled from photographs or neighbouring models.
+  **Dating remains to verify:** 1991 is the poster's heading (7 March 2024),
+  not a visible cover year. The C977/C477 spread captions the Tour de France
+  1990, which establishes 1990 or later, not a uniquely proven 1991 model year.
+  Recover a matching dated cover/imprint or period model list before assigning
+  a firm year. MBK branding is explicit; settle bike-brand treatment in the
+  reviewed ingest rather than silently inheriting the earlier co-branded
+  brochure's Motobecane attribution. No SQL or maintained CSV prepared yet.
+- **Attributed 1990 Loisir, partial:**
+  [6534 cover](https://www.tobeconline.fr/forum/download/file.php?id=6534) and
+  [6535 spread](https://www.tobeconline.fr/forum/download/file.php?id=6535)
+  were visually checked. The spread names Randonnee/CT15 and Interclub/TT22
+  alongside Country R21D/R21 city-style bikes. CT15 and the tandem are possible
+  in-scope candidates, subject to a complete scope/source review; their small
+  portrait descriptions are sparse. The cover does not print a year.
+  Separate [attachment 7054, “1990 5.jpg”](https://www.tobeconline.fr/forum/download/file.php?id=7054)
+  is another brochure/leaflet page, showing small-wheel youth models and a
+  Bobigny commercial address. Do not join it to the Loisir brochure merely
+  because the filenames share 1990. It supplies no adult road spec table or
+  independent printed year.
+- **1988 dated price list, excluded as a bike-ingest source:**
+  [7057](https://www.tobeconline.fr/forum/download/file.php?id=7057), visually
+  checked, explicitly says 1er juin 1988 / Tarif Bicyclettes. This surviving
+  page is BMX and children's models, with part of the price column obscured.
+  It is not an adult-road specification table and does not date the other
+  brochures. [eBay 188879659886](https://www.ebay.fr/itm/188879659886) is an
+  additional seller-attributed 1988 bicycle catalogue lead; indexed as nine
+  photos, but those images and the date have not been inspected here. No
+  purchase or contact was made; a listing is not an acquired source.
+- **Later unreviewed leads in the same collection:** 1992 Course attachments
+  6577–6579 and VTT 6583–6584, plus 1991 Loisir 7055–7056, are indexed on page
+  3 but were not downloaded/read. The 1989 entries on page 2 are explicitly
+  children's range; do not treat them as an adult-road backlog. The similarly
+  named `1990_MBK.pdf` on the Motobécane club S3 host contains mopeds and is
+  excluded. No inference about bicycle coverage follows from that file.
+
+Recorded the new dating/preparation action and narrowed the existing edition-gap
+task. Task-only HTML and the eight inspected photographs were discarded after
+recording their URLs and limits; no DB mutation or mapping validation was needed.
+
 ## 1970–1990 gap source leads — 2026-11-18
 
 - [User-supplied c.1973 US scan](https://www.bikecatalogs.com/download/3780) is now loaded; see the validated entry above. No printed year established; the [Ebykr index](https://ebykr.com/library/motobecane-catalog-about-1973/) corroborates *about* 1973, not an imprint date. The Michigan dealer stamp supports US distribution.
