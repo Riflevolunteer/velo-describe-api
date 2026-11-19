@@ -1,3 +1,501 @@
+## Branford 1995/96 component catalogue — applied and validated 2026-11-19
+
+**Applied and validated after explicit user approval.** Added components **12022–12070**, updated **55 existing rows**, registered source **473**, brands **Kooka762, Ringlé763, Onza764, Kore765**, and ten category/brand pairs. This completes the component reconciliation for this edition. No bicycle rows, bike-spec writes, CSV or matcher edits, merges or deletions. The earlier 1994/95 and archive-attributed 1987 sources remain separate work.
+
+[Original 48-page PDF](https://timslife.com/brancat/Catalogs/bb19-2_1995.pdf), 57,698,585 bytes; retained at `/tmp/branford-edition-triage-20261119/bb19-2_1995.pdf`. Cover: **1995/96, Vol.19 No.2**, orders through **31 December 1996**. This is period retailer availability/configuration evidence, not manufacturing introduction/discontinuation evidence. New rows use **1995–1996** as the edition availability window; existing earlier/later independent attestations are retained. Retailer stock codes are not maker part numbers.
+
+Source **473**: **Branford Bike catalogue Vol.19 No.2 (1995/96)**, type catalogue, country US. Citation (148 characters): https://timslife.com/brancat/Catalogs/bb19-2_1995.pdf ; cover: 1995/96, Vol.19 No.2; ordering through 1996-12-31; 48 PDF pages; components pp.20-29.
+
+### Applied change set
+
+**49 component additions, 55 existing-row updates, four new brands and ten category/brand registrations; one new source.** New brands: **Kooka, Ringlé, Onza, Kore**. Reuse existing **Paul Components 463**, **Wilderness Trail Bikes (WTB) 185**, **Control Tech 734**, **Topline 261** and other makers. Flite is the Selle Italia model, not a new maker. Historical Ringlé components are registered under their printed maker, rather than assuming that the later Sun/Moby Deuce branding establishes ownership for 1995/96.
+
+The inventory has **173 mentions**: 54 new-row mentions resolve to 49 additions, 57 update mentions resolve to 55 existing rows, 12 unchanged mentions, and 50 held mentions. The two Bubba rear-hub listings share RL-HB-RB and become one row. Each Continental MTB model combines its explicitly offered folding/steel beads in one model row. Repeated listings do not inflate the component count.
+
+No existing titles, maker/category/group ownership or search strings change. New search strings use `scripts/search-text.js`. All affected old values are retained below. No `year_from` moves later; earlier attestations and year-to extensions are visible in the before/after table. Existing aggregate Dia-Compe families are enriched only for the printed SS-7 and PC-8 members; their other members are not claimed to have these specifications.
+
+### Coverage
+
+All 48 PDF pages were triaged through the searchable OCR/index; the component boxes on **PDF/printed pp.20–29** were visually transcribed. Page30 and the back cover were also visually checked: p.30 is tyre-care material, and p.48 is an index/contact page, **not a component-group matrix**. The full component inventory and exclusions supersede the acquisition-stage OCR-only qualifications for this edition.
+
+| PDF page | Review | Contents / exclusion |
+| --- | --- | --- |
+| 1 | cover | Cover explicitly prints 1995/96, Vol.19 No.2, and order-through 31 December 1996. |
+| 2 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 3 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 4 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 5 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 6 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 7 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 8 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 9 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 10 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 11 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 12 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 13 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 14 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 15 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 16 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 17 | excluded | Clothing/shoes/helmets/lights and personal accessories; no eligible component listing in OCR triage. |
+| 18 | excluded | Indoor trainers/rollers and accessories. |
+| 19 | excluded | Indoor trainers/rollers and accessories. |
+| 20 | inventoried | Cranksets and bottom brackets; Photographic crank/BB material is covered by adjacent listings; no additional identifiable model. No bikes or non-eligible parts on page. |
+| 21 | inventoried | Headsets; other page areas reviewed; Bearings, hubs/axles and hub hardware, brake hoods and pads are outside requested categories or excluded items. |
+| 22 | inventoried | Brake levers and brake calipers; Suspension forks/shocks and ride kits omitted; brake pads omitted. |
+| 23 | inventoried | Pedals; Cleats, cleat lube and other replacement cleats omitted. |
+| 24 | inventoried | Saddles and seat posts; No excluded products identified. |
+| 25 | inventoried | Saddles, handlebars and stems; Grips, skewers/quick releases, bar ends and other excluded parts omitted. |
+| 26 | inventoried | Hubs, cassettes, and chains.; Ignored non-eligible adjacent listings and product photographs; no eligible models omitted. |
+| 27 | inventoried | Rims and complete front/rear wheels.; DT spokes and nipples and professional wheel-building service excluded as out of scope. |
+| 28 | inventoried | Road clincher and road tubular tyres.; Tubes excluded. Tire-care content not on this page. |
+| 29 | inventoried | Hybrid and ATB tyres.; Tubes excluded; non-eligible descriptions and promotional material omitted. |
+| 30 | excluded | No eligible components.; Tire care, rim strips/tape, glue, patch kits, tire tools/levers, pressure gauge and storage rims are out of scope. |
+| 31 | excluded | Computers/HR monitors,bottles/bags/pumps,lubricants/tools; incidental component names are fitment/tool compatibility. |
+| 32 | excluded | Computers/HR monitors,bottles/bags/pumps,lubricants/tools; incidental component names are fitment/tool compatibility. |
+| 33 | excluded | Computers/HR monitors,bottles/bags/pumps,lubricants/tools; incidental component names are fitment/tool compatibility. |
+| 34 | excluded | Computers/HR monitors,bottles/bags/pumps,lubricants/tools; incidental component names are fitment/tool compatibility. |
+| 35 | excluded | Computers/HR monitors,bottles/bags/pumps,lubricants/tools; incidental component names are fitment/tool compatibility. |
+| 36 | excluded | Computers/HR monitors,bottles/bags/pumps,lubricants/tools; incidental component names are fitment/tool compatibility. |
+| 37 | excluded | Computers/HR monitors,bottles/bags/pumps,lubricants/tools; incidental component names are fitment/tool compatibility. |
+| 38 | excluded | Computers/HR monitors,bottles/bags/pumps,lubricants/tools; incidental component names are fitment/tool compatibility. |
+| 39 | excluded | Computers/HR monitors,bottles/bags/pumps,lubricants/tools; incidental component names are fitment/tool compatibility. |
+| 40 | excluded | Nutrition,books/travel,novelties/jewellery/gifts. |
+| 41 | excluded | Nutrition,books/travel,novelties/jewellery/gifts. |
+| 42 | excluded | Nutrition,books/travel,novelties/jewellery/gifts. |
+| 43 | excluded | Nutrition,books/travel,novelties/jewellery/gifts. |
+| 44 | excluded | Nutrition,books/travel,novelties/jewellery/gifts. |
+| 45 | excluded | Nutrition,books/travel,novelties/jewellery/gifts. |
+| 46 | excluded | Nutrition,books/travel,novelties/jewellery/gifts. |
+| 47 | excluded | Order form,terms and contact information. |
+| 48 | excluded | Back-cover index and store promotion only; index points to component categories on printed pages 23–27 and tire pages 28–30. No individual component statements.; No component rows transcribed; catalog index is category-level corroboration only. |
+
+### New components
+
+All added rows below have years **1995–1996**, NULL group, a fixed UUID load key and source **473**. Keys A001–A079 correspond to the transcription references `branford95_pPP_NNN`; B001–B094 to `pPP-NNN`. The first column now also records the actual database component ID.
+
+| ID / key / page | Category | Title | Description | Fixed source_id |
+| --- | --- | --- | --- | --- |
+| 12022 / A015 / 20 | Cranksets | Kooka ATB Racing Cranks | High-tensile aluminium I-beam crank arms with replaceable spider; Shimano compact or standard chainrings, 170/175mm, silver; 390g per pair of cranks. | 6ed36ad5-f85e-47c8-ae64-1b74a1b34817 |
+| 12023 / A017 / 20 | Bottom Brackets | Kooka Titanium Bottom Bracket | Rifle-drilled aircraft-titanium bottom bracket, thick Teflon seals and triple bearings; compact or standard crank versions; 170g. | 8db5bd83-9637-4824-ac73-e098de63e4cb |
+| 12024 / A026 / 20 | Bottom Brackets | Ritchey ProLite Ti Bottom Bracket | Double-sealed cartridge bearings, 7075 alloy cups and hollow 6Al-4V titanium spindle; English threading, 107/110/113/120mm axle; 150g. | 3a57f17b-6815-4a8f-8fee-d3da2b70695a |
+| 12025 / A031 / 21 | Headsets | Chris King Gripnut Headset | Threaded Gripnut headset; 7075 alloy cups and stainless cartridge bearings, black/silver. 1in: 92.5g, 33mm stack; 1-1/8 or 1-1/4in: 115g, 39mm stack. | 3f1ce1dc-6721-4c3d-8456-2bd1fd76625f |
+| 12026 / A035 / 22 | Brake Levers | Ritchey WCS ATB Brake Levers | Cold-forged 6061-T6 three-finger ATB brake levers; WCS anodised finish, supplied with cables and housing; 180g per pair. | 15a51703-ebd0-45a5-be05-f43be048a571 |
+| 12027 / A038 / 22 | Brake Levers | Paul Components Love Levers | Machined 6061-T6 aluminium brake levers, oversized stainless pivots and reach adjustment; black, purple or blue; 199g per pair. | 63962acf-be37-4f01-b85d-9594023e3800 |
+| 12028 / A039 / 22 | Brake Levers | Kooka Racha Brake Levers | CNC-machined billet brake levers; needle-bearing pivot, Teflon-lined cable adjuster, one-hand adjustment and wedge clamp; silver/black, 86g per pair. | 7339314e-d727-448b-851e-5931f4d3a692 |
+| 12029 / A041 / 22 | Brakes | Ritchey WCS Cantilevers | Cold-forged 6061-T6 cantilevers, brass bushings, dual spring-tension adjustment and Logic pads; front and rear offered, WCS anodised finish; 150g/pr as listed. | d533e1d2-5871-472d-9c0c-73935ab90d90 |
+| 12030 / A044 / 23 | Pedals | LOOK S2X ATB Pedals | ATB clipless pedal, silver; 32-degree pedalling angle, 250g as listed. | e41e58e3-9d1a-4195-a6e8-26c51e8987a7 |
+| 12031 / A045 / 23 | Pedals | LOOK S2R ATB Pedals | ATB clipless pedal for riders over 200lb or downhill use; red, 32-degree pedalling angle, 250g as listed. | 4e08b438-9482-4bf5-8abd-13a6bb86a34f |
+| 12032 / A046 / 23 | Pedals | Onza ATB Clipless Pedals (steel axle) | ATB clipless pedals with steel axle, 340g; removable elastomers, four sets supplied for release adjustment, variable float and bidirectional cleats. | 58bccd1f-4342-47fd-af3c-7ba7d7722b63 |
+| 12033 / A047 / 23 | Pedals | Onza ATB Clipless Pedals (titanium axle) | ATB clipless pedals with titanium axle, 290g; removable elastomers, four sets supplied for release adjustment, variable float and bidirectional cleats. | 9ceb5b66-0ecb-464a-a251-500aa7be7287 |
+| 12034 / A048 / 23 | Pedals | Ritchey Logic ATB Clipless Pedals | ATB clipless pedals with CrMo axle, sealed ball bearings and OilLite bushings; large platform and float; 350g. | 212a9bf0-f083-47a0-9693-16889a102b87 |
+| 12035 / A049 / 23 | Pedals | Ritchey WCS ATB Clipless Pedals | ATB clipless pedals with 6Al-4V titanium axle, sealed ball bearings and OilLite bushings; large platform and float; 300g. | 86d28000-3b56-4069-8023-71a791658cdf |
+| 12036 / A054 / 24 | Saddles | Selle San Marco Hi-Pro Regal Titanium | Regal saddle with titanium rails in light-alloy finish, rivets, extra-tough leather, differentiated Rilsan body and thick polystyrene padding; 310g. | a0f1a9f7-4ef2-406b-a408-3a495cacd045 |
+| 12037 / A055 / 24 | Saddles | Selle San Marco Hi-Tech Concor Light Titanium | Concor Light saddle with titanium frame, improved ergonomics and vibration damping; thick durable leather cover; 175g. | d508b394-beae-4a7a-9f03-d9a68b5da8e2 |
+| 12038 / A059 / 24 | Saddles | Selle San Marco Squadra HDP CrMo | Squadra HDP saddle with chromoly rails, DuPont Hytel polymer as printed, multi-padding system and extra-thick embroidered leather. | 190ad049-15b4-4bf2-aa0b-c5ac44a8df2b |
+| 12039 / A060 / 24 | Saddles | Selle San Marco Squadra HDP Titanium | Squadra HDP saddle with titanium rails, DuPont Hytel polymer as printed, multi-padding system and extra-thick embroidered leather. | 762f39ff-3e65-4ad1-8033-08b8d0565fe5 |
+| 12040 / A061 / 24 | Saddles | Selle San Marco SA 601 (steel rails) | Hi-Tech Suspension Active saddle developed with Pirelli; damping elastomers, differentiated Rilsan body, leather cover and steel rails. | 7285dc50-d4c3-44b2-98b5-02d72a02b8e8 |
+| 12041 / A062 / 24 | Saddles | Selle San Marco SA 601 (titanium rails) | Hi-Tech Suspension Active saddle developed with Pirelli; damping elastomers, differentiated Rilsan body, leather cover and titanium rails. | 773e80ce-9d11-4cea-a8b5-90c68341b33f |
+| 12042 / A064 / 24 | Saddles | Avocet O2 Women's Titanium Saddle | Women's racing saddle with shorter nose, flared rear, aerated gel/air padding, scuff-resistant cover and Ti6Al-4V rails. | 62f8e00c-5ac2-4739-913f-5cfda9a10e06 |
+| 12043 / A065 / 24 | Seat Posts | Ritchey WCS ATB Seatpost | Directional quad-butted post, titanium fixing bolt, forged clamp and cradle, hard WCS anodising; 330mm, 26.4/26.6/26.8/27.0/27.2mm, 225g. | 08363a46-0976-4e72-b617-b518a82fdb0b |
+| 12044 / A066 / 24 | Seat Posts | Ritchey Comp ATB Seatpost | Force Directional post, forged clamp and cradle, silver; 330mm, 26.4/26.6/26.8/27.0/27.2mm, 250g. | f7899131-3a1c-42e3-bd93-7ad76cc5f7d6 |
+| 12045 / A068 / 24 | Seat Posts | Ringlé Moby Seatpost | Easton tube with patented one-bolt head and height scale; black/silver, 350mm, 26.8/27.0/27.2/28.6/29.4/31.6mm; 220g average listed. | 9767f688-826d-4ae7-983a-482d7cd16ab5 |
+| 12046 / A070 / 24 | Seat Posts | Control Tech ATB Seat Post | Aircraft-grade aluminium seatpost with strengthening centre ridge; black, 350mm, 26.6/26.8/27.0/27.2/28.6/30.2/31.6mm; 280g. | bd46c4f7-d7a5-4ffe-ac46-ee8cad51c117 |
+| 12047 / A073 / 25 | Handlebars | Ritchey CompLite ATB Handlebar | Drawn 2014-T6 aluminium flat ATB bar; 4-degree bend, 560mm, silver, 150g. | 33874289-9654-40f6-a619-2ca73dcd2b43 |
+| 12048 / A076 / 25 | Stems | Ringlé Zooka Quill Stem | CNC-machined 7075-T6 quill stem, titanium expander/binder bolt and removable front clamp; 120/135/150mm, 1/1-1/8/1-1/4in, 0/10/17deg; 270g. | 19105848-2682-494a-adc1-8c77f3517e96 |
+| 12049 / A077 / 25 | Stems | Ringlé Zooka Clamp-On Stem | 7075-T6 clamp-on stem with SRP titanium bolt and size shims; 1/1-1/8/1-1/4in, 120/135/150/180mm, 0/10deg; black/red/silver as offered. | 4c102fad-4e60-4e91-893f-ef8ea7b206d6 |
+| 12050 / A078 / 25 | Stems | Kore ATB Stem | 6061 aluminium stem with oversized double-oval tube; 1/1-1/8in, silver/black. Offered in 135/150mm and 0/10deg configurations; listed 175g at 135mm, 0deg. | d3413d68-38b8-4e1d-baa8-083484cc49be |
+| 12051 / A079 / 25 | Stems | Control Tech ATB Stem | 6061-T6 aluminium ATB stem, black; 1/1-1/8/1-1/4in, 0/10deg, 120/135/150mm; 180g. | c2b8cecb-1538-4664-b6ef-a46329a42150 |
+| 12052 / B001 / 26 | Hubs | Ringlé SuperBubba Suspension Front Hub | One-piece aluminium shell, 7075-T6 axle, large flanges and full-coverage bearing dust caps; 32/36 holes, black/red/silver; 156g. | 502b5ca4-05b7-4d95-9bae-9787ec7c5a35 |
+| 12053 / B002 / 26 | Hubs | Ringlé SuperEight Cassette Rear Hub | Aluminium shell (printed 7076-T6), steel axle/freehub/ratchet, three pawls; Shimano/SRP 7/8-speed compatibility with shims, road 130mm option; 32/36 holes, black/red/silver; 395g. | acf56807-b845-4712-828a-e9bfaeeaa978 |
+| 12054 / B003 / 26 | Hubs | Ringlé Bubba Front Hub | 7075-T6 alloy shell and 12mm axle, sealed cartridge bearings; 28/32 holes; 115g. | 3a79f593-70ee-421b-999a-1e0d7587c417 |
+| 12055 / B004 / 26 | Hubs | Ringlé Bubba Freewheel Rear Hub | 7075-T6 alloy shell and 12mm axle, sealed cartridge bearings; road or ATB 6/7/8-speed freewheel use; 32 holes, black/silver, 165g. | ffc9f419-3154-45ce-8d37-1afb16a82f0d |
+| 12056 / B017 / 26 | Chains | Sedis SC-M55 MTB Chain | MTB chain, model SC-M55, offered for mountain-bike drivetrains. | 84337546-2dbc-472a-9d1a-528ee90c44b4 |
+| 12057 / B018 / 26 | Chains | Sedis SC-M90 Premium MTB Chain | Premium MTB chain, model SC-M90, offered for mountain-bike drivetrains. | 291925d8-020d-472e-b0d1-5ee959b60a6e |
+| 12058 / B037 / 27 | Rims | Mavic Mach 2 Ceramic (700c) | 700c aero tubular rim with ceramic finish, 32/36 holes; 470g. | 4e707ece-2b9f-4d4b-9362-6297a4d4044e |
+| 12059 / B042 / 27 | Rims | Mavic 230 SBP (26in) | 26in MTB clincher rim, 23mm wide, silver SBP finish, 28/32/36 holes; 380g. | 3f8c5c72-5007-419b-b458-12d953a910c1 |
+| 12060 / B043 / 27 | Rims | Mavic 230 TIB (26in) | 26in MTB clincher rim, 23mm wide, titanium-colour TIB finish, 28/32/36 holes; 380g. | 400a0c27-636c-4b07-a8d2-528e7d86dd86 |
+| 12061 / B046 / 27 | Rims | Mavic 117 SUP CD (26in) | 26in MTB clincher rim, 23mm wide, SUP joint and hard CD anodising, 28/32/36 holes; 450g. | 363a0a4f-e20e-4bdd-a031-f29aaa7cf441 |
+| 12062 / B048 / 27 | Rims | Mavic 117 SUP CD Ceramic (26in) | 26in MTB clincher rim, 23mm wide, SUP joint, hard CD anodising and ceramic braking flanks, 28/32/36 holes; 460g. | cb7689b6-f573-4b63-9786-e0cbc9bc03ef |
+| 12063 / B083 / 29 | Tyres | Ritchey Moby Bite | ATB tyre with thick low-durometer rubber tread; 26x2.1, steel bead, 650g. | 9ec237a9-ce55-46e6-9570-6a9c100260e4 |
+| 12064 / B084 / 29 | Tyres | Continental Competition Pro 1 | 26x2.125 MTB tyre; folding bead 650g or steel bead 700g. Dedicated Competition Pro 1 off-road model; separate from Competition road tubular. | c8de9886-c468-4fea-99f6-9f580265511a |
+| 12065 / B086 / 29 | Tyres | Continental Competition Pro 2 | 26x2.125 MTB tyre; folding bead 600g or steel bead 650g. Dedicated Competition Pro 2 off-road model; separate from Competition road tubular. | 9cb1a8b3-053b-4d71-b14f-804ccb84455b |
+| 12066 / B088 / 29 | Tyres | Continental Leader Pro | 26x2 MTB tyre; folding bead 530g or steel bead 580g. | 7f7267fc-f7be-45a6-8903-5fb85180b2eb |
+| 12067 / B090 / 29 | Tyres | Continental Cross Country Pro | 26x1.9 MTB tyre; folding bead 530g or steel bead 580g. | e3720c0d-78d4-4e5a-86eb-a48f1388ccea |
+| 12068 / B092 / 29 | Tyres | WTB Velociraptor (rear) | Rear-specific MTB tyre, 26x2.1, folding Kevlar bead, black; 625g. | fb7c4073-4211-4ef5-a8c0-d9ee3648d0b6 |
+| 12069 / B093 / 29 | Tyres | WTB Velociraptor (front) | Front-specific MTB tyre, 26x2.1, folding Kevlar bead, black; 645g. | 6d7ff22c-17a4-4932-a637-9c8f6fef7b38 |
+| 12070 / B094 / 29 | Tyres | WTB Primalraptor | MTB tyre, 26x1.95, folding Kevlar bead, black; 645g. | 6de85e47-30f9-49f8-a30b-01c60e8e1d31 |
+
+### Existing rows: complete before/after values
+
+Titles are unchanged. The old source_ref is shown; all 55 applied updates now use source **473**. Stable component IDs, source_id, search_text, maker/category/group and images were verified unchanged. Restoring an update means setting description, years and source_ref to these exact old values with guards against the reviewed after-values; restore any future mappings first if a later task adds them.
+
+| ID / unchanged title | Page | Years before → after | Old description | Applied description | Old source_ref |
+| --- | --- | --- | --- | --- | --- |
+| 1504 Campagnolo FC-01CSOR, Record OR | 20 | 1992–1995 → 1992–1996 | Campagnolo FC-01CSOR, Record OR, Italy, 810 grams (Actual),175mm, 42, 30, 20 | Record OR mountain triple crankset; 170/175mm, 20-30-42, 20-32-42, 22-32-42/44 rings. Measured specimen: 810g, 175mm, 20-30-42. | 1 |
+| 11172 Ritchey Logic Road | 20 | 1996–1996 → 1995–1996 | Cold-forged alloy road crankset, arms 170-180 mm, 39-53 rings; 590 g with rings. | Cold-forged satin-polished alloy road crankset, 590g with rings. 1995/96: 42-53, 170/172.5/175mm. 1996 maker listing: arms 170-180mm, 39-53 rings. | 357 |
+| 11305 Ritchey Logic Compact Mountain | 20 | 2000–2000 → 1995–2000 | Compact mountain crankset;94/58mm chainring bolt pattern,625g. | Compact mountain crankset; 94/58mm chainring bolt pattern, 625g. SLP-compatible, 22-32-42 Supershift rings, 170/175mm. | 411 |
+| 1721 Ritchey Logic Crankset | 20 | 1991–1992 → 1991–1996 | Cold-forged duralumin MTB crankset made by Sugino, hidden pin, 170-180 mm, Q-factor 151 mm, 74/110 BCD, 24-36-46 or 26-36-48; 650 g spec, 714 g measured (175 mm, all parts). Black anodised added 1992. | Sugino-made cold-forged duralumin MTB crank, hidden pin; 170-180mm, Q151, 74/110BCD. 1991/92: 24-36-46 or 26-36-48, 650g; measured 175mm complete 714g. 1995/96 Logic Mountain: 26-36-46, 170/175mm, 712g. Black added 1992. | 150 |
+| 1488 Campagnolo FC-01CH, Chorus | 20 | 1992–1996 → 1992–1996 | Campagnolo FC-01CH, Chorus, Italy 1992 Road Range: 170-175, rings 39-42 / 52-53. | Chorus road double crankset, 170/172.5/175mm; 39, 41 or 42 inner with 52/53 outer. Earlier maker range: 170-175mm, 39-42 / 52-53. | 357 |
+| 2006 Topline Road | 20 | 1990–1996 → 1990–1996 | 7075-T6 alloy road crank, arms 160-180 mm in 2.5 mm steps, Shimano-compatible rings (Campagnolo version available), silver. | 7075-T6 alloy road cranks, 160-180mm in 2.5mm steps, Shimano or Campagnolo chainring bolt patterns, polished silver; 345g per pair of cranks. | 357 |
+| 8412 Ritchey Logic Pro | 20 | 1991–1992 → 1991–1996 | Sealed chromoly cups with precision-ground bearing surfaces, hollow nickel-chromium spindle. Fits 68mm shell with cups moved out to 78mm. English 1.37x24, 68x120mm centred. 285g. | Chromoly crank bolts, cups and lockrings; hollow nickel-chromium spindle, English 1.37x24. Cups move out to 78mm for 68mm shell. 120/124.5mm spindle options, 285g. | 150 |
+| 142 Shimano BB-UN90 / BB-UN91, XTR M900 | 20 | 1992–1995 → 1992–1996 | Shimano BB-UN90 / BB-UN91, XTR M900, Japan. Sealed cartridge bottom bracket, SHD compatible, easy assembly, maintenance free, 255g; 107mm (chainline 47.5) / 113mm (50) spindles, 68 / 70 / 73mm shells, for FC-M900. 240g measured. | Sealed cartridge for FC-M900, SHD-compatible, 107/113mm spindles; 68/70/73mm shells. Maker: 255g; measured 240g. 1995/96 retailer: English, 68/73mm, 235g. | 174 |
+| 10401 Ritchey Expert | 21 | 1999–1999 → 1995–1999 | Steel body; 1"; for threaded steerer, ball cage on lower and upper cone; 130g | Threaded steel headset, 1/8in upper and 3/16in lower balls, 33mm stack; silver. 1995/96 Logic Expert: 1in 130g, 1-1/8 and 1-1/4in 140g as printed. Later Expert listing: 1in, 130g. | 353 |
+| 10394 Chris King No Threadset | 21 | 1999–1999 → 1995–1999 | Aluminium alloy; 1", 1-1/8", 1-1/4"; for threadless steerer, titanium version available, colours black, silver, red, gold; 84 (1"); 98 (1-1/8"); 113 (1-1/4") g | Threadless alloy headset, stainless cartridge bearings, 1/1-1/8/1-1/4in. 1995/96: 7075 cups, black/silver, 108/126/139g, 28/30mm stack for first two sizes. 1999: 84/98/113g; titanium option, black/silver/red/gold. | 353 |
+| 10404 Ritchey Pro WCS | 21 | 1996–1999 → 1995–1999 | Aluminium alloy; 1"; for threaded steerer, ball cage and rollers on upper and lower cone; 82g | Threaded 7075 alloy headset, needle and inverted upper bearings; WCS Ti-anodised finish, 37mm stack, 1in 82g or 1-1/8in 92g. Later listing describes ball cages and rollers. | 357 |
+| 8416 Ritchey Logic Brake Levers | 22 | 1991–1992 → 1991–1996 | Three-finger lever with wedge profile and index-finger "harbor", new for 1991; cold-forged 6061-T6, BRS low-friction cables and housing. Black or silver. 95g (per set in the 1991 catalogue, each in 1992). | Cold-forged 6061-T6 three-finger lever, wedge profile and index-finger harbor; cables/housing included, black/silver. 1991/92: 95g (set/each respectively). 1995/96: silver, 180g per pair. | 150 |
+| 8949 Dia-Compe SS-7 / SS-5 / SS-4 / SS-7T ATB levers | 22 | 1994–1994 → 1994–1996 | Dia-Compe SS-7 / SS-5 / SS-4 / SS-7T ATB levers, Japan. ATB brake levers, 1994 lineup | SS-7/SS-5/SS-4/SS-7T ATB lever family. SS-7: three-finger lever, nylon bushings, long-life return springs, black, 182g per pair. | 218 |
+| 8950 Dia-Compe PC-8 / PC-5 / PC-3Jr levers | 22 | 1994–1994 → 1994–1996 | Dia-Compe PC-8 / PC-5 / PC-3Jr levers, Japan. ATB brake levers sold with the VERSA cantilevers; PC-3Jr is the junior size | PC-8/PC-5/PC-3Jr ATB levers for VERSA cantilevers; PC-3Jr is junior size. PC-8: three-finger, nylon bushings, return springs, extra finger clearance and smoother travel, black; 189g per pair. | 218 |
+| 8415 Ritchey Logic Cantilevers | 22 | 1991–1992 → 1991–1996 | Medium-profile cantilever, new for 1991: cold-forged 6061-T6, brass bushing pivot bearing, two-position spring adjustment, extra vertical pad adjustment hole, tucked cable end. Black or silver. 145g per set. | Cold-forged 6061-T6 medium-profile cantilevers; brass pivot bushings, spring balance adjustment, extra vertical pad hole, tucked cable end, black/silver. 1991/92: 145g/set. 1995/96: Logic pads, front/rear offered, 150g/pr as listed. | 150 |
+| 10802 LOOK PP256 | 23 | 1996–1996 → 1995–1996 | Resin-body clipless pedal, cold-forged axle, tension indicator 6-8-10-12 N/m, 34 degree angle, blue or grey; 360 g per pair. | Polyamide/fibreglass clipless pedal, CrMo axle, needle/ball bearings, stainless contact plate and tension display; cobalt blue/metallic grey. 1995/96: 35deg, 180g (basis unstated). 1996 maker: 34deg, 360g/pair, 6-8-10-12 N/m. | 357 |
+| 4030 Time Equipe Pro Titan Magnesium | 23 | 1996–1999 → 1995–1999 | Magnesium body, titanium axle, 8.5 mm bi-position, multireflex release, +/-4 mm lateral and +/-5 degree angular float; 340 g per pair. | Magnesium body, titanium axle, 8.5mm bi-position, multireflex release, +/-4mm lateral and +/-5deg angular float. 1995/96: 336g, 34deg clearance, 10deg freedom. Later maker listing: 340g/pair. | 357 |
+| 4029 Time Equipe Pro Magnesium | 23 | 1994–1999 → 1994–1999 | Magnesium body, steel axle, 8.5 mm bi-position, multireflex release, +/-4 mm lateral and +/-5 degree angular float; 400 g per pair. | Magnesium body, steel axle, 8.5mm bi-position, multireflex release, +/-4mm lateral and +/-5deg angular float. 1995/96: CrMo axle, 370g, 34deg clearance, 10deg freedom. Later maker listing: 400g/pair. | 357 |
+| 10810 Time Equipe Pro Aluminium | 23 | 1996–1996 → 1995–1996 | Aluminium body, steel axle, 8.5 mm bi-position, multireflex release, +/-4 mm lateral and +/-5 degree angular float; 460 g per pair. | Aluminium body, steel axle, 8.5mm bi-position, multireflex release, +/-4mm lateral and +/-5deg angular float. 1995/96: CrMo axle, 400g, 34deg clearance, 10deg freedom. 1996 maker listing: 460g/pair. | 357 |
+| 5561 Selle San Marco Regal | 24 | 1970–2000 → 1970–2000 | Regal saddle, black or white;395g listed. Italy. | Hi-Pro Regal saddle with copper-finished steel rails, rivets, extra-tough leather, differentiated Rilsan body and thick polystyrene padding; black/white, 395g. | 472 |
+| 5535 Selle San Marco Concor Light Cr-Mo | 24 | 1990–1990 → 1990–1996 | Selle San Marco Concor Light Cr-Mo, Italy, 260 grams (Actual) | Hi-Tech Concor Light saddle, chromoly frame and thick durable leather cover; improved ergonomics and vibration damping. Listed 205g; earlier measured specimen 260g. | 1 |
+| 5568 Selle San Marco SQUADRA HDP | 24 | 1996–1996 → 1995–1996 | Polypropylene and nylon shell with steel rails, PV foam padding with a Hytrel front insert, black or grey. 350 g. | Squadra HDP steel-rail saddle; polypropylene/nylon shell, PV foam and Hytrel front insert, multi-padding system, extra-thick embroidered leather; black/grey, 350g. | 357 |
+| 5489 Selle Italia Flite Titanium | 24 | 1990–2000 → 1990–2000 | Selle Italia Flite Titanium, Italy, 227 grams (Actual) | Low-profile leather racing saddle, honeycomb synthetic base and titanium rails; black/white, 185g listed. Earlier measured specimen: 227g. | 1 |
+| 10639 Ritchey Pro WCS seat post | 24 | 1996–1996 → 1995–1996 | 2014-T6 aluminium alloy seat post with Force Directional design, 26.8-27.2 mm diameter, 230 mm long. 195 g. | 2014-T6 alloy Force Directional seatpost, strategically thinned walls, hard WCS anodising; 230mm, 26.6/26.8/27.0/27.2mm; 195g. | 357 |
+| 11851 Control Tech Control Seat Post | 24 | 1999–1999 → 1995–1999 | Aluminium seatpost; 27.2x235mm, 224g; silver. | Aircraft-grade alloy road seatpost with strengthening centre ridge; silver, 235mm, 26.6/26.8/27.0/27.2mm. 1995/96: 221g; 1999: 27.2x235mm, 224g. | 353 |
+| 8404 Ritchey ProLite | 25 | 1990–1992 → 1990–1996 | Easton EA70 flat bar drawn and butted with Easton, introduced 1990. 4/6/9 deg bends, 540mm in 1991, 560mm from 1992. Black, red, silver or blue. 140g. | Easton EA70 flat bar drawn and butted with Easton, introduced 1990. 4/6/9 deg bends, 540mm in 1991, 560mm from 1992. Black, red, silver or blue. 140g. | 150 |
+| 8403 Ritchey ProLite "WCS" | 25 | 1992–1992 → 1992–1996 | New 1992 flat bar developed with Easton Aluminum: butted Easton EA70, 4 or 6 deg bends, 560mm, hard-anodised platinum, 123g. | Easton EA70 butted flat bar developed with Easton, hard WCS anodising, 560mm, 123g. 1992: 4/6deg, platinum. 1995/96: 4deg; not suitable for bar ends. | 149 |
+| 7665 Shimano CN-HG91, Deore XT | 26 | 1991–1997 → 1991–1997 | Shimano CN-HG91, Deore XT, Japan, new for 1991, stronger narrow HG chain, silver roller and pin link plates, 1/2 x 3/32in | Narrow HG chain, silver roller and pin link plates, 1/2x3/32in; stronger design introduced 1991. Also sold as Ultegra HG-91. | 275 |
+| 10742 Sachs SCR 80 | 26 | 1996–1996 → 1995–1996 | Delta-treated steel chain, 7.07 mm wide, for PowerGlide, Interactive Glide and HyperGlide systems, champagne colour; 316 g. | SCR 80 chain, sold as Sedis SL/Campy Contax; Delta-treated steel, 7.07mm wide, PowerGlide/Interactive Glide/HyperGlide compatible, champagne colour; 316g. | 357 |
+| 5077 Mavic MA 40 | 27 | 1980–1999 → 1980–1999 | Mavic MA 40, France. Hard-anodised anthracite clincher, 20.5 mm, double eyelet (stainless exposed eyelets from 1988), 19-25 mm tyres, for top-range sport, triathlon and amateur racing; 700c, 27 x 1 1/4, 571, 28-40 holes, 430/435/395 g. | Hard-anodised anthracite box-section clincher, 20.5mm, double stainless eyelets, 19-25mm tyres. Maker sizes: 700c, 27in, 571, 28-40 holes, 430/435/395g. 1995/96: 700c, 32/36 holes, 460g. | 120 |
+| 5097 Mavic Open 4 CD | 27 | 1988–1993 → 1988–1996 | Mavic Open 4 CD, France. "A new generation": hard-anodised aero clincher, 17 mm, for 18-23 mm tyres, stainless double eyelets; for sportives and triathlon; 622 28-36 holes, 571 28/32 holes; 395/360 g in 1988-89, 420/385 g in 1990-91. | Hard-anodised aero clincher, 17mm, 18-23mm tyres, stainless double eyelets. 622: 28-36 holes; 571: 28/32. 1988/89: 395/360g; 1990/91: 420/385g. 1995/96: 700c, 28/32/36, 430g. | 121 |
+| 5107 Mavic Reflex | 27 | 1997–1997 → 1995–1997 | Mavic Reflex, France, 394 grams (avg). 700c clincher, SUP joint and UB Control milled sidewalls, 410 g, 28/32/36 holes, for 18-23 mm tyres; CD, CD Ceramic, blue or silver. The Reflex tubular is a separate row. | 700c clincher, SUP joint, UB Control sidewalls, 28/32/36 holes. 1995/96 silver SBP: 430g. 1997: 410g, 18-23mm tyres, CD/CD Ceramic/blue/silver; measured average 394g. Reflex tubular is separate. | 307 |
+| 10595 Mavic Reflex Titane SUP UB Control | 27 | 1996–1996 → 1995–1996 | Alloy clincher rim, 700c, 19 mm wide, 28-32-36 holes, titanium-colour anodised, double stainless eyelets, UB Control braking flanks; 410 g. | 700c alloy clincher, 19mm, 28/32/36 holes, titanium-colour anodising, double stainless eyelets, SUP joint and UB Control braking. 1995/96 TIB listing: 480g; 1996 maker listing: 410g. | 357 |
+| 10598 Mavic Open SUP CD Ceramic | 27 | 1996–1996 → 1995–1996 | Alloy clincher rim, 700c, 19 mm wide, 28-32-36 holes, ceramic-coated braking flanks, double stainless eyelets; 480 g. | 700c alloy clincher, 19mm, 28/32/36 holes, SUP joint, hard CD anodising, ceramic braking flanks and double stainless eyelets; 480g. | 357 |
+| 4961 Campagnolo Omega Strada "V Profile" | 27 | 1988–1995 → 1988–1996 | Omega Strada V-profile rim; 1991 P0451 tubular395g/P0222 clincher440g, no eyelets.1990 Omega Strada Aero clincher:20mm, 440g, 32h, matte black. Legacy measured average417.5g. | Omega Strada V-profile rim, no eyelets; 1991 P0451 tubular 395g/P0222 clincher 440g. 1990 clincher: 20mm, 32h, matte black. 1995/96: Omega V clincher 435g, Omega VT tubular 395g, 700c 32/36h. Measured avg 417.5g. | 471 |
+| 4955 Campagnolo Omega 19 | 27 | 1992–1995 → 1992–1996 | Campagnolo Omega 19, Italy, 435 grams (Actual),36h rim via digital scale 1992 Rims Range: P0562, 380 g Hardox clincher, new for 1992. 1993 Range: P0682 Omega 19 26 in, 350 g, 28-32 h. | Omega 19 Hardox clincher; 1992 P0562 380g; 1993 P0682 26in, 350g, 28/32h. 1995/96: 26in or 700c, 32/36h, black/silver, 370g. Earlier 36h specimen measured 435g. | 19 |
+| 5082 Mavic Mach 2 CD 2 | 27 | 1990–1991 → 1990–1996 | Mavic Mach 2 CD 2, France. Aero tubular, 19 mm, double eyelet (two-piece stainless, recessed head) for easier lacing and even tension, flash-bright plus 50 micron hard anodising; 700 24-36 holes 470 g, 650 437 g, 600 24/28 holes 396 g. | Mavic Mach 2 CD 2, France. Aero tubular, 19 mm, double eyelet (two-piece stainless, recessed head) for easier lacing and even tension, flash-bright plus 50 micron hard anodising; 700 24-36 holes 470 g, 650 437 g, 600 24/28 holes 396 g. | 121 |
+| 5072 Mavic M 261 | 27 | 1990–1991 → 1990–1996 | Mavic M 261, France. P.S.P.-profile ATB clincher (pyramidal braking flanks angled 3 degrees for cantilevers), for all tyre types, stainless exposed double eyelets, neutral anodised; 559, 28-32-36 holes, 460 g. | P.S.P.-profile ATB clincher, 26in, 26mm, cantilever-angled braking flanks, double stainless eyelets, neutral/silver anodised. 1990/91: 28/32/36h, 460g. 1995/96 261 SBP: 32/36h, 480g. | 121 |
+| 5071 Mavic M 231 CD | 27 | 1990–1993 → 1990–1996 | Mavic M 231 CD, France. P.S.P.-profile ATB clincher (pyramidal braking flanks angled 3 degrees for cantilevers), tyres up to 37 mm, single stainless eyelet, flash-bright plus 50 micron hard anodising; 559, 28-32-36 holes, 410 g. | Mavic M 231 CD, France. P.S.P.-profile ATB clincher (pyramidal braking flanks angled 3 degrees for cantilevers), tyres up to 37 mm, single stainless eyelet, flash-bright plus 50 micron hard anodising; 559, 28-32-36 holes, 410 g. | 121 |
+| 9977 Mavic 217 | 27 | 1997–1997 → 1995–1997 | Mavic 217, France. Cross-country MTB rim, SUP joint, UB Control, 410 g (Ceramic 420 g, CD double-eyelet 440 g), 28/32/36 holes (CD 32/36/40, the 40 for tandems); CD, CD Ceramic, silver or Sunset. | 26in cross-country MTB rim, 22mm, SUP joint and UB Control, 28/32/36h. 1995/96 TIB: 410g. 1997: 410g, Ceramic 420g, CD double-eyelet 440g; CD also 40h for tandems, silver/Sunset/CD/CD Ceramic. | 307 |
+| 9976 Mavic 121 | 27 | 1997–1997 → 1995–1997 | Mavic 121, France. Downhill MTB rim, SUP joint, 530 g, 32/36 holes; CD or CD Ceramic, the CD version recommended for disc brakes. | 26in downhill MTB rim, 28mm wide, SUP joint; CD or CD Ceramic. 1995/96 CD Ceramic: 36h, 530g. 1997: 32/36h, 530g; CD version recommended for disc brakes. | 307 |
+| 4944 Campagnolo ATEK | 27 | 1992–1996 → 1992–1996 | Campagnolo ATEK, Italy 1992 Rims Range: P0614 Hardox, P0624 polished, 377 g, 26 in, 6082 T6. 1993 Range: 390 g, 20 mm. | 26in 6082-T6 MTB rim, 20mm wide, 32/36h, polished/silver or Hardox. 1992 P0614/P0624: 377g; 1993: 390g; 1995/96: 400g. | 19 |
+| 7052 Campagnolo P0594, Stheno (ATB) | 27 | 1992–1995 → 1992–1996 | Campagnolo P0594, Stheno (ATB), Italy, 393 grams (Spec). 26 in mountain-bike rim, 6082 T6, 32/36 h, no eyelets; P0594 Hardox, P0604 polished. 1992 Rims Range. 1993 Range: 405 g, 22 mm. | 26in 6082-T6 MTB rim, 32/36h, no eyelets; P0594 Hardox/P0604 polished. 1992: 393g; 1993: 405g, 22mm. 1995/96: 22.2mm, 425g. | 19 |
+| 7053 Campagnolo P0634, Mirox (ATB) | 27 | 1992–1995 → 1992–1996 | Campagnolo P0634, Mirox (ATB), Italy, 380 grams (Spec). 26 in mountain-bike rim, 6082 T6, 32/36 h, double eyelets; P0634 Hardox, P0644 polished. 1992 Rims Range. | 26in 6082-T6 MTB rim, double eyelets, 32/36h; P0634 Hardox/P0644 polished. 1992: 380g. 1995/96: 22.2mm, 425g. | 19 |
+| 6782 Continental Grand Prix | 28 | 1980–2000 → 1980–2000 | Continental Grand Prix, Germany | Folding road clincher, three-ply polyamide casing, 700x18/20/23 options, printed weights 165/170/190g (not explicitly paired by width), max 140psi. | 1 |
+| 10539 Panaracer Category One | 28 | 1996–1996 → 1995–1996 | Clincher, 700x20c; aramid and nylon casing; herringbone tread; rigid beads 245 g, folding version 200 g. | Road clincher, aramid/nylon casing, herringbone tread. 1995/96 Cat 1: 700x20/23, 130tpi, folding Kevlar bead, 200/215g listed, max 125psi. 1996 maker: 700x20, rigid 245g or folding 200g. | 357 |
+| 10532 Michelin Hi-Lite Bi Synergic | 28 | 1996–1996 → 1995–1996 | Clincher, 650x23, 700x20 and 700x23; high-density nylon casing; slick bi-compound tread, harder centre than sides; for racing; 200-220 g. | Road clincher, high-density nylon, harder centre compound than shoulders, slick tread. 650x23 and 700x20/23; 200-220g. 1995/96: 130tpi, 205/215g listed, max 125psi. | 357 |
+| 11686 Tioga Proline S | 28 | 1996–1999 → 1995–1999 | Nylon-casing slick tyre with side cuts. 1996 sizes700x18/20/23/25. 1999:700x20C, 230g Kevlar bead or 250g steel bead; black/tan. | Nylon slick road tyre with side cuts. 1995/96: 700x20/23, 130tpi, 220/260g listed, max 115psi. 1996: 700x18/20/23/25. 1999 700x20C: 230g Kevlar or 250g steel bead, black/tan. | 353 |
+| 8389 Ritchey Road Force | 28 | 1991–1996 → 1991–1996 | First Vector Force Analysis road tyre, parabolic grooves. Clincher 700x20c, 24c, 28c in wire (66 tpi) or Kevlar (127 tpi): 1991 210/170, 220/190, 260/220g; 1992 220/180, 230/200, 270/220g. Tubular 700x21c 250g cotton/latex, 120 psi. | Vector Force Analysis road tyre, parabolic grooves. Clincher 700x20/24/28, wire 66tpi or Kevlar 127tpi. 1991 wire/Kevlar: 210/170,220/190,260/220g; 1992: 220/180,230/200,270/220g. 1995/96 max130psi. Tubular 700x21 250g cotton/latex,120psi. | 357 |
+| 6788 Continental Super Sport | 28 | 1980–1990 → 1980–1996 | Clincher; Super Sport 20/25 versions have 3-ply polyamide casing, steel beads, 330g and max 120psi; 25 model is 25mm. For training/rough roads. Earlier specimen measured 215.8g, size unspecified. | Steel-bead road clincher, three-ply polyamide. 1990 Super Sport 20/25: 330g, max120psi. 1995/96: 700x20/23/25, 275/285/295g listed, max110psi. Earlier size-unspecified specimen measured215.8g. | 471 |
+| 10533 Michelin Performer | 28 | 1996–1996 → 1995–1996 | Clincher, 700x20, 700x23 and 700x25; nylon casing; semislick tread; high mileage, for touring; 250-300 g. | Road/touring clincher, nylon casing, semislick tread and high-mileage design; 700x20/23/25, 250-300g. 1995/96: 130tpi, 280/290/300g listed, max100psi. | 357 |
+| 10414 Continental Giro | 28 | 1999–1999 → 1995–1999 | Cotton and rubber compound; ribbed tread ("spigato"); 22x28"; two-ply cotton casing, 160 tpi; 300g | Road/training tubular, two-ply cotton casing, 160tpi, rubber compound and ribbed tread; 22x28in, 300g, max120psi. | 353 |
+| 6875 Vittoria Competition Formula Uno | 28 | 1980–1999 → 1980–1999 | Vulcanised tubular, 21x28 in; cotton casing; herringbone/diamond-point tread; for road training; 7-9 bar; 380-400 g. | Vulcanised cotton road-training tubular, herringbone/diamond tread. 1995/96 Formula 1: three-ply cotton, 21.5mm, 300g, max120psi. Later maker Formula Uno: 21x28in, 380-400g, 7-9bar. | 357 |
+| 11257 Ritchey AlphaBite Trailmix | 29 | 2000–2000 → 1995–2000 | 700x35/40 hybrid on/off-road tyre;Comp440/470g;connected center tread. | 700x35/40 hybrid on/off-road tyre, connected centre tread, Trail Mix compound; steel bead, non-folding, Comp440/470g. | 411 |
+| 8391 Ritchey Cross-Bite | 29 | 1992–1992 → 1992–1996 | New 1992 hybrid/fitness tyre: smooth centre contour with inverted "jaw" shoulders for pavement and fire-road. 26x1.5 450g, 700x38c 450g (60 tpi). | Hybrid tyre with smooth centre and inverted-jaw shoulders. 1992:26x1.5/700x38,450g,60tpi. 1995/96 Kevlar:26x1.1 330g,700x38 430g; steel:26x1.1 420g,26x1.9 490g,700x38 450g. | 149 |
+
+### Full source inventory and disposition
+
+Printed names and specifications are retained separately from the reconciled titles above. Common introductory prose and excluded accessories are covered by the page ledger. The source edition supplies the separate year hint 1995/96 for every entry. A slash-separated weight list is not assumed to map one-to-one to widths where the table does not say so.
+
+#### Cranksets
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| A001 / 20 | Shimano XTR | Shimano ATB crankset. Specify 26-36-46/48 chainrings and 170, 172.5, or 175mm arms. | held → 1848,8667,8669,8677 |
+| A002 / 20 | Shimano Deore XT | Shimano ATB crankset. Specify 22-32-42/44 chainrings and 170 or 175mm arms. | held → 1848,8667,8669,8677 |
+| A003 / 20 | Shimano Deore LX | Shimano ATB crankset. 22-32-42; specify 170 or 175mm arms. | held → 1848,8667,8669,8677 |
+| A004 / 20 | Campagnolo Record O.R. | Campagnolo ATB crankset. Specify 20-30-42, 20-32-42, 22-32-42, or 22-32-44 chainrings; 170 or 175mm arms. | update → 1504 |
+| A005 / 20 | Ritchey Logic Road Crankset | Ultra-stiff and lightweight; cold-forged and satin polished. 42-53; specify 170, 172.5, or 175mm arms; 590gr (basis not stated). | update → 11172 |
+| A006 / 20 | Ritchey Logic Compact | ATB crankset; fits SLP setups and 22-32-42 Supershift chainrings. Specify 170 or 175mm arms; 625gr (basis not stated). | update → 11305 |
+| A007 / 20 | Ritchey Logic Mountain | ATB crankset. 26-36-46; specify 170 or 175mm arms; 712gr (basis not stated). | update → 1721 |
+| A008 / 20 | Shimano Dura-Ace | Road crankset. Specify 42-53, 39-53, or 42-52 chainrings; 170, 172.5, 177.5, or 180mm arms. | held |
+| A009 / 20 | Shimano Ultegra | Road crankset. Specify 42-53 or 42-52 chainrings; 170, 172.5, or 175mm arms. | held |
+| A010 / 20 | Shimano 105-SC | Road crankset. Specify 42-53 or 39-53 chainrings; 170, 172.5, or 175mm arms. | held |
+| A011 / 20 | Shimano RX100 Triple | Road crankset. 30-42-52; specify 170 or 175mm arms. | unchanged → 1840 |
+| A012 / 20 | Campagnolo Record | Road crankset. Specify 39-52/53, 41-52/53, or 42-52/53 chainrings and 170, 172.5, or 175mm arms. | held |
+| A013 / 20 | Campagnolo Chorus | Road crankset. Specify 39-52/53, 41-52/53, or 42-52/53 chainrings and 170, 172.5, or 175mm arms. | update → 1488 |
+| A014 / 20 | Campagnolo Athena | Road crankset. Specify 39-52/53, 41-52/53, or 42-52/53 chainrings and 170, 172.5, or 175mm arms. | held |
+| A015 / 20 | Kooka ATB Racing Cranks | One of the lightest cranks on the racing circuit; patented I-beam arm, replaceable spider, high-tensile aluminum; fits Shimano compact or regular chainrings. Specify arm, model, and color; 170 or 175mm arms; silver; 390gr/pr. | new → A015 |
+| A016 / 20 | Topline Road Cranks | Ultra-light road cranks, polished silver; Campagnolo or Shimano-compatible chainring bolt patterns. Specify 170, 172.5, or 175mm arms; 345g/pr. | update → 2006 |
+
+#### Bottom Brackets
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| A017 / 20 | Kooka Bottom Bracket | Rifle-drilled aircraft titanium; thick Teflon seals and triple bearings. Specify compact or regular cranks; 170gr. | new → A017 |
+| A018 / 20 | Shimano Dura-Ace | Road bottom bracket; cartridge bearings. 103mm axle; specify 68/70mm shell and British or Italian threading. | unchanged → 133 |
+| A019 / 20 | Shimano Ultegra | Road bottom bracket; cartridge bearings. 115 mm axle, cartridge bearings, 68/70 mm shell, British or Italian threading; as printed. | held |
+| A020 / 20 | Shimano 105SC/RX100 | Road bottom bracket; cartridge bearings. 107mm axle; specify 68/70mm shell and British or Italian threading. | held |
+| A021 / 20 | Campagnolo Record | Road bottom bracket; cartridge bearings. Specify British or Italian threading. | held |
+| A022 / 20 | Campagnolo Chorus | Road bottom bracket; cartridge bearings. Specify British or Italian threading. | held |
+| A023 / 20 | Campagnolo Athena | Road bottom bracket; cartridge bearings. Specify British or Italian threading. | held |
+| A024 / 20 | Ritchey Logic Pro | CrMo crank bolts, cups, and lockrings; hollow nickel-chromium steel spindle. 120 or 124.5mm lengths; English; 285gr. | update → 8412 |
+| A025 / 20 | Ritchey ProLite | Double-sealed cartridge bearings, 7075 alloy cups, hollow nickel-chromium steel spindle. 107, 110, 113, or 120mm; English; 195gr. | held → 10295 |
+| A026 / 20 | Ritchey ProLite Ti | Double-sealed cartridge bearings, 7075 alloy cups, hollow 6-4AL titanium spindle. 107, 110, 113, or 120mm; English; 150gr. | new → A026 |
+| A027 / 20 | Shimano XTR | Sealed cartridge bearing. 74/100mm; specify 68 or 73mm shell and 107 or 113mm spindle; British; 235gr. | update → 142 |
+| A028 / 20 | Shimano XT | Sealed cartridge bearing. Specify 58/94 or 74/110mm, 107 or 113mm spindle, and 68 or 73mm shell; British; 254gr. | held |
+| A029 / 20 | Shimano STX | Sealed cartridge bearing. 58/95mm; specify 68 or 73mm shell and 110 or 113mm spindle; British; 320gr. | held |
+
+#### Headsets
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| A030 / 21 | Ritchey Logic Expert Headset | Uses 1/8-inch upper race bearings to reduce stack height and 3/16-inch lower race balls for durability; silver. 33mm stack height; specify 1in (130gr), 1 1/8in (140gr), or 1 1/4in (140gr). | update → 10401 |
+| A031 / 21 | Chris King Headset | Stainless cartridge bearings, special seals, CNC-machined 7075 alloy cups, Gripnut threadlocking system; silver or black. 1in (92.5gr) with 33mm stack; 1 1/8in or 1 1/4in (115gr) with 39mm stack. | new → A031 |
+| A032 / 21 | Chris King NoThreadset | Stainless cartridge bearings with special seals; CNC-machined 7075 aluminum cups; silver or black. 1in, 28mm stack, 108gr; 1 1/8in, 30mm stack, 126gr; or 1 1/4in, 139gr. | update → 10394 |
+| A033 / 21 | Ritchey Pro WCS Headset | Precision-machined 7075 alloy with needle bearings; inverted upper bearings reduce stack height; Ti ano finish. 37mm stack height; specify 1in (82gr) or 1 1/8in (92gr). | update → 10404 |
+
+#### Brake Levers
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| A034 / 22 | Ritchey Logic | Three-finger design, cold-forged 6061 T6 alloy; cables and housing included; silver. 180gr/pr. | update → 8416 |
+| A035 / 22 | Ritchey WCS | Three-finger design, cold-forged 6061 T-6 alloy; cables and housing included; WCS ano finish. 180gr/pr. | new → A035 |
+| A036 / 22 | Dia Compe SS-7 | Three-finger lever with nylon bushings and long-life return springs; black. 182gr/pr. | update → 8949 |
+| A037 / 22 | Dia Compe PC-8 | Three-finger lever; more finger space, smoother travel, more braking power; black. 189gr/pr. | update → 8950 |
+| A038 / 22 | Paul Components Love Levers | Simple durable design; machined 6061-T6 aluminum, oversized stainless pivots, reach adjust; black, purple, or blue. 199gr/pr. | new → A038 |
+| A039 / 22 | Kooka Racha Levers | CNC-machined billet, needle-bearing pivot, Teflon-lined cable adjuster, one-hand adjust, wedge clamping; silver or black. 86gr/pr. | new → A039 |
+
+#### Brakes
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| A040 / 22 | Ritchey Logic | ATB brake caliper, cold-forged 6061 T-6 alloy with brass bushings and balance spring adjustment; Logic pads; silver. Front and rear; 150gr/pr. | update → 8415 |
+| A041 / 22 | Ritchey WCS | ATB brake caliper, cold-forged 6061 T-6 alloy with brass bushings and dual spring tension adjustment; Logic pads; WCS ano finish. Front and rear; 150gr/pr. | new → A041 |
+| A042 / 22 | Shimano XTR | Low-profile, differentiated front and rear brake calipers; M-condition pads. Front or rear. | unchanged → 1018 |
+
+#### Pedals
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| A043 / 23 | LOOK PP256 | Lightweight low-profile performance pedal; polyamide-charged fiberglass body, adjustable release tension and display window, chromoly axle, needle and ball bearings, replaceable machined Inox contact plate. 35° cornering clearance; Arc or black cleats; cobalt blue or metallic gray; 180gr. | update → 10802 |
+| A044 / 23 | LOOK S2X | ATB pedal for racing; mud evacuation holes, adjustable release tension on both sides, removable bumper, chromoly axle, sealed needle and ball bearings. 32° cornering clearance; silver; 250gr. | new → A044 |
+| A045 / 23 | LOOK S2R | ATB pedal for racing; mud evacuation holes, adjustable release tension on both sides, removable bumper, chromoly axle, sealed needle and ball bearings. 32° cornering clearance; red; recommended for riders over 200lb or downhillers; 250gr. | new → A045 |
+| A046 / 23 | Onza ATB Pedals steel | Disassemblable ATB pedal with removable elastomers, large flow-through holes, four elastomer sets and variable float with bidirectional cleats. Steel spindle; 340gr. | new → A046 |
+| A047 / 23 | Onza ATB Pedals titanium | Disassemblable ATB pedal with removable elastomers, large flow-through holes, four elastomer sets and variable float with bidirectional cleats. Titanium model; 290gr. | new → A047 |
+| A048 / 23 | Ritchey Logic | Clipless ATB pedal with large platform, sealed ball and OilLite bearings, single-release operation and ample float; easy to service. Heat-treated chromoly axle; 350gr. | new → A048 |
+| A049 / 23 | Ritchey WCS | Clipless ATB pedal with large platform, sealed ball and OilLite bearings, single-release operation and ample float; easy to service. 6-4AL titanium axle; 300gr. | new → A049 |
+| A050 / 23 | Time Equipe Pro Titan | Equipe Pro pedal with lateral metal clip inserts, Multireflex Bioperformance, extra-wide platform and magnesium alloy body. Titanium spindle; 34° cornering clearance, 10° angular freedom; 336gr. | update → 4030 |
+| A051 / 23 | Time Equipe Pro Magnesium Pro | Equipe Pro pedal with lateral metal clip inserts, Multireflex Bioperformance, extra-wide platform and magnesium alloy body. Heat-treated chromoly spindle; 34° cornering clearance, 10° angular freedom; 370gr. | update → 4029 |
+| A052 / 23 | Time Equipe Pro Aluminum | Equipe Pro pedal with Multireflex Bioperformance and integrated retention system; aluminum alloy body and chromoly spindle. 34° cornering clearance; 400gr. | update → 10810 |
+
+#### Saddles
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| A053 / 24 | Selle San Marco Hi-Pro Regal I steel | Old-world styling with leather, differentiated Rilsan body, thickened polystyrene pad and matching rails; Italy. Copper-finished steel rails; 395gr. | update → 5561 |
+| A054 / 24 | Selle San Marco Hi-Pro Regal I titanium | Old-world styling with leather, differentiated Rilsan body, thickened polystyrene pad and matching rails; Italy. Light-alloy-finish titanium rails; 310gr. | new → A054 |
+| A055 / 24 | Selle San Marco Hi-Tech Concor Light titanium | Updated Concor styling with improved ergonomics, lighter body and vibration damping; durable leather cover; Italy. Titanium rails; 175gr. | new → A055 |
+| A056 / 24 | Selle San Marco Hi-Tech Concor Light steel | Updated Concor styling with improved ergonomics, lighter body and vibration damping; durable leather cover; Italy. Chromoly steel rails; 205gr. | update → 5535 |
+| A057 / 24 | Selle San Marco Hi-Tech Concor Light carbon | Updated Concor styling with improved ergonomics, lighter body and vibration damping; durable leather cover; Italy. Carbon frame; 150gr. | held → 5536,5543 |
+| A058 / 24 | Selle San Marco Squadra HDP steel | Hytel polymer, multi-padding system, ergonomic form and extra-thick leather; Italy. Steel rails. | update → 5568 |
+| A059 / 24 | Selle San Marco Squadra HDP chromo | Hytel polymer, multi-padding system, ergonomic form and extra-thick leather; Italy. Chrome molybdenum rails. | new → A059 |
+| A060 / 24 | Selle San Marco Squadra HDP titanium | Hytel polymer, multi-padding system, ergonomic form and extra-thick leather; Italy. Titanium rails. | new → A060 |
+| A061 / 24 | Selle San Marco Hi-Tech SA 601 steel | Suspension Active saddle designed with Pirelli, uses damping elastomers and differentiated Rilsan body with leather cover; Italy. Steel rails. | new → A061 |
+| A062 / 24 | Selle San Marco Hi-Tech SA 601 titanium | Suspension Active saddle designed with Pirelli, uses damping elastomers and differentiated Rilsan body with leather cover; Italy. Titanium rails. | new → A062 |
+| A063 / 24 | Selle Italia Titanium Saddle | Ultra-low-profile ergonomic design, leather cover, honeycomb synthetic base, titanium rails; Italy. Black or white; 185gr. | update → 5489 |
+| A064 / 24 | Avocet O2 Women’s Saddle | Gel/air system with aerated, thinned gel layer, scuff-resistant cover, flared back and shorter nose; Ti6Al-4V rails.  | new → A064 |
+| A071 / 25 | SDG Bontrager style | Kevlar cover, hydrophobic, water-resistant, scuff- and tear-resistant; comfortable padding does not shift; Ti rails. Bontrager style has cutaway sides and low-profile nose; 200gr. | held → 11675,11676,11677 |
+| A072 / 25 | SDG “Flite” style | Kevlar cover, hydrophobic, water-resistant, scuff- and tear-resistant; comfortable padding does not shift; Ti rails. Nearly identical to Selle’s Flite with wider back and low-profile nose; 200gr. | held → 11675,11676,11677 |
+
+#### Seat Posts
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| A065 / 24 | Ritchey WCS ATB | Directional quad butting, titanium fixing bolt, forged clamp and cradle; hard-anodized WCS finish. 330mm; 26.4, 26.6, 26.8, 27.0, or 27.2mm; 225gr. | new → A065 |
+| A066 / 24 | Ritchey Comp ATB | Force directional design, forged clamp and cradle; silver finish. 330mm; 26.4, 26.6, 26.8, 27.0, or 27.2mm; 250gr. | new → A066 |
+| A067 / 24 | Ritchey WCS Road | Force directional butting with thinner walls; hard-anodized WCS finish. 230mm; 26.6, 26.8, 27.0, or 27.2mm; 195gr. | update → 10639 |
+| A068 / 24 | Ringlé Moby Seatpost | New Easton tube design, patented one-bolt head and height-scale graphics. 26.8, 27.0, 27.2, 28.6, 29.4, or 31.6mm diameters; 350mm; black or silver; 220gr average. | new → A068 |
+| A069 / 24 | Control Tech Control Tech Post road | Aircraft-grade aluminum with center ridge for strength. Road; 235mm; 26.6, 26.8, 27.0, or 27.2mm; silver; 221gr. | update → 11851 |
+| A070 / 24 | Control Tech Control Tech Post ATB | Aircraft-grade aluminum with center ridge for strength. ATB; 350mm; 26.6, 26.8, 27.0, 27.2, 28.6, 30.2, or 31.6mm; black; 280gr. | new → A070 |
+
+#### Handlebars
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| A073 / 25 | Ritchey CompLite | ATB competition-series bar made from drawn 2014-T6 aluminum. 4° bend; 560mm; silver; 150gr. | new → A073 |
+| A074 / 25 | Ritchey ProLite | ATB competition bar with shock-dissipating construction from butted Easton 70 alloy. 4° bend; 560mm; black or silver; 140gr. | update → 8404 |
+| A075 / 25 | Ritchey Pro Lite WCS | Competition bar with shock-absorbing butted Easton 70 tubing; distinctive WCS ano finish. 4° bend; 560mm; not for use with bar ends; 123gr. | update → 8403 |
+
+#### Stems
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| A076 / 25 | Ringlé Zooka | ATB stem precision-machined from solid 7075-T6 billet; removable end-clamp; titanium expander and binder bolts. 120, 135, or 150mm; 1, 1 1/8, or 1 1/4in; 0°, 10°, or 17°; black or silver; 270gr. | new → A076 |
+| A077 / 25 | Ringlé Zooka Clamp-On | One-piece 7075-T6 alloy clamp-on stem with removable end-clamp, stem-height shims and SRP titanium bolts. 120, 135, 150, or 180mm; 0° or 10°; 1, 1 1/8, or 1 1/4in; several colors. | new → A077 |
+| A078 / 25 | Kore Kore | Ergonomic 6061 alloy stem with double-ovalized oversized tube. 175gr; 135mm with 0°, or 135/150mm with 0° or 10°; 1 or 1 1/8in; silver or black. | new → A078 |
+| A079 / 25 | Control Tech ControlTech | Custom 6061 T6 aluminum alloy stem. Specify 1, 1 1/8, or 1 1/4in; 0° or 10°; 120, 135, or 150mm; black; 180gr. | new → A079 |
+
+#### Hubs
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| B001 / 26 | Ringlé SuperBubba Suspension Hub | One-piece hub shell and axle designed for bearing alignment when clamped in the fork; larger-diameter flanges for shorter, stiffer spokes; full-coverage aero dust caps protect bearing seals. 156 g; 7075-T6 aluminum axle and aluminum hub shell; 32- or 36-hole drilling; black, red, or silver | new → B001 |
+| B002 / 26 | Ringlé SuperEight Cassette Hub | Cassette hub with two sets of sealed bearings and a ratchet system; three heavy-duty pawls engage simultaneously. Compatible with Shimano and SRP 7- or 8-speed cassettes; includes shims for both setups. 395 g; 7076-T6 shell; oversized steel axle, cassette body, ratchet mechanism; 32- or 36-hole drilling; also available in 130 mm road size; black, silver, or red | new → B002 |
+| B003 / 26 | Ringlé Bubba Front Hub | Front hub with one-piece large-diameter shell precision-machined from 7075-T6 aluminum alloy; traditional flange size; oversized 12 mm axle; serviceable, replaceable sealed cartridge bearings. 115 g; 28- or 32-hole drilling; black or silver | new → B003 |
+| B004 / 26 | Ringlé Bubba Rear Hub, Road Freewheel | Rear hub with one-piece large-diameter 7075-T6 aluminum alloy shell, traditional flange size, oversized 12 mm axle, and serviceable sealed cartridge bearings. 165 g; 32-hole drilling; road freewheel; black or silver | new → B004 |
+| B005 / 26 | Ringlé Bubba Rear Hub, ATB Freewheel | Rear hub with one-piece large-diameter 7075-T6 aluminum alloy shell, traditional flange size, oversized 12 mm axle, and serviceable sealed cartridge bearings. 165 g; 32-hole drilling; ATB freewheel; available in six-, seven-, or eight-speed; black or silver | new → B004 |
+| B020 / 26 | Shimano XTR ATB Hubset | Pair listing; hubs feature Paralax design, specially designed rubber seals, anodized aluminum shell, and compact cassette body. 8-speed rear; 642 g per pair; 32- or 36-hole drilling | held |
+| B021 / 26 | Shimano XT ATB Hubset | Pair listing; hubs feature Paralax design, specially designed rubber seals, anodized aluminum shell, and compact cassette body. 8-speed rear; 658 g per pair; 32- or 36-hole drilling | held |
+| B022 / 26 | Shimano LX ATB Hubset | Pair listing; hubs feature Paralax design, specially designed rubber seals, anodized aluminum shell, and compact cassette body. 7- or 8-speed rear; 649 g per pair; 32- or 36-hole drilling | held |
+| B023 / 26 | Shimano Dura-Ace Road Hubset | Road hubset listing. 8-speed cassette rear; 32-hole listed | held |
+| B024 / 26 | Shimano Ultegra Road Hubset | Road hubset listing. 8-speed cassette rear; 28-, 32-, or 36-hole drilling | held |
+| B025 / 26 | Shimano 105-SC Road Hubset | Road hubset listing. 8-speed cassette rear; 32- or 36-hole drilling | held |
+| B026 / 26 | Campagnolo Record Road Hubset | Road hubset listing. 8-speed Exa rear; 32- or 36-hole drilling | unchanged → 3265 |
+| B027 / 26 | Campagnolo Chorus Road Hubset | Road hubset listing. 8-speed Exa rear; 32- or 36-hole drilling | unchanged → 3250 |
+| B028 / 26 | Campagnolo Athena Road Hubset | Road hubset listing. 8-speed Exa rear; 32- or 36-hole drilling | unchanged → 3237 |
+
+#### Cassettes
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| B006 / 26 | Shimano XTR ATB Cassette | 8-speed cassette, champagne gold. 12–32 or 12–28 | held |
+| B007 / 26 | Shimano XT ATB Cassette | 8-speed cassette, chrome plated. 11–28 | held |
+| B008 / 26 | Shimano LX ATB Cassette | Silver cassette. 7-speed or 8-speed; 11–28 | held |
+| B009 / 26 | Shimano Dura-Ace Road Cassette | Road cassette, champagne gold. 12–21, 13–23, 12–23, 13–26, or 12–25 | held |
+| B010 / 26 | Shimano Ultegra HG90 Road Cassette | Road cassette, chrome plated. 12–21, 13–23, 12–23, 13–26, or 12–25 | held |
+| B011 / 26 | Shimano 105SC HG70 Road Cassette | Silver cassette. 8-speed: 12–21, 13–23, 12–23, 13–26, or 12–25; 7-speed: 12–28, 13–26, 13–23, 13–21, 12–21, or 13–28 | held |
+| B012 / 26 | Campagnolo Steel Exa-Drive Road Cassette | Steel Exa-Drive road cassette. 11–18, 11–21, 12–19, 12–21, 12–23, 12–25, 13–21, 13–23, 13–26, or 14–26 | held |
+
+#### Chains
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| B013 / 26 | Shimano Dura-Ace/XTR HG Chain | HG chain for Dura-Ace/XTR.  | held |
+| B014 / 26 | Shimano Ultegra HG-91 Chain | HG-91 chain.  | update → 7665 |
+| B015 / 26 | Shimano HG-70 Chain | HG-70 chain.  | unchanged → 7568 |
+| B016 / 26 | Sedis SL/Campy Contax SCR 80 Chain | SL/Campy Contax SCR 80 chain.  | update → 10742 |
+| B017 / 26 | Sedis MTB SC-M55 Chain | MTB SC-M55 chain.  | new → B017 |
+| B018 / 26 | Sedis Premium MTB SC-M90 Chain | Premium MTB SC-M90 chain.  | new → B018 |
+| B019 / 26 | Sedis Track Chain | Track chain. 1/2 × 1/8 inch | held → 11819 |
+
+#### Rims
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| B029 / 27 | Mavic MA 40 | Box-section road clincher rim, hard CD anodized. 700C; 32- or 36-hole drilling; 460 g | update → 5077 |
+| B030 / 27 | Mavic Open 4 CD | Shallow aero-section rim, hard CD anodized. 700C; 28-, 32-, or 36-hole drilling; 430 g | update → 5097 |
+| B031 / 27 | Mavic Reflex SBP | Silver-anodized rim with S.U.P. and U.B. Control. 700C; 28-, 32-, or 36-hole drilling; 430 g | update → 5107 |
+| B032 / 27 | Mavic Reflex TIB | Ti-silver-anodized rim with S.U.P. and U.B. Control. 700C; 28-, 32-, or 36-hole drilling; 480 g | update → 10595 |
+| B033 / 27 | Mavic Open S.U.P. CD Ceramic | Shallow aero-section, hard CD-anodized rim with S.U.P. ceramic braking surfaces. 700C; 28-, 32-, or 36-hole drilling; 480 g | update → 10598 |
+| B034 / 27 | Campagnolo Omega V | Aero-section road clincher rim, black anodized. 700C; 32- or 36-hole drilling; 435 g | update → 4961 |
+| B035 / 27 | Campagnolo Omega 19 | Shallow aero-section road clincher rim, black anodized or silver. 26 inch or 700C; 32- or 36-hole drilling; 370 g | update → 4955 |
+| B036 / 27 | Mavic Mach 2 CD 2 | Aero-section, hard-anodized road tubular rim. 700C; 32- or 36-hole drilling; 470 g | update → 5082 |
+| B037 / 27 | Mavic Mach 2 Ceramic | Aero-section, hard-CD-anodized rim with ceramic braking surfaces. 700C; 32- or 36-hole drilling; 470 g | new → B037 |
+| B038 / 27 | Campagnolo Sigma | Box-section, hard-anodized road tubular rim. 700C; 32- or 36-hole drilling; 365 g | held → 4970,7032,7031 |
+| B039 / 27 | Campagnolo Omega 20 | Box-section, hard-anodized road tubular rim. 700C; 32- or 36-hole drilling; 395 g | held → 4957 |
+| B040 / 27 | Campagnolo Omega VT | Aero-section, hard-anodized road tubular rim. 700C; 32- or 36-hole drilling; 395 g | update → 4961 |
+| B041 / 27 | Mavic 261 SBP | Silver MTB rim. 26 × 26 mm; 32- or 36-hole drilling; 480 g | update → 5072 |
+| B042 / 27 | Mavic 230 SBP | Silver MTB rim. 26 × 23 mm; 28-, 32-, or 36-hole drilling; 380 g | new → B042 |
+| B043 / 27 | Mavic 230 TIB | Ti-finish MTB rim. 26 × 23 mm; 28-, 32-, or 36-hole drilling; 380 g | new → B043 |
+| B044 / 27 | Mavic 231 CD | Hard-anodized MTB rim. 26 × 23 mm; 28-, 32-, or 36-hole drilling; 440 g | update → 5071 |
+| B045 / 27 | Mavic 217 TIB S.U.P./U.B. | Ti-finish MTB rim. 26 × 22 mm; 28-, 32-, or 36-hole drilling; 410 g | update → 9977 |
+| B046 / 27 | Mavic 117 S.U.P. CD | Hard-anodized MTB rim. 26 × 23 mm; 28-, 32-, or 36-hole drilling; 450 g | new → B046 |
+| B047 / 27 | Mavic 121 S.U.P. CD Ceramic | Hard-anodized rim with ceramic braking surfaces. 26 × 28 mm; 36-hole drilling; 530 g | update → 9976 |
+| B048 / 27 | Mavic 117 S.U.P. CD Ceramic | Hard-anodized rim with ceramic braking surfaces. 26 × 23 mm; 28-, 32-, or 36-hole drilling; 460 g | new → B048 |
+| B049 / 27 | Campagnolo Atek | MTB rim, silver or hard anodized. 26 × 20 mm; 32- or 36-hole drilling; 400 g | update → 4944 |
+| B050 / 27 | Campagnolo Stheno | MTB rim, silver or hard anodized. 26 × 22.2 mm; 32- or 36-hole drilling; 425 g | update → 7052 |
+| B051 / 27 | Campagnolo Mirox | MTB rim, silver or hard anodized, double eyelets. 26 × 22.2 mm; 32- or 36-hole drilling; 425 g | update → 7053 |
+
+#### Wheel(sets)
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| B052 / 27 | Spinergy Rev-X Front Wheel | Wheel uses four pairs of tensioned carbon-fiber spokes, sealed-bearing hubs, and double heat-treated rim. clincher 839 g each; tubular 738 g each; made in USA | held → 11954,11955,11956,11957 |
+| B053 / 27 | Spinergy Rev-X Rear Wheel | Rear wheel uses four pairs of tensioned carbon-fiber spokes, sealed-bearing hub, and double heat-treated rim; 8-speed Shimano compatible. clincher 839 g each; tubular 738 g each; made in USA | held → 11954,11955,11956,11957 |
+| B054 / 27 | Campagnolo Shamal Front Wheel | Front wheel with 16 radially laced spokes and Record hubs. clincher or tubular; 860 g | held → 6961,6962 |
+| B055 / 27 | Campagnolo Shamal Rear Wheel | Rear wheel with 16 radially laced spokes and Record hubs. clincher or tubular; 1165 g | held → 6961,6962 |
+| B056 / 27 | Campagnolo Vento Front Wheel | Front wheel with 20 radially laced spokes and Athena hubs. clincher; 930 g | unchanged → 6963 |
+| B057 / 27 | Campagnolo Vento Rear Wheel | Rear wheel with 20 radially laced spokes and Athena hubs. clincher; 1190 g | unchanged → 6963 |
+| B058 / 27 | Campagnolo Bora Front Wheel | Front wheel with 16 radially laced spokes and high-tech carbon-fiber rim. tubular; 700 g | unchanged → 6954 |
+| B059 / 27 | Campagnolo Bora Rear Wheel | Rear wheel with 16 radially laced spokes and high-tech carbon-fiber rim. tubular; 935 g | unchanged → 6954 |
+
+#### Tyres
+
+| Key / page | Printed maker / model | Description / printed specification | Disposition |
+| --- | --- | --- | --- |
+| B060 / 28 | Continental Continental Grand Prix | Road clincher; 3-ply polyamide; foldable; fast, responsive, light. width options 18, 20, 23 mm; printed weight entry: 165–170–190 g; 140 psi; racing/performance riding | update → 6782 |
+| B061 / 28 | Panaracer Panaracer Cat 1 | Road clincher; Kevlar construction; foldable and puncture resistant. width options 20, 23 mm; printed weight entry: 200–215 g; 130 TPI; 125 psi; racing/performance/all condition | update → 10539 |
+| B062 / 28 | Michelin Michelin Bi-Synergic | Road clincher; foldable, low-durometer side strip. width options 20, 23 mm; printed weight entry: 205–215 g; 130 TPI; 125 psi; training/racing/all condition | update → 10532 |
+| B063 / 28 | Vittoria Vittoria Techno Twin K | Road clincher; foldable, low-durometer side strip. width options 20, 23, 25 mm; printed weight entry: 190, 210, 220 g; approximately 130 TPI; 115 psi; training/racing/all condition | held → 6903 |
+| B064 / 28 | Tioga Tioga Proline S | Road clincher; puncture resistant with amber sidewall/grip description. width options 20, 23 mm; printed weight entry: 220, 260 g; 130 TPI; 115 psi; training/racing | update → 11686 |
+| B065 / 28 | Ritchey Ritchey Road Force | Road clincher; foldable, responsive, durable sidewall. width options 20, 24 mm; printed weight entry: 180–200 g; 127 TPI; 130 psi; racing/fast riding | update → 8389 |
+| B066 / 28 | Panaracer Panaracer Tourguard | Road clincher with Kevlar-lined tread and steel bead. 24 mm; 338 g; 66 TPI; 115 psi; training/fast riding | held → 6843 |
+| B067 / 28 | Continental Continental Super Sport | Road clincher; 3-ply polyamide; steel bead; described as bullet-proof. width options 20, 23, 25 mm; printed weight entry: 275–285–295 g; 3-ply polyamide; 110 psi; training/rough roads/all weather | update → 6788 |
+| B068 / 28 | Michelin Michelin Performer | Road clincher; comfortable and durable. width options 20, 23, 25 mm; printed weight entry: 280–290–300 g; 130 TPI; 100 psi; training/leisure riding | update → 10533 |
+| B069 / 28 | Continental Competition GP26/19 | Road tubular; 5-ply polyamide; fast, light, durable, responsive. model/width text as printed: GP26/19; width interpretation uncertain; 220 g; 170 psi; time trials/triathlons (26-inch) | held → 10415 |
+| B070 / 28 | Continental Competition 240 | Road tubular; 5-ply polyamide; extremely durable and puncture resistant. 22 mm as printed in model/width field; 240 g; 170 psi; racing/wet or rough roads | held → 10415 |
+| B071 / 28 | Continental Competition GP | Road tubular; 5-ply polyamide; low rolling resistance, puncture resistant. 19 mm as printed in model/width field; 225 g; 170 psi; top-level racing/triathlons | held → 10415 |
+| B072 / 28 | Panaracer TourGuard 200 | Road tubular; Kevlar belt; puncture resistant and light. 200 g; 150 psi; training/racing | held → 6843 |
+| B073 / 28 | Panaracer TourGuard 240 | Road tubular; Kevlar belt; puncture resistant, light, comfortable. 240 g; 150 psi; training/top touring | held → 6843 |
+| B074 / 28 | Panaracer TourGuard 280 | Road tubular; Kevlar belt; puncture resistant and comfortable. 280 g; 150 psi; training/touring/rough riding | held → 6843 |
+| B075 / 28 | Continental Sprinter | Road tubular; 3-ply polyamide; puncture resistant, low rolling resistance. 22 mm; 250 g; 170 psi; racing/training | unchanged → 6787 |
+| B076 / 28 | Vittoria Corsa CX | Road tubular; 5-ply cotton; durable, rear-differentiated, fast. 22 mm; 250 g; 140 psi; racing/training/rear | held → 6880,9428,10441 |
+| B077 / 28 | Vittoria Corsa CG | Road tubular; 5-ply cotton; durable, front-differentiated, fast. 22 mm; 250 g; 140 psi; racing/training/front | held → 6880,9428,10441 |
+| B078 / 28 | Continental Giro | Road tubular; 2-ply cotton; durable, economical. 22 mm; 300 g; 120 psi; training/fast riding | update → 10414 |
+| B079 / 28 | Vittoria Formula 1 | Road tubular; 3-ply cotton; durable, economical, comfortable. 21.5 mm; 300 g; 120 psi; training/fast riding/recreational | update → 6875 |
+| B080 / 29 | Ritchey Alfa-Bite Trail Mix | Hybrid/touring smooth tire, steel bead, non-foldable, skinwall. 700 × 35C: 440 g; 700 × 40C: 470 g | update → 11257 |
+| B081 / 29 | Ritchey Cross Bite, Foldable Kevlar Bead | Hybrid/ATB tire with patented inverted-jaw design for smooth, fast riding on pavement or dirt/rough roads; skinwall. 26 × 1.1: 330 g; 700 × 38C: 430 g; foldable Kevlar bead | update → 8391 |
+| B082 / 29 | Ritchey Cross Bite, Steel Bead | Hybrid/ATB tire with patented inverted-jaw design for smooth, fast riding on pavement or dirt/rough roads; skinwall. 26 × 1.1: 420 g; 26 × 1.9: 490 g; 700 × 38C: 450 g; steel bead, non-foldable | update → 8391 |
+| B083 / 29 | Ritchey Moby Bite | Tire designed for city streets or challenging slick rock; extra-thick, long-wearing rubber compound, tough sidewalls, low-durometer compound for grip. 26 × 2.1 inch; 650 g; steel bead, non-foldable | new → B083 |
+| B084 / 29 | Continental Competition Pro 1, Foldable | Continental MTB tire; Tire designed for coarse or hard soil; extra-thick tread rubber for puncture protection, mud release and low rolling resistance. size 26 × 2.125; 650 g; foldable bead | new → B084 |
+| B085 / 29 | Continental Competition Pro 1, Steel Bead | Continental MTB tire; Tire designed for coarse or hard soil; extra-thick tread rubber for puncture protection, mud release and low rolling resistance. size 26 × 2.125; 700 g; steel bead, non-foldable | new → B084 |
+| B086 / 29 | Continental Competition Pro 2, Foldable | Continental MTB tire; Advanced tire for softer ground; angular profile, added tread rubber for puncture resistance. size 26 × 2.125; 600 g; foldable bead | new → B086 |
+| B087 / 29 | Continental Competition Pro 2, Steel Bead | Continental MTB tire; Advanced tire for softer ground; angular profile, added tread rubber for puncture resistance. size 26 × 2.125; 650 g; steel bead, non-foldable | new → B086 |
+| B088 / 29 | Continental Leader Pro, Foldable | Continental MTB tire; Designed for controlled high-speed cornering; straight-line stability and puncture resistance. size 26 × 2.0; 530 g; foldable bead | new → B088 |
+| B089 / 29 | Continental Leader Pro, Steel Bead | Continental MTB tire; Designed for controlled high-speed cornering; straight-line stability and puncture resistance. size 26 × 2.0; 580 g; steel bead, non-foldable | new → B088 |
+| B090 / 29 | Continental Cross Country Pro, Foldable | Continental MTB tire; Versatile MTB tire providing stability, handling, and grip in all conditions. size 26 × 1.9; 530 g; foldable bead | new → B090 |
+| B091 / 29 | Continental Cross Country Pro, Steel Bead | Continental MTB tire; Versatile MTB tire providing stability, handling, and grip in all conditions. size 26 × 1.9; 580 g; steel bead, non-foldable | new → B090 |
+| B092 / 29 | Wilderness Trail Bikes (WTB) Velociraptor Rear | Rear-specific tire designed for climbing and braking traction in soft dirt, loose gravel, rocks and sand; transition knobs for stable cornering. 26 × 2.1 inch; 625 g; foldable Kevlar bead; blackwall | new → B092 |
+| B093 / 29 | Wilderness Trail Bikes (WTB) Velociraptor Front | Front-specific tire for soft-dirt traction, accurate steering under braking, cornering traction, light weight and low rolling resistance. 26 × 2.1 inch; 645 g; foldable Kevlar bead; blackwall | new → B093 |
+| B094 / 29 | Wilderness Trail Bikes (WTB) Primalraptor | Race tire for dry or hardpack conditions; low rolling resistance, rounded profile, bi-directional tread for front or rear use. 26 × 1.95 inch; 645 g; foldable Kevlar bead; blackwall | new → B094 |
+
+### Identity limits and reviewed non-duplicates
+
+The following held evidence remains documented rather than creating generic duplicates or new automatic bike links. A held listing is not automatically a sourcing TODO; revisit it when a specific new maker code/photo/crosswalk appears.
+
+| Source entries | Reason / needed discriminator |
+| --- | --- |
+| A001, A002, A003 | Group-only crank listing omits maker code and cannot select a production revision; retain coded Shimano rows. |
+| A019, A020 | No cartridge maker code; 115mm Ultegra and 107mm 105SC/RX100 listings cannot safely select UN71/UN72 or LP/UN52 revisions. |
+| A008, A009, A010 | Road group name and arm/ring options omit maker code; do not distribute a retailer specification across coded revisions. |
+| A012, A014 | Group-only road crank listing does not distinguish the existing generations. |
+| A021, A022, A023 | All three are called cartridges, while existing same-era Record/Chorus/Athena rows include cup-and-ball versions; generic tier alone cannot resolve identity. |
+| A028, A029 | Generic XT/STX cartridge listing lacks maker code; dimensions and weight cannot establish UN71 versus UN72 or LP25 versus LP26. |
+| A025 | ProLite steel cartridge is close to the later Pro 10295 (195g, 7075 cups), but the name/axle-length crosswalk is unproven; do not duplicate or backdate it. |
+| A057 | Carbon-frame listing could correspond to Karbonio 5536 or K652 5543; no maker code distinguishes them and no new duplicate is inserted. |
+| A071, A072 | Bontrager-style and Flite-style describe unnamed SDG shapes, not maker model identities; cannot select S7000/S2000/Comp Ti from shape alone. |
+| B006, B007, B008, B009, B010, B011, B012 | Tier/speed/finish options do not supply a unique maker cassette code or distinguish all existing models; do not create group-only duplicates. |
+| B013 | Dura-Ace/XTR HG chain is uncoded and spans multiple maker chains; do not infer a unique CN model. |
+| B019 | Uncoded 1/2x1/8in Sedis track chain may be Sport Track 11819; source omits model and distinguishing construction, so neither duplicate nor backdate it. |
+| B020, B021, B022, B023, B024, B025 | Hubsets are sold by group name without maker codes; combined pair weights cannot resolve separate front/rear revisions or be copied to each hub. |
+| B038 | Uncoded Sigma tubular 365g cannot select Sigma Strada, Sigma 20 or Pave revisions; hold pending maker code. |
+| B054, B055 | Shamal front/rear listings combine clincher and tubular options with one pair of weights; existing 16-spoke models cover both. Do not copy combined-option weights into each variant. |
+| B039 | Omega 20 appears under tubular rims, conflicting with the existing attested clincher; do not change tyre type or invent another variant from this contradiction. |
+| B052, B053 | Rev-X listing lacks revision crosswalk to later Super Stiff/X-Light rows; its two weights are not independently assigned front/rear. No new family placeholder. |
+| B072, B073, B074 | Named TourGuard tubular weight variants are attested, but bare Tour Guard 6843 has unresolved construction/variant identity; reconcile the family with maker evidence before inserting overlapping rows. |
+| B066 | Tourguard clincher cannot be safely reconciled to bare Tour Guard row 6843 (220g measured, construction unspecified); avoid guessing or adding a possible family duplicate. |
+| B063 | Techno Twin K retailer listing (about 130tpi) differs from Tecno Twin Tread 60tpi maker row; no code/crosswalk confirms equivalence. |
+| B069, B070, B071 | Competition GP26/19, Comp 240 and Comp GP lack a maker crosswalk to Competition 10415; preserve diameter versus width and do not invent or merge variants. |
+| B076, B077 | Retailer reverses earlier CX-front/CG-rear recommendations and lacks precise Corsa generation code; existing cotton models remain, no role rewrite or family duplicate. |
+
+Specific transcription and ownership decisions:
+
+- Ultegra BB axle is printed **115mm**, not 111mm; no UN71/UN72 choice is inferred. The Shimano XTR BB box prints **74/100mm** and STX **58/95mm**; these unresolved fitment figures are retained in the source inventory, not silently corrected or promoted to model codes.
+- Ringlé SuperEight shell is printed **7076-T6**; no silent conversion to 7075. WCS headset finish is titanium-colour anodising, not a titanium body. Concor Light says carbon **frame**; shell/rail material is not extrapolated.
+- GP26/19 explicitly has **26-inch** use; it is not a 26mm tyre. CX/rear and CG/front really are printed in this edition, reversing the earlier retailer recommendation; this is recorded without overwriting earlier roles or choosing a Corsa generation.
+- 1995/96 and later maker weights/dimensions are separated by edition where they differ, including LOOK/Time pedals, Chris King headsets, Mavic rims and tyre tables. Actual measured legacy weights are retained. Retailer masses do not invalidate the independent measurements.
+- New WCS levers/cantilevers are independently named/priced tiers. New ATB seatposts differ from existing 230mm road posts and 350/400mm later Mountain posts; a common Force Directional construction alone does not merge them. Control Tech 235mm road post maps to 11851; the 350mm ATB version is separate.
+- Mavic 26-inch 261/217 listings are not the **700c trekking** T261/T217 rows 10182/10184–10186. Reflex clincher evidence maps to 5107/10595, not the tubular Reflex rows 10197/10198/11566/11567. The new 700c Mach 2 Ceramic is distinct from 650c row5083.
+- Group/near/parenthetical checks returned four affected configuration/generation pairs and three existing near-code pairs: new WTB front/rear, Onza steel/Ti, SA601 steel/Ti and Mach2 700c versus650c; existing M231 CD/plain/Ceramic (5071/8191/9972) and M261 neutral/CD (5072/8192). They are independently specified configurations/finishes/sizes, not reviewed merges. No new affected parenthetical-name pairs.
+
+### Applied validation
+
+Readback verified **all 49 new and 55 updated components** against the approved proposal: full descriptions, titles, years, maker/category/group, search strings, fixed UUIDs and source **473**. The source label/citation/country and all four maker descriptions are exact; no truncation. Every other existing component row is unchanged, and all existing image-presence flags are preserved.
+
+- Initial application executed **119 guarded statements**: INSERT data_source1, component_brand4, category_brand10, component_detail49; UPDATE component_detail55, exactly as reviewed. A complete second run affected **zero rows in every statement class**.
+- Before → after: components **11,085 → 11,134**, makers **634 → 638**, category/brand registrations **1,357 → 1,367**. Groups **328** and categories **24** are unchanged. Bikes **1,349** and specs **23,380** are byte-for-byte unchanged in the saved comparison scope.
+- Maintained generator comparison across **108 loaded CSVs / 23,380 specs** is identical before/after: **23,365 unchanged, zero gained/changed, 15 pre-existing Huret Rival losses**, no missing or ambiguous identities, **zero new or removed findings**. No supported NULL backfills arise from these additions. The unrelated 15 baseline losses remain outside this change set.
+- **25 existing bike-spec links** reference updated components; all affected linked bike years fit the applied ranges. No override/title/matcher change was required. New rows have valid maker/category registrations and NULL group, and existing ownership/relationships were preserved.
+- Full maker/category, model-code and spelling/ownership-alias searches preceded insertion. Applied group/near/parenthetical duplicate checks match the reviewed simulation exactly: **four configuration/generation pairs, three existing near-code pairs, zero parenthetical-name pairs**, retained for the independently documented distinctions above. No new unreviewed affected candidates.
+- Preflight rechecked **55 exact before-images**, absence of the **49 new UUIDs/model identities**, brand/source absence, actual field limits, and **119 EXPLAIN plans** before loading. Snapshot checks were READ ONLY; MySQL required EXPLAIN DML outside that transaction after rollback. Maximum applied component description **239** characters, source citation **148**, new eBay search text **45**; exact readback confirms all values fit.
+
+The original three acquired Branford PDFs remain in `/tmp/branford-edition-triage-20261119/`; 1994/95 and attributed1987 still await their own inventories. After application, exact readback, mapping/date/duplicate validation and the zero-change rerun, the completed 1995/96 task's temporary SQL, transcriptions, snapshots, reports and helpers were removed. The full page ledger, source inventory, new IDs/load UUIDs, prior values and identity decisions above are the lasting evidence. No audit SQL is committed.
+
 ## Colorado Cyclist components — applied and validated 2026-11-19
 
 **Applied after user approval and validated.** Components only: **4 additions,

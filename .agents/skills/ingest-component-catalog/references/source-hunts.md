@@ -4,6 +4,87 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ## Log
 
+### Branford remaining editions — downloaded and triaged 2026-11-19
+
+**Subsequent 1995/96 reconciliation, 2026-11-19:** [applied and validated after approval](known-catalogs/cross-catalog-notes.md#branford-199596-component-catalogue--applied-and-validated-2026-11-19), source473: 49 additions **12022–12070**, 55 updates, four makers and ten category/brand registrations. Readback and the zero-change rerun passed; all bike mappings are unchanged. Actual eligible listings are pp.20–29; p.30 is tyre care and p.48 is the index, not a component matrix. This supersedes the OCR-only/no-SQL qualification below for 1995/96. The 1994/95 and attributed1987 inventories remain pending.
+
+Read-only source and component-coverage triage, at the user's request for more
+Branford catalogues to ingest. **Components only; no bikes.** All three
+remaining links in the former owner's [archive](https://timslife.com/brancat/PDF_Catalogs.php)
+download successfully as valid PDFs. At that acquisition-triage baseline, only
+Branford1990 source471 was registered; the subsequent 1995/96 application is
+linked above. No new source registration, SQL, DB write, CSV or matcher change
+was made in the original triage.
+
+| Edition / direct original | PDF pages / bytes | Dating and verified scope |
+| --- | --- | --- |
+| [Archive-attributed1987 fragment](https://timslife.com/brancat/Catalogs/bb1987.pdf) | 12 / 3,781,926 | Photocopied component pages, no cover; first page prints13 and has a handwritten “Branford Bike1987 catalog pages” annotation. Archive and handwriting attribution, not an independently printed edition imprint. |
+| [1994–1995, Vol.18 Issue2](https://timslife.com/brancat/Catalogs/bb18-2_1994.pdf) | 48 / 50,075,372 | Cover explicitly prints1994–1995 and order-through31December1995. |
+| [1995/96, Vol.19 No.2](https://timslife.com/brancat/Catalogs/bb19-2_1995.pdf) | 48 / 57,698,585 | Cover explicitly prints1995/96 and order-through31December1996. |
+
+Retained originals for the pending component inventories:
+- /tmp/branford-edition-triage-20261119/bb1987.pdf
+- /tmp/branford-edition-triage-20261119/bb18-2_1994.pdf
+- /tmp/branford-edition-triage-20261119/bb19-2_1995.pdf
+
+PDF metadata creation dates in2026 concern digitisation, not the original
+catalogue dates. Both48-page PDFs have substantial searchable OCR layers.
+The1987 layer is noisier but selected scans are readable. Visually inspected:
+1987 PDF1(hubs) and10(posts);1994–95 PDF1(cover) and27(specialty parts);
+1995/96 PDF1(cover),20(cranks/BBs) and27(rims/wheels). Other coverage below
+comes from page-by-page OCR/index triage, **not a full visual transcription**.
+Use PDF page numbers in a future inventory until printed folios are checked.
+
+**Recommended first:1995/96.** Its main component block is PDF20–30:
+cranks/BBs, headsets, brakes, pedals, saddles/posts, bars/stems, hubs/cassettes,
+rims/wheels and tyre tables. Strongest sampled missing-maker/model-title
+candidates are Kooka ATB Racing cranks and titanium BB(PDF20), Ringlé
+SuperBubba/SuperEight hubs(PDF26 OCR), and Ritchey ProLite steel/Ti BBs
+(PDF20). Kooka has170/175mm replaceable-spider I-beam arms,390g/pair;
+the separate BB is rifle-drilled titanium with three bearings,170g.
+Ritchey ProLite has7075 cups/sealed cartridges,195g steel or150g Ti, which
+must be compared with the distinct Logic Pro/Comp/WCS rows8412–8414.
+
+Spinergy Rev-X front/rear clincher/tubular listings on PDF27 provide earlier
+evidence than the1999 Spox/Strada/SuperStiff/X-Light rows11950–11957. They
+are **not automatically new identities**: establish version/family overlap
+before adding or extending any row. The same page contains Mavic road/ATB
+rims and Campagnolo Shamal/Vento/Bora; their existing dated variants need
+configuration checks, not blanket duplicate insertion.
+
+**Second:1994–95.** OCR identifies the main component material at PDF20–27
+and tyre tables at44–46. Visually checked PDF27 has Kingsbury aluminium/Ti
+seatposts, Top Line Road and ATB Super-Light/Heavy-Duty cranks, Onza Buzz Saw
+stainless chainrings and distinct road/ATB Grip Shift compatibility options.
+Kingsbury has no current maker/model-title match. Topline Road2006 exists;
+the separately described ATB models merit comparison. PDF25 OCR also names
+Profile Hammer road bars, Pursuit stem, Breeze and AeroIIXL clip-ons.
+Hammer/Pursuit have no current maker/model-title match; existing Breeze10713
+(1996) and AeroII11802(1990) require variant/date checks. Those PDF25 names
+remain OCR leads until the individual scan boxes are visually reconciled.
+
+**Third:archive-attributed1987.** A compact, mostly component-only fragment,
+with hubs, freewheels/chains, brakes, cranks, pedals, derailleurs, headsets,
+posts and shifters. Likely value is earlier availability/specification evidence
+for already represented Campagnolo/Shimano and American Classic products.
+PDF10 explicitly offers American Classic200/280mm posts at150/180g, versus
+current11793's1988–1990 attestation and later200/300mm specifications.
+Keep the lengths/weights by edition; do not silently turn280 into300.
+PDF2 OCR names Maillard700 Super Course6/7-speed, potentially relevant to
+generic Course Super2125–2127, but no maker-code/variant crosswalk is yet
+established. Shop stock codes are not manufacturer model numbers.
+
+Accent-insensitive live title/maker checks across11,085 components found no
+Kooka, Kingsbury/Kingsbery, Onza Buzz Saw, Ringlé hubs, Profile Hammer/Pursuit
+or Ritchey ProLite BB title. These are **triage candidates, not a proven
+insertion count**. The complete next pass must search aliases, part numbers,
+existing generations and specifications before proposing changes. This
+triage demonstrates no new bike-link resolution and does not authorize a load.
+
+Disposable OCR, renders, snapshots and download helpers were removed after
+recording this evidence; the three PDF originals remain for the pending
+inventories. No full visual reading, SQL preparation or ingestion is claimed.
+
 ### Branford and Colorado Cyclist online scans recovered — 2026-11-19
 
 The Branford tyre tables have subsequently been fully read and
@@ -28,10 +109,10 @@ unlinked editions from that introductory text.
 
 | Edition / direct file | Acquisition status |
 | --- | --- |
-| [1987 photocopied pages](https://timslife.com/brancat/Catalogs/bb1987.pdf) | Link verified in live archive HTML; PDF not downloaded/read; completeness not established. |
+| [1987 photocopied pages](https://timslife.com/brancat/Catalogs/bb1987.pdf) | Downloaded12-page component fragment; selected scans/OCR triaged. Archive/handwritten1987 attribution; no cover. See the [current triage](#branford-remaining-editions--downloaded-and-triaged-2026-11-19). |
 | [1990 Spring/Summer](https://timslife.com/brancat/Catalogs/bb1990-01.pdf) | Downloaded, 78,878,255 bytes, 36 PDF pages: 32-page catalogue plus four service/chart/order pages. Cover explicitly prints 1990 Spring/Summer. |
-| [1994/1995, volume 18 no.2](https://timslife.com/brancat/Catalogs/bb18-2_1994.pdf) | Link and 48-page attribution from live archive HTML only; PDF not downloaded/read. |
-| [1995/1996, volume 19 no.2](https://timslife.com/brancat/Catalogs/bb19-2_1995.pdf) | Link and 48-page attribution from live archive HTML only; PDF not downloaded/read. |
+| [1994/1995, volume 18 no.2](https://timslife.com/brancat/Catalogs/bb18-2_1994.pdf) | Downloaded48-page PDF; cover/date range visually verified and component sections triaged. See the [current triage](#branford-remaining-editions--downloaded-and-triaged-2026-11-19). |
+| [1995/1996, volume 19 no.2](https://timslife.com/brancat/Catalogs/bb19-2_1995.pdf) | Components [applied and validated](known-catalogs/cross-catalog-notes.md#branford-199596-component-catalogue--applied-and-validated-2026-11-19), source473; 48-page original retained. |
 
 1990 PDF retained at
 `/tmp/branford-acquisition-20261119/branford-1990-spring-summer.pdf`
