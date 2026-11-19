@@ -512,8 +512,8 @@ Applied 2026-11-19 (user approved), all `source_ref` 478:
 
 Unresolved, no change made:
 
-- The Mektronic rows start at 2000. The separate 1999 launch catalogue may
-  move 4344, 12139 and 12140 earlier.
+- Resolved by the 1999 Mektronic launch catalogue (source 481): 4344 and 12139
+  now start in 1999; 12140 Racing levers stays 2000.
 - F519's logo first letter is partly hidden by the panel bar; the reading fits
   a stylised F. Profile figures were omitted because the transcription returned
   T519's numbers.
@@ -666,21 +666,67 @@ only; other components not audited.`):
 {"component_id":12146,"year_to":2000,"source_ref":478}
 ```
 
+## Mektronic launch catalogue, GB edition (1999) — applied and validated
+
+Source: [19-page landscape PDF](https://www.bikecatalogs.com/download/3661)
+([listing](https://www.bikecatalogs.com/document/3661)), cover "1999 GB",
+300 ppi scans with no text layer. Registered as new source **481**, `Mavic
+Mektronic launch catalogue, GB edition (1999)`, country GB; no earlier source
+covered it. All pages read directly (small pages, no subagent transcription).
+
+Content: concept and WIN wireless system pp.2–3; levers pp.4–6 (385 g a pair;
+one aero position, two right-lever shifter buttons, continuous friction
+chainring shift on the left lever, integrated caliper release); computer pp.7–9
+(40 g, 60 g with bracket; out of scope); rear derailleur pp.10–12 (235 g, HG
+9-speed spacing, 30T capacity, 28T largest sprocket, direct shift to the small
+cog, shifts up to 3 sprockets at once, indexing in the derailleur, battery 2
+years or 30,000 km); kits pp.13–15 (levers kit, triathlon levers kit,
+derailleur kit, triathlon option); front derailleur, battery, magnet and the
+indexation compatibility table p.16 (HG 9-speed natively; spacer kits for CC9
+and ED); ergonomy pp.17–18; back cover p.19. Only the multi-position levers
+appear; the "Racing" levers are first attested in 2000.
+
+Applied 2026-11-20 (user approved), `source_ref` 481:
+
+- **4344** `Mavic Mektronic` (rear derailleur): `year_from` 2000 → 1999, with
+  the derailleur specification above. This is an earlier attestation, not a
+  later move.
+- **12139** `Mavic Mektronic multi-position levers`: `year_from` 2000 → 1999;
+  the description now gives 385 g as a pair and adds the triathlon kit's
+  tri-bar shifter buttons.
+- Not changed: 12140 Racing levers stays 2000–2001. The computer, battery and
+  magnet are out of scope.
+
+Unresolved, no change made: p.16 shows a Mektronic front derailleur for double
+chainrings, braze-on or clamp, with no weight. It looks like SSC front
+derailleur **12146** (braze-on, 95 g, 2000–2001), but identity is unproven and
+12146 keeps its 2000 start; a dated source naming one derailleur for both would
+justify moving it to 1999.
+
+Validation: both guards matched one row; the rerun affected zero rows. Readback
+confirmed source 481, both rows at 1999–2001 / source 481 (descriptions 240 and
+249 characters), and 12140 / 12146 unchanged. `compare-bike-links.js`: 23,395
+of 23,410 specs unchanged, 0 gained/changed, the same 15 Huret Rival losses.
+Quality report: 0 errors; no finding names 4344 or 12139. Mavic duplicate
+report still has 13 pairs. Neither row has bike links or generator overrides.
+
+Restoration baseline (delete source 481 only after restoring both rows):
+
+```jsonl
+{"component_id":4344,"year_from":2000,"source_ref":479,"description":"Mektronic wireless electronic 9-speed rear derailleur, digitally coded radio control from the levers/computer; total capacity 30T, largest sprocket 28T; battery 2 years or 30,000 km; 235 g. Complete system 775 g."}
+{"component_id":12139,"year_from":2000,"source_ref":479,"description":"Mektronic ergonomic brake/shift levers, multi-position: extra aero position and two shifter buttons for time trials and triathlon; retro-friction left (front) shift, touch buttons right; integrated caliper release; 385 g."}
+```
+
 ## Catalogue backlog and scope review — 2026-11-19
 
 Compared the existing reconciliation notes with live `data_source` records
 and the [Bike Catalogs Mavic archive](https://www.bikecatalogs.com/brand/mavic).
 A source registration, or a component currently citing it, does not establish
 that its whole catalogue was ingested: source_ref tracks the latest change,
-and later corrections can supersede earlier provenance. The following are
-confirmed available editions still needing a full reconciliation:
-
-| Edition | Available source | Work already recorded | Remaining scope |
-| --- | --- | --- | --- |
-| 1999 Mektronic launch catalogue | [Archive listing](https://www.bikecatalogs.com/document/3661) | No equivalent source or ingestion entry found | Obtain and inspect the separate launch catalogue, then reconcile its supported components |
-
-The 1994, 1995, 1999 GB, 2000 GB and 2001 USA full catalogues are now applied and validated above.
-Remaining: the 1999 Mektronic launch catalogue. Earlier full
+and later corrections can supersede earlier provenance. Every confirmed
+edition this review listed for full reconciliation is now done: the 1994, 1995,
+1999 GB, 1999 Mektronic, 2000 GB and 2001 USA catalogues are applied and
+validated above. Earlier full
 editions can refine existing component identities and dates before moving
 through the later wheel ranges. This is a work order, not approval of an
 unreviewed DB change set. The historical sections below record substantial
@@ -694,8 +740,8 @@ Checked the archive descriptions of three additional listings directly:
   is explicitly the six-page trilingual **Les 92** leaflet, matching source 304
   and the processed inventory below. Do not add it as a new full catalogue.
 - The 1999 Mektronic listing describes a 19-page launch catalogue; it is
-  distinct from the 1999 GB Rims & Wheels source 374. Listing metadata and
-  source absence were checked; the launch PDF itself is not yet transcribed.
+  distinct from the 1999 GB Rims & Wheels source 374. It is now reconciled as
+  source 481 (see the Mektronic section above).
 - [2009 Bike Systems ES](https://www.bikecatalogs.com/document/5801)
   is also listed, with no matching registered source/ingestion record. Its
   description says 26 pages rebuilt from Scribd renders and dates it from the
