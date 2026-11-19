@@ -1,5 +1,122 @@
 # Huret catalogs processed so far
 
+## Manufacturer-source recovery and specimen follow-up — 2026-11-19, read-only
+
+New evidence recovered below; **no DB/source registration, component, CSV,
+generator or bike-link changes**. This is a focused evidence review, not a full
+ingestion of the newly located brochure or either magazine.
+
+### 501.1 DFE recovery limits and paper leads
+
+The [Velopedia record](https://velopedia.online/Document/Show/1291) still has
+indexed OCR, but the live record on both host spellings and the public PDF
+preview route return 404. Targeted Wayback CDX queries for New Success scan
+paths on both hosts returned empty arrays. The earlier six/seven-speed finding
+and proposed 6110 enrichment remain as recorded below; no scan was recovered
+and the OCR was not promoted to a visually verified source.
+
+New paper leads in the [eBay category listing](https://www.ebay.de/b/Kettenschaltung-in-Fahrrad-Sammlerobjekte/420/bn_7004600080):
+[501.1/1 DFE, New Success ARIS, item 377245205441](https://www.ebay.de/itm/377245205441)
+and [502.1/1 DFE, Rival Sport ARIS, item 377245221274](https://www.ebay.de/itm/377245221274).
+The category identifies both at EUR 2.99, but direct listing retrieval failed
+(403/cache miss), so exact availability, print dates and page contents are
+unverified. The **/1 revision is not assumed identical to 501.1 DFE**.
+No contact or purchase was made. A
+[2022 Usenet post](https://groups.google.com/g/de.rec.fahrrad/c/cirIbQMw7Ns)
+also offers 502.1/1 DFE among shared sheets; its FEX PDF now returns HTTP 666.
+The post's approximate 1986 dating concerns copied catalogue pages, not a
+verified date for the two separately described original sheets.
+
+### Dated manufacturer advertisements
+
+- [Pro Velo no.15, 4/1988](https://provelo.fahrradzukunft.de/pdf/pro-velo-15.pdf):
+  visually checked the dated cover and **PDF p.4**, full-page Sachs-Huret
+  ARIS advert. It shows the early New Success ARIS rear and paired downtube
+  levers, and explains Cable Saver and RGS sprocket profiles. No numeric model
+  codes, weights or bicycle fitments are printed. This is a dated appearance
+  of that design, not an exact manufacturing endpoint or confirmation of the
+  1989 Peugeot generation. The separately reproduced Le Cycleur colour advert
+  has no visible publication date; its blog caption alone was not used to date it.
+- [Bicross Magazine no.24, September 1984](https://oldschoolbmxfrance.com/bicrossmag/BXM8409-24.pdf):
+  visually checked cover and **PDF p.63**, inside-back-cover Sachs-Huret
+  Hi-Stepper advert. Explicit captions identify rear **Duopar 2690-00 H**,
+  front **Hi-Stepper 3080-00 S**, right/left handlebar levers **3300/3303**.
+  The rear is alloy/steel; the pictured extra parallelogram and long cage
+  corroborate the ATB family already represented by 4400. It does not equate
+  2690-00 H with 2690-01 or identify an unqualified bike's Duopar variant.
+  The example 14x30 freewheel / 30x36x46 chainset is an application example,
+  not a newly stated maximum capacity. No new dates are needed for 4400's
+  existing 1980–1984 bounds from this corroboration alone.
+
+### Recovered Sachs Composants ATB brochure — undated
+
+[Six-page French manufacturer brochure](https://leblogduvelovintage.art.blog/wp-content/uploads/2022/09/sachs-huret-atb.pdf),
+all pages visually inspected. No visible printed year or print code; the
+2022 upload path does not date publication. **PDF p.3** gives:
+
+| Category | Printed model | Distinguishing specification |
+| --- | --- | --- |
+| Rear Derailleurs | Rival ATB ARIS **AR41.4T** | Light alloy/steel, metallic grey, 360g; 40T total capacity, 34T maximum freewheel, slant parallelogram, Cable Saver, anti-jam cage. |
+| Front Derailleurs | Rival ATB ARIS **AV62.2T** | Light alloy/steel, metallic grey, 150g; triple, maximum 26T difference. |
+| Shifters | **MA82.8G** right | Handlebar lever, six speeds; footnote says seven speeds in preparation. |
+| Shifters | **MA82.9G** left | Handlebar friction lever. |
+| Shifters | **MA82.10G** left | Alternative for Orbit hub. |
+
+The photos on PDF pp.1–2 show the ATB rear/front and handlebar levers together.
+Other brochure content includes Rival ATB hubs, RGS freewheel, Sedisport ATB
+chain and 48/38/28 mixed round/oval triple, VT5000/HT5020/Orbit HT drum hubs,
+and Torpedo Pentasport. These were not fully reconciled with the DB here.
+
+No explicit AR41.4T, AV62.2T or MA82.8G/9G/10G title/description match was
+found among live Huret/Sachs-family rows. Initial specimen reconciliation:
+
+- Front **2440** is explicitly a double in its original VeloBase record;
+  its main photo has a different cable arm from the brochure's triple.
+  **2438** is a triple but its original record identifies three outer-cage
+  cutouts and a high band clamp, unlike the brochure photo's solid cage.
+  Neither is assigned AV62.2T. **2445** already carries the separate AV62.2D
+  double code; the T suffix must not be silently folded into it.
+- Rear **4417** has a short cage in its source record and photograph, unlike
+  AR41.4T's long ATB cage. Do not retitle it from this brochure or transfer
+  its Peugeot fitments to the ATB model.
+- **6113** is a downtube braze-on lever; **6108/6110** are also downtube
+  levers. The existing handlebar **8965/8966** are thumb ratchet controls
+  MA86.1G/E, not the six-speed indexed MA82.8G system. No equivalence follows.
+
+Further reconciliation should compare the later Rival 7000/Classic specimen
+families before proposing additional ATB rows; the absent printed codes alone
+are not proof that no suitable row exists. This brochure's
+triple ATB front cannot resolve the Rider double specs or establish the
+1988 PXR80's original Rival front. Retained the recovered PDF at
+`/private/tmp/huret-evidence-2026-11-19/sachs-huret-atb.pdf` for that pending
+reconciliation; it is not registered as a data source.
+
+### Avant and Rider specimen comparisons
+
+Inspected all **six** photos of the specimen
+[sold as Avant AV62.10, from 1984](https://www.velosaloon.com/products/sachs-huret-avant-av-62-10-clamp-on-front-derailleur-from-1984)
+and all **five** of the separate
+[700 Avant gallery](https://www.velosaloon.com/collections/sachs-huret/products/sachs-huret-700-avant-clamp-on-front-derailleur-from-the-1980s-1).
+The former has three outer-cage cutouts and an open metal mechanism; the
+latter has a solid outer cage and a different mechanism with a black upper
+limit-screw bridge. These are visibly different constructions, consistent with
+keeping 2441/2442 separate. Neither gallery establishes a photographed model
+code or a maker crosswalk. Listing dates and weights were not adopted as
+manufacturer specifications or exact availability bounds.
+
+All **six** photos of the [Rider front gallery](https://www.velosaloon.com/products/sachs-huret-rider-clamp-on-front-derailleur-from-the-1980s)
+show a solid cage and cable-housing stop, but no readable double/Rider 2 model
+designation. It is not evidence identifying the four original double fitments;
+do not transfer its seller title to them or create a double model from it.
+
+Live readback retains 8849 -> 6110, 8851 -> 2439, 8852 -> 4403;
+15103/17501 -> 6110; the six 1988 Rival front specs
+16411/16583/16603/16623/16661/16962 -> 8488; PXR rear 16963 and Rider double
+15470/17763/17782/17858 -> NULL. Exact codes/fitment remain the missing
+discriminants. All disposable magazine PDFs/renders, HTML, photos and archive
+indexes from this pass were removed after recording the URLs and findings;
+only the ATB brochure above remains for pending reconciliation.
+
 ## 1978 Motobecane Eco attestation — applied 2026-11-17, user approved
 
 - [1978 US Motobecane catalogue](https://www.flickr.com/photos/stronglight/albums/72157714839758201/),

@@ -5,6 +5,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Ready to work
 
 - Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
+- Compare the recovered undated Sachs ATB brochure's AR41.4T, AV62.2T and MA82.8G/9G/10G with later Rival 7000/Classic specimens, then prepare any supported additions or enrichment. [Source, initial reconciliation and retained PDF](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#recovered-sachs-composants-atb-brochure--undated).
 
 ## Product and infrastructure
 
@@ -29,7 +30,7 @@ Reopen these when the specified material becomes available; existing ambiguity a
 - **Mavic:** obtain a 1996 maker CXP30 tubular specification or measured bare-rim/inserts comparison to explain the dealer 520 g figure; obtain dated Open Pro 5099/5100 decal/finish evidence and a dated 31.8 mm specification for 870 clamp 2410. [Weight qualifiers and remaining evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mavic.md#cxp30-and-open-pro-weight-attribution--2026-11-19-applied).
 - **FRM:** obtain a maker crosswalk for CU2 specimen 1570 versus 10279/10280, and Carbon-Ergal/Alu-Ergal hubs versus Feather/Pro. [Guida evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#guida-96-follow-up-frm-identities--2026-11-18).
 - **Regina:** obtain a dated parts-code or identified specimen crosswalk for Palo Alto's 1979–84 splined Oro 5/6-speed freewheels versus 2182/2194 and BX rows. [Maker and retailer comparison](.agents/skills/ingest-component-catalog/references/known-catalogs/regina.md#splined-oro-comparison--2026-11-18-read-only).
-- **Huret/Sachs Huret:** recover sheet 501.1 DFE for description enrichment; obtain coded fitment/specimens for New Success, Rival, Rider, Duopar/Eco and Avant, plus dated ARIS evidence. [Exact cases](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md).
+- **Huret/Sachs Huret:** recover 501.1 DFE or verify the listed 501.1/1 revision for 6110 enrichment; obtain exact New Success generation/Raleigh fitment, Rival 1086-00/AV62.1D fitment, Rider double, Duopar/Eco variant and Avant code evidence. [Recovery leads, dated adverts and remaining limits](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#manufacturer-source-recovery-and-specimen-follow-up--2026-11-19-read-only).
 - **SunTour:** obtain code/construction/date evidence for the remaining XCD/XCE, Superbe, Sprint, FD-3000-SS and other uncoded specimens. [Exact cases](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md).
 - **SunTour XCD freehub 3630:** obtain a specimen model code, comparable cassette-body/spacing measurements or coded XCD-6010 fitment to distinguish FH-XD10 from FH-XD11. [Evidence needed](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#xcd-freehub-3630-specimen-and-axis-review--2026-11-18-description-correction-applied).
 - **Campagnolo:** obtain the remaining 2000/2001 code/version crosswalks and early front-derailleur date evidence. [Exact cases](.agents/skills/ingest-component-catalog/references/known-catalogs/campagnolo.md).
