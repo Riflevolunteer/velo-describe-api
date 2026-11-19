@@ -1825,8 +1825,9 @@ originals and maintained CSVs are preserved.
   https://www.disraeligears.co.uk/site/la_bicicletta_guida_99_-_componenti.html (scans at
   `00_main_images/la_bicicletta_guida_99_-_componenti_scan_NN_main_image.jpg`, 01-56, 1560 px,
   legible read whole; **don't read the bound PDF**, the Read tool's PDF render is too small for
-  the weights). Printed pages 88-147; magazine page 129 (between cassettes and bottle cages) is
-  not on the site. Read 2026-11-02; transcription (1,052 rows) and diff kept in the session
+  the weights). The earlier88–147 range is superseded by the verified scan/folio ledger in the
+  prepared remaining-entry review below; some scans have cropped folios and pages
+  are omitted (including129 between cassettes and cages). Read 2026-11-02; transcription (1,052 rows) and diff kept in the session
   scratchpad only.
 - Scan map: 1-3 groupsets; 3-8 stems; 8-9 quick releases; 11 rear derailleurs; 12-14 seat posts;
   14-15 chains; 15-16 cables; 16-17 rims; 18 shifters, Ergopower / STI; 19-24 tyres; 24 brakes;
@@ -1897,7 +1898,513 @@ originals and maintained CSVs are preserved.
     Logic Pro Road pedals, Zipp 340 wheels). 22 descriptions were cut at 255 chars.
   - Not inserted: 19 rows without a weight or with an unreadable name; all 210 rows of the 53
     brands not in component_brand (Syncros, Tec Components, Areo, Spinergy, DT, SRAM, Race Face,
-    Thomson, Fi'zi:k, Tune, Tiso, WR Compositi, Casiraghi, Energy, Allara ...): a possible pass 3.
+    Thomson, Fi'zi:k, Tune, Tiso, WR Compositi, Casiraghi, Energy, Allara ...): historical pass3 backlog, reconciled in the applied pass below.
+
+### Guida '99 remaining-brand backlog check — 2026-11-19
+
+Read-only recommendation check after the Branford1990 load. Live source353 is
+already registered as the1999 Componenti guide (56 scans); source357 is the1996
+guide. The historical1999 pass skipped210 entries attributed to53 then-absent
+brands, plus19 weightless/unclear entries. Those are historical extraction
+counts, **not a current insertion forecast**. No1999 pass3 application was
+recorded at recommendation time; the applied reconciliation below supersedes
+that status.
+
+At recommendation time, brand-name/alias queries found no Spinergy, SRAM, Thomson, DT/DT Swiss,
+Fi'zi:k/Fizik, Tune, Tiso, Casiraghi, Energy or Allara brand. Syncros710(4 rows),
+TEC Components719(3), Race Face715(3) and WR Compositi711(5) now exist, chiefly
+from the1996 pass; the old blanket missing-brand assumption no longer applies.
+This makes1999 a strong already-sourced **component-expansion** candidate;
+no improvement to the predominantly1980s bike-link gaps has been demonstrated.
+
+The web page reader hit a verification page, but a direct HTTP HEAD of original
+scan45 returned200/image-jpeg,517940 bytes on2026-11-19. No new source download,
+component extraction, SQL or DB write was performed in this check. Original URL:
+https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_45_main_image.jpg
+
+The1996 pass3 is already applied (89 additions, see its section below), so do
+not recommend it again as pending. Colorado Cyclist's eight acquired sheets
+remain the smaller1988-attributed alternative, particularly sheets6–8; its
+January1989 offer deadline does not establish a precise publication date.
+
+### Guida '99 remaining entries — applied and validated 2026-11-19
+
+**Applied after user approval and validated.** User selected the remaining1999 guide
+backlog after the [source check](#guida-99-remaining-brand-backlog-check--2026-11-19).
+Reuse existing source **353**, country IT; no new source or source-citation
+update is required. Original scan pattern:
+`https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_NN_main_image.jpg`,
+two-digit01–56. All56 originals downloaded successfully (30,818,966 bytes).
+The guide attests1999 availability, not manufacture start/end. New rows use
+1999–1999 only; no existing year_from moves. This pass revisits missing makers,
+models/identifiable weightless entries and matching1996 parts, rather than
+reloading the earlier Campagnolo/Shimano and known-brand passes wholesale.
+
+**198 additions,18 existing-row updates,35 new brands,74 category/brand
+registrations.** New component IDs **11820–12017**. No bike, source, CSV,
+matcher, merge or delete writes were needed. Two reviewed non-duplicate pairs
+were registered in duplicate-classify.js. Fourteen existing year_to values
+extend1996→1999. Three retitles
+also regenerate search_text:11610 Hardcore→Hardcore7075;11612 Titec Aluminium
+→Titec Al235;10385 LOOK2004G→Lookin2004G. The last also corrects maker415 LOOK
+→new printed brand Lookin, retaining stable component ID10385.
+
+### Coverage and source qualifications
+
+The focused inventory has **250 mentions**:198 additions,18 updates,11 held
+entries,22 unchanged matches and one corroboration folded into aggregate1704.
+This is not a count of every component in the guide or a like-for-like recount
+of the historical210 skipped-brand estimate. All56 scans have a page/category/
+brand ledger. Group summaries, axles alone, QRs, bottles/cages, cables, bolts,
+spokes/nipples, tape/straps, frame tubing and advertisements remain outside the
+existing component categories. Complete clip-on aero-bar assemblies are included
+under Handlebars, consistent with the Profile assemblies loaded from Branford.
+
+Use **scan numbers** as the stable source locator. Verified footer sequence is
+retained in the ledger; scan49 prints142,50 prints143,51 prints144,52 prints145,
+53 prints146. Scan02 and54–56 lack a verified printed footer. Thus the old
+88–147 range and some sequentially inferred folios are not adequate provenance;
+no absent/cropped printed page is invented to fill numbering gaps.
+
+Fixed UUIDs below are the load-idempotency keys; component and maker IDs
+are the allocated live database IDs. Source URLs/scans, descriptions and prior
+values are retained here. Task-created scans, SQL, baselines, inventories and
+validation scripts were removed after readback and the zero-change rerun.
+
+### Reconciliation decisions
+
+- Printed identities are kept: Areo is not Aerosport/Aerospoke; BRAWO is the
+  wheel brand (not Bravo). Tiso Bike Components/Bike C. →Tiso; DT Hügi →DT
+  with Hügi Strada in the model. Existing Sun Ringle entries map to Sun517:
+  Moby Deuce10173 and Slamma Jamma10411 are already exact1999 source353 rows.
+  No duplicate Sun Ringle maker or component is added. Printed marketing names
+  Connex,Lookin,Aheadset and Fi'zi:k are represented without unprinted corporate
+  ownership claims; existing Wippermann older-model chains are not guessed to
+  be any of the newly coded Connex chains.
+- Source scan46 explicitly says **LOOKIN2004G**, with the same PVC/plastic/
+  CrMo/Royal-gel/380g specification already assigned to LOOK10385. Correct that
+  row's brand/title/search text in place; it has no current bike links. Do not
+  add a second2004G. None of these printed names is a production-date claim.
+- Missing weight alone does not exclude a named part: SRAM PC chains,
+  Fi'zi:k Pavé,Serfas saddles,Cane Creek Aerohead Light and others are retained.
+  The text does not assign model numbers as weights (e.g. Tune Mag215 lists225g,
+  Serfas model numbers are not weight evidence). Article/distributor-style KMC
+  numeric headings are retained as printed identifiers, not asserted as proven
+  manufacturer's catalogue codes.
+- Tune Mig66 combines its separately printed crossed74g and radial78g
+  configurations with their respective drillings; Mag215225g has no asserted
+  carbon axle/ceramics,Mag205 has a carbon axle,Mag180 carbon axle/ceramics.
+  Energy HB01/02/03/04 and HB11/12/13/14 are **rear** families; do not invent
+  individual specifications for the grouped codes. TEC Flash/Big/Slim retain
+  distinct front/rear builds. Microtech's unusual rear335g-with/175g-without QR
+  claim is preserved as an inconsistent retailer basis, not silently corrected.
+  Its axle is printed6075-T6; no unprinted7075 substitution is made.
+- Joy Tech Nova Tec is printed in both front and rear sections. Front lists
+  100–110mm and a questionable freewheel-compatibility sentence; rear lists
+  140mm with8/9-speed compatibility. Retain the independent section/configuration
+  attestations and literal dimensions, without replacing140 by a presumed130.
+- Spinergy Spox/Strada/Super Stiff/X-Light front and rear are distinct products.
+  Strada's size-dependent weights remain unordered where mapping to26/28in
+  cannot be established. Energy Equipe Pro120 uses5086 electrowelded rims;
+  150/170 use6082-T6. Keep pair/front/rear/without-ring/without-QR weight bases.
+  WR WRR wheel weights start at620g front/840g rear, depending on the build.
+- Tiso Joe has **sealed angular-contact bearings**, not ceramic bearings;
+  Handy's95g applies to1-1/8in. Syncros Hardcore headset is separate from the
+  Hardcore seatposts, with no unprinted threadless-only restriction. The unnamed
+  Cane Creek116/146g callout is held apart from C2 and S5(116/144g), rather than
+  creating a speculative third model.
+- Preserve1996 versus1999 specifications: Rohloff SLT99 width6.85 versus7.1mm;
+  Syncros Hardcore7075 temper T78 versus T6; Titec Al235 and C191 lengths/weights;
+  Tioga Bloodhound473/470g,City Slicker535/418g and Proline S/F tread/bead options;
+  SDG nylon/carbon versus nylon/Kevlar shells and earlier/later weights. Earlier
+  independent data is not replaced merely because the guide is later. Titec
+  C191 explicitly has an alloy core; Al235's350mm is not confused with the
+  neighbouring Syncros330/225mm options.
+- Ofmega1704 already aggregates Vantage doubles/triples. Enrich it with
+  Vantage2/3 BCD/weights while preserving567g measured and1996 configurations;
+  keep generic1680 untouched. Gommitalia6806 is a bare Targa family row; enrich
+  it with20mm190g and22mm200g rather than create an overlapping Targa22 row.
+- Held crosswalks below do not create guessed identities or automatic follow-up
+  hunts. Shimano6500 retains the prior hold: group wording alone does not prove
+  an additional chain alongside existing CN-HG9210858.
+
+### Duplicate and bike-link review
+
+Final actual-generator simulation across **108 loaded CSVs /23,380 specs**
+leaves every mapping unchanged, including the baseline's15 pre-existing Huret
+Rival lost matches. Three linked specs1435/1469/1486 all remain on Rohloff1396;
+none is reassigned to the uncoded narrower chain. No new supported bike link,
+NULL backfill or override has emerged. All changed dates extend bounds, and
+none of the other changed rows currently has a linked bike.
+
+Nine new grouped pairs are straightforward front/rear or quill/threadless
+configurations. The two additional near-pairs are reviewed and kept separate:
+**Connex905/905 Inox** (nickel-plated steel versus stainless, two explicit
+listings, scan14) and **Sintesi Diagram/Diagram2** (separate printed headings,
+-16 versus-17deg, scan07). No merge was needed. Allocated pairs
+**Connex11881/11882** and **Sintesi11827/11828** are registered in
+`REVIEWED_NOT_DUPLICATES`; both disappear from default near-pair reporting
+and remain available with includeReviewed.
+The existing Ofmega1704/1705 generation pair remains unchanged.
+
+### Application and validation
+
+Before loading, all325 DML statements passed database EXPLAIN, all18 prior
+rows matched the recorded before-images, and all35 brands/198 component
+identities were absent. The approved327-statement transaction affected exactly
+35 component_brand,74 category_brand,18 existing component_detail and198 new
+component_detail rows. Existing source353 was reused without changes.
+
+Exact readback matched every proposed field and UUID for IDs11820–12017 and
+all18 updates; the other10,865 existing component rows retained their fields
+and image-presence values. All201 new/retitled search strings use the maintained
+helper; maximum description237 characters. The SQL rerun affected **zero rows**
+in every table. New rows have correct source/year/category/brand/group references
+and category_brand membership; no dangling identities were introduced.
+
+Actual post-load generator comparison across108 loaded CSVs/23,380 specs has
+**zero mapping changes**. The existing23,365 unchanged/15 Huret Rival lost-match
+baseline is preserved. Every stored bike and bike_spec row in the baseline is
+unchanged; linked specs1435/1469/1486 remain on Rohloff1396. Date extensions
+introduced no new conflict for those existing links. Nine grouped duplicate
+pairs remain distinct front/rear or quill/threadless configurations; the two
+reviewed near-pairs are registered above. The duplicate-classify and
+duplicate-report test suites pass. Eleven held identities below remain evidence
+decisions; none was inserted or guessed into a bike link.
+
+### New components by category
+
+| Category | New rows |
+| --- | --- |
+| Stems | 30 |
+| Rear Derailleurs | 1 |
+| Seat Posts | 19 |
+| Chains | 19 |
+| Tyres | 8 |
+| Handlebars | 16 |
+| Cranksets | 5 |
+| Bottom Brackets | 9 |
+| Hubs | 19 |
+| Pedals | 8 |
+| Cassettes | 1 |
+| Wheel(sets) | 36 |
+| Saddles | 19 |
+| Headsets | 8 |
+
+New printed brands: A.C. Adventure Components, Aheadset, Areo, BRAWO, Bebop, Cane Creek, Connex, Control Tech, Corratec, DT, Energy, Eolic, Exus, Fi'zi:k, Free Spirit, Freewheeling, Icon, Innovative Bike Systems, Joy Tech, KMC, Lookin, Microtech, Middleburn, RIE, Rolf, Roox, SRAM, Serfas, Seven Cycles, Sintesi, Spinergy, Thomson, Tiso, Tune, USE.
+
+<details>
+<summary>Applied additions: allocated IDs, fixed UUIDs, source scans and full descriptions</summary>
+
+| Component ID / title | Maker ID / category | Scan / verified folio | Dates | Fixed UUID | Applied description |
+| --- | --- | --- | --- | --- | --- |
+| 11820 Areo CS2 A-Head | 729 / Stems | 3 / 91 | 1999–1999 | 1de6208d-da3d-480a-b062-5809f2bc3b3e | Cold-forged, fully CNC-finished 6061-T6 aluminium threadless stem; 1 or 1-1/8in steerer, -10/+10deg, 156-170g. Black, silver, blue or titanium-anodised. |
+| 11821 Areo CS3 A-Head | 729 / Stems | 3 / 91 | 1999–1999 | 8dec8f7b-74f3-4ee8-b290-0c551b29d5f2 | Cold-forged, fully CNC-finished 6061-T6 aluminium threadless stem; 1 or 1-1/8in steerer, -10/+10deg, 156-170g. Black, silver, blue or titanium-anodised. |
+| 11822 Areo CS 04 | 729 / Stems | 3 / 91 | 1999–1999 | 8bc8407e-227a-45c4-a346-d3dd9bc4df10 | 6061-T6 threadless stem, 100-130mm, 1 or 1-1/8in steerer, 80deg, 156-170g. Cold-forged, TIG-welded or monolithic; polished/satin silver, titanium, black or blue finishes. |
+| 11823 Areo TS 01 | 729 / Stems | 3 / 91 | 1999–1999 | feda0ecf-9581-48df-bb2d-d89bed535b3e | 6061-T6 aluminium threadless stem; 1in steerer, 80deg; 180-270g. Cold-forged/TIG-welded construction, polished silver. |
+| 11824 Areo TS 02 | 729 / Stems | 3 / 91 | 1999–1999 | 2d0029e7-b58e-4e4d-baa3-c2c9ec16ae14 | CrMo steel stem; 1in steerer, 80deg; 160-235g. Brushed titanium-colour finish. |
+| 11825 Seven Cycles Ti-Stem | 755 / Stems | 7 / 95 | 1999–1999 | a83144a1-4bc4-46b1-a6e3-d75cd46a20ce | Made-to-order threadless stem using Seven Argen3Al/2.5V and6/4 titanium tubing; 1 or 1-1/8in steerer, custom extension/angle, 120-240g. |
+| 11826 Sintesi Quasar | 756 / Stems | 7 / 95 | 1999–1999 | 614bca46-90ad-4b65-bdd0-3318efa929e6 | Aluminium stem; 1in steerer, 160g; silver. |
+| 11827 Sintesi Diagram | 756 / Stems | 7 / 95 | 1999–1999 | 0019731b-ce03-4709-a005-15ed16fc1bb9 | 7075 aluminium threadless stem, 1in, -16deg, 220/280g as listed; silver. Distinct from Diagram2 at-17deg. |
+| 11828 Sintesi Diagram 2 | 756 / Stems | 7 / 95 | 1999–1999 | 04f089f4-943b-4db4-b483-9e9bcbddfcbb | 7075 aluminium threadless stem, 1in, -17deg, 220/280g as listed; silver. |
+| 11829 TEC Components Zero Tec | 719 / Stems | 7 / 95 | 1999–1999 | 2f0e0369-7913-4ea6-81ba-786eb4ff2002 | CNC-machined stem offered with or without quill in anodized or painted colours; steerer 1/1.125 in; angle 0/85°; weight 200/280 g; with or without quill. |
+| 11830 Titec Ti Road (with quill) | 712 / Stems | 7 / 95 | 1999–1999 | c7d4017e-38ef-4ed2-a071-521cea86d381 | 3Al-2.5V titanium quill stem; 100/110/120mm extension, 1in, -17deg, 185g. |
+| 11831 Titec Ti Road (threadless) | 712 / Stems | 7 / 95 | 1999–1999 | 9e385b91-aa99-4825-8f76-641fe26c9a68 | 3Al-2.5V titanium threadless stem; 100/110/120mm extension, 1in, -17deg, 115g. |
+| 11832 TEC Components Roccia | 719 / Stems | 8 / 96 | 1999–1999 | 8ce15415-2fb7-4ccb-a463-01d612a540fe | Fully CNC-machined stem offered with or without quill, multiple anodized or painted colours; steerer 1/1.125 in; angle 0/85°; weight 200/280 g; with or without quill. |
+| 11833 TEC Components Murex Tec | 719 / Stems | 8 / 96 | 1999–1999 | 34a4ccfd-c8eb-4b0a-a912-58f00623eec3 | Stem offered with or without quill in anodized or painted colours; steerer 1/1.125 in; angle 0/85°; weight 200/280 g; with or without quill. |
+| 11834 WR Compositi A-Head | 711 / Stems | 8 / 96 | 1999–1999 | 9ab6efde-9c80-401f-811b-94f30ba8d162 | Coaxial carbon-fibre stem with grade-5 titanium expander bolt and separable front clamp; extension 90/140 mm; steerer 1/1.125 in; angle 0/10/17/90°; weight 130 g; with or without quill. |
+| 11835 WR Compositi Tradizionale | 711 / Stems | 8 / 96 | 1999–1999 | f299faff-1f11-4bda-9be0-7a6ebde8992f | Coaxial carbon-fibre stem with grade-5 titanium expander bolt and separable front clamp; extension 90/140 mm; steerer 1/1.125 in; angle 0/10/17/90°; weight 165 g; with or without quill. |
+| 11836 SRAM Plasma | 753 / Rear Derailleurs | 11 / 99 | 1999–1999 | 343bd96e-f750-475c-afb7-9ce711f5f097 | Rear derailleur with composite upper and lower links, aluminium fixing bolt and outer cage; direct cable insertion, Grip Shift and Shimano compatible; fully dismantlable; 192g. |
+| 11837 Energy SP 01 | 737 / Seat Posts | 13 / 101 | 1999–1999 | aef119c8-5089-4e7f-a7a4-7b6f053572e4 | Titanium 3Al-2.5V shaft with 7075 aluminium CNC-machined head; micrometric saddle adjustment with two screws; diameter 27.2 mm; length 240 mm; weight 180 g. |
+| 11838 Race Face XY Seat Post | 715 / Seat Posts | 13 / 101 | 1999–1999 | 0d42fee6-4506-49d6-86cc-7013f57b7458 | 7075-T6 aluminium seatpost; 26.8/27/27.2/31.6mm, 330/400mm; 235/270g as listed; silver or black. |
+| 11839 Race Face XYZ | 715 / Seat Posts | 13 / 101 | 1999–1999 | a0f0ad90-8beb-4a6b-8dfc-3f8a9d94bb54 | 7075-T6 aluminium seatpost; 26.8/27/27.2/31.6mm, 400mm, 240g. |
+| 11840 Thomson Elite 100 | 758 / Seat Posts | 14 / 102 | 1999–1999 | eb71bd02-294d-4c80-8bdf-4071e1f41d3e | 7000-series extruded aluminium seat post; forged head, micrometric double-bolt saddle adjustment; silver or black anodized; diameters 26.6/26.8/27.0/27.2/27.4/28.6/30.8/30.9/31.6/31.8 mm; length 250 mm; weight 186 g. |
+| 11841 WR Compositi WR RS99 | 711 / Seat Posts | 14 / 102 | 1999–1999 | fb965754-6fce-42e2-a55a-73b6c80ce6d6 | Carbon-fibre shaft impregnated 100%, 7075-T6 aluminium CNC-machined head and 6Al-4V titanium hardware; diameters 25.0/25.4/26.8/27.0/27.2/27.5/28.0/29.4/30.0/30.2/30.4/31.0/31.6/34.2 mm; length 215/250/330/400 mm; 146g at25x215mm. |
+| 11842 SRAM Power Chain PC 41 | 753 / Chains | 15 / 103 | 1999–1999 | 7121da94-fcaf-4411-ab00-a6d67efe1884 | For 7- and 8-speed drivetrains; Power Link II connecting link. |
+| 11843 SRAM Power Chain PC 51 | 753 / Chains | 15 / 103 | 1999–1999 | e23bb343-3e60-44d5-a3e2-ba5d7461777a | For 7- and 8-speed drivetrains; Power Link connecting link. |
+| 11844 SRAM Power Chain PC 59 | 753 / Chains | 15 / 103 | 1999–1999 | ee718fac-085a-4ec8-89db-3a6f5018ac1f | For 9-speed drivetrains; Power Link II connecting link; Shimano and Campagnolo compatible. |
+| 11845 SRAM Power Chain PC 80R | 753 / Chains | 15 / 103 | 1999–1999 | 6a54f58b-0d9a-4e2e-b6b6-16f3a2d4605d | For 8-speed drivetrains; lightweight outer plate; Power Link connecting link; Shimano and Campagnolo compatible. |
+| 11846 SRAM Power Chain PC 89R | 753 / Chains | 15 / 103 | 1999–1999 | dccddba9-3fe8-4053-bb1c-77259a058721 | For 9-speed drivetrains; Power Link connecting link; Shimano and Campagnolo compatible. |
+| 11847 TEC Components Lynx Tec | 719 / Stems | 7 / 95 | 1999–1999 | 3f157b1b-3c96-424f-9fa3-57283c171175 | Stem offered with or without quill in anodized or painted colours; steerer 1/1.125 in; angle 0/85°; weight 200/280 g; with or without quill. |
+| 11848 Areo CS1 A-Head | 729 / Stems | 3 / 91 | 1999–1999 | 78977319-64a2-465c-88d1-fece805e90d5 | Cold-forged, fully CNC-finished 6061-T6 aluminium threadless stem; 1 or 1-1/8in steerer, -10/+10deg, 156-170g. Black, silver, blue or titanium-anodised. |
+| 11849 Control Tech Road Stem (quill) | 734 / Stems | 4 / 92 | 1999–1999 | e3f41ab7-7de4-472d-9642-64c0363cd33b | 6061-T6 aluminium road quill stem; 1in, 15deg, 228g; silver. |
+| 11850 Control Tech Road Stem (threadless) | 734 / Stems | 4 / 92 | 1999–1999 | 97f73c59-687f-481a-a0fc-6860c8215090 | 6061-T6 aluminium threadless road stem; 1in, 15deg, 154g; silver. |
+| 11851 Control Tech Control Seat Post | 734 / Seat Posts | 13 / 101 | 1999–1999 | 2311b3b1-d945-4237-b745-60fac948e166 | Aluminium seatpost; 27.2x235mm, 224g; silver. |
+| 11852 Colnago CNC Racing | 336 / Stems | 4 / 92 | 1999–1999 | e3bbfe1d-beba-4d47-a0a9-6796dcad6030 | Threadless aluminium stem made in collaboration with ITM; three positions by changing the bushing; extension 90/140 mm; steerer 1 in; threadless. |
+| 11853 Syncros Altura Ahead | 710 / Stems | 7 / 95 | 1999–1999 | 93cd9517-1842-4379-9909-d73c8406048f | 6061-T6 aluminium TIG-welded stem; 1-inch steering tube; 100–140 mm extension; silver or matt black; extension 100/140 mm; steerer 1 in; threadless; clamp standard. |
+| 11854 Syncros Altura Apribile | 710 / Stems | 7 / 95 | 1999–1999 | cd759a97-4990-4a13-b1c0-55b56dacf7a3 | 6061-T6 aluminium TIG-welded stem; 1-inch steering tube; 100–140 mm extension; silver or matt black. Openable handlebar clamp. |
+| 11855 Syncros Altura Ahead Apribile | 710 / Stems | 7 / 95 | 1999–1999 | 43dea95c-f357-4102-955f-f9abd61dfd83 | 6061-T6 aluminium TIG-welded stem; 1-inch steering tube; 100–140 mm extension; silver or matt black. Openable handlebar clamp. |
+| 11856 Syncros Hardcore 6061 | 710 / Seat Posts | 14 / 102 | 1999–1999 | e11bf214-9f2b-47f8-bc48-d39a77932a2c | 6061-T6 aluminium seatpost; 26.8/27/27.2mm, 330mm. |
+| 11857 Thomson Elite Set Back | 758 / Seat Posts | 14 / 102 | 1999–1999 | b4282084-d3b8-4963-a557-6eaf0802bc5c | 7000-series extruded aluminium seat post with setback head, differential-thickness shaft and micrometric double-bolt clamp; diameters 26.8/27.0/27.2/28.6/30.9/31.6/31.8 mm; length 250 mm; weight 186 g. |
+| 11858 Titec Ti 3Al-2.5V | 712 / Seat Posts | 14 / 102 | 1999–1999 | 4856a36a-a7d2-4b61-b380-0fdbeebda75f | 3Al-2.5V titanium seat post with constant-section shaft, forged head and micrometric two-bolt saddle adjustment; diameter 27.2 mm; length 350 mm; weight 215 g; finish natural. |
+| 11859 USE Aluminium | 761 / Seat Posts | 14 / 102 | 1999–1999 | b3e6edb3-9cf1-4679-be21-84205db3e7ce | 7075-T6 aluminium seatpost; 25mm shaft, 220mm, 160g including adapter. Size adapters from 25.8mm upward; micrometric adjustment bolts. |
+| 11860 USE Titanium | 761 / Seat Posts | 14 / 102 | 1999–1999 | a4d2c4cb-14cd-4d80-8d69-47e10c69a5a0 | 3Al-2.5V titanium seatpost; 25mm shaft, 220mm, 138g including adapter. 36 adapter sizes from 25.8mm upward; micrometric adjustment bolts. |
+| 11861 Taya TB 600 | 713 / Chains | 15 / 103 | 1999–1999 | 784fd544-3fdd-4090-a7d2-41fc683929a3 | Boron-steel plates, cemented Cr-Mo pins; 7/8-speed; double chamfer and star-riveted pins; patented Sigma connector, tool-free removal/reinstallation. |
+| 11862 Taya 92 Nine Speed | 713 / Chains | 15 / 103 | 1999–1999 | cea9d465-b3b2-41c0-b382-a2198dbb811d | Boron-steel plates, cemented and chromed Cr-Mo pins; 9-speed-specific width and chamfer; patented Sigma connector, tool-free removal/reinstallation. |
+| 11863 Taya TB 700 | 713 / Chains | 15 / 103 | 1999–1999 | 53e14aed-fa06-4954-b97c-b4dc9f2353da | Boron-steel plates, cemented Cr-Mo pins; 7/8-speed; double chamfer and star-riveted pins; patented Sigma connector, tool-free removal/reinstallation. |
+| 11864 Free Spirit Reverse | 741 / Stems | 5 / 93 | 1999–1999 | 87a96a4b-8276-47c8-8526-3a0e4e238724 | Reversible CNC-machined Aheadset stem with separate cover; anodized silver, red, blue, violet, green, gold or titanium; extension 100/130 mm; steerer 1/1.125 in; angle -8/8°; weight 167 g. |
+| 11865 Free Spirit Corsa stem | 741 / Stems | 5 / 93 | 1999–1999 | 906ae2f2-7424-4b58-9dde-a2ea73e84383 | CNC threadless stem, machined from solid and hand-polished/anodised;1in,100/110/120/130mm,17deg,158g excluding bolts. Opening faceplate;quill adapter/shims for threaded steerers,multiple colours. |
+| 11866 Icon Bordeaux | 743 / Stems | 5 / 93 | 1999–1999 | 68b36079-021b-48fb-b1e3-3cb3f3f09e29 | 6061-T6 aluminium welded stem;90/100/110/120/130/140mm extension,22.2mm diameter,17deg;opening clamp,black. |
+| 11867 Innovative Bike Systems Titanium Stem | 744 / Stems | 5 / 93 | 1999–1999 | 5c84afb8-a224-4cf3-b7af-40e22460182e | Titanium stem for1 or1-1/8in steerers using a bushing;0/+10/-10deg,double-bolt steerer clamp. |
+| 11868 Microtech Aheadset ST 200 | 748 / Stems | 6 / 94 | 1999–1999 | b5a7bbf4-ae6e-49b3-afcb-1e41ae67ce35 | 6082-T6 aluminium threadless stem with front-opening clamp; available in Basso cycle colours; extension 90/140 mm; steerer 1 in; angle 78°; weight 195 g. |
+| 11869 Roox Asphalt Cowboy | 752 / Stems | 6 / 94 | 1999–1999 | ce70801a-86da-43c4-8ddb-815c9465c985 | CNC-machined stem with openable clamp; polished silver; steerer 1 in; weight 130 g. |
+| 11870 Microtech PF 150 | 748 / Seat Posts | 13 / 101 | 1999–1999 | ee67197b-3e9d-4247-94eb-1616eb04cd9c | 6082-T6 aluminium seat post, fully CNC-machined, brushed and silver anodized; diameters 27.2/30 mm; length 240 mm; weight 150 g. |
+| 11871 A.C. Adventure Components Seat Post | 727 / Seat Posts | 12 / 100 | 1999–1999 | 6aefe697-c0bb-4d05-86fb-27a143cb55fc | 7075 aluminium seat post; 25.2–31.6 mm diameter, 380 mm length; 320 g. |
+| 11872 Freewheeling Competition | 742 / Seat Posts | 13 / 101 | 1999–1999 | b791b843-382c-4e2e-97a8-28ba68c3e7ef | Aluminium seat post; 27.2 mm diameter, 220 mm length; silver. |
+| 11873 Icon Seatpost 2014 | 743 / Seat Posts | 13 / 101 | 1999–1999 | 6fffde32-ffca-496e-8d44-081ef2c97852 | 2014-T6 aluminium, 27.2 mm x 250 mm; internally reinforced asymmetric-wall shaft, 20 mm saddle-rail travel; black. |
+| 11874 Icon Seatpost 6061 | 743 / Seat Posts | 13 / 101 | 1999–1999 | 58fe1a8f-8bc7-4460-a227-612ecaababb4 | 6061-T6 aluminium, 27.2 mm x 250 mm; silver. |
+| 11875 Sintesi Coaster | 756 / Seat Posts | 13 / 101 | 1999–1999 | 58da66d5-e3b2-4679-88e7-f0554430ee96 | 7075 aluminium; 27.0/27.2/29.4 mm x 350 mm; 280–290 g; silver, double-bolt saddle adjustment. |
+| 11876 Sintesi Orhion | 756 / Seat Posts | 13 / 101 | 1999–1999 | 0d8540d1-74a9-4e0c-89ce-7c48190a1527 | 7075 aluminium; 25.4–31.6 mm diameters x 350 mm; 235–270 g; silver, double-bolt saddle adjustment. |
+| 11877 Sintesi Crusader | 756 / Seat Posts | 13 / 101 | 1999–1999 | d1fd61a1-5365-4054-89af-88752f880a99 | 7075 aluminium; 25.4–30.2 mm diameters x 350 mm; 215–233 g; double-bolt saddle adjustment. |
+| 11878 Connex 804 | 733 / Chains | 14 / 102 | 1999–1999 | 5b53684a-ceb5-465a-aa49-5fbe37dd990d | Steel chain; 8-speed; nickel-plated outer plates, black inner plates; Connex Link included; 7.2mm; 280g per 100 links. |
+| 11879 Connex 808 | 733 / Chains | 14 / 102 | 1999–1999 | 7aed7927-e269-41a6-a971-242e6a3c707e | Steel chain; 8-speed; nickel-plated inner and outer plates with shaped outer plates; Connex Link included; 7.2mm; 280g per 100 links. |
+| 11880 Connex 903 | 733 / Chains | 14 / 102 | 1999–1999 | bf9692c5-6b47-4868-8fd3-f49dc296c410 | Steel chain; 9-speed; nickel-plated outer plates, black inner plates; Connex Link included; 6.8mm; 275g per 100 links. |
+| 11881 Connex 905 | 733 / Chains | 14 / 102 | 1999–1999 | 991abd4a-f627-4213-a7af-57d45aeeb715 | Steel 9-speed chain; fully nickel-plated, shaped outer plates; Connex Link included; 6.8mm; 275g per 100 links. |
+| 11882 Connex 905 Inox | 733 / Chains | 14 / 102 | 1999–1999 | b9aab433-fd6f-4dff-a197-87f3dcc24c95 | Stainless-steel 9-speed chain; 6.8 mm wide, 275 g per 100 links; Connex Link included. |
+| 11883 KMC 40635 | 746 / Chains | 14 / 102 | 1999–1999 | c2825d6c-8298-46c4-969c-b121bbf7d69c | Steel 9-speed chain; 6.6 mm pin width; silver; compatible with Shimano Dura-Ace, Ultegra, 105 and all Campagnolo 9-speed groups. |
+| 11884 KMC 40633 | 746 / Chains | 14 / 102 | 1999–1999 | 2f5b4af3-3309-47aa-8fbc-e09f5732294c | Steel chain for 24-speed road/MTB; 7.1 mm pin width; silver; anti-rust treatment. |
+| 11885 KMC 40632 | 746 / Chains | 14 / 102 | 1999–1999 | 65e281c4-ae92-4cb4-a9ae-6939cb777006 | Steel chain for 24-speed road/MTB; 7.1 mm pin width; silver-brown; Exdu treatment. |
+| 11886 KMC 40634 | 746 / Chains | 14 / 102 | 1999–1999 | 25635ba1-53ac-44c0-bf76-25fba47c70cd | Steel chain for 24-speed road/MTB; 7.1 mm pin width; silver; SP Stretch Proof anti-stretch treatment. |
+| 11887 RIE RLG 9000 | 750 / Chains | 14,15 / 102,103 | 1999–1999 | 9e4ccc8e-b87a-4544-bacb-6a1f5b151643 | Steel chain for 9-speed; 116 links. |
+| 11888 Campagnolo ED-40 | 11 / Chains | 14 / 102 | 1999–1999 | 6920e0d8-d16a-4662-b1c3-284ce35c7f06 | Steel chain for 7/8-speed; burnished plates. |
+| 11889 Areo Viper S 189 | 729 / Tyres | 19 / 108 | 1999–1999 | c21d4159-a213-457b-a2f5-1491ff5a03ed | Folding road tyre with Kevlar bead, polyamide casing and natural rubber; central rib with S-shaped shoulders; low rolling resistance; 28 in/700x20–23 mm; 230g. |
+| 11890 Corratec Kevlar Royal | 735 / Tyres | 19 / 108 | 1999–1999 | 16dd183b-5ae2-4593-b98a-39606636ad58 | Rigid Kevlar road tyre for time trial and track use, with diamond tread and 9 bar maximum pressure; 700x18C (18-622); 245g. |
+| 11891 Corratec Flash | 735 / Tyres | 19 / 108 | 1999–1999 | 7fbc30e8-c080-4420-b71c-7a8077b3d956 | Cotton-casing road tyre with herringbone tread; rigid, black tread, also offered with red tread; 700x20C (20-622); 250g. |
+| 11892 Corratec Kevlar Light | 735 / Tyres | 19 / 108 | 1999–1999 | e9f29b0c-0ada-48b7-8623-3569b4c1c0a2 | Kevlar road tyre with herringbone-diamond tread; puncture protection; folding option in 700x23C at 350 g; 700x20C (20-622). |
+| 11893 Roox Race | 752 / Handlebars | 25 / 116 | 1999–1999 | c7f30598-31c6-44a7-9710-8a570d496e18 | 7075-T6 aluminium bar, 8-curve shape with double cable grooves, black anodized; 42/44cm; 238g. |
+| 11894 Syncros Drop Handlebar | 710 / Handlebars | 26 / 117 | 1999–1999 | 355e736c-5f8b-40e4-a605-7255198e3619 | Anatomically shaped 7075-T6 aluminium drop bar, grey finish; 420/440mm. |
+| 11895 Free Spirit Corsa crankset | 741 / Cranksets | 27 / 118 | 1999–1999 | adf111c7-e1d2-448c-be7e-45307d5eaed0 | 7075-T6 CNC crankset, hand-polished/anodised; arms170/172.5/175/177.5/180mm;440g without rings at175mm. Spider fixed with two M6 bolts, accepts Shimano/Campagnolo double/triple rings; optional Ti bolts. |
+| 11896 Middleburn RS4 | 749 / Cranksets | 28 / 119 | 1999–1999 | d112bb14-7d62-4b03-b52c-bd28e2d987c9 | Fully CNC-machined crankset with 7075-T6 arms/spider and 7075/2014-T651 chainrings; arms 170/172.5/175mm; 400g without rings. |
+| 11897 Roox Road Gringo | 752 / Cranksets | 28 / 119 | 1999–1999 | ca476dfa-9752-4c6f-927a-c518ae79e94e | CNC-machined 7075-T6 aluminium crankset, polished silver, accepts double or triple chainrings; 455g without rings. |
+| 11898 Syncros Revolution | 710 / Cranksets | 28 / 119 | 1999–1999 | 6085d0c0-510d-4a49-ae09-7f09d42050d7 | CrMo crankset with 7075-T6 chainring carrier and titanium fasteners; designed for a 110 mm bottom-bracket axle; arms 170/172.5/175/177.5mm; 460g without rings. |
+| 11899 Tiso Corsa | 759 / Cranksets | 28 / 119 | 1999–1999 | 4d9fa774-e94c-4205-ac85-fb58e956ef30 | CNC-machined 7075-T6 crankset with interchangeable chainring spider, complete with hardware; anodized or polished finishes; arms 170/175mm. |
+| 11900 Energy B.B. 01 | 737 / Bottom Brackets | 29 / 120 | 1999–1999 | 19fc9b11-db2b-4601-9d58-2f4669dbe8cc | 6Al-4V titanium spindle with 7075-T6 aluminium cups; symmetric spindle with through-hole, three sealed bearings, low friction and anti-runout side seals; spindle 103/107/111/115mm; 150g. |
+| 11901 Free Spirit Titanio | 741 / Bottom Brackets | 29 / 120 | 1999–1999 | c657dfbe-f6d4-4b2b-a437-006dfb317881 | Grade 5 titanium spindle with anodized 7075 aluminium cups, sealed bearings, Italian or BSA threading; supplied with Shimano-compatible crank fixing bolts; spindle 103/105/107/109/111/113/115/117/120/122/125mm; 155g. |
+| 11902 Race Face Taper Lock | 715 / Bottom Brackets | 29 / 120 | 1999–1999 | 61e3f638-e98f-4bce-81de-5f6db66c1b0b | Steel spindle with 6061-T6 aluminium cups; sealed cartridge bottom bracket; spindle 107/110/113/120mm; 205g. |
+| 11903 Race Face Taper Lock Ti | 715 / Bottom Brackets | 29 / 120 | 1999–1999 | 4b86429d-c642-4b5e-8f13-ad6a8367c1f5 | Titanium spindle with 6061-T6 aluminium cups; sealed cartridge bottom bracket; spindle 107/110/113/120mm; 165g. |
+| 11904 Syncros Steel Single Row | 710 / Bottom Brackets | 29 / 120 | 1999–1999 | df6c88c1-0de7-475d-bf72-1eb492b6389f | SAE 4140 steel spindle with 6061-T6 aluminium cups; single-row bearing assembly; spindle 107/110.5/113/117mm; 150g. |
+| 11905 Syncros Steel Double Row | 710 / Bottom Brackets | 29 / 120 | 1999–1999 | fd5d3de9-90f6-42ed-9126-38566b6fc490 | SAE 4140 steel spindle with 6061-T6 aluminium cups; double-row bearing assembly; spindle 107/110.5/113/117mm; 150g. |
+| 11906 Syncros Hardcore Titanio | 710 / Bottom Brackets | 30 / 121 | 1999–1999 | 0f995e82-2a99-4e44-9ee9-061e28e7a924 | 6Al-4V titanium spindle, 6061-T6 aluminium cups; 107/108/113/117/122.5mm, 150g; double INA ball bearings. |
+| 11907 Tune AC38 | 760 / Bottom Brackets | 30 / 121 | 1999–1999 | a143d88c-84cf-4949-bcd9-7aafa389768f | 6Al-4V titanium spindle with 7075 aluminium cups; triple-bearing design; spindle 104/107/113/115/117/120/124mm; 104-145g. |
+| 11908 WR Compositi MC99 | 711 / Bottom Brackets | 30 / 121 | 1999–1999 | dc1733c6-fb03-44e1-b6e6-a02ad828db2b | 6Al-4V titanium spindle with 7075-T6 aluminium cups, carbon-fibre spacer, sealed bearings and double external seal; spindle 102/103/107/111/115mm; 150g. |
+| 11909 Energy HB-20 | 737 / Hubs | 31 / 122 | 1999–1999 | a335d4f9-3712-44d0-a342-256f872953e0 | 7075-T6 aluminium front hub; 100mm OLD, 28/32/36h, 108g without QR. Low-friction sealed bearings. |
+| 11910 Energy HB 30 | 737 / Hubs | 31 / 122 | 1999–1999 | 3003bc44-1253-479c-8bdd-845ab5b26aa2 | 7075-T6 aluminium front hub; 100mm OLD, 16/18/24/28/32h, 122g without QR. Straight-pull/radial build, 17mm oversized axle, two low-friction sealed bearings. |
+| 11911 Joy Tech Nova Tech (rear) | 745 / Hubs | 33 / 124 | 1999–1999 | 5367292a-9bc1-42c8-aa77-d5ddf97f2170 | 7075 aluminium rear hub; 140mm spacing; 32/36 holes; the listing says cassette-compatible with 8/9-speed Shimano/Campagnolo. |
+| 11912 Microtech Front Hub | 748 / Hubs | 31 / 122 | 1999–1999 | 605934f1-2a9a-48c5-ae23-c68708c0f8d7 | 6082-T6 alloy front hub, 100mm OLD, 32h; 165g with QR/120g without. Alloy axle printed6075-T6; double-sealed bearings, brushed silver anodised finish. |
+| 11913 Tune Mig 66 | 760 / Hubs | 32 / 123 | 1999–1999 | f4ad9232-f2b5-4c71-8173-05738acf794b | 7075 aluminium front hub, 100mm OLD. Crossed lacing:74g without QR, 16/18/24/28/32/36h. Radial lacing:78g, 28/32/36h. |
+| 11914 Energy HB01 / HB02 / HB03 / HB04 (rear) | 737 / Hubs | 32 / 123 | 1999–1999 | 71014592-b17f-4221-92c5-99f26e0bbc24 | 7075-T6 aluminium/6Al-4V titanium rear hubs, HB01/02/03/04; 130mm OLD, 28/32/36h, 245g; traditional spokes, four bearings, three independently sprung pawls; Shimano/Campagnolo8/9-speed. |
+| 11915 Energy HB11 / HB12 / HB13 / HB14 (rear) | 737 / Hubs | 32 / 123 | 1999–1999 | 07ec4b00-eec8-4de5-9c59-31ca464a57dd | 7075-T6 aluminium/6Al-4V titanium rear hubs, HB11/12/13/14; 130/135mm OLD, 28/32h, 260g without QR; straight-pull spokes, four bearings, three independently sprung pawls; Shimano/Campagnolo8/9-speed. |
+| 11916 Microtech Rear Hub | 748 / Hubs | 33 / 124 | 1999–1999 | 9d13eb10-3e9a-47c1-96ee-07113fe70350 | 6082-T6 alloy rear hub, 130mm OLD, 32h; listed 335g with QR/175g without (inconsistent basis). Axle printed6075-T6; 2 hub/3 body bearings, sealed, brushed silver anodised. |
+| 11917 TEC Components Flash (front) | 719 / Hubs | 32 / 123 | 1999–1999 | 45cabf24-e776-4a94-80f2-9e06693fd9d4 | CNC7075 aluminium front hub; 100mm OLD, 18/24/28/32/36h, 110g without QR; sealed bearings, anodised colours. |
+| 11918 TEC Components Big (front) | 719 / Hubs | 32 / 123 | 1999–1999 | fe856ef9-1121-467c-8c3a-c676d14ef074 | CNC7075 aluminium front hub, 100mm OLD, 28/32/36h, 110g without QR; sealed bearings, anodised colour options. |
+| 11919 Tune Mag 215 | 760 / Hubs | 34 / 125 | 1999–1999 | 20afbcc1-6da6-45ce-a6a1-af1549b04b2d | 7075 aluminium/titanium rear hub; 130mm OLD, 16/18/24/28/32/36h, 225g without QR; Shimano/Campagnolo8/9-speed. |
+| 11920 Tune Mag 205 | 760 / Hubs | 34 / 125 | 1999–1999 | 76d9a849-bf23-4d42-b334-4b1a48684958 | 7075 aluminium/titanium rear hub with carbon axle; 130mm OLD, 16/18/24/28/32/36h, 205g without QR; Shimano/Campagnolo8/9-speed. |
+| 11921 Tune Mag 180 | 760 / Hubs | 34 / 125 | 1999–1999 | dc212de4-b07f-46db-9986-e2c3ce293310 | 7075 aluminium/titanium rear hub with carbon axle and ceramic bearings; 130mm OLD, 16/18/24/28/32/36h, 180g without QR; Shimano/Campagnolo8/9-speed. |
+| 11922 Bebop Cromoly | 731 / Pedals | 35 / 126 | 1999–1999 | 6adaca78-d1b1-4a70-8214-8fb4465a6a75 | 6061-T6 aluminium pedal with CrMo axle, circular body and about 20° radial float; cleat engagement on both sides; 210g/pair. |
+| 11923 Bebop Stainless | 731 / Pedals | 35 / 126 | 1999–1999 | 7c0f4d4f-36b4-4f15-a850-b4883e9cd40c | 6061-T6 aluminium pedal with stainless-steel axle, cleat engagement on both faces and about 20° radial float; 195g/pair, with 175g/pair Deluxe option. |
+| 11924 Exus E7 | 739 / Pedals | 35 / 126 | 1999–1999 | 6d60745a-a278-4fa0-867c-9235a5846361 | Aluminium clipless pedal compatible with Look cleats; release adjustment and sealed cartridge bearings. |
+| 11925 Exus E12 | 739 / Pedals | 35 / 126 | 1999–1999 | 7cd43f94-6ba6-490e-9309-fc48d7691356 | Aluminium clipless pedal compatible with Look cleats; release adjustment and sealed cartridge bearings. |
+| 11926 Icon De La Sole | 743 / Pedals | 35 / 126 | 1999–1999 | 1bd238d6-0bd5-4aa4-ba06-bf6fd11b1365 | Aluminium and titanium clipless pedal with three cartridge bearings and cleats; 270 g per pair. |
+| 11927 RIE 162 Super Light | 750 / Pedals | 36 / 127 | 1999–1999 | 38f959c3-28f2-4d69-b8a3-9c2b642862d0 | Aluminium road pedal with silver finish; 270g/pair. |
+| 11928 RIE E-12 | 750 / Pedals | 36 / 127 | 1999–1999 | 8321b4b9-87ee-46eb-99b1-7b79e76fdc56 | Aluminium pedal with red and grey color options; 380g/pair. |
+| 11929 Tiso Road cassette | 759 / Cassettes | 37 / 128 | 1999–1999 | b4be735b-bc2a-4927-b5b1-b46a236b9464 | CNC7075-T6 cassette set, Shimano/Campagnolo8/9-speed; 11-27T, individual sprockets from 14T; interchangeable sprockets, silver/black/red/blue/anthracite. |
+| 11930 RIE LH 556 / LH 520 | 750 / Tyres | 22 / 113 | 1999–1999 | e6121f3d-9e5c-4054-82f6-fc1190a345d0 | Kevlar and nylon clincher with multiple tread patterns and color options; 700x20C/700x23C; 195g. |
+| 11931 Icon Stash | 743 / Handlebars | 25 / 116 | 1999–1999 | 7015e87b-2ca7-4521-b0a4-bd7745955412 | 7075-T6 aluminium drop bar with anatomical grip and grey finish; 420/440mm. |
+| 11932 Exus E1 | 739 / Pedals | 35 / 126 | 1999–1999 | 745dae70-fe56-4993-8b94-3a0343efd6b2 | Aluminium clipless pedal compatible with Look cleats; natural aluminium finish and release adjustment. |
+| 11933 TEC Components Slim (front) | 719 / Hubs | 32 / 123 | 1999–1999 | 48d1df83-3cc8-45ca-816b-d8a9e5b9d1a5 | CNC7075 aluminium front hub, 100mm OLD, 18/24/28/32/36h, 105g without QR; sealed bearings, anodised colour options. |
+| 11934 TEC Components Slim (rear) | 719 / Hubs | 34 / 125 | 1999–1999 | 54661c5d-a5bd-43c2-9c02-406b53252f6b | CNC7075 aluminium rear hub/body, 130/135mm OLD, 28/32h, 350g without QR; Shimano/Campagnolo8/9-speed, four ball bearings; anodised colours. |
+| 11935 Tioga Gritty Slicker | 699 / Tyres | 22 / 113 | 1999–1999 | e98c327f-06cf-4477-87e6-5c071ecb5ca8 | Central smooth tread with knobby shoulders; black/tan, 700x32C380g or 700x40C535g; for all-terrain/cyclocross use. |
+| 11936 DT Hügi Strada (front) | 736 / Hubs | 31 / 122 | 1999–1999 | d6ffffbf-dd24-49ba-a830-3f4db3111893 | 7075-T6 aluminium front hub; 100mm OLD, 18/24/32/36h, 135g without QR; other drillings for round or aero spokes available on request. |
+| 11937 3ttt Mini Tiramisù | 61 / Handlebars | 39 / 131 | 1999–1999 | 853dbf8c-9b36-43d0-93e8-4d4c7434563f | 5754 aluminium short aero extensions; 240g; titanium-grey anodised. |
+| 11938 3ttt Tiramisù | 61 / Handlebars | 39 / 131 | 1999–1999 | ea7b18af-d2a2-49cf-9320-0fb2f9f23a46 | 5754 aluminium short adjustable aero extensions; 7075 alloy clamps, 260g; silver, titanium-grey, red or blue anodised. |
+| 11939 3ttt Bio Arms | 61 / Handlebars | 39 / 131 | 1999–1999 | 5b099347-ace7-4b9c-a5d5-9da0aa3471f1 | Separate two-arm extensions in 5754 aluminum, fully adjustable with adjustable arm supports and non-slip material; silver, titanium-gray, red, and blue anodized finishes. 540 g. |
+| 11940 Italmanubri (ITM) Crono Vip 2 | 320 / Handlebars | 39 / 131 | 1999–1999 | 72d69960-d9d5-4258-b8b3-639ae07fa3c6 | 6000-series aluminium aero extensions; shaped raised grips joined at the front, adjustable elbow supports/pads and clamps; black anodised, 450g. |
+| 11941 Italmanubri (ITM) Crono Vip 3 | 320 / Handlebars | 39 / 131 | 1999–1999 | fcad25ad-abc4-4496-b7f7-782b77e46d03 | 6000-series aluminium aero extensions; separate shaped raised grips, adjustable elbow supports/pads and clamps; black anodised, 450g. Clamp shims25.8 to23.5mm. |
+| 11942 3ttt Sub 8 | 61 / Handlebars | 39 / 131 | 1999–1999 | e754a375-24c8-4490-bce6-0334e7d3c36b | 5754 aluminium aero extensions with adjustable arm supports/pads, single-bolt clamp; silver anodised. Optional bridge; 450g. |
+| 11943 Coda Road wheelset | 119 / Wheel(sets) | 41 / 133 | 1999–1999 | 06ea0a81-901c-4b81-9899-a0727cb6377b | Complete road wheelset with Mavic Open-Pro rims, DT Competition Black spokes, and Coda 900 hubs; 100 mm front and 130 mm rear spacing. |
+| 11944 Energy Equipe Pro 120 | 737 / Wheel(sets) | 41 / 133 | 1999–1999 | c4e348f8-863e-4793-9296-c421509e2d93 | 5086 electrowelded double-eyelet aluminum rim, 20 x 13 mm; 28 front/32 rear straight-pull spokes, ABS, Ergal/brass nipples; straight-pull hubs; 650 g front, 850 g rear; Campagnolo/Shimano 8/9-speed. |
+| 11945 Energy Equipe Pro 150 | 737 / Wheel(sets) | 41 / 133 | 1999–1999 | 0806fa97-ac27-443a-a3e9-d6f7dacde0b1 | Complete road wheelset with 6082-T6 double-wall aluminum rims, straight-pull spokes, Ergal nipples, and aluminum hubs; compatible with Campagnolo 8/9-speed and Shimano 8/9-speed. Front 660 g; rear 865 g. |
+| 11946 Energy Equipe Pro 170 | 737 / Wheel(sets) | 41 / 133 | 1999–1999 | 8c710914-5ea7-4bf1-9eb6-a1ff5f9b3d4e | 6082-T6 aluminum rims, 19 x 32 x 20 mm, rectified sides; straight-pull 28 front/32 rear spokes, ABS front; 700 g front, 900 g rear; Campagnolo/Shimano 8/9-speed. |
+| 11947 Rolf Vector Pro | 751 / Wheel(sets) | 44 / 136 | 1999–1999 | 8092eb92-1411-4a73-aded-4536618438b7 | Complete road wheelset with aluminum rims, 14 front and 16 rear stainless spokes converging in pairs at the rim, and Shimano-compatible hubs; gold or black hub finish. Weight: front 765 g, rear 995 g. |
+| 11948 Rolf Vector Comp | 751 / Wheel(sets) | 44 / 136 | 1999–1999 | bd7898f8-78ea-4af3-a52d-be4d168c513e | Complete road wheelset with aluminum rims, 18 front and 20 rear stainless spokes converging in pairs at the rim, and Shimano-compatible hubs; red or black hub finish. Weight: front 790 g, rear 1077 g. |
+| 11949 Rolf Vector | 751 / Wheel(sets) | 44 / 136 | 1999–1999 | a7b6f056-a264-4536-b8fb-151b81ec3793 | Complete road wheelset with aluminum rims, 20 front and 24 rear stainless spokes converging in pairs at the rim, and Shimano-compatible hubs; black hub finish. Weight: front 786 g, rear 1070 g. |
+| 11950 Spinergy Spox (front) | 757 / Wheel(sets) | 45 / 137 | 1999–1999 | 6da37c54-2170-447d-af7d-14e65cf22ada | Complete front road wheel with an Ambrosio F.28 black machined rim, composite Vectran spokes, and oversized aluminum/carbon Spinergy hub; radial lacing with nipples at the hub. 680 g. |
+| 11951 Spinergy Spox (rear) | 757 / Wheel(sets) | 45 / 137 | 1999–1999 | 0b4d3ecc-43cb-42b6-b2ce-086560647ff6 | Complete rear road wheel with an Ambrosio F.32 black machined rim, composite Vectran spokes, and oversized aluminum/carbon Spinergy hub; radial lacing with nipples at the hub; Shimano cassette compatible. 870 g. |
+| 11952 Spinergy Strada (front) | 757 / Wheel(sets) | 45 / 137 | 1999–1999 | 510f73cb-8652-421d-ad88-5181ddb0c37a | Complete front wheel with aluminum/carbon rim and four sets of paired blade spokes; 26- or 28-inch, tubular or clincher, aluminum braking track. Weights: clincher 850/820 g; tubular 720/780 g (size order unresolved). |
+| 11953 Spinergy Strada (rear) | 757 / Wheel(sets) | 45 / 137 | 1999–1999 | 3775c515-ab3f-4a55-81b3-28a05f178a39 | Complete rear wheel with aluminum/carbon rim and four sets of paired blade spokes; 26- or 28-inch, tubular or clincher, Shimano freewheel, aluminum braking track. Weights: clincher 1000/1060 g; tubular 970 g (size order unresolved). |
+| 11954 Spinergy Super Stiff (front) | 757 / Wheel(sets) | 45 / 137 | 1999–1999 | fbd5505c-94fc-4b28-ab5a-19802ad16929 | Complete front wheel with an aluminum/carbon rim and four series of twin-blade spokes; 28-inch diameter; aluminum braking track available for tubular or clincher tires. 895 g. |
+| 11955 Spinergy Super Stiff (rear) | 757 / Wheel(sets) | 45 / 137 | 1999–1999 | 1b704300-f40c-4930-b605-5dd5769f7c26 | Complete rear wheel with an aluminum/carbon rim and four series of twin-blade spokes; 28-inch diameter; available for tubular or clincher tires; Shimano freehub compatible; aluminum braking track. 1100 g. |
+| 11956 Spinergy X-Light (front) | 757 / Wheel(sets) | 45 / 137 | 1999–1999 | bc7e648e-209d-480e-93d9-2b662cd76097 | Complete front wheel with an aluminum/carbon rim and four series of twin-blade spokes; 28-inch diameter; aluminum braking track available for tubular or clincher tires. 800 g. |
+| 11957 Spinergy X-Light (rear) | 757 / Wheel(sets) | 45 / 137 | 1999–1999 | 7c38a705-327c-417d-a251-cceb8746341f | Complete rear wheel with an aluminum/carbon rim and four series of twin-blade spokes; 28-inch diameter; available for tubular or clincher tires; Shimano freehub compatible; aluminum braking track. 920 g. |
+| 11958 WR Compositi WRR | 711 / Wheel(sets) | 45 / 137 | 1999–1999 | e61f88d4-c292-46cc-9550-ded7e8bf1021 | Complete road wheelset using FiR rims and WRR hubs, with user-selectable ACI spokes and standard or variable-section lacing; rear wheel available with 8/9-speed cassette hub. From 620g front/840g rear, depending on build. Diameter 28 in. |
+| 11959 Fi'zi:k Vitesse | 740 / Saddles | 46 / 138 | 1999–1999 | ef7e4251-f410-4ceb-a1fb-f68e2288e2b1 | Women-specific ergonomic saddle, carbon-fibre-reinforced shell, titanium rails; leather/Borbonese leather cover, variable padding, rear elliptical reinforcement; black or Sid blue, 230g. |
+| 11960 Fi'zi:k Pavé | 740 / Saddles | 46 / 138 | 1999–1999 | b3610b0f-3ec3-4cf2-872b-4f89ae5d4c3b | Saddle with nubuck/synthetic cover, titanium rails, and a three-point elastomer suspension system. |
+| 11961 Aheadset AL | 728 / Headsets | 49 / 142 | 1999–1999 | ea58d3e6-1f16-4eda-977a-3f494debf323 | Aluminum threadless headset for 1-inch (111 g) and 1-1/8-inch (121 g) steerer tubes. |
+| 11962 Cane Creek C2 | 732 / Headsets | 49 / 142 | 1999–1999 | d4619681-00de-43f1-ac1d-ca181e6b063c | Aluminum bearing headset for 1-inch (128 g) and 1-1/8-inch (140 g) threadless steerers. |
+| 11963 Cane Creek S5 | 732 / Headsets | 49 / 142 | 1999–1999 | 0efa581d-a357-4a5b-abef-4dcd2fafa419 | 7075-T6 aluminum bearing headset for 1-inch (116 g) and 1-1/8-inch (144 g) threadless steerers. |
+| 11964 Syncros Hardcore headset | 710 / Headsets | 50 / 143 | 1999–1999 | 42b4f161-83c6-4058-9a04-1fd9ec024a29 | 7075-T6 aluminum 1-inch headset, 120 g; radial and bidirectional contact with sealed cups. |
+| 11965 Tiso Handy | 759 / Headsets | 50 / 143 | 1999–1999 | ba739e1a-b00b-4c54-94ec-b0d087c5389b | 7075-T6 CNC headset, 1 or 1-1/8in, 95g for 1-1/8in. Roller bearings, hardened race; threaded/threadless, anodised/polished/painted. |
+| 11966 Tiso Joe | 759 / Headsets | 50 / 143 | 1999–1999 | b4b081fc-acdc-41b6-898f-27462ad96402 | 7075-T6 aluminum 1-inch headset, 115 g; sealed angular-contact bearings; CNC-machined; threaded or threadless, anodized or polished. |
+| 11967 TEC Components threaded / threadless headset | 719 / Headsets | 50 / 143 | 1999–1999 | c1a98639-d3a0-4e85-8989-03319e505d53 | CNC7075 aluminium headset; 1 or 1-1/8in, 130g listed (size basis unspecified); bearings, threaded or threadless; red/blue/black/silver/gold/yellow finishes. |
+| 11968 SDG Slim Jim | 722 / Saddles | 47 / 139 | 1999–1999 | e8411f70-e36b-485a-a026-a9db14a97d35 | Synthetic leather cover with DuPont Kevlar inserts; nylon shell reinforced with Kevlar; 6Al-4V titanium rails and closed-cell neoprene padding. 240 g. |
+| 11969 SDG Bel Air Custom | 722 / Saddles | 47 / 139 | 1999–1999 | 699e7db8-1368-4476-99c1-2ecb79ca7ea4 | Synthetic leather cover with Kevlar inserts; nylon shell reinforced with Kevlar; 6Al-4V titanium rails and closed-cell neoprene padding; differentiated shell and padding thicknesses. 245 g. |
+| 11970 Selle Bassano Slim | 569 / Saddles | 46 / 138 | 1999–1999 | 4ce03eb0-d5ca-4cac-9f60-cf5a6335b01e | Leather-covered nylon shell with manganese rails and gel-enhanced polyurethane padding; two-tone finish. |
+| 11971 Selle Bassano Stylus Corsa | 569 / Saddles | 46 / 138 | 1999–1999 | 8a25956b-007a-42da-9987-08bbfde78985 | Leather-covered nylon shell with gel inserts, manganese rails, and gel-enhanced polyurethane padding; two-tone finish. |
+| 11972 Areo Pro Acciaio | 729 / Saddles | 45 / 137 | 1999–1999 | 539ea899-2995-4680-87d7-0ccca73976a9 | Synthetic leather cover, thermoplastic resin shell, steel rails, polyurethane foam padding; black. 265 g. |
+| 11973 Areo Comp Vinile | 729 / Saddles | 45 / 137 | 1999–1999 | 349e6979-d4f2-468d-9090-5405f7f64245 | Synthetic leather cover, thermoplastic resin shell, steel rails, polyurethane padding; black. 270 g. |
+| 11974 Areo Too Much | 729 / Saddles | 45 / 137 | 1999–1999 | 1089f0d3-a4f7-49f0-8faa-17f1bf760c48 | Embroidered synthetic leather cover, thermoplastic resin shell, CrMo steel rails, silicone gel padding; black with fluorescent yellow/blue embroidery; differentiated shell thickness. 265 g. |
+| 11975 Areo Kevlar Red | 729 / Saddles | 45 / 137 | 1999–1999 | c57bcc2e-dd94-4c1e-9d2c-8661842a8299 | Armotex DuPont Kevlar cover, reinforced thermoplastic resin shell, steel rails, silicone gel padding; red; differentiated shell thickness. 255 g. |
+| 11976 Areo Kevlar Yellow Cromoly | 729 / Saddles | 45 / 137 | 1999–1999 | ac463d06-1f32-48b3-b546-f88303edda80 | Armotex DuPont Kevlar cover, reinforced thermoplastic resin shell, CrMo steel rails, silicone gel padding; yellow; differentiated shell thickness. 245 g. |
+| 11977 Areo Kevlar Blue Tit. | 729 / Saddles | 46 / 138 | 1999–1999 | a10ae063-d041-4c89-90b5-0f1c452d6134 | Armotex DuPont Kevlar cover, reinforced thermoplastic resin shell, titanium rails, silicone gel padding; blue; differentiated shell thickness. 230 g. |
+| 11978 Areo Kevlar Side | 729 / Saddles | 46 / 138 | 1999–1999 | 8056c169-a072-49b1-b50a-22492acdf9b8 | Vinyl-leather back with DuPont Kevlar sides, reinforced-nylon thermoplastic composite shell, Ti6Al4V rails, neoprene foam padding; black with yellow sides; professional model with three shell thicknesses. 240 g. |
+| 11979 BRAWO 6500 | 730 / Wheel(sets) | 40 / 132 | 1999–1999 | 89063cba-06ec-4682-8907-3be604325d72 | Complete road wheelset with 6005A-T6 aluminum, 25 mm section rims, ACI stainless spokes and Shimano Ultegra 9-speed hubs; front and rear wheels. Weight: front 900 g, rear 1120 g. |
+| 11980 BRAWO 7700 | 730 / Wheel(sets) | 40 / 132 | 1999–1999 | 21537057-bea4-4afc-9c05-80263ad1d5d2 | Complete road wheelset with 6005A-T6 aluminum, 25 mm section rims, ACI stainless spokes and Shimano Dura-Ace 9-speed hubs; front and rear wheels. Weight: front 875 g, rear 1065 g. |
+| 11981 Cane Creek Aerohead Road Ti | 732 / Wheel(sets) | 41 / 133 | 1999–1999 | 019e1566-18e4-4adf-a4cf-f43257bf955a | Complete road wheelset with Cane Creek rim and hub, titanium spokes, 700c diameter and 20 mm rim section; nipples at hub. Front 642 g; rear 918 g. |
+| 11982 Cane Creek Aerohead Road | 732 / Wheel(sets) | 41 / 133 | 1999–1999 | e0d30f2f-9f2a-4485-b1cb-db86bf999130 | Complete road wheelset with Cane Creek rim and hub, double-butted stainless steel spokes, 700c diameter and 20 mm rim section; nipples at hub. Front 719 g; rear 1003 g. |
+| 11983 Cane Creek Aerohead Light | 732 / Wheel(sets) | 41 / 133 | 1999–1999 | e06525c4-0813-48d9-a584-9acfe843fb42 | Complete road wheelset with Cane Creek rims and hubs, double-butted stainless spokes, 700c diameter and 20 mm rim section; nipples at hub. |
+| 11984 Eolic Wheels CBT 15 | 738 / Wheel(sets) | 41 / 133 | 1999–1999 | 43eaba6f-b52f-460c-a553-50af2cd5f5b4 | Road wheelset:Ambrosio CBT15 tubular rims, 13mm section, Alpina1.2mm straight-pull spokes/ABS nipples, Eolic hubs with Shimano/Campagnolo8/9-speed bodies; 28in, 1480g/pair. |
+| 11985 Eolic CB-15 Color | 738 / Wheel(sets) | 41 / 133 | 1999–1999 | 18c188fe-4bb2-4368-81af-5e73028a1ecb | Road wheelset:Ambrosio CB15 rims, 17mm section, Alpina Slim1.5mm straight-pull spokes/ABS nipples, Eolic Shimano/Campagnolo8/9-speed hubs; 28in, 1700g/pair. |
+| 11986 Eolic CHT-21 Color | 738 / Wheel(sets) | 42 / 134 | 1999–1999 | f5633d4e-defc-40a5-8d81-67c1e37fe00d | Complete road wheelset with Ambrosio CHT-21 rim, Alpina straight-pull Slim, 1.5 mm, ABS nipples spokes and Eolic, Shimano/Campagnolo 8/9-speed interchangeable hub; 700c. 1700 g. |
+| 11987 Eolic Wheels CS 32 | 738 / Wheel(sets) | 42 / 134 | 1999–1999 | 56a14a3c-8cbb-42b1-875f-c5f2407a4153 | Complete road wheelset with Ambrosio CS-32 rim, Alpina straight-pull, 1.2 mm, ABS nipples spokes and Alpina, Shimano/Campagnolo 8/9-speed interchangeable hub; 700c. 1790 g. |
+| 11988 Sipav Bike Line Balance 9V | 721 / Wheel(sets) | 44 / 136 | 1999–1999 | c58ec15d-e18b-410c-b417-f679ddb6d43d | Complete road wheelset with Ambrosio Balance, 32 holes, stainless 1.8–2 mm spokes and Campagnolo Veloce 9-speed hubs; blue anodized rim; 3-cross front and rear. Diameter 28 in. Weight: front 950 g, rear 1200 g. |
+| 11989 Sipav Bike Line Sidney 9V | 721 / Wheel(sets) | 44 / 136 | 1999–1999 | 9adda320-fe35-4b1b-aa41-6faa29c3424c | Complete road wheelset with Campagnolo Sidney, 32 holes, stainless 1.8–2 mm spokes and Campagnolo Veloce 9-speed hubs; satin silver rim; radial front, 3-cross rear. Diameter 28 in. Weight: front 1050 g, rear 1200 g. |
+| 11990 Gipiemme Tecno 830 | 21 / Wheel(sets) | 42 / 134 | 1999–1999 | 5b9f70df-cb85-455b-ad97-8c6220e87a83 | Complete road wheelset with Gipiemme R830 rim, 16 stainless spokes and Ergal hubs compatible with Shimano/Campagnolo 8/9-speed; 700x19c, 30 mm sidewall. Front 884 g; rear 1118 g. Diameter 28 in. |
+| 11991 Gipiemme Tecno 924 | 21 / Wheel(sets) | 42 / 134 | 1999–1999 | 8c6cf6f2-df53-43ba-953c-caa22be5c53c | Complete road wheelset with Gipiemme R924 rim, 24 stainless spokes and Ergal hubs compatible with Shimano/Campagnolo 8/9-speed; 700x19c, 25 mm sidewall. Front 800 g; rear 1040 g. Diameter 28 in. |
+| 11992 Gipiemme Tecno 932 | 21 / Wheel(sets) | 42 / 134 | 1999–1999 | b95880e1-cc8c-4214-b2c4-78036c109eed | Complete road wheelset with Gipiemme R932 rim, 32 stainless spokes and Ergal hubs compatible with Shimano/Campagnolo 8/9-speed; 700x20c, 18 mm sidewall. Front 883 g; rear 1135 g. Diameter 28 in. |
+| 11993 Microtech MC 1 | 748 / Wheel(sets) | 44 / 136 | 1999–1999 | b2c1c7e4-2516-4009-be0a-6dd725392bad | Complete road wheelset with 6082 aluminum rim and hub, DT New Aero 2.0/1.7/2.0 spokes, 700c diameter; 13 mm, 32 holes rim; competition road use. Front 750 g; rear 920 g. |
+| 11994 Microtech MC 3C | 748 / Wheel(sets) | 44 / 136 | 1999–1999 | ea7f1cb6-6d70-4c1e-ba35-e43d2af79184 | Complete road wheelset with carbon rim, 6082-T6 aluminum hub, 7075-T6 axle, DT New Aero 2.0/1.0 spokes, 700c diameter; 40 mm, 10 holes rim; competition road use. Front 675 g; rear 850 g. |
+| 11995 Microtech MC 7 | 748 / Wheel(sets) | 43 / 135 | 1999–1999 | bb61a1c3-f06a-4bd9-976b-cf2dd0e66d9c | Complete road wheelset with 6082 aluminum rim, 6082-T6 aluminum hub, 7075-T6 axle, DT New Aero 2.0/1.7/2.0 spokes, 700c diameter; 30 mm, 32 holes rim; competition road use. Front 850 g; rear 1045 g. |
+| 11996 Rigida TVM | 512 / Wheel(sets) | 44 / 136 | 1999–1999 | 17606926-28fa-4eba-b27e-fbbbe2d99e81 | Road wheelset:Chrina TVM blue/red20mm double-eyelet rims, black spokes 28 radial front/32 crossed rear; carbon/alloy hubs, Shimano8/9-speed; 700C, wheel bags. |
+| 11997 Rigida DPX wheels | 512 / Wheel(sets) | 44 / 136 | 1999–1999 | 28377bf4-3e12-4604-b053-256754c43b80 | Complete road wheelset with DPX black UP, single eyelet rim, carbon/aluminum composite hubs, Shimano 8/9-speed rear freehub; 28 front radial, 32 rear crossed; supplied in wheel bag. Diameter 28 in. |
+| 11998 Cinelli Spinaci | 227 / Handlebars | 38 / 130 | 1999–1999 | 68e1ff33-698b-4b02-9bef-d52083079eb4 | Narrow curved auxiliary grips, fully adjustable and suitable for any handlebar; Aluminum extension tubes, stainless hardware. 220 g. |
+| 11999 Cinelli Spinaci Light | 227 / Handlebars | 38 / 130 | 1999–1999 | 101a2287-0fd1-4111-9279-b8c4e5589453 | Fully adjustable aero extensions; Drawn aluminum extension tubes, stainless hardware. 190 g. |
+| 12000 Cinelli Eurospinaci | 227 / Handlebars | 38 / 130 | 1999–1999 | 0f2ae6a8-5b74-4023-9b8a-7cb6443b4df7 | Adjustable armrest extensions; Drawn aluminum extension tubes, stainless hardware. 450 g. |
+| 12001 Cinelli New Corna | 227 / Handlebars | 38 / 130 | 1999–1999 | e350c465-99b0-4f41-86ed-00b72dc2029c | Adjustable aerodynamic extensions in drawn aluminum with adjustable aluminum armrests and washable repositionable padded covers; 450 g. |
+| 12002 Italmanubri (ITM) Crono Vip 1 | 320 / Handlebars | 38 / 130 | 1999–1999 | 25740b87-64ac-4e6d-8975-7630e8c3e562 | 6000-series aluminum parallel aero extensions with raised grips joined at the front; adjustable arm supports and pads. 450 g. |
+| 12003 Italmanubri (ITM) Hook | 320 / Handlebars | 38 / 130 | 1999–1999 | e720e23c-9bdf-4d63-a78b-1e0c5dd4c205 | Open C-shaped aero extensions, with the lower section parallel to the handlebar curve and upper section turned upward; 6082 aluminum clamps and 7075 aluminum extensions. 210 g. |
+| 12004 Italmanubri (ITM) Hooks Compact | 320 / Handlebars | 38 / 130 | 1999–1999 | 3090aec2-a36e-47a0-903c-79319526ef94 | Compact open C-shaped aero extensions with the lower section parallel to the handlebar curve and upper section turned upward; 6082 aluminum clamps and 7075 aluminum extensions. 190 g. |
+| 12005 Microtech Aheadset | 748 / Headsets | 49 / 142 | 1999–1999 | 43917b1a-0fcf-4f39-805d-a9281f6dba8b | 6082-T6 aluminum threadless headset, CNC-machined with anodized finish, roller-cage bearings, upper ball-bearing cartridge and micrometric adjustment. Diameter 1 in. |
+| 12006 Serfas MR 303 Pro Dual Density Racing | 754 / Saddles | 48 / 140 | 1999–1999 | 3237e990-3f13-41ea-bfa7-5b0cce8dbb01 | DuPont Kevlar cover, titanium rails and Pro Dual Density padding; black, blue, red or yellow. |
+| 12007 Serfas RC 289 Dual Density Racing | 754 / Saddles | 48 / 140 | 1999–1999 | 2c16dcb1-fa70-46f9-b306-f67ab50de041 | Kevlar cover, titanium rails, Dual Density padding; black, blue, red or yellow. |
+| 12008 Serfas LR 304 Lady | 754 / Saddles | 48 / 140 | 1999–1999 | fb230831-2bef-4d04-b9a0-a93b187403a8 | DuPont Kevlar cover, titanium rails and Pro Dual Density padding; black, blue, red or yellow. |
+| 12009 Serfas Lola Titanio | 754 / Saddles | 48 / 140 | 1999–1999 | 31dc641e-c4c1-4b36-8850-f8b9a31d985d | Leather and DuPont Kevlar cover with titanium rails; black. |
+| 12010 Serfas Lola | 754 / Saddles | 48 / 140 | 1999–1999 | 986bc25a-1812-4131-a796-2d0dccaa88d8 | Leather and DuPont Kevlar cover with steel rails; black, red or yellow. |
+| 12011 Serfas KT 219 | 754 / Saddles | 48 / 140 | 1999–1999 | a45dd2a7-db7f-4cb3-b398-aee9d4ddbc7e | Kevlar cover and titanium rails; black, blue, grey, red or yellow. |
+| 12012 RIE Condor | 750 / Tyres | 53 / 146 | 1999–1999 | 2d12c84d-6e4e-4d4b-81bd-6c797691fb89 | Training tubular; polyester casing, latex tube, ribbed tread; 21.5mm x28in, 295g. |
+| 12013 RIE Scat | 750 / Tyres | 53 / 146 | 1999–1999 | 3b874eb1-a4b1-45c6-993f-6e97ac299253 | Tubular; polyester casing, latex tube, ribbed tread; 21.5mm x28in, 225g; black. |
+| 12014 Joy Tech Nova Tec (front) | 745 / Hubs | 31 / 122 | 1999–1999 | 6bb20814-9a17-4d8c-a1ac-a08dc9e60492 | 7075 aluminium front hub listing; 100-110mm OLD, 32/36h. |
+| 12015 TEC Components Flash (rear) | 719 / Hubs | 34 / 125 | 1999–1999 | 35c89b02-b1de-41f0-8ac5-1cb304b8eea3 | CNC7075 aluminium rear hub/body, 130/135mm OLD, 24/28/32/36h, 380g without QR; Shimano/Campagnolo8/9-speed, four ball bearings; anodised colours. |
+| 12016 TEC Components Big (rear) | 719 / Hubs | 34 / 125 | 1999–1999 | 9c442d33-bc29-4565-aeb3-3b09b0da85b2 | CNC7075 aluminium rear hub/body, 130/135mm OLD, 28/32/36h, 380g without QR; Shimano/Campagnolo8/9-speed, four ball bearings; anodised colours. |
+| 12017 RIE Olympic Super | 750 / Wheel(sets) | 44 / 136 | 1999–1999 | c98987f8-a2ba-4149-afcd-6bb6e2fad13f | Road wheel:double-eyelet alloy rim, black butted18/8 stainless straight-pull spokes, Edco Olympic hub, black Ergal nipples; 28/32/36h, Shimano/Campagnolo8/9-speed. Listed490g, weight basis unspecified. |
+
+</details>
+
+### Existing rows: exact changes and prior values
+
+| ID / old title | Prior maker / dates / source_ref | Applied fields | Prior description / search_text / UUID |
+| --- | --- | --- | --- |
+| 1396 Rohloff SLT 99 (Road) | 215 / 1986–1999 / 357 | {"description":"Steel road chain, 1/2x3/32in, 114 links. 1996: 6.85mm, 317g. 1999 SLT99 listing: 7.1mm, for 8/9-speed.","source_ref":353} | Steel 1/2 x 3/32 in narrow chain, 6.85 mm wide, 114 links; 317 g. / search:Rohloff SLT 99 / 8F906840-B738-44C1-BDEE-9F20BA711C53 |
+| 11606 Syncros Altura | 710 / 1996–1996 / 357 | {"year_to":"1999","description":"6061-T6 TIG-welded quill stem, 1in. 1996:110-150mm, -17.5deg, 200g. 1999:100/110/120/130/140mm, matt black or silver.","source_ref":353} | 6061-T6 aluminium; 110-150mm extension; 1in shaft; -17.5 degrees; 200g; TIG welded. / search:Syncros Altura / c397ace6-632d-4fde-abb8-2c0557ad4c53 |
+| 11610 Syncros Hardcore | 710 / 1996–1996 / 357 | {"year_to":"1999","description":"Hardcore 7075 alloy post; 26.8/27/27.2/29.4/31.6/31.8mm. 1996:T78, 225mm, 220g. 1999:T6, 330mm; 225mm option at27.2mm.","title":"Syncros Hardcore 7075","search_text":"Syncros Hardcore 7075","source_ref":353} | 7075-T78 aluminium; 26.8/27.0/27.2/29.4/31.6/31.8mm; 225mm; 220g. / search:Syncros Hardcore / d64c7278-2bed-4600-8cfc-875f881d90f2 |
+| 11612 Titec Aluminium | 712 / 1996–1996 / 357 | {"year_to":"1999","description":"Al235 alloy post; 26.8/27/27.2mm. 1996:270mm, 200-235g, microadjust clamp/reinforced tube. 1999:7075-T6, 350mm, 240g, forged head and opposed two-bolt adjustment.","title":"Titec Al 235","search_text":"Titec Al 235","source_ref":353} | Aluminium alloy 235; 26.8/27.0/27.2mm; 270mm; 200-235g; microadjust clamp and reinforced tube. / search:Titec Aluminium / a721abeb-8a84-4e47-93ab-ba4d1943d44f |
+| 11613 Titec Carbon C191 | 712 / 1996–1996 / 357 | {"year_to":"1999","description":"C191 carbon composite post with microadjust clamp. 1996:26.8/27/27.2mm, 270mm, 180-190g. 1999:27.2x350mm, 200g; carbon shaft with alloy core, forged head, opposed two-bolt adjustment.","source_ref":353} | C191 carbon-fibre composite; 26.8/27.0/27.2mm; 270mm; 180-190g; microadjust clamp. / search:Titec Carbon C191 / 2b8cece3-c74a-47c6-9989-9a2423b39d6c |
+| 11618 Taya Pro Extreme | 713 / 1996–1996 / 357 | {"year_to":"1999","description":"Boron-steel plates; 7/8-speed, 1.8-2mm rings; pin strength>350kg/tensile>1020kg. Case-hardened CrMo pins, double-chamfered plates, star riveting; tool-free Sigma link. Campagnolo AP01/Sachs SC80/Shimano HG91 compatible.","source_ref":353} | Boron steel; 1.8-2mm chainrings, 7/8-speed sprockets; pin strength over 350kg, tensile strength over 1020kg; hand-operated Sigma connector; Campagnolo AP01, Sachs SC80, Shimano HG91 compatible. / search:Taya Pro Extreme / eb48abff-4a05-4b27-83f1-ca51a66c512c |
+| 1704 Ofmega Vantage | 33 / 1992–1999 / 357 | {"description":"Alloy170mm cranks, polished/painted, anodised rings/chainguard; 567g measured. 1996:700g42/52; 42/52, 39/53, 32/42/52, 32/44. 1999 Vantage2:130BCD, 707g; Vantage3:130/74BCD, 790g, 30/40/50 or 32/42/52; 7/8-speed Easy Shift.","source_ref":353} | Painted alloy cranks 170 mm, removable anodised alloy rings (42-52, 39-53, 32-42-52, 32-44), chain guard; 700 g complete 42-52; 567 g crankset only (measured). / search:Ofmega Vantage / C2182A8C-60A1-4D89-80DD-C4DF555DE8F6 |
+| 11683 Tioga Bloodhound | 699 / 1996–1996 / 357 | {"year_to":"1999","description":"Cross-tread700x38C tyre for all-terrain/cyclocross. Listed473g in 1996 and470g in 1999.","source_ref":353} | Cross tread; 700x38c; 473 g. / search:Tioga Bloodhound / 13fa7c36-6c3f-4e88-952b-0c7112a1522b |
+| 11685 Tioga City Slicker | 699 / 1996–1996 / 357 | {"year_to":"1999","description":"Smooth tread with cuts; 700x32C, black/tan, for all-terrain use. Listed535g in 1996 and418g in 1999; weight difference retained by edition.","source_ref":353} | Smooth tread; 700x32c; 535 g; black/tan. / search:Tioga City Slicker / 0dc5cf96-6cd9-446f-a97a-3cd72c8c93eb |
+| 11686 Tioga Proline S | 699 / 1996–1996 / 357 | {"year_to":"1999","description":"Nylon-casing slick tyre with side cuts. 1996 sizes700x18/20/23/25. 1999:700x20C, 230g Kevlar bead or 250g steel bead; black/tan.","source_ref":353} | Nylon casing; slick with side cuts; 700x18, 20, 23, 25. / search:Tioga Proline S / 790327b5-25ee-43ac-bf29-b51ec686f93b |
+| 11687 Tioga Proline F | 699 / 1996–1996 / 357 | {"year_to":"1999","description":"Nylon-casing tyre. 1996:slick with side cuts, 700x18/20/23/25. 1999:herringbone tread, 700x20C, 226g Kevlar bead or 263g steel bead.","source_ref":353} | Nylon casing; slick with side cuts; 700x18, 20, 23, 25. / search:Tioga Proline F / 989da312-3d34-435d-a116-c71f6d72fa47 |
+| 11636 Bestialine ST 7561 | 716 / 1996–1996 / 357 | {"year_to":"1999","source_ref":353} | Grade 5 titanium spindle, 7075 aluminium cups and perspex; 107/109/111/114/117/119/122/127mm; 178g; sealed bearings; 68/70/73mm shells; sealed ergal crank bolts. / search:Bestialine ST 7561 / b7b19d5d-fb11-4d34-9564-9aab9a7a0e96 |
+| 6806 Gommitalia Targa | 645 / 1999–2000 / 353 | {"description":"Polyester/cotton casing with Kevlar puncture strip and Kevlar beads, made in Italy; Targa 700x20C 190g and Targa 22 700x22C 200g.","source_ref":353} | Gommitalia Targa, Italy / search:Gommitalia Targa / 348949D6-334D-48C3-A8AE-9B69FDDA91E4 |
+| 11675 SDG S7000 Ti | 722 / 1996–1996 / 357 | {"year_to":"1999","description":"S7000 Ti saddle; 6Al-4V rails, closed-cell neoprene pad. 1996:nylon/carbon shell, Kevlar cover, light blue/black, 209g. 1999:nylon/Kevlar shell, Kevlar or leather cover, black/blue/red, 230g; leather black only.","source_ref":353} | Nylon/carbon fibre shell, 6Al-4V titanium rails, closed-cell neoprene padding and Kevlar cover. Light blue or black; 209 g. / search:SDG S7000 Ti / 85f4c32e-af4a-4d5f-ae79-426ce7cf8eb4 |
+| 11676 SDG S2000 Ti | 722 / 1996–1996 / 357 | {"year_to":"1999","description":"S2000 Ti saddle; 6Al-4V rails, closed-cell neoprene pad. 1996:nylon/carbon shell, Kevlar cover, light blue/black, 215g. 1999:nylon/Kevlar shell, Kevlar or leather cover, black/blue/red, 230g.","source_ref":353} | Nylon/carbon fibre shell, 6Al-4V titanium rails, closed-cell neoprene padding and Kevlar cover. Light blue or black; 215 g. / search:SDG S2000 Ti / bef539ac-3b19-408b-9a70-36ae955c9954 |
+| 11677 SDG Comp Ti | 722 / 1996–1996 / 357 | {"year_to":"1999","description":"Comp Ti saddle; 6Al-4V rails, closed-cell neoprene pad. 1996:nylon/carbon shell, Kevlar cover, light blue/black/red, 215g. 1999:nylon/Kevlar shell, Kevlar or leather cover, black/blue/red, 240g; leather black only.","source_ref":353} | Nylon/carbon fibre shell, 6Al-4V titanium rails, closed-cell neoprene padding and Kevlar cover. Light blue, black or red; 215 g. / search:SDG Comp Ti / 29aed7b9-bf00-4f2e-931d-6487ab68510b |
+| 10385 LOOK 2004 G | 415 / 1999–1999 / 353 | {"description":"PVC-covered plastic-shell saddle with CrMo rails and Royal gel padding; black/silver, 380g, for road/MTB.","title":"Lookin 2004 G","search_text":"Lookin 2004 G","brand_id":747,"source_ref":353} | Cover: PVC; shell: plastic; rails: CrMo; padding: Royal gel; colours: black and silver; road and MTB; 380g / search:LOOK 2004 G / d4caf980-5b17-4db7-b5dd-38e9deb1b387 |
+| 10651 Ritchey Vector Pro WCS | 252 / 1996–1996 / 357 | {"year_to":"1999","source_ref":353} | Nylon shell with titanium rails, polyurethane padding and leather cover, black. 220 g. / search:Ritchey Vector Pro WCS / 8b107922-d895-11f1-a2df-02fea3763e8d |
+
+All existing category/group/image and unlisted fields remain fixed; Lookin is
+the sole maker change. Source_ref353 is set in the same guarded update as each
+actual field change; unchanged corroborations retain their provenance.
+
+### Held entries
+
+| Ref / source | Identity / candidates | Evidence limit |
+| --- | --- | --- |
+| 03-18:28 / scan15 | Rohloff Catena strada (unnamed 9-speed chain) / 1396 | Uncoded 6.8mm road chain may be a narrower SLT99 configuration; no independent model crosswalk. |
+| 03-18:48 / scan15 | Taya TB 500 / 11616 | possible family relation to generic Taya Bridge row; exact identity unconfirmed |
+| 03-18:59 / scan15 | Taya Pro Relief / 11617 | Pro Relief versus existing Relief11617 has no exact model/code crosswalk; retain both sources without inserting a likely duplicate or changing the older row. |
+| 03-18:79 / scan14 | Shimano 6500 /  | Printed Shimano6500 is a group-level label; existing CN-HG9210858 has matching 9-speed/304g/116-link evidence. No new code crosswalk; preserve prior held decision. |
+| 19-37:10 / scan28 | Race Face IB STD Road / 11633 | 1996 row Race Face Turbine IB STD shares the IB STD name and crank lengths; 1999 prints IB STD Road, but weight changes from 465g to 440g. |
+| 19-37:20 / scan30 | Syncros Proseries Titanio / 11644 | 1996 Syncros Proseries Altura has matching titanium spindle/cup material and similar lengths, but 140g versus 150g in 1999. |
+| 19-37:22 / scan30 | TEC Components Mister X / 11645 | 1996 generic titanium BB uses same maker/material, but printed model and weight-range differ; resolve as variant vs retitle before adding. |
+| 19-37:30 / scan32 | WR Compositi WRR (front) / 11657 | 1996 Standard front hub has same brand/100mm role but differs in listed weight (110g vs 91g) and hole counts. |
+| 19-37:39 / scan34 | WR Compositi WRR (rear) / 11668 | 1996 Standard rear hub has same brand/130mm role but differs in listed weight (275g vs 271g) and hole counts. |
+| 19-37:60 / scan31 | Miche Primato (front) / 3427 | Generic Miche Primato3427 does not establish the exact 1999 configuration; preserve its earlier row and dates. |
+| 38-56:27 / scan49 | Cane Creek threaded / threadless headset /  | Image caption identifies Cane Creek only, with no model name; 116 g (1-inch) and 146 g (1-1/8-inch), which differs from the listed C2/S5 sizes. Do not infer this is either model. |
+
+<details>
+<summary>Scan coverage ledger</summary>
+
+| Scan | Verified folio | Reviewed categories | Printed brands / scope notes |
+| --- | --- | --- | --- |
+| 1 | 88 | complete groups (out of scope) | Campagnolo, Mavic, FRM, Shimano; group equipment summaries/prices; no component rows |
+| 2 | unverified | complete groups (out of scope), advertisement | Miche, Shimano, Mavic; group equipment summaries/prices; dealer advertisement |
+| 3 | 91 | complete groups (out of scope), stems | Shimano, PMP, Ritchey, Areo, Cinelli; groups, axle-only replacements (not complete BB/hub rows), advertisement |
+| 4 | 92 | stems | Cinelli, Control Tech, Coda, Colnago CNC Racing, Deda Elementi;  |
+| 5 | 93 | stems | Deda Elementi, Free Spirit, FRM, Icon, Innovative Bike Systems, Italmanubri, Microtech, Modolo;  |
+| 6 | 94 | stems | Italmanubri, ITM, Look, Modolo, Ritchey, Salsa, Roox; mountain-bike advertisement |
+| 7 | 95 | stems | Seven, Sintesi, Syncros, Titec, 3T/3ttt, TEC Components;  |
+| 8 | 96 | stems, quick-release skewers (out of scope) | TEC Components, WR Compositi, Avenir, Bestialine, Coda, Energy, FRM, Kore, Miche, PMP, Ritchey, Salsa, Sun Ringle, Syncros, Tune; all quick-release/skewer listings; they are out of requested category scope |
+| 9 | 97 | quick-release skewers (out of scope), bottles (out of scope) | Syncros, Tune, TEC Components, WR Compositi, Allara, Andriolo, Areo, Aquabak, Cannondale, Diamond Back, Dirt Bag, Elite; skewers and bottles |
+| 10 | 98 | bottles (out of scope), fastener kits/frame hardware (out of scope) | Elite, Marin, Scott, Specialized, Sci-Con, Control Tech, Free Spirit, FRM, Miche, Modolo, Rudelli, TEC Components, Tiso Bike C.; bottles and non-catalogued fastener/hardware kits; no requested component category |
+| 11 | 99 | fastener kits/frame hardware (out of scope), rear derailleurs | Tiso Bike C., Campagnolo, Shimano, SRAM; fastener kits and pulley/bolt hardware |
+| 12 | 100 | inner tubes (out of scope), seat posts | Air-B, Areo, Freewheeling, Gomitalia, Hutchinson, Michelin, Pariba, Ritchey, Schwalbe, Specialized, Tioga, Vittoria, A.C. Adventure Components, Answer, Campagnolo, Control Tech; inner tubes (including Tioga); Areo Vitesse/Gara/Giro are pumps; neither is a seat post |
+| 13 | 101 | seat posts | Control Tech, Corima, Energy, Freewheeling, FRM, Icon, Italmanubri, Look, Miche, Microtech, PMP, Race Face, Ritchey, Selcof, Shimano, Sintesi;  |
+| 14 | 102 | seat posts, chains | Syncros, Sun Ringle, Thomson, Titec, Titec, Use, WR Compositi, Campagnolo, Connex, KMC, Miche;  |
+| 15 | 103 | chains, cables and housings (out of scope) | Rohloff, Shimano, SRAM Sachs, Taya, Avid, Campagnolo, Casiraghi Industriale, Gore-Tex, Connex, KMC, RIE; all cables, housings and cable kits |
+| 16 | 104 | cables and housings (out of scope), clincher rims | Casiraghi Industriale, Gore-Tex, Ambrosio, Campagnolo, Corima, FiR, Gipiemme, Mavic; cables/housings; included no extra rim candidate for the remaining-brand backlog |
+| 17 | 106 | clincher rims, tubular rims | Mavic, Matrix, Rigida, Ritchey, Zipp, Ambrosio, Campagnolo, Corima, FiR; no remaining-brand candidate identified in the assigned scope |
+| 18 | 107 | toe straps (out of scope), shift levers and integrated shift/brake levers | Allara, Avenir, Velomann, Campagnolo, Modolo, Shimano; all toe straps and accessories; Campagnolo/Modolo/Shimano shift-control listings were already represented |
+| 19 | 108 | Tyres | Areo, Clément, Continental, Corratec, Gommitalia, Foxonall; Other exact existing Clément, Continental, Gommitalia and Foxonall tyre models retained as unchanged; no advertising text. |
+| 20 | 110 | Tyres | Gommitalia, Hutchinson, IRC; Existing Hutchinson and IRC models/variants without a model gap omitted from item detail. |
+| 21 | 112 | Tyres | IRC, Michelin, Panaracer; N/A; all listed tyre products inspected; exact represented rows skipped. |
+| 22 | 113 | Tyres | Panaracer, Rie, Ritchey, Schwalbe, Specialized, Tioga, Tufo; Exact represented products skipped. |
+| 23 | 114 | Tyres | Tufo, Veloflex, Vittoria; Exact represented products skipped. |
+| 24 | 115 | Tyres, Brakes, Handlebars | Vittoria, Campagnolo, Shimano, Magura, Cinelli; Vittoria tyre section continues from scan 23; no unmatched rows identified in this continuation. |
+| 25 | 116 | Handlebars | Cinelli, Deda Elementi, Italmanubri, Modolo; Exact represented bars skipped. |
+| 26 | 117 | Handlebars, Front Derailleurs | Modolo, Ritchey, Roox, Syncros, Salsa, 3T, Campagnolo, Shimano; Exact represented bars and derailleur models skipped. |
+| 27 | 118 | Front Derailleurs, Cranksets | Campagnolo, Shimano, Miche, Free Spirit, FRM, Middleburn, Ofmega, PMP, Race Face, Roox, Syncros, Tiso; Campagnolo/Shimano derailleur and crank models already represented skipped. |
+| 28 | 119 | Cranksets | Miche, Middleburn, Ofmega, PMP, Race Face, Roox, Shimano, Syncros, Tiso; Existing PMP and Shimano models skipped; Ofmega Vantage 2/3 specifications folded into existing aggregate1704. |
+| 29 | 120 | Brake Levers, Bottom Brackets | Campagnolo, Shimano, Bestialine, Energy, Free Spirit, FRM, Miche, Ofmega, PMP, Race Face, Ritchey, Rudelli; Brake lever models and standard Campagnolo/FRM/Miche/Ofmega/Ritchey BBs already represented skipped. |
+| 30 | 121 | Bottom Brackets, Hubs | Shimano, STM, Syncros, TEC Components, Tune, WR Compositi, Campagnolo, Chris King; Shimano, STM and Campagnolo BB entries already represented skipped. |
+| 31 | 122 | Hubs | Coda, Energy, Edco, FRM, Miche, Joy Tech, Mavic, Microtech, PMP, Ritchey, Rudelli, Shimano, DT Hügi; Coda, Edco, FRM, Miche, Mavic, PMP, Ritchey and Shimano hubs skipped where matching rows exist. |
+| 32 | 123 | Hubs | Shimano, Sintesi, STM, Tune, White Industries, WR Compositi, Campagnolo, Chris King, Edco, Energy, FRM; Existing Shimano, Sintesi, STM, White Industries, Campagnolo, Chris King, Edco and FRM hub rows skipped. |
+| 33 | 124 | Hubs | FRM, Joy Tech, Mavic, Miche, Microtech, PMP, Ritchey, Rudelli, Shimano; Existing FRM/Mavic/Miche/PMP/Ritchey/Rudelli/Shimano hubs skipped. |
+| 34 | 125 | Hubs, Handlebar Tape | Shimano, Sintesi, STM, TEC Components, Tune, White Industries, WR Compositi, Ambrosio, Cinelli, Cicvolinea; Handlebar tape and other uncategorized accessory entries omitted; represented hub rows skipped. |
+| 35 | 126 | Handlebar Tape, Spokes, Nipples, Pedals | Cinelli, Modolo, Selev, Alpina, DT, Silva, RIE, Special Light Ribband, Velomann, Wheelsmith, Keywin, Bebop, Campagnolo, Exus, Icon, Look; Handlebar tape and nipples are outside the component categories in scope. |
+| 36 | 127 | Pedals | RIE, Ritchey, Miche, Shimano, Scott, Speedplay; Existing Miche/Scott/Speedplay and Shimano models skipped. |
+| 37 | 128 | Pedals, Cassettes, Freewheels | Time, Campagnolo, Miche, Shimano, Tiso; Time/Look/Speedplay pedals and Campagnolo/Miche/Shimano sprocket models represented already skipped. |
+| 38 | 130 | Bottle cages, Handlebars | Allara, Blackburn, Cannondale, Cinelli, Cobra, Elite, Italmanubri, Sipav, Specialized, Topeak, Velomann, Zéfal; Bottle cages excluded. Cinelli Spinaci, Spinaci Light, Eurospinaci/New Corna and Italmanubri Crono Vip 1, Hook and Hooks Compact extracted as complete handlebar extensions. |
+| 39 | 131 | Handlebars, Wheel spokes | 3ttt, ACI Alpina, DT Swiss, Italmanubri, RIE, Ritchey, WheelSmith; Spokes are hardware, not complete wheels; skipped spoke listings. |
+| 40 | 132 | Wheel(sets) | Ambrosio, BRAWO, Campagnolo, Shimano; BRAWO 6500/7700 added; existing Campagnolo/Shimano fitment treated as specifications, not separate components. |
+| 41 | 133 | Wheel(sets) | Campagnolo, Cane Creek, Coda, Corima, Energy, Eolic, Gipiemme; Cane Creek Aerohead Road Ti/Road/Light, Coda Road, Energy Equipe Pro 120/150/170, Eolic CBT 15 and Corima/known entries reviewed. |
+| 42 | 134 | Wheel(sets) | Eolic, FiR, FRM, Gipiemme, HED; FRM and FiR exact models already in 1999 snapshot (IDs included as unchanged); new Gipiemme Tecno 830/924/932 extracted; HED exact 1999 rows included as unchanged. |
+| 43 | 135 | Wheel(sets) | HED, Mavic, Microtech; Mavic models reviewed against snapshot; Microtech MC 7 extracted. |
+| 44 | 136 | Wheel(sets) | Microtech, Rolf, Rigida, Sipav; Microtech MC 1/MC 3C and MC 7, Sipav Balance/Sidney, Rolf Vector family, Rigida TVM/DPX and Sipav 1996 maker-family crosswalk reviewed. |
+| 45 | 137 | Wheel(sets), Saddles | Spinergy, WR Compositi, Zipp, Areo; Spinergy family, WR Compositi WRR, and Areo Pro Acciaio/Comp Vinile/Too Much/Kevlar Red extracted; Zipp models reviewed against snapshot. |
+| 46 | 138 | Saddles | Areo, Bassano Selle, Coda, Fi'zi:k, Gipiemme, Lookin, Ritchey; Fi'zi:k Vitesse/Pavé, Bassano Selle Slim/Stylus, Lookin 2004 G and Areo Kevlar Blue/Side extracted; Coda and Gipiemme exact 1999 saddle rows included as unchanged. |
+| 47 | 139 | Saddles | Ritchey, Schneider, SDG, Selle Italia, Selle Royal; SDG 1996 models with 1999 attestations updated by exact IDs; Slim Jim and Bel Air Custom added; other SDG models reviewed. |
+| 48 | 140 | Saddles | Selle San Marco, Serfas, Vetta; Selle San Marco and Vetta model names cross-checked; Serfas models extracted; exact Vetta Lasar Road and Jet Road rows recorded as unchanged. |
+| 49 | 142 | Headsets | Aheadset, Campagnolo, Cane Creek, Chris King, FRM, Miche, Ritchey, PMP, Rudelli; FRM A-Set, Campagnolo/Miche/Ritchey/PMP/Rudelli rows are already represented or outside absent-brand focus; Aheadset AL and Microtech Aheadset extracted under their printed headings; Cane Creek C2/S5 extracted; generic callout held as possible duplicate. |
+| 50 | 143 | Headsets, Frame tubing | Rudelli, Shimano, Sun Ringle, Syncros, Tange, TEC Components, Tiso, Columbus; Syncros Hardcore headset, Tiso Handy/Joe, TEC Components headset, Sun Ringle Slamma Jamma extracted; MIC headset conversion kit and frame tubing out of scope. |
+| 51 | 144 | Frame tubing | Columbus, Dedacciai; Frame tubesets are out of scope. |
+| 52 | 145 | Frame tubing | Dedacciai, Easton, Extralight, Oria; Frame tubesets are out of scope. |
+| 53 | 146 | Tubular tires | Clément, Continental, Foxonall, Gommitalia, Hutchinson, Michelin, RIE, Schwalbe, Tufo; RIE Condor and Scat extracted as missing tubular tires; existing 1999 matches among listed tire makers treated as unchanged after snapshot cross-check. |
+| 54 | unverified | Tubular tires | Tufo, Veloflex, Vittoria; No additional missing-brand/identified-model addition selected in this focused pass. |
+| 55 | unverified | Tubular tires | Vittoria; No additional missing-brand/identified-model addition selected in this focused pass; page also contains an advertisement. |
+| 56 | unverified | Tubular tires | Vittoria; No additional missing-brand/identified-model addition selected in this focused pass; advertisement excluded. |
+
+</details>
 
 ## La Bicicletta Guida '96 - Componenti (March 1996, 58 scans, disraeligears.co.uk), data_source id 357
 
