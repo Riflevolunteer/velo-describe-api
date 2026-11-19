@@ -5409,6 +5409,33 @@ function resolveOverride(entry, year, bikeTitle) {
   return hit ? hit.id : null;
 }
 
+// Reports the COMPONENT_OVERRIDES entry that explicitly refuses a link for
+// this spec: the entry itself is null, or the range matching this year/bike
+// carries `id: null`. Mirrors matchComponent's override loop (categories in
+// LABEL_TO_CATEGORY order, first entry found decides). An out-of-range miss
+// also stops linking, but it means "no right-era row yet" — still a gap — so
+// it is not reported. Returns { category, key } or null. Used by
+// link-decisions.js so /linkCoverage can tell reviewed values from open ones.
+function explicitUnlinkOverride(valueText, label, year, bikeTitle) {
+  if (!valueText || !label) return null;
+  const categories = LABEL_TO_CATEGORY[label.trim().toLowerCase()];
+  if (!categories) return null;
+  const key = normalizeForMatch(valueText);
+  for (const category of categories) {
+    const entry = COMPONENT_OVERRIDES[category]?.[key];
+    if (entry === undefined) continue;
+    if (entry === null) return { category, key };
+    if (typeof entry === 'number') return null;
+    const y = Number(year);
+    const hit = entry.find(
+      (r) =>
+        (r.bike == null || r.bike === bikeTitle) && (r.from == null || y >= r.from) && (r.to == null || y <= r.to)
+    );
+    return hit && hit.id === null ? { category, key } : null;
+  }
+  return null;
+}
+
 function matchComponent(valueText, componentRecords, excludeTitle, label, year, bikeTitle, brandNames) {
   if (!valueText) return null;
   const normalizedLabel = label.trim().toLowerCase();
@@ -5753,4 +5780,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { buildCataloguePlan, renderCatalogueSql, listInputFiles, parseFilename, catalogueLabel, readComponentRecords, readComponentBrandNames, integratedBrakeLeverLink, normalizeForMatch, expandLabel, splitCellValue, matchComponent };
+module.exports = { buildCataloguePlan, renderCatalogueSql, listInputFiles, parseFilename, catalogueLabel, readComponentRecords, readComponentBrandNames, integratedBrakeLeverLink, normalizeForMatch, expandLabel, splitCellValue, matchComponent, explicitUnlinkOverride };

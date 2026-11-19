@@ -4,6 +4,7 @@ const fs = require('node:fs')
 const vm = require('node:vm')
 const classifier = require('../link-classify')
 const { buildLinkPriority } = require('../link-priority')
+const { isReviewedUnlinked } = require('../link-decisions')
 
 const brands = [{ brand_id: 1, title: 'SunTour' }, { brand_id: 2, title: 'Kalloy' }]
 const brandIndex = classifier.buildBrandIndex(brands, [])
@@ -62,7 +63,7 @@ async function coverage(unlinked) {
   const end = source.indexOf('// eBay Sporting Goods', start)
   return new Promise((resolve, reject) => {
     vm.runInNewContext(source.slice(start, end), {
-      ...classifier, buildLinkPriority, NON_LINKABLE_SPEC_LABELS: new Set(),
+      ...classifier, buildLinkPriority, isReviewedUnlinked, NON_LINKABLE_SPEC_LABELS: new Set(),
       connection: { query(statement, params, callback) {
         sql.push(statement)
         callback(null, queries[sql.length - 1])

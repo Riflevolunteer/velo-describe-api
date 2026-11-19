@@ -128,7 +128,20 @@ before any mapping; date bounds are displayed rather than used to exclude rows.
 Unbranded values and labels without known component categories cannot produce
 candidates, so a source-hunt hint is not proof that a component row is missing.
 `unlinked=0` skips both classification and candidate queries. This endpoint is
-read-only and does not apply overrides or change links. Validated with classifier
+read-only and does not apply overrides or change links.
+
+Specs already reviewed and deliberately left unlinked are kept out of each
+category's `values` and class counts and summarised instead as
+`reviewed_unlinked: { values, bikes }`, per category and overall. A spec counts
+as reviewed when `COMPONENT_OVERRIDES` explicitly resolves it to `id: null` for
+its bike and year, or when it matches an entry in `REVIEWED_UNLINKED`
+(`link-decisions.js`: label, value, optional bike and year range, reason and a
+link to the decision in `link-decisions.md`). An override whose year ranges
+simply miss the spec is still an open gap, not a review. `?reviewed=1` also
+lists each category's reviewed values (up to `unlinked`) with `source`
+(`override` or `registry`), `reason` and `ref`. Totals and link rates still
+count every spec. Record a new leave-unlinked decision in `link-decisions.md`
+and add its registry entry (or a null override) in the same change. Validated with classifier
 and route fixtures; live deployment remains separate from local code changes.
 
 Validated against fixture cases, the existing test suite and the live database

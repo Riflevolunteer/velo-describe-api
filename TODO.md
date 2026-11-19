@@ -2,10 +2,6 @@
 
 Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/references/known-catalogs.md) for evidence and [link decisions](.agents/skills/ingest-bike-specs/references/link-decisions.md) before changing mappings. Use live `/linkCoverage`, `quality-report.js` and `duplicate-report.js` instead of copied gap/count inventories. Follow [housekeeping](.agents/skills/audit-data-quality/references/todo-housekeeping.md).
 
-## Ready to work
-
-- Persist link status/evidence so deliberately unlinked specs stop appearing as unresolved in `/linkCoverage`.
-
 ## Product and infrastructure
 
 - Design multiple component evidence references, preserving `source_ref` as the last source that changed a row.

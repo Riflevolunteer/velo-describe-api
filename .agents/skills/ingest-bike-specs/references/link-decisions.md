@@ -2,6 +2,8 @@
 
 Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_id`, moved from TODO.md on 2026-11-15. Each records why a spec stays unlinked (several rows fit, era unclear, either/or cell, maker-only text, user's call). Do not relink these without new evidence; record a reversal here when one is made. Open source gaps and candidates stay in TODO.md; per-catalogue mappings stay in `known-catalogs/<brand>.md`.
 
+`/linkCoverage` hides reviewed decisions listed in `REVIEWED_UNLINKED` (`link-decisions.js`) or recorded as `id: null` generator overrides; when adding a leave-unlinked decision here, add its registry entry (label, stored value, bike/year scope, reason, this file's heading anchor) or a null override in the same change.
+
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
 ## MBK Course et Loisir 1986/87 — applied partial ingest, 2026-11-19

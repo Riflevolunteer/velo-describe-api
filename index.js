@@ -7,6 +7,7 @@ const { BICYCLE_PARTS, categoryLadder } = require('./ebay-categories');
 const { EBAY_REGIONS, REGION_MARKETPLACES, mergeRegionListings } = require('./ebay-regions');
 const { buildBrandIndex, classifyValue, ACTIONABLE_CLASSES, CLASS_ORDER } = require('./link-classify');
 const { buildLinkPriority } = require('./link-priority');
+const { isReviewedUnlinked } = require('./link-decisions');
 
 const decrypt = require('./decrypt');
 
@@ -513,12 +514,22 @@ const NON_LINKABLE_SPEC_LABELS = new Set([
 // entry, with the spellings in `variants`. ?unlinked=N sets how many values per
 // category (default 10, max 50, 0 omits the list). Each listed value includes
 // a review hint and up to three existing candidates; no links are changed.
+// Values already reviewed and deliberately left unlinked (link-decisions.js:
+// explicit null overrides plus the REVIEWED_UNLINKED registry) are left out of
+// `values` and the class counts and summarised as `reviewed_unlinked`;
+// ?reviewed=1 also lists them with their reason. Totals and rates still count
+// every spec.
 app.get('/linkCoverage', function (req, res, next) {
   const unlinkedLimit = req.query.unlinked === undefined ? 10 : Number(req.query.unlinked)
   if (!Number.isInteger(unlinkedLimit) || unlinkedLimit < 0 || unlinkedLimit > 50) {
     res.status(400).json({ error: 'unlinked must be an integer from 0 to 50' })
     return
   }
+  if (req.query.reviewed !== undefined && req.query.reviewed !== '0' && req.query.reviewed !== '1') {
+    res.status(400).json({ error: 'reviewed must be 0 or 1' })
+    return
+  }
+  const listReviewed = req.query.reviewed === '1'
 
   const query = (sql, params) => new Promise((resolve, reject) => {
     connection.query(sql, params, (error, results) => error ? reject(error) : resolve(results))
@@ -540,14 +551,18 @@ app.get('/linkCoverage', function (req, res, next) {
   const bikesPromise = query('SELECT brand_id, COUNT(*) as bikes FROM bike group by brand_id')
   // Every unlinked value, not a top N: the classifier decides what's listed.
   // Distinct bikes rather than spec rows, so a value repeated across a bike's
-  // split compound cells doesn't count twice.
+  // split compound cells doesn't count twice. Grouped per bike title/year too,
+  // because a reviewed no-link can be scoped to one bike or catalogue year;
+  // each bike has one title and year, so summing the groups stays exact.
   const skip = Promise.resolve([])
   const unlinkedPromise = unlinkedLimit === 0 ? skip : query(
-    `SELECT bsl.label_id, bs.value_text, COUNT(DISTINCT bs.bike_id) as bikes
+    `SELECT bsl.label_id, bsl.title as label, bs.value_text, b.title as bike_title, b.year_from as year,
+            COUNT(DISTINCT bs.bike_id) as bikes
        FROM bike_spec bs
        join bike_spec_label bsl on bsl.label_id=bs.label_id
+       left join bike b on b.bike_id=bs.bike_id
       where bs.component_id IS NULL and bsl.title not in (?)
-      group by bsl.label_id, bs.value_text`, [[...NON_LINKABLE_SPEC_LABELS]])
+      group by bsl.label_id, bsl.title, bs.value_text, b.title, b.year_from`, [[...NON_LINKABLE_SPEC_LABELS]])
   // What the classifier needs to recognise makers: component brands, the first
   // word their component titles start with, bike brands, and which component
   // categories each label links to (from the links already made) so a bike
@@ -632,13 +647,24 @@ app.get('/linkCoverage', function (req, res, next) {
     // Variants of one value are summed, which can count a bike twice if it
     // carries two spellings of the same text; rare enough to ignore.
     const unlinkedByLabel = new Map()
+    const labelEntry = (labelId) => {
+      if (!unlinkedByLabel.has(labelId)) unlinkedByLabel.set(labelId, { classes: {}, values: new Map(), reviewed: new Map() })
+      return unlinkedByLabel.get(labelId)
+    }
     for (const r of unlinkedRows) {
+      const bikes = Number(r.bikes)
+      const decision = isReviewedUnlinked(r.label, r.value_text, r.bike_title, r.year)
+      if (decision) {
+        const reviewed = labelEntry(r.label_id).reviewed
+        const reviewedKey = `${r.value_text}|${decision.reason}`
+        if (!reviewed.has(reviewedKey)) reviewed.set(reviewedKey, { value_text: r.value_text, bikes: 0, ...decision })
+        reviewed.get(reviewedKey).bikes += bikes
+        continue
+      }
       const categoryIds = labelCategories.get(r.label_id) || []
       const brandHasRows = (brandIds) => brandIds.some(b => categoryIds.some(c => brandCategories.has(`${b}|${c}`)))
       const { key, class: cls, brands } = classifyValue(r.value_text, brandIndex, brandHasRows)
-      const bikes = Number(r.bikes)
-      if (!unlinkedByLabel.has(r.label_id)) unlinkedByLabel.set(r.label_id, { classes: {}, values: new Map() })
-      const l = unlinkedByLabel.get(r.label_id)
+      const l = labelEntry(r.label_id)
       const c = l.classes[cls] || (l.classes[cls] = { values: 0, bikes: 0 })
       c.bikes += bikes
       if (!l.values.has(key)) {
@@ -647,12 +673,19 @@ app.get('/linkCoverage', function (req, res, next) {
       }
       const v = l.values.get(key)
       v.bikes += bikes
-      v.variants.push({ value_text: r.value_text, bikes })
+      // One row per bike title/year now, so merge repeats of the same spelling.
+      const variant = v.variants.find(x => x.value_text === r.value_text)
+      if (variant) variant.bikes += bikes
+      else v.variants.push({ value_text: r.value_text, bikes })
     }
+    const reviewedSummary = (reviewed) => ({
+      values: new Set([...reviewed.values()].map(r => r.value_text)).size,
+      bikes: [...reviewed.values()].reduce((sum, r) => sum + r.bikes, 0)
+    })
     const unlinked_values = unlinkedLimit === 0 ? undefined : categories
       .filter(c => unlinkedByLabel.has(c.label_id))
       .map(c => {
-        const { classes, values } = unlinkedByLabel.get(c.label_id)
+        const { classes, values, reviewed } = unlinkedByLabel.get(c.label_id)
         const listed = [...values.values()]
           .filter(v => ACTIONABLE_CLASSES.has(v.class))
           .map(({ variants, ...v }) => {
@@ -663,10 +696,19 @@ app.get('/linkCoverage', function (req, res, next) {
           .slice(0, unlinkedLimit)
           .map(v => ({ ...v, ...linkPriority(v.value_text, v.brands, labelCategories.get(c.label_id) || []) }))
         const ordered = Object.fromEntries(CLASS_ORDER.filter(k => classes[k]).map(k => [k, classes[k]]))
-        return { label_id: c.label_id, label: c.label, classes: ordered, values: listed }
+        const entry = { label_id: c.label_id, label: c.label, classes: ordered, values: listed, reviewed_unlinked: reviewedSummary(reviewed) }
+        if (listReviewed) {
+          entry.reviewed = [...reviewed.values()]
+            .sort((a, b) => b.bikes - a.bikes || a.value_text.localeCompare(b.value_text))
+            .slice(0, unlinkedLimit)
+        }
+        return entry
       })
+    const reviewed_unlinked = unlinkedLimit === 0 ? undefined : [...unlinkedByLabel.values()]
+      .map(l => reviewedSummary(l.reviewed))
+      .reduce((t, s) => ({ values: t.values + s.values, bikes: t.bikes + s.bikes }), { values: 0, bikes: 0 })
 
-    res.send({ overall, categories, non_linkable_categories, brands, brand_categories, unlinked_values })
+    res.send({ overall, categories, non_linkable_categories, brands, brand_categories, unlinked_values, reviewed_unlinked })
   }).catch((error) => {
     console.error(error && error.message)
     res.status(500).json({ error: error.message })
