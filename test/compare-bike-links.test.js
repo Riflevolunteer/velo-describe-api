@@ -21,6 +21,28 @@ function fixture() {
   return { source, plan, snapshot, add }
 }
 
+test('MBK partial catalogue preserves the printed 1986/87 interval and uppercase brand without changing single-year SQL', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'velo-mbk-test-'))
+  try {
+    const file = path.join(dir, '1986_mbk_spec_1986_87_partial.csv')
+    fs.writeFileSync(file, 'Model,Type,Frame Material\nTri-Delta,Triathlon,High-rigidity sloping frame\n')
+    const plan = generator.buildCataloguePlan([file], [], new Set())
+    assert.equal(plan.bikes[0].brand, 'MBK')
+    assert.equal(plan.bikes[0].year, '1986')
+    assert.equal(plan.bikes[0].yearTo, '1987')
+    assert.equal(plan.bikes[0].catalogue, 'MBK Course et Loisir (1986/87, partial)')
+    assert.equal(plan.catalogSources.get(plan.bikes[0].catalogue).country, null)
+    const sql = generator.renderCatalogueSql(plan)
+    assert.match(sql, /INSERT INTO bike \([^\n]*search_text, year_to, source_ref\)/)
+    assert.match(sql, /'1987', \(SELECT source_id FROM data_source/)
+    const single = path.join(dir, '1988_mbk_spec.csv')
+    fs.writeFileSync(single, 'Model,Type\nOther,Road\n')
+    const singlePlan = generator.buildCataloguePlan([single], [], new Set())
+    assert.equal(singlePlan.bikes[0].yearTo, undefined)
+    assert.doesNotMatch(generator.renderCatalogueSql(singlePlan), /year_to/)
+  } finally { fs.rmSync(dir, { recursive: true }) }
+})
+
 test('compares identities independent of order, with explicit null transitions and component titles', () => {
   const f = fixture()
   f.add('gain', null, 1); f.add('loss', 1, null); f.add('change', 1, 2)

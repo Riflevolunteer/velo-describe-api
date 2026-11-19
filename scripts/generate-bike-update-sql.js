@@ -105,6 +105,12 @@ function dataSourceSubquery(label) {
 // catalogue"); files without one keep the original label so loaded rows still match.
 // Separate same-year brochures without inventing another bike brand or market.
 const CATALOGUE_EDITIONS = new Map([
+  ['1986_mbk_spec_1986_87_partial.csv', {
+    label: 'MBK Course et Loisir (1986/87, partial)',
+    citation: '1986_mbk_spec_1986_87_partial.csv; https://www.rennrad-news.de/forum/threads/les-aventures-de-motob%C3%89cane.119041/page-54 post1064; spreads867796/867797; cover846470 prints1986/87; 5 bikes, prose only; market unconfirmed.',
+    country: null,
+    yearTo: '1987', // Printed two-year edition; preserve both years on new bike rows.
+  }],
   ['1986_motobecane_de_spec.csv', {
     label: '1986 Motobecane (DE) catalogue',
     citation: '1986_motobecane_de_spec.csv; https://velopedia.online/veloTable record1352, inventory2332 (old1507); cover Programme86 p.1; Deutsche Motobecane Bielefeld p.16; specifications/portraits pp.2-15. Public previews checked against printed panels.',
@@ -250,6 +256,7 @@ function capitalize(word) {
 // re-run must produce the same spelling or it mints a duplicate brand.
 const BRAND_NAMES = {
   derosa: 'De Rosa',
+  mbk: 'MBK',
 };
 
 function parseFilename(filename) {
@@ -1497,6 +1504,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    'sealed helico sport': [{ bike: 'JO392 Triathlon Olympique', from: 1986, to: 1987, id: null }], // MBK 1986/87 spread2: sealing alone does not establish 3387's QR/36-hole/5-6-speed version.
     'campagnolo triumph front and rear': [{ bike: 'C662E Super Record', from: 1986, to: 1986, id: 3277 }], // German 1986 pp.10-11: named Triomphe, pictured low flanges; not 921/000 high flange.
     "front atom; rear helicosport": [{"bike":"D21","from":1985,"to":1985,"id":3387},{"bike":"DM21","from":1985,"to":1985,"id":3387},{"bike":"CT2","from":1985,"to":1985,"id":3387},{"bike":"CTM2","from":1985,"to":1985,"id":3387}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
     "hélicosport": [{"bike":"C441","from":1985,"to":1985,"id":3387},{"bike":"C331","from":1985,"to":1985,"id":3387},{"bike":"C231","from":1985,"to":1985,"id":3387},{"bike":"C221","from":1985,"to":1985,"id":3387}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
@@ -2517,7 +2525,7 @@ const COMPONENT_OVERRIDES = {
     "shimano 105 new double 42 x 52t": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: 1778 }], // German 1986 p.13 New 105; Shimano Aug 1986 scan 17: FC-1050, 42/52T option.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":1515}],
-    "stronglight 200": [{"bike":"C502 Le Champion","from":1986,"to":1986,"id":11312}],
+    "stronglight 200": [{"bike":"C502 Le Champion","from":1986,"to":1986,"id":11312},{ bike: 'JO392 Triathlon Olympique', from: 1986, to: 1987, id: null }], // MBK's unqualified 200 does not distinguish standard ST200D from 200 LX.
     "stronglight 100; lm 3 fach kettenblatt 30 40 50 zähne": [{"bike":"EGT40 Grand Touring","from":1986,"to":1986,"id":11311}],
     "stronglight 100; alloy triple chainrings 30 40 50t": [{"bike":"EGT40 Grand Touring","from":1986,"to":1986,"id":11311}], // English translation of the same reviewed fitment.
     "nervar 2010 chromed double 40 x 52t": [{"bike":"BC121 Nomade","from":1986,"to":1986,"id":10984}],
@@ -4501,6 +4509,7 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    'nickel plated sedisport': [{ bike: 'C662CA Super Record', from: 1986, to: 1987, id: 8765 }], // MBK 1986/87 spread2: plain nickel-plated Sedisport, not Delta.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "nickel plated sedisport racing chain": [{"bike":"C502 Le Champion","from":1986,"to":1986,"id":8765}],
     "sedisport nk": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":8765},{"bike":"Spécial Pro","from":1985,"to":1985,"id":8765},{"bike":"C551","from":1985,"to":1985,"id":8765}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
@@ -4978,6 +4987,7 @@ const COMPONENT_OVERRIDES = {
     'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
+    'michelin hi lite competition': [{ bike: 'C662CA Super Record', from: 1986, to: 1987, id: 6835 }, { bike: 'JO392 Triathlon Olympique', from: 1986, to: 1987, id: 6835 }], // MBK 1986/87 spread2 names Competition; suppress the 1996 Hi Lite 10530 substring match.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "michelin hi lite competition slicks 700 x 23 c": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":6835}],
     "michelin hi lite 700 x 20": [{"bike":"C502 Le Champion","from":1986,"to":1986,"id":null}],
@@ -5545,7 +5555,7 @@ function buildCataloguePlan(files, componentRecords, brandNames) {
         }
       }
 
-      bikes.push({ brand, title, year, catalogue, searchText: buildSearchText(title, brand), ...bikeFields });
+      bikes.push({ brand, title, year, ...(edition?.yearTo && { yearTo: edition.yearTo }), catalogue, searchText: buildSearchText(title, brand), ...bikeFields });
       bikeCount++;
 
       for (const { label, rawLabel, valueText } of rowSpecs) {
@@ -5638,10 +5648,12 @@ function renderCatalogueSql(plan) {
     const sizes = sqlString(bike.sizes);
     const colors = sqlString(bike.colors);
     const weight = sqlString(bike.weight);
+    const yearToColumn = bike.yearTo ? 'year_to, ' : '';
+    const yearToValue = bike.yearTo ? `${sqlString(bike.yearTo)}, ` : '';
     const sourceRefSelect = dataSourceSubquery(bike.catalogue);
     lines.push(
-      `INSERT INTO bike (brand_id, title, category, year_from, sizes, colors, weight, search_text, source_ref)\n` +
-        `  SELECT ${brandIdSelect}, ${title}, ${category}, ${yearFrom}, ${sizes}, ${colors}, ${weight}, ${searchText}, ${sourceRefSelect}\n` +
+      `INSERT INTO bike (brand_id, title, category, year_from, sizes, colors, weight, search_text, ${yearToColumn}source_ref)\n` +
+        `  SELECT ${brandIdSelect}, ${title}, ${category}, ${yearFrom}, ${sizes}, ${colors}, ${weight}, ${searchText}, ${yearToValue}${sourceRefSelect}\n` +
         `  FROM DUAL\n` +
         `  WHERE NOT EXISTS (\n` +
         `    SELECT 1 FROM bike WHERE brand_id = ${brandIdSelect} AND title = ${title} AND year_from = ${yearFrom} ${bikeSourceCond(sourceRefSelect)}\n` +

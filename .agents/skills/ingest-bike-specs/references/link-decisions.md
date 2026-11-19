@@ -4,6 +4,24 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## MBK Course et Loisir 1986/87 — applied partial ingest, 2026-11-19
+
+- C662CA SuperRecord's maker-only Campagnolo hubs/brakes/seatpost/derailleurs/
+  crank/pedals do not identify a SuperRecord component group. Its Maillard700
+  freewheel lacks speed/variant. Retain these as literal unlinked text.
+- JO392's plain Stronglight200 does not distinguish standard11312 from
+  200LX1889. Sealed HélicoSport does not establish3387's QR/36-hole/5–6-speed
+  version. Scoped NULLs preserve those holds; do not copy the German1986C502
+  crank decision into this separate brochure.
+- ProRace's singular Simplex6600Aéro derailleur has no stated front/rear
+  position. Keep its printed identity in Groupset/Components text. Bare
+  Stronglight crank/headset, Weinmann brakes and Mavic rims lack models.
+- Tri-Delta has no printed named component specifications; SuperMirageC352's
+  short paragraph does not inherit the separately headed JO392 equipment.
+
+Applied as reviewed, source477; all held values read backNULL.
+[Source, supported links and completed validation](known-catalogs/motobecane.md#mbk-198687-partial-road-ingest--applied-2026-11-19).
+
 ## German Motobecane 1986 — prepared link review, 2026-11-19
 
 - EXD102 Super-Tour `Sportsattel` / English `Sport saddle` is generic and stays NULL. Translation alone exposed substring candidate 8860; there is no maker/model evidence for that identity. Scoped bike/year exclusion preserves the reviewed decision.

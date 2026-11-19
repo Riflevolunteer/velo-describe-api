@@ -2,6 +2,30 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('MBK 1986/87 Competition tyres and plain Sedisport do not inherit similar later or Delta identities', () => {
+  const records = [
+    { component_id: 6835, title: 'Michelin Hi-Lite Comp', category: 'Tyres' },
+    { component_id: 10530, title: 'Michelin Hi Lite', category: 'Tyres' },
+    { component_id: 8765, title: 'Sedis Sedisport', category: 'Chains' },
+    { component_id: 1402, title: 'Sedis Sedisport Delta', category: 'Chains' },
+    { component_id: 11312, title: 'Stronglight 200, ST200D', category: 'Cranksets' },
+    { component_id: 1889, title: 'Stronglight 200 LX', category: 'Cranksets' },
+    { component_id: 3387, title: 'Sealed Helico Sport', category: 'Hubs' },
+  ]
+  const match = (value, label, bike, year = 1986) => matchComponent(value, records, null, label, year, bike)
+  for (const year of [1986, 1987]) {
+    for (const bike of ['C662CA Super Record', 'JO392 Triathlon Olympique']) {
+      assert.equal(match('Michelin Hi-Lite Competition', 'Tyres', bike, year).component_id, 6835)
+    }
+    assert.equal(match('Nickel-plated Sedisport', 'Chain', 'C662CA Super Record', year).component_id, 8765)
+  }
+  assert.equal(match('Stronglight 200', 'Crankset', 'JO392 Triathlon Olympique'), null)
+  assert.equal(match('Sealed Helico Sport', 'Hubs', 'JO392 Triathlon Olympique'), null)
+  assert.equal(match('Michelin Hi-Lite Competition', 'Tyres', 'Other'), null)
+  assert.equal(match('Nickel-plated Sedisport', 'Chain', 'Other'), null)
+  assert.equal(match('Stronglight 200', 'Crankset', 'C502 Le Champion').component_id, 11312)
+})
+
 test('1986 Motobecane New 105 resolves both derailleurs without changing later or unrelated bikes', () => {
   const records = [
     { component_id: 2462, title: 'Shimano FD-1050-B / FD-1050-F, 105', category: 'Front Derailleurs' },

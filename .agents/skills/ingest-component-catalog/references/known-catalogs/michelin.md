@@ -1,5 +1,16 @@
 # Michelin catalogs processed so far
 
+## BIB TS-23 6831 — MBK 1986/87 fitment, applied 2026-11-19
+
+ProRace explicitly prints MichelinBIBTS23 and describes its flexible bead in
+the recovered MBK1986/87 Course et Loisir spread1. Applied update:
+year_to1985→1987, source_ref259→477, keeping
+year_from1980 and all identity/description/image fields unchanged. This records
+edition availability, not a manufacture endpoint. Ten existing Peugeot links
+remain untouched; duplicate report found no candidate involving6831. Exact
+metadata readback and a zero-change rerun passed; the new ProRace tyre link
+also matches the maintained CSV. [Source, exact scope, restoration values and validation](../../../ingest-bike-specs/references/known-catalogs/motobecane.md#mbk-198687-partial-road-ingest--applied-2026-11-19).
+
 ## Elan 6834 — German Motobecane 1986 fitment, applied 2026-11-19
 
 Source465, printed p.15, explicitly fits Michelin Elan700x23C to C352E Super-Mirage. Extended `year_to` **1985→1986**, retaining `year_from1975`; `source_ref381→465`. This attests catalogue availability, not a manufacture endpoint. Old source/date values above permit restoration. Duplicate review found no candidate involving6834; bike-link readback, zero-change rerun and integrity checks pass. [Catalogue evidence and validation](../../../ingest-bike-specs/references/known-catalogs/motobecane.md#german-1986-catalogue--dating-and-source-verification-2026-11-18).

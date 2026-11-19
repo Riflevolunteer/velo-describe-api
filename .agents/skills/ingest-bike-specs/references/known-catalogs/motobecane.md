@@ -306,9 +306,9 @@ Attachment URLs below omit disposable forum session IDs.
   not a visible cover year. The C977/C477 spread captions the Tour de France
   1990, which establishes 1990 or later, not a uniquely proven 1991 model year.
   Recover a matching dated cover/imprint or period model list before assigning
-  a firm year. MBK branding is explicit; settle bike-brand treatment in the
-  reviewed ingest rather than silently inheriting the earlier co-branded
-  brochure's Motobecane attribution. No SQL or maintained CSV prepared yet.
+  a firm year. MBK branding is explicit; the subsequent1986/87 ingest below
+  establishes MBK brand14 for explicitly MBK-labelled sources. No SQL or
+  maintained CSV prepared for this1991-attributed brochure yet.
 - **Attributed 1990 Loisir, partial:**
   [6534 cover](https://www.tobeconline.fr/forum/download/file.php?id=6534) and
   [6535 spread](https://www.tobeconline.fr/forum/download/file.php?id=6535)
@@ -327,9 +327,10 @@ Attachment URLs below omit disposable forum session IDs.
   page is BMX and children's models, with part of the price column obscured.
   It is not an adult-road specification table and does not date the other
   brochures. [eBay 188879659886](https://www.ebay.fr/itm/188879659886) is an
-  additional seller-attributed 1988 bicycle catalogue lead; indexed as nine
-  photos, but those images and the date have not been inspected here. No
-  purchase or contact was made; a listing is not an acquired source.
+  bicycle catalogue lead subsequently recovered as nine public photographs:
+  printed1988 cover and01/88 imprint now verified; see the
+  [1987–90 recovery](#19871990-catalogue-recovery--2026-11-19) below.
+  The price-list exclusion still stands. No purchase or contact was made.
 - **Later unreviewed leads in the same collection:** 1992 Course attachments
   6577–6579 and VTT 6583–6584, plus 1991 Loisir 7055–7056, are indexed on page
   3 but were not downloaded/read. The 1989 entries on page 2 are explicitly
@@ -340,6 +341,223 @@ Attachment URLs below omit disposable forum session IDs.
 Recorded the new dating/preparation action and narrowed the existing edition-gap
 task. Task-only HTML and the eight inspected photographs were discarded after
 recording their URLs and limits; no DB mutation or mapping validation was needed.
+
+## 1987–1990 catalogue recovery — 2026-11-19
+
+User requested another recovery attempt for the1987–90 gap. Recovered **21
+original public photographs**, all visually inspected, retained as source
+deliverables at `bike_specs/sources/motobecane_mbk_1987_1990/` (gitignored).
+`sources.json` there records each original URL, role, byte size and SHA-256.
+The directories below are relative to that folder. These are partial source
+sets, not four complete recovered editions. No CSV, SQL or DB changes made;
+no purchase or contact undertaken. Listing/forum HTML and viewing derivatives
+were discarded after source verification; original photographs remain.
+
+**1988 MBK — strongest next ingest source.**
+[eBay188879659886](https://www.ebay.fr/itm/188879659886) supplies nine public
+photographs, all downloaded and inspected. Photo1 prints **Catalogue1988 /
+VTT Course et Loisir**; photo2's rear panel explicitly prints **Edition01/88**
+above MBK Industrie / Sté Nouvelle Motobécane and Saint-Quentin/Pantin
+addresses. Dating is primary-page evidence, superseding the former
+seller-attribution-only hold. French-language publisher/address evidence is
+preserved; confirm market during preparation. The subsequent1986/87 ingest
+below establishes MBK brand14 for explicitly MBK-labelled sources.
+
+- `1988_mbk/ebay1988-1.webp` is the cover; photo2 is the mountain-bike
+  specification table with the dated imprint; photo9 is the two-page
+  Course/Randonnée/1/2Course/Tourisme specification table. Photos3–8 show
+  six portrait spreads. This is useful specification coverage, **not proof
+  of a complete catalogue**: several table models lack recovered portraits.
+- Road portraits include KevlightC910, ProlightC757, ProRacerC658,
+  SuperRecordII C656, SuperRecordC659, TeamChampionC456, ChampionC455,
+  TriathlonC355T, SuperMirageC354, MirageC224, Mirage18 C234/C234D,
+  TrainerC154/C154D, SuperSprintC124 and SprintC114. The tables also cover
+  GrandTouring and additional sports/tourism models requiring scope review.
+  The MTB table names TrackerHi-Tech MT50, RangerHi-Tech MT40,
+  AventureMT30/MT30D and BaroudeurMT10. Do not transfer equipment from the
+  separately recovered undated MT521 extract below.
+- Racer55C25 is explicitly junior7–11; Trappeur24/20 are explicitly junior;
+  the Romantic spread includes children and city models. Exclude those under
+  the existing scope rules. Do not ingest every table column automatically.
+- Portraits and table differ in some model wording: preserve the printed
+  distinction (e.g. Champion versus table LeChampion). Transcribe/reconcile
+  individual cells before generating; do not resolve small/blurry text by
+  guessing. No component links have been selected yet.
+- Original images use `https://i.ebayimg.com/images/g/<key>/s-l1600.webp`.
+  Photo keys1–9: `sp4AAeSwZ3hpenNC`, `rTwAAeSwx5lpenNG`,
+  `wCgAAeSwj9dpenNG`, `wZcAAeSwKVBpenNA`, `tWgAAeSwOI5penNI`,
+  `x6gAAeSw-JdpenNI`, `wuIAAeSwGQlpenNA`, `tqcAAeSwqxdpenNE`,
+  `reMAAeSwZpxpenNE`. This preserves retrieval if the listing changes.
+
+**1986/87 MBK Course et Loisir — dated cover, partial road spreads.**
+[Rennrad-News page54, Vintage-Racer post1064](https://www.rennrad-news.de/forum/threads/les-aventures-de-motob%C3%89cane.119041/page-54)
+shares two readable spreads attributed to1986–87, now saved in
+`1986_1987_mbk/`. They show Tri-Delta / ProRace, then SuperRecordC662CA,
+SuperMirageC352 and TriathlonOlympiqueJO392 with portrait prose. Original
+attachments [867796](https://www.rennrad-news.de/forum/attachments/1986-87-s1-jpg.867796/)
+and [867797](https://www.rennrad-news.de/forum/attachments/1986-87-s2-jpg.867797/).
+The same collector's earlier
+[cover comparison846470](https://www.rennrad-news.de/forum/attachments/20201010_212912-jpg.846470/)
+visibly prints **Catalogue1986/87** beside the matching1988 cover. This supports
+the combined edition, not a uniquely1987 publication date. No full spec table
+or remaining pages recovered. The same page54 supplies clearer copies of two
+1988 spreads, attachments867798/867799, retained under `1988_mbk/`.
+
+**1987/88 Motobécane Gamme bicyclettes — date confirmed, adult pages missing.**
+[LeMasterBrockers listing](https://www.lemasterbrockers.com/auto-moto-brochures-fiches/brochures-catalogues-moto/brochure-motobecane-bicyclettes-1987-1988.html)
+has three public original photographs, saved under `1987_1988_motobecane/`.
+Cover visibly prints **Gamme bicyclettes1987/88**; back visibly prints
+**Edition08/87**. The third photograph is a children/city spread, not an adult
+road specification source. Seller lists12pages and adult candidates including
+C502/BC125/CT11/CT22/TT21, but those pages were not recovered: the seller's
+inventory cannot supply missing specifications. Do not combine this brochure
+with the differently titled MBK1986/87 road edition. Public image URLs use
+`https://media.cdnws.com/_i/266382/<key>/brochure-motobecane-bicyclettes-1987-1988.jpeg`,
+keys `13483/962/87` (back), `13484/2920/88` (cover), `13485/2604/89` (spread).
+
+**1989 Motobécane — dated programme and one usable specification leaf.**
+[Rennrad-News page53, ElliRadler post1049,3October2020](https://www.rennrad-news.de/forum/threads/les-aventures-de-motob%C3%89cane.119041/post-4814861)
+has three original photographs, saved under `1989_motobecane/`:
+[843312](https://www.rennrad-news.de/forum/attachments/92b1e34c-b6d0-4cf5-a8c8-c17800c64f53-jpeg.843312/)
+prints **Programm’89**;843313 only shows the binding; and
+[843314](https://www.rennrad-news.de/forum/attachments/e759aa9e-6a8e-465e-aecc-ce3b1dbb4867-jpeg.843314/)
+shows **Mirage8, EC185**, a complete drop-bar touring/sports bike with a
+German-language specification panel. Printed named equipment includes SakaeCAC,
+MaillardCX500, Huret-RivalSDS8/8, Weinmann570, Rigida13/20 and HutchinsonHP22.
+The year association comes from the leaf and dated cover being shown in the
+same owner's catalogue post; the leaf has no independent date or market
+imprint. Verify before using a firm country/source assignment. This is one
+usable model leaf, not a recovered complete1989 programme. Other leaves remain
+wanted from this specific source.
+
+**1990 — additional MTB extract, date remains attributed.**
+[TontonVélo topic12926](https://forum.tontonvelo.com/viewtopic.php?t=12926)
+posts [attachment87525](https://forum.tontonvelo.com/download/file.php?id=87525)
+as1990, now retained under `1990_mbk_attributed/`. The image names
+TrackerHiTech **MT521**, eleven ColumbusCromor-Or tubes, ShimanoNewDeoreXT,
+21speeds and a rearU-brake. It contains no visible printed year. This adds a
+readable model-specific extract to the already reviewed attributed1990Loisir
+fragments; it does not establish a dated complete1990 edition.
+
+**Other checked leads/limits:** TobecOnline10627 pages1–2 yielded no new
+1987–90 adult spec pages beyond the recorded1990Loisir material; its1989
+material remains children's range. Collector bastini explicitly mentions
+owning1989 model sheets in
+[RecordMax discussion](https://www.velovintageagogo.com/t11939-mbk-record-max-1991),
+but the catalogue actually posted in the linked VieuxPapelards thread is
+[1991Course](https://www.velovintageagogo.com/t11952-catalogue-mbk-gamme-course-1991).
+It is not a recovered1989 source. BMX-only23mag pages, modern specimen
+discussions and the previously excluded1990mopedPDF do not fill the adult
+catalogue gaps. Broad French/English/German searches found no additional full
+1989/1990 bicycle scan in this pass. Reopen sourcing for the specific missing
+pages/dated editions, using these holder leads rather than repeating those
+unproductive search results.
+
+## MBK 1986/87 partial road ingest — applied 2026-11-19
+
+User approved the reviewed partial ingest with “apply”. **Applied and validated.** Maintained
+CSV `bike_specs/1986_mbk_spec_1986_87_partial.csv` contains the five complete
+bike portraits on the two recovered spreads. Independent French transcription
+was checked against both original images; stored spec text is English.
+
+**Provenance/date/brand:** original road photographs867796/867797 and the
+same collector's cover comparison846470 are retained under
+`bike_specs/sources/motobecane_mbk_1987_1990/1986_1987_mbk/`; retrieval URLs
+and hashes are in the recovery entry/manifest above. Cover explicitly prints
+Catalogue1986/87. Source **477**, label **MBK Course et Loisir (1986/87,
+partial)**; bike brand **MBK/14**, as printed, separate from existing
+Motobecane. Bikes retain **year_from1986 / year_to1987** rather than an
+invented single-year assignment. French-language pages alone do not establish
+market, so country remainsNULL. The generator's edition configuration supplies
+the label/citation and upper year; other catalogue inserts retain their
+existing year handling. The two photographs have no visible page numbers;
+references use recovered spread/position, never invented pagination.
+
+| Bike | Printed coverage and deliberate limits |
+| --- | --- |
+| Tri-Delta | Sloping high-rigidity time-trial/triathlon frame and MBK-team use; no named components, materials, sizes or gearing printed. |
+| Pro Race | Made to measure;8 ColumbusSL tubes6/10, reinforced Inexternal welding; MichelinBIBTS23, Mavic rims, Stronglight crank/headset, Weinmann brakes; singular Simplex6600Aéro derailleur has no stated position. |
+| C662CA Super Record | Seven frame heights, MBK blue gradient; MA40, Hi-LiteCompetition, Maillard700, nickel-plated Sedisport and maker-only Campagnolo equipment. No ProRace tubes/equipment copied from “derived from”. |
+| C352 Super Mirage | Three ColumbusCR-MO tubes, Inexternal welding, six frame heights. The JO392 component paragraph belongs to a separate model and is not copied here. |
+| JO392 Triathlon Olympique | Three ColumbusCR-MO tubes, Stronglight200, sealed HélicoSport hubs, Hi-LiteCompetition, blue Epoxy spokes, spare freewheel/inflation provision. Printed JO392 has an O/zero glyph ambiguity; JO is retained. |
+
+All five qualify as complete road/triathlon bikes. The separately offered
+SuperRecord frame/fork kit is an option on that complete-bike description,
+not a sixth frameset row. No parts are inferred from photographs, nearby
+models or the1988 catalogue. Frame geometry/construction is retained under
+the existing FrameMaterial label without inventing a material. ProRace's
+final nearby tyre caption explicitly says “Peinture rayon Epoxy”; retained
+as Epoxy-painted spokes, with that caption-position attribution recorded.
+
+**Applied rows:** one new brand and one source; **5 bikes /30 specs /5
+linked specs across4 existing components**. All16 canonical spec labels
+already existed, at the generator's expected sort positions; no new label or
+label-order change occurred. No component insert, merge, retitle, deletion
+or existing bike/spec change occurred. All cells fit255characters.
+Labels: FrameMaterial, Headset, Brakes, FrontDerailleur, RearDerailleur,
+Groupset/Components, Crankset, Pedals, Seatpost, Hubs, Rims, Tyres, Freewheel,
+Chain, Spokes and Extras.
+
+| Bike / label | Printed value (English CSV) | Existing component |
+| --- | --- | --- |
+| Pro Race / Tyres | Michelin BIB TS23, flexible bead; special Mavic rim | 6831 Michelin BIB TS-23 |
+| C662CA / Rims | Mavic MA40 | 5077 Mavic MA40 |
+| C662CA and JO392 / Tyres | Michelin Hi-Lite Competition | 6835 Michelin Hi-Lite Comp, two specs |
+| C662CA / Chain | Nickel-plated Sedisport | 8765 Sedis Sedisport |
+
+**One applied component correction:** ProRace explicitly names BIBTS23 in
+the1986/87 edition. Guarded update for6831 changed **year_to1985→1987** and
+source_ref **259→477**. year_from1980, title,
+description, UUID `57782B78-8877-4E69-AA87-DC0F3A9F051A`, image and every other
+field remain unchanged, verified by exact readback including the image hash. This is catalogue availability, not a manufacture
+endpoint. Previous date/source above are restoration values; check the applied
+state before restoring. Its ten existing Peugeot bike links remain untouched.
+Michelin duplicate report has no candidate pair involving6831; no new identity
+or duplicate is introduced by this attestation.
+
+**Reviewed NULLs:** bare Campagnolo does not identify a SuperRecord groupset;
+bare Stronglight/Weinmann/Mavic do not identify models. Unqualified Maillard700
+lacks cluster speed/variant. JO392's Stronglight200 does not distinguish
+standard11312 from200LX1889; sealed HélicoSport does not establish3387's
+QR/36-hole/5–6-speed version. The Simplex6600Aéro wording is stored under
+Groupset/Components with its unspecified position, not invented front/rear
+assignments. No generic hunt tasks are created for these decisions.
+
+**Implementation and validation:** scoped Competition tyre rules replace the automatic
+wrong1996HiLite10530 choice with6835; nickel-plated Sedisport selects8765
+instead of Delta1402. Explicit scoped NULLs protect the crank/hub holds;
+existing1986C502 Stronglight200 mapping remains11312. All13 test files pass,
+including combined-edition SQL/date handling, uppercase MBK, two-year tyre/
+chain matches, variant holds and existing-mapping preservation. Full comparison
+of108 loaded catalogues/23,380specs has exactly the same15 pre-existing lost
+findings, no gained/changed/missing/ambiguous findings and identical file/scope
+coverage; at that preparation stage only the new unloaded CSV appeared in
+skipped_files.
+
+**Applied readback:**112 catalogue statements inserted exactly brand14,
+source477, bikes **1456–1460** and specs **25378–25407**, and updated6831
+once. Existing labels were reused without updates. Verified every new bike
+field including year_from1986/year_to1987, every spec's label/raw label/value,
+all source references and exactly the five supported links above. No duplicate
+bikes/specs; all held values remainNULL. Hash comparison confirms all1349
+previous bikes and23,380 previous specs are unchanged, as are existing brands
+and labels. No dangling component/source/label references are introduced.
+
+Readback exposed a255-character `data_source.citation` limit. Shortened the
+new citation to224characters, retaining the CSV, forum URL/post, both spread
+IDs, dated-cover attachment, partial scope and market uncertainty. One guarded
+source477-only repair affected one row; generator citation now matches live
+exactly. This repair changed no model/spec/component identity.
+
+Post-load mapping comparison includes **109 catalogues /23,410 specs**:
+all30 added specs agree with the generator, all15 pre-existing lost findings
+are identical, and there are zero gained/changed/missing/ambiguous findings.
+No catalogue/file coverage was lost. Both the112-statement ingest rerun and
+the citation-repair rerun affected **zero rows**. All13 test files pass after
+the citation adjustment. Removed the completed application TODO, obsolete
+brand-decision steps and task scratch after validation. Maintained CSV,
+original source photographs, retrieval manifest and these notes preserve the
+evidence and restoration values.
 
 ## 1970–1990 gap source leads — 2026-11-18
 
