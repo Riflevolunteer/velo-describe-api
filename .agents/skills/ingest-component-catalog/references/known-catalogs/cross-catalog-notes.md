@@ -1,5 +1,93 @@
 # Cross-catalog notes catalogs processed so far
 
+## Cologne press report reconciliation — applied 2026-11-19
+
+Reconciled all three recovered magazine pages58–60 from
+[the public forum post](https://www.velovintageagogo.com/t12991-salon-du-cycle-cologne-1984-campaclbhuret-etc).
+[Acquisition, original image URLs and attribution](../source-hunts.md#free-online-source-recovered-cologne-component-report--2026-11-19)
+remain the recovery record. The poster names Miroir du Cyclisme1984, but no
+cover/issue number/dated imprint accompanies these pages. Targeted exact-title,
+Cologne/SpaceLine and issue searches did not locate a matching dated original.
+References to IFMA1982 prototypes and later pedal-history narratives do not
+independently date this article. **All existing dates were preserved; the new pedal has NULL years.**
+
+### Applied changes
+
+| Row / page | Applied change |
+| --- | --- |
+| 635 CLB Space Line /58 | Add polyurethane cover, hollow axle, anti-friction coating and front adjustment socket. Retain existing maker-sourced heat-treated alloy, hard anthracite anodising,38–47mm/90g per caliper, regular/aero levers, JeannieLongo and independently reported204g NOS pair including pads/hardware. Dates remain1980–1989. |
+| 1098 Weinmann AG Delta 531 Pro /58 | Add41–53mm, approximately185g, standard/recessed mounting and protective rubber cover. Retain maker-source knee-lever actuation, integral hanger/staticQR/semi-auto adjuster, wheel guides and black188-2 gum-hood lever/universal clamp. Dates remain1980–1987. The report does not explicitly identify the185g unit basis; do not turn it into a pair weight. |
+| 11790 Bouchet Manolo /58 | The text explicitly identifies SociétéBouchet, Ladoix-Serrigny, and its publicly presented Manolo pedal. Detachable adjustable platform; shoe sole lateral grooves engage guides; lever locks with adjustable retention; broad contact without straps. New makerBouchet, Pedals14/category registration, one pedal row with NULL years and NULL group. No dimensions/weight/pedal thread invented. |
+
+Applied after explicit user approval: source **470**, maker **724** and pedal
+**11790**. Source `Miroir du Cyclisme, Cologne component report (attributed 1984; pp.58-60)`,
+source_type **article** (schema permits non-enum source types), countryNULL.
+This is contemporary press evidence, not a manufacturer catalogue or verified
+1984 issue. Description/source_ref updates preserve titles, search_text and
+years of both existing rows; former sources are367 for635 and163 for1098.
+New title/search text `Bouchet Manolo`, UUID
+`119c8195-557b-4005-b9c9-206942036ebd`. Search text comes from the maintained helper.
+
+Exact applied descriptions:
+
+- **635**: `Synchro heat-treated alloy side-pull; 38-47mm, 90g/caliper, hard anthracite anodising. Polyurethane cover; hollow axle with anti-friction coating/front adjustment socket. Regular/aero levers; Jeannie Longo. NOS pair with pads/hardware reportedly 204g.`
+- **1098**: `Knee-lever centre-pull; integral hanger, static quick release, semi-auto adjuster. Black-anodised arms, wheel guides and rubber cover; 41-53mm, approx.185g. Standard/recessed fixing; black-anodised 188-2 gum-hood lever, universal clamp.`
+- **Bouchet Manolo**: `Detachable, multi-direction adjustable platform; shoe engages two guides via lateral sole grooves. Lever-operated lock with adjustable retention, broad sole contact and no toe straps; for road, track and touring.`
+
+Old descriptions for restoration/reference:
+
+- **635**, oldsource367: `Top Line synchronized side-pull; heat-treated light alloy, 38-47mm reach, hard anthracite anodising. 90g per caliper; reported NOS pair with pads and mounting hardware 204g. Regular or aero levers; used by Jeannie Longo.`
+- **1098**, oldsource163: `Weinmann AG Delta 531 Pro, Switzerland. Delta brake (knee-lever actuated, integral cable hanger with static QR and semi-automatic adjuster) with black anodized arms, wheel guides and gum-hood lever 188-2 (black anodized), universal clamp`
+
+### Identity limits and unchanged items
+
+- Before loading, no Bouchet/Manolo maker or component matched by name/title/description.
+  A secondary modern history mentions a possible design lineage through Adidas
+  Système3 and EddyMerckx Podio. That is not an exact component/production
+  crosswalk: preserve3657 (Adidas,1988) and3734 (Podio,1994,365g measured) without
+  aliasing, merging or assigning the Manolo name. The period source independently
+  names Manolo under Bouchet; no assumed introduction year is stored.
+- HuretNewSuccess short/long-cage,Duopar,Pilot,Rival/Rivallong andRider prose
+  identifies group offerings, not every existing code/generation. Pilot's
+  self-centring rollers/special lever are already recorded4408/8492. No generic
+  “double front” wording settles the unresolved Rider front, no Rival image is
+  automatically the later ARIS/7000 mechanism, and no “new” caption widens dates.
+- Campagnolo's illustrated Record ensemble lacks individual component codes;
+  its five unnamed rim offerings give a combined size/weight range, not enough
+  for individual row updates. No blanketC-Record group/date rewrite.
+- Look's pictured first safety pedal has white aluminium body, ball/needle
+  bearings,275g,Delrin cleat and adjustable release, but no PP model number or
+  explicit weight basis. Do not attach275g to PP65/PP75 or change their years
+  from this identification alone; preserve3788/3790.
+- I.M.B.'s two-part rear hub is described functionally but without a uniquely
+  established complete model/configuration. Keep it as evidence, not a new
+  generic maker/model placeholder. DealDrive's16-ratio mechanism does not map
+  cleanly to an existing complete component category. Continental belt-drive
+  and Swingbike are complete-bike/concept coverage; VK foot protectors have no
+  category. These are decisions, not automatic source-hunt TODOs.
+
+Validation: the10-statement transaction inserted one article source, one
+maker, one Pedals category-brand registration and one pedal, and updated exactly
+the descriptions/source_ref of635 and1098. Readback matched every source/maker/
+pedal field and both approved updates against the snapshot; titles, UUIDs,
+search text and years of the existing brakes are unchanged. New pedal category14,
+NULL group/years, maker724 and source470 are correct. Adidas3657 and Podio3734
+remain byte-for-byte unchanged. The category-picker join returns Bouchet once
+for Pedals. Description lengths251/236/212, all within255. The second complete
+SQL run affected **zero rows** across all tables.
+
+Fresh read-only generator comparison with the new row **and new maker name**
+across108 CSVs /23,380 specs: **zero mapping changes**. No bike specs link to
+635/1098/3657/3734/11790; no speculative maker-only links were introduced.
+Post-load Bouchet exact and near-duplicate reports both returned zero candidates.
+No merges/deletes, date moves, CSV or generator/code changes were made.
+
+Temporary SQL, inventory, plan/baseline/verification snapshots and helpers in
+`/tmp/cologne-report-reconciliation-20261119/` were removed after readback and
+the clean rerun. The source evidence, old/new descriptions, affected IDs and
+new UUID above preserve the result. Requested original scans and bound PDF
+remain under `/tmp/online-source-triage-20261119/`.
+
 ## Waiting evidence triage — 2026-11-18 (read-only)
 
 **Superseded for Nuovo Tipo by the [visual reconciliation](campagnolo.md#bikecology-nuovo-tipo-reconciliation--2026-11-18-applied-and-validated):** maker and retailer scans now inspected, existing identities confirmed, p.54 specimen check completed, description enrichment approved, applied and validated.

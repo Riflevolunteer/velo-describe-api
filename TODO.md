@@ -48,11 +48,10 @@ Reopen these when the specified material becomes available; existing ambiguity a
 
 ## Source acquisition
 
-Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md) before searching. Reopen exhausted hunts only for a new source/holder lead.
+Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md) before searching. Reopen exhausted hunts only for a new source/holder lead. Prioritise free, directly retrievable scans; UK archive/contact-only holdings are not actionable for the user.
 
 - Recover specification pages for the English Bianchi road catalogue indexed 1985; Bikalog holds only a five-page introductory/photo fragment. [Edition review](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#bikalog-19851986-backlog-check--2026-11-17).
-- Seek 1979–89 Peugeot/Motobécane spares lists for Maillard, Solida/Nervar and Lightrace; inspect the logged unopened tariffs/show report.
-- Check Ron Kitching/Freewheel holdings at Otley and Warwick MRC for Rigida, Viscount and Brooks; retain the saddlewax Brooks lead.
+- Seek 1979–89 Peugeot/Motobécane spares lists for Maillard, Solida/Nervar and Lightrace; inspect the remaining Peugeot/Helium 1979/1980 tariff pages from the [recovered links](.agents/skills/ingest-component-catalog/references/source-hunts.md#free-online-source-recovered-cologne-component-report--2026-11-19).
 - Check the remaining Nashbar editions/QBP/J&B/Colorado Cyclist leads for 1985–92 distributor evidence. [Hunt record](.agents/skills/ingest-component-catalog/references/source-hunts.md#log).
 
 <a id="sr-sakae-next-work"></a>

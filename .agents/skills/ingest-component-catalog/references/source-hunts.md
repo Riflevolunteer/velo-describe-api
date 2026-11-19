@@ -4,6 +4,136 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ## Log
 
+### Free online source recovered: Cologne component report — 2026-11-19
+
+Subsequently [reconciled, applied and validated](known-catalogs/cross-catalog-notes.md#cologne-press-report-reconciliation--applied-2026-11-19): source470, two description enrichments and Bouchet Manolo11790/maker724; existing dates and all bike mappings unchanged. Acquisition-only status below records the earlier recovery stage.
+
+User constraint: UK archive visits/contact-only holdings are not achievable;
+prioritise freely retrievable online scans. The Warwick/Otley acquisition
+recommendation below is withdrawn as an active next step. No contact or payment
+was made. The exact holdings remain reference evidence for a future public scan.
+
+Followed the recorded **unopened** Velo Vintage à Gogo lead rather than repeating
+an exhausted hunt. [Thread12991](https://www.velovintageagogo.com/t12991-salon-du-cycle-cologne-1984-campaclbhuret-etc)
+now supplies **three readable, directly downloadable original scans**, printed
+pp.58–60. This supersedes the earlier “images missing/not opened” status. Poster
+cyfac30 (23October2019) identifies the source as **Miroir du Cyclisme1984**.
+The images do not show an issue number, cover or dated imprint: preserve1984
+as the poster's attribution, not an independently verified publication date.
+The text describes the Cologne show and cites IFMA1982 as preceding prototypes;
+that does not by itself establish the exact issue/date.
+
+| Printed page / bound PDF page | Original image | Readable contents |
+| --- | --- | --- |
+| 58 /1 | https://i.servimg.com/u/f74/18/87/10/01/numzor45.jpg | CLB Space Line launch text, patented synchronization/hollow axle, polyurethane cover, hard slate anodising,90g caliper and38–47mm; Weinmann Delta531Pro centre-pull,41–53mm,about185g, standard/recessed fixing; Bouchet Manolo pedal mechanism; VK foot protectors. |
+| 59 /2 | https://i.servimg.com/u/f74/18/87/10/01/numzor43.jpg | Huret New-Success and long-cage group descriptions and Rival long-cage group photograph; IMB two-part hub, Continental belt-drive prototype and Swingbike coverage. |
+| 60 /3 | https://i.servimg.com/u/f74/18/87/10/01/numzor44.jpg | Huret Duopar/Pilot/Rival/Rider continuation; Campagnolo new Record ensemble and five rim models,700C20/22mm,275–330g; Look first safety pedal description, ball/needle bearings, aluminium/white epoxy,275g; DealDrive mechanism. |
+
+These are contemporary press-report scans, **not a recovered manufacturer
+catalogue**, and do not replace coded maker sheets. They provide a concrete
+online source to reconcile, particularly SpaceLine635 and Delta531Pro, but no
+component identity/date change is inferred merely from a “new” caption or a
+family resemblance. First compare against existing sources and confirm the
+magazine issue/date before proposing any later year_from move. No DB queries,
+source registration, SQL, CSV or generator edits in this recovery.
+
+Retained originals:
+`/tmp/online-source-triage-20261119/cologne1.jpg`, `cologne2.jpg`, `cologne3.jpg`.
+Retained bound deliverable:
+`/tmp/online-source-triage-20261119/cologne-1984-component-report.pdf` (three
+pages, ordered58/59/60). All three originals were opened and read; the bound
+PDF was validated with pdfinfo. HTML downloads were discarded after recording
+URLs and attribution here. Retain scans/PDF for the pending reconciliation.
+
+Also resolved the current canonical URLs and original image links for1979/1980
+Peugeot/Helium tariffs:
+`https://www.velovintageagogo.com/t29374-` and `/t29375-`; four originals each
+at `https://i.servimg.com/u/f21/19/39/72/05/img_2284.jpg` through`img_2291.jpg`.
+Only forumHTML/image inventory was checked, **not all eight scanned pages**;
+these remain tariff/colour-list leads, not established component specifications.
+Fresh Nashbar/Freewheel public-PDF searches produced no additional downloadable
+component catalogue; do not substitute the referenced1991/92 clothing patent
+citations or Nashbar house-bike history for a recovered component source.
+
+### Kitching and Freewheel holdings verified — 2026-11-19 (acquisition only)
+
+**User decision, 2026-11-19:** UK archive/contact-only acquisition is not available to the user. The physical holdings and unsent request below are reference evidence, not an actionable recommendation. Do not ask the user to visit or obtain these copies; revisit only if a directly retrievable online scan appears. This supersedes the proposed Warwick request and its TODO has been removed.
+
+Reopened the specifically unread Otley inventory and Warwick catalogue records,
+not the exhausted forum/image searches. **No component catalogue scan acquired,
+outreach sent, purchase made or DB data changed.** Read-only live gap review
+confirmed named Viscount2285/2296/Terra, RigidaChrolux/Jade/Saphir and BrooksB15/
+CR3 targets; generic maker/material/house prose is not automatically resolvable.
+
+**Warwick now supplies verified archive references, not just forum testimony:**
+
+| Record | Public/legacy reference | Confirmed holdings |
+| --- | --- | --- |
+| [Freewheel NCM/1/1402](https://mrc-catalogue.warwick.ac.uk/records/NCM/1/1402) | MSS.328/M/1396 | Spring1980, Spring1981, annual1982/1983,1984, annual1985,1986/1987/1988 and no.12Summer1990. |
+| [Distributors F NCA/4/4/2/4](https://mrc-catalogue.warwick.ac.uk/records/NCA/4/4/2/4) | MSS.328/N2/2/4/1-2 | Part1: Spring1979 and annual1982–88. Part2:1989–90,1990,1993 and later2002/2005 volumes; also unrelatedFrey1982?. |
+| [Kitching NCM/1/1403](https://mrc-catalogue.warwick.ac.uk/records/NCM/1/1403) | MSS.328/M/1397 | c.1950s accessory list; c.1970 handbook;1971 price/spares/stockist list;1981 Cycleparts International Handbook;1984 clothing and accessories/tubulars/sundries catalogues. |
+
+All three records say access **Open**, but return `digitisation:null`,
+`altDigitisation:null`, empty `publicAttachments` and no finding-aid downloads.
+This establishes physical catalogue holdings, **not accessible public scans**.
+Kitching's date summary saysc.1950s–1983 while its description explicitly lists
+1984 booklets; retain that metadata discrepancy. Its1984 accessories/tubulars
+book may duplicate held source261, so prioritise the1981 handbook and1971 list
+rather than request another1984 copy blindly.
+
+The previously blocked Warwick pages are readable via their own public API:
+`https://mrc-catalogue.warwick.ac.uk/api/catalogues/mrc/public/descriptions?locatorRef=NCM%2F1%2F1402`
+(replace locatorRef with encoded target). Public Freewheel search:
+`/api/catalogues/mrc/search/public/records/default/all?q=Freewheel&limit=30`.
+Endpoints were identified in the page's public client, not guessed private APIs.
+This supersedes earlier notes that record1403 exposes only an unread session shell.
+
+**Otley:** [library inventory](https://www.otleycycleclub.co.uk/images/cms/sI_Nm4Di3tLc.pdf)
+has a working text layer; all7 pages were read with pdftotext. This supersedes
+the earlier image-only/un-OCR'd limitation. It explicitly locates1970
+EverythingCycling at entrance cabinet5/shelves2–4, and early-kit-catalogue/
+cycle-trading folders in cabinet6/shelves2–3. It does not list individual1980s
+catalogue years or Freewheel. The [club's library page](https://www.otleycycleclub.co.uk/groups/club/ron-kitching-library-at-clubhouse-1687364496)
+separately confirms late1980s Kitching display copies and directs enquiries to
+JohnBarnett/TrevorHowe through the club. Do not turn that broad statement into
+confirmed1985–89 edition holdings.
+
+The old broken ClassicLightweights article has a working
+[canonical URL](https://www.classiclightweights.co.uk/restoration/ron-kitching-catalogues-everything-cycling-aids-to-happy-cycling/).
+SteveGriffith's2020 account describes1983 as the last full catalogue, followed
+by a mail-order phase. This is secondary history, not proof later booklets did
+not exist. Reframe the old1984–89 full-catalogue target accordingly. Exact-edition
+Freewheel1985/1987 public-PDF searches found no new downloadable component scans;
+no old403 forum thread or saddlewax thumbnail hunt was repeated.
+
+**Best next acquisition:** request Freewheel1985–88 rim/saddle pages first,
+using the two exact Warwick references above; extend to1989–90 if necessary.
+These are confirmed holdings but their component contents have not been seen.
+Kitching1971/1981 are secondary targets for earlier Brooks evidence. The official
+[MRC contact page/news](https://warwick.ac.uk/services/library/mrc/news/?newsItem=8ac672c49e390bec019e4b1b12ef7096)
+confirms `archives@warwick.ac.uk` (checked2026-11-19).
+
+#### Ready-to-send request — not sent
+
+Subject: Freewheel equipment guides and Ron Kitching component pages
+
+Hello, I am researching vintage bicycle component identification. Your records
+NCM/1/1402 (MSS.328/M/1396) and NCA/4/4/2/4
+(MSS.328/N2/2/4/1-2) list Freewheel guides for1985–88 and later1989–90 volumes.
+Could you confirm whether digital copies already exist, or whether you can
+supply images of their contents/index and the rim and saddle pages? I am
+particularly looking for Rigida Chrolux/Jade/Saphir rims and Viscount2285/2296/
+Terra saddles. Covers/imprints would help verify the exact editions.
+
+As a secondary enquiry, NCM/1/1403 (MSS.328/M/1397) lists the1971 Kitching
+spares/price list and1981 Cycleparts International Handbook. Do these have Brooks
+saddle pages, particularly B15 orCR3? Please advise availability, page references
+and any copying charges before making paid copies. Thank you.
+
+The exact product names above are search targets, not a claim they appear in
+those books. No fees approved. Task downloads/clientHTML/JSON/text were removed
+after recording URLs, references, edition lists and retrieval method here.
+
 ### Named brake and Sedis follow-up — 2026-11-19 (read-only)
 
 - **CLB:** all six unique original photos in eBay 305827471354 inspected,

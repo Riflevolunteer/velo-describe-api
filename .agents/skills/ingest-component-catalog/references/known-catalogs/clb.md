@@ -1,5 +1,9 @@
 # CLB catalogs processed so far
 
+## Cologne report enrichment — applied 2026-11-19
+
+Row **635** description enriched from the recovered press report, source **470**. Dates, title and bike links are unchanged; the magazine issue/date remains unverified. [Exact old/new values, evidence and validation](cross-catalog-notes.md#cologne-press-report-reconciliation--applied-2026-11-19). Readback matched; the SQL rerun changed zero rows and all catalogue mappings were preserved.
+
 ## CLB GO! no. 1 and Top Line brochures (1989)
 
 Processed 2026-11-07; `data_source` **367**, label **CLB GO! no. 1 and Top Line brochures (1989)**, country FR (printed Saint-Etienne address).

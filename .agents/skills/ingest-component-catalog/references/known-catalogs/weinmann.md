@@ -1,5 +1,9 @@
 # Weinmann catalogs processed so far
 
+## Cologne report enrichment — applied 2026-11-19
+
+Row **1098** description enriched from the recovered press report, source **470**. Dates, title and bike links are unchanged; the magazine issue/date remains unverified. [Exact old/new values, evidence and validation](cross-catalog-notes.md#cologne-press-report-reconciliation--applied-2026-11-19). Readback matched; the SQL rerun changed zero rows and all catalogue mappings were preserved.
+
 ## Weinmann 50th anniversary catalogue "Bicycle Components and Ski-Boots" — May 1983 (leblogduvelovintage.art.blog, catalogue-weinmann.pdf, 27 pp)
 
 - `data_source` 85. Source:
