@@ -11,7 +11,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Bike catalogues
 
-- Prepare the 1988 MBK bike ingest from the [recovered dated catalogue photographs and specification tables](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#19871990-catalogue-recovery--2026-11-19): verify individual cells, model scope and market before SQL.
 - Verify the date of the MBK Course brochure attributed to 1991, then prepare its road-bike ingest from the [inspected scans](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#mbk-bicycle-catalogue-backlog--source-review-2026-11-19).
 - Recover remaining Motobecane/MBK adult-bike specification pages for the 1986/87 MBK and 1987/88 Motobecane brochures, other leaves of the 1989 programme, and a dated 1990 edition using the [specific recovered sources/holder leads](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#19871990-catalogue-recovery--2026-11-19); also seek the still-missing 1970–72 edition using the [earlier gap leads](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#19701990-gap-source-leads--2026-11-18).
 - Decide Panasonic brand treatment, then ingest the 1985–89 US bikes from [recorded sources](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md).

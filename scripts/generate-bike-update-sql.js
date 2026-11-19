@@ -111,6 +111,11 @@ const CATALOGUE_EDITIONS = new Map([
     country: null,
     yearTo: '1987', // Printed two-year edition; preserve both years on new bike rows.
   }],
+  ['1988_mbk_spec.csv', {
+    label: 'MBK Catalogue 1988, VTT Course et Loisir (FR)',
+    citation: '1988_mbk_spec.csv; https://www.ebay.fr/itm/188879659886 photos1-9; cover Catalogue1988, back Edition01/88 MBK Industrie Saint-Quentin; specs photo9 (road), photo2 (MTB); portraits photos3-7.',
+    country: 'FR',
+  }],
   ['1986_motobecane_de_spec.csv', {
     label: '1986 Motobecane (DE) catalogue',
     citation: '1986_motobecane_de_spec.csv; https://velopedia.online/veloTable record1352, inventory2332 (old1507); cover Programme86 p.1; Deutsche Motobecane Bielefeld p.16; specifications/portraits pp.2-15. Public previews checked against printed panels.',
@@ -608,6 +613,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'huret rider indexed': [{ from: 1988, to: 1988, id: 8962 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. MT30/MT30D 28-38-48 triples: AV 62.1 T Rider.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":2314}], // Standard Triomphe double; LX is the triple set. German 1986 pp.10-11.
     "simplex sja222; braze on (portrait)": [{"bike":"C551","from":1985,"to":1985,"id":2575}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
@@ -654,7 +660,7 @@ const COMPONENT_OVERRIDES = {
     'shimano new deore': [{ bike: 'Sky Runner', from: 1987, to: 1987, id: 2496 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new deore xt': [{ bike: 'Ridge Runner', from: 1987, to: 1987, id: 2499 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano z 206': [{ bike: '512', from: 1987, to: 1987, id: 2544 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
-    'shimano new 105': [{ bike: '712', from: 1987, to: 1987, id: 2462 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
+    'shimano new 105': [{ bike: '712', from: 1987, to: 1987, id: 2462 }, { from: 1988, to: 1988, id: 2462 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new 600ex': [{ bike: 'Carbon Tech 1000', from: 1987, to: 1987, id: 2481 }, { bike: 'Omnium', from: 1987, to: 1987, id: 2481 }, { bike: '912', from: 1987, to: 1987, id: 2481 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new dura ace fd brazed on': [{ bike: 'Carbon Tech 5000', from: 1987, to: 1987, id: 2510 }, { bike: 'Carbon Tech 3000', from: 1987, to: 1987, id: 2510 }, { bike: 'Aero Miyata', from: 1987, to: 1987, id: 2510 }, { bike: 'Team Miyata', from: 1987, to: 1987, id: 2510 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour trimec': [{ bike: '110', from: 1983, to: 1983, id: 2654 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
@@ -832,7 +838,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600ex': [{"bike":"Grand Record","from":1981,"to":1981,"id":2480},{ bike: '912', from: 1983, to: 1983, id: 2480 }, { bike: '912', from: 1982, to: 1982, id: 2480 }, { bike: '912', from: 1980, to: 1980, id: 2480 }, { bike: '912', from: 1979, to: 1979, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // Road Ace / Record Ace: FD-6207 600EX (1984-87)
     'sachs huret rider 2': [{ from: 1989, to: 1989, id: null }], // 1989 Peugeot Lautaret / Lavandou: 42x52 doubles; 8962 is the triple AV 62.1 T and no double Rider front row exists (unlinked 2026-11-15)
     'sachs huret rider': [{ bike: "P 10 S Z 'Avoriaz'", from: 1989, to: 1989, id: null }, { id: 8962 }], // 1989 Peugeot Fun Star / US Express (triples): AV 62.1 T Rider / Duopar; Avoriaz is a 42x52 double (unlinked 2026-11-15)
-    'huret rider': [{ bike: "P 15C W 'Manosque'", from: 1987, to: 1987, id: null }, { id: 8962 }], // 1986-88 Peugeot / Raleigh Teton triples: as above; 1987 Manosque is a 42x52 double (unlinked 2026-11-15)
+    'huret rider': [{ bike: 'C354 Super Mirage', from: 1988, to: 1988, id: null }, { bike: "P 15C W 'Manosque'", from: 1987, to: 1987, id: null }, { id: 8962 }], // 1986-88 Peugeot / Raleigh Teton triples: as above; 1987 Manosque is a 42x52 double (unlinked 2026-11-15)
     'shimano 600 ex': [{"bike":"Grand Record","from":1979,"to":1979,"id":2480}, { from: 1981, to: 1981, id: 2480 }, { from: 1987, to: 1987, id: 2481 }], // 1981 Criterium: EC-630 / FD-6200 Arabesque (1978-84; FD-6207 is 1984-87) // Road Ace: FD-6207 600EX (1984-87)
     'sun tour spirt': 2601, // 1981 Royale: SunTour 3700 / FD-1000 Spirt (1973-85)
     'sun tour spirt pub': 2601, // 1981 Record: as Royale
@@ -1004,6 +1010,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    'huret rider indexed': [{ from: 1988, to: 1988, id: 8958 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. AR 46.1 T Rider, as 'huret rider'.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":null}],
     "simplex sr610 sp": [{"bike":"C551","from":1985,"to":1985,"id":null}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
@@ -1059,7 +1066,7 @@ const COMPONENT_OVERRIDES = {
     'shimano new deore': [{ bike: 'Sky Runner', from: 1987, to: 1987, id: 4487 }, { bike: '615 GT', from: 1987, to: 1987, id: 4487 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new deore xt': [{ bike: 'Ridge Runner', from: 1987, to: 1987, id: 4491 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano l 523 sis': [{ bike: '312', from: 1987, to: 1987, id: 4518 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
-    'shimano new 105': [{ bike: '712', from: 1987, to: 1987, id: 4449 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
+    'shimano new 105': [{ bike: '712', from: 1987, to: 1987, id: 4449 }, { from: 1988, to: 1988, id: 4449 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new 600ex': [{ bike: 'Carbon Tech 1000', from: 1987, to: 1987, id: 4471 }, { bike: 'Omnium', from: 1987, to: 1987, id: 4471 }, { bike: '912', from: 1987, to: 1987, id: 4471 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour trimec': [{ bike: '110', from: 1983, to: 1983, id: 4771 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour cyclone m2gt': [{ bike: '1000', from: 1983, to: 1983, id: 4743 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
@@ -1504,6 +1511,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    'shimano new 105': [{ from: 1988, to: 1988, id: 3524 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. HB-1050 freewheel hubs (table lists a 6-speed freewheel).
+    'aris new success': [{ from: 1988, to: 1988, id: 3509 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Sachs-Maillard New Success, as the 1987/1989 Peugeot Savoie.
     'sealed helico sport': [{ bike: 'JO392 Triathlon Olympique', from: 1986, to: 1987, id: null }], // MBK 1986/87 spread2: sealing alone does not establish 3387's QR/36-hole/5-6-speed version.
     'campagnolo triumph front and rear': [{ bike: 'C662E Super Record', from: 1986, to: 1986, id: 3277 }], // German 1986 pp.10-11: named Triomphe, pictured low flanges; not 921/000 high flange.
     "front atom; rear helicosport": [{"bike":"D21","from":1985,"to":1985,"id":3387},{"bike":"DM21","from":1985,"to":1985,"id":3387},{"bike":"CT2","from":1985,"to":1985,"id":3387},{"bike":"CTM2","from":1985,"to":1985,"id":3387}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
@@ -1614,7 +1623,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105sc (1055)': 3527, // FH-1055-HG / HB-1055-F
     'shimano deore dx': 3542, // FH-M650 / HB-M650-F
     'shimano deore lx': 3544, // FH-M550
-    'shimano deore xt': [{ from: 1994, to: 1994, id: 3552 }, { id: 3551 }], // FH-M732 / HB-M730-F
+    'shimano deore xt': [{ bike: 'MT50 Tracker Hi-Tech', from: 1988, to: 1988, id: null }, { from: 1994, to: 1994, id: 3552 }, { id: 3551 }], // FH-M732 / HB-M730-F
     // 1978 Falcon San Remo Equipe 76: "Campagnolo L/F Q.R. Hubs" = Record high flange 1035.
     'campagnolo large flange quick release': [{ from: 1960, to: 1988, id: 3260 }],
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
@@ -1657,7 +1666,7 @@ const COMPONENT_OVERRIDES = {
     'sun tour superbe small flange qr 36 hole': 8262, // 1980 Raleigh: SunTour RH-1000, Superbe (small flange)
     'shimano 6400': [{ from: 1987, to: 1991, id: 3534 }], // 1987 Peugeot (FR) Puymorens: FH-6400 / HB-6400-F, 600 Ultegra
     'shimano 5000': 3580, // 1987 Peugeot (FR) Santé: FH-5000 / HB-5000
-    'shimano new 600 ex': 7551, // 1986 Peugeot (FR) table PG 10 SH: HB-6207F / HB-6207R (freewheel hubs; Helicomatic block)
+    'shimano new 600 ex': [{ bike: 'C656 Super Record II', from: 1988, to: 1988, id: null }, { bike: 'C456 Team Champion', from: 1988, to: 1988, id: null }, { id: 7551 }], // MBK 1988: New 600 EX generation (6207 / 6208 / 6400) unresolved. // 1986 Peugeot (FR) table PG 10 SH: HB-6207F / HB-6207R (freewheel hubs; Helicomatic block)
     'shimano new 600 ex; quick release': 7551, // 1986 Peugeot (FR) table PX 10 SH
     // 1982 Battaglin: Gipiemme Pista Special hub = Special Pista (1985 row; the 1982 sheet is earlier).
     'gipiemme pista special': [{ from: 1982, to: 1988, id: 3351 }],
@@ -1812,7 +1821,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105': [{ to: 1989, id: 3524 }, { from: 1990, to: 1992, id: 3527 }, { from: 1993, id: 7761 }], // HB-1050 / FH-1055-HG 105SC / FH-1056-HG 8-speed (1993 Bianchi Virata)
     'ofmega competizione pista': 3445, // Ofmega Super Competizione Track (high flange)
     // 1993 Bianchi (spoke counts stripped from the CSV).
-    'campagnolo chorus': [{ from: 1987, to: 1987, id: 3249 }, { id: 3250 }], // Campagnolo FH-00CH / HB-00CH, Chorus; 1987 Peugeot (FR) Chorus: 722/101 (1987-91)
+    'campagnolo chorus': [{ bike: 'C910 Kevlight', from: 1988, to: 1988, id: 3249 }, { from: 1987, to: 1987, id: 3249 }, { id: 3250 }], // Campagnolo FH-00CH / HB-00CH, Chorus; 1987 Peugeot (FR) Chorus: 722/101 (1987-91)
     'campagnolo veloce': 3279, // Campagnolo HB-00VL / HF-00VL, Veloce
     'shimano ultegra': [{ to: 1991, id: 3534 }, { from: 1992, id: 3535 }], // FH-6400-6/7 / FH-6402-HG 8-speed, 600 Ultegra
     'shimano rx100': 3579, // Shimano FH-A550 / HB-A550-F, RX100
@@ -2454,7 +2463,7 @@ const COMPONENT_OVERRIDES = {
     'tange nl': [{ from: 1980, to: 2000, id: 3152 }],
     'shimano 600 alloy': [{ from: 1983, to: 1987, id: 3090 }], // 1986 Raleigh Prestige / Competition; as the bare 'shimano 600' headset range (HP-6207 600EX)
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
-    'shimano new 105': [{ from: 1987, to: 1987, id: 3083 }], // Competition / Triathlon headset: HP-1050 105
+    'shimano new 105': [{ from: 1987, to: 1987, id: 3083 }, { from: 1988, to: 1988, id: 3083 }], // Competition / Triathlon headset: HP-1050 105
     'shimano 600ex light alloy sealed mechanism': [{ from: 1987, to: 1987, id: 3090 }], // Road Ace: HP-6207 600EX (1983-87)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano deore xt': [{ from: 1988, to: 1989, id: 7227 }, { from: 1990, to: 1993, id: 7579 }], // 1989 Peugeot (NL) Europe Express: HP-M730; HP-M735 / M737
@@ -2522,6 +2531,10 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'shimano new 105 42 52': [{ from: 1988, to: 1988, id: 1778 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. FC-1050, 105 (1986-89).
+    'shimano new 105 biopace 42 52': [{ from: 1988, to: 1988, id: 1778 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Le Champion: FC-1050 Biopace; no separate Biopace FC-1050 row.
+    'nervar 3023 30 40 50': [{ from: 1988, to: 1988, id: 10983 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Mirage 18: Nervar 3023 triple.
+    'shimano deore xt 28 38 48': [{ from: 1988, to: 1988, id: 1810 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Tracker: FC-M730 triple.
     "shimano 105 new double 42 x 52t": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: 1778 }], // German 1986 p.13 New 105; Shimano Aug 1986 scan 17: FC-1050, 42/52T option.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":1515}],
@@ -2998,6 +3011,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    'mundialita': [{ from: 1988, to: 1988, id: 5497 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Selle Italia Mundialita (1985-90); 5436 is the Bianchi celeste version.
     'sport saddle': [{ bike: 'EXD102 Super-Tour', from: 1986, to: 1986, id: null }], // Generic translation of Sportsattel; no maker/model identity.
     "italia turbo": [{"bike":"Spécial Pro","from":1985,"to":1985,"id":null}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
     "turbo white skin top": [{"bike":"Team Champion","from":1983,"to":1983,"id":null},{"bike":"Team Champion","from":1982,"to":1982,"id":null}], // 1982 Motobecane US, pp.14-15; brand notes.
@@ -3965,6 +3979,8 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    'shimano new 105': [{ from: 1988, to: 1988, id: 3953 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. PD-1050, 105.
+    'maillard cx 700 d': [{ from: 1988, to: 1988, id: 10989 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Pro Racer table cell (portrait prose says Mavic; table kept).
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":3719}],
     "maillard cx 650 with toe clips and straps": [{"bike":"C502 Le Champion","from":1986,"to":1986,"id":3829}],
@@ -4594,7 +4610,7 @@ const COMPONENT_OVERRIDES = {
     'sedisport silver': [{ from: 1980, id: 1402 }], // 1986 Peugeot (US) table: colour variant of 'sedisport', as 'sedisport black'
     // Bare "Sedisport": two rows now exist (8765 Sedis Sedisport 1979, 1402 Sedisport Delta 1980), so the matcher sees an ambiguity. 1402 is the pick already in the DB for
     // the 1984 Raleigh and 1987 Bianchi (Delta replaced the plain Sedisport from 1980), so 1980+ stays on it; earlier years keep the matcher result.
-    'sedisport': [{"bike":"EC122 Nomade","from":1986,"to":1986,"id":8765},{"bike":"C352E Super-Mirage","from":1986,"to":1986,"id":8765},{"bike":"C441","from":1985,"to":1985,"id":8765},{"bike":"C331","from":1985,"to":1985,"id":8765},{"bike":"C221","from":1985,"to":1985,"id":8765},{"bike":"Team Champion","from":1983,"to":1983,"id":8765},{"bike":"Le Champion","from":1983,"to":1983,"id":8765},{"bike":"Grand Record","from":1983,"to":1983,"id":8765},{"bike":"Prolight","from":1983,"to":1983,"id":8765},{"bike":"Grand Touring","from":1983,"to":1983,"id":8765},{"bike":"Grand Jubilee","from":1983,"to":1983,"id":8765},{"bike":"Super Mirage","from":1983,"to":1983,"id":8765},{"bike":"Mirage","from":1983,"to":1983,"id":8765},{"bike":"Jubilee Sport","from":1983,"to":1983,"id":8765},{"bike":"Mirage Sport","from":1983,"to":1983,"id":8765},{"bike":"Nomade","from":1983,"to":1983,"id":8765},{"bike":"Super Mirage","from":1982,"to":1982,"id":8765},{"bike":"Grand Touring","from":1982,"to":1982,"id":8765},{"bike":"Grand Jubilee","from":1982,"to":1982,"id":8765},{"bike":"Mirage Sport","from":1982,"to":1982,"id":8765},{"bike":"Grand Record","from":1982,"to":1982,"id":8765},{"bike":"Le Champion","from":1982,"to":1982,"id":8765},{"bike":"Prolight","from":1982,"to":1982,"id":8765},{"bike":"Team Champion","from":1982,"to":1982,"id":8765},{"bike":"Grand Touring","from":1981,"to":1981,"id":8765},{"bike":"Grand Jubile","from":1981,"to":1981,"id":8765},{"bike":"Grand Record","from":1981,"to":1981,"id":8765},{"bike":"Le Champion","from":1981,"to":1981,"id":8765},{"bike":"Prolight","from":1981,"to":1981,"id":8765},{"bike":"Team Champion","from":1981,"to":1981,"id":8765},{ from: 1980, id: 1402 }],
+    'sedisport': [{ bike: 'C910 Kevlight', from: 1988, to: 1988, id: 8765 }, { bike: 'C658 Pro Racer', from: 1988, to: 1988, id: 8765 }, { bike: 'C354 Super Mirage', from: 1988, to: 1988, id: 8765 }, { bike: 'C234 Mirage 18', from: 1988, to: 1988, id: 8765 }, { bike: 'C234 D Mirage 18', from: 1988, to: 1988, id: 8765 }, { bike: 'C224 Mirage', from: 1988, to: 1988, id: 8765 }, { bike: 'C154 Trainer', from: 1988, to: 1988, id: 8765 }, { bike: 'C154 D Trainer', from: 1988, to: 1988, id: 8765 }, { bike: 'C124 Super Sprint', from: 1988, to: 1988, id: 8765 }, { bike: 'C114 Sprint', from: 1988, to: 1988, id: 8765 }, { bike: 'MGT41 Grand Touring', from: 1988, to: 1988, id: 8765 }, {"bike":"EC122 Nomade","from":1986,"to":1986,"id":8765},{"bike":"C352E Super-Mirage","from":1986,"to":1986,"id":8765},{"bike":"C441","from":1985,"to":1985,"id":8765},{"bike":"C331","from":1985,"to":1985,"id":8765},{"bike":"C221","from":1985,"to":1985,"id":8765},{"bike":"Team Champion","from":1983,"to":1983,"id":8765},{"bike":"Le Champion","from":1983,"to":1983,"id":8765},{"bike":"Grand Record","from":1983,"to":1983,"id":8765},{"bike":"Prolight","from":1983,"to":1983,"id":8765},{"bike":"Grand Touring","from":1983,"to":1983,"id":8765},{"bike":"Grand Jubilee","from":1983,"to":1983,"id":8765},{"bike":"Super Mirage","from":1983,"to":1983,"id":8765},{"bike":"Mirage","from":1983,"to":1983,"id":8765},{"bike":"Jubilee Sport","from":1983,"to":1983,"id":8765},{"bike":"Mirage Sport","from":1983,"to":1983,"id":8765},{"bike":"Nomade","from":1983,"to":1983,"id":8765},{"bike":"Super Mirage","from":1982,"to":1982,"id":8765},{"bike":"Grand Touring","from":1982,"to":1982,"id":8765},{"bike":"Grand Jubilee","from":1982,"to":1982,"id":8765},{"bike":"Mirage Sport","from":1982,"to":1982,"id":8765},{"bike":"Grand Record","from":1982,"to":1982,"id":8765},{"bike":"Le Champion","from":1982,"to":1982,"id":8765},{"bike":"Prolight","from":1982,"to":1982,"id":8765},{"bike":"Team Champion","from":1982,"to":1982,"id":8765},{"bike":"Grand Touring","from":1981,"to":1981,"id":8765},{"bike":"Grand Jubile","from":1981,"to":1981,"id":8765},{"bike":"Grand Record","from":1981,"to":1981,"id":8765},{"bike":"Le Champion","from":1981,"to":1981,"id":8765},{"bike":"Prolight","from":1981,"to":1981,"id":8765},{"bike":"Team Champion","from":1981,"to":1981,"id":8765},{ from: 1980, id: 1402 }],
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano cn 6400 silver': [{ from: 1988, to: 1993, id: 1406 }], // CN-6400
     'shimano cn hg90 silver': [{ from: 1990, to: 1993, id: 7566 }], // CN-HG90
@@ -4717,6 +4733,7 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
+    'maillard 700 sh 7 speeds 13 23': [{ from: 1988, to: 1988, id: 8133 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Pro Racer: 700 SH 7-speed compact (Helicomatic).
     "maillard helicomatic 700sh 6 cogs 13 14 16 18 20 22": [{"bike":"Jubilee Sport","from":1983,"to":1983,"id":8132}], // 1983 Motobecane US Volume2, pp.14-15; brand notes.
     "suntour perfect 5 cogs 14 17 22 27 32": [{"bike":"Interclub","from":1983,"to":1983,"id":2245},{"bike":"Interclub","from":1982,"to":1982,"id":2245}], // 1982 Motobecane US, pp.14-15; brand notes.
     "suntour perfect 6 cogs 14 17 20 23 26 32": [{"bike":"Super Mirage","from":1983,"to":1983,"id":7813},{"bike":"Super Mirage","from":1982,"to":1982,"id":7813}], // 1982 Motobecane US, pp.14-15; brand notes.
@@ -4987,7 +5004,9 @@ const COMPONENT_OVERRIDES = {
     'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
-    'michelin hi lite competition': [{ bike: 'C662CA Super Record', from: 1986, to: 1987, id: 6835 }, { bike: 'JO392 Triathlon Olympique', from: 1986, to: 1987, id: 6835 }], // MBK 1986/87 spread2 names Competition; suppress the 1996 Hi Lite 10530 substring match.
+    'hutchinson hp 22 "u"': [{ from: 1988, to: 1988, id: 10972 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. HP22 profil U, 700C (portraits).
+    'hutchinson hp 22 "u" 700c': [{ from: 1988, to: 1988, id: 10972 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. as above.
+    'michelin hi lite competition': [{ from: 1988, to: 1988, id: 6835 }, { bike: 'C662CA Super Record', from: 1986, to: 1987, id: 6835 }, { bike: 'JO392 Triathlon Olympique', from: 1986, to: 1987, id: 6835 }], // MBK 1986/87 spread2 names Competition; suppress the 1996 Hi Lite 10530 substring match.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "michelin hi lite competition slicks 700 x 23 c": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":6835}],
     "michelin hi lite 700 x 20": [{"bike":"C502 Le Champion","from":1986,"to":1986,"id":null}],
@@ -5134,6 +5153,8 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    'campagnolo omega strada hardox anodised': [{ from: 1988, to: 1988, id: 4957 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Kevlight: Omega 20 / Omega Strada Hardox.
+    'mavic ma2': [{ bike: 'C455 Le Champion', from: 1988, to: 1988, id: 8177 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. portrait: silver-anodised Mavic rims = MA 2 Argent.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "mavic ma 40 black anodised": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":5077}],
     "mavic mod e alloy racing rims": [{"bike":"C502 Le Champion","from":1986,"to":1986,"id":5087}],

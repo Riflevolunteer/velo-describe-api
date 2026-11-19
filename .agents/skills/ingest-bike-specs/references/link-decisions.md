@@ -6,6 +6,32 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## MBK Catalogue 1988 (FR) — applied link review, 2026-11-20
+
+Scope `1988_mbk_spec.csv`, source 482 (applied; held values read back NULL); registry entries in `link-decisions.js`, scoped NULL
+overrides in the generator. Reviewed and deliberately left unlinked:
+
+- **Shimano New 600 EX** (Super Record II C656, Team Champion C456): the printed
+  name does not settle 6207, SIS 6208 or 1988 6400 600 Ultegra (the 1988 Peugeot
+  FR "New 600" without EX is 6400). Applies to headset, brakes, derailleurs,
+  crank, pedals, freewheel, chain and hubs. The 7551 hub override is nulled for
+  these bikes.
+- **Shimano New 105 brakes**: BR-1050-49 or -57 reach is not printed. The other
+  New 105 parts link to the 1050 series.
+- **Huret Rival** front/rear (Super Mirage, Mirage 18, Mirage, Ranger MT40): this
+  is the open Rival 1086-00 / AV 62.1 D / AR 41.1 D / ARIS Rival identity question
+  in TODO. Super Mirage's **Huret Rider** front is a 42-52 double, and 8962 is
+  the triple AV 62.1 T: NULL, as for the 1987 Manosque.
+- **Stronglight 100, 30-40-50** (Grand Touring): 11311 ST100T or 1875 100 LX
+  (the Peugeot 1986-88 triples use 1875). **Huret Duopar Eco**: 4276 or 4400.
+- **Aris Rival / Aris New Success freewheels**: 2211 and 2121 are both bare
+  Sachs-Maillard Aris rows. **3TTT Grand Prix** bars: CGP 2768, Grand Prix 2nd
+  version 2761 or Record Grand Prix 2769.
+- **Wolber Corsa tubulars** (Pro Racer): 6911 is the specific Corsa 80.
+  **Helicosport** hubs: as the 1986/87 JO392 hold. **Shimano Deore XT** brakes:
+  BR-M730 or M731. Hubs: no M730 pair row; 3551 is the 1989 M732. **Shimano 600**
+  MTB headset: generation not printed.
+
 ## MBK Course et Loisir 1986/87 — applied partial ingest, 2026-11-19
 
 - C662CA SuperRecord's maker-only Campagnolo hubs/brakes/seatpost/derailleurs/

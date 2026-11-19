@@ -453,6 +453,111 @@ catalogue gaps. Broad French/English/German searches found no additional full
 pages/dated editions, using these holder leads rather than repeating those
 unproductive search results.
 
+## MBK Catalogue 1988 ingest — applied 2026-11-20
+
+User chose this TODO item, decided scope, market and conflict handling (below) and approved the reviewed SQL with “apply”. **Applied and validated.** Maintained CSV `bike_specs/1988_mbk_spec.csv`
+(gitignored) was transcribed from the retained photographs in
+`bike_specs/sources/motobecane_mbk_1987_1990/1988_mbk/`: road table photo9,
+MTB table photo2 and portraits photos3–7. Cells are stored in English.
+Catalog Page cites the photo and table column; no printed page numbers exist.
+
+**Source/brand/date:** generator edition `1988_mbk_spec.csv`, label **MBK
+Catalogue 1988, VTT Course et Loisir (FR)**, country **FR** (user's call:
+French maker imprint, MBK Industrie Saint-Quentin / Pantin, and Réseau M dealer
+branding; no prices). Cover prints Catalogue 1988; back cover prints Edition
+01/88. Brand MBK (14); single year 1988.
+
+**Scope: 22 bikes.** The 1988 road table/portraits give 17: C910 Kevlight, C757
+Prolight, C658 Pro Racer, C656 Super Record II, C659 Super Record, C456 Team
+Champion, C455 Le Champion (table wording; the portrait says Champion), C355T
+Triathlon, C354 Super Mirage, C234 / C234 D Mirage 18, C224 Mirage, C154 / C154
+D Trainer, C124 Super Sprint, C114 Sprint and MGT41 Grand Touring. The MTB table
+gives MT50 Tracker Hi-Tech, MT40 Ranger Hi-Tech, MT30 / MT30D Aventure and MT10
+Baroudeur. Ladies' D versions are separate rows, using the table's starred
+ladies' sizes. **Excluded:** Racer 55C25 (junior, 7–11), Trappeur 24/20
+(junior), Road R40/R40D (Tourisme, Helvetia raised bars, no drop-bar men's
+version), Romantic (city). Super Sport D30, Grand Sport D20 and D10 (1/2
+Course) are also excluded, by the user's choice: the table gives no bar bend
+and there are no portraits.
+
+**Transcription limits:**
+
+- Frame-height digits for Pro Racer, Super Record II/Super Record, Team
+  Champion and Le Champion are not resolvable in the photo, so Frame Size is
+  blank for them. Kevlight and Prolight use the portrait counts and the
+  legible table sizes.
+- Where the table and portrait conflict, the table is stored (user's call):
+  - Pro Racer: Wolber Corsa tubulars and Maillard CX 700 D pedals; the portrait
+    says Clément tubulars and Mavic pedals and rims.
+  - Kevlight tyres: the table's third word is unreadable, stored as Clément
+    tubulars.
+  - Kevlight and Pro Racer chain: the second word ("NK"?) is unclear; only
+    Sedisport is stored.
+- "Tubulaires Dural" rims sit with clincher Hutchinson HP22 tyres, so they are
+  stored as "printed tubulaires", not as tubular rims.
+- Grand Touring seatpost is "Dural SRE 105" as printed.
+- The derailleur row prints AV over AR, so two-line cells are split
+  front/rear. Single-name cells fill both.
+
+**Prepared links: 104 of 390 specs.** These were added as generator overrides
+scoped to 1988 (or to named bikes):
+
+- New 105 = the 1050 series: FD 2462, RD 4449, headset 3083, crank 1778
+  (Biopace included), pedals 3953, hubs HB-1050 3524. This follows the 1987
+  Miyata and 1988 Peugeot FR readings.
+- Plain Sedisport 8765, not Delta 1402, as in 1986/87.
+- Chorus hubs 3249 (722/101), not 1990 3250. Omega Strada Hardox 4957.
+- Le Champion MA2 8177 Argent (the portrait says silver-anodised).
+- Hi-Lite Competition 6835. Hutchinson HP 22 "U" 10972. Mundialita 5497.
+- Maillard 700 SH 7-speed 8133. CX 700 D 10989.
+- Nervar 3023 triple 10983. Deore XT crank FC-M730 1810.
+- Aris New Success hub 3509. Huret Rider indexed (MT30): front 8962, rear 8958.
+
+Automatic links accepted: Chorus group rows, Stronglight 107/A9 3112, Aris
+New Success/Rival, Huret Eco/Club, Maillard CXC 500/550/650, Mavic GP4/MA40,
+Bio Turbo, Triplex Aero, Deore XT M730 derailleurs/pedals and Weinmann AG 570.
+
+**Date review flags (not changed):** 1988 attestation falls outside these dates:
+
+| Row | Recorded dates |
+| --- | --- |
+| Aris Rival FD 2440 / RD 4417 | 1989– |
+| Huret Eco front 8796 | to 1987 |
+| Stronglight A9 3112 | to 1986 |
+| 700 SH 8133 | 1982 |
+| Nervar 3023 10983 | 1985 |
+
+No component row was changed. Leave-unlinked calls are in
+[link decisions](../link-decisions.md#mbk-catalogue-1988-fr--applied-link-review-2026-11-20).
+
+**Validation before load:**
+
+- All cells are ≤255 characters; the citation is 190 characters.
+- No existing 1988 MBK/Motobecane bikes.
+- `compare-bike-links.js` over the 109 loaded catalogues (23,410 specs) shows
+  the same 15 pre-existing lost findings and zero gained, changed, missing or
+  ambiguous. Only the new CSV was skipped as unloaded.
+- 14/14 test files pass.
+
+**Applied readback:**
+
+- The 967-statement load inserted source **482** (country FR, 190-character
+  citation), bikes **1461–1482** and specs **25408–25797**: exactly 22 bikes,
+  390 specs and 104 links.
+- Existing brand 14 and all 18 labels were reused without updates. Every spec
+  carries source 482.
+- No duplicate specs and no dangling component references. Bike and spec
+  totals rose by exactly 22 and 390.
+- The rerun affected zero rows.
+- Post-load comparison (110 catalogues / 23,800 specs): the same 15
+  pre-existing lost findings, zero gained/changed/missing/ambiguous, and no CSV
+  skipped.
+- `quality-report.js`: 0 errors. For the new rows, only the 10 expected
+  linked-date review flags in the table above.
+
+Scratch SQL was deleted after validation. Regenerate it from the maintained
+CSV and generator edition entry if needed.
+
 ## MBK 1986/87 partial road ingest — applied 2026-11-19
 
 User approved the reviewed partial ingest with “apply”. **Applied and validated.** Maintained

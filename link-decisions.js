@@ -23,6 +23,7 @@ const NOTES = '.agents/skills/ingest-bike-specs/references/link-decisions.md'
 //   reason one line; ref = notes anchor holding the decision
 const at = (anchor) => `${NOTES}#${anchor}`
 const y = (year) => ({ from: year, to: year })
+const MBK88 = 'mbk-catalogue-1988-fr--applied-link-review-2026-11-20'
 const REVIEWED_UNLINKED = [
   // Mixed calls (2026-10-30)
   { label: 'Headset', value: 'Lightrace Luxe', ...y(1982), reason: 'only 3032 Lightrace Grand Luxe (undated) and 3033 Super (1984)', ref: at('mixed-calls-2026-10-30') },
@@ -132,6 +133,25 @@ const REVIEWED_UNLINKED = [
   { label: 'Front Derailleur', value: 'Shimano Deore', ...y(1986), reason: 'DE10 or M700', ref: at('front-derailleurs') },
   // Bottom Brackets
   { label: 'Bottom Bracket', value: 'Zeus Ciclo-Cross', ...y(1973), reason: '188 Ref.33 or 190 Ref.34', ref: at('bottom-brackets') },
+  // MBK Catalogue 1988 (FR)
+  ...[
+    ['Headset', 'Shimano New 600 EX'], ['Brakes', 'Shimano New 600 EX'], ['Front Derailleur', 'Shimano New 600 EX'],
+    ['Rear Derailleur', 'Shimano New 600 EX'], ['Pedals', 'Shimano New 600 EX'], ['Chain', 'Shimano New 600 EX'],
+    ['Crankset', 'Shimano New 600 EX, 42-52'], ['Crankset', 'Shimano New 600 EX Biopace, 42-52'],
+    ['Freewheel', 'Shimano New 600 EX, 6 speeds, 13-23'],
+  ].map(([label, value]) => ({ label, value, ...y(1988), reason: '6207, 6208 SIS or 6400 generation not printed', ref: at(MBK88) })),
+  { label: 'Brakes', value: 'Shimano New 105', ...y(1988), reason: 'BR-1050-49 or -57 reach', ref: at(MBK88) },
+  { label: 'Front Derailleur', value: 'Huret Rival', ...y(1988), reason: 'Rival 1086-00 / AV 62.1 D / ARIS Rival unresolved', ref: at(MBK88) },
+  { label: 'Rear Derailleur', value: 'Huret Rival', ...y(1988), reason: 'Rival 2850-00 / AR 41.1 D / ARIS Rival unresolved', ref: at(MBK88) },
+  { label: 'Crankset', value: 'Stronglight 100, 30-40-50', ...y(1988), reason: '11311 ST100T or 1875 100 LX', ref: at(MBK88) },
+  { label: 'Rear Derailleur', value: 'Huret Duopar Eco', ...y(1988), reason: '4276 or 4400', ref: at(MBK88) },
+  { label: 'Freewheel', value: 'Aris Rival, 6 speeds, 13-24', ...y(1988), reason: '2211 or 2121 bare Aris rows', ref: at(MBK88) },
+  { label: 'Freewheel', value: 'Aris New Success, 6 speeds, 13-24', ...y(1988), reason: '2211 or 2121 bare Aris rows', ref: at(MBK88) },
+  { label: 'Handlebars', value: '3TTT Grand Prix', ...y(1988), reason: '2768, 2761 or 2769', ref: at(MBK88) },
+  { label: 'Tyres', value: 'Wolber Corsa tubulars', ...y(1988), reason: '6911 is the specific Corsa 80', ref: at(MBK88) },
+  { label: 'Hubs', value: 'Helicosport', ...y(1988), reason: "3387's version not established", ref: at(MBK88) },
+  { label: 'Brakes', value: 'Shimano Deore XT', ...y(1988), reason: 'BR-M730 or M731', ref: at(MBK88) },
+  { label: 'Headset', value: 'Shimano 600', ...y(1988), reason: '600 generation not printed', ref: at(MBK88) },
 ]
 
 function compile(entries) {
