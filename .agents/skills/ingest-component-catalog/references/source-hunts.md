@@ -4,6 +4,106 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ## Log
 
+### Gringineer component maker leads — triage 2026-11-20
+
+**Titec follow-up applied and validated:** the [full reconciliation, exact changes and validation](known-catalogs/titec.md#1997-maker-catalogue-and-dealer-sheet--applied-and-validated-2026-11-20)
+supersedes the Titec sample-only assessment below. Source499 supports four
+description enrichments and19 additions12171–12189; existing dates and all
+bike mappings are unchanged, and the rerun affects zero rows. The illustrated maker catalogue
+confirms the stored185g/115g road-stem weights; its dealer sheet conflicts.
+**Specialized/Ringlé follow-up applied and validated, 2026-11-21:**
+[Specialized1989](known-catalogs/specialized.md#components-1989--applied-and-validated-2026-11-21)
+uses source500:15 existing description updates and nine additions12190–12198.
+[Ringlé1995](known-catalogs/ringle.md#racing-components-1995--applied-and-validated-2026-11-21)
+uses source501:six existing updates and road Zooka12199. Existing dates/links
+are unchanged. Full117-catalogue mapping findings and whole-DB quality findings
+are unchanged; both reruns affected zero rows. TriCross/bar and exact Bubba
+cap-identity limits remain in the brand notes. This supersedes the inventory/
+proposal-only status; original source/specimen comparisons are preserved there.
+**Paul variants applied and validated,2026-11-21:** [Powerglide/Love Lever result and evidence](known-catalogs/paul.md#powerglide-and-love-lever--applied-and-validated-2026-11-21)
+supersedes its acquisition/proposal-only status. Three existing retitles/
+clarifications and Love Lever additions12200/12201 are applied; sources502/503.
+A newly recovered internally1996
+maker booklet gives175g for medium Powerglide and110g per pair for the revised
+brass-pivot Love Lever; the green brochure gives167g for medium Powerglide.
+Branford's199g/pair and stainless pivots were verified in the original scan.
+The dated1996 sheet separately offers standard/23mm LP levers. Existing
+dates and bike links are unchanged. Actual mappings across117 loaded catalogues and
+whole-DB quality findings are unchanged; the full SQL rerun affects zero rows.
+
+Historical acquisition triage: read-only follow-up to the four unopened posts below. All four
+posts and their original image links are accessible. Selected scans were
+downloaded and visually inspected; this is acquisition/quality triage, not a
+full page inventory, component reconciliation or ingestion. No dates, DB
+records, sources, CSVs or matcher rules changed; no SQL prepared.
+
+At that acquisition baseline the source-label search found no Specialized, Ringlé, Titec or Paul maker
+catalogue registration. Existing Branford sources471/473–475 and Guida353/357
+already support some related records; the maker pages should supplement that
+evidence, not cause duplicate components or silently replace edition-specific
+specifications. Model-title checks are a baseline, not proof that every named
+offering needs a new row.
+
+| Source / accessible image set | Visually checked and dating limits | Specific research value / next comparison |
+| --- | --- | --- |
+| [Specialized 1989 Components](https://www.gringineer.com/blogs/default-blog/1989-specialized-components-catalog): featured cover plus7 body images, `Speccomp1989_0001.jpg`–`_0008.jpg` | Cover explicitly says1989 Components. Checked0001,0002,0004,0008: cover, tyre tables, shoes/bags and address back cover. Remaining four images not visually inventoried; physical completeness not certified. | Manufacturer tyre specifications distinguish sizes and belt options.0002 explicitly separates Fat Boy from Fat Boy/K4; its TriCross is700x35C or27x1-3/8, not automatically the26in9909. Compare with10230 and edition-specific tyre rows before extending identities. |
+| [Ringlé 1995 Racing Components](https://www.gringineer.com/blogs/default-blog/1995-ringle-racing-components-catalog): featured `img-2349-1_0ecc2423-1ac6-49ef-be43-0dbbdd937aea.jpg` plus11 body photos, `img-2350-1.jpg`–`img-2360-2.jpg` | Checked cover2349, intro/Twiststix2350, Zooka Clamp-On2355 and back2360. Cover prints1995; back copyright is1994 and shows1994 sponsored teams. These are distinct document facts, not a reason to relabel the edition1994. Other eight photos not visually inventoried. | Maker Zooka construction and reference-weight/configuration evidence for12049, supplementing Branford473. Intro says products have undergone revisions: do not assume identical construction from an unchanged model name. Full remaining product inventory still needed. |
+| [Titec 1997 catalogue and dealer sheet](https://www.gringineer.com/blogs/default-blog/1997-titec-catalog): featured `titec1997_0001.jpg`,13 body scans `_0002.jpg`–`_0014.jpg`, and `Image_20260828_0003.jpg` | Checked cover0001, intro0002, downhill0003, technical0014 and the dealer sheet. Cover has97; dealer list explicitly says1997 (small revision imprint not relied upon). Ten intervening catalogue images not visually inventoried. | Strongest immediate comparison: model-specific seatpost alloys/lengths/weights, road stem specifications and saddle variants versus six existing Titec rows. Exact sampled differences below. |
+| [Paul catalogue and dealer sheet, attributed1997](https://www.gringineer.com/blogs/default-blog/1997-paul-component-engineering-catalog-and-price-sheet): featured `paul1997_0002.jpg` plus body0003,0001,0004,0005 | All five posted images visually inspected. Green brochure panels include brakes, hubs, front/rear derailleurs, levers, accessories and company history. No independent1997 imprint established on those panels. Dealer sheet0005 expressly dates itself **15September1996**; retain it as separately dated evidence. Completeness of the physical brochure is not established. | Named Powerglide cage configurations and weights can be compared with4369/4370; standard Love Lever versus Love Lever LP must be distinguished before matching12027. Other named brakes/hubs/409 are acquisition candidates, requiring alias/category/generation reconciliation before any proposal. |
+
+**Titec acquisition-stage comparisons (subsequently reconciled above).** The original
+[1997 dealer sheet](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/Image_20260828_0003.jpg?v=1787968843)
+is a compact maker specification source, not just a seller description:
+
+- Al-235 is350mm,235g and butted2014; live11612 combines a1996 guide's270mm
+  offering with a1999 guide's350mm/7075-T6 specification. Determine whether
+  these are versions of one named model, or a source/transcription conflict;
+  the1997 page does not justify overwriting either guide's claim.
+- C-191 is350mm/191g and is listed separately from C-222350mm/222g and Carbon
+  Road270mm/184g. Live11613 combines270mm/180–190g and350mm/200g from the
+  guides. The maker list supplies a useful intermediate specification and
+  prevents treating all carbon posts as C-191.
+- The Berserkr saddle range distinguishes ST, CX, TI, KTI and DH-KTI. KTI is
+  257g on this list; live11679 KTI is198g from Guida357. Check construction,
+  weighing basis and edition before calling either number an error.
+- Road titanium stems are separately listed as Ahead145g and quill175g;
+  live11831/11830 are115g/185g from Guida353. Check configuration and the
+  illustrated catalogue pages rather than copying a new weight into the old
+  row. Off-road stems are a separate section, not road aliases.
+- Live11858 titanium seatpost has no explicit counterpart in the sampled
+  dealer list. Its absence there does not disprove the guide offering.
+
+**Other directly useful evidence:**
+
+- [Specialized tyre table0002](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/Speccomp1989_0002.jpg?v=1794971462)
+  lists unbelted Fat Boy26x1.25/375g,26x1.95/695g and24x1.25/335g separately
+  from Fat Boy/K4,26x1.25/420g. Current11351 describes the unbelted1.25
+  offering. Keep casing/bead/belt distinctions explicit; K4 is not a synonym
+  for every Fat Boy and these differences do not establish a duplicate.
+- [Ringlé Zooka2355](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/img-2355-1.jpg?v=1764983061)
+  specifies a machined hollow7075-T6 body, internal steerer binder, removable
+  bar mount, titanium fasteners and a reference180g at135mm/0deg/1in.
+  Compare12049's configurations against this maker page; do not treat180g
+  as a weight for every Zooka length/diameter.
+- [Paul technical panel0003](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/paul1997_0003.jpg?v=1791647833)
+  prints Powerglide167g for the medium cage, with42/36/27T long/medium/short
+  capacities. Existing4369's195g and4370's early-version label are insufficient
+  to identify either with that pictured generation. The
+  [separately dated dealer sheet0005](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/paul1997_0005.jpg?v=1791647921)
+  lists standard and LP Love Levers separately and identifies LP's23mm pull
+  for Motolite. Do not overwrite the older199g/pair12027 with a different
+  generation or an unclear single/pair weight from the brochure.
+
+Live readback covered all rows under Specialized53, Paul463 and Ringlé763,
+plus the six Titec-titled records. Focused checks found no bike links on the
+13 sampled comparison records (4369/4370,9909/10230,11351,11612/11613/11679,
+11830/11831/11858,12027/12049). This does not claim an all-brand link audit
+or demonstrate an immediate wrong bike mapping. No duplicate merge or new
+component count is proposed. TODO replaces the completed unopened-post triage
+with the specific remaining maker-page comparisons. Task-created HTML, image
+downloads, review copies and the temporary image index were removed after
+preserving source URLs and the exact inspected filenames here.
+
 ### Bikalog index recheck and gringineer.com catalogue posts — 2026-11-20
 
 - **Bikalog** (`GET https://bikalog.org/api/catalog`, 161 brands, 531 files):
@@ -50,9 +150,9 @@ What has been searched for missing catalogues and evidence, with dead ends, site
     It explicitly describes fitting a1984 Annapurna handlebar and retaining
     its controls/grips; it is not factory-fitment proof for the1987 model.
     Removed from the unopened component-catalogue triage action.
-  - Not opened: 1989 Specialized components, 1995
-    Ringlé, 1997 Titec, 1997 Paul, and the Trek / Klein / Specialized / other
-    bike catalogues.
+  - Specialized1989 components, Ringlé1995, Titec1997 and the Paul material
+    attributed1997 were subsequently [triaged from original maker scans](#gringineer-component-maker-leads--triage-2026-11-20).
+    Trek / Klein / Specialized / other bike catalogues remain unopened.
 
 
 ### Vittoria maker catalogues — source review 2026-11-20

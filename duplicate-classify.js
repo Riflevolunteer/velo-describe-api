@@ -208,6 +208,14 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  // Paul variant review 2026-11-21; known-catalogs/paul.md.
+  [4369, 4370], // Independently photographed long-cage Powerglides: PAUL/flag decals versus engraved PAUL/USA; chronology unproved
+  [12027, 12200], // Branford stainless-pivot Love Levers versus maker1996 adjustable brass Slop Adjust configuration
+  [12200, 12201], // Unsuffixed1996 catalogue Love Levers versus separately offered23mm Love Levers LP
+  // Maker catalogues reviewed/applied 2026-11-21; specialized.md / ringle.md.
+  [12193, 12194], // Specialized Blob: separately offered men's and women's saddles, scan0006
+  [12197, 12198], // Specialized Compact Sealed Headset: alloy versus steel, scan0007
+  [12048, 12199], // Ringlé Zooka quill: 25.4mm mountain versus 26.0mm road configurations, scan2354
   // Cobra: lightweight nubuck/Ergal versus the separately sold foam-padded version.
   // Bruegelmann 1982 p34 (220-240g / 320g), 1985 p100 (about 220g / 280g); kept 2026-11-19.
   [12091, 12093],
