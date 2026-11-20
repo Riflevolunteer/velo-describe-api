@@ -105,6 +105,11 @@ function dataSourceSubquery(label) {
 // catalogue"); files without one keep the original label so loaded rows still match.
 // Separate same-year brochures without inventing another bike brand or market.
 const CATALOGUE_EDITIONS = new Map([
+  ['1989_motobecane_spec.csv', {
+    label: 'Motobecane Programm 89 (German-language, partial)',
+    citation: '1989_motobecane_spec.csv; Rennrad-News post4814861 (ElliRadler, 3 Oct 2020); dated Programm89 cover attachment843312 and Mirage8 EC185 sheet843314 shown together. One recovered model; market unconfirmed.',
+    country: null,
+  }],
   ['1986_mbk_spec_1986_87_partial.csv', {
     label: 'MBK Course et Loisir (1986/87, partial)',
     citation: '1986_mbk_spec_1986_87_partial.csv; https://www.rennrad-news.de/forum/threads/les-aventures-de-motob%C3%89cane.119041/page-54 post1064; spreads867796/867797; cover846470 prints1986/87; 5 bikes, prose only; market unconfirmed.',
@@ -4040,6 +4045,7 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    'maillard cx 500 with toe clips': [{ bike: 'EC185 Mirage 8', from: 1989, to: 1989, id: 10986 }], // Printed MILLARD CX500; established CX500/CXC500 mapping, toe clips explicit.
     'shimano 105 sis': [{ bike: 'Prologo', from: 1987, to: 1987, id: 3953 }, { bike: 'Dolomite', from: 1987, to: 1987, id: 3953 }, { bike: 'Piccolo', from: 1987, to: 1987, id: 3953 }], // c.1987 Pinarello: 1050-series group; existing period row
     // 1993 Bianchi Project models print the alloy qualifier before the model.
     'tioga alloy surefoot 6': [
@@ -5141,7 +5147,7 @@ const COMPONENT_OVERRIDES = {
       { from: 1986, to: 1986, bike: 'P 10 LS', id: 10972 },
       { from: 1986, to: 1986, bike: 'PH 10 LS', id: 10972 },
     ],
-    'hutchinson hp 22': [{ from: 1986, to: 1986, bike: 'PH 13', id: 10972 }],
+    'hutchinson hp 22': [{ from: 1986, to: 1986, bike: 'PH 13', id: 10972 }, { from: 1989, to: 1989, bike: 'EC185 Mirage 8', id: 10972 }],
     'hp 22': [{ from: 1986, to: 1986, bike: "PH 20 M 'Jubilé'", id: 10972 }], // maker omitted, same HP22 code
     'two tone reflective sidewalls hp 22 700 x 22c': [{ from: 1989, to: 1989, bike: 'Mont Blanc', id: 10972 }],
     'panaracer timbuk ii 26 x 2': [

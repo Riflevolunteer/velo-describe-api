@@ -1,5 +1,52 @@
 # Motobecane catalogs processed so far
 
+## 1989 Programm ’89 Mirage 8 sheet — applied and validated, 2026-11-20
+
+Applied after user approval: bike **1507**, source **496**, 20 specs and three
+component links. This advances the recovered 1989
+leaf described below; other programme leaves remain missing. Source originals
+remain under `bike_specs/sources/motobecane_mbk_1987_1990/1989_motobecane/`.
+CSV: `bike_specs/1989_motobecane_spec.csv`. Applied SQL removed after validation.
+
+Rechecked [ElliRadler post1049 / 4814861](https://www.rennrad-news.de/forum/threads/les-aventures-de-motob%C3%89cane.119041/post-4814861),
+3 October 2020: explicitly introduces the 1989 catalogue and attaches cover
+843312, binding843313 and Mirage sheet843314 in the same post. Maintained cover
+visibly prints Programm ’89. This supports the sheet's 1989 association; the
+sheet has no independent date. German language alone does not establish a
+country; country remains NULL. The pre-load live baseline had Motobecane
+through 1986 plus separate MBK 1986/87 and 1988 loads, no 1989 source/bike.
+
+Adult drop-bar sports/touring EC185 Mirage 8 is in scope despite mudguards and
+lights. Translated the complete table into English; separated frame/fork,
+bar/stem, brake/lever and rim/spoke/hub values. Single50T crank plus eight rear
+sprockets means no front-derailleur spec. Preserve original sizes56/59/63 with
+units unspecified, white-grey Surf decoration, no inferred weight. Printed
+MILLARD CX500 typo normalized to Maillard; INEXTERNAL frame construction kept.
+The Zahnkranz value is retained under Freewheel without asserting attachment
+type. No components inferred from photos or other models.
+
+Loaded one bike, 20 existing labels, 20 specs, three validated component links:
+Weinmann570→1129 (existing base-model mapping), MaillardCX500→10986 (existing
+CX500/CXC500 identity precedent), HutchinsonHP22→10972 (700C wheels explicitly
+printed, unlike unresolved27-inch cases). All dates/categories fit1989.
+Remaining values stay text: SakaeCAC single50T does not establish a complete
+code and loaded CAC rows are1982-only; Huret-Rival SDS8/8/handlebar index lever
+lack a unique maker-code crosswalk; Rigida1320 700C9895 ends1987. Generic Atom
+hubs, alloy post/stem, saddle, bars/headset/levers and uncoded13–32T cluster
+remain unlinked. No component creation, date change or merge performed.
+
+Generator syntax, SQL summary and schema labels checked. All24,127 loaded
+spec proposals unchanged before/after (15 pre-existing lost mappings); only
+comparison timestamps and the new unloaded CSV entry differ. Root
+bike-update.sql restored. Disposable transcription/script/HTML/comparison files
+removed. Post-load readback confirmed bike 1507/source 496, NULL country,
+20 specs and three links, correct source on every spec, zero duplicate specs,
+dangling links or date conflicts. Scoped generator/live comparison verified
+all 20 mappings unchanged, with no missing or ambiguous identities. All 87
+SQL statements reran with zero rows affected. Existing brand and all labels
+reused; component rows unchanged. Applied SQL and validation output removed;
+maintained original photographs and CSV retained.
+
 ## France Course-Training, c. 1984–85 — loaded and validated 2026-11-18
 
 - Source **461**, `Motobecane France Course-Training catalogue (c. 1984-85)`, country **FR**. [User-supplied12-page scan](https://www.bikecatalogs.com/download/3792), original archive `http://bulgier.net/pics/bike/Catalogs/Motobecane/84_or_85_French_market/`. Prior dating review below remains valid: no printed publication year; Stephen Roche's1984Tour deRomandie win on p.2 establishes1984or later, without a firm upper bound. French dealer network/Paris/Pantin addresses p.12 establish market. **1985 is only the provisional database/filename grouping year**, not an imprint or manufacture-year claim; source label and complete224-character citation retain c.1984–85 and this qualification. No component dates changed using this undated source. Separate from the six-page1985general catalogue/source460 and the1984GB edition/source429.

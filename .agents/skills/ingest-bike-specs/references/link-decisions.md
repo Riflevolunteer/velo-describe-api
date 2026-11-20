@@ -604,3 +604,12 @@ bars lack version evidence; suppress2745 (only1982 attestation).105 brakes
 lack reach, posts unidentified;600 crank/lever/post versions unspecified.
 Ofmega/TTT/Nisi/Vittoria maker-only values stay text. These NULL decisions
 create no new source-hunt tasks. See [validated catalogue notes](known-catalogs/pinarello.md#circa-1987-gita-catalogue--applied-and-validated-2026-11-20).
+
+### 1989 Motobecane EC185 Mirage 8 ingestion — applied 2026-11-20
+
+Sakae CAC single50T does not select the complete crank code; loaded CAC variants
+are1982-only. Huret-Rival SDS8/8 rear and handlebar indexed lever lack a unique
+code/generation crosswalk. Rigida13/20 700C candidate9895 ends1987; no date
+extension inferred. Generic Atom hubs, saddle, alloy post/stem, bars/headset,
+touring levers and uncoded13–32T cluster remain text. These deliberate unlinked
+values do not create source-hunt tasks. See [validated catalogue evidence](known-catalogs/motobecane.md#1989-programm-89-mirage-8-sheet--applied-and-validated-2026-11-20).
