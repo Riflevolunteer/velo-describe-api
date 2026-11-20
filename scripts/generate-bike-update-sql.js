@@ -613,6 +613,8 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
+
     'huret rider indexed': [{ from: 1988, to: 1988, id: 8962 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. MT30/MT30D 28-38-48 triples: AV 62.1 T Rider.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":2314}], // Standard Triomphe double; LX is the triple set. German 1986 pp.10-11.
@@ -1010,6 +1012,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
+
     'huret rider indexed': [{ from: 1988, to: 1988, id: 8958 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. AR 46.1 T Rider, as 'huret rider'.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":null}],
@@ -1443,7 +1447,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Kalkhoff. "600 AX" otherwise substring-matches plain "Shimano 600".
     // 4149 is a late first-generation PAT. 80 specimen, not the generic 1980-83 design.
     // Without fitment markings/photos, plain Super Record cannot choose it over second-gen 4151.
-    'campagnolo super record': [{ to: 1979, id: 4148 }, { from: 1980, to: 1983, id: null }, { from: 1984, id: 4152 }],
+    'campagnolo super record': [{ bike: 'Prestige', from: 1979, to: 1979, id: null }, { bike: 'Super Record', from: 1979, to: 1979, id: null }, { to: 1979, id: 4148 }, { from: 1980, to: 1983, id: null }, { from: 1984, id: 4152 }],
     'dura ace ex': 4509, // Shimano RD-7200, Dura-Ace EX
     'shimano 600 ax': 4465, // Shimano RD-6300, 600 AX
     // 1983 Bianchi (3500 Nuovo Gran Sport); 1973 Bianchi Special -> the
@@ -2294,7 +2298,7 @@ const COMPONENT_OVERRIDES = {
     'super alfa': 1181, // Zeus Super Alfa 71
     // Without an override the only substring hit is the 1980s Record O.R.
     // 1973 Raleigh -> pre-CPSC 2040; 1990s (Bianchi 1993) -> BR-14RE dual pivot.
-    'campagnolo record': [{ from: 1994, to: 1994, id: 7076 }, { to: 1977, id: 573 }, { from: 1978, to: 1986, id: 572 }, { from: 1990, to: 1993, id: 7038 }, { from: 1994, id: 578 }],
+    'campagnolo record': [{ bike: 'Record', from: 1979, to: 1979, id: null }, { from: 1994, to: 1994, id: 7076 }, { to: 1977, id: 573 }, { from: 1978, to: 1986, id: 572 }, { from: 1990, to: 1993, id: 7038 }, { from: 1994, id: 578 }],
     // 1974 Motobecane.
     'universal 61 center pull with quick release': [{ bike: 'Le Champion', from: 1973, to: 1973, id: 1081 }], // c.1973 Motobecane, table p.8: named model.
     'universal 61 center pull': 1081, // Universal Mod. 61
@@ -2302,7 +2306,7 @@ const COMPONENT_OVERRIDES = {
     'universal mod 68 side pull racing': 1082, // Universal Super 68
     'mafac racer center pull (1 front 2 rear)': 838, // MAFAC Racer (lettered MAFAC RACER)
     // 1981 Kalkhoff.
-    'campagnolo super record': [{ bike: 'Record Special', from: 1979, to: 1979, id: null }, { to: 1982, id: 582 }, { from: 1983, id: 583 }], // c.1979 Pinarello: reach unspecified (582 vs 7005); otherwise 4061 v1/v2.
+    'campagnolo super record': [{ bike: 'Prestige', from: 1979, to: 1979, id: null }, { bike: 'Super Record', from: 1979, to: 1979, id: null }, { bike: 'Record Special', from: 1979, to: 1979, id: null }, { to: 1982, id: 582 }, { from: 1983, id: 583 }], // c.1979 Pinarello: reach unspecified (582 vs 7005); otherwise 4061 v1/v2.
     'dura ace ex': 997, // Shimano BR-7200, Dura-Ace EX
     'shimano 600 ax': 965, // Shimano BR-6300, 600 AX
     'weinmann 405': 1117, // Weinmann AG 405
@@ -2531,6 +2535,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
+
     'shimano new 105 42 52': [{ from: 1988, to: 1988, id: 1778 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. FC-1050, 105 (1986-89).
     'shimano new 105 biopace 42 52': [{ from: 1988, to: 1988, id: 1778 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Le Champion: FC-1050 Biopace; no separate Biopace FC-1050 row.
     'nervar 3023 30 40 50': [{ from: 1988, to: 1988, id: 10983 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Mirage 18: Nervar 3023 triple.
@@ -3847,6 +3853,10 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    'campagnolo nuovo gran sport': [{ bike: 'Treviso', from: 1979, to: 1979, id: 209 }],
+
+    'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
+
     "forged alloy levers": [{"bike":"Grand Record","from":1985,"to":1985,"id":233}], // 1985 Motobecane general catalogue p.6; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
     // 1979 Motobecane US, tables pp.13-14; scoped decisions in brand notes.
@@ -3991,6 +4001,10 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    'campagnolo nuovo gran sport': [{ bike: 'Treviso', from: 1979, to: 1979, id: 3688 }],
+
+    'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
+
     'shimano new 105': [{ from: 1988, to: 1988, id: 3953 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. PD-1050, 105.
     'maillard cx 700 d': [{ from: 1988, to: 1988, id: 10989 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Pro Racer table cell (portrait prose says Mavic; table kept).
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
@@ -4315,6 +4329,10 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    'campagnolo nuovo gran sport': [{ bike: 'Treviso', from: 1979, to: 1979, id: 5734 }],
+
+    'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
+
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "laprade ctp 5 e dural 254 x 200": [{"bike":"C352E Super-Mirage","from":1986,"to":1986,"id":11316}],
     "sakae ctp 5 e mit schnellverschluß": [{"bike":"T50 Tracker","from":1986,"to":1986,"id":11316}],

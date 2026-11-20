@@ -440,8 +440,11 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Rear Derailleurs
 
-- c.1979 Pinarello ingestion (applied/validated 2026-11-20): preserve printed groupset descriptions
-  without inventing separate component identities. Makerless Super Leggera
+- c.1979 Pinarello: the groupset expansion (applied/validated 2026-11-20) supersedes the initial
+  generic-group-only treatment; follow the Colnago/Cinelli seven-category split.
+  Preserve Record Special's mixed-group wording and leave those parts unlinked;
+  Prestige/Super Record rear generation and brake reach also remain unresolved.
+  Makerless Super Leggera
   saddles stay NULL (not Iscaselle 5375); Record Special's explicit Super Record
   brakes stay NULL without reach evidence (582 versus 7005). Regina Tital seven-
   speed, unspecified Regina Oro/Sestupla, Mavic OR/Legger Special/Servizio Corse,

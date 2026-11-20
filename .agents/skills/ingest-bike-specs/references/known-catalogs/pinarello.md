@@ -1,5 +1,47 @@
 # Pinarello catalogue sources
 
+## Groupset expansion — applied and validated, 2026-11-20
+
+User identified the Colnago/Cinelli precedent missed in the initial ingestion.
+This supersedes the initial choice below to retain a single generic group row.
+The CSV now expands each printed group into Front Derailleur, Rear Derailleur,
+Crankset, Seatpost, Brakes, Brake Levers and Pedals, following 1979 Colnago /
+1986 Cinelli. No inferred headset or hub specs. Record Special retains the
+original mixed-group wording for six parts and explicit Super Record for brakes;
+all seven stay unlinked because the upgraded details/reach are unspecified.
+
+Applied after user approval. Converted generic rows 25799/25808/25817/25825/25834 in place
+to Rear Derailleur, preserving IDs, text, source 491 and original raw_label.
+The guarded generator SQL inserted 29 other specs and backfilled supported
+links. Validated final scope: unchanged five bikes, 74 specs, 28 links (21 new).
+No generic group specs remain; no bike/component/source rows are deleted.
+All 15 labels already existed. This replaces the initial 45-spec/seven-link load.
+
+New group links, by category (existing seven chain/tyre links unchanged):
+
+- Prestige / Super Record: FD 2313, crank 1509, seatpost 5759, levers 232,
+  pedals 3716. Rear group remains NULL: 4148 and 4151 overlap circa 1979.
+  Brakes remain NULL without standard/short-reach identification (582/7005).
+- Record: FD 2299, RD 4125, crank 1496, seatpost 5749, levers 226,
+  pedals 3708, using the existing period Record mappings. Brakes stay NULL
+  without reach identification (572/575).
+- Treviso: FD 2276, RD 4085, seatpost 5734, levers 209, pedals 3688.
+  Gran Sport brakes have multiple generations; crank candidates 1472/1474/1475
+  differ in BCD/configuration and start in 1980. Neither is inferred here.
+
+Review caught and blocked an automatic 1994 Record lever (229) from the mixed
+group phrase. Explicit NULL guards protect all six mixed-group categories.
+All 28 proposed links were checked against DB titles, category and dates.
+Generator syntax passes; full loaded-catalogue comparisons before/after the
+override changes are identical apart from timestamps: no other catalogue
+mapping changes. Post-load CSV/live comparison: all 74 specs unchanged, zero
+missing/ambiguous identities. Readback confirmed correct source 491 throughout,
+no generic group specs, no duplicate specs, no dangling links or date conflicts.
+Per model specs/links: Prestige 15/6, Record 15/8, Treviso 14/5, Super Record
+15/7, Record Special 15/2. All 219 SQL statements reran with zero rows affected.
+Root `bike-update.sql` was restored; applied SQL and CSV backup were removed
+after validation. Maintained original scans and expanded CSV remain.
+
 ## Circa-1979 ingestion — applied and validated, 2026-11-20
 
 Original seven Bulgier scans retained at `bike_specs/sources/pinarello_1979/`
@@ -17,10 +59,10 @@ All are complete drop-bar derailleur road racing bicycles. Cover is illustration
 No sizes, weights or model-specific colours were inferred. Treviso's printed
 tyre line is blank, creating no spec. No models excluded.
 
-Canonical labels: Frame Material, Groupset / Components, Chain, Freewheel,
+Initial-load labels: Frame Material, Groupset / Components, Chain, Freewheel,
 Tyres, Saddle, Handlebars, Rims, Spokes and Brakes. Catalogue filenames are in
-the ignored Catalog Page CSV column. Group descriptions are retained whole,
-without fabricating a full list of separately specified components. In
+the ignored Catalog Page CSV column. Group descriptions were initially retained whole;
+this treatment is superseded by the pending expansion above. In
 particular Record Special says Record with Super Record brakes and unspecified
 Super Record details; only its explicit brakes get a separate spec.
 
