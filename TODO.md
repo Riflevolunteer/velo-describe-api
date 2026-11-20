@@ -12,7 +12,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Bike catalogues (deferred while focusing on components)
 
 - Verify the date of the MBK Course brochure attributed to 1991, then prepare its road-bike ingest from the [inspected scans](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#mbk-bicycle-catalogue-backlog--source-review-2026-11-19).
-- Recover remaining Motobecane/MBK adult-bike specification pages for the 1986/87 MBK and 1987/88 Motobecane brochures, other leaves of the 1989 programme, and a dated 1990 edition using the [specific recovered sources/holder leads](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#19871990-catalogue-recovery--2026-11-19); also seek the still-missing 1970–72 edition using the [earlier gap leads](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#19701990-gap-source-leads--2026-11-18).
 - Ingest the 1985–89 US Panasonic catalogues when bike loading resumes, following the [recorded brand rule and sources](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md#brand-treatment-and-scope-decision--2026-11-20).
 - Transcribe and prepare the 1987 US Nishiki catalogue for ingestion, reviewing model scope and component links from the [verified scan and page notes](.agents/skills/ingest-bike-specs/references/known-catalogs/nishiki.md#us-catalogue-1987--assessed-for-ingestion-2026-11-20).
 - Assess the bikalog backlog: Koga-Miyata 1980–2001, Raleigh 1991, Colnago C35 1989.
@@ -48,6 +47,8 @@ Reopen these when the specified material becomes available; existing ambiguity a
 ## Source acquisition
 
 Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md) before searching. Reopen exhausted hunts only for a new source/holder lead. Prioritise free, directly retrievable scans; UK archive/contact-only holdings are not actionable for the user.
+
+- Reopen Motobecane/MBK missing-page recovery only for a newly accessible scan or confirmed shareable copy: remaining 1986/87 and 1987/88 adult pages, other 1989 leaves, a dated 1990 edition or a 1970–72 catalogue. See [completed recovery and remaining evidence limits](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#recovery-worklist-reconciliation--2026-11-20).
 
 - Recover specification pages for the English Bianchi road catalogue indexed 1985; Bikalog holds only a five-page introductory/photo fragment. [Edition review](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#bikalog-19851986-backlog-check--2026-11-17).
 - Seek a newly posted 1979–89 Peugeot/Motobécane spares list for Maillard, Solida/Nervar and Lightrace. [Reviewed tariff limits and prior leads](.agents/skills/ingest-component-catalog/references/source-hunts.md#peugeothelium-tariffs--all-pages-reviewed-2026-11-19).

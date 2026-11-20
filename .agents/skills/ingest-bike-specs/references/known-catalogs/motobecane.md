@@ -318,6 +318,23 @@ For restoration, the previous year_from was1987 for all twelve rows and
 previous source_ref values are in the table; the six listed links wereNULL.
 Check the current values against this applied state before restoring anything.
 
+## Recovery worklist reconciliation — 2026-11-20
+
+The completed recovery pass and subsequent ingests supersede the broad active
+“recover remaining” worklist item. Usable recovered material has been applied:
+1986/87 MBK five-model partial, 1988 MBK catalogue and 1989 Motobecane EC185
+Mirage 8 leaf. This does not establish complete edition coverage. Still absent:
+remaining 1986/87 adult pages, 1987/88 Motobecane adult specification pages,
+other 1989 programme leaves, an independently dated 1990 edition and a 1970–72
+catalogue. Earlier sections retain exact source/holder leads and search limits.
+
+No new source lead was supplied in this reconciliation. Do not repeat the
+completed archive/holder search solely because those gaps remain. TODO now
+keeps one conditional source-acquisition action: reopen only for a newly
+accessible scan or confirmed shareable copy. The separate attributed-1991
+Course brochure dating/preparation task remains actionable and unchanged.
+No source files, CSVs, generator mappings or database rows changed.
+
 ## MBK bicycle catalogue backlog — source review 2026-11-19
 
 User switched from component work to considering Motobécane/MBK bike ingests.
