@@ -100,7 +100,8 @@ qualifiers are retained on derived specs. Treviso's separately printed
 `Cambio: Record` overrides the group rear and is normalized to Campagnolo Record.
 Italia's group is Gran Sport but says only Campagnolo brakes: Brakes and Brake
 Levers remain maker-only, rather than assigning a Gran Sport brake model.
-Tre Cime's `Super Record x 3` is preserved and its triple drivetrain stays NULL.
+Tre Cime's `Super Record x 3` is preserved; its drivetrain was initially held
+NULL. The front was subsequently linked from photographic evidence below.
 
 Loaded one source, five bikes, 73 specs, 29 component links;
 existing brand and all 15 labels reused. Source label follows generator
@@ -137,6 +138,62 @@ Super Record Special 15/6, Treviso 14/6, Italia 14/5. Scoped generator/live-DB
 comparison found all 73 specs unchanged, no missing/ambiguous identities.
 Rerunning all 217 SQL statements affected zero rows. Scratch SQL removed;
 maintained source images and CSV retained.
+
+## Tre Cime photo/link follow-up — 2026-11-20, applied and validated
+
+Initial live inventory: bike **1489**, source **492**, already links seatpost
+25891→5761, brake levers 25893→232, pedals 25894→3716, chain 25895→1384 and
+rims 25900→5069. Re-inspected maintained original
+`bike_specs/sources/pinarello_1982/3.jpg` and a drivetrain crop; the printed
+group is `Campagnolo Super Record x 3`, and the photograph visibly confirms
+three chainrings. It does not print individual drivetrain part codes.
+
+**One supported additional match, user-approved and applied:** front spec
+**25888**, NULL→**2313**, 1052/SR / 0104010 clamp-on. The black linkage,
+three-hole cage and clamp mounting in the maker photograph agree with the
+[retained 2313 specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=B9DFF029-24A0-4A95-9CA0-7011828BD924).
+This is a photo/group-based identification, not a code printed by Pinarello.
+The triple qualifier alone does not require an otherwise unidentified separate
+triple front model. This supersedes the blanket x3 hold as the evidence decision
+for the front only. The live link and exact bike/year generator rule now agree.
+No component metadata/date changes or extra inferred bike specifications.
+
+The other current holds remain:
+
+- **Rear 25889:** comparison with original Rally specimens 4080/4082/4083 did
+  not establish a unique construction/generation from the small bike image.
+  Do not infer a Rally solely from the triple chainset or assign a Super Record
+  rear version solely from the group heading.
+- **Crank 25890:** a triple is certain; the precise crank/inner-ring attachment
+  is not. Existing 1498 is described as 144+100mm, while 7003 is the fixed 36T
+  1049/5. The [1982 maker chainwheel table](https://www.campyonly.com/history/catalogs/1982_olympic_catalog.pdf)
+  distinguishes 1049/3 (42T low) from 1049/5 (36T low, special RH arm), so the
+  earlier notes' association of 1498 with 1049/3 needs reconciliation before
+  choosing that row. The [1498 specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=5E4BE2A4-2F98-4B0D-8330-4D4834BB9518)
+  and generic x3 name do not justify a new Super Record triple component.
+- **Brakes 25892:** no measured reach or uniquely identified caliper version;
+  582 and 7005 remain candidates. **Freewheel 25896:** speed/variant/lockring
+  detail insufficient to choose 2168 versus 2169. **Saddle 25898:** Concor shape
+  and red cover do not establish the construction among 5544/5547 and other
+  Concor variants. **Bars 25899:** `Cinelli Special` gives no unique bend code.
+  **Tyres 25897:** explicit Clement-or-Vittoria alternative. **Spokes 25901:**
+  no identified model row. These are evidence limits, not new source-hunt tasks.
+
+The guarded SQL changed exactly one row; the identical rerun changed zero.
+Exact readback verifies spec 25888 now links to 2313, retaining bike 1489,
+label 16, source 492 and original `Campagnolo Super Record x 3` wording.
+All other Tre Cime specs and links match the prior inventory, yielding six
+linked specs. Only its exact 1982 Front Derailleurs generator rule changed;
+no CSV or component metadata changes. Restore by setting spec 25888 to NULL
+with guards on these identity fields/current link, and reverting that rule.
+
+The pre-application in-memory comparison across 24,061 loaded specs gained
+only 25888. After application, the actual full generator/live comparison
+exactly preserves the baseline summary and finding set (15 pre-existing lost
+proposals, no changed/gained/missing/ambiguous identities). Whole-DB integrity
+has zero errors and the exact same review findings as before. All 14 test files
+pass. Temporary SQL, proposal patch/script, comparison downloads/crop and
+before/after validation files were removed; maintained source images remain.
 
 ## Groupset expansion — applied and validated, 2026-11-20
 

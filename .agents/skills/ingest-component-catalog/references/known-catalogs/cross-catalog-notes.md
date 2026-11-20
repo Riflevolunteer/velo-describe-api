@@ -2970,8 +2970,7 @@ originals and maintained CSVs are preserved.
   No new identities or dates; live readback, zero-change rerun, full mapping
   comparison and all 13 test files passed. [Exact changes and evidence](regina.md#bikecology-1976-chain-identities--applied-and-validated-2026-11-17).
 - Other original holds (no row or not enough evidence): HKK chains (no brand row), Everest
-  superlight CH8, Renold track chain, Sugino Mighty Custom SU2 / Maxy 5 / Maxy II
-  SU3 (the DB has Maxy 3-bolt and Maxy 5-arm, not the same), Ideale 90TB / 90IR vs
+  superlight CH8, Renold track chain, Sugino Mighty Custom SU2 / Maxy 5, Ideale 90TB / 90IR vs
   our "90 Speciale Competition", Cinelli bars HSI 63 / 65, Tange "Levin HS TL" (maybe
   3152 LV-11), Fiamme Red / Gold / Yellow Label tubulars, Tahei and Lambertini
   saddles, Belri bar and stem, Dura-Ace track hubs H740 / H840 / H741 / H841 (the
@@ -2979,6 +2978,15 @@ originals and maintained CSVs are preserved.
   Campagnolo Nuovo Tipo C1264-C1267 (hold superseded by the [visual reconciliation](campagnolo.md#bikecology-nuovo-tipo-reconciliation--2026-11-18-applied-and-validated): individual codes of existing 1251/1253 pairs, not missing identities). Out of
   scope: the Bikecology-built wheels (Hosteller, Tourist, Olympiad, Elan, ...), tubes,
   juvenile tyres, spokes, pumps, forks, tape and plugs, clothing and shoes.
+
+- **Maxy II SU3 follow-up, 2026-11-20:** original printed p.7/image9 explicitly
+  shows a three-arm swaged spider with both rings replaceable, matching existing
+  1945. This supersedes the earlier assertion that the DB's three-bolt row is
+  necessarily a different component. A guarded retitle/description/date-source
+  enrichment was approved, applied and validated: one row changed, rerun zero,
+  no catalogue mapping or integrity finding changes. The independent 1980 Bike Warehouse p.8
+  instead calls a five-arm crank Maxy II; it is a different configuration and
+  cannot extend the three-arm dates. [Exact evidence and applied fields](sugino.md#bikecology-maxy-type-ii-identity--2026-11-20-applied-and-validated).
 
 ## Bikecology catalogue — Summer 1981 (2velo.com, multi-brand US retailer)
 

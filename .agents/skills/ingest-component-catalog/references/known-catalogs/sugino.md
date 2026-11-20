@@ -1,5 +1,78 @@
 # Sugino catalogs processed so far
 
+## Bikecology Maxy Type II identity — 2026-11-20, applied and validated
+
+Selected the existing Bikecology/Maxy II quality TODO. Re-read original
+[Bikecology fifth edition, April 1976](https://labibleduvelodivers.blogspot.com/p/doc-1976.html),
+source **244**, printed **p.7 / image 9**; its contents/imprint page (image 2)
+explicitly confirms April 1976. Page 7 distinguishes the new **Maxy 5** from
+the **MAXI TYPE II**, retailer stock **SU3**. SU3 is not a manufacturer code.
+The latter has a **swaged three-prong spider and two interchangeable rings**,
+standard 42/52T, options 32–57T, 165/171mm arms, 68mm axle, and chrome-steel axle,
+cups and balls. This identifies a construction, rather than merely a model name.
+
+Directly compared original retained specimens:
+
+| Row | Visible construction | Decision |
+| --- | --- | --- |
+| **1945**, Maxy 3-bolt with replaceable big ring | Separate plate-like three-arm spider; outer ring bolts to it; two detachable rings | Matches the 1976 Type II construction; enrich this existing stable row |
+| **1944**, Maxy 3-bolt | Outer ring incorporates the swaged central spider; only inner ring is detachable | Keep separate; do not rename it Type II or merge with 1945 |
+| **1943**, Maxy 5-arm | Five-arm spider | Not the 1976 three-arm Type II |
+| **1977**, Super Maxy loose-chainring 110BCD | Five-arm spider and two replaceable rings | Not the 1976 three-arm Type II |
+
+Specimen evidence:
+[1945 complete](https://velobase.com/CompImages/Crankset/E4E09221-45C8-4C56-A8B6-E41F5EED515E.jpeg),
+[1945 spider close-up](https://velobase.com/CompImages/Crankset/4F320368-F51F-4B3A-86AD-83DF21CE3A74.jpeg),
+[1944 integral outer-ring/spider](https://velobase.com/CompImages/Crankset/6BFB4FD9-C480-41C7-BE29-21633241D8AE.jpeg),
+[1943](https://velobase.com/CompImages/Crankset/2E95A406-56D4-4E1F-AE9C-C95E6D458055.jpeg),
+[1977](https://velobase.com/CompImages/Crankset/1CFA1B30-AF86-4F41-B7B7-2533DEA0BFB6.jpeg).
+
+**Name-reuse trap:** visually checked
+[Bike Warehouse No.16, 1980, printed p.8 / scan9](https://ebykr.com/wp-content/uploads/2026/11/ebykr-1980-bike-warehouse-catalog-p09-scaled.webp),
+existing source **360**. Its **Maxy II/5 Arm**, stock SU-M2-J, explicitly has a
+five-arm spider with both rings interchangeable; Maxy I/5 Arm has a fixed outer.
+It does not establish that Bikecology's earlier three-arm offering continued
+through 1980. Do not extend 1945 to 1980 or assign the five-arm 110BCD to it.
+No new row or cross-generation merge is justified. The 1973 Japanese maker scans
+could not be re-fetched (403); no new code claim or chronology is based on them.
+
+**User-approved and applied: one guarded update to 1945.**
+
+| Field | Old | Applied |
+| --- | --- | --- |
+| title | `Sugino Maxy 3-bolt (replacable big ring)` | `Sugino Maxy Type II (3-arm, replaceable rings)` |
+| description | `Sugino Maxy 3-bolt (replacable big ring), Japan` | `Three-arm swaged-spider cotterless alloy crank with two replaceable rings. Standard 42/52T; 32-57T options, 165/171mm arms and 68mm axle. Chrome-steel axle, cups and balls. Distinct from the later five-arm Maxy II.` |
+| search_text | `Sugino Maxy 3-bolt` | `Sugino Maxy Type II 3 bolt` |
+| year_to | 1970 | 1976, catalogue availability rather than a production end |
+| source_ref | 1 | 244 |
+
+Retain year_from 1970 as **unverified legacy dating**, stable GUID
+`FC803642-8DEF-4568-AF3D-442C1D030825`, brand 55/category 7/group NULL and every
+other field. The existing description supplied no measured weight to preserve.
+The applied description is 214 characters. Restoration requires restoring only
+the five old fields above, guarded on their replacement values and stable ID.
+
+Pre-change readback found no bike specs naming Maxy and no links to 1945 or its nearby
+Maxy candidates. A read-only simulation of the proposed title/date change over
+**24,061 loaded specs** preserves the exact baseline summary/finding set:
+15 existing lost proposals, no gained/changed/missing/ambiguous identities.
+`duplicate-report.js --brand=Sugino --merge` returned no merge candidates;
+the physical keep-apart distinctions above were reviewed independently of names.
+Application affected exactly one component; the identical SQL rerun affected
+zero rows. Exact readback matches all five replacements above. The retained
+1970 start, brand/category/group, GUID and image hash are unchanged; neighbouring
+1944 matches its entire captured original record. No component insert/delete,
+CSV, generator, bike-link or data_source registration change was made.
+
+The final actual generator/live comparison across 24,061 specs preserves the
+baseline summary and exact finding set (15 pre-existing lost proposals).
+Whole-DB integrity remains zero errors with the same 2,071 review findings and
+exact finding set. The post-change Sugino merge report still has no candidates.
+Downloaded catalogue panels, HTML, comparison photos, SQL, proposal validator
+and before/after validation snapshots were removed after recording this evidence.
+The Maxy II identification/application action is complete; other Bikecology
+component identity gaps remain separately listed in TODO.
+
 ## Sugino Cycle Parts catalogue (8 pages, 1978, Reminiscence Part 30) — data_source id 210
 
 - `data_source` 210, label "Sugino Cycle Parts catalogue (1978)". Source:
@@ -216,7 +289,8 @@ OPC-SC and RT / BT cranks, 4 No.66 and DZF cranks, SP-K, HP-G5 and OPC-A5 / A4.
 - Extra detail on 9881 No.66 FE-TR, 9883 BB-SC, 9885 CV-SC, 9886 OPC-SC, 8896 OPC-A5 / A4, 8899 BMX stems.
 - New (3 rows, 1982-1983): DZF02-1B, DZF02-1E, DZFO-1R cottered steel cranks (ids from the DB, `title LIKE
   'Sugino DZF%'`).
-- Still not in any source on hand: Mighty Custom / Maxy II (TODO gap).
+- This spread does not cover Mighty Custom / Maxy II. The earlier Maxy II source
+  gap is superseded by the focused 1976 three-arm identity review above.
 - Duplicate of this source, nothing to ingest: https://bmxmuseum.com/reference/3329 ("1980's Sugino", "Sugino
   brochures from early to mid '80's", credits equusbicycle.com/bike/sugino/) reposts the same four spreads as
   150 px thumbnails only (`sugino_info.png`, `sugino_info_2..4.png`; no larger size on the server). Checked

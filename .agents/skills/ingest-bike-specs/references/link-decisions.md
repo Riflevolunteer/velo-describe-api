@@ -19,12 +19,15 @@ Applied/validated 2026-11-20; see [full evidence and mappings](known-catalogs/pi
 ## Pinarello circa 1982 — applied catalogue review
 
 Expand the printed groups into individual specs, preserving Titanio and x3
-qualifiers. Explicit NULL guards hold the x3 drivetrain and qualified-group
+qualifiers. Explicit NULL guards initially held the x3 drivetrain and qualified-group
 brakes/rears; Super Record Special's generic brake is NULL without reach.
 Italia's Gran Sport crank stays NULL without BCD/configuration evidence.
 Record rear on Treviso is explicitly printed, overriding the Gran Sport group.
 Generic/alternative tyres, saddles, bars, rims and ambiguous freewheels remain
 text. Applied/validated 2026-11-20; see the [mapping and evidence review](known-catalogs/pinarello.md#circa-1982-ingestion--applied-and-validated-2026-11-20).
+Subsequent Tre Cime photo review supports front 25888→2313, approved/applied and
+validated on 2026-11-20; this supersedes the blanket x3 refusal for the front
+only. The rear, crank and other holds remain; see [photo evidence and validation](known-catalogs/pinarello.md#tre-cime-photolink-follow-up--2026-11-20-applied-and-validated).
 
 ## MBK Catalogue 1988 (FR) — applied link review, 2026-11-20
 

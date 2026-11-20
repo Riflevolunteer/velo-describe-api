@@ -618,7 +618,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super record 4000f or record pantograph': null,
     // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
     'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 2313 }],
-    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: null }],
+    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: 2313 }], // Original 3.jpg: black-link, three-hole clamp-on Super Record front.
     'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
 
     'huret rider indexed': [{ from: 1988, to: 1988, id: 8962 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. MT30/MT30D 28-38-48 triples: AV 62.1 T Rider.
