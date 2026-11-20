@@ -282,6 +282,29 @@ inserted.
   894 linked) before the overrides; 899 after. The CSV has since been
   removed from bike_specs/, so a bare generator run is safe again.
 
+## Freewheel-label quality flags — 2026-11-20
+
+Read-only live review of all 35 `broad_freewheel_label` candidates: four
+Raleigh track entries (318, 4066, 4272, 7889) link to Campagnolo single
+sprocket 6380; the other 31 point to cassette-category components. The raw
+labels are `Freewheel` or `Freewheels` in the stored specs, and the generator
+deliberately permits these cross-category overrides. The label flag alone does
+not establish an incorrect link or justify replacing the catalogue heading.
+
+Several values explicitly say fixed, cassette or freehub, including Raleigh
+4066/4272/7889, Raleigh 4661/6086 and Miyata 20322/20489. Raleigh 6086's
+apparent seven-sprocket list is already reviewed in the Raleigh notes: preserve
+the printed text and 600 AX family link. Peugeot 15057/16488's six-speed
+CS-6400-6 identification is separately documented in Peugeot notes. These are
+examples of evidence, not a fresh model-level verification of every link.
+
+Other values name a series, gearing or group rather than a specific cassette
+code; their label crossing alone cannot prove the linked model. In particular,
+Bianchi 19547's 1222 identity has an existing distinguishing-evidence action
+in TODO and a detailed Bianchi review. No labels, links, CSVs or generator
+rules were changed. Revisit individual identities when their specific maker
+code, original fitment or construction evidence becomes available.
+
 ## 2026-10-08 link-gap pass via /linkCoverage (no new CSV)
 
 - `/linkCoverage` (index.js) now reports link rates overall, per spec

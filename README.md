@@ -68,6 +68,49 @@ wipe-before-reload step that only made sense for that crawl and had become
 actively destructive to catalogue-only data — see git history if you need any
 of it back).
 
+### Proposed component evidence references
+
+The current component `source_ref` identifies the source of the last
+source-driven change, not every source supporting the row. `/componentdetail`
+exposes its label and type. A second source can corroborate an unchanged row,
+and a source can support only one attribute or contradict another source; none
+of those relationships should overwrite `source_ref`.
+
+Add a `component_evidence` table with an auto-increment primary key,
+`component_id` and `source_id` integer references, a required `locator`
+(varchar(255), e.g. printed page and panel, or an empty string if unknown),
+and a required `claim` (varchar(255), a concise statement of what the source
+actually shows). Add a unique key on `(component_id, source_id, locator, claim)`
+for repeatable ingestion and an index on `source_id`. Match the existing
+database's engine and integer types when implementing; validate references on
+write, and decide foreign-key and delete behaviour against the live schema.
+Multiple claims or locations from the same source are allowed. Record conflicting
+evidence as claims, without implying that all claims describe current row values
+or establishing production boundaries from an isolated appearance.
+
+On a reviewed import, insert evidence for each verified claim even when the
+component row is unchanged. Update `source_ref` only when that source actually
+changes the component's data, in the same transaction as the change and its
+evidence. Replaying an import must not change `source_ref` or duplicate evidence.
+Manual corrections without a source should not invent one; document their reason
+in the existing notes. On component merges, review and transfer evidence to the
+survivor, deduplicating identical claims before deleting the old row. Keep
+source and catalogue notes as the detailed audit trail: this table is not a
+field-level change history.
+
+For rollout, add the table before deploying writers and readers. Backfill only
+verified claims and locators from notes; the existing `source_ref` alone does
+not establish a specific claim or page. Existing rows may therefore have no
+evidence entries. Preserve the current `/componentdetail` response fields and
+add a separate evidence array per component, ordered consistently, with source
+ID, label, type, citation, locator and claim. Fetch it separately or aggregate
+carefully so multiple references do not duplicate component rows. Deploy the
+reader after the schema, update ingest workflows, then backfill incrementally.
+Validate repeat imports, unchanged corroboration, changed rows, multiple claims,
+conflicts, merge handling, missing references and existing API consumers before
+using it in the client. Roll back readers and writers before removing the table;
+retain exported evidence if a rollback would otherwise discard collected data.
+
 ## Checking database quality
 
 Run `node scripts/quality-report.js` for a read-only report over the existing

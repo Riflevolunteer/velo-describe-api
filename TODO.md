@@ -4,7 +4,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Product and infrastructure
 
-- Design multiple component evidence references, preserving `source_ref` as the last source that changed a row.
+- Implement and validate [component evidence references](README.md#proposed-component-evidence-references), update ingest workflows and backfill verified claims from notes.
 - Show catalogue country in the client where rows collide; assess splitting mixed-country Peugeot 1971–74 CSVs.
 - Plan a Cinelli/De Rosa bike-image pilot: inspect the existing blob column, settle rights/cropping, then design storage/API/client delivery.
 - Remove the extra DB-password encryption, coordinate SSM/plaintext application deployment, smoke-test and rotate the password.
@@ -20,6 +20,8 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Waiting for distinguishing evidence
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
+
+- **Sugino Super Mighty:** obtain a readable original-fitment photo or coded specification for Bianchi Professional spec 924, and independently dated later Competition evidence, before revising link 1963 or its dates. [Evidence and alternative variants](.agents/skills/ingest-component-catalog/references/known-catalogs/sugino.md#bianchi-professional-super-mighty-date-conflict--2026-11-20).
 
 - **Pinarello catalogue dates:** obtain a dated original imprint or contemporary publisher/importer reference for the early catalogue attributed c.1979 and the c.1990 catalogue before changing their dates; reopen only for new dating evidence. [Completed scan comparisons and retained originals](.agents/skills/ingest-bike-specs/references/known-catalogs/pinarello.md#source-comparison-and-missing-pages--completed-2026-11-20).
 - **EDCO:** recover a clean, straight-on IT1.241.695/V01-92 headset instruction sheet or maker code/stack table linking66387/66390/uncoded2990 to37mm/108g; reconcile boxed French66370(25x1) against the existing configurations before preparing changes. Obtain the BB53/54 axle/construction key separately. [Verified box labels and remaining evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/edco.md#headset-specimen-review-20261120).
@@ -55,7 +57,7 @@ Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agen
 <a id="yaesu-next-work"></a>
 
 - Seek a new free Yaesu 1984–87 or SR No.19–23 scan/holder lead; paid acquisition remains deferred.
-- Seek a period Tange Falcon/New Falcon maker-code and construction crosswalk using the [reviewed evidence limits](.agents/skills/ingest-component-catalog/references/known-catalogs/tange.md#new-falcon-fitment-review--2026-11-20-applied-and-validated); seek maker/importer evidence for VP/HTI pedals, H.L./Kalloy/Kusuki/ITM bars/stems and the remaining named Japanese/Taiwanese gaps.
+- Seek a period Tange Falcon/New Falcon maker-code and construction crosswalk using the [reviewed evidence limits](.agents/skills/ingest-component-catalog/references/known-catalogs/tange.md#new-falcon-fitment-review--2026-11-20-applied-and-validated); seek maker/importer evidence for HTI pedals, H.L./Kalloy/Kusuki/ITM bars/stems and the remaining named Japanese/Taiwanese gaps. Revisit VP pedals with a new period sheet or coded specimen ([prior search](.agents/skills/ingest-component-catalog/references/source-hunts.md)).
 - Obtain a straight-on [Dia-Compe MTB brochure Short Stop panel](.agents/skills/ingest-component-catalog/references/known-catalogs/dia-compe.md#mtb-brochure--ebay-800322888787-photo-inventory-reviewed-2026-11-17) to confirm the obscured lever codes; seek 984D identification. Recover March 1989 pp.4–8/11–14 and the full right edge of p.3 from a new scan. Seek dated Tioga Surefoot-6 evidence and missing 1992 tyre pp.20–25.
 - Recover a readable Gipiemme 1980/1982 brochure or coded 1980–83 importer list from a new scan/holder lead; use the [checked sources and recovery targets](.agents/skills/ingest-component-catalog/references/known-catalogs/gipiemme.md#198083-source-hunt--2026-11-19-read-only).
 - Recover a Vittoria 1982–93 tyre-maker catalogue or model sheet for the remaining clincher gaps only when a new free scan or confirmed shareable-copy lead appears. [Checked archives and usable importer fallback](.agents/skills/ingest-component-catalog/references/source-hunts.md#vittoria-maker-catalogues--source-review-2026-11-20).

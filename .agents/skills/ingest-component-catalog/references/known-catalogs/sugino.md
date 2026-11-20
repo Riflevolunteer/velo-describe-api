@@ -1,5 +1,27 @@
 # Sugino catalogs processed so far
 
+## Bianchi Professional Super Mighty date conflict — 2026-11-20
+
+Live spec **924** on Bianchi Professional **64** links the catalogue's
+“Sugino SuperMighty” to **1963**, Super Mighty Competition, dated 1978–81
+and last changed by Bikecology 1981 source **227**. The only live bike spec
+linked to 1963 is 924. [Bianchi catalogue scan p.3](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1983-bianchi-catalog-p03.jpg)
+names SuperMighty without a model code or Competition/Custom qualifier; the
+[archive](https://ebykr.com/library/bianchi-1983-catalog/) dates the undated
+catalogue to approximately 1983. Its p.10 mentions the 1982 world championship,
+but that alone does not establish a 1983 model year. The bike row's 1983 is an
+attribution, not a printed date.
+
+[Bikecology summer 1981 p.17](https://ebykr.com/library/bikecology-1981-catalog/)
+distinguishes Super Mighty Compe (standard rings) from Custom (lightened rings,
+etc.); existing **9123** represents Custom and **8883** represents Victory.
+The Bianchi wording alone does not distinguish these versions, and the 1981
+catalogue establishes availability, not a 1981 discontinuation. Keep the existing
+link and dates pending a readable original-fitment photo or coded specification
+and independently dated evidence. No database change made. Generic web searches
+for dated 1982–83 Competition/Custom evidence did not establish either the
+Bianchi variant or a reliable later date.
+
 ## Bikecology Maxy Type II identity — 2026-11-20, applied and validated
 
 Selected the existing Bikecology/Maxy II quality TODO. Re-read original

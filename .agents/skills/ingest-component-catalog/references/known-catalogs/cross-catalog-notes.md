@@ -21,6 +21,16 @@ Largest date-conflict groups: Sedis 1402 (29 links), Maillard 8131 (19), Strongl
 
 Applied the six user-approved description-only rewrites. Exact old-description/source guards changed six rows; the identical rerun changed zero. Exact readback matches every replacement below and confirms unchanged titles, dates and source references. SQL only assigned descriptions and did not write bike links or identity fields. The post-load quality report has zero errors and 2,067 review findings: 19 descriptions at limit, 1,684 incomplete dates, 329 linked date conflicts and 35 broad Freewheel labels. Only the six description-at-limit flags were removed. Temporary SQL was removed after readback and idempotency validation. No suffix is reconstructed from a guess; incomplete fitment clauses are omitted, while complete fitment evidence on 8234 is retained. Smaller-rivet Ideale 5655 remains a separate variant. No new source evidence is claimed.
 
+**Remaining limit review, 2026-11-20:** read all 19 current live descriptions
+at exactly 255 characters: 158, 357, 462, 994, 1900, 2287, 3112, 3261,
+7452, 7474, 7922, 8105, 8272, 8642, 8883, 8931, 8996, 9599 and 9799.
+None ends mid-word or in an obviously unfinished clause. Some lack terminal
+punctuation; 7922's repeated `730 / 730` is worth treating cautiously but
+the ending alone does not prove truncation. This surface check does not prove
+that no complete words were lost at the boundary or verify every specification
+against its source. No description or database change is justified by length
+alone; revisit a specific row if its original source shows missing text.
+
 Exact old values for restoration and applied replacements:
 
 - **2379 Huret Club II 1000-01 / 1001-01** (195 characters applied):
