@@ -595,3 +595,12 @@ see the Raleigh catalogue notes for the decision and source.
 - Unqualified StronglightA9 cannot distinguish France/Spidel locknuts over the approximate interval; Simplex6600aero front/rear and SLJpost lack generations, C551SR610-SP is not silently rewrittenSX610T/GT, HuretRival lacks distinguishing versions, Driver has no suitable named model/crosswalk, and TT21Challenger/Duopar lack construction/cage evidence. Generic CourseDural must not map to Philippe354; MavicSSC must not map to the1986base row. ExplicitNULLs preserve these calls.
 - Keep generic stem/lever/bar/brake/pedal/saddle/post descriptions and unnumbered Maillard/Atom/Helico/SH clusters plain text. MaillardSH does not choose600SH versus700SH; Helicosport5speed is not a six-speed cluster. ShimanoAdamas and ThunBetaIISpécial lack exact DB variants; TAProfessionnel tandem wording does not choose a crank layout. Corsa/ClémentCriterium tyre families lack exact construction; generic Record and alloy/chrome rims lack model evidence. Source oddities TT21duplicatedAR rim prefixes and CT2/CTM2literal650½B remain intact. These accepted unresolved values do not automatically create new hunt tasks.
 - Named exact links use period-existing identities: Nervar2010/2011/2023/3020, Stronglight103/107double, SJA222braze-on, LapradeCTP5 versusCTP5E, codeSR100BL, MaillardRA500, explicit1320with700C tyres and named Helicosport. NKnickel Sedisport remains8765 without inferred Delta treatment. The double/triple107 and CT-P5/CT-P5E differences do not support merges.
+
+### c.1987 Pinarello ingestion — applied 2026-11-20
+
+Tre Cime Victory front2318 ends1986; no date extension. Bare Syncro cannot
+distinguish8812/5973/5971; suppress automatic Syncro II5971. Prologo TTT aero
+bars lack version evidence; suppress2745 (only1982 attestation).105 brakes
+lack reach, posts unidentified;600 crank/lever/post versions unspecified.
+Ofmega/TTT/Nisi/Vittoria maker-only values stay text. These NULL decisions
+create no new source-hunt tasks. See [validated catalogue notes](known-catalogs/pinarello.md#circa-1987-gita-catalogue--applied-and-validated-2026-11-20).

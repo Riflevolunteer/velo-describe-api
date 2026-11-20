@@ -1,5 +1,44 @@
 # Pinarello catalogue sources
 
+## Circa-1987 GITA catalogue — applied and validated, 2026-11-20
+
+Source: https://bikalog.org/api/view/Pinarello/1987/pinarello-1987.pdf,
+retained at `bike_specs/sources/pinarello_1987/pinarello-1987.pdf` (six pages).
+CSV: `bike_specs/1987_pinarello_spec.csv`. Applied after user approval:
+source **495**, seven bikes **1500–1506**, 66 specs and 26 component links.
+Prior live baseline had only 1979/1982/1985 Pinarellos loaded.
+Year c.1987 follows archive attribution; no printed year established.
+US edition: p.6 US bulk postage permit and GITA Charlotte address.
+
+Seven complete bikes: Prologo/Tre Cime p.2, Dolomite/Piccolo p.3,
+Asolo/Pista Amatore p.4, Veneto p.6. Cover supplies Prologo Italian ice colour.
+Piccolo explicitly serves shorter riders: adult road scope. Exclude p.5
+Montello/Treviso/Cadore/Bassano frame offerings without defined complete builds.
+Road groups expand into seven established categories; track only crank/post/pedals.
+Veneto uses Ofmega except105SIS derailleurs/shifting. Asolo's supporting makers
+remain in Extras without inferred categories. Cadore Matrix tubing established
+p.2 applies to its named derivatives. No inferred sizes/weights/headsets/hubs.
+
+Loaded seven bikes, 14 existing labels, 66 specs, 26 links. Validated 105 links:
+FD2462/RD4449 four bikes; FC1778/BL406/PD3953 Prologo/Dolomite/Piccolo;
+Veneto SL6130. Asolo FD2481/RD4471. Tre Cime RD4169 (existing1987 S3 rule),
+FC1516/post5764/brakes590/levers235/pedals3720. All within DB component dates.
+Held NULL: Victory FD2318 ends1986; bare Syncro cannot distinguish8812/5973/5971;
+TTT aero bars do not establish2745 (only1982 attestation);105 brakes lack49/57
+reach and post unidentified;600 crank/lever/post variants unspecified; Ofmega,
+TTT,Nisi,Vittoria maker-only. No component insertion/date change/merge proposed.
+
+Generator syntax/SQL summary reviewed. Before/after full comparison of24061 loaded
+specs has identical summaries/findings (15 pre-existing lost mappings); only
+timestamps and new unloaded CSV entry differ. Original root bike-update.sql restored.
+Post-load comparison: all 66 specs unchanged, zero missing/ambiguous identities.
+Readback verified source 495 and US country throughout, no duplicate specs,
+dangling links or date conflicts. All seven model identities match the CSV.
+Per-model specs/links: Prologo 10/5, Tre Cime 14/6, Dolomite 9/5, Piccolo 9/5,
+Asolo 9/2, Pista Amatore 5/0, Veneto 10/3. All 203 SQL statements reran with
+zero rows affected. Existing brand and labels reused; no component rows changed.
+Applied SQL and disposable validation files removed; original PDF/CSV retained.
+
 ## 1985 GITA catalogue — applied and validated, 2026-11-20
 
 Source: [Bikalog PDF](https://bikalog.org/api/view/Pinarello/1985/pinarello-1985.pdf),

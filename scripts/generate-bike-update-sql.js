@@ -194,6 +194,7 @@ function bikeSourceCond(sourceRefSelect) {
 // NON_ROAD_SKIP. Only catalogues whose edition is stated in the source; the
 // rest stay NULL rather than guessed. A filename token overrides this.
 const CATALOGUE_COUNTRY = new Map([
+  ['1987|pinarello', 'US'], // GITA brochure: US bulk postage permit, Charlotte NC (p.6)
   ['1970|raleigh', 'US'], ['1973|raleigh', 'US'], ['1974|raleigh', 'US'], ['1975|raleigh', 'US'],
   ['1976|raleigh', 'US'], ['1977|raleigh', 'US'], ['1978|raleigh', 'US'], ['1979|raleigh', 'US'], ['1980|raleigh', 'US'], ['1981|raleigh', 'CA'], ['1986|raleigh', 'US'], // Raleigh Industries of America / Rampar
   ['1982|raleigh', 'GB'], ['1983|raleigh', 'GB'], ['1984|raleigh', 'GB'], ['1987|raleigh', 'GB'], ['1988|raleigh', 'GB'], ['1989|raleigh', 'GB'], // TI Raleigh UK brochures
@@ -997,7 +998,7 @@ const COMPONENT_OVERRIDES = {
     'suntour superbe pro': [{ from: 1982, id: 2652 }], // FD-2000 endless band (1982-86 per No. 59 / No. 61). Mounting inferred from group-only text: five linked bikes still need photos/fitment evidence (suntour.md, 2026-11-15).
     'suntour ag tech': 2609, // SunTour FD-2800, AG Tech
     // 1986 Cinelli groupset fan-out.
-    'campagnolo victory': 2318, // Victory (1984-86)
+    'campagnolo victory': [{ bike: 'Tre Cime', from: 1987, to: 1987, id: null }, { id: 2318 }], // c.1987 Pinarello: 2318 ends 1986; do not widen component dates
     'campagnolo record corsa': 2283, // C-Record (1985-90)
     // 1979 Peugeot (French catalogue).
     'simplex slja 302': 2567, // Simplex LJ A302 (1978-79); SLJA is the Spidel-badged name
@@ -2553,6 +2554,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'shimano 105 sis': [{ bike: 'Prologo', from: 1987, to: 1987, id: 1778 }, { bike: 'Dolomite', from: 1987, to: 1987, id: 1778 }, { bike: 'Piccolo', from: 1987, to: 1987, id: 1778 }], // c.1987 Pinarello: 1050-series group; existing period row
     'campagnolo nuovo record with super record chainrings': [{ bike: 'Treviso N.R.', from: 1985, to: 1985, id: 1496 }],
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 1509 }],
@@ -3222,6 +3224,7 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    '3ttt aero bars': [{ bike: 'Prologo', from: 1987, to: 1987, id: null }], // c.1987 Pinarello: 2745 only attested 1982; no bend/version established
     "cinelli 66 cotton tape rubber hoods": [{"bike":"Team Champion","from":1981,"to":1981,"id":null}], // 1981 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.
     "philippe professional mb soft sleeves with turbor hoods": [{"bike":"Le Champion","from":1980,"to":1980,"id":2895}],
@@ -3612,6 +3615,7 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
+    'campagnolo syncro': [{ bike: 'Tre Cime', from: 1987, to: 1987, id: null }], // c.1987 Pinarello: first Syncro / C-Record / Syncro II not distinguished
     "campagnolo shift levers": [{"bike":"Grand Record","from":1985,"to":1985,"id":null}], // 1985 Motobecane general catalogue p.6; brand notes.
     "brazed downtube shifters": [{"bike":"Grand Record","from":1981,"to":1981,"id":6150}], // 1981 Motobecane US, pp.14-15; brand notes.
     "pub10 stem ratchet gears": [{"bike":"Nomade 2","from":1981,"to":1981,"id":7796}], // 1981 Motobecane US, pp.14-15; brand notes.
@@ -3881,6 +3885,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    'shimano 105 sis': [{ bike: 'Prologo', from: 1987, to: 1987, id: 406 }, { bike: 'Dolomite', from: 1987, to: 1987, id: 406 }, { bike: 'Piccolo', from: 1987, to: 1987, id: 406 }], // c.1987 Pinarello: 1050-series group; existing period row
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 231 }],
     'campagnolo super record 4000f or record pantograph': null,
@@ -4035,6 +4040,7 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    'shimano 105 sis': [{ bike: 'Prologo', from: 1987, to: 1987, id: 3953 }, { bike: 'Dolomite', from: 1987, to: 1987, id: 3953 }, { bike: 'Piccolo', from: 1987, to: 1987, id: 3953 }], // c.1987 Pinarello: 1050-series group; existing period row
     // 1993 Bianchi Project models print the alloy qualifier before the model.
     'tioga alloy surefoot 6': [
       { bike: 'Project 7', from: 1993, to: 1993, id: 12170 },
