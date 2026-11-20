@@ -1,5 +1,14 @@
 # Bianchi catalogs processed so far
 
+## Source backlog reconciliation — 2026-11-20
+
+Live catalogue readback and existing notes confirm the 1991/1992 Japanese
+editions and 1993 US edition are already loaded (see their sections below).
+The broad TODO request for 1991–99 sources was stale: remaining year gaps are
+1994–99, alongside 1974–77 and 1979–80. A 1991–93 acquisition is useful only
+when it establishes a different market/edition, not another mirror of these
+loaded catalogues. This review changes the worklist only, not DB rows.
+
 ## Cluster review — 2026-11-20
 
 **Applied and validated on user approval.** Pre-change live readback: specs18494 (Sport SX, bike1083, 1989, source325),18682 (Tangent, bike1092, 1989, source325) and1740 (Ocelot, bike112, 1993, source47) are all NULL under Cassette label48. This review supersedes the older unresolved-mechanism/missing-table statements below for these three cluster entries only; it does not verify other fields or every product table.

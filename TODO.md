@@ -5,16 +5,16 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Product and infrastructure
 
 - Implement and validate [component evidence references](README.md#proposed-component-evidence-references), update ingest workflows and backfill verified claims from notes.
-- Show catalogue country in the client where rows collide; assess splitting mixed-country Peugeot 1971–74 CSVs.
+- Show catalogue country on client bike lists/search results where rows collide; assess splitting mixed-country Peugeot 1971–74 CSVs.
 - Plan a Cinelli/De Rosa bike-image pilot: inspect the existing blob column, settle rights/cropping, then design storage/API/client delivery.
 - Remove the extra DB-password encryption, coordinate SSM/plaintext application deployment, smoke-test and rotate the password.
 
-## Bike catalogues (deferred while focusing on components)
+## Bike catalogues
 
 - Verify the date of the MBK Course brochure attributed to 1991, then prepare its road-bike ingest from the [inspected scans](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#mbk-bicycle-catalogue-backlog--source-review-2026-11-19).
-- Ingest the 1985–89 US Panasonic catalogues when bike loading resumes, following the [recorded brand rule and sources](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md#brand-treatment-and-scope-decision--2026-11-20).
+- Ingest the 1985–89 US Panasonic catalogues, following the [recorded brand rule and sources](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md#brand-treatment-and-scope-decision--2026-11-20).
 - Transcribe and prepare the 1987 US Nishiki catalogue for ingestion, reviewing model scope and component links from the [verified scan and page notes](.agents/skills/ingest-bike-specs/references/known-catalogs/nishiki.md#us-catalogue-1987--assessed-for-ingestion-2026-11-20).
-- Assess the bikalog backlog: Koga-Miyata 1980–2001, Raleigh 1991, Colnago C35 1989.
+- Assess the Bikalog Koga-Miyata 1980–2001 and Raleigh 1991 bike sources; check whether its Colnago C35 1989 copy adds specifications beyond the [already assessed photo/frame pack](.agents/skills/ingest-bike-specs/references/known-catalogs/colnago.md#other-copies-seen-not-loaded-2026-10-10).
 
 ## Waiting for distinguishing evidence
 
@@ -62,7 +62,7 @@ Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agen
 - Obtain a straight-on [Dia-Compe MTB brochure Short Stop panel](.agents/skills/ingest-component-catalog/references/known-catalogs/dia-compe.md#mtb-brochure--ebay-800322888787-photo-inventory-reviewed-2026-11-17) to confirm the obscured lever codes; seek 984D identification. Recover March 1989 pp.4–8/11–14 and the full right edge of p.3 from a new scan. Recover Tioga 1992 tyre pp.20–25 from a new complete scan or directly retrievable pages; [checked copies and adverts](.agents/skills/ingest-component-catalog/references/known-catalogs/tioga.md#missing-1992-tyre-pages--source-check-2026-11-20).
 - Recover a readable Gipiemme 1980/1982 brochure or coded 1980–83 importer list from a new scan/holder lead; use the [checked sources and recovery targets](.agents/skills/ingest-component-catalog/references/known-catalogs/gipiemme.md#198083-source-hunt--2026-11-19-read-only).
 - Recover a Vittoria 1982–93 tyre-maker catalogue or model sheet for the remaining clincher gaps only when a new free scan or confirmed shareable-copy lead appears. [Checked archives and usable importer fallback](.agents/skills/ingest-component-catalog/references/source-hunts.md#vittoria-maker-catalogues--source-review-2026-11-20).
-- Seek Bianchi 1974–77/1979–80/1991–99 sources.
+- Seek Bianchi 1974–77, 1979–80 and 1994–99 sources; for 1991–93 seek only editions distinct from the loaded 1991/92 Japanese and 1993 US catalogues, following the [coverage review](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#source-backlog-reconciliation--2026-11-20).
 - Obtain a new maker/importer sheet or coded original fitment for Modolo Quattro/Start, Altenburger S3/53S3, Lee Chi cantilevers, Chang Star 500/cantilever and Polygon AF-500; obtain variant/aero evidence for the remaining CLB Peugeot fitments and a period silver-Sedicolor key for Sedis 9719. Use the [reviewed sources and exact evidence limits](.agents/skills/ingest-component-catalog/references/source-hunts.md#named-brake-and-sedis-follow-up--2026-11-19-read-only) before reopening the hunt.
 - Recover complete Brügelmann 1986–87/1989–92 scans or dated component pages: pursue a restored Velopedia 1990 entry/confirmed shareable copy and the 1992 joglo page lead; reopen the other years only for a new scan or confirmed holder. Use the [checked sources and evidence limits](.agents/skills/ingest-component-catalog/references/source-hunts.md#brügelmann-missing-editions--2026-11-19-source-hunt).
 - Recover the BB-UN73 specification/new-product page from Shimano’s 2003 Trade Sales & Support Manual (English U, August 2002 imprint) when a free interior scan/download or confirmed sharable page becomes available; seek a model-specific dated manufacturer withdrawal notice separately. Use the [reviewed evidence and acquisition leads](.agents/skills/ingest-component-catalog/references/known-catalogs/shimano.md#bb-un73-retirement-list-and-manual-follow-up--2026-11-20-read-only).

@@ -281,3 +281,10 @@ change does not establish new live DB duplicate counts or apply any merges.
 ## TODO
 
 See [TODO.md](TODO.md).
+
+Catalogue country is already returned by the bike API routes and displayed by
+`velo-describe/screens/BikeDetailScreen.js`. The remaining client task concerns
+country disambiguation in list/search results; `screens/BikesScreen.js` still
+groups by year and renders model titles without country. Database password
+handling still calls `decrypt(config.db.password)` in the API and database
+scripts; the plaintext/SSM migration remains pending.
