@@ -1,5 +1,102 @@
 # Ritchey catalogs processed so far
 
+## ProLite / Pro bottom bracket and Vector naming research — 2026-11-20
+
+Research-only follow-up to the identity holds below. No dates, descriptions,
+sources, links or other DB fields changed; no SQL or ingestion prepared.
+
+### Maker sources and scope
+
+The [Ritchey Project index](https://ritchey.vintagebicycledatabase.com/catalogs.php)
+provided previously unprocessed maker pages for these specific questions:
+
+- [Components attributed 1996](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/components.php):
+  archive pages10 (saddles),16 (bottom brackets) and17 (headsets) visually read;
+  page15 checked for adjoining text. The year here is the archive attribution,
+  not a newly verified imprint. This is not a full catalogue reconciliation.
+- [1997 Components PDF](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1997/1997RitcheyComponents.pdf):
+  introduction PDF p2 expressly discusses the1997 range; printed p24/PDF25
+  bottom brackets, p25/PDF26 saddles and p26/PDF27 seatposts inspected.
+  No model-code/specification table resolving the target identities was found
+  on these product pages. Other rendered leaves were used only to locate them.
+- Earlier source485 was rechecked at printed/PDF pp9/11 using its working
+  [registered mirror](https://www.bikecatalogs.com/download/4032); the old
+  individual-image links under the archive's `oldsite` path returned404.
+
+No matching1996/1997 maker source is registered in the live source list.
+Existing sources353/357 are the separate Guida1999/1996 publications;485 is
+the earlier maker edition attributed1994. Research did not create source rows.
+
+### Bottom brackets: distinguish ProLite from SuperLogic before matching Pro
+
+The [1996 maker bottom-bracket page](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/ritcheycomponents1996_16.jpg)
+lists **SuperLogic and ProLite simultaneously**. SuperLogic's illustration
+shows ball cages and races on the spindle shoulders, whereas ProLite is
+explicitly described as a separate sealed-cartridge-bearing design. Both are
+offered with steel or titanium spindles; spindle material alone does not select
+the family. Steel SuperLogic is listed at214g for107mm; steel ProLite at198g
+for107mm, with107/110/113/120mm steel options. Retain these as edition-specific
+listed weights, not corrections to the earlier195g offering.
+
+The [1997 maker page, printed24/PDF25](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1997/1997RitcheyComponents.pdf#page=25)
+places **WCS, Pro and Comp under SuperLogic**, describing Pro's hollow
+nickel-chromium spindle and Comp's replaceable cartridge bearings. Thus Pro is
+also a tier in a distinct, expressly named family; it is not an automatic alias
+for the earlier ProLite. Do not extend the older Logic Pro8412 or WCS8413
+cup-and-cone construction to these later offerings solely from their names.
+
+The [original Guida1999 scan29, printed120](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_29_main_image.jpg)
+was re-read against live **10295 Ritchey Pro**. The guide really prints103mm,
+195g, hollow Ni-Cr-Mo steel spindle and7075-T6 cups. Adjacent Comp and WCS
+entries also print103mm; it is not a transcription of107mm. The guide supplies
+neither SuperLogic/ProLite family name nor a construction drawing/code for Pro.
+Live10295 accurately preserves those printed specifications and has no bike
+links. The earlier1994 ProLite offering's195g does not establish identity.
+
+**Decision:** keep the1994 steel ProLite offering unassigned against10295.
+The next useful evidence is a maker/importer drawing, packaging or service
+parts key identifying the103mm Pro's bearing/cup arrangement and explicitly
+connecting it to SuperLogic or ProLite. This narrows the earlier general
+rename/generation question. No merge, new duplicate row or date proposal.
+
+### Vector: concurrent source names, rather than a demonstrated later rename
+
+The [1996 maker saddle page](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/ritcheycomponents1996_10.jpg)
+names **Vector**, with steel rails280g or titanium rails210g; it describes a
+thermoplastic shell and an extra10mm fore/aft adjustment from its Plus Rail
+design. ProLite with tubular chromoly rails230g is separately listed. The
+[Guida1996 scan49, printed152](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_49_main_image.jpg)
+simultaneously calls the steel280g saddle **Vector Comp**, with nylon shell,
+polyurethane padding and leather cover. This is exactly the existing10649
+description; live readback found no bike links. The1997 maker printed25/PDF26
+again labels the steel-rail version simply Vector and separates ProLite/WCS.
+
+**Inference:** the two names plausibly denote the same base steel offering in
+concurrent sources; the evidence does not require a chronological
+Vector→Vector Comp rename. Nylon and thermoplastic are compatible descriptions,
+but the generic material terms and280g alone are not a model-code crosswalk.
+The earlier1994 p9 illustration was compared with the1996 page: both show a
+cutaway racing profile, and the1994 text specifies leather/steel/black/280g.
+The different viewing angles and obscured rail anchors do not establish
+identical shell moulding or attachment. Obtain an identified underside or maker
+parts key connecting that earlier shell/rail assembly with the guide's Comp
+before adding an alias to10649 or creating another row. Keep the titanium and tubular-chromoly
+versions distinct; do not transfer their weights to the steel version.
+
+### Validation and remaining work
+
+Live readback covered10295,8412/8413,12024,10649–10651 and10402; none has a bike
+link. Source citations were checked against353/357/485 and the maker index.
+Primary scans were visually inspected; the1997 PDF has no useful text layer.
+The Vector and ProLite holds in the earlier table below are superseded by the
+more specific evidence questions here. Other Ritchey holds remain untouched;
+the headset page was not used to assign10402 to a later Pro/Comp tier.
+TODO now retains only the specific missing construction evidence for these
+two researched identities, alongside the other existing Ritchey questions.
+Task-created downloads/renders were removed after preserving URLs and page
+references. No matcher tests or DB write validation were needed for this
+documentation-only research.
+
 ## Component catalogue attributed 1994 — applied and validated (2026-11-20), source 485
 
 **User approved and applied:** source485, two component inserts (12155–12156) and
@@ -120,8 +217,8 @@ specifications were transcribed before DB comparison.
 | Comp Road seatpost /8 |8408 FD Road;10638 Comp;10169 Expert Road;2000 Comp Road offering |Maker240mm/220g vs old210/240mm210g,1996 Comp230mm210g and2000 Comp250mm250g. “Original FD design” does not uniquely identify the tier/version. |
 | Expert Mountain seatpost /8 |8407 untiered FD Mountain |Standard/OS diameter list and250g overlap; prior OS6061-T6 versus page-wide2014-T6 construction and competing Comp tier require an explicit tier/generation crosswalk. Do not repoint existing FD bike links. |
 | Expert Road seatpost /8 |8408;10169 Expert Road |240mm/220g versus later250mm/220g and differing alloy/diameters; confirm generation before broadening/duplicating. |
-| Vector base saddle /9 |10649 Vector Comp |280g steel-rail leather offering vs later Comp with nylon/polyurethane detail; confirm Vector→Vector Comp naming lineage before insertion/retitle. |
-| Logic ProLite steel BB /11 |10295 Pro |Double-sealed cartridge,7075 cups,hollow nickel-chromium spindle,195g;107/110/113/120mm versus1999 Pro103mm. Confirm naming/generation before creating a potential duplicate. Distinct from250g cup-and-cone WCS8413 and150g titanium12024. |
+| Vector base saddle /9 |10649 Vector Comp |Concurrent1996 maker Vector / guide Vector Comp naming now verified above; compare earlier shell/rail construction before enrichment or a new row. No demonstrated chronological rename. |
+| Logic ProLite steel BB /11 |10295 Pro |195g,107/110/113/120mm versus guide Pro103mm. New maker evidence distinguishes ProLite/SuperLogic and puts Pro in SuperLogic; identify103mm Pro's bearing/cup arrangement before matching. See research above. |
 
 Later Fuzzy Logic Pro/Comp10402,2000 Comp Road and Pro Aero/Aero OCR10190/10191
 questions in the2000 section remain open; this scan supplies no rim evidence.

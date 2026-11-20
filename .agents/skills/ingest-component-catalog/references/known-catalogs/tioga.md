@@ -1,5 +1,106 @@
 # Tioga catalogs processed so far
 
+## 1989 catalogue and 1991 Avenger supplement — identity research 2026-11-20
+
+Research-only examination of the two Gringineer leads named in TODO. All22
+posted scans were visually inventoried and compared with the live Tioga rows;
+no component/source inserts, SQL, date changes or link/matcher edits.
+
+### Edition scope and page ledger
+
+- [1989 post](https://www.gringineer.com/blogs/default-blog/1989-tioga-atb-parts-catalog):
+  15images, filenames `tioga1989_0002.jpg` through `_0016.jpg`, at
+  `https://cdn.shopify.com/s/files/1/0661/0501/6425/files/`.
+  They show printed pp1–14 and the back cover, which prints copyright1989.
+  The front cover is not among the posted images; do not call this a verified
+  complete physical copy.
+- [1991 post](https://www.gringineer.com/blogs/default-blog/1991-tioga-atb-parts-catalog):
+  seven images, `Tioga1991_0002.jpg` through `_0008.jpg` at the same CDN path.
+  Printed pp1–6 and back cover, copyright1991. This is an **Avenger Oversize
+  System supplement**, not a full1991 tyre/ATB range catalogue. No tyre pages.
+  Its missing front cover was not recovered.
+
+| Edition/pages | Surviving contents | Live reconciliation / identity limit |
+|---|---|---|
+|1989 pp1–2|MTB Master, Expert, Beartrap, I and II headsets; double locknuts|Master/Expert differ in stack from current10838/10839; Beartrap/I need configuration review. MTB-II has no Tioga row. Locknuts are hardware.|
+|1989 pp3–4|T-Bone internal, vertical and standard stems; bolts and bar shim|Related to11466/11468/11470, but older weights are not proof of unchanged versions. No printed TBPI/TBPV/TBP code assigned retrospectively.|
+|1989 pp5–6|Mountaineer Prestige-II, Master TX, Master, I and II bars; Biogrip/IIs|Prestige-II and Master resemble11476/11477 with different listed weights; compare construction before enrichment. I/II are distinct named bar offerings; grips excluded.|
+|1989 pp7–8|Farmer John, Cousin, Nephew, Mud Dawg, City Slicker tyres|Five explicitly named models with tread illustrations; none represented by a matching26in/24in Tioga row. Existing11685 City Slicker is700C. Detailed evidence below.|
+|1989 p9|Surefoot-I/II/III pedals|I is positively specified here, unlike the intro-only1992 scan; no live I row. II/III correspond by name/design to10842/10843; no new axle/cage details inferred from appearance.|
+|1989 p10|Powerclip-I/II, Quick Flick-I/II|Clips/straps outside existing component categories.|
+|1989 p11|Carbo Pillar, Prestige Pillar, seat QR|Carbo253g/older head is not automatically11483's expressly redesigned1992 head. Prestige resembles11485's tubular clamp; diameter/length/version review needed. QR hardware excluded.|
+|1989 pp12–14|Cable hanger/cables, sealed BB unit, loose axles, fixing bolts, Watchdog lock|Sealed unit is a candidate relative of11479; page gives3P/3R and2-degree taper but no360g claim. Loose axles/hardware/locks excluded.|
+|1991 p1|OS-H6/H3/H2 Avenger headsets and dimensions|Same codes/stack as10834–10836; exact14g mass relationship below. No OS-H7/HX offering inferred from absence.|
+|1991 p2|OS-TBPI/TBPU/TBPV/TBP stems|Separate underside-routing **OS-TBPU**, not in existing Tioga rows; do not map it to vertical11469 or standard11471. Other codes match family candidates11467/11469/11471; retain edition weights separately.|
+|1991 pp3–4|OS-F5/F6/F4 forks, OS-LA double locknuts, OS-CHA/CHB hangers|Forks and hardware outside current ingestion categories.|
+|1991 p5|OS-SPTP/SPTA/SPA posts and7NL/7EL axle variants|OS-SPTA is explicitly alloy head/post, unlike chromoly OS-SPTP. Shared tubular clamp appearance does not identify all as11485. OS-SPA oversize options need comparison to11486. Loose axles excluded.|
+|1991 p6|Oversize workshop tools|Outside component categories.|
+
+### Tyre identity evidence
+
+The [1989 printed p7](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/tioga1989_0008.jpg)
+and [p8](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/tioga1989_0009.jpg)
+show separate named tread patterns. Each lists35/65psi and Polyrubber compound;
+no bead material was established. Preserve the printed wording about casing
+end count rather than silently converting it to a modern TPI specification.
+
+| Printed name | Sizes and listed weights | Distinguishing claim |
+|---|---|---|
+|Farmer John|24x1.95,696g;26x1.95,720g|Paddle tread; expressly a hill-climbing rear tyre.|
+|Farmer John's Cousin|24x1.95,675g;26x1.95,748g|Denser tread for directional control; do not invent an explicit front-only designation.|
+|Farmer John's Nephew|24x1.95,688g;26x1.50,510g;26x1.95,734g|Distinct paddle tread, all-round use.|
+|Mud Dawg|26x1.95,710g|Separate illustrated tread and gapped side blocks.|
+|City Slicker|26x1.50,520g;26x1.95,790g|Canal-type tread and large arc radius.|
+
+Live11685 is a700x32C City Slicker from the1996/1999 guides; these26in
+offerings are not evidence to overwrite its size or copy its535/418g weights.
+The named26in tyres have no live Tioga counterparts. This source supplies a
+usable earlier inventory but **does not recover or establish the specifications
+on the missing1992 pp20–25**. It has no Hound/Trail Dawg or hybrid700C page;
+do not fill those1992 gaps from the1989 names by inference.
+
+### Headsets: resolve weighing basis before inventing versions
+
+The [1991 supplement p1](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/Tioga1991_0002.jpg)
+and [registered1992 source362](https://bikalog.org/api/view/Tioga/1992/Tioga92.pdf#page=5),
+printed p4/PDF5, give:
+
+| Code / live ID |1991 listed weight|1992 listed weight + retainers|Stack in both|
+|---|---|---|---|
+|OS-H6 /10834|121g|107g+14g=121g|33.5mm|
+|OS-H3 /10835|144g|130g+14g=144g|31.5mm|
+|OS-H2 /10836|176g|162g+14g=176g|33.5mm|
+
+The exact differences support a retainer-included versus retainer-excluded
+weighing explanation. The1991 page does not explicitly declare that basis,
+so this remains a strongly supported inference, not a new measured weight.
+No generation split or correction to the existing weights is justified by
+those differences alone.
+
+In contrast, [1989 p2](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/tioga1989_0003.jpg)
+gives MTB Master39.5mm and Expert35.5mm stacks; the1992 printed p5/PDF6
+gives33.5mm for both Master DL10838 and Expert CR10839. Those are assembly
+dimension differences, not merely an unspecified weighing basis. Preserve
+the older configurations during future reconciliation; generic Master/Expert
+names do not warrant automatic matches to the later rows.
+
+### Research validation and next action
+
+Live inventory covered every brand699 row and cross-brand title searches for
+Farmer John/Mud Dawg/City Slicker. Only source362 is registered for a Tioga
+catalogue; neither newly inspected edition was inserted. A focused live-spec
+search for the named tyres, Surefoot and MTB Master, plus references to the
+compared Master/Avenger/City Slicker IDs, returned only the four already linked
+Surefoot-6 Bianchi values; these are a separate model and need no changes.
+No immediate new link or proven wrong existing bike link was identified.
+
+The inventory/tyre-page check is complete; TODO now names the actual remaining
+model/configuration reconciliation. No date extensions, source registrations,
+new rows or relinks are implied by this research. All task-created HTML,
+downloaded scans, review-size copies and comparison PDF/renders were removed
+after recording the original URLs/pages. Documentation links and diff checked;
+no code tests needed.
+
 ## Missing 1992 tyre pages — source check 2026-11-20
 
 The newly located [Bike Catalogs copy](https://www.bikecatalogs.com/download/2698)

@@ -1,5 +1,60 @@
 # Sedis catalogs processed so far
 
+## Sedisport / Delta treatment — period evidence 2026-11-20
+
+Research-only follow-up to the 1402/8765 identity question below; no database,
+CSV or generator changes, and no proposed date moves.
+
+- **Original packaging attached to 1402:** the [front photograph](https://velobase.com/CompImages/Chains/0D807A12-2439-4BFE-A0EC-9DBD3590F1FE.jpeg)
+  labels the model `sedisport` and separately says `DELTA TREATED` and
+  `MADE IN FRANCE`. The [reverse](https://velobase.com/CompImages/Chains/30D2EA81-F6B1-45B3-938C-20905F92E9D3.jpeg)
+  also names Sedisport. These are primary packaging artifacts hosted by
+  VeloBase, not an independently dated catalogue or a proven association
+  between the loose chain and its wrapper. No distinguishing model code was
+  established from these photographs; fine print and fitted length were not
+  used to identify a generation.
+- **Period technical evidence:** Frank J. Berto, *Bicycling magazine's complete
+  guide to upgrading your bike*, copyright 1988, chapter 9, printed pp.165–166
+  ([original scan](https://notfine.com/bikes/books/Bicycling%20magazine%27s%20complete%20guide%20to%20upg%20-%20Berto%2C%20Frank%20J.pdf#page=179),
+  PDF pp.179–180; copyright/imprint PDF p.6). Berto describes the narrow,
+  bushingless Sedisport with flat outer plates and bulged inner plates. He
+  treats ordinary gray/silver/gold Sedisports as finish variants, distinguishes
+  the Pro by selected links, harder rollers and stronger riveting, and identifies
+  Delta as the pin surface-hardening process used across the Sedis range he
+  describes. This is a contemporary account including the author's chain
+  testing, not a maker code table; its statement does not establish every
+  earlier or later Sedis offering's treatment.
+- **1979 source checked for scope:** the [Chicken section](https://www.icenicam.org.uk/library/Sedis/Chains_from_R_J_Chicken_catalogue_1979-11-07.pdf)
+  printed pp.31–33/PDF pp.3–5 was visually rechecked. The model/size page
+  illustrates Sedicolor and the technical page depicts a conventional bushed
+  chain. Its chrome-infiltrated-pin discussion is not a Sedisport-specific
+  construction description. The separate price-sheet Sedisport listing does
+  not establish an untreated predecessor just because it omits Delta.
+
+**Conclusion:** Delta wording does not establish a separate Sedisport model
+or a successor to ordinary Sedisport. The earlier ingestion rationale below
+(8765 as a plain predecessor and 1402 as a later Delta variant) is superseded.
+1402/8765 are a supported duplicate candidate, not yet an approved merge:
+check the complete live records, provenance and linked variants before
+choosing the retained identity. Preserve genuine Pro/code/construction
+distinctions. Nickel plating alone does not prove a chain is Pro.
+
+The link review also needs to separate named Sedisport values from treatment-only
+values. Current generator keys `sedis 110 links delta treated` (1980 NL Peugeot
+PX 18 M, PX 18 MC and PK 65 lady) and `112 links delta treated` (PL 8 M) select
+1402 without a model name in the CSV value. Delta treatment and fitted length
+alone do not justify that precise identity. Check the original Peugeot pages
+and any independent fitment evidence before proposing to retain, clear or
+repoint those links. Conversely, ordinary Sedisport versus Delta wording does
+not justify splitting otherwise identical named models between 8765 and 1402.
+This supersedes that distinction in earlier Motobecane/Peugeot link rationales;
+existing links are historical state, not newly validated by this research.
+
+Sources were checked against the packaging photographs and rendered book/catalogue
+pages, not OCR alone. TODO now names the duplicate/link review rather than
+requiring a code crosswalk merely to establish what Delta means. No SQL was
+prepared. Task downloads and page renders were removed after recording sources.
+
 ## Sedisport Delta 1402 — identity and weight review 2026-11-20
 
 Before correction, 1402 `Sedis Sedisport Delta` was dated 1980–87 and described
@@ -30,9 +85,10 @@ review of 1402/8765 and affected links, but do not establish whether the
 VeloBase specimen is identical to the general 8765 family or whether a merge
 or bulk relink is appropriate. In particular, treatment alone cannot identify
 the Sedisport model where the bike catalogue only names Sedis. The normal Sedis
-chain duplicate report returned no groups. No link or date changes were made;
-seek a period coded model/packaging crosswalk and review the values and
-generator mappings before preparing any merge, relink or date change.
+chain duplicate report returned no groups. No link or date changes were made.
+The period-evidence follow-up above resolves the treatment-versus-model
+terminology; its duplicate/link review supersedes the earlier crosswalk-first
+next step.
 
 ## Kalkhoff Sedis Gold date conflict — 2026-11-20 read-only
 
@@ -122,11 +178,12 @@ intentional non-identifications, not an instruction to create a generic row.
 - Inserted (1979-1979, UUID source_id, source_ref 177): 8762 Sedis 4L, 8763
   Sedis 4D (112 or 114 links under one ref), 8764 Sedis Sedicolor (ref 4DS),
   8765 Sedis Sedisport (114 / 116 links; price sheet only, thin description,
-  inserted because 1402 Sedisport Delta exists and this is its plain
-  predecessor).
+  inserted under the then-assumed plain-predecessor distinction from 1402;
+  that identity rationale is superseded by the period-evidence review above).
 - No existing rows changed, deleted or merged. Not touched: 1402 Sedisport
   Delta (1980, 410g, 5 bike_spec links; "Delta" not in the catalogue, taken
-  as a later variant); 1398 Sedis Gold (1980, 311g Actual, 2 bike_spec
+  as a later variant at ingestion, an assumption now superseded above);
+  1398 Sedis Gold (1980, 311g Actual, 2 bike_spec
   links; may be related to the Sedicolor gold links but nothing says so);
   1400 Modele Course and 1401 Pro (absent, no duplicate signal);
   1397 / 1399 Sachs-Sedis (later Sachs-era names).

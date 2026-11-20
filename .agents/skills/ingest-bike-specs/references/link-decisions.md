@@ -595,6 +595,15 @@ see the Raleigh catalogue notes for the decision and source.
 - Nomade ThunBetaII has no suitable named DB row; do not substitute AeroChampioni/Coronado/Revolution. LeVelo Solida-by-Stronglight **steel cotterless** does not identify a generic Solida construction variant. MaillardCompact13–22 lacks a coded freewheel model; unnumbered Maillard5/6speed clusters likewise remain unlinked. Mirage Atom/Maillard sealed small-flange and other generic hubs do not identify a precise model. MichelinHiRise text does not identify a safe model row; generic Michelin/Hutchinson tyres and unnumbered Weinmann/Rigida rim variants stay text. These decisions do not create new hunt tasks without a concrete new evidence lead.
 - GrandRecord WolberArc-en-Ciel345g/700C uses the existing manufacturer-backed SuperChampion crosswalk5180; WolberCorsa265g matches contemporary Corsa806911, not270gTeamCorsa. MirageRigida15/21 explicitly identifiesAL15215154. Cosmosalloy9204 is the existing1985generic alloy row, not the later named Super. Keep source marketNULL until catalogue-specific distribution evidence supports an edition country; archive metadata alone was not used.
 
+## Sedisport / Delta terminology review — 2026-11-20
+
+[Period packaging and technical evidence](../../ingest-component-catalog/references/known-catalogs/sedis.md#sedisport--delta-treatment--period-evidence-2026-11-20)
+supersede earlier rationales distinguishing ordinary Sedisport 8765 from 1402
+solely by explicit Delta treatment. Delta is a shared pin treatment, so it also
+does not identify Sedisport from maker-only values. Existing links remain
+unchanged pending the scoped duplicate/fitment review; this is not a bulk-relink
+decision. Preserve independently established Pro/code/construction differences.
+
 ## Motobecane France Course-Training c.1984–85 (reviewed 2026-11-18)
 
 - Source461, FR; [evidence and validation](known-catalogs/motobecane.md#france-course-training-c-198485--loaded-and-validated-2026-11-18). Provisional database year1985 is an index only; no exact publication year or component-date move established from this undated source.

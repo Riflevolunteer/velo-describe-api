@@ -37,14 +37,20 @@ What has been searched for missing catalogues and evidence, with dead ends, site
     Bianchi MTB catalogues, 5 images each: not opened; mountain bikes.
   - [1989 Tioga ATB parts](https://www.gringineer.com/blogs/default-blog/1989-tioga-atb-parts-catalog)
     (15 scans) and [1991 Tioga ATB parts](https://www.gringineer.com/blogs/default-blog/1991-tioga-atb-parts-catalog)
-    (7 scans, 2388 × 3172), both posted 2026-10-10. The one 1991 page viewed
-    (printed p. 2) lists coded Avenger T-Bone stems OS-TBPI / OS-TBPU / OS-TBPV /
-    OS-TBP with extensions and weights. Contents otherwise not inventoried;
-    whether either has tyre pages is unknown.
+    (7 scans), both posted 2026-10-10. All22 scans inventoried2026-11-20:
+    1989 has printed pp1–14/back cover, with five named tyre models on pp7–8;
+    1991 is the Avenger Oversize supplement, pp1–6/back cover, with no tyres.
+    Neither recovers the missing1992 tyre pages. [Page ledger, live
+    reconciliation and construction/weight findings](known-catalogs/tioga.md#1989-catalogue-and-1991-avenger-supplement--identity-research-2026-11-20).
   - [1995 Ritchey](https://www.gringineer.com/blogs/default-blog/1995-ritchey-catalog),
     14 scans: the one page viewed is a complete-bike page (Crazy Pete), so
     this looks like the bicycle catalogue, not a component crosswalk.
-  - Not opened: 1987 Ritchey Super Comp, 1989 Specialized components, 1995
+  - [1987 Ritchey Super Comp](https://www.gringineer.com/blogs/default-blog/1987-ritchey-super-comp),
+    checked2026-11-20: an owner's bike/restoration post, not a period catalogue.
+    It explicitly describes fitting a1984 Annapurna handlebar and retaining
+    its controls/grips; it is not factory-fitment proof for the1987 model.
+    Removed from the unopened component-catalogue triage action.
+  - Not opened: 1989 Specialized components, 1995
     Ringlé, 1997 Titec, 1997 Paul, and the Trek / Klein / Specialized / other
     bike catalogues.
 
