@@ -1,5 +1,76 @@
 # Pinarello catalogue sources
 
+## Circa-1990 catalogue — applied and validated, 2026-11-20
+
+Applied after user approval: source **497**, bikes **1508–1516**,
+140 specs and 49 component links. Maintained source:
+`bike_specs/sources/pinarello_1990/pinarello-c1990-17pages.pdf`, the fuller
+[17-page copy](https://www.bikecatalogs.com/download/5849) verified in the
+source-comparison section below. CSV: `bike_specs/1990_pinarello_spec.csv`.
+Applied SQL removed after validation.
+Edition label `Pinarello catalogue (c.1990)` preserves archive-attributed dating;
+no new printed date established, and market remains NULL. Existing dating TODO
+is not a blocker to explicitly qualified ingestion. Live preflight found no
+1990 Pinarello bikes or matching source.
+
+Nine complete road bikes, PDF positions 4–12, visually transcribed in three
+batches with original-language values and English CSV text:
+
+- p.4 Montello Record Noir; p.5 Montello Record; p.6 Montello Croce d'Aune.
+- p.7 Treviso Croce d'Aune; p.8 Treviso Chorus; p.9 Asolo Prologo Chorus
+  (one printed model, not separate Asolo and Prologo builds).
+- p.10 Asolo Athena; p.11 Asolo Ultegra; p.12 Veneto 105 7V.
+
+Exclude frameset panels14/16 and non-spec pages1–3/13/15/17. Printed sizes
+retained: Montello/Treviso50–65cm in1cm increments with literal c/f convention;
+Asolo Prologo50–62cm in2cm increments; other Asolo50–60cm by1cm then60–66cm
+by2cm; Veneto50–64cm by2cm. No colours, weights or photo-derived components.
+Veneto states three Aelle tubes, not an all-Aelle frame. Group expansion uses
+seven established categories, no inferred hubs/headsets/shifters. Printed group
+wording retained in Extras. Chain/freewheel Regina applies to seven Campagnolo
+builds only; neither Shimano panel prints that line. Preserve alternative maker
+values for bars/rims. Vittoria tubular construction is explicit in Italian and
+French; Italia saddle wording remains maker-only. No inferred Turbo model.
+
+Loaded nine bikes, 16 existing labels, 140 specs, 49 validated links:
+
+- Montello C-Record FD2283/RD4133/crank1482/brakes560/levers214; Noir's explicit
+  SGR pedals3694, ordinary Record's group pedals3693. R010 rear selection
+  follows existing c.1990 group mappings; dating is qualified, not independent
+  introduction proof. C-Record post length is unspecified (5737/5738), held NULL.
+  Noir is the bike name, not evidence for Century group components.
+- Croce d'Aune: FD2288/RD4112/crank1489/post5742/brakes567/levers223/pedals3703.
+- Chorus: FD2286/RD4108/crank1487/post5742/brakes565/levers220/pedals3700.
+  Standard short-cage road and plain-finish rules follow existing group mappings;
+  no inferred graphite/RS variants. Base Chorus FD2286 covers standard braze-on
+  and clip-on options, unlike the distinct adjustable-clamp variant2287.
+- Athena: FD2281/RD4092/crank1479/post5736/brakes558/pedals3690; lever remains
+  NULL because the broad group does not distinguish standard211 from Compact7026.
+- Ultegra7V: FD2478/RD4466/brakes966 (6400-series); other group parts have
+  multiple configurations and remain NULL. 1057V does not resolve 1051 versus
+  105SC1055 generation; all seven component links remain NULL.
+
+Other unlinked calls: Nisi Laser lacks eyelet/configuration evidence (5136 ends
+1988;5137 undated); 3T Record lacks exact bend/version. Generic makers, Vittoria
+tubulars, Regina chain/freewheel and ACI spokes do not identify model rows.
+No component insertion, date change or merge performed. See link-decisions.md.
+
+Validation: nine unique titles, maximum CSV field length88, generator syntax and
+all49 summary links reviewed by category/date; all within recorded dates.
+All16 labels exist. Full before/after comparison over24,147 loaded specs has
+identical summary/findings (15 pre-existing lost proposals); only timestamps
+and the new unloaded CSV entry differ. Root bike-update.sql restored. Original
+PDF and normalized CSV retained; disposable renders/transcriptions/scripts/
+comparison files removed. Applied readback confirmed source 497 on every
+bike/spec, NULL country, correct model identities and expected spec/link totals:
+Montello Record Noir16/6, Montello Record16/6, Montello Croce d'Aune16/7,
+Treviso Croce d'Aune16/7, Treviso Chorus16/7, Asolo Prologo Chorus16/7,
+Asolo Athena16/6, Asolo Ultegra14/3, Veneto1057V14/0. No duplicate bikes/specs,
+dangling links or linked date conflicts. All 140 generator/live mappings
+unchanged, zero missing or ambiguous identities. All 381 SQL statements reran
+with zero rows affected. Existing brand and all labels reused, no label-order
+changes. Applied SQL and validation output removed after verification.
+
 ## Circa-1987 GITA catalogue — applied and validated, 2026-11-20
 
 Source: https://bikalog.org/api/view/Pinarello/1987/pinarello-1987.pdf,

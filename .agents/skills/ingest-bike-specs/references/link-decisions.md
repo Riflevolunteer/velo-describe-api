@@ -613,3 +613,15 @@ code/generation crosswalk. Rigida13/20 700C candidate9895 ends1987; no date
 extension inferred. Generic Atom hubs, saddle, alloy post/stem, bars/headset,
 touring levers and uncoded13–32T cluster remain text. These deliberate unlinked
 values do not create source-hunt tasks. See [validated catalogue evidence](known-catalogs/motobecane.md#1989-programm-89-mirage-8-sheet--applied-and-validated-2026-11-20).
+
+### c.1990 Pinarello ingestion — applied 2026-11-20
+
+C-Record group-only seatposts cannot distinguish130mm5737 from long5738;
+scoped Montello Record/Noir NULLs. Noir title does not identify Century parts.
+Athena levers retain standard211/Compact7026 ambiguity. Ultegra7V supports
+6400-series FD/RD/brakes, but not crank/lever/pedal/post configuration.1057V
+cannot select1051 versus105SC1055 generation; no date expansion or seven-speed
+code inference. NisiLaser lacks eyelet/configuration evidence;5136 ends1988,
+5137 undated.3TRecord lacks bend/version; generic Italia/Vittoria/Regina/ACI
+and alternative maker values stay text. No automatic hunt tasks arise.
+See [validated catalogue evidence](known-catalogs/pinarello.md#circa-1990-catalogue--applied-and-validated-2026-11-20).

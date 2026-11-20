@@ -105,6 +105,11 @@ function dataSourceSubquery(label) {
 // catalogue"); files without one keep the original label so loaded rows still match.
 // Separate same-year brochures without inventing another bike brand or market.
 const CATALOGUE_EDITIONS = new Map([
+  ['1990_pinarello_spec.csv', {
+    label: 'Pinarello catalogue (c.1990)',
+    citation: '1990_pinarello_spec.csv; https://www.bikecatalogs.com/download/5849; 17-page copy, complete-bike panels PDF4-12, framesets14/16 excluded. c.1990 archive attribution; no printed year. Market unconfirmed.',
+    country: null,
+  }],
   ['1989_motobecane_spec.csv', {
     label: 'Motobecane Programm 89 (German-language, partial)',
     citation: '1989_motobecane_spec.csv; Rennrad-News post4814861 (ElliRadler, 3 Oct 2020); dated Programm89 cover attachment843312 and Mirage8 EC185 sheet843314 shown together. One recovered model; market unconfirmed.',
@@ -619,6 +624,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'shimano ultegra 7v': [{ bike: 'Asolo Ultegra', from: 1990, to: 1990, id: 2478 }], // c.1990 Pinarello: 6400-series 7-speed; other group variants stay unresolved.
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 2313 }],
     'campagnolo super record 4000f or record pantograph': null,
@@ -1024,6 +1030,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    'shimano ultegra 7v': [{ bike: 'Asolo Ultegra', from: 1990, to: 1990, id: 4466 }], // c.1990 Pinarello: 6400-series 7-speed; other group variants stay unresolved.
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 4152 }],
     'campagnolo super record 4000f or record pantograph': null,
@@ -1885,6 +1892,7 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'shimano ultegra 7v': [{ bike: 'Asolo Ultegra', from: 1990, to: 1990, id: 966 }], // c.1990 Pinarello: 6400-series 7-speed; other group variants stay unresolved.
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: null }],
     'campagnolo super record 4000f or record pantograph': null,
@@ -4580,7 +4588,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo nuovo record fluted': 5748, // Campagnolo 1044, Nuovo Record (Superlegerro)
     'campagnolo fluted': 5748,
     // 1987 Bianchi (two lengths in the DB; the common 130mm).
-    'campagnolo c record': [{ to: 1991, id: 5737 }, { from: 1992, to: 1995, id: 7037 }], // C-Record (Aero type, 130mm) / SP-RE Record (1992 Bianchi JP)
+    'campagnolo c record': [{ bike: 'Montello Record Noir', from: 1990, to: 1990, id: null }, { bike: 'Montello Record', from: 1990, to: 1990, id: null }, { to: 1991, id: 5737 }, { from: 1992, to: 1995, id: 7037 }], // C-Record (Aero type, 130mm) / SP-RE Record (1992 Bianchi JP)
     // 1985 Raleigh (Sheldon Brown scan).
     'sugino sp kc alloy micro adjust': 5928, // Sugino SP-KC
     'sugino sp kc 230mm alloy micro adjust': 5928, // Sugino SP-KC
