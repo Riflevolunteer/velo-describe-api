@@ -1,5 +1,87 @@
 # SunTour catalogs processed so far
 
+## XCD mixed-gallery description — 2026-11-20, applied and validated
+
+User approved with “apply”. Guarded SQL inserted one catalogue source and
+updated exactly two component descriptions. The rerun inserted/updated zero
+rows. SQL and validation scratch files were removed after exact readback;
+old/new values below preserve the restoration evidence. No component additions,
+merges, title, search-text, date, group or bike-link changes.
+
+**2662 applied description (213 characters):**
+`XCD triple front derailleur; grey body, black upper linkage, slotted cage. Source gallery mixes constructions; FD-XD00-GX and 18T claims are not verified for its main specimen. Exact XD00/XD10 identity unresolved.`
+
+**Captured old description:**
+`XCD 6000 triple front derailleur, VeloBase model FD-XD00-GX, dated 1990: 28.6mm clamp, 5mm Allen clamp/cable bolts, no cable stop, 18T difference. Exact relationship to catalogue FD-XD10 remains unresolved.`
+
+Source_ref **1** and VeloBase UUID stay unchanged. The applied description
+qualifies the page-level FD-XD00-GX/18T claims and retains visible construction;
+it does not identify the main specimen as XD10. The former clamp/bolt dimensions
+are omitted because the gallery does not securely attribute them to that specimen.
+Live 2662 has zero bike links. Keep 2661 and 2662 separate; the scoped duplicate
+report proposes no XCD front merge. Existing 1990 top-pull override remains;
+this description correction does not newly validate that mapping.
+
+Validation: exact before/after readback confirms both approved descriptions,
+all other fields unchanged apart from Mavic 5062 source_ref 357 → 483, and
+zero bike links retained on both rows. Related Mavic rows 5063/10199/10607
+are unchanged. Both descriptions fit 255 characters (5062: 227; 2662: 213).
+Whole-DB quality summary and every finding are identical before/after:
+zero errors, 2,075 review findings. The source table gains one row; component
+count remains 11,218. Generator component reads use ID/title/category rather
+than descriptions/source provenance; no identity or matching inputs changed,
+so no full generator rerun or code tests were needed. The existing duplicate
+and keep-separate decisions above stand. Unresolved evidence gaps remain open.
+
+Restoration, only if deliberately requested: guard the current UUID, applied
+description and source_ref, restore the captured old description and source_ref
+(5062=357, 2662=1). Remove source 483 only if unreferenced and deliberately
+rolling back its registration. All source URLs remain in these notes.
+
+## XCD front 2662 mixed specimen gallery — 2026-11-20, read-only
+
+Live readback confirms 2661 is FD-XD00-GX (1988–1990/source 199), while
+2662 remains uncoded (1990/source 1), with its description attributing
+FD-XD00-GX and 18T to VeloBase and preserving the unresolved XD10 relationship.
+No DB, source-registry, matcher or bike-link changes were made.
+
+Directly retrieved [2662's original page](https://velobase.com/Pages/ViewComponent.aspx?ID=7C8AC7D8-1AB3-43F1-90EB-D891069C922D)
+and visually inspected all three full-size photographs:
+
+- [Main photograph B80767F4](https://velobase.com/CompImages/FDerailleur/B80767F4-F90B-4E92-9692-CBDE36E1D52A.jpeg)
+  (credited to eBay seller legendarymen2010) shows a black upper linkage,
+  grey body and sculpted cage with a long narrow outer slot, on red cloth.
+- [Added photograph BC5F23A2](https://velobase.com/CompImages/FDerailleur/BC5F23A2-6F7B-4649-9F00-9DB347E7D7C3.jpeg)
+  and [reverse B735C600](https://velobase.com/CompImages/FDerailleur/B735C600-8FAE-4B36-964F-DCEB874DBDE7.jpeg),
+  both credited to movinyl, show a different construction: black clamp/body,
+  silver linkage and broad outer-cage opening. The accompanying original
+  instruction heading explicitly lists FD-XD00-GX, FD-4050-GX and FD-XE45-GX;
+  a SunTour parts bag is also pictured. An instruction covering several models
+  is not alone proof of the exact enclosed specimen's identity.
+
+This is a mixed-construction gallery, not three views of one unit. Consequently
+neither the page-level model field nor the added photos' literature establishes
+FD-XD00-GX for the main red-background specimen. This qualifies the earlier
+placeholder review's treatment of the gallery as one specimen; do not merge
+2662 into 2661 or transfer measurements across its photographs.
+
+A new comparison is the [Bicyclist FD-XD10-GXH listing](https://bicyclist.cc/product/suntour-xcd-front-mech-1990/).
+All four original photographs were inspected (uploads/2021/10,
+`Suntour-XCD-6000-front-mech-1990-%E2%80%93-FD-XD10-GXH-1.jpg` through `-4.jpg`).
+They resemble 2662's main unit in linkage/cage construction. The fourth shows
+inner-cage markings, but its 516-pixel-wide image does not establish a reliably
+readable full model code. The seller's model/date attribution is not a verified
+maker crosswalk. Its [separate group listing](https://bicyclist.cc/product/full-suntour-xcd-accushift-groupset-from-1990-3-x-7-speed/amp/)
+also calls the front XD10; this is the same seller, not independent confirmation.
+
+The most useful next evidence is a readable code on the main-construction unit,
+or maker service drawings distinguishing XD00 from XD10. Broad model-name
+searches and another comparison of the already held catalogue will not resolve
+that specimen link. Other SunTour cases, including Alpha SS, were triaged from
+existing notes but not fully re-reviewed. No SQL prepared. Temporary HTML,
+comparison photographs and the update helper were removed after documentation.
+
+
 ## XCD freehub 3630 specimen and Axis review — 2026-11-18 (description correction applied)
 
 **Exact generation remains unresolved.** Compared the original specimen,

@@ -4102,6 +4102,29 @@ listed drilling options; rear 10765 has no rear counterpart in 10305. Alu-Ergal
 crosswalk, and the latter combines positions. Keep these rows separate pending
 model-specific evidence.
 
+### FRM maker-crosswalk search — 2026-11-20, read-only
+
+Searched public indexes for FRM CU2 1995/1996 maker catalogues, 1997/1998
+catalogues, Carbon-Ergal/Alu-Ergal wording and Feather/Pro hubs. No period
+manufacturer crosswalk was recovered for specimen 1570 versus 10279/10280,
+or hubs 10762–10766 versus 10303–10305. This is an unsuccessful bounded
+source search, not evidence that a crosswalk never existed.
+
+The [indexed FRM 2006 maker catalogue](https://www.yumpu.com/en/document/view/59772786/frm-catalog-2006)
+describes later CU2-R110 ISIS Carbon/Integral and FL-M Team/Pro products;
+it does not establish the 1990s identities under review. Later 2009 and
+2013/2016 catalogue results likewise provide no recovered crosswalk. The
+[original CU2 listing](https://www.velobase.com/Pages/ViewComponent.aspx?ID=B291A8BF-03C9-4964-8F10-5ADBE8F43CE8)
+still supplies no period date or compatibility identification.
+
+The preceding Guida review remains the controlling evidence: the 1996
+Carbon-Ergal front is 88 g versus 70 g for the 1999 Feather, and shared CU2
+wording or close Alu-Ergal/Pro weights do not prove identical models. No DB,
+matcher, source-registry or bike-link changes were prepared or applied.
+Reopen for a newly available 1990s maker/importer sheet explicitly connecting
+the names, or a coded specimen with matching construction, dimensions and
+ring compatibility. No downloaded scans or pending SQL were created.
+
 ### Guida '96 follow-up: Mavic rim identities — 2026-11-18
 
 Live readback confirms that the previously missing CXP 30 Argent tubular is

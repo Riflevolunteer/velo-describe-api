@@ -1,5 +1,47 @@
 # Mavic catalogs processed so far
 
+## CXP30 edition weights — 2026-11-20, applied and validated
+
+User approved with “apply”. Guarded SQL inserted one catalogue source and
+updated exactly two component descriptions. The rerun inserted/updated zero
+rows. SQL and validation scratch files were removed after exact readback;
+old/new values below preserve the restoration evidence. No component additions,
+merges, title, search-text, date, group or bike-link changes.
+
+**5062 applied description (227 characters):**
+`700c aero tubular rim, SUP joint, UB Control brake tracks, profiled inserts; silver or titanium. Maker specifications: 530 g (1996), 465 g (1997); 1997 drilling 24/28/32/36h. Separate 500 g listing has no stated weighing basis.`
+
+**Captured old description:**
+`700c aero tubular rim, SUP joint, UB Control brake tracks and profiled inserts; 465 g maker specification (1997), 24/28/32/36 holes, silver or titanium. A separate 500 g listing has no stated measurement basis.`
+
+Source_ref **357 → 483**, new catalogue entry
+**Mavic Catalogue 1996, English folding rim brochure**, citing IMG_5147 in the recovery section below,
+with country NULL because the market is not established. Source-registry search
+found no existing matching maker brochure; source 306 is a different Bike-Pro
+rear-derailleur document. The 1997 specification remains attributed inline;
+source 307 supports it. Separate 500 g listing remains explicitly unqualified.
+The unresolved Guida 520 g identity/weight question is not being decided.
+
+Scoped duplicate report flags 5062/5063, which remain separate tubular/clincher
+configurations; no merge follows from the report's generation label. Other
+silver/titanium family rows are unchanged. Live 5062 has zero bike links.
+
+Validation: exact before/after readback confirms both approved descriptions,
+all other fields unchanged apart from Mavic 5062 source_ref 357 → 483, and
+zero bike links retained on both rows. Related Mavic rows 5063/10199/10607
+are unchanged. Both descriptions fit 255 characters (5062: 227; 2662: 213).
+Whole-DB quality summary and every finding are identical before/after:
+zero errors, 2,075 review findings. The source table gains one row; component
+count remains 11,218. Generator component reads use ID/title/category rather
+than descriptions/source provenance; no identity or matching inputs changed,
+so no full generator rerun or code tests were needed. The existing duplicate
+and keep-separate decisions above stand. Unresolved evidence gaps remain open.
+
+Restoration, only if deliberately requested: guard the current UUID, applied
+description and source_ref, restore the captured old description and source_ref
+(5062=357, 2662=1). Remove source 483 only if unreferenced and deliberately
+rolling back its registration. All source URLs remain in these notes.
+
 ## Full French catalogue (1994) — applied and validated
 
 Source: [36-page PDF](https://www.bikecatalogs.com/download/3659), mirrored from
@@ -964,6 +1006,35 @@ Read-only follow-up on the TODO item; no DB change, so no validation run.
 - **Unchecked lead:** a Retrobike thread announcing new Mavic catalogues and
   manuals in its archive (`retrobike.co.uk/threads/new-mavic-catalog-and-manuals-added-to-the-archive.427093`)
   returned HTTP 403 to automated fetches. Its editions are unknown.
+
+### 1996 maker brochure recovered — 2026-11-20, read-only
+
+The [Bike Recyclery catalogue lot](https://bikerecyclery.com/1996-mavic-rim-catalog-lot-full-size-brochure-wheel-building-guide-mint-average/)
+(SKU 15439; direct retrieval redirects to Swoon Cycles) exposes photographs of
+several documents. The English folding brochure itself prints **Catalogue 1996**
+on its cover. Do not automatically date the lot's other documents from this.
+
+- [Cover IMG_5145](https://cdn11.bigcommerce.com/s-1rmgckn/images/stencil/2280x2280/products/14253/174719/IMG_5145__69859.1734139525.jpg?c=2)
+  shows the 1996 imprint and English folding brochure layout.
+- [Road-rim panel IMG_5147](https://cdn11.bigcommerce.com/s-1rmgckn/images/stencil/2280x2280/products/14253/174720/IMG_5147__32454.1734139528.jpg?c=2),
+  inspected at original 2048-pixel width, separates **clincher CXP30 550 g**
+  from **tubular CXP30 530 g**. Both list silver or titanium and are marked NEW.
+  These are printed maker specifications, not measured specimen weights.
+  The panel does not state a bare-rim/inserts-included weighing basis; adjacent
+  profiled-eyelet prose does not establish the printed weights' basis.
+- This supersedes the earlier search's missing-1996-maker-specification claim.
+  It does not corroborate Guida 1996's 520 g tubular figure or explain the 1997
+  maker's 465 g. Preserve the edition-specific 530/520/465 g attributions;
+  no engineering revision or identity merge follows from these weights alone.
+- The Retrobike archive-announcement thread remains inaccessible through the
+  available web tool; no interactive browser tool was available. Its editions
+  remain unknown, and public search results did not expose its contents.
+
+No database, source registry, matcher or bike-link changes. The read-only live
+quality report returned zero integrity errors; review flags are not proven errors.
+TODO now seeks weighing-basis/revision evidence rather than an unspecified 1996
+catalogue. Temporary HTML and inspected photo downloads were removed after
+recording the source URLs and findings here.
 
 ### Open Pro decal-date search — 2026-11-19
 

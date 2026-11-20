@@ -28,6 +28,28 @@ also offers 502.1/1 DFE among shared sheets; its FEX PDF now returns HTTP 666.
 The post's approximate 1986 dating concerns copied catalogue pages, not a
 verified date for the two separately described original sheets.
 
+### 501.1 recovery follow-up — 2026-11-20, read-only
+
+Followed the existing 501.1/1 paper lead and the public preview-image link
+exposed by the indexed [Velopedia record](https://www.velopedia.online/Document/Show/1291).
+The web reader returns cached page/OCR content, whereas direct HTTP retrieval
+of the record and its linked
+[preview image](https://www.velopedia.online/File/PreviewImage/Fichtel%20und%20Sachs/Sachs-Huret%20Kettenschaltung%20New%20Success%20Aris%20Infoblatt%201987)
+returns 404. This does not establish that the original scan has been restored.
+Direct [eBay item 377245205441](https://www.ebay.de/itm/377245205441)
+retrieval returned 403; no readable listing photograph or /1 contents were
+recovered. Exact-code searches recovered the existing indexed records and
+category listings, not a new scan. No contact or purchase was made.
+
+The cached OCR remains a source lead rather than visually verified maker
+evidence. Do not apply the previously proposed 6110 enrichment from it, or
+assume the /1 revision matches 501.1. Reopen scan recovery for a restored
+public preview/PDF or new readable listing photos/holder copy. This pass was
+limited to the first source-recovery action; the other New Success/Raleigh,
+Rival, Rider, Duopar/Eco and Avant fitment questions were not re-reviewed.
+No database, matcher or bike-link changes, no prepared SQL, and no acquired
+scan to preserve. Temporary retrieval/update files were cleaned up.
+
 ### Dated manufacturer advertisements
 
 - [Pro Velo no.15, 4/1988](https://provelo.fahrradzukunft.de/pdf/pro-velo-15.pdf):

@@ -32,6 +32,43 @@ select a bike link on this evidence alone. A dated parts code or identified
 specimen crosswalk is still needed to assign the later retail bodies more
 precisely. No database changes followed this review.
 
+## Splined Oro construction follow-up — 2026-11-20, read-only
+
+Live readback of 2179/2180/2182/2194/2195 confirms the existing distinctions:
+2179 Extra BX 5-speed (1980–1980, source 1), 2180 Extra BX 6-speed gold
+(undated, source 1), 2182 Extra Oro 5-speed (1970–1982, source 389), 2194
+Oro 6-speed (1970–1986, source 138), 2195 Oro BX 6-speed (undated, source 1).
+No dates, names, descriptions or links were changed.
+
+A newly consulted technical reference supplies a more discriminating test than
+remover fit: [Sutherland's Handbook, sixth edition (1995), PDF pp.136–137](https://paulinoposada.github.io/bike/documents/epdf.pub_sutherlands-handbook-for-bicycle-mechanics.pdf#page=136)
+charts BX/CX sprocket positions separately from Extra/Scalare. The latter use
+threaded sprockets throughout, including inward-removing inner sprockets;
+the normal and Scalare bodies also differ at the hub mounting face. The text
+says BX/CX/CX-S models carry their designations on the lockrings. This is a
+technical identification aid, not a dated retail-model crosswalk or maker
+introduction-date source. Do not confuse sprocket mounting with remover splines.
+
+Re-downloaded and visually inspected [Palo Alto c.1983/84 printed p.30
+(PDF p.32)](https://www.velobase.com/CatalogScans/Palo%20Alto%20Shop%20Catalogs/palo_alto_1984.pdf#page=32).
+It confirms Oro and CX removal splines but supplies no readable BX crosswalk or
+exploded Oro mounting diagram. Its ratio-specific 30-xxx numbers and generic
+Super Corsa Oro replacement-cog 30-4005 are retailer stock codes, not proven
+Regina model codes. No identity change follows from those codes.
+
+A concrete further lead is printed on that page: Palo Alto's supplementary
+**“Chainwheels and Freewheels — Gear Selection” data sheet**. An exact-title
+public search recovered only catalogue mentions, not a separate readable copy.
+Seek a newly posted copy with the Oro sprocket-position/part-code table; its
+contents are presently unknown and may still not settle the crosswalk. A coded
+retail specimen with visible lockring and disassembled cog attachments could
+also distinguish the families. General web searches otherwise returned the
+already reviewed C-78 and retrospective discussion, not a new period maker key.
+
+The earlier keep-separate decision stands. No SQL or database changes were
+prepared; no matcher/bike-link validation was needed. Task-created PDF, text,
+page renders and update helper were removed after recording these URLs/results.
+
 ## Bikecology 1976 chain identities — applied and validated 2026-11-17
 
 Re-read [Bikecology fifth edition, April 1976](https://labibleduvelodivers.blogspot.com/p/doc-1976.html),
