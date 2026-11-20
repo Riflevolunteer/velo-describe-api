@@ -221,6 +221,7 @@ API listing, PDF and two page renders removed after documenting these findings.
   HL, KL, TH-305, HTI-A1, CST, UCP), Regina Pista chain, Gipiemme
   Cronosprint posts (three variants), 3ttt Competizione bars (three bends),
   ITM Mondial bars and ITM 100-300 stems (no rows), Extras.
+- **2026-11-20 HTI correction applied:** [1987 catalogue](https://velobase.com/CatalogScans/1987Bianchi.pdf), PDF p.15, visibly prints `HTI-A1 alloy quill` for Premio but `HTI-A17 alloy` for Strada LX and Strada. Corrected live specs **1368/1388** and the source CSV from `HTI-A1 alloy` to `HTI-A17 alloy`; Premio **1348** remains A1. Both affected links remain NULL, source 46, label 5; no second pedal spec exists on either bike. No matching HTI component row was found. The guarded update affected two rows; the repeat affected zero. Readback confirmed both values, unchanged links and provenance, and the unchanged Premio. The scoped generator/live comparison remained 300 unchanged, no gained/lost/changed/missing/ambiguous specs. Restore the old text `HTI-A1 alloy` on 1368/1388 if needed. Do not infer that A1 and A17 are interchangeable; no maker-code crosswalk was found.
 - 2026-11-06 (superseded by the 2026-11-17 table repairs below): the five 1987 "Regina C Record" chains -> 1384 Regina Extra
   CX / CX-S (1980-90). The c. 1984 De Rosa C-Record catalogue specifies a
   Regina CX-S chain; Campagnolo's 1988 compatibility table lists Regina CX-S

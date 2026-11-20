@@ -4035,6 +4035,11 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // 1993 Bianchi Project models print the alloy qualifier before the model.
+    'tioga alloy surefoot 6': [
+      { bike: 'Project 7', from: 1993, to: 1993, id: 12170 },
+      { bike: 'Project 5', from: 1993, to: 1993, id: 12170 },
+    ],
     'campagnolo record sl': [{ bike: 'Treviso N.R.', from: 1985, to: 1985, id: 3709 }],
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 3716 }],

@@ -1,5 +1,28 @@
 # Tioga catalogs processed so far
 
+## Missing 1992 tyre pages — source check 2026-11-20
+
+The newly located [Bike Catalogs copy](https://www.bikecatalogs.com/download/2698)
+is a 30-page PDF whose metadata identifies the Retrobike `Tioga92.pdf` scan.
+Visually checked PDF pp.20–21: printed tyre introduction p.19 is followed by
+Disk Drive p.26, so it has the same missing printed pp.20–25 as the existing
+copies. It is not a recovered tyre inventory.
+
+The same archive offers [Hound Dawg](https://www.bikecatalogs.com/download/2702)
+and [Trail Dawg / Mud Dawg](https://www.bikecatalogs.com/download/2704)
+advertisements. Both are single-page undated adverts, not the missing catalogue
+pages; neither establishes an exact 1992 model specification or production
+dates. Reopen the tyre-page recovery for a different complete scan or a directly
+retrievable set of the missing pages. No database changes.
+
+## Surefoot-6 evidence and links — 2026-11-20, applied
+
+Visually checked the [1993 Bianchi catalogue](https://cdn.shopify.com/s/files/1/0786/6705/5385/files/1993_Bianchi_catalog_-_USA.pdf?v=1751937419), source 47: PDF p.24 Denali, p.25 Peregrine, p.28 Project 7 and Project 5 all explicitly specify Tioga Surefoot-6 alloy. The [GT catalogue attributed 1994](https://bikerebuilds.com/catalogs/gt/1994-gt-catalog.pdf), PDF pp.45–46, explicitly lists Surefoot 6 with alloy cage and body on Avalanche AL and Corrado. GT is archive-dated; no printed date was established in this focused check. These are availability attestations, not production boundaries. Cannondale's [1993 catalogue](https://vintagecannondale.com/year/1993/1993.pdf) independently lists Surefoot VI alloy body and cage; the Roman numeral equivalence is plausible, but no extra VI-only features are required for this proposal.
+
+User-approved application added **12170**, `Tioga Surefoot-6`, description `Alloy pedal body and cage.`, years 1993–94, brand 699/category 14, UUID `5fdcf399-39de-4ac5-8207-da6b31097f06`, and GT source **494**. Existing 10842–10845 are distinct II–V models. Bianchi specs **1633/1667/1752/1769** changed from NULL to 12170, retaining their source 47 and printed values. Project 7/5 use a bike/year-scoped generator override for their word order; Denali and Peregrine match automatically. Do not infer axle, weight or grease port from a different model.
+
+Pre-load full-catalogue simulation identified exactly those four gains across 24,061 specs, with no other changed matches. SQL inserted one source and one component and changed four links; an identical rerun changed zero rows. Exact readback confirmed the new row, source and links. Post-load generator/live comparison returned to the baseline of 15 pre-existing Huret Rival lost proposals and no gained/changed/missing/ambiguous specs; Tioga merge report found no candidates and `npm test` passed. To restore, set only those four links to NULL, remove the scoped override, and remove 12170 and source 494 only after checking for later references. The task SQL and simulation were removed after validation.
+
 ## Guida '96 tyres — applied and validated, 2026-11-18
 
 [Scan 22 / printed p.125](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_22_main_image.jpg), source 357, was visually rechecked. After user approval, added 11682 Mongrel (cross, 700x38c, 535g), 11683 Bloodhound (cross, 700x38c, 473g), 11684 City Ranger (700x35c), 11685 City Slicker (smooth, 700x32c, 535g), and 11686–11689 Proline S/F/SK/SR (nylon casing, 700x18/20/23/25). Added the Tyres association for existing Tioga brand 699. Source 357 was reused; 1996 is attestation, not a production boundary. No unstated bead, weight or Proline S/F difference was invented. The Proline SK listing describes an optional folding configuration rather than establishing a separate model; SR is folding and amber.
