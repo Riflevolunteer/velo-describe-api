@@ -440,6 +440,14 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Rear Derailleurs
 
+- c.1979 Pinarello ingestion (applied/validated 2026-11-20): preserve printed groupset descriptions
+  without inventing separate component identities. Makerless Super Leggera
+  saddles stay NULL (not Iscaselle 5375); Record Special's explicit Super Record
+  brakes stay NULL without reach evidence (582 versus 7005). Regina Tital seven-
+  speed, unspecified Regina Oro/Sestupla, Mavic OR/Legger Special/Servizio Corse,
+  Cinelli Special and Campionissimo remain unresolved as detailed in
+  [Pinarello notes](known-catalogs/pinarello.md#circa-1979-ingestion--applied-and-validated-2026-11-20).
+
 - Applied/validated 2026-11-17, user approved: generic 1980–1983
   `Campagnolo Super Record` / `Super Rekord` does not identify the late
   first-generation PAT.80 specimen 4149 rather than second-generation 4151.

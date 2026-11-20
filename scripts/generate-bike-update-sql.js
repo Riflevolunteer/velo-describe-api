@@ -2302,7 +2302,7 @@ const COMPONENT_OVERRIDES = {
     'universal mod 68 side pull racing': 1082, // Universal Super 68
     'mafac racer center pull (1 front 2 rear)': 838, // MAFAC Racer (lettered MAFAC RACER)
     // 1981 Kalkhoff.
-    'campagnolo super record': [{ to: 1982, id: 582 }, { from: 1983, id: 583 }], // 4061 v1 to 1982 (Kalkhoff); v2 1983-87 (1986 Cinelli)
+    'campagnolo super record': [{ bike: 'Record Special', from: 1979, to: 1979, id: null }, { to: 1982, id: 582 }, { from: 1983, id: 583 }], // c.1979 Pinarello: reach unspecified (582 vs 7005); otherwise 4061 v1/v2.
     'dura ace ex': 997, // Shimano BR-7200, Dura-Ace EX
     'shimano 600 ax': 965, // Shimano BR-6300, 600 AX
     'weinmann 405': 1117, // Weinmann AG 405
@@ -3014,6 +3014,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    // c.1979 Pinarello Prestige / Super Record: no maker printed; not Iscaselle.
+    'super leggera': null,
     'mundialita': [{ from: 1988, to: 1988, id: 5497 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Selle Italia Mundialita (1985-90); 5436 is the Bianchi celeste version.
     'sport saddle': [{ bike: 'EXD102 Super-Tour', from: 1986, to: 1986, id: null }], // Generic translation of Sportsattel; no maker/model identity.
     "italia turbo": [{"bike":"Spécial Pro","from":1985,"to":1985,"id":null}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
@@ -4535,6 +4537,9 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // c.1979 Pinarello: explicit named chains, not inferred from the gruppo.
+    'regina extra record s': [{ from: 1979, to: 1979, id: 8334 }],
+    'regina extra titanio': [{ from: 1979, to: 1979, id: 1391 }],
     'nickel plated sedisport': [{ bike: 'C662CA Super Record', from: 1986, to: 1987, id: 8765 }], // MBK 1986/87 spread2: plain nickel-plated Sedisport, not Delta.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "nickel plated sedisport racing chain": [{"bike":"C502 Le Champion","from":1986,"to":1986,"id":8765}],
