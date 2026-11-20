@@ -25,11 +25,22 @@ Applied the six user-approved description-only rewrites. Exact old-description/s
 at exactly 255 characters: 158, 357, 462, 994, 1900, 2287, 3112, 3261,
 7452, 7474, 7922, 8105, 8272, 8642, 8883, 8931, 8996, 9599 and 9799.
 None ends mid-word or in an obviously unfinished clause. Some lack terminal
-punctuation; 7922's repeated `730 / 730` is worth treating cautiously but
-the ending alone does not prove truncation. This surface check does not prove
+punctuation; 7922's repeated `730 / 730` was initially treated cautiously.
+The subsequent Weinmann source check below confirms that set designation.
+This surface check does not prove
 that no complete words were lost at the boundary or verify every specification
 against its source. No description or database change is justified by length
 alone; revisit a specific row if its original source shows missing text.
+
+**Weinmann 133 / component 7922 source check, 2026-11-20:** visually checked
+the [R. J. Chicken & Sons 1979 trade catalogue](https://www.icenicam.org.uk/library/Weinmann/Cycle_fittings_from_R_J_Chicken_catalogue_1979-11-07.pdf),
+PDF p. 17 / printed p. 57. It explicitly offers a 730/730 front/rear side-pull
+brake set with 133 touring levers, as well as 730/810 and 1020/1080 sets with
+133 levers. The repeated model number is a valid front/rear combination, not
+evidence of a typo. The 1979 trade listing corroborates that clause only; it
+does not establish whether other words were lost at the 255-character boundary
+or independently verify the other claims. The live description and source_ref
+162 were unchanged; no DB correction is supported by this finding.
 
 Exact old values for restoration and applied replacements:
 
@@ -3108,6 +3119,34 @@ originals and maintained CSVs are preserved.
   Evian Racer; 9340 widened from 1975 to 1973-1977 and its description notes the CLB relabel.
 
 ## La Bicicletta Guida '85/86 - I componenti da corsa (Nov 1985, 41 scans, disraeligears.co.uk), data_source id 259
+
+### ITM Mod. 300 / 9201 — correction applied and validated 2026-11-20
+
+The [guide's scan 2](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_1985_november_-_i_componenti_da_corsa_scan_02_main_image.jpg)
+lists Italmanubri Mod. 300 in light alloy, with 80, 90, 100, 110, 115, 120
+and 125 mm sizes. The [1987 Bianchi catalogue](https://velobase.com/CatalogScans/1987Bianchi.pdf)
+PDF p. 14 lists `ITM 300 Anthracite` in Trofeo's handlebar/stem column.
+Both scans were checked visually. Matching the same model name is an inference:
+the guide does not name a finish or describe construction, so neither source
+establishes unchanged construction or production endpoints.
+
+Component 9201 was `ITM Mod. 300`, 1985–1985, source 259, description `ITM Mod.
+300, Italy. Alloy stem, 80-125mm`; Trofeo stem spec 1206 is its only current
+link. The user approved a guarded date-only change of year_to 1985 → 1987;
+the two dates are observations, not claimed manufacturing boundaries. Exactly
+one row changed and the identical rerun affected zero. Readback confirmed
+1985–1987, the original title, description, source, maker, category and UUID,
+and the unchanged 1206 → 9201 link. To reverse, restore year_to=1985 after
+checking for later changes and other fitments.
+Before application, the scoped 1987 Bianchi generator/live comparison found
+300 unchanged specs and no gained, lost, changed, missing or ambiguous
+identities. The ITM stem duplicate report did not include 9201 in a candidate
+pair; its other generic ITM pairs were not reviewed as part of this case.
+After application the same scoped comparison was unchanged; the full report
+compared 117 catalogues with no gained or changed links or identity differences,
+and 15 previously recorded Huret Rival lost proposals. The quality report
+showed zero errors and one fewer linked-date conflict. Review SQL was removed
+after readback and the zero-change rerun.
 
 - Source: https://www.disraeligears.co.uk/site/la_bicicletta_guida_8586_-_i_componenti_da_corsa.html
   (scans at `00_main_images/la_bicicletta_guida_1985_november_-_i_componenti_da_corsa_scan_NN_main_image.jpg`,

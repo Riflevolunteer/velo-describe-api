@@ -1,5 +1,55 @@
 # Sedis catalogs processed so far
 
+## Sedisport Delta 1402 — identity and weight review 2026-11-20
+
+Before correction, 1402 `Sedis Sedisport Delta` was dated 1980–87 and described
+as 410 g; its only source is [VeloBase](https://velobase.com/Pages/ViewComponent.aspx?ID=1db4e7c3-1833-47a4-bb41-6cad655b70b9).
+The source displays 410 g in a weight field but its text also calls 410 g a
+package weight. It does not establish a chain-only weight. The user approved a
+guarded description-only update from `Sedis Sedisport Delta, France, 410 grams`
+to `France. VeloBase lists 410g but also describes 410g as package weight;
+chain-only weight unconfirmed.` One row changed; an identical rerun changed
+zero. Readback confirmed the description and unchanged title, dates, source,
+brand, category, UUID and 164 link count. The full generator/live comparison
+still had 15 previously recorded Huret Rival lost proposals and no gains,
+changes or missing/ambiguous identities; the quality report had zero errors.
+Restore the old description only after checking for later edits. The review SQL
+was removed after validation.
+The maker's [history](https://sedis.com/en/who-are-we/our-history/) says its
+Delta chromizing process originated on small chains in the early 1950s and
+was used on bicycle chains. It does not say Delta replaced Sedisport in 1980.
+The generator's earlier comment asserting replacement is superseded; its
+mapping has not yet been changed.
+
+Read-only live queries found 164 links to 1402: 16 explicitly say Delta
+treated; the other 148 name Sedisport or a finish without Delta. All 29
+1988–89 linked values are among the latter and lie beyond 1402's current date
+range. The separate 8765 Sedisport row spans 1979–90 and includes black,
+silver and gold. These overlaps and the process history warrant an identity
+review of 1402/8765 and affected links, but do not establish whether the
+VeloBase specimen is identical to the general 8765 family or whether a merge
+or bulk relink is appropriate. In particular, treatment alone cannot identify
+the Sedisport model where the bike catalogue only names Sedis. The normal Sedis
+chain duplicate report returned no groups. No link or date changes were made;
+seek a period coded model/packaging crosswalk and review the values and
+generator mappings before preparing any merge, relink or date change.
+
+## Kalkhoff Sedis Gold date conflict — 2026-11-20 read-only
+
+The [Kalkhoff brochure](https://velobase.com/CatalogScans/kalhoff_prospekt_81.pdf)
+PDF p. 3 visibly lists `Sedis Gold` for Professional 13 S; live spec 774 is
+linked to 1398, `Sedis Gold`, dated 1975–80. The brochure is attributed to
+1981 by the VeloBase index and filename, but no printed year was identified
+in this review. Its table supplies no code, chain length, construction or
+weight to distinguish a gold Sedisport from an earlier Sedis Gold/Sedicolor
+offering. Live 8765 Sedisport includes gold as a finish, and 8764 Sedicolor
+describes gold/dark-blue links. The named fitment supports a Sedis Gold
+offering in the attributed catalogue, but does not by itself prove the exact
+311 g/108-link specimen in 1398 continued to 1981 or settle its relationship
+to the other rows. No dates, links or descriptions changed; retain the current
+link provisionally until a coded original fitment or period crosswalk resolves
+the identity. The separate 1975 Motobecane spec 3974 also links to 1398.
+
 ## Peugeot 1977–78 chain evidence review — 2026-11-19 (read-only)
 
 - The remaining **named** gap is 1977 PY10/CP spec **9719**, `Sedis Color
@@ -7,7 +57,9 @@
   **1976–80**, source **456**: the [circa 1976 Motobecane ingestion](../../../ingest-bike-specs/references/known-catalogs/motobecane.md#circa-1976-us-catalogue--loaded-2026-11-17)
   extended its start using source 430 (estimated catalogue year); a later source
   extended its end. The 1979-only insertion below is historical, not its current
-  date range. **1398 Gold** is now 1975–80 and **8765 Sedisport** 1979–88.
+  date range. The 1979–88 Sedisport range recorded at that review was later
+  extended; live readback 2026-11-20 gives **1398 Gold** 1975–80 and
+  **8765 Sedisport** 1979–90.
 - Live 1977 Peugeot plain `Sedis 1/2 x 3/32, 108 links` specs (including
   **9738/9909/13266**) lack a model code. The 1978 108-link entries (including
   **9929/10132**) and 110-link **13286** likewise name no model.

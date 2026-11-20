@@ -1,5 +1,51 @@
 # Ofmega catalogs processed so far
 
+## Master headset 3063 — date correction applied 2026-11-20
+
+The [1987 Bianchi catalogue](https://velobase.com/CatalogScans/1987Bianchi.pdf)
+PDF p. 14 names Ofmega Master headsets on Squadra and Campione d'Italia.
+The [February 1988 guide, scan 45](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_1988_february_-_i_componenti_da_corsa_scan_45_main_image.jpg)
+lists the Master headset as light alloy and steel with caged balls, 190 g.
+Both scans were read visually. Matching the model names is an inference:
+Bianchi does not print dimensions, weight or a part code, and these sources
+do not establish production endpoints or exclude unrecorded revisions.
+
+Before correction 3063 was 1988–88, source 262, with three linked 1987 bike specs: Bianchi
+1262/1302 and Colnago Junior Special 13005 (the latter is from the separately
+attributed 1987 Colnago catalogue). The Ofmega headset duplicate report found
+no groups; generator/live comparison for the Bianchi and Colnago CSVs found
+540 unchanged specs and no other findings. The user approved a guarded
+year_from change 1988 → 1987. One row changed; the identical rerun changed
+zero. Readback confirmed 1987–88 and unchanged title, description, source,
+brand, category, UUID and all three links. The full generator/live comparison
+retained the same 15 previously recorded Huret Rival lost proposals, with no
+gained or changed links or missing/ambiguous identities. The quality report
+showed zero errors and three fewer linked-date conflicts. Restore year_from
+to 1988 only after checking for later changes or fitments. The review SQL was
+removed after validation.
+
+## Gran Premio headset 9160 — date correction applied 2026-11-20
+
+The [November 1985 guide, scan 36](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_1985_november_-_i_componenti_da_corsa_scan_36_main_image.jpg)
+names `Mod. 8100 Gran Premio` in its headset table (182 g, fork 26.4 mm,
+steerer 30.2 mm). The [1987 Bianchi catalogue](https://velobase.com/CatalogScans/1987Bianchi.pdf)
+PDF p. 14 names an Ofmega Gran Premio headset on the Pista. Both pages were
+read visually. Matching the names is an inference: Bianchi supplies no 8100
+code, dimensions or construction, and the sources do not establish
+manufacturing endpoints or rule out unrecorded revisions.
+
+Before the change 9160 was dated 1979–85, source 259; Bianchi Pista spec 1162 is its sole
+link. The scoped Bianchi generator/live comparison found 300 unchanged specs,
+no other findings; the Ofmega headset duplicate report found no groups.
+The user approved a guarded change of year_to 1985 → 1987. It affected one
+row; the identical rerun affected zero. Readback confirmed 1979–87, unchanged
+title, description, UUID, source, brand and category, and the unchanged 1162
+link. After application, the full generator/live report covered 117 catalogues
+with no gained or changed links or identity findings, and the same 15 previously
+recorded Huret Rival lost proposals. The quality report showed zero errors and
+one fewer linked-date conflict. To reverse, restore year_to=1985 after checking
+for later changes or fitments. Disposable review SQL was removed after validation.
+
 ## Mistral specimen comparison — 2026-11-18, applied and validated
 
 Compared all eight gallery images on each rear-derailleur record, both images

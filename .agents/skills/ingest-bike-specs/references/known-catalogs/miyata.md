@@ -1,5 +1,38 @@
 # Miyata catalogs processed so far
 
+## Koga-Miyata 1980–82 source assessment — 2026-11-20
+
+- Koga-Miyata is the brand printed in these brochures; Miyata built the frames.
+  [Koga's history](https://www.koga.com/en/about-koga/history) describes the
+  combined name. A live read-only brand query found Miyata but no bike brand
+  containing Koga; there is no local Koga CSV. The current generator filename
+  pattern accepts a single alphabetic brand token, so ingestion needs an
+  explicit mapping to the intended Koga-Miyata brand and regression review.
+- [1980 brochure](https://bikalog.org/api/view/Koga%20Miyata/1980/koga-1980.pdf),
+  20 PDF pages: Dutch-language model narratives include six racing models and
+  touring models, with some named parts. The text repeatedly refers to a
+  detailed specification list at the back; the Bikalog copy ends with general
+  information and a back cover, without that list. Model descriptions note
+  country-dependent equipment, so the photographs cannot settle those values.
+- [1981 brochure](https://bikalog.org/api/view/Koga%20Miyata/1981/koga-1981.pdf),
+  24 PDF pages: detailed component tables are present on PDF pp. 19–22.
+  Pro series Fullpro-L, Fullpro and Proracer are on p. 19; sport Gentsracer,
+  Roadspeed, Roadwinner-L and Roadwinner on p. 20; Gents-Touring,
+  Ladies-Touring, Roadrunner and Roadmixed on p. 21; comfort Road-Gentleman
+  and Road-Lady on p. 22. Apply road/touring scope rules. The tables contain
+  country-labelled equipment variants, so resolve the intended market rather
+  than combining alternative values. The scans are readable; OCR disrupts
+  table columns. Koga also hosts its [1981 copy](https://www.koga.com/files/2/0/4/Koga_Brochure_1981.pdf).
+- [1982 brochure](https://bikalog.org/api/view/Koga%20Miyata/1982/koga-1982.pdf),
+  28 PDF pages: Dutch-language model and range descriptions, sizes and colours
+  are present, but it refers to separate specification sheets. The scanned
+  ending has a gearing chart and general information, not those detailed
+  sheets. Both 1980 and 1982 contain some model-specific named parts in prose;
+  lack of the sheets does not mean no evidence exists.
+- Assessment checked the brochure text and the page endings, including all
+  1981 specification tables; it did not transcribe or load bikes, or review
+  component links. Other 1983–2001 Bikalog editions remain to be assessed.
+
 ## SR and Kusuki ATB fitments — 2026-11-18
 
 After user approval, linked the 1985 Terra Runner OR handlebar spec 21658 to SR MTB-204 11690, and the 1986 Trail Runner handlebar/stem specs 19013/19014 to Kusuki BMT-3-26 11691 and Rockey-2 11692. Koga's 1986 brochure corroborates the latter pair and spells the stem Rockey-2; Miyata spells it Rocky 2. All were previously NULL. [Source and validation](../../../ingest-component-catalog/references/source-hunts.md#log).

@@ -37,8 +37,9 @@
   9225), Modolo Professional (880 / 892; do-not-link override 2026-11-01: no v1 / v2 changeover date, photo arms unreadable) and Spidi brakes (Sporting linked to 888 on 2026-10-28 once 893 was merged; Concor
   Junior saddle linked to 9772, a row added after the load), Vittoria CX / C.S. Satinato / Uni,
   Regina Oro freewheel (2194 / 2195), Cinelli bars (brand only), Alpinaraggi spokes.
-- Several linked rows start after the catalogue (9137 headset 1985-88, 3351 hub 1985, 9227 / 9228 rims 1985+): the
-  same parts, so a component pass could move their `year_from` earlier.
+- Several linked rows start after the catalogue (9137 headset 1985-88, 3351 hub originally 1985, 9227 / 9228 rims 1985+).
+  The original same-part assumption for hub 3351 is not established by the
+  uncoded sheet; see the [early Pista hub review](../../../ingest-component-catalog/references/known-catalogs/gipiemme.md#early-pista-hub-links--evidence-review-2026-11-20).
 - Regression: all 61 other catalogues regenerated with identical link counts.
 
 

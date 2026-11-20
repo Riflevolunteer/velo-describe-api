@@ -91,7 +91,8 @@ API listing, PDF and two page renders removed after documenting these findings.
   (now 1039), NR hubs an odd "(low flange, non-drilled, disk?)" row (now 1034).
 - 1983 choices: Gran Sport → 3600/NT front, 3500 rear, second-gen brakes,
   1006 hubs, 1040/A headset, 0306 116 BCD triple; Ofmega Competizione crank →
-  the Bianchi-labelled row; Gipiemme Pista → Gipiemme Special Pista/600101;
+  the Bianchi-labelled row; Gipiemme Pista → Gipiemme Special Pista hubs and
+  600101 crank (hub identification remains provisional: [review](../../../ingest-component-catalog/references/known-catalogs/gipiemme.md#early-pista-hub-links--evidence-review-2026-11-20));
   Record Pista → 1051 crank, 1036 hubs, #1040 headset; fluted Campagnolo posts
   → 1044 NR Superleggero; Cinelli #2 → Unicanitor #2 suede; Sugino
   SuperMighty → Super Mighty Competition.
@@ -229,7 +230,7 @@ API listing, PDF and two page renders removed after documenting these findings.
 - Left unlinked: frame/fork prose, spokes, budget house-brand parts (KK-310,
   HL, KL, TH-305, HTI-A1, CST, UCP), Regina Pista chain, Gipiemme
   Cronosprint posts (three variants), 3ttt Competizione bars (three bends),
-  ITM Mondial bars and ITM 100-300 stems (no rows), Extras.
+  ITM Mondial bars and ITM 100-300 stems (no rows at that review), Extras.
 - **2026-11-20 HTI correction applied:** [1987 catalogue](https://velobase.com/CatalogScans/1987Bianchi.pdf), PDF p.15, visibly prints `HTI-A1 alloy quill` for Premio but `HTI-A17 alloy` for Strada LX and Strada. Corrected live specs **1368/1388** and the source CSV from `HTI-A1 alloy` to `HTI-A17 alloy`; Premio **1348** remains A1. Both affected links remain NULL, source 46, label 5; no second pedal spec exists on either bike. No matching HTI component row was found. The guarded update affected two rows; the repeat affected zero. Readback confirmed both values, unchanged links and provenance, and the unchanged Premio. The scoped generator/live comparison remained 300 unchanged, no gained/lost/changed/missing/ambiguous specs. Restore the old text `HTI-A1 alloy` on 1368/1388 if needed. Do not infer that A1 and A17 are interchangeable; no maker-code crosswalk was found.
 - 2026-11-06 (superseded by the 2026-11-17 table repairs below): the five 1987 "Regina C Record" chains -> 1384 Regina Extra
   CX / CX-S (1980-90). The c. 1984 De Rosa C-Record catalogue specifies a

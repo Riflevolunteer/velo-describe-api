@@ -1,5 +1,29 @@
 # Gipiemme catalogs processed so far
 
+## Early Pista hub links — evidence review 2026-11-20
+
+The live date-conflict report flags component 3351, `Special Pista`, 1984–88,
+on Bianchi Eco Pista spec 1007 (`Gipiemme Pista`, catalogue attributed
+c.1983) and Battaglin Super Pista spec 12977 (`Gipiemme Pista Special`, source
+label 1982). A read-only link query found these are its only current bike
+links. The [Bianchi brochure](https://ebykr.com/library/bianchi-1983-catalog/)
+p. 9 names a Gipiemme Pista groupset without a hub code. The
+[Battaglin parts sheet](https://ebykr.com/library/battaglin-catalog-about-1981/)
+p. 15 says Gipiemme Pista Special for hubs but gives no code; the repository's
+1982 label is an attribution from the archive title and 1981–82 price list,
+not an explicit date on the model sheet.
+
+The existing 3351 identification as 400B1 is supported by the October 1984
+maker catalogue, not by either early bike sheet. The DB also distinguishes
+9513, Crono Special 400B2, a later track hub; whether either early fitment is
+that later-coded variant or a predecessor is not established by the generic
+names alone. The earlier Battaglin note's assertion that these are the same
+parts was a judgement, not a verified code match. Retain both existing links
+and dates provisionally, without widening or switching them solely to clear a
+date flag. Revisit with an original coded hub/fitment, or a dated maker/importer
+crosswalk connecting the early Pista Special offering to 400B1/400B2. No DB,
+generator or link change was made in this review.
+
 ## Gipiemme catalogue binder, "Special" and "Dual-Sprint" lines (37 scans, 1970s, VeloBase archive)
 
 - `data_source` 202, label `Gipiemme catalogue binder, "Special" and
