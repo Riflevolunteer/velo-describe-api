@@ -960,7 +960,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Kalkhoff. Shimano rows are titled "Shimano FD-7200, Dura-Ace EX"
     // (part number between brand and group), so substring never fires.
     'campagnolo super record': 2313, // Campagnolo 1052/SR (0104010), Super Record (clip-on)
-    'campagnolo super record 12 speed': [{ from: 1975, to: 1988, id: 2313 }], // 1975-76 Raleigh Team Professional (row redated from 1979 to 1975, 2026-10-24)
+    'campagnolo super record 12 speed': [{ bike: 'Team Professional DL 185', from: 1975, to: 1976, id: 2297 }, { from: 1975, to: 1988, id: 2313 }], // Raleigh 1975/76 catalogue p.3 shows the solid-cage 1052/1; later Super Record fitments retain their existing rule.
     'dura ace ex': [{ bike: 'Team Miyata', from: 1983, to: 1983, id: null }, { id: 2518 }], // Shimano FD-7200, Dura-Ace EX (clamp)
     'shimano 600 ax': 2476, // Shimano FD-6300, 600 AX (clamp)
     // 1983 Bianchi: the 80s (Nuovo) Gran Sport is the 3600/NT. The early-70s

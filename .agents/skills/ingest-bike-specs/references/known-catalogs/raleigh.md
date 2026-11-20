@@ -146,6 +146,17 @@
   its own label's hint word and none carries another's; all 14 loaded
   catalogs regenerate to unchanged counts.
 
+## 1975/76 Team Professional front review — 2026-11-20, applied and validated
+
+Both US catalogues' printed p.3 drivetrain close-ups show a solid-cage,
+silver-link **1052/1 Record**, existing 2297, despite the group-level
+`Campagnolo Super Record 12 Speed` wording. Applied specs 4261/7878:
+2313→2297, preserving sources 130/221 and raw wording, with an exact
+bike/year-scoped generator exception. This supersedes using those bikes to
+date the black-link 1052/SR to 1975. Readback and zero-change SQL rerun verified;
+the full loaded-catalogue comparison preserves the baseline finding set.
+See [evidence and validation](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#early-fitment-follow-up--2026-11-20-applied-and-validated).
+
 ## 1975 Raleigh — `1975_raleigh_spec.csv` (10 bikes, 187 specs, 68 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1975-raleigh-catalogue.1191/

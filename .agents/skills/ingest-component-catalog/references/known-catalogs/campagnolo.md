@@ -1703,6 +1703,120 @@ All new rows have the catalogue-attested range 2000–2000 (availability, not pr
   the two intended links changed (7325 -> 7326 linked). `quality-report` has no findings on the touched rows.
   Campagnolo front specs now 183 / 195 linked.
 
+## Super Record front mounting/code review — 2026-11-20, read-only
+
+Initial readback: **2313**, `1052/SR (0104010), Super Record (clip-on)`,
+1975–1988, and **7012**, `0104011, Super Record (braze-on)`, 1985–1988.
+Both currently have source_ref **262**, the 1988 Guida availability extension.
+Keep these as distinct mounting configurations of the same derailleur family.
+They are not successive generations or duplicate complete assemblies.
+
+Re-downloaded and visually checked the original
+[Catalogue n.18 scan](https://velobase.com/CatalogScans/Campagnolo/Campy1985_catalog18.pdf),
+printed pp.23–25. The overview explicitly separates **0104010 clip-on** and
+**0104011 braze-on**. The exploded pages share cage **1052/7**, upper arm
+**7117027** and lower arm **7117028**. The former has clip **7182025**, hinge
+and clamp bolt; the latter has hanger **7102012**, concave washer and mounting
+screw. These are manufacturer-confirmed codes/configurations. The earlier
+[1982 US catalogue](https://www.campyonly.com/history/catalogs/1982_olympic_catalog.pdf),
+printed p.9, lists **1052/SR** (available in derailleur groups only); the later
+n.18 pages use the seven-digit assembly codes. The 1982 text was recovered
+from indexed manufacturer-page extraction, not a newly inspected local scan.
+
+Visually rechecked [Guida 1988 scan 18](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_1988_february_-_i_componenti_da_corsa_scan_18_main_image.jpg):
+`SUPER RECORD a fascetta-a saldare` explicitly offers both mountings. Thus
+overlap and availability in **1988** are supported; 1988 is not a demonstrated
+production end date.
+
+**Start dates remain unproved.** 7012's 1985 comes from first ingestion of
+the catalogue attributed c.1985, not a launch announcement. 2313's 1975 was
+an October 24 fitment inference from 1975/76 Raleigh and 1978 Bianchi group
+names (see bike cross-catalog notes); it does not independently identify the
+black-link Super Record front. Earlier n.17a review records only 1052/1 in
+the 1975 maker catalogue. This supersedes treating the inferred 1975 date as
+verified model-introduction evidence, but does not establish an exact 1979
+boundary either. The initial 2313 description said `(1979-1987)`, contradicting
+its structured dates. That range was removed in the approved correction below.
+
+Initial bike-link readback found all Super Record front links on 2313 and none on 7012.
+In particular **4261** (1975 Raleigh), **7878** (1976 Raleigh) and **12484**
+(1978 Bianchi) required original front-changer image/code evidence before
+redating the component or selecting an alternative. Later generic Super Record
+specs also do not establish clamp versus braze-on solely by group name.
+No DB, generator or bike-link changes were made in this audit. Task-created
+downloads and renders were removed after recording this evidence.
+
+### Early fitment follow-up — 2026-11-20, applied and validated
+
+Directly inspected original US Raleigh Team Professional DL185 **printed p.3**
+in both [1975](https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1975.html)
+and [1976](https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1966.html).
+The 1976 URL is historically misnamed; the page title now correctly says 1976.
+Both editions show the same close-up at top right: **solid outer cage,
+silver linkage and clamp-on body**, matching retained **2297 / 1052/1**.
+They do not show the three-hole black-link **2313 / 1052/SR**. This is direct
+maker fitment evidence, consistent with 2297's already-recorded n.17/17a group
+assignment, and supersedes the October 24 inference from the phrase
+`Campagnolo Super Record 12 Speed` for these two fronts. Preserve that original
+catalogue wording; correct the link rather than transcribing a different name.
+
+User-approved, applied guarded changes:
+
+- Spec **4261**, bike 223/source 130, 1975: component **2313 → 2297**.
+- Spec **7878**, bike 449/source 221, 1976: component **2313 → 2297**.
+- Component **2313** description only: replace `Campagnolo 1052/SR, Super
+  Record (1979-1987), Italy, 92 grams (avg) Catalogued as 0104010 clip-on
+  Super Record front changer in Catalogue n. 18 (1985).` with `Super Record
+  clamp-on front changer with black alloy linkage arms and three-hole steel
+  cage. Earlier code 1052/SR; later 0104010. Italy; 92 g measured average.`
+  Preserve title, structured dates, source_ref 262 and measured weight.
+- The generator rule scopes the 2297 exception to exact bike title
+  `Team Professional DL 185`, 1975–76, under `campagnolo super record 12 speed`;
+  the existing later rule remains. SQL records old values/restoration and
+  guards each original link, bike, label, wording and source.
+
+Pre-application validation compiled the proposed generator in memory and compared all
+loaded catalogue CSVs against a consistent DB snapshot: **24,061 specs**, only
+4261/7878 change. Simulating those two DB corrections reproduces the baseline
+summary and exact finding set (15 pre-existing lost proposals, no other changed
+or gained mappings).
+
+Application affected exactly two bike specs and one component description;
+the identical SQL rerun affected zero rows. Exact readback verifies both links
+now 2297, original labels/wording/sources 130/221 retained, and spec 12484 still 2313.
+2313's description exactly matches the 159-character replacement; both component
+titles, structured dates and source_ref 262 remain unchanged. Restore using the
+old values above, with current-value guards, if this decision is superseded.
+The actual final generator/live comparison preserves the entire baseline summary
+and exact finding set across 24,061 specs. Whole-DB quality remains zero errors,
+with the same 2,071 review findings and exact finding set. All 14 test files pass.
+SQL, proposal patch/scripts and before/after validation snapshots were removed
+after recording these results. No pending correction artifact remains.
+
+**Date search limits:** inspected the [17a supplement](https://www.campyonly.com/history/catalogs/catalog_17a_supp.pdf),
+PDF pp.5–6: four-hole **Record 0104007**, arms 7117009/7117011, not an explicitly
+named black-arm Super Record. Its 1979 attribution comes from the archive,
+not a newly verified printed date. Bikecology 1980, source 247, printed p.24
+([original scans](https://labibleduvelodivers.blogspot.com/p/revue-1980.html),
+image 41), advertises one Record front and a revised/lightened cage; it does not
+establish a separate Super Record launch. Neither source's limited offering
+proves nonexistence of other variants. The 1982 maker pp.9–10 distinguish
+1052/SR/black arms from Record braze-on; they do not establish a Super Record
+braze-on launch. Modern Le Cycleur chronology calls black-arm introduction
+approximately 1979 and explicitly **assumes** braze-on introduction in 1982: useful
+leads, not primary dating proof. Do not promote either to a firm launch year.
+
+Rechecked [1978 Bianchi Barcellona page](https://labibleduvelocataloguesbianchi.blogspot.com/p/bianchi-1978.html),
+image 2 and drivetrain inset: the available 960px scan does not resolve a safe
+cage/linkage variant identification. Spec 12484 remains unchanged pending a
+clearer original. Sampled 1982 Bianchi brochure photos likewise did not establish
+a coded early Super Record braze-on. The next useful date evidence is a dated
+1978–82 maker/importer sheet naming the black-arm front, or a dated pre-1985
+0104011/braze-on Super Record offering; no further generic name-only fitment
+inference is justified. Task downloads/renders were discarded after recording
+these source/page findings; the subsequently approved correction artifacts were
+also removed after application and validation.
+
 ## Record front derailleur specimen comparison — 2026-11-18
 
 Compared retained specimens 2295 / 2299 / 2300. Keep all three configurations
