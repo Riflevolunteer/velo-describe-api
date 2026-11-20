@@ -165,3 +165,90 @@
 ## Rivendell No.4 (1998) — scoped reconciliation applied, 2026-11-20
 
 See the [shared change set, page evidence, old/new values and identity decisions](cross-catalog-notes.md#rivendell-no4-nittomks-reconciliation--2026-11-20-applied-and-validated). Inserted12164 model176 Dream Bar,12165 Moustache and12166 Technomic Deluxe; enriched/extended175,185,B135,RM013,DirtDrop stem,Pearl and Jaguar/Frog. Aero and uncoded one-bolt post remain unresolved; no speculative duplicate insert. Applied under source490. Exact readback, zero-change rerun, duplicate/near checks, unchanged whole-catalogue mappings and zero integrity errors verified; shared notes record complete results.
+
+## Miyata Mod. 55 linking follow-through — 2026-11-20 (applied and validated)
+
+Pre-change live triage found 12 unlinked 1982–87 55F specs, three 1987 B-105F specs,
+and one 1981 MDL-55 spec. Existing 1986 Team/Pro Miyata 55F specs already link
+to **2878 Nitto Mod. 55** through a 1986-only override, documented in the
+[Miyata linking review](../../../ingest-bike-specs/references/known-catalogs/miyata.md).
+The approved mapping reuses the existing Mod. 55 component row.
+
+### Original fitment scans inspected
+
+PDF pages count from the cover. Each targeted original table/model page was
+visually inspected, rather than relying on OCR or Ebykr's derived parts index.
+
+| Catalogue / source | PDF pages | Printed bar and targeted models |
+| --- | --- | --- |
+| [1981 Miyata](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/1981%20Miyata%20Catalog.pdf), 402 | 10 | Team Miyata: MDL-55, alloy, Fujita leather grips, widths 390/410 mm |
+| [1982 Miyata](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/1982%20Miyata%20Catalog.pdf), 403 | 13 | Team: MDL-55F, alloy, Fujita grips, widths 390/410 mm; Pro: 55F, alloy, cloth tape, widths 390/410 mm |
+| [1983 Miyata](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2083.pdf), 406 | 6–7 | Team and Pro: 55F |
+| [1984 Miyata](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2084.pdf), 404 | 24 | Team-SL, Team, Pro: Model-55F |
+| [1985 Miyata](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2085.pdf), 405 | 17 | Team and Pro: 55F Alloy |
+| [1987 Miyata](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2087.pdf), 407 | 26 | Carbon Tech 5000/3000 and Team: 55F Alloy; Carbon Tech 1000/Omnium/912 explicitly use B-105F Alloy instead |
+
+User approved extending the existing 1986 **55F → Mod. 55** judgement to these specific
+bikes/years, plus the exact MDL-55 name in 1981. Consecutive Team/Pro catalogues
+support continuity of the named family, and the printed 390/410 mm widths fit the
+maker-row range. This is an explicit fitment judgement, not a newly discovered
+maker statement decoding F or proving all OEM dimensions identical. No bar/stem
+clamp diameter is inferred from an attached stem or an adaptor mention. Retain
+2878's current title, description, 1973–1989 dates and source 159 unchanged.
+Do not create a duplicate 55F row on name variation alone.
+
+B-105F is explicitly a separate fitment name in the same 1987 table; specs
+**22104/22168/22190** stay NULL. Existing 2889 B105 Universiade (25.4 mm centre)
+and 2878 Mod. 55 (26.0 mm centre) are separate rows. No maker F-suffix crosswalk
+was recovered, so this change does not map B-105F or strip F globally.
+
+### Newly located source leads and limits
+
+- [SHIBUYA-BICYCLE, 5 November 2021](https://ameblo.jp/shibuya-bicycle/entry-12708348133.html)
+  reproduces an original Nitto **NEW Mod. 55 / 55 ANNIVERSARY** advertisement.
+  [Advertisement image](https://stat.ameba.jp/user_images/20211105/16/shibuya-bicycle/88/5f/j/o0640048015026779205.jpg)
+  was inspected: sleeve, crest, named Mod. 55, widths 370/390 mm, drop 137 mm,
+  reach 94 mm. The blog attributes it to New Cycling 1978, but no dated issue
+  imprint is visible. Its modern-reissue photos/commentary are not period fitment
+  evidence. The advert does not decode F and is not used to alter 2878's dates,
+  geometry or weight. A dated complete issue would be required before revising
+  the legacy 1973 start on an introduction claim.
+- [Bike Catalogs Nitto index](https://www.bikecatalogs.com/brand/nitto) lists
+  historical 1980/1989 and modern editions, with no intervening 1980s edition.
+  Those two historical editions are already processed; no new period maker
+  catalogue was recovered from this lead.
+- KKT RT-E1's ten gaps remain subject to the existing [KKT identity review](kkt.md#panasonic-identity-review--2026-11-18-read-only), which distinguishes RT-E/RT-E II but supplies no RT-E1 bridge. Do not repeat that hunt on the same fitment names.
+- MKS AR-Road/AR-Road 2 names occur in the Miyata tables, but existing AR/AR-1
+  3854 and AR-2 3855 require a maker code or identified-specimen crosswalk before
+  aliasing or adding potentially duplicate rows. The 1984 table explicitly
+  distinguishes AR-Road and AR-Road 2; no blind numeric-name equivalence proposed.
+
+### Applied change and validation
+
+Added scoped generator overrides for **2878** and linked exactly the 13 previously NULL specs
+**20648, 20858, 20879, 21803, 21823, 21088, 21109, 21131, 21428, 21450,
+22060, 22082, 22147**. Preserved original catalogue sources and the two existing
+1986 links 18751/18795. No component, date, source registration, CSV or bike insert.
+
+Applied after user approval on 2026-11-20: 13 guarded updates affected exactly
+13 rows; identical SQL rerun affected zero. Exact readback verified all approved
+IDs now link to 2878, while bike/label IDs, original text and source references
+are unchanged. Existing 1986 links 18751/18795 retain 2878 and B-105F specs
+22104/22168/22190 remain NULL. No component, bike or source rows were changed.
+
+Pre-application comparison over the same read-only snapshot predicted exactly
+these 13 gains. After application, the full generator/live comparison matches the
+original baseline exactly: 23,800 compared, 23,785 unchanged, 15 identical
+pre-existing lost proposals, zero gained/changed/missing/ambiguous identities.
+Syntax check and the maintained compare-bike-links test passed during preparation;
+no matcher changes were made after those checks. Quality report: zero errors,
+2,071 review findings (1,689 incomplete dates, 328 linked date conflicts,
+35 broad freewheel labels, 19 descriptions at limit), unchanged from the baseline.
+
+Restoration: all 13 original links were NULL; unlink only these listed specs
+from 2878, remove the added scoped Handlebars overrides and restore the original
+`nitto 55f alloy` override to `[{ from: 1986, to: 1986, id: 2878 }]` if the
+mapping decision is reversed. Component 2878's dates/source/description were
+never overwritten. SQL, snapshots, comparison output, downloads, page renders
+and helper files were removed after validation; source URLs/pages above retain
+the evidence. The completed TODO was removed.

@@ -3238,7 +3238,14 @@ const COMPONENT_OVERRIDES = {
     'sakae rnd alloy randonneur': [{ bike: '1000', from: 1980, to: 1980, id: 2910 }, { bike: '1000', from: 1979, to: 1979, id: 2910 }, { bike: '400', from: 1979, to: 1979, id: 2910 }], // 1979 Miyata: printed component; see catalogue review notes.
     'sakae world custom ws 410 alloy': [{ bike: '1200', from: 1979, to: 1979, id: 7887 }], // 1979 Miyata: printed component; see catalogue review notes.
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
-    'nitto 55f alloy': [{ from: 1986, to: 1986, id: 2878 }], // Mod. 55
+    // Miyata Mod. 55 fitments, 1981–87: extend the reviewed 1986 55F mapping.
+    // Scoped named-model judgement; F is not decoded. See known-catalogs/nitto.md.
+    'nitto mdl 55 alloy with fujita leather grips width: 390mm (520mm 540mm frames) 410mm (560mm 580mm 610mm)': [{ bike: 'Team Miyata', from: 1981, to: 1981, id: 2878 }],
+    'nitto mdl 55f alloy with fujita leather grips width: 390mm (520mm 540mm frames) 410mm (560 630mm)': [{ bike: 'Team Miyata', from: 1982, to: 1982, id: 2878 }],
+    'nitto 55f alloy with cloth tape width: 390mm (500 540mm frames) 410mm (570mm 630mm)': [{ bike: 'Pro Miyata', from: 1982, to: 1982, id: 2878 }],
+    'nitto model 55f': [{ bike: 'Team Miyata-SL', from: 1984, to: 1984, id: 2878 }, { bike: 'Team Miyata', from: 1984, to: 1984, id: 2878 }, { bike: 'Pro Miyata', from: 1984, to: 1984, id: 2878 }],
+    'nitto 55f alloy': [{ bike: 'Team Miyata', from: 1985, to: 1985, id: 2878 }, { bike: 'Pro Miyata', from: 1985, to: 1985, id: 2878 }, { bike: 'Carbon Tech 5000', from: 1987, to: 1987, id: 2878 }, { bike: 'Carbon Tech 3000', from: 1987, to: 1987, id: 2878 }, { bike: 'Team Miyata', from: 1987, to: 1987, id: 2878 }, { bike: 'Team Miyata', from: 1986, to: 1986, id: 2878 }, { bike: 'Pro Miyata', from: 1986, to: 1986, id: 2878 }],
+    'nitto 55f': [{ bike: 'Team Miyata', from: 1983, to: 1983, id: 2878 }, { bike: 'Pro Miyata', from: 1983, to: 1983, id: 2878 }],
     'nitto olympiad b115 alloy': [{ bike: 'Pista', from: 1985, to: 1985, id: 2876 }, { from: 1986, to: 1986, id: 2876 }], // B115, Olympiade
     'nitto 804 aa alloy': [{ from: 1986, to: 1986, id: 10815 }], // Ridge Runner / Terra Runner: B-804 AA, aluminium ATB bar
     // Judgement calls 2026-11-02: Sport 10 "SR 7D-701" -> SR 7D, 7/8 Drop (7894 year_to moved 1982 -> 1986; 701 read as a later code in the 7D range);

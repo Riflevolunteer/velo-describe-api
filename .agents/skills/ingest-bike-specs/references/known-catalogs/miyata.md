@@ -162,7 +162,7 @@ Temporary SQL, scans, snapshots and review scripts were removed after validation
   Dura-Ace UG / 600 UG / UG chains, Dura-Ace track crank and sprockets,
   600 EX triple and 600 EX brakes, SunTour sealed hubs, SR CR-E posts,
   Ukai 7Z / 16-A2, Araya 16-B (two rows) / 16-A3 / 18 / Aero DX, Sugino
-  TLP / TGT / TGT-LP, Miyata Signature cranks, Kusuki / Nitto 55F / B-801 /
+  TLP / TGT / TGT-LP, Miyata Signature cranks, Kusuki / Nitto B-801 /
   SR MTB bars and stems, KKT RMX / RT-7 / M-33 pedals, Ariake saddles.
 - Regression: all 90 other CSVs regenerate byte-identical (after adding a
   plain 11151 fallback to the Astron key so the 1986 Pista keeps its link).
@@ -220,7 +220,7 @@ Temporary SQL, scans, snapshots and review scripts were removed after validation
   CTC-5SD2 / SNS-5SG cranks; Dia-Compe DC-980 / DC-981 / GX-500N / DC-730,
   NGC-200 / 200H, PN-157 / 161 / 280 / 281, 165 levers; Araya 16A3 / 18;
   SR P5 / P5B / P6B posts; Tange Levin Sealed / Tange-ST; SR
-  Randonneur / Custom / SC-713 / MTB bars, Nitto 55F / B-902; MKS AR-Road /
+  Randonneur / Custom / SC-713 / MTB bars, Nitto B-902; MKS AR-Road /
   AR-Road 2 / PT-7, SR SP-513; Ariake saddles (no rows). CR-2 / Model-33
   linked 2026-11-16 after the MKS rows were widened (see mks.md).
 - Regression: all 89 other CSVs regenerate byte-identical.
@@ -279,7 +279,7 @@ Temporary SQL, scans, snapshots and review scripts were removed after validation
   161 / 165 / 280 levers; Dia-Compe 500; SR CT-P5 / P5A / P5B / P6B posts;
   SR CTC-5SD2 (row is 5SD2AH); Sugino TAT; RH-4600 hub; MKS AR Road /
   CR-2 / 33, SunTour Oval Black pedals; Ariake saddles; SR / CT / Royal /
-  AEROX stems; Nitto 55F / B92, SR SC-713 bars (no rows).
+  AEROX stems; Nitto B92, SR SC-713 bars (no rows).
 - Regression: all 91 other CSVs regenerate byte-identical.
 
 ## 1982 Miyata — loaded (2026-11-14, source 403)
@@ -323,7 +323,7 @@ Temporary SQL, scans, snapshots and review scripts were removed after validation
   conflict as 1979-80); Dura-Ace AX / 600AX / CT-P5A / Custom P5 posts;
   Dura-Ace EX hub; NGC 200 / 200H, #144 / #144G / #165 levers; SR CTC 5DX /
   Silstar 5DX C cranks (several CTC rows); DID Lanner chains, Ariake 80N-DX
-  / 77xx saddles, NITTO 55F / MDL-55F, MKS AR Road / CR-2, SR AEROX / Royal
+  / 77xx saddles, MKS AR Road / CR-2, SR AEROX / Royal
   KM / Custom / Silver Win stems, KD-4L bars (no rows).
 - Regression: all 87 other CSVs regenerate byte-identical except 1981
   Miyata, which gains exactly the two Sylvan Road back-fills.
@@ -373,7 +373,7 @@ Temporary SQL, scans, snapshots and review scripts were removed after validation
   Dura-Ace AX; A/B brazed types); Dura-Ace AX / 600 AX seat posts (several
   types); SR Custom P5 (5857 / 5858); Cyclone front; Pro-Compe / Perfect
   clusters; 600 UG chains (kept consistent with 1979-80); NGC 200H levers,
-  NITTO MDL-55, MKS Silvan Road, SR SP-350, Silstar 5DX AH / 5DX C, Silver
+  MKS Silvan Road, SR SP-350, Silstar 5DX AH / 5DX C, Silver
   Win AH, KD-4L, Ariake 77xx saddles, KKT RT-E1 (no rows); Dia-Compe 610 /
   500 / 730; 600 EX stem (no HS-6200 row).
 - Regression: all 87 other CSVs regenerate byte-identical.
@@ -473,7 +473,7 @@ Temporary SQL, scans, snapshots and review scripts were removed after validation
   QS10, L-525 (cage not given), split front-canti / rear-centre-pull brake
   cells, Wolber Aubisque / Alpina, National CX-Alpha, Ukai LA-14, Selle
   Royal / Vetta saddles, Sansin Gyro master, SR / Sugino / Strong posts,
-  Nitto 55F / B-105F / B-126AA / B-811F / B-814F bars, Kusuki bars and
+  Nitto B-105F / B-126AA / B-811F / B-814F bars, Kusuki bars and
   stems, SR and Sugino-less cranks (SUC / CTC / SXC / FXC), MKS PB-100 /
   G-5000, Victor pedals, generic steel parts on Triton / Nimbus / Victor.
 - Regression: all 92 other CSVs regenerate byte-identical.
@@ -623,3 +623,14 @@ mapping uses the already-transcribed OCR reconstruction, corroborated by the
 original 1979/1981 1000 charts; this limitation was included in approval. No new
 bikes loaded. Bare Tange, Levin sealed and generic alloy descriptions are outside
 this mapping. See [Tange evidence, exact IDs and validation](../../../ingest-component-catalog/references/known-catalogs/tange.md#new-falcon-fitment-review--2026-11-20-applied-and-validated).
+
+## Mod. 55 handlebar links — applied 2026-11-20
+
+Linked 13 existing 1981–87 Miyata MDL-55/MDL-55F/Model-55F/55F handlebar specs
+to **2878 Nitto Mod. 55**, extending the existing 1986 fitment judgement with
+bike/year-scoped generator overrides. Original spec wording and catalogue sources
+are preserved; component fields/dates remain unchanged. This supersedes the prior
+55F/MDL-55 missing-row and unlinked entries above. The 1987 B-105F specs stay NULL:
+no global F-suffix stripping or B105/Mod. 55 equivalence. The F suffix itself is
+not decoded by the reviewed sources; the scoped matching judgement was part of
+user approval. [Original pages, exact IDs and validation](../../../ingest-component-catalog/references/known-catalogs/nitto.md#miyata-mod-55-linking-follow-through--2026-11-20-applied-and-validated).

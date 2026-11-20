@@ -276,6 +276,11 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Handlebars
 
+- **Nitto Miyata review, 2026-11-20:** B-105F specs 22104/22168/22190 stay
+  unlinked pending a maker suffix/model crosswalk to B105 2889. Do not strip F
+  globally or conflate B105 with Mod. 55. The scoped MDL-55/55F extension to
+  Mod. 55 was approved, applied and validated; [evidence and limits](../../ingest-component-catalog/references/known-catalogs/nitto.md#miyata-mod-55-linking-follow-through--2026-11-20-applied-and-validated).
+
 - Leave unlinked: 1975 Motobecane Grand Touring Randonneur bend and Tandem combined front/rear cell; the two 1986 Cinelli Almarc bars (11171 Almarc is a 1980-81 3ttt Merckx / Rekord-78 set, not these).
 - "MIYATA SIGNATURE Alloy" (4) is a house bar: leave. Leave unlinked: 1986 Miyata 100 "SR CTSD" (nearest is 7888 CTD, a different code); Miyata "SR RANDONNEUR Alloy" (3; RN-L / RN-S / RND / WR, nothing to choose on); 1989 Peugeot Cosmic "Franco Italia" (Philippe 2897 1970-82 or Milremo 2868 1984); 1989 Peugeot Anjou "CTA alloy randonneur bars" (2782 ATAX CTA is a racing bend); 1978 Peugeot "Atax Philippe, demi-course" (no demi-course row).
 - Leave unlinked: "3ttt / TTT Competizione" (1987, 1991-92 Bianchi; three bends), 1991-92 Bianchi "ITM Mondiale" (3; 9198 Mondial 90/A ends 1990 and names a model the cell does not), 1991 Bianchi Sakae MTB-220 / MTB-227 (only MTB-226SB, 1993), 1994 Cinelli "3T Pro Light" (2) and "Cinelli Eubios 26" (no rows), 1981 Bianchi "T.T.T. Rekord".
