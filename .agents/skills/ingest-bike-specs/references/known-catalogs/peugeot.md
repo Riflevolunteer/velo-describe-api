@@ -1,5 +1,26 @@
 # Peugeot catalogs processed so far
 
+## 1971–74 country and CSV split assessment — 2026-11-20
+
+The existing FR assignment for these four sources was the user's call and is
+unchanged. The source notes below identify the 1971 and 1972 transcriptions as
+Dutch-market lists. The 1973 blog also includes a French index, but only Dutch
+racing specifications were transcribed. In 1974 the six remaining CSV rows
+are based on Dutch specifications; PA 60 and PX 60 each add explicitly labelled
+French details in Extras. French-only sports rows were removed at the user's
+request, and the French PX 60 derailleur differs from the Dutch one.
+
+Splitting the present CSVs by row would therefore not separate all provenance:
+two 1974 rows contain claims from both editions. Copying those rows into a
+French file would incorrectly attribute the Dutch specifications to France;
+the French index alone does not supply equivalent complete specifications.
+A future edition-level correction would need separately transcribed French
+rows and a plan for the mixed Extras and existing bike/spec source references.
+The generator's source insert is keyed by label and its country update fills
+only NULL, so a filename or map change alone cannot migrate existing records.
+Assessment checked the four current CSVs and the catalogue notes; it did not
+alter CSVs, database records or the prior country decision.
+
 ## 1979 Peugeot — `1979_peugeot_spec.csv` (29 bikes, 405 specs, 88 linked)
 
 - Source: "Les Vélos, Cycles Peugeot 79", French home-market catalogue,

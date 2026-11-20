@@ -1098,3 +1098,29 @@ FC-M350 all still fit; see the generator comment on
 - Original/replacement values and IDs, source pages and full regression/API
   validation are in [cross-catalog notes](cross-catalog-notes.md), "Selective
   Front Brake / Rear Brake specs".
+
+## 1991 Raleigh — Bikalog German and British editions assessed 2026-11-20
+
+- [German general catalogue](https://bikalog.org/api/view/Raleigh/1991/Raleigh91.pdf):
+  32 PDF pages, German text and Raleigh Fahrräder GmbH, Darmstadt address.
+  Its contents identify mountain bikes, children's MTBs, trekking, touring,
+  Technium, racing, frames and city ranges. Adult MTB specifications appear
+  on PDF pp. 5–9, touring on p. 15, Technium builds on pp. 18–21 and racing
+  builds on pp. 23–25. Pages 27 and following include frames or city bikes;
+  apply the existing scope rules to the trekking and children's ranges.
+- [British Dyna-Tech catalogue](https://bikalog.org/api/view/Raleigh%20Dyna-Tech/1991/RALEIGH.pdf):
+  20 PDF pages; the text explicitly calls it the 1991 range, and its pound
+  cover price and English Raleigh Special Products context support GB. Its
+  road specification table on PDF p. 18 covers DT-300, 400, 500, 600, 700 and
+  Tour-Lite; the off-road table on p. 19 covers Sentinel, Encounter, Mission,
+  Odyssey, Voyager and Endeavour. Model photos and descriptions precede the
+  tables. Read the scans directly: OCR loses text and table alignment.
+- The editions overlap in names but are not interchangeable: for example,
+  German Dyna-Tech 500 (PDF p. 23) specifies a Biopace crank and Michelin
+  tyres; British DT-500 (p. 18) lists an RX100 SG crank and reflective tyres
+  without a tyre maker. Preserve each edition's own wording and country rather
+  than combining them or inferring that a detail applies in both markets.
+  Use separate country-token filenames and catalogue sources when transcribing.
+- Read-only live query on 2026-11-20 found no Raleigh bike rows with
+  `year_from = 1991`; no local 1991 Raleigh CSV was found. This is a source
+  assessment, not an ingestion or a component-link review. No database changes.

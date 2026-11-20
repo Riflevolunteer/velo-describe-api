@@ -206,6 +206,12 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
   transcribed above: "35 1954-1989" cover, C35 carbon frame and complete
   C35 photos (no captions or specs), and the La Bicicletta "Carbitubo" press
   reprint (frame construction text only). Not transcribed.
+- [Bikalog's 1989 C35 PDF](https://bikalog.org/api/view/Colnago/1989/colnago-1989-c35.pdf)
+  checked page by page 2026-11-20: the same seven-page pack, with the
+  anniversary cover, bare C35 frame and complete C35 photographs, then the
+  Carbitubo cover and three-page frame-construction article. It adds no written
+  C35 component specifications; the illustrated build alone does not establish
+  a catalogue specification. No bike or component changes were made.
 - https://labibleduvelocataloguescolnago1.blogspot.com/p/colnago-1981.html
   (checked 2026-10-27, 5 images): "Colnago International" and "Colnago Super"
   sheets are the same "Yes advertising" sheets as `1979_colnago_spec.csv`

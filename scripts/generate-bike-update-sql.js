@@ -225,7 +225,7 @@ const CATALOGUE_COUNTRY = new Map([
   // 1987|miyata: warranty boilerplate only, no edition code or distributor address; country left NULL
   ['1986|miyata', 'US'], // Miyata Bicycle of America, Elk Grove Village IL (back cover)
   ['1982|battaglin', 'IT'], // Cicli Battaglin, Marostica (VI): Italian-language sheets and a 1981-82 lire price list
-  ['1970|peugeot', 'NL'], // Dutch-market "Peugeot '70" (1971-74 mix NL + FR: left NULL until split)
+  ['1970|peugeot', 'NL'], // Dutch-market "Peugeot '70"
   ['1979|peugeot', 'FR'], // French home-market catalogue
   ['1980|peugeot', 'FR'], // "Les velos sport et course" leaflet; the Dutch Peugeotboek is 1980_peugeot_nl_spec.csv
   ['1981|peugeot', 'FR'], // "Les velos sport et course 1981"; the Swiss one-page PY 10 S is 1981_peugeot_ch_spec.csv
@@ -257,8 +257,8 @@ const CATALOGUE_COUNTRY = new Map([
   ['1989|bianchi', 'US'], // gringineer scans: "for the U.S. market" footer, edge code "MB89 Bianchi USA, Inc.", Minnesota dealer stamp
   ['1987|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19)
   ['1993|bianchi', 'US'], // US catalogue (stated by the user 2026-10-19); probable source retrobike "1993 Bianchi Catalogue", English, lbs
-  // Peugeot 1971-74 mix Dutch spec pages and French general-catalogue pages in one CSV; the user chose FR
-  // for all of them (2026-10-19) instead of splitting. 1970 stays NL (Dutch-market catalogue only).
+  // Peugeot 1971-74: the user chose FR on 2026-10-19. Transcribed specs are
+  // Dutch, with two 1974 Extras cells also quoting French blurbs; see the Peugeot notes.
   ['1971|peugeot', 'FR'], ['1972|peugeot', 'FR'], ['1973|peugeot', 'FR'], ['1974|peugeot', 'FR'], ['1975|peugeot', 'NL'], ['1976|peugeot', 'NL'], ['1978|peugeot', 'NL'], // 1975: Dutch-only "Peugeot Modellen '75"; 1976: Dutch "Peugeot '76" (both Cycles Peugeot Nederland; the 1976 PY 10 spec comes from the French April 1976 leaflet)
   ['1989|derosa', 'US'], // GITA Sporting Goods (Charlotte NC) US dealer catalogue
   // Inferred, not stated by the source (user accepted 2026-10-19); correct if the original says otherwise:

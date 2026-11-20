@@ -5,7 +5,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Product and infrastructure
 
 - Implement and validate [component evidence references](README.md#proposed-component-evidence-references), update ingest workflows and backfill verified claims from notes.
-- Show catalogue country on client bike lists/search results where rows collide; assess splitting mixed-country Peugeot 1971–74 CSVs.
+- Show catalogue country on client bike lists/search results where rows collide.
 - Plan a Cinelli/De Rosa bike-image pilot: inspect the existing blob column, settle rights/cropping, then design storage/API/client delivery.
 - Remove the extra DB-password encryption, coordinate SSM/plaintext application deployment, smoke-test and rotate the password.
 
@@ -13,7 +13,8 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 - Ingest the 1985–89 US Panasonic catalogues, following the [recorded brand rule and sources](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md#brand-treatment-and-scope-decision--2026-11-20).
 - Transcribe and prepare the 1987 US Nishiki catalogue for ingestion, reviewing model scope and component links from the [verified scan and page notes](.agents/skills/ingest-bike-specs/references/known-catalogs/nishiki.md#us-catalogue-1987--assessed-for-ingestion-2026-11-20).
-- Assess the Bikalog Koga-Miyata 1980–2001 and Raleigh 1991 bike sources; check whether its Colnago C35 1989 copy adds specifications beyond the [already assessed photo/frame pack](.agents/skills/ingest-bike-specs/references/known-catalogs/colnago.md#other-copies-seen-not-loaded-2026-10-10).
+- Assess the Bikalog Koga-Miyata 1980–2001 bike sources.
+- Transcribe and prepare the 1991 Raleigh German general catalogue and British Dyna-Tech brochure as separate editions; review scope and component links using the [source assessment](.agents/skills/ingest-bike-specs/references/known-catalogs/raleigh.md#1991-raleigh--bikalog-german-and-british-editions-assessed-2026-11-20).
 
 ## Waiting for distinguishing evidence
 
