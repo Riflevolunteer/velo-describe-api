@@ -613,6 +613,9 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
+    'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 2313 }],
+    'campagnolo super record 4000f or record pantograph': null,
     // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
     'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 2313 }],
     'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: null }],
@@ -1015,6 +1018,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
+    'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 4152 }],
+    'campagnolo super record 4000f or record pantograph': null,
     // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
     'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: null }],
     'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: null }],
@@ -1873,6 +1879,9 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
+    'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: null }],
+    'campagnolo super record 4000f or record pantograph': null,
     // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
     'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: null }],
     'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: null }],
@@ -2320,7 +2329,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': 965, // Shimano BR-6300, 600 AX
     'weinmann 405': 1117, // Weinmann AG 405
     // 1983 Bianchi.
-    'campagnolo nuovo record': [{ from: 1978, id: 572 }], // Campagnolo 2040, Record (standard reach, post-CPSC)
+    'campagnolo nuovo record': [{ bike: 'Treviso N.R.', from: 1985, to: 1985, id: null }, { from: 1978, id: 572 }], // Campagnolo 2040, Record (standard reach, post-CPSC)
     'campagnolo gran sport brakes': 554, // Campagnolo Gran Sport (second gen)
     // 1984 Bianchi (ambiguous between two Flash versions).
     'modolo flash (anatomic hoods)': 874, // Modolo Flash (1st version)
@@ -2544,6 +2553,10 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'campagnolo nuovo record with super record chainrings': [{ bike: 'Treviso N.R.', from: 1985, to: 1985, id: 1496 }],
+    // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
+    'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 1509 }],
+    'campagnolo super record 4000f or record pantograph': null,
     // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
     'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 1509 }],
     'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: null }],
@@ -3422,6 +3435,9 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    'cinelli i r pantograph': [{ from: 1985, to: 1985, id: 6491 }],
+    '3ttt mod "84" pantograph': [{ from: 1985, to: 1985, id: 6424 }],
+    '3ttt record pantograph': [{ from: 1985, to: 1985, id: 6404 }],
     "cosmos alloy; stem lengths vary with frame sizes": [{"bike":"Mirage","from":1985,"to":1985,"id":9204},{"bike":"Nomade","from":1985,"to":1985,"id":9204}], // 1985 Motobecane general catalogue p.6; brand notes.
     // 1986 Miyata / Koga: named Kusuki Rocky 2; maker-free Rocky II remains unresolved.
     'kusuki rocky 2 alloy black': [{ bike: 'Trail Runner', from: 1986, to: 1986, id: 11692 }],
@@ -3865,6 +3881,9 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
+    'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 231 }],
+    'campagnolo super record 4000f or record pantograph': null,
     // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
     'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 232 }],
     'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: 232 }],
@@ -4016,6 +4035,10 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    'campagnolo record sl': [{ bike: 'Treviso N.R.', from: 1985, to: 1985, id: 3709 }],
+    // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
+    'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 3716 }],
+    'campagnolo super record 4000f or record pantograph': null,
     // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
     'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 3716 }],
     'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: 3716 }],
@@ -4250,7 +4273,7 @@ const COMPONENT_OVERRIDES = {
     'sakae sp 362 alloy platform': [{ from: 1984, to: 1984, id: 3932 }], // 1984 Raleigh: SR SP-362 (year_to 1980 -> 1984; judgement call)
     // 1982 Battaglin: either/or cell (Cronospecial or Special) names two parts, so no link; Pista Special is the Special (Pista) pedal.
     'gipiemme cronospecial special': null,
-    'gipiemme pista special': 3751, // Gipiemme Special (Pista)
+    'gipiemme pista special': [{ bike: 'Pista Amatore', from: 1985, to: 1985, id: null }, { id: 3751 }], // Gipiemme Special (Pista)
     'gipiemme bianchi special alloy': [{ from: 1978, to: 1978, id: 3752 }], // 1978 Bianchi Rekord/748: Gipiemme Special 600154 (as its hub cell -> 3352 600160; judgement call)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
     "campagnolo croce d'aune": [{ from: 1987, to: 1991, id: 3703 }], // B620-A (1991 Bianchi Mondiale added 2026-11-06; 3703 year_to 1990 -> 1991)
@@ -4347,6 +4370,9 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
+    'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 5761 }],
+    'campagnolo super record 4000f or record pantograph': null,
     // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
     'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 5761 }],
     'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: 5761 }],
@@ -4689,7 +4715,7 @@ const COMPONENT_OVERRIDES = {
     'regina cx s': 1384, // Regina CX / CX-S (1980-90), as the 1986 Cinelli CXS
     // 1978 Raleigh (US, ebykr scan).
     // Extra 50 Oro (1970-80) for the 1978 Professional Mk V, as the 1973-75 Raleighs; the undated Oro BX from 1981 keeps the 1986 Cinelli pick.
-    'regina oro': [{ to: 1984, id: 1382 }, { from: 1985, id: 1380 }], // Regina Extra 50 Oro (1970-92) / Regina Oro BX (1985); the 1982 Battaglin Oro is not the BX
+    'regina oro': [{ bike: 'Catena Lusso', from: 1985, to: 1985, id: null }, { bike: 'Treviso Victory', from: 1985, to: 1985, id: null }, { bike: 'Triathalon Victory', from: 1985, to: 1985, id: null }, { to: 1984, id: 1382 }, { from: 1985, id: 1380 }], // Regina Extra 50 Oro (1970-92) / Regina Oro BX (1985); the 1982 Battaglin Oro is not the BX
     'shimano uniglide': 7450, // Record FFS/PPS: Shimano QA-200 / CN-UG20, Uniglide-II (1977-89), as the 1983 Road Ace
     // 1979 Colnago.
     'regina extra record': 1381, // Regina Extra 50 Record (1970-80)
@@ -5062,6 +5088,8 @@ const COMPONENT_OVERRIDES = {
     'regina rlsy90 silver 13 21t 7 speed': [{ from: 1989, to: 1989, id: 2205 }], // Synchro 90-S (as the 13-23T)
   },
   Tyres: {
+    'vittoria sport': [{ bike: 'Catena Lusso', from: 1985, to: 1985, id: null }, { bike: 'Triathalon Victory', from: 1985, to: 1985, id: null }],
+    'clement crit seta': [{ from: 1985, to: 1985, id: 6748 }],
     'hutchinson hp 22 "u"': [{ from: 1988, to: 1988, id: 10972 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. HP22 profil U, 700C (portraits).
     'hutchinson hp 22 "u" 700c': [{ from: 1988, to: 1988, id: 10972 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. as above.
     'michelin hi lite competition': [{ from: 1988, to: 1988, id: 6835 }, { bike: 'C662CA Super Record', from: 1986, to: 1987, id: 6835 }, { bike: 'JO392 Triathlon Olympique', from: 1986, to: 1987, id: 6835 }], // MBK 1986/87 spread2 names Competition; suppress the 1996 Hi Lite 10530 substring match.
@@ -5166,7 +5194,7 @@ const COMPONENT_OVERRIDES = {
     'clement campionissimo tubular 28"': 6738, // Clement Campionissimo Seta Extra (the only dated Campionissimo row)
     // 1984 Raleigh (UK "Racers" catalogue, ebykr scan).
     'vittoria nuovo pro tubular': [{ from: 1984, to: 1984, id: 6893 }], // 1984 Raleigh Team Replica / Road Ace: the only Nuovo Pro row, Nuovo Pro 260 (6893 year_from moved 1988 -> 1984 on this catalogue; judgement call 2026-11-02, reversing the 2026-10-30 leave-unlinked)
-    'vittoria nuovo pro': [{ from: 1991, to: 1992, id: 6893 }], // 1991-92 Bianchi Super Leggera / Giro: Nuovo Pro 260, the only period Nuovo Pro row (6893 year_to 1988 -> 1992 for these; user's call 2026-11-13)
+    'vittoria nuovo pro': [{ from: 1985, to: 1985, id: 6893 }, { from: 1991, to: 1992, id: 6893 }], // 1991-92 Bianchi Super Leggera / Giro: Nuovo Pro 260, the only period Nuovo Pro row (6893 year_to 1988 -> 1992 for these; user's call 2026-11-13)
     // 1987 Peugeot (FR) PX CA W 'Dolomites': maker not printed; Neo Pro is Wolber's model (the 1987 US PX / PX 10 print "Wolber Neo Pro"). Judgement call 2026-11-02.
     'tubulars 700 neo pro': [{ from: 1978, to: 1990, id: 6923 }], // Wolber Neo Pro
     'clement tubulars mod colnago': 6743, // Clement Colnago (1979 Colnago Mexico / Mexico Oro)
@@ -5219,6 +5247,7 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    'mavic monthlery pro': [{ bike: 'Pista Amatore', from: 1985, to: 1985, id: 5092 }],
     'campagnolo omega strada hardox anodised': [{ from: 1988, to: 1988, id: 4957 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Kevlight: Omega 20 / Omega Strada Hardox.
     'mavic ma2': [{ bike: 'C455 Le Champion', from: 1988, to: 1988, id: 8177 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. portrait: silver-anodised Mavic rims = MA 2 Argent.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
@@ -5334,7 +5363,7 @@ const COMPONENT_OVERRIDES = {
     'ambrosio elite': [{ from: 1985, to: 1988, id: 4909 }],
     // 1987 Bianchi Pista: Nuovo Montreal Crono (1985-88) by date. The 1990 "Montreal black" is a different
     // key and past the row, so it stays unlinked.
-    'ambrosio montreal': [{ from: 1985, to: 1988, id: 9175 }],
+    'ambrosio montreal': [{ bike: 'Treviso Victory', from: 1985, to: 1985, id: null }, { from: 1985, to: 1988, id: 9175 }],
     // Judgement calls 2026-10-30.
     'ambrosio montreal black': [{ from: 1985, to: 1990, id: 9175 }], // 1990 Bianchi Pista, as the 1987 Pista (9175 extended 1988 -> 1990)
     'record du monde drilled for tubulars': [{ from: 1970, to: 1981, id: 5189 }], // 1978 Peugeot PA 10 LE: Super Champion Record du Monde (Mavic's is "de l'Heure")

@@ -1,5 +1,79 @@
 # Pinarello catalogue sources
 
+## 1985 GITA catalogue — applied and validated, 2026-11-20
+
+Source: [Bikalog PDF](https://bikalog.org/api/view/Pinarello/1985/pinarello-1985.pdf),
+23 pages, retained at `bike_specs/sources/pinarello_1985/pinarello-1985.pdf`.
+Normalized CSV: `bike_specs/1985_pinarello_spec.csv`. Applied after user approval:
+source **493**, seven bikes **1493–1499**, 114 specs and 56 component links.
+Prior baseline had only the 1979/1982 Pinarello catalogues, no 1985 bikes.
+Existing brand and all 18 labels reused. Applied SQL removed after validation.
+Country NULL:
+PDF p.23 prints GITA Sporting Goods / North American Agent, establishing the
+regional edition but not a specific US/Canada market. Text explicitly says
+new for 1985 (pp.7/13), and the 1985 Triathalon Victory (p.15).
+
+Visually transcribed specification panels: Pista Amatore (PDF p.3), Catena
+Lusso (p.5), Montello 85 SLX (p.7), Super Record Special (p.9), Treviso N.R.
+(p.11), Treviso Victory (p.13), Triathalon Victory (p.15; printed spelling).
+All seven are in scope: track plus six road/triathlon bicycles. Exclude
+Frame Record, Frame Treviso and Frame Montello 85 SLX (pp.17/19/21): framesets
+without complete-bike equipment. Even pp.2–20 are model/frame portraits;
+p.1 is the cover, p.22 champion photos, p.23 GITA back cover. No weights
+printed. Preserve stated sizes, paint names and model spelling, including
+Legal yellow and Midnight blue - Bordeaux; do not invent colour allocations.
+
+Road groups expanded into FD/RD/crank/post/brakes/levers/pedals using the
+established seven-label approach. Printed group wording/finish retained in
+Extras. Track group expands only to crank/post/pedals, all unresolved: do not
+invent fitted derailleurs or brakes from the drilled fork. No inferred hubs
+or headset specs. Montello's Super Record 4000F **or Record** offering stays
+an alternative in every derived spec, with explicit NULL links. Catena Lusso
+and Triathalon Victory retain their tubular/clincher rim alternatives.
+
+Reviewed and validated links (all compatible with DB categories/dates):
+
+- Super Record Special group: FD2313, RD4152, crank1509, post5761,
+  levers231, pedals3716; brakes NULL without reach evidence.
+- Triomphe (Catena Lusso): FD2314, RD4155, crank1515, post5764, brakes585,
+  levers233, pedals3719. Victory (Treviso/Triathalon): FD2318, RD4168,
+  crank1516, post5764, brakes590, levers235, pedals3720.
+- Treviso N.R.: FD2300, RD4127, post5749, crank1496 with explicitly printed
+  Super Record chainrings; explicit SL pedals map to Record SL3709, not
+  titanium Super Record3716. Brakes NULL without reach, levers NULL because
+  the period Nuovo Record candidate226 ends1984; do not extend dates here.
+- Stems: Cinelli I-R Pantograph →6491 (1R), TTT Mod.84 Pantograph →6424,
+  TTT Record/Pantograph →6404; punctuation and TTT→3ttt lookup keys checked.
+- Rims: Mavic GP-4 →5069 (two); Pista's Monthlery pro →5092. Turbo →5508
+  (three). Clement Crit. Seta →6748. Vittoria Nuovo Pro →6893 (three),
+  consistent with Guida1985 detail already on that row and earlier reviewed
+  Nuovo Pro naming decisions. Regina CX/CXS chains →1384, CX6 freewheel
+  →2169, explicit Oro6 freewheels →2194 (four).
+
+Blocked automatic guesses: Gipiemme pedal3751 ends1982 (no modern track model
+code given); Vittoria Sport PE6901 is1987; generic Ambrosio Montreal does not
+establish Nuovo Montreal Crono9175; plain Regina Oro does not identify BX1380
+rather than standard Oro1382. Those plus bare Oro chain remain NULL. Pista
+crank/post, generic bars/Concor saddles, Campagnolo Record Strada rim, spokes,
+rim alternatives and CXS7 freewheel remain text. Clement Crit. cotton remains
+NULL: named cotton candidate8972 ends1984; no component dates changed. These
+are recorded evidence decisions, not automatic source-hunt tasks.
+
+Validation before application: seven unique model titles, values at most 165
+characters; generator syntax and all 56 SQL-summary links reviewed. Full
+before/after comparison of 23,947 loaded specs found identical scope/summary/
+findings, including 15 pre-existing lost mappings; only timestamps and the
+new unloaded CSV's skipped-file entry differ. No other catalogue mappings
+changed. Root `bike-update.sql` restored. Original PDF/CSV retained; disposable
+OCR/renders/transcriptions/comparison output removed. Post-load readback
+confirmed correct source 493 on every bike/spec, NULL country, no duplicate
+bikes/specs, dangling component links or date conflicts. Per-model specs/links:
+Pista Amatore 12/3, Catena Lusso 17/9, Montello 85 SLX 17/4, Super Record
+Special 17/11, Treviso N.R. 17/10, Treviso Victory 17/10, Triathalon Victory
+17/9. All 114 generator/live-DB mappings unchanged, zero missing/ambiguous
+identities. All 336 SQL statements reran with zero rows affected. Applied SQL
+removed; original PDF and expanded CSV retained.
+
 ## Circa-1982 ingestion — applied and validated, 2026-11-20
 
 Source: [Bulgier's Pinarello82 scan set](http://bulgier.net/pics/bike/Catalogs/Pinarello82/),

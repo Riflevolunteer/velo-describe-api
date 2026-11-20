@@ -6,6 +6,16 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## Pinarello 1985 GITA — applied catalogue review
+
+Preserve Montello's Super Record4000F-or-Record group alternative as NULL in
+all seven derived specs. Track group does not supply fitted brakes/derailleurs;
+Gipiemme track parts without version codes stay NULL. Treviso N.R. has explicit
+Record SL pedals and SR chainrings, not titanium SR pedals. Hold brake reach,
+out-of-range NR levers/cotton tyres, generic Vittoria Sport, Ambrosio Montreal,
+plain Oro chains, rim alternatives and CXS7 freewheel without inventing variants.
+Applied/validated 2026-11-20; see [full evidence and mappings](known-catalogs/pinarello.md#1985-gita-catalogue--applied-and-validated-2026-11-20).
+
 ## Pinarello circa 1982 — applied catalogue review
 
 Expand the printed groups into individual specs, preserving Titanio and x3
