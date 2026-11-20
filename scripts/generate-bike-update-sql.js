@@ -613,6 +613,9 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
+    'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 2313 }],
+    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: null }],
     'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
 
     'huret rider indexed': [{ from: 1988, to: 1988, id: 8962 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. MT30/MT30D 28-38-48 triples: AV 62.1 T Rider.
@@ -1012,6 +1015,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
+    'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: null }],
+    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: null }],
     'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
 
     'huret rider indexed': [{ from: 1988, to: 1988, id: 8958 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. AR 46.1 T Rider, as 'huret rider'.
@@ -1867,6 +1873,9 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
+    'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: null }],
+    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: null }],
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":585}],
     "weinmann super carrera 400": [{"bike":"Spécial Pro","from":1985,"to":1985,"id":1168}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
@@ -2306,7 +2315,7 @@ const COMPONENT_OVERRIDES = {
     'universal mod 68 side pull racing': 1082, // Universal Super 68
     'mafac racer center pull (1 front 2 rear)': 838, // MAFAC Racer (lettered MAFAC RACER)
     // 1981 Kalkhoff.
-    'campagnolo super record': [{ bike: 'Prestige', from: 1979, to: 1979, id: null }, { bike: 'Super Record', from: 1979, to: 1979, id: null }, { bike: 'Record Special', from: 1979, to: 1979, id: null }, { to: 1982, id: 582 }, { from: 1983, id: 583 }], // c.1979 Pinarello: reach unspecified (582 vs 7005); otherwise 4061 v1/v2.
+    'campagnolo super record': [{ bike: 'Super Record Special', from: 1982, to: 1982, id: null }, { bike: 'Prestige', from: 1979, to: 1979, id: null }, { bike: 'Super Record', from: 1979, to: 1979, id: null }, { bike: 'Record Special', from: 1979, to: 1979, id: null }, { to: 1982, id: 582 }, { from: 1983, id: 583 }], // c.1979 Pinarello: reach unspecified (582 vs 7005); otherwise 4061 v1/v2.
     'dura ace ex': 997, // Shimano BR-7200, Dura-Ace EX
     'shimano 600 ax': 965, // Shimano BR-6300, 600 AX
     'weinmann 405': 1117, // Weinmann AG 405
@@ -2535,6 +2544,9 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
+    'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 1509 }],
+    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: null }],
     'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
 
     'shimano new 105 42 52': [{ from: 1988, to: 1988, id: 1778 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. FC-1050, 105 (1986-89).
@@ -2957,7 +2969,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo record pista': 1505, // Campagnolo 1051, Record Pista (144bcd)
     'gipiemme pista': 1593,
     // Plain and Bianchi-marked 0304 cranksets share the consolidated family row.
-    'campagnolo gran sport': [{ from: 1978, id: 1472 }], // 0304 Gran Sport, including Bianchi-marked chainring variant merged from 1473
+    'campagnolo gran sport': [{ bike: 'Italia', from: 1982, to: 1982, id: null }, { from: 1978, id: 1472 }], // 0304 Gran Sport, including Bianchi-marked chainring variant merged from 1473
     'campagnolo nuovo record': [{ from: 1967, to: 1987, id: 1496 }], // 1982 Raleigh Team Replica: Campagnolo 1049, (Nuovo) Record Strada v4
     // 1987 Bianchi. "Master Gran Premio" substring-hit Master; the catalog
     // names the Gran Premio.
@@ -3853,7 +3865,10 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
-    'campagnolo nuovo gran sport': [{ bike: 'Treviso', from: 1979, to: 1979, id: 209 }],
+    // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
+    'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 232 }],
+    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: 232 }],
+    'campagnolo nuovo gran sport': [{ bike: 'Treviso', from: 1982, to: 1982, id: 209 }, { bike: 'Treviso', from: 1979, to: 1979, id: 209 }],
 
     'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
 
@@ -4001,7 +4016,10 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
-    'campagnolo nuovo gran sport': [{ bike: 'Treviso', from: 1979, to: 1979, id: 3688 }],
+    // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
+    'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 3716 }],
+    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: 3716 }],
+    'campagnolo nuovo gran sport': [{ bike: 'Treviso', from: 1982, to: 1982, id: 3688 }, { bike: 'Treviso', from: 1979, to: 1979, id: 3688 }],
 
     'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
 
@@ -4329,7 +4347,10 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
-    'campagnolo nuovo gran sport': [{ bike: 'Treviso', from: 1979, to: 1979, id: 5734 }],
+    // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
+    'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 5761 }],
+    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: 5761 }],
+    'campagnolo nuovo gran sport': [{ bike: 'Treviso', from: 1982, to: 1982, id: 5734 }, { bike: 'Treviso', from: 1979, to: 1979, id: 5734 }],
 
     'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
 
@@ -4555,6 +4576,8 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // Pinarello c.1982, named CX chain (not the ambiguous freewheel).
+    'regina extra cx': [{ from: 1982, to: 1982, id: 1384 }],
     // c.1979 Pinarello: explicit named chains, not inferred from the gruppo.
     'regina extra record s': [{ from: 1979, to: 1979, id: 8334 }],
     'regina extra titanio': [{ from: 1979, to: 1979, id: 1391 }],
@@ -4623,7 +4646,7 @@ const COMPONENT_OVERRIDES = {
     'shimano cn 6120 1 2 x 3 32': [{ from: 1978, to: 1987, id: 7473 }], // 1987 Peugeot (US) Triathlon: QA-410 / CN-6120, 600 UG
     'did': null, // 1987 Bianchi Sport SX: brand only; the hit is the bare D.I.D brand row 1355
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
-    'regina extra oro': [{ from: 1970, to: 1980, id: 1382 }], // Rekord/748, /746: Regina Extra 50 Oro (1385 "Extra Oro (center drilled)" merged into it 2026-10-26)
+    'regina extra oro': [{ bike: 'Treviso', from: 1982, to: 1982, id: 1382 }, { bike: 'Italia', from: 1982, to: 1982, id: 1382 }, { from: 1970, to: 1980, id: 1382 }], // Rekord/748, /746: Regina Extra 50 Oro (1385 "Extra Oro (center drilled)" merged into it 2026-10-26)
     // 1978 Bianchi: maker C-78 p.5 and Palo Alto 1976 p.13 distinguish gold drilled Record from undrilled Oro.
     'regina extra oro 50 record lightened': [{ from: 1978, to: 1978, id: 1381 }],
     'regina extra super corsa oro': [{ from: 1978, to: 1978, id: 1382 }],

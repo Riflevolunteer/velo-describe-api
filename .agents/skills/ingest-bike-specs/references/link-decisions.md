@@ -6,6 +6,16 @@ Leave-unlinked calls and reviewed-but-not-linked cases for `bike_spec.component_
 
 General rule: brand-only, size/material-only, either/or and house-part specs can correctly remain unlinked. Do not infer a model from bare `Campagnolo`.
 
+## Pinarello circa 1982 — applied catalogue review
+
+Expand the printed groups into individual specs, preserving Titanio and x3
+qualifiers. Explicit NULL guards hold the x3 drivetrain and qualified-group
+brakes/rears; Super Record Special's generic brake is NULL without reach.
+Italia's Gran Sport crank stays NULL without BCD/configuration evidence.
+Record rear on Treviso is explicitly printed, overriding the Gran Sport group.
+Generic/alternative tyres, saddles, bars, rims and ambiguous freewheels remain
+text. Applied/validated 2026-11-20; see the [mapping and evidence review](known-catalogs/pinarello.md#circa-1982-ingestion--applied-and-validated-2026-11-20).
+
 ## MBK Catalogue 1988 (FR) — applied link review, 2026-11-20
 
 Scope `1988_mbk_spec.csv`, source 482 (applied; held values read back NULL); registry entries in `link-decisions.js`, scoped NULL

@@ -1,5 +1,69 @@
 # Pinarello catalogue sources
 
+## Circa-1982 ingestion — applied and validated, 2026-11-20
+
+Source: [Bulgier's Pinarello82 scan set](http://bulgier.net/pics/bike/Catalogs/Pinarello82/),
+all eight original images retained at `bike_specs/sources/pinarello_1982/`.
+CSV: `bike_specs/1982_pinarello_spec.csv`. Applied after user approval:
+catalogue source **492**, five bikes **1488–1492**, 73 specs and 29 links.
+Prior live baseline had only the five 1979 Pinarello bikes/source 491;
+no 1982 bikes or source record. Applied SQL removed after validation.
+
+Complete-set visual review: pages 1/8 celebrate Battaglin's 1981 Giro/Vuelta
+victories, page 7 is clothing. Pages 2–6 supply five complete road-racing models:
+Prestige S, Tre Cime, Super Record Special, Treviso and Italia, respectively.
+All five are in scope; no framesets or city/children's bikes excluded. This
+confirms a specification-bearing brochure as well as victory covers. It does
+not establish a printed 1982 date: use c.1982 following the folder attribution,
+with post-1981-victory content as a date bound. The multilingual text and Treviso
+maker address do not establish the sales market; country remains NULL. No
+sizes, weights or colours inferred. Treviso/Italia have no tyre spec line.
+
+Groups expanded directly into Front Derailleur, Rear Derailleur, Crankset,
+Seatpost, Brakes, Brake Levers and Pedals using the agreed seven-category
+approach; no generic group spec, inferred headset or hubs. All original group
+qualifiers are retained on derived specs. Treviso's separately printed
+`Cambio: Record` overrides the group rear and is normalized to Campagnolo Record.
+Italia's group is Gran Sport but says only Campagnolo brakes: Brakes and Brake
+Levers remain maker-only, rather than assigning a Gran Sport brake model.
+Tre Cime's `Super Record x 3` is preserved and its triple drivetrain stays NULL.
+
+Loaded one source, five bikes, 73 specs, 29 component links;
+existing brand and all 15 labels reused. Source label follows generator
+convention `1982 Pinarello catalogue`, citation `1982_pinarello_spec.csv`.
+Validated component mappings:
+
+- Prestige S: FD 2313, crank 1509, post 5761, levers 232, pedals 3716, chain
+  1384, rims 5069. Titanio qualifies the group, not every component's material.
+- Tre Cime: post 5761, levers 232, pedals 3716, chain 1384, rims 5069.
+- Super Record Special: FD 2313, crank 1509, post 5761, levers 232, pedals
+  3716, chain 1384.
+- Treviso: FD 2276, explicit Record RD 4126, post 5734, levers 209, pedals
+  3688, chain 1382. Year-based RD variant follows existing period mappings;
+  c.1982 date attribution remains a provenance caveat.
+- Italia: FD 2276, RD 4085, post 5734, pedals 3688, chain 1382.
+
+Held NULL: ambiguous Super Record rear variants; triple FD/RD/crank; brake
+reach/generation not given; Gran Sport crank BCD/configuration not given;
+Regina CX/CX Oro/Oro freewheels without speed/variant (CX candidates 2168/2169);
+alternative Clement/Vittoria tyres; generic Concor, S. Marco, Super Leggera,
+Cinelli Special, 3T, Mavic/Legger Special and ACI spokes. No component insert,
+date change or merge performed. Named CX chain maps to combined CX/CX-S 1384;
+Oro chain to 1382, without carrying that identification across to freewheels.
+
+Validation: all 29 links reviewed by category/title/date, five unique CSV
+models, values under 255 chars, generator syntax and SQL summary pass. Full
+before/after comparison of 23,874 existing specs shows identical scope, summary
+and findings (15 pre-existing lost mappings); only timestamps and the newly
+skipped unloaded CSV differ. No existing catalogue mapping changes. Root
+`bike-update.sql` restored. Post-load readback confirmed source 492 throughout,
+NULL country, no generic group specs, duplicate bikes/specs, dangling component
+links or date conflicts. Per-model specs/links: Prestige S 15/7, Tre Cime 15/5,
+Super Record Special 15/6, Treviso 14/6, Italia 14/5. Scoped generator/live-DB
+comparison found all 73 specs unchanged, no missing/ambiguous identities.
+Rerunning all 217 SQL statements affected zero rows. Scratch SQL removed;
+maintained source images and CSV retained.
+
 ## Groupset expansion — applied and validated, 2026-11-20
 
 User identified the Colnago/Cinelli precedent missed in the initial ingestion.
@@ -62,7 +126,7 @@ tyre line is blank, creating no spec. No models excluded.
 Initial-load labels: Frame Material, Groupset / Components, Chain, Freewheel,
 Tyres, Saddle, Handlebars, Rims, Spokes and Brakes. Catalogue filenames are in
 the ignored Catalog Page CSV column. Group descriptions were initially retained whole;
-this treatment is superseded by the pending expansion above. In
+this treatment is superseded by the applied expansion above. In
 particular Record Special says Record with Super Record brakes and unspecified
 Super Record details; only its explicit brakes get a separate spec.
 
