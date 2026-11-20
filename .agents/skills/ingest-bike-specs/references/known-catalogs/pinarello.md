@@ -293,6 +293,82 @@ rows. Scoped generator/live-DB comparison: all 45 specs unchanged, no missing
 or ambiguous identities. Applied SQL was removed after validation; original
 scans and CSV remain.
 
+## Source comparison and missing pages — completed 2026-11-20
+
+Follow-up to the source review below. This was source recovery and comparison,
+not a bike ingestion or a component/link/date change. It closes the untested
+interior-comparison and alternate-download leads; exact publication dates remain
+qualified where the originals do not print them.
+
+**Early catalogue:** all seven Bulgier images match the corresponding
+[Flying Wheel blog](https://theflyingwheel.blogspot.com/2014/08/1970s-pinarello-catalog.html)
+images in dimensions and full decoded-pixel SHA-256, despite differing file
+metadata/byte hashes. Mapping: blog `cover.jpeg` → `0.cover.jpeg`,
+`1+(1741x1800).jpg` → `1.jpg`, and `2.jpeg`–`6.jpeg` → same-named files.
+The eighth blog image, `7.jpeg`, is an additional component-detail collage of
+the blue pantographed bicycle, not another specification-bearing model page.
+Recovered it to `bike_specs/sources/pinarello_1979/7-details.jpeg`.
+Its original link is embedded in the blog HTML under `/s1600/7.jpeg`.
+All eight blog catalogue images were checked for date text; none establishes
+a publication year. The blog's early/mid-1970s caption and Bulgier's 1979 folder
+therefore describe the same seven scans with conflicting attribution, not
+independent evidence for two editions. Keep the existing c.1979 qualification;
+the collage alone does not resolve component generations or justify new links.
+
+**1982 alternative:** [Bike Catalogs document3895](https://www.bikecatalogs.com/document/3895),
+[direct PDF](https://www.bikecatalogs.com/download/3895), has eight pages.
+Extracting the embedded JPEGs with `pdfimages -j -p` gives eight byte-for-byte
+SHA-256 matches to maintained `pinarello_1982/1.jpg`–`8.jpg`, in order.
+Its Giro Win Brochure title therefore names the already-ingested document,
+including the five model specification pages. It is not an additional edition
+or source to ingest. Its digital PDF title/2026 creation date cannot establish
+the original's year; the existing post-1981-victory/c.1982 dating remains.
+The redundant PDF was not retained.
+
+**1990 alternatives:** [document3899](https://www.bikecatalogs.com/document/3899),
+[direct PDF](https://www.bikecatalogs.com/download/3899), embeds exactly the same
+13 byte-identical JPEGs as the Bulgier `Pinarello90` directory, in its order.
+The alternate [document5849](https://www.bikecatalogs.com/document/5849),
+[direct PDF](https://www.bikecatalogs.com/download/5849), is attributed by its
+host to Retrobike and labelled low resolution, but contains **17 pages** and
+generally larger embedded images. Its cover is byte-identical to Bulgier's;
+the remaining common pages visually reproduce the same layouts and offerings.
+The four additions, checked at full size, are:
+
+| PDF position in document5849 | Additional content |
+| --- | --- |
+| 7 | Treviso Croce d'Aune: Columbus SL, Campagnolo Croce d'Aune group, component specification panel. |
+| 11 | Asolo Ultegra: Columbus Cromor, Shimano Ultegra 7V group, component specification panel. |
+| 12 | Veneto 105 7V: Columbus three-tube Aelle, Shimano 105 7V group, component specification panel. |
+| 14 | Montello / Prologo / Treviso frameset specification panel; not three complete-bike offerings. |
+
+Map the 13 Bulgier images to PDF positions
+1/2/3/4/5/6/8/9/10/13/15/16/17 respectively. The recovered PDF has nine
+complete-bike panels at positions4–12, two frameset panels14/16, accessories13/15,
+cover1, champions2, introduction3 and colours/back17. These are recovered file
+positions, not verified printed page numbers or proof of physical completeness.
+Retained original: `bike_specs/sources/pinarello_1990/pinarello-c1990-17pages.pdf`.
+Use this more extensive copy for future specification work, with the Bulgier
+copy as a cross-check; do not treat the archive's low-resolution label as a
+completeness judgment.
+
+OCR date screening covered every page of the 17-page PDF; visual review covered
+the page layouts, extra specification panels, cover, champion page,
+introduction and back-cover imprint. No printed publication year was found.
+The introduction's1925 is a historical claim; clothing model86 is not an
+edition date. Back cover prints `Prograf (Verona) - Printed in Italy` without
+a year. Retain **c.1990, archive attribution**. A dated original imprint or
+contemporary publisher/importer reference is needed before changing dates;
+another mirror repeating1990 would not independently establish it.
+
+Validation: recovered files match the downloaded originals by SHA-256; PDF
+counts and extra-page positions checked. No CSV, generator, DB or existing
+bike/component mappings changed, so mapping regeneration was unnecessary.
+Temporary HTML, redundant PDFs/JPEGs, extracted images, OCR text, comparison
+scripts/contact sheet and compiler cache were removed. The two maintained
+originals above remain. The open TODO now asks only for dated evidence rather
+than repeating the completed scan comparisons.
+
 ## 1970–1990 source review — 2026-11-20
 
 Scope: free public bicycle catalogue scans and their usefulness for later
@@ -324,16 +400,16 @@ the blog's `cover.jpeg` with Bulgier `Pinarello79/0.cover.jpeg`: same blue Recor
 Special bicycle, illustrated landscape, layout and scan marks. This is a
 conflicting attribution of the same cover, not evidence for an additional early
 1970s edition. The post embeds eight catalogue-looking images (cover plus 1–7),
-whereas Bulgier has seven files; compare interiors before claiming the sets are
-identical or that the blog supplies an extra page. Exact dating remains open.
+whereas Bulgier has seven files. The completed comparison above confirms the
+same seven scans plus the blog's extra detail collage; exact dating remains open.
 
 [Ebykr's Pinarello index](https://ebykr.com/catalog-archive/?em=pinarello)
 dates the 1979 and 1987 material approximately and lists 1985 and 1989. It also
 lists a c.1991 Gavia brochure, outside scope; do not silently count that as 1990.
 [Bike Catalogs](https://www.bikecatalogs.com/brand/pinarello) indexes the six
 years above, including two 1990 entries (one low resolution) and a 1982 Giro-win
-brochure. Its index was visible in search but direct page retrieval failed, so
-the alternate 1990 scan and 1982 brochure are leads, not inspected copies.
+brochure. Direct retrieval initially failed; the completed comparison above
+supersedes that limitation and identifies both PDFs and the four extra pages.
 [VeloBase](https://velobase.com/Pages/Resources/CatalogScans.aspx) additionally
 lists an 828 KB Pinarello 1985 price list; download and content not inspected.
 
@@ -342,6 +418,6 @@ No independently dated 1970–78 catalogue was established. Also not recovered:
 queries, Bulgier, Bikalog, Ebykr, Bike Catalogs, archive-link lists and the early
 blog lead. Absence here does not establish that editions were never published.
 Reopen these gaps for a new scan or identified shareable copy, rather than
-repeating the same index searches. Next useful work is interior comparison of
-the blog/Bulgier early sets, dating/completeness review of 1982/1990 and checking
-the alternate Bike Catalogs entries.
+repeating the same index searches. The interior and alternate-copy comparisons
+have now been completed above. Exact dating needs a new dated original or
+contemporary publisher/importer reference, rather than another archive label.

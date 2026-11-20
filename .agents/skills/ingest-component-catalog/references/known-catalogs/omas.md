@@ -1,5 +1,55 @@
 # OMAS catalogs processed so far
 
+## Bikecology steel-axle hubs — applied and validated 2026-11-20
+
+The [1980 catalogue](https://labibleduvelodivers.blogspot.com/p/revue-1980.html),
+source247, printedp35 (image30 of64 in the reversed blog sequence), specifies
+sealed bearings, chrome-moly axles,100mm front/125mm rear,36 countersunk14g
+spoke holes and English freewheel thread; pair$69.90, retailer codeA35-23.
+The photographed pair has dark quick-release end housings and the distinctive
+bent OMAS levers. The [Summer1981 p33 scan](https://ebykr.com/wp-content/uploads/2026/11/ebykr-1981-bikecology-catalog-p33-scaled.webp),
+source227, again explicitly specifies steel-alloy axles, aluminium skewer ends,
+sealed bearings and36-hole small-flange bodies. It offers English/Italian
+thread and5/6-speed configurations:30-210-8/30-212-5 and30-211-7/30-213-3.
+The clear photo shows the same black-ended quick releases.490g is the
+advertised pair weight;20oz is shipping weight. Neither is an individual-hub
+weight or grounds to replace the manufacturer's500g family heading.
+
+Crosswalk to the[undated maker PDF](https://classicrendezvous.com/wp-content/uploads/2023/05/O.M.A.S.pdf),
+source469: PDFp8 **101/C** has steel axles107/A and118/A but standard
+silver-ended quick releases108/117; PDFp9 **101/CB** has those same steel
+axles with black-ended special quick releases108/B and117/B. The stated steel
+axles exclude101(alloy both),101/S(alloy front/steel rear),101/SS(alloy
+front/titanium rear) and101/T(titanium both). Together, material and pictured
+QR hardware support **101CB/A front and101CB/P rear**. This is an identification
+inferred from specifications/photos: Bikecology does not print those maker
+codes. It supersedes the unresolved Bikecology question in the earlier notes.
+
+Applied after explicit approval: 11721 `OMAS 101CB/A, Big Sliding (front)` and
+11722 `OMAS 101CB/P, Big Sliding (rear)` changed from NULL/NULL years, source469
+to **1980–1981, source227**, the latest dated attestation. Titles,
+descriptions, search text, brand34/category13/group41 and UUIDs are unchanged. Source469
+remains the code/specification evidence. These are availability attestations,
+not manufacturing endpoints. Keep silver-QR101C rows11719/11720 undated;
+preserve Ti-axle legacy pair3450 and1996 configurations10778–10789. Do not
+create another generic pair row. Different QRs are sold configurations, even
+where the bare hub bodies/service parts are shared.
+
+Old UUIDs for restoration:11721 `00416cbd-a308-427f-acea-8bda821119ed`;
+11722 `be51cd80-09f5-4c35-b1c2-23b2f2a0f068`. Restore their years toNULL and
+source_ref469 if reverting this change; other fields are untouched.
+The transaction updated exactly these two hubs and added [Ideale saddle12169](ideale.md).
+Field-by-field readback checked both updates and confirmed 3450/11719/11720
+were unchanged. The second SQL load affected zero rows. Post-load exact merge
+reports found no candidates for either brand. No OMAS-named bike specs or links
+exist; no generator rule or bike link was needed. The maintained generator reads
+titles/category/ID, not these dates/source refs. Actual before/after comparison
+including the new saddle left all 24,061 mappings across 113 loaded catalogues
+identical, including the same 15 existing generator/live-DB losses. The integrity
+report found zero errors and 2,069 review findings. Temporary SQL, scripts,
+baseline and downloaded scans were removed after validation; original source
+URLs/pages above retain the evidence.
+
 ## Recovered catalogue reconciliation — applied 2026-11-19
 
 **Two sources must not be conflated:** this OMAS manufacturer catalogue has
@@ -63,7 +113,8 @@ catalogue101/S has alloy-front/steel-rear axles;101/SS alloy-front/titanium-rear
 SS445,T465,GrandPrix490,Pista465. They are family headings, not individual-hub
 weights. The counterintuitiveSS/T difference is visibly printed and is not
 silently corrected or used to identify3450. No OMAS-named/linked bike specs
-exist in the live baseline; unnumbered Bikecology hubs remain unresolved.
+exist in that live baseline. The subsequent Bikecology identification above
+supersedes the then-unresolved unnumbered-hub question.
 
 Source exceptions: the high-resolution800 ensemble sheet prints pedal thread
 9/16x22 while900 prints9/16x20. Preserve that conflict here; omit800 pedal
@@ -199,9 +250,8 @@ The original small recovered copy did **not yield readable axle-material caption
 alone prove that it is a steel-axle variant, identify 3450, justify relabelling
 that row, or prove that a separate new identity is needed. Preserve 3450 and
 the 1996 configurations. The live bike-spec search found no OMAS-named specs
-to link. The unnumbered Bikecology 1980 sealed-hub identity question remains
-unresolved: need a manufacturer axle/material/code crosswalk or distinguishing
-specimen before mapping or inserting a potentially duplicate model.
+to link. The unnumbered Bikecology1980 question was then unresolved; the
+2026-11-20 review above supplies the steel-axle/black-QR crosswalk to101CB.
 
 The OMAS near-duplicate report finds only the previously reviewed 10681 / 10682
 headset pair, with no hub candidate. This does not establish the 101/S identity.

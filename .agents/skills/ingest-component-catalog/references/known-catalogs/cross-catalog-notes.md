@@ -2807,9 +2807,19 @@ originals and maintained CSVs are preserved.
   threaded), Cycle Pro 270 tubular, Cycle Pro High Extra (RRE) and Road Racing Extra
   clinchers, Cycle Pro touring tires. category_brand links already existed (0 rows
   inserted).
-- Not applied: Ideale 88/Titanium (new for 1980; the DB has 88 Speciale Competition rows
-  5654 / 5655 1960-80 and a 90 titanium 5658, so it is unclear which is the same part),
-  OMAS sealed bearing hubs (not clearly one of 3449 / 3450), Jasik tandem headset parts,
+- Identity follow-up 2026-11-20, **applied and validated**: [Ideale88/Titanium](ideale.md)
+  is a separate advertised titanium-underframe configuration from steel88 row5654
+  and titanium90 row5658; the1981 low-profile88 explicitly has steel rails.
+  [OMAS steel-axle hubs](omas.md) match existing101CB/A11721 and101CB/P11722 by
+  axle material and black-ended QR photos, an inferred maker-code identification.
+  Added saddle **12169** at 1980 and dated OMAS11721/11722 to 1980–1981 after
+  explicit approval; the older uncertainty is superseded by those brand notes.
+  Live rows5655/3449 are absent. Readback matched the approved changes; the
+  second load affected zero rows. Actual comparison leaves all 24,061 loaded
+  spec mappings identical. No supported new bike links or merge candidates;
+  integrity report zero errors, 2,069 reviews. Temporary SQL/scans/scripts were
+  removed after validation.
+- Other items not applied in that pass: Jasik tandem headset parts,
   Regina Record I Oro and Super Corse Oro chains (still no unambiguous row), SR SilStar
   3922 (already 1970-82). Brands "Cycle Pro" (337) and "National" (670) cover the same
   Japanese maker (National Tire Co.); merged 2026-10-29: brand 670 deleted, rows 9097 /
@@ -3028,8 +3038,10 @@ originals and maintained CSVs are preserved.
   5661 "Ideale 92 Diagonale (long model)" (1977-81): same 270 x 168-170mm oversized 90.
 - Left: 5303 Brooks Professional (1981 "normal diameter rivets" vs the 1975 "large copper
   rivets" on the row; years already cover 1981); bare "Concor" steel / magnesium-rail
-  models (several candidate rows); Ideale 88 "completely new" vs 5654's 1960 velobase
-  year_from (the 1980 Bikecology also calls it new; not moved, user's call).
+  models (several candidate rows). The1980/1981 Ideale88 comparison was revisited
+  2026-11-20 in[ideale.md](ideale.md): the1980 titanium and1981 steel offerings
+  must be distinguished;5654's1960 start is unchanged. No automatic date move
+  follows from the shared88 name or the dealer's new-model wording.
 - The other 2velo pages: Bike Warehouse (40 images at 400 x 400, unreadable),
   Cyclo-Pedia 11th edition (c. 1974, 72 pp: Huret, Simplex, Campagnolo, TA,
   Stronglight, Vittoria, Mafac, Weinmann, Ideale, 3ttt; brands already covered),
