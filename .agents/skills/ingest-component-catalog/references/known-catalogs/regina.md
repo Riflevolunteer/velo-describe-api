@@ -345,3 +345,18 @@ after validation; user Downloads originals and maintained CSVs preserved.
   not a finding of this catalogue).
 - Out of scope: spokes and nipples, chain spare links, rivet extractors and
   freewheel removers, the race service case, speed ratio tables.
+
+
+## XLR8 1194 — technical-reference review, 2026-11-20
+
+**Applied and validated on user approval.** Original1194: title `Regina XLR8 (Shimano-compatible)`, description `Regina XLR8 (Shimano-compatible), Italy`, both dates NULL, source_ref1, source_id71FDC14C-52DA-4F77-9741-4FB83A58EEE0. Zero bike-spec links. Existing source registry has no Sutherland entry.
+
+The [original specimen entry](https://www.velobase.com/Pages/ViewComponent.aspx?ID=71FDC14C-52DA-4F77-9741-4FB83A58EEE0), recovered by direct HTML, calls the model KSH2 and describes an eight-speed aluminium cassette on a special carrier using America cogs, with a B8 threaded outer cog on the shown UG variant and B9/lockring on HG versions. It supplies no dates. KSH2 and the exact eight-speed specimen remain specimen-record statements, not maker-code or production-date proof; no retitle proposed.
+
+[Sutherland's Handbook for Bicycle Mechanics, sixth edition](https://paulinoposada.github.io/bike/documents/epdf.pub_sutherlands-handbook-for-bicycle-mechanics.pdf#page=134), PDF134, visually verified, gives an explicit XLR8 adaptor compatibility instruction: aluminium sprockets with special top-cog exceptions; B7 for threaded Dura-Ace bodies, B8 for other threaded Shimano bodies, B9 for Hyperglide with a lockring. PDF3 carries1995 copyright/CIP and PDF4's introduction is signed April1995. This independently supports the system identity and construction, and documents it by1995. A service handbook can describe older equipment; this does not establish1995 retail availability, launch or withdrawal. Keep both DB date bounds NULL; do not encode1995–1995 as a production interval.
+
+Targeted searches checked XLR8/XLR 8/KSH2, cassette/adaptor and1990/1991/1992 combinations. Useful new evidence was the handbook; no dated maker/importer offering or KSH2 packaging crosswalk was recovered. Reopen date sourcing only for a newly available dated maker/dealer sheet, advert, instruction or packaging with a secure model crosswalk, rather than repeating these broad queries. The processed1992 Regina USA catalogue is already inventoried elsewhere here; this review does not claim a new full catalogue reconciliation.
+
+Applied description (196 characters): `Shimano-compatible cassette adaptor for aluminium sprockets, except special top cogs: B7 for threaded Dura-Ace bodies; B8 for other threaded Shimano bodies; B9 for Hyperglide bodies with lockring.` Title/search_text/dates/identity retained. Registered the handbook as source489, technical_reference, label `Sutherland's Handbook for Bicycle Mechanics, 6th edition (1995)`, countryUS, citation PDF134; pointed1194 source_ref to it as the last modifying source. Exact old values above supply restoration; any source deletion requires a full reference check first.
+
+Applied exactly one source insertion and one component description/source update. Exact readback confirms the196-character text, source489 label/type/citation/countryUS, unchanged title/UUID, both date bounds NULL and zero bike links. Identical SQL rerun affected zero rows for both statements. Whole-DB quality remains zero errors/2,067 review findings with unchanged check counts. Description/source are not generator matching inputs, so no mapping regeneration was needed. No title, date, category, group or identity changes; no merge. SQL, handbook download, renders, extracted text and specimen HTML were removed after validation; original source URLs and restoration values remain above.
