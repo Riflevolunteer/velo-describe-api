@@ -48,7 +48,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/motobecane.md](known-catalogs/motobecane.md) — Motobécane dealer spares catalogues (1 entry, May 1985; Nervar, Maillard, Atax and others)
 - [known-catalogs/laprade.md](known-catalogs/laprade.md) — Laprade (1 entry)
 - [known-catalogs/michelin.md](known-catalogs/michelin.md) — Michelin (1983 leaflet and earlier lists; Polish Wildgripper 1999/undated sheets, sources 434/435)
-- [known-catalogs/irc.md](known-catalogs/irc.md) — IRC Polish-market 1999 catalogue, inventoried and reconciled; proposed changes pending
+- [known-catalogs/irc.md](known-catalogs/irc.md) — IRC Polish-market 1999 catalogue, applied and validated (source 450)
 - [known-catalogs/ofmega.md](known-catalogs/ofmega.md) — Ofmega (1 entry)
 - [known-catalogs/sedis.md](known-catalogs/sedis.md) — Sedis (1 entry)
 - [known-catalogs/selle-italia.md](known-catalogs/selle-italia.md) — Selle Italia (1 entry)
@@ -70,7 +70,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/modolo.md](known-catalogs/modolo.md) — Modolo (3 entries, c. 1979, March 1986, 1990)
 - [known-catalogs/tioga.md](known-catalogs/tioga.md) — Tioga 1992 headsets/pedals and broader stems/bars/drivetrain/seatposts (source 362); missing tyre pages documented
 - [known-catalogs/ukai.md](known-catalogs/ukai.md) — Ukai / Yanagihara Industrial rims (1 entry, 1980)
-- [known-catalogs/edco.md](known-catalogs/edco.md) — EDCO touring group (1 entry, c. 1994)
+- [known-catalogs/edco.md](known-catalogs/edco.md) — EDCO touring group (source 409); September 1994 Renn-Gruppe applied and validated (source 486)
 
 When a new brand shows up for the first time, create
 `known-catalogs/<brand-slug>.md` for it (title `# <Brand> catalogs processed
