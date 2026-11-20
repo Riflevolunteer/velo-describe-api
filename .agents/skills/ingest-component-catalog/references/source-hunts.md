@@ -4,6 +4,73 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ## Log
 
+### Vittoria maker catalogues — source review 2026-11-20
+
+**Subsequent reconciliation applied and validated:** [full inventory, exact changes and validation](known-catalogs/vittoria.md#fet-kyokuto-19851987--reconciliation-prepared-2026-11-20). Sources487/488; nine existing component updates and four Miyata links. Exact readback, zero-change rerun and full mapping comparison passed. This supersedes the acquisition-triage-only status below.
+
+The original read-only acquisition review concerned the TODO's **1982–93
+tyre-maker catalogue** gap. No maker catalogue from that interval was recovered;
+that acquisition pass made no SQL, source, DB, CSV or matcher changes. Its
+registry baseline had no Vittoria- or FET/Kyokuto-labelled source. Sources259/262 are the
+1985/86 and1988 *La Bicicletta* buyers' guides, not maker catalogues.
+Later guides and Branford also provide evidence: this supersedes the old
+2026-11-13 shorthand below that there was no clincher source at all. Oscar X
+11791 and Flash M(21mm)11792 already have Branford1990 evidence; the missing
+source is a period maker range/model crosswalk, not an entirely undocumented
+brand. Olympic versus Olimpionico10562 remains unresolved.
+
+**Usable fallback: FET Kyokuto importer scans, not manufacturer catalogues.**
+Their KKT-pedal relevance was rejected on2026-11-16; their Vittoria pages were
+visually reviewed here for a separate purpose. These scans are freely readable:
+
+- [1985 Vol.3 landing page](https://cyclespeugeot.web.fc2.com/reminiscence/kyokuto85.html),
+  printed **pp.24–25**, [full-resolution spread](https://cyclespeugeot.web.fc2.com/catalog/kyokuto85/img-325190032-0013.jpg).
+  Tyres, three rims and accessories. The tyre listings are tubulars, not a
+  clincher range. The **CG-PRO,420g,32/36holes** label led to the
+  **CS-Pro9241** correction in the applied reconciliation above. The tyre label
+  **Corsa CM,240g** needs comparison with the existing bare Corsa9247 and
+  coded Corsa rows, not automatic insertion. The scan is explicitly listed
+  as1985; the prior review also read its1April1985 price statement.
+- [1987 Vol.4 landing page](https://cyclespeugeot.web.fc2.com/reminiscence/fet_kyokuto_119.html),
+  **Vittoria No.1 / image26**, [tyre page](https://cyclespeugeot.web.fc2.com/catalog/fet_kyokuto_119/26.jpg),
+  and **Vittoria No.2 / image27**, [accessories](https://cyclespeugeot.web.fc2.com/catalog/fet_kyokuto_119/27.jpg).
+  Edition year is the scan owner's attribution; the page itself prints Vol.4.
+  No.1 is explicitly headed **Tubular tire**. Its photographed/listed families
+  include Corsa CG/CX and silk versions, CX26, Super Pavé CG, Special Pro,
+  Pro L Slick, Juniores26/24, Nuovo Pro, Mondiale ribbed/mixed and Sport PE.
+  No.2 is clothing, bottle, tyre cover, valve/repair/glue equipment.
+
+**Acquisition-stage candidates (baseline before application):**
+
+| Printed evidence | Then-current row / comparison |
+| --- | --- |
+| 1987 Sport PE,330g | **6901**, undated and description only “Vittoria Sport PE, Italy”: useful dated model/weight evidence. |
+| 1987 Pro L Slick,280g | **6899**,1990–1990,240g(actual): compare identity, size and weighing basis; retain catalogue versus measured weights explicitly rather than overwrite240 with280. |
+| 1985 CG-PRO rim,420g,32/36holes | **9241 CS-Pro**,1985,420g: verify the maker label/alias against the existing Guida evidence. |
+| 1985 Corsa CM,240g | Compare **9247** and other coded Corsa rows; distinct code alone does not yet establish a new identity. |
+
+These were acquisition-triage candidates. The subsequent reviewed/applied
+reconciliation linked above resolves this importer work; it does not close the
+1982–93 maker/clincher gap or the Olympic crosswalk.
+
+**Checked archive/search limits:** [VeloBase's catalogue index](https://www.velobase.com/Pages/Resources/CatalogScans.aspx)
+and [MTB-Kataloge](https://www.mtb-kataloge.de/) have no Vittoria entry in their
+retrieved indexes. [BikeCatalogs' Vittoria index](https://www.bikecatalogs.com/brand/vittoria)
+lists only2009. [Ebykr's catalogue archive](https://ebykr.com/catalog-archive/)
+returns already-known Palo Alto1976 and Ten Speed Drive1983 importer material,
+not a period Vittoria maker catalogue. Broad English/Italian catalogue/brochure
+searches returned later tyre catalogues, race-winner histories, shoe catalogues,
+NOS specimens and the unrelated derailleur maker. In particular the SJS
+`Vittoria_Tubular%26Tyre_Instructions.pdf` is a **2010** catalogue: older dates
+in its winner list do not date the document. The TobecOnline “Les Catalogues”
+1991–93 search hit is in the Motobécane/MBK catalogue thread with no Vittoria
+mention, so it is not a verified Vittoria source. No new period maker-scan or
+confirmed holder lead emerged; repeat that hunt only for such a lead.
+
+The acquisition images were consumed by the completed reconciliation and
+removed with its SQL/comparison scratch files after validation. Original scan
+URLs and the full inventory remain above and in the linked Vittoria notes.
+
 ### Branford remaining editions — downloaded and triaged 2026-11-19
 
 **1987 fragment subsequently ingested, 2026-11-19:** [Applied reconciliation, full inventory and evidence limits](known-catalogs/cross-catalog-notes.md#branford-1987-component-fragment--reconciliation-2026-11-19), source **475**. All 12 pages triaged, ten component pages visually read; 67 listing mentions support 36 existing-row updates, no new component rows. Exact readback and zero-change rerun passed. All 23,380 bike specs and the 108-catalogue generator report remain unchanged; no new duplicate pair or date conflict. The attributed dating is retained, with a printed “New for1987” lever description as corroboration. The three held Branford editions below are now reconciled.

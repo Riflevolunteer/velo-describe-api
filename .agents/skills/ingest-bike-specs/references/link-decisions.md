@@ -281,6 +281,10 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Tyres
 
+- **Applied and validated (2026-11-20):** scoped Miyata model/weight mappings for
+  Corsa-CG240g specs21081/21421→9428, Modiale290g21102→6891 and
+  Pista-CS150g21461→9433. [Vittoria inventory, evidence and validation](../../ingest-component-catalog/references/known-catalogs/vittoria.md#bike-link-follow-through-and-validation).
+
 - Guard added 2026-11-17: 1973 Zeus Z 66 spec **44**, `D'Alessandro Super-Cross
   Tubulars`, stays NULL. The existing 11138 `D'Alessandro Super` is a grooved/mixed
   tread tubular; no recorded evidence establishes Super-Cross as that model.

@@ -3099,7 +3099,7 @@ originals and maintained CSVs are preserved.
   Nero 2274, Criterium headset types, Supercrono vs Crono RD; Ambrosio Montreal
   and the Elite / 19 Extra / Aero family (Aerodynamic, Aero Elite, Elite, 19
   Extra not inserted); Modolo Corsa brake versions; Clement Mirage, Ritmo,
-  Criterium sub-models; Vittoria Nuovo Pro 260 (guide's Nuovo Pro is 290 g);
+  Criterium sub-models; Vittoria Nuovo Pro 260 (originally misread as290g; [2026-11-20 re-read](vittoria.md#fet-kyokuto-19851987--reconciliation-prepared-2026-11-20) confirms260g);
   Nisi Countach, Toro, M20 / Pista Speciale (00120 / 00150); OMAS Big Sliding
   hub articles 101 ... 1100 (only two DB hub rows); Gian Robert Campione RD
   types and Competition hub finishes.

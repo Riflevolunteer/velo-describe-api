@@ -5136,6 +5136,14 @@ const COMPONENT_OVERRIDES = {
     'vittoria giro del mondo': 6889, // Vittoria Giro del Mundo
     // 1993 Bianchi (ambiguous between Servizio Corse and Squadre Prof).
     'vittoria corsa cx': 6880, // Vittoria Corsa CX Servizio Corse
+    // FET Kyokuto 1985/1987 Vittoria reconciliation: explicit model and weight;
+    // "Modiale" is the 1984 Miyata spelling of Mondiale. See known-catalogs/vittoria.md.
+    'vittoria corsa cg tubular 240g': [
+      { bike: 'Team Miyata-SL', from: 1984, to: 1984, id: 9428 },
+      { bike: 'Team Miyata', from: 1985, to: 1985, id: 9428 },
+    ],
+    'vittoria modiale tubular 290g': [{ bike: 'Team Miyata', from: 1984, to: 1984, id: 6891 }],
+    'vittoria pista cs tubular 150g': [{ bike: 'Team Pista', from: 1985, to: 1985, id: 9433 }],
     // 1986 Cinelli (Ten Speed Drive Imports).
     'clement 2001cf': 6740, // Clement CF 2001
     'clement 2001 cf': 6740, // Clement CF 2001

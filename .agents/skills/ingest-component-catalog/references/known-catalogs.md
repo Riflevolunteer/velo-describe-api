@@ -53,6 +53,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/sedis.md](known-catalogs/sedis.md) — Sedis (1 entry)
 - [known-catalogs/selle-italia.md](known-catalogs/selle-italia.md) — Selle Italia (1 entry)
 - [known-catalogs/pearl-izumi.md](known-catalogs/pearl-izumi.md) — Pearl Izumi Flolite 100/200/300 saddles, source 462; distinct from LF Pearl
+- [known-catalogs/vittoria.md](known-catalogs/vittoria.md) — Vittoria FET Kyokuto1985/1987 sections, sources487/488; applied and validated
 - [known-catalogs/clement.md](known-catalogs/clement.md) — Clement (2 entries)
 - [known-catalogs/sansin.md](known-catalogs/sansin.md) — Sansin / SunShine hubs (2 entries)
 - [known-catalogs/wolber.md](known-catalogs/wolber.md) — Wolber (1 entry)
