@@ -2341,7 +2341,7 @@
 ## Held-source XT crank review — 2026-11-12 (read-only)
 
 - Corrects the TODO assumption that FC-M700 is a missing component row. June 1984 dealer catalogue (source 26), printed pp.16–17, explicitly pairs touring and off-road Deore XT with FC-6206; existing row 1797 is dated 1984–87. Printed p.107 lists Biopace 48/50T outer, 38/44T middle and 28T inner. The December 1983 sheets (source 344) cover derailleurs, brakes and hubs, not a crankset.
-- 1985 Raleigh Crested Butte spec 3564 says “Shimano XT cold forged alloy, 46/36/26 - 175mm”. Neither the group name nor those held pages establish this fitment as FC-6206; do not create FC-M700 or substitute later FC-M730. Leave NULL pending an original Raleigh photo or dated parts document. Row 1797 and all dates/links unchanged.
+- 1985 Raleigh Crested Butte spec 3564 says “Shimano XT cold forged alloy, 46/36/26 - 175mm”. Neither the group name nor those held pages establish this fitment as FC-6206; do not create FC-M700 or substitute later FC-M730. Leave NULL pending an original Raleigh photo or dated parts document. Row 1797 and all dates/links unchanged. **Superseded 2026-11-20:** 3564 now links to Tourney XT 2004 (user's call). FC-6206's ring sizes exclude 46/36/26, and an owner specimen carries a Tourney XT 46-36-26; see [Raleigh crank review](../../../ingest-bike-specs/references/known-catalogs/raleigh.md#crank-evidence-review--2026-11-20-crested-butte-applied).
 - Read scans `shimano_bicycle_system_components_1984_page_16_main_image.jpg`, `_17_`, `_107_`; downloaded under `/private/tmp/existing-source-review/`. Review summary there is `review.md`. No SQL applied.
 
 

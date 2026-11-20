@@ -2913,6 +2913,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xce 4050 48 38 28t': [{ from: 1989, to: 1989, id: 11401 }], // 1989 Bianchi Forte: CW-XE45 48T round / 38T / 28T oval (SunTour Edition No. 89)
     'ofmega super competizione colnago signed': [{ from: 1987, to: 1987, id: 1703 }], // 1987 Colnago: Super Competizione road, 2nd version
     'shimano tourney xt 50 45 28 175mm': [{ from: 1985, to: 1985, id: 2004 }], // 1985 Raleigh: Tourney XT (2004 year_to 1980 -> 1985; judgement call)
+    // 1985 Raleigh Crested Butte (user's call 2026-11-20): FC-6206's 50/48-44/38-28 rings exclude the printed 46/36/26;
+    // an owner Crested Butte (matching colour, XC-II pedals, XT group) carries a Tourney XT 46-36-26. See raleigh.md.
+    'shimano xt cold forged alloy 46 36 26 175mm': [{ bike: 'Crested Butte', from: 1985, to: 1985, id: 2004 }],
     'sr ctc 5dxc 52x42 teeth': [{ bike: '90', from: 1985, to: 1985, id: 8205 }, { from: 1986, to: 1986, id: 8205 }], // 1986 Miyata: SR CTC-5DXC2, Custom DX double (8205 year_to 1982 -> 1986; judgement call)
     // 2026-11-06 crankset pass.
     'tourney alloy cotterless 40 52 chainwheel with alloy guard': [{ from: 1974, to: 1975, id: 9562 }], // 1975 Motobecane: Takagi Tourney (forged alloy cotterless double, alloy guards, 39-49T inner; 9562 year_to 1974 -> 1975)

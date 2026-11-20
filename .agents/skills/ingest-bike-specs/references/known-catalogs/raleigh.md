@@ -809,7 +809,8 @@ Task-created original-panel download, SQL and comparison files removed.
   Light Action L512, Shimano AT-50 brakes, Kusuki bars/stems, SR CXC/CRC/
   55G and Takagi cranks, Sugino LP, Sansin RE-50/RE-60/ET-QS/AX-10A, SR
   MTH-100, Araya SP-30, SR SP-153 and bear-trap pedals, Daido chains,
-  Shimano XT/Tourney XT cranks (no FC-M700 row).
+  Shimano XT/Tourney XT cranks (no FC-M700 row; superseded: Portage 3371 and,
+  from 2026-11-20, Crested Butte 3564 link to Tourney XT 2004).
 - 2026-10-09, after the Araya 1980-95 catalogue excerpts ingest
   (component skill, `known-catalogs/araya.md`, data_source 152): the two
   1985 "Araya SP-30" specs (Alyeska 27x1-1/4, Grand Prix 700C) link to the
@@ -1016,6 +1017,51 @@ gained 12 links, all via `COMPONENT_OVERRIDES`; no CSV or row changes.
 - Rear spec 3395, `Shimano Light Action L512SGS`, linked to new component 10970, `Shimano RD-L512-SS / RD-L512-GS / RD-L512-SGS, Light Action` (1985 only). Shimano's original exploded view E693A, footer 8508, explicitly confirms the SGS model. Component source_ref 371; bike-spec text and original source unchanged.
 - Evidence: https://www.disraeligears.co.uk/site/shimano_light_action_l512_series_exploded_view_-_e693a_august_1985.html. Source and component details are in the Shimano component notes.
 - Added a 1985-only override for `shimano light action l512sgs`. All 81 CSVs regenerated: only the Kodiak link changed, 6065 -> 6066 generated links. Applied `/private/tmp/rear-derailleur-l512-review-2026-11-09.sql`; rerun zero rows. Live rear coverage 754 / 931 (81.0%), 177 unlinked.
+
+## Crank evidence review — 2026-11-20 (Crested Butte applied)
+
+User chose the TODO Raleigh crank item.
+
+**1985 Crested Butte spec 3564 → Tourney XT 2004 (user's call, judgement).**
+The printed value is “Shimano XT cold forged alloy, 46/36/26 - 175mm”. This
+supersedes the 2026-11-12 leave-NULL note in `shimano.md`.
+
+Evidence:
+
+- **FC-6206 is excluded.** Row 1797, the XT pairing on the June 1984 Shimano
+  chart (source 26), comes with 50/48 outer, 44/38 middle and 28 inner rings.
+  It cannot give 46/36/26.
+- **Matching owner bike.** An owner's Crested Butte in a
+  [Nov 2012 Urban Adventure League post](https://urbanadventureleague.blogspot.com/2012/11/raleigh-crested-butte-assessment.html)
+  is described as “Tourney XT, which chainrings of 46-36-26”. Its
+  [crank photo](http://farm9.staticflickr.com/8190/8104235210_73d5129bf7_c.jpg)
+  shows a five-arm Tourney-style crank with “…XT 46” on the outer ring.
+- **That bike matches the 1985 catalogue:** maroon frame, SunTour XC-II
+  pedals, and Deore XT derailleurs, shifters and brakes.
+- **The catalogue photo agrees.** The
+  [1985 catalogue p.4 photo](https://www.sheldonbrown.com/retroraleighs/catalogs/1985/images/4.jpg)
+  shows a triple with similar lobed ring cut-outs, too small to read.
+
+Limits:
+
+- The specimen's SunTour hubs differ from the catalogue's Sakae hubs.
+- The blog does not establish the bike's year or that the crank is original.
+- The same catalogue prints “Tourney XT” only for the Portage (3371 → 2004).
+
+Owner-listed [Pedal Room 42986](https://pedalroom.com/bike/1985-raleigh-crested-butte-42986)
+has a later LX M563 crank; it is a rebuild, not evidence. The mtbtimeline
+Raleigh wiki returns 403 to scripts.
+
+Applied: one bike/year-scoped generator override. The 1985 back-fill affected
+one row; the rerun affected zero. The comparison over 110 catalogues showed
+only this gained mapping, then 0 gained after load; the same 15 lost findings
+are pre-existing. Row 2004 is unchanged.
+
+**1988 Ozark II 18009, 1988 Royal 18045 and 1989 Royal 18275** (“Shimano
+Biopace 48/38/28”) stay NULL. Web searches for original-spec photos or parts
+codes found only generic Royal resale and forum posts. FC-B124, FC-M450 and
+FC-M350 all still fit; see the generator comment on
+`'shimano biopace 48 38 28'`.
 
 ## 1986 Grand Prix QS400N link — 2026-11-12, user approved
 
