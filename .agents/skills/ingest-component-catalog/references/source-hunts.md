@@ -4,6 +4,51 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ## Log
 
+### Bikalog index recheck and gringineer.com catalogue posts — 2026-11-20
+
+- **Bikalog** (`GET https://bikalog.org/api/catalog`, 161 brands, 531 files):
+  nothing for the open wants (Bianchi 1974–77 / 1979–80 / 1994–99, Brügelmann,
+  Gipiemme, Vittoria, Yaesu, SR, Dia-Compe, Sedis, Nashbar/QBP/J&B). Files not
+  named in these notes: Raleigh `raleigh-1982-racers.pdf`, `raleight-1983.pdf`,
+  `raleigh-1984-racers.pdf`, `raleight-1984-us-leaflet.pdf`, Michelin
+  `michelin01.pdf` (2001) and Campagnolo `campagnolo-1992-rims.pdf`; the DB
+  already holds 1982–84 GB Raleigh and 1992 Campagnolo Rims Range sources, and
+  the files were not opened.
+- **Velopedia Brügelmann 1990:** the legacy index and Show/2071 URLs still
+  return 404. The current site is a script-rendered application behind a
+  visitor session check; its catalogue list was not queried.
+- **gringineer.com** (Shopify blog, 61 articles in `sitemap_articles_1.xml`;
+  only the 1989 Bianchi post was recorded before). Page photographs or scans
+  on `cdn.shopify.com`, fetched without restriction:
+  - [1990 Bianchi](https://www.gringineer.com/blogs/default-blog/1990-bianchi-catalog),
+    16 images: the catalogue already loaded as source 168, with both halves of
+    the specification table. Used for the 1990 date review.
+  - [1991 Bianchi](https://www.gringineer.com/blogs/default-blog/1991-bianchi-catalog)
+    (9 images) and [1992 Bianchi](https://www.gringineer.com/blogs/default-blog/1992-bianchi-catalog)
+    (12 images): Bianchi USA editions with a specification block beside each
+    model, distinct from the loaded 1991 / 1992 Japanese editions. Only each
+    post's last image was viewed: 1991 shows Ocelot, Pista and Proto frameset;
+    1992 shows Nyala and Ocelot and prints "© Copyright 1992, Bianchi USA,
+    Inc.". Its Ocelot (Shimano 100GS, 13-28T 7-speed cassette) differs from
+    the loaded 1993 US Ocelot, so it is not that catalogue. Full page
+    inventory, model scope and completeness not yet checked.
+  - [1987](https://www.gringineer.com/blogs/default-blog/1987-bianchi-mtb-catalog)
+    and [1988](https://www.gringineer.com/blogs/default-blog/1988-bianchi-mtb-catalog)
+    Bianchi MTB catalogues, 5 images each: not opened; mountain bikes.
+  - [1989 Tioga ATB parts](https://www.gringineer.com/blogs/default-blog/1989-tioga-atb-parts-catalog)
+    (15 scans) and [1991 Tioga ATB parts](https://www.gringineer.com/blogs/default-blog/1991-tioga-atb-parts-catalog)
+    (7 scans, 2388 × 3172), both posted 2026-10-10. The one 1991 page viewed
+    (printed p. 2) lists coded Avenger T-Bone stems OS-TBPI / OS-TBPU / OS-TBPV /
+    OS-TBP with extensions and weights. Contents otherwise not inventoried;
+    whether either has tyre pages is unknown.
+  - [1995 Ritchey](https://www.gringineer.com/blogs/default-blog/1995-ritchey-catalog),
+    14 scans: the one page viewed is a complete-bike page (Crazy Pete), so
+    this looks like the bicycle catalogue, not a component crosswalk.
+  - Not opened: 1987 Ritchey Super Comp, 1989 Specialized components, 1995
+    Ringlé, 1997 Titec, 1997 Paul, and the Trek / Klein / Specialized / other
+    bike catalogues.
+
+
 ### Vittoria maker catalogues — source review 2026-11-20
 
 **Subsequent reconciliation applied and validated:** [full inventory, exact changes and validation](known-catalogs/vittoria.md#fet-kyokuto-19851987--reconciliation-prepared-2026-11-20). Sources487/488; nine existing component updates and four Miyata links. Exact readback, zero-change rerun and full mapping comparison passed. This supersedes the acquisition-triage-only status below.

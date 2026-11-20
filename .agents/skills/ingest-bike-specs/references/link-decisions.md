@@ -139,6 +139,12 @@ simulation found 15 1982–84 Peugeot values that would otherwise substring-matc
 the proposed unnamed Titec aluminium post; an explicit generator guard keeps
 them unlinked. Named Titec values remain eligible for model matching.
 
+Maker plus material is treated the same way: 1989 Peugeot (NL) Cosmic `Atax alloy`
+(spec 17185) was unlinked from 8528 on 2026-11-20 by the user's call, matching the
+unlinked 1986–87 Peugeot `Atax, alloy, micro-adjust` posts. 8528 is a specific
+pillar listed as new in ATAX's 1982 catalogue. Relink only with a model name,
+code or photo identifying the post.
+
 ## 1989 Bianchi Dia-Compe 984D (reviewed 2026-11-17)
 
 - Forte **18613** and Volpe **18717**, `Dia-Compe 984D`, remain NULL. The US

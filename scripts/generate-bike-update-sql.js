@@ -2924,7 +2924,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc comp 48 38 26t': [{ from: 1990, to: 1992, id: 7999 }], // CW-XC01 (row dated 1992)
     'sr xct 48 38 28t': [{ from: 1990, to: 1990, id: 11076 }, { from: 1991, to: 1992, id: 8004 }], // 1990 Nyala: CW-XT00 48-38-28T (SunTour 1990 p.17); CW-XT01 (Sakae Ringyo; 1992)
     'sr x 1 48 38 26t': [{ from: 1990, to: 1992, id: 8000 }], // SunTour CW-X101 (row dated 1992)
-    'sr radius 52 42t': [{ from: 1990, to: 1992, id: 8007 }], // SunTour CW-RA01, Radius (row dated 1992)
+    'sr radius 52 42t': [{ from: 1990, to: 1992, id: 8007 }], // SunTour CW-RA01, Radius (row 1990-92)
     'ofmega pista super competizione 48t': [{ from: 1980, to: 1990, id: 1702 }], // Super Competizione (pista)
     'ofmega quattro 52 42t': [{ from: 1980, to: 1990, id: 1705 }], // Ofmega Vantage (Bianchi Quattro version)
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
@@ -4428,6 +4428,7 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    'atax alloy': [{ bike: 'Cosmic', from: 1989, to: 1989, id: null }], // 1989 Peugeot (NL): maker and material only; 8528 is a specific 1982 pillar. See cross-catalog notes 2026-11-20.
     // c.1991 MBK Course: explicit table identities; no date expansion.
     "campagnolo athena alloy with saddle clamp": [{ bike: "C477 Super Record", from: 1991, to: 1991, id: 5736 }],
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
@@ -4742,7 +4743,7 @@ const COMPONENT_OVERRIDES = {
     '112 links delta treated': 1402, // 1980 Peugeot PL 8 M: as the 108 / 114-link Delta
     'sedisport delta treated': 1402, // 1982 Peugeot PL 8 M: as above
     'sedisport 112 links': 1402, // 1982 Peugeot PX 8 M: as bare 'sedisport' (1402 from 1980)
-    'shimano cn 6208 silver': 7232, // 1990 Bianchi Virata: CN-6208 600EX (row dated 1986-89, the model is exact)
+    'shimano cn 6208 silver': 7232, // 1990 Bianchi Virata: CN-6208 600EX (row 1986-90, the model is exact)
     'sedis sedi color ½" x 3 32"': 8764, // 1979-80 Raleigh Professional Mk V: Sedis Sedicolor (catalogue splits the name)
     'sedisport narrow': [{ from: 1980, id: 1402 }], // 1983 Raleigh Europa / Record Sprint / Supersport 12: as bare 'sedisport' (1402 from 1980)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).

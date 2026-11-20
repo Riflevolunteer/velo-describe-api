@@ -63,6 +63,122 @@ Exact old values for restoration and applied replacements:
   - Old row: `{"title":"Selle Italia Anatomic","year_to":"1987","year_from":"1979","source_ref":259,"description":"Touring saddle with a 61/4in-wide anatomic nylon shell (standard racing/sports width 5-5/8in), extra thick 3/8in orthopaedic padding, indented midline, black leather covering. 370 grams. Still fitted as \"Selle Italia padded black anatomic\" on the 1987 Ral","component_id":8759}`
   - Applied description: Touring saddle: 6-1/4in anatomic nylon shell (standard racing/sports width 5-5/8in), extra-thick 3/8in orthopaedic padding, indented midline and black leather cover; 370g.
 
+## Previously unreviewed linked date conflicts — applied and validated 2026-11-20
+
+Four components flagged by `quality-report.js` (`linked_date_conflict`) had no
+earlier review. Each bike fitment was checked visually on the original scan;
+the user approved all four component changes. Dates are dated observations,
+not claimed manufacturing boundaries. No link, title, maker, category, UUID or
+source_ref changed.
+
+| Component | Fitment checked | Old → new | Basis and limits |
+| --- | --- | --- | --- |
+| 3430 Miche Superfast (hubs) | 1989 Bianchi US Krono, spec 18414: `Miche Superfast` in the Hubset column of [img-2473-1](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/img-2473-1.jpg) | year_to 1988 → 1989; description `Miche Superfast, Italy` → `Miche Superfast, Italy. Forged anodised alloy hubs, ball bearings, 28-32-36 holes, for 5-6-7-speed freewheels, 550g` | Details from [Guida '88 scan 27](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_1988_february_-_i_componenti_da_corsa_scan_27_main_image.jpg) (FAC Michelin section; the guide does not say whether 550 g is a pair). Same-name match with the Bianchi hub is an inference. |
+| 5525 Selle Royal Dolphin | 1986 Miyata US 710 / 310, specs 18838 / 18861: `SELLE ROYAL Dolphin Crosta` / `Dolphin Vinyl` in the saddle row of the [catalogue](https://sscycleworks.com/galleries/bike-museum/1986-miyata-catalog-compressed.pdf) p. 22 | year_to 1985 → 1986 | One row covers both printed covers. Dolphin is not in the Guida '88 Selle Royal list (scans 40–41). |
+| 5384 Iscaselle Triathlon | 1988 Peugeot FR PG 10 T, spec 16553: `Triathlon ISCASELLE blanche`, printed p. 15 (image 14 of the [1988 page](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1988.html)) | 1980–1980 → 1988–1988 | 1980–1980 was an unsupported Velobase decade placeholder. The Peugeot fitment is the only dated evidence; the Guida '88 Iscaselle list (scans 39–40) has no Triathlon, which does not disprove the model. |
+| 1891 Stronglight 390 (crank) | 1989 Peugeot NL VTT Express, spec 17372: `Stronglight 390 Biostrong 28 x 38 x 48 alu spieloos`, table image 29 of the [1989 page](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1989.html) | 1980–1980 → 1989–1989 | Same Velobase placeholder; 390 is absent from Stronglight catalogue no. 26. The Peugeot fitment is the only dated evidence. Chainring 1320 BioStrong still carries 1980–1980 and has no bike link. |
+
+Validation: guarded SQL changed four rows and the identical rerun changed
+none; readback confirmed the values above and the five unchanged spec links.
+`compare-bike-links.js` over all loaded catalogues was identical before and
+after (no gained or changed links; the 15 previously recorded Huret Rival lost
+proposals). `quality-report.js` shows zero errors and five fewer linked-date
+conflicts. The Miche duplicate report does not pair 3430 with another row.
+Review SQL and downloads were removed. To reverse, restore the old values in
+the table after checking for later changes and other fitments.
+
+The Guida '88 scans now download at 1560 px wide, not the ~436 px recorded in
+the source 262 notes below; fine print is legible.
+
+### Second batch — applied and validated 2026-11-20
+
+Same process and user approval. Three date extensions and one link removal;
+no title, description, maker, category, UUID or source_ref changed.
+
+| Item | Fitment checked | Old → new | Basis and limits |
+| --- | --- | --- | --- |
+| 1995 SunTour CW-1500, VX | 1980 Raleigh US Touring 14, spec 9087: `Sun Tour VX Cotterless 39/52T, 170 mm`, table p. 24 ([Raleigh-1980-US-24.jpg](https://theheadbadge.com/wp-content/uploads/Raleigh-1980-US-24.jpg)) | year_to 1979 → 1980 | Ring sizes fit the row's 34–48T / 48–53T ranges. SunTour's own catalogues last list CW-1500 before No. 59. |
+| 2847 GB Randonneur | 1976 Raleigh US Gran Sport DL160, spec 7961: `G.B. Randonneur alloy handlebars` in the p. 8 text ([catalogue](https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1966.html), dated by its 26 March 1976 price list) | year_to 1975 → 1976 | Same-name match. |
+| 6541 GB Neta | 1981 Raleigh Canada Super Course, spec 9301: `G.B. Neta 80 mm Allen Head` ([1981-Raleigh-Canada-13.jpg](https://theheadbadge.com/wp-content/uploads/1981-Raleigh-Canada-13.jpg)) | year_to 1980 → 1981 | The row's 7 / 9 / 11 cm sizes come from Holdsworth 1975 and do not include 80 mm; the description was left as sourced. |
+| Spec 17185 (1989 Peugeot NL Cosmic seat post) | `Atax alu zadelpen`, table image 30 of the [1989 page](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1989.html) | link 8528 → NULL; 8528 stays 1982–1982 | Maker and material only, while 8528 is a specific pillar listed as new in 1982. Generator: Seat Posts `atax alloy` null override scoped to the 1989 Cosmic. See [link decisions](../../../ingest-bike-specs/references/link-decisions.md). |
+
+Stronglight 99 / 1906 (1974–1983) was reviewed without change. The 1984
+Peugeot PCA 10 / PCA 15 triples (specs 12161 / 13761) and the 1988 TM 9 G
+tandem double (16983) print plain `Stronglight 99`, but the maker's
+catalogues n° 26 and n° 27 (1982) list the perforated 99 Bis NM (1909) and a
+tandem 99 set, and the September 1986 catalogue lists no 99. The Peugeot
+wording cannot separate plain 99 from 99 Bis NM or the tandem set, so neither
+the links nor 1906's dates were changed.
+
+Validation: guarded SQL changed four rows and the identical rerun none;
+readback confirmed the values above. `compare-bike-links.js` over all loaded
+catalogues: no gained or changed links, the same 15 recorded Huret Rival lost
+proposals, and the generator agrees with the NULL on 17185. `quality-report.js`
+shows zero errors and four fewer linked-date conflicts; the test suite passes.
+To reverse, restore the old values in the table after checking for later
+changes and other fitments.
+
+### Third batch — applied and validated 2026-11-20
+
+Same process and user approval. Five date-only changes; no link, title,
+description, maker, category, UUID or source_ref changed.
+
+| Component | Fitment checked | Old → new | Basis and limits |
+| --- | --- | --- | --- |
+| 5481 Selle Italia Condor | 1981 Bianchi US Sprint/81, spec 6554: `Italia "Condor"` in the specification table of the [Vespa of America brochure](https://bikalog.org/api/view/Bianchi/1981/bianchi-1981.pdf) p. 4 (© 1980, 1981 range) | year_to 1979 → 1981 | Same-name match. |
+| 7301 Simplex SXP 4190 | 1983 Peugeot Canada Sport UO 16C, spec 13662: `SX P 4190 levers`, image 6 of the [1983 page](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1983.html) | year_to 1981 → 1983 | Printed code. |
+| 3443 Ofmega Master (hubs) | 1987 Colnago Junior Special, spec 13011: `serie sterzo, mozzi, pedali Master Ofmega`, scan 8 of the [Catalogo generale 1987](https://labibleduvelocataloguescolnago1.blogspot.com/p/colnago-1987.html) | year_from 1988 → 1987 | Same-name match with the Guida '88 hub. |
+| 5703 Wrights W3N | Raleigh US Grand Prix DL115, spec 8996: `Wrights W3N` in the Technical Specifications table, p. 7 of the [catalogue excerpt](https://www.sheldonbrown.com/retroraleighs/catalogs/Raleigh-Catalog-1972.pdf) | year_to 1970 → 1972 | The excerpt prints no year; 1972 is Sheldon Brown's filename, supported by the model range. 1970–1970 was a Velobase placeholder. |
+| 9772 Selle San Marco Concor Junior | Battaglin Alessandro, spec 12951: `San Marco Concor Junior` on the [specification sheet](https://saarf.london/wp-content/uploads/2014/02/05a1.jpg) | year_from 1983 → 1982 | The sheets print no year; 1982 is the blog title, supported by the 1981–82 price list. |
+
+Validation: guarded SQL changed five rows and the identical rerun none;
+readback confirmed the values above. `compare-bike-links.js` over all loaded
+catalogues: no gained or changed links and the same 15 recorded Huret Rival
+lost proposals. `quality-report.js` shows zero errors and five fewer
+linked-date conflicts. To reverse, restore the old values in the table after
+checking for later changes and other fitments.
+
+### 1990 Bianchi US batch — applied and validated 2026-11-20
+
+The Retrobike archive PDF behind source 168 returned a bot challenge (HTTP
+403) to scripts, and velobase, Bikalog and the Wayback Machine have no copy.
+A second copy of the same catalogue was found at
+[gringineer.com](https://www.gringineer.com/blogs/default-blog/1990-bianchi-catalog)
+(16 page photographs, 1512 × 2016). Its specification table is split across
+[img-2506-2](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/img-2506-2.jpg)
+(model to crankset) and
+[img-2507-2](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/img-2507-2.jpg)
+(pedals to weight). All sixteen conflicting fitments were read on it and the
+user approved eleven date-only changes; no link, title, description, maker,
+category, UUID or source_ref changed.
+
+| Component | Printed fitment (bike, spec) | Old → new |
+| --- | --- | --- |
+| 3060 Ofmega Competizione (headset) | `Ofmega Competition`: Pista 7116, Campione d'Italia 7177 | year_to 1988 → 1990 |
+| 6614 Nitto Dynamic-2 | `Nitto Dynamic 2 90 degree`: Virata 7137, Alfana 7158, Eros 7200, Forza 7221 | year_to 1989 → 1990 |
+| 6889 Vittoria Giro del Mondo | `Vittoria Giro del Mondo`: Proto 7070 | year_to 1988 → 1990 |
+| 7232 Shimano CN-6208, 600EX | `CN-6208 silver`: Virata 7146 | year_to 1989 → 1990 |
+| 7783 SunTour CH-GP00, GPX | `SunTour GPX` chain: Campione d'Italia 7188 | year_to 1989 → 1990 |
+| 9202 ITM Mod. 200 | `ITM 200 laser etched`: Campione d'Italia 7179 | year_to 1988 → 1990 |
+| 9194 ITM Italia Pista Superleggero | `ITM Pista`: Pista 7117 | year_to 1988 → 1990 |
+| 8007 SunTour CW-RA01, Radius | `SR Radius 52/42T Powering`: Eros 7206 | year_from 1992 → 1990 |
+| 8032 SunTour CT-X101, X-1 cantilever | `Dia-Compe X-1 Balance Response System`: Osprey 6996 | year_from 1992 → 1990 |
+| 8000 SunTour CW-X101, X-1 | `SR X-1 48/38/26T Powering`: Osprey 7000 | year_from 1992 → 1990 |
+| 8407 Ritchey Force Directional Seatpost (Mountain) | `Ritchey Force Directional`: Project 7 6923, Grizzly 6944 | year_from 1991 → 1990 |
+
+Limits: 9194 is linked as the only ITM track bar; Bianchi prints no
+Superleggero. 8000's description gives the 1992 ring sets (46-36-24T or
+48-38-28T), which do not include Bianchi's 26T inner; the description was
+left as sourced. The table halves were read from the photographs, the left
+half also from full-resolution crops.
+
+Validation: guarded SQL changed eleven rows and the identical rerun none;
+readback confirmed the values above. `compare-bike-links.js` over all loaded
+catalogues: no gained or changed links and the same 15 recorded Huret Rival
+lost proposals. `quality-report.js` shows zero errors and eighteen fewer
+linked-date conflicts. To reverse, restore the old values in the table after
+checking for later changes and other fitments.
+
 ## Branford 1987 component fragment — reconciliation 2026-11-19
 
 **Applied and validated for the user-requested ingestion, source 475.** The complete inventory has **67 listing mentions**: 38 mentions support **36 existing-row updates**, six mentions are already covered, and 23 lack a secure exact variant or maker crosswalk. No new component, brand, group or category association is needed. No retitles, merges, deletions or bike-spec writes were made.

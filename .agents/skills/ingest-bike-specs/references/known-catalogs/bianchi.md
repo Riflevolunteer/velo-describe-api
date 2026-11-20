@@ -583,6 +583,9 @@ API listing, PDF and two page renders removed after documenting these findings.
   generation across 86 CSVs byte-identical; SQL rerun zero. Source URLs and
   casing/bead qualification are in the component Ritchey notes.
 
+- Script-accessible second copy (found 2026-11-20):
+  https://www.gringineer.com/blogs/default-blog/1990-bianchi-catalog, 16 page
+  photographs; specification table on `img-2506-2.jpg` and `img-2507-2.jpg`.
 - Source: https://www.retrobike.co.uk/archive/1990-bianchi-catalogue.1676/
   ("1990 Bianchi Catalogo.pdf", 23 pp, Bianchi USA Inc., South San
   Francisco; the download needs a browser UA + cookie from the archive
@@ -624,7 +627,8 @@ API listing, PDF and two page renders removed after documenting these findings.
   XC-Comp FD 7959 / crank 7999 / hub 7982, XCT FD 7962 / RD 7952 / crank
   8004 / cantilever 8038, X-1 crank 8000 / cantilever 8032, Radius crank
   8007, XC-Pro seatpost 8046. This catalogue is evidence for year_from
-  1990 on those rows (not yet applied).
+  1990 on those rows; applied 2026-11-20 for 8000, 8007 and 8032, the three
+  still flagged as date conflicts ([review](../../../ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#1990-bianchi-us-batch--applied-and-validated-2026-11-20)).
 - Left unlinked: SR / H.L. / ITM / Modolo bars and stems, Tange CD /
   TH-series headsets, Bianchi Dakar / Advantage tyres, Vittoria Zefir /
   Formula 1, IRC Triathlete, C.S.T., Regina RL.SY90, Sedisport 270, Viscount
