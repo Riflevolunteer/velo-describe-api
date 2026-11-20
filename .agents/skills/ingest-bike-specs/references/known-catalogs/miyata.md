@@ -219,7 +219,7 @@ Temporary SQL, scans, snapshots and review scripts were removed after validation
   Sugino TAT / TGT, SR SCC-100 / CRC-100 / CXC-300 / CXC-2300 / CTC-5DX /
   CTC-5SD2 / SNS-5SG cranks; Dia-Compe DC-980 / DC-981 / GX-500N / DC-730,
   NGC-200 / 200H, PN-157 / 161 / 280 / 281, 165 levers; Araya 16A3 / 18;
-  SR P5 / P5B / P6B posts; Tange New Falcon / Levin Sealed / Tange-ST; SR
+  SR P5 / P5B / P6B posts; Tange Levin Sealed / Tange-ST; SR
   Randonneur / Custom / SC-713 / MTB bars, Nitto 55F / B-902; MKS AR-Road /
   AR-Road 2 / PT-7, SR SP-513; Ariake saddles (no rows). CR-2 / Model-33
   linked 2026-11-16 after the MKS rows were widened (see mks.md).
@@ -413,7 +413,7 @@ Temporary SQL, scans, snapshots and review scripts were removed after validation
   Pro-Compe / Perfect clusters (no speed count); 600EXLD 52x42 (same
   conflict as 1979); 5DX-AH / 5DXC cranks (no row); CT-P5 (5857 and 5858
   both cover 1980); Dia-Compe 610 (656 vs GC610 689), #500, #730 (no
-  period row); Tange New Falcon (3141 is 1974 only); RY-KM, S-WIN stems,
+  period row); RY-KM, S-WIN stems,
   KD-4L / KE-36 bars, MKS QR-K1, KKT pedals, Ariake 77-17, generic hubs.
 - Regression: all 86 other CSVs regenerate byte-identical.
 
@@ -613,3 +613,13 @@ Regenerating all 93 CSVs changed only these specs (7438 -> 7473 linked).
   Revert: 1984 / 261.
 - **Still unlinked:** NGC 200H x4 (1981-84). 200H is not one of 8861's printed
   codes.
+
+## New Falcon headset links — applied 2026-11-20
+
+Linked the 15 exact New Falcon specs on existing 1979–85 bikes to **12168 Tange
+New Falcon**, superseding the former missing-row/unlinked entries (including 1980
+1000 and 1984 912/710/Terra Runner). Original spec sources are preserved. The 1980
+mapping uses the already-transcribed OCR reconstruction, corroborated by the
+original 1979/1981 1000 charts; this limitation was included in approval. No new
+bikes loaded. Bare Tange, Levin sealed and generic alloy descriptions are outside
+this mapping. See [Tange evidence, exact IDs and validation](../../../ingest-component-catalog/references/known-catalogs/tange.md#new-falcon-fitment-review--2026-11-20-applied-and-validated).

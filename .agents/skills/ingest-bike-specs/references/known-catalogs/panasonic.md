@@ -2,6 +2,35 @@
 
 These have been read for component evidence. No bikes are loaded. Database changes so far: CT-P5E (source 417), then 12 SR and 6 Kusuki rows (sources 418-421), then MKS PB-20, Sugino TGT and the Dia-Compe 280 / 281 links, all marked below.
 
+## Brand treatment and scope decision — 2026-11-20
+
+Use **Panasonic** as the canonical bike brand for the reviewed 1985–89 US
+Panasonic catalogue backlog. This settles the pending naming choice for those
+editions; do not create a combined `Panasonic / National` brand or duplicate the
+same catalogue bikes under National. Preserve National wording, distributor
+details and other original branding in the relevant source/evidence notes.
+This is a scoped data-modelling decision based on the reviewed US editions,
+not a claim that every National-branded bicycle in every market is Panasonic.
+A future source explicitly selling National-branded bikes needs its own
+brand/market review; there is no global National→Panasonic alias.
+
+Keep bike-brand treatment separate from component identities. Existing
+Panaracer component brand650 stays Panaracer; SR, Kusuki, MKS and other
+equipment retain their documented component maker/model. A Panasonic catalogue
+used as fitment evidence does not turn every listed component into a Panasonic
+component. Do not create or merge component brands from this bike-brand decision.
+
+Read-only registry checks on2026-11-20 found no bike_brand entry named
+Panasonic, National or Matsushita, and only Panaracer650 among those related
+component-brand names. No database brands, aliases, components, bikes or specs
+were created or changed for this decision. If bike ingestion is resumed,
+create/use the canonical Panasonic bike brand through the normal reviewed
+ingest workflow and retain US catalogue market independently in data_source.
+
+User preference: bike loading is deferred while focusing on components.
+These catalogues remain available as component evidence; the brand decision
+does not authorise a bike ingest. No ingestion CSV or SQL was prepared here.
+
 ## Source
 
 - Site: panasonicbikemuseum.info. There are 20 catalogues; list them from

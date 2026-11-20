@@ -2613,3 +2613,56 @@ Evidence:
 Applied1200 only: year_from1970→1978, source_ref1→68, description→`Uniglide cassette sprockets for Shimano 600 EX freehubs, 5 or 6 speeds. Threaded 12-15T top sprocket retains splined 13-28T sprockets; silver or black finish.` (158 characters). Retain year_to1983 as existing evidence bound, not a proven discontinuation year. Retain title/search_text/UUID/category/group and all bike links. This supersedes the earlier statement that1200's start date must remain weak, while1196's dating remains unresolved.
 
 Exactly one component update applied; identical guarded SQL rerun changed zero rows. Exact readback confirmed description158 characters, year_from1978, year_to1983, source_ref68, unchanged title/UUID and unchanged1196. All six existing bike links remain within the revised bound. Full generator/live comparison is identical before/after:23,800 compared,23,785 unchanged,15 pre-existing lost proposals, zero gained/changed/missing/ambiguous identities; every finding identical. Quality remains zero errors/2,067 review findings with unchanged check counts, including329 linked date conflicts. Restoration values are recorded above; no generator override needed because all existing ranges start1979 or later. Task SQL, comparison JSON, original1196 HTML and dated page download were removed after validation; source URLs remain above.
+
+
+## BB-UN73 retirement-list and manual follow-up — 2026-11-20, read-only
+
+Bounded follow-up to the2003 manual acquisition target. Live row121 remains
+2003–2007, source408, UUID746BA547-D186-4942-90B5-A285B69332A7, zero bike links,
+with the existing qualified description. No DB, source, group, mapping or
+component changes were prepared or applied.
+
+**New manufacturer evidence:** Shimano's [North American discontinued-products
+list](https://bike.shimano.com/en-NA/products/discontinued.html), read2026-11-20,
+explicitly lists **BB-UN73 | XT**. Its introductory caveat covers products already
+discontinued **or scheduled to be discontinued shortly**. It supplies no
+model-level retirement date and does not distinguish those two states per row.
+This is positive maker evidence of inclusion in a retirement list and XT
+classification, not proof that production ended in2007 or on the observation
+date. The initial progress update overstated this as confirmed discontinued
+status; the page's full caveat above is the reviewed conclusion. Do not use
+today's web observation to extend year_to to2026 or substitute an invented
+withdrawal year. This narrows the previous request for a positive withdrawal
+statement to a **model-specific dated** manufacturer notice.
+
+**New acquisition lead:** [HoopRider Parts product spc03](https://www.hoopriderparts.com/product/2003-shimano-bicycle-components-trade-salessupport-manual)
+lists the2003 Bicycle Components Trade Sales & Support Manual and describes
+212 complete pages, full component-group range and compatibility/technical
+information. Its public page was readable through the web reader; direct curl
+returned403, and no publicly readable BB-UN73 interior page or download was
+recovered. Treat it as another physical-copy listing, not a confirmed
+BB-UN73-page holder or scan. Availability and exact edition/content would need
+rechecking if acquisition were chosen. No purchase/contact was made; paid
+acquisition was not proposed as the next executable action. The previously
+verified August2002 English(U) imprint and MOMBAT lead remain in the prior notes.
+
+Search scope: exact2003 Trade Sales & Support title,212-page dealer manual,
+BB-UN73+2003/new/2002, official service/exploded-view and retirement-list leads.
+No free original2003 bottom-bracket specification/new-product page recovered.
+Tool references to **TL-UN73** are not BB-UN73 evidence. The indexed2005/2006
+official specifications are later attestations and do not settle introduction;
+the2005/2007 maker evidence is already documented above. Unrelated fishing
+manuals and an archive about a person named Shimano were excluded. The patent
+US8715120 bibliography references a2003 manual page79 published August2002,
+but the citation concerns front-derailleur evidence and does not expose or
+attest BB-UN73; it supplies no part-specific launch evidence. Retailer
+model-year labels and repeated weight lists were not promoted to maker dates.
+
+Remaining evidence: the actual2003 BB-UN73 page together with the dated
+cover/imprint (and explicit new/introduction wording to prove launch), plus a
+model-specific dated withdrawal notice to establish an end. Keep2003–2007 as
+the previously qualified availability range; the new web listing does not
+justify a component mutation. Reopen recovery for a newly available interior
+scan/download or confirmed sharable page, rather than another broad search.
+No audit SQL or persistent scratch report was created; the empty task scratch
+directory was removed after recording URLs and limits here.
