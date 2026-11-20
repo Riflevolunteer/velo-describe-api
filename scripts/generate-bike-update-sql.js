@@ -4683,12 +4683,13 @@ const COMPONENT_OVERRIDES = {
     'suntour gpx silver': [{ from: 1989, to: 1989, id: 7783 }], // CH-GP00
   },
   Cassettes: {
+    'shimano silver 13 24t 7 speed': [{ bike: 'Sport SX', from: 1989, to: 1989, id: null }], // Bianchi table confirms cassette but no code; RM-50 hub/Sport LX do not establish an exact model (CS-1000 row is black six-speed).
     "shimano 105 new cassette 6 speed 14 15 17 19 21 24t": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: null }], // 1050 family known; cassette text does not identify a separate loaded cassette model. German 1986 p.13.
     'shimano new deore xt 6 speed 13 30t': [{ bike: 'Ridge Runner', from: 1987, to: 1987, id: 1201 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano new dura ace 7 speed 13 21t': [{ bike: 'Carbon Tech 5000', from: 1987, to: 1987, id: 1204 }, { bike: 'Carbon Tech 3000', from: 1987, to: 1987, id: 1204 }, { bike: 'Team Miyata', from: 1987, to: 1987, id: 1204 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.
     // 2026-11-06 group-matched cassettes: bike-keyed by the rear-derailleur group.
     'shimano hg 12 28t 7 speed': [{ bike: 'Peregrine', from: 1991, to: 1991, id: 7567 }], // 1991 Bianchi Peregrine, Deore DX: CS-HG70, as the 1990 / 1993 Peregrine
-    'suntour 13 28t 7 speed': [{ bike: 'Axis', from: 1989, to: 1989, id: 1224 }], // 1989 Bianchi Axis, XCD 6000: CS-AP00-K7U (1224 year_from 1990 -> 1989; judgement call); the Tangent (XC 9010) has no row
+    'suntour 13 28t 7 speed': [{ bike: 'Axis', from: 1989, to: 1989, id: 1224 }, { bike: 'Tangent', from: 1989, to: 1989, id: 11414 }], // Tangent: printed cassette/XC-9010 hub, Edition No.89 p.25 FH-HC10-U7, 13-28T; Axis keeps its existing decision.
     'shimano cs 6400sg 13 23t 7 speed': 1202, // 1991 Bianchi Virata: 7-speed HG, as the 1990 Virata (CS-HG90 / 600 Ultegra)
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano cs hg70 12 28t 7 speed': 7567, // CS-HG70 7-speed
@@ -4906,6 +4907,7 @@ const COMPONENT_OVERRIDES = {
     'cyclo competition 5 speed 14 21t': 2088, // Cyclo Competition 64 (5 speed)
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano hyperglide black 14 28t 6 speed': [{ from: 1990, to: 1993, id: 7603 }], // MF-HG20, 200GS (6sp HG)
+    'shimano hyperglide 14 28t 6 speed': [{ bike: 'Ocelot', from: 1993, to: 1993, id: 7603 }], // Original Bianchi PDF p.26 explicitly says freewheel; Shimano 1993 p.73 maps C20 to MF-HG20.
     // 1981 Bianchi (Vespa of America, US spec table; values spelled "Rekord").
     'regina extra oro 14 22 5 speed': 2182, // Regina Extra Oro (5 speed)
     'regina extra oro 14 28 5 speed': 2182,

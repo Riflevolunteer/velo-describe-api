@@ -1,3 +1,47 @@
+## Whole-database quality triage — 2026-11-20
+
+Read-only `node scripts/quality-report.js --json` and full text report: zero errors, 2,073 review findings: 1,684 incomplete date bounds, 329 linked date conflicts, 35 broad Freewheel labels and 25 descriptions exactly 255 characters. These are findings, not distinct components or proven bad links. No DB changes were made. This was a first-pass triage, not a review of every flagged identity.
+
+Direct readback confirms six visibly truncated descriptions, each at 255 characters:
+
+| Component | Current ending | Last modifying source_ref |
+| --- | --- | --- |
+| 2379 Huret Club II 1000-01 / 1001-01 | `Sachs Huret Club fr` | 314 |
+| 5654 Ideale 88 Speciale Competition (larger copper rivets) | `Variants: smaller copper rivets (velobase, 50` | 280 |
+| 7899 SR NRY, New Royal | `Fitted as "SR Roya` | 200 |
+| 7902 SR SR-AH / SR-E | `Still fitted as "Sakae` | 422 |
+| 8234 SR CT, Custom | `as "SR / Sakae Cust` | 246 |
+| 8759 Selle Italia Anatomic | `on the 1987 Ral` | 259 |
+
+Repair from existing Huret, Ideale, Sakae-Ringyo and Selle Italia notes and their cited sources; do not invent missing suffixes. Other at-limit descriptions include complete sentences, so reaching 255 alone is not proof of damage.
+
+Largest date-conflict groups: Sedis 1402 (29 links), Maillard 8131 (19), Stronglight 3112 (18), Maillard 7240 (10). Do not automatically widen dates or change mappings. Stronglight notes already explicitly retain 1987–89 A9 links beyond the 1986 bound. Apparent seven-sprocket spec 17174 on six-speed 8131 already has an explicit generator decision: 1989 NL Cosmic is listed as 12-speed despite seven printed sprockets. This is not a newly established bad link. Missing upper bounds and broad catalogue labels likewise require interpretation rather than automatic edits. No exhausted source hunt was reopened.
+
+### Description repairs — applied and validated
+
+Applied the six user-approved description-only rewrites. Exact old-description/source guards changed six rows; the identical rerun changed zero. Exact readback matches every replacement below and confirms unchanged titles, dates and source references. SQL only assigned descriptions and did not write bike links or identity fields. The post-load quality report has zero errors and 2,067 review findings: 19 descriptions at limit, 1,684 incomplete dates, 329 linked date conflicts and 35 broad Freewheel labels. Only the six description-at-limit flags were removed. Temporary SQL was removed after readback and idempotency validation. No suffix is reconstructed from a guess; incomplete fitment clauses are omitted, while complete fitment evidence on 8234 is retained. Smaller-rivet Ideale 5655 remains a separate variant. No new source evidence is claimed.
+
+Exact old values for restoration and applied replacements:
+
+- **2379 Huret Club II 1000-01 / 1001-01** (195 characters applied):
+  - Old row: `{"title":"Huret Club II 1000-01 / 1001-01","year_to":"1988","year_from":"1978","source_ref":314,"description":"Huret Club II, France. Steel front derailleur, bright chrome, 143g, double or triple, 16T capacity; ref 1000-01 for 28 / 28.6mm, 1001-01 for 25.4mm; spring push plate version available. Sold as plain Club from 1982 (the Eco set front), Sachs Huret Club fr","component_id":2379}`
+  - Applied description: Chromed steel front derailleur, double/triple, 16T capacity, 143g. 1000-01: 28/28.6mm clamp; 1001-01: 25.4mm. Spring push-plate version available. Sold as plain Club from 1982, the Eco set front.
+- **5654 Ideale 88 Speciale Competition (larger copper rivets)** (138 characters applied):
+  - Old row: `{"title":"Ideale 88 Speciale Competition (larger copper rivets)","year_to":"1981","year_from":"1960","source_ref":280,"description":"Ideale 88 Speciale Competition (larger copper rivets), France. Classic racing and long-distance saddle, softened leather, large copper rivets, plated two-wire frame, Rebour hand-treated top, 260 x 150mm, 500g. Variants: smaller copper rivets (velobase, 50","component_id":5654}`
+  - Applied description: French racing/touring saddle: softened leather, large copper rivets, plated two-wire frame and Rebour hand-treated top; 260 x 150mm, 500g.
+- **7899 Sakae/Ringyo (SR) NRY, New Royal** (177 characters applied):
+  - Old row: `{"title":"Sakae/Ringyo (SR) NRY, New Royal","year_to":"1982","year_from":"1979","source_ref":200,"description":"Sakae/Ringyo (SR) NRY, New Royal, Japan, SR Catalog No. 18 (c. 1982): forged 14S super duralumin stem, high-tension steel 6mm expander and binder bolts, 22.2mm (0.833 / 0.865 / 22.0 to order), 70-130mm extension, 135mm length, 235-310g. Fitted as \"SR Roya","component_id":7899}`
+  - Applied description: Japan. Forged 14S super-duralumin stem; high-tension steel 6mm expander/binder bolts. Quill 22.2mm; 0.833/0.865in or 22.0mm to order. Extension 70-130mm, length 135mm; 235-310g.
+- **7902 Sakae/Ringyo (SR) SR-AH / SR-E, SR stem** (164 characters applied):
+  - Old row: `{"title":"Sakae/Ringyo (SR) SR-AH / SR-E, SR stem","year_to":"1988","year_from":"1979","source_ref":422,"description":"Sakae/Ringyo (SR) SR-AH / SR-E, SR stem, Japan, SR Catalog No. 18 (c. 1982): melt-forged rustless light alloy stem, AH Allen-head or E hex-head bolts, 0.833 / 0.865in or 22.0 / 22.2mm, 50-100mm extension, 150-230mm length, 305-365g. Still fitted as \"Sakae","component_id":7902}`
+  - Applied description: Japan. Melt-forged rustless light-alloy stem; AH Allen-head or E hex-head bolts. Quill 0.833/0.865in or 22.0/22.2mm; extension 50-100mm, length 150-230mm; 305-365g.
+- **8234 Sakae/Ringyo (SR) CT, Custom** (205 characters applied):
+  - Old row: `{"title":"Sakae/Ringyo (SR) CT, Custom","year_to":"1989","year_from":"1978","source_ref":246,"description":"Allen head expander and binder bolt, socket 6mm hex, under lock type, diam 0.833 / 22.2mm. Extensions 60-100mm, length 150mm. 280-330g. 310 g actual for 80 mm (Velobase, merged from row 6659). Fitted to 1983-87 Raleigh and 1987 Bianchi as \"SR / Sakae Cust","component_id":8234}`
+  - Applied description: Stem with Allen-head expander/binder bolts, 6mm hex and under-lock type. Quill 0.833in/22.2mm; extension 60-100mm, length 150mm; 280-330g. Measured 310g at 80mm. Fitted to 1983-87 Raleigh and 1987 Bianchi.
+- **8759 Selle Italia Anatomic** (171 characters applied):
+  - Old row: `{"title":"Selle Italia Anatomic","year_to":"1987","year_from":"1979","source_ref":259,"description":"Touring saddle with a 61/4in-wide anatomic nylon shell (standard racing/sports width 5-5/8in), extra thick 3/8in orthopaedic padding, indented midline, black leather covering. 370 grams. Still fitted as \"Selle Italia padded black anatomic\" on the 1987 Ral","component_id":8759}`
+  - Applied description: Touring saddle: 6-1/4in anatomic nylon shell (standard racing/sports width 5-5/8in), extra-thick 3/8in orthopaedic padding, indented midline and black leather cover; 370g.
+
 ## Branford 1987 component fragment — reconciliation 2026-11-19
 
 **Applied and validated for the user-requested ingestion, source 475.** The complete inventory has **67 listing mentions**: 38 mentions support **36 existing-row updates**, six mentions are already covered, and 23 lack a secure exact variant or maker crosswalk. No new component, brand, group or category association is needed. No retitles, merges, deletions or bike-spec writes were made.
