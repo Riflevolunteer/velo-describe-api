@@ -75,3 +75,8 @@
   and extended the existing 1986-only matching range to 1985–1986. Readback,
   all-96-catalogue comparison and zero-change SQL rerun passed as part of the
   source-hunt batch; full validation/evidence is in bike notes `panasonic.md`.
+
+
+## Rivendell No.4 (1998) — scoped reconciliation applied, 2026-11-20
+
+See the [shared change set, page evidence, old/new values and identity decisions](cross-catalog-notes.md#rivendell-no4-nittomks-reconciliation--2026-11-20-applied-and-validated). Inserted12167 Platform retail offering; enriched/extended2031 Sylvan Track and2033 Sylvan Touring. Nuevo Keirin is not yet equated to Royal Nouvo3862, whose dates/measurement remain unchanged. Applied under source490. Exact readback, zero-change rerun, duplicate/near checks, unchanged whole-catalogue mappings and zero integrity errors verified; shared notes record complete results.

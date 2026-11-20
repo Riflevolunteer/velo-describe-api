@@ -160,3 +160,8 @@
   mm), probably a later generation; 6608 Nitto (First Gen.) (1960-70). The frame-fit diagram and
   commentary pages are out of scope.
 - Deleted: none. No overrides touch the rows changed here.
+
+
+## Rivendell No.4 (1998) — scoped reconciliation applied, 2026-11-20
+
+See the [shared change set, page evidence, old/new values and identity decisions](cross-catalog-notes.md#rivendell-no4-nittomks-reconciliation--2026-11-20-applied-and-validated). Inserted12164 model176 Dream Bar,12165 Moustache and12166 Technomic Deluxe; enriched/extended175,185,B135,RM013,DirtDrop stem,Pearl and Jaguar/Frog. Aero and uncoded one-bolt post remain unresolved; no speculative duplicate insert. Applied under source490. Exact readback, zero-change rerun, duplicate/near checks, unchanged whole-catalogue mappings and zero integrity errors verified; shared notes record complete results.

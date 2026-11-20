@@ -17,10 +17,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Deferred while focusing on components: transcribe and prepare the 1987 US Nishiki catalogue for ingestion, reviewing model scope and component links from the [verified scan and page notes](.agents/skills/ingest-bike-specs/references/known-catalogs/nishiki.md#us-catalogue-1987--assessed-for-ingestion-2026-11-20).
 - Assess the bikalog backlog: Koga-Miyata 1980–2001, Raleigh 1991, Colnago C35 1989.
 
-## Component catalogues
-
-- Reconcile Nitto/MKS component pages from Rivendell No.4, checking publication/price overlays before registering the source; retain `/tmp/velo-catalogue-triage-20261120/rivendell1998.pdf` as the pending input. [Verified pages and scope](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#rivendell-catalogue-no4--acquisition-triage-2026-11-20).
-
 ## Waiting for distinguishing evidence
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
