@@ -105,6 +105,11 @@ function dataSourceSubquery(label) {
 // catalogue"); files without one keep the original label so loaded rows still match.
 // Separate same-year brochures without inventing another bike brand or market.
 const CATALOGUE_EDITIONS = new Map([
+  ['1991_mbk_spec.csv', {
+    label: 'MBK Course catalogue (c.1991)',
+    citation: '1991_mbk_spec.csv; https://www.velovintageagogo.com/t11952-catalogue-mbk-gamme-course-1991; catalo10-21.png, table21; matching Tobec10627 photos6571-74. c.1991 attribution, TdF1990 lower bound; no printed year; market unconfirmed.',
+    country: null,
+  }],
   ['1990_pinarello_spec.csv', {
     label: 'Pinarello catalogue (c.1990)',
     citation: '1990_pinarello_spec.csv; https://www.bikecatalogs.com/download/5849; 17-page copy, complete-bike panels PDF4-12, framesets14/16 excluded. c.1990 archive attribution; no printed year. Market unconfirmed.',
@@ -624,6 +629,10 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // c.1991 MBK Course: explicit table identities; no date expansion.
+    "shimano 1055 sis": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 2467 }],
+    "shimano 300 ex sis": [{ bike: "C207 Trainer", from: 1991, to: 1991, id: 2520 }, { bike: "C207D Trainer", from: 1991, to: 1991, id: 2520 }],
+    "shimano rx 100 sis": [{ bike: "C227 Mirage", from: 1991, to: 1991, id: 2531 }],
     'shimano ultegra 7v': [{ bike: 'Asolo Ultegra', from: 1990, to: 1990, id: 2478 }], // c.1990 Pinarello: 6400-series 7-speed; other group variants stay unresolved.
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 2313 }],
@@ -1030,6 +1039,10 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // c.1991 MBK Course: explicit table identities; no date expansion.
+    "shimano 1055 sis": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 4455 }],
+    "shimano 300 ex sis": [{ bike: "C207 Trainer", from: 1991, to: 1991, id: 4510 }, { bike: "C207D Trainer", from: 1991, to: 1991, id: 4510 }],
+    "shimano rx 100 sis": [{ bike: "C227 Mirage", from: 1991, to: 1991, id: 4532 }],
     'shimano ultegra 7v': [{ bike: 'Asolo Ultegra', from: 1990, to: 1990, id: 4466 }], // c.1990 Pinarello: 6400-series 7-speed; other group variants stay unresolved.
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 4152 }],
@@ -1540,6 +1553,11 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    // c.1991 MBK Course: explicit table identities; no date expansion.
+    "shimano 1055 quick release": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 3527 }],
+    "shimano rx 100 quick release": [{ bike: "C227 Mirage", from: 1991, to: 1991, id: 3579 }],
+    "campagnolo athena quick release": [{ bike: "C477 Super Record", from: 1991, to: 1991, id: 3236 }],
+    "campagnolo croce d'aune quick release": [{ bike: "C977 Record Max", from: 1991, to: 1991, id: 3251 }],
     'shimano new 105': [{ from: 1988, to: 1988, id: 3524 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. HB-1050 freewheel hubs (table lists a 6-speed freewheel).
     'aris new success': [{ from: 1988, to: 1988, id: 3509 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Sachs-Maillard New Success, as the 1987/1989 Peugeot Savoie.
     'sealed helico sport': [{ bike: 'JO392 Triathlon Olympique', from: 1986, to: 1987, id: null }], // MBK 1986/87 spread2: sealing alone does not establish 3387's QR/36-hole/5-6-speed version.
@@ -1892,6 +1910,9 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // c.1991 MBK Course: explicit table identities; no date expansion.
+    "300 ex alloy side pull": [{ bike: "C207 Trainer", from: 1991, to: 1991, id: 1001 }, { bike: "C207D Trainer", from: 1991, to: 1991, id: 1001 }],
+    "rx 100 alloy side pull": [{ bike: "C227 Mirage", from: 1991, to: 1991, id: 1007 }],
     'shimano ultegra 7v': [{ bike: 'Asolo Ultegra', from: 1990, to: 1990, id: 966 }], // c.1990 Pinarello: 6400-series 7-speed; other group variants stay unresolved.
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: null }],
@@ -2418,6 +2439,8 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ bike: 'Tangent', from: 1989, to: 1989, id: null }],
   },
   Headsets: {
+    // c.1991 MBK Course: explicit table identities; no date expansion.
+    "shimano 1055": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 3086 }],
     "shimano 105 new": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: 3083 }], // German 1986 p.13 New 105; Shimano Aug 1986 scan 16: HP-1050.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":2969}],
@@ -2547,7 +2570,7 @@ const COMPONENT_OVERRIDES = {
     'hatta steel cp sealed': 3020, // 1986 Raleigh Teton / Seneca: same wording as the Elkhorn, no model printed
     'campagnolo sport': [{ from: 1971, to: 1985, id: 2951 }], // 1978 Bianchi Campione del Mondo CX: 1040/A Gran Sport ("sold as the Sport head set")
     // 1989 Bianchi US catalogue (gringineer scans).
-    "campagnolo croce d'aune": [{ from: 1989, to: 1989, id: 7028 }], // C0D0, Croce d'Aune
+    "campagnolo croce d'aune": [{ from: 1989, to: 1989, id: 7028 }, { bike: "C977 Record Max", from: 1991, to: 1991, id: 7028 }], // C0D0, Croce d'Aune
     'hatta vesta alloy': [{ from: 1989, to: 1989, id: 3020 }], // as bare "Hatta Vesta"
   },
   'Bottom Brackets': {
@@ -2567,6 +2590,11 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // c.1991 MBK Course: explicit table identities; no date expansion.
+    "campagnolo croce d'aune alloy 42 52t 170 mm cranks": [{ bike: "C977 Record Max", from: 1991, to: 1991, id: 1489 }],
+    "shimano 1055 alloy 42 52t 170 mm cranks": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 1782 }],
+    "shimano 300 ex 40 52t biopace 170 mm cranks": [{ bike: "C207 Trainer", from: 1991, to: 1991, id: 1830 }, { bike: "C207D Trainer", from: 1991, to: 1991, id: 1830 }],
+    "shimano rx 100 42 52t alloy biopace 170 mm cranks": [{ bike: "C227 Mirage", from: 1991, to: 1991, id: 1838 }],
     'shimano 105 sis': [{ bike: 'Prologo', from: 1987, to: 1987, id: 1778 }, { bike: 'Dolomite', from: 1987, to: 1987, id: 1778 }, { bike: 'Piccolo', from: 1987, to: 1987, id: 1778 }], // c.1987 Pinarello: 1050-series group; existing period row
     'campagnolo nuovo record with super record chainrings': [{ bike: 'Treviso N.R.', from: 1985, to: 1985, id: 1496 }],
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
@@ -3451,6 +3479,8 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    // c.1991 MBK Course: explicit table identities; no date expansion.
+    "3ttt criterium": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: null }, { bike: "C477 Super Record", from: 1991, to: 1991, id: null }, { bike: "C977 Record Max", from: 1991, to: 1991, id: null }],
     'cinelli i r pantograph': [{ from: 1985, to: 1985, id: 6491 }],
     '3ttt mod "84" pantograph': [{ from: 1985, to: 1985, id: 6424 }],
     '3ttt record pantograph': [{ from: 1985, to: 1985, id: 6404 }],
@@ -4053,6 +4083,9 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // c.1991 MBK Course: explicit table identities; no date expansion.
+    "1055 with toe clips": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 3955 }],
+    "rx 100 with toe clips": [{ bike: "C227 Mirage", from: 1991, to: 1991, id: 3977 }],
     'maillard cx 500 with toe clips': [{ bike: 'EC185 Mirage 8', from: 1989, to: 1989, id: 10986 }], // Printed MILLARD CX500; established CX500/CXC500 mapping, toe clips explicit.
     'shimano 105 sis': [{ bike: 'Prologo', from: 1987, to: 1987, id: 3953 }, { bike: 'Dolomite', from: 1987, to: 1987, id: 3953 }, { bike: 'Piccolo', from: 1987, to: 1987, id: 3953 }], // c.1987 Pinarello: 1050-series group; existing period row
     // 1993 Bianchi Project models print the alloy qualifier before the model.
@@ -4395,6 +4428,8 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // c.1991 MBK Course: explicit table identities; no date expansion.
+    "campagnolo athena alloy with saddle clamp": [{ bike: "C477 Super Record", from: 1991, to: 1991, id: 5736 }],
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 5761 }],
     'campagnolo super record 4000f or record pantograph': null,
@@ -5272,6 +5307,9 @@ const COMPONENT_OVERRIDES = {
     'challenge skinwall 27 x 1 1 8': 6846, // 1983 Peugeot UO 9 Super Sport: Peugeot Challenge (only Challenge row)
   },
   Rims: {
+    // c.1991 MBK Course: explicit table identities; no date expansion.
+    "700 mavic 190 bf anodised eyelets": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 5049 }],
+    "700 mavic open 4cd anodised eyelets": [{ bike: "C477 Super Record", from: 1991, to: 1991, id: 5097 }],
     'mavic monthlery pro': [{ bike: 'Pista Amatore', from: 1985, to: 1985, id: 5092 }],
     'campagnolo omega strada hardox anodised': [{ from: 1988, to: 1988, id: 4957 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Kevlight: Omega 20 / Omega Strada Hardox.
     'mavic ma2': [{ bike: 'C455 Le Champion', from: 1988, to: 1988, id: 8177 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. portrait: silver-anodised Mavic rims = MA 2 Argent.

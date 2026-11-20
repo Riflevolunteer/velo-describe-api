@@ -1,5 +1,76 @@
 # Motobecane catalogs processed so far
 
+## MBK Course c.1991 — applied and validated, 2026-11-20
+
+Applied after user approval: source **498**, bikes **1517–1528**,
+192 specs and 37 component links. CSV `bike_specs/1991_mbk_spec.csv`.
+Applied SQL removed after validation.
+Source label `MBK Course catalogue (c.1991)`, country NULL. Explicit MBK brand14
+retained, separate from Motobecane. Pre-load check found no MBK bikes from1990 onward.
+
+Recovered all12 images from [bastini's 14 May 2019 post](https://www.velovintageagogo.com/t11952-catalogue-mbk-gamme-course-1991).
+Original URLs: `https://i.servimg.com/u/f19/16/02/76/63/catalo10.png` through
+`catalo21.png`. Retained unchanged under `bike_specs/sources/mbk_course_c1991/`,
+alongside TobecOnline attachments6571–6574 (`6571.jpg`–`6574.jpg`). All12 pages
+visually checked for date/imprint and source identity; full table21 transcribed
+and model descriptions cross-checked independently. Shared covers and allthree
+Tobec spreads match in layout, photos, prose and model codes. Table21 and the
+Mirage/MiragePro page17 are additional usable evidence. Pages11/12 describe
+HPF/geometry,14 racing photos; no extra complete builds inferred.
+
+Dating remains qualified: neither complete cover/back/imprint nor interiors
+print a publication year. TdF1990 caption is only a lower bound. The2019 post
+and2024 Tobec heading attribute1991; they are not contemporary dated references.
+No matching dated imprint or period model list found in targeted code/year
+searches. The club's1991MBK.pdf is mopeds, excluded. Use c.1991 for this reviewed
+proposal; reopen firm dating only for a new original imprint or contemporary
+C977/C477/C387/C227 model list. French language/publisher addresses alone are
+not used to assign a country here.
+
+Corrections superseding the earlier prose-only assessment: C137/C147/C147D
+say Sachs2500, not3500. C977 names Croce d'Aune transmission; C477 Athena.
+Mirage/MiragePro paragraph positions are reversed in page17: table21 explicitly
+assigns C227 Mirage threeCrMo/RX100 and C387 MiragePro allCrMo/1055. Preserve
+these code-based table assignments, not nearest-portrait paragraph placement.
+This is corroborated by the forum's2020 inversion comment. No photo-derived
+component identities or neighbouring-year equipment copied.
+
+12 road/mixte bikes: C117 Sprint, C127/C127D SuperSprint, C137 Leader,
+C147/C147D SuperLeader, C207/C207D Trainer, C227 Mirage, C387 MiragePro,
+C477 SuperRecord and C977 RecordMax. All in scope. Explicit D sizes split;
+C147D has28/38/48T and12–28T versus standard30/40/50T and14–28T. Store all16
+printed table rows, splitting plural derailleurs front/rear; sizes are bike
+fields with no inferred units. No colours/weights/chain/levers/shifters inferred.
+Rush 'tubulaires' describes rim construction, not tyre type; only RecordMax
+explicitly prints Hutchinson tubular tyres. Freewheel header retained literally;
+Shimano cluster mechanisms are not identified by hub matching.
+
+Loaded 12 bikes, 16 existing labels, 192 specs and 37 validated links. Supported specific codes:
+1055 FD2467/RD4455/crank1782/headset3086/hubs3527/pedals3955;
+300EX FD2520/RD4510/crank1830/brakes1001 (two Trainers);
+RX100 FD2531/RD4532/crank1838/brakes1007/hubs3579/pedals3977;
+Athena FD2281/RD4092/crank1479/brakes558/headset2952/hubs3236/pedals3690/post5736;
+Croce FD2288/RD4112/crank1489/brakes567/headset7028/hubs3251/post5742;
+Mavic190BF→5049 (190FB spelling), Open4CD→5097. Conventional1055 pedals selected
+from explicit toe clips; no SPD inference. Seven-speed Athena freewheel build
+uses D3003236, not eight-speed cassette hub3237. No component/date changes performed.
+Other holds are in link-decisions.md, notably Criterium stems6425 end1980.
+
+Validation:12 unique titles, maximum CSV field62characters. Generator syntax,
+allproposed link categories/dates and table/model assignments reviewed. Full
+before/after comparison of24,287 loaded specs has identical scope/summary/findings
+(15 pre-existing lost mappings); only timestamps and new unloaded CSV entry
+differ. Root bike-update.sql restored. Original source images/CSV retained;
+disposable transcription, downloads, scripts and comparison output removed.
+Post-load readback confirmed source498 on every bike/spec, NULL country,
+12 expected model identities and192 specs/37 links. Each bike has16 specs;
+links by model: C117/C127/C127D/C137/C147/C147D zero; C207/C207D four each;
+C227 six; C387 seven; C477 nine; C977 seven. No duplicate bikes/specs,
+dangling links or linked date conflicts. All192 generator/live mappings
+unchanged with zero missing/ambiguous identities. All479 SQL statements reran
+with zero rows affected. Existing brand14/all16 labels reused with no order
+changes. Applied SQL and validation output removed after verification.
+
 ## 1989 Programm ’89 Mirage 8 sheet — applied and validated, 2026-11-20
 
 Applied after user approval: bike **1507**, source **496**, 20 specs and three
@@ -331,8 +402,9 @@ catalogue. Earlier sections retain exact source/holder leads and search limits.
 No new source lead was supplied in this reconciliation. Do not repeat the
 completed archive/holder search solely because those gaps remain. TODO now
 keeps one conditional source-acquisition action: reopen only for a newly
-accessible scan or confirmed shareable copy. The separate attributed-1991
-Course brochure dating/preparation task remains actionable and unchanged.
+accessible scan or confirmed shareable copy. The attributed-1991 Course
+brochure was subsequently recovered more fully and loaded as c.1991 above;
+only firm publication-date evidence remains wanted for that brochure.
 No source files, CSVs, generator mappings or database rows changed.
 
 ## MBK bicycle catalogue backlog — source review 2026-11-19
@@ -362,7 +434,7 @@ Attachment URLs below omit disposable forum session IDs.
   bikes: Record Max C977, Super Record C477, Trainer C207/C207D, Super Leader
   C147/C147D, Leader C137, Super Sprint C127/C127D and Sprint C117. The D
   models are explicit mixte road partners. Printed prose names equipment such
-  as Campagnolo Athena, Shimano 300 EX, Sachs 3500 and SunTour; these require
+  as Campagnolo Athena, Shimano 300 EX, Sachs 2500 and SunTour; these require
   normal model/category/era reconciliation, not automatic whole-group links.
   Equipment coverage is short portrait prose, not a complete specification
   table; no parts may be filled from photographs or neighbouring models.
@@ -371,8 +443,8 @@ Attachment URLs below omit disposable forum session IDs.
   1990, which establishes 1990 or later, not a uniquely proven 1991 model year.
   Recover a matching dated cover/imprint or period model list before assigning
   a firm year. MBK branding is explicit; the subsequent1986/87 ingest below
-  establishes MBK brand14 for explicitly MBK-labelled sources. No SQL or
-  maintained CSV prepared for this1991-attributed brochure yet.
+  establishes MBK brand14 for explicitly MBK-labelled sources. The subsequent
+  fuller recovery and c.1991 ingestion above supersede this initial preparation gap.
 - **Attributed 1990 Loisir, partial:**
   [6534 cover](https://www.tobeconline.fr/forum/download/file.php?id=6534) and
   [6535 spread](https://www.tobeconline.fr/forum/download/file.php?id=6535)

@@ -625,3 +625,16 @@ code inference. NisiLaser lacks eyelet/configuration evidence;5136 ends1988,
 5137 undated.3TRecord lacks bend/version; generic Italia/Vittoria/Regina/ACI
 and alternative maker values stay text. No automatic hunt tasks arise.
 See [validated catalogue evidence](known-catalogs/pinarello.md#circa-1990-catalogue--applied-and-validated-2026-11-20).
+
+### MBK Course c.1991 ingestion — applied 2026-11-20
+
+3tttCriterium stems6425 end1980: scoped NULLs for C387/C477/C977. Sachs2500
+front/rear and genericTourney lack exact fitment codes; rear4405 has unspecified
+dates/configuration and is not assumed to cover double/triple alike. SunTourRT
+loaded generation is1992-only; no date expansion from an attributedc.1991 source.
+1055 brakes lack reach;300EX pedals lack a unique loaded identity; Croce pedals
+have several clip configurations. RigidaSHC500, Rush rims, generic tyres/hubs,
+NewCarrera/Turbo/TurbogelAstral saddles, SR crank and alloy parts lack sufficient
+model/configuration evidence. Uncoded clusters remain under literal Freewheel
+header with NULL links; Shimano freehub matching does not establish a cassette
+code. No speculative component creation or date edits. See [validated catalogue evidence](known-catalogs/motobecane.md#mbk-course-c1991--applied-and-validated-2026-11-20).

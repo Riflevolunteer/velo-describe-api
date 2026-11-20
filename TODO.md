@@ -11,7 +11,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Bike catalogues
 
-- Verify the date of the MBK Course brochure attributed to 1991, then prepare its road-bike ingest from the [inspected scans](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#mbk-bicycle-catalogue-backlog--source-review-2026-11-19).
 - Ingest the 1985–89 US Panasonic catalogues, following the [recorded brand rule and sources](.agents/skills/ingest-bike-specs/references/known-catalogs/panasonic.md#brand-treatment-and-scope-decision--2026-11-20).
 - Transcribe and prepare the 1987 US Nishiki catalogue for ingestion, reviewing model scope and component links from the [verified scan and page notes](.agents/skills/ingest-bike-specs/references/known-catalogs/nishiki.md#us-catalogue-1987--assessed-for-ingestion-2026-11-20).
 - Assess the Bikalog Koga-Miyata 1980–2001 and Raleigh 1991 bike sources; check whether its Colnago C35 1989 copy adds specifications beyond the [already assessed photo/frame pack](.agents/skills/ingest-bike-specs/references/known-catalogs/colnago.md#other-copies-seen-not-loaded-2026-10-10).
@@ -19,6 +18,8 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Waiting for distinguishing evidence
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
+
+- **MBK Course date:** obtain a dated original imprint or contemporary C977/C477/C387/C227 model list before replacing the c.1991 attribution with a firm year; [checked complete copy and dating limits](.agents/skills/ingest-bike-specs/references/known-catalogs/motobecane.md#mbk-course-c1991--applied-and-validated-2026-11-20).
 
 - **Sugino Super Mighty:** obtain a readable original-fitment photo or coded specification for Bianchi Professional spec 924, and independently dated later Competition evidence, before revising link 1963 or its dates. [Evidence and alternative variants](.agents/skills/ingest-component-catalog/references/known-catalogs/sugino.md#bianchi-professional-super-mighty-date-conflict--2026-11-20).
 
