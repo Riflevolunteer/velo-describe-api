@@ -1,5 +1,235 @@
 # Mavic catalogs processed so far
 
+## French rim booklet 1996 — focused reconciliation applied 2026-11-20
+
+User approved with “apply”. The separate French-language booklet is now
+source **484**, distinct from English source **483**. The first load inserted
+one source and updated four components; the identical rerun changed zero rows. Its cover IMG_5156 prints Catalogue Jantes1996. Public photographs
+5151–5159 were visually triaged; this focused change set concerns the four
+rows below, not a claim of full transcription of every French variant code.
+
+Sources:
+
+- [Dated cover5156](https://swooncycles.com/cdn/shop/files/IMG_5156__63800.1734139121.1280.1280.jpg).
+- [Road specifications5158, original](https://cdn11.bigcommerce.com/s-1rmgckn/images/stencil/2280x2280/products/14253/174718/IMG_5158__61302.1734139121.jpg?c=2).
+- [221 detail5155](https://swooncycles.com/cdn/shop/files/IMG_5155__72452.1734139121.1280.1280.jpg).
+- [238 detail5154](https://swooncycles.com/cdn/shop/files/IMG_5154__69189.1734139121.1280.1280.jpg).
+- [Variant/specification matrix5151, original](https://cdn11.bigcommerce.com/s-1rmgckn/images/stencil/2280x2280/products/14253/174722/IMG_5151__44973.1734139121.jpg?c=2).
+
+The French CXP30 **clincher** prose prints19.4mm/520g, unlike the English
+550g figure. This establishes an edition difference, not a construction change.
+It corroborates the dealer's clincher520g attribution, but does not establish
+a French maker520g claim for the **tubular**. The matrix's column titled
+Diametre Appui Rayonnage contains spoke-seat diameters, not rim weights;
+do not mistake its numbers for masses. Other tiny variant references have not
+been promoted to new component identities. Spoke-length instructions and
+introductory/marketing material are outside this focused correction.
+
+The previously cropped English221/238 specifications are legible in the French
+close-ups:221 is22mm/440g, UB Control, double-wall eyeletted;238 is23mm/450g,
+double-wall eyeletted. Both are shown with silver finishes;221 also steel grey.
+The new evidence allows dating these weights to1996 while preserving1997
+hole counts separately. No date/title/search-text changes or new component rows.
+
+| Existing row | Applied evidence-backed change |
+|---|---|
+|5063 CXP30 clincher|Distinguish1996 English550g from French520g; retain1997/1999 specs.|
+|10597 CXP titanium-colour clincher|19mm→19.4mm maker width; distinguish English/French/dealer weight attributions.|
+|9979 221|Add22mm and double-wall/eyelet construction; attest440g in1996 French; keep1997 drilling.|
+|9980 238|Add23mm; attest450g in1996 French; keep1997 drilling.|
+
+### Applied source and restoration evidence
+
+Source **484**, **Mavic Catalogue Jantes 1996, French booklet**, catalogue
+type, country NULL: French language alone does not prove market. Source-registry
+search found no equivalent French booklet; English483 and Bike-Pro306 remain
+separate. All four rows changed source_ref483→484. No new component rows,
+identity/variant merges, titles, dates, search text, category/group or links.
+The prior scoped duplicate assessment remains applicable; descriptions do not
+alter identity candidates or generator matching. SQL and task-created photo/
+validation files were removed after successful readback and idempotency checks;
+source URLs and old/new values here preserve evidence for future review.
+
+Captured old/new values, for a deliberate rollback guarded by applied
+replacement/source/UUID (restore old source_ref483 on each row):
+
+- **5063**, UUID `0D6F5F12-2641-4B1C-913B-508AEF10F947`:
+  - Old: `700c aero clincher, SUP joint, profiled eyelets, UB Control; 18-23mm tyres. 1996: 550g, silver/titanium. 1997: 520g, 24/28/32/36h, silver/titanium. 1999: 550g, 28/32/36h, silver.`
+  - Applied (199 characters): `700c aero clincher, SUP joint, profiled eyelets, UB Control; 18-23mm tyres. 1996: English 550g, French 520g, silver/titanium. 1997: 520g, 24/28/32/36h, silver/titanium. 1999: 550g, 28/32/36h, silver.`
+- **10597**, UUID `8a9bb342-d895-11f1-a2df-02fea3763e8d`:
+  - Old: `Deep-section alloy clincher rim, 700c, 19mm wide, 24/28/32/36 holes, titanium-colour anodised, SUP joint and UB Control brake tracks. 1996 weights: maker 550g; Guida dealer listing 520g.`
+  - Applied (201 characters): `Alloy aero clincher, 700c, 19.4mm wide, 24/28/32/36 holes, titanium-colour anodised, SUP joint and UB Control brake tracks. 1996 weights: English maker 550g; French maker and Guida dealer listing 520g.`
+- **9979**, UUID `51523c9e-d479-11f1-a2df-02fea3763e8d`:
+  - Old: `Multi-purpose MTB rim with UB Control sidewalls; steel grey or silver. Touring or budget cross-country. 1997 specification: 440g, 32/36 holes.`
+  - Applied (201 characters): `Multi-purpose double-wall eyeletted MTB rim with UB Control, 22mm wide; steel grey or silver. Cross-country and touring. Maker weight 440g in 1996 French and 1997 catalogues; 1997 drilling 32/36 holes.`
+- **9980**, UUID `515459a1-d479-11f1-a2df-02fea3763e8d`:
+  - Old: `Double-wall eyeletted MTB rim, entry to the range; silver. Touring and easy trekking. 1997 specification: 450g, 32/36 holes.`
+  - Applied (169 characters): `Double-wall eyeletted MTB rim, 23mm wide, silver; entry-level cross-country and touring. Maker weight 450g in 1996 French and 1997 catalogues; 1997 drilling 32/36 holes.`
+
+### Validation
+
+All four target rows matched reviewed values before loading. First application:
+one source insert/four component updates; rerun:zero inserts/updates. Exact
+readback across every Mavic row confirms only the four approved descriptions
+and source_ref483→484 changed. All replacements fit255 characters. All four
+retain zero bike links, and dates/titles/UUIDs/categories/groups/images/search
+text remain unchanged. The component count remains11,218; only data_source
+gains one row. No matcher or API changes, so no code tests were needed.
+
+Whole-DB quality summary and every finding match before/after:zero errors and
+2,075 review findings. Generator/live comparison across23,800 specs also
+matches exactly, including scope, files and every finding:23,785 unchanged,
+zero gains/target changes, same15 pre-existing losses, no missing or ambiguous
+identities. No newly supported NULL link or duplicate merge follows from these
+specification clarifications. The remaining tubular weight and870 clamp gaps
+stay open in TODO; the completed focused French correction action is removed.
+
+Restoration requires a deliberate, UUID/new-description/source484-guarded
+update to the captured old descriptions and source483. Remove484 only if
+unreferenced and deliberately rolling back this registration.
+
+## English rim brochure 1996 — applied and validated 2026-11-20
+
+User approved the reviewed change set with “apply”. Guarded SQL updated
+exactly **10 existing component rows**, using existing source **483**. No source
+or component insertions, merges, retitles or bike-link changes. The rerun changed
+**zero rows**. The inventory below and captured old/new values retain the evidence
+and restoration plan. Task-created SQL, CSV, original photo downloads and
+validation snapshots were removed after validation; source URLs remain below.
+
+### Source scope and inventory
+
+Seller lot is [SKU15439](https://bikerecyclery.com/1996-mavic-rim-catalog-lot-full-size-brochure-wheel-building-guide-mint-average/).
+Overview IMG_5143 shows a separate French booklet and a spoke-length sheet;
+neither is combined with the English brochure or assigned its specifications.
+The English cover IMG_5145 explicitly prints Catalogue1996. Visually read its
+road/tubular panel IMG_5147, touring/MTB panel IMG_5148, tubular detail IMG_5149,
+technology panel IMG_5146 and Cosmic advertisement IMG_5150. Cover/history,
+manufacturing/marketing text and the spoke-length sheet are not component rows.
+The scope is the readable photographed panels, not a claim of a complete scan.
+
+Original full-resolution references (2048px wide):
+- [5147 road/tubular](https://cdn11.bigcommerce.com/s-1rmgckn/images/stencil/2280x2280/products/14253/174720/IMG_5147__32454.1734139528.jpg?c=2)
+- [5148 touring/MTB](https://cdn11.bigcommerce.com/s-1rmgckn/images/stencil/2280x2280/products/14253/174713/IMG_5148__49135.1734139121.jpg?c=2)
+- [5149 tubular detail](https://cdn11.bigcommerce.com/s-1rmgckn/images/stencil/2280x2280/products/14253/174725/IMG_5149__79662.1734139121.jpg?c=2)
+
+All inventory entries below attest **1996** availability. All except the
+advertisement are category **Rims**. Eighteen rim-family/finish entries are
+listed; this is not a forecast of eighteen new components.
+
+| Panel | Printed listing | Legible specification / limit | Existing IDs |
+|---|---|---|---|
+| 5147 | Mavic Open SUP | CD/CD Ceramic; SUP; family 470g; no separate Ceramic weight established | 5102/10598 |
+| 5147 | Mavic Reflex clincher | SUP/UB Control; 410g; CD/Ceramic, CD, blue, silver | 5107/10596/10599 |
+| 5147 | Mavic MA40 | Classic clincher, CD; shared 460g panel; heading partly cropped | 5077 |
+| 5147 | Mavic MA2 | Silver option named MA2; shared 460g panel | 5074/8177 |
+| 5147 | Mavic CXP30 clincher | NEW; SUP/UB Control; silver/titanium; 550g | 5063/10597 |
+| 5147 | Mavic CXP14 | NEW; silver; 570g, 520g in 650; profiled eyelets | 5060 |
+| 5147 | Mavic CXP12 | NEW; CD/silver; 480g, 440g in 650; 650 silver only; profiled eyelets | 5059 |
+| 5147 | Mavic CXP30 tubular | NEW; SUP/UB Control; silver/titanium; 530g | 5062/10199/10607 |
+| 5147/5149 | Mavic Paris-Roubaix SSC | CD tubular; 400g; 21.5mm wide,12.7mm high | 8193 |
+| 5147/5149 | Mavic GP4 | CD tubular; 480g;20.5mm wide,14.5mm high | 5069 |
+| 5148 | Mavic T217 | SUP/UB Control; CD/Ceramic,CD,silver; family470g;22mm wide,19.5mm high | 10184/10185/10186 |
+| 5148 | Mavic T238 | NEW; silver;500g | 9982 |
+| 5148 | Mavic T261 | Silver;540g;26mm wide,15.4mm high | 10182 |
+| 5148 | Mavic 121 | SUP; CD/CD Ceramic;530g; downhill and loaded touring/tandems | 9976 |
+| 5148 | Mavic 217 | SUP/UB Control; CD/Ceramic,CD,Sunset,silver;family410g; double-eyelet version mentioned without code | 9977 |
+| 5148 | Mavic 220 | NEW;UB Control;steel grey/silver;395g | 9978 |
+| 5148 | Mavic 221 | NEW;steel grey/silver; touring/budget racing; weight/drawing cropped | 9979 |
+| 5148 | Mavic 238 | NEW;silver; entry-level/training; weight/drawing cropped | 9980 |
+| 5150 | Mavic Cosmic wheels | Advertisement; clincher and tubular; no precise generation/code or weights extracted; no SQL | 10625 candidate only |
+
+### Decisions and applied changes
+
+No new rows, retitles, date caps, later year_from moves or merges. The existing
+rim identities cover the legible listings. Mavic 5062 already carries the
+1996 tubular530g/1997 tubular465g claim; leave it unchanged. Add the maker's
+edition-specific figures to finish-specific CXP30 descriptions without erasing
+the separate Guida1996 dealer520g claims. CXP14's unqualified492g listing is
+preserved as such; it is not relabelled as an actual measurement.
+
+Open SUP's visible finish line lists CD/CD Ceramic, so this pass does not extend
+silver5101 from it. Open SUP470g and T217470g are family figures; do not overwrite
+separately documented Ceramic weights with them. The partly cropped classic
+panel identifies the silver MA2 option alongside CD/MA40; use it for8177's
+availability, without inventing missing drilling or dimensions. 221/238 are
+legibly marked NEW and their finishes are visible, but their weights are outside
+the photo: retain existing values explicitly as 1997 specifications. Cosmic's
+uncoded advertisement cannot establish a particular later wheel generation.
+
+Guarded SQL applied **10 updates**. Five date changes attest availability:
+5063,9978,9979,9980 year_from1997→1996;8177 year_to1995→1996.
+All changed rows now have source_ref483; their existing UUID/title/search text,
+category/group/image and every unlisted field are preserved. Nine description
+updates fit255 characters. Restoration values and replacements follow; restore
+only deliberately, guarded by the applied description/source/UUID.
+
+- **5059 Mavic CXP 12**, UUID `FE2B4653-CF21-4B01-919A-96D632DD9693`:
+  - `description`: `Mavic CXP 12, France. Light aero clincher with profiled eyelets, 480 g, 32/36 holes (700c) or 24/28/32 (650c), for 19-25 mm tyres; silver or CD. Entry-level racing and training.` → `Aero clincher with profiled eyelets; 19-25mm tyres. 1996: 700c 480g, 650c 440g; CD or silver, with 650c silver only. Drilling: 32/36h (700c), 24/28/32h (650c). Entry-level racing and training.`.
+  - `source_ref`: `357` → `483`.
+- **5060 Mavic CXP 14**, UUID `06D72B88-551B-4F58-8AC5-0E4EEF3488DD`:
+  - `description`: `Mavic CXP 14, France, 492 grams. Deep-section aero clincher with profiled eyelets, 570 g, 24/28/32 holes, 700c or 650c (26 in), for 18-23 mm tyres; silver. Road racing and training.` → `Aero clincher with profiled eyelets; silver, 700c or 650c, 24/28/32h, for 18-23mm tyres. Maker specifications: 570g (700c), 520g (650c). A separate listing reports 492g without a stated weighing basis.`.
+  - `source_ref`: `357` → `483`.
+- **5063 Mavic CXP 30 (clincher)**, UUID `0D6F5F12-2641-4B1C-913B-508AEF10F947`:
+  - `year_from`: `1997` → `1996`.
+  - `description`: `Deep-section 700c aero clincher, "cousin to the Cosmic", SUP joint, profiled eyelets, UB Control sidewalls, for 18-23 mm tyres. 1997: 520 g, 24/28/32/36 holes, titanium or silver. 1999: 550 g, 28/32/36 holes, silver.` → `700c aero clincher, SUP joint, profiled eyelets, UB Control; 18-23mm tyres. 1996: 550g, silver/titanium. 1997: 520g, 24/28/32/36h, silver/titanium. 1999: 550g, 28/32/36h, silver.`.
+  - `source_ref`: `374` → `483`.
+- **8177 Mavic MA 2 Argent**, UUID `32f6f54b-c713-4017-be5f-706000bd938f`:
+  - `year_to`: `1995` → `1996`.
+  - `source_ref`: `449` → `483`.
+- **9978 Mavic 220**, UUID `515034a3-d479-11f1-a2df-02fea3763e8d`:
+  - `year_from`: `1997` → `1996`.
+  - `description`: `Mavic 220, France. Cross-country MTB rim with UB Control sidewalls, 410 g, 28/32/36 holes; steel grey or silver.` → `Cross-country MTB rim with UB Control sidewalls; steel grey or silver. Maker specifications: 395g (1996); 410g, 28/32/36 holes (1997).`.
+  - `source_ref`: `307` → `483`.
+- **9979 Mavic 221**, UUID `51523c9e-d479-11f1-a2df-02fea3763e8d`:
+  - `year_from`: `1997` → `1996`.
+  - `description`: `Mavic 221, France. Multi-purpose MTB rim with UB Control sidewalls, 440 g, 32/36 holes; steel grey or silver. Touring or budget cross-country.` → `Multi-purpose MTB rim with UB Control sidewalls; steel grey or silver. Touring or budget cross-country. 1997 specification: 440g, 32/36 holes.`.
+  - `source_ref`: `307` → `483`.
+- **9980 Mavic 238**, UUID `515459a1-d479-11f1-a2df-02fea3763e8d`:
+  - `year_from`: `1997` → `1996`.
+  - `description`: `Mavic 238, France. Double-wall eyeletted MTB rim, the entry to the range, 450 g, 32/36 holes; silver. Touring and easy trekking.` → `Double-wall eyeletted MTB rim, entry to the range; silver. Touring and easy trekking. 1997 specification: 450g, 32/36 holes.`.
+  - `source_ref`: `307` → `483`.
+- **10199 Mavic CXP 30 Argent SUP UB Control**, UUID `2c38f447-ab06-48a6-98b0-d765966816e5`:
+  - `description`: `Special Maxtal alloy; 700c; 19.4 mm; 24-28-32-36 holes; high profile, silver anodized, SUP machining, UB Control sides, profiled ferrules; 465g` → `Maxtal alloy aero tubular rim, 700c, 19.4mm wide, silver anodised, SUP joint, UB Control and profiled ferrules; 24/28/32/36 holes. Maker specifications: 530g (1996), 465g (1997).`.
+  - `source_ref`: `357` → `483`.
+- **10597 Mavic CXP Titane SUP UB Control**, UUID `8a9bb342-d895-11f1-a2df-02fea3763e8d`:
+  - `description`: `Deep-section alloy clincher rim, 700c, 19 mm wide, 24-28-32-36 holes, titanium-colour anodised, UB Control braking flanks; 520 g.` → `Deep-section alloy clincher rim, 700c, 19mm wide, 24/28/32/36 holes, titanium-colour anodised, SUP joint and UB Control brake tracks. 1996 weights: maker 550g; Guida dealer listing 520g.`.
+  - `source_ref`: `357` → `483`.
+- **10607 Mavic CXP 30 Titane SUP UB Control**, UUID `8ab17c75-d895-11f1-a2df-02fea3763e8d`:
+  - `description`: `Deep-section alloy tubular rim, 28 in, 19 mm wide, 24-28-32-36 holes, titanium-colour anodised, UB Control braking flanks; 520 g.` → `Deep-section alloy tubular rim, 28in, 19mm wide, 24/28/32/36 holes, titanium-colour anodised, UB Control brake tracks and profiled inserts. 1996 weights: maker 530g; Guida dealer listing 520g.`.
+  - `source_ref`: `357` → `483`.
+
+### Application validation
+
+Before loading, every live Mavic row matched the reviewed snapshot exactly.
+First SQL load affected10 rows; identical rerun affected0. Exact readback across
+all Mavic rows matches only the ten approved changes, with every other field
+and row unchanged. Component/source counts are unchanged; descriptions fit255
+characters. No new rows, mergers, overrides or matching rules.
+
+Only8177 among the changed rows has a bike reference: spec25529,1988 MBK
+C455 Le Champion, value Mavic MA2. Its link and the existing MA2 override are
+unchanged and within the retained1986–1996 range. The other nine changed rows
+have zero links. No new supported NULL backfill follows from the catalogue's
+weights or availability extensions.
+
+The full generator/live comparison across23,800 specs is exactly identical
+before/after, including individual findings:23,785 unchanged, zero gains or
+target changes, the same15 pre-existing lost mappings, no missing/ambiguous
+identities. Whole-DB quality tables, summary and every finding also match:
+zero errors and2,075 review findings. Related rows, including the previously
+corrected5062, are unchanged. No API/matcher behaviour changed, so no code
+tests were needed for this data-only update.
+
+Scoped duplicate review supplied no evidence for a merge: preserve CXP tubular
+versus clincher, GP4 tubular versus dealer-labelled clincher10594 and the
+Paris-Roubaix generations. This brochure confirms GP4 tubular availability;
+it does not resolve the dealer's contradictory listing. Cropped specifications
+remain unfilled, and the CXP30 weight explanation and870 clamp evidence gaps
+remain separate open tasks. Restoration values above are guarded by the applied
+description/source/UUID; restore only deliberately. Keep existing source483.
+
+
 ## CXP30 edition weights — 2026-11-20, applied and validated
 
 User approved with “apply”. Guarded SQL inserted one catalogue source and
@@ -1035,6 +1265,15 @@ quality report returned zero integrity errors; review flags are not proven error
 TODO now seeks weighing-basis/revision evidence rather than an unspecified 1996
 catalogue. Temporary HTML and inspected photo downloads were removed after
 recording the source URLs and findings here.
+
+### 1996 rim-brochure reconciliation candidate — 2026-11-20
+
+The selected English brochure's readable panels were subsequently inventoried
+and reconciled in the [applied 1996 review](#english-rim-brochure-1996--applied-and-validated-2026-11-20)
+above. The source-483 single-row query was a selection-stage observation, not
+proof of missing rim identities; the completed reconciliation adds no components.
+The separate French booklet and spoke-length sheet were outside that source
+scope. No pending SQL or broad inventory action remains for the inspected panels.
 
 ### Open Pro decal-date search — 2026-11-19
 

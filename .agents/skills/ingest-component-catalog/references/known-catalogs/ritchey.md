@@ -1,5 +1,217 @@
 # Ritchey catalogs processed so far
 
+## Component catalogue attributed 1994 — applied and validated (2026-11-20), source 485
+
+**User approved and applied:** source485, two component inserts (12155–12156) and
+28 existing-row updates. No retitles, merges, deletes, bike writes, ownership or
+matcher changes. Six offerings remain unassigned pending identity evidence;
+one existing offering needs no change. The 37-offering inventory is below.
+
+[16-page manufacturer PDF](https://www.bikecatalogs.com/download/4032), mirrored
+from [Old Mountain Bikes](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1994/oldsite/components.html).
+Cover says RITCHEY COMPONENTS and names 1993 Grundig World Champion Thomas
+Frischknecht; back cover is ©Ritchey Design1993. Archive attribution1994 is
+consistent with a1994-season catalogue; no printed1994 imprint was verified.
+All applied1994 availability attestations retain this qualification. NEW stamps
+are marketing evidence, not proof of an exact1994 manufacturing introduction.
+English text and US/European contacts do not establish a market: country NULL.
+No manufacturer part numbers appear. Sources149/150/151/411 already cover
+1992/1991/1988/2000; this manufacturer edition is now registered as source485,
+`Ritchey Components catalogue (attributed 1994; copyright 1993)`.
+Live rows additionally carry Branford retailer sources473(1995/96) and
+474(1994/95); their later evidence is preserved rather than replaced wholesale.
+
+In scope: printed/PDF pp3–11. Skipped cover p1; grips/bar ends p2; tubing/forks
+p12; historical article p13; clothing p14; tools p15; back cover p16. Pads and
+cable hangers on pp4/6/7 also have no suitable category. Tyres/rims belong to
+a separate Wheels catalogue, not this scan. The previously checked1995 Bikalog
+scan is a bicycle catalogue and remains outside the components-only scope.
+
+### Inventory and reconciliation
+
+Every year below means qualified1994-season availability, not a manufacture
+boundary. Row IDs are retained where an identity is supported. Full scanned
+specifications were transcribed before DB comparison.
+
+| Page | Category | Printed identity | Specifications | Reconciliation |
+| --- | --- | --- | --- | --- |
+| 3 | Handlebars | Ritchey ProLite WCS | Butted Easton EA70; 560mm; 4/6-degree bends; WCS hard ano-platinum finish; 123g. | updated 8403 |
+| 3 | Handlebars | Ritchey ProLite | Butted Easton EA70; 560mm; 4/6/9-degree bends; black/purple/silver/blue; 140g. | updated 8404 |
+| 3 | Handlebars | Ritchey CompLite | Seamless 2014-T6; 560mm; 4/6-degree bends; black/silver/purple; 150g. | updated 12047 |
+| 3 | Handlebars | Ritchey ForceLite | Butted 2014-T6; 560mm; 4/6-degree bends; black/silver; 170g. | updated 8405 |
+| 4 | Stems | Ritchey WCS (Mountain) | Butted heat-treated CrMo quill and extension, lightweight bolt/alloy cap; 120/130/140/150mm, 10-degree rise; 22.2/25.4mm quill, 25.4mm bar; WCS plated; 250g at 140mm. | updated 12080 |
+| 4 | Stems | Ritchey Force Comp (Mountain) | Butted heat-treated CrMo; 120/130/140/150mm at 10 degrees, 130mm at 20 degrees; 22.2/25.4mm quill, 25.4mm bar; satin chrome; 290g at 140mm. | updated 8399 |
+| 4 | Stems | Ritchey ForceLite Threadless | Butted heat-treated CrMo; reversible 4-degree angle; 120/130/140/150mm; steerer 25.4/26.8/31.8mm as printed; 25.4mm bar; satin/black chrome; 180g at 140mm. | updated 12081 |
+| 4 | Stems | **12155 Ritchey ForceLite (Mountain)** | Butted construction, heat-treated quill, shortened expander; 120/130/140/150mm at 10 degrees, 130mm at 20 degrees; 22.2/25.4mm quill, 25.4mm bar; satin/black chrome; 270g at 140mm. | inserted12155 |
+| 5 | Stems | Ritchey WCS (Road) | Heat-treated butted CrMo; 90/100/110/120/130/140mm; 0/-10 degrees; 22.2mm quill, 26.0mm bar; WCS plated; 230g at 110mm. | updated 10697 |
+| 5 | Stems | Ritchey Force Comp (Road) | Heat-treated butted CrMo; 90/100/110/120/130/140mm; 0/-10 degrees; 22.2mm quill, 26.0mm bar; satin chrome; 250g at 110mm. | updated 8401 |
+| 5 | Stems | Ritchey ForceLite (Road) | 90/100/110/120/130/140mm; 0/-10 degrees; 22.2mm quill, 26.0mm bar; satin chrome; 260g at 110mm. Shared road-stem intro states butted heat-treated construction. | hold Road ForceLite |
+| 6 | Brakes | Ritchey Logic WCS Cantilevers | Cold-forged 6061-T6 alloy; brass pivot bushings; dual 2mm Allen spring-tension adjustment; WCS anodised; 150g per wheel; Logic pads. | updated 12029 |
+| 6 | Brakes | Ritchey Logic Cantilevers | Cold-forged 6061-T6 alloy; brass pivot bushings; 2mm Allen spring-tension adjustment; black/silver; 150g per wheel; Logic pads. | updated 8415 |
+| 6 | Brake Levers | Ritchey Logic WCS Brake Levers | Cold-forged 6061-T6 alloy; contoured three-finger wedge profile; WCS anodised; 180g/pair without cables/housing. | updated 12026 |
+| 6 | Brake Levers | Ritchey Logic Brake Levers | Cold-forged 6061-T6 alloy; contoured three-finger wedge profile; black/silver; 180g/pair without cables/housing. | updated 8416 |
+| 7 | Headsets | Ritchey Pro WCS Headset | 7075 cups; inverted top needle bearing; 37mm stack; CNC machined; 1in/1-1/8in; 82/92g; WCS anodised; reinforced rubber seals. | updated 10404 |
+| 7 | Headsets | Ritchey Logic Comp Headset | 3/16in lower, 1/8in upper balls; ground races; 33mm stack; duralumin locknut; 1in x24tpi English30.2/26.4 or JIS30.0/27.0; satin/black; 110g. | updated 8417 |
+| 7 | Headsets | Ritchey Logic Expert Headset | 3/16in lower, 1/8in upper balls; water-resistant seals; 33mm stack; steel locknut; 1in x24tpi English/JIS, 1-1/8in x26tpi34/30, 1-1/4in x26tpi37/33; satin/black; 130/140/150g. | updated 10401 |
+| 8 | Seat Posts | Ritchey Pro WCS (Mountain) Seatpost | Force Directional butted 2014-T6 post, friction-welded forged single-bolt clamp/cradle; up to 330mm; 26.4-27.2mm; 225g. Quad butting, titanium fixing bolt, hard WCS anodised finish. | updated 12043 |
+| 8 | Seat Posts | Ritchey Pro WCS (Road) Seatpost | Force Directional butted 2014-T6 post, friction-welded forged single-bolt clamp/cradle; 230mm; 26.4-27.2mm; 195g. Quad butting, titanium fixing bolt, hard WCS anodised finish. | updated 10639 |
+| 8 | Seat Posts | Ritchey Comp (Mountain) Seatpost | Force Directional butted 2014-T6 post, friction-welded forged single-bolt clamp/cradle; up to 330mm; 26.4-27.2mm; 250g. Satin finish; described as original FD design. | updated 12044 |
+| 8 | Seat Posts | Ritchey Comp (Road) Seatpost | Force Directional butted 2014-T6 post, friction-welded forged single-bolt clamp/cradle; 240mm; 26.4-27.2mm; 220g. Satin finish; described as original FD design. | hold Comp Road post |
+| 8 | Seat Posts | Ritchey Expert (Mountain) Seatpost | Force Directional butted 2014-T6 post, friction-welded forged single-bolt clamp/cradle; 330mm; 26.2-27.2mm and OS28.6/28.8/29.0/29.2/29.4/29.6/29.8/30.0mm; 250g at 26.8x300mm. | hold Expert Mountain post |
+| 8 | Seat Posts | Ritchey Expert (Road) Seatpost | Force Directional butted 2014-T6 post, friction-welded forged single-bolt clamp/cradle; 240mm; 26.2-27.2mm; 220g. | hold Expert Road post |
+| 9 | Saddles | Ritchey Logic Pro WCS | Italian leather, racing profile, medium-density padding, shortened titanium rails; black; 215g. | updated 8409 |
+| 9 | Saddles | Ritchey Logic ProLite | Leather, racing profile, medium-density padding, 531 tubular steel rails; black; 235g. | inserted12156 |
+| 9 | Saddles | Ritchey Logic Saddle | Leather, classic profile, medium-density padding, shortened steel rails; black/white; 310g. | updated 5462 |
+| 9 | Saddles | Ritchey Vector ProLite | Cutaway racing profile; leather; heat-treated tubular CrMo rails; black; 230g. | updated 10650 |
+| 9 | Saddles | Ritchey Vector | Cutaway racing profile; leather; steel rails; black; 280g. | hold Vector saddle |
+| 10 | Cranksets | Ritchey Logic Mountain | Cold-forged duralumin hidden-pin; 170/172.5/175/177.5/180mm; Q151mm; 110/74PCD; 24/36/46T standard, other standard/Supershift rings; silver/black; 650g. | unchanged1721 |
+| 10 | Cranksets | Ritchey Logic Compact | Cold-forged duralumin hidden-pin; 170/172.5/175/177.5/180mm; Q151mm; 94/58PCD; 22/32/42T or22/32/44T Supershift; silver/black; 625g. | updated 11305 |
+| 10 | Cranksets | Ritchey Logic Road | Cold-forged duralumin hidden-pin; 170/172.5/175/177.5/180mm; Q138mm with107mm spindle; 110PCD; 34-54T rings; silver; 590g. | updated 11172 |
+| 10 | Cranksets | Ritchey Logic Tandem | Cold-forged duralumin hidden-pin; 170/175mm; Q151mm; 110/74PCD; 26/38/54T (60T available),38/38T drive; silver; 1390g. | updated 8411 |
+| 11 | Bottom Brackets | Ritchey Logic ProLite | Double-sealed cartridge bearings; 7075 cups; hollow nickel-chromium steel spindle; English1.37x24; 68mm shell,107/110/113/120mm spindles;195g. | hold steel ProLite BB |
+| 11 | Bottom Brackets | Ritchey Logic ProLite Titanium | Double-sealed cartridge bearings; 7075 cups; hollow6-4AL titanium spindle; English1.37x24; 68mm shell,107/110/113/120mm spindles;150g. | updated 12024 |
+| 11 | Bottom Brackets | Ritchey Logic Pro WCS | Wider-spaced ground races/sealed cups; titanium fixing bolts,7075 lockring; hollow nickel-chromium steel spindle; English1.37x24; 68mm shell,120/123/124.5mm spindles;250g. | updated 8413 |
+| 11 | Bottom Brackets | Ritchey Logic Pro | Wider-spaced ground races/sealed cups; CrMo fixing bolts/lockring; hollow nickel-chromium steel spindle; English1.37x24; 68mm shell,120/123/124.5mm spindles;285g. | updated 8412 |
+
+### Identity and conflicting-specification decisions
+
+- **Force Comp vs ForceLite mountain stems:** p4 lists both simultaneously,
+  with290g and270g at140mm respectively. ForceLite is a butted heat-treated
+  CrMo quill design with shortened expander, distinguished from the older
+  8400 FD stem (340/350g) as well as8399 Force Comp. Inserted the separate
+  ForceLite(Mountain) row12155,1994 only. The Branford474 p24 ForceLite heading
+  conflicts with its Force Comp introduction and290g mass. That retailer
+  listing cannot prove ForceLite is a synonym for8399: removed the unsafe
+  alias from8399. Retain its1995 availability from the retailer introduction
+  identifying Force Comp; do not transfer that conflicting heading to the new
+  270g ForceLite or infer its1995 availability.
+- **WCS mountain stem12080:** maker p4 explicitly gives250g at140mm, replacing
+  the retailer474 listed140g average. Preserve that old listing here and in
+  cross-catalog history; no measured specimen weight is being discarded.
+  Use22.2/25.4mm as quill diameters, distinct from nominal steerer sizes.
+- **ForceLite Threadless12081:** maker prints25.4/26.8/31.8mm steerer sizes.
+  The26.8 is anomalous; retain it as printed, alongside the retailer nominal
+  1in/1-1/8in listing, without silently converting it to28.6mm.
+- **Handlebar advice:** p3 says all these bars accept quality bar ends,
+  whereas Branford473(1995/96) forbids them on ProLite WCS8403. Preserve
+  the differing edition advice explicitly; do not generalise either across eras.
+- **ProLite saddles:** Logic ProLite is a separately marketed classic/WCS-shape
+ 531-tubular-rail saddle235g; inserted12156 separately from Vector ProLite10650,
+  whose cutaway profile and230g are expressly shown on the same page.10650
+  retains its1996 nylon shell/Reynolds531/235g listing as edition-specific.
+- **Headsets:** Pro WCS10404 matches7075/needle/inverted top/37mm/82–92g;
+  Expert10401 is expressly tier-labelled. Keep older generic Logic3078 separate
+  (earlier1-1/4in145g vs150g here), and keep the2000 cartridge/ball-bearing
+  constructions separate. This scan does not identify later Fuzzy Logic10402.
+- **Cranks:** Logic Mountain1721 already covers the exact110/74PCD/650g
+  identity and period. Preserve its measured175mm complete714g and later
+  1995/96 specifications untouched. Logic Road11172 and Compact11305 have
+  matching named identities/PCD/weights and gain earlier1994 attestation.
+- **Dates:** earlier starts1995→1994 on12044/11172/11305/12024 and1996→1994
+  on10650. Extend8405/8409/5462 endpoints1992→1994. No start moves later;
+  no date is capped merely because a part is absent. Later1996/1999/2000
+  evidence remains intact. These are evidence windows, not manufacture dates.
+
+### Unassigned offerings — evidence needed
+
+| Offering / page | Candidates | Required crosswalk |
+| --- | --- | --- |
+| ForceLite Road /5 |8401 Force Comp Road;8402 FD Road;10154 CompLite Road |260g quill identity vs older FD260/270g and later210g stem; same geometry alone cannot establish rename/generation. Retain named offering here; no speculative duplicate row. |
+| Comp Road seatpost /8 |8408 FD Road;10638 Comp;10169 Expert Road;2000 Comp Road offering |Maker240mm/220g vs old210/240mm210g,1996 Comp230mm210g and2000 Comp250mm250g. “Original FD design” does not uniquely identify the tier/version. |
+| Expert Mountain seatpost /8 |8407 untiered FD Mountain |Standard/OS diameter list and250g overlap; prior OS6061-T6 versus page-wide2014-T6 construction and competing Comp tier require an explicit tier/generation crosswalk. Do not repoint existing FD bike links. |
+| Expert Road seatpost /8 |8408;10169 Expert Road |240mm/220g versus later250mm/220g and differing alloy/diameters; confirm generation before broadening/duplicating. |
+| Vector base saddle /9 |10649 Vector Comp |280g steel-rail leather offering vs later Comp with nylon/polyurethane detail; confirm Vector→Vector Comp naming lineage before insertion/retitle. |
+| Logic ProLite steel BB /11 |10295 Pro |Double-sealed cartridge,7075 cups,hollow nickel-chromium spindle,195g;107/110/113/120mm versus1999 Pro103mm. Confirm naming/generation before creating a potential duplicate. Distinct from250g cup-and-cone WCS8413 and150g titanium12024. |
+
+Later Fuzzy Logic Pro/Comp10402,2000 Comp Road and Pro Aero/Aero OCR10190/10191
+questions in the2000 section remain open; this scan supplies no rim evidence.
+
+### Inserted new rows
+
+Both use brand252, group NULL, existing category-brand associations, fresh UUIDs
+and source_ref485 to the manufacturer source. Dates1994–1994 are qualified
+as above. Search text is generated by scripts/search-text.js.
+
+| Page | Category | Title | Description | Load UUID |
+| --- | --- | --- | --- | --- |
+| 4 | Stems | **12155 Ritchey ForceLite (Mountain)** | Butted heat-treated CrMo quill stem, shortened expander bolt; 120/130/140/150mm at+10deg or130mm at+20deg; 22.2/25.4mm quill, 25.4mm bar; satin/black chrome; 270g at140mm. | 7a4df1e0-6a69-46f6-bb2f-eba07396c032 |
+| 9 | Saddles | **12156 Ritchey Logic ProLite Saddle** | Leather racing saddle, medium-density padding, 531 tubular steel rails; black, 235g. Same classic design as Logic Pro WCS, distinct from cutaway Vector ProLite. | e7fa6dda-cb0f-4570-9dfc-4bc18a6c25c9 |
+
+### Existing rows: complete applied overwrite values
+
+Titles, search text, images, UUIDs, maker/category/group and IDs remain unchanged.
+All28 updates set source_ref to the newly registered manufacturer source.
+Restore by setting the old description, dates and source_ref below, guarded
+against the applied values and after reviewing subsequent changes/links.
+The applied SQL guarded every identity field and retained all existing UUIDs.
+Only descriptions, recorded dates and source_ref changed on these rows.
+
+| ID / title | Page | Years old → applied | Old source_ref | Old description | Applied description |
+| --- | --- | --- | --- | --- | --- |
+| 8403 Ritchey ProLite "WCS" | 3 | 1992–1996 → 1992–1996 | 473 | Easton EA70 butted flat bar developed with Easton, hard WCS anodising, 560mm, 123g. 1992: 4/6deg, platinum. 1995/96: 4deg; not suitable for bar ends. | Butted Easton EA70 flat bar, 560mm, hard platinum WCS anodising, 123g. 1992/94: 4/6deg; 1994 allows quality bar ends. 1995/96: 4deg, not suitable for bar ends. |
+| 8404 Ritchey ProLite | 3 | 1990–1996 → 1990–1996 | 473 | Easton EA70 flat bar drawn and butted with Easton, introduced 1990. 4/6/9 deg bends, 540mm in 1991, 560mm from 1992. Black, red, silver or blue. 140g. | Easton EA70 flat bar drawn and butted with Easton, introduced 1990. 4/6/9deg; 540mm in 1991, 560mm from 1992. Black/red/silver/blue; purple also listed in 1994. 140g. |
+| 8405 Ritchey ForceLite | 3 | 1992–1992 → 1992–1994 | 149 | New 1992 flat bar, 2014-T6 alloy, 6/9 deg bends, 560mm, brushed satin or black, 175g. | Butted 2014-T6 flat bar, 560mm, black/silver. New 1992: 6/9deg, brushed satin, 175g. 1994: 4/6deg, 170g. |
+| 12047 Ritchey CompLite ATB Handlebar | 3 | 1994–1996 → 1994–1996 | 474 | Drawn 2014-T6 aluminium flat ATB bar; 4-degree bend, 560mm, silver, 150g. | Seamless drawn 2014-T6 flat ATB bar, 560mm, 150g. 1994: 4/6deg, black/silver/purple. Later retailer listing: 4deg, silver. |
+| 12080 Ritchey WCS ATB Stem | 4 | 1994–1995 → 1994–1995 | 474 | Heat-treated butted chromoly quill stem, WCS anodised finish; 120/130/140/150mm, +10deg, 25.4mm bar clamp; nominal 1in or 1-1/8in sizes; 140g listed average. | Heat-treated butted CrMo quill/extension, lightweight bolt and alloy cap; 120/130/140/150mm, +10deg; 22.2/25.4mm quill, 25.4mm bar; WCS plated; 250g at 140mm. |
+| 8399 Ritchey Force Comp (Mountain) | 4 | 1989–1995 → 1989–1995 | 474 | Butted twice-heat-treated CrMo,satin chrome,290g(150mm); JIS+300%,1989 NORBA/1990-91 Worlds.1991/92:120-160mm(170 in1991),10deg;130mm20deg;120/140mm30deg(1992);22.2/25.4mm quill.1994/95 ForceLite:120-150mm10deg or130mm20deg. | Butted twice-heat-treated CrMo, satin chrome; 1989 NORBA/1990-91 Worlds, JIS+300%. 1991/92: 120-160mm (170 in 1991), +10deg; 130mm +20deg; 120/140mm +30deg (1992); 290g at150mm. 1994: 120-150mm +10deg or130mm +20deg, 290g at140mm; 22.2/25.4mm quill. |
+| 12081 Ritchey ForceLite Threadless ATB Stem | 4 | 1994–1995 → 1994–1995 | 474 | Threadless stem, satin finish; 120/130/140/150mm, reversible +/-4deg; 1in or 1-1/8in steerer, 25.4mm bar clamp; 180g average. | Butted heat-treated CrMo threadless stem; 120/130/140/150mm, reversible +/-4deg; 25.4mm bar; satin/black chrome; 180g at140mm. Maker prints steerer 25.4/26.8/31.8mm; retailer lists nominal 1in/1-1/8in. |
+| 8401 Ritchey Force Comp (Road) | 5 | 1991–1996 → 1991–1996 | 357 | Road version of the butted Force Comp, new for 1991; 30% stiffer and lighter than alloy. 90-140mm, 80/-10 deg (90/0 added 1992); 22.2 quill, 26.0 bar. Satin chrome, 240g (110mm). Ridden by Matthes, Julich and Frischknecht. | Butted heat-treated CrMo road quill stem, new1991; 90-140mm, 0/-10deg (0deg added1992), 22.2mm quill, 26.0mm bar; satin chrome. 1991/92: 240g at110mm, 30% stiffer/lighter than alloy; ridden by Matthes/Julich/Frischknecht. 1994: 250g at110mm. |
+| 12029 Ritchey WCS Cantilevers | 6 | 1994–1996 → 1994–1996 | 474 | Cold-forged 6061-T6 cantilevers, brass bushings, dual spring-tension adjustment and Logic pads; front and rear offered, WCS anodised finish; 150g/pr as listed. | Cold-forged 6061-T6 medium-profile cantilevers, brass pivot bushings, dual 2mm Allen spring-tension adjustment, Logic pads; front/rear, WCS anodised; 150g per wheel. |
+| 8415 Ritchey Logic Cantilevers | 6 | 1991–1996 → 1991–1996 | 473 | Cold-forged 6061-T6 medium-profile cantilevers; brass pivot bushings, spring balance adjustment, extra vertical pad hole, tucked cable end, black/silver. 1991/92: 145g/set. 1995/96: Logic pads, front/rear offered, 150g/pr as listed. | Cold-forged 6061-T6 medium-profile cantilevers; brass pivot bushings, spring balance adjustment, extra vertical pad slot, tucked cable end, black/silver. 1991/92: 145g/set. 1994: 150g per wheel, 2mm Allen adjustment, Logic pads; front/rear. |
+| 12026 Ritchey WCS ATB Brake Levers | 6 | 1994–1996 → 1994–1996 | 474 | Cold-forged 6061-T6 three-finger ATB brake levers; WCS anodised finish, supplied with cables and housing; 180g per pair. | Cold-forged 6061-T6 contoured three-finger ATB levers, wedge profile and index-finger harbor; WCS anodised; 180g/pair without cables/housing. Retailer package includes cables and housing. |
+| 8416 Ritchey Logic Brake Levers | 6 | 1991–1996 → 1991–1996 | 473 | Cold-forged 6061-T6 three-finger lever, wedge profile and index-finger harbor; cables/housing included, black/silver. 1991/92: 95g (set/each respectively). 1995/96: silver, 180g per pair. | Cold-forged 6061-T6 contoured three-finger levers, wedge profile/index-finger harbor; black/silver, cables/housing supplied. 1991/92: 95g (set/each respectively). 1994: 180g/pair without cables/housing; 1995/96: silver, 180g/pair. |
+| 10404 Ritchey Pro WCS | 7 | 1994–1999 → 1994–1999 | 474 | Threaded 7075 alloy headset, needle and inverted upper bearings; WCS Ti-anodised finish, 37mm stack, 1in 82g or 1-1/8in 92g. Later listing describes ball cages and rollers. | Threaded CNC7075 cups, needle bearings with inverted top bearing, reinforced rubber seals; 37mm stack, 1in82g/1-1/8in92g, WCS anodised (retailer: Ti finish). Later listing describes ball cages/rollers. |
+| 8417 Ritchey Logic Comp Headset | 7 | 1991–1996 → 1991–1996 | 357 | Oversize 3/16" lower and 1/8" upper bearings, chromoly races, super duralumin locknut, tough steel upper cone, 33mm stack. 1" 24 tpi English (30.2/26.4); JIS (30.0/27.0) added 1992. Black. 115g in 1991, 110g in 1992. | 3/16in lower and 1/8in upper balls, ground chromoly races, duralumin locknut, steel upper cone, 33mm stack. 1in x24tpi English30.2/26.4; JIS30.0/27.0 from1992. Black/satin; 115g in1991, 110g from1992. |
+| 12043 Ritchey WCS ATB Seatpost | 8 | 1994–1996 → 1994–1996 | 474 | Directional quad-butted post, titanium fixing bolt, forged clamp and cradle, hard WCS anodising; 330mm, 26.4/26.6/26.8/27.0/27.2mm, 225g. | Force Directional quad-butted 2014-T6 post, friction-welded forged single-bolt clamp/cradle; titanium fixing bolt, hard WCS anodising; up to330mm, 26.4-27.2mm, 225g. |
+| 12044 Ritchey Comp ATB Seatpost | 8 | 1995–1996 → 1994–1996 | 473 | Force Directional post, forged clamp and cradle, silver; 330mm, 26.4/26.6/26.8/27.0/27.2mm, 250g. | Force Directional butted 2014-T6 mountain post, friction-welded forged single-bolt clamp/cradle; up to330mm, 26.4-27.2mm, satin/silver, 250g. |
+| 8409 Ritchey Logic Pro "WCS" Saddle | 9 | 1992–1992 → 1992–1994 | 149 | New 1992 Italian-made full-profile racing saddle, top-quality leather, medium-density padding, titanium rails. Black or pearl. 215g. | Italian-made leather racing saddle, medium-density padding, shortened titanium rails, 215g. Black; pearl also listed in1992. |
+| 5462 Ritchey Logic Saddle | 9 | 1990–1992 → 1990–1994 | 150 | Racing profile, top-quality sheepskin leather over medium-density padding, new base shell with shortened spring-steel rails. Black or white. 315g. Called the Logic Racing Saddle in 1991. | Classic racing saddle, top-quality sheepskin leather, medium-density padding, shortened spring-steel rails; black/white. Called Logic Racing Saddle in1991; new base shell, 315g in1991/92, 310g in1994. |
+| 10650 Ritchey Vector Pro Lite | 9 | 1996–1996 → 1994–1996 | 357 | Nylon shell with Reynolds 531 CrMo steel rails, polyurethane padding and leather cover, black. 235 g. | Vector ProLite cutaway racing saddle; leather cover, polyurethane padding, tubular CrMo rails, black. 1994: heat-treated rails, 230g. 1996: nylon shell, Reynolds531 CrMo rails, 235g. |
+| 11172 Ritchey Logic Road | 10 | 1995–1996 → 1994–1996 | 473 | Cold-forged satin-polished alloy road crankset, 590g with rings. 1995/96: 42-53, 170/172.5/175mm. 1996 maker listing: arms 170-180mm, 39-53 rings. | Cold-forged satin-polished alloy hidden-pin road crank, 590g. 1994: 170-180mm, 110BCD, 34-54T, Q138mm with107mm spindle, silver. 1995/96: 42-53T, 170/172.5/175mm. 1996 maker listing: 170-180mm, 39-53T. |
+| 11305 Ritchey Logic Compact Mountain | 10 | 1995–2000 → 1994–2000 | 473 | Compact mountain crankset; 94/58mm chainring bolt pattern, 625g. SLP-compatible, 22-32-42 Supershift rings, 170/175mm. | Cold-forged hidden-pin compact MTB crank, 94/58BCD, Q151mm, 625g; SLP-compatible. 1994: 170-180mm in2.5mm steps, 22/32/42T or22/32/44T Supershift, silver/black. Later: 170/175mm, 22/32/42T. |
+| 12024 Ritchey ProLite Ti Bottom Bracket | 11 | 1995–1996 → 1994–1996 | 473 | Double-sealed cartridge bearings, 7075 alloy cups and hollow 6Al-4V titanium spindle; English threading, 107/110/113/120mm axle; 150g. | Double-sealed cartridge bearings, 7075 alloy cups, hollow6Al-4V titanium spindle; English1.37x24, 68mm shell, 107/110/113/120mm axle; 150g. |
+| 8413 Ritchey Logic Pro "WCS" | 11 | 1992–1999 → 1992–1999 | 353 | New 1992: Logic Pro construction with alloy lockring and titanium fixing bolts. Sealed chromoly cups, hollow nickel-chromium spindle, English 1.37x24, 68x120mm centred. 250g. | Logic Pro cup-and-cone design with sealed chromoly cups, 7075 alloy lockring and titanium fixing bolts, hollow nickel-chromium steel spindle; English1.37x24, 68mm shell. New1992: 120mm centred; 1994: 120/123/124.5mm spindles. 250g. |
+| 8412 Ritchey Logic Pro | 11 | 1991–1996 → 1991–1996 | 473 | Chromoly crank bolts, cups and lockrings; hollow nickel-chromium spindle, English 1.37x24. Cups move out to 78mm for 68mm shell. 120/124.5mm spindle options, 285g. | Chromoly crank bolts, cups and lockrings; hollow nickel-chromium spindle, English1.37x24. Cups move out to78mm for68mm shell. 120/124.5mm spindles, plus123mm listed in1994; 285g. |
+| 8411 Ritchey Logic Tandem Crankset | 10 | 1992–1992 → 1992–1992 | 149 | Cold-forged duralumin tandem set, hand-polished silver anodised. 170/175mm, Q-factor 151mm, 74/110 BCD, 26-38-54 with 38/38 drive chainwheels. 1390g. | Cold-forged duralumin hidden-pin tandem set, hand-polished silver anodised. 170/175mm, Q151mm, 74/110BCD, 26/38/54T with38/38T drive; 60T also available in1994. 1390g. |
+| 10639 Ritchey Pro WCS seat post | 8 | 1994–1996 → 1994–1996 | 474 | 2014-T6 Force Directional alloy road post, hard WCS anodising, 230mm, 195g. 1994/95: quad-butted, titanium fixing bolt, forged clamp/cradle, 26.4-27.2mm. 1995/96: 26.6/26.8/27.0/27.2mm. | 2014-T6 Force Directional quad-butted road post, friction-welded forged single-bolt clamp/cradle, titanium bolt, hard WCS anodising; 230mm, 195g. 1994/95:26.4-27.2mm; 1995/96:26.6/26.8/27.0/27.2mm. |
+| 10697 Ritchey Pro WCS Road | 5 | 1994–1996 → 1994–1996 | 474 | Heat-treated butted chromoly road quill stem, WCS anodised; 90-140mm in 10mm steps, 0 or -10deg, 22.2mm quill and 26.0mm bar clamp; 230g average. | Heat-treated butted CrMo road quill stem, WCS plated finish; 90-140mm in10mm steps, 0/-10deg; 22.2mm quill, 26.0mm bar; 230g at110mm. |
+| 10401 Ritchey Expert | 7 | 1994–1999 → 1994–1999 | 474 | Threaded steel Logic Expert headset, 1/8in upper and 3/16in lower balls, 33mm stack. 1994/95: black satin, steel locknut; 1/1-1/8/1-1/4in, 130/140/150g. 1995/96: silver, 130/140/140g as printed. Later Expert: 1in, 130g. | Logic Expert threaded steel headset, steel locknut/seals; 1/8in upper,3/16in lower,33mm stack. 1in24tpi English/JIS;1-1/8in26tpi34/30;1-1/4in26tpi37/33. 1994:black/satin,130/140/150g;1995/96:silver,130/140/140g;later1in130g. |
+
+### Applied validation and cleanup
+
+- Initial load affected exactly one source insert,28 component updates and two
+  component inserts. Source485 has country NULL and the original mirror URL,
+  page scope and archive/copyright date qualification in its citation. Ritchey
+  components increased142→144; total components11218→11220. No other table
+  was changed. An identical SQL rerun affected zero rows in all statements.
+- Exact readback verified all30 affected rows against the approved plan,
+  including source485, new UUIDs/IDs, descriptions, dates, search text and
+  maker/category/group. The other114 existing Ritchey rows were unchanged.
+  The old raw-TSV snapshot parser had consumed opening quotes on untouched
+  8393's `"V" cross-section` description; comparison normalised that formatting
+  artifact. No8393 DB write occurred. Maximum written description249 characters;
+  all field lengths and affected relationships valid.
+- All47 live Ritchey-linked/mentioning specs remain unchanged, including8399's
+  links6912/6933/19537. No supported new links: remaining unlinked Ritchey values
+  are forks/extras and maker-only post19545, which do not identify the new parts.
+  No matcher/override, CSV or bike write was needed.
+- Actual generator/live comparison across all110 loaded local catalogues exactly
+  matches the pre-load report:23800 specs compared,23785 unchanged and the same
+  15 pre-existing lost proposals; zero gained, changed, missing or ambiguous.
+  The shared comparison preserves root bike-update.sql.
+- Actual normal/near/parenthetical duplicate classifications over all144 current
+  Ritchey rows equal baseline: seven configuration pairs, one pre-existing review
+  pair10312/10328, zero near/parenthetical pairs. No new candidate or merge.
+  Kept-apart identity decisions are recorded above.
+- Whole-DB quality findings are identical before/after: zero errors,2075 review
+  flags (35 broad-freewheel labels,25 descriptions at limit,1685 incomplete dates,
+  330 linked date conflicts). No new date conflict or dangling reference.
+- Source/page URLs, full inventory, identity decisions, exact old/new values,
+  inserted IDs/load UUIDs and validation retained here. Completed ingest action
+  removed from TODO; only the concrete crosswalk/evidence requests remain.
+  Task-created download, SQL, transcriptions, scripts, snapshots and reports
+  were removed after validation. No audit SQL is committed.
+
 ## Logic crank split — 2026-11-14 (user approved, applied)
 
 - The Guida '96 pass (source 357, 2026-11-04) had matched "RITCHEY Logic Road"
