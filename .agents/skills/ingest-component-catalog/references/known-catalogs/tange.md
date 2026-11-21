@@ -1,5 +1,39 @@
 # Tange catalogs processed so far
 
+## Coded headset fitments — applied and validated 2026-11-21
+
+The original bicycle catalogues identify six headset models added to the
+Tange inventory. Each date is a catalogue attestation. The
+descriptions use the named finish or sealing where printed. Thread
+standard, stack height, bearing construction and weights require a
+component drawing or measured original.
+
+| Model / component ID | Catalogue evidence | Years and source | Linked spec IDs |
+|---|---|---|---|
+| TH-305 / 12230 | [1984 Peugeot GB PDF p.10](https://www.bikecatalogs.com/download/5370), MB2 Canyon Express explicitly prints the Tange name. [1987 Bianchi p.14](https://ebykr.com/library/bianchi-1987-catalog-road-sport-bicycles/) lists it on Premio, Strada LX and Strada. [1989 Bianchi US PDF pp.24–25](https://www.bikecatalogs.com/download/2796) specifies TH-305 on Premio and TH-305 sealed on the six named builds. | 1984–1989, source 258 | 12460, 1342, 1362, 1382, 18505, 18568, 18589, 18610, 18672, 18693, 18714 |
+| TH-305C / 12231 | [1990 Bianchi US PDF p.21](https://www.bikecatalogs.com/download/2797), Nyala and Forza. The Tange attribution follows the shared TH-305 root code. Preserve the C suffix as a distinct catalogue configuration. | 1990–1990, source 168 | 7013, 7219 |
+| MES Sealed / 12232 | [1986 Miyata PDF pp.22–23](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2086.pdf), 710, 310, 610 and Terra Runner. | 1986–1986, source 349 | 18823, 18846, 18910, 18977 |
+| AW27 / 12233 | [1984 Motobécane PDF p.10](https://www.bikecatalogs.com/download/3791), chrome on Mt. Becane and City-Becane. 1986 German Motobécane p.9 specifies TANGE AW 27 on T50 Tracker ([public Velopedia index](https://velopedia.online/veloTable), preview record 1352). | 1984–1986, source 465 | 22763, 23176, 25363 |
+| MX 600M / 12234 | [1984 Peugeot GB PDF p.10](https://www.bikecatalogs.com/download/5370), MB1 Urban Express column. | 1984–1984, source 258 | 12441 |
+| 230 SLP / 12235 | [1987 Peugeot US printed p.18](https://www.bikeboompeugeot.com/Brochures%20USA/Peugeot%201987%20USA%20Brochure/Peugeot%201987%20USA%20Brochure%20Page%2018.jpg), black sealed on Alpine Express. | 1987–1987, source 312 | 15914 |
+
+The 1989 and 1990 Bianchi pages print the distinct TH-108 code without
+the headset maker. Specs 7033, 18526 and 18631 still need a Tange-labelled
+code or original fitment. The [1991 Specialized specification chart](https://www.retrobike.co.uk/gallery2/d/145087-2/Specialized-1991.pdf)
+names the silver sealed MES-1. An independent crosswalk would be needed to
+use that suffix or date for the 1986 MES. Keep the Unique FE/X and
+Falcon/New Falcon construction questions tied to their earlier evidence.
+
+Live readback confirmed the six components and all 22 links previously
+NULL. Fifteen link by model name. The generator uses bike/year-scoped
+overrides for the six 1989 Bianchi sealed specs and the 1986 Tracker.
+Regeneration against 118 loaded catalogues and 24,829 specs retained
+all 22 links, with the same 15 pre-existing lost proposals and no other
+link differences. Replaying the guarded SQL changed zero rows. The
+affected headset duplicate checks found no new candidates. To reverse,
+remove the added overrides and clear the exact links above before checking
+references to the new rows.
+
 - JBM "Japan's Top Bicycle Parts Makers" (July 1974, data_source 271): 4 bottom brackets added (Unit Hanger, R-401, TS-401, JL-401); MA-60 and Falcon headsets dated 1974. Full entry in cross-catalog-notes.md.
 
 ## Cleanup 2026-11-01 (no catalogue): Tange-Seiki brand merged into Tange

@@ -1,5 +1,37 @@
 # EDCO catalogue reconciliation
 
+## Coded Competition headset configurations — applied and validated 2026-11-21
+
+Re-read the manufacturer photographs linked in the specimen review below.
+The boxed 66370 carries its own order code and M25 × 1 French thread.
+The 66390 box instead prints 25.4 × 24. The original 66387 package
+identifies the black finish. The added 66370 row records the separately coded French
+configuration with the dealer's specimen-specific 36.4 mm and 118 g
+figures. The annotated IT1.241.695 sheet supports the conventional
+locknut construction. Order code, packaging and physical differences
+support keeping the uncoded 2990 specimen separate pending an exact
+construction or code match.
+
+| Component | Applied work |
+|---|---|
+| 12236 / 66370 | Added the undated silver French-thread configuration and registered the original packaging and instruction sheet as source 512. |
+| 2987 / 66387 | Added the black finish, hex locknut and caged bearings from specimen photographs. Previous description was “Edco 66387 Competition, Switzerland”. |
+| 2988 / 66390 | Added the pictured silver finish, the box's 25.4 × 24 TPI and the conventional construction. Previous description was “Edco 66390 Competition, Switzerland, 123 grams”. |
+| 2991 | Added the specimen's 48.8 mm stack, 5/32 in balls and 26.4 mm crown-race seat. Previous description was “Edco Competition (early model), Switzerland, 109 grams”. |
+
+The [Cicli Berlinetta example](https://cicli-berlinetta.com/product/edco-competition-1-headset-25-4-x-24tpi/)
+reports a 48 mm stack for another Competition specimen. Its dimensions
+corroborate the existence of the taller pattern. The original 2991
+gallery remains the source for its exact 48.8 mm. The crossed-out stack
+value and handwritten 36.4 on the boxed 66370 leaflet leave the
+1994 37 mm/108 g assignment open. The BB53/54 axle question is separate.
+
+Live readback confirmed the four rows, source and descriptions. All four
+have zero linked bike specs. Source 1 remains attached to the three existing
+specimens. The SQL replay changed zero rows and the headset duplicate
+checks found no candidates involving 12236. The whole-database audit found
+zero structural errors. Its only new review flag was for 12236's missing
+dates. A dated maker or importer offering would establish an attested year.
 
 <a id="headset-specimen-review-20261120"></a>
 
@@ -10,8 +42,9 @@ Scope: identify the source409/486 conventional1in Competition headset
 otherwise alloy,seals and lubrication holes). No component/source/link/matcher
 writes, SQL proposal or date assignment in this focused evidence review.
 
-Live read-only inventory confirms seven EDCO headset rows2985–2991, all with
-zero bike links. BMX2985 and Sport2986 are outside this Competition comparison.
+The 2026-11-20 inventory contained seven EDCO headset rows 2985–2991, all
+with zero bike links. The 2026-11-21 review above added row 12236.
+BMX2985 and Sport2986 are outside this Competition comparison.
 The maintained scoped duplicate report has only2990/2991 as a generation pair;
 near report has zero candidates. That is not proof that the coded and generic
 rows cannot overlap: the manually reviewed candidates remain below.
@@ -54,22 +87,20 @@ code appears unambiguously tying that generic instruction sheet to every
 Competition version. Need a straight-on unannotated IT1.241.695 sheet, both sides,
 and/or a maker order-code table with thread/finish/stack/bearing dimensions.
 
-No66370 row exists in the seven-row live EDCO headset inventory. This is a
-positive manufacturer-box code for a French-thread silver configuration, not
-proof of a new generation or an automatic insert: reconcile its relationship to
-uncoded2990 and the other coded configurations before preparing data changes.
-The box establishes25x1; do not assign it66390's printed25.4x24 identity.
+The original inventory lacked a 66370 row. The 2026-11-21 reconciliation
+added the separately coded M25 × 1 silver configuration as 12236. Uncoded
+2990 still requires a construction or code match.
 
 ### Result and limits
 
-The new packaging observations support future descriptive enrichment of2987
-(black) and2988 (pictured silver25.4x24) without changing years. The broad family
+The packaging observations informed the description updates to 2987 and
+2988 recorded above. The broad family
 threading attributes on VeloBase are not a code-by-code interchangeability key.
 The1994 cup family remains compatible in general appearance with the conventional
 specimens, but no unique code-to37mm/108g bridge was established. Keep1994
 specifications unassigned and keep all rows/weights separate pending that bridge.
 No duplicate or catalogue match is asserted on name, colour, nominal ball size
-or similar weight alone. All existing headsets and links remain unchanged.
+or similar weight alone. The 2026-11-20 review made no database changes.
 
 Targeted searches covered code66387/66390,EDCO37mm/108g and the named manual.
 No maker order-code chart emerged. BikePro's possible period headset page could

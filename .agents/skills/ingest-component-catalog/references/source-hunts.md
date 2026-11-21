@@ -51,14 +51,17 @@ separate pending their own evidence. Nervar1020/3070/5570 need separate keys;
 The earlier failed broad Solida/Peugeot spares hunts remain valid; the technical
 table is an additional usable lead, not a recovered1980s maker catalogue.
 
-**High-value source still wanted: Tange headset code/construction key.** Prioritise
-TH-305/305C (1984–90 Bianchi/Peugeot), TH-108 (1989–90 Bianchi) and MES Sealed
-(1986 Miyata) in a newly available 1984–90 headset maker/importer sheet. AW27
-(1984/86 Motobécane), MX600M and 230SLP are additional exact targets. Unique
-FE/X must be compared with existing 11346, not counted as wholly absent models.
-No new readable headset range source recovered in this pass. The previously
-checked 1986/88 Tange tubing/frame catalogues do not answer this question;
-reopen the broad hunt only for a new headset-page lead.
+**High-value source still wanted — Tange headset code/construction key.**
+Prioritise the identity of TH-108 (1989–90 Bianchi), maker attribution for
+TH-305C (1990 Bianchi), and the MES/MES-1, Unique FE/X and Falcon/New Falcon
+crosswalks. A target-year component sheet could also supply construction and
+dimensions for TH-305, AW27, MX 600M and 230 SLP. The 1986/88 Tange frame
+catalogues cover tubing and frame parts. Reopen the broad hunt for a new
+headset-page lead.
+
+The [applied Tange fitment review](known-catalogs/tange.md#coded-headset-fitments--applied-and-validated-2026-11-21)
+records the Peugeot, Bianchi, Miyata and Motobécane equipment tables used
+for six new headset rows and 22 links.
 
 **Date/identity evidence, distinct from new links.** Maillard 600 SH 8130/8131
 have linked 1988-and-later fitments beyond their stored 1987 end; seek a coded
@@ -987,6 +990,10 @@ online; neither is a full, dated component source ready for ingestion.
   ten-catalogue lot did not expose verifiable target editions or a recoverable
   item page, so it is not an acquisition-ready source. Do not repeat these
   broad searches without a new scan, restored archive entry or confirmed holder.
+- A later public archive check found [Bike Catalogs document 6074](https://www.bikecatalogs.com/document/6074),
+  identified by the archive as a 1976 extract. Velopedia's current
+  Brügelmann free-text result was an ILO catalogue from 1953. Neither
+  resolves the 1990 holding or the dated 1992 component pages.
 - **Housekeeping:** the existing TODO was narrowed to the remaining recovery
   actions and linked here. No contacts, purchases or membership registrations
   were made. Task-only HTML, public client/search responses and the reviewed

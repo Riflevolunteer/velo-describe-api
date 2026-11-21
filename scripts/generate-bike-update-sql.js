@@ -2493,6 +2493,16 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ bike: 'Tangent', from: 1989, to: 1989, id: null }],
   },
   Headsets: {
+    // Printed as TH-305 sealed in the 1989 Bianchi US specifications, pp. 24–25.
+    'th 305 sealed': [
+      { bike: 'Grizzly', from: 1989, to: 1989, id: 12230 },
+      { bike: 'Incline', from: 1989, to: 1989, id: 12230 },
+      { bike: 'Forte', from: 1989, to: 1989, id: 12230 },
+      { bike: 'Tangent', from: 1989, to: 1989, id: 12230 },
+      { bike: 'Axis', from: 1989, to: 1989, id: 12230 },
+      { bike: 'Volpe', from: 1989, to: 1989, id: 12230 },
+    ],
+    'tange aw 27': [{ bike: 'T50 Tracker', from: 1986, to: 1986, id: 12233 }], // German Motobécane, p. 9.
     // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
     'suntour xc pro grease guard': [{ bike: 'Grizzly', from: 1991, to: 1991, id: 3138 }],
     'ofmega competition': [{ bike: 'Pista', from: 1991, to: 1991, id: 3060 }],
