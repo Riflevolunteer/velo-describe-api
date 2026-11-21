@@ -120,6 +120,14 @@ the two duplicate-review registry entries only if revisiting that identity
 decision. Applied SQL, snapshots and other task scratch files were removed
 after validation; the lasting evidence and restoration values are here.
 
+The [Ofmega patent family FR2515604](https://patents.google.com/patent/FR2515604B1/en)
+records the October 1981 Italian priority and the spring-preload design.
+The filing dates the design, with sale attested separately by the adverts
+above. The four inspected rows still carry their original date values.
+Revisit those date fields if dated period evidence explicitly shows the
+relevant cable stop and link length, or identifies the embossed or printed
+lever moulding. Retain the separate specimen-based identities.
+
 ## Mistral advert and period tests recovered — 2026-11-18, read-only
 
 Recovered and visually read the original-resolution scans (1560 px wide) from

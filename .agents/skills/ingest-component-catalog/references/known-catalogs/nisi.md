@@ -89,6 +89,13 @@ here when source_ref changes to the latest source used for enrichment.
   restoration values remain above. Only 5145's missing physical/model
   evidence remains waiting; the original-photo review is complete.
 
+The live description still flags both the model and 580 g as unconfirmed
+(checked 2026-11-21). A [2024 owner report](https://www.mail-archive.com/search?f=1&l=rbw-owners-bunch%40googlegroups.com&o=newest&q=date%3A20240302)
+describes another 27 in / 36H built wheelset using the VeloBase name.
+The report supplies generic make/origin decals and no bare-rim weight.
+Keep the qualified identification. Revisit if a bare-rim measurement
+and model-coded specimen or packaging become available.
+
 Earlier Nisi rows came from velobase and the La Bicicletta guides (`data_source` 259 / 262 / 357; see
 cross-catalog-notes.md). The maker archive at https://gipiemme.com/en/catalog/ (Nisi became part of Gipiemme) also
 holds `NISI-Catalogo-1975 / 1980.pdf`; see the end of this file.

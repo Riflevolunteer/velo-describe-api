@@ -476,8 +476,12 @@ counts and extra-page positions checked. No CSV, generator, DB or existing
 bike/component mappings changed, so mapping regeneration was unnecessary.
 Temporary HTML, redundant PDFs/JPEGs, extracted images, OCR text, comparison
 scripts/contact sheet and compiler cache were removed. The two maintained
-originals above remain. The open TODO now asks only for dated evidence rather
-than repeating the completed scan comparisons.
+originals above remain. On 2026-11-21, live source 497 was verified as
+`Pinarello catalogue (c.1990)` with the date caveat in its citation.
+Live source 491 uses the generator's `1979 Pinarello catalogue` label;
+the early attribution remains approximate as described above. The edition
+date review is complete on the available scans. Revisit either attribution
+only for a dated original imprint or contemporary publisher/importer reference.
 
 ## 1970–1990 source review — 2026-11-20
 

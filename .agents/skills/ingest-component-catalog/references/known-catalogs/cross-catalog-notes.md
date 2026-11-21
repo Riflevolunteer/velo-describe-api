@@ -4360,7 +4360,61 @@ wording or close Alu-Ergal/Pro weights do not prove identical models. No DB,
 matcher, source-registry or bike-link changes were prepared or applied.
 Reopen for a newly available 1990s maker/importer sheet explicitly connecting
 the names, or a coded specimen with matching construction, dimensions and
-ring compatibility. No downloaded scans or pending SQL were created.
+ring compatibility. No downloaded scans or pending SQL were created at that
+stage. The subsequently recovered 1998 maker catalogue is assessed below.
+
+### FRM 1998 maker catalogue — prepared for review
+
+Read all five scanned spreads of the [Italian FRM catalogue](https://velovelopool.wordpress.com/wp-content/uploads/2023/12/frm-1998.pdf).
+The page marks show '98. PDF spreads 1–2 introduce the Hard Tail and Be Active
+MTB builds. Spread 3 (printed pp. 8–9) gives their and the Race Flash/Aero
+Flash equipment tables. Spread 4 (printed pp. 12–13) gives the CU2 crank
+specifications, and spread 5 covers hubs. This review concerns the crank
+and hub identities in the worklist.
+
+- **CU2 Strada** (spread 4) is a three-piece assembly with a removable
+  spider for Shimano or Campagnolo rings, 170/172.5/175/177.5 mm arms,
+  symmetric 107 mm axle, 43.5 mm chainline, 145 mm Q-factor and 400 g
+  without rings. The separate **CU2 MTB** lists Compact and Standard rings,
+  symmetric 120 mm axle, 47.5 mm chainline, 160 mm Q-factor and 390 g
+  without rings. Keep the 400 g without-rings row 10279 and the 1999 540 g
+  with-rings listing 10280 as separate catalogue configurations.
+  The three [specimen 1570 images](https://velobase.com/Pages/ViewComponent.aspx?ID=B291A8BF-03C9-4964-8F10-5ADBE8F43CE8)
+  show a CU2-stamped road double with square taper, removable five-arm
+  spider and 170 mm arms. They establish the road family. The drilling
+  option, sale configuration and specimen date remain unverified.
+- **Feather** (spread 5) is a 70 g 24/28/32H road front hub paired with
+  the 200 g SL rear hub. **Carbon-Ergal** is a separate 90 g front and
+  260 g rear for road or MTB, with 32/36H and a Shimano 8/9-speed rear
+  cassette body. There is also a 267 g Carbon-Ti rear. The Shimano
+  Carbon-Ergal and the 1996 260 g Campagnolo/Marchisio rear 10766 have
+  separately identified cassette bodies.
+- **Alu-Ergal** (spreads 3 and 5) has adjustable sealed bearings, 32/36H
+  and 95/266 g front/rear weights. These figures also appear on the 1999
+  Pro listing, while the maker uses the Alu-Ergal name here. Preserve both
+  catalogue identities. The 1999 Team name also needs a manufacturer
+  crosswalk for assignment to a 1998 configuration.
+- The 1996 Guida [p. 135](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_32_main_image.jpg)
+  and [p. 138](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_35_main_image.jpg)
+  list Carbon-Ergal front 88 g, 16/18/24/28/32/36H, and rear 256 g,
+  16/24/32/36H. The proposed descriptions preserve these dated figures
+  with the 1998 specifications. Alu-Ergal is 96/266 g in 1996.
+
+| Row | Previous range/source | Proposed range and change |
+|---|---|---|
+| 1570 CU2 specimen | Undated, 1 | Undated, describe the visible road configuration |
+| 10279 CU2 without rings | 1996–1999, 357 | 1996–1999, add road spider and drivetrain dimensions |
+| 10305 Feather front | 1999–1999, 353 | 1998–1999, add maker construction and SL pairing |
+| 10762 Alu-Ergal front | 1996–1996, 357 | 1996–1998, add 1998 weight and bearing adjustment |
+| 10763 Carbon-Ergal front | 1996–1996, 357 | 1996–1998, give dated weights and drillings |
+| 10764 Alu-Ergal rear | 1996–1996, 357 | 1996–1998, add 8/9-speed cassette compatibility |
+| 10765 Carbon-Ergal rear | 1996–1996, 357 | 1996–1998, give dated weights and drillings |
+
+Prepared seven guarded updates and one catalogue source registration.
+All targets have zero bike links. The FRM near-pair scan found no candidates.
+The SQL, original scan and validation baselines in `/private/tmp/velo-quality-worklist.6rxETT/`
+support approval and live verification. The SQL records the previous
+descriptions, date bounds and sources for restoration.
 
 ### Guida '96 follow-up: Mavic rim identities — 2026-11-18
 

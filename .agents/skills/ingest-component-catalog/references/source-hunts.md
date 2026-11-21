@@ -290,7 +290,9 @@ NOS specimens and the unrelated derailleur maker. In particular the SJS
 in its winner list do not date the document. The TobecOnline “Les Catalogues”
 1991–93 search hit is in the Motobécane/MBK catalogue thread with no Vittoria
 mention, so it is not a verified Vittoria source. No new period maker-scan or
-confirmed holder lead emerged; repeat that hunt only for such a lead.
+confirmed holder lead emerged. A newly available period maker scan or
+confirmed shareable copy would reopen the broad clincher review. The
+specific Olympic/Olimpionico crosswalk remains in the tyre worklist.
 
 The acquisition images were consumed by the completed reconciliation and
 removed with its SQL/comparison scratch files after validation. Original scan
@@ -481,8 +483,10 @@ Original PNG URLs, in bound order:
 This supersedes the earlier “no Colorado Cyclist scans found” status for this
 specific recovered item. It does not establish a complete multi-edition archive.
 Fresh QBP/J&B searches found no downloadable period catalogue; patent citations
-and sales listings are not recovered scans. The remaining hunt needs a new scan
-lead, not another broad rerun. No outreach, purchase or login was needed.
+and sales listings are not recovered scans. Treat additional Nashbar, QBP, J&B
+and Colorado Cyclist editions as acquisition opportunities if a new period
+scan surfaces, with the checked editions and leads recorded here.
+No outreach, purchase or login was needed.
 
 ### Peugeot/Helium tariffs — all pages reviewed 2026-11-19
 

@@ -30,8 +30,9 @@ Dating remains qualified: neither complete cover/back/imprint nor interiors
 print a publication year. TdF1990 caption is only a lower bound. The2019 post
 and2024 Tobec heading attribute1991; they are not contemporary dated references.
 No matching dated imprint or period model list found in targeted code/year
-searches. The club's1991MBK.pdf is mopeds, excluded. Use c.1991 for this reviewed
-proposal; reopen firm dating only for a new original imprint or contemporary
+searches. The club's1991MBK.pdf is mopeds, excluded. Live source 498 retains
+the c.1991 attribution and gives the TdF1990 lower bound in its citation.
+The date review is complete; revisit only for a new original imprint or contemporary
 C977/C477/C387/C227 model list. French language/publisher addresses alone are
 not used to assign a country here.
 
@@ -408,9 +409,9 @@ other 1989 programme leaves, an independently dated 1990 edition and a 1970–72
 catalogue. Earlier sections retain exact source/holder leads and search limits.
 
 No new source lead was supplied in this reconciliation. Do not repeat the
-completed archive/holder search solely because those gaps remain. TODO now
-keeps one conditional source-acquisition action: reopen only for a newly
-accessible scan or confirmed shareable copy. The attributed-1991 Course
+completed archive/holder search solely because those gaps remain. Reopen
+only if a newly accessible scan or confirmed shareable copy surfaces.
+The attributed-1991 Course
 brochure was subsequently recovered more fully and loaded as c.1991 above;
 only firm publication-date evidence remains wanted for that brochure.
 No source files, CSVs, generator mappings or database rows changed.

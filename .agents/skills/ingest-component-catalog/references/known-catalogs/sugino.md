@@ -16,9 +16,10 @@ attribution, not a printed date.
 distinguishes Super Mighty Compe (standard rings) from Custom (lightened rings,
 etc.); existing **9123** represents Custom and **8883** represents Victory.
 The Bianchi wording alone does not distinguish these versions, and the 1981
-catalogue establishes availability, not a 1981 discontinuation. Keep the existing
-link and dates pending a readable original-fitment photo or coded specification
-and independently dated evidence. No database change made. Generic web searches
+catalogue establishes availability, not a 1981 discontinuation. The retained
+decision is to keep the existing link and dates. Revisit spec 924 if a readable
+original-fitment photo or coded specification surfaces, and revise 1963's dates
+only with independent dated Competition evidence. No database change made. Generic web searches
 for dated 1982–83 Competition/Custom evidence did not establish either the
 Bianchi variant or a reliable later date.
 
