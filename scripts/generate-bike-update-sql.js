@@ -105,6 +105,11 @@ function dataSourceSubquery(label) {
 // catalogue"); files without one keep the original label so loaded rows still match.
 // Separate same-year brochures without inventing another bike brand or market.
 const CATALOGUE_EDITIONS = new Map([
+  ['1991_bianchi_us_spec.csv', {
+    label: '1991 Bianchi (US) catalogue',
+    citation: '1991_bianchi_us_spec.csv; https://www.bikecatalogs.com/download/2798; 1991 cover p. 1, US-market footer p. 19, build specifications pp. 12–19.',
+    country: 'US',
+  }],
   ['1991_mbk_spec.csv', {
     label: 'MBK Course catalogue (c.1991)',
     citation: '1991_mbk_spec.csv; https://www.velovintageagogo.com/t11952-catalogue-mbk-gamme-course-1991; catalo10-21.png, table21; matching Tobec10627 photos6571-74. c.1991 attribution, TdF1990 lower bound; no printed year; market unconfirmed.',
@@ -629,6 +634,14 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'suntour xc pro top pull with narrow cage': [{ bike: 'Equinox', from: 1991, to: 1991, id: 2659 }, { bike: 'Grizzly', from: 1991, to: 1991, id: 2659 }],
+    'suntour xc comp top pull with narrow cage': [{ bike: 'Axis', from: 1991, to: 1991, id: 11021 }],
+    'shimano ultegra sis hyperglide': [{ bike: 'Virata', from: 1991, to: 1991, id: 2478 }],
+    'shimano 105 sc sis hyperglide': [{ bike: 'Alfana', from: 1991, to: 1991, id: 2467 }],
+    'shimano exage 500ex sis hyperglide': [{ bike: 'Forza', from: 1991, to: 1991, id: 7570 }],
+    'shimano exage 300ex sis hyperglide': [{ bike: 'Premio', from: 1991, to: 1991, id: 2520 }],
+    'suntour xc ltd top pull with narrow cage': [{ bike: 'Sika', from: 1991, to: 1991, id: 2658 }],
     // c.1991 MBK Course: explicit table identities; no date expansion.
     "shimano 1055 sis": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 2467 }],
     "shimano 300 ex sis": [{ bike: "C207 Trainer", from: 1991, to: 1991, id: 2520 }, { bike: "C207D Trainer", from: 1991, to: 1991, id: 2520 }],
@@ -900,7 +913,11 @@ const COMPONENT_OVERRIDES = {
     'shimano al 11': [{ from: 1986, to: 1987, id: 2458 }],
     'shimano fd al 11': [{ from: 1986, to: 1986, id: 2458 }],
     'suntour xct': [{ from: 1990, to: 1990, id: 11072 }, { from: 1991, to: 1992, id: 7962 }], // 1990 Bianchi Nyala: FD-XT00-GXH (SunTour 1990 p.17, the only XCT front); FD-XT02 (1992)
-    'suntour x 1 top pull': [{ from: 1990, to: 1990, id: 2655 }], // X-1 Chroma (1990)
+    'suntour x 1 top pull': [
+      { bike: 'Volpe', from: 1991, to: 1991, id: 7960 },
+      { bike: 'Ibex', from: 1991, to: 1991, id: 7960 },
+      { from: 1990, to: 1990, id: 2655 }, // X-1 Chroma
+    ],
     'suntour radius': [{ from: 1990, to: 1992, id: 2640 }], // FD-RA00-SSH clamp-on (Eros frame has no braze-on)
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
     'campagnolo chorus': [{ from: 1994, to: 1994, id: null }, { to: 1991, id: 2286 }, { from: 1992, to: 1994, id: 7040 }], // FD-01FCH, Chorus (1987-91) / FD-01SCH Chorus RS (1992 Bianchi JP)
@@ -1039,6 +1056,11 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 2661 }], // FD-XD00-GX (matcher took the "(1990)" row)
   },
   'Rear Derailleurs': {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'shimano ultegra sis hyperglide': [{ bike: 'Virata', from: 1991, to: 1991, id: 4466 }],
+    'shimano 105 sc sis hyperglide': [{ bike: 'Alfana', from: 1991, to: 1991, id: 4455 }],
+    'shimano exage 500ex sis hyperglide': [{ bike: 'Forza', from: 1991, to: 1991, id: 4513 }],
+    'shimano exage 300ex sis hyperglide': [{ bike: 'Premio', from: 1991, to: 1991, id: 4510 }],
     // c.1991 MBK Course: explicit table identities; no date expansion.
     "shimano 1055 sis": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 4455 }],
     "shimano 300 ex sis": [{ bike: "C207 Trainer", from: 1991, to: 1991, id: 4510 }, { bike: "C207D Trainer", from: 1991, to: 1991, id: 4510 }],
@@ -1553,6 +1575,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'shimano 105 sc 32h': [{ bike: 'Alfana', from: 1991, to: 1991, id: 3527 }],
+    'sansin ae 60 36h': [{ bike: 'Volpe', from: 1991, to: 1991, id: 9016 }],
     // Raleigh US 1985/86 original tables: explicit SR model codes only.
     // Source/identity ledger: known-catalogs/sakae-ringyo.md, Raleigh coded hubs.
     'sr crh 310 alloy (front); sr crh 310 alloy qr 36° (rear)': [{ bike: 'Supercourse', from: 1986, to: 1986, id: 12202 }],
@@ -1785,10 +1810,13 @@ const COMPONENT_OVERRIDES = {
     'shimano cs hg50 36h': [{ from: 1990, to: 1993, id: 3572 }], // FH-HG50, Exage (catalogue prints the cassette code)
     'suntour xc pro 36h grease guard': [{ from: 1990, to: 1990, id: 3628 }], // XC Pro rear freewheel hub (these bikes have freewheels)
     'suntour xc pro 32h grease guard': [{ from: 1990, to: 1990, id: 3628 }], // XC Pro rear freewheel hub
-    'suntour xc comp 36h': [{ from: 1990, to: 1992, id: 7982 }], // FH-XC02-7 freehub (Tangent has a cassette; row dated 1992)
+    'suntour xc comp 36h': [
+      { bike: 'Axis', from: 1991, to: 1991, id: null }, // SunTour 1991 p. 9 lists FH-XC00-7.
+      { from: 1990, to: 1992, id: 7982 }, // FH-XC02-7 freehub (Tangent has a cassette; row dated 1992)
+    ],
     'campagnolo chorus 36h': [{ from: 1987, to: 1991, id: 3249 }], // 722/101 Chorus freewheel hub (Regina freewheel)
     'campagnolo athena 36h': [{ from: 1988, to: 1991, id: 3236 }], // D300, Athena
-    'ofmega pista 36h': [{ from: 1980, to: 1990, id: 3445 }], // Super Competizione Track (high flange), as 1987 Pista
+    'ofmega pista 36h': [{ from: 1980, to: 1991, id: 3445 }], // Super Competizione Track (high flange), as 1987 Pista
     'ofmega super corsa 36 holes': [{ from: 1981, to: 1985, id: 11003 }], // 1981 Bianchi Sprint/81: Ofmega Super Corsa hubs (Guida '85/86; row dated 1981 from this spec)
     // 1982 Bianchi US racing brochure (saarf.london).
     'campagnolo record pista': 3270, // Campagnolo 1036, Record Pista (high flange), as the 1983 Super Pista
@@ -1923,6 +1951,15 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'dia compe 986 titanium finish balance response system': [{ bike: 'Equinox', from: 1991, to: 1991, id: 663 }, { bike: 'Grizzly', from: 1991, to: 1991, id: 663 }],
+    'suntour x 1 balance response system': [{ bike: 'Volpe', from: 1991, to: 1991, id: 8032 }],
+    'shimano ultegra super shimano linear response': [{ bike: 'Virata', from: 1991, to: 1991, id: 966 }],
+    'shimano rx100 super shimano linear response': [{ bike: 'Eros', from: 1991, to: 1991, id: 1007 }],
+    'shimano exage 400ex shimano linear response': [{ bike: 'Forza', from: 1991, to: 1991, id: 1000 }],
+    'shimano exage 300ex shimano linear response': [{ bike: 'Premio', from: 1991, to: 1991, id: 1001 }],
+    'shimano deore dx low profile shimano linear response': [{ bike: 'Peregrine', from: 1991, to: 1991, id: 7660 }],
+    'shimano deore lx low profile': [{ bike: 'Osprey', from: 1991, to: 1991, id: 7582 }],
     // c.1991 MBK Course: explicit table identities; no date expansion.
     "300 ex alloy side pull": [{ bike: "C207 Trainer", from: 1991, to: 1991, id: 1001 }, { bike: "C207D Trainer", from: 1991, to: 1991, id: 1001 }],
     "rx 100 alloy side pull": [{ bike: "C227 Mirage", from: 1991, to: 1991, id: 1007 }],
@@ -2210,9 +2247,13 @@ const COMPONENT_OVERRIDES = {
     'shimano deore lx linear response': [{ from: 1990, to: 1991, id: 7582 }], // BR-M550 cantilever
     'shimano m200gs linear response': [{ from: 1990, to: 1992, id: 7598 }], // BR-M200 cantilever
     'suntour xc pro balance response system': [{ from: 1990, to: 1992, id: 1056 }], // CT-XP00 cantilever
-    'suntour xct balance response system': [{ from: 1990, to: 1990, id: 11074 }, { from: 1991, to: 1992, id: 8038 }], // 1990 Nyala: CT-XT00 (SunTour 1990 p.17); CT-XT01 (Dia-Compe; 1992)
+    'suntour xct balance response system': [
+      { bike: 'Nyala', from: 1991, to: 1991, id: null }, // US catalogue gives XCT without a brake code.
+      { from: 1990, to: 1990, id: 11074 },
+      { from: 1991, to: 1992, id: 8038 },
+    ],
     'dia compe x 1 balance response system': [{ from: 1990, to: 1992, id: 8032 }], // SunTour CT-X101, X-1 (Dia-Compe; row dated 1992)
-    'dia compe 986 balance response system': [{ from: 1980, to: 1990, id: 663 }], // Dia-Compe 986 cantilever
+    'dia compe 986 balance response system': [{ from: 1980, to: 1991, id: 663 }], // Dia-Compe 986 cantilever
     'dia compe radius balance response system': [{ from: 1980, to: 1992, id: 1040 }], // SunTour BA-RA01-S, Radius (Dia-Compe)
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
     'shimano 600 ultegra': 966, // Shimano BR-6400, 600 Ultegra
@@ -2452,6 +2493,9 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9010': [{ bike: 'Tangent', from: 1989, to: 1989, id: null }],
   },
   Headsets: {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'suntour xc pro grease guard': [{ bike: 'Grizzly', from: 1991, to: 1991, id: 3138 }],
+    'ofmega competition': [{ bike: 'Pista', from: 1991, to: 1991, id: 3060 }],
     // c.1991 MBK Course: explicit table identities; no date expansion.
     "shimano 1055": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 3086 }],
     "shimano 105 new": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: 3083 }], // German 1986 p.13 New 105; Shimano Aug 1986 scan 16: HP-1050.
@@ -2603,6 +2647,17 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'suntour xc pro grease guard 46 36 24t powering ninja': [{ bike: 'Equinox', from: 1991, to: 1991, id: 1998 }, { bike: 'Grizzly', from: 1991, to: 1991, id: 1998 }],
+    'suntour xc comp 46 36 24t powering ninja': [{ bike: 'Axis', from: 1991, to: 1991, id: 7999 }],
+    'shimano ultegra 53 42t superglide': [{ bike: 'Virata', from: 1991, to: 1991, id: 1790 }],
+    'shimano 105 sc 52 42t superglide': [{ bike: 'Alfana', from: 1991, to: 1991, id: 1782 }],
+    'shimano deore lx 48 38 28t superglide': [{ bike: 'Eros', from: 1991, to: 1991, id: 1807 }],
+    'shimano deore lx 46 36 24t superglide': [{ bike: 'Osprey', from: 1991, to: 1991, id: 1807 }],
+    'shimano exage 400ex 52 42t': [{ bike: 'Forza', from: 1991, to: 1991, id: 7576 }],
+    'shimano exage 300ex 52 42t': [{ bike: 'Premio', from: 1991, to: 1991, id: 1830 }],
+    'shimano deore dx 46 36 24t superglide': [{ bike: 'Peregrine', from: 1991, to: 1991, id: 1809 }],
+    'suntour xc ltd 46 36 24t powering ninja': [{ bike: 'Sika', from: 1991, to: 1991, id: 1997 }],
     // Approved and applied, 2026-11-21: Peugeot 1988 p.20 names a 99 on TM 9 G.
     // Stronglight no.27 (Aug 1982), p.7, supplies the separate Serie Tandem 99
     // configuration (pedal threading / relay rings), not the ordinary 99 1906.
@@ -2965,7 +3020,7 @@ const COMPONENT_OVERRIDES = {
     'sr xct 48 38 28t': [{ from: 1990, to: 1990, id: 11076 }, { from: 1991, to: 1992, id: 8004 }], // 1990 Nyala: CW-XT00 48-38-28T (SunTour 1990 p.17); CW-XT01 (Sakae Ringyo; 1992)
     'sr x 1 48 38 26t': [{ from: 1990, to: 1992, id: 8000 }], // SunTour CW-X101 (row dated 1992)
     'sr radius 52 42t': [{ from: 1990, to: 1992, id: 8007 }], // SunTour CW-RA01, Radius (row 1990-92)
-    'ofmega pista super competizione 48t': [{ from: 1980, to: 1990, id: 1702 }], // Super Competizione (pista)
+    'ofmega pista super competizione 48t': [{ from: 1980, to: 1991, id: 1702 }], // Super Competizione (pista)
     'ofmega quattro 52 42t': [{ from: 1980, to: 1990, id: 1705 }], // Ofmega Vantage (Bianchi Quattro version)
     // 1988 Bianchi US catalogue (saarf.london, dated 1986 there; Chorus / 600 Ultegra / Victory S3 date it 1988).
     'shimano 600 ultegra': 1790, // Shimano FC-6400, 600 Ultegra
@@ -3216,7 +3271,7 @@ const COMPONENT_OVERRIDES = {
     'selle royal leather racing': null,
     'selle royal racing': null,
     // 1990 Bianchi US catalogue (retrobike archive 1676).
-    'avocet leather racing 1': [{ from: 1980, to: 1990, id: 5258 }], // Avocet Racing I
+    'avocet leather racing 1': [{ from: 1980, to: 1991, id: 5258 }], // Avocet Racing I
     // 1993 Bianchi MTBs: "Ritchey Comp leather" is the Logic Comp, new for
     // 1992 (Italian-made leather, spring-steel rails); the Virata adds "Cro-mo
     // rails". The Logic Pro WCS (titanium rails) is the only other Comp-era row.
@@ -3519,6 +3574,8 @@ const COMPONENT_OVERRIDES = {
     'course steel bend': 2901, // 1980 Peugeot PH 10: Franco Belge 354, as the 1979 'steel course'
   },
   Stems: {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'nitto dynamic ii 90 degree': [{ bike: 'Virata', from: 1991, to: 1991, id: 6614 }],
     // c.1991 MBK Course: explicit table identities; no date expansion.
     "3ttt criterium": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: null }, { bike: "C477 Super Record", from: 1991, to: 1991, id: null }, { bike: "C977 Record Max", from: 1991, to: 1991, id: null }],
     'cinelli i r pantograph': [{ from: 1985, to: 1985, id: 6491 }],
@@ -3698,6 +3755,12 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'shimano ultegra sis hyperglide': [{ bike: 'Virata', from: 1991, to: 1991, id: 6144 }],
+    'shimano 105 sc sis hyperglide': [{ bike: 'Alfana', from: 1991, to: 1991, id: 6133 }],
+    'shimano exage 500ex sis hyperglide': [{ bike: 'Forza', from: 1991, to: 1991, id: 6176 }],
+    'accushift plus multimount thumb shifters': [{ bike: 'Grizzly', from: 1991, to: 1991, id: 6311 }, { bike: 'Sika', from: 1991, to: 1991, id: 6310 }],
+    'shimano deore dx hyperglide thumb shifters': [{ bike: 'Peregrine', from: 1991, to: 1991, id: 6156 }],
     'campagnolo syncro': [{ bike: 'Tre Cime', from: 1987, to: 1987, id: null }], // c.1987 Pinarello: first Syncro / C-Record / Syncro II not distinguished
     "campagnolo shift levers": [{"bike":"Grand Record","from":1985,"to":1985,"id":null}], // 1985 Motobecane general catalogue p.6; brand notes.
     "brazed downtube shifters": [{"bike":"Grand Record","from":1981,"to":1981,"id":6150}], // 1981 Motobecane US, pp.14-15; brand notes.
@@ -3968,6 +4031,14 @@ const COMPONENT_OVERRIDES = {
     'shimano 105 sti': 6357, // Shimano ST-1055, 105SC (Dual Control)
   },
   'Brake Levers': {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'brs300 aero levers': [{ bike: 'Volpe', from: 1991, to: 1991, id: 275 }],
+    'shimano ultegra aero levers': [{ bike: 'Virata', from: 1991, to: 1991, id: 416 }],
+    'shimano 105 sc aero levers': [{ bike: 'Alfana', from: 1991, to: 1991, id: 411 }],
+    'shimano rx100 aero levers': [{ bike: 'Eros', from: 1991, to: 1991, id: 446 }],
+    'shimano exage 400ex aero levers': [{ bike: 'Forza', from: 1991, to: 1991, id: 441 }],
+    'shimano exage 300ex aero levers': [{ bike: 'Premio', from: 1991, to: 1991, id: 442 }],
+    'xc pro 2 finger lever balance response system': [{ bike: 'Grizzly', from: 1991, to: 1991, id: 469 }],
     'shimano 105 sis': [{ bike: 'Prologo', from: 1987, to: 1987, id: 406 }, { bike: 'Dolomite', from: 1987, to: 1987, id: 406 }, { bike: 'Piccolo', from: 1987, to: 1987, id: 406 }], // c.1987 Pinarello: 1050-series group; existing period row
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 231 }],
@@ -4123,6 +4194,8 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'suntour xc pro grease guard': [{ bike: 'Grizzly', from: 1991, to: 1991, id: 4019 }],
     // c.1991 MBK Course: explicit table identities; no date expansion.
     "1055 with toe clips": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 3955 }],
     "rx 100 with toe clips": [{ bike: "C227 Mirage", from: 1991, to: 1991, id: 3977 }],
@@ -4719,6 +4792,12 @@ const COMPONENT_OVERRIDES = {
   // Brand-level rows the single-word-title rule now refuses by substring,
   // but where the DB's brand entry genuinely is the product being described.
   Chains: {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'shimano uniglide 50': [{ bike: 'Alfana', from: 1991, to: 1991, id: 7614 }, { bike: 'Eros', from: 1991, to: 1991, id: 7614 }, { bike: 'Forza', from: 1991, to: 1991, id: 7614 }, { bike: 'Premio', from: 1991, to: 1991, id: 7614 }],
+    'suntour accushift plus 10': [{ bike: 'Axis', from: 1991, to: 1991, id: 1419 }],
+    'suntour accushift plus 20': [{ bike: 'Volpe', from: 1991, to: 1991, id: 1421 }, { bike: 'Sika', from: 1991, to: 1991, id: 1421 }, { bike: 'Ibex', from: 1991, to: 1991, id: 1421 }],
+    'shimano hyperglide 70': [{ bike: 'Peregrine', from: 1991, to: 1991, id: 7568 }, { bike: 'Osprey', from: 1991, to: 1991, id: 7568 }],
+    'suntour accushift plus 50': [{ bike: 'Nyala', from: 1991, to: 1991, id: 11069 }, { bike: 'Ocelot', from: 1991, to: 1991, id: 11069 }],
     // Pinarello c.1982, named CX chain (not the ambiguous freewheel).
     'regina extra cx': [{ from: 1982, to: 1982, id: 1384 }],
     // c.1979 Pinarello: explicit named chains, not inferred from the gruppo.
@@ -4879,6 +4958,10 @@ const COMPONENT_OVERRIDES = {
     'suntour gpx silver': [{ from: 1989, to: 1989, id: 7783 }], // CH-GP00
   },
   Cassettes: {
+    // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'suntour accushift plus 12 28t 7 speed cassette': [{ bike: 'Axis', from: 1991, to: 1991, id: 1216 }],
+    'shimano hyperglide 13 23t 7 speed cassette': [{ bike: 'Virata', from: 1991, to: 1991, id: 1202 }, { bike: 'Alfana', from: 1991, to: 1991, id: 7567 }],
+    'shimano hyperglide 12 28t 7 speed cassette': [{ bike: 'Peregrine', from: 1991, to: 1991, id: 7567 }],
     'shimano silver 13 24t 7 speed': [{ bike: 'Sport SX', from: 1989, to: 1989, id: null }], // Bianchi table confirms cassette but no code; RM-50 hub/Sport LX do not establish an exact model (CS-1000 row is black six-speed).
     "shimano 105 new cassette 6 speed 14 15 17 19 21 24t": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: null }], // 1050 family known; cassette text does not identify a separate loaded cassette model. German 1986 p.13.
     'shimano new deore xt 6 speed 13 30t': [{ bike: 'Ridge Runner', from: 1987, to: 1987, id: 1201 }], // 1987 Miyata: printed component; see known-catalogs/miyata.md.

@@ -1,5 +1,97 @@
 # Bianchi catalogs processed so far
 
+## 1991 and 1992 US catalogue inventory — 2026-11-21
+
+Live readback found the 1991 and 1992 Japanese catalogue sources 358 and
+359. The following US catalogues give different market fitments and use
+separate edition identities, even where the model names coincide.
+
+- **1991.** The [24-page archive PDF](https://www.bikecatalogs.com/download/2798)
+  prints 1991 Bicycles on the cover. The US-market warranty footer on PDF
+  p. 19 is clearer in the [Gringineer photographs](https://www.gringineer.com/blogs/default-blog/1991-bianchi-catalog).
+  The photos are the eight product pages (PDF pp. 12–19) and the geometry
+  page (PDF p. 22). The complete sequence also has the covers, catalogue
+  introduction and accessories. Both scans agree on the printed layouts.
+  Handwritten prices in the archive copy are dealer annotations.
+- **1992.** The [24-page archive PDF](https://www.bikecatalogs.com/download/2799)
+  prints Bianchi USA, Inc., South San Francisco and code MB92 on p. 24.
+  PDF p. 22 prints the 1992 copyright and US-market warranty. The
+  [Gringineer photographs](https://www.gringineer.com/blogs/default-blog/1992-bianchi-catalog)
+  corroborate the product pages. PDF pp. 12–15 cover Project/Cross-Terrain,
+  pp. 16–19 Road Racing, and pp. 20–22 Mountain. The geometry and
+  accessories follow on pp. 23–24.
+
+For 1992 the complete in-scope builds are the drop-bar **Equinox and
+Volpe** (p. 15), **TSX and SBX** (p. 16), **Giro, Virata and Alfana**
+(p. 17), **Campione, Eros and Forza** (p. 18), **Europa and Premio**
+(p. 19), **Super Grizzly and Grizzly** (p. 20), **Peregrine, Osprey
+and Ibex** (p. 21), **Nyala and Ocelot** (p. 22). TSX and SBX have complete
+builds and optional framesets. Exclude the flat-bar Project-7, Project-5,
+Project-3, Backstreet, Boardwalk, Advantage, Main Street and Avenue, and
+the component-free MiniMax frameset. The Ocelot adult model is in scope
+and its junior wheel-size option is listed within the same block.
+
+### 1991 US import applied and validated
+
+Source CSV `bike_specs/1991_bianchi_us_spec.csv` preserves the printed
+sizes, weights, finish and equipment by build. The generator creates a
+separate `1991 Bianchi (US) catalogue` source with market US and the
+original scan citation. The Japanese edition uses source 358.
+
+- PDF p. 14 has Equinox, Axis and Volpe with drop bars and Command shifters.
+  The catalogue classifies these as Cross-Terrain and expressly describes
+  flat- and drop-bar versions on p. 11. The drop-bar road-type models follow
+  the 1989 scope precedent. Excluded six flat-bar builds on pp. 12–13
+  (Project-7, Project-5, Backstreet, Boardwalk, Advantage and Main Street).
+- PDF pp. 15–16 give the complete Proto, Virata, Alfana, Eros, Forza and
+  Premio builds. Forza combines Exage 500EX shift hardware with 400EX
+  braking and crankset. Premio is 300EX in this edition. PDF pp. 17–19
+  give Grizzly, Peregrine, Sika, Osprey, Ibex, Nyala, Ocelot and Pista.
+  Ocelot has one adult build with an additional mixte size. The separate
+  Proto frameset on p. 19 is outside scope.
+- Axis explicitly specifies a 12–28T cassette. The [1991 SunTour maker
+  catalogue](https://sscycleworks.com/galleries/bike-museum/SunTour-91-catalog-compressed.pdf),
+  printed p. 9 (PDF p. 11), shows the seven-speed 36H FH-XC00-7, the
+  12–28T CS-AP00-S7 cassette and CH-AP10 chain, with CW-XC01 crankset;
+  p. 8 lists the FD-XC10-GXH front derailleur. Live Axis bike 1530 links
+  to 1216 (cassette spec 26514), 1419, 7999 and 11021. Hub spec 26512
+  stays blank pending a row for the period code. The scoped rule excludes
+  the later FH-XC02-7 row 7982 from this fitment.
+- The 1991 maker catalogue also lists XC-Pro CW-XP01, the two-finger
+  BL-XP00-S and the Grease Guard HS-XP01 on printed pp. 6–7. Its parallel
+  threaded and freehub options leave Equinox and Grizzly without a safe
+  hub or cluster link. This US Grizzly's 32H specification does not settle
+  the separately sourced Japanese specs 19546/19547.
+- The [1991 Shimano dealer catalogue](https://vintagecannondale.com/cannondale/shimano/Shimano91e.pdf)
+  supports the Ultegra, 105SC, Deore DX and LX group matches. Kept the
+  US Virata's printed Dynamic-II stem and mapped spec 26563 to Nitto
+  Dynamic-2 6614. The bike import preserves existing component dates.
+- Equinox and Axis 287 levers, Nyala's uncoded XCT brake (26772), the
+  uncertain Accushift Plus 12–28T / 13–30T clusters and Pista's explicit
+  16T fixed sprocket (26822) stay unlinked. The Grizzly and other
+  same-name builds retain their edition-specific text. Names such as
+  Command and generic grip, housing and frame specifications keep their
+  catalogue wording where the version or component identity is unclear.
+
+Applied on user approval on 2026-11-21. Added source **508** (US),
+bikes **1529–1545** and **350** specs with **129** component links. All
+350 specs reference source 508. The import reused 22 existing labels and
+the Bianchi brand. Readback matched the approved generator output for
+every new spec. The whole-database comparison covered 24,829 specs,
+with the same 15 pre-existing lost proposals and zero gained, changed,
+missing or ambiguous identities. The Japanese sources 358 and 359
+retained their prior bike, spec and link counts. The identical SQL
+rerun affected zero rows. All 14 test files passed before loading.
+
+The structural audit reported zero errors. The only new findings were
+15 linked-date review flags for the approved fitments. Affected
+component IDs are Axis 7999/11021/1419, Volpe 275/9016, Proto 11791,
+Virata 6614/416, Grizzly 3138, Nyala and Ocelot 11069, and Pista
+3060/1702/3880/5497. See the source pages above for the printed fitments
+and code evidence. For restoration, verify dependencies on source 508,
+then remove only the 508 specs and bikes before removing that source.
+The source CSV remains in `bike_specs/`.
+
 ## 1994–99 catalogue source review — 2026-11-21
 
 Downloaded the archive PDFs, counted their pages, checked the page sequences

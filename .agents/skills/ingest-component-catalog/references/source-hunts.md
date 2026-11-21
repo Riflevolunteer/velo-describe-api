@@ -201,13 +201,11 @@ preserving source URLs and the exact inspected filenames here.
     the specification table. Used for the 1990 date review.
   - [1991 Bianchi](https://www.gringineer.com/blogs/default-blog/1991-bianchi-catalog)
     (9 images) and [1992 Bianchi](https://www.gringineer.com/blogs/default-blog/1992-bianchi-catalog)
-    (12 images): Bianchi USA editions with a specification block beside each
-    model, distinct from the loaded 1991 / 1992 Japanese editions. Only each
-    post's last image was viewed: 1991 shows Ocelot, Pista and Proto frameset;
-    1992 shows Nyala and Ocelot and prints "© Copyright 1992, Bianchi USA,
-    Inc.". Its Ocelot (Shimano 100GS, 13-28T 7-speed cassette) differs from
-    the loaded 1993 US Ocelot, so it is not that catalogue. Full page
-    inventory, model scope and completeness not yet checked.
+    (12 images): Bianchi USA editions with specification blocks beside each
+    model. The [full 24-page copies and model inventory](../../ingest-bike-specs/references/known-catalogs/bianchi.md#1991-and-1992-us-catalogue-inventory--2026-11-21)
+    establish the chronology, scope and differences from the loaded
+    Japanese editions. The 1992 US Ocelot has Shimano 100GS and a 13–28T
+    seven-speed cassette. The 1993 US table gives a six-speed freewheel.
   - [1987](https://www.gringineer.com/blogs/default-blog/1987-bianchi-mtb-catalog)
     and [1988](https://www.gringineer.com/blogs/default-blog/1988-bianchi-mtb-catalog)
     Bianchi MTB catalogues, 5 images each: not opened; mountain bikes.

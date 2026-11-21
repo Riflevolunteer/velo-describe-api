@@ -245,6 +245,12 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Freewheels / cassettes
 
+- **1991 Bianchi US**, source **508**: Equinox and Grizzly 12–28T, and
+  Volpe, Ibex, Nyala and Ocelot 13–30T, are Accushift Plus seven-speed
+  offerings with the mechanism unspecified. Keep them as catalogue text.
+  Axis and Sika explicitly say cassette. Pista explicitly says 16T fixed
+  gear. [Edition evidence and mappings](known-catalogs/bianchi.md#1991-us-import-applied-and-validated)
+
 - **1989 Bianchi Sport SX, spec 18494** (2026-11-20 original-table review): `Shimano silver 13-24T 7-speed` is explicitly printed as a cassette alongside RM-50 hubs and Sport LX SIS. Keep NULL: neither the exact cassette code nor the rear hub model is printed. Existing CS-1000 7564 describes a black six-speed cassette, while FH-RM50 7624 is also six-speed; do not force those into this seven-speed offering. Bike/year-scoped NULL guard added. Tangent/Ocelot proposals and source evidence are in the Bianchi catalogue notes, "Cluster review — 2026-11-20".
 
 - Decided 2026-10-30, leave unlinked: Atom 13/26 6 speed, 1981 Raleigh Professional [9341] (2050 black vs 2051 silver cogs, colour not printed); Shimano Gold 13/28 with 600 EX, 1981 Raleigh Criterium [9285] (no Gold freewheel row); Regina CXS 7-speed, 1986 Cinelli [2309] (2169 is the 6-speed only).
@@ -276,6 +282,11 @@ see the Raleigh catalogue notes for the decision and source.
 - Also several rows fit: 1991-92 Bianchi Proto / X-4 "Campagnolo Sigma" (4; tubulars 4970 Sigma Strada, 7032 Sigma 20 Strada, 7031 Sigma Pave, 4969 Sigma Crono all cover 1991), 1994 Cinelli Supercorsa "Campagnolo Omega" (4955 / 4957 / 4961), 1991 Colnago Krono "Ambrosio Aero (spoked-wheel option)" (4; 4892 Aero, 9481 Aerodynamic, 9482 Aero Elite). Either/or and two-rim cells stay unlinked: "Campagnolo Victory or Ambrosio Metamorphosis" (Victory Strada vs Crono also open), "Mavic Monthlery / Sport or Pellet", "Martano Strada (tubular) / Araya 20A smoked", "FIR Tour or Ambrosio Giro d'Italia". Still no row: Araya RM-18T, Ukai LA-14 / EX-17 / 22A / 7Z, Weinmann 716E / 425 X / Aero, Sumo 7X / 14F, Rigida Jade / Saphir / CTX 10, Wolber Alpine, Velotech, FiR Mase Lega / MT 222 / MT 240.
 
 ## Hubs
+
+- **1991 Bianchi US Axis**, spec **26512**: the catalogue says XC-Comp 36H with
+  a cassette. The SunTour 1991 maker page lists FH-XC00-7. The scoped rule
+  leaves the hub link blank while that row is missing. Separate the period
+  freehub from FH-XC02-7 (7982). [Edition evidence](known-catalogs/bianchi.md#1991-us-import-applied-and-validated)
 
 - Reviewed2026-11-21: Raleigh1986 Portage **8259** (`SR alloy, sealed LF QR
   36° / rear:40°`), Marathon **8402** (`SR alloy QR sealed36°`) and Pursuit
