@@ -127,6 +127,23 @@
   rows throughout. Read-back: 1986 = 6 bikes / 79 specs / 52 links;
   1994 = 8 bikes / 145 specs / 43 links. No component rows changed.
 
+## Velociraptor Alivio rear review — 2026-11-21, read-only
+
+- Existing spec **20177**, source378, `Shimano Alivio`, remains NULL. Shimano's
+  original1994 catalogue distinguishes contemporary **RD-MC10 resin** and
+  **RD-MC11 aluminium plate bodies**; neither currently has a component row.
+  This supersedes any reading of the earlier “no later Alivio” note as a
+  unique missing model: adding either one without fitment evidence would guess
+  between two genuine constructions.
+- Rechecked table spread12 and model-photo spread20 in the original source
+  linked above. No printed rear model code, and the available904px spread
+  does not resolve the mechanism's plate body. Argento Vivo's separate crank
+  close-up cannot identify the Velociraptor. No dates, values, links or matcher
+  rules changed. The working catalogue year remains c.1994.
+- [Maker specifications, construction test and remaining evidence](../../../ingest-component-catalog/references/known-catalogs/shimano.md#cinelli-alivio-first-generation-fitment--2026-11-21-read-only).
+  Reopen only for a coded original specification or a detailed original-fitment
+  photo, rather than repeating the same small scan comparison.
+
 ## Proxima 1/E stem link — 2026-11-13, user approved
 
 - The c.1994 model table (source 378, spread 12) prints PIANTONE `CINELLI 1/E` for Proxima. Linked stem spec 20245 to existing component 6490 `Cinelli 1E`. Slash normalization produces `cinelli 1 e`, which needs its own generator key; added an override scoped to Proxima and working year 1994.

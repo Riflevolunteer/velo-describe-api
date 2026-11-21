@@ -110,6 +110,13 @@ tandem 99 set, and the September 1986 catalogue lists no 99. The Peugeot
 wording cannot separate plain 99 from 99 Bis NM or the tandem set, so neither
 the links nor 1906's dates were changed.
 
+2026-11-21 follow-up supersedes the identity hold for PCA10/PCA15: the
+factoryp.10 photographs show the plain slotted99, supporting existing1906
+without changing its dates. The separate manufacturer-listed Serie Tandem99
+configuration was added as12225 after approval; TM9G16983 changed1906→12225.
+Readback, full catalogue comparison and idempotency checks passed. See the
+[photograph comparison and applied result](stronglight.md#peugeot-99-fitment-reconciliation--2026-11-21-applied-and-validated).
+
 Validation: guarded SQL changed four rows and the identical rerun none;
 readback confirmed the values above. `compare-bike-links.js` over all loaded
 catalogues: no gained or changed links, the same 15 recorded Huret Rival lost

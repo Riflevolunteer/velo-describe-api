@@ -2402,7 +2402,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore lx m system': 977, // Shimano BR-M560 / BR-M561, Deore LX (M-System)
     'shimano exage es m system': 1002, // Shimano BR-M520 / BR-M521, Exage ES (M-System)
     'dia compe xce cantilevers 287 levers': 703, // Dia-Compe XCE
-    'dia compe 984': [{ from: 1989, to: 1989, id: 11549 }], // 1989 Bianchi Axis; 1990 MTB brochure (source 448), 984 panel; 984D remains unidentified.
+    'dia compe 984': [{ from: 1989, to: 1989, id: 11549 }], // 1989 Bianchi Axis; source448, 984 panel. March1989 guide p18 separately identifies 984D; do not alias its D suffix to this row.
     'dia compe 987 ss 7 brs': 652, // Dia-Compe 987
     // 1985 Raleigh (Sheldon Brown scan).
     // 1985 Raleigh: the CSV "Brakes" cells were split into caliper (here) and
@@ -2603,6 +2603,10 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // Approved and applied, 2026-11-21: Peugeot 1988 p.20 names a 99 on TM 9 G.
+    // Stronglight no.27 (Aug 1982), p.7, supplies the separate Serie Tandem 99
+    // configuration (pedal threading / relay rings), not the ordinary 99 1906.
+    'stronglight 99 dural 42x52': [{ bike: 'TM 9 G', from: 1988, to: 1988, id: 12225 }],
     // Peugeot original coded Solida fitments; 5171 and 5271 share BCD, not an established alias.
     // Evidence and specimen limits: known-catalogs/solida.md.
     'solida 5171 dural 42 x 52t': [{ bike: 'PH 11', from: 1984, to: 1984, id: 12207 }],
@@ -2820,9 +2824,13 @@ const COMPONENT_OVERRIDES = {
     'shimano m452 biopace 48 38 28': 1836, // Ozark: FC-M452, Mountain LX Biopace-HP triple
     'shimano m350 biopace 48 38 28t': 7195, // Chinook: FC-M350, Exage Trail
     // Touriste: FC-M350, as the Chinook (the bike's derailleurs are the M350 SIS group). 1988 Avanti: FC-MT60, the
-    // model page says "Shimano New Deore group set" (as the 1989 Randonneur's Deore Biopace HP). 1988 Ozark II / Royal
-    // print the same text with no group to choose on (FC-B124, FC-M450, FC-M350 all fit), so no link.
-    'shimano biopace 48 38 28': [{ bike: 'Touriste', from: 1989, to: 1989, id: 7195 }, { bike: 'Avanti', from: 1988, to: 1988, id: 1809 }],
+    // model page says "Shimano New Deore group set" (as the 1989 Randonneur's Deore Biopace HP).
+    // Approved and applied, 2026-11-21: Raleigh 1988 pp.8/11 and 1989 p.12 photographs support FC-B124
+    // for Ozark II / Royal (narrow outlined Shimano arm and flat rectangular spider tips), rather
+    // than the rounded Exage M450 / M350 arms. This is a visual fitment inference, not a printed code.
+    // The 1989 Royal exceeds 1776's current end year; keep that review flag without moving dates.
+    'shimano biopace 48 38 28': [{ bike: 'Touriste', from: 1989, to: 1989, id: 7195 }, { bike: 'Avanti', from: 1988, to: 1988, id: 1809 }, { bike: 'Ozark II', from: 1988, to: 1988, id: 1776 }, { bike: 'Royal', from: 1988, to: 1988, id: 1776 }],
+    'shimano biopace 48 38 28t': [{ bike: 'Royal', from: 1989, to: 1989, id: 1776 }],
     // Avanti / Appalachian: the Aug 1988 Deore XT-II and Deore II brochures carry M730 / MT60 codes; there is no FC-M732
     // or FC-MT62 (the 1988 Randonneur prints "FC-M730 BIO-PACE ... 48-38-28t").
     'shimano deore xt ii biopace 48 38 28t': [{ from: 1989, to: 1989, id: 1810 }], // FC-M730, Deore XT

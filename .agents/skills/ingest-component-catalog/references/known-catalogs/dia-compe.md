@@ -1,5 +1,71 @@
 # Dia-Compe catalogs processed so far
 
+## 984D maker identity and Bianchi links — 2026-11-21, applied and validated
+
+The existing TODO's 984D identification was resolved from a previously held
+maker page. Visually rechecked the [March1989 Product Guide, printed p.18](https://i.ebayimg.com/images/g/lDAAAOSwELZjzuyj/s-l1600.webp),
+source **447**: the Advantage ZAOH system chart explicitly labels **984 D NEW**,
+separately from **984 RATCHET NEW**. This supersedes the earlier requirement to
+find a maker code before proposing either D-suffix bike link. It does **not**
+make984D an alias of984, and the1990 MTB brochure/source448 still does not name
+the D model. No missing detailed guide pages were recovered.
+
+The [1989 Bianchi US second specification table](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/img-2487-2.jpg?v=1764982612),
+source **325**, explicitly prints Dia-Compe984D on **Forte** and **Volpe**, but
+plain984 on **Axis**. These are direct printed model matches, not an inferred
+suffix or a choice from a small bike photograph. The lever cells are separate:
+XCE-4050 for Forte, BL-08 aero for Volpe. No lever links are part of this change.
+
+Applied after explicit user approval:
+
+| Applied record | Value |
+| --- | --- |
+| Component ID / title | **12226**, `Dia-Compe 984D, Advantage ZAOH` |
+| Brand / category / group | Dia-Compe73 / Brakes3 / NULL |
+| Description | `Cantilever brake from the Advantage ZAOH range; distinct from the separately listed 984 Ratchet model.` |
+| Dates / provenance | **1989–1989**, source447; a positive catalogue attestation, not production boundaries |
+| Search text | `Dia-Compe 984D Advantage ZAOH` |
+| UUID | `37e8ed88-f09d-4605-bf0d-cab44daff922` |
+| Links | **18613** (Forte, bike1089) and **18717** (Volpe, bike1094), NULL→12226 |
+
+Both specs retain label18/raw`Brakes`, exact text`Dia-Compe 984D` and source325.
+Existing **11549 984**, its1989–1990 dates/source448 and Axis **18696→11549**
+remain untouched. No source/group creation, CSV edit, existing date change,
+merge or numerical specification was added. The maker chart establishes
+identity and range membership; it does not establish weight, reach, finish or
+all internal construction. Those details were deliberately not copied from984
+or the secondary timeline.
+
+Checked live titles, descriptions and numeric aliases before insertion: no existing984D row.
+Dia-Compe exact, near and parenthetical reports each returned no candidates.
+Automatic whole-word matching resolves the exact984D values once its row exists;
+no new override is required. Only the old984 comment needed correction.
+
+Read-only preview across **117 loaded catalogues /24,479 specs** adds exactly
+18613/18717→12226, preserves all existing proposals (including the same15 Huret
+Rival losses), and introduces no missing/ambiguous identities. Simulating the
+new component and both live links preserves the complete quality finding set:
+zero errors,2,003 reviews, including262 linked date conflicts. Description102/255.
+
+Application inserted exactly **one component** and updated **two bike specs**;
+the identical transaction reran with **zero inserts / zero updates**. Readback
+verified every new component field and both links, including the unchanged
+spec labels, values and sources. Comparing the live snapshot with the saved
+baseline found only these two spec-link changes, one new component, and no
+changes to existing component titles/categories, bikes or catalogue sources.
+The full post-load comparison across117 catalogues/24,479 specs matches the
+baseline summary and exact findings:24,464 unchanged, the same15 pre-existing
+Huret losses, zero gained/changed/missing/ambiguous. The complete quality
+finding set is unchanged:zero errors,2,003 reviews. Post-load Dia-Compe exact,
+near and parenthetical duplicate reports each returned zero candidates.
+
+Removed the984D action from TODO, reconciled the older unlinked statements and
+removed task-only SQL, scans, snapshots and helpers after validation. Original
+user-supplied brochure files were preserved. To restore, first recheck subsequent
+decisions, return18613/18717 to NULL with current component12226, bike1089/1094,
+source325, label18/raw`Brakes` and exact value guards; then remove12226 only if
+its UUID matches and no references remain. No old component was overwritten.
+
 ## Alpha-5000 brake identity — 2026-11-19 (read-only)
 
 - [1987 Bianchi catalogue](https://velobase.com/CatalogScans/1987Bianchi.pdf),
@@ -148,8 +214,10 @@ with the shared helper. No merges or deletes; no CSV edits.
 
 Linked **18696**, bike **1093**, 1989 Bianchi **Axis**, `Dia-Compe 984`,
 **NULL -> 11549**; installed an exact 1989-only Brakes override. The two
-`Dia-Compe 984D` specs **18613** (Forte) and **18717** (Volpe) remain NULL;
-the brochure does not establish the suffix. No specs were linked to the four
+`Dia-Compe 984D` specs **18613** (Forte) and **18717** (Volpe) were left NULL
+in this load because that brochure does not establish the suffix. They were
+subsequently linked to distinct12226 using March1989 source447, as recorded in
+the applied2026-11-21 review above. No specs were linked to the four
 enriched rows before this load. The pre-insert brand/category/alias review found
 no matching records for the six additions.
 

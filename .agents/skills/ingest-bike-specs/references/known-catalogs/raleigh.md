@@ -552,7 +552,9 @@ Task-created original-panel download, SQL and comparison files removed.
 - Matcher picks kept: HP-1050 3083, Tange MTB-225 3154, PD-M730 3967, Michelin
   Select 6826.
 - Left unlinked: Santé rear (RD-5000 and RD-5001 both cover 1988), Quadra /
-  Triathlon 105 brakes (reach not stated), Biopace 48/38/28 triples, the
+  Triathlon 105 brakes (reach not stated), Biopace 48/38/28 triples (the
+  Ozark II / Royal links were subsequently applied in the 2026-11-21
+  photograph comparison below), the
   cassettes, Sakae CTP-5 / CTP-5E / MTE-110 posts and Sakae stems, Weinmann
   rims and 570 TOP brake, Vredestein Racer II / CST Pro-Lite / Ground Control
   tyres, Maillard Diabolo, MKS AR-3, ISCA Nabuk, Selle Royal saddles, Tange
@@ -596,7 +598,8 @@ Task-created original-panel download, SQL and comparison files removed.
   Select 6826, Turbo Special 5519, PD-T100 3952, PD-6400 3958, Ultegra 6400
   rows.
 - Left unlinked: Alesa rims, Quadra II 105 brakes (reach not stated), the XT
-  II / Deore II / Royal / Touriste Biopace triples, Ozark / Chinook split
+  II / Deore II / Royal / Touriste Biopace triples (Royal subsequently
+  linked in the 2026-11-21 photograph comparison below), Ozark / Chinook split
   cantilever + U-brake cells, Ozark M450/452 hubs, Deore XT II / Deore II
   pedals, Deore II headset, Isca / Raleigh Lightweight / Anatomic saddles, SR /
   Sakae posts and stems, Skinside CST and generic tyres,
@@ -1069,10 +1072,70 @@ only this gained mapping, then 0 gained after load; the same 15 lost findings
 are pre-existing. Row 2004 is unchanged.
 
 **1988 Ozark II 18009, 1988 Royal 18045 and 1989 Royal 18275** (“Shimano
-Biopace 48/38/28”) stay NULL. Web searches for original-spec photos or parts
-codes found only generic Royal resale and forum posts. FC-B124, FC-M450 and
-FC-M350 all still fit; see the generator comment on
-`'shimano biopace 48 38 28'`.
+Biopace 48/38/28”) stayed NULL after this pass. Generic Royal resale and forum
+posts did not distinguish FC-B124, FC-M450 and FC-M350. The approved photograph
+review below supersedes that evidence assessment; all three live links are
+now 1776.
+
+## Biopace photograph comparison — 2026-11-21 (applied and validated)
+
+Reviewed the existing Raleigh crank TODO using original manufacturer
+photographs, rather than selecting a model from the common tooth counts.
+
+- [1988 Raleigh catalogue mirror](https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1988.html):
+  `Raleigh1988-5.jpg`, printed p.8, has the Ozark II drive-side photograph and
+  crank inset; `Raleigh1988-6.jpg`, printed p.11, shows the Royal above the
+  specification table. The latter crank is considerably smaller in the scan.
+- [1989 Raleigh catalogue mirror](https://labibleduvelocataloguesraleigh.blogspot.com/p/raleigh-1989.html):
+  `Raleigh Lightweights 1989-page-011.jpg`, printed p.12, shows the Royal and
+  its own crank close-up at upper centre. The lower-right crank inset belongs
+  to the adjacent Randonneur; do not use it to identify the Royal.
+- [Shimano December 1986 Complete Line, scan19](https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_december_1986_scan_19.html),
+  existing source75, explicitly labels and illustrates FC-B124 with
+  48/38/28, alloy rings and an outlined, narrow Shimano-marked arm with flat
+  rectangular spider tips.
+- [Shimano August 1988 Exage manual](https://www.disraeligears.co.uk/site/shimano_-_the_new_system_component_family_for_every_riding_style.html),
+  existing source78, p.28, illustrates FC-M450 and FC-M350 with the rounded
+  offset arms and Exage-marked spiders. Both can have 48/38/28, so the gearing
+  is not the distinguishing evidence.
+
+**Approved visual inference:** the Raleigh photographs support **FC-B124, component
+1776**, for specs **18009, 18045 and 18275**. The visible arm outline, small
+Shimano wordmark and spider shape agree with Shimano's labelled illustration,
+rather than the two Exage candidates. Confidence is stronger for the Ozark II
+and 1989 Royal close-ups; the small 1988 Royal image is corroborating evidence
+with less visible detail. No Raleigh page prints the FC-B124 code, and the
+photographs cannot establish that every production example had that crank.
+The user approved this visual fitment inference on 2026-11-21; it is not a
+recovered parts code.
+
+**Before application:** all three links were NULL; bikes1057/1059/1072,
+Crankset label38, sources322/322/323. Component1776 is unchanged:
+`Shimano FC-B124, Biopace Touring Triple`, 1987–1988, source75. Linking the
+1989 Royal adds one linked-date review flag, as explicitly approved. Dates
+remain unchanged: this finding concerns fitment identity, not production end
+dates.
+
+**Applied:** three exact value/bike/year generator overrides and guarded SQL.
+The UPDATE checked spec/bike IDs, catalogue, label, original NULL/value and
+the target component identity; it changed exactly three links and the rerun
+changed zero. Readback confirmed **18009/18045/18275 → 1776**, unchanged
+values and catalogue sources322/322/323, and unchanged component dates/source.
+Restoration is a reviewed reversal to NULL for only those spec/bike/value/source
+identities with current component1776. Catalogue text, source references and
+component rows are untouched.
+
+Validation: compared all117 loaded catalogues /24,479 specifications before
+and after the proposed overrides. Exactly these three NULL→1776 mappings are
+gained; no changed mappings, identity mismatches or new lost mappings. The
+same15 pre-existing lost Huret Rival proposals remain. After application, all
+three mappings agree with the live DB: zero gained/changed mappings, with the
+same15 pre-existing lost proposals across the same117 catalogues /24,479 specs.
+Whole-database quality reports zero errors and unchanged table counts; reviews
+2003→2004, linked-date conflicts262→263. The sole new finding is Royal18275
+(1989) against1776's unchanged1987–1988 range. No new TODO was added; the
+completed Raleigh crank action was removed. Review downloads, comparison files
+and applied SQL were deleted after readback and idempotency validation.
 
 ## 1986 Grand Prix QS400N link — 2026-11-12, user approved
 

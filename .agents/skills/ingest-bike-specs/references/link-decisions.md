@@ -147,13 +147,19 @@ code or photo identifying the post.
 
 ## 1989 Bianchi Dia-Compe 984D (reviewed 2026-11-17)
 
-- Forte **18613** and Volpe **18717**, `Dia-Compe 984D`, remain NULL. The US
+- Former hold: Forte **18613** and Volpe **18717**, `Dia-Compe 984D`, were left NULL. The US
   1990 MTB brochure (©1989), source 448, explicitly describes **984**, with
   Ratchet Dial and Rotational Dish adjustments, but does not print **984D** or
   establish that the D suffix is interchangeable. It supports Axis **18696**
   `Dia-Compe 984` -> new **11549**, applied on user approval; it does not
-  support extending that link to the D-suffix specs. Seek explicit maker/model
-  identification before linking those two. [Evidence](../../ingest-component-catalog/references/known-catalogs/dia-compe.md#mtb-brochure--ebay-800322888787-photo-inventory-reviewed-2026-11-17).
+  support extending that link to the D-suffix specs. The maker/model hold is
+  resolved below. [Original evidence](../../ingest-component-catalog/references/known-catalogs/dia-compe.md#mtb-brochure--ebay-800322888787-photo-inventory-reviewed-2026-11-17).
+- **2026-11-21 approved, applied and validated:** source447,
+  March1989 guide p.18, separately lists984D in Advantage ZAOH and984 Ratchet.
+  Bianchi's original table explicitly names984D on both bikes. Added
+  distinct **12226 984D** and both NULL→12226 links; do not reuse11549 or treat
+  D as an alias. This supersedes the NULL hold above. Full comparison and
+  quality checks passed; rerun zero changes. [Applied change and validation](../../ingest-component-catalog/references/known-catalogs/dia-compe.md#984d-maker-identity-and-bianchi-links--2026-11-21-applied-and-validated).
 
 ## Bottecchia US September 1972
 

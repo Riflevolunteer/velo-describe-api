@@ -1,5 +1,91 @@
 # Stronglight catalogs processed so far
 
+## Peugeot 99 fitment reconciliation — 2026-11-21 (applied and validated)
+
+Existing TODO scope: Peugeot1984 PCA10/PCA15 specs12161/13761 and Peugeot1988
+TM9G spec16983, initially all linked to the ordinary99 row1906. Applied after
+user approval on2026-11-21; existing component dates remain unchanged.
+
+**PCA10/PCA15 identity resolved: keep1906.** The original Peugeot1984
+[catalogue](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1984.html),
+printedp.10 / Blogger `10.jpg` (source257), includes both model portraits,
+a crank inset beside PCA15 and a crank/generator inset beside PCA10. The
+rings show the plain elongated slots and large spoke-adjacent holes, without
+the extra rows of small drilled holes on the Bis. Compare Stronglight
+[no.22](https://labibleduvelocataloguesstronlight.blogspot.com/p/stronlight-1974.html),
+printedp.4, scan5 (source265), explicitly labelled99 triple, against
+[no.27](https://labibleduvelocataloguesstronlight.blogspot.com/p/stronlight-1984.html),
+printedp.7, scan7 (source267), explicitly labelled99BIS. The plain-ring
+configuration agrees with1906; no reason to switch to1908/1909.
+
+An owner's [PCA10 photo thread](https://www.velovintageagogo.com/t24916-peugeot-pca-10-1984)
+corroborates the construction in a clear
+[crank close-up](https://i.servimg.com/u/f47/20/38/88/69/20230623.jpg), but
+does not independently prove originality or the bike year. The factory page
+supplies the fitment evidence. Keep1906's1974–1983 range and existing source459
+unchanged at the user's request; the two1984 linked-date flags remain visible.
+This resolves the requested identity check without pretending those dates
+establish a production end.
+
+**TM9G: applied the separate Serie Tandem99 configuration.** Stronglight
+no.27, printedp.7 (source267, AOUT1982 imprint), explicitly lists
+`SERIE TANDEM 99`, double or triple, below the ordinary99Bis. Its construction
+is distinct: a left crank with right-hand pedal thread; front axle118.5mm;
+rear axle118.5mm double /125.5mm triple; right cranks threaded for relay rings,
+standard99 relay32T. The ordinary99 crankset row1906 does not represent this
+complete tandem arrangement.
+
+Peugeot's [1988 catalogue](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1988.html)
+(source319), printedp.19 / Blogger `18.jpg`, shows the TM9G tandem with its
+two crank positions and relay chain; printedp.20 / `19.jpg` explicitly lists
+`Dural STRONGLIGHT99 42X52` on TM9G. The print omits `Serie Tandem`, so the
+fitment identification combines the explicit99 model with the tandem
+configuration. It does not infer a new model from dates or tooth count.
+
+Applied inventory:
+
+| Category | ID/title | Evidence and bounds | Change |
+| --- | --- | --- | --- |
+| Cranksets |12225 Stronglight Serie Tandem99 (stored title `Stronglight Serie Tandem 99`) | No.27p.7 plus Peugeot1988pp.19–20;1982–1988 are positive attested catalogue bounds, not a manufacturing start/end claim | One new tandem configuration;16983 changed1906→12225 |
+
+Brand54, category7, groupNULL, primary source267; UUID
+`a32de027-623d-4ad2-9fa3-fbec9f05b071`. Description233characters:
+`Stronglight Serie Tandem 99, France. Double/triple tandem set; left crank has right-hand pedal thread. Front axle 118.5mm; rear axle 118.5mm double/125.5mm triple. Right cranks threaded for relay rings (standard 99: 32T). No.27, p.7.`
+
+Duplicate review:1323/1324 are Chainrings(category5), not cranksets.
+1907/1908/1909 are the ordinary perforated99Bis configurations;1913 is the
+steel cottered tandem. Existing100LX tandem8804 and107 tandem8805 are
+different maker models. None represents the named99 tandem set; no merge,
+rename or existing date move. Reused sources267/319. The post-load Stronglight
+duplicate report identifies no pair involving12225; the ordinary99/Bis and
+double/triple configurations remain separate.
+
+Guarded SQL inserted exactly one component and corrected one link; the same
+SQL rerun inserted/updated zero rows. Readback confirmed12225's UUID,
+brand54/category7/source267,1982–1988 bounds and233-character description.
+Spec16983 now links to12225 with its source/value unchanged. Spec16983's
+old identity: bike1001 TM9G/1988, label38, source319, exact value
+`Stronglight 99 dural, 42x52`, component1906. Restoration after review: repoint
+only this same identity from12225 back to1906; remove the inserted component
+only with its UUID guard and after checking every DB reference is clear.
+PCA10/PCA15 stay1906, and every existing component date/source is preserved.
+
+Validation before review: consistent read-only snapshot with the hypothetical
+new row and exact TM9G/value/1988 override across117 loaded catalogues /
+24,479specs. Exactly one changed mapping,16983:1906→12225; zero gains or new
+losses, no missing/ambiguous identities. The same15 pre-existing lost Huret
+Rival proposals remain. `node --check` and description-length check pass.
+Post-application comparison across the same117 catalogues /24,479specs:
+zero gained/changed mappings, no missing/ambiguous identities and the same15
+pre-existing lost Huret Rival proposals. Whole-database quality reports zero
+errors; reviews2004→2003 and linked-date conflicts263→262. The only removed
+finding is16983's former1988-versus1906(ends1983) conflict. No new finding was
+introduced; table counts are unchanged except component_detail+1.
+Live PCA10/PCA15 specs12161/13761 remain1906, including their existing dates,
+values and catalogue sources. The completed Stronglight TODO was removed,
+with no new task added. Task-created scans, SQL, simulation and validation
+files were deleted after readback and idempotency validation.
+
 ## Recovered catalogue attributed 1958 — applied and validated 2026-11-17
 
 Six recovered English-language display scans, printed **pp. 2–7**, 492×640.

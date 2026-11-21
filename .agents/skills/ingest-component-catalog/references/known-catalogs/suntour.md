@@ -314,7 +314,8 @@ source. [Full evidence and scan-page correction](cross-catalog-notes.md#palo-alt
   in the bike skill's cross-catalog notes; only unresolved actions remain in TODO.
 - Do not automatically apply this identification to the 1986 Miyata Ridge
   Runner **22585**: its source 349 p.11 says XC without Sport and shows a
-  seatstay-mounted rear. The scan does not establish the external-bow versus
+  chainstay-mounted rear (mounting corrected from seatstay after the 2026-11-21
+  review of VeloBase's 300dpi original). The scan does not establish the external-bow versus
   internal-coil construction/code. Keep 1052 CB-6100 versus 1058 open until a
   sharper original-bike view or parts code is available.
 

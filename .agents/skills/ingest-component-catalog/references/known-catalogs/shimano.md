@@ -2615,6 +2615,42 @@ Applied1200 only: year_from1970→1978, source_ref1→68, description→`Uniglid
 Exactly one component update applied; identical guarded SQL rerun changed zero rows. Exact readback confirmed description158 characters, year_from1978, year_to1983, source_ref68, unchanged title/UUID and unchanged1196. All six existing bike links remain within the revised bound. Full generator/live comparison is identical before/after:23,800 compared,23,785 unchanged,15 pre-existing lost proposals, zero gained/changed/missing/ambiguous identities; every finding identical. Quality remains zero errors/2,067 review findings with unchanged check counts, including329 linked date conflicts. Restoration values are recorded above; no generator override needed because all existing ranges start1979 or later. Task SQL, comparison JSON, original1196 HTML and dated page download were removed after validation; source URLs remain above.
 
 
+## Cinelli Alivio first-generation fitment — 2026-11-21, read-only
+
+Existing TODO target **20177**, c.1994 Cinelli Velociraptor rear derailleur,
+source **378**, prints only `Shimano Alivio` and remains NULL. Live inventory
+has neither RD-MC10 nor RD-MC11; later **4475 RD-MC12** (1995–96) and
+**9641 RD-MC14 / RD-MC16** (1996–98) are different generations and were not
+used or redated.
+
+Visually checked the original Shimano 1994 European catalogue, source **173**,
+printed August1993: [p.30 group illustrations](https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_-_94_august_1993_page_30.html)
+explicitly introduces two Alivio configurations for1994. The
+[p.31 specification table](https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_-_94_august_1993_page_31.html)
+distinguishes **RD-MC10's resin plate body** from **RD-MC11's aluminium/barrel-finish
+plate body**. Both have aluminium bracket bodies, seven-speed SIS, Advanced
+Light Action, 28T maximum /11T minimum sprockets,18T maximum front difference
+and35T total capacity. The261g figure explicitly belongs to MC10, not both.
+These are distinct constructions, not interchangeable codes to combine in a
+single row merely to make the bike link possible.
+
+The original [Cinelli brochure](https://saarf.london/2012/08/22/1982-cinelli-catalogue/)
+spread12 gives no model code. Spread20's full Velociraptor photograph leaves
+the rear mechanism only a few tens of pixels across in the available904px-wide
+scan; it cannot reliably distinguish the plate-body material. The nearby
+crank close-up belongs to Argento Vivo, and must not be used to identify the
+Velociraptor's equipment. Shared group naming or seven-speed gearing cannot
+choose MC10 versus MC11. The Cinelli publication date remains an attributed
+c.1994, not a printed imprint.
+
+Result: no component inserts, date changes, SQL or generator changes prepared.
+Adding both missing derailleurs alone would not resolve20177. Reopen this
+fitment only for an original model code or a sufficiently detailed original
+Velociraptor photo showing its plate body. Exact-code/Velociraptor searches
+found no such evidence. The existing TODO action was narrowed in place; no
+additional inventory/hunt task was added. Downloaded catalogue pages and
+inspection crops were removed after recording the source URLs and result.
+
 ## BB-UN73 retirement-list and manual follow-up — 2026-11-20, read-only
 
 Bounded follow-up to the2003 manual acquisition target. Live row121 remains

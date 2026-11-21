@@ -584,6 +584,12 @@ alter CSVs, database records or the prior country decision.
 
 ## 1984 Peugeot — `1984_peugeot_spec.csv` (FR, data_source 257: 32 bikes, 492 specs, 88 linked) and `1984_peugeot_gb_spec.csv` (GB, data_source 258: 11 bikes, 200 specs, 45 linked)
 
+- Stronglight99 identity review,2026-11-21: factoryp.10 confirms plain slotted
+  rings on PCA10/PCA15, supporting retained links12161/13761→1906. No date or
+  DB change for those two bikes. After approval, separate1988 TM9G tandem16983
+  changed1906→12225 Serie Tandem99, with existing component dates unchanged;
+  see the [validated manufacturer and fitment comparison](../../../ingest-component-catalog/references/known-catalogs/stronglight.md#peugeot-99-fitment-reconciliation--2026-11-21-applied-and-validated).
+
 - Solida follow-up,2026-11-21, user approved and validated: PH11 FR spec12070
   now links to12207 Solida5171; PH10LS FR12088 and GB12381/12399/12417 link
   to12208 Solida5271. The same application covers the coded1986–89 fitments

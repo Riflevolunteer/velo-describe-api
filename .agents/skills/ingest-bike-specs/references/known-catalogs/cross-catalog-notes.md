@@ -714,6 +714,15 @@ deliberate NULLs without evidence.
   obtain a sharper original-bike brake view before choosing **1052 CB-6100**
   versus **1058 CB-6600**. Retain NULL and do not assume the Orient match also
   applies here.
+  **2026-11-21 correction after a sharper scan:** VeloBase's
+  [first-half original scan](https://velobase.com/CatalogScans/Miyata1986_01-12.pdf)
+  has a 2550×3300, 300dpi image for printed p.11. It shows the rear brake
+  **under the chainstays**, correcting the seatstay claim above. The
+  [Rag and Bone copy](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2086.pdf)
+  uses a smaller 1158×1598 image for this page. The larger drive-side view
+  still hides the spring/roller assembly; mounting position does not separate
+  CB-6100 from CB-6600. Spec22585 remains NULL, with no date/mapping changes.
+  No further hunt task added. Temporary downloads/crops were removed.
 - **Europe Express 1989 front/rear, 22594/22595:** inspected original source
   320 model photo and rear-brake detail, `cycles peugeot 1989 (24).jpg`,
   [catalogue host](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1989.html).
