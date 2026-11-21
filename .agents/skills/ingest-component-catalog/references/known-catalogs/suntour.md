@@ -608,6 +608,36 @@ source. [Full evidence and scan-page correction](cross-catalog-notes.md#palo-alt
   FD-CL10-B (both 107g); Alpha-5000 FD / brakes / crankset / hubs not in
   leaflets; 2229 bare "Winner", 2234 FW-WT10-S7U, SB-XC00, HL-3000.
 
+## 1991 Bicycle Equipment Catalog — targeted reconciliation
+
+Applied and validated 2026-11-21, `data_source` 509. Reviewed the XC-Pro
+headset, XC-Comp equipment and CH-AP50 as a follow-up to the 1991 US
+Bianchi import. Page numbers below are printed. [Maker scan](https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1991.html)
+
+- P. 9 added **12229** FH-XC00-7, XC-Comp seven-speed freehub,
+  1991–1991, UUID `730c3f93-2111-4a76-97b2-41efd33f6b4d`.
+  32H or 36H, 130 or 135 mm over locknuts, QR, 473 g for 36H/130 mm.
+  The maker pairs it with silver CS-AP00-S7. The Bianchi US Axis's
+  hubset and cassette specifications support rear-hub link 26512.
+  Keep 1992 FH-XC02-7 (7982), 1990 shared FH-XP00-7U (11016), and
+  1989 XC 9000 FH-XC10-U7/R6 (3624) as separate models.
+- P. 9 moved the start of HB-XC02-F (7980) and CW-XC01 (7999)
+  from 1992 to 1991, previous source 278. Pp. 8, 9 and 23 moved
+  FD-XC10-GXH (11021), CH-AP10 (1419) and CH-AP50 (11069) from
+  1990–1990 to 1990–1991, previous source 385.
+- P. 7 moved HS-XP01 (3138) from 1980–1990 to 1980–1991, previous
+  source 1. The catalogue identifies variants HS-XP01-J (JIS) and
+  HS-XP01-I (English/Italian). It lists 26 × 5/32 in balls, 37 mm stack,
+  125 g, and 30.0/27.0 mm or 30.2/26.4 mm race diameters. Previous DB
+  description: “XC-Pro ATB headset with WTB / SunTour Grease Guard (two
+  o-ring-sealed grease ports): 20 x 3/16in balls each race, 37mm stack,
+  English/Italian 25.4mm x 24TPI, JIS or ISO crown race. VeloBase model
+  HS-XP01; follows 1990 HS-XP00 (11020).”
+
+The hub scan found no new near-pair candidates. The live spec and the
+generator agree on 12229. The SQL replay affected zero rows.
+[Fitment, provenance and full-batch checks](../../../ingest-bike-specs/references/known-catalogs/bianchi.md#1991-us-component-follow-up--applied-and-validated)
+
 ## SunTour "1992 Bicycle Equipment Catalog" — printed 09.1991 (disraeligears.co.uk, 32 scans)
 
 - `data_source` 98, label "SunTour Bicycle Equipment Catalog 1992 (printed
@@ -1773,7 +1803,8 @@ VeloBase pages (ViewComponent.aspx?ID=<source_id>) give a model field for most b
 - 3138 "XC Pro" headset (A3358349): model **HS-XP01**, Grease Guard, 20 x 3/16in balls,
   37mm stack. Distinct from 1990 HS-XP00 (11020) and 1992 HS-XP02 (8044). Its two links
   (1990 Bianchi Project 7 / Grizzly "SunTour XC-Pro") belong on 11020, the XC-Pro headset in
-  the 1990 catalogue. Years 1980-1990 left (unsourced; XP01 is probably 1991).
+  the 1990 catalogue. The [1991 catalogue follow-up](#1991-bicycle-equipment-catalog--targeted-reconciliation)
+  confirmed the HS-XP01 code and superseded the date and bearing-size figures.
 - 6280 "Cyclone 5000/7000/9000" shifter (86C13EBA): model **SL-CL10-B**, braze-on, 80g =
   7851. No links; the only reference was a `'suntour cyclone 7000 barcon'` override for the
   non-road-skipped 1987 Volpe, which pointed a bar-con at a down-tube lever.

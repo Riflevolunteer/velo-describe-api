@@ -54,9 +54,9 @@ original scan citation. The Japanese edition uses source 358.
   printed p. 9 (PDF p. 11), shows the seven-speed 36H FH-XC00-7, the
   12–28T CS-AP00-S7 cassette and CH-AP10 chain, with CW-XC01 crankset;
   p. 8 lists the FD-XC10-GXH front derailleur. Live Axis bike 1530 links
-  to 1216 (cassette spec 26514), 1419, 7999 and 11021. Hub spec 26512
-  stays blank pending a row for the period code. The scoped rule excludes
-  the later FH-XC02-7 row 7982 from this fitment.
+  to 1216 (cassette spec 26514), 1419, 7999 and 11021. The
+  [component follow-up](#1991-us-component-follow-up--applied-and-validated)
+  linked hub spec 26512 to FH-XC00-7 (12229).
 - The 1991 maker catalogue also lists XC-Pro CW-XP01, the two-finger
   BL-XP00-S and the Grease Guard HS-XP01 on printed pp. 6–7. Its parallel
   threaded and freehub options leave Equinox and Grizzly without a safe
@@ -87,10 +87,69 @@ The structural audit reported zero errors. The only new findings were
 15 linked-date review flags for the approved fitments. Affected
 component IDs are Axis 7999/11021/1419, Volpe 275/9016, Proto 11791,
 Virata 6614/416, Grizzly 3138, Nyala and Ocelot 11069, and Pista
-3060/1702/3880/5497. See the source pages above for the printed fitments
-and code evidence. For restoration, verify dependencies on source 508,
+3060/1702/3880/5497. The component follow-up below cleared these flags.
+For restoration, verify dependencies on source 508,
 then remove only the 508 specs and bikes before removing that source.
 The source CSV remains in `bike_specs/`.
+
+### 1991 US component follow-up — applied and validated
+
+The [1991 SunTour catalogue](https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1991.html)
+lists FH-XC00-7 under XC-Comp on [printed p. 9](https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1991_-_page_9.html).
+It specifies 32H or 36H, 130 or 135 mm, quick release and 473 g for the
+36H/130 mm hub. Bianchi PDF p. 14 lists the Axis with a 36H XC-Comp hubset
+and specifies a 12–28T seven-speed cassette. Together those details
+support linking spec 26512 to the listed rear freehub. Its cassette spec
+26514 already points to the compatible family (1216). The catalogue does
+not give the Axis's rear spacing. The 1990 shared FH-XP00-7U (11016),
+1989 XC 9000 FH-XC10-U7/R6 (3624) and 1992 FH-XC02-7 (7982) are separately
+coded rows. Component 12229 uses the 1991 attestation for both date
+bounds and the same brand, category and group as 7982.
+
+| Source and fitment | Component | Previous range and source | Applied range |
+|---|---|---|---|
+| SunTour p. 7 | 3138 HS-XP01-J/I | 1980–1990, source 1 | 1980–1991 |
+| SunTour p. 8, Axis | 11021 FD-XC10-GXH | 1990–1990, source 385 | 1990–1991 |
+| SunTour p. 9 | 7980 HB-XC02-F | 1992–1993, source 278 | 1991–1993 |
+| SunTour p. 9, Axis | 7999 CW-XC01 | 1992–1993, source 278 | 1991–1993 |
+| SunTour p. 9, Axis | 1419 CH-AP10 | 1990–1990, source 385 | 1990–1991 |
+| SunTour p. 23, Nyala/Ocelot | 11069 CH-AP50 | 1990–1990, source 385 | 1990–1991 |
+| Bianchi PDF p. 14, Volpe | 275 Dia-Compe AC250S/BRS300 | 1989–1989, source 447 | 1989–1991 |
+| Bianchi PDF p. 14, Volpe | 9016 Sansin AE-60/AE-60S | 1987–1987, source 234 | 1987–1991 |
+| Bianchi PDF p. 15, Proto | 11791 Vittoria Oscar X | 1989–1990, source 471 | 1989–1991 |
+| Bianchi PDF p. 15, Virata | 6614 Nitto Dynamic-2 | 1989–1990, source 159 | 1989–1991 |
+| Shimano 1991 German road specification chart | 416 BL-6401 aero lever | 1988–1990, source 79 | 1988–1991 |
+| Bianchi PDF p. 19, Pista | 3060 Ofmega Competizione headset | 1980–1990, source 262 | 1980–1991 |
+| Bianchi PDF p. 19, Pista | 1702 Ofmega Super Competizione track crankset | 1980–1990, source 1 | 1980–1991 |
+| Bianchi PDF p. 19, Pista | 3880 Ofmega Master Pista pedals | 1980–1990, source 1 | 1980–1991 |
+| Bianchi PDF p. 19, Pista | 5497 Selle Italia Mundialita | 1985–1990, source 262 | 1985–1991 |
+
+SunTour p. 7 specifies 26 × 5/32 in balls, 37 mm stack, 125 g and JIS or
+English/Italian race dimensions. The headset description uses those maker
+figures in place of the VeloBase 20 × 3/16 in specification. Dia-Compe
+March 1989 p. 1 explicitly maps the BRS300 aero lever to AC250S. The printed
+Sansin fitment establishes the AE-60 member of row 9016 and the Pista
+establishes the Mundialita model in a celeste finish. The Bianchi pages
+support availability in 1991. Earlier imported dates and the scope of the
+later variants remain as recorded. The separate [Shimano German component
+brochure](https://vintagecannondale.com/cannondale/shimano/Shimano91e.pdf)
+lists BL-6401 with the 600 Ultegra BR-6400 in the road specification chart.
+
+Applied on 2026-11-21. Source 509 covers the six SunTour rows and the
+new freehub. The eight Bianchi-backed date changes use source 508.
+Source 510 supports the Shimano lever. Live spec 26512 and the scoped
+generator rule point to 12229. The full 24,829-spec comparison matched
+the pre-change report, including the same 15 existing lost proposals.
+The date audit removed the 15 Bianchi flags (277 → 262 database-wide),
+with zero structural errors or new findings. The SunTour hub duplicate
+scan found no near pairs. All three SQL files affected zero rows on
+replay. All 14 test files passed.
+
+To reverse this batch, verify dependencies, restore the old ranges and
+sources in the table, and restore the old headset description recorded
+in the [SunTour notes](../../../ingest-component-catalog/references/known-catalogs/suntour.md#1991-bicycle-equipment-catalog--targeted-reconciliation).
+Restore the Axis rule and spec link to NULL before removing component
+12229, then check sources 509 and 510 for remaining references.
 
 ## 1994–99 catalogue source review — 2026-11-21
 

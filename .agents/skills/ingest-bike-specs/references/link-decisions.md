@@ -283,10 +283,10 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Hubs
 
-- **1991 Bianchi US Axis**, spec **26512**: the catalogue says XC-Comp 36H with
-  a cassette. The SunTour 1991 maker page lists FH-XC00-7. The scoped rule
-  leaves the hub link blank while that row is missing. Separate the period
-  freehub from FH-XC02-7 (7982). [Edition evidence](known-catalogs/bianchi.md#1991-us-import-applied-and-validated)
+- **1991 Bianchi US Axis**, spec **26512**, links to **12229** FH-XC00-7.
+  Bianchi lists XC-Comp 36H and a seven-speed 12–28T cassette. SunTour's 1991
+  maker page lists the corresponding freehub. The later FH-XC02-7 is row
+  7982. [Edition evidence](known-catalogs/bianchi.md#1991-us-component-follow-up--applied-and-validated)
 
 - Reviewed2026-11-21: Raleigh1986 Portage **8259** (`SR alloy, sealed LF QR
   36° / rear:40°`), Marathon **8402** (`SR alloy QR sealed36°`) and Pursuit

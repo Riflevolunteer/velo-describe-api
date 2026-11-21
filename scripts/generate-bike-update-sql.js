@@ -1811,7 +1811,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc pro 36h grease guard': [{ from: 1990, to: 1990, id: 3628 }], // XC Pro rear freewheel hub (these bikes have freewheels)
     'suntour xc pro 32h grease guard': [{ from: 1990, to: 1990, id: 3628 }], // XC Pro rear freewheel hub
     'suntour xc comp 36h': [
-      { bike: 'Axis', from: 1991, to: 1991, id: null }, // SunTour 1991 p. 9 lists FH-XC00-7.
+      { bike: 'Axis', from: 1991, to: 1991, id: 12229 }, // FH-XC00-7, SunTour 1991 p. 9 and Bianchi US p. 14.
       { from: 1990, to: 1992, id: 7982 }, // FH-XC02-7 freehub (Tangent has a cassette; row dated 1992)
     ],
     'campagnolo chorus 36h': [{ from: 1987, to: 1991, id: 3249 }], // 722/101 Chorus freewheel hub (Regina freewheel)

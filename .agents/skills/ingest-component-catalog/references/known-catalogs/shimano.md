@@ -1441,6 +1441,17 @@
   Out of scope: shoes SH-M100 / R100 / T100, SH-CV10, SQ-M730, DF-M730,
   SM-CS50 / ST74 / SP55 / MT55, tools.
 
+## 1991 German component brochure — BL-6401 date reconciliation
+
+Applied and validated 2026-11-21, `data_source` 510. The road
+specification chart of the German 1991 component brochure lists the
+BL-6401 aero lever with the Shimano 600 Ultegra BR-6400 side-pull.
+This is a separate publication from the European dealer manual (source 82).
+The chart supports 1991 availability for component **416**, extending
+1988–1990 to 1988–1991 and superseding source 79 for the date correction.
+The Bianchi US Virata catalogue calls its levers Ultegra aero and does
+not print the model code. [German brochure](https://vintagecannondale.com/cannondale/shimano/Shimano91e.pdf)
+
 ## Shimano "'92 Shimano Bicycle System Component — Dealers' Product Manual", English (GB) — printed 08.1991 (disraeligears.co.uk, 108 images)
 
 - `data_source` 83, label "Shimano Bicycle System Component 1992 Dealers
