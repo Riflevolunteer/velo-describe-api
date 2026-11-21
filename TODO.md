@@ -19,10 +19,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Inventory and prepare the Bianchi 1994, 1995, 1996 and 1998 North American ranges and the separate 1996 German-language range for ingestion. Confirm the latter's market and scope before using the Austrian insert. [Verified scans and specification pages](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#199499-catalogue-source-review--2026-11-21).
 - Transcribe and prepare the 1991 Raleigh German general catalogue and British Dyna-Tech brochure as separate editions; review scope and component links using the [source assessment](.agents/skills/ingest-bike-specs/references/known-catalogs/raleigh.md#1991-raleigh--bikalog-german-and-british-editions-assessed-2026-11-20).
 
-## Component corrections
-
-- **FRM:** review and apply the 1998 catalogue corrections for the CU2 road cranksets, Feather and Alu-Ergal/Carbon-Ergal hubs, then verify the live rows. [Prepared changes and scratch path](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#frm-1998-maker-catalogue--prepared-for-review).
-
 ## Waiting for distinguishing evidence
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.

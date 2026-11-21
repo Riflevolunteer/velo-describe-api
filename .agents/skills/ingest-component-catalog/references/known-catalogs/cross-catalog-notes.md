@@ -4363,7 +4363,7 @@ the names, or a coded specimen with matching construction, dimensions and
 ring compatibility. No downloaded scans or pending SQL were created at that
 stage. The subsequently recovered 1998 maker catalogue is assessed below.
 
-### FRM 1998 maker catalogue — prepared for review
+### FRM 1998 maker catalogue — applied and validated
 
 Read all five scanned spreads of the [Italian FRM catalogue](https://velovelopool.wordpress.com/wp-content/uploads/2023/12/frm-1998.pdf).
 The page marks show '98. PDF spreads 1–2 introduce the Hard Tail and Be Active
@@ -4397,10 +4397,10 @@ and hub identities in the worklist.
 - The 1996 Guida [p. 135](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_32_main_image.jpg)
   and [p. 138](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_35_main_image.jpg)
   list Carbon-Ergal front 88 g, 16/18/24/28/32/36H, and rear 256 g,
-  16/24/32/36H. The proposed descriptions preserve these dated figures
+  16/24/32/36H. The revised descriptions preserve these dated figures
   with the 1998 specifications. Alu-Ergal is 96/266 g in 1996.
 
-| Row | Previous range/source | Proposed range and change |
+| Row | Previous range/source | Applied range and change |
 |---|---|---|
 | 1570 CU2 specimen | Undated, 1 | Undated, describe the visible road configuration |
 | 10279 CU2 without rings | 1996–1999, 357 | 1996–1999, add road spider and drivetrain dimensions |
@@ -4410,11 +4410,29 @@ and hub identities in the worklist.
 | 10764 Alu-Ergal rear | 1996–1996, 357 | 1996–1998, add 8/9-speed cassette compatibility |
 | 10765 Carbon-Ergal rear | 1996–1996, 357 | 1996–1998, give dated weights and drillings |
 
-Prepared seven guarded updates and one catalogue source registration.
-All targets have zero bike links. The FRM near-pair scan found no candidates.
-The SQL, original scan and validation baselines in `/private/tmp/velo-quality-worklist.6rxETT/`
-support approval and live verification. The SQL records the previous
-descriptions, date bounds and sources for restoration.
+Applied and validated on 2026-11-21. The load registered source **511**
+and updated all seven rows. Live readback matched the descriptions, date
+bounds, source, categories and UUIDs. The Feather description specifies
+7075 flanges bonded to the carbon centre shell and a separate 7075 axle.
+All seven rows have zero bike links. The audit reported zero structural
+errors and the same review findings as before. The 24,829-spec comparison
+matched the baseline, including the same 15 existing lost proposals. The
+FRM near-pair scan found zero candidates, and the SQL replay affected zero
+rows.
+
+To reverse, verify dependencies, restore the previous ranges and source IDs
+in the table above and the descriptions below, then check whether source
+511 is still referenced.
+
+| Row | Previous description |
+|---|---|
+| 1570 | `FRM CU2, Italy` |
+| 10279 | `Alloy 7075; crank lengths 170-172.5-175-177.5 mm; weight without chainrings 400 g; cranks CNC-machined from solid; 400g` |
+| 10305 | `7075 alloy flanges and axle, carbon-fibre composite centre body; width 100; weight without QR; holes 24-28-32; sealed bearings; 70g` |
+| 10762 | `7075 alloy flanges and axle, alloy centre body, 100 mm, 32-36 holes, sealed bearings, dust cap, anodised; 96 g.` |
+| 10763 | `7075 alloy flanges and axle, carbon-fibre composite centre body, 100 mm, 16-36 holes, sealed bearings, anodised; 88 g.` |
+| 10764 | `7075 alloy flanges and axle, alloy centre body, 130 mm, 32-36 holes, Shimano cassette freehub, sealed bearings; 266 g.` |
+| 10765 | `7075 alloy flanges and axle, carbon-fibre composite centre body, 130 mm, 16-36 holes, Shimano cassette freehub, sealed bearings; 256 g.` |
 
 ### Guida '96 follow-up: Mavic rim identities — 2026-11-18
 
