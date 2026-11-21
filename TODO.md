@@ -5,7 +5,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Product and infrastructure
 
 - Implement and validate [component evidence references](README.md#proposed-component-evidence-references), update ingest workflows and backfill verified claims from notes.
-- Show catalogue country on client bike lists/search results where rows collide.
 - Plan a Cinelli/De Rosa bike-image pilot: inspect the existing blob column, settle rights/cropping, then design storage/API/client delivery.
 - Remove the extra DB-password encryption, coordinate SSM/plaintext application deployment, smoke-test and rotate the password.
 

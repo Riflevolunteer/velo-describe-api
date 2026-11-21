@@ -282,9 +282,13 @@ change does not establish new live DB duplicate counts or apply any merges.
 
 See [TODO.md](TODO.md).
 
-Catalogue country is already returned by the bike API routes and displayed by
-`velo-describe/screens/BikeDetailScreen.js`. The remaining client task concerns
-country disambiguation in list/search results; `screens/BikesScreen.js` still
-groups by year and renders model titles without country. Database password
-handling still calls `decrypt(config.db.password)` in the API and database
-scripts; the plaintext/SSM migration remains pending.
+Catalogue country is returned by the bike API routes and displayed by
+`velo-describe/screens/BikeDetailScreen.js`. The client's browse, search and
+recently added lists also label catalogue countries when the displayed entries
+for a brand/year span multiple markets. Shared helper
+`velo-describe/utils/catalogueLabelsForBikes.js` preserves single-country
+listings and keeps navigation tied to each edition's bike ID. This uses the
+existing API country field; no database or API response changes were needed.
+
+Database password handling still calls `decrypt(config.db.password)` in the
+API and database scripts; the plaintext/SSM migration remains pending.
