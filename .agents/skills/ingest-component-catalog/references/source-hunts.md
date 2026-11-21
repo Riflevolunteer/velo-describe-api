@@ -4,6 +4,80 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ## Log
 
+### Bike-link source priorities — 2026-11-21 (read-only)
+
+Reviewed live unlinked specs, candidate component identities, the explicit
+leave-unlinked registry and linked-date findings against the acquisition backlog.
+This is source triage: no DB/source/date/link/CSV/matcher edits or SQL proposal.
+Generic maker/material/size descriptions and reviewed ambiguity are not promised
+link gains. Re-query coverage for current counts rather than treating the older
+priority lists below as current inventories.
+
+**First reconciliation: SR coded Raleigh hubs.** The newly working Headbadge
+endpoint supplies original 1986 tables; the 1985 Sheldon scan is also readable.
+CRH-310, CRH-301, MTH-100 and MTH-100SD are now supported by inspected bicycle-maker
+tables, without waiting for a complete SR No.19–23 catalogue. See the
+[page/code ledger and exact spec IDs](known-catalogs/sakae-ringyo.md#raleigh-coded-hub-source-recovery--2026-11-21-read-only).
+The [applied reconciliation and validation](known-catalogs/sakae-ringyo.md#raleigh-coded-hub-reconciliation--2026-11-21-applied-and-validated)
+supersede the comparison/proposal-only status: four code-specific records
+12202–12205 and the supported bounded links are applied. Generic SR hubs and front/rear mixtures
+need their own identity evidence. This supersedes the earlier SR-hub “nothing
+period found” status below, not the parked full-range catalogue hunt.
+
+**Second reconciliation: Strong NS-3 seatpost.**
+The [applied NS-3 reconciliation and validation](known-catalogs/strong.md#ns-3-reconciliation--2026-11-21-applied-and-validated)
+supersede the acquisition/proposal-only status. Original Miyata1987 and
+Bianchi1990–92 fitment pages are now checked; the accessible Kuwahara table
+also distinguishes NS-3C. Component12206, source504 and the supported named
+fitment links are applied; the unnamed Micro specimen has no proven NS-3 crosswalk. The original
+Kuwahara pages are bicycle-maker fitment evidence, not a Strong range catalogue.
+The earlier403 Retrobike Specialized1991 lead now has an accessible German
+catalogue alternative with a visually verified NS-3 table; edition equivalence
+is not assumed. Source URLs, exact targets and specimen limits are in the brand
+notes. This supersedes the old Strong NS-3 source-gap note below.
+
+**Solida coded cranks.** The
+[applied 5171/5271 reconciliation and validation](known-catalogs/solida.md#5171-and-5271-reconciliation--2026-11-21-applied-and-validated)
+supersede the comparison/proposal-only status: the original Peugeot fitments
+and generic specimens are checked, components12207/12208 and the supported
+exact links are applied. Existing technical source 489 is reused. Other codes
+still require separate evidence; no full Solida maker catalogue was recovered.
+
+The technical table is a 122mm/five-arm key, not evidence of availability
+in1995 or a way to distinguish the generic1851 specimen from either model.
+Keep5270A,5371/S371,52D,520,5470,100/101,2000 and the MBK32D/55D/75D codes
+separate pending their own evidence. Nervar1020/3070/5570 need separate keys;
+2020S may instead require reconciliation with existing2020 component10980.
+The earlier failed broad Solida/Peugeot spares hunts remain valid; the technical
+table is an additional usable lead, not a recovered1980s maker catalogue.
+
+**High-value source still wanted: Tange headset code/construction key.** Prioritise
+TH-305/305C (1984–90 Bianchi/Peugeot), TH-108 (1989–90 Bianchi) and MES Sealed
+(1986 Miyata) in a newly available 1984–90 headset maker/importer sheet. AW27
+(1984/86 Motobécane), MX600M and 230SLP are additional exact targets. Unique
+FE/X must be compared with existing 11346, not counted as wholly absent models.
+No new readable headset range source recovered in this pass. The previously
+checked 1986/88 Tange tubing/frame catalogues do not answer this question;
+reopen the broad hunt only for a new headset-page lead.
+
+**Date/identity evidence, distinct from new links.** Maillard 600 SH 8130/8131
+have linked 1988-and-later fitments beyond their stored 1987 end; seek a coded
+later Sachs-Maillard/Peugeot offering and distinguish Helicomatic variants
+before changing bounds or mappings. Stronglight A9 locknut row 3112 likewise
+needs an A9/A9H and locknut-construction key for its 1987–89 Peugeot links;
+the [1986 catalogue review](known-catalogs/stronglight.md) explicitly left these
+bike-derived conflicts outside its scope. A date warning is not evidence that
+the existing variant is correct. The existing Sedis 1402/8765 identity/treatment
+review remains a separate actionable task, not a reason to repeat the hunt.
+
+**Lower immediate bike-link return:** the Tioga 1989/1991 proposal remains useful
+component work, but the live remaining text in scope is generic “Tioga sealed”
+headsets, not named Farmer John/Mud Dawg/Surefoot/City Slicker gaps. KKT RT-E1
+has an existing reviewed RT-E/RT-EII identity hold; do not present it as a fresh
+easy model addition. UK contact-only acquisition and paid Yaesu remain deferred.
+Source URLs/pages and unresolved comparisons are retained here; disposable
+downloads, audit snapshots and renders were removed after documentation checks.
+
 ### Gringineer component maker leads — triage 2026-11-20
 
 **Titec follow-up applied and validated:** the [full reconciliation, exact changes and validation](known-catalogs/titec.md#1997-maker-catalogue-and-dealer-sheet--applied-and-validated-2026-11-20)

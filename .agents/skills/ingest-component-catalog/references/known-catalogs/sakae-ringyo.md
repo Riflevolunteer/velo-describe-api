@@ -399,6 +399,123 @@ Source465, printed p.9, fits sealed-bearing MTP1009/16 to T50 Tracker. The SR ma
   Source files remain at their cited public URLs; the app registers citations
   and does not provide a document storage/upload facility.
 
+## Raleigh coded-hub source recovery — 2026-11-21 (read-only)
+
+The [Headbadge 1986 US catalogue](https://theheadbadge.com/catalogs/1986-raleigh-catalog-usa/)
+now serves readable original tables. This is a working mirror of held bike
+evidence, not a newly discovered SR edition. Visually checked original scans
+[030](https://theheadbadge.com/wp-content/uploads/1986-raleigh-cat-usa-030.jpg)
+and [031](https://theheadbadge.com/wp-content/uploads/1986-raleigh-cat-usa-031.jpg):
+Supercourse lists CRH-310 alloy front and QR36-hole rear; Grand Prix CRH-301
+alloy; Technium480/460/440 CRH-310 small-flange QR sealed alloy36-hole;
+Olympian's continuation on031 says CRH-310 alloy sealed QR36-hole;
+Crested Butte says MTH100 precision sealed36-hole.
+
+Also inspected the [1985 specification scan](https://www.sheldonbrown.com/retroraleighs/catalogs/1985/images/specifications.jpg):
+Portage's continuation at the top of column2 lists MTH-100 large-flange alloy,
+QR 36-hole front/40-hole rear, precision sealed bearings. Crested Butte lists
+Sakae Ringyo MTH-100SD precision sealed bearing, large-flange alloy bolt-on.
+The acquisition-stage unlinked targets were 3373/3566 (1985) and
+8219/8239/8319/8340/8360/8381/8502 (1986); the reconciliation below now records
+their applied model links. Do not infer that generic SR hub specs8259/8402/8422 name
+one of these models, or that MTH-100 and MTH-100SD are interchangeable.
+
+This supersedes the November15 table-access limit and “no new primary
+specifications” statement below **for these Raleigh hub codes only**. Complete
+No.19–23 recovery remains parked; no dates, components, links or sources changed.
+
+## Raleigh coded-hub reconciliation — 2026-11-21 (applied and validated)
+
+Follow-up to the source recovery above. Re-read all three original tables and
+checked live SR brand49 / Hubs category13, cross-brand coded-title matches,
+source registrations and every SR-named hub fitment. User approved the reviewed
+four-record/nine-link proposal. Four components 12202–12205 and the nine coded
+NULL-to-model links are now applied, with scoped generator entries installed.
+Existing components/dates, source registrations and CSV values are unchanged;
+the three uncoded specs remain NULL.
+
+### Applied component records and exact links
+
+All titles use the existing `Sakae/Ringyo (SR)` prefix; `group_id=NULL`.
+Dates below are **observed catalogue attestations**, not established production
+start/end dates. No existing date bounds are widened.
+
+| Component / code | Description | Attested years / primary existing source | Exact spec targets |
+| --- | --- | --- | --- |
+| 12202 CRH-310 | Small-flange alloy quick-release hub with sealed bearings, 36 spoke holes. | 1986 /223, tables030–031 | 8219 Supercourse;8319/8340/8360 Technium480/460/440 USA;8381 Olympian |
+| 12203 CRH-301 | Alloy hub. Axle type, flange size, bearing construction and spoke drilling unspecified. | 1986 /223, table030, Grand Prix | 8239 Grand Prix |
+| 12204 MTH-100 | Precision-sealed large-flange alloy hub. Quick-release 36H front/40H rear configuration; 36H also specified. | 1985–86 /44,1985 Portage; also223,1986 Crested Butte, table031 | 3373 Portage1985;8502 Crested Butte1986 |
+| 12205 MTH-100SD | Large-flange alloy bolt-on hub with precision-sealed bearings. | 1985 /44, Crested Butte | 3566 Crested Butte1985 |
+
+- CRH-301 is visibly printed on Grand Prix; do not silently “correct” it to
+  CRH-310 or copy the latter's detailed specifications into it.
+- The same CRH-310 code is explicit for both Supercourse hubs, so its combined
+  front/rear cell can use one model-level record. This does not establish the
+  front axle type independently of the rear or create a new per-position schema.
+- MTH-100SD's bolt-on specification distinguishes it from the explicitly QR
+  1985 MTH-100 configuration. The1986 MTH100 text supplies36-hole fitment,
+  without independently specifying its axle/flange construction. It does not
+  establish an alias to MTH-100SD. No cartridge-bearing construction, weight,
+  spacing or thread dimensions inferred from “sealed”.
+- Reuse registered bike sources44 and223; do not create another maker catalogue
+  source for these fitment-derived rows. Original scan URLs remain in the source
+  ledger above; both editions are US catalogues.
+
+### Existing candidates and duplicate limits
+
+Before application, no exact CRH-310/301 or MTH-100/100SD component record was
+found. The pre-existing SR hubs are 3514 `d-84`,7913 SH-100QR,7914 SH-300QR,7915 SH-100SK/SD,
+7916 SH-300SK/SD and8239 SH-600. All have no bike links at this baseline.
+The hub category is13; **bike spec8239** and **component8239** are different
+entities and must not be confused.
+
+7913–7916 and8239 carry source122 (P-7, September1982); their SH numbering,
+flange/axle descriptions and earlier source do not establish aliases to the
+Raleigh CRH/MTH codes. Similar large/small flanges or the suffix100/300 alone
+are insufficient. Leave these rows and their1982 bounds unchanged; do not
+relabel them to manufacture a crosswalk. 3514 is the bare VeloBase `d-84`
+specimen, source1, stored1980–1980. Its public entry names an SR Japan d-84
+marking and a low-flange36-hole alloy shell, without a CRH/MTH code. It cannot
+currently identify one of the coded records; no merge or date adjustment
+was made. These are unresolved alias limits, not proof that differently
+numbered hubs could never share construction.
+
+### Application and validation
+
+The approved guarded SQL inserted exactly four UUID-keyed components and
+updated exactly nine NULL spec links. A complete link readback confirmed those
+nine were the only DB link changes. Existing SR hub metadata and dates, source 44
+and 223 records, bike/spec/source counts and all target values are unchanged.
+Component count increased by four. All new descriptions fit 255 characters;
+`search_text` uses the shared builder. Sources 44/223 were reused without inserts.
+
+Seven exact normalized value keys with nine bike/year scopes now use the actual
+inserted IDs in `COMPONENT_OVERRIDES.Hubs`. The pre-application in-memory
+comparison of 117 loaded catalogues /24,479 specs predicted exactly those nine
+mapping gains and no other changes. After application, the maintained full
+generator/live comparison has identical findings to its baseline: 15 pre-existing
+lost mappings, no gained/changed or missing/ambiguous identities. The nine new
+links agree with their installed generator mappings; no new drift was introduced.
+
+Whole-DB quality findings are identical before/after: 0 errors,2032 reviews,
+including 291 existing linked-date reviews. SR/Hubs duplicate and near-pair
+reports returned no candidates; the unresolved SH/d-84 crosswalk limits above
+still apply. Re-running the full SQL affected zero inserts and zero updates;
+the subsequent readback reconfirmed all exact IDs and generic NULLs.
+The comparison and link-decision test files both pass, as does the generator
+syntax check.
+
+For restoration, the nine target links listed above were originally NULL and
+all four component IDs are new. Clear only those links still pointing at their
+new IDs, remove their scoped generator entries, and remove the new components
+only after checking other references. No old component/source values need
+restoring. Temporary SQL, proposal, audit outputs and downloaded table images
+were removed after validation; the original source URLs/pages remain above.
+
+Uncoded Portage8259, Marathon8402 and mixed-material Pursuit8422 remain
+unlinked under the [recorded identity decision](../../../ingest-bike-specs/references/link-decisions.md#hubs).
+Their mere proximity to a coded offering is not a model identification.
+
 ## Mid-1980s source-gap review — 2026-11-15 (read-only)
 
 ### Full catalogue recovery
@@ -744,4 +861,3 @@ promised recoverable links. Six component labels only:
   review images/HTML were removed after validation; primary evidence remains
   at the URLs above. This was a targeted crank-code check, not a full
   reconciliation of the catalogue's other component specifications.
-

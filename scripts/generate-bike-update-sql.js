@@ -1553,6 +1553,19 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000': [{ from: 1989, to: 1989, id: 4790 }], // RD-XD00-GX (matcher took the "(1990)" row)
   },
   Hubs: {
+    // Raleigh US 1985/86 original tables: explicit SR model codes only.
+    // Source/identity ledger: known-catalogs/sakae-ringyo.md, Raleigh coded hubs.
+    'sr crh 310 alloy (front); sr crh 310 alloy qr 36° (rear)': [{ bike: 'Supercourse', from: 1986, to: 1986, id: 12202 }],
+    'sr crh 310 small flange qr sealed alloy 36°': [
+      { bike: 'Technium 480 USA', from: 1986, to: 1986, id: 12202 },
+      { bike: 'Technium 460 USA', from: 1986, to: 1986, id: 12202 },
+      { bike: 'Technium 440 USA', from: 1986, to: 1986, id: 12202 },
+    ],
+    'sr crh 310 alloy sealed qr 36°': [{ bike: 'Olympian', from: 1986, to: 1986, id: 12202 }],
+    'sr crh 301 alloy': [{ bike: 'Grand Prix', from: 1986, to: 1986, id: 12203 }],
+    'sr mth 100 large flange alloy qr 36 hole front 40 hole rear precision sealed bearings': [{ bike: 'Portage', from: 1985, to: 1985, id: 12204 }],
+    'sr mth 100 precision sealed 36°': [{ bike: 'Crested Butte', from: 1986, to: 1986, id: 12204 }],
+    'sakae ringyo mth 100sd precision sealed bearing large flange alloy bolt on': [{ bike: 'Crested Butte', from: 1985, to: 1985, id: 12205 }],
     // c.1991 MBK Course: explicit table identities; no date expansion.
     "shimano 1055 quick release": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 3527 }],
     "shimano rx 100 quick release": [{ bike: "C227 Mirage", from: 1991, to: 1991, id: 3579 }],
@@ -2590,6 +2603,25 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    // Peugeot original coded Solida fitments; 5171 and 5271 share BCD, not an established alias.
+    // Evidence and specimen limits: known-catalogs/solida.md.
+    'solida 5171 dural 42 x 52t': [{ bike: 'PH 11', from: 1984, to: 1984, id: 12207 }],
+    'solida 5271 dural 40 x 50t': [{ bike: 'PH 10 LS', from: 1984, to: 1984, id: 12208 }],
+    'solida 5271 40 x 52t': [
+      { bike: 'PH 11 Avance', from: 1984, to: 1984, id: 12208 },
+      { bike: 'PH 10 LS Competition', from: 1984, to: 1984, id: 12208 },
+      { bike: 'PH 10 L Criterium', from: 1984, to: 1984, id: 12208 },
+    ],
+    'solida 5271 alloy 42 x 52t': [
+      { bike: 'P 6 Iseran', from: 1986, to: 1986, id: 12208 },
+      { bike: 'P 16 Iseran', from: 1986, to: 1986, id: 12208 },
+    ],
+    'solida 5271 42x52': [
+      { bike: "PE 10D W 'Aubisque'", from: 1987, to: 1987, id: 12208 },
+      { bike: "PE 10L W 'Aubisque'", from: 1987, to: 1987, id: 12208 },
+    ],
+    'solida 5271 dural 42x52': [{ bike: "PE 10 LS 'Aubisque'", from: 1988, to: 1988, id: 12208 }],
+    'solida 5271 alloy cranks 42x52': [{ bike: 'Avoriaz', from: 1989, to: 1989, id: 12208 }],
     // c.1991 MBK Course: explicit table identities; no date expansion.
     "campagnolo croce d'aune alloy 42 52t 170 mm cranks": [{ bike: "C977 Record Max", from: 1991, to: 1991, id: 1489 }],
     "shimano 1055 alloy 42 52t 170 mm cranks": [{ bike: "C387 Mirage Pro", from: 1991, to: 1991, id: 1782 }],
@@ -4428,6 +4460,22 @@ const COMPONENT_OVERRIDES = {
     'shimano pd 731': [{ from: 1989, to: 1989, id: 7198 }], // PD-M731
   },
   'Seat Posts': {
+    // Explicit NS-3 fitments: Miyata 1987 and Bianchi 1990/91/92.
+    // NS-1, NS-3C and unnamed Strong posts have no established alias here.
+    'strong ns 3': [
+      { bike: 'Sky Runner', from: 1987, to: 1987, id: 12206 },
+      { bike: 'Terra Runner', from: 1987, to: 1987, id: 12206 },
+      { bike: 'Peregrine', from: 1990, to: 1990, id: 12206 },
+      { bike: 'Sika', from: 1990, to: 1990, id: 12206 },
+      { bike: 'Osprey', from: 1990, to: 1990, id: 12206 },
+      { bike: 'Virata', from: 1991, to: 1991, id: 12206 },
+      { bike: 'Alfana', from: 1991, to: 1991, id: 12206 },
+      { bike: 'Peregrine', from: 1991, to: 1991, id: 12206 },
+    ],
+    'strong ns 3 silver': [
+      { bike: 'Alfana', from: 1992, to: 1992, id: 12206 },
+      { bike: 'Premio', from: 1992, to: 1992, id: 12206 },
+    ],
     'atax alloy': [{ bike: 'Cosmic', from: 1989, to: 1989, id: null }], // 1989 Peugeot (NL): maker and material only; 8528 is a specific 1982 pillar. See cross-catalog notes 2026-11-20.
     // c.1991 MBK Course: explicit table identities; no date expansion.
     "campagnolo athena alloy with saddle clamp": [{ bike: "C477 Super Record", from: 1991, to: 1991, id: 5736 }],

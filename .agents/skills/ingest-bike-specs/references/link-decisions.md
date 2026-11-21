@@ -271,6 +271,16 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Hubs
 
+- Reviewed2026-11-21: Raleigh1986 Portage **8259** (`SR alloy, sealed LF QR
+  36° / rear:40°`), Marathon **8402** (`SR alloy QR sealed36°`) and Pursuit
+  **8422** (SR alloy front / steel CP rear) remain unlinked. Portage resembles
+  the1985 MTH-100 configuration, but its1986 table omits a model code;
+  Marathon's sealing/QR/drilling likewise do not identify CRH-310. Pursuit
+  combines different front/rear materials without a model identification for
+  either half. Do not carry a neighboring bike's code or a prior year's model
+  into these cells. Revisit only with a coded original fitment or a maker/parts
+  crosswalk. [Source ledger and applied coded-only links](../../ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#raleigh-coded-hub-reconciliation--2026-11-21-applied-and-validated).
+
 - Applied/validated 2026-11-17, **user approved**: 1991 Bianchi Grizzly
   spec **19546**, `SunTour XC-Pro`, unlinked **3628 HB-XP00-R -> NULL**.
   The former link specified a threaded rear freewheel hub. Original Japanese table p.9

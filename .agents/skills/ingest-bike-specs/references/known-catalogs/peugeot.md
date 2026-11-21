@@ -576,6 +576,12 @@ alter CSVs, database records or the prior country decision.
 
 ## 1984 Peugeot — `1984_peugeot_spec.csv` (FR, data_source 257: 32 bikes, 492 specs, 88 linked) and `1984_peugeot_gb_spec.csv` (GB, data_source 258: 11 bikes, 200 specs, 45 linked)
 
+- Solida follow-up,2026-11-21, user approved and validated: PH11 FR spec12070
+  now links to12207 Solida5171; PH10LS FR12088 and GB12381/12399/12417 link
+  to12208 Solida5271. The same application covers the coded1986–89 fitments
+  in sources310/311/319/320. Existing dates, sources and CSV values are
+  unchanged. [Original-page evidence, exact targets and validation](../../../ingest-component-catalog/references/known-catalogs/solida.md#5171-and-5271-reconciliation--2026-11-21-applied-and-validated).
+
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1984.html (40 images, loaded
   2026-10-22). Images 1-30: French "Peugeot Bicyclettes 1984, A la rencontre de la liberté"
   (bikeboompeugeot.com; image N = printed page N; dealer stamp 11/83, prices pencilled in). Racing pp. 4-7
@@ -612,7 +618,7 @@ alter CSVs, database records or the prior country decision.
   Motobecane, post 5749 to 1985) now carry a `{ bike: 'PZ 10', id: null }` entry first, so only that
   Super Record bike is blocked. A year-based block was tried first and cost the 1983 Bianchi Campione del
   Mondo its seat-post link.
-- Left unlinked: Campagnolo 1052/1 front (rows 1960-77), Peyrard / Nervar 3020 and Solida 5171 / 5271 / 5371
+- Left unlinked at ingestion: Campagnolo 1052/1 front (rows 1960-77), Peyrard / Nervar 3020 and Solida 5371 (5171/5271 follow-up above)
   cranks, Maillard Palette CX 500 / 550, CX650, CX700, 700 pedals, Helicomatic freewheels, Atom and Maillard
   hubs, Lightrace headsets, Turbo / Tenor / Viscount Terra saddles, CLB brakes, Huret Duopar (variants), the
   MB parts (SunTour, SR, Tange, Araya, Sumo, VP), generic cells.
