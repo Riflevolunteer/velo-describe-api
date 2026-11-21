@@ -1,5 +1,37 @@
 # Bianchi catalogs processed so far
 
+## 1994–99 catalogue source review — 2026-11-21
+
+Downloaded the archive PDFs, counted their pages, checked the page sequences
+and inspected representative specification pages and market evidence. The live
+source register has no Bianchi 1994–99 entry. The pages below are PDF page
+numbers. Full model inventories and transcription are pending.
+
+| Source | Edition evidence | Specification coverage and condition |
+| --- | --- | --- |
+| [1994, 23 pages](https://www.bikecatalogs.com/download/2801) | English North American range. Rear cover names Bianchi USA and Bianchi Canada and carries code M694. | Road, Reparto Corse, MTB and cross-terrain blocks with specs beside the models. Legible. Some handwritten dealer prices. |
+| [1995, 28 pages](https://www.bikecatalogs.com/download/2802) | English Bianchi USA range. Rear cover also lists Canadian and Australasian offices. The 110th anniversary model and 1994 race results support the archive's 1995 dating. | Legible consolidated specification tables on pp. 23–27, following geometry on p. 22. |
+| [1996, 23 pages](https://www.bikecatalogs.com/download/2804) | English Bianchi USA, ©1996 on p. 23. | Legible road/MTB/cross-terrain tables on pp. 16–22. Several PDF pages are spreads. |
+| [1996 German-language, 33 pages](https://www.bikecatalogs.com/download/2803) | German-language edition with a Thalinger Austria price sheet appended, effective 1 January 1996. The price sheet names a separate Austrian equipment specification. | Legible model specs on the illustrated spreads, with road pp. 7–13. Establish the market of the main catalogue separately from the Austrian insert before ingesting. |
+| [1997, 24 pages](https://www.bikecatalogs.com/download/2805) | Cover-dated Japanese 1997 catalogue on pp. 1–19. Pp. 20–24 append different covers and sample pages, including an English 1997 product guide. | Main model images are about 320 px wide. Models such as Neuron Chorus are identifiable, but the component tables are too soft for reliable transcription. |
+| [1998, 31 pages](https://www.bikecatalogs.com/download/2806) | English Bianchi USA, in-catalogue 1998 text and Hayward imprint. The [Upcycles archive](https://upcycles.cc/blogs/catalog-archive/1998-bianchi-catalog-usa) also identifies this edition. | Legible model specs and geometry on pp. 29–31, including Alloro, Veloce, Campione, Eros, Trofeo, Premio, San Remo and Volpe on p. 29. |
+| [1999, 20 pages](https://www.bikecatalogs.com/download/2807) | Cover-dated Japanese 1999 road catalogue. Some pages are rotated. | Model names and photographs survive. Small Japanese build tables remain blurred at their native image size. |
+
+The [collector's catalogue thread](https://www.bikeforums.net/classic-vintage/1245218-bianchi-catalog-treasure-trove-plus-other-stuff.html)
+reports a full US-market scan run through 1998 and a 1999 USA scan in post 8.
+The album and 1999 cover attachment were not retrievable. A new public copy
+of that album or sharper originals would reopen the 1997/1999 search.
+
+The archive's [1985 PDF](https://www.bikecatalogs.com/download/2790) is the same
+five-page introductory/photographic fragment described below. The collector's
+[1985 USA specification photo in post 25](https://cimg1.ibsrv.net/gimg/bikeforums.net-vbulletin/1743x1860/73473a67_f7c6_4518_91f3_f4bcd24ec310_b574c54d05b023781a243cb673363d44a8de138d.jpeg)
+supplies a legible right-hand table with ten rows, including hubs, shifters,
+derailleurs, gear clusters, rims and tyres. The photo omits the left half
+that identifies each model and supplies frame, crank and brake specifications.
+Its English text, CPSC notation and pound weights support US-market treatment.
+The matching left half or full album is needed to align the rows and establish
+whether the photo belongs to the exact brochure represented by the fragment.
+
 ## Source backlog reconciliation — 2026-11-20
 
 Live catalogue readback and existing notes confirm the 1991/1992 Japanese
@@ -7,7 +39,8 @@ editions and 1993 US edition are already loaded (see their sections below).
 The broad TODO request for 1991–99 sources was stale: remaining year gaps are
 1994–99, alongside 1974–77 and 1979–80. A 1991–93 acquisition is useful only
 when it establishes a different market/edition, not another mirror of these
-loaded catalogues. This review changes the worklist only, not DB rows.
+loaded catalogues. The source review above supersedes the 1994–99 acquisition
+status.
 
 ## Cluster review — 2026-11-20
 

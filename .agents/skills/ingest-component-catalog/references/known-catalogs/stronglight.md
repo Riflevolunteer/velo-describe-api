@@ -1,5 +1,35 @@
 # Stronglight catalogs processed so far
 
+## 2001 Titanium cassette — 2026-11-21 (applied and validated)
+
+The bilingual [Stronglight Road/MTB catalogue](https://www.disraeligears.co.uk/site/stronglight_-_catalogue_2001.html)
+prints 2001 on its cover. The cassette is pictured with Century and Rockstrong
+on pp. 11 and 13. The matching [Century](https://www.disraeligears.co.uk/site/00_main_images/stronglight_catalogue_2001_page_023_main_image.jpg)
+and [Rockstrong](https://www.disraeligears.co.uk/site/00_main_images/stronglight_catalogue_2001_page_024_main_image.jpg)
+tables both specify 11–32T, all-titanium sprockets, spider mounting and 220 g.
+The [specimen behind component 1213](https://www.velobase.com/Pages/ViewComponent.aspx?ID=F6DE2886-2CD8-40B6-A13B-A7E98D0FDE11)
+has the same gold-coloured stack and lockring. Its
+[manufacturer box](https://www.velobase.com/CompImages/Cassette/06AAFE0D-3979-4B28-86FD-E903E4E1BB20.jpeg)
+explicitly confirms nine speeds, Shimano compatibility and titanium sprockets.
+The box leaves the ratio unstated. The 11–32T and 220 g figures describe the
+catalogue offering. Other reported ratios or measured weights do not establish
+the specimen's tooth count, catalogue revisions or production endpoints.
+
+Live baseline: 1213 is the only Stronglight cassette, with both bounds NULL,
+description `Stronglight Titanium, France`, source 1 and zero bike links.
+The approved load registered source 507 with market NULL and updated 1213
+in place to 2001–2001 as an availability attestation. It retained the specimen
+GUID and title. The applied description is `9-speed Shimano-compatible
+cassette with titanium sprockets. The 2001 catalogue lists an 11–32T spider-mounted
+version at 220 g for Century and Rockstrong.`
+
+Readback verified source 507, both dates, the description and zero bike
+links. Scoped near-duplicate and parenthetical-name checks found no pairs.
+The generator comparison reproduced all 24,479 mappings and the same 15
+pre-existing lost proposals. The guarded rerun changed zero rows. To restore,
+set the previous description and date bounds above and source_ref to 1.
+Remove source 507 only after verifying it has no remaining references.
+
 ## Peugeot 99 fitment reconciliation — 2026-11-21 (applied and validated)
 
 Existing TODO scope: Peugeot1984 PCA10/PCA15 specs12161/13761 and Peugeot1988

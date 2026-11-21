@@ -175,17 +175,16 @@ Preserve these five user-provided originals in `/Users/acooper/Desktop/`:
 | `s-l1600 (3).webp` | 4 | Front cover; no additional model specifications |
 | `s-l1600 (2).webp` | 5 | Clearer XCExpert / XCMaster / XCT brake specifications |
 
-This is a partial photographic recovery, not six gallery originals or an
-unobscured complete brochure. The Short Stop panel needs a straight-on view for
-all model numbers and text. In the following inventory, 1990 is the range year,
-not a claimed manufacturing start. Existing dates remain unless separately justified.
+The five photographs cover parts of the brochure. In the inventory, 1990 is
+the range year. See the Short Stop follow-up below for the two captions that
+were initially indistinct.
 
 | Category | Identity / title | Readable manufacturer specifications | Applied reconciliation |
 | --- | --- | --- | --- |
 | Brake Levers | Dia-Compe 286, Short Stop (X-1) | Cold-forged lightweight alloy; natural wrist/finger/lever alignment; one-finger to full-fisted action; direct force angles for modulation. | Added 11545, 1990–1990. DB component ID 286 is unrelated SVX. |
 | Brake Levers | Dia-Compe 292, Short Stop | Visible 292 code; replaceable lever; BRS spring-assisted return with three-position tension adjustment; continuous micro-position reach adjustment. | Added 11546, 1990–1990. No inferred clamp size or weight. |
-| Brake Levers | Short Stop, middle pictured model (possible 290; code needs clearer view) | Quick action with BRS spring-assisted return; compatibility with contemporary handlebar designs. | Do not allocate an inferred model number or merge with 292. |
-| Brake Levers | Short Stop, lower pictured model (apparent 288; confirm code in straight-on photo) | Continuous pivot alignment and non-slip die-cast clamp. | New-model candidate; defer exact numbered record until code is unambiguous. |
+| Brake Levers | Advantage 5, middle pictured model | The rectified caption reads Advantage 5. March 1989 p. 18 identifies this lever as (183). | Added the documented name to the 183 family row 8115 in the follow-up. |
+| Brake Levers | Dia-Compe 288, Short Stop, lower black lever | BRS spring-assisted return. The 1989 ZAOH chart confirms the code. | Added separate row 12227 in the follow-up. |
 | Brake Levers | Dia-Compe XCExpert, standard / Short Stop | Custom reach adjustment, non-slip die-cast clamp, continuous pivot alignment; explicitly available in standard and Short Stop sizing. | Added 11547, 1990–1990. Standard/Short Stop are documented variants, not inferred numeric codes. |
 | Brake Levers | Dia-Compe XCMaster (XCM) | Custom reach adjustment, non-slip die-cast clamp and continuous pivot alignment. | Enriched 267 title/description, retained 1989–1990; source 1 -> 448. |
 | Brake Levers | Dia-Compe XCT | BRS spring-assisted return, strong composite construction, reach adjustment and continuous pivot alignment. | Added 11548, 1990–1990. |
@@ -266,10 +265,43 @@ the 1989 984 override; restore these four rows' old title/description/search/sou
 values using the UUIDs, remove new rows only once unreferenced, and remove source
 448 only if no references remain. Date bounds need no restoration.
 
-What this adds over the March 1989 partial guide: a verified 1990 MTB range,
-explicit 984 specifications, the X-1/286 pairing, and named XCExpert/XCMaster/XCT
-brake and lever specifications. It does not fill the missing March guide pages,
-prove 984 = 984D, or supply a readable complete Short Stop model panel.
+The brochure establishes the 1990 MTB range, explicit 984 specifications,
+the X-1/286 pairing and named XCExpert/XCMaster/XCT brake and lever
+specifications. The March guide supplies the separate 984D evidence.
+
+### Short Stop caption follow-up — 2026-11-21
+
+Rectified the original user-held `s-l1600.webp` and compared its illustrations
+with the [March 1989 maker guide, p. 18](https://i.ebayimg.com/images/g/lDAAAOSwELZjzuyj/s-l1600.webp)
+(source 447). The three upper captions on the 1990 panel (source 448) read 292,
+Advantage 5 and 288. The yellow-bladed XCExpert is below them. The right-side
+continuous-pivot and die-cast-clamp callouts point to XCExpert. The BRS-return
+callout points to the black 288. This supersedes the earlier middle-lever
+guess of 290 and resolves the new-photo request for the codes.
+
+The 1989 Advantage Colbar diagram lists Compact 292 and 290 separately. The
+ZAOH diagram lists 288 separately and labels Advantage 5 as (183). Live
+readback found existing 11546 (292, 1990–1990, source 448) and 8115 (183 family,
+1986–1989, source 447), and no existing 288 or 290 row. Neither existing row
+has bike links. The live spec search found no exact 288, 290, 292 or Advantage 5
+fitments.
+
+The user-approved load added 288 as **12227** (1989–1990, source 448) and 290
+as **12228** (1989–1989, source 447), extended 11546's lower bound to 1989
+with source 447, and added the documented Advantage 5 name to 8115's
+description. For 8115 the old
+description is `BMX levers, 22.2mm clamp, many colours: 183/Tech-5 stroke
+adjustment 100g, 183-II 100g, 183-III two-piece bracket 98g, 183S stopper 106g,
+183S-II 106g.` The applied text appends `Listed as Advantage 5 (183) in the
+1989 ZAOH system chart.` The two catalogue dates attest availability.
+
+Readback confirmed two inserts and two updates with zero bike links across
+the four rows. The guarded rerun changed zero rows. Scoped near-duplicate
+and parenthetical-name checks found no pairs. All 24,479 generated mappings
+and the 15 pre-existing lost proposals matched the pre-load baseline. The
+whole-database audit found zero structural errors after both catalogue changes.
+To restore, return 11546 to 1990–1990 and source 448, restore 8115's old
+description, and remove 12227/12228 only after checking for new references.
 
 ## March 1989 Product Guide — eBay 144913620478, applied 2026-11-17
 
