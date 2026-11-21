@@ -1,6 +1,134 @@
 # Sedis catalogs processed so far
 
+## Sedisport duplicate and fitment reconciliation — 2026-11-21 (applied and validated)
+
+User approved the reviewed reconciliation. Applied160 named-fitment relinks,
+four treatment-only link clears and the1402→8765 duplicate merge; installed
+matching generator rules and the regression test. Existing dates, retained
+component metadata, all sources and CSV values are unchanged. The completed
+TODO action is removed; no new source hunt or follow-up task was created.
+
+### Reviewed identity and retained record
+
+Re-read the original packaging photographs and Berto's printed pp.165–166
+linked below. The packaging names Sedisport and separately labels Delta
+treatment. The technical account distinguishes the ordinary finish variants
+from Pro, and describes Delta as a shared treatment. Neither record provides
+an independent construction/model code that supports keeping a separate
+ordinary “Sedisport Delta” identity. This is a duplicate model-family record,
+not evidence to merge Pro, Sedicolor or numbered/track/MTB chains.
+
+Retained existing **8765 Sedis Sedisport** unchanged: brand216/category6,
+group NULL, **1979–1990**, source471, UUID
+`040c920c-ca38-11f1-a2df-02fea3763e8d`. Its existing catalogue-backed description
+carries ordinary finishes and the later explicitly described Sport Black
+offering; neither the description nor its dates need alteration for this merge.
+It had65 links before application. Keeping this established, broadly named record avoids
+retitling or widening dates on the narrower VeloBase-derived duplicate.
+
+Retired **1402 Sedis Sedisport Delta**, UUID
+`1DB4E7C3-1833-47A4-BB41-6CAD655B70B9`, after the link corrections below.
+Its old metadata is brand216/category6/group NULL,1980–1987, source1,
+search text `Sedis Sedisport Delta`, image NULL; description:
+`France. VeloBase lists 410g but also describes 410g as package weight; chain-only weight unconfirmed.`
+The VeloBase specimen/packaging provenance remains at the URLs below. Do not
+copy410g into the retained chain's weight. Its old fields above and the exact
+old link IDs in the restoration section preserve the merge history.
+
+### Exact fitment correction
+
+Of1402's164 links,160 explicitly name ordinary Sedisport, including finishes,
+“Narrow”, fitted lengths and named Delta-treated Sedisport. Moved those to8765:
+Bianchi2, Raleigh13, Peugeot135, Falcon10. The existing65 links to8765 stay
+unchanged, leaving225 named links on the retained identity.
+
+Four1980 Dutch Peugeot links do not name a chain model and were instead
+cleared. Visually inspected the original catalogue pages, not just CSV text:
+
+| Spec / bike | Original page / wording | Applied link |
+| --- | --- | --- |
+| 13376 PX18MC;13396 PX18M | [p.7](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcYhyphenhyphenjglvpCbhLuYI953AbkMnycv1V8Hdd5U3DI8OgaJUl4XFvPEULHKiNPEEY927PHZE9wUDIwnlQgfGSntkQE6eVh2p_cdoGXzDaBxTBJfoQJ71YDu1DPD-OtH9F7DMNuOXSne07LL6D/s1600/catalogues+cycles+peugeot+1980+labibleduvelo+%25287%2529.jpg): Sedis110 links, Delta treatment; PX18M inherits the listed equipment except its handlebars | 1402 → NULL |
+| 13414 PK65 lady | [p.8](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUQ3GVH8xSUB97_VExKCNbRw7DhZcMZdidXXTzsHT4bkrKSFHeK-X2ebwYU8DCMTw7WRrFviPCeOKzcO82oBE4KZDk0nrnM6XgfRJPenOddKrEkTkFa2rCKmvisS2wnVY7P-RE81uSYZk8/s1600/catalogues+cycles+peugeot+1980+labibleduvelo+%25288%2529.jpg): Sedis110 links and Delta treatment, without a model name | 1402 → NULL |
+| 10547 PL8M | [p.11](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA0ooGuIJhSwgRETH6ifov-Z6fY8Bl34EhwT7kDixDthnCp8B5CE4JSp8YQi-YiTZRpMSlR15433Pqba2KluJFnkz0sRkZGrOVEy7TaD2m1TevfanB6QFLWU3aUZQxol3tKPltiv9S0G52/s1600/catalogues+cycles+peugeot+1980+labibleduvelo+%252811%2529.jpg):112 links and Delta treatment, without even an explicit maker in the chain sentence | 1402 → NULL |
+
+Do not infer Sedisport or4D from Delta treatment, installed length or a nearby
+bike. These are deliberate model non-identifications, not another source hunt.
+Source250 and every stored spec value/bike attribution remain unchanged.
+
+### Applied change set and validation
+
+The approved transaction applied164 exact-spec updates (160 relinks and four
+clears), then one guarded component delete. It checked the unchanged survivor's complete
+metadata, exact old link/value and bike/year/source, and refuses deletion while
+any bike spec still references1402. Database column/reference inspection found
+`bike_spec.component_id` is the only other stored component-ID reference.
+There are no source inserts/updates, component metadata/date updates or CSV edits.
+An identical rerun affected zero updates and zero deletes.
+
+`scripts/generate-bike-update-sql.js` now replaces1402 override targets with8765,
+explicitly blocks the two treatment-only
+value keys, and consolidates bare Sedisport's duplicate-driven bike exceptions.
+The existing catalogue/year scope is retained; no broad matching algorithm
+change is needed. `test/quality-link-decisions.test.js` adds a regression
+covering model-free treatment values even with a sole candidate, named finishes,
+explicit Delta-treated Sedisport, Pro separation and the existing either/or hold.
+
+Full in-memory simulation uses the maintained matcher/comparator across117
+loaded catalogues /24,479 specs. Exactly160 expected relinks and four clears
+are predicted; no unrelated mapping changes or newly linked NULLs. Against the
+simulated post-merge DB, comparison findings exactly match the prior baseline:
+15 pre-existing lost proposals, no gains/changes/missing/ambiguous identities.
+The actual full generator/live comparison after application and the SQL rerun
+has exactly those same baseline findings. Complete readback of all24,479 specs
+confirmed that only the approved164 links changed. Every retained Sedis field,
+every source record and all other quality-snapshot table values are unchanged;
+the component count dropped by exactly one. All three affected comparison/link
+decision test files pass using the installed generator, including the new
+regression; generator syntax and documentation diff/link checks pass.
+
+Whole-DB quality simulation and live readback agree: zero errors before/after, reviews2032→2003,
+linked-date flags291→262. The only removed findings are the29 links formerly
+outside1402's1987 bound; their named identity fits8765's already stored range.
+No date changes or new findings. Sedis near/parenthetical duplicate reports
+return no pairs; their name heuristics do not identify this semantic duplicate.
+
+### Restoration and scratch cleanup
+
+If restoration is needed, review it separately: restore1402 with exactly the old
+ID/UUID and fields recorded above only if both are unused. The160 named spec
+IDs below originally pointed at1402; repoint only those still on8765. The four
+treatment-only IDs in the page table also originally pointed at1402; restore
+them only while still NULL and with the same source/value/bike identity.
+Restore the generator/test changes from git history as part of that operation;
+do not disturb the65 original8765 links or later additions. No old dates,
+source records or retained component fields need restoring.
+
+Original1402 named-link IDs:
+
+- Bianchi:1157,1317.
+- Raleigh:4612,4822,4907,4969,6061,6157,6361,8649,8740,8763,8808,8831,8854.
+- Peugeot:10145,10167,10189,10210,10231,10252,10273,10294,10314,10333,10380,
+  10563,10581,10601,10623,10662,10682,10702,10722,10742,10761,10779,10797,10815,
+  10833,11022,11043,11063,11084,11105,11126,11147,11168,11189,11210,11231,11289,
+  11428,11445,11462,11480,11498,11518,11540,11562,11578,11621,13301,13563,13583,
+  13603,13618,14258,14299,14319,14339,14359,14379,14398,14417,14685,14703,14722,
+  14741,14760,14779,14798,14817,14837,14857,14877,14897,14917,14996,15017,15079,
+  15120,15140,15179,15198,15237,15256,15275,15294,15313,15332,15351,15370,15390,
+  15409,15428,15448,15468,15487,15646,15664,15683,15721,15741,15759,15777,15796,
+  15815,15834,15853,15871,16409,16430,16470,16507,16542,16562,16581,16601,16621,
+  16641,16798,16835,16873,16890,17048,17446,17465,17503,17542,17561,17581,17600,
+  17748,17767,17786,17805,17824,17843,17862.
+- Falcon:16053,16074,16095,16117,16139,16160,16246,16268,16290,16312.
+
+Task-created SQL, restoration template, candidate files, baselines, audit
+outputs, downloads and renders were removed after full readback and
+idempotency validation. Original evidence URLs and old row/link identities
+remain here; no note depends on a deleted scratch file.
+
 ## Sedisport / Delta treatment — period evidence 2026-11-20
+
+The applied reconciliation above supersedes this historical review's pending
+merge/link-review status; its source observations remain the evidence basis.
 
 Research-only follow-up to the 1402/8765 identity question below; no database,
 CSV or generator changes, and no proposed date moves.
@@ -34,15 +162,16 @@ CSV or generator changes, and no proposed date moves.
 **Conclusion:** Delta wording does not establish a separate Sedisport model
 or a successor to ordinary Sedisport. The earlier ingestion rationale below
 (8765 as a plain predecessor and 1402 as a later Delta variant) is superseded.
-1402/8765 are a supported duplicate candidate, not yet an approved merge:
-check the complete live records, provenance and linked variants before
-choosing the retained identity. Preserve genuine Pro/code/construction
-distinctions. Nickel plating alone does not prove a chain is Pro.
+At this research stage1402/8765 were a supported duplicate candidate; the
+approved, applied reconciliation above subsequently checked the complete live
+records, provenance and linked variants and retained8765. Preserve genuine
+Pro/code/construction distinctions. Nickel plating alone does not prove a chain is Pro.
 
 The link review also needs to separate named Sedisport values from treatment-only
-values. Current generator keys `sedis 110 links delta treated` (1980 NL Peugeot
-PX 18 M, PX 18 MC and PK 65 lady) and `112 links delta treated` (PL 8 M) select
-1402 without a model name in the CSV value. Delta treatment and fitted length
+values. The then-current generator keys `sedis 110 links delta treated` (1980 NL Peugeot
+PX 18 M, PX 18 MC and PK 65 lady) and `112 links delta treated` (PL 8 M) selected
+1402 without a model name in the CSV value; both keys now explicitly block a
+model link following the original-page review above. Delta treatment and fitted length
 alone do not justify that precise identity. Check the original Peugeot pages
 and any independent fitment evidence before proposing to retain, clear or
 repoint those links. Conversely, ordinary Sedisport versus Delta wording does

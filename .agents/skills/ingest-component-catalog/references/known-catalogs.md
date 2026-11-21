@@ -71,7 +71,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/cross-catalog-notes.md](known-catalogs/cross-catalog-notes.md) — notes spanning multiple brands: multi-brand retailer and importer catalogues (La Bicicletta Guida '96 and '99, Brügelmann 1972-82 / 1985 / 1988, Palo Alto, Bikecology, Holdsworth, Cyclo-Pedia, Ron Kitching, Ten Speed Drive, Bike Warehouse, Bike Nashbar Spring 1988, Falcon 1970 parts), La Bicicletta guides, dedupe passes, velobase title-fixup conventions
 - [known-catalogs/roto.md](known-catalogs/roto.md) — Roto (1 entry)
 - [known-catalogs/modolo.md](known-catalogs/modolo.md) — Modolo (3 entries, c. 1979, March 1986, 1990)
-- [known-catalogs/tioga.md](known-catalogs/tioga.md) — Tioga 1992 headsets/pedals and broader stems/bars/drivetrain/seatposts (source 362); missing tyre pages documented
+- [known-catalogs/tioga.md](known-catalogs/tioga.md) — Tioga1992 components (source362);1989/1991 reconciliation applied and validated (sources505/506), with configuration distinctions retained; missing1992 tyre pages documented
 - [known-catalogs/titec.md](known-catalogs/titec.md) — Titec 1997 maker catalogue/dealer sheet; source499, applied and validated
 - [known-catalogs/specialized.md](known-catalogs/specialized.md) — Specialized 1989 Components; source500, applied/validated, existing dates preserved
 - [known-catalogs/ringle.md](known-catalogs/ringle.md) — Ringlé 1995 Racing Components; source501, applied/validated, separate road Zooka

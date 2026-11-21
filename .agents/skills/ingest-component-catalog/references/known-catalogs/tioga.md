@@ -1,6 +1,198 @@
 # Tioga catalogs processed so far
 
+## 1989/1991 component reconciliation — 2026-11-21 (applied and validated)
+
+User approved the reviewed proposal. Applied **16 component inserts12209–12224,
+two source registrations505/506 and two existing title clarifications**;
+registered the four reviewed configuration pairs in `duplicate-classify.js`.
+All existing dates, descriptions, search values and bike links are unchanged;
+no CSV or matcher edits. The completed TODO is removed. The earlier research
+below is the acquisition/page ledger; this section supersedes its pending
+model comparisons and pre-reconciliation source/record status.
+
+### Source scope and dates
+
+Registered sources **505** `Tioga ATB parts catalogue (1989)` and
+**506** `Tioga Avenger Oversize System supplement (1991)`. The readable original
+scans are at the Gringineer CDN URLs recorded below, even where the post URL
+is not retrievable by the web reader. Rechecked1989 pp1–9/11/13 and the
+back cover;1991 pp1/2/5 and back cover. Previously inventoried hardware,
+fork and tool pages remain out of component scope. The missing front covers
+and1992 tyre pages were not recovered or inferred.
+
+The back covers explicitly print copyright1989/1991 and Japanese printing;
+neither supplies a verified market address. Both new source countries stay
+NULL rather than inheriting1992 source362's US attribution or inferring a
+market from English text. New components use1989–1989 or1991–1991 as
+observed attestations, not manufacture endpoints. Every existing date bound
+stays unchanged.
+
+### Applied component records
+
+All rows use Tioga brand699, their existing category association, NULL group,
+a generated UUID and the shared search-text builder. Sizes/options aggregate
+within the explicitly named model/configuration. No unstated tyre bead,
+headset thread standard, individual sealing-option weight or stem bar-clamp
+dimension is inferred.
+
+| ID | Category | Title | Description | Attested year / page |
+| --- | --- | --- | --- | --- |
+| 12209 | Headsets | Tioga MTB Master (39.5mm stack) | Triple-sealed Duraluminum headset with 2mm chromoly race and resin cup cladding; silver/black anodised. 39.5mm stack, 30.0mm cups, 27.0mm crown race; listed 136g, weighing basis unspecified. | 1989 / pp1-2 |
+| 12210 | Headsets | Tioga MTB Expert (35.5mm stack) | Triple-sealed headset with resin cup cladding; chrome or black chrome. 35.5mm stack, 30.0mm cups, 27.0mm crown race; listed 164g, weighing basis unspecified. | 1989 / pp1-2 |
+| 12211 | Headsets | Tioga MTB-II | Triple-sealed headset with extended threading for loosening resistance; chrome or black chrome. 35.0mm stack, 30.0mm cups, 27.0mm crown race; listed 171g, weighing basis unspecified. | 1989 / p2 |
+| 12212 | Headsets | Tioga MTB-I (double-sealed) | Double-sealed threaded headset option; chrome or black chrome. Family assembly dimensions: 36.5mm stack, 30.0mm cups and 27.0mm crown race. Individual option weight unspecified. | 1989 / p2 |
+| 12213 | Headsets | Tioga MTB-I (standard option) | Standard-option threaded headset; chrome or black chrome. Family assembly dimensions: 36.5mm stack, 30.0mm cups and 27.0mm crown race. Seal arrangement and individual option weight unspecified. | 1989 / p2 |
+| 12214 | Handlebars | Tioga Mountaineer-I | Chromoly MTB handlebar, 610mm wide with 10-degree bend; 25.4mm centre and 22.2mm ends. Chrome plated or black electrodeposition finish; listed 289g. | 1989 / p6 |
+| 12215 | Handlebars | Tioga Mountaineer-II | Hi-ten MTB handlebar, 560mm wide with 6-degree bend; 25.4mm centre and 22.2mm ends. Chrome plated or black electrodeposition finish; listed 392g. | 1989 / p6 |
+| 12216 | Tyres | Tioga Farmer John | Rear hill-climbing tyre with paddle tread and Polyrubber compound; 35/65psi. 24x1.95 listed 696g; 26x1.95 listed 720g. Casing described as 130 end; bead material unspecified. | 1989 / p7 |
+| 12217 | Tyres | Tioga Farmer John's Cousin | Tyre with compact tread for directional control and Polyrubber compound; 35/65psi. 24x1.95 listed 675g; 26x1.95 listed 748g. Casing described as 130 end; bead material unspecified. | 1989 / p7 |
+| 12218 | Tyres | Tioga Farmer John's Nephew | All-round paddle-tread tyre with Polyrubber compound; 35/65psi. 24x1.95 listed 688g; 26x1.50 listed 510g; 26x1.95 listed 734g. Bead material unspecified. | 1989 / p8 |
+| 12219 | Tyres | Tioga Mud Dawg | 26x1.95 tyre with spaced side blocks and Polyrubber compound; 35/65psi; listed 710g. Casing described as 130 end; bead material unspecified. | 1989 / p8 |
+| 12220 | Tyres | Tioga City Slicker (26in) | Tyre with channel tread and rounded profile, Polyrubber compound; 35/65psi. 26x1.50 listed 520g; 26x1.95 listed 790g. Casing described as 130 end; bead material unspecified. | 1989 / p8 |
+| 12221 | Pedals | Tioga Surefoot-I | Alloy platform pedal with slanted black steel cage and chromoly axle; strap-positioning nails, cage flip tabs and sealed mechanism. Listed 498g per pair. | 1989 / p9 |
+| 12222 | Seat Posts | Tioga Carbo Pillar (earlier head) | Carbon-fibre seatpost with alloy reinforcing tube and earlier clamp; black, 300mm. Diameters 24.7/25.0/25.4/25.8/26.4/26.8/27.0/27.2mm; listed 253g at 27.0mm. | 1989 / p11 |
+| 12223 | Stems | Tioga OS-TBPU, T-Bone | Prestige oversize quill stem with underside brake-cable routing, 25.4mm shaft, chromoly bolts and alloy wedge; chrome/black chrome. Extensions 90/105/120/135/150mm; listed 334g at 120mm. | 1991 / p2 |
+| 12224 | Seat Posts | Tioga OS-SPTA | Black-anodised seatpost with alloy head and shaft, tubular clamp and alloy saddle mount; 300mm long in 29.8/30.0/30.2mm diameters. Weight unspecified. | 1991 / p5 |
+
+### Existing records, aliases and configuration decisions
+
+- **10838 MTB Master DL /10839 MTB Expert CR:** keep both records, all dates
+  and existing33.5mm descriptions unchanged. Re-read1992 printed p5/PDF6:
+  these are not the older39.5mm/35.5mm assemblies. The1989 models have resin
+  cup cladding and an independently different assembly height, sufficient to
+  retain separate configurations without interpreting their weight differences.
+  Existing1993 Expert-CR bike links1661/1763 remain on10839.
+- **10841 MTB-I:** title `Tioga MTB-I` → `Tioga MTB-I (triple-sealed)`;
+  its description already expressly identifies triple sealing. Preserve its
+  source362, dates, description and UUID; rebuild search text with the shared
+  helper (still `Tioga MTB-I`, because bracketed qualifiers are excluded). The1989
+  page explicitly offers triple-sealed, double-sealed and standard options
+  under the MTB-I name. Added only the two missing options; did not create a
+  second triple-sealed row. The assembly table's36.5mm/30.0mm/27.0mm values
+  are model-level; the157g family listing is not assigned to either new
+  option. “Standard” alone does not establish an unsealed bearing layout.
+- **11685 City Slicker:** title `Tioga City Slicker` →
+  `Tioga City Slicker (700C)`; preserve source353, dates, description and
+  UUID; rebuild search text with the shared helper (still `Tioga City Slicker`).
+  It specifically represents700x32C. The new
+  26in configuration carries its own sizes/weights and1989 source. This is a
+  deliberate wheel-size distinction, not proof of unrelated model lineage.
+- **10840 Beartrap and triple-sealed10841:** older38.0mm/36.5mm stacks,
+  sealing and pictured construction agree with those families. Listed masses
+  alone do not prove another generation; leave existing rows/dates unchanged.
+  No guessed1989 retainer allowance or later national-size/thread option added.
+- **10834–10836 OS-H6/H3/H2:**1991 codes and stack dimensions agree with the
+  existing Avenger families.121/144/176g versus1992's107/130/162g plus14g
+  retainers supports a weighing-basis explanation; it is not an independently
+  stated1991 weighing basis or a reason for new rows or altered weights.
+- **11466–11471 stems:** keep existing routing/quill configurations.1989
+  unnumbered internal/vertical/standard stems and1991 coded OS-TBPI/V/standard
+  are corroborating family evidence, not grounds to invent older model codes
+  or split on mass alone. OS-TBPU explicitly adds underside routing, different
+  from OS-TBPV's vertical and OS-TBP's standard type, so12223 carries its own row.
+  Its25.4mm shaft is printed; do not copy the later bar-clamp dimension.
+- **11476 Prestige II /11477 Master handlebars:**1989 Prestige-II dimensions
+  and material agree; Master TX and Master are the textured/anodised finishes
+  already represented in11477's family.277g/270g versus later263g/274g alone
+  does not establish another construction. No duplicate rows or scalar weight
+  replacements. Mountaineer-I/II are separately named offerings with different
+  material and bend/width, now12214/12215.
+- **10842/10843 Surefoot-II/III:** matching names/design/material families;
+ 320g versus319g for II is not a new model. Keep both and the unrelated
+  Surefoot-6 record12170 unchanged. The1989 Surefoot-I page supplies the
+  missing model-specific construction; a1992 introduction-only name had not.
+- **11483 Carbo:**1992 printed p31/PDF26 explicitly announces a redesigned
+  cold-forged head; p32/PDF27 shows it. The1989 post's earlier clamp and
+  dimensions therefore get a separate row. Do not back-project SPC-301 onto
+  the earlier unnamed model, or assign its253g weight to the later head.
+- **11485 chromoly T-Bone:**1989 Prestige Pillar and1991 OS-SPTP agree in
+  material, tubular clamp,250/300/350/400mm lengths and320g reference
+  configuration. Re-read1992 p32: its SPTP family explicitly includes the
+  same29.8/30.2/30.4mm oversize diameters. The oversize prefix is not evidence
+  for a duplicate family. OS-SPTA instead expressly has an alloy shaft/head
+  and a different diameter set, now12224 without borrowing the chromoly weight.
+- **11486 SPA:**1991 OS-SPA's pictured head, finish, overlapping sizes and
+ 300mm/350mm arrangement are consistent with the existing family. Record
+  the1991-only30.3mm and306g-at28.6mm offering here; do not substitute them
+  for1992's300g-at26.6mm or invent a new generation from these option changes.
+- **11479 sealed BB:**1989 p13 corroborates the sealed self-contained design,
+ 2-degree boron axle and3P/3R options. No distinct new identity established;
+  leave its later Water Sheath/thread/360g description and dates unchanged.
+  Loose axles, locknuts, grips, clips/straps, fork parts and tools remain excluded.
+
+### Live fitments, duplicate review and validation
+
+The complete live Tioga title/code inventory and cross-brand searches found no
+counterparts for the16 new identities. Brand699 increased from44 to60 records.
+The six named live fitments are the existing two Expert-CR headset links and
+four Surefoot-6 pedal links1633/1667/1752/1769. No new link gain is claimed.
+Generic1988 MBK `Tioga sealed` specs25428/25554 remain NULL: seal wording
+does not choose among these headsets. No new source hunt is required for that
+deliberate non-identification.
+
+Overlaying the proposed rows and two titles in the maintained matcher across
+**117 loaded catalogues /24,479 specs** produces exactly the same mappings and
+findings as the live baseline:15 pre-existing lost proposals, zero gains,
+changes or missing/ambiguous identities. The quality overlay likewise retains
+zero errors and2003 reviews, including262 linked-date flags; no new findings.
+
+Duplicate/near/parenthetical review of the complete component overlay found
+two same-name groups, no near or parenthetical-name pairs. All four group
+pairs are reviewed configuration distinctions: triple/double/standard MTB-I
+(three pairs) and700C/26in City Slicker (one pair). Different sealing options
+are expressly offered together; report “generation” labels from disjoint
+stored dates must not replace that evidence. Registered the reviewed pairs
+**10841/12212**, **10841/12213**, **12212/12213** and **11685/12220** in
+`duplicate-classify.js`; these are deliberately kept distinct. No component
+merge or deletion. Max new description length193 characters. Actual scoped
+reports retain only these two same-name groups, with no merge candidates,
+near or parenthetical-name pairs.
+
+### Application validation and restoration
+
+The approved guarded transaction inserted exactly two sources and16 components,
+then clarified the two titles. Both title updates rebuilt search text with the
+shared helper; the resulting search values equal the old ones recorded above.
+An identical SQL rerun affected zero inserts and zero updates.
+
+Exact readback verified every new UUID, title, description, year, search text,
+brand/category, NULL group/image and source. Every old component field is
+unchanged except the two approved titles; all old source records and Tioga
+category associations are unchanged. The component/source counts increased
+by exactly16/two; all other quality-snapshot table values and counts agree
+with the baseline. The new sources have country NULL and their exact citation
+locators retained in the page ledger above/below.
+
+Actual post-load and post-rerun comparison across117 loaded catalogues and
+all24,479 live specs exactly matches the baseline findings:15 pre-existing
+lost proposals, zero gains/changes/missing/ambiguous identities. Every live
+spec value and component link is unchanged, including the six named fitments,
+the two generic NULLs and zero links on the new records. Whole-DB quality
+remains zero errors,2003 reviews and262 linked-date flags. Duplicate-classify,
+duplicate-report, comparison and link-decision test files pass, as do code
+syntax and documentation diff/link checks.
+
+Restoration, after separate review: new records have no bike links; remove
+only12209–12224 after
+checking later references and remove new sources only if unreferenced.
+Restore10841's old title `Tioga MTB-I` and11685's `Tioga City Slicker` only
+while still matching this application; their old/current search values are
+respectively `Tioga MTB-I` and `Tioga City Slicker`. Preserve their original
+UUIDs `65e5cf8b-d9da-11f1-a2df-02fea3763e8d` and
+`0dc5cf96-6cd9-446f-a97a-3cd72c8c93eb`, sources362/353, descriptions and
+dates. Remove the four duplicate-review entries alongside any new-row removal.
+No old dates, descriptions or bike links need restoring.
+
+Task-created SQL, candidate inventory, baselines, scripts, audit outputs,
+source downloads and renders were removed after readback, idempotency and
+documentation validation. Source URLs, pages, exact new IDs, old titles and
+configuration decisions remain here; no note depends on deleted scratch files.
+
+
 ## 1989 catalogue and 1991 Avenger supplement — identity research 2026-11-20
+
+Historical research state: the applied reconciliation above supersedes the
+pending comparisons and unregistered-source status recorded in this section.
 
 Research-only examination of the two Gringineer leads named in TODO. All22
 posted scans were visually inventoried and compared with the live Tioga rows;

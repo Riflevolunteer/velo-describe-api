@@ -2,12 +2,11 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
-test('MBK 1986/87 Competition tyres and plain Sedisport do not inherit similar later or Delta identities', () => {
+test('MBK 1986/87 named tyres and Sedisport retain their reviewed identities', () => {
   const records = [
     { component_id: 6835, title: 'Michelin Hi-Lite Comp', category: 'Tyres' },
     { component_id: 10530, title: 'Michelin Hi Lite', category: 'Tyres' },
     { component_id: 8765, title: 'Sedis Sedisport', category: 'Chains' },
-    { component_id: 1402, title: 'Sedis Sedisport Delta', category: 'Chains' },
     { component_id: 11312, title: 'Stronglight 200, ST200D', category: 'Cranksets' },
     { component_id: 1889, title: 'Stronglight 200 LX', category: 'Cranksets' },
     { component_id: 3387, title: 'Sealed Helico Sport', category: 'Hubs' },
@@ -168,4 +167,29 @@ test('1985–86 SR and Kusuki fitments link without conflating H.L. or generic R
   assert.equal(match('H.L. MTB 210', 'Handlebars', 1987, '830'), null)
   assert.equal(match('Rocky II, alloy', 'Stem', 1986, 'Orient Express'), null)
   assert.equal(match('Kusuki Rocky III adjustable, alloy', 'Stem', 1986, 'Seneca'), null)
+})
+
+test('Delta treatment and fitted chain length cannot select an ordinary Sedisport model', () => {
+  const rows = [
+    { component_id: 8765, title: 'Sedis Sedisport', category: 'Chains' },
+    { component_id: 1401, title: 'Sedis Pro', category: 'Chains' },
+    { component_id: 8764, title: 'Sedis Sedicolor', category: 'Chains' },
+  ]
+  for (const records of [[rows[0]], rows]) {
+    for (const [value, bike] of [
+      ['112 links, Delta treated', 'PL 8 M'],
+      ['Sedis, 110 links, Delta treated', 'PX 18 M'],
+      ['Sedis, 110 links, Delta treated', 'PX 18 MC'],
+      ['Sedis, 110 links, Delta treated', 'PK 65 lady'],
+    ]) assert.equal(matchComponent(value, records, null, 'Chain', 1980, bike), null)
+    for (const [value, year] of [
+      ['Sedissport, 108 links, Delta treated', 1980],
+      ['Sedisport, Delta treated', 1982],
+      ['Sedisport, nickel-plated', 1989],
+      ['Sedisport Gold', 1983],
+      ['Sedisport', 1988],
+    ]) assert.equal(matchComponent(value, records, null, 'Chain', year, 'Other').component_id, 8765)
+    assert.equal(matchComponent('Sedisport or Uniglide', records, null, 'Chain', 1982, 'Jubilee Sport'), null)
+  }
+  assert.equal(matchComponent('Sedis Pro', rows, null, 'Chain', 1988, 'Other').component_id, 1401)
 })

@@ -208,6 +208,11 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  // Tioga maker1989/1991 reconciliation applied2026-11-21; known-catalogs/tioga.md.
+  [10841, 12212], // MTB-I triple-sealed versus separately offered double-sealed option
+  [10841, 12213], // MTB-I triple-sealed versus separately offered standard option
+  [12212, 12213], // Maker1989 p2 offers double-sealed and standard MTB-I configurations concurrently
+  [11685, 12220], // City Slicker: existing700x32C versus maker1989 26in tyre configuration
   // Paul variant review 2026-11-21; known-catalogs/paul.md.
   [4369, 4370], // Independently photographed long-cage Powerglides: PAUL/flag decals versus engraved PAUL/USA; chronology unproved
   [12027, 12200], // Branford stainless-pivot Love Levers versus maker1996 adjustable brass Slop Adjust configuration

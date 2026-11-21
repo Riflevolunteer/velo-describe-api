@@ -1,5 +1,13 @@
 # Motobecane catalogs processed so far
 
+Sedis identity follow-up2026-11-21: the
+[validated1402→8765 reconciliation](../../../ingest-component-catalog/references/known-catalogs/sedis.md#sedisport-duplicate-and-fitment-reconciliation--2026-11-21-applied-and-validated)
+supersedes earlier plain-versus-Delta rationales in these ingestion notes.
+Delta denotes shared pin treatment; it does not distinguish another ordinary
+Sedisport model. Existing named Motobecane/MBK links to8765 remain unchanged;
+nickel finish does not establish Pro. Historical link selections below do not
+imply that the retired1402 is still a separate component.
+
 ## MBK Course c.1991 — applied and validated, 2026-11-20
 
 Applied after user approval: source **498**, bikes **1517–1528**,

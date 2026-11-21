@@ -403,6 +403,14 @@ alter CSVs, database records or the prior country decision.
 
 ## 1980 Peugeot — `1980_peugeot_spec.csv` (FR, data_source 249: 31 bikes, 476 specs, 94 linked) and `1980_peugeot_nl_spec.csv` (NL, data_source 250: 9 bikes, 175 specs, 69 linked)
 
+- Sedis follow-up2026-11-21, applied and validated: duplicate1402 merged
+  into8765, including the explicitly named1980–89 Peugeot fitments below.
+  Four1980 NL treatment-only specs10547/13376/13396/13414 are now NULL;
+  Delta treatment and fitted length do not identify Sedisport. This supersedes
+  earlier1402 links in these historical ingestion notes; no dates, source
+  attributions or CSV values changed.
+  [Original pages, exact reconciliation and validation](../../../ingest-component-catalog/references/known-catalogs/sedis.md#sedisport-duplicate-and-fitment-reconciliation--2026-11-21-applied-and-validated).
+
 - Source: https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1980.html (63 images, loaded
   2026-10-22). Three catalogues on the post: (1) the Dutch "Peugeotboek voor totale fietsrecreatie,
   Kollektie 1980" (Cycles Peugeot Nederland b.v., Veenendaal; 38 PeugeotShow scans 840x1200 named

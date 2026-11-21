@@ -67,11 +67,13 @@ before changing bounds or mappings. Stronglight A9 locknut row 3112 likewise
 needs an A9/A9H and locknut-construction key for its 1987–89 Peugeot links;
 the [1986 catalogue review](known-catalogs/stronglight.md) explicitly left these
 bike-derived conflicts outside its scope. A date warning is not evidence that
-the existing variant is correct. The existing Sedis 1402/8765 identity/treatment
-review remains a separate actionable task, not a reason to repeat the hunt.
+the existing variant is correct. The Sedis1402/8765 identity/treatment review is
+now [applied and validated](known-catalogs/sedis.md#sedisport-duplicate-and-fitment-reconciliation--2026-11-21-applied-and-validated);
+it does not require another source hunt.
 
-**Lower immediate bike-link return:** the Tioga 1989/1991 proposal remains useful
-component work, but the live remaining text in scope is generic “Tioga sealed”
+**Lower immediate bike-link return:** the
+[Tioga1989/1991 component reconciliation](known-catalogs/tioga.md#19891991-component-reconciliation--2026-11-21-applied-and-validated)
+is applied and validated; the live remaining text in scope is generic “Tioga sealed”
 headsets, not named Farmer John/Mud Dawg/Surefoot/City Slicker gaps. KKT RT-E1
 has an existing reviewed RT-E/RT-EII identity hold; do not present it as a fresh
 easy model addition. UK contact-only acquisition and paid Yaesu remain deferred.

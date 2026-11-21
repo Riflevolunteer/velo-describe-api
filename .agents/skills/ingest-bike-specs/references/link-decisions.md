@@ -424,6 +424,14 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Chains
 
+- Applied and validated2026-11-21: ordinary named Sedisport fitments use
+  **8765**; duplicate1402 was merged into it. Delta is a shared pin treatment,
+  not another model. Cleared1980 Peugeot NL specs **10547/13376/13396/13414**
+  because their original pages supply only treatment/length or maker,
+  treatment and length. Explicit NULL overrides prevent the two value keys
+  from selecting Sedisport after deduplication. Do not infer4D or Pro either.
+  [Original pages, retained identity and validation](../../ingest-component-catalog/references/known-catalogs/sedis.md#sedisport-duplicate-and-fitment-reconciliation--2026-11-21-applied-and-validated).
+
 - Reviewed 2026-11-19: 1977 Peugeot silver **Sedis Color 9719** remains NULL:
   the 1979 importer sheet's gold/dark-blue 4DS does not establish that finish.
   Plain 1977–78 Sedis 108/110-link entries likewise do not identify 4D from
@@ -574,6 +582,13 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Headsets
 
+- Reviewed2026-11-21:1988 MBK C757 Prolight **25428** and C354 Super Mirage
+  **25554**, `Tioga sealed`, remain NULL. Original Tioga maker pages identify
+  several sealed headset models/configurations; maker plus sealing does not
+  select Master, Expert, Beartrap, MTB-I/II or an Avenger model. The applied
+  component additions do not resolve these generic cells.
+  [Configuration evidence and live validation](../../ingest-component-catalog/references/known-catalogs/tioga.md#19891991-component-reconciliation--2026-11-21-applied-and-validated).
+
 - **Decided 2026-11-16, leave unlinked:** Tange "Unique X Loose-Proof" (1988 Raleigh Ozark II, 1989 Touriste) and "Unique FE" (1988 Raleigh Ritmo). 11346 Tange Unique is the bare model (Nashbar 1988). The 1989 Ozark / Chinook "Unique Loose-Proof" are linked to it, reading Loose-Proof as a feature. Generator `null` overrides.
 
 - Brand-only text: "Stronglight" 7 (1985 Peugeot), bare "Tange" ~20, Bianchi "GPM, alloy", 1993 Bianchi "AheadSet" 3 / "Mavic headset": leave.
@@ -610,9 +625,10 @@ see the Raleigh catalogue notes for the decision and source.
 [Period packaging and technical evidence](../../ingest-component-catalog/references/known-catalogs/sedis.md#sedisport--delta-treatment--period-evidence-2026-11-20)
 supersede earlier rationales distinguishing ordinary Sedisport 8765 from 1402
 solely by explicit Delta treatment. Delta is a shared pin treatment, so it also
-does not identify Sedisport from maker-only values. Existing links remain
-unchanged pending the scoped duplicate/fitment review; this is not a bulk-relink
-decision. Preserve independently established Pro/code/construction differences.
+does not identify Sedisport from maker-only values. The scoped review is now
+[applied and validated](../../ingest-component-catalog/references/known-catalogs/sedis.md#sedisport-duplicate-and-fitment-reconciliation--2026-11-21-applied-and-validated):
+1402 merged into8765, named links consolidated, and four treatment-only Peugeot
+links cleared. Preserve independently established Pro/code/construction differences.
 
 ## Motobecane France Course-Training c.1984–85 (reviewed 2026-11-18)
 

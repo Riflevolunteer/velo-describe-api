@@ -19,11 +19,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Inventory the 1991 and 1992 US Bianchi catalogues found on gringineer.com (page completeness, edition year, road-scope models), then transcribe and prepare them as editions separate from the loaded Japanese ones. [Posts and first assessment](.agents/skills/ingest-component-catalog/references/source-hunts.md#bikalog-index-recheck-and-gringineercom-catalogue-posts--2026-11-20).
 - Transcribe and prepare the 1991 Raleigh German general catalogue and British Dyna-Tech brochure as separate editions; review scope and component links using the [source assessment](.agents/skills/ingest-bike-specs/references/known-catalogs/raleigh.md#1991-raleigh--bikalog-german-and-british-editions-assessed-2026-11-20).
 
-## Component identity and links
-
-- Review Sedisport 1402/8765 as potential duplicates, reconcile their linked variants and audit the treatment-only Peugeot chain mappings before preparing any merge or relink. [Period packaging, technical evidence and specific rules to review](.agents/skills/ingest-component-catalog/references/known-catalogs/sedis.md#sedisport--delta-treatment--period-evidence-2026-11-20).
-- Prepare a component proposal from the Tioga 1989/1991 research, resolving older Master/Expert headset configurations, 26in City Slicker versus 11685, the Farmer John/Mud Dawg tyres, Surefoot-I, OS-TBPU and older/oversize post constructions. [Maker page ledger and live comparison](.agents/skills/ingest-component-catalog/references/known-catalogs/tioga.md#1989-catalogue-and-1991-avenger-supplement--identity-research-2026-11-20).
-
 ## Waiting for distinguishing evidence
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.

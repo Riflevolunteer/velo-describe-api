@@ -4716,7 +4716,7 @@ const COMPONENT_OVERRIDES = {
     // c.1979 Pinarello: explicit named chains, not inferred from the gruppo.
     'regina extra record s': [{ from: 1979, to: 1979, id: 8334 }],
     'regina extra titanio': [{ from: 1979, to: 1979, id: 1391 }],
-    'nickel plated sedisport': [{ bike: 'C662CA Super Record', from: 1986, to: 1987, id: 8765 }], // MBK 1986/87 spread2: plain nickel-plated Sedisport, not Delta.
+    'nickel plated sedisport': [{ bike: 'C662CA Super Record', from: 1986, to: 1987, id: 8765 }], // MBK 1986/87 spread2: named nickel-plated Sedisport; finish alone does not imply Pro.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "nickel plated sedisport racing chain": [{"bike":"C502 Le Champion","from":1986,"to":1986,"id":8765}],
     "sedisport nk": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":8765},{"bike":"Spécial Pro","from":1985,"to":1985,"id":8765},{"bike":"C551","from":1985,"to":1985,"id":8765}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.
@@ -4771,10 +4771,10 @@ const COMPONENT_OVERRIDES = {
     // 1993 Bianchi Ocelot: no CN-HG20 in any Shimano manual; the Jul 1992 '93 manual (p. 73 Dual SIS chart) specs
     // CN-HG50 for every Exage / Altus group, even with MF-HG20. Likely an OEM chain or a misprint.
     'shimano cn hg20': [{ from: 1993, to: 1993, id: 7574 }], // Shimano CN-HG50, Hyperglide chain
-    'sedis 110 links delta treated': 1402, // 1980 Peugeot PX 18 M / MC, PK 65: Sedisport Delta (// linkCoverage pass 2026-10-30)
-    'sedisport black 1 2 x 3 32': [{ from: 1980, id: 1402 }], // 1987 Peugeot (US): as 'sedisport black'
-    'sedisport silver 1 2 x 3 32': [{ from: 1980, id: 1402 }], // 1987 Peugeot (US): as 'sedisport silver'
-    'sedisport nickel plated': [{ from: 1980, id: 1402 }], // 1986-87 Peugeot: finish variant of 'sedisport'
+    'sedis 110 links delta treated': null, // Peugeot1980 NL: treatment and fitted length do not identify a chain model.
+    'sedisport black 1 2 x 3 32': [{ from: 1980, id: 8765 }], // 1987 Peugeot (US): as 'sedisport black'
+    'sedisport silver 1 2 x 3 32': [{ from: 1980, id: 8765 }], // 1987 Peugeot (US): as 'sedisport silver'
+    'sedisport nickel plated': [{ from: 1980, id: 8765 }], // 1986-87 Peugeot: finish variant of 'sedisport'
     'regina extra super corsa': 1376, // 1978 Bianchi Rekord 745: Regina Extra 50 Corsa, the Extra race-grade chain (a judgement, 2026-10-30)
     'regina extra super corsa 1 2" x 3 32"': 1376, // 1981 Bianchi Sprint / Rekord Strada
     'shimano deore': null, // 1987 Peugeot (FR) Normandie: the hit is the 1990s Deore LX chain
@@ -4786,22 +4786,22 @@ const COMPONENT_OVERRIDES = {
     'regina extra oro 50 record lightened': [{ from: 1978, to: 1978, id: 1381 }],
     'regina extra super corsa oro': [{ from: 1978, to: 1978, id: 1382 }],
     'union': null, // 1981 Kalkhoff: brand only; Union 486 is a model the catalogue doesn't name
-    'sedissport 108 links delta treated': 1402, // 1980 Peugeot (NL): Sedis Sedisport Delta (1980)
-    'sedisport 114 links delta treated': 1402, // 1982 Peugeot PBN / PFN / PKN / PVN / PXN 10: as the 108-link Delta
-    '112 links delta treated': 1402, // 1980 Peugeot PL 8 M: as the 108 / 114-link Delta
-    'sedisport delta treated': 1402, // 1982 Peugeot PL 8 M: as above
-    'sedisport 112 links': 1402, // 1982 Peugeot PX 8 M: as bare 'sedisport' (1402 from 1980)
+    'sedissport 108 links delta treated': 8765, // 1980 Peugeot (NL): Sedis Sedisport; Delta denotes treatment
+    'sedisport 114 links delta treated': 8765, // 1982 Peugeot PBN / PFN / PKN / PVN / PXN 10: as the 108-link Delta
+    '112 links delta treated': null, // Peugeot1980 NL PL8M: no model supplied.
+    'sedisport delta treated': 8765, // 1982 Peugeot PL 8 M: as above
+    'sedisport 112 links': 8765, // 1982 Peugeot PX 8 M: as bare 'sedisport' (8765 from 1980)
     'shimano cn 6208 silver': 7232, // 1990 Bianchi Virata: CN-6208 600EX (row 1986-90, the model is exact)
     'sedis sedi color ½" x 3 32"': 8764, // 1979-80 Raleigh Professional Mk V: Sedis Sedicolor (catalogue splits the name)
-    'sedisport narrow': [{ from: 1980, id: 1402 }], // 1983 Raleigh Europa / Record Sprint / Supersport 12: as bare 'sedisport' (1402 from 1980)
+    'sedisport narrow': [{ from: 1980, id: 8765 }], // 1983 Raleigh Europa / Record Sprint / Supersport 12: as bare 'sedisport' (8765 from 1980)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'suntour z': [{ from: 1982, to: 1989, id: 7821 }], // 1987 Raleigh Maverick 18 Pro; as "Suntour Z Silver/Black" and "Gold" (TZ-6000)
-    'sedisport black': [{ from: 1980, id: 1402 }], // 1987 Raleigh tourers; colour variant of 'sedisport' (1402 from 1980)
-    'sedisport gold': [{ from: 1980, id: 1402 }], // 1983 Raleigh Team Replica 12
-    'sedisport silver': [{ from: 1980, id: 1402 }], // 1986 Peugeot (US) table: colour variant of 'sedisport', as 'sedisport black'
-    // Bare "Sedisport": two rows now exist (8765 Sedis Sedisport 1979, 1402 Sedisport Delta 1980), so the matcher sees an ambiguity. 1402 is the pick already in the DB for
-    // the 1984 Raleigh and 1987 Bianchi, so 1980+ stays on it pending identity review; see the Sedis notes.
-    'sedisport': [{ bike: 'C910 Kevlight', from: 1988, to: 1988, id: 8765 }, { bike: 'C658 Pro Racer', from: 1988, to: 1988, id: 8765 }, { bike: 'C354 Super Mirage', from: 1988, to: 1988, id: 8765 }, { bike: 'C234 Mirage 18', from: 1988, to: 1988, id: 8765 }, { bike: 'C234 D Mirage 18', from: 1988, to: 1988, id: 8765 }, { bike: 'C224 Mirage', from: 1988, to: 1988, id: 8765 }, { bike: 'C154 Trainer', from: 1988, to: 1988, id: 8765 }, { bike: 'C154 D Trainer', from: 1988, to: 1988, id: 8765 }, { bike: 'C124 Super Sprint', from: 1988, to: 1988, id: 8765 }, { bike: 'C114 Sprint', from: 1988, to: 1988, id: 8765 }, { bike: 'MGT41 Grand Touring', from: 1988, to: 1988, id: 8765 }, {"bike":"EC122 Nomade","from":1986,"to":1986,"id":8765},{"bike":"C352E Super-Mirage","from":1986,"to":1986,"id":8765},{"bike":"C441","from":1985,"to":1985,"id":8765},{"bike":"C331","from":1985,"to":1985,"id":8765},{"bike":"C221","from":1985,"to":1985,"id":8765},{"bike":"Team Champion","from":1983,"to":1983,"id":8765},{"bike":"Le Champion","from":1983,"to":1983,"id":8765},{"bike":"Grand Record","from":1983,"to":1983,"id":8765},{"bike":"Prolight","from":1983,"to":1983,"id":8765},{"bike":"Grand Touring","from":1983,"to":1983,"id":8765},{"bike":"Grand Jubilee","from":1983,"to":1983,"id":8765},{"bike":"Super Mirage","from":1983,"to":1983,"id":8765},{"bike":"Mirage","from":1983,"to":1983,"id":8765},{"bike":"Jubilee Sport","from":1983,"to":1983,"id":8765},{"bike":"Mirage Sport","from":1983,"to":1983,"id":8765},{"bike":"Nomade","from":1983,"to":1983,"id":8765},{"bike":"Super Mirage","from":1982,"to":1982,"id":8765},{"bike":"Grand Touring","from":1982,"to":1982,"id":8765},{"bike":"Grand Jubilee","from":1982,"to":1982,"id":8765},{"bike":"Mirage Sport","from":1982,"to":1982,"id":8765},{"bike":"Grand Record","from":1982,"to":1982,"id":8765},{"bike":"Le Champion","from":1982,"to":1982,"id":8765},{"bike":"Prolight","from":1982,"to":1982,"id":8765},{"bike":"Team Champion","from":1982,"to":1982,"id":8765},{"bike":"Grand Touring","from":1981,"to":1981,"id":8765},{"bike":"Grand Jubile","from":1981,"to":1981,"id":8765},{"bike":"Grand Record","from":1981,"to":1981,"id":8765},{"bike":"Le Champion","from":1981,"to":1981,"id":8765},{"bike":"Prolight","from":1981,"to":1981,"id":8765},{"bike":"Team Champion","from":1981,"to":1981,"id":8765},{ from: 1980, id: 1402 }],
+    'sedisport black': [{ from: 1980, id: 8765 }], // 1987 Raleigh tourers; colour variant of 'sedisport' (8765 from 1980)
+    'sedisport gold': [{ from: 1980, id: 8765 }], // 1983 Raleigh Team Replica 12
+    'sedisport silver': [{ from: 1980, id: 8765 }], // 1986 Peugeot (US) table: colour variant of 'sedisport', as 'sedisport black'
+    // Named ordinary Sedisport is one model family; Delta is a pin treatment, not a successor model.
+    // 1402 merged into existing8765; Pro and numbered models remain separate. See known-catalogs/sedis.md.
+    'sedisport': [{ from: 1980, id: 8765 }],
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'shimano cn 6400 silver': [{ from: 1988, to: 1993, id: 1406 }], // CN-6400
     'shimano cn hg90 silver': [{ from: 1990, to: 1993, id: 7566 }], // CN-HG90
