@@ -2,6 +2,13 @@
 
 ## 1989/1991 component reconciliation — 2026-11-21 (applied and validated)
 
+**1988 follow-up, 2026-11-22:** Nashbar Spring 1988 p.65 attests Farmer
+John and Farmer John's Cousin in 26 x 1.95 at 35–65 psi; the pictured John
+matches the tread in the 1989 maker catalogue. Components 12216/12217 now
+start at 1988 rather than 1989, retain the maker descriptions and 1989
+year_to, and use source 422 for the latest change. The [Nashbar review](cross-catalog-notes.md#nashbar-tyre-reconciliation--applied-2026-11-22)
+records the cousin's photo limitation, prior source 505 and validation.
+
 User approved the reviewed proposal. Applied **16 component inserts12209–12224,
 two source registrations505/506 and two existing title clarifications**;
 registered the four reviewed configuration pairs in `duplicate-classify.js`.

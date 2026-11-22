@@ -5545,7 +5545,7 @@ were discarded after validation; provenance is retained above.
   595 / 617 g with levers) is the GX-N series 8082 (GX500N 43-57, GX730N 53-71). The p.48 brake
   chart prints 52-72 against the 500 GX, a chart error. Possible duplicate to review: 653
   "Dia-Compe 500 GX" (velobase, 1980, bare) vs GX500N in 8082. 8230 Royal 2 = "Royal II".
-- Not applied: Vetta Racing VA-200 vs 5681 "Vetta 200" (stock code only), Touring VA-4050;
+- Not applied in this initial pass (later follow-ups below supersede individual cases): Vetta Racing VA-200 vs 5681 "Vetta 200" (stock code only), Touring VA-4050;
   Sugino Aero Tour vs 1964 Sugino AT (1980-82, 710 g vs 733 g, 28-44-48T; "AT" may be Aero Tour,
   unproven); Sugino 75 BB / rings and Avocet FasGrip rows (undated, stock text adds nothing
   datable); Sakae SX / FX cranks (SXC-310 / SXC-T310 / FX SLP already cover 1988; bare 1762 SX
@@ -5574,6 +5574,131 @@ were discarded after validation; provenance is retained above.
   - Validation: all 93 catalogues were regenerated with the old and new generator. Only 1985 Raleigh,
     1986 / 1987 Miyata and 1987-89 Raleigh changed link counts, all explained. Every new link falls
     within its row's dates.
+
+### Nashbar remaining-component review — applied 2026-11-22
+
+The component pages listed above were inventoried again against the current full
+component inventory. Applied source 422 to Sugino 75 Carbon chainring 1329 (p.45); Cycloid
+chainrings 1332/1333 and new 40T/52T 110 mm versions 12250/12251 (p.46); Bio Turbo saddle
+5477 (p.50); Arc en Ciel rim 5180 (p.64, Wolber/Super Champion crosswalk in
+Wolber notes); and Sedistraveler 11701 plus distinct DID Lanner chain 12252 (p.47).
+Lanner is named in 1982/1983 Miyata and 1986 Peugeot/Falcon specifications;
+these attest an earlier date than the Nashbar listing. Maker-only DID 1355
+retains its existing track links; it is not the Lanner model. Twelve named
+Lanner specs (20868/20889, 21813/21833, 15990/16011/16032/16181/16202/16224,
+14937/14957) were linked from NULL to 12252; their exact maker and model names
+match, including the black and silver colour descriptions. The existing
+generator automatically proposes exactly these 12 links without an override.
+Readback confirmed all 12 and the guarded link SQL rerun changed zero rows.
+After backfill the 118-catalogue generator/live comparison returned to the
+baseline: zero gained or changed mappings and the same 15 pre-existing lost
+Huret proposals. Whole-database quality reported zero errors; the scoped
+Sugino and DID near-duplicate reports found no candidates.
+Catalogue descriptions and the SQL preserve earlier independent measurements;
+the 1988 listings establish availability, not production boundaries.
+
+Generic or ambiguous catalogue offerings require distinguishing evidence;
+catalogue stock numbers do not automatically identify maker
+part numbers. The whole-DB pre-change baseline showed no errors and the
+generator/live comparison showed 15 existing lost proposals, no gains or
+changed matches. Exact readback confirmed the six updates and three inserts;
+the SQL rerun changed zero rows. Before the updates, 1329 had bare description
+`Sugino 75 Carbon, Japan`, NULL dates and source 1; 1332/1333 had bare titles
+as descriptions and source 1; 5477 had bare description and source 262; 5180
+ended in 1985 with source 295; and 11701 ended in 1986 with source 462. Restore
+those values to reverse the updates; remove the new rows only after checking
+references. The temporary applied SQL was removed after validation.
+
+### Nashbar tyre reconciliation — applied 2026-11-22
+
+Approved and applied: six date updates and one new row.
+Nashbar p.67 describes Time Trial and Criterium as width options, then offers
+FasGrip 20, K20 and 30 by width; its photo explicitly shows Criterium/K20.
+This supports 1988 availability of existing 6719, 6720, 6722 and 6723, whose
+dates were NULL. Their independent recorded weights are preserved. Nashbar's p.66
+and p.67 disagree about the K20 weight; neither figure is copied to the rows.
+This is stronger combination evidence than the incomplete 1994/95 table
+previously held against those IDs; it does not identify other editions.
+
+Nashbar p.65 names Farmer John and Farmer John's Cousin together, both in
+26 x 1.95 at 35–65 psi. Its pictured John has the paddle tread also shown on
+[Tioga's 1989 maker page](https://cdn.shopify.com/s/files/1/0661/0501/6425/files/tioga1989_0008.jpg);
+the cousin is not pictured in Nashbar but its distinctive name, pairing, size
+and pressure agree with the maker page. Applied 12216/12217 date moves are
+1989 to 1988, keeping their 1989 maker descriptions and year_to. This is an
+earlier availability attestation, not a production-start claim. The maker
+source 505 remains documented here; the last-change source is now 422.
+
+The same Nashbar p.67 names and describes a Cycle Pro Longrider folding
+skinwall tyre. It is not present by that name in the full component inventory;
+added as 12253 under existing brand 337/category 23. The
+unnumbered Cycle Pro touring tyre 9116 shares an S-groove with Nashbar's
+touring listing, but the scan does not establish a model crosswalk, so it is
+not changed. The four Avocet and two Tioga rows have no current bike links;
+no loaded bike spec names Longrider, FasGrip or Farmer John. Near-duplicate
+reports for Avocet and Cycle Pro produced no candidates. Before the change the four
+Avocet rows had NULL dates and source 1; both Tioga rows were 1989–1989 with
+source 505. Restore those values to reverse the updates; remove 12253 only
+after checking subsequent references. The previous Nashbar entry's
+statement that FasGrip and Longrider were not taken describes the earlier pass,
+not this applied reconciliation. Readback confirmed all seven changes and a
+rerun affected zero rows. Whole-database quality reports zero errors; the
+Cycle Pro near-duplicate report found none. Generator/live comparison across
+118 loaded catalogues matches the prior baseline: no gained or changed
+mappings and the same 15 pre-existing Huret lost proposals.
+
+### Nashbar remaining identity review — applied 2026-11-22
+
+Approved, applied and validated the final supported changes.
+Nashbar p.48 offers Sugino 75 carbon aero levers, black hoods, 240 g per pair.
+The [original VeloBase record](https://velobase.com/Pages/ViewComponent.aspx?AbsPos=451&Enum=118&ID=0D0C6DEE-0E04-4CD8-9D64-81803B87F491)
+is the actual source UUID of component 452 and identifies carbon levers, 229 g
+with hoods but without clamps. It supports the identity while retaining both
+weights and their different stated weighing bases. Nashbar p.45 identifies the
+75 Road low-profile forged alloy crank, 170 mm, 42/52 with reinforced 52T
+outer ring; [1973's original specimen record](https://velobase.com/Pages/ViewComponent.aspx?AbsPos=32&Enum=115&ID=5BB19FD6-E552-485B-A557-A3322394F58F)
+is a 170 mm/130 BCD 75 Road double with 649 g recorded. The 1987 Nishiki Fusion
+also lists a 75 crank with fibre outer ring and 75 carbon aero levers in the
+[maker catalogue](https://bikalog.org/api/view/Nishiki/1987/nishiki-1987.pdf).
+The applied 452/1973 changes retain existing 1980 year_from and extend year_to
+to 1988; the existing decade bucket is not proof of introduction in 1980.
+Nashbar p.43 lists Sugino 75 carbon shifters, braze-on and 50 g per pair;
+6252 is the existing generic 75 Road-group shifter. The [contemporary model
+review](https://www.disraeligears.co.uk/site/sugino_75_1987_version_derailleur.html)
+describes carbon friction levers used with successive 75 rear derailleurs,
+supporting the family-level match. The applied 6252 change adds its 1988
+attestation and scan facts, not an inferred model code or indexing mode.
+
+Nashbar p.67 names and photographs **Swallow Montello**, a 300 g, 23 mm,
+100 psi nylon/butyl training tubular. No Swallow brand or named Montello tyre
+was found in the DB; brand 767 and tyre 12254 now record the printed names
+without claiming the manufacturer's corporate identity or country. No loaded
+bike spec names these components. The SQL retains original values and a
+reversal plan; pre-change Sugino near-duplicate report found no candidates.
+Before the update 452/1973 had bare descriptions, 1980–1980 and source 1;
+6252 had bare description, NULL dates and source 1. Restore those values to
+reverse the updates. Remove 12254, its category association and brand 767 only
+after checking later references. Readback confirmed all updates/inserts and
+the SQL rerun affected zero rows; whole-database quality returned zero errors.
+Generator/live comparison across 118 loaded catalogues matches the baseline:
+zero gains or changed mappings, with the same 15 pre-existing Huret lost
+proposals. No existing links or unlinked named bike specs were found for the
+four affected components. Sugino and Swallow near reports found no candidates;
+the Sugino group report lists nine previously classified configuration or
+generation pairs, none involving these changed rows, and Swallow has no group.
+Task-owned scan, inventories and SQL were removed after validation.
+
+Other reviewed offerings remain at family-level or ambiguous: Sugino Aero
+Tour may correspond to 1964 AT but no manufacturer crosswalk is established;
+Sakae CTS/MTS/MTE, Ritchey Force I/II, Tioga Prestige/T-Bone, uncoded
+Specialized hubs, Matrix ISO variants, Vetta Racing/Touring and Selle Italia
+Turbo Ventilated cannot safely select a specific existing variant. Wolber Type
+58's 17 mm inside width differs from 5178's recorded 13.6 mm, and the HED
+disc's composite description does not establish its material or the identity
+of carbon-disc 6969. Campagnolo rim and Ritchey tyre weight discrepancies do
+not independently establish a new configuration. Panaracer tubular weights
+have no model key; retailer stock numbers do not supply one. The prior
+decisions on house wheels/tyres and Nashbar bikes remain in force.
 
 ### Nashbar widened-row follow-through — 2026-11-17, review complete
 
