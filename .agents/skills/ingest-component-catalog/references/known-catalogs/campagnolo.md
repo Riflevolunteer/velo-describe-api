@@ -523,13 +523,16 @@ This supersedes historical references below to 1473 as a separate live row.
   body, 1960-1969)" and 2297 → "1052/1, Record (second body, 1970-1977)".
   2297 keeps the bike-spec links and the generator's pre-1978 override.
 
-## Campagnolo Catalogue n. 18, English edition — c. 1985 (Campy1985_catalog18.pdf, 70 pp)
+## Campagnolo Catalogue n. 18, English edition — December 1986 printing (Campy1985_catalog18.pdf, 70 pp)
 
-- Vicenza (Via della Chimica) printing; no year printed. Dated 1985 from the
-  filename, the "replaced by the Victory range" note and the 1013/5N-6N
-  levers (DB from 1984). PDF page = printed page + 1. Has a usable OCR
+- Vicenza (Via della Chimica) printing. The original back cover, PDF p. 70,
+  has printer code `12/86`. The earlier c. 1985 attribution came from the
+  filename and is superseded by the imprint. In this PDF, printed pp. 22–29
+  are PDF pp. 21–28. Has a usable OCR
   layer (pdftotext -layout) for the parts lists; picture pages read
   visually for the "No more available" asterisks.
+  See the [imprint and availability review](#no-18-imprint-and-super-record-availability--2026-11-22)
+  for the source and component corrections. The actions below record the original ingest.
 - Groups: SR road 4000/F (on 1046/A steel BB and 1037/A pedals, Ti pedals
   on request), Record 1032/F, Gran Sport 2240/5F (marked no more
   available, replaced by Victory), SR track 4100, Record track 1033,
@@ -1816,6 +1819,70 @@ a coded early Super Record braze-on. The next useful date evidence is a dated
 inference is justified. Task downloads/renders were discarded after recording
 these source/page findings; the subsequently approved correction artifacts were
 also removed after application and validation.
+
+## No. 18 imprint and Super Record availability — 2026-11-22
+
+- **Source 8.** The [registered No. 18 PDF](https://velobase.com/CatalogScans/Campagnolo/Campy1985_catalog18.pdf)
+  and the [mirror filed under 1984](https://gallery.heinrich.id.au/wp-content/uploads/2018/04/1984-Campagnolo-Catalog-18-Super-Record.pdf)
+  both show `12/86` in the right-margin printer line on PDF p. 70. This dates
+  the registered English printing to December 1986. Source 9's separate No. 18 bis
+  copy has its own verified December 1986 imprint. The title of either scan file
+  cannot establish when the corresponding range first appeared.
+- **7012 / 0104011, braze-on Super Record.** The 1983 Ten Speed Drive Imports
+  catalogue (source 279) names the Super Record braze-on on the
+  [Guerciotti Jet, p. 3](https://ebykr.com/wp-content/uploads/2026/11/ebykr-ten-speed-drive-imports-catalog-1983-p03-scaled.webp)
+  and [Cinelli Super Corsa VIP, p. 10](https://ebykr.com/wp-content/uploads/2026/11/ebykr-ten-speed-drive-imports-catalog-1983-p10-scaled.webp).
+  The c. 1983–84 [Palo Alto catalogue](https://velobase.com/CatalogScans/Palo%20Alto%20Shop%20Catalogs/palo_alto_1984.pdf)
+  (source 294), printed pp. 23 and 32, independently lists both Super Record
+  mounts and labels the black-trim braze-on as retailer SKU 42-407 (91 g).
+  This supersedes the earlier refusal to match Palo Alto's offering to 7012
+  based on its old 1985 date. No. 18 p. 24 supplies the maker assembly code,
+  arms, cage and hanger. The importer and retailer do not print `0104011`.
+  Use 1983 as the season of documented availability for that mount and family.
+- **2313 / 1052/SR, clip-on Super Record.** Visually verified the original
+  [1982 Campagnolo USA catalogue](https://ebykr.com/library/campagnolo-1982-catalog/),
+  printed pp. 9–10 (source 10). They label 1052/SR, the clamp and black arms
+  7117009/SR and 7117011/SR. The braze-on illustrated alongside it is silver-arm
+  Record 1022/00, a separate row (7007). No. 18 uses the later 7117027/7117028
+  arms on the two Super Record versions. The 1978 Barcellona original served at
+  960 px even via the unscaled image URL, and the c. 1979 Pinarello Prestige and
+  Super Record panels supply group names without a clear front variant or printed
+  year. A firm earlier boundary for 2313 and the fitment for 12484 still need
+  distinguishing evidence.
+- **2300 / 0104007, standard-band Nuovo Record.** No. 18 printed pp. 8, 23 and
+  27 list this model in the Record road group and picture the three-hole cage
+  and later standard clamp. The December 1986 attestation covers the range
+  conflict on spec 2290 (1986 Cinelli 840 SLX Competition).
+
+**Applied and validated.** Source 8 now reads `Campagnolo Catalogue n. 18,
+English edition (December 1986)` instead of `(c. 1985)`. Its citation changed
+from `Campy1985_catalog18.pdf` to the original scan URL and back-cover
+reference above. Component 7012 moved from 1985–1988/source 262 to
+1983–1988/source 279. Guida 1988 (source 262) still supports the upper
+availability bound. Component 2300 moved from 1982–1985 to 1982–1986 with
+source 8. Its description formerly said 1982–1987 and now records the
+standard band, three-hole 1052/7 cage and existing 95 g weight.
+
+Removed stale 1985 printing references from the other affected descriptions.
+1472/1474/1475 and 3688 now date the catalogue's unavailability notices to
+December 1986 and keep their previous component bounds. 2301 retains 0104008
+and its measured weight. 4162 retains the December 1986 parts-page evidence
+without treating it as a sales listing. 7007 retains the 1982 listing and
+the later 0104009 code. 7013 retains axle 744/2, 68-C/70-C and 115.5 mm.
+7012 retains the cage, arm and hanger references from No. 18 p. 24.
+For any further date extension, distinguish 2301's two pictured 0104008
+bodies and 7007's early 1022/00 configuration from the later 0104009 listing.
+The No. 18 imprint removes the basis for treating 7013's existing 1985 lower
+bound as attested by this copy. A dated 1046/4 listing is needed to check it.
+
+The guarded transaction updated one source and ten components. The same
+SQL reran with zero affected rows. Live readback matched the proposed values.
+The normal, near and parenthetical duplicate classifications matched the
+pre-change comparison. All 24,829 compared bike specs kept their previous
+mapping results, including the same 15 pre-existing lost proposals. Neither
+unlinked front carrying generic Super Record wording identifies the braze-on
+mount. The live quality report had zero errors and removed exactly the date
+conflict on spec 2290. All 14 test files passed.
 
 ## Record front derailleur specimen comparison — 2026-11-18
 

@@ -4689,12 +4689,16 @@ that work has its own current action. No Mavic DB change followed this review.
   29 ambiguous, 38 skip, 18 new), reviewed by hand and shown to the user before loading.
 - `year_to` -> 1983 on 35 rows (old values): 5254 Avocet Touring I (later) (was 1970-1981); 5256 Avocet Touring WI (was 1970-1981); 5255 Avocet Touring II (was 1978-1981); 9118 Avocet Touring WII (was 1978-1981); 9117 Avocet Touring III (was 1978-1981); 9120 Avocet Racing WI (was 1978-1981); 9121 Avocet Racing WII (was 1978-1981); 5258 Avocet Racing I (was 1978-1981); 5253 Avocet Racing II (was 1970-1981); 5251 Avocet Racing III (was 1970-1981); 5183 Super Champion Gentleman (was 1970-1981); 5180 Super Champion Arc en Ciel (was 1960-1981); 2937 Avocet Model II (was 1981-1982); 3671 Avocet Model III Platform  (was 1980-1981); 3669 Avocet Model I (was 1980-1981); 3670 Avocet Model II (was 1981-1982); 3922 Sakae/Ringyo (SR) SP-100AL (was 1970-1982); 8240 Sakae/Ringyo (SR) SP-11, S (was 1982-1982); 1856 Spécialités TA Cyclotouris (was 1962-1981); 1453 Avocet Racing (was 1981-1982); 1454 Avocet Touring Triple (was 1981-1981); 4 Avocet Model I (was 1981-1981); 9901 Spécialités TA bottom brac (was 1978-1979); 1244 Campagnolo 753/A, Super Re (was 1970-1980); 2243 SunTour Pro-Compe (Ultra-6 (was 1978-1979); 8765 Sedis Sedisport (was 1979-1981); 6861 Specialized Touring (was 1976-1981); 6865 Specialized Touring-II (was 1980-1980); 6862 Specialized Touring K4 (was 1980-1980); 6869 Specialized Ultralight (was 1980-1981); 6868 Specialized Turbo S (was 1979-1981); 6863 Specialized Touring Turbo (was 1979-1981); 6867 Specialized Touring-X (was 1980-1981); 6860 Specialized Expedition (was 1980-1980); 6763 Clement Paris - Roubaix Se (was 1976-1981).
 - Descriptions enriched on 15 rows (ids [2968, 3671, 3708, 3716, 5761, 6860, 6861, 6862, 6863, 6865, 6867, 6868, 6869, 8765, 9771]), none shortened. New rows (1983-1984): Specialized Saturne rim, Ritchey Bullmoose bar / stem, Specialized TriCross, Crossroads and Street Stomper tyres, Vittoria Pave CG tubular.
-- Rejected: matches of the Avocet hubs to the "(by Ofmega)" rows 3189 / 3191 (again) and a Campagnolo front derailleur to the 1985+ 7012; new rows for SR Laprade 250 mm, Avocet headsets Model 20 / 30 (likely the DB's Model II / III), Shimano XT hubs and 600 XT chainset (no model numbers), Sugino Aero Tour A/T cranks (DB has "Sugino AT"), A/T bottom bracket and chainrings, Avocet chainrings.
+- Rejected: matches of the Avocet hubs to the "(by Ofmega)" rows 3189 / 3191 (again); new rows for SR Laprade 250 mm, Avocet headsets Model 20 / 30 (likely the DB's Model II / III), Shimano XT hubs and 600 XT chainset (no model numbers), Sugino Aero Tour A/T cranks (DB has "Sugino AT"), A/T bottom bracket and chainrings, Avocet chainrings.
+- Printed pp. 23 and 32 list both Super Record front mounts. The later
+  [Campagnolo review](campagnolo.md#no-18-imprint-and-super-record-availability--2026-11-22)
+  reconciles the black-trim braze-on, SKU 42-407, to 7012 using independent
+  1983 importer evidence and supersedes the original date-based rejection.
 - Original holds included Regina chains/freewheels and rim identities. The
   2026-11-17 review above resolves ordinary Oro chain 1382 and explicitly named
   Gentleman 5183 / Model 58 5178 on p.18. The 2026-11-22 profile comparison
   identifies the earlier retail clinchers. Later splined Oro freewheels and
-  Cyclone/Campagnolo generation variants remain held. This edition has no Maxy II.
+  Cyclone generation variants remain held. This edition has no Maxy II.
 
 ## Dedupe 2026-10-30: Cambio Rino Aereo crankset
 
