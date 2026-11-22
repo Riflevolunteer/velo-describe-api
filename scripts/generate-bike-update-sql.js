@@ -4209,6 +4209,10 @@ const COMPONENT_OVERRIDES = {
     'suntour blaze aero': [{ from: 1989, to: 1989, id: 453 }], // BL-BE34
   },
   Pedals: {
+    'spidel 700 ra': [
+      { bike: 'PRO 10', from: 1982, to: 1982, id: 12238 },
+      { bike: 'PY 10 S', from: 1982, to: 1982, id: 12238 },
+    ], // 1982 Peugeot (FR), p. 22; Maillard specifies the natural-finish aluminium cage.
     // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
     'suntour xc pro grease guard': [{ bike: 'Grizzly', from: 1991, to: 1991, id: 4019 }],
     // c.1991 MBK Course: explicit table identities; no date expansion.

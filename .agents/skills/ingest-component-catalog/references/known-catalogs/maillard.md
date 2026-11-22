@@ -100,11 +100,75 @@ restored rows have search_text generated from their titles: `Maillard 700` /
 `Maillard 700 RN`. Applied SQL, snapshots, downloads and other task scratch files
 were removed after validation; lasting evidence and restoration details are here.
 
+## Spidel 700 RA maker material table — 2026-11-22
+
+Found two Maillard manufacturer pages on the [DCI pedal page](https://www.dcisite.be/en/parts/Pedals/maillard-700).
+The [Série Maillard 700 technical table](https://www.dcisite.be/sites/default/files/pict-all/2022/parts/pedals/maillard-700/maIllard-700-pedals-05.jpg)
+explicitly identifies **RA** as a natural-finish aluminium cage, **RN** as
+black-anodised aluminium, and **RC** as chrome-plated steel. It lists weights
+of **340 g RA**, **340 g RN** and **420 g RC**, without an explicit basis in
+the table. The series page describes a machined alloy body, ground annular
+bearings, a spindle with a 7 mm internal hex, a removable cap and direct toe-clip
+mounting. The [facing p. 3, Pédale 700 type Spidel](https://www.dcisite.be/sites/default/files/pict-all/2022/parts/pedals/maillard-700/maIllard-700-pedals-06.jpg)
+shows the quill-pedal drawing whose callouts match the numbered feature text.
+Neither image supplies an imprint year. DCI's item year does not date the
+brochure. The separate [cycle-fittings catalogue](https://www.icenicam.org.uk/library/Maillard/Cycle_fittings_catalogue.pdf#page=25),
+source **49**, printed p. 23, names RC and RN and omits RA. The 1978-attributed
+STC page below also covers RC and RN only. The new pages settle the RA material.
+
+The [1982 French Peugeot catalogue](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1982.html),
+printed p. 22 (image 26), explicitly lists **Spidel 700 RA** for both **PRO 10**
+and **PY 10 S**, establishing 1982 availability. Live specs **11032/11053**
+have that exact text and source **253**. The [1981 French Peugeot catalogue](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1981.html),
+images 5 and 7, gives a shared racing-range description of dural pedals and
+prints just **Spidel 700** for those two models. Live **10671/10691**, source
+**251**, match that wording. The description supplies no cage finish or suffix
+to distinguish RA from RN.
+
+Live reconciliation found no explicitly identified conventional 700 RA row.
+The known black-alloy **3833** and chrome-steel **3991** differ from the maker's
+RA. Rechecked all four images of [silver-cage 3827](https://www.velobase.com/Pages/ViewComponent.aspx?ID=9808EBBB-1B08-4FA9-A650-F18D0970BC95).
+The pedal architecture overlaps the 700 drawing. The [box photograph](https://www.velobase.com/CompImages/Pedals/F6A3D21B-7BB4-4247-B828-A51B9E9AEE3C.jpeg)
+shows printed Maillard 700 and BSA markings with apparent handwritten RA.
+Its association with the other gallery specimens and the reported 445 g is
+unverified. Leave 3827's identity provisional and record the maker-attested
+RA separately for the exact 1982 fitments. The 340 g maker listing concerns
+the coded model only. Maillard RN **3830** and later CXC **10988/10989** cover
+separate variants.
+
+The January 1979 article remains unrecovered. The Vélocyclo scans attributed
+to that issue are pp. 18–21, about CMP frames. The [BnF holding](https://catalogue.bnf.fr/ark:/12148/cb34356547z)
+below remains an option for researching earlier availability.
+
+### Applied 1982 reconciliation — 2026-11-22
+
+User approved a separate catalogue-backed **Maillard 700 RA (Spidel)**,
+component **12238**, UUID `7D145B06-539C-402B-A119-97E7F73B868F`, in Maillard
+brand 273, Pedals 14 and Maillard 700 group 263. Maker brochure source
+**515** cites both scans and has unknown market. The component has 1982
+as both recorded bounds from the dated Peugeot fitment and a maker-listed
+weight of 340 g. The evidence supports availability in 1982.
+
+Applied **11032/11053: NULL → 12238**, preserving the printed text, label and
+catalogue source 253. Exact 1982 PRO 10 and PY 10 S generator rules preserve
+the two links on reload. Live readback confirmed **10671/10691** remain NULL.
+The catalogue source and component each inserted once, and exactly two specs
+were updated. The identical SQL rerun affected zero rows. The preview across
+118 loaded catalogues and 24,829 specs identified two gains, and the applied
+generator/live comparison matched the baseline's 15 existing findings exactly.
+The Maillard pedal duplicate report was unchanged, database quality checks
+found zero structural errors, and all 14 test suites passed.
+
+Restore by clearing these two links under their same catalogue, bike, label,
+value and component guards, then remove the UUID-matched component and source
+only after checking for other references. Revert the scoped generator and
+link registry edits with the data reversal.
+
 ## Spidel 700 RA acquisition lead — 2026-11-19, read-only
 
 Rechecked live 3827/3830/3833/3991 and Peugeot specs
-10671/10691/11032/11053. The four specs remain NULL; the existing explicit-dural
-links remain separate from this unresolved RA identification. No component,
+10671/10691/11032/11053, all NULL at this review. The explicit-dural links
+were assessed separately. See the later applied 1982 reconciliation above. No component,
 date, source or bike-link changes are supported by this pass.
 
 The missing January 1979 article now has a concrete holding lead:
@@ -201,7 +265,7 @@ the later aerodynamic CXC family.
 This advances the earlier group-board review but does not resolve RA. Live
 3833 (black alloy) and 3991 (chrome steel) still have their original titles,
 descriptions, source_ref 1 and 1970–1980 dates. The four Peugeot specs in the
-table below remain NULL. Existing 3833 links include 1977 Maillard 700 explicitly
+table below were NULL at this review. Existing 3833 links include 1977 Maillard 700 explicitly
 described as dural (9721), in addition to the four 1979/1980 dural links already
 recorded below. No exact-variant date extension follows from a generic 700 name.
 
@@ -276,7 +340,7 @@ Do not infer RA means alloy by analogy with another model, default to the
 steel-cage row by colour, or map to platform **3990**, Galli **3741/3742**,
 Atom **3665**, or generic Maillard **3827** just to bypass badge/variant ambiguity.
 
-Live specs remain NULL:
+Live specs were NULL at this review:
 
 | Spec | Bike | Year | Printed/stored pedal value |
 | --- | --- | --- | --- |

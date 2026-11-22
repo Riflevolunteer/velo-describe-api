@@ -83,7 +83,6 @@ const REVIEWED_UNLINKED = [
   { label: 'Tyres', value: 'IRC "Roadlite Ex" 700 x 25C - 100PSI', ...y(1986), reason: '9099 is a 1978 27in Road Lite Z', ref: at('tyres') },
   { label: 'Tyres', value: 'IRC Roadlite 100PSI skinwall', ...y(1986), reason: '9099 is a 1978 27in Road Lite Z', ref: at('tyres') },
   // Pedals
-  { label: 'Pedals', value: 'Spidel 700 RA', ...y(1982), reason: 'Spidel 700 rows end 1980; badge variants kept apart', ref: at('pedals') },
   { label: 'Pedals', value: 'Campagnolo Pista', ...y(1972), reason: '3711 or 3715, both 1971+', ref: at('pedals') },
   { label: 'Pedals', value: 'Sun Tour Superbe', ...y(1980), reason: 'PL-1000 Custom or PL-4000 Pro', ref: at('pedals') },
   { label: 'Pedals', value: 'Ofmega Pista', reason: 'Master or Mistral Pista', ref: at('pedals') },

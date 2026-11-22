@@ -534,7 +534,9 @@ alter CSVs, database records or the prior country decision.
   -> 3388, from 1980 -> 3389 red label).
 - CLB Competition (2026-10-28): the NL PH 12 "CLB Competition aerodynamic" had been linked to 608 (1950-70) by a
   substring match; cleared, and 'clb competition' ranged to <= 1979 / 'clb competition aerodynamic' -> null.
-- Left unlinked: Atom 500 RA, Sakae SP 150, Spidel 700 RA, Lyotard 77R pedals; Lightrace headsets; Reydel
+- Pedal follow-up, 2026-11-22: p. 22 names Spidel 700 RA for PRO 10 and PY 10 S.
+  Live specs **11032/11053** link to **12238** after the [Maillard maker reconciliation](../../../ingest-component-catalog/references/known-catalogs/maillard.md#applied-1982-reconciliation--2026-11-22).
+- Left unlinked: Atom 500 RA, Sakae SP 150, Lyotard 77R pedals; Lightrace headsets; Reydel
   Profil, Selle Italia CX, Royal 463/2 saddles; Solida 5270A, Sakae Custom cranks; Maillard Helicomatic
   and 6-speed Normandy freewheels; Maillard 700 SH hubs; CLB
   Competition (1950-70 rows), Ofmega pedals; Mafac Promotion levers (variants).

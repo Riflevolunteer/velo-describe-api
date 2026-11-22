@@ -390,8 +390,8 @@ see the Raleigh catalogue notes for the decision and source.
 
 - Rechecked 2026-11-18: STC p.18 explicitly identifies Maillard 700 RC as
   chrome-steel cage and RN as black aluminium cage, but does not name RA or
-  establish RA/RN equivalence. Retain the four Spidel NULL links and explicit
-  dural links below. **Applied and validated:** restored unbadged Maillard
+  establish RA/RN equivalence. The later RA recovery below supersedes this
+  evidence limit. **Applied and validated:** restored unbadged Maillard
   RN 3830 for coded specs 11640/11651, narrowed 3827 to its silver specimen
   and cleared fifteen unsupported family-only links. Explicit NULL generator
   decisions prevent uncoded 700 / `super light` / toe-clip wording from choosing
@@ -400,16 +400,16 @@ see the Raleigh catalogue notes for the decision and source.
   [Exact applied set](../../ingest-component-catalog/references/known-catalogs/maillard.md#maillard-700-colour-merge-reconciliation--2026-11-18-applied-and-validated).
   [New primary evidence and exact source lead](../../ingest-component-catalog/references/known-catalogs/maillard.md#spidel-700-stc-codematerial-review--2026-11-18-read-only).
 
-- Rechecked 2026-11-17: Peugeot 1981 PRO 10/PY 10 S `Spidel 700`
-  (10671/10691) and 1982 `Spidel 700 RA` (11032/11053) remain unlinked.
-  The colour board explicitly names 700 RA but is undated and gives no cage
-  material; the separate Le Cycle no.119 p.35 image does not label its pedal
-  700 RA. Neither chooses black-alloy 3833 versus chrome-steel 3991 or dates
-  either exact variant. Preserve existing explicit-dural links to 3833.
-  [Evidence and next discriminant](../../ingest-component-catalog/references/known-catalogs/maillard.md#spidel-700-ra-group-box-review--2026-11-17-read-only).
+- Rechecked 2026-11-22: Peugeot 1981 PRO 10/PY 10 S `Spidel 700`
+  (**10671/10691**) stays unlinked until the original cage or code is
+  identified. Peugeot 1982 **11032/11053** explicitly name the natural-finish
+  aluminium 700 RA and now link to **12238**. Candidate silver specimen **3827**
+  retains its provisional identity. The previously recorded explicit-dural
+  links to **3833** remain in place.
+  [Maker material table and live reconciliation](../../ingest-component-catalog/references/known-catalogs/maillard.md#spidel-700-ra-maker-material-table--2026-11-22).
 
 - Most unlinked values are toe-clip / reflector text ("Course with toe clips and straps" 17, "Sports pedals with reflectors" 10), Raleigh house pedals (717, 501, 917, "Raleigh ball bearing"), the Maillard CX / Atom source gap (see source hunts) and Colnago group fan-out ("Shimano AL 11", "Shimano Santé"): leave.
-- Leave unlinked (several rows fit or either / or): 1982 Battaglin "Gipiemme Cronospecial / Special" (existing do-not-link: 3747 Cronospecial and 3752 Special are separate pedals); 1972 Raleigh "Campagnolo Pista" (3711 / 3715, both 1971+); 1980 Raleigh "Sun Tour Superbe" (PL-1000 Custom or PL-4000 Pro); 1981 Peugeot "Atom 450" x2 (450RA or 450RN); 1981-82 Peugeot "Spidel 700" / "700 RA" x4 (Spidel 700 rows end 1980; Spidel badge variants kept apart); Bianchi "Ofmega Pista" (Master or Mistral Pista) and "Ofmega Competizione" (not the Super Competizione).
+- Leave unlinked (several rows fit or either / or): 1982 Battaglin "Gipiemme Cronospecial / Special" (existing do-not-link: 3747 Cronospecial and 3752 Special are separate pedals); 1972 Raleigh "Campagnolo Pista" (3711 / 3715, both 1971+); 1980 Raleigh "Sun Tour Superbe" (PL-1000 Custom or PL-4000 Pro); 1981 Peugeot "Atom 450" x2 (450RA or 450RN); Bianchi "Ofmega Pista" (Master or Mistral Pista) and "Ofmega Competizione" (not the Super Competizione).
 
 ## Shifters
 
