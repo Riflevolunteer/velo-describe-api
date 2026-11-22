@@ -2515,9 +2515,53 @@ unlabelled row the 88-89 pass flagged missing; its 1988 start rests on the
 **Left unresolved:** 5071 M 231 CD is the `'mavic 231'` override target and
 is linked to three 1993 bikes (Grizzly, Super Grizzly, Nth FS) beyond its
 1991 year_to — they may really be the plain M 231 (8191). 3402 "Mavic 531"
-hub (1990) possibly a 530 successor, not merged. 4343 "870 (MTB)" RD
-(1990-1994, "as listed in 1991") absent here. 2410 "870, SSC (31.8 clamp)",
-1192 / 3403 "571" unchanged.
+hub (1990) possibly a 530 successor, not merged. For the legacy 4343
+name, see the [ATB duplicate review](#mavic-870-mtb-duplicate-review).
+2410 "870, SSC (31.8 clamp)", 1192 / 3403 "571" unchanged.
+
+### Mavic 870 MTB duplicate review
+
+The maker's 90/91 ATB section (source 121) identifies the **825** under-bar
+shifters on [p. 32](https://www.disraeligears.co.uk/site/00_main_images/mavic_trade_catalogue_9091_page_32_main_image.jpg)
+and the **845** long-cage rear derailleur on [p. 33](https://www.disraeligears.co.uk/site/00_main_images/mavic_trade_catalogue_9091_page_33_main_image.jpg).
+The [French VTT spread, pp. 100–101](https://www.goatsurfer.com/assets/Mavic_Group_1991.jpg),
+also captions the matching parts 825 and 845. The 845 there has the rounded
+silver hanger housing and slotted black cage seen in both specimens, while
+the 90/91 trade catalogue illustrates an earlier hanger and cage shape.
+The 250 g spec on the legacy record repeats the maker's figure for 845.
+The two shifter listings share their main photograph, image GUID
+`AF0C728D-AC7D-4A31-881F-82DCCD2C4268`, with the 825's under-bar clamp
+and rubber-covered twin paddles. The legacy listing also carries a model
+correction to 825. [4343 specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=062319ED-B09E-4061-86AC-F70FB3E57A5D),
+[4345 specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=F5C009EA-A6FE-4174-85FE-0DCC95BED03E),
+[6086 specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=A5613100-F11F-469B-A361-DF9A0146AD11),
+[6085 specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=FF107652-0FE8-4519-AA40-107202896B3A).
+
+The applied cleanup kept the numbered rows with their existing dates and
+groups. Both legacy records had zero bike links and no generator overrides.
+The 6086 listing's 1994 date lacks a dated specimen code or catalogue
+attestation and is not grounds to extend 6085. The road 870 table on
+[p. 22](https://www.disraeligears.co.uk/site/00_main_images/mavic_trade_catalogue_9091_page_22_main_image.jpg)
+explicitly gives a 28 mm collar, so this review supplies no dates for the
+31.8 mm road variant 2410.
+
+| Legacy record | Numbered record | Legacy dates and source UUID |
+| --- | --- | --- |
+| 4343 `Mavic 870 (MTB)`, rear derailleur, 250 g spec | 4345 `Mavic 845` | 1990–1994, `062319ED-B09E-4061-86AC-F70FB3E57A5D` |
+| 6086 `Mavic 870 (MTB)`, shifters | 6085 `Mavic 825` | 1994–1994, `A5613100-F11F-469B-A361-DF9A0146AD11` |
+
+The approved transaction deleted exactly the two legacy rows. The identical
+rerun deleted zero. Live readback confirmed that 4345 and 6085 match their
+previous values field for field. The generator comparison returned identical
+results for 118 loaded catalogues and 24,829 specs. The data-quality findings
+were identical with zero structural errors, and the Mavic near-duplicate
+report returned the same candidates.
+
+To restore the retired rows, use the original IDs, title, dates and source
+UUIDs above. Both had brand 31, group 273, source_ref 1, search text
+`Mavic 870` and a NULL image. The rear derailleur used category 15 and
+description `Mavic 870 (MTB), France, 250 grams (Spec),as listed in 1991 Mavic Catalogue`.
+The shifters used category 19 and description `Mavic 870 (MTB), France`.
 
 ## Mavic Catalogue c. 1980 — disraeligears.co.uk, data_source id 240
 
