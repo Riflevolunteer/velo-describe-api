@@ -251,7 +251,7 @@ see the Raleigh catalogue notes for the decision and source.
   Axis and Sika explicitly say cassette. Pista explicitly says 16T fixed
   gear. [Edition evidence and mappings](known-catalogs/bianchi.md#1991-us-import-applied-and-validated)
 
-- **1989 Bianchi Sport SX, spec 18494** (2026-11-20 original-table review): `Shimano silver 13-24T 7-speed` is explicitly printed as a cassette alongside RM-50 hubs and Sport LX SIS. Keep NULL: neither the exact cassette code nor the rear hub model is printed. Existing CS-1000 7564 describes a black six-speed cassette, while FH-RM50 7624 is also six-speed; do not force those into this seven-speed offering. Bike/year-scoped NULL guard added. Tangent/Ocelot proposals and source evidence are in the Bianchi catalogue notes, "Cluster review — 2026-11-20".
+- **1989 Bianchi Sport SX, spec 18494:** `Shimano silver 13-24T 7-speed` is printed as a cassette alongside RM-50 hubs and Sport LX SIS. Shimano and the 1989 Fuji catalogue support CS-1000-7 **12237** as the leading candidate. Keep the bike/year-scoped NULL guard pending a Bianchi-specific code. [Bianchi cluster review](known-catalogs/bianchi.md#cluster-review--2026-11-20).
 
 - Decided 2026-10-30, leave unlinked: Atom 13/26 6 speed, 1981 Raleigh Professional [9341] (2050 black vs 2051 silver cogs, colour not printed); Shimano Gold 13/28 with 600 EX, 1981 Raleigh Criterium [9285] (no Gold freewheel row); Regina CXS 7-speed, 1986 Cinelli [2309] (2169 is the 6-speed only).
 

@@ -1286,8 +1286,8 @@
   BB-M250 (no Exage Country group exists; ungrouped).
 - Merged/deleted: 4517 "Shimano RD-A350" (bare, 1987-88, Light Action
   group 141, `2A287D28-16E4-4B3F-9EB9-814FFE8490BC`, no links) -> 4514.
-- Left: 2457 bare "FD-A350" (1980, may be the non-front-SIS twin of
-  FD-A351); 1988-only rows not listed here (7213 BR-M451 U-brake, 7186
+- Left at the time: 2457 bare "FD-A350", since [identified and dated](#fd-a350-identification--applied-and-validated-2026-11-22);
+  1988-only rows not listed here (7213 BR-M451 U-brake, 7186
   SL-M450, 7184 FD-A450, 6179 SL-A450, 7185 FD-M450) stay ending 1988;
   3574 FH-A451 (1990).
 
@@ -2608,6 +2608,80 @@ Restoration fields and retired GUIDs are retained below.
   live consolidated component set across all 96 CSVs / 21,176 generated
   specs found zero spec content or mapping changes. No bike links changed.
 
+
+## FD-A350 identification — applied and validated 2026-11-22
+
+The [1988 Mongoose Performance Bicycles catalogue](https://www.vintagemongoose.com/pdfs/mongoose_cat88.pdf#page=33)
+names Shimano **FD-A350**, RD-A350 and SL-A350 front/rear SIS on the Mangusta
+3000, alongside FC-A350 42/52T. PDF p. 6 describes the A350 drivetrain and
+PDF pp. 32–33 form the dated adult specification spread. The [comparison
+specimen's cage stamp](https://cdn.shopify.com/s/files/1/0333/6051/1116/products/DSC_0547_3fed778f-7797-4e2b-b057-c4fdd2318386.jpg?v=1712912627)
+reads FD-A350. Its band clamp, double cage and SIS badge match [2457's
+existing specimen](https://velobase.com/CompImages/FDerailleur/600C56E1-2456-488D-A3BB-7041AB51C5E7.jpeg).
+These sources replace the earlier supposition that FD-A350 lacked front SIS.
+FD-A351-B 2524 remains separate under its own Shimano catalogue code.
+
+Updated **2457** from the imported 1980–1980 placeholder to the attested
+1988–1988 model year. Source_ref moved **1 → 513**, the Mongoose catalogue.
+Added the double-chainring, band specimen and SIS fitment details to the
+description. The prior description was `Shimano FD-A350, Japan`. To restore,
+use that description, 1980–1980 and source 1, guarded by the applied values
+and specimen key `4204EA7A-E2E1-4983-974F-8659A3BF06C4`.
+
+Readback verified the updated component and source. Replay changed zero
+rows, and no duplicate reports flagged 2457. The full generator comparison
+and quality findings remained identical. The two existing 1989 Bianchi links
+to FD-A351-B remain in place. Their catalogue wording supplies no exact
+FD-A350 front code for those bikes.
+
+## CS-1000 variants and FH-RM50 — applied and validated 2026-11-22
+
+Shimano's 1989 Exage dealer manual (source **78**, printed August 1988)
+shows CS-1000-6/7 and the seven-speed CN-UG50 pairing on [p. 10](https://www.disraeligears.co.uk/site/00_main_images/shimano_-_the_new_system_component_family_for_every_riding_style_page_10_main_image.jpg).
+[Page 32](https://www.disraeligears.co.uk/site/00_main_images/shimano_-_the_new_system_component_family_for_every_riding_style_page_32_main_image.jpg)
+specifies silver steel sprockets and lists 13–23T, 13–26T and 13–28T as the
+standard seven-speed combinations. [Service instruction R-45](https://si.shimano.com/en/pdfs/si/R-45/SI-R-45-000-00-ENG.pdf)
+prints the separate CS-1000-6 and CS-1000-7 codes. The [1989 Fuji Edition 19
+specification table, scan p. 32](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1989-fuji-catalog-p32.webp)
+explicitly lists a silver 13–24T seven-speed CS-1000 on Club Fuji with Sport
+LX and A450 hubs (existing source **412**).
+
+- **12237** added `Shimano CS-1000-7, Sport LX` in Cassettes, 1989–1989,
+  source 78, stable key `81aa79f9-9dcb-491f-a4f0-b23383217bd2`. It records
+  Shimano's standard combinations and Fuji's 13–24T fitment.
+- **7564** retains its six-speed identity. The [FH-A450-6 exploded view](https://si.shimano.com/en/pdfs/ev/FH-A450-6-0872/EV-FH-A450-6-0872.pdf)
+  explicitly lists silver CS-1000 sprockets. The [1990 dealer manual,
+  p. 63](https://www.disraeligears.co.uk/site/00_main_images/shimano_-_dealers_1990_product_manual_page_63_main_image.jpg)
+  also lists Standard/Black. The description now documents both finishes
+  and includes the hubs from R-45.
+- **7624** retains the 1989 Exage manual's six-speed specifications. Shimano
+  [T-17, May 1989](https://si.shimano.com/en/pdfs/si/T-17/SI-T-17-000-00-ENG.pdf)
+  also lists FH-RM50 among seven-speed SIS options. The description records
+  that attestation without claiming identical bodies or geometry.
+- **1196** now records the [specimen's](https://www.velobase.com/Pages/ViewComponent.aspx?ID=f0c65e0f-8c6a-4209-b74e-ab469abc4a41)
+  reported 14–34T and 3.3 mm spacers, with the pictured dark steel sprockets.
+  The [FH-6208-5/-6 parts sheet](https://si.shimano.com/de/pdfs/ev/FH-6208-6_5-0734/EV-FH-6208-6_5-0734D.pdf)
+  lists a silver 34T sprocket for that family. It supplies no code, finish or
+  spacer match to date this dark specimen. 1196 remains undated and separate
+  from 1200.
+
+Bianchi Sport SX has the same gearing, speed count and finish as the Club
+Fuji, but names RM-50 hubs and omits the cassette code. T-17 lists both
+CS-1000-7 and CS-HG50. Shimano's [1990 Hyperglide table, p. 64](https://www.disraeligears.co.uk/site/00_main_images/shimano_-_dealers_1990_product_manual_page_64_main_image.jpg)
+contains no standard 13–24T combination. CS-1000-7 is the leading candidate
+and spec 18494 remains NULL pending Bianchi-specific evidence.
+
+Previous descriptions for restoration:
+
+- 7564 `Shimano CS-1000, standard (6sp), Japan, 6-speed freehub cassette, black, 13-16T threaded top, spline 14-34T, for FH-1050 and Deore freehubs`
+- 7624 `Shimano FH-RM50, Japan, Aug 1988 Exage manual: 6-speed SIS freehub, one-piece, sealed, QR or nut, 126 / 130mm, 32 / 36h, 446g w/o sprockets, 13-16T / 14-32T; Exage Action, Motion, Trail, Country`
+- 1196 `Shimano uni-glide 5 speed, Japan`
+
+Readback verified the three description updates and the new component with
+zero bike links. Transaction replay changed zero rows. The three duplicate
+reports found no candidates involving 12237. The generator comparison
+across 118 loaded CSVs and 24,829 specs and the DB quality findings were
+identical before and after.
 
 ## Uniglide 1196/1200 dating review — 2026-11-20
 
