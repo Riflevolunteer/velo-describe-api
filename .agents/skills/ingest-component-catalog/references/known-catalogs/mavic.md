@@ -309,6 +309,15 @@ Restore the previous text only with the exact applied description, ID,
 original source and date values as guards. The remaining measurement and 870
 clamp questions are linked from the TODO.
 
+The [Retrobike archive announcement](https://www.retrobike.co.uk/threads/new-mavic-catalog-and-manuals-added-to-the-archive.427093/)
+was a lead for recovering a 1996 catalogue. The maker brochure above now
+supplies the 1996 figure. The announcement still returns an access challenge,
+and its indexed results do not identify a weighing note or a 31.8 mm clamp
+sheet. The old technical-manual [rim-table link](https://cyclingforums.com/threads/mavic-open-sport-erd-295473)
+points to the 1997 clincher table and also returns an access challenge. Keep
+the source leads here. The active searches are for the weighing basis and
+dated 31.8 mm clamp specification.
+
 ## Full French catalogue (1994) — applied and validated
 
 Source: [36-page PDF](https://www.bikecatalogs.com/download/3659), mirrored from

@@ -2595,6 +2595,16 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   recording these URLs and findings; no source rows or speculative duplicates
   were created.
 
+- The 43-page [Bike Catalogs file labelled 1987](https://www.bikecatalogs.com/download/4372)
+  opens with the existing AccuShift leaflets (source 91). PDF p. 6 charts the
+  Alpha 3000 rear derailleurs and shifters. It supplies no front specification
+  or replacement for the missing dealer-catalogue page.
+- For Nyala spec 7018, the [1990 Bianchi photo, PDF p. 12](https://www.bikecatalogs.com/download/2797#page=12)
+  shows a direct hanger and long cage. [SunTour p. 17](https://www.disraeligears.co.uk/site/00_main_images/suntour_bicycle_equipment_catalog_1990_-_page_17_main_image.jpg)
+  lists both RD-XT00-GXB and RD-XT10-GXB beside the separately bracketed GX
+  options. The photo and seven-speed fitment text supply no mark that
+  distinguishes the two GXB models. Spec 7018 remains unlinked.
+
 ## XCE crank dating and Tangent brake-link review — 2026-11-17, applied and validated
 
 User approved both guarded updates; applied and read back on 2026-11-17.

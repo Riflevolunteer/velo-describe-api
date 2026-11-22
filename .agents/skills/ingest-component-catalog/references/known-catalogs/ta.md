@@ -81,6 +81,11 @@ Dated-source hunt: English/French Kheops/Khéops+cassette/pignons/catalogue and1
 Next dating evidence needed: a dated TA/importer offering, instruction or securely dated packaging explicitly identifying CCA8-speed12–21 (or a maker crosswalk connecting that specimen). Reopen sourcing for a new such lead; no repeat of broad searches alone. Exactly one guarded component update applied; identical SQL rerun changed zero rows. Exact readback confirms the approved title, helper-generated search_text and145-character description, both dates NULL, source_ref1, stable UUID and zero bike links. No component insert, merge, date or source change. Full generator/live comparison is identical before/after:23,800 compared specs,23,785 unchanged,15 pre-existing lost proposals, zero gained/changed/missing/ambiguous identities; every finding identical. Whole-DB quality remains zero errors/2,067 review findings with unchanged check counts. Temporary SQL, original specimen HTML, four downloaded photos and comparison JSON were removed after validation; source URLs and material old/new values above remain the durable evidence.
 
 
+Live follow-up confirmed that 1212 still has the packaging-backed eight-speed
+identity, two unknown date bounds and zero bike links. The date-only search
+is off the worklist. The exact evidence needed to revisit the dates is
+recorded above.
+
 ## Clearer Tevano catalogue copy indexed1983 — acquisition triage, 2026-11-20
 
 Recovered [VeloBase TA1983Catalog.pdf](https://www.velobase.com/CatalogScans/TA1983Catalog.pdf),28 pages,7,791,806 bytes. The downloaded copy was reconciled and removed after validation; the source remains available at the linked URL. Source registry has no separate1983 edition; only206 c.1975. Visually compared the blue Tevano cover, index and pedal page with source206's cover/recorded page sequence. They appear to be the same undated Tevano catalogue edition, now at substantially better resolution, not a verified new1983 catalogue. No date on cover/back; RC67 B3994 on PDF2 is not a publication year. Do not create a1983 source or move dates from the archive filename.
