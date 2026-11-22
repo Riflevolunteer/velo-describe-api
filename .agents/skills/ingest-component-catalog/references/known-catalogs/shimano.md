@@ -2434,7 +2434,8 @@ merges or new variant rows. Do not infer unique identities from these conflicts.
   (spec); RD-MC14 / MC16 capacity "37T" and RD-MC34 "29T" are as printed.
 - **Not in this manual**: BB-UN73 (121) and BB-LP27 (120) appear nowhere (only
   BB-LP26), so both stay as they were; the BB-UN71 / UN51 and BB-CS21 / CS11
-  rows have no 1997 evidence and were not extended.
+  rows were not extended. The later review below found BB-CS11 in a p46 photo
+  caption conflicting with the p47 specifications table's BB-CS12.
 - **Left**: SQ-M900 / SQ-M730 seat binders, DF-M730, SM-SP18, cables, tools,
   shoes and cleats (out of scope); 3534 FH-6400-6/7 / HB-6400-F not extended
   (the 1997 HB-6400 front hub is a later part on the same code).
@@ -2452,6 +2453,114 @@ merges or new variant rows. Do not infer unique identities from these conflicts.
   CS-M738-I is CS-M737-I in the p32-33 tables. Confirmed: CN-IG90 / IG70 /
   IG51 / IG31 are 7.1mm (p33), and the Nexus p76 weights sit under the right
   columns.
+
+### 1997 manual remaining-range triage — 2026-11-23, historical
+
+- The original pass was substantial, and the 1996 full-range follow-up above
+  enriched many shared rows. A sample review still finds useful 1997-only
+  detail: [p60](https://www.disraeligears.co.uk/site/00_main_images/shimano_bicycle_system_components_-_97_page_60_main_image.jpg)
+  specifies SL-7700 as a braze-on, polished aluminium, 9-speed down-tube
+  shifter using SIS-SP40 casing; at triage component 6167 only said "9-speed down
+  tube shift lever". The same page gives FD-7700-B/F 2514 replaceable cage,
+  61–66° chainstay angle and 28.0–28.6mm band size, absent at triage. Both
+  descriptions were updated in the full-range follow-up below.
+- [p32](https://www.disraeligears.co.uk/site/00_main_images/shimano_bicycle_system_components_-_97_page_32_main_image.jpg)
+  identifies FC-M737-I and FC-M563-I as IG-compatible, with gearing and
+  weights matching 1996 FC-M737-IG 12340 and FC-M563-IG 12341 respectively.
+  The full-range follow-up below establishes the suffix crosswalk and extends
+  both rows to 1997; similar figures alone were not the basis for the change.
+- [p66](https://www.disraeligears.co.uk/site/00_main_images/shimano_bicycle_system_components_-_97_page_66_main_image.jpg)
+  pairs FC-7600 with BB-7610 in 1997; at triage 1823 named only BB-7600.
+  The full-range follow-up preserves both pairings by edition. This triage was
+  a sample review and made no database changes.
+
+### 1997 full-range follow-up — applied and validated 2026-11-23
+
+- Compared the maker's 1997 MTB, road, track, Tourney, Nexus, tandem and pedal
+  specifications against live rows after the 1996 reconciliation. MTB pages
+  20–35, lower groups 36–47, road/track 48–66, separate components 67, Nexus
+  68–76 and SPD pedals 84 were reviewed. Shoe/cleat pages 77–83/85 and cables,
+  tools, binders and small accessories are outside component categories.
+- Applied **41 guarded updates, no inserts or deletes**, using source 275.
+  Original values follow below for a deliberate restoration. All descriptions
+  fit their fields. No title, category, group or search-text changes were made.
+- Nine date changes: 10867 FD-M567-E and 10868 FD-M739-E start in
+  1997 rather than 1998; 7673 SP-M650, 9707 BL-TY21, 9708 FC-TS21,
+  9711 BL-IM40/IM30, 12339 SL-TY30-L and IG cranks 12340/12341 extend to
+  1997. The 1997 p32/33 tables explicitly cross-reference FC-M737-I and
+  FC-M563-I to the -IG designations, so the 1996 IG rows do not need duplicate
+  aliases. SL-TY30-L's 1994 friction description and 1997 SIS-pair statement
+  are retained as source-specific claims, not asserted to be identical designs.
+- The 1997 p82 says SM-SH51 cleats are included with PD-M323, while p84 says
+  cleats are not included. Do not resolve the contradictory package contents
+  from this manual alone. Separate-component p67 models already have matching
+  rows and no additional change is proposed from the reviewed specifications.
+- 9600 CN-7700 incorrectly said the narrow chain had the same overall width as
+  an 8-speed chain; p52 attributes that statement to the cassette cluster.
+  9615 CS-M950: 1996 p15 explicitly gives two titanium sprockets in the ak
+  group; 1997 p23 gives a general three-largest statement alongside both groups.
+  The applied description attributes both without claiming which printing is correct.
+  The earlier 1996 full-range text should be read with this 1997 conflict.
+- Other held questions: p46 photo labels BB-CS11 while p47 specifies BB-CS12;
+  8704 CS-IG50 group codes differ within the 1997 tables; 8697 HP-MC31 thread
+  differs from the earlier catalogue; RD-MJ05-GS and FD-CT90-E specifications
+  differ between printings. The applied descriptions identify those conflicts
+  rather than silently selecting one. Crosswalks for BR-M900-C, BR-M565-E and
+  BR-MC33-E remain unresolved. The earlier 1997 statement that BB-CS11 is
+  absent applies to the specifications table, not the p46 photo caption.
+- Validation: all 41 rows matched intended and preserved fields on readback;
+  the identical SQL rerun affected zero rows. The Shimano near-duplicate report
+  had zero candidate pairs both before and after. Generator/live comparison
+  covered 118 loaded catalogues and 24,829 specs before and after, with zero
+  gained/changed mappings and the same 15 unrelated Huret Rival losses. No
+  affected date-change row or exact model-code text had a loaded bike link in
+  the scoped query, and no bike links were changed. The whole-database quality
+  report returned zero integrity errors. Task scratch files were removed after
+  readback and idempotency validation.
+
+#### Previous values for the 1997 full-range updates
+
+- 1209 (1996–2004, source 275): 9-speed HG cassette, titanium on the largest 2-3 sprockets, aluminium alloy sprocket carrier, champagne gold and titanium silver, 159.5g (12-23T); 187g measured (12-27T)
+- 1823 (1986–1997, source 173): Track crank, high-tech grey anodized ring, Ni-Cr-Mo axle, 1/8 or 3/32in, 165-175mm, 605g (48T, 170mm); BB-7600. Rings: 46-52T (42-45/53-54T option) in 1986; 44-55T in 1994.
+- 2514 (1997–2000, source 275): Dual SIS front derailleur for SG-X chainrings, nickel plated aluminium chain cage with widened mounting points, 15T capacity, band (-B) or braze-on (-F), 72.5g (-F)
+- 3535 (1992–1997, source 83): Shimano FH-6402-HG, 600 Ultegra (8-speed HG), Japan. 8-speed HG freehub, new for 1992, lip seal, Uni-Balance, 130mm, axle 141mm, 28-36h, buff anodized, 426g with QR (Aug 1991).
+- 3566 (1997–2000, source 275): 9 and 8-speed freehub, 130mm over locknut, 141mm axle, titanium freewheel body, 375g; HB-7700 front hub 100mm over locknut, 108mm axle, 177.5g. Labyrinth and contact seals, stainless steel balls, 36/32/28/24H (aero type 32/28/24/18/16/12H)
+- 3972 (1993–1999, source 366): Shimano PD-7410, Dura-Ace (SPD road), Japan. SPD competition road pedal, new for 1993, 36 deg clearance, cartridge axle, cleat retention indicator and adjuster, alloy, Cr-Mo axle, 313g pair (Jul 1992). 315g measured.
+- 3977 (1990–1997, source 275): Shimano PD-A550, RX100, Japan. Road pedal, 34 deg clearance, cartridge axle, aero, sealed, barrel-finish alloy body, resin clip, 400g pair with L clip; also on Exage 500EX (407g) (1990 manual). 366g measured.
+- 4486 (1995–1998, source 277): 8-speed rear derailleur, Advanced Light Action, Teflon-coated pivot pin bushings, 32T max, 11T min, 20T front difference, 38T capacity, electrostatic painted aluminium, chrome plated steel pulley cage, 285g. 293g measured
+- 4506 (1997–2001, source 275): 9 or 8-speed SIS rear derailleur, 11T sealed bearing pulleys in Zytel, extension link spring and Teflon-coated pivots, 26T max, 11T min, 26T capacity, 192.5g; 8-speed lever use by changing the cable mount position
+- 5895 (1994–2000, source 277): Single-butted thin-wall aluminium seat post, round, 26.8 / 27.0 / 27.2mm, 270mm long, 195g; 40g lighter and 50mm longer than the SP-7400
+- 6167 (1997–2003, source 275): 9-speed down tube shift lever
+- 6168 (1996–1999, source 353): 9-speed bar-end shift lever, 178g
+- 6358 (1992–1997, source 83): Shimano ST-6400, 600 Ultegra (Dual Control), Japan. STI road brake / shift lever, new for 1992, 8-speed SIS, Super SLR, Light Action, sealed, used with BR-6403, 23.8-24.2mm, 542g (Aug 1991). 523g measured.
+- 7673 (1992–1996, source 277): Cr-Mo seatpost, pearl bright finish, 26.4/26.6/26.8/27.0/27.2mm; 280/330/360mm, 360mm only in 27.2mm; 325g (360mm). New for 1992 and listed with Deore LX in 1996.
+- 8682 (1995–1999, source 366): SPD pedal with both pedal surfaces, black anodized aluminum body, chrome plated steel plate, BC 9/16" x 20TPI, 410g pair
+- 8697 (1994–1999, source 173): Cartridge headsets, 37.6mm stack. HP-MC30 BC 1" x 24TPI, 170g; HP-MC31 BC 1-1/8" x 26TPI, 190g
+- 8704 (1995–1999, source 277): 7-speed IG cassette, ag 11-13-15-18-21-24-28T, silver. 1997 lists aj 11-28T and am 11-30T. For use with the IG system only.
+- 8716 (1995–1997, source 275): Easy-Set Top-Swing front derailleur mounted on the bottom bracket, 14T top-low capacity, 8T top-middle, 38T top gear, 28.0-28.6 / 31.8mm clamp, Dual SIS
+- 8734 (1995–1997, source 277): 6-speed SIS rear derailleur, Advanced Light Action, 11T min. GS 24T max, 20T max front difference, 34T capacity, dropout hanger; SS 28T max, 13T difference, 28T capacity.
+- 9599 (1997–1999, source 353): 9-speed Dual Control Lever, double front. Precision main lever bearing, anatomical bracket, levers closer to the bar with a longer release lever, in-line cylindrical Optical Gear Display, engineering plastics in the bracket (100g pair saving), 380g (pair)
+- 9600 (1997–1999, source 353): 9-speed narrow HG chain, outer plate width reduced from 7.30mm to 6.60mm (external width 0.7mm less) with tighter tolerances, same overall width as an 8-speed chain, 304g (116 links)
+- 9608 (1997–1997, source 275): Rapidfire SL shift lever set without brake lever, 8-speed, triple front, no Optical Gear Display
+- 9610 (1996–1998, source 365): V-brake, Parallel-Push linkage, extra long cartridge pads (M-70R2) with optional pads for ceramic rims, low-flex design, ball bearing and DU bushing pivots, mounts to standard bosses, 375g; lighter than the original XTR cantilever
+- 9615 (1996–1998, source 277): 8-speed HG cassette, forged aluminium carrier, champagne gold and titanium silver. P 12-14-16-18-21-24-28-32T (232g), titanium 24/28/32T; ak 11-13-15-17-20-23-26-30T, titanium 26/30T.
+- 9618 (1997–1998, source 365): Rapidfire SL shift lever set without brake lever, 8-speed, triple front, no Optical Gear Display
+- 9621 (1996–1998, source 365): 8-speed rear derailleur, cold-forged aluminium, four Teflon-coated link bushings, self-centering sealed ceramic upper pulley. RD-M739-GS 32T max, 11T min, 22T front difference, 33T capacity; -SGS 20T difference, 39T capacity, 250g actual.
+- 9624 (1997–1999, source 366): SPD pedal designed for BMX, dual slalom and downhill racing: dual-sided pop-up SPD unit, oversize aluminium cage, steel axle, red, 640g (pair)
+- 9642 (1996–1998, source 365): Top-swing front derailleur, 18T capacity, 8T top-middle, 42T top gear, clamp 28.0-28.6 / 31.8 / 34.9mm, chainstay angle 63-66 / 66-69 degrees
+- 9657 (1997–1997, source 275): Bottom-bracket mounted front derailleur, 18T capacity, 8T top-middle, 42T top gear
+- 9661 (1997–1997, source 275): 7-speed freehub, 130/135mm over locknut, 36H; HB-RM40 front hub 100mm over locknut, 36H
+- 9674 (1996–1999, source 366): 7-speed internally geared hub with pedal-activated coaster brake, ratios 0.632 to 1.545 (244%), 169.5mm axle, 127mm over locknut, 36H, 16-22T sprockets, 1780g
+- 9676 (1996–1999, source 366): 4-speed internally geared hub with pedal-activated coaster brake, ratios 1.000 to 1.843 (184%), 165.6mm axle, 123.5mm over locknut, 36H, 1680g
+- 9707 (1994–1996, source 173): M-System compatible brake lever, 22.2mm clamp; 2.5-finger in 1994, 3-finger in 1996. Also left-hand lever for Nexus SB-4S30 / ST-4S20.
+- 9708 (1996–1996, source 277): Triple crankset, 48-38-28T, riveted chainrings, 170mm, not IG or HyperDrive-C; Tourney 30 / 22 / 15 series alongside FC-TY21
+- 9709 (1996–1998, source 365): 8-speed HG cassette for IG chain, ah group 11-12-14-16-18-21-24-28T, steel sprockets, silver, 326g; for FH-M565
+- 9711 (1996–1996, source 277): Left-hand brake levers for the Nexus Revo-Shift sets: BL-IM40 with SB-7S40 for the BR-IM41-F front roller brake, BL-IM30 with SB-4S30
+- 10867 (1998–1998, source 365): E-type top-swing Advanced Light Action Dual SIS front derailleur, 20T capacity, 42T top ring.
+- 10868 (1998–1998, source 365): E-type top-swing Advanced Light Action Dual SIS front derailleur, 22T capacity, 42/44T top ring.
+- 12339 (1994–1994, source 173): Friction front shift lever, 22.2mm handlebar clamp.
+- 12340 (1996–1996, source 277): IG-compatible HyperDrive-C triple, 42-32-22T (44T option), 94/58mm bolt circles, 165/170/175/180mm arms, 7075 alloy outer and middle rings, steel inner, chain guard available, 694g (175mm).
+- 12341 (1996–1996, source 277): IG-compatible HyperDrive-C triple, 42-32-22T, 94/58mm bolt circles, 170/175mm arms, 7075 alloy outer and middle rings, steel inner, chain guard available, 681g (170mm).
 
 ## bikeforums.net "1997-98 Shimano catalog scans" thread 1270806 — checked 2026-11-02, nothing loaded
 
