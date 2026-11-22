@@ -18,12 +18,6 @@ corrected links. Component dates, CSVs and source references stayed the same.
 To restore the previous mappings, set those two links back to 6533 using
 the replacement IDs as guards, and remove the two new overrides.
 
-The 1976 table calls specs 7943/7962/7981/7999/8017/8035 simply `G.B. Forged
-Alloy`. They still link to 6533 (1957–1975) pending comparison with the 1975
-table and any model-specific evidence. The 1974/75 US International
-transcriptions name Neta in specs 4120/4307, which also still link to 6533.
-The original scans for those two readings remain to be checked.
-
 Validation: the full generator comparison over 118 loaded catalogues and
 24,829 specs proposed exactly the two intended changes before load and
 returned to the baseline afterward. Exact row readback verified the two
@@ -31,6 +25,39 @@ new links and the unchanged generic links. Guarded SQL affected two rows
 and its identical rerun affected zero. The quality report returned zero
 structural errors and two fewer linked-date conflicts. All 14 test files
 passed.
+
+### 1974–76 US Raleigh stem follow-up
+
+The printed Stem row on p. 23 names `G.B. Forged Alloy Neta` for the
+International DL 170 in both editions, confirming the CSV text. Specs 4120
+and 4307 (sources 129 and 130) now link to GB Neta 6541 in place of GB
+Forged 6533. The scoped generator override covers 1974–76. [1974 scan](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1974-raleigh-lightweight-bicycles-catalog-usa-p23.webp),
+[1975 scan](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1975-raleigh-lightweight-bicycles-catalog-usa-p23.webp).
+
+The 1975 p. 23 and 1976 p. 22 tables both give `G.B. Forged Alloy` for
+Competition Mk II, Gran Sport, Super Course Mk II, Grand Prix, Record and
+Super Tourer. The 1976 specs are 7943/7962/7981/7999/8017/8035. Raleigh's
+1973 US parts book, p. C-5, lists the GB Standard forged alloy stem
+(134597–134599) separately from the named Nova and Neta. The 1976 model
+photos on pp. 7–10 show the raised expander head and stem profile consistent
+with the GB Forged specimen, although the scans lack readable stampings.
+Together with the repeated wording on the same models and the explicit
+Neta entry in the same table, this supports retaining the generic links.
+The database now records 1976 in place of 1975 as 6533's latest documented
+fitment. The catalogues do not establish a production end date. [1976 table](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1976-raleigh-lightweight-bicycles-catalog-usa-p22.webp),
+[1976 model pages](https://ebykr.com/library/raleigh-1976-lightweight-bicycles-catalog-usa/),
+[Raleigh parts book](https://threespeedhub.com/wp-content/uploads/2013/06/Raleigh-Parts-and-Accessories-1973-US.pdf),
+[GB Forged specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=5A7FB46C-F4F7-447E-AEFD-FA364FE7FDAD).
+
+Guarded SQL updated two links and one component date. Live readback verified
+both links, the component date and the six generic links. The identical rerun
+affected zero rows. The generator comparison over 118 loaded catalogues and
+24,829 specs showed only the two intended changes before load and returned to
+baseline afterward. The quality report cleared those six linked-date flags
+with zero structural errors or new findings. All 14 test files passed.
+To reverse the changes, set specs 4120/4307 back to 6533 with a 6541 guard,
+restore 6533's `year_to` to 1975 with a 1976 guard and restore the previous
+1974–75 generator mapping.
 
 ## GB Cycle Components leaflet (c. 1962) — icenicam.org.uk, data_source id 154
 

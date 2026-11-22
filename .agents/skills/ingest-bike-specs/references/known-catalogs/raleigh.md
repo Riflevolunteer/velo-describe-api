@@ -157,6 +157,13 @@ date the black-link 1052/SR to 1975. Readback and zero-change SQL rerun verified
 the full loaded-catalogue comparison preserves the baseline finding set.
 See [evidence and validation](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#early-fitment-follow-up--2026-11-20-applied-and-validated).
 
+## 1974–76 International stem review
+
+The printed US tables name GB Neta for the International DL 170 in all three
+years. The 1974 and 1975 specs 4120/4307 now link to 6541, matching 1976 spec
+7924. The six other 1976 bikes listed with the standard GB forged alloy stem
+retain their GB Forged links, now dated through 1976. [Scans and live validation](../../../ingest-component-catalog/references/known-catalogs/gb.md#197476-us-raleigh-stem-follow-up).
+
 ## 1975 Raleigh — `1975_raleigh_spec.csv` (10 bikes, 187 specs, 68 linked)
 
 - Source: https://www.retrobike.co.uk/archive/1975-raleigh-catalogue.1191/
