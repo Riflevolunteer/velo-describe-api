@@ -202,8 +202,10 @@ construction/cassette distinction.
 The old 3630 description asserted `for the CS-AP00-K7U cassette` without
 that identification in its specimen evidence. User approved removing that
 assertion and describing the observed/reported hub set, retaining uncertainty.
-Retained title/search text, **1988–1990**, UUID, source **1** and all links.
-The legacy dates are retained, not newly verified production boundaries.
+The description update retained title/search text, the then-current
+**1988–1990** range, UUID, source **1** and all links. The
+[start-year correction below](#xcd-3630-model-year-debut-and-specimen-photo-comparison--2026-11-22)
+records the later date evidence.
 
 Old description: `SunTour XCD 6000 (freehub), Japan. XCD 6000 hub set with a cassette freehub body (aluminium shell), for the CS-AP00-K7U cassette; the freewheel version is 3631 HB-XD00.`
 
@@ -283,6 +285,75 @@ The 1990 seller-attributed XD11 group also shows dark cogs, so finish alone
 does not distinguish the two hubs. Live Axis specs **18707 → 3630** and
 **18703 → 1224** were checked. An original code or distinguishing
 construction still needs to connect a specific model to the bike or specimen.
+
+#### XCD 3630 freehub fastening evidence — 2026-11-22
+
+- [SR SunTour Technical Tips, Vol. 2 No. 1, printed p. 6](https://sscycleworks.com/galleries/bike-museum/SunTour-Notes.pdf#page=23)
+  describes a removable freehub shell secured by a recessed **10 mm hex
+  bolt** and washer on 1990 and later SunTour cassette hubs. The bolt is
+  accessed through the non-drive side with the axle out. The illustrated
+  service procedure is a generation clue and gives no XCD model numbers.
+  The same page shows a single threaded smallest cog for standard six- and
+  seven-speed cassettes, so that feature does not distinguish these hubs.
+- The [1990 UK component catalogue excerpt, printed pp. 88–89](https://www.bikecatalogs.com/download/2651#page=10)
+  pictures a bare grey XCD freehub at callout L and lists 36H grey QR hubs
+  separately, at **STRA/32502** (six-speed) and **STRA/32503** (seven-speed).
+  It uses one photo for the two options. The exterior overlaps the
+  [3630 specimen photo](https://www.velobase.com/CompImages/Hubs/866015BC-C994-430B-876F-1612E3FCF5CA.jpeg),
+  which shows neither the internal fastening nor a readable model code.
+  A measured 135 mm rear spacing would favour the catalogue XD11 over the
+  130 mm XD10, while 130 mm is common to both.
+- Rechecked the full-size [Axis restoration](https://johns-recycled-bicycle.blogspot.com/2017/05/1989-bianchi-axis-cyclocross.html)
+  photos. `IMG_5498` exposes the non-drive cup, `IMG_5499` the body from the
+  drive side, and `IMG_5429` the dark stack and separate threaded top cog.
+  The recessed bolt seat and faint shell characters in `IMG_5303` are
+  unreadable. The nine non-drive balls in `IMG_5500` agree with the 1989
+  XCD exception in [Sutherland's bearing table](https://paulinoposada.github.io/bike/documents/epdf.pub_sutherlands-handbook-for-bicycle-mechanics.pdf#page=232),
+  which lists twelve for SunTour cassette hubs generally. Alongside the
+  seven-speed XCD fitment in the 1989 Bianchi table, this favours **FH-XD10-U7**
+  on the Axis. It gives no independent identity for the loose 3630 pair.
+  The [1990 Bianchi table](https://www.bikecatalogs.com/download/2797) names
+  AT00 hubs for the following year's Axis, with a silver 12–30T cassette.
+
+Live readback confirmed **18707 → 3630** and **18703 → 1224**. No model,
+date or link change was applied. The remaining evidence is a code or
+internal fastening view for the 3630 specimen, measured rear spacing and
+body geometry, or a coded original XCD-6010 fitment for the Axis.
+
+#### XCD 3630 model-year debut and specimen photo comparison — 2026-11-22
+
+- John Derven's [*Bicycle Guide*, Jan/Feb 1989, printed p. 77](https://cimg3.ibsrv.net/gimg/bikeforums.net-vbulletin/1460x2000/bicycle_guide_janfeb_1989_equipt_review_suntour_mtb_components_xcm_xce_xcd_p77_75p_cfaf0fad2968be69dc27513402d8977b803d5a12.jpg)
+  identifies the cassette freehub as a new XCD feature for the 1989 season
+  and describes standard six- and Ultra-7-speed options. The
+  [January 1988 catalogue, printed p. 11](https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20Catalog%20-%20English.pdf#page=12)
+  lists the HB-XD00 QR and HB-XD10 nutted freewheel hubs. The previous start
+  year of 1988 came from the XCD group's debut. The first documented model
+  year for the XCD cassette freehub family is **1989**. Edition 89 was printed
+  in September 1988, so the model year gives no calendar-year manufacturing
+  cutoff.
+- JFischer uploaded the [3630 specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=DAFB66FD-BC5E-4B30-BF80-58D3AD65720D),
+  [XCD PowerRing crank](https://velobase.com/Pages/ViewComponent.aspx?Enum=115&ID=8343cbe2-be34-4790-a082-31a5f8917cd7)
+  and [7-speed SL-PP10 X-Press shifters](https://velobase.com/Pages/ViewComponent.aspx?AbsPos=6314&Enum=104&ID=4889346A-5201-4DB7-AF56-66BBA945B150)
+  on 2 March 2011, with similar red fabric backgrounds. The
+  [1990 catalogue, printed p. 14](https://www.disraeligears.co.uk/site/00_main_images/suntour_bicycle_equipment_catalog_1990_-_page_14_main_image.jpg)
+  identifies **FH-XD11-7U** for the seven-speed group and **FH-XD00-6R**
+  for the six-speed option. The upload batch gives the loose hub a plausible
+  1990 context. The rear hub photo has no gear count, readable code or
+  shared part in frame that ties it to the seven-speed set.
+- The [1989 Bianchi store copy, PDF p. 25](https://www.bikecatalogs.com/download/2796#page=25)
+  confirms XCD-6010 and the 13–28T seven-speed cassette. It repeats the
+  consumer catalogue fitment with no SunTour hub code. **FH-XD10-U7**
+  remains the leading Axis candidate on the bearing and catalogue evidence.
+
+Applied `year_from` **1988 → 1989** for **3630**. The guarded update affected
+one row and zero on retry. Live readback confirmed **1989–1990**, specimen
+source **1**, the sole hub link **18707 → 3630** for the 1989 Axis, and its
+cassette link **18703 → 1224**. The before/after generator comparison across
+118 loaded catalogue CSVs and 24,829 specs returned identical results.
+Restore the previous year by setting
+`year_from` to 1988 for component 3630 with the same specimen UUID, title,
+source 1, year_from 1989 and year_to 1990 guards. Exact identity for the loose
+hub and a coded fitment for Axis spec **18707** remain open.
 
 ## PLG 6290 handed-code reconciliation — 2026-11-18 (applied and validated)
 
