@@ -1441,6 +1441,76 @@
   Out of scope: shoes SH-M100 / R100 / T100, SH-CV10, SQ-M730, DF-M730,
   SM-CS50 / ST74 / SP55 / MT55, tools.
 
+### 1991 European manual remaining-range triage — 2026-11-23, read-only
+
+The earlier pass above concentrated on dates, identities and selected descriptions; it did not document a full description reconciliation for the complete manual. On [printed p.64](https://www.disraeligears.co.uk/site/shimano_bicycle_system_component_-_91_page_64.html), FD-M550 2491 lists clamp diameters 28.0–28.6, 30.0, 31.8 and 34.9mm, and mentions a pull-top type; its live description lacks those particulars and has three bike-spec links. The page calls RD-M550-GS a long cage, but its capacity section calls the 30T-capacity / 30T-maximum version “short cage”; current 4483 says GS has 36T capacity from the 1990 manual. Resolve that internal nomenclature ambiguity and compare the earlier source before proposing any change. The page lists the SGS 4484 at 38T capacity and 32T maximum, consistent with its existing description; it has four bike links. Printed p.65's SL-M453-A 6183, BR-M550 7582 and BR-M453 976 are already described substantially in the database. This sample supports a full review, not an estimate of new rows or links; no database changes were made.
+
+### 1991 European manual full-range reconciliation — applied and validated 2026-11-23
+
+- Source 82, [European dealer manual](https://www.disraeligears.co.uk/site/shimano_bicycle_system_component_-_91.html), printed August 1990 for 1991. Reviewed road and track pp.13–40, Exage EX and Nexus pp.41–46, XT/DX/LX pp.47–68, Exage LX, GS and Tourney pp.69–76, the SG and compatibility charts pp.9–12, SPD pp.77–78 and footwear/tools pp.79–84. Shoes, cable guides, small parts and tools have no applicable component category.
+- Applied 53 existing-record updates and retagged them to source 82: 53 descriptions, including a retitle/search-text update of 7617 to include the explicitly listed SL-MS52-7, and CS-6400-6 10971 `year_to` 1988 → 1991 because p.31 lists the six-speed version in the product range. The old 7617 title was `Shimano SL-MS52 / SL-MS52-6`; its search text is now `Shimano SL-MS52 SL-MS52-6 SL-MS52-7`. The 1987–88 bike overrides remain within the cassette's extended range; 10971 retains two existing links and 7617 none. No inserts, deletes or bike links were changed. Exact previous descriptions, dates and sources are recorded below for restoration.
+- BR-7403 993 previously stated BL-7402, but p.19 specifies ST-7400 and SLR cable for the 1991 pairing. CS-HG90 1202 is 286g with spacer on p.31 and 325g with spacer on p.54, both labelled group I; CS-HG70 7567 similarly prints 286g on p.37 and 325g on p.40. Retain the discrepancies with page-specific context. CS-7400-6 7561's threaded range differs between pp.11 and 22; both are represented. HP-1055 3086 retains the prior resin-cup claim alongside the 1991 alloy-cup listing rather than deciding the conflict.
+- RD-M550 4483's 1991 GS/short-cage capacity is internally ambiguous, and FC-M200/FC-M201 7600 has conflicting type labels versus material/weight columns on p.74; neither is silently corrected. FD-M550/FD-M650 pull-top references are family-level wording and do not identify the later top-pull suffix. The 1991 p.40 327g BB figure is shared between BB-A550 and BB-UN10, so does not establish which unit it weighs. MF-HG20 appears explicitly on pp.12 and 74 and is already covered by 7603.
+- Validation: all 53 updated rows matched the intended descriptions, dates, source, titles, search texts and UUIDs on readback. A repeat SQL load changed zero rows. Shimano's near-duplicate report returned zero pairs. The generator/live comparison remained at no gains or changed matches and 15 pre-existing unrelated Huret Rival proposed losses. Searches for the clarified MS52 and 6400-6 codes found no matching raw bike specifications to link. No bike links were changed.
+
+#### Previous values for the 1991 reconciliation
+
+These are the restoration values captured before application.
+
+- 124 (1990–1992, source 83): Shimano BB-1055, 105SC, Japan. Cup-and-cone bottom bracket for FC-1055, successor to BB-1050; JIS square taper steel spindle 68-W-113 (115mm Italian), English or Italian, 1/4in x 11 balls; 304g actual (velobase).
+- 130 (1987–1991, source 75): Shimano BB-M730, Deore XT, Japan. Bottom bracket parts for FC-M730, sealed, 310g, 68-T-117.5 (D-3A), 68-T-122.5 (D-3NL), 70-T-117.5 (D-5A) (Dec 1986, new).
+- 132 (1985–1992, source 72): Shimano BB-7400, Dura-Ace, Japan. Sealed bottom bracket set for FC-7400, 314g, 68-W-112 or 70-W-113, English, French or Italian cups (Jan 1985). 309.5g avg measured.
+- 138 (1988–1992, source 77): Shimano BB-A450, Exage Sport / Exage EX, Japan. Sealed bottom bracket set, 113mm axle; for FC-A450 (1988) and FC-A500 / A400 / A300 (Exage 500 / 400 / 300EX), 333g (1990 manual). 339g.
+- 139 (1990–1992, source 1): Shimano BB-A550, RX100, Japan, 327 grams
+- 441 (1989–1994, source 78): Shimano BL-A351, Exage Action / 400EX (aero), Japan. SLR aero lever, 23.8-24.2mm, stroke 88, black or white cover, 302g pair (1990 manual). 320g.
+- 985 (1991–1993, source 84): Shimano BR-M734 / BR-M734-M, Deore XT, Japan. Super low-profile cantilever, SLR Plus, easy cable mount, spring tension adjuster, internal spring, buff alloy, 172g pair (Aug 1990); 344g F & R; -M M-System version with M-System shoes (Jul 1992).
+- 993 (1991–1996, source 82): Shimano BR-7403-49, Dura-Ace (dual pivot), Japan. Short 49 dual-pivot caliper, new for 1991, Super SLR, used with BL-7402, forged alloy, 432g (F & R) (Aug 1990).
+- 1195 (1990–1999, source 277): 7-speed Hyperglide cassette, narrow chain, brown with silver low gear. 1990 road groups J/I/H/E and ATB G/F/K, 268–325g; 1996 road groups E/H/I/J/L/M. 263g average measured.
+- 1199 (1988–1992, source 79): Shimano CS-6400-7, 600 Ultegra (7sp), Japan. 7-speed freehub cassette, 12-16T threaded, 13T second, 14-34T spline, spacers 3.30 / 3.1mm dark gray (6-sp 3.65mm light gray), 233g (12-21T) (Oct, Dec 1987). 255g measured (12-24T).
+- 1202 (1990–1994, source 77): Shimano CS-HG90, Deore XT / 600 Ultegra (7-speed HG), Japan. 7-speed Hyperglide cassette, chrome plated, narrow chain, road groups J / I / H / E 286g, ATB groups E / G / F / K 325g (1990 manual).
+- 1208 (1990–1996, source 277): 8-speed Hyperglide cassette, champagne gold, narrow chain; S 12–21, T 13–23, U 12–23, V 13–26, W 12–25T. Maker S group 255g with spacer (1990), 258g (1996).
+- 1414 (1990–1996, source 173): Narrow Hyperglide 8-speed chain, 1/2 x 3/32in, silver roller and pin plates; bushingless design, reinforced connecting pins; for CS-7401.
+- 1809 (1988–1993, source 84): Shimano FC-MT60 / FC-MT60-SG / FC-MT60-A, Deore / Deore DX, Japan. Triple MD: Biopace 26-36-46T 750g (Dec 1987); SG 48-38-28 / 46-36-26T 740g, BB-MT60 (Aug 1990); -A SG-X for Dual SIS, 46-36-26T (Jul 1992). 754.1g (Spec).
+- 1823 (1986–1997, source 275): Track crank, high-tech grey anodized ring, Ni-Cr-Mo axle, 1/8 or 3/32in, 165-175mm, 605g (48T, 170mm). BB-7600; 1997 BB-7610. Rings: 46-52T (42-45/53-54T option) in 1986; 44-55T in 1994 and 1997.
+- 2487 (1990–1993, source 77): Shimano FD-M650, Deore DX, Japan. STI and SG compatible front, trailing-action pantograph, new Trapease, 24T (Biopace HP) / 26T, 117g (band) (1990 manual). 118g measured.
+- 2491 (1990–1992, source 77): Shimano FD-M550, Deore LX, Japan. STI and SG compatible front, trailing-action pantograph, new Trapease, 24T (Biopace HP) / 26T, band or EC clamp, 119g (1990 manual). 123.5g avg.
+- 2521 (1990–1992, source 83): Shimano FD-M300, Exage 300LX, Japan. STI and SG compatible front, trailing-action pantograph, new Trapease, sealed, 24T (Biopace HP) / 26T, 135g (1990 manual).
+- 2523 (1990–1992, source 83): Shimano FD-M500, Exage 500LX, Japan. STI and SG compatible front, trailing-action pantograph, new Trapease, sealed, 24T (Biopace HP) / 26T, 118g (1990 manual).
+- 3086 (1990–1999, source 277): Road headset, sealed, anodized locknut, resin upper and lower cups, BC 1 x 24, 32.7mm stack height, 101g.
+- 3528 (1990–1992, source 77): Shimano FH-HG20, 200GS, Japan. FH-HG20-Q/N 7-speed Hyperglide freehub, STI, QR or nut, 126 / 130mm, 425g with QR, 36h (1990 manual). 440g measured.
+- 3561 (1989–1992, source 83): Shimano FH-7402-8, Dura-Ace (8-speed), Japan. 8-speed SIS freehub, lip-type seal, 130mm OLD, 141mm axle, 439g with QR, 28-36h; FH-7400-6/7 is the 6 / 7-speed version, 126.5mm (1990 manual). 682g pair measured (234 / 448g).
+- 3958 (1988–1993, source 84): Shimano PD-6400, 600 Ultegra, Japan. Aero wedge design, 5 deg more road clearance, positive-grip cleat, cartridge axle, alloy body, Cr-Mo axle, 410g pair with L toe clip, M / L / LL (Oct, Dec 1987). 478g.
+- 3964 (1990–1993, source 77): Shimano PD-M650, Deore DX, Japan. Super low-profile ATB pedal, 32 deg clearance, contact seal, 2-screw toe clip, alloy body, steel plate, 385g pair with clip (1990 manual).
+- 3965 (1987–1993, source 84): Shimano PD-MT60 / PD-MT61, Deore, Japan. Low-profile ATB pedal, parallelogram (MT60) or compact (MT61 comp), contact seal, toe clip / reflector attachable, alloy body, steel cage, Cr-Mo axle, 495 / 442g pair (Dec 1987, Aug 1988). 480g.
+- 3977 (1990–1997, source 275): Road pedal, cartridge axle, aero, sealed, barrel-finish alloy body, resin clip. Road clearance 34 degrees earlier, 32 degrees in 1997. 400g pair with L clip; also Exage 500EX 407g. 366g measured.
+- 4513 (1990–1994, source 77): Shimano RD-A500, Exage 500EX, Japan. 6 and 7-speed SIS rear, double Servo-Panta, sintered bushing, sealed link pivots, B-tension, 12-28T, 28T capacity, 279g (1990 manual). 275g measured.
+- 5893 (1986–1997, source 277): Round tube A-type aero seatpost, hexagon release, 224g (26.8mm); 1996: 205mm long, 25/25.8/26.4/26.6/26.8/27/27.2/27.4mm. Semi-oval B type is SP-7400-B. 261g (Velobase).
+- 5894 (1988–1997, source 173): Semi-oval aluminium seatpost, 205mm; 25.0/25.8/26.0/26.2/26.4/26.6/26.8/27.0/27.2/27.4mm. Maker weights 244g (1994), 224g (1995); earlier record 261g.
+- 6146 (1990–1997, source 275): Shimano SL-BS50 / SL-BS50-7 / SL-BS50-8, bar-end, Japan. SIS / friction bar-end levers, Light Action, sealed, 19.0-22.0mm: SL-BS50 6 / 7-speed 183g (Ultegra), SL-BS50-8 Dura-Ace (Aug 1990), SL-BS50-7 105SC (Jul 1992).
+- 6156 (1989–1993, source 84): Shimano SL-MT62, Deore II, Japan
+- 6677 (1986–1998, source 277): Aerodynamic anodized alloy stem, hexagon release, 22.2mm steerer; 1996 bar clamp 25.4/26.0mm. Maker 1986: 80–130mm, 252g (100mm), 260g (120mm); 1994: 70–130mm, 280g (100mm).
+- 7561 (1988–1991, source 76): Shimano CS-7400-6, Dura-Ace (6sp), Japan, 6-speed freehub cassette for FH-7400-6, champagne gold, 12-16T threaded top, 13T second with built-in spacer, spline sprockets
+- 7567 (1990–1998, source 277): 7-speed Hyperglide cassette, silver, narrow chain; 1990 road groups J/I/H/E 286g, ATB E/G/F/K 325g. 1996 road groups E/H/I/J/L/M; 105SC, RX100, Deore DX/LX.
+- 7568 (1990–1998, source 365): Shimano CN-HG70, Hyperglide chain, Japan, 1990 manual: narrow Hyperglide chain, bushingless, gray roller and black pin plates, chromed pins, 323-337g (114 links); 105SC, RX100, Deore DX / LX
+- 7569 (1990–1995, source 174): Sealed road headset, BC 1 x 24, 33.5mm stack, steel locknut with stem seal, composite cups and upper cone, steel lower cone; white, silver or black, 121g. RX100, Exage EX/LX, Deore LX and 200GS.
+- 7570 (1990–1992, source 77): Shimano FD-A500-B / FD-A500-F, Exage 500EX, Japan, 1990 manual: band / Italian front, leading-action pantograph, compact, 14T, 115g (band)
+- 7575 (1990–1992, source 77): Shimano RD-A400, Exage 400EX, Japan, 1990 manual: 6 and 7-speed SIS rear, double Servo-Panta, Centeron pulley, B-tension, double spoke barrier, 12-28T, 28T capacity, 278g
+- 7578 (1990–1993, source 77): Shimano FC-M730-SG / FC-M730-A, Deore XT, Japan. SG triple MD, narrow chain, 48-38-28 / 46-36-26T Biopace SG or round, 165-180mm, 730g (1990 manual); FC-M730-A SG-X triple for Dual SIS, 48-36-26 / 46-36-26T (Jul 1992).
+- 7582 (1990–1991, source 77): Shimano BR-M550, Deore LX (cantilever), Japan, 1990 manual: STI / SLR compatible cantilever, rigid computer-designed shape, sealed internal spring, spring tension adjuster, 216g pair
+- 7584 (1990–1994, source 173): Shimano PD-M550, Deore LX, Japan, 1990 manual: super low-profile parallelogram ATB pedal, 31 deg clearance, resin body, steel plate, 2-screw toe clip, 326g pair
+- 7588 (1990–1992, source 77): Shimano RD-M400-SGS / RD-M400-GS / RD-M400-SS, Exage 400LX, Japan, 1990 manual: STI 6 / 7-speed SIS rear, double Servo-Panta, Centeron pulley, cable saver arm, B-tension, super long 38T / long 36T / short 28T capacity, 330 / 318g
+- 7589 (1990–1992, source 77): Shimano FD-M400, Exage 400LX, Japan, 1990 manual: STI and SG compatible front, trailing-action pantograph, new Trapease, band or EC clamp, 24T (Biopace HP) / 26T, 132g
+- 7597 (1990–1992, source 77): Shimano SL-M200 / SL-M201, 200GS, Japan, 1990 manual: thumb shifter, 6-speed (SL-M200) or 7-speed (SL-M201) SIS, sealed, triple compatible, steel and resin, 154g, 22.2mm
+- 7606 (1990–1994, source 173): Shimano RD-TY20-GS / RD-TY20-SS, Tourney, Japan, 1990 manual: 6-speed SIS rear, HG compatible, sintered pulley bushing, steel, 34 / 28T capacity, 14T min, 341 / 317g
+- 7608 (1990–1993, source 77): Shimano FD-TY20, Tourney, Japan, 1990 manual: steel front, narrow chain, rigid chain guide, Trapease, 14T, 154g
+- 7609 (1990–1994, source 173): Shimano FD-TY25, Tourney, Japan, 1990 manual: steel front, narrow chain, Trapease with cable stopper, 20T (Biopace HP) / 22T (round), 161g
+- 7617 (1989–1991, source 77, title Shimano SL-MS52 / SL-MS52-6): Shimano SL-MS52 / SL-MS52-6, Japan, 1990 manual: 5-speed (MS52) or 6-speed (MS52-6) SIS thumb lever, sealed, steel and resin, 120g, 22.2mm
+- 7645 (1991–1991, source 82): Shimano FD-E700-B / FD-E700-F, Nexus, Japan, band / Italian type front, leading action, rigid chain guide, cable stopper, narrow chain, 14T, 128g (band)
+- 7650 (1991–1991, source 82): Shimano FC-E700-W / FC-E700-S / FC-R500-W / FC-R500-S, Nexus, Japan, double 44 / 32T (W) or single 44T (S), flat-surface chainguard, E700 alloy special pitch, R500 steel rivet type, 165 / 170mm, 790g (FC-E700-W); BB-UN10 333g
+- 7653 (1991–1992, source 82): Shimano RD-M100-GS, 100GS, Japan, 6 / 7-speed SIS long cage, steel and resin, double Servo-Panta, Centeron pulley, chain retainer, 12-30T, 36T capacity; Europe only
+- 7664 (1991–1991, source 82): Shimano BB-UN10, Japan, sealed cartridge bottom bracket, DH spindle 115mm, for FC-A550, FC-A500, FC-A400 and Nexus FC-E700 / FC-R500, 333g with BB-A450
+- 10971 (1987–1988, source 373): 6-speed Uniglide cassette for FH-6400-6 and FH-1051-6 freehubs, used with a UG chain. Listed alongside the seven-speed CS-6400-7; SL-BS50 indexing uses a six-speed adaptor.
+
 ## 1991 German component brochure — BL-6401 date reconciliation
 
 Applied and validated 2026-11-21, `data_source` 510. The road
