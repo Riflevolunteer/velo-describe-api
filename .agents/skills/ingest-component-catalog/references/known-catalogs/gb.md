@@ -2,24 +2,35 @@
 
 ## Raleigh Forged stem link review — 2026-11-22
 
-Live GB Forged 6533 has recorded dates 1957–1975. Eight later Raleigh specs
-link to it, and the generator's `gb forged alloy` override is shared by both
-the generic and model-specific wordings. The local CSVs agree with live text.
+The generic override matches the bare `G.B. Forged Alloy` string. The
+model-specific strings previously reached GB Forged 6533 by the `GB Forged`
+substring. Both scoped corrections below were verified on the original
+catalogue pages and applied to the existing bike specs.
 
-- The 1976 US International DL 170, spec 7924, names `G.B. Forged Alloy Neta`.
-  GB Neta 6541 covers 1970–1981.
-- The 1977 US Competition GS, spec 4453, names `G.B. forged alloy Biba with
-  Allen expander & binder bolts`. GB BiBa 6537 is undated, and the Raleigh
-  notes record its use for the 1978 model's Biba wording.
-- The other six specs, 7943/7962/7981/7999/8017/8035, all say `G.B. Forged
-  Alloy` in the 1976 US transcription. The named Neta in the same table makes
-  the generic wording worth checking separately against the 1975 and 1976
-  scans before extending the observed dates of 6533.
+| Edition and model | Printed model evidence | Spec ID | Old → new component |
+| --- | --- | ---: | --- |
+| 1976 US International DL 170 | Stem row names G.B. Forged Alloy Neta. [Technical specifications, p. 22](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1976-raleigh-lightweight-bicycles-catalog-usa-p22.webp) | 7924 | GB Forged 6533 → GB Neta 6541 |
+| 1977 US Competition GS | Handlebar specification names a forged-alloy Biba stem with Allen expander and binder bolts. [Model specifications, p. 4](https://www.sheldonbrown.com/retroraleighs/catalogs/1977/images/03-77-competition.jpg) | 4453 | GB Forged 6533 → GB BiBa 6537 |
 
-The [1976 and 1977 Raleigh catalogue notes](../../../ingest-bike-specs/references/known-catalogs/raleigh.md)
-identify the technical table and model pages. This pass checked the
-transcriptions, current links and candidate rows. The scans and any mapping
-changes remain for the follow-up.
+Neta 6541 covers 1970–1981. BiBa 6537 is undated and already used for the
+1978 Competition GS wording. Scoped generator overrides reproduce the two
+corrected links. Component dates, CSVs and source references stayed the same.
+To restore the previous mappings, set those two links back to 6533 using
+the replacement IDs as guards, and remove the two new overrides.
+
+The 1976 table calls specs 7943/7962/7981/7999/8017/8035 simply `G.B. Forged
+Alloy`. They still link to 6533 (1957–1975) pending comparison with the 1975
+table and any model-specific evidence. The 1974/75 US International
+transcriptions name Neta in specs 4120/4307, which also still link to 6533.
+The original scans for those two readings remain to be checked.
+
+Validation: the full generator comparison over 118 loaded catalogues and
+24,829 specs proposed exactly the two intended changes before load and
+returned to the baseline afterward. Exact row readback verified the two
+new links and the unchanged generic links. Guarded SQL affected two rows
+and its identical rerun affected zero. The quality report returned zero
+structural errors and two fewer linked-date conflicts. All 14 test files
+passed.
 
 ## GB Cycle Components leaflet (c. 1962) — icenicam.org.uk, data_source id 154
 

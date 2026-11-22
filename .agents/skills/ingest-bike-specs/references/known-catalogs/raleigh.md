@@ -199,6 +199,8 @@ See [evidence and validation](../../../ingest-component-catalog/references/known
   not exist in 1966). Ingested as 1976 at the user's instruction. Distinct
   from the UK 1976 brochure that was transcribed and reversed (see above).
   Technical Specifications table p. 22, transcribed by hand from crops.
+- The International DL 170 stem 7924 now links to GB Neta 6541, confirmed
+  in the table's Stem row. [Scan, old link and validation](../../../ingest-component-catalog/references/known-catalogs/gb.md#raleigh-forged-stem-link-review--2026-11-22).
 - Models: the 10 table columns (Team Professional through Super Tourer,
   titles as 1975). Not added: Record 24 / 26 (price list only), Sprite 27,
   Sports, Superbe, Tourist, Folder, LTD, MX, Colt, Space Rider, Mountie.
@@ -223,6 +225,8 @@ See [evidence and validation](../../../ingest-component-catalog/references/known
   model per page with its own "Specifications" block. Transcribed by hand
   from 400 dpi crops of pp. 3-7 and 11; `data_source` 131 citation names
   the scan.
+- The Competition GS stem 4453 now links to GB BiBa 6537, confirmed in
+  the p. 4 Handlebar specification. [Scan, old link and validation](../../../ingest-component-catalog/references/known-catalogs/gb.md#raleigh-forged-stem-link-review--2026-11-22).
 - Scope (user's choice): Raleigh derailleur lightweights only —
   Professional Mk V, Competition GS, Super Course, Grand Prix, Record
   Limited, Record 24. Not added: Rampar R-One / R-Two / R-Three / R-Four

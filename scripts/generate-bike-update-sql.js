@@ -3748,6 +3748,13 @@ const COMPONENT_OVERRIDES = {
     'atax forged dural anodised hidden expander': 6447, // ATAX (1A style)
     // 1973 Raleigh. Also substring-hits the 1950s Hiduminium spearpoint.
     'gb forged alloy': 6533, // GB Forged
+    // 1976 US Raleigh p. 22 names Neta. Keep the earlier catalogue mappings pending scan review.
+    'gb forged alloy neta': [
+      { bike: 'International DL 170', from: 1976, to: 1976, id: 6541 },
+      { bike: 'International DL 170', from: 1974, to: 1975, id: 6533 },
+    ],
+    // 1977 US Raleigh p. 4 names BiBa on the Competition GS.
+    'gb forged alloy biba with allen expander & binder bolts': [{ bike: 'Competition GS', from: 1977, to: 1977, id: 6537 }],
     // Stem link pass 2026-10-26 (from /linkCoverage).
     // 1987 Bianchi Limited / Squadra / Pista and 1990 Campione d'Italia: ITM Mod. 200 (row 1985-88).
     'itm 200': [{ from: 1985, to: 1990, id: 9202 }],

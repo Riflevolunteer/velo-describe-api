@@ -22,7 +22,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Data corrections
 
-- Verify Raleigh stem specs 7924 and 4453 on the 1976 and 1977 US scans, then reconcile the named Neta 6541 and BiBa 6537 links and matcher overrides. Compare the 1975/1976 tables for the remaining generic GB Forged 6533 links before deciding its upper bound. [Live links and catalogue leads](.agents/skills/ingest-component-catalog/references/known-catalogs/gb.md#raleigh-forged-stem-link-review--2026-11-22).
+- Verify and reconcile the 1974/75 US Raleigh International stem specs 4120/4307 against the scans and GB Neta 6541. Compare the 1975/1976 tables for the generic GB Forged 6533 links before deciding its upper bound. [Live links and catalogue leads](.agents/skills/ingest-component-catalog/references/known-catalogs/gb.md#raleigh-forged-stem-link-review--2026-11-22).
 
 ## Waiting for distinguishing evidence
 
