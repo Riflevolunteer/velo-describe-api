@@ -1,5 +1,37 @@
 # Huret catalogs processed so far
 
+## Rival 1086-00 capacity and New Success ARIS compatibility — applied 2026-11-22
+
+- **8488, Rival 1086-00.** The [New '82 leaflet, sheet 1](https://www.disraeligears.co.uk/site/00_main_images/huret_-_new_82_scan_1_main_image.jpg)
+  (source 314) prints 26T maximum chainring difference. The [September 1983
+  catalogue, p. 8](https://www.disraeligears.co.uk/site/00_main_images/huret_derailleurs_-_speedometers_1983_scan_8_main_image.jpg)
+  (source 327) prints 16T for the same number. Both pages were visually
+  verified. The description attributes each figure to its edition. Source
+  327 also supplies the steel, clamp and braze-on details. The drawings
+  leave the reason for the different capacity figures unresolved.
+- **6110, MA85.5/4E New Success ARIS.** The [Sutherland handbook, sixth
+  edition, PDF p. 188](https://paulinoposada.github.io/bike/documents/epdf.pub_sutherlands-handbook-for-bicycle-mechanics.pdf#page=188)
+  visually confirms six-speed regular and seven-speed narrow ARIS
+  compatibility for the MA85.5 indexed right lever. Reused handbook source
+  489 and retained the original specimen's listed weight of 84 g. The
+  separate 501.1 DFE recovery below concerns unverified maker-sheet details.
+  The Raleigh lever generation still needs original fitment evidence.
+
+Material values for guarded restoration:
+
+| Component | Previous source and description | Applied source and description |
+|---|---|---|
+| 6110 | 1 / `Sachs Huret MA85.5/4E, ARIS New Success (type 1), France, 84 grams (Spec)` | 489 / `New Success ARIS downtube lever pair. The MA85.5E indexed right lever works with regular six-speed and narrow seven-speed ARIS freewheels. Made in France. Listed weight 84 g.` |
+| 8488 | 314 / `Steel front with satin-finish mechanism and cut-out cage, 150g; clip 28 / 28.6mm, 16T capacity. Braze-on version 3030-01; Rival S 1056-00 has a detachable light-alloy mechanism.` | 327 / `Steel front derailleur, satin-finish mechanism, cut-out cage, 28/28.6 mm clamp, 150 g. Max chainring difference was listed as 26T in the New '82 leaflet and 16T in 1983. Braze-on 3030-01. Rival S 1056-00 has a detachable light-alloy mechanism.` |
+
+The first transaction affected two rows and the replay affected zero.
+Exact readback verified both descriptions, source references, identities
+and dates. All 19 linked spec IDs retained their targets. Whole-database
+quality checks had zero errors and identical review findings before and after.
+The matcher reads component ID, title and category, so the description and
+provenance changes required no regeneration. Restore the previous values
+only under guards for the exact applied description, source, ID and dates.
+
 ## Manufacturer-source recovery and specimen follow-up — 2026-11-19, read-only
 
 The recovery stage below was read-only. The subsequent user-approved
@@ -13,8 +45,9 @@ The [Velopedia record](https://velopedia.online/Document/Show/1291) still has
 indexed OCR, but the live record on both host spellings and the public PDF
 preview route return 404. Targeted Wayback CDX queries for New Success scan
 paths on both hosts returned empty arrays. The earlier six/seven-speed finding
-and proposed 6110 enrichment remain as recorded below; no scan was recovered
-and the OCR was not promoted to a visually verified source.
+is recorded below. The archive OCR remains a lead for the maker sheet.
+The applied compatibility description above uses the visually verified
+Sutherland table.
 
 New paper leads in the [eBay category listing](https://www.ebay.de/b/Kettenschaltung-in-Fahrrad-Sammlerobjekte/420/bn_7004600080):
 [501.1/1 DFE, New Success ARIS, item 377245205441](https://www.ebay.de/itm/377245205441)
@@ -41,11 +74,10 @@ retrieval returned 403; no readable listing photograph or /1 contents were
 recovered. Exact-code searches recovered the existing indexed records and
 category listings, not a new scan. No contact or purchase was made.
 
-The cached OCR remains a source lead rather than visually verified maker
-evidence. Do not apply the previously proposed 6110 enrichment from it, or
-assume the /1 revision matches 501.1. Reopen scan recovery for a restored
-public preview/PDF or new readable listing photos/holder copy. This pass was
-limited to the first source-recovery action; the other New Success/Raleigh,
+The cached OCR remains a source lead for the original sheet. The /1
+revision needs its own readable copy. A restored public preview/PDF or
+readable listing photo or holder copy could supply the additional maker
+details. This pass covered the first source-recovery action. The other New Success/Raleigh,
 Rival, Rider, Duopar/Eco and Avant fitment questions were not re-reviewed.
 No database, matcher or bike-link changes, no prepared SQL, and no acquired
 scan to preserve. Temporary retrieval/update files were cleaned up.
@@ -618,15 +650,11 @@ review, rather than recording the Raleigh as a confirmed MA85.5E fitment.
 The [subsequent rear-detail comparison](#raleigh-randonneur-long-cage-identification--2026-11-16)
 resolves the rear as 4403; that user-approved one-link correction is applied.
 
-**Proposed enrichment, not applied:** retain 6110's current title, search
-text, 1987–1990 dates and three links. After recovering/registering the maker
-sheet, change its description/source_ref to record the selectable right
-lever, retro-friction left and mounting. Suggested description (under 255
-characters): `New Success ARIS downtube braze-on levers: MA85.5E right with
-selectable 6/7-speed indexing, MA85.4E left with retro-friction; Italian
-bosses. 90g pair specified (48g right + 42g left); earlier listing reports
-84g.` Preserve the existing 84g listing as separate evidence rather than
-inventing a reason for its difference from the manufacturer pair total.
+The [applied description above](#rival-1086-00-capacity-and-new-success-aris-compatibility--applied-2026-11-22)
+records compatibility from Sutherland. The Italian bosses, left-lever
+mechanism and 90 g total inferred from the separately listed lever weights
+remain details to verify on the original maker sheet. The specimen listing's
+84 g is a separate figure.
 
 The audit's broad six-speed compatibility TODO was replaced by the narrower
 Raleigh identity question; Peugeot no longer needs compatibility evidence.
