@@ -1,5 +1,58 @@
 # Campagnolo catalogs processed so far
 
+## Victory front availability and Tre Cime fitment — 2026-11-22
+
+The complete February 1987 *Nuovo Victory / Nuovo Triomphe* brochure
+supplies scan 2, missing from the November 1986 ZIP registered as source
+196. Scan 2 illustrates the two standard Victory front mounts and describes
+spring-loaded limit screws and the clip-on's three inserts. Scan 8 prints
+February 1987. The front pair's short outer cage profile, broad linkage
+face and mounting details match the Corsa pair in December 1986 No. 18 bis,
+printed pp. 25 and 27. The February brochure omits assembly codes. No. 18
+bis names 0104020 clip-on and 0104021 braze-on and already shows the
+coaxial adjustment springs. P. 28 shows the deeper Leisure cages, 0104024
+clip-on and 0104025 braze-on. The brochure's separate LX front photo and
+23T specification support keeping component 2319 separate.
+[February 1987 scan 2](https://www.disraeligears.co.uk/site/campagnolo_-_nuovo_victory_nuovo_triomphe_february_1987_version_scan_2.html),
+[complete February scans](https://www.bikecatalogs.com/download/2910),
+[December 1986 No. 18 bis](https://velobase.com/CatalogScans/Campagnolo/Campy1986_Catalog18bis.zip).
+
+Bianchi's 1987 US catalogue calls the Nuovo Alloro group Victory on PDF
+p. 8 and specifies New Victory with C Record levers on p. 14. The close-up
+supports the family, while the catalogue supplies no individual front code.
+Pinarello's circa-1987 GITA brochure, PDF p. 2, names the new Victory group
+and shows the Tre Cime's double crank and Victory short-cage front. This
+supports the existing family-level row for spec 26070. Neither bike needs
+an exact mount or assembly code inferred from the group wording.
+[Bianchi original](https://velobase.com/CatalogScans/1987Bianchi.pdf),
+[Pinarello GITA original](https://bikalog.org/api/view/Pinarello/1987/pinarello-1987.pdf).
+
+Applied with the February brochure as source **514**, market NULL. Component
+**2318** moved from 1984–1986/source 9 to 1984–1987/source 514 and now records
+the Corsa and Leisure mounts, deep Leisure cage and Nuovo Corsa limit screws.
+It retains 97 g. Its previous description was `Campagnolo Victory, Italy,
+97 grams Cat. n. 18 bis (Dec 1986): 0104020/21 corsa clip-on/braze-on,
+0104024/25 leisure.` Component 2319 remains the separate LX row. The existing
+1987 links on Nuovo Alloro 1229, Colnago Junior Victory 13052 and Peugeot
+PSN 10 Mont Cenis 15685 now fall inside 2318's attested range. Giro 6703's
+circa-1988 fitment remains a date flag. The 1987 maker brochure establishes
+availability for 1987 and gives no production end date.
+
+Linked Tre Cime spec **26070** from NULL to **2318** and removed its scoped
+NULL override. The spec retains bike 1501, label 16, raw label `Front
+Derailleur`, `Campagnolo Victory` wording and source 495. To restore, require
+these existing fields and component 2318 before resetting the link to NULL
+and restoring the generator exception. Restore the component's previous
+description, source 9 and 1986 upper bound only with current-value guards.
+
+The transaction inserted one source and updated one component and one spec.
+The identical rerun changed zero rows. Live readback matched the proposal
+across all 24,829 compared specs. The only generated mapping change was the
+expected Tre Cime link, and the final comparison retained the 15 pre-existing
+lost proposals. The normal, near and parenthetical duplicate classifications
+matched the baseline. The quality report had zero errors and three fewer date
+flags. All 14 repository test files passed.
+
 ## Victory LX rear reconciliation — 2026-11-18, applied and validated
 
 Re-read source **196**, the English *Nuovo Victory / Nuovo Triomphe* brochure:

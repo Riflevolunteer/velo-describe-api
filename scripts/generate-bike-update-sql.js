@@ -1034,8 +1034,9 @@ const COMPONENT_OVERRIDES = {
     'suntour cyclone mkiii': 2629, // SunTour FD-3300, Cyclone (No. 61 / 62)
     'suntour superbe pro': [{ from: 1982, id: 2652 }], // FD-2000 endless band (1982-86 per No. 59 / No. 61). Mounting inferred from group-only text: five linked bikes still need photos/fitment evidence (suntour.md, 2026-11-15).
     'suntour ag tech': 2609, // SunTour FD-2800, AG Tech
+    // Victory group fitments include the front changer shown on the c.1987 Pinarello Tre Cime.
+    'campagnolo victory': 2318,
     // 1986 Cinelli groupset fan-out.
-    'campagnolo victory': [{ bike: 'Tre Cime', from: 1987, to: 1987, id: null }, { id: 2318 }], // c.1987 Pinarello: 2318 ends 1986; do not widen component dates
     'campagnolo record corsa': 2283, // C-Record (1985-90)
     // 1979 Peugeot (French catalogue).
     'simplex slja 302': 2567, // Simplex LJ A302 (1978-79); SLJA is the Spidel-badged name

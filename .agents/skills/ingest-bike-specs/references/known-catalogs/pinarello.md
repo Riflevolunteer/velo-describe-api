@@ -94,7 +94,7 @@ Loaded seven bikes, 14 existing labels, 66 specs, 26 links. Validated 105 links:
 FD2462/RD4449 four bikes; FC1778/BL406/PD3953 Prologo/Dolomite/Piccolo;
 Veneto SL6130. Asolo FD2481/RD4471. Tre Cime RD4169 (existing1987 S3 rule),
 FC1516/post5764/brakes590/levers235/pedals3720. All within DB component dates.
-Held NULL: Victory FD2318 ends1986; bare Syncro cannot distinguish8812/5973/5971;
+Initial holds: the Victory front was held on its pre-review dates. Bare Syncro cannot distinguish8812/5973/5971;
 TTT aero bars do not establish2745 (only1982 attestation);105 brakes lack49/57
 reach and post unidentified;600 crank/lever/post variants unspecified; Ofmega,
 TTT,Nisi,Vittoria maker-only. No component insertion/date change/merge proposed.
@@ -109,6 +109,11 @@ Per-model specs/links: Prologo 10/5, Tre Cime 14/6, Dolomite 9/5, Piccolo 9/5,
 Asolo 9/2, Pista Amatore 5/0, Veneto 10/3. All 203 SQL statements reran with
 zero rows affected. Existing brand and labels reused; no component rows changed.
 Applied SQL and disposable validation files removed; original PDF/CSV retained.
+
+The subsequent Victory review visually confirmed the Tre Cime front on PDF
+p. 2 and Campagnolo's February 1987 brochure attested the component for the
+same period. Spec 26070 now links to 2318 using the existing Victory rule.
+[Component evidence and validation](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#victory-front-availability-and-tre-cime-fitment--2026-11-22)
 
 ## 1985 GITA catalogue — applied and validated, 2026-11-20
 

@@ -662,8 +662,9 @@ links cleared. Preserve independently established Pro/code/construction differen
 
 ### c.1987 Pinarello ingestion — applied 2026-11-20
 
-Tre Cime Victory front2318 ends1986; no date extension. Bare Syncro cannot
-distinguish8812/5973/5971; suppress automatic Syncro II5971. Prologo TTT aero
+Tre Cime Victory front 26070 now links to 2318 following the February 1987
+maker and GITA photo review. Bare Syncro cannot distinguish8812/5973/5971;
+suppress automatic Syncro II5971. Prologo TTT aero
 bars lack version evidence; suppress2745 (only1982 attestation).105 brakes
 lack reach, posts unidentified;600 crank/lever/post versions unspecified.
 Ofmega/TTT/Nisi/Vittoria maker-only values stay text. These NULL decisions

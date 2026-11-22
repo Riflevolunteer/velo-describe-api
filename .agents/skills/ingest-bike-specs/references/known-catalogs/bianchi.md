@@ -496,6 +496,9 @@ API listing, PDF and two page renders removed after documenting these findings.
   (Century Finish → 304/104), Master Gran Premio crank (Master → Gran
   Premio), Shimano 105 hubs (Golden Arrow → HB-1050), Dura-Ace brakes
   (centre-pull → BR-7400, ranged from 1984).
+- Nuovo Alloro front spec 1229 retains Victory 2318. Campagnolo's February
+  1987 brochure independently attests that front family, resolving the old
+  date flag. [Component review](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#victory-front-availability-and-tre-cime-fitment--2026-11-22)
 - Picks: New Victory → Victory rows (S3 rear, 422 low-flange hubs, 415/102
   brakes, 0355 crank, 405/000 pedals); Dura-Ace SIS-7 → 7400 series
   (RD-7401, FD-7400, MF-7400 7sp, FC/PD/HP-7400); Shimano 525/532 SIS →
