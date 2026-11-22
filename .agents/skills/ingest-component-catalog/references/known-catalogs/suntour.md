@@ -268,6 +268,22 @@ Applied description (**201 characters**): `XCD low-flange quick-release hub set;
   fitment. Reverting only the description under the same ID, UUID, source,
   date and title guards restores the old value above.
 
+#### Axis teardown comparison — 2026-11-22
+
+The [owner's 1989 Axis teardown](https://johns-recycled-bicycle.blogspot.com/2017/05/1989-bianchi-axis-cyclocross.html)
+shows a dark cassette and nine left-side balls in `IMG_5500.JPG`.
+[Sutherland's hub service table](https://paulinoposada.github.io/bike/documents/epdf.pub_sutherlands-handbook-for-bicycle-mechanics.pdf#page=232)
+lists the 1989 XCD with 9 × ¼-inch left and 12 × 3/16-inch right balls.
+[SunTour Edition 89, p. 28](https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf#page=29)
+lists FH-XD10-U7 and black seven-speed cassette cogs. The Axis teardown
+supports the 1989 assembly as a candidate. It lacks a readable hub code
+or sufficient detail to compare the body fastening. The standalone 3630
+image has no bearing or cassette-body measurements for comparison.
+The 1990 seller-attributed XD11 group also shows dark cogs, so finish alone
+does not distinguish the two hubs. Live Axis specs **18707 → 3630** and
+**18703 → 1224** were checked. An original code or distinguishing
+construction still needs to connect a specific model to the bike or specimen.
+
 ## PLG 6290 handed-code reconciliation — 2026-11-18 (applied and validated)
 
 The LD-5100 versus LS-5700/LS-5800 question is resolved at the PLG pair/family

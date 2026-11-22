@@ -340,11 +340,12 @@ CS-6400-6 identification is separately documented in Peugeot notes. These are
 examples of evidence, not a fresh model-level verification of every link.
 
 Other values name a series, gearing or group rather than a specific cassette
-code; their label crossing alone cannot prove the linked model. In particular,
-Bianchi 19547's 1222 identity has an existing distinguishing-evidence action
-in TODO and a detailed Bianchi review. No labels, links, CSVs or generator
-rules were changed. Revisit individual identities when their specific maker
-code, original fitment or construction evidence becomes available.
+code; their label crossing alone cannot prove the linked model. The later
+[Grizzly catalogue comparison](bianchi.md#grizzly-cassette-stock-number-and-hub-review--2026-11-22)
+supports Bianchi **19547 → 1222** through the shared SunTour stock number and
+the listed 12–28T ratio. No labels, links, CSVs or generator rules were changed.
+Revisit the other identities when their specific maker code, original fitment
+or construction evidence becomes available.
 
 ## 2026-10-08 link-gap pass via /linkCoverage (no new CSV)
 

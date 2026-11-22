@@ -1099,6 +1099,28 @@ from TODO; hub/cluster identification evidence remains open. Temporary SQL remov
 after validation. This supersedes treating the stored cassette link as proof of
 the actual mechanism in the earlier cross-catalog drift triage.
 
+### Grizzly cassette stock number and hub review — 2026-11-22
+
+[SunTour 1990 p. 10](https://www.disraeligears.co.uk/site/00_main_images/suntour_bicycle_equipment_catalog_1990_-_page_10_main_image.jpg)
+lists silver XC-Pro cassette **CS-AP00-S7U**, stock **47179802**, with
+FH-XP00-7U. [SunTour 1991 p. 6](https://www.disraeligears.co.uk/site/00_main_images/suntour_bicycle_equipment_catalog_1991_-_page_6_main_image.jpg)
+lists the same stock number under **CS-AP00-S7** for the 12T top cog and
+gives the standard XC-Pro ratio **12×14×16×18×21×24×28T**. The page lists
+the 13T-top cassette under stock **47179803**. Its threaded FW-AL10-S7
+offerings begin at 13T. The [1991 US Bianchi catalogue](https://www.bikecatalogs.com/document/2798)
+independently calls the same-year Grizzly's XC-Pro 12–28T seven-speed
+cluster a cassette. Together these sources support retaining **19547 → 1222**
+as a documented fitment inference for the 12–28T Japanese specification.
+
+The part numbers distinguish the hub generations even though the cassette
+stock number carries over. The 1991 XC-Pro freehub is **FH-XP01-7**, offered
+in both 130 and 135 mm widths and both 32H and 36H. The 1990 **FH-XP00-7U**
+has different stock numbers and shares the cassette. The Japanese table
+gives only the hub group. Live **19546** remains NULL until an original
+hub identification distinguishes the generations. The cassette link and
+its source **358** were verified in live readback. No DB changes were needed
+to resolve the cassette question.
+
 ## 1992 Bianchi (JP) — `1992_bianchi_spec.csv` (8 bikes, 96 specs, 30 linked)
 
 - Tyre follow-up (2026-11-09, done): printed pp.20-21 ([Virata](https://2velo.com/wp-content/uploads/2014/03/1992-catalog-p2011.jpg), [Alfana](https://2velo.com/wp-content/uploads/2014/03/1992-catalog-p2111.jpg)) confirms Vittoria Formula-1 tubular, specs 19675 / 19687 -> existing 6875 Competition Formula Uno. Singular normalized wording now has 1992 bike-scoped overrides; existing plural 1990 Pista rule stays. No new Vittoria row or date changes. Compound 1989 Formula 1 and Juniore stays unlinked. The Nuovo Pro ambiguity recorded here was subsequently resolved by the existing user-approved 1991–92 -> 6893 Nuovo Pro 260 override: specs 19427 / 19445 / 19651 / 19663 verified linked in the 2026-11-14 read-only tyre audit, with component dates now 1984–92. R.T. rows remain distinct; this audit made no DB changes.

@@ -245,6 +245,12 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Freewheels / cassettes
 
+- **1989 Peugeot Cosmic (NL), spec 17174:** preserve the printed seven
+  sprockets and contradictory 12-speed gearing with a double crank. The
+  specific six-speed link **8131** was cleared with user approval. A scoped
+  generator override keeps the freewheel text unlinked until an original
+  fitment resolves the discrepancy. [Catalogue evidence](known-catalogs/peugeot.md#cosmic-helicomatic-specification--2026-11-22).
+
 - **1991 Bianchi US**, source **508**: Equinox and Grizzly 12–28T, and
   Volpe, Ibex, Nyala and Ocelot 13–30T, are Accushift Plus seven-speed
   offerings with the mechanism unspecified. Keep them as catalogue text.
@@ -301,10 +307,11 @@ see the Raleigh catalogue notes for the decision and source.
 - Applied/validated 2026-11-17, **user approved**: 1991 Bianchi Grizzly
   spec **19546**, `SunTour XC-Pro`, unlinked **3628 HB-XP00-R -> NULL**.
   The former link specified a threaded rear freewheel hub. Original Japanese table p.9
-  prints the group name, without a front/rear code. Stored cluster **19547 ->
-  1222** is a cassette inference, not independent proof of a hub code. Scoped
-  Grizzly/1991 NULL override prevents a unique future hit selecting a hub
-  construction without evidence. See Bianchi's Grizzly hub review.
+  prints the group name, without a front/rear code. The later
+  [stock-number comparison](known-catalogs/bianchi.md#grizzly-cassette-stock-number-and-hub-review--2026-11-22)
+  supports **19547 → 1222** and shows that the cassette fits both catalogue
+  freehub generations. The scoped Grizzly/1991 NULL override preserves the
+  unresolved hub identification.
 
 ## Saddles
 

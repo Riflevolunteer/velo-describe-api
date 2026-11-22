@@ -5121,7 +5121,7 @@ const COMPONENT_OVERRIDES = {
     'sachs huret aris rival 6 speed 13x24': [{ from: 1989, to: 1989, id: 2121 }], // 1989 Peugeot (FR) Mont-Blanc: Sachs-Maillard Aris (1989)
     'campagnolo 13 14 15 17 19 21 24': [{ from: 1988, to: 1991, id: 2075 }], // 1989 Peugeot (NL) Galibier (14-speed): Campagnolo 7 speed narrow
     'sachs aris 14 15 17 19 21 24': [{ from: 1989, to: 1989, id: 2121 }], // 1989 Peugeot (NL) Mont Blanc / Champagne: Sachs-Maillard Aris (1989)
-    'helicomatic 13 14 15 17 19 21 24': [{ from: 1989, to: 1989, id: 8131 }], // 1989 Peugeot (NL) Cosmic: 12-speed so 6-speed Helicomatic (the table lists seven sprockets)
+    'helicomatic 13 14 15 17 19 21 24': [{ bike: 'Cosmic', from: 1989, to: 1989, id: null }], // 1989 Peugeot (NL): seven listed sprockets conflict with the stated 12 speeds and double crank
     'helicomatic 14 15 17 19 21 24': [{ from: 1989, to: 1989, id: 8131 }], // 1989 Peugeot (NL) Aubisque
     'helicomatic 13 15 17 21 24 28': [{ from: 1989, to: 1989, id: 8131 }], // 1989 Peugeot (NL) Anjou
     // 1988 Peugeot (FR): "RL Hélicomatic" with the speed count taken from the printed 12 / 15 V. = 600 SH, as 1986-87.

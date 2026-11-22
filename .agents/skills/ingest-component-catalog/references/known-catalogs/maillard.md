@@ -1,5 +1,20 @@
 # Maillard catalogs processed so far
 
+## Peugeot Helicomatic 600 SH workshop board — 2026-11-22
+
+The [Peugeot–Maillard workshop board](https://cdn.shopify.com/s/files/1/1041/1160/products/DSC_0217_326099e0-6935-45d7-8cad-a6b6bcd9c952.jpg?v=1603008687)
+names the **600 SH**. It shows MH sprockets at 14–18T and MG sprockets at
+15–26T, 28T and 30T, with service references 2261, 2260 and 2263 below.
+The [printer detail](https://cdn.shopify.com/s/files/1/1041/1160/products/DSC_0221_ef9f56e3-40c8-4b8d-94cd-d4a3311dbc02.jpg?v=1603008687)
+shows a company identifier and yields no publication year. The board
+documents service options, with no bike-specific fitments or assembled
+sprocket combinations. The [used six-speed 14–24T example](https://www.velosaloon.com/products/maillard-600-sh-helicomatic-6-speed-freewheel-with-14-24-teeth-from-the-1988)
+has a possible `88` stamp on its large cog. A sprocket marking cannot date
+the assembled freewheel or establish the original 1989 Aubisque fitment.
+The [1989 Dutch Cosmic catalogue review](../../../ingest-bike-specs/references/known-catalogs/peugeot.md#cosmic-helicomatic-specification--2026-11-22)
+records its conflicting gear counts separately. The evidence leaves the
+later five- and six-speed 600 SH availability bounds open.
+
 ## Maillard 700 colour-merge reconciliation — 2026-11-18, applied and validated
 
 Reviewed the existing TODO against live rows, all affected bike links, the

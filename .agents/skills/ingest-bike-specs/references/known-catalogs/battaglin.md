@@ -53,6 +53,10 @@ not a supported configuration identification. Nisi's contemporary Corsa range
 contains several numbered road rims (see Nisi maker notes); later **10608 Corsa
 Toro** also differs in construction. A compatible date alone selects neither.
 
+The [enlarged maker portrait, scan 8](https://ebykr.com/wp-content/uploads/2026/11/ebykr-battaglin-catalog-about-1981-p08-scaled.webp)
+was checked on 2026-11-22. It shows shallow silver rims, with no readable
+model marking and too little spoke-bed detail to distinguish the variants.
+
 Live bike **759**, source **268**, spec **12943**, label/raw label `Rims`,
 value `Nisi Corsa`: **5131 -> NULL applied, user approved**.
 No replacement row, component/date change or CSV edit.

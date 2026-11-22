@@ -895,12 +895,34 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   the existing 1990+ keys, a duplicate key would silently win); Sachs Rival -> ARIS Rival (FD 2440, RD 4417 dated 1990);
   Suntour XCM -> FD-XM02 2665 / RD-XM02 4793 (matcher had 4795, dated 1980); AX-55 -> 2459; R-552 -> 7605; Galibier bare
   Campagnolo hubs -> D300 Athena 3236 and seatpost -> C0R2 5742 (bike-keyed); Campagnolo 7 speed narrow 2075; Sachs-Maillard
-  Aris 2121; 1989 Helicomatic wordings -> 8131; Hi-Lite Competition -> 6835; Mavic Oxygen -> M6 8150; "Turbo, white" -> 5508;
+  Aris 2121; 1989 Helicomatic wordings except the Cosmic -> 8131; Hi-Lite Competition -> 6835; Mavic Oxygen -> M6 8150; "Turbo, white" -> 5508;
   Atax Philippe Tour de France -> 2902. Null: "Aero levers" (matcher hit Gipiemme), bare "Sachs-Huret" (Avoriaz), Monaco
   "Shimano Positron" (only row dated 1980-83).
 - Left unlinked: Mavic 190 NE, Maillard CX 550, Lyotard 136 (two variants), CLB GL 47-60 (three variants), Simplex SX 640,
   Sachs-Huret Rider rear, Nervar white crank, Maillard Normandie hubs, generic Weinmann / Rigida / Lee Chi / San Marco cells.
 - Regression: all 70 other catalogues' link counts unchanged.
+
+### Cosmic Helicomatic specification — 2026-11-22
+
+The Dutch catalogue's [wheels table, p. 30](https://www.peugeotshow.com/1989nl/1989nl_30.jpg)
+lists `13x14x15x17x19x21x24` for the Cosmic and specifies a Nervar 42×52
+double. The [facing table, p. 31](https://www.peugeotshow.com/1989nl/1989nl_31.jpg)
+calls the bike 12-speed. These statements do not establish a six- or
+seven-sprocket model. With user approval, corrected live spec **17174**,
+bike **1012**, source **320**, from six-speed Maillard 600 SH **8131** to NULL.
+The scoped Cosmic/1989 generator override preserves the decision on reload.
+
+The read-only rehearsal across 118 loaded catalogues and 24,829 specs found
+one generator link change. After applying it, the full comparison returned
+to the pre-change baseline of 15 existing link differences. The guarded SQL
+changed one row and the rerun changed zero. Live readback verified the original
+freewheel text and label, catalogue source, 12-speed gearing and 42×52 crankset.
+The database quality report found zero structural errors and all 14 test suites
+passed. Restore the previous mapping by guarding
+on the same spec, bike, label, text and source with `component_id IS NULL`,
+setting it back to **8131** and reverting the scoped override if justified
+by new evidence. The Maillard acquisition task still needs a dated fitment
+or spares source for the later 600 SH variants.
 
 ## 1989 Peugeot (FR) — `1989_peugeot_fr_spec.csv` (FR, data_source 321: 23 bikes, 435 specs, 81 linked)
 
