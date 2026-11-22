@@ -272,6 +272,43 @@ description and source_ref, restore the captured old description and source_ref
 (5062=357, 2662=1). Remove source 483 only if unreferenced and deliberately
 rolling back its registration. All source URLs remain in these notes.
 
+### CXP30 tubular weighing basis — 2026-11-22, applied and validated
+
+Visually checked Mavic's [CXP30 tubular instruction cover](https://blog-imgs-100-origin.fc2.com/p/a/s/pass13/DSC03376amx6.jpg)
+and [assembly illustration](https://blog-imgs-100-origin.fc2.com/p/a/s/pass13/DSC03380amx6.jpg).
+The fitting sheet shows a loose profiled insert and 16 mm nipple installed
+together. The [original 36-hole NOS specimen photograph](https://cdn.shopify.com/s/files/1/1041/1160/products/DSC_0132_4cb13d72-dc2a-4fdb-9899-2534915fab96.jpg?v=1630085749)
+shows that hardware packaged separately with the rim. The seller reports
+550 g, with the weighing basis unstated. [Damon Rinard's table](https://sheldonbrown.com/rinard/weights.htm)
+reports 473 g measured without washers in its tubular section. Its listed
+500 g specification and the [original 5062 specimen listing](https://velobase.com/Pages/ViewComponent.aspx?ID=FB4424AC-C610-462B-8174-56506478D1AA)
+give no weighing basis for 500 g. The measured 473 g belongs to Rinard's rim.
+
+The [1996 English maker panel](https://cdn11.bigcommerce.com/s-1rmgckn/images/stencil/2280x2280/products/14253/174720/IMG_5147__32454.1734139528.jpg?c=2)
+prints 530 g for the tubular. [Guida 1996 p.120](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_17_main_image.jpg)
+prints 520 g for both finishes. Mavic's [1997 road spread](https://labibleduvelocataloguesmavic.blogspot.com/p/mavic-1997.html)
+and [1999 printed p.21, PDF p.11](https://bikalog.org/api/view/Mavic/1999/mavic99.pdf#page=11)
+both print 465 g for the tubular. These figures describe the published
+offerings. The assembly evidence establishes what the 473 g weighing omits,
+while the catalogue weighing bases and any production revision remain unknown.
+The 1999 silver listing is already covered by 10199's published date range.
+
+Updated **5062** to distinguish the published figures from the independently
+weighed rim and to describe the loose inserts and 16 mm nipples. Exact readback
+verified the 250-character replacement below, source **483**, dates **1996–1997**,
+the existing UUID `FB4424AC-C610-462B-8174-56506478D1AA` and zero linked bike specs.
+The guarded SQL changed one row, then zero on replay. The before/after
+integrity report had identical findings and zero errors. The matcher does
+not read descriptions. The compared silver, titanium and clincher rows
+10199/10607/5063 retained their existing values.
+
+- Previous description: `700c aero tubular rim, SUP joint, UB Control brake tracks, profiled inserts; silver or titanium. Maker specifications: 530 g (1996), 465 g (1997); 1997 drilling 24/28/32/36h. Separate 500 g listing has no stated weighing basis.`
+- Applied description: `700c aero tubular, SUP/UB Control, silver or titanium, 24/28/32/36h (1997). Loose inserts and 16 mm nipples. Mavic: 530 g (1996), 465 g (1997, 1999). Guida: 520 g (1996). One rim weighed 473 g without inserts. Listing: 500 g, weighing basis unstated.`
+
+Restore the previous text only with the exact applied description, ID,
+original source and date values as guards. The remaining measurement and 870
+clamp questions are linked from the TODO.
+
 ## Full French catalogue (1994) — applied and validated
 
 Source: [36-page PDF](https://www.bikecatalogs.com/download/3659), mirrored from
