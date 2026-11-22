@@ -968,6 +968,15 @@ online; neither is a full, dated component source ready for ingestion.
   hostname verification and was not pursued. Next useful trigger: a restored
   public 1990 entry or a confirmed freely shareable copy associated with that
   named holding. No complete file, preview PDF or current document ID was found.
+- **1990 — independent copy confirmed, 2026-11-22.** Rennrad-News
+  [post 27 by erni65, 5 June 2024](https://www.rennrad-news.de/forum/threads/klassiker-des-monats-juni-2024.194033/page-2)
+  described a complete copy with order form. The thread's [printed p. 48](https://www.rennrad-news.de/forum/attachments/1450672/)
+  shows the Chambéry 1989 World Championships article. The same holder's
+  [posted cover photograph](https://www.rennrad-news.de/forum/attachments/1456031/)
+  identifies `Fahrradwelt '90` and prints `596 Seiten`. Keep this cover
+  figure distinct from the archive's count of 589. The photograph and
+  editorial page confirm the edition, with current availability and the
+  component pages still to verify.
 - **1992 — readable partial page and a new potential holder.**
   MTB-News [thread 999888, post 6 by joglo, 7 July 2025](https://www.mtb-news.de/forum/t/suche-basso-katalog-wo-rocky-mountain-und-aspen-mtbs-drin-sind-vielen-dank.999888/)
   attributes a Basso Rocky page to the 1992 Brügelmann catalogue.

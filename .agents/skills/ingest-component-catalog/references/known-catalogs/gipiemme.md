@@ -575,11 +575,15 @@ Other leads checked:
   points back to the already exhausted velo-pages Gipiemme folder (album 65),
   not another surviving catalogue. Direct access failed; its indexed link text
   identifies that same album.
-- The [Rennrad-News Gipiemme thread](https://www.rennrad-news.de/forum/threads/gipiemme-gpm-gipiemme-gpm-gipiemme-eine-italienische-sch%C3%B6nheit.137974/)
-  indexes attachments named `Page 00-A.jpg` / `Page 01.jpg` etc. under a user's
-  "1982: CRONO" heading, and page 13 calls a specimen 700AA "1982". Direct page
-  access returns 403; neither the attachment contents nor that dating were
-  verified. These are leads only, not independent period attestations.
+- **2026-11-22 follow-up:** all four original attachments in the
+  [Rennrad-News post headed “1982: CRONO”](https://www.rennrad-news.de/forum/threads/gipiemme-gpm-gipiemme-gpm-gipiemme-eine-italienische-sch%C3%B6nheit.137974/post-3631879)
+  were retrieved. The [yellow eight-wins cover](https://www.rennrad-news.de/forum/attachments/page-00-a-jpg.284510/),
+  three-language title page and group spreads match the maker-archive file
+  already treated as c. 1986–87, source 270. The [Pista B1 group spread](https://www.rennrad-news.de/forum/attachments/page-02-jpg.284511/)
+  prints hub code 400B1 and Road code 800AES. It confirms the later model
+  identity, with no early crosswalk for 3351, 1007 or 12977. Classic Rendezvous's
+  two scans labelled circa 1982 also print the later 800AE/870SE Selectron
+  codes. The thread's separate specimen label on p. 13 remains unverified.
 - Ebykr's [Battaglin catalogue labelled about 1981](https://ebykr.com/library/battaglin-catalog-about-1981/)
   repeats the Marostica Sprint 610 rear and Vuelta Cronospecial headset values
   in the held 1982 Battaglin material. The website's approximate date supplies

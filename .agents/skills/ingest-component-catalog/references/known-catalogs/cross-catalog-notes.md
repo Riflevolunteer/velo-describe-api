@@ -2846,15 +2846,10 @@ component, merge or date change. The five editions above remain processed source
   edition separately names **5178 Model 58**, with retailer weights 505/520g;
   preserve the maker-specific 555/565g already held. Both existing date ranges
   cover the evidence; no DB changes.
-- **Remaining identity limits:** earlier unnamed Super Champion standard
-  16–22mm clinchers (27×1¼ 495g / 700C480g; 1976 p.9, 1979/80 p.15,
-  1981/82 p.16) still lack a model/profile crosswalk between Model 58/60 and
-  other candidates. Fiamme Yellow Label **clinchers** on 1976 p.9 (image 32)
-  are 500/485g with an open-well single-wall section. The same page's Ergal
-  yellow-label 290g and red-label 360g rims are explicitly tubular. Colour and
-  approximate mass do not identify the clincher as a tubular or as c.1985
-  Elan 9192 / box-section Sport 10992. No generic duplicate row was created.
-  Seek a period labelled section drawing or stamped specimen crosswalk.
+- **Earlier clinchers:** the 2026-11-22 [profile comparison](#palo-alto-clincher-identities--2026-11-22-applied-and-validated)
+  reconciles the standard-width Super Champion and smooth Fiamme Yellow
+  Label offerings. The same page separately lists Ergal Yellow Label 290 g
+  and red-label 360 g tubulars.
 - **Regina freewheel limit (source-117 scope superseded by the 2026-11-18
   [Regina comparison](regina.md#splined-oro-comparison--2026-11-18-read-only)):** 1979/80 p.18, 1981/82 p.26 (image 25) and
   c.1983/84 p.30 (PDF 32) explicitly offer **splined** Super Corsa Oro5/6-speed
@@ -2876,6 +2871,57 @@ loss findings match the pre-task baseline. All 13 test files pass. TODO retains
 only concrete unresolved work. Task-created page downloads, renders, SQL and
 comparison snapshots were removed after recording evidence; user Downloads
 originals and maintained CSVs are preserved.
+
+## Palo Alto clincher identities — 2026-11-22 applied and validated
+
+- **Super Champion → 5178 Mod. 58.** [Palo Alto 1976 printed p. 9](https://ebykr.com/wp-content/uploads/2026/11/ebykr-1976-palo-alto-bicycle-shop-catalog-p11-scaled.webp),
+  source 245, lists R-06/R-07 at 495 g for 27×1¼ Schrader and 480 g for
+  700C Presta, both serrated and 36H. [Bikecology Summer 1981 p. 34](https://ebykr.com/wp-content/uploads/2026/11/ebykr-1981-bikecology-catalog-p34-scaled.webp),
+  source 227, reproduces the same asymmetric perspective of the section,
+  with the same hollow edges, web, spoke eyelet and stippled brake track.
+  It explicitly labels the drawing **Model 58**, offers both diameters
+  in 36H and gives a weight under 500 g. The [Wolber maker folder, p. 3](https://ebykr.com/library/wolber-tubulars-tires-rims-folder/),
+  source 273, gives the Model 58 standard-width section as 22.8×13.6 mm;
+  its later 555/565 g values are preserved as maker figures. Robert Wright's
+  [period measurement table, PDF p. 49 / printed p. 45](https://rexresearch1.com/BicycleLibrary/BuildingBicycleWheelsWright.pdf#page=49),
+  copyright 1977, fifth printing May 1980, independently gives
+  22.5/22.9 mm, 480/495 g and eyelets for the two Super Champion
+  sizes. [5179's specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=26FC9F8A-B68A-48CD-82EE-D039EE2DFA17)
+  shows a Super Champion decal without a model stamp, and the listing
+  calls it Schrader. The labelled period drawing supports 5178 at the
+  catalogue-offering level. Palo Alto 1979/80 p. 15 and [1981/82 p. 16](https://labibleduvelodivers.blogspot.com/p/revue-1981.html)
+  reuse the drawing, the 495/480 g figures and a 16–22 mm standard tyre
+  fit range. The later text describes smoother sides and Presta in both
+  diameters, separately from the narrow Gentleman. Valve and brake-track
+  details in the DB description apply to the 1976 offerings.
+- **Fiamme → 4999 Yellow Label clincher family.** The same 1976 page's
+  R-08/R-09 drawing and specification identify a smooth-sided open-well
+  single-wall rim, with 36H in 27×1¼ Schrader (500 g) and 700C Presta
+  (485 g). Wright's table records a 24.1 mm, 495 g, non-eyeleted 27×1¼
+  Yellow Label clincher. [4999's specimen photos](https://www.velobase.com/Pages/ViewComponent.aspx?ID=F300EFD1-713C-43A6-8915-D207E574C997)
+  show the yellow FIAMME marking, open single-wall well and plain spoke
+  holes. The 485 g listing and Presta drilling corroborate R-09. The
+  crosswalk identifies the retail offering. “Professional” remains a
+  legacy row title and is absent from the photographed markings and
+  Palo Alto table. [5002](https://velobase.com/Pages/ViewComponent.aspx?ID=959D2ADC-56D9-48DC-A5FE-D22B30C05092)
+  has visible eyelets. [5003](https://velobase.com/Pages/ViewComponent.aspx?ID=4078A1C6-C4B9-4394-AEA9-B85BF7FCC2C9)
+  shows another non-eyeleted example with similar label, and its
+  metadata conflicts with the photos on eyelets. No specimen merge or
+  additional fitment was inferred.
+- The guarded SQL updated two descriptions and moved 4999's source
+  259 → 245. Readback confirmed the same IDs, UUIDs, titles and date
+  ranges, exactly 140/249 characters, no links to 4999 and existing
+  1978 Bianchi spec **12413 → 5178**. The repeat affected zero rows.
+  Whole-database quality and bike-link comparison findings matched the
+  pre-rim readback. Rim duplicate reports each returned one configuration
+  pair and no exact duplicate.
+  For rollback, restore source 259 and description `Fiamme Professional
+  (yellow label), Italy, 485 grams` on 4999. Restore 5178's prior
+  description `Super Champion Mod. 58, France, 522.5 grams (avg).
+  High-pressure rim for standard-width wired-on tyres, 22.8 x 13.6 mm,
+  36 holes (40-48 on 650B, 700C and 27 x 1 1/4 polished); 485 g (600A),
+  525 g (650B), 555 g (700C), 565 g (27 x 1 1/4).` Guard on the verified
+  post-change identity and source when restoring.
 
 ## Palo Alto Bicycles catalogue — 1981/82 (blogspot "Catalogues divers: Revue 1981", data_source 248)
 
@@ -4611,12 +4657,11 @@ that work has its own current action. No Mavic DB change followed this review.
   Track Black pedals (finish variants), Christophe toe clips (no category), Cyclo Pan kits, SunTour
   "Standard" levers; the agents' claim that no Ti chain exists (1391 Extra 50 Titanio does).
 - Original ambiguous inventory included Regina chains, freewheels and clinchers.
-  The 2026-11-17 review above supersedes the blanket chain/clincher hold:
-  the chain construction crosswalk is established and the named narrow
-  Gentleman is 5183. Remaining holds include the later splined Super Corsa Oro
-  freewheels, earlier unnamed standard Super Champion and Fiamme Yellow Label
-  clinchers, Rigida 16–22 clinchers, Cyclone front variants, Cinelli 1/A logo-era
-  variants and Stronglight / TA ring variants.
+  The 2026-11-17 and 2026-11-22 reviews above resolve the chain construction
+  and Super Champion / Fiamme retail identities, including the narrow
+  Gentleman as 5183. Remaining holds include the later splined Super Corsa Oro
+  freewheels, Rigida 16–22 clinchers, Cyclone front variants, Cinelli 1/A
+  logo-era variants and Stronglight / TA ring variants.
 - Sugino Mighty Custom provides a second source; Maxy II is not in this catalogue.
 
 
@@ -4629,9 +4674,9 @@ that work has its own current action. No Mavic DB change followed this review.
 - Changed (old values for reverting). `year_to` -> 1979 on 15 rows: 9892 Avocet Model I (high flange) (1978-1978); 9893 Avocet Model III (1978-1978); 8260 SunTour US-6000, Winner Ultr (1978-1978); 2243 SunTour Pro-Compe (Ultra-6) (1978-1978); 9896 Cyclo Alloy (5 speed, custom (1978-1978); 9897 Avocet Seat Post (1978-1978); 2801 Cinelli 64 Giro D'Italia (70 (1970-1978); 2809 Cinelli 66 Campione del Mond (1960-1978); 9069 Galli 75 (1976-1978); 8883 Sugino MCVS / MCVD, Super Mi (1978-1978); 9899 Sugino Mighty Custom (1978-1978); 9900 Sugino Mighty Victory (1978-1978); 9901 Spécialités TA bottom bracke (1978-1978); 9902 Sugino Mighty Custom/Victory (1978-1978); 9903 Clement Elvezia 75 (1978-1978). `year_from` -> 1979 (earlier) on 5 rows: 5187 Super Champion Performance (1980-1981); 9123 Sugino Super Mighty Custom (1981-1981); 9119 Avocet Racing IIT (1981-1981); 6863 Specialized Touring Turbo (1980-1981); 6868 Specialized Turbo S (1980-1981). Fill 1979/1979 on []. Descriptions enriched on 11 rows (ids [3259, 3260, 4125, 5749, 6667, 7886, 9068, 8883, 6861, 6863, 6868]); old text was never shortened. New rows (1979-1979): Cyclo Alloy (6 speed, custom), Specialized Racing 700C x 1.
 - Rejected on review: matches to the Avocet hubs "(by Ofmega)" 3189 / 3190 / 3191 again, Avocet Professional headset -> Model II 2937, Avocet sealed BB -> Model I (4), Rigida 14-20 mm rims -> the 13-19 rows 9894 / 9895 and a generic Rigida 27 x 1 1/4 row 5153; new rows for BB spindles and cup sets (sub-parts), Palo Alto house tubulars (retailer house brand, TODO policy question), the Rigida 700C x 1 1/4, SR Laprade seat post (Laprade brand already has rows) and Avocet chainrings for double / triple (no model name).
 - Original ambiguity included Regina chains/freewheels and clinchers. The
-  2026-11-17 review above resolves the chain construction identities and narrow
-  Gentleman 5183; later splined Oro freewheels, unnamed standard Super Champion
-  and Fiamme clinchers remain held, alongside Cyclone front and Cinelli 1/A variants.
+  2026-11-17 and 2026-11-22 reviews above resolve the chain construction
+  identities and the Super Champion / Fiamme clinchers. Later splined Oro
+  freewheels remain held, alongside Cyclone front and Cinelli 1/A variants.
 
 
 ## Palo Alto Bicycles catalogue — c. 1983-84 (VeloBase `palo_alto_1984.pdf`, 52-page scan with noisy OCR), 2026-10-30
@@ -4647,9 +4692,9 @@ that work has its own current action. No Mavic DB change followed this review.
 - Rejected: matches of the Avocet hubs to the "(by Ofmega)" rows 3189 / 3191 (again) and a Campagnolo front derailleur to the 1985+ 7012; new rows for SR Laprade 250 mm, Avocet headsets Model 20 / 30 (likely the DB's Model II / III), Shimano XT hubs and 600 XT chainset (no model numbers), Sugino Aero Tour A/T cranks (DB has "Sugino AT"), A/T bottom bracket and chainrings, Avocet chainrings.
 - Original holds included Regina chains/freewheels and rim identities. The
   2026-11-17 review above resolves ordinary Oro chain 1382 and explicitly named
-  Gentleman 5183 / Model 58 5178 on p.18. This does not identify earlier unnamed
-  standard Super Champion or Fiamme Yellow Label clinchers. Later splined Oro
-  freewheels and Cyclone/Campagnolo generation variants remain held; no Maxy II.
+  Gentleman 5183 / Model 58 5178 on p.18. The 2026-11-22 profile comparison
+  identifies the earlier retail clinchers. Later splined Oro freewheels and
+  Cyclone/Campagnolo generation variants remain held. This edition has no Maxy II.
 
 ## Dedupe 2026-10-30: Cambio Rino Aereo crankset
 

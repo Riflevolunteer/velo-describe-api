@@ -31,6 +31,49 @@ Project-3, Backstreet, Boardwalk, Advantage, Main Street and Avenue, and
 the component-free MiniMax frameset. The Ocelot adult model is in scope
 and its junior wheel-size option is listed within the same block.
 
+### 1992 US preparation complete — 2026-11-22
+
+Transcribed the scoped builds from MB92 pp. 15–22 into
+`bike_specs/1992_bianchi_us_spec.csv`. The ten road builds use the same
+Road category as the US 1991 and Japanese 1992 inputs. The Grizzly's
+explicit Logic Pro bottom bracket has its own field. The top-pull marking
+on the Shimano mountain groups is carried on the front derailleur entry.
+Equinox has no separately specified rear derailleur, and the Ocelot
+adult, mixte and junior options remain in its single printed build.
+
+Live preflight found only the eight 1992 Japanese bikes, all on source
+359, and verified that the 23 used spec labels already exist at their
+current sort positions. The reviewed SQL references one new US catalogue
+source with the scan citation, 19 bikes and 398 unique specs, with 191
+supported component links. Preparation is complete and the SQL is ready
+for import review at
+`/private/tmp/velo-backlog-20261122/1992-bianchi-us-reviewed.sql`.
+The live database has no import from this edition.
+
+- Bianchi pp. 16–17 and the [Shimano '92 dealer manual](https://www.bikecatalogs.com/download/4273),
+  printed pp. 49–53, support FH-6402-HG, CS-HG90-8 and the 6401
+  derailleurs for the eight-speed SBX, Giro and Virata. SBX and Giro
+  have ST-6400 integrated controls. Virata has separate aero levers
+  and eight-speed down-tube shifters.
+- Shimano printed pp. 1–5, 10–21, 34–35 and 61–62 support the XTR
+  eight-speed Super Grizzly, top-pull Shimano mountain front mechs
+  and distinct RX100 double/triple builds. The 1992 SunTour [maker catalogue](https://www.equusbicycle.com/bike/suntour/catalog92/index.html)
+  supports FD-TP10-GXH for Equinox's top-pull XC-Comp and FD-TP05-GXH
+  for Volpe's FS-E combination, plus CS-AP10 PowerFlo for their
+  respective 12–28T silver and 12–30T black cassettes.
+- TSX's uncoded Athena brakes, crank and front derailleur have overlapping
+  candidates or an unresolved mount. Bianchi's house-brand tyres and
+  the generic hubsets, brake levers and some cassette descriptions remain
+  without exact matches. Grizzly's 26×2.1 Kevlar Smoke Comp stays as
+  printed text. The US Grizzly's Shimano XT 32H/7-speed equipment does
+  not identify 1991 Japanese Grizzly specs 19546/19547.
+- The listed Nitto Dynamic-II, black 3T AR84, Avocet Racing and Avocet
+  R20 GelFlex are later fitment attestations than the current ends on
+  rows 6614, 8296, 5250 and 5249. The review preserved component dates.
+  The SQL uses reviewed edition-level matches without a matcher change.
+  Use the reviewed SQL for this edition. A fresh default generation
+  requires reconciling the reviewed decisions before its output is applied.
+
 ### 1991 US import applied and validated
 
 Source CSV `bike_specs/1991_bianchi_us_spec.csv` preserves the printed
@@ -193,6 +236,47 @@ that identifies each model and supplies frame, crank and brake specifications.
 Its English text, CPSC notation and pound weights support US-market treatment.
 The matching left half or full album is needed to align the rows and establish
 whether the photo belongs to the exact brochure represented by the fragment.
+Visual follow-up on 2026-11-22 checked all five attachments in that post.
+The other four show a later Bianchi geometry sheet, two Campagnolo sheets
+and a Mercian brochure. They supply no model labels for this table.
+
+### Early and 1997 source follow-up — 2026-11-22
+
+The [Ruko of Canada catalogue, PDF p. 94 / printed p. 97](https://www.berettaweb.com/Beretta%20Catalogs/Catalogs/1974_Ruko_%26_Beretta_Catalog.pdf#page=94)
+is the 1974 Canadian distributor source. PDF p. 1 prints 1974 and p. 2
+gives the Streetsville, Ontario imprint. The sole explicitly branded
+Bianchi build on the bicycle pages is the ten-speed Specialissima
+Professional, with Campagnolo Record equipment, Regina Oro chain and
+freewheel, TTT bars, Cinelli Record Unica and Clement or Pirelli tubular
+equipment. The block supplies model/period availability rather than exact
+Campagnolo or Regina part numbers. The rest of the bicycle section is
+Chiorda. This satisfies the 1974 source lead for this one build. A broader
+1974 manufacturer specification table remains useful.
+
+[Roadworks' 1997 catalogue photographs](https://oli-roadworks.blogspot.com/2010/)
+include a legible Super GY product block, naming Rock Shox Super Deluxe
+and Judy DH, White Industries front hub and forged crank, and Shimano
+XT shifters and V-brakes. The publisher describes a New Zealand importer
+context for the copy. The photographs do not include the full US
+component tables or establish its market imprint. Keep the existing
+US and Japanese recovery action for the full ranges.
+
+### 1993 Reparto Corse edition recovered — 2026-11-22
+
+[Upcycles' complete 52-page Bianchi Reparto Corse scan](https://cdn.shopify.com/s/files/1/0786/6705/5385/files/1993_Bianchi_Reparto_Corse_catalog.pdf?v=1755877446)
+is a separate bilingual Italian/English range. PDF p. 52 gives Bianchi
+Reparto Corse's Treviglio, Italy imprint and shows the 1992–93 world-champion
+badge. Year-suffixed frame names on pp. 8–12 include Cromor 93, SBX 93,
+TSX 93, EL 93 and Genius Road 93. The catalogue includes frames and
+complete builds. Road and track specifications are on PDF pp. 19, 21,
+23, 25, 27, 29, 31, 33, 35 and 37. MTB geometry/frames appear on pp. 39–41,
+with complete-build tables on pp. 43, 45 and 47. The bilingual EL Pista
+Record table on p. 35, for example, gives Campagnolo Pista Record, FIR
+Alcor rims and the option of SBX Pista or EL Crono Pista frame variants.
+The print and model range differ from source 47, the loaded US edition.
+This fulfils the separate-edition acquisition action. The Italian imprint
+identifies the publisher and the scan does not assign a sole sales market.
+No source row, bike or component was written from this edition.
 
 ## Source backlog reconciliation — 2026-11-20
 
@@ -202,7 +286,7 @@ The broad TODO request for 1991–99 sources was stale: remaining year gaps are
 1994–99, alongside 1974–77 and 1979–80. A 1991–93 acquisition is useful only
 when it establishes a different market/edition, not another mirror of these
 loaded catalogues. The source review above supersedes the 1994–99 acquisition
-status.
+status. The 2026-11-22 recovery above fulfils the distinct 1993 edition request.
 
 ## Cluster review — 2026-11-20
 

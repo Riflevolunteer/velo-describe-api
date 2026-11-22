@@ -194,9 +194,8 @@ construction/cassette distinction.
   generation or prove an exact cassette code. Retain the current broad hub
   link **18707 → 3630** and existing cassette link **18703 → 1224**; the
   latter is an existing mapping, not independent proof of 3630's compatibility.
-  Current 1224 says black while the 1990 maker table says silver; do not use
-  that stored colour claim to resolve the specimen. No cassette change is
-  proposed from this hub review.
+  The 1990 maker table says silver. The catalogue description was reconciled
+  on 2026-11-22 below. The Axis spec gives neither cassette finish nor code.
 
 ### Applied description correction and validation
 
@@ -232,6 +231,42 @@ Applied description (**201 characters**): `XCD low-flange quick-release hub set;
   identity only for a specimen code, comparable body/spacing measurements or
   a coded original XCD-6010 fitment/parts source.
   Applied SQL was removed after successful readback and zero-change rerun.
+
+### XD10 comparison and cassette 1224 correction — 2026-11-22
+
+- Scan 33 of [Fuji Edition No. 19](https://ebykr.com/library/fuji-1989-catalog/)
+  specifies a grey QR **XCD 6000 XD10 cassette rear hub** on the 1989 Sundance.
+  The same column lists a seven-speed 13/30T cassette as “FH XD01”. Treat that
+  as Fuji's printed cluster wording. The hub listing gives a coded 1989 fitment
+  for a different bicycle and supplies no identification of the Bianchi
+  XCD-6010 or specimen 3630.
+- The [boxed XCD pair](https://jp.mercari.com/item/m41041393168) has a threaded
+  rear hub. The maker box in photo 4 gives 100 mm front, 135 mm rear and 36H.
+  [MOMBAT's 130 mm pair](https://mombatbicycles.com/MOMBAT/PartsForSalePages/hubs.html)
+  likewise has a threaded rear hub, visible in photo HUB112. The
+  [Bicyclist example](https://bicyclist.cc/product/full-suntour-xcd-accushift-groupset-from-1990-3-x-7-speed/amp/)
+  labels its 130 mm cassette hub FH-XD11-7U in seller text. Its shell, logo and
+  general cassette-body appearance overlap the unmeasured specimen, and the
+  group photograph supplies no readable code on the hub. The
+  [SunTour compatibility sheet](https://www.bikecatalogs.com/download/2654)
+  compares 1991 and 1992 bodies and does not distinguish XD10 from XD11.
+- Re-read [1990 SunTour p. 14](https://www.disraeligears.co.uk/site/00_main_images/suntour_bicycle_equipment_catalog_1990_-_page_14_main_image.jpg),
+  source **385**. The **CS-AP00-K7U** seven-speed cassette cogs, stock code
+  **47179702**, are listed in silver against **FH-XD11-7U**. The separate
+  six-speed cassette cogs are listed in black. As the old 1224 wording
+  “7-speed cassette cogs, black, AccuShift Plus compatible.” conflicted
+  with the cited maker page, the guarded update replaced it with
+  “AccuShift Plus seven-speed cassette cogs, code 47179702, listed in silver
+  for the FH-XD11-7U freehub (1990 SunTour catalogue, p. 14).”
+  A seller photograph shows dark cogs alongside an XD11-attributed group.
+  The revised description states what the maker catalogue lists.
+- First application affected one component description and the rerun
+  affected zero. Readback confirmed the cassette's title, UUID, 1989–1990
+  dates and source 385, with Axis **18703 → 1224** and **18707 → 3630**
+  preserved. The description correction verifies the catalogue offering.
+  3630 still needs a code, comparable body measurement or coded Bianchi
+  fitment. Reverting only the description under the same ID, UUID, source,
+  date and title guards restores the old value above.
 
 ## PLG 6290 handed-code reconciliation — 2026-11-18 (applied and validated)
 

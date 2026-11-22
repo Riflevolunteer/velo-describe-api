@@ -2787,3 +2787,11 @@ justify a component mutation. Reopen recovery for a newly available interior
 scan/download or confirmed sharable page, rather than another broad search.
 No audit SQL or persistent scratch report was created; the empty task scratch
 directory was removed after recording URLs and limits here.
+
+**Specimen lead checked 2026-11-22.** The [Velosaloon listing URL](https://www.velosaloon.com/products/nos-shimano-bb-un73-sealed-cartridge-bottom-bracket-in-115-mm-with-english-thread-from-2002)
+attributes the cartridge to 2002. The four photos confirm the BB-UN73
+label, 68 mm shell and `BC1.37 × 24`, with `D-H` between the left/right
+arrows on the label. Shimano's [2005 specification, ATB/NEXAVE bottom bracket table](https://productinfo.shimano.com/pdfs/product/archive/2005_SPECIFICATION.pdf)
+defines `D-H` as the 115 mm axle marking. The photos supply no independently
+readable production date or dated box. The 2002 attribution does not extend
+the documented range or recover the manual page.
