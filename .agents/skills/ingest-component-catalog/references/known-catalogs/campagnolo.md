@@ -1870,10 +1870,9 @@ and its measured weight. 4162 retains the December 1986 parts-page evidence
 without treating it as a sales listing. 7007 retains the 1982 listing and
 the later 0104009 code. 7013 retains axle 744/2, 68-C/70-C and 115.5 mm.
 7012 retains the cage, arm and hanger references from No. 18 p. 24.
-For any further date extension, distinguish 2301's two pictured 0104008
-bodies and 7007's early 1022/00 configuration from the later 0104009 listing.
-The No. 18 imprint removes the basis for treating 7013's existing 1985 lower
-bound as attested by this copy. A dated 1046/4 listing is needed to check it.
+The [assembly comparisons below](#no-18-assembly-and-date-follow-up--2026-11-22)
+supersede this pass's provisional interpretation of the 0104008 image labels
+and its held date decisions for 2301, 7007 and 7013.
 
 The guarded transaction updated one source and ten components. The same
 SQL reran with zero affected rows. Live readback matched the proposed values.
@@ -1883,6 +1882,60 @@ mapping results, including the same 15 pre-existing lost proposals. Neither
 unlinked front carrying generic Super Record wording identifies the braze-on
 mount. The live quality report had zero errors and removed exactly the date
 conflict on spec 2290. All 14 test files passed.
+
+### No. 18 assembly and date follow-up — 2026-11-22
+
+Reviewed the [December 1986 No. 18 printing](https://velobase.com/CatalogScans/Campagnolo/Campy1985_catalog18.pdf)
+against the original maker pages and the retained component identities.
+
+- **2301, Nuovo Valentino 0104008.** The visual read of p. 23 shows one
+  0104008, adjacent to Gran Sport 0104006 and 980 0104012. The duplicate
+  0104008 label came from OCR. P. 30's assembly photo matches the
+  [2301 specimen](https://velobase.com/CompImages/FDerailleur/2BC51FDD-A9F4-4576-89C9-D040C3F7A79D.jpeg)
+  in the slim linkage, unperforated outer cage and crest location. The
+  illustration gives cage 2050/7 and arms 7117017/7117018. The approximate
+  [U.S.A. parts supplement](https://ebykr.com/library/campagnolo-usa-parts-sheets/)
+  also names 0104008 with an estimated publication year. The 1982 U.S.
+  catalogue's p. 9 calls 2050 Nuovo Valentino, so the model name alone
+  cannot assign that listing to 0104008. Retain the existing lower bound.
+  Extend 1982–1985 to 1982–1986, source 8. The description adds the clip-on
+  construction and part codes while preserving 91.5 g measured average.
+- **7007, Record braze-on.** The [1982 U.S. catalogue](https://www.campyonly.com/history/catalogs/1982_olympic_catalog.pdf),
+  pp. 9–10, and No. 18, pp. 23 and 26, show the same silver 778/782 arms,
+  1052/7 cage, 7300105 washer, 7350115 screw and body assembly 7143036.
+  The hanger changes from 7102009 under 1022/00 (1052/BZ) to 7102012 under
+  0104009. This is a documented revision within the family represented by
+  7007. Keep the two configurations explicit in its description and attribute
+  101 g to the 1982 listing. Extend 1982–1985 to 1982–1986 and change
+  source_ref 10 to 8. The black-arm Super Record assembly remains distinct.
+- **7013, Record Cyclocross 1046/4.** No. 18 pp. 46–47 tie this exact set
+  to 744/2 and print 115.5 mm for both 68-C and 70-C. The 1982 U.S.
+  catalogue lists the combined 1046/3 triple/cyclocross set (7008). The
+  [Winter 1982–83 Record News](https://www.campyonly.com/history/record_news/record_news_vol_1-2.pdf),
+  pp. 5–6, identifies a 1046 C cyclocross assembly and both older and revised
+  744/2 axles. Its revised 68 C and 70 C dimension sums are 114.5 and 116.5 mm,
+  respectively, using the chart's three axle spans. The earlier application
+  and axle family therefore supply corroboration only. They give neither
+  the numbered 1046/4 set nor the later 115.5 mm specification. The retailer
+  photo of the bottom-bracket spread shows that specification but lacks a
+  printed date for its copy. Replace the original estimated 1985–1987 range
+  with the verified 1986 catalogue year and retain source 8. The description
+  now explicitly attributes 115.5 mm to the December 1986 printing.
+  [Retailer photo of pp. 46–47](https://cdn11.bigcommerce.com/s-1rmgckn/images/stencil/1280x1280/products/14237/174446/IMG_5039__05016.1733884915.jpg?c=2)
+
+The changes keep the three original titles and IDs. The earlier descriptions
+for restoration were `Nuovo Valentino front changer with part number 0104008.
+Italy, 91.5 g measured average.`, `Record braze-on front changer, pictured as
+1052/BZ under code 1022/00 in 1982. Italy, 101 g. Catalogue n. 18 lists the
+Record braze-on model as 0104009.` and `Record cyclocross bottom bracket set
+1046/4. Axle 744/2, marked 68-C or 70-C, 115.5 mm. Italy.`, respectively.
+
+Applied three guarded updates and confirmed zero changes on an identical
+rerun. Live readback matched all proposed values. The full comparison of
+24,829 bike-spec mappings and the normal, near and parenthetical duplicate
+classifications matched the baseline. None of the three components has a
+live bike link or a spec naming its exact model. The integrity report still
+has zero errors and the same findings. All 14 test files passed.
 
 ## Record front derailleur specimen comparison — 2026-11-18
 
