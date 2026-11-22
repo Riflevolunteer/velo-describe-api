@@ -1,5 +1,189 @@
 # Ritchey catalogs processed so far
 
+## 1996 and 1997 rim pages — applied and validated 2026-11-22
+
+Reviewed [1996 scans 20](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/ritcheycomponents1996_20.jpg)
+and [21](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/ritcheycomponents1996_21.jpg)
+(source **516**, 1996 season attributed, ©1995), and the 1997 maker catalogue
+[printed pp. 5–6 / PDF pp. 6–7](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1997/1997RitcheyComponents.pdf#page=6)
+(source **517**). The 27 rim listings yielded 13 updates and 11 additions.
+Aero Road Pro **10190** and OCR Road Pro **10191** already had the relevant
+1997 evidence. Kept the single unassigned Vantage offering below in the
+catalogue notes. The pages' Logic spokes and the next page's wheelsets were
+outside this rim intake.
+
+- The 1996 Vantage Pro WCS, Vantage Comp and Vantage Sport extend the
+  observed listings through 1996. Vantage Comp Road already reached 1996
+  and gains the 32/36-hole and eyelet specification for that edition.
+  The earlier Vantage sizes and drilling options remain in the descriptions.
+- The 1997 catalogue describes a streamlined Rock range. The seven distinctly
+  labelled 1996 Rock offerings retain their model identifiers, dimensions and
+  eyelet details. The catalogue provides no individual 1996-to-1997 tier
+  crosswalk. The 1996 table lists both 26in and 700C for 450CE and 490C,
+  while the accompanying copy discusses the 700C variants. For SCX the
+  table gives 23.5 mm and the prose rounds it to 23 mm.
+- The nine 1997 Rock/OCR matches agree by model, profile and construction
+  with the corresponding 2000 listings. Later widths, weights and drillings
+  remain attributed to 2000. The conventional Rock Comp 700 and offset
+  OCR Comp 700 are separate products, both listed for Europe in 1997.
+  [Guida '99 p. 106](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_17_main_image.jpg)
+  also lists the distinct 410 g Aero and OCR WCS road rims.
+- **Vantage Pro Aero (Road), 1996 scan 21.** The maker's table lists 700C
+  and 26in (ISO 571), 19 mm, 28/32/36 holes and no eyelets, at 395 g
+  (700C) and 360 g (26in). The decal reads Vantage Pro Road. The later
+  **10190** shares the centred aero profile, but the known 700C listing
+  weighs 400 g and the later pages give no crosswalk or corresponding
+  26in option. Leave the Vantage Pro Aero listing unassigned.
+
+### New rim records
+
+| ID | Model | Catalogue page | Attested years | Description |
+| --- | --- | --- | --- | --- |
+| 12239 | Ritchey Rock 395E | 516, scan 20 | 1996–1996 | 6061-T6 aluminium triple-box rim. 26in cross-country race rim, 22mm wide, 28/32/36 holes, stainless eyelets, 395g. |
+| 12240 | Ritchey Rock 415E | 516, scan 20 | 1996–1996 | 6061-T6 aluminium triple-box rim. 26in race rim, 22mm wide, 32/36 holes, stainless eyelets, 415g. |
+| 12241 | Ritchey Rock 440 | 516, scan 20 | 1996–1996 | 6061-T6 aluminium triple-box rim. 26in race and touring rim, 22mm wide, 32/36 holes, no eyelets, 440g. |
+| 12242 | Ritchey Rock SC | 516, scan 20 | 1996–1996 | 6061-T6 aluminium triple-box rim. 26in rim with thicker walls, 22mm wide, 32/36 holes, stainless eyelets, 440g. |
+| 12243 | Ritchey Rock SCX | 516, scan 20 | 1996–1996 | 6061-T6 aluminium triple-box rim. 26in heavy-duty rim, 23.5mm wide in the maker's table, 32/36 holes, no eyelets, 460g. |
+| 12244 | Ritchey Rock 450CE | 516, scan 20 | 1996–1996 | 6061-T6 aluminium triple-box rim. 26in and 700C in the maker's table. Cross/touring rim, 22mm wide, 32/36 holes, stainless eyelets, 450g. |
+| 12245 | Ritchey Rock 490C | 516, scan 20 | 1996–1996 | 6061-T6 aluminium triple-box rim. 26in and 700C in the maker's table. Cross/touring rim, 22mm wide, 32/36 holes, no eyelets, 490g. |
+| 12246 | Ritchey OCR Road WCS | 517, p. 5 | 1997–1999 | Off-centre rear aero road rim. 1997: machined walls, blue anodised centre, reinforcing eyelets, deep sidewalls. 1999: 700C, 6082 aluminium, 19mm wide, 32/36 holes, 410g. |
+| 12247 | Ritchey OCR Road Comp | 517, p. 5 | 1997–1997 | Off-centre rear aero road rim, with reinforced centre. The maker's catalogue shows the asymmetric road profile. |
+| 12248 | Ritchey Aero Road WCS | 517, p. 6 | 1997–1999 | Centred aero road rim. 1997: machined walls, blue anodising, reinforcing eyelets, deep sidewalls. 1999: 700C, 6082 aluminium, 19mm wide, 32/36 holes, 410g. |
+| 12249 | Ritchey Rock Comp 700 | 517, p. 6 | 1997–1997 | 700C centred triple-box cross/touring rim with reinforced centre. Listed for Europe only in 1997. |
+
+### Existing rim records and restoration values
+
+The ranges and source references below are the values before and after this
+intake. To restore existing rows, use the IDs and original values below
+with guards on the applied values. Review any newer references before
+removing an inserted rim.
+
+| Component | Old range / source | Applied range / source | Previous description |
+| --- | --- | --- | --- |
+| 8392 Ritchey Vantage Pro "WCS" | 1992–1992 / 149 | 1992–1996 / 516 | `New 1992 top rim, "V" cross-section, 395g. 26", 28/32/36 holes, approx. 23mm wide / 17mm inner. Pro-class racing; for MegaBite Z-Max 2.1/2.35 and Racing K. Silver or Duranomic grey.` |
+| 8393 Ritchey Vantage Comp | 1989–1992 / 150 | 1989–1996 / 516 | `"V" cross-section competition rim; won the 1989 NORBA Worlds and 1990 World Championship medals. 26" (24" added 1992), 415g (26"), 28/32/36 holes, 23/17mm outer/inner. Silver or Duranomic grey.` |
+| 8395 Ritchey Vantage Sport | 1990–1992 / 150 | 1990–1996 / 516 | `Sport/touring rim with oversize twin side pockets for torsional rigidity. 26", 24" and 20" (BMX), 495g (26"), 32/36 holes, approx. 25/19mm. For Force and Quad tyres. Silver or Duranomic grey.` |
+| 8397 Ritchey Vantage Comp Road | 1991–1996 / 357 | 1991–1996 / 516 | `New for 1991: road "V" rim for racing, criteriums and triathlon. 700c 420g, 26" (triathlon) 380g, 28/32/36 holes, 20/14mm. For Road Force tyres. Silver or Duranomic grey.` |
+| 11272 Ritchey Mountain OCR WCS | 2000–2000 / 411 | 1997–2000 / 517 | `Rear off-center triple-box rim;559-17,32h,22.5mm width,12mm brake track;440g;Machined walls,eyelets,blue.` |
+| 11273 Ritchey Mountain Rock WCS | 2000–2000 / 411 | 1997–2000 / 517 | `Conventional front/rear triple-box rim;559-17,32h,22.5mm width,12mm brake track;440g;Machined walls,eyelets,blue.` |
+| 11274 Ritchey Mountain OCR Pro | 2000–2000 / 411 | 1997–2000 / 517 | `Rear off-center triple-box rim;559-17,32h,22.5mm width,12mm brake track;440g;Sanded walls,eyelets,black.` |
+| 11275 Ritchey Mountain Rock Pro | 2000–2000 / 411 | 1997–2000 / 517 | `Conventional front/rear triple-box rim;559-17,32h,22.5mm width,12mm brake track;445g;Sanded walls,eyelets,black.` |
+| 11276 Ritchey Mountain OCR Comp | 2000–2000 / 411 | 1997–2000 / 517 | `Rear off-center triple-box rim;559-17,32h,22.5mm width,12mm brake track;435g;Sanded walls,no eyelets,silver.` |
+| 11277 Ritchey Mountain Rock Comp | 2000–2000 / 411 | 1997–2000 / 517 | `Conventional front/rear triple-box rim;559-17,32h,22.5mm width,12mm brake track;440g;Sanded walls,no eyelets,silver.` |
+| 11279 Ritchey OCR Pro 700 | 2000–2000 / 411 | 1997–2000 / 517 | `700C off-center rear trekking rim;622-17,32h,605mm ERD,22.5mm width,12mm brake track;sanded,eyelets,500g,silver.` |
+| 11280 Ritchey Rock Pro 700 | 2000–2000 / 411 | 1997–2000 / 517 | `700C front/rear trekking rim;622-17,32h,605mm ERD,22.5mm width,12mm brake track;sanded,eyelets,495g,silver.` |
+| 11281 Ritchey OCR Comp 700 | 2000–2000 / 411 | 1997–2000 / 517 | `700C off-center rear trekking rim;622-17,36h,605mm ERD,22.5mm width,12mm brake track;sanded,no eyelets,500g,silver.` |
+
+Exact readback verified the 24 changed rows and all nine existing Ritchey rim
+bike links, with no new date conflict on those links. The retry affected zero
+rows for both editions. The simulation and live before-and-after comparison
+agreed over 118 loaded catalogue CSVs and 24,829 specs. The exact and
+near-duplicate reports found no Ritchey rim pairs. Both transactions reused
+the existing source records, and neither changed bike mappings.
+
+## 1996 and 1997 maker catalogue review — 2026-11-22
+
+Focused review of the stem, seatpost, headset, road rim, saddle and bottom
+bracket evidence for the existing Ritchey worklist. The [1996 archive](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/components.php)
+labels the edition 1996 and the back cover prints ©1995. The 36-page
+[1997 components catalogue](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1997/1997RitcheyComponents.pdf)
+explicitly names its 1997 season on PDF p. 2 and lists international
+distributors. Page references below use printed pagination with the PDF page
+given where different. Registered the previously unlisted 1996 and 1997 maker
+editions as sources **516** and **517**, respectively. The review led to
+four existing-row corrections.
+
+| ID | Previous value | Applied catalogue evidence correction |
+| --- | --- | --- |
+| **10169** Expert Road | 1996–1999, source 357. Description gives the 1999 250 mm offering only. | **1994–1999** with the earlier archive-attributed model year qualified in these notes. Record the maker's 240 mm offering and preserve the later 250 mm, 220 g and Speedblast listing. |
+| **10402** Fuzzy Logic Threadless | 1999–1999, source 353. Lower rollers, upper balls, 1in/1⅛in, 86/92 g. | **1996–1999** for the early model. Record the maker's 74/94 g in 1996 and 1/8in upper balls in 1997. Retain the 1999 weights and the existing title. |
+| **10190** Aereo Pro Road | 1999–1999, source 353. 700C, 6082 alloy, 19 mm, 32/36 holes, 400 g. | **Ritchey Aero Road Pro, 1997–2000**. Describe the centred road rim that Ritchey recommends for front wheels. Preserve the 1999 specifications by edition. |
+| **10191** OCR Pro Road | 1999–1999, source 353. 700C, 6082 alloy, 19 mm, 32/36 holes, 400 g. | **Ritchey OCR Road Pro, 1997–2000**. Describe the rear-only off-centre road rim and its 1997 eyelets and sanded walls. Preserve the 1999 specifications by edition. |
+
+- **Expert Road.** [1994 p. 8](https://www.bikecatalogs.com/download/4032#page=8)
+  and [1996 scan 11](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/ritcheycomponents1996_11.jpg)
+  give the same Expert Road name, 26.2–27.2 mm diameters, 240 mm length and
+  220 g. The maker describes a 40 mm clamp in 1996. [Guida '96 p. 116](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_96_-_componenti_scan_13_main_image.jpg)
+  prints the exact Expert Road name, 6061-T6, 26.6–27.2 mm, 240 mm and 220 g.
+  [Guida '99 p. 101](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_13_main_image.jpg)
+  gives 6061-T6, 27.0–27.2 mm, 250 mm, 220 g and Speedblast. The two guides
+  date the size difference on the same named model. The 1994 page's general
+  2014-T6 introduction does not establish the Expert Road's alloy for that
+  season. The 1994 maker lists Comp and Expert separately. The 1997 p. 26
+  Expert page describes Force Directional butting and a wide cradle without
+  sizes. The short Comp 10638 and early FD 8407/8408 identities still need a
+  crosswalk, including the 2000 Comp Road generation.
+- **Fuzzy Logic.** [1996 scan 17](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/ritcheycomponents1996_17.jpg)
+  lists the untiered FuzzyLogic threadless at 74 g (1in) and 94 g (1⅛in),
+  with a needle-roller lower bearing and an upper ball cage shown. The 1997
+  catalogue [p. 22 / PDF p. 23](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1997/1997RitcheyComponents.pdf#page=23)
+  explicitly specifies 1/8in upper balls, lower needles and a notched
+  compression ring. [Guida '99 p. 142](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_49_main_image.jpg)
+  gives the same hybrid layout with 86/92 g. The [2000 catalogue p. 23 / PDF p. 9](https://bikalog.org/api/view/Ritchey/2000/ritchey00.pdf#page=9)
+  gives **5/32in upper balls** for both later tiers, with Pro at 103/110 g
+  and Comp at 112/120 g. Keep the early row separate from both later
+  specifications. The separate Scuzzy Logic uses cartridge bearings.
+- **Road rims.** In 1997 [p. 5 / PDF p. 6](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1997/1997RitcheyComponents.pdf#page=6)
+  draws the offset rear OCR Road Pro, and
+  [p. 6 / PDF p. 7](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1997/1997RitcheyComponents.pdf#page=7)
+  names and draws the separate centred Aero Road Pro. The 1996 archive's
+  [scan 21](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/ritcheycomponents1996_21.jpg)
+  gives a 395 g, 19 mm 700C **Vantage Pro Aero** without a direct model
+  crosswalk. [Guida '99 p. 106](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_99_-_componenti_scan_17_main_image.jpg)
+  calls the two Pro rims Aereo Pro Road and OCR Pro Road and lists 400 g
+  for each. The [2000 catalogue pp. 14–15 / PDF p. 6](https://bikalog.org/api/view/Ritchey/2000/ritchey00.pdf#page=6)
+  still offers both 700C road models. Its prose and profiles agree with 1997
+  and establish the rear OCR versus the centred Aero. The table puts `R` on
+  Pro Aero and `F` on Pro Aero OCR, contrary to the prose and profiles. It
+  also lists 430/440 g, and a similar 440 g Pro Aero line stands under
+  Disc-OCR. Preserve that inconsistency here and avoid assigning those
+  weights or wheel positions to the earlier 400 g configurations.
+- **ForceLite Road.** The [1994 p. 5](https://www.bikecatalogs.com/download/4032#page=5)
+  and [1996 scan 5](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/ritcheycomponents1996_05.jpg)
+  carry the same ForceLite-branded quill photo. The 1994 page separately
+  lists Force Comp Road at 250 g and ForceLite Road at 260 g (both 110 mm).
+  The 1997 [stem page, p. 21 / PDF p. 22](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1997/1997RitcheyComponents.pdf#page=22)
+  shows CompLite-branded quills with a reinforcement insert and shorter bolt.
+  The [1991 maker p. 9](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1991/1991RitcheyComponents.pdf#page=9)
+  lists the untiered FD Road at 260 g and shows a group of road stems with
+  no individually identified FD or ForceLite example. The wording and photo
+  confirm ForceLite as a marketed model. A direct link to **8402** is still
+  unverified, so no stem insert or merge is proposed in this review.
+- **Pro bottom bracket and Vector saddle.** The 1996 SuperLogic table on
+  scan 16 lists 103 mm in titanium only. The 1997 Pro is nickel-chromium
+  steel with no stated length. The 103 mm steel **10295** therefore still
+  needs an identified bearing and cup assembly. The 1996 cover shows a
+  Vector Plus Rail underside without a rail material label, and the 1997
+  saddle page groups Vector and ProLite under the same series. Guida '96
+  p. 152 gives **10649** as Vector Comp with steel rails, 280 g, without a
+  picture of that model. The original shell and rail match remains open.
+
+### Application and validation
+
+The approved transaction added the two catalogue source records and updated
+four existing components. Expert Road **10169** now references the 1994
+maker source **485**. Fuzzy Logic **10402** references **516** and the two
+road rims **10190/10191** reference **517**. Both rim search strings use
+the new maker titles. The descriptions retain edition-specific details from
+sources 353 and 357.
+
+Exact live readback verified the titles, search strings, descriptions, dates
+and provenance, with zero bike links on the four rows. The identical retry
+affected zero rows. The before-and-after generator comparison across 118
+loaded catalogue CSVs and 24,829 specs had identical results.
+
+For restoration, use the previous year ranges and sources in the table.
+The prior rim titles and search strings were `Ritchey Aereo Pro Road` and
+`Ritchey OCR Pro Road`. The previous descriptions were:
+
+- **10169:** `6061-T6 aluminium alloy; dia 27.0-27.2 mm; length 250 mm; also Speedblast colour; 220g`
+- **10190:** `Alloy 6082; 700; 19 mm; 32-36 holes; ground sides; 400g`
+- **10191:** `Alloy 6082; 700; 19 mm; 32-36 holes; sides ground only on rear rim; 400g`
+- **10402:** `Aluminium alloy; 1" and 1-1/8"; for threadless steerer, roller cage on lower cone and balls on upper cone; 86 (1"); 92 (1-1/8") g`
+
+Guard restoration by component ID, specimen UUID and the applied values.
+Remove source 516 or 517 only after checking all current references.
+
 ## ProLite / Pro bottom bracket and Vector naming research — 2026-11-20
 
 Research-only follow-up to the identity holds below. No dates, descriptions,
@@ -12,8 +196,8 @@ provided previously unprocessed maker pages for these specific questions:
 
 - [Components attributed 1996](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/components.php):
   archive pages10 (saddles),16 (bottom brackets) and17 (headsets) visually read;
-  page15 checked for adjoining text. The year here is the archive attribution,
-  not a newly verified imprint. This is not a full catalogue reconciliation.
+  page15 checked for adjoining text. The later review above verified the
+  ©1995 imprint and retains the archive's 1996 season attribution.
 - [1997 Components PDF](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1997/1997RitcheyComponents.pdf):
   introduction PDF p2 expressly discusses the1997 range; printed p24/PDF25
   bottom brackets, p25/PDF26 saddles and p26/PDF27 seatposts inspected.
@@ -23,16 +207,17 @@ provided previously unprocessed maker pages for these specific questions:
   [registered mirror](https://www.bikecatalogs.com/download/4032); the old
   individual-image links under the archive's `oldsite` path returned404.
 
-No matching1996/1997 maker source is registered in the live source list.
-Existing sources353/357 are the separate Guida1999/1996 publications;485 is
-the earlier maker edition attributed1994. Research did not create source rows.
+Neither maker edition was registered during this initial review. The later
+application above registered both. Sources 353 and 357 are the separate
+Guida publications, and 485 is the earlier maker edition attributed to 1994.
 
 ### Bottom brackets: distinguish ProLite from SuperLogic before matching Pro
 
 The [1996 maker bottom-bracket page](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/ritcheycomponents1996_16.jpg)
-lists **SuperLogic and ProLite simultaneously**. SuperLogic's illustration
-shows ball cages and races on the spindle shoulders, whereas ProLite is
-explicitly described as a separate sealed-cartridge-bearing design. Both are
+lists **SuperLogic and ProLite simultaneously**. The later visual recheck
+identified the integrated bearing and cup units beside SuperLogic. The loose
+ball cages on the right belong with the adjacent Logic illustrations.
+ProLite is explicitly described as a separate sealed-cartridge-bearing design. Both are
 offered with steel or titanium spindles; spindle material alone does not select
 the family. Steel SuperLogic is listed at214g for107mm; steel ProLite at198g
 for107mm, with107/110/113/120mm steel options. Retain these as edition-specific
@@ -220,8 +405,9 @@ specifications were transcribed before DB comparison.
 | Vector base saddle /9 |10649 Vector Comp |Concurrent1996 maker Vector / guide Vector Comp naming now verified above; compare earlier shell/rail construction before enrichment or a new row. No demonstrated chronological rename. |
 | Logic ProLite steel BB /11 |10295 Pro |195g,107/110/113/120mm versus guide Pro103mm. New maker evidence distinguishes ProLite/SuperLogic and puts Pro in SuperLogic; identify103mm Pro's bearing/cup arrangement before matching. See research above. |
 
-Later Fuzzy Logic Pro/Comp10402,2000 Comp Road and Pro Aero/Aero OCR10190/10191
-questions in the2000 section remain open; this scan supplies no rim evidence.
+The [1996/97 maker review above](#1996-and-1997-maker-catalogue-review--2026-11-22)
+supersedes the Expert Road, Fuzzy Logic and road rim holds with targeted
+corrections. The 2000 Comp Road and older untiered FD crosswalks remain open.
 
 ### Inserted new rows
 
@@ -696,7 +882,11 @@ SpeedMax 11252, whose range is 1996–2000. Pages refer to printed pagination.
 | 11305 | Cranksets | 25 | Ritchey Logic Compact Mountain |
 | 11306 | Shifters | 25 | Ritchey 2x9 Racing System, Pro Race Kit |
 
-### Unresolved identities — unchanged
+### Unresolved identities at the 2000 reconciliation
+
+The [1996/97 maker review](#1996-and-1997-maker-catalogue-review--2026-11-22)
+supplies the bearing and road rim evidence used to revise the Fuzzy Logic
+and Aero/OCR proposals. The table below records the original holds.
 
 | Model | Existing candidates | Evidence needed |
 |---|---|---|
