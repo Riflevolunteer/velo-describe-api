@@ -78,6 +78,8 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/ringle.md](known-catalogs/ringle.md) — Ringlé 1995 Racing Components; source501, applied/validated, separate road Zooka
 - [known-catalogs/paul.md](known-catalogs/paul.md) — Paul Powerglide/Love Lever variants; sources502/503, applied/validated, existing dates preserved
 - [known-catalogs/ukai.md](known-catalogs/ukai.md) — Ukai / Yanagihara Industrial rims (1 entry, 1980)
+- [known-catalogs/hsin-lung.md](known-catalogs/hsin-lung.md) — Hsin Lung Priest handlebar, Rivendell No.4 (source 490)
+- [known-catalogs/willow.md](known-catalogs/willow.md) — Willow chainrings, Rivendell No.4 (source 490)
 - [known-catalogs/edco.md](known-catalogs/edco.md) — EDCO touring group (source 409); September 1994 Renn-Gruppe applied and validated (source 486)
 
 When a new brand shows up for the first time, create

@@ -1,5 +1,23 @@
 # Nitto catalogs processed so far
 
+## MT-5 1986 fitment evidence — 2026-11-22, applied
+
+The previously registered [1986 Koga-Miyata brochure](https://www.koga.com/files/7/0/4/Koga_Brochure_1986.pdf)
+printed/PDF p.18 specifies a Nitto MT-5 forged aluminium ATB stem on the
+Ridge Runner. The MT-5 component **8586** was dated 1987–1989 (source
+159), yet the loaded 1986 Miyata Ridge Runner spec **18972** already linked to
+it. Its description also identifies a forged alloy MTB stem; this is a
+strong earlier availability attestation, not a proven introduction date.
+Applied **year_from 1987 → 1986** and **source_ref 159 → 451**, retaining the
+1989 end date and maker-catalogue description. The 1986 and 1987 Ridge Runner
+links **18972/22279** remain unchanged. Source 159 is Nitto Handle Works
+catalogue No. 11 (1989); source 451 is the 1986 Koga-Miyata brochure. Restore
+the old year and source to reverse the correction. Exact readback passed, the
+guarded SQL rerun affected zero rows, and the whole-database quality check
+returned zero errors. The generator/live comparison matched the baseline across
+118 catalogues: no gained or changed mappings, and the same 15 pre-existing
+Huret lost proposals. Nitto's near-duplicate report found no candidates.
+
 ## Bike fitment evidence retained from the 2026-11-05 linking review
 
 - 1986 Miyata Ridge Runner / Terra Runner `NITTO 804 AA Alloy` specs link to

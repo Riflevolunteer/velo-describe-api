@@ -6162,8 +6162,101 @@ Recovered [Rivendell catalogue No.4, archive-labelled Summer1998](https://notfin
 
 Read OCR contents and visually checked cover, printed p.33/PDF35 and printed p.57/PDF66. Readable Nitto Technomic Deluxe stem panel:26mm clamp,7–12cm,397g at10cm, cold-forged aluminium/aluminium wedge. MKS page names Sylvan295g, Nuevo Keirin315g, Platform300g and Touring/Cyclocross390g, with product drawings/descriptions. OCR also identifies Pearl/Aero stems, named derailleurs/shifters, saddles/posts, brakes, chains/freewheels and cranks/BBs. Promising new retailer evidence for existing components and1998 availability, not a demonstrated solution to older Nitto55F/B105F or MKS AR-Road/QR-K1/G-5000 gaps. A scoped live NULL-link query confirms those older named gaps still exist; do not map later catalogue offerings by maker alone. No assertion of a full99-page review, exact new-row count or guaranteed links. Accessories, clothing, frames, tools and general advice can be excluded.
 
-The Nitto/MKS component pages were subsequently reconciled in the scoped pass below. Other makers remain outside that pass; no further section has been queued. TA's newly recovered clearer Tevano copy is recorded in ta.md; do not confuse its1983 filename with a verified edition date. Exhausted Brügelmann1990/1992 and TA/Stronglight1990s hunts yielded no newly verified ingest-ready source in this triage; existing holder-only leads remain unchanged. Acquisition triage itself made no DB writes or source inserts. Temporary files and the downloaded PDF were removed after the subsequent scoped reconciliation was validated; the source URL above remains the recovery path. The earlier TA reconciliation is recorded in ta.md.
+The Nitto/MKS component pages were subsequently reconciled in the scoped pass below; a later pass reconciled the other component sections. TA's newly recovered clearer Tevano copy is recorded in ta.md; do not confuse its1983 filename with a verified edition date. Exhausted Brügelmann1990/1992 and TA/Stronglight1990s hunts yielded no newly verified ingest-ready source in this triage; existing holder-only leads remain unchanged. Acquisition triage itself made no DB writes or source inserts. Temporary files and the downloaded PDF were removed after the subsequent scoped reconciliation was validated; the source URL above remains the recovery path. The earlier TA reconciliation is recorded in ta.md.
 
+**Remaining-source spot check, 2026-11-22:** retrieved the same PDF and visually
+checked printed p.42/PDF p.44. It offers a **Sachs Centera long-cage rear
+derailleur**, claimed 32T maximum, at least 36T wrap and 311g. A live title
+search found no Centera/Cent(e)ra/Centra model row; a complete maker/code and
+alias reconciliation is still needed before treating it as a new identity.
+No loaded bike specification was identified by that name. Printed p.39 also
+offers several front derailleurs, including explicitly old stock, so the
+catalogue's 1998 sale date must not be treated as a production date. These
+sections were outside the Nitto/MKS pass; this spot check does not assert full
+catalogue reconciliation or a new bike link. No DB changes were made.
+
+
+## Rivendell No.4 remaining components — applied and validated 2026-11-22
+
+The remaining in-scope pages were inventoried against the full live component
+inventory after the earlier Nitto/MKS pass. The approved SQL was applied and
+validated. Source 490
+already exists. PDF/printed pagination diverges after unnumbered order-form
+inserts. Pages checked: PDF30,38–44,54–63,68–76,87–91; advice, clothing,
+accessories, order forms and mixed-configuration wheel builds are out of scope.
+Previously processed Nitto/MKS entries were not re-added.
+
+Applied additions, with 1998 as the observed retail availability, not a
+claimed production boundary:
+
+| Printed page / PDF | Proposed component | Evidence and qualification |
+| --- | --- | --- |
+| 28 / 30 | Hsin Lung Priest handlebar | Maker named by seller, 54cm, 25.4mm clamp, 360g; new Hsin Lung brand. No inferred link to Cinelli Priest 2817 or Bianchi H.L. bars. |
+| 42 / 44 | Sachs Centera long-cage rear derailleur | 32T largest sprocket, at least 36T wrap, 311g. No maker code printed; retain long-cage qualification and do not assume a crosswalk to other Sachs/SRAM variants. |
+| 50 / 59 | Vitus Waybacker seatpost | Retailer name, forged aluminium, 27.2 x 220mm, 282g. Existing [Vitus aero 5943 specimen](https://velobase.com/Pages/ViewComponent.aspx?Enum=105&ID=b06936de-8797-411c-8ed0-2a704814345c) has a special 24.3mm shaft, distinct from this post; 5944 is carbon. |
+| 65 / 74 | Willow chainrings | New Willow brand; only the table's W entries, machined 7075-T6, with 74/110/130/135mm BCD and the printed tooth options. The separate Willow Triplizer is held against existing Merz 1269 pending an identity crosswalk. |
+| 79–80 / 88–89 | Panaracer Pasela tyre family | 700x35 wire or Kevlar and 26x1.25 Kevlar. Two listed sample weights are not mapped to bead types. |
+| 81 / 90 | Sun CR18 rim | Silver triple-box rim, 22.5mm outside/17.5mm inside width, 26in or 700C, 36/40 holes. |
+
+Applied updates: Ritchey Logic crank **1721**, 1991–1996 → 1991–1998,
+adds the listed 170/172.5/175mm options and Q150–151 while retaining the
+independent 714g measurement and earlier edition details; Ritchey Cross-Bite
+**8391**, 1992–1996 → 1992–1998, adds the 26x1.9 Kevlar offering and 604g
+retailer sample without overwriting earlier steel/Kevlar figures. Both use
+source 473 previously and now use source 490. Their exact old descriptions,
+dates, the original source citation and a restoration plan are recorded below.
+Source 490's citation was expanded to the additional
+component pages; no component title or existing bike link changes were applied.
+
+Do not equate uncoded Shimano/SunTour/Campagnolo/Huret variants by retail name;
+the Simplex #5500 and SunTour XC Pro Shortie have conflicting in-page weights.
+SunTour bar-ends, Dura-Ace front and other products are explicitly old stock;
+1998 sale is not proof of continuing manufacture. SunTour Alpha 5000 Triple,
+Panaracer Category Pro/Cat 1, generic Phil Wood hubs, SRAM/Sachs P51/PC51, and
+Vitus/retailer aliases require distinguishing crosswalks. No named candidate
+bike specifications were found; Nitto's
+unrelated existing links are unchanged. Baseline: zero quality errors, and
+118-catalogue generator/live comparison shows the established 15 Huret lost
+proposals with no gains or changes. Scoped near-duplicate searches for Sachs,
+Sun, Panaracer, Vitus and Ritchey found no candidates. No database writes were
+made during preparation. Applied results: new brand 768 Hsin Lung, 769 Willow;
+new components 12255 Sachs Centera, 12256 Hsin Lung Priest, 12257 Sun CR18,
+12258 Panaracer Pasela, 12259 Vitus Waybacker and 12260 Willow chainrings.
+Exact component and source readback matched, and the identical SQL rerun
+affected zero rows. Whole-database quality reports zero errors. Generator/live
+comparison across 118 catalogues reproduced the baseline: zero gained or
+changed mappings and the same 15 pre-existing Huret lost proposals. There are
+no existing bike links to the eight affected components. Near and parenthetical
+duplicate reports for Sachs, Hsin Lung, Sun, Panaracer, Vitus, Willow and
+Ritchey produced no candidates; group reports found no affected candidates.
+The existing unrelated Ritchey WCS hub review candidate remains a review flag.
+
+Additional source limits: the retailer's P51 chain has a Power Link and is
+called an M55 replacement, but the P51/PC51 crosswalk to SRAM 11843 is not
+established. Rivendell's 120mm Ritchey Logic Pro/Comp illustration does not
+identify the 103mm Pro assembly 10295. The B.17 retailer-specific steel and
+titanium saddles cannot automatically be identified with generic B.17 rows;
+the 26x1.25 Avocet and 700x32/35 Road Slick do not supply 20/K20/30 codes.
+The Paris-Roubaix tubular is described as Foxonall/Clement-labelled but does
+not establish a crosswalk to earlier Clement models. A generic SunTour XC9000
+front hub is explicitly older stock and its QR/bolt version is unspecified.
+
+Restoration values: 1721's old description was `Sugino-made cold-forged
+duralumin MTB crank, hidden pin; 170-180mm, Q151, 74/110BCD. 1991/92:
+24-36-46 or 26-36-48, 650g; measured 175mm complete 714g. 1995/96 Logic
+Mountain: 26-36-46, 170/175mm, 712g. Black added 1992.`; old dates
+1991–1996, source 473. 8391's old description was `Hybrid tyre with smooth
+centre and inverted-jaw shoulders. 1992:26x1.5/700x38,450g,60tpi. 1995/96
+Kevlar:26x1.1 330g,700x38 430g; steel:26x1.1 420g,26x1.9 490g,700x38 450g.`;
+old dates 1992–1996, source 473. Source 490's prior citation was
+`https://notfine.com/rivreader/Catalogs/Rivendell%20Catalog%201998%20No%204%20Summer.pdf (PDF23-29,33-36,57-58,66; printed pp21-27,31-34,48-49,57; 1998 base text; later price overlays undated)`.
+Restore these values if reversing; delete the new rows or brand/category
+associations only after checking later references. Six new UUIDs, in ID order
+12255–12260: `ed2daf5b-e6bc-11f1-a2df-02fea3763e8d`,
+`ed3031e7-e6bc-11f1-a2df-02fea3763e8d`, `ed3274ab-e6bc-11f1-a2df-02fea3763e8d`,
+`ed34cd33-e6bc-11f1-a2df-02fea3763e8d`, `ed371198-e6bc-11f1-a2df-02fea3763e8d`,
+`ed3acef5-e6bc-11f1-a2df-02fea3763e8d`. Removed task-only SQL, scan and
+inventory after validation; the source URL above remains available.
 
 ## Rivendell No.4 Nitto/MKS reconciliation — 2026-11-20 (applied and validated)
 
@@ -6223,4 +6316,4 @@ New identities:
 
 Post-load duplicates: Nitto plain report empty; MKS retains its one existing generation pair; both near/code-name reports empty. Full generator/live comparison is exactly unchanged, including every finding:23,800 compared,23,785 unchanged,15 pre-existing lost proposals, zero gained/changed/missing/ambiguous identities. Existing bike-link counts remain unchanged; new components have zero links. Whole-DB quality has zero errors and2,071 review flags (previous2,073): incomplete dates1690→1689 and linked date conflicts329→328; broad freewheel35 and description-at-limit19 remain unchanged. All date moves are recorded above; no later `year_from` revision.
 
-Removed the completed TODO action. Source/page URLs, model identities, old/new specifications/dates/source refs, measured values and unresolved decisions remain here and in the brand cross-references. Removed task-owned SQL/proposal/review/inventory, snapshots/reports, helper scripts, text/renders, specimen HTML/photo and downloaded Rivendell PDF after validation. No other maker section is queued; recover the linked source if a future scoped task is chosen.
+Removed the completed TODO action. Source/page URLs, model identities, old/new specifications/dates/source refs, measured values and unresolved decisions remain here and in the brand cross-references. Removed task-owned SQL/proposal/review/inventory, snapshots/reports, helper scripts, text/renders, specimen HTML/photo and downloaded Rivendell PDF after validation. Other maker sections were subsequently reconciled above.

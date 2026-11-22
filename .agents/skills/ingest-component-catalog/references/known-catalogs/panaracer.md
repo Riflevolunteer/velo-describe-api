@@ -1,5 +1,12 @@
 # Panaracer catalogs processed so far
 
+## Rivendell No.4, 1998 — applied and validated 2026-11-22
+
+Added Pasela 12258 from the retailer's 700x35 and 26x1.25 offerings, source
+490; 1998 is retail availability. The Category Pro/Cat 1 listing remains
+unassigned because its name and construction do not identify an existing
+variant. [Catalogue evidence](cross-catalog-notes.md#rivendell-no4-remaining-components--applied-and-validated-2026-11-22).
+
 ## Timbuk II — Raleigh lightweight catalogue 1989 (2026-11-09)
 
 - User-approved bike-fitment evidence pass, not a full Panaracer range catalogue. Added **10973 Panaracer Timbuk II (26 x 2)**, brand 650, Tyres 23, group NULL; UUID `4eb9f4a7-b17f-47aa-aeeb-ace172653a7b`, source_ref **323** (1989 Raleigh catalogue).

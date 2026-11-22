@@ -1,5 +1,12 @@
 # Ritchey catalogs processed so far
 
+## Rivendell No.4, 1998 — applied and validated 2026-11-22
+
+The retailer's Logic triple crank and Cross-Bite tyre extended the observed
+availability of 1721 and 8391 through 1998, retaining earlier maker facts and
+measured weight. The Cross-Bite listing specifies a 26x1.9 Kevlar option and
+a 604g retailer sample. [Catalogue evidence and old values](cross-catalog-notes.md#rivendell-no4-remaining-components--applied-and-validated-2026-11-22).
+
 ## 1996 and 1997 rim pages — applied and validated 2026-11-22
 
 Reviewed [1996 scans 20](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1996/ritcheycomponents1996_20.jpg)
