@@ -1,5 +1,81 @@
 # Paul Components catalogs processed so far
 
+## 1996 maker catalogue remaining components — applied and validated 2026-11-22
+
+The 15 posted images were inventoried after the earlier Love Lever/Powerglide
+review; the catalogue internally discusses changes for 1996, but the archive
+does not establish physical-edition completeness. The approved changes were
+applied and validated; task-only SQL, scans, inventory and simulation were
+removed afterward.
+Source 502 already existed and its citation was expanded from printed p.8
+to pp.3–10. Proposed new component records use the 1996 offering as an
+availability attestation, not a proven introduction or production endpoint.
+
+| Printed pages | Added component | Evidence and limits |
+| --- | --- | --- |
+| 3–4 | Powerglide medium cage; Powerglide short cage | Maker separately offers long, medium and short; existing 4369/4370 are independently documented long-cage specimens. Medium is listed as 175g and table says 32 teeth capacity without explaining whether wrap or max sprocket. Short has no separately stated weight/capacity. No chronology or cosmetic crosswalk is inferred. |
+| 3–4 | 409 front derailleur | 6061-T6 body/links, stainless cage, brass pivot bushings; top/bottom pull and three clamp sizes; 100g listed. The table says 28 teeth capacity without specifying its basis. Spring 1996 availability is printed. |
+| 5–6 | Stoplights and Stoplight NC | Both have 6061-T6 arms; titanium versus stainless anchor/eyebolts. Maker lists 95g without pads versus 125g; pair/individual weighing basis is not stated. They are separately named offerings. |
+| 7 | Crosstop II brake | Suspension-oriented brake with DeAlie linkage and revised serviceable brass pivot bushings; 130g listed, weighing basis unspecified. |
+| 9–10 | F-Hub and F-Hub DDT front hubs | 100mm spacing, 28/32/36 holes, 140g and 190g respectively; regular 19mm hollow axle/QR versus 1996 revised oversized DDT/titanium bolt. DDT axle is 25mm in the table and 25.4mm in prose; the conflicting figures are preserved. |
+
+The Love Lever on p.8 is already **12200**; its LP counterpart is separately
+supported by source 503. The planned crank on p.11 explicitly was not ready;
+p.12 binders, cable carriers and brake booster, p.13 clothing and p.14 dealer
+list are outside component scope. No earlier printing was compared, and the
+catalogue cannot establish what was dropped.
+
+The applied SQL added eight components, category associations for Brakes,
+Front Derailleurs and Hubs, and an expanded citation for source 502. It does
+not alter existing components, years, titles, bike links or groups. Existing
+Paul brand 463 and its Rear Derailleurs/Brake Levers associations are retained.
+The source's original citation and a restoration plan are recorded below. Maker
+model cross-category/alias searches found no matching eight titles; no named
+Paul bike specifications were found. A consistent-snapshot simulation using
+the maintained matcher across 118 loaded catalogues found an identical full
+finding set before/after, including the 15 pre-existing Huret lost proposals.
+Whole-database quality baseline has zero errors; Paul near-duplicate report
+found no candidates. Applied IDs 12261/12262 are medium/short Powerglide;
+12263 409; 12264 Stoplights; 12265 Stoplight NC; 12266 Crosstop II;
+12267 F-Hub and 12268 F-Hub DDT. Exact readback matched; rerun changed zero
+rows. The 1996 maker distinguishes the Powerglide cages: `duplicate-classify.js`
+records all five long/medium/short pairs as reviewed configurations instead
+of generations inferred from weak legacy year buckets. The Paul group report
+now reflects those configurations, and near/parenthetical reports have no
+unreviewed pairs. Both duplicate-classifier and report test files passed.
+The post-load generator/live comparison matches the baseline across 118 loaded
+catalogues: no gained or changed mappings, and the same 15 pre-existing Huret
+lost proposals. No Paul-named bike specifications or links were found; the
+quality report returned zero errors. No existing component was overwritten.
+
+For restoration, source 502's former citation was
+`https://www.oldschoolracing.ch/archiv/paul-components/ ; internally dated For 96, printed p.8 Love Levers, image i0464eca1cb2fed53/version/1518555019/image.jpg; 110g/pair, adjustable brass Slop Adjust pivot`.
+New UUIDs in ID order 12261–12268: `04205dca-e6c0-11f1-a2df-02fea3763e8d`,
+`0422cf03-e6c0-11f1-a2df-02fea3763e8d`, `0425f71f-e6c0-11f1-a2df-02fea3763e8d`,
+`0428fb16-e6c0-11f1-a2df-02fea3763e8d`, `042c5cb1-e6c0-11f1-a2df-02fea3763e8d`,
+`042f4cce-e6c0-11f1-a2df-02fea3763e8d`, `0431fad5-e6c0-11f1-a2df-02fea3763e8d`,
+`0434344a-e6c0-11f1-a2df-02fea3763e8d`. Remove the added components or
+category associations only after checking later references, and remove their
+reviewed-configuration entries if the new rows are removed.
+
+## 1996 maker catalogue brake-page spot check — 2026-11-22, read-only
+
+The [15-image maker catalogue](https://www.oldschoolracing.ch/archiv/paul-components/)
+is already registered as source 502 for the scoped Love Lever work below;
+its broader component range was not reconciled in that pass. Visually checked
+the original [posted position 6 / printed p.5](https://image.jimcdn.com/app/cms/image/transf/none/path/s523b628f9fa66a2b/image/ie76148ce9125e113/version/1518555019/image.jpg)
+and [position 7 / printed p.6](https://image.jimcdn.com/app/cms/image/transf/none/path/s523b628f9fa66a2b/image/ida862dec733f2925/version/1518555019/image.jpg).
+The maker lists **Stoplights** and **Stoplight NC** as distinct brake sets,
+with 6061-T6 arms, titanium versus stainless anchor/eyebolts respectively,
+and 95g versus 125g in the printed table; p.5 qualifies 95g as without pads.
+The individual-versus-pair weighing basis is not established by this check.
+The live Paul component inventory contains neither named model, nor any Paul
+brake row; an all-brand Stoplight name search and named bike-spec search found
+none. This is an inventory gap, subject to an alias and duplicate review before
+any insert. The manufacturer source attests its listed configurations; it does
+not by itself establish production endpoints. Positions 14/15 are clothing
+and the distributor list, outside component scope. No DB changes were made.
+
 ## Powerglide and Love Lever — applied and validated 2026-11-21
 
 User approved the prepared variant proposal with “apply”. Applied **three existing-row updates and two additions12200/12201**, with **sources502/503**. Existing dates, UUIDs, categories, group/image values, source references and bike links remain unchanged. No merges, deletions or new Powerglide cage rows.
@@ -16,7 +92,7 @@ Exact applied descriptions and all old values remain in the historical proposal/
 
 ### Registered sources and inserted identities
 
-- **502 — Paul Component Engineering catalogue (1996)**: original archive/internal1996 text, printed p.8; supports12200 only.
+- **502 — Paul Component Engineering catalogue (1996)**: original archive/internal1996 text, printed p.8; supported12200 in this scoped pass. The later full remaining-component reconciliation above also uses this source.
 - **503 — Paul Component Engineering dealer price list (15 September 1996)**: independently dated paul1997_0005.jpg; supports12201 only.
 - **12200 UUID:** f2e1d188-4962-4ec1-bb0d-490815566ba1.
 - **12201 UUID:** b9b01e09-f9f5-426e-a870-7b563a95ec20.
@@ -177,6 +253,6 @@ The [MTB-News discussion](https://www.mtb-news.de/forum/t/paul-love-levers-evolu
 
 ### Remaining action and housekeeping
 
-The guarded, variant-specific proposal is now applied and validated above, preserving all existing dates and separately attributed weights. Unresolved Powerglide figures stay off the long-cage rows and the documented Love Lever offerings remain distinct. Other Paul brakes,hubs and409 remain outside scope; no full inventory or general ingest is claimed.
+The guarded, variant-specific proposal is now applied and validated above, preserving all existing dates and separately attributed weights. Unresolved Powerglide figures stay off the long-cage rows and the documented Love Lever offerings remain distinct. Other Paul brakes, hubs and 409 were outside this original pass; the later remaining-component reconciliation above supersedes that scope limit.
 
 The comparison,proposal and review/apply actions are complete and removed from TODO. This evidence and the direct source URLs supersede the Paul acquisition-only status in source-hunts.md. Comparison-stage downloads and applied SQL/validation files were removed after their evidence and results were preserved here.

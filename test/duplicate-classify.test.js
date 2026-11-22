@@ -51,6 +51,19 @@ test('fitting differences are configurations', () => {
   assert.strictEqual(relate(row('Zeus 2000 Titanium (Pista)'), row('Zeus 2000 Titanium (Strada)')), 'configuration')
 })
 
+test('reviewed Powerglide cage configurations override weak legacy date gaps', () => {
+  const long = row('Paul Components Powerglide (long cage, decals)', { component_id: 4369, year_from: 1990, year_to: 1990 })
+  const medium = row('Paul Components Powerglide (medium cage)', { component_id: 12261, year_from: 1996, year_to: 1996 })
+  const short = row('Paul Components Powerglide (short cage)', { component_id: 12262, year_from: 1996, year_to: 1996 })
+  const unrelated = row('Paul Components Powerglide (experimental)', { component_id: 999999, year_from: 2000, year_to: 2000 })
+  const pairs = buildGroups([long, medium, short, unrelated])[0].pairs
+  const relation = (a, b) => pairs.find(p => p.a.component_id === a && p.b.component_id === b).relation
+  assert.strictEqual(relation(4369, 12261), 'configuration')
+  assert.strictEqual(relation(4369, 12262), 'configuration')
+  assert.strictEqual(relation(12261, 12262), 'configuration')
+  assert.strictEqual(relation(4369, 999999), 'generation')
+})
+
 test('casing density, wheel sizes and fractional inch fittings are configurations', () => {
   const pairs = [
     ['Schwalbe Blizzard Pro (37 Tpi)', 'Schwalbe Blizzard Pro (67 Tpi)'],

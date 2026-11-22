@@ -219,6 +219,11 @@ const REVIEWED_NOT_DUPLICATES = [
   [11685, 12220], // City Slicker: existing700x32C versus maker1989 26in tyre configuration
   // Paul variant review 2026-11-21; known-catalogs/paul.md.
   [4369, 4370], // Independently photographed long-cage Powerglides: PAUL/flag decals versus engraved PAUL/USA; chronology unproved
+  [4369, 12261], // Powerglide long-cage decal specimen versus maker's medium-cage offering
+  [4369, 12262], // Powerglide long-cage decal specimen versus maker's short-cage offering
+  [4370, 12261], // Powerglide long-cage engraved specimen versus maker's medium-cage offering
+  [4370, 12262], // Powerglide long-cage engraved specimen versus maker's short-cage offering
+  [12261, 12262], // Maker catalogue offers distinct medium and short cages
   [12027, 12200], // Branford stainless-pivot Love Levers versus maker1996 adjustable brass Slop Adjust configuration
   [12200, 12201], // Unsuffixed1996 catalogue Love Levers versus separately offered23mm Love Levers LP
   // Maker catalogues reviewed/applied 2026-11-21; specialized.md / ringle.md.
@@ -363,6 +368,12 @@ const REVIEWED_NOT_DUPLICATES = [
 ]
 const reviewedKey = (a, b) => `${Math.min(a, b)}|${Math.max(a, b)}`
 const REVIEWED = new Set(REVIEWED_NOT_DUPLICATES.map(([a, b]) => reviewedKey(a, b)))
+
+// These explicitly different cage lengths coexist in the 1996 maker catalogue;
+// the legacy 1990 decade buckets do not establish separate generations.
+const REVIEWED_CONFIGURATIONS = new Set([
+  [4369, 12261], [4369, 12262], [4370, 12261], [4370, 12262], [12261, 12262],
+].map(([a, b]) => reviewedKey(a, b)))
 
 const words = (text) => fold(text).replace(/[^a-z0-9]+/g, ' ').trim().split(' ').filter(Boolean)
 const brandKey = (brand) => words(brand).join(' ')
@@ -626,7 +637,8 @@ function buildGroups(rows) {
         const reviewed = REVIEWED.has(reviewedKey(a.component_id, b.component_id)) ||
           REVIEWED_VARIANTS.has(a.component_id) || REVIEWED_VARIANTS.has(b.component_id)
         const kept = ['cosmetic', 'duplicate', 'review'].includes(relation) && reviewed
-        pairs.push({ a, b, relation: kept ? 'variant' : relation })
+        const configuration = REVIEWED_CONFIGURATIONS.has(reviewedKey(a.component_id, b.component_id))
+        pairs.push({ a, b, relation: configuration ? 'configuration' : kept ? 'variant' : relation })
       }
     }
     // Retain the original survivor-relative view for callers; the report uses pairs.

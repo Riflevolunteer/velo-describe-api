@@ -119,6 +119,12 @@ The dated1996 sheet separately offers standard/23mm LP levers. Existing
 dates and bike links are unchanged. Actual mappings across117 loaded catalogues and
 whole-DB quality findings are unchanged; the full SQL rerun affects zero rows.
 
+**Paul 1996 remaining components applied and validated, 2026-11-22:** the
+maker catalogue's remaining in-scope pages were reconciled as source 502;
+eight new components and the preserved identity/measurement limits are in the
+[catalogue notes](known-catalogs/paul.md#1996-maker-catalogue-remaining-components--applied-and-validated-2026-11-22).
+Do not re-offer this edition as unread.
+
 Historical acquisition triage: read-only follow-up to the four unopened posts below. All four
 posts and their original image links are accessible. Selected scans were
 downloaded and visually inspected; this is acquisition/quality triage, not a
