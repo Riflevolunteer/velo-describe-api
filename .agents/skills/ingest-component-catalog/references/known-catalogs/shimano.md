@@ -1625,7 +1625,8 @@ not print the model code. [German brochure](https://vintagecannondale.com/cannon
   FC / FD / ST / HB / FH-M560, PD-M550 / M525; STX ST-MC30; 700CX / 400CX
   (11 rows); Tourney RD-TY20, FD-TY25, FC-TY20/21, RD-TY15, SL-MY15,
   CN-UG50, MF-HG20; BB 7706, 7707, 7719, 7737, 7196. Earlier start: 4533
-  RD-A551-GS 1996 -> 1994, 6368 ST-A550 NULL -> 1994-1994.
+  RD-A551-GS 1996 -> 1994 (this GS attribution is questioned by the 1994
+  full-range review below), 6368 ST-A550 NULL -> 1994-1994.
 - Retitled (old titles): 133 "Shimano BB-7410, Dura Ace 7410" -> "BB-7410,
   Dura-Ace 7400" (FC-7410 only, 103mm SS103, 43.5 chainline, 230g); 142
   "Shimano BB-UN90, XTR M900" -> "BB-UN90 / BB-UN91, XTR M900", 1992-1994.
@@ -1643,12 +1644,175 @@ not print the model code. [German brochure](https://vintagecannondale.com/cannon
   catalogue calls the cartridge HP-6500 new for 1994; 3534 HB-6400-F
   (1988-1991) is shown on p48 but shares a row with FH-6400-6/7; 7618
   SL-MY20 (1990-91) is shown on p34 but left, as 1992-93 is unattested.
-- Not yet added (about 60 codes, the new 1994 off-road and entry-level
+- At the original pass, not yet added (about 60 codes, the new 1994 off-road and entry-level
   parts): XTR SQ-M900; Deore XT ST / RD / FC / HB-M737 / M738, SM-CS80,
   HP-M741 / M742, SQ-M730, DF-M730; Deore LX M563 / M564 ST, RD, FC, HB, FH,
   HP and SP-M560; STX MC30 / MC31-CH; Alivio MC10 / MC11; Altus C50 CT50;
   Tourney 30 TY30 / BR-TY22-23 / BL-TY21; MJ10 / MJ12; RX100 FD-A551,
   SL-A551, FC-A551, FH-A551. BB-A551 does not exist (RX100 uses BB-UN51).
+
+### 1994 catalogue remaining-range triage — 2026-11-22, historical
+
+This initial triage preceded the full reconciliation below. The historical
+missing-code list above was partly addressed by the 1995 catalogue pass, so it
+is not a current missing-row count. At triage, a title and description code
+search and visual inspection of the 1994 manual pp.32–36 confirmed further
+material suitable for reconciliation. [P.32](https://www.disraeligears.co.uk/site/00_main_images/shimano_bicycle_system_components_-_94_august_1993_page_32_main_image.jpg)
+shows the Altus C50 RD/FD/ST/SL/BR/BL/FC-CT50 and BR-CT51, with specifications;
+no exact CT50/CT51 code was then found in titles or descriptions. That search
+alone does not exclude an uncoded family row. [P.33](https://www.disraeligears.co.uk/site/00_main_images/shimano_bicycle_system_components_-_94_august_1993_page_33_main_image.jpg)
+shows RD-TY30, FD-TY30, BR-TY22/23 and BL-TY21; existing 9663, 9706, 9670
+and 9707 then had starts of 1996 despite the 1994 attestation. The 1994 MJ group
+photo on p.36 shows RD/FD/HB/FH/BR-MJ10, while 8725, 8726, 8729, 8731 and
+8732 then started in 1995. The later pass below checks variant identity, bike
+links and generator ranges before changes; the catalogue gives availability,
+not definitive production start dates. No DB updates or new catalogue
+inventory were made in this triage; source 173 remains registered.
+
+### 1994 full catalogue reconciliation — applied and validated, 2026-11-23
+
+The August 1993 English edition was inventoried against current database
+records: product ranges pp.6–56, compatibility/technical material pp.57–73;
+cover, introductory material, tools and footwear/accessories are out of
+component scope. Original scans follow the p.32 URL pattern above; the
+temporary inventory and review files were removed after validation.
+
+Applied 36 guarded updates and 35 conditional inserts (12305–12339).
+Seventeen start dates move earlier to the 1994 attestation, three end dates
+extend to 1994, and three start dates move later: HP-6500 **3088** and PD-6500
+**3979** from the weak 1990 bucket to 1994, and ST-MC30 **6369** from 1993 to
+1994. P.47 explicitly calls the headset and pedal new for 1994; p.25 calls the
+STX group new, and the full 1993 range omits ST-MC30. The 1994 edition was
+printed in August 1993; these model years are not physical production boundaries.
+Both 6500 rows have no linked bikes; 6369 is linked to two 1994 specs. Source
+173 remains the existing catalogue record.
+
+The new entries cover Altus C50, standard and Chromica STX, Alivio,
+Tourney, RD-M563 and ST-M737. RD-MC10's resin plate and RD-MC11's aluminium
+plate are directly distinguished on p.31; 1994 STX Special Edition's Chromica
+finish is explicitly distinguished from standard STX. MC30-CH is named in the
+p.24 photograph and p.26 table; the p.27 ST-MC31-CH diagram caption conflicts,
+so it is not treated as a separate model. Crank bolt circles of 95/58mm are
+reported as printed, without silently substituting 94/58mm. PD-M350 was found
+as existing 7200 and is updated, not duplicated. Proposed new model codes were
+searched across current titles; an uncoded specimen may still require a later
+identity crosswalk. Preflight matched all 36 update guards and found none of
+the 35 insert-guard codes in current titles. All 36 updates and 35 inserts
+affected one row each; exact readback checked titles, descriptions, dates,
+categories, groups, UUIDs and search text. The identical rerun affected zero
+rows. The normal duplicate candidates were unchanged; near and parenthetical
+scans found none. The generator/live comparison was identical before and
+after, including 15 pre-existing lost matches. No bike links changed. The
+quality report had zero errors and the same review findings count before and
+after.
+
+Inserted model evidence: p.16 ST-M737; p.20 RD-M563; p.26 Special Edition
+STX; p.29 standard STX; p.31 Alivio; p.32 Altus C50; p.33 SL-TY30-L. Separate
+maker parts documentation labels RD-M563 versus M565 and ST-M737 versus M738;
+their catalogue codes identify separate offered models, not a claim that their
+appearance or weight alone establishes a different construction.
+
+P.54's unsuffixed RD-A551 has 28T maximum and 28T capacity, matching the
+short-cage 10876; its SS identification is inferred rather than printed.
+The 1994 start previously attributed to RD-A551-GS 4533 rests on that unsuffixed
+entry and is not established. [Shimano SI-52D0C](https://si.shimano.com/es/pdfs/si/52D0C/SI-52D0C-000-00-SPA.pdf),
+dated October 1996 in the English reproduction, specifies 26T maximum/35T
+capacity for A551-GS, while the 1998 US catalogue prints
+30T/36T for that code; keep the edition conflict and investigate the GS date
+and code crosswalk separately. No GS date or description change was made.
+
+The 1994 Cinelli Argento Vivo source gives only "Shimano STX S.E."; live
+specs 20155/20157 point to standard 6369, and 20159/20160 to later MC32
+rear/crank rows 4537/1843. The 1994 Shimano Special Edition group lists
+Chromica MC30-CH/MC31-CH models, but the bike's individual codes and working
+year are not directly printed; the available original photo does not resolve
+the crank code. These links are suspect, not yet proven wrong at component
+level. MC32's 1993 starts are held pending that fitment review. No link or
+generator change was made. Other holds include 1994 non-A versus 1995
+-A hubs, the SP-M560/SP-M650 catalogue label discrepancy, and CS-HG70-C
+gearing/configuration conflicts. P.21's SP-M560 label contrasts with p.18's
+SP-M650 and the matching 325g/360mm specification; p.38's CS-HG70-C ab
+11–19T differs from existing 7755's 11–21T and the 1995 tables. Keep these
+as unverified identities/configurations rather than silently merging them.
+
+#### Applied rows and restoration values
+
+Previous dates and source references for the updated rows are recorded below; restore only if the row still matches its applied values. Previous descriptions are included where changed; titles and search text were unchanged.
+
+- 1208: 1990–1996, source_ref 77; old description `Shimano CS-7401, Dura-Ace (8-speed HG), Japan. 8-speed Hyperglide cassette, champagne gold, narrow chain, group S 12-21T or T 13-23T, 255g (S group with spacer) (1990 manual).`.
+- 1414: 1990–1996, source_ref 77; old description `Shimano CN-7401, Dura-Ace HG chain, Japan. Narrow Hyperglide chain, 1/2 x 3/32in, silver roller and pin link plates; for 8-speed CS-7401 (1990 manual).`.
+- 1783: 1993–1998, source_ref 84; old description `Shimano FC-1056, 105SC, Japan. Low-profile SG-X double LD for Dual SIS, new for 1993, HyperDrive, Cap-Less arm, 52-42T / 53-42 / 53-39T, 165-175mm; BB-UN71 / BB-UN51 272g (107mm) (Jul 1992). 670.5g avg measured.`.
+- 1823: 1986–1997, source_ref 275; old description `Shimano FC-7600, Dura-Ace 7600, Japan. Track crank, CAD, high-tech gray anodized ring, Ni Cr-Mo axle, 46-52T (42-45, 53-54T option), 1/8 or 3/32in, 165-175mm, 605g (48T, 170mm); BB-7600 305g, 68 / 70-S-109mm (Jan 1986).`.
+- 2468: 1993–1998, source_ref 84; old description `Shimano FD-1056-B / FD-1056-F, 105SC, Japan. Band / Italian braze-on front for Dual SIS, new for 1993, SG-X compatible, compact, sealed, rigid guide, 15T, 28.0-28.6mm (Jul 1992). 88.5g avg measured.`.
+- 2493: 1994–1994, source_ref 1; old description `Shimano FD-M563, Deore LX, Japan`.
+- 3088: 1990–1999, source_ref 353; old description `Cartridge headset with sealed bearings, BC 1" x 24TPI, 37.6mm stack, aluminium cups and lock nut, steel stem cone, 109g`.
+- 3967: 1987–1993, source_ref 84.
+- 3979: 1990–2000, source_ref 275; old description `SPD road racing sport-competition pedal, 34 degree clearance, chrome-moly spindle, sealed cartridge bearing unit, polished aluminium body, adjustable cleat tension, 348g (pair)`.
+- 5894: 1988–1997, source_ref 174; old description `Semi-oval aluminium seatpost, 205mm; diameters 25.0/25.8/26.0/26.2/26.4/26.6/26.8/27.0/27.2/27.4mm; 224g. Earlier record: 261g.`.
+- 6145: 1992–1997, source_ref 275; old description `Shimano SL-6401-FCAI, 600 Ultegra (8sp), Japan. 8-speed SIS / friction down-tube lever, braze-on A type, Light Action, sealed, 30 deg offset, gray, 28.6mm, 72.5g (Aug 1991).`.
+- 6357: 1993–1999, source_ref 84; old description `Shimano ST-1055, 105SC (Dual Control), Japan. STI road brake / shift lever, new for 1993, Dual SIS 8-speed rear / 2 front, Super SLR, set with BR-1055, 23.8-24.2mm (Jul 1992). 513g measured.`.
+- 6365: 1991–1996, source_ref 82; old description `Shimano ST-7400, Dura-Ace (Dual Control), Japan. First road STI brake / shift lever, new for 1991, 8-speed SIS, SLR brake, SM-ST74 outer stopper, 560g pair (Aug 1990). 332.7g avg measured.`.
+- 6369: 1993–1994, source_ref 173; old description `Shimano ST-MC30, STX, Japan, 386 grams (Actual), both`.
+- 6677: 1986–1998, source_ref 73; old description `Shimano HS-7400, Dura-Ace, Japan. Aerodynamic stem, hexagon release, light alloy anodized, 80-130mm, 22.2mm, 26.0mm bar clamp, 252g (100mm), 260g (120mm) (Jan 1986).`.
+- 7200: 1988–1993, source_ref 48; old description `Shimano PD-M350, Exage Trail / 400LX / 300LX, Japan. Low-profile ATB pedal with reflector, resin body, steel plate, toe clip attachable, 445g pair (1988, 1990 manual).`.
+- 7566: 1990–1997, source_ref 275; old description `Shimano CN-HG90, Hyperglide chain, Japan, 1990 manual: narrow Hyperglide chain, black roller and silver pin plates, chromed pins, 326g (110 links), 1/2 x 3/32in; Deore XT, 600 Ultegra`.
+- 7618: 1990–1991, source_ref 77.
+- 7665: 1991–1997, source_ref 473; old description `Narrow HG chain, silver roller and pin link plates, 1/2x3/32in; stronger design introduced 1991. Also sold as Ultegra HG-91.`.
+- 8689: 1995–1999, source_ref 366.
+- 8697: 1995–1999, source_ref 366.
+- 8714: 1995–1999, source_ref 366; old description `7-speed HG cassette, 11-13-15-18-21-24-28T (group ac), black`.
+- 8725: 1995–1995, source_ref 174; old description `6-speed SIS rear derailleur with Advanced Light Action and dropout hangar, 12T min, 28T max. GS: 20T max front difference, 34T capacity; SS: 13T difference, 28T capacity`.
+- 8726: 1995–1995, source_ref 174; old description `Front derailleur, 18T top-low capacity, 8T top-middle, 42T top gear only, 28.0-28.6mm clamp, Advanced Light Action`.
+- 8727: 1995–1995, source_ref 174; old description `Rapidfire L levers for children, Advanced Light Action, dial-type Optical Gear Display, 19.1mm clamp. -T for triple and -W for double front; -R for 6-speed rear`.
+- 8728: 1995–1995, source_ref 174; old description `Short-reach brake lever, 19.1mm clamp diameter`.
+- 8729: 1995–1995, source_ref 174; old description `Cantilever brakes, alignment-type link, M arm size, M55 shoes`.
+- 8731: 1995–1995, source_ref 174; old description `Parallax 6-speed freehub, 126mm over locknut, 36/32H, nut type`.
+- 8732: 1995–1995, source_ref 174; old description `Parallax front hub, 100mm over locknut, 36/32H, nut type`.
+- 8733: 1995–1995, source_ref 174; old description `6-speed HG cassette, 12-24T (group ad)`.
+- 9663: 1996–1997, source_ref 277; old description `7 or 6-speed SIS rear derailleur, 28T max, 14T min. RD-TY30: 34T capacity, 20T front difference. RD-TY22: GS 34T capacity, 20T difference; SS 28T capacity, 13T difference`.
+- 9667: 1996–1997, source_ref 277; old description `Shift levers with 3-speed SIS front: SL-TY37 for 7-speed rear, SL-TY31 for 6-speed rear`.
+- 9670: 1996–1997, source_ref 277; old description `Cantilever brakes, M-System compatible`.
+- 9706: 1996–1996, source_ref 277; old description `Front derailleur, Advanced Light Action, 22T top-low, 8T top-middle, 48T top gear, 28.0-28.6mm clamp, 66-69 deg`.
+- 9707: 1996–1996, source_ref 277; old description `M-System compatible 3-finger brake lever; also the left-hand lever for the Nexus SB-4S30 / ST-4S20 shifters`.
+- 10876: 1998–1998, source_ref 365; old description `8-speed rear derailleur, 28T max, 12T min, 13T front difference, 28T capacity.`.
+
+New components, all source 173, year 1994–1994; UUIDs are source_id:
+
+- 12305 `Shimano RD-M563, Deore LX`: `e472af24-e6c8-11f1-a2df-02fea3763e8d`.
+- 12306 `Shimano ST-M737, Deore XT`: `e475caab-e6c8-11f1-a2df-02fea3763e8d`.
+- 12307 `Shimano RD-MC31-CH-SGS / RD-MC31-CH-GS, STX Special Edition`: `e4788214-e6c8-11f1-a2df-02fea3763e8d`.
+- 12308 `Shimano FD-MC31-CH, STX Special Edition`: `e47b0f04-e6c8-11f1-a2df-02fea3763e8d`.
+- 12309 `Shimano ST-MC30-CH, STX Special Edition`: `e47da7c8-e6c8-11f1-a2df-02fea3763e8d`.
+- 12310 `Shimano BR-MC30-CH / BR-MC31-CH, STX Special Edition`: `e480453e-e6c8-11f1-a2df-02fea3763e8d`.
+- 12311 `Shimano FC-MC31-CH, STX Special Edition`: `e482e59e-e6c8-11f1-a2df-02fea3763e8d`.
+- 12312 `Shimano FH-MC30-CH, STX Special Edition`: `e4855f31-e6c8-11f1-a2df-02fea3763e8d`.
+- 12313 `Shimano HB-MC30-CH / HB-MC31-CH, STX Special Edition`: `e4881737-e6c8-11f1-a2df-02fea3763e8d`.
+- 12314 `Shimano CS-HG60-C, STX Special Edition`: `e48ba111-e6c8-11f1-a2df-02fea3763e8d`.
+- 12315 `Shimano RD-MC30, STX`: `e48e402a-e6c8-11f1-a2df-02fea3763e8d`.
+- 12316 `Shimano FD-MC30, STX`: `e490dbf2-e6c8-11f1-a2df-02fea3763e8d`.
+- 12317 `Shimano BR-MC30 / BR-MC31, STX`: `e4940ad8-e6c8-11f1-a2df-02fea3763e8d`.
+- 12318 `Shimano FC-MC30, STX`: `e496a98b-e6c8-11f1-a2df-02fea3763e8d`.
+- 12319 `Shimano FH-MC30, STX`: `e499e54d-e6c8-11f1-a2df-02fea3763e8d`.
+- 12320 `Shimano HB-MC30 / HB-MC31, STX`: `e49d65d6-e6c8-11f1-a2df-02fea3763e8d`.
+- 12321 `Shimano RD-MC10, Alivio`: `e4a03419-e6c8-11f1-a2df-02fea3763e8d`.
+- 12322 `Shimano RD-MC11, Alivio`: `e4a2cd3b-e6c8-11f1-a2df-02fea3763e8d`.
+- 12323 `Shimano FD-MC10, Alivio`: `e4a540cf-e6c8-11f1-a2df-02fea3763e8d`.
+- 12324 `Shimano FD-MC11, Alivio`: `e4a7f859-e6c8-11f1-a2df-02fea3763e8d`.
+- 12325 `Shimano ST-MC10, Alivio`: `e4aa86c4-e6c8-11f1-a2df-02fea3763e8d`.
+- 12326 `Shimano ST-MC11, Alivio`: `e4ad2ec0-e6c8-11f1-a2df-02fea3763e8d`.
+- 12327 `Shimano BR-MC10 / BR-MC11 / BR-MC15, Alivio`: `e4b1fef6-e6c8-11f1-a2df-02fea3763e8d`.
+- 12328 `Shimano FC-MC10, Alivio`: `e4b47d00-e6c8-11f1-a2df-02fea3763e8d`.
+- 12329 `Shimano FC-MC11, Alivio`: `e4b720b2-e6c8-11f1-a2df-02fea3763e8d`.
+- 12330 `Shimano FH-MC10, Alivio`: `e4b9a927-e6c8-11f1-a2df-02fea3763e8d`.
+- 12331 `Shimano HB-MC10, Alivio`: `e4bc3ae8-e6c8-11f1-a2df-02fea3763e8d`.
+- 12332 `Shimano RD-CT50, Altus C50`: `e4bedbb5-e6c8-11f1-a2df-02fea3763e8d`.
+- 12333 `Shimano FD-CT50, Altus C50`: `e4c173b1-e6c8-11f1-a2df-02fea3763e8d`.
+- 12334 `Shimano ST-CT50, Altus C50`: `e4c41d64-e6c8-11f1-a2df-02fea3763e8d`.
+- 12335 `Shimano SL-CT50, Altus C50`: `e4c6c443-e6c8-11f1-a2df-02fea3763e8d`.
+- 12336 `Shimano BR-CT50 / BR-CT51, Altus C50`: `e4c9abed-e6c8-11f1-a2df-02fea3763e8d`.
+- 12337 `Shimano BL-CT50, Altus C50`: `e4cc3c09-e6c8-11f1-a2df-02fea3763e8d`.
+- 12338 `Shimano FC-CT50, Altus C50`: `e4ceccd7-e6c8-11f1-a2df-02fea3763e8d`.
+- 12339 `Shimano SL-TY30-L, Tourney 30`: `e4d17b77-e6c8-11f1-a2df-02fea3763e8d`.
 
 ## Shimano "'95 Bicycle System Components — Dealer Sales & Support Manual", English (GB) — printed 07.1994 (disraeligears.co.uk, 88 images)
 
