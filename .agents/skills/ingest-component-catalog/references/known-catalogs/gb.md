@@ -1,5 +1,26 @@
 # GB catalogs processed so far
 
+## Raleigh Forged stem link review — 2026-11-22
+
+Live GB Forged 6533 has recorded dates 1957–1975. Eight later Raleigh specs
+link to it, and the generator's `gb forged alloy` override is shared by both
+the generic and model-specific wordings. The local CSVs agree with live text.
+
+- The 1976 US International DL 170, spec 7924, names `G.B. Forged Alloy Neta`.
+  GB Neta 6541 covers 1970–1981.
+- The 1977 US Competition GS, spec 4453, names `G.B. forged alloy Biba with
+  Allen expander & binder bolts`. GB BiBa 6537 is undated, and the Raleigh
+  notes record its use for the 1978 model's Biba wording.
+- The other six specs, 7943/7962/7981/7999/8017/8035, all say `G.B. Forged
+  Alloy` in the 1976 US transcription. The named Neta in the same table makes
+  the generic wording worth checking separately against the 1975 and 1976
+  scans before extending the observed dates of 6533.
+
+The [1976 and 1977 Raleigh catalogue notes](../../../ingest-bike-specs/references/known-catalogs/raleigh.md)
+identify the technical table and model pages. This pass checked the
+transcriptions, current links and candidate rows. The scans and any mapping
+changes remain for the follow-up.
+
 ## GB Cycle Components leaflet (c. 1962) — icenicam.org.uk, data_source id 154
 
 - Source: https://www.icenicam.org.uk/library/GB/Components_catalogue_b.pdf
