@@ -2661,9 +2661,9 @@ LX and A450 hubs (existing source **412**).
 - **1196** now records the [specimen's](https://www.velobase.com/Pages/ViewComponent.aspx?ID=f0c65e0f-8c6a-4209-b74e-ab469abc4a41)
   reported 14–34T and 3.3 mm spacers, with the pictured dark steel sprockets.
   The [FH-6208-5/-6 parts sheet](https://si.shimano.com/de/pdfs/ev/FH-6208-6_5-0734/EV-FH-6208-6_5-0734D.pdf)
-  lists a silver 34T sprocket for that family. It supplies no code, finish or
-  spacer match to date this dark specimen. 1196 remains undated and separate
-  from 1200.
+  lists a silver 34T sprocket for that family. The black-gear sheets in the
+  follow-up below establish further 600EX options. 1196 remains undated and
+  separate from 1200.
 
 Bianchi Sport SX has the same gearing, speed count and finish as the Club
 Fuji, but names RM-50 hubs and omits the cassette code. T-17 lists both
@@ -2699,6 +2699,28 @@ Applied1200 only: year_from1970→1978, source_ref1→68, description→`Uniglid
 
 Exactly one component update applied; identical guarded SQL rerun changed zero rows. Exact readback confirmed description158 characters, year_from1978, year_to1983, source_ref68, unchanged title/UUID and unchanged1196. All six existing bike links remain within the revised bound. Full generator/live comparison is identical before/after:23,800 compared,23,785 unchanged,15 pre-existing lost proposals, zero gained/changed/missing/ambiguous identities; every finding identical. Quality remains zero errors/2,067 review findings with unchanged check counts, including329 linked date conflicts. Restoration values are recorded above; no generator override needed because all existing ranges start1979 or later. Task SQL, comparison JSON, original1196 HTML and dated page download were removed after validation; source URLs remain above.
 
+
+## Black 14–34T Uniglide spares — 2026-11-22
+
+The [FH-6207-5 parts sheet](https://si.shimano.com/de/pdfs/ev/FH-6207-5-0606/EV-FH-6207-5-0606A.pdf)
+dated 16 November 1984 (`8411-U606A`) lists black threaded 14T **357 1410**
+and black 34T **357 3432-1** for New 600EX five-speed. Its spacer A/B codes
+are **357 5800 / 357 5900**. The [FH-6208 five-/six-speed black-gear sheet](https://si.shimano.com/de/pdfs/ev/FH-6208-0812/EV-FH-6208-0812B.pdf)
+with March 1988 print code `8803-E812B` lists black threaded 14T **104 1410**
+and black 34T **104 3430**, with spacers **357 5800 / 104 4100**. Both sheets
+list the same five-speed fixing bolt **357 6000** and complete freewheel
+body **359 9821**. The sheets list individual service sprockets and give
+no dimension for spacer A or B.
+
+Compared the [1196 specimen photograph](https://www.velobase.com/CompImages/Cassette/2BD8F44F-41B6-473E-A044-1E54B133866F.jpeg)
+with a [loose black 34T sprocket](https://www.vintagecyclebits.com/product/20076301/shimano-early-600-vintage-70-s-34t-freehub-uniglide-w-cut-cassette-cog-nos-bxcc0059-9008-08-20-25).
+The specimen shows cutouts but obscures the bore and spacer construction.
+Neither photograph provides a readable Shimano service part number. The
+14–34T span and finish fit more than one parts sheet. The reported 3.3 mm
+spacing remains unverified against a dated Shimano spacer specification.
+Seek an original package, a stamped sprocket code or a disassembled view
+with a distinguishing feature. No date or provenance update was applied to
+1196. The 1978–83 evidence for 1200 describes the earlier sprocket range.
 
 ## Cinelli Alivio first-generation fitment — 2026-11-21, read-only
 

@@ -799,6 +799,40 @@ a new retrieval lead. Task-created scans, renders and HTML were removed after
 recording URLs/pages; the SQL retained for approval was removed after the
 application below.
 
+### Peugeot Express brake source hunt — 2026-11-22
+
+- **Alpine Express 22591:** the French [1989 Adult VTT brochure, scan 5](https://www.bikeboompeugeot.com/Brochures%20France/Peugeot%201989%20France%20Adult%20VTT%20Brochure/Peugeot%201989%20France%20Adult%20VTT%20Brochure%20Pg5.jpg)
+  shows the pink/grey VTT 4B Z with 18-speed Exage Mountain. The Australian
+  [1988–89 catalogue, p.13](https://www.bikeboompeugeot.com/Brochures%20Australia/Australia_1988_1989_Page_13.jpg)
+  lists Exage Trail at the front and a U-brake at the rear for VTT 4BW,
+  without a caliper code. It also specifies different hubs and tyres from
+  the [Dutch build](https://www.peugeotshow.com/1989nl/1989nl_22.jpg).
+  The [pink/grey owner example](https://www.velovintageagogo.com/t21485-peugeot-alpine-express-1989)
+  reports the same Maillard Diabolo hubs and Mavic Oxygen rims as the Dutch
+  catalogue, and its [side photo](https://i.servimg.com/u/f88/17/13/45/36/img_2028.jpg)
+  shows a chainstay-mounted silver rear brake. Its model stamp and the
+  assembly around both pivots are obscured. Current candidates remain
+  BR-M451, BR-M452 and BR-M453. A stamped caliper on a matching original
+  build or a coded Peugeot parts list would identify the fitment.
+- **Europe Express 22594/22595:** the [French 1989 catalogue, scan 6](https://www.bikeboompeugeot.com/Brochures%20France/Peugeot%201989%20France%20Adult%20VTT%20Brochure/Peugeot%201989%20France%20Adult%20VTT%20Brochure%20Pg6.jpg)
+  explicitly specifies the pink/purple VTT 6B Z with 21-speed Deore XT II.
+  The [Australian p.13](https://www.bikeboompeugeot.com/Brochures%20Australia/Australia_1988_1989_Page_13.jpg)
+  lists 18-speed XT, a Deore XT front brake and a rear U-brake for VTT 6BW,
+  without brake model codes. The [Dutch p.24](https://www.peugeotshow.com/1989nl/1989nl_24.jpg)
+  shows the silver/grey 18-speed build and its rear brake detail. The side
+  view shows the chain deflector and Deore XT lettering but leaves the
+  model stamp and the area spanning the two brake bosses out of view.
+  Shimano's [XT II brochure](https://www.goatsurfer.com/assets/Shimano_1989.pdf)
+  specifies the BR-M733 Power Plate. The earlier [BR-M731 parts sheet](https://manualzz.com/doc/53869025/shimano-br-m731-rem--u-rem--exploded-view)
+  also lists a Shark Tooth, so the accessory is insufficient to identify
+  the generation. A [German specimen listing](https://www.kleinanzeigen.de/s-anzeige/peugeot-europe-express-reynolds-531-mtb-xt-m-730-732-retro-26-/3054158711-217-7701)
+  reports BR-M731 and Rigida CTX-500 wheels. The Dutch table specifies
+  CTX 10 rims and the listing gives no factory provenance for the brake.
+  A coded Dutch parts list or stamped calipers on a matching original
+  build would distinguish the candidates.
+
+No DB, CSV or linking rule changes were applied in this hunt.
+
 ### Orient Express CB-6600 application — 2026-11-15, user approved
 
 - Existing Rear Brake spec **22583**, bike **897**, label **52**, source
