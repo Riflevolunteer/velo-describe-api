@@ -2850,14 +2850,12 @@ component, merge or date change. The five editions above remain processed source
   reconciles the standard-width Super Champion and smooth Fiamme Yellow
   Label offerings. The same page separately lists Ergal Yellow Label 290 g
   and red-label 360 g tubulars.
-- **Regina freewheel limit (source-117 scope superseded by the 2026-11-18
-  [Regina comparison](regina.md#splined-oro-comparison--2026-11-18-read-only)):** 1979/80 p.18, 1981/82 p.26 (image 25) and
-  c.1983/84 p.30 (PDF 32) explicitly offer **splined** Super Corsa Oro5/6-speed
-  bodies; French-thread specials use two prongs. The inspected C-78 maker
-  pages list splines for Tripla Sport only, while source 117's older notes
-  mention splined bodies on request with unclear scope. Verify that original
-  provision before assigning the retail offering to 2182/2194 or a later BX
-  variant. This is unresolved, not proof that splined Oro is a new model.
+- **Regina freewheels:** the [2026-11-22 construction comparison](regina.md#palo-alto-oro-freewheel-construction--2026-11-22-applied-and-validated)
+  reconciles the 1979/80 p.18 and 1981/82 p.26 (image 25) listings to the
+  threaded-cog Oro families 2182/2194. The c.1983/84 p.30 (PDF 32) offering
+  retains that retail name and has a separate Oro spare-cog line alongside CX.
+  Splines on these Oro offerings take the removal tool. French-thread specials
+  use two prongs. The BX sprocket attachment is a separate construction.
 
 Scan references corrected: the old uniform1981/82 `53 − image` rule is wrong.
 Verified image 36=p.16, 25=p.26, 23=p.28 and 22/21/20/19=pp.29/30/31/32;
@@ -4675,8 +4673,8 @@ that work has its own current action. No Mavic DB change followed this review.
 - Rejected on review: matches to the Avocet hubs "(by Ofmega)" 3189 / 3190 / 3191 again, Avocet Professional headset -> Model II 2937, Avocet sealed BB -> Model I (4), Rigida 14-20 mm rims -> the 13-19 rows 9894 / 9895 and a generic Rigida 27 x 1 1/4 row 5153; new rows for BB spindles and cup sets (sub-parts), Palo Alto house tubulars (retailer house brand, TODO policy question), the Rigida 700C x 1 1/4, SR Laprade seat post (Laprade brand already has rows) and Avocet chainrings for double / triple (no model name).
 - Original ambiguity included Regina chains/freewheels and clinchers. The
   2026-11-17 and 2026-11-22 reviews above resolve the chain construction
-  identities and the Super Champion / Fiamme clinchers. Later splined Oro
-  freewheels remain held, alongside Cyclone front and Cinelli 1/A variants.
+  identities, the threaded-cog Oro families and the Super Champion / Fiamme
+  clinchers. Cyclone front and Cinelli 1/A variants remain held.
 
 
 ## Palo Alto Bicycles catalogue — c. 1983-84 (VeloBase `palo_alto_1984.pdf`, 52-page scan with noisy OCR), 2026-10-30
@@ -4697,8 +4695,9 @@ that work has its own current action. No Mavic DB change followed this review.
 - Original holds included Regina chains/freewheels and rim identities. The
   2026-11-17 review above resolves ordinary Oro chain 1382 and explicitly named
   Gentleman 5183 / Model 58 5178 on p.18. The 2026-11-22 profile comparison
-  identifies the earlier retail clinchers. Later splined Oro freewheels and
-  Cyclone generation variants remain held. This edition has no Maxy II.
+  identifies the earlier retail clinchers. The Oro construction comparison
+  above identifies the freewheel family, with this edition still approximately
+  dated. Cyclone generation variants remain held. This edition has no Maxy II.
 
 ## Dedupe 2026-10-30: Cambio Rino Aereo crankset
 

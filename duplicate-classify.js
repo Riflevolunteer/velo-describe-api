@@ -208,6 +208,10 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  // Regina Oro construction review 2026-11-22. See known-catalogs/regina.md.
+  [2179, 2182], // Five-speed BX versus threaded-cog Oro
+  [2180, 2194], // Six-speed Extra BX versus threaded-cog Oro
+  [2194, 2195], // Six-speed threaded-cog Oro versus Oro BX
   // Tioga maker1989/1991 reconciliation applied2026-11-21; known-catalogs/tioga.md.
   [10841, 12212], // MTB-I triple-sealed versus separately offered double-sealed option
   [10841, 12213], // MTB-I triple-sealed versus separately offered standard option

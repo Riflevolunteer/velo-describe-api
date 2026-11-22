@@ -235,6 +235,34 @@ to the other rows. No dates, links or descriptions changed; retain the current
 link provisionally until a coded original fitment or period crosswalk resolves
 the identity. The separate 1975 Motobecane spec 3974 also links to 1398.
 
+### Named Sedis Gold availability — 2026-11-22, applied and validated
+
+Visually re-read [Kalkhoff PDF p. 3](https://velobase.com/CatalogScans/kalhoff_prospekt_81.pdf#page=3).
+The P 13 S column explicitly says Sedis Gold. The same table names Shimano
+600 AX on the P 10 S, consistent with the archive's 1981 model-year attribution.
+[Shimano's history](https://www.shimano.com/en/100th/history/products/17.html)
+dates that series' release to 1980. The Kalkhoff scan supplies no printed year.
+[Motobécane's 1975 US catalogue](https://velobase.com/CatalogScans/Motobecane/1975_Motobecane_catalog.pdf)
+uses the same Sedis Gold name. The [original 1398 specimen gallery](https://velobase.com/Pages/ViewComponent.aspx?ID=FAE9F7F2-A1E4-4AC2-BCCB-9490D27FE0DC)
+shows Sedis and France stamps and a 311 g weighing photograph. Its listing
+reports 108 links. The photos and buyer specifications supply no chain code
+or construction crosswalk to Sedisport or Sedicolor.
+
+The earlier hold on the exact specimen remains. At the named-offering level,
+the two catalogue fitments support the existing links and the attributed 1981
+availability bound. Component **1398** now spans **1975–1981** in that sense.
+Its description reads `French derailleur chain listed as Sedis Gold by Motobecane (1975) and Kalkhoff (attributed 1981). The photographed 108-link specimen weighs 311 g. Exact variant and production dates are unverified.`
+Retained title, source **397**, UUID `FAE9F7F2-A1E4-4AC2-BCCB-9490D27FE0DC`
+and both live links **774** (source 41) and **3974** (source 39).
+
+The guarded update affected one row, then zero on replay. Exact readback
+verified the new year and description, both links and their original sources.
+The whole-database audit retained zero errors and cleared the date flag for
+774. The full generator comparison across 24,829 specs matched the baseline,
+including the same 15 pre-existing lost proposals. To restore, guard the
+applied date and description, stable ID, UUID and source before reverting
+year_to to 1980 and the description to `Sedis Gold, France, 311 grams (Actual), for 108 links`.
+
 ## Peugeot 1977–78 chain evidence review — 2026-11-19 (read-only)
 
 - The remaining **named** gap is 1977 PY10/CP spec **9719**, `Sedis Color

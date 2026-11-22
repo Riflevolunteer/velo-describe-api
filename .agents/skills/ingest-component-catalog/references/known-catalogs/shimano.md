@@ -2795,3 +2795,27 @@ arrows on the label. Shimano's [2005 specification, ATB/NEXAVE bottom bracket ta
 defines `D-H` as the 115 mm axle marking. The photos supply no independently
 readable production date or dated box. The 2002 attribution does not extend
 the documented range or recover the manual page.
+
+### BB-UN73 availability and axle follow-up — 2026-11-22, applied and validated
+
+An [owner's installation report dated 30 June 2003](https://www.cyclingforums.com/threads/shimano-cartridge-bb-question-16906)
+and an [independent August 2003 service discussion](https://www.cyclingforums.com/threads/shimano-vs-capagnolo-vs-truvativ-22318)
+attest the cartridge in use in 2003. The [April 2007 technical account](https://veloapocalypse.wordpress.com/articles/phil-wood-y-shimano-bottom-bracket/)
+reports a retailer's replacement announcement. Shimano's [MY2007 p. 59](https://productinfo.shimano.com/pdfs/product/archive/2007_SPECIFICATION.pdf#page=59)
+is the latest verified maker specification. The range records availability. The
+exact maker launch and withdrawal dates remain unverified. The 2003 manual
+and any dated withdrawal notice are future source evidence for the notes.
+
+The [68 × 115 mm specimen](https://www.velosaloon.com/products/nos-shimano-bb-un73-sealed-cartridge-bottom-bracket-in-115-mm-with-english-thread-from-2002)
+shows BB-UN73, 68 mm, BC1.37 × 24 and D-H on its maker label. Shimano's
+[MY2005 specification](https://productinfo.shimano.com/pdfs/product/archive/2005_SPECIFICATION.pdf)
+decodes D-H as 115 mm in its chainline tables. The [boxed 68 × 110 mm sample](https://www.velosaloon.com/products/nos-nib-shimano-bb-un73-b10-sealed-cartridge-bottom-bracket-in-110-mm-with-english-thread-from-2003)
+visibly carries the MM110 marking and Ultegra/Deore XT packaging. Neither
+specimen substantiates an exact year of manufacture.
+
+Applied description for **121** (204 characters):
+`Sealed square-taper cartridge, hollow steel spindle, BC1.37 x 24. 110/113 mm axles for 68/73 mm shells, 122.5 mm for 68 mm. A 68 x 115 mm D-H unit is documented. In use by June 2003 and listed for MY2007.`
+Exact readback verified the description, **2003–2007**, source **408** and zero
+linked bikes. Guarded SQL affected one row, then zero on replay. To restore,
+guard by ID, UUID, source, dates and the applied description, then reinstate
+the 231-character description recorded in the 2026-11-15 review above.

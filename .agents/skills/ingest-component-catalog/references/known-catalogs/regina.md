@@ -1,6 +1,51 @@
 # Regina catalogs processed so far
 
+## Palo Alto Oro freewheel construction — 2026-11-22, applied and validated
+
+[Palo Alto 1981/82 p.26, archive image 25](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHur7AYZdnSBI48n_98QWDi2wI4W4Gn18TlIzL1O_XIHe_GB8q4Dd0YSgdO4QNoHzJ-ONnyuCCFzmNqxr50kXVkh4bEvaZeALEdPoKBHfqAih9gnZUhdF0rwjnFk-QjQY1nV6P0Z6fHKka/s1650/CATALOGUES+VELOS+1981+%252825%2529.jpg)
+(source **248**) prints sprocket cross-sections for its Super Corsa Oro
+five- and six-speed offerings, stock numbers **26-101** and **26-102**. The
+centre photograph shows internal remover splines and the `REGINA ORO` lockring
+with `ITALY 80`. Its drawing and spare-cog table repeat the position 1–9
+system shown in [Palo Alto 1979/80 p.18](https://velobase.com/CatalogScans/Palo%20Alto%20Shop%20Catalogs/PaloAlto+79-80.zip)
+(archive member `79-80Catalog0021.jpg`, stock numbers **18-901/902**).
+In both editions the standard 5- and 6-speed drawings use two inward-facing
+position-3 cogs and the close-ratio five uses a different arrangement.
+[Regina C/7 109/E pp.4–5](https://velobase.com/CatalogScans/ReginaExtra_1970s_2.pdf#page=4)
+shows the same threaded-cog design and offers a splined remover interface by
+request. [Holdsworthy 1981 p.16](https://ebykr.com/wp-content/uploads/2026/11/ebykr-holdsworth-1981-aids-catalog-p10-scaled.webp)
+independently distinguishes the common standard Oro body from the close-ratio
+Scalare body. [Sutherland, sixth edition, PDF pp.136–137](https://paulinoposada.github.io/bike/documents/epdf.pub_sutherlands-handbook-for-bicycle-mechanics.pdf#page=136)
+identifies the same threaded Extra/Scalare arrangement and separately charts
+BX's splined cogs and marked lockring.
+
+At family level, the five-speed listings identify **2182** and the six-speed
+listings identify **2194**. Both remover fittings belong to the traditional
+threaded-cog family. **2179**, **2180** and **2195** are separate BX records.
+The [c.1983/84 page 30](https://www.velobase.com/CatalogScans/Palo%20Alto%20Shop%20Catalogs/palo_alto_1984.pdf#page=32)
+retains the Super Corsa Oro name and a separate Oro spare-cog line alongside
+CX, consistent with that identification. The later page lacks the earlier
+cog diagram and carries no printed publication year. Its approximate dating
+and the `80` stamp on the earlier photographed sample do not establish new
+availability bounds. The family identification now rests on illustrated
+period sources, superseding the unresolved comparison below.
+
+Appended ` Threaded cogs. Two-prong or splined remover.` to the original
+descriptions of **2182** and **2194**. The original 207-character text of each
+row is preserved in full. To restore, remove the exact appended 45-character
+suffix from these two IDs after checking the verified post-change text. Dates
+remain 1970–1982 and 1970–1986, with original sources 389 and 138, respectively.
+Exact readback verified both 252-character descriptions and the existing
+four and nineteen linked spec IDs respectively. The guarded SQL affected two
+rows on first application and zero on replay. The Regina near-duplicate scan
+returned zero candidates. The same-speed Oro/BX comparisons are recorded in
+`duplicate-classify.js`. Final generator/live comparison matched the baseline
+across 24,829 specs. The final integrity report found zero errors.
+
 ## Splined Oro comparison — 2026-11-18, read-only
+
+Historical review. The construction comparison above resolves the retail
+family crosswalk.
 
 Recovered a readable 12-page [Regina C/7 109/E](https://velobase.com/CatalogScans/ReginaExtra_1970s_2.pdf)
 copy of the edition represented by source 117. The cover prints the catalogue
@@ -33,6 +78,9 @@ specimen crosswalk is still needed to assign the later retail bodies more
 precisely. No database changes followed this review.
 
 ## Splined Oro construction follow-up — 2026-11-20, read-only
+
+Historical review. The later inspection of the 1981/82 retail page supplied
+the construction and lockring evidence without the supplementary data sheet.
 
 Live readback of 2179/2180/2182/2194/2195 confirms the existing distinctions:
 2179 Extra BX 5-speed (1980–1980, source 1), 2180 Extra BX 6-speed gold
