@@ -33,6 +33,13 @@ checks found no candidates involving 12236. The whole-database audit found
 zero structural errors. Its only new review flag was for 12236's missing
 dates. A dated maker or importer offering would establish an attested year.
 
+Live follow-up confirmed zero bike links on 2987, 2988, 2990, 12236 and
+bottom brackets 53/54. Keep 2990 separate and the catalogue's 37 mm/108 g
+figure at family level. Revisit the headset assignment with an unannotated
+IT1.241.695/V01-92 sheet, maker order-code table or measured coded specimen.
+The 114 mm catalogue bottom bracket and 122 mm specimen notes remain separate
+evidence until a maker axle and construction key distinguishes 53/54.
+
 <a id="headset-specimen-review-20261120"></a>
 
 ## Competition headset specimen and packaging review — 2026-11-20, read-only

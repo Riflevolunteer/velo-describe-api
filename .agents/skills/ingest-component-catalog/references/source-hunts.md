@@ -63,6 +63,15 @@ The [applied Tange fitment review](known-catalogs/tange.md#coded-headset-fitment
 records the Peugeot, Bianchi, Miyata and Motobécane equipment tables used
 for six new headset rows and 22 links.
 
+Live follow-up confirmed 22 links to those components, the three unlinked
+TH-108 specs (7033/18526/18631) and the six unlinked Bianchi H.L. spec IDs
+in the handlebar follow-up below. Keep TH-305C's root-code attribution
+provisional and preserve the separate MES and Falcon identities pending a
+maker crosswalk. The H.L. Dirtdrop and MTB-110 need a coded sheet or original
+specimen that distinguishes them from Nitto and SR. Revisit HTI/VP pedals
+and H.L., Kalloy, Kusuki and ITM bars/stems when an applicable period
+maker or importer sheet or a coded original fitment becomes available.
+
 **Date/identity evidence, distinct from new links.** Maillard 600 SH 8130/8131
 have linked 1988-and-later fitments beyond their stored 1987 end; seek a coded
 later Sachs-Maillard/Peugeot offering and distinguish Helicomatic variants
@@ -696,9 +705,14 @@ after recording URLs, references, edition lists and retrieval method here.
   found. Plain 108/110-link Peugeot entries remain intentionally unidentified.
   [Current baseline and limits](known-catalogs/sedis.md#peugeot-197778-chain-evidence-review--2026-11-19-read-only).
 
-Read-only evidence review: no DB, source, CSV or generator writes, purchases or
-outreach. Only the Competition and Alpha-5000 reconciliation moves to ready work;
-reopen the other hunts for a new period sheet or coded original-fitment lead.
+This evidence review made no DB, source, CSV or generator writes. The
+[Alpha-5000 reconciliation](known-catalogs/dia-compe.md#alpha-5000--applied-2026-11-19)
+has since been applied. Live follow-up confirmed that the sampled Modolo,
+Altenburger, Polygon and Chang Star specs remain unlinked, as does silver
+Sedis Color spec 9719. Reopen these cases with a new period sheet or coded
+original fitment. For Lee Chi and CLB, use the distinguishing construction
+and aero-lever evidence above. For 9719, require a period silver-finish/model
+crosswalk.
 Task-owned downloads/renders removed after recording their source URLs.
 
 - **Sedis/OMAS readable-source review — 2026-11-18:** no repeat of exhausted Velo-Pages thumbnail/CDX queries. **OMAS alternate manufacturer scans recovered** from [Classic Rendezvous, 26-page PDF](https://classicrendezvous.com/wp-content/uploads/2023/05/O.M.A.S.pdf) and four 2000 px [Frameteller image copies](https://www.frameteller.it/author/manuel/page/6/). PDF p.6 matches the 101/S/475 g page content formerly represented only by image 12999 and now exposes readable axle-material captions. Other hub/headset/crank/wheel pages are readable. CR labels the PDF early 1980s; Frameteller captions 1978, credits CR and also mentions 1980. No printed date or exhaustive 28-item album crosswalk established: do not claim a proven complete 1978 edition. [OMAS recovery notes](known-catalogs/omas.md#readable-alternate-catalogue-scans-recovered--2026-11-18) record URLs, dimensions, hash and retained recovered files in `/private/tmp/sedis-omas-recovery-20261118/`. This supersedes the general OMAS statement below that a new readable source is still needed; precise edition/coverage review remains. **Sedis May 1971 remains unrecovered**: targeted exact-edition/French-chain/archive/holder searches found no new readable copy or confirmed holder; the 1979 Chicken section, modern industrial catalogues and unrelated older adverts are not substitutes. [Sedis search limits](known-catalogs/sedis.md#may-1971-recovery-search--2026-11-18-no-new-readable-copy). Recovery-only: no DB work, source registration, outreach or purchase. Disposable HTML/renders removed; requested OMAS documents retained.
@@ -719,9 +733,9 @@ Task-owned downloads/renders removed after recording their source URLs.
   p.18 maker system chart verified984D as a separate Advantage ZAOH model;
   [one new component and two explicit Bianchi links were approved, applied and validated](known-catalogs/dia-compe.md#984d-maker-identity-and-bianchi-links--2026-11-21-applied-and-validated).
   No missing pages were recovered and no984/984D alias is proposed.
-  Seek the missing pages or an uncropped
-  p.3 through this holder or a new scan; do not repeat extraction of these seven
-  photographs as though they were unread.
+  Revisit the remaining pp.4–8/11–14 and the clipped right edge of p.3 if an
+  original scan or extra holder photos become available. The seven known photos
+  have been processed.
 
 - **Stronglight / OMAS recovery resumed, 2026-11-17:** the earlier
   `/private/tmp/velo-pages-unread-2026-11-17/` cache no longer exists; historical

@@ -306,17 +306,19 @@ not read descriptions. The compared silver, titanium and clincher rows
 - Applied description: `700c aero tubular, SUP/UB Control, silver or titanium, 24/28/32/36h (1997). Loose inserts and 16 mm nipples. Mavic: 530 g (1996), 465 g (1997, 1999). Guida: 520 g (1996). One rim weighed 473 g without inserts. Listing: 500 g, weighing basis unstated.`
 
 Restore the previous text only with the exact applied description, ID,
-original source and date values as guards. The remaining measurement and 870
-clamp questions are linked from the TODO.
+original source and date values as guards.
 
 The [Retrobike archive announcement](https://www.retrobike.co.uk/threads/new-mavic-catalog-and-manuals-added-to-the-archive.427093/)
 was a lead for recovering a 1996 catalogue. The maker brochure above now
 supplies the 1996 figure. The announcement still returns an access challenge,
 and its indexed results do not identify a weighing note or a 31.8 mm clamp
 sheet. The old technical-manual [rim-table link](https://cyclingforums.com/threads/mavic-open-sport-erd-295473)
-points to the 1997 clincher table and also returns an access challenge. Keep
-the source leads here. The active searches are for the weighing basis and
-dated 31.8 mm clamp specification.
+points to the 1997 clincher table and also returns an access challenge.
+Live follow-up verified that 5062 still distinguishes the reported and measured
+weights and that 2410 retains its legacy 1984–1992 dates. Both have zero bike
+links. Revisit 5062 with paired measurements of the same tubular rim with and
+without its inserts or a dated weighing note. Revisit 2410 with a dated
+specification that explicitly names the 31.8 mm clamp.
 
 ## Full French catalogue (1994) — applied and validated
 

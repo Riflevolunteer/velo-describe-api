@@ -24,6 +24,12 @@ date flag. Revisit with an original coded hub/fitment, or a dated maker/importer
 crosswalk connecting the early Pista Special offering to 400B1/400B2. No DB,
 generator or link change was made in this review.
 
+Live follow-up confirmed that specs 1007 and 12977 are still the only links
+to 3351 and that its 1984–1988 bounds are unchanged. The two earlier fitments
+remain provisional under the evidence rule above. The subsequent [brochure
+follow-up](#198083-source-hunt--2026-11-19-read-only) verified the later 400B1
+code again and supplied no independent early-model crosswalk.
+
 ## Gipiemme catalogue binder, "Special" and "Dual-Sprint" lines (37 scans, 1970s, VeloBase archive)
 
 - `data_source` 202, label `Gipiemme catalogue binder, "Special" and
@@ -583,7 +589,16 @@ Other leads checked:
   prints hub code 400B1 and Road code 800AES. It confirms the later model
   identity, with no early crosswalk for 3351, 1007 or 12977. Classic Rendezvous's
   two scans labelled circa 1982 also print the later 800AE/870SE Selectron
-  codes. The thread's separate specimen label on p. 13 remains unverified.
+  codes.
+- **Page 13 specimen follow-up:** the [600161 listing](https://www.rennrad-news.de/forum/attachments/930982/)
+  and [parts drawing](https://www.rennrad-news.de/forum/attachments/930983/)
+  depict a low-flange, quick-release Cronospecial road hub pair.
+  The [Gipiemme Special box](https://www.rennrad-news.de/forum/attachments/930989/)
+  is pictured with quick-release hubs. The [Colnago label](https://www.rennrad-news.de/forum/attachments/931381/)
+  explicitly identifies road hubs. The [separate sealed Special spread](https://www.rennrad-news.de/forum/attachments/931380/)
+  matches the small-flange hub specification of the held 1987-MINI leaflet.
+  These images supply no early track model code or independent date for
+  either bike fitment.
 - Ebykr's [Battaglin catalogue labelled about 1981](https://ebykr.com/library/battaglin-catalog-about-1981/)
   repeats the Marostica Sprint 610 rear and Vuelta Cronospecial headset values
   in the held 1982 Battaglin material. The website's approximate date supplies
