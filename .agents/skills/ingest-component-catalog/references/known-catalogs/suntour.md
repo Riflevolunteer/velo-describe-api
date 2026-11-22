@@ -794,6 +794,163 @@ The hub scan found no new near-pair candidates. The live spec and the
 generator agree on 12229. The SQL replay affected zero rows.
 [Fitment, provenance and full-batch checks](../../../ingest-bike-specs/references/known-catalogs/bianchi.md#1991-us-component-follow-up--applied-and-validated)
 
+### Full-range follow-up — applied and validated, 2026-11-22
+
+The rear cover reads “Printed in JAPAN Sept./'90”; printed p.1 identifies the
+1991 range. Pages 6–14 and 16–25 were transcribed against source 509; pp.1–5
+are features, p.11 a group photograph, pp.15 and 19 photographs and p.26
+accessories. The source page URLs follow the p.13 pattern below.
+
+The [1991 p.13](https://www.disraeligears.co.uk/site/00_main_images/suntour_bicycle_equipment_catalog_1991_-_page_13_main_image.jpg)
+explicitly lists RD-XE01-GXB, FD-XE01-GXH and CW-XE01. This supersedes the
+earlier notes below treating XE01 as a 1992 code: it was available in 1991,
+though this does not establish its introduction or identify 1989 fitments.
+P.14 lists the 1991 XM01 XCM, XT01 XCT and XU00 XCU codes and XT20 Wishbone;
+the separate 1992 Wishbone introduction claim must not be generalized to
+these 1991 XT20 levers. Manufacturer-coded variants still require identity
+review against uncoded specimens, and SKU changes alone do not prove redesign.
+
+Applied 56 guarded updates and 34 conditional coded-offering inserts (12271–
+12304), using source 509. The updates include
+39 1992-to-1991 start corrections and 15 1990-to-1991 end extensions, plus
+description enrichments and two retitles/search-text changes. All 56 update
+guards matched the live rows on preflight; 1991 dates are attestations, not
+proof of manufacture boundaries. The proposals include earlier evidence from
+the 1990 printing for the common-stock aliases 11013 and 11019. All 56 updates
+and 34 inserts affected one row each. Readback checked titles, descriptions,
+dates, categories and groups; rerunning the guarded SQL affected zero rows.
+The standard duplicate report found the same candidate pairs as before; near
+and parenthetical scans found none. No bike spec contains a newly added exact
+model code, and the generator/live comparison is identical before and after,
+including 15 pre-existing lost matches. Quality validation reports zero
+structural errors and the same review findings count before and after.
+
+Evidence for inserted offerings: p.6 HB-XP01-R and FH-XP01-7; p.7 BB-XP10-E;
+p.9 CT-XC01; p.10 HB-XL00-R and FH-XL00-7; p.13 Chroma CR01 models; p.14
+XM01, XT01, XU00 and XT20 models; p.22 BE01 models; p.23 VX01, RT00, FT01,
+VX02 and FU00 models; p.25 SR20 and CW-X000. These model codes identify
+catalogue offerings; they do not alone establish a physical redesign from
+the similarly named offerings in the 1990 or 1992 editions.
+
+The 1991 Bianchi Nyala XCM rear spec 26776 is linked to 4793, whose described
+XM00/XM02 variants are attested in 1990/1992. The 1991 maker catalogue lists
+XM01 (4794), but Bianchi supplies no model code, so a group-and-year match is
+an inference, not proof of the fitted derailleur. Its XCM top-pull front 26775
+remains NULL; p.14 does not establish that FD-XM01 is top-pull. The 1991
+Bianchi Ibex XCE brake/crank 26752/26753 and Nyala XCT brake/crank 26772/26773
+also lack original component codes. Keep these pending a fitment decision or
+distinguishing evidence rather than silently backfilling from the group name.
+
+Unresolved catalogue identities: 6306's formerly uncoded X-1 Chroma specimen
+could correspond to SL-X101 or SL-CR01 rather than its present X102 title;
+manufacturer markings or an original specimen crosswalk are needed. HB-AT01
+front/rear may overlap 3632 HB-AT02, and FW-AL10-K6 may overlap 11040 K6R.
+The BEAST 1990 BT-CW00 (1978) and 1991 CW-BT00 have similar specifications but
+different stock numbers; retain them as an unresolved crosswalk, not a new row.
+The 1991 SL/Radius hub codes and XP Microlite codes need comparison with
+uncoded or later specimens. BA-FT50-N/S may already be represented by 11090.
+Suffix differences on SL-CD00, SL-BC00, FH-GP00, FW-AL10-K6 and SL-FT50 are
+not assumed to be distinct without a maker crosswalk. These holds are not
+assertions that the catalogue-coded products are identical to the existing rows.
+
+#### Applied rows and restoration values
+
+Existing rows: prior dates and source_ref are listed below; restore only if the row still matches the applied values. Previous descriptions and titles are included where changed.
+
+- 177: 1992–1994, source_ref 98.
+- 1057: 1990–1990, source_ref 385; old description `Self Energizing rear cantilever brake, new for 1990; shoe adjustment 22.5-27.5mm, 260g pair of arms.`.
+- 1418: 1980–1990, source_ref 385.
+- 2002: 1992–1992, source_ref 98.
+- 2655: 1990–1990, source_ref 385.
+- 2663: 1992–1992, source_ref 98.
+- 4791: 1992–1992, source_ref 98.
+- 4794: 1991–1991, source_ref 1; old description `XCM long-cage AccuShift rear derailleur, 1991 version; outer plate marked SunTour XC-Master, alloy and steel, slant parallelogram. VeloBase model RD-XM01-GXB, citing the 1991 catalogue p.14 (not held). Between RD-XM00 and RD-XM02 (4793).`.
+- 5936: 1987–1990, source_ref 385; old description `Forged alloy body/clamp, alloy tube, CrMo bolt, 300mm, 22-degree adjust, 7-8mm rails. 1990: 25.0-27.2mm, 330-332g at 26.8mm. Earlier XC9000: 26.4-27.2mm, 283g spec; recorded weight 290g.`.
+- 6303: 1991–1991, source_ref 1; old description `Superbe Pro braze-on down-tube index levers, AccuShift 7-speed (6-speed unconfirmed) with friction and retro-friction modes, aluminum, marked SunTour Superbe Pro. VeloBase model SL-SB01-B (1991); between SL-SB00 (6302) and SL-SB02 (6304).`.
+- 7954: 1992–1992, source_ref 98.
+- 7963: 1992–1992, source_ref 98.
+- 7964: 1992–1992, source_ref 98.
+- 7970: 1992–1993, source_ref 278.
+- 7972: 1992–1992, source_ref 98.
+- 7983: 1992–1993, source_ref 278.
+- 7988: 1992–1993, source_ref 278.
+- 7990: 1992–1993, source_ref 278; old description `SunTour FH-SL10-7, SL Microlite (7-speed freehub), Japan. Microlite 7-speed cassette freehub, aluminium body, 28 / 32H, 126 / 130mm, QR, 412g. 1992 catalogue.`.
+- 7994: 1992–1992, source_ref 98.
+- 8003: 1992–1992, source_ref 98.
+- 8004: 1992–1992, source_ref 98.
+- 8005: 1992–1992, source_ref 98.
+- 8008: 1992–1992, source_ref 98.
+- 8009: 1992–1992, source_ref 98.
+- 8010: 1992–1992, source_ref 98.
+- 8011: 1992–1992, source_ref 98.
+- 8013: 1992–1993, source_ref 278.
+- 8014: 1992–1992, source_ref 98.
+- 8015: 1992–1992, source_ref 98; old description `SunTour BB-RA01-E / BB-RA01-I, Radius, Japan. Bottom bracket, VX taper, 1/4in x 9 balls, 68 / 70mm, 350g; also Edge and Blaze. 1992 catalogue.`.
+- 8016: 1992–1992, source_ref 98.
+- 8017: 1992–1993, source_ref 278.
+- 8018: 1992–1992, source_ref 98.
+- 8019: 1992–1993, source_ref 278; old description `SunTour BL-XL00-S, XC-LTD, Japan. 2-finger ATB brake lever, reach adjust 23mm, clamp 22.2mm, 262g pair. 1992 catalogue.`.
+- 8021: 1992–1992, source_ref 98.
+- 8022: 1992–1992, source_ref 98.
+- 8023: 1992–1992, source_ref 98.
+- 8024: 1992–1992, source_ref 98.
+- 8025: 1992–1993, source_ref 278.
+- 8029: 1992–1992, source_ref 98.
+- 8031: 1992–1993, source_ref 278; old description `SunTour CT-XL00, XC-LTD (cantilever), Japan. Cantilever brake, shoe adjust 22.5-27.5mm, 170g. 1992 catalogue.`.
+- 8035: 1992–1992, source_ref 98.
+- 8036: 1992–1992, source_ref 98.
+- 8038: 1992–1992, source_ref 98.
+- 8039: 1992–1992, source_ref 98.
+- 8043: 1992–1992, source_ref 98.
+- 11011: 1990–1990, source_ref 385; old description `VX-taper bottom bracket, 1/4in x 11 balls with retainer, BC 1.37 x 24T; French/Italian threads available, 68/70mm shell, 312g. Non-Grease Guard option for XC-Pro / BEAST; standard XC-Comp.`.
+- 11013: 1990–1990, source_ref 385; old title `SunTour BL-XP00, XC-Pro normal lever`, search text `SunTour BL-XP00 XC-Pro normal lever`.
+- 11019: 1990–1990, source_ref 385; old title `SunTour FW-AL10-S7U, Alpha AccuShift Plus 7-speed freewheel`, search text `SunTour FW-AL10-S7U Alpha AccuShift Plus 7-speed freewheel`; old description `7-speed silver AccuShift Plus freewheel, BC 1.37 x 24T, narrow chain, D 37mm. ATB: 13-26T 460g, 13-28T 490g, 13-30T 520g. Road: 13-21T 386g, 13-23T 410g.`.
+- 11091: 1990–1990, source_ref 385.
+- 11092: 1990–1990, source_ref 385; old description `Single-chainring crankset, alloy (-AL) or steel (-FE).`.
+- 11093: 1990–1990, source_ref 385; old description `Double-chainring crankset, alloy (-AL) or steel (-FE).`.
+- 11095: 1990–1990, source_ref 385.
+- 11098: 1990–1990, source_ref 385.
+- 11099: 1990–1990, source_ref 385.
+- 11100: 1990–1990, source_ref 385; old description `VX-taper bottom bracket, 1/4in x 9 balls with retainer, English/French/Italian threads, 68/70mm shell; 321g.`.
+- 11106: 1990–1990, source_ref 385.
+
+New components, all source 509, year 1991–1991; UUIDs are source_id:
+
+- 12271 `SunTour HB-XP01-R, XC-Pro (rear hub)`: `8db7d03a-e6c6-11f1-a2df-02fea3763e8d`.
+- 12272 `SunTour FH-XP01-7, XC-Pro (7-speed freehub)`: `8dba9c7e-e6c6-11f1-a2df-02fea3763e8d`.
+- 12273 `SunTour HB-XL00-R, XC-LTD (rear hub)`: `8dbdbb19-e6c6-11f1-a2df-02fea3763e8d`.
+- 12274 `SunTour FH-XL00-7, XC-LTD (7-speed freehub)`: `8dc05688-e6c6-11f1-a2df-02fea3763e8d`.
+- 12275 `SunTour CT-XC01, XC-Comp (cantilever)`: `8dc30d37-e6c6-11f1-a2df-02fea3763e8d`.
+- 12276 `SunTour BB-XP10-E, BEAST (Grease Guard)`: `8dc5af10-e6c6-11f1-a2df-02fea3763e8d`.
+- 12277 `SunTour RD-CR01-GXB, X-1 Chroma`: `8dc8c908-e6c6-11f1-a2df-02fea3763e8d`.
+- 12278 `SunTour CW-CR01, X-1 Chroma`: `8dcb6215-e6c6-11f1-a2df-02fea3763e8d`.
+- 12279 `SunTour BL-CR01-S, X-1 Chroma`: `8dce1036-e6c6-11f1-a2df-02fea3763e8d`.
+- 12280 `SunTour CT-CR01, X-1 Chroma`: `8dd0c1ed-e6c6-11f1-a2df-02fea3763e8d`.
+- 12281 `SunTour FD-XM01-GXH, XCM`: `8dd362eb-e6c6-11f1-a2df-02fea3763e8d`.
+- 12282 `SunTour RD-XT01-GXB / RD-XT01-GXZ, XCT`: `8dd61d91-e6c6-11f1-a2df-02fea3763e8d`.
+- 12283 `SunTour FD-XT01-GXH, XCT`: `8dd8ba4b-e6c6-11f1-a2df-02fea3763e8d`.
+- 12284 `SunTour RD-XU00-GXB / RD-XU00-GXZ, XCU`: `8ddb5fbc-e6c6-11f1-a2df-02fea3763e8d`.
+- 12285 `SunTour SL-XU00-R6 / SL-XU00-L, XCU`: `8dde00b9-e6c6-11f1-a2df-02fea3763e8d`.
+- 12286 `SunTour SL-XT20-R7 / SL-XT20-R6 / SL-XT20-L, Wishbone`: `8de0b6cd-e6c6-11f1-a2df-02fea3763e8d`.
+- 12287 `SunTour RD-BE01-SSB, Blaze`: `8de38e59-e6c6-11f1-a2df-02fea3763e8d`.
+- 12288 `SunTour FD-BE01-SSH, Blaze`: `8de649fa-e6c6-11f1-a2df-02fea3763e8d`.
+- 12289 `SunTour SL-BE01-B7 / SL-BE01-BF7 / SL-BE01-C7 / SL-BE01-CP7, Blaze / VX`: `8de8da3d-e6c6-11f1-a2df-02fea3763e8d`.
+- 12290 `SunTour RD-VX01-SSB / RD-VX01-SSZ, VX`: `8debf50b-e6c6-11f1-a2df-02fea3763e8d`.
+- 12291 `SunTour FD-VX01-SSH, VX`: `8dee79dd-e6c6-11f1-a2df-02fea3763e8d`.
+- 12292 `SunTour RD-RT00-SSB / RD-RT00-SSZ, RT`: `8df13e70-e6c6-11f1-a2df-02fea3763e8d`.
+- 12293 `SunTour FD-RT00-SSH, RT`: `8df3d5ee-e6c6-11f1-a2df-02fea3763e8d`.
+- 12294 `SunTour SL-RT00-B6 / SL-RT00-C6 / SL-RT00-CP6, RT`: `8df667a3-e6c6-11f1-a2df-02fea3763e8d`.
+- 12295 `SunTour RD-FT01-SSB, FT`: `8df91c86-e6c6-11f1-a2df-02fea3763e8d`.
+- 12296 `SunTour BB-VX02-E, FT (Sakae Ringyo)`: `8dfbb8f8-e6c6-11f1-a2df-02fea3763e8d`.
+- 12297 `SunTour RD-FU00-GXB, FTU`: `8dfe719f-e6c6-11f1-a2df-02fea3763e8d`.
+- 12298 `SunTour CW-FU00, FTU (Sakae Ringyo)`: `8e011979-e6c6-11f1-a2df-02fea3763e8d`.
+- 12299 `SunTour BL-FU00-N, FTU (Dia-Compe)`: `8e03af57-e6c6-11f1-a2df-02fea3763e8d`.
+- 12300 `SunTour CT-FU00, FTU (Dia-Compe)`: `8e0652dc-e6c6-11f1-a2df-02fea3763e8d`.
+- 12301 `SunTour RD-SR20-SSB / RD-SR20-SSZ, Scrambler`: `8e08e644-e6c6-11f1-a2df-02fea3763e8d`.
+- 12302 `SunTour RD-SR20-GTB / RD-SR20-GTZ, Scrambler`: `8e0b84bb-e6c6-11f1-a2df-02fea3763e8d`.
+- 12303 `SunTour RD-SR20-GXB / RD-SR20-GXZ, Scrambler`: `8e0e96fa-e6c6-11f1-a2df-02fea3763e8d`.
+- 12304 `SunTour CW-X000 (Sakae Ringyo)`: `8e111a1b-e6c6-11f1-a2df-02fea3763e8d`.
+
 ## SunTour "1992 Bicycle Equipment Catalog" — printed 09.1991 (disraeligears.co.uk, 32 scans)
 
 - `data_source` 98, label "SunTour Bicycle Equipment Catalog 1992 (printed
@@ -1971,7 +2128,8 @@ VeloBase pages (ViewComponent.aspx?ID=<source_id>) give a model field for most b
   avg = 8262 RH-1000. Supersedes the No. 61 note above: 383g is a single hub, not a pair
   (8262 prints 548g a pair).
 - 4794 "XC-Master (1991)" (916A66BE): model **RD-XM01-GXB**, outer plate "SunTour
-  XC-Master", citing the 1991 catalogue p.14 (not held). Distinct from 4793 (XM00 / XM02).
+  XC-Master", citing the 1991 catalogue p.14 (not held at this review; later
+  confirmed directly in the full-range follow-up above). Distinct from 4793 (XM00 / XM02).
 - 4020 PL-XP01 titanium (76C51DEA): titanium axle, 256g actual; kept apart from 4019
   (steel axle, 305g pair) and registered in `REVIEWED_NOT_DUPLICATES`.
 - No coded row to merge into: 1335 Superbe chainrings (6A1211EB: first-generation, Sugino-made,
@@ -2543,8 +2701,9 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   (11071) with no spec that tells them apart. Shifter 7019 -> 6312 SL-XP10 is
   unchanged (p.17 lists SL-PP00 X-Press for XCT, so it still needs review).
 - 1989 Bianchi Forte / Volpe "SunTour XCE-4050": front 18615 / 18719 (was 2663)
-  and rear 18616 / 18720 (was 4791) are now unlinked. XE01 is the 1992 code
-  and XE00 is '90 new; neither is shown to be the 1989 part. Forte crank
+  and rear 18616 / 18720 (was 4791) were then unlinked. XE01 was known from
+  1992 at that review and XE00 is '90 new; the 1991 catalogue subsequently
+  attests XE01, but neither is shown to be the 1989 part. Forte crank
   18618 (was 2002 CW-XE01) was unlinked later the same day on the same reasoning. CW-XE00 is still held as a
   possible duplicate of 2002, whose VeloBase specimen is unnumbered with 50-40-28
   rings; VeloBase dates the XCE group from 1989.
@@ -2584,7 +2743,8 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
   V-GT Luxe (1974-76). The '74 Products catalogue shows the 4902 replacing the 385 g 4900 and the 1975 catalogue calls
   the 4902 "VGT"; the same bike prints "V.G.T. Luxe" in 1975. Bike-scoped 1974 Mirage entry added to `'sun tour vgt'`.
 - 4791 RD-XE01-GXB, XCE: VeloBase `year_from` placeholder 1980 -> 1992 (1992-1992). The 1990 catalogue (source 385)
-  marks XCE new for 1990 as RD-XE00 (11056); XE01 is the 1992 code. Supersedes the 1992 note's "no earlier bound".
+  marks XCE new for 1990 as RD-XE00 (11056); XE01 was then known from 1992.
+  The 1991 catalogue follow-up above subsequently moves XE01 to 1991.
   At that point front 2663 and crank 2002 still carried the 1980 placeholder;
   corrected subsequently in the front audit and 2026-11-17 crank review below.
 - Dates from explicit model prints (fitment evidence; no 1986 SunTour catalogue held; descriptions unchanged): `year_to`
@@ -2599,7 +2759,8 @@ heads both XCE (p.16) and XCT (p.17) as "'90 NEW COMPONENTS".
 ## Front derailleur audit fixes — 2026-11-15 (user approved; audit items 1-4)
 
 - 2663 FD-XE01-GXH, XCE: VeloBase `year_from` placeholder 1980 -> 1992 (1992-1992), as rear 4791; the 1990 catalogue
-  introduces XCE as FD-XE00 (11057). The remaining crank 2002 placeholder
+  introduces XCE as FD-XE00 (11057). The 1991 follow-up above subsequently
+  moves XE01 to 1991. The remaining crank 2002 placeholder
   was subsequently corrected in the 2026-11-17 review below.
 - Dates from explicit model prints (fitment evidence; no 1986 SunTour catalogue held; descriptions unchanged): `year_to`
   1985 -> 1986 on 2620 FD-2500 AR (1986 Miyata 100, Raleigh Technium 440), 2629 FD-3300 Cyclone (Miyata 710 "New
@@ -2705,8 +2866,9 @@ Tangent/1989/source325/Brakes/value guards, and review the generator decision.
   retain `year_to` 1992 and source_ref 98. The 1992 catalogue printed p.17,
   item 12 explicitly lists CW-XE01, 48/38/28T, 170/175mm:
   https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1992_-_page_17.html.
-  This records the earliest held attestation of the coded XE01, not a proven
-  production start or discontinuation. 1990 printed p.16 lists CW-XE00,
+  This was the earliest held attestation at that review; the 1991 follow-up
+  above subsequently moves XE01 to 1991. Neither is a proven production start
+  or discontinuation. 1990 printed p.16 lists CW-XE00,
   48/38/28T, 165/170/175mm instead; it does not attest XE01.
   Earlier notes leaving 1980 as a bucket are superseded for the current
   catalogue identity only; XCE 4050/4051 parts are already attested in 1989.
