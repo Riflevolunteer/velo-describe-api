@@ -1702,8 +1702,9 @@ not print the model code. [German brochure](https://vintagecannondale.com/cannon
 - Not added (no DB category): SO-M900 / SO-M730 skewers, DF-M730 chain
   deflector, SM-SP17 cable guides, SM-ST10 / SM-CS50 / SM-ST74, tools,
   cable and casing, brake shoes, footwear and SPD cleats.
-- Left unresolved: descriptions of the 53 year-extended rows were not
-  enriched from the 1995 spec tables (weights, capacities); 7558 SP-7410
+- At the original pass, descriptions of the 53 year-extended rows were not
+  enriched from the 1995 spec tables; the later full-range follow-up below
+  supersedes that historical status. 7558 SP-7410
   1986-1986 (source 73) is NOT a duplicate (the 1986 semi-oval B-type
   SP-7410, distinct from the 1994 SP-7410, id 5895) and was left; FD-M566
   (2494, no dates) and FD-M738 (2504, 1996-1998) not in this manual;
@@ -1714,6 +1715,59 @@ not print the model code. [German brochure](https://vintagecannondale.com/cannon
   year, not a firm date. Capped at 1994 (not in the '95 manual): RD / ST /
   FH / HB-M900, FC-M900 (1848), FH-M560 / HB-M560-F / FC-M560, FD-M563,
   ST-MC30 (6369), Altus C50 / Tourney / STX MC30 parts.
+
+### 1995 specification follow-up — partial application, 2026-11-22
+
+Live readback of the 53 historically year-extended IDs shows many have since
+been enriched by later sources, so the historical list is not a current change
+set. The original
+[p.32](https://www.disraeligears.co.uk/site/00_main_images/shimano_bicycle_system_components_-_95_page_32_main_image.jpg)
+gives FC-MC32 (1843) 42/32/22T, 94/58mm bolt circles and 170/175mm arms,
+and RD-MC32 (4537) seven speeds, 11–32T sprockets, 20T maximum front
+difference and 38T total capacity. Applied these two description enrichments
+to 1843 and 4537 with source_ref 174; old descriptions were respectively
+`Shimano FC-MC32, STX, Japan` and `Shimano RD-MC32, STX, Japan`. Readback
+confirmed both descriptions, unchanged dates and provenance, lengths within
+255 characters, and a repeat of the guarded updates affected zero rows. Their
+1993 start dates remain unresolved and are not established by this table.
+P.17 gives PD-M737 510g/pair, differing from the earlier 450g figure already
+on 7666; the later full-range reconciliation below preserves both figures.
+The source URLs for other pages follow the p.32 filename pattern.
+
+### 1995 full-range reconciliation — applied and validated, 2026-11-22
+
+The 1995 manual's MTB, junior, hybrid, Nexus, road and technical pages were
+compared with current records. The earlier pass already covered most codes.
+Applied 17 guarded description
+updates (986, 1203, 2503, 2532, 3108, 4532, 5892, 5894, 6368, 7569, 7666,
+7668, 7671, 7737, 7756, 7758, 7760), two end-year extensions (7751 and 7757,
+1994 to 1995), and one conditional insert for FD-MJ12, component 12270,
+source 174. All 19 updates and the insert affected one row each; readback
+confirmed their values and no description exceeded 255 characters. An identical
+rerun affected zero rows. Shimano duplicate report was unchanged; the new
+FD-MJ12 and the two changed shifter codes appear in no live bike specifications.
+The generator/live comparison was identical before and after, including its
+15 pre-existing lost matches; no bike links changed. The quality report had
+zero structural errors and the same review finding count before and after.
+
+The missing FD-MJ12 is named in 1994 pp.36–37 and 1995 pp.36/66; 1994 p.37
+specifies 14T capacity, 38T top ring, 28.0–28.6mm band, 68–73° chainstay,
+painted steel band, chrome-plated steel cage and 155g. The 1995 chart pairs it
+with FC-MJ12 38/28T. The two shifters are shown in 1995 pp.38 and 69; neither
+has a linked bike spec or generator reference. P.39 misprints ST-C040 as
+ST-M040. P.55 corrects 7671 cassette V/W ratios to 13–26 / 12–25T. The 1992
+manual p.5 and 1995 p.17 both give CS-M900 Q with 16T, correcting the former
+15T on 7668; the P weight is 332g in 1992 and 316g in 1995. The 1992 manual
+p.6 and 1995 p.17 both give HP-M900 119g, correcting the former 170g attribution.
+The 1991 p.55 and 1995 p.17 PD-M737 weights differ (450g and 510g per pair).
+
+Conflicts held for further evidence: the 1994 p.39 FC-C700/C400 table gives
+110/58mm bolt circles while 1995 p.39 prints 100/58mm; CS-HG70-C 11–21T on
+1995 p.39 conflicts with the ac 11–28T table on p.17. The 1995 road table
+prints BL/BR-1056 where photos and comparison pages use 1055; FH-HG50's 235g
+appears to repeat the adjacent front hub figure. HB-6400 overlapping rows and
+the CS-HG70-8 versus CS-HG70-I configuration need identity review before
+merges or new variant rows. Do not infer unique identities from these conflicts.
 
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
@@ -2841,3 +2895,25 @@ Exact readback verified the description, **2003–2007**, source **408** and zer
 linked bikes. Guarded SQL affected one row, then zero on replay. To restore,
 guard by ID, UUID, source, dates and the applied description, then reinstate
 the 231-character description recorded in the 2026-11-15 review above.
+
+## 1995 reconciliation — restoration values, 2026-11-22
+
+Descriptions and source references immediately before the applied reconciliation; restore only if the row still matches the applied state. Shifters 7751 and 7757 previously had year_to 1994 and source_ref 173.
+
+ - 986, source_ref 275: Shimano BR-M737, Deore XT, Japan
+ - 1203, source_ref 365: 8-speed HyperGlide cassette with light-alloy sprocket carriers, 256g R-group.
+ - 2503, source_ref 1: Shimano FD-M737, Deore XT, Japan
+ - 2532, source_ref 365: Shimano FD-A553-GS, RX100 (triple), Japan. Band front for triple chainwheel, new for 1992, SG compatible, leading-action pantograph, rigid guide, compact, 28.0-28.6mm (Aug 1991).
+ - 3108, source_ref 83: Shimano HP-M900 / HP-M901 / HP-M902, XTR M900, Japan. Off-road headset, contact seals on upper and lower cones, alloy: HP-M900 1in BC or M25, M901 1-1/8in, M902 1-1/4in, 170g (HP-M900) (Aug 1991).
+ - 4532, source_ref 275: Shimano RD-A550-GS / RD-A550-SS, RX100, Japan. 6 / 7-speed SIS rear, SS short (28T capacity, 280g) and new GS long cage for triples, sintered and Centeron pulleys, B-tension (1990 manual, Aug 1991). 280g measured.
+ - 5892, source_ref 275: Shimano SP-M730, Deore XT M730, Japan. Long Cr-Mo seat pillar, high strength, 26.6 / 26.8 / 27.0mm, 280 / 330mm long, 296g (330mm) (1990 manual).
+ - 5894, source_ref 275: Shimano SP-7400-B, Dura-Ace, Japan, 261 grams
+ - 6368, source_ref 365: RX100 Dual SIS STI brake and shift lever pair, 8-speed rear / double front, Super SLR braking; 518g actual.
+ - 7569, source_ref 174: Shimano HP-R500, road headset, Japan, 1990 manual: sealed road head parts, steel lock nut, resin cups, white, silver or black, 121g, BC 1 x 24; RX100, Exage EX, Deore LX, Exage LX, 200GS
+ - 7666, source_ref 174: Shimano PD-M737, Deore XT (SPD), Japan, first SPD clipless pedal, new for 1991, dual-surface binding, cleat tension adjuster and indicator, cartridge axle, 31 deg clearance, black alloy, Cr-Mo axle, 450g pair; SH-M100 shoe
+ - 7671, source_ref 275: Shimano CS-HG90-8, 600 Ultegra (8-speed HG), Japan, 8-speed HG cassette, chrome plated, S 12-21 / T 13-23 / U 12-23 / V 12-25 / W 13-26T, narrow chain, 250g (S group with spacer)
+ - 7737, source_ref 277: Shimano BB-CS21 / BB-CS11, Altus, Japan, sealed cartridge bottom bracket, easy assembly, full sealing, maintenance free, 122.5mm spindle, 68 / 70 / 73mm shells; Altus C10 / C20 / C50, Tourney 30 / 20 / 15
+ - 7756, source_ref 174: Shimano RD-C400, 400CX, Japan, hybrid 7-speed SIS long cage rear, 11-21T, 22T front difference, 32T capacity, adjustable return spring, double Servo-Panta, sealed, barrel finish
+ - 7758, source_ref 174: Shimano BR-C400 / BR-C401, 400CX (M-System), Japan, hybrid M-System cantilever, unit-link, BR-C400 S size, BR-C401 M size, rigid shape, sealed internal spring, easy cable attachment
+ - 7760, source_ref 174: Shimano FH-C040 / HB-C400, 400CX, Japan, hybrid 7-speed SIS freehub for 11T HG cassette, Uni-Balance, 130mm, 32 / 36h; HB-C400 front 100mm, QR or nut, 228g
+ - 7668, source_ref 365: 8-speed HG cassette, lightweight Spider Arm design, P 12-14-16-18-21-24-28-32T or Q 12-13-14-15-18-21-24-28T, 332g (P group with spacer); in 1997 listed as CS-M900-I with semi-forged carrier, Q group 12-13-14-16-18-21-24-28T, 316g (P group).
