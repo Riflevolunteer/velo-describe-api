@@ -1694,7 +1694,8 @@ New components, all source 509, year 1991–1991; UUIDs are source_id:
     (mountain), Cyclone Mark-II, ARX, AR, Le Pree, Superbe Tech, Mountech, AG Tech,
     BMX, Trimec, 3-speed hub and coaster brake, freewheels and chains, fork ends,
     accessories, special tools, original goods, sprocket diagrams, gear capacity.
-    Gets no data_source row because no row changed.
+    The 2026-10-18 code-only comparison made no changes; the full-range
+    reconciliation below subsequently registered source 518.
 - Diff on 2026-10-18 (codes read against all 690 SunTour rows): No. 60 - 94 of
   the 107 codes read already had rows covering 1982; the other 13 were false alarms
   (CB-3000 / HC-1000 / HC-900 / SA-110 / SA-120 / SS-110 / SS-120 exist as CB-3100,
@@ -1702,6 +1703,17 @@ New components, all source 509, year 1991–1991; UUIDs are source_id:
   RD-2200) or the three year changes below. No. 63 - all 73 codes read already had
   rows covering 1985; CW-5050 and CW-7050 are the crank-arm versions of CW-5000 /
   CW-7000.
+- **No. 63 remaining-range triage, 2026-11-23, read-only:** the earlier No. 63
+  work above compared codes and year coverage, not a full description pass.
+  The 1985 archive attribution is not independently established by an imprint
+  in this sample. On [spread 04](https://cyclespeugeot.web.fc2.com/catalog/suntour85/1985suntour04l.jpg),
+  SP-2100 is 238g for the 200mm post; at triage 7832 said 208g without a length
+  or maker-edition qualifier. On [spread 12](https://cyclespeugeot.web.fc2.com/catalog/suntour85/1985suntour12l.jpg),
+  NW-6500's 13–18T and 13–24T configurations are 333g and 424g, while current
+  2240 gave 338g and 429g for those endpoints. Live 2240 has eight bike-spec
+  links; those links do not by themselves identify each freewheel's precise
+  tooth configuration. This was sample triage, not a full reconciliation; no
+  DB changes were made during triage; see the subsequent reconciliation below.
 - Updated, year_from -> 1982, source_ref -> 192 (years only, descriptions untouched):
   2235 LF-6000 / LF-7000 Micro Lite (was 1984), 3612 RH-4400 Sprint track hub (was
   1984), 7818 SA-100 / SS-100 series sealed bottom bracket (was 1984). No rows
@@ -1967,6 +1979,51 @@ New components, all source 509, year 1991–1991; UUIDs are source_id:
   Sport 5109 could take a 1975 `year_from` from this binder (they start 1978,
   1979, 1980; left because other catalogues set them); Huret 700 front 2385
   ends 1973 though the binder still lists a Luxe 700.
+
+## Edition No. 63 full-range reconciliation — applied and validated 2026-11-23
+
+- The Japanese [archive copy](https://cyclespeugeot.web.fc2.com/reminiscence/suntour85.html) attributes this edition to 1985; that attribution is provisional, not a verified imprint or an introduction date. The archive skips image number 11, but spread 10 ends at printed p.18 and spread 12 starts at p.19. The reviewed component pages are 3–22; pp.23–30 cover frame fittings, tools, goods and reference diagrams.
+- Registered catalogue source 518; updated descriptions of 466, 1052, 1420, 1426, 2235, 2236, 2237, 2238, 2240, 2250, 3616, 3622, 4015, 4685, 4708, 4710, 4711, 4723, 4725, 4727, 4729, 4756, 4761, 4763, 4768, 5935, 7785, 7786, 7788, 7789, 7809, 7813, 7817, 7818, 7820, 7821, 7822, 7832, 7833, 7840, 7843, 7845, 7847, 8284, 8291 and 10063. Both year changes rely on the archive's 1985 attribution: BH-1700 7807 `year_to` 1984 → 1985 (previous source 88), and the combined BH-1600/BH-1800 7993 `year_from` 1990 → 1985 (previous source 385); p.5 shows both models.
+- No.63 p.5 specifies SP-2100 7832 at 238g for 200mm; its previous 208g is retained as an earlier recorded figure with uncertain original attribution. No.63 p.7 gives RD-6200 7822 a 28T capacity, while its own summary table and No.62 give 30T; retain the difference. New Winner 2236/2237/2238/2240 weights in No.63 differ by 5g from the Nov 1978 poster (source 289); retain both sets, without claiming a cause. No.63 lists SA/SS-190 and -160 alongside the existing sealed BB series 7818, and lists TH-2000 with LS-4900 7847.
+- Added BH-1900 track hubs 12342, separately listed on p.5 with NJS approval and 100/120mm or 100/110mm spacing, and TH-2000 3-speed hub 12343 on p.22 with a band brake and LS-4900 lever. No deletes or bike links were changed. FD-2700 variants 2607/2608 and the three-pulley RD-6700 4751 are not identified by these scans, so were not merged or relinked.
+- The initial TH-2000 insert guard matched the updated LS-4900 lever description and skipped the hub; narrowing the guard to exclude lever titles inserted it. Readback verified all 48 changed rows and both new hubs; a complete SQL rerun affected zero rows. The bike-link comparison remained at 15 pre-existing proposed losses unrelated to SunTour, zero gains and zero changed matches; the SunTour near-duplicate report returned zero pairs.
+
+### No. 63 component inventory
+
+* Superbe Pro p.3: RD-5200 4768; FD-2000 2652 (not the unrelated later Alpha 2000 ID 11383); FD-2060 7830; LD-3200 6299; LD-3250 6300; LD-4600 7831; LD-4650 6301; BH-1500 3616.
+* p.4: CB-3600 1050; CB-4100 1051; CB-3200 462; CB-2200 464; CW-5000/CW-5050 1991; PL-4000 4009; HS-150 3136.
+* p.5: SP-2100 7832; SP-6000 1426; CW-6000/CW-6050 1992; PL-2000 4010; BH-1600 3617 (also combined later entry 7993); BH-1700 7807; BH-1800 combined 7993; BH-1900 12342; HC-100 6388. BH-1800 and BH-1900 are NJS approved; 36-hole 100/120mm 557g/552g and 100/110mm 550g/545g respectively according to table. BH-1800 is in the combined BH-1600/BH-1800 row 7993; both are shown in No.63.
+* Superbe p.6: RD-5300 4763; FD-3000 2646; FD-3060 7833; HS-100 3135; HS-300 7819.
+* Cyclone p.7: RD-6000 4739; RD-6200 7822; RD-6800 7823; FD-3300 2629; FD-3360 7824; FD-3700 7825; LD-3700 6278; LD-3750 7826 (also mentioned in 6278); LD-3800 6279; LD-3850 7826 (also mentioned in 6279).
+* Cyclone p.8: CB-7100/CB-7000 1037; CB-8100/CB-8000 1036; CB-7200 454; CW-7000/CW-7050 1982; PL-5300 4002; BB-400 167; BH-2200 3606; SP-6100 1420.
+
+- p.9: XC RD-6300 4778, FD-3500 2656, PL-5100 4015, LD-3600 6308, CB-6000 / CB-6100 brake set 1052, CB-6200 lever 466, BH-1400 3622. HL-3000 head binder is accessory.
+- p.10: MS-1400 6695, SP-2000 5935, BH-2300 7845, RH-4800 3623, PT-6300 2250, MP-1000 4001; QR-170 seat binder accessory.
+- p.11: Cyclone Mark II RD-3500 4742, RD-3700 4743, FD-2300 2632, FD-2400 7791, LD-2300 6282, LD-2350 6266; ARX RD-4300 4727, FD-2600 2621.
+- p.12: ARX RD-4500 4729, LD-3300 6272, LD-3350 7802; AR RD-4200 4725, RD-4400 4723, FD-2500 2620; RH-4400 3612, BH-4600 and BH-4700 7809.
+- p.13: Le Pree RD-6100 4749, RD-6700 7827, FD-3400 2637, RH-4900 3608, LD-3900 / LD-3950 7828, LD-4000 / LD-4050 7829. The illustrated RD-6700 is standard two-pulley GT; do not conflate the unusual 3-pulley specimen 4751.
+- p.14: Superbe Tech RD-4700 4761; Mountech RD-4900 7785, RD-5500 4711, FD-2700 2607 / 2608 (catalogue image cannot safely resolve v1/v2); AG Tech RD-5000 4710, RD-5600 7786, FD-2800 2609.
+- p.15: BMX BH-1000 / BH-1100 10059, BH-1200 / BH-1300 10060, MH-1000 8292, MH-1500 8291.
+- p.16: HB-6200 10062, HB-6100 10061, MF-2000 8284, MF-3000 single speed 10066 (not the older two-speed 8286), SA-180 10065, MS-1000 8290, MS-1100 10063, MS-1200 10064. HL-1000 head lockup and MC-1000 seat clamp accessories.
+- p.17: RD-1900 4756, RD-1100 4702 (title begins 2600 / RD-1100), RD-2000 7788, RD-1200 7789, RD-2600 4708; FD-1400 2641, FD-1000 2601.
+- p.18: LD-1400 7792, LD-1500 6264, LS-1500 7793, LD-4200 / LD-4250 7835, LS-3900 7836, LD-4300 7837, LS-4600 7838, LD-3000 6288, LS-3500 7798, LD-4100 / LD-4150 7834, LS-2200 7799.
+
+| Catalogue model | Existing ID | Outcome / catalogue evidence |
+|---|---:|---|
+| LF-6000, LF-7000 | 2235 | 6-sp 13–18T 154g, 7-sp 12–18T 165g; corrected the old misleading parenthetical and retained VeloBase 160g. |
+| NW-5000 | 2236 | 13–17 289g; 13–24 391g; 1978 poster separately 294/396g. |
+| NW-6000 | 2238 | 13–18 363g; 13–24 451g; 1978 poster separately 368/456g. |
+| NW-6500 | 2240 | 13–18 333g; 13–24 424g; 1978 poster separately 338/429g. Preserve both, no assertion which is correct. Eight bike links exist. |
+| NW-7000 | 2237 | 12–18 361g; 13–24 457g; 1978 poster separately 366/462g. |
+| PC-5000 | 2242 | 14–18 335g already recorded. |
+| PT-5000 | 2245 | 14–18 335g already recorded. |
+| PT-3800 | 2244 | 14–38 580g already recorded. |
+| PN-6000 / PS-6000 | 7813 | Both printed; PS 13–22 430g, superseding the old 'No.61 only' description. |
+| FT-3050 / FS-1500 / MF-1000 | 7817 | FS 184g is specifically 18T; FT alternate 16–19–22. |
+| UC-6000 | 7820 | 7.3mm pin width, 342g/114 links. |
+| TZ-6000 | 7821 | Semi-ultra 7.5mm, 338g/114 links; retain prior compatibility facts but check their provenance before treating them as universal. |
+
+Page 21 also lists RD-6400 7839, RD-6600 7840, FD-3600 7841, FD-2900 2654, LD-4400/4450 7842, LS-4700/4800 7843, LD-3100 7804, LD-2700 7803, RD-2700 4685 and LS-2800 7844. Page 22 lists SA/SS-100 series 7818, DS-200/210/220/230 7846, CB-5000 8295, LS-4900 7847 and TH-2000 12343.
 
 ## SunTour New Winner multiple freewheel poster (2 scans, Nov 1978, VeloBase archive, data_source 289), 2026-10-29
 
