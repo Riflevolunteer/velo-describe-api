@@ -1,5 +1,38 @@
 # SunTour catalogs processed so far
 
+## XCD front FD-XD10-GXH identification — applied and validated 2026-11-22
+
+Hooprider's [box close-up](https://cdn.freewebstore.com/resize/244687/camera-uploads_2016-08-12-14.56.52.jpg/1200/1200/0/)
+reads `FD-XD10-GXH`. Its [box and unit photograph](https://cdn.freewebstore.com/resize/244687/camera-uploads_2016-08-12-14.56.43.jpg/1200/1200/0/)
+shows the same long, narrow outer cage slot, sculpted inner cage, black
+linkage and grey body as [2662's main photograph](https://velobase.com/CompImages/FDerailleur/B80767F4-F90B-4E92-9692-CBDE36E1D52A.jpeg).
+The [side view](https://cdn.freewebstore.com/resize/244687/camera-uploads_2016-08-12-14.57.26.jpg/1200/1200/0/)
+shows the bottom-pull cable anchor. The boxed comparison identifies the main
+specimen's construction. The two unrelated photos in the VeloBase gallery
+still have their separate evidentiary limits below. The [1990 maker catalogue,
+p. 13](https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1990_-_page_13.html)
+confirms FD-XD10-GXH, 28.6/31.8 mm clamps, 24T capacity (22T with oval
+chainrings) and 115 g for the 28.6 mm version. The main specimen's clamp size
+was not measured.
+
+Updated **2662** from `SunTour XCD 6000 (1990)` to
+`SunTour FD-XD10-GXH, XCD 6000`; search text from `SunTour XCD 6000` to
+`SunTour FD-XD10-GXH XCD 6000`; source_ref **1 → 385**. Description now reads
+“Bottom-pull triple front derailleur with grey body, black linkage and a slotted
+cage. 28.6 or 31.8 mm clamp, 24T capacity (22T with oval chainrings), 115 g for
+the 28.6 mm version.” The 1990 attestation and specimen ID
+`7C8AC7D8-1AB3-43F1-90EB-D891069C922D` are retained. For restoration use the
+previous title, search text and source above and the applied description in
+the next section. FD-XD00-GX **2661** remains a separate model.
+
+Removed the generator's proposed 2662 link for the 1990 Bianchi Axis
+`SunTour XCD Top Pull` value. The Axis has no corresponding live spec, and
+2662 has zero bike links. Readback confirmed one updated row and zero changes
+on replay. Normal, near and parenthetical duplicate scans returned no candidates
+for 2662. The full generator comparison over 118 loaded CSVs and 24,829 specs
+had identical findings before and after. The DB quality audit also had identical
+findings, with zero integrity errors. The matcher regression test passed.
+
 ## XCD mixed-gallery description — 2026-11-20, applied and validated
 
 User approved with “apply”. Guarded SQL inserted one catalogue source and
@@ -8,7 +41,7 @@ rows. SQL and validation scratch files were removed after exact readback;
 old/new values below preserve the restoration evidence. No component additions,
 merges, title, search-text, date, group or bike-link changes.
 
-**2662 applied description (213 characters):**
+**2662 applied description at the time (superseded above):**
 `XCD triple front derailleur; grey body, black upper linkage, slotted cage. Source gallery mixes constructions; FD-XD00-GX and 18T claims are not verified for its main specimen. Exact XD00/XD10 identity unresolved.`
 
 **Captured old description:**
@@ -113,9 +146,10 @@ XD00/XD10 construction key and was not used as identification evidence.
 its corresponding unit, or a maker service/parts drawing distinguishing XD00
 from XD10. A full model stamp on the main specimen would also resolve it if
 one exists. Another GX-only close-up, seller title or rereading the already
-held catalogue is insufficient. Keep 2661/2662 separate and retain the qualified
-description; no SQL prepared. Task downloads and renders were removed after
-recording their source URLs.
+held catalogue is insufficient. This review kept 2661/2662 separate and
+retained the qualified description. The 2026-11-22 boxed specimen above
+supplied the evidence needed to update 2662. Task downloads and renders were
+removed after recording their source URLs.
 
 
 ## XCD freehub 3630 specimen and Axis review — 2026-11-18 (description correction applied)
@@ -1857,7 +1891,8 @@ VeloBase pages for the 53 remaining stub rows were read for model / marking fiel
   1975); description now says it is a finish variant of 2616.
 - **Kept apart:** the three-pulley rows from their standard rows (4778 / 4779, 4751 / 7827
   registered in `REVIEWED_NOT_DUPLICATES`; the duplicate report still lists them as
-  generation pairs). Not changed: 2662 (VeloBase FD-XD00-GX vs the 1990 FD-XD10, open), 2631,
+  generation pairs). This pass left 2662 open. Its 2026-11-22 boxed identification
+  is recorded above. Other rows left as they were: 2631,
   4712 (earlier decisions); unsourced decade dates on 4765 / 4751 / 4779 / 4734.
 - Validation: 15 rows, rerun 0; all 93 bike CSVs regenerate identically; no dangling
   bike_spec references; no quality-report findings.
@@ -1946,7 +1981,7 @@ were removed after validation.
 | 2618 | Vany double, steel cage, pivot-arm design; Suntour Vany JAPAN clamp marking; no numbered model or date. |
 | 2631 | VeloBase model FD-CL10-SS-H, white Cyclone 7000, 18T capacity, 107g; page also describes -SS-B and lists both clamp/braze-on mounting. This is not enough to choose a merge into 7855 hinged or 2630 braze-on. Existing decision moving spec 1309 to 2630 remains unchanged. |
 | 2636 | Hero double, chrome steel cage, 28.6mm clamp, 8mm wrench bolts, no stop. Page transcribes marking as SUNTOUR HERE; retain that attribution rather than inventing a model. |
-| 2662 | Earlier review captured VeloBase's FD-XD00-GX, 28.6mm, 5mm Allen bolts and 18T claims. Superseded by the mixed-gallery review and applied qualified description above: those details are not securely attributed to the main specimen; exact XD00/XD10 identity remains unresolved. |
+| 2662 | Earlier review captured VeloBase's FD-XD00-GX, 28.6mm, 5mm Allen bolts and 18T claims. The [boxed-specimen match](#xcd-front-fd-xd10-gxh-identification--applied-and-validated-2026-11-22) now identifies the main specimen as FD-XD10-GXH. |
 | 3130 | HS-400, sealed, aluminium/steel, steel crown/upper head race, twenty 3/16in balls per race, English/Italian or French threading. No dates. |
 | 3131 | Alpha 3040 steel headset, twenty 5/32in balls per race, 26.4mm crown race, 25.4mm x 24TPI; Suntour Alpha Japan cup. Page says unknown start to late 1990s, not a precise 1990 attestation. Keep current dates pending evidence. |
 | 3611 | **Photo confirms cassette freehub**, SL decal, low flange, QR; fields specify 126mm and 32/36 holes. VeloBase model HB-SL01-R conflicts with catalogue FH-SL01. Photo `https://velobase.com/CompImages/Hubs/FF46824B-F2D7-46E2-823D-3779EB814BEC.jpeg` inspected. The earlier photo-check action is complete: compare its generation/cassette with 7989 FH-SL01-7 before merging; no threaded-rear-hub source hunt is needed. |
@@ -2365,8 +2400,8 @@ Retitles (old -> new; search_text rewritten with the same guarded update):
 
 Seven catalogue entries have possible existing specimen matches requiring stronger identity evidence:
 
-- p.13 `RD-XD10-GXB`: Unnumbered later long-cage 4789 may be this model; existing notes explicitly prohibit identifying it by photograph alone. Catalogue establishes code but identity remains unresolved.
-- p.13 `FD-XD10-GXH`: Unnumbered 2662 SunTour XCD 6000 (1990) may depict this model. Original gallery and additional close-ups reviewed above; retitling or adding a duplicate still requires a maker-labelled specimen or model-specific construction key.
+- p.13 `RD-XD10-GXB`: Unnumbered later long-cage 4789 may be this model. On 2026-11-22 the [Chouchin Cycle photos](https://chouchincycle.shop-pro.jp/?pid=190702469) showed the matching logo, grey knuckles and sculpted AccuShift Plus cage seen in [4789's sole image](https://velobase.com/CompImages/RDerailleur/ED6DC1BE-BFE5-4D2A-9AFA-0D5BE6922938.jpeg). The pictured instruction sheet lists multiple models and the gallery gives no readable, unit-specific mark. Page 13 illustrates two cage lengths. Keep the existing uncertainty until a labelled unit or measured cage comparison distinguishes the variant.
+- p.13 `FD-XD10-GXH`: **Resolved 2026-11-22.** The [labelled box and matching construction](#xcd-front-fd-xd10-gxh-identification--applied-and-validated-2026-11-22) identify 2662, which now carries this code and source 385.
 - p.14 `FH-XD11-7U`: Existing unnumbered 3630 XCD 6000 freehub may be this or an earlier hub. [Original specimen and Axis review](#xcd-freehub-3630-specimen-and-axis-review--2026-11-18-description-correction-applied) completed 2026-11-18: no exact code recovered; need specimen code/measurements or coded fitment before changing/adding.
 - p.15 `SL-PP00-R7U / SL-PP00-R6R / SL-PP00-L`: Unnumbered 6305 X-1 trigger style may be this model; inspect original reference before retitling or duplicating. **Resolved 2026-11-14 (user approved):** the VeloBase page gives group X-1, model "X-press", 1990, 7sp AccuShift Plus; the only 1990 X-1 X-Press is PP00. 6305 is retitled `SunTour SL-PP00-R7U / SL-PP00-R6R / SL-PP00-L, X-Press (X-1 / XCE / XCM / XCT)` with source 385. The 1990 Bianchi Nyala (XCT) and Osprey (X-1) X-Press shifters moved from 6312 SL-XP10 to it. Follow-up the same day: 1990 Project 7 / Grizzly (XC-Pro) moved from 6312 to 6316 SL-PP10. p.10, the XC-Pro page, lists SL-PP10 (stock 33119571, as p.12), and 6312's 1990 start is VeloBase-only.
 - p.16 `SL-CR00-R7U / SL-CR00-R6R / SL-CR00-L`: Existing6306 originally X-1 thumb style, Chroma group and yellow accents, now retitled SL-X102 by 1992 pass. Original has no exact model field; hold likely duplicate.

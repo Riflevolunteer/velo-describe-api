@@ -2,6 +2,12 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('1990 Bianchi Axis top-pull front derailleur cannot select the bottom-pull XCD', () => {
+  const records = [{ component_id: 2662, title: 'SunTour FD-XD10-GXH, XCD 6000', category: 'Front Derailleurs' }]
+  assert.equal(matchComponent('SunTour XCD Top Pull', records, null, 'Front Derailleur', 1990, 'Axis'), null)
+  assert.equal(matchComponent('SunTour FD-XD10-GXH', records, null, 'Front Derailleur', 1990, 'Axis').component_id, 2662)
+})
+
 test('MBK 1986/87 named tyres and Sedisport retain their reviewed identities', () => {
   const records = [
     { component_id: 6835, title: 'Michelin Hi-Lite Comp', category: 'Tyres' },

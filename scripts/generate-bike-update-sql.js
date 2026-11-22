@@ -904,7 +904,7 @@ const COMPONENT_OVERRIDES = {
     'shimano exage 500ex': [{ from: 1990, to: 1992, id: 7570 }], // FD-A500
     'suntour xc pro top pull': [{ from: 1990, to: 1992, id: 2659 }], // FD-XP00 / XP01, XC-Pro (no 1990 Top-Pull row; TP10 is 1992)
     'suntour xc comp top pull': [{ from: 1990, to: 1992, id: 7959 }], // FD-XC01, XC-Comp (only XC-Comp front row, dated 1992)
-    'suntour xcd top pull': [{ from: 1990, to: 1990, id: 2662 }], // XCD 6000 (1990)
+    'suntour xcd top pull': [{ bike: 'Axis', from: 1990, to: 1990, id: null }], // FD-XD10-GXH is bottom-pull.
     'suntour xce top pull': [{ from: 1990, to: 1992, id: 2663 }], // FD-XE01, XCE
     'suntour xce 4050': [{ from: 1989, to: 1989, id: 11396 }], // 1989 Bianchi Forte / Volpe: FD-XE45-GXH, XCE 4050 (SunTour Edition No. 89, the 1989 line; relinked 2026-11-16)
     // 1986-87 Colnago Super Mountain Bike / 1986 Raid "Shimano AL 11" group: FD-AL11 (1980-87 since 2026-11-01).

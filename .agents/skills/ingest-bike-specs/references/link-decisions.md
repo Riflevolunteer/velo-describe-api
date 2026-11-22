@@ -541,6 +541,12 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Front Derailleurs
 
+- The 1990 Bianchi Axis CSV's `SunTour XCD Top Pull` stays unlinked under a
+  bike/year-scoped override. The boxed FD-XD10-GXH identifies **2662** as
+  bottom-pull. The US catalogue's p. 22 prints top pull for the Axis without
+  a model code. Verified there was no corresponding live spec to update.
+  [SunTour verification](../../ingest-component-catalog/references/known-catalogs/suntour.md#xcd-front-fd-xd10-gxh-identification--applied-and-validated-2026-11-22).
+
 - Rival front review 2026-11-16: retain the existing links while seeking
   code/construction evidence. PXR 80 **16962** needs a triple/cage check:
   its 30/40/50 rings require 20T, while manufacturer sheets conflict on

@@ -163,7 +163,7 @@ numbers. Full model inventories and transcription are pending.
 | [1994, 23 pages](https://www.bikecatalogs.com/download/2801) | English North American range. Rear cover names Bianchi USA and Bianchi Canada and carries code M694. | Road, Reparto Corse, MTB and cross-terrain blocks with specs beside the models. Legible. Some handwritten dealer prices. |
 | [1995, 28 pages](https://www.bikecatalogs.com/download/2802) | English Bianchi USA range. Rear cover also lists Canadian and Australasian offices. The 110th anniversary model and 1994 race results support the archive's 1995 dating. | Legible consolidated specification tables on pp. 23–27, following geometry on p. 22. |
 | [1996, 23 pages](https://www.bikecatalogs.com/download/2804) | English Bianchi USA, ©1996 on p. 23. | Legible road/MTB/cross-terrain tables on pp. 16–22. Several PDF pages are spreads. |
-| [1996 German-language, 33 pages](https://www.bikecatalogs.com/download/2803) | German-language edition with a Thalinger Austria price sheet appended, effective 1 January 1996. The price sheet names a separate Austrian equipment specification. | Legible model specs on the illustrated spreads, with road pp. 7–13. Establish the market of the main catalogue separately from the Austrian insert before ingesting. |
+| [1996 Austrian-distributed, 33 pages](https://www.bikecatalogs.com/download/2803) | German-language copy with Thalinger GmbH of Wels printed on the rear cover (PDF p. 1), plus its separate Austrian price sheet effective 1 January 1996 (p. 33). | Illustrated specs, including road pp. 7–13, and model tables on pp. 31–32. Use the insert only for explicitly listed Austrian variants. |
 | [1997, 24 pages](https://www.bikecatalogs.com/download/2805) | Cover-dated Japanese 1997 catalogue on pp. 1–19. Pp. 20–24 append different covers and sample pages, including an English 1997 product guide. | Main model images are about 320 px wide. Models such as Neuron Chorus are identifiable, but the component tables are too soft for reliable transcription. |
 | [1998, 31 pages](https://www.bikecatalogs.com/download/2806) | English Bianchi USA, in-catalogue 1998 text and Hayward imprint. The [Upcycles archive](https://upcycles.cc/blogs/catalog-archive/1998-bianchi-catalog-usa) also identifies this edition. | Legible model specs and geometry on pp. 29–31, including Alloro, Veloce, Campione, Eros, Trofeo, Premio, San Remo and Volpe on p. 29. |
 | [1999, 20 pages](https://www.bikecatalogs.com/download/2807) | Cover-dated Japanese 1999 road catalogue. Some pages are rotated. | Model names and photographs survive. Small Japanese build tables remain blurred at their native image size. |
@@ -172,6 +172,17 @@ The [collector's catalogue thread](https://www.bikeforums.net/classic-vintage/12
 reports a full US-market scan run through 1998 and a 1999 USA scan in post 8.
 The album and 1999 cover attachment were not retrievable. A new public copy
 of that album or sharper originals would reopen the 1997/1999 search.
+
+On 2026-11-22 all 33 rendered pages matched the [Rennrad-News copy](https://www.rennrad-news.de/forum/attachments/bianchi-katalog-1996-pdf.440144/).
+The Thalinger imprint is part of the rear-cover layout and establishes
+Austrian distribution for this copy. PDF p. 30 lists both Piaggio Deutschland
+and Thalinger Austria among Bianchi's international distributors. Treat this
+copy as Austrian-distributed and keep its illustrated range separate from the
+North American source. The insert explicitly mentions an Austrian equipment
+specification. For example, its SL 470 has an XT Mix/Grip build while p. 31
+shows an LX transmission, hubs and crankset with XT brakes. Preserve the
+printed specifications with their respective page evidence. The price sheet
+alone cannot supply the unprinted fields of a local build. No import applied.
 
 The archive's [1985 PDF](https://www.bikecatalogs.com/download/2790) is the same
 five-page introductory/photographic fragment described below. The collector's
