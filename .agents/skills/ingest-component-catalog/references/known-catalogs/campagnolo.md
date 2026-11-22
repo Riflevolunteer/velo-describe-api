@@ -1,5 +1,53 @@
 # Campagnolo catalogs processed so far
 
+## February 1987 Record brochure — inventory applied and validated 2026-11-22
+
+All 16 [manufacturer brochure scans](https://www.disraeligears.co.uk/site/campagnolo_-_record_february_1987_version.html) were inspected, source 414, printed February 1987. Scan numbers refer to the online images. Its component pages do not print assembly codes; codes below are existing identities cross-referenced to earlier/later maker books, not codes claimed to be printed here. It is a Record group brochure, so omission is not evidence for discontinuing other parts.
+
+| Scans | Inventory and reconciliation |
+| --- | --- |
+| 1–3, 8–9, 16 | Cover, history/team and race photographs, dated back cover; no additional component listings. |
+| 4–7 | Road group: early shield-logo rear 4096; front 2283, braze and clamp; Doppler 5970 and Syncro 5973 shifters. Rear capacity 30T, maximum sprocket 28T and front capacity 18T; details mostly already represented. Earlier rear and lever mechanisms confirmed; ordinary friction 5969 is not assigned to an unlabelled photo. |
+| 10–11 | Delta brake 560 and lever family; eight-arm mechanism, adjusters, material and lever quick release largely already captured. Lever 212/214 distinctions are not settled by this uncoded picture. The illustration itself does not prove a shipment date. |
+| 12 | Threaded headset 2954 with 5/32in balls; post family 5737/5738, listed 130/180mm and 25/25.8/26/26.2/26.4/26.6/27/27.2/27.4mm. The brochure does not cross-tab all diameters against each length or give component codes. Keep the short post's uncertain circular/styled identification and the earlier Mondiale-fitment decision separate. |
+| 13 | First-style road crank 1483, road bottom bracket 7014, road chainring family 11816. Hidden fifth fixing, forged Avional crank, self-extractor, heat-treated steel BB axle, alloy cups, retained bearings, sleeve and 39–57T chainring range. |
+| 14 | Road hubs 3240/3241 (large and small flange), road pedal family 3693 and ergonomic-pedal family 3695. The text describes 5/32in bearing balls, countersunk spoke holes and the blind quick-release cap. The pedal descriptions alone do not distinguish every named later version. |
+| 15 | Track set: solid-axle small/high-flange hubs 3242/3243, Pista BB 23 and headset 7024, track crank family 1484/1485, pedal 3693 and post family. Five fixing spokes and Avional are shown/described, but the uncoded picture does not distinguish the two track-crank specimen generations. Do not infer an exact new Pista pedal or change its dates. |
+
+Applied **six description-only updates**: crank 1483, headset 2954, high-flange road hubs 3240, long post 5738, road BB 7014 and road chainrings 11816. Each now cites existing source 414; 1483 already cited it. Manufacturer family sizing is qualified on 5738 rather than presented as a confirmed individual-length matrix; the 1987 maker 39–57T chainring range and 1990 retailer's stocked sizes are separately attributed on 11816. Existing measured weights and prior independent model codes are retained. Other illustrated components are either already detailed or lack a secure variant identification. No new rows, dates, merges, deletes, bike-link writes, generator or CSV changes.
+
+**Applied and validated:** six exact before-image guards matched and the approved transaction updated six rows; rerun changed zero. All six now cite source 414 and readback matched the proposed descriptions; titles and dates were unchanged. The normal duplicate report's 1483/1482 and 1484/1485 generation pairs remain distinct; near and parenthetical reports found no pairs. Quality baseline and post-load both had zero errors and 1,982 review findings. Generator/live comparison: 118 catalogues, 24,829 specs, no gained or changed matches and the same 15 known Huret lost proposals. The unlinked Record specs were reviewed: 1107/1127 still lack evidence distinguishing crank generations; generic group, ambiguous hub/post and other-period specs cannot be assigned from this brochure. No bike-link changes. Task-owned scans and SQL were removed after validation.
+
+Applied descriptions (all source 414):
+
+- **1483:** 306/101 C-Record crank, heat-forged Avional; shield near spider, hidden fifth chainring fixing, 135 mm BCD and self-extracting bolts 2350001. 652 g (53/42).
+- **2954:** 304/104 C-Record (A0D0) threaded headset; hardened steel races, 5/32in balls, aerodynamic alloy body and SELFORM membrane; British/Italian. 1987 retailer 99g; legacy 152g listing.
+- **3240:** 321/101 C-Record high-flange road quick-release hubs; cup-and-cone chrome steel bearings, 5/32in balls, countersunk spoke holes and blind-cap skewer. Also A330-FG; DPC88 A300-FG (A031-FG/A032-FG).
+- **5738:** A0R2/316-101 long aero post, tapered elliptical section, single-bolt clamp. Maker lists 180mm; 1987 retailer 25/27/27.2mm, 218g. Maker family sizes 25/25.8/26/26.2/26.4/26.6/27/27.2/27.4mm. Legacy specimen 210mm, 230g measured.
+- **7014:** 303/101 C-Record road bottom bracket, A0H0; heat-treated steel axle 303001, alloy cups 4033/4034, retained chrome-steel balls and polythene sleeve 2110. Road set with braze-on boss.
+- **11816:** C-Record replacement road chainrings, pressed light alloy with machined teeth. Maker 1987: 39-57T; retailer 1990 stocked 39/42/52/53/54T, with custom engraving on outer rings.
+
+Previous descriptions and source refs, for guarded restoration if needed:
+
+| ID | Previous source | Previous description |
+| --- | --- | --- |
+| 1483 | 414 | Campagnolo 306/101, C-Record, Italy. Engraved shield near spider, 135 mm BCD; 652 g (53/42), self-extracting bolts 2350001. Cat. n. 18 bis (12/1986); Record brochure (02/1987), scans 4/5/13. Availability evidence, not a production end date. |
+| 2954 | 475 | 304/104 C-Record(A0D0) threaded headset;hardened steel races pressed into aerodynamic alloy body,SELFORM membrane;British/Italian. 1987 retailer99g;legacy152g listing. |
+| 3240 | 110 | Campagnolo 321/101, C-Record (High Flange), Italy Record brochure (Nov 1987): A330-FG. DPC88: A300-FG (A031-FG/A032-FG). |
+| 5738 | 475 | Aerodynamic polished alloy post with tapered elliptical mid-section and single-bolt clamp;A0R2,316/101. 1987:180mm,25.0/27.0/27.2mm,218g. Legacy specimen described as210mm,230g measured. |
+| 7014 | 9 | Campagnolo 303/101, C-Record, Italy. Road bottom bracket set with braze-on boss; cups 4033/4034, axle 303001, sleeve 2110. Catalogue n. 18 bis (Dec 1986). year_from inferred from sibling C-Record rows. Record brochure (Nov 1987): A0H0. DPC88: A0H0. |
+| 11816 | 475 | Replacement road chainrings for C-Record; 39-54T options. Service list specifically offers39/42/52/53/54T; outer rings also offered with custom hand engraving. |
+
+## February 1987 Record brochure — initial scope review — 2026-11-22
+
+This historical triage preceded the full inventory and application above; it no longer describes the current reconciliation status.
+
+[Record brochure, February 1987](https://www.disraeligears.co.uk/site/campagnolo_-_record_february_1987_version.html), source 414, has 16 scans and was used for focused rear-derailleur and crank reviews, not a full component reconciliation. The later crank review also checked scans 6 and 7 for the rear and levers; the original scope statement below should not be read as saying those pages remain unexamined. The dated imprint is on scan 16.
+
+This triage visually checked scans 9–12 and 14. Scan 9 is a race photo; scans 10–11 describe the Delta brake and levers; scan 12 describes the headset and seatpost; scan 14 covers pedals and hubs. Scan 12 lists post lengths 130/180 mm and diameters 25, 25.8, 26, 26.2, 26.4, 26.6, 27, 27.2 and 27.4 mm. Live row 5738 currently cites retailer 1987 dimensions 25/27/27.2 mm for the long post; 5737 is the short post. Compare the illustrated and coded variants before applying the maker's uncoded size list to either record. The scan has no individual post codes and does not establish the unidentified 1987 Bianchi Mondiale post variant. Existing Delta row 560 already has much of the mechanism and chronology from other sources; the February brochure's depiction alone does not establish when the brake shipped.
+
+This is a sampled source and live-row comparison, not a full inventory or a proposed DB change. The likely benefit is manufacturer-backed details for existing C-Record parts; new identities or bike links are unproven. No data changes made. Task-created sample images were removed after recording the page references.
+
 ## Victory front availability and Tre Cime fitment — 2026-11-22
 
 The complete February 1987 *Nuovo Victory / Nuovo Triomphe* brochure
@@ -2038,7 +2086,8 @@ or bike links changed.
   source/index https://velobase.com/Pages/Resources/CatalogScans.aspx) PDF p.15 names C Record 53/42T
   for X4 and Mondiale; X4 adds pantographed/anodized rings. PDF p.4 photographs both complete bikes,
   but their small/custom-marked cranks do not establish engraved versus painted shield. Current specs
-  1107 / 1127 still link 1482. This supersedes the October note's assertion that the earlier row was
+  1107 / 1127 linked 1482 at that review; they were subsequently left unlinked (see link decisions).
+  This supersedes the October note's assertion that the earlier row was
   proved wrong-era: 1987 itself does not identify either row. Do not automatically reverse to 1483;
   obtain a distinguishing original close-up or period Bianchi parts crosswalk, or review deliberately
   unlinking these two specs. The existing generator's 1987 cutoff is not new identity evidence.
