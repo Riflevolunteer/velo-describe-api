@@ -244,6 +244,8 @@ The RA material decision and all DB/generator mappings remain unchanged.
 
 ## Spidel 700 STC code/material review — 2026-11-18, read-only
 
+Dating correction 2026-11-22: the catalogue's [printed p.27](https://forum.tontonvelo.com/download/file.php?id=303763) explicitly says ÉDITION 1978. The earlier external-attribution qualification below is historical; source 463's label/citation was corrected in the full STC reconciliation.
+
 Recovered the [STC catalogue attributed to 1978](https://forum.tontonvelo.com/viewtopic.php?t=39556),
 28 scans, including the separately supplied p.26. The occasionally cited topic
 39533 is a broken/wrong reference; use 39556. The cover has no printed year;
