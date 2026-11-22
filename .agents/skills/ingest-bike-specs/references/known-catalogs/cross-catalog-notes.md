@@ -282,6 +282,47 @@ inserted.
   894 linked) before the overrides; 899 after. The CSV has since been
   removed from bike_specs/, so a bare generator run is safe again.
 
+## Bike spec text truncation — 2026-11-22
+
+The generator/live comparison warned about three values longer than
+`bike_spec.value_text` (255 characters). A live query for values at the limit
+returned these same three specs, each stored as the first 255 characters of
+its local CSV value. All three are unlinked and have catalogue provenance.
+
+| Catalogue CSV | Bike and spec | CSV length | Details lost in storage |
+| --- | --- | ---: | --- |
+| `1978_peugeot_spec.csv`, source 239 | PR 65 Lady, Extras 13294 | 291 | Crankset 650 g, rims 410 g and tyres 400 g. The stored value ends in `Cra`. |
+| `1987_raleigh_spec.csv`, source 224 | Royal 18, Frame Material 8820 | 266 | Chain hook. |
+| `1987_raleigh_spec.csv`, source 224 | Randonneur 18, Frame Material 8843 | 291 | Chain hook and chainstay spoke holders. |
+
+The complete CSV transcriptions supplied the missing text. The original scans
+are identified in the [1978 Dutch Peugeot](peugeot.md) and
+[1987 UK Raleigh](raleigh.md) notes. Before the repair, the generator compared
+using the truncated values, so all three still paired with their live specs.
+
+### Applied and validated — 2026-11-22
+
+Condensed only the three affected cells in the local CSVs so all recorded
+details fit in the existing field. Applied a guarded text update to the
+matching live rows, retaining their IDs, labels, provenance and NULL links.
+
+| Spec ID | Exact stored replacement | Characters |
+| --- | --- | ---: |
+| 13294 | Sports carrier, bell, pump, rear fender reflector, stem-mounted Simplex Dural click levers, ladies' mixte semi-racer. Weights: frame 2000 g, fork 900 g, front derailleur 14T cap./118 g, rear 30T cap./299 g, crankset 650 g, rims 410 g, tyres 400 g. | 247 |
+| 8820 | Reynolds 531 Special Tourist tubing throughout, Shimano forged ends, short-point Super Leger lugs. Brazed-on cantilever brake/gear lever bosses, top-tube cable guides, twin bottle mounts, 1 pump peg behind head tube, chain hook. | 228 |
+| 8843 | Reynolds 531 Special Tourist tubing throughout, Shimano forged ends, short-point Super Leger lugs. Brazed-on cantilever brake/gear lever bosses, top-tube cable guides, twin bottle mounts, 1 pump peg behind head tube, chain hook, chainstay spoke holders. | 253 |
+
+For rollback, the previous saved values of 8820 and 8843 were identical:
+`Reynolds 531 Special Tourist frame tubing throughout, Shimano forged ends and short point Super Leger lugs; brazed-on fittings include cantilever brake bosses, gear lever bosses, top tube cable guides, twin bottle mounts, single pump peg behind head tube,`.
+For 13294 the previous saved value was
+`Sports carrier, bell, pump, reflector on rear fender; Simplex Dural click shift levers on the stem; semi-racer, mixed ladies' model; Weights: Frame Material 2000 g, Fork 900 g, Front Derailleur 14T capacity, 118 g, Rear Derailleur 30T capacity, 299 g, Cra`.
+
+Exact readback confirmed all three rows and one spec per affected bike and
+label. The guarded update affected three rows, then zero on rerun. The full
+comparison across 118 loaded catalogues and 24,829 specs differed only by
+the disappearance of the three truncation warnings. The quality report
+returned zero structural errors and the same review counts.
+
 ## Freewheel-label quality flags — 2026-11-20
 
 Read-only live review of all 35 `broad_freewheel_label` candidates: four
