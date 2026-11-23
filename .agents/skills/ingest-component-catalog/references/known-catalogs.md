@@ -14,7 +14,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (includes 2000 parts book and 2001 range/parts reconciliation, sources 441–443)
 - [known-catalogs/shimano.md](known-catalogs/shimano.md) — Shimano (30 entries)
 - [known-catalogs/suntour.md](known-catalogs/suntour.md) — SunTour (34 entries)
-- [known-catalogs/simplex.md](known-catalogs/simplex.md) — Simplex (9 entries)
+- [known-catalogs/simplex.md](known-catalogs/simplex.md) — Simplex (includes the 1939 French catalogue and insert, source 525)
 - [known-catalogs/barelli.md](known-catalogs/barelli.md) — Barelli Supreme pedals, Velo-Pages adverts and flyer (sources 439/440)
 - [known-catalogs/weinmann.md](known-catalogs/weinmann.md) — Weinmann (8 entries)
 - [known-catalogs/maillard.md](known-catalogs/maillard.md) — Maillard (4 entries)

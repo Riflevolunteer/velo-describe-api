@@ -208,6 +208,7 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  [4558, 12403], // Simplex Sélection Standard, articulated tensioner versus 1939 rigid tensioner.
   // Regina Oro construction review 2026-11-22. See known-catalogs/regina.md.
   [2179, 2182], // Five-speed BX versus threaded-cog Oro
   [2180, 2194], // Six-speed Extra BX versus threaded-cog Oro

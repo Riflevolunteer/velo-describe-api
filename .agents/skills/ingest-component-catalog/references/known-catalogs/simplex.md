@@ -1,5 +1,29 @@
 # Simplex catalogs processed so far
 
+## Le Simplex catalogue, 1939 — applied and validated 2026-11-23
+
+The [French maker catalogue](https://www.disraeligears.co.uk/site/simplex_1939_-_catalogue.html) prints 1939 on p.1. Twelve pages and both sides of the archived insert were checked. The insert itself is undated. Page 9 corroborates its Type 38 coverage with 1938 and 1939 mounting diagrams and explicit instructions to specify which front derailleur is being serviced. The import uses source **525**, `Le Simplex catalogue (1939)` (FR).
+
+| Pages | Record | Applied reconciliation |
+| --- | --- | --- |
+| 2–3, 11 | 4606 Route Léger | Specimen arm is marked Route Léger and has the two smooth steel pulleys, cam and D-shaped lower cage. Add the standard narrow three-speed package and optional four/five-speed variants. Its own detached hanger is unidentified. |
+| 2–3, 9, 11 | 4607 Route Léger Monobloc | The two-bolt bracket and oval adjustment slot match adjustable hanger 479 for Monobloc dropout 411. The fixed 406 is drawn separately. Add the external spring, smooth pulleys and package options. |
+| 2–3, 11 | 4590 Grand Prix Duralumin | The specimen is stamped Grand Prix Duralumin. The catalogue places this in the Route Extra-Léger range and keys alloy fork 272B and body 110B (three-speed or four-speed with narrow chain). |
+| 4, 9 | 2568 `Simplex Luxe or Type 39` → `Simplex Type 39, Luxe Front Derailleur` | Low mount, slotted fork 455, two independent travel stops and tandem 48 mm chainline. 300 g including lever. Retain the existing 1939–1955 bounds. |
+| 9 and insert | 2546 `Simplex (Standard or Grand Prix Duralumin)` → `Simplex Type 38 Front Derailleur (Standard or Grand Prix Duralumin)` | The reference artwork matches the tall triangular cage and cable approaching from below. The insert sells clamp, fixed braze-on and adjustable braze-on versions, in solo or tandem form. Extend the earlier front’s documented `year_to` 1938 → 1939. Retain the legacy 1934 start. |
+| 6–7, 11 | 4586 and 4587 Champion du Monde | Update both single-pulley steel variants with the oil-bath mechanism, independent limits, 8T rear spread and 24T maximum. The catalogue quotes 350 g with control, excluding freewheel. Retain 4587’s separately reported 214 g and its slotted claw. The mount code is unresolved for that specimen. |
+| 6–7, 11 | 4588 Champion du Monde Extra Leger | Specimen stamping matches the Extra-Léger. Catalogue weight is 300 g with control, excluding freewheel. Preserve the separately reported 177 g. |
+| Insert | Added 12403 Sélection Standard, rigid bayonet tensioner | A height-adjustable rear shift fork with a separate rigid crank-area tensioner, spoke guard and narrow three-speed freewheel. The earlier boxed 4558 uses an articulated, spring-hinged tensioner and parallelogram shift fork. Its 1934–35 dates and retrospective source 54 remain separate. |
+| 3–4, 7, 11 | Added 12404 469 Single Frame Control | P.11 sells a complete round-head lever. 469 identifies the 26–28 mm band, with other clamps 428/474/492/495, braze-on options and twin coupling bands. The later 6197, 6200 and 6201 specimens have different lever or body shapes. |
+
+The eight updated rows previously cited VeloBase (source 1). Their old descriptions were the old titles followed by `, France`, with `, 214 grams (Spec)` for 4587 and `, 177 grams (Spec)` for 4588. The original search texts of the two retitled fronts were `Simplex` (2546) and `Simplex Luxe or Type 39` (2568). Both added rows use 1939 as their documented availability year.
+
+The catalogue’s separate Luxe price column and chrome-series parts establish a Route Extra-Léger Luxe offering. Unmarked Grand Prix Type 4552 has a structurally related two-bolt mount, so an exact Luxe identification needs a marked part or material crosswalk. The insert’s prewar Sélection Tour de France uses a chain-release mechanism and separate fork/tensioner. The boxed Sélection Professionnel 4613 has a related rigid tensioner and possible auxiliary connection. A drawing or coded lever must distinguish the 286/287 chain-release assembly before creating a new row or extending 4613. The postwar Tour de France rows 4635/4639/4640/4641 use a different architecture and should be checked against the 1949–50 parts book.
+
+The 1939 Universel-Caoutchouté roller 488 with tread 489 is a separate accessory. The fit note excludes loose tread 439 from the Route Léger and Champion du Monde because of the resulting diameter. The Petit Tendeur is a stand-alone chain tensioner. The unnumbered narrow freewheel is documented as part of the derailleur package, with a patented freewheel option, optional four/five-speed variants and a separate rigid coaster-brake setup. Pages 8–9 and 11 also cover frame fittings, tools, mounts and service parts.
+
+Live readback matched all ten approved rows. The full SQL rerun changed zero rows. Bike link comparisons matched the baseline across 118 loaded catalogues and 24,829 specifications, with the same 15 prior discrepancies. The duplicate report flagged 4558/12403 as different generations, consistent with their different tensioners and shift forks. The old 2545/2546 title grouping disappeared after assigning Type 38. The only near pair remains the unrelated Simplex/Spidel SX440 T.
+
 ## Velo-Pages adverts — reviewed 2026-11-17, no DB changes
 
 User requested ingestion of the five recovered adverts. All five were visually read, their archived page titles checked, and the relevant existing component families queried. Dates below are Velo-Pages attributions, not printed dates independently established from the sheets. No model reference is readable in these adverts, so pictured parts alone do not establish a numbered identity or production boundary.
