@@ -2,6 +2,27 @@
 
 What has been searched for missing catalogues and evidence, with dead ends, site methods and leads, moved from TODO.md on 2026-11-15. Check here before searching again: do not repeat a logged search without a new lead. Add new hunts here, or to the brand's `known-catalogs/<brand>.md` when they concern one brand; TODO.md keeps only what is still wanted and the next lead.
 
+## Accessible archive inventory — 2026-11-23
+
+Read-only archive and repository-note check for component catalogue candidates:
+
+- [WTB 1994 catalogue and price list](https://www.gringineer.com/blogs/default-blog/1994-wilderness-trail-bikes-catalog-and-price-list): subsequently downloaded, reconciled and applied as source 519; see the [WTB catalogue notes](known-catalogs/wtb.md#1994-components-catalog-and-price-lists--applied-and-validated-2026-11-23).
+- [Spin 1997 catalogue](https://www.gringineer.com/blogs/default-blog/1997-spin-catalog): reconciled and applied as source 520; see [catalogue notes](known-catalogs/spin.md#1997-spin-catalogue--applied-and-validated-2026-11-23).
+- [Mavic 2009 Bike Systems ES](https://www.bikecatalogs.com/document/5801): recorded as a 26-page later-period candidate in [Mavic notes](known-catalogs/mavic.md#catalogue-backlog-and-scope-review--2026-11-19); the web reader could not access the listing in this pass, so current scan availability is not verified.
+- Older partial descriptions for OMAS, Rivendell No.4, Nashbar Spring 1988, STC 1978, Campagnolo February 1987 and Shimano 1989–92 are superseded by later full in-scope reconciliations in their catalogue notes. Branford 1990 and the 1994/95 and 1995/96 editions are also reconciled. No database query, page transcription, source registration or ingestion was performed in this inventory.
+
+## WTB 1994 catalogue — applied 2026-11-23
+
+The [catalogue and price-list photographs](https://www.gringineer.com/blogs/default-blog/1994-wilderness-trail-bikes-catalog-and-price-list) were downloaded and readable. The cover prints 1994 Components Catalog; the two separate WTB price lists also print 1994. The separate Specialized tyre list is undated and a separate letter is dated 15 June 1993; neither dates the other documents. The threaded bottom bracket page says available early 1994.
+
+The user-approved changes were applied and validated as source 519; see the [WTB catalogue notes](known-catalogs/wtb.md#1994-components-catalog-and-price-lists--applied-and-validated-2026-11-23) for the inventory, old values, identity limits and validation. The undated Specialized sheet and the American Classic post were not included in the approved change set.
+
+## Spin 1997 wheel catalogue — applied 2026-11-23
+
+The [Spin catalogue](https://www.gringineer.com/blogs/default-blog/1997-spin-catalog) has a cover explicitly printed 1997 and four readable interior/back images. Spin is identified as Innovations in Composites, Inc.; it is not the existing Spinergy brand. Three-spoke hollow carbon-fibre/nylon composite wheels use replaceable 6061-T6 aluminium rims. The catalogue lists ATB front and eight-speed rear with 23mm rims and natural or optional ceramic braking surfaces; 650C road front and eight-speed Ultegra-body rear with 20mm rims; BMX Expert and Pro with 1.50in and 1.75in rims and modular flip-flop hubs. Hub construction and bearing details are in the catalogue notes. Ceramic is retained as an option rather than duplicated rows; individually fitted hub parts and replacement rims are not presented as independently sold products.
+
+The approved source 520, brand 770 and six wheel records were applied and validated. See [Spin catalogue notes](known-catalogs/spin.md#1997-spin-catalogue--applied-and-validated-2026-11-23) for inventory, identity decisions and validation.
+
 ## Log
 
 ### Bike-link source priorities — 2026-11-21 (read-only)

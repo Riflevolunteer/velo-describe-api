@@ -57,6 +57,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/clement.md](known-catalogs/clement.md) — Clement (2 entries)
 - [known-catalogs/sansin.md](known-catalogs/sansin.md) — Sansin / SunShine hubs (2 entries)
 - [known-catalogs/wolber.md](known-catalogs/wolber.md) — Wolber (1 entry)
+- [known-catalogs/wtb.md](known-catalogs/wtb.md) — Wilderness Trail Bikes 1994 components and price lists (source 519)
 - [known-catalogs/swallow.md](known-catalogs/swallow.md) — Swallow Montello tubular tyre, Nashbar Spring 1988 (source 422)
 - [known-catalogs/vredestein.md](known-catalogs/vredestein.md) — Vredestein (1 entry)
 - [known-catalogs/hutchinson.md](known-catalogs/hutchinson.md) — Hutchinson HP22 (1982 / 1986 / 1989 bike catalogue evidence)
@@ -75,6 +76,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/tioga.md](known-catalogs/tioga.md) — Tioga1992 components (source362);1989/1991 reconciliation applied and validated (sources505/506), with configuration distinctions retained; missing1992 tyre pages documented
 - [known-catalogs/titec.md](known-catalogs/titec.md) — Titec 1997 maker catalogue/dealer sheet; source499, applied and validated
 - [known-catalogs/specialized.md](known-catalogs/specialized.md) — Specialized 1989 Components; source500, applied/validated, existing dates preserved
+- [known-catalogs/spin.md](known-catalogs/spin.md) — Spin 1997 composite wheels, source 520
 - [known-catalogs/ringle.md](known-catalogs/ringle.md) — Ringlé 1995 Racing Components; source501, applied/validated, separate road Zooka
 - [known-catalogs/paul.md](known-catalogs/paul.md) — Paul Powerglide/Love Lever variants; sources502/503, applied/validated, existing dates preserved
 - [known-catalogs/ukai.md](known-catalogs/ukai.md) — Ukai / Yanagihara Industrial rims (1 entry, 1980)
