@@ -26,7 +26,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/galli.md](known-catalogs/galli.md) — Galli (5 entries)
 - [known-catalogs/look.md](known-catalogs/look.md) — Look (4 entries)
 - [known-catalogs/universal.md](known-catalogs/universal.md) — Universal brakes (1 entry)
-- [known-catalogs/clb.md](known-catalogs/clb.md) — CLB (1 entry, 1989 GO! and Top Line brochures)
+- [known-catalogs/clb.md](known-catalogs/clb.md) — CLB (January 1957 catalogue excerpts, source 524; 1989 brochures and post-May-1980 technical catalogue)
 - [known-catalogs/cinelli.md](known-catalogs/cinelli.md) — Cinelli (4 entries)
 - [known-catalogs/sakae-ringyo.md](known-catalogs/sakae-ringyo.md) — Sakae Ringyo / SR (9 processed entries; Fuji 1989 SR models applied, source 412; Panasonic USA 1985-89 CT-P5E and 12 rows, sources 417-421)
 - [known-catalogs/peugeot.md](known-catalogs/peugeot.md) — Peugeot (1 entry)

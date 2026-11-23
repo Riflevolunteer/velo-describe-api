@@ -1,5 +1,50 @@
 # CLB catalogs processed so far
 
+## Early catalogue sources — assessed 2026-11-23
+
+| Source | What the available pages establish |
+| --- | --- |
+| [*Spécialités CLB*, January 1957](https://forum.tontonvelo.com/viewtopic.php?t=50662) | Nine photos. The printed footer repeatedly reads “Édition Janvier 1957”. The `1960–61` on the cover is handwritten. P.1 illustrates 650 Demi-Ballon, 700 Route and Course, Enfant and Course Compétition. Pp.2–3 distinguish Standard Mixte N.M., Cantilever Sport with brazed mounts, clamp-mounted cantilevers and the Baby model. Pp.4–5 show High Life, lever model codes and the C.M.C. Guidonnet. P.8 illustrates Guidonnet spares and shows the double-control assembly. The posted excerpts skip several pages, including pp.6–7. Start with the printed p.1–5 comparisons for the early brake and lever records. |
+| [*CLB vous présente ses fabrications cycles et motorisés*, attributed 1954](https://forum.tontonvelo.com/viewtopic.php?t=50666) | Eleven photos. The cover lists championships through 1953 and the inside cover carries a 1954 calendar. Pp.1–3 illustrate brake families, including the Cantilever Sport 1951 on p.3 with mounting instructions. Pp.6–7 show Guidonnets and the lever range. Pp.22–24 show brake spares. The excerpt skips several spreads. Use the calendar and cover as edition evidence and check the resolution of part codes before transcribing them. |
+| [*L’Officiel du cycle*, 18 October 1952](https://ebykr.com/library/lofficiel-du-cycle-1952-10-04-catalogue-clb-saint-etienne/) | The trade notice describes a small square colour CLB catalogue with a metallised cover. A scan of that edition remains to be located. Keep it distinct from the photographed 1954 catalogue. |
+| [CLB catalogue excerpt attributed to 1975](https://www.velovintageagogo.com/t30024-recherche-identification-de-vieux-velo) | The posted image shows brake-cable release fittings 246 and 247. The year is the poster's attribution and the image has no dated cover or imprint. The VeloBase index also lists a [CLB 1968–84 Velo-Pages collection](https://velobase.com/Pages/ViewBrand.aspx?BrandID=c4a05df5-a399-4c2e-98b7-8b0596a40d51), but its collection link returned HTTP 500. |
+
+The [November 1951 maker advert](https://ebykr.com/library/clb-1951-11-advertisement-nouveautes/) gives an earlier dated Cantilever Sport 1951 and Guidonnet cross-check. The archive also lists a [1953 CLB brake and grip sheet](https://ebykr.com/library/clb-1953-advertisement-freins-poignees/) with cycle and cyclomoteur items. The [October 1966 Racer](https://ebykr.com/library/clb-1966-advertisement-racer/) and [May 1971 Racer Demi-Ballon](https://ebykr.com/library/clb-1971-advertisement-racer/) advertisements remain the leads for the Racer variants. This source review made no database changes.
+
+## Spécialités CLB, January 1957 — applied and validated 2026-11-23
+
+Source **524**, `CLB Spécialités catalogue (January 1957)`, France, cites the [maker catalogue photographs](https://forum.tontonvelo.com/viewtopic.php?t=50662). Catalogue pages 1–5 and 8 carry the bicycle brake and lever evidence. The other pictured pages cover chain guards, fittings, workshop tools and motorized equipment. P.9 identifies its inverted lever and brake specifically for a cyclomoteur. The photographs omit pp.6–7 and other spreads. Dates below reflect documented availability in the pictured pages.
+
+| Pages | ID | Applied update |
+| --- | --- | --- |
+| 1 | 596 | CLB 650 Demi-Ballon. Models E1–E3 front/rear and F1–F3 reverse-pull rear, in three finishes. Moved `year_from` 1970 → 1957. |
+| 1 | 597 | CLB 700 Route and horizontal-fixing Course rear. Finishes A1–A3 and recorded lettering variants. Moved `year_from` 1970 → 1957. |
+| 2 | 604 | Cantilever Sport for brazed bosses, with safety tabs and short/long mount options. Replaced the 1950–50 bucket with 1951–57 using the [dated 1951 launch-era advert](https://ebykr.com/library/clb-1951-11-advertisement-nouveautes/) and the matching 1957 drawing. |
+| 1 | 608 | Identify Course Compétition C402 with instant cable release and its Champion de France lever fitment. Preserve the recorded lettering variants and 1950–70 range. The older Alp 607 and later 101250 (11709) remain distinct. |
+| 4 | 626 | High Life Professionnel with instant cable release and Champion de France lever fitment. Extend `year_to` from 1950 to 1957. Preserve the old 1950 start and distinguish Alp High-Life 624. |
+| 2–3 | 638 | Stamp and bridge match Standard Mixte N.M. Add 1957 and descriptions of the G2 clamp fitting and G202 braze-on option. The specimen does not establish which fitting it was sold with. Standard 636 and Standard deluxe 637 have different construction. |
+| 5, 8 | 252 | `CLB Guidonnet (earlier version)` → `CLB C.M.C. Guidonnet (earlier version)`. Shape and steel clamp match the early specimen. Add hood 316, lever 317 and clamp 318. Extend `year_to` from 1950 to 1957. Later Guidonnet 250 has different hardware. |
+
+All seven updated rows previously cited VeloBase (source 1). Their old descriptions were the old title plus `, France`, with these additional variant clauses. The old search text for 252 was `CLB Guidonnet`.
+
+- 597 `. Variants: 'CLB 700' incised lettering; 'CLB 700' raised lettering; 'CLB' recessed lettering.`
+- 608 `. Variants: encised CLB lettering; inset CLB lettering.`
+- 626 `. Variants: raised lettering; incised lettering.`
+
+All seven additions use 1957 as the known availability year.
+
+| Pages | Category | ID | Model evidence |
+| --- | --- | --- | --- |
+| 1 | Brakes | 12396 | Enfant C1/C2. Garçonnet and Fillette, with reverse-pull rear for Fillette. Optional offset shoe holders for small rims. |
+| 3 | Brakes | 12397, 12398 | Cantilever U Utilitaire and Cantilever Enfant/Baby. Separate clamp-mounted systems, with the latter offering a long spring and 25 mm blocks for Baby. |
+| 4–5 | Brake Levers | 12399 | Course Compétition CC4 Champion de France, for 23.5 mm bars with cylindrical cable-end seat. The later Professionnel 843 is a separate catalogue identity. |
+| 5 | Brake Levers | 12400, 12401 | Route Spéciale RS1/RS2 and Enfant EF1/EF2. Raw and polished are finish options within each design. |
+| 5, 8 | Brake Levers | 12402 | Route Spéciale Double Commande 150, polished two-cable lever for tandem or one-handed use, supplied as a complete assembly. |
+
+The Route R1/R2 and Course CS1/CS2 drawings do not establish a code match with the bare early lever specimens. G302 is partly obscured in the fold. Compare a clearer copy or stamped assemblies before assigning those codes to existing rows. Preserved the separate Alp brake identities and the existing 1950 starts that the 1957 edition cannot resolve.
+
+Live readback matched all 14 approved rows and source 524. The post-load report has zero near pairs and no new duplicate candidates. The old Guidonnet 250/252 title grouping dropped out after the C.M.C. identification. The two assemblies have different clamp and blade designs. Bike link comparisons remained identical across 118 loaded catalogues and 24,829 specifications, with the same 15 pre-existing discrepancies. A full SQL rerun affected zero rows.
+
 ## Cologne report enrichment — applied 2026-11-19
 
 Row **635** description enriched from the recovered press report, source **470**. Dates, title and bike links are unchanged; the magazine issue/date remains unverified. [Exact old/new values, evidence and validation](cross-catalog-notes.md#cologne-press-report-reconciliation--applied-2026-11-19). Readback matched; the SQL rerun changed zero rows and all catalogue mappings were preserved.
