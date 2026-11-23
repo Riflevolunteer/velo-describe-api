@@ -1242,6 +1242,47 @@
 - New (4 rows, 1989-1989): FC-1051-BP / BB-1050, FH-1051-6/7 (105, group
   42); CS-M732, CN-M732 (Deore XT-II, group 98). No deletes.
 
+### 1989 US catalogue remaining-range triage — 2026-11-23, read-only
+
+This initial sample was superseded by the full-range reconciliation below.
+
+The original source 81 pass updated dates, identities and selected descriptions, but does not document a full specification reconciliation across the 36 scans. Sampled [scan 30](https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_august_1988_-_scan_30.html) describes SL-S452 as a five-speed lever and lists 106g; live 7619 describes the 1990 seven-speed version as 85g without the 1989 figure. Do not assign the weights to the wrong speed variant. The same scan calls SL-S441 a handlebar lever; its live 7188 description says stem lever from the 1990 source, so compare the maker's wording before changing mount claims. [Scan 24](https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_august_1988_-_scan_24.html) labels the front derailleur FD-M732, but its adjacent Alpine/half-step table itself names FD-MT62-AL/HS; live 2500 attributes those specifications to FD-M732 and has three bike links. Resolve the printed-table cross-reference using the 1988/1989 manufacturer evidence rather than silently treating the table as a reliable M732 variant key. The scan's FH-M732/HB-M730-F family 3551 has seven bike links and CS-M732 7641 has five, so identity changes must preserve links. This was a sample rather than a full diff or a prediction of row/link gains; no database changes were made.
+
+### 1989 US catalogue full-range reconciliation — applied 2026-11-23
+
+Source 81, [Shimano Bicycle System Components, The Complete Line, US edition](https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_august_1988.html), printed August 1988 for model year 1989. Inventoried road and track scans 1–17, 105 and mountain 18–27, individual components and charts 28–36; feature, tools, clothing and accessory material outside component categories is not loaded. The earlier pass above addressed dates, titles and selected descriptions.
+
+Applied 24 existing-row updates including BL-1052 7218 year_to 1988 → 1989 (scan 19); no inserts, deletes, title changes or bike-link writes. All 24 rows read back with expected descriptions, dates, provenance and identities; rerun affected zero rows. 7218 has no bike links or overrides. The bike generator/live comparison remained identical to baseline across 118 catalogues and 24,829 specs: 24,814 unchanged and 15 pre-existing unrelated Huret Rival lost matches, no gains or changed matches. Shimano near-duplicate scan found zero flagged pairs among 11,405 rows. No unlinked bicycle specs explicitly name the checked affected models. The whole-database quality report found zero errors; review findings remain candidates.
+
+Scan 24 identifies FD-M732 but its capacity table is mislabeled FD-MT62. The separately printed [Shimano XT-II brochure](https://labibleduvelocataloguesshimano.blogspot.com/p/shimano-1989.html), scan 5, explicitly identifies FD-M732-AL Alpine 8–24T and FD-M732-HS half-step 5–24T. This corroborates existing 2500; no correction or link change required. Scan 30 SL-S452 5-speed is 106g; 1990 manual gives 85g for 7-speed. Scan 13 HP-7600 stack is 30mm versus 31mm in 1990/1992. Scan 17 calls FH-6400's freewheel mechanism bolt-on, not its axle; the revised 3534 wording corrects the earlier ambiguous 1987 axle claim and preserves other evidence. Scan 13 FC-7600 listing gives 44–55T while its bolt-pattern graphic calls 42T the minimum; retain the table specification with this caveat. Scan 10 SL-7400 BCAI says seven-speed while the same text says six-speed; leave this unresolved rather than asserting a new version. Other source disagreements are qualified by edition in the descriptions.
+
+Exact prior descriptions, dates and sources for restoration (no titles or search text change):
+
+- 129 (scan 26, 1987–1991, source 82): Shimano BB-MT60, Deore MT60 Series, Japan. Sealed bottom bracket set for FC-MT60 / FC-MT60-SG, 70-T-122.5, 68-T-122.5, 73-T-121.5, 68-T-127.5, English, French or Italian cups, 320g (Aug 1990).
+- 140 (scan 15, 1988–1989, source 81): Shimano BB-5000, Sante, Japan. Compact sealed bottom bracket set for FC-5000, reduced friction, Cr-Mo axle, 295g (Dec 1987, new).
+- 1810 (scan 24, 1987–1993, source 75): Shimano FC-M730, Deore XT M730, Japan. Biopace II triple MD, one-piece forged crank, low profile, sealed, outer 46-50T, middle 36-44T, inner 26-28T, 165-180mm, 707g (26-36-46T, 170mm); BB-M730 310g (Dec 1986, new). 730g (Spec).
+- 1823 (scan 13, 1986–1997, source 82): Track crank, grey anodized ring, Ni-Cr-Mo axle, 1/8 or 3/32in, 165–175mm, 605g (48T, 170mm). BB-7600; 1997 BB-7610. Rings 46–52T plus options (1986), 42–55T (1991), 44–55T (1994 and 1997).
+- 3083 (scan 19, 1986–1989, source 74): Shimano HP-1050, 105, Japan. Composite head parts, sealed, high-impact resin dark gray covers, steel nut / cups / cones, 129g; BC 1 x 24 or French M25 x 1.0 (Aug 1986, new).
+- 3099 (scan 12, 1985–1994, source 475): HP-7400 threaded headset;alloy cups/nut,pressed bearing-steel races,titanium-coated lower crown cone,composite-radius race,O-ring seals. BC1x24 or French M25x1.0. Maker113g;measured114g;1987 retailer116g,English/Italian.
+- 3103 (scan 13, 1986–1997, source 77): Sealed track headset, 31mm stack, BC 1 x 24 or French M25 x 1; 1990 JIS cup 30.0mm, crown race 27.0mm. 1990 stainless cups/cones; 1992 bearing-steel cups and titanium-plated cones, alloy upper cone and resin covers. Maker 90g; 80g VeloBase.
+- 3107 (scan 15, 1988–1989, source 81): Shimano HP-5000, Sante, Japan. Sealed compact head parts, composite, non-loosening, pearl white cups, stainless cones, stack 32.5mm, 100g; BC 1 x 24 or French M25 (Dec 1987, new).
+- 3534 (scan 17, 1988–1991, source 77): 6/7-speed SIS freehub and matching front, sealed, Uni-Balance, Borozon cones, 126/100mm. 1987 bolt-on; 1990 QR: rear 423g, 137mm axle, 28-36H; front 212g, 108mm axle. Earlier 647g with 7-sp 12-21T; 342.5g avg, 630g pair measured.
+- 3549 (scan 25, 1987–1989, source 81): Shimano FH-M730-NT / FH-M730-QR, Deore XT, Japan. 6-speed SIS freehub, bolt-secured, contact seals, lube ports, rear 422g nut / 451g QR w/o sprockets, 130mm, 36h, 12-16T / 13-32T (Dec 1986, new). 356g measured, no QR.
+- 3561 (scan 10, 1989–1992, source 82): 8-speed SIS Uniglide freehub, lip seal, 130mm OLD, 141mm axle, 28/32/36H. Maker: 439g with QR (1990), 460g with QR (1991). FH-7400-6/7 is the 126.5mm 6/7-speed version. Measured 682g pair (234/448g).
+- 4535 (scan 14, 1988–1989, source 81): Shimano RD-5001 / RD-5001-LS, Sante, Japan. 7-speed SIS rear, double Servo-Panta, Centeron pulley, ceramic bushings, sealed; short 24T / middle cage 23-28T, 24 / 28T difference, 191g (short), pearl white and high-tech gray (Dec 1987, new).
+- 6677 (scan 12, 1986–1998, source 77): Aerodynamic anodized alloy stem, hexagon release, 22.2mm steerer; 1991 26mm bar clamp, 1996 25.4/26mm. Maker: 80-130mm (1986), 70-130mm (1990-1992); 252g/100mm, 269g/120mm (1990), 260g/120mm (1991), 280g/100mm (1992/1994).
+- 7188 (scan 30, 1988–1990, source 77): 6-speed SIS/friction stem lever, front Light Action, sealed, light alloy, resin and steel, 141g, 22.2mm; earlier specified for RD-L523-SS, RD-M531, RD-L541.
+- 7203 (scan 27, 1988–1989, source 48): Shimano FH-MT60-NT / FH-MT60-QR, Deore, Japan. 6-speed SIS freehub, sealed, nut or QR, 422 / 451g rear w/o sprockets, sprockets 270g, 126 / 130mm, 36h; HB-MT60-F front (Dec 1987, new).
+- 7207 (scan 10, 1985–1992, source 48): Shimano FH-7400-6/7, Dura-Ace 7400, Japan. Cassette freehub, Uni-Balance, Uniglide, sealed: -6 438g w/o sprockets (Jan 1985); -7 439g, sprockets 12-21T 221g (Aug 1986); cassettes CS-7400-6 / CS-7400-7 (Dec 1987).
+- 7209 (scan 31, 1986–1991, source 48): Shimano MF-Z012, Z-Series / Tourney, Japan. 5 / 6-speed SIS freewheel, brown or silver, 451g; 14-24 / 14-28T (Jan 1986, 1988); Tourney 6-speed 14-16-18-20-22-24, 14-28 or 14-17-20-24-28T (Aug 1990).
+- 7218 (scan 19, 1988–1988, source 48): Shimano BL-1052, SLR 105, Japan. SLR aero lever, short reach, hooded with rubber cover, 23.8-24.2mm (Dec 1987, new).
+- 7227 (scan 24, 1988–1989, source 48): Shimano HP-M730, Deore XT, Japan. Off-road head parts, sealed, inside vapour corrosion inhibitor seal tape, stainless lower cup and cone, 110g (Dec 1987, new; 1988).
+- 7228 (scan 27, 1988–1989, source 81): Shimano HP-MT60, Deore, Japan. Off-road head parts, sealed, inside vapour corrosion inhibitor seal tape, stainless lower cone, 121g (Dec 1987, new; 1988).
+- 7562 (scan 15, 1987–1989, source 76): Shimano CS-5000, Sante (7sp), Japan, 7-speed freehub cassette for FH-5000, interchangeable with CS-6400-7, Dura-Ace 7-speed spacing
+- 7613 (scan 30, 1989–1990, source 77): Front derailleur, aluminium right link, steel bands, trailing-action pantograph, wide chain, Trapease; 24T Biopace HP / 26T round, 28-28.6mm band, 34-54mm stroke, 130g.
+- 7619 (scan 30, 1989–1991, source 77): 5/6/7-speed SIS stem levers, Light Action front, sealed, resin, 22.2mm; with RD-R552. Maker 85g for 7-speed.
+- 7630 (scan 27, 1989–1989, source 78): Shimano CS-MT62, Mountain LX (7-speed HG), Japan, Aug 1988 Exage manual: 7-speed Hyperglide cassette, 12-14-16-18-21-24-28T or 13-15-17-20-23-26-30T
+
 ## Shimano "The New System Component Family for Every Riding Style", Exage dealer sales manual — printed 08.1988 (disraeligears.co.uk, 36 images)
 
 - `data_source` 78. Source:
