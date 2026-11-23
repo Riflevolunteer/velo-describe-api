@@ -2,6 +2,12 @@
 
 British Cyclo of Birmingham is brand **193**. The French Cyclo range has its own [catalogue notes](le-cyclo.md) under brand **192**.
 
+## Benelux catalogue 628/G/S — preliminary comparison
+
+The [32-page catalogue](https://www.disraeligears.co.uk/site/cyclo_benelux_catalogue_628gs.html) is attributed by the archive to August 1962. Pages 2–11 repeat the Super 60, Mark 7, Mark 8 Tourist, controls and front changers in No. 609, but p.2 adds a SUSIX six-speed package and BEFOX six-speed freewheel. It explicitly says the five-speed mechanism is unsuitable for six-speed use. Page 7 again lists L19/25 (6012). Pages 12–19 and 21 largely repeat No. 609's Standard, chainwheels, chain, freewheels and sprockets; p.20 lists BEN/2/SA for additional Sturmey-Archer hub types and BEN/3/SA and BEN/9/SA two- and three-sprocket blocks. Page 21 gives SOLO 18–26 or 28 teeth, while No. 609 lists 16–26 or 28. Pages 22–30 are chiefly accessories and spares; pages 31–32 repeat the Rosa cranks and hubs. These are catalogue attestations, not production date bounds. The hub conversion blocks still need database reconciliation; SHAN and 20/26 remain ambiguous.
+
+Applied as source **527**: six-speed Super 60 rear **12409** and BEFOX freewheel **12410**, both attested in 1962; L19/25 **6012** year_to 1960 → 1962, source 523 → 527, with all other fields retained. The six-speed gear is distinct from the four/five-speed 4207. Readback confirmed fields and description lengths; the SQL rerun made no changes. The brand duplicate report showed no groups. Generator/live comparison covered 118 catalogues and 24,829 specs, with the same 15 previously recorded Huret discrepancies and no newly changed mappings.
+
 ## Catalogue No. 609, August 1960 — applied and validated 2026-11-23
 
 [No. 609](https://www.disraeligears.co.uk/site/cyclo_catalogue_609.html) contains 44 numbered pages. P.1 prints August 1960. The [archive's catalogue sequence](https://www.disraeligears.co.uk/site/cyclo_gear_company_-_catalogues_etc.html) gives August/September. The imprint dates the offerings. Production starts and ends require independent evidence. The comparison here covers No. 609. The earlier catalogues and 628/G/S can establish which products were introduced or carried over.
