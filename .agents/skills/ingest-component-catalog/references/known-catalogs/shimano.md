@@ -2153,7 +2153,12 @@ appears to repeat the adjacent front hub figure. HB-6400 overlapping rows and
 the CS-HG70-8 versus CS-HG70-I configuration need identity review before
 merges or new variant rows. Do not infer unique identities from these conflicts.
 
-Follow-up lead, 2026-11-23: Shimano's [FC-C400 exploded parts sheet EV-FC-C400-1317](https://si.shimano.com/de/pdfs/ev/FC-C400-1317/EV-FC-C400-1317.pdf) explicitly specifies 110 mm for the outer ring and 58 mm for the middle and inner rings. This is independent maker evidence for FC-C400; reconcile the live record against the sheet. It does not establish the FC-C700 dimensions.
+Follow-up evidence, 2026-11-23: Shimano's [FC-C400 exploded parts sheet EV-FC-C400-1317](https://si.shimano.com/de/pdfs/ev/FC-C400-1317/EV-FC-C400-1317.pdf) specifies 110 mm for the outer ring and 58 mm for the middle and inner rings. This is independent maker evidence for FC-C400; it does not establish the FC-C700 dimensions.
+
+Live reconciliation, 2026-11-23: FC-C400 component 7759 already records
+110 / 58 mm BCD, consistent with the parts sheet; no database change is
+needed. A query found no bike specifications linked to 7759. The conflicting
+1995 manual figure and FC-C700 dimensions remain separate evidence questions.
 
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
