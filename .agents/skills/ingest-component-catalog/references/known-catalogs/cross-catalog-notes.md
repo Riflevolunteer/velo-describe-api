@@ -140,6 +140,8 @@ that no complete words were lost at the boundary or verify every specification
 against its source. No description or database change is justified by length
 alone; revisit a specific row if its original source shows missing text.
 
+**Live recheck, 2026-11-23:** the 18 descriptions at 255 characters are the same as the above set except 9599, which no longer reaches the limit. All 18 were read; none ends mid-word or in an obviously unfinished clause. The six without final punctuation (357, 994, 7922, 8931, 8996, 9799) also end on complete phrases; the 7922 set notation has the source check below. This is a boundary review, not a full source-by-source verification or proof that no complete sentence was lost. No further truncation is established and no DB values were changed.
+
 **Weinmann 133 / component 7922 source check, 2026-11-20:** visually checked
 the [R. J. Chicken & Sons 1979 trade catalogue](https://www.icenicam.org.uk/library/Weinmann/Cycle_fittings_from_R_J_Chicken_catalogue_1979-11-07.pdf),
 PDF p. 17 / printed p. 57. It explicitly offers a 730/730 front/rear side-pull

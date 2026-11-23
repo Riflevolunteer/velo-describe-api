@@ -5090,7 +5090,7 @@ const COMPONENT_OVERRIDES = {
     'sun tour new winner gold 13 15 18 21 24 28 teeth': [{ bike: '710', from: 1982, to: 1982, id: 2238 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano 600 ug silver 13 15 17 19 21 24 teeth': [{ bike: '912', from: 1982, to: 1982, id: 1200 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano dura ace ex ug freehub gold 13 14 16 18 20 22 teeth': [{ bike: 'Team Miyata', from: 1982, to: 1982, id: 1210 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
-    'shimano dura ace ex ug gold 13 14 15 16 17 18 20 teeth': [{ bike: 'Aero Miyata', from: 1982, to: 1982, id: 1210 }], // 1982 Miyata: printed component; see known-catalogs/miyata.md.
+    'shimano dura ace ex ug gold 13 14 15 16 17 18 20 teeth': [{ bike: 'Aero Miyata', from: 1982, to: 1982, id: null }], // Seven sprockets; 1210 is a six-speed specimen. See cross-catalog notes.
     'shimano 600 ex freehub silver 13 15 17 19 21 24 teeth': [{ bike: '912', from: 1981, to: 1981, id: 1200 }], // 1981 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano 600 ex freehub silver 13 14 16 18 20 22 teeth': [{ bike: 'Pro Miyata', from: 1981, to: 1981, id: 1200 }], // 1981 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano dura ace ex freehub gold 13 14 16 18 20 22 teeth': [{ bike: 'Team Miyata', from: 1981, to: 1981, id: 1210 }], // 1981 Miyata: printed component; see known-catalogs/miyata.md.

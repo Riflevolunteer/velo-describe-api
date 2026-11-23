@@ -245,6 +245,8 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Freewheels / cassettes
 
+- **1982 Aero Miyata, spec 20825:** keep the seven-sprocket Dura-Ace EX cluster unlinked from six-speed specimen 1210 pending coded original fitment or a maker AX/EX crosswalk. The scoped NULL override and live unlink were applied and validated. [Evidence](known-catalogs/cross-catalog-notes.md#follow-up-catalogue-headings-and-aero-miyata--2026-11-23).
+
 - **1989 Peugeot Cosmic (NL), spec 17174:** preserve the printed seven
   sprockets and contradictory 12-speed gearing with a double crank. The
   specific six-speed link **8131** was cleared with user approval. A scoped
