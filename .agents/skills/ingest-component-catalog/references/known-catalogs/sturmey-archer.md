@@ -61,6 +61,35 @@ matching specimens before assigning those
 family dates. Existing earlier quadrant and brass trigger variants likewise
 need code/finish evidence before changing their dates.
 
+### Early controls and KB/KS review — 2026-11-23
+
+The Master Catalogue index (PDF p.12) lists neither KB nor KS; the current
+and discontinued hub sections it identifies do not provide a KB-4/KS5 marking
+crosswalk. The original TODO wording assumed those specimens were illustrated
+in this binder. That is not established by the index; obtain a period legend or
+maker parts sheet explicitly showing the suffixes before assigning family dates
+to 2730 KB-4 and 2731 KS5. Both live records retain 1930–1930 and source 1.
+
+PDF pp.22–23 illustrate the smaller three-speed Flick and list GC3B complete
+control and GA244B unit, contrasted with the older GC3A / GA244A. PDF pp.30–31
+illustrate the separate four-speed GC4A / GA246A. These individual sheets have
+no visible date; the March 1959 spares insert (PDF p.2) lists GC3B, GC4A,
+GA244B and GA246A, attesting spares at that date, not their first or last year.
+Neither sheet identifies the material of the pictured cover. The binder's
+current-control index does not identify either early quadrant specimen.
+
+The [trigger compilation hosted by Tony Hadland](https://hadland.wordpress.com/wp-content/uploads/2012/07/6triggers1.pdf)
+includes a 1951-labelled service excerpt saying windowed GC2 controls were
+issued from the end of 1949, and a 1956-labelled excerpt distinguishing GC2,
+GC3A, GC4A and smaller GC3B. Its later enthusiast identification chart is
+separately dated 1997; its date ranges are not independent maker production
+records. [VeloBase's 6246 specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=62a0d93e-b0e6-499e-9e9e-025b65400f0c)
+identifies a GC2 with window markings H/N/L/B, compatible with the service
+description. Its existing 1950–1953 range is not contradicted, but these
+sources do not establish the specimen's exact start or end. Live 6242–6247,
+6250 and 2730/2731 retain source 1; no DB changes made. Obtain coded or dated
+original examples for the quadrant and brass trigger records before dating them.
+
 ### TCW and SB hubs — reviewed 2026-11-23
 
 The Master Catalogue's unmarked TCW sheet and parts list (PDF pp.36–37)
