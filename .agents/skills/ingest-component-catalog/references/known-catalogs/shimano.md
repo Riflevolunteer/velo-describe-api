@@ -2153,6 +2153,8 @@ appears to repeat the adjacent front hub figure. HB-6400 overlapping rows and
 the CS-HG70-8 versus CS-HG70-I configuration need identity review before
 merges or new variant rows. Do not infer unique identities from these conflicts.
 
+CS-HG70-I comparison lead, 2026-11-23: Shimano's [SI-R430A service instructions](https://www.sjscycles.com/Instructions/Shimano/Shimano_Speed_Cassette_Instructions.pdf) identify an eight-speed CS-HG70-I with ah 11–28T and an 11–30T combinations, paired with CN-IG70. Compare these configurations and Shimano's CS-HG70-8 material with the live records before drawing identity conclusions.
+
 Follow-up evidence, 2026-11-23: Shimano's [FC-C400 exploded parts sheet EV-FC-C400-1317](https://si.shimano.com/de/pdfs/ev/FC-C400-1317/EV-FC-C400-1317.pdf) specifies 110 mm for the outer ring and 58 mm for the middle and inner rings. This is independent maker evidence for FC-C400; it does not establish the FC-C700 dimensions.
 
 Live reconciliation, 2026-11-23: FC-C400 component 7759 already records
