@@ -969,6 +969,15 @@ Task-owned downloads/renders removed after recording their source URLs.
 
 ## Brügelmann missing editions — 2026-11-19 source hunt
 
+**Follow-up 2026-11-23:** Targeted web searches for 1986–87 and 1989–92
+found no additional directly retrievable full scan. In a [2019 forum post](https://www.rennrad-news.de/forum/threads/suche-alte-br%C3%BCgelmann-kataloge.99574/page-6),
+aledran said they had original 1987 and 1989 catalogues but lacked time to
+digitise them fully. This is a historical holder lead, not evidence of current
+possession or a public scan. A separate [2023 MTB-News sale](https://www.mtb-news.de/forum/t/mtb-kataloge-zeitschriften-bruegelmann-workshops-bike-news.976542/)
+lists a 1989 copy as sold; it does not establish a current holder or an
+available copy. The previously noted 1990 and 1992 leads remain unverified for
+complete scans. No contacts or database changes were made.
+
 Scope: the existing acquisition action for **1986–87 and 1989–92**.
 No complete missing edition was recovered, and no DB/source rows were changed.
 Two new leads replace the earlier blanket statement that these years are not
