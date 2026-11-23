@@ -1935,6 +1935,12 @@ capacity for A551-GS, while the 1998 US catalogue prints
 30T/36T for that code; keep the edition conflict and investigate the GS date
 and code crosswalk separately. No GS date or description change was made.
 
+#### RD-A551-GS source comparison — 2026-11-23
+
+The [1996 manual p.57](https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_-_96_page_57.html) lists unsuffixed A551 at 28T maximum / 28T total, and **A550-GS** at 30T / 36T, 20T front difference. The [1998 US catalogue pp.57–58](https://www.charlie-taylor.net/bikes/library/shimano/1998/large/98Shimano57-58.jpg) instead lists **A551-GS** with 30T / 36T and 20T front difference. [Shimano SI-52D0C](https://si.shimano.com/en/pdfs/si/52D0C/SI-52D0C-000-00-ENG.pdf) explicitly names A551-GS and specifies 26T maximum, 12T minimum, 22T front difference and 35T total. The 1998 numbers repeat the earlier A550-GS values; this resemblance does not prove a copying error or a physical revision. Do not infer that the 1996 chart proves A551-GS was unavailable. Seek a dated explicitly GS-labelled early source to establish the first attestation.
+
+4533 retains 1994–1998 and source 365; its previous description was `8-speed rear derailleur, 30T max, 12T min, 20T front difference, 36T capacity.` Applied a description-only update preserving both conflicting maker specifications. Readback confirmed the 193-character description, unchanged dates and source; a repeat update affected zero rows. Neither 4533 nor short-cage 10876 has a live bike link; the generator includes an RX100 year restriction and an unrelated 4532 override. Shimano's near-duplicate scan found zero pairs before and after. Generator/live comparison covered 118 catalogues and 24,829 specs, with the same 15 known Huret discrepancies and no gains or changed mappings before and after.
+
 The 1994 Cinelli Argento Vivo source gives only "Shimano STX S.E."; live
 specs 20155/20157 point to standard 6369, and 20159/20160 to later MC32
 rear/crank rows 4537/1843. The 1994 Shimano Special Edition group lists
