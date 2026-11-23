@@ -109,12 +109,17 @@ original scan citation. The Japanese edition uses source 358.
   supports the Ultegra, 105SC, Deore DX and LX group matches. Kept the
   US Virata's printed Dynamic-II stem and mapped spec 26563 to Nitto
   Dynamic-2 6614. The bike import preserves existing component dates.
-- Equinox and Axis 287 levers, Nyala's uncoded XCT brake (26772), the
+- Equinox and Axis 287 levers, the
   uncertain Accushift Plus 12–28T / 13–30T clusters and Pista's explicit
   16T fixed sprocket (26822) stay unlinked. The Grizzly and other
   same-name builds retain their edition-specific text. Names such as
   Command and generic grip, housing and frame specifications keep their
   catalogue wording where the version or component identity is unclear.
+- The user approved group-and-year SunTour matches for Ibex XCE brakes and
+  crank (26752/26753), Nyala XCT brakes and crank (26772/26773), and the Nyala
+  XCM rear (26776). The catalogue prints no component codes; these links are
+  inferences. Nyala's top-pull XCM front 26775 remains NULL. [Model evidence,
+  old links and validation](../../../ingest-component-catalog/references/known-catalogs/suntour.md#full-range-follow-up--applied-and-validated-2026-11-22).
 
 Applied on user approval on 2026-11-21. Added source **508** (US),
 bikes **1529–1545** and **350** specs with **129** component links. All

@@ -1231,7 +1231,7 @@ const COMPONENT_OVERRIDES = {
     'shimano exage mountain': [{ from: 1988, to: 1989, id: 7182 }], // 1989 Peugeot (NL) Alpine Express: RD-M450-GS / SGS
     'sachs rival': [{ from: 1989, to: 1990, id: 4417 }], // 1989 Peugeot (NL) Mont Blanc: Sachs Huret ARIS Rival (1989-90)
     'shimano r 552 0s': [{ from: 1989, to: 1990, id: 7605 }], // 1989 Peugeot (NL) Hudson, printed "R-552-0s": RD-R552-GS / SS
-    'suntour xcm': [{ from: 1989, to: 1989, id: 4795 }, { from: 1990, to: 1992, id: 4793 }], // 1989 Peugeot (NL) VTT Express "Suntour XCM Index": RD-XM34-GXB, XCM 3040 (Edition No. 89); RD-XM00 / XM02 from 1990
+    'suntour xcm': [{ bike: 'Nyala', from: 1991, to: 1991, id: 4794 }, { from: 1989, to: 1989, id: 4795 }, { from: 1990, to: 1992, id: 4793 }], // 1989 Peugeot (NL) VTT Express "Suntour XCM Index": RD-XM34-GXB, XCM 3040 (Edition No. 89); RD-XM00 / XM02 from 1990
     // 1988 Peugeot (FR): the 1988 range, "Shimano 105 NEW" = the 1050 series, "Shimano New 600" = 6400 600 Ultegra.
     'huret rival 41 1 d white': 8957, // PHE 20 Mont-Blanc: Sachs Huret AR 41.1 D, Rival (part number printed)
     'simplex slj 66': 4655, // PY 10 FC: printed truncated "SLJ 66", the SLJ 6600 as the 1984-85 PY 10 FC
@@ -1952,6 +1952,7 @@ const COMPONENT_OVERRIDES = {
     'fichtel & sachs torpedo duomatic': [{ from: 1964, to: 1973, id: 2700 }], // Torpedo Duomatic Model 102 & 101 (DA / RA 40 E)
   },
   Brakes: {
+    'suntour xce balance response system': [{ bike: 'Ibex', from: 1991, to: 1991, id: 8035 }],
     // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
     'dia compe 986 titanium finish balance response system': [{ bike: 'Equinox', from: 1991, to: 1991, id: 663 }, { bike: 'Grizzly', from: 1991, to: 1991, id: 663 }],
     'suntour x 1 balance response system': [{ bike: 'Volpe', from: 1991, to: 1991, id: 8032 }],
@@ -2249,7 +2250,7 @@ const COMPONENT_OVERRIDES = {
     'shimano m200gs linear response': [{ from: 1990, to: 1992, id: 7598 }], // BR-M200 cantilever
     'suntour xc pro balance response system': [{ from: 1990, to: 1992, id: 1056 }], // CT-XP00 cantilever
     'suntour xct balance response system': [
-      { bike: 'Nyala', from: 1991, to: 1991, id: null }, // US catalogue gives XCT without a brake code.
+      { bike: 'Nyala', from: 1991, to: 1991, id: 8038 }, // Inferred from SunTour 1991 group; Bianchi does not give the code.
       { from: 1990, to: 1990, id: 11074 },
       { from: 1991, to: 1992, id: 8038 },
     ],
@@ -2658,6 +2659,8 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'suntour xce 48 38 28t powering': [{ bike: 'Ibex', from: 1991, to: 1991, id: 2002 }],
+    'suntour xct 48 38 28t powering': [{ bike: 'Nyala', from: 1991, to: 1991, id: 8004 }],
     // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
     'suntour xc pro grease guard 46 36 24t powering ninja': [{ bike: 'Equinox', from: 1991, to: 1991, id: 1998 }, { bike: 'Grizzly', from: 1991, to: 1991, id: 1998 }],
     'suntour xc comp 46 36 24t powering ninja': [{ bike: 'Axis', from: 1991, to: 1991, id: 7999 }],

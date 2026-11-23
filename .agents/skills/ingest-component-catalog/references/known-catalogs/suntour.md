@@ -832,14 +832,24 @@ VX02 and FU00 models; p.25 SR20 and CW-X000. These model codes identify
 catalogue offerings; they do not alone establish a physical redesign from
 the similarly named offerings in the 1990 or 1992 editions.
 
-The 1991 Bianchi Nyala XCM rear spec 26776 is linked to 4793, whose described
-XM00/XM02 variants are attested in 1990/1992. The 1991 maker catalogue lists
-XM01 (4794), but Bianchi supplies no model code, so a group-and-year match is
-an inference, not proof of the fitted derailleur. Its XCM top-pull front 26775
-remains NULL; p.14 does not establish that FD-XM01 is top-pull. The 1991
-Bianchi Ibex XCE brake/crank 26752/26753 and Nyala XCT brake/crank 26772/26773
-also lack original component codes. Keep these pending a fitment decision or
-distinguishing evidence rather than silently backfilling from the group name.
+**1991 Bianchi US fitment decision — applied:** the Bianchi p.18 table
+names XCE and XCT Balance Response brakes and 48/38/28T Powering cranks, and
+XCM rear and top-pull front, without model codes. SunTour's 1991 pp.13–14
+offer CT-XE01 / CW-XE01 and CT-XT01 / CW-XT01, each crank with 48/38/28T,
+and RD-XM01-GXB/GXZ (the latter with bracket). User-approved group-and-year
+inferences applied: 26752 NULL → 8035, 26753 NULL → 2002, 26772 NULL →
+8038, 26773 NULL → 8004, and 26776 4793 → 4794. Row 8004 also represents
+CW-XT02, while 4794 represents the GXB; Bianchi does not prove these codes or
+bracket type. Keep 26775 NULL: the maker page does not establish top-pull for
+FD-XM01. This proposal is not proof that Bianchi used the listed current-year
+offerings; earlier stock or substitutions remain possible.
+
+Readback confirmed all five links and the front NULL; the SQL rerun affected
+zero rows. After the generator changes, comparison across 118 loaded catalogues
+showed no gained or changed links and the same 15 unrelated Huret lost proposals
+as baseline. The bike and maker catalogue group names are not independently
+coded fitment evidence. Restore the four new links to NULL and 26776 to 4793
+only deliberately, guarded by their new values, and revert the generator changes.
 
 Unresolved catalogue identities: 6306's formerly uncoded X-1 Chroma specimen
 could correspond to SL-X101 or SL-CR01 rather than its present X102 title;
