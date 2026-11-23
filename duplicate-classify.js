@@ -208,6 +208,11 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  // Simplex 1949–50 parts-book reconciliation. See known-catalogs/simplex.md.
+  [1294, 1295], // Integral five-arm ring versus six-bolt split couplers.
+  [2551, 2581], // Pivoted 1949 front lever versus earlier long-rod mechanism.
+  [4635, 4639], // LE SIMPLEX early cage versus SIMPLEX JUY markings and cage.
+  [4635, 4640], // Early cage versus older pinned cage plates.
   [4558, 12403], // Simplex Sélection Standard, articulated tensioner versus 1939 rigid tensioner.
   // Regina Oro construction review 2026-11-22. See known-catalogs/regina.md.
   [2179, 2182], // Five-speed BX versus threaded-cog Oro

@@ -1,5 +1,30 @@
 # Simplex catalogs processed so far
 
+## Pièces Détachées, 1949–50 — applied and validated 2026-11-23
+
+All eight pages of the [French maker booklet](https://www.disraeligears.co.uk/site/simplex_-_pieces_detachees_1949-50.html) were read at full resolution. P.1 prints `1949–50`, and pp.3–4 identify the 1949 front designs. The import uses source **526**, `Simplex Pièces Détachées (1949–50)` (FR). The new records use 1949 as the documented year. Service listings supply construction and compatibility evidence. An end of production remains unverified for the illustrated specimens.
+
+| Pages | Existing ID | Applied reconciliation |
+| --- | --- | --- |
+| 1, 6, 8 | 4635 | The early steel-pulley Tour de France has the appropriate `LE SIMPLEX` marking, curved plates and early claw construction. Add 883/858 cage plates, removable claw 829 and optional special frame end 880. P.1 distinguishes five service configurations, 3/4 speeds for chaîne 3 and 3/4/5 for chaîne 2. Retain the existing 1947–49 dates. |
+| 3–4 | 2551 | `Simplex Competition (LE SIMPLEX Bte SGDG; no stop knob on upper shaft; metal top knob)` → `Simplex Tour de France Front Derailleur (1949 Competition lever type)`. Pivoted lever 1140, metal knob 960 and fork 1130 correspond to the specimen. Clamp and braze-on versions each accept the optional cable drive with stop assembly 1730. Retain 1949–55. |
+| 5 | 2568 | The Type 39 Luxe matches cage 455, body 477 and the continuing cable model. Add complete clamp 466 and braze-on tab 367. Keep the 1939 drawing's limits, chainline and weight context and retain the existing 1939–55 range. Previous source 525 remains the earlier evidence for this design. |
+| 3 | 1295 | `Simplex (6 bolt)` → `Simplex Double Chainrings (6-bolt, 990 couplers)`. The three separate two-bolt bridges and ring slots match. Rings 645–650 correspond to 45–50T, with offset bridges 998 and a three-arm adapter 992 for a five-attachment crank. The date changes from undated to 1949–49 as design evidence. The photographed packaging does not establish the specimen’s manufacture year. |
+
+| Pages | Category | Added ID | Evidence |
+| --- | --- | --- | --- |
+| 2, 6 | Rear Derailleurs | 12405 | Grand Tourisme with fork 510/510B, long external spring 160 (389 tandem), and standard two-bolt Monobloc hanger 652. The alternative mount options include the earlier hanger 479. This is the coded 1949 assembly. The 1939 Grand Prix Duralumin 4590 has fork 272B and earlier body hardware, and the Tourist 303 rows use a different pull-chain mechanism. |
+| 3–4 | Front Derailleurs | 12406 | 1949 Randonneur with model-specific fork 1130B and common 1140 lever mechanism. Clamp or braze-on, with optional cable stop 1730. The earlier 2548 and 2569 Randonneur specimens and Tour de France 2581 use the long-rod mechanism. |
+| 6 | Shifters | 12407, 12408 | Standard Poignée Tournante uses full-length grip 1520, barrel 1514 and spiral drive 1706. The Poignée Spéciale Course uses short grip 1525 and barrel 1515. The booklet provides cable and housing lengths for rear derailleurs, both cable-operated front designs and tandem use. |
+
+Rows 1295, 2551 and 4635 previously cited VeloBase (source 1). Their previous descriptions repeated their old titles followed by `, France`. The 2551 record also carried `, 156 grams (Spec)`. The parts booklet does not give that figure, so the weight is retained here as legacy evidence. The old search texts for the two retitled rows were `Simplex` (1295) and `Simplex Competition` (2551). Row 2568 previously cited source 525 and described its low mount, two independent limits, clamp or braze-on, 300 g with lever, 42–48T outer-ring installation data and 48 mm tandem chainline.
+
+The 4640 specimen has the earlier pinned cage plates, 4639 has the `SIMPLEX JUY` marking, and 4559 and 4641 have the different wing logo or cage and pulley details. The p.1 drawing does not establish those variants' dates. The p.2 round-paddle lever resembles 6197, but the specimen's cap inscription and tightening bar differ from the `LE SIMPLEX DIJON` cap and optional wing screw shown. The new clamp 598 and braze-on base 599 differ from the prewar control fittings documented for 12404. Hold a separate frame-control row pending an exact specimen match. The p.5 1720 Fourchette-Carter fits the 1949 mechanism, but the drawing shows only the lower lever, so it cannot date the full 2552/2553 assemblies. The related 1297 bridge-type rings have different markings and conflicting steel/alloy identification. The 1294 integrated five-arm rings and 1298 Touriste are distinct.
+
+Pp.6–8 include coaster-brake chain guides, Compétition and Randonneur quick-release fittings, dropouts, hardware and service boxes. The hub shells illustrate attachment of the quick-release hardware. The booklet gives no model identification for a complete hub.
+
+Live readback matched all eight approved records. The full SQL rerun changed zero rows. The bike-link report matched the baseline across 118 catalogues and 24,829 specifications, with the same 15 prior discrepancies. The title groups around the early front 2551 and six-bolt rings 1295 narrowed after their identifications. There were no new near or parenthetical-name pairs. The steel-pulley 4635 and the separate JUY-marked 4639 and pinned-cage 4640 are recorded as reviewed variants.
+
 ## Le Simplex catalogue, 1939 — applied and validated 2026-11-23
 
 The [French maker catalogue](https://www.disraeligears.co.uk/site/simplex_1939_-_catalogue.html) prints 1939 on p.1. Twelve pages and both sides of the archived insert were checked. The insert itself is undated. Page 9 corroborates its Type 38 coverage with 1938 and 1939 mounting diagrams and explicit instructions to specify which front derailleur is being serviced. The import uses source **525**, `Le Simplex catalogue (1939)` (FR).
