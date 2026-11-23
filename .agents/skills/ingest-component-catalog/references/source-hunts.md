@@ -2,6 +2,47 @@
 
 What has been searched for missing catalogues and evidence, with dead ends, site methods and leads, moved from TODO.md on 2026-11-15. Check here before searching again: do not repeat a logged search without a new lead. Add new hunts here, or to the brand's `known-catalogs/<brand>.md` when they concern one brand; TODO.md keeps only what is still wanted and the next lead.
 
+## Early component catalogues — source triage 2026-11-23
+
+Live read-only baseline: selected numeric component starts through 1974, or an
+early numeric end when the start was missing or nonnumeric. Prioritised records
+whose `source_ref` is absent or points outside `catalogue` and whose trimmed
+description is at most the title length plus 20 characters. These are review
+signals. A catalogue `source_ref` can describe the last edit without supporting
+the recorded start or end. Round decades and single-year ranges are review
+candidates. Sampled original images and checked the live source registry. No
+component, source or bike-link rows changed.
+
+| Priority | Sources and row-level leads |
+| --- | --- |
+| **Sturmey-Archer** | The 1971 trade catalogue and targeted early hub evidence were reconciled and applied as sources 521/522. The [Sturmey-Archer catalogue notes](known-catalogs/sturmey-archer.md#applied-and-validated-2026-11-23) record the new models, the corrected FW/ASC/SW dates and the remaining specimen questions. The loose-leaf Master Catalogue still needs page-specific dating for its earlier variants. |
+| **British Cyclo Gear Company** | [Maker catalogue sequence](https://www.disraeligears.co.uk/site/cyclo_gear_company_-_catalogues_etc.html) runs from the 1931 season through [628/G/S](https://www.disraeligears.co.uk/site/cyclo_benelux_catalogue_628gs.html), attributed to August 1962. Original 628/G/S cover retrieved and verified by its reference and Aston address. In [No. 609](https://www.disraeligears.co.uk/site/cyclo_catalogue_609.html), p.1 prints August 1960 and indexes Mark 7 pp.6–7, Mark 8 Tourist pp.8–9 and freewheels pp.15–21. P.2 directly supports Super 60 rear 4207: 4/5-speed 3/32in, 13–26T sprockets, 4T front difference, 17T total. SUFOR/SUFIV are order words for gear configurations. Compare 4203/4204 and shifter 6017 with their own pages. Use 1937–55 editions for Standard hanger variants, Ace 4199, Oppy 4209 and Super Olympic 4213. Keep Birmingham company 193 distinct from French Cyclo 192. |
+| **Simplex** | Existing sources 204/205/186 cover 1964, 1965 and attributed c.1971. Newly identified early candidates are the [1939 maker catalogue](https://www.disraeligears.co.uk/site/simplex_1939_-_catalogue.html), [1949–50 parts booklet](https://www.disraeligears.co.uk/site/simplex_-_pieces_detachees_1949-50.html) and [1950s tariffs and early-1960s literature](https://www.disraeligears.co.uk/site/simplex_-_catalogues_newsletters.html). The 1939 pp.2–3 detail views show different hanger assemblies with keyed parts. Compare Route Léger 4606/4607 and Grand Prix Duralumin 4590 with full illustrated pages, then identify Tour de France 4635/4639/4641 by marking and pulley material. Use the later documents for Juy 51/543/59/60/61 and Rigidex rather than extrapolating from Prestige. |
+| **Huret** | Existing source 95 is 1973. The [1966 maker catalogue](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1966.html) p.3 gives Svelto 4294's family 3–6 speeds, 13–24T freewheel, 36–53T chainrings, steel ball-bearing pulleys and graphite Rilsan cage. Its 1965/1966 cage-parts table gives a way to check the specimen before attributing the version. P.4 identifies front ref. 600 for double/triple, cages and clamps by drawing and code (605 is 28 mm and 645 is 25.4 mm). Compare the cage and clamp against 2381/2382/2383. [1967–69 follow-on editions and earlier Tour de France leaflets](https://www.disraeligears.co.uk/site/huret_-_catalogues_newsletters.html) give further variant checks. |
+| **CLB** | [17 November 1951 maker advert, p.50](https://ebykr.com/library/clb-1951-11-advertisement-nouveautes/) was visually checked. It names and draws the Cantilever Sport 1951 (604, currently 1950–1950), Course C.S.2 and Compétition C.C.4 levers, and single/double Guidonnets (compare 252). Standard N.M. is explicitly a brazed-on version and needs a mount comparison with 636. [October 1966 Racer](https://ebykr.com/library/clb-1966-advertisement-racer/) and [May 1971 Racer Demi-Ballon](https://ebykr.com/library/clb-1971-advertisement-racer/) are dated family evidence for the Racer review (632/633). Match shape/reach before assigning a version. [October 1952 trade notice](https://ebykr.com/library/lofficiel-du-cycle-1952-10-04-catalogue-clb-saint-etienne/) confirms a small square colour catalogue with a metallised cover. Its full scan remains to locate. |
+| **Super Champion** | The [February 1940 Catalogue C](https://www.disraeligears.co.uk/site/super_champion_catalogue_c_-_fevrier_1940.html) scan 2 directly shows the steel, cadmium-plated Course three-speed set with optional four-sprocket freewheel and separate shift fork and chain tensioner. Both Course variants 4800/4801 currently end in 1936. Check the mounting details against 1938 and 1940 drawings before extending either. Review the 1938 tariff and 1947/1950 editions from the [publisher index](https://www.disraeligears.co.uk/site/documents_published_by_derailleur_brands.html), for derailleur/freewheel work separate from the later rim sources. |
+| **BSA / Favorit** | [November 1934 BSA bicycle parts list](https://www.icenicam.org.uk/library/BSA/Bicycles_parts_list_1934-11-01.pdf) distinguishes a pictured New Pattern Rat-Trap pedal, a lead for 3682/3683, and gives model-specific fittings. The [1968 Motokov parts album](https://sites.google.com/view/veloczechoslovakia/07) opens in Google Photos. Compare the images and order codes with Favorit calipers 715/716 and rear 4231. The same archive lists the Eska/Favorit/Velamos parts book, the Favorit P-W-B fitting sheet and an export range attributed to c.1970. Individual Motokov model matches remain to be verified. |
+| **Weinmann / Nervar** | For Weinmann the [existing 1963 and c.1970 records](known-catalogs/weinmann.md#weinmann-light-metal-caliper-brakes-parts-and-rims-and-tools-catalogue-no-107--january-1963-ebay-listing-photos-partial) already explain which 999 and side-pull variants those sources can establish. The [1958 Holdsworth advert facsimile](https://www.classiclightweights.co.uk/classic_components/weinmann-components/) is an earlier comparison lead for 1105/1106, pending pivot and spring identification. For Nervar, [May 1971 maker advert](https://ebykr.com/library/nervar-1971-advertisement-jeux-de-pedalier/) and [illustrated trade plate](https://ebykr.com/library/le-cycle-1971-05-quelques-productions-nervar/) show Star, Dural five-bolt and steel types for comparison with 1667, 1673 and 1675/1676. The [VeloBase catalogue index](https://www.velobase.com/Pages/Resources/CatalogScans.aspx) points to Nervar 1974 at Velo-Pages item 5766, which currently fails live. Archived page images remain to be recovered. This is an earlier range source lead alongside the existing later Peugeot/Motobécane spares search. |
+
+The [1947 UK Raleigh catalogue](https://threespeedhub.com/wp-content/uploads/2013/04/Raleigh-Catalog-1947-UK.pdf)
+calls FW a new offering on printed p.2 and shows the hub, ratios and Flick
+trigger on p.24. The [Halfords accessories catalogue indexed as 1960](https://www.icenicam.org.uk/library/Halford/Accessories_1960.pdf)
+still lists FW on printed p.21, alongside AW, AM, FM, AG and FG, plus Benelux
+Mark 7 and T.D.C./Simplex freewheels. Sturmey-Archer Heritage's chronology
+attributes the FW to 1945 and its 1946 instructions are independently indexed
+by Iceni CAM. These findings prompted the review of row 2729. Beardshaw's
+production record and the later 1973 US trade listing are reconciled in the
+[brand notes](known-catalogs/sturmey-archer.md#earlier-date-and-specification-evidence).
+
+Campagnolo also ranks high in the live screen. Its existing pre-1975
+[maker catalogue work](known-catalogs/campagnolo.md) makes it a comparison
+backlog before another broad hunt. Already-processed multi-brand material
+includes [Falcon 1970](known-catalogs/cross-catalog-notes.md#falcon-lightweight-cycles-parts-catalogue--1970-uk-importer-data_source-352)
+and [Brügelmann 1972](known-catalogs/cross-catalog-notes.md#brügelmann-radsport-shop-catalogue--1972-rennrad-geschichtende-data_source-400-2026-11-14).
+The latter has family-level Simplex Critérium/Prestige and Huret Svelto that
+were left as version matches to resolve. No catalogue availability date alone
+establishes a full production range.
+
 ## Accessible archive inventory — 2026-11-23
 
 Read-only archive and repository-note check for component catalogue candidates:
