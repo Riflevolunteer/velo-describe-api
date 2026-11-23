@@ -2145,7 +2145,7 @@ manual p.5 and 1995 p.17 both give CS-M900 Q with 16T, correcting the former
 p.6 and 1995 p.17 both give HP-M900 119g, correcting the former 170g attribution.
 The 1991 p.55 and 1995 p.17 PD-M737 weights differ (450g and 510g per pair).
 
-Conflicts held for further evidence: the 1994 p.39 FC-C700/C400 table gives
+Manual conflicts: the 1994 p.39 FC-C700/C400 table gives
 110/58mm bolt circles while 1995 p.39 prints 100/58mm; CS-HG70-C 11–21T on
 1995 p.39 conflicts with the ac 11–28T table on p.17. The 1995 road table
 prints BL/BR-1056 where photos and comparison pages use 1055; FH-HG50's 235g
@@ -2158,7 +2158,9 @@ Follow-up evidence, 2026-11-23: Shimano's [FC-C400 exploded parts sheet EV-FC-C4
 Live reconciliation, 2026-11-23: FC-C400 component 7759 already records
 110 / 58 mm BCD, consistent with the parts sheet; no database change is
 needed. A query found no bike specifications linked to 7759. The conflicting
-1995 manual figure and FC-C700 dimensions remain separate evidence questions.
+1995 manual figure remains documented above.
+
+FC-C700 reconciliation, 2026-11-23: Shimano's [EV-FC-C700-1316 parts sheet](https://si.shimano.com/de/pdfs/ev/FC-C700-1316/EV-FC-C700-1316.pdf) specifies 110 mm for the outer ring and 58 mm for the middle and inner rings. Live component 7753 already records 110 / 58 mm BCD, so no database change was needed. A query found no bike specifications linked to 7753.
 
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
