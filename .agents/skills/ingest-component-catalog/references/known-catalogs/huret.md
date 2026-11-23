@@ -1,5 +1,146 @@
 # Huret catalogs processed so far
 
+## November–December 1985 dealer sheets — applied and validated 2026-11-23
+
+Source **537**, Sachs-Huret New Success and Rival dealer sheets, prints
+French and English text with November/December 1985 imprints. The exact
+market of the original printings is unconfirmed. The [recovery assessment](#additional-sources-worth-reconciling--2026-11-23)
+has the page links and explains the reuse in an April 1986 US dealer pack.
+The recovered set is partial. The Multronic computer, loose fittings and
+service parts are outside the component categories. Availability in a
+dated sheet supplies an attestation for the listed model.
+
+| Page and component | Applied reconciliation |
+| --- | --- |
+| [November New Success group](https://www.rennrad-news.de/forum/attachments/sheet-01-jpg.297392/) and [2-102/A](https://www.rennrad-news.de/forum/attachments/sheet-02-jpg.297393/), AR 47.1D **4402** | Description confirms the short cage, direct mount, 223 g, 30T total and max sprocket, and names the touring counterpart. Dates stay 1985–88. |
+| December 2-102/A, AR 47.1T **4403** | Start NULL → 1985. Slotted long cage, dedicated parallelogram and stop ring. Preserved 227.5 g measured average. The existing 1987 Raleigh 8852 fitment is later availability evidence. End remains open. |
+| [December 1-112/A](https://www.rennrad-news.de/forum/attachments/sheet-03-jpg.297394/), AV 66.3D **8960** | 1986 → 1985. Clamp sizes and optional cable stop, 98 g and a 16T difference from the November group sheet. The April 1986 German flyer describes the matt finish alongside the polished finish in November. |
+| December 1-112/A, AV 66.4D **12416** | Added the 1985 braze-on double with a distinct riveted assembly and 15 mm fitting screw. The uncoded cut-out-cage fronts and the later Sachs/New Success fronts have different visible features. The fiche supplies the mount and hardware for 66.4D independently of the 66.3D specification. |
+| November New Success group, MA 85.2E **8963** | 1986 → 1985. Boss-mounted friction pair, 21 g per lever, alloy and steel. Both documented finishes retained. |
+| [December 2-104/A](https://www.rennrad-news.de/forum/attachments/06-rival-jpg.297402/), AR 41.1D **8957** / AR 41.1T **12417** | 8957 start 1986 → 1985. The drawing shows the lower-screw body and separates the short and long cage plates. Retained the 1986 published short-cage rating and 1988 Peugeot fitment end. Added the 1985 long cage under its printed code with the shared parallelogram, plus the identifiable [279 g, 80 mm specimen](https://www.disraeligears.co.uk/site/sachs-huret_rival_touring_411t_derailleur.html). The maker fiche gives no separate 41.1T capacity. Its drawing and the Rival-badged specimen distinguish it from the Rider-badged rears 4410/4411. |
+| [December 1-105/A](https://www.rennrad-news.de/forum/attachments/07-rival-jpg.297403/), AV 62.1D **8961** | 1986 → 1985. Recorded the high clamp, cage cut-outs, 28/28.6/29 or 30 mm fit and optional cable stop. Retained the listed 110 g specimen weight. Bare front 2432 has a similar cut-out cage. Its specimen page describes a plastic clamp section and later markings, so the new sheet alone leaves its exact crosswalk unresolved. |
+| [December 3-111](https://www.rennrad-news.de/forum/attachments/sheet-08-jpg.297395/), MA 82.2E | The right and left levers mount on brazed-on bosses with metal wing screws. The mechanism differs from the later indexed Rival Sport levers, and the mounting distinguishes it from MA 82.2C (8964). Uncoded [specimen 6104](https://velobase.com/Pages/ViewComponent.aspx?ID=B647E2DD-3E9B-42A5-9F69-40D078737327) also has plain blades and wing screws. Its package reference is partly obscured, so hold both a new row and a retitle pending a coded specimen or legible package. |
+
+The [April 1986 flyer, scan 3](https://www.disraeligears.co.uk/site/sachs_kettenschaltung_fur_rennen_touristik_off-road_-_1986_scan_3.html)
+also advertises both rear families in long-cage forms. The added models'
+end years are open. The AR 41.1T is a coded candidate for generic touring
+fitment, including PXR 80 spec 16963. It still needs a distinguishing
+original-bike view or a coded specification. The uncoded C502 New Success
+front and rear, 25198/25199, still lack the evidence to select among the
+documented versions.
+
+Applied one source, six updates and two inserts. Readback matched the
+expected IDs, fields, provenance and 17 existing links. Generator/live
+comparison was identical across 118 catalogues and 24,829 specs, including
+the same 15 pre-existing lost-match findings. No spec, CSV, generator,
+title, search text or group changed for existing records. Sachs Huret
+near/merge reports returned no candidates. The quality report had zero
+errors and no new link/date conflicts. Its two additional review flags are
+the open end years on 12416/12417. The existing open-end flag on 4403 now
+shows its 1985 start. The SQL rerun affected zero rows.
+
+For restoration, restore the following old values only while the changed
+fields still match this pass. Remove 12416/12417 only after checking live
+links and generator references, and remove source 537 only if unused.
+
+- **4402** · start 1985, source 391. Old description: Sachs Huret New Success (AR 47.1 D, first style), France, 223 grams. Light-alloy parallelogram rear, polished finish, three-point chain guidance; 30T total capacity, 30T max freewheel; long-cage version for touring. Levers MA 85.2 E, front AV 66.3 D.
+- **4403** · start NULL, source 1. Old description: Sachs Huret AR 47.1T, New Success Touring, France, 227.5 grams (avg). Approximate dating: mid-1980s; exact years unknown.
+- **8957** · start 1986, source 319. Old description: Rival AR 41.1 D; revised body with limit screws below the outer plate. Steel/light alloy, 28T capacity, 36T max sprocket. Short cage; long-cage version also offered. Later specimen reported 246g. Levers MA 82.2 C, front AV 62.1 D.
+- **8960** · start 1986, source 391. Old description: New Success front derailleur, chrome with matt finish; fitted with levers MA 85.2 E and rear AR 47.1 D.
+- **8961** · start 1986, source 225. Old description: Rival front derailleur for double chainsets; fitted with levers MA 82.2 C and rear AR 41.1 D. Velobase (as AV 62.10D): steel, band clamp set high on the cage, 3 rectangular cut-outs in the outer plate, 110g.
+- **8963** · start 1986, source 391. Old description: Lever shifters for the New Success group, chrome with matt finish; fitted with AR 47.1 D and AV 66.3 D.
+
+## Additional sources worth reconciling — 2026-11-23
+
+The live source register has the April 1986 German flyer (225), the French
+Composants ATB brochure (466) and the 1969 catalogue (528), which was used to
+date Svelto 2030. The [dealer sheets are now registered as 537](#novemberdecember-1985-dealer-sheets--applied-and-validated-2026-11-23).
+The trilingual ARIS brochure, 1990 insert and German MTB brochure remain
+unregistered.
+
+1. **Sachs-Huret French/English dealer sheets, November–December 1985.**
+   [New Success group sheet](https://www.rennrad-news.de/forum/attachments/sheet-01-jpg.297392/)
+   prints November 1985 and lists AR 47.1D, clamp-on AV 66.3D and friction
+   lever MA 85.2E. It supplied the 1985 attestation for front 8960 and levers
+   8963, both previously starting in 1986. The 223 g rear and 30T total/maximum
+   sprocket confirm existing 4402. December fiche
+   [2-102/A](https://www.rennrad-news.de/forum/attachments/sheet-02-jpg.297393/)
+   names AR 47.1T (4403) and illustrates its long cage, with distinct
+   parallelogram, cage plates and stop ring from the short 47.1D.
+   [1-112/A](https://www.rennrad-news.de/forum/attachments/sheet-03-jpg.297394/)
+   distinguishes band-clamp AV 66.3D from braze-on AV 66.4D.
+   [Rival fiche 2-104/A](https://www.rennrad-news.de/forum/attachments/06-rival-jpg.297402/)
+   depicts short AR 41.1D and long AR 41.1T. It attests the 8957 version by
+   December 1985. [Fiche 1-105/A](https://www.rennrad-news.de/forum/attachments/07-rival-jpg.297403/)
+   also attests AV 62.1D (8961) in December 1985, with clamp and cable-stop
+   options. [Fiche 3-111](https://www.rennrad-news.de/forum/attachments/sheet-08-jpg.297395/)
+   shows MA 82.2E for frame bosses, a separate mounting from MA 82.2C.
+   The [applied reconciliation](#novemberdecember-1985-dealer-sheets--applied-and-validated-2026-11-23)
+   records the two additions and the remaining MA 82.2E identification. The [April 1986 US dealer letter](https://www.rennrad-news.de/forum/attachments/00-b-jpg.297398/)
+   explains the reuse of the sheets. Images 297392–297396 are byte-identical
+   to 297399–297401 and 297404–297405 respectively. The forum has a partial
+   set and the sheets carry individual print dates. The original Velo-Pages
+   album 2429 still returned HTTP 406. The Multronic sheet 297396/297405
+   covers a cycle computer outside the component scope.
+
+2. **Sachs-Huret ARIS trilingual brochure, provisionally c. 1989.** The
+   [14-image upload](https://www.rennrad-news.de/forum/threads/sachs-new-success-chronologie.138753/#post-3669349)
+   has four group photos and technical tables for New Success ARIS, New
+   Success Touring ARIS, Rival Sport ARIS and Rival Touring ARIS. Use
+   approximate dating pending a legible imprint or independently dated copy.
+   [New Success road table](https://www.rennrad-news.de/forum/attachments/10-jpg.297416/)
+   documents 6/7-speed MA 85.5E (6110), AV 66.5D/66.6D clamp and braze-on,
+   and the AR 47.2D rear (4412). The
+   [Touring group](https://www.rennrad-news.de/forum/attachments/7-jpg.297413/)
+   and [table](https://www.rennrad-news.de/forum/attachments/13-jpg.297419/)
+   identify AR 47.2T (4413), 40T total and 32T maximum, and AV 66.5T/66.6T
+   triple fronts. Catalogue weights are separate from measured specimen
+   weights. [Rival Sport table](https://www.rennrad-news.de/forum/attachments/11-jpg.297417/)
+   lists AR 41.3D (4420), AV 62.2D/62.3D (2445 is the clamp-on code),
+   and MA 82.4/3E (6108). The
+   [Rival Touring table](https://www.rennrad-news.de/forum/attachments/12-jpg.297418/)
+   identifies rear AR 41.3T and lists the same AV 62.2T code as existing
+   French ATB row 11705, also 150 g and 26T. Compare both sources for one
+   component before considering any additional row. Both New Success group
+   pages state that their ARIS rear and the corresponding Rival ARIS lever,
+   or the reverse pairing, can be combined. The ranges and photographs
+   narrow comparisons for the Raleigh and other ARIS bike specs. Exact
+   fitment still requires bike-specific evidence.
+
+3. **Sachs Radsport-Komponenten '90.** The [five-spread PDF](https://www.rennrad-news.de/forum/attachments/sachs-komponenten-1990-pdf.297421/)
+   includes a cover printed '90 and a Sachs insert in TOUR. PDF pp. 3–4
+   picture New Success road, Rival Sport, Rival ATB and Classic 3000 Sport
+   and ATB. The text explicitly offers Rival ATB in 18- and 21-speed
+   configurations. Use this as dated corroboration when the photos identify
+   a component, especially to compare the French ATB group (466) and the
+   Classic 3000 rear (4406). The insert supplies few individual model codes.
+
+4. **Sachs Schaltgruppen · Mountain Bikes, German edition, undated.**
+   The [maker PDF](https://www.mtb-kataloge.de/sonstiges/Sachs.pdf)
+   gives separate specifications for New Success ATB, Rival 7000 ATB and
+   Classic 3500/2500/1500. Review ARIS Power Grip and Twist Ring and the
+   named assemblies against the Sachs and Sachs Huret rows. Page 8
+   specifies a Rival 7000 ATB triple with 26T front difference and a
+   34T/40T rear, distinct in scope from the six-speed French ATB sheet.
+   The [1991 German Raleigh catalogue](https://bikalog.org/api/view/Raleigh/1991/Raleigh91.pdf)
+   names Classic 3500 and Power Grip on Pioneer Venture.
+   [Miroir du Cyclisme's May 1991 MTB supplement](https://pandor.u-bourgogne.fr/fr/archives-en-ligne/functions/ead/detached/MIRC/MIRC_1991_05_n443_SUP.pdf)
+   gives period fitment evidence for New Success, Rival 7000 and Classic
+   3500 with Power Grip. Those sources date availability of the
+   combinations they identify. The German maker PDF's edition date remains open.
+
+5. **Early Huret.** For the next pre-1970 pass, compare the product and
+   spares pages of the [1966–69 maker range](https://www.disraeligears.co.uk/site/huret_-_catalogues_newsletters.html)
+   together, reusing source 528 for 1969. Go beyond the prior Svelto and
+   front 600 spot checks and reconcile Allvit, Luxe, early controls and
+   front assemblies by code. For pull-chain models, compare the
+   [June 1950 price list](https://ebykr.com/library/huret-1950-advertisement-prix-detail-juin-1950/)
+   and the [circa-1953 maker leaflet](https://www.disraeligears.co.uk/site/huret_leaflet_-_1953.html)
+   against Competition/Tour de France and Louison Bobet specimen rows
+   4274/4282/4284/4285. The leaflet also names Randonneur, whose identity
+   should be checked against uncoded early entries. Treat the circa dates
+   in the archive as estimates until independently established.
+
 ## Rival 1086-00 capacity and New Success ARIS compatibility — applied 2026-11-22
 
 - **8488, Rival 1086-00.** The [New '82 leaflet, sheet 1](https://www.disraeligears.co.uk/site/00_main_images/huret_-_new_82_scan_1_main_image.jpg)
@@ -1309,7 +1450,9 @@ Duplicate reporting remained at 13 groups / 33 candidate pairs; the catalogue di
   [Raleigh detail-photo correction](#raleigh-randonneur-long-cage-identification--2026-11-16)
   replaces its rear with 4403 AR47.1T. Front/shifter exact codes remain open.
 
-## Sachs-Huret 1985 — not retrievable (checked 2026-10-20)
+## Sachs-Huret 1985 — original blog copy unavailable (checked 2026-10-20)
+
+Readable dated dealer sheets were recovered from a forum mirror on 2026-11-23. See the [source assessment](#additional-sources-worth-reconciling--2026-11-23) for the pages recovered and the remaining edition limits.
 
 - https://labibleduvelocataloguessachshuret.blogspot.com/p/sachs-huret-1975.html
   is the 1985 catalogue (the page's own note: the tab is labelled 1985, the
@@ -1317,10 +1460,9 @@ Duplicate reporting remained at 13 groups / 33 candidate pairs; the catalogue di
   (`blogger_img_proxy`) of scans hosted on bibibike.forumserv.com
   (`/image/110/.../sheet-NN-*.jpg.htm`). Today the proxy URLs return 404, the
   forum is gone (xooit "forum inexistant"), and the Wayback Machine has no
-  copy of those image URLs (it rate-limited further probing). Nothing was
-  ingested. If a copy turns up elsewhere (retrobike, ebykr, disraeligears),
-  it would date the pre-ARIS New Success rows (4402 / 4403) but not the 1987
-  ARIS ones.
+  copy of those image URLs (it rate-limited further probing). The recovered
+  dealer sheets subsequently dated the pre-ARIS New Success rows 4402/4403.
+  The complete original blog edition remains unavailable.
 
 
 
