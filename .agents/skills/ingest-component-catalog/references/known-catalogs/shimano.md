@@ -2149,9 +2149,9 @@ Manual conflicts: the 1994 p.39 FC-C700/C400 table gives
 110/58mm bolt circles while 1995 p.39 prints 100/58mm; CS-HG70-C 11–21T on
 1995 p.39 conflicts with the ac 11–28T table on p.17. The 1995 road table
 prints BL/BR-1056 where photos and comparison pages use 1055; FH-HG50's 235g
-appears to repeat the adjacent front hub figure. HB-6400 overlapping rows and
-the CS-HG70-8 versus CS-HG70-I configurations were reviewed below. Do not
-infer unique identities from catalogue conflicts alone.
+appears to repeat the adjacent front hub figure. HB-6400 overlapping rows
+still need identity review; the CS-HG70-8 versus CS-HG70-I configurations
+were reviewed below. Do not infer unique identities from catalogue conflicts alone.
 
 CS-HG70-8 / CS-HG70-I review, 2026-11-23: Keep 7762 and 9709 separate.
 The 105SC CS-HG70-8 row 7762 lists road combinations including T 13–23T;
@@ -2172,6 +2172,22 @@ needed. A query found no bike specifications linked to 7759. The conflicting
 1995 manual figure remains documented above.
 
 FC-C700 reconciliation, 2026-11-23: Shimano's [EV-FC-C700-1316 parts sheet](https://si.shimano.com/de/pdfs/ev/FC-C700-1316/EV-FC-C700-1316.pdf) specifies 110 mm for the outer ring and 58 mm for the middle and inner rings. Live component 7753 already records 110 / 58 mm BCD, so no database change was needed. A query found no bike specifications linked to 7753.
+
+HB-6400 overlap review, 2026-11-23: Live 3534 combines FH-6400-6/7 and
+HB-6400-F (1988–1991); 9712 is a front hub (1996–1997). Both descriptions
+give 100 mm spacing, a 108 mm axle and 212 g front weight. Shimano's
+[1992 road table](https://vintagecannondale.com/cannondale/shimano/Shimano92.pdf)
+still names HB-6400-F, while the 1996 catalogue records HB-6400 with the same
+dimensions; these are evidence of overlap, not proof that every detail is
+unchanged. A [parts list](https://manualzz.com/doc/53869848/shimano-hb-6400-hub-depan-exploded-view?lang=en)
+names HB-6400-F and gives 100 mm spacing. Do not merge the front-only row into
+the combined front/rear row on these similarities alone; compare period parts
+keys or measured specimens and decide how to represent the shared front hub.
+Seven hub specs link to 3534; none link to 9712. Spec 15055 is on the 1987
+Peugeot Puymorens, whose catalogue lists Shimano 6400. Its year precedes
+3534's 1988 start; the October 1987 Shimano brochure documents the 6400 range
+for model year 1988. Review whether the bike's catalogue year and the row's
+date convention justify a date change. No DB or generator changes were made.
 
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
