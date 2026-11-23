@@ -1,5 +1,40 @@
 # Huret catalogs processed so far
 
+## Sachs Radsport-Komponenten '90 — applied and validated 2026-11-23
+
+The [five-spread TOUR insert](https://www.rennrad-news.de/forum/attachments/sachs-komponenten-1990-pdf.297421/) is for the German market. The cover prints '90, the introductory spread cites the 1989 World Championships and the East German team's equipment from 1990, and the adjacent contest closes in April 1990. PDF p. 3 covers New Success road and p. 4 covers Rival Sport, Rival ATB, Classic 3000 Sport and Classic 3000 ATB. Registered as catalogue source **539** with country `DE`. A 1990 start records the earliest firm attestation for the identified variant in this review. End years and confirmed launch dates require other evidence.
+
+### Applied updates
+
+| ID | Part | Change and evidence |
+| --- | --- | --- |
+| 11704 | Rival ATB AR 41.4T rear | Start NULL → 1990. The marked long cage with a projecting lower toe and dark knuckles match p. 2 of the [French ATB brochure, source 466](https://leblogduvelovintage.art.blog/wp-content/uploads/2022/09/sachs-huret-atb.pdf#page=2) and the [week 20 of 1990 specimen](https://www.disraeligears.co.uk/site/sachs-huret_rival_aris_atb_light_grey_414t_derailleur.html). Source 466 is the basis for the 40T total, 34T maximum and 360 g specifications. |
+| 4420 | Rival Sport AR 41.3D rear | Start NULL → 1990. Sport lettering, dark knuckles and short crescent cage match the [week 27 of 1990 specimen](https://www.disraeligears.co.uk/site/sachs-huret_rival_aris_sport_light_grey_413d_derailleur.html). The 28T total, 32T maximum and 285 g remain the source 538 figures. Earlier plain Rival ARIS 4417 has different badging. |
+| 11705 | Rival Touring / ATB AV 62.2T front | Start NULL → 1990. The pictured Rival ATB front matches the clamp and profiled triple cage of [French ATB pp. 2–3](https://leblogduvelovintage.art.blog/wp-content/uploads/2022/09/sachs-huret-atb.pdf#page=2). Source 538 also lists this code for Rival Touring. |
+| 12433 | New Success ARIS front hub | Start NULL → 1990. PDF p. 3 shows the front quick-release hub with the low polished flanges and Sachs-Maillard New Success sealed markings. Source 538 supplies the spacing, drillings and weight. |
+| 2907 | New Success anatomical handlebar | Replace `Sachs New Success, Germany` with drawn light-alloy and patented anatomical grip details from p. 3. The [bar stamp](https://velobase.com/CompImages/Handlebars/08EE687E-7DE0-460F-A5D7-3F37D5A36D47.jpeg) reads Made in Italy and Anatomic Shape Tech. The stored year span is 1990–1990. |
+| 1397 | Sachs-Sedis Sedisport ATB chain | Start NULL → 1990 and restore the product name in the title and search text. PDF p. 4 and French ATB p. 3 identify the ATB chain. The insert describes chamfered plates and double riveting. The [ATBZ 116 package](https://velobase.com/CompImages/Chains/96414402-6425-4ADE-A6F7-9E2EC658AB5E.jpeg) and [range panel](https://velobase.com/CompImages/Chains/0C1A3318-256C-4F07-B5C1-6C36327C4E83.jpeg) distinguish it from road GT7. Old title and search text `Sachs-Sedis ATB`, old description `Sachs-Sedis ATB, France`. |
+
+### New components
+
+| ID | Category | Component | Distinguishing evidence |
+| --- | --- | --- | --- |
+| 12437 | Rear Derailleurs | Sachs Huret ARIS Classic 3000 ATB, long cage | PDF p. 4 shows the elongated cage in the ATB group. A [marked Liberia fitment](https://i.servimg.com/u/f30/20/45/18/64/img_2040.jpg) confirms the black and gold Classic 3000 badge, ATB cage lettering, openings around the lower pulley and projecting lower toe. |
+| 12438 | Shifters | Sachs Huret Rival ATB ARIS, right 7-speed thumb shifter | PDF p. 4 shows a black right control marked “7 speed” and offers an 18- or 21-speed drivetrain. The French ATB table specifies 11706 MA 82.8G as six-speed and says seven-speed is in preparation. The later control's model code remains unconfirmed. |
+| 12439 | Cranksets | Sachs Huret Rival ATB triple crankset | The crank on p. 4 is marked Rival ATB. French ATB p. 3 lists a round 48T outer and oval 38T and 28T rings. Rival Touring triple 12436 has 30/40/50T rings. |
+| 12440 | Hubs | Sachs-Maillard Rival ATB front hub | PDF p. 4 shows the quick-release front. French ATB p. 3 specifies sealed bearings and chrome-moly axles with quick-release and nutted options. |
+| 12441 | Hubs | Sachs-Maillard Rival ATB rear freewheel hub | PDF p. 4 shows the threaded quick-release rear. French ATB p. 3 specifies the same axle and bearing options. The [Rival 7000 specimen 3512](https://velobase.com/CompImages/Hubs/67791BEF-74EC-4B15-8380-739234861403.jpeg) carries a separate 7000 badge. |
+
+### Further comparisons
+
+- Classic 3000 Sport is pictured with a short cage and band-clamp downtube shifters. The clamps corroborate 6108's existing 1990 coverage. [4406](https://velobase.com/ViewComponent.aspx?ID=93876484-0C40-4C43-AD95-F27A05BCB4C8) has a different longer, slotted touring cage from either p. 4 variant. A closer Sport specimen or maker key is needed to identify the short rear. The [Liberia right thumb shifter](https://i.servimg.com/u/f30/20/45/18/64/img_2041.jpg) corroborates the speed marking on a related Classic ATB control. The insert gives no left shifter code to compare with 11707 or 11708.
+- New Success AR 47.2D rear 4412 is recognizable on p. 3 by its short open cage, angular body and New Success ARIS outer plate. The photograph confirms availability by 1990. The existing 1987 start and open end are supported by the available record. The rear hub 3509 has earlier bike links. AV 66.6D attribution to a pictured front, exact road brake variants, crank variants, SKF cartridge model and freewheel threading need closer views or codes. The road rear from the insert is visually distinct from the later RN500/54.01D design in 4414.
+- PDF p. 4 shows a Rival Sport marked double, Orbit geared hub, and a conventional hub pair. Existing 1731 carries the plainer Rival crank marking. The Sport/ATB spread also shows ATB Special drum hubs and states a cantilever option. Codes are needed before resolving the specific Orbit, drum hub, brake or accessory rows.
+
+Applied one catalogue source, six updates and five additions. Readback matched all titles, descriptions, search text, date bounds and provenance. Descriptions were at most 193 characters. A second load affected zero rows. The Sachs near-duplicate and Sedis exact-title checks found no candidates. The live before/after bike-link comparison across 118 loaded catalogues and 24,829 specs was identical, including 15 pre-existing findings. The affected rows have no linked bike specs, and the reviewed Rival ATB, Classic 3000 and Sedisport ATB names did not identify any new fitments in loaded specs.
+
+For restoration, first verify that the affected rows still match this load. Reset the starts of 11704, 4420, 11705, 12433 and 1397 to NULL, restore the prior descriptions and 1397 title and search text recorded above, and restore source refs 466 on 11704, 538 on 4420/11705/12433 and 1 on 2907/1397. Check live links and generator references before removing 12437–12441. Remove source 539 only if unused.
+
 ## Trilingual ARIS brochure — applied and validated 2026-11-23
 
 Reviewed the [14 scans](https://www.rennrad-news.de/forum/threads/sachs-new-success-chronologie.138753/#post-3669349)
@@ -189,7 +224,8 @@ The live source register has the April 1986 German flyer (225), the French
 Composants ATB brochure (466) and the 1969 catalogue (528), which was used to
 date Svelto 2030. The [dealer sheets are now registered as 537](#novemberdecember-1985-dealer-sheets--applied-and-validated-2026-11-23).
 The [trilingual ARIS brochure](#trilingual-aris-brochure--applied-and-validated-2026-11-23)
-is registered as 538. The 1990 insert and German MTB brochure remain to be reconciled.
+is registered as 538. The [1990 insert reconciliation](#sachs-radsport-komponenten-90--applied-and-validated-2026-11-23)
+is applied as source 539. The German MTB brochure is next.
 
 1. **Sachs-Huret French/English dealer sheets, November–December 1985.**
    [New Success group sheet](https://www.rennrad-news.de/forum/attachments/sheet-01-jpg.297392/)
@@ -246,9 +282,8 @@ is registered as 538. The 1990 insert and German MTB brochure remain to be recon
    includes a cover printed '90 and a Sachs insert in TOUR. PDF pp. 3–4
    picture New Success road, Rival Sport, Rival ATB and Classic 3000 Sport
    and ATB. The text explicitly offers Rival ATB in 18- and 21-speed
-   configurations. Use this as dated corroboration when the photos identify
-   a component, especially to compare the French ATB group (466) and the
-   Classic 3000 rear (4406). The insert supplies few individual model codes.
+   configurations. The [applied reconciliation](#sachs-radsport-komponenten-90--applied-and-validated-2026-11-23)
+   compares the variants, supporting specimens and French ATB technical table.
 
 4. **Sachs Schaltgruppen · Mountain Bikes, German edition, undated.**
    The [maker PDF](https://www.mtb-kataloge.de/sonstiges/Sachs.pdf)
