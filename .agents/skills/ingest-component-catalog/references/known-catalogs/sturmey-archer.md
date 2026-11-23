@@ -55,11 +55,44 @@ separate current/discontinued sections (p.12). AW/AB/AG are in the latter in
 that version, yet reappear in later maker material. PDF p.10 introduces SW.
 Use the bind-in page dates and their purpose before drawing range conclusions.
 The 1971 comparison settled the smooth AW model details. The Master Catalogue
-index provides starting points for the remaining earlier versions and the
-TCW/SB ranges. Beardshaw lists KS and KB families, but extra markings on
-2730/2731 need a period legend or matching specimens before assigning those
+index provides starting points for remaining earlier versions. Beardshaw lists
+KS and KB families, but extra markings on 2730/2731 need a period legend or
+matching specimens before assigning those
 family dates. Existing earlier quadrant and brass trigger variants likewise
 need code/finish evidence before changing their dates.
+
+### TCW and SB hubs — reviewed 2026-11-23
+
+The Master Catalogue's unmarked TCW sheet and parts list (PDF pp.36–37)
+describe a three-speed Tricoaster hub with AW ratios (low −25%, direct,
+high +33⅓%), 36/40-hole shells, 5¾/6¼-inch axles and 16–20 or 22-tooth
+sprockets. The sheets are undated; a March 1959 insert lists TCW spares,
+which does not establish availability of a complete hub at that date.
+The [Raleigh US catalogue attributed to 1954](https://threespeedhub.com/wp-content/uploads/2013/04/Raleigh-Catalog-1954-US.pdf)
+illustrates and offers a complete TCW; its year is the archive's attribution,
+not a verified printed date.
+
+Beardshaw's Hub Reference Book, PDF p.14, identifies three distinct TCW
+constructions and their production ranges: Mark I, 1952–59, with one-piece
+aluminium-bronze brake band and end-cam actuator; Mark II, 1959–61, with
+bronze band and split steel liner and changed drag spring; and Mark III,
+1961–72, with worm-drive brake actuator and wire drag spring. The
+[heritage archive](https://www.sturmey-archerheritage.com/index.php?id=650&page=history-detail)
+independently gives the Mark III dates. None of these three was in
+the database before this review; the later S3C 2733 is a different model.
+The approved additions are Mark I **12411**, Mark II **12412**, and Mark III
+**12413**, all using existing source 522. Readback verified the fields and an
+identical rerun affected zero rows. The brand near-duplicate report found zero
+pairs. Generator comparison before and after was identical for 118 loaded
+catalogues and 24,829 specs, with the same 15 unrelated lost-match proposals.
+The whole-database quality report after application had zero errors.
+
+The Master Catalogue's SB sheets (pp.34–35) describe a planned three-speed,
+wide-ratio hub with expanding brake and cable or rod control. Its undated
+errata (p.14) says AB and AG supplies would continue until SB and SG
+production commenced. The [heritage archive](https://www.sturmey-archerheritage.com/index.php?id=945&page=history-detail)
+states that SB was never produced. Do not add an SB production record on the
+strength of the planned catalogue sheets.
 
 ### Applied and validated 2026-11-23
 
