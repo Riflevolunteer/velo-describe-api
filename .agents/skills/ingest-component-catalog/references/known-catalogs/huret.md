@@ -1,5 +1,65 @@
 # Huret catalogs processed so far
 
+## Huret Accessoires de Haut Qualité, 1966–69 — applied and validated 2026-11-23
+
+Compared [1966](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1966.html), [1967](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1967.html), [the archive's 1968 edition](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1968.html) and [1969](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1969.html). The 1966, 1967 and 1969 covers print their years. The archive's 1968 copy is undated and repeats the 1967 cycling plates 2–8, with product differences in the meter pages. The 1969 cover has a handwritten “70” beside 1969. Reused source **528** for the printed 1969 edition. Registered the 1966 and 1967 French catalogues as **542** and **543**, and the October 1969 Luxe Super Touring plate as **544**.
+
+The complete in-scope cycling assemblies are on 1966 pp. 2–5, 1967/1968 pp. 2–8 and 1969 pp. 3–14. Covers, mounting parts, tools, cables, dropouts, speedometers, moped parts and ratio charts were checked for edition or fitment context.
+
+### Applied corrections
+
+| Row | Date or identity change | Evidence |
+| --- | --- | --- |
+| 2382 | Enrich the slotted 600 front | The oval Huret mark and 654 slot match [1966 p. 4](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1966_page_4.html) and [1969 p. 9](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1969_page_9.html). The maker lists 605 (28 mm), 645 (25.4 mm) and sleeve 644. Individual clamp style remains open. |
+| 2394 | Enrich the linked Allvit front at family level | Its exposed spring and slotted cage match the 600 construction. The specimen has a 28.6 mm band and cable stop. Retain the broader title and six bike links. |
+| 6071 | Start 1970 → 1966 | [1966 p. 5](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1966_page_5.html) prints 1882 double, 1884 right and 641 left with wire-wing screw 1858. The later numbered controls retain their own catalogue evidence. |
+| 2385 | Correct the 700 clamp parts | [1967 p. 3](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1967_page_3.html) shows the bolt-on clamp, slotted cage 708 and capped spring as photographed. 750 and 751 are bands. 754 and 755 are bolts. |
+| 4296 | Luxe 2100 T Touring start 1960 → 1966 | The [November 1966 Le Cycle parts plate](https://www.disraeligears.co.uk/site/le_cycle_november_1966_-_image_of_huret_luxe.html) shows the 2101 Touring link. [1967 p. 2](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1967_page_2.html) gives 13–30T. Keep the later importer's 13–31T figure as separate evidence. |
+| 4297 | Generic Luxe 2100 start 1960 → 1966 | The [October 1966 maker advertisement](https://ebykr.com/library/huret-1966-advertisement-luxe/) and [Salon report, p. 33](https://cyclememory.org/doc/B-1-0000000505/B-1-0000000505.pdf#page=33) establish the family. 1967 p. 2 and 1969 p. 4 distinguish the competing outer links. Keep the four Raleigh fitments at family level. |
+| 6070 | Identify Luxe 2150 levers, start 1960 → 1966 and clear the 1960 end | [1967 p. 4](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1967_page_4.html) names the assembly with distinctive tapered covers 1967/1968. The October 1966 maker ad shows those covers. [6070](https://velobase.com/CompImages/Shifter/2DA9C000-01A6-4897-9609-2AF358A31D91.jpeg) has the same cover shape, blue grips and solid wing adjusters. The catalogue draws a wire loop. |
+| 4271 | Identify decorated Allvit 1900 D, start 1970 → 1969 | [1969 p. 6](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1969_page_6.html) shows the non-ribbed shell and filled star badge and lists 1901 D. [Specimen](https://velobase.com/CompImages/RDerailleur/FFD4DC87-84B9-4535-9195-577F48E4381E.jpeg) establishes the red badge and pulley trim. |
+| 4290 | Enrich the linked Allvit rear | 1969 p. 6 names standard 1900 and decorated 1900 D and lists 3–6 speeds. Keep the date span, measured weight, later gearing and six bike links. |
+| 4293 | Svelto 2000/2000 D start 1970 → 1969 | [1969 p. 7](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1969_page_7.html) names the decorated model and depicts its 2025 badge. Keep the later 13–28T figure and 1976 codes. |
+| 4295 | Luxe 2100 ST Super Touring start 1960 → 1969 | The [October 1969 Le Cycle plate](https://www.disraeligears.co.uk/site/le_cycle_october_1969_-_image_of_huret_luxe_super_touring.html) shows long cage plates 2144/2145 with Touring outer link 2101. Preserve the importer capacity and weight. This is separate evidence from the 1969 maker catalogue. |
+| 6062 | Correct assembly code 1826 → 1828 and start 1970 → 1969 | [1969 p. 11](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1969_page_11.html) distinguishes complete long controls 1828, 1886, 1887 from loose 102 mm blades 1826/1827. |
+| 7940 | Enrich the small-wheel Svelto 2030 | [1969 p. 8](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1969_page_8.html) specifies 3/4 speeds and identifies hanger 1800 M and link 2001 M. Retain the 1969 start and later gearing. |
+| 7941, 7943 | Start 1973 → 1969 for both controls | [1969 pp. 12–13](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1969_page_12.html) show 1885/1888 Stick-Shift and fitting positions. [P. 14](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1969_page_14.html) names 2300/2301 bar-end controls. |
+
+### New components
+
+- **12463 · 2100 C Luxe Compétition**. 1967 p. 2 and [1969 p. 4](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1969_page_4.html) list 13–24T and the 2101-C outer link. Compétition and Touring have shared pulley cage parts 2131/2132 and distinct mounting-pivot offsets. The contemporary [Compétition](https://www.disraeligears.co.uk/site/huret_luxe_competition_2100c_derailleur.html) and [Touring](https://www.disraeligears.co.uk/site/huret_luxe_touring_2100t_derailleur.html) specimens illustrate the difference.
+- **12464 and 12465 · 2220 and 2235 integrated twist-grip brake controls**. [1969 p. 3](https://www.disraeligears.co.uk/site/huret_accessoires_de_haut_qualite_-_1969_page_3.html) shows the three-position gear indicator and integrated lever. Separate assembly codes and bodies fit 22/22.2 mm and 23.5 mm bars respectively. Added Huret to the Shifting Brake Levers category lookup and verified both controls are listed under it.
+
+### Specimen and fitment limits
+
+- The 1966 Allvit and Svelto sheets distinguish Type 1965 and Type 1966 cage plates, springs and fasteners. The graphite Rilsan text is unclear next to the shiny specimen cages and the October 1966 account of its use around pulley bearings. 4270 matches the early ribbed Allvit body. 4272 combines that ribbed body with a longer cage for which the early sheets provide no exact date or 1999 crosswalk. The 1969 Allvit table repeats 2131 on its second line, where its drawing and the 1967 table identify inner plate 2132.
+- The 4294 photo set contains more than one assembly, so its pictures cannot give a single 2000 or 2030 identification. The 600 slot and oval badge support 2382, while the clamp-style comparisons on 2381/2383 and solid-cage 700 specimens 2384/2386 still require stronger evidence.
+- 4297's photographs show the shared short cage. The cable-stop position relative to the round recess by the mounting pivot favours Touring. A closer aligned view or marked 2101/2101-C link would settle the subtype. The four existing Raleigh rear links specify generic Luxe. The Raleigh fronts say Luxe without a code or decisive image and remain unresolved. The Nomade's stem shifter cannot be assigned to a downtube control from this set.
+
+Applied fifteen updates, three component additions, one category/brand association and three new source records. Readback matched all 18 rows, including titles, search text, specifications, dates and sources. The longest description was 229 characters. Repeating all four SQL files affected zero rows. The live before/after report across 118 loaded catalogues and 24,829 bike specs was identical, including 15 pre-existing findings. The three family-level records retain their existing 16 links. The duplicate scan found no merge candidate. It flagged the unresolved 4294/7940 Svelto comparison, which remains open in the worklist.
+
+### Prior values for restoration
+
+Verify that the current rows still match this load before restoring old fields. Check bike-spec and generator references before removing 12463–12465. Remove the Huret category-20 association only if no Huret controls use it, and remove sources 542–544 only if unused.
+
+| ID | Prior dates | Prior source | Prior title and search text where changed | Prior description |
+| --- | --- | --- | --- | --- |
+| 2382 | 1966–1969 | 1 | — | Huret 600 (later version; slot on top of cage; later style clamping band), France |
+| 2385 | 1966–1974 | 276 | — | Huret 700 (later version; slot on top of cage; bolt-on clamping band), France. Ref. 700 cable front for double and triple chainrings, clamps 750 / 751 / 754 / 755 for 25.4-28.6mm, cable 1880 / 629 / 1990 |
+| 2394 | 1961–1985 | 1 | — | Huret Allvit, France, 133 grams (Spec) |
+| 4271 | 1970–1970 | 1 | `Huret Allvit (later version)` / `Huret Allvit` | Huret Allvit (later version), France |
+| 4290 | 1961–1976 | 118 | — | Huret Allvit, France. Steel rear for racing and touring, 317g; 13-30T freewheel (13-34T with dropout 2557), 36-53T chainrings, steel pulleys. Ref. 1900 / 1900 D (1973, 1975), renumbered 2500 Huret / 2540 Italian dropout in 1976. 307g measured. |
+| 4293 | 1970–1976 | 118 | — | Huret Svelto 2000 / 2000 D / 2040 / 2072 (2nd version), France. Steel sport and touring rear, 242g, 13-28T freewheel (13-24T in 1973), 36-53T chainrings. Ref. 2000 / 2000 D decorated (1973, 1975), renumbered 2040 Huret / 2072 Italian in 1976. |
+| 4295 | 1960–1974 | 276 | — | Huret Luxe Super Touring, France. Parallelogram rear derailleur ref. 2100 ST on the 2101 Super Touring cage, 5/6-speed, 41T total capacity (freewheel and chainwheel spread combined), 10 1/2 oz; 2101-C is the Competition cage. |
+| 4296 | 1960–1974 | 276 | — | Huret Luxe Touring, France. Parallelogram rear derailleur ref. 2100 T on the 2101 Touring cage, 5/6-speed, 1/8 or 3/32 chain, 13-31T freewheel, 36-53T chainwheels, 9 3/4 oz; the 2101-C Competition cage takes 13-24T, 9 1/2 oz. |
+| 4297 | 1960–1974 | 276 | — | Huret Luxe, France. Rear derailleur ref. 2100 T (Touring) and 2100 ST (Super Touring); 2101 cage for Touring and Super Touring, 2101-C for Competition. |
+| 6062 | 1970–1973 | 95 | `Huret 1826 / 1886 / 1887, Allvit & Svelto (long levers)` / `Huret 1826 1886 1887 Allvit Svelto` | Huret 1826 / 1886 / 1887, Allvit & Svelto (long levers), France. Long down-tube levers (grand levier) with wing nut 1858: 1826 double, 1886 right single, 1887 left single |
+| 6070 | 1960–1960 | 1 | `Huret Allvit/Luxe (1960's)` / `Huret Allvit/Luxe` | Huret Allvit/Luxe (1960's), France |
+| 6071 | 1970–1975 | 96 | — | Huret 1882 / 1884 / 641 standard levers, France. Allvit / Svelto / 900-901 down-tube levers: double 1898 (25.4) / 1882 (28); right 1899 / 1884 / 1879 (twin-tube); left 661 / 641 C / 1848 C; CP without clip (1973, 1975). |
+| 7940 | 1969–1976 | 528 | — | Huret Svelto 2030 / 2065, France. Steel rear recommended for small-wheel bicycles, 242g, steel pulleys, all ball bearings; 13-22T (1973), 13-26T (1975, 1976) freewheel, 36-53T chainrings. Ref. 2030, renumbered 2065 in 1976. |
+| 7941 | 1973–1973 | 95 | — | Huret 1885 / 1888 Stick-Shift, France, single stick-shift levers for Allvit and Svelto with wing nut 1858, 1885 right / 1888 left, for handlebar or top tube; sleeves 1941 / 1942 for 23.5 or 22-22.2mm |
+| 7943 | 1973–1979 | 536 | — | — |
+
 ## Sachs Schaltgruppen · Mountain Bikes — applied and validated 2026-11-23
 
 Reviewed all 11 pages of the [German maker brochure](https://www.mtb-kataloge.de/sonstiges/Sachs.pdf). The scan has no dated imprint. PDF pp. 1–4 show the range introduction, New Success ATB assembly and ARIS options. Page 5 compares the controls. Technical tables cover New Success ATB pp. 6–7, Rival 7000 ATB pp. 8–9 and Classic 3500/2500/1500 ATB pp. 10–11. The corroborating dates below apply to specific parts or documented fitments. Registered the undated German brochure as source **540** and the stamped 53.11D specimen as source **541**.
@@ -352,11 +412,9 @@ is applied as source 540, with the short-cage 53.11D correction separately sourc
    3500 with Power Grip. Those sources date availability of the
    combinations they identify. The German maker PDF's edition date remains open.
 
-5. **Early Huret.** For the next pre-1970 pass, compare the product and
-   spares pages of the [1966–69 maker range](https://www.disraeligears.co.uk/site/huret_-_catalogues_newsletters.html)
-   together, reusing source 528 for 1969. Go beyond the prior Svelto and
-   front 600 spot checks and reconcile Allvit, Luxe, early controls and
-   front assemblies by code. For pull-chain models, compare the
+5. **Early Huret.** The [applied 1966–69 reconciliation](#huret-accessoires-de-haut-qualité-196669--applied-and-validated-2026-11-23)
+   covers Allvit, Luxe, Svelto, early controls and fronts by code and
+   reuses source 528 for 1969. For pull-chain models, compare the
    [June 1950 price list](https://ebykr.com/library/huret-1950-advertisement-prix-detail-juin-1950/)
    and the [circa-1953 maker leaflet](https://www.disraeligears.co.uk/site/huret_leaflet_-_1953.html)
    against Competition/Tour de France and Louison Bobet specimen rows
@@ -1693,7 +1751,7 @@ Readable dated dealer sheets were recovered from a forum mirror on 2026-11-23. S
 
 See the full entry in [suntour.md](suntour.md). Huret rows unchanged except
 the Luxe rear derailleurs 4295 / 4296 / 4297 (descriptions: refs 2100 T /
-2100 ST, cages 2101 / 2101-C). Huret 2150 twin levers have no row.
+2100 ST, then-described cages 2101 / 2101-C). The [later reconciliation](#huret-accessoires-de-haut-qualité-196669--applied-and-validated-2026-11-23) identifies these as outer linkage plates and identifies 6070 as the 2150 twin lever.
 
 ## Rival 2850-00 / AR 41.1 D generation review — 2026-11-08
 
