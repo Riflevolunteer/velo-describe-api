@@ -1,5 +1,24 @@
 # Weinmann catalogs processed so far
 
+## Early Vainqueur 999 source review — 2026-11-23
+
+Live rows 1105 (1957–1962) and 1106 (1962) both cite VeloBase
+source 1; 1107 (1962–1964) cites January 1963 catalogue 107, source 93.
+[1105's specimen entry](https://velobase.com/Pages/ViewComponent.aspx?ID=4EF182A4-59C6-48A6-89EC-435C30A779FB)
+describes a single spring and screw-in pivots; [1106's entry](https://velobase.com/Pages/ViewComponent.aspx?ID=E6B65FF0-AE82-4040-92BD-9C682355FB65)
+calls its single-spring, mounted-pivot specimen an intermediate version. These
+are the site's identifications and dates, not independent period confirmation.
+
+The [1958 advert fragment](https://www.classiclightweights.co.uk/wp-content/uploads/2020/06/weinmann1.jpg)
+shows 730/500 side-pulls, not a Vainqueur; it cannot distinguish these rows.
+[Holdsworth 1962, p.36](https://ebykr.com/library/holdsworth-1962-aids-catalog/)
+lists and illustrates the 999, but its text does not distinguish pivots or spring.
+The partial January 1963 catalogue 107 identifies the two-spring New Improved
+Model since end 1962 (see below), not the intermediate specimen. These sources
+do not establish 1106's exact year or whether it was a production variant. Seek
+a dated maker parts diagram or original dated fitment showing the single spring
+and mounted pivots. No database changes made.
+
 ## Cologne report enrichment — applied 2026-11-19
 
 Row **1098** description enriched from the recovered press report, source **470**. Dates, title and bike links are unchanged; the magazine issue/date remains unverified. [Exact old/new values, evidence and validation](cross-catalog-notes.md#cologne-press-report-reconciliation--applied-2026-11-19). Readback matched; the SQL rerun changed zero rows and all catalogue mappings were preserved.
