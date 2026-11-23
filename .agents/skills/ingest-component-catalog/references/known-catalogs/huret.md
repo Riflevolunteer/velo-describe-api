@@ -1,5 +1,138 @@
 # Huret catalogs processed so far
 
+## Trilingual ARIS brochure — applied and validated 2026-11-23
+
+Reviewed the [14 scans](https://www.rennrad-news.de/forum/threads/sachs-new-success-chronologie.138753/#post-3669349)
+and compared the four technical tables and group photographs with the live
+rows and available specimen views. Scan 14 shows German and French offices.
+The print year and market are unconfirmed. The uploader attributes 1989.
+Registered as source **538**, undated with the attribution in the source
+label and citation. Independently dated specimens support the two 1988
+start bounds below. End years require separate evidence.
+
+### Applied updates
+
+| ID | Catalogue evidence and applied change |
+| --- | --- |
+| 4412 | AR 47.2D, [scans 6 and 10 technical table](https://www.rennrad-news.de/forum/attachments/10-jpg.297416/). Restore the printed AR prefix, regenerate search text, record 28T total and 28T maximum, 230 g catalogue and 232 g specimen. Start remains 1987. |
+| 4413 | AR 47.2T, [scan 13](https://www.rennrad-news.de/forum/attachments/13-jpg.297419/). Record 40T total, 32T maximum, 295 g catalogue and 242 g VeloBase specimen. Start NULL → 1988 from the separate [2588-stamped example](https://www.disraeligears.co.uk/site/sachs-huret_new_success_aris_touring_472t_derailleur.html). |
+| 4420 | AR 41.3D, [Rival Sport scan 11](https://www.rennrad-news.de/forum/attachments/11-jpg.297417/). Metallic grey, 285 g, 28T total and 32T largest sprocket in the maker table. Sutherland lists 28T max for Rival Sport, so the 32T figure is described as brochure specification for this row. Broad Rival specimen 4417 has a different finish, badge, adjuster and knuckles. A similar [AR 41.3D specimen](https://www.disraeligears.co.uk/site/sachs-huret_rival_aris_413d_derailleur.html) supplies a family-level lead for 4417. Its bike links do not settle the exact variant, so retain both rows and the existing fitments pending a coded crosswalk. |
+| 2445 | AV 62.2D, scan 11. The specimen has a clamp band. Add profiled inner cage, 16T and 130 g. The same table separately identifies braze-on AV 62.3D. Uncoded clamp-on 2440 has a distinct outer plate. Hold its code and specifications. |
+| 11705 | AV 62.2T, [Rival Touring scan 12](https://www.rennrad-news.de/forum/attachments/12-jpg.297418/) and [French ATB pp.2–3](https://leblogduvelovintage.art.blog/wp-content/uploads/2022/09/sachs-huret-atb.pdf). Both list the same code, 150 g and 26T. Extend the one row's name and description to Touring and ATB and regenerate search text. The cut-out-cage front 2438 differs visually. |
+| 6108 | Correct the existing Classic 3000 title and search text. Its [specimen photo](https://velobase.com/CompImages/Shifter/B1BB54F7-A209-4D32-A95E-64E7D4CC7A4A.jpeg) shows a shared clamp and Classic 3000 badges. Scan 11 lists MA 82.4E and MA 82.3E as individual frame-boss levers. MA 82.7C is the Rival Sport band-clamp pair and needs its own record. Retain the two currently linked Peugeot values on 6108 pending exact bike-portrait identification. |
+| 6113 | The [Rival-marked pair on brazed-on frame bosses](https://velobase.com/CompImages/Shifter/2DA5AA80-47B0-43E0-A891-AC1635482D07.jpeg) matches the scan 8 group and scan 11 listing. Add right MA 82.4E, 6/7-speed indexed, 49 g, and left MA 82.3E, friction, 38 g. Keep this separate from the later Classic band-clamp 6108 and the retrofriction specimen 6114. |
+| 6110 | Scan 10 names the MA 85.5E/85.4E pair. Add 48 g right and 42 g left with retrofriction, preserving the regular-six/narrow-seven distinction from source 489. The prior 84 g figure is a separate listing. The catalogue and [501.1 DFE indexed text](https://velopedia.online/Document/Show/1291) both print 48 g / 42 g. |
+| 1731 | Rival Sport alloy double, scan 11. Same five-arm crank and Rival branding in the specimen and group photo. Add 170/172.5 mm, 39/42T inner, 50/52/53T outer and English/French pedals. |
+| 3509 | Early Sachs-Maillard New Success threaded rear hub, scans 6/7/10/13. The period [box and specimen](https://velobase.com/CompImages/Hubs/D44EC52D-507E-4A0A-832B-04F37A026957.jpeg) show the early low-flange pair. Add 233 g, 32/36 holes, sealed cartridge bearings and chrome-moly axle while retaining 126 mm. The table distinguishes 6- and 7-speed freewheel space. The 1996 rear 11427 is a distinct 130 mm eight-speed. |
+
+### Added components
+
+| ID | Category | Title | Scan | Specification |
+| --- | --- | --- | --- | --- |
+| **12418** | Rear Derailleurs | Sachs Huret AR 41.3 T, Rival Touring ARIS | 9, 12; independent 1588 stamp | Long-cage indexed touring rear, alloy and steel, metallic grey. Three-point pantograph, Cable Saver and spoke-barrier cage. 40T total, 32T maximum sprocket, 295 g specified. |
+| **12419** | Front Derailleurs | Sachs Huret AV 66.5 D, New Success ARIS (clamp-on double) | 6, 10 | Band-clamp double front derailleur, forged light alloy, blue anodised and profiled inner cage. 16T maximum chainring difference, 96 g. |
+| **12420** | Front Derailleurs | Sachs Huret AV 66.5 T, New Success Touring ARIS (clamp-on triple) | 7, 13 | Band-clamp triple front derailleur, forged light alloy, blue anodised and profiled inner cage. 26T maximum chainring difference, 120 g. |
+| **12421** | Front Derailleurs | Sachs Huret AV 66.6 T, New Success Touring ARIS (braze-on triple) | 13; German and English columns | Braze-on triple front derailleur, forged light alloy, blue anodised and profiled inner cage. 26T maximum chainring difference, 109 g. |
+| **12422** | Front Derailleurs | Sachs Huret AV 62.3 D, Rival Sport ARIS (braze-on double) | 11 | Braze-on double front derailleur, polished forged light alloy and steel with profiled inner cage. 16T maximum chainring difference, 119 g. |
+| **12423** | Shifters | Sachs Huret MA 85.6 E, New Success ARIS (Orbit left, frame bosses) | 6, 10; 501.1 DFE OCR corroboration | Left lever for brazed-on bosses, indexed for the two-speed Orbit hub. Alternative to the MA 85.4 E front-derailleur lever, 49 g. |
+| **12424** | Shifters | Sachs Huret MA 85.5 G / MA 85.4 G, New Success Touring ARIS (handlebar pair) | 7, 13 | Handlebar pair. Right MA 85.5 G indexes six or seven speeds and left MA 85.4 G controls the front derailleur by friction. Alloy and resin, 92 g per lever listed. |
+| **12425** | Shifters | Sachs Huret MA 85.6 G, New Success Touring ARIS (Orbit left, handlebar) | 7, 13 | Left handlebar lever, indexed for the two-speed Orbit hub. Light alloy and resin, 92 g. Alternative to the MA 85.4 G front-derailleur control. |
+| **12426** | Shifters | Sachs Huret MA 82.5 E, Rival Sport ARIS (Orbit left, frame bosses) | 8, 11 | Polished alloy left lever for frame bosses, indexed for the two-speed Orbit hub. 49 g. Alternative to the MA 82.3 E front-derailleur friction lever. |
+| **12427** | Shifters | Sachs Huret MA 82.7 C, Rival Sport ARIS (clamp-on pair) | 11 | Downtube band-clamp pair with a six- or seven-speed indexed right lever and friction left front-derailleur lever. |
+| **12428** | Shifters | Sachs Huret MA 82.6 C, Rival Sport ARIS (clamp-on Orbit pair) | 11 | Downtube band-clamp pair with six- or seven-speed right indexing and two-speed Orbit hub indexing on the left. |
+| **12429** | Shifters | Sachs Huret MA 82.4 G / MA 82.3 G, Rival Touring ARIS (handlebar pair) | 9, 12 | Resin handlebar pair. MA 82.4 G right indexes six or seven speeds. MA 82.3 G left uses friction for the front derailleur. |
+| **12430** | Shifters | Sachs Huret MA 82.5 G, Rival Touring ARIS (Orbit left, handlebar) | 9, 12 | Resin left handlebar lever with two-speed Orbit hub indexing. Alternative to the MA 82.3 G front-derailleur friction lever. |
+| **12431** | Shifters | Sachs Huret MA 82.7 P, Rival Touring ARIS (stem pair) | 9, 12 | Metallic-grey alloy stem-mounted pair. Six- or seven-speed indexed right lever and friction left lever for the front derailleur. 112 g. |
+| **12432** | Shifters | Sachs Huret MA 82.6 P, Rival Touring ARIS (stem Orbit pair) | 9, 12 | Metallic-grey alloy stem-mounted pair for an Orbit drivetrain with an indexed left hub control. 123 g. |
+| **12433** | Hubs | Sachs-Maillard New Success ARIS front hub | 6, 7, 10, 13; Sachs-Maillard period box | Early low-flange New Success front hub, hand-polished alloy, 100 mm spacing, 32 or 36 countersunk holes. Two sealed cartridge bearings, chrome-moly axle, 175 g. |
+| **12434** | Cranksets | Sachs Huret New Success ARIS double crankset | 6, 10 | Early forged-alloy New Success road double, polished and blue-anodised. Outer rings 50/52/53T, inner 39/42T, 170 or 172.5 mm crank arms, English or French pedal threads. |
+| **12435** | Cranksets | Sachs Huret New Success Touring ARIS triple crankset | 7, 13 | Forged light-alloy touring triple, polished and blue-anodised, 30/40/50T. 170 or 172.5 mm arms and English pedal threads. |
+| **12436** | Cranksets | Sachs Huret Rival Touring ARIS triple crankset | 9, 12 | Metallic-grey forged light-alloy touring triple with 30/40/50T chainrings, 170 or 172.5 mm arms and English pedal threads. |
+
+### Remaining identity and fitment checks
+
+- **AV 66.6D** is an 85 g braze-on double in scan 10. Hold until a coded
+  original or clearer period illustration distinguishes it from braze-on
+  New Success specimen 2439. That specimen has later-style Sachs/New
+  Success markings and a shaped outer cage. The existing 1985 pre-ARIS
+  AV 66.4D (12416) is separately documented. For the triple, German
+  and English columns in scan 13 consistently pair 66.5T/120 g with the
+  clamp and 66.6T/109 g with braze-on. Read those columns for the mount
+  because the small French column appears to reverse its labels.
+- The New Success tables list a 116 mm road and 120 mm touring adjustable
+  bottom bracket, and Rival lists the same lengths by use. Leave the
+  uncoded bottom brackets and Orbit single cranks pending an exact maker
+  or parts crosswalk. Scan 9 names VT 5000 front drum, HT 5020 rear drum
+  (3508) and Orbit HT. Scan 6 lists Orbit Super. Keep these hub variants
+  distinct from the earlier Orbit 12961. The uncoded Rival conventional
+  hubs use different bearings from New Success. The photographed Rival
+  7000 shell 3512 is separately badged. The 1996 front 11426 is catalogued
+  with extra hole counts and different branding from the early boxed pair.
+- Scans 10–13 list Sachs Sedisport GT7, 1/2 × 3/32 with colour options,
+  corroborating existing Sedisport 8765 at family level. The RGS freewheel
+  tables separately specify New Success road/touring and Rival Sport/Touring
+  ranges with BSC and French threads. Photos of broad rows 2121 and 2211
+  show ARIS stock. A legible boxed code or tooth-stack crosswalk is needed
+  before assigning the group-specific combinations to either row.
+- The brake tables specify New Success 40–50 mm reach and spring adjustment,
+  Rival 40–50 mm reach, and both internal- and external-routing levers.
+  The caliper photos show several close Modolo variants among 944, 942,
+  943 and 941. Hold exact generation, lever routing and weight assignments
+  pending a coded comparison of the hardware. The sheets describe 0.300 m
+  rear casing, which is outside the component categories.
+- The English captions on scans 6–9 allow a New Success lever and the
+  corresponding Rival rear or the reverse pairing. The indexed September
+  1987 sheet 501.1 DFE warns against swapping New Success and Rival shifters.
+  Retain both statements with their scope. The paperwork does not support
+  blanket interchangeability across the series.
+- Reviewed the 1988 MBK C757/C659 table and portrait spreads (photos 3, 4
+  and 9), along with live links for Raleigh, Peugeot and MBK. C757 and
+  C659 give model-family/double road fitment and six-speed 13–24
+  freewheels, but the portraits do not show decisive exact marks. Candidate
+  specs include 25434/25436/25438 (C757) and 25487/25488/25490 (C659).
+  The source pass retained the existing fitment decisions.
+  PXR 80 rear 16963 and the 1987 Raleigh front/shifter still need direct
+  bike-specific evidence.
+
+Applied after user approval on 2026-11-23. The live load registered one
+source, updated ten rows and inserted 12418–12436. All descriptions, titles,
+search queries, dates, UUIDs, category/group ownership and source references
+matched the plan on readback. The idempotency rerun changed zero rows.
+
+The complete live bike-spec link fingerprint matched across 24,829 specs.
+The generator/live comparison across 118 catalogues retained the same 15
+pre-existing lost matches and found zero new differences. Sachs Huret and
+Sachs near and merge reports found zero candidates. The quality report found
+zero errors and no new bike-linked date conflicts. The 19 additional reviews
+reflect the open date bounds on the added rows.
+
+### Restoration values
+
+Restore these earlier values only if the current fields still match this
+pass. Check live links and generator references before removing the new IDs.
+Source 538 can be removed after verifying that it is unused.
+
+- **4412** · source 1, title `Sachs Huret 47.2D, ARIS New Success (1st generation)`, search text `Sachs Huret 47.2D ARIS New Success`. Prior description
+  `Sachs Huret 47.2D, ARIS New Success (1st generation), Germany, 232 grams. Known from 1987; end date unknown.`.
+- **4413** · source 1, start NULL. Prior description
+  `Sachs Huret AR 47.2T, ARIS New Success Touring (1st generation), France, 242 grams (Actual). Approximate dating: 1990s; exact years unknown.`.
+- **4420** · source 1. Prior description
+  `Sachs Huret Rival Sport, AR 41.3 D, France. Approximate dating: late 1980s; exact years unknown.`.
+- **2445** · source 1. Prior description
+  `Sachs Huret AV 62.2D, Rival Sport, France. Approximate dating: late 1980s; exact years unknown.`.
+- **11705** · source 466, title `Sachs Huret AV62.2T, Rival ATB ARIS (triple)`, search text `Sachs Huret AV62.2T Rival ATB ARIS`. Prior description
+  `Band-clamp ATB front derailleur for triple chainsets, light alloy/steel, metallic grey, 150g; maximum chainring difference 26T.`.
+- **6108** · source 1, title `Sachs Huret MA82.4/3E, Rival ARIS Classic 3000`, search text `Sachs Huret MA82.4/3E Rival ARIS Classic 3000`. Prior description
+  `Sachs Huret MA82.4/3E, Rival ARIS Classic 3000, France, 90 grams (Spec)`.
+- **6113** · source 1, title `Sachs Huret Rival Sport`, search text `Sachs Huret Rival Sport`. Prior description
+  `Sachs Huret Rival Sport, France. Approximate dating: late 1980s; exact years unknown.`.
+- **6110** · source 489. Prior description
+  `New Success ARIS downtube lever pair. The MA85.5E indexed right lever works with regular six-speed and narrow seven-speed ARIS freewheels. Made in France. Listed weight 84 g.`.
+- **1731** · source 1. Prior description
+  `Sachs Huret Rival Sport, France. Approximate dating: late 1980s; exact years unknown.`.
+- **3509** · source 1. Prior description
+  `Sachs-Maillard New Success rear freewheel hub, 126 mm spacing, 36 holes, low flange; aluminium shell and steel axle. Approximate dating: late 1980s; exact years unknown.`.
+
 ## November–December 1985 dealer sheets — applied and validated 2026-11-23
 
 Source **537**, Sachs-Huret New Success and Rival dealer sheets, prints
@@ -55,8 +188,8 @@ links and generator references, and remove source 537 only if unused.
 The live source register has the April 1986 German flyer (225), the French
 Composants ATB brochure (466) and the 1969 catalogue (528), which was used to
 date Svelto 2030. The [dealer sheets are now registered as 537](#novemberdecember-1985-dealer-sheets--applied-and-validated-2026-11-23).
-The trilingual ARIS brochure, 1990 insert and German MTB brochure remain
-unregistered.
+The [trilingual ARIS brochure](#trilingual-aris-brochure--applied-and-validated-2026-11-23)
+is registered as 538. The 1990 insert and German MTB brochure remain to be reconciled.
 
 1. **Sachs-Huret French/English dealer sheets, November–December 1985.**
    [New Success group sheet](https://www.rennrad-news.de/forum/attachments/sheet-01-jpg.297392/)
@@ -84,6 +217,8 @@ unregistered.
    covers a cycle computer outside the component scope.
 
 2. **Sachs-Huret ARIS trilingual brochure, provisionally c. 1989.** The
+   [applied reconciliation](#trilingual-aris-brochure--applied-and-validated-2026-11-23)
+   records the component changes and validation. The
    [14-image upload](https://www.rennrad-news.de/forum/threads/sachs-new-success-chronologie.138753/#post-3669349)
    has four group photos and technical tables for New Success ARIS, New
    Success Touring ARIS, Rival Sport ARIS and Rival Touring ARIS. Use
@@ -97,7 +232,7 @@ unregistered.
    triple fronts. Catalogue weights are separate from measured specimen
    weights. [Rival Sport table](https://www.rennrad-news.de/forum/attachments/11-jpg.297417/)
    lists AR 41.3D (4420), AV 62.2D/62.3D (2445 is the clamp-on code),
-   and MA 82.4/3E (6108). The
+   and the boss-mounted MA 82.4/3E (6113). The
    [Rival Touring table](https://www.rennrad-news.de/forum/attachments/12-jpg.297418/)
    identifies rear AR 41.3T and lists the same AV 62.2T code as existing
    French ATB row 11705, also 150 g and 26T. Compare both sources for one
