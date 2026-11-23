@@ -19,6 +19,20 @@ do not establish 1106's exact year or whether it was a production variant. Seek
 a dated maker parts diagram or original dated fitment showing the single spring
 and mounted pivots. No database changes made.
 
+Follow-up, 2026-11-23: recovered two forum attachments. The [September 1962
+Weinmann bulletin](https://www.rennrad-news.de/forum/attachments/weinmann-1962-k-pdf.1077998/)
+discusses the Vainqueur 999 but illustrates the separate 801/951 touring and
+sport brakes; it does not show the 999's spring and pivots. The [undated
+Vainqueur 999 parts leaflet](https://www.rennrad-news.de/forum/attachments/weinmann-vainqueur-999-k-pdf.1077999/)
+has exploded front and rear drawings with separate springs, not the one-spring
+configuration of 1106. VeloBase cites the 1969 Handbook of Cycl-ology for
+diagrams of one- and two-spring designs but describes the intermediate specimen
+separately; the handbook pages were not recovered. Live readback confirms
+1105/1106/1107 retain 1957–1962 / 1962 / 1962–1964 respectively. Neither
+leaflet establishes 1106's construction or year, so no DB change was made.
+Seek a dated maker drawing or original dated fitment showing that combination;
+reopen the handbook hunt if a readable copy or specific page lead appears.
+
 ## Cologne report enrichment — applied 2026-11-19
 
 Row **1098** description enriched from the recovered press report, source **470**. Dates, title and bike links are unchanged; the magazine issue/date remains unverified. [Exact old/new values, evidence and validation](cross-catalog-notes.md#cologne-press-report-reconciliation--applied-2026-11-19). Readback matched; the SQL rerun changed zero rows and all catalogue mappings were preserved.
