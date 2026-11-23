@@ -1941,6 +1941,8 @@ The [1996 manual p.57](https://www.disraeligears.co.uk/site/shimano_bicycle_syst
 
 4533 retains 1994–1998 and source 365; its previous description was `8-speed rear derailleur, 30T max, 12T min, 20T front difference, 36T capacity.` Applied a description-only update preserving both conflicting maker specifications. Readback confirmed the 193-character description, unchanged dates and source; a repeat update affected zero rows. Neither 4533 nor short-cage 10876 has a live bike link; the generator includes an RX100 year restriction and an unrelated 4532 override. Shimano's near-duplicate scan found zero pairs before and after. Generator/live comparison covered 118 catalogues and 24,829 specs, with the same 15 known Huret discrepancies and no gains or changed mappings before and after.
 
+Early GS source follow-up, 2026-11-23: searched for explicitly GS-coded 1994–97 maker material and bike fitments. The earliest dated maker source located remains the October 1996 SI-52D0C English instruction above; the 1994 and 1996 catalogue entries are unsuffixed. [VeloBase](https://velobase.com/Pages/ViewComponent.aspx?ID=D90CAC77-A204-4E0C-A7A2-1F00469AF462) claims a 1996 model-year start but supplies no independent dated source for that claim. This does not establish either a 1994 or 1996 production start. Live readback confirms 4533 remains 1994–1998 and neither 4533 nor 10876 has linked bike specs. Seek a new dated coded source or original fitment lead before repeating the hunt; no DB or generator changes were made.
+
 The 1994 Cinelli Argento Vivo source gives only "Shimano STX S.E."; live
 specs 20155/20157 point to standard 6369, and 20159/20160 to later MC32
 rear/crank rows 4537/1843. The 1994 Shimano Special Edition group lists
