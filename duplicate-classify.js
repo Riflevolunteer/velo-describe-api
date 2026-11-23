@@ -208,6 +208,10 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  // Sachs MTB brochure reconciliation. See known-catalogs/huret.md.
+  [3512, 12440], // Rival 7000 and earlier Rival ATB front hubs have distinct maker markings.
+  [12439, 12453], // Rival ATB oval rings versus Rival 7000 ATB round rings.
+  [12441, 12455], // Earlier Rival ATB rear hub versus the separately specified Rival 7000 ATB rear hub.
   // Simplex 1949–50 parts-book reconciliation. See known-catalogs/simplex.md.
   [1294, 1295], // Integral five-arm ring versus six-bolt split couplers.
   [2551, 2581], // Pivoted 1949 front lever versus earlier long-rod mechanism.

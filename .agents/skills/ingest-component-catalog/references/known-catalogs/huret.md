@@ -1,5 +1,57 @@
 # Huret catalogs processed so far
 
+## Sachs Schaltgruppen · Mountain Bikes — applied and validated 2026-11-23
+
+Reviewed all 11 pages of the [German maker brochure](https://www.mtb-kataloge.de/sonstiges/Sachs.pdf). The scan has no dated imprint. PDF pp. 1–4 show the range introduction, New Success ATB assembly and ARIS options. Page 5 compares the controls. Technical tables cover New Success ATB pp. 6–7, Rival 7000 ATB pp. 8–9 and Classic 3500/2500/1500 ATB pp. 10–11. The corroborating dates below apply to specific parts or documented fitments. Registered the undated German brochure as source **540** and the stamped 53.11D specimen as source **541**.
+
+### Applied updates
+
+| ID | Part | Applied change |
+| --- | --- | --- |
+| 1397 | Sedisport ATB | Add 1/2 × 3/32 inch pitch/width and two finishes. The 1990 insert and ATBZ 116 packaging establish the existing date and photographed finish. |
+| 2444 | Rival 7000 ATB clamp-on front | Add triple and 26T difference from p. 8. The [marked specimen](https://velobase.com/CompImages/FDerailleur/BE588160-D8F9-4DF3-963D-F6EF522B466A.jpeg) matches the red cage badge and clamp mechanism. Preserve its 28.6 mm band, chrome cage and fixing details. The old double-fitment photo records a use of the front. |
+| 3508 | HT 5020 rear drum-brake hub | Add the p. 10 Classic hub specifications: 126 mm for six-speed, 130 mm for seven-speed, BSC freewheel thread, alloy shell and ground ball races. Preserve the existing date span. |
+| 3512 | Rival 7000 ATB front hub | Identify the [front-only specimen](https://velobase.com/ViewComponent.aspx?ID=5C6E9EEC-76CD-46C5-878A-2E74D7E3ADF9) and add p. 9 dimensions and ball-race details. The specimen is 36-hole and marked sealed. The p. 9 threaded rear is separately documented. |
+| 4404, 4405 | Classic 1500 and 2500 rears | Replace the generic touring descriptions with the pictured p. 11 ATB configurations, 34T maximum sprocket, 40T total, and direct or claw mounting. The black-body 1500 and silver/black 2500 have separate cage and body shapes and remain separate models. |
+| 4409 | Rival 7000 Sport short-cage rear | Correct legacy `RD R7000` to `53.11D` and set the first attestation at 1990. This is a specimen-based correction with its own provenance. The [live specimen photo](https://velobase.com/CompImages/RDerailleur/7FF9780C-98DC-42A8-8CA0-5B87C4A3FD2D.jpeg) matches the [3690-stamped 53.11D](https://www.disraeligears.co.uk/site/sachs-huret_rival_7000_sport_5311d_derailleur.html) in badge, closed short cage, both pivots and the knurled adjuster. The [Sachs-branded R7000](https://www.disraeligears.co.uk/site/sachs_7000_rd_r7000_derailleur.html) has different graphics and a later body. |
+
+### New components
+
+| IDs | Category | Models | Evidence |
+| --- | --- | --- | --- |
+| 12442–12444 | Rear Derailleurs | New Success ATB 53.21T, Rival 7000 ATB 53.11T, Classic 3500 ATB | New Success cover and pp. 6–7 match the [4390-stamped 53.21T](https://www.disraeligears.co.uk/site/sachs-huret_new_success_atb_5321t_derailleur.html), including its knurled adjuster. The [cubic adjuster specimen](https://www.disraeligears.co.uk/site/sachs-huret_new_success_atb_1991_version_derailleur.html) records a later detail. Rival 7000 pp. 8–9 match the [0191-stamped 53.11T](https://www.disraeligears.co.uk/site/sachs-huret_rival_7000_atb_5311t_derailleur.html). Keep both ATB rears at the maker's 34T maximum and 40T total. Classic 3500 p. 10 has Cable Saver and the same capacity. The 1991 Raleigh Pioneer Venture and May 1991 French coverage attest the Classic 3500 group. |
+| 12445–12449 | Front Derailleurs | New Success ATB clamp-on and braze-on, Rival 7000 ATB braze-on, Classic 3500 clamp-on, shared Classic 2500/1500 clamp-on | PDF pp. 6, 8, 10–11. All 26T triples. The blue-marked New Success ATB cage differs visually from the earlier AV 66.5T/66.6T range in [source 538 scan 7](https://www.rennrad-news.de/forum/attachments/7-jpg.297413/). The [Classic 3500 specimen](https://www.velosaloon.com/collections/sachs-huret/products/nos-sachs-huret-classic-3500-atb-touring-triple-clamp-on-front-derailleur-from-1990) confirms the number on its cage. Its seller date is an attribution. |
+| 12450–12451 | Shifters | ARIS Power Grip 7-speed and ARIS Twist Ring | Full-length grip with gear indicator and lock versus thumb-tab ring. PDF pp. 5–6 and 8–11 specify the 22.2–22.4 mm bar range, rear speeds and left-control options. [1991 Raleigh, PDF p. 14](https://bikalog.org/api/view/Raleigh/1991/Raleigh91.pdf#page=14) names 21-speed Classic 3500 with Power Grip. [May 1991 Miroir du Cyclisme](https://pandor.u-bourgogne.fr/fr/archives-en-ligne/functions/ead/detached/MIRC/MIRC_1991_05_n443_SUP.pdf) also names the control with New Success, Rival 7000 and Classic 3500. Twist Ring remains undated. |
+| 12452–12454 | Cranksets | New Success ATB, Rival 7000 ATB and Classic 3500 ATB triples | PDF pp. 7–8 and 10. Round black rings, with distinct gearing, materials, arm lengths or finishes by group. Rival 7000's all-round options differ from the Rival ATB crank 12439. |
+| 12455–12459 | Hubs | Rival 7000 ATB and New Success ATB rear freewheel hubs, VT 7000 and VT 5000 front drum hubs, HT 7020 rear drum hub | PDF pp. 7, 9–11. The threaded Rival 7000 rear is 126/130 mm and the New Success ATB rear 130/135 mm. The earlier New Success road rear 3509 is 126 mm. VT 7000/HT 7020 and VT 5000/HT 5020 are separately specified pairs. |
+| 12460–12462 | Geared Hubs and Cassettes | Orbit ATB, Orbit HT ATB drum and Orbit ATB six-/seven-speed cassette | PDF pp. 9 and 11 distinguish the plain and drum-brake two-speed hubs, 126/130 mm versions and black Orbit cassette. The older Orbit 12961 record describes an earlier assembly. |
+
+### Duplicate and fitment review
+
+- The catalogue specifies clamp and braze-on options. Keep Rival 7000 fronts 2444/12447 and New Success ATB fronts 12445/12446 as separate mounting configurations.
+- Keep 12439/12453 separate. The earlier Rival ATB triple from source 466 has oval 38T and 28T rings, and the Rival 7000 ATB catalogue lists all-round rings and a separate badge.
+- Keep front hubs 3512/12440 and rear hubs 12441/12455 separate. The [French ATB brochure, p. 3](https://leblogduvelovintage.art.blog/wp-content/uploads/2022/09/sachs-huret-atb.pdf#page=3) has the earlier Rival ATB shell markings and its own hub table. German p. 9 lists the Rival 7000 ground ball races, with its own marking documented on the 3512 specimen, and specifies the rear's 126/130 mm BSC fitments. Those differences identify the listed variants. No internal parts crosswalk is documented.
+
+### Comparisons that still need evidence
+
+- The brochure describes two RGS freewheel families, an SKF cartridge and conventional bottom brackets, and group-level cantilever and lever specifications. These need codes or discriminating specimen views before resolving existing rows or adding variants. The Sachs 3500 brake lever 403 is a drop-bar lever. The road New Success front hub 12433 and the uncoded ATB front need equivalent markings and dimensions to establish their relationship.
+- The photographed right thumb controls and the two-speed indexed left Orbit options support the group specifications. The part code of the seven-speed 12438 remains open. Classic 3000 Sport falls outside this edition's Classic range, so the short cage remains an open specimen comparison.
+- The PDF describes cables but they fall outside the component categories. There is no printed launch or end year for the named assemblies.
+
+Applied two sources, seven updates and 21 additions. Readback matched all 28 rows to the reviewed titles, descriptions, dates, search texts and provenance. The longest description was 225 characters. The repeat load changed zero rows. The before/after comparison was identical across 118 catalogues and 24,829 bike specs, including 15 pre-existing findings. The exact fitment check identified no new links. The duplicate report classifies both mounting pairs as configurations and shows zero unreviewed near pairs after recording the three catalogue distinctions above.
+
+### Prior values for restoration
+
+Verify the live rows still match this load before restoring these fields. The prior start year of 4409 was NULL. Check references before removing added rows 12442–12462, and remove sources 540 and 541 only if unused.
+
+- **1397**, source 539. Description Double-riveted ATB derailleur chain with chamfered plates for large sprocket steps. The ATBZ 116 package contains a 116-link chain with silver outer and dark inner plates.
+- **2444**, source 1. Title `Sachs Huret Rival 7000` and search text `Sachs Huret Rival 7000`. Description Sachs Huret Rival 7000, France. Chrome-plated steel cage, 28.6mm band clamp; 5mm Allen cable fixing. Approximate dating: early 1990s; exact years unknown.
+- **3508**, source 1. Description Sachs HT 5020 rear drum brake, Germany
+- **3512**, source 1. Title `Sachs-Maillard Rival 7000` and search text `Sachs-Maillard Rival 7000`. Description Sachs-Maillard Rival 7000, France
+- **4404**, source 1. Description Sachs Huret Aris Classic 1500, France. Long-cage touring rear with cable adjuster; Sachs-Huret ARIS indexed or friction shifting, 5mm Allen mounting bolt and 8mm cable fixing.
+- **4405**, source 1. Description Sachs Huret Aris Classic 2500, France. Long-cage touring rear with cable adjuster; Sachs-Huret ARIS indexed or friction shifting, 5mm Allen mounting bolt and 8mm cable fixing.
+- **4409**, source 1. Title `Sachs Huret RD R7000, Rival 7000` and search text `Sachs Huret RD R7000 Rival 7000`. Description Sachs Huret RD R7000, Rival 7000, France. Short-cage slant-parallelogram rear, aluminium alloy; ARIS indexed or friction shifting, cable adjuster, 28T chain wrap; 5mm Allen mounting and cable bolts.
+
 ## Sachs Radsport-Komponenten '90 — applied and validated 2026-11-23
 
 The [five-spread TOUR insert](https://www.rennrad-news.de/forum/attachments/sachs-komponenten-1990-pdf.297421/) is for the German market. The cover prints '90, the introductory spread cites the 1989 World Championships and the East German team's equipment from 1990, and the adjacent contest closes in April 1990. PDF p. 3 covers New Success road and p. 4 covers Rival Sport, Rival ATB, Classic 3000 Sport and Classic 3000 ATB. Registered as catalogue source **539** with country `DE`. A 1990 start records the earliest firm attestation for the identified variant in this review. End years and confirmed launch dates require other evidence.
@@ -225,7 +277,8 @@ Composants ATB brochure (466) and the 1969 catalogue (528), which was used to
 date Svelto 2030. The [dealer sheets are now registered as 537](#novemberdecember-1985-dealer-sheets--applied-and-validated-2026-11-23).
 The [trilingual ARIS brochure](#trilingual-aris-brochure--applied-and-validated-2026-11-23)
 is registered as 538. The [1990 insert reconciliation](#sachs-radsport-komponenten-90--applied-and-validated-2026-11-23)
-is applied as source 539. The German MTB brochure is next.
+is applied as source 539. The [German MTB reconciliation](#sachs-schaltgruppen--mountain-bikes--applied-and-validated-2026-11-23)
+is applied as source 540, with the short-cage 53.11D correction separately sourced as 541.
 
 1. **Sachs-Huret French/English dealer sheets, November–December 1985.**
    [New Success group sheet](https://www.rennrad-news.de/forum/attachments/sheet-01-jpg.297392/)
@@ -288,8 +341,8 @@ is applied as source 539. The German MTB brochure is next.
 4. **Sachs Schaltgruppen · Mountain Bikes, German edition, undated.**
    The [maker PDF](https://www.mtb-kataloge.de/sonstiges/Sachs.pdf)
    gives separate specifications for New Success ATB, Rival 7000 ATB and
-   Classic 3500/2500/1500. Review ARIS Power Grip and Twist Ring and the
-   named assemblies against the Sachs and Sachs Huret rows. Page 8
+   Classic 3500/2500/1500. The [applied reconciliation](#sachs-schaltgruppen--mountain-bikes--applied-and-validated-2026-11-23)
+   records the controls, assembly differences and specimen matches. Page 8
    specifies a Rival 7000 ATB triple with 26T front difference and a
    34T/40T rear, distinct in scope from the six-speed French ATB sheet.
    The [1991 German Raleigh catalogue](https://bikalog.org/api/view/Raleigh/1991/Raleigh91.pdf)
@@ -468,7 +521,7 @@ establish equivalence:
 
 | Comparison | Evidence and result |
 | --- | --- |
-| AR41.4T versus [4409 RD R7000](https://velobase.com/ViewComponent.aspx?ID=9F2722C1-80AF-46C9-9489-09B5A46E3B8E) | R7000 specimen is short-cage, ARIS/friction, with 28T chain wrap; the brochure rear has the extended ATB anti-jam cage and 40T capacity. Keep separate. |
+| AR41.4T versus [4409 Rival 7000 Sport specimen](https://velobase.com/ViewComponent.aspx?ID=9F2722C1-80AF-46C9-9489-09B5A46E3B8E) | The short cage differs from the French brochure rear with an extended ATB cage and 40T total capacity. The legacy R7000 code on 4409 is superseded by the [53.11D specimen comparison](#sachs-schaltgruppen--mountain-bikes--applied-and-validated-2026-11-23). Keep the rows separate. |
 | AR41.4T versus [4404 Classic 1500](https://velobase.com/ViewComponent.aspx?ID=CD487872-05BE-4774-A7BD-900864C35F26), [4405 Classic 2500](https://velobase.com/ViewComponent.aspx?ID=3E92CFEE-8A9B-4000-BC05-3D25414B9E17), [4406 Classic 3000](https://velobase.com/ViewComponent.aspx?ID=93876484-0C40-4C43-AD95-F27A05BCB4C8) | All are recorded as long-cage touring ARIS/friction rears. Main photos plus 1500 rear and 3000 reverse views show different cage profiles from the brochure's extended flat-neck ATB cage. No maker-code crosswalk; similar family construction does not identify AR41.4T. No merge or code transfer. |
 | AR41.4T versus [4418 Classic 2000](https://velobase.com/ViewComponent.aspx?ID=68EF50F1-709A-4B0B-A7A1-1797DA3F657E) | Specimen has a short cage and its own Classic 2000 marking; page specifies six speeds. Shared speed count does not identify the ATB rear. |
 | AV62.2T versus [2444 Rival 7000 front](https://velobase.com/ViewComponent.aspx?ID=11C583E3-2952-4C3B-AFFF-931F30DF2CDD) | The specimen page calls it a double and pictures it on a double; its mechanism has a black upper section and 5mm Allen cable fixing. Brochure shows a metal-band triple mechanism with a different cable arm. Do not assign AV62.2T to 2444 or transfer the brochure's 26T/150g specification. The enrichment omits the specimen's double claim because using a front on a double does not prove it cannot handle a triple. |
