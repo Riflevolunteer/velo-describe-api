@@ -33,6 +33,14 @@ leaflet establishes 1106's construction or year, so no DB change was made.
 Seek a dated maker drawing or original dated fitment showing that combination;
 reopen the handbook hunt if a readable copy or specific page lead appears.
 
+## Weinmann Mitteilungen — September 1962, 801 and 951 applied
+
+The [September 1962 bulletin](https://www.rennrad-news.de/forum/attachments/weinmann-1962-k-pdf.1077998/), German, Weinmann & Co., Singen, describes 801 and 951 centre-pull brakes for light sport and touring sport bicycles respectively. The illustration and adjustment labels give 62.5–80 mm for 801 and 75–95 mm for 951; the text describes a combined carrier plate for both arms and cable connection. Source 534 was registered with Germany as market.
+
+Updated 1154 (UUID `41F64F06-1EEB-4DC7-9E1A-5749913F0D1C`) from bare `Weinmann AG 801, Switzerland`, NULL/NULL and source 1 to the bulletin description and 1962–1962, an attested year, not a production range. This supersedes the earlier suggestion below that this brake row was probably a rim; 7782 is the separate 801 INOX rim. Updated 1162 (UUID `8663ACEF-BBAC-47F4-8DFD-4CFC0222238F`) from bare `Weinmann AG 951, Switzerland`, source 1, to the bulletin description; retained 1962–1980. Both now cite 534. No rows were added or deleted; no bike specs named or linked either brake.
+
+Application inserted one source and updated two rows; readback matched, rerun affected zero rows. Weinmann near-duplicate report remained at zero pairs; generator/live comparison before and after matched except timestamps. Quality report found zero structural errors. The bulletin does not settle the Vainqueur 1106 configuration.
+
 ## Cologne report enrichment — applied 2026-11-19
 
 Row **1098** description enriched from the recovered press report, source **470**. Dates, title and bike links are unchanged; the magazine issue/date remains unverified. [Exact old/new values, evidence and validation](cross-catalog-notes.md#cologne-press-report-reconciliation--applied-2026-11-19). Readback matched; the SQL rerun changed zero rows and all catalogue mappings were preserved.
@@ -68,7 +76,7 @@ Row **1098** description enriched from the recovered press report, source **470*
   BMX, 420, 801 INOX 18/10. All 1983-1983 unless noted.
 - Left: 605 brake variants 1132-1135 (photo can't pick a lettering
   version); Carrera (earlier / later) 1167 / 1169; 1154 "AG 801" filed as a
-  brake but probably the 801 INOX rim; velobase clutter (bare "AG" levers,
+  brake, since confirmed as a distinct centre-pull above; velobase clutter (bare "AG" levers,
   "Made in Switzerland") not touched.
 - Bike links: overrides 'weinmann 506 side pull' (+ 'with safety levers'),
   'weinmann 506', 'clb weinmann 506' -> 7764 and the 1974 Motobecane
