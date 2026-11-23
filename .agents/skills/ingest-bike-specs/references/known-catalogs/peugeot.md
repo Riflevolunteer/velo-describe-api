@@ -775,6 +775,7 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   spec sidebar (pp. 2-27). Images 53-76: Dutch "Kollektie 1987" — NOT loaded yet (left for a later session).
   Transcribed by Sonnet subagents; FR tables img 19 / 26 and US Tourmalet / Corbier sidebars spot-checked.
 - New model codes end in "W" (PY CA W 'Chorus', A 500A W 'Galaxie'): printed, not a misread.
+- Edition dating follow-up, 2026-11-23: [PeugeotShow's 1988 French collection](https://www.peugeotshow.com/1988fr.html) lists the same W-suffixed Chorus, Perthus, Puymorens, Dolomites and associated range that was loaded from the source filed as 1987. This is a conflicting archive attribution, not proof of the printed edition date. Check the original scan's imprint and compare the entire edition before changing bike years, links or source metadata. Shimano's October 1987 600 Ultegra launch brochure labels the 6400 range for 1988, and 1987 Puymorens hub spec 15055 is linked to component 3534 (starting 1988).
 - FR loaded: Chorus (Campagnolo Chorus), Perthus (Mavic), Santé (Shimano 5000), Puymorens (Shimano 6400), Dolomites
   (Triomphe / Victory), Savoie (Huret New Success ARIS), Aravis, Galibier, aluminium Galaxie / Comète / Cosmic, Aspin
   (105), Triathlon, Vanoise, Ventoux P 501B / P 501, Mont-Blanc, Saint-Bernard, Aubisque PE 10D / PE 10L, Avoriaz;

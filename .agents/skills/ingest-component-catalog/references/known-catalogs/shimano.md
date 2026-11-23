@@ -2186,8 +2186,12 @@ keys or measured specimens and decide how to represent the shared front hub.
 Seven hub specs link to 3534; none link to 9712. Spec 15055 is on the 1987
 Peugeot Puymorens, whose catalogue lists Shimano 6400. Its year precedes
 3534's 1988 start; the October 1987 Shimano brochure documents the 6400 range
-for model year 1988. Review whether the bike's catalogue year and the row's
-date convention justify a date change. No DB or generator changes were made.
+for model year 1988. A separate [Peugeot archive](https://www.peugeotshow.com/1988fr.html)
+places the W-suffixed Puymorens and the same associated range in its 1988
+collection, whereas the loaded French catalogue was filed under 1987. This
+raises a catalogue-wide edition dating question; it does not independently
+prove the loaded scan's model year. Do not change 3534's dates on this flag
+until the edition is established. No DB or generator changes were made.
 
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
