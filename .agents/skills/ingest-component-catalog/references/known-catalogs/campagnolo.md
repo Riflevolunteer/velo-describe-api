@@ -855,6 +855,14 @@ This supersedes historical references below to 1473 as a separate live row.
 
 ## Campagnolo Dealer Parts Catalogue — 1988 (1988CampagnoloDealerPartsCatalogue.pdf, 114 pp)
 
+### Focused Syncro recheck — 2026-11-23
+
+The [original 114-page scan](https://velobase.com/CatalogScans/Campagnolo/1988CampagnoloDealerPartsCatalogue.pdf) was rechecked at PDF pages 11–13 (blue section printed pages 3–5). Page 11 distinguishes A281–283 Record Friction from A271–273 Doppler. Page 12 lists Record Syncro A221 braze-on, A222 clip-on and A223 top-of-tube; right lever assembly 0118130 excludes the micrometric insert, and front lever assembly is 0118113. Page 13's compatibility chart lists six-speed inserts yellow 7222064/a, red 7222072 and white 7222075; seven-speed blue 7222063, green 7222071, black 7222076 and grey 7222088. Compatibility is qualified by derailleur, freewheel and chain, not universal. These are service parts, without a component category; this focused recheck establishes no new complete-component row or database change. The date remains filename-attributed, not printed.
+
+### Group table recheck — 2026-11-23
+
+PDF pp. 7–8 list D0D0 as Athena's standard headset and no headset substitute; p. 27 lists C0D0 for Chorus. The earlier claim below that this catalogue places C0D0 on Athena is unsupported and superseded. Both tables list C021 front and C0R2 post. Record pp. 69–70 list C023 as a substitute front; this does not identify it with the separately attested A023. Record headset A0D0 is listed in French M25×1 as well as BSC and Italian on p. 69, with French upper cup and locknut on p. 88. Page 88 lists 3/16-inch balls, conflicting with the 5/32-inch figure recorded from the February 1987 brochure; recheck both before changing 2954. Keirin p. 111 labels axle 7281177 as width 120, while its diagram specifies 111 mm overall length and a 68 mm bracket; retain both as conflicting printed figures pending clarification for 7020. Pista and Keirin basic group tables pp. 93 and 107 were matched to existing component families; no missing complete assembly was established. This was a focused review, not a new full inventory.
+
 - Spare-parts catalogue, no text layer, no printed date (1988 from the
   filename; content predates Euclid/Centaur 1989). Six tabbed sections:
   Athena (blue), Chorus (magenta), Croce d'Aune (green), Record, Record
@@ -867,8 +875,9 @@ This supersedes historical references below to 1473 as a separate live row.
   x0R2 post, x0D0 headset. The x100 codes in the US brochures were
   gear+front subgroups; the Chorus brochure's 700-series and the Record
   brochure's 02xx lever numbers were provisional (now C0xx, A2xx).
-- Sharing: Athena and Croce use Chorus C021 front, C0R2 post, C0D0
-  headset; Record uses C023 adjustable clip. Chorus and Athena ship A281
+- Sharing: Athena and Croce use Chorus C021 front and C0R2 post; the
+  C0D0 headset claim for Athena is superseded by the group table recheck above.
+  Record uses C023 adjustable clip. Chorus and Athena ship A281
   Record Friction levers, Croce and Record A271 Doppler. Compact levers:
   D056 (Athena, Chorus), A055 (Croce, Record). Seat pins: tables say
   x0R2/x0R8, parts pages x0R1/x0R7 (confirms 5755/5739 A0R7).
