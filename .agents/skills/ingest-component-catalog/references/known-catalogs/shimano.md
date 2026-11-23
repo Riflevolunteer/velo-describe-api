@@ -2150,10 +2150,19 @@ Manual conflicts: the 1994 p.39 FC-C700/C400 table gives
 1995 p.39 conflicts with the ac 11–28T table on p.17. The 1995 road table
 prints BL/BR-1056 where photos and comparison pages use 1055; FH-HG50's 235g
 appears to repeat the adjacent front hub figure. HB-6400 overlapping rows and
-the CS-HG70-8 versus CS-HG70-I configuration need identity review before
-merges or new variant rows. Do not infer unique identities from these conflicts.
+the CS-HG70-8 versus CS-HG70-I configurations were reviewed below. Do not
+infer unique identities from catalogue conflicts alone.
 
-CS-HG70-I comparison lead, 2026-11-23: Shimano's [SI-R430A service instructions](https://www.sjscycles.com/Instructions/Shimano/Shimano_Speed_Cassette_Instructions.pdf) identify an eight-speed CS-HG70-I with ah 11–28T and an 11–30T combinations, paired with CN-IG70. Compare these configurations and Shimano's CS-HG70-8 material with the live records before drawing identity conclusions.
+CS-HG70-8 / CS-HG70-I review, 2026-11-23: Keep 7762 and 9709 separate.
+The 105SC CS-HG70-8 row 7762 lists road combinations including T 13–23T;
+Shimano's [SI-R430A service instructions](https://www.sjscycles.com/Instructions/Shimano/Shimano_Speed_Cassette_Instructions.pdf)
+identify the Deore LX CS-HG70-I as eight-speed with ah 11–28T and an 11–30T
+combinations and CN-IG70, matching 9709. The distinct recorded configurations
+support retaining both rows, without asserting that every similarly named
+cassette is distinct or interchangeable. Live bike spec 1536 (Virata, 105 STI)
+links to 7762: its uncoded 13–23T eight-speed value fits that row and the
+generator's existing override; the exact cassette code is inferred. No bike
+specs link to 9709. No database or generator changes were needed.
 
 Follow-up evidence, 2026-11-23: Shimano's [FC-C400 exploded parts sheet EV-FC-C400-1317](https://si.shimano.com/de/pdfs/ev/FC-C400-1317/EV-FC-C400-1317.pdf) specifies 110 mm for the outer ring and 58 mm for the middle and inner rings. This is independent maker evidence for FC-C400; it does not establish the FC-C700 dimensions.
 
