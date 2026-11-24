@@ -1,3 +1,11 @@
+## Mafac lever code and description review — 2026-11-24
+
+The [maker poster, back](https://ebykr.com/library/mafac-1979-poster-front-and-back/) is now freely accessible in a legible scan; Ebykr estimates its date as c. 1979. It is already registered as source 187 under a 1979 attribution. Its three-digit key gives first digit 4 for a silver-anodised drilled racing blade and 5 for gold; second digit 1 for a resin body and 2 for alloy; and final digit 9 for a patented clamp with translucent wraparound hood and large adjuster. The poster explicitly illustrates 429, not 419, 519 or 529; decoding those other combinations is an inference from its general key, not proof they were offered as complete models. The original scan was visually checked.
+
+Row 358, `MAFAC Course 519 & 529, Competition`, is a bare Velobase description, 1960–1980, source 1, with no bike links or explicit generator override. The approved guarded update added the code-key interpretation, preserving the dates and noting that the complete models are not explicitly listed, and changed source 1 → 187. Old description: `MAFAC Course 519 & 529, Competition, France`. Restore the old description and source only after checking current values. Readback confirmed the description, source and zero links; a rerun affected zero rows. Mafac near-duplicate report found no pairs. Post-change quality remained at zero errors and 2,032 review findings.
+
+Row 357, `MAFAC Course 419 / 429, Competition`, is at the 255-character limit and carries the older 126/127-type description noted in the 1980 review below, not a precise 419/429 description. It currently has 11 links, including unspecific Mafac Course and two tandem double-cable specs; generator overrides refer to 357. The poster differentiates 419 resin and 429 alloy by its key, but does not identify the linked bicycles' exact lever variants. Review those links and the generic-family representation before changing the description or mapping; no change is proposed for 357 yet. Quality baseline: 0 errors and 2,032 review findings; generator/live comparison: 118 catalogues, 24,829 specs, no gained or changed mappings and 15 pre-existing lost proposals.
+
 # MAFAC catalogs processed so far
 
 ## MAFAC catalogue, brakes and accessories — c. 1976 (ebykr.com, 21 webp scans)
