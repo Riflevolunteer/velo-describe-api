@@ -844,6 +844,8 @@ bracket type. Keep 26775 NULL: the maker page does not establish top-pull for
 FD-XM01. This proposal is not proof that Bianchi used the listed current-year
 offerings; earlier stock or substitutions remain possible.
 
+**Nyala front follow-up, 2026-11-24:** The [1992 SunTour catalogue p. 27](https://ebykr.com/library/suntour-catalog-1992/) lists three distinct top-pull models, FD-TP10-GXH, FD-TP00-GXH and FD-TP05-GXH, without a Bianchi fitment crosswalk. A [seller specimen labelled XCM](https://www.ebay.com/itm/116676278455) is described as bottom-pull, not evidence for the 1991 Nyala front. These later offerings and the loose specimen do not determine which part Bianchi fitted; retain the NULL pending a coded original fitment or maker crosswalk.
+
 Readback confirmed all five links and the front NULL; the SQL rerun affected
 zero rows. After the generator changes, comparison across 118 loaded catalogues
 showed no gained or changed links and the same 15 unrelated Huret lost proposals
