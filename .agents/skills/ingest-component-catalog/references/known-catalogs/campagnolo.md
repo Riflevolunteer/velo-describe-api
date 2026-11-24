@@ -789,7 +789,7 @@ This supersedes historical references below to 1473 as a separate live row.
   Record Friction levers, D300 small-flange hubs, D040 crank (135 BCD,
   170/172.5, rings 39-44 / 48-53), D0H0 BB, D600-AM pedals, D0D0 headset,
   C0R2 post. Alternatives: C022/C023 clip-on fronts, 0282/0283 Friction,
-  0221-23 Syncro 2, C0R2-S, D056 Compact levers. (C022/C023/C0D0/C0R2 are Chorus parts fitted to
+  0221-23 Syncro 2, C0R2-S, D056 Compact levers. (The earlier attribution of C0D0 to Athena is superseded by the dealer group-table review below; C022/C023/C0R2 are Chorus parts fitted to
   Athena and Croce d'Aune; settled by the 1988 dealer parts catalogue.) Rear has the "Multi Function System" five-position
   hanger insert (20-30 T).
 - Added: 7025 "C0R2, Athena (styled)" post 1988-89 (year_to guessed from
@@ -825,8 +825,8 @@ This supersedes historical references below to 1473 as a separate live row.
 - Correction: 7025 (Athena C0R2 post) no longer says "shared with
   Chorus"; the Chorus post is 545 / 716/102 and the DB's Chorus aero post
   5742 is C0R1, the 1988 dealer catalogue later showed the 700-series numbers were
-  provisional and C0R2/C0D0 are Chorus parts shared with Athena and
-  Croce d'Aune; 7025/7028 corrected again in the DPC88 run.
+  provisional; C0R2 is shared with Athena and Croce d'Aune, and C0D0 with
+  Croce d'Aune. The Athena C0D0 claim is superseded by the dealer group-table review below; 7025/7028 were updated in the DPC88 run.
 - Left: 5976 and 222 graphite-finish rows at 1980 (later finish); 1992+
   CH-suffixed rows untouched.
 
@@ -863,6 +863,8 @@ The [original 114-page scan](https://velobase.com/CatalogScans/Campagnolo/1988Ca
 
 PDF pp. 7–8 list D0D0 as Athena's standard headset and no headset substitute; p. 27 lists C0D0 for Chorus. The earlier claim below that this catalogue places C0D0 on Athena is unsupported and superseded. Both tables list C021 front and C0R2 post. Record pp. 69–70 list C023 as a substitute front; this does not identify it with the separately attested A023. Record headset A0D0 is listed in French M25×1 as well as BSC and Italian on p. 69, with French upper cup and locknut on p. 88. Page 88 lists 3/16-inch balls, conflicting with the 5/32-inch figure recorded from the February 1987 brochure; recheck both before changing 2954. Keirin p. 111 labels axle 7281177 as width 120, while its diagram specifies 111 mm overall length and a 68 mm bracket; retain both as conflicting printed figures pending clarification for 7020. Pista and Keirin basic group tables pp. 93 and 107 were matched to existing component families; no missing complete assembly was established. This was a focused review, not a new full inventory.
 
+**7028 correction applied 2026-11-24:** Removed “also on Athena” from its description and set source_ref from 13 to 110. The previous full description was `Campagnolo C0D0, Croce d' Aune, Italy. Avional head set, 1/4 in balls in resin retainers, SELFORM damping element, resin seal on lower race; Italian/BSC/French. Chorus head set, also on Athena (DPC88). Croce d'Aune brochure, Mar 1988.` All other fields and links were retained. The exact-value guarded update affected one row; readback verified the corrected description and a rerun affected zero rows. Restore the old description and source 13 only with a current-value guard.
+
 - Spare-parts catalogue, no text layer, no printed date (1988 from the
   filename; content predates Euclid/Centaur 1989). Six tabbed sections:
   Athena (blue), Chorus (magenta), Croce d'Aune (green), Record, Record
@@ -887,7 +889,7 @@ PDF pp. 7–8 list D0D0 as Athena's standard headset and no headset substitute; 
 - Notes appended, tag "DPC88:", 65 rows across all six groups (guarded
   with a LENGTH check; 5971 skipped at 248 chars). Longest now 251.
 - Corrections: 7025 -> "Chorus C0R2 styled seat pin, also on Croce
-  d'Aune"; 7028 -> "Chorus head set, also on Athena"; 7027 542/S Chorus
+  d'Aune"; 7028 -> "Chorus head set, also on Athena" (the Athena claim is unsupported, see recheck above); 7027 542/S Chorus
   Friction shortened and noted that DPC88 lists Chorus with A281; then
   retitled (user decision, 2026-09-28) to "Chorus levers (A281 Friction
   with Dual-Mode Syncro inserts)" so the provisional 542/S number is out
