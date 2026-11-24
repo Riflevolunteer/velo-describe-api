@@ -156,6 +156,7 @@ four existing-row corrections.
   no individually identified FD or ForceLite example. The wording and photo
   confirm ForceLite as a marketed model. A direct link to **8402** is still
   unverified, so no stem insert or merge is proposed in this review.
+- **Earlier FD seatpost tiers.** The [Ritchey bicycle catalogue specification table](https://ritchey.vintagebicycledatabase.com/catalogs/ritchey/1992/1992RitcheyBicycles.pdf) lists FD 330 black and silver alongside FD Comp 330 silver and FD Pro W.C.S. Although its archive path says 1992, the text refers to the 1993 World Cup in progress, so do not date the table to 1992 on the filename alone. This establishes contemporaneous naming, but does not identify which individual 1991/92 untiered FD mountain post corresponds to which later tier, or show a construction crosswalk to 12044. Keep the seatpost identity hold.
 - **Pro bottom bracket and Vector saddle.** The 1996 SuperLogic table on
   scan 16 lists 103 mm in titanium only. The 1997 Pro is nickel-chromium
   steel with no stated length. The 103 mm steel **10295** therefore still
