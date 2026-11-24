@@ -4430,7 +4430,7 @@ const COMPONENT_OVERRIDES = {
     'shimano exage mountain': [{ from: 1988, to: 1989, id: 7199 }], // 1989 Peugeot (NL) Alpine Express: PD-M450
     'shimano new 600 toe clips and straps': [{ from: 1988, to: 1993, id: 3958 }], // 1988 Peugeot (FR) PX SIS / PG SIS: PD-6400
     'lyotard no 82 alloy quill': 3820, // 1986 Falcon Challenger / Strada / Cotswold: Lyotard 82 (1970-87)
-    'lyotard alloy no 460d': 3815, // 1986 Falcon Oxford / Westminster: Lyotard 460D (1970-81 row; the 1930 one is the pre-war pattern)
+    'lyotard alloy no 460d': 3815, // Falcon Oxford / Westminster: named Lyotard 460D; 1986 is an attributed catalogue year
     'suntour cyclone': 4002, // 1986 Raleigh: SunTour PL-5300, Cyclone (SunTour linking pass 2026-10-30)
     'suntour xc 11 alloy bear trap': 4015, // 1986 Peugeot (US): SunTour PL-5100, XC-II
     'suntour xcii alloy': 4015, // 1986 Raleigh: PL-5100, XC-II
@@ -4555,8 +4555,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo': null, // brand alone does not identify a pedal model
     'campagnolo track pattern': 3711, // 1038 Record Pista (silver finish, 1971-85)
     // 1979 Peugeot (French catalogue).
-    'lyotard dural course with toe clips and straps': 3815, // Lyotard 460D (1970-80), the standard French dural quill
-    'lyotard with toe clips and straps': 3815, // Lyotard 460D
+    'lyotard dural course with toe clips and straps': 3815, // 1979 Peugeot: generic dural course text; 460D identification needs review
+    'lyotard with toe clips and straps': 3815, // 1979 Peugeot: generic Lyotard text; 460D identification needs review
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
     'shimano deore sis': [{ from: 1987, to: 1993, id: 3965 }], // 1987 Colnago Master Mountain Bike: PD-MT60 / PD-MT61, Deore
     // 1989 Bianchi US catalogue (gringineer scans).

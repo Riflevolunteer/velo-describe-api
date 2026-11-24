@@ -22,7 +22,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Data quality
 
-- Reconcile remaining [1981 Holdsworthy catalogue components](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-1981--reconciliation-in-progress), and remaining [1976 Holdsworthy entries](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-1976--first-reconciliation-applied-2026-11-24), including unresolved version and dimension differences.
+- Reconcile remaining [1981 Holdsworthy catalogue components](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-1981--reconciliation-in-progress), and reconcile remaining [1976 Holdsworthy entries](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-1976--first-reconciliation-applied-2026-11-24), including unresolved version and dimension differences and the 1979 Peugeot Lyotard pedal links.
 - Review the Mafac 419/429 description, the linked Peugeot tandem double-cable levers and other generic bike-link identities; continue comparing descriptions at the 255-character limit with source evidence using `quality-report.js`. [Mafac evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mafac.md#mafac-lever-code-and-description-review--2026-11-24).
 - Obtain a sharper 1938 Brooks catalogue scan to verify the S25/NH 9812 and S20/2 9814 height fractions. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/brooks.md#brooks-saddle-comfort-catalogue--c-1938-bulgiernet-1937_cypdf-data_source-284).
 
