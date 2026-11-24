@@ -91,7 +91,62 @@ Readback confirmed both dates, descriptions and source; rerun affected zero rows
 
 **Handlebar before-images:** 9321 1975–1976/source 549, `Fiamme Maes road bar, 15/16in alloy, square cut with engraved knight-head ferrule. Holdsworthy 1975: 14 7/8 x 4 x 5 1/4in deep; 1976: 14 7/8 x 4 x 4 1/4in deep.`; 9337 1975–1976/source 549, `Allez Maes, England. All-round club bar in heavy-gauge 15/16in alloy, Maes pattern`. Check current values and references before reverting.
 
-The [Elvezia listing, printed p.82](https://ebykr.com/wp-content/uploads/2026/11/ebykr-holdsworth-1967-68-aids-catalog-p43-scaled.webp), is ribbed and 14 oz but has no model number; it does not distinguish the later Elvezia 75 records 6752 and 9903. Universal 131/133 does not distinguish Bianchi brake 6595; the small Vainqueur 999 photograph does not settle the 1106 spring variant. The scratch inventories `/private/tmp/holdsworth-1967-gears.md`, `/private/tmp/holdsworth-1967-brakes.md` and `/private/tmp/holdsworth-1967-wheels.md` retain additional candidate and held comparisons for the unfinished reconciliation. Exclude Czech-branded and unbranded items as requested.
+**Full component inventory and consolidated batch applied and validated:** Reviewed printed pp.32–83, excluding unbranded and Czech-branded products. The approved source-561 batch inserted eight named component families: Stronglight T160 12570 (`5f34afe4-e851-11f1-a2df-02fea3763e8d`), T260 12571 (`5f3859cd-e851-11f1-a2df-02fea3763e8d`); TA Critérium P315/345 axles 12572 (`5f3acd5b-e851-11f1-a2df-02fea3763e8d`); Chater Lea 1615 axle family 12573 (`5f3d1331-e851-11f1-a2df-02fea3763e8d`), 5/16-inch-ball axle family 12574 (`5f4018ef-e851-11f1-a2df-02fea3763e8d`), 1689 adaptor 12575 (`5f428f1d-e851-11f1-a2df-02fea3763e8d`); British Hubs Super Special tandem brake hub 12576 (`5f45112b-e851-11f1-a2df-02fea3763e8d`); and Merton Super Coureur saddle 12577 (`5f4751ca-e851-11f1-a2df-02fea3763e8d`). Axle options are grouped by model family. Chater Lea generic bottom bracket 47 and generic TA 9901 cannot be conclusively identified with these numbered families; this is a residual duplicate risk, not proof of distinct historical specimens.
+
+[Printed p.33](https://ebykr.com/wp-content/uploads/2026/11/ebykr-holdsworth-1967-68-aids-catalog-p18-scaled.webp) identifies Stronglight T160 and T260 sets, TA Critérium P315 single/345 double axles, and Chater Lea 1615 and 5/16-inch-ball axle families. It also names TA Professionnel 314 and 344, supporting earlier 1967 attestations for 8839 and 144, both previously 1975–1984/source 206. Their existing later/undated maker specifications are not independently established for 1967. [P.42](https://ebykr.com/wp-content/uploads/2026/11/ebykr-holdsworth-1967-68-aids-catalog-p23-scaled.webp) identifies Chater Lea 1689 alloy chainring adaptor. [P.67](https://ebykr.com/wp-content/uploads/2026/11/ebykr-holdsworth-1967-68-aids-catalog-p35-scaled.webp) identifies Super Special tandem hub brake under the British Hub heading; the [1958 Ferodo data book](https://archives.jampot.dk/technical/Wheels_and_brakes/Ferodo_Data_Book_1958.pdf) independently attributes a Super Special tandem brake to British Hub. [P.76](https://ebykr.com/wp-content/uploads/2026/11/ebykr-holdsworth-1967-68-aids-catalog-p40-scaled.webp) lists Merton Super Coureur; the [1969–70 catalogue p.76](https://ebykr.com/wp-content/uploads/2026/11/ebykr-holdsworth-1969-70-aids-catalog-p42-scaled.webp) separately lists Super Coureur and a mattress-sprung Coureur Sports, supporting distinction from existing Coureur 9357. The Super Coureur 1967–1969 bounds are dated observations, not proof of uninterrupted production.
+
+The other four updates added catalogue features to GB Spearpoint 6539, TDC Continental Italia 3160, Lyotard 23TF 3800 and Lyotard 462 3816. **Before-images:** 6539 source 561 `GB forged alloy Hiduminium spearpoint, England`; 3160 source 549 `TDC (Thomas D. Cross) Continental Italia, England, 169 grams (Actual)`; 3800 source 561 `Platform pedal with toe-clip fixing screws and slots for toe straps; ridge and pickup tongue locate a shoe plate. The standard No. 23 was listed at 11 oz.`; 3816 source 561 `Single-sided chrome-plated pedal with steel tubular barrel, 3½-inch frame, usable with or without toe clips. Listed at 12½ oz in 1967; previously recorded 190 g actual.` Verify current values before reverting.
+
+Readback confirmed all 14 records, descriptions, dates and source; all have zero bike links. Repeating the guarded SQL affected zero rows. The quality report found zero errors and 2,009 existing review findings. The generator/live comparison found zero gained or changed mappings and the same 15 pre-existing lost proposals among 24,829 specs. Stronglight, TA, Chater Lea, British Hubs and Merton duplicate reports identified no pairs involving the new records. The applied SQL and disposable source scans were removed after validation.
+
+**Evidence holds:** The following are reviewed ambiguities rather than a count of missing components. Do not infer a precise existing variant or create a generic duplicate from this source alone. Renold Twin Roller is held pending evidence distinguishing it from Elite 1392. Le Tour hubs are held pending firmer evidence of product branding, and Nyfor headset pending brand identification. Simplex handlebar control and Relais 2343 require a secure identity and, for Relais, category determination. On pp.56–71, unnumbered variants also remain uncertain for Huret Lux 700 and No.600, Benelux two-speed conversion and block, Simplex Prestige 537N/C, Fiamme and GB New Style stems, Cinelli steel stems, TDC Super K, Stronglight Competition/P3 headset locknuts, Airlite Continental threadings, Lyotard Berthet/Faucheaux and 460 Alloy pedals. The family-level matches do not establish a particular specimen or configuration.
+
+- p.35 Universal Sport 131/133 side-pull brake: several similar existing variant records; identity not established
+- p.35 Universal hooded lever: unclear which existing lever
+- p.36 Weinmann Dynamic: catalogue omits model code; cannot select 1099 without evidence
+- p.37 GB Synchron: 8480 ends 1965, but its single spring and contact stud differ from the retailer’s nylon balance roller: same model name does not prove identical variant
+- p.37 GB Superhood lever: retailer also offers an unqualified Superhood; cannot establish whether same as adjustable 314 or another variant
+- p.37 GB Sprite lever: 8478 is short-reach and hooded but p.37 does not supply its 180 code or describe the hood, so an exact identity remains uncertain
+- p.38 Mafac Tandem: 845 is a tandem cantilever with five-stud pads and braze-on studs, but p.38 specifies Driver-style double plate arms; no decisive variant identification
+- p.38 Mafac Professional lever: 354 is called Professional but ends 1964; retailer gives no code or identifying detail to distinguish variants
+- p.39 Regina Oro chain: cannot confidently select among existing chain variants
+- p.39 Regina Super Course chain: cannot confidently select among existing chain variants
+- p.39 Regina touring 1/8 chain: insufficient model identity
+- p.39 Regina Block 1-inch-pitch track chain: 8169 is a later 80/81 block chain with inch pitch, but the 1967 model number is absent, so the exact family is unproven
+- p.39 Renolds unspecified 3/32 chain: cannot assume Renold Elite 1392
+- p.40–41 Campagnolo Strada road cranks, old pattern: 1503 is 151 BCD v3 through 1966, but retailer offers old-pattern stock without identifying v3; only availability in 1967 is proven
+- p.41 Campagnolo Pista 1-inch pitch ring: 1237 759 skip-tooth Pista ring ends 1960; model 759 and its particular design are not stated on p.41
+- p.42 Chater-Lea fluted steel crank: 1523 and 1524 are both fluted; catalogue does not identify attachment geometry
+- p.42 Chater-Lea 3/32 or 1/8 half-inch-pitch chainring: 1247 and 1248 generic Chater-Lea rings have insufficient descriptions to distinguish the exact product
+- p.43 Williams AB77 adaptor: part supplied separately, but no matching identified adaptor found; earlier 2015 documents adaptor within crankset and duplicating it as separate product requires scope decision
+- p.43 Williams AB77 chainring: model unspecified and catalogue relates it to the adaptor; 2015 records the complete set but no distinct matching ring confidently identified
+- p.43 Williams AB77 bracket set: model unspecified and 2015 covers the complete crankset, no matching separate bracket confidently identified
+- p.44 TA 1690 Professionnel crank: 1857 earlier 5-vis ends 1962 and 1858 later 1690 begins 1970; catalogue does not distinguish their versions
+- p.44 TA Randonneur outer ring: generic Randonneur 1300 has no description or dates and cannot be assigned as outer versus inner
+- p.44 TA Randonneur inner ring: generic Randonneur 1300 has no description or dates and cannot be assigned as outer versus inner
+- p.45 TA 203 single 3-pin ring: possible P203 1311 but printed prefix differs
+- p.45 TA 205 single 5-pin ring: possible P205 12161 but printed prefix differs
+- p.45 Stronglight 63 chainring: 1317 is described as a later 93/49 inner while catalogue uses 63 cranks and lists both inner and outer sizes; exact identity is unclear
+- p.45 Stronglight steel 3-pin chainring: 9503 is a later 253 three-arm steel ring, but retailer gives no model number to identify it
+- p.46 Regina Oro 5/6-speed freewheel: cannot distinguish existing Extra Oro variants
+- p.47 Regina Gran Sport standard 4/5/6-speed freewheel: cannot distinguish existing Gran Sport variants
+- p.50 Campagnolo Gran Sport front gear: 2293 1005/2 ends 1960; printed p.50 does not identify model number, so verify interchange/design identity before dating it
+- p.55 Cyclo Sport P2 front changer: possible 2332 but insufficient distinguishing identity
+- p.74 Weinmann Alesa high-pressure: 27-inch dimpled/undimpled and 26-inch listings do not supply number to choose among 7928, 5204 or other HP versions.
+- p.74 Rigida dimpled chrome high-pressure: 26/27-inch listing has no named model, so no unique existing variant.
+- p.75 Brooks B17 Professional: large copper rivets, 25 oz; 5297, 5303 and 10057 have multiple generation/rivet descriptions.
+- p.75 Brooks B17 Competition: standard clip, 23 oz; 5317 and 5318 are both plausible, 9034 is narrow-Campagnolo clip.
+- p.75 Brooks B15 Perforated Narrow: separately named option; no reliable evidence whether generic narrow 5306 includes this exact configuration, so no duplicate insert.
+- p.75 Brooks B66 Champion: seller gives 10 × 8¼ × 3⅞ in, whereas specifically named 9036 B66 Champion gives 11 × 6½ × 2¼ in and later 172 × 275 mm. Its size resembles general 5282 B66. The 1967 text alone cannot settle whether seller used Champion generically or represented a different generation. Neither should be altered from name alone.
+- p.76 Unica-Nitor plain nylon saddle: no model number; Unica-Nitor 50 5679 and Cinelli Unicanitor 50 5326 among candidates, plus incomplete variants.
+- p.76 Unica-Nitor Campione Mondo leather saddle: 9083 has 65 Campione del Mondo but the 1967 listing does not state 65 or identify generation; generic leather-covered 5330 and later variants exist.
+- p.80 Kowalit Komet S: 1967 explicitly calls S a new 11 oz lighter type; 9352 Komett 1975–76 is 11.6 oz and does not identify S.
+- p.82 Clement No.12 bis: 6775 Strada 66 and 8972 Criterium Cotone share the number; 1967 gives no model name.
+- p.82 Clement No.48 Diamante: diamond grass-track tread not uniquely crosswalked to 6730 Tipo 20 studded semi-course; no transfer without evidence.
+- p.82 Clement Elvezia: 1967 unnumbered 14 oz ribbed model does not distinguish later Elvezia 75 6752/9903.
+- p.82 Enwell tubular: listing appears under Clement heading but maker/model branding not independently clear; no unsupported row.
+
+The [Elvezia listing, printed p.82](https://ebykr.com/wp-content/uploads/2026/11/ebykr-holdsworth-1967-68-aids-catalog-p43-scaled.webp), is ribbed and 14 oz but has no model number; it does not distinguish the later Elvezia 75 records 6752 and 9903. Universal 131/133 does not distinguish Bianchi brake 6595; the small Vainqueur 999 photograph does not settle the 1106 spring variant. Exclude Czech-branded and unbranded items as requested.
 
 ## Roval road and track wheel comparison — 2026-11-24
 
