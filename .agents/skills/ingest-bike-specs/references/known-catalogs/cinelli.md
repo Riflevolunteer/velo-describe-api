@@ -127,6 +127,13 @@
   rows throughout. Read-back: 1986 = 6 bikes / 79 specs / 52 links;
   1994 = 8 bikes / 145 specs / 43 links. No component rows changed.
 
+- Subsequent review: the Argento Vivo STX S.E. mappings above are not proven
+  by coded original fitment. The 1994 Shimano catalogue identifies different
+  Special Edition MC31-CH rear derailleur and crank candidates; the linked
+  MC32 components and standard MC30 controls remain under review. Shimano's
+  October 1994 instructions attest FC-MC32 but do not identify Cinelli's
+  parts or prove the MC32 1993 starts. [Evidence and live links](../../../ingest-component-catalog/references/known-catalogs/shimano.md#1994-full-catalogue-reconciliation--applied-and-validated-2026-11-23).
+
 ## Velociraptor Alivio rear review — 2026-11-21, read-only
 
 - Existing spec **20177**, source378, `Shimano Alivio`, remains NULL. Shimano's
