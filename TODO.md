@@ -55,7 +55,7 @@ Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agen
 
 - Find a legible 1994 English 3x7 catalogue page or coded parts list to determine whether CS-50 12497 is the 11–28T CS-50-7128 configuration. [Comparison](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#1994-sachs-product-line-catalog--partial-batch-applied-2026-11-24).
 
-- Verify the wheel page and edition date of the Finnish Tunturi catalogue listing OMAS 600/CB and 300/CBG, then reconcile its codes against wheels 11771/11779 and hubs 11721/11722. [Source lead and limits](.agents/skills/ingest-component-catalog/references/known-catalogs/omas.md#finnish-tunturi--rossin-catalogue-lead--2026-11-23).
+- Obtain an accessible original wheel page and cover or imprint for the Finnish Tunturi catalogue to verify the 600/CB and 300/CBG listings and its edition date before dating wheels 11771/11779 or hubs 11721/11722. [Comparison and limits](.agents/skills/ingest-component-catalog/references/known-catalogs/omas.md#finnish-tunturi--rossin-catalogue-lead--2026-11-23).
 
 - Obtain a coded parts specification or clear original-fitment detail for 1993 Bianchi Krono / Chorus shifter spec 1460 to distinguish component 5976 from other downtube levers. [Evidence and limits](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#1993-bianchi-era-check--2026-11-04-user-request).
 
