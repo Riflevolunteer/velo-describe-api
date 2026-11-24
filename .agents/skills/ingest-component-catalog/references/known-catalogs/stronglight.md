@@ -386,6 +386,8 @@ The generator's overrides for 1880 and 1893 still start at 1970 but only resolve
 
 ## Stronglight "Catalogue n° 27" (16 scans, printed August 1982, labibleduvelocataloguesstronlight.blogspot.com)
 
+**Delta 158 description check, 2026-11-24:** Compared the live 255-character description with [catalogue no. 27, printed page 11](https://labibleduvelocataloguesstronlight.blogspot.com/p/stronlight-1984.html). The one-piece adjustable shell, patented seal, drilled titanium or steel axle, 118.5 mm double and 124 mm triple lengths, three thread sizes and 224 g / 288 g weights agree with the printed French and English specifications. The description ends in a complete sentence; reaching the column limit does not establish truncation. The page also lists shell references 700 and 701 and optional lighter fixing bolts; their omission is not evidence of a truncated sentence. No database change made. This check does not establish continuity of production or independently establish the Delta naming crosswalk.
+
 - `data_source` 267, label `Stronglight Catalogue no. 27 (1982)`, country FR. Source:
   https://labibleduvelocataloguesstronlight.blogspot.com/p/stronlight-1984.html (Blogger images
   `STRONLIGHT 1984 (1..16)`, 1128 x 1600 portrait). FR / EN / DE, joint Stronglight and Spidel branding,
