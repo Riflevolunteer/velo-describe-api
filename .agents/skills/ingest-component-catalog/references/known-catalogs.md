@@ -68,6 +68,7 @@ file(s) relevant to the catalog you're ingesting**, not all of them:
 - [known-catalogs/strong.md](known-catalogs/strong.md) — Strong NS-3 seatpost12206/source504, applied and validated; Miyata/Bianchi fitments and NS-1/NS-3C identity limits
 - [known-catalogs/stronglight.md](known-catalogs/stronglight.md) — Stronglight; includes recovered c. 1958 pages, source 444
 - [known-catalogs/super-champion.md](known-catalogs/super-champion.md) — Super Champion derailleur leaflets and catalogues
+- [known-catalogs/super-champion.md](known-catalogs/super-champion.md#tarif-10-janvier-1938--review-2026-11-24) — Rex derailleur range in the 1938 Super Champion tariff
 - [known-catalogs/omas.md](known-catalogs/omas.md) — OMAS 1978-attributed Big Sliding hub page; identity review, no DB changes
 - [known-catalogs/gipiemme.md](known-catalogs/gipiemme.md) — Gipiemme (10 entries)
 - [known-catalogs/takagi.md](known-catalogs/takagi.md) — Takagi (1 entry)
