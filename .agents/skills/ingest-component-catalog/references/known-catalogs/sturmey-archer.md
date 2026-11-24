@@ -14,6 +14,12 @@ The two [ribbed AW 2724 specimen photos](https://velobase.com/Pages/ViewComponen
 
 The [GH6 3598 photographs](https://velobase.com/Pages/ViewComponent.aspx?ID=6DA87EE1-4F10-4750-81DA-3B9E1CC16EAA) show a hub and terminal assembly, but no readable shell date or internal armature code. The 1980 maker catalogue, printed p.28, lists HSD 425 magnet/armature and HSD 458/459/460 shells for 28/32/36 holes; the photographs do not establish those codes for this specimen. The dated-shell and internal-identification holds remain. Live 2724 remains 1936–2000, source 1, zero links; 3598 remains undated, source 1. No database changes.
 
+## S5/2 and Five Speed Alloy service sheet — review 2026-11-24
+
+The undated [five-page maker service sheet](https://hadland.wordpress.com/wp-content/uploads/2012/07/s52.pdf) gives five ratios (66.7/78.9/100/126.6/150%), 13–22T sprockets and two indicator rods (p.1). Page 4 identifies S5/2 chrome shell assemblies HSA 333/334 (28/36 holes), alloy shell HSA 337 (36 holes), and three axle lengths 149.2/155.6/161.9mm. It lists HSJ 776 as a complete alloy stem-mounted dual lever with cables, and HSJ 777 as a replacement cable assembly with 1346/1194mm cables. Page 5 identifies the indicator rods by axle length. Internal replacement parts, shells, sprockets, cables and clips are outside the catalogue's complete-component scope. No date is printed on the sheet; do not infer a dated availability from it.
+
+Existing 12377 is a top/down-tube mounted HSJ-711, distinct from the stem-mounted 776. The approved import added HSJ-776 as 12492, source 551, UUID `b1af7c96-82f3-4ddd-8d23-3a59c3cf97e6`, with undated year fields. Readback verified its source and zero bike links; rerun affected zero rows. Sturmey-Archer near-duplicate report found no pairs, and generator/live comparison showed no gains or changed mappings and the same 15 pre-existing lost proposals across 118 catalogues. To revert, check current values and references before deleting 12492 and source 551. Existing 10020 is a generic Brügelmann S5 with unspecified shell and internal assembly; this sheet does not crosswalk it to S5/1 or S5/2, and a separate alloy hub must not be inserted until overlap is resolved.
+
 ## 1971 trade catalogue and early hub records — reviewed 2026-11-23
 
 The [Raleigh Industries trade scan](https://www.icenicam.org.uk/library/Sturmey-Archer/Catalogue_1971.pdf)
