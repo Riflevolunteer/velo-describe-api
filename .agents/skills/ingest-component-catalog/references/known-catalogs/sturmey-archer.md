@@ -1,5 +1,9 @@
 # Sturmey-Archer catalogues
 
+## Twinshift specimen follow-up — 2026-11-24
+
+The three [VeloBase photographs of 6251](https://velobase.com/Pages/ViewComponent.aspx?ID=5DE2E97B-8D30-4E92-AD35-266B36D0DFAC) show a triangular black cover, a large white and a small red lever, and the underside; neither cables nor a complete mounting clip are visible. It differs in appearance from the windowed T-bar console on the [1971 maker catalogue](https://www.icenicam.org.uk/library/Sturmey-Archer/Catalogue_1971.pdf), PDF p.60. The [1973 Raleigh parts book](https://threespeedhub.com/wp-content/uploads/2013/06/Raleigh-Parts-and-Accessories-1973-US.pdf), p.I-7, calls HSJ 108 and HSJ 110 old-style right and left cables, and HSJ 115 a newer universal cable, while 686 and 712 are console assemblies with different clips. This establishes the documented cable/clip options but does not identify the absent cables or clip on specimen 6251, or prove which assemblies fit it. The live row remains 1966–1973, source 521, no bike links. No database changes; a complete marked specimen or manufacturer crosswalk is still needed.
+
 ## 1971 trade catalogue and early hub records — reviewed 2026-11-23
 
 The [Raleigh Industries trade scan](https://www.icenicam.org.uk/library/Sturmey-Archer/Catalogue_1971.pdf)
