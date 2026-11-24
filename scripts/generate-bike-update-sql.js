@@ -4555,8 +4555,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo': null, // brand alone does not identify a pedal model
     'campagnolo track pattern': 3711, // 1038 Record Pista (silver finish, 1971-85)
     // 1979 Peugeot (French catalogue).
-    'lyotard dural course with toe clips and straps': 3815, // 1979 Peugeot: generic dural course text; 460D identification needs review
-    'lyotard with toe clips and straps': 3815, // 1979 Peugeot: generic Lyotard text; 460D identification needs review
+    'lyotard dural course with toe clips and straps': null, // 1979 Peugeot: material and use do not identify a Lyotard model
+    'lyotard with toe clips and straps': null, // 1979 Peugeot: maker alone does not identify a pedal model
     'spidel 700 dural course': 3833, // Spidel/Maillard 700 Black Alloy Cages; "dural" rules out the steel-cage row
     'shimano deore sis': [{ from: 1987, to: 1993, id: 3965 }], // 1987 Colnago Master Mountain Bike: PD-MT60 / PD-MT61, Deore
     // 1989 Bianchi US catalogue (gringineer scans).

@@ -58,7 +58,7 @@ alter CSVs, database records or the prior country decision.
   Weinmann 605 -> 1133 (1978-80); Mafac Competition (plain and
   "simplified") -> 825 later version; Racer -> 838; Raid -> 843; tandem
   cantilever -> 845. Spidel S7 headset -> 3123 Stronglight S7 (DB dates
-  1981-83; catalogue shows 1979). Lyotard course pedals -> 3815 460D.
+  1981-83; catalogue shows 1979). Lyotard course pedals were linked to 3815 460D; the review below supersedes this.
   Atax stem -> 6447 (1A style). Super Champion 700C -> 5176 Competition.
   Ideale 2002 and Michelin Elan matched themselves.
 - Left unlinked: Weinmann 506 (no row), Peugeot Trophy hubs and Lightrace
@@ -76,7 +76,9 @@ alter CSVs, database records or the prior country decision.
 - 2026-10-05 re-link pass reverses the Spidel call above: "Spidel 700
   dural course" (PY 10 CP, PY 10 LC) -> 3833 Spidel/Maillard 700 Black
   Alloy Cages. "Dural" rules out the steel-cage row and "course" the
-  platform, same reasoning as the Lyotard dural course -> 460D pick.
+  platform. The earlier Lyotard 460D inference is superseded by the review below.
+
+- **1979 Lyotard review, applied 2026-11-24:** PX 10 C spec 2598 says “Lyotard dural course” and PV 10 Super Competition spec 2616 names Lyotard without a model. Neither establishes 460D; the 1976 Holdsworthy folio 64 describes 460D as double-sided, so the earlier quill inference is unsupported. Both links were cleared from 3815 to NULL and the generator keeps them unlinked. Readback confirmed both and the unchanged named Falcon 460D links 16270/16292; rerunning the guarded updates affected zero rows. Generator/live comparison found no gains or changed mappings and the same 15 pre-existing lost proposals across 118 catalogues. Restore 3815 only after checking current values and identifying evidence.
 
 - 2026-10-08 (MAFAC 1976 component catalogue): Brake Levers override 'mafac course' -> 357 MAFAC Course 419 / 429, Competition, linking the TH 8 / TM 8 Tandem "Mafac course" specs (2934, 2946). The catalogue names a forged racing lever "poignée course"; the inference that this settles the exact 419/429 variant is superseded by the 2026-11-24 Mafac code and fitment review; 88 -> 90 linked. The tandems' brake row 845 was retitled "MAFAC Cyclo-Tandem" (1976-1979) in the same run.
 

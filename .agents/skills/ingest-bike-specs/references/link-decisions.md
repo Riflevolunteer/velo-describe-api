@@ -391,6 +391,8 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Pedals
 
+- 1979 Peugeot PX 10 C spec 2598 and PV 10 Super Competition spec 2616: leave unlinked. The catalogue gives Lyotard and, for the PX, dural racing use, but no model; the previous 460D links were cleared. See the [Peugeot review](known-catalogs/peugeot.md).
+
 - Rechecked 2026-11-18: STC p.18 explicitly identifies Maillard 700 RC as
   chrome-steel cage and RN as black aluminium cage, but does not name RA or
   establish RA/RN equivalence. The later RA recovery below supersedes this
