@@ -276,6 +276,10 @@ Row **1098** description enriched from the recovered press report, source **470*
   1022); 610 / 750 label variants; Raleigh 1984 "eyeletted" / "high strength
   narrow section" Weinmann rims (80s range, not here).
 
+## 133 lever description-limit review — 2026-11-24
+
+Row 7922 ends at exactly 255 characters with “730 / 730 sets”. This is a complete front/rear brake-set designation, not a repeated-number typo: the [R. J. Chicken 1979 catalogue, p. 56](https://www.icenicam.org.uk/library/Weinmann/Cycle_fittings_from_R_J_Chicken_catalogue_1979-11-07.pdf) explicitly lists 730/730 with 133 levers, and separately 730/810 with 133. The earlier 1963 catalogue section above lists 133 with 812-A and 1022-A. The two sources attest examples, not an exhaustive list of compatible sets. Live readback confirms the record is 1963–1981, source 162, and has no bike links. No description or database change was needed; reaching the field limit alone does not show truncation.
+
 ## Weinmann Parts Catalog, Weinmann Sports Inc. — October 1981 (labibleduvelocataloguesweinmann.blogspot.com, 17 scans)
 
 - `data_source` 162, label "Weinmann Parts Catalog, Weinmann Sports Inc.

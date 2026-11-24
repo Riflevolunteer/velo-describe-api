@@ -2766,6 +2766,10 @@ until the edition is established. No DB or generator changes were made.
 - 10859 (1998–1998, source 365): Double crankset, round SG 52-42T, 165/170mm, 43.5mm chain line, BB-CS12 115mm spindle.
 - 10887 (1998–1998, source 365): 8-speed rear / triple front Dual SIS Dual Control lever.
 
+## BR-7700 weight basis review — 2026-11-24
+
+Before correction, component 994 had a 255-character description asserting 307.5g for front and rear. The maker's ['97 manual p. 62](https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_-_97_page_62.html) gives 307.5g but does not state its basis, unlike adjacent caliper figures explicitly labelled F&R. [P. 53](https://www.disraeligears.co.uk/site/shimano_bicycle_system_components_-_97_page_53.html) claims a 112.5g caliper weight reduction without naming a comparison model or basis. The catalogue supports the construction and 49mm reach. The approved guarded description-only update labels 307.5g as basis unstated and retains the 112.5g saving without adding a comparison. Original description: `Super SLR dual-pivot caliper, 49mm reach, cold forged aluminium, coated pivot washer and thrust bearing on both arms, low-profile pads with detachable holder (pads last up to 3 times longer), large coil spring, 307.5g (F and R); 112.5g lighter than before`. New description: `Super SLR dual-pivot caliper, 49mm reach, cold-forged aluminium, coated pivot washers and thrust bearings, low-profile replaceable pads and large coil spring. Shimano lists 307.5g (basis unstated) and a 112.5g weight saving.` Restore the old text only after checking the current value. Readback confirmed the description, unchanged 1997–2002 dates, source 275 and zero bike links; the guarded rerun affected zero rows. Quality report: zero errors and 2,020 review findings.
+
 ## Shimano "'97 Bicycle System Components — Dealer Sales & Support Manual", English (U) — printed 09.1996 (disraeligears.co.uk, 94 images)
 
 - `data_source` 275, label "Shimano Bicycle System Components 1997, English (U)
