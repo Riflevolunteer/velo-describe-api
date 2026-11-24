@@ -29,7 +29,7 @@ Held without change, because the listing does not establish identity:
 - Clement N. 9 versus undated "Clement Seta 9" 6735, whose silk name conflicts with the cotton listing.
 - Worthy Green/Blue/Red Label covers: house-brand tyres, per the house-brand tyre policy.
 
-Wolber steel-belted clincher 9124 (Palo Alto 1981/82, 23mm stainless mesh, 700C × 23 or 27 × 1in) probably duplicates W23 Invulnerable 9427; merging needs review. Scratch transcriptions, scans and diffs for this edition were deleted after validation.
+**Wolber merge, applied and validated 2026-11-24:** Steel-belted clincher 9124 duplicated W23 Invulnerable 9427: both are Wolber stainless-mesh HP covers, 700C or 27 × 1in. It was deleted at the user's request. 9124 was 1981–1981, source 248 (Palo Alto 1981/82), source_id `07c6328e-cd8e-11f1-a2df-02fea3763e8d`, title `Wolber steel-belted clincher`, description `Wolber steel-belted clincher, France. Fine stainless steel mesh between tread and cotton casing to stop sharp objects; mixed tread, 23 mm section for narrow rims; 700C x 23 or 27 x 1in.` It had no bike links, generator overrides or note references. Its mixed tread, 23mm section and 700C × 23 size were folded into 9427. 9427's previous description is the Holdsworthy-batch value above, ending `against flints, thorns and glass; 27 x 1in or 700C, 500g`. If a later source or crawl reintroduces a generic steel-belted Wolber clincher, match it to 9427. Rerun affected zero rows; quality, generator comparison and Wolber near-duplicate reports were unchanged. Scratch transcriptions, scans and diffs for this edition were deleted after validation.
 
 ## Holdsworthy Bike Riders Aids 1976 — reconciliation complete 2026-11-24
 
