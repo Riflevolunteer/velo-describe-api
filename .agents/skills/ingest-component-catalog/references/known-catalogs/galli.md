@@ -1,5 +1,11 @@
 # Galli catalogs processed so far
 
+## 1978 Bicisport headset advertisement — applied 2026-11-24
+
+The [Galli advertisement in Bicisport, April 1978](https://ebykr.com/library/galli-bicisport-1978-04-advertisement/) is the original dated magazine appearance of the same illustration previously described below as an undated c.1978 leaflet. The [printed advertisement](https://ebykr.com/wp-content/uploads/2026/11/ebykr-galli-bicisport-1978-04-advertisement-p01-scaled.webp) calls the tapered-roller headset and bottom bracket a new Galli patent. It shows a headset but no individual model number. The [existing 2999 specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=27F5AE3B-D4ED-441C-ADBC-9F92B3EE3CD5) has tapered rollers and a 1978 date reported by VeloBase; it is consistent with the advertised headset family, but the advertisement cannot uniquely date that individual specimen or confirm a commercial model name. The other Galli/Stronglight roller headsets 3000/3001 are not identified by this illustration. No bike specs link to 2999, and it currently has 1978–NULL, source 1, and the bare description `Galli (tapered roller bearing, cuscinetto di rulli conici), Italy`.
+
+After approval, registered the dated advertisement as source 547 and replaced 2999's bare description with a cautious statement of the tapered-roller design and maker's 1978 advertisement; its date bounds, title and identity remain unchanged. One source and one component changed; readback verified the record and zero bike links, the guarded rerun changed zero rows, and the quality report found zero errors. A guarded rollback should restore the old description and source 1 only if the current values match, and remove source 547 only if unreferenced. The ad alone does not distinguish the pictured derailleur, crankset or bottom bracket from the unnumbered legacy records.
+
 ## Galli corrections — applied and validated 2026-11-18
 
 User approved application on 2026-11-18. Applied the reviewed guarded SQL through `scripts/load-sql.js`: **27 component rows and one data_source row changed**, exactly as reviewed. No rows inserted, deleted or merged; all 67 Galli component IDs remain. The earlier audit below is the pre-correction baseline and its preparation/identity follow-up is superseded by this applied result.
