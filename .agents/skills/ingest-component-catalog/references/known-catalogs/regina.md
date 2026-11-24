@@ -1,5 +1,9 @@
 # Regina catalogs processed so far
 
+## Holdsworthy 1967–68 transmission check — 2026-11-24, read-only
+
+The [1967 catalogue](https://ebykr.com/library/holdsworth-1967-68-aids-catalog/) lists Super Course and Oro chains and five-/six-speed Oro freewheels with threaded low sprockets, alongside Gransport Standard. It does not print chain model 50 or distinguish the existing Extra Oro 2182/2194 from the separately recorded earlier G.S. Oro 2189/2193. Shared Oro name, speed and threaded-cog construction identify a broad family but are insufficient for a particular row's date. The [1974 Holdsworth price list](https://ebykr.com/library/holdsworth-1974-mail-order-price-list/) likewise names Oro and Gran Sport without a variant crosswalk. No database change; seek a dated model/marking crosswalk before moving those bounds. The retailer's Super Course spelling alone does not prove identity with 1376 Extra 50 Corsa.
+
 ## Palo Alto Oro freewheel construction — 2026-11-22, applied and validated
 
 [Palo Alto 1981/82 p.26, archive image 25](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHur7AYZdnSBI48n_98QWDi2wI4W4Gn18TlIzL1O_XIHe_GB8q4Dd0YSgdO4QNoHzJ-ONnyuCCFzmNqxr50kXVkh4bEvaZeALEdPoKBHfqAih9gnZUhdF0rwjnFk-QjQY1nV6P0Z6fHKka/s1650/CATALOGUES+VELOS+1981+%252825%2529.jpg)
