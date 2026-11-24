@@ -102,6 +102,8 @@
 
 ## Brooks "Saddle-Comfort" catalogue — c. 1938 (bulgier.net `1937_cy.pdf`, data_source 284)
 
+**Leather dimensions applied, 2026-11-24:** The maker's [catalogue](http://bulgier.net/pics/bike/Catalogs/Brooks/1937_cy.pdf), printed pages 8–9 (PDF page 6), lists B19 as 12½ × 6 × 2¾ inches, Champion Swallow as 11¼ × 6 × 3 inches, and sports B22 as 10½ × 6 × 2⅝ inches. Corrected 5272 B19 height from 2⅞, 9033's 1938 Champion Swallow length from 11½, and 9798 B22 length from 10¾. All retain source 284 and zero bike links; 9033 retains its separate later 11-inch dimension. The 11¼ reading supersedes the earlier 11½ transcription in the range notes below. Three guarded updates affected three rows; readback matched, rerun affected zero, and the quality report found zero errors. To restore, verify the current descriptions before replacing dimensions with the old values above. The remaining leather-table review is not complete.
+
 **Spring-seat review, 2026-11-24:** Compared the six live spring-seat descriptions 9812–9817 with the maker's [catalogue](http://bulgier.net/pics/bike/Catalogs/Brooks/1937_cy.pdf), printed pages 27–29 (PDF pages 15–16). The stated weights and construction agree, as do the dimensions of S30/N (9813), S20/1H (9815), S20/1 (9816) and S30/1 (9817). S25/NH (9812) and S20/2 (9814) height fractions are too blurred in this scan to distinguish reliably from the live 2⅞ and 3⅜ inches; a sharper original is needed before correcting them. No database changes were made. The remaining leather-table review is separate.
 
 **B6 and B23 corrections applied, 2026-11-24:** The [printed leather table, page 4](https://ebykr.com/wp-content/uploads/2026/08/ebykr-1938-brooks-catalog-summarised-data-all-leather-saddles-pp4-5-3375px-scaled.webp), lists B6 as 10½ × 8½ × 3¾ inches and B23 as 12 × 8½ × 3¾ inches. Corrected descriptions 9809 and 9810 from widths of 8¼, and 9809 from height 3¼. Both remain 1938–1938, source 284, with no bike links. Two guarded updates affected two rows; readback matched, rerun affected zero rows, and the quality report found zero errors. To restore, verify the current descriptions first and replace those dimensions with the original values above. Other leather and spring-seat records remain to be checked; descriptions derived from later editions may legitimately differ.
@@ -140,7 +142,7 @@
 - year_from moved earlier to 1938 (16 rows): 5285 B72, 5287 B73, 8967 B90/2, 5288 B90/3, 5313 B17 Sprinter,
   5305 B15 Champion, 8968 J3, 8969 J5, 5286 B72L, 9790 B73L (all 1950); 9791 J4, 9038 B12, 9036 B66 Champion,
   5308 B17 Champion Flyer, 9033 B17 Swallow (all 1957); 5275 B33 (1940). 9033 is a judgement: the 1938 "Champion
-  Swallow" (11½ x 6 x 3in, 1 lb 9 oz) is taken as the same saddle as the 1957 B17 Swallow; its description names both.
+  Swallow" (11¼ x 6 x 3in, 1 lb 9 oz; corrected transcription above) is taken as the same saddle as the 1957 B17 Swallow; its description names both.
 - NULL -> 1938-1938 with descriptions: 5269 B130, 5274 B31. Descriptions only: 5272 B19 Champion Narrow (years
   1923-1939 kept), 9036 B66 Champion (ladies' version noted).
 - New (31 rows, ids 9793-9823, all 1938-1938, no group; ladies' variants share the gents' row): B17 Champion
