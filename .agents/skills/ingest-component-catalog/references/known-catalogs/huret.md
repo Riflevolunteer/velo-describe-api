@@ -1864,6 +1864,8 @@ Before correction, the generic links were:
 | 1987 Raleigh UK | 8783, 8806 |
 | 1988 Peugeot FR | 16412, 16584, 16604, 16624, 16662, 16963 |
 
+**PXR 80 specimen follow-up, 2026-11-24:** A [forum example](https://www.bikeforums.net/touring/605036-peugeot-pxr80.html) is described by its owner as a PXR80 bought in Germany in 1985 or 1986 with a Sachs Huret Duopar-Eco; its year, market and original fitment are not confirmed for the 1988 French catalogue. A [separate bicycle initially compared with the 1988 catalogue](https://www.bikeforums.net/classic-vintage/1218660-peugeot-id-help-please.html) is explicitly described as having a replacement Shimano drivetrain. Neither identifies the 1988 catalogue Rival as AR 41.1T. Keep spec 16963 unlinked pending a coded original fitment or parts list. No database changes.
+
 **Capacity evidence: 1988 Peugeot PXR 80, spec 16963, bike 1000, source 319.**
 The [original French catalogue](https://labibleduvelocataloguespeugeot1.blogspot.com/p/peugeot-1988.html)
 printed p.20 confirms Stronglight 100 **30 x 40 x 50T**, Helicomatic **14/28**
