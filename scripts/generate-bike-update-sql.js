@@ -4150,7 +4150,7 @@ const COMPONENT_OVERRIDES = {
     'weinmann carrera 400': 493, // 1982 Peugeot PX 10 DU: Weinmann No. 185 (Carrera) levers, 1980-83
     'mafac dural promotion drilled': 347, // 1980 Peugeot (NL) PFN 10: "geperforeerde" Promotion = Perfo
     'mafac dural promotion': 355, // 1980 / 1982 Peugeot (NL) PBN 10: undrilled alloy lever on the promotion bracket = lever code 13x, Course 130 (the only one in the 1980 and c. 1982 catalogues)
-    'mafac dural course drilled rubber hoods and adjusters': 357, // 1980 Peugeot (NL) PKN / PVN 10: MAFAC Course, as the 1979 tandems
+    'mafac dural course drilled rubber hoods and adjusters': null, // Peugeot: description does not identify lever code 419 or 429
     'dia compe 165': [{ from: 1986, to: 1986, id: 8872 }], // 1986 Raleigh Technium 440 USA: Dia-Compe 163 / 165 / 169 / 195 extension lever sets
     'dia compe dc 630 165 (racing); dia compe dc 630 135 (touring)': [{ from: 1986, to: 1986, id: 8872 }], // 1986 Raleigh Pursuit: first-listed racing option (user's call 2026-11-13); 135 touring = 8105
     // 1990 Bianchi US catalogue (retrobike archive 1676).
@@ -4182,9 +4182,9 @@ const COMPONENT_OVERRIDES = {
     'campagnolo gran sport drilled': 209, // 1040/1A, Nuovo Gran Sport ("Gran Sport brakes with drilled-out levers")
     // c. 1984 De Rosa (ebykr scan).
     'campagnolo c record': [{ to: 1986, id: 212 }, { from: 1987, id: 214 }], // 0118065 first gen (row 1984-87 since 2026-11-06, as Cinelli / Colnago) / Corsa Record with Power Grade (1987-91)
-    // 1979 Peugeot: the MAFAC 1976 catalogue names its forged racing lever "poignée course".
-    'mafac course': 357, // MAFAC Course 419 / 429, Competition (the catalogue's CB/CS dural racing lever)
-    'mafac course (double cable on the right)': [{ from: 1982, to: 1982, id: 357 }], // 1982 TM 8 / TH 8 tandems: the 1979 tandems' lever, rear-brake cable doubled for the drum
+    // Peugeot Course descriptions do not distinguish the coded lever; the tandem cell includes a double-cable lever.
+    'mafac course': null,
+    'mafac course (double cable on the right)': [{ from: 1982, to: 1982, id: null }],
     // 1979 Colnago (Yes advertising catalogue): "Gruppo e freni Campagnolo Record" fan-out.
     'campagnolo record': [{ to: 1984, id: 226 }], // 2030, Nuovo Record (1967-84); the bare "Campagnolo Record" row the matcher hits is 1994
     'campagnolo gran sport': 209, // 1040/1A, Nuovo Gran Sport (1970-84)
