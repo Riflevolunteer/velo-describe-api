@@ -22,7 +22,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Data quality
 
-- Review, then apply and validate the [1976 Holdsworthy follow-up](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-1976--first-reconciliation-applied-2026-11-24) in `/private/tmp/holdsworth-1976-review/followup.sql`; reconcile remaining catalogue entries and version or dimension differences.
+- Reconcile remaining [1976 Holdsworthy catalogue entries](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-1976--first-reconciliation-applied-2026-11-24), including unresolved version and dimension differences.
 - Compare descriptions at the 255-character limit with source evidence and prepare corrections for confirmed errors, using `quality-report.js` for candidates.
 - Obtain a sharper 1938 Brooks catalogue scan to verify the S25/NH 9812 and S20/2 9814 height fractions. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/brooks.md#brooks-saddle-comfort-catalogue--c-1938-bulgiernet-1937_cypdf-data_source-284).
 
