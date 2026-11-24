@@ -1,5 +1,9 @@
 # Fiamme catalogs processed so far
 
+## Ergal and Model 1 comparison — 2026-11-24
+
+[Holdsworthy 1981, folio 31](https://ebykr.com/wp-content/uploads/2026/11/ebykr-holdsworth-1981-aids-catalog-p17-scaled.webp), visually checked, lists Ergal and “Model 1” as separate rims: Ergal is 310g/10.5oz as printed (the two figures are not exact conversions), 28/32/36 holes, whereas Model 1 is offered in 32/36/40 holes without a weight. The retailer does not state that its Model 1 is the maker's later code 01; do not equate the two based on the numeral. [Palo Alto 1976 p.11](https://ebykr.com/library/palo-alto-bicycle-shop-1976-catalog/) lists a yellow-label Ergal at 290g and 28/32/36 holes; [Bike Warehouse 1980 p.18](https://ebykr.com/library/bike-warehouse-1980-catalog/) lists a gold-label Ergal at 290g and 20.4mm, but neither prints maker code 01. These are useful family-level attestations, not a crosswalk to the specific 1985 code-01 rim or proof of identical construction. Row 4992 remains 1970–1988, source 383, with no bike links; no database change. The task remains open for a period maker-code crosswalk or coded original example.
+
 ## Cerchi e manubri per biciclette da corsa (c. 1985), loaded 2026-11-13
 
 - Source: velo-pages.com album 1398 "Fiamme catalog (1985)", recovered from the Wayback Machine with
