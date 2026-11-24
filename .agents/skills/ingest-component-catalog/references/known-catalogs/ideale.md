@@ -4,6 +4,12 @@ The Ideale saddles live under component_brand 580 "Tron & Berthet" (about 80
 rows titled "Ideale ..."; also BIM, Franceix and Norex). Search by component
 title, not brand title, before assuming the brand is missing.
 
+## 1955 Idéale 48 and 49 advertisement — applied 2026-11-24
+
+The maker's [advertisement in L'Officiel du cycle, 1 October 1955 p.174](https://ebykr.com/wp-content/uploads/2026/11/ebykr-1955-lofficiel-ideale-advertisement-selle-course-48-49-p174-scaled.webp) presents the new Professionnel racing saddle with a pressed central depression, No. 48 in duralumin and No. 49 in steel; it says each came with a plastic bag and guarantee. The [No. 48 specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=977B03F0-3204-40D9-ADA0-7F57F8214F3B) is marked 48 and Professionnel, has a depressed top and a duralumin-marked frame. The [No. 49 specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=6E0A7747-9AF3-4E95-85AB-71BCD9C03EA6) is marked 49 and Professionnel, with a depressed top and steel rails. This supports matching the named models, not dating either individual specimen's manufacture. Both records 5620/5621 have NULL dates, source 1 and no bike links; no near-duplicate candidates were reported for the brand. No source with this advertisement's label was registered in the live DB.
+
+After approval, registered the advertisement as source 546 and updated both descriptions and date bounds to 1955 as an availability attestation, not production endpoints. One source and two rows changed; readback verified descriptions, source, dates and zero links, and the guarded rerun changed zero rows. The quality report found zero errors. Generator/live comparison across 118 catalogues retained the prior 15 lost proposals, with no gains or changed mappings. No title or model identity was changed. Old descriptions are `Ideale 48 Professionnel, France` and `Ideale 49 Professionnel, France`; both old source refs are 1 and dates NULL. Rollback must check the applied values before restoring them and delete source 546 only if unreferenced. The c.1936 catalogue uses model numbers across leather grades and materials, so similarly numbered early records need specimen crosswalks; no broad date assignment is warranted.
+
 ## Bikecology 1980 88/Titanium identity — applied and validated 2026-11-20
 
 The [1980 catalogue](https://labibleduvelodivers.blogspot.com/p/revue-1980.html),
