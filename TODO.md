@@ -22,6 +22,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Data quality
 
+- Reconcile the 1994 Sachs catalogue's MH-2101 and front hubs against existing 3x7 and New Success/7000 rows, compare SC-R 80 with 10742, and identify the SL-TS 80/50 thumb shifters against 12438 using coded specimens or a parts crosswalk. Scan and inventory: `/private/tmp/sachs-1994-review`. [Source and scope](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#1994-sachs-product-line-catalog--partial-batch-applied-2026-11-24).
 - Continue comparing descriptions at the 255-character limit and generic bike-link identities with source evidence using `quality-report.js`.
 - Obtain a sharper 1938 Brooks catalogue scan to verify the S25/NH 9812 and S20/2 9814 height fractions. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/brooks.md#brooks-saddle-comfort-catalogue--c-1938-bulgiernet-1937_cypdf-data_source-284).
 
