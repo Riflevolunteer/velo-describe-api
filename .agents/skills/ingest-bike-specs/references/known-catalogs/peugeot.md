@@ -78,7 +78,7 @@ alter CSVs, database records or the prior country decision.
   Alloy Cages. "Dural" rules out the steel-cage row and "course" the
   platform, same reasoning as the Lyotard dural course -> 460D pick.
 
-- 2026-10-08 (MAFAC 1976 component catalogue): Brake Levers override 'mafac course' -> 357 MAFAC Course 419 / 429, Competition, linking the TH 8 / TM 8 Tandem "Mafac course" specs (2934, 2946). The catalogue names its forged racing lever "poignée course", which settles the variant question the 2026-10-05 pass left open; 88 -> 90 linked. The tandems' brake row 845 was retitled "MAFAC Cyclo-Tandem" (1976-1979) in the same run.
+- 2026-10-08 (MAFAC 1976 component catalogue): Brake Levers override 'mafac course' -> 357 MAFAC Course 419 / 429, Competition, linking the TH 8 / TM 8 Tandem "Mafac course" specs (2934, 2946). The catalogue names a forged racing lever "poignée course"; the inference that this settles the exact 419/429 variant is superseded by the 2026-11-24 Mafac code and fitment review; 88 -> 90 linked. The tandems' brake row 845 was retitled "MAFAC Cyclo-Tandem" (1976-1979) in the same run.
 
 - Handlebars (2026-10-10, after the ATAX / Guidons Philippe 1982 catalogue,
   data_source 157): 24 bar specs linked by bend name via overrides —
@@ -1019,7 +1019,7 @@ or spares source for the later 600 SH variants.
 - Added exact value/year-scoped generator overrides with one Falcon link in the same load (70 total). All 85 CSVs compared: 6333 -> 6403 links, exactly the 70 approved additions. Live read-back across 18,283 specs confirms the same changes and no other field updates. SQL rerun zero rows; npm test passed. SQL and exact spec IDs: `/private/tmp/maillard-cxc-review-2026-11-13/links.sql`, `plan.json`, `load-verification.json`. Plain Maillard 700 quill pedals, 700C / 700 SS and bare brand text retain their prior handling.
 - 2026-11-13: 1982 TM 8 / TH 8 tandem Brake Levers "Mafac course (double
   cable on the right)" -> 357 MAFAC Course 419 / 429, as the 1979 tandems'
-  "Mafac course"; the extra wording kept the existing override from matching.
+  "Mafac course"; the extra wording kept the existing override from matching. The 2026-11-24 Mafac review questions the exact 419/429 identification because the right lever has two cables; links remain pending a reviewed correction.
 - 2026-11-13 Shifters sweep (user approved, judgement): 1987 PS 10B W
   'Savoie' "ARIS indexing" -> 6110 ARIS New Success (type 1), and 1989 Mont
   Blanc "Aris Index" -> 6108 Rival Aris Classic 3000, each matched to the

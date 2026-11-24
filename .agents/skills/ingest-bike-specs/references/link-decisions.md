@@ -447,7 +447,7 @@ see the Raleigh catalogue notes for the decision and source.
   AC250/AGC250 instead. [Evidence](../../ingest-component-catalog/references/known-catalogs/dia-compe.md#march-1989-product-guide--ebay-144913620478-applied-2026-11-17).
 
 - Most unlinked Peugeot values name no model ("Double levers" 21, "Course levers" 13, "Weinmann" 8, "CLB" 7, "Drilled course levers with rubber hoods" 7, the 1987-88 "Road grips, double lever" strings): leave.
-- Leave unlinked: 1982 Peugeot "Mafac course (double cable on the right)" x2 (the plain "mafac course" override goes to 357 Course 419 / 429, but a two-cable lever may not be that part; not applied 2026-11-02); 1989 Bianchi "Shimano Sport LX aero" (BL-A450 / A451 / A452 / A453 all Exage Sport); 1982 Peugeot "Mafac Promotion" x3 (344 / 345 / 346 plus the dural Promotion = Course 130 decision) and "Mafac, drilled" x2; 1989 Bianchi "SunTour XCE-4050" (455 is the Edge road lever); 1986 Raleigh "DC 630/165 (racing); DC 630/135 (touring)" (two levers in one cell).
+- 1982 Peugeot "Mafac course (double cable on the right)" x2: initially left unlinked on 2026-11-02, linked to 357 on 2026-11-13; the later Mafac source review questions this identification and the links await review. Leave unlinked: 1989 Bianchi "Shimano Sport LX aero" (BL-A450 / A451 / A452 / A453 all Exage Sport); 1982 Peugeot "Mafac Promotion" x3 (344 / 345 / 346 plus the dural Promotion = Course 130 decision) and "Mafac, drilled" x2; 1989 Bianchi "SunTour XCE-4050" (455 is the Edge road lever); 1986 Raleigh "DC 630/165 (racing); DC 630/135 (touring)" (two levers in one cell).
 
 ## Chains
 
