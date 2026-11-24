@@ -1552,7 +1552,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo victory': [{ to: 1986, id: 4168 }, { from: 1987, id: 4169 }], // G010-SM, Victory (1984-86) / Victory S3 (1987-88; 1988 Bianchi Giro)
     'campagnolo record corsa': 4096, // 0102050, C-Record first generation (1985-86)
     // 1974 Falcon (loaded as 1975 until 2026-10-08).
-    'campagnolo velox': 4167, // 2250 Velox (1971-75)
+    'campagnolo velox': 4167, // 2250 Velox (1971-76)
     'campagnolo velox rear': 4167, // 1973 Falcon Olympic 78 (5-speed, no front mech)
     'campagnolo gran sport rear': 4118, // 1970 Falcon 78 / 80 (5-speed, no front mech): 1012/4 Gran Sport (1955-73)
     'campagnolo valentino rear': 4162, // 1970 Falcon E.C.74 (5-speed): 2170 Valentino Extra, as bare 'campagnolo valentino'
