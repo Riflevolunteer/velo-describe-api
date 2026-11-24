@@ -102,6 +102,8 @@
 
 ## Brooks "Saddle-Comfort" catalogue — c. 1938 (bulgier.net `1937_cy.pdf`, data_source 284)
 
+**B18 Champion dimension correction applied, 2026-11-24:** The [List 265 second edition scan, printed page 4](https://ebykr.com/wp-content/uploads/2026/08/ebykr-1938-brooks-catalog-summarised-data-all-leather-saddles-pp4-5-3375px-scaled.webp), lists B18 Champion and Champion L as 11 × 6¾ × 2 and 10¾ × 6¾ × 2 inches respectively, both 1 lb 10 oz. The fractions were checked on the scan: the page's web transcription renders the width as 6¼ and is not reliable for this small type. Corrected 9799 from 6⅝ to 6¾ for both; its previous 255-character ending was a complete weight phrase, so truncation was not established. The guarded update affected one row, readback verified the 208-character description, unchanged dates and source 284, and zero bike links; rerun affected zero rows. The quality report returned zero errors. Restore only if the description still matches the applied value. Original description: `Brooks B18 Champion / B18 Champion Ladies, England. Sports saddle shaped like the B17 Standard on a single-loop four-wire frame for long-distance touring, de luxe solid butt hide top, chamfered flaps; gents 11 x 6⅝ x 2in, ladies 10¾ x 6⅝ x 2in, 1 lb 10 oz`.
+
 - `data_source` label "Brooks Saddle-Comfort catalogue (1938)", country GB. Source:
   http://bulgier.net/pics/bike/Catalogs/Brooks/1937_cy.pdf (21-page PDF of a 36-page booklet, two printed pages
   per scan). J. B. Brooks & Co. Ltd, Criterion Works, Birmingham 3. The file name says 1937, but a customer letter

@@ -20,6 +20,10 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 - Recover the model-labelled left half of the 1985 Bianchi USA specification table, and verify its edition against the English brochure fragment. [Recovered right half and edition evidence](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#199499-catalogue-source-review--2026-11-21).
 - Seek a full 1974 Bianchi maker range and 1975–77 and 1979–80 sources. For 1997 and 1999 seek legible specification scans from a public copy of the US-market albums or sharper Japanese originals. [Reviewed copies and leads](.agents/skills/ingest-bike-specs/references/known-catalogs/bianchi.md#early-and-1997-source-follow-up--2026-11-22).
 
+## Data quality
+
+- Compare descriptions at the 255-character limit with source evidence and prepare corrections for confirmed errors, using `quality-report.js` for candidates.
+
 ## Waiting for distinguishing evidence
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
