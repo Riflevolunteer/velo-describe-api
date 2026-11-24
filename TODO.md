@@ -22,7 +22,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Data quality
 
-- Reconcile remaining [1981 Holdsworthy catalogue components](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-1981--reconciliation-in-progress), and reconcile remaining [1976 Holdsworthy entries](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-1976--first-reconciliation-applied-2026-11-24), including unresolved version and dimension differences; seek a model crosswalk for the Super Champion HP and Fiamme Ergal rims. Seek maker or specimen evidence to distinguish Clement Elvezia rows 6752 and 9903.
+- Reconcile remaining [1981 Holdsworthy catalogue components](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-1981--reconciliation-in-progress).
 - Review the Mafac 419/429 description, the linked Peugeot tandem double-cable levers and other generic bike-link identities; continue comparing descriptions at the 255-character limit with source evidence using `quality-report.js`. [Mafac evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/mafac.md#mafac-lever-code-and-description-review--2026-11-24).
 - Obtain a sharper 1938 Brooks catalogue scan to verify the S25/NH 9812 and S20/2 9814 height fractions. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/brooks.md#brooks-saddle-comfort-catalogue--c-1938-bulgiernet-1937_cypdf-data_source-284).
 
@@ -30,6 +30,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
 
+- **Holdsworthy 1976 holds:** obtain a model/size crosswalk for the Super Champion HP rim and Fiamme Ergal 4992, maker or specimen evidence separating Clement Elvezia 6752/9903, and a fibre/code crosswalk for Canetti Olympic Silk versus 111 Olympic 9695. [Held entries](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-1976--reconciliation-complete-2026-11-24).
 - **Sturmey-Archer:** obtain dated shell or armature evidence for ribbed AW 2724 and GH6 3598, a coded S5/1 versus S5/2 crosswalk for 10020, and a cable/clip identification for Twinshift 6251. [Catalogue comparison](.agents/skills/ingest-component-catalog/references/known-catalogs/sturmey-archer.md#1971-trade-catalogue-and-early-hub-records--reviewed-2026-11-23).
 - **British Cyclo No. 609:** obtain a stripped body or coded package to identify BLUSH/2 and BEFO against 2090/2092, a parts key for SHAN and 20/26 against 2329–2331 and 6011/6018, and a stamped or coded match for the P.13 Rosa ring against 1252/1253. [Specimen comparisons](.agents/skills/ingest-component-catalog/references/known-catalogs/cyclo-gear-company.md#catalogue-and-specimen-distinctions).
 - **Super Champion Course 4800/4801:** obtain a dated original fitment or maker illustration showing the lever knob and associated mechanism to distinguish the variants. [Catalogue and specimen comparison](.agents/skills/ingest-component-catalog/references/source-hunts.md#super-champion-course-specimen-comparison--2026-11-23).
