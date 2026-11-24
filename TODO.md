@@ -22,7 +22,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Data quality
 
-- Obtain coded specimens or a parts crosswalk to reconcile the 1994 Sachs MH-2101 and New Success/7000 front hubs with existing rows. [Source and scope](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#1994-sachs-product-line-catalog--partial-batch-applied-2026-11-24).
+- Obtain a coded or measured Torpedo 3x7 specimen or maker crosswalk to compare MH-2101 with 2698/3507; obtain coded New Success/7000 front hubs or a crosswalk to compare with 11426/3512. [Source and scope](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#1994-sachs-product-line-catalog--partial-batch-applied-2026-11-24).
 - Continue comparing descriptions at the 255-character limit and generic bike-link identities with source evidence using `quality-report.js`.
 - Obtain a sharper 1938 Brooks catalogue scan to verify the S25/NH 9812 and S20/2 9814 height fractions. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/brooks.md#brooks-saddle-comfort-catalogue--c-1938-bulgiernet-1937_cypdf-data_source-284).
 
