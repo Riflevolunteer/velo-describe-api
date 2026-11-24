@@ -23,6 +23,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Data quality
 
 - Compare descriptions at the 255-character limit with source evidence and prepare corrections for confirmed errors, using `quality-report.js` for candidates.
+- Check remaining 1938 Brooks catalogue-derived dimensions, including spring-seat and weatherproof tables. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/brooks.md#brooks-saddle-comfort-catalogue--c-1938-bulgiernet-1937_cypdf-data_source-284).
 
 ## Waiting for distinguishing evidence
 
