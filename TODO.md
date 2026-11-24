@@ -23,7 +23,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Data quality
 
 - Compare descriptions at the 255-character limit with source evidence and prepare corrections for confirmed errors, using `quality-report.js` for candidates.
-- Check remaining 1938 Brooks leather dimensions against the printed table; obtain a sharper catalogue scan to verify the S25/NH 9812 and S20/2 9814 height fractions. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/brooks.md#brooks-saddle-comfort-catalogue--c-1938-bulgiernet-1937_cypdf-data_source-284).
+- Obtain a sharper 1938 Brooks catalogue scan to verify the S25/NH 9812 and S20/2 9814 height fractions. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/brooks.md#brooks-saddle-comfort-catalogue--c-1938-bulgiernet-1937_cypdf-data_source-284).
 
 ## Waiting for distinguishing evidence
 
