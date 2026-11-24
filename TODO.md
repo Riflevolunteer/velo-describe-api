@@ -53,6 +53,7 @@ Reopen these when the specified material becomes available; existing ambiguity a
 
 Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md) before searching. Reopen exhausted hunts only for a new source/holder lead. Prioritise free, directly retrievable scans; UK archive/contact-only holdings are not actionable for the user.
 
+- Continue reconciling the remaining named components and uncertain variants in the 1967–68 Holdsworthy catalogue using the retained comparison inventories. [Evidence and scratch paths](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-196768--first-batch-applied-2026-11-24).
 - Compare the 1994 Sachs German price-list fragment's CS-50-7128 with the blurred English catalogue's CS-50 12497 and related 5000 group records. [Source and limits](.agents/skills/ingest-component-catalog/references/source-hunts.md).
 
 - Verify the wheel page and edition date of the Finnish Tunturi catalogue listing OMAS 600/CB and 300/CBG, then reconcile its codes against wheels 11771/11779 and hubs 11721/11722. [Source lead and limits](.agents/skills/ingest-component-catalog/references/known-catalogs/omas.md#finnish-tunturi--rossin-catalogue-lead--2026-11-23).
