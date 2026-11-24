@@ -53,7 +53,7 @@ Reopen these when the specified material becomes available; existing ambiguity a
 
 Choose named gaps from live `/linkCoverage`; consult the [source-hunt log](.agents/skills/ingest-component-catalog/references/source-hunts.md) before searching. Reopen exhausted hunts only for a new source/holder lead. Prioritise free, directly retrievable scans; UK archive/contact-only holdings are not actionable for the user.
 
-- Compare the 1994 Sachs German price-list fragment's CS-50-7128 with the blurred English catalogue's CS-50 12497 and related 5000 group records. [Source and limits](.agents/skills/ingest-component-catalog/references/source-hunts.md).
+- Find a legible 1994 English 3x7 catalogue page or coded parts list to determine whether CS-50 12497 is the 11–28T CS-50-7128 configuration. [Comparison](.agents/skills/ingest-component-catalog/references/known-catalogs/huret.md#1994-sachs-product-line-catalog--partial-batch-applied-2026-11-24).
 
 - Verify the wheel page and edition date of the Finnish Tunturi catalogue listing OMAS 600/CB and 300/CBG, then reconcile its codes against wheels 11771/11779 and hubs 11721/11722. [Source lead and limits](.agents/skills/ingest-component-catalog/references/known-catalogs/omas.md#finnish-tunturi--rossin-catalogue-lead--2026-11-23).
 
