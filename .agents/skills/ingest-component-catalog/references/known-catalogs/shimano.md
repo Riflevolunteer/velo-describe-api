@@ -2342,6 +2342,8 @@ raises a catalogue-wide edition dating question; it does not independently
 prove the loaded scan's model year. Do not change 3534's dates on this flag
 until the edition is established. No DB or generator changes were made.
 
+**HB-6400 follow-up, 2026-11-24:** Live readback confirms 3534 has seven linked bike specifications, all labelled `Hubs`, and 9712 has none; the combined row therefore also represents rear-hub fitments and cannot simply be replaced by a front-only row. The linked specs do not give front hub codes or dimensions. The Shimano parts sheet linked above identifies HB-6400-F and prints 100 mm spacing and a 108 mm axle; its footer reads `9212-831B`, which has not been independently established as a publication date. Searches for a second dated early or late parts key did not yield a verified comparison. Shared dimensions and codes strengthen the case for continuity but do not establish unchanged internals or authorize a merge. Retain both records pending comparable period parts lists or measured, dated specimens; no database or generator changes were made.
+
 ## Shimano 1988 Bicycle System Components Dealer Catalog — January 1988 (Downloads/Shimano 88.pdf, 146 pages, scan, no text layer)
 
 - Colophon "(c) Jan. 1988 by Shimano Industrial Co., Ltd." printed West
