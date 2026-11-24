@@ -140,6 +140,10 @@ The January 1979 article remains unrecovered. The Vélocyclo scans attributed
 to that issue are pp. 18–21, about CMP frames. The [BnF holding](https://catalogue.bnf.fr/ark:/12148/cb34356547z)
 below remains an option for researching earlier availability.
 
+### 1981 Peugeot specimen follow-up — 2026-11-24
+
+A [seller-described original 1981 PY10/S](https://www.vintageveloberlin.de/shop/Peugeot_PY10S_1981_SHOP.php) lists Spidel Maillard 700 pedals. Its [drivetrain photo](https://www.vintageveloberlin.de/pictures_cycles/Peugeot_PY10S_Pics/Peugeot_PY10S_1981_Reynolds_531_Professional_Spidel_Simplex__Vintage_Velo_BerlinIMG_4779.jpg) shows a bright cage and Spidel cap, but the image and listing do not establish the cage material or suffix; the seller's originality claim does not independently establish factory fitment. An [individual 1982 PRO 10](https://johnkatsaras.com/album/5ed9768fe2834c0017d0ebf8/) is described with black-anodised Spidel 700 cages even though the 1982 catalogue specifies RA, illustrating the need to distinguish individual builds from the catalogue. Neither observation resolves the 1981 catalogue specs 10671/10691; keep them unlinked pending coded fitment or an identified original cage. No database changes.
+
 ### Applied 1982 reconciliation — 2026-11-22
 
 User approved a separate catalogue-backed **Maillard 700 RA (Spidel)**,
