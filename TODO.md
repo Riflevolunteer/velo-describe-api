@@ -23,7 +23,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Data quality
 
 - Continue comparing descriptions at the 255-character limit and generic bike-link identities with source evidence using `quality-report.js`.
-- Review whether to remove or qualify the unverified 1938 height fractions on Brooks S25/NH 9812 and S20/2 9814; the 1937 measurements do not establish the 1938 values. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/brooks.md#brooks-saddle-comfort-catalogue--c-1938-bulgiernet-1937_cypdf-data_source-284).
 
 ## Waiting for distinguishing evidence
 
