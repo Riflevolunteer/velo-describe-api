@@ -1,5 +1,23 @@
 # 3ttt catalogs processed so far
 
+## 1986 product sheets, new copy — source lead 2026-11-25
+
+[Scribd's 30-page copy](https://www.scribd.com/document/1065289415/3ttt-Catalog-1986) appears to be the same product-sheets catalogue as source 134 below. Its publicly indexed OCR includes material missing from the earlier Wayback reading, including AR Record and ACRT Criterium stems, CC and CSL bars, and CCA aerodynamic versions. It describes ACRT as a painted, T6 forged alloy stem, 80–130 mm, 280 g, and CSL as a 250 g T6 bar. The copy's page count and OCR alone do not establish that every page image is accessible. The comparisons and approved changes below distinguish the unresolved identities from the updates applied on the OCR evidence.
+
+**OCR reconciliation, pre-update baseline:** The flattened OCR does not preserve reliable page numbers. The following comparisons describe the records before the approved updates below; specimen identities still need visual inspection. The catalogue date remains inferred from the 25-year anniversary, and describes availability rather than production endpoints.
+
+| Sheet | Existing record and assessment |
+| --- | --- |
+| AR Record stem | 6404, 1980–1999, already covers the date. OCR specifies silver T6 forged alloy, 60–140 mm, 26 mm clamp, 22/22.2 mm quill and 270 g; the existing 260 g and 274 g measured weight need preserving separately. |
+| ACRT Criterium stem | 6425, 1980–1980, is a name and period candidate, with 258.5 g average measured. OCR describes painted T6 forged alloy, 80–130 mm and 280 g. Compare the sheet illustration with the [VeloBase specimen](https://www.velobase.com/Pages/ViewComponent.aspx?ID=9B52522F-60AD-4EB3-B29B-039CF7533541) before assigning its code or extending its range. |
+| CSL Record Superleggera | 8303 CSL Racing Team SL, then 1989–1991, shares the code, bends and 250 g; 2767 is the older 240 g Superleggero. The approved date change and remaining inference are recorded below. |
+| CCA aerodynamic Competizione | 8302 Aero Dynamic Competizione, 1984–1989, is an existing candidate; spec 18302 `3ttt Aero CCA` is already linked to it under a documented generator decision. OCR mentions Saronni, Gimondi and Moser bends, but the 295 g figure belongs to the ordinary CC. Do not assign that weight to CCA. |
+| CBMX and CBIKE bars | OCR describes 70 cm / 350 g gold-anodised BMX and 67 cm / 260 g T6 mountain-bike bars respectively. Check the sheets and existing identities before proposing entries. |
+
+Previously processed AR84/AR84N, ATRAID, CRAID, CCR, CGP, CC and RSCAL also appear in the OCR. Tape and stem spare parts are outside component categories. A [separately indexed CSL introductory image](https://www.bikeforums.net/classic-vintage-sales/1293201-3ttt-superleggero-handlebars-42-cm.html) was found but could not be visually inspected; a Rennrad-News page indexing another 1986 sheet returned HTTP 403. Three 1991 generic Criterium stem specs 26433/26449/26465 remain unlinked; the 1986 name alone does not distinguish their fitment.
+
+**Approved updates applied and validated:** 8303 `year_from` 1989 → 1986, source 137 → 134; the same CSL code and 250 g support the inferred continuity, not a proven introduction date. 6404 retains 1980–1999 and gains the 1986 270 g and 60–140 mm figures, source 353 → 134. Its old description was `3ttt AR, Record stem. Forged Al 6082 T6, silver anodised, Allen-bolt head, safety mark showing the length, 26mm clamp, 22-22.2mm quill. 60-130mm (c. 1991; nine lengths 60-140mm in 1989), 260 grams, 274 grams (Actual). Italy`; restore only after checking current fields. Readback confirmed both changes; the identical guarded rerun affected zero rows. 6404 had 14 links and 8303 none, with no links changed. The 118-catalogue comparison found zero gained or changed mappings and the same 15 pre-existing lost proposals; near-duplicate report found zero pairs, and the quality report found zero errors.
+
 ## 3ttt Product Sheets catalogue (1986) — velo-pages.com album via Wayback, data_source id 134
 
 - Source: velo-pages.com Gallery2 album `g2_itemId=6809` ("3ttt catalog -

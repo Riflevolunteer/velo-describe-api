@@ -22,6 +22,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Data quality
 
+- Obtain readable images of the missing 1986 3ttt product sheets to resolve ACRT 6425 and CCA 8302 specimen identities and check CBMX/CBIKE against existing records. [Reconciliation and source limits](.agents/skills/ingest-component-catalog/references/known-catalogs/3ttt.md#1986-product-sheets-new-copy--source-lead-2026-11-25).
 - Continue comparing descriptions at the 255-character limit and generic bike-link identities with source evidence using `quality-report.js`.
 
 ## Waiting for distinguishing evidence
