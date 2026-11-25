@@ -1,5 +1,18 @@
 # Gipiemme catalogs processed so far
 
+## Tecno wheel duplicate review — 2026-11-25 (read-only)
+
+The [1995 Gipiemme catalogue](https://gipiemme.com/wp-content/uploads/2023/11/GIPIEMME-Catalogo-1995.pdf), source 423, distinguishes these near-title pairs. Page numbers below are printed pages (PDF pages are one higher). Do not merge solely on title similarity. None of the eight rows had bike-spec links at review.
+
+| Component IDs | Catalogue evidence | Decision |
+| --- | --- | --- |
+| 6967 C946 / 11361 946 | pp. 16–17: C946 has six carbon spokes and a carbon rim; 946 has six carbon spokes and an aluminium rim. | The named catalogue models are distinct. The identity of specimen 6967 remains uncertain, as described below; do not merge. |
+| 10520 C 934 / 11364 934 | pp. 20–21: carbon versus aluminium rim. | Separate models. |
+| 11362 C 944 / 11363 944 | pp. 18–19: carbon versus aluminium rim. | Separate models. |
+| 11365 935 / 11366 M 935 | pp. 23–24: road wheel versus 26-inch ATB wheel, with different stated weights. | Separate models. |
+
+**6967 specimen conflict:** Its [VeloBase entry](https://www.velobase.com/Pages/ViewComponent.aspx?ID=5E5AC14D-1B43-4D3E-9105-5B4DD4AEE6DD) calls the wheel C946 but states five spokes and a clincher rim; its main photograph also shows five spokes. The current database description describes the six-spoke carbon-rim C946. The 1995 catalogue shows that model as six-spoke and tubular, so the listing name and specimen attributes conflict; the photograph alone does not establish its model code. Obtain a clear model marking or comparable coded period evidence before identifying the specimen or deciding how to reconcile its description and provenance. The catalogue's five-spoke 935 and M 935 are possible comparison points, not proven identifications. No database changes were made during this review.
+
 ## Early Pista hub links — evidence review 2026-11-20
 
 The live date-conflict report flags component 3351, `Special Pista`, 1984–88,
