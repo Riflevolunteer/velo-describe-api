@@ -28,6 +28,8 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
 
+- **Ambrosio California 12686 / Off Road Durex 9771:** obtain a maker crosswalk or comparably coded specimens to determine whether they overlap. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#ambrosio-california-coverage-triage--2026-11-25).
+
 - **Stronglight A9 3112:** obtain a dated original fitment or maker crosswalk showing the France locknut and the meaning of A9H, including the 1989 Peugeot fitments. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/stronglight.md#a9-3112-fitment-and-date-review--2026-11-25-applied-and-validated).
 
 - **Gipiemme wheel 6967:** obtain a clear model marking or coded period comparison for the five-spoke specimen and reconcile its identity and description with the six-spoke C946 catalogue entry. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/gipiemme.md#tecno-wheel-duplicate-review--2026-11-25-read-only).
