@@ -23,7 +23,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 ## Data quality
 
 - Continue comparing descriptions at the 255-character limit and generic bike-link identities with source evidence using `quality-report.js`.
-- Verify the date and image of the Idéale advertisement in Ciclismo issue 9 and reconcile its No.51/52/58/59 Record and Professionnel offerings. [Source lead](.agents/skills/ingest-component-catalog/references/known-catalogs/ideale.md#undated-tron--berthet--geffac-range-sheet--review-2026-11-25).
 
 ## Waiting for distinguishing evidence
 
@@ -31,6 +30,7 @@ Reopen these when the specified material becomes available; existing ambiguity a
 
 - **c.1936 Idéale catalogue:** obtain marked specimen or maker crosswalks for Nortex/Norex 38, Elaedy/Idéale 14, Franceix/Elaedy/Nortex 41 and Idéale 44/51/52/57 variants; obtain cycle-fitment evidence for the heavy-duty entries. [Catalogue evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/ideale.md#c1936-maker-catalogue--source-assessment-2026-11-25).
 - **Idéale GEFFAC range:** obtain specimen or maker crosswalks for Idéale/Franceix/Norex 4 and Idéale/Norex 6, and identify the No.27 specimen 5606 against the junior model and its conflicting listed weight. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/ideale.md#undated-tron--berthet--geffac-range-sheet--review-2026-11-25).
+- **Ciclismo May 1953 issue 9:** obtain a readable original advertisement image for the Idéale 51/52/58/59 models if the archive scan becomes available, to verify its indexed transcription. [Source lead](.agents/skills/ingest-component-catalog/references/known-catalogs/ideale.md#undated-tron--berthet--geffac-range-sheet--review-2026-11-25).
 
 - **Ambrosio California 12686 / Off Road Durex 9771:** obtain a maker crosswalk or comparably coded specimens to determine whether they overlap. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#ambrosio-california-coverage-triage--2026-11-25).
 
