@@ -856,7 +856,7 @@ period G-version evidence for the earlier bare 730 review, but does not
 establish 730=730G, 730G=730GX, a link to 1964 row 8929, or equivalence to
 steel 7300 in 8097. No DB or generator changes were made.
 
-[Original photograph, compilation, exact recovered coverage and remaining limits](cross-catalog-notes.md#performance-bicycle-shop-fallwinter-198586--readable-pages-recovered-2026-11-18). Component reconciliation is a separate pending task.
+[Original photograph, compilation, exact recovered coverage and remaining limits](cross-catalog-notes.md#performance-bicycle-shop-fallwinter-198586--readable-pages-recovered-2026-11-18). The component reconciliation was subsequently applied as recorded below.
 
 
 ## Performance 1985–86 reconciliation — applied 2026-11-18, source 462
