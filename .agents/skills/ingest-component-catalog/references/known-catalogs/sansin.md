@@ -3,6 +3,10 @@
 DB brand: Sunshine/Sansin (brand 392), category Hubs (13). Hubs only; the catalogues also
 sell skewers, quick seat pins and axle sets, which have no component category.
 
+## ET-QS OEM key search — 2026-11-25 (read-only)
+
+Targeted English and Japanese searches for Sansin ET-Q / ET-QS, Raleigh OEM hubs and period maker material did not recover a 1984–85 maker key, coded specimen or suffix crosswalk. A [Panasonic DX-3000 forum listing](https://www.bikeforums.net/classic-vintage/561211-ebay-craigslist-finds-you-looking-one-these-part-ii-1152.html) repeats ET-Q with the sealed, alloy small-flange and quick-release wording already known from the 1986 Panasonic specification; it is not independent maker evidence of ET-QS equivalence. The 1985 Raleigh ET-QS specs 3448/3468/3488 remain unlinked. Revisit with a coded OEM key, marked comparative specimens or an independently documented suffix crosswalk. No database or link changes.
+
 ## SunShine Hubs for Bicycles, Catalog-3 (Jan 1981) (Reminiscence Part 89, 8 pages)
 
 - `data_source` 233, label "SunShine Hubs for Bicycles Catalog-3 (Jan 1981)". Source:
