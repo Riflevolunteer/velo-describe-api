@@ -1039,6 +1039,104 @@ Restoration baseline (delete source 481 only after restoring both rows):
 
 ## Catalogue backlog and scope review — 2026-11-19
 
+### 2009 Bike Systems source assessment — 2026-11-25
+
+The [Spanish Bike Systems scan](https://www.bikecatalogs.com/download/5801) has 26 reconstructed pages; the cover explicitly prints 2009 and p. 26 gives a June 2008 printing date. This corrects the earlier catalogue-index assessment below that the year was known only from the file title. Physical completeness of the original is not established. Pages 4–14 offer road, track and MTB wheels, pp. 16–17 rims, pp. 19–20 pedals and pp. 24–25 a wheel table. Pages 21–23 contain computers and accessories outside component scope. The separate [2009 technical manual](https://racingdepot.no/userfiles/image/MSC/MTech%202009.pdf) covers new 2009 products and can help identify wheel configurations; it is not a full-range catalogue.
+
+The catalogue contains updated versions of names already in the database, including Comète, Cosmic Elite, Ksyrium Elite, Crossride, Deemax, CXP 33, Open Pro and Reflex. The 2009 offering alone does not establish continuity with older records; review construction and editions before updates or inserts. Temporary inputs and inventories for the remaining comparison are retained as listed in TODO.
+
+**Applied with user approval, 2026-11-25:** Added source 568 and 58 components: wheels 12612–12638, rims 12639–12663 and pedals 12664–12669. Their 2009 date bounds record catalogue availability, not proven production endpoints. No existing component or bike link was changed. The 2009 Deemax 12637 has 28/32 spokes and weighs 1010/1150 g, whereas 12113 describes the 1999–2001 version with 36 spokes and 1070/1390 g (20 mm front/rear). Ksyrium Elite 6974 explicitly covers 2002–05; the catalogue calls the 2009 wheel 12621 a new design. Other wheel titles qualify the catalogue configuration by year. Six wheel offerings (iO, Comete track and road, Cosmic Elite, Ksyrium SL and Crossride UB) and three rim offerings (CXP 33, Open Pro and Reflex) were excluded from this batch for identity comparison; see the prepared follow-up below.
+
+Readback matched all 58 titles, descriptions, years, categories, search text, source and UUIDs, with zero bike links; the guarded SQL rerun affected zero. A pre-load simulation and post-load comparison across 118 loaded catalogues retained the same 15 pre-existing Huret lost proposals, with zero gained or changed links. The quality report found zero errors. The near-duplicate report identified XC 717 Disc/717 12646/12647, XM 819 Disc/819 12648/12649 and XM 317 Disc/317 12654/12655; printed pp.16–17 distinguish disc from rim-brake versions, so they remain separate and are recorded in `duplicate-classify.js`. The follow-up near report returned only two Mavic 601 hub pairs that predate this batch; the duplicate classifier and report tests passed. To reverse, inspect later references and bike links before removing source 568 or the new IDs and remove their reviewed-pair entries.
+
+**Shared-name follow-up, applied 2026-11-25:** The [2001 catalogue](https://www.bikecatalogs.com/download/3663), pp.10, 21–23, and the 2009 catalogue pp.4–5, 7–8, 13, 16, 24 support the changes below. The iO remains a five-arm 750 g track front wheel in both editions. Comète's 2009 track version remains 980 g; the 2009 road disc is separately described as revised, 1150 g ED10 versus 1300 g in 2001. The family row 6972 preserves those edition-specific claims. The CXP 33 is 470 g at 700c in both editions; its 650c listing differs, 430 g in 2001 and 432 g in 2009. The 2009 silver and CD Reflex tubular rims remain 375 g, with 32/36 holes listed; Open Pro lists 425 g for 700c in 2001 versus 435 g in 2009. Updates retain earlier details and name the differing edition values.
+
+The 2001 Cosmic Elite has 850/1095 g wheels and the 2009 catalogue gives 890/1010 g ED10, so 12117 is retained alongside new 12670 for the 2009 configuration. The 2001 Crossride 12133 has 24/28 spokes, versus 20/20 on the 2009 rim-brake Crossride UB 12671; these are separate configurations. The undated [6975 Ksyrium SSC SL specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=64CEF94C-96DF-4FED-9EED-80D0ABD2FB76) has silver spokes in its photograph; the 2009 Ksyrium SL is illustrated with dark spokes and a red front hub. A [2004 Mavic technical manual](https://racingdepot.no/userfiles/image/MSC/MTech%202004.pdf) describes the earlier SSC SL with silver Zicral spokes; the 2009 catalogue describes a carbon front hub and asymmetric rear rim. The specimen lacks a dated code, so retain 6975 unchanged alongside 12672, without asserting the specimen's year or a precise generation boundary.
+
+With user approval six guarded updates and three additions were applied. All six existing rows retain their ID, title and start year; year_to changed 2001 → 2009 and source_ref 479 → 568. Readback matched all nine records and found no bike links; a rerun affected zero. The quality report had zero errors; near-duplicate reporting returned only two pre-existing Mavic hub pairs. Simulated and live generator comparisons across 118 loaded catalogues retained the same 15 pre-existing Huret lost findings, with zero gained or changed links. The source evidence attests availability in the two editions, not uninterrupted production throughout the intervening years. To restore, verify current values before returning descriptions, dates and sources to the values below; check subsequent references before deleting the three additions.
+
+| ID | Component | Previous description | Applied description |
+| --- | --- | --- | --- |
+| 12118 | Mavic Io | Track front wheel for tubulars: five-spoke unidirectional carbon-fibre structure with woven carbon wing-profile skin; integrated hub, adjustable removable ball bearings; 650 700 g, 700c 750 g; carry bag. | Track front wheel for tubulars: five-spoke unidirectional carbon-fibre structure with woven carbon wing-profile skin; integrated hub, adjustable removable ball bearings; 650 700 g, 700c 750 g; carry bag. |
+| 12125 | Mavic CXP 33 | Aero road clincher, 700c or 650 (26in), 23.5 mm profile, Maxtal SUP, profiled eyelets, UB Control; 19.4 mm wide, 23.6 mm high; 470 g (700c) / 430 g (650), 28/32/36 holes, for 18-23 mm tyres; silver, black or Helium red. | Aero road clincher, 700c or 650, Maxtal SUP, profiled eyelets, UB Control; 19.4 mm wide, 23.6 mm high; 18-23 mm tyres. 700c 470 g; 650: 430 g (2001), 432 g (2009); 28/32/36 holes. Silver, black or Helium red; 2009 650 black 28/32 holes. |
+| 10197 | Mavic Reflex Argent SUP UB Control | 700c Maxtal tubular rim; 21 mm wide, SUP welded joint, UB Control braking, double stainless eyelets, silver anodised; 375 g, 28/32/36 holes. Road racing and training. | 700c Maxtal tubular rim; 21 mm wide, SUP welded joint, UB Control, double eyelets, silver anodised; 375 g. Reflex family 28/32/36 holes; 2009 silver 32/36. Road racing and training. |
+| 11566 | Mavic Reflex CD (tubular) | 700c Maxtal tubular rim, 21 mm wide, SUP welded joint, double eyelets, CD finish, UB Control braking; 375 g. The Reflex tubular family is listed with 28/32/36 holes. | 700c Maxtal tubular rim, 21 mm wide, SUP welded joint, double eyelets, CD finish, UB Control braking; 375 g. The Reflex tubular family lists 28/32/36 holes; 2009 CD lists 32/36. |
+| 5099 | Mavic Open Pro | Mavic Open Pro, France. Reported actual weight 445 g; separately listed specification 435 g. Clincher rim with welded joint and double eyelets; blue/silver finishes. | Clincher rim, welded joint and double eyelets; reported actual weight 445 g. 2001: 700c 425 g; 2009: 700c 435 g, 650c 390 g; black, silver, CD and Ceramic finishes; earlier blue/silver finishes. |
+| 6972 | Mavic Comète | Composite lenticular disc. 1985-91: front 650 950 g, rear 700 1140 g. 1994: 700c tubular, 18 mm rim, 990 g without hub cartridge. 1997-2001: SUP rim; road rear FTS, UB Control, 1300 g; track rear 980 g, screw-on freewheel; clincher or tubular. | Lenticular disc: 1985-91 front 650 950 g, rear 700 1140 g; 1994 tubular 18 mm rim, 990 g without hub. 1997-2001 SUP, road FTS/UB 1300 g, track screw-on 980 g; clincher or tubular. 2009 road HM carbon 1150 g ED10, track 980 g. |
+
+**New wheel configurations**
+
+2009 records catalogue availability, not a proven production endpoint.
+
+| ID | Title | Description |
+| --- | --- | --- |
+| 12670 | Mavic Cosmic Elite (2009) | Road wheelset, 30 mm 6106 alloy SUP rim, profiled eyelets, UB Control, 20 straight-pull steel spokes front and rear; 890 g front, 1010 g rear ED10. |
+| 12671 | Mavic Crossride UB (2009) | Rim-brake MTB wheelset, 6106 alloy rim, UB Control, straight steel spokes 20 front / 20 rear, QRM cartridge bearings; 805 g front / 945 g rear HG9. |
+| 12672 | Mavic Ksyrium SL (2009) | Road wheelset with carbon front hub, asymmetric rear rim and 18/20 Zicral spokes; 645 g front / 840 g rear ED10; 1485 g pair. |
+
+**Applied inventory**
+
+| ID | Category | Component | 2009 specification | Page |
+| --- | --- | --- | --- | --- |
+| 12612 | Wheel(sets) | Mavic Ellipse (2009) | Track wheel pair accepting two sprockets; 1995 g pair, 955 g front / 1040 g rear. | 4 |
+| 12613 | Wheel(sets) | Mavic Cosmic Carbone Ultimate SSC (2009) | Road wheelset, sealed carbon rim, 40 mm profile, R2R carbon spokes, adjustable bearings, 1185 g pair / 520 front / 665 rear ED10. | 5 |
+| 12614 | Wheel(sets) | Mavic Cosmic Carbone SLR SSC (2009) | Clincher road wheelset, carbon/aluminium 52 mm rim, R2R carbon spokes, 1595 g pair / 725 front / 870 rear ED10. | 5 |
+| 12615 | Wheel(sets) | Mavic Cosmic Carbone SL (2009) | Aerodynamic road wheelset, 1740 g pair / 780 front / 960 rear ED10. | 6 |
+| 12616 | Wheel(sets) | Mavic Cosmic Carbone Pro PowerTap SSC (2009) | Tubular racing wheelset, carbon rim and PowerTap hub, 1780 g pair / 710 front / 1070 rear ED10. | 6 |
+| 12617 | Wheel(sets) | Mavic Cosmic Carbone SL PowerTap SSC (2009) | PowerTap hub wheelset, 1900 g pair / 780 front / 1120 rear ED10. | 6 |
+| 12618 | Wheel(sets) | Mavic R-Sys Premium (2009) | TraComp wheelset with titanium axle ends/quick releases and carbon hub caps, 1360 g pair / 575 front / 785 rear ED10. | 7 |
+| 12619 | Wheel(sets) | Mavic R-Sys SSC (2009) | TraComp carbon-spoke road wheelset, 1365 g pair / 575 front / 790 rear ED10. | 7 |
+| 12620 | Wheel(sets) | Mavic Ksyrium SL Premium (2009) | Road wheelset, distinct front/rear rims, carbon front hub, asymmetrical rear rim; titanium quick releases and bags; 1480 g pair / 645 front / 835 rear ED10. | 8 |
+| 12621 | Wheel(sets) | Mavic Ksyrium Elite (2009) | Road wheelset, 1550 g pair in 700C / 675 front / 875 rear ED10; 650C also offered only in black; black or silver 700C. | 8 |
+| 12622 | Wheel(sets) | Mavic Ksyrium Equipe (2009) | Road wheelset, Isopulse lacing and widened bracing, 1770 g pair / 810 front / 960 rear; black/silver. | 9 |
+| 12623 | Wheel(sets) | Mavic Aksium (2009) | Road wheelset, straight aerodynamic spokes and cartridge bearings, 1855 g pair / 870 front / 985 rear; black/silver. | 9 |
+| 12624 | Wheel(sets) | Mavic Speedcity (2009) | 700C wheelset for MTB road training, disc with optional separately sold V-brake adapters, standard international or Center Lock illustrated, 1970 g pair / 870 front / 1100 rear. | 9 |
+| 12625 | Wheel(sets) | Mavic Crossmax SLR Disc (2009) | 1520g pair (690/830); ISM3D side and inter-spoke rim machining; front QR 9mm, 15x100, 20x110, Lefty; international/center lock. | 10 |
+| 12626 | Wheel(sets) | Mavic Crossmax SLR (2009) | Cross-country, Zicral spokes, Fore, Isopulse, 21mm ISM rim; 1420g (600/820 HG9). | 10 |
+| 12627 | Wheel(sets) | Mavic Crossmax SL Disc (2009) | Zicral spokes, Fore, Isopulse, 21mm ISM rim; 1530g (690/840); international/center lock. | 10 |
+| 12628 | Wheel(sets) | Mavic Crossmax ST Disc (2009) | Cross-mountain, Zicral spokes, Fore, Isopulse, 23mm rim; 1635g (745/890); front QR 9mm, 15x100, 20x110, Lefty; international/center lock. | 11 |
+| 12629 | Wheel(sets) | Mavic Crossmax ST (2009) | Zicral spokes, Fore, Isopulse, 23mm rim; 1570g (700/870 HG9). | 11 |
+| 12630 | Wheel(sets) | Mavic C29ssmax (2009) | 29-inch cross-mountain, machined rim; 1750g (815/935); front QR 9mm or 20x110, international. | 11 |
+| 12631 | Wheel(sets) | Mavic Crosstrail Disc (2009) | Fore-drilled UST tubeless rim; 1820g (845/975); front QR 9mm or Lefty; international/center lock. | 12 |
+| 12632 | Wheel(sets) | Mavic Crosstrail (2009) | Fore-drilled UST tubeless rim; 1750g (795/955). | 12 |
+| 12633 | Wheel(sets) | Mavic Crossride Disc (2009) | Revised hub and rim; 1905g (885/1020); international/center lock. | 12 |
+| 12634 | Wheel(sets) | Mavic Crossride UB Disc (2009) | Compatible rim and disc brakes; revised hub and rim; 1940g (900/1040); international. | 13 |
+| 12635 | Wheel(sets) | Mavic Crossmax SX (2009) | Mountain wheelset: ITS-4 freehub, ISM machined rim, 20x110 front axle; 1755g (825/930); international/center lock. | 13 |
+| 12636 | Wheel(sets) | Mavic Crossline (2009) | Enduro/freeride wheel, ITS-4 freehub; 2055g (970/1085); international/center lock. | 14 |
+| 12637 | Wheel(sets) | Mavic Deemax (2009) | Downhill wheelset with revised freehub, UST tubeless; 2160g (1010/1150); rear 9/12x135 or 12x150; international. | 14 |
+| 12638 | Wheel(sets) | Mavic Deetraks (2009) | Freeride wheel; standard replacement parts; 2255g (1085/1170); rear 9/12x135 or 12x150; international. | 14 |
+| 12639 | Rims | Mavic CXP 23 | Road aero 480g; black 32 holes. | 16 |
+| 12640 | Rims | Mavic CXP 22 | Road aero; 700 510g, 650 475g; black 28/32/36 (700), 32 (650), silver 32. | 16 |
+| 12641 | Rims | Mavic Open Sport | Entry-level road rim, 490g; black/silver 32/36. | 16 |
+| 12642 | Rims | Mavic A 719 | Asphalt, 567g; black 32/36/40, silver 36. | 16 |
+| 12643 | Rims | Mavic A 317 Disc | Trekking disc rim, 538g; black 32, silver 32/36. | 16 |
+| 12644 | Rims | Mavic A 319 | Asphalt, 597g; black/silver 32/36. | 16 |
+| 12645 | Rims | Mavic A 119 | Asphalt, 540g; black/silver 32/36. | 16 |
+| 12646 | Rims | Mavic XC 717 Disc | Cross-country disc, 395g; black 32/36, silver 32. | 16 |
+| 12647 | Rims | Mavic XC 717 | Cross-country rim brake, 420g; ceramic 32, black 28/32/36, silver 32/36. | 16 |
+| 12648 | Rims | Mavic XM 819 Disc | Cross-country UST tubeless disc, Fore, 450g; black 32. | 16 |
+| 12649 | Rims | Mavic XM 819 | Cross-country UST tubeless V-brake, Fore, 475g; black 32. | 16 |
+| 12650 | Rims | Mavic XM 719 Disc | Cross-country disc, 460g; black 32/36. | 16 |
+| 12651 | Rims | Mavic TN 719 Disc | 29-inch disc, 510g; black 32/36. | 17 |
+| 12652 | Rims | Mavic XM 719 | V-brake, 510g; black 32/36, silver 32. | 17 |
+| 12653 | Rims | Mavic XM 517 | MTB, 420g; black 28/32. | 17 |
+| 12654 | Rims | Mavic XM 317 Disc | Disc, 445g; black 28/32/36. | 17 |
+| 12655 | Rims | Mavic XM 317 | V-brake, 440g; black 28/32/36, silver 32/36. | 17 |
+| 12656 | Rims | Mavic XM 117 Disc | Disc, 475g; black 32/36. | 17 |
+| 12657 | Rims | Mavic XM 117 | UB Control brake track, 440g; black 32/36. | 17 |
+| 12658 | Rims | Mavic EN 521 Disc | Enduro/freeride, 540g; black 32/36. | 17 |
+| 12659 | Rims | Mavic EN 321 Disc | Enduro, 570g; black 32/36. | 17 |
+| 12660 | Rims | Mavic EX 823 Disc | Extreme MTB, UST tubeless, Fore, 657g; black 32/36. | 17 |
+| 12661 | Rims | Mavic EX 729 Disc | Extreme MTB, 675g; black 32/36. | 17 |
+| 12662 | Rims | Mavic EX 721 | Downhill, UB Control, 590g; black/silver 32/36. | 17 |
+| 12663 | Rims | Mavic EX 325 Disc | Extreme MTB, 716g; black 32/36. | 17 |
+| 12664 | Pedals | Mavic Race SL TI | Road clipless pedal, titanium axle and QRM bearings; 110 g per pedal; supplied with 7-degree road cleats. | 19 |
+| 12665 | Pedals | Mavic Race | Road clipless pedal with ETS contact area, QRM bearings and DuraCleat; 130 g per pedal; supplied with 7-degree road cleats. | 19 |
+| 12666 | Pedals | Mavic Avenir | Road clipless pedal; 145 g per pedal; supplied with 7-degree road cleats. | 19 |
+| 12667 | Pedals | Mavic XC Pro TI | Cross-country clipless pedal with impact-resistant body and mud clearance; 105 g per pedal; MTB cleats supplied. | 20 |
+| 12668 | Pedals | Mavic XC Race | Cross-country clipless pedal with QRM bearings and mud clearance; 130 g per pedal; MTB cleats supplied. | 20 |
+| 12669 | Pedals | Mavic Trail Max | Trail clipless pedal with enlarged contact area, impact-resistant body and mud clearance; 180 g per pedal; MTB cleats supplied. | 20 |
+
 Compared the existing reconciliation notes with live `data_source` records
 and the [Bike Catalogs Mavic archive](https://www.bikecatalogs.com/brand/mavic).
 A source registration, or a component currently citing it, does not establish
