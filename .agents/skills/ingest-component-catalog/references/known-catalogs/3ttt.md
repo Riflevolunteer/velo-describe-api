@@ -235,6 +235,8 @@
 - Out of scope: tape N3RD 3 Ribbon Degradé, N3R 3 Ribbon, NL Lorica, N3RF 3
   Ribbon Fluo, NCORK / NCORKF Cork Soft Tape.
 
+**Touring shape check, 2026-11-25:** A [clearer copy of the maker's Sport panel](https://www.mtb-news.de/forum/attachments/3ttt-80s-05-jpg.851502/) confirms the same undated catalogue lists Roma and Parma among the CS shapes with a 25.4 mm centre. VeloBase records 26 mm clamps on the Roma 2772 and Parma 2765 specimens, so the shared names alone do not establish that either specimen has the later catalogue's configuration. Keep those measurements separate; no merge or transfer of the 25.4 mm specification is supported. Existing 8306 records 26 mm for the 1989 listing and 25.4 mm for the later sheet; their relation to these individual specimens remains unresolved.
+
 ## COMPONENT_OVERRIDES decision: bare "TTT" stem on the 1983-84 Bianchi (2026-10-18, no catalogue; bike_spec links only)
 
 - The generator reads "TTT" as `3ttt` (WORD_ALIASES) and could not pick among
@@ -302,3 +304,5 @@ A [February/March 1995 Rivendell catalogue, p.27](https://notfine.com/rivreader/
 also discusses a sleeved, grooved 3ttt road bar and three bends. It does not
 clearly identify the specific bar's model name, so it is a lead for later
 comparison, not proof of a match to a numbered or named database specimen.
+
+**Parma specimen review, applied and validated 2026-11-25:** The [p.8 maker scan](https://cyclespeugeot.web.fc2.com/catalog/3ttt78/3ttt_08s.jpg) also lists Parma as a Viaggio touring bend, art. 300/5. The [VeloBase Parma specimen 2765](https://velobase.com/Pages/ViewComponent.aspx?ID=E7D6FFAC-B81B-4DAB-9190-E396B2362270) is a similarly shaped riser bar. This model match is an inference from its identification and shape: the art. number is shared by several bends and no Parma stamp has been verified. VeloBase records polished aluminium, 26 mm clamp and an actual weight of 175 g; the maker's 7–9 cm figures apply to the accompanying stem. Applied the approved guarded update to one row, setting source 207 and preserving its 1970–1980 bounds, title, search text and links. Before: `3ttt Parma (riser flat bar), Italy, 175 grams (Actual)`, source 1. Restore only after checking the current fields. Readback confirmed the record and zero bike links; the identical rerun affected zero rows, near and parenthetical duplicate checks found zero pairs, the quality report found zero errors, and the 118-catalogue generator comparison retained zero gained or changed mappings and 15 pre-existing lost proposals.
