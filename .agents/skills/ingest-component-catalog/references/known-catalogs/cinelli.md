@@ -1,5 +1,15 @@
 # Cinelli catalogs processed so far
 
+## 1R stem date and fitment review — 2026-11-25 (applied and validated)
+
+Before the update, live readback showed 6491 `Cinelli 1R (1/Record)` as 1980–1985, source 259, source_id `CD2D895C-E2AB-4947-89B8-6B53A646C8C9`, description `Cinelli 1R (1/Record), Italy, 277.5 grams (avg) 1982 Cinelli brochure: 22 and 22.2 mm, 9.5 to 14.5 cm.` The [VeloBase specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=CD2D895C-E2AB-4947-89B8-6B53A646C8C9) describes a winged-C front cover. 6492 is the early 1R, 1973–1979, source 549, with source_id `BD070DF6-9F75-4F81-98A7-F5420E1E49DF`. The two records are retained separately; generic model names alone do not establish which logo was fitted to each bike.
+
+6491 has 11 bike-spec links. Four fall beyond 1985: Cinelli 850 SLX spec 2268 and 860 Record Corsa spec 2312, and Peugeot PZ 10 specs 14691 / 15652. The [Ten Speed Drive Imports Cinelli brochure](https://velobase.com/CatalogScans/Cinelli/Cinelli_10_Speed_Drive.pdf), PDF pp. 2–3, specifies Mod. 1/R on the 850 and 860. It has no printed year; source 45 is attributed to 1986 from the 38-year text and components, so that date is an inference. The [1987 Nishiki catalogue](https://bikalog.org/api/view/Nishiki/1987/nishiki-1987.pdf) explicitly prints 1987 on its cover and copyright and names `Cinelli 1R Alloy` on Carbon in the road specifications. This corroborates 1987 model availability independently of Peugeot, but it does not resolve the exact logo variant or prove an end of production. Nishiki's deferred bike catalogue is used as source evidence only; no bike ingestion is implied.
+
+**Applied with user approval:** extended 6491 `year_to` from 1985 to 1987, treating the period 1R offering as the same later family represented by 6491. The 1987 model name establishes family availability, while assigning it to the winged-C specimen is an inference. Kept 6492, 6491's source, description and all links unchanged. The generator's `cinelli 1 r` override ends at 1985 for 6491 and was left unchanged; the date extension alone made no generator/live mapping changes. The `cinelli ir` and `cinelli mod 1 r` overrides already target 6491.
+
+Validation: the exact-old-value guard selected one row, the approved update changed one row and the repeat changed zero. Readback confirmed 1980–1987, unchanged description, source 259 and all 11 bike links; 6492 remains 1973–1979. The generator/live comparison before and after matched over 24,829 specs: no gained or changed mappings and the same 15 pre-existing lost proposals. The quality report remained at zero errors; all four 6491 linked-date flags disappeared. Restore 1985 only after checking the current record and later evidence. Task-only SQL and snapshots removed after validation.
+
 ## Cinelli "Il Grande Ciclismo" brochure — 1982 (Cinelli_Accessories_2.pdf, 8 pp)
 
 - First non-Campagnolo catalogue. Printer's imprint on the cover dates it
