@@ -28,6 +28,8 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
 
+- **Stronglight A9 3112:** obtain a dated original fitment or maker crosswalk showing the France locknut and the meaning of A9H, including the 1989 Peugeot fitments. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/stronglight.md#a9-3112-fitment-and-date-review--2026-11-25-applied-and-validated).
+
 - **Gipiemme wheel 6967:** obtain a clear model marking or coded period comparison for the five-spoke specimen and reconcile its identity and description with the six-spoke C946 catalogue entry. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/gipiemme.md#tecno-wheel-duplicate-review--2026-11-25-read-only).
 
 - Verify the 1938 Brooks S25/NH 9812 and S20/2 9814 height fractions when a legible scan of printed pp. 27–29 or an accessible dated original becomes available. [Catalogue notes](.agents/skills/ingest-component-catalog/references/known-catalogs/brooks.md#brooks-saddle-comfort-catalogue--c-1938-bulgiernet-1937_cypdf-data_source-284).

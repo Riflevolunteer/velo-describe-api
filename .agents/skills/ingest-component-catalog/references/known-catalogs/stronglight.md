@@ -188,6 +188,16 @@ Rerunning all nine SQL statements changes zero rows. Removed the completed
 TODO action and task-created scans, SQL, scripts and preflight snapshot after
 validation. Source/page URLs and full old/new values are retained here.
 
+## A9 3112 fitment and date review — 2026-11-25 (applied and validated)
+
+Before the update, live readback showed 3112 as the `Stronglight France` locknut specimen, 1982–1986, source 413, source_id `258187AB-51E4-4370-940F-4DD06A434D4C`; 3113 is the `Stronglight Spidel` locknut specimen, 1982–1984, source 282. 3112 has 32 linked specs: eight 1984, six 1986, seven 1987, nine 1988 and two 1989; none is linked to 3113. 1987–89 links comprise Peugeot and two 1988 MBK bikes.
+
+The [MBK 1988 catalogue](../../../ingest-bike-specs/references/known-catalogs/motobecane.md#19871990-catalogue-recovery--2026-11-19), whose rear panel explicitly prints Edition 01/88, names Stronglight A9 for C658 Pro Racer and C659 Super Record in the photographed road specification table (source 482, specs 25446 and 25482). That directly attests A9 fitment in 1988 but does not show a locknut marking or bearing construction. The [Peugeot 1989 French collection](https://www.peugeotshow.com/1989fr.html), source 321, gives A9 for Cyclo spec 17693 and A9H for Savoie spec 17504; the year is the archive's edition attribution, not an independently verified imprint. The roughly 1989 [Harry Quinn brochure](https://ebykr.com/library/harry-quinn-1989-brochure/) also names A9 but neither dates the printing exactly nor identifies the locknut. The Peugeot W-suffix 1987/1988 French edition itself has a [separate unresolved attribution](../../../ingest-bike-specs/references/known-catalogs/peugeot.md).
+
+**Applied with user approval:** extended 3112 `year_to` from 1986 to 1988, treating the MBK A9 as the same early A9 family represented by the France-marked specimen. This is an inference, not proof of that exact locknut. Its existing source, description, 1982 start and links remain unchanged. The update resolves 1987–88 numerical date flags but does not independently verify any A9H-to-France-locknut fitment or the meaning of H; the 1989 flags remain. A9H, plain A9 and the other locknut specimen must not be merged or reidentified solely on name. The current maker's [2024 catalogue](https://stronglight.com/wp-content/uploads/2024/07/Catalogue-2024_Web.pdf) gives A9 ball bearings, unlike the early needle-bearing row, so it does not establish continuing manufacture of that exact construction.
+
+Validation: exact-value guard selected one row; the approved update changed one row and rerunning changed zero. Readback confirmed 1982–1988, unchanged description, source 413 and 32 bike links. Generator/live comparison before and after matched over 24,829 specs: zero gained or changed mappings and the same 15 pre-existing lost proposals. Data quality remained at zero errors; the 16 date flags for 1987–88 disappeared and the 1989 Savoie 17504 and Cyclo 17693 flags remain. Before-image above; restore 1986 only after checking later evidence and the current row. Task-only SQL and snapshots removed after validation.
+
 ## Stronglight "Les voies de la performance / The road to performance" brochure (12 pages, c. 1985-89, VeloBase archive)
 
 - `data_source` 194, label `Stronglight "Les voies de la performance"
@@ -488,7 +498,7 @@ The generator's overrides for 1880 and 1893 still start at 1970 but only resolve
   (axle AX65, cups 661 / 671 / 681), codes put in descriptions, not titles. 1875 / 1889 weights 914g / 980g / 880g
   read as "with BB", as established for the 107 (884g vs 610g crank-only). The catalogue's 100 / 200 shows only silver
   anodised finishes; white is not attested. 3128 keeps its velobase "Super Competition" title (not printed here).
-  3112 A9 is linked on 1987-89 Peugeots beyond its new 1986 `year_to`; not extended (bike evidence, outside this pass).
+  3112 A9 was linked on 1987-89 Peugeots beyond its then 1986 `year_to`; the later A9 review above extends it to 1988.
 - Peugeot links (user decision 2026-11-15): only the 1986 US catalogue contrasts wording ("Stronglight 200, deluxe" on
   the Triathlon vs plain "Stronglight 200, 42 x 52" on PGN 10 Galibier / PH 501 Ventoux), so those two plain specs
   (bike_spec 14761, 14780) moved 1889 -> 11312; override `'stronglight 200 42 x 52'` now 1986-1986 -> 11312. The other
