@@ -1,5 +1,9 @@
 # 3ttt catalogs processed so far
 
+## Forma SL retrospective date evidence — applied 2026-11-25
+
+The history on printed pp. 6–7 (PDF p. 4) of the [3T 2024–2025 GBP catalogue](https://adaptivedcs.com/wp-content/uploads/2025/02/3T_Catalogue-2025-GBP_Web.pdf) dates the creation of the anatomic Forma SL to 1989. This is a retrospective manufacturer claim, not a contemporary listing, and it does not print the CFSL code or establish the specifications of the first edition. Matching it to 8323 `3ttt CFSL, Forma SL` is a model-name inference; 2758 Forma SL Ergopower and 2759 Forma SL Ergopower due remain distinct variants. Applied the approved update to 8323: year_from 1991 → 1989, source 357 → 580, with description and year_to unchanged. The record has no bike links or explicit generator override; no loaded bike spec names a 3ttt Forma. Readback confirmed the new values, and the guarded rerun affected zero rows. The quality report found zero errors, the brand-scoped near-duplicate report found zero pairs, and the 118-catalogue comparison found zero gained or changed mappings and the same 15 pre-existing lost proposals.
+
 ## 1986 product sheets, new copy — source lead 2026-11-25
 
 [Scribd's 30-page copy](https://www.scribd.com/document/1065289415/3ttt-Catalog-1986) appears to be the same product-sheets catalogue as source 134 below. Its publicly indexed OCR includes material missing from the earlier Wayback reading, including AR Record and ACRT Criterium stems, CC and CSL bars, and CCA aerodynamic versions. It describes ACRT as a painted, T6 forged alloy stem, 80–130 mm, 280 g, and CSL as a 250 g T6 bar. The copy's page count and OCR alone do not establish that every page image is accessible. The comparisons and approved changes below distinguish the unresolved identities from the updates applied on the OCR evidence.
