@@ -208,6 +208,7 @@ const BRAND_FAMILIES = [
 // as [lower id, higher id]. findNearPairs leaves them out unless asked; drop a
 // line here to see a pair again.
 const REVIEWED_NOT_DUPLICATES = [
+  [12737, 12738], // Idéale Maxi-Mousse 03: maker lists plain and quilted Skai finishes separately.
   // Sachs MTB brochure reconciliation. See known-catalogs/huret.md.
   [3512, 12440], // Rival 7000 and earlier Rival ATB front hubs have distinct maker markings.
   [12439, 12453], // Rival ATB oval rings versus Rival 7000 ATB round rings.
