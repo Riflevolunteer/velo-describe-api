@@ -6806,3 +6806,39 @@ The cover dates the edition 1969–70. The applied bound is 1969 as a conservati
 The remaining variant comparisons and source inventories are retained under `/tmp/holdsworthy-1969-*` while this edition remains open.
 
 Validation: 41 updates and one source inserted; readback verified all 41 rows. A rerun affected zero rows. Quality report: zero errors, unchanged review findings; generator comparison unchanged from baseline (15 pre-existing lost, zero gained or changed).
+
+## Holdsworthy 1969–70 — tyre batch applied 2026-11-25
+
+Source: https://nkilgariff.com/Aids%20Catalogs/Holdsworth%20Aids%20catalogue%201969-70.PDF
+
+### Updates
+
+| ID | Component | Years before | Applied years | Page |
+|---|---|---|---|---|
+| 12551 | D'Alessandro Cotton Criterium | 1967–1967 | 1967–1969 | 80 |
+|  | Description | Cotton racing tubular with herringbone file tread; listed at 8¾ oz. | Cotton racing tubular: herringbone file tread, 8¾ oz in 1967; fine ribbed tread and cotton casing with linen threads, 8½ oz in 1969. |  |
+| 12555 | Kowalit Q.H. | 1967–1967 | 1967–1969 | 79 |
+| 12557 | Kowalit Q.V. | 1967–1967 | 1967–1969 | 79 |
+| 6736 | Clement Campestre | 1970–1981 | 1969–1981 | 82 |
+|  | Description | Clement Campestre, Italy. Vulcanised light cyclocross tubular, Tipo 18, carved (knobbly) tread for any ground; 340 g, 6-7 atm; 380 g listed in 1981. | Cyclocross tubular, bold tread and 12 oz in 1969. Later Tipo 18: vulcanised, carved tread, 340 g, 6–7 atm; 380 g listed in 1981. |  |
+| 11135 | D'Alessandro Leone | 1973–1981 | 1969–1981 | 81 |
+|  | Description | Robust training tubular with full-width protector, 360 g | Robust training tubular with full-width protector; 360 g in later maker evidence. 1969: fine mixed tread, 13½ oz. |  |
+| 11138 | D'Alessandro Super | 1973–1981 | 1969–1981 | 81 |
+|  | Description | Machine-made tubular, grooved or mixed tread, 290 g | Machine-made tubular with grooved or mixed tread, 290 g in later maker evidence. 1969: narrow section, fine ribbed tread and amber band, 10½ oz. |  |
+
+### New records
+
+- **Kowalit Q.S. (dog-leg tread)**, p.79: Cyclocross tubular with widely spaced dog-leg tread, replacing the earlier spiked Q.S.; 14½ oz.
+- **D'Alessandro Giro d'Italia**, p.81: Racing tubular with Sea Island cotton casing, hard black tread extending down the sidewalls, and light tube; 10 oz.
+
+### Evidence limits
+
+- The Q.S. spiked version (12556) remains separate: the catalogue explicitly calls the dog-leg version its replacement.
+- The Clement No. 48 Diamante is not automatically equated to the later Tipo 20 (6730); its maker code-to-generation crosswalk is not established.
+- The dealer prints Lyotard 45S in 1969 and 54S in 1967 for the same illustration and specification; independent evidence is required to settle the conflict.
+- Kowalit Komet S and later Komett (9352), and the unnamed-maker Nuovo Alberto and Clement-branded 9334, need a firm version or maker crosswalk.
+- These are tyre comparisons only; other remaining catalogue sections still require reconciliation. Existing bike-link and override checks found no links for the changed records; the 1973 Zeus Super-Cross spec is explicitly held unlinked.
+
+Prior source references: 12551, 12555 and 12557: 561; 6736: 550; 11135 and 11138: 399. Applied six updates and two inserts: Kowalit Q.S. dog-leg 12578 (source_id f8441346-e8b3-11f1-a2df-02fea3763e8d) and D’Alessandro Giro d’Italia 12579 (source_id f8468033-e8b3-11f1-a2df-02fea3763e8d). This resolves the Q.S. hold in the first-batch notes: the 1967 spiked version 12556 remains distinct. All source years are evidence of availability, not production boundaries.
+
+Validation: all eight affected rows read back correctly; rerun affected zero rows; quality report had zero errors and unchanged review findings; bike-link comparison unchanged (15 existing lost, zero gained or changed). Kowalit and D’Alessandro near-duplicate reports returned zero pairs.
