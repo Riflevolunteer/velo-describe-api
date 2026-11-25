@@ -24,10 +24,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 - Continue comparing descriptions at the 255-character limit and generic bike-link identities with source evidence using `quality-report.js`.
 
-## Component ingestion
-
-- Reconcile Kalloy SP-248 against the recovered 1992 Cannondale page and original 1993 fitments; review a component and supported links. [Source and limits](.agents/skills/ingest-component-catalog/references/source-hunts.md#bike-link-source-priorities--2026-11-21-read-only).
-
 ## Waiting for distinguishing evidence
 
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
