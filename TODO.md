@@ -29,6 +29,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
 
 - **c.1936 Idéale catalogue:** obtain marked specimen or maker crosswalks for Nortex/Norex 38, Elaedy/Idéale 14, Franceix/Elaedy/Nortex 41 and Idéale 44/51/52/57 variants; obtain cycle-fitment evidence for the heavy-duty entries. [Catalogue evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/ideale.md#c1936-maker-catalogue--source-assessment-2026-11-25).
+- **H. Julien 1927–1929 Idéale 60/61:** obtain a model and variant crosswalk to distinguish the shared racing listing from later No.60 records. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/ideale.md#h-julien-catalogue-général-no-10-19271929--review-2026-11-25).
 - **Idéale GEFFAC range:** obtain specimen or maker crosswalks for Idéale/Franceix/Norex 4 and Idéale/Norex 6, and identify the No.27 specimen 5606 against the junior model and its conflicting listed weight. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/ideale.md#undated-tron--berthet--geffac-range-sheet--review-2026-11-25).
 - **Ciclismo May 1953 issue 9:** obtain a readable original advertisement image for the Idéale 51/52/58/59 models if the archive scan becomes available, to verify its indexed transcription. [Source lead](.agents/skills/ingest-component-catalog/references/known-catalogs/ideale.md#undated-tron--berthet--geffac-range-sheet--review-2026-11-25).
 
