@@ -1,5 +1,11 @@
 # Sakae Ringyo (SR) catalogs processed so far
 
+## CTSD handlebar — applied 2026-11-25
+
+The specification tables in the [1986 Miyata catalogue](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2086.pdf) and [1987 Miyata catalogue](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2087.pdf) list `SR CTSD` in the handlebar row. These are bike-maker fitment sources, not the missing SR range catalogue; the code is distinct from CTD 7888 and the tables give no CTSD dimensions or material. The online text is OCR and the original image display failed; verify the printed table images and their model columns. The 1987 original and page 27 render are retained at `/private/tmp/miyata-1987-ctsd.pdf` and `/private/tmp/miyata-1987-ctsd-page.png` for that pending check.
+
+Applied the approved proposal: new 12744 `Sakae/Ringyo (SR) CTSD`, source UUID `fbd44934-696e-4514-97f2-3051516c7013`, 1986–1987, source 349; no inferred material or dimensions. Linked Miyata 100 (1986) spec 19079 and 112 (1987) spec 22490 to 12744 and added bike/year-scoped generator overrides. Readback confirmed both links; the guarded rerun affected zero rows. The brand-scoped near-duplicate report found zero pairs, the quality report found zero errors, and the 118-catalogue comparison found zero gained or changed mappings and the same 15 pre-existing lost proposals.
+
 ## MTP-100 10472 — German Motobecane 1986 fitment, applied 2026-11-19
 
 Source465, printed p.9, fits sealed-bearing MTP1009/16 to T50 Tracker. The SR manufacturer sheet identifies MTP100's sealed bearings/threading and distinguishes cup-and-cone MTP110/10473; the bike panel does not print a maker. Extended10472 `year_to` **1985→1986**, retaining `year_from1983`; `source_ref355→465`. The earlier1985 endpoint below was an interpretation of an undated mid-1980s chart, not a documented discontinuation. No change to10473. Duplicate review found no candidate involving10472; bike-link readback, zero-change rerun and integrity checks pass. [Catalogue evidence, restoration values and validation](../../../ingest-bike-specs/references/known-catalogs/motobecane.md#german-1986-catalogue--dating-and-source-verification-2026-11-18).

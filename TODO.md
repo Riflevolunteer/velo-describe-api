@@ -22,6 +22,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Data quality
 
+- Verify the printed 1986/1987 Miyata CTSD handlebar tables and model columns for component 12744 and specs 19079/22490; the 1987 scan and render are in `/private/tmp/miyata-1987-ctsd.pdf` and `/private/tmp/miyata-1987-ctsd-page.png` for review. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#ctsd-handlebar--applied-2026-11-25).
 - Obtain readable images of the missing 1986 3ttt product sheets to resolve ACRT 6425 and CCA 8302 specimen identities and check CBMX/CBIKE against existing records. [Reconciliation and source limits](.agents/skills/ingest-component-catalog/references/known-catalogs/3ttt.md#1986-product-sheets-new-copy--source-lead-2026-11-25).
 - Continue comparing descriptions at the 255-character limit and generic bike-link identities with source evidence using `quality-report.js`.
 

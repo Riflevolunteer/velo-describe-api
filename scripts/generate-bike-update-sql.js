@@ -3504,6 +3504,7 @@ const COMPONENT_OVERRIDES = {
     // 1982 Raleigh (UK "Racing Formula" brochure): the same two models print "Cinelli No. 65" in 1983-84.
     'cinelli alloy bend': [{ from: 1982, to: 1982, id: 2804 }], // Team Replica 12 / Gran Sport 12: Cinelli 65 Criterium
     'shimano dura ace alloy engraved': 2917, // Road Ace (600 AX bike): Shimano HD-7300, Dura-Ace AX
+    'sr ctsd': [{ bike: '100', from: 1986, to: 1986, id: 12744 }, { bike: '112', from: 1987, to: 1987, id: 12744 }], // Miyata specifications; CTSD is distinct from CTD.
     'sr ctd': 7888, // Sakae/Ringyo (SR) CTD, Custom Double Tube (SR No. 18; 1987 Bianchi)
     // Ambiguous between "Cinelli 67 Pista" and "Cinelli 67 Pista (old
     // logo)"; a 1973 catalog predates the logo change.
