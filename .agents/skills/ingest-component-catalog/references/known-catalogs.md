@@ -9,6 +9,7 @@ SQL stays in the temporary scratchpad and is not retained in the repository.
 Split by brand to keep each run's context small — **read only the brand
 file(s) relevant to the catalog you're ingesting**, not all of them:
 
+- [known-catalogs/bsa.md](known-catalogs/bsa.md) — BSA bicycle replacement parts list, November 1934 (source 565)
 - [known-catalogs/brooks.md](known-catalogs/brooks.md) — Brooks (1 entry)
 - [known-catalogs/ideale.md](known-catalogs/ideale.md) — Ideale saddles, brand 580 Tron & Berthet (1 entry)
 - [known-catalogs/campagnolo.md](known-catalogs/campagnolo.md) — Campagnolo (includes 2000 parts book and 2001 range/parts reconciliation, sources 441–443)
