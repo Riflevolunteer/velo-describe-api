@@ -3759,6 +3759,7 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi Limited / Squadra / Pista and 1990 Campione d'Italia: ITM Mod. 200 (row 1985-88).
     'itm 200': [{ from: 1985, to: 1990, id: 9202 }],
     'itm 100': [{ from: 1985, to: 1988, id: 9203 }], // 1987 Bianchi Campione d'Italia: ITM Mod. 100
+    'itm 100 black': [{ from: 1987, to: 1987, id: 9203 }], // 1987 Bianchi Campione d'Italia: catalogue specifies black finish
     'itm 300': [{ from: 1985, to: 1988, id: 9201 }], // 1987 Bianchi Trofeo: ITM Mod. 300
     'atax asc anodized': 8507, // 1984 Peugeot PRO 10 / PY 10: ATAX ASC Aerodynamic (1982-84)
     'atax cfc 80 aluminium': 8512, // 1982 Peugeot PX 10 DU: ATAX CFC Forged Race

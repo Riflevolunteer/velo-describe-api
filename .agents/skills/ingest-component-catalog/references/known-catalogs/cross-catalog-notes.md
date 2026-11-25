@@ -3730,6 +3730,14 @@ originals and maintained CSVs are preserved.
 
 ## La Bicicletta Guida '85/86 - I componenti da corsa (Nov 1985, 41 scans, disraeligears.co.uk), data_source id 259
 
+### ITM Mod. 100 / 9203 — applied and validated 2026-11-25
+
+[Guida 1985/86 scan 2](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_1985_november_-_i_componenti_da_corsa_scan_02_main_image.jpg), source 259, lists Italmanubri Mod. 100 in light alloy, sizes 50/70/90 mm. The [1987 Bianchi catalogue](https://velobase.com/CatalogScans/1987Bianchi.pdf), PDF p. 14, specifies `ITM Mondial, laser etched, ITM 100 black` in the Campione d'Italia handlebar/stem cell. `ITM Mondial` is the handlebar and `ITM 100 black` the stem. Matching the guide's Mod.100 and Bianchi's ITM 100 as a model family is an inference; neither source establishes unchanged construction or production boundaries.
+
+**Before application:** 9203 `ITM Mod. 100`, UUID `56a8fda0-ceee-11f1-a2df-02fea3763e8d`, source 259, description `ITM Mod. 100, Italy. Alloy stem, 50-90mm`, 1985–1985. Its sole link is bike 88 spec 1306, label 35 / raw `Stem`, source 46, `ITM 100`. The approved guarded updates changed only 9203 `year_to` 1985 → 1987 and spec 1306 `value_text` → `ITM 100 black`, retaining IDs, source, 9203 link and all other fields. Both guards selected one row and no corrected duplicate existed at preflight. The CSV was corrected locally and a 1987-only exact override for `itm 100 black` added to the generator, preserving link 9203.
+
+Validation: each approved update affected one row; rerunning both affected zero. Readback confirmed 1985–1987, original source and description, and 1306 `ITM 100 black` still linked to 9203 with source 46. The full generator/live comparison over 24,829 specs matched the pre-change baseline exactly: no gained or changed mappings, no missing or ambiguous identities, and the same 15 existing lost proposals. Before application, the corrected CSV produced exactly the expected missing-in-DB/CSV pair for this spec. Generated SQL resolves the corrected value to 9203; link-priority and link-decisions tests passed, and the ITM near-duplicate report found no pairs. The quality report found zero errors and the 9203 date flag disappeared. Task scratch and the original CSV backup were removed after validation; restore old values only after checking current state and later evidence.
+
 ### ITM Mod. 300 / 9201 — correction applied and validated 2026-11-20
 
 The [guide's scan 2](https://www.disraeligears.co.uk/site/00_main_images/la_bicicletta_guida_1985_november_-_i_componenti_da_corsa_scan_02_main_image.jpg)
