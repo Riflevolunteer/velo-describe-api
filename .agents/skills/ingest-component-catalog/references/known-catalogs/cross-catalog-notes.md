@@ -6720,3 +6720,89 @@ New identities:
 Post-load duplicates: Nitto plain report empty; MKS retains its one existing generation pair; both near/code-name reports empty. Full generator/live comparison is exactly unchanged, including every finding:23,800 compared,23,785 unchanged,15 pre-existing lost proposals, zero gained/changed/missing/ambiguous identities. Existing bike-link counts remain unchanged; new components have zero links. Whole-DB quality has zero errors and2,071 review flags (previous2,073): incomplete dates1690→1689 and linked date conflicts329→328; broad freewheel35 and description-at-limit19 remain unchanged. All date moves are recorded above; no later `year_from` revision.
 
 Removed the completed TODO action. Source/page URLs, model identities, old/new specifications/dates/source refs, measured values and unresolved decisions remain here and in the brand cross-references. Removed task-owned SQL/proposal/review/inventory, snapshots/reports, helper scripts, text/renders, specimen HTML/photo and downloaded Rivendell PDF after validation. Other maker sections were subsequently reconciled above.
+
+## Holdsworthy Bike Riders Aids 1969–70 — first batch applied 2026-11-25
+
+Source: https://nkilgariff.com/Aids%20Catalogs/Holdsworth%20Aids%20catalogue%201969-70.PDF
+
+The cover dates the edition 1969–70. The applied bound is 1969 as a conservative listing year; it is not a claim of continuous production. Old descriptions and provenance remain below. The source reference is catalogue 562. Earlier source references are recorded in the table.
+
+| ID | Component | Existing years | Applied years | Prior source | Page |
+|---|---|---|---|---|---|
+| 29 | Campagnolo 1047, Gran Sport | 1958–1967 | 1958–1969 | 561 | 29 |
+| 9956 | Stronglight No. 97 | 1960–1967 | 1960–1969 | 561 | 30 |
+| 12570 | Stronglight T160, needle-bearing bottom bracket set | 1967–1967 | 1967–1969 | 561 | 30 |
+| 12571 | Stronglight T260, needle-bearing bottom bracket set | 1967–1967 | 1967–1969 | 561 | 30 |
+| 1892 | Stronglight 45 Competition | 1950–1967 | 1950–1969 | 561 | 43 |
+| 1899 | Stronglight Competition No. 55 | 1950–1967 | 1950–1969 | 561 | 43 |
+| 11527 | Stronglight No. 12, Type 49D outer chainring | 1958–1967 | 1958–1969 | 561 | 43 |
+| 11528 | Stronglight No. 12 bis, Type 49D inner chainring | 1958–1967 | 1958–1969 | 561 | 43 |
+| 1306 | Spécialités TA CR 203, Critérium outer chainring (3-arm) | 1967–1967 | 1967–1969 | 561 | 43 |
+| 12162 | Spécialités TA P 175, track chainring adapter (5-bolt) | 1967–1967 | 1967–1969 | 561 | 42 |
+| 12163 | Spécialités TA P 209, track chainring for adapter | 1967–1967 | 1967–1969 | 561 | 42 |
+| 12568 | Spécialités TA P 173, single-ring adapter (3-arm) | 1967–1967 | 1967–1969 | 561 | 42 |
+| 5982 | Campagnolo 1015 (Single left side shifter) | 1950–1967 | 1950–1969 | 561 | 50 |
+| 12561 | Campagnolo 1205, Valentino (left-hand) | 1967–1967 | 1967–1969 | 561 | 50 |
+| 12564 | Williams B100, chainring | 1967–1967 | 1967–1969 | 561 | 40 |
+| 3205 | British Hubs (BH) Airlite (small flange; quick releases) | 1967–1967 | 1967–1969 | 561 | 65 |
+| 3206 | British Hubs (BH) Airlite (small flanges; solid axles) | 1967–1967 | 1967–1969 | 561 | 65 |
+| 3213 | British Hubs (BH) Racelite (double-sided) | 1950–1967 | 1950–1969 | 561 | 65 |
+| 12549 | Constrictor ASP | 1967–1967 | 1967–1969 | 561 | 74 |
+| 12550 | Constrictor Brillani | 1967–1967 | 1967–1969 | 561 | 74 |
+| 12569 | Brooks B5 Swallow | 1967–1967 | 1967–1969 | 561 | 75 |
+| 5305 | Brooks B15 Champion (Standard) | 1938–1967 | 1938–1969 | 561 | 75 |
+| 5306 | Brooks B15 Champion (Narrow) | 1957–1967 | 1957–1969 | 561 | 75 |
+| 5752 | Campagnolo 1044, Record (first version) | 1960–1968 | 1960–1969 | 561 | 52 |
+| 822 | MAFAC Driver | 1964–1967 | 1964–1969 | 561 | 36 |
+| 311 | GB Arret | 1957–1967 | 1957–1969 | 561 | 35 |
+| 8482 | GB 124a Quick Release | 1965–1967 | 1965–1969 | 561 | 35 |
+| 8481 | GB Tourmalet | 1965–1967 | 1965–1969 | 561 | 57 |
+| 9928 | Cinelli 16 Campione del Mondo | 1960–1967 | 1960–1969 | 561 | 58 |
+| 9930 | Cinelli 17B Giro d'Italia | 1960–1967 | 1960–1969 | 561 | 58 |
+| 3158 | TDC (Thomas D. Cross) Continental Prima | 1967–1967 | 1967–1969 | 561 | 61 |
+| 3159 | TDC (Thomas D. Cross) Continental S | 1967–1967 | 1967–1969 | 561 | 61 |
+| 3714 | Campagnolo 1038/1, Record Pista (con denti) | 1958–1967 | 1958–1969 | 3 | 67 |
+| 3800 | Lyotard Marcel Berthet MB 23TF | 1967–1967 | 1967–1969 | 561 | 68 |
+| 12548 | Lyotard 15 bis, Tour de France | 1967–1967 | 1967–1969 | 561 | 68 |
+| 9341 | Nicklin N34 | 1975–1976 | 1969–1976 | 549 | 41 |
+| 8840 | Spécialités TA 374, axle (3 chainrings) | 1975–1984 | 1969–1984 | 206 | 30 |
+| 8841 | Spécialités TA 709, bottom bracket cup set | 1975–1975 | 1969–1975 | 206 | 30 |
+| 5176 | Super Champion Competition | 1970–1981 | 1969–1981 | 550 | 72 |
+| 7938 | Weinmann 293 | 1970–1981 | 1969–1981 | 180 | 74 |
+| 1148 | Weinmann AG 750 Vainqueur 999 | 1970–1980 | 1969–1980 | 94 | 33 |
+
+### Description changes
+
+
+**9341: Nicklin N34**
+- Before: Nicklin N34, England. Three-pin fluted steel cranks of the Williams C34 pattern, 6 1/2in (165mm), with chainwheel fixing sleeves
+- Proposed: Nicklin N34, England. Three-pin fluted steel cranks of the Williams C34 pattern, with chainwheel fixing sleeves; 6 1/2in and 7in lengths listed.
+
+**12570: Stronglight T160, needle-bearing bottom bracket set**
+- Before: Cotterless needle-bearing bottom bracket set for 49D or 63 cranks, with 114 single or 120 double axle options.
+- Proposed: Cotterless needle-bearing bottom bracket set for 49D, 63 or 93 cranks; 111 track, 114 single or 120 double axle options.
+
+**3158: TDC (Thomas D. Cross) Continental Prima**
+- Before: Cup-and-cone headset with chamfered knurled races, 20-gauge.
+- Proposed: Cup-and-cone headset with chamfered knurled races; 20-gauge in 1967, with 20- or 22-gauge options in 1969.
+
+**3159: TDC (Thomas D. Cross) Continental S**
+- Before: Headset with V-pattern races and decagon serrated screwed race with locking washer, 20-gauge.
+- Proposed: Headset with V-pattern races and decagon serrated screwed race with locking washer; 20-gauge in 1967, with 20- or 22-gauge options in 1969.
+
+**3714: Campagnolo 1038/1, Record Pista (con denti)**
+- Before: Campagnolo 1038/1, Record Pista (con denti), Italy. Toothed alloy track pedal, 1958-67.
+- Proposed: Campagnolo 1038/1, Record Pista (con denti), Italy. Toothed alloy track pedal.
+
+### Deliberately held
+
+- Lyotard 54S (12547): 1967 p.71 prints 54S; 1969 p.69 prints 45S with the same drawing and specification. The dealer sources do not establish which code is correct.
+- Kowalit Q.S. (12556): 1969 explicitly says the dog-leg tread replaced the earlier spiked tread. Preserve the distinction pending a version-level reconciliation.
+- GB Synchron (8480): the earlier model name does not alone establish the later mechanism.
+- TA P315/345 (12572): the 1969 listing lacks the P prefix; retain pending an exact crosswalk.
+- Clement tyres, D’Alessandro tyres, and other unnumbered or variant-sensitive listings need further individual comparisons before changes are proposed.
+- Williams B100 rings (12564) are offered while stocks last, so this establishes retail availability only.
+
+The remaining variant comparisons and source inventories are retained under `/tmp/holdsworthy-1969-*` while this edition remains open.
+
+Validation: 41 updates and one source inserted; readback verified all 41 rows. A rerun affected zero rows. Quality report: zero errors, unchanged review findings; generator comparison unchanged from baseline (15 pre-existing lost, zero gained or changed).

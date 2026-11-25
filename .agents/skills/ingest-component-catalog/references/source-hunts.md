@@ -4,6 +4,8 @@ What has been searched for missing catalogues and evidence, with dead ends, site
 
 ## Early component catalogues — source triage 2026-11-23
 
+**Ingestion candidate, 2026-11-25:** [Holdsworthy Bike-Riders Aids 1969–70](https://ebykr.com/library/holdsworth-1969-70-aids-catalog/) is a dated multi-brand trade catalogue, with a [freely retrievable original PDF](https://nkilgariff.com/Aids%20Catalogs/Holdsworth%20Aids%20catalogue%201969-70.PDF) returning HTTP 200. Its index names brakes, cranksets, derailleurs, hubs, rims and tyres; selected Regina, Fiamme and Weinmann listings are visible in Ebykr's transcription. The source registry also contains Holdsworthy 1967–68, 1975, 1976 and 1981. Printed p.76 was previously used to compare Merton Super Coureur in the 1967 review; that is not a full reconciliation of this edition. The first reviewed batch has been applied and validated; variant-level comparisons remain open, because retailer names do not always identify an individual specimen. The archive notes folded corners obscure part of p.82 and the gear table. See the 1969–70 section of cross-catalog notes for applied changes and evidence limits.
+
 Live read-only baseline: selected numeric component starts through 1974, or an
 early numeric end when the start was missing or nonnumeric. Prioritised records
 whose `source_ref` is absent or points outside `catalogue` and whose trimmed
