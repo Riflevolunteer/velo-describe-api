@@ -6803,7 +6803,7 @@ The cover dates the edition 1969–70. The applied bound is 1969 as a conservati
 - Clement tyres, D’Alessandro tyres, and other unnumbered or variant-sensitive listings need further individual comparisons before changes are proposed.
 - Williams B100 rings (12564) are offered while stocks last, so this establishes retail availability only.
 
-The remaining variant comparisons and source inventories are retained under `/tmp/holdsworthy-1969-*` while this edition remains open.
+The subsequent tyre and final batches complete the review; the 45CA follow-up below qualifies conflicting retailer claims.
 
 Validation: 41 updates and one source inserted; readback verified all 41 rows. A rerun affected zero rows. Quality report: zero errors, unchanged review findings; generator comparison unchanged from baseline (15 pre-existing lost, zero gained or changed).
 
@@ -6837,8 +6837,65 @@ Source: https://nkilgariff.com/Aids%20Catalogs/Holdsworth%20Aids%20catalogue%201
 - The Clement No. 48 Diamante is not automatically equated to the later Tipo 20 (6730); its maker code-to-generation crosswalk is not established.
 - The dealer prints Lyotard 45S in 1969 and 54S in 1967 for the same illustration and specification; independent evidence is required to settle the conflict.
 - Kowalit Komet S and later Komett (9352), and the unnamed-maker Nuovo Alberto and Clement-branded 9334, need a firm version or maker crosswalk.
-- These are tyre comparisons only; other remaining catalogue sections still require reconciliation. Existing bike-link and override checks found no links for the changed records; the 1973 Zeus Super-Cross spec is explicitly held unlinked.
+- This was the tyre-only batch; subsequent work on the other component sections is recorded below. Existing bike-link and override checks found no links for the changed records; the 1973 Zeus Super-Cross spec is explicitly held unlinked.
 
 Prior source references: 12551, 12555 and 12557: 561; 6736: 550; 11135 and 11138: 399. Applied six updates and two inserts: Kowalit Q.S. dog-leg 12578 (source_id f8441346-e8b3-11f1-a2df-02fea3763e8d) and D’Alessandro Giro d’Italia 12579 (source_id f8468033-e8b3-11f1-a2df-02fea3763e8d). This resolves the Q.S. hold in the first-batch notes: the 1967 spiked version 12556 remains distinct. All source years are evidence of availability, not production boundaries.
 
 Validation: all eight affected rows read back correctly; rerun affected zero rows; quality report had zero errors and unchanged review findings; bike-link comparison unchanged (15 existing lost, zero gained or changed). Kowalit and D’Alessandro near-duplicate reports returned zero pairs.
+
+### Holdsworthy 1969–70 — remaining comparison prepared 2026-11-25
+
+The p.31 listing explicitly names Campagnolo Record brakes; this corrects the earlier scratch inventory's statement that the name was absent. The page does not by itself establish the lettering or reach needed to choose among the existing early versions. The p.30 Critérium 315/345 single/double axles have the same function and codes as the 1967 P315/345 listing, but omit the P prefix; the applied family match supersedes the earlier hold on 12572 while retaining that difference as evidence. Printed p.56 explicitly lists Prestige 537P, supporting the P member of combined 8836 without independently establishing the 537 NI configuration. Printed p.69 identifies the 45CA pedal's steel barrel and alloy frame; 3811 has existing bike links, verified after application. The final reviewed changes, before-images, remaining specimen-level limits and validation are recorded below.
+
+### Holdsworthy 1969–70 — final batch applied 2026-11-25
+
+Source: https://nkilgariff.com/Aids%20Catalogs/Holdsworth%20Aids%20catalogue%201969-70.PDF
+
+#### Updates
+
+| ID | Component | Existing years | Applied years | Former source | Page |
+|---|---|---|---|---|---|
+| 750 | GB Sport Mk3 | 1958–1967 | 1958–1969 | 561 | 35 |
+| 751 | GB Sprite | 1960–1967 | 1960–1969 | 561 | 35 |
+| 847 | MAFAC Top 63 | 1962–1967 | 1962–1969 | 561 | 36 |
+| 1249 | Chater Lea C L inch pitch | 1967–1967 | 1967–1969 | 561 | 41 |
+| 6539 | GB forged alloy Hiduminium spearpoint | 1950–1967 | 1950–1969 | 561 | 59 |
+| 6540 | GB Metric | 1960–1965 | 1960–1969 | 155 | 59 |
+| 6551 | Holdsworth Il Primo De Luxe | 1965–1967 | 1965–1969 | 561 | 59 |
+| 8472 | GB Touring Bend | 1957–1967 | 1957–1969 | 561 | 57 |
+| 8474 | GB Comfort | 1957–1967 | 1957–1969 | 561 | 57 |
+| 8476 | GB Touring lever 575 | 1957–1967 | 1957–1969 | 561 | 35 |
+| 8477 | GB Touring lever 126 | 1962–1967 | 1962–1969 | 561 | 35 |
+| 8836 | Simplex AR 537 P / AR 537 NI, Prestige | 1965–1967 | 1965–1969 | 561 | 56 |
+| 9033 | Brooks B17 Swallow | 1938–1967 | 1938–1969 | 561 | 75 |
+| | Description | Brooks B17 Swallow, England. Cut-away top for leg freedom, rolled edges reinforced with spring steel wire, two-wire frame, chrome clip; 11 x 6 x 3¼in, 1 lb 9 oz. Sold as the Champion Swallow (patent), 11¼ x 6 x 3in, in 1938 | Cut-away two-wire saddle with spring-wire reinforced edges and chrome clip. 1967: 11 x 6 x 3¼in, 25 oz; 1969: 11 x 6 x 3⅛in, 25 oz. The 1938 Champion Swallow was 11¼ x 6 x 3in. | | |
+| 12572 | Spécialités TA P315 / 345, Critérium bottom bracket axles | 1967–1967 | 1967–1969 | 561 | 30 |
+| 12573 | Chater Lea 1615, cottered bottom bracket axles | 1967–1967 | 1967–1969 | 561 | 30 |
+| 12574 | Chater Lea 1007 / 1240 / 1640, cottered bottom bracket axles | 1967–1967 | 1967–1969 | 561 | 30 |
+| 12575 | Chater Lea 1689, alloy chainring adaptor | 1967–1967 | 1967–1969 | 561 | 41 |
+| 753 | GB 88 | 1969–1970 | 1969–1970 | 1 | 35 |
+| | Description | GB 88, England | Coureur 88 symmetric-action centre-pull, based on the 66: separate arms on a reinforced back plate, bushed pivot bolts and nylon bearings. Offered with Superhood or Arret levers. | | |
+| 3811 | Lyotard 45CA | 1930–1983 | 1930–1983 | 1 | 69 |
+| | Description | Lyotard 45CA, France, 310 grams | Quill-pattern pedal with alloy frame and steel barrel; 3½in wide, 11 oz listed. Earlier recorded weight 310 g. | | |
+
+#### Evidence and limits
+
+- 12572: both editions describe Critérium right-angle-spline 315 single and 345 double; the 1967 edition adds a P prefix to 315. The same code and function support the family match, while the prefix discrepancy remains recorded.
+- 8836: p.56 explicitly lists 537P; its 537N/C wording does not by itself establish every feature of the NI member of the combined row.
+- 3811: 23 existing bike-spec links are retained; the description is an attestation of the 1969 construction, not proof that every historical 45CA configuration was identical.
+- 753 and 3811 have existing date ranges covering 1969; the applied batch enriches their descriptions only.
+- 9033 retains the 1938 dimensions and qualifies the different 1967 and 1969 measurements by edition.
+- The catalogue explicitly names Campagnolo Record brakes on p.31, contrary to the earlier inventory. It does not establish which of the multiple pre-CPSC/1968 lettering or reach variants is depicted; no variant change was made.
+- GB Synchron 8480: p.35 specifies a nylon balance roller; the 1965 row describes a stud and one spring, so the name alone does not prove continuity.
+- Lyotard 45S / 54S: the two dealer editions use different codes for an identical illustration and description; no retitle or assumed crosswalk.
+- British Hubs large-flange solid Airlite 3209: p.65 states various threadings but does not establish its double-sided configuration. MAFAC Racer and Faucheux version details likewise remain unspecified.
+- TA 1690, Campagnolo triple and cyclocross variants, Regina chain/freewheel versions, TDC Super K, Fiamme stem and Van Schothorst HP/Endrick remain unresolved at specimen level; same-name family descriptions do not identify a specific generation.
+- Clement 48 Diamante versus later 6730, Kowalit Komet S versus 9352, and the Nuovo Alberto maker require independent crosswalks. The Q.S. dog-leg and earlier spiked treads have already been ingested separately.
+- The B17 Swallow and GB Comfort descriptions retain both editions’ distinct measurements. Other listing-only differences should not be turned into production endpoints.
+
+The earlier two approved batches and their before-images are recorded in cross-catalog notes. No deletes, merges, new rows or bike-link changes were made. No 1969-only listing proves uninterrupted production.
+
+
+Validation: all 19 guarded updates applied and read back; a second run affected zero rows. The 23 45CA links remain intact. Generator/live comparison remained unchanged: zero gained or changed and 15 pre-existing lost proposals. The quality report found zero errors and unchanged review findings. Near-duplicate scans of GB, Chater Lea, Lyotard, Mafac, Brooks, TA and Holdsworth found no pairs; Simplex reported the unrelated 1985–88 SX440 T 4625 / 4673 cross-brand pair, which this edition does not resolve.
+
+**45CA follow-up applied and validated:** The 1969 p.69 alloy-frame / steel-barrel description conflicts with the 1981 retailer steel-cage / 380 g listing documented above. The previous final-batch description was `Quill-pattern pedal with alloy frame and steel barrel; 3½in wide, 11 oz listed. Earlier recorded weight 310 g.` The corrected description dates both retailer claims and preserves the earlier 310 g value. The update affected one row; readback confirmed all 23 links and source 562; a rerun affected zero rows. The quality report remained at zero errors with unchanged review findings. The sources do not resolve whether the 1981 cage description reflects a variant or an error.

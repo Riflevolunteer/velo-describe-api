@@ -26,7 +26,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Component ingestion
 
-- Complete the remaining 1969–70 Holdsworthy component comparisons and reconcile supported changes; retain `/tmp/holdsworthy-1969-70.pdf`, `/tmp/holdsworthy-1969-components.tsv` and the three `/tmp/holdsworthy-1969-*.txt` inventories for resumption. [Applied batches and evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#holdsworthy-bike-riders-aids-196970--first-batch-applied-2026-11-25).
 - Reconcile Kalloy SP-248 against the recovered 1992 Cannondale page and original 1993 fitments; review a component and supported links. [Source and limits](.agents/skills/ingest-component-catalog/references/source-hunts.md#bike-link-source-priorities--2026-11-21-read-only).
 
 ## Waiting for distinguishing evidence
