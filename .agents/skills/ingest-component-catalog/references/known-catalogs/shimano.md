@@ -1,5 +1,11 @@
 # Shimano catalogs processed so far
 
+## RD-L513 / RD-L514 Light Action parts sheets — applied 2026-11-26
+
+Visually inspected [E692A](https://www.disraeligears.co.uk/site/shimano_light_action_l513_series_exploded_view_-_e692a_september_1984.html), footer `8409-E692A`: RD-L513-SS short cage and RD-L513-GS long cage, with separately numbered pulley plate assemblies. The archive webpage's GS/SGS metadata is incorrect: the image explicitly says SS/GS. [U694A](https://www.disraeligears.co.uk/site/shimano_light_action_l514_sgs_exploded_view_-_u694a_september_1984.html), footer `8409-U694A`, identifies RD-L514-SGS with a separate pulley plate and cable-adjusting barrel. Both sheets are exploded parts diagrams and do not establish weight, capacity or exact production limits. The [1985 Miyata catalogue](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2085.pdf), source 405, is the bike-fitment source for loaded specs 21687 `L-513 SS`, 21601 `L-513-GS`, and 21579 `L-514-SGS`; its spec table was previously read from crops, though the 210 column is cut by the page gutter. The baseline had no matching L513/L514 rear titles and all three links NULL; Shimano near-duplicate report found zero pairs. The dates 1984–1985 span attestations, not verified production endpoints.
+
+Applied on approval: 12745 `Shimano RD-L513-SS / RD-L513-GS, Light Action`, source 581, UUID `8bcac0d6-ab8d-4493-9e9c-501837ab32fd`; and 12746 `Shimano RD-L514-SGS, Light Action`, source 582, UUID `f365193a-3247-4f17-a4a3-7cd352c1d7ba`. Linked 21687 and 21601 to 12745, and 21579 to 12746, with bike/year-scoped generator overrides. Readback confirmed all fields and links; identical guarded rerun affected zero rows. Shimano near-duplicate report found zero pairs; the quality report found zero errors; the 118-catalogue generator comparison retained zero gained or changed mappings and 15 pre-existing lost proposals. All 14 tests passed.
+
 ## Shimano "'72 Bicycle Parts" — printed 09.1972 (disraeligears.co.uk, 24 images)
 
 - `data_source` 60. Source:

@@ -189,8 +189,9 @@ Temporary SQL, scans, snapshots and review scripts were removed after validation
   1986), MTS-100 / MTS-110. 1000 "Levin sealed" forced null (auto hit the
   MTB-225; kept on the Ridge Runner); Sugino GS-LP and VT forced null
   (rows are GS 1980-82 / VT 1980).
+- L-513 / L-514 rear specs 21687/21601/21579 subsequently linked to 12745/12746 using Shimano's 1984 parts sheets; see the Shimano catalogue notes.
 - Left unlinked: Superbe front and Superbe Pro shifter, Mountech front /
-  Mountech LL rear, Deore XT-GS front, L-513 / L-514 rears and L-412
+  Mountech LL rear, Deore XT-GS front and L-412
   shifters (no rows), top-mount SunTour shifters, Pro-Compe / UG clusters,
   Dura-Ace UG / 600 UG / UG chains, Dura-Ace track crank and sprockets,
   600 EX triple and 600 EX brakes, SunTour sealed hubs, SR CR-E posts,
