@@ -295,3 +295,10 @@
   extended on the 1975 rows. Valencia (2747, "300/5") and Parma (2765) already
   existed. The 12/0 bolt, 10/0 expander and 20 key are out of scope.
 - Deleted: none. No bike links or overrides referenced a row changed here.
+
+**Handlebar source follow-up, applied and validated 2026-11-25:** The [p.8 maker scan](https://cyclespeugeot.web.fc2.com/catalog/3ttt78/3ttt_08s.jpg) lists the Valencia bend as art. 300/5 in the Viaggio touring range. That code is shared by several bends and does not by itself identify Valencia; the [VeloBase specimen 2747](https://velobase.com/Pages/ViewComponent.aspx?ID=3C5ED39A-C638-4727-9248-4E3A9E449240) is identified there as Valencia by comparison with this catalogue, and its photos show a compatible touring bend. This is an identification inference, not proof from a visible model stamp. VeloBase records polished aluminium, 56 cm width, 26 mm clamp and 270 g; the catalogue's 7–9 cm figure applies to the accompanying Viaggio stem, not the bar. Applied the approved guarded update, affecting one row and setting source 207. Its 1970–1980 bounds, title, search text and bike links remain unchanged. Before: `3ttt Valencia (300/5), Italy, 270 grams`, source 1; restore only after checking current fields. Readback confirmed the record and zero bike links; the identical rerun affected zero rows, near and parenthetical duplicate checks found zero pairs, the quality report found zero errors, and the 118-catalogue generator comparison retained zero gained or changed mappings and 15 pre-existing lost proposals.
+
+A [February/March 1995 Rivendell catalogue, p.27](https://notfine.com/rivreader/RR01.pdf)
+also discusses a sleeved, grooved 3ttt road bar and three bends. It does not
+clearly identify the specific bar's model name, so it is a lead for later
+comparison, not proof of a match to a numbered or named database specimen.
