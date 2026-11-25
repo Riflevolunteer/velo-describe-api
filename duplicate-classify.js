@@ -341,6 +341,7 @@ const REVIEWED_NOT_DUPLICATES = [
   [12646, 12647], // Mavic 2009 p.16: XC 717 Disc and rim-brake XC 717
   [12648, 12649], // Mavic 2009 p.16: XM 819 Disc and rim-brake XM 819
   [12654, 12655], // Mavic 2009 p.17: XM 317 Disc and rim-brake XM 317
+  [12682, 12683], // Holdsworth 1949 p.17: separate Reynolds chrome and H.M. seat pillars
   [3404, 12101], // Mavic 1994 p.23: 571/2 Mavic CB cassette interface / 571/2 HG Hyperglide interface.
   [12104, 12105], // Mavic 1994 p.17: AR 572/2 Mavic cassette cartridge / AR 572/2 HG Hyperglide cartridge.
   [3708, 3709], // different part: Campagnolo 1037, Record Strada / Campagnolo 1037/a, Record Strada Super

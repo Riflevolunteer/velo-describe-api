@@ -1161,10 +1161,8 @@ Checked the archive descriptions of three additional listings directly:
   distinct from the 1999 GB Rims & Wheels source 374. It is now reconciled as
   source 481 (see the Mektronic section above).
 - [2009 Bike Systems ES](https://www.bikecatalogs.com/document/5801)
-  is also listed, with no matching registered source/ingestion record. Its
-  description says 26 pages rebuilt from Scribd renders and dates it from the
-  title. It remains a later-period candidate requiring edition/scope checks;
-  it is not part of the recommended 1994–2001 batch. The linked 2002 technical
+  was initially listed as an unregistered later-period candidate; it has since
+  been reconciled and applied as source 568 in the 2009 section above. The linked 2002 technical
   manual and undated service sheets are supplementary technical sources,
   not automatically additional complete component-catalogue ingestions.
 
