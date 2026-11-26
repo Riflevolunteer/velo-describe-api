@@ -4,6 +4,7 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Product and infrastructure
 
+- Reproduce and fix reported clipping of the 1982 Battaglin Alessandro brake text in the client; identify the affected platform and visible text. The catalogue and database value are complete; [source review](.agents/skills/ingest-bike-specs/references/known-catalogs/battaglin.md#alessandro-brake-text-review--2026-11-26).
 - Implement and validate [component evidence references](README.md#proposed-component-evidence-references), update ingest workflows and backfill verified claims from notes.
 - Plan a Cinelli/De Rosa bike-image pilot: inspect the existing blob column, settle rights/cropping, then design storage/API/client delivery.
 - Remove the extra DB-password encryption, coordinate SSM/plaintext application deployment, smoke-test and rotate the password.

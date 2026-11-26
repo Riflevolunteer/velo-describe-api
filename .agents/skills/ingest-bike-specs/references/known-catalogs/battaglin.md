@@ -1,5 +1,11 @@
 # Battaglin catalogs processed so far
 
+## Alessandro brake text review — 2026-11-26
+
+The [original Alessandro specification sheet](https://saarf.london/wp-content/uploads/2014/02/05a1.jpg) visibly prints `Gipiemme Modolo Spidi` in full. Live bike 759 spec 12940 and the CSV contain the same complete text, unlinked. The API's `/bikedetail` query selects `value_text` directly; the checked client `SpecRow` source uses flex shrink and no line limit. The reported clipping remains to be reproduced on the affected platform; the deployed client/version and viewport have not been verified.
+
+`Spidi` is a plausible phonetic spelling of Modolo Speedy: component 886 covers 1979–88 and a [Gipiemme/Modolo lever specimen](https://velobase.com/Pages/ViewComponent.aspx?Enum=118&ID=bbe6f0c9-2094-4695-bed7-d4fec7f8578c) is identified as Speedy. A [retailer listing](https://cicli-berlinetta.com/product/nib-gipiemme-sprint-like-modolo-speedy-brakes-brake-levers/) describes Gipiemme Sprint brakes as similar to Speedy, but does not establish this specific fitment or spelling crosswalk. No link has been applied; the catalogue wording is preserved.
+
 ## 1982 Battaglin — `1982_battaglin_spec.csv` (6 bikes, 110 specs, 50 linked)
 
 - Source (added 2026-10-24): saarf.london "Battaglin 1982 Catalog"
