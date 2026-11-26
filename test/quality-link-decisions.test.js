@@ -70,12 +70,15 @@ test('Interclub generic CLB cantilever remains unresolved after removing the pag
 })
 
 test('generic 1980-83 Super Record rear specs cannot select the atypical PAT. 80 specimen', () => {
-  const early = { component_id: 4149, title: 'Campagnolo 4001, Super Record, PAT. 80 (first generation)', category: 'Rear Derailleurs' }
-  const later = { component_id: 4151, title: 'Campagnolo 4001, Super Record (2nd gen, ver.1)', category: 'Rear Derailleurs' }
+  const early = { component_id: 4149, title: 'Campagnolo 4001, Super Record (PAT. 80 specimen)', category: 'Rear Derailleurs' }
+  const later = { component_id: 4151, title: 'Campagnolo 4001 / 0102018, Super Record (screw-mounted spring)', category: 'Rear Derailleurs' }
   for (const records of [[early], [later], [early, later]]) {
     for (const value of ['Campagnolo Super Record', 'Campagnolo Super Rekord']) {
       for (const year of [1980, 1981, 1982, 1983]) {
-        assert.equal(matchComponent(value, records, null, 'Rear Derailleur', year, 'Super Corsa'), null)
+        const selected = matchComponent(value, records, null, 'Rear Derailleur', year, 'Super Corsa')
+        if (year === 1981 || year === 1982) assert.equal(selected.component_id, 4151)
+        else assert.equal(selected, null)
+        assert.equal(matchComponent(value, records, null, 'Rear Derailleur', year, 'Other'), null)
       }
       assert.equal(matchComponent(value, records, null, 'Rear Derailleur', 1979, 'Other').component_id, 4148)
       assert.equal(matchComponent(value, records, null, 'Rear Derailleur', 1984, 'Other').component_id, 4152)

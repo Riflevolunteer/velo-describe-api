@@ -1514,7 +1514,7 @@ const COMPONENT_OVERRIDES = {
     // 1981 Kalkhoff. "600 AX" otherwise substring-matches plain "Shimano 600".
     // 4149 is a late first-generation PAT. 80 specimen, not the generic 1980-83 design.
     // Without fitment markings/photos, plain Super Record cannot choose it over second-gen 4151.
-    'campagnolo super record': [{ bike: 'Campagnolo', from: 1982, to: 1982, id: 4151 }, { bike: 'Prestige', from: 1979, to: 1979, id: null }, { bike: 'Super Record', from: 1979, to: 1979, id: null }, { to: 1979, id: 4148 }, { from: 1980, to: 1983, id: null }, { from: 1984, id: 4152 }], // Battaglin Campagnolo: user-selected second generation.
+    'campagnolo super record': [{ bike: 'Campagnolo', from: 1982, to: 1982, id: 4151 }, { bike: 'Super Corsa', from: 1981, to: 1982, id: 4151 }, { bike: 'Prestige', from: 1979, to: 1979, id: null }, { bike: 'Super Record', from: 1979, to: 1979, id: null }, { to: 1979, id: 4148 }, { from: 1980, to: 1983, id: null }, { from: 1984, id: 4152 }], // Battaglin Campagnolo / Bianchi Super Corsa: user-selected second generation.
     'dura ace ex': 4509, // Shimano RD-7200, Dura-Ace EX
     'shimano 600 ax': 4465, // Shimano RD-6300, 600 AX
     // 1983 Bianchi (3500 Nuovo Gran Sport); 1973 Bianchi Special -> the

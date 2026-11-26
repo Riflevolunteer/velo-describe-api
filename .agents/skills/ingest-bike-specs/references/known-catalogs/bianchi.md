@@ -377,6 +377,8 @@ API listing, PDF and two page renders removed after documenting these findings.
 
 - Source (added 2026-10-21): ebykr.com "Bianchi Catalog of about 1983" (https://ebykr.com/library/bianchi-1983-catalog/), 12 pages in English, published in Italy by Bianchi; scans from Mark Bulgier's archive (bulgier.net/pics/bike/Catalogs/Bianchi-83/, posted 2001, also on 2velo.com). It carries no year; ebykr estimates 1983 from the Super Pista text citing a 1982 World Championship medal. The catalogue names no export market, so IT is the publisher's country, still an inference for the intended market.
 
+- 2026-11-26: page 6 describes Campione del Mondo Gran Sport brakes with Super Record levers, but does not specify gear shifters. Corrected spec 960 from Shifters to Brake Levers and moved its CSV cell from `Shifters/Levers` to `Brake Levers`; retained the database's original raw label and source. Super Record 4062 components 231 and 232 differ in hood logo and both cover 1983, which this text does not distinguish, so the spec remains unlinked. Readback and SQL rerun verified the correction; the catalogue's generated links match the live database.
+
 - This catalog exposed that overrides were global: its "Campagnolo Nuovo
   Record" derailleurs inherited the 1973 Raleigh picks. COMPONENT_OVERRIDES
   now accepts year ranges; Nuovo Record front/rear and the Gran Sport and
@@ -1437,6 +1439,8 @@ successful validation; the user-held source PDF remains available.
 
 
 ## 1981–1983 Super Record rear links — 2026-11-17, applied and validated
+
+**Subsequent user selection:** 1981 Super Corsa spec 6492 and 1982 spec 6647 NULL → 4151, Super Record 4001 / 0102018 with screw-mounted spring. This supersedes the NULL decision below for these two specs; the catalogues themselves do not distinguish the generation. Scoped 1981–82 Super Corsa generator mapping added; readback confirmed 4151 and sources 165/166 while 1983 spec 985 remains NULL. SQL replays changed zero rows; 118-catalogue comparison retained 15 unrelated Huret losses and no gains or changes. Updated link-decision test passes and keeps other years/bikes guarded. Restore either spec to NULL guarded by 4151 and adjust its override if superseded.
 
 User approved clearing unsupported PAT.80 specimen 4149 from rear specs **6492**
 (1981 Super Corsa, source 165), **6647** (1982 Super Corsa, source 166) and **985**
