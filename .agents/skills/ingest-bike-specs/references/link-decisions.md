@@ -534,7 +534,8 @@ see the Raleigh catalogue notes for the decision and source.
   `Campagnolo Super Record` / `Super Rekord` does not identify the late
   first-generation PAT.80 specimen 4149 rather than second-generation 4151.
   **4149 → NULL** for specs **782 / 985 / 6492 / 6647 / 12880**;
-  live rows are NULL and the generator guard prevents reassignment. Reopen only with
+  782 / 985 / 6492 / 6647 remain NULL; user subsequently selected second-generation
+  4151 for Battaglin 12880 despite the unresolved catalogue generation. Reopen the remaining cases with
   original fitment markings/photos or a period parts crosswalk. See the
   [specimen review](../../ingest-component-catalog/references/known-catalogs/campagnolo.md#super-record-and-early-campagnolo-specimen-review--2026-11-17).
 

@@ -2197,7 +2197,10 @@ retains the original `Campagnolo 4001 Super Record PAT. 80`. Descriptions are
 184 / 157 / 163 / 181 characters respectively. Measured weights and all stable
 identifiers survive. No component row is added or removed.
 
-Bike-link follow-through: earlier ingestion notes selected 4149 from the general
+Subsequent user selection: 1982 Battaglin spec 12880 was later linked to 4151 as a
+judgment call; the other four rows below remain NULL. See the Battaglin notes.
+
+Bike-link follow-through at the time of this review: earlier ingestion notes selected 4149 from the general
 1980–1983 year override. None of these stored values identifies PAT. 80 or the
 photographed first-generation configuration. Applied **4149 → NULL**, preserving
 the unresolved generation instead of selecting 4151, for:

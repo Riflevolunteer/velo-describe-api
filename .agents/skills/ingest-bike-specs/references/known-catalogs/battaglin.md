@@ -128,6 +128,8 @@ evidence remains open. Temporary SQL removed after validation.
 
 ## 1982 Super Record rear link — 2026-11-17, applied and validated
 
+**Subsequent user selection:** spec 12880 NULL → 4151 (second-generation v1) applied at user request. This supersedes the NULL decision below for this bike only; the catalogue still does not distinguish the generation. Scoped generator mapping added; readback confirmed 4151 and source 268, guarded replay changed zero rows, the 118-catalogue comparison retained 15 unrelated Huret losses with no gains or changes, and link-decision test passed. Specs 782 / 985 / 6492 / 6647 remain NULL. Restore 12880 to NULL guarded by 4151 and remove its scoped override if superseded.
+
 User approved **12880**, Campagnolo model, source 268: **4149 → NULL**. The printed
 family name `Campagnolo Super Record` does not identify late first-generation PAT.80
 specimen 4149 rather than second-generation 4151. Generator guard prevents
