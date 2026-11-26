@@ -417,7 +417,7 @@ see the Raleigh catalogue notes for the decision and source.
   [Maker material table and live reconciliation](../../ingest-component-catalog/references/known-catalogs/maillard.md#spidel-700-ra-maker-material-table--2026-11-22).
 
 - Most unlinked values are toe-clip / reflector text ("Course with toe clips and straps" 17, "Sports pedals with reflectors" 10), Raleigh house pedals (717, 501, 917, "Raleigh ball bearing"), the Maillard CX / Atom source gap (see source hunts) and Colnago group fan-out ("Shimano AL 11", "Shimano Santé"): leave.
-- Leave unlinked (several rows fit or either / or): 1982 Battaglin "Gipiemme Cronospecial / Special" (existing do-not-link: 3747 Cronospecial and 3752 Special are separate pedals); 1972 Raleigh "Campagnolo Pista" (3711 / 3715, both 1971+); 1980 Raleigh "Sun Tour Superbe" (PL-1000 Custom or PL-4000 Pro); 1981 Peugeot "Atom 450" x2 (450RA or 450RN); Bianchi "Ofmega Pista" (Master or Mistral Pista) and "Ofmega Competizione" (not the Super Competizione).
+- Leave unlinked (several rows fit or either / or): 1982 Battaglin Giro d'Italia and Super Pista "Gipiemme Cronospecial / Special" (3747 Cronospecial and 3752 Special are separate pedals; Arena spec 12922 links 3747 by user selection); 1972 Raleigh "Campagnolo Pista" (3711 / 3715, both 1971+); 1980 Raleigh "Sun Tour Superbe" (PL-1000 Custom or PL-4000 Pro); 1981 Peugeot "Atom 450" x2 (450RA or 450RN); Bianchi "Ofmega Pista" (Master or Mistral Pista) and "Ofmega Competizione" (not the Super Competizione).
 
 ## Shifters
 
@@ -515,7 +515,7 @@ see the Raleigh catalogue notes for the decision and source.
   See [SunTour evidence and validation](../../ingest-component-catalog/references/known-catalogs/suntour.md#xce-crank-dating-and-tangent-brake-link-review--2026-11-17-applied-and-validated).
 
 - Most unlinked values are type or maker text ("Mafac centre-pull" 17, "Weinmann side-pull" 13, "Cantilever" 7, "Weinmann" 6, the Raleigh "Weinmann Alloy Side Pull with Extension Levers" and "Raleigh/Weinmann alloy centerpull" strings): leave.
-- Leave unlinked: 1986 Miyata "SHIMANO New 600 EX" x2 (BR-6207-49 short or -57 long reach); 1989 Peugeot "CLB / GL 47-60" / "CLB 47-60, white" (three GL 47-60 version rows 613 / 614 / 615, all undated); 1982 Battaglin "Gipiemme Modolo Professional" (880 v1 1976-80 or 892 v2 1985) and "Gipiemme Modolo Spidi"; 1987 Peugeot "Dia Compe G.500 Q.R." (678 G-N series or 9106 500G); 1982 Peugeot "Mafac Competition Sport" x2 and 1970-72 "Mafac Course" x3; 1981 / 1984 Peugeot "CLB Competition" (608 is 1950-70); remaining front/rear MTB halves are listed in the brake-identification worklist above.
+- Leave unlinked: 1986 Miyata "SHIMANO New 600 EX" x2 (BR-6207-49 short or -57 long reach); 1989 Peugeot "CLB / GL 47-60" / "CLB 47-60, white" (three GL 47-60 version rows 613 / 614 / 615, all undated); 1982 Battaglin "Gipiemme Modolo Professional" (880 v1 1976-80 or 892 v2 1985) and Vuelta "Gipiemme Modolo Spidi" (Alessandro spec 12940 links 886 by user-selected Speedy inference); 1987 Peugeot "Dia Compe G.500 Q.R." (678 G-N series or 9106 500G); 1982 Peugeot "Mafac Competition Sport" x2 and 1970-72 "Mafac Course" x3; 1981 / 1984 Peugeot "CLB Competition" (608 is 1950-70); remaining front/rear MTB halves are listed in the brake-identification worklist above.
 
 ## Rear Derailleurs
 

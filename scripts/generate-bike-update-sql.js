@@ -2083,6 +2083,7 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin Arena: preserve the catalogue alias after the 1986
     // factory list identifies the complete Kronos brake as R0010.
     'gipiemme modolo kronos': [{ bike: 'Arena', from: 1982, to: 1982, id: 870 }],
+    'gipiemme modolo spidi': [{ bike: 'Alessandro', from: 1982, to: 1982, id: 886 }], // User-selected Speedy inference; catalogue prints Spidi.
     'dia compe #500g side pull': [{ bike: '710', from: 1982, to: 1982, id: 9106 }, { bike: '610', from: 1982, to: 1982, id: 9106 }, { bike: '710', from: 1981, to: 1981, id: 9106 }, { bike: '710', from: 1980, to: 1980, id: 9106 }, { bike: '800', from: 1979, to: 1979, id: 9106 }, { bike: '710', from: 1979, to: 1979, id: 9106 }], // 1979 Miyata: printed component; see catalogue review notes.
     'shimano 600ex side pull': [{ bike: '912', from: 1980, to: 1980, id: 969 }, { bike: '912', from: 1979, to: 1979, id: 969 }], // 1979 Miyata: printed component; see catalogue review notes.
     'dia compe #960 center pull cantilever type': [{ bike: '1000', from: 1980, to: 1980, id: 8096 }, { bike: '1000', from: 1979, to: 1979, id: 8096 }], // 1979 Miyata: printed component; see catalogue review notes.
@@ -4476,7 +4477,7 @@ const COMPONENT_OVERRIDES = {
     'sr mtp 126': [{ from: 1989, to: 1989, id: 9755 }], // 1989 Bianchi: SR PL-MTP-126BL, Low Fat (year_from 1993 -> 1989; judgement call)
     'sakae sp 362 alloy platform': [{ from: 1984, to: 1984, id: 3932 }], // 1984 Raleigh: SR SP-362 (year_to 1980 -> 1984; judgement call)
     // 1982 Battaglin: either/or cell (Cronospecial or Special) names two parts, so no link; Pista Special is the Special (Pista) pedal.
-    'gipiemme cronospecial special': null,
+    'gipiemme cronospecial special': [{ bike: 'Arena', from: 1982, to: 1982, id: 3747 }, { id: null }], // Arena: user selected Cronospecial 300AA; other either/or cells remain unlinked.
     'gipiemme pista special': [{ bike: 'Pista Amatore', from: 1985, to: 1985, id: null }, { id: 3751 }], // Gipiemme Special (Pista)
     'gipiemme bianchi special alloy': [{ from: 1978, to: 1978, id: 3752 }], // 1978 Bianchi Rekord/748: Gipiemme Special 600154 (as its hub cell -> 3352 600160; judgement call)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
