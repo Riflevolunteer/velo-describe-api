@@ -4,11 +4,11 @@
 
 The [original Alessandro specification sheet](https://saarf.london/wp-content/uploads/2014/02/05a1.jpg) visibly prints `Gipiemme Modolo Spidi` in full. Live bike 759 spec 12940 and the CSV contain the same complete text. The API's `/bikedetail` query selects `value_text` directly; the checked client `SpecRow` source uses flex shrink and no line limit. The reported clipping remains to be reproduced on the affected platform; the deployed client/version and viewport have not been verified.
 
-`Spidi` is a plausible phonetic spelling of Modolo Speedy: component 886 covers 1979–88 and a [Gipiemme/Modolo lever specimen](https://velobase.com/Pages/ViewComponent.aspx?Enum=118&ID=bbe6f0c9-2094-4695-bed7-d4fec7f8578c) is identified as Speedy. A [retailer listing](https://cicli-berlinetta.com/product/nib-gipiemme-sprint-like-modolo-speedy-brakes-brake-levers/) describes Gipiemme Sprint brakes as similar to Speedy, but does not establish this specific fitment or spelling crosswalk. User selected this inference: spec 12940 NULL → 886, preserving catalogue wording and source 268. Scoped generator mapping applies to Alessandro only; Vuelta remains unlinked. Readback confirmed 886 and unchanged pedal 3751; SQL replay affected zero rows, 118-catalogue comparison retained the 15 unrelated Huret losses with no gains or changes, and link-decision test passed. Restore 12940 to NULL guarded by 886 and remove the scoped override if superseded.
+`Spidi` is a plausible phonetic spelling of Modolo Speedy: component 886 covers 1979–88 and a [Gipiemme/Modolo lever specimen](https://velobase.com/Pages/ViewComponent.aspx?Enum=118&ID=bbe6f0c9-2094-4695-bed7-d4fec7f8578c) is identified as Speedy. A [retailer listing](https://cicli-berlinetta.com/product/nib-gipiemme-sprint-like-modolo-speedy-brakes-brake-levers/) describes Gipiemme Sprint brakes as similar to Speedy, but does not establish this specific fitment or spelling crosswalk. User selected this inference for Alessandro spec 12940 and Vuelta spec 20102: both NULL → 886, preserving catalogue wording and source 268. Scoped generator mappings apply to these bikes. Readback confirmed both links and unchanged Alessandro pedal 3751; SQL replays affected zero rows, 118-catalogue comparison retained the 15 unrelated Huret losses with no gains or changes, and link-decision test passed. Restore the relevant spec to NULL guarded by 886 and remove its scoped override if superseded.
 
 ## 1982 Battaglin — `1982_battaglin_spec.csv` (6 bikes, 110 specs, 50 linked)
 
-**Arena pedal follow-up:** User selected Cronospecial 300AA for Arena's catalogue `Gipiemme Cronospecial / Special` alternatives; spec 12922 NULL → 3747, retaining the printed value and source 268. Scoped generator override applies only to Arena 1982; Giro d'Italia 12903 and Super Pista 12976 remain NULL. Readback confirmed these values, guarded replay changed zero rows, 118-catalogue comparison retained 15 unrelated Huret losses and no gains or changes, and link-decision test passed. Restore 12922 to NULL guarded by 3747 and remove the Arena override if superseded.
+**Pedal follow-up:** User selected Cronospecial 300AA for Arena, Giro d'Italia and Super Pista's catalogue `Gipiemme Cronospecial / Special` alternatives; specs 12922, 12903 and 12976 NULL → 3747, retaining printed values and source 268. Scoped generator overrides apply only to these 1982 bikes. Readback confirmed these values, guarded replays changed zero rows, 118-catalogue comparison retained 15 unrelated Huret losses and no gains or changes, and link-decision test passed. Restore a spec to NULL guarded by 3747 and remove its override if superseded.
 
 - Source (added 2026-10-24): saarf.london "Battaglin 1982 Catalog"
   (https://saarf.london/2014/02/09/battaglin-1982-catalog/, 15 scans: `012`, `0211`..`09a1`, 1400 x 1100
@@ -33,7 +33,7 @@ The [original Alessandro specification sheet](https://saarf.london/wp-content/up
 - Overrides (all commented "1982 Battaglin" in the generator): Cranksets 'gipiemme cronospecial' -> 1587 (Crono
   Special 100 AA) and 'gipiemme cronosprint' -> 1589 (Crono Sprint 100 CC), both ranged 1982; Headsets
   'gipiemme cronospecial' -> 9137 (1985-88 row) and 'gipiemme pista special' -> 3008 Special (Pista); Pedals
-  'gipiemme pista special' -> 3751, and the either/or cell 'gipiemme cronospecial special' -> null except the user-selected Arena 3747; Hubs
+  'gipiemme pista special' -> 3751, and the either/or cell 'gipiemme cronospecial special' -> null except user-selected Arena, Giro d'Italia and Super Pista 3747; Hubs
   'gipiemme pista special' -> 3351; Rims 'nisi corsa stretto' -> 9228 and 'nisi ekip' -> 9227; Stems 'cinelli 1 r'
   -> ranged 6492 (1976-79) / 6491 (1980-85). `CATALOGUE_COUNTRY` has `1982|battaglin` = IT.
 - Auto-linked, worth a second look: Nisi Corsa -> 5131 "Corsa Toro (no eyelets)" (the catalogue names no variant;
@@ -84,6 +84,8 @@ evidence remains open. Temporary SQL removed after validation.
 
 ## 1982 Vuelta — added 2026-11-12 (bike 1185, existing source 268)
 
+**Regina follow-up:** User selected Extra 50 Record chain 1381 for spec 20111 and six-speed Oro freewheel 2194 for spec 20112, both NULL → selected ID. The catalogue prints only `Regina Record` and `Regina Oro`; neither the chain variant nor freewheel speed is stated, so these are judgment calls. Scoped generator mappings added; readback confirmed both links and source 268, guarded SQL replay changed zero rows, 118-catalogue comparison retained the 15 unrelated Huret losses and no gains or changes, and link-decision test passed. Restore each to NULL guarded by its new ID and restore its scoped NULL override if superseded.
+
 - User explicitly requested loading the Vuelta. A fuller 17-page copy of the
   same catalogue supplies its photo (PDF page 12) and written spec sheet
   (page 13): https://www.bikecatalogs.com/document/2782, PDF at
@@ -104,13 +106,13 @@ evidence remains open. Temporary SQL removed after validation.
   Cronosprint front derailleur 2369; Nisi Corsa Stretto rims 9228;
   Cinelli 1/A stem 6489; Concor Supercorsa saddle 5547. All seven rows'
   date ranges include 1982.
-- Explicit Vuelta/1982 null overrides withhold five initial matcher picks:
+- At ingestion, explicit Vuelta/1982 null overrides withheld five initial matcher picks (chain and freewheel later linked by user selection above):
   Cronospecial headset 9137 starts 1984 and alternative 10819 is dated 1983;
   Special pedals 3752 end 1980 while 10966 starts 1984; Record chain 1383
   ends 1980 and Extra 50 Record is not explicitly named; Oro freewheel 2194
   assumes six speeds/variant not printed; Trofeo 250 tyre 9255 starts 1984
   and the sheet gives no 250 code. Existing picks on other bikes preserved.
-  Seatpost, Spidi brakes, spokes, brand-only bars, clips and extras also text.
+  Seatpost, spokes, brand-only bars, clips and extras also text; Spidi brakes were later linked to 886 by user selection.
 - Regression before appending Vuelta: all 83 existing CSV outputs combined
   byte-identical before/after overrides (1078 bikes / 18106 specs / 6253
   links). Node syntax and git whitespace checks passed.

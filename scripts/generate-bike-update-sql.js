@@ -2083,7 +2083,7 @@ const COMPONENT_OVERRIDES = {
     // 1982 Battaglin Arena: preserve the catalogue alias after the 1986
     // factory list identifies the complete Kronos brake as R0010.
     'gipiemme modolo kronos': [{ bike: 'Arena', from: 1982, to: 1982, id: 870 }],
-    'gipiemme modolo spidi': [{ bike: 'Alessandro', from: 1982, to: 1982, id: 886 }], // User-selected Speedy inference; catalogue prints Spidi.
+    'gipiemme modolo spidi': [{ bike: 'Alessandro', from: 1982, to: 1982, id: 886 }, { bike: 'Vuelta', from: 1982, to: 1982, id: 886 }], // User-selected Speedy inference; catalogue prints Spidi.
     'dia compe #500g side pull': [{ bike: '710', from: 1982, to: 1982, id: 9106 }, { bike: '610', from: 1982, to: 1982, id: 9106 }, { bike: '710', from: 1981, to: 1981, id: 9106 }, { bike: '710', from: 1980, to: 1980, id: 9106 }, { bike: '800', from: 1979, to: 1979, id: 9106 }, { bike: '710', from: 1979, to: 1979, id: 9106 }], // 1979 Miyata: printed component; see catalogue review notes.
     'shimano 600ex side pull': [{ bike: '912', from: 1980, to: 1980, id: 969 }, { bike: '912', from: 1979, to: 1979, id: 969 }], // 1979 Miyata: printed component; see catalogue review notes.
     'dia compe #960 center pull cantilever type': [{ bike: '1000', from: 1980, to: 1980, id: 8096 }, { bike: '1000', from: 1979, to: 1979, id: 8096 }], // 1979 Miyata: printed component; see catalogue review notes.
@@ -4477,7 +4477,7 @@ const COMPONENT_OVERRIDES = {
     'sr mtp 126': [{ from: 1989, to: 1989, id: 9755 }], // 1989 Bianchi: SR PL-MTP-126BL, Low Fat (year_from 1993 -> 1989; judgement call)
     'sakae sp 362 alloy platform': [{ from: 1984, to: 1984, id: 3932 }], // 1984 Raleigh: SR SP-362 (year_to 1980 -> 1984; judgement call)
     // 1982 Battaglin: either/or cell (Cronospecial or Special) names two parts, so no link; Pista Special is the Special (Pista) pedal.
-    'gipiemme cronospecial special': [{ bike: 'Arena', from: 1982, to: 1982, id: 3747 }, { id: null }], // Arena: user selected Cronospecial 300AA; other either/or cells remain unlinked.
+    'gipiemme cronospecial special': [{ bike: 'Arena', from: 1982, to: 1982, id: 3747 }, { bike: "Giro d'Italia", from: 1982, to: 1982, id: 3747 }, { bike: 'Super Pista', from: 1982, to: 1982, id: 3747 }, { id: null }], // User-selected Cronospecial 300AA for the three Battaglin bikes.
     'gipiemme pista special': [{ bike: 'Pista Amatore', from: 1985, to: 1985, id: null }, { id: 3751 }], // Gipiemme Special (Pista)
     'gipiemme bianchi special alloy': [{ from: 1978, to: 1978, id: 3752 }], // 1978 Bianchi Rekord/748: Gipiemme Special 600154 (as its hub cell -> 3352 600160; judgement call)
     // 1988 Colnago (Colnago Concept catalogue): Santé, Croce d'Aune, Deore XT SIS and Ofmega groups.
@@ -4867,9 +4867,9 @@ const COMPONENT_OVERRIDES = {
     'did track silver': [{ bike: 'Team Pista', from: 1985, to: 1985, id: 1355 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'suntour z gold black': [{ bike: '710', from: 1985, to: 1985, id: 7821 }, { bike: 'Ridge Runner', from: 1985, to: 1985, id: 7821 }, { bike: 'Pro Miyata', from: 1985, to: 1985, id: 7821 }], // 1985 Miyata: printed component; see known-catalogs/miyata.md.
     'shimano dura ace ug nickel finished': [{ bike: 'Team Miyata', from: 1984, to: 1984, id: 7472 }], // 1984 Miyata: printed component; see known-catalogs/miyata.md.
-    // 1982 Battaglin Vuelta: 1383 Record Super Star ends 1980; bare Record does not establish Extra 50 Record.
+    // 1982 Battaglin Vuelta: user selected Extra 50 Record; the catalogue does not specify the variant.
     // The final entry preserves the existing matcher result for other bikes.
-    'regina record': [{ bike: 'Vuelta', from: 1982, to: 1982, id: null }, { id: 1383 }],
+    'regina record': [{ bike: 'Vuelta', from: 1982, to: 1982, id: 1381 }, { id: 1383 }],
     // 1987 Bianchi, original table PDF p.15: X4 = CX silver; Mondiale / Super Leggera /
     // Trofeo / Nuovo Alloro = Corsa silver. Supersedes the inferred "Regina C Record" transcription.
     'regina cx silver': [{ bike: 'X4', from: 1987, to: 1987, id: 1384 }],
@@ -5292,7 +5292,7 @@ const COMPONENT_OVERRIDES = {
     // Perfect was SunTour's touring line (New Winner was the racing block).
     'sun tour wide ratio 14 18 23 30 34t': 2245, // SunTour 1100-1106 / PT-5000, Perfect (5-speed)
     // Freewheel link pass 2026-10-26 (from /linkCoverage).
-    'regina oro': [{ bike: 'Vuelta', from: 1982, to: 1982, id: null }, { id: 2194 }], // Vuelta sheet gives no speed count or variant; preserve earlier catalogue picks.
+    'regina oro': [{ bike: 'Vuelta', from: 1982, to: 1982, id: 2194 }, { id: 2194 }], // Vuelta: user selected six-speed Oro; catalogue does not state speed or variant.
     // 2194's description is "the Extra 6-speed in Oro quality"; 2182 is the 5-speed Extra Oro.
     'regina extra oro 6 speed': 2194, // 1978 Bianchi Specialissima Super-Leggera / Campione del Mondo CX
     'regina extra oro 6 speed or alloy 6 speed on request': 2194, // 1978 Bianchi Specialissima Barcellona: the standard fit
