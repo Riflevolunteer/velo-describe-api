@@ -3782,7 +3782,7 @@ const COMPONENT_OVERRIDES = {
     'itm 200 laser etched': [{ from: 1989, to: 1989, id: 9202 }], // ITM Mod. 200
   },
   Shifters: {
-    'accushift plus express': [{ bike: 'Ocelot', from: 1991, to: 1991, id: 7972 }, { bike: 'Nyala', from: 1991, to: 1991, id: 7972 }], // Seven-speed X-Press pair; user-approved group and gearing inferences.
+    'accushift plus express': [{ bike: 'Ocelot', from: 1991, to: 1991, id: 7972 }, { bike: 'Nyala', from: 1991, to: 1991, id: 7972 }, { bike: 'Ibex', from: 1991, to: 1991, id: 7970 }], // Seven-speed X-Press pairs; user-approved group and gearing inferences.
     // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
     'shimano ultegra sis hyperglide': [{ bike: 'Virata', from: 1991, to: 1991, id: 6144 }],
     'shimano 105 sc sis hyperglide': [{ bike: 'Alfana', from: 1991, to: 1991, id: 6133 }],
@@ -5049,7 +5049,7 @@ const COMPONENT_OVERRIDES = {
     'shimano silver 13 23t 7 speed': [{ bike: 'Limited', from: 1989, to: 1989, id: 1199 }], // CS-6400-7, Ultegra bike
   },
   Freewheels: {
-    'suntour accushift plus 13 30t 7 speed': [{ bike: 'Ocelot', from: 1991, to: 1991, id: 7994 }, { bike: 'Nyala', from: 1991, to: 1991, id: 7994 }], // XCU / XCM group inferences; Bianchi does not specify mechanism or finish.
+    'suntour accushift plus 13 30t 7 speed': [{ bike: 'Ocelot', from: 1991, to: 1991, id: 7994 }, { bike: 'Nyala', from: 1991, to: 1991, id: 7994 }, { bike: 'Ibex', from: 1991, to: 1991, id: 7994 }], // Group inferences; Bianchi does not specify mechanism or finish.
     'maillard 700 sh 7 speeds 13 23': [{ from: 1988, to: 1988, id: 8133 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Pro Racer: 700 SH 7-speed compact (Helicomatic).
     "maillard helicomatic 700sh 6 cogs 13 14 16 18 20 22": [{"bike":"Jubilee Sport","from":1983,"to":1983,"id":8132}], // 1983 Motobecane US Volume2, pp.14-15; brand notes.
     "suntour perfect 5 cogs 14 17 22 27 32": [{"bike":"Interclub","from":1983,"to":1983,"id":2245},{"bike":"Interclub","from":1982,"to":1982,"id":2245}], // 1982 Motobecane US, pp.14-15; brand notes.

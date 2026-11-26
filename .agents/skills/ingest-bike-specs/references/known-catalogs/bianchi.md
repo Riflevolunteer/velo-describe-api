@@ -84,7 +84,9 @@ Correction: the original [1991 SunTour catalogue](https://sscycleworks.com/galle
 
 **Nyala shifter follow-up:** 1991 Nyala spec 26777 also reads Accushift Plus Express and specifies a seven-speed cluster. The [1991 SunTour catalogue](https://sscycleworks.com/galleries/bike-museum/SunTour-91-catalog-compressed.pdf), printed p.14, lists the seven-speed SL-XM10-R7 / SL-XM10-L X-Press pair for XCM. User approved NULL → 7972 as a group-and-gearing inference; Bianchi does not give the code. Applied with scoped generator mapping; readback confirmed Nyala and Ocelot both link 7972 with source 508 preserved. Guarded SQL replay changed zero rows; comparison of 118 catalogues retained the 15 unrelated Huret losses with no gains or changes, and link-decision test passed. Restore Nyala to NULL guarded by 7972 and remove its scoped override if superseded.
 
-**Accushift cluster follow-up:** User approved Ocelot spec 26802 and Nyala spec 26782 NULL → 7994 FW-AL10-K7, black seven-speed 13–30T, based on their XCU/XCM groups, year and gearing. The Bianchi catalogue does not specify mechanism, finish or part code; 11019 is a silver threaded seven-speed alternative, so these are inferences. Scoped generator mappings cover only these 1991 bikes. Readback confirmed both links and unchanged source 508; Volpe and Ibex remain NULL. Guarded SQL replays changed zero rows; 118-catalogue generator comparison retained the 15 pre-existing Huret losses and no gains or changes; link-decision test passed. To restore, set the relevant spec to NULL guarded by 7994 and remove its scoped override.
+**Accushift cluster follow-up:** User approved Ocelot spec 26802, Nyala spec 26782 and Ibex spec 26762 NULL → 7994 FW-AL10-K7, black seven-speed 13–30T, based on their XCU/XCM/X-1 groups, year and gearing. The Bianchi catalogue does not specify mechanism, finish or part code; 11019 is a silver threaded seven-speed alternative, so these are inferences. Scoped generator mappings cover only these 1991 bikes. Readback confirmed the links and unchanged source 508; Volpe remains NULL. Guarded SQL replays changed zero rows; 118-catalogue generator comparison retained the 15 pre-existing Huret losses and no gains or changes; link-decision test passed. To restore, set the relevant spec to NULL guarded by 7994 and remove its scoped override.
+
+**Ibex X-Press follow-up:** User approved spec 26757 NULL → 7970, SL-XL10-R7 / SL-XL10-L, as an X-1 seven-speed X-Press group inference. Bianchi does not provide the model code; the [SunTour catalogue](https://ebykr.com/library/suntour-catalog-1992/) lists XL10 for X-1 and the component is dated 1991–93. The two Ibex updates each affected one row; readback confirmed both and source 508, guarded replay changed zero, all 118 catalogue comparisons retained the same 15 unrelated Huret losses with no gains or changes, and the link-decision test passed. Restore 26757 to NULL guarded by 7970 and remove its scoped override if superseded.
 
 ### 1991 US import applied and validated
 
@@ -122,7 +124,7 @@ original scan citation. The Japanese edition uses source 358.
   US Virata's printed Dynamic-II stem and mapped spec 26563 to Nitto
   Dynamic-2 6614. The bike import preserves existing component dates.
 - Equinox and Axis 287 levers, the
-  uncertain Accushift Plus 12–28T / 13–30T clusters other than Ocelot and Nyala and Pista's explicit
+  uncertain Accushift Plus 12–28T / 13–30T clusters other than Ocelot, Nyala and Ibex and Pista's explicit
   16T fixed sprocket (26822) stay unlinked. The Grizzly and other
   same-name builds retain their edition-specific text. Names such as
   Command and generic grip, housing and frame specifications keep their
