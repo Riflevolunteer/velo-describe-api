@@ -377,7 +377,7 @@ API listing, PDF and two page renders removed after documenting these findings.
 
 - Source (added 2026-10-21): ebykr.com "Bianchi Catalog of about 1983" (https://ebykr.com/library/bianchi-1983-catalog/), 12 pages in English, published in Italy by Bianchi; scans from Mark Bulgier's archive (bulgier.net/pics/bike/Catalogs/Bianchi-83/, posted 2001, also on 2velo.com). It carries no year; ebykr estimates 1983 from the Super Pista text citing a 1982 World Championship medal. The catalogue names no export market, so IT is the publisher's country, still an inference for the intended market.
 
-- 2026-11-26: page 6 describes Campione del Mondo Gran Sport brakes with Super Record levers, but does not specify gear shifters. Corrected spec 960 from Shifters to Brake Levers and moved its CSV cell from `Shifters/Levers` to `Brake Levers`; retained the database's original raw label and source. Super Record 4062 components 231 and 232 differ in hood logo and both cover 1983, which this text does not distinguish, so the spec remains unlinked. Readback and SQL rerun verified the correction; the catalogue's generated links match the live database.
+- 2026-11-26: page 6 describes Campione del Mondo Gran Sport brakes with Super Record levers, but does not specify gear shifters. Corrected spec 960 from Shifters to Brake Levers and moved its CSV cell from `Shifters/Levers` to `Brake Levers`; retained the database's original raw label and source. Initially left unlinked due to hood-logo ambiguity, then linked to 231, the 4062 family, after merging the hood-based records. Readback and SQL rerun verified both corrections; the catalogue's generated links match the live database. [Lever review](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#super-record-4062-brake-lever-review--2026-11-26).
 
 - This catalog exposed that overrides were global: its "Campagnolo Nuovo
   Record" derailleurs inherited the 1973 Raleigh picks. COMPONENT_OVERRIDES
@@ -825,7 +825,7 @@ API listing, PDF and two page renders removed after documenting these findings.
   Super Record" kept as a groupset value only (undecidable per part).
 - Original picks (Super Record rear 4149 superseded below): Super Record and
   Nuovo Record by existing ranges (1982 -> FD 2300
-  0104007, RD 4126 v4; SR levers 232, brakes 582, seatpost 5761, RD 4149);
+  0104007, RD 4126 v4; SR levers 231 (formerly 232), brakes 582, seatpost 5761, RD 4149);
   Gran Sport brakes 554; Record Pista crank 1505 / headset 2966; Cinelli #2
   -> 5332; Mavic OR 10 -> 5103. New overrides: Universal 77 -> 1083;
   "Campagnolo Gran Sport, drilled" levers -> 209 1040/1A; Record Pista hubs

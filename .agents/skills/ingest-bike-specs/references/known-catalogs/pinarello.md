@@ -223,10 +223,10 @@ existing brand and all 15 labels reused. Source label follows generator
 convention `1982 Pinarello catalogue`, citation `1982_pinarello_spec.csv`.
 Validated component mappings:
 
-- Prestige S: FD 2313, crank 1509, post 5761, levers 232, pedals 3716, chain
+- Prestige S: FD 2313, crank 1509, post 5761, levers 231 (formerly 232), pedals 3716, chain
   1384, rims 5069. Titanio qualifies the group, not every component's material.
-- Tre Cime: post 5761, levers 232, pedals 3716, chain 1384, rims 5069.
-- Super Record Special: FD 2313, crank 1509, post 5761, levers 232, pedals
+- Tre Cime: post 5761, levers 231 (formerly 232), pedals 3716, chain 1384, rims 5069.
+- Super Record Special: FD 2313, crank 1509, post 5761, levers 231 (formerly 232), pedals
   3716, chain 1384.
 - Treviso: FD 2276, explicit Record RD 4126, post 5734, levers 209, pedals
   3688, chain 1382. Year-based RD variant follows existing period mappings;
@@ -257,7 +257,7 @@ maintained source images and CSV retained.
 ## Tre Cime photo/link follow-up — 2026-11-20, applied and validated
 
 Initial live inventory: bike **1489**, source **492**, already links seatpost
-25891→5761, brake levers 25893→232, pedals 25894→3716, chain 25895→1384 and
+25891→5761, brake levers 25893→231 (formerly 232), pedals 25894→3716, chain 25895→1384 and
 rims 25900→5069. Re-inspected maintained original
 `bike_specs/sources/pinarello_1982/3.jpg` and a drivetrain crop; the printed
 group is `Campagnolo Super Record x 3`, and the photograph visibly confirms
@@ -329,7 +329,7 @@ All 15 labels already existed. This replaces the initial 45-spec/seven-link load
 
 New group links, by category (existing seven chain/tyre links unchanged):
 
-- Prestige / Super Record: FD 2313, crank 1509, seatpost 5759, levers 232,
+- Prestige / Super Record: FD 2313, crank 1509, seatpost 5759, levers 231 (formerly 232),
   pedals 3716. Rear group remains NULL: 4148 and 4151 overlap circa 1979.
   Brakes remain NULL without standard/short-reach identification (582/7005).
 - Record: FD 2299, RD 4125, crank 1496, seatpost 5749, levers 226,

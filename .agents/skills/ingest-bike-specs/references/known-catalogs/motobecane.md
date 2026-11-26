@@ -866,7 +866,7 @@ evidence and restoration values.
   specifications invented from the other bikes' rear-only names.
 - Reviewed crosswalks: Campagnolo4030 crank/BB bundle → 1049/A Super Record
   **1509** (Catalogue17 crosswalk), 4061 brakes **582**, supplied pre-1983
-  4062 levers **232**, 1037A pedals **3709**, 1039 headset **2963**, 1020 rear
+  4062 levers **231** (formerly 232), 1037A pedals **3709**, 1039 headset **2963**, 1020 rear
   **4125**. Stronglight105B → 105Bis **1880**; early Cinelli66 **2809**;
   Pivo bar **11169**, Philippe351 **2895**; Maillard700 low-flange **3394**;
   Rigida13/20 27-inch **9894**; Weinmann124A **7776**, 256 **7928**, 999

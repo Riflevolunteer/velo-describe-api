@@ -4074,8 +4074,8 @@ const COMPONENT_OVERRIDES = {
     'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 231 }],
     'campagnolo super record 4000f or record pantograph': null,
     // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
-    'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 232 }],
-    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: 232 }],
+    'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 231 }],
+    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: 231 }],
     'campagnolo nuovo gran sport': [{ bike: 'Treviso', from: 1982, to: 1982, id: 209 }, { bike: 'Treviso', from: 1979, to: 1979, id: 209 }],
 
     'campagnolo record con freni e particolari super record': null, // c.1979 Pinarello Record Special: unspecified mixed-group details.
@@ -4087,7 +4087,7 @@ const COMPONENT_OVERRIDES = {
     'dia compe 250s aero': [{ from: 1989, to: 1989, id: 275 }], // 1989 Bianchi Axis; Dia-Compe March 1989 guide p.1, AC250S/BRS300
     'dia compe bl 08 aero': [{ from: 1989, to: 1989, id: 11536 }], // 1989 Bianchi Volpe; Dia-Compe March 1989 guide p.2, BL08/BRS Blaze
     // 1978 Motobecane US tables and model captions; reviewed crosswalks in motobecane.md.
-    'campagnolo drilled levers with gum hoods': [{ from: 1978, to: 1978, id: 232 }],
+    'campagnolo drilled levers with gum hoods': [{ from: 1978, to: 1978, id: 231 }],
     // 1984 Motobecane UK distributor catalogue, PDF p.10; decisions in motobecane.md.
     "campagnolo record drilled levers": [{ bike: "Le Champion", from: 1984, to: 1984, id: 226 }],
     'suntour xce 4050': [{ from: 1989, to: 1989, id: 11398 }], // 1989 Bianchi Forte: BL-XE45, XCE 4050 (Edition No. 89)
@@ -4202,9 +4202,10 @@ const COMPONENT_OVERRIDES = {
     'campagnolo gran sport': 209, // 1040/1A, Nuovo Gran Sport (1970-84)
     // 1986 Colnago Catalogo generale group fan-outs.
     'campagnolo c record 180': 212, // 0118065, C-Record first generation (1984-87; the 1987 Colnago C-Record 180 bikes keep first-gen parts throughout)
-    'campagnolo super record 30nnale': 231, // 4062 post-83
+    'campagnolo super record 30nnale': 231, // 4062 family; special decoration not established by the group text
     // 1986 Cinelli groupset fan-out.
-    'campagnolo super record': [{ to: 1982, id: 232 }, { from: 1983, id: 231 }], // 4062 pre-'83 globe-logo hoods (1974-83; 1979 Colnago) / post-83 shield-logo hoods (1983-87; 1986 Cinelli, Colnago)
+    'campagnolo super record': [{ from: 1974, to: 1988, id: 231 }], // 4062 family; hood logo alone does not distinguish the levers
+    'campagnolo super record brake levers': [{ bike: 'Campione del Mondo', from: 1983, to: 1983, id: 231 }],
     'campagnolo victory': 235, // Victory levers (1984-87)
     'campagnolo record corsa': 212, // 0118065, C-Record first generation (1984-87)
     // 1985 Raleigh lever halves (split out of the Brakes cells). 161 / 164 /

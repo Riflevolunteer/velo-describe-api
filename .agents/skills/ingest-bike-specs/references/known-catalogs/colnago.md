@@ -111,8 +111,8 @@ full catalogue, loaded 2026-10-24 (below). New bike brand created on load
   Record" lever row is 1994), brakes 572 post-CPSC via the existing range,
   crank 1496, pedals 3708, seatpost 5749 1044 Record. Super Record RD
   4148 1st generation (new `to 1979` range; the existing range started at
-  the 1980-only PAT. 80), levers 232 pre-'83 globe hoods (existing flat 231
-  override made ranged), brakes 582 v1, seatpost 5759 two-bolt, crank 1509,
+  the 1980-only PAT. 80), levers 231 (formerly 232; hood-based 4062 rows
+  merged), brakes 582 v1, seatpost 5759 two-bolt, crank 1509,
   FD 2313, pedals 3716. Gran Sport (Export): brakes 553 first gen (ranged
   to 1980; the 1983 Raleigh entry uses second gen 554 from 1981), levers
   209 1040/1A, FD 2276, RD 4085, crank 1472, pedals 3688, seatpost 5734.
