@@ -1377,6 +1377,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd': [{ from: 1990, to: 1990, id: 4789 }], // XCD 6000 (1990)
     'suntour xce': [{ from: 1990, to: 1992, id: 4791 }], // RD-XE01-GXB
     'suntour xce 4050': [{ from: 1989, to: 1989, id: 11395 }], // 1989 Bianchi Forte / Volpe: RD-XE45-GXB, XCE 4050 (SunTour Edition No. 89, the 1989 line; relinked 2026-11-16)
+    'suntour xcu': [{ bike: 'Ocelot', from: 1991, to: 1991, id: 12284 }], // 1991 Bianchi: inferred from SunTour group; Bianchi does not specify code.
     'shimano al 11': [{ from: 1986, to: 1987, id: 4446 }], // 1986-87 Colnago Super Mountain Bike: RD-AL11 (1984-87 since 2026-11-01)
     'suntour xct': [{ from: 1990, to: 1990, id: null }, { from: 1991, to: 1992, id: 7952 }], // 1990 Bianchi Nyala: unlinked 2026-11-14, SunTour 1990 p.17 lists RD-XT00 (11070) and RD-XT10 (11071) without a distinguishing spec; RD-XT02 (1992)
     'suntour cyclone': [{ from: 1986, to: 1986, id: null }], // 1986 Raleigh Supercourse: existing null (several Cyclone rears fit); was held only by matcher ambiguity until 4733 merged into 4735 (2026-11-14)
@@ -2252,6 +2253,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore lx linear response': [{ from: 1990, to: 1991, id: 7582 }], // BR-M550 cantilever
     'shimano m200gs linear response': [{ from: 1990, to: 1992, id: 7598 }], // BR-M200 cantilever
     'suntour xc pro balance response system': [{ from: 1990, to: 1992, id: 1056 }], // CT-XP00 cantilever
+    'suntour xcu balance response system': [{ bike: 'Ocelot', from: 1991, to: 1991, id: 8039 }], // 1991 Bianchi: inferred from SunTour group.
     'suntour xct balance response system': [
       { bike: 'Nyala', from: 1991, to: 1991, id: 8038 }, // Inferred from SunTour 1991 group; Bianchi does not give the code.
       { from: 1990, to: 1990, id: 11074 },
@@ -2662,6 +2664,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': [{ from: 1981, to: 1984, id: 126 }], // Shimano GB-210 / BB-6200, 600EX
   },
   Cranksets: {
+    'suntour xcu 48 38 28t powering': [{ bike: 'Ocelot', from: 1991, to: 1991, id: 8005 }], // 1991 Bianchi: CW-XU00 inferred from group and gearing.
     'suntour xce 48 38 28t powering': [{ bike: 'Ibex', from: 1991, to: 1991, id: 2002 }],
     'suntour xct 48 38 28t powering': [{ bike: 'Nyala', from: 1991, to: 1991, id: 8004 }],
     // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.

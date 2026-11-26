@@ -74,6 +74,12 @@ The live database has no import from this edition.
   Use the reviewed SQL for this edition. A fresh default generation
   requires reconciling the reviewed decisions before its output is applied.
 
+### 1991 Ocelot XCU links — applied 2026-11-26
+
+The 1991 US Ocelot (bike 1544) lists XCU Balance Response brakes, XCU 48/38/28T Powering crank and XCU derailleurs. [SunTour 1991 p. 14](https://www.disraeligears.co.uk/site/00_main_images/suntour_bicycle_equipment_catalog_1991_-_page_14_main_image.jpg) lists CT-XU00, CW-XU00 48/38/28, and RD-XU00-GXB/GXZ. User-approved group-and-year inferences applied: spec 26792 NULL to 8039, 26793 NULL to 8005, 26796 NULL to 12284. Bianchi does not give codes; substitutions and earlier stock remain possible. The maker group lists six-speed controls while this bike specifies seven speeds, so rear fitment in particular is an inference, not a coded confirmation. Restore each link to NULL guarded by its new ID and remove its scoped generator override if later superseded.
+
+Keep front 26795 NULL: maker p. 14 identifies FD-XU01, whereas 7963 is FD-XU00 from the 1992 catalogue. Keep shifter 26797 NULL pending a specific seven-speed X-Press fitment crosswalk; the maker's XCU p. 14 control is six-speed. No brake lever is separately specified by Bianchi. Readback confirmed all three links and both NULLs; the guarded SQL replay changed zero rows. Scoped generator overrides added; comparison of 118 loaded catalogues found zero gained or changed proposals and the 15 pre-existing unrelated Huret losses.
+
 ### 1991 US import applied and validated
 
 Source CSV `bike_specs/1991_bianchi_us_spec.csv` preserves the printed
