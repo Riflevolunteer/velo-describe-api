@@ -2157,6 +2157,27 @@ or bike links changed.
   zero integrity errors. The 1483 component enrichment above remains applied and validated.
 
 
+## Super Record rear naming review — 2026-11-26
+
+**Applied and validated on user approval.** [Catalogue no.17 (1974), printed p.8](https://velobase.com/CatalogScans/Campagnolo/Campy1974_catalog17.pdf) depicts 4001 with textured outer lettering and lists titanium 4004/4005 bolts. [1982 US catalogue printed pp.12–13](https://www.campyonly.com/history/catalogs/1982_olympic_catalog.pdf) explicitly captions 4001 [0102018]; its assembled photo shows a script-logo outer plate while the separate exploded diagram uses an earlier-looking arm. [No.18, December 1986, printed p.17](https://velobase.com/CatalogScans/Campagnolo/Campy1985_catalog18.pdf) calls it 0102018, lists spring 98/A and screw 84, and shows a script-logo derailleur and removable-spring parts. These catalogues establish the family and code transition but do not identify the date or availability of the pivot-mounted spring version; drawings may be reused. Do not assign a 1986 introduction or extend a variant's dates solely from the illustration.
+
+The six applied updates changed titles/descriptions and search text; no IDs, source UUIDs, groups, dates or bike links changed. 4148 moved provenance 1 → 6 because the 1974 maker catalogue supports the early family; its separately qualified 181.5 g average remains VeloBase evidence. 4152 moved 262 → 1 because the 1988 retailer guide attests an undifferentiated Super Record, whereas the pivot-mounted spring is attested by the original specimen record; the single source_ref cannot represent both. 4149, 4151, 4153 and 4086 retain source 1 where their individual specimen, spring or modification claims require it. Manufacturer catalogue codes alone cannot identify those specific specimens. Source 1 must not be replaced merely to improve appearance of provenance.
+
+Restoration (old values; all original descriptions not listed remain unchanged):
+
+| ID | Old title | Old description | Old search_text | Old source |
+| --- | --- | --- | --- | --- |
+| 4086 | Campagnolo, 50th Anniversary | Campagnolo, 50th Anniversary, Italy, 180 grams | Campagnolo 50th Anniversary | 1 |
+| 4148 | Campagnolo 4001, Super Record (1st Generation) | Campagnolo 4001, Super Record (1st Generation), Italy, 181.5 grams (avg) Super Record launched 1974. | Campagnolo 4001 Super Record | 1 |
+| 4149 | Campagnolo 4001, Super Record, PAT. 80 (first generation) | unchanged | Campagnolo 4001 Super Record PAT. 80 | 1 |
+| 4151 | Campagnolo 4001, Super Record (2nd gen, ver.1) | Second-generation Super Record with signature-logo outer plate, revised pulley cage and bolt-mounted replaceable parallelogram spring. Model 4001 / 0102018; 180 g. | Campagnolo 4001 Super Record | 1 |
+| 4152 | Campagnolo 4001, Super Record (2nd gen. ver. 2) | Campagnolo 4001, Super Record (2nd gen. ver. 2), Italy, 181.5 grams (avg) | Campagnolo 4001 Super Record | 262 |
+| 4153 | Campagnolo Super Record 4001, Modified Cicli Bombardieri | unchanged | Campagnolo Super Record 4001 Modified Cicli Bombardieri | 1 |
+
+All old years remain as stored, not proof of introduction or discontinuation. 4149 is the separate PAT.80 specimen; its possible overlap with 4148 does not prove either is a duplicate. 4151 and 4152 have different reported spring constructions; preserve both. 4153 is an unphotographed, reported workshop modification, not an official Campagnolo variant. 4086 is the separate 50th Anniversary group rear; no distinct maker part number is established. 1974 and 1982 illustrations do not establish that every 1980–83 bike had the same variant. In particular, 4152 has 22 existing bike links, including generic Super Record specs: these links should not be interpreted as independent proof of a pivot-mounted spring. No merge, delete or relink is proposed without fitment evidence.
+
+Validation: six guarded updates each affected one row; exact field readback confirmed titles, descriptions, dates, sources and bike-link counts (4148 seven, 4151 one, 4152 22; others zero). SQL replay affected zero rows. The 118-catalogue comparison retained zero gains/changes, 15 pre-existing unrelated Huret losses and no missing or ambiguous identities. Link-decision test passed; whole-DB quality reported zero errors. Renaming changed candidate grouping: the normal duplicate report now flags 4148/4149 as generation, 4148/4153 as generation and 4149/4153 for review. 4148 and 4149 share the early family but 4149 preserves a separately documented PAT.80 specimen; 4153 is a reported modification without a photo, not proven identical to either. Retain all pending a photographed modification. 4151/4152 remain classified as generation; 4149/4151 were explicitly kept apart in the previous review. Task-created SQL, catalogue downloads and renders were removed after validation.
+
 ## Super Record and early Campagnolo specimen review — 2026-11-17
 
 User approved, applied and validated 2026-11-17. Scope: TODO specimens 4149 / 4151,
