@@ -899,6 +899,7 @@ const COMPONENT_OVERRIDES = {
     'shimano dura ace': [{ from: 1990, to: 1993, id: 2511 }], // FD-7403 (8sp HG)
     'shimano ultegra': [{ from: 1988, to: 1991, id: 2478 }], // FD-6400, 600 Ultegra (1989-90 Bianchi; the matcher took a 1990 "Ultegra Tripple" velobase row)
     'shimano deore dx': [{ from: 1990, to: 1993, id: 2487 }], // FD-M650
+    'shimano deore lx top pull': [{ bike: 'Osprey', from: 1991, to: 1991, id: 2491 }], // FD-M550 includes the pull-top option in the 1991 Shimano catalogue.
     'shimano deore lx': [{ from: 1990, to: 1992, id: 2491 }], // FD-M550
     'shimano m200gs': [{ from: 1990, to: 1991, id: 7595 }], // FD-M200, 200GS
     'shimano exage 500ex': [{ from: 1990, to: 1992, id: 7570 }], // FD-A500
@@ -4993,7 +4994,7 @@ const COMPONENT_OVERRIDES = {
     // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
     'suntour accushift plus 12 28t 7 speed cassette': [{ bike: 'Axis', from: 1991, to: 1991, id: 1216 }],
     'shimano hyperglide 13 23t 7 speed cassette': [{ bike: 'Virata', from: 1991, to: 1991, id: 1202 }, { bike: 'Alfana', from: 1991, to: 1991, id: 7567 }],
-    'shimano hyperglide 12 28t 7 speed cassette': [{ bike: 'Peregrine', from: 1991, to: 1991, id: 7567 }],
+    'shimano hyperglide 12 28t 7 speed cassette': [{ bike: 'Peregrine', from: 1991, to: 1991, id: 7567 }, { bike: 'Osprey', from: 1991, to: 1991, id: 7567 }], // Osprey: user-approved Deore LX and gearing inference; US specification does not name the model.
     // The 1989 Club Fuji names CS-1000-7 (12237) with this gearing. Bianchi omits the cassette code.
     'shimano silver 13 24t 7 speed': [{ bike: 'Sport SX', from: 1989, to: 1989, id: null }],
     "shimano 105 new cassette 6 speed 14 15 17 19 21 24t": [{ bike: "C153S Jubilé Sport", from: 1986, to: 1986, id: null }], // 1050 family known; cassette text does not identify a separate loaded cassette model. German 1986 p.13.

@@ -90,6 +90,10 @@ Correction: the original [1991 SunTour catalogue](https://sscycleworks.com/galle
 
 ### 1991 US import applied and validated
 
+**Osprey front derailleur follow-up:** US bike 1541 spec 26735 `Shimano Deore-LX, Top Pull` linked NULL → 2491 FD-M550 at user request. [Shimano 1991 p.64](https://www.disraeligears.co.uk/site/shimano_bicycle_system_component_-_91_page_64.html) lists the FD-M550 family and mentions a pull-top type; Bianchi does not specify its code, so this is a group/year fitment inference and the reference does not identify a more specific suffix. The Japanese Osprey spec 19595 already links 2491. Added US Osprey-scoped generator mapping; readback confirmed 2491 and source 508, replay affected zero rows, 118-catalogue comparison retained the 15 unrelated Huret losses and no gains or changes, and the link-decision test passed. Restore 26735 to NULL guarded by 2491 and remove the scoped override if superseded.
+
+**Osprey cassette follow-up:** US bike 1541 spec 26742 says Shimano Hyperglide 12–28T seven-speed cassette; Japanese Osprey spec 19601 explicitly names CS-HG70 12–28T and links 7567. [Shimano's 1991 group table](https://vintagecannondale.com/cannondale/shimano/Shimano91e.pdf) lists CS-HG70 for Deore LX. User approved NULL → 7567 as a group-and-gearing inference, since the US catalogue does not give the code and the Japanese edition is a separate build. Applied with scoped generator mapping; readback confirmed 7567 and source 508, guarded replay changed zero rows, the 118-catalogue comparison retained the 15 unrelated Huret losses with no gains or changes, and link-decision test passed. Restore to NULL guarded by 7567 and remove mapping if superseded.
+
 Source CSV `bike_specs/1991_bianchi_us_spec.csv` preserves the printed
 sizes, weights, finish and equipment by build. The generator creates a
 separate `1991 Bianchi (US) catalogue` source with market US and the
