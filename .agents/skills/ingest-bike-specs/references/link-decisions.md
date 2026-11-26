@@ -254,8 +254,10 @@ see the Raleigh catalogue notes for the decision and source.
   fitment resolves the discrepancy. [Catalogue evidence](known-catalogs/peugeot.md#cosmic-helicomatic-specification--2026-11-22).
 
 - **1991 Bianchi US**, source **508**: Equinox and Grizzly 12–28T, and
-  Volpe, Ibex, Nyala and Ocelot 13–30T, are Accushift Plus seven-speed
+  Volpe, Ibex and Nyala 13–30T, are Accushift Plus seven-speed
   offerings with the mechanism unspecified. Keep them as catalogue text.
+  Ocelot spec 26802 links to **7994** by user-approved XCU group inference;
+  its mechanism and finish are likewise unspecified, so this is not a coded fitment.
   Axis and Sika explicitly say cassette. Pista explicitly says 16T fixed
   gear. [Edition evidence and mappings](known-catalogs/bianchi.md#1991-us-import-applied-and-validated)
 

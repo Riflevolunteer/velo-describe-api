@@ -78,7 +78,9 @@ The live database has no import from this edition.
 
 The 1991 US Ocelot (bike 1544) lists XCU Balance Response brakes, XCU 48/38/28T Powering crank and XCU derailleurs. [SunTour 1991 p. 14](https://www.disraeligears.co.uk/site/00_main_images/suntour_bicycle_equipment_catalog_1991_-_page_14_main_image.jpg) lists CT-XU00, CW-XU00 48/38/28, and RD-XU00-GXB/GXZ. User-approved group-and-year inferences applied: spec 26792 NULL to 8039, 26793 NULL to 8005, 26796 NULL to 12284. Bianchi does not give codes; substitutions and earlier stock remain possible. The maker group lists six-speed controls while this bike specifies seven speeds, so rear fitment in particular is an inference, not a coded confirmation. Restore each link to NULL guarded by its new ID and remove its scoped generator override if later superseded.
 
-Keep front 26795 NULL: maker p. 14 identifies FD-XU01, whereas 7963 is FD-XU00 from the 1992 catalogue. Keep shifter 26797 NULL pending a specific seven-speed X-Press fitment crosswalk; the maker's XCU p. 14 control is six-speed. No brake lever is separately specified by Bianchi. Readback confirmed all three links and both NULLs; the guarded SQL replay changed zero rows. Scoped generator overrides added; comparison of 118 loaded catalogues found zero gained or changed proposals and the 15 pre-existing unrelated Huret losses.
+Correction: the original [1991 SunTour catalogue](https://sscycleworks.com/galleries/bike-museum/SunTour-91-catalog-compressed.pdf), printed p. 14, visually reads **FD-XU00-GXH**, matching component 7963. The earlier FD-XU01-GDH claim was an automated transcription error. Bianchi itself says only XCU; user approved the group-based inference spec 26795 NULL → 7963, now applied with a scoped generator override. Readback confirmed 7963 and source 508; guarded SQL replay changed zero rows. The 118-catalogue comparison retained the same 15 unrelated Huret losses with no gains or changes, and the link-decision test passed. Restore to NULL guarded by 7963 and remove the override if later superseded. Shifter 26797 remains NULL pending a specific seven-speed X-Press fitment crosswalk; the maker's XCU p. 14 control is six-speed. No brake lever is separately specified by Bianchi. The three earlier links were also validated with scoped overrides and a zero-change SQL replay.
+
+**Accushift cluster follow-up:** User approved spec 26802 NULL → 7994 FW-AL10-K7, black seven-speed 13–30T, based on the XCU group, year and gearing. The Bianchi catalogue does not specify mechanism, finish or part code; 11019 is a silver threaded seven-speed alternative, so this is an inference. The scoped generator mapping is limited to Ocelot 1991. Readback confirmed 7994 and unchanged source 508; Volpe, Ibex and Nyala remain NULL. Guarded SQL replay changed zero rows; 118-catalogue generator comparison retained the 15 pre-existing Huret losses and no gains or changes; link-decision test passed. To restore, set 26802 to NULL guarded by 7994 and remove the scoped override.
 
 ### 1991 US import applied and validated
 
@@ -116,7 +118,7 @@ original scan citation. The Japanese edition uses source 358.
   US Virata's printed Dynamic-II stem and mapped spec 26563 to Nitto
   Dynamic-2 6614. The bike import preserves existing component dates.
 - Equinox and Axis 287 levers, the
-  uncertain Accushift Plus 12–28T / 13–30T clusters and Pista's explicit
+  uncertain Accushift Plus 12–28T / 13–30T clusters other than Ocelot and Pista's explicit
   16T fixed sprocket (26822) stay unlinked. The Grizzly and other
   same-name builds retain their edition-specific text. Names such as
   Command and generic grip, housing and frame specifications keep their
