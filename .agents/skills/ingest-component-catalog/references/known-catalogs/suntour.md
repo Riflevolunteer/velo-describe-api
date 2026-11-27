@@ -485,7 +485,7 @@ Applied: 1048 is now BA-SB00-S/N, 1988–89, source 428; new 12752 is BA-SB01-S,
 
 Rollback: 1048 previously had title `SunTour BA-SB00-S / BA-SB00-N / BA-SB01-S, Superbe Pro`, description `Superbe Pro side-pulls: SB00-S 39-49 mm; SB00-N 47-57 mm, nutted or recessed. Alloy arms, internal springs, thrust bearings, QR; 362 g pair. SB01-S 39-49 mm, recessed (1992); relationship to SB00 uncertain.`, years 1988–94, search `SunTour BA-SB00-S BA-SB00-N BA-SB01-S Superbe Pro`, source 428. If reversing, restore those fields and remove 12752 after checking links.
 
-The 1992 maker catalogue also lists BA-BE00-S and BA-BE00-N together under Blaze, supporting the existing 8041 family; its printed code list does not state the actual reach dimensions. The older Superbe specimens 1045/1046/1050/1051 and Cyclone 11394 remain separate pending the specific evidence described below. No broad claim of identity is made for other series based on a common group name alone.
+The 1992 maker catalogue also lists BA-BE00-S and BA-BE00-N together under Blaze, supporting the existing 8041 family; its printed code list does not state the actual reach dimensions. The older Superbe specimens 1045/1046/1050/1051 remain separate pending the specific evidence described below; Cyclone 11394 was subsequently merged as described below. No broad claim of identity is made for other series based on a common group name alone.
 
 ## Sprint CB-7600/CB-8600 brake reach review — 2026-11-27
 
@@ -509,11 +509,13 @@ Rollback: 1048 was `SunTour BA-SB00-S / BA-SB01-S, Superbe Pro (short reach)`, d
 
 The [1988 English catalogue's Cyclone 7000 page](https://www.equusbicycle.com/bike/suntour/catalog88/pdf/suntour88%20-%200005.pdf) names CB-7100 short 40–50 mm and CB-8100 normal 47–57 mm. The December 1984 No. 62 and 1985 No. 63 inventories below list the same calipers and their CB-7000 / CB-8000 sets, which include CB-7200 levers. The current 1037 short and 1036 normal records both carry 1984–89 dates and source 90, but group 146 Cyclone 7000 and group 63 Cyclone respectively. Neither has bike links; a query found no unlinked bike brake specs naming Cyclone.
 
-Applied on user approval: merged 1036 into stable 1037, `SunTour CB-7100 / CB-8100, Cyclone / Cyclone 7000`, retaining group 146, both reach ranges, set codes and individually attributed weights; existing 1984–89 dates are family-level bounds, not proven availability for each variant. Source 428 attests the two reach options; source 90 supplies the set details and pair weights. Readback verified 1037 and no 1036 row; 11394 remains unchanged. Neither affected row had bike links or generator overrides. SQL replay affected zero rows, the link-decision test passed and SunTour's parenthetical duplicate report found no pairs. The 118-catalogue comparison retained only 15 pre-existing unrelated Huret losses, with no gains or changed links.
+Applied on user approval: merged 1036 into stable 1037, `SunTour CB-7100 / CB-8100, Cyclone / Cyclone 7000`, retaining group 146, both reach ranges, set codes and individually attributed weights; existing 1984–89 dates are family-level bounds, not proven availability for each variant. Source 428 attests the two reach options; source 90 supplies the set details and pair weights. Readback verified 1037 and no 1036 row; 11394 was then unchanged. Neither affected row had bike links or generator overrides. SQL replay affected zero rows, the link-decision test passed and SunTour's parenthetical duplicate report found no pairs. The 118-catalogue comparison retained only 15 pre-existing unrelated Huret losses, with no gains or changed links.
 
 Rollback: 1037 was `SunTour CB-7100, Cyclone (CB-7000 set, short reach)`, description `SunTour CB-7100, Cyclone (CB-7000 set, short reach), Japan. Side-pull calipers, cold-forged alloy, eccentric QR, tire guides, 40-50mm, recessed nut available, 325g pair; CB-7000 = calipers and CB-7200 levers (No. 62, Dec 1984).`, search `SunTour CB-7100 Cyclone`, group 146, UUID `ADBBB976-52D7-4883-B854-1422EBFC63D0`. Retired 1036 was `SunTour CB-8100, Cyclone (CB-8000 set, normal reach)`, description `SunTour CB-8100, Cyclone (CB-8000 set, normal reach), Japan. Side-pull calipers, cold-forged alloy, eccentric QR, tire guides, 47-57mm, recessed nut available, 331g pair; CB-8000 = calipers and CB-7200 levers (No. 62, Dec 1984).`, search `SunTour CB-8100 Cyclone`, group 63, UUID `46D79241-552D-4262-BA9F-11ED52EF27EC`. Both had brand 56/category 3, NULL image, years 1984–89 and source 90. Restore 1037's fields and 1036 if reversing.
 
-Separate 11394 is titled `CB-6100, Cyclone (standard reach)`, source 427, 1989–89, with no bike links. Its description associates it with CB-7100 and otherwise resembles 1036; CB-6100 is also the code of unrelated 1984 XC roller-cam hardware. The [Edition No. 89 scan](https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf), PDF p. 20 / printed p. 19, should be re-read at full resolution to resolve whether this is a misread CB-8100 or a documented road code. Do not merge or change 11394 until that identification is established.
+**Original scan re-read and applied, 2026-11-27:** [Edition No. 89](https://www.radiolabworks.com/bikes/catalogs/Suntour%201988%20%2389%20Components%20Catalog.pdf), PDF p. 20 / printed p. 19, unambiguously reads **CB-7100** short (40–50 mm) and **CB-8100** standard (47–57 mm); each is listed in recessed and nutted mounting, with recessed-pair weights 316 g and 325 g respectively. This supersedes the 11394 CB-6100 road-code transcription and the code-reuse claim in the original ingestion notes below. CB-6100 1052 is the unrelated XC roller-cam. On user approval, retained 1037, added the catalogue-specific weights and source 427, and removed duplicate 11394. Neither had bike links or explicit generator overrides. Readback confirmed 1037 and unchanged 1052, with 11394 gone; SQL replay changed zero rows. Link-decision tests passed and the SunTour parenthetical duplicate report found no pairs. Comparisons across 118 catalogues before and after retained only the 15 pre-existing unrelated Huret losses, with no gains or changed links.
+
+Restoration: 1037 description `Cyclone side-pull brakes: CB-7100 40-50 mm (CB-7000 set), CB-8100 47-57 mm (CB-8000 set); cold-forged alloy, eccentric quick release, tyre guides and recessed mounting option. Pair weights: 325 g and 331 g respectively.`, source 428. 11394: title `SunTour CB-6100, Cyclone (standard reach)`; description `Side-pull road caliper, standard reach (47-57mm), cold-forged alloy arms, eccentric QR, recessed or nutted, 325g pair. Short-reach CB-7100; not the 1984 XC roller-cam CB-6100.`; search `SunTour CB-6100 Cyclone`; years 1989–89; source 427; UUID `483cb390-6fd2-46da-aaf4-44014bb940ad`; brand 56, category 3, group 146, NULL image. Restore only if reversing the reconciliation; its CB-6100 road title was a misread.
 
 ## Superbe CB-3100/CB-4100 brake identity review — 2026-11-27
 
@@ -2467,10 +2469,11 @@ were included.
   XD02-U7, CT-XD10. Absent (dropped by 1989): XC Sport 7000, alpha-5000,
   alpha-3000. **No SunTour Quattro anywhere**: the 1989-91 Bianchi "SunTour
   Quattro" derailleurs are not a SunTour catalogue name in this edition.
-- **Code reuse, not continuity:** the Alpha 1500 RD-1500 / FD-1500, Alpha 2000
-  FD-2000 and the Cyclone standard-reach CB-6100 reuse codes of different older
-  parts (4705 RD-1500 V-GT, 2645 FD-1500 Superbe, 2652 FD-2000 Superbe Pro, 1052
-  XC roller-cam CB-6100). New rows were added; the old rows were not extended.
+- **Code reuse, not continuity:** the Alpha 1500 RD-1500 / FD-1500 and Alpha 2000
+  FD-2000 reuse codes of different older parts (4705 RD-1500 V-GT, 2645
+  FD-1500 Superbe, 2652 FD-2000 Superbe Pro). The previously reported Cyclone
+  CB-6100 road code was a misread of CB-8100; see the review above. XC roller-cam
+  CB-6100 1052 is unrelated.
 - **46 added** (11372-11417, all 1989-1989, source 427): 11372 BL-OL00; 11373 BA-OL00-1 / -2;
   11374 BB-OL00-J; 11375 SL-ED45-B7U / C7U; 11376 BB-ED45; 11377 HB-ED45-F / R;
   11378 RD-BE34-SSB / SS; 11379 FD-BE34-SSH; 11380 HB-BE34-F / R; 11381 RD-1500
@@ -2478,7 +2481,7 @@ were included.
   Alpha 2000; 11384 FD-1500-SSH / GXH Alpha 1500; 11385 SL-2000-CP; 11386
   SL-2000-CHR / CHL; 11387 RD-AT10-GXB / GX; 11388 FD-AT10-GXH; 11389 RD-3040-SS /
   GX; 11390 FD-3040-SS / GX; 11391 SL-3040-CHR / CHL; 11392 SL-4050-CHR / CHL;
-  11393 RD-7300 SVX; 11394 CB-6100 Cyclone (standard reach); XCE 4050 11395
+  11393 RD-7300 SVX; 11394 Cyclone standard reach (subsequently corrected and merged into 1037); XCE 4050 11395
   RD-XE45-GXB, 11396 FD-XE45-GXH, 11397 SL-XE45, 11398 BL-XE45, 11399 BA-XE45-C,
   11400 CT-XE45, 11401 CW-XE45, 11402 BB-XE45, 11403 HB-AT45 (FQ / RQ / FS / RS; the
   XCE and XCM hubs per the p.7 chart), 11404 PL-XE45; XCE 4051 11405 SL-XE46-L3,
