@@ -1,5 +1,13 @@
 # CLB catalogs processed so far
 
+## Titanium / Italia reach review — 2026-11-27
+
+Visually re-read the [1980 Brügelmann mail-order catalogue](https://www.rennrad-geschichten.de/google81f6dbe480740ded-html/alte-kataloge/br%C3%BCgelmann/), source 395, PDF/printed p. 9. It lists CLB Titanium at 48–62 mm, 490 g, a special lightweight offering with titanium and other lightweight parts and Duralinox cables. The page introduction defines prices for front/rear brakes, levers and cables, so 490 g is not represented as calipers alone. The next listing calls CLB Italia an especially short 38–49 mm version, lighter than the preceding model and intended for short frames. It does not say Italia has titanium parts. These are retailer names and a retailer description; no independent manufacturer crosswalk was found.
+
+Applied on user approval: merged 11150 `CLB Italia` into stable 11149 `CLB Titanium / Italia`, retaining the two names, separate reach ranges and scope of Titanium's set weight/material claim. The 1978–88 family span retains the earlier 11149 bounds; 11150 had 1980–88. These catalogue-derived bounds do not prove production dates or that Italia existed in 1978. Neither original record had bike links, and no unlinked CLB Titanium or Italia bike brake specs were found; no generator IDs required updates. Readback verified the merged record and retirement of 11150; SQL replay affected zero rows, the link-decision test passed and the CLB parenthetical duplicate report found no pairs. The 118-catalogue comparison retained only 15 pre-existing unrelated Huret losses, with no gains or changed links.
+
+Rollback: 11149 was `CLB Titanium`, description `Sidepull racing brake, reach 48-62 mm, approx 490 g; sold as a set with levers and cables`, search `CLB Titanium`, 1978–88, source 393, UUID `da2ff443-e01f-11f1-a2df-02fea3763e8d`. Retired 11150 was `CLB Italia`, description `Short-reach version of the Titanium sidepull, reach 38-49 mm, lighter; for very short frames`, search `CLB Italia`, 1980–88, source 395, UUID `da323cbc-e01f-11f1-a2df-02fea3763e8d`. Both had brand 70/category 3, NULL group and NULL image. Restore 11149's fields and 11150 if reversing.
+
 ## Early catalogue sources — assessed 2026-11-23
 
 | Source | What the available pages establish |
