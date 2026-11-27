@@ -1,5 +1,9 @@
 # Shimano catalogs processed so far
 
+## SL-BS50 bar-end shifter date correction — 2026-11-27
+
+[Shimano service instruction S-1, September 1988](https://si.shimano.com/en/pdfs/si/S-1/SI-S-1-000-00-ENG.pdf), already registered as source 373, identifies SL-BS50 as a bar-end SIS/friction control for seven speeds or six with an adapter. Applied component 6146 year_from 1990 → 1988 and source_ref 82 → 373; year_to 1997, title and description unchanged. This attests the six/seven-speed SL-BS50 in 1988, not the earlier availability of every variant in the family: the eight-speed SL-BS50-8 is documented in 1990 and SL-BS50-7 105SC in 1992. No bikes currently link to 6146, and no generator override names it. 1989 Bianchi Equinox spec 18658 stays unlinked because its XT-2 barcon wording does not establish SL-BS50. Readback confirmed the date and source, guarded SQL replay affected zero rows, link-decision tests passed, and before/after comparisons across 118 loaded catalogues both retained 15 pre-existing unrelated Huret losses and no gains or changed mappings. To reverse, restore year_from 1990 and source_ref 82 if the current values are 1988 / 373.
+
 ## 600EX Arabesque BR-6200/BR-6210 reach review — 2026-11-27
 
 The [1981 Shimano catalogue](https://ebykr.com/library/shimano-catalog-1981/), printed December 1980 (source 69), presents both 600EX side-pull brakes together: BR-6200, 43–57 mm and 316 g front/rear; BR-6210, 39–49 mm and 297 g front/rear. It marks BR-6210 as new for that range. The [BR-6210 specimen](https://www.velobase.com/Pages/ViewComponent.aspx?AbsPos=973&Enum=117&ID=BE3BFCF5-6D0F-4C4F-920E-092856C52A2F) notes its arms are mirrored compared with BR-6200, affecting cable routing; this is a real distinction beyond reach, not a claim the calipers are interchangeable. The earlier 1978 BB-330 code is retained only as an alias of BR-6200, not the short BR-6210.
