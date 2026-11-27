@@ -715,7 +715,8 @@ See [validated catalogue evidence](known-catalogs/pinarello.md#circa-1990-catalo
 front/rear and genericTourney lack exact fitment codes; rear4405 has unspecified
 dates/configuration and is not assumed to cover double/triple alike. SunTourRT
 loaded generation is1992-only; no date expansion from an attributedc.1991 source.
-1055 brakes lack reach;300EX pedals lack a unique loaded identity; Croce pedals
+1055 brake 26434 now links to the BR-1055 49/57 family 960 without asserting reach;
+300EX pedals lack a unique loaded identity; Croce pedals
 have several clip configurations. RigidaSHC500, Rush rims, generic tyres/hubs,
 NewCarrera/Turbo/TurbogelAstral saddles, SR crank and alloy parts lack sufficient
 model/configuration evidence. Uncoded clusters remain under literal Freewheel

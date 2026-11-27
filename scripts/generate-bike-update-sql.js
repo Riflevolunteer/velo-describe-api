@@ -2106,14 +2106,14 @@ const COMPONENT_OVERRIDES = {
     'weinmann symetric side pull alloy': [{ from: 1974, to: 1976, id: 8339 }],
     'weinmann symmetric': [{ from: 1974, to: 1976, id: 8339 }],
     'shimano 600 ultegra 8 speed': 966, // 1992 Bianchi Virata: BR-6400 (user call 2026-11-04, as the 1990-91 Viratas; BR-6403 967 also fits)
-    'shimano 105sc': [{ from: 1990, to: 1992, id: 960 }], // BR-1055-49; 1992 Bianchi Alfana (the 1056 group starts 1993)
+    'shimano 105sc': [{ from: 1990, to: 1992, id: 960 }], // BR-1055 49/57 family; 1992 Bianchi Alfana.
     'shimano rx100': [{ from: 1989, to: 1993, id: 1007 }], // BR-A550-49 / -57; conflicting BR-A551 catalogue designation merged into this row (2026-11-12)
     // 1991 / 1992 Bianchi (JP) catalogues
     'campagnolo c record aero levers': 560, // Delta C-Record
     'campagnolo chorus aero levers': 565, // BR-02CH Monoplaner
     'campagnolo athena aero levers': 558, // D500 Athena
     'campagnolo croce d\'aune aero levers': 567, // Delta, Croce d'Aune
-    'shimano 105sc (1055)': 960, // BR-1055-49
+    'shimano 105sc (1055)': 960, // BR-1055 49/57 family
     'shimano deore dx': 7660, // BR-M650 cantilever
     'shimano deore lx': 7582, // BR-M550 cantilever
     // 1992 Colnago: printed group defaults. Shimano's 1992 manual lists
@@ -2247,7 +2247,8 @@ const COMPONENT_OVERRIDES = {
     // 1990 Bianchi US catalogue (retrobike archive 1676).
     'campagnolo athena': [{ from: 1988, to: 1992, id: 558 }], // D500, Athena
     'shimano ultegra linear response': [{ from: 1988, to: 1990, id: 966 }], // BR-6400, 600 Ultegra
-    'shimano 105 super linear response': [{ from: 1990, to: 1993, id: 960 }], // BR-1055-49, 105SC (dual pivot)
+    'shimano 105 super linear response': [{ from: 1990, to: 1993, id: 960 }], // BR-1055 49/57 family, 105SC (dual pivot)
+    '1055 alloy side pull': [{ bike: 'C387 Mirage Pro', from: 1991, to: 1991, id: 960 }], // c.1991 MBK, table: BR-1055; reach unspecified.
     'shimano exage 400ex linear response': [{ from: 1989, to: 1992, id: 1000 }], // BR-A350, Exage Action / 400EX
     'shimano deore xt linear response': [{ from: 1989, to: 1991, id: 983 }], // BR-M732 cantilever
     'shimano deore dx linear response': [{ from: 1989, to: 1991, id: 975 }], // BR-MT62, Deore II / DX
