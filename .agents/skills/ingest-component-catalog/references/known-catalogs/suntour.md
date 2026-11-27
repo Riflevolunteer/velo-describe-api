@@ -539,6 +539,8 @@ The [1991 catalogue p.14](https://www.disraeligears.co.uk/site/suntour_bicycle_e
 
 The 1990 Bianchi Nyala rear spec 7018 says only `SunTour XCT`, and its catalogue photograph shows a direct hanger and long cage but does not choose XT00-GXB versus XT10-GXB. It remains NULL; no other loaded XCT rear specs or existing links to 11070/11071 were found. The 1991 Nyala instead names XCM and is out of this identification. No bike-link or date changes proposed.
 
+Follow-up search for the exact XT00/XT10 model and ordering numbers found no independently coded comparison or packaging crosswalk. The seller's heading claims six- and seven-speed compatibility but its own detailed system field says six-speed; neither assertion distinguishes the two catalogue codes. Live readback confirms 11070 and 11071 remain separate and have no bike links. Revisit when coded specimens, original packaging, a parts sheet or a clearer Nyala original fitment becomes available.
+
 Applied on user approval: enriched descriptions for 11070/11071 with the 1990 maker ordering codes and mount distinctions. The old description on both was `XCT rear derailleur, -GX with mounting bracket and -GXB without bracket.`; titles, years, sources and bike links are unchanged. Readback verified both descriptions and Nyala 7018 remains NULL; SQL replay affected zero rows and the link-decision test passed. The seller's 344 g and claimed six/seven-speed compatibility are not used to distinguish the codes.
 
 ## GPX front derailleur mounts and date review — 2026-11-27
