@@ -475,6 +475,16 @@ source. [Full evidence and scan-page correction](cross-catalog-notes.md#palo-alt
   internal-coil construction/code. Keep 1052 CB-6100 versus 1058 open until a
   sharper original-bike view or parts code is available.
 
+## SunTour GPX shifter family review — 2026-11-27
+
+The [1989 SunTour GPX catalogue scans](https://equusbicycle.com/bike/suntour/suntourscans.html) are source 86 for 6286 SL-GP00-B (braze-on, 80 g) and former 6287 SL-GP00-C (28.6 mm clamp-on, 100 g), AccuShift I.F.C. versions. The separate 11098 SL-GP10-B/C is sourced to the [1991 equipment catalogue](https://www.disraeligears.co.uk/site/suntour_bicycle_equipment_catalog_1991.html) and described as AccuShift Plus; it carries a 1990–91 range. Different codes alone do not establish the redesign or a precise changeover, so retain that family separately pending a component-level crosswalk. Before the merge none of the three records had bike links.
+
+The SunTour ['89 new components' GPX page](https://equusbicycle.com/bike/suntour/suntourscans.html), the [1989 Fuji catalogue p. 32](https://ebykr.com/library/fuji-1989-catalog/) and the [through-1988 SunTour catalogue](https://ebykr.com/library/suntour-catalog-1988/) support a 1989 model-year identification but do not prove manufacture began in 1989. A [seller's GPX group](https://bicyclist.cc/product/suntour-gpx-mini-drivetrain-groupset/amp/) reports 1988 date stamps on the derailleurs, not the shifters; no earlier shifter attestation was found. Retain 1989–91 as existing provisional bounds, without claiming a proven first/last production year.
+
+Applied on user approval: combined 6286/6287 into survivor 6286 titled `SunTour SL-GP00-B / SL-GP00-C, GPX`, preserving both mounts and weights, and linked 1989 Bianchi Brava spec 18449 `SunTour GPX AccuShift` at family level. Its catalogue does not specify the mount or part number, so 6286 is a period-based model-family inference; do not assert a B or C fitment. Kept 11098 separate. Neither the 1990 start of 11098 nor the exact transition to GP10 is independently proven here. Added the scoped generator override. Readback verified the surviving family and Brava link; SQL replay affected zero rows, the link-decision test passed, SunTour's parenthetical duplicate report found no pairs, and 118-catalogue comparison retained only 15 unrelated pre-existing Huret losses with no gains or changed links.
+
+Rollback: 6286 originally had title `SunTour SL-GP00-B, GPX`, description `SunTour SL-GP00-B, GPX, Japan. Braze-on Accushift I.F.C. lever, 6-speed index / ultra 7 index / friction, left Power Ratchet, 80g`, search `SunTour SL-GP00-B GPX`; it retains source 86 and years 1989–91. Retired 6287 had brand 56/category 19/group 64, NULL image, title `SunTour SL-GP00-C, GPX`, description `SunTour SL-GP00-C, GPX, Japan. Clamp-on Accushift I.F.C. lever, 28.6mm, 6-speed index / ultra 7 index / friction, left Power Ratchet, 100g`, search `SunTour SL-GP00-C GPX`, years 1989–91, source 86 and source_id `62C4F1E4-D6B8-40DA-8AB9-F900101759A4`. Restore 6286's fields and 6287, reset 18449 to NULL and remove the scoped override if reverting.
+
 ## SunTour road catalogue 1989 (pp 7-8, 13-14, system chart) and Japanese Superbe page c. 1983 (equusbicycle.com, 6 scans)
 
 - Source: https://equusbicycle.com/bike/suntour/suntourscans.html.
@@ -2508,9 +2518,9 @@ were included.
   Readback verified the 15 inserts and two updates, categories and source references; rerun affected zero rows. Duplicate reports found no merge or near candidates. A live search found no bike specs naming the new models; no links were added. Actual generator/live comparison across 98 loaded catalogues and 21,382 specs exactly matched the pre-load baseline: the existing 15 lost matches concern Huret Rival 4401, outside this task. SQL and comparison scratch files removed after validation.
 - **Left / open:** 3630 unnumbered XCD freehub vs FH-XD10 (new 1989) / FH-XD11
   (1990); 6376
-  CL-XD10 (1988 JP code) kept apart from 11417; 1989 Brava "SunTour GPX" front and
-  "GPX AccuShift" shifters still unlinked (SSB / SSH, B / C rows, text does not
-  choose); p.34's RD-2000-GX is the 1988 Alpha 2000 code (see the 1988 English entry
+  CL-XD10 (1988 JP code) kept apart from 11417; 1989 Brava "SunTour GPX" front
+  remains unlinked (SSB / SSH not distinguished); its GPX shifter was subsequently
+  linked to family 6286 above. p.34's RD-2000-GX is the 1988 Alpha 2000 code (see the 1988 English entry
   above, now in 4706's title); BH-1600 / BH-1800
   7993 vs 3617 overlap untouched. Doubtful small-print stock codes were not used
   in any description.

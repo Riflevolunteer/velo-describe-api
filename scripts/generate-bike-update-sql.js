@@ -4016,6 +4016,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xcd 6000 barcon accushift': [{ from: 1989, to: 1989, id: 6262 }],
     'suntour xce 4050 barcon accushift': [{ from: 1989, to: 1989, id: 6262 }],
     'suntour xce 4050 accushift': [{ from: 1989, to: 1989, id: 11397 }], // 1989 Bianchi Forte: SL-XE45 thumb shifters (Edition No. 89)
+    'suntour gpx accushift': [{ bike: 'Brava', from: 1989, to: 1989, id: 6286 }], // GP00 B/C family; mount unspecified and generation inferred from period.
     // 1989 Peugeot (FR): indexed Simplex levers match the SX Index; scope to these bikes so generic Simplex specs stay unlinked.
     'simplex indexed': [
       { bike: "P 501 B Z 'Ventoux'", from: 1989, to: 1989, id: 7361 },
