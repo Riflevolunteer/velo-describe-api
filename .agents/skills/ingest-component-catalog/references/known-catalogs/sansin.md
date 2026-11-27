@@ -3,6 +3,10 @@
 DB brand: Sunshine/Sansin (brand 392), category Hubs (13). Hubs only; the catalogues also
 sell skewers, quick seat pins and axle sets, which have no component category.
 
+## Cadence PE-30AW / PE-30AWS description-limit review — 2026-11-27
+
+The quality report flags hub 8996 because its description occupies all 255 characters. Its final phrase is `635g, 280g front, 355g rear`; those front and rear figures add to the stated total and the phrase is grammatically complete, though it lacks a final full stop. The length alone does not establish lost text. Live readback shows 1987–87, catalogue source 234 and no bike links. The original [1987 catalogue scan](http://cyclotourist.web.fc2.com/catarogue/part108/index.html), recorded below, was unavailable during this review, so its weights and any omitted detail were not independently rechecked. No database change was made.
+
 ## ET-QS OEM key search — 2026-11-25 (read-only)
 
 Targeted English and Japanese searches for Sansin ET-Q / ET-QS, Raleigh OEM hubs and period maker material did not recover a 1984–85 maker key, coded specimen or suffix crosswalk. A [Panasonic DX-3000 forum listing](https://www.bikeforums.net/classic-vintage/561211-ebay-craigslist-finds-you-looking-one-these-part-ii-1152.html) repeats ET-Q with the sealed, alloy small-flange and quick-release wording already known from the 1986 Panasonic specification; it is not independent maker evidence of ET-QS equivalence. The 1985 Raleigh ET-QS specs 3448/3468/3488 remain unlinked. Revisit with a coded OEM key, marked comparative specimens or an independently documented suffix crosswalk. No database or link changes.
