@@ -3707,8 +3707,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': 6674, // Shimano HS-6300, 600 AX
     // 1987 Bianchi.
     '3ttt ar84': 6424, // 3ttt AR84, Mod. 84 (Record 84)
-    // 1983 Bianchi: a maker-only TTT stem does not identify a particular model.
-    // The 1984 inference is retained pending its separate review.
+    // 1983-84 Bianchi: a maker-only TTT stem does not identify a particular model.
     '3ttt': [
       { bike: "Campione d'Italia", from: 1983, to: 1983, id: null },
       { bike: 'Campione del Mondo', from: 1983, to: 1983, id: null },
@@ -3716,6 +3715,8 @@ const COMPONENT_OVERRIDES = {
       { bike: 'Super Leggera', from: 1983, to: 1983, id: null },
       { bike: 'Tipo Corsa', from: 1983, to: 1983, id: null },
       { bike: 'Eco Pista', from: 1983, to: 1983, id: null },
+      { bike: 'Super Leggera', from: 1984, to: 1984, id: null },
+      { bike: 'Tipo Corsa', from: 1984, to: 1984, id: null },
       { from: 1983, to: 1984, id: 6404 }, // 3ttt AR, Record
     ],
     // 1973-75 Raleigh / 1974 Motobecane "T.T.T. Record": the 1970s Mod. 1
