@@ -2253,7 +2253,7 @@ retains the original `Campagnolo 4001 Super Record PAT. 80`. Descriptions are
 identifiers survive. No component row is added or removed.
 
 Subsequent user selections: 1982 Battaglin spec 12880 and 1981–82 Bianchi specs
-6492 / 6647 were linked to 4151 as judgment calls; the other two rows below remain NULL.
+6492 / 6647 and 1983 Bianchi spec 985 were linked to 4151 as judgment calls; spec 782 remains NULL.
 See the Battaglin and Bianchi notes.
 
 Bike-link follow-through at the time of this review: earlier ingestion notes selected 4149 from the general

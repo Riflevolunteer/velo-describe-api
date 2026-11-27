@@ -540,8 +540,8 @@ see the Raleigh catalogue notes for the decision and source.
   `Campagnolo Super Record` / `Super Rekord` does not identify the late
   first-generation PAT.80 specimen 4149 rather than second-generation 4151.
   **4149 → NULL** for specs **782 / 985 / 6492 / 6647 / 12880**;
-  782 / 985 remain NULL; user subsequently selected second-generation
-  4151 for Battaglin 12880 and Bianchi Super Corsa 6492 / 6647 despite the unresolved catalogue generation. Reopen the remaining cases with
+  782 remains NULL; subsequent judgment calls select second-generation
+  4151 for Battaglin 12880 and Bianchi Super Corsa 6492 / 6647 and Super Leggera 985 despite the unresolved catalogue generation. Reopen the remaining case with
   original fitment markings/photos or a period parts crosswalk. See the
   [specimen review](../../ingest-component-catalog/references/known-catalogs/campagnolo.md#super-record-and-early-campagnolo-specimen-review--2026-11-17).
 

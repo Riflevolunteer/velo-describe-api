@@ -1450,16 +1450,16 @@ successful validation; the user-held source PDF remains available.
 
 ## 1981–1983 Super Record rear links — 2026-11-17, applied and validated
 
-**2026-11-27 user request:** Link 1983 Super Leggera Super Record rear spec 985. The prior review below found the catalogue does not distinguish 4149 from 4151; choose the component during the pending link review rather than assuming a variant has been selected.
+**2026-11-27 Super Leggera link:** At the user's request, spec 985 (source 42) NULL → 4151, 4001 / 0102018 with screw-mounted spring. This is a period-appropriate judgment call consistent with the earlier Super Corsa selections, not identification of the spring from the [1983 catalogue](https://ebykr.com/library/bianchi-1983-catalog/), which names Super Record without distinguishing variants. 4149 is a specific PAT.80 first-generation specimen; 4152 is a pivot-mounted spring variant with stored dates 1984–88, not independently proven introduction dates. Added a 1983 Super Leggera scoped generator override. Readback confirmed 4151 and unchanged text/source; SQL replay affected zero rows. Scoped pre-apply comparison showed only spec 985 gained; the all-catalogue comparison after application retained the 15 pre-existing unrelated Huret losses, with no gains or changes. Link-decision tests passed. To reverse, restore 985 to NULL guarded by 4151 and remove its override.
 
-**Subsequent user selection:** 1981 Super Corsa spec 6492 and 1982 spec 6647 NULL → 4151, Super Record 4001 / 0102018 with screw-mounted spring. This supersedes the NULL decision below for these two specs; the catalogues themselves do not distinguish the generation. Scoped 1981–82 Super Corsa generator mapping added; readback confirmed 4151 and sources 165/166 while 1983 spec 985 remains NULL. SQL replays changed zero rows; 118-catalogue comparison retained 15 unrelated Huret losses and no gains or changes. Updated link-decision test passes and keeps other years/bikes guarded. Restore either spec to NULL guarded by 4151 and adjust its override if superseded.
+**Subsequent user selection:** 1981 Super Corsa spec 6492 and 1982 spec 6647 NULL → 4151, Super Record 4001 / 0102018 with screw-mounted spring. This supersedes the NULL decision below for these two specs; the catalogues themselves do not distinguish the generation. Scoped 1981–82 Super Corsa generator mapping added; readback confirmed 4151 and sources 165/166 while 1983 spec 985 was still NULL. SQL replays changed zero rows; 118-catalogue comparison retained 15 unrelated Huret losses and no gains or changes. Updated link-decision test passes and keeps other years/bikes guarded. Restore either spec to NULL guarded by 4151 and adjust its override if superseded.
 
 User approved clearing unsupported PAT.80 specimen 4149 from rear specs **6492**
 (1981 Super Corsa, source 165), **6647** (1982 Super Corsa, source 166) and **985**
-(1983 Super Leggera, source 42). All three now NULL, retaining text/raw labels and
+(1983 Super Leggera, source 42). All three were then NULL, retaining text/raw labels and
 sources. Earlier year-based 4149 picks above are superseded: the generic group
 name does not distinguish this late first-generation specimen from second-gen
-4151. Generator guard prevents reassignment; no forced replacement link or CSV
-change. Reopen only with original distinguishing fitment evidence. See the
+4151. The original generator guard prevented reassignment; subsequent scoped
+judgment calls are recorded above. See the
 [component review](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#super-record-and-early-campagnolo-specimen-review--2026-11-17)
 for specimen/photo evidence, the complete five-catalogue change and live validation.

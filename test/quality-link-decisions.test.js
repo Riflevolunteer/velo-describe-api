@@ -109,6 +109,9 @@ test('generic 1980-83 Super Record rear specs cannot select the atypical PAT. 80
         const selected = matchComponent(value, records, null, 'Rear Derailleur', year, 'Super Corsa')
         if (year === 1981 || year === 1982) assert.equal(selected.component_id, 4151)
         else assert.equal(selected, null)
+        const leggera = matchComponent(value, records, null, 'Rear Derailleur', year, 'Super Leggera')
+        if (year === 1983) assert.equal(leggera.component_id, 4151)
+        else assert.equal(leggera, null)
         assert.equal(matchComponent(value, records, null, 'Rear Derailleur', year, 'Other'), null)
       }
       assert.equal(matchComponent(value, records, null, 'Rear Derailleur', 1979, 'Other').component_id, 4148)
