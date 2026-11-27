@@ -1,5 +1,11 @@
 # CLB catalogs processed so far
 
+## GL reach-family review — 2026-11-27
+
+The [CLB technical catalogue's GL page](https://i.ebayimg.com/images/g/Tt8AAOSwvHFnBZXD/s-l1600.jpg), source 467, lists GL 47.60, 48.65, 55.75 and 63.85 together, supporting a common reach family in that printing. Its date is only bounded to May 1980 or later. DB 612 is a generic GL; 613–615 are 47–60 specimens with different badges and releases, while 616, 619 and 621 represent the other reaches. The catalogue does not establish whether the 613–615 specimen variants are contemporaneous with the pictured family or whether the reported earlier alloy and later plastic releases mark different generations. The earlier separate-variant decision below predates the user's reach-family policy; it remains a precaution about these unresolved construction differences, not a rule against combining reaches. Seek dated maker crosswalks or coded specimens before consolidating these rows.
+
+Read-only check: none of 612–616, 619 or 621 has bike links or a numeric generator override. 1989 Peugeot Cosmic spec 17182 (`CLB / GL 47-60`) and Mont Blanc spec 17219 (`CLB 47-60, white`) remain unlinked. The catalogue page does not establish their exact construction or white finish, so no links or database changes are proposed yet.
+
 ## Omega R / T reach review — 2026-11-27
 
 The [CLB GO! No. 1 newsletter, April 1989](https://ebykr.com/library/clb-go-newsletter-1989/), source 367, explicitly presents the Omega in two reach options: R 43–57 mm and T 53–72 mm. The shared Omega system features a hollow adjustment pin and SBS synchronization, four listed colours, and an aero-lever set in an attaché case; EXTREM pads are offered. Source 367 attests the 1989 models, not production endpoints.
