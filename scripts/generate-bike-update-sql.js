@@ -2138,7 +2138,7 @@ const COMPONENT_OVERRIDES = {
     'dia compe 500 n': [{ bike: '100', from: 1985, to: 1985, id: 681 }, { from: 1986, to: 1986, id: 681 }], // 1986 Miyata: DC500N, N-brakes
     // 1986 Miyata (US catalogue): New Dura-Ace = 7400, New 600 EX = 6207, Deore XT = M700, Z-series / Light Action L-52x, New Cyclone = 1985 RD-6000 / FD-3300.
     'shimano new dura ace': [{ bike: 'Carbon Tech 5000', from: 1987, to: 1987, id: 991 }, { bike: 'Carbon Tech 3000', from: 1987, to: 1987, id: 991 }, { bike: 'Aero Miyata', from: 1987, to: 1987, id: 991 }, { bike: 'Team Miyata', from: 1987, to: 1987, id: 991 }, { bike: 'Team Miyata', from: 1985, to: 1985, id: 991 }, { from: 1986, to: 1986, id: 991 }], // BR-7400
-    'suntour sprint': [{ from: 1986, to: 1986, id: 1042 }], // CB-7600, Sprint
+    'suntour sprint': [{ from: 1986, to: 1986, id: 1042 }], // CB-7600 / CB-8600 family; model identification period-based, reach unspecified.
     'dia compe gx 400': [{ from: 1986, to: 1986, id: 8082 }], // GX-N series
     'shimano z 570': [{ from: 1986, to: 1986, id: 959 }], // BR-Z570 Z-Series row
     'shimano z 720': [{ from: 1986, to: 1986, id: 959 }], // BR-Z720 Z-Series row

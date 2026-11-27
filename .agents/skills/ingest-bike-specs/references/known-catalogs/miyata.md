@@ -600,7 +600,7 @@ Temporary SQL, scans, snapshots and review scripts were removed after validation
   Z-series / Light Action: FD-Z202 / Z204 / Z206, RD-Z501, RD-L522 7553,
   RD-L523 4518, SL-L422 7555 (not the 1972 L422 console 6181), SL-Z401,
   BR-Z570 row 959 for Z-570 / Z-720, BL-Z304. SunTour: New Cyclone = FD-3300
-  2629 / RD-6000 (S) 4739; Sprint RD-7000 4758, CB-7600 1042, CW-7500 1987,
+  2629 / RD-6000 (S) 4739; Sprint RD-7000 4758, CB-7600/CB-8600 family 1042, CW-7500 1987,
   BH-2000 7808, RH-4400 track 3612; Seven FD-1400 2641; XC-Sport RD-XS00
   4788 (front 2660 via the 1986 Raleigh override); UB-10 / UBN-10 -> 6288;
   Perfect 6-speed 7813. Others: Sugino VP triple 1970, Sansin RE-60 9003,
