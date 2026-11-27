@@ -149,7 +149,7 @@ and Triathalon Victory retain their tubular/clincher rim alternatives.
 Reviewed and validated links (all compatible with DB categories/dates):
 
 - Super Record Special group: FD2313, RD4152, crank1509, post5761,
-  levers231, pedals3716; brakes NULL without reach evidence.
+  levers231, pedals3716; brakes 25996 remain NULL pending review of the group wording after the reach-family merge.
 - Triomphe (Catena Lusso): FD2314, RD4155, crank1515, post5764, brakes585,
   levers233, pedals3719. Victory (Treviso/Triathalon): FD2318, RD4168,
   crank1516, post5764, brakes590, levers235, pedals3720.
@@ -286,8 +286,8 @@ The other current holds remain:
   earlier notes' association of 1498 with 1049/3 needs reconciliation before
   choosing that row. The [1498 specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=5E4BE2A4-2F98-4B0D-8330-4D4834BB9518)
   and generic x3 name do not justify a new Super Record triple component.
-- **Brakes 25892:** no measured reach or uniquely identified caliper version;
-  582 and 7005 remain candidates. **Freewheel 25896:** speed/variant/lockring
+- **Brakes 25892:** remains NULL pending review of the x3 group wording after
+  the reach-family merge; 582 covers both reaches. **Freewheel 25896:** speed/variant/lockring
   detail insufficient to choose 2168 versus 2169. **Saddle 25898:** Concor shape
   and red cover do not establish the construction among 5544/5547 and other
   Concor variants. **Bars 25899:** `Cinelli Special` gives no unique bend code.
@@ -331,7 +331,7 @@ New group links, by category (existing seven chain/tyre links unchanged):
 
 - Prestige / Super Record: FD 2313, crank 1509, seatpost 5759, levers 231 (formerly 232),
   pedals 3716. Rear group remains NULL: 4148 and 4151 overlap circa 1979.
-  Brakes remain NULL without standard/short-reach identification (582/7005).
+  Brakes 25846/25864 now link to 582, the early 4061/4061/1 family; reach remains unspecified.
 - Record: FD 2299, RD 4125, crank 1496, seatpost 5749, levers 226,
   pedals 3708, using the existing period Record mappings. Brakes remain NULL;
   the reach variants were merged into 572 in 2026-11-27, but the estimated
@@ -384,9 +384,9 @@ Criterium seta → 6748 (Super Record). All seven are within component date rang
 New chain overrides are limited to 1979. No component rows or dates changed.
 
 Refused automatic links: makerless Super Leggera saddle matched Iscaselle
-5375, so a generic NULL guard now prevents that false identity; Record Special
-Super Record brakes matched standard-reach 582, but short-reach 7005 also fits
-the wording, so a model/year-specific NULL precedes the existing override.
+5375, so a generic NULL guard prevents that false identity. Record Special
+Super Record brakes 25842 now link to the 582 family after 7005 was merged;
+the catalogue does not specify reach.
 Remaining broad/ambiguous descriptions stay literal text: Cinelli saddles,
 Cinelli Special bars, 3T bars, Mavic rims, Regina Extra chain and freewheels.
 Mavic OR does not distinguish OR7/OR10; Legger Special and Servizio Corse are

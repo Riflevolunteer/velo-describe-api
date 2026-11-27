@@ -2209,7 +2209,7 @@ const COMPONENT_OVERRIDES = {
       { from: 1992, to: 1992, bike: 'Mondiale', id: 567 }, // 1992 Bianchi JP: group named and Delta-style calipers pictured
     ],
     // 1978 Bianchi (Italian catalogue, labibleduvelocataloguesbianchi).
-    'campagnolo super record short reach with special bianchi lightening': [{ from: 1975, to: 1985, id: 7005 }], // "bassi": 4061/1 short reach
+    'campagnolo super record short reach with special bianchi lightening': [{ from: 1975, to: 1982, id: 582 }, { from: 1983, to: 1985, id: 583 }], // "bassi": 4061/1 short reach within the generation families
     'universal competizione 77': [{ from: 1977, to: 1988, id: 1083 }], // Rekord/748: Universal Mod. 77
     'universal competizione cx': [{ from: 1970, to: 1985, id: 1086 }], // Campione del Mondo CX: Universal CX
     'spidel lsx': 823, // 1982 Peugeot PRO 10 / PY 10 S: MAFAC LSX (1982), Spidel-badged
@@ -2421,7 +2421,7 @@ const COMPONENT_OVERRIDES = {
     'universal mod 68 side pull racing': 1082, // Universal Super 68
     'mafac racer center pull (1 front 2 rear)': 838, // MAFAC Racer (lettered MAFAC RACER)
     // 1981 Kalkhoff.
-    'campagnolo super record': [{ bike: 'Super Record Special', from: 1982, to: 1982, id: null }, { bike: 'Prestige', from: 1979, to: 1979, id: null }, { bike: 'Super Record', from: 1979, to: 1979, id: null }, { bike: 'Record Special', from: 1979, to: 1979, id: null }, { to: 1982, id: 582 }, { from: 1983, id: 583 }], // c.1979 Pinarello: reach unspecified (582 vs 7005); otherwise 4061 v1/v2.
+    'campagnolo super record': [{ to: 1982, id: 582 }, { from: 1983, id: 583 }], // 4061/4061-1 families; generation and circa-1982 assignment provisional.
     'dura ace ex': 997, // Shimano BR-7200, Dura-Ace EX
     'shimano 600 ax': 965, // Shimano BR-6300, 600 AX
     'weinmann 405': 1117, // Weinmann AG 405
