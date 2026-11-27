@@ -106,7 +106,7 @@ test('1987 Bianchi C-Record cranks require generation evidence even with a uniqu
   const early = { component_id: 1483, title: 'Campagnolo C-Record', category: 'Cranksets' }
   const late = { component_id: 1482, title: 'Campagnolo C-Record (1987-1994)', category: 'Cranksets' }
   for (const records of [[early], [late], [early, late]]) {
-    for (const bike of ['X4', 'MONDIALE']) {
+    for (const bike of ['X4', 'Mondiale']) {
       assert.equal(matchComponent('Campagnolo C Record 53/42T', records, null, 'Crankset', 1987, bike), null)
       // Keep the reviewed guard bounded to these two bikes and this catalogue year.
       assert.equal(matchComponent('Campagnolo C Record 53/42T', records, null, 'Crankset', 1986, bike).component_id, 1483)

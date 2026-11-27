@@ -317,7 +317,7 @@ const NON_ROAD_SKIP = new Map(
       'Ghisallo 28in Condor 10 vel. (00.5.05)', 'Ghisallo 26in Condor 10 vel. (00.5.62)',
     ],
     '1985|bianchi': ['Bambina'],
-    '1987|bianchi': ['VOLPE'],
+    '1987|bianchi': ['Volpe'],
     '1990|bianchi': ['Intercept', 'Equinox', 'Tangent', 'Axis', 'Volpe', 'Backstreet', 'Boardwalk', 'Advantage', 'Mondiale Frameset'],
     '1993|bianchi': ['Volpe', 'Boardwalk', 'Advantage'],
     '1973|falcon': ['Model 58', 'Super-Tourist De Luxe Model 88', 'Super-Tourist De Luxe Model 89', 'Super Tourist Model 82', 'Super Tourist Model 83'],
@@ -1466,7 +1466,7 @@ const COMPONENT_OVERRIDES = {
     // 1987 Bianchi Strada: friction Tourney TY10 (7607), whose start is
     // 1986 per Shimano's official Tourney history (previously dated 1990).
     // TY20 SIS launched in 1990; the earlier DB-series is a different era.
-    'shimano tourney': [{ from: 1987, to: 1987, bike: 'STRADA', id: 7607 }],
+    'shimano tourney': [{ from: 1987, to: 1987, bike: 'Strada', id: 7607 }],
     'simplex prestige': [{ bike: 'Mirage', from: 1973, to: 1973, id: null }, { from: 1900, to: 1979, id: 4583 }, { from: 1980, to: 1987, id: 4647 }], // Simplex Prestige (variant of AR637P/NI), 1971-1974; 1982 Peugeot (NL) PL 8 M: S001 T Prestige (1975-89)
     // 1973-76 Raleigh Gran Sport DL 160 "Simplex Maxi": the AR 642 Maxi-Prestige,
     // Simplex's only Maxi rear (long cage, wide range; 14-28 freewheel on the bike).
@@ -3059,7 +3059,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo c record 53 42t': [
       // Source 46, 1987 Bianchi PDF pp.4/15: no distinguishing shield marking or parts code.
       { bike: 'X4', from: 1987, to: 1987, id: null },
-      { bike: 'MONDIALE', from: 1987, to: 1987, id: null },
+      { bike: 'Mondiale', from: 1987, to: 1987, id: null },
       { to: 1986, id: 1483 }, { from: 1987, id: 1482 },
     ],
     // 1978 Raleigh (US, ebykr scan).
@@ -4805,7 +4805,7 @@ const COMPONENT_OVERRIDES = {
     'sugino sp kvc 230mm': 5928, // 1986 Raleigh Elkhorn: "KVC" a typo of the 1985 "SP KC 230mm"
     'simplex slj 4164 dural silver anodised 266mm': 7305, // 1977 Peugeot (DE) PY 10/CP: Simplex SLJ4164, row 1978-81, a year early
     // 1987 Bianchi Mondiale table names no code; 600BA / 600CA Aero / 600DD remain distinct.
-    'gipiemme cronosprint anodized': [{ bike: 'MONDIALE', from: 1987, to: 1987, id: null }],
+    'gipiemme cronosprint anodized': [{ bike: 'Mondiale', from: 1987, to: 1987, id: null }],
     // Judgement call 2026-10-30: bare Cronosprint uses the main group; distinct from the qualified Mondiale value.
     'gipiemme cronosprint': [{ from: 1980, to: 1991, id: 5789 }], // 1987 Bianchi Giro / Super Leggera: Crono Sprint 600BA (fluted)
     // Peugeot Simplex material-only posts, picked by the bike's Simplex tier: SX group -> SX 1500, SLJ group -> SLJ6164.
@@ -4878,10 +4878,10 @@ const COMPONENT_OVERRIDES = {
     // Trofeo / Nuovo Alloro = Corsa silver. Supersedes the inferred "Regina C Record" transcription.
     'regina cx silver': [{ bike: 'X4', from: 1987, to: 1987, id: 1384 }],
     'regina corsa silver': [
-      { bike: 'MONDIALE', from: 1987, to: 1987, id: 1376 },
-      { bike: 'SUPER LEGGERA', from: 1987, to: 1987, id: 1376 },
-      { bike: 'TROFEO', from: 1987, to: 1987, id: 1376 },
-      { bike: 'NUOVO ALLORO', from: 1987, to: 1987, id: 1376 },
+      { bike: 'Mondiale', from: 1987, to: 1987, id: 1376 },
+      { bike: 'Super Leggera', from: 1987, to: 1987, id: 1376 },
+      { bike: 'Trofeo', from: 1987, to: 1987, id: 1376 },
+      { bike: 'Nuovo Alloro', from: 1987, to: 1987, id: 1376 },
     ],
     // 1991 / 1992 Bianchi (JP) catalogues
     'shimano cn hg70 grey black': 7568,
