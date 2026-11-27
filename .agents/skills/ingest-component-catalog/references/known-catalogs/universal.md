@@ -1,5 +1,13 @@
 # Universal catalogs processed so far
 
+## Model 51 / Super 68 reach review — 2026-11-27
+
+The [1975 Holdsworth catalogue](https://ebykr.com/library/holdsworth-1975-aids-catalog/), pp. 30–31, offers Model 51 with shallow-front/deep-rear 100/101 or deep-front/deep-rear 101/101, and Sport 68 with shallow or deep stirrups. The [c.1978 Universal maker catalogue](https://labibleduvelocataloguesuniversal.blogspot.com/p/universal-1978.html), source 339, lists Extra 51 calipers 100/101 with lever 301 and Super 68 calipers 102/103 with lever 306. The [1976 Palo Alto catalogue](https://ebykr.com/library/palo-alto-bicycle-shop-1976-catalog/) describes Model 51 as similar to the 68 with lower-reaching calipers, but that retail comparison should not be generalized into a claim that all Model 51 brakes are long reach or all 68 brakes short reach. Each model has multiple reach configurations, and the maker uses different component and lever numbers.
+
+Applied on user approval: retained separate 1080 Model 51 and 1082 Super 68 records, dates, titles and all five bike links. Replaced 1080's overbroad claim that the Model 51 was the same as the 68 but long reach with the 1975 offered configurations; added the reach choices to 1082 and preserved the reported weights and maker part numbers. Source 260 is the registered 1975 Holdsworth catalogue. This supersedes the previous description's simplified long-reach-only comparison; no manufacturer dimension was inferred from generic model names. Readback verified both descriptions and all five links; SQL replay affected zero rows and the link-decision test passed. No title, date or generator mapping changed.
+
+Rollback: 1080's previous description was `Universal Extra Mod. 51 (Brev 453949), Italy. Listed as the Model 51 in 1976: the same brake as the 68 but long reach; 503 g per set with levers. Refs 100 / 101, lever 301.`, source 339. 1082's previous description was `Universal Super 68, Italy, 305 grams (avg). Side-pull; the Model 68 was Universal's best seller, 495.5 g per set with levers (1976). Refs 102 / 103, lever 306.`, source 389. Restore those values if reversing; links 1842/12551 were on 1080 and 1838/3951/22965 on 1082.
+
 ## Freni Universal catalogo generale (c. 1978; La Bible du Vélo blog "Universal 1978", 29 pages), `data_source` 339
 
 - Label "Freni Universal catalogo generale (c. 1978)", country IT. Source:
