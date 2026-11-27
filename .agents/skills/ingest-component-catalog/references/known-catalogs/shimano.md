@@ -3011,6 +3011,10 @@ Before correction, component 994 had a 255-character description asserting 307.5
   ingested as sources 365 / 366 below. These are separate from this gallery
   of 1997 dealer-manual pages. BB-LP27 is now attested; BB-UN73 remains absent.
 
+## BR-1050 reach-family consolidation — 2026-11-27
+
+On user approval, combined BR-1050-49 953 and BR-1050-57 954 as family 953, `Shimano BR-1050, 105`, preserving both reach ranges and the type-49 weight. Both had source 74 and 1986–89 dates; [Shimano's service sheet](https://si.shimano.com/en/pdfs/si/P-28/SI-P-28-000-00-ENG.pdf) names both variants. Four bike links moved from 954 to 953 and 1986 Motobécane C153S spec 25210 linked to the family; original specification text and provenance remain. SQL replay affected zero rows, full catalogue comparison retained only the 15 pre-existing unrelated Huret losses, and the link-decision test passed. [Full restoration and review](../../../ingest-bike-specs/references/known-catalogs/cross-catalog-notes.md#brake-reach-linking-review--2026-11-27).
+
 ## Cleanup 2026-10-27 (no catalogue): BR-1050 "dark anodized" duplicates
 
 - Deleted (user-approved) two velobase rows duplicating the catalogue-sourced

@@ -39,8 +39,7 @@ overrides in the generator. Reviewed and deliberately left unlinked:
   FR "New 600" without EX is 6400). Applies to headset, brakes, derailleurs,
   crank, pedals, freewheel, chain and hubs. The 7551 hub override is nulled for
   these bikes.
-- **Shimano New 105 brakes**: BR-1050-49 or -57 reach is not printed. The other
-  New 105 parts link to the 1050 series.
+- **Shimano New 105 brakes**: reach is not printed. The later BR-1050 family merge supersedes the previous reach-based hold; C153S spec 25210 now links to 953.
 - **Huret Rival** front/rear (Super Mirage, Mirage 18, Mirage, Ranger MT40): this
   is the open Rival 1086-00 / AV 62.1 D / AR 41.1 D / ARIS Rival identity question
   in TODO. Super Mirage's **Huret Rider** front is a 42-52 double, and 8962 is
@@ -81,7 +80,7 @@ Applied as reviewed on2026-11-19, source465; all deliberately unlinked values re
 
 - C662E SuperRecord's printed CampagnoloTRIUMPH equipment means Triomphe, not a SuperRecord group. The initial front/LX and hub-flange holds are superseded by the [applied 2026-11-19 re-review](known-catalogs/motobecane.md#1986-german-105-and-triomphe-link-corrections--applied-2026-11-19): standard double front 2314 and pictured low-flange hubs 3277 are linked and verified. Rear first-style/S3 and the bare Turbo saddle still lack distinguishing evidence and remain NULL.
 - C502 LeChampion's uncoded HuretNewSuccess fitment does not establish the exact AV66.3D/AR47.1D pair versus other documented versions. Explicit scoped NULLs suppress the current automatic picks8960/4402. Its bare StronglightA9 does not supply locknut/version evidence; its unqualified MichelinHi-Lite does not select Comp/Pro/Road or the1996 HiLite10530.
-- C153S JubiléSport's **Shimano105NEW** was initially held across categories. The [applied 2026-11-19 re-review](known-catalogs/motobecane.md#1986-german-105-and-triomphe-link-corrections--applied-2026-11-19) identifies the named New 105 family as the 1050 series, attested in Shimano's August 1986 catalogue: HP-1050, FC-1050, FD-1050 and RD-1050 are linked and verified. Brake reach still cannot select BR-1050-49 versus -57; the six-speed cassette text does not identify a separate loaded cassette model. Those two remain NULL, as does the combined MICHELIN/HUTCHINSONHP22 tyre wording.
+- C153S JubiléSport's **Shimano105NEW** was initially held across categories. The [applied 2026-11-19 re-review](known-catalogs/motobecane.md#1986-german-105-and-triomphe-link-corrections--applied-2026-11-19) identifies the named New 105 family as the 1050 series, attested in Shimano's August 1986 catalogue: HP-1050, FC-1050, FD-1050 and RD-1050 are linked and verified. A later 2026-11-27 merge combined BR-1050-49 and -57 into family 953, and brakes spec 25210 is now linked there despite the unspecified reach. The six-speed cassette and combined MICHELIN/HUTCHINSONHP22 tyre wording remain NULL.
 - C352E Super-Mirage's HuretPILOTE/RIVAL wording lacks explicit front/rear assignment. KC152/KC152D's bareHuret does not supply a model, and their Rigida13/20 lacks a tyre diameter selecting700C versus27-inch; keep thoseNULL. ThunBetaII has no suitable identified row. No hub maker is inferred from C352E's cluster-only Naben line.
 - Plain/compound Atom/Normandy, uncoded HelicoSport/HelicoSeal variants, unqualified Maillard700/700SH clusters, WeinmannA129 finish/version, Symetric cosmetic variants, unnumbered cantilevers, generic/tandemTA cranks and unidentified house equipment remain literal text. New source/variant evidence is required before choosing a component; this review does not create a generic rematching task.
 

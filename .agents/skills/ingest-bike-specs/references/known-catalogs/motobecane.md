@@ -366,8 +366,10 @@ detail and p.10's small-flange hub portrait support the standard front and
 not a printed maker code. No global Triumph spelling alias is introduced.
 Scoped bike/year rules preserve the source wording and the reviewed identities.
 
+**Subsequent 2026-11-27:** BR-1050 reach variants were combined as family 953; 105 brakes spec 25210 linked NULL → 953. Reach remains unprinted, and the earlier NULL decision is superseded.
+
 **Still deliberately NULL:** Triomphe rear25181 cannot choose4155 versus4157
-from the available portrait; 105 brakes25210 cannot choose39–49 versus47–57mm;
+from the available portrait;
 cassette25221 has no established separately loaded model crosswalk. Do not
 link a Cassettes spec to the FH-1050 hub assembly. Those are remaining evidence
 decisions, not automatic new hunt tasks.

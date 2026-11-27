@@ -804,7 +804,7 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   Anjou last size / tyres / pedals (watermark), Canyon Express colour code.
   Mont Cenis's initially transcribed "700x70C" was corrected to the printed
   "700x20C" on 2026-11-14 (see Michelin follow-up above).
-- Overrides (US): 105 SIS FD / RD / SL-1050, BR-1050 -> 953 (49 short reach), Deore XT M730 FD / RD / SL / FC / PD, SL-MT60,
+- Overrides (US): 105 SIS FD / RD / SL-1050, BR-1050 -> 953 (family, formerly 49 short reach), Deore XT M730 FD / RD / SL / FC / PD, SL-MT60,
   Weinmann 570 -> 1129, SP-6207, CN-6120 (range to 1987), Rigida 1521 -> 5154 AL 1521, Helicomatic wordings to 1987,
   "Huret ECO 5" (printed; = the 1986 Corbier's Eco S) -> front 8796 / rear 8485, "Shimano Z501, stem shifters" group cell
   -> FD-Z202 2542 / RD-Z501 4544 as 1986.

@@ -2148,9 +2148,8 @@ const COMPONENT_OVERRIDES = {
     // 1989 Raleigh (UK Lightweights catalogue, issue Jan 89): Santé 5000, 600 Ultegra 6400, 105 = 1050 / 1051 (7-speed) parts, Sport LX A452, Exage Action A350,
     // Deore XT II M732, Deore II MT62, Mountain LX M452, Exage Trail M350, Deore MT60.
     'shimano santé aero levers with q r': 1008, // Record Ace Moderne: BR-5000-49
-    'shimano 105 slr aero levers colour': [{ from: 1987, to: 1989, id: 953 }], // Delta (racing geometry): BR-1050-49
-    // Quadra II (training geometry): reach not printed; BR-1050-57 as the 1987 Triathlon 12 (Type 57, mudguard clearance).
-    'shimano 105 slr aero levers': [{ from: 1989, to: 1989, id: 954 }],
+    'shimano 105 slr aero levers colour': [{ from: 1987, to: 1989, id: 953 }], // BR-1050 family; reach not printed
+    'shimano 105 slr aero levers': [{ from: 1989, to: 1989, id: 953 }], // BR-1050 family; reach not printed
     'shimano a450 slr aero levers': 7211, // Elix: BR-A450
     'shimano a350 slr aero levers': 1000, // Strada: BR-A350, Exage Action
     'shimano deore xt ii cantilever front and rear': 983, // Avanti: BR-M732 cantilever, Deore XT-II
@@ -2158,9 +2157,8 @@ const COMPONENT_OVERRIDES = {
     // 1988 Raleigh (UK Lightweights catalogue, issue Jan 88): 1988 group rows (Santé 5000, 600 Ultegra 6400, Exage Sport A450, 105 = the 1050 SIS series, Deore = MT60).
     'shimano santé aero levers with quick release': 1008, // Record Ace Moderne: BR-5000-49
     'shimano ultegra aero levers': [{ from: 1988, to: 1993, id: 966 }], // Road Ace Select: BR-6400, 600 Ultegra
-    'shimano 105 hooded levers': [{ from: 1987, to: 1989, id: 953 }], // Team Competition: BR-1050-49 (racing frame, no mudguard clearance)
-    // Quadra / Triathlon (training geometry): reach not printed; BR-1050-57 as the 1987 Triathlon 12 (Type 57, mudguard clearance).
-    'shimano 105 quick release aero levers': [{ from: 1988, to: 1988, id: 954 }],
+    'shimano 105 hooded levers': [{ from: 1987, to: 1989, id: 953 }], // BR-1050 family; reach not printed
+    'shimano 105 quick release aero levers': [{ from: 1988, to: 1988, id: 953 }], // BR-1050 family; reach not printed
     'exage a450 aero levers with quick release': 7211, // Corsa: BR-A450, Exage Sport
     'shimano 6400 ultegra': [{ from: 1989, to: 1989, id: 966 }], // 1989 Peugeot (FR) Galibier: BR-6400
     'shimano sport lx 450': [{ from: 1989, to: 1989, id: 7211 }], // 1989 Peugeot (FR) Aspin: BR-A450, Exage Sport / Sport LX
@@ -2171,7 +2169,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore xt rear deore xt u brake': [{ from: 1987, to: 1989, id: 981 }], // 1989 Peugeot (NL) Europe Express: BR-M730, as the M730 derailleurs
     // 1988 Peugeot (FR): the 1988 range.
     'shimano new 600': [{ from: 1988, to: 1993, id: 966 }], // PX SIS / PG SIS: BR-6400, 600 Ultegra
-    'shimano 105 new': [{ bike: 'C153S Jubilé Sport', from: 1986, to: 1986, id: null }, { from: 1987, to: 1989, id: 953 }], // C153S: 1050 family known, reach unresolved; later A 500 Galaxie remains BR-1050-49.
+    'shimano 105 new': [{ bike: 'C153S Jubilé Sport', from: 1986, to: 1986, id: 953 }, { from: 1987, to: 1989, id: 953 }], // BR-1050 family; reach need not be inferred
     'shimano deore cantilever front rear': [{ from: 1987, to: 1989, id: 978 }], // VTT 4 L Alpine Express: BR-MT60, Deore (as the 1987 Canyon Express)
     'dia compe alloy 981 cantilever': 661, // 1986 Falcon Everest: Dia-Compe 981 (1980-86)
     'shimano br at50 cantilever alloy': 1003, // 1986 Falcon K2: BR-AT50, Exage Trail (1985-93); catalogue misprints "BRATSO"
@@ -2189,9 +2187,9 @@ const COMPONENT_OVERRIDES = {
     'weinmann 570': 1129, // 1987 Peugeot (FR) table: Weinmann AG 570
     'weinmann 570 side pull': 1129, // 1987 Peugeot (FR) table
     'weinmann 570 white': 1129, // 1987 Peugeot (FR) table
-    'shimano br 105': 953, // 1987 Peugeot (FR) Aspin: BR-1050-49, as the US Galaxie
+    'shimano br 105': 953, // 1987 Peugeot (FR) Aspin: BR-1050 family
     'shimano 6400': [{ from: 1987, to: 1990, id: 966 }], // 1987 Peugeot (FR) Puymorens: BR-6400, 600 Ultegra
-    'shimano linear system br 1050': 953, // 1987 Peugeot (US) Galaxie / Comete: BR-1050-49 short reach (700c racers), as the 1986 BR-6207 pick
+    'shimano linear system br 1050': 953, // 1987 Peugeot (US): BR-1050 family; reach not printed
     'weinmann 570 alloy side pull': 1129, // 1987 Peugeot (US) Mont Cenis: Weinmann AG 570
     'weinmann 570 primo': 1129, // 1987 Peugeot (US) PX 10: Weinmann AG 570
     'weinmann 610 alloy center pull qr double levers': 1136, // 1986 Peugeot (US) Avoriaz: Weinmann AG 610 Vainqueur 999
@@ -2243,7 +2241,7 @@ const COMPONENT_OVERRIDES = {
     'mafac racer forged': [{ from: 1970, to: 1982, id: 838 }], // 1974 Peugeot PX 60
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
     'shimano 600ex qr; recessed fitting calipers and hooded alloy levers': [{ from: 1987, to: 1987, id: 972 }], // Road Ace: BR-6208 600EX (1986-87)
-    'calipers: shimano new 105 type 57 long bolt': [{ from: 1987, to: 1987, id: 954 }], // Triathlon: BR-1050-57 105 (long, 57 type)
+    'calipers: shimano new 105 type 57 long bolt': [{ from: 1987, to: 1987, id: 953 }], // Triathlon: explicit type 57 retained in text; BR-1050 family
     // 1970 Peugeot (Dutch-market catalogue).
     'mafac racer': [{ from: 1970, to: 1982, id: 838 }], // MAFAC Racer (lettered MAFAC RACER); ranges to 1982 with the rows (c. 1982 MAFAC catalogue, source 299)
     // 1990 Bianchi US catalogue (retrobike archive 1676).

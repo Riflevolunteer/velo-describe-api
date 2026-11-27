@@ -506,7 +506,7 @@ Task-created original-panel download, SQL and comparison files removed.
   other catalogues of the set (Racers, BMX, fun bikes) are not on the page.
 - Overrides (1987 block per category): 105 = the 1987 "105" 1050 series
   (FD 2462, RD 4449, SL-1050 6130, FC-1050 1778 incl. the Biopace cell,
-  HB-1050 3524, PD-1050 3953, HP-1050 3083, BR-1050-57 954); 600EX = the
+  HB-1050 3524, PD-1050 3953, HP-1050 3083, BR-1050 family 953 (formerly 954; the bike text specifies type 57)); 600EX = the
   1986-87 6208 SIS series (FD-6207 2481, RD-6208 4471, SL-6208 6149, FC-6207
   1798, FH-6208 3539, MF-6208-6 2218, BR-6208 972, HP-6207 3090). The
   existing 'shimano 105' FD / RD overrides keep the 1983-85 Golden Arrow
@@ -557,7 +557,7 @@ Task-created original-panel download, SQL and comparison files removed.
   600 CX 3392 (only row, dated 1980), Brooks Professional pre-softened 5295;
   PD-T100 3952; Cinelli 64 80's 2802, Cinelli 1E 6490 (dated 1980-86, only
   row), Selle Italia Turbo Special 5519 (dated 1990, only row). Team
-  Competition 105 brakes -> BR-1050-49 953 (racing frame, no mudguard
+  Competition 105 brakes -> BR-1050 family 953 (formerly BR-1050-49; racing frame, no mudguard
   clearance). Specialized Crossroads II nulled (the only row is the 1983-84
   original).
 - Matcher picks kept: HP-1050 3083, Tange MTB-225 3154, PD-M730 3967, Michelin
@@ -602,7 +602,7 @@ Task-created original-panel download, SQL and comparison files removed.
   975); Ozark M452 Mountain LX (FD 2528, RD 4524, FC 1836), PD-M450 7199;
   Chinook / Touriste M350 Exage Trail (FD 2527, RD 7183, FC 7195, PD 7200);
   Randonneur Deore = MT60 (HP 7228, FC 1809), Maillard 600 CX 3392. Delta
-  brakes BR-1050-49 953 (racing geometry). TTT Grand Prix bar -> 3ttt CGP 2768
+  brakes BR-1050 family 953 (formerly BR-1050-49, inferred from racing geometry). TTT Grand Prix bar -> 3ttt CGP 2768
   (keyed '3ttt grand prix ...': WORD_ALIASES rewrites ttt -> 3ttt).
 - Matcher picks kept: TTT Record stem -> 3ttt AR Record 6404 (1980-91),
   Brooks Professional leather -> Team Professional 5303 (as 1974), Michelin

@@ -46,6 +46,12 @@ test('1986 Motobecane New 105 resolves both derailleurs without changing later o
   }
 })
 
+test('BR-1050 family links preserve both specified and unspecified brake reach', () => {
+  const records = [{ component_id: 953, title: 'Shimano BR-1050, 105', category: 'Brakes' }]
+  assert.equal(matchComponent('Shimano 105 NEW', records, null, 'Brakes', 1986, 'C153S Jubilé Sport').component_id, 953)
+  assert.equal(matchComponent('Calipers: Shimano New 105, Type 57 long bolt', records, null, 'Brakes', 1987, 'Triathlon 12').component_id, 953)
+})
+
 test('a material-only seatpost does not match an unnamed Titec model', () => {
   const rows = [{ component_id: 1, title: 'Titec Aluminium', category: 'Seat Posts' }]
   assert.equal(matchComponent('Aluminium', rows, null, 'Seatpost', 1984, 'PH 12'), null)
