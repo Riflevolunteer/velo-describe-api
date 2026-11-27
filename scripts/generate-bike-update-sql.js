@@ -634,6 +634,7 @@ function normalizeForMatch(value) {
 // different parts on different bikes; the first matching range wins.
 const COMPONENT_OVERRIDES = {
   'Front Derailleurs': {
+    'suntour gpx': [{ bike: 'Brava', from: 1989, to: 1989, id: 2634 }], // GP00 mount family; exact mount unspecified in the catalogue.
     // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
     'suntour xc pro top pull with narrow cage': [{ bike: 'Equinox', from: 1991, to: 1991, id: 2659 }, { bike: 'Grizzly', from: 1991, to: 1991, id: 2659 }],
     'suntour xc comp top pull with narrow cage': [{ bike: 'Axis', from: 1991, to: 1991, id: 11021 }],

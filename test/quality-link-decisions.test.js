@@ -2,6 +2,15 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('1989 Bianchi Brava GPX front derailleur resolves to the mount family', () => {
+  const records = [
+    { component_id: 2634, title: 'SunTour FD-GP00-SSB / FD-GP00-SSH, GPX', category: 'Front Derailleurs' },
+    { component_id: 99999, title: 'SunTour GPX Other', category: 'Front Derailleurs' },
+  ]
+  assert.equal(matchComponent('SunTour GPX', records, null, 'Front Derailleur', 1989, 'Brava').component_id, 2634)
+  assert.notEqual(matchComponent('SunTour GPX', records, null, 'Front Derailleur', 1989, 'Other')?.component_id, 2634)
+})
+
 test('1990 Bianchi Axis top-pull front derailleur cannot select the bottom-pull XCD', () => {
   const records = [{ component_id: 2662, title: 'SunTour FD-XD10-GXH, XCD 6000', category: 'Front Derailleurs' }]
   assert.equal(matchComponent('SunTour XCD Top Pull', records, null, 'Front Derailleur', 1990, 'Axis'), null)
