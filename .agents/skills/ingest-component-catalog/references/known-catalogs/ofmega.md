@@ -1,5 +1,11 @@
 # Ofmega catalogs processed so far
 
+## Bianchi Competizione pedals — 2026-11-27
+
+The [1985 Bianchi Japan range sheet](https://ebykr.com/library/bianchi-1985-japan-range-sheet/) names `Ofmega Competizione` pedals on Speciale-II and Rekord 26; live specs 5749 / 5800 are NULL. The held Ofmega catalogue lists numbered quill pedals without connecting them to the Competizione group. A [vintage dealer listing](https://www.velosaloon.com/collections/ofmega?page=3) calls one pedal `Competizione #9600`, a new but secondary crosswalk lead. Its individual product URL returned HTTP 429 during this review, so the listing's photographs or packaging could not be checked; it is not maker or dated original-fitment evidence. Existing 8783 `Ofmega 9600, quill` is dated 1979–88; 8784 is 9650, and 3884 is Super Competizione, a separately named group. The Bianchi sheet gives no model code, so 8783 is a plausible but provisional inference rather than a confirmed 1985 fitment.
+
+**Applied provisionally on user approval:** 5749 / 5800 NULL → 8783, without retitling 8783; scoped generator mappings and a regression test retain this selection. The 1985 Bianchi comparison before applying showed exactly the two intended gains. After applying, readback confirmed both links with original text and source 144; SQL replay changed zero rows; the 118-catalogue comparison retained only the 15 pre-existing unrelated Huret losses, with no gains or changed mappings; link-decision tests passed. A coded maker parts list or marked original 1985 Bianchi fitment is needed to confirm the inference. To reverse, set both specs to NULL guarded by 8783 and remove their scoped overrides.
+
 ## Master headset 3063 — date correction applied 2026-11-20
 
 The [1987 Bianchi catalogue](https://velobase.com/CatalogScans/1987Bianchi.pdf)

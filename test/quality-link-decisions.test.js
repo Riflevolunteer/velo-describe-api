@@ -2,6 +2,14 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('1985 Bianchi Competizione pedal selection is scoped to the two reviewed bikes', () => {
+  const records = [{ component_id: 8783, title: 'Ofmega 9600, quill', category: 'Pedals' }, { component_id: 3884, title: 'Ofmega Super Competizione', category: 'Pedals' }]
+  for (const bike of ['Speciale-II', 'Rekord 26']) {
+    assert.equal(matchComponent('Ofmega Competizione', records, null, 'Pedals', 1985, bike).component_id, 8783)
+  }
+  assert.equal(matchComponent('Ofmega Competizione', records, null, 'Pedals', 1985, 'Other'), null)
+})
+
 test('Bianchi Aero II saddle fitments use the named component', () => {
   const records = [{ component_id: 12753, title: 'Selle Italia Aero II', category: 'Saddles' }]
   for (const [bike, year] of [['Professional', 1983], ['Speciale-II', 1985], ['Rekord 26', 1985]]) {

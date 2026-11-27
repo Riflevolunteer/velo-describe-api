@@ -4370,6 +4370,7 @@ const COMPONENT_OVERRIDES = {
     'shimano deore xt competition': [{ from: 1991, to: 1991, id: 3968 }], // 1991 Bianchi Signature: PD-M735, as the 1990 Signature 2 / 1991 Aranessa
     'shimano sport lx': [{ from: 1989, to: 1989, id: 3976 }], // 1989 Bianchi Sport SX: PD-A450, as the 1989 Peugeot "Sport LX A 450"
     'shimano spd': [{ from: 1993, to: 1993, id: 7666 }], // 1993 Bianchi Nth FS (XTR): PD-M737 SPD, as the 1993 Super Grizzly "SPD-737"
+    'ofmega competizione': [{ bike: 'Speciale-II', from: 1985, to: 1985, id: 8783 }, { bike: 'Rekord 26', from: 1985, to: 1985, id: 8783 }], // Provisional: dealer associates Competizione with 9600; maker crosswalk unverified.
     'ofmega quattro': [{ from: 1989, to: 1991, id: 3885 }], // 1989-91 Bianchi Campione d'Italia / Trofeo: Ofmega Vantage pedal; crank 1705 is "Vantage (Bianchi Quattro version)" (3885 year_to 1988 -> 1991; judgement call)
     'mks rt 7 chrome plated': [{ from: 1985, to: 1986, id: 10832 }], // Miyata 90 / Sport-10; MKS 9004, RT-7 (Edition 11 p.4).
     'mks 33': [{ from: 1983, to: 1983, id: 10831 }, { from: 1986, to: 1986, id: 10831 }], // 1983 / 1986 Miyata 100 / 90: MKS 6001, 33 (Edition 11 p. 4, added 2026-11-06)

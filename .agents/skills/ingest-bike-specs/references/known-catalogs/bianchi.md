@@ -489,11 +489,11 @@ API listing, PDF and two page renders removed after documenting these findings.
   seatposts 'sakae p 5' -> 5857 CT-P5, 'sakae p 3' -> 5855 CT-P3; null:
   'selle italia turbo junior' (matcher hit the adult Turbo), the
   Speciale-II either/or rim cell.
-- Left unlinked: TTT bars/stems, Nitto Technomic stems and Junior bar,
+- Left unlinked at ingestion: TTT bars/stems, Nitto Technomic stems and Junior bar,
   Sakae RY / AH stems, Sakae bare 390 bar, Dia-Compe 500G / DC400N / GC200
   / NGC200 / DC195 (no 1985 rows by those codes), Campagnolo Victory hubs
   (flange unknown), Suzue LPF / 28H, Ofmega Junior cranks and Competizione
-  pedals, Sakae CT/SPG triple, MKS Promenade, Vittoria (bare and Seta),
+  pedals (later provisionally linked to 8783), Sakae CT/SPG triple, MKS Promenade, Vittoria (bare and Seta),
   Panaracer, Sedis / HKK, Selle Italia Aero II / ANA (Aero II later added as 12753), Martano Pro / G-P80,
   Ambrosio, Bianchi original rims, frame prose.
 - Regression: all 22 loaded catalogues unchanged (1,449 links).
