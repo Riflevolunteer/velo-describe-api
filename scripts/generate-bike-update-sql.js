@@ -3146,9 +3146,8 @@ const COMPONENT_OVERRIDES = {
     // Plain and Bianchi-marked 0304 cranksets share the consolidated family row.
     'campagnolo gran sport': [{ bike: 'Italia', from: 1982, to: 1982, id: null }, { from: 1978, id: 1472 }], // 0304 Gran Sport, including Bianchi-marked chainring variant merged from 1473
     'campagnolo nuovo record': [{ from: 1967, to: 1987, id: 1496 }], // 1982 Raleigh Team Replica: Campagnolo 1049, (Nuovo) Record Strada v4
-    // 1987 Bianchi. "Master Gran Premio" substring-hit Master; the catalog
-    // names the Gran Premio.
-    'ofmega master gran premio 52 42t': 1694, // Ofmega Gran Premio
+    // 1987 Bianchi Squadra: Master crankset; Gran Premio is the adjacent pedal cell.
+    'ofmega master 52 42t anodized chainrings': [{ bike: 'Squadra', from: 1987, to: 1987, id: 1698 }],
     'ofmega super competizione 52 42t': 1703, // Ofmega Super Competizione (road, 2nd version)
     'ofmega super competizione pista 48t': 1702, // Ofmega Super Competizione (pista)
     'campagnolo victory 52 42t': 1516, // Campagnolo 0355, Victory

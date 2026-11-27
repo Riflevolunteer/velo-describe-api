@@ -529,9 +529,9 @@ API listing, PDF and two page renders removed after documenting these findings.
 - Introduced the explicit-null override ("do not link"): 1987 "Shimano 600"
   brakes substring-hit the 1970s centre-pull and the DB has no 6207 row.
   Ranged so pre-1984 catalogs still get the centre-pull.
-- Auto-links corrected: C Record pedals (Pista → 305/501), C Record headset
+- Historical auto-link changes: C Record pedals (Pista → 305/501), C Record headset
   (Century Finish → 304/104), Master Gran Premio crank (Master → Gran
-  Premio), Shimano 105 hubs (Golden Arrow → HB-1050), Dura-Ace brakes
+  Premio; [subsequently corrected](#squadra-master-crankset-transcription--review-2026-11-27)), Shimano 105 hubs (Golden Arrow → HB-1050), Dura-Ace brakes
   (centre-pull → BR-7400, ranged from 1984).
 - Nuovo Alloro front spec 1229 retains Victory 2318. Campagnolo's February
   1987 brochure independently attests that front family, resolving the old
@@ -698,9 +698,15 @@ API listing, PDF and two page renders removed after documenting these findings.
 
 ## 1987 Bianchi Shimano override pass — 2026-10-02
 
+### Squadra Master crankset transcription — review 2026-11-27
+
+The [1987 USA catalogue, p. 15](https://ebykr.com/library/bianchi-1987-catalog-road-sport-bicycles/) was checked against its page image: Squadra's crankset cell says `Ofmega Master`, `52/42T`, `anodized chainrings`; its separate pedal cell says `Ofmega Gran Premio`. P. 9 also names the Master crankset. The live crankset spec 1267 and local CSV wrongly combine the two cells as `Ofmega Master Gran Premio 52/42T` and link to Gran Premio 1694. Pedal spec 1268 correctly says Ofmega Gran Premio and is unlinked; no Gran Premio pedal row was found. Ofmega Master 1698 describes light-alloy arms and 52/42 rings, but its 1988-only bounds derive from a specimen, not a demonstrated introduction; identifying it with the printed Master remains a model-name inference.
+
+Applied on user approval: corrected 1267 and the local source CSV to `Ofmega Master 52/42T anodized chainrings`, linked it to 1698 and extended that row's year_from from 1988 to the catalogue-attested 1987. Updated the scoped generator override; pedal spec 1268 remains unchanged and unlinked. Readback confirmed the crank and pedal; guarded SQL replay affected zero rows and link-decision tests passed. The 118-catalogue comparison retained only the 15 pre-existing unrelated Huret losses, with no gains or changed links. To reverse, restore 1698's 1988 start, spec 1267's `Ofmega Master Gran Premio 52/42T` and link 1694, the CSV cell and the prior override. Independently, the same page prints Squadra's freewheel `24-24T`, while spec 1276 and the CSV say 14-24T; do not silently normalize this likely printing error. The Limited cell does print 14-24T. Review and repair 1276 separately.
+
 ### Limited and Squadra 600 hub/freewheel ambiguity — review 2026-11-27
 
-The [1987 Bianchi catalogue p. 15](https://ebykr.com/library/bianchi-1987-catalog-road-sport-bicycles/) identifies Limited hubs as Shimano N600 and lists N600 14–24T under the freewheel/chain heading for Limited and Squadra. It does not specify HB-6207, MF-6208, the number of sprockets, or whether the rear assembly is a threaded freewheel or a cassette. The current CSV/live text omits the initial N but likewise does not name those model codes. The earlier override pass below assumes MF-6208 from the generic gearing description and then uses that inferred freewheel to justify HB-6207. That is circular: an assigned component is not independent evidence of the original fitment. The catalogue's use of a freewheel heading does not by itself rule out a cassette, as the same heading covers other bikes.
+The [1987 Bianchi catalogue p. 15](https://ebykr.com/library/bianchi-1987-catalog-road-sport-bicycles/) identifies Limited hubs as Shimano N600 and lists N600 under the freewheel/chain heading for Limited and Squadra. Limited prints 14–24T; Squadra prints 24–24T, although its current CSV/live text says 14–24T (see the review above). It does not specify HB-6207, MF-6208, the number of sprockets, or whether the rear assembly is a threaded freewheel or a cassette. The current CSV/live text omits the initial N but likewise does not name those model codes. The earlier override pass below assumes MF-6208 from the generic gearing description and then uses that inferred freewheel to justify HB-6207. That is circular: an assigned component is not independent evidence of the original fitment. The catalogue's use of a freewheel heading does not by itself rule out a cassette, as the same heading covers other bikes.
 
 Shimano 600 candidates include 3539 FH-6208 rear/HB-6207 front and 7551 conventional hub set; 2217 MF-6207 and 2218 MF-6208 are separate freewheel families. These establish ambiguity, not the original fitment of either bike. Applied on user approval: cleared Limited hubs 1254 from 7551 and Limited/Squadra freewheel specs 1256/1276 from 2218; bike- and year-scoped generator overrides preserve the NULLs. Source text and component dates were unchanged. Readback verified all three; SQL replay changed zero rows. The full generator comparison before applying showed exactly these three proposed losses in addition to 15 pre-existing Huret losses; after application only those 15 remained. The link-decision and link-priority tests passed. To reverse, restore 1254 to 7551 and 1256/1276 to 2218 after checking current values, and remove the three scoped NULL overrides.
 

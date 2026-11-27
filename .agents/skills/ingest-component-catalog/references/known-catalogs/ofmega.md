@@ -1,5 +1,9 @@
 # Ofmega catalogs processed so far
 
+## Master crankset 1698 — 1987 Bianchi evidence
+
+The [1987 Bianchi USA catalogue](https://ebykr.com/library/bianchi-1987-catalog-road-sport-bicycles/), p. 9 and p. 15, specifies the Squadra's Ofmega Master crankset with 52/42T anodized rings; the adjacent Gran Premio cell describes pedals. On user approval, corrected bike spec 1267 and linked it to existing Master 1698, extending its year_from 1988 → 1987 based on this model-name identification. The match is provisional because the bike catalogue supplies no part code. Source 262, description and 1988 end remain unchanged. [Bike-source correction, validation and rollback](../../../ingest-bike-specs/references/known-catalogs/bianchi.md#squadra-master-crankset-transcription--review-2026-11-27).
+
 ## Bianchi Competizione pedals — 2026-11-27
 
 The [1985 Bianchi Japan range sheet](https://ebykr.com/library/bianchi-1985-japan-range-sheet/) names `Ofmega Competizione` pedals on Speciale-II and Rekord 26; live specs 5749 / 5800 are NULL. The held Ofmega catalogue lists numbered quill pedals without connecting them to the Competizione group. A [vintage dealer listing](https://www.velosaloon.com/collections/ofmega?page=3) calls one pedal `Competizione #9600`, a new but secondary crosswalk lead. Its individual product URL returned HTTP 429 during this review, so the listing's photographs or packaging could not be checked; it is not maker or dated original-fitment evidence. Existing 8783 `Ofmega 9600, quill` is dated 1979–88; 8784 is 9650, and 3884 is Super Competizione, a separately named group. The Bianchi sheet gives no model code, so 8783 is a plausible but provisional inference rather than a confirmed 1985 fitment.
