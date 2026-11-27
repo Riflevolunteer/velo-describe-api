@@ -57,8 +57,7 @@ alter CSVs, database records or the prior country decision.
   high flange. Spidel competition brakes -> 1029 (made by Mafac);
   Weinmann 605 -> 1133 (1978-80); Mafac Competition (plain and
   "simplified") -> 825 later version; Racer -> 838; Raid -> 843; tandem
-  cantilever -> 845. Spidel S7 headset -> 3123 Stronglight S7 (DB dates
-  1981-83; catalogue shows 1979). Lyotard course pedals were linked to 3815 460D; the review below supersedes this.
+  cantilever -> 845. Spidel S7 headset -> 3123 Stronglight S7; its start was subsequently changed to 1979, provisionally based on the Peugeot transcription. [Source and limits](../../../ingest-component-catalog/references/known-catalogs/stronglight.md#s7-headset-3123--earlier-peugeot-fitment-review-2026-11-27). Lyotard course pedals were linked to 3815 460D; the review below supersedes this.
   Atax stem -> 6447 (1A style). Super Champion 700C -> 5176 Competition.
   Ideale 2002 and Michelin Elan matched themselves.
 - Left unlinked: Weinmann 506 (no row), Peugeot Trophy hubs and Lightrace

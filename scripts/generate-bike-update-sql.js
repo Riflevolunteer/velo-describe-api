@@ -2583,7 +2583,7 @@ const COMPONENT_OVERRIDES = {
     'stronglight b 10': 3114, // 1986 Peugeot (FR) table PGN 10 M / GOLD
     'stronglight a 9': 3112, // 1986 Peugeot (FR) table PY 10 M / PRO 10 / PY 10 FC
     'stronglight b10': 3114, // 1984 Peugeot PSV 10 L / PS 10 L: Stronglight B10 (1984-86)
-    'spidel 57': 3123, // 1982 Peugeot PY 10 S: table prints "Spidel 57", read as the S7 (Stronglight S7 Super Competition, 1981-83)
+    'spidel 57': 3123, // 1982 Peugeot PY 10 S: table prints "Spidel 57", read as the Stronglight S7.
     'stronglight d6 titanium': [{ from: 1977, to: 1980, id: 3116 }], // 1978 Peugeot (NL) PY 10 CP: D6 Extra Leger
     'stronglight v4 competition': [{ from: 1960, to: 1982, id: 3125 }], // 1978 Peugeot (NL) PX 10 LE: V4 later version
     'stronglight d 6 titanium': [{ from: 1977, to: 1977, id: 3116 }], // 1977 Peugeot (DE) PY 10/CP: D6 Extra Leger (1977-80)
@@ -2641,7 +2641,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc comp': 8045, // SunTour HS-ST00-J / -I (XC-Comp headset per the 1992 system chart)
     'tange cd sealed': 3155, // Tange Levin CD
     // 1979 Peugeot (French catalogue).
-    'spidel s7 competition': 3123, // Stronglight S7 Super Competition; DB dates it 1981-83, catalogue shows it 1979
+    'spidel s7 competition': 3123, // 1979 Peugeot: model-name identification, date supported by prior transcription.
     // Headset link pass 2026-10-26 (from /linkCoverage).
     'tange cd': 3155, // 1990 Bianchi Alfana / Virata: Tange Levin CD, as the 1993 'tange cd sealed'
     'hatta "vesta" sealed steel cp': 3020, // 1986 Raleigh Elkhorn: Hatta Vesta, as the 1990 Bianchi "Hatta Vesta"

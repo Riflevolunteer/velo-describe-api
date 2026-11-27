@@ -1,5 +1,11 @@
 # Stronglight catalogs processed so far
 
+## S7 headset 3123 — earlier Peugeot fitment review 2026-11-27
+
+The [1980 Dutch Peugeot catalogue](https://www.peugeotshow.com/1980nl.html), [PY 10 LC page](https://www.peugeotshow.com/1980nl/1980nl_32.jpg), visibly specifies `Stronglight S7` and says the components are Spidel, attesting that headset by model year 1980. The 1979 French Peugeot catalogue was previously transcribed from its page images as `Spidel S7 competition` for PY 10 CP and PY 10 LC (source 40); see the [Peugeot source notes](../../../ingest-bike-specs/references/known-catalogs/peugeot.md#1979-peugeot--1979_peugeot_speccsv-29-bikes-405-specs-88-linked). A [Scribd OCR copy](https://ro.scribd.com/doc/19690592/Peugeot-Catalogue-1979) reads the relevant code as `57`, which cannot independently distinguish S7 from an OCR error; the original 1979 viewer pages could not be reopened for a fresh visual check. A [seller's 1979 PY10 CP](https://upcycles.cc/products/peugeot-py10-cp-prestige-peugeot-road-bike-53cm-1979) reports a Stronglight S7, but the bicycle has been restored and does not establish an original fitment.
+
+Applied on user approval: changed 3123 year_from 1981 → 1979 based on the prior Peugeot transcription, supported by the clearly printed 1980 Stronglight S7 name. This is a model-name identification and catalogue attestation, not a proven production start or proof of the headset's detailed hardware in 1979. All four bike links, description, source 195 and 1983 end year remain unchanged. Readback confirmed the date and links; SQL replay changed zero rows, link tests passed, and the 118-catalogue comparison retained only 15 pre-existing unrelated Huret losses. To reverse, restore year_from 1981 after checking current fields and links. Recheck the 1979 spelling if a readable original page becomes available.
+
 ## 2001 Titanium cassette — 2026-11-21 (applied and validated)
 
 The bilingual [Stronglight Road/MTB catalogue](https://www.disraeligears.co.uk/site/stronglight_-_catalogue_2001.html)
