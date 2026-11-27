@@ -4,7 +4,7 @@
 
 The [CLB technical catalogue's GL page](https://i.ebayimg.com/images/g/Tt8AAOSwvHFnBZXD/s-l1600.jpg), source 467, lists GL 47.60, 48.65, 55.75 and 63.85 together, supporting a common reach family in that printing. Its date is only bounded to May 1980 or later. DB 612 is a generic GL; 613–615 are 47–60 specimens with different badges and releases, while 616, 619 and 621 represent the other reaches. The catalogue does not establish whether the 613–615 specimen variants are contemporaneous with the pictured family or whether the reported earlier alloy and later plastic releases mark different generations. The earlier separate-variant decision below predates the user's reach-family policy; it remains a precaution about these unresolved construction differences, not a rule against combining reaches. Seek dated maker crosswalks or coded specimens before consolidating these rows.
 
-Read-only check: none of 612–616, 619 or 621 has bike links or a numeric generator override. 1989 Peugeot Cosmic spec 17182 (`CLB / GL 47-60`) and Mont Blanc spec 17219 (`CLB 47-60, white`) remain unlinked. The catalogue page does not establish their exact construction or white finish, so no links or database changes are proposed yet.
+**Family-level follow-through, 2026-11-27:** The [CLB GL parts listing](https://www.greenwich-market-trader.co.uk/en/item.php?ITM=16169) identifies rear pivot 18041 for all four reach sizes, corroborating the maker page's family grouping but not dating or identifying individual badge/release specimens. Updated existing generic 612's description with the four ranges and AS13 GL alloy, source 1 → 467; its years remain NULL. The 1989 Peugeot Cosmic explicitly prints `CLB / GL 47-60`, so spec 17182 NULL → 612, a family-level link without choosing a specimen. A bike/year-scoped override reproduces it. Mont Blanc 17219 `CLB 47-60, white` remains NULL: its text doesn't print GL and a white 47–60 GL has not been verified. Specimens 613–615 and 616/619/621 remain separate pending a dated crosswalk; no merge is asserted. Scoped comparison before applying showed only 17182 gained; after application the 118-catalogue comparison retained the 15 pre-existing unrelated Huret losses and no gains or changes. Readback confirmed the component, Cosmic link and Mont Blanc NULL, SQL replay affected zero rows, the link-decision test passed and the CLB parenthetical duplicate report found no pairs. To reverse, restore 612 description `CLB GL, France` and source 1, set 17182 back to NULL guarded by 612, and remove its override.
 
 ## Omega R / T reach review — 2026-11-27
 
@@ -169,7 +169,8 @@ page numbers are not visible.
   has an inset badge, whereas the parts list specifies self-adhesive plates.
   A polished release alone does not settle the full variant. Rows **613/614/615**
   remain separate and undated. No pictured white GL47.60 or original 1989
-  Peugeot fitment establishes specs **17182/17219**.
+  Peugeot fitment establishes either specimen version; Cosmic **17182** was
+  subsequently linked at family level as described above, while **17219** stays NULL.
 - Competition's conventional lever **843** does not establish the aerodynamic
   assembly on 1982–84 Peugeot PH12 (**11470/11789/12040**) or the earlier generic
   Competition fitment. Do not equate Competition 46.57 with GL47.60, date it

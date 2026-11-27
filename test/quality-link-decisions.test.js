@@ -2,6 +2,12 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('1989 Peugeot Cosmic names the CLB GL family without selecting a specimen', () => {
+  const records = [{ component_id: 612, title: 'CLB GL', category: 'Brakes' }, { component_id: 614, title: 'CLB GL 47-60 (alloy quick release)', category: 'Brakes' }]
+  assert.equal(matchComponent('CLB / GL 47-60', records, null, 'Brakes', 1989, 'Cosmic').component_id, 612)
+  assert.equal(matchComponent('CLB 47-60, white', records, null, 'Brakes', 1989, 'Mont Blanc'), null)
+})
+
 test('Dia-Compe 500N and 630N reach variants share the DC-N family', () => {
   const records = [{ component_id: 681, title: 'Dia-Compe DC500N / DC630N, N-brakes', category: 'Brakes' }]
   for (const value of ['Dia-compe DC630N alloy', 'Dia-compe DC 630N alloy', 'Dia-compe 630N alloy', 'Dia-Compe DC630N alloy S.P.']) {

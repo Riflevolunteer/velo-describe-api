@@ -905,7 +905,7 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
   Aris 2121; 1989 Helicomatic wordings except the Cosmic -> 8131; Hi-Lite Competition -> 6835; Mavic Oxygen -> M6 8150; "Turbo, white" -> 5508;
   Atax Philippe Tour de France -> 2902. Null: "Aero levers" (matcher hit Gipiemme), bare "Sachs-Huret" (Avoriaz), Monaco
   "Shimano Positron" (only row dated 1980-83).
-- Left unlinked: Mavic 190 NE, Maillard CX 550, Lyotard 136 (two variants), CLB GL 47-60 (three variants), Simplex SX 640,
+- Left unlinked at ingestion (later resolutions recorded separately): Mavic 190 NE, Maillard CX 550, Lyotard 136 (two variants), CLB GL 47-60 (three specimen variants; Cosmic later linked to family 612), Simplex SX 640,
   Sachs-Huret Rider rear, Nervar white crank, Maillard Normandie hubs, generic Weinmann / Rigida / Lee Chi / San Marco cells.
 - Regression: all 70 other catalogues' link counts unchanged.
 

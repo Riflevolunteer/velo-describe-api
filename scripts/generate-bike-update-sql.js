@@ -2385,6 +2385,7 @@ const COMPONENT_OVERRIDES = {
     'weinmann 506 side pull': 7764, // Weinmann AG 506
     'weinmann 506 side pull with safety levers': 7764,
     'weinmann 506': 7764,
+    'clb gl 47 60': [{ bike: 'Cosmic', from: 1989, to: 1989, id: 612 }], // Peugeot names the GL family; badge and release variant unknown.
     'clb weinmann 506': 7764,
     // 608 CLB Competition is the 1950-70 brake; the 1982-84 Peugeot PH 12 "CLB Competition (aerodynamic)" is the
     // 1980s aero brake, which has no row (drift check 2026-10-28: exact / substring matches linked the wrong era).
