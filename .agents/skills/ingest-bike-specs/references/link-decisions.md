@@ -247,6 +247,8 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Freewheels / cassettes
 
+- **1987 Bianchi Limited and Squadra**, specs **1256/1276**: N600 14–24T does not identify MF-6208-6 or rule out a cassette. Links cleared; bike-scoped NULL overrides retain the decision. [Evidence](known-catalogs/bianchi.md#limited-and-squadra-600-hubfreewheel-ambiguity--review-2026-11-27).
+
 - **1982 Aero Miyata, spec 20825:** keep the seven-sprocket Dura-Ace EX cluster unlinked from six-speed specimen 1210 pending coded original fitment or a maker AX/EX crosswalk. The scoped NULL override and live unlink were applied and validated. [Evidence](known-catalogs/cross-catalog-notes.md#follow-up-catalogue-headings-and-aero-miyata--2026-11-23).
 
 - **1989 Peugeot Cosmic (NL), spec 17174:** preserve the printed seven
@@ -295,6 +297,8 @@ see the Raleigh catalogue notes for the decision and source.
 - Also several rows fit: 1991-92 Bianchi Proto / X-4 "Campagnolo Sigma" (4; tubulars 4970 Sigma Strada, 7032 Sigma 20 Strada, 7031 Sigma Pave, 4969 Sigma Crono all cover 1991), 1994 Cinelli Supercorsa "Campagnolo Omega" (4955 / 4957 / 4961), 1991 Colnago Krono "Ambrosio Aero (spoked-wheel option)" (4; 4892 Aero, 9481 Aerodynamic, 9482 Aero Elite). Either/or and two-rim cells stay unlinked: "Campagnolo Victory or Ambrosio Metamorphosis" (Victory Strada vs Crono also open), "Mavic Monthlery / Sport or Pellet", "Martano Strada (tubular) / Araya 20A smoked", "FIR Tour or Ambrosio Giro d'Italia". Still no row: Araya RM-18T, Ukai LA-14 / EX-17 / 22A / 7Z, Weinmann 716E / 425 X / Aero, Sumo 7X / 14F, Rigida Jade / Saphir / CTX 10, Wolber Alpine, Velotech, FiR Mase Lega / MT 222 / MT 240.
 
 ## Hubs
+
+- **1987 Bianchi Limited**, spec **1254**: Shimano N600 does not distinguish HB-6207 threaded hubs from the FH-6208 freehub family. Link cleared; bike-scoped NULL override retains the decision. [Evidence](known-catalogs/bianchi.md#limited-and-squadra-600-hubfreewheel-ambiguity--review-2026-11-27).
 
 - **1991 Bianchi US Axis**, spec **26512**, links to **12229** FH-XC00-7.
   Bianchi lists XC-Comp 36H and a seven-speed 12–28T cassette. SunTour's 1991

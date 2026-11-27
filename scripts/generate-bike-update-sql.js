@@ -1860,7 +1860,7 @@ const COMPONENT_OVERRIDES = {
     'campagnolo nuovo record small flange quick release': 3259, // Team Replica: Campagnolo 1034, Record (Low Flange)
     // 1983 Bianchi. 1251 small flange is the only Nuovo Tipo row in range for 1983.
     'campagnolo tipo': 3230, // Campagnolo 1251, Nuovo Tipo (small flange)
-    'shimano 600': [{ from: 1984, to: 1987, id: 7551 }], // 1987 Bianchi: Shimano HB-6207F / HB-6207R, 600EX (freewheel hubs; bike has MF-6208)
+    'shimano 600': [{ bike: 'Limited', from: 1987, to: 1987, id: null }, { from: 1984, to: 1987, id: 7551 }], // 1987 Bianchi Limited: N600 does not distinguish threaded hubs from a freehub.
     // Ambiguous between "Zeus Gigante road" and "Zeus Gigante Pista"; the
     // 1973 Zeus catalog lists bare "Zeus Gigante" only on road models.
     'zeus gigante': 3651, // Zeus Gigante road
@@ -5270,7 +5270,7 @@ const COMPONENT_OVERRIDES = {
     '13 24t regina oro 6 speed': 2194, // 1973 Raleigh: Regina Oro (6 speed)
     "13 24t regina d'oro 6 speed": 2194, // 1974 Raleigh Team Professional: Regina Oro (6 speed)
     'suntour alpha 5000 14 28t': 7866, // SunTour FW-AL00-R6, Alpha freewheel (AccuShift leaflet c. 1987)
-    'shimano 600 14 24t': [{ from: 1986, to: 1989, id: 2218 }], // 1987 Bianchi: Shimano MF-6208-6, 600EX SIS
+    'shimano 600 14 24t': [{ bike: 'Limited', from: 1987, to: 1987, id: null }, { bike: 'Squadra', from: 1987, to: 1987, id: null }, { from: 1986, to: 1989, id: 2218 }], // Bianchi 1987: N600 14-24T does not specify the model or sprocket count.
     'simplex 14 24t': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
     // c.1976 Motobecane does not state six speeds: do not inherit the older catalogue's pick.
     'regina oro 13 21': [{ bike: 'Team Champion', from: 1976, to: 1976, id: null }, { id: 2194 }], // Regina Oro (6 speed) — 1975 Motobecane

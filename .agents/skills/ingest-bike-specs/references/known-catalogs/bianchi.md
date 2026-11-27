@@ -698,7 +698,13 @@ API listing, PDF and two page renders removed after documenting these findings.
 
 ## 1987 Bianchi Shimano override pass — 2026-10-02
 
-- 12 links back-filled (125 -> 137 of 320) from period rows the Shimano
+### Limited and Squadra 600 hub/freewheel ambiguity — review 2026-11-27
+
+The [1987 Bianchi catalogue p. 15](https://ebykr.com/library/bianchi-1987-catalog-road-sport-bicycles/) identifies Limited hubs as Shimano N600 and lists N600 14–24T under the freewheel/chain heading for Limited and Squadra. It does not specify HB-6207, MF-6208, the number of sprockets, or whether the rear assembly is a threaded freewheel or a cassette. The current CSV/live text omits the initial N but likewise does not name those model codes. The earlier override pass below assumes MF-6208 from the generic gearing description and then uses that inferred freewheel to justify HB-6207. That is circular: an assigned component is not independent evidence of the original fitment. The catalogue's use of a freewheel heading does not by itself rule out a cassette, as the same heading covers other bikes.
+
+Shimano 600 candidates include 3539 FH-6208 rear/HB-6207 front and 7551 conventional hub set; 2217 MF-6207 and 2218 MF-6208 are separate freewheel families. These establish ambiguity, not the original fitment of either bike. Applied on user approval: cleared Limited hubs 1254 from 7551 and Limited/Squadra freewheel specs 1256/1276 from 2218; bike- and year-scoped generator overrides preserve the NULLs. Source text and component dates were unchanged. Readback verified all three; SQL replay changed zero rows. The full generator comparison before applying showed exactly these three proposed losses in addition to 15 pre-existing Huret losses; after application only those 15 remained. The link-decision and link-priority tests passed. To reverse, restore 1254 to 7551 and 1256/1276 to 2218 after checking current values, and remove the three scoped NULL overrides.
+
+- Historical pass, superseded for hub/freewheel links by the review above: 12 links back-filled (125 -> 137 of 320) from period rows the Shimano
   catalogue passes dated: Limited "Shimano 600" brakes 972 BR-6208,
   crankset 1798 FC-6207, headset 3090 HP-6207, pedals 3961 PD-6207, hubs
   7551 HB-6207F / R (freewheel hubs, bike has MF-6208; row dated 1984-86);
