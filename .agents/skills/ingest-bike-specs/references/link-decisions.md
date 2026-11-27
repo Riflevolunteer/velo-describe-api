@@ -339,6 +339,8 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Stems
 
+- 1983 Bianchi generic `TTT` stems 912/938/963/976/989/1003 stay unlinked by user decision; maker and Bianchi engraving do not establish a particular model. [Catalogue evidence and validation](known-catalogs/bianchi.md#1983-bianchi--1983_bianchi_speccsv-9-bikes-118-specs-51-linked).
+
 - Falcon–Merckx c.1973 models 100/102/104: bare `Cinelli` stays NULL; no stem model is specified. Scoped guards preserve other Falcon choices. [Brochure evidence](known-catalogs/falcon.md#eddy-merckx-brochure-c-1973--loaded-2026-11-17).
 
 - Leave unlinked: "CTA" on the 1989 Peugeot Alpine Express / VTT Express MTBs (6452 is the aero road CTA); "Atax or CTA" (6, either / or).
@@ -346,6 +348,8 @@ see the Raleigh catalogue notes for the decision and source.
 - Decided 2026-10-30, leave unlinked: Sakae RY / RY 70 mm / RY 80-90 mm, 1985 Bianchi Randonneur 700 / Rekord 26 / Speciale-II [5779 5796 5746] (only 1974 RY-70 / 90 / 110 and 1982 RY2 rows); TTT Grand Prix, 1970-71 Raleigh Professional Mk II / III [7753 9356] (only 1960 / 1964 / undated Gran Prix *Special* rows).
 
 ## Handlebars
+
+- 1983 Bianchi Eco Pista `TTT` handlebars 1004 stay unlinked by user decision; the catalogue names the maker without a model. Campione del Mondo has no handlebar spec in the source or database. [Catalogue evidence and validation](known-catalogs/bianchi.md#1983-bianchi--1983_bianchi_speccsv-9-bikes-118-specs-51-linked).
 
 - **Nitto Miyata review, 2026-11-20:** B-105F specs 22104/22168/22190 stay
   unlinked pending a maker suffix/model crosswalk to B105 2889. Do not strip F

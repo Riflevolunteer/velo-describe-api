@@ -2,6 +2,19 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('1983 Bianchi maker-only TTT bars and stems do not select specific models', () => {
+  const records = [
+    { component_id: 6404, title: '3ttt AR, Record', category: 'Stems' },
+    { component_id: 6420, title: '3ttt ARP2, Mod. 2 Record Pista', category: 'Stems' },
+    { component_id: 2753, title: '3ttt Record Competizione Track', category: 'Handlebars' },
+  ]
+  for (const bike of ["Campione d'Italia", 'Campione del Mondo', 'Nuovo Racing', 'Super Leggera', 'Tipo Corsa', 'Eco Pista']) {
+    assert.equal(matchComponent('TTT', records, null, 'Stem', 1983, bike), null)
+  }
+  assert.equal(matchComponent('TTT', records, null, 'Handlebars', 1983, 'Eco Pista'), null)
+  assert.equal(matchComponent('TTT', records, null, 'Stem', 1984, 'Super Leggera').component_id, 6404)
+})
+
 test('1989 Bianchi Brava GPX front derailleur resolves to the mount family', () => {
   const records = [
     { component_id: 2634, title: 'SunTour FD-GP00-SSB / FD-GP00-SSH, GPX', category: 'Front Derailleurs' },

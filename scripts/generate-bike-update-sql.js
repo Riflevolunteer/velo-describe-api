@@ -3552,9 +3552,8 @@ const COMPONENT_OVERRIDES = {
     // 1975 Raleigh Professional Track: the Racing Team Service PISTA row is
     // undated and the later line; this one covers 1975.
     '3ttt track bend': 2753, // 3ttt Record Competizione Track (Pista)
-    // 1983 Bianchi Eco Pista: bare "TTT" bar on the track bike, the Pista bar to match its Mod. 2 Record
-    // Pista stem. Bike-scoped: the 1985 Campione's bare "TTT" has nothing to go on.
-    '3ttt': [{ bike: 'Eco Pista', from: 1983, to: 1983, id: 2753 }],
+    // 1983 Bianchi Eco Pista: maker-only TTT does not identify a handlebar model.
+    '3ttt': [{ bike: 'Eco Pista', from: 1983, to: 1983, id: null }],
     // 1985 Raleigh Prestige (road): RY-RC Royal-Racer is the track bar.
     'sr royal special racing bend alloy': 7884, // Sakae/Ringyo (SR) RY-978, Royal-978
     // 1979 Peugeot: French bend names from the ATAX / Guidons Philippe 1982
@@ -3708,11 +3707,15 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': 6674, // Shimano HS-6300, 600 AX
     // 1987 Bianchi.
     '3ttt ar84': 6424, // 3ttt AR84, Mod. 84 (Record 84)
-    // 1983-84 Bianchi (Nuovo Racing, Super Leggera, Tipo Corsa, Campione del Mondo, Campione d'Italia): a bare "TTT"
-    // stem. The 3ttt Record road stem of the era is the AR "Record" (1980-91); the AR84 is not named until 1986-87.
-    // The 1983 Eco Pista track bike gets the Mod. 2 Record Pista, as the Professional Track DL 175 below.
+    // 1983 Bianchi: a maker-only TTT stem does not identify a particular model.
+    // The 1984 inference is retained pending its separate review.
     '3ttt': [
-      { bike: 'Eco Pista', from: 1983, to: 1983, id: 6420 }, // 3ttt ARP2, Mod. 2 Record Pista (64 degree)
+      { bike: "Campione d'Italia", from: 1983, to: 1983, id: null },
+      { bike: 'Campione del Mondo', from: 1983, to: 1983, id: null },
+      { bike: 'Nuovo Racing', from: 1983, to: 1983, id: null },
+      { bike: 'Super Leggera', from: 1983, to: 1983, id: null },
+      { bike: 'Tipo Corsa', from: 1983, to: 1983, id: null },
+      { bike: 'Eco Pista', from: 1983, to: 1983, id: null },
       { from: 1983, to: 1984, id: 6404 }, // 3ttt AR, Record
     ],
     // 1973-75 Raleigh / 1974 Motobecane "T.T.T. Record": the 1970s Mod. 1
@@ -3731,7 +3734,7 @@ const COMPONENT_OVERRIDES = {
     // 1972-73 Raleigh Professional Track DL 175: the 1974-76 specs on the same model link the Mod. 2 Record Pista.
     'alloy 3ttt': [{ bike: 'Professional Track DL 175', id: 6420 }],
     '3ttt 110 mm': [{ bike: 'Professional Track DL 175', id: 6420 }],
-    // 1982 Bianchi Super Pista: the Mod. 2 Record Pista, as the 1983 Eco Pista bare-"TTT" rule above.
+    // 1982 Bianchi Super Pista: the Mod. 2 Record Pista; explicit track designation.
     '3ttt track': [{ from: 1970, to: 1991, id: 6420 }],
     // 1982 Raleigh Team Replica 12 / Gran Sport 12: the same models print "Cinelli No. 1A" in 1983.
     'cinelli alloy': [{ from: 1982, to: 1982, id: 6489 }], // Cinelli 1A (winged "C" logo)
