@@ -377,6 +377,8 @@ API listing, PDF and two page renders removed after documenting these findings.
 
 - Source (added 2026-10-21): ebykr.com "Bianchi Catalog of about 1983" (https://ebykr.com/library/bianchi-1983-catalog/), 12 pages in English, published in Italy by Bianchi; scans from Mark Bulgier's archive (bulgier.net/pics/bike/Catalogs/Bianchi-83/, posted 2001, also on 2velo.com). It carries no year; ebykr estimates 1983 from the Super Pista text citing a 1982 World Championship medal. The catalogue names no export market, so IT is the publisher's country, still an inference for the intended market.
 
+- 2026-11-27 user decision: bare TTT is too generic for model-specific links on Campione d'Italia's, Nuovo Racing's, Super Leggera's and Tipo Corsa's stems, Campione del Mondo's stem and handlebars, and Eco Pista's stem and handlebars. Check the live rows and clear any unsupported links; this supersedes any earlier model selections for those generic values once applied.
+
 - 2026-11-26: page 6 describes Campione del Mondo Gran Sport brakes with Super Record levers, but does not specify gear shifters. Corrected spec 960 from Shifters to Brake Levers and moved its CSV cell from `Shifters/Levers` to `Brake Levers`; retained the database's original raw label and source. Initially left unlinked due to hood-logo ambiguity, then linked to 231, the 4062 family, after merging the hood-based records. Readback and SQL rerun verified both corrections; the catalogue's generated links match the live database. [Lever review](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#super-record-4062-brake-lever-review--2026-11-26).
 
 - This catalog exposed that overrides were global: its "Campagnolo Nuovo
@@ -422,6 +424,8 @@ API listing, PDF and two page renders removed after documenting these findings.
   fields and links unchanged; full loaded mapping comparison validated.
 
 - Source (added 2026-10-21): ebykr.com "Bianchi Catalog of about 1984" (https://ebykr.com/library/bianchi-1984-catalog/), 9 pages in English, published in Italy by Bianchi; scans from Mark Bulgier's archive (bulgier.net/pics/bike/Catalogs/Bianchi-84/, posted 2001, also on 2velo.com). It carries no year; ebykr estimates 1984 from the Super Pista text citing a 1983 World Championship gold medal. Its models are exactly the six loaded. The catalogue names no export market, so IT is the publisher's country, still an inference for the intended market.
+
+- 2026-11-27 user decision: generic TTT stems on Super Leggera and Tipo Corsa should not link to model-specific components. Check and clear the live links and update the generator; the earlier unlinked note below has not yet been reverified against the live database.
 
 - Looser translation than 1983. Repairs: Frame → Frame Material, "Fork
   details" → Fork, Tires → Tyres, "Rims & Spokes" → Rims, "Saddle & Seatpost"
@@ -493,6 +497,8 @@ API listing, PDF and two page renders removed after documenting these findings.
 - Regression: all 22 loaded catalogues unchanged (1,449 links).
 
 ## 1987 Bianchi — `1987_bianchi_spec.csv` (16 bikes, 320 specs, 144 linked)
+
+- 2026-11-27: user reported model names in uppercase. The source CSV includes uppercase names such as MONDIALE, GIRO and PISTA; check and normalize affected live names and CSV entries together, retaining model codes and checking exact-name overrides.
 
 - **ITM 100 source-text correction, 2026-11-25:** The catalogue PDF p. 14 prints `ITM 100 black` for Campione d’Italia, not bare `ITM 100`. The approved update corrected Stem spec 1306 and the local CSV while retaining the 9203 link; component 9203 was extended to 1987. A 1987-scoped generator override preserves the link. [Source evidence and validation](../../../ingest-component-catalog/references/known-catalogs/cross-catalog-notes.md#itm-mod-100--9203--applied-and-validated-2026-11-25).
 
@@ -1439,6 +1445,8 @@ successful validation; the user-held source PDF remains available.
 
 
 ## 1981–1983 Super Record rear links — 2026-11-17, applied and validated
+
+**2026-11-27 user request:** Link 1983 Super Leggera Super Record rear spec 985. The prior review below found the catalogue does not distinguish 4149 from 4151; choose the component during the pending link review rather than assuming a variant has been selected.
 
 **Subsequent user selection:** 1981 Super Corsa spec 6492 and 1982 spec 6647 NULL → 4151, Super Record 4001 / 0102018 with screw-mounted spring. This supersedes the NULL decision below for these two specs; the catalogues themselves do not distinguish the generation. Scoped 1981–82 Super Corsa generator mapping added; readback confirmed 4151 and sources 165/166 while 1983 spec 985 remains NULL. SQL replays changed zero rows; 118-catalogue comparison retained 15 unrelated Huret losses and no gains or changes. Updated link-decision test passes and keeps other years/bikes guarded. Restore either spec to NULL guarded by 4151 and adjust its override if superseded.
 
