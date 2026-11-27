@@ -23,6 +23,8 @@ alter CSVs, database records or the prior country decision.
 
 ## 1979 Peugeot — `1979_peugeot_spec.csv` (29 bikes, 405 specs, 88 linked)
 
+- A separate [1979 Peugeot brochure](https://cyclememory.org/doc/A-1-0000000356/A-1-0000000356.pdf), PDF p. 2, visibly confirms PY 10 CP's Spidel `compétition S7` headset. The separate 1980 maker listing names Stronglight S7; the model-level cross-brand identification remains an inference. [Headset evidence](../../../ingest-component-catalog/references/known-catalogs/stronglight.md#s7-headset-3123--earlier-peugeot-fitment-review-2026-11-27).
+
 - Source: "Les Vélos, Cycles Peugeot 79", French home-market catalogue,
   13 pages, printed 01.79, hosted on Calameo
   (calameo.com/read/0000524380ae4a7030dbf). Calameo's viewer exposes a
