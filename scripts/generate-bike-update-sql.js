@@ -2196,7 +2196,7 @@ const COMPONENT_OVERRIDES = {
     'weinmann 500 alloy side pull with qr': 1125,
     // 1979-80 Raleigh Super Course: the quick-release AG 500 row (1979-86 since 2026-11-01).
     'weinmann 500 short reach side pull with qr': [{ from: 1979, to: 1980, id: 1125 }], // 1986 Peugeot (US) Tourmalet: Weinmann AG 500 (hex socket, quick release)
-    'shimano br 6207': 970, // 1986 Peugeot (FR) table PG / PX 10 SH: BR-6207-49, the short-reach road caliper
+    'shimano br 6207': 970, // 1986 Peugeot (FR) PG / PX 10 SH: BR-6207 family; reach not printed
     'weinmann 506 alloy side pull': 7764, // 1986 Peugeot (US) table Ventoux: Weinmann AG 506
     'weinmann 405 alloy side pull with racing levers': 1117, // 1986 Peugeot (US) PGN 10 Galibier: Weinmann AG 405 caliper (491 is the lever)
     'weinmann 405 side pull': 1117, // 1985 Peugeot PGN 10 M: Weinmann AG 405 caliper

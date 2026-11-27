@@ -740,7 +740,7 @@ The 1982-84 Peugeot catalogues print "Maillard Helicomatic ..." where the DB row
 - Overrides (FR): Simplex 'slja 422' 7263, 'slja 522' range to 1986, 'sx a 33' 7312, 'sxa32 (parallelogram)' 2578,
   's 061 tsp' / 's061t tsp' 4616, 'sx810 tsp' 4617, 'sx1t sp' 7308, 'sx440 gt sp' 4622 (v1 1985-86); 'stronglight a 9'
   3112, 'b 10' 3114; Shimano '600 ex 42 x 52 dural' 1798, 'new 600 ex' hubs 7551, PD-6207 3961, 'shimano br 6207' 970
-  (BR-6207-49 short reach: a judgement, the 57 is 971); Helicomatic 6-speed 13-21 / 14-24 and 5-speed 14-24 ranges to
+  (BR-6207 family, after 2026-11-27 merge of the previously separate reach variants); Helicomatic 6-speed 13-21 / 14-24 and 5-speed 14-24 ranges to
   1986 plus the "zinc-plated" wordings. Seat Posts bare 'dural' -> null (was hitting 9962 Strata dural seat pillar;
   regression -1 on 1973 Zeus and -2 on 1984 Peugeot regenerations, neither link was in the DB).
 - Left unlinked: Stronglight 200, Thun Coronado / Haubtmann / Nervar / Solida cranks, Maillard / Atom CX pedals,
