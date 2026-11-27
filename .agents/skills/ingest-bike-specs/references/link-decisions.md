@@ -11,8 +11,9 @@ General rule: brand-only, size/material-only, either/or and house-part specs can
 Preserve Montello's Super Record4000F-or-Record group alternative as NULL in
 all seven derived specs. Track group does not supply fitted brakes/derailleurs;
 Gipiemme track parts without version codes stay NULL. Treviso N.R. has explicit
-Record SL pedals and SR chainrings, not titanium SR pedals. Hold brake reach,
-out-of-range NR levers/cotton tyres, generic Vittoria Sport, Ambrosio Montreal,
+Record SL pedals and SR chainrings, not titanium SR pedals. Super Record Special
+brake 25996 links to family 583 without asserting reach or pantograph decoration.
+Hold out-of-range NR levers/cotton tyres, generic Vittoria Sport, Ambrosio Montreal,
 plain Oro chains, rim alternatives and CXS7 freewheel without inventing variants.
 Applied/validated 2026-11-20; see [full evidence and mappings](known-catalogs/pinarello.md#1985-gita-catalogue--applied-and-validated-2026-11-20).
 
@@ -20,15 +21,16 @@ Applied/validated 2026-11-20; see [full evidence and mappings](known-catalogs/pi
 
 Expand the printed groups into individual specs, preserving Titanio and x3
 qualifiers. Explicit NULL guards initially held the x3 drivetrain and qualified-group
-brakes/rears; Super Record Special brake 25907 now links to the 582 reach family,
-with generation provisional because the catalogue date is approximate.
+brakes/rears; Prestige S 25877, Tre Cime 25892 and Super Record Special 25907
+brakes now link to family 582, with generation provisional because the catalogue
+date is approximate.
 Italia's Gran Sport crank stays NULL without BCD/configuration evidence.
 Record rear on Treviso is explicitly printed, overriding the Gran Sport group.
 Generic/alternative tyres, saddles, bars, rims and ambiguous freewheels remain
 text. Applied/validated 2026-11-20; see the [mapping and evidence review](known-catalogs/pinarello.md#circa-1982-ingestion--applied-and-validated-2026-11-20).
 Subsequent Tre Cime photo review supports front 25888→2313, approved/applied and
-validated on 2026-11-20; this supersedes the blanket x3 refusal for the front
-only. The rear, crank and other holds remain; see [photo evidence and validation](known-catalogs/pinarello.md#tre-cime-photolink-follow-up--2026-11-20-applied-and-validated).
+validated on 2026-11-20; the brake was subsequently linked at family level as
+above. The rear, crank and other holds remain; see [photo evidence and validation](known-catalogs/pinarello.md#tre-cime-photolink-follow-up--2026-11-20-applied-and-validated).
 
 ## MBK Catalogue 1988 (FR) — applied link review, 2026-11-20
 

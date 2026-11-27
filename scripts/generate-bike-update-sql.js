@@ -1973,11 +1973,11 @@ const COMPONENT_OVERRIDES = {
     "rx 100 alloy side pull": [{ bike: "C227 Mirage", from: 1991, to: 1991, id: 1007 }],
     'shimano ultegra 7v': [{ bike: 'Asolo Ultegra', from: 1990, to: 1990, id: 966 }], // c.1990 Pinarello: 6400-series 7-speed; other group variants stay unresolved.
     // 1985 Pinarello: printed 4000F group; Montello offers two alternative groups.
-    'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: null }],
+    'campagnolo super record 4000f pantograph': [{ bike: 'Super Record Special', from: 1985, to: 1985, id: 583 }], // Super Record brake family; group wording does not establish caliper decoration.
     'campagnolo super record 4000f or record pantograph': null,
     // Pinarello c.1982 printed group qualifiers; x3 does not identify double drivetrain parts.
-    'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: null }],
-    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: null }],
+    'campagnolo super record titanio': [{ bike: 'Prestige S', from: 1982, to: 1982, id: 582 }], // Group identification; circa-1982 generation is provisional.
+    'campagnolo super record x 3': [{ bike: 'Tre Cime', from: 1982, to: 1982, id: 582 }], // Group identification; x3 describes the drivetrain.
     // German Motobecane 1986, printed panels pp.3-15; reviewed identities in brand notes.
     "campagnolo triumph": [{"bike":"C662E Super Record","from":1986,"to":1986,"id":585}],
     "weinmann super carrera 400": [{"bike":"Spécial Pro","from":1985,"to":1985,"id":1168}], // Motobecane FR c.1984-85, pp.10-11; provisional DB year1985; brand notes.

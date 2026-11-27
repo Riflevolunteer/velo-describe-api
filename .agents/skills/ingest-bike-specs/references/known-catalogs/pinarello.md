@@ -115,6 +115,12 @@ p. 2 and Campagnolo's February 1987 brochure attested the component for the
 same period. Spec 26070 now links to 2318 using the existing Victory rule.
 [Component evidence and validation](../../../ingest-component-catalog/references/known-catalogs/campagnolo.md#victory-front-availability-and-tre-cime-fitment--2026-11-22)
 
+## Super Record brake group review — 2026-11-27
+
+After the 4061/4061/1 reach merge, the [c.1982 maker images](http://bulgier.net/pics/bike/Catalogs/Pinarello82/) identify Prestige S 25877 as `Campagnolo Super Record Titanio` (group) and Tre Cime 25892 as `Campagnolo Super Record x 3` (group). The Tre Cime image shows three chainrings and brakes, but does not establish a caliper code or reach. The [1985 GITA catalogue p. 9](https://bikalog.org/api/view/Pinarello/1985/pinarello-1985.pdf) gives Super Record Special 25996 the group `Campagnolo Super Record 4000F Pantograph`; this does not establish caliper decoration or reach. The Montello 25979 specifies Super Record 4000F **or Record**, so stays unlinked.
+
+Applied on user approval: linked 25877 and 25892 to early family 582, and 25996 to later family 583, matching the existing date-based group convention. The c.1982 attribution and generation boundary are provisional; the images do not independently establish which generation is fitted. Do not infer Ti brake material, short reach, or pantographed calipers from group qualifiers. Updated the three scoped generator overrides; readback verified all three links and Montello 25979 remains NULL. SQL replay affected zero rows; the link-decision test passed. The 118-catalogue comparison retained only 15 pre-existing unrelated Huret losses, with no gains or changed links. To reverse, reset the three component links to NULL and restore their generator NULL overrides.
+
 ## 1985 GITA catalogue — applied and validated, 2026-11-20
 
 Source: [Bikalog PDF](https://bikalog.org/api/view/Pinarello/1985/pinarello-1985.pdf),
@@ -149,7 +155,7 @@ and Triathalon Victory retain their tubular/clincher rim alternatives.
 Reviewed and validated links (all compatible with DB categories/dates):
 
 - Super Record Special group: FD2313, RD4152, crank1509, post5761,
-  levers231, pedals3716; brakes 25996 remain NULL pending review of the group wording after the reach-family merge.
+  levers231, pedals3716; brakes 25996 now link to later family 583.
 - Triomphe (Catena Lusso): FD2314, RD4155, crank1515, post5764, brakes585,
   levers233, pedals3719. Victory (Treviso/Triathalon): FD2318, RD4168,
   crank1516, post5764, brakes590, levers235, pedals3720.
@@ -223,9 +229,9 @@ existing brand and all 15 labels reused. Source label follows generator
 convention `1982 Pinarello catalogue`, citation `1982_pinarello_spec.csv`.
 Validated component mappings:
 
-- Prestige S: FD 2313, crank 1509, post 5761, levers 231 (formerly 232), pedals 3716, chain
+- Prestige S: FD 2313, crank 1509, post 5761, brakes 582, levers 231 (formerly 232), pedals 3716, chain
   1384, rims 5069. Titanio qualifies the group, not every component's material.
-- Tre Cime: post 5761, levers 231 (formerly 232), pedals 3716, chain 1384, rims 5069.
+- Tre Cime: post 5761, brakes 582, levers 231 (formerly 232), pedals 3716, chain 1384, rims 5069.
 - Super Record Special: FD 2313, crank 1509, post 5761, levers 231 (formerly 232), pedals
   3716, chain 1384.
 - Treviso: FD 2276, explicit Record RD 4126, post 5734, levers 209, pedals
@@ -233,8 +239,9 @@ Validated component mappings:
   c.1982 date attribution remains a provenance caveat.
 - Italia: FD 2276, RD 4085, post 5734, pedals 3688, chain 1382.
 
-Held NULL: ambiguous Super Record rear variants; triple FD/RD/crank; brake
-reach/generation not given; Gran Sport crank BCD/configuration not given;
+Initially held NULL: ambiguous Super Record rear variants; triple FD/RD/crank; brake
+reach/generation not given. Tre Cime's front and the three Super Record brake group
+specs were linked subsequently as described above; Gran Sport crank BCD/configuration not given;
 Regina CX/CX Oro/Oro freewheels without speed/variant (CX candidates 2168/2169);
 alternative Clement/Vittoria tyres; generic Concor, S. Marco, Super Leggera,
 Cinelli Special, 3T, Mavic/Legger Special and ACI spokes. No component insert,
@@ -286,8 +293,8 @@ The other current holds remain:
   earlier notes' association of 1498 with 1049/3 needs reconciliation before
   choosing that row. The [1498 specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=5E4BE2A4-2F98-4B0D-8330-4D4834BB9518)
   and generic x3 name do not justify a new Super Record triple component.
-- **Brakes 25892:** remains NULL pending review of the x3 group wording after
-  the reach-family merge; 582 covers both reaches. **Freewheel 25896:** speed/variant/lockring
+- **Brakes 25892:** subsequently linked to family 582 after the reach merge;
+  the x3 group wording does not establish reach. **Freewheel 25896:** speed/variant/lockring
   detail insufficient to choose 2168 versus 2169. **Saddle 25898:** Concor shape
   and red cover do not establish the construction among 5544/5547 and other
   Concor variants. **Bars 25899:** `Cinelli Special` gives no unique bend code.
