@@ -1,5 +1,11 @@
 # Dia-Compe catalogs processed so far
 
+## DC-N reach candidates — 2026-11-27
+
+The 1986 Dia-Compe Products catalogue, source 209, identifies DC400N as 38–48 mm / 117 g per caliper, DC500N as 43–57 mm / 128 g, and DC630N as 49–64 mm / 132 g. They are possible reach-family candidates: rows 10977, 681 and 8083 respectively. Current bike links are one, nine and four; their printed codes must be retained. The 500N and 630N are also listed in the c.1994 product guide, source 218, while the 400N's individual later availability is not established by that listing.
+
+The similarly sized QS400N and QS500N are separate quick-release designs, and DC400N C/R III is a separate centering-mechanism configuration. Do not mix those into the DC-N candidates on reach alone. The catalogue's series naming and stated dimensions do not by themselves establish whether the three DC-N calipers differ only in arm length; compare the original illustrated page and parts or coded specimens before preparing a merge. No database or generator changes made in this review.
+
 ## 500G / 730G reach-family review — 2026-11-27
 
 The [1981 Bikecology catalogue, p. 24](https://ebykr.com/library/bikecology-1981-catalog/), lists 500 G (43–57 mm) and 730 G (52–72 mm) together under Dia-Compe G, and the Performance 1985–86 catalogue, source 462, p. 35, repeats the reach chart. The [1980 Bike Warehouse catalogue, p. 6](https://ebykr.com/library/bike-warehouse-1980-catalog/), also lists the 730G as a 730/810 set. The maker's later DC-N, QS-N and G-N series and the 1964 Dia-Weinmann 500/730/810 are not established as this G family. Bare 730 and 730GX bike specs remain unresolved.
