@@ -1,5 +1,13 @@
 # Shimano catalogs processed so far
 
+## Light Action BR-L490/BR-L570 reach review — 2026-11-27
+
+Shimano's [April 1988 U800B parts sheet](https://manualzz.com/doc/53868992/shimano-br-l570-rem-kaliper-exploded-view) groups BR-L490 and BR-L570 side-pulls as 49- and 57-type options, with 39–49 and 47–57 mm shoe adjustment, respectively. Both standard and recessed pivot bolts are shown as configurations; do not infer mounting solely from reach. The registered Shimano 1988 dealer catalogue, source 48 (`Shimano 88.pdf`), was already used to add BR-L570 7215 as the companion of 1004 BR-L490. Existing 1004 is 1987–88 and 7215 1988–88; those are provisional individual bounds, not a maker-proven production span.
+
+Applied on user approval: merged reach-only 7215 into stable 1004, named `Shimano BR-L490 / BR-L570, Light Action SLR`; retained both model codes, ranges and weights, with 1987–88 as a family span. Do not imply BR-L570 was available in 1987. The only existing link is 1987 Miyata 512 spec 22228 `SHIMANO L490`, which remains linked and preserves its explicit code; 7215 had no links. No additional unlinked Light Action brake specs were found, and no generator mapping change was needed. Readback verified 1004, the Miyata link and retirement of 7215; SQL replay affected zero rows, the link-decision test passed and Shimano's parenthetical duplicate report found no pairs. The 118-catalogue comparison retained only 15 pre-existing unrelated Huret losses, with no gains or changed links.
+
+Rollback: 1004 was `Shimano BR-L490-49, Light Action SLR`, description `Shimano BR-L490-49, Light Action SLR, Japan. SLR short 49 type side-pull, Teflon-coated pivot washers, spring sleeve, one-piece low-profile shoe, light alloy, 355g (F and R) (Dec 1986, new). 330g measured.`, search `Shimano BR-L490-49 Light Action SLR`, 1987–88, source 75, UUID `DAF15746-66BA-40C6-8C3B-34062DAD15B1`. Retired 7215 was `Shimano BR-L570-57, Light Action SLR`, description `Shimano BR-L570-57, Light Action SLR, Japan. SLR long 57 type side-pull, coated pivot washer, spring sleeve, one-piece low-profile shoe, light alloy, 355g (F and R, shared with BR-L490) (Dec 1987, new).`, search `Shimano BR-L570-57 Light Action SLR`, 1988–88, source 48, UUID `bb48c92f-bc4f-11f1-a2df-02fea3763e8d`. Both had brand 51/category 3/group 141 and NULL image. Restore 1004 fields and 7215 if reversing; 22228 originally linked 1004.
+
 ## BR-1055 reach-family review — 2026-11-27
 
 Shimano's [BR-1055 exploded parts sheet](https://si.shimano.com/en/pdfs/ev/BR-1055-1031/EV-BR-1055-1031A.pdf) names the 49-type and 57-type calipers under the same model; the [1992 Shimano German road component comparison](https://vintagecannondale.com/cannondale/shimano/Shimano92.pdf) lists dual-pivot BR-1055 with 39–49 mm and 47–57 mm ranges. The [1991 German brochure](https://vintagecannondale.com/cannondale/shimano/Shimano91e.pdf), source 510, also lists the model and both reach options. Existing 960/961 are 1990–98, each previously source 365; these bounds do not prove production endpoints. The 1990 [Raleigh catalogue](https://ebykr.com/parts/shimano-1055-dual-pivot-slr-brake-raleigh-1990/) and [1993 Miyata catalogue](https://ebykr.com/library/miyata-catalog-1993/) attest 1055 in those years.
@@ -2398,10 +2406,11 @@ Representation decision pending that evidence: retain **3534** as the combined F
   BL-A453, BL-M450, BL-M350, BL-L330, BL-L331, BL-Z325, BL-Z326 (Brake
   Levers); HP-M730, HP-MT60, HP-M450, HP-M350 (Headsets); CN-7400, CN-6208
   (Chains).
-- BR-L570 added rather than left unrepresented: DB had BR-L490 (49-type)
+- BR-L570 originally added rather than left unrepresented: DB had BR-L490 (49-type)
   but no 57-type companion, and the catalogue pairs them the same way
   BR-1050's 39-49/47-57 rows are already split in the DB, so the missing
-  half was inserted rather than treated as covered by BR-L490 alone.
+  half was inserted rather than treated as covered by BR-L490 alone. The later
+  2026-11-27 user decision consolidated both reaches into family 1004 above.
 - FH-7400-6/7 / HB-7400-F deliberately NOT merged into the existing bare
   `Shimano FH-7400, Dura-Ace 7400 (freewheel)` row (id 3560, year 1980-1980,
   no weight/detail — the same "bogus single year, no real data" shape as
