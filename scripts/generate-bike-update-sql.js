@@ -5269,7 +5269,8 @@ const COMPONENT_OVERRIDES = {
     '13 24t regina oro 6 speed': 2194, // 1973 Raleigh: Regina Oro (6 speed)
     "13 24t regina d'oro 6 speed": 2194, // 1974 Raleigh Team Professional: Regina Oro (6 speed)
     'suntour alpha 5000 14 28t': 7866, // SunTour FW-AL00-R6, Alpha freewheel (AccuShift leaflet c. 1987)
-    'shimano 600 14 24t': [{ bike: 'Limited', from: 1987, to: 1987, id: null }, { bike: 'Squadra', from: 1987, to: 1987, id: null }, { from: 1986, to: 1989, id: 2218 }], // Bianchi 1987: N600 14-24T does not specify the model or sprocket count.
+    'shimano 600 14 24t': [{ bike: 'Limited', from: 1987, to: 1987, id: null }, { from: 1986, to: 1989, id: 2218 }], // Bianchi Limited 1987: N600 does not specify the model or sprocket count.
+    'shimano n600 silver 24 24t (as printed)': [{ bike: 'Squadra', from: 1987, to: 1987, id: null }], // 1987 Bianchi Squadra: printed range is likely a typo; component model is unknown.
     'simplex 14 24t': null, // bare-brand row deleted 2026-09-30 (f9b86f2); generic value, no model row
     // c.1976 Motobecane does not state six speeds: do not inherit the older catalogue's pick.
     'regina oro 13 21': [{ bike: 'Team Champion', from: 1976, to: 1976, id: null }, { id: 2194 }], // Regina Oro (6 speed) — 1975 Motobecane

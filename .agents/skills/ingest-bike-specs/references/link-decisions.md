@@ -247,7 +247,7 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Freewheels / cassettes
 
-- **1987 Bianchi Limited and Squadra**, specs **1256/1276**: N600 does not identify MF-6208-6 or rule out a cassette. Links cleared; bike-scoped NULL overrides retain the decision. The Squadra's printed 24–24T differs from its loaded text; see the source review. [Evidence](known-catalogs/bianchi.md#limited-and-squadra-600-hubfreewheel-ambiguity--review-2026-11-27).
+- **1987 Bianchi Limited and Squadra**, specs **1256/1276**: N600 does not identify MF-6208-6 or rule out a cassette. Links cleared; bike-scoped NULL overrides retain the decision. The Squadra's printed 24–24T is preserved with an as-printed qualifier. [Evidence](known-catalogs/bianchi.md#squadra-freewheel-source-text--review-2026-11-27).
 
 - **1982 Aero Miyata, spec 20825:** keep the seven-sprocket Dura-Ace EX cluster unlinked from six-speed specimen 1210 pending coded original fitment or a maker AX/EX crosswalk. The scoped NULL override and live unlink were applied and validated. [Evidence](known-catalogs/cross-catalog-notes.md#follow-up-catalogue-headings-and-aero-miyata--2026-11-23).
 
