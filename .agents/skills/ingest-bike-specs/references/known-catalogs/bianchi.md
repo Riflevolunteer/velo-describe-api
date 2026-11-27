@@ -404,8 +404,8 @@ API listing, PDF and two page renders removed after documenting these findings.
   Record Pista → 1051 crank, 1036 hubs, #1040 headset; fluted Campagnolo posts
   → 1044 NR Superleggero; Cinelli #2 → Unicanitor #2 suede; Sugino
   SuperMighty → Super Mighty Competition.
-- Left unlinked: TTT stem/bars/saddle/post (no model), Cinelli bars, San
-  Marco saddle/post, Selle Italia Aero II (no row), Campagnolo Tipo (five
+- Left unlinked at ingestion: TTT stem/bars/saddle/post (no model), Cinelli bars, San
+  Marco saddle/post, Selle Italia Aero II (later added as 12753), Campagnolo Tipo (five
   Nuovo Tipo rows), tyres, Mafac cantilever, Shifters/Levers (no category
   mapping).
 - 2026-10-05: Campione d'Italia "Mavic Monthlery" rim -> 5093 Mavic
@@ -494,7 +494,7 @@ API listing, PDF and two page renders removed after documenting these findings.
   / NGC200 / DC195 (no 1985 rows by those codes), Campagnolo Victory hubs
   (flange unknown), Suzue LPF / 28H, Ofmega Junior cranks and Competizione
   pedals, Sakae CT/SPG triple, MKS Promenade, Vittoria (bare and Seta),
-  Panaracer, Sedis / HKK, Selle Italia Aero II / ANA, Martano Pro / G-P80,
+  Panaracer, Sedis / HKK, Selle Italia Aero II / ANA (Aero II later added as 12753), Martano Pro / G-P80,
   Ambrosio, Bianchi original rims, frame prose.
 - Regression: all 22 loaded catalogues unchanged (1,449 links).
 

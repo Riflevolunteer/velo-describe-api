@@ -2,6 +2,13 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('Bianchi Aero II saddle fitments use the named component', () => {
+  const records = [{ component_id: 12753, title: 'Selle Italia Aero II', category: 'Saddles' }]
+  for (const [bike, year] of [['Professional', 1983], ['Speciale-II', 1985], ['Rekord 26', 1985]]) {
+    assert.equal(matchComponent('Selle Italia Aero II', records, null, 'Saddle', year, bike).component_id, 12753)
+  }
+})
+
 test('1989 Peugeot Cosmic names the CLB GL family without selecting a specimen', () => {
   const records = [{ component_id: 612, title: 'CLB GL', category: 'Brakes' }, { component_id: 614, title: 'CLB GL 47-60 (alloy quick release)', category: 'Brakes' }]
   assert.equal(matchComponent('CLB / GL 47-60', records, null, 'Brakes', 1989, 'Cosmic').component_id, 612)

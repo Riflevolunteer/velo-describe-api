@@ -1,5 +1,11 @@
 # Selle Italia catalogs processed so far
 
+## Aero II saddle — Bianchi fitments, 2026-11-27
+
+The [c.1983 Bianchi catalogue](https://bikalog.org/api/view/Bianchi/1983/bianchi-1983.pdf) names Selle Italia Aero II on the Professional; the [1985 Japan range sheet](https://ebykr.com/library/bianchi-1985-japan-range-sheet/), p.2, names it in the Speciale-II and Rekord 26 columns. The original 1985 table image was visually checked. These are bicycle-maker fitment sources, not Selle Italia technical sheets: neither establishes cover, rails, dimensions, weight or complete production dates. No existing Selle Italia Aero or Aero II saddle record was found in the live category.
+
+Added component 12753 `Selle Italia Aero II`, brand 570, category 17, group NULL, source 42, UUID `d6261672-aeab-4115-a691-a905410d8af8`; description `Aero II bicycle saddle; construction and dimensions not established.` and 1983–85 catalogue attestations, not asserted production endpoints (1983 edition is approximate). Linked specs 927 (Professional, source 42), 5752 (Speciale-II) and 5803 (Rekord 26), both source 144, from NULL to 12753; original values retained. Added scoped generator rules. Readback confirmed all links and sources, SQL replay changed zero rows, link-decision test passed, Selle Italia near-duplicate report found no pairs, and the 118-catalogue comparison retained only the 15 unrelated pre-existing Huret losses with no gains or changed mappings. To reverse, set the three specs to NULL guarded by 12753, remove the scoped overrides and delete 12753 after checking for further links.
+
 ## R. J. Chicken & Sons trade catalogue, Selle Italia section — 7 November 1979 (Saddles_from_R_J_Chicken_catalogue_1979-11-07.pdf, 8 pp, scan, no text layer), data_source id 176
 
 - Source: https://www.icenicam.org.uk/library/Selle_Italia/Saddles_from_R_J_Chicken_catalogue_1979-11-07.pdf

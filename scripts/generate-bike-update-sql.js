@@ -3207,6 +3207,7 @@ const COMPONENT_OVERRIDES = {
     'suntour xc 9000 48 38 28t': [{ from: 1989, to: 1989, id: 1996 }], // CW-XC00
   },
   Saddles: {
+    'selle italia aero ii': [{ bike: 'Professional', from: 1983, to: 1983, id: 12753 }, { bike: 'Speciale-II', from: 1985, to: 1985, id: 12753 }, { bike: 'Rekord 26', from: 1985, to: 1985, id: 12753 }], // Bianchi catalogues explicitly name Aero II.
     // c.1979 Pinarello Prestige / Super Record: no maker printed; not Iscaselle.
     'super leggera': null,
     'mundialita': [{ from: 1988, to: 1988, id: 5497 }], // MBK 1988 (FR) catalogue, spec table photo 9; see known-catalogs/motobecane.md. Selle Italia Mundialita (1985-90); 5436 is the Bianchi celeste version.
