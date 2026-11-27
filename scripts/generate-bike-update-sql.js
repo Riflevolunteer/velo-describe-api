@@ -2235,9 +2235,9 @@ const COMPONENT_OVERRIDES = {
     'altenburger synchron': [{ from: 1970, to: 1976, id: 511 }], // 1970-76 Peugeot (Dutch / French wholesale) P 8 E / P 10: Altenburger Synchron (512, the other logo variant, merged into 511 on 2026-10-26) match (a judgement)
     // Same part as an already-linked sibling, with a qualifier only (2026-10-20 near-match audit).
     'shimano deore xt cantilever with gumhoods': [{ from: 1983, to: 1986, id: 980 }], // 1986 Raleigh Portage; as "Shimano Deore XT, cantilever" (BR-MC70)
-    'dia compe dc630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Sportif; as the 1985 "DC630N alloy S.P." pick
-    'dia compe dc 630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Pursuit (levers DC 630/165 and /135 are separate)
-    'dia compe 630n alloy': [{ from: 1986, id: 8083 }], // 1986 Raleigh Record
+    'dia compe dc630n alloy': [{ from: 1986, id: 681 }], // DC500N / DC630N reach family
+    'dia compe dc 630n alloy': [{ from: 1986, id: 681 }], // 1986 Raleigh Pursuit (levers are separate)
+    'dia compe 630n alloy': [{ from: 1986, id: 681 }], // 1986 Raleigh Record
     'mafac racer professional': [{ from: 1970, to: 1982, id: 838 }], // 1973 Peugeot PX 10; as bare "Mafac Racer" (lettered MAFAC RACER, 1970-82, the only period Racer row)
     'mafac racer forged': [{ from: 1970, to: 1982, id: 838 }], // 1974 Peugeot PX 60
     // 1987 Raleigh (UK Lightweights catalogue): period rows for the 1987 range (105 = the 1987 "105" 1050 series, 600EX = the 1986-87 6208 SIS series).
@@ -2468,7 +2468,7 @@ const COMPONENT_OVERRIDES = {
     'dia compe qs 500n': 682, // Dia-Compe N500 (quick release)
     'dia compe 960 alloy cantilever': 690, // Dia-Compe Gran Compe GC960
     'dia compe royal gran comp 400': [{ from: 1986, to: 1986, id: 700 }], // 1986 Raleigh Prestige: Dia-Compe RGC400, Royal Gran Compe
-    'dia compe dc630n alloy sp': 8083, // Dia-Compe DC630N, N-brakes (1986 catalogue)
+    'dia compe dc630n alloy sp': 681, // Dia-Compe DC500N / DC630N family
     'dia compe qs500n balance response system': 682, // 1987 Bianchi: Dia-Compe QS500N (quick release)
     'shimano deore xt cantilever': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)
     'shimano deore xt alloy cantilever shimano z levers with gum hoods': 980, // Shimano BR-MC70, Deore XT M700 (1983-86)

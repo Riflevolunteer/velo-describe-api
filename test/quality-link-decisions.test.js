@@ -2,6 +2,15 @@ const test = require('node:test')
 const assert = require('node:assert/strict')
 const { matchComponent } = require('../scripts/generate-bike-update-sql')
 
+test('Dia-Compe 500N and 630N reach variants share the DC-N family', () => {
+  const records = [{ component_id: 681, title: 'Dia-Compe DC500N / DC630N, N-brakes', category: 'Brakes' }]
+  for (const value of ['Dia-compe DC630N alloy', 'Dia-compe DC 630N alloy', 'Dia-compe 630N alloy', 'Dia-Compe DC630N alloy S.P.']) {
+    assert.equal(matchComponent(value, records, null, 'Brakes', 1986, 'Sportif').component_id, 681)
+  }
+  assert.equal(matchComponent('Dia-Compe DC400N', records, null, 'Brakes', 1985, 'Rekord 26').component_id, 10977)
+  assert.equal(matchComponent('Dia-Compe QS 400N', records, null, 'Brakes', 1986, 'Grand Prix').component_id, 10978)
+})
+
 test('1983–84 Bianchi maker-only TTT bars and stems do not select specific models', () => {
   const records = [
     { component_id: 6404, title: '3ttt AR, Record', category: 'Stems' },
