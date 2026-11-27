@@ -1,5 +1,15 @@
 # Weinmann catalogs processed so far
 
+## Carrera 400 / 600 reach-family review — 2026-11-27
+
+The [October 1981 Weinmann parts catalogue](https://labibleduvelocataloguesweinmann.blogspot.com/p/weinmann-1981.html), source 162, lists Carrera 400 and 600 together: 400 has 41–52.5 mm reach and cable-anchor quick release 1717; 600 has 46–60 mm reach and quick-release cable adjuster 1651. Both use lever 185, but the hardware differs; 600 also has an optional rear offset pivot. The 400's 1988 end comes from a Peugeot bike catalogue, source 319, and does not demonstrate that the 600 was sold until 1988. [1979 R. J. Chicken](https://www.icenicam.org.uk/library/Weinmann/Cycle_fittings_from_R_J_Chicken_catalogue_1979-11-07.pdf) lists an earlier 46–60 mm Carrera with different levers; 1167/1169 remain separate, as the continuity with the numbered 600 is not established by the maker catalogue.
+
+**User correction, applied:** the Carrera 400 and 600 are different brakes and must remain separate. Reversed the previous reach-family merge, restoring 1168 as the 400 and 7763 as the 600, with their original descriptions, date ranges, search text and sources. All 21 existing 400 bike links remain on 1168; 7763 has no bike links. The catalogue's paired listing and common levers do not make their differing caliper designs merely reach variants. This decision supersedes the family merge.
+
+Readback verified both records and their link counts; SQL replay affected zero rows, the link-decision test passed, and the comparison of 118 loaded catalogues retained only the 15 pre-existing unrelated Huret losses, with no gains or changed mappings. The Weinmann parenthetical duplicate report found no candidates.
+
+The superseded family 1168 had title `Weinmann AG Carrera 400 / 600`, description `Carrera side-pull brakes: 400, 41-52.5 mm, quick-release cable anchor 1717; 600, 46-60 mm, quick-release adjuster 1651 and rear offset pivot option. No. 185 levers; 685 wrench.`, search `Weinmann AG Carrera 400 600`, 1980–88, source 162. Restored 1168 uses source 319; restored 7763 uses source 162 and UUID `ffe80a94-be66-11f1-a2df-02fea3763e8d`.
+
 ## Early Vainqueur 999 source review — 2026-11-23
 
 Live rows 1105 (1957–1962) and 1106 (1962) both cite VeloBase
