@@ -4062,6 +4062,8 @@ const COMPONENT_OVERRIDES = {
   },
   'Brake Levers': {
     // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
+    'dia compe 287 aero levers': [{ bike: 'Equinox', from: 1991, to: 1991, id: 8951 }],
+    'dia compe 287 levers': [{ bike: 'Axis', from: 1991, to: 1991, id: 8951 }],
     'brs300 aero levers': [{ bike: 'Volpe', from: 1991, to: 1991, id: 275 }],
     'shimano ultegra aero levers': [{ bike: 'Virata', from: 1991, to: 1991, id: 416 }],
     'shimano 105 sc aero levers': [{ bike: 'Alfana', from: 1991, to: 1991, id: 411 }],

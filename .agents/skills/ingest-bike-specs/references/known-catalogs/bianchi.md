@@ -127,7 +127,7 @@ original scan citation. The Japanese edition uses source 358.
   supports the Ultegra, 105SC, Deore DX and LX group matches. Kept the
   US Virata's printed Dynamic-II stem and mapped spec 26563 to Nitto
   Dynamic-2 6614. The bike import preserves existing component dates.
-- Equinox and Axis 287 levers, the
+- Equinox and Axis 287 levers were linked NULL → 8951 after the 1994 Dia-Compe grouped lever record was separated on 2026-11-27; specs 26483/26504 retain source 508, and exact scoped overrides reproduce the links. The
   uncertain Accushift Plus 12–28T / 13–30T clusters other than Ocelot, Nyala and Ibex and Pista's explicit
   16T fixed sprocket (26822) stay unlinked. The Grizzly and other
   same-name builds retain their edition-specific text. Names such as
