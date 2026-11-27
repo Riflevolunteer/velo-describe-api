@@ -12,6 +12,10 @@ The similarly sized QS400N and QS500N are separate quick-release designs, and DC
 
 Rollback: 681 title `Dia-Compe DC500N, N-brakes`, description `Side-pull caliper, 43-57mm reach, 128g; DC-N series 400N (38-48) / 500N / 630N (49-64) / 730N (53-71) / 810N (61-79). 500N / 630N / 730N / 810N still listed in 1994.`, search `Dia-Compe DC500N N-brakes`, years 1980–94, source 218, group NULL, UUID `93B3E36E-5DD1-4178-8430-5225C19AB65A`. 8083 title `Dia-Compe DC630N, N-brakes`, description `Side-pull caliper, DC-N series, 49-64mm reach, 132g. 630N still listed in 1994.`, search `Dia-Compe DC630N N-brakes`, years 1984–94, source 261, group 123, UUID `d566b0af-bf7d-11f1-a2df-02fea3763e8d`. Both brand 73, category 3, NULL image. Restore 8083 before repointing those four links and reverting overrides.
 
+## 136 / 138 description-limit review — 2026-11-27
+
+The quality report flags 8931 because its description is exactly 255 characters. Its final sentence, `The 1986 "138" hand rest is a different part`, is grammatically complete and matches the distinction already recorded in the 1964 catalogue review below. The missing final punctuation alone does not establish lost text; no rewrite is needed. The source review identifies 136 and 138 as 1964 touring levers and the later 138 hand rest as a different product. Live readback confirms 8931 has no bike links. No DB changes.
+
 ## 500G / 730G reach-family review — 2026-11-27
 
 The [1981 Bikecology catalogue, p. 24](https://ebykr.com/library/bikecology-1981-catalog/), lists 500 G (43–57 mm) and 730 G (52–72 mm) together under Dia-Compe G, and the Performance 1985–86 catalogue, source 462, p. 35, repeats the reach chart. The [1980 Bike Warehouse catalogue, p. 6](https://ebykr.com/library/bike-warehouse-1980-catalog/), also lists the 730G as a 730/810 set. The maker's later DC-N, QS-N and G-N series and the 1964 Dia-Weinmann 500/730/810 are not established as this G family. Bare 730 and 730GX bike specs remain unresolved.
