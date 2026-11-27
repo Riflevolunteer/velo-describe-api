@@ -2341,9 +2341,9 @@ const COMPONENT_OVERRIDES = {
     // the catalogue does not establish the black-label detail of row 1138.
     'raleigh weinmann short reach alloy centerpull with qr and extension levers': [{ from: 1979, to: 1979, bike: 'Super Grand Prix', id: 1138 }],
     'campagnolo record side pull': [{ to: 1978, id: 573 }], // Professional Mk V: Campagnolo 2040, Record (pre-CPSC)
-    'campagnolo record short reach': [{ from: 1979, to: 1979, id: 575 }], // 1979 Raleigh Professional Mk V: Campagnolo 2040/1 Record short reach, post-CPSC row (1978-87)
-    'campagnolo record short reach 47mm': [{ from: 1980, to: 1980, id: 575 }], // 1980 Raleigh Professional Mk V: 2040/1 short reach, as 1979
-    'campagnolo record with campagnolo levers': [{ from: 1981, to: 1981, id: 575 }], // 1981 Raleigh Canada Professional: 2040/1 short reach post-CPSC row (1978-87); reach unstated
+    'campagnolo record short reach': [{ from: 1979, to: 1979, id: 572 }], // 2040/2040-1 post-CPSC family; explicit short reach remains in text
+    'campagnolo record short reach 47mm': [{ from: 1980, to: 1980, id: 572 }], // 2040/2040-1 post-CPSC family; explicit 47 mm remains in text
+    'campagnolo record with campagnolo levers': [{ from: 1981, to: 1981, id: 572 }], // 2040/2040-1 post-CPSC family; reach unstated
     'weinmann carrera sidepull with wheel guides': 1167, // Competition GS: Weinmann AG Carrera (earlier, 1970-80)
     'raleigh weinmann 610 centerpull with lightened quick release levers': 1138, // Super Course: Weinmann AG Raleigh 610
     // 1993 Bianchi. Part-number retitle broke the bare-name substring hit; keeps the existing link.
@@ -2426,7 +2426,7 @@ const COMPONENT_OVERRIDES = {
     'shimano 600 ax': 965, // Shimano BR-6300, 600 AX
     'weinmann 405': 1117, // Weinmann AG 405
     // 1983 Bianchi.
-    'campagnolo nuovo record': [{ bike: 'Treviso N.R.', from: 1985, to: 1985, id: null }, { from: 1978, id: 572 }], // Campagnolo 2040, Record (standard reach, post-CPSC)
+    'campagnolo nuovo record': [{ bike: 'Treviso N.R.', from: 1985, to: 1985, id: null }, { from: 1978, id: 572 }], // 2040/2040-1 Record post-CPSC family
     'campagnolo gran sport brakes': 554, // Campagnolo Gran Sport (second gen)
     // 1984 Bianchi (ambiguous between two Flash versions).
     'modolo flash (anatomic hoods)': 874, // Modolo Flash (1st version)

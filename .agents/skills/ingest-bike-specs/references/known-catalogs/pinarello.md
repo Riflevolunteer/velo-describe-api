@@ -333,8 +333,9 @@ New group links, by category (existing seven chain/tyre links unchanged):
   pedals 3716. Rear group remains NULL: 4148 and 4151 overlap circa 1979.
   Brakes remain NULL without standard/short-reach identification (582/7005).
 - Record: FD 2299, RD 4125, crank 1496, seatpost 5749, levers 226,
-  pedals 3708, using the existing period Record mappings. Brakes stay NULL
-  without reach identification (572/575).
+  pedals 3708, using the existing period Record mappings. Brakes remain NULL;
+  the reach variants were merged into 572 in 2026-11-27, but the estimated
+  catalogue date and generation identification still need review.
 - Treviso: FD 2276, RD 4085, seatpost 5734, levers 209, pedals 3688.
   Gran Sport brakes have multiple generations; crank candidates 1472/1474/1475
   differ in BCD/configuration and start in 1980. Neither is inferred here.

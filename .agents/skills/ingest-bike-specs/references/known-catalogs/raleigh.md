@@ -340,9 +340,9 @@ retain their GB Forged links, now dated through 1976. [Scans and live validation
 - Fixes: "Weinman" -> Weinmann; derailleur cell split into Front / Rear /
   Shifters; "Haden" kept as printed (Hayden); the table's size / weight cells
   rewritten as `21½"` and `23 lbs (23½" frame)`.
-- Overrides: Professional brakes "Campagnolo Record short reach" -> 575
-  (2040/1 short reach, post-CPSC 1978-87; the pre-CPSC 576 ends 1978; 1978's
-  standard-reach pick stays 573); Professional crank "Nuovo Record cotterless
+- Overrides: Professional brakes "Campagnolo Record short reach" -> 572
+  (post-CPSC 2040/2040-1 family, formerly short-reach 575; 1978's
+  pre-CPSC family pick stays 573); Professional crank "Nuovo Record cotterless
   42/52T 170mm" -> 1496 (as 1978's 42/51T); Super Course "Sun Tour Ultra 6
   13-24T" freewheel -> 2240 NW-6500 (13T top sprocket rules out US-6500, as
   the 1983 Clubman). The rest are the 1978 picks (Gran Sport 2276 / 4085 /
@@ -372,7 +372,7 @@ retain their GB Forged links, now dated through 1976. [Scans and live validation
 - Fixes: printed "Grant Sport" derailleur -> Campagnolo Gran Sport; the
   Derailleur row split into Front / Rear / Shifters; wording as the 1979 CSV.
 - Overrides (all as 1979, wording or range extended): Record short reach 47mm
-  -> 575, Nuovo Record 42/51T 170mm crank -> 1496, Weinmann "light alloy"
+  -> 572 (formerly 575), Nuovo Record 42/51T 170mm crank -> 1496, Weinmann "light alloy"
   A124 -> 7776, hubs Nuovo Record 3259 / Gran Sport 3256 / Atom 3183 (with
   "36 hole"), Ultra-6 chain 7820, Perfect 5 speed freewheel 2245 (14-28T,
   14-34T, 14-32T). Reliant "Chrome plated steel" pedals set to null (the
@@ -403,7 +403,7 @@ retain their GB Forged links, now dated through 1976. [Scans and live validation
   (EC-630 / FD-6200 Arabesque) and 4468 (RD-6200 short cage, 13/28T); the
   FD-6207 / RD-6207 rows are 1984-87, so the 1987 picks stay. SunTour Spirt /
   Spirt P.U.B. front -> 2601, Honor rear -> 4702. Campagnolo: Record with
-  Campagnolo levers brakes -> 575 (reach unstated, post-CPSC row assumed),
+  Campagnolo levers brakes -> 572 (formerly 575; reach unstated, post-CPSC family assumed),
   Strada Record 51/42 crank -> 1496, Gran Sport 52/42 set -> 1472, Gran Sport
   hubs -> 3256, Gran Sport seatpost "with clip" -> 5734.
 - Not linked on purpose: Shimano 600 EX crank (three Arabesque variants, no
