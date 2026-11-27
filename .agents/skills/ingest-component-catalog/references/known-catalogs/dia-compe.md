@@ -1,5 +1,13 @@
 # Dia-Compe catalogs processed so far
 
+## 500G / 730G reach-family review — 2026-11-27
+
+The [1981 Bikecology catalogue, p. 24](https://ebykr.com/library/bikecology-1981-catalog/), lists 500 G (43–57 mm) and 730 G (52–72 mm) together under Dia-Compe G, and the Performance 1985–86 catalogue, source 462, p. 35, repeats the reach chart. The [1980 Bike Warehouse catalogue, p. 6](https://ebykr.com/library/bike-warehouse-1980-catalog/), also lists the 730G as a 730/810 set. The maker's later DC-N, QS-N and G-N series and the 1964 Dia-Weinmann 500/730/810 are not established as this G family. Bare 730 and 730GX bike specs remain unresolved.
+
+Applied on user approval: combined 500G 9106 and 730G 11696 into 9106 `Dia-Compe 500G / 730G`, retaining both reaches, G-set characteristics, source 462 and the 1978–86 family date span. The 1981 source independently attests 730G before its former 1985 start, but the family start is not a claim that both reaches existed in 1978. All eight bike specs and their generator overrides retain 9106; 11696 had no links or overrides. Readback verified the family and all links; SQL replay affected zero rows, the link-decision test passed, and the comparison of 118 loaded catalogues had the same 15 pre-existing unrelated Huret losses as the baseline, with no gains or changed mappings. The Dia-Compe parenthetical duplicate report found no candidates.
+
+Restoration: 9106 title `Dia-Compe 500G`, description `Silver-anodised side-pull brake set, 43-57mm reach, drilled levers, gum hoods and quick release. Supplied with calipers, levers, cables and housing. The 730G is the longer-reach counterpart. Japan.`, search `Dia-Compe 500G`, 1978–86, source 462. 11696 title `Dia-Compe 730G`, description `Side-pull brake set, 52-72mm reach; longer-reach counterpart to 500G, with drilled levers, gum hoods and quick release. Set includes calipers, levers, cables and housing. Japan.`, search `Dia-Compe 730G`, 1985–86, source 462, UUID `84032ac2-9e8a-43d5-8a04-70f6ec5920fe`, brand 73, category 3, group and image NULL. Restore those fields and the retired row to undo; no bike link needs moving.
+
 ## 984D maker identity and Bianchi links — 2026-11-21, applied and validated
 
 The existing TODO's 984D identification was resolved from a previously held
@@ -873,4 +881,4 @@ steel 7300 in 8097. No DB or generator changes were made.
 
 ## Performance 1985–86 reconciliation — applied 2026-11-18, source 462
 
-Added **11696 Dia-Compe 730G**, 1985–86, 52–72mm; extended existing 500G 9106 through 1986. The plain 730/730GX aliases remain unproven and unlinked. [Exact old/new values, retired/new UUIDs and validation](cross-catalog-notes.md#performance-fallwinter-198586-reconciliation--applied-2026-11-18). Readback matched, SQL rerun changed zero rows, all 107 loaded catalogues retained their mappings, all 13 tests passed and whole-DB quality stayed unchanged with zero errors.
+Added **11696 Dia-Compe 730G**, 1985–86, 52–72mm; extended existing 500G 9106 through 1986. The 2026-11-27 reach-family merge above supersedes the separate 11696 record. The plain 730/730GX aliases remain unproven and unlinked. [Exact old/new values, retired/new UUIDs and validation](cross-catalog-notes.md#performance-fallwinter-198586-reconciliation--applied-2026-11-18). Readback matched, SQL rerun changed zero rows, all 107 loaded catalogues retained their mappings, all 13 tests passed and whole-DB quality stayed unchanged with zero errors.

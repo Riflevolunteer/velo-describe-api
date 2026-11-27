@@ -91,7 +91,7 @@ Applied as reviewed on2026-11-19, source465; all deliberately unlinked values re
 
 ## Performance 1985–86 component follow-through (2026-11-18)
 
-New Dia-Compe 730G **11696** does not identify the bare 730 Miyata values as G,
+The Dia-Compe 730G evidence, originally added as **11696** and since merged into family **9106**, does not identify the bare 730 Miyata values as G,
 establish 730G=730GX, or make 1964 Dia-Weinmann 8929 / steel 7300 in 8097 suitable.
 Keep those current NULL links. The later Ofmega CX cartridge-hub evidence for
 9161 does not bridge its construction back to the 1981–82 Motobecane CX hub
