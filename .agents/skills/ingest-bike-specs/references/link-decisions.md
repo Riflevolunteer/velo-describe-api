@@ -540,6 +540,8 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Rear Derailleurs
 
+- The 1990 Bianchi Nyala rear derailleur spec 7018 `SunTour XCT` stays unlinked. The catalogue photo shows direct mounting and a long cage. The seven-speed drivetrain does not distinguish RD-XT00-GXB from RD-XT10-GXB in the 1990 listings. Reopen with a marked original fitment or a period model crosswalk. [SunTour evidence](../../ingest-component-catalog/references/known-catalogs/suntour.md#xct-fitment-and-1991-technical-chart-follow-up--2026-11-28).
+
 - c.1979 Pinarello: the groupset expansion (applied/validated 2026-11-20) supersedes the initial
   generic-group-only treatment; follow the Colnago/Cinelli seven-category split.
   Preserve Record Special's mixed-group wording and leave those parts unlinked;
