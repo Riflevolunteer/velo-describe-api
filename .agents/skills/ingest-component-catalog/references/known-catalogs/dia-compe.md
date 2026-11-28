@@ -22,7 +22,13 @@ The original Dia-Compe pages place the 38–48 mm DC400N under the common N-brak
 
 Restoration: both records previously had `year_to = 1986` and `source_ref = 209`. Restore those values with guards on the new endpoints and sources 586/513, and return both override endpoints to 1986.
 
-Adjacent evidence for 693: the same 1988 Fuji p. 33 names Q400N on Tivoli and Q500N on 450SE. Those codes and the current family endpoint of 1986 warrant a separate Q-N year review.
+## Q-N family 693 later fitments — 2026-11-28
+
+Fuji Edition No. 17 (1987) specifies Q400N on Tivoli (p. 11) and Q500N on Sagres, Palisade and 450 SE (pp. 16–18). Edition No. 18 (1988) again lists Q400N on Tivoli and Q500N on 450SE (p. 33). The same table prints QS400N for 450RE. The 1988 family endpoint rests on the Q400N and Q500N fitments. The dated evidence here for Q630N, Q730N and Q810N comes from the 1986 maker catalogue. [Fuji 1987 catalogue](https://ebykr.com/library/fuji-1987-catalog/), [Fuji 1988 specification scan](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1988-fuji-catalog-p33.webp), [Dia-Compe Products 1986 p. 4](https://cyclespeugeot.web.fc2.com/catalog/yoshigai86/1986dc_07.jpg).
+
+**Applied and verified on user approval, 2026-11-28.** Extended 693 from 1980–86 to 1980–88 and registered the 1988 US Fuji Edition No. 18, printed p. 33, as source 587. The 1986 Dia-Compe catalogue, source 102, supplies all five reach and weight figures. Live readback confirmed the revised range, source 587 and zero bike links to 693. The loaded catalogues contain no exact Q-N fitment specs and the generator has no Q-N overrides. The generator comparison across 118 loaded catalogues and 24,829 specs reproduced the baseline of 15 pre-existing Huret discrepancies, zero gains and zero changed mappings. The Dia-Compe brake near-duplicate report found zero pairs. SQL replay affected zero rows.
+
+Restoration: restore `year_to = 1986` and `source_ref = 102` on component 693, guarded by `year_to = 1988` and `source_ref = 587`.
 
 ## 136 / 138 description-limit review — 2026-11-27
 
