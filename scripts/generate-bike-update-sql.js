@@ -3384,6 +3384,10 @@ const COMPONENT_OVERRIDES = {
     'course': null, // generic; hit Selle San Marco Mercier Course
   },
   Handlebars: {
+    // Exact fitments from the 1990 Bianchi US and 1991 Bianchi Japan tables.
+    'sr mtb 224 power bulge': [{ from: 1990, to: 1990, id: 12826 }],
+    'sakae mtb 227': [{ from: 1991, to: 1991, id: 12827 }],
+    'sakae mtb 220': [{ from: 1991, to: 1991, id: 12825 }],
     '3ttt aero bars': [{ bike: 'Prologo', from: 1987, to: 1987, id: null }], // c.1987 Pinarello: 2745 only attested 1982; no bend/version established
     "cinelli 66 cotton tape rubber hoods": [{"bike":"Team Champion","from":1981,"to":1981,"id":null}], // 1981 Motobecane US, pp.14-15; brand notes.
     // 1980 Motobecane US, tables pp.6-7; scoped decisions and Criterium date evidence in brand notes.

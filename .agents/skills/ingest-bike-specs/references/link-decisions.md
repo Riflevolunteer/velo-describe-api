@@ -355,6 +355,8 @@ see the Raleigh catalogue notes for the decision and source.
 
 - 1983 Bianchi Eco Pista `TTT` handlebars 1004 stay unlinked by user decision; the catalogue names the maker without a model. Campione del Mondo has no handlebar spec in the source or database. [Catalogue evidence and validation](known-catalogs/bianchi.md#1983-bianchi--1983_bianchi_speccsv-9-bikes-118-specs-51-linked).
 
+- 1990 Bianchi US `SR MTB-224 Power Bulge` links to 12826. The 1991 Japanese `Sakae MTB-220` and `Sakae MTB-227` specs link to 12825 and 12827 respectively, superseding the earlier hold for lack of exact records. [Sakae catalogue and fitment evidence](../../ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#1994-mtb-handlebars--catalogue-reconciliation-2026-11-28).
+
 - **Nitto Miyata review, 2026-11-20:** B-105F specs 22104/22168/22190 stay
   unlinked pending a maker suffix/model crosswalk to B105 2889. Do not strip F
   globally or conflate B105 with Mod. 55. The scoped MDL-55/55F extension to
@@ -362,7 +364,7 @@ see the Raleigh catalogue notes for the decision and source.
 
 - Leave unlinked: 1975 Motobecane Grand Touring Randonneur bend and Tandem combined front/rear cell; the two 1986 Cinelli Almarc bars (11171 Almarc is a 1980-81 3ttt Merckx / Rekord-78 set, not these).
 - "MIYATA SIGNATURE Alloy" (4) is a house bar: leave. Leave unlinked: Miyata "SR RANDONNEUR Alloy" (3; RN-L / RN-S / RND / WR, nothing to choose on); 1989 Peugeot Cosmic "Franco Italia" (Philippe 2897 1970-82 or Milremo 2868 1984); 1989 Peugeot Anjou "CTA alloy randonneur bars" (2782 ATAX CTA is a racing bend); 1978 Peugeot "Atax Philippe, demi-course" (no demi-course row). Miyata CTSD specs 19079/22490 link to 12744; the printed tables and model columns were verified in the [SR notes](../../ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#ctsd-handlebar--applied-2026-11-25).
-- Leave unlinked: "3ttt / TTT Competizione" (1987, 1991-92 Bianchi; three bends), 1991-92 Bianchi "ITM Mondiale" (3; 9198 Mondial 90/A ends 1990 and names a model the cell does not), 1991 Bianchi Sakae MTB-220 / MTB-227 (only MTB-226SB, 1993), 1994 Cinelli "3T Pro Light" (2) and "Cinelli Eubios 26" (no rows), 1981 Bianchi "T.T.T. Rekord".
+- Leave unlinked: "3ttt / TTT Competizione" (1987, 1991-92 Bianchi; three bends), 1991-92 Bianchi "ITM Mondiale" (3; 9198 Mondial 90/A ends 1990 and names a model the cell does not), 1994 Cinelli "3T Pro Light" (2) and "Cinelli Eubios 26" (no rows), 1981 Bianchi "T.T.T. Rekord".
 - Decided 2026-10-30, leave unlinked: "Racing bend" / "Racing bend, light alloy", 1970-76 Peugeot x13 [7368 7507 7571 9539 9567 9698 9670 7274 7258 7314 7299 7448 7433] (no maker printed; 2901 Franco Belge 354 starts 1979); T.T.T. Record Competizione, 1978 Bianchi Campione del Mondo CX [12513] (DB splits it by bend: 2752 Gimondi / 2750 Merckx / 2777 TdF; none printed).
 
 ## Tyres

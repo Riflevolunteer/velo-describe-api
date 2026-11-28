@@ -910,6 +910,8 @@ Shimano 600 candidates include 3539 FH-6208 rear/HB-6207 front and 7551 conventi
 
 ## 1990 Bianchi — `1990_bianchi_spec.csv` (26 bikes, 519 specs, 262 linked)
 
+- Sakae handlebar review (2026-11-28): the table on PDF p. 21 names MTB-224 Power Bulge on Project 7, Grizzly, Peregrine, Sika and Osprey. All five specs now link to 12826. [SR catalogue, fitments and validation](../../../ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#1994-mtb-handlebars--catalogue-reconciliation-2026-11-28).
+
 - OverDrive evidence review (2026-11-14, user approved, applied): dated cover and
   pp.21–22 confirm Ritchey Megabite Overdrive 26x2.0 on Signature 2 / Grizzly /
   Peregrine / Sika / Osprey, specs 6906/6948/6969/6989/7009. Updated component
@@ -1117,6 +1119,7 @@ test files pass. Task-created SQL, scan downloads and comparisons removed.
 - Left unlinked: Aranessa "Shimano Deore XT" brakes (BR-M732 1989-91 or BR-M734 1991-93), 105SC SIS shifters (SL-1055 BCAI / FCAI),
   Deore DX crank (no FC-M650 row), Deore XT "Competition" pedals, SunTour Quattro FD / RD, Modolo Quattro brakes, Campagnolo Sigma
   and Omega XL rims (only Strada / clincher rows), Vittoria Nuovo Pro (only the 1984-88 Nuovo Pro 260 and 1996 R.T. rows).
+- Sakae handlebar review (2026-11-28): p. 8 confirms MTB-227 on Grizzly and Peregrine and MTB-220 on Sika and Osprey. The first pair now links to 12827 and the second to 12825. [SR catalogue, fitments and validation](../../../ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#1994-mtb-handlebars--catalogue-reconciliation-2026-11-28).
 
 ### Grizzly hub review — 2026-11-17, correction applied
 

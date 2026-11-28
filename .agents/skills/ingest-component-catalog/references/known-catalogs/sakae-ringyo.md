@@ -1,5 +1,31 @@
 # Sakae Ringyo (SR) catalogs processed so far
 
+## 1994 MTB handlebars — catalogue reconciliation, 2026-11-28
+
+The [1994 SR SunTour Sales Manual table](https://www.bikecatalogs.com/download/2243#page=32), source 583, printed p. 30 (PDF p. 32), gives material, weight, finish, width and bend for ten models. The [product lineup](https://www.bikecatalogs.com/download/2243#page=37), printed p. 35 (PDF p. 37), gives the prefixed codes BR-MTB-420, BR-MTB-528 and BR-MTB-328 and separately lists BR-MTB-227. The p. 30 colour key identifies AL as silver and BL as black.
+
+| Model | Evidence and applied change |
+| --- | --- |
+| MTB-220 | Added 12825 for 1991–94. The 1994 table gives alloy, silver or black, 520 mm, 6°, 235 g. |
+| MTB-224 | Added the Powerbulge family 12826 for 1990–94. The 1994 table gives alloy, silver or black, 580 mm, 10°, 320 g. The photo captions the black bar MTB-224BL. |
+| BR-MTB-227 | Added 12827 for 1991–94. The Japanese Bianchi table and the 1994 lineup independently name the code. The lineup gives no BR-MTB-227 dimensions. The p. 30 specifications apply to the separately coded MTB-228. |
+| MTB-228 | Added 12828 for 1994. Alloy, silver or black, 560 mm, 6°, 310 g. |
+| MTB-229 | Added 12829 for 1994. Alloy, silver or black, 540 mm, 6°, 280 g. |
+| MTB-320 | Added 12830 for 1994. Steel, black, 520 mm, 6°, 390 g. |
+| MTB-324 | Added 12831 for 1994. Steel, black, 580 mm, 10°, 510 g. |
+| BR-MTB-328 | Added 12832 for 1994. Steel, black, 560 mm, 6°, 410 g. |
+| BR-MTB-420AS | Enriched 9739 at 1993–94, source 583. The 1994 table gives natural titanium, 520 mm, 6°, 180 g. The photo captions the bar MTB-420AS Powerbulge Titanium. Prior description `ATB handlebar, Powerbulge titanium`. |
+| MTB-428 | Added 12833 for 1994. Natural titanium, 560 mm, 6°, 225 g. |
+| BR-MTB-528AS | Enriched 9740 and extended through 1994 with source 583. The 1994 table gives natural stainless steel, 560 mm, 6°, 330 g. The photo captions the bar MTB-528AS Stainless Zetto. Prior description `ATB handlebar, stainless steel, Zetto`, dates 1993–93, source 278. |
+
+The [1993 SR catalogue](https://bikalog.org/api/view/Sun%20Tour/1993/SunTour93.pdf), printed p. 17, names BR-MTB-420AS and BR-MTB-528AS and independently identifies the distinct BR-MTB-226SB Powerbulge Quad-2 (9738) for 1993.
+
+The [1990 Bianchi US fitment table](https://www.bikecatalogs.com/download/2797#page=21), source 168, names SR MTB-224 Power Bulge on Project 7, Grizzly, Peregrine, Sika and Osprey (specs 6911, 6932, 6953, 6974, 6994, now linked to 12826). The [1991 Japanese Bianchi fitment table, p. 8](https://i0.wp.com/2velo.com/wp-content/uploads/2014/03/1991-catalog-p0811.jpg?w=400&ssl=1), source 358, names Sakae MTB-227 on Grizzly and Peregrine (19536, 19554 → 12827) and Sakae MTB-220 on Sika and Osprey (19572, 19590 → 12825). All nine links were previously NULL. The new exact model records supersede the earlier decision to hold the 1991 entries because the only nearby code was MTB-226SB. Three exact-value, catalogue-year overrides reproduce the verified links. The component date bounds record catalogue attestations.
+
+**Applied and validated with user approval.** The transaction added nine handlebars and updated two, all with source 583, and filled the nine exact Bianchi links. Live readback verified the eleven records, their dates and specifications, and the nine link targets. The comparison across 118 loaded catalogues and 24,829 bike specs matched the prior baseline, including the 15 pre-existing Huret losses. Replay changed zero rows, both Sakae duplicate checks returned zero pairs, the integrity report found zero errors and all 14 tests passed.
+
+The new row UUIDs are 12825 `0a86737e-76a2-4bba-a1bb-514064f4c13f`, 12826 `9ae7261c-a602-4575-99cd-9288144f6b51`, 12827 `cafcbe32-effd-4333-84c4-0f276fc0368b`, 12828 `5f84e5eb-1bcf-4159-b887-5783c4e7fce1`, 12829 `cff18579-46e4-4631-9779-9b475c87c451`, 12830 `83295aff-d3c3-4516-b228-fc117fd6f6bf`, 12831 `e528c4c0-217e-41f8-9fda-33a690d820be`, 12832 `ee3694ec-66d0-4073-a937-ea15afb8e761` and 12833 `cec21889-9426-4a12-861c-2b9b6e67463b`.
+
 ## 1994 road handlebars — catalogue reconciliation, 2026-11-28
 
 The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243#page=32), source 583, printed p. 30 (PDF p. 32), lists seven road handlebar models. The table gives material, bend, width, drop, reach, weight and factory. The live review found four existing Sakae bars and three missing codes. The sole existing bike link is 1986 Raleigh Competition spec 8193 to CTB 11325.
