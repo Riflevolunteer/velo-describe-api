@@ -660,9 +660,11 @@ The specimen photographs show an axle-claw mounting bracket and a long cage. The
 
 SunTour's separate **1991 Bicycle Components Group Chart & Specifications** supplies the design evidence missing from the earlier comparison. Printed p. 3 describes XCT's new inverted-L form, which allowed greater use of composites while retaining compatibility with earlier SunTour shifters. Printed p. 15 gives XT01-GXB 24389921 and the optional bracketed XT01-GXZ 24389901, 39T total capacity, 13T minimum rear sprocket, maximum 28T at a 24 mm dropout dimension or 30T at 26/28 mm, front difference below 20T, two brass bushings and a double spoke guard. The weight cell is blank. The 1991 equipment catalogue p. 14 independently confirms XT01 and both order numbers. This distinguishes the 1991 design from the 1990 range. XT00 versus XT10 and XT01 versus XT02 still lack a parts-level crosswalk. [Technical chart p. 3](https://www.bikecatalogs.com/download/2655#page=4), [p. 15](https://www.bikecatalogs.com/download/2655#page=15), [1991 equipment catalogue p. 14](https://www.disraeligears.co.uk/site/00_main_images/suntour_bicycle_equipment_catalog_1991_-_page_14_main_image.jpg).
 
-Proposed for **12282** after review: register the technical chart as its own provenance source and replace `XCT rear derailleur, GXB direct hanger, GXZ with bracket.` (source 509) with the following 220-character description. Retain the existing code, model-year 1991 and mount aliases. This was a read-only review.
+**Applied November 28, 2026.** Registered the technical chart as catalogue source **589** and updated the description and provenance on **12282**. The model year is 1991, with both mount aliases on the same record. For restoration, the previous description was `XCT rear derailleur, GXB direct hanger, GXZ with bracket.` and the previous source was 509.
 
 > Inverted-L design, AccuShift Plus. GXB direct (24389921), GXZ bracket (24389901). 39T total, 13T min rear. Max rear 28T at 24 mm dropout, 30T at 26/28 mm. Front difference <20T. Two brass bushings and double spoke guard.
+
+Live readback confirmed one chart source and the updated 12282 record. The 1990 Nyala spec 7018 remains unlinked while the exact 1990 variant is unresolved. Across 118 catalogues and 24,829 specs, the full bike-link comparison matched the pre-update baseline, including 15 existing Huret discrepancies. SQL replay affected zero rows, the quality report found zero errors, the SunTour rear derailleur report found zero near pairs and all 14 test suites passed.
 
 ## GPX front derailleur mounts and date review — 2026-11-27
 
@@ -1158,7 +1160,7 @@ New components, all source 509, year 1991–1991; UUIDs are source_id:
 - 12279 `SunTour BL-CR01-S, X-1 Chroma`: `8dce1036-e6c6-11f1-a2df-02fea3763e8d`.
 - 12280 `SunTour CT-CR01, X-1 Chroma`: `8dd0c1ed-e6c6-11f1-a2df-02fea3763e8d`.
 - 12281 `SunTour FD-XM01-GXH, XCM`: `8dd362eb-e6c6-11f1-a2df-02fea3763e8d`.
-- 12282 `SunTour RD-XT01-GXB / RD-XT01-GXZ, XCT`: `8dd61d91-e6c6-11f1-a2df-02fea3763e8d`.
+- 12282 `SunTour RD-XT01-GXB / RD-XT01-GXZ, XCT`. UUID `8dd61d91-e6c6-11f1-a2df-02fea3763e8d`. The later technical chart update moved provenance to source 589. [Technical chart update](#xct-fitment-and-1991-technical-chart-follow-up--2026-11-28).
 - 12283 `SunTour FD-XT01-GXH, XCT`: `8dd8ba4b-e6c6-11f1-a2df-02fea3763e8d`.
 - 12284 `SunTour RD-XU00-GXB / RD-XU00-GXZ, XCU`: `8ddb5fbc-e6c6-11f1-a2df-02fea3763e8d`.
 - 12285 `SunTour SL-XU00-R6 / SL-XU00-L, XCU`: `8dde00b9-e6c6-11f1-a2df-02fea3763e8d`.
