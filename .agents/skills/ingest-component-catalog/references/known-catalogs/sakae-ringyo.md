@@ -1,5 +1,55 @@
 # Sakae Ringyo (SR) catalogs processed so far
 
+## 1994 stems — catalogue reconciliation, 2026-11-28
+
+The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243#page=29), source 583, lists nine mountain, five city and four road stems on printed p. 27 (PDF p. 29). The colour key gives AB polished silver, AL silver, BLA all black, BL black, HF high-finish silver, C stainless shaft and N no cable hole. The [lineup on p. 35](https://www.bikecatalogs.com/download/2243#page=37) prints HP-MTS-301, HP-CTS-320, HP-MTS-300, HP-COS-350 and HP-CYS-129. It also says MTS-350 in the MTS-300 stem cell. The specifications and photo caption both say MTS-N350, which supplies the recorded code.
+
+| Model | Evidence and database record |
+| --- | --- |
+| MTS-301 | Extended 9743 through 1994 and recorded the base code alongside HP-MTS-301BL. The table gives 22.2 mm quill, 150 mm height, 80/100/120 mm extension, 90°, 352 g, AB/BL, Japan. |
+| MTS-300 | Added 12838 for c. 1987–94. The table gives 22.2 mm quill, 150 mm height, 60/80/100 mm extension, 25°, 375 g, AB/BL, Taiwan. |
+| MTS-N350 | Added 12839 for 1994. 25.4 mm quill, 150 mm height, 100/120/140 mm extension, 25°, 400 g, BL, Japan. |
+| MTS-N405 / N407 / N455 / N457 Zetto | Added 12840–12843 respectively for 1994. All are 150 mm high with 100/120/140 mm extensions, BL, Taiwan. N405/N407 are 22.2 mm and 393 g. N455/N457 are 25.4 mm and 408 g. N405/N455 are 15° and N407/N457 are 25°. |
+| COS-300 / COS-350 Duo 10 | Added 12844 and 12845, both marked new for 1994. Both are reversible 10° AC4C melt-forged T6 I-beam threadless stems, 90/110/130/150 mm extensions, AB/BL, Japan. COS-300 is 228 g and COS-350 is 216 g. |
+| CYS-110 / CYS-130 / CYS-C120 / CYS-124 / CYS-129 | Added 12846–12850 respectively for 1994. All have 22.2 mm quills and 70° angles, Japan. Heights are respectively 220, 110, 190/210, 200/230 and 230 mm. Extensions are 40, 46, 40, 50 and 50 mm. The table lists BL, BLA, AL, BLA and AL/BL, respectively. CYS-129 is marked new. |
+| FXS-100 | Enriched 9746 and extended it to 1989–94. The 1994 photo gives FXS-100 and the table gives 22.2 mm quill, 150 mm height, extensions 60–130 mm in 10 mm steps, 70°, 330 g, HF, Japan. The title retains HP-FXS-100DM from 1993. |
+| CKS-60 Hinged | Added 12851 for 1994. 22.2 mm quill, 180 mm height, 60 mm extension, 70°, 360 g, BL, Japan. |
+| CTS-320 Hinged | Enriched 9745 and extended it through 1994. 22.2 mm quill, 150 mm height, 80/100/120 mm extension, 90°, 390 g, BL, Japan. |
+| CTS Road | Hold the component identity. The photo caption reads `CTS-Custum` and the table gives 22.2 mm quill, 150 mm height, 60/80/100/120 mm extensions, 70°, 330 g, AB/BL, Taiwan. Seek a numbered crosswalk to CTS-100 11310 and the older CT Custom 8234 before assigning it. |
+
+The [Duo 10 feature on printed p. 4](https://www.bikecatalogs.com/download/2243#page=6) explains the threadless clamp and distinguishes inner and outer steerer dimensions. The COS-300 pair is 22.2/25.4 mm. The COS-350 pair prints 25.4/26.8 mm. The latter outer figure remains unverified, so the COS-350 description records the listed inner figure. A measurement of a marked COS-350 or a maker correction would verify its outer fit.
+
+The [1993 SR page](https://www.mtb-kataloge.de/Bikekataloge/PDF/SunTour/SunTour93.pdf#page=18) identifies HP-MTS-455BL Zetto (9744) and HP-CYS-120BLA (9747). The 1994 list uses N455 with an explicit no-cable-hole suffix and CYS-C120 with a stainless-shaft suffix. The CYS-C120 photograph shows a dark finish while its row says AL silver. The CYS-C120 record gives the table finish and both 1993 records remain distinct catalogue entries. The shape and colour of the photos alone leave the full variant crosswalk open.
+
+The [Claud Butler catalogue dated c. 1987](https://www.bikecatalogs.com/download/3018?download=1#page=6) names MTS 300 alloy on the Matterhorn. The [1988 Miyata table](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2088.pdf) and [1990 Miyata table](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2090.pdf) specify black MTS-300 with a cable hole. The [1990 Bianchi table](https://www.bikecatalogs.com/download/2797?download=1#page=21) names MTS-300 on Backstreet. The [1989 Fuji table p. 32](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1989-fuji-catalog-p32.webp) separately gives FXS 100 alloy on Team Fuji and CTS 100 on Roubaix and Club Fuji. The early fitments establish code availability in those catalogues. The weights and dimensions in the database descriptions are the 1994 specifications.
+
+The live stem inventory found no matching numeric fitments among loaded bike specs. The 1991 US Bianchi Axis and Volpe specs give `SR 90 degree` (26502 and 26523) with no model identifier. MTS-301 and hinged CTS-320 both use 90° in the later table. Both Bianchi links remain NULL.
+
+**Applied and validated with user approval.** Live readback verified fourteen inserts and three updates with source 583, all in Stems and without a group. It also verified the four related records 8234, 9744, 9747 and 11310 and the two Bianchi specs. The comparison across 118 loaded catalogues and 24,829 specs matched the baseline, including the 15 pre-existing Huret losses. Replay changed zero rows, Sakae stem near and parenthetical duplicate checks found zero pairs, the integrity report found zero errors and all 14 tests passed.
+
+For restoration, the three updated rows originally had 1993–93 dates and source 278. Prior fields:
+
+- 9743 title `Sakae/Ringyo (SR) HP-MTS-301BL, MTS`, search text `Sakae/Ringyo HP-MTS-301BL MTS`, description `ATB stem, Accurad melt-forged, black`.
+- 9745 description `Road stem, Accurad melt-forged, black; hinged CTS-320 for easy bar / stem changes`.
+- 9746 title `Sakae/Ringyo (SR) HP-FXS-100DM, FX`, search text `Sakae/Ringyo HP-FXS-100DM FX`, description `Road stem, Accurad melt-forged, silver`.
+
+| New ID | Source UUID |
+| --- | --- |
+| 12838 | `1c66b3aa-5499-4b34-8532-c1fa3bc3171d` |
+| 12839 | `2961c54a-079a-4fa1-abcf-74eb9064ca78` |
+| 12840 | `ed5f8f20-5348-4f82-b855-ac570edd13b2` |
+| 12841 | `2dbe69b9-4b19-4379-92bd-788ad85cc618` |
+| 12842 | `21ac428e-aa8d-4bb6-88c9-b7cbdbf09303` |
+| 12843 | `5f51f02e-736c-4eeb-9dba-93a3278415e1` |
+| 12844 | `05de793c-d729-468d-9e7d-ce5b0756c834` |
+| 12845 | `ac95255d-e7f4-41f2-b7d0-9a9692596bd9` |
+| 12846 | `79bd4235-6796-427f-b41f-17fa1310dcfa` |
+| 12847 | `00a6d890-be1b-43a7-afc9-bc46e4dea34f` |
+| 12848 | `dd663a04-4d04-4d4a-a5ee-7b450ab4d66d` |
+| 12849 | `ff7bd57a-bd33-435a-a633-df00a6789ff5` |
+| 12850 | `aa6f1b59-d991-4d10-9c14-1e63a59d4e1b` |
+| 12851 | `8c6d4174-c8cb-44a0-a0fb-efa15ae6e341` |
+
 ## 1994 seatposts — catalogue reconciliation, 2026-11-28
 
 The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243#page=32), source 583, gives length, diameter, weight, finish and factory on printed p. 30 (PDF p. 32). The [lineup on p. 35](https://www.bikecatalogs.com/download/2243#page=37) adds the `SP-` prefixed codes `SP-MTE-330`, `SP-MTE-335`, `SP-MTE340` and `SP-MTE345`. The [1993 SR catalogue p. 18](https://www.mtb-kataloge.de/Bikekataloge/PDF/SunTour/SunTour93.pdf#page=18), source 278, pictures SP-MTE-315HG2 TCO, SP-MTE-325 TCO Sport, SP-MTE-335, SP-FXE-100DM and CTE-100.
@@ -59,6 +109,8 @@ The [1990 Bianchi US fitment table](https://www.bikecatalogs.com/download/2797#p
 **Applied and validated with user approval.** The transaction added nine handlebars and updated two, all with source 583, and filled the nine exact Bianchi links. Live readback verified the eleven records, their dates and specifications, and the nine link targets. The comparison across 118 loaded catalogues and 24,829 bike specs matched the prior baseline, including the 15 pre-existing Huret losses. Replay changed zero rows, both Sakae duplicate checks returned zero pairs, the integrity report found zero errors and all 14 tests passed.
 
 The new row UUIDs are 12825 `0a86737e-76a2-4bba-a1bb-514064f4c13f`, 12826 `9ae7261c-a602-4575-99cd-9288144f6b51`, 12827 `cafcbe32-effd-4333-84c4-0f276fc0368b`, 12828 `5f84e5eb-1bcf-4159-b887-5783c4e7fce1`, 12829 `cff18579-46e4-4631-9779-9b475c87c451`, 12830 `83295aff-d3c3-4516-b228-fc117fd6f6bf`, 12831 `e528c4c0-217e-41f8-9fda-33a690d820be`, 12832 `ee3694ec-66d0-4073-a937-ea15afb8e761` and 12833 `cec21889-9426-4a12-861c-2b9b6e67463b`.
+
+Earlier-date lead for 12830: the machine transcription of the [1990 Miyata specification table](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2090.pdf) gives `SR MTB-320` with a black-anodized finish. Check the original cell and compare the earlier fitment with the 1994 black steel listing before extending its dates or transferring material or finish details.
 
 ## 1994 road handlebars — catalogue reconciliation, 2026-11-28
 

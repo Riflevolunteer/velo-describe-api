@@ -345,6 +345,8 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Stems
 
+- The 1991 Bianchi US Axis and Volpe `SR 90 degree` specs 26502 and 26523 stay unlinked. The later Sakae catalogue gives a 90° angle for both MTS-301 and the hinged CTS-320. Bianchi names no model. [Catalogue comparison](../../ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#1994-stems--catalogue-reconciliation-2026-11-28).
+
 - 1983 Bianchi generic `TTT` stems 912/938/963/976/989/1003 and 1984 Tipo Corsa / Super Leggera stems 1054/1067 stay unlinked by user decision; maker and Bianchi engraving do not establish a particular model. [1983 evidence](known-catalogs/bianchi.md#1983-bianchi--1983_bianchi_speccsv-9-bikes-118-specs-51-linked); [1984 evidence](known-catalogs/bianchi.md#1984-bianchi--1984_bianchi_speccsv-6-bikes-77-specs-24-linked).
 
 - Falcon–Merckx c.1973 models 100/102/104: bare `Cinelli` stays NULL; no stem model is specified. Scoped guards preserve other Falcon choices. [Brochure evidence](known-catalogs/falcon.md#eddy-merckx-brochure-c-1973--loaded-2026-11-17).
