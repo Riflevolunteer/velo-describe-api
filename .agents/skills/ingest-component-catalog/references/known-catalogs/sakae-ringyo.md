@@ -1,5 +1,63 @@
 # Sakae Ringyo (SR) catalogs processed so far
 
+## 1994 pedals — catalogue reconciliation, 2026-11-28
+
+The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243#page=31), source 583, lists 21 Sakae pedals on printed p. 29 (PDF p. 31). The [product lineup on printed p. 35](https://www.bikecatalogs.com/download/2243#page=37) confirms the `PL-` prefix for the listed Lowfat pedals and selected City models. Its separate SunTour PL-XP02 matches 4019. The table below gives the 1994 finish, listed weight, dimensions, body, cage and factory. A dash marks an empty cage specification. The finish legend defines AL as silver, BL as black, BLA as all black, FB/FW as black/white plastic, GC as grey paint, and HG as hard grey anodized. For SP-550 the material column and earlier maker sheets identify black and white rubber blocks. The axle suffixes in the general legend have no model assignments in this table.
+
+| Series and code | 1994 finish, weight, size (mm), body/cage, factory | Record and coverage |
+| --- | --- | --- |
+| Lowfat MTP-170 | BLA, 412 g, 65 × 106, plastic/steel, Taiwan | 9756, 1993–94 → 1990–94 |
+| Lowfat MTP-126 | BL, 396 g, 66 × 100, alloy/steel, Japan | 9755, 1989–93 → 1989–94 |
+| Lowfat MTP-127 | BL, 340 g, 66 × 100, alloy/alloy, Japan | 9754, enriched at 1993–94 |
+| Lowfat MTP-129 | HG, 336 g, 66 × 100, alloy/alloy, Japan | 9753, 1993–93 → 1993–94 |
+| Road SP-150-SE | AL, 370 g, 61 × 105, alloy/—, Japan | 9762, 1993–94 → 1980–94 |
+| Road SXP-102 | BL, 390 g, 62 × 88, alloy/steel, Japan | 3935, 1980–93 → 1980–94 |
+| Road CTP-170 | BLA, 412 g, 65 × 106, plastic/steel, Taiwan | Added 12852, 1990–94 |
+| Road CTP-400 | AL/BL, 320 g, 66 × 90, alloy/alloy, Japan | 9761, 1993–93 → 1989–94, retain PL-CTP-400AL as an alias |
+| City SP-475 | BL/GC, 500 g, 85 × 100, alloy/—, Japan | Added 12853, 1994 |
+| City SP-516 | FB/FW, 350 g, 74 × 100, plastic/—, Japan | Added 12854, 1994 |
+| City SP-529 | FB, 370 g, 82 × 100, plastic/—, Japan | Added 12855, 1994 |
+| City SP-530 | FB, 350 g, 65 × 100, plastic/—, Japan | 9759, 1993–93 → 1993–94 |
+| City CTP-470 | BLA, 464 g, 65 × 100, plastic/steel, Taiwan | 9760, 1993–93 → 1993–94 |
+| City MTP-481 | FB, 336 g, 74 × 103, plastic/—, Taiwan | 9758, 1993–93 → 1993–94 |
+| City MTP-426 | BL, 448 g, 66 × 99, alloy/steel, Japan | 9757, 1993–93 → 1993–94 |
+| City SP-522 | FB/FW, 335 g, 74 × 100, plastic/—, Japan | Added 12856, 1994 |
+| City SP-524 | FB, 300 g, 73 × 90, plastic/—, Japan | Added 12857, 1994 |
+| City SP-525 | FB/FW, 332 g, 71 × 100, plastic/—, Japan | Added 12858, 1994 |
+| City SP-550 | FB/FW, 500 g, 65 × 100, alloy/rubber, Japan | Consolidated 8246 into 3933, coverage 1980–94 |
+| City SP-583 | FB/FW, 400 g, 76 × 100, plastic/—, Japan | 9763, 1993–93 → 1993–94, retain PL-SP-583FB as an alias |
+| City SP-603 | FB/FW, 252 g, 62 × 84, plastic/—, Japan | Added 12859, 1994 |
+
+The [August 1980 Sakae P-5, printed p. 9](http://cyclespeugeot.web.fc2.com/catalog/sakae80/save0056.jpg) and [September 1982 P-7, printed p. 10](https://www.bikecatalogs.com/download/2236#page=10) distinguish SP-150SE's black spindle from SP-150's chrome-plated spindle. The two records remain separate, and the seven existing bare SP-150 fitments link to 3925. Both early catalogues name SP-550FW (white) and SP-550FB (black), with matching construction and a 65 × 98 mm foot size. P-5 gives 520 g. P-7 gives 500 g and marks both finishes as approved under German safety regulations. This corrects the prior 85 × 98 mm transcription for 8246. The [white SP-550FW specimen](https://velobase.com/Pages/ViewComponent.aspx?ID=CBB97BD0-FCF5-43E7-A67D-B73C050A1AF5) underlying 3933 weighs 490 g after adjustment for a missing cap. Both database rows had NULL image blobs and zero links. Surviving ID 3933 retains specimen UUID `CBB97BD0-FCF5-43E7-A67D-B73C050A1AF5`, the black option and the period catalogue details from 8246.
+
+[Bridgestone's 1989 US catalogue, PDF pp. 5–6](https://www.bikecatalogs.com/download/2852#page=5) names CTP-400 on the MB-2 and MB-3. The [specification grid, PDF p. 24](https://www.bikecatalogs.com/download/2852#page=24) lists black cages for both. [Bridgestone's 1990 US catalogue, printed p. 10](https://www.bikecatalogs.com/download/2853#page=11) names MTP-170 and a CrMo axle in the MB-5 detail caption. The [1989 Miyata catalogue grid](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2089.pdf#page=35) names MTP-126 on the Alumi-Cross, corroborating 9755's existing lower bound. The table retains the recorded lower bound for SXP-102. The [1993 SR catalogue, PDF p. 19](https://www.mtb-kataloge.de/Bikekataloge/PDF/SunTour/SunTour93.pdf#page=19) supplies the earlier series names and suffixes. Its captions give no cage material for CTP-470 or SP-583. Use the 1994 plastic/steel CTP-470 entry and plastic SP-583 entry for those specifications.
+
+The [1990 US Bianchi spread, PDF pp. 21–22](https://www.bikecatalogs.com/download/2797#page=21) gives Sakae CTP-170 for the Osprey, brake and derailleur columns aligned with the Dia-Compe X-1 and SunTour X-1 build. Spec 7001 now links to 12852 and the generator has a 1990 Osprey override for the exact value. The spread also names MTP-170 for the Volpe, which was excluded from the 1990 ingest under its existing cross-terrain scope. The manual separately names CTP-170 (Road) and MTP-170 (Lowfat) with different cage profiles in the photos. Both identities have their own records. The three existing MTP-126 links still point to 9755. [Lowfat and Lowfat Pro link decision](../../../ingest-bike-specs/references/link-decisions.md#pedals).
+
+**Applied and validated with user approval.** Live readback verified all eight inserts and thirteen updates under source 583, with brand 49, category 14 and NULL groups. It also verified the removal of 8246 and the new Osprey link, ten existing links and four NULL decisions. The full comparison across 118 loaded catalogues and 24,829 specs matched the baseline, including the 15 pre-existing Huret differences. SQL replay affected zero rows. Sakae pedal near and parenthetical duplicate checks found zero pairs, the integrity report found zero errors and all 14 tests passed.
+
+For restoration, clear spec 7001 if it still links to 12852, remove its scoped override and check references before removing the inserted IDs 12852–12859. The first UUID is `801d7add-e2cd-4cd0-8ef6-eb4da1bd58fd`. Restore the prior values below. All edited rows kept their IDs and UUIDs.
+
+| ID | Prior coverage | Prior source | Prior description |
+| --- | --- | --- | --- |
+| 9753 | 1993–93 | 278 | Lowfat ATB pedal, thin profile, wide platform, re-designed teeth, double toe flips; top of the Lowfat range |
+| 9754 | 1993–94 | 583 | Lowfat ATB pedal, thin profile, wide platform, double toe flips |
+| 9755 | 1989–93 | 278 | Lowfat ATB pedal, thin profile, wide platform, double toe flips, black cage |
+| 9756 | 1993–94 | 583 | Lowfat ATB pedal, thin profile, double toe flips |
+| 9762 | 1993–94 | 583 | Road quill pedal, alloy; the 1993 SE version of the SP-150 |
+| 3935 | 1980–93 | 278 | Road quill pedal, alloy body; PL-SXP-102BL (black) in the Road & Hybrid range, 1993 |
+| 9761 | 1993–93 | 278 | Road pedal, alloy |
+| 9759 | 1993–93 | 278 | ATB pedal, black cage |
+| 9760 | 1993–93 | 278 | Hybrid pedal, black alloy cage |
+| 9758 | 1993–93 | 278 | ATB pedal, resin body with reflectors |
+| 9757 | 1993–93 | 278 | ATB pedal, Lowfat series |
+| 3933 | 1980–90 | 1 | Sakae/Ringyo (SR) Silstar 550FW, Japan, 495 grams (avg) |
+| 9763 | 1993–93 | 278 | City / fashion pedal, black rubber block |
+
+Prior title and search text for 3933 were `Sakae/Ringyo (SR) Silstar 550FW` and `Sakae/Ringyo Silstar 550FW`. For 9761 they were `Sakae/Ringyo (SR) PL-CTP-400AL` and `Sakae/Ringyo PL-CTP-400AL`. For 9763 they were `Sakae/Ringyo (SR) PL-SP-583FB` and `Sakae/Ringyo PL-SP-583FB`.
+
+The retired row 8246 had UUID `7f765892-c169-11f1-a2df-02fea3763e8d`, 1982–93, source 278, brand 49, category 14 and NULL group and image. Its title was `Sakae/Ringyo (SR) SP-550FB / SP-550FW, Silstar Pedal-550FB, FW`, its search text was `Sakae/Ringyo SP-550FB SP-550FW Silstar Pedal-550FB FW` and its description was `Full rubber city / fashion pedal, German Safety Regs approved, foot size 85 x 98mm, 500g; white SP-550FW, black SP-550FB (PL-SP-550FB in the 1993 City & Fashion range)`.
+
 ## 1994 stems — catalogue reconciliation, 2026-11-28
 
 The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243#page=29), source 583, lists nine mountain, five city and four road stems on printed p. 27 (PDF p. 29). The colour key gives AB polished silver, AL silver, BLA all black, BL black, HF high-finish silver, C stainless shaft and N no cable hole. The [lineup on p. 35](https://www.bikecatalogs.com/download/2243#page=37) prints HP-MTS-301, HP-CTS-320, HP-MTS-300, HP-COS-350 and HP-CYS-129. It also says MTS-350 in the MTS-300 stem cell. The specifications and photo caption both say MTS-N350, which supplies the recorded code.

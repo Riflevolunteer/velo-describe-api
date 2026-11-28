@@ -908,7 +908,9 @@ Shimano 600 candidates include 3539 FH-6208 rear/HB-6207 front and 7551 conventi
   stems, frames, forks, Celeste tape.
 - Regression: all 30 catalogues regenerated; only the 1988 links changed.
 
-## 1990 Bianchi — `1990_bianchi_spec.csv` (26 bikes, 519 specs, 262 linked)
+## 1990 Bianchi — `1990_bianchi_spec.csv`
+
+- Sakae pedal review (2026-11-28): spec 7001 for the Osprey now links to Sakae CTP-170 (12852), using the code printed in the pedal column on PDF p. 22 and a scoped generator override. [SR catalogue, fitment and validation](../../../ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#1994-pedals--catalogue-reconciliation-2026-11-28).
 
 - Sakae handlebar review (2026-11-28): the table on PDF p. 21 names MTB-224 Power Bulge on Project 7, Grizzly, Peregrine, Sika and Osprey. All five specs now link to 12826. [SR catalogue, fitments and validation](../../../ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#1994-mtb-handlebars--catalogue-reconciliation-2026-11-28).
 

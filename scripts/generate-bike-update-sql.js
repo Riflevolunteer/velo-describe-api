@@ -4241,6 +4241,7 @@ const COMPONENT_OVERRIDES = {
       { bike: 'PRO 10', from: 1982, to: 1982, id: 12238 },
       { bike: 'PY 10 S', from: 1982, to: 1982, id: 12238 },
     ], // 1982 Peugeot (FR), p. 22; Maillard specifies the natural-finish aluminium cage.
+    'sakae ctp 170': [{ bike: 'Osprey', from: 1990, to: 1990, id: 12852 }], // Exact pedal code in the US Bianchi specification table.
     // 1991 US Bianchi builds; see the Bianchi catalogue notes for fitment evidence.
     'suntour xc pro grease guard': [{ bike: 'Grizzly', from: 1991, to: 1991, id: 4019 }],
     // c.1991 MBK Course: explicit table identities; no date expansion.

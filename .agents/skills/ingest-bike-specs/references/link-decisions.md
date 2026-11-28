@@ -410,6 +410,8 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Pedals
 
+- **Bianchi SR Lowfat and SR Lowfat Pro (reviewed 2026-11-28):** Leave 1991 US Axis 26506, Sika 26713 and Equinox 26485 and 1993 Grizzly 1650 unlinked. The SR catalogues identify several numbered Lowfat pedals. None of these four Bianchi values gives a model code. The separate 1991 Japanese Sika specification explicitly prints MTP-126 and links to 9755. [Sakae pedal evidence](../../ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#1994-pedals--catalogue-reconciliation-2026-11-28).
+
 - 1979 Peugeot PX 10 C spec 2598 and PV 10 Super Competition spec 2616: leave unlinked. The catalogue gives Lyotard and, for the PX, dural racing use, but no model; the previous 460D links were cleared. See the [Peugeot review](known-catalogs/peugeot.md).
 
 - Rechecked 2026-11-18: STC p.18 explicitly identifies Maillard 700 RC as
