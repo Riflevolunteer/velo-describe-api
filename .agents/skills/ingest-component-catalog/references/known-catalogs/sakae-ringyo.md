@@ -1,5 +1,86 @@
 # Sakae Ringyo (SR) catalogs processed so far
 
+## 1994 cranks, chainrings and bottom brackets — catalogue reconciliation, 2026-11-28
+
+The [1994 SR SunTour sales manual](https://www.bikecatalogs.com/download/2243), source 583, pairs SunTour and SR crank codes on printed p. 28 (PDF p. 30). Its [product lineup](https://www.bikecatalogs.com/download/2243#page=36), printed pp. 34–35, and [crank and BB compatibility chart](https://www.bikecatalogs.com/download/2243#page=39), printed p. 37, identify configurations and candidate fitments. Printed p. 33 (PDF p. 35) separately lists replacement chainrings, bottom-bracket cups and bare axles. New rows below record 1994 catalogue evidence. Compatibility-chart length figures describe the stated fitment.
+
+| Crank code | SR code | Reconciliation |
+| --- | --- | --- |
+| CW-XP12 | FMC-T023 | Enriched 12754. 94/56 mm BCD, 47.5 mm chainline, alloy outer and steel centre/inner. Retained the 44/46T options from the group page. The chart also pairs FMC-T023 with the earlier PoweRing CW-XP10 (1999), which now records the cross-reference. |
+| CW-XX12 / CW-XS12 | CMC-T028 / CMC-T029 | Enriched 12755/12756. Both 42/32/20T, 94/56 mm BCD and 47.5 mm chainline. XX12 has an alloy outer and steel centre/inner. XS12 has three chrome-plated steel rings. |
+| CW-XS02 / CW-XR00 | SPC-T303 / CPC-T407 | Enriched 12757/12758. Both 48/38/28T, black steel rings and 47.5 mm chainline. XS02 lists 110/74 mm BCD. XR00 has an empty BCD cell and is illustrated with and without a CPG-620 guard. |
+| CW-SL00 / CW-BE01 | CSC-204 / SZC-200 | The two crosswalks and their 130 mm, 54/42T listings are already documented on 1986 and 8009. The separate SL group page names CW-SL10 and gives 52/42T. [Open SL identity review](suntour.md#1994-suntour-code-reconciliation--2026-11-28). |
+| CW-APC-560 / CW-APC-431 | APC-560 / APC-431 | Enriched 12782/12783. 40T and 40/30T respectively, black steel, silver-painted cranks, 46/44.5 mm chainlines and CPA-201 guards. P. 20 lists both under SX100. The lineup shows APC-431 in junior XR100 and APC-560 in junior SX100. |
+| CW-CEC-571 / CW-CIC-573 / CW-CLC-572 | CEC-571 / CIC-573 / CLC-572 | Enriched 12784–12786. 46T, 46T and 36T respectively. Black steel rings, 45.5 mm chainline and guards CPG-619 / CPG-619 / CPG-659. The CLC-572 photo appears dark while the printed crank finish is AB polished silver. |
+| CW-SEC-503 / CW-SEC-570 / CW-SEC-575 | SEC-503 / SEC-570 / SEC-575 | Added single-ring cranks 12860–12862. SEC-503 44/46/48T steel or alloy, 45.5 mm. SEC-570 39T black steel and SEC-575 32T chrome-plated steel, both 44.5 mm. |
+| CW-CLC-578 | CLC-578 | Added 12863, a 31/32/33T single, chrome or black steel ring, 44.5 mm chainline and CPG-657 guard. |
+| CW-CFC-405 / CW-HN00 | CFC-405 / CFC-T405 | Added SR crank records 12864 and 12865, respectively. The 18-speed XR100 lineup names CW-CFC-405. The compatibility chart pairs CW-HN00 with CFC-T405. The [Specialized Crossroads Cruz grid, PDF p. 12](https://bikerebuilds.com/catalogs/specialized/1994-specialized-catalog.pdf#page=12) and [Shockrock 24 and Rockhopper 18 grid, PDF p. 13](https://bikerebuilds.com/catalogs/specialized/1994-specialized-catalog.pdf#page=13) separately name CFC-405 and CFC-T405 and specify 48/38/28T for both. The SR shift compatibility chart, p. 36, also gives each its own column. |
+
+The [1993 SR catalogue, printed p. 19](https://www.mtb-kataloge.de/Bikekataloge/PDF/SunTour/SunTour93.pdf#page=19), source 278, pictures a single-ring timing crank and a triple drive crank together under CW-CSC-Tandem. Corrected the description of 9766 and retained its 1993 attestation. The page separately pictures SW-SES-631-BL2 (9765), with no exact 1994 match. The 1994 compatibility chart names SEC-626, CBC-631, SEC-631, CFC-404, SZC-T344/CW-XS00 and CIC-T405/CW-XS01 without giving complete product specifications. In particular, the 1993 SES-631 and the two 1994 -631 codes need coded evidence before any identification. The only loaded crank specs mentioning Ninja use the broader Powering Ninja wording on existing 1991 Bianchi crank links. They give no exact replacement-ring code.
+
+| Replacement chainring series | Records and exact 1994 options |
+| --- | --- |
+| Ninja | Extended 9767 through 1994. Sandblasted stainless steel 300T inner, 74 mm BCD, 24/26/28T. |
+| Platinum | Extended 9768 through 1994. Platinum-coated super duralumin. 300T inner 74 mm 24/26/28T, 300C centre 110 mm 34/36/38T, 310 outer 110 mm 46/48/50/52/53T, 200 outer/inner 130 mm 39/40/42/52/53/54T. |
+| Round Tech | Extended 9769 through 1994. Silver-anodized super duralumin. 300T inner and 310 outer share Platinum's sizes, with 40/42T also listed for 300C and 50T also listed for 200. |
+| Micro Drive | Added hard-grey anodized replacement rings 12866–12868. 023T inner 56 mm 20T, 023C centre 94 mm 32T, 023 outer 94 mm 42/44T. The material column specifies the finish. |
+
+| Bottom bracket or service part | Reconciliation |
+| --- | --- |
+| BB-CB10 | Extended 9764 through 1994. [XR100 p. 18](https://www.bikecatalogs.com/download/2243#page=20) gives BB-CB10-E122, 68 mm shell, 122.5 mm axle, 47.5 mm chainline and VX taper. P. 35 also names BB-CB10-E, and the p. 37 chart shows 126 mm on selected pairings. |
+| BB-CB00 | Enriched SunTour 9729, retaining 1993–94. The ATB group listings give E 68/115 mm and 73 variant 73/119 mm (shell/axle). The SL group gives E/I 68/70 mm shells. A 116.2 mm cartridge length appears on selected p. 37 pairings. P. 33 pictures the silver CB00 and black CB10 separately, as does the 1993 catalogue. |
+| FX-BS, SZ-BS/SZ-IS, SX-BS, SI-BS | Added cup-set rows 12869–12872. All are carbon steel. FX is polished sealed, 125 g. SZ is chrome plated sealed, 125 g, with English and Italian cups. SX is black sealed, 123 g. SI is chrome plated, 130 g, with no seal specified. The English thread is 1.37 in × 24T and Italian is 36 × 24T. |
+| D-series bolt-on axles | Added rows 12873–12875 by shell width. The 68 mm variants are D-3L 116, D-3TS 128.5 and D-3T 126 mm. The 70 mm variants are D-5H 116 and D-5SP 127.5 mm. The 73 mm variants are D-7TL 131 and D-7H 118 mm. P. 33 gives boron steel and a 2° square taper. |
+| N-series nut axles | Added rows 12876–12878. P. 33 lists 68 mm 3H 113, 3A 117.5, 3T 126 mm, and 70 mm 5H 116, 5L 119, 5S 127.5 mm, in boron steel with a 2° square taper. The p. 18 group and p. 37 chart independently give N-3N 120 mm, with 3R 129 and 3S 124.5 mm in the chart. These latter three have their own service-axle row. |
+
+The 1994 compatibility chart lists N-3L at 116 mm for CW-XX12 and CW-XS12 and 115 mm for CW-SL00. It gives N-3U at 127.5 mm on several current crank rows and 124.5 mm for SEC-626. The [older Sakae No. 18 Super Apex page](https://equusbicycle.com/bike/sakae/catalog18/pdf/sakaecatalog18_%204.pdf), source 92, specifies 123 mm for the D-5SP included with the set identified by 7882. The 1994 service-axle entry records 127.5 mm and the earlier set retains its own evidence. Coded samples or drawings can distinguish printing discrepancies from actual configurations.
+
+**Applied and validated with user approval.** Live readback verified all 19 inserts and 17 updates, including provenance, brand, category, group, description and dates. The tandem correction kept source 278. Every other changed row uses source 583. All 36 affected records have zero bike links. The generator comparison across 118 loaded catalogues and 24,829 specs exactly matched the baseline, including the 15 existing Huret differences. SQL replay affected zero rows. Sakae and SunTour near and parenthetical duplicate reports found zero pairs. The integrity report found zero errors and all 14 tests passed.
+
+For restoration, check current fields and references before removing the inserted IDs and UUIDs below. Restore the prior values of edited rows using the second table. Their titles, IDs, UUIDs, categories, groups and search text were preserved.
+
+| Inserted ID | Model | Source UUID |
+| --- | --- | --- |
+| 12860 | CW-SEC-503 / SEC-503 | `4045ba93-1833-4d97-ba1e-3176d556cf5a` |
+| 12861 | CW-SEC-570 / SEC-570 | `ba0b0c6a-8a70-4a8f-846a-0074d8f2f0c7` |
+| 12862 | CW-SEC-575 / SEC-575 | `5bec7acf-b3d7-4c8f-87fd-ddfb88db98ed` |
+| 12863 | CW-CLC-578 / CLC-578 | `1b896e07-cd62-4822-9f29-c5c403fc3779` |
+| 12864 | CFC-405 (CW-CFC-405) | `611a3123-d37e-4608-9d97-1cfda3efbcac` |
+| 12865 | CFC-T405 (CW-HN00) | `542deed9-fcdb-4a7a-aa57-f3322bad6466` |
+| 12866 | 023T, Micro Drive | `def0b4bf-a195-4220-a954-287ef5655db7` |
+| 12867 | 023C, Micro Drive | `a4288c68-8502-41ea-8a8c-8f4dfe48329b` |
+| 12868 | 023, Micro Drive | `d4d14143-82c1-4167-8720-6cf3ee8587f5` |
+| 12869 | FX-BS | `ac296777-ff61-4b61-a78a-1be133a367e2` |
+| 12870 | SZ-BS / SZ-IS | `82eba860-3d05-4be0-ab63-5127d4d849da` |
+| 12871 | SX-BS | `646d9a3b-e178-48f3-ab7c-fcbe534af956` |
+| 12872 | SI-BS | `bb91a37b-f731-49f1-af96-42fcd9666749` |
+| 12873 | D-3L / D-3TS / D-3T | `153354b4-2ee5-4afd-98ae-815be7bd6bb0` |
+| 12874 | D-5H / D-5SP | `a88c6157-cca4-4cbb-8089-720bf9d0d191` |
+| 12875 | D-7TL / D-7H | `9201e4fe-885b-4b0c-9de1-f8c3672f6e83` |
+| 12876 | N-3H / N-3A / N-3T | `92225d59-3801-4c45-aed0-31e9148087bf` |
+| 12877 | N-5H / N-5L / N-5S | `9127bce6-8e7a-4ca9-9c50-6b8b174489f2` |
+| 12878 | N-3N / N-3R / N-3S | `4d2fc4c0-c393-493a-857e-c7b66e41626e` |
+
+| Updated ID | Prior coverage | Prior source | Prior description |
+| --- | --- | --- | --- |
+| 12754 | 1994–1994 | 583 | Micro Drive Powerflo Front triple, 42/32/20T; optional 44/46T outer, 170/175/177.5mm cranks and anti-jam pin. |
+| 12755 | 1994–1994 | 583 | Micro Drive Powerflo Front triple, 42/32/20T, 170/175mm cranks and anti-jam pin; optional chain guard. |
+| 12756 | 1994–1994 | 583 | Micro Drive Powerflo Front triple, 42/32/20T, 170/175mm cranks and anti-jam pin. |
+| 12757 | 1994–1994 | 583 | Powerflo Front triple, 48/38/28T, 170/175mm cranks and anti-jam pin. |
+| 12758 | 1994–1994 | 583 | Powerflo Front triple, 48/38/28T, 165/170mm cranks and anti-jam pin. |
+| 12782 | 1994–1994 | 583 | Single 40T crankset with 138/152/165mm cranks. |
+| 12783 | 1994–1994 | 583 | Double 40/30T crankset with 152/165mm cranks. |
+| 12784 | 1994–1994 | 583 | Single 46T crankset with 165/170mm cranks. |
+| 12785 | 1994–1994 | 583 | Single 46T crankset with 165/170mm cranks and anti-jam chain pin. |
+| 12786 | 1994–1994 | 583 | Single 36T crankset with 165mm cranks. |
+| 1999 | 1992–1994 | 583 | SunTour CW-XP10, XC-Pro MD (Micro Drive), Japan. Micro Drive triple 42-32-20T, PoweRing, 94 / 56mm BCD, VX taper, 170 / 175 / 177.5mm, 649g; new for 1992. |
+| 9764 | 1993–1993 | 278 | Cassette-type sealed bearing bottom bracket, needs little or no adjustment; black body (silver BB-CB00 is the SunTour version); new for 1993 |
+| 9729 | 1993–1994 | 583 | Cassette-type sealed bottom bracket, English / Italian / 73mm, 314g (E); XC-Comp MD, XC-Expert MD and SL; new for 1993 |
+| 9767 | 1993–1993 | 278 | Replacement chainring, Ninja, 300T (inner) fitting |
+| 9768 | 1993–1993 | 278 | Replacement chainrings, Platinum: 300T inner, 300C centre, 310 outer, 200 outer and inner fittings |
+| 9769 | 1993–1993 | 278 | Replacement chainrings, Round Tech: 300T inner, 300C centre, 310 outer, 200 outer and inner fittings |
+| 9766 | 1993–1993 | 278 | Tandem crankset set, triple chainrings on both sides |
+
 ## 1994 pedals — catalogue reconciliation, 2026-11-28
 
 The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243#page=31), source 583, lists 21 Sakae pedals on printed p. 29 (PDF p. 31). The [product lineup on printed p. 35](https://www.bikecatalogs.com/download/2243#page=37) confirms the `PL-` prefix for the listed Lowfat pedals and selected City models. Its separate SunTour PL-XP02 matches 4019. The table below gives the 1994 finish, listed weight, dimensions, body, cage and factory. A dash marks an empty cage specification. The finish legend defines AL as silver, BL as black, BLA as all black, FB/FW as black/white plastic, GC as grey paint, and HG as hard grey anodized. For SP-550 the material column and earlier maker sheets identify black and white rubber blocks. The axle suffixes in the general legend have no model assignments in this table.
