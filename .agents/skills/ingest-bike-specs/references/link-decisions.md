@@ -272,6 +272,8 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Seatposts
 
+- 1991 Bianchi US Axis, Volpe, Peregrine and Sika specs 26511, 26532, 26698 and 26718 retain `SR Tall Cool One` without a component link. The Bianchi catalogue gives the family name only. SR distinguishes TCO and TCO Sport, and the later MTE-315 listing has a specific set of diameters. [Catalogue comparison](../../ingest-component-catalog/references/known-catalogs/sakae-ringyo.md#1994-seatposts--catalogue-reconciliation-2026-11-28).
+
 - 1987 Bianchi Mondiale, corrected table value `Gipiemme Cronosprint anodized` (spec 1133):
   NULL replacing the incorrect C-Record link 5737, applied/validated 2026-11-17. Source 46,
   PDF p.15, names no code. 5789 600BA, 5790 600CA Aero and 5788 600DD remain plausible; the p.4

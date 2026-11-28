@@ -4655,7 +4655,7 @@ const COMPONENT_OVERRIDES = {
     // Panasonic USA 1985-89 fitment rows (2026-11-16, sources 417-421); see known-catalogs/panasonic.md.
     'sr cre 100 micro adjust': 11324,
     // Exact SR codes: Fuji 1989 pp.33/35, Miyata 1986 p.23, Bianchi 1989/90 tables.
-    'sr mte 300': [{ from: 1986, to: 1989, id: 11307 }],
+    'sr mte 300': [{ from: 1986, to: 1992, id: 11307 }], // 1992 Bridgestone US p.48, MB-2.
     'sr cle 100': [{ from: 1989, to: 1994, id: 11308 }], // SR SunTour 1994 Sales Manual p.30.
     'sr ct p6c pillar': [{ bike: '210', from: 1983, to: 1983, id: 5861 }, { bike: '110', from: 1983, to: 1983, id: 5861 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.
     'sr ct p6 pillar': [{ bike: '710', from: 1983, to: 1983, id: 5861 }], // 1983 Miyata: printed component; see known-catalogs/miyata.md.

@@ -1,5 +1,39 @@
 # Sakae Ringyo (SR) catalogs processed so far
 
+## 1994 seatposts — catalogue reconciliation, 2026-11-28
+
+The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243#page=32), source 583, gives length, diameter, weight, finish and factory on printed p. 30 (PDF p. 32). The [lineup on p. 35](https://www.bikecatalogs.com/download/2243#page=37) adds the `SP-` prefixed codes `SP-MTE-330`, `SP-MTE-335`, `SP-MTE340` and `SP-MTE345`. The [1993 SR catalogue p. 18](https://www.mtb-kataloge.de/Bikekataloge/PDF/SunTour/SunTour93.pdf#page=18), source 278, pictures SP-MTE-315HG2 TCO, SP-MTE-325 TCO Sport, SP-MTE-335, SP-FXE-100DM and CTE-100.
+
+| Model | Database record | 1994 length, weight, finish and factory | Listed diameters (mm) |
+| --- | --- | --- | --- |
+| FXE-100 | Extended 9751 through 1994 and corrected the recorded silver finish to DM, matching the 1993 SP-FXE-100DM caption. | 220 mm, 210 g, dark metallic grey anodized, Japan | 25.8, 27.2 |
+| CLE-100 | Already reconciled as 11308. Six live links to CLE-100 confirmed. | 220 mm, 290 g, silver, Taiwan | 25.4, 25.8, 26.0, 26.2, 26.4, 26.6, 26.8, 27.0, 27.2 |
+| CTE-100 | Enriched 9752, already dated 1993–94. | 190 mm, 320 g, silver or black, Japan | 25.8, 26.6, 26.8, 27.0 |
+| MTE-310 | Added 12834 for 1993–94. Bridgestone names it in two 1993 fitments. | 300 or 350 mm, 290 g, hard black or hard grey anodized, Japan | 26.0, 26.4, 26.6, 26.8, 27.0, 27.2 |
+| MTE-315 | Extended 9748 through 1994. The title gives the base code and the 1993 HG2 caption. The description retains the TCO construction and the earlier catalogue's 250/300/350 mm lengths. | 300 or 350 mm, 310 g, hard black or hard grey anodized, Japan | 28.6, 29.4, 29.6, 29.8 |
+| MTE-330 | Added 12835 for 1994. | 300 mm, 295 g, silver or black, Japan | 26.0, 26.4, 26.6, 26.8, 27.0, 27.2 |
+| MTE-335 | Enriched 9750, already dated 1993–94. The earlier catalogue marks this model new for 1993. | 300 mm, 280 g, silver or black, Japan | 28.6, 29.4, 29.6, 29.8 |
+| MTE-340 | Added 12836 for 1994. | 300 mm, 295 g, silver or black, Taiwan | 26.0, 26.2, 26.4, 26.6, 26.8, 27.0, 27.2 |
+| MTE-345 | Added 12837 for 1994. | 300 mm, 280 g, silver or black, Taiwan | 29.2, 29.4, 29.6, 29.8, 30.2 |
+
+The printed MTE-310 diameter cell repeats 27.0 mm. The recorded list uses each value once. MTE-330 and MTE-340 share a listed weight and length, with different factories and diameter options. MTE-335 and MTE-345 likewise share a weight and length but have different factories and diameter options. All four have separate OEM codes.
+
+The [1992 Bridgestone US catalogue, p. 48](https://www.sheldonbrown.com/bridgestone/1992/1992.pdf#page=49), specifies a 300 mm MTE-300 on the MB-2. The [1993 tables, p. 64](https://www.sheldonbrown.com/bridgestone/1993/images/64.jpg), specify a 300 mm MTE-310 on the MB-2 and XO-1. Registered the 1992 catalogue as source 584 and extended 11307 and its exact-code generator range through 1992. The earlier 1986–89 span was based on Miyata, Bianchi and Fuji fitments. Live readback verified the five existing links to 11307.
+
+The [1991 Bianchi US catalogue](https://www.bikecatalogs.com/download/2798?download=1), PDF pp. 14 and 17, gives `SR Tall Cool One` for Axis, Volpe, Peregrine and Sika (26511, 26532, 26698, 26718). The entries give no model code or dimensions. The 1993 SR page distinguishes TCO and TCO Sport, and MTE-315's listed 1994 diameters cover only its specific size range. The [1990 Cannondale catalogue](https://vintagecannondale.com/year/1990/1990v2.pdf) attests the TCO name, and the [1991 Fuji catalogue](https://ebykr.com/library/fuji-1991-catalog/) separately attests TCO Sport in black at 300 mm. Leave the four links NULL until a model-specific source identifies the Bianchi fitments. The 1993 SR catalogue identifies SP-MTE-325 as the TCO Sport code for that edition.
+
+**Applied and validated with user approval.** Live readback verified the source, all four inserts and all five updates. Readback also confirmed the eleven existing CLE-100 and MTE-300 links and the four unlinked Bianchi values. The four records enriched from the 1994 catalogue and the four inserts use source 583. The exact MTE-300 matcher passed 1986–92 and excluded 1985 and 1993. The comparison across 118 loaded catalogues and 24,829 specifications matched the baseline, including the 15 pre-existing Huret losses. Replay changed zero rows, both Sakae seatpost duplicate checks found zero pairs, the integrity report found zero errors and all 14 tests passed.
+
+Prior values for restoration, after checking current fields and links:
+
+- 9748 title `Sakae/Ringyo (SR) SP-MTE-315HG2, TCO (Tall Cool One)`, search text `Sakae/Ringyo SP-MTE-315HG2 TCO`, description `ATB seat post, Accurad-forged T6 heat-treated head pressure-fitted to an NSP 5056 hard-anodized alloy tube, 250 / 300 / 350mm`, end year 1993, source 278.
+- 9750 description `ATB seat post, alloy, silver or black; new for 1993`.
+- 9751 description `Road seat post, alloy, silver`, end year 1993, source 278.
+- 9752 description `Road seat post, alloy`.
+- 11307 end year 1989, source 412. The exact `sr mte 300` generator range ended in 1989.
+
+The new row UUIDs are 12834 `486e2704-f0b3-450e-aa8c-c10afc219338`, 12835 `b8ce0548-ed81-4ab8-8c02-0fc8b47006cf`, 12836 `94e1d429-8397-47eb-b197-2d42d6170ccf` and 12837 `b169e4a2-96f5-426e-aca2-ab1e3ee1e191`.
+
 ## 1994 MTB handlebars — catalogue reconciliation, 2026-11-28
 
 The [1994 SR SunTour Sales Manual table](https://www.bikecatalogs.com/download/2243#page=32), source 583, printed p. 30 (PDF p. 32), gives material, weight, finish, width and bend for ten models. The [product lineup](https://www.bikecatalogs.com/download/2243#page=37), printed p. 35 (PDF p. 37), gives the prefixed codes BR-MTB-420, BR-MTB-528 and BR-MTB-328 and separately lists BR-MTB-227. The p. 30 colour key identifies AL as silver and BL as black.
@@ -749,6 +783,8 @@ promised recoverable links. Six component labels only:
 | 11308 | CLE-100 | Seat Posts | 1989–1990 | Micro-adjust seatpost for road, touring and ATB fitments; black finish listed, 300mm in the ATB specification. |
 | 11309 | CMB-300 | Handlebars | 1989–1989 | Modolo-type road drop handlebar with alloy centre section. |
 | 11310 | CTS-100 | Stems | 1989–1989 | Alloy road/touring stem; black finish listed. |
+
+[Later Bridgestone evidence](#1994-seatposts--catalogue-reconciliation-2026-11-28) extended MTE-300 record 11307 and its exact-code matcher through 1992.
 
 ### Evidence and identity decisions
 
