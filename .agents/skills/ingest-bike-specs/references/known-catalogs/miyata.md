@@ -391,7 +391,9 @@ Temporary SQL, scans, snapshots and review scripts were removed after validation
   printed (= Seven).
 - Overrides (bike-scoped, 1981 only): Dura-Ace EX RD -> 4509 RD-7200 (the
   auto hit 4508 is the 1984-85 last version); EX headset 3105, side-pull
-  997 (normal reach default), levers 439, cassette 1210; Dura-Ace AX crank
+  997 (the catalogue leaves reach unspecified, see the
+  [Dura-Ace EX reach review](../../../ingest-component-catalog/references/known-catalogs/shimano.md#dura-ace-ex-cs-49-and-cs-57-brake-reach-review--2026-11-28)),
+  levers 439, cassette 1210; Dura-Ace AX crank
   1826, pedals 3973, stem 6678. Pro Miyata: NGC 400 -> 694, 600 AX crank
   1787 / pedals 3957, 600 EX shifter -> brazed-on 6150 (frame-set page:
   "downtube shifter basement"); 912 600 EX shifter clamp-on 6147 (frame-set
