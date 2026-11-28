@@ -23,7 +23,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Data quality
 
-- Review and apply the 3ttt CCA catalogue code to 8302 Aero Dynamic Competizione. Verify the two Bianchi X4 mappings and replay the update. [Catalogue crosswalk and proposed record](.agents/skills/ingest-component-catalog/references/known-catalogs/3ttt.md#cca-catalogue-crosswalk--2026-11-28).
 - Continue comparing descriptions at the 255-character limit and generic bike-link identities with source evidence using `quality-report.js`.
 
 ## Waiting for distinguishing evidence
@@ -31,7 +30,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 Reopen these when the specified material becomes available; existing ambiguity alone is not another search task.
 
 - **3ttt ACRT, CBMX and CBIKE:** obtain readable manufacturer sheets or marked contemporary examples to compare ACRT with stem 6425, assess a CBMX entry and distinguish CBIKE from Airone bar 8308. [Catalogue and scan review](.agents/skills/ingest-component-catalog/references/known-catalogs/3ttt.md#cca-catalogue-crosswalk--2026-11-28).
-
 - **Campagnolo 1049 and 1049/A specimens:** obtain dated original fitments or dated maker illustrations showing the pedal-eye ridge and rear cap to date 151 mm variants 1501–1503. Seek legible date stamps or coded packaging for engraved smooth-arm 1510/1511 and factory evidence identifying the crank or inner-ring mounting on the second 1514 triple build. [Specimen evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/campagnolo.md#1049-triple-and-smooth-arm-evidence-follow-up--2026-11-28).
 - **1990 Bianchi Nyala rear spec 7018:** obtain a marked original fitment or a maker or packaging crosswalk distinguishing RD-XT00-GXB from RD-XT10-GXB. Check the printed XT10-GXB order code 23698921 against a box label or dealer parts key. [Evidence](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#xct-fitment-and-1991-technical-chart-follow-up--2026-11-28).
 - Obtain a marked SunTour GPX FD-GP00-SSH specimen with a measured 31.8 mm bore, or a separate maker listing for that size, to verify the larger-clamp claim for 2634. [Catalogue and specimen review](.agents/skills/ingest-component-catalog/references/known-catalogs/suntour.md#gpx-front-derailleur-production-and-clamp-follow-up--2026-11-28).
