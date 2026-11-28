@@ -1,5 +1,15 @@
 # Sakae Ringyo (SR) catalogs processed so far
 
+## CLE-100 11308 — 1994 availability review, 2026-11-28
+
+The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243), source 583, printed p. 30 (PDF p. 32), pictures CLE-100 and lists a silver 220 mm post at 290 g, factory Taiwan. The listed diameters are 25.4, 25.8, 26.0, 26.2, 26.4, 26.6, 26.8, 27.0 and 27.2 mm. The [1991 Bridgestone catalogue p. 39](https://ebykr.com/showroom/bridgestone/1991/rb-2/), [1992 Bridgestone specifications](https://ebykr.com/library/bridgestone-bicycle-catalogue-1992/) and [1993 Bridgestone catalogue p. 65](https://ebykr.com/showroom/bridgestone/1993/rb-2/) give the exact CLE-100 code with a 220 mm length. [Miyata's 1991 catalogue](https://ebykr.com/library/miyata-catalog-1991/) also names CLE-100 on printed pp. 22–25. The [1989 Fuji ATB specification](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1989-fuji-catalog-p33.webp) supplies the black 300 mm fitment. Record both lengths with their sources. These attestations concern CLE-100 and leave the separately coded CRE-100 distinct.
+
+The live title search found one CLE-100 row, 11308. All six exact live bike specs already linked to it (18434, 18455, 18497, 7148, 7169, 7211). The prior generator override accepted the bare `SR CLE-100` value for 1989–90.
+
+**Applied and validated with user approval.** Extended 11308 to 1989–94, expanded its description with the two attributed lengths and the 1994 specifications, and set source 583. Extended the exact-code generator override through 1994. Live readback verified the new fields and the same six links. The generator checks verified 1989–94 fits and exclusions for 1988 and 1995. The comparison of 24,829 specifications across 118 loaded catalogues was identical before and after, including the 15 pre-existing Huret losses. Replay affected zero rows, the Sakae near-duplicate report returned zero pairs, the integrity report returned zero errors and all 14 tests passed.
+
+For restoration, the prior end year was 1990, the source was 412 and the description was `Micro-adjust seatpost for road, touring and ATB fitments; black finish listed, 300mm in the ATB specification.` The old exact-code override ended in 1990.
+
 ## CTSD handlebar — applied 2026-11-25
 
 The specification tables in the [1986 Miyata catalogue](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2086.pdf) and [1987 Miyata catalogue](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2087.pdf) list `SR CTSD` in the handlebar row. These are bike-maker fitment sources, not the missing SR range catalogue; the printed code differs from CTD 7888 and the tables give no CTSD dimensions or material.

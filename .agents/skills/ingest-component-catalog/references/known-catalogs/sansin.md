@@ -3,6 +3,10 @@
 DB brand: Sunshine/Sansin (brand 392), category Hubs (13). Hubs only; the catalogues also
 sell skewers, quick seat pins and axle sets, which have no component category.
 
+## CE-60 and HB-CE60 catalogue comparison — 2026-11-28
+
+[Bianchi's 1990 catalogue](https://www.bikecatalogs.com/download/2797) names a 36-hole Sansin CE-60 set on the Volpe. [Bridgestone's 1991 RB-T table, p. 39](https://ebykr.com/showroom/bridgestone/1991/rb-t/) specifies Sansin CE-60, 36-hole, quick release and a front re-tension guard nut. These give later attestations for CE-60 than the 1989 endpoint on 9007 (CE-60 / CE-60S, five bike links). The [1994 SR SunTour manual](https://www.bikecatalogs.com/download/2243), printed pp. 16–17 and 35, calls the XC-Sport family HB-CE60-F/R (12793, no bike links), 32/36 holes, 100 mm front and 130/135 mm rear. The 1987 Sansin dimensions recorded on 9007 are 100 mm front and 120/126 mm rear. The matching code stem and front dimensions justify a specimen comparison. A marked shell or OEM parts key could establish the connection and distinguish the rear variants. No live change was proposed in the CLE-100 batch.
+
 ## Cadence PE-30AW / PE-30AWS description-limit review — 2026-11-27
 
 The quality report flags hub 8996 because its description occupies all 255 characters. Its final phrase is `635g, 280g front, 355g rear`; those front and rear figures add to the stated total and the phrase is grammatically complete, though it lacks a final full stop. The length alone does not establish lost text. Live readback shows 1987–87, catalogue source 234 and no bike links. The original [1987 catalogue scan](http://cyclotourist.web.fc2.com/catarogue/part108/index.html), recorded below, was unavailable during this review, so its weights and any omitted detail were not independently rechecked. No database change was made.
