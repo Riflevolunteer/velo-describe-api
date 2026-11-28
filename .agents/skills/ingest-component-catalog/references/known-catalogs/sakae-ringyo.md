@@ -1,5 +1,46 @@
 # Sakae Ringyo (SR) catalogs processed so far
 
+## 1994 city handlebars — catalogue reconciliation, 2026-11-28
+
+The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243#page=33), source 583, printed p. 31 (PDF p. 33), has a city-handlebar table with 26 model rows. It specifies material, weight, finish, width, rise, reach and return. The diagrams add **ARA-134AL** with a model label alone. The other drawing captions identify finishes or show two separately coded versions sharing a bend. The 26 table entries carry the printed specifications and drawing spellings where they differ. The ARA-134AL entry records the labelled model, with dimensions and other specifications unrecorded.
+
+- AR-127, AR-131, AR-133, AR-140, AR-141 and AR-143 are steel. ARA-125, ARA-131, ARA-138 and ARA-143 are alloy. AR-131/ARA-131 and AR-143/ARA-143 share their printed dimensions but have different weights and materials.
+- ARS-144 and HDS-416 are stainless steel, drawn as ARS-144C and HDS-416C. HDS-416 has a printed rise of −60 mm. Alloy NA-347 and NA-348 have rises of 63 mm and −23 mm respectively. NA-347 shares width and rise with the older NA-312-90 (7895), but the maker uses different codes and quotes different weights.
+- M-805, M-811, M-837, M-838, M-841, M-853, M-854 and M-856 are steel. MA-809 is alloy. MS-852C, MS-853C and MS-855C are stainless steel. M-853 and MS-853C share a drawing, with distinct materials, weights and printed returns.
+- The neighbouring colour key establishes AL as silver and BL as black. The descriptions retain the printed BC finish code and the table's signed dimensions.
+
+**Applied and validated with user approval.** The load added 27 Sakae handlebar records (12795–12821), all 1994–94, source 583 and no group. Live searches found no prior records or bike specs naming the codes. Readback verified all fields and zero incoming bike links for the new rows. The before-and-after comparison of 24,829 bike specifications across 118 catalogues was identical, including the 15 pre-existing Huret losses. Replay inserted zero rows. Sakae near and parenthetical duplicate checks found zero pairs. The integrity report returned zero errors and all 14 tests passed.
+
+| Component | Model | Source UUID |
+| --- | --- | --- |
+| 12795 | AR-127 | `743864f1-bbb7-4495-887c-4711c01432f6` |
+| 12796 | AR-131 | `1d94af95-c192-4c49-a507-65d757a4ec76` |
+| 12797 | AR-133 | `e37fad90-1ca5-4a2e-96e1-f788fbdc7c15` |
+| 12798 | AR-140 | `6dc96b64-6474-427f-aa72-4f9b9b3440c9` |
+| 12799 | AR-141 | `f8c6656f-1250-41d6-bcc5-cde3c1c43fa7` |
+| 12800 | AR-143 | `48fdca2f-9cca-4798-b1e9-0d463ba09f22` |
+| 12801 | ARA-125 | `c654b6b9-933c-4e43-b29f-abd90d980dc4` |
+| 12802 | ARA-131 | `20fdadae-9802-4a6a-91f6-d185767ac70f` |
+| 12803 | ARA-138 | `4b56eae6-fd69-45f4-b59e-46378265fc89` |
+| 12804 | ARA-143 | `ff4bb558-7b1e-44e4-b618-0ff8bdd2b371` |
+| 12805 | ARS-144 | `7bf2719a-9b5a-4dae-bb19-1e9c357b7cb7` |
+| 12806 | HDS-416 | `19a7ef2a-e0d9-453d-81e7-a77e8cb3bf6a` |
+| 12807 | NA-347 | `13f597c5-94d2-442c-8092-68b3fbef5d9b` |
+| 12808 | NA-348 | `7ee4fab4-ec2a-4cdd-ae8e-7440b4b45753` |
+| 12809 | M-805 | `ad1f3006-2b3d-4820-ad4d-c9f9e82e31df` |
+| 12810 | M-811 | `6ec53a47-9ba7-484a-8fa9-d4940c29dcf6` |
+| 12811 | M-837 | `a23d425c-567d-4e0d-a2bf-c20863be2f1f` |
+| 12812 | M-838 | `31376e33-83b3-4fac-8a65-c59dcb311d69` |
+| 12813 | M-841 | `dadab143-c5d0-4f3c-9588-8c664aa05611` |
+| 12814 | M-853 | `e1b3d079-4555-4dec-bffc-515d2825dc0e` |
+| 12815 | M-854 | `7cdce6aa-d4be-46c1-9e74-32bdcafd9c72` |
+| 12816 | M-856 | `cb416097-2724-47bf-90c7-0d2662cb3225` |
+| 12817 | MA-809 | `21653fb6-5db5-4b50-aa02-b4f13ca835f4` |
+| 12818 | MS-852C | `70b79b7d-8d73-4406-adff-7e3025ab8fda` |
+| 12819 | MS-853C | `6ee89a28-2c4d-4cab-9684-3a7b1ac17810` |
+| 12820 | MS-855C | `b42dccbc-6c70-4f01-a4bd-8787b88f38f1` |
+| 12821 | ARA-134AL | `f87f5bf1-0524-405b-ba30-26b562893973` |
+
 ## CLE-100 11308 — 1994 availability review, 2026-11-28
 
 The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243), source 583, printed p. 30 (PDF p. 32), pictures CLE-100 and lists a silver 220 mm post at 290 g, factory Taiwan. The listed diameters are 25.4, 25.8, 26.0, 26.2, 26.4, 26.6, 26.8, 27.0 and 27.2 mm. The [1991 Bridgestone catalogue p. 39](https://ebykr.com/showroom/bridgestone/1991/rb-2/), [1992 Bridgestone specifications](https://ebykr.com/library/bridgestone-bicycle-catalogue-1992/) and [1993 Bridgestone catalogue p. 65](https://ebykr.com/showroom/bridgestone/1993/rb-2/) give the exact CLE-100 code with a 220 mm length. [Miyata's 1991 catalogue](https://ebykr.com/library/miyata-catalog-1991/) also names CLE-100 on printed pp. 22–25. The [1989 Fuji ATB specification](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1989-fuji-catalog-p33.webp) supplies the black 300 mm fitment. Record both lengths with their sources. These attestations concern CLE-100 and leave the separately coded CRE-100 distinct.
