@@ -23,7 +23,6 @@ Keep actions here; use [existing notes](.agents/skills/ingest-component-catalog/
 
 ## Data quality
 
-- Review and apply the Shimano Dura-Ace EX brake family consolidation 998 → 997, then verify the catalogue mappings and replay the SQL. [Maker evidence and proposed record](.agents/skills/ingest-component-catalog/references/known-catalogs/shimano.md#dura-ace-ex-cs-49-and-cs-57-brake-reach-review--2026-11-28).
 - Obtain readable ACRT, CCA, CBMX and CBIKE sheets from the circa 1986 3ttt catalogue or a coded contemporary source, then compare ACRT with stem 6425, CCA with bar 8302, and CBIKE with Airone bar 8308. [Evidence and source limits](.agents/skills/ingest-component-catalog/references/known-catalogs/3ttt.md#1986-product-sheets-new-copy--source-lead-2026-11-25).
 - Continue comparing descriptions at the 255-character limit and generic bike-link identities with source evidence using `quality-report.js`.
 
