@@ -525,6 +525,8 @@ see the Raleigh catalogue notes for the decision and source.
 
 ## Brakes
 
+- Keep 1980 US Raleigh Superbe brake spec 9046 (`Sun Tour Superbe side pull`) unlinked pending a coded original fitment or a specification with distinguishing reach or construction. The wording leaves the Superbe caliper model open. See the [SunTour specimen review](../../ingest-component-catalog/references/known-catalogs/suntour.md#superbe-cb-3100cb-4100-brake-identity-review--2026-11-27).
+
 - Applied/validated 2026-11-17, user approved: 1989 Bianchi Tangent Brakes
   spec **18675**, `SunTour XC-9010`, **1055 -> NULL**. Source325 table p.18
   names the group for the combined brakes. SunTour Edition No.89 printed
