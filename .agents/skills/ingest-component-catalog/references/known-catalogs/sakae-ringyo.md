@@ -1,5 +1,30 @@
 # Sakae Ringyo (SR) catalogs processed so far
 
+## 1994 road handlebars — catalogue reconciliation, 2026-11-28
+
+The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243#page=32), source 583, printed p. 30 (PDF p. 32), lists seven road handlebar models. The table gives material, bend, width, drop, reach, weight and factory. The live review found four existing Sakae bars and three missing codes. The sole existing bike link is 1986 Raleigh Competition spec 8193 to CTB 11325.
+
+| Model | Applied change and evidence |
+| --- | --- |
+| CMB-200 | Added 12822, 1989–94. [Fuji 1989](https://ebykr.com/library/fuji-1989-catalog/) lists alloy Modolo-type CMB-200 on Team Fuji, Roubaix and Club Fuji. The [1990 Miyata catalogue](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2090.pdf) names it on TI-6000. The 1994 manual gives 290 g, standard anatomic bend and 140/80 mm drop/reach. |
+| CMB-201 | Enriched 9741 with the 1994 grooved anatomic specifications (310 g, 140/80 mm). The [1993 catalogue](https://bikalog.org/api/view/Sun%20Tour/1993/SunTour93.pdf) gives BR-CMB-201. |
+| CMB-251 | Added 12823, the 1994 deep grooved alloy bar (320 g, 156/87 mm). [A later fitment database](https://www.bikepedia.com/QuickBike/BikeSpecs.aspx?item=41839) reports CMB-251 on a 1993 Nashbar 7000R. The recorded start uses the 1994 primary evidence. |
+| CMB-300 | Extended 11309 through 1994. [Fuji 1989 Ace](https://ebykr.com/wp-content/uploads/2026/10/ebykr-1989-fuji-catalog-p33.webp) specifies a Modolo-type bar with an alloy centre. The 1994 table describes the bar as steel (710 g, 140/80 mm). Both descriptions retain their source attribution. |
+| CTB | Extended 11325 through 1994 and added the alloy standard bend specifications (345 g, 140/95 mm). The [1991 Bridgestone RB-T table](https://ebykr.com/showroom/bridgestone/1991/rb-t/) corroborates the CTB code between the existing 1986–89 evidence and 1994. |
+| FMB-200 / BR-FMB-200-DM | Retitled 9742 as the model family and dated it 1991–94. [Miyata 1991](https://ebykr.com/library/miyata-catalog-1991/) lists alloy FMB200 on the Team Titanium, printed p. 21. The [1993 SR catalogue](https://bikalog.org/api/view/Sun%20Tour/1993/SunTour93.pdf) names BR-FMB-200-DM and the 1994 page calls it FMB-200 in the table and FMB-200DM in the photo. The finish key identifies DM as dark metallic grey anodized, attested in 1993–94. |
+| FMB-220 | Added 12824, the 1994 deep anatomic alloy bar (300 g, 160/98 mm). |
+
+**Applied and validated with user approval.** The transaction updated four rows and added three, all with source 583. Readback verified the seven records and CTB link 8193 → 11325. The comparison across 118 catalogues and 24,829 bike specifications matched the baseline, including the 15 pre-existing Huret losses. Replay changed zero rows, the Sakae near and parenthetical duplicate reports returned zero pairs, the integrity report found zero errors and all 14 tests passed.
+
+Prior values for restoration, after checking current fields and links:
+
+- 9741 description `Road drop handlebar, anatomic bend with cable grooves`.
+- 9742 title `Sakae/Ringyo (SR) BR-FMB-200-DM, Standard Anatomic`, search text `Sakae/Ringyo BR-FMB-200-DM Standard Anatomic`, description `Road drop handlebar, standard anatomic bend`, years 1993–93, source 278.
+- 11309 description `Modolo-type road drop handlebar with alloy centre section.`, end year 1989, source 412.
+- 11325 description `Alloy drop handlebar, Maes bend; fitted with an alloy sleeve.`, end year 1989, source 419.
+
+The new row UUIDs are 12822 `7f5390c0-d0bb-4a86-8389-5c18a99053a3`, 12823 `057310de-8a78-491f-a9e5-8da61332617e` and 12824 `576e176e-0b18-4215-8cc7-a2633afac587`.
+
 ## 1994 city handlebars — catalogue reconciliation, 2026-11-28
 
 The [1994 SR SunTour Sales Manual](https://www.bikecatalogs.com/download/2243#page=33), source 583, printed p. 31 (PDF p. 33), has a city-handlebar table with 26 model rows. It specifies material, weight, finish, width, rise, reach and return. The diagrams add **ARA-134AL** with a model label alone. The other drawing captions identify finishes or show two separately coded versions sharing a bend. The 26 table entries carry the printed specifications and drawing spellings where they differ. The ARA-134AL entry records the labelled model, with dimensions and other specifications unrecorded.
