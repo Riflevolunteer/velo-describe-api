@@ -2463,8 +2463,8 @@ const COMPONENT_OVERRIDES = {
     'dia compe ac 500g aerodynamic': 665, // Dia-Compe AC 500 (G)
     'dia compe dc500n alloy sp': 681, // Dia-Compe N500
     // Products 1986 p.4: 400N is 38-48mm, separate from the 43-57mm 500N rows.
-    'dia compe dc400n': [{ from: 1985, to: 1986, id: 10977 }], // 1985 Bianchi Rekord 26; DC400N 117g
-    'dia compe qs 400n': [{ from: 1986, to: 1986, id: 10978 }], // 1986 Raleigh Grand Prix; QS400N quick release, 132g
+    'dia compe dc400n': [{ from: 1985, to: 1987, id: 10977 }], // 1985 Bianchi Rekord 26; 1987 Fuji Tiara
+    'dia compe qs 400n': [{ from: 1986, to: 1988, id: 10978 }], // 1986 Raleigh Grand Prix; 1988 Mongoose and Fuji fitments
     'dia compe 500qs cold forged alloy sp': 682, // Dia-Compe N500 (quick release)
     'dia compe qs 500n': 682, // Dia-Compe N500 (quick release)
     'dia compe 960 alloy cantilever': 690, // Dia-Compe Gran Compe GC960
