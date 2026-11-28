@@ -1039,7 +1039,7 @@ test files pass. Task-created SQL, scan downloads and comparisons removed.
   inferred; this is not a newly verified production start. Existing link retained.
 - Translated to English on transcription (as 1977 Peugeot DE). Order number 1B2 and "12-Gang" go in Extras.
 - New overrides: Victory Special RD -> 4168 G010-SM (to 1986); Victory 42/52T crank -> 1516; Victory hubs -> 3281 low flange (1984-87; also filled the 1985 Japan Campione hub, 81 -> 82); Regina CX 6-speed -> 2168 (the CX/CX-S row ends 1985); "Regina Silver" chain -> 1386 Extra "Silver BX" (1985-87, judgement: pairs with the BX Silver freewheel); Mavic GL 330 -> 5067; "Italia S. Turbo" -> 5503 Super Turbo; "Leather, S. Mundialita" -> 5497 Selle Italia Mundialita.
-- Left unlinked: ITM bars and seat post, GPM headset, 3ttt Aero CCA bar and stem, plain alloy stem, spokes, frame and fork.
+- Initially left unlinked: ITM bars and seat post, GPM headset, 3ttt Aero CCA bar and stem, plain alloy stem, spokes, frame and fork. The German X4 handlebar spec 18302 now links to 8302. [CCA catalogue crosswalk](../../../ingest-component-catalog/references/known-catalogs/3ttt.md#cca-catalogue-crosswalk--2026-11-28).
 
 ## 1989 Bianchi — `1989_bianchi_spec.csv` (19 bikes, 398 specs, 167 linked)
 
