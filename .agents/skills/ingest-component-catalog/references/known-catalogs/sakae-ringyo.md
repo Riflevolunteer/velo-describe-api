@@ -110,7 +110,19 @@ The [1990 Bianchi US fitment table](https://www.bikecatalogs.com/download/2797#p
 
 The new row UUIDs are 12825 `0a86737e-76a2-4bba-a1bb-514064f4c13f`, 12826 `9ae7261c-a602-4575-99cd-9288144f6b51`, 12827 `cafcbe32-effd-4333-84c4-0f276fc0368b`, 12828 `5f84e5eb-1bcf-4159-b887-5783c4e7fce1`, 12829 `cff18579-46e4-4631-9779-9b475c87c451`, 12830 `83295aff-d3c3-4516-b228-fc117fd6f6bf`, 12831 `e528c4c0-217e-41f8-9fda-33a690d820be`, 12832 `ee3694ec-66d0-4073-a937-ea15afb8e761` and 12833 `cec21889-9426-4a12-861c-2b9b6e67463b`.
 
-Earlier-date lead for 12830: the machine transcription of the [1990 Miyata specification table](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2090.pdf) gives `SR MTB-320` with a black-anodized finish. Check the original cell and compare the earlier fitment with the 1994 black steel listing before extending its dates or transferring material or finish details.
+### Earlier Miyata fitments — 2026-11-28
+
+Read the unnumbered component grid on [PDF p. 35 of the 1989 Miyata catalogue](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2089.pdf#page=35). The cover scan is labelled 1989, and the back cover has a 1988 copyright and an Oxford Bicycles of Canada distributor sticker. The dates below use the model year. The handlebar codes, materials and widths match the [1994 SR table](https://www.bikecatalogs.com/download/2243#page=32), source 583.
+
+| Existing record | 1989 catalogue fitment | Previous → verified coverage |
+| --- | --- | --- |
+| 12825 MTB-220 | Terra Runner and Trail Runner, black alloy, 520 mm | 1991–94 → 1989–94 |
+| 12830 MTB-320 | Triple-Cross, black steel, 520 mm | 1994–94 → 1989–94 |
+| 12831 MTB-324 | Valley Runner, black steel, 580 mm | 1994–94 → 1989–94 |
+
+The original [1990 Miyata grid, PDF p. 30](https://www.ragandbone.ca/PDFs/Miyata%20Catalogue%20PDFs/Miyata%20Catalogue%2090.pdf#page=30) confirms the previous lead. The Quick-Cross column names SR MTB-320 and describes its finish as black anodized. The adjacent 1990 Triple-Cross column names a different bar. [*Bicycling*, March 1989, p. 101](https://sheldonbrown.com/bridgestone/pdfs/bstoneRB11989.pdf#page=4) independently specifies the steel MTB-320 on the tested Triple-Cross at 20.5 in, about 521 mm. [Bridgestone's 1990 catalogue, PDF p. 26](https://www.bikecatalogs.com/download/2853#page=26) identifies the black SR MTB-320 on the Citylimit CB-Ø. The 1989 Miyata table explicitly gives steel and black for MTB-320. Record the 1990 finish wording as that catalogue's description of the Quick-Cross fitment.
+
+**Applied and validated with user approval.** Registered the 1989 Miyata catalogue as source 585 with market CA and set `year_from` to 1989 and `source_ref` to 585 on the three records. The specifications remain supported by the 1994 manual above. Live readback verified both 1991 Japanese Bianchi MTB-220 specs, 19572 and 19590, still link to 12825. The named 1989 and 1990 Miyata and Bridgestone fitments are outside the loaded catalogues. The comparison across 118 loaded catalogues and 24,829 specifications matched the prior baseline, including the 15 existing Huret losses. Replay changed zero rows, the Sakae handlebar near-duplicate check found zero pairs, the integrity report found zero errors and all 14 tests passed. For restoration, the prior dates are in the table and all three records previously used source 583.
 
 ## 1994 road handlebars — catalogue reconciliation, 2026-11-28
 
